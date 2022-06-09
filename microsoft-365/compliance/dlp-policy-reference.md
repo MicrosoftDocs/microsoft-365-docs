@@ -519,8 +519,9 @@ For example, content like an Excel workbook on a OneDrive for Business site that
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-> [!NOTE]
-> Notification emails are sent unprotected.
+> [!IMPORTANT]
+> - Notification emails are sent unprotected.
+> - Email notifications are only supported for the Microsoft 365 services.
 
 You can also give people the option to [override the policy](#user-overrides), so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 
@@ -547,9 +548,6 @@ and customize the email text, subject, and the policy tip text.
 If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and Defender for Cloud Apps plus the option to customize the notification title and content that appears on the Windows 10 device.
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)  
-
-> [!IMPORTANT]
-> Email notifications to Devices are not supported for policies that have the Devices location selected.
 
 You can customize the title and body of text with using these parameters. The body text supports these:
 
