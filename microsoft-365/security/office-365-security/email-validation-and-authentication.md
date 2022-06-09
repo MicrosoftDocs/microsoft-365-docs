@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Email authentication in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -162,7 +162,10 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
-For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the source IP address (divided up into /24 CIDR ranges), or the organizational domain of the reverse DNS (PTR) record.
+For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
+
+- The source IP address (divided up into /24 CIDR ranges)
+- The organizational domain of the reverse DNS (PTR) record.
 
 ### Create an allow entry for the sender/recipient pair
 

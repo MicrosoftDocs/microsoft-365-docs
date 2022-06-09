@@ -19,9 +19,9 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Configure and review priority accounts in Microsoft Defender for Office 365
+# Configure and review Priority accounts in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -31,7 +31,7 @@ In every organization, there are people that are critical, like executives, lead
 
 Priority accounts are targeted by attackers more often and are generally attacked with more sophisticated techniques. Differentiated protection for priority accounts focuses on this specific user set and provides higher level of protection using enhanced machine learning models. This differentiation in learning and message handling provides the highest level of protection for these accounts and helps maintain a low false positive rate, as a high rate of false positives can also have a negative impact on these users.
 
-## Configure priority account protection
+## Configure Priority account protection
 
 Priority account protection is turned on by default for pre-identified critical users. However, the security administrator of your organization can also turn on priority account protection by following these steps:
 
@@ -45,9 +45,9 @@ Priority account protection is turned on by default for pre-identified critical 
 > [!NOTE]
 > We don't recommend disabling or turning off priority account protection.
 
-### Enable the priority account tag
+### Enable the Priority account tag
 
-Microsoft Defender for Office 365 supports priority accounts as tags that can be used as filters in alerts, reports, and investigations.
+Microsoft Defender for Office 365 supports priority accounts as tags that can be used as filters in alerts, reports, incidents, and more.
 
 For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
 
@@ -55,9 +55,17 @@ For more information, see [User tags in Microsoft Defender for Office 365](user-
 
 The affects of priority account protection are visible in the following features:
 
-- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- [Threat Explorer](threat-explorer.md)
-- The [Email entity page](mdo-email-entity-page.md)
+- [Alerts](alerts.md)
+- [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
+- [Threat Explorer and real-time detections](threat-explorer.md)
+- [Compromised user report](view-email-security-reports.md#compromised-users-report)
+- [Email entity page](mdo-email-entity-page.md#other-innovations)
+- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
+- [Attack simulation](attack-simulation-training.md#target-users)
+- [Campaign Views](campaigns.md)
+- [Admin and user submissions](admin-submission.md)
+- [Quarantine](quarantine.md)
 
 ### Threat protection status report
 

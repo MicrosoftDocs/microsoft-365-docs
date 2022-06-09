@@ -4,6 +4,8 @@
       href: index.md
     - name: How Microsoft 365 helps your business
       href: m365bp-secure-users.md
+    - name: Microsoft 365 Business Premium trial playbook
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
     - name: Get Microsoft 365 for Campaigns
@@ -16,14 +18,8 @@
         href: m365bp-setup-overview.md
       - name: Set up Microsoft 365 Business Premium
         href: m365bp-setup.md
-      - name: Set up Microsoft 365 for Campaigns
-        items:
-          - name: Sign up
-            href: m365-campaigns-sign-up.md
-          - name: Sign in
-            href: m365-campaigns-sign-in.md
-          - name: Customize sign-in page
-            href: m365-customize-sign-in.md
+      - name: Set up Microsoft 365 Business for Campaigns
+        href: m365-campaigns-setup.md
   - name: Bump up security protection
     items: 
       - name: Overview
@@ -51,7 +47,7 @@
       - name: Overview
         href: m365bp-protect-email-overview.md
       - name: Protect against phishing and other attacks
-        href: avoid-phishing-and-attacks.md
+        href: m365bp-avoid-phishing-and-attacks.md
       - name: Send encrypted email
         href: send-encrypted-email.md
   - name: Collaborate and share securely
@@ -76,6 +72,18 @@
         href: m365bp-managed-devices-setup.md
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
+      - name: Protect Windows devices
+        items: 
+          - name: Secure Windows devices
+            href: m365bp-secure-windows-devices.md
+          - name: Manage Windows devices
+            href: m365bp-manage-windows-devices.md
+          - name: Prepare for Office client deployment
+            href: m365bp-prepare-for-office-client-deployment.md
+          - name: Create app protection settings for Windows devices
+            href: m365bp-protection-settings-for-windows-10-devices.md
+          - name: Validate app settings on Windows devices
+            href: m365bp-validate-settings-on-windows-10-pcs.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
@@ -86,6 +94,8 @@
       href: m365bp-security-incident-management.md
     - name: Review security recommendations
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Review threats detected on devices
+      href: m365bp-review-threats-take-action.md
     - name: Review remediation actions on devices
       href: m365bp-review-remediation-actions-devices.md
     - name: Respond to a compromised email account
@@ -97,9 +107,9 @@
     - name: Remove users
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Remove data from devices
-      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-remove-company-data.md
     - name: Reset devices to factory settings
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-reset-devices-to-factory-settings.md
 - name: Reference
   items:
     - name: Glossary of terms
@@ -108,6 +118,22 @@
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
+    - name: Set up AutoPilot
+      items:
+        - name: Add AutoPilot devices and profile
+          href: m365bp-add-autopilot-devices-and-profile.md
+        - name: AutoPilot profile settings
+          href: m365bp-autopilot-profile-settings.md
+        - name: Create and edit AutoPilot profiles
+          href: m365bp-create-and-edit-autopilot-devices.md
+    - name: App protection settings for Android and iOS
+      href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Validate app settings on Android and iOS
+      href: m365bp-validate-settings-on-android-or-ios.md
+    - name: Map protection features to Intune settings
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Set up Compliance Manager
+      href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365

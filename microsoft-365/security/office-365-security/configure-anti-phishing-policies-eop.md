@@ -21,7 +21,7 @@ ms.prod: m365-security
 
 # Configure anti-phishing policies in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -134,7 +134,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 
-     <sup>\*</sup> This setting is available only if you selected **Enable spoof intelligence** on the previous page. For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).
+     <sup>\*</sup> This setting is available only if you selected **Enable spoof intelligence** on the previous page. For more information, see [Unauthenticated sender indicators](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).
 
    When you're finished, click **Next**.
 

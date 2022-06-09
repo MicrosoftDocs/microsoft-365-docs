@@ -22,9 +22,9 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 # Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to classify and protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level classification and protection, use the following label settings:
 
@@ -42,9 +42,6 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and configured protection settings to the site or group.
 
 Content in these containers however, do not inherit the labels for the classification or settings for files and emails, such as visual markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-
-> [!NOTE]
-> Sensitivity labels for containers aren't supported with Office 365 Content Delivery Networks (CDNs).
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
@@ -65,7 +62,7 @@ If you haven't yet enabled sensitivity labels for containers, do the following s
 
 1. Because this feature uses Azure AD functionality, follow the instructions from the Azure AD documentation to enable sensitivity label support: [Assign sensitivity labels to Microsoft 365 groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. You now need to synchronize your sensitivity labels to Azure AD. First, [connect to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. You now need to synchronize your sensitivity labels to Azure AD. First, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account.
 
@@ -311,7 +308,7 @@ Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Ma
 
 1. Open a PowerShell session with the **Run as Administrator** option.
 
-2. If you don't know your label GUID: [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and get the list of sensitivity labels and their GUIDs.
+2. If you don't know your label GUID: [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and get the list of sensitivity labels and their GUIDs.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -387,6 +384,7 @@ The following apps and services don't currently support sensitivity labels confi
   - Yammer
   - Project
   - Power BI
+  - My Apps portal
 
 ## Classic Azure AD group classification
 
@@ -418,7 +416,7 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 
 ### Use PowerShell to convert classifications for Microsoft 365 groups to sensitivity labels
 
-1. First, [connect to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. First, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
 
