@@ -107,7 +107,7 @@
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
-        "security/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
+        "security/**/*.md":"https://docs.microsoft.com/microsoft-365/security/defender/feedback",
         "admin/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "bookings/":"https://feedbackportal.microsoft.com/feedback/forum/e9c7c7d1-011c-ec11-b6e7-0022481f8472",
         "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
@@ -129,7 +129,7 @@
         "contentunderstanding/**/*.md":"SharePoint Syntex",
         "enterprise/**/*.md": "Microsoft 365",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
-        "security/office-365-security/**/*.md": "Defender for Office",
+        "security/**/*.md": "Microsoft 365",
         "solutions/**.*.md": "Microsoft 365"
       }
     },
