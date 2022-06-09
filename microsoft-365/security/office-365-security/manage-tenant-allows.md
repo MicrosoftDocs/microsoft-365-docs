@@ -20,7 +20,7 @@ ms.prod: m365-security
 
 # Add allows in the Tenant Allow/Block List
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,6 +52,12 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 
 > ![Submit malware to Microsoft for analysis example.](../../media/admin-submission-allow-messages.png)
 
+> [!NOTE]
+>
+> - During mail flow, Based on which filters determined the mail to be malicious, the allows are added. For example, the sender and URL are determined to be bad, an allow will be added for each.
+> - When that entity (sender, domain, URL, file) is encountered again, all filters associated with that entity are skipped.
+> - During mail flow, if the rest of the filters find the email containing this entity to be clean, the email will be delivered. For example, a sender allow (when authentication passes) will bypass all verdicts except malware and high confidence phishing associated with an attachment or URL.
+
 ## Add URL allows using the Submissions portal
 
 Allow URLs on the **Submissions** page in Microsoft 365 Defender.
@@ -72,6 +78,11 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
+
+> [!NOTE]
+>
+> - When the URL is encountered again, the URL is not sent for detonation or reputation checks and all other URL-based filters are skipped.
+> - So for an email (containing this URL), during mail flow, if the rest of the filters find the email to be clean then the email will be delivered.
 
 ## Add File allows using the Submissions portal
 
@@ -94,6 +105,10 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Submit email for analysis.](../../media/submit-email-for-analysis.png)
 
+> [!NOTE]
+>
+> When the file is encountered again, it is not sent for detonation or reputation checks, and all other file-based filters are skipped. During mail flow, if the rest of the filters find the email that contains the file to be clean, then the email will be delivered.
+
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
 > [!NOTE]
@@ -101,7 +116,7 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 > - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
 > - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
 > - Entries for spoofed senders never expire.
-> - Spoof supports both allow and block. URL supports only allow.
+> - Spoof supports both allow and block. URL supports only block.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -118,7 +133,7 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 
 ## Add spoofed sender allow entries using PowerShell
 
-To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/exchange/connect-to-exchange-online-powershell), use the following syntax:
+To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell), use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>

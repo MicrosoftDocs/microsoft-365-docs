@@ -134,7 +134,7 @@ For unsupervised devices, a VPN is used in order to provide the Web Protection f
 
 Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. 
 
-This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview).
+This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 
 1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Configuration Profiles** -> **Create Profile**.
 1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Click **Create**.
@@ -147,17 +147,16 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
     - VPN identifier = com.microsoft.scmx
     - In the key-value pairs, enter the key **AutoOnboard** and set the value to **True**.
     - Type of Automatic VPN = On-demand VPN
-    - Click **Add** for **On Demand Rules** and select **I want to do the following = Establish VPN**, **I want to restrict to = All domains**.
+    - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
 
     :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab" lightbox="images/ios-deploy-8.png":::
 
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
-## Zero-touch onboarding of Microsoft Defender for Endpoint (Preview)
+## Zero-touch onboarding of Microsoft Defender for Endpoint
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 > [!NOTE]
 > Zero-touch cannot be configured on iOS devices that are enrolled without user affinity (user-less devices or shared devices).
@@ -175,7 +174,7 @@ Admins can configure Microsoft Defender for Endpoint to deploy and activate sile
     - VPN identifier = com.microsoft.scmx
     - In the key-value pairs, enter the key **SilentOnboard** and set the value to **True**.
     - Type of Automatic VPN = On-demand VPN
-    - Select **Add** for **On Demand Rules** and select **I want to do the following = Establish VPN**, **I want to restrict to = All domains**.
+    - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
 
     :::image type="content" source="images/ios-deploy-9.png" alt-text="The VPN profile Configuration page" lightbox="images/ios-deploy-9.png":::
 

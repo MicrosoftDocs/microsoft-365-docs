@@ -5,8 +5,7 @@ keywords: what's new in Microsoft Defender for Office 365, ga, generally availab
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-  - NOCSH
+f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
@@ -16,7 +15,6 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
@@ -25,7 +23,7 @@ ms.prod: m365-security
 
 # What's new in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to:**
 
@@ -46,6 +44,19 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## July 2022
+
+- [Added support for a verified DKIM domain entry](tenant-allow-block-list.md#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) within Sending Infrastructure for Anti-Spoofing management using Tenant allow block lists - Spoofing.
+
+## June 2022
+
+- [simplifying the quarantine experience part Two in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): simplifying the quarantine experience part Two with Microsoft Defender for Office 365.
+
+## April 2022
+
+- [Introducing the URLClickEvents table in Microsoft 365 Defender Advanced Hunting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Introducing the UrlClickEvents table in advanced hunting with Microsoft Defender for Office 365.
+- [Manual email remediation enhancements](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): Bringing manual email purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action-focused investigation.
+ 
 ## March 2022
 
 - [Streamlined the submission experience in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Introducing the new unified and streamlined submission process to make your experience simpler.
@@ -66,7 +77,7 @@ For more information on what's new with other Microsoft Defender security produc
   - [Video of admin experience](https://youtu.be/vnar4HowfpY)
   - [Video of end-user experience](https://youtu.be/s-vozLO43rI)
   - Other new capabilities coming to the quarantine experience are described in this blog post: [Simplifying the Quarantine experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
-- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security and Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
+- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security & Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## August 2021
 
@@ -114,6 +125,5 @@ Did you know that Microsoft Defender for Office 365 is available in two plans? [
 
 ## See also
 
-[Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
-
-[Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
+- [Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
