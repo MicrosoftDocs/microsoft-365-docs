@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 description: Get started creating exact data match based sensitive information types.
 ms.custom: seo-marvel-apr2020
+
 ---
 
 # Get started with exact data match based sensitive information types
@@ -72,6 +73,15 @@ See the [data loss prevention service description](/office365/servicedescription
 |Microsoft 365 Defender portal|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft Purview compliance portal|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
+# [Linux](#tab/linux)
+
+Content for Linux...
+
+# [Windows](#tab/windows)
+
+Content for Windows...
+
+---
 
 ## EDM new experience vs. classic experience
 
