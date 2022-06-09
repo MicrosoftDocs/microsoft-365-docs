@@ -34,7 +34,7 @@ These features will continue to work in the main window but are not available in
   
 ## To configure lean popouts for all users within your Office 365 organization
   
-1. [Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
 2. Run the [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet with the LeanPopoutEnabled parameter as follows:
 
