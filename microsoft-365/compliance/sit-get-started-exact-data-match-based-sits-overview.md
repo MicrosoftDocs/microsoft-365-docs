@@ -19,17 +19,7 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 
 ---
-# [New](#tab/New)
-
-
-
-# Get started with exact data match based SITs NEW
-
-# [Classic](#tab/Classic)
-
-
-
-# Get started with exact data match based sensitive information types CLASSIC
+# Get started with exact data match based sensitive information types
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
