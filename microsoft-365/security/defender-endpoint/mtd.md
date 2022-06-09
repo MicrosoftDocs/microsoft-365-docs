@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -24,6 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,10 +44,11 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
 |Threat and Vulnerability Management (TVM) |Vulnerability assessment of onboarded mobile devices. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about threat and vulnerability management in Microsoft Defender for Endpoint. *Note that on iOS only OS vulnerabilities are supported in this preview.*|
+|Network Protection *(Public Preview)*| Protection against rogue Wi-Fi related threats and rogue certificates; ability to allow list the root CA and private root CA certificates in Intune; establish trust with endpoints.|
 |Unified alerting|Alerts from all platforms in the unified M365 security console|
 |Conditional Access, Conditional launch|Blocking risky devices from accessing corporate resources. Defender for Endpoint risk signals can also be added to app protection policies (MAM)|
 |Privacy Controls. In preview (see note below)|Configure privacy in the threat reports by controlling the data sent by Microsoft Defender for Endpoint. *Note that privacy controls are currently available only for enrolled devices. Controls for unenrolled devices will be added later*|
-|Integration with Microsoft Tunnel|Can integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Available only on Android currently|
+|Integration with Microsoft Tunnel|Can integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Available on Android and is now generally available on iOS also.|
 
 All these capabilities are available for Microsoft Defender for Endpoint license holders. For more information, see [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
@@ -83,7 +85,7 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 
 ### End-user onboarding
 
-- [Configure Zero-touch onboard for iOS enrolled devices](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview): Admins can configure zero-touch install to silently onboard Microsoft Defender for Endpoint on enrolled iOS devices without requiring the user to open the app. 
+- [Configure Zero-touch onboard for iOS enrolled devices](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): Admins can configure zero-touch install to silently onboard Microsoft Defender for Endpoint on enrolled iOS devices without requiring the user to open the app. 
 
 - [Configure Conditional Access to enforce user onboarding](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): This can be applied to ensure end-users onboard to the Microsoft Defender for Endpoint app after deploying. Watch this video for a quick demo on configuring conditional access with Defender for Endpoint risk signals. 
 
@@ -93,7 +95,7 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 
 ### Simplify Onboarding
 
-- [iOS - Zero-Touch Onboard](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)
+- [iOS - Zero-Touch Onboard](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)
 - [Android Enterprise - Setup Always-on VPN](android-intune.md#auto-setup-of-always-on-vpn).
 - [iOS - Auto-setup of VPN profile](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 
@@ -105,7 +107,7 @@ This helps reduce potential issues that could arise while rolling out the servic
 
 - Devices show up in the device inventory list: After successful onboarding of Defender for Endpoint on the mobile device, verify that the device is listed in the Device Inventory in the [security console](https://security.microsoft.com).
 
-- Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here is an example app that can be used for this test: [Test virus](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Note that on Android Enterprise with a work profile, only the work profile is supported.
+- Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here is an example app that can be used for this test: [Test virus](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). Note that on Android Enterprise with a work profile, only the work profile is supported.
 
 - Run a phishing test: Browse to https://smartscreentestratings2.net and verify that it gets blocked by Microsoft Defender for Endpoint. Note that on Android Enterprise with a work profile, only the work profile is supported.
 

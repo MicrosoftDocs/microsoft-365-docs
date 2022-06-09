@@ -50,21 +50,25 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. From a command prompt, verify that you have the file. 
 
     ```bash
     ls -l
     ```
+
     ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
+
 5. Extract the contents of the archive.
+
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
@@ -79,6 +83,7 @@ Create the folders *install_mdatp/files* and *install_mdatp/manifests* under the
 ```bash
 pwd
 ```
+
 ```Output
 /etc/puppetlabs/code/environments/production/modules
 ```
@@ -86,6 +91,7 @@ pwd
 ```bash
 tree install_mdatp
 ```
+
 ```Output
 install_mdatp
 ├── files
@@ -125,9 +131,13 @@ $version = undef
 ){
     case $::osfamily {
         'Debian' : {
+        $release = $channel ? {
+        'prod' => $facts['os']['distro']['codename']
+        default => $channel
+        }
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
-                release  => $channel,
+                location => "https://packages.microsoft.com/${distro}/${version}/prod",
+                release  =>  $release,
                 repos    => 'main',
                 key      => {
                     'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
@@ -137,7 +147,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,
@@ -181,6 +191,7 @@ Include the above manifest in your site.pp file:
 ```bash
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
+
 ```Output
 node "default" {
     include install_mdatp
@@ -196,6 +207,7 @@ On the agent device, you can also check the onboarding status by running:
 ```bash
 mdatp health
 ```
+
 ```Output
 ...
 licensed                                : true
