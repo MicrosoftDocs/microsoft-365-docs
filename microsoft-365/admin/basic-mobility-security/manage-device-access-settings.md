@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage mobile devices."
+description: "For devices that you can't manage with Basic Mobility and Security, you should block Exchange ActiveSync app access to Microsoft 365 email."
 ---
 
 # Manage device access settings in Basic Mobility and Security
@@ -35,9 +35,9 @@ Use these steps:
 
 3. Go to **Data loss prevention** \> **Device management** \> **Device policies**, and select **Manage organization-wide device access settings**.
 
-4. Select **Block**.
+4. Select **Access**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access checkbox.":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Basic Mobility and Security block access checkbox.":::
 
 5. Select **Save**.
 

@@ -29,9 +29,6 @@ When you enable shared channels in Teams with another organization:
 - Your organization's custom (line of business) apps will be available in shared channels and external participants will be able to access them.
 - Your organization's apps list will be available in shared channels and external participants will be able to access them.
 
-> [!NOTE]
-> Shared channels is in preview and requires that you have configured [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates). If you plan to share channels with other organizations, they must also have configured Teams public preview.
-
 ## Video demonstration
 
 This video shows the configuration steps described in this document.
@@ -69,7 +66,7 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 As part of this configuration, we enable the **Office 365** application, which includes Teams and Teams-integrated services such as SharePoint.
 
 > [!NOTE]
-> Changes to cross-tenant access settings may take two hours to take effect.
+> Changes to cross-tenant access settings may take up to three hours fifteen minutes to take effect.
 
 ### Add an organization
 

@@ -1,5 +1,7 @@
 - name: Microsoft 365 Lighthouse
-  items: 
+  items:
+    - name: What's new in Microsoft 365 Lighthouse
+      href: m365-lighthouse-whats-new.md
     - name: Overview of Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
     - name: Requirements for Microsoft 365 Lighthouse
@@ -56,6 +58,10 @@
       href: m365-lighthouse-compare-compliance-policies.md
     - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
+    - name: Reprovision a Windows 365 Cloud PC
+      href: m365-lighthouse-reprovision-cloudpc.md
+    - name: View an enterprise Cloud PC failed network connection
+      href: m365-lighthouse-view-failed-network-connections.md
 - name: Manage threats
   items:
     - name: Overview of the Threat management page
