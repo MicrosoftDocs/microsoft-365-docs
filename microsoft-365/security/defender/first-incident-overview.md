@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -46,7 +46,7 @@ Incidents in Microsoft 365 Defender are the logical starting points for analysis
 
 ## Next step
 
-[![Prepare your organization and Microsoft 365 tenant.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="The Remediate option in Respond to your first incident page" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 Make sure your organization and Microsoft 365 tenant is [prepared for incident handling](first-incident-prepare.md).
 
@@ -58,7 +58,7 @@ Incident response guidance for Microsoft 365 Defender:
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
 
-Additional examples of first incident responses:
+More examples of first incident responses:
 
 - [Phishing email](first-incident-path-phishing.md)
 - [Identity-base attack](first-incident-path-identity.md)

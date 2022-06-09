@@ -2,8 +2,8 @@
 title: "Add a domain to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -144,7 +144,7 @@ If you have a website that you use with your business, it will keep working wher
 
 ### Add an onmicrosoft.com domain
 
-Each Microsoft 365 organization can have up to three onmicrosoft.com domains.
+Each Microsoft 365 organization can have up to five onmicrosoft.com domains.
 
 > [!NOTE]
 > You must be a Global admin or a Domain Name admin to add a domain.
@@ -154,11 +154,29 @@ Each Microsoft 365 organization can have up to three onmicrosoft.com domains.
 
 To add an onmicrosoft.com domain:
 
-1. Go to the Microsoft admin center, **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**.
+2. Select your onmicrosoft.com default domain.
 
-2. On the **Overview** tab, select **Add onmicrosoft.com domain**.
+    ![Domains page.](../../media/onmicrosoft-domains.png)
+  
+3. On the domain properties page, in the **About this domain** section, select **Add onmicrosoft domain**.
 
-You can set any domain you own as your default domain.
+    ![About this domains page.](../../media/add-onmicrosoft-domain-link.png)
+
+4. In the **Add onmicrosoft domain** page, in the **Domain name** box, type the name for your new onmicrosoft.com domain. 
+
+    ![Screenshot of Add onmicrosoft domain page.](../../media/add-an-onmicrosoftcom-domain-page.png)
+
+    > [!NOTE]
+    > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
+
+5. Select **Add domain**. When successfully added, you will see a message stating this. 
+    
+    ![Screenshot of domain added successfully.](../../media/domain-added.png)
+
+You can set any domain you own as your default domain. 
+
+For more details on how to add an onmicrosoft.com domain, see [Add or replace your onmicrosoft.com domain](add-or-replace-your-onmicrosoftcom-domain.md).
 
 ## Related content
 
