@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -35,9 +35,9 @@ The Audit New Search (Preview) builds upon the existing search functionalities a
 
 Please review the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:
 
-- Search the Audit Log: Search the audit log in the Microsoft 365 compliance center - Microsoft 365 Compliance | Microsoft Docs (Please note PowerShell is not yet compatible with Audit Search V2
-- Properties in the Audit Log: Detailed properties in the audit log - Microsoft 365 Compliance | Microsoft Docs
-- Export, Configure, and View Audit Log: Export, configure, and view audit log records - Microsoft 365 Compliance | Microsoft Docs
+- [Search the audit log in the Microsoft 365 compliance center](search-the-audit-log-in-security-and-compliance.md) (Please note PowerShell is not yet compatible with Audit Search V2)
+- [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
+- [Export, configure, and view audit log records](export-view-audit-log-records.md)
 
 Additional information:
 
