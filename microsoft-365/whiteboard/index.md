@@ -43,4 +43,3 @@ The resources in this section help the admin in your organization to set up and 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Use PowerShell to manage Microsoft Whiteboard for your organization|[MicrosoftWhiteboardAdmin](/powershell/module/whiteboard/)|
-|Learn how to set up and configure Microsoft Whiteboard for US Government - GCC|[Set up Microsoft Whiteboard for Government](set-up-government.md)|
