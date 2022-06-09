@@ -1,5 +1,5 @@
 ---
-title: "Assign Microsoft 365 licenses to user accounts with PowerShell"
+title: Assign Microsoft 365 licenses to user accounts with PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv

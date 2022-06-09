@@ -32,7 +32,7 @@ Providing security admins and users with a very simple way to manage false posit
 
 ## Creating Custom quarantine policies with Request release flow
 
-Our custom polices give admins the ability to decide what items their users can triage in the ***False positive*** folder with an extended ability of allowing the user to request the *release* of those items from the folder.
+Our custom policies give admins the ability to decide what items their users can triage in the ***False positive*** folder with an extended ability of allowing the user to request the *release* of those items from the folder.
 
 1. Decide what verdicts category (bulk, spam, phish, high confidence phish, or malware) of items you want your user to triage and not triage.
 1. For those categories that you don’t want the users to triage, assign the items to the **AdminOnlyPolicy**. As for the category you want users to triage with limited access, you can *create a custom policy* with a request release access and assign users to that category.
@@ -41,9 +41,9 @@ Our custom polices give admins the ability to decide what items their users can 
 > [!IMPORTANT]
 > For more information on how granular custom policies can be created, see [Quarantine policies - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md).
 
-## Assigning quarantine polices and enabling notification with organization branding
+## Assigning quarantine policies and enabling notification with organization branding
 
-Once it has been decided the categories of items users can triage or not-triage, and created the corresponding quarantine polices, admins should to assign these policies to the respective users and enable notifications.
+Once it has been decided the categories of items users can triage or not-triage, and created the corresponding quarantine policies, admins should to assign these policies to the respective users and enable notifications.
 
 1. Identify the users, groups, or domains that you would like to include in the *full access* category vs. the *limited access* category, versus the *Admin-Only* category.
 1. Sign in to the [Microsoft Security portal](https://security.microsoft.com).

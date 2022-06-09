@@ -133,7 +133,7 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 
 ## Add spoofed sender allow entries using PowerShell
 
-To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/exchange/connect-to-exchange-online-powershell), use the following syntax:
+To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell), use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
