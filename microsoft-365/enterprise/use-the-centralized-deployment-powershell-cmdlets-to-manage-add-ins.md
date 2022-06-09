@@ -2,7 +2,7 @@
 title: "Use the Centralized Deployment PowerShell cmdlets to manage add-ins"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 1/24/2020
 audience: Admin
 ms.topic: article

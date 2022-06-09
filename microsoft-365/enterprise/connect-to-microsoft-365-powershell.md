@@ -2,7 +2,7 @@
 title: "Connect to Microsoft 365 with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -38,6 +38,8 @@ Currently, the Azure Active Directory PowerShell for Graph module doesn't comple
 
 ## What do you need to know before you begin?
 
+>[!NOTE]
+> The Azure Active Directory Module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 **Operating system**
 
@@ -199,6 +201,8 @@ To connect with and use the Azure Cloud Shell from the Microsoft 365 admin cente
 You will need an active Azure subscription for your organization that is tied to your Microsoft 365 subscription. If you don't already have one, you can create one. Once you have an Azure subscription, a PowerShell window opens from which you can run PowerShell commands and scripts.
 
 For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview).
+
+
 
 ## See also
 
