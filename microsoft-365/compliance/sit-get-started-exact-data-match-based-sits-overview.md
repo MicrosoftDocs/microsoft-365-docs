@@ -72,10 +72,6 @@ See the [data loss prevention service description](/office365/servicedescription
 |Microsoft 365 Defender portal|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft Purview compliance portal|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
-
-
-
-
 ## EDM new experience vs. classic experience
 
 The new EDM experience combines the functionality of the EDM schema and EDM sensitive info types wizards into a single user experience. The new experience adds:
