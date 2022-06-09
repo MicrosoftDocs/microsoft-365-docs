@@ -54,8 +54,7 @@ Follow the below steps to test and validate the Audit New Search experience:
 1. Navigate to compliance.microsoft.com
 1. Click on the Audit tab on the left panel of the homepage to navigate to the Audit tool
 1. Click on “New Search (Preview)” tab at the top of the Audit page
-Figure 2: Audit New Search Tool Overview
-Figure 1: Microsoft Purview Homepage
+  :::image type="content" source="../media/audit-search/audit-new-search.png" alt-text="Audit New Search options in Microsoft Purview":::
 1. Test different search jobs in the Audit New Search tool using a variety of search criteria.
 Some examples of different searches include the following criteria. Please explore these different search methods while performing searches on the audit log.
     - Search across different timeframes.
@@ -66,19 +65,17 @@ Some examples of different searches include the following criteria. Please explo
     - Search across selected users
     - Scoping the search using the activities field
     - Adding a specific file, folder, or site
+      :::image type="content" source="../media/audit-search/audit-new-search-create.png" alt-text="Audit New Search options in Microsoft Purview":::
 1. Initiate an additional 2-9 searches in the compliance center. Please note that a max of 10 search jobs can be run in parallel in one account.
 1. Explore the search job history and click on different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
+      :::image type="content" source="../media/audit-search/audit-new-search-columns.png" alt-text="Audit New Search result column sorting options in Microsoft Purview":::
 1. Click on a search job to see the results of the job displayed in a line-item format. Please explore the various functionalities in the UI including the following:
     - Referencing the complete search query at the top of the page, which includes all search criteria entered when completing the original search
     - Clicking on various results for more information in the fly-out window
     - Filtering across the search job using IP address, User, Activity, Date, Item, and Details.
     - Exporting both unfiltered and filtered searches
     - Sorting the results by clicking the corresponding buttons on the top of the table including Date, IP Address (when applicable), User, Activity, Item, and Detail (when applicable).
-
-Figure 5: Audit Search Job Results Overview
-Figure 6: Example of sorting by user column
-Figure 7: Search Job Result Filtering Tool
-Figure 8: More details about each result available once clicked
+      :::image type="content" source="../media/audit-search/audit-new-search-result-details.png" alt-text="Audit New Search result column sorting options in Microsoft Purview":::
 
 ## Audit search job overview
 
