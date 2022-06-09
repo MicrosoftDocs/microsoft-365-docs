@@ -95,14 +95,15 @@ The following sections identify the licensing requirements for Audit (Standard) 
 
 ### Audit (Standard)
 
-- Microsoft Purview Business Basic subscription
-- Microsoft Purview Apps for Business subscription
-- Microsoft Purview Enterprise E3 subscription
-- Microsoft Purview Business Premium
-- Microsoft Purview Education A3 subscription
-- Microsoft Purview Government G3 subscription
-- Microsoft Purview Government G1 subscription
-- Microsoft Purview Frontline F1 or F3 subscription, or F5 Security add-on
+- Microsoft Business Basic subscription
+- Microsoft Business Standard subscription
+- Microsoft 365 Apps for Business subscription
+- Microsoft 365 Enterprise E3 subscription
+- Microsoft 365 Business Premium
+- Microsoft 365 Education A3 subscription
+- Microsoft 365 Government G3 subscription
+- Microsoft 365 Government G1 subscription
+- Microsoft 365 Frontline F1 or F3 subscription, or F5 Security add-on
 - Office 365 Enterprise E3 subscription
 - Office 365 Enterprise E1 subscription
 - Office 365 Education A1 subscription
@@ -153,7 +154,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
   
    - Turning on the Audit (Premium) app/service plan must be for those users.
   
-   - Enabling the auditing of crucial events and then turning on the Audit (Premium)ing app/service plan for those users.
+   - Enabling the auditing of crucial events and then turning on the Audit (Premium) app/service plan for those users.
 
 2. Enable Audit (Premium) events to be logged when users perform searches in Exchange Online and SharePoint Online.
 
@@ -163,6 +164,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
 
 For more detailed instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md).
 
+<!--
 ## Encrypt audit records using Customer Key
 
 You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
@@ -171,6 +173,7 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 > [!NOTE]
 > Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
 
 ## Training
 

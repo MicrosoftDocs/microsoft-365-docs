@@ -78,5 +78,5 @@ Only Exchange Online deployments are currently supported for IB policies. If you
 ## Ready to get started?
 
 - [Get started with information barriers](information-barriers-policies.md)
-- [Manage information barrier policies](information-barriers-edit-segments-policies.md)
-- [See the attributes that can be used for information barrier policies](information-barriers-attributes.md)
+- [Manage IB policies](information-barriers-edit-segments-policies.md)
+- [See the attributes that can be used for IB policies](information-barriers-attributes.md)

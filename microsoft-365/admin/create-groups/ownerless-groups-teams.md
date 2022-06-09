@@ -25,15 +25,18 @@ description: "Learn how to automatically invite members to become owners in an o
 
 # Manage ownerless Microsoft 365 groups and teams
 
-A team in Microsoft Teams or a Microsoft 365 group can become ownerless if an owner's account is deleted or disabled in Microsoft 365. Groups and teams require an owner to add or remove members and change group settings.
+A team in Microsoft Teams or a Microsoft 365 group and its related services can become ownerless if an owner's account is deleted or disabled in Microsoft 365. Groups and teams require an owner to add or remove members and change group settings.
 
-You can create a policy what automatically asks the most active members or an ownerless group or team if they'll accept ownership. When a member accepts the invitation to become an owner, the action is logged in the compliance center audit log. Guests are never invited to be owners.
+A Global administrator can create a policy that automatically asks the most active members of an ownerless group or team if they'll accept ownership. When a member accepts the invitation to become an owner, the action is logged in the compliance portal audit log. Guests are never invited to be owners.
 
 When creating the policy, you can specify:
 - If you want to limit who can be invited to be an owner by specifying a security group
 - The sender address of the notifications
 - The number of weeks that the notifications will be sent
 - Which groups or teams are part of the policy
+
+> [!Note]
+> Using a security group to limit who can be invited to be an owner requires that you possess but not necessarily assign an Azure AD Premium license for each Microsoft 365 group member in your organization.
 
 To set an ownerless group or team policy
 
@@ -57,4 +60,8 @@ To set an ownerless group or team policy
 
 1. On the *Review and finish* page, confirm your settings and click **Finish**, and then select **Done**.
 
-Notifications are sent weekly starting within 24 hours of policy creation.
+Notifications are sent weekly starting within 24 hours of policy creation. Recipients can't forward the notifications to others. Notifications and responses are tracked in the audit log.
+
+Up to two group members per group can accept the invitation to become an owner. If no group members accept, an administrator will have to [assign a group owner](/admin/create-groups/add-or-remove-members-from-groups).
+
+

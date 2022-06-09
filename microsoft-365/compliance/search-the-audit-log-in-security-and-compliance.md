@@ -102,7 +102,7 @@ Be sure to read the following items before you start searching the audit log.
     > [!NOTE]
     > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the compliance portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
 
-- If you want to turn off audit log search for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
+- If you want to turn off audit log search for your organization, you can run the following command in Exchange Online PowerShell:
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -527,7 +527,6 @@ The following table describes activities related to when users interact with lis
 |Updated list item|ListItemUpdated|A user updated a SharePoint list item by modifying one or more properties.|
 |Updated site column|SiteColumnUpdated|A user updated a SharePoint site column by modifying one or more properties.|
 |Updated site content type|SiteContentTypeUpdated|A user updated a site content type by modifying one or more properties.|
-|Viewed list item|ListItemViewed|A user viewed a SharePoint list item. Once a user views a list item, the ListItemViewed event is not logged again for the same user for same list item for the next five minutes.|
 
 ### Sharing and access request activities
 
@@ -569,8 +568,8 @@ The following table lists file synchronization activities in SharePoint Online a
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Allowed computer to sync files|ManagedSyncClientAllowed|User successfully establishes a sync relationship with a site. The sync relationship is successful because the user's computer is a member of a domain that's been added to the list of domains (called the *safe recipients list*) that can access document libraries in your organization. <br/><br/> For more information about this feature, see [Use Windows PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
-|Blocked computer from syncing files|UnmanagedSyncClientBlocked|User tries to establish a sync relationship with a site from a computer that isn't a member of your organization's domain or is a member of a domain that hasn't been added to the list of domains (called the  *safe recipients list)*  that can access document libraries in your organization. The sync relationship is not allowed, and the user's computer is blocked from syncing, downloading, or uploading files on a document library. <br/><br/> For information about this feature, see [Use Windows PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
+|Allowed computer to sync files|ManagedSyncClientAllowed|User successfully establishes a sync relationship with a site. The sync relationship is successful because the user's computer is a member of a domain that's been added to the list of domains (called the *safe recipients list*) that can access document libraries in your organization. <br/><br/> For more information about this feature, see [Use PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
+|Blocked computer from syncing files|UnmanagedSyncClientBlocked|User tries to establish a sync relationship with a site from a computer that isn't a member of your organization's domain or is a member of a domain that hasn't been added to the list of domains (called the  *safe recipients list)*  that can access document libraries in your organization. The sync relationship is not allowed, and the user's computer is blocked from syncing, downloading, or uploading files on a document library. <br/><br/> For information about this feature, see [Use PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
 |Downloaded files to computer|FileSyncDownloadedFull|User downloads a file to their computer from a SharePoint document library or OneDrive for Business using OneDrive sync app (OneDrive.exe).|
 |Downloaded file changes to computer|FileSyncDownloadedPartial|This event has been deprecated along with the old OneDrive for Business sync app (Groove.exe).|
 |Uploaded files to document library|FileSyncUploadedFull|User uploads a new file or changes to a file in SharePoint document library or OneDrive for Business using OneDrive sync app (OneDrive.exe).|
@@ -641,7 +640,7 @@ The following table lists events that result from site administration tasks in S
 
 The following table lists the activities that can be logged by mailbox audit logging. Mailbox activities performed by the mailbox owner, a delegated user, or an administrator are automatically logged in the audit log for up to 90 days. It's possible for an admin to turn off mailbox audit logging for all users in your organization. In this case, no mailbox actions for any user are logged. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).
 
- You can also search for mailbox activities by using the [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) cmdlet in Exchange Online PowerShell.
+ You can also search for mailbox activities by using the [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -1126,7 +1125,13 @@ Yes. The Office 365 Management Activity API is used to fetch the audit logs prog
 
 **Are there other ways to get auditing logs other than using the security and compliance portal or the Office 365 Management Activity API?**
 
-No. These are the only two ways to get data from the auditing service.
+Yes, You can retrieve audit logs by using the following methods:
+
+- The [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference).
+
+- The [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal.
+
+- The [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell.
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 

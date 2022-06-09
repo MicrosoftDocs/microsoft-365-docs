@@ -31,6 +31,9 @@ ms.technology: m365d
 
 Microsoft 365 Defender is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location. 
 
+Watch this short video to learn how Microsoft 365 Defender helps to prevent, detect, investigate, and remediate threats across Microsoft 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
+
 Whether you're new to the Microsoft suite of security products or familiar with individual workflows, this topic will guide you in the simple steps you need to take to get started with Microsoft 365 Defender.
 
 :::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="The steps to get started with the Microsoft 365 Defender portal" lightbox="../../media/mtp/get-started-m365d.png":::
@@ -47,6 +50,7 @@ In general, you'll need to take the following steps to get started:
 
 
 ## Key capabilities
+
 Turning on Microsoft 365 Defender and deploying services will give you access to the following key capabilities:
 
 

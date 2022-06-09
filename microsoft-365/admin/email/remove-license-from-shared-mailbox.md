@@ -36,7 +36,6 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 > - The shared mailbox has more than 50 GB of storage in use.
 > - The shared mailbox uses in-place archiving.
 > - The shared mailbox is placed in litigation hold.
-> - The shared mailbox has a Microsoft 365 Defender license assigned.
 > 
 > For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
