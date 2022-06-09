@@ -30,12 +30,16 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 # Set app protection settings for Android or iOS devices
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article applies to Microsoft 365 Business Premium.
 
 > [!NOTE]
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
 
 ## Watch: Secure Office apps on iOS
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197828).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 

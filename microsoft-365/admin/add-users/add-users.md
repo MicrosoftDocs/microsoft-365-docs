@@ -27,6 +27,8 @@ ms.date: 07/01/2020
 
 # Add users and assign licenses at the same time
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). The easiest way to add user accounts is to add them one at a time in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. After you do this step, your users have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
 > [!TIP]
@@ -37,6 +39,8 @@ The people on your team each need a user account before they can sign in and acc
 You must be a global, license, or a user admin to add users and assign licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Watch: Add users in the dashboard view
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198205).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 

@@ -34,6 +34,8 @@ description: "Sign in with your Microsoft 365 admin account to reset passwords f
 
 # Reset passwords in Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
 
 > [!NOTE]
@@ -50,7 +52,7 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 
 ## Watch: Reset a business password for a user
 
-Watch a short video about resetting user passwords.<br><br>
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
@@ -98,7 +100,6 @@ If you forgot your password and can't sign in:
 - Or, [call Microsoft Support](../../business-video/get-help-support.md).
 
 ## Reset all business passwords for everyone in your organization at the same time
-<a name="bkmk_forgot"> </a>
 
 These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk (maximum 40 users at a time).
   
@@ -113,7 +114,6 @@ These steps work for a business with tens of users. If you have hundreds or thou
 5. Enter an email address where you can receive the temporary passwords. You'll need to notify your users what their temporary passwords are.
   
 ## Reset business passwords in bulk
-<a name="bkmk_forgot"> </a>
 
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   

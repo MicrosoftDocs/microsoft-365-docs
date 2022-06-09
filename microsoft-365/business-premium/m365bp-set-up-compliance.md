@@ -26,6 +26,8 @@ description: "Set up compliance features to prevent data loss and help keep your
 ---
 # Set up compliance features
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 Your Microsoft 365 Business Premium subscription includes compliance and privacy features. These capabilities help protect your company's data, and to help you keep your and your customers' sensitive information secure. This article is designed to help you get started with your compliance features.
 
 ## Before you begin
@@ -66,6 +68,8 @@ Here's how to get started:
 For more information about compliance features in Microsoft 365 for business, see [Microsoft Purview documentation](../compliance/index.yml).
 
 ## Use sensitivity labels
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198022).
 
 Sensitivity labels are available in Office apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
 

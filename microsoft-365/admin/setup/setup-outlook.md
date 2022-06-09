@@ -23,9 +23,13 @@ description: "Learn how to set up Outlook for your Microsoft 365 email."
 ---
 # Set up Outlook for Microsoft 365 for business email 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-## Try it!
+## Watch: Set up Outlook for email
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198010).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
 
 After installing the Office apps, you&#39;ll want set up Outlook to start using email, calendar, and contacts. Here&#39;s how.
 

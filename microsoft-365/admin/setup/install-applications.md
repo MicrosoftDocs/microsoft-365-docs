@@ -28,6 +28,8 @@ description: "Now that you've set up Microsoft 365, learn how to install individ
 
 # Install Office applications
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 Now that you've set up Microsoft 365, you can install individual Office applications on your Mac, PC, or mobile devices.
   
 ## Watch: Install Office apps

@@ -32,12 +32,16 @@ description: "Protect your business email and data from cyberthreats, including 
 
 # Best practices for securing Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 If you are a small or medium-size organization using one of Microsoft's business plans, the guidance in this article helps you tighten the security of your organization. Among your choices, Microsoft 365 Business Premium leads the way since it now includes Microsoft Defender for Business and other [security protections](../../business-premium/get-microsoft-365-business-premium.md). The recommended actions included here will help you achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
 > [!TIP]
 > If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: A quick overview of security
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198012).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 

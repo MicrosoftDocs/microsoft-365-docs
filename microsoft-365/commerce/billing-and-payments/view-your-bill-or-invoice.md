@@ -29,6 +29,8 @@ ms.date: 01/25/2022
 
 # View your bill or invoice
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article is for people who have a Microsoft 365 for business subscription.
   
 If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
@@ -40,6 +42,8 @@ If you need help with interpreting the charges you see on your bill, see [Unders
 You must be a Global or Billing admin to do the steps described in this article.
   
 ## Watch: View, download, or print your bill
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197915).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

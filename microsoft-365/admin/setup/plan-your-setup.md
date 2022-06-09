@@ -26,11 +26,15 @@ description: Learn about the requirements and considerations for making the move
 
 # Plan your setup of Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article is for people who have subscribed to a Microsoft 365 for business plan.
   
 Before moving your organization to Microsoft 365, there are requirements you need to meet, info you need to have on hand, and decisions you have to make.
 
 ## Overview of Microsoft 365 for business setup
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197910).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
 

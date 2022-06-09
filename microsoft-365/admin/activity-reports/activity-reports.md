@@ -26,12 +26,16 @@ description: "Get a periodic report of how people in your organization are using
 
 # Microsoft 365 Reports in the admin center
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
 ## Watch: Act on a usage report in Office 365
   
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
   
 ## How to get to the Reports dashboard
