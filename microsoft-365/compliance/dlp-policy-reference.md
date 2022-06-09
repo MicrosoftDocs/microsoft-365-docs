@@ -535,7 +535,7 @@ The user notifications and policy tips configuration options vary depending on t
 
 You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 
-- You can enable/disable **Notifying users in Office 365 service** with a policy tip.
+- You can enable/disable notifications with a policy tip.
     - email notifications to the user who sent, shared, or last modified the content
     OR
     - notify specific people
@@ -547,6 +547,9 @@ and customize the email text, subject, and the policy tip text.
 If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and Defender for Cloud Apps plus the option to customize the notification title and content that appears on the Windows 10 device.
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)  
+
+> [!IMPORTANT]
+> Email notifications to Devices are not supported for policies that have the Devices location selected.
 
 You can customize the title and body of text with using these parameters. The body text supports these:
 
