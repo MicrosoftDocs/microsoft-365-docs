@@ -548,6 +548,9 @@ If you selected Devices only, you will get all the same options that are availab
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)  
 
+> [!IMPORTANT]
+> Email notifications to Devices are not supported for policies that have the Devices location selected.
+
 You can customize the title and body of text with using these parameters. The body text supports these:
 
 |Common name  |Parameter  |Example
