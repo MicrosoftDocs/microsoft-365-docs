@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Security & Compliance Center PowerShell provides a number of cmdlets that let you automate time-consuming eDiscovery-related tasks. Currently, creating a Content search in the Microsoft Purview compliance portal to search a large number of custodian content locations takes time and preparation. Before you create a search, you have to collect the URL for each OneDrive for Business site and then add each mailbox and OneDrive for Business site to the search. In future releases, this will be easier to do in the compliance portal. Until then, you can use the script in this article to automate this process. This script prompts you for the name of your organization's MySite domain (for example, **contoso** in the URL `https://contoso-my.sharepoint.com`), a list of user email addresses, the name of the new Content Search, and the search query to use. The script gets the OneDrive for Business URL for each user in the list, and then it creates and starts a Content Search that searches the mailbox and OneDrive for Business site for each user in the list, using the search query that you provide.
+Security & Compliance PowerShell provides a number of cmdlets that let you automate time-consuming eDiscovery-related tasks. Currently, creating a Content search in the Microsoft Purview compliance portal to search a large number of custodian content locations takes time and preparation. Before you create a search, you have to collect the URL for each OneDrive for Business site and then add each mailbox and OneDrive for Business site to the search. In future releases, this will be easier to do in the compliance portal. Until then, you can use the script in this article to automate this process. This script prompts you for the name of your organization's MySite domain (for example, **contoso** in the URL `https://contoso-my.sharepoint.com`), a list of user email addresses, the name of the new Content Search, and the search query to use. The script gets the OneDrive for Business URL for each user in the list, and then it creates and starts a Content Search that searches the mailbox and OneDrive for Business site for each user in the list, using the search query that you provide.
   
 ## Permissions and script information
 
@@ -59,7 +59,7 @@ After you run this command, be sure to open the file and remove the header that 
 
 When you run the script in this step, it will prompt you for the following information. Be sure to have this information ready before you run the script.
   
-- **Your user credentials** - The script will use your credentials to access SharePoint Online to get the OneDrive for Business URLs and to connect to Security & Compliance Center PowerShell. 
+- **Your user credentials** - The script will use your credentials to access SharePoint Online to get the OneDrive for Business URLs and to connect to Security & Compliance PowerShell. 
     
 - **Name of your MySite domain** - The MySite domain is the domain that contains all the OneDrive for Business sites in your organization. For example, if the URL for your MySite domain is **https://contoso-my.sharepoint.com**, then you would enter  `contoso` when the script prompts you for the name of your MySite domain. 
     
@@ -98,7 +98,7 @@ When you run the script in this step, it will prompt you for the following infor
   $searchName = Read-Host "Enter the name for the new search"
   $searchQuery = Read-Host "Enter the search query you want to use"
   $emailAddresses = Get-Content $inputfile | where {$_ -ne ""}  | foreach{ $_.Trim() }
-  # Connect to Security & Compliance Center PowerShell
+  # Connect to Security & Compliance PowerShell
   if (!$s -or !$a)
   {
       Import-Module ExchangeOnlineManagement
@@ -180,4 +180,4 @@ When you run the script in this step, it will prompt you for the following infor
     
     - The search query (leave this blank to return all items in the content locations).
     
-    The script gets the URLs for each OneDrive for Business site and then creates and starts the search. You can either run the **Get-ComplianceSearch** cmdlet in Security & Compliance Center PowerShell to display the search statistics and results, or you can go to the **Content search** page in the compliance portal to view information about the search.
+    The script gets the URLs for each OneDrive for Business site and then creates and starts the search. You can either run the **Get-ComplianceSearch** cmdlet in Security & Compliance PowerShell to display the search statistics and results, or you can go to the **Content search** page in the compliance portal to view information about the search.
