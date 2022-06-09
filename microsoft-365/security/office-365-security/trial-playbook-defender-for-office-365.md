@@ -19,6 +19,12 @@ description: "Microsoft Defender for Office 365 solutions trial playbook."
 
 # Trial playbook: Microsoft Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 Welcome to the Microsoft Defender for Office 365 trial playbook. This playbook will help you make the most of your 90-day free trial by teaching you how to safeguard your organization with Defender for Office 365. Using Microsoft recommendations, you'll learn how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
 :::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="A graphical representation of all components of Microsoft Defender for Office 365." lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::

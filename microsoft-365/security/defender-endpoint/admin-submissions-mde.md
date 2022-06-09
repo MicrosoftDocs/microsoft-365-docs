@@ -43,7 +43,7 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
+  - **Organization Management**, **Security Administrator**, or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
 
 - For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 

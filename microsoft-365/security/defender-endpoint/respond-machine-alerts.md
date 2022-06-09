@@ -21,8 +21,11 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
+
+[!INCLUDE [Prerelease information](../../includes/prerelease.md)]
 
 Quickly respond to detected attacks by isolating devices or collecting an investigation package. After taking action on devices, you can check activity details on the Action center.
 
@@ -35,6 +38,7 @@ Response actions run along the top of a specific device page and include:
 - Run antivirus scan
 - Restrict app execution
 - Isolate device
+- Contain device
 - Consult a threat expert
 - Action center
 
@@ -85,8 +89,7 @@ For more information on live response, see [Investigate entities on devices usin
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker.
 
 > [!IMPORTANT]
->
->These actions are not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+> These actions are not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 
 To download the package (Zip file) and investigate the events that occurred on a device
 
@@ -149,8 +152,8 @@ The Action center will show the scan information and the device timeline will in
 
 In addition to containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
->[!IMPORTANT]
-> - This action is available for devices on Windows 10, version  1709 or later, Windows 11, and Windows Server 2016. 
+> [!IMPORTANT]
+> - This action is available for devices on Windows 10, version 1709 or later, Windows 11, and Windows Server 2019 or later. 
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
@@ -169,15 +172,15 @@ When an app is restricted, the following notification is displayed to inform the
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
 
->[!NOTE]
->The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
+> [!NOTE]
+> The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
 
 ## Isolate devices from the network
 
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
 > [!IMPORTANT]
-> - Isolating devices from the network is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
+> - Isolating devices from the network is not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
 > - Full isolation is available for devices on Windows 10, version 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
 > - Selective isolation is available for devices on Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
@@ -201,6 +204,49 @@ Once you have selected **Isolate device** on the device page, type a comment and
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+
+## Contain devices from the network
+
+When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices from becoming compromised while the security operations analyst locates, identifies, and remediates the threat on the compromised device.
+
+> [!NOTE]
+> Blocking incoming and outgoing communication with a 'contained' device is supported on onboarded Microsoft Defender for Endpoint Windows 10 and Windows Server 2019+ devices.
+
+### How to contain a device
+
+1. Go to the **Device inventory** page and select the device to contain.
+
+2. Select **Contain device** from the actions menu in the device flyout.
+
+:::image type="content" alt-text="Screenshot of the contain device popup message." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
+
+3. On the contain device popup, type a comment, and select **Confirm**.
+
+:::image type="content" alt-text="Screenshot of the contain device menu item." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
+
+### Contain a device from the device page
+
+A device can also be contained from the device page by selecting **Contain device** from the action bar:
+
+:::image type="content" alt-text="Screenshot of the contain device menu item on the device page." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
+
+> [!NOTE]
+> It can take up to 5 minutes for the details about a newly contained device to reach Microsoft Defender for Endpoint onboarded devices.
+
+> [!IMPORTANT]
+> - If a contained device changes its IP address, then all Microsoft Defender for Endpoint onboarded devices will recognize this and start blocking communications with the new IP address. The original IP address will no longer be blocked (It may take up to 5 mins to see these changes).  
+> - In cases where the contained device’s IP is used by another device on the network, there will be a warning while containing the device, with a link to advanced hunting (with a pre-populated query). This will provide visibility to the other devices using the same IP to help you make a conscious decision if you’d like to continue with containing the device.
+> - In cases where the contained device is a network device, a warning will appear with a message that this may cause network connectivity issues (for example, containing a router that is acting as a default gateway). At this point, you’ll be able to choose whether to contain the device or not.
+
+After you contain a device, if the behavior isn't as expected, verify the Base Filtering Engine (BFE) service is enabled on the Defender for Endpoint onboarded devices.
+
+### Stop containing a device
+
+You'll be able to stop containing a device at any time.
+
+1. Select the device from the **Device inventory** or open the device page.
+
+2. Select **Release from containment** from the action menu. This action will restore this device's connection to the network.
 
 ## Consult a threat expert
 

@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 description: "Learn how to change how frequently you're billed for your business subscription."
-ms.date: 04/02/2021
+ms.date: 05/24/2022
 ---
 
 # Change your billing frequency
 
-When you buy a subscription, you choose monthly or annual billing. To change how often you are billed for a subscription, use the following steps.
+When you buy a subscription, you select a billing frequency. To change how often you are billed for a subscription, use the following steps.
 
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the subscription that you want to change.

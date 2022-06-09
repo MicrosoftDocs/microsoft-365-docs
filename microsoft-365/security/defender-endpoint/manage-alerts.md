@@ -36,6 +36,9 @@ Selecting an alert in either of those places brings up the **Alert management pa
 
 :::image type="content" source="images/atp-alerts-selected.png" alt-text="The Alert management pane and the Alerts queue" lightbox="images/atp-alerts-selected.png":::
 
+Watch this video to learn how to use the new Microsoft Defender for Endpoint alert page.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
+
 ## Link to another incident
 
 You can create a new incident from the alert or link to an existing incident.
