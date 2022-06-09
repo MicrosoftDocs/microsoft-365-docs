@@ -2,7 +2,7 @@
 title: "Network planning with ExpressRoute for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 2/14/2018
 audience: ITPro
 ms.topic: conceptual

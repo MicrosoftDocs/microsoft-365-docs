@@ -13,8 +13,15 @@ ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
+ms.collection: M365-security-compliance
 ---
 # Step-by-step threat protection in Microsoft Defender for Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 The Microsoft Defender for Office 365 protection or filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
 
@@ -27,7 +34,7 @@ Unfortunately, Edge blocks that were once *critical* are now relatively simple f
 
 Edge blocks are designed to be automatic. In the case of false positive, senders will be notified and told how to address their issue. Connectors from trusted partners with limited reputation can ensure deliverability, or temporary overrides can be put in place, when onboarding new endpoints.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Phase 1 of filtering in Defender for Office 365 is Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="The Phase-1 filtering in Defender for Office 365" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. **Network throttling** protects Office 365 infrastructure and customers from Denial of Service (DOS) attacks by limiting the number of messages that can be submitted by a specific set of infrastructure.
 
@@ -45,7 +52,7 @@ Edge blocks are designed to be automatic. In the case of false positive, senders
 
 Features in sender intelligence are critical for catching spam, bulk, impersonation, and unauthorized spoof messages, and also factor into phish detection. Most of these features are individually configurable.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in Defender for Office 365 is Sender intelligence.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in Defender for Office 365 is Sender intelligence" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png":::
 
 1. **Account compromise detection** triggers and alerts are raised when an account has anomalous behavior, consistent with compromise. In some cases, the user account is blocked and prevented from sending any further email messages until the issue is resolved by an organization's security operations team.
 
@@ -75,7 +82,7 @@ Features in sender intelligence are critical for catching spam, bulk, impersonat
 
 In this phase the filtering stack begins to handle the specific contents of the mail, including its hyperlinks and attachments.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="Phase 3 of filtering in MDO is Content Filtering.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="The Phase-3 filtering in MDO is Content Filtering" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
 1. **Transport rules** (also known as mail flow rules or Exchange transport rules) allow an admin to take a wide range of actions when an equally wide range of conditions are met for a message. All messages that flow through your organization are evaluated against the enabled mail flow rules / transport rules.
 
@@ -103,7 +110,7 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 The last stage takes place after mail or file delivery, acting on mail that is in various mailboxes and files and links that appear in clients like Microsoft Teams.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Phase 4 of filtering in Defender for Office 365 is Post-delivery protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="The Phase-4 filtering in Defender for Office 365 is Post-delivery protection" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
 1. **Safe Links** is Defender for Office 365's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
 
@@ -127,7 +134,7 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 The final diagram (as with all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask after updates. For your records, this is the stack with all the phases in order:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in Defender for Office 365 in order, 1 to 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in Defender for Office 365 in order, from 1 to 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
 ## More information
 

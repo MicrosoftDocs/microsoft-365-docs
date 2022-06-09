@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: 
   - MET150
   - MOE150
@@ -16,9 +16,12 @@ ms.collection:
 description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties.
 ms.technology: mdo
 ms.prod: m365-security
+adobe-target: true
 ---
 
 # Microsoft Defender for Office 365 security overview
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -47,11 +50,10 @@ You may be accustomed to seeing these three components discussed in this way:
 |EOP|Microsoft Defender for Office 365 P1|Microsoft Defender for Office 365 P2|
 |---|---|---|
 |Prevents broad, volume-based, known attacks.|Protects email and collaboration from zero-day malware, phish, and business email compromise.|Adds post-breach investigation, hunting, and response, as well as automation, and simulation (for training).|
-|
 
 But in terms of architecture, let's start by thinking of each piece as cumulative layers of security, each with a security emphasis. More like this:
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP and Microsoft Defender for Office 365 and their relationships to one another with service emphasis, including a note for email authentication.":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="The EOP and Microsoft Defender for Office 365 and their relationships to one another with service emphasis, including a note for email authentication" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 Though each of these services emphasizes a goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
 
@@ -81,7 +83,6 @@ starting with **Exchange Online Protection**:
 |Prevent/Detect|Investigate|Respond|
 |---|---|---|
 |Technologies include:<ul><li>spam</li><li>phish</li><li>malware</li><li>bulk mail</li><li>spoof intelligence</li><li>impersonation detection</li><li>Admin Quarantine</li><li>Admin and user submissions of False Positives and False Negatives</li><li>Allow/Block for URLs and Files</li><li>Reports</li></ul>|<li>Audit log search</li><li>Message Trace</li>|<li>Zero-hour auto purge (ZAP)</li><li>Refinement and testing of Allow and Block lists</li>|
-|
 
 If you want to dig in to EOP, **[jump to this article](exchange-online-protection-overview.md)**.
 
