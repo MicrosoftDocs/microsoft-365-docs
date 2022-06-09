@@ -120,7 +120,7 @@ The following steps show you how to run a PowerShell script that searches for al
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -161,9 +161,9 @@ The following steps show you how to run a PowerShell script that searches for al
      }
    ```
 
-2. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-3. In Security & Compliance Center PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
+3. In Security & Compliance PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
 
    ```powershell
    .\PartiallyIndexedItems.ps1

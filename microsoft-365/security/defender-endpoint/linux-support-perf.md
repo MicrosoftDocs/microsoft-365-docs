@@ -186,7 +186,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
    ![Image of command line example.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 > [!NOTE]
-> - The analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - The analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
 > 
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -239,9 +239,9 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
   Description: Additional XML file used by the analyzer when building the HTML report.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
+  Description: details on audited service and related components for [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS
 
 - perf_benchmark.tar.gz
 

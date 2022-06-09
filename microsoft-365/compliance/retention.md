@@ -546,7 +546,7 @@ Retention actions that are logged as auditing events are available only for rete
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-To use the retention cmdlets, you must first [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:
+To use the retention cmdlets, you must first [connect to Office 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
