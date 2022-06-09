@@ -1,5 +1,5 @@
 ---
-title: "Move a SharePoint site to a different geo location"
+title: Move a SharePoint site to a different geo location
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -30,7 +30,7 @@ The following types of site can be moved between geo locations:
 
 You must be a Global Administrator or SharePoint Administrator to move a site between geo locations.
 
-There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site contents.
+There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site-contents.
 
 ## Best practices
 
@@ -70,7 +70,7 @@ Time must be specified in Coordinated Universal Time (UTC) for both parameters.
 
 SharePoint site geo move requires that you connect and perform the move from the SharePoint Admin URL in the geo location where the site is.
 
-For example, if the site URL is <https://contosohealthcare.sharepoint.com/sites/Turbines>, connect to the SharePoint Admin URL at <https://contosohealthcare-admin.sharepoint.com>:
+For example, if the site URL is `https://contosohealthcare.sharepoint.com/sites/Turbines`, connect to the SharePoint Admin URL at `https://contosohealthcare-admin.sharepoint.com`:
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -102,11 +102,11 @@ This will return *Success* if the site is ready to be moved or *Fail* if any of 
 
 By default, initial URL for the site will change to the URL of the destination geo location. For example:
 
-<https://Contoso.sharepoint.com/sites/projectx> to <https://ContosoEUR.sharepoint.com/sites/projectx>
+`https://Contoso.sharepoint.com/sites/projectx` to `https://ContosoEUR.sharepoint.com/sites/projectx`
 
 For sites with no Microsoft 365 group association, you can also rename the site by using the `-DestinationUrl` parameter. For example:
 
-<https://Contoso.sharepoint.com/sites/projectx> to <https://ContosoEUR.sharepoint.com/sites/projecty>
+<https://Contoso.sharepoint.com/sites/projectx> to `https://ContosoEUR.sharepoint.com/sites/projecty`
 
 To start the site move, run:
 
@@ -154,7 +154,7 @@ The move statuses are described in the following table.
 |---|---|
 |Ready to Trigger|The move has not started.|
 |Scheduled|The move is in queue but has not yet started.|
-|InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Backup (2/4), Restore (3/4), Cleanup (4/4).|
+|InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
 |Success|The move has completed successfully.|
 |Failed|The move failed.|
 |
@@ -167,7 +167,7 @@ Site users should notice minimal disruption when their site is moved to a differ
 
 ### Site
 
-While the move is in progress the site is set to read-only. Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.
+While the move is in progress, the site is set to read-only. Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.
 
 ### Permissions
 
@@ -208,15 +208,15 @@ The SharePoint Mobile App is cross geo compatible and able to detect the site's 
 
 ### SharePoint workflows
 
-SharePoint 2013 workflows need to be republished after the site move. SharePoint 2010 workflows should continue to function normally.
+SharePoint 2013 workflows have to be republished after the site move. SharePoint 2010 workflows should continue to function normally.
 
 ### Apps
 
-If you are moving a site with apps, you must re-instantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.
+If you are moving a site with apps, you must reinstantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.
 
 ### Flow
 
-In most cases Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
+In most cases, Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
 
 ### Power Apps
 

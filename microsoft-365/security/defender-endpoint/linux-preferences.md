@@ -97,7 +97,7 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 |---|---|
 |**Key**|behaviorMonitoring|
 |**Data type**|String|
-|**Possible values**|disabled <p> enabled (default)|
+|**Possible values**|disabled (default) <p> enabled |
 |**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
   
 #### Run a scan after definitions are updated
@@ -486,7 +486,6 @@ The following configuration profile will:
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
@@ -503,7 +502,7 @@ The following configuration profile will:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true,
-      "proxy":"http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
@@ -517,7 +516,6 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
@@ -572,7 +570,7 @@ The following configuration profile contains entries for all settings described 
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true,
-      "proxy": "http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
@@ -587,22 +585,27 @@ When you run the `mdatp health` command for the first time, the value for the ta
 
   ```JSON
     },
-     "cloudService":{
-        "enabled":true,
-        "diagnosticLevel":"optional",
-        "automaticSampleSubmissionConsent":"safe",
-        "automaticDefinitionUpdateEnabled":true,
-        "proxy": "http://proxy.server:port/"
-     },
-     "edr":{
-          "groupIds":"GroupIdExample",
-          "tags":"MDETagExample"
-          }
+    "cloudService": {
+      "enabled": true,
+      "diagnosticLevel": "optional",
+      "automaticSampleSubmissionConsent": "safe",
+      "automaticDefinitionUpdateEnabled": true,
+      "proxy": "http://proxy.server:port/"
+  },
+  "edr": {
+    "groupIds":"GroupIdExample",
+    "tags": [
+              {
+              "key": "GROUP",
+              "value": "Tag"
+              }
+            ]
+        }
   }
   ```
 
   > [!NOTE]
-  > Don’t forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example).
+  > Don't forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`. 
   
 ## Configuration profile validation
 

@@ -2,8 +2,8 @@
 title: "Add DNS records to connect your domain"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 - admindeeplinkMAC
 ---
 
@@ -33,6 +34,9 @@ At the end of these steps, your domain will stay registered with the host that y
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
 [Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for below.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Step 1: Add a TXT or MX record to verify you own the domain
 
@@ -88,14 +92,16 @@ You'll be adding several different types of DNS records depending on the service
 
 You'll get the information for the MX record from the admin center domain setup wizard.
 
-On your hosting provider's website, add a new MX record.
-Make sure that the fields are set to the following values:
+On your hosting provider's website, add a new MX record. Make sure that the fields are set to the following values:
 
 - Record Type: `MX`
 - Priority: Set to the highest value available, typically `0`.
 - Host Name: `@`
 - Points to address: Copy the value from the admin center and paste it here.
-- TTL: `3600` (or your provider default)
+- TTL: `3600`
+
+> [!NOTE]
+> Exchange Online only supports TTL values less than 6 hours (21,600 seconds).
 
 Save the record, and then remove any other MX records.
 

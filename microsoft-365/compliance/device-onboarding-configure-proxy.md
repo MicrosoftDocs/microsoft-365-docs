@@ -23,6 +23,8 @@ description: "Configure device proxy and internet connection settings for Inform
 
 # Configure device proxy and internet connection settings for Information Protection
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Endpoint technologies uses Microsoft Windows HTTP (WinHTTP) to report data and communicate with the Microsoft endpoint cloud service. The embedded service runs in system context using the LocalSystem account.
 
 > [!TIP]
@@ -132,7 +134,7 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 > [!NOTE]
 >
-> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
+> The Connectivity Analyzer tool is not compatible with attack surface reduction rule [Block process creations originating from PSExec and WMI commands](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands). You will need to temporarily disable this rule to run the connectivity tool.
 >
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Defender for Endpoint will fall back to direct if it can’t access the defined proxy. Related topics:
 >
