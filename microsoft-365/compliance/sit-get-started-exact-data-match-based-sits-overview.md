@@ -21,13 +21,13 @@ ms.custom: seo-marvel-apr2020
 ---
 # [New](#tab/New)
 
-Content for New EDM experience
+
 
 # Get started with exact data match based SITs NEW
 
 # [Classic](#tab/Classic)
 
-Content for Classic EDM experience
+
 
 # Get started with exact data match based sensitive information types CLASSIC
 
