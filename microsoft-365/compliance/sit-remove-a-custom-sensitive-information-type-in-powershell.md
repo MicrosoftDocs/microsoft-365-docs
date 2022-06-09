@@ -21,7 +21,7 @@ description: "Learn how to remove a custom sensitive information type using Powe
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-In Compliance center PowerShell, there are two methods to remove custom sensitive information types:
+In Security & Compliance PowerShell, there are two methods to remove custom sensitive information types:
 
 - **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). You export the custom rule package that contains the custom sensitive information type, remove the sensitive information type from the XML file, and import the updated XML file back into the existing custom rule package.
 
@@ -30,7 +30,7 @@ In Compliance center PowerShell, there are two methods to remove custom sensitiv
 > [!NOTE]
 > Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
 
-1. [Connect to Compliance center PowerShell](/powershell/exchange/exchange-online-powershell)
+1. [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
 
 2. To remove a custom rule package, use the [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) cmdlet:
 
