@@ -24,7 +24,7 @@ ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: "Learn how to verify your email and domain ownership to take over an unmanaged account created by a self-service user signup in Microsoft 365."
 ---
 
-# Perform an internal admin takeover
+# Internal admin takeover
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
