@@ -1,0 +1,116 @@
+---
+title: "Audit new search"
+f1.keywords:
+- NOCSH
+ms.author: v-tophillips
+author: v-tophillips
+manager: laurawi
+audience: Admin
+ms.topic: how-to
+ms.service: O365-seccomp
+ms.localizationpriority: high
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+search.appverid:
+- MOE150
+- MET150
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
+description: "The Audit New Search validates the performance improvements, completeness, and consistency of results."
+---
+
+# Audit New Search (preview)
+
+Organizations around the globe require access to critical audit log event data in order to gain insight and further investigate user activities. Previously, customers creating audit log search jobs via the Microsoft Purview compliance portal UI were limited in their ability to create concurrent audit search jobs and review historical search jobs. These critical audit search jobs also had a dependency on the browser window remaining open in order for the job to complete.
+
+The Audit New Search (Preview) builds upon the existing search functionalities and includes the following key improvements:
+
+1. Search jobs initiated via the Microsoft Purview compliance center UI no longer require the web browser window to remain open in order to complete. These jobs will continue to run even after the browser window is closed.
+1. Completed search jobs are now stored, giving customers the ability to reference historical audit searches. These search jobs are presented in the UI where the admin is provided with the search name, search job status, progress %, Number of results, Creation Time, and Searched by.
+1. Each admin Audit account user can have a maximum of 10 search jobs in progress at a time.
+
+## Information to get started
+
+Please review the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:
+
+- Search the Audit Log: Search the audit log in the Microsoft 365 compliance center - Microsoft 365 Compliance | Microsoft Docs (Please note PowerShell is not yet compatible with Audit Search V2
+- Properties in the Audit Log: Detailed properties in the audit log - Microsoft 365 Compliance | Microsoft Docs
+- Export, Configure, and View Audit Log: Export, configure, and view audit log records - Microsoft 365 Compliance | Microsoft Docs
+
+Additional information:
+
+- Searching via an EXO PowerShell session using the Search-UnifiedAuditLog cmdlet is not compatible with the New Search at this time. 
+- Search jobs can take in the following criteria: Date Range, Time Range, Search Job Name, Activities, Users, Files, Folders, and Sites. 
+- Searching and filtering using date, time, search name, activities, and users are all fully functional
+- Audit Log data will be stored for the defined retention period, regardless of a search job being deleted
+- Searches created during the Private Preview period may not be retained for future reference once the New Search feature moves into Public Preview.
+
+## Get started with audit new search
+
+Follow the below steps to test and validate the Audit New Search experience:
+
+1. Navigate to compliance.microsoft.com
+1. Click on the Audit tab on the left panel of the homepage to navigate to the Audit tool
+1. Click on “New Search (Preview)” tab at the top of the Audit page
+Figure 2: Audit New Search Tool Overview
+Figure 1: Microsoft Purview Homepage
+1. Test different search jobs in the Audit New Search tool using a variety of search criteria.
+Some examples of different searches include the following criteria. Please explore these different search methods while performing searches on the audit log.
+    - Search across different timeframes.
+      - One day
+      - Week
+      - Month
+      - Several Months
+    - Search across selected users
+    - Scoping the search using the activities field
+    - Adding a specific file, folder, or site
+1. Initiate an additional 2-9 searches in the compliance center. Please note that a max of 10 search jobs can be run in parallel in one account.
+1. Explore the search job history and click on different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
+1. Click on a search job to see the results of the job displayed in a line-item format. Please explore the various functionalities in the UI including the following:
+    - Referencing the complete search query at the top of the page, which includes all search criteria entered when completing the original search
+    - Clicking on various results for more information in the fly-out window
+    - Filtering across the search job using IP address, User, Activity, Date, Item, and Details.
+    - Exporting both unfiltered and filtered searches
+    - Sorting the results by clicking the corresponding buttons on the top of the table including Date, IP Address (when applicable), User, Activity, Item, and Detail (when applicable).
+
+Figure 5: Audit Search Job Results Overview
+Figure 6: Example of sorting by user column
+Figure 7: Search Job Result Filtering Tool
+Figure 8: More details about each result available once clicked
+
+## Audit search job overview
+
+- Search jobs can take in the following criteria: Date Range, Time Range, Search Job Name, Activities, Users, Files, Folders, and Sites.
+- File, folder, or site search text box will return all related results for corresponding file, folders, and sites
+- The search jobs will run at the bottom of the search page.
+  - Search jobs can be “Queued,” “In Progress,” and “Completed”
+  - A maximum of 10 “In Progress” search jobs can be completed simultaneously per user
+- Full search names for jobs can be seen by hovering the cursor over the search job
+- Search jobs will display the Search Name, Status, Progress %, Number of results, creation time, and searched by
+
+Figure 1.1 Audit Search Tool & Search Job Summaries
+
+## Audit search results overview
+
+- Search results are displayed in a line-item once a search job is selected
+- The search query is displayed on the top of the search job results page for reference as well as the total number of items
+  > [!NOTE]
+  > The total result number deducts duplicates, which is why it might be less than the 
+  > number of items in the main Audit search window
+- Information about the date, IP Address, User, Activity, and Item can be found in the search job results page for each item
+- Click on an activity to see a fly-out window with more details about the activity
+- The filtering feature for search job results can help to parse through results.
+- Export is fully functional and exports all search job items to a .csv file. Export supports results up to 50K.
+Figure 2.1 – Search Job Results
+Figure 2.2 – Search Job Filtering Panel
+Figure 2.3 – Export Button
+
+## Frequently asked questions
+
+- **Is there a maximum number of search jobs per user?**
+  There is a maximum of 10 “in progress” search jobs per user. If a user requires more than 10 search jobs, they must wait for an “in progress” job to
+finish or delete a search job. We would appreciate your feedback on this limit.
+- **Does deletion of a search job delete the back-end data?**
+  No, the deletion of the search job will only delete the search job definition and the associated search result.
