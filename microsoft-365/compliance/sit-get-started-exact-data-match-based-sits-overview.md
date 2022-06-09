@@ -19,14 +19,17 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 
 ---
-# [Linux](#tab/linux)
+# [New](#tab/New)
 
-Content for Linux...
+Content for New EDM experience
 
-# [Windows](#tab/windows)
+# Get started with exact data match based SITs NEW
 
-Content for Windows...
-# Get started with exact data match based sensitive information types
+# [Classic](#tab/Classic)
+
+Content for Classic EDM experience
+
+# Get started with exact data match based sensitive information types CLASSIC
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
