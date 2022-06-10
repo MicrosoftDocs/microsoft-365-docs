@@ -8,9 +8,8 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.topic: article
 author: martyav
-ms.author: v-maave
+ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -24,7 +23,7 @@ ms.collection: M365-security-compliance
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+- [Microsoft Defender Antivirus](https://www.microsoft.com/windows/comprehensive-security)
 
 **Platforms**
 - Windows

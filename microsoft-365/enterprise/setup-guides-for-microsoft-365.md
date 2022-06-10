@@ -206,6 +206,10 @@ The [Mobile apps setup guide](https://aka.ms/officeappguidance) provides instruc
 
 The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your organization with guidance to set up team workspaces that host real-time conversations through messaging, calls, and audio or video meetings for both team and private communication. Use the tools in this guide to configure Guest access, set who can create teams, and add team members from a .csv file, all without the need to open a PowerShell session. You'll also get best practices for determining your organization's network requirements and ensuring a successful Teams deployment.
 
+### Teams Phone setup guide
+
+The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you stay connected with the use of modern calling solutions. Apply key capabilities with a cloud-based, call-control system that supports the telephony workload for Teams. You can choose and deploy features from the available public switched telephone network (PSTN) connectivity options. You can also find assistance for other features, such as auto attendant, call queues, Audio Conferencing, caller ID, and live events.
+
 ### SharePoint setup guide
 
 The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, and enable the security settings for your SharePoint environment.
@@ -241,3 +245,7 @@ For organizations using Configuration Manager, you can use the [Deploy and updat
 ### Intune Configuration Manager co-management setup guide
 
 Use the [Intune Configuration Manager co-management setup guide](https://aka.ms/comanagementsetup) to set up existing Configuration Manager client devices and new internet-based devices that your org wants to co-manage with both Microsoft Intune and Configuration Manager. Co-management allows you to manage Windows 10 devices and adds new functionality to your org's devices, while receiving the benefits of both solutions.
+
+#### School Data Sync rollover setup guide
+
+The [SDS Rollover setup guide](https://aka.ms/sdsrolloversetupguide) provides the steps to help your organization sync student information data to Azure Active Directory and Office 365. This guide streamlines the term lifecycle management process by creating Office 365 Groups for Exchange Online and SharePoint Online, class teams for Microsoft Teams and OneNote, as well as Intune for Education, and rostering and single sign-on integration for third-party apps. You’ll perform end-of-year closeout, tenant clean up and archive, new school year preparation, and new school year launch. Then you can create new profiles using the sync deployment method that suits your organization.
