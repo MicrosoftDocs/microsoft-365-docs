@@ -734,11 +734,11 @@ if ($ResultCSV)
 
 ## Step 4: Run the PowerShell script
 
-First, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+First, [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Then, run the script that creates and publishes the retention labels:
   
-1. In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script. For example:
+1. In your Security & Compliance PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script. For example:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
