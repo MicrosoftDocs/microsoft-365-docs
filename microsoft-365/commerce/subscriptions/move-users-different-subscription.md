@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,7 +19,7 @@ ms.custom:
 - manage_licenses
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
-ms.date: 04/05/2022 
+ms.date: 05/12/2022
 ---
 
 # Move users to a different subscription
