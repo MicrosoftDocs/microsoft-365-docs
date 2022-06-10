@@ -35,7 +35,7 @@ The Event Streaming API is constantly being expanded to support more event types
 
 The following table only includes the list of the tables supported in the streaming API, and is not inclusive of all AH schema. For a full list of the API see, [Learn the schema tables](advanced-hunting-schema-tables.md#learn-the-schema-tables).
 
-| Table name | Status<br>(Commercial) | GCC-M | GCC-H | DoD |
+| Table name | Status<br>(Commercial) | GCC | GCC High | DoD |
 |----|----|----|----|----|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA | GA | GA | GA |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA | GA | GA | GA |

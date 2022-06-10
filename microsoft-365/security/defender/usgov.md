@@ -108,12 +108,15 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Integrations: Microsoft Sentinel (Incidents & Raw data)|![Yes](../defender-endpoint/images/svg/check-yes.svg)|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|
+|Integrations: Microsoft Sentinel (Incidents & Raw data)|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|
 |Microsoft Threat Experts|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|
+
+For detailed list of Event Streaming API tables, see [Microsoft 365 Defender streaming event types supported in Event Streaming API](supported-event-types.md).
 
 ## More details
 
 For more information, see the individual workloads US Gov pages:
+
 - [Microsoft Defender for Cloud Apps](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
 - [Microsoft Defender for Identity](/enterprise-mobility-security/solutions/ems-mdi-govt-service-description).
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/gov).
