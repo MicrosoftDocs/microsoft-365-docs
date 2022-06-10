@@ -2,7 +2,7 @@
 title: "Deploy high availability federated authentication for Microsoft 365 in Azure"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article

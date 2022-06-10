@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business Premium"
+title: "Set up compliance features"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management 
@@ -41,7 +41,7 @@ To learn more, see [Get started with the roles page](../admin/add-users/admin-ro
 
 :::image type="content" source="./media/m365bp-compliancemanager.png" alt-text="Screenshot of Compliance Manager in Microsoft 365 Business Premium.":::
 
-Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features. Such features include data loss prevention, information governance, and insider risk management, to name a few. Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
+Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features. Such features include data loss prevention, data lifecycle management, and insider risk management, to name a few. Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
 
 Here's how to get started:
 
@@ -63,7 +63,7 @@ Here's how to get started:
 
    Follow the information on the screen to set up your DLP policy.
 
-For more information about compliance features in Microsoft 365 for business, see [Microsoft 365 compliance documentation](../compliance/index.yml).
+For more information about compliance features in Microsoft 365 for business, see [Microsoft Purview documentation](../compliance/index.yml).
 
 ## Use sensitivity labels
 

@@ -21,6 +21,12 @@ ms.prod: m365-security
 
 # Email security with Threat Explorer in Microsoft Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 In this article:
 
 - [View malware detected in email](#view-malware-detected-in-email)
@@ -31,11 +37,6 @@ In this article:
 > This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
 
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features.
-
-**Applies to:**
-
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## View malware detected in email
 
