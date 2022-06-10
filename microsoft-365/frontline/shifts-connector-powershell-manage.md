@@ -15,6 +15,7 @@ ms.collection:
   - m365-frontline
 appliesto:
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management

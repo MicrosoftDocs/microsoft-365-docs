@@ -22,6 +22,9 @@ ms.collection:
   - m365-frontline
 ms.reviewer: 
 description: Learn how to schedule, manage, and conduct Virtual Visits using the Bookings app in Teams. 
+appliesto: 
+  - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Virtual Visits with Microsoft Teams and the Bookings app

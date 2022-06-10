@@ -20,6 +20,7 @@ searchScope:
   - Microsoft Cloud for Retail
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Simplify business processes in Retail environments

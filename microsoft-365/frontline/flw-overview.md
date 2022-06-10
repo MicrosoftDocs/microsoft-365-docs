@@ -13,6 +13,9 @@ ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
 ms.reviewer: aaglick
+appliesto: 
+  - Microsoft Teams
+  - Microsoft 365 for frontline workers
 
 ---
 

@@ -19,6 +19,7 @@ ms.collection:
   - m365-frontline
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Teams for Nonprofit organizations

@@ -20,6 +20,7 @@ ms.collection:
   - m365-frontline
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ms.reviewer: acolonna
 description: Learn how a user with Away status or Do Not Disturb status can explicitly set another user as a delegate in their status message.
 ms.custom: seo-marvel-mar2020

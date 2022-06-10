@@ -17,6 +17,7 @@ ms.collection:
 description: Learn how to use the Virtual Visits usage report in the Microsoft Teams admin center to get an overview of virtual appointment activity in your organization.
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
 ---
 # Microsoft Teams Virtual Visits usage report

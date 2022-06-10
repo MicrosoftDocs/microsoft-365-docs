@@ -21,6 +21,7 @@ ms.collection:
   - microsoftcloud-healthcare
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
 ---
 

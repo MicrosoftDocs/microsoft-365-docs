@@ -21,6 +21,7 @@ searchScope:
   - Microsoft Cloud for Retail
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Get started with Teams for Retail

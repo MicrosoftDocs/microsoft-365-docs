@@ -15,6 +15,7 @@ ms.collection:
   - m365-frontline
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Manage shift-based access for frontline workers in Teams

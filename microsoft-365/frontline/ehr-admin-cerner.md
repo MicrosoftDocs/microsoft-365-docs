@@ -22,6 +22,7 @@ ms.collection:
   - m365-frontline
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Cerner EHR system. 
 ---

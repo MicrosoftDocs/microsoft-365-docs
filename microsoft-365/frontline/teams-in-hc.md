@@ -22,6 +22,7 @@ ms.collection:
   - m365-frontline
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ms.reviewer: 
 description: Learn about health care features like Microsoft Teams telehealth, EHR integration, Frontline worker system integration, and the Patients app.
 ms.custom: 

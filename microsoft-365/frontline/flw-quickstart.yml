@@ -19,8 +19,9 @@ metadata:
     - M365-collaboration
     - m365-frontline
     - remotework
-  appliesto:
+  appliesto: 
     - Microsoft Teams
+    - Microsoft 365 for frontline workers
 
 items:
 - durationInMinutes: 2

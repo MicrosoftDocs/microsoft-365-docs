@@ -22,6 +22,9 @@ ms.collection:
   - m365-frontline
 ms.reviewer: hafarmer
 description: Learn about the join experience for Teams virtual appointments on browsers. 
+appliesto: 
+  - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Manage the join experience for Teams virtual appointments on browsers
