@@ -23,7 +23,7 @@ ms.technology: mdo
 Configuration analyzer is a central location and single pane of glass for administering and viewing the email security policies you have configured in your tenant. You can perform a side-to-side comparison of your settings to our Standard and Strict recommended settings, apply recommendations and view historical changes that affected your posture.
 
 ## What you’ll need
-- Microsoft Defender for Office 365 Plan 1
+- Exchange Online Protection
 - Sufficient permissions (Security Administrator role)
 - 5 minutes to perform the steps below.
 
