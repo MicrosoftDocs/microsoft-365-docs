@@ -2,7 +2,7 @@
 title: "Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions

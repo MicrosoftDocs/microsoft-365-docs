@@ -2,8 +2,8 @@
 title: "Buy or remove licenses"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,15 +14,15 @@ ms.collection:
 - M365-subscription-management
 - Adm_o365
 ms.custom:
+- commerce_licensing
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 - adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 09/16/2021
+ms.date: 06/06/2022
 ---
 
 # Buy or remove licenses

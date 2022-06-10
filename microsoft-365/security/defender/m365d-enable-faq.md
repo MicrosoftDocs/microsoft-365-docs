@@ -35,7 +35,7 @@ Read responses to the most commonly asked questions about turning on [Microsoft 
 
 For instructions on how to turn on the service, [read Turn on Microsoft 365 Defender](m365d-enable.md).
 
-## I don’t have a Microsoft 365 E5 license. Can I still use Microsoft 365 Defender?
+## I don't have a Microsoft 365 E5 license. Can I still use Microsoft 365 Defender?
 
 Customers with the following non-E5 licenses can use Microsoft 365 Defender:
 

@@ -3,24 +3,23 @@ metadata:
   title: Self-service purchase FAQ
   f1.keywords:
   - NOCSH
-  ms.author: cmcatee
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: mijeffer, pablom
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration 
   ms.localizationpriority: medium
   ms.collection: M365-subscription-management
   ms.custom: 
+  - commerce_ssp
   - AdminSurgePortfolio
   - aka.ms/self-service-purchase-faq
-  - commerce_ssp
   search.appverid:
   - MET150
   description: "Find answers to commonly asked questions about self-service purchases."
   ms.date: 09/15/2020
-    
 title: Self-service purchase FAQ
 summary: |
   Self-service purchase gives users a chance to try out new technologies and develop solutions that ultimately benefit their larger organizations. Central procurement and IT teams have visibility to all users who buy and deploy self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Admins can turn off self-service purchasing on a per product basis via PowerShell. To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).

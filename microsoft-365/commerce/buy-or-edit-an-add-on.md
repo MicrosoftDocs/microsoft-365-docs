@@ -2,8 +2,8 @@
 title: "Buy or manage add-ons"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,9 +15,9 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ms.custom: 
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.date: 04/02/2021

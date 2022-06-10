@@ -2,7 +2,7 @@
 title: "Tune Microsoft 365 performance"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 04/09/2019
 audience: Admin
 ms.topic: troubleshooting
