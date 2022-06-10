@@ -396,6 +396,8 @@
        href: quarantine-faq.yml
    - name: Step-by-step guides
      items: 
+      - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
+        href: step-by-step-guides/step-by-step-guide-overview.md
       - name: (False Negatives) How to handle malicious emails that are delivered to recipients using Microsoft Defender for Office 365
         href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
       - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
