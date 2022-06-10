@@ -1,5 +1,5 @@
 ---
-title: "Define your service offerings in Bookings"
+title: "Define your Bookings service offerings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -12,9 +12,6 @@ description: "Instructions for entering service offerings information, including
 ---
 
 # Define your service offerings in Bookings
-
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business web site to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and how much their service will cost.
 
@@ -84,8 +81,6 @@ You can also add customized information and URLs to the email confirmation and r
 
 4. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings.":::
-
 5. **Default price**  This is the price that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
 
 6. **Notes** This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
@@ -96,7 +91,7 @@ You can also add customized information and URLs to the email confirmation and r
 
 8. On the **Reminders and Confirmations** page, you can set up reminders and notifications you send. Reminders and notifications are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
 
    You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 

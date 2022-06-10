@@ -27,7 +27,7 @@ The following table provides links to planning resources to help you upgrade fro
 
 |Product|Planning resource|
 |---|---|
-|Office 2013 (desktop apps)<br/>Project 2013<br/>Visio 2013|[Plan an upgrade from older versions of Office to Microsoft 365 Apps](/deployoffice/endofsupport/plan-upgrade-older-versions-office.md)|
+|Office 2013 (desktop apps)<br/>Project 2013<br/>Visio 2013|[Plan an upgrade from older versions of Office to Microsoft 365 Apps](/deployoffice/endofsupport/plan-upgrade-older-versions-office)|
 |Exchange Server 2013|[Exchange 2013 end of support roadmap](exchange-2013-end-of-support.md)|
 |SharePoint Server 2013 <br/> SharePoint Foundation 2013|[Upgrading from SharePoint 2013](upgrade-from-sharepoint-2013.md)|
 |Project Server 2013|[Project Server 2013 end of support roadmap](project-server-2013-end-of-support.md)|

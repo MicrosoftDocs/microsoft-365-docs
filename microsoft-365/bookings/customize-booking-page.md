@@ -13,9 +13,6 @@ description: "Change the color theme of your booking page in the Microsoft Booki
 
 # Customize and publish your booking page
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 The Booking Page is where you set up what your external facing booking page will look like. Once you customize and publish your booking page, people will use it to book appointments with you.
 
 To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so people can start booking appointments with you.
@@ -32,7 +29,7 @@ The section below gives you information about setting up your bookings page and 
 
     The internal Booking Page looks like this:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page.":::
+    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="The Bookings Page.":::
 
 - **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
@@ -50,7 +47,7 @@ The section below gives you information about setting up your bookings page and 
 
 Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking page looks like this:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page.":::
+:::image type="content" source="media/bookings-self-service-2.png" alt-text="Customer facing booking page.":::
 
 ## Publish the booking page
 
@@ -70,4 +67,4 @@ Watch this video or follow the steps below to publish or unpublish your booking 
 
 ## Unpublish the booking page
 
- - To unpublish the booking page, go to the Booking page and select **Unpublish**.
+To unpublish the booking page, go to the Booking page and select **Unpublish**.

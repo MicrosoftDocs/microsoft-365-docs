@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/31/2022
+  ms.date: 05/23/2022
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -39,7 +39,7 @@ landingContent:
         - text: Sign up for a subscription
           url: admin-overview/sign-up-for-office-365.md
         - text: Set up the service
-          url: setup/business-set-up.md
+          url: /microsoft-365/business-premium/m365bp-setup
         - text: Secure Windows 10 PCs
           url: setup/secure-win-10-pcs.md
 
@@ -49,7 +49,7 @@ landingContent:
       - linkListType: video
         links:
         - text: Connect PCs to Microsoft 365
-          url: setup/set-up-windows-devices.md
+          url: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
         - text: Install Microsoft Office apps
           url: setup/install-applications.md
         - text: Set up Outlook for email
@@ -183,12 +183,12 @@ landingContent:
       - linkListType: video
         links:
           - text: Set up Microsoft 365 for Google Workspace migration
-            url: /moveto-microsoft-365/set-up-microsoft-365-forgoogle
+            url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
           - text: Add your Google Workspace domain to Microsoft 365
-            url: /moveto-microsoft-365/add-google-domain
+            url: moveto-microsoft-365/add-google-domain.md
           - text: Migrate business email and calendar from Google Workspace
-            url: /moveto-microsoft-365/migrate-email          
+            url: moveto-microsoft-365/migrate-email.md      
           - text: Connect your domain to Microsoft 365 for business
-            url: /moveto-microsoft-365/connect-domain-tom365
+            url: moveto-microsoft-365/connect-domain-tom365.md
           - text: Migrate Google files to Microsoft 365 for business with Migration Manager
-            url: /moveto-microsoft-365/migrate-files-migration-manager
+            url: moveto-microsoft-365/migrate-files-migration-manager.md

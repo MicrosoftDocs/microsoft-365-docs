@@ -20,7 +20,7 @@ ms.prod: m365-security
 
 # Exchange Online Protection overview
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -48,7 +48,7 @@ To understand how EOP works, it helps to see how it processes incoming email:
 
 3. The message continues through policy filtering, where it's evaluated against any mail flow rules (also known as transport rules) that you've created. For example, a rule can send a notification to a manager when a message arrives from a specific sender.
 
-   In on-premises organization with Exchange Enterprise CAL with Services licenses, [Data loss prevention (DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) checks in EOP also happen at this point.
+   In on-premises organization with Exchange Enterprise CAL with Services licenses, [Microsoft Purview data loss prevention (DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) checks in EOP also happen at this point.
 
 4. The message passes through content filtering (anti-spam and anti-spoofing) where harmful messages are identified as spam, high confidence spam, phishing, high confidence phishing, or bulk (anti-spam policies) or spoofing (spoof settings in anti-phishing policies). You can configure the action to take on the message based on the filtering verdict (quarantine, move to the Junk Email folder, etc.), and what users can do to the quarantined messages using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
