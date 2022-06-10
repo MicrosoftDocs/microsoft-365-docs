@@ -35,9 +35,13 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       links:
-        - url: ./file2a.md OR /file2a
+        - url: flw-how-to-start.md
+          text: Deployment overview
+        - url: get-up-and-running.md
+          text: Get your team started with Microsoft 365 for frontline workers
+        - url: flw-pilot.md
           text: Start with a pilot deployment
-        - url: ./file2a.md OR /file2a
+        - url: deploy-teams-at-scale.md
           text: Extend your pilot to a full deployment
         - url: ./file2a.md OR /file2a
           text: Manage devices

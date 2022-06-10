@@ -7,10 +7,14 @@
     href: flw-trial.md
   - name: Setup and configure
     items:
+    - name: Overview
+      href: flw-how-to-start.md
+    - name: Get your team started
+      href: get-up-and-running.md
     - name: Start with a pilot deployment
-      href: 
+      href: flw-pilot.md
     - name: Extend your pilot to a full deployment
-      href: 
+      href: deploy-teams-at-scale.md
     - name: Onboard your users with the onboarding wizard
       href: flw-onboarding-wizard.md
     - name: Scripted deployment
