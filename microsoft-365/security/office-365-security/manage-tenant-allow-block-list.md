@@ -1,5 +1,5 @@
 ---
-title: Manage your allows and blocks in the Tenant Allow/Block List
+title: Manage allows and blocks in the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
 ms.author: chrisda
