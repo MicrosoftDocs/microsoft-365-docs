@@ -87,7 +87,7 @@ To view DLP reports in the Security & Compliance Center, you have to be assigned
 
 To use the DLP reporting cmdlets, do these steps:
 
-1. [Connect to the Microsoft Purview compliance portal using remote PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Use these cmdlets:
 

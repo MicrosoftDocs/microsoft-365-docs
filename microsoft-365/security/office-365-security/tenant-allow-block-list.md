@@ -69,16 +69,13 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - **Senders, URLs and files**:
     - To add and remove values from the Tenant Allow/Block List, you need to be a member of
       - **Organization Management** or **Security Administrator** role group (**Security admin role**)
       - **Security Operator** role group (**Tenant AllowBlockList Manager**).
     - For read-only access to the Tenant Allow/Block List, you need to be a member of
       - **Global Reader**  role group
       - **Security Reader** role group
-  - **Spoofing**: One of the following combinations:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+      - **View-Only Configuration* role group.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -463,7 +460,6 @@ A domain pair for a spoofed sender in the Tenant Allow/Block List uses the follo
 - **Sending infrastructure**: This value indicates the source of messages from the spoofed user. Valid values include:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address (for example, fabrikam.com).
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
-  - A verified DKIM domain.
 
 Here are some examples of valid domain pairs to identify spoofed senders:
 
