@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,7 +21,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."
-ms.date: 04/05/2022
+ms.date: 05/12/2022
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business
@@ -60,7 +60,7 @@ If your subscription includes any of the following products, each person can ins
 
 The following table lists what automatically happens when you assign a license to someone:
   
-|**If the subscription has this service**|**This automatically happens**|
+|If the subscription has this service|This automatically happens|
 |:-----|:-----|
 |Exchange Online  <br/> |A mailbox is created for that person. <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Edit permissions to the default SharePoint Online team site are assigned to that person.  <br/> |
@@ -79,13 +79,13 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
-|**Admin role**|**Assign a license**|**Unassign a license**|**Buy more licenses**|**Delete an account**|
+|Admin role|Assign a license|Unassign a license|Buy more licenses|Delete an account|
 |:-----|:-----|:-----|:-----|:-----|
-|Billing admin  <br/> |No  <br/> |No  <br/> |Yes  <br/> |No  <br/> |
-|Global admin  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |
-|License admin <br/> |Yes <br/>|Yes <br/> |No <br/> |No <br/> |
-|Service Support admin  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|User admin  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |
+|Billing admin|No|No|Yes|No|
+|Global admin|Yes|Yes|Yes|Yes|
+|License admin|Yes|Yes|No|No|
+|Service Support admin|No|No|No|No|
+|User admin|Yes|Yes|No|Yes|
 
 ## Related content
 

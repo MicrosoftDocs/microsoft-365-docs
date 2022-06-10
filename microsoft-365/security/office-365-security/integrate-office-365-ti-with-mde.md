@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -24,8 +24,7 @@ ms.prod: m365-security
 
 # Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365](defender-for-office-365.md) can be configured to work with [Microsoft Defender for Endpoint](/windows/security/threat-protection).
 
@@ -54,7 +53,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Email & collaboration** \> **Explorer**. 
+2. Go to **Email & collaboration** \> **Explorer**.
 
 3. On the **Explorer** page, in the upper right corner of the screen, select **MDE Settings**.
 

@@ -22,7 +22,7 @@ ms.collection:
 ms.date: 1/18/2022
 ---
 
-# Step 2: Test ASR rules
+# Test attack surface reduction (ASR) rules
 
 Testing attack surface reduction (ASR) rules helps you determine if rules will impede line-of-business operations prior to enabling any rule. By starting with a small, controlled group, you can limit potential work disruptions as you expand your deployment across your organization.
 
@@ -31,7 +31,6 @@ Begin your attack surface reduction(ASR) rules deployment with ring 1.
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="The ASR rules testing steps" lightbox="images/asr-rules-testing-steps.png":::
   
-
 ## Step 1: Test ASR rules using Audit
 
 Begin the testing phase by turning on the ASR rules with the rules set to Audit, starting with your champion users or devices in ring 1. Typically, the recommendation is that you enable all the rules (in Audit) so that you can determine which rules are triggered during the testing phase. Note that rules that are set to Audit do not generally impact functionality of the entity or entities to which the rule is applied but do generate logged events for the evaluation; there is no effect on end users.
@@ -200,10 +199,12 @@ Event ID | Description
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
+[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Step 4: Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
