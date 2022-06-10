@@ -1,17 +1,19 @@
 ---
-title: Office TLS Certificate Changes
+title: Office TLS certificate changes
 description: How to prepare for upcoming changes to Office TLS certificates.
 author: pshelton-skype
 ms.author: pshelton
 manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 2/4/2022
+ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ---
 
 # Office TLS Certificate Changes
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 is updating services powering messaging, meetings, telephony, voice, and video to use TLS certificates from a different set of Root Certificate Authorities (CAs). This change is being made because the current Root CA will expire in May 2025.
 
@@ -32,19 +34,22 @@ Affected endpoints include (but are not limited to):
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-Additionally, Skype for Business Online endpoints in US Government national cloud instances of Microsoft 365 will make the same change, affecting endpoints such as:
+Additionally, Teams and Skype for Business Online endpoints in US Government national cloud instances of Microsoft 365 will make the same change, affecting endpoints such as:
+- *.gcc.teams.microsoft.com
+- *.dod.teams.microsoft.us
+- *.gov.teams.microsoft.us
 - *.online.dod.skypeforbusiness.us
 - *.online.gov.skypeforbusiness.us
 - *.um-dod.office365.us
 - *.um.office365.us
 
-This change will not affect other certificates, domains, or services used in the US Government, China, or Germany national cloud instances of Microsoft 365.
+This change will not affect certificates, domains, or services used in the China or Germany national cloud instances of Microsoft 365.
 
 All certificate information in this article was previously provided in [Microsoft 365 encryption chains](./encryption-office-365-certificate-chains.md) no later than October 2020.
 
 ## When will this change happen?
 
-Services will begin transitioning to the new Root CAs beginning in January 2022, continuing through October 2022.
+Services began transitioning to the new Root CAs in January 2022 and will continue through October 2022.
 
 ## What is changing?
 
@@ -77,6 +82,10 @@ with one of the following Intermediate CAs:
 | [Microsoft Azure TLS Issuing CA 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
 | [Microsoft Azure TLS Issuing CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
 | [Microsoft Azure TLS Issuing CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+
+As an example, this is a valid certificate with one of the new certificate chains:
+
+![Teams TLS Certificate Chain](../media/teams-tls-certificate-chain.png)
 
 ## Will this change affect me?
 

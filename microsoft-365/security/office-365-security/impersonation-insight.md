@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # Impersonation insight in Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -67,7 +67,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
-   ![Impersonation insight and spoof intelligence on the Anti-phishing policy page.](../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png" alt-text="The impersonation insight and spoof intelligence on the Anti-phishing policy page" lightbox="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png":::
 
    The insight has two modes:
 

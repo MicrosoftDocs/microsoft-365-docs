@@ -14,7 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- commerce_subscription
+- commerce_subscriptions
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - AdminTemplateSet

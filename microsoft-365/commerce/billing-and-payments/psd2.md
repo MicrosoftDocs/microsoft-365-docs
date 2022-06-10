@@ -17,8 +17,7 @@ ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
 search.appverid: MET150
-description: As of September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed."
-keywords: payment services directive 2, strong customer authentication, multi-factor authentication
+description: "As of September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed."
 ms.date: 11/03/2020
 ---
 

@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 <br>
 
-|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|[![Phase 2: Set up.](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png) <br> Phase 3: Onboard|
+|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|[![Phase 2: Set up.](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png) <br> Phase 3: Onboard|
 |---|---|---|
 |||*You are here!*|
 
@@ -74,7 +74,7 @@ If your organization does not have a security response team or existing process 
 Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). These are the important points to keep in mind:
 
 - Azure AD roles give permissions to **all** workloads in Microsoft 365. For example, if you add a user to the Security Administrator in the Azure portal, they have Security Administrator permissions everywhere.
-- Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal, the Microsoft 365 compliance center, and the older Security & Compliance Center. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal, the Microsoft 365 compliance center, and the Security & Compliance Center.
+- Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal, the Microsoft Purview compliance portal, and the older Security & Compliance Center. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal, the Microsoft Purview compliance portal, and the Security & Compliance Center.
 - Many features in the Microsoft 365 Defender portal are based on Exchange Online PowerShell cmdlets and therefore require role group membership in the corresponding roles (technically, role groups) in Exchange Online (in particular, for access to the corresponding Exchange Online PowerShell cmdlets).
 - There are Email & collaboration roles in the Microsoft 365 Defender portal that have no equivalent to Azure AD roles, and are important for security operations (for example the Preview role and the Search and Purge role).
 
@@ -222,6 +222,6 @@ Congratulations! You have completed your [migration to Microsoft Defender for Of
 
 Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
-- Review user submissions, especially [user-reported phishing messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
+- Review user submissions, especially [user-reported phishing messages](automated-investigation-response-office.md)
 - Review overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 - Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example) queries to look for tuning opportunities and risky messages.
