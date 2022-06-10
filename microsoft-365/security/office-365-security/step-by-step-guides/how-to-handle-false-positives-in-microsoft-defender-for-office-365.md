@@ -25,7 +25,7 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 
 ## What you'll need
 
-- Microsoft Defender for Office 365 Plan 1 or 2 (included as part of E3, E5). EOP customers can also leverage this feature.
+- Microsoft Defender for Office 365 Plan 1 or 2 (included as part of E5). Exchange Online customers can also leverage this feature.
 - Sufficient permissions (Security Administrator role).
 - 5-10 minutes to perform the steps below.
 
@@ -43,7 +43,7 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 1. An end user receives an [email digest](/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages?view=o365-worldwide&preserve-view=true) about quarantined messages as per the settings enabled by security admins.
 2. End users can preview the messages in quarantine, block the sender, release the messages, submit those messages to Microsoft for analysis, and request release of those emails from admins.
 
-## Handling legitimate emails emails in quarantine folder of an admin
+## Handling legitimate emails in quarantine folder of an admin
 
 1. Admins can view the quarantined emails (including the ones asking permission to request release) from the [review page](/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-worldwide&preserve-view=true).
 2. Admins can release the message from quarantine while submitting it to Microsoft for analysis, and create an allow to mitigate the situation.
