@@ -1,5 +1,5 @@
 ---
-title: "Use the Page Diagnostics tool for SharePoint Online"
+title: Use the Page Diagnostics tool for SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -44,7 +44,7 @@ The Page Diagnostics tool is designed to analyze SharePoint site pages only, not
 
 This isn't an error in the tool as there's no value in assessing libraries or system pages. Please navigate to a SharePoint site page to use the tool. If this error occurs on a SharePoint page, please check the master page to ensure that the SharePoint metatags haven't been removed.
 
-To provide feedback about the tool, select the ellipsis at the top right corner of the tool and then select [Give feedback](https://go.microsoft.com/fwlink/?linkid=874109).
+To provide feedback about the tool, select the ellipsis at the top right corner of the tool and then select **Give feedback**.
 
 > [!div class="mx-imgBorder"]
 > ![Give feedback.](../media/page-diagnostics-for-spo/pagediag-feedback.png)
