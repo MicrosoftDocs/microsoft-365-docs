@@ -49,4 +49,4 @@ Let us know what you think! Submit your feedback at the bottom of the page. We'l
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection?) 
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)

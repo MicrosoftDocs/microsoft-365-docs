@@ -2,12 +2,12 @@
 title: "De-duplication in eDiscovery search results"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
@@ -23,6 +23,8 @@ description: Learn how to eliminate duplicate eDiscovery search results so that 
 ---
 
 # De-duplication in eDiscovery search results
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article describes how de-duplication of eDiscovery search results works and explains the limitations of the de-duplication algorithm.
   

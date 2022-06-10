@@ -39,7 +39,7 @@ After the cookbook is created, create a files folder inside the cookbook folder 
 mkdir mdatp/files
 ```
 
-Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft Defender Security Center portal to this new files folder.
+Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft 365 Defender portal to this new files folder.
 
 On the Chef Workstation, navigate to the mdatp/recipes folder. This folder is created when the cookbook was generated. Use your preferred text editor (like vi or nano) to add the following instructions to the end of the default.rb file:
 
@@ -112,7 +112,7 @@ end
 
 Make sure to update the path name to the location of the onboarding file.
 To test deploy it on the Chef workstation, just run ``sudo chef-client -z -o mdatp``.
-After your deployment you should consider creating and deploying a configuration file to the servers based on [Set preferences for Microsoft Defender for Endpoint on Linux](/linux-preferences.md).
+After your deployment you should consider creating and deploying a configuration file to the servers based on [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences).
 After you've created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package. Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
 
 ```powershell

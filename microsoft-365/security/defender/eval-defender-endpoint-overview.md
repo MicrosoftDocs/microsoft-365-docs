@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture
+title: Step 4. Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture
 description: Steps for the set up for a Microsoft 365 Defender trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,13 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
+  - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Evaluate Microsoft Defender for Endpoint overview
+# Step 4. Evaluate Microsoft Defender for Endpoint overview
 
 **Applies to:**
 
@@ -35,7 +36,7 @@ This article outlines the process to enable and pilot Microsoft Defender for End
 
 Use the following steps to enable and pilot Microsoft Defender for Endpoint.
 
-![Steps for adding Microsoft Defender for Endpoint to the Defender evaluation environment.](../../media/defender/m365-defender-endpoint-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="The steps for adding Microsoft Defender for Endpoint to the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
 
 
 The following table describes the steps in the illustration.
@@ -43,7 +44,5 @@ The following table describes the steps in the illustration.
  |Step   |Description
 |---------|---------|
 | [Step 1. Review architecture requirements and key concepts](eval-defender-endpoint-architecture.md)    | Understand the Defender for Endpoint architecture and the capabilities available to you.       |
-|[Step 2. Enable the evaluation environment](eval-defender-office-365-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
-|[Step 3. Set up the pilot ](eval-defender-office-365-pilot.md)    |    Verify your pilot group, run simulations, and become familiar with key features and dashboards.     |
-
-
+|[Step 2. Enable the evaluation environment](eval-defender-endpoint-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
+|[Step 3. Set up the pilot ](eval-defender-endpoint-pilot.md)    |    Verify your pilot group, run simulations, and become familiar with key features and dashboards. |

@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-There are two ways to manage access to Microsoft 365 Defender
+There are two ways to manage access to Microsoft 365 Defender:
 - **Global Azure Active Directory (AD) roles**
 - **Custom role access**
 

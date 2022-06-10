@@ -1,6 +1,6 @@
 ---
 title: Export assessment methods and properties per device
-description: Provides information about the APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
+description: Provides information about the APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -24,13 +24,14 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## API description
 
-Provides methods and property details about the APIs that pull threat and vulnerability management data on a per-device basis. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
+Provides methods and property details about the APIs that pull threat and vulnerability management data on a per-device basis. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 
 > [!NOTE]
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
@@ -177,26 +178,26 @@ GeneratedTime|String|The time that the export was generated.
 
 Property (ID)|Data type|Description
 :---|:---|:---
-CveId |String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
+CveId |String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
 CvssScore|String|The CVSS score of the CVE.
 DeviceId|String|Unique identifier for the device in the service.
 DeviceName|String|Fully qualified domain name (FQDN) of the device.
 DiskPaths|Array[string]|Disk evidence that the product is installed on the device.
 EventTimestamp|String|The time the delta event was found.
-ExploitabilityLevel|String|The exploitability level of the vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+ExploitabilityLevel|String|The exploitability level of the vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp|String|First time the CVE of the product was seen on the device.
-Id|String|Unique identifier for the record.  
+Id|String|Unique identifier for the record.  
 LastSeenTimestamp|String|Last time the CVE was seen on the device.
-OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
 RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 RecommendationReference|String|A reference to the recommendation ID related to this software.
-RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.
-RecommendedSecurityUpdateId |String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
-RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.
+RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.
+RecommendedSecurityUpdateId |String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
+RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.
 SoftwareName|String|Name of the software product.
 SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.
-Status|String|**New** (for a new vulnerability introduced on a device). **Fixed** (for a vulnerability that doesn't exist anymore on the device, which means it was remediated). **Updated** (for a vulnerability on a device that has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+Status|String|**New** (for a new vulnerability introduced on a device). **Fixed** (for a vulnerability that doesn't exist anymore on the device, which means it was remediated). **Updated** (for a vulnerability on a device that has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
 
 ## See also

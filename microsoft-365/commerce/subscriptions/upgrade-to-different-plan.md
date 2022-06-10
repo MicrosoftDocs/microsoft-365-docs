@@ -2,8 +2,8 @@
 title: "Upgrade to a different business plan"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150 
 description: "The easiest way to upgrade plans is to use the Upgrade tab in the admin center. However, the Upgrade tab isn't always supported."
@@ -33,7 +33,7 @@ When you use the **Upgrade** tab, you're led through the process of buying a new
 
 1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to upgrade.
-3. On the subscription details page, select **Upgrade**.
+3. On the subscription details page, under **Product details and upgrades**, select **View upgrades recommended for your org**.
 4. Find the plan to which you want to upgrade, then select the **Upgrade** button.
 5. Enter the number of licenses that you need, choose whether to pay each month or for the whole year, then select **Go to checkout**.
     > [!NOTE]

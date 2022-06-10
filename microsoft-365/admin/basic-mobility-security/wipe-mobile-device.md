@@ -27,39 +27,35 @@ You can use built-in Basic Mobility and Security for Microsoft 365 to remove onl
 
 ## Before you begin
 
-Mobile devices can store sensitive organizational information and provide access to your organization's Microsoft 365 resources. To help protect your organization's information, you can do Factory reset or Remove company data:
+Mobile devices can store sensitive organizational information and provide access to your organization's Microsoft 365 resources. To help protect your organization's information, you can do Factory reset or Remove company data:
 
 - **Factory reset**: Deletes all data on a user's mobile device, including installed applications, photos, and personal information. When the wipe is complete, the device is restored to its factory settings.
 
 - **Remove company data**: Removes only organization data and leaves installed applications, photos, and personal information on a user's mobile device.
 
 - **When a device is wiped (Factory Reset or Remove Company Data)**, the device is removed from the list of managed devices.
-    
-- **Automatically reset a device**: You can set up a Basic Mobility and Security policy that automatically factory resets a device after the user unsuccessfully tries to enter the device password a specific number of times. To do this, follow the steps in [Create device security policies in basic mobility and security](create-device-security-policies.md).
-    
-- **If you want to know the user experience** when you wipe their device, see  [What's the user and device impact?](#whats-the-user-and-device-impact).
+
+- **Automatically reset a device**: You can set up a Basic Mobility and Security policy that automatically factory resets a device after the user unsuccessfully tries to enter the device password a specific number of times. To do this, follow the steps in [Create device security policies in basic mobility and security](create-device-security-policies.md).
+
+- **If you want to know the user experience** when you wipe their device, see [What's the user and device impact?](#whats-the-user-and-device-impact).
 
 ## Wipe a mobile device
 
-1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md).
+1. Sign in to the Microsoft 365 admin center, and go to the [Mobile Device Management page](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
+1. Select **Manage devices**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility and Secruity mobile device management option.":::
+1. Select the device you want to wipe.
 
-3. Select **Manage devices**.
+1. Select **Manage**.
 
-4. Select the device you want to wipe.
-
-5. Select **Manage**.
-
-6. Select the type of remote wipe you want to do.
+1. Select the type of remote wipe you want to do.
 
     - To do a full wipe and restore the device to its factory settings, select **Factory reset**.
     - To do a selective wipe and delete only Microsoft 365 organization information, select **Remove company data**.
     - To remove the device from your organization, select **Remove device**.
 
-7. Select **Yes** to confirm.
+1. Select **Yes** to confirm.
 
 ## How do I know it worked?
 
@@ -77,8 +73,8 @@ Wipe a device for these reasons:
 
 The wipe is sent immediately to the mobile device and the device is marked as not compliant in Azure active directory. While all data is removed when a device is reset to factory defaults, the following table describes what content is removed for each device type when a device when you remove company data.
 
-|**Content impact**|**iOS 10 and later**|**Android 5 and later**|
-|:-----|:-----|:-----|
+|Content impact|iOS|Android|
+|---|---|---|
 |Microsoft 365 app data is wiped if the device is protected by Intune App Protection policies. The apps aren't removed. For devices not protected by Mobile Application Management (MAM) policies, Outlook and OneDrive won't remove cached data.<br/>**Note** For applying Intune App protection policies you must have an Intune license.|Yes|Yes|
 |Policy settings applied by Basic Mobility and Security to devices are no longer enforced; users can change the settings.|Yes|Yes|
 |Email profiles created by Basic Mobility and Security are removed and cached email on the device is deleted.|Yes|N/A|

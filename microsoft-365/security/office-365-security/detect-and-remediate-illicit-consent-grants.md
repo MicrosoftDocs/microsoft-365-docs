@@ -18,13 +18,12 @@ search.appverid:
 description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
 # Detect and Remediate Illicit Consent Grants
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -47,7 +46,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> and then select **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
+1. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and then select **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
 
 2. On the **Audit** page, verify that the **Search** tab is selected, and then configure the following settings:
    - **Date and time range**

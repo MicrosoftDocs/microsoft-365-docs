@@ -11,9 +11,7 @@ author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.collection:  m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ---

@@ -60,7 +60,7 @@ As part of the process of creating a device group, you'll:
 3. Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See [How the automated investigation starts](automated-investigations.md#how-the-automated-investigation-starts).
 
     > [!TIP]
-    > If you want to group devices by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Create and manage device tags](machine-tags.md).
+    > If you want to use tagging for grouping devices, see [Create and manage device tags](machine-tags.md).
 
 4. Preview several devices that will be matched by this rule. If you're satisfied with the rule, click the **User access** tab.
 

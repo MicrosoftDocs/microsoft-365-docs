@@ -2,11 +2,11 @@
 title: "Decryption in eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
@@ -20,26 +20,28 @@ description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted do
 
 # Decryption in Microsoft 365 eDiscovery tools
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Encryption is an important part of your file protection and information protection strategy. Organizations of all types use encryption technology to protect sensitive content within their organization and ensure that only the right people have access to that content.
 
-To execute common eDiscovery tasks on encrypted content, eDiscovery managers were required to decrypt email message content as it was exported from content searches, Core eDiscovery cases, and Advanced eDiscovery cases. Content encrypted with Microsoft encryption technologies wasn't available for review until after it was exported.
+To execute common eDiscovery tasks on encrypted content, eDiscovery managers were required to decrypt email message content as it was exported from content searches, Microsoft Purview eDiscovery (Standard) cases, and Microsoft Purview eDiscovery (Premium) cases. Content encrypted with Microsoft encryption technologies wasn't available for review until after it was exported.
 
-To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools now incorporate the decryption of encrypted files attached to email messages and sent in Exchange Online.<sup>1</sup> Additionally, encrypted documents stored in SharePoint Online and OneDrive for Business are decrypted in Advanced eDiscovery.
+To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools now incorporate the decryption of encrypted files attached to email messages and sent in Exchange Online.<sup>1</sup> Additionally, encrypted documents stored in SharePoint Online and OneDrive for Business are decrypted in eDiscovery (Premium).
 
-Prior to this new capability, only the content of an email message protected by rights management (and not attached files) were decrypted. Encrypted documents in SharePoint and OneDrive couldn't be decrypted during the eDiscovery workflow. Now, files that are encrypted with a Microsoft encryption technology is located on a SharePoint or OneDrive account are searchable and decrypted when the search results are prepared for preview, added to a review set in Advanced eDiscovery, and exported. Additionally, encrypted documents in SharePoint and OneDrive that are attached to an email message are searchable. This decryption capability allows eDiscovery managers to view the content of encrypted email attachments and site documents when previewing search results, and review them after they have been added to a review set in Advanced eDiscovery.
+Prior to this new capability, only the content of an email message protected by rights management (and not attached files) were decrypted. Encrypted documents in SharePoint and OneDrive couldn't be decrypted during the eDiscovery workflow. Now, files that are encrypted with a Microsoft encryption technology is located on a SharePoint or OneDrive account are searchable and decrypted when the search results are prepared for preview, added to a review set in eDiscovery (Premium), and exported. Additionally, encrypted documents in SharePoint and OneDrive that are attached to an email message are searchable. This decryption capability allows eDiscovery managers to view the content of encrypted email attachments and site documents when previewing search results, and review them after they have been added to a review set in eDiscovery (Premium).
 
 ## Supported encryption technologies
 
-Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies are Azure Rights Management and Microsoft Information Protection (specifically sensitivity labels). For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies isn't supported. For example, previewing or exporting content encrypted with non-Microsoft technologies isn't supported.
+Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies are Azure Rights Management and Microsoft Purview Information Protection (specifically sensitivity labels). For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies isn't supported. For example, previewing or exporting content encrypted with non-Microsoft technologies isn't supported.
 
 > [!NOTE]
-> The decryption of email messages sent with an [Office 365 Message Encryption (OME) custom branding template](add-your-organization-brand-to-encrypted-messages.md) is not supported by Microsoft eDiscovery tools. When using an OME custom branding template, email messages are delivered to the OME portal instead of the recipient's mailbox. Therefore, you won't be able to use eDiscovery tools to search for OME-encrypted messages because those messages are never received by the recipient's mailbox.
+> The decryption of email messages sent with an [Microsoft Purview Message Encryption custom branding template](add-your-organization-brand-to-encrypted-messages.md) is not supported by Microsoft eDiscovery tools. When using an OME custom branding template, email messages are delivered to the OME portal instead of the recipient's mailbox. Therefore, you won't be able to use eDiscovery tools to search for encrypted messages because those messages are never received by the recipient's mailbox.
 
 ## eDiscovery activities that support encrypted items
 
 The following table identifies the supported tasks that can be performed in Microsoft 365 eDiscovery tools on encrypted files attached to email messages and encrypted documents in SharePoint and OneDrive. These supported tasks can be performed on encrypted files that match the criteria of a search. A value of `N/A` indicates the functionality isn't available in the corresponding eDiscovery tool.
 
-|eDiscovery task  |Content search  |Core eDiscovery  |Advanced eDiscovery  |
+|eDiscovery task  |Content search  |eDiscovery (Standard)  |eDiscovery (Premium)  |
 |:---------|:---------|:---------|:---------|
 |Search for content in encrypted files in sites and email attachments<sup>1</sup>     |No      |No      |Yes      |
 |Preview encrypted files attached to email     |Yes      |Yes     |Yes       |
@@ -62,7 +64,10 @@ eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sen
 
 For more information about these settings, see the "Configure encryption settings" section in [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md#configure-encryption-settings).
 
-Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in Advanced eDiscovery.
+Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in eDiscovery (Premium).
+
+> [!IMPORTANT]
+> Decryption isn't supported for files that are locally encrypted and then uploaded to SharePoint or OneDrive. For example, local files that are encrypted by the Azure Information Protection (AIP) client and then uploaded to Microsoft 365 aren't supported. Only files that are encrypted in the SharePoint or OneDrive service are supported for decryption.
 
 ## Decryption limitations with email attachments
 
@@ -78,15 +83,15 @@ In both these scenarios, email messages with encrypted file attachments can be r
 
 ## Requirements for decryption in eDiscovery
 
-You have to be assigned the RMS Decrypt role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in Advanced eDiscovery.
+You have to be assigned the RMS Decrypt role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in eDiscovery (Premium).
 
-This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Microsoft 365 compliance center. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#rms-decrypt).
+This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Microsoft Purview compliance portal. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#rms-decrypt).
 
-### Decrypting RMS-protected email messages and encrypted file attachments using Content search or Core eDiscovery
+### Decrypting RMS-protected email messages and encrypted file attachments using Content search or eDiscovery (Standard)
 
 Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
   
-- As previously explained, to decrypt RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages remain encrypted.
+- As previously explained, if you enable decryption of RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages will be exported as individual email messages.
 
 - Messages that are decrypted are identified in the **ResultsLog** report. This report contains a column named **Decode Status**, and a value of **Decoded** identifies the messages that were decrypted.
 

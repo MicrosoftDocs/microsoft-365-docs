@@ -68,6 +68,8 @@ Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
 
+The machine ID can be found in the URL when you select the device. Generally, it is a 40 digit alphanumeric number that can be found in the URL.
+
 ## Request headers
 
 Name|Type|Description
@@ -85,7 +87,7 @@ Comment|String|Comment to associate with the action. **Required**.
 
 ## Response
 
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
+If successful, this method returns 200 - Created response code and [Machine Action](machineaction.md) in the response body.
 
 ## Example
 

@@ -24,6 +24,7 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +50,7 @@ Data that is collected (using either _JSON response_ or _via files_) is the curr
 
 ### 1.1 API method description
 
-This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
+This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
 
 #### 1.1.1 Limitations
 
@@ -118,95 +119,95 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ```json
 {
-    "@odata.context": "api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetConfiguration)",
-    "value": [
-        {
-            "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "NT kernel 6.x",
-            "timestamp": "2021-01-11 09:47:58.854",
-            "configurationId": "scid-10000",
-            "configurationCategory": "Network",
-            "configurationSubcategory": "",
-            "configurationImpact": 5,
-            "isCompliant": true,
-            "isApplicable": true,
-            "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol - Telnet",
-            "recommendationReference": "sca-_-scid-10000"
-        },
-        {
-            "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
-            "rbacGroupName": "hhh",
-            "deviceName": null,
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0",
-            "timestamp": "2021-01-11 09:47:58.854",
-            "configurationId": "scid-20000",
-            "configurationCategory": "Security controls",
-            "configurationSubcategory": "Onboard Devices",
-            "configurationImpact": 9,
-            "isCompliant": false,
-            "isApplicable": true,
-            "isExpectedUserImpact": false,
-            "configurationName": "Onboard devices to Microsoft Defender for Endpoint",
-            "recommendationReference": "sca-_-scid-20000"
-        },
-        {
-            "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
-            "rbacGroupName": "hhh",
-            "deviceName": null,
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0",
-            "timestamp": "2021-01-11 09:47:58.854",
-            "configurationId": "scid-10000",
-            "configurationCategory": "Network",
-            "configurationSubcategory": "",
-            "configurationImpact": 5,
-            "isCompliant": true,
-            "isApplicable": true,
-            "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol - Telnet",
-            "recommendationReference": "sca-_-scid-10000"
-        },
-        {
-            "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0.17763.1637",
-            "timestamp": "2021-01-11 09:47:58.854",
-            "configurationId": "scid-39",
-            "configurationCategory": "OS",
-            "configurationSubcategory": "",
-            "configurationImpact": 5,
-            "isCompliant": true,
-            "isApplicable": true,
-            "isExpectedUserImpact": false,
-            "configurationName": "Enable 'Domain member: Digitally sign secure channel data (when possible)'",
-            "recommendationReference": "sca-_-scid-39"
-        },
-        {
-            "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0.17763.1637",
-            "timestamp": "2021-01-11 09:47:58.854",
-            "configurationId": "scid-6093",
-            "configurationCategory": "Security controls",
-            "configurationSubcategory": "Antivirus",
-            "configurationImpact": 5,
-            "isCompliant": false,
-            "isApplicable": false,
-            "isExpectedUserImpact": false,
-            "configurationName": "Enable Microsoft Defender Antivirus real-time behavior monitoring for Linux",
-            "recommendationReference": "sca-_-scid-6093"
-        }
-    ],
-    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.context": "api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetConfiguration)",
+    "value": [
+        {
+            "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "NT kernel 6.x",
+            "timestamp": "2021-01-11 09:47:58.854",
+            "configurationId": "scid-10000",
+            "configurationCategory": "Network",
+            "configurationSubcategory": "",
+            "configurationImpact": 5,
+            "isCompliant": true,
+            "isApplicable": true,
+            "isExpectedUserImpact": false,
+            "configurationName": "Disable insecure administration protocol - Telnet",
+            "recommendationReference": "sca-_-scid-10000"
+        },
+        {
+            "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
+            "rbacGroupName": "hhh",
+            "deviceName": null,
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0",
+            "timestamp": "2021-01-11 09:47:58.854",
+            "configurationId": "scid-20000",
+            "configurationCategory": "Security controls",
+            "configurationSubcategory": "Onboard Devices",
+            "configurationImpact": 9,
+            "isCompliant": false,
+            "isApplicable": true,
+            "isExpectedUserImpact": false,
+            "configurationName": "Onboard devices to Microsoft Defender for Endpoint",
+            "recommendationReference": "sca-_-scid-20000"
+        },
+        {
+            "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
+            "rbacGroupName": "hhh",
+            "deviceName": null,
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0",
+            "timestamp": "2021-01-11 09:47:58.854",
+            "configurationId": "scid-10000",
+            "configurationCategory": "Network",
+            "configurationSubcategory": "",
+            "configurationImpact": 5,
+            "isCompliant": true,
+            "isApplicable": true,
+            "isExpectedUserImpact": false,
+            "configurationName": "Disable insecure administration protocol - Telnet",
+            "recommendationReference": "sca-_-scid-10000"
+        },
+        {
+            "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0.17763.1637",
+            "timestamp": "2021-01-11 09:47:58.854",
+            "configurationId": "scid-39",
+            "configurationCategory": "OS",
+            "configurationSubcategory": "",
+            "configurationImpact": 5,
+            "isCompliant": true,
+            "isApplicable": true,
+            "isExpectedUserImpact": false,
+            "configurationName": "Enable 'Domain member: Digitally sign secure channel data (when possible)'",
+            "recommendationReference": "sca-_-scid-39"
+        },
+        {
+            "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0.17763.1637",
+            "timestamp": "2021-01-11 09:47:58.854",
+            "configurationId": "scid-6093",
+            "configurationCategory": "Security controls",
+            "configurationSubcategory": "Antivirus",
+            "configurationImpact": 5,
+            "isCompliant": false,
+            "isApplicable": false,
+            "isExpectedUserImpact": false,
+            "configurationName": "Enable Microsoft Defender Antivirus real-time behavior monitoring for Linux",
+            "recommendationReference": "sca-_-scid-6093"
+        }
+    ],
+    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 
@@ -214,7 +215,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ### 2.1 API method description
 
-This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
+This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
 
 #### 2.1.2 Limitations
 
@@ -269,13 +270,13 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#contoso.windowsDefenderATP.api.ExportFilesResponse",
-    "exportFiles": [
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
-    ],
-    "generatedTime": "2021-01-11T11:01:00Z"
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#contoso.windowsDefenderATP.api.ExportFilesResponse",
+    "exportFiles": [
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
+    ],
+    "generatedTime": "2021-01-11T11:01:00Z"
 }
 ```
 
