@@ -50,6 +50,7 @@ For shared mailboxes, quarantine notifications are supported only for users who 
 >
 > Currently, quarantine notifications are not supported for groups. here
 
+
 When you receive a quarantine notification, the following information is always available for each quarantined message:
 
 - **Sender**: The send name and email address of the quarantined message.
