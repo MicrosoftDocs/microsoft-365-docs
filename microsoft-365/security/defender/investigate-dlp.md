@@ -25,7 +25,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender Portal. You can manage Data Loss Prevention incidents along with security incidents from the **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can do these additional actions:
+Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender portal. You can manage DLP incidents along with security incidents from the **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can do these additional actions:
 
 - View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
