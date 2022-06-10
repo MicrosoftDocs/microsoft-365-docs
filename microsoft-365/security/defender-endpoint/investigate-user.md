@@ -11,9 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
@@ -49,7 +47,7 @@ When you investigate a user account entity, you'll see:
 - Alerts related to this user
 - Observed in organization (devices logged on to)
 
-![Image of the user account entity details page.](images/atp-user-details-view.png)
+:::image type="content" source="images/atp-user-details-view.png" alt-text="The user account entity details page" lightbox="images/atp-user-details-view.png":::
 
 ### User details
 

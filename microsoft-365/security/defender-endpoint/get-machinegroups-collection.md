@@ -43,7 +43,7 @@ User needs read permissions.
 ## HTTP request
 
 ```http
-GET /testwdatppreview/machinegroups
+GET https://graph.microsoft.com/testwdatppreview/machinegroups
 ```
 
 ## Request headers

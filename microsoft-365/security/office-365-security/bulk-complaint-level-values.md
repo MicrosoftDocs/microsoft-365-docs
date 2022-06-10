@@ -22,8 +22,6 @@ ms.prod: m365-security
 
 # Bulk complaint level (BCL) in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -37,14 +35,11 @@ Bulk mailers vary in their sending patterns, content creation, and recipient acq
 
 The BCL thresholds are described in the following table.
 
-****
-
 |BCL|Description|
 |:---:|---|
 |0|The message isn't from a bulk sender.|
 |1, 2, 3|The message is from a bulk sender that generates few complaints.|
 |4, 5, 6, 7<sup>\*</sup>|The message is from a bulk sender that generates a mixed number of complaints.|
 |8, 9|The message is from a bulk sender that generates a high number of complaints.|
-|
 
 <sup>\*</sup> This is the default threshold value that's used in anti-spam policies.
