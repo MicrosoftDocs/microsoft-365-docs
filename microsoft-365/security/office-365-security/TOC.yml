@@ -406,6 +406,8 @@
         href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
       - name: Ensuring you always have the optimal security controls with preset security policies
         href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+      - name: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
+        href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
       - name: How to run attack simulations for your team
         href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
       - name: How to setup automated attacks and training within Attack simulation training 
