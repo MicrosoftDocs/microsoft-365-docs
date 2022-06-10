@@ -245,3 +245,7 @@ For organizations using Configuration Manager, you can use the [Deploy and updat
 ### Intune Configuration Manager co-management setup guide
 
 Use the [Intune Configuration Manager co-management setup guide](https://aka.ms/comanagementsetup) to set up existing Configuration Manager client devices and new internet-based devices that your org wants to co-manage with both Microsoft Intune and Configuration Manager. Co-management allows you to manage Windows 10 devices and adds new functionality to your org's devices, while receiving the benefits of both solutions.
+
+#### School Data Sync rollover setup guide
+
+The [SDS Rollover setup guide](https://aka.ms/sdsrolloversetupguide) provides the steps to help your organization sync student information data to Azure Active Directory and Office 365. This guide streamlines the term lifecycle management process by creating Office 365 Groups for Exchange Online and SharePoint Online, class teams for Microsoft Teams and OneNote, as well as Intune for Education, and rostering and single sign-on integration for third-party apps. You’ll perform end-of-year closeout, tenant clean up and archive, new school year preparation, and new school year launch. Then you can create new profiles using the sync deployment method that suits your organization.
