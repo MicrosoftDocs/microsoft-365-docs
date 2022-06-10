@@ -1,5 +1,5 @@
 ---
-title: Manage software-as-a-service apps for your organization
+title: Manage SAAS apps for your organization
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT

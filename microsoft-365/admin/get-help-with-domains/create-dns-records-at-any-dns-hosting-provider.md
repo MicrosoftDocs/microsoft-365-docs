@@ -92,14 +92,16 @@ You'll be adding several different types of DNS records depending on the service
 
 You'll get the information for the MX record from the admin center domain setup wizard.
 
-On your hosting provider's website, add a new MX record.
-Make sure that the fields are set to the following values:
+On your hosting provider's website, add a new MX record. Make sure that the fields are set to the following values:
 
 - Record Type: `MX`
 - Priority: Set to the highest value available, typically `0`.
 - Host Name: `@`
 - Points to address: Copy the value from the admin center and paste it here.
-- TTL: `3600` (or your provider default)
+- TTL: `3600`
+
+> [!NOTE]
+> Exchange Online only supports TTL values less than 6 hours (21,600 seconds).
 
 Save the record, and then remove any other MX records.
 

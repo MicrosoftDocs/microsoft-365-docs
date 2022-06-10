@@ -84,6 +84,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
   - Windows Server 2019
   - Windows Server 2022
 - Windows Virtual Desktop
+- Windows 365
 
 Devices on your network must be running one of these editions.
 
@@ -149,7 +150,7 @@ By default, this service is enabled. It's good practice to check to ensure that 
 
    If the service is enabled, then the result should look like the following screenshot:
 
-   ![Result of the sc query command for diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
 You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
 

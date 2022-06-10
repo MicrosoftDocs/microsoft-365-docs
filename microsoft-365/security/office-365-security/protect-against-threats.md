@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Protect against threats
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -250,16 +250,20 @@ For more information about the recommended settings for Safe Links, see [Safe Li
      - **Name**: Enter something unique and descriptive.
      - **Description**: Enter an optional description.
    - **Users and domains** page: Because this is your first policy and you likely want to maximize coverage, consider entering your [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the **Domains** box. Otherwise, you can use the **Users** and **Groups** boxes for more granular control. You can specify exceptions by selecting **Exclude these users, groups, and domains** and entering values.
-   - **Protection settings** page:
-     - **Select the action for unknown potentially malicious URLs in messages**: Turn this setting **On**.
-     - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Turn this setting **On**. As of March 2020, this setting is in Preview and is available or functional only for members of the Microsoft Teams Technology Adoption Program (TAP).
-     - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting (turn on).
+   - **Url & click protection settings** page:
+     - **Action on potentially malicious URLs within Emails** section:
+       - **On: Safe Links checks a list of known, malicious links when users click links in email**: Select his setting (turn on).
+       - **Apply Safe Links to email messages sent within the organization**: Select this setting (turn on).
+       - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting (turn on).
        - **Wait for URL scanning to complete before delivering the message**: Select this setting (turn on).
-     - **Apply Safe Links to email messages sent within the organization**: Select this setting (turn on).
-     - **Do not track user clicks**: Verify this setting is not selected (turned off).
-     - **Do not let users click through to the original URL**: Verify this setting is turned on (selected).
-     - **Display the organization branding on notification and warning pages**: Selecting this setting (turning it on) is meaningful only after you've followed the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.
-     - **Do not rewrite the following URLs**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+       - **Do not rewrite URLs, do checks via Safe Links API only**: Verify this setting is not selected (turn off).
+     - **Do not rewrite the following URLs in email**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+     - **Action for potentially malicious URLs in Microsoft Teams** section:
+       - ***On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this setting (turn on).
+     - **Click protection settings** section:
+       - **Track user clicks**: Verify this setting is selected (turned on).
+       - **Let users click through to the original URL**: Turn off this setting (not selected).
+       - **Display the organization branding on notification and warning pages**: Selecting this setting (turning it on) is meaningful only after you've followed the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.
    - **Notification** page:
      - **How would you like to notify users?** section: Optionally, you can select **Use custom notification text** to enter customized notification text to use. You can also select **Use Microsoft Translator for automatic localization** to translate the custom notification text into the user's language. Otherwise, leave **Use the default notification text** selected.
 
@@ -301,7 +305,7 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
 
 6. On the **Review your settings** page, review your settings, verify **Yes, turn it on right away** is selected, and then click **Finish**
 
-To learn more about alert policies, see [Alert policies in the Microsoft 365 compliance center](../../compliance/alert-policies.md).
+To learn more about alert policies, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
 
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:

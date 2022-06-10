@@ -141,7 +141,8 @@ If you received a match on your labeled sample files, you can now  test your mod
 
     ![Test of unlabeled files.](../media/content-understanding/test-on-files.png) 
 
-## See Also
+## See also
+
 [Create an extractor](create-an-extractor.md)
 
 [Document Understanding overview](document-understanding-overview.md)

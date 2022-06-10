@@ -84,13 +84,13 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="An example of an investigation page." lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="The investigation page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## Investigation details
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="An example of investigation details." lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 

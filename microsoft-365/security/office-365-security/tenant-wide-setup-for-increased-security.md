@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 04/06/2022
 audience: ITPro
 ms.topic: article
 
@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 # Configure your Microsoft 365 tenant for increased security
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -72,7 +72,7 @@ Here are a couple of additional settings that are recommended.
 
 |Area|Recommendation|
 |---|---|
-|**Mail flow rules** (also known as transport rules)|Add a mail flow rule to help protect against ransomware by blocking executable file types and Office file types that contain macros. For more information, see [Use mail flow rules to inspect message attachments in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <p> See these additional topics: <ul><li>[Protect against ransomware](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Malware and Ransomware Protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[Recover from a ransomware attack in Office 365](recover-from-ransomware.md)</li></ul> <p> Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <p> More information: [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**Mail flow rules** (also known as transport rules)|Add a mail flow rule to help protect against ransomware by blocking executable file types and Office file types that contain macros. For more information, see [Use mail flow rules to inspect message attachments in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <p> See these additional topics: <ul><li>[Protect against ransomware](../../admin/security-and-compliance/secure-your-business-data.md)</li><li>[Malware and Ransomware Protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[Recover from a ransomware attack in Office 365](recover-from-ransomware.md)</li></ul> <p> Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <p> More information: [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Modern authentication**|Modern authentication is a prerequisite for using multi-factor authentication (MFA). MFA is recommended for securing access to cloud resources, including email. <p> See these topics: <ul><li>[Enable or disable modern authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. <p> More information: [How modern authentication works for Office 2013 and Office 2016 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
 
 ## Configure tenant-wide sharing policies in SharePoint admin center
@@ -97,7 +97,7 @@ Be sure to visit these two areas in Azure Active Directory to complete tenant-wi
 
 If your organization includes offices with secure network access, add the trusted IP address ranges to Azure Active Directory as named locations. This feature helps reduce the number of reported false positives for sign-in risk events.
 
-See: [Named locations in Azure Active Directory](/azure/active-directory/active-directory-named-locations)
+See: [Named locations in Azure Active Directory](/azure/active-directory/conditional-access/location-condition)
 
 ### Block apps that don't support modern authentication
 
@@ -124,7 +124,7 @@ More information:
 - [More information about Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
 - [What is Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)
 
-![Defender for Cloud Apps dashboard.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+:::image type="content" source="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png" alt-text="The Defender for Cloud Apps dashboard" lightbox="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png":::
 
 ## Additional resources
 

@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 
 # New users forwarding email insight in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -30,11 +30,11 @@ The **New domains being forwarded email** insight in the [Security & Compliance 
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 
-![New users forwarding email insight.](../../media/mfi-new-users-forwarding-email.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="The New users forwarding email insight" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
 When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link to the [Forwarding modifications report](#forwarding-modifications-report) as described later in this article.
 
-![Details flyout that appears after clicking on the New users forwarding email insight.](../../media/mfi-new-users-forwarding-email-details.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="The Details flyout that appears after clicking on the New users forwarding email insight" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
 You can also get to this details page when you select the insight after you click **View all** in the **Top insights & recommendations** area on (**Reports** \> **Dashboard** or <https://protection.office.com/insightdashboard>).
 
@@ -62,11 +62,11 @@ The following charts are available in the report view:
 
 - **Show data for: New forwarding users**:
 
-  ![New forwarding users view in the Forwarding modifications report.](../../media/forwarding-modifications-report-new-forwarding-users.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="The New forwarding users view in the Forwarding modifications report" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
 - **Show data for: New forwarding domains**:
 
-  ![New forwarded domains view in the Forwarding modifications report.](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="The New forwarded domains view in the Forwarding modifications report" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
@@ -104,7 +104,7 @@ If you select a row from the table, a **Details** flyout appears with the follow
 - **Start date**
 - **Recommendation**: From here, you can click the link to manage the user in the Microsoft 365 admin center.
 
-![Details flyout from the details table of the New forwarding users view in the Forwarding modifications report.](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="The Details flyout from the details table of the New forwarding users view in the Forwarding modifications report" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
 To go back to the reports view, click **View report**.
 

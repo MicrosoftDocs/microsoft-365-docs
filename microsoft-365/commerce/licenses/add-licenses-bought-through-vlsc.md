@@ -1,5 +1,5 @@
 ---
-title: "Add licenses to a subscription purchased through the Volume Licensing Service Center"
+title: "Add licenses to a VLSC subscription"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to add licenses to your Microsoft 365 subscription purchased through the third-party partner, recognized by Microsoft."
-ms.date: 08/27/2021
+ms.date: 05/12/2022
 ---
 
 # Add licenses to a subscription purchased through the Volume Licensing Service Center
