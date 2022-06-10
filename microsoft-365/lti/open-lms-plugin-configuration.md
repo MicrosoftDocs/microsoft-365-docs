@@ -28,7 +28,7 @@ In this article, you'll learn how to install and configure the Moodle plugin to 
 Here are the prerequisites to install the Moodle plugin:
 
 * Moodle administrator credentials.
-* Azure AD administrator credentials.
+* Microsoft Azure Active Directory (Azure AD) administrator credentials.
 * An Azure subscription where you can create new resources.
 
 ## 1. Install the Microsoft 365 Moodle Plugin
@@ -51,9 +51,9 @@ Install and download the following items before proceeding with the Microsoft 36
 
 #### Install plugins
 
-1. Download the plugins, extract them, and upload to their corresponding folders. e.g. extract the OpenID Connect plugin (auth_oidc) to a folder called **oidc**, and upload to the **auth** folder of your Moodle document root.
+1. Download the plugins, extract them, and upload to their corresponding folders. For example, extract the OpenID Connect plugin (auth_oidc) to a folder called **oidc**, and upload to the **auth** folder of your Moodle document root.
 2. Sign in to your Moodle site as an administrator and select **Site administration**.
-3. Upon detection of new plugins to be installed, Moodle should redirect you to the install new plugins page. If this doesn't happen, in the **Site administration** page, select **Notifications** in the **General** tab, this should trigger the installation of the plugins.
+3. Upon detection of new plugins to be installed, Moodle should redirect you to the install new plugins page. If this doesn't happen, in the **Site administration** page, select **Notifications** in the **General** tab as this should trigger the installation of the plugins.
 
     > [!IMPORTANT]
     >
@@ -87,7 +87,7 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 > [!IMPORTANT]
 > For more information on registering your Moodle instance manually, see [Register your Moodle instance as an application](https://docs.moodle.org/400/en/Microsoft_365#Azure_App_Creation_and_Configuration).
 
-### Teams for Open LMS set up process
+### Teams for Open LMS setup process
 
 1. From the Microsoft 365 Integration plugins page, select the **Setup** tab.
 
@@ -151,7 +151,7 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 1. To validate [cron](https://docs.moodle.org/400/en/Cron) tasks and to run them manually for the first time, navigate to **Site administration** > **Server** > **Tasks** > **Scheduled tasks**.
 
     1. Scroll down and find the task **Sync users with Azure AD** and select **Run now**.
-        1. This will sync the AAD user to your Open LMS site.
+        1. This process will sync the Azure AD user to your Open LMS site.
     1. Next, find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
         1. This task will create groups and Teams if an owner is found.
         1. If the user has `local/o365:teamowner` capability in the course context, the user is a team owner. If the user has `local/o365:teammember` capability in the course context, the user is a team member.  
@@ -162,7 +162,7 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 
 1. Navigate to **Site administration** > **Plugins** > **Local plugins** > **Microsoft 365 Integration** > **Teams Settings** tab.
 
-1. Click the **Check Moodle settings** button will update all required configurations for the Teams integration to work.
+1. Select the **Check Moodle settings** button will update all required configurations for the Teams integration to work.
 
 After the plugins are installed and configured, you can:
 
