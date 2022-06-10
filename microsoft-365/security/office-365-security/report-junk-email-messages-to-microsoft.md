@@ -22,7 +22,7 @@ ms.prod: m365-security
 
 # Report messages and files to Microsoft
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -42,4 +42,4 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 > [!NOTE]
 > When you report an email entity to Microsoft, we make a copy of everything associated with the email to include it in our continual algorithm reviews. This copy includes the email content, the email headers, and related data about the email routing. Attachments in the message are also included.
 >
-> Microsoft treats your feedback as your organization's permission for us to analyze all of the previously described information and to work to fine tune the message hygiene algorithms. We hold your message in our secure audited datacenters in the USA until we delete your submission no later than 30 days after you provided it to us. Personnel at Microsoft may read your submitted message and attachments, which is normally not permitted for email in Office 365. However, your email is still treated as confidential between you and Microsoft, and we will provide your submission to any other party to read the email or its attachments for this review process.
+> Microsoft treats your feedback as your organization's permission for us to analyze all of the previously described information and to work to fine tune the message hygiene algorithms. We hold your message in our secure audited datacenters in the USA until we delete your submission no later than 30 days after you provided it to us. Personnel at Microsoft may read your submitted message and attachments, which is normally not permitted for email in Office 365. However, your email is still treated as confidential between you and Microsoft, and we will not provide your submission to any other party to read the email or its attachments for this review process.

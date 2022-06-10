@@ -52,6 +52,9 @@ EDR in block mode is integrated with [threat & vulnerability management](next-ge
 > [!TIP]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
 
+Watch this video to learn why and how to turn on endpoint detection and response (EDR) in block mode, enable behavioral blocking, and containment at every stage from pre-breach to post-breach. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HjW2]
+
 ## What happens when something is detected?
 
 When EDR in block mode is turned on, and a malicious artifact is detected, Microsoft Defender for Endpoint blocks and remediates that artifact. Your security operations team will see detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions.

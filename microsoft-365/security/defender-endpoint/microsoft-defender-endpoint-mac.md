@@ -158,7 +158,7 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## macOS kernel and system extensions
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint on Mac update that leverages system extensions instead of kernel extensions. For relevant details, see [What's new in Microsoft Defender for Endpoint on Mac](mac-whatsnew.md).
+Starting with macOS 11 (Big Sur), Microsoft Defender for Endpoint has been fully migrated from kernel extension to system extensions. Kernel extension is still being used on macOS 10.15 (Catalina).
 
 ## Resources
 
