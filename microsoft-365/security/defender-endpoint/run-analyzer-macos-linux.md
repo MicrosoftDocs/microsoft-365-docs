@@ -59,7 +59,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 4. To collect actual diagnostic package and generate the result archive file run again as root: `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
 > 
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -123,9 +123,9 @@ Additional syntax help:
 
   Description: Additional XML file used by the analyzer when building the HTML report.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
+  Description: details on audited service and related components for [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS
 
 - perf_benchmark.tar.gz
 

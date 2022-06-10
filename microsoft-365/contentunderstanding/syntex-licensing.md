@@ -17,10 +17,10 @@ description: "Learn about licensing for SharePoint Syntex"
 
 # Licensing for SharePoint Syntex
 
-To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each Syntex user must have a license. If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create, publish, or run document understanding or form processing models. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No models, content, or metadata will be deleted and site permissions will not be changed.
+To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each SharePoint Syntex user must have a license. If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create, publish, or run document understanding or form processing models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted and site permissions will not be changed.
  
 > [!NOTE] 
-> SharePoint Syntex is an add-on license and requires users also have a license for Microsoft 365.
+> SharePoint Syntex is an add-on license and requires users also to have a license for Microsoft 365.
  
 ## Tasks requiring a license
  
@@ -34,12 +34,12 @@ The following tasks require a [SharePoint Syntex license](https://www.microsoft.
 
 Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.
  
-## Cost of running models
+## Cost of training and running models
  
-The cost of running document understanding models is included in the cost of a SharePoint Syntex license. However, form processing models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
- 
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. This capacity is renewed each month if you maintain the 300-license minimum. (Unused credits don't roll over from month to month.) If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
- 
+The cost of training and running document understanding models is included in the cost of a SharePoint Syntex license. However, form processing models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
+
+For each SharePoint Syntex license, you are allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active SharePoint Syntex license. (Unused credits don't roll over from month to month.) 
+
 You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
 
 If you plan to use a custom Power Platform environment, you must [allocate credits to that environment](/power-platform/admin/capacity-add-on).
