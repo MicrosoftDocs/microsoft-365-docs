@@ -178,7 +178,7 @@ For example, if a security setting exists in **Standard protection** and an admi
 
    You can specify a maximum of 350 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
 
-   To remove an existing entry from the list, click ![Remove icon.](../../media/m365-cc-sc-remove.png).
+   To remove an existing entry from the list, click ![Remove user from impersonation protection icon.](../../media/m365-cc-sc-remove.png).
 
    When you're finished, click **Next**.
 
@@ -191,7 +191,7 @@ For example, if a security setting exists in **Standard protection** and an admi
 
    Enter the domain in the box, and then click **Add**. Repeat this step as many times as necessary.
 
-   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove.png).
+   To remove an existing entry from the list, select the entry, and then click ![Remove domain from impersonation protection icon.](../../media/m365-cc-sc-remove.png).
 
    The maximum number of domains that you can specify for domain impersonation protection in all anti-phishing policies is 50.
 
@@ -201,7 +201,7 @@ For example, if a security setting exists in **Standard protection** and an admi
 
    Enter the email address or domain in the box, and then click **Add**. Repeat this step as many times as necessary.
 
-   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove.png).
+   To remove an existing entry from the list, select the entry, and then click ![Remove exceptions to impersonation protection icon.](../../media/m365-cc-sc-remove.png).
 
    When you're finished, click **Next**.
 
@@ -228,7 +228,7 @@ Therefore, we typically don't recommend exceptions to the **Built-in protection*
    - **Groups**
    - **Domains**
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove exclusions from Built-in protection icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
