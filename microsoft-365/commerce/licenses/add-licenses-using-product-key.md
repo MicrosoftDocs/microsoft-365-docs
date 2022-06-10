@@ -1,5 +1,5 @@
 ---
-title: "Add licenses to or extend a subscription paid for using a product key"
+title: "Add licenses using a product key"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,7 +20,7 @@ ms.custom:
 search.appverid: MET150
 description: "Learn how to add licenses to or extend your subscription with a product key."
 ROBOTS: NOINDEX
-ms.date: 04/07/2021
+ms.date: 06/06/2022
 ---
 
 # Add licenses to or extend a subscription paid for using a product key

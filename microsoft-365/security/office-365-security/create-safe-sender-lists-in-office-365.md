@@ -1,19 +1,19 @@
 ---
 title: Create safe sender lists
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
 ms.technology: mdo
@@ -22,7 +22,7 @@ ms.prod: m365-security
 
 # Create safe sender lists in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -96,7 +96,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
       When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN` value is stamped in the **X-Forefront-Antispam-Report** header. If the message is from a source that's on the IP Allow List, the value `IPV:CAL` is also added. These values can help you with troubleshooting.
 
-![Mail flow rule settings in the EAC for bypassing spam filtering.](../../media/1-AllowList-SkipFilteringFromContoso.png)
+      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="The Mail flow rule settings in the EAC for bypassing spam filtering" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
 ## Use Outlook Safe Senders
 

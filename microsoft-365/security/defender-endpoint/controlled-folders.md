@@ -27,6 +27,11 @@ ms.date:
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
+
+**Applies to**
+- Windows
+
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -67,6 +72,8 @@ Controlled folder access is supported on the following versions of Windows:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) and later
 - Windows 11
+- Windows 2012 R2
+- Windows 2016
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
