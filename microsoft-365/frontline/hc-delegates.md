@@ -17,6 +17,7 @@ ms.collection:
   - M365-collaboration
   - Teams_ITAdmin_Healthcare
   - microsoftcloud-healthcare
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ms.reviewer: acolonna

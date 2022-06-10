@@ -17,6 +17,7 @@ ms.collection:
   - microsoftcloud-healthcare
   - m365solution-healthcare
   - m365solution-scenario
+  - m365-frontline
 ms.reviewer: 
 description: Learn how to use the Bookings app in Microsoft Teams to schedule, manage, and conduct virtual appointments. 
 ---

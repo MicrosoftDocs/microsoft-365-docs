@@ -12,7 +12,7 @@ description: Learn how to use the Shifts connector wizard to integrate Shifts in
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
-  - Teams_ITAdmin_FLW
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ---

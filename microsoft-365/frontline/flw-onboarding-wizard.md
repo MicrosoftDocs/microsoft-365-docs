@@ -12,7 +12,7 @@ description: Learn how to use the Frontline Worker onboarding wizard to quickly 
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
-  - Teams_ITAdmin_FLW
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ---

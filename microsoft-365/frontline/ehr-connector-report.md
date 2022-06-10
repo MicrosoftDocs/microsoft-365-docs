@@ -19,6 +19,7 @@ ms.collection:
   - microsoftcloud-healthcare
   - m365solution-healthcare
   - m365solution-scenario
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ms.reviewer: 

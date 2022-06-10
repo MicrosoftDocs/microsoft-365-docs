@@ -16,6 +16,7 @@ searchScope:
   - Microsoft Cloud for Nonprofit
 ms.collection: 
   - microsoftcloud-nonprofit
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ---

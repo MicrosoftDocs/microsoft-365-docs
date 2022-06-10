@@ -12,7 +12,7 @@ description: Learn how to deploy teams at scale for the frontline workers in you
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
-  - Teams_ITAdmin_FLW
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ---

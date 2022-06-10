@@ -13,6 +13,7 @@ ms.service: msteams
 ms.collection: 
   - M365-collaboration
   - microsoftcloud-retail
+  - m365-frontline
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

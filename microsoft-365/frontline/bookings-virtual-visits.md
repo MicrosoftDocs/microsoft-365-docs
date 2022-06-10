@@ -19,6 +19,7 @@ ms.collection:
   - microsoftcloud-retail
   - m365solution-healthcare
   - m365solution-scenario
+  - m365-frontline
 ms.reviewer: 
 description: Learn how to schedule, manage, and conduct Virtual Visits using the Bookings app in Teams. 
 ---

@@ -19,6 +19,7 @@ ms.collection:
   - microsoftcloud-retail
   - m365solution-healthcare
   - m365solution-scenario
+  - m365-frontline
 ms.reviewer: hafarmer
 description: Learn about the join experience for Teams virtual appointments on browsers. 
 ---

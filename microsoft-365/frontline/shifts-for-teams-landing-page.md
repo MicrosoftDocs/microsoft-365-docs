@@ -11,7 +11,7 @@ f1.keywords:
 ms.service: msteams
 ms.collection: 
   - M365-collaboration
-  - Teams_ITAdmin_FLW
+  - m365-frontline
   - microsoftcloud-healthcare
   - microsoftcloud-retail
 search.appverid: MET150

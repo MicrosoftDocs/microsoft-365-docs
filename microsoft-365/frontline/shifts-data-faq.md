@@ -17,7 +17,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: 
   - M365-collaboration
-  - Teams_ITAdmin_FLW
+  - m365-frontline
   - microsoftcloud-healthcare
 appliesto: 
   - Microsoft Teams

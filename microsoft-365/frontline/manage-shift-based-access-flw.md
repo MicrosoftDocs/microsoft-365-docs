@@ -12,7 +12,7 @@ description: Learn how to manage shift-based access in Teams for Frontline Worke
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
-  - Teams_ITAdmin_FLW
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ---

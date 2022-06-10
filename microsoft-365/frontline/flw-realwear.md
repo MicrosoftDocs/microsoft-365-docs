@@ -16,6 +16,7 @@ ms.collection:
   - M365-collaboration
   - Teams_ITAdmin_RemoteWorkers
   - remotework
+  - m365-frontline
 appliesto: 
   - Microsoft Teams
 ---
