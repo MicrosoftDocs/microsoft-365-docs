@@ -23,7 +23,7 @@ description: "This article describes how you can plan your portal launch in Shar
 
 A portal is a SharePoint site on your intranet with many site viewers who consume content on the site. Large organizations could have several portals. For example, a company portal and an HR portal. Typically portals have relatively few people who create and author the site and its content. Most visitors to the portal only read and consume the content.
 
-This article describes how to plan your deployment and roll-out plan to SharePoint Online. It also provides approaches to follow as traditional load testing is not permitted on SharePoint Online. SharePoint Online is a cloud service and the load capabilities, health, and overall balance of load in the service are managed by Microsoft.
+This article describes how to plan your deployment and roll-out plan to SharePoint Online. It also provides approaches to follow as traditional load testing isn't permitted on SharePoint Online. SharePoint Online is a cloud service and the load capabilities, health, and overall balance of load in the service are managed by Microsoft.
 
 To help in creating a successful portal, follow the basic principles, practices, and recommendations detailed in the [Creating, launching, and maintaining a healthy portal](/sharepoint/portal-health)
 

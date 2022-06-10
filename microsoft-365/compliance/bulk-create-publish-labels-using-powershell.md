@@ -23,9 +23,9 @@ description: "Learn how to use PowerShell to create and publish retention labels
 
 # Create and publish retention labels by using PowerShell
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish. The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft Purview compliance portal. However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
@@ -734,11 +734,11 @@ if ($ResultCSV)
 
 ## Step 4: Run the PowerShell script
 
-First, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+First, [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Then, run the script that creates and publishes the retention labels:
   
-1. In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script. For example:
+1. In your Security & Compliance PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script. For example:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
