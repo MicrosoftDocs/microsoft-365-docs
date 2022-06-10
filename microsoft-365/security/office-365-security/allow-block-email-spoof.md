@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.collection:
   - M365-security-compliance
-description: Admins can learn how to allow or block emails and spoofed entries in the Tenant Allow/Block List in the Security portal.
+description: Admins can learn how to allow or block emails and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -28,7 +28,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-You can use the Microsoft 365 Defender portal or PowerShell to allow or block emails and spoofed entries in the Tenant Allow/Block List.
+You can use the Microsoft 365 Defender portal or PowerShell to allow or block emails and spoofed sender entries in the Tenant Allow/Block List.
 
 ## Create block sender entries using the Microsoft 365 Defender portal
 
