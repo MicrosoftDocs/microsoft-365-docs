@@ -115,19 +115,19 @@ You can toggle back and forth between the new and classic experiences, but we re
 
 ### You want to map multiple EDM SITS to the same schema
 
-Each time you create an EDM SIT using the new flow, a new schema is created. This results in a 1:1 mapping between EDM schema and EDM SIT. The new flow doesn't support mapping multiple SITs to the same schema.
+In EDM, you can create a maximum of 10 schemas. Each time you create an EDM SIT using the new experience, a new schema is created. This results in a 1:1 mapping between EDM schema and EDM SIT. The new experience doesn't support mapping multiple SITs to the same schema.
 
 ### You need to create or manage more than 10 EDM SITs
 
- Because the new flow doesn't support mapping multiple SITs to the same schema, you are limited to creating and managing 10 EDM SITS. In the classic flow, you can map multiple EDM SITs to the same schema and so have more than 10 EDM SITs. Using the new flow, you'll receive an error if you try to create an eleventh EDM schema and you won't be able to view more than 10 EDM SITs.
+ Because the new experience doesn't support mapping multiple SITs to the same schema, you are limited to creating and managing 10 EDM SITS. In the classic experience, you can map multiple EDM SITs to the same schema and so have more than 10 EDM SITs. Using the new flow, you'll receive an error if you try to create an eleventh EDM schema and you won't be able to view more than 10 EDM SITs.
 
 ### You need to specify the name of your EDM schema
 
-NEEDS MORE EXPLANATION, EXPLAIN THE USE CASE AND IMPACT.You are unable to name the schema as a default auto-generated name (EDM SIT name concatenated with the word “schema”) is created.  Include finding the schema name
+If you need to specify a name for your EDM SIT schemas, you have to use the classic experience to create and manage them. Because the new experience automatically creates the schema, you don't get the opportunity to give your schema a custom name. The auto-generated name is concatenation of the EDM SIT name and the word *schema*. For example, if the EDM SIT name is *PatientNumber*, the schema name would be *PatientNumberschema*.
 
 ### You need to edit EDM schemas that were created in the classic experience
 
-NEEDS MORE EXPLANATION, EXPLAIN THE USE CASE AND IMPACT Schema created in the legacy EDM UI or uploaded via PowerShell as an XML file will be “orphaned” in the new EDM UI
+All schemas that are created using the classic experience or uploaded as a XML file using PowerShell are not viewable or manageable in the new experience.
 
 ## See also
 
