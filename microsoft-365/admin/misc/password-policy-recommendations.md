@@ -24,7 +24,7 @@ ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: "Make your organization more secure against password attacks, and ban common passwords and enable risk-based multi-factor authentication."
 ---
 
-# Password policy recommendations
+# Password policy recommendations for Microsoft 365 passwords
 
 As the admin of an organization, you're responsible for setting the password policy for users in your organization. Setting the password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
 

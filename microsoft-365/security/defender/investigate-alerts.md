@@ -31,7 +31,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 >[!Note]
->This article describes security alerts in Microsoft 365 Defender. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft 365 Compliance | Microsoft Docs](../../compliance/create-activity-alerts.md).
+>This article describes security alerts in Microsoft 365 Defender. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts are typically part of a broader attack and provide clues about an incident.
 
@@ -59,7 +59,7 @@ You can filter alerts according to these criteria:
 
 ## Required roles for Defender for Office 365 alerts
 
-You’ll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
+You'll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
 
 - For Azure Active Directory (Azure AD) global roles:
 
@@ -200,9 +200,8 @@ To create the automation, you'll need an API token before you can connect Power 
 
 ### Create an automated flow
 
-For the detailed step-by-step process, see the video [here](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
-
-This video also describes how to connect power automate to Defender for Cloud Apps.
+Watch this short video to learn how automation works efficiently to create a smooth workflow and how to connect Power Automate to Defender for Cloud Apps. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## Next steps
 
