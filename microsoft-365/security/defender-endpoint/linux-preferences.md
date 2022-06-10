@@ -86,7 +86,7 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 |---|---|
 |**Key**|behaviorMonitoring|
 |**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled |
+|**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
   
 #### Run a scan after definitions are updated
@@ -133,7 +133,7 @@ Specifies the merge policy for exclusions. It can be a combination of administra
 |**Possible values**|merge (default) <p> admin_only|
 |**Comments**|Available in Defender for Endpoint version 100.83.73 or higher.|
 
-  #### Scan exclusions
+#### Scan exclusions
 
 Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
 (Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
