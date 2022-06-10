@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -40,7 +40,7 @@ Many modern SOCs assign its team members to categories based on their skillsets 
 
 SOC team roles and responsibilities for Microsoft 365 Defender would naturally integrate into these teams.
 
-The following table breaks out each SOC team’s roles and responsibilities and how their roles integrate with Microsoft 365 Defender.
+The following table breaks out each SOC team's roles and responsibilities and how their roles integrate with Microsoft 365 Defender.
 
 | SOC team | Roles and responsibilities | Microsoft 365 Defender tasks  |
 |:-------|:-----|:-------|

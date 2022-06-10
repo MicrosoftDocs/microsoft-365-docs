@@ -2,7 +2,7 @@
 title: "Use PowerShell to perform an IMAP migration to Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -35,7 +35,7 @@ Estimated time to complete this task: 2-5 minutes to create a migration batch. A
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in a table in the [Recipients Permissions](/exchange/recipients-permissions-exchange-2013-help) topic.
 
-To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for instructions.
+To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for instructions.
 
 For a full list of migration commands, see [Move and migration cmdlets](/powershell/exchange/).
 
@@ -52,7 +52,7 @@ The following restrictions apply to IMAP migrations:
 ### Step 1: Prepare for an IMAP migration
 <a name="BK_Step1"> </a>
 
-- **If you have a domain for you IMAP organization, add it as an accepted domain of your Microsoft 365 organization.** If you want to use the same domain you already own for your Microsoft 365 mailboxes, you first have to add it as an accepted domain to Microsoft 365. After you have added it, you can create your users in Microsoft 365. For more information, see[Verify your domain](../admin/setup/add-domain.md).
+- **If you have a domain for your IMAP organization, add it as an accepted domain of your Microsoft 365 organization.** If you want to use the same domain you already own for your Microsoft 365 mailboxes, you first have to add it as an accepted domain to Microsoft 365. After you have added it, you can create your users in Microsoft 365. For more information, see[Verify your domain](../admin/setup/add-domain.md).
 
 - **Add each user to Microsoft 365 so that they have a mailbox.** For instructions, see[Add users to Microsoft 365 for business](../admin/add-users/add-users.md).
 
@@ -62,7 +62,7 @@ The following restrictions apply to IMAP migrations:
 
 - **Assign the administrator account permissions to access mailboxes in your IMAP organization**. If you use administrator credentials in the CSV file, the account that you use must have the necessary permissions to access the on-premises mailboxes. The permissions required to access user mailboxes is determined by the particular IMAP server.
 
-- **To use the Exchange Online PowerShell cmdlets**, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for instructions.
+- **To use the Exchange Online PowerShell cmdlets**, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for instructions.
 
     For a full list of migration commands, see [Move and migration cmdlets](/powershell/exchange/).
 

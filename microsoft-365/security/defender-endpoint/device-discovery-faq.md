@@ -114,7 +114,7 @@ When considering Standard discovery, you may be wondering about the implications
 
 ### Probing is distributed across all Windows devices on the network
 
-As opposed to malicious activity, which would typically scan the entire network from a small number of compromised devices, Microsoft Defender for Endpoint’s Standard discovery probing is initiated from all onboarded Windows devices making the activity benign and non-anomalous. The probing is centrally managed from the cloud to balance the probing attempt between all the supported onboarded devices in the network.  
+As opposed to malicious activity, which would typically scan the entire network from a small number of compromised devices, Microsoft Defender for Endpoint's Standard discovery probing is initiated from all onboarded Windows devices making the activity benign and non-anomalous. The probing is centrally managed from the cloud to balance the probing attempt between all the supported onboarded devices in the network.  
 
 ### Active probing generates negligible amount of extra traffic
 
@@ -130,8 +130,8 @@ Network security and monitoring tools are indifferent to such activities perform
 
 ### Only unmanaged devices are being probed
 
-The device discovery capabilities have been built to only discover and identify unmanaged devices on your network. This means that previously discovered devices that are already onboarded with Microsoft Defender for Endpoint won’t be probed.
+The device discovery capabilities have been built to only discover and identify unmanaged devices on your network. This means that previously discovered devices that are already onboarded with Microsoft Defender for Endpoint won't be probed.
 
 ### You can exclude network lures from active probing
 
-Standard discovery supports exclusion of devices or ranges (subnets) from active probing. If you have network lures deployed in place, you can use the Device Discovery settings to define exclusions based on IP addresses or subnets (a range of IP addresses). Defining those exclusions will ensure that those devices won’t be actively probed and won’t be alerted. Those devices will be discovered using passive methods only (similar to Basic discovery mode).
+Standard discovery supports exclusion of devices or ranges (subnets) from active probing. If you have network lures deployed in place, you can use the Device Discovery settings to define exclusions based on IP addresses or subnets (a range of IP addresses). Defining those exclusions will ensure that those devices won't be actively probed and won't be alerted. Those devices will be discovered using passive methods only (similar to Basic discovery mode).

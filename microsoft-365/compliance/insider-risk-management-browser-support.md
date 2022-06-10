@@ -1,7 +1,7 @@
 ---
 title: Learn about and configure insider risk management browser signal detection
-description: Learn about insider risk management browser signal detection in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
+description: Learn about insider risk management browser signal detection in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -18,6 +18,8 @@ ms.collection:
 ---
 
 # Learn about and configure insider risk management browser signal detection
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following activities are performed by in-scope policy users when using these browsers:
 
@@ -43,7 +45,7 @@ Before installing the Microsoft Edge add-on or Google Chrome extension, customer
 
 - Latest Windows 10 x64 build is recommended, minimum Windows 10 x64 build 1809 for signal detection support. Browser signal detection isn't currently supported on non-Windows devices.
 - Current [Microsoft 365 subscription](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) with insider risk management support.
-- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft 365 Compliance portal.
+- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft Purview compliance portal.
 
 For specific browser configuration requirements, see the Microsoft Edge and Google Chrome sections later in this article.
 
@@ -178,7 +180,7 @@ Before adding the Microsoft DLP Chrome extension to the list of force installed 
 
     - OMA-URI: *./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist*
     - Data type: *String*
-    - Value: *\<enabled/\>\<data id=”ExtensionInstallForcelistDesc” value=”1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/\>*
+    - Value: *\<enabled/\>\<data id="ExtensionInstallForcelistDesc" value="1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/\>*
 
 9. Select **Create**.
 

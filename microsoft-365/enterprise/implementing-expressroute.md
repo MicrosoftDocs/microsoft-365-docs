@@ -2,7 +2,7 @@
 title: "Implementing ExpressRoute for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/5/2017
 audience: ITPro
 ms.topic: conceptual
