@@ -60,7 +60,7 @@ You'll need to create two CSV files for each batch of teams that you deploy:
     |**Team Name**|The name of the team.|
     |**Existing Team ID**|If you're adding or removing users from an existing team, specify the team ID of the team.|
     |**Visibility**|Whether the team is public (anyone in your organization can join) or private (users need approval from the team owners to join). Options are **Public** and **Private**.|
-    |**Team Template ID**|If you're creating a team from a pre-built or custom template, specify the team template ID. See [Get started with team templates in the Teams admin center](get-started-with-teams-templates-in-the-admin-console.md) for a list pre-built team templates and IDs. If you want to use the standard default team template, leave this blank.|
+    |**Team Template ID**|If you're creating a team from a pre-built or custom template, specify the team template ID. See [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) for a list pre-built team templates and IDs. If you want to use the standard default team template, leave this blank.|
 
 - **A CSV file that maps the users you're adding to each team**. This file must contain these required columns, in the following order, starting with the first column:
 
@@ -167,4 +167,4 @@ Email [dscale@microsoft.com](mailto:dscale@microsoft.com) and include your orche
 
 ## Related articles
 
-- [Teams PowerShell Overview](teams-powershell-overview.md)
+- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
