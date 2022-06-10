@@ -97,7 +97,7 @@ Being aware of your exposure score helps you:
 
 ### Review the secure score for devices
 
-Also located in found in the Vulnerability management dashboard is the Microsoft Secure score for devices card. This card displays your current score and a higher score indicates your endpoints are more resilient from cyberattacks. It reflects the security state of all the devices, collectively.
+Also located in found in the Vulnerability management dashboard is the Microsoft Secure score for devices card. This card displays your current score and a higher score indicates your endpoints are more resilient to cyberattacks. It reflects the security state of all the devices, collectively.
 
 The data on this card is the product of a meticulous and ongoing vulnerability discovery process. It's aggregated with configuration discovery assessments that continuously:
 
@@ -158,7 +158,15 @@ Microsoft Defender for Business includes several remediation actions. These acti
 
 ### Run reports
 
-Several reports are available in the Microsoft 365 Defender portal (https://security.microsoft.com). This article describes these reports, how you can use them, and how to find them.
+Several reports are available in the Microsoft 365 Defender portal.
+
+1. Select **Reports** from the Navigation pane.
+
+1. Choose a report to review. Each report displays a number of pertinent categories for that report. 
+
+1. Click **View details** to see deeper information for each category. 
+
+1. Select the title of a particular threat to see details specific to it. 
 
 ## See also
 
