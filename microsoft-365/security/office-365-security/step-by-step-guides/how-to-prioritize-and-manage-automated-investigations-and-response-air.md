@@ -36,7 +36,7 @@ As automated investigations on *Email & collaboration* content results in verdic
 
 ## What you’ll need
 
-- Microsoft Defender for Office 365 Plan 2 or higher
+- Microsoft Defender for Office 365 Plan 2 or higher (Included with E5)
 - Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)
 
 ## Steps to analyze and approve AIR actions directly from the Action Center
@@ -53,7 +53,7 @@ As automated investigations on *Email & collaboration* content results in verdic
 1. Navigate to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
 2. In the left-hand navigation pane, expand **Action & submissions** then click **Action Center**.
 3. When the Action Center loads press the **History** tab.
-4. View the history of AIR, including decisions made, source of action, and admin who made the decision,if appropriate.
+4. View the history of AIR, including decisions made, source of action, and admin who made the decision, if appropriate.
 
 ## More Information
 
