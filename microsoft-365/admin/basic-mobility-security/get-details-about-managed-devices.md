@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Use Windows PowerShell to get details about Basic Mobility and Security devices in your organization."
+description: "Use Azure AD PowerShell to get details about Basic Mobility and Security devices in your organization."
 ---
 
 # Get details about Basic Mobility and Security managed devices
 
-This article shows you how to use Windows PowerShell to get details about the devices in your organization that you set up for Basic Mobility and Security.
+This article shows you how to use Azure AD PowerShell to get details about the devices in your organization that you set up for Basic Mobility and Security.
 
 Here's a breakdown for the device details available to you.
 
@@ -74,10 +74,10 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/of
    Connect-MsolService -Credential $UserCredential
    ```
 
-### Step 3: Make sure you’re able to run PowerShell scripts
+### Step 3: Make sure you're able to run PowerShell scripts
 
 > [!NOTE]
-> You can skip this step if you’re already set up to run PowerShell scripts.
+> You can skip this step if you're already set up to run PowerShell scripts.
 
 To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable the running of PowerShell scripts.
 
