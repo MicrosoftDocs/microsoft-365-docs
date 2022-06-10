@@ -150,7 +150,7 @@ You will need to have global administrator rights to run the script because the 
 
 ## How to stop and remediate the Outlook Rules and Forms attack
 
-If you find any evidence of either of these attacks, remediation is simple, just delete the rule or form from the mailbox. You can do this with the Outlook client or using remote PowerShell to remove rules.
+If you find any evidence of either of these attacks, remediation is simple, just delete the rule or form from the mailbox. You can do this with the Outlook client or using Exchange PowerShell to remove rules.
 
 ### Using Outlook
 
@@ -166,11 +166,11 @@ If you find any evidence of either of these attacks, remediation is simple, just
 
 ### Using PowerShell
 
-There are two remote PowerShell cmdlets you can use to remove or disable dangerous rules. Just follow the steps.
+There are two Exchange PowerShell cmdlets you can use to remove or disable dangerous rules. Just follow the steps.
 
 #### Steps for mailboxes that are on an Exchange server
 
-1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. Connect to the Exchange server using remote PowerShell or the Exchange Management Shell. Follow the steps in [Connect to Exchange servers using remote PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) or [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) cmdlet.
 
@@ -178,7 +178,7 @@ There are two remote PowerShell cmdlets you can use to remove or disable dangero
 
 #### Steps for mailboxes in Exchange Online
 
-1. Follow the steps in [Connect to Exchange Online using PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Follow the steps in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) cmdlet.
 
@@ -200,7 +200,7 @@ The best way to protect your user accounts, and especially your administrator ac
 
   - **Unusual impersonated activity (by user)**: This policy profiles your environment and triggers alerts when users perform multiple impersonated activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
 
-- Use a tool like [Office 365 Secure Score](https://securescore.office.com/) to manage account security configurations and behaviors.
+- Use a tool like [Office 365 Secure Score](/microsoft-365/security/defender/microsoft-secure-score) to manage account security configurations and behaviors.
 
 ### Second: Keep your Outlook clients current
 
