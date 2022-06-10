@@ -280,3 +280,11 @@ For example, you add an allow entry for the following domain pair:
 - **Infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
+
+## Related articles
+
+- [Admin submissions](admin-submission.md)
+- [Report false positives and false negatives](report-false-positives-and-false-negatives.md)
+- [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md)
+- [Allow or block files in the Tenant Allow/Block List](allow-block-files.md)
+- [Allow or block URLs in the Tenant Allow/Block List](allow-block-urls.md)

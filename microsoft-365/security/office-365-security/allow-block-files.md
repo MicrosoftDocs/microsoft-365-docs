@@ -124,3 +124,10 @@ Remove-TenantAllowBlockListItems -ListType <FileHash> -Ids <"Id1","Id2",..."IdN"
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
+## Related articles
+
+- [Admin submissions](admin-submission.md)
+- [Report false positives and false negatives](report-false-positives-and-false-negatives.md)
+- [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md)
+- [Allow or block emails in the Tenant Allow/Block List](allow-block-email-spoof.md)
+- [Allow or block URLs in the Tenant Allow/Block List](allow-block-urls.md)

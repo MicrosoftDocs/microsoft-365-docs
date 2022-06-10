@@ -54,7 +54,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
 
-- The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
+- The available URL values are described in the [URL syntax for the Tenant Allow/Block List](allow-block-urls#url-syntax-for-the-tenant-allowblock-list) section.
 
 - The Tenant Allow/Block List allows a maximum of 500 entries for senders, 500 entries for URLs, 500 entries for file hashes, and 1024 entries for spoofing (spoofed senders).
 
@@ -69,16 +69,13 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - **Senders, URLs and files**:
-    - To add and remove values from the Tenant Allow/Block List, you need to be a member of
-      - **Organization Management** or **Security Administrator** role group (**Security admin role**)
-      - **Security Operator** role group (**Tenant AllowBlockList Manager**).
+  - To add and remove values from the Tenant Allow/Block List, you need to be a member of
+    - **Organization Management** or **Security Administrator** role group (**Security admin role**)
+    - **Security Operator** role group (**Tenant AllowBlockList Manager**).
     - For read-only access to the Tenant Allow/Block List, you need to be a member of
       - **Global Reader**  role group
       - **Security Reader** role group
-  - **Spoofing**: One of the following combinations:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+      - **View-Only configuration** role group
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -218,7 +215,6 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
 3. Select the entry that you want to remove, and then click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
-<<<<<<< HEAD:microsoft-365/security/office-365-security/manage-tenant-allow-block-list.md
 4. In the warning dialog that appears, click **Delete**.
 =======
 **Entry**: `contoso.com/a/*`
@@ -386,10 +382,8 @@ For example, you add an allow entry for the following domain pair:
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
 
+## Related articles
 
-## What to expect after you add an allow or block entry
-
-After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
-
-We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
->>>>>>> main:microsoft-365/security/office-365-security/tenant-allow-block-list.md
+- [Allow or block files in the Tenant Allow/Block List](allow-block-files.md)
+- [Allow or block emails in the Tenant Allow/Block List](allow-block-email-spoof.md)
+- [Allow or block URLs in the Tenant Allow/Block List](allow-block-urls.md)
