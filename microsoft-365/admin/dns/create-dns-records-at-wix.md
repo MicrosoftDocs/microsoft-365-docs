@@ -198,7 +198,7 @@ Only select this option if your organization uses Skype for Business for online 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-### Add the two required CNAME records
+### Add the two required CNAME records for Skype for Business
 
 1. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor, and enter the values from the first row in the following table.
 

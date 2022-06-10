@@ -1,9 +1,9 @@
 ---
-title: "Import custodians to an Advanced eDiscovery case"
+title: "Import custodians to an eDiscovery (Premium) case"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -14,12 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150 
-description: "Use the bulk-import tool to quickly add multiple custodians and their associated data sources to a case in Advanced eDiscovery."
+description: "Use the bulk-import tool to quickly add multiple custodians and their associated data sources to a case in Microsoft Purview eDiscovery (Premium)."
 ---
 
-# Import custodians to an Advanced eDiscovery case
+# Import custodians to an eDiscovery (Premium) case
 
-For Advanced eDiscovery cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case. The import custodians tool will also validate the CSV file before the import job is created. This means you can fix any errors in the CSV file instead of having to wait until the import job is complete before learning there are errors that prevent a custodian from being added to the case.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+For Microsoft Purview eDiscovery (Premium) cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case. The import custodians tool will also validate the CSV file before the import job is created. This means you can fix any errors in the CSV file instead of having to wait until the import job is complete before learning there are errors that prevent a custodian from being added to the case.
 
 ## Before you import custodians
 
@@ -35,7 +37,7 @@ For Advanced eDiscovery cases that involve many custodians, you can import multi
 
 ## Import custodians
 
-1. Open the Advanced eDiscovery case and select the **Data sources** tab.
+1. Open the eDiscovery (Premium) case and select the **Data sources** tab.
 
 2. Click **Add data source** > **Import custodians**.
 
@@ -57,7 +59,7 @@ For Advanced eDiscovery cases that involve many custodians, you can import multi
 
 7. Once the CSV file has been successfully validated, click **Next** and then click **Import** to start the import job.
 
-After you start the import job, Advanced eDiscovery does the following things:
+After you start the import job, eDiscovery (Premium) does the following things:
 
 - Creates a job named **BulkAddCustodian** on the **Jobs** tab of the case.
 
@@ -82,7 +84,7 @@ After you download the CSV custodian template, you can add custodians and their 
 |||
 
 > [!NOTE]
-> <sup>1</sup> If you put more than 1,000 mailboxes or 100 sites on hold in a case, the system will automatically scale the eDiscovery hold as needed. This means the system automatically adds data locations to multiple hold policies, instead of adding them to a single policy. However, the limit of 10,000 case hold policies per organization still applies. For more information about hold limits, see [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
+> <sup>1</sup> If you put more than 1,000 mailboxes or 100 sites on hold in a case, the system will automatically scale the eDiscovery hold as needed. This means the system automatically adds data locations to multiple hold policies, instead of adding them to a single policy. However, the limit of 10,000 case hold policies per organization still applies. For more information about hold limits, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md#hold-limits).
 <br>
 > <sup>2</sup> When you include TeamsMailbox and YammerMailbox workloads in the CSV file, the group site (TeamSite and YammerSite) are automatically added by default. You don't need to specify TeamsSite and YammerSite separately in the CSV file.
 

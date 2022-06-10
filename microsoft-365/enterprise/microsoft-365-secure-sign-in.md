@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: kelleyvice-msft
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article

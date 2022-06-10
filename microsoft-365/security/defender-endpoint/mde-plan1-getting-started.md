@@ -33,7 +33,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 ## The Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you'll view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you’ll start with the Home page, as shown in the following image:
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you'll view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you'll start with the Home page, as shown in the following image:
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="The portal of Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
@@ -76,7 +76,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Health** > **Message center** | Navigates to the Message center in the Microsoft 365 admin center. The Message center provides information about planned changes. Each message describes what's coming, how it might affect users, and how to manage changes. |  
 | **Permissions & roles** | Enables you to grant permissions to use the Microsoft 365 Defender portal. Permissions are granted through roles in Azure Active Directory (Azure AD). Select a role, and a flyout pane appears. The flyout contains a link to Azure AD where you can add or remove members in a role group. <br/><br/> To learn more, see [Manage portal access using role-based access control](rbac.md).  |
 | **Settings** | Navigates to general settings for your Microsoft 365 Defender portal (listed as **Security center**) and Defender for Endpoint (listed as **Endpoints**). <br/><br/> To learn more, see [Settings](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. <br/><br/> To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
+| **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft Purview compliance portal. <br/><br/> To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
 > [!TIP]
 > To learn more, see the [Microsoft 365 Defender portal overview](../defender/microsoft-365-security-center-mde.md).
@@ -98,7 +98,7 @@ Use the **Alerts**, **Devices**, and **Users** tabs to view more information, su
 
 ## Manage devices
 
-To view and manage your organization’s devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You’ll see a list of devices as shown in the following image:
+To view and manage your organization's devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You'll see a list of devices as shown in the following image:
 
 :::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="Device inventory" lightbox="../../media/mde-p1/device-inventory.png":::
 

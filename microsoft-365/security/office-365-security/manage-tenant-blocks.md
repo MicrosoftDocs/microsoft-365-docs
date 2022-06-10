@@ -1,18 +1,18 @@
 ---
 title: Manage your blocks in the Tenant Allow/Block List
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 description: Admins can learn how to configure blocks in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
@@ -21,18 +21,18 @@ ms.prod: m365-security
 
 # Add blocks in the Tenant Allow/Block List
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## Use the Microsoft 365 Defender portal 
+## Use the Microsoft 365 Defender portal
 
 ### Create block sender entries in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. On the **Tenant Allow/Block List** page, verify that the **Senders** tab is selected, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
 
@@ -49,11 +49,11 @@ ms.prod: m365-security
 4. When you're finished, click **Add**.
 
 > [!NOTE]
-> The emails from these senders will be blocked as *spam*. 
+> The emails from these senders will be blocked as _high confidence spam_ (SCL = 9).
 
 ### Create block URL entries in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
 
@@ -70,11 +70,11 @@ ms.prod: m365-security
 4. When you're finished, click **Add**.
 
 > [!NOTE]
-> The emails containing these URLs will be blocked as *phish*. 
+> The emails containing these URLs will be blocked as _phish_.
 
 ### Create block file entries in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. On the **Tenant Allow/Block List** page, select the **Files** tab, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
 
@@ -91,7 +91,7 @@ ms.prod: m365-security
 4. When you're finished, click **Add**.
 
 > [!NOTE]
-> The emails containing these files will be blocked as *malware*. 
+> The emails containing these files will be blocked as _malware_.
 
 ### Create spoofed sender block entries
 
@@ -111,9 +111,12 @@ ms.prod: m365-security
    - **Spoof type**: Select one of the following values:
      - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **External**: The spoofed sender is in an external domain.
-   - **Action**: Select **Allow** or **Block**.
+   - **Action**: Select **Block**.
 
 4. When you're finished, click **Add**.
+
+> [!NOTE]
+> The emails from these senders will be blocked as _phish_.
 
 ## Use PowerShell
 
@@ -145,7 +148,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### Add spoofed sender block entries 
+### Add spoofed sender block entries
 
 To add spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
 

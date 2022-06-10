@@ -1,5 +1,5 @@
 ---
-title: "Enable sensitivity labels for Office files in SharePoint and OneDrive"
+title: "Enable sensitivity labels for Office files"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -23,9 +23,11 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Enable built-in labeling for [supported Office files](sensitivity-labels-office-apps.md#office-file-types-supported) in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users will see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
 
-Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work for these files.
+Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, Microsoft Purview data loss prevention, search, and other collaborative features won't work for these files.
 
 After you enable sensitivity labels for Office files in SharePoint and OneDrive, for new and changed files that have a sensitivity label that applies encryption with a cloud-based key (and doesn't use [Double Key Encryption](double-key-encryption.md):
 
@@ -39,10 +41,10 @@ After you enable sensitivity labels for Office files in SharePoint and OneDrive,
 
 - External users can access documents that are labeled with encryption by using guest accounts. For more information, see [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
-- Office 365 eDiscovery supports full-text search for these files and Data Loss Prevention (DLP) policies support content in these files.
+- Office 365 eDiscovery supports full-text search for these files and data loss prevention (DLP) policies support content in these files.
 
 > [!NOTE]
-> If encryption has been applied with an on-premises key (a key management topology often referred to as "hold your own key" or HYOK), or by using [Double Key Encryption](double-key-encryption.md), the service behavior for processing the file contents doesn't change. So for these files, coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work.
+> If encryption has been applied with an on-premises key (a key management topology often referred to as "hold your own key" or HYOK), or by using [Double Key Encryption](double-key-encryption.md), the service behavior for processing the file contents doesn't change. So for these files, coauthoring, eDiscovery, data loss prevention, search, and other collaborative features won't work.
 >
 > The SharePoint and OneDrive behavior also doesn't change for existing files in these locations that are labeled with encryption using a single Azure-based key. For these files to benefit from the new capabilities after you enable sensitivity labels for Office files in SharePoint and OneDrive, the files must be either downloaded and uploaded again, or edited.
 
@@ -74,7 +76,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 - SharePoint and OneDrive don't automatically apply sensitivity labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, for the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, complete these tasks:
 
-    1. Make sure you have [migrated the Azure Information Protection labels](/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels and [published them](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) from the Microsoft 365 compliance center.
+    1. Make sure you have [migrated the Azure Information Protection labels](/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels and [published them](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) from the Microsoft Purview compliance portal.
     2. Download the labeled files and then upload them to their original location in SharePoint or OneDrive.
 
 - SharePoint and OneDrive can't process encrypted files when the label that applied the encryption has any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
@@ -89,7 +91,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 - If a document is labeled while it's [checked out in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), the **Sensitivity** column in the document library won't display the label name until the document is checked in and next opened in SharePoint.
 
 - If a labeled and encrypted document is downloaded from SharePoint or OneDrive by an app or service that uses a service principal name, and then uploaded again with a label that applies different encryption settings, the upload will fail. An example scenario is Microsoft Defender for Cloud Apps changes a sensitivity label on a file from **Confidential** to **Highly Confidential**, or from **Confidential** to **General**.
-    
+
     The upload doesn't fail if the app or service first runs the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet, as explained in the [Remove encryption for a labeled document](#remove-encryption-for-a-labeled-document) section. Or, before the upload, the original file is deleted, or the file name is changed.
 
 - Users might experience delays in being able to open encrypted documents in the following Save As scenario: Using a desktop version of Office, a user chooses Save As for a document that has a sensitivity label that applies encryption. The user selects SharePoint or OneDrive for the location, and then immediately tries to open that document in Office for the web. If the service is still processing the encryption, the user sees a message that the document must be opened in their desktop app. If they try again in a couple of minutes, the document successfully opens in Office for the web.
@@ -99,7 +101,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 - For encrypted documents in Office for the web, copying to the clipboard and screen captures are not prevented. For more information, see [Can Rights Management prevent screen captures?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - By default, Office desktop apps and mobile apps don't support co-authoring for files that are labeled with encryption. These apps continue to open labeled and encrypted files in exclusive editing mode.
-    
+
     > [!NOTE]
     > Co-authoring is now supported for Windows and macOS. For more information, see [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
 
@@ -112,21 +114,19 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
   - Encryption that was applied by using [Double Key Encryption](double-key-encryption.md)
   - Encryption that was applied independently from a label, for example, by directly applying a Rights Management protection template.
 
-- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) are not supported and display the original language only.
+- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) are not supported and display the original language only.
 
 - If you delete a label that's been applied to a document in SharePoint or OneDrive, rather than remove the label from the applicable label policy, the document when downloaded won't be labeled or encrypted. In comparison, if the labeled document is stored outside SharePoint or OneDrive, the document remains encrypted if the label is deleted. Note that although you might delete labels during a testing phase, it's very rare to delete a label in a production environment.
 
 ## How to enable sensitivity labels for SharePoint and OneDrive (opt-in)
 
-You can enable the new capabilities by using the Microsoft 365 compliance center, or by using PowerShell. As with all tenant-level configuration changes for SharePoint and OneDrive, it takes about 15 minutes for the change to take effect.
+You can enable the new capabilities by using the Microsoft Purview compliance portal, or by using PowerShell. As with all tenant-level configuration changes for SharePoint and OneDrive, it takes about 15 minutes for the change to take effect.
 
-### Use the compliance center to enable support for sensitivity labels
+### Use the Microsoft Purview compliance portal to enable support for sensitivity labels
 
 This option is the easiest way to enable sensitivity labels for SharePoint and OneDrive, but you must sign in as a global administrator for your tenant.
 
-1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) as a global administrator, and navigate to **Solutions** > **Information protection**
-
-    If you don't immediately see this option, first select **Show all**.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a global administrator, and navigate to **Solutions** > **Information protection** > **Labels**
 
 2. If you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
 
@@ -139,7 +139,7 @@ This option is the easiest way to enable sensitivity labels for SharePoint and O
 
 ### Use PowerShell to enable support for sensitivity labels
 
-As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet from SharePoint Online PowerShell.
+As an alternative to using the Microsoft Purview compliance portal, you can enable support for sensitivity labels by using the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet from SharePoint Online PowerShell.
 
 If you have Microsoft 365 Multi-Geo, you must use PowerShell to enable this support for all your geo-locations.
 
@@ -223,7 +223,7 @@ Search won't find labeled documents in a compressed file, such as a .zip file.
 
 To get the GUIDs for your sensitivity labels, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet:
 
-1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. First, [connect to Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
     For example, in a PowerShell session that you run as administrator, sign in with a global administrator account.
 
