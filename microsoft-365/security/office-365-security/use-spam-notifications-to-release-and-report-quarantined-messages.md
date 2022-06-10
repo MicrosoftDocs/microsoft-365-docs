@@ -47,8 +47,6 @@ For shared mailboxes, quarantine notifications are supported only for users who 
 
 > [!NOTE]
 > By default, messages that are quarantined as high confidence phishing, malware, by mail flow rules (also known as transport rules), or Safe Attachments policies in Defender for Office 365 are only available to admins (by default, the AdminOnlyAccessPolicy quarantine policy is used). For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
->
-> Currently, quarantine notifications are not supported for groups.
 
 When you receive a quarantine notification, the following information is always available for each quarantined message:
 
