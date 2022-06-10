@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the *new experience* or the existing *classic experience*. EDM SITs can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article helps you understand the differences between the two experiences and helps you pick the right one for your needs.
 
 ## Before you begin
 
@@ -72,43 +72,44 @@ See the [data loss prevention service description](/office365/servicedescription
 |Microsoft 365 Defender portal|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft Purview compliance portal|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
-## EDM new experience vs. classic experience
+## New EDM experience
 
 The new EDM experience combines the functionality of the EDM schema and EDM sensitive info types wizards into a single user experience. The new experience adds:
 
 ### Simplified workflow
 
-•	Simplified EDM SIT (Sensitive Information Type) creation flow, which combines the two EDM wizards (create schema, create EDM SIT) into a single flow.
+You can view the status of an EDM SIT in the creation process.
 
-•	Addition of status to the EDM SIT page, where users can see whether a data store has been uploaded against a schema or its progress, etc. The full list of available statuses available are:
-o	Data not yet uploaded
-o	Data upload %
-o	Data upload complete
-o	Indexing complete
-o	Data upload failed
-o	Data indexing failed
+- Data not yet uploaded
+- Data upload percent
+- Data upload complete
+- Indexing complete
+- Data upload failed
+- Data indexing failed
 
 
 ### Automated schema and SIT creation
 
-•	Automation to save time, reduce manual work: 
-o	Users can elect to upload a sample data file that looks similar to the large EDM data table (that will be salted/hashed/uploaded as the final step in creating a working EDM SIT, outside of the UI). 
-	This sample file should contain non-sensitive data (it won’t be hashed nor used for anything other than configuring the EDM SIT; after the EDM SIT is created, this data will no longer be retained nor accessible). 
-	We will automatically extract the field names so it’s not necessary to manually input this information.
-o	We will automatically validate that the sample data is in the correct format (CSV, TSV, PSV) and display an error for invalidly formatted data (including mismatched fields across rows).
-o	We will automatically detect and suggest the best matching SITs for each field. We will also categorize how well that SIT matches the data and allow admins to easily view which sample data was detected by that SIT (i.e., “matched”).
-o	We will also automatically generate the EDM detection rules (one for each field selected as primary).
-	By default, we will only provide high and medium confidence rules, both of which will include all other fields that were uploaded as corroborative evidence. Users can elect to add a low confidence rule and all inputs are fully configurable.
+In the new experience you can provide a sample data file that has the same header values and enough rows (20-30) of representative data to the system. The system validates the format and creates the schema based on the headers. You then identify the primary fields in the schema and the system recommends the SITs that best match it to associate with the primary field. If you don't want to upload the file, you can enter the same values manually in the UI.
+
+> [!IMPORTANT]
+> Be sure to use sample data values that aren't sensitive, but are in the same format as your actual sensitive data. Using non-sensitive data is essential because the sample data file doesn't get encrypted and hashed when you upload it like the actual sensitive information table does. The data from the sample data file is not retained or accessible once the EDM SIT is created.
+
+The system generates the EDM SIT detection rules, one for each primary field. Based on detection of the primary fields the system creates high and medium confidence rules using all the other fields as corroborative evidence. You can add low confidence rules if you want. 
+
+### Additional guardrails to ensure better performance
+
+<!--As the Azure-based EDM cloud service leverages a shared infrastructure, a misconfigured EDM SIT that triggers excessive EDM lookups could impact EDM performance for other customers if it wasn't controlled. This is prevented by throttling instances where EDM is misconfigured in a way that would cause excessive lookups.--> 
+
+The system warns you if it finds a primary field mapped to SIT that detects a broad range of values, called a *loosely defined SIT*.  This can cause the system to perform lookups on large numbers of strings that aren't related to the kind of content that your looking for. Mapping between these types of SITs and primary fields can result in false negatives and decrease performance.
+
+> [!NOTE]
+> As *loosely defined SIT*, like a custom one that looks for all personal identification numbers, has detection rules that allow for greater variability in the items detected. A *strongly defined SIT*, like U.S. Social Security Number, has detection rules that only allow a narrow, well defined set of items to be detected. 
+
+The system will also warn you if the primary field you select occurs multiple times in a large number of rows. This can cause large numbers of result sets to be returned and processed, which could cause a time out.
 
 
-
-### Additional guardrails
-Guardrails to reduce input errors and help avoid missed detections due to throttling and timeouts:
-o	As the Azure-based EDM cloud service leverages a shared infrastructure, a misconfigured EDM SIT that triggers excessive EDM lookups could impact EDM performance for other customers if it wasn't controlled. This is prevented by throttling instances where EDM is misconfigured in a way that would cause excessive lookups. 
-o	We will also automatically warn administrators if they map a “loosely defined” SIT to a primary (indexed) field, which would cause the system to have to perform EDM lookups on large amounts of strings not related to the kind of content that's being targeted, which could result in missed detections. 
-o	Similarly, we will also warn users if the primary field selected is not unique enough, as EDM lookups for values that are common to large numbers of rows can result in large EDM record sets being returned which could take longer to process than the allowed timeouts.
-
-
+## Choosing the right EDM SIT creation experience for you
 
 You can toggle back and forth between the new and classic experiences, but we recommend using the new experience unless your needs fall into one or more of these four use cases.
 

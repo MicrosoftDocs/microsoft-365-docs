@@ -19,6 +19,8 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 ---
 
+display an error for invalidly formatted data (including mismatched fields across rows).
+
 # Get started with exact data match based sensitive information types (new experience)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
