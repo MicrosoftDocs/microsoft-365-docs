@@ -1,5 +1,5 @@
 ---
-title: "Get started with exact data match based sensitive information types (new experience)"
+title: "Get started with EDM SITs (new experience)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -21,11 +21,14 @@ ms.custom: seo-marvel-apr2020
 
 display an error for invalidly formatted data (including mismatched fields across rows).
 
-# Get started with exact data match based sensitive information types (new experience)
+# Get started with EDM SITs (new experience)
+
+Applies to: New experience, see [Get started with exact data match based sensitive information types overview](sit-get-started-exact-data-match-based-sits-overview.md)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
+
 
 ## The work flow at a glance
 
