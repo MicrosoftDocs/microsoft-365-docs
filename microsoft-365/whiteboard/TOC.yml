@@ -1,31 +1,8 @@
     - name: Microsoft Whiteboard
       href: index.md   
 
-    - name: Whiteboard for organizations
-      items:    
-        - name: Set up Whiteboard
-          href: set-up-organizations.md 
-        - name: Deploy on Windows 10 devices
-          href: install-on-windows-10.md
-        - name: Licensing
-          href: licensing.md
-        - name: Compliance standards
-          href: compliance.md
-        - name: Data retention
-          href: data-retention-azure.md
-        - name: FAQ
-          href: faq.md
-
-    - name: Whiteboard for Government
-      items:
-        - name: Set up Whiteboard
-          href: set-up-government.md
-        - name: Manage clients
-          href: manage-clients.md
-        - name: Manage sharing
-          href: manage-sharing.md           
-        - name: Manage data
-          href: manage-data-odb.md
+    - name: Enable Whiteboard access for GCC - High
+      href: enable-whiteboard-access-gcc-high.md 
 
     - name: Whiteboard PowerShell
       href: /powershell/module/whiteboard   
