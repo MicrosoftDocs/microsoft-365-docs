@@ -39,7 +39,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) h
 * **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Also, please refer to your computer manufacturer's guides on how to enable virtualization technology.
-To learn more about Microsoft 365 apps update channels, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels).
+To learn more about Microsoft 365 Apps update channels, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels).
 
 ### Licensing requirements
 
