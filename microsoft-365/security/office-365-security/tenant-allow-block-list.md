@@ -75,7 +75,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
     - For read-only access to the Tenant Allow/Block List, you need to be a member of
       - **Global Reader**  role group
       - **Security Reader** role group
-      - **View-Only Configuration* role group.
+      - **View-Only Configuration** role group.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
