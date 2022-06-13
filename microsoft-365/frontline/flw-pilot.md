@@ -72,7 +72,7 @@ Determine what devices you'll support. For example, you can use the Teams mobile
 [Create the teams](/microsoftteams/get-started-with-teams-create-your-first-teams-and-channels) for your pilot, and make sure they have the apps you need for the scenarios you are implementing. For example, in addition to the standard Teams communications apps like Chat, your scenario might call for apps like:
 
 - [Bookings](bookings-virtual-visits.md) to schedule appointments with clients or customers.
-- [Shifts](/microsoftteams/expand-teams-across-your-org/shifts-for-teams-landing-page) to schedule your frontline workforce.
+- [Shifts](shifts-for-teams-landing-page.md) to schedule your frontline workforce.
 - [Viva Connections](/viva/connections/guide-to-setting-up-viva-connections) to engage and inform your frontline workers.
 - [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) to build learning and training experiences for employees.
 - [Yammer](/yammer) to connect your workforce across your company. See: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
