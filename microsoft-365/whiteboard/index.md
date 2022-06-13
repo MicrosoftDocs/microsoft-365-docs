@@ -31,6 +31,16 @@ The resources in this section help you learn more about what Microsoft Whiteboar
 |Watch videos to explore helpful tips|[Microsoft Whiteboard YouTube channel](https://www.youtube.com/c/MicrosoftWhiteboard/videos/Microsoft%20Whiteboard)|
 |Find Microsoft Whiteboard guidance for end users|[Microsoft Whiteboard help](https://support.microsoft.com/en-us/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
 
+
+## Setup and management
+
+The resources in this section help the admin in your organization to set up and configure Microsoft Whiteboard in your Microsoft 365 environment.
+
+| If you're looking for this information: | Go to this resource: |
+|:-----|:-----|
+|Learn how to set up and manage Whiteboard for US Government - GCC High|[Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md)|
+
+<!--- 
 ## Setup and management
 
 The resources in this section help the admin in your organization to set up and configure Microsoft Whiteboard in your Microsoft 365 environment.
@@ -39,8 +49,9 @@ The resources in this section help the admin in your organization to set up and 
 |:-----|:-----|
 |Learn how to set up and configure Microsoft Whiteboard for your organization|[Set up Microsoft Whiteboard for organizations](set-up-organizations.md)|
 |Learn how to set up and configure Microsoft Whiteboard for US Government - GCC|[Set up Microsoft Whiteboard for Government](set-up-government.md)|
+--->
 
-## Whiteboard PowerShell
+## Management Whiteboard using PowerShell
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
