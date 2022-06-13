@@ -38,6 +38,7 @@ Running a pilot program is part of the overall adoption process. For more inform
 - [Microsoft 365 Adoption best practices](https://adoption.microsoft.com/files/assets/M365AdoptionGuide.pdf).
 - [Microsoft Teams Adoption](https://adoption.microsoft.com/microsoft-teams/)
 - [Enabling your frontline workers with Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
+- [3 ways to support frontline workers in a hybrid world](https://www.microsoft.com/microsoft-365/blog/2021/10/19/3-ways-to-support-frontline-workers-in-a-hybrid-world/)
 
 We recommend that you prepare for deployment by completing this 30-minute learning path: [Prepare for a Teams deployment with Microsoft 365](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/)
 
@@ -64,17 +65,17 @@ To get ready for your rollout, here's what you need to do:
 
 ## Step 2: Configure device support
 
-Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients.md)
+Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients.md).
 
 ## Step 3: Set up teams and apps
 
 [Create the teams](/microsoftteams/get-started-with-teams-create-your-first-teams-and-channels) for your pilot, and make sure they have the apps you need for the scenarios you are implementing. For example, in addition to the standard Teams communications apps like Chat, your scenario might call for apps like:
 
-- Bookings
-- Shifts
-- Reaching Frontline Workers with Viva Connections: [Guide to setting up Viva Connections](/viva/connections/guide-to-setting-up-viva-connections)
-- Build [Learning and Training Experiences for Employees](/sharepoint/build-learning-and-training-experiences-for-employees)
-- Yammer: [Yammer Ten Communities](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fadoption.microsoft.com%2Ffiles%2Fyammer%2FYammer%2520Ten%2520Communities.pptx&wdOrigin=BROWSELINK) (live.com) and [Yammer Lookbook](https://adoption.microsoft.com/files/yammer/Yammer Lookbook.pdf) (microsoft.com) (Yammer for engaging the frontline)
+- [Bookings](bookings-virtual-visits.md) to schedule appointments with clients or customers.
+- [Shifts](/microsoftteams/expand-teams-across-your-org/shifts-for-teams-landing-page) to schedule your frontline workforce.
+- [Viva Connections](/viva/connections/guide-to-setting-up-viva-connections) to engage and inform your frontline workers.
+- [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) to build learning and training experiences for employees.
+- [Yammer](/yammer) to connect your workforce across your company. See: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
 
 ## Step 4: Set up email
 
