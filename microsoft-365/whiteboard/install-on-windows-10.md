@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to remotely install Microsoft Whiteboard on Windows 10 devices.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
