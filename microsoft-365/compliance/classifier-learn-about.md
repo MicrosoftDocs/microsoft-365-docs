@@ -96,8 +96,6 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Procurement**: Detects content in categories of bidding, quoting, purchasing, and paying for supply of goods and services. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
 
-- **Profanity**: Detects a specific category of offensive language text items that contain expressions that embarrass most people.
-
 - **Resumes**: detects docx, .pdf, .rtf, .txt items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
 
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
@@ -107,9 +105,8 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
-- **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property.
 - **Profanity**: Detects a specific category of offensive language text items that contain expressions that embarrass most people. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
-- **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
 These appear in the **Microsoft Purview compliance portal** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
