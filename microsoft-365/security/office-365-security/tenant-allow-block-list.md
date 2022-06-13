@@ -68,14 +68,16 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-    - To add and remove values from the Tenant Allow/Block List, you need to be a member of
-      - **Organization Management** or **Security Administrator** role group (**Security admin role**)
-      - **Security Operator** role group (**Tenant AllowBlockList Manager**).
-    - For read-only access to the Tenant Allow/Block List, you need to be a member of
-      - **Global Reader**  role group
-      - **Security Reader** role group
-      - **View-Only Configuration** role group.
+- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
+  - To add and remove entries from the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Organization Management** (the **Security admin** role).
+    - **Security Administrator** (the **Security admin** role).
+    - **Security Operator** role group (the **Tenant AllowBlockList Manager** role).
+
+  - For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Global Reader** role group.
+    - **Security Reader** role group.
+    - **View-Only Configuration** role group.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -477,7 +479,6 @@ For example, you add an allow entry for the following domain pair:
 - **Infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
-
 
 ## What to expect after you add an allow or block entry
 
