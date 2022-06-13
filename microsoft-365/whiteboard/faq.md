@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Read about common questions and answers about Microsoft Whiteboard.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

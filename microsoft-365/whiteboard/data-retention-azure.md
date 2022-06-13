@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about data retention for Microsoft Whiteboard.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

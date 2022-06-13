@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: m365initiative-whiteboard
 ms.localizationpriority: medium
 description: Learn about compliance standards for Microsoft Whiteboard.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
