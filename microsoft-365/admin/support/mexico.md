@@ -32,6 +32,6 @@ Spanish: Mon-Fri 9 AM-5 PM
 
 Spanish: 24 hours a day, 7 days a week
 
-Alternative Phone Number: 55 4738 6567
+Alternative Phone Number: 52 4738 6567
 
 Local call charges apply
