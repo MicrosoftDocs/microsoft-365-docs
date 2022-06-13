@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: m365initiative-whiteboard
 ms.localizationpriority: medium
 description: Learn about new and upcoming features in Microsoft Whiteboard.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

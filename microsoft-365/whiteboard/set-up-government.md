@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to set up Microsoft Whiteboard for US Government - GCC.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

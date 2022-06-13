@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard in OneDrive for Business.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
