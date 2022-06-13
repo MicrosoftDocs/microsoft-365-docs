@@ -21,7 +21,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 >[!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) High environments.
 
-Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Azure Active Directory Admin Center** > **Enterprise Applications**.
+Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Azure Active Directory admin center** > **Enterprise applications**.
 
 The following URLs are required:
 
@@ -60,7 +60,7 @@ To enable or disable Whiteboard for your tenant, do the following:
 The change should take approximately 60 minutes to apply across your tenancy. If you don't see this option, you will need to update the module.
 
 >[!NOTE]
-> Whiteboard is enabled by default. If it has been disabled in the Azure Active Directory enterprise applications, then Whiteboard on OneDrive for Business will not work.
+> By default, Whiteboard is enabled. If it has been disabled in the Azure Active Directory enterprise applications, then Whiteboard on OneDrive for Business will not work.
 
 ## Show or hide Whiteboard
 
