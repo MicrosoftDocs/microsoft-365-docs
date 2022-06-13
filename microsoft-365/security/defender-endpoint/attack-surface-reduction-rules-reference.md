@@ -23,7 +23,7 @@ ms.date: 02/04/2022
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -37,17 +37,15 @@ This article provides information about attack reduction rules:
 - [Supported operating system versions](#supported-operating-systems)
 - [Supported configuration management systems](#supported-configuration-management-systems)
 - [Per-rule alert and notification details](#per-rule-alert-and-notification-details)
-- [ASR rules and GUIDs matrix](#asr-rules-and-guids-matrix)
+- [ASR rule to GUID matrix](#asr-rule-to-guid-matrix)
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
-  - Rule descriptions
-  - Configuration management system rule names
 
 ## Supported operating systems
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
 
-> [!Note]
+> [!NOTE]
 >
 > Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
@@ -55,7 +53,7 @@ The following table lists the supported operating systems for rules that are cur
 
 | Rule name| Windows&nbsp;11 <br>and<br> Windows&nbsp;10 | Windows&nbsp;Server <br> 2022 <br>and<br>  Windows&nbsp;Server <br> 2019 | Windows Server | Windows&nbsp;Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows&nbsp;Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Channel) or later | Y | Y |
+| [Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Enterprise Channel) or later | Y | Y |
 | [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y <br> version 1809 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
 | [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
@@ -110,11 +108,11 @@ Links to information about configuration management system versions referenced i
 
 ## Per rule alert and notification details
 
-Toast notifications are generated for all rules in Block mode. Rules in any other mode will not generate toast notifications
+Toast notifications are generated for all rules in Block mode. Rules in any other mode won't generate toast notifications
 
 For rules with the "Rule State" specified:
 
-- ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level will not generate alerts for any <ASR Rule, Rule State> combinations
+- ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level won't generate alerts for any <ASR Rule, Rule State> combinations
 - EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
 
 | Rule name: | Rule state: | Generates alerts in EDR? <br> (Yes&nbsp;\|&nbsp;No) | Generates toast notifications? <br> (Yes&nbsp;\|&nbsp;No) |
@@ -137,7 +135,7 @@ For rules with the "Rule State" specified:
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
   
-## ASR rules and GUIDs matrix
+## ASR rule to GUID matrix
 
 | Rule Name | Rule GUID |
 |:-----|:-----|
@@ -160,16 +158,16 @@ For rules with the "Rule State" specified:
 
 ## ASR rule modes
 
-- **Not configured** or **Disable**: This is the state in which the ASR rule has not been enabled or has been disabled. The code for this state = 0.
-- **Block**: This is the state in which the ASR rule is enabled. The code for this state is 1.
-- **Audit**: This is the state in which the ASR rule is evaluated for its impactive behavior toward the organization or environment in which it is deployed. The code for this state is 2.
-- **Warn** This is the state in which the ASR rule is enabled and presents a notification to the end-user, but permits the end-user to bypass the block. The code for this state is 6.
+- **Not configured** or **Disable**: The state in which the ASR rule hasn't been enabled or has been disabled. The code for this state = 0.
+- **Block**: The state in which the ASR rule is enabled. The code for this state is 1.
+- **Audit**: The state in which the ASR rule is evaluated for the effect it would have on the organization or environment if enabled (set to block or warn). The code for this state is 2.
+- **Warn** The state in which the ASR rule is enabled and presents a notification to the end-user, but permits the end-user to bypass the block. The code for this state is 6.
 
 _Warn mode_ is a block-mode type that alerts users about potentially risky actions. Users can choose to bypass the block warning message and allow the underlying action. Users can select **OK** to enforce the block, or select the bypass option - **Unblock** - through the end-user pop-up toast notification that is generated at the time of the block. After the warning is unblocked, the operation is allowed until the next time the warning message occurs, at which time the end-user will need to reperform the action.
 
-If the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
+When the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
 
-You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
+You can also set a rule in warn mode via PowerShell by specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -181,7 +179,7 @@ You can also set a rule in warn mode via PowerShell by simply specifying the Att
 
 This rule prevents an application from writing a vulnerable signed driver to disk. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Vulnerable signed drivers enable attackers to disable or circumvent security solutions, eventually leading to system compromise.
 
-The **Block abuse of exploited vulnerable signed drivers** rule does not block a driver already existing on the system from being loaded.
+The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a driver already existing on the system from being loaded.
 
 > [!NOTE]
 >
@@ -194,7 +192,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Intune Name: `Block abuse of exploited vulnerable signed drivers` (not yet available)
+Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
 Configuration Manager name: Not yet available
   
@@ -212,7 +210,7 @@ Dependencies: none provided by engineering
 
 This rule prevents attacks by blocking Adobe Reader from creating processes.
 
-Through social engineering or exploits, malware can download and launch payloads, and break out of Adobe Reader. By blocking child processes from being generated by Adobe Reader, malware attempting to use it as a vector are prevented from spreading.
+Malware can download and launch payloads and break out of Adobe Reader through social engineering or exploits. By blocking child processes from being generated by Adobe Reader, malware attempting to use Adobe Reader as an attack vector are prevented from spreading.
 
 Intune name: `Process creation from Adobe Reader (beta)`
 
@@ -250,7 +248,7 @@ Dependencies: MDAV
 
 This rule helps prevent credential stealing by locking down Local Security Authority Subsystem Service (LSASS).
 
-LSASS authenticates users who sign in on a Windows computer. Microsoft Defender Credential Guard in Windows normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
+LSASS authenticates users who sign in on a Windows computer. Microsoft Defender Credential Guard in Windows normally prevents attempts to extract credentials from LSASS. Some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
@@ -329,7 +327,7 @@ This rule detects suspicious properties within an obfuscated script.
 > [!IMPORTANT]
 > PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to the large-scale FP issues faced in the past.
 
-Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
+Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which hampers close scrutiny by humans and security software.
 
 > [!IMPORTANT]
 > Due to the high number of false positives, this rule does not currently detect PowerShell scripts; this is a temporary solution. The rule will be updated and start redetecting PowerShell scripts soon.
@@ -454,7 +452,7 @@ Dependencies: MDAV, RPC
 
 ### Block process creations originating from PSExec and WMI commands
 
-This rule blocks processes created through [PsExec](/sysinternals/downloads/psexec) and [WMI](/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code, so there is a risk of malware abusing this functionality for command and control purposes, or to spread an infection throughout an organization's network.
+This rule blocks processes created through [PsExec](/sysinternals/downloads/psexec) and [WMI](/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code. There's a risk of malware abusing functionality of PsExec and WMI for command and control purposes, or to spread an infection throughout an organization's network.
 
 > [!WARNING]
 > Only use this rule if you're managing your devices with [Intune](/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.
@@ -475,6 +473,9 @@ Dependencies: MDAV
 ### Block untrusted and unsigned processes that run from USB
 
 With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
+
+> [!IMPORTANT]
+> Files copied from the USB to the disk drive will be blocked by this rule if and when it's about to be executed on the disk drive.
 
 Intune name: `Untrusted and unsigned processes that run from USB`
 
@@ -517,7 +518,7 @@ Dependencies: MDAV, AMSI
 
 ### Use advanced protection against ransomware
 
-This rule provides an extra layer of protection against ransomware. It uses both client and cloud heuristics to determine whether a file resembles ransomware. This rule does not block files that have one or more of the following characteristics:
+This rule provides an extra layer of protection against ransomware. It uses both client and cloud heuristics to determine whether a file resembles ransomware. This rule doesn't block files that have one or more of the following characteristics:
 
 - The file has already been found to be unharmful in the Microsoft cloud.
 - The file is a valid signed file.
