@@ -69,7 +69,7 @@ Determine what devices you'll support. For example, you can use the Teams mobile
 
 ## Step 3: Set up teams and apps
 
-[Create the teams](/microsoftteams/get-started-with-teams-create-your-first-teams-and-channels) for your pilot, and make sure they have the apps you need for the scenarios you are implementing. For example, in addition to the standard Teams communications apps like Chat, your scenario might call for apps like:
+[Create the teams](/microsoftteams/get-started-with-teams-create-your-first-teams-and-channels) for your pilot, and make sure they have the apps you need for the [scenarios](/flw-overview.md#choose-your-scenarios) you are implementing. For example, in addition to the standard Teams communications apps like Chat, your scenario might call for apps like:
 
 - [Bookings](bookings-virtual-visits.md) to schedule appointments with clients or customers.
 - [Shifts](shifts-for-teams-landing-page.md) to schedule your frontline workforce.
