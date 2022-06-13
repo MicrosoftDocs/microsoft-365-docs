@@ -37,7 +37,7 @@ Defender for Cloud Apps alerts will continue to appear in Microsoft 365 Defender
 
 Take a look in Microsoft 365 Defender at <https://security.microsoft.com>.
 
-Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
+Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## Quick reference
 
