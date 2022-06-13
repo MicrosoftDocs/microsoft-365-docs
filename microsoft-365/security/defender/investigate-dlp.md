@@ -25,7 +25,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender portal. You can manage DLP incidents along with security incidents from  **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can do these additional actions:
+Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender portal. You can manage DLP incidents along with security incidents from  **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
 
 - View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
@@ -38,7 +38,7 @@ You can also leverage the Microsoft 365 Defender connector in Microsoft Sentinel
 
 ## Licensing requirements
 
-To be eligible for investigating Microsoft Purview Data Loss Prevention incidents in the Microsoft 365 Defender portal, you need a license from one of the following subscriptions: 
+To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft 365 Defender portal, you need a license from one of the following subscriptions: 
 
 - Microsoft Office 365 E5/A5
 - Microsoft 365 E5/A5
@@ -60,7 +60,7 @@ Before you start, [turn on alerts for all your DLP policies](microsoft-365/compl
 
 5. View the **Alert story** for details about policy and the sensitive information types detected in the alert. Select the event in the **Related Events** section to see the user activity details.
 
-6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started?view=o365-worldwide#roles" target="_blank">here</a>).
+6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">here</a>).
 
 7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and Devices.
 
