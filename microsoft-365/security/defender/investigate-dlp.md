@@ -48,7 +48,7 @@ To be eligible for investigating Microsoft Purview Data Loss Prevention incident
 
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
-Before you start, <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide#alert-configuration-experience" target="_blank">turn on alerts for all your DLP policies</a> in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview Compliance Center</a>.
+Before you start, [turn on alerts for all your DLP policies](dlp-configure-view-alerts-policies.md#alert-configuration-experience)in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview Compliance Center</a>.
 
 1. Go to the Microsoft 365 Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
