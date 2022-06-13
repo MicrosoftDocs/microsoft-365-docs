@@ -295,7 +295,7 @@ No known issues
 
 ### What's new
 - Device control support added for Windows Portable Devices
-- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Block potentially unwanted applications with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).)
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
 - Improvements to the behavior monitoring engine
 
@@ -719,6 +719,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220603.3</summary>
+
+&ensp;Package version: **20220603.3**<br/>
+&ensp;Platform version: **4.18.2203.5**<br/>
+&ensp;Engine version: **1.1.19200.6**<br/>
+&ensp;Signature version: **1.367.1009.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220506.6</summary>
 
 &ensp;Package version: **20220506.6**<br/>
@@ -1030,7 +1045,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 | [Microsoft Defender for Endpoint update for EDR Sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | You can update the EDR sensor (MsSense.exe) that is included in the new Microsoft Defender for Endpoint unified solution package released in 2021.   |
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

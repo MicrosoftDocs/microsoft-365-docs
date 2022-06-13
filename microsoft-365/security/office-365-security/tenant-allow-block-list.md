@@ -21,7 +21,7 @@ ms.prod: m365-security
 
 # Manage the Tenant Allow/Block List
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -69,16 +69,13 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - **Senders, URLs and files**:
     - To add and remove values from the Tenant Allow/Block List, you need to be a member of
       - **Organization Management** or **Security Administrator** role group (**Security admin role**)
       - **Security Operator** role group (**Tenant AllowBlockList Manager**).
     - For read-only access to the Tenant Allow/Block List, you need to be a member of
       - **Global Reader**  role group
       - **Security Reader** role group
-  - **Spoofing**: One of the following combinations:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+      - **View-Only Configuration** role group.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -480,3 +477,10 @@ For example, you add an allow entry for the following domain pair:
 - **Infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
+
+
+## What to expect after you add an allow or block entry
+
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
+
+We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.

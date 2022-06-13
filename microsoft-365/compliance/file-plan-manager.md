@@ -44,10 +44,11 @@ For information about what retention labels are and how to use them, see [Learn 
 To access file plan, you must have one of the following admin roles:
     
 - Retention Manager
-
 - View-only Retention Manager
 
-In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Solutions** > **Records management** > **File plan**.
+In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Solutions** > **Records management** > **File plan**:
+
+![File plan page](../media/compliance-file-plan.png). 
 
 If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
@@ -55,7 +56,7 @@ If **Records management** doesn't display in the navigation pane, first scroll d
 
 If you've already created retention labels from **Data lifecycle management** in the Microsoft Purview compliance portal, these labels automatically display in your file plan. 
 
-Similarly, if you now create retention labels in file plan, they are also available from **Data lifecycle management** if the labels aren't configured to mark content as a record.
+Similarly, if you now create retention labels in file plan, they're also available from **Data lifecycle management** if the labels aren't configured to mark content as a record.
 
 On the **File plan** page, you see all your labels with their status and settings, optional file plan descriptors, an export option to analyze or enable offline reviews of your labels, and an import option to create retention labels. 
 
@@ -76,11 +77,11 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - Yes
     - Yes(Regulatory)
 
-- **Is unlocked by default** —currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
+- **Is unlocked by default**—currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
 
-- **Relabel to** —currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+- **Relabel to**—currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
     - Blank or the selected label name
 
 - **Retention duration** identifies the retention period. Valid values:
@@ -125,7 +126,7 @@ When you select **Choose** for each of these optional descriptors, you can selec
     
     To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
+3. After you've created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
 
 4. Repeat these steps to create more labels.
 
@@ -139,9 +140,9 @@ Some settings can't be changed after the label is created and saved, which inclu
 
 ## Delete retention labels
 
-You can delete retention labels that aren't currently included in any [published](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md) retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+You can delete retention labels that aren't currently included in any [published](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md) retention label policies, that aren't configured for event-based retention, or that mark items as regulatory records.
 
-For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+For retention labels that you can delete, if they've been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 
 However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
@@ -149,7 +150,9 @@ However, it can take up to two days for content explorer to show the items that 
 
 From your file plan, you can export the details of all retention labels into a .csv file to help you facilitate periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels: On the **File plan** page, click **Export**.
+To export all retention labels: On the **File plan** page, select **Export**:
+
+![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
 
 A *.csv file that contains all existing retention labels opens. For example:
 
@@ -159,7 +162,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 In file plan, you can bulk-import new retention labels by using a .csv file with a specific format: 
 
-1. On the **File plan** page, click **Import**:
+1. On the **File plan** page, select **Import**:
    ![Option to import file plan](../media/compliance-file-plan-import-labels.png)
 
 2. On the **Fill out and import your file plan** pane, select **Download a blank template**:
@@ -213,18 +216,15 @@ Use the following information to help you fill out the downloaded template to im
 |CitationJurisdiction|String|No|This property specifies the jurisdiction or agency that's displayed in the **Provision/citation** file plan descriptor. For example, "U.S. Securities and Exchange Commission (SEC)".|
 |Regulatory|String|No|This property specifies whether the label marks the content as a regulatory record, which is [more restrictive](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) than a record. To use this label configuration, your tenant must be configured to [display the option to mark content as a regulatory record](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record), or the import validation will fail. Valid values are: </br>**TRUE**: The label marks the item as a regulatory record. You must also set the **IsRecordLabel** property to TRUE.</br>**FALSE**: The label doesn't mark the content as a regulatory record. This is the default value.|
 |EventType|String|No, unless **RetentionType** is **EventAgeInDays**|This property specifies an event type used for [event-based retention](event-driven-retention.md). Specify an existing event type that's displayed in **Records management** > **Events** > **Manage event types**. Alternatively, use the [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) cmdlet to view the available event types. Although there are some built-in event types, such as **Employee activity** and **Product lifetime**, you can also create your own event types. </br> </br> If you specify your own event type, it must exist before the import because the name is validated as part of the import process.|
+|IsRecordUnlockedAsDefault|String|No|This property specifies whether the item marked as a record is [unlocked](record-versioning.md) when the label is applied. Valid values are: </br>**TRUE**: The item marked as a record is unlocked when the label is applied. The **IsRecordLabel** property must be set to TRUE and the property **Regulatory** can't be set to TRUE.</br>**FALSE**: The item isn't marked as a record or is marked as record but locked when the label is applied. This is the default value.|
+|ComplianceTagForNextStage|String|No|This property specifies the name of a [replacement label](retention-settings.md#relabeling-at-the-end-of-the-retention-period) to be applied at the end of the retention period. </br> </br> Do not specify this property if **Regulatory** is **TRUE**.|
 
 Label settings not currently supported for import:
 
 - Multi-stage disposition review: Although you can configure the settings for a single disposition review stage when you import retention labels with a template, you can't specify additional review stages. Instead, configure these in the compliance portal after the import succeeds.
 
-- Unlock this record by default (currently rolling out in preview): This setting isn't available in the template to import, and you can't select this setting in the compliance portal after the import succeeds.
-
-- Replacement label (currently rolling out in preview): This setting isn't available in the template to import, but you can select this setting in the compliance portal after the import succeeds.
-
-
 ## Next steps
 
-Now you've created retention labels, they are ready to be added to items by publishing the labels, or automatically applying them:
+Now you've created retention labels, they're ready to be added to items by publishing the labels, or automatically applying them:
 - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)

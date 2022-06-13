@@ -42,10 +42,9 @@ Here's a quick overview of the process.
 
 1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created, and the warning quota for the archive mailbox is set to 90 GB.
 
-2. An administrator enables auto-expanding archiving for the mailbox. When the archive mailbox (including the Recoverable Items folder) reaches 90 GB, it's converted to an auto-expanding archive, and Microsoft 365 adds storage space to the archive until it reaches a maximum size of 1.5 TB. It can take up to 30 days for the additional storage space to be provisioned.
-
-   > [!NOTE]
-   > If a mailbox is placed on hold or assigned to a retention policy, the storage quota for the archive mailbox is increased to 110 GB when auto-expanding archiving is enabled. Similarly, the archive warning quota is increased to 100 GB.
+2. An administrator enables auto-expanding archiving for the mailbox. If the mailbox has a hold or retention policy applied to it, the storage quota for the archive mailbox is increased to 110 GB and the archive warning quota is increased to 100 GB.
+    
+    Then, when the archive mailbox (including the Recoverable Items folder) reaches its storage quota, the archive mailbox is converted to an auto-expanding archive. Extra storage space is added until it reaches a maximum size of 1.5 TB. It can take up to 30 days for the additional storage space to be provisioned.
 
 3. Microsoft 365 automatically adds more storage space when necessary.
 
