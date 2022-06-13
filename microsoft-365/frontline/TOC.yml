@@ -9,7 +9,7 @@
     items:
     - name: Overview
       href: flw-how-to-start.md
-    - name: Get your team started
+    - name: Managers - get your team started
       href: get-up-and-running.md
     - name: Start with a pilot deployment
       href: flw-pilot.md
