@@ -72,7 +72,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   - To add and remove entries from the Tenant Allow/Block List, you need to be a member of one of the following role groups:
     - **Organization Management** (the **Security admin** role).
     - **Security Administrator** (the **Security admin** role).
-    - **Security Operator** role group (the **Tenant AllowBlockList Manager** role).
+    - **Security Operator** (the **Tenant AllowBlockList Manager** role).
 
   - For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:
     - **Global Reader** role group.
