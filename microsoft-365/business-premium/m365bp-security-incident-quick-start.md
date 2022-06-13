@@ -168,6 +168,14 @@ Several reports are available in the Microsoft 365 Defender portal.
 
 1. Select the title of a particular threat to see details specific to it.
 
+### Run a simulation tutorial
+
+It's always a good idea to increase the security preparedness of you and your team through training. Included in the Navigation menu for Defender are tutorials around several types of cyber threats. To get started:
+
+1. Choose **Tutorials** from the Navigation pane.
+
+1. Read the walkthrough for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
+
 ## See also
 
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
