@@ -1,5 +1,5 @@
 ---
-title: "A security incident quick start guide"
+title: "A security incident operations guide"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: "A guide for what to focus your efforts upon in the Defender portal."
+description: "A set of suggestions for what to focus your efforts upon in the Defender portal when it comes to daily, weekly or monthly operations. "
 ---
 
-# Microsoft Business Premium quick start
+# Microsoft Business Premium operations guidance
 
-The following guidance provides a starting point to help you make decisions about security incident priorities in the Microsoft Defender portal.  
+The following guidance provides a starting point to help you make decisions about security incident priorities in the Microsoft Defender portal.
   
 ## Daily tasks
 
@@ -170,7 +170,7 @@ Several reports are available in the Microsoft 365 Defender portal.
 
 ### Run a simulation tutorial
 
-It's always a good idea to increase the security preparedness of you and your team through training. Included in the Navigation menu for Defender are tutorials around several types of cyber threats. To get started:
+It's always a good idea to increase the security preparedness for you and your team through training. Included in the Navigation menu for Defender are tutorials around several types of cyber threats. To get started:
 
 1. Choose **Tutorials** from the Navigation pane.
 
