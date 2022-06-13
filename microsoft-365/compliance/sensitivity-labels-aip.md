@@ -71,6 +71,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
     - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
     - Detection of sensitive information as users type
     - In Word, users can review and remove the identified sensitive content
+- [PDF support](sensitivity-labels-office-apps.md#pdf-support) (in preview)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
 - Visibility of labels on the status bar

@@ -519,8 +519,9 @@ For example, content like an Excel workbook on a OneDrive for Business site that
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-> [!NOTE]
-> Notification emails are sent unprotected.
+> [!IMPORTANT]
+> - Notification emails are sent unprotected.
+> - Email notifications are only supported for the Microsoft 365 services.
 
 You can also give people the option to [override the policy](#user-overrides), so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 
