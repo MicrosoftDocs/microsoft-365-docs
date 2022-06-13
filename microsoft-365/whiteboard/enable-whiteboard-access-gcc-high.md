@@ -124,7 +124,7 @@ When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing lin
 
 |Scenario |Storage and ownership |Sharing settings |Sharing experience |
 |---------|---------|---------|---------|
-|Start the whiteboard from a desktop or mobile device |Storage: ODB<br>Owner: User who creates the whiteboard |Not yet available |In-tenant users: Can create, view, and collaborate<br>External users: Not yet available<br>Shared device accounts: Not yet available |
+|Start the whiteboard from a desktop or mobile device |Storage: ODB<br><br>Owner: User who creates the whiteboard |Not yet available |In-tenant users: Can create, view, and collaborate<br><br>External users: Not yet available<br><br>Shared device accounts: Not yet available |
 |Start the whiteboard from a Surface Hub or Microsoft Teams Rooms |Not yet available |         |         |
 
 ### Add as a tab in Teams channels and chats
