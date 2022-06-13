@@ -38,7 +38,7 @@ You can also use the Microsoft 365 Defender connector in Microsoft Sentinel to p
 
 ## Licensing requirements
 
-To be eligible for investigating Microsoft Purview Data Loss Prevention incidents in the Microsoft 365 Defender portal, you need a license from one of the following subscriptions: 
+To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft 365 Defender portal, you need a license from one of the following subscriptions: 
 
 - Microsoft Office 365 E5/A5
 - Microsoft 365 E5/A5
@@ -60,7 +60,7 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
 
 5. View the **Alert story** for details about policy and the sensitive information types detected in the alert. Select the event in the **Related Events** section to see the user activity details.
 
-6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started?view=o365-worldwide#roles" target="_blank">here</a>).
+6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">here</a>).
 
 7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and Devices.
 
