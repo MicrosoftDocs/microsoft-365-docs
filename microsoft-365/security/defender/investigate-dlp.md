@@ -25,7 +25,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender portal. You can manage DLP incidents along with security incidents from  **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can do these additional actions:
+Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender portal. You can manage DLP incidents along with security incidents from  **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
 
 - View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
@@ -34,7 +34,7 @@ Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in
 - Associate custom tags to DLP incidents and filter by them.
 - Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue. 
 
-You can also leverage the Microsoft 365 Defender connector in Microsoft Sentinel to pull DLP incidents along with events and evidence into Microsoft Sentinel for investigation and remediation.
+You can also use the Microsoft 365 Defender connector in Microsoft Sentinel to pull DLP incidents along with events and evidence into Microsoft Sentinel for investigation and remediation.
 
 ## Licensing requirements
 
@@ -48,7 +48,7 @@ To be eligible for investigating Microsoft Purview Data Loss Prevention incident
 
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
-Before you start, [turn on alerts for all your DLP policies](microsoft-365/compliance/dlp-configure-view-alerts-policies.md#alert-configuration-experience)in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview Compliance Center</a>.
+Before you start, [turn on alerts for all your DLP policies](/microsoft-365/compliance/dlp-configure-view-alerts-policies.md#alert-configuration-experience)in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
 
 1. Go to the Microsoft 365 Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
@@ -81,11 +81,11 @@ Before you start, [turn on alerts for all your DLP policies](microsoft-365/compl
 
 ## DLP investigation experience in Microsoft Sentinel
 
-You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across additional data sources and extend your automated orchestration flows using Sentinel’s native SOAR capabilities. 
+You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across other data sources and extend your automated orchestration flows using Sentinel’s native SOAR capabilities. 
 
 1. Follow instructions on Connect data from Microsoft 365 Defender to Microsoft Sentinel to import all incidents including DLP incidents and alerts into Sentinel. Enable `CloudAppEvents` event connector to pull all O365 audit logs into Sentinel.
 
-   You should be able to see your DLP incidents in Sentinel once the above connector is setup.
+   You should be able to see your DLP incidents in Sentinel once the above connector is set up.
 
 2. Select **Alerts** to view the alert page.
 
