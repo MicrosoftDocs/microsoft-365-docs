@@ -39,6 +39,7 @@ The resources in this section help the admin in your organization to set up and 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to set up and manage Whiteboard for US Government - GCC High|[Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md)|
+|Use PowerShell to manage Microsoft Whiteboard|[PowerShell for Whiteboard](https://docs.microsoft.com/en-us/powershell/module/whiteboard/?view=whiteboard-ps)|
 
 <!--- 
 ## Setup and management
