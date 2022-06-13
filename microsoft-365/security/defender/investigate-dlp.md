@@ -25,7 +25,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender portal. You can manage DLP incidents along with security incidents from the **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can do these additional actions:
+Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in the Microsoft 365 Defender portal. You can manage DLP incidents along with security incidents from  **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can do these additional actions:
 
 - View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
@@ -33,7 +33,8 @@ Incidents for Microsoft Purview Data Loss Prevention (DLP) can now be managed in
 - In-place admin remediation actions on user, file, and device. 
 - Associate custom tags to DLP incidents and filter by them.
 - Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue. 
-- Leverage the Microsoft 365 Defender connector in Sentinel to pull DLP incidents into Microsoft Sentinel for investigation and remediation.
+
+You can also leverage the Microsoft 365 Defender connector in Microsoft Sentinel to pull DLP incidents along with events and evidence into Microsoft Sentinel for investigation and remediation.
 
 ## Licensing requirements
 
@@ -47,7 +48,7 @@ To be eligible for investigating Microsoft Purview Data Loss Prevention incident
 
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
-Before you start, turn on alerts for all your DLP policies in the Microsoft Purview Compliance Center.
+Before you start, [turn on alerts for all your DLP policies](microsoft-365/compliance/dlp-configure-view-alerts-policies.md#alert-configuration-experience)in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview Compliance Center</a>.
 
 1. Go to the Microsoft 365 Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
@@ -59,9 +60,9 @@ Before you start, turn on alerts for all your DLP policies in the Microsoft Purv
 
 5. View the **Alert story** for details about policy and the sensitive information types detected in the alert. Select the event in the **Related Events** section to see the user activity details.
 
-6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the permission.
+6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started?view=o365-worldwide#roles" target="_blank">here</a>).
 
-7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The `CloudAppEvents` table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and endpoint devices.
+7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and Devices.
 
 8. You can also download the email by selecting **Actions** \> **Download email**. 
 
@@ -74,7 +75,7 @@ Before you start, turn on alerts for all your DLP policies in the Microsoft Purv
 
    For remediation actions, select the **User card** on the top of the alert page to open the user details.
 
-   For endpoint device DLP alerts, select the device card on the top of the alert page to view the device details and take remediation actions on the device.
+   For Devices DLP alerts, select the device card on the top of the alert page to view the device details and take remediation actions on the device.
 
 10. Go to the incident summary page and select **Manage Incident** to add incident tags, assign, or resolve an incident.
 
@@ -88,7 +89,7 @@ You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import
 
 2. Select **Alerts** to view the alert page.
 
-3. You can use **AlertType**, **startTime**, and **endTime** to query the `CloudAppEvents` table to get all the user activities that contributed to the alert. Use this query to identify the underlying activities:
+3. You can use **AlertType**, **startTime**, and **endTime** to query the **CloudAppEvents** table to get all the user activities that contributed to the alert. Use this query to identify the underlying activities:
 
 ```kusto
 let Alert = SecurityAlert 
