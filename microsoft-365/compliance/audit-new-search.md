@@ -23,19 +23,19 @@ description: "The Audit New Search validates the performance improvements, compl
 
 # Audit New Search (preview)
 
-Organizations around the globe require access to critical audit log event data in order to gain insight and further investigate user activities. Previously, customers creating audit log search jobs via the Microsoft Purview compliance portal UI were limited in their ability to create concurrent audit search jobs and review historical search jobs. These critical audit search jobs also had a dependency on the browser window remaining open in order for the job to complete.
+Organizations require access to critical audit log event data to gain insight and further investigate user activities. Previously, your search jobs in the Microsoft Purview compliance portal UI were limited in their ability to create concurrent audit search jobs and review historical search jobs. These critical audit search jobs also had a dependency on the browser window remaining open in order to complete.
 
-The Audit New Search (Preview) builds upon the existing search functionalities and includes the following key improvements:
+The Audit New Search (preview) builds upon the existing search functionalities and includes the following key improvements:
 
-1. Search jobs initiated via the Microsoft Purview compliance center UI no longer require the web browser window to remain open in order to complete. These jobs will continue to run even after the browser window is closed.
-1. Completed search jobs are now stored, giving customers the ability to reference historical audit searches. These search jobs are presented in the UI where the admin is provided with the search name, search job status, progress %, Number of results, Creation Time, and Searched by.
-1. Each admin Audit account user can have a maximum of 10 search jobs in progress at a time.
+- Search jobs initiated via the compliance portal UI no longer require the web browser window to remain open in order to complete. These jobs will continue to run even after the browser window is closed.
+- Completed search jobs are now stored, giving customers the ability to reference historical audit searches. These search jobs are presented in the UI where the admin is provided with the search name, search job status, progress %, Number of results, Creation Time, and Searched by.
+- Each admin Audit account user can have a maximum of 10 search jobs in progress at a time.
 
 ## Information to get started
 
-Please review the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:
+View the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:
 
-- [Search the audit log in the Microsoft 365 compliance center](search-the-audit-log-in-security-and-compliance.md) (Please note PowerShell is not yet compatible with Audit Search V2)
+- [Search the audit log in the Microsoft 365 compliance portal](search-the-audit-log-in-security-and-compliance.md) (Please note PowerShell is not yet compatible with Audit Search V2)
 - [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
 - [Export, configure, and view audit log records](export-view-audit-log-records.md)
 
