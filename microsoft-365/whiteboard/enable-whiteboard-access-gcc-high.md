@@ -49,7 +49,7 @@ You can control access to Whiteboard in the following ways:
 
 To enable or disable Whiteboard for your tenant, do the following: 
 
-1. Use the [SharePoint Online PowerShell module](https://docs.microsoft.com/en-us/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell?view=o365-worldwide) to enable or disable all Fluid Experiences across your Office 365 tenant.
+1. Use the [SharePoint Online PowerShell module](https://docs.microsoft.com/en-us/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell?view=o365-worldwide) to enable or disable all Fluid Experiences across your Microsoft 365 tenant.
 
 2. Connect to [SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
@@ -66,9 +66,133 @@ The change should take approximately 60 minutes to apply across your tenancy. If
 
 ## Show or hide Whiteboard
 
-To show or hide Whiteboard for meetings, use [Teams meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing).
+To show or hide Whiteboard in meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing).
 
 ## Manage Whiteboard data 
 
+Data is stored as .whiteboard files in OneDrive for Business. An average whiteboard might be anywhere from 50 KB to 1 MB in size and located wherever your OneDrive for Business content resides. To check where new data is created, see [Where your Microsoft 365 customer data is stored](https://docs.microsoft.com/en-us/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide), and look at the location for OneDrive for Business. All properties that apply to general files in OneDrive for Business also apply to Whiteboard, with the exception of external sharing.
+
+You can manage Whiteboard data using existing OneDrive for Business controls. For more information, see [OneDrive guide for enterprises](https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise).
+
+You can use existing OneDrive for Business tooling to satisfy data subject requests (DSRs) for General Data Protection Regulation. Whiteboard files can be moved in the same way as other content in OneDrive for Business. However, share links and permissions might not move.
+
+Data controls supported today:
+
+- Retention policies
+- Quota
+- DLP
+- eDiscovery
+- Legal hold
+
+Data controls planned for future releases:
+
+- Sensitivity labels
+- Auditing
+- Analytics
+- Storing whiteboards in SharePoint sites
+
+## Manage Whiteboard clients
+
+Whiteboard clients are currently being updated to support One Drive for Business.
+
+Clients supported today:
+
+- Standalone Whiteboard web application at [https://whiteboard.office365.us](https://whiteboard.office365.us)
+- Microsoft Teams meetings, chats, and channels using Teams desktop and web
+- Standalone Whiteboard application for mobile
+
+Clients planned for future releases:
+
+- Standalone Whiteboard application for Windows 10+
+- Standalone Whiteboard application for Surface Hub (currently can be used in anonymous mode)
+- Whiteboard in the Office.com app launcher
+- Whiteboard in Teams meetings on Surface Hub and Teams meeting rooms
+- Whiteboard in 1:1 calls in Teams
+
+>[!NOTE]
+> While users can install the Windows client, they will not be able to sign in until the client is updated this year.
+
+## Manage Whiteboard sharing
+
+The sharing experience differs based on the device and client being used. 
+
+### Share in Teams meetings
+
+When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization and automatically shares the whiteboard with any in-tenant users in the meeting.
+
+>[!NOTE]
+> External sharing during a Teams meeting is not yet available but will be added in future.
 
 
+|Scenario |Storage and ownership |Sharing settings |Sharing experience |
+|---------|---------|---------|---------|
+|Start the whiteboard from a desktop or mobile device |Storage: ODB<br>Owner: User who creates the whiteboard |Not yet available |In-tenant users: Can create, view, and collaborate<br>External users: Not yet available<br>Shared device accounts: Not yet available |
+|Start the whiteboard from a Surface Hub or Microsoft Teams Rooms |Not yet available |         |         |
+
+### Add as a tab in Teams channels and chats
+
+When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will create a sharing link that’s accessible by anyone in the organization.
+
+Scenario
+
+Storage and ownership
+
+Sharing settings
+
+Sharing experience
+
+Add the whiteboard to a channel or chat from a desktop or mobile device
+
+Storage: ODB
+
+Owner: User who creates the whiteboard
+
+Not applicable
+
+In-tenant users: Can initiate, view and collaborate
+
+
+External users: Not supported
+
+Creating and sharing in Whiteboard native clients
+When sharing whiteboards from the web, desktop or mobile clients, users can choose specific people or create a sharing link that’s accessible by anyone in the organization. Share links for external users outside of the organization are not currently supported.
+
+Scenario
+
+Storage and ownership
+
+Sharing settings
+
+Sharing experience
+
+Create the whiteboard from a desktop or mobile device
+
+Storage: ODB
+
+Owner: User who creates the whiteboard
+
+Not applicable 
+
+In-tenant users: Can share within their organization
+
+External users: Sharing with external users is not supported at this time
+ 
+
+Create the whiteboard from a Surface Hub
+
+Storage: Local
+
+Owner: None
+
+Not applicable 
+
+In-tenant users (coming soon): User will be able to sign in to save and share the board
+
+External users: Sharing with external users is not supported at this time
+ 
+
+Create the whiteboard from an MTR
+
+Not yet available
+
+External sharing links are not yet available outside but are planned for a future release.
