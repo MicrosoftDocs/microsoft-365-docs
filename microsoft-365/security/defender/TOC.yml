@@ -168,6 +168,8 @@
                 items: 
                  - name: Incidents
                    href: investigate-incidents.md
+                 - name: Data loss incidents
+                   href: investigate-dlp.md
                  - name: Alerts
                    href: investigate-alerts.md    
                  - name: Alert grading playbooks
