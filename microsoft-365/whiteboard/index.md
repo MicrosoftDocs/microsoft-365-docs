@@ -50,12 +50,12 @@ The resources in this section help the admin in your organization to set up and 
 |:-----|:-----|
 |Learn how to set up and configure Microsoft Whiteboard for your organization|[Set up Microsoft Whiteboard for organizations](set-up-organizations.md)|
 |Learn how to set up and configure Microsoft Whiteboard for US Government - GCC|[Set up Microsoft Whiteboard for Government](set-up-government.md)|
---->
 
-## Management Whiteboard using PowerShell
+
+## Manage Whiteboard using PowerShell
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Use PowerShell to manage Microsoft Whiteboard for your organization|[PowerShell for Whiteboard](/powershell/module/whiteboard/)|
-
+--->
 
