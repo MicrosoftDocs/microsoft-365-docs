@@ -48,7 +48,7 @@ To be eligible for investigating Microsoft Purview Data Loss Prevention incident
 
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
-Before you start, [turn on alerts for all your DLP policies](dlp-configure-view-alerts-policies.md#alert-configuration-experience)in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview Compliance Center</a>.
+Before you start, [turn on alerts for all your DLP policies](microsoft-365/compliance/dlp-configure-view-alerts-policies.md#alert-configuration-experience)in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview Compliance Center</a>.
 
 1. Go to the Microsoft 365 Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
@@ -60,9 +60,9 @@ Before you start, [turn on alerts for all your DLP policies](dlp-configure-view-
 
 5. View the **Alert story** for details about policy and the sensitive information types detected in the alert. Select the event in the **Related Events** section to see the user activity details.
 
-6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-alerts-dashboard-get-started?view=o365-worldwide#roles" target="_blank">here</a>).
+6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started?view=o365-worldwide#roles" target="_blank">here</a>).
 
-7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and endpoint devices.
+7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and Devices.
 
 8. You can also download the email by selecting **Actions** \> **Download email**. 
 
@@ -75,7 +75,7 @@ Before you start, [turn on alerts for all your DLP policies](dlp-configure-view-
 
    For remediation actions, select the **User card** on the top of the alert page to open the user details.
 
-   For endpoint device DLP alerts, select the device card on the top of the alert page to view the device details and take remediation actions on the device.
+   For Devices DLP alerts, select the device card on the top of the alert page to view the device details and take remediation actions on the device.
 
 10. Go to the incident summary page and select **Manage Incident** to add incident tags, assign, or resolve an incident.
 
