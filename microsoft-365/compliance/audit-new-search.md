@@ -57,7 +57,7 @@ Follow the below steps to test and validate the Audit New Search experience:
   :::image type="content" source="../media/audit-search/audit-new-search.png" alt-text="Audit New Search options in Microsoft Purview":::
 1. Test different search jobs in the Audit New Search tool using a variety of search criteria.
 Some examples of different searches include the following criteria. Please explore these different search methods while performing searches on the audit log.
-    - Search across different timeframes.
+    - Search across different time frames.
       - One day
       - Week
       - Month
