@@ -10,7 +10,6 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
@@ -31,7 +30,7 @@ In addition to standard on-premises or hardware configurations, you can also use
 
 For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 
-For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
+For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
@@ -263,7 +262,7 @@ Exclusions can be added, removed, or customized to suit your needs.
 For more information, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

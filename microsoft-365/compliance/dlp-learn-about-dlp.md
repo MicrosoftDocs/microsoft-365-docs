@@ -117,6 +117,9 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 - add new restricted apps
 - add new restricted sites
 
+> [!NOTE]
+> _Stop processing more rules_ doesn't work in test mode, even when it's turned on.
+
 #### Enable the control and tune your policies
 
 Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. 
@@ -178,7 +181,7 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### DLP Alerts Dashboard
 

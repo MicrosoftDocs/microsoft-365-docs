@@ -73,7 +73,6 @@ Once you're satisfied with the results of your testing and tuning, your EDM base
 
 If you don't find any matches, here are some troubleshooting tips.
 
-
 |Issue  |Troubleshooting tip  |
 |---------|---------|
 |No matches found     |  Confirm that your sensitive data was uploaded correctly using the commands explained in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|
