@@ -91,9 +91,9 @@ In brief, you can get a snapshot of threat vulnerability by looking at the Vulne
 
 Being aware of your exposure score helps you:
 
-- Quickly understand and identify high-level takeaways about the state of security in your organization.
-- Detect and respond to areas that require investigation or action to improve the current state.
-- Communicate with peers and management about the impact of security efforts.
+- Quickly understand and identify high-level takeaways about the state of security in your organization
+- Detect and respond to areas that require investigation or action to improve the current state
+- Communicate with peers and management about the impact of security efforts
 
 ### Review the secure score for devices
 
@@ -104,7 +104,7 @@ The data on this card is the product of a meticulous and ongoing vulnerability d
 - Compare collected configurations to the collected benchmarks to discover misconfigured assets
 - Map configurations to vulnerabilities that can be remediated or partially remediated (risk reduction)
 - Collect and maintain best practice configuration benchmarks (vendors, security feeds, internal research teams)
-- Collect and monitor changes of security control configuration state from all assets.
+- Collect and monitor changes of security control configuration state from all assets
 
 ### Improve your secure score for devices
 
@@ -146,11 +146,11 @@ Click on the title of the one you want to investigate, and read the associated r
 
 As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval, which is why these should be monitored regularly. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
 
-1. In the navigation pane, choose Action center.
+1. In the navigation pane, choose **Action center**.
 
-1. Select the Pending tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
+1. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus or antimalware protection, automated investigations, manual response activities, or live response sessions.
 
-1. Select the History tab to view a list of completed actions.
+1. Select the **History** tab to view a list of completed actions.
 
 ### Remediate an item
 
@@ -162,11 +162,11 @@ Several reports are available in the Microsoft 365 Defender portal.
 
 1. Select **Reports** from the Navigation pane.
 
-1. Choose a report to review. Each report displays a number of pertinent categories for that report. 
+1. Choose a report to review. Each report displays a number of pertinent categories for that report.
 
-1. Click **View details** to see deeper information for each category. 
+1. Click **View details** to see deeper information for each category.
 
-1. Select the title of a particular threat to see details specific to it. 
+1. Select the title of a particular threat to see details specific to it.
 
 ## See also
 
