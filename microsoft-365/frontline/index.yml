@@ -42,7 +42,7 @@ productDirectory:
         - url: flw-pilot.md
           text: Start with a pilot deployment
         - url: deploy-teams-at-scale.md
-          text: Extend your pilot to a full deployment
+          text: Deploy Teams at scale
         - url: ./file2a.md OR /file2a
           text: Manage devices
     # Card

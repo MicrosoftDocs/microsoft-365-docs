@@ -13,14 +13,14 @@
       href: get-up-and-running.md
     - name: Start with a pilot deployment
       href: flw-pilot.md
-    - name: Extend your pilot to a full deployment
+#    - name: Extend your pilot to a full deployment
+#      href: deploy-teams-at-scale.md 
+    - name: Deploy teams at scale
       href: deploy-teams-at-scale.md
     - name: Onboard your users with the onboarding wizard
       href: flw-onboarding-wizard.md
     - name: Scripted deployment
       href: flw-scripted-deployment.md
-    - name: Deploy teams at scale
-      href: deploy-teams-at-scale.md
     - name: Manage devices
       items:
       - name: Manage shared devices
