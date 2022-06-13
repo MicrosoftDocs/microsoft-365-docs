@@ -102,7 +102,9 @@ This article explains how to:
 
 For more information on Azure Active Directory tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
-### Get an access token using PowerShell
+### Get an access token on behalf of a user using PowerShell
+
+Use the MSAL.PS library to acquire access tokens with Delegated permissions.
 
 ```PowerShell
 Install-Module -Name MSAL.PS # Install the MSAL.PS module from PowerShell Gallery
