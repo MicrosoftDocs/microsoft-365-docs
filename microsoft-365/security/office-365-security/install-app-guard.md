@@ -35,7 +35,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) h
 ### Minimum software requirements
 
 * **Windows**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later. All versions of Windows 11 are supported.
-* **Office**: Microsoft 365 apps with build 16.0.13530.10000 or later. For Current Channel and Monthly Enterprise Channel installations, this equals to version 2011. For Semi-Annual Enterprise Channel and Semi-Annual Enterprise Channel (Preview), minimum version is 2108 or later. Both 32-bit and 64-bit versions are supported.
+* **Office**: Microsoft 365 Apps with build 16.0.13530.10000 or later. For Current Channel and Monthly Enterprise Channel installations, this equals to version 2011. For Semi-Annual Enterprise Channel and Semi-Annual Enterprise Channel (Preview), the minimum version is 2108 or later. Both 32-bit and 64-bit versions are supported.
 * **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Also, please refer to your computer manufacturer's guides on how to enable virtualization technology.
