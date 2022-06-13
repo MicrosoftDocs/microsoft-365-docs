@@ -94,8 +94,7 @@ Figure 1.1 Audit Search Tool & Search Job Summaries
 - Search results are displayed in a line-item once a search job is selected
 - The search query is displayed on the top of the search job results page for reference as well as the total number of items
   > [!NOTE]
-  > The total result number deducts duplicates, which is why it might be less than the 
-  > number of items in the main Audit search window
+  > The total result number deducts duplicates, which is why it might be less than the number of items in the main Audit search window
 - Information about the date, IP Address, User, Activity, and Item can be found in the search job results page for each item
 - Click on an activity to see a fly-out window with more details about the activity
 - The filtering feature for search job results can help to parse through results.
