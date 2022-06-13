@@ -54,7 +54,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for senders, 500 entries for URLs, 500 entries for file hashes, and 1024 entries for spoofing (spoofed senders).
+- The Tenant Allow/Block List allows a maximum of 500 entries for senders, URLs, and file hashes, and 1024 entries for spoofing (spoofed senders).
 
 - The maximum number of characters for each entry is:
   - File hashes = 64
@@ -62,7 +62,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - An entry should be active within 30 minutes.
 
-- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
+- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for block type of entries).
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -70,10 +70,10 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   - To add and remove values from the Tenant Allow/Block List, you need to be a member of
     - **Organization Management** or **Security Administrator** role group (**Security admin role**)
     - **Security Operator** role group (**Tenant AllowBlockList Manager**).
-    - For read-only access to the Tenant Allow/Block List, you need to be a member of
-      - **Global Reader**  role group
-      - **Security Reader** role group
-      - **View-Only configuration** role group
+  - For read-only access to the Tenant Allow/Block List, you need to be a member of
+    - **Global Reader**  role group
+    - **Security Reader** role group
+    - **View-Only configuration** role group
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -88,11 +88,11 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-To add all blocks, see [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
+To allow or block emails, see [Allow or block emails using the Tenant Allow/Block List](allow-block-email-spoof.md).
 
-To add all allows, see [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md).
+To allow or block files, see [Allow or block files using the Tenant Allow/Block List](allow-block-files.md).
 
-To modify and remove all blocks and allows, see [Modify and remove entries in the Tenant Allow/Block List](modify-remove-entries-tenant-allow-block.md).
+To allow or block URLs, see [Allow or block URLs using the Tenant Allow/Block List](allow-block-urls.md).
 
 ### Use Exchange Online PowerShell or standalone EOP PowerShell
 
@@ -171,8 +171,6 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
    When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
-3. When you're finished, click **Add**.
-
 ## Modify entries in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
@@ -195,6 +193,8 @@ We recommend letting entries automatically expire after 30 days to see if the sy
    - **Files**
      - **Never expire** and/or expiration date.
      - **Optional note**
+
+Note that the values for senders, URLs, and files never expire for blocked entries only. 
 
 4. When you're finished, click **Save**.
 

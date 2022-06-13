@@ -1,5 +1,5 @@
 ---
-title: Allow or block URLs in the Tenant Allow/Block List
+title: Allow or block URLs using the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -18,7 +18,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Allow or block URLs in the Tenant Allow/Block List
+# Allow or block URLs using the Tenant Allow/Block List
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

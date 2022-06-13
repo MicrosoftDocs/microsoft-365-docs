@@ -1,5 +1,5 @@
 ---
-title: Allow or block emails in the Tenant Allow/Block List
+title: Allow or block emails using the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Allow or block emails in the Tenant Allow/Block List
+# Allow or block emails using the Tenant Allow/Block List
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
