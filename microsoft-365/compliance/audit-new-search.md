@@ -35,14 +35,14 @@ The Audit New Search (preview) builds upon the existing search functionalities a
 
 View the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:
 
-- [Search the audit log in the Microsoft 365 compliance portal](search-the-audit-log-in-security-and-compliance.md) (Please note PowerShell is not yet compatible with Audit Search V2)
+- [Search the audit log in the Microsoft 365 compliance portal](search-the-audit-log-in-security-and-compliance.md) (Please note PowerShell isn't yet compatible with Audit Search V2)
 - [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
 - [Export, configure, and view audit log records](export-view-audit-log-records.md)
 
 Additional information:
 
-- Searching via an EXO PowerShell session using the Search-UnifiedAuditLog cmdlet is not compatible with the New Search at this time. 
-- Search jobs can take in the following criteria: Date Range, Time Range, Search Job Name, Activities, Users, Files, Folders, and Sites. 
+- Searching via an EXO PowerShell session using the Search-UnifiedAuditLog cmdlet isn't compatible with the New Search at this time.
+- Search jobs can take in the following criteria: Date Range, Time Range, Search Job Name, Activities, Users, Files, Folders, and Sites.
 - Searching and filtering using date, time, search name, activities, and users are all fully functional
 - Audit Log data will be stored for the defined retention period, regardless of a search job being deleted
 - Searches created during the Private Preview period may not be retained for future reference once the New Search feature moves into Public Preview.
