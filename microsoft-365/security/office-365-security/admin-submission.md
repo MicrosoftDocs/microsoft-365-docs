@@ -282,7 +282,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
 
-### Converting user reported messages from the custom mailbox into an admin submission
+### Convert user reported messages from the custom mailbox into an admin submission
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
