@@ -55,9 +55,7 @@ To enable or disable Whiteboard for your tenant, do the following:
 
 3. Enable Fluid using the following <code>Set-SPOTenant</code> cmdlet:
 
-   <pre><code class="lang-powershell">Set-SPOTenant -UsePersistentCookiesForExplorerView $true</code></pre>
-
-:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+   <pre><code class="lang-powershell">Set-SPOTenant -IsWBFluidEnabled $true</code></pre>
 
 The change should take approximately 60 minutes to apply across your tenancy. If you don't see this option, you will need to update the module.
 
