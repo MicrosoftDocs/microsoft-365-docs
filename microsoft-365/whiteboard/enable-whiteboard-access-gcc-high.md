@@ -53,7 +53,7 @@ To enable or disable Whiteboard for your tenant, do the following:
 
 2. Connect to [SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
-3. Enable Fluid using the following <code>Set-SPOTenant<code> cmdlet:
+3. Enable Fluid using the following <code>Set-SPOTenant</code> cmdlet:
 
    <pre><code class="lang-powershell">Set-SPOTenant -UsePersistentCookiesForExplorerView $true</code></pre>
 
