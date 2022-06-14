@@ -62,7 +62,7 @@ There are times when an admin may want to force password resets on accounts.
 
 ## Let users reset their own passwords
 
-We strongly recommend that you set up the self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up the self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](/admin/add-users/let-users-reset-passwords.md).
 
 ## Reset my admin password
 
