@@ -85,7 +85,7 @@ For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun
 
 ### Attempt to download a fake malware file from Microsoft
 
-You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. Visit [https://aka.ms/ioavtest](https://aka.ms/ioavtest) to download the file.
+You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. Visit [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) to download the file.
 
 > [!NOTE]
 > The downloaded file is not exactly malware. It's a fake file designed to test if you're properly connected to the cloud.
