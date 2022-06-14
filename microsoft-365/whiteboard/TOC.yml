@@ -5,4 +5,4 @@
       href: enable-whiteboard-access-gcc-high.md 
 
     - name: Whiteboard PowerShell
-      href: /powershell/module/whiteboard   
+      href: https://docs.microsoft.com/en-us/powershell/module/whiteboard/?view=whiteboard-ps
