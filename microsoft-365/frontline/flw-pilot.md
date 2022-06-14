@@ -182,7 +182,7 @@ To get ready for your rollout, here's what you need to do:
 1. Purchase the appropriate licenses for the people in your pilot. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
 1. Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients.md).
 
-The Microsoft 365 admin center has a set of [Setup guides](/enterprise/setup-guides-for-microsoft-365.md) that walk you through the steps to set up the products, security features, and collaboration tools in Microsoft 365. The setup guides are accessible from the [Setup guidance page](https://aka.ms/setupguidance) in the Microsoft 365 admin center.
+The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterprise/setup-guides-for-microsoft-365) that walk you through the steps to set up the products, security features, and collaboration tools in Microsoft 365. The setup guides are accessible from the [Setup guidance page](https://aka.ms/setupguidance) in the Microsoft 365 admin center.
 
 1. Use the [Prepare your environment](https://aka.ms/prepareyourenvironment) guide to prepare your organization's environment for Microsoft 365 and Office 365 services.
 1. Use the [Microsoft 365 setup](https://aka.ms/microsoft365setupguide) guide to set up productivity tools, security policies, and device management capabilities. You can also use this advisor to set up and configure your organization's devices.
