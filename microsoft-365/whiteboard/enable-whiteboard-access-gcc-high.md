@@ -119,7 +119,7 @@ The sharing experience differs based on the device and client being used.
 When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization. It then automatically shares the whiteboard with any in-tenant users in the meeting.
 
 >[!NOTE]
-> External sharing during a Teams meeting is not yet available but will be added in future.
+> External sharing during a Teams meeting is not yet available, but will be added in a future release.
 
 |Scenario |Storage and ownership |Sharing settings |Sharing experience |
 |---------|---------|---------|---------|
@@ -139,7 +139,7 @@ When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will c
 When you share a whiteboard from the web, desktop, or mobile clients, you can choose specific people or create a sharing link that’s accessible by anyone in the organization. 
 
 >[!NOTE]
-> Share links for external users outside of the organization are not currently supported, but are planned for a future release.
+> External sharing during a Teams meeting is not yet available, but will be added in a future release.
 
 |Scenario  |Storage and ownership  |Sharing settings  |Sharing experience  |
 |---------|---------|---------|---------|
