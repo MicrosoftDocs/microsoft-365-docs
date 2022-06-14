@@ -144,13 +144,13 @@ The reported message will be marked as a false positive or a false negative. An 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
-## View admin submissions to Microsoft
+## View email admin submissions to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Emails**, **URL**, or **Email attachment** tab is selected.
+2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
      - **Submission name**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Recipient**
@@ -196,7 +196,104 @@ The reported message will be marked as a false positive or a false negative. An 
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
-     - **Type**
+     - **Reason**
+     - **Status**
+     - **Result**
+     - **Tags**
+
+   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+
+## View email attachment admin submissions to Microsoft
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, verify that the **Email attachments** tab is selected.
+
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+     - **Attachment name**<sup>\*</sup>
+     - **Date submitted**<sup>\*</sup>
+     - **Reason for submitting**<sup>\*</sup>
+     - **Status**<sup>\*</sup>
+     - **Result**<sup>\*</sup>
+     - **Filter verdict**
+     - **Delivery/Block reason**
+     - **Submission ID**
+     - **Object ID**
+     - **Policy action**
+     - **Submitted by**
+     - **Tags**<sup>\*</sup>
+     - **Allow**
+
+     When you're finished, click **Apply**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+
+   - To filter the entries, click **Filter**. The available filters are:
+     - **Date submitted**: **Start date** and **End date**.
+     - **Submission ID**: A GUID value that's assigned to every submission.
+     - **Attachment filename**
+     - **Submitted by**
+     - **Reason for submitting**
+     - **Status**
+     - **Tags**
+
+     When you're finished, click **Apply**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+
+   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+     - **None**
+     - **Reason**
+     - **Status**
+     - **Result**
+     - **Tags**
+
+   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+
+## View URLs admin submissions to Microsoft
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, verify that the **URLs** tab is selected.
+
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+     - **URL**<sup>\*</sup>
+     - **Date submitted**<sup>\*</sup>
+     - **Reason for submitting**<sup>\*</sup>
+     - **Status**<sup>\*</sup>
+     - **Result**<sup>\*</sup>
+     - **Filter verdict**
+     - **Delivery/Block reason**
+     - **Submission ID**
+     - **Object ID**
+     - **Policy action**
+     - **Submitted by**
+     - **Tags**<sup>\*</sup>
+     - **Allow**
+
+     When you're finished, click **Apply**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/url-admin-submission-customize-columns.png":::
+
+   - To filter the entries, click **Filter**. The available filters are:
+     - **Date submitted**: **Start date** and **End date**.
+     - **Submission ID**: A GUID value that's assigned to every submission.
+     - **URL**
+     - **Submitted by**
+     - **Reason for submitting**
+     - **Status**
+     - **Tags**
+
+     When you're finished, click **Apply**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/url-admin-submission-filters.png":::
+
+   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+     - **None**
      - **Reason**
      - **Status**
      - **Result**
