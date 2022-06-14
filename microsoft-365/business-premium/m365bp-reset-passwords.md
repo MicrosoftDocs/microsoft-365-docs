@@ -34,13 +34,7 @@ description: "Sign in with your Microsoft 365 admin account to reset passwords f
 
 # Reset passwords in Microsoft 365 Business Premium
 
-This article explains how to reset passwords for yourself and your users when you have Microsoft 365 Business Premium.
-
-> [!NOTE]
-> You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
-
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+Learn how to reset passwords for yourself and your users when you have Microsoft 365 Business Premium.
 
 ## Watch: Reset a business password for a user
 

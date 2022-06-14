@@ -28,9 +28,13 @@ description: "An overview of security incident management"
 
 # Security incident management
 
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, actions are taken automatically or only upon approval. 
+The security of your organization requires constant monitoring, and as threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, actions may be taken automatically or only upon approval. Approvals need to happen on a regular basis.
 
-To do this, use the following steps:
+Watch a short video on a typical incident response.
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zvew]
+
+To learn more about incident responses, use the following steps:
 
 1. [Review security recommendations](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
 1. [Review remediation actions](m365bp-review-remediation-actions-devices.md).
