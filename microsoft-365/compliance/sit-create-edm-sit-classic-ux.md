@@ -1,5 +1,5 @@
 ---
-title: "Create exact data match Sensitive information type classic experience"
+title: "Create exact data match sensitive information type classic experience"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 ---
 
-# Create exact data match Sensitive information type classic experience
+# Create exact data match sensitive information type classic experience
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
