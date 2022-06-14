@@ -54,7 +54,7 @@ When a user requests a new password, a password reset request is sent through em
 
 1. Select **Reset**.
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+If you found this video helpful, check out the [Microsoft 365 admin training video library](../admin/admin-video-library.yml).
   
 ## Admin-initiated password reset
 
