@@ -175,7 +175,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -192,7 +192,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -379,7 +379,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
 
-### Converting user reported messages from the custom mailbox into an admin submission
+### Convert user reported messages from the custom mailbox into an admin submission
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 

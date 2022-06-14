@@ -16,11 +16,6 @@ description: Create and manage Teams classes and meetings with Microsoft OneDriv
 
 # Integrate Microsoft Teams classes and meetings within Open LMS
 
-> [!NOTE]
-> Currently, Open LMS and Microsoft Teams LTI integrations are only available in private preview.
->
->If you'd like to participate in the private preview program, [sign up here](https://m365crmedu.powerappsportals.com/LMSSignup/).
-
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps on Open LMS.
 
 For details on managing all LTI apps for any LMS, see [Manage Microsoft LMS Gateway for any LMS](manage-microsoft-one-lti.md).
