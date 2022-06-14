@@ -53,7 +53,6 @@ While enabled by default, there might be some cases that require you to disable 
 2. Click or tap the "i" button for Microsoft Defender for Endpoint.
 
 3. Toggle off **Connect On Demand** to disable VPN.
-   [!div class="mx-imgBorder"]
    :::image type="content" source="images/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
@@ -66,28 +65,24 @@ While enabled by default, there might be some cases that require you to disable 
 Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to configure MAM support for Network protection in iOS devices.
 
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
-   [!div class="mx-imgBorder"]
-   ![Add configuration policy.](images/addiosconfig.png)
+   :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
    
 2. Provide a name and description to uniquely identify the policy. Then click on ‘Select Public apps’ and choose ‘Microsoft Defender’ for Platform iOS/IPadOS
-   [!div class="mx-imgBorder"]
-   ![Name the configuration.](images/nameiosconfig.png)
+   :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
    
 3. In Settings page, add 'DefenderNetworkProtectionEnable’ as the key and value as 'false' to disable Network Protection. (Network protection is enabled by default)
-   [!div class="mx-imgBorder"]
-   ![Add configuration value.](images/addiosconfigvalue.png)
+   :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
    
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 
-  >|Key| Default (true-enable, false-disable)|Description|
-  >|---|---|---|
-  >|DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
-  >|DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
-  >|DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
+    |Key| Default (true-enable, false-disable)|Description|
+    |---|---|---|
+    |DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
+    |DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
+    |DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
   
 5. In Assignments section, admin can choose groups of users to include and exclude from the policy.
-   [!div class="mx-imgBorder"]
-   ![Assign configuration.](images/assigniosconfig.png)
+   :::image type="content" source="images/assigniosconfig.png" alt-text="Assign configuration. lightbox="images/assigniosconfig.png":::
    
 6. Review and create the configuration policy.
 
@@ -99,7 +94,7 @@ Apple iOS does not support multiple device-wide VPNs to be active simultaneously
 
 Microsoft Defender for Endpoint can be configured to send threat signals to be used in App Protection Policies (APP, also known as MAM) on iOS/iPadOS. With this capability, you can use Microsoft Defender for Endpoint to protect access to corporate data from unenrolled devices as well.
 
-Steps to setup app protection policies with Microsoft Defender for Endpoint are as below:
+Steps to set up app protection policies with Microsoft Defender for Endpoint are below:
 
 1. Set up the connection from your Microsoft Endpoint Manager tenant to Microsoft Defender for Endpoint. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant Administration** \> **Connectors and tokens** \> **Microsoft Defender for Endpoint** (under Cross platform) or **Endpoint Security** \> **Microsoft Defender for Endpoint** (under Setup) and turn on the toggles under **App Protection Policy Settings for iOS**.
 
@@ -137,7 +132,9 @@ Use the following steps to enable privacy and not collect the domain name as par
 3. Select **Microsoft Defender for Endpoint** as the target app.
 
 4. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Boolean**.
+
    - To enable privacy and not collect the domain name, enter value as `true` and assign this policy to users. By default, this value is set to `false`.
+
    - For users with key set as `true`, the phish alert will not contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
 
 5. Click **Next** and assign this profile to targeted devices/users.
@@ -155,19 +152,16 @@ Follow the steps below to create a compliance policy against jailbroken devices.
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Compliance policies** -> **Create Policy**. Select "iOS/iPadOS" as platform and click **Create**.
 
-   [!div class="mx-imgBorder"]
    :::image type="content" source="images/ios-jb-policy.png" alt-text="The Create Policy tab" lightbox="images/ios-jb-policy.png":::
 
 1. Specify a name of the policy, for example "Compliance Policy for Jailbreak".
 
 1. In the compliance settings page, click to expand **Device Health** section and click **Block** for **Jailbroken devices** field.
 
-   [!div class="mx-imgBorder"]
    :::image type="content" source="images/ios-jb-settings.png" alt-text="The Compliance settings tab" lightbox="images/ios-jb-settings.png":::
 
 1. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
 
-   [!div class="mx-imgBorder"]
    :::image type="content" source="images/ios-jb-actions.png" alt-text="The Actions for noncompliance tab" lightbox="images/ios-jb-actions.png":::
 
 1. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
@@ -197,7 +191,9 @@ Use the following steps to configure the option to send feedback data to Microso
 1. Select **Microsoft Defender for Endpoint** as the target app.
 
 1. In Settings page, select **Use configuration designer** and add **DefenderSendFeedback** as the key and value type as **Boolean**.
+   
    - To remove the ability of end-users to provide feedback, set the value as `false` and assign this policy to users. By default, this value is set to `true`. For US Government customers, the default value is set to 'false'.
+   
    - For users with key set as `true`, there will be an option to send Feedback data to Microsoft within the app (Menu > Help & Feedback > Send Feedback to Microsoft)
 
 1. Click **Next** and assign this profile to targeted devices/users.
