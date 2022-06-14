@@ -54,7 +54,7 @@ Follow the below steps to test and validate the Audit New Search experience:
 1. Navigate to compliance.microsoft.com
 1. Select the Audit tab on the left panel of the homepage to navigate to the Audit tool
 1. Select “New Search (Preview)” tab at the top of the Audit page
-  :::image type="content" source="../media/audit-search/audit-new-search.png" alt-text="Audit New Search options in Microsoft Purview":::
+  :::image type="content" source="../media/audit-search/audit-new-search.png" alt-text="Audit New Search overview in Microsoft Purview":::
 1. Test different search jobs in the Audit New Search tool using various search criteria.
 Some examples of different searches include the following criteria. Explore these different search methods while performing searches on the audit log.
     - Search across different time frames.
@@ -75,7 +75,7 @@ Some examples of different searches include the following criteria. Explore thes
     - Filtering across the search job using IP address, User, Activity, Date, Item, and Details.
     - Exporting both unfiltered and filtered searches
     - Sorting the results by clicking the corresponding buttons on the top of the table including Date, IP Address (when applicable), User, Activity, Item, and Detail (when applicable).
-      :::image type="content" source="../media/audit-search/audit-new-search-result-details.png" alt-text="Audit New Search result column sorting options in Microsoft Purview":::
+      :::image type="content" source="../media/audit-search/audit-new-search-result-details.png" alt-text="Audit New Search result details in Microsoft Purview":::
 
 ## Audit search job overview
 
