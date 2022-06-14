@@ -36,13 +36,7 @@ description: "Sign in with your Microsoft 365 admin account to reset passwords f
 
 Learn how to reset passwords for yourself and your users when you have Microsoft 365 Business Premium.
 
-## Watch: Reset a business password for a user
-
-Watch a short video about resetting user passwords.<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
-
-## User-initiated password reset
+## User-initiated password resets
 
 When a user requests a new password, a password reset request is sent through email.
 
@@ -56,11 +50,11 @@ When a user requests a new password, a password reset request is sent through em
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
   
-## Admin-initiated password reset
+## Perform an admin-initiated password reset
 
-There are times when an Admin may want to force password resets on accounts.
+There are times when an admin may want to force password resets on accounts.
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the Admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 2. On the **Active users** page, select the specific user to reset, and then select **Reset password**.
 
@@ -70,17 +64,17 @@ There are times when an Admin may want to force password resets on accounts.
 
 ## Let users reset their own passwords
 
-We strongly recommend that you set up the self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up the self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
 
 ## Reset my admin password
 
 Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:
 
-1. Select your name (icon) in upper right corner > **My Account** > **Personal Info**.
+1. Select your name (icon) in the upper-right corner > **My Account** > **Personal Info**.
 
 2. Under **Contact details**, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number. If not, change them now.
 
-3. Sign out: select your name in the upper right corner \> **Sign out**.
+3. Sign out: select your name in the upper-right corner \> **Sign out**.
 
 4. Now sign in again: type your user name \> **Next** \> and then select **Forgot password**.
 
@@ -92,8 +86,6 @@ If you forgot your password and can't sign in:
 
 - Make sure you've provided alternate contact information, including a mobile phone number.
 
-- Or, [call Microsoft Support](../../business-video/get-help-support.md).
-
 ## Reset all business passwords for everyone at the same time
 
 <a name="bkmk_forgot"> </a>
@@ -102,7 +94,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
   
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. Select the option next to **Display name** to select everyone in your business. Then unselect yourself. You can't reset your own password at the same time you reset everyone else's password.
+2. Select the option next to **Display name** to select everyone in your business. Then, unselect yourself. You can't reset your own password at the same time you reset everyone else's password.
 
 3. Select **Reset password**.
 
@@ -117,10 +109,6 @@ These steps work for a business with tens of users. If you have hundreds or thou
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
 
 For overview information, see [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
-  
-## Force a password change for all users in your business
-
-Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
 ## Related content
   
