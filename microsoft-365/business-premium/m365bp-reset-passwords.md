@@ -62,7 +62,7 @@ There are times when an Admin may want to force password resets on accounts.
 
 ## Let users reset their own passwords
 
-We strongly recommend that you set up the self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords](../admin/add-users/let-users-reset-passwords.md).
+Consider setting self-service password reset for your organization so that you won't have to reset passwords manually for your users. Less work for you! To learn how, see [Let users reset their own passwords](../admin/add-users/let-users-reset-passwords.md).
 
 ## Reset my admin password
 
@@ -114,7 +114,7 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
   
 ## Related content
   
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) 
+[Let users reset their own passwords](../admin/add-users/let-users-reset-passwords.md)
 [Reset passwords in Microsoft 365 for business](../admin/add-users/reset-passwords.md)
 [Set an individual user's password to never expire](../admin/add-users/set-password-to-never-expire.md) 
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) 
+[Set the password expiration policy for your organization](../admin/manage/set-password-expiration-policy.md)
