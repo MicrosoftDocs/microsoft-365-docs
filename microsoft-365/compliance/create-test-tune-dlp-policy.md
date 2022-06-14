@@ -230,7 +230,7 @@ When you're happy that your DLP policy is accurately and effectively detecting s
 
 ![Option to turn on policy.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-If you're waiting to see when the policy will take effect, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the [Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) to see the DistributionStatus.
+If you're waiting to see when the policy will take effect, [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the [Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) to see the DistributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus
