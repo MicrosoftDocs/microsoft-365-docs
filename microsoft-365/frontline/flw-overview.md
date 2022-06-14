@@ -85,6 +85,9 @@ Equip your employees with industry-specific devices tailored for their needs.
 | Corporate communications | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer. Bring it all together with Viva Connections. | Microsoft Teams: Meet <br> SharePoint <br> Yammer <br>Viva Connections |
 | Communicate with customers | Integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need. | Virtual appointments <br> Microsoft Forms |
 
+
+- Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
+
 ### Wellbeing & engagement scenarios
 
 | Scenario | Description | Apps |

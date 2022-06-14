@@ -111,7 +111,30 @@ Configure Phase 1 of the frontline Teams experience to mimic the consumer tools 
 
 ### Technical and pilot team configuration
 
-To configure your pilot, we recommend using the Frontline Worker onboarding wizard. You can also manually configure your pilot.
+To get ready to set up Microsoft 365 for frontline workers, here's what you need to do:
+
+1. [Prepare your organization's network for Teams](/microsoftteams/prepare-network).
+1. Purchase the appropriate licenses for the people in your pilot. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
+1. Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients).
+
+After you've prepared, you can use the Setup guides to set up and configure Microsoft 365 and the services included with it, such as Microsoft Teams, Exchange Online, SharePoint, and OneDrive.
+
+#### Use the Setup guides to set up Microsoft 365
+
+The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterprise/setup-guides-for-microsoft-365) that walk you through the steps to set up the products, security features, and collaboration tools in Microsoft 365. The setup guides are accessible from the [Setup guidance page](https://aka.ms/setupguidance) in the Microsoft 365 admin center.
+
+1. Use the [Prepare your environment](https://aka.ms/prepareyourenvironment) guide to prepare your organization's environment for Microsoft 365 and Office 365 services.
+1. Use the [Microsoft 365 setup](https://aka.ms/microsoft365setupguide) guide to set up productivity tools, security policies, and device management capabilities. You can also use this advisor to set up and configure your organization's devices.
+1. Follow the [Email setup guide](https://aka.ms/office365setup) if you are providing email for your frontline managers and workers. Your pilot users can also install the Outlook app to use for their email.
+
+Depending on the scenarios you want to enable with your pilot, you should also consider setting up the following services:
+
+1. Use the [SharePoint setup guide](https://aka.ms/spoguidance) to set up [SharePoint](/sharepoint/sharepoint-online) to share documents and create sites.
+1. Use the [OneDrive setup guide](https://aka.ms/ODfBquickstartguide) to set up [OneDrive](/onedrive) for file storage, sharing, collaboration, and syncing capabilities.
+1. Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeExperienceDashboard) to engage and inform your frontline workers with Microsoft Teams and Viva Connections.
+1. Use the  [Yammer deployment advisor](https://aka.ms/yammerdeploymentguide) to connect your workforce across your company with [Yammer](/yammer).
+
+When you have setup and configured all of the other services you need, you can set up Microsoft Teams. We recommend you use the Frontline Worker onboarding wizard to set up your pilot for Teams.
 
 #### Use the Frontline Worker onboarding wizard to kick off your pilot (recommended)
 
@@ -137,6 +160,13 @@ For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to ge
 **Keep the channels simple**. We recommend resisting the urge to create a channel for every possible topic of conversation and instead keep things very simple. It’s ok if channels are created over time as needed.
 
 :::image type="content" source="media/firstline-worker-channels-tab.png" alt-text="Screenshot of Channels tab":::
+
+After you have Teams set up and you have your teams and channels created, you can configure any additional frontline apps that you want to use in the pilot, including:
+
+- [Bookings](bookings-virtual-visits.md) to schedule appointments with clients or customers.
+- [Shifts](shifts-for-teams-landing-page.md) to schedule your frontline workforce.
+- [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) to build learning and training experiences for employees.
+
 
 #### Invite the frontline manager and frontline workers
 
@@ -176,44 +206,3 @@ Now that you’ve successfully completed your first pilot with an initial group 
     - Would you want one team for the whole region or individual teams for each location?
 - Expand the features provided.
     - Was there a key feature that your frontline workers suggested I your feedback forms, like Shifts, that you didn’t include in your initial feature set?
-
-## Step 1: Set up Microsoft 365 for frontline workers and configure device support
-
-To get ready for your rollout, here's what you need to do:
-
-1. [Prepare your organization's network for Teams](/microsoftteams/prepare-network.md). This includes configuring your Microsoft 365 or Office 365 domain, SharePoint Online, Exchange Online, and OneDrive for Business.
-1. Purchase the appropriate licenses for the people in your pilot. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
-1. Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients.md).
-
-The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterprise/setup-guides-for-microsoft-365) that walk you through the steps to set up the products, security features, and collaboration tools in Microsoft 365. The setup guides are accessible from the [Setup guidance page](https://aka.ms/setupguidance) in the Microsoft 365 admin center.
-
-1. Use the [Prepare your environment](https://aka.ms/prepareyourenvironment) guide to prepare your organization's environment for Microsoft 365 and Office 365 services.
-1. Use the [Microsoft 365 setup](https://aka.ms/microsoft365setupguide) guide to set up productivity tools, security policies, and device management capabilities. You can also use this advisor to set up and configure your organization's devices.
-
-## Step 2: Set up email
-
-If you are providing email for your frontline managers and workers, set it up in Microsoft Exchange Online. Your pilot users can also install the Outlook app to use for their email.
-
-- Follow the [Email setup guide](https://aka.ms/office365setup) in the Microsoft 365 admin center to get started.
-
-## Step 3: Set up teams and apps
-
-1. Use [Microsoft Teams setup](https://aka.ms/teamsguidance) guide provides your organization with guidance to set up team workspaces that host real-time conversations through messaging, calls, and audio or video meetings for both team and private communication and configure guest access for those teams.
-1. Configure any [policy packages](/microsoftteams/manage-policy-packages) you want to use in the Microsoft Teams admin centers. For example, you can use the Frontline Manager and Frontline Worker policy packages, or if you are in the healthcare industry, the Healthcare clinical worker policy package.
-1. [Create the teams](/microsoftteams/get-started-with-teams-create-your-first-teams-and-channels) for your pilot, and make sure they have the apps you need for the [scenarios](/flw-overview.md#choose-your-scenarios) you are implementing. For example, in addition to the standard Teams communications apps like Chat, your scenario might call for apps like:
-
-- [Bookings](bookings-virtual-visits.md) to schedule appointments with clients or customers.
-- [Shifts](shifts-for-teams-landing-page.md) to schedule your frontline workforce.
-- [OneDrive](/onedrive) for file storage, sharing, collaboration, and syncing capabilities. See the [OneDrive setup guide](https://aka.ms/ODfBquickstartguide) to get started.
-- [SharePoint](/sharepoint/sharepoint-online) to share documents and create sites. See the [SharePoint setup guide](https://aka.ms/spoguidance) to get started.
-- [Viva Connections](/viva/connections/guide-to-setting-up-viva-connections) to engage and inform your frontline workers. See the [Employee experience dashboard](https://aka.ms/EmployeeExperienceDashboard) guide to get set up.
-- [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) to build learning and training experiences for employees.
-- [Yammer](/yammer) to connect your workforce across your company. Use the  [Yammer deployment advisor](https://aka.ms/yammerdeploymentguide) prepares your Yammer network by adding domains, defining admins, and combining Yammer networks. Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
-
-## Now, onboard your pilot users and monitor usage and feedback
-
-You are now ready to onboard and train your pilot frontline personnel and start gathering feedback.
-
-- [Onboard early adoptions](/microsoftteams/get-started-with-teams-onboard-early-adopters)
-- [Monitor usage and feedback in Microsoft Teams](/microsoftteams/get-started-with-teams-monitor-usage-and-feedback)
-
