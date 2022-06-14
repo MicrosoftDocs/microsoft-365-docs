@@ -57,6 +57,9 @@ While enabled by default, there might be some cases that require you to disable 
 > Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
 
 ## Configure Network Protection
+>[!NOTE] 
+>Network Protection on Microsoft Defender for Endpoint is now in public preview. The following information relates to prerelease of the product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to configure MAM support for Network protection in iOS devices.
 
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
