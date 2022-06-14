@@ -32,7 +32,7 @@ Network Protection on Microsoft Defender for Endpoint is now in public preview. 
 
 It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from Android devices. 
 
-If you are interested in participating in this public preview, please share your tenant id with us on networkprotection@microsoft.com. For more information, see [network protection](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#network-protection).
+If you are interested in participating in this public preview, please share your tenant id with us on networkprotection@microsoft.com. For more information, see [network protection](/microsoft-365/security/defender-endpoint/android-configure).
 
 >[!NOTE]
 >Microsoft Defender is no longer supported for versions below 1.0.3011.0302. Users are requested to upgrade to latest versions to keep their devices secure.
