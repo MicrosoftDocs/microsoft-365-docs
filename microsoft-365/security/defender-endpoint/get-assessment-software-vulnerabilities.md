@@ -111,6 +111,7 @@ RecommendationReference|String|A reference to the recommendation ID related to t
 RecommendedSecurityUpdate (optional)|String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
 RecommendedSecurityUpdateId (optional)|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
 RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
+SecurityUpdateAvailable|Boolean|Indicates whether a security update is available for the software.
 SoftwareName|String|Name of the software product.|Chrome
 SoftwareVendor|String|Name of the software vendor.|Google
 SoftwareVersion|String|Version number of the software product.|81.0.4044.138
