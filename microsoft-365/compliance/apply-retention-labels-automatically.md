@@ -322,7 +322,7 @@ To consider when auto-applying retention labels to cloud attachments:
 
 - Only newly shared cloud attachments will be auto-labeled for retention.
 
-- When a user is added to a Teams conversation with access to full history, for that user, only attachments shared in the conversation up to 48 hours before their inclusion will be retained.
+- When a user is added to a Teams conversation with access to the full history, for that user, only attachments shared in the conversation up to 48 hours before their inclusion will be retained.
 
 - Cloud attachments shared outside Teams and Outlook aren't supported.
 
