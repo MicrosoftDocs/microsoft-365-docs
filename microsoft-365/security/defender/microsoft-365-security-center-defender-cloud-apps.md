@@ -68,7 +68,7 @@ The image and the table below lists the changes in navigation between Microsoft 
 | Connected apps | remaining in Defender for Cloud Apps portal |
 
 > [!NOTE]
-> The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is available for all users except for those with the scope roles as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+> The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users except for those with the roles defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## What's changed
 
