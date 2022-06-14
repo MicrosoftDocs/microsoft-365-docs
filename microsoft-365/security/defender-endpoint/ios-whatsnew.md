@@ -56,7 +56,7 @@ On January 25, 2022, we announced the general availability of Threat and Vulnera
 
 
 ## 1.1.28250101
-- **Integration with Tunnel** - Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. For more information, see [Microsft Tunnel Overview](/mem/intune/protect/microsoft-tunnel-overview).
+- **Integration with Tunnel** - Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. For more information, see [Microsoft Tunnel Overview](/mem/intune/protect/microsoft-tunnel-overview).
 - **Zero-touch onboard for enrolled iOS devices** enrolled through Microsoft Endpoint Manager (Intune) is generally available. For more information, see [Zero touch onboarding of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/ios-install#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 - Bug fixes.
 
@@ -79,7 +79,7 @@ On January 25, 2022, we announced the general availability of Threat and Vulnera
 
 ## 1.1.20240103
 - Device Health card - Device Health card notifies end-users about any pending software updates.
-- Usability enhancements - End-users can now disable the Defender for Endpoint VPN from the MSDefender app itself. Prior to this update, end-users had to disable VPN only from the Settings app.
+- Usability enhancements - End-users can now disable the Defender for Endpoint VPN from the Microsoft Defender app itself. Prior to this update, end-users had to disable VPN only from the Settings app.
 - Bug fixes.
 
 ## 1.1.20020101
