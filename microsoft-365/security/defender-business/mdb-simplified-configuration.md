@@ -33,10 +33,6 @@ To onboard devices and configure security settings for your company's devices, y
 2. [Learn more about the simplified configuration process in Defender for Business](#why-we-recommend-the-simplified-configuration-process).
 3. [Proceed to your next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Review your setup and configuration options
 

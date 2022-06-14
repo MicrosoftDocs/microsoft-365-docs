@@ -48,10 +48,6 @@ Use this article as a guide to managing your security policies and settings.
 6. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 7. [Proceed to your next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Choose where to manage security policies and devices
 

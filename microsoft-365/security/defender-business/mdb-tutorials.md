@@ -21,10 +21,6 @@ ms.collection:
 
 This article describes some scenarios to try and several tutorials and simulations that are available for Defender for Business. These resources show how Defender for Business can work for your company.
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Try these scenarios
 
