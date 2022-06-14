@@ -239,7 +239,7 @@ The reported message will be marked as a false positive or a false negative. An 
 
      When you're finished, click **Apply**.
 
-     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Filter options for email admin submissions.":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Filter options for email attachment admin submissions.":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
