@@ -61,7 +61,7 @@ Microsoft Purview offers the following compliance solutions to help your organiz
 
 - [Insider risk management](#detect-and-act-on-risk-activities-with-insider-risk-management)
 - [Communication compliance](#detect-and-act-on-inappropriate-and-sensitive-messages-with-communication-compliance)
-- [Information barriers](#restrict-communication-collaboration-between-users-with-information-barriers)
+- [Information barriers](#restrict-communication-&-collaboration-between-users-with-information-barriers)
 - [Records management](#manage-business-legal-or-regulatory-record-keeping-requirements-with-records-management)
 - [Audit (Premium) and Audit (Standard)](#log-search-for-audited-activities-in-sharepoint-and-onedrive-with-audit-premium-or-audit-standard)
 - [eDiscovery (Premium) and eDiscovery (Standard)](#identify-manage-data-for-legal-cases-with-ediscovery-premium-or-ediscovery-standard)
