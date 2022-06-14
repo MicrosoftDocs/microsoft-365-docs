@@ -42,7 +42,9 @@ Microsoft Defender for Endpoint has the capability of detecting unmanaged and ma
 
 ## Web Protection and VPN
 
-By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint on iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
+By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that Anti-phishing and custom indicators (URL and IP addresses) are supported as part of Web Protection. Web Content Filtering is currently not supported on iOS.
+
+Defender for Endpoint on iOS uses a VPN in order to provide this capability. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
 While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
 
@@ -51,7 +53,7 @@ While enabled by default, there might be some cases that require you to disable 
 1. Toggle off **Connect On Demand** to disable VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![VPN config connect on demand.](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
@@ -141,18 +143,18 @@ Follow the steps below to create a compliance policy against jailbroken devices.
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Compliance policies** -> **Create Policy**. Select "iOS/iPadOS" as platform and click **Create**.
 
     > [!div class="mx-imgBorder"]
-    > ![Create Policy.](images/ios-jb-policy.png)
+    > :::image type="content" source="images/ios-jb-policy.png" alt-text="The Create Policy tab" lightbox="images/ios-jb-policy.png":::
 
 2. Specify a name of the policy, for example "Compliance Policy for Jailbreak".
 3. In the compliance settings page, click to expand **Device Health** section and click **Block** for **Jailbroken devices** field.
 
     > [!div class="mx-imgBorder"]
-    > ![Policy Settings.](images/ios-jb-settings.png)
+    > :::image type="content" source="images/ios-jb-settings.png" alt-text="The Compliance settings tab" lightbox="images/ios-jb-settings.png":::
 
-4. In the **Action for noncompliance** section, select the actions as per your requirements and select **Next**.
+4. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
 
     > [!div class="mx-imgBorder"]
-    > ![Policy Actions.](images/ios-jb-actions.png)
+    > :::image type="content" source="images/ios-jb-actions.png" alt-text="The Actions for noncompliance tab" lightbox="images/ios-jb-actions.png":::
 
 5. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
 6. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
@@ -163,6 +165,24 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 
 > [!NOTE]
 > Defender for Endpoint on iOS supports creating custom indicators only for IP addresses and URLs/domains.
+
+## Configure option to send in-app feedback 
+
+Customers now have the option to configure the ability to send feedback data to Microsoft within the Defender for Endpoint app. Feedback data helps Microsoft improve  products and troubleshoot issues.
+
+> [!NOTE]
+> For US Government cloud customers, feedback data collection is **disabled** by default. 
+
+Use the following steps to configure the option to send feedback data to Microsoft:
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+1. Give the policy a name, **Platform > iOS/iPadOS**, select the profile type.
+1. Select **Microsoft Defender for Endpoint** as the target app.
+1. In Settings page, select **Use configuration designer** and add **DefenderSendFeedback** as the key and value type as **Boolean**
+   - To remove the ability of end-users to provide feedback, set the value as `false` and assign this policy to users. By default, this value is set to `true`. For US Government customers, the default value is set to 'false'.
+   - For users with key set as `true`, there will be an option to send Feedback data to Microsoft within the app (Menu > Help & Feedback > Send Feedback to Microsoft)
+1. Click **Next** and assign this profile to targeted devices/users.
+
 
 ## Report unsafe site
 

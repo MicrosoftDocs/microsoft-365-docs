@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - SharePoint site usage"
+title: "Microsoft 365 admin center SharePoint site usage reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -31,7 +31,7 @@ As a Microsoft 365 admin, the Reports dashboard shows you the activity overview 
 ## How to get to the SharePoint site usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
 
 ## Show user details in the reports
 
@@ -71,11 +71,11 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Site owner principal name  |The email address of the owner of the site. |
 |Last activity date (UTC)  | The date of the last time file activity was detected or a page was viewed on the site.  |
 |Site sensitivity label ID  | The sensitivity label on the site.  |
-|External sharing  | The external sharable settings on the site.  |
+|External sharing  | The value of the external sharing setting for the site. This value does not reflect changes to the effective setting made by site sensitivity labels. If you use sensitivity labels, use the [data access governance reports](/sharepoint/data-access-governance-reports) to get the correct values.|
 |Unmanaged device policy  | The site access policy for unmanaged devices.  |
 |Geo location  | The Geo location of the site.  |
 |Files  |The number of files on the site. |
-|Active files  | The number of active files on the site.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.  |
+|Active files  | The number of active files on the site. A file is considered active if it has been saved, synced, modified, or shared within the specified time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.  |
 |Storage used (MB)  |The amount of storage currently being used on the site.  |
 |Storage allocated (MB)  |The maximum amount of storage allocated for the site.  |
 |Page views  |The number of times pages were viewed on the site.  |
