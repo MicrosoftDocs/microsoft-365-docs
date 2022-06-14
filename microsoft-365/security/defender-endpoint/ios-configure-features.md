@@ -74,6 +74,7 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
    [!div class="mx-imgBorder"]
    ![Add configuration value.](images/addiosconfigvalue.png)
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
+
   |Key| Default (true-enable, false-disable)|Description|
   |---|---|---|
   |DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
