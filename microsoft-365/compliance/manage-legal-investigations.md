@@ -41,7 +41,7 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
 
 ### Use scripts for advanced scenarios
 
-Like the previous section that listed scripts for content search scenarios, we've also created some Security & Compliance Center PowerShell scripts to help you manage eDiscovery cases.
+Like the previous section that listed scripts for content search scenarios, we've also created some Security & Compliance PowerShell scripts to help you manage eDiscovery cases.
   
 - [Create a eDiscovery hold report](create-a-report-on-holds-in-ediscovery-cases.md) that contains information about all holds associated with eDiscovery cases in your organization.
 

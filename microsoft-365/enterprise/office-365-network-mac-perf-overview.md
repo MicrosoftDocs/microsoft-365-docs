@@ -29,8 +29,8 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 > [!div class="mx-imgBorder"]
 > ![Network performance page.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
->[!NOTE]
->Network connectivity in the Admin Center supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
+> [!NOTE]
+> Network connectivity in the Admin Center supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
 
 When you first navigate to the network performance page, you'll have to configure your locations in order to see the map of global network performance, a network assessment scoped to the entire tenant, percentage of your users working remotely vs onsite, and a list of current issues to take action on and/or to research further. From the overview pane, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -121,7 +121,7 @@ You can view a table view of the locations where they can be filtered, sorted, a
 
 ## Remote worker assessment and user connection metrics
 
-We classify network traffic logs as remote or onsite users and show their percentages in the user connection metrics section of the overview pane. For cities where you have remote users, you'll find the location specific remote network assessment score when you open that location’s page. The locations list will have both office locations and remote worker cities, which can be filtered and sorted. We provide the remote worker assessment score, with points breakdown for Exchange, SharePoint and Teams.
+We classify network traffic logs as remote or onsite users and show their percentages in the user connection metrics section of the overview pane. For cities where you have remote users, you'll find the location specific remote network assessment score when you open that location's page. The locations list will have both office locations and remote worker cities, which can be filtered and sorted. We provide the remote worker assessment score, with points breakdown for Exchange, SharePoint and Teams.
 
 Home user networking insights are aggregated and reported at a city level and limited to cities with a minimum of 5 remote employees. We are not identifying individual employees working from home.
 
@@ -197,14 +197,46 @@ In the CSV file, a discovered city location shows in the userEntered column as b
    > [!div class="mx-imgBorder"]
    > ![CSV import ready message.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
+## CQD TSV Import for LAN subnet office locations
+
+If you've uploaded building data to your Call Quality Dashboard, you can add those locations here to start assessing their network connectivity. This won't affect your existing locations.
+
+[Go to Tenant Data Upload](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload) in Call Quality Dashboard. If you've uploaded your building data, you'll see an option to download it to a .tsv file. Download the .tsv file from Call Quality Dashboard, then upload it in the CQD flyout following the steps below. If you want to create the .tsv file manually, please align the schema with that in Upload building data file, or try the CSV Import for LAN subnet office locations instead.
+
+1. In the main Connectivity to Microsoft 365 window, click the **Locations** tab.
+
+2. Click the **Manage multiple locations** button just above the locations list.
+
+   > [!div class="mx-imgBorder"]
+   > ![Manage multiple locations menu.](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. Click the **Add locations from Call Quality Dashboard**, the **Add locations from Call Quality Dashboard** flyout will appear.
+
+   > [!div class="mx-imgBorder"]
+   > ![Add locations from Call Quality Dashboard flyout.](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. Click the **Browse** button next to the **Select a .tsv file to upload** field and select the saved TSV file. Please make sure the value in the file is tab separated.
+
+5. The file will be automatically validated and parsed to the list of office locations. If there are validation errors, the **We couldn't upload your file** flyout appears to list the errors.
+
+   > [!div class="mx-imgBorder"]
+   > ![We couldnt upload your file flyout.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. If there are no errors in the file, you will see the message: _Your file test.tsv is uploaded and ready. Select Import to upload your information._
+
+   > [!div class="mx-imgBorder"]
+   > ![Select a .tsc file to upload.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. Click **Upload** button at the bottom of the panel to upload the office locations.
+
 ## FAQ
 
 ### What is a Microsoft 365 service front door?
 
 The Microsoft 365 service front door is an entry point on Microsoft's global network where Office clients and services terminate their network connection. For an optimal network connection to Microsoft 365, it is recommended that your network connection is terminated into the closest Microsoft 365 front door.
 
->[!NOTE]
->Microsoft 365 service front door has no direct relationship to the Azure Front Door Service product available in the Azure marketplace.
+> [!NOTE]
+> Microsoft 365 service front door has no direct relationship to the Azure Front Door Service product available in the Azure marketplace.
 
 ### What is an optimal Microsoft 365 service front door?
 

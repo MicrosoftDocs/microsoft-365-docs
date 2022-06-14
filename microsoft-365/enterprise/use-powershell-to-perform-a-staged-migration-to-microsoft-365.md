@@ -38,7 +38,7 @@ Estimated time to complete this task: 2-5 minutes to create a migration batch. A
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in the [Recipients Permissions](/exchange/recipients-permissions-exchange-2013-help) topic.
 
-To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for instructions.
+To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for instructions.
 
 For a full list of migration commands, see [Move and migration cmdlets](/powershell/exchange/).
 
