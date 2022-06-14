@@ -108,6 +108,8 @@
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Add users
       href: m365bp-add-users.md
+    - name: Reset passwords
+      href: m365bp-reset-passwords.md
     - name: Remove data from devices
       href: m365bp-remove-company-data.md
     - name: Reset devices to factory settings
