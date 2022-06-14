@@ -29,28 +29,26 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a subscription for Microsoft 365 Business Premium."
+description: "Reset passwords for users in Microsoft 365 Business Premium."
 ---
 
 # Reset passwords in Microsoft 365 Business Premium
 
-Learn how to reset passwords for yourself and your users when you have Microsoft 365 Business Premium.
+Learn how to reset passwords for yourself and your users when needed. As an admin, you can reset a user's password if they forget it.
 
-## User-initiated password resets
+## User-initiated password reset
 
 When a user requests a new password, a password reset request is sent through email.
 
 1. To reset the password, open the app launcher and select **Admin** and log in with your credentials.
 
-1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
+2. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
 
-1. Select **Auto-generate password** to have a random password automatically created.
+3. Select **Auto-generate password** to have a random password automatically created.
 
-1. Select **Reset**.
+4. Select **Reset**.
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
-  
-## Perform an admin-initiated password reset
+## Admin-initiated password reset
 
 There are times when an admin may want to force password resets on accounts.
 
@@ -106,13 +104,13 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+To reset passwords for multiple accounts, use PowerShell. Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
 
-For overview information, see [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+For overview information, see [Manage Microsoft 365 with PowerShell](../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## Related content
   
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
-[Reset passwords](../add-users/reset-passwords.md) (article)\
-[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
+[Let users reset their own passwords](../admin/add-users/let-users-reset-passwords.md)
+[Reset passwords in Microsoft 365 for business](../admin/add-users/reset-passwords.md)
+[Set an individual user's password to never expire](../admin/add-users/set-password-to-never-expire.md) 
+[Set the password expiration policy for your organization](../admin/manage/set-password-expiration-policy.md)

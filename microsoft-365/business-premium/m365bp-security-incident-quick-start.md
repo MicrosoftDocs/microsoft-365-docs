@@ -148,9 +148,9 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 1. In the navigation pane, choose **Action center**.
 
-1. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus or antimalware protection, automated investigations, manual response activities, or live response sessions.
+2. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus or antimalware protection, automated investigations, manual response activities, or live response sessions.
 
-1. Select the **History** tab to view a list of completed actions.
+3. Select the **History** tab to view a list of completed actions.
 
 ### Remediate an item
 
@@ -162,11 +162,11 @@ Several reports are available in the Microsoft 365 Defender portal.
 
 1. Select **Reports** from the Navigation pane.
 
-1. Choose a report to review. Each report displays a number of pertinent categories for that report.
+2. Choose a report to review. Each report displays a number of pertinent categories for that report.
 
-1. Click **View details** to see deeper information for each category.
+3. Click **View details** to see deeper information for each category.
 
-1. Select the title of a particular threat to see details specific to it.
+4. Select the title of a particular threat to see details specific to it.
 
 ### Run a simulation tutorial
 
@@ -174,7 +174,7 @@ It's always a good idea to increase the security preparedness for you and your t
 
 1. Choose **Tutorials** from the Navigation pane.
 
-1. Read the walkthrough for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
+2. Read the walkthrough for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
 
 ## See also
 
