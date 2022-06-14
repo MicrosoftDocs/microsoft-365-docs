@@ -131,26 +131,29 @@ When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing lin
 
 When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will create a sharing link that’s accessible by anyone in the organization.
 
-Scenario
-
-Storage and ownership
-
-Sharing settings
-
-Sharing experience
-
-Add the whiteboard to a channel or chat from a desktop or mobile device
-
-Storage: ODB
-
-Owner: User who creates the whiteboard
-
-Not applicable
-
-In-tenant users: Can initiate, view and collaborate
+|Scenario  |Storage and ownership  |Sharing settings  |Sharing experience  |
+|---------|---------|---------|---------|
+|Add the whiteboard to a channel or chat from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Not applicable  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Not supported  |
 
 
-External users: Not supported
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Creating and sharing in Whiteboard native clients
 When sharing whiteboards from the web, desktop or mobile clients, users can choose specific people or create a sharing link that’s accessible by anyone in the organization. Share links for external users outside of the organization are not currently supported.
