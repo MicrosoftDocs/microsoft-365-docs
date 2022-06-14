@@ -116,7 +116,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
 
-For overview information, see [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+For overview information, see [Manage Microsoft 365 with PowerShell](../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## Force a password change for all users in your business
 
@@ -124,7 +124,7 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
   
 ## Related content
   
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
-[Reset passwords](../add-users/reset-passwords.md) (article)\
-[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) 
+[Reset passwords](../add-users/reset-passwords.md) 
+[Set an individual user's password to never expire](set-password-to-never-expire.md) 
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) 
