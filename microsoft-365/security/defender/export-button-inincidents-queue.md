@@ -29,6 +29,10 @@ ms.technology: m365d
 
 We are thrilled to announce that the new "export button" feature in the Microsoft 365 Defender incident queue is now available in public preview.
 
+This Export button feature is depicted in the following screenshot:
+
+:::image type="content" source="../../media/defender/incidents-queue-with-export-button.png" alt-text="Export button in the Incidents page  of the Microsoft 365 Defender portal":::
+
 This feature provides the following functionalities:
 - Quick export of the incident queue-related data to a CSV file.
 - Export of data based on filters and customizable time ranges(for more information, see Filters and time ranges)
