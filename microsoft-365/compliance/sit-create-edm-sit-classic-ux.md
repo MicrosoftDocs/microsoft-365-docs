@@ -1,5 +1,5 @@
 ---
-title: "Get started with exact data match based sensitive information types"
+title: "Create exact data match Sensitive information type classic experience"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,11 +19,24 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 ---
 
-# Get started with exact data match based sensitive information types
+# Create exact data match Sensitive information type classic experience
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each phase using the classic experience.
+
+## Applies to
+
+- Classic experience
+
+If you want to create an EDM SIT using the new experience see, [Create EDM SIT new experience](sit-create-edm-sit-unified-ux.md).
+
+## Before you begin
+
+Make sure you review:
+
+- [Learn about EDM based SITs](sit-learn-about-exact-data-match-based-sits.md)
+- [Get started with exact data match based sensitive information types overview](sit-get-started-exact-data-match-based-sits-overview.md)
 
 ## The work flow at a glance
 
