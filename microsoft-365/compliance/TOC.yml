@@ -1001,6 +1001,8 @@
           href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Audit New Search
+          href: audit-new-search.md
         - name: Export, configure, and view audit log records
           href: export-view-audit-log-records.md
         - name: Use a PowerShell script to search the audit log
