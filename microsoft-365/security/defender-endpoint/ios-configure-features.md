@@ -25,7 +25,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
 > Defender for Endpoint on iOS would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
@@ -67,19 +67,22 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
    [!div class="mx-imgBorder"]
    ![Add configuration policy.](images/addiosconfig.png)
+   
 2. Provide a name and description to uniquely identify the policy. Then click on ‘Select Public apps’ and choose ‘Microsoft Defender’ for Platform iOS/IPadOS
    [!div class="mx-imgBorder"]
    ![Name the configuration.](images/nameiosconfig.png)
+   
 3. In Settings page, add 'DefenderNetworkProtectionEnable’ as the key and value as 'false' to disable Network Protection. (Network protection is enabled by default)
    [!div class="mx-imgBorder"]
    ![Add configuration value.](images/addiosconfigvalue.png)
+   
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 
-  |Key| Default (true-enable, false-disable)|Description|
-  |---|---|---|
-  |DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
-  |DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
-  |DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
+  >|Key| Default (true-enable, false-disable)|Description|
+  >|---|---|---|
+  >|DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
+  >|DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
+  >|DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
   
 5. In Assignments section, admin can choose groups of users to include and exclude from the policy
     > [!div class="mx-imgBorder"]
