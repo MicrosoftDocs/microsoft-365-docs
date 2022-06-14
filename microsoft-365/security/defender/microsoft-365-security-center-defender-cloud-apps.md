@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender
+title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
 ms.prod: microsoft-365-enterprise
@@ -21,7 +21,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ---
 
-# Microsoft Defender for Cloud Apps in Microsoft 365 Defender
+# Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -63,9 +63,12 @@ The image and the table below lists the changes in navigation between Microsoft 
 | Files | remaining in Defender for Cloud Apps portal |
 | Users and accounts | Assets -> Identities |
 | Security configuration | remaining in Defender for Cloud Apps portal |
-| Identity security posture | remaining in Defender for Cloud Apps portal |
+| Identity security posture | [Microsoft Defender for Identity's identity security posture assessments](/defender-for-identity/isp-overview) |
 | OAuth apps | Cloud apps -> OAuth apps |
 | Connected apps | remaining in Defender for Cloud Apps portal |
+
+> [!NOTE]
+> The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for those with the roles defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## What's changed
 
