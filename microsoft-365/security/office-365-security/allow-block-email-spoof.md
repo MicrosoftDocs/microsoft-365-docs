@@ -28,9 +28,11 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-You can use the Microsoft 365 Defender portal or PowerShell to allow or block emails and spoofed sender entries in the Tenant Allow/Block List.
+You can use the Microsoft 365 Defender portal or PowerShell to allow or block emails (including spoofing emails) using the Tenant Allow/Block List.
 
-## Create block sender entries using the Microsoft 365 Defender portal
+## Create block sender entries 
+
+### Use the Microsoft 365 Defender portal
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -51,32 +53,7 @@ You can use the Microsoft 365 Defender portal or PowerShell to allow or block em
 > [!NOTE]
 > The emails from these senders will be blocked as _high confidence spam_ (SCL = 9).
 
-### Create spoofed sender block entries
-
-**Notes**:
-
-- Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
-- When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
-- Entries for spoofed senders never expire.
-- Spoof supports both allow and block.
-
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
-
-2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
-
-3. In the **Add new domain pairs** flyout that appears, configure the following settings:
-   - **Add new domain pairs with wildcards**: Enter one domain pair per line, up to a maximum of 20. For details about the syntax for spoofed sender entries, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-   - **Spoof type**: Select one of the following values:
-     - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
-     - **External**: The spoofed sender is in an external domain.
-   - **Action**: Select **Block**.
-
-4. When you're finished, click **Add**.
-
-> [!NOTE]
-> The emails from these senders will be blocked as _phish_.
-
-## Add block sender entries using PowerShell
+### Use PowerShell
 
 To add block sender entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -92,17 +69,9 @@ New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattacker
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### Add spoofed sender block entries
+## Create allow sender entries 
 
-To add spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
-```
-
-For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
-
-## Add sender allows using the Submissions portal
+### Use Microsoft 365 Defender
 
 Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender.
 
@@ -133,41 +102,7 @@ Note that admins can't add allows directly to the Tenant Allow/Block List. Inste
 > - When that entity (sender, domain, URL, file) is encountered again, all filters associated with that entity are skipped.
 > - During mail flow, if the rest of the filters find the email containing this entity to be clean, the email will be delivered. For example, a sender allow (when authentication passes) will bypass all verdicts except malware and high confidence phishing associated with an attachment or URL.
 
-### Create spoofed sender allow entries 
-
-#### Use Microsoft 365 Defender
-
-> [!NOTE]
->
-> - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
-> - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
-> - Entries for spoofed senders never expire.
-> - Spoof supports both allow and block. URL supports only block.
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Add icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
-
-3. In the **Add new domain pairs** flyout that appears, configure the following settings:
-   - **Add new domain pairs with wildcards**: Enter one domain pair per line, up to a maximum of 20. For details about the syntax for spoofed sender entries, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-   - **Spoof type**: Select one of the following values:
-     - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
-     - **External**: The spoofed sender is in an external domain.
-   - **Action**: Select **Allow**.
-
-4. When you're finished, click **Add**.
-
-#### Use PowerShell
-
-To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell), use the following syntax:
-
-```powershell
-New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
-```
-
-For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
-
-## View sender entries in the Tenant Allow/Block List
+## View sender entries 
 
 To view block sender entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -176,35 +111,7 @@ Get-TenantAllowBlockListItems -ListType <Sender> [-Entry <SenderValue | FileHash
 ```
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### View spoofed sender entries
-
-To view spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Get-TenantAllowBlockListSpoofItems [-Action <Allow | Block>] [-SpoofType <External | Internal>
-```
-
-This example returns all spoofed sender entries in the Tenant Allow/Block List.
-
-```powershell
-Get-TenantAllowBlockListSpoofItems
-```
-
-This example returns all allow spoofed sender entries that are internal.
-
-```powershell
-Get-TenantAllowBlockListSpoofItems -Action Allow -SpoofType Internal
-```
-
-This example returns all blocked spoofed sender entries that are external.
-
-```powershell
-Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
-```
-
-For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
-
-## Modify allow or block sender entries in the Tenant Allow/Block List
+## Modify sender entries 
 
 To modify allow or block sender entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -214,23 +121,7 @@ Set-TenantAllowBlockListItems -ListType <Sender> -Ids <"Id1","Id2",..."IdN"> [<-
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### Modify allow or block spoofed sender entries from the Tenant Allow/Block List
-
-To modify allow or block spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
-```
-
-This example changes spoofed sender entry from allow to block.
-
-```powershell
-Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
-```
-
-For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
-
-## Remove allow or block sender entries from the Tenant Allow/Block List
+## Remove sender entries 
 
 To remove allow or block sender entries from the Tenant Allow/Block List, use the following syntax:
 
@@ -239,16 +130,6 @@ Remove-TenantAllowBlockListItems -ListType <Sender> -Ids <"Id1","Id2",..."IdN">
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
-
-### Remove allow or block spoofed sender entries from the Tenant Allow/Block List
-
-To remove allow or block spoof sender entries from the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
-```
-
-For detailed syntax and parameter information, see [Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
 
 ## Domain pair syntax for spoofed sender entries in the Tenant Allow/Block List
 
@@ -280,6 +161,131 @@ For example, you add an allow entry for the following domain pair:
 - **Infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
+
+## Create blocked spoofed sender entries
+
+### Use Microsoft 365 Defender
+
+**Notes**:
+
+- Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
+- When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
+- Entries for spoofed senders never expire.
+- Spoof supports both allow and block.
+
+1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+
+2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
+
+3. In the **Add new domain pairs** flyout that appears, configure the following settings:
+   - **Add new domain pairs with wildcards**: Enter one domain pair per line, up to a maximum of 20. For details about the syntax for spoofed sender entries, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+   - **Spoof type**: Select one of the following values:
+     - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+     - **External**: The spoofed sender is in an external domain.
+   - **Action**: Select **Block**.
+
+4. When you're finished, click **Add**.
+
+> [!NOTE]
+> The emails from these senders will be blocked as _phish_.
+
+### Use PowerShell
+
+To add spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
+```
+
+For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
+
+## Create allowed spoofed sender entries 
+
+### Use Microsoft 365 Defender
+
+> [!NOTE]
+>
+> - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
+> - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
+> - Entries for spoofed senders never expire.
+> - Spoof supports both allow and block. URL supports only block.
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Add icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
+
+3. In the **Add new domain pairs** flyout that appears, configure the following settings:
+   - **Add new domain pairs with wildcards**: Enter one domain pair per line, up to a maximum of 20. For details about the syntax for spoofed sender entries, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+   - **Spoof type**: Select one of the following values:
+     - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+     - **External**: The spoofed sender is in an external domain.
+   - **Action**: Select **Allow**.
+
+4. When you're finished, click **Add**.
+
+### Use PowerShell
+
+To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell), use the following syntax:
+
+```powershell
+New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
+```
+
+For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
+
+## View spoofed sender entries
+
+To view spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Get-TenantAllowBlockListSpoofItems [-Action <Allow | Block>] [-SpoofType <External | Internal>
+```
+
+This example returns all spoofed sender entries in the Tenant Allow/Block List.
+
+```powershell
+Get-TenantAllowBlockListSpoofItems
+```
+
+This example returns all allow spoofed sender entries that are internal.
+
+```powershell
+Get-TenantAllowBlockListSpoofItems -Action Allow -SpoofType Internal
+```
+
+This example returns all blocked spoofed sender entries that are external.
+
+```powershell
+Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
+```
+
+For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
+
+## Modify spoofed sender entries 
+
+To modify allow or block spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
+```
+
+This example changes spoofed sender entry from allow to block.
+
+```powershell
+Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
+```
+
+For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
+
+## Remove spoofed sender entries 
+
+To remove allow or block spoof sender entries from the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
+```
+
+For detailed syntax and parameter information, see [Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
 
 ## Related articles
 

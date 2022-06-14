@@ -30,7 +30,9 @@ ms.prod: m365-security
 
 You can use the Microsoft 365 Defender portal or PowerShell to allow or block files in the Tenant Allow/Block List.
 
-## Create block file entries in the Tenant Allow/Block List
+## Create block file entries 
+
+### Use Microsoft 365 Defender
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -51,7 +53,7 @@ You can use the Microsoft 365 Defender portal or PowerShell to allow or block fi
 > [!NOTE]
 > The emails containing these files will be blocked as _malware_.
 
-## Use PowerShell to add block file entries to the Tenant Allow/Block List
+## Use PowerShell
 
 To add block file entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -65,7 +67,9 @@ New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695e
 ```
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-## Add file allows using the Submissions portal
+## Create allow file entries
+
+### Use Microsoft 365 Defender
 
 Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 
@@ -89,7 +93,7 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 >
 > When the file is encountered again, it is not sent for detonation or reputation checks, and all other file-based filters are skipped. During mail flow, if the rest of the filters find the email that contains the file to be clean, then the email will be delivered.
 
-## View block file entries in the Tenant Allow/Block List
+## View file entries 
 
 To view block file entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -104,7 +108,7 @@ Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa
 ```
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-## Modify allow or block file entries in the Tenant Allow/Block List
+## Modify file entries
 
 To modify allow or block file entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -114,7 +118,7 @@ Set-TenantAllowBlockListItems -ListType <FileHash> -Ids <"Id1","Id2",..."IdN"> [
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-## Remove allow or block file entries from the Tenant Allow/Block List
+## Remove file entries 
 
 To remove allow or block file entries from the Tenant Allow/Block List, use the following syntax:
 

@@ -29,114 +29,6 @@ ms.prod: m365-security
 
 You can use the Microsoft 365 Defender portal or PowerShell to allow or block URLs in the Tenant Allow/Block List.
 
-## Create block URL entries in the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
-
-3. In the **Block URLs** flyout that appears, configure the following settings:
-   - **Add URLs with wildcards**: Enter one URL per line, up to a maximum of 20. For details about the syntax for URL entries, see the URL syntax section in [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-   - **Never expire**: Do one of the following steps:
-     - Verify the setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
-
-       or
-
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on.](../../media/scc-toggle-on.png).
-   - **Optional note**: Enter descriptive text for the entries.
-
-4. When you're finished, click **Add**.
-
-> [!NOTE]
-> The emails containing these URLs will be blocked as _phish_.
-
-## Add block URL entries using PowerShell
-
-To add block URL entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-New-TenantAllowBlockListItems -ListType <Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-This example adds a block URL entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
-
-```powershell
-New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
-```
-
-For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-## Add URL allows using the Submissions portal
-
-Allow URLs on the **Submissions** page in Microsoft 365 Defender.
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
-
-2. On the **Submissions** page, select the **URLs** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
-
-3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the URL.
-
-4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
-
-5. Turn on the **Allow URLs like this** option.
-
-6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
-
-7. When you're finished, click the **Submit** button.
-
-    :::image type="content" source="../../media/submit-url-for-analysis.png" alt-text="Submit URL for analysis" lightbox="../../media/submit-url-for-analysis.png":::
-
-> [!NOTE]
->
-> - When the URL is encountered again, the URL is not sent for detonation or reputation checks and all other URL-based filters are skipped.
-> - So for an email (containing this URL), during mail flow, if the rest of the filters find the email to be clean then the email will be delivered.
-
-## View block URL entries in the Tenant Allow/Block List
-
-To view block URL entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType <URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-This example returns all blocked URLs.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-## Modify allow or block URL entries in the Tenant Allow/Block List
-
-To modify allow or block URL entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Set-TenantAllowBlockListItems -ListType <URL> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-This example changes the expiration date of the specified block URL entry.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "5/30/2020"
-```
-
-For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-## Remove allow or block URL entries from the Tenant Allow/Block List
-
-To remove allow or block URL entries from the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Remove-TenantAllowBlockListItems -ListType <URL> -Ids <"Id1","Id2",..."IdN">
-```
-This example removes the specified block URL entry from the Tenant Allow/Block List.
-
-```powershell
-Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
-```
-
-For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
-
 ## URL syntax for the Tenant Allow/Block List
 
 - IPv4 and IPv6 addresses are allowed, but TCP/UDP ports are not.
@@ -365,6 +257,118 @@ The following entries are invalid:
 
   - contoso.com/\*\*
   - contoso.com/\*/\*
+
+## Create block URL entries in the Tenant Allow/Block List
+
+### Use Microsoft 365 Defender
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
+
+3. In the **Block URLs** flyout that appears, configure the following settings:
+   - **Add URLs with wildcards**: Enter one URL per line, up to a maximum of 20. For details about the syntax for URL entries, see the URL syntax section in [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+   - **Never expire**: Do one of the following steps:
+     - Verify the setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
+
+       or
+
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on.](../../media/scc-toggle-on.png).
+   - **Optional note**: Enter descriptive text for the entries.
+
+4. When you're finished, click **Add**.
+
+> [!NOTE]
+> The emails containing these URLs will be blocked as _phish_.
+
+## Use PowerShell
+
+To add block URL entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+New-TenantAllowBlockListItems -ListType <Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
+```
+This example adds a block URL entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
+
+```powershell
+New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
+```
+
+For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
+
+## Create allow URL entries
+
+### Use Microsoft 365 Defender
+
+Allow URLs on the **Submissions** page in Microsoft 365 Defender.
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, select the **URLs** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the URL.
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
+
+5. Turn on the **Allow URLs like this** option.
+
+6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
+
+7. When you're finished, click the **Submit** button.
+
+    :::image type="content" source="../../media/submit-url-for-analysis.png" alt-text="Submit URL for analysis" lightbox="../../media/submit-url-for-analysis.png":::
+
+> [!NOTE]
+>
+> - When the URL is encountered again, the URL is not sent for detonation or reputation checks and all other URL-based filters are skipped.
+> - So for an email (containing this URL), during mail flow, if the rest of the filters find the email to be clean then the email will be delivered.
+
+## View URL entries
+
+To view block URL entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Get-TenantAllowBlockListItems -ListType <URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
+```
+
+This example returns all blocked URLs.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -Block
+```
+
+For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+
+## Modify URL entries 
+
+To modify allow or block URL entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Set-TenantAllowBlockListItems -ListType <URL> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+```
+
+This example changes the expiration date of the specified block URL entry.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "5/30/2020"
+```
+
+For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
+
+## Remove URL entries 
+
+To remove allow or block URL entries from the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType <URL> -Ids <"Id1","Id2",..."IdN">
+```
+This example removes the specified block URL entry from the Tenant Allow/Block List.
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
+```
+
+For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
 ## Related articles
 
