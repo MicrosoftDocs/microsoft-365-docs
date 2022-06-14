@@ -29,7 +29,7 @@ ms.technology: m365d
 
 We're thrilled to announce that the new "export button" feature in the Microsoft 365 Defender incident queue is now available in public preview.
 
-This Export button feature is depicted in the following screenshot:
+This **Export** button feature is depicted in the following screenshot:
 
 :::image type="content" source="../../media/defender/incidents-queue-with-export-button.png" alt-text="Export button in the Incidents page  of the Microsoft 365 Defender portal":::
 
