@@ -29,7 +29,7 @@ In addition, each MSP customer tenant must qualify for Lighthouse by meeting the
 
 - Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
 - Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license
-- Must have no more than 1000 licensed users
+- Must have no more than 2500 licensed users
 
 Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.
 
