@@ -207,7 +207,7 @@ You can verify cross-tenant mailbox migration configuration by running [Test-Mig
 
    > [!NOTE]
    >
-   > - Target tenant (see [Test-MigrationServerAvailability documentation](https://docs.microsoft.com/powershell/module/exchange/test-migrationserveravailability?view=exchange-ps) for usage):
+   > - Target tenant (see [Test-MigrationServerAvailability documentation](/powershell/module/exchange/test-migrationserveravailability) for usage):
    >
    >```powershell
    >   Test-MigrationServerAvailability <use switches from link above>
