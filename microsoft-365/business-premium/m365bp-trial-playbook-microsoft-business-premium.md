@@ -59,13 +59,13 @@ When you purchase the Microsoft 365 Business Premium trial, you have the option 
 
 ## Onboard and protect devices
 
-1. Visit the Defender portal at security.microsoft.com.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
 
-3. Now, [onboard devices](../security/defender-business/mdb-onboard-devices.md).
+3. [Onboard devices](../security/defender-business/mdb-onboard-devices.md).
 
-4. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md).
+4. [Review your security policies](../security/defender-business/mdb-configure-security-settings.md).
 
 ## Use Office apps on devices
 
