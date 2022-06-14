@@ -1,0 +1,27 @@
+# Add-in deployment email alerts
+
+When you deploy add-ins from the Integrated Apps page, you can now notify the assigned users about the newly deployed add-in by email. To send out the email notification, admins need to consent to sending email notification at the time of add-in deployment or user assignment updates.
+
+As of now, email notifications can be sent for deployment of Excel, PowerPoint, Outlook, and Word add-ins. Moreover, these emails are only for add-in assignments to specific users and groups.
+
+The following section provides more information about what the email alert would look like for the users the add-in is deployed to.
+
+## Email preview
+
+### Excel, PowerPoint, and Word add-ins
+
+The following are some key capabilities available to users as part of the email alert sent for Excel, PowerPoint, and Word add-in deployment.
+
+- Email provides details about the add-in such as brief description, deployment date, and supported Office Apps and respective versions.
+- Email provides buttons to launch the add-in in the respective Office Apps on the web, on Windows, and on Mac platforms to help make the add-in easier to discover. **Note**: The launch buttons are currently not supported for iPad clients.
+
+:::image type="content" source="../../media/email-preview-excel-powerpoint-word-add-in.png" alt-text="Preview of email for when Excel, PowerPoint, or Word add-ins are deployed.":::
+
+### Outlook add-ins
+
+The following are some key capabilities available to users as part of the email alert sent for Outlook add-in deployment.
+
+- Email provides details about the add-in such as brief description, deployment date, supported Outlook versions.
+- Email provides instructions about where to discover the deployed add-in across supported platforms: Windows, Mac, and web browser.
+
+:::image type="content" source="../../media/email-preview-outlook-add-in.png" alt-text="Preview of email for when Outlook add-ins are deployed.":::
