@@ -40,7 +40,7 @@ Running a pilot program is part of the overall adoption process. For more inform
 - [Enabling your frontline workers with Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
 - [3 ways to support frontline workers in a hybrid world](https://www.microsoft.com/microsoft-365/blog/2021/10/19/3-ways-to-support-frontline-workers-in-a-hybrid-world/)
 
-We recommend that you prepare for deployment by completing this 30-minute learning path: [Prepare for a Teams deployment with Microsoft 365](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/)
+We recommend that you prepare for deployment by completing this 30-minute learning path: [Prepare for a Teams deployment with Microsoft 365](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/).
 
 ## Steps to run a pilot program
 
@@ -48,10 +48,10 @@ We recommend that you prepare for deployment by completing this 30-minute learni
 >
 > * [Get your people together](#plan-your-pilot)
 > * [Plan your pilot](#plan-your-pilot)
-> * [Technical and pilot team configuration]()
-> * [Communicate]()
-> * [Measure]()
-> * [Iterate and expand]()
+> * [Configure Microsoft 365 and Teams](#configure-microsoft-365-and-teams)
+> * [Communicate](#communicate)
+> * [Measure](#measure)
+> * [Iterate and expand](#iterate-and-expand)
 
 ### Get your people together
 
@@ -89,7 +89,8 @@ For a successful pilot for frontline workers, simplicity is key! For most custom
 
 #### Not sure what consumer tools these users are currently using?
 
-Included in the frontline worker “Pilot in a Box” are sample user surveys. Utilize the pre-pilot survey to inventory the tools, capabilities, and scenarios.
+<!--Included in the frontline worker “Pilot in a Box” are sample user surveys. Utilize the pre-pilot survey to inventory the tools, capabilities, and scenarios.-->
+Use a pre-pilot survey to inventory the tools, capabilities and scenarios your users rely on today.
 
 #### Chat configuration options
 
@@ -109,7 +110,7 @@ Configure Phase 1 of the frontline Teams experience to mimic the consumer tools 
 - Do your frontline workers need Shifts?
 - Which chat configuration will you use?
 
-### Technical and pilot team configuration
+### Configure Microsoft 365 and Teams
 
 To get ready to set up Microsoft 365 for frontline workers, here's what you need to do:
 
