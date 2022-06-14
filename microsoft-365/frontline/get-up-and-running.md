@@ -149,4 +149,33 @@ You can assign updates to your team members. Team members can also submit update
 > [!NOTE]
 > The Updates app isn't pinned by default, but you can [add it from the Teams app store](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
-## Foster connections and boost morale
+## Foster connections and boost morale with Praise
+
+The Praise app in Teams helps you show appreciation to members of your team. You can send badges to team members to recognize their achievement, and team members can send badges to each other. You can also send badges in a channel conversation to recognize a group of people. Praise uses pre-made badges that call out positive qualities such as **Team Player** and **Awesome**.
+
+1. Open a Teams chat or channel. Below the space where you write a message, choose the Praise icon [image]() or select the ellipses (**...**) to find it.
+2. Select a badge from the **Badge** dropdown menu.
+3. Add the name of the people you want to praise and an optional description.
+4. Select **Preview** to check it, and then select **Send**.
+
+## Share training videos with your users
+
+Help your team get comfortable and confident using their Microsoft 365 capabilities with these training resources. Each of these articles and videos only takes a few minutes to go through.
+
+[Get started with Microsoft Teams](https://support.microsoft.com/office/get-started-with-microsoft-teams-b98d533f-118e-4bae-bf44-3df2470c2b12)
+
+[Get started with Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
+
+[Get started with Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)
+
+    Shifts also includes a clock in and out feature. [Learn how to clock in and out with Shifts](https://support.microsoft.com/office/clock-in-and-out-with-shifts-ae7b676c-7666-46c7-9f68-85ff54acec8b)
+
+[Get started with Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070)
+
+[Learn about Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3)
+
+[Learn about Lists](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)
+
+[Learn about the Updates mobile experience](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a#ID0EBF=Mobile)
+
+[Learn how to send Praise](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e)
