@@ -72,7 +72,7 @@ Microsoft Purview offers the following compliance solutions to help your organiz
 
 ### Detect and act on inappropriate and sensitive messages with communication compliance
 
-Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Microsoft Purview Communication Compliance](microsoft-365/compliance/communication-compliance-policies) helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
+Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance-policies) helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
 ### Restrict communication and collaboration between users with information barriers
 
