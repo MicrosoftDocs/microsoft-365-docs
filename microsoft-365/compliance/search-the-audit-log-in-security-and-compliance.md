@@ -63,6 +63,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
+| SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audited activities](#audited-activities) section in this article.
 
@@ -403,7 +404,7 @@ Click one of the following links to go to a specific table.
         [Encrypted message portal activities](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        
+        [SystemSync activities] (#systemsync-activities)
     :::column-end:::
     :::column:::
         
@@ -1100,6 +1101,18 @@ Each audit entry for a tracked message will contain the following fields:
 - OperationStatus - Indicates whether the indicated operation succeeded or failed.
 - AttachmentName - Name of the attachment.
 - OperationProperties - A list of optional properties, for example the number of OTP passcodes sent, or the email subject.
+
+### SystemSync activities
+
+The following table lists the activities for SystemSync that are logged in the Microsoft 365 audit log.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Data Share Created|DataShareCreated|When the data export is created by the user.|
+|Data Share Deleted|DataShareDeleted|When the data export is deleted by the user.|
+|Generate Copy Of Lake Data|GenerateCopyOfLakeData|When the copy of Lake Data is generated.|
+|Download Copy Of Lake Data|DownloadCopyOfLakeData|When the copy of Lake Data is downloaded.|
+
 
 ## Frequently asked questions
 
