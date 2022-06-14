@@ -281,7 +281,7 @@ The following entries are invalid:
 > [!NOTE]
 > The emails containing these URLs will be blocked as _phish_.
 
-## Use PowerShell
+### Use PowerShell
 
 To add block URL entries in the Tenant Allow/Block List, use the following syntax:
 

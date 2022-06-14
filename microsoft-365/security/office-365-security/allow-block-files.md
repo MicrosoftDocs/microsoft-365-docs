@@ -53,7 +53,7 @@ You can use the Microsoft 365 Defender portal or PowerShell to allow or block fi
 > [!NOTE]
 > The emails containing these files will be blocked as _malware_.
 
-## Use PowerShell
+### Use PowerShell
 
 To add block file entries in the Tenant Allow/Block List, use the following syntax:
 

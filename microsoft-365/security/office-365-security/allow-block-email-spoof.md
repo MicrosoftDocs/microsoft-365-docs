@@ -131,7 +131,7 @@ Remove-TenantAllowBlockListItems -ListType <Sender> -Ids <"Id1","Id2",..."IdN">
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-## Domain pair syntax for spoofed sender entries in the Tenant Allow/Block List
+## Domain pair syntax for spoofed sender entries
 
 A domain pair for a spoofed sender in the Tenant Allow/Block List uses the following syntax: `<Spoofed user>, <Sending infrastructure>`.
 
