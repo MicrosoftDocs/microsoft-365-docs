@@ -61,10 +61,10 @@ Microsoft Purview offers the following compliance solutions to help your organiz
 
 - [Insider risk management](#detect-and-act-on-risk-activities-with-insider-risk-management)
 - [Communication compliance](#detect-and-act-on-inappropriate-and-sensitive-messages-with-communication-compliance)
-- [Information barriers](#restrict-communication-&-collaboration-between-users-with-information-barriers)
+- [Information barriers](#restrict-communication-and-collaboration-between-users-with-information-barriers)
 - [Records management](#manage-business-legal-or-regulatory-record-keeping-requirements-with-records-management)
-- [Audit (Premium) and Audit (Standard)](#log-search-for-audited-activities-in-sharepoint-and-onedrive-with-audit-premium-or-audit-standard)
-- [eDiscovery (Premium) and eDiscovery (Standard)](#identify-manage-data-for-legal-cases-with-ediscovery-premium-or-ediscovery-standard)
+- [Audit (Premium) and Audit (Standard)](#log-and-search-for-audited-activities-in-sharepoint-and-onedrive-with-audit-premium-or-audit-standard)
+- [eDiscovery (Premium) and eDiscovery (Standard)](#identify-and-manage-data-for-legal-cases-with-ediscovery-premium-or-ediscovery-standard)
 
 ### Detect and act on risk activities with insider risk management
 
@@ -74,7 +74,7 @@ Microsoft Purview offers the following compliance solutions to help your organiz
 
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Microsoft Purview Communication Compliance](microsoft-365/compliance/communication-compliance-policies) helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
-### Restrict communication & collaboration between users with information barriers
+### Restrict communication and collaboration between users with information barriers
 
 [Microsoft Purview Information Barriers (IB)](/microsoft-365/compliance/information-barriers) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint Online, and OneDrive for Business. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
 
@@ -82,13 +82,13 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 [Microsoft Purview Records Management](/microsoft-365/compliance/manage-data-governance#microsoft-purview-records-management) helps an organization manage its legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes. For more information, see [Learn about records management](/microsoft-365/compliance/records-management).
 
-### Log & search for audited activities in SharePoint and OneDrive with Audit (Premium) or Audit (Standard)
+### Log and search for audited activities in SharePoint and OneDrive with Audit (Premium) or Audit (Standard)
 
 [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview) provide integrated solutions to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
 For more information about auditing solutions, see [Audit (Premium)](/microsoft-365/compliance/advanced-audit) and [Audit (Standard)](/microsoft-365/compliance/set-up-basic-audit).
 
-### Identify & manage data for legal cases with eDiscovery (Premium) or eDiscovery (Standard)
+### Identify and manage data for legal cases with eDiscovery (Premium) or eDiscovery (Standard)
 
 Electronic discovery, or eDiscovery, is the process of identifying, collecting, and auditing electronic information for legal, regulatory, or business reasons. You can use [Microsoft Purview eDiscovery solutions](/microsoft-365/compliance/ediscovery) to search for data and content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results for analysis and review.
 
