@@ -19,7 +19,11 @@ ms.collection:
 
 # Microsoft Defender for Business and Microsoft Partner Resources
 
-Managed service providers (MSPs) often use a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA). Using our APIs for custom integration, you can:
+Managed service providers (MSPs) often use a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA). 
+
+## Use APIs to integrate
+
+Using our APIs for custom integration, you can:
 
 - Get access to your customers' Microsoft 365 Defender portal​ to address alerts and incidents.
 - Get email notifications​ about new alerts or vulnerabilities across your customers' tenants.
@@ -30,11 +34,10 @@ Use the following resources to learn more:
 
 | Resource | Description |
 |:---|:---|
-| Defender for Business partner kit | https://aka.ms/MDBPartnerKit |
+| [Defender for Business partner kit](https://aka.ms/MDBPartnerKit) | The Defender for Business partner kit provides you with practical guidance, technical information, and customer-ready resources to market and sell Defender for Business to small and medium-sized businesses.  |
+| [Overview of management and APIs](../defender-endpoint/management-apis.md) | Defender for Business is built on Microsoft Defender for Endpoint, and is an integration-ready platform. This article describes how to automate workflows and innovate using the Defender for Endpoint APIs. |
+| [Configure managed security service provider integration](../defender-endpoint/configure-mssp-support.md) |  |
 
+## See also
 
-
-Reference​
-https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/management-apis?view=o365-worldwide​
-
-https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-mssp-support?view=o365-worldwide
+[Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)
