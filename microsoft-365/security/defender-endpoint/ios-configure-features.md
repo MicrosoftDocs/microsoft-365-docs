@@ -52,7 +52,7 @@ While enabled by default, there might be some cases that require you to disable 
 
 2. Click or tap the "i" button for Microsoft Defender for Endpoint.
 
-3. Toggle off **Connect On Demand** to disable VPN.
+3. Toggle off **Connect On Demand** to disable VPN. 
    :::image type="content" source="images/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
