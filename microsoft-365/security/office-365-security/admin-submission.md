@@ -227,7 +227,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -241,7 +241,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-attachment-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -276,7 +276,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/url-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/url-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -290,7 +290,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/url-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/url-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
