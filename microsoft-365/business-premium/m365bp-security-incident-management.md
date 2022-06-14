@@ -32,7 +32,7 @@ The security of your organization requires constant monitoring, and as threats a
 
 Watch a short video on a typical incident response.
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Zvew]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Zvew]
 
 To learn more about incident responses, use the following steps:
 
