@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
 ---
 # Protect your c-suite with priority account protection
@@ -43,7 +43,7 @@ To learn what priority account tags are see [Manage and monitor priority account
 [Review the differentiated protection for users tagged as priority accounts](../../office-365-security/configure-review-priority-account.md).
 
 ## PowerShell configuration
-If you want to achieve these steps via PowerShell, you can do this using the following cmdlets:
+If you want to achieve these steps via [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you can do this using the following cmdlets:
 1. View a list of priority accounts: **Get-User -IsVIP | select Identity**
 1. Add user to list of priority accounts: **Set-User -VIP:$true -Identity \<Identity\>**
 1. Remove user from list of priority accounts: **Set-User -VIP:$false -Identity \<Identity\>**
