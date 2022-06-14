@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 05/05/2022
+ms.date: 06/14/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -207,15 +207,18 @@ You can verify cross-tenant mailbox migration configuration by running [Test-Mig
 
    > [!NOTE]
    >
-   > - Target tenant:
+   > - Target tenant (see [Test-MigrationServerAvailability documentation](https://docs.microsoft.com/powershell/module/exchange/test-migrationserveravailability?view=exchange-ps) for usage):
    >
-   > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]"
-   >
-   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >```powershell
+   >   Test-MigrationServerAvailability <use switches from link above>
+   >   Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >```
    >
    > - Source tenant:
    >
-   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >```powershell
+   >   Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >```
 
 ### Move mailboxes back to the original source
 
@@ -238,7 +241,7 @@ Ensure the following objects and attributes are set in the target organization.
       - UserPrincipalName: UPN will align to the user's NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
       - Primary SMTPAddress: Primary SMTP address will align to the user's NEW company (for example, user@northwind.com).
       - TargetAddress/ExternalEmailAddress: MailUser will reference the user's current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress, which will cause move failures.
-      - You can’t add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you can’t maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.
+      - You can't add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you can't maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.
 
      Example **target** MailUser object:
 
@@ -457,7 +460,7 @@ Mailbox permissions include Send on Behalf of and Mailbox Access:
 
 - Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access to a user's mailbox as a delegate. This value is stored in Active Directory and currently does not move as part of the mailbox transition. If the source mailbox has publicDelegates set, you will need to restamp the publicDelegates on the target Mailbox once the MEU to Mailbox conversion completes in the target environment by running `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
 
-- Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using *Get-MailboxPermission* for TestUser_7 in both source and target tenants are shown below. Exchange cmdlets are prefixed with source and target accordingly.
+- Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using _Get-MailboxPermission_ for TestUser_7 in both source and target tenants are shown below. Exchange cmdlets are prefixed with source and target accordingly.
 
 Here is an example of the output of the mailbox permission before a move.
 
