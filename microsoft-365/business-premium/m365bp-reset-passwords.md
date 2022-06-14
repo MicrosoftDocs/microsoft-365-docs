@@ -34,13 +34,7 @@ description: "Reset passwords for users in Microsoft 365 Business Premium."
 
 # Reset passwords in Microsoft 365 Business Premium
 
-Learn how to reset passwords for yourself and your users when needed.
-
-## Watch: Reset a business password for a user
-
-Watch a short video about resetting user passwords.<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+Learn how to reset passwords for yourself and your users when needed. As an admin, you can reset a user's password if they forget it.
 
 ## User-initiated password reset
 
@@ -48,14 +42,12 @@ When a user requests a new password, a password reset request is sent through em
 
 1. To reset the password, open the app launcher and select **Admin** and log in with your credentials.
 
-1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
+2. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
 
-1. Select **Auto-generate password** to have a random password automatically created.
+3. Select **Auto-generate password** to have a random password automatically created.
 
-1. Select **Reset**.
+4. Select **Reset**.
 
-If you found this video helpful, check out the [Microsoft 365 admin training video library](../admin/admin-video-library.yml).
-  
 ## Admin-initiated password reset
 
 There are times when an Admin may want to force password resets on accounts.
@@ -86,13 +78,11 @@ Use these steps if you forgot your password but you're able to sign in to Micros
 
 5. Follow the steps in the wizard to reset your password. It uses your alternate contact info to verify you're the right person to reset your password.
 
-If you forgot your password and can't sign in:
-
-- Ask another global admin in your business to reset your password for you.
-
-- Make sure you've provided alternate contact information, including a mobile phone number.
-
-- Or, [Get support for Microsoft 365 for business](../admin/get-help-support.md).
+> [!IMPORTANT]
+> If you forgot your admin password and can't sign in:
+> - Ask another global admin in your business to reset your password for you.
+> - Make sure you've provided alternate contact information, including a mobile phone number.
+> - [Contact technical support](../admin/get-help-support.md).
 
 ## Reset all business passwords for everyone at the same time
 
@@ -114,7 +104,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+To reset passwords for multiple accounts, use PowerShell. Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
 
 For overview information, see [Manage Microsoft 365 with PowerShell](../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
