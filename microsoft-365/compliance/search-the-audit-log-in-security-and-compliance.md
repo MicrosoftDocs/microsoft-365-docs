@@ -442,7 +442,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Recycled all minor versions of file|FileVersionsAllMinorsRecycled|User deletes all minor versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled all versions of file|FileVersionsAllRecycled|User deletes all versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled version of file|FileVersionRecycled|User deletes a version from the version history of a file. The deleted version is moved to the site's recycle bin.|
-|Renamed file|FileRenamed|User renames a document on a site.|
+|Renamed file|FileRenamed|User renames a document.|
 |Restored file|FileRestored|User restores a document from the recycle bin of a site.|
 |Uploaded file|FileUploaded|User uploads a document to a folder on a site.|
 |Viewed page|PageViewed|User views a page on a site. This doesn't include using a Web browser to view files located in a document library. Once a user views a page, the PageViewed event is not logged again for the same user for same page for the next five minutes.|
