@@ -60,7 +60,7 @@ Features in sender intelligence are critical for catching spam, bulk, impersonat
     - **SPF** can reject mails based on DNS TXT records that list IP addresses and servers allowed to send mail on the organization's behalf.
     - **DKIM** provides an encrypted signature that authenticates the sender.
     - **DMARC** lets admins mark SPF and DKIM as required in their domain and enforces alignment between the results of these two technologies.
-    - **ARC**  builds on DMARC to work with forwarding in mailing lists while recording an authentication chain.
+    - **ARC** builds on DMARC to work with forwarding in mailing lists while recording an authentication chain.
 
 3. **Spoof intelligence** is capable of filtering those allowed to 'spoof' (that is, those sending mail on behalf of another account, or forwarding for a mailing list) from malicious senders who imitate organizational or known external domains. It separates legitimate 'on behalf of' mail from senders who spoof to deliver spam and phishing messages.
 
