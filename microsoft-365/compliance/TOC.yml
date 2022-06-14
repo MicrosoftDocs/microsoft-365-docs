@@ -1,6 +1,8 @@
-- name: Microsoft Purview compliance
+- name: Microsoft Purview risk & compliance solutions
   href: index.yml
-- name: What's new in Microsoft Purview
+- name: Learn about Microsoft Purview risk & compliance solutions
+  href: purview-compliance.md
+- name: What's new in Microsoft Purview risk & compliance solutions
   href: whats-new.md
 - name: Compliance trials
   items:
