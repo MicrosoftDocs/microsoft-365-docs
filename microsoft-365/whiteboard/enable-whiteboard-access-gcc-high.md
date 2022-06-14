@@ -121,10 +121,9 @@ When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing lin
 >[!NOTE]
 > External sharing during a Teams meeting is not yet available but will be added in future.
 
-
 |Scenario |Storage and ownership |Sharing settings |Sharing experience |
 |---------|---------|---------|---------|
-|Start the whiteboard from a desktop or mobile device |Storage: ODB<br><br>Owner: User who creates the whiteboard |Not yet available |In-tenant users: Can create, view, and collaborate<br><br>External users: Not yet available<br><br>Shared device accounts: Not yet available |
+|Start the whiteboard from a desktop or mobile device |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard |Not yet available |In-tenant users: Can create, view, and collaborate<br><br>External users: Not yet available<br><br>Shared device accounts: Not yet available |
 |Start the whiteboard from a Surface Hub or Microsoft Teams Rooms |Not yet available |         |         |
 
 ### Add as a tab in Teams channels and chats
@@ -135,65 +134,21 @@ When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will c
 |---------|---------|---------|---------|
 |Add the whiteboard to a channel or chat from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Not applicable  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Not supported  |
 
+### Create and share in Whiteboard native clients
+
+When you share a whiteboard from the web, desktop, or mobile clients, you can choose specific people or create a sharing link that’s accessible by anyone in the organization. 
+
+>[!NOTE]
+> Share links for external users outside of the organization are not currently supported, but are planned for a future release.
+
+|Scenario  |Storage and ownership  |Sharing settings  |Sharing experience  |
+|---------|---------|---------|---------|
+|Create the whiteboard from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Not applicable  |In-tenant users: Can share within their organization<br><br>External users: Sharing with external users is not supported at this time  |
+|Create the whiteboard from a Surface Hub  |Storage: Local<br><br>Owner: None  |Not applicable  |In-tenant users (coming soon): User will be able to sign in to save and share the board<br><br>External users: Sharing with external users is not supported at this time |
+|Create the whiteboard from Microsoft Teams Rooms  |Not yet available         |         |         |
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Creating and sharing in Whiteboard native clients
-When sharing whiteboards from the web, desktop or mobile clients, users can choose specific people or create a sharing link that’s accessible by anyone in the organization. Share links for external users outside of the organization are not currently supported.
-
-Scenario
-
-Storage and ownership
-
-Sharing settings
-
-Sharing experience
-
-Create the whiteboard from a desktop or mobile device
-
-Storage: ODB
-
-Owner: User who creates the whiteboard
-
-Not applicable 
-
-In-tenant users: Can share within their organization
-
-External users: Sharing with external users is not supported at this time
- 
-
-Create the whiteboard from a Surface Hub
-
-Storage: Local
-
-Owner: None
-
-Not applicable 
-
-In-tenant users (coming soon): User will be able to sign in to save and share the board
-
-External users: Sharing with external users is not supported at this time
- 
-
-Create the whiteboard from an MTR
-
-Not yet available
-
-External sharing links are not yet available outside but are planned for a future release.
