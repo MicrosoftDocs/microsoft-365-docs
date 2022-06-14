@@ -25,15 +25,15 @@ Microsoft 365 for frontline workers includes a variety of capabilities to help y
 |[Enable quick communication](#enable-quick-communication) |Help your frontline team stay in touch. |Chats and Walkie Talkie |
 |[Manage frontline schedules, time, and attendance](#manage-frontline-schedules-time-and-attendance) |Set up a schedule that you can manage in Teams. |Shifts |
 |[Manage work items](#manage-work-items) |Use Teams and Microsoft 365 apps to assign and keep track of work items. |Tasks, Lists, Approvals, and Updates |
-|[Foster connections and boost morale]() |Send praise to your team members to help them feel appreciated. |Praise |
+|[Foster connections and boost morale](#foster-connections-and-boost-morale-with-praise) |Send praise to your team members to help them feel appreciated. |Praise |
 
-The apps that support these capabilities are included in Teams and most are ready to use right away. Some you’ll need to add to your team or set up before you’re ready to use it. Also, most of these apps are pinned by default, meaning that members of your frontline team will see them by default in the app bar, which is the bar at the bottom of the Teams mobile clients (iOS and Android) and on the side of the Teams desktop client. You can always add apps that aren’t pinned based on your needs. [Learn how to add apps in Teams]().
+The apps that support these capabilities are included in Teams and most are ready to use right away. Some you’ll need to add to your team or set up before you’re ready to use it. Also, most of these apps are pinned by default, meaning that members of your frontline team will see them by default in the app bar, which is the bar at the bottom of the Teams mobile clients (iOS and Android) and on the side of the Teams desktop client. You can always add apps that aren’t pinned based on your needs. [Learn how to add apps in Teams](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
 This article will help you get Teams for frontline workers, set up a team, and then configure the features and apps you need to get your team going with these capabilities.
 
 ## Get Teams for frontline workers
 
-First, you'll need to [initiate the frontline trial experience]() from within the Tasks app in Microsoft Teams. If you already have Microsoft 365 for frontline workers, you can skip this step and follow the rest of this article to learn how to get the most out of your licenses.
+First, you'll need to [initiate the frontline trial experience](https://support.microsoft.com/office/learn-more-about-the-frontline-trial-in-microsoft-teams-73a429fc-f211-4360-8329-704bc102ba98) from within the Tasks app in Microsoft Teams. If you already have Microsoft 365 for frontline workers, you can skip this step and follow the rest of this article to learn how to get the most out of your licenses.
 
 > [!NOTE]
 > The Frontline Trial is based on the Microsoft 365 F3 license.
@@ -44,11 +44,11 @@ Use the inbuilt communication tools in Microsoft Teams to enable your frontline 
 
 ### Teams
 
-You and your frontline workers can create teams to help specific groups stay in touch. For example, you could create a Cashiers team so all your cashiers can communicate with each other and share information. If there’s a policy change that only applies to cashiers, you can post it in the Cashiers team so it reaches the people who need to see it. [Learn more about teams in Teams]()
+You and your frontline workers can create teams to help specific groups stay in touch. For example, you could create a Cashiers team so all your cashiers can communicate with each other and share information. If there’s a policy change that only applies to cashiers, you can post it in the Cashiers team so it reaches the people who need to see it. [Learn how to create a team in Teams](https://support.microsoft.com/office/set-up-groups-and-teams-a79afa20-aa01-44a3-b33d-5eaa72f6404f).
 
 ### Chats
 
-Teams chat allows members of your frontline workforce to communicate seamlessly without having to use their personal messaging apps. [Learn more about chats]()
+Teams chat allows members of your frontline workforce to communicate seamlessly without having to use their personal messaging apps. [Learn more about chats](https://support.microsoft.com/office/first-things-to-know-about-chats-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2).
 
 ### Activity
 
@@ -58,7 +58,7 @@ You can @Mention a team member to call their attention to a conversation. @Menti
 
 Walkie Talkie empowers your workers to have real-time conversations with workers at any location without leaving their station. For example, if an employee is helping a customer and needs assistance, they can use Walkie Talkie to contact an expert or manager without having to walk away from the customer.
 
-Walkie Talkie is supported on Android devices with Google Mobile Services (GMS) and iOS devices. [Learn more about Walkie Talkie]
+Walkie Talkie is supported on Android devices with Google Mobile Services (GMS) and iOS devices.
 
 ## Manage frontline schedules, time, and attendance
 
@@ -70,7 +70,7 @@ To create a schedule in Shifts:
 3. Select the ellipses (**…**) and then **Rename** to name the group.
 4. To create a shift for a team member, select their row and then select **More options > add shift**.
 
-Watch [this video]() to learn more about creating schedules in shifts.
+Watch [this video](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) to learn more about creating schedules in shifts.
 
 If your organization is already using a workforce management system for scheduling, your IT team can integrate it with Teams to pull all of your schedules into shifts. Right now Shifts is able to integrate with Blue Yonder and Reflexis workforce management systems. [Learn more about connecting your workforce management system](/microsoftteams/expand-teams-across-your-org/shifts/shifts-connectors).
 
@@ -94,7 +94,7 @@ Tasks is powered by Planner, and lets you create and assign work items for your 
 
 5. Once you've created and assigned the task, it will appear in the Tasks app for members of the team. If you don't assign the task to a specific person, it will still show up for the team.
 
-Tasks is powered by Planner. Watch [this playlist]() to learn more about how you can use Planner and Tasks together.
+Tasks is powered by Planner. Watch [this playlist](https://support.microsoft.com/office/organize-your-team-s-tasks-in-microsoft-planner-c931a8a8-0cbb-4410-b66e-ae13233135fb) to learn more about how you can use Planner and Tasks together.
 
 ### Approvals
 
@@ -114,13 +114,13 @@ You can create templates for your frontline team that will allow them to submit 
 7. If the template looks good to you, choose **Publish**.
 8. Members of your team will now be able to submit approval requests from the template you created.
 
-[Learn more about creating templates for your team in Approvals]()
+[Learn more about creating templates for your team in Approvals](https://support.microsoft.com/office/discover-templates-in-approvals-c33ecf9f-b745-4287-b104-ac69469745e0).
 
 ### Lists
 
 The Lists app helps you track information and organize work. You and your team can create lists for inventory, customer requests, supply needs, and more.
 
-You can create a list from a template by choosing **+New List** from the Lists app. [Learn about what templates are available]().
+You can create a list from a template by choosing **+New List** from the Lists app. [Learn about what templates are available](https://support.microsoft.com/office/list-templates-in-microsoft-365-62f0e4cf-d55d-4f89-906f-4a34e036ded1).
 
 If you have a spreadsheet that you collaborate on with your team, you can convert it to a list.
 
@@ -144,8 +144,6 @@ You can assign updates to your team members. Team members can also submit update
 4. In Workflow settings, choose who you want to submit this update, view this update, and the times and due dates for the update.
 5. The submitters you assigned will now be able to see and submit the required update.
 
-[Learn more about using Updates]()
-
 > [!NOTE]
 > The Updates app isn't pinned by default, but you can [add it from the Teams app store](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
@@ -153,7 +151,8 @@ You can assign updates to your team members. Team members can also submit update
 
 The Praise app in Teams helps you show appreciation to members of your team. You can send badges to team members to recognize their achievement, and team members can send badges to each other. You can also send badges in a channel conversation to recognize a group of people. Praise uses pre-made badges that call out positive qualities such as **Team Player** and **Awesome**.
 
-1. Open a Teams chat or channel. Below the space where you write a message, choose the Praise icon [image]() or select the ellipses (**...**) to find it.
+1. Open a Teams chat or channel. Below the space where you write a message, choose the Praise icon or select the ellipses (**...**) to find it.
+    ![Screenshot of the Praise icon in a chat](media/praise-icon.png)
 2. Select a badge from the **Badge** dropdown menu.
 3. Add the name of the people you want to praise and an optional description.
 4. Select **Preview** to check it, and then select **Send**.
