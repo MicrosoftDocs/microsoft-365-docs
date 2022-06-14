@@ -1,7 +1,7 @@
 ---
-title: Create an Application to access Microsoft Defender for Endpoint without a user
+title: Partner access through Microsoft Defender for Endpoint APIs
 ms.reviewer:
-description: Learn how to design a web app to get programmatic access to  Microsoft Defender for Endpoint without a user.
+description: Learn how to design a web app to get programmatic access to  Microsoft Defender for Endpoint on behalf of your users.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 ms.prod: m365-security
 ms.mktglfcycl: deploy

@@ -104,7 +104,7 @@ For more information on Azure Active Directory tokens, see the [Azure AD tutoria
 
 ### Get an access token on behalf of a user using PowerShell
 
-Use the MSAL.PS library to acquire access tokens with Delegated permissions.
+Use the MSAL.PS library to acquire access tokens with Delegated permissions. Run the following commands to get access token on behalf of a user:
 
 ```PowerShell
 Install-Module -Name MSAL.PS # Install the MSAL.PS module from PowerShell Gallery
