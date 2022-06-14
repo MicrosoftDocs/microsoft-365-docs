@@ -15,7 +15,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Get started creating exact data match based sensitive information types using the new experience.
+description: Create the sample file to use in the new experience.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -24,6 +24,12 @@ ms.custom: seo-marvel-apr2020
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each phase using the classic experience.
+
+## Applies to
+
+- New experience
+
+If you want to create an EDM SIT using the classic experience see, [Create EDM SIT classic experience](sit-create-edm-sit-classic-ux.md).
 
 ## Before you begin
 
@@ -42,3 +48,10 @@ For example, if your actual data looks like this and uses tab delimited (.tsv) f
 Then your sample file must have the same column headers, but use synthetic values for the rows, like this
 
 ![image showing a tab separated table with four columns and three rows of synthetic representative data](../media/sit-edm-tsv-sample-file.png)
+
+> [!TIP]
+> In the new experience, you choose between uploading the sample file or entering the sample file values manually. Either way, we recommend creating the sample file.
+
+## Next step
+
+- [Create EDM SIT schema and rule package](sit-create-edm-sit-unified-ux-schema-rule-package.md)
