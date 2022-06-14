@@ -82,7 +82,7 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
     |DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
   
 5. In Assignments section, admin can choose groups of users to include and exclude from the policy.
-   :::image type="content" source="images/assigniosconfig.png" alt-text="Assign configuration. lightbox="images/assigniosconfig.png":::
+   :::image type="content" source="images/assigniosconfig.png" alt-text="Assign configuration." lightbox="images/assigniosconfig.png":::
    
 6. Review and create the configuration policy.
 
