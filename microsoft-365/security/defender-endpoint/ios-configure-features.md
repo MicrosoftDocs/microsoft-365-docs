@@ -56,6 +56,30 @@ While enabled by default, there might be some cases that require you to disable 
 > [!NOTE]
 > Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
 
+## Configure Network Protection
+Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to configure MAM support for Network protection in iOS devices.
+
+1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
+    > [!div class="mx-imgBorder"]
+    > ![Add configuration policy.](images/addiosconfig.png)
+2. Provide a name and description to uniquely identify the policy. Then click on ‘Select Public apps’ and choose ‘Microsoft Defender’ for Platform iOS/IPadOS
+    > [!div class="mx-imgBorder"]
+    > ![Name the configuration.](images/nameiosconfig.png)
+3. In Settings page, add 'DefenderNetworkProtectionEnable’ as the key and value as 'false' to disable Network Protection. (Network protection is enabled by default)
+    > [!div class="mx-imgBorder"]
+    > ![Add configuration value.](images/addiosconfigvalue.png)
+4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
+
+|Key| Default (true-enable, false-disable)|Description|
+|---|---|---|
+|DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
+|DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
+|DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
+1. In Assignments section, admin can choose groups of users to include and exclude from the policy
+    > [!div class="mx-imgBorder"]
+    > ![Assign configuration.](images/assigniosconfig.png)
+1. Review and create the configuration policy.
+
 ## Co-existence of multiple VPN profiles
 
 Apple iOS does not support multiple device-wide VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
