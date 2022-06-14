@@ -75,11 +75,12 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
     > ![Add configuration value.](images/addiosconfigvalue.png)
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 
-|Key| Default (true-enable, false-disable)|Description|
-|---|---|---|
-|DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
-|DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
-|DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
+  |Key| Default (true-enable, false-disable)|Description|
+  |---|---|---|
+  |DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
+  |DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
+  |DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
+
 1. In Assignments section, admin can choose groups of users to include and exclude from the policy
     > [!div class="mx-imgBorder"]
     > ![Assign configuration.](images/assigniosconfig.png)
