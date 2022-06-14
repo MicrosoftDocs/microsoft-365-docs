@@ -47,8 +47,8 @@ Sensitivity and retention labels can then be automatically applied to make the c
 This classification method is well suited to content that isn't easily identified by either the manual or automated pattern-matching methods. This method of classification is more about using a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying.
 
 > [!NOTE]
-> In Preview - You can view the trainable classifiers in content explorer by expanding **Trainable Classifiers** in the filters panel. The trainable classifiers will automatically display the number of incidents found in SharePoint, Teams, and OneDrive, without requiring any labeling.
-> If you do not want to use this feature, you must file a request with Microsoft Support to disable out-of-the-box classification. This will disable the scanning of your sensitive and labeled content before you create labeling policies.
+> In Preview - You can view the trainable classifiers in content explorer by expanding **Trainable Classifiers** in the filters panel. The trainable classifiers will automatically display the number of incidents found in SharePoint, Teams, and OneDrive, without requiring any labeling policies.
+> If you do not want to use this feature, you must file a request with Microsoft Support to disable out-of-the-box classification for Content Explorer. This will disable the scanning of your sensitive data that is not used in any labeling policies and prevent it from being displayed in Content Explorer.
 
 ### Where you can use classifiers
 
