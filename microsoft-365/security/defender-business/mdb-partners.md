@@ -19,14 +19,14 @@ ms.collection:
 
 # Microsoft Defender for Business and Microsoft Partner Resources
 
-Managed service providers (MSPs) often use a sophisticated stack of capabilities. If you're an MSP, you can integrate Microsoft Defender for Business and Microsoft 365 Business Premium with remote monitoring and management (RMM) tools and professional service automation (PSA). You can use APIs to integrate Defender for Business and Microsoft 365 Business Premium. Custom integration enables you to:
+Managed service providers (MSPs) often use a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA). Using our APIs for custom integration, you can:
 
-- Get access to your customers' Microsoft 365 Defender portal​
-- Get email notifications​ about new alerts or vulnerabilities
-- Fetch incidents and alerts through your security information and event management (SIEM) tools​ 
-- Orchestrate remediation actions, such as actions following automated investigations
+- Get access to your customers' Microsoft 365 Defender portal​ to address alerts and incidents.
+- Get email notifications​ about new alerts or vulnerabilities across your customers' tenants.
+- Fetch and view incidents and alerts with your security information and event management (SIEM) tools.​ 
+- Orchestrate remediation actions, such as approving actions following automated investigations, or taking manual response actions on a device.
 
-Use the following resources to learn more.
+Use the following resources to learn more:
 
 | Resource | Description |
 |:---|:---|
