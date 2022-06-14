@@ -27,7 +27,7 @@ ms.technology: m365d
 
 # Export button to migrate incidents queue data to CSV files
 
-We are thrilled to announce that the new "export button" feature in the Microsoft 365 Defender incident queue is now available in public preview.
+We're thrilled to announce that the new "export button" feature in the Microsoft 365 Defender incident queue is now available in public preview.
 
 This Export button feature is depicted in the following screenshot:
 
@@ -41,9 +41,9 @@ This feature provides the following functionalities:
 
 The **Export** button enables you to migrate data that is determined by filters or time range-based data to a CSV file.
 
-For example, you want to create reports to :
-- get an idea of how many high-severity incidents you had in the last 30 days
-- to know who is your most productive analyst. 
+For example, you can create reports to:
+- Get an idea of how many high-severity incidents you had in the last 30 days
+- To know who is your most productive analyst. 
 
 You can quickly export this data from the incident page to a CSV file and find out.
 
