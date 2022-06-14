@@ -29,12 +29,12 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a subscription for Microsoft 365 Business Premium."
+description: "Reset passwords for users in Microsoft 365 Business Premium."
 ---
 
 # Reset passwords in Microsoft 365 Business Premium
 
-Learn how to reset passwords for yourself and your users when you have Microsoft 365 Business Premium.
+Learn how to reset passwords for yourself and your users when needed.
 
 ## Watch: Reset a business password for a user
 
