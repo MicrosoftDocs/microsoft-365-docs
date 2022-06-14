@@ -65,26 +65,25 @@ While enabled by default, there might be some cases that require you to disable 
 Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to configure MAM support for Network protection in iOS devices.
 
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
-    > [!div class="mx-imgBorder"]
-    > ![Add configuration policy.](images/addiosconfig.png)
+   [!div class="mx-imgBorder"]
+   ![Add configuration policy.](images/addiosconfig.png)
 2. Provide a name and description to uniquely identify the policy. Then click on ‘Select Public apps’ and choose ‘Microsoft Defender’ for Platform iOS/IPadOS
-    > [!div class="mx-imgBorder"]
-    > ![Name the configuration.](images/nameiosconfig.png)
+   [!div class="mx-imgBorder"]
+   ![Name the configuration.](images/nameiosconfig.png)
 3. In Settings page, add 'DefenderNetworkProtectionEnable’ as the key and value as 'false' to disable Network Protection. (Network protection is enabled by default)
-    > [!div class="mx-imgBorder"]
-    > ![Add configuration value.](images/addiosconfigvalue.png)
+   [!div class="mx-imgBorder"]
+   ![Add configuration value.](images/addiosconfigvalue.png)
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
-
   |Key| Default (true-enable, false-disable)|Description|
   |---|---|---|
   |DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
   |DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
   |DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
-
-1. In Assignments section, admin can choose groups of users to include and exclude from the policy
+  
+5. In Assignments section, admin can choose groups of users to include and exclude from the policy
     > [!div class="mx-imgBorder"]
     > ![Assign configuration.](images/assigniosconfig.png)
-1. Review and create the configuration policy.
+6. Review and create the configuration policy.
 
 ## Co-existence of multiple VPN profiles
 
@@ -146,19 +145,19 @@ Follow the steps below to create a compliance policy against jailbroken devices.
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-jb-policy.png" alt-text="The Create Policy tab" lightbox="images/ios-jb-policy.png":::
 
-2. Specify a name of the policy, for example "Compliance Policy for Jailbreak".
-3. In the compliance settings page, click to expand **Device Health** section and click **Block** for **Jailbroken devices** field.
+1. Specify a name of the policy, for example "Compliance Policy for Jailbreak".
+1. In the compliance settings page, click to expand **Device Health** section and click **Block** for **Jailbroken devices** field.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-jb-settings.png" alt-text="The Compliance settings tab" lightbox="images/ios-jb-settings.png":::
 
-4. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
+1. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-jb-actions.png" alt-text="The Actions for noncompliance tab" lightbox="images/ios-jb-actions.png":::
 
-5. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
-6. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
+1. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
+1. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
 ## Configure custom indicators
 
@@ -183,7 +182,6 @@ Use the following steps to configure the option to send feedback data to Microso
    - To remove the ability of end-users to provide feedback, set the value as `false` and assign this policy to users. By default, this value is set to `true`. For US Government customers, the default value is set to 'false'.
    - For users with key set as `true`, there will be an option to send Feedback data to Microsoft within the app (Menu > Help & Feedback > Send Feedback to Microsoft)
 1. Click **Next** and assign this profile to targeted devices/users.
-
 
 ## Report unsafe site
 
