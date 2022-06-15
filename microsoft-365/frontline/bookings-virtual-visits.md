@@ -140,7 +140,7 @@ You can view key metrics such as lobby wait time and appointment duration. Use t
 
 ## Related articles
 
-- [Manage the join experience for Teams virtual appointments on mobile browsers](browser-join.md)
+- [Manage the join experience for Teams virtual appointments on browsers](browser-join.md)
 
 - [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
 
