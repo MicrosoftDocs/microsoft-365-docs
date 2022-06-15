@@ -77,8 +77,34 @@ Prevent access to Whiteboard for specific users
 
 To prevent access to Whiteboard for specific users, see [Building a Conditional Access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies).
 
-## Manage Whiteboard Data
+## Manage Whiteboard data
 
-Whiteboard content is stored in both Azure
+Whiteboard content is stored in both Azure and OneDrive for Business. New whiteboards will be stored in OneDrive for Business; the only exception is whiteboards started from a Surface Hub will be stored in Azure (this will be moved to OneDrive for Business in the future). For more information, see the tables in the Manage Whiteboard Sharing section later in this article.
+
+### Azure storage overview
+
+Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](https://docs.microsoft.com/en-us/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). 
+
+Content in Azure does not support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. Content can be managed using [Whiteboard PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/module/whiteboard/?view=whiteboard-ps) and over time, this content will need to be either migrated to OneDrive for Business or deleted.
+
+#### If a user account is deleted in Azure
+
+We are changing how whiteboards are stored when a user's account is deleted in Azure. Prior to the change, when a user's account was deleted, whiteboards that they own were also deleted but whiteboards that were shared with others were not deleted.
+
+>[!NOTE]
+> Whiteboards stored in OneDrive for Business will be handled like any other content in OneDrive for Business. For more information, see [Set the OneDrive retention for deleted users](https://docs.microsoft.com/en-us/onedrive/set-retention).
+
+The behavior of whiteboards on Azure will change as of **June 1, 2022**. Any whiteboards shared with other users will be deleted.
+
+If you want to retain a deleted user’s whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user. 
+
+- Follow these instructions to [transfer all whiteboards](https://docs.microsoft.com/en-us/powershell/module/whiteboard/invoke-transferallwhiteboards?view=whiteboard-ps).
+
+- For more information about how to delete user accounts, see [Delete a user from your organization](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide).
+
+Ensure that any deletion process or script handles this change. If you are fine with the whiteboards being deleted, then no action is required. 
+
+### ODB storage overview
+
 
 
