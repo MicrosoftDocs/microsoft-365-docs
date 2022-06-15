@@ -28,10 +28,6 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 - [Alert severity](#alert-severity)
 - [Next steps](#next-steps)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Monitor your incidents & alerts
 
