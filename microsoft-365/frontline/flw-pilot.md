@@ -168,20 +168,6 @@ After you have Teams set up and you have your teams and channels created, you ca
 - [Shifts](shifts-for-teams-landing-page.md) to schedule your frontline workforce.
 - [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) to build learning and training experiences for employees.
 
-
-#### Invite the frontline manager and frontline workers
-
-Now that the team structure is in place and the user policies are applied, it’s time to start inviting your frontline workers.
-
-1. In the left navigation of the [Microsoft Teams admin center](https://admin.teams.microsoft.com/), go to **Teams** > **Manage teams**.
-2. Search for the team created during the "Set up your pilot team" phase.
-3. Select the team you created to open the team details page.
-
-:::image type="content" source="media/firstline-worker-team-details-page.png" alt-text="Screenshot of the teams detail page":::
-
-4. Select **Add members**.
-5. Search for the pilot members' names and click **Save**.
-
 ### Communicate
 
 Inform your frontline workers of their participation in the pilot, the pilot goals, and provide training, if necessary, on the basic functions. For most customers, this can be a simple instruction to these users to go to the Google Play or Apple Store on their personal mobile devices, download the Microsoft Teams application, and log in with their company credentials. We’ve designed Microsoft Teams with a simple and easy to use interface that most frontline workers should find intuitive.
