@@ -101,3 +101,28 @@ For the licensing requirements for the use of the Teams Export APIs, see [Micros
 ### Microsoft Graph Connector APIs (preview)
 
 With [Microsoft Graph connectors](/microsoftsearch/connectors-overview), organizations can index third-party data so it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in public or private clouds. Starting with eDiscovery (Premium), we're enabling developer preview of built-in compliance value of Microsoft 365 connected apps. This enables compliance for apps integrating into the Microsoft 365 ecosystem to empower users with seamless compliance experiences. To learn more about to how to incorporate Microsoft Graph Connector APIs in your apps view, see [Create, update, and delete connections in the Microsoft Graph](/graph/connecting-external-content-connectors-api-overview).
+
+### Microsoft Graph API for records management (preview)
+
+Organizations of all types require a records-management solution to manage critical records across their corporate data. [Microsoft Purview Records Management](records-management.md) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
+
+The records management solution is used by organization in large volumes to utilize its various capabilities in protecting, labeling, retaining, or deleting their data. The Microsoft Graph APIs for records management lets organizations manage retention labels and their associated actions more efficiently, automate repetitive tasks, and equip customers with flexibility in options.
+
+The first release of Graph APIs for records management support the following example scenarios:
+
+- Managing retention labels
+    
+    Record management admins and developers need to maintain their record management systems with labels that are periodically created, updated, and deleted.
+    
+    Developers and compliance admin can use the Graph APIs for records management to perform CRUD operations on label entity and maintain their systems.
+
+- Triggering an event for an existing label
+    
+    When an employee leaves an organization, the information is updated in the HR management system. From the date of leaving, confidential documents need to be retained for seven years. These documents already have the retention label "Employee_departure" applied to them.
+    
+    The developer and compliance administrator uses the Graph APIs for records management to read the label “Employee_departure” and lookup the associated event type "Event-employee_departure".
+    
+    The compliance admin uses the Graph APIs for records management to create an event for the associated event type. The retention period for the confidential documents starts after this event is created.
+
+For more information about the Graph APIs for records management, see
+

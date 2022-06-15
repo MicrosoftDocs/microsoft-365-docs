@@ -80,6 +80,7 @@ Use the following table to help you map your business requirements to the scenar
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
+| Programatically create and manage retention labels and their associated actions, and automate repetitive tasks for records management | [Microsoft Graph API for records management (preview)](compliance-extensibility.md) |
 
 ## End-user documentation
 
