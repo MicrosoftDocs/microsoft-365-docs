@@ -34,12 +34,10 @@ If you want to create an EDM SIT using the classic experience see, [Create EDM S
 
 ## Before you begin
 
-Make sure you have completed the steps in:
+Make sure you have completed the steps in these articles before you start the procedures in this article.
 
 1. [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md)
 1. [Create EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md)
-
-before you start the procedures in this article.
 
 If you are not familiar with EDM based SITS or their implementation, you should familiarize yourself with:
 
@@ -48,7 +46,7 @@ If you are not familiar with EDM based SITS or their implementation, you should 
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md)
 - [Create exact data match sensitive information type new experience](sit-create-edm-sit-unified-ux-workflow.md)
 
-LEFT OFF HERE 6/14/2022 ## Use the EDM schema and SIT wizard
+## Use the EDM schema and SIT wizard
 
 You can use this wizard to create your sensitive information type (SIT) files to help simplify the process.
 
