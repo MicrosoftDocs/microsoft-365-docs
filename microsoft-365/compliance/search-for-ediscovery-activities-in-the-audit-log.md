@@ -148,7 +148,7 @@ The following table describes the eDiscovery (Premium) activities logged in the 
 
 ## eDiscovery cmdlet activities
 
-The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the compliance center or by running the corresponding cmdlet in Security & Compliance Center PowerShell. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
+The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the compliance center or by running the corresponding cmdlet in Security & Compliance PowerShell. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
   
 As previously stated, it may take up to 24 hours for eDiscovery cmdlet activities to appear in the audit log search results.
   
