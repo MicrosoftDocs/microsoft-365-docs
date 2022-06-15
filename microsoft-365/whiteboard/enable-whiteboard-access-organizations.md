@@ -49,33 +49,36 @@ You can control access to Whiteboard in the following ways:
 >[!NOTE]
 > Teams policy (#2 listed above) only hides Whiteboard entry points, it does not prevent the users from using Whiteboard. Conditional Access (#3 listed above) prevents any access to Whiteboard, but does not hide the entry points.
 
-### Enable or disable Whiteboard for your tenant
+### Enable or disable Whiteboard
 
-Go to the Microsoft 365 admin center.
+To enable or disable Whiteboard for your tenant, do the following steps:
 
-On the Admin Center home page, go to the Search box in the top right, and then type Whiteboard.
+1. Go to the Microsoft 365 admin center.
 
-In the search results, click or tap Whiteboard settings.
+2. On the home page of the admin center, in the Search box on the top right, type *Whiteboard*.
 
-On the Whiteboard panel, toggle Turn Whiteboard on or off for your entire organization to On.
+3. In the search results, select **Whiteboard settings**.
 
-Click or tap Save.
+4. On the Whiteboard panel, toggle **Turn Whiteboard on or off for your entire organization** to **On**.
 
-Connect to SharePoint Online PowerShell.
+5. Select **Save**.
 
-Enable Whiteboard using the Set-SPOTenant cmdlet.
+6. Connect to [SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
-Set-SPOTenant -IsWBFluidEnabled $true
+7. Enable Fluid using the following <code>Set-SPOTenant</code> cmdlet:
 
-To show or hide Whiteboard for meetings 
+   <pre><code class="lang-powershell">Set-SPOTenant -IsWBFluidEnabled $true</code></pre>
+ 
+### Show or hide Whiteboard
 
-Use meeting policy settings.
+To show or hide Whiteboard in meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing). 
 
-To prevent access to Whiteboard for specific users
+Prevent access to Whiteboard for specific users
 
-Use Conditional Access policies.
+To prevent access to Whiteboard for specific users, see [Building a Conditional Access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies).
 
-Manage Whiteboard Data
+## Manage Whiteboard Data
+
 Whiteboard content is stored in both Azure
 
 
