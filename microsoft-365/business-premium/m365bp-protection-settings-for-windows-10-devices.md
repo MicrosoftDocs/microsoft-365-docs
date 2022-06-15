@@ -2,7 +2,7 @@
 title: "Edit or set application protection settings for Windows devices"
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: article
 f1.keywords:

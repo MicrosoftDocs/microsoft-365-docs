@@ -2,8 +2,8 @@
 title: "Share files and videos in Microsoft Teams and SharePoint"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twerner
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "Infographic: Help protect your campaign"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual

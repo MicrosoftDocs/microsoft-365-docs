@@ -2,8 +2,8 @@
 title: "Bump up security protection for your campaign or business"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual

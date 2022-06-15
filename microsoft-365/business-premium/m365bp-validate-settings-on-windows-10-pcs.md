@@ -2,9 +2,9 @@
 title: "Validate app protection settings for Windows 10 PCs"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
