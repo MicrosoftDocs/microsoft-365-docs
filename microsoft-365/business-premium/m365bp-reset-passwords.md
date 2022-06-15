@@ -13,22 +13,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom:
-- TopSMBIssues
-- MSStore_Link
-- TRN_M365B
-- OKR_SMB_Videos
-- AdminSurgePortfolio
-- AdminTemplateSet
-- business_assist
-- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 - GEA150
-ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Reset passwords for users in Microsoft 365 Business Premium."
 ---
 
