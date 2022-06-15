@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
+- Adm_NonTOC
 description: "Send emails to alert users about Office Add-ins you've deployed to them."
 ms.date: 06/15/2022
 ---
@@ -21,11 +22,9 @@ When you deploy add-ins from the Integrated Apps page, you can now notify the as
 
 As of now, email notifications can be sent for deployment of Excel, PowerPoint, Outlook, and Word add-ins. Moreover, these emails are only for add-in assignments to specific users and groups.
 
-## Email preview
-
 The following sections provide more information about what the email alert would look like for the users the add-in is deployed to.
 
-### Excel, PowerPoint, and Word add-ins
+## Email preview for Excel, PowerPoint, and Word add-ins
 
 The following are some key capabilities available to users as part of the email alert sent for Excel, PowerPoint, and Word add-in deployment.
 
@@ -34,7 +33,7 @@ The following are some key capabilities available to users as part of the email 
 
 :::image type="content" source="../../media/email-preview-excel-powerpoint-word-add-in.png" alt-text="Preview of email for when Excel, PowerPoint, or Word add-ins are deployed.":::
 
-### Outlook add-ins
+## Email preview for Outlook add-ins
 
 The following are some key capabilities available to users as part of the email alert sent for Outlook add-in deployment.
 
