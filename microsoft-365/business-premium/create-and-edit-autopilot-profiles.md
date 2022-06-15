@@ -2,7 +2,7 @@
 title: "Create and edit AutoPilot profiles"
 f1.keywords:
 - NOCSH
-ms.author: efrene
+ms.author: denise.vangel
 author: efrene
 manager: scotv
 audience: Admin

@@ -2,9 +2,9 @@
 title: "Use this step-by-step guide to add AutoPilot devices and profile"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration

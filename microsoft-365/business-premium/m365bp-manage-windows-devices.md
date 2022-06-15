@@ -2,9 +2,9 @@
 title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration

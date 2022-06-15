@@ -1,8 +1,8 @@
 ---
 title: "About AutoPilot Profile settings"
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 f1.keywords:
