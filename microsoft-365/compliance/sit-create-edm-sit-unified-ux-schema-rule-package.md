@@ -79,8 +79,11 @@ If you are not familiar with EDM based SITS or their implementation, you should 
 > - You can pick up to five primary elements. The more you can pick that have values that are unique in your actual sensitive data table, the better the accuracy of your EDM SIT will be. It will also improve performance and avoid timeouts caused by process overloading.
 > - Select a sensitive information type that closely matches the format of the content you want to find. Selecting a SIT that matches unnecessary content, like one that matches all text strings, or all numbers can cause excessive load in the system which could result in sensitive information being missed.
 
-9.
+ TIRED STOPPING HERE 6/15/2022
+ 
+9. 
 
+10. 
 
 
 ## Next step
