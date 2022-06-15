@@ -259,11 +259,11 @@ To identify files in SharePoint or OneDrive and Exchange emails that have a spec
 InformationProtectionLabelId:<GUID>
 ```
 
-To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance PowerShell](/powershell/exchange/scc-powershell):
 
-````powershell
+```powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
+```
 
 #### Auto-apply labels to content by using trainable classifiers
 
@@ -322,6 +322,8 @@ To consider when auto-applying retention labels to cloud attachments:
 
 - Only newly shared cloud attachments will be auto-labeled for retention.
 
+- When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments. If they were shared within 48 hours of the user added to the conversation, current copies of the cloud attachments are auto-labeled for retention. Cloud attachments shared before this time period aren't supported for newly added users.
+
 - Cloud attachments shared outside Teams and Outlook aren't supported.
 
 - The following items aren't supported as cloud attachments that can be retained:
@@ -340,7 +342,7 @@ When you auto-apply retention labels based on sensitive information, keywords or
 
 If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the Microsoft Purview compliance portal. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following command:
     
