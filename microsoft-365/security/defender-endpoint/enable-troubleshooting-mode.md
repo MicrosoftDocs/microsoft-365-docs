@@ -1,5 +1,5 @@
 ---
-title: Get started with troubleshooting mode in Microsoft Defender for Endpoint
+title: Get started with troubleshooting mode in Microsoft Defender for Endpoint (preview)
 description: Turn on the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
 keywords: antivirus, troubleshoot, troubleshooting mode, tamper protection, compatibility
 search.product: eADQiWindows 10XVcnh
@@ -19,14 +19,17 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Get started with troubleshooting mode in Microsoft Defender for Endpoint
+# Get started with troubleshooting mode in Microsoft Defender for Endpoint (preview)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-> [!NOTE]
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+> [!IMPORTANT]
+> Some information relates to pre-released products which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
@@ -46,7 +49,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
   - Local admins will be able to configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
-- Admins with “Manage Security settings” permissions will have access to turn on troubleshooting mode.
+- Admins with "Manage Security settings" permissions will have access to turn on troubleshooting mode.
 
 - Microsoft Defender for Endpoint collects logs and investigation data throughout the troubleshooting process.
 
@@ -130,7 +133,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(3h)
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 ```
 
@@ -141,7 +144,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | sort by count_
 ```
@@ -154,7 +157,7 @@ ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()
 | where count_ > 5          // choose your max # of TS mode instances for your time range
 ```
