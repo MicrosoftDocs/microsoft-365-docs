@@ -404,7 +404,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 ## Configure a label to apply S/MIME protection in Outlook
 
 > [!NOTE]
-> This capability for built-in labeling is currently rolling out. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
+> This capability is currently rolling out for built-in labeling. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
 
 This configuration is not available in the Microsoft Purview compliance center. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
