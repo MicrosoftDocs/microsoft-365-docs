@@ -18,9 +18,9 @@ ms.date: 06/15/2022
 
 # Add-in deployment email alerts
 
-When you deploy add-ins from the Integrated Apps page, you can now notify the assigned users about the newly deployed add-in by email. To send out the email notification, you need to consent to sending the email notification at the time of add-in deployment or user assignment updates.
+When you deploy Office Add-ins from the Integrated Apps page, you can now notify the assigned users about the newly deployed add-in by email. To send out the email notification, you need to consent to sending the email notification at the time of add-in deployment or user assignment updates.
 
-As of now, email notifications can be sent for deployment of Excel, PowerPoint, Outlook, and Word add-ins. Moreover, these emails are only for add-in assignments to specific users and groups.
+As of now, email notifications can be sent for deployment of Excel, Outlook, PowerPoint, and Word add-ins. Moreover, these emails are only for add-in assignments to specific users and groups.
 
 The following sections provide more information about what the email alert would look like for the users the add-in is deployed to.
 
