@@ -24,20 +24,20 @@ As of now, email notifications can be sent for deployment of Excel, Outlook, Pow
 
 The following sections provide more information about what the email alert would look like for the users the add-in is deployed to.
 
-## Email preview for Excel, PowerPoint, and Word add-ins
+## Email sample for Excel, PowerPoint, and Word add-ins
 
 The following are some key capabilities available to users as part of the email alert sent for Excel, PowerPoint, and Word add-in deployment.
 
 - Email provides details about the add-in such as brief description, deployment date, and supported Office Apps and respective versions.
 - Email provides buttons to launch the add-in in the respective Office Apps on the web, on Windows, and on Mac platforms to help make the add-in easier to discover. **Note**: The launch buttons are currently not supported for iPad clients.
 
-:::image type="content" source="../../media/email-preview-excel-powerpoint-word-add-in.png" alt-text="Preview of email for when Excel, PowerPoint, or Word add-ins are deployed.":::
+:::image type="content" source="../../media/email-sample-excel-powerpoint-word-add-in.png" alt-text="Email sample for when Excel, PowerPoint, or Word add-ins are deployed.":::
 
-## Email preview for Outlook add-ins
+## Email sample for Outlook add-ins
 
 The following are some key capabilities available to users as part of the email alert sent for Outlook add-in deployment.
 
 - Email provides details about the add-in such as brief description, deployment date, supported Outlook versions.
 - Email provides instructions about where to discover the deployed add-in across supported platforms: Windows, Mac, and web browser.
 
-:::image type="content" source="../../media/email-preview-outlook-add-in.png" alt-text="Preview of email for when Outlook add-ins are deployed.":::
+:::image type="content" source="../../media/email-sample-outlook-add-in.png" alt-text="Email sample for when Outlook add-ins are deployed.":::
