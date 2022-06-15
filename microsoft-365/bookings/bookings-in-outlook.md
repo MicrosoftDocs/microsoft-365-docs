@@ -16,7 +16,7 @@ description: "Use Bookings in Outlook to let others schedule meetings with you i
 Bookings in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings in Outlook lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings in Outlook page.
 
 > [!NOTE]
-> Bookings in Outlook is available worldwide in preview as it becomes more integrated into Outlook and Bookings.
+> Bookings in Outlook is available worldwide in preview. Features included in preview might not be complete and could undergo changes before becoming available in the public release.
 
 Bookings in Outlook has two different views:
 

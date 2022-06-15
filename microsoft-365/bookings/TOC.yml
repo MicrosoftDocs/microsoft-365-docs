@@ -1,5 +1,7 @@
 - name: Microsoft Bookings
   href: bookings-overview.md
+- name: Bookings in Outlook
+  href: bookings-in-outlook.md
   items:
   - name: Setup
     items:
