@@ -49,7 +49,7 @@ The Device protection card on the **Reports** dashboard shows the number of audi
 
 The **View details** button shows more media usage data in the **device control report** page.
 
-The page provides a dashboard with aggregated number of events per type and a list of events, and shows 500 events per page but Administrators can scroll down to see more events and can filter on time range, media class name, and device ID.
+The page provides a dashboard with aggregated number of events per type and a list of events and shows 500 events per page, but Administrators can scroll down to see more events and can filter on time range, media class name, and device ID.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="The Device Control Report Details page in the Microsoft 365 Defender portal" lightbox="images/Detaileddevicecontrolreport.png":::
