@@ -100,7 +100,7 @@ Security intelligence update version: xx<br/>
 
 - Added fix to support ASR rule 
 - Added fix for ETW channel configuration for updates 
-- Added support for contextual exclusions allowing more specific exclusion targeting 
+- Added support for [contextual exclusions allowing more specific exclusion targeting](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) 
 
 ### Known Issues
 
