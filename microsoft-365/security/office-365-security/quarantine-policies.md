@@ -499,7 +499,7 @@ The global settings for quarantine policies allow you to customize the quarantin
 
        :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="A custom disclaimer at the bottom of a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
-     - The language identifier for the the **Display name** and **Disclaimer** values. Quarantine notifications are already localized based on the recipient's language settings. The **Display name** and **Disclaimer** values are used in quarantine notifications that apply to the recipient's language.
+     - The language identifier for the **Display name** and **Disclaimer** values. Quarantine notifications are already localized based on the recipient's language settings. The **Display name** and **Disclaimer** values are used in quarantine notifications that apply to the recipient's language.
 
        Select the language in the **Choose language** box _before_ you enter values in the **Display name** and **Disclaimer** boxes. When you change the value in the **Choose language** box, the values in the **Display name** and **Disclaimer** boxes are emptied.
 
