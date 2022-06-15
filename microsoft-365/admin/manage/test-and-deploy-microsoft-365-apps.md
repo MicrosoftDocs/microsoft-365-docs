@@ -88,7 +88,7 @@ You won't be able to deploy a single store app or Microsoft 365 Apps by partner 
 
 1. In the admin center, in the left nav, choose **Settings** and then **Integrated apps**.
 
-2. Select **Upload custom apps**. Only a custom line of apps for Word, PowerPoint, Excel and Outlook  is supported.
+2. Select **Upload custom apps**. Only a custom line of apps for Word, PowerPoint, Excel, and Outlook  is supported.
 
 3. Upload the manifest file from your device or add a URL link. Some apps require you to add users before you can select Deploy.
 
