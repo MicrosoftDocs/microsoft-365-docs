@@ -21,6 +21,8 @@ ms.prod: m365-security
 
 # Explorer and Real-time detections
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
@@ -163,7 +165,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 To learn more about roles and permissions, see the following articles:
 
 - [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
-- [Permissions in Exchange Online](/e/exchange/permissions-exo/permissions-exo)
+- [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## More information
 
