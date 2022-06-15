@@ -25,7 +25,7 @@ appliesto:
 ms.custom: seo-marvel-jun2020
 ---
 
-# Shifts for Teams
+# Shifts for frontline workers
 
 Shifts, the schedule management tool in Teams, keeps your frontline workforce connected and in sync. It's built mobile first for fast and effective schedule management and communications. With Shifts, frontline managers and workers can seamlessly manage schedules and keep in touch.
 
@@ -59,7 +59,7 @@ If you're using a third-party workforce management (WFM) system for scheduling, 
 
 |&nbsp;|&nbsp;|
 | ------------- | ------------- |
-| <img src="/office/media/icons/api.png" alt="Three gears - API."> | **[Shift Graph APIs](/graph/api/resources/shift)** Shifts Graph APIs allow you to integrate Shifts data with external workforce management (WFM) systems. You'll have the flexibility to build custom Shifts experiences in the back end, while giving users a rich, front-end experience in Teams.             |
+| <img src="/office/media/icons/api.png" alt="Three gears - API."> | **[Shift Graph APIs](/graph/api/resources/shift)** Shifts Graph APIs allow you to integrate Shifts data with external WFM systems. You'll have the flexibility to build custom Shifts experiences in the back end, while giving users a rich, front-end experience in Teams.             |
 |<img src="/office/media/icons/process-flow-teams.png" alt="Process/flow chart symbol."> | **[Shifts + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Shifts + Power Automate lets you take info from Shifts and create custom workflows with other apps and perform operations at scale. Automate key processes with little to no code. The triggers and templates support various scenarios such as enabling auto-approvals for shift requests when a manager’s approval isn't needed. |
 
 ## Featured training
