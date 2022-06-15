@@ -6,10 +6,8 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: how-to
-ms.date: 03/16/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.topic: conceptual
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
