@@ -34,7 +34,6 @@ If you are not familiar with EDM-based SITS or their implementation, you should 
 A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to 10 different EDM schemas in a Microsoft 365 tenant.
 
 
-
 ## Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
 You can use this wizard to help simplify the schema file creation process.

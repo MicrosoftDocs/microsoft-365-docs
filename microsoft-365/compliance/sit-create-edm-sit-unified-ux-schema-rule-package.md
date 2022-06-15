@@ -63,20 +63,25 @@ If you are not familiar with EDM based SITS or their implementation, you should 
 
 1. Name the SIT and add a description. The name that the system generates for the schema will be the SIT name you enter here concatenated with *schema*. Select **Next**.
 
-1. Select the method you want to use to define your schema, either **Upload a file containing sample data**, or **Manually define your data structure**. We recommend the upload sample data file option.
+1. Select the method you want to use to define your schema, either **Upload a file containing sample data**, or **Manually define your data structure**. We recommend the upload sample data file option and the rest of this procedure assumes you have chosen to upload your sample file. Select **Next**.
 
 > [!NOTE]
-> No matter which option you select, you'll be using the information in the sample file you created in [Create EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md)
+> No matter which option you select, you'll be using the information in the sample file you created in [Create EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md).
+
+6. Select your sample file and select **Upload file** then select **Next**. If you get any errors during upload, address them and try again.
+
+7. Once your data uploads it will be displayed on the **Verify your sample data is correct** page. Inspect the column names and sample data and choose **Next**.
+
+8. Select your primary elements based on the recommendations presented. Look at the values in the **Match validation** column for guidance and choose **Next**.
+
+> [!TIP]
+> - Select primary elements whose values make that row unique in the table. For example, don't pick fields like *FirstName* or *DateOfBirth* as there will most likely be many duplications of first names or dates of birth in your actual sensitive data file. Instead pick things like *Social Security Number* and *BankAccountNumber* whose value will be unique in your table and therefore make the row unique in the table.
+> - You can pick up to five primary elements. The more you can pick that have values that are unique in your actual sensitive data table, the better the accuracy of your EDM SIT will be. It will also improve performance and avoid timeouts caused by process overloading.
+> - Select a sensitive information type that closely matches the format of the content you want to find. Selecting a SIT that matches unnecessary content, like one that matches all text strings, or all numbers can cause excessive load in the system which could result in sensitive information being missed.
+
+9.
 
 
-
-
-
-
-> [!IMPORTANT]
-> Select a sensitive information type that closely matches the format of the content you want to find. Selecting a sensitive information type that matches unnecessary content, like one that matches all text strings, or all numbers can cause excessive load in the system which could result in sensitive information being missed.
-
- The syntax of the rule package file is the same as for other sensitive information types. For complete details on the syntax of the rule package file and for additional configuration options, and for instructions on modifying and deleting sensitive information types using PowerShell, [Create a custom sensitive information type using PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell).
 
 ## Next step
 
