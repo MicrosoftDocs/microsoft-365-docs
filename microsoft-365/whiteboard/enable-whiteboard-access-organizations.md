@@ -19,7 +19,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Enable and manage access to Microsoft Whiteboard for your organization
 
 >[!NOTE]
-> This article applies to Enterprise or Education organizations who use Whiteboard. For US Government Community Cloud (GCC) environments, see [Enable Whiteboard on OneDrive for Business admin guidance](https://support.microsoft.com/office/enable-microsoft-whiteboard-on-onedrive-for-business-2fae9707-0c9b-42f8-a85f-9628b698ac82). For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
+> This article applies to Enterprise or Education organizations who use Whiteboard. For US Government Community Cloud (GCC) environments, see [Enable Whiteboard on OneDrive for Business](https://support.microsoft.com/office/enable-microsoft-whiteboard-on-onedrive-for-business-2fae9707-0c9b-42f8-a85f-9628b698ac82). For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
 
 Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Today, Whiteboard runs on Azure for Enterprise and Education customers. Whiteboard is transitioning to be run on top of OneDrive for Business. This will bring many new capabilities and allow you to create, share, discover, and manage whiteboards as easily as any Office document.
 
@@ -47,7 +47,7 @@ You can control access to Whiteboard in the following ways:
 - Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
 
 >[!NOTE]
-> Teams policy (#2 listed above) only hides Whiteboard entry points, it does not prevent the users from using Whiteboard. Conditional Access (#3 listed above) prevents any access to Whiteboard, but does not hide the entry points.
+> Teams meeting policies only hide Whiteboard entry points; it doesn't prevent the users from using Whiteboard. Conditional access policies prevent any access to Whiteboard, but doesn't hide the entry points.
 
 ### Enable or disable Whiteboard
 
@@ -73,7 +73,7 @@ To enable or disable Whiteboard for your tenant, do the following steps:
 
 To show or hide Whiteboard in meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing). 
 
-Prevent access to Whiteboard for specific users
+### Prevent access to Whiteboard
 
 To prevent access to Whiteboard for specific users, see [Building a Conditional Access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies).
 
@@ -106,13 +106,13 @@ Ensure that any deletion process or script handles this change. If you are fine 
 
 ### OneDrive for Business storage overview
 
-Whiteboards will be created in the OneDrive for Business folder of the person who starts the whiteboard (SharePoint is not yet supported). This applies to all whiteboards created in the stand-alone Whiteboard applications, and in Microsoft Teams meetings, chats, and channels. The only exception is whiteboards started from a Surface Hub will be stored in Azure (this will be moved to OneDrive for Business in the future).
+Whiteboards will be created in the OneDrive for Business folder of the person who starts the whiteboard (SharePoint is not yet supported). This applies to all whiteboards created in the standalone Whiteboard applications, and in Microsoft Teams meetings, chats, and channels. The only exception is whiteboards started from a Surface Hub will be stored in Azure (this will be moved to OneDrive for Business in the future).
 
 Any users who do not have OneDrive for Business provisioned will no longer be able to create new whiteboards when this change is implemented. However, they can still edit their previously created boards. They can also collaborate on any whiteboards that are shared with them by others who have OneDrive for Business.
 
 An average whiteboard might be anywhere from 50 KB to 1 MB in size and located wherever your OneDrive for Business content resides. To check where data for your tenant is stored, see [Where your Microsoft 365 customer data is stored](https://docs.microsoft.com/en-us/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide), and look at the location for OneDrive for Business.
 
-Controls for OneDrive for Business storage 
+#### Controls for OneDrive for Business storage 
 
 You can manage Whiteboard data using existing OneDrive for Business controls. For more information, see [OneDrive guide for enterprises](https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise).
 
