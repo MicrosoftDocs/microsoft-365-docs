@@ -16,17 +16,31 @@ description: "Use Bookings in Outlook to let others schedule meetings with you i
 Bookings in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings in Outlook lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings in Outlook page.
 
 > [!NOTE]
-> Bookings in Outlook is only available in preview.
+> Bookings in Outlook is available worldwide in preview as it becomes more integrated into Outlook and Bookings.
 
 Bookings in Outlook has two different views:
 
 - **Organizer view** A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings in Outlook page. You can access your Bookings in Outlook page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
 
-- **Scheduling view** When you share your Bookings in Outlook page with others, they will see the scheduling view. Which meetings are shown in the scheduling view depends on if you shared the link to your Bookings in Outlook page with public meetings or you shared a private link for an individual meeting.
+- **Attendee view** When you share your Bookings in Outlook page with others, they will see the attendee view. If the organizer has shared their Bookings in Outlook page link with you, you'll be able to see all of their public meeting types. If the organizer has shared a meeting link, you'll only be able to view that meeting.
   - Public meetings can be viewed and scheduled by anyone that has your Bookings in Outlook page link. You are in control of who you share that link with. All public meeting types will be visible to anyone that has your Bookings in Outlook page link.
   - Private meetings can only be viewed by people who have the link for that meeting type. The difference between public meetings and private meetings is private meetings can have different links and the links expire after 90 days. You can also set private links to expire after a one-time booking. When accessing the scheduling view for a private meeting, only that meeting type will be visible.
 
+## When to use Bookings in Outlook
+
+Bookings in Outlook is an ideal solution for enterprise, small business, and users in education to schedule 1:1 meetings with those outside and inside their organizations. Below are a few examples of how you can use Bookings in Outlook.
+
+- Schedule interviews with external candidates
+- Set up customer and client meetings
+- Schedule tech support
+- Set up office hours
+- Set up mentoring hours
+- 1:1 meetings with direct reports
+- Lunch and coffee breaks
+
 ## Before you begin
+
+Bookings in Outlook can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, share their page with others, and allow other people to book time with them. This article is for owners and administrators who manage Bookings in Outlook for their organizations.
 
 Bookings in Outlook is available in the following subscriptions:
 
@@ -35,9 +49,29 @@ Bookings in Outlook is available in the following subscriptions:
 
 Bookings in Outlook is on by default for users with these subscriptions.
 
-Bookings in Outlook needs the **Microsoft Bookings** service plan assigned to users for them to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if **Microsoft Bookings** is not assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
+Bookings in Outlook needs the **Microsoft Bookings App (service plan)** assigned to users for them to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if **Microsoft Bookings** is not assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
 
 For more information, see the [Bookings in Outlook Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
+
+### Prerequisites for using Bookings in Outlook
+
+1. Bookings in Outlook and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings in Outlook. The Bookings app must be enabled for users to have access to Bookings in Outlook.
+
+To turn on Bookings in Outlook without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
+
+2. Calendar FreeBusy Anonymous sharing must be enabled to use Bookings in Outlook. This allows the Bookings page to have access to the free/busy information in your Outlook calendar. Use PowerShell to check the status.
+
+ ```PowerShell
+   Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
+   ```
+
+    "Anonymous:CalendarSharingFreeBusyReviewer"" should be one of the domains in the response.
+
+To enable anonymous sharing, use the following command.
+
+ ```PowerShell
+   Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer 
+   ```
 
 ## Turn Bookings in Outlook on or off  
 
@@ -164,3 +198,35 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     ```PowerShell
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+
+## Frequently asked questions
+
+### What is the difference between Bookings and Bookings in Outlook?
+
+Bookings in Outlook integrates with your Outlook calendar and can only be used for 1:1 meetings. Bookings in Outlook is intended for scheduling meeting times with individual users. Bookings is intended for managing scheduling for a group of people.
+
+Also, Bookings in Outlook won't create a new mailbox for each Bookings in Outlook page.
+
+### Why is Bookings in outlook in preview?
+
+Bookings in Outlook is in preview for all enterprise users worldwide. We're collecting feedback and making improvement while it is being integrated into scheduling experiences in Bookings and Outlook.  
+
+### Who can access my public Bookings page?
+
+Public meeting types can be accessed by anyone that has your Bookings in Outlook page address. You decide who you share your Bookings in Outlook page address with.
+
+### What is the difference between public and private meeting types?
+
+Meeting types can be public or private. Public meeting types are available to anyone that you share your Bookings page link with. Private meeting types are only available to people that you share the individual private meeting type with.  
+
+Private meeting types can also generate single use links. Single use links expire after their first booking.
+
+### Do people need to have a Microsoft account or Bookings license to schedule time with me?
+
+No. Anyone can schedule time with you using your Bookings in Outlook page, even if they don’t have a Microsoft account. You need a Bookings license to create a Bookings in Outlook page.
+
+## Privacy
+
+### Where is Bookings in outlook data stored?
+
+Bookings in Outlook is a feature of Outlook powered by Bookings. All data is stored within the Microsoft 365 platform and in Exchange. Bookings in Outlook follows data storage policies set by Microsoft, which are the same policies that all Office apps follow. All customer data (including information provided by attendees when booking) is captured in Bookings and is stored within Exchange. For more information, check out [Privacy: It's all about you](https://www.microsoft.com/en-us/trust-center/privacy).
