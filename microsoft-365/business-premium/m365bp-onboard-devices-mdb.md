@@ -8,8 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.date: 04/01/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
