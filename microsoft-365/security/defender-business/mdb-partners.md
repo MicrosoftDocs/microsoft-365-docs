@@ -19,7 +19,9 @@ ms.collection:
 
 # Microsoft Defender for Business and managed service provider resources
 
-Managed service providers (MSPs) often use a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA). 
+Managed service providers (MSPs) often use a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. 
+
+Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack as a Microsoft MSP. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA). 
 
 ## Use APIs to integrate with your MSP solution
 
