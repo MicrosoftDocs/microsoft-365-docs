@@ -60,6 +60,16 @@ A profile determines the level of protection. The following profiles are availab
 
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
+  > [!IMPORTANT]
+  > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+  >
+  > - The recipient is: romain@contoso.com
+  > - The recipient is a member of: Executives
+  >
+  > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy is not applied to him.
+  >
+  > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy still applies to him.
+
 - **Built-in protection** (Defender for Office 365 only): A profile that enables Safe Links and Safe Attachments protection only. This profile effectively provides default policies for Safe Links and Safe Attachments, which never had default policies.
 
   For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. Although we don't recommend it, you can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
