@@ -53,7 +53,7 @@ Each section of the report is designed to provide more insights about the threat
 
 Refer to the following screenshot of a sample report:
 
-![Defender Experts report](#email-related-detections-and-mitigations)
+**Defender Experts report screenshot**
 
 ## View targeted attack notifications
 
