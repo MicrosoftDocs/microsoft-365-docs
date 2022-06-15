@@ -1,5 +1,5 @@
 ---
-title: Enable and manage access to Microsoft Whiteboard for your organization
+title: Enable and manage access to Microsoft Whiteboard for organizations
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
