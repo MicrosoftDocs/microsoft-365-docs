@@ -23,6 +23,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Azure Active Directory admin center** > **Enterprise applications**.
 
+## Manage Whiteboard access
+
 The following URLs are required:
 
 - 'https://*.office365.us/'
@@ -45,9 +47,9 @@ You can control access to Whiteboard in the following ways:
 >[!NOTE]
 > Whiteboard on OneDrive for Business doesn't appear in the Microsoft 365 admin center. Teams meeting policy only hides Whiteboard entry points, it doesn't prevent users from using Whiteboard. Conditional access ploicies prevent access to Whiteboard, but doesn't hide the entry points.
 
-## Enable or disable Whiteboard
+### Enable or disable Whiteboard
 
-To enable or disable Whiteboard for your tenant, do the  steps: 
+To enable or disable Whiteboard for your tenant, do the following steps: 
 
 1. Use the [SharePoint Online PowerShell module](https://docs.microsoft.com/en-us/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell?view=o365-worldwide) to enable or disable all Fluid Experiences across your Microsoft 365 tenant.
 
@@ -62,7 +64,7 @@ The change should take approximately 60 minutes to apply across your tenancy. If
 >[!NOTE]
 > By default, Whiteboard is enabled. If it has been disabled in the Azure Active Directory enterprise applications, then Whiteboard on OneDrive for Business will not work.
 
-## Show or hide Whiteboard
+### Show or hide Whiteboard
 
 To show or hide Whiteboard in meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing).
 
