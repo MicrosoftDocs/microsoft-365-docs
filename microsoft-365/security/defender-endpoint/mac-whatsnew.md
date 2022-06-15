@@ -27,6 +27,11 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## 101.70.19 (20.122051.17019.0)
+
+- Fixed a bug where threat-related notifications were not always presented to the end user.
+- Performance improvements & other bug fixes
+
 ## 101.70.18 (20.122042.17018.0)
 
 - Fixed a bug where the installation package was sometimes hanging indefinitely during product updates
