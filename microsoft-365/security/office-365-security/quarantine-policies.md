@@ -682,6 +682,9 @@ If the quarantine policy assigns the **Full access** permissions (all available 
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="The available buttons in the quarantine notification if the quarantine policy gives the user full access permissions" lightbox="../../media/quarantine-tags-esn-full-access.png":::
 
+> [!NOTE]
+> As explained earlier, quarantine notifications are disabled in the default quarantine policy named DefaultFullAccessPolicy, even though that quarantine policy has the **Full access** permission group assigned. Quarantine notifications are available only in custom quarantine policies that you create or in the default quarantine access policy named NotificationEnabledPolicy ([if that policy is available in your organization](#full-access-permissions-and-quarantine-notifications)).
+
 ### Individual permissions
 
 #### Block sender permission
