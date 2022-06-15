@@ -1,7 +1,11 @@
     - name: Microsoft Whiteboard
       href: index.md   
 
-    - name: Enable Whiteboard access for GCC - High
+
+    - name: Enable Whiteboard access for organizations
+      href: enable-whiteboard-access-organizations.md 
+
+    - name: Enable Whiteboard access for GCC High
       href: enable-whiteboard-access-gcc-high.md 
 
     - name: Whiteboard PowerShell
