@@ -1,6 +1,8 @@
-- name: Microsoft Purview compliance
+- name: Microsoft Purview risk & compliance solutions
   href: index.yml
-- name: What's new in Microsoft Purview
+- name: Learn about risk & compliance solutions
+  href: purview-compliance.md
+- name: What's new in risk & compliance solutions
   href: whats-new.md
 - name: Compliance trials
   items:
@@ -10,7 +12,7 @@
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
-    - name: Quick tasks to get started with Microsoft Purview
+    - name: Quick tasks to get started with compliance in Microsoft Purview
       href: compliance-quick-tasks.md
     - name: Microsoft Purview solution catalog
       href: microsoft-365-solution-catalog.md
@@ -1001,6 +1003,8 @@
           href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Audit New Search
+          href: audit-new-search.md
         - name: Export, configure, and view audit log records
           href: export-view-audit-log-records.md
         - name: Use a PowerShell script to search the audit log
