@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: vpattnai
+ms.author: DulceMontemayor
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
