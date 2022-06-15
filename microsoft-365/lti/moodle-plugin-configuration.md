@@ -14,14 +14,9 @@ ms.localizationpriority: medium
 description: Get ready to integrate Moodle and Microsoft Teams by setting up and configuring the Moodle plugin.
 ---
 
-# Set up and configure the Moodle plugin
+# Set up the Moodle plugin
 
 In this article, you'll learn how to install and configure the Moodle LMS plugin to incorporate Microsoft Teams with your Moodle experience.
-
-> [!NOTE]
-> Currently, Moodle and Microsoft Teams LTI integrations are only available in private preview.
->
->If you'd like to participate in the private preview program, [sign up here](https://m365crmedu.powerappsportals.com/LMSSignup)
 
 ## Prerequisites
 
