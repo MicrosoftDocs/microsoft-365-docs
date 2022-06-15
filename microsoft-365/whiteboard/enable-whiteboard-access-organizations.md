@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
-# Enable and manage access to Microsoft Whiteboard for your organization
+# Enable and manage access to Microsoft Whiteboard for organizations
 
 >[!NOTE]
 > This article applies to Enterprise or Education organizations who use Whiteboard. For US Government Community Cloud (GCC) environments, see [Enable Whiteboard on OneDrive for Business](https://support.microsoft.com/office/enable-microsoft-whiteboard-on-onedrive-for-business-2fae9707-0c9b-42f8-a85f-9628b698ac82). For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
