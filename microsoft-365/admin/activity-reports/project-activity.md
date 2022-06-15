@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn how to get the Project activity report and gain insights into the Project activity in your organization."
 ---
 
-# Microsoft 365 Reports in the admin center - Microsoft Teams user activity
+# Microsoft 365 Reports in the admin center - Project activity
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). 
 
