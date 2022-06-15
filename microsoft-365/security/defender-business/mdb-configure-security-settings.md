@@ -48,10 +48,6 @@ Use this article as a guide to managing your security policies and settings.
 6. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 7. [Proceed to your next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Choose where to manage security policies and devices
 
@@ -176,6 +172,4 @@ Proceed to one or more of the following tasks:
 - [Get started using Microsoft Defender for Business](mdb-get-started.md)
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)
-
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)
