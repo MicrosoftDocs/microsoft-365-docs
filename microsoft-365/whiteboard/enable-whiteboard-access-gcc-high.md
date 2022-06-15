@@ -38,11 +38,11 @@ The following URLs are required:
 
 You can control access to Whiteboard in the following ways:
 
-- Enable or disable Whiteboard for your entire tenant using the SharePoint Admin PowerShell module.
+- Enable or disable Whiteboard for your entire tenant using the [SharePoint Online PowerShell module](https://docs.microsoft.com/en-us/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell?view=o365-worldwide).
 
 - Show or hide Whiteboard for specific users in meetings using a Teams meeting policy. It will still be visible via the web, native clients, and the Teams tab app.
 
-- Require conditional access policies for accessing Whiteboard using Azure Active Directory Admin Center.
+- Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
 
 >[!NOTE]
 > Whiteboard on OneDrive for Business doesn't appear in the Microsoft 365 admin center. Teams meeting policy only hides Whiteboard entry points, it doesn't prevent users from using Whiteboard. Conditional access ploicies prevent access to Whiteboard, but doesn't hide the entry points.
