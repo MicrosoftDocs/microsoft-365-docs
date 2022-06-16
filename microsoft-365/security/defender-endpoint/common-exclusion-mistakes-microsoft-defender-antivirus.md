@@ -31,7 +31,7 @@ ms.collection: M365-security-compliance
 - Linux
 
 >[!IMPORTANT]
->Adding exclusions for Microsoft Defender Antivirus scans reduces the level of protection on your device.
+>Adding exclusions for Microsoft Defender Antivirus scans reduces the level of protection for your device.
 
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistakes that you should avoid when defining exclusions.
 
