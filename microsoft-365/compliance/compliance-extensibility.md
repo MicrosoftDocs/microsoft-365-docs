@@ -114,15 +114,15 @@ The first release of Graph APIs for records management support the following exa
     
     Record management admins and developers need to maintain their record management systems with labels that are periodically created, updated, and deleted.
     
-    Developers and compliance admin can use the Graph APIs for records management to perform CRUD operations on label entity and maintain their systems.
+    Developers and compliance admins use the Graph APIs for records management to perform CRUD operations on the label entity to maintain their systems.
 
 - Triggering an event for an existing label
     
     When an employee leaves an organization, the information is updated in the HR management system. From the date of leaving, confidential documents need to be retained for seven years. These documents already have the retention label "Employee_departure" applied to them.
     
-    The developer and compliance administrator uses the Graph APIs for records management to read the label “Employee_departure” and lookup the associated event type "Event-employee_departure".
+    Developers and compliance admins use the Graph APIs for records management to read the label “Employee_departure” and lookup the associated event type "Event-employee_departure".
     
-    The compliance admin uses the Graph APIs for records management to create an event for the associated event type. The retention period for the confidential documents starts after this event is created.
+    They then use the Graph APIs for records management to create an event for the associated event type. The retention period for the confidential documents starts after this event is created.
 
 For more information about the Graph APIs for records management, see
 
