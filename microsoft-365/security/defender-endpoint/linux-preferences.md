@@ -313,8 +313,9 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 |---|---|
 |**Key**|diagnosticLevel|
 |**Data type**|String|
-|**Possible values**|optional (default) <p> required|
-
+|**Possible values**|optional <p> required (default)|
+|
+  
 #### Enable / disable automatic sample submissions
 
 Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. There are three levels for controlling sample submission:
