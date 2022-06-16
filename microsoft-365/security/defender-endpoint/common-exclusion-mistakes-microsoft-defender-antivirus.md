@@ -32,7 +32,7 @@ ms.collection: M365-security-compliance
 - Linux
 
 > [!IMPORTANT]
-> Add exclusions with caution. Exclusions for Microsoft Defender Antivirus scans reduce the level of protection for devices.
+> **Add exclusions with caution**. Exclusions for Microsoft Defender Antivirus scans reduce the level of protection for devices.
 
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. However, excluded items could contain threats that make your device vulnerable. This article describes some common mistakes that you should avoid when defining exclusions.
 
@@ -44,9 +44,9 @@ Certain files, file types, folders, or processes shouldn't be excluded from scan
 
 Don't define exclusions for the folder locations, file extensions, and processes that are listed in the following sections:
 
-- Folder locations
-- File extensions
-- Processes
+- [Folder locations](#folder-locations)
+- [File extensions](#file-extensions)
+- [Processes](#processes)
 
 ### Folder locations
 
@@ -166,6 +166,9 @@ In general, don't define exclusions for the following processes:
 - `wmic.exe`
 - `wuauclt.exe`
 
+> [!NOTE]
+> You can choose to exclude file types, such as `.gif`, `.jpg`, `.jpeg`, or `.png` if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
+
 #### Linux and macOS Platforms
 
 In general, don't define exclusions for the following processes:
@@ -175,9 +178,6 @@ In general, don't define exclusions for the following processes:
 - `python` and `python3`
 - `sh`
 - `zsh`
-
-> [!NOTE]
-> You can choose to exclude file types, such as `.gif`, `.jpg`, `.jpeg`, or `.png` if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
 
 ## Using just the file name in the exclusion list
 
