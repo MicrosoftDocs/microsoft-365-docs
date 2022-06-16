@@ -88,9 +88,10 @@ More information: [Onboard new employees](/sharepoint/onboard-employees)
 
 ## Digitized processes solution area
 
-| Scenario | Description | Apps |
-| --- | --- | --- |
-| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | |
+| Scenario | Description | Services | Teams apps |
+| --- | --- | --- | --- |
+| Simplify business processes | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
+| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | | |
 
 ## Find more scenarios and solutions in the digital ecosystem
 

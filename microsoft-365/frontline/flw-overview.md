@@ -83,7 +83,7 @@ The principles below are based on information from the [Frontline Worker Solutio
 
 | Start | Discover | Envision | Build | Grow |
 |-----|-----|-----|-----|-----|
-| Assess and prepare | Align on value | Identify solutions | Build and validate |  |
+| Assess and prepare | Align on value | Identify solutions | Build and validate | Roll out and expand |
 
 **Start**
 > [!div class="checklist"]
