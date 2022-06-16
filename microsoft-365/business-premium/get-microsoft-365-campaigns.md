@@ -72,4 +72,4 @@ There's no minimum time commitment when you sign up for Microsoft 365 for Campai
 
 ## Next steps
 
-When you receive your invitation, [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
+When you receive your invitation, [Set up Microsoft 365 for Campaigns](m365-campaigns-setup.md).

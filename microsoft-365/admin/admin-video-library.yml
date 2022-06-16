@@ -49,7 +49,7 @@ landingContent:
       - linkListType: video
         links:
         - text: Connect PCs to Microsoft 365
-          url: setup/set-up-windows-devices.md
+          url: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
         - text: Install Microsoft Office apps
           url: setup/install-applications.md
         - text: Set up Outlook for email
