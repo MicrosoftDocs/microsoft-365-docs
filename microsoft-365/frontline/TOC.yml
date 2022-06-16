@@ -10,7 +10,7 @@
   - name: Setup and configure
     items:
     - name: Overview
-      href: flw-how-to-start.md
+      href: flw-deploy-overview.md
     - name: Managers - get your team started
       href: get-up-and-running.md
     - name: Start with a pilot deployment
