@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "If you're an admin who manages password policy for a business, school, or nonprofit, you can set strong password requirements by using Windows PowerShell."
+description: "If you're an admin who manages password policy for a business, school, or nonprofit, you can set strong password requirements by using Azure AD PowerShell."
 ---
 # Turn off strong password requirements for users
 
