@@ -25,7 +25,7 @@ The Microsoft Service Trust Portal provides a variety of content, tools, and oth
 
 ## Accessing the Service Trust Portal
 
-The Service Trust Portal contains details about Microsoft's implementation of controls and processes that protect our cloud services and the customer data therein. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (either an Azure Active Directory organization account or a Microsoft Account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
+The Service Trust Portal is Microsoft's public site for publishing audit reports and other compliance-related information associated with Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored whitepapers that provide details on how Microsoft builds and operates cloud services. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
 
 ### Existing customers
 
@@ -36,7 +36,7 @@ Existing customers can access the Service Trust Portal at <https://aka.ms/STP> w
 - Azure
 
  > [!NOTE]
- > Azure Active Directory accounts associated with organizations have access to the full range of documents and features like Compliance Manager. Microsoft accounts created for personal use have limited access to Service Trust Portal content.
+ > Azure Active Directory accounts associated with organizations have access to the full range of documents and resources like Compliance Manager.
 
 ### New customers and customers evaluating Microsoft online services
 
@@ -62,12 +62,7 @@ The following sections describe each item in the main menu.
 
 The **Service Trust Portal** link displays the home page. It provides a quick way to get back to the home page.
 
-### Compliance Manager
-
-> [!IMPORTANT]
-> Compliance Manager has moved from the Service Trust Portal to its new location in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. All customer data has been moved over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager.md) for setup information and to learn about new features. Although the classic version of Compliance Manager remains in the Service Trust Portal, all users are encouraged to use Compliance Manager in the Microsoft 365 compliance center.
-
-### Certifications, Standards, and Regulations
+### Certifications, Standards, Regulations, and Industry Resources
 
 Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following tiles.
 
@@ -88,13 +83,12 @@ Provides a wealth of security implementation and design information with the goa
 
 Clicking on one of the tiles for certification, standards, or regulations will bring you to a page that is separated into regions represented by the national flags for each country. There is also a section for all whitepapers to view resources for all regions. Select the Regions dropdown list to organize the available resources by geographic region.
 
-### Trust Center
-
-Links to the [Microsoft Trust Center](https://www.microsoft.com/trust-center), which provides more information about security, compliance, and privacy in the Microsoft Cloud. This includes information about the capabilities in Microsoft Cloud services that you can use to address specific requirements of the GDPR, documentation helpful to your GDPR accountability and to your understanding of the technical and organizational measures Microsoft has taken to support the GDPR.
+> [!NOTE]
+> Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
 
 ### My Library
 
-This new feature lets you save (or *pin*) documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated. For more information, see the [My Library](#my-library-1) section in this article.
+This feature lets you save (or *pin*) documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated. For more information, see the [My Library](#my-library-1) section in this article.
 
 ### All Documents
 
