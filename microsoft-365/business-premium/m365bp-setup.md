@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
+ms.date: 06/03/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -21,10 +21,8 @@ ms.collection:
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- [Start with the guided setup experience](#use-the-guided-process-for-basic-setup) for basic setup and configuration; or
-- [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner).
-
-Use this article as a guide.
+- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration; or
+- [Work with a partner](m365bp-setup.md#work-with-a-microsoft-partner), such as a Microsoft Cloud Solution Provider (CSP).
 
 ## Before you begin
 
@@ -40,15 +38,9 @@ Make sure that you meet the following requirements before you begin your setup p
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-## Use the guided process for basic setup
+## Guided setup process
 
-Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
-
-- [Adding your existing domain to personalize sign-in](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in)
-- [Adding users and assigning licenses](../admin/add-users/add-users.md)
-- [Updating your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain)
-
-The following video shows the guided setup process for Microsoft 365 Business Standard, which works the same way in Microsoft 365 Business Premium.<br/><br/>
+Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -61,7 +53,7 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
 
-2. In the search box, fill in your location and company size. 
+2. In the search box, fill in your location and company size.
 
 3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
 
@@ -74,17 +66,7 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 - [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
 
 - [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
-## Next objectives
 
-After you have finished your initial setup process, your next objectives are to set up your security and compliance capabilities:
+### Next objective
 
-1. [Set up your security protection](m365bp-security-overview.md).
-
-2. Train your team:
-
-   - [Set up personal devices used to access business data](m365bp-devices-overview.md)
-   - [Use email more securely](m365bp-protect-email-overview.md)
-   - [Collaborate and share more securely](m365bp-collaborate-share-securely.md)
-
-3. [Protect managed devices](m365bp-protect-devices.md).
-
+Once you've achieved these objectives, go [increase security protections](m365bp-security-overview.md).
