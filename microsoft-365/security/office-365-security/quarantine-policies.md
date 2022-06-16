@@ -209,6 +209,9 @@ The default quarantine policies, preset permission groups, and permissions are d
 
 ## Assign quarantine policies in supported policies in the Microsoft 365 Defender portal
 
+> [!NOTE]
+> Users can't release their own messages that were quarantined as malware (anti-malware policies) or high confidence phishing (anti-spam policies), regardless of how the quarantine policy is configured. At best, admins can configure the quarantine policy so users can request the release of their quarantined malware or high confidence phishing messages.
+
 ### Anti-spam policies
 
 1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
