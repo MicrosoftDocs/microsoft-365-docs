@@ -126,7 +126,7 @@ You can configure third-party message reporting tools to send reported messages 
 The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox). 
 
  > [!NOTE]
- > If multiple email attachments are present in the email, then the submission will be discarded. We only support emails with one email attachment.
+ > If multiple email attachments are present in the email, then the submission will be discarded. We only support emails with one email attachment. If the body has an image it will be counted as an attachment leading to the submission being discarded. So, keep the body empty.
 
 The message formatting requirements are described in the next section. The formatting is optional, but if it does not follow the prescribed format, the reports will always be submitted as phish.
 
