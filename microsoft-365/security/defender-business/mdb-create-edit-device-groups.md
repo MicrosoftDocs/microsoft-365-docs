@@ -29,10 +29,6 @@ In Microsoft Defender for Business, policies are applied to devices through cert
 - [How to view an existing device group](#view-an-existing-device-group)
 - [What the Add All Devices option does](#what-does-the-add-all-devices-option-do)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## What is a device group?
 
