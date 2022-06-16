@@ -80,7 +80,7 @@ Get started by following these steps:
 :::image type="content" source="media/m365-flw-get-started.png" alt-text="5 steps to get started with Microsoft 365 for frontline workers.":::
 
 1. **[Choose your scenarios](flw-choose-scenarios.md):** Discover the ways you can use Microsoft 365 for frontline workers to connect and engage your workforce, manage your workforce, and streamline operations.
-1. **[Set up Microsoft 365](flow-how-to-start.md):** Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
+1. **[Set up Microsoft 365](flw-deploy-overview.md):** Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
 1. **Configure services and apps:** Configure the services and apps you need for your scenarios. The steps to configure each scenario and training and resources you can provide to your end users are included in each scenario article.
 1. **Set up devices:** 
 1. **Roll out:** Roll out communications and training for your frontline managers and workers. Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
