@@ -29,7 +29,7 @@ Microsoft Purview Data Loss Prevention (DLP) can identify, monitor, and protect 
 
 ## Keyword dictionary limits
 
-There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant. To find out how many keyword dictionaries you have in your tenant, connect using the procedures in [Connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) to connect to your tenant and run this PowerShell script.
+There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant. To find out how many keyword dictionaries you have in your tenant, connect using the procedures in [Connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to connect to your tenant and run this PowerShell script.
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -107,7 +107,7 @@ Use the following steps to create and import keywords for a custom dictionary:
 
 ## Create a keyword dictionary from a file using PowerShell
 
-Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 1. Copy the keywords into a text file and make sure that each keyword is on a separate line.
 

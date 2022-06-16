@@ -25,10 +25,6 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## The navigation bar
 
