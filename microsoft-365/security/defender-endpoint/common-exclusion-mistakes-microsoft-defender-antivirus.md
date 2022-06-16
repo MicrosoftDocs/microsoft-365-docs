@@ -25,26 +25,34 @@ ms.collection: M365-security-compliance
 - Microsoft Defender Antivirus 
 
 **Platforms**
+
 - Windows
 - macOS
 - Linux
 
-You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistake that you should avoid when defining exclusions.
+>[!IMPORTANT]
+>Adding exclusions for Microsoft Defender Antivirus scans reduces the level of protection on your device.
+
+You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistakes that you should avoid when defining exclusions.
 
 Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## Excluding certain trusted items
 
-Certain files, file types, folders, or processes should not be excluded from scanning even though you trust them to be not malicious.
+Certain files, file types, folders, or processes shouldn't be excluded from scanning even though you trust them to be not malicious.
 
-Do not define exclusions for the folder locations, file extensions, and processes that are listed in the following sections:
+Don't define exclusions for the folder locations, file extensions, and processes that are listed in the following sections:
+
 - Folder locations
 - File extensions
 - Processes
 
 ### Folder locations
 
-In general, do not define exclusions for the following folder locations:
+>[!IMPORTANT]
+>Certain folders shouldn't be excluded from scans because they end up being folders where malicious files can get dropped.
+
+In general, don't define exclusions for the following folder locations:
 
 `%systemdrive%`
 
@@ -115,7 +123,10 @@ In general, do not define exclusions for the following folder locations:
 
 ### File extensions
 
-In general, do not define exclusions for the following file extensions:
+>[!IMPORTANT]
+>Certain file extensions shouldn't be excluded because they can be file types that are used in an attack.
+
+In general, don't define exclusions for the following file extensions:
 
 `.7z`
 
@@ -195,7 +206,10 @@ In general, do not define exclusions for the following file extensions:
 
 ### Processes
 
-In general, do not define exclusions for the following processes:
+>[!IMPORTANT]
+>Certain processes shouldn't be excluded because they get used during attacks.
+
+In general, don't define exclusions for the following processes:
 
 `AcroRd32.exe`
 
@@ -290,11 +304,11 @@ Malware might have the same name as that of a file that you trust and want to ex
 
 ## Using a single exclusion list for multiple server workloads
 
-Do not use a single exclusion list to define exclusions for multiple server workloads. Split the exclusions for different application or service workloads into multiple exclusion lists. For example, the exclusion list for your IIS Server workload must be different from the exclusion list for your SQL Server workload.
+Don't use a single exclusion list to define exclusions for multiple server workloads. Split the exclusions for different application or service workloads into multiple exclusion lists. For example, the exclusion list for your IIS Server workload must be different from the exclusion list for your SQL Server workload.
 
 ## Using incorrect environment variables as wildcards in the file name and folder path or extension exclusion lists
 
-Microsoft Defender Antivirus Service runs in system context using the LocalSystem account, which means it gets information from the system environment variable, and not from the user environment variable. Use of environment variables as a wildcard in exclusion lists is limited to system variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account. Therefore, do not use user environment variables as wildcards when adding Microsoft Defender Antivirus folder and process exclusions. See the table under [System environment variables](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) for a complete list of system environment variables.
+Microsoft Defender Antivirus Service runs in system context using the LocalSystem account, which means it gets information from the system environment variable, and not from the user environment variable. Use of environment variables as a wildcard in exclusion lists is limited to system variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account. Therefore, don't use user environment variables as wildcards when adding Microsoft Defender Antivirus folder and process exclusions. See the table under [System environment variables](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) for a complete list of system environment variables.
 
 See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for information on how to use wildcards in exclusion lists.
 
