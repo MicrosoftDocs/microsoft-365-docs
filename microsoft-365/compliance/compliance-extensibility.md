@@ -108,7 +108,7 @@ Organizations of all types require a records-management solution to manage criti
 
 The records management solution is used by organization in large volumes to utilize its various capabilities in protecting, labeling, retaining, or deleting their data. The Microsoft Graph APIs for records management lets organizations manage retention labels and their associated actions more efficiently, automate repetitive tasks, and equip customers with flexibility in options.
 
-The first release of Graph APIs for records management support the following example scenarios:
+The first release of Graph APIs for records management support the management of retention labels, and event-based retention. Example scenarios:
 
 - Managing retention labels
     
