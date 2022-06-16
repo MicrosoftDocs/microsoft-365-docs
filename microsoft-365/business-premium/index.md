@@ -6,7 +6,7 @@ ms.author: v-kcirillo
 author: cirilk
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 

@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+description: "Learn how to create device protection policies in Microsoft 365 Business Premium."
 ---
 
 # View and edit device protection policies

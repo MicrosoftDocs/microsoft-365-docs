@@ -5,7 +5,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article 
+ms.topic: conceptual 
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:

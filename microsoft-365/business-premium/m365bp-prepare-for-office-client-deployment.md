@@ -7,7 +7,7 @@ author: denisebmsft
 manager: dansimp
 ms.date: 04/01/2022
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: M365-subscription-management 

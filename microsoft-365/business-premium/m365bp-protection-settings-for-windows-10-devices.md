@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1.keywords:
 - 'Win10AppPolicy'
 - 'O365E_Win10AppPolicy'

@@ -23,7 +23,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview about maintaining your org's environment"
+description: "An overview about maintaining your organization's network and systems security environment, and defending against cyberattacks."
 ---
 
 # Maintain your environment

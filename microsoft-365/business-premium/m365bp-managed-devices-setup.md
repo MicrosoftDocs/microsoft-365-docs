@@ -7,7 +7,7 @@ author: cirilk
 manager: dansimp
 ms.date: 03/18/2022
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 

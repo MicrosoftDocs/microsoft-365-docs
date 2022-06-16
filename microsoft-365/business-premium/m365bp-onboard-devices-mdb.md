@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: overview
+ms.topic: how-to
 ms.date: 04/01/2022
 ms.service: o365-administration
 ms.localizationpriority: high
@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+description: "How to set up managed devices"
 ---
 
 # Onboard enrolled devices to Microsoft Defender for Business

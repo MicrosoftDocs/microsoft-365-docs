@@ -16,6 +16,7 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
+description: "Learn how to use the Microsoft Defender Action center."
 ---
 
 # Review remediation actions in Microsoft 365 Business Premium

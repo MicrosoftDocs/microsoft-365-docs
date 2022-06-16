@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -51,7 +51,7 @@ This video describes the steps for how to set this up for the most common scenar
 
 See [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md) for the steps.
 
-## Device actions
+## Possible device actions and statuses
   
 ![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
 

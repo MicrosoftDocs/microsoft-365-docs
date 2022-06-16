@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+description: "How to set up Microsoft 365 Business Premium or work with a solution provider to do so."
 ---
 
 # Set up Microsoft 365 Business Premium

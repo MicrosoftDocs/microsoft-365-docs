@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "What you can do to help protect your campaign from digital attacks."
+description: "What you can do to help protect your campaign from digital cyberattacks and other security threats."
 ---
 
 # Infographic: Help protect yourself and your campaign from digital threats

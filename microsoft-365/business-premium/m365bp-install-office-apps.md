@@ -6,7 +6,7 @@ ms.author: v-kcirillo
 author: cirilk
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -43,7 +43,6 @@ Have them perform the following:
 3. The Office apps are installed. The process may take several minutes. When it completes, select  **Close**.
 4. To install Microsoft Teams, go to the office.com page, and choose  **Teams**.
 5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
-
 
 ## Set up mobile devices for Microsoft 365 Business Premium users
 
