@@ -55,7 +55,7 @@ To learn more about DLP licensing, see [Microsoft 365 licensing guidance for sec
 
 ## Configure notifications for EDM activities
 
-1. Connect to the [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Connect to the [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.  For example, if you want to be notified when the **UploadDataCompleted** action occurred, run:
 
