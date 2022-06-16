@@ -104,9 +104,9 @@ With [Microsoft Graph connectors](/microsoftsearch/connectors-overview), organiz
 
 ### Microsoft Graph API for records management (preview)
 
-Organizations of all types require a records-management solution to manage critical records across their corporate data. [Microsoft Purview Records Management](records-management.md) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
+Organizations of all types require a records management solution to manage critical records across their data. [Microsoft Purview Records Management](records-management.md) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
 
-The records management solution is used by organization in large volumes to utilize its various capabilities in protecting, labeling, retaining, or deleting their data. The Microsoft Graph APIs for records management lets organizations manage retention labels and their associated actions more efficiently, automate repetitive tasks, and equip customers with flexibility in options.
+The records management solution is used by organizations in large volumes to utilize its various capabilities in protecting, labeling, retaining, or deleting their data. The Microsoft Graph APIs for records management lets organizations manage retention labels and their associated actions more efficiently, automate repetitive tasks, and equip customers with flexibility in options.
 
 The first release of Graph APIs for records management support the management of retention labels, and event-based retention. Example scenarios:
 
@@ -120,7 +120,7 @@ The first release of Graph APIs for records management support the management of
     
     When an employee leaves an organization, the information is updated in the HR management system. From the date of leaving, confidential documents need to be retained for seven years. These documents already have the retention label "Employee_departure" applied to them.
     
-    Developers and compliance admins use the Graph APIs for records management to read the label “Employee_departure” and lookup the associated event type "Event-employee_departure".
+    Developers and compliance admins use the Graph APIs for records management to read the label “Employee_departure” and look up the associated event type "Event-employee_departure".
     
     They then use the Graph APIs for records management to create an event for the associated event type. The retention period for the confidential documents starts after this event is created.
 
