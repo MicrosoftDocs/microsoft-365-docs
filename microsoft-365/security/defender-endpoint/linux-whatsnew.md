@@ -143,7 +143,7 @@ ms.technology: mde
 ### What's new
 - Performance improvements & bug fixes
 
-
+</details>
 
 ## PRIOR TO 2022
 
