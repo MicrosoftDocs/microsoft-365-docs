@@ -21,6 +21,7 @@ ms.custom:
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
 ms.technology: mdo
 ms.prod: m365-security
+adobe-target: true
 ---
 
 # Find and release quarantined messages as a user in EOP
