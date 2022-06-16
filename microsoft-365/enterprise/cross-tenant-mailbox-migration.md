@@ -535,21 +535,17 @@ Currently the Cross-Tenant mailbox migrations feature does not support the migra
 
 No, after a cross tenant mailbox migration, eDiscovery against the migrated user's mailbox in the source does not work. This is because there is no longer a mailbox in the source to search against as the mailbox has been migrated to the target tenant and now belongs to the target tenant. eDiscovery, post mailbox migration can only be done in the target tenant (where the mailbox now exists). If a copy of the source mailbox needs to persist in the source tenant after migration, the admin in the source can copy the contents to an alternate mailbox pre migration for future eDiscovery operations against the data.
 
-### When will the destination MailUser be converted to a destination mailbox? Is it automatic by "completing" migration batch or is a manual step for conversion needed?
+### At which point will the destination MailUser be converted to a destination mailbox?
 
 The destination MailUser object is automatically converted to a mailbox after migration.
 
-### When will the source mailbox be converted to source MailUser?
+### When will the source mailbox be converted to a source MailUser?
 
 The conversion happens automatically after the migration process is complete.
 
-### At which step should I assign the Exchange Online license to destination MailUsers? Can be this done after the status of the migration batch is "synced" or after the conversion from MailUser to mailbox, or should it be assigned before starting the migration batch/sync process?
+### At which step should I assign the Exchange Online license to destination MailUsers?
 
 This can be done before the migration is complete, but you should not assign a license prior to stamping the _ExchangeGuid_ attribute or the conversion of MailUser object to mailbox will fail and a new mailbox will be created instead. To mitigate this risk, it is best to wait until after the migration is complete, and assign licenses during the 30 day grace period.
-
-### Other than setting destination MailUser X509 address, is it necessary to add any other proxyAddress?
-
-The only thing that needs to be stamped on the MailUser is the _LegacyExchangeDN_ as an X500, and any other X500 addresses that are on the source mailbox.
 
 ## Known issues
 
