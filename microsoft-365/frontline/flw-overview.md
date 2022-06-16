@@ -71,7 +71,53 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 ## Modern devices
 
-Equip your employees with industry-specific devices tailored for their needs, or provide a more secure way to communicate on shared or personal devices with Microsoft 365 and Microsoft Teams.
+Equip your employees with industry-specific devices tailored for their needs, or provide a more secure way to communicate on shared or personal devices with Microsoft 365 and Microsoft Teams. [Link to devices article]
+
+## Adoption principles to help envision and implement business scenarios
+
+You can implement many helpful scenarios for frontline workers quickly, using out-of-the-box capabilities. For a list of scenarios we recommend and provide guidance for, see [Choose your scenarios](flw-choose-scenarios.md). However, it also pays to spend time thinking through exactly what you want to achieve organizationally and setting the appropriate groundwork. Particularly if you need to enhance out-of-the-box scenarios with integrated or custom solutions from solution providers or partners, you'll want to spend time planning and envisioning before you dive in. The principles below are based on information from the [Frontline Worker Solutions Success Kit](https://aka.ms/TeamsFLWSuccessKit). Find more adoption resources on the [frontline worker section of the Microsoft Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
+
+| Start | Discover | Envision | Build | Grow |
+|-----|-----|-----|-----|-----|
+| Assess and prepare | Align on value | Identify solutions | Build and validate |  |
+
+**Start**
+> [!div class="checklist"]
+>
+> * Assess your existing frontline environment and processes.
+> * Identify core stakeholders - business, IT, and frontline.
+> * Identify motivations, goals, assumptions, and potential blockers.
+> * Identify any other in-progress initiatives that might be related, to understand any potential overlaps, conflicts, or potential for alignment.
+
+**Discover**
+> [!div class="checklist"]
+>
+> * Define what's needed and why with personas, problem analysis, and stories.
+> * Understand current workarounds and gaps.
+> * Confirm "what's in it for me" for all of your personas.
+> * Get executive sponsorship.
+
+**Envision**
+> [!div class="checklist"]
+>
+> * Evaluate what you need technically to enable the scenarios.
+> * Map apps and capabilities to light up key scenarios and user stories.
+> * Think through questions about device management, such as: how will workers access Teams (install themselves? pushed to them?), how will they log in and how will you manage their identities? What's your approach to bring-your-own, corporate shared, or assigned devices?
+> * Identify relevant roles and responsibilities for the execution phase.
+
+**Build**
+> [!div class="checklist"]
+>
+> * Implement your scenario or solution at a small scale.
+> * Use a [pilot program](flw-pilot.md) to validate your solutions and scenarios with a subset of users.
+
+**Grow**
+> [!div class="checklist"]
+>
+> * Roll out your solution at scale.
+> * Continue to gather feedback and establish ongoing maintenance and governance.
+> * Plan for continuous education and readiness.
+> * Expand scenarios as needed, over time.
 
 ## Ready to get started?
 
