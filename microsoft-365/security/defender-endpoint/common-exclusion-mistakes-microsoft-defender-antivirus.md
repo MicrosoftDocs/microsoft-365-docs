@@ -61,7 +61,7 @@ In general, don't define exclusions for the following folder locations:
 - `%ProgramFiles%\Contoso\`, `C:\Program Files\Contoso\`, `%ProgramFiles(x86)%\Contoso\`, or `C:\Program Files (x86)\Contoso\`
 - `C:\Temp`, `C:\Temp\`, or `C:\Temp\*`
 - `C:\Users\` or `C:\Users\*`
-- `C:\Users\<UserProfileName>\AppData\Local\Temp\` or `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`. However, n**ote the following important exceptions for SharePoint**: **Do exclude** `C:\Users\ServiceAccount\AppData\Local\Temp` or `C:\Users\Default\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+- `C:\Users\<UserProfileName>\AppData\Local\Temp\` or `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`. **Note the following important exceptions for SharePoint**: **Do exclude** `C:\Users\ServiceAccount\AppData\Local\Temp` or `C:\Users\Default\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
 - `%Windir%\Prefetch`, `C:\Windows\Prefetch`, `C:\Windows\Prefetch\`, or `C:\Windows\Prefetch\*`
 - `%Windir%\System32\Spool` or `C:\Windows\System32\Spool`
 - `C:\Windows\System32\CatRoot2`
