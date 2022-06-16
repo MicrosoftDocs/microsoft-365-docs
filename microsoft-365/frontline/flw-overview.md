@@ -50,7 +50,7 @@ Enrich your communications and employee experiences with Microsoft 365 for front
 
 ## Enhance workforce management
 
-Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), the schedule management tool in Teams that keeps your frontline workforce connected and in sync. [Shifts connectors](shifts-connectors.md) enable you to integrate Shifts, the schedule management tool in Microsoft Teams, with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
+Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), the schedule management tool in Teams that keeps your frontline workforce connected and in sync. [Shifts connectors](shifts-connectors.md) enable you to integrate Shifts with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
 | Solution area | Description |
 | --- | --- |
