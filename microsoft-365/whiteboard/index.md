@@ -36,7 +36,8 @@ The resources in this section help you learn more about what Microsoft Whiteboar
 
 The resources in this section help the admin in your organization to set up and configure Microsoft Whiteboard in your Microsoft 365 environment.
 
-For organizations
+### For organizations
+
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to set up and manage Whiteboard for your organization|[Enable and manage access to Whiteboard for organizations](enable-whiteboard-access-organizations.md)|
@@ -44,7 +45,8 @@ For organizations
 |Use PowerShell to manage Microsoft Whiteboard|[PowerShell for Whiteboard](https://docs.microsoft.com/en-us/powershell/module/whiteboard/?view=whiteboard-ps)|
 
 
-For government
+### For government
+
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to set up and manage Whiteboard for your organization|[Enable and manage access to Whiteboard for organizations](enable-whiteboard-access-organizations.md)|
