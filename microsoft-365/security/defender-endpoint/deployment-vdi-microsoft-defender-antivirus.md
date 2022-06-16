@@ -32,7 +32,7 @@ For more information on Microsoft Remote Desktop Services and VDI support, see [
 
 For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
-With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
+With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
@@ -47,11 +47,10 @@ This guide describes how to configure your VMs for optimal protection and perfor
 You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
 > [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+> The Defender for Endpoint demo site at `demo.wd.microsoft.com` is deprecated and will be removed in the future.
 
 > [!IMPORTANT]
 > Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
->
 > There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 ## Set up a dedicated VDI file share
@@ -112,6 +111,7 @@ You can also set up your single server or machine to fetch the updates on behalf
 This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates.
 
 To do this:
+
  1. Create an SMB/CIFS file share. 
  
  2. Use the following example to create a file share with the following share permissions.
@@ -129,7 +129,7 @@ To do this:
 
     For this example, the file share is:
 
-    \\\fileserver.fqdn\mdatp$\wdav-update
+    `\\fileserver.fqdn\mdatp$\wdav-update`
 
 ### Set a scheduled task to run the PowerShell script
 
@@ -203,7 +203,6 @@ Suppressing notifications prevents notifications from Microsoft Defender Antivir
 
 > [!TIP]
 > To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
->
 > - On the right end of the taskbar, select the Action Center icon.
 > - Press the Windows logo key button + A.
 > - On a touchscreen device, swipe in from the right edge of the screen.
