@@ -14,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/19/2021
+ms.date: 06/16/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -22,6 +22,7 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender for Endpoint Plan 1
 - Microsoft Defender Antivirus 
 
 **Platforms**
@@ -30,10 +31,10 @@ ms.collection: M365-security-compliance
 - macOS
 - Linux
 
->[!IMPORTANT]
->Adding exclusions for Microsoft Defender Antivirus scans reduces the level of protection for your device.
+> [!IMPORTANT]
+> Add exclusions with caution. Exclusions for Microsoft Defender Antivirus scans reduce the level of protection for devices.
 
-You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistakes that you should avoid when defining exclusions.
+You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. However, excluded items could contain threats that make your device vulnerable. This article describes some common mistakes that you should avoid when defining exclusions.
 
 Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
@@ -49,251 +50,131 @@ Don't define exclusions for the folder locations, file extensions, and processes
 
 ### Folder locations
 
->[!IMPORTANT]
->Certain folders shouldn't be excluded from scans because they end up being folders where malicious files can get dropped.
+> [!IMPORTANT]
+> Certain folders shouldn't be excluded from scans because they end up being folders where malicious files can get dropped.
 
 In general, don't define exclusions for the following folder locations:
 
-`%systemdrive%`
-
-`C:`
-
-`C:\`
-
-`C:\*`
-
-`%ProgramFiles%\Java`
-
-`C:\Program Files\Java`
-
-`%ProgramFiles%\Contoso\`
-
-`C:\Program Files\Contoso\`
-
-`%ProgramFiles(x86)%\Contoso\`
-
-`C:\Program Files (x86)\Contoso\`
-
-`C:\Temp`
-
-`C:\Temp\`
-
-`C:\Temp\*`
-
-`C:\Users\`
-
-`C:\Users\*`
-
-`C:\Users\<UserProfileName>\AppData\Local\Temp\` **Note the following exception for SharePoint**: Do exclude
+- `%systemdrive%`
+- `C:`, `C:\`, or `C:\*`
+- `%ProgramFiles%\Java` or `C:\Program Files\Java`
+- `%ProgramFiles%\Contoso\`, `C:\Program Files\Contoso\`, `%ProgramFiles(x86)%\Contoso\`, or `C:\Program Files (x86)\Contoso\`
+- `C:\Temp`, `C:\Temp\`, or `C:\Temp\*`
+- `C:\Users\` or `C:\Users\*`
+- `C:\Users\<UserProfileName>\AppData\Local\Temp\` **Note the following exception for SharePoint**: Do exclude
 `C:\Users\ServiceAccount\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
-
-`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\` **Note the following exception for SharePoint**: Do exclude `C:\Users\Default\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
-
-`%Windir%\Prefetch`
-
-`C:\Windows\Prefetch`
-
-`C:\Windows\Prefetch\`
-
-`C:\Windows\Prefetch\*`
-
-`%Windir%\System32\Spool`
-
-`C:\Windows\System32\Spool`
-
-`C:\Windows\System32\CatRoot2`
-`%Windir%\Temp`
-
-`C:\Windows\Temp`
-
-`C:\Windows\Temp\`
-
-`C:\Windows\Temp\*`
+- `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\` **Note the following exception for SharePoint**: Do exclude `C:\Users\Default\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+- `%Windir%\Prefetch`, `C:\Windows\Prefetch`, `C:\Windows\Prefetch\`, or `C:\Windows\Prefetch\*`
+- `%Windir%\System32\Spool` or `C:\Windows\System32\Spool`
+- `C:\Windows\System32\CatRoot2`
+- `%Windir%\Temp`, `C:\Windows\Temp`, `C:\Windows\Temp\`, or `C:\Windows\Temp\*`
 
 #### Linux and macOS Platforms
 
-`/`
+In general, don't define exclusions for the following folder locations:
 
-`/bin`
-
-`/sbin`
-
-`/usr/lib`
-
+- `/`
+- `/bin` or `/sbin`
+- `/usr/lib`
 
 ### File extensions
 
->[!IMPORTANT]
->Certain file extensions shouldn't be excluded because they can be file types that are used in an attack.
+> [!IMPORTANT]
+> Certain file extensions shouldn't be excluded because they can be file types that are used in an attack.
 
 In general, don't define exclusions for the following file extensions:
 
-`.7z`
-
-`.bat`
-
-`.bin`
-
-`.cab`
-
-`.cmd`
-
-`.com`
-
-`.cpl`
-
-`.dll`
-
-`.exe`
-
-`.fla`
-
-`.gif`
-
-`.gz`
-
-`.hta`
-
-`.inf`
-
-`.java`
-
-`.jar`
-
-`.job`
-
-`.jpeg`
-
-`.jpg`
-
-`.js`
-
-`.ko`
-
-`.ko.gz`
-
-`.msi`
-
-`.ocx`
-
-`.png`
-
-`.ps1`
-
-`.py`
-
-`.rar`
-
-`.reg`
-
-`.scr`
-
-`.sys`
-
-`.tar`
-
-`.tmp`
-
-`.url`
-
-`.vbe`
-
-`.vbs`
-
-`.wsf`
-
-`.zip`
+- `.7z`
+- `.bat`
+- `.bin`
+- `.cab`
+- `.cmd`
+- `.com`
+- `.cpl`
+- `.dll`
+- `.exe`
+- `.fla`
+- `.gif`
+- `.gz`
+- `.hta`
+- `.inf`
+- `.java`
+- `.jar`
+- `.job`
+- `.jpeg`
+- `.jpg`
+- `.js`
+- `.ko` or `.ko.gz`
+- `.msi`
+- `.ocx`
+- `.png`
+- `.ps1`
+- `.py`
+- `.rar`
+- `.reg`
+- `.scr`
+- `.sys`
+- `.tar`
+- `.tmp`
+- `.url`
+- `.vbe`
+- `.vbs`
+- `.wsf`
+- `.zip`
 
 ### Processes
 
->[!IMPORTANT]
->Certain processes shouldn't be excluded because they get used during attacks.
+> [!IMPORTANT]
+> Certain processes shouldn't be excluded because they get used during attacks.
 
 In general, don't define exclusions for the following processes:
 
-`AcroRd32.exe`
-
-`bitsadmin.exe`
-
-`excel.exe`
-
-`iexplore.exe`
-
-`java.exe`
-
-`outlook.exe`
-
-`psexec.exe`
-
-`powerpnt.exe`
-
-`powershell.exe`
-
-`schtasks.exe`
-
-`svchost.exe`
-
-`wmic.exe`
-
-`winword.exe`
-
-`wuauclt.exe`
-
-`addinprocess.exe`
-
-`addinprocess32.exe`
-
-`addinutil.exe`
-
-`bash.exe`
-
-`bginfo.exe`
-
-`cdb.exe`
-
-`csi.exe`
-
-`dbghost.exe`
-
-`dbgsvc.exe`
-
-`dnx.exe`
-
-`dotnet.exe`
-
-`fsi.exe`
-
-`fsiAnyCpu.exe`
-
-`kd.exe`
-
-`ntkd.exe`
-
-`lxssmanager.dll`
-
-`msbuild.exe`
-
-`mshta.exe`
-
-`ntsd.exe`
-
-`rcsi.exe`
-
-`system.management.automation.dll`
-
-`windbg.exe`
+- `AcroRd32.exe`
+- `addinprocess.exe`
+- `addinprocess32.exe`
+- `addinutil.exe`
+- `bash.exe`
+- `bginfo.exe`
+- `bitsadmin.exe`
+- `cdb.exe`
+- `csi.exe`
+- `dbghost.exe`
+- `dbgsvc.exe`
+- `dnx.exe`
+- `dotnet.exe`
+- `excel.exe`
+- `fsi.exe`
+- `fsiAnyCpu.exe`
+- `iexplore.exe`
+- `java.exe`
+- `kd.exe`
+- `lxssmanager.dll`
+- `msbuild.exe`
+- `mshta.exe`
+- `ntkd.exe`
+- `ntsd.exe`
+- `outlook.exe`
+- `psexec.exe`
+- `powerpnt.exe`
+- `powershell.exe`
+- `rcsi.exe`
+- `svchost.exe`
+- `schtasks.exe`
+- `system.management.automation.dll`
+- `windbg.exe`
+- `winword.exe`
+- `wmic.exe`
+- `wuauclt.exe`
 
 #### Linux and macOS Platforms
 
-`bash`
+In general, don't define exclusions for the following processes:
 
-`sh`
-
-`python` and `python3`
-
-`java`
-
-`zsh`
+- `bash`
+- `java`
+- `python` and `python3`
+- `sh`
+- `zsh`
 
 > [!NOTE]
 > You can choose to exclude file types, such as `.gif`, `.jpg`, `.jpeg`, or `.png` if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
