@@ -94,7 +94,7 @@ We are changing how whiteboards are stored when a user's account is deleted in A
 >[!NOTE]
 > Whiteboards stored in OneDrive for Business will be handled like any other content in OneDrive for Business. For more information, see [Set the OneDrive retention for deleted users](https://docs.microsoft.com/en-us/onedrive/set-retention).
 
-The behavior of whiteboards on Azure will change as of **June 1, 2022**. Any whiteboards shared with other users will be deleted.
+As of **June 1, 2022**, the behavior of whiteboards on Azure has changed. Any whiteboards shared with other users will be deleted.
 
 If you want to retain a deleted user’s whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user. 
 
@@ -206,11 +206,11 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 ### Install Whiteboard using Microsoft Intune
 
-1. Add Whiteboard as an available app using the steps in this article: TBD.
+1. Add Whiteboard as an available app using the steps in this article: [Add Microsoft Store apps to Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/apps/store-apps-windows).
 
 2. Add Microsoft Store apps to Microsoft Intune.
 
-3. Assign the app to a group using the steps in this article: TBD.
+3. Assign the app to a group using the steps in this article: [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/apps/apps-deploy).
 
 4. Assign apps to groups with Microsoft Intune.
 
