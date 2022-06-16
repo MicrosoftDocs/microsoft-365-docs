@@ -140,4 +140,81 @@ The sharing experience differs based on whether you’re in a Teams meeting, if 
 
 ### Sharing in Teams meetings
 
+When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization and automatically shares the whiteboard with any in-tenant users in the meeting.
 
+There’s an additional capability for temporary collaboration by external and shared device accounts during a meeting. This allows these users to temporarily view and collaborate on whiteboards when they’re shared in a Teams meeting, similar to PowerPoint Live sharing.
+
+>[!NOTE]
+> This is not a share link and does not grant access to the file. It provides temporary viewing and collaboration on the whiteboard for the duration of the Teams meeting only.
+
+If you have external sharing enabled for OneDrive for Business, no further action is required.
+
+If you restrict external sharing for OneDrive for Business, you can keep it restricted and just enable a new setting in order for external and shared device accounts to work. To do so, following these steps:
+
+1. Using PowerShell, connect to your tenant and ensure the SharePoint Online module is updated by running the following command:
+
+   <pre><code class="lang-powershell">Update-Module -Name Microsoft.Online.SharePoint.PowerShell</code></pre>
+ 
+2. Then run the following <code>Set-SPOTenant</code> cmdlet:
+
+   <pre><code class="lang-powershell">Set-SPOTenant -AllowAnonymousMeetingParticipantsToAccessWhiteboards On</code></pre>
+
+This setting applies only to whiteboards and replaces the previously shared settings, **OneDriveLoopSharingCapability** and **CoreLoopSharingCapability**. Those are no longer applicable and can be disregarded.
+
+>[!NOTE]
+> By default, the Teams meeting setting **Anonymous users can interact with apps in meetings** is enabled. If you have disabled it, any anonymous users (as opposed to guests or federated users) will not have access to the whiteboard during the meeting.
+
+These changes should take approximately 60 minutes to apply across your tenancy. 
+
+Scenario
+
+Storage and ownership
+
+Sharing settings
+
+Sharing experience
+
+Start the whiteboard from a desktop or mobile device
+
+Storage: ODB
+
+Owner: User who creates the whiteboard
+
+Enabled
+
+In-tenant users: Can create, view and collaborate
+
+External users: Can view and collaborate during the meeting only (the button to share a whiteboard will not appear for external users)
+
+Shared device accounts: Can view and collaborate during the meeting only
+
+Start the whiteboard from a desktop or mobile device
+
+Storage: ODB
+
+Owner: User who creates the whiteboard
+
+Disabled
+
+In-tenant users: Can initiate, view and collaborate
+
+External users: Cannot view or collaborate
+
+Shared device accounts: Cannot view or collaborate
+
+Start the whiteboard from a Surface Hub or MTR
+
+Storage: Azure (this will be moved to ODB in future)
+
+Owner: Meeting participant
+
+Not applicable
+
+In-tenant users: Can initiate, view and collaborate
+
+External users: Can view and collaborate during the meeting only
+
+Shared device accounts: Can view and collaborate during the meeting only
+
+Adding as a tab in Teams channels and chats
+When adding a whiteboard as a tab in a Teams channel or chat, Whiteboard will create a sharing link that’s accessible b
