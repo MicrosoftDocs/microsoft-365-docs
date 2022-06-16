@@ -23,7 +23,11 @@ appliesto:
 
 
 
+Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
+
+
 ## Communication solution area
+
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
@@ -58,7 +62,6 @@ Also see these resources to learn how Yammer can work for your frontline workers
 Integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
 
-
 ## Wellbeing & engagement solution area
 
 | Scenario | Description | Apps |
@@ -89,7 +92,6 @@ More information: [Onboard new employees](/sharepoint/onboard-employees)
 | --- | --- | --- |
 | Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | |
 
-## Digital ecosystem solution area
+## Find more scenarios and solutions in the digital ecosystem
 
-| Scenario | Description | Apps |
-| --- | --- | --- |
+All of the scenarios above can be achieved with out of the box capabilities from Microsoft. But you can extend even further with partner solutions.
