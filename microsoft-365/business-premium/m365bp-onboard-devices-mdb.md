@@ -15,7 +15,6 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-description: "How to set up managed devices"
 ---
 
 # Onboard enrolled devices to Microsoft Defender for Business

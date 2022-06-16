@@ -1,6 +1,6 @@
 ---
 title: Set up Microsoft 365 Business Premium
-description: See how to set up Microsoft 365 Business Premium
+description: "How to set up Microsoft 365 Business Premium or work with a solution provider to do so."
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -15,7 +15,6 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-description: "How to set up Microsoft 365 Business Premium or work with a solution provider to do so."
 ---
 
 # Set up Microsoft 365 Business Premium

@@ -15,7 +15,6 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-description: "How to work with a Microsoft partner."
 ---
 
 # Work with a Microsoft partner

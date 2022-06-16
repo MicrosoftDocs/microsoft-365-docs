@@ -42,7 +42,7 @@ Examples of remediation actions include sending a file to quarantine, stopping a
 
 3. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
 
-4. Select the **History** tab to view a list of completed actions. 
+4. Select the **History** tab to view a list of completed actions.
 
 ## Types of remediation actions
 
