@@ -1,6 +1,6 @@
 ---
-title: What is Microsoft 365 for frontline workers?
-description: Learn how you can use Microsoft 365 and Teams to empower the frontline workers in your organization.
+title: Choose your scenarios for Microsoft 365 for frontline workers
+description: Learn about scenarios you can easily implement for the frontline workers in your organization.
 search.appverid: MET150
 author: samanro
 ms.author: samanro
@@ -20,6 +20,8 @@ appliesto:
 ---
 
 # Choose your scenarios
+
+
 
 ## Communication solution area
 
