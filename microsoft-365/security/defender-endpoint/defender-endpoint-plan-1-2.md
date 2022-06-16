@@ -40,9 +40,7 @@ You can use this article to help clarify what protection is provided by the diff
 
 ## Mixed licensing scenarios
 
-Suppose that your organization is using a mix of Microsoft endpoint security subscriptions, such that some users are assigned licenses for Defender for Endpoint Plan 1, and other users are assigned licenses for Defender for Endpoint Plan 2. 
-
-**Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. Using our example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
+Suppose that your organization is using a mix of Microsoft endpoint security subscriptions. For example, suppose that some users are assigned licenses for Defender for Endpoint Plan 1, and other users are assigned licenses for Defender for Endpoint Plan 2. **Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. Using our example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
 
 However, **you can contact support and request an override for your tenant experience**. 
 
