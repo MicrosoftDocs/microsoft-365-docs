@@ -26,13 +26,10 @@ ms.collection: m365-security-compliance
 **Platforms**
 - Windows
 
-In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment.
+In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
-
-For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
-
-With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
+> [!NOTE]
+> The Defender for Endpoint demo site at `demo.wd.microsoft.com` is deprecated and will be removed in the future.
 
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
@@ -46,8 +43,9 @@ This guide describes how to configure your VMs for optimal protection and perfor
 
 You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
-> [!NOTE]
-> The Defender for Endpoint demo site at `demo.wd.microsoft.com` is deprecated and will be removed in the future.
+For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
+
+For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
 > Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
@@ -108,9 +106,7 @@ We suggest starting with once a day, but you should experiment with increasing o
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
 
 You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
-This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates.
-
-To do this:
+This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates. To do this:
 
  1. Create an SMB/CIFS file share. 
  
