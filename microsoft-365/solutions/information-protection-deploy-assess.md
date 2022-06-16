@@ -195,9 +195,9 @@ The Microsoft Purview compliance portal comes pre-loaded with over 100 sensitive
 
 If you need to identify and protect an organization-specific or regional type of sensitive items, such as a custom format for employee IDs, or other personal information not already covered by a built-in sensitive information type, you can create a custom sensitive information type with these methods:
 
-- PowerShell
+- Security & Compliance PowerShell
 - Custom rules with exact data match (EDM)
-- Through the Compliance Center admin UI, as highlighted in the [Use Compliance Score and Compliance Manager article](information-protection-deploy-compliance.md)
+- Through the Microsoft 365 Purview compliance portal, as highlighted in the [Use Compliance Score and Compliance Manager article](information-protection-deploy-compliance.md)
 
 You can also customize an existing, built-in sensitive information type.
 
@@ -205,8 +205,8 @@ See these articles for more information:
 
 - [Customize a built-in sensitive information type](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [Learn about sensitive information types](../compliance/sensitive-information-type-learn-about.md)
-- [Create a custom sensitive information type in the Security & Compliance Center](../compliance/create-a-custom-sensitive-information-type.md)
-- [Create a custom sensitive information type in Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Create a custom sensitive information type in the Microsoft 365 Purview compliance portal](../compliance/create-a-custom-sensitive-information-type.md)
+- [Create a custom sensitive information type in Security & Compliance PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create custom sensitive information types with Exact Data Match based classification](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### Content Explorer

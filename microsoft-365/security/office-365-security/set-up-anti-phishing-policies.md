@@ -22,7 +22,7 @@ ms.prod: m365-security
 
 # Anti-phishing policies in Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -82,6 +82,15 @@ The following policy settings are available in anti-phishing policies in EOP and
 
   > [!NOTE]
   > At least one selection in the **Users, groups, and domains** settings is required in custom anti-phishing policies to identify the message **recipients** <u>that the policy applies to</u>. Anti-phishing policies in Defender for Office 365 also have [impersonation settings](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) where you can specify individual sender email addresses or sender domains <u>that will receive impersonation protection</u> as described later in this article.
+  >
+  > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+  >
+  > - The recipient is: romain@contoso.com
+  > - The recipient is a member of: Executives
+  >
+  > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy is not applied to him.
+  >
+  > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy still applies to him.
 
 ## Spoof settings
 
