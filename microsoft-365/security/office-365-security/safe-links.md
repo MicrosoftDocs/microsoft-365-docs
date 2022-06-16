@@ -32,7 +32,7 @@ ms.prod: m365-security
 
 # Safe Links in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -42,6 +42,9 @@ ms.prod: m365-security
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you're using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Safe Links is a feature in [Defender for Office 365](defender-for-office-365.md) that provides URL scanning and rewriting of inbound email messages in mail flow, and time-of-click verification of URLs and links in email messages and other locations. Safe Links scanning occurs in addition to the regular [anti-spam](anti-spam-protection.md) and [anti-malware](anti-malware-protection.md) in inbound email messages in Exchange Online Protection (EOP). Safe Links scanning can help protect your organization from malicious links that are used in phishing and other attacks.
+
+Watch this short video on how to protect against malicious links with Safe Links in Microsoft Defender for Office 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 Safe Links protection is available in the following locations:
 
@@ -132,6 +135,16 @@ The settings in Safe Links policies that apply to email messages are described i
   - **The recipient is a member of**
 
   You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+  >
+  > - The recipient is: romain@contoso.com
+  > - The recipient is a member of: Executives
+  >
+  > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy is not applied to him.
+  >
+  > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy still applies to him.
 
 - **Priority**: If you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied.
 

@@ -22,10 +22,6 @@ ms.collection:
 
 Microsoft offers a wide variety of cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. This article is designed to help clarify what security features, such as device protection, are included in Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft Defender for Endpoint.
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 **Use this article to**:
 
@@ -72,7 +68,7 @@ Defender for Business brings enterprise-grade capabilities of Defender for Endpo
 |[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS)|Yes <sup>[[6](#fn6)]</sup>|Yes|Yes|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)|No|No|Yes|
 |Partner APIs|Yes|Yes|Yes|
-|[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes|No|No|
+|[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes |Yes <sup>[[7](#fn7)]</sup>|Yes <sup>[[7](#fn7)]</sup>|
 
 (<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with Microsoft Intune, managed in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
@@ -89,6 +85,8 @@ Defender for Business brings enterprise-grade capabilities of Defender for Endpo
 (<a id="fn5">5</a>) In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
 
 (<a id="fn6">6</a>) See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+
+(<a id="fn7">7</a>) The ability to view incidents across tenants using Defender for Endpoint is new!
 
 ## Next steps
 

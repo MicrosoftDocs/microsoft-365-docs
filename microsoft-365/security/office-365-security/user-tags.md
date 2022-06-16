@@ -21,6 +21,12 @@ ms.prod: m365-security
 
 # User tags in Microsoft Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
 
 - **System tags**: Currently, [Priority accounts](../../admin/setup/priority-accounts.md) is the only type of system tag.
@@ -70,7 +76,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
-- For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
+- For information about securing _privileged accounts_ (admin accounts), see [this topic](/security/compass/critical-impact-accounts).
 
 ## Use the Microsoft 365 Defender portal to create user tags
 
