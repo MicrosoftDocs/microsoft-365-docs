@@ -29,10 +29,6 @@ As threats are detected, remediation actions come into play. Depending on the pa
 - [How to use the Action center](#how-to-use-the-action-center)
 - [Remediation actions](#remediation-actions)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## How to use the Action center
 
