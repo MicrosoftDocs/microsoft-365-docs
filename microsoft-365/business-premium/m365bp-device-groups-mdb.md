@@ -14,7 +14,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-description: "Learn about device groups and how to apply policies in Microsoft 365 Business Premium, and increase protection from cyberattacks."
+description: "Learn about device groups and how to apply policies with InTune in Microsoft 365 Business Premium, and increase protection from cyberattacks."
 ---
 
 # Device groups in Microsoft 365 Business Premium
