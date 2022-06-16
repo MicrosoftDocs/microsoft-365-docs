@@ -43,7 +43,7 @@ ms.technology: mde
 - Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
 - Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
-
+</br>
 
 <br/><br/>
 </details><details>
