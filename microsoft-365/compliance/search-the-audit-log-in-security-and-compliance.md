@@ -58,6 +58,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Retention policies and retention labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 | Sensitive information types|DlpSensitiveInformationType|
 | Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| Encrypted message Portal|OMEPortal|
 | SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
 | Stream|MicrosoftStream|
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
@@ -404,7 +405,7 @@ Click one of the following links to go to a specific table.
         [Encrypted message portal activities](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        [SystemSync activities] (#systemsync-activities)
+        [SystemSync activities](#systemsync-activities)
     :::column-end:::
     :::column:::
         
