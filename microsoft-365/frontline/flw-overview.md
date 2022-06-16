@@ -75,22 +75,12 @@ Equip your employees with industry-specific devices tailored for their needs.
 
 ## Ready to get started?
 
-|Choose your scenarios  |Set up | Configure services | Set up devices | Roll out |
-|:---------|:---------|:---------|:---------|:---------|
-|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/process-flow-blue.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/deploy-blue.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/settings.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/users-group.png" border="false"::: |
-|Discover the ways you can use Microsoft 365 for frontline workers to connect and engage your workforce, manage your workforce, and streamline operations. | Set up Microsoft 365, Microsoft Teams, and related services | Configure the services and apps you need for your scenarios.|  Devices??? | Roll out communications and training for your frontline managers and workers.|
-|[Choose the scenarios](flw-choose-scenarios.md) you want to implement.| Learn more at: [Set up overview](flow-how-to-start.md). | See the guidance for your chosen scenario. | Devices??? | Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/). |
+Get started by following these steps:
 
-The steps to configure each scenario and training and resources you can provide to your end users are included in each scenario.
+:::image type="content" source="media/m365-flw-get-started.png" alt-text="5 steps to get started with Microsoft 365 for frontline workers.":::
 
-Or a list:
-
-1. [Choose the scenarios](flw-choose-scenarios.md) you want to implement.
-1. [Set up Microsoft 365, Microsoft Teams, and related services](flw-setup-microsoft-365.md).
-1. Devices???
-1. Configure the services and apps you need for your scenarios.
-1. Roll out communications and training for your frontline managers and workers.
-
-### Adoption resources
-
-Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
+1. **[Choose your scenarios](flw-choose-scenarios.md):** Discover the ways you can use Microsoft 365 for frontline workers to connect and engage your workforce, manage your workforce, and streamline operations.
+1. **[Set up Microsoft 365](flow-how-to-start.md):** Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
+1. **Configure services and apps:** Configure the services and apps you need for your scenarios. The steps to configure each scenario and training and resources you can provide to your end users are included in each scenario article.
+1. **Set up devices:** 
+1. **Roll out:** Roll out communications and training for your frontline managers and workers. Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
