@@ -38,7 +38,7 @@ Make sure you have completed the steps in these articles before you start the pr
 1. [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md)
 1. [Create EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md)
 
-If you are not familiar with EDM based SITS or their implementation, you should familiarize yourself with:
+If you are not familiar with EDM based SITS or their implementation, it is essential that you familiarize yourself with the concepts in:
 
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
@@ -81,13 +81,23 @@ If you are not familiar with EDM based SITS or their implementation, you should 
 > - Select primary elements whose values make that row unique in the table. For example, don't pick fields like *FirstName* or *DateOfBirth* as there will most likely be many duplications of first names or dates of birth in your actual sensitive data file. Instead pick things like *Social Security Number* and *BankAccountNumber* whose value will be unique in your table and therefore make the row unique in the table.
 > - You can pick up to five primary elements. The more you can pick that have values that are unique in your actual sensitive data table, the better the accuracy of your EDM SIT will be. It will also improve performance and avoid timeouts caused by process overloading.
 > - Select a sensitive information type that closely matches the format of the content you want to find. Selecting a SIT that matches unnecessary content, like one that matches all text strings, or all numbers can cause excessive load in the system which could result in sensitive information being missed.
-> - All elements that are not selected as primary elements can still be used as corroborative or supporting evidence. The more supporting elements found that are in a defined proximity to primary elements, the higher the confidence that the item is a true positive.
 
 9. On the **Configure settings for data fields** you can tell set how EDM treats case and which delimiters to ignore. You can set this for the values for all elements values or specify the settings for each element individually. Choose **Next**.
 
-10. 
+> [!IMPORTANT]
+If you selected the Ignored Delimiters option for the primary element column in your schema, make sure the SIT you map to will match data with and without the selected delimiters.
+
+10. EDM will automatically generate one detection rule for each of the primary elements you identified. EDM will create a high confidence rule and a medium confidence rule. High confidence rules have more requirements that must be met than medium rules. Likewise, medium confidence rules have more requirements than low confidence rules should you choose to create a low confidence rule. You can review and edit those rules on the **Configure detection rules for primary elements** page. Choose **Submit**.
+
+> [!TIP]
+> All elements that are not selected as primary elements can still be used as corroborative or supporting evidence. The more supporting elements found that are in a defined proximity to primary elements, the higher the confidence that the item is a true positive.
+
+> [!NOTE]
+When you select **Submit**, EDM will create the schema and rule package. The name of the schema can be found on the final page of the creation flow.  
+
 
 
 ## Next step
 
-- [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
+

@@ -23,6 +23,11 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
+## Applies to 
+
+- [New experience](sit-create-sit-unified-ux-workflow.md)
+- [Classic experience](sit-create-sit-classic-ux-workflow.md)
+
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the *new experience* or the existing *classic experience*. EDM SITs can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article helps you understand the differences between the two experiences and helps you pick the right one for your needs.
 
 ## Before you begin

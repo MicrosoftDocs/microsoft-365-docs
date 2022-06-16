@@ -23,6 +23,10 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
+## Applies to
+
+- Classic experience
+
 You can create the schema and EDM SIT by using the [Use the exact data match schema and sensitive information type pattern wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) or [manually](#create-exact-data-match-schema-manually-and-upload). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM-based SITS or their implementation, you should familiarize yourself with:

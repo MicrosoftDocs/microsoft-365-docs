@@ -25,6 +25,11 @@ ms.custom: seo-marvel-apr2020
 
 This article shows you how to hash and upload your sensitive information source table.
 
+## Applies to
+
+- [Create exact data match sensitive information type new experience](sit-create-edm-sit-unified-ux-workflow.md)
+- [Create exact data match sensitive information type classic experience](sit-create-edm-sit-classic-ux-workflow.md)
+
 ## Hash and upload the sensitive information source table
 
 In this phase you:
@@ -77,6 +82,9 @@ If the tool indicates a mismatch in number of columns it might be due to the pre
   - your sensitive item file in .csv, .tsv or pipe (|) format, **PatientRecords.csv** in our examples
   - the output hash and salt files created in this procedure
   - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
+
+> [!IMPORTANT]
+Install the [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) in a custom folder so you don't need administrator permissions. If you install it into the default (*Program Files*), administrator permissions are required.
 
 #### Set up the security group and user account
 
@@ -230,6 +238,10 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 > [!NOTE]
 > To automate the hash and upload process after you have created it the first time, see [Refresh your exact data match sensitive information source table file](sit-use-exact-data-refresh-data.md).
 
-## Next Step
+## Next step for new experience
+
+- [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+
+## Next step for classic experience
 
 - [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
