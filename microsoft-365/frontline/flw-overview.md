@@ -75,7 +75,11 @@ Equip your employees with industry-specific devices tailored for their needs, or
 
 ## Adoption principles to help envision and implement business scenarios
 
-You can implement many helpful scenarios for frontline workers quickly, using out-of-the-box capabilities. For a list of scenarios we recommend and provide guidance for, see [Choose your scenarios](flw-choose-scenarios.md). However, it also pays to spend time thinking through exactly what you want to achieve organizationally and setting the appropriate groundwork. Particularly if you need to enhance out-of-the-box scenarios with integrated or custom solutions from solution providers or partners, you'll want to spend time planning and envisioning before you dive in. The principles below are based on information from the [Frontline Worker Solutions Success Kit](https://aka.ms/TeamsFLWSuccessKit). Find more adoption resources on the [frontline worker section of the Microsoft Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
+You can implement many helpful scenarios for frontline workers quickly, using out-of-the-box capabilities. For a list of scenarios we recommend and provide guidance for, see [Choose your scenarios](flw-choose-scenarios.md). 
+
+However, it also pays to spend time thinking through exactly what you want to achieve organizationally and setting the appropriate groundwork. Particularly if you need to enhance out-of-the-box scenarios with integrated or custom solutions from solution providers or partners, you'll want to spend time planning and envisioning before you dive in. 
+
+The principles below are based on information from the [Frontline Worker Solutions Success Kit](https://aka.ms/TeamsFLWSuccessKit). Find more adoption resources on the [frontline worker section of the Microsoft Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
 
 | Start | Discover | Envision | Build | Grow |
 |-----|-----|-----|-----|-----|
