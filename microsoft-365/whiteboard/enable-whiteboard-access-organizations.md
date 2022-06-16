@@ -166,55 +166,12 @@ This setting applies only to whiteboards and replaces the previously shared sett
 
 These changes should take approximately 60 minutes to apply across your tenancy. 
 
-Scenario
+|Scenario  |Storage and ownership  |Sharing settings  |Sharing experience  |
+|---------|---------|---------|---------|
+|Start the whiteboard from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Enabled  |In-tenant users: Can create, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only (the button to share a whiteboard will not appear for external users)<br><br>Shared device accounts: Can view and collaborate during the meeting only  |
+|Start the whiteboard from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Disabled  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Cannot view or collaborate<br><br>Shared device accounts: Cannot view or collaborate  |
+|Start the whiteboard from a Surface Hub or Microsoft Teams Rooms  |Storage: Azure (this will be moved to OneDrive for Business in the future)<br><br>Owner: Meeting participant   |Not applicable  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only<br><br>Shared device accounts: Can view and collaborate during the meeting only  |
 
-Storage and ownership
+### Add as a tab in Teams channels and chats
 
-Sharing settings
 
-Sharing experience
-
-Start the whiteboard from a desktop or mobile device
-
-Storage: ODB
-
-Owner: User who creates the whiteboard
-
-Enabled
-
-In-tenant users: Can create, view and collaborate
-
-External users: Can view and collaborate during the meeting only (the button to share a whiteboard will not appear for external users)
-
-Shared device accounts: Can view and collaborate during the meeting only
-
-Start the whiteboard from a desktop or mobile device
-
-Storage: ODB
-
-Owner: User who creates the whiteboard
-
-Disabled
-
-In-tenant users: Can initiate, view and collaborate
-
-External users: Cannot view or collaborate
-
-Shared device accounts: Cannot view or collaborate
-
-Start the whiteboard from a Surface Hub or MTR
-
-Storage: Azure (this will be moved to ODB in future)
-
-Owner: Meeting participant
-
-Not applicable
-
-In-tenant users: Can initiate, view and collaborate
-
-External users: Can view and collaborate during the meeting only
-
-Shared device accounts: Can view and collaborate during the meeting only
-
-Adding as a tab in Teams channels and chats
-When adding a whiteboard as a tab in a Teams channel or chat, Whiteboard will create a sharing link that’s accessible b
