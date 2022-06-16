@@ -207,7 +207,7 @@ See these articles for more information:
 - [Learn about sensitive information types](../compliance/sensitive-information-type-learn-about.md)
 - [Create a custom sensitive information type in the Security & Compliance Center](../compliance/create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Create custom sensitive information types with Exact Data Match based classification](../compliance/sit-get-started-exact-data-match-create-rule-package?view=o365-worldwide)
+- [Create custom sensitive information types with Exact Data Match based classification](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
 
 ### Content Explorer
 
