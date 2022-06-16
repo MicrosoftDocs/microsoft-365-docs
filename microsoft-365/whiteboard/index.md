@@ -40,7 +40,7 @@ The resources in this section help the admin in your organization to set up and 
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to set up and manage access to Whiteboard for organizations|[Enable and manage access to Whiteboard for your organization](enable-whiteboard-access-organizations.md)|
+|Learn how to set up and manage access to Whiteboard for your organization|[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)|
 |      |         |
 |      |         |
 
@@ -48,7 +48,7 @@ The resources in this section help the admin in your organization to set up and 
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to set up and manage access to Whiteboard for US Government - GCC High|[Enable and manage access to Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md)|
+|Learn how to set up and manage access to Whiteboard for US Government GCC High environments|[Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)|
 |       |       |
 |       |       |
 
