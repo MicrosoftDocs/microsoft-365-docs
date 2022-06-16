@@ -43,8 +43,6 @@ You can use this report to see the activity and usage of Project in your environ
 
 The report also has a table that shows activity for each project user in your environment.
 
-Show image of table here.
-
 
 Select **Choose columns** to add or remove columns from the table.  <br/> ![Project activity report - choose columns.](../../media/project-activity-columns.png)
 
