@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jamitche, jmueller
+ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,13 +23,13 @@ ms.custom:
 - business_assist
 search.appverid: MET150
 description: "Buy business products or services from Microsoft by using an existing payment method or adding a new one in the Microsoft 365 admin center."
-ms.date: 04/02/2021
+ms.date: 06/01/2022
 ---
 
 # Manage payment methods
 
 > [!IMPORTANT]
-> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account that is in good standing. However, you can't add new subscriptions to the bank account.
 
 When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy.
 
