@@ -149,7 +149,7 @@ There’s an additional capability for temporary collaboration by external and s
 
 If you have external sharing enabled for OneDrive for Business, no further action is required.
 
-If you restrict external sharing for OneDrive for Business, you can keep it restricted and just enable a new setting in order for external and shared device accounts to work. To do so, following these steps:
+If you restrict external sharing for OneDrive for Business, you can keep it restricted and just enable a new setting in order for external and shared device accounts to work. To do so, follow these steps:
 
 1. Using PowerShell, connect to your tenant and ensure the SharePoint Online module is updated by running the following command:
 
@@ -174,4 +174,62 @@ These changes should take approximately 60 minutes to apply across your tenancy.
 
 ### Add as a tab in Teams channels and chats
 
+When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will create a sharing link that’s accessible by anyone in the organization.
 
+|Scenario  |Storage and ownership  |Sharing settings  |Sharing experience  |
+|---------|---------|---------|---------|
+|Add the whiteboard to a channel or chat from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Not applicable (only applies to meetings)  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Not supported<br><br>Teams guests: Can view and collaborate<br><br>Shared device accounts: Not applicable  |
+
+### Create and share in Whiteboard native clients
+
+When you share whiteboards from the web, desktop, or mobile clients, you can choose specific people or create a sharing link that’s accessible by anyone in the organization. 
+
+>[!NOTE]
+> External sharing during a Teams meeting is not yet available, but will be added in a future release.
+
+Scenario
+
+Storage and ownership
+
+Sharing settings
+
+Sharing experience
+
+Create the whiteboard from a desktop or mobile device
+
+Storage: ODB
+
+Owner: User who creates the whiteboard
+
+Not applicable (only applies to meetings)
+
+In-tenant users: Can share within their organization
+
+External users: Sharing with external users is not supported at this time
+
+Create the whiteboard from a Surface Hub
+
+Storage: Local
+
+Owner: None*
+
+*Unless user sign ins to save and share the board, which saves to their ODB. Easy Share will be added back in future.
+
+Not applicable (only applies to meetings)
+
+In-tenant users: User must sign in to save and share the board (Easy Share will be added in future)
+
+External users: Sharing with external users is not supported at this time outside of a Teams meeting
+
+Create the whiteboard from an MTR
+
+Not yet supported
+
+Not applicable (only applies to meetings)
+
+Not yet supported
+
+External sharing links are not yet available, but will be added in future.
+
+How to Deploy the Windows Application
+Whiteboard can be deployed to Windows 10+ devices using Microsoft Intune or Microsoft Configuration Manager (formerly System Center Configuration Manager). Whiteboard is not supporte
