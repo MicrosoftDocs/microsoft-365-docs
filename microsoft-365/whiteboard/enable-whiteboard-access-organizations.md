@@ -126,7 +126,7 @@ Data controls supported today:
 - Quota
 - Legal hold
 - DLP
-- Basic eDiscovery - .whiteboard files are stored as files in the creator's OneDrive for Business. They are indexed for keyword and file type search, but are not available to preview or review. Upon export, an admin needs to upload the file back to OneDrive for Business to view the content. Additional support is planned for the future.
+- Basic eDiscovery – .whiteboard files are stored as files in the creator's OneDrive for Business. They are indexed for keyword and file type search, but are not available to preview or review. Upon export, an admin needs to upload the file back to OneDrive for Business to view the content. Additional support is planned for the future.
 
 Data controls planned for future releases:
 
@@ -187,49 +187,59 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 >[!NOTE]
 > External sharing during a Teams meeting is not yet available, but will be added in a future release.
 
-Scenario
+|Scenario  |Storage and ownership  |Sharing settings  |Sharing experience  |
+|---------|---------|---------|---------|
+|Create the whiteboard from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Not applicable (only applies to meetings)  |In-tenant users: Can share within their organization<br><br>External users: Sharing with external users is not supported at this time  |
+|Create the whiteboard from a Surface Hub  |Storage: Local<br><br>Owner: None (Unless user sign ins to save and share the board, which saves to OneDrive for Business. Easy share will be added back in the future.  |Not applicable (only applies to meetings)  |In-tenant users: User must sign in to save and share the board (Easy share will be added in the future)<br><br>External users: Sharing with external users is not supported at this time outside of a Teams meeting  |
+|Create the whiteboard from Microsoft Teams Rooms  |Not yet supported  |Not applicable (only applies to meetings)  |Not yet supported  |
 
-Storage and ownership
+## Deploy Whiteboard for the Windows application
 
-Sharing settings
+Whiteboard can be deployed on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager (formerly System Center Configuration Manager). Whiteboard is not supported on Windows Server.
 
-Sharing experience
+- **Microsoft Intune using an online license mode** – This allows you to specify groups of users who will receive access to the Whiteboard app.
 
-Create the whiteboard from a desktop or mobile device
+- **Microsoft Configuration Manager using manual offline installation and updates** – This allows you to install Whiteboard and then manually update it every 2–4 weeks.
 
-Storage: ODB
+>[!NOTE]
+> We recommend using Microsoft Intune. Using Microsoft Configuration Manager requires IT to continuously repackage and install updates to ensure users are running an up-to-date version.
 
-Owner: User who creates the whiteboard
+### Install Whiteboard using Microsoft Intune
 
-Not applicable (only applies to meetings)
+1. Add Whiteboard as an available app using the steps in this article: TBD.
 
-In-tenant users: Can share within their organization
+2. Add Microsoft Store apps to Microsoft Intune.
 
-External users: Sharing with external users is not supported at this time
+3. Assign the app to a group using the steps in this article: TBD.
 
-Create the whiteboard from a Surface Hub
+4. Assign apps to groups with Microsoft Intune.
 
-Storage: Local
+### Install Whiteboard using Microsoft Configuration Manager
 
-Owner: None*
+1. Using a global administrator account, sign in to the Microsoft Store for Business.
 
-*Unless user sign ins to save and share the board, which saves to their ODB. Easy Share will be added back in future.
+2. In the header, select **Manage**.
 
-Not applicable (only applies to meetings)
+3. In the right-hand navigation pane, select **Settings**, and then turn on **Show offline apps**.
 
-In-tenant users: User must sign in to save and share the board (Easy Share will be added in future)
+4. Wait 10–15 minutes for propagation.
 
-External users: Sharing with external users is not supported at this time outside of a Teams meeting
+5. Next, go to the Whiteboard app.
 
-Create the whiteboard from an MTR
+6. Select **Get the app**, and then accept the license terms.
 
-Not yet supported
+7. Go back to the application page.
 
-Not applicable (only applies to meetings)
+8. In the **License type** drop-down menu, select **Offline**.
 
-Not yet supported
+9. Select **Manage**.
 
-External sharing links are not yet available, but will be added in future.
+10. This takes you to the inventory management page, which will now offer the option to **Download package for offline use**.
 
-How to Deploy the Windows Application
-Whiteboard can be deployed to Windows 10+ devices using Microsoft Intune or Microsoft Configuration Manager (formerly System Center Configuration Manager). Whiteboard is not supporte
+11. Choose the architecture version, and then download it.
+
+12. As soon as you have downloaded the app, you can deploy it through Configuration Manager. To create an update package, follow steps 7–10 to download a newer version and package it for Configuration Manager.
+
+13. For more information, see [Install applications for a device](https://docs.microsoft.com/en-us/mem/configmgr/apps/deploy-use/install-app-for-device).
+
+
