@@ -50,11 +50,15 @@ Enrich your communications and employee experiences with Microsoft 365 for front
 
 ## Enhance workforce management
 
+Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), the schedule management tool in Teams that keeps your frontline workforce connected and in sync. [Shifts connectors](shifts-connectors.md) enable you to integrate Shifts, the schedule management tool in Microsoft Teams, with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
+
 | Solution area | Description |
 | --- | --- |
 | [Schedule management](flw-choose-scenarios.md#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
 
 ## Increase operations efficiency
+
+Microsoft 365 includes apps liked Lists, Tasks, and Approvals, that can help you streamline operations and bring them from paper-based to digitally-tracked processes. You can enhance these by adding workflow automation, custom apps, and business data tracking with Power Automate, Power Apps, and Power BI from the Power Platform. Extend even further with solutions provided by our partners in the digital ecosystem.
 
 | Solution area | Description |
 | --- | --- |
