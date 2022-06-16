@@ -1,8 +1,10 @@
 - name: Microsoft 365 for frontline workers
   href: index.yml
   items:
-  - name: What is Microsoft 365 for frontline workers?
+  - name: Overview of Microsoft 365 for frontline workers
     href: flw-overview.md
+  - name: Choose your scenarios
+    href: flw-choose-scenarios.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
   - name: Setup and configure

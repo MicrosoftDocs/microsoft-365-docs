@@ -21,7 +21,7 @@ appliesto:
 
 # What is Microsoft 365 for frontline workers?
 
-Frontline workers are employees whose primary function is to work directly with customers or the general public providing services, support, and selling products, or employees directly involved in the manufacturing and distribution of products and services. Microsoft 365 for frontline workers helps support employee experiences in the following areas so that your frontline workers can do their best work and help your customers: 
+Frontline workers are employees whose primary function is to work directly with customers or the general public providing services, support, and selling products, or employees directly involved in the manufacturing and distribution of products and services. Microsoft 365 for frontline workers helps support employee experiences in the following areas so that your frontline workers can do their best work and help your customers:
 
 - [Connect and engage your workforce](#connect-and-engage-your-workforce)
 - [Enhance your workforce management](#enhance-workforce-management)
@@ -38,36 +38,28 @@ The following image shows the employee experiences that are key to frontline wor
 
 [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
-Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
-
-|Identify your business scenario  |Learn more about requirements, setup, and roles |Get started planning and deploying  |
-|:---------:|:---------:|:---------:|
-|:::image type="icon" source="media/viva-discover1.png" border="false"::: <br> Discover which Viva module, or combination of modules, is the right fit for your business scenario.    | :::image type="icon" source="media/viva-learn2.png" border="false"::: <br> Understand requirements, learn more about change management, and end-user training.   |:::image type="icon" source="media/viva-get-started4.png" border="false"::: <br> Get started planning your organization’s deployment of Viva.|
-
-
-
 ## Connect and engage your workforce
 
 Enrich your communications and employee experiences with Microsoft 365 for frontline workers. Using Microsoft Teams, SharePoint, Viva Connections, and Viva Learning, you can connect employees with the tools, people, and devices they need to do their best work and build skills faster. For example:
 
 | Solution area | Description |
 | --- | --- |
-| [Communication](#communication-scenarios) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
-| [Wellbeing & engagement](#wellbeing--engagement-scenarios) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
-| [Training & onboarding](#training--onboarding-scenarios) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
+| [Communication](flw-choose-scenarios.md#communication-scenarios) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
+| [Wellbeing & engagement](flw-choose-scenarios.md#wellbeing--engagement-scenarios) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
+| [Training & onboarding](flw-choose-scenarios.md#training--onboarding-scenarios) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
 
 ## Enhance workforce management
 
 | Solution area | Description |
 | --- | --- |
-| [Schedule management](#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
+| [Schedule management](flw-choose-scenarios.md#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
 
 ## Increase operations efficiency
 
 | Solution area | Description |
 | --- | --- |
-| [Digitize your business processes](#digitized-processes) | Drive operational efficiency by digitizing paper-based processes, and automating routine, repetitive steps. |
-| [Digital ecosystem](#digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
+| [Digitize your business processes](flw-choose-scenarios.md#digitized-processes) | Drive operational efficiency by digitizing paper-based processes, and automating routine, repetitive steps. |
+| [Digital ecosystem](flw-choose-scenarios.md#digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
 
 ## Safeguard your business
 
@@ -81,40 +73,24 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 Equip your employees with industry-specific devices tailored for their needs.
 
-## Choose your scenarios
+## Ready to get started?
 
-### Communication scenarios
+|Choose your scenarios  |Set up | Configure services | Set up devices | Roll out |
+|:---------|:---------|:---------|:---------|:---------|
+|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/process-flow-blue.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/deploy-blue.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/settings.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.png" border="false"::: |:::image type="icon" source="https://docs.microsoft.com/office/media/icons/users-group.png" border="false"::: |
+|Discover the ways you can use Microsoft 365 for frontline workers to connect and engage your workforce, manage your workforce, and streamline operations. | Set up Microsoft 365, Microsoft Teams, and related services | Configure the services and apps you need for your scenarios.|  Devices??? | Roll out communications and training for your frontline managers and workers.|
+|[Choose the scenarios](flw-choose-scenarios.md) you want to implement.| Learn more at: [Set up overview](flow-how-to-start.md). | See the guidance for your chosen scenario. | Devices??? | Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/). |
 
-| Scenario | Description | Apps |
-| --- | --- | --- |
-| Team communication and collaboration | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams: Chat, Meet, Praise, Tasks, Walkie Talkie <br>Viva Connections |
-| Corporate communications | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer. Bring it all together with Viva Connections. | Microsoft Teams: Meet <br> SharePoint <br> Yammer <br>Viva Connections |
-| Communicate with customers | Integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need. | Virtual appointments <br> Microsoft Forms |
+The steps to configure each scenario and training and resources you can provide to your end users are included in each scenario.
 
+Or a list:
 
-- Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
+1. [Choose the scenarios](flw-choose-scenarios.md) you want to implement.
+1. [Set up Microsoft 365, Microsoft Teams, and related services](flw-setup-microsoft-365.md).
+1. Devices???
+1. Configure the services and apps you need for your scenarios.
+1. Roll out communications and training for your frontline managers and workers.
 
-### Wellbeing & engagement scenarios
+### Adoption resources
 
-| Scenario | Description | Apps |
-| --- | --- | --- |
-| | | Viva Connections <br> Yammer |
-
-### Schedule management scenarios
-
-### Training & onboarding scenarios
-
-| Scenario | Description | Apps |
-| --- | --- | --- |
-| | | Viva Connections <br>Viva Learning <br>SharePoint Syntex |
-
-### Digitized processes
-
-| Scenario | Description | Apps |
-| --- | --- | --- |
-| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | |
-
-### Digital ecosystem
-
-| Scenario | Description | Apps |
-| --- | --- | --- |
+Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
