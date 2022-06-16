@@ -52,7 +52,7 @@ The resources in this section help the admin in your organization to set up and 
 |       |       |
 |       |       |
 
-## PowerShell for Whiteboard
+## Whiteboard PowerShell
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
