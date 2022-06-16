@@ -34,7 +34,7 @@ ms.date:
 **Platforms**
 - Windows
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Overview of network protection
 
@@ -55,8 +55,6 @@ Watch this video to learn how Network protection helps reduce the attack surface
 
 Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
 
-****
-
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
 | Windows 10 version 1709 or later <br> Windows 11 <br> Windows Server 1803 or later | [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) <br> and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled (active)|
@@ -65,18 +63,17 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
 > Information about the features that are commercially available follows the Public Preview information.
 
-Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer 3 (network layer) blocking of URLs and IPs. Network protection can block URLs being accessed from 3rd-party browsers and standard network connections.
+Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer the network layer of blocking URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections.
 
-By default, network protection guards your computers from known malicious URLs using the Smart Screen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
+By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
 
 - Block IP / URL from your own Threat Intel (Indicators)
-- Block unsanctioned services from Microsoft Cloud App Security (MCAS)
-- Block sites based on category (Web Content filtering)
+- Block unsanctioned services from Microsoft Defender for Cloud Apps (formerly Microsoft Cloud App Security)
+- Block sites based on category (Web content filtering)
 
-Network Protections is a critical part of the Microsoft protection and response stack.
+Network Protection is a critical part of the Microsoft protection and response stack.
 
 For details about Network Protection for Windows Server, Linux, MacOS and MTD, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
@@ -341,6 +338,12 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 
 ```
+
+## Optimizing network protection performance
+
+Network Protection now has a performance optimization that allows Block mode to start asynchronously inspecting long connections after they are validated and allowed by SmartScreen, which might provide a potential reduction in the cost that inspection has on bandwidth and can also help with app compatibility problems. This optimization capability is on by default. You can turn off this capability by using the following PowerShell cmdlet:
+
+`Set-MpPreference -AllowSwitchToAsyncInspection $false`
 
 ## See also
 

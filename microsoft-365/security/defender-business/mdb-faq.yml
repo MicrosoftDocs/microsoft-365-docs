@@ -59,7 +59,7 @@ sections:
           - You can onboard macOS devices using a local script in the Microsoft 365 Defender portal. 
           - To onboard Android and iOS/iPadOS devices, you must have a license for [Microsoft Intune](/mem/intune/). Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone).
 
-          Additional simplification for macOS, iOS/iPadOS, and Android devices is on the roadmap. 
+          More simplification for macOS, iOS/iPadOS, and Android devices is on the roadmap. 
 
       - question: Can I configure more than one web content filtering policy in Defender for Business?
         answer: |
@@ -89,7 +89,7 @@ sections:
         answer: |
           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
 
-      - question: If I don't currently have Microsoft Intune, do I need an additional license to use features that are included in both Defender for Business and Intune? 
+      - question: If I don't currently have Microsoft Intune, do I need an another license to use features that are included in both Defender for Business and Intune? 
         answer: |
           If you have Defender for Business as a standalone subscription and you don't have Intune, you can onboard and secure Windows and macOS devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
            
@@ -114,18 +114,44 @@ sections:
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
-          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 1 license. What happens if you have a mix of subscriptions like this example in your tenant?*
+          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
-          The highest functional Microsoft endpoint security subscription sets the experience for your tenant. Using our example, your tenant experience would be [Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) for all 20 users. 
+          The highest functional Microsoft endpoint security subscription sets the experience for your tenant. Using our example, your tenant experience would be Defender for Endpoint Plan 2 for all 20 users. **You can now contact support and request an override for your tenant experience**. 
           
-          However, **you can now contact support and request an override for your tenant experience**. Referring to our example, you could request an override to keep the Defender for Business experience, even if you have some Defender for Endpoint Plan 1 licenses. [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
-          
-          You can view your current subscriptions and licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). See [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses).
+          Referring to our example, you could request an override to keep the simplified Defender for Business experience, even if you have some Defender for Endpoint Plan 2 licenses. See [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 
-          [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. If you need more than 300 user licenses, we recommend a subscription that includes [Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2). 
-          
+          In the coming months, the default settings will change. When that happens, a tenant with Defender for Business will default to the Defender for Business flavor, tenant wide. This default behavior will help ensure the simplified experience is maintained for small and medium-sized business customers.
+
           For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
-       
+
+      - question: My organization has grown to more than 300 employees, and I have a mix of Microsoft endpoint security subscriptions. Can I still use Defender for Business?   
+        answer: |  
+          *Suppose your company has grown from 250 users to 330 users, and you now have a mix of Microsoft endpoint security subscriptions, such as 300 Defender for Business licenses and 30 Microsoft 365 E3 licenses.*
+
+          [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+
+          If you now have more than 300 users, we recommend getting a subscription that includes [Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) for all users. However, we understand that there are scenarios where a customer grows to more than 300 users within a license term. 
+          
+          Referring to our example, suppose you started your license term with 250 Defender for Business licenses, and now you have 300 Defender for Business licenses and 30 Microsoft 365 E3 licenses (Microsoft 365 E3 includes Defender for Endpoint Plan 1). In this case, Defender for Business remains the highest functional Microsoft endpoint security subscription, and the Defender for Business flavor will apply tenant wide. When it's time to renew your subscription, we recommend choosing an enterprise plan, such as one of the following subscriptions:
+
+          - [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/E5) (includes Defender for Endpoint Plan 2 plus Defender for Office 365 Plan 2)
+          - [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/E3) (includes Defender for Endpoint Plan 1)
+          - [Defender for Endpoint Plan 1 or 2](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
+
+      - question: How are my Defender for Business security reports affected if I have more than 300 users?
+        answer: |
+          Defender for Business is designed for customers who have up to 300 employees. If you have more than 300 users and a mix of licenses, such as 300 Defender for Business licenses, and 30 Defender for Endpoint Plan 1 licenses, your security reports for Defender for Business will show data for only the users who are assigned Defender for Business licenses. 
+          
+          In this case, all users will be protected by Defender for Business, but your Defender for Business reports won't show data for the 30 users who are assigned Defender for Endpoint Plan 1 licenses.  
+
+          To learn more about reports in Defender for Business, see [Reports in Microsoft Defender for Business](mdb-reports.md). 
+                 
+      - question: How can I view my organization's Microsoft subscriptions and user licenses?
+        answer: |
+          You can view your current subscriptions and licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). 
+          
+          See [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses).
+
 
 additionalContent: |
  ## See also
