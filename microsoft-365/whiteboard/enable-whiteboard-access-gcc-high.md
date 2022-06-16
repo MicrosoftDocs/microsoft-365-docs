@@ -103,7 +103,7 @@ Clients supported today:
 
 Clients planned for future releases:
 
-- Standalone Whiteboard application for Windows 10+
+- Standalone Whiteboard application for Windows 10 or later versions
 - Standalone Whiteboard application for Surface Hub (currently can be used in anonymous mode)
 - Whiteboard in the Office.com app launcher
 - Whiteboard in Teams meetings on Surface Hub and Teams meeting rooms

@@ -1,5 +1,5 @@
 ---
-title: Enable and manage access to Microsoft Whiteboard for organizations
+title: Enable and manage access to Microsoft Whiteboard for your organization
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
-# Enable and manage access to Microsoft Whiteboard for organizations
+# Enable and manage access to Microsoft Whiteboard for your organization
 
 >[!NOTE]
 > This article applies to Enterprise or Education organizations who use Whiteboard. For US Government Community Cloud (GCC) environments, see [Enable Whiteboard on OneDrive for Business](https://support.microsoft.com/office/enable-microsoft-whiteboard-on-onedrive-for-business-2fae9707-0c9b-42f8-a85f-9628b698ac82). For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
@@ -79,7 +79,7 @@ To prevent access to Whiteboard for specific users, see [Building a Conditional 
 
 ## Manage Whiteboard data
 
-Whiteboard content is stored in both Azure and OneDrive for Business. New whiteboards will be stored in OneDrive for Business; the only exception is whiteboards started from a Surface Hub will be stored in Azure (this will be moved to OneDrive for Business in the future). For more information, see the tables in the Manage Whiteboard Sharing section later in this article.
+Whiteboard content is stored in both Azure and OneDrive for Business. New whiteboards will be stored in OneDrive for Business; the only exception is whiteboards started from a Surface Hub will be stored in Azure (this will be moved to OneDrive for Business in the future). For more information, see [Manage Whiteboard sharing](enable-whiteboard-access-organizations.md#manage-whiteboard-sharing) later in this article.
 
 ### Azure storage overview
 
@@ -138,7 +138,7 @@ Data controls planned for future releases:
 
 The sharing experience differs based on whether you’re in a Teams meeting, if you're using a shared device, or what tenant-level sharing settings are enabled. The following scenarios apply only to new boards created after Whiteboard switches to using OneDrive for Business storage. There is no change to previously created boards still stored in Azure.
 
-### Sharing in Teams meetings
+### Share in Teams meetings
 
 When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization and automatically shares the whiteboard with any in-tenant users in the meeting.
 
