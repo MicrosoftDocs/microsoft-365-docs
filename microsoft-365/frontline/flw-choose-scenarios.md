@@ -25,12 +25,37 @@ appliesto:
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| Team communication and collaboration | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>Viva Connections | Microsoft Teams: Chat, Meet, Praise, Tasks, Walkie Talkie |
+| Team communication and collaboration | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie |
 | Corporate communications | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer. Bring it all together with Viva Connections. | Microsoft Teams<br> SharePoint <br> Yammer <br>Viva Connections | Meet |
-| Communicate with customers | Integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need. | Microsoft Teams | Bookings <br> Microsoft Forms|
+| Virtual appointments and customer communications | Integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need. | Microsoft Teams | Bookings <br> Microsoft Forms|
+
+Or would headings be better???
+
+### Team communication and collaboration
+
+Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to.
+
+**Key apps:** Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie
+
+**Services:** Viva Connections, SharePoint, Power Platform and Power Apps
+
+More information: [Retail team collaboration](retail-team-collaboration.md)
+
+### Corporate communications
+
+Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer, Stream, and Viva Connections.
+
+**Additional services:** Viva Connections, SharePoint, Stream, Yammer
+
+More information: [Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)
+
+Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
+
+### Virtual appointments and customer communications
+
+Integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
 
-- Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
 
 ## Wellbeing & engagement solution area
 
@@ -41,6 +66,16 @@ appliesto:
 ## Schedule management solution area
 
 ### Training & onboarding solution area
+
+### Onboarding new employees
+
+Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.
+
+**Key apps:** Lists, Live Meetings
+
+**Additional services:** Viva Learning, SharePoint, Yammer
+
+More information: [Onboard new employees](/sharepoint/onboard-employees)
 
 | Scenario | Description | Apps |
 | --- | --- | --- |
