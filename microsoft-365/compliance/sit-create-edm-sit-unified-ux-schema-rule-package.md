@@ -55,6 +55,9 @@ If you are not familiar with EDM based SITS or their implementation, you should 
 > [!IMPORTANT]
 > The system will suggest a mapping between an existing SIT and your primary element. You should review the [existing SITs](sensitive-information-type-entity-definitions.md) to get an idea of which ones will meet your needs. Make sure the existing SIT will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table.
 
+> [!NOTE]
+> All data are retained as you navigate forward and backward through the UI. Backward navigation (selecting **Back**) only supports moving from top level page to top level page and sub page to sub page. You can't backward navigate from top level page to the preceding sub page or from a sub page to a preceding top level page. 
+
 1. In the Microsoft Purview compliance portal for your tenant go to **Data classification** > **Exact data matches**.
 
 1. Make sure the **New EDM experience** is set to **On**.
@@ -78,10 +81,9 @@ If you are not familiar with EDM based SITS or their implementation, you should 
 > - Select primary elements whose values make that row unique in the table. For example, don't pick fields like *FirstName* or *DateOfBirth* as there will most likely be many duplications of first names or dates of birth in your actual sensitive data file. Instead pick things like *Social Security Number* and *BankAccountNumber* whose value will be unique in your table and therefore make the row unique in the table.
 > - You can pick up to five primary elements. The more you can pick that have values that are unique in your actual sensitive data table, the better the accuracy of your EDM SIT will be. It will also improve performance and avoid timeouts caused by process overloading.
 > - Select a sensitive information type that closely matches the format of the content you want to find. Selecting a SIT that matches unnecessary content, like one that matches all text strings, or all numbers can cause excessive load in the system which could result in sensitive information being missed.
+> - All elements that are not selected as primary elements can still be used as corroborative or supporting evidence. The more supporting elements found that are in a defined proximity to primary elements, the higher the confidence that the item is a true positive.
 
- TIRED STOPPING HERE 6/15/2022
- 
-9. 
+9. On the **Configure settings for data fields** you can tell set how EDM treats case and which delimiters to ignore. You can set this for the values for all elements values or specify the settings for each element individually. Choose **Next**.
 
 10. 
 
