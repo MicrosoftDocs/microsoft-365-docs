@@ -40,14 +40,16 @@ You can use this article to help clarify what protection is provided by the diff
 
 ## Mixed licensing scenarios
 
-Suppose that your organization is using a mix of Microsoft endpoint security subscriptions, such that some users are assigned a license for Defender for Endpoint Plan 1, and other users are assigned licenses for Defender for Endpoint Plan 2. Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant. Using our example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
+Suppose that your organization is using a mix of Microsoft endpoint security subscriptions, such that some users are assigned a license for Defender for Endpoint Plan 1, and other users are assigned licenses for Defender for Endpoint Plan 2. **Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. Using our example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
 
-However, you can contact support and request an override for your tenant experience. Referring to our example, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users. See [Get support for Microsoft 365 for business](../../admin/get-help-support.md).
+However, **you can contact support and request an override for your tenant experience**. Referring to our example, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users. See [Get support for Microsoft 365 for business](../../admin/get-help-support.md).
 
 For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
 > [!TIP]
-> If your organization is a small or medium-sized business, see [Microsoft Defender for Business](../defender-business/mdb-overview.md) and [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
+> If your organization is a small or medium-sized business, see the following articles:
+> - [What is Microsoft Defender for Business?](../defender-business/mdb-overview.md)
+> - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md)
 
 ## Start a trial
 
