@@ -209,6 +209,9 @@ The default quarantine policies, preset permission groups, and permissions are d
 
 ## Assign quarantine policies in supported policies in the Microsoft 365 Defender portal
 
+> [!NOTE]
+> Users can't release their own messages that were quarantined as malware (anti-malware policies) or high confidence phishing (anti-spam policies), regardless of how the quarantine policy is configured. At best, admins can configure the quarantine policy so users can request the release of their quarantined malware or high confidence phishing messages.
+
 ### Anti-spam policies
 
 1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
@@ -681,6 +684,9 @@ If the quarantine policy assigns the **Full access** permissions (all available 
   - **Review**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="The available buttons in the quarantine notification if the quarantine policy gives the user full access permissions" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+
+> [!NOTE]
+> As explained earlier, quarantine notifications are disabled in the default quarantine policy named DefaultFullAccessPolicy, even though that quarantine policy has the **Full access** permission group assigned. Quarantine notifications are available only in custom quarantine policies that you create or in the default quarantine access policy named NotificationEnabledPolicy ([if that policy is available in your organization](#full-access-permissions-and-quarantine-notifications)).
 
 ### Individual permissions
 
