@@ -50,7 +50,7 @@ However, **you can contact support and request an override for your tenant exper
 - For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
 > [!TIP]
-> If your organization is a small or medium-sized business, and you're looking for an endpoint security solution, see the following articles:
+> If your organization is a small or medium-sized business, see the following articles:
 > - [What is Microsoft Defender for Business?](../defender-business/mdb-overview.md)
 > - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
