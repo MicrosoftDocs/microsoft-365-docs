@@ -110,13 +110,13 @@ The records management solution is used by organization in large volumes to util
 
 The first release of Graph APIs for records management support the management of retention labels, and event-based retention. Example scenarios:
 
-- Managing retention labels
+- **Managing retention labels**
     
     Record management admins and developers need to maintain their record management systems with labels that are periodically created, updated, and deleted.
     
     Developers and compliance admins use the Graph APIs for records management to perform CRUD operations on the label entity to maintain their systems.
 
-- Triggering an event for an existing label
+- **Triggering an event for an existing label**
     
     When an employee leaves an organization, the information is updated in the HR management system. From the date of leaving, confidential documents need to be retained for seven years. These documents already have the retention label "Employee_departure" applied to them.
     
