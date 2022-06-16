@@ -143,6 +143,11 @@ ms.technology: mde
 ### What's new
 - Performance improvements & bug fixes
 
+
+
+## PRIOR TO 2022
+
+
 ## 101.52.57 (30.121092.15257.0)
 
 - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
