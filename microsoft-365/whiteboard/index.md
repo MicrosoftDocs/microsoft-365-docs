@@ -56,7 +56,7 @@ The resources in this section help the admin in your organization to set up and 
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Use PowerShell to manage Microsoft Whiteboard for your organization|[PowerShell for Whiteboard](/powershell/module/whiteboard/)|
+|Find PowerShell cmdlet help references to manage Microsoft Whiteboard|[PowerShell for Whiteboard](https://review.docs.microsoft.com/en-us/powershell/module/whiteboard/?branch=whiteboard-working)|
 
 
 
