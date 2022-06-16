@@ -364,19 +364,19 @@ Once the mailbox moves from source to target, you should ensure that the on-prem
 
 ## Frequently asked questions
 
-**Do we need to update RemoteMailboxes in source on-premises after the move?**
+### Do we need to update RemoteMailboxes in source on-premises after the move?
 
 Yes, you should update the targetAddress (RemoteRoutingAddress/ExternalEmailAddress) of the source on-premises users when the source tenant mailbox moves to target tenant.  While mail routing can follow the referrals across multiple mail users with different targetAddresses, Free/Busy lookups for mail users MUST target the location of the mailbox user. Free/Busy lookups will not chase multiple redirects.
 
-**Do Teams meetings migrate cross-tenant?**
+### Do Teams meetings migrate cross-tenant?
 
 The meetings will move, however the Teams meeting URL does not update when items migrate cross-tenant. Since the URL will be invalid in the target tenant, you will need to remove and recreate the Teams meetings.
 
-**Does the Teams chat folder content migrate cross-tenant?**
+### Does the Teams chat folder content migrate cross-tenant?
 
 No, the Teams chat folder content does not migrate cross-tenant.
 
-**How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?**
+### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
 Use the _Flags_ parameter. Here is an example.
 
@@ -384,7 +384,7 @@ Use the _Flags_ parameter. Here is an example.
 Get-MoveRequest -Flags "CrossTenant"
 ```
 
-**Can you provide example scripts for copying attributes used in testing?**
+### Can you provide example scripts for copying attributes used in testing?
 
 > [!NOTE]
 > SAMPLE – AS IS, NO WARRANTY
@@ -422,7 +422,7 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-**How do we access Outlook on Day 1 after the use mailbox is moved?**
+### How do we access Outlook on Day 1 after the use mailbox is moved?
 
 Since only one tenant can own a domain, the former primary SMTPAddress will not be associated to the user in the target tenant when the mailbox move completes; only those domains associated with the new tenant. Outlook uses the users new UPN to authenticate to the service and the Outlook profile expects to find the legacy primary SMTPAddress to match the mailbox in the target system. Since the legacy address is not in the target System the outlook profile will not connect to find the newly moved mailbox.
 
@@ -431,7 +431,7 @@ For this initial deployment, users will need to rebuild their profile with their
 > [!NOTE]
 > Plan accordingly as you batch your users for completion. You need to account for network utilization and capacity when Outlook client profiles are created and subsequent OST and OAB files are downloaded to clients.
 
-**What Exchange RBAC roles do I need to be member of to set up or complete a cross-tenant move?**
+### What Exchange RBAC roles do I need to be member of to set up or complete a cross-tenant move?
 
 There is a matrix of roles based on assumption of delegated duties when executing a mailbox move. Currently, two roles are required:
 
@@ -439,11 +439,11 @@ There is a matrix of roles based on assumption of delegated duties when executin
 
 - The role of executing the actual move commands can be delegated to a lower-level function. The role of Move Mailboxes is assigned to the capability of moving mailboxes in or out of the organization.
 
-**How do we target which SMTP address is selected for targetAddress (TargetDeliveryDomain) on the converted mailbox (to MailUser conversion)?**
+### How do we target which SMTP address is selected for targetAddress (TargetDeliveryDomain) on the converted mailbox (to MailUser conversion)?
 
 Exchange mailbox moves using MRS craft the targetAddress on the original source mailbox when converting to a MailUser by matching an email address (proxyAddress) on the target object. The process takes the -TargetDeliveryDomain value passed into the move command, then checks for a matching proxy for that domain on the target side. When we find a match, the matching proxyAddress is used to set the ExternalEmailAddress (targetAddress) on the converted mailbox (now MailUser) object.
 
-**How do mailbox permissions transition?**
+### How do mailbox permissions transition?
 
 Mailbox permissions include Send on Behalf of and Mailbox Access:
 
@@ -476,7 +476,7 @@ TestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                   
 > [!NOTE]
 > Cross-tenant mailbox and calendar permissions are NOT supported. You must organize principals and delegates into consolidated move batches so that these connected mailboxes are transitioned at the same time from the source tenant.
 
-**What X500 proxy should be added to the target MailUser proxy addresses to enable migration?**
+### What X500 proxy should be added to the target MailUser proxy addresses to enable migration?
 
 The cross-tenant mailbox migration requires that the LegacyExchangeDN value of the source mailbox object to be stamped as an x500 email address on the target MailUser object.
 
@@ -493,11 +493,11 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!NOTE]
 > In addition to this X500 proxy, you will need to copy all X500 proxies from the mailbox in the source to the mailbox in the target.
 
-**Can the source and target tenant utilize the same domain name?**
+### Can the source and target tenant utilize the same domain name?
 
 No. The source and target tenant domain names must be unique. For example, a source domain of contoso.com and the target domain of fourthcoffee.com.
 
-**Will shared mailboxes move and still work?**
+### Will shared mailboxes move and still work?
 
 Yes, however, we only keep the store permissions as described in these articles:
 
@@ -505,35 +505,51 @@ Yes, however, we only keep the store permissions as described in these articles:
 
 - [Microsoft Support | How to grant Exchange and Outlook mailbox permissions in Office 365 dedicated](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
-**Do you have any recommendations for batches?**
+### Do you have any recommendations for batches?
 
 Do not exceed 2000 mailboxes per batch. We strongly recommend submitting batches two weeks prior to the cut-over date as there is no impact on the end users during synchronization. If you need guidance for mailboxes quantities over 50,000 you can reach out to the Engineering Feedback Distribution List at crosstenantmigrationpreview@service.microsoft.com.
 
-**What if I use Service encryption with Customer Key?**
+### What if I use Service encryption with Customer Key?
 
 The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](/microsoft-365/compliance/customer-key-overview) for more information.
 
-**What is the estimated migration time?**
+### What is the estimated migration time?
 
 To help you plan your migration, the table present [here](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.
 
 Do remember that this feature is currently in preview and the SLA, and any applicable Service Levels do not apply to any performance or availability issues during the preview status of this feature.
 
-**Protecting documents in the source tenant consumable by users in the destination tenant.**
+### Protecting documents in the source tenant consumable by users in the destination tenant.**
 
 Cross-tenant migration only migrates mailbox data and nothing else. There are multiple other options, which are documented in the following blog post that may help: <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
-**Can I have the same labels in the destination tenant as you had in the source tenant, either as the only set of labels or an additional set of labels for the migrated users depending on alignment between the organizations.**
+### Can I have the same labels in the destination tenant as you had in the source tenant, either as the only set of labels or an additional set of labels for the migrated users depending on alignment between the organizations.**
 
 Because cross-tenant migrations do not export labels and there is no way to share labels between tenants, you can only achieve this by recreating the labels in the destination tenant.
 
-**Do you support moving Microsoft 365 Groups?**
+### Do you support moving Microsoft 365 Groups?
 
 Currently the Cross-Tenant mailbox migrations feature does not support the migration of Microsoft 365 Groups.
 
-**Can a source tenant admin perform an eDiscovery search against a mailbox after the mailbox has been migrated to the new/target tenant?**
+### Can a source tenant admin perform an eDiscovery search against a mailbox after the mailbox has been migrated to the new/target tenant?
 
 No, after a cross tenant mailbox migration, eDiscovery against the migrated user's mailbox in the source does not work. This is because there is no longer a mailbox in the source to search against as the mailbox has been migrated to the target tenant and now belongs to the target tenant. eDiscovery, post mailbox migration can only be done in the target tenant (where the mailbox now exists). If a copy of the source mailbox needs to persist in the source tenant after migration, the admin in the source can copy the contents to an alternate mailbox pre migration for future eDiscovery operations against the data.
+
+### When will the destination MailUser be converted to a destination mailbox? Is it automatic by "completing" migration batch or is a manual step for conversion needed?
+
+The destination MailUser object is automatically converted to a mailbox after migration.
+
+### When will the source mailbox be converted to source MailUser?
+
+The conversion happens automatically after the migration process is complete.
+
+### At which step should I assign the Exchange Online license to destination MailUsers? Can be this done after the status of the migration batch is "synced" or after the conversion from MailUser to mailbox, or should it be assigned before starting the migration batch/sync process?
+
+This can be done before the migration is complete, but you should not assign a license prior to stamping the _ExchangeGuid_ attribute or the conversion of MailUser object to mailbox will fail and a new mailbox will be created instead. To mitigate this risk, it is best to wait until after the migration is complete, and assign licenses during the 30 day grace period.
+
+### Other than setting destination MailUser X509 address, is it necessary to add any other proxyAddress?
+
+The only thing that needs to be stamped on the MailUser is the _LegacyExchangeDN_ as an X500, and any other X500 addresses that are on the source mailbox.
 
 ## Known issues
 
