@@ -11,9 +11,9 @@ search.appverid: MET150
 description: Learn how to start with a pilot deployment of Microsoft 365 for frontline workers for your organization.
 ms.localizationpriority: medium
 ms.collection: 
-  - Teams_ITAdmin_FLW
+  - m365-frontline
 appliesto: 
-  - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Learn where to start with a frontline deployment pilot

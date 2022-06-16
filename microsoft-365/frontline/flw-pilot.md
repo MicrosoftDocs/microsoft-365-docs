@@ -48,7 +48,7 @@ We recommend that you prepare for deployment by completing this 30-minute learni
 >
 > * [Get your people together](#plan-your-pilot)
 > * [Plan your pilot](#plan-your-pilot)
-> * [Configure Microsoft 365 and Teams](#configure-microsoft-365-and-teams)
+> * [Sset up Microsoft 365 and Teams](#set-up-microsoft-365-and-teams)
 > * [Communicate](#communicate)
 > * [Measure](#measure)
 > * [Iterate and expand](#iterate-and-expand)
@@ -110,38 +110,19 @@ Configure Phase 1 of the frontline Teams experience to mimic the consumer tools 
 - Do your frontline workers need Shifts?
 - Which chat configuration will you use?
 
-### Configure Microsoft 365 and Teams
+### Set up Microsoft 365 and Teams
 
-To get ready to set up Microsoft 365 for frontline workers, here's what you need to do:
+??? Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients).
 
-1. [Prepare your organization's network for Teams](/microsoftteams/prepare-network).
-1. Purchase the appropriate licenses for the people in your pilot. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
-1. Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients).
-
-After you've prepared, you can use the Setup guides to set up and configure Microsoft 365 and the services included with it, such as Microsoft Teams, Exchange Online, SharePoint, and OneDrive.
-
-#### Use the Setup guides to set up Microsoft 365
-
-The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterprise/setup-guides-for-microsoft-365) that walk you through the steps to set up the products, security features, and collaboration tools in Microsoft 365. The setup guides are accessible from the [Setup guidance page](https://aka.ms/setupguidance) in the Microsoft 365 admin center.
-
-1. Use the [Prepare your environment](https://aka.ms/prepareyourenvironment) guide to prepare your organization's environment for Microsoft 365 and Office 365 services.
-1. Use the [Microsoft 365 setup](https://aka.ms/microsoft365setupguide) guide to set up productivity tools, security policies, and device management capabilities. You can also use this advisor to set up and configure your organization's devices.
-1. Follow the [Email setup guide](https://aka.ms/office365setup) if you are providing email for your frontline managers and workers. Your pilot users can also install the Outlook app to use for their email.
-
-Depending on the scenarios you want to enable with your pilot, you should also consider setting up the following services:
-
-1. Use the [SharePoint setup guide](https://aka.ms/spoguidance) to set up [SharePoint](/sharepoint/sharepoint-online) to share documents and create sites.
-1. Use the [OneDrive setup guide](https://aka.ms/ODfBquickstartguide) to set up [OneDrive](/onedrive) for file storage, sharing, collaboration, and syncing capabilities.
-1. Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeExperienceDashboard) to engage and inform your frontline workers with Microsoft Teams and Viva Connections.
-1. Use the  [Yammer deployment advisor](https://aka.ms/yammerdeploymentguide) to connect your workforce across your company with [Yammer](/yammer).
+See [Set up Microsoft 365 for frontline workers](flw-setup-microsoft-365.md) for guidance on how to set up Microsoft 365, Microsoft Teams, and the other services you'll need for your pilot.
 
 When you have setup and configured all of the other services you need, you can set up Microsoft Teams. We recommend you use the Frontline Worker onboarding wizard to set up your pilot for Teams.
 
-#### Use the Frontline Worker onboarding wizard to kick off your pilot (recommended)
+#### Use the Frontline Worker onboarding wizard to kick off your pilot
 
 The Frontline Worker onboarding wizard in the Microsoft 365 admin center simplifies onboarding frontline workers to your organization. Use the wizard to kick off your pilot and quickly deploy an experience in Teams that's tailored to your frontline workforce.
 
-Check out this short video for an overview of how to run the wizard to get your frontline workforce up and running. 
+Check out this short video for an overview of how to run the wizard to get your frontline workforce up and running.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWN6oh]
 

@@ -15,12 +15,16 @@
       href: flw-pilot.md
 #    - name: Extend your pilot to a full deployment
 #      href: deploy-teams-at-scale.md 
-    - name: Deploy teams at scale
-      href: deploy-teams-at-scale.md
-    - name: Onboard your users with the onboarding wizard
-      href: flw-onboarding-wizard.md
-    - name: Scripted deployment
-      href: flw-scripted-deployment.md
+    - name: Set up Microsoft 365 and Teams
+      items: 
+      - name: Set up Microsoft 365 and related services
+        href: flw-setup-microsoft-365.md
+      - name: Deploy teams at scale
+        href: deploy-teams-at-scale.md
+      - name: Onboard your users with the onboarding wizard
+        href: flw-onboarding-wizard.md
+      - name: Scripted deployment
+        href: flw-scripted-deployment.md
     - name: Manage devices
       items:
       - name: Manage shared devices

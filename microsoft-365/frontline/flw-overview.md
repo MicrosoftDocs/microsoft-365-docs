@@ -40,6 +40,12 @@ The following image shows the employee experiences that are key to frontline wor
 
 Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
 
+|Identify your business scenario  |Learn more about requirements, setup, and roles |Get started planning and deploying  |
+|:---------:|:---------:|:---------:|
+|:::image type="icon" source="media/viva-discover1.png" border="false"::: <br> Discover which Viva module, or combination of modules, is the right fit for your business scenario.    | :::image type="icon" source="media/viva-learn2.png" border="false"::: <br> Understand requirements, learn more about change management, and end-user training.   |:::image type="icon" source="media/viva-get-started4.png" border="false"::: <br> Get started planning your organization’s deployment of Viva.|
+
+
+
 ## Connect and engage your workforce
 
 Enrich your communications and employee experiences with Microsoft 365 for frontline workers. Using Microsoft Teams, SharePoint, Viva Connections, and Viva Learning, you can connect employees with the tools, people, and devices they need to do their best work and build skills faster. For example:
