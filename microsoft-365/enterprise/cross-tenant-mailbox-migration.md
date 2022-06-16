@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 06/14/2022
+ms.date: 06/16/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -203,22 +203,11 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 ### How do I know this worked?
 
-You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
+You can verify cross-tenant mailbox migration configuration by running the [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
-   > [!NOTE]
-   >
-   > - Target tenant (see [Test-MigrationServerAvailability documentation](/powershell/module/exchange/test-migrationserveravailability) for usage):
-   >
-   >```powershell
-   >   Test-MigrationServerAvailability <use switches from link above>
-   >   Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-   >```
-   >
-   > - Source tenant:
-   >
-   >```powershell
-   >   Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-   >```
+```powershell
+Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" - TestMailbox "Primary SMTP of MailUser object in target tenant"
+```
 
 ### Move mailboxes back to the original source
 
