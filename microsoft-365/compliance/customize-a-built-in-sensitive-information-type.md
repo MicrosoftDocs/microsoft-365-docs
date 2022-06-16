@@ -30,7 +30,7 @@ You can take this example and apply it to other built-in sensitive information t
 
 ## Export the XML file of the current rules
 
-To export the XML, you need to [connect to the Security and Compliance Center via Remote PowerShell.](/powershell/exchange/connect-to-scc-powershell).
+To export the XML, you need to [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 1. In the PowerShell, type the following to display your organization's rules on screen. If you haven't created your own, you'll only see the default, built-in rules, labeled "Microsoft Rule Package."
 
@@ -38,7 +38,7 @@ To export the XML, you need to [connect to the Security and Compliance Center vi
    Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-2. Store your organization's rules in a variable by typing the following. Storing something in a variable makes it easily available later in a format that works for remote PowerShell commands.
+2. Store your organization's rules in a variable by typing the following. Storing something in a variable makes it easily available later in a format that works for PowerShell commands.
 
    ```powershell
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
@@ -81,7 +81,7 @@ Now that you have located the Credit Card Number rule definition in the XML, you
 
 ## Modify the XML and create a new sensitive information type
 
-First, you need to create a new sensitive information type because you can't directly modify the default rules. You can do a wide variety of things with custom sensitive information types, which are outlined in [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md). For this example, we'll keep it simple and only remove corroborative evidence and add keywords to the Credit Card Number rule.
+First, you need to create a new sensitive information type because you can't directly modify the default rules. You can do a wide variety of things with custom sensitive information types, which are outlined in [Create a custom sensitive information type in Security & Compliance PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md). For this example, we'll keep it simple and only remove corroborative evidence and add keywords to the Credit Card Number rule.
 
 All XML rule definitions are built on the following general template. You need to copy and paste the Credit Card Number definition XML in the template, modify some values (notice the ". . ." placeholders in the following example), and then upload the modified XML as a new rule that can be used in policies.
 
@@ -154,7 +154,7 @@ Now, you have something that looks similar to the following XML. Because rule pa
 
 ## Remove the corroborative evidence requirement from a sensitive information type
 
-Now that you have a new sensitive information type that you're able to upload to the Security &amp; Compliance Center, the next step is to make the rule more specific. Modify the rule so that it only looks for a 16-digit number that passes the checksum but doesn't require additional (corroborative) evidence, like keywords. To do this, you need to remove the part of the XML that looks for corroborative evidence. Corroborative evidence is very helpful in reducing false positives. In this case there are usually certain keywords or an expiration date near the credit card number. If you remove that evidence, you should also adjust how confident you are that you found a credit card number by lowering the `confidenceLevel`, which is 85 in the example.
+Now that you have a new sensitive information type that you're able to upload to the Microsoft Purview compliance portal, the next step is to make the rule more specific. Modify the rule so that it only looks for a 16-digit number that passes the checksum but doesn't require additional (corroborative) evidence, like keywords. To do this, you need to remove the part of the XML that looks for corroborative evidence. Corroborative evidence is very helpful in reducing false positives. In this case there are usually certain keywords or an expiration date near the credit card number. If you remove that evidence, you should also adjust how confident you are that you found a credit card number by lowering the `confidenceLevel`, which is 85 in the example.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
@@ -198,7 +198,7 @@ To upload your rule, you need to do the following.
 
 1. Save it as an .xml file with Unicode encoding. This is important because the rule won't work if the file is saved with a different encoding.
 
-2. [Connect to the Security and Compliance Center via Remote PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. In the PowerShell, type the following.
 
