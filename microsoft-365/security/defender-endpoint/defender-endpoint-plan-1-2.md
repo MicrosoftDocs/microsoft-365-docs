@@ -46,9 +46,8 @@ Suppose that your organization is using a mix of Microsoft endpoint security sub
 
 However, **you can contact support and request an override for your tenant experience**. That is, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users. 
 
-For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
-
-For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
+- For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+- For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
 > [!TIP]
 > If your organization is a small or medium-sized business, and you're looking for an endpoint security solution, see the following articles:
