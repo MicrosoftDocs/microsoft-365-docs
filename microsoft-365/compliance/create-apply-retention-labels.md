@@ -59,7 +59,7 @@ Decide before you create your retention label policy whether it will be **adapti
         - **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
     
     - If you are using data lifecycle management:
-        - **Solutions** > **Data lifeycle management** > **Label policies** tab > **Publish labels**
+        - **Solutions** > **Data lifecycle management** > **Label policies** tab > **Publish labels**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
