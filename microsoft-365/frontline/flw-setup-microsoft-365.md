@@ -31,15 +31,15 @@ The following table lists the scenarios for your frontline workers. You can read
 | Scenario area | Scenario | Required services |
 | ------- | ------- | -------  |
 | **Communications** | [Team communication and collaboration](retail-team-collaboration.md) | [Microsoft Teams](#set-up-microsoft-teams) <br>[Email with Exchange Online](#set-up-email-with-exchange-online) |
-| **Communications**| Corporate communications | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-yammer) |
+| **Communications**| Corporate communications | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-yammer) |
 | **Communications**| Virtual appointments | Microsoft Teams |
-| **Wellbeing and engagement** | Engage your employees | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) |
-| **Wellbeing and engagement**| Focus on employee wellbeing |  [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Insights](#set-up-viva-insights) |
+| **Wellbeing and engagement** | Engage your employees | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) |
+| **Wellbeing and engagement**| Focus on employee wellbeing |  [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Insights](#set-up-viva-insights) |
 | **Schedule management** | Schedule your team with Shifts | [Microsoft Teams](#set-up-microsoft-teams) |
-| **Training & onboarding** | Onboard new employees| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
+| **Training & onboarding** | Onboard new employees| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
 | **Training & onboarding** | Ongoing training | [Microsoft Teams](#set-up-microsoft-teams) <br>[Viva Learning](#set-up-viva-learning) |
-| **Digitized processess** | Simplify business processes | [Microsoft Teams](#set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#power-apps-power-automate-and-power-bi) |
-| **Digitized processess** | Manage sites, stores, and projects| [Microsoft Teams](#set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#power-apps-power-automate-and-power-bi) |
+| **Digitized processess** | Simplify business processes | [Microsoft Teams](#set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#set-up-power-apps-power-automate-and-power-bi) |
+| **Digitized processess** | Manage sites, stores, and projects| [Microsoft Teams](#set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#set-up-power-apps-power-automate-and-power-bi) |
 
 Some services are only included with F3 licenses, such as email and OneDrive. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
 
@@ -62,15 +62,15 @@ If you want your frontline managers and workers to have access to email, you nee
 
 Note that your users can also install the Outlook app to use for their email, so you'll want to make sure you share where to download the Outlook app with them.
 
-## Set up OneDrive
+## Set up file storage with OneDrive
 
 [OneDrive](/onedrive) provides file storage, sharing, collaboration, and syncing capabilities. Users must have an F3 license to use OneDrive. [OneDrive setup guide](https://aka.ms/ODfBquickstartguide) to set it up.
 
-## Set up SharePoint in Microsoft 365
+## Set up sites with SharePoint in Microsoft 365
 
 [SharePoint](/sharepoint/sharepoint-online) lets you share documents and create sites. Use the [SharePoint setup guide](https://aka.ms/spoguidance) in the Microsoft 365 admin center to set it up.
 
-## Set up Viva modules
+## Set up employee experiences with Viva modules
 
 [Microsoft Viva](/viva/microsoft-viva-overview) helps connect employees with an integrated employee experience that brings together communications, knowledge, learning, resources, and insights into the flow of work. Microsoft Viva has several modules that can be used with Microsoft Teams to create employee experiences.
 
@@ -92,11 +92,11 @@ Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeE
 
 [Viva Topics](/viva/topics/) . See [Set up Microsoft Viva Topics](/viva/topics/set-up-topic-experiences).
 
-## Set up Yammer
+## Set up your organization's social network with Yammer
 
 [Yammer](/yammer) helps connect your workforce across your company. Use the [Yammer deployment advisor](https://aka.ms/yammerdeploymentguide) to set it up.
 
-## Power Apps, Power Automate, and Power BI
+## Set up Power Apps, Power Automate, and Power BI
 
 You can use all of these apps within Microsoft Teams. For more information about how to set them up, see:
 
