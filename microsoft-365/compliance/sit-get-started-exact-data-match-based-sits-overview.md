@@ -150,5 +150,5 @@ or
 
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
 - [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
-- [Get started with exact data match (new)](sit-get-started-edm-unified-ux.md)
-- [Get started with exact data match (classic)](sit-get-started-edm-classic.md)
+- [Create exact data match sensitive information type workflow new experience](sit-get-started-edm-unified-ux-workflow.md)
+- [Create exact data match sensitive information type workflow classic experience](sit-get-started-edm-classic-ux-workflow.md)
