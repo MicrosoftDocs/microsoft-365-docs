@@ -119,7 +119,7 @@ If you select a payload from the list, details about the payload are shown in a 
 
 If you select a payload from the list by clicking on the name, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
-To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md).
+To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
 When you're finished, click **Next**.
 
@@ -315,7 +315,7 @@ On the **Select end user notification** page, select from the following notifica
       - **Deliver after campaign ends**
       - **Deliver during campaign**
     - **Actions**: If you click on the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
-      - **Preview** tab: View the notification message.
+      - **Preview** tab: View the notification message as users will see it.
         - To view the message in different languages, use the **Select language** box.
         - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
       - **Details** tab: View details about the notification:

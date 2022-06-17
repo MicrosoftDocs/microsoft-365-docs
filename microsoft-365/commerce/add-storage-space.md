@@ -24,7 +24,7 @@ ms.custom:
 - admindeeplinkSPO
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint."
-ms.date: 04/02/2021
+ms.date: 05/24/2022
 ---
 
 # Add more SharePoint storage to your subscription
@@ -85,7 +85,7 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E1
 - Office 365 Enterprise E2
 - Office 365 Enterprise E3
-- Office 365 Enterprise E4
+<!-- Office 365 Enterprise E4 -->
 - Office 365 Enterprise E5
 - Office 365 A3 (faculty)
 - Office 365 A5 (faculty)
@@ -99,6 +99,7 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Microsoft 365 E3
 - Microsoft 365 E5
 - Microsoft 365 F1
+- Microsoft 365 F3
 
 > [!NOTE]
 > Office 365 Extra File Storage is also available for GCC, GCC High, and DOD plans.
