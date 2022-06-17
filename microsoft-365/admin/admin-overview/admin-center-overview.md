@@ -103,7 +103,7 @@ If you have no idea who to contact at your work or school for help, try asking t
 
 ## Admin center features and settings
 
-Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](Overview of the Microsoft 365 admin center](admin-center-overview.md).
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide).
 
 <br>
 
