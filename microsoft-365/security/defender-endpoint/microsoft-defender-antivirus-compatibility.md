@@ -112,7 +112,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 - Select **Turn Off Microsoft Defender Antivirus**.
 - Set the GPO to **Enabled**.
 
-We can view the Protection status in Powershell with the command "Get-MpComputerStatus" and the key "AMRunningMode"
+You can view the Protection status in PowerShell with the command "Get-MpComputerStatus" and the key "AMRunningMode".
 
 ## SYNTAX
 
