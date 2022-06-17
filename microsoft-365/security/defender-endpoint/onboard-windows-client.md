@@ -36,7 +36,7 @@ Devices in your organization must be configured so that the Defender for Endpoin
 
 In general, you'll identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
-:::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboard-devices.png":::
+:::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboarddevices.png":::
 
 ## Related topics
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)

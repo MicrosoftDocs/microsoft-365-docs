@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows devices to Defender for Endpoint using Intune 
-description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
+description: Use Microsoft Intune to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThr
 
 ## Before you begin
 
-If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings won't be applied successfully.
+Devices must be enrolled with Intune as your Mobile Device Management (MDM) solution.
 
 For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
@@ -58,7 +58,7 @@ For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThr
 After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 
-## Offboard and monitor devices using Mobile Device Management tools
+## Offboard devices using Mobile Device Management tools
 
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you'll be notified of the packages expiry date and it will also be included in the package name.
 
