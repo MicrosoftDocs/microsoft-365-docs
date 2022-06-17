@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Whiteboard to Windows 10 devices
+title: Deploy Microsoft Whiteboard on Windows 10 devices
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
-# Deploy Microsoft Whiteboard to Windows 10 devices
+# Deploy Microsoft Whiteboard on Windows 10 devices
 
 Whiteboard can be deployed on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager (formerly System Center Configuration Manager). Whiteboard is not supported on Windows Server.
 
