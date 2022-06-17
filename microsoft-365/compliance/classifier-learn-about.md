@@ -48,7 +48,7 @@ This classification method is well suited to content that isn't easily identifie
 
 > [!NOTE]
 > In Preview - You can view the trainable classifiers in content explorer by expanding **Trainable Classifiers** in the filters panel. The trainable classifiers will automatically display the number of incidents found in SharePoint, Teams, and OneDrive, without requiring any labeling.
-> If you do not want to use this feature, you must file a request with Microsoft Support to disable out-of-the-box classification. This will disable the scanning of your sensitive and labeled content before you create labeling policies.
+> If you don't want to use this feature, you must file a request with Microsoft Support. This will disable the display of your sensitive data that's not used in any labeling policies within Content Explorer. You can disable scanning of your data as well. If scanning is turned off, sensitivity labeling and DLP policies with those classifiers will not work
 
 ### Where you can use classifiers
 
