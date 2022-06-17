@@ -18,12 +18,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Manage sharing for Microsoft Whiteboard
 
-
-## Manage Whiteboard sharing
-
 The sharing experience differs based on whether you’re in a Teams meeting, if you're using a shared device, or what tenant-level sharing settings are enabled. The following scenarios apply only to new whiteboards created after Whiteboard switches to using OneDrive for Business storage. There is no change to previously created boards still stored in Azure.
 
-### Share in Teams meetings
+## Share in Teams meetings
 
 When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization and automatically shares the whiteboard with any in-tenant users in the meeting.
 
@@ -57,7 +54,7 @@ These changes should take approximately 60 minutes to apply across your tenancy.
 |Start the whiteboard from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Disabled  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Cannot view or collaborate<br><br>Shared device accounts: Cannot view or collaborate  |
 |Start the whiteboard from a Surface Hub or Microsoft Teams Rooms  |Storage: Azure (this will be moved to OneDrive for Business in the future)<br><br>Owner: Meeting participant   |Not applicable  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only<br><br>Shared device accounts: Can view and collaborate during the meeting only  |
 
-### Add as a tab in Teams channels and chats
+## Add as a tab in Teams channels and chats
 
 When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will create a sharing link that’s accessible by anyone in the organization.
 
@@ -65,7 +62,7 @@ When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will c
 |---------|---------|---------|---------|
 |Add the whiteboard to a channel or chat from a desktop or mobile device  |Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard  |Not applicable (only applies to meetings)  |In-tenant users: Can initiate, view, and collaborate<br><br>External users: Not supported<br><br>Teams guests: Can view and collaborate<br><br>Shared device accounts: Not applicable  |
 
-### Create and share in Whiteboard native clients
+## Create and share in Whiteboard native clients
 
 When you share whiteboards from the web, desktop, or mobile clients, you can choose specific people or create a sharing link that’s accessible by anyone in the organization. 
 
