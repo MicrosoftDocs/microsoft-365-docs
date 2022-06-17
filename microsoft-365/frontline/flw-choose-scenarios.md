@@ -48,32 +48,27 @@ More information: [Virtual appointments with Microsoft Teams and the Bookings ap
 
 :::image type="icon" source="https://docs.microsoft.com/office/icons/heart-teams.png":::
 
-| Scenario | Description | Apps |
-| --- | --- | --- |
-| | | Viva Connections <br> Yammer |
+| Scenario | Description | Services | Teams apps |
+| --- | --- | --- |--- |
+| Engage your employees | | Microsoft Teams <br>SharePoint <br>Viva Connections <br> Yammer| Praise |
+| Focus on employee wellbeing | | Microsoft Teams <br>SharePoint <br>Viva Connections <br>Viva Insights| Praise |
 
 ## Schedule management solution area
 
 :::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png"::: 
 
+| Scenario | Description | Services | Teams apps |
+| --- | --- | --- |--- |
+| [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | | Microsoft Teams | Shifts |
+
 ## Training & onboarding solution area
 
 :::image type="icon" source="https://docs.microsoft.com/office/icons/files-teams.png":::
 
-
-### Onboarding new employees
-
-Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.
-
-**Key apps:** Lists, Live Meetings
-
-**Additional services:** Viva Learning, SharePoint, Yammer
-
-More information: [Onboard new employees](/sharepoint/onboard-employees)
-
-| Scenario | Description | Apps |
-| --- | --- | --- |
-| | | Viva Connections <br>Viva Learning <br>SharePoint Syntex |
+| Scenario | Description | Services | Teams apps |
+| --- | --- | --- |--- |
+| [Onboard new employees](/sharepoint/onboard-employees) | Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Lists <br>Live meetings |
+| Ongoing training | Description TBD | SharePoint <br> Viva Learning <br> Viva Connections | |
 
 ## Digitized processes solution area
 
@@ -81,9 +76,12 @@ More information: [Onboard new employees](/sharepoint/onboard-employees)
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
-| Simplify business processes | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
+| [Simplify business processes](retail-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
 | Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | | |
 
 ## Find more scenarios and solutions in the digital ecosystem
 
-All of the scenarios above can be achieved with out of the box capabilities from Microsoft. But you can extend even further with partner solutions.
+All of the scenarios above can be achieved with out of the box capabilities from Microsoft. But you can extend even further with apps and solutions from our partners and solution providers.
+
+- [Apps for frontline](https://appsource.microsoft.com/marketplace/apps?search=frontline&page=1)
+- [Consultants for frontline](https://appsource.microsoft.com/marketplace/consulting-services?page=1&search=frontline)
