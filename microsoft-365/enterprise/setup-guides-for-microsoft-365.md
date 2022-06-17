@@ -188,6 +188,14 @@ The [Microsoft Purview Data Lifecycle Management setup guide](https://aka.ms/mig
 
 The [Microsoft Defender for Cloud Apps setup guide](https://aka.ms/cloudappsecuritysetup) provides easy to follow deployment and management guidance to set up your Cloud Discovery solution. With Cloud Discovery, you'll integrate your supported security apps, and then you'll use traffic logs to dynamically discover and analyze the cloud apps that your organization uses. You'll also set up features available through the Defender for Cloud Apps solution, including threat detection policies to identify high-risk use, information protection policies to define access, and real-time session controls to monitor activity. With these features, your environment gets enhanced visibility, control over data movement, and analytics to identify and combat cyberthreats across all your Microsoft and third party cloud services.
 
+###Audit solutions setup guide
+
+The [Microsoft 365 auditing solutions guide](https://aka.ms/auditsolutionsetup) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, and compliance obligations. When you use the auditing solutions in Microsoft 365, you can search the audit log for activities performed in different Microsoft 365 services.
+
+###eDiscovery solutions setup guide
+
+eDiscovery is the process of identifying and delivering electronic information that can be used as evidence in legal cases. The eDiscovery solutions setup guide assists in the use of eDiscovery tools in Microsoft Purview that allow you to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer communities.
+
 ## Guides for collaboration
 
 ### Build your employee experience
