@@ -1,5 +1,5 @@
 ---
-title: Learn where to start with a frontline deploymen
+title: Learn where to start with a frontline deployment
 author: daisyfell
 ms.author: daisyfeller
 ms.reviewer: samanro
