@@ -149,7 +149,11 @@ When you share a whiteboard from the web, desktop, or mobile clients, you can ch
 |Create the whiteboard from a Surface Hub  |Storage: Local<br><br>Owner: None  |Not applicable  |In-tenant users (coming soon): User will be able to sign in to save and share the board<br><br>External users: Sharing with external users isn't supported at this time |
 |Create the whiteboard from Microsoft Teams Rooms  |Not yet available         |         |         |
 
+## See also
 
+[Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)
+[Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
+[Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)
 
 
 

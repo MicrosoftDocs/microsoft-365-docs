@@ -61,7 +61,7 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 13. For more information, see [Install applications for a device](https://docs.microsoft.com/en-us/mem/configmgr/apps/deploy-use/install-app-for-device).
 
-# See also
+## See also
 
 [Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
 [Manage data for Whiteboard](manage-data-organizations.md)
