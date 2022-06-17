@@ -336,7 +336,7 @@
               items: 
               - name: Create EMD SIT workflow new experience
                 href: sit-create-edm-sit-unified-ux-workflow.md
-              - name: Export source data for EDM classic experience
+              - name: Export source data
                 href: sit-get-started-exact-data-match-export-data.md 
               - name: Create EDM SIT sample file for the new experience
                 href: sit-create-edm-sit-unified-ux-sample-file.md
@@ -350,7 +350,7 @@
               items:
               - name: Create exact EDM SIT workflow classic experience
                 href: sit-create-edm-sit-classic-ux-workflow.md
-              - name: Export source data for EDM classic experience
+              - name: Export source data
                 href: sit-get-started-exact-data-match-export-data.md
               - name: Create the schema for EDM classic experience
                 href: sit-get-started-exact-data-match-create-schema.md
