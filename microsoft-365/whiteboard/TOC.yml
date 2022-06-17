@@ -17,18 +17,11 @@
         - name: Enable and manage access - GCC High
           href: enable-whiteboard-access-gcc-high.md
         - name: Manage data - GCC High
-          href: manage-data-organizations.md
+          href: manage-data-gcc-high.md
         - name: Manage sharing - GCC High
-          href: manage-sharing-organizations.md
-        - name: Manage-clients - GCC High
-          href: deploy-on-windows-organizations.md
-
-
-    - name: Enable and manage access
-      href: enable-whiteboard-access-organizations.md 
-
-    - name: Enable Whiteboard access for GCC High environments
-      href: enable-whiteboard-access-gcc-high.md 
+          href: manage-sharing-gcc-high.md
+        - name: Manage clients - GCC High
+          href: manage-clients-gcc-high.md
 
     - name: Whiteboard PowerShell
       href: https://docs.microsoft.com/en-us/powershell/module/whiteboard/?view=whiteboard-ps
