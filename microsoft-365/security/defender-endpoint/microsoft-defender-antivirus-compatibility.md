@@ -132,10 +132,11 @@ In order for Microsoft Defender Antivirus to run in passive mode, endpoints must
 
 ## How Microsoft Defender Antivirus affects Defender for Endpoint functionality
 
-Defender for Endpoint affects whether Microsoft Defender Antivirus can run in passive mode. Microsoft Defender Antivirus can affect certain capabilities in Defender for Endpoint, too. For example, real-time protection works when Microsoft Defender Antivirus is in active or passive mode, but not when Microsoft Defender Antivirus is disabled or uninstalled.
+Defender for Endpoint affects whether Microsoft Defender Antivirus can run in passive mode. And, the state of Microsoft Defender Antivirus can affect certain capabilities in Defender for Endpoint. For example, real-time protection works when Microsoft Defender Antivirus is in active or passive mode, but not when Microsoft Defender Antivirus is disabled or uninstalled.
 
 > [!IMPORTANT]
-> The table in this section summarizes the features and capabilities that are actively working or not, according to whether Microsoft Defender Antivirus is in active mode, passive mode, or disabled/uninstalled. This table designed to be informational only. **Do not turn off capabilities**, such as real-time protection, cloud-delivered protection, or limited periodic scanning if you are using Microsoft Defender Antivirus in passive mode, or if you are using [EDR in block mode](edr-in-block-mode.md), which works behind the scenes to detect and remediate malicious artifacts that were detected post-breach.
+> The table in this section summarizes the features and capabilities that are actively working or not, according to whether Microsoft Defender Antivirus is in active mode, passive mode, or disabled/uninstalled. This table designed to be informational only. 
+> **Do not turn off capabilities**, such as real-time protection, cloud-delivered protection, or limited periodic scanning if you are using Microsoft Defender Antivirus in passive mode, or if you are using [EDR in block mode](edr-in-block-mode.md), which works behind the scenes to detect and remediate malicious artifacts that were detected post-breach.
 
 | Protection | Microsoft Defender Antivirus <br/>(*Active mode*) | Microsoft Defender Antivirus <br/>(*Passive mode*) | Microsoft Defender Antivirus <br/>(*Disabled or uninstalled*) | [EDR in block mode](edr-in-block-mode.md) | 
 |:---|:---|:---|:---|:---| 
