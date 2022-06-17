@@ -90,8 +90,8 @@ Valid URL entries and their results are described in the following sections.
   - payroll.contoso.com
   - test.com/contoso.com
   - test.com/q=contoso.com
-  - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - contoso.com
+  - contoso.com/q=a@contoso.com
 
 - **Block match**:
   - contoso.com
@@ -99,8 +99,8 @@ Valid URL entries and their results are described in the following sections.
   - payroll.contoso.com
   - test.com/contoso.com
   - test.com/q=contoso.com
-  - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - contoso.com
+  - contoso.com/q=a@contoso.com
 
 - **Block not matched**: abc-contoso.com
 
@@ -112,14 +112,14 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `*.contoso.com`
 
 - **Block match**:
-  - www.contoso.com
+  - contoso.com
   - xyz.abc.contoso.com
 
 - **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
-  - www.contoso.com/abc
+  - contoso.com/abc
 
 #### Scenario: Right wildcard at top of path
 
@@ -133,8 +133,8 @@ Valid URL entries and their results are described in the following sections.
 - **Allow not matched** and **Block not matched**:
   - contoso.com
   - contoso.com/a
-  - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - contoso.com
+  - contoso.com/q=a@contoso.com
 
 #### Scenario: Left tilde
 
@@ -142,13 +142,13 @@ Valid URL entries and their results are described in the following sections.
 
 - **Allow match** and **Block match**:
   - contoso.com
-  - www.contoso.com
+  - contoso.com
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.com/abc
-  - www.contoso.com/abc
+  - contoso.com/abc
 
 #### Scenario: Right wildcard suffix
 
@@ -175,8 +175,8 @@ Valid URL entries and their results are described in the following sections.
 - **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
-  - www.contoso.com/a
-  - www.contoso.com/b/a/c
+  - contoso.com/a
+  - contoso.com/b/a/c
   - xyz.contoso.com/ba
 
 - **Block not matched**: contoso.com/b
@@ -189,8 +189,8 @@ Valid URL entries and their results are described in the following sections.
 
   - contoso.com
   - contoso.com/a
-  - www.contoso.com
-  - www.contoso.com/b
+  - contoso.com
+  - contoso.com/b
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
@@ -288,7 +288,8 @@ To add block URL entries in the Tenant Allow/Block List, use the following synta
 ```powershell
 New-TenantAllowBlockListItems -ListType <Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
-This example adds a block URL entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
+
+This example adds a block URL entry for contoso.com and all subdomains (for example, contoso.com and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
