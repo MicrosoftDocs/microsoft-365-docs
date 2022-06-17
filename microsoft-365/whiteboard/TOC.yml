@@ -1,8 +1,30 @@
     - name: Microsoft Whiteboard
       href: index.md   
 
+    - name: Whiteboard for organizations
+      items:    
+        - name: Enable and manage access
+          href: enable-whiteboard-access-organizations.md 
+        - name: Manage data
+          href: manage-data-organizations.md
+        - name: Manage sharing
+          href: manage-sharing-organizations.md
+        - name: Deploy on Windows devices
+          href: deploy-on-windows-organizations.md
 
-    - name: Enable Whiteboard access for organizations
+    - name: Whiteboard for government
+      items:
+        - name: Enable and manage access - GCC High
+          href: enable-whiteboard-access-gcc-high.md
+        - name: Manage data - GCC High
+          href: manage-data-organizations.md
+        - name: Manage sharing - GCC High
+          href: manage-sharing-organizations.md
+        - name: Manage-clients - GCC High
+          href: deploy-on-windows-organizations.md
+
+
+    - name: Enable and manage access
       href: enable-whiteboard-access-organizations.md 
 
     - name: Enable Whiteboard access for GCC High environments
