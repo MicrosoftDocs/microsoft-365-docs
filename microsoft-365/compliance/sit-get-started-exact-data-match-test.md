@@ -25,8 +25,8 @@ ms.custom: seo-marvel-apr2020
 
 ## Applies to
 
-- [New experience](sit-create-sit-unified-ux-workflow.md)
-- [Classic experience](sit-create-sit-classic-ux-workflow.md)
+- [New experience](sit-create-edm-sit-unified-ux-workflow.md)
+- [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
 After your exact data match (EDM) sensitive information type (SIT) has been created and an hour after verifying that your sensitive information table has finished uploading and indexing, you can test that it detects the information you want to detect by using the test function in the sensitive information types section in the Compliance center.
  
