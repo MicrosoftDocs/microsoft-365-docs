@@ -167,7 +167,7 @@ Help your team get comfortable and confident using their Microsoft 365 capabilit
 
 [Get started with Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)
 
-    Shifts also includes a clock in and out feature. [Learn how to clock in and out with Shifts](https://support.microsoft.com/office/clock-in-and-out-with-shifts-ae7b676c-7666-46c7-9f68-85ff54acec8b)
+Shifts also includes a clock in and out feature. [Learn how to clock in and out with Shifts](https://support.microsoft.com/office/clock-in-and-out-with-shifts-ae7b676c-7666-46c7-9f68-85ff54acec8b)
 
 [Get started with Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070)
 

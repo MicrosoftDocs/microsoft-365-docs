@@ -63,7 +63,7 @@ Microsoft 365 includes apps liked Lists, Tasks, and Approvals, that can help you
 | Icon | Solution area | Description |
 | --- | --- | --- |
 |:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::| [Digitize your business processes](flw-choose-scenarios.md#digitized-processes) | Drive operational efficiency by digitizing paper-based processes, and automating routine, repetitive steps. |
-|:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::| [Digital ecosystem](flw-choose-scenarios.md#digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::| [Digital ecosystem](flw-choose-scenarios.md#more-scenarios-and-solutions-with-the-digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
 
 ## Safeguard your business
 
