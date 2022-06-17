@@ -18,11 +18,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Deploy Microsoft Whiteboard on Windows 10 devices
 
-Whiteboard can be deployed on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager (formerly System Center Configuration Manager). Whiteboard is not supported on Windows Server.
+Whiteboard can be deployed on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager (formerly System Center Configuration Manager). Whiteboard isn't supported on Windows Server.
 
-- **Microsoft Intune using an online license mode** – This allows you to specify groups of users who will receive access to the Whiteboard app.
+- **Microsoft Intune using an online license mode** – This process allows you to specify groups of users who will receive access to the Whiteboard app.
 
-- **Microsoft Configuration Manager using manual offline installation and updates** – This allows you to install Whiteboard and then manually update it every 2–4 weeks.
+- **Microsoft Configuration Manager using manual offline installation and updates** – This process allows you to install Whiteboard and then manually update it every 2–4 weeks.
 
 >[!NOTE]
 > We recommend using Microsoft Intune. Using Microsoft Configuration Manager requires IT to continuously repackage and install updates to ensure users are running an up-to-date version.
@@ -53,11 +53,11 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 9. Select **Manage**.
 
-10. This takes you to the inventory management page, which will now offer the option to **Download package for offline use**.
+10. This action takes you to the inventory management page, which will now offer the option to **Download package for offline use**.
 
 11. Choose the architecture version, and then download it.
 
-12. As soon as you have downloaded the app, you can deploy it through Configuration Manager. To create an update package, follow steps 7–10 to download a newer version and package it for Configuration Manager.
+12. As soon as you've downloaded the app, you can deploy it through Configuration Manager. To create an update package, follow steps 7–10 to download a newer version and package it for Configuration Manager.
 
 13. For more information, see [Install applications for a device](https://docs.microsoft.com/en-us/mem/configmgr/apps/deploy-use/install-app-for-device).
 
