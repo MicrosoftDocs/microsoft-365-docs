@@ -25,8 +25,8 @@ ms.custom: seo-marvel-apr2020
 
 ## Applies to
 
-- [New experience](sit-create-sit-unified-ux-workflow.md)
-- [Classic experience](sit-create-sit-classic-ux-workflow.md)
+- [New experience](sit-create-edm-sit-unified-ux-workflow.md)
+- [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
 The sensitive data table is a text file containing rows of values against which you will be comparing content in your documents to identify sensitive data. These values might be personally identifiable information, product records, or other sensitive data in text form that you want to detect in content and take protective actions on.
 

@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 ## Applies to
 
-- [Classic experience](sit-create-sit-classic-ux-workflow.md)
+- [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
 You can create an exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
