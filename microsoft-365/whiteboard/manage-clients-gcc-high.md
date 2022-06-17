@@ -42,7 +42,7 @@ The following clients are planned for future releases of Whiteboard:
 - Whiteboard in 1:1 calls in Teams
 
 >[!NOTE]
-> While users can install the Windows client, they will not be able to sign in until the client is updated this year.
+> While users can install the Windows client, they won't be able to sign in until the client is updated.
 
 ## See also
 
