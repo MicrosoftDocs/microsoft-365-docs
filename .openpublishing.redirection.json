@@ -7477,6 +7477,18 @@
       "source_path": "microsoft-365/admin/validate-settings-on-windows-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
       "redirect_document_id": false
+    },
+    {"source_path": "microsoft-365/security/office-365-security/manage-tenant-blocks.md",
+     "redirect_url": "microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_document_id": false
+    },
+    {"source_path": "microsoft-365/security/office-365-security/manage-tenant-allows.md",
+     "redirect_url": "microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_document_id": false
+    },
+    {"source_path": "microsoft-365/security/office-365-security/modify-remove-entries-tenant-allow-block.md",
+     "redirect_url": "microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_document_id": false
     }
   ]
 }

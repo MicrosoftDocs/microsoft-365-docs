@@ -54,7 +54,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for senders, URLs, and file hashes, and 1024 entries for spoofing (spoofed senders).
+- For senders, URLs, and file hashes, the Tenant Allow/Block List allows 500 entries each for both allows and blocks, making it a total of 1000 entries. For spoofing (spoofed senders), the total number of entries allowed are 1024.
 
 - The maximum number of characters for each entry is:
   - File hashes = 64
