@@ -139,9 +139,9 @@ landingContent:
       - linkListType: video
         links:
         - text: Secure Windows 10 Pro devices
-          url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
+          url: /microsoft-365/business-premium/m365bp-secure-windows-devices
         - text: Secure Office apps on iOS
-          url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
+          url: /microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios?view=o365-worldwide
 
   # Card
   - title: Security & compliance
@@ -151,7 +151,7 @@ landingContent:
         - text: Overview of Microsoft 365 Business Premium security
           url: security-and-compliance/secure-your-business-data.md
         - text: (NEW!) Microsoft Defender for Business
-          url: /microsoft-365/security/defender-business/index.yml
+          url: /microsoft-365/security/defender-business/mdb-overview?view=o365-worldwide
         - text: Secure employee accounts with MFA
           url: security-and-compliance/set-up-multi-factor-authentication.md
         - text: Turn on malware detection
@@ -165,9 +165,9 @@ landingContent:
         - text: Manage safe links
           url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
         - text: Prevent data loss
-          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+          url: /microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide
         - text: Create sensitivity labels
-          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+          url: /microsoft-365/business-premium/m365bp-set-up-compliance
   # Card
   - title: Support
     linkLists:

@@ -175,7 +175,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -192,7 +192,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -226,8 +226,7 @@ The reported message will be marked as a false positive or a false negative. An 
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Customize column options for email attachment admin submissions.":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -240,8 +239,7 @@ The reported message will be marked as a false positive or a false negative. An 
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Filter options for email attachment admin submissions.":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -275,8 +273,7 @@ The reported message will be marked as a false positive or a false negative. An 
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/url-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Customize column options for URL admin submissions.":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -289,8 +286,7 @@ The reported message will be marked as a false positive or a false negative. An 
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/url-admin-submission-filters.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Filter options for URL admin submissions.":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -393,3 +389,7 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+
+If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view a created admin submission from a user reported message.":::
