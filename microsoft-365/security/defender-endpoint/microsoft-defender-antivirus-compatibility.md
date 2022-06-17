@@ -181,7 +181,7 @@ TroubleShootingStartTime         :
 PSComputerName                   :
 ```
 
-In the example below the Defender status is **Not Running**.
+In the following example, the Defender status is **Not Running**.
 
  > [!NOTE]
  > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded with the modern, unified solution described in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
