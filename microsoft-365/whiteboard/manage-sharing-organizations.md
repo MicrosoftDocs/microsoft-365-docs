@@ -21,7 +21,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ## Manage Whiteboard sharing
 
-The sharing experience differs based on whether you’re in a Teams meeting, if you're using a shared device, or what tenant-level sharing settings are enabled. The following scenarios apply only to new boards created after Whiteboard switches to using OneDrive for Business storage. There is no change to previously created boards still stored in Azure.
+The sharing experience differs based on whether you’re in a Teams meeting, if you're using a shared device, or what tenant-level sharing settings are enabled. The following scenarios apply only to new whiteboards created after Whiteboard switches to using OneDrive for Business storage. There is no change to previously created boards still stored in Azure.
 
 ### Share in Teams meetings
 

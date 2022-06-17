@@ -41,14 +41,16 @@ The resources in this section help the admin in your organization to set up and 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to set up and manage access to Whiteboard for your organization|[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)|
-|      |         |
-|      |         |
+|Find where your Whiteboard content and data are stored in Azure and OneDrive for Business  |[Manage data for Whiteboard](manage-data-organizations.md)  |
+|Learn about the sharing experience in Teams and how to share links to specific users.      |[Manage sharing for Whiteboard](manage-sharing-organizations)  |
+|       |       |
 
 ### For government
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to set up and manage access to Whiteboard for US Government GCC High environments|[Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)|
+|       |       |
 |       |       |
 |       |       |
 
