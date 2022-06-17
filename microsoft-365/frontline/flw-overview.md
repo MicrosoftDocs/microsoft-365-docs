@@ -44,7 +44,7 @@ Enrich your communications and employee experiences with Microsoft 365 for front
 
 | Icon | Solution area | Description |
 | --- | --- | --- |
-|:::image type="icon" source="https://docs.microsoft.com/office/icons/conversation-chat-teams.png"::: | [Communication](flw-choose-scenarios.md#communication-scenarios) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/chat-room-conversation-teams.png"::: | [Communication](flw-choose-scenarios.md#communication-scenarios) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
 |:::image type="icon" source="https://docs.microsoft.com/office/icons/heart-teams.png"::: | [Wellbeing & engagement](flw-choose-scenarios.md#wellbeing--engagement-scenarios) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
 |:::image type="icon" source="https://docs.microsoft.com/office/icons/files-teams.png"::: | [Training & onboarding](flw-choose-scenarios.md#training--onboarding-scenarios) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
 
@@ -54,7 +54,7 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 
 | Icon | Solution area | Description |
 | --- | --- | --- |
-|:::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png":::  | [Schedule management](flw-choose-scenarios.md#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png"::: | [Schedule management](flw-choose-scenarios.md#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
 
 ## Increase operations efficiency
 

@@ -29,7 +29,7 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 ## Communication solution area
 
-:::image type="icon" source="https://docs.microsoft.com/office/icons/conversation-chat-teams.png"::: Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
+:::image type="icon" source="https://docs.microsoft.com/office/icons/chat-room-conversation-teams.png"::: Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
