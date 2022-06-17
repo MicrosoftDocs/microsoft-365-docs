@@ -128,7 +128,7 @@ If you want to edit the client-side auto-labeling configuration, see [How to con
 
 Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates policies that run in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. In simulation mode, items aren't actually labeled until the policy is turned on. You can manually turn on the policy, or unless you change the default setting, the policy will be automatically turned on for you if there aren't any changes to the policy within a set number of days from when the simulation completes.
 
-In most cases, the number of days before an unedited policy is automatically turned on is 7. However, specific to new customers after May 30, 2022, the initial number of days is 25, and then 7 after the policy is edited.
+In most cases, the number of days before an unedited policy is automatically turned on is 7. However, specific to new customers after June 22, 2022, the initial number of days is 25, and then 7 after the policy is edited.
 
 Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
 
@@ -143,17 +143,17 @@ For all customers:
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
 
-For new customers after May 30, 2022, and the Microsoft 365 tenant is in the US region:
+For new customers after June 22, 2022, and the Microsoft 365 tenant is in the US region:
 
 - If there are 1-9 instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
 
 - If there are 10 or more instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
 
-New customers after May 30, 2022 have two auto-labeling policies for each setting. One policy is for the Exchange location, and the other for the SharePoint and OneDrive locations. Although the policies are created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
+New customers after June 22, 2022 have two auto-labeling policies for each setting. One policy is for the Exchange location, and the other for the SharePoint and OneDrive locations. Although the policies are created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
 - Exchange location: The auto-labeling policy is created and immediately starts simulation.
 - SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation. This delay gives you time for files to be created and saved to these locations. 
 
-When the simulation is complete, review the results and if you are happy with them, turn on the policies. After May 30, 2022, by default, the policies will be automatically turned on if they're not edited within the set time period (25 days initially for new customers, otherwise 7 days).
+When the simulation is complete, review the results and if you are happy with them, turn on the policies. Slowly rolling out after June 22, 2022, by default, the policies will be automatically turned on if they're not edited within the set time period (25 days initially for new customers, otherwise 7 days).
 
 For more information about simulation mode, see [Learn about simulation mode](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 
