@@ -31,7 +31,7 @@ The following admin settings are required for Whiteboard:
 
 - Whiteboard must be enabled globally in the Microsoft 365 admin center.
 
-- The <code>Set-SPOTenant -IsWBFluidEnabled</code> cmdlet must be enabled using [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+- The <code>Set-SPOTenant -IsWBFluidEnabled</code> cmdlet must be enabled using [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 >[!NOTE]
 > The roll out of OneDrive for Business storage is in progress. When you go to the Microsoft 365 admin center, the option to opt in or out of OneDrive for Business storage is disabled if your tenant already has been transitioned to OneDrive for Business.
@@ -61,7 +61,7 @@ To enable or disable Whiteboard for your tenant, do the following steps:
 
 5. Select **Save**.
 
-6. Connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+6. Connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 7. Enable Fluid using the following <code>Set-SPOTenant</code> cmdlet:
 
@@ -79,6 +79,6 @@ To prevent access to Whiteboard for specific users, see [Building a Conditional 
 
 [Manage data for Whiteboard](manage-data-organizations.md)
 
-[Manage sharing for Whiteboard](manage-sharing-organizations)
+[Manage sharing for Whiteboard](manage-sharing-organizations.md)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)

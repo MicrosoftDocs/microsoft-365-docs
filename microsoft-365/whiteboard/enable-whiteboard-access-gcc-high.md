@@ -51,7 +51,7 @@ To enable or disable Whiteboard for your tenant, do the following steps:
 
 1. Use the [SharePoint Online PowerShell module](/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell) to enable or disable all Fluid Experiences across your Microsoft 365 tenant.
 
-2. Connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+2. Connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 3. Enable Fluid using the following <code>Set-SPOTenant</code> cmdlet:
 

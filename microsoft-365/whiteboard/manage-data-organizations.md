@@ -18,13 +18,13 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Manage data for Microsoft Whiteboard
 
-Whiteboard content is stored in both Azure and OneDrive for Business. New whiteboards will be stored in OneDrive for Business; the only exception is whiteboards started from a Surface Hub will be stored in Azure (which will be moved to OneDrive for Business in the future). For more information, see [Manage sharing in Whiteboard](enable-whiteboard-access-organizations.md#manage-whiteboard-sharing).
+Whiteboard content is stored in both Azure and OneDrive for Business. New whiteboards will be stored in OneDrive for Business; the only exception is whiteboards started from a Surface Hub will be stored in Azure (which will be moved to OneDrive for Business in the future). For more information, see [Manage sharing in Whiteboard](manage-sharing-organizations.md).
 
 ## Azure storage overview
 
 Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). 
 
-Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. Content can be managed using [Whiteboard PowerShell cmdlets](/powershell/module/whiteboard/?view=whiteboard-ps) and over time, this content will need to be either migrated to OneDrive for Business or deleted.
+Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. Content can be managed using [Whiteboard PowerShell cmdlets](/powershell/module/whiteboard/) and over time, this content will need to be either migrated to OneDrive for Business or deleted.
 
 ### If a user account is deleted in Azure
 
@@ -37,7 +37,7 @@ As of **June 1, 2022**, the behavior of whiteboards on Azure has changed. Any wh
 
 If you want to retain a deleted user’s whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user. 
 
-- Follow these instructions to [transfer all whiteboards](/powershell/module/whiteboard/invoke-transferallwhiteboards?view=whiteboard-ps).
+- Follow these instructions to [transfer all whiteboards](/powershell/module/whiteboard/invoke-transferallwhiteboards).
 
 - For more information about how to delete user accounts, see [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user).
 
