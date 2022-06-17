@@ -33,13 +33,7 @@ As an IT professional/admin, you can view information about threat detections ac
 - How many devices aren't in compliance with security policies
 - How many threats are currently active, mitigated, or resolved
 
-You have several options to view specific information about threat detections and devices:
-
-- Use the **Active threats** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the **Active threats** page](#manage-threat-detections-on-the-active-threats-page) in this article.
-- Use the **Security report** in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). See [View and manage threat detections in the Microsoft 365 Defender portal](#view-and-manage-threat-detections-in-the-microsoft-365-defender-portal) in this article.
-- Use the **Antivirus** page in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. See [Manage threat detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in this article.
-
-### Actions you can take
+## Actions you can take
 
 When you view details about specific threats or devices, you'll see recommendations and one or more actions you can take. The following table describes actions that you might see.<br><br>
 
