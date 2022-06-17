@@ -108,9 +108,9 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 
 **GPO Method**
 
-- Open Group Policy Management Editor -> Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus
-- Select "Turn Off Microsoft Defender Antivirus"
-- Set the GPO to "Enabled"
+- Open Group Policy Management Editor -> **Computer Configuration** -> **Administrative Templates** -> **Windows Components** -> **Microsoft Defender Antivirus**.
+- Select **Turn Off Microsoft Defender Antivirus**.
+- Set the GPO to **Enabled**.
 
 We can view the Protection status in Powershell with the command "Get-MpComputerStatus" and the key "AMRunningMode"
 
