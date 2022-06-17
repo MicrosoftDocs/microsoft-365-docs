@@ -29,7 +29,7 @@ Creating and making an exact data match (EDM) based sensitive information type (
 
 - Classic experience
 
-If you want to create an EDM SIT using the new experience see, [Create EDM SIT new experience](sit-create-edm-sit-unified-ux.md).
+If you want to create an EDM SIT using the new experience see, [Create EDM SIT new experience workflow ](sit-create-edm-sit-unified-ux-workflow.md).
 
 ## Before you begin
 
