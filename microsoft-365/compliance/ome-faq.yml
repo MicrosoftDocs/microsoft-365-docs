@@ -87,9 +87,9 @@ sections:
           See [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md).
             
       - question: |
-          Will the previous version of OME be deprecated?
+          Will the legacy Office 365 Message Encryption (OME) be deprecated?
         answer: |
-          You can still use the previous version of OME, it will not be deprecated at this time. However, we highly encourage organizations to use the new and improved message encryption solution. If you have not already deployed OME, you can't set up a new deployment of the previous version of OME.
+          You can still use the legacy OME, it will not be deprecated at this time. However, we highly encourage organizations to use the new and improved message encryption solution. If you have not already deployed OME, you can't set up a new deployment of the previous version of OME.
 
       - question: |
           My organization uses Active Directory Rights Management, can I use this functionality?
@@ -122,9 +122,9 @@ sections:
           Yes. The maximum message size you can send with Microsoft Purview Message Encryption, including attachments, is 25 MB. For more information, see [Message limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
           
       - question: |
-          What type of messages does the OME portal support?
+          What type of messages does the encrypted message portal support?
         answer: |
-          The OME portal only supports mail. The portal doesn't support other message types such as calendar or voice mail.
+          The enrypted message portal only supports mail. The portal doesn't support other message types such as calendar or voice mail.
           
       - question: |
           What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
@@ -169,9 +169,9 @@ sections:
           Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) for details.
 
       - question: |
-          Does the OME portal support preview of encrypted attachments in protected emails?
+          Does the encrypted message portal support preview of encrypted attachments in protected emails?
         answer: |
-          The OME portal support preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, Powerpoint, and PDF files.  
+          The encrypted message portal support preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, Powerpoint, and PDF files.  
 
       - question: |
           Can I automatically encrypt messages by setting up policies?
@@ -192,7 +192,12 @@ sections:
           Can I customize encrypted messages with my company branding?
         answer: |
           Yes, for mail sent from an Exchange Online mailbox in your organization! For information on customizing email messages and the OME portal, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
-            
+
+      - question: |
+          What types of recipients do the encrypted message portal activity logs work?
+        answer: |
+          The encrypted message portal activity logs only capture events for external recipients by accessing the encrypted message portals.  Any activities in email clients triggered by external recipients are not recorded. For internal recipients, see [Purview Audit (Premium) - Mail items accessed logs](compliance/mailitemsaccessed-forensics-investigations#the-mailitemsaccessed-mailbox-auditing-action). 
+          
       - question: |
           Are there any reporting capabilities or insights for encrypted emails?
         answer: |
@@ -257,9 +262,9 @@ sections:
           Delegated access of encrypted mail is supported in Outlook on the web, Outlook for Mac, Outlook for iOS, and Outlook for Android.  Outlook for Windows does not support delegated access.
 
       - question: |
-          How long do I have access to the mail in the OME portal?
+          How long do I have access to the mail in the encrypted message portal?
         answer: |
-          You can login to the OME portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
+          You can login to the encrypted message portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
 
       - question: |
           What do I do if I don't receive the one-time pass code after I requested it?
