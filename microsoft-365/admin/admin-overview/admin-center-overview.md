@@ -166,7 +166,7 @@ For more information, see [Try or buy a Microsoft 365 for business subscription]
 
 We love to hear from you! Reporting bugs and sharing feedback helps us make the Microsoft 365 admin center better. To give feedback, select the **Feedback** button on the bottom of the page and use the form to send us your thoughts. Select the checkbox and confirm your email address if you want someone from the Microsoft 365 admin center team to follow up on your comments. We can't promise to follow up on every piece of feedback, but we're going to try!
 
-You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).
+<!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
 ### What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?
 
