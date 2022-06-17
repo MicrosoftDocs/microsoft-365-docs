@@ -98,11 +98,90 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 
 (<a id="fn2">2</a>)  On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or  Windows Server 2012 R2, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, set Microsoft Defender Antivirus to passive mode to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key. 
 
+**Registry Key Method**
+
   You can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: `ForceDefenderPassiveMode`
 - Type: `REG_DWORD`
 - Value: `1`
+
+**GPO Method**
+
+- Open Group Policy Management Editor > **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
+- Select **Turn Off Microsoft Defender Antivirus**.
+- Set the GPO to **Enabled**.
+
+You can view the Protection status in PowerShell with the command "Get-MpComputerStatus" and the key "AMRunningMode".
+
+## SYNTAX
+
+```
+PS C:\Users\tommaso> Get-MpComputerStatus
+
+
+AMEngineVersion                  : 0.0.0.0
+AMProductVersion                 : 4.18.2205.4
+AMRunningMode                    : Not running
+AMServiceEnabled                 : False
+AMServiceVersion                 : 0.0.0.0
+AntispywareEnabled               : False
+AntispywareSignatureAge          : 4294967295
+AntispywareSignatureLastUpdated  :
+AntispywareSignatureVersion      : 0.0.0.0
+AntivirusEnabled                 : False
+AntivirusSignatureAge            : 4294967295
+AntivirusSignatureLastUpdated    :
+AntivirusSignatureVersion        : 0.0.0.0
+BehaviorMonitorEnabled           : False
+ComputerID                       : 5CF99D95-BF09-4B2E-9911-8E01C55642E5
+ComputerState                    : 0
+DefenderSignaturesOutOfDate      : False
+DeviceControlDefaultEnforcement  : N/A
+DeviceControlPoliciesLastUpdated : 01/01/1601 00:00:00
+DeviceControlState               : N/A
+FullScanAge                      : 4294967295
+FullScanEndTime                  :
+FullScanOverdue                  : False
+FullScanRequired                 : False
+FullScanSignatureVersion         :
+FullScanStartTime                :
+IoavProtectionEnabled            : False
+IsTamperProtected                : False
+IsVirtualMachine                 : True
+LastFullScanSource               : 0
+LastQuickScanSource              : 0
+NISEnabled                       : False
+NISEngineVersion                 : 0.0.0.0
+NISSignatureAge                  : 4294967295
+NISSignatureLastUpdated          :
+NISSignatureVersion              : 0.0.0.0
+OnAccessProtectionEnabled        : False
+ProductStatus                    : 1
+QuickScanAge                     : 4294967295
+QuickScanEndTime                 :
+QuickScanOverdue                 : False
+QuickScanSignatureVersion        :
+QuickScanStartTime               :
+RealTimeProtectionEnabled        : False
+RealTimeScanDirection            : 0
+RebootRequired                   : False
+TamperProtectionSource           : Signatures
+TDTMode                          : N/A
+TDTStatus                        : N/A
+TDTTelemetry                     : N/A
+TroubleShootingDailyMaxQuota     :
+TroubleShootingDailyQuotaLeft    :
+TroubleShootingEndTime           :
+TroubleShootingExpirationLeft    :
+TroubleShootingMode              :
+TroubleShootingModeSource        :
+TroubleShootingQuotaResetTime    :
+TroubleShootingStartTime         :
+PSComputerName                   :
+```
+
+In the following example, the Defender status is **Not Running**.
 
  > [!NOTE]
  > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded with the modern, unified solution described in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
