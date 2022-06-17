@@ -7479,15 +7479,15 @@
       "redirect_document_id": false
     },
     {"source_path": "microsoft-365/security/office-365-security/manage-tenant-blocks.md",
-     "redirect_url": "microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
      "redirect_document_id": false
     },
     {"source_path": "microsoft-365/security/office-365-security/manage-tenant-allows.md",
-     "redirect_url": "microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
      "redirect_document_id": false
     },
     {"source_path": "microsoft-365/security/office-365-security/modify-remove-entries-tenant-allow-block.md",
-     "redirect_url": "microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
      "redirect_document_id": false
     }
   ]
