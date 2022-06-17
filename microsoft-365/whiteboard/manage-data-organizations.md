@@ -76,7 +76,7 @@ Data controls planned for future releases:
 ## See also
 
 [Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
-[Manage sharing for Whiteboard](manage-sharing-organizations)
+[Manage sharing for Whiteboard](manage-sharing-organizations.md)
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)
 
 

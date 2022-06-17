@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
-description: Learn how to deploy Microsoft Whiteboard on Windows 10 or later devices.
+description: Learn how to deploy Microsoft Whiteboard on devices running Windows 10 or later versions.
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---
@@ -61,4 +61,9 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 13. For more information, see [Install applications for a device](https://docs.microsoft.com/en-us/mem/configmgr/apps/deploy-use/install-app-for-device).
 
+# See also
+
+[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
+[Manage data for Whiteboard](manage-data-organizations.md)
+[Manage sharing for Whiteboard](manage-sharing-organizations.md)
 

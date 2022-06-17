@@ -75,3 +75,8 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 |Create the whiteboard from a Surface Hub  |Storage: Local<br><br>Owner: None (Unless user sign ins to save and share the board, which saves to OneDrive for Business. Easy share will be added back in the future.  |Not applicable (only applies to meetings)  |In-tenant users: User must sign in to save and share the board (Easy share will be added in the future)<br><br>External users: Sharing with external users is not supported at this time outside of a Teams meeting  |
 |Create the whiteboard from Microsoft Teams Rooms  |Not yet supported  |Not applicable (only applies to meetings)  |Not yet supported  |
 
+## See also
+
+[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
+[Manage data for Whiteboard](manage-data-organizations.md)
+[Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)
