@@ -43,7 +43,7 @@ The resources in this section help the admin in your organization to set up and 
 |Learn how to set up and manage access to Whiteboard for your organization|[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)|
 |Find where your Whiteboard content and data are stored in Azure and OneDrive for Business  |[Manage data for Whiteboard](manage-data-organizations.md)  |
 |Learn about the sharing experience in Teams and how to share links to specific users.      |[Manage sharing for Whiteboard](manage-sharing-organizations)  |
-|       |       |
+|Deploy Whiteboard on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager  |[Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)  |
 
 ### For government
 
