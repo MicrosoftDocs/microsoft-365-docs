@@ -54,4 +54,4 @@ Then your sample file must have the same column headers, but use synthetic value
 
 ## Next step
 
-- [Create EDM SIT schema and rule package](sit-create-edm-sit-unified-ux-schema-rule-package.md)
+- **For new experience**: [Create EDM SIT schema and rule package](sit-create-edm-sit-unified-ux-schema-rule-package.md)

@@ -58,7 +58,11 @@ The data file can include a maximum of:
 
 ## Next step
 
-- [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- **For new experience**: [Create EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md)
+
+or
+
+- **For classic experience**: [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md)
 
 ## See also
 

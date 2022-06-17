@@ -99,5 +99,5 @@ When you select **Submit**, EDM will create the schema and rule package. The nam
 
 ## Next step
 
-- [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
+- **For new experience**: [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
 

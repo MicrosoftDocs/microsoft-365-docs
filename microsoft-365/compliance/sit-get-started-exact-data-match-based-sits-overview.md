@@ -116,7 +116,11 @@ The system will also warn you if the primary field you select occurs multiple ti
 
 ## Choosing the right EDM SIT creation experience for you
 
-You can toggle back and forth between the new and classic experiences, but we recommend using the new experience unless your needs fall into one or more of these four use cases.
+You can toggle back and forth between the new and classic experiences, but we recommend using the new experience unless your needs fall into one or more of these four use cases. 
+
+1. Read through this section
+1. Choose the experience that you want to use
+1. Select the link for the [Next step](#next-steps) for the experience you want.
 
 ### You want to map multiple EDM SITS to the same schema
 
@@ -133,6 +137,14 @@ If you need to specify a name for your EDM SIT schemas, you have to use the clas
 ### You need to edit EDM schemas that were created in the classic experience
 
 All schemas that are created using the classic experience or uploaded as a XML file using PowerShell are not viewable or manageable in the new experience.
+
+## Next steps
+
+- [Create exact data match sensitive information type new experience](sit-create-edm-sit-unified-ux-workflow.md)
+
+or
+
+- [Create exact data match sensitive information type classic experience](sit-create-edm-sit-classic-ux-workflow.md#create-exact-data-match-sensitive-information-type-classic-experience)
 
 ## See also
 

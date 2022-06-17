@@ -216,4 +216,4 @@ This procedure shows you how to create a file in XML format called a rule packag
 
 ## Next step
 
-- [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- **For classic experience**: [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
