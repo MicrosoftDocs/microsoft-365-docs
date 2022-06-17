@@ -96,7 +96,6 @@ If you selected the Ignored Delimiters option for the primary element column in 
 When you select **Submit**, EDM will create the schema and rule package. The name of the schema can be found on the final page of the creation flow.  
 
 
-
 ## Next step
 
 - **For new experience**: [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)

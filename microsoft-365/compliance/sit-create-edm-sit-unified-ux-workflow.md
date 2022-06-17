@@ -1,5 +1,5 @@
 ---
-title: "Create exact data match sensitive information type new experience"
+title: "Create exact data match sensitive information type workflow new experience"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 display an error for invalidly formatted data (including mismatched fields across rows).
 
-# Create exact data match sensitive information type new experience
+# Create exact data match sensitive information type workflow new experience
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
