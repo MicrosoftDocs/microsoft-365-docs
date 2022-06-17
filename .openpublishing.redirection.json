@@ -423,7 +423,7 @@
     {
       "source_path": "microsoft-365/business/validate-settings-on-android-or-ios.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/manage-domain-users.md",
@@ -7464,11 +7464,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/setup/priority-accounts.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-review-priority-account",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/security-and-compliance/review-threats-take-action.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
       "redirect_document_id": false
@@ -7482,6 +7477,18 @@
       "source_path": "microsoft-365/admin/validate-settings-on-windows-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
       "redirect_document_id": false
+    },
+    {"source_path": "microsoft-365/security/office-365-security/manage-tenant-blocks.md",
+     "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_document_id": false
+    },
+    {"source_path": "microsoft-365/security/office-365-security/manage-tenant-allows.md",
+     "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_document_id": false
+    },
+    {"source_path": "microsoft-365/security/office-365-security/modify-remove-entries-tenant-allow-block.md",
+     "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+     "redirect_document_id": false
     }
   ]
 }

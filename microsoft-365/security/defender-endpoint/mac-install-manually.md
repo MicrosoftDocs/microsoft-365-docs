@@ -123,7 +123,7 @@ To complete this process, you must have admin privileges on the device.
 2. Run the Bash script to install the configuration file:
 
     ```bash
-    bash MicrosoftDefenderATPOnboardingMacOs.sh
+    Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. Verify that the device is now associated with your organization and reports a valid org ID:

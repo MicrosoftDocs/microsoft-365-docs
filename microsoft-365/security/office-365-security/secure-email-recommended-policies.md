@@ -67,7 +67,7 @@ You can restrict the ability for users to download attachments from Outlook on t
 
 Here are the steps:
 
-1. [Connect to an Exchange Online Remote PowerShell session](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. If you don't already have an OWA mailbox policy, create one with the [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) cmdlet.
 3. If you want to allow viewing of attachments but no downloading, use this command:
 
