@@ -64,6 +64,8 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 ## See also
 
 [Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
+
 [Manage data for Whiteboard](manage-data-organizations.md)
+
 [Manage sharing for Whiteboard](manage-sharing-organizations.md)
 

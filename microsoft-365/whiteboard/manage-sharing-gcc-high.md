@@ -56,5 +56,7 @@ When you share a whiteboard from the web, desktop, or mobile clients, you can ch
 ## See also
 
 [Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)
+
 [Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)
+
 [Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)

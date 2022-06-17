@@ -21,9 +21,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 >[!NOTE]
 > This article applies to Enterprise or Education organizations who use Whiteboard. For US Government Community Cloud (GCC) environments, see [Enable Whiteboard on OneDrive for Business](https://support.microsoft.com/office/enable-microsoft-whiteboard-on-onedrive-for-business-2fae9707-0c9b-42f8-a85f-9628b698ac82). For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
 
-Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Today, Whiteboard runs on Azure for Enterprise and Education customers. Whiteboard is transitioning to be run on top of OneDrive for Business. This will bring many new capabilities and allow you to create, share, discover, and manage whiteboards as easily as any Office document.
-
-## Manage Whiteboard access
+Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Today, Whiteboard runs on Azure for Enterprise and Education customers. Whiteboard is transitioning to be run on top of OneDrive for Business. This transition will bring many new capabilities and allow you to create, share, discover, and manage whiteboards as easily as any Office document.
 
 Whiteboard is automatically enabled for applicable Microsoft 365 tenants. 
 
@@ -49,7 +47,7 @@ You can control access to Whiteboard in the following ways:
 >[!NOTE]
 > Teams meeting policies only hide Whiteboard entry points; it doesn't prevent the users from using Whiteboard. Conditional access policies prevent any access to Whiteboard, but doesn't hide the entry points.
 
-### Enable or disable Whiteboard
+## Enable or disable Whiteboard
 
 To enable or disable Whiteboard for your tenant, do the following steps:
 
@@ -69,16 +67,18 @@ To enable or disable Whiteboard for your tenant, do the following steps:
 
    <pre><code class="lang-powershell">Set-SPOTenant -IsWBFluidEnabled $true</code></pre>
  
-### Show or hide Whiteboard
+## Show or hide Whiteboard
 
 To show or hide Whiteboard in meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing). 
 
-### Prevent access to Whiteboard
+## Prevent access to Whiteboard
 
 To prevent access to Whiteboard for specific users, see [Building a Conditional Access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies).
 
 ## See also
 
 [Manage data for Whiteboard](manage-data-organizations.md)
+
 [Manage sharing for Whiteboard](manage-sharing-organizations)
+
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)

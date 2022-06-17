@@ -152,7 +152,9 @@ When you share a whiteboard from the web, desktop, or mobile clients, you can ch
 ## See also
 
 [Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)
+
 [Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
+
 [Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)
 
 

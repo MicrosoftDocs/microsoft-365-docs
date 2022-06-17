@@ -40,5 +40,7 @@ Clients planned for future releases:
 ## See also
 
 [Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)
+
 [Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)
+
 [Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)

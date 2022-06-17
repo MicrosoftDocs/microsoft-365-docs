@@ -50,9 +50,9 @@ The resources in this section help the admin in your organization to set up and 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to set up and manage access to Whiteboard for US Government GCC High environments|[Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)|
-|Find where your Whiteboard content and data are stored in Azure and OneDrive for Business  |[Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)  |
-|Learn about the sharing experience in Teams and how to share links to specific users  |[Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)  |
-|Learn which clients are currently supported for Whiteboard  |[Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)       |
+|Find where your Whiteboard content and data are stored in Azure and OneDrive for Business in US Government GCC High environments  |[Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)  |
+|Learn about the sharing experience in Teams and how to share links to specific users in US Government GCC High environments  |[Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)  |
+|Learn which clients are currently supported for Whiteboard in US Government GCC High environments  |[Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)       |
 
 ## Whiteboard PowerShell
 
