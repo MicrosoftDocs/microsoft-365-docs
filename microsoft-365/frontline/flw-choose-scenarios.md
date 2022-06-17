@@ -23,7 +23,7 @@ appliesto:
 
 Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. There are several solution areas that can help you achieve these goals. Think of Microsoft 365's foundational security and device management capabilities as setting a secure baseline, above which you can build scenarios that enable, empower, and transform your frontline business. You can use the capabilities included with Microsoft 365 for frontline workers, from Microsoft Teams, to SharePoint, Viva Connections, Yammer, and the Power Platform, or add in solutions from our partners in the digital ecosystem to connect with existing systems or create custom solutions for your business.
 
-:::image type="content" source="media/flw-digital-maturity-model.jpg" alt-text="Digital maturity model for frontline, from enable to empower to transform.":::
+:::image type="content" source="media/flw-maturity-model.png" alt-text="Digital maturity model for frontline, from enable to empower to transform.":::
 
 Use these scenario overviews to start envisioning what your organization can do with Microsoft 365 for frontline workers, then follow the links to find out how to implement these scenarios.
 
@@ -53,6 +53,8 @@ More information: [Virtual appointments with Microsoft Teams and the Bookings ap
 | Engage your employees | | Microsoft Teams <br>SharePoint <br>Viva Connections <br> Yammer| Praise |
 | Focus on employee wellbeing | | Microsoft Teams <br>SharePoint <br>Viva Connections <br>Viva Insights| Praise |
 
+Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), Praise, targeted communications (Viva Connections), video broadcasts with Stream or Teams.
+
 ## Schedule management solution area
 
 :::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png"::: 
@@ -79,9 +81,30 @@ More information: [Virtual appointments with Microsoft Teams and the Bookings ap
 | [Simplify business processes](retail-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
 | Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | | |
 
-## Find more scenarios and solutions in the digital ecosystem
+## More scenarios and solutions with the digital ecosystem
 
-All of the scenarios above can be achieved with out of the box capabilities from Microsoft. But you can extend even further with apps and solutions from our partners and solution providers.
+All of the scenarios above can be achieved with out of the box capabilities from Microsoft. But you can extend even further with third-party apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?search=frontline&page=1) and custom apps that you or our partners build for you with Power Platform, Teams, and Viva extensibility.
 
-- [Apps for frontline](https://appsource.microsoft.com/marketplace/apps?search=frontline&page=1)
-- [Consultants for frontline](https://appsource.microsoft.com/marketplace/consulting-services?page=1&search=frontline)
+Learn more about third-party apps in Teams at [Overview of third-party apps in Microsoft Teams](/microsoftteams/overview-third-party-apps).
+
+### Power Platform integration
+
+Quickly build custom apps and digital tools for Microsoft Teams, with little or no development experience using the [Power Platform](/power-platform/).
+
+- **[Power Apps](/power-apps/teams/create-apps-overview):** Create custom apps to digitize processes and improve efficiency.
+- **[Power Automate](/power-automate/teams/teams-app-create):** Automate repetitive tasks and connect data to improve agility and productivity.
+- **[Power Virtual Agents](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams):** Build low-code chatbots to provide conversational, AI-driven insights and information.
+- **[Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams):** Discuss and visualize data to align teams and confidently make data-driven decisions.
+
+### Custom apps built on the Teams platform
+
+With code from scratch or leveraging templated and sample code, you can build custom apps on the [Teams platform](/microsoftteams/platform/).
+
+- **Developer tools:** Enjoy frictionless app development with our set of Microsoft Teams toolkits.
+- **Extensibility points:** Expand the reach of your app with tabs, bots, and messaging extensions.
+- **UI Elements:** Create rich experiences with adaptive cards, task modules, and notifications.
+- **APIs:** Use the Microsoft Graph to enhance apps inside and outside of Teams.
+
+### Viva platform extensibility
+
+Developers can [extend Microsoft Viva Connections](/sharepoint/dev/spfx/viva/overview-viva-connections) for building engaging experiences with the widely adopted [SharePoint Framework (SPFx)](/sharepoint/dev/spfx/build-for-teams-overview). Viva Connections is your gateway to a modern employee experience where you can build and integrate apps that shape culture and foster connections to help employees thrive. With SPFx, you have multiple ways to extend – using the same out-of-the-box or custom SPFx web parts, SPFx extensions (e.g. header, footer), and specific components for optimized mobile experiences.
