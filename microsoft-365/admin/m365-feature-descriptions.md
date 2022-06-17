@@ -204,7 +204,7 @@ With every Microsoft 365 and Office 365 subscription for enterprise, business, f
 
 <sup>1</sup> Business plans include business hours support for all non-critical issues and 24/7 phone support from Microsoft.<br/>
 <sup>2</sup> Enterprise plans include 24/7 phone support from Microsoft for all issues.<br/>
-<sup>3</sup> For descriptions of the elevated support options, see [Additional support options](support.md#additional-support-options).<br/>
+<sup>3</sup> For descriptions of the elevated support options, see [Additional support options](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-office-365-general-information?tabs=Support).<br/>
 <sup>4</sup> Calls and service requests are handled 24 hours a day, seven days a week in most countries and regions.
 
 **Support for standalone plans:** Support for paid standalone plans is handled with the same level of support and response time objectives as plans in the Enterprise service family. For a list of standalone plans, see [Standalone services](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#standalone-services).
