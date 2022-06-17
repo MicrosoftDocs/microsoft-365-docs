@@ -29,40 +29,24 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 ## Communication solution area
 
-Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
+:::image type="icon" source="https://docs.microsoft.com/office/icons/conversation-chat-teams.png"::: Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| Team communication and collaboration | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie |
-| Corporate communications | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer. Bring it all together with Viva Connections. | Microsoft Teams<br> SharePoint <br> Yammer <br>Viva Connections | Meet |
-
-### Team communication and collaboration
-
-Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to.
-
-**Key apps:** Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie
-
-**Services:** Viva Connections, SharePoint, Power Platform and Power Apps
-
-More information: [Retail team collaboration](retail-team-collaboration.md)
-
-### Corporate communications
-
-Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer, Stream, and Viva Connections.
-
-**Additional services:** Viva Connections, SharePoint, Stream, Yammer
-
-More information: [Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)
+| [Team communication and collaboration](retail-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie |
+| [Corporate communications](/sharepoint/corporate-communications-overview) | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Stream, and Yammer. Bring it all together with Viva Connections. | Microsoft Teams<br> SharePoint <br> Yammer <br>Viva Connections | Meet |
 
 Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
 
 ## Virtual appointments
 
-Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+:::image type="icon" source="https://docs.microsoft.com/office/icons/user-monitor.png"::: Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
 More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
 
 ## Wellbeing & engagement solution area
+
+:::image type="icon" source="https://docs.microsoft.com/office/icons/heart-teams.png":::
 
 | Scenario | Description | Apps |
 | --- | --- | --- |
@@ -70,7 +54,12 @@ More information: [Virtual appointments with Microsoft Teams and the Bookings ap
 
 ## Schedule management solution area
 
-### Training & onboarding solution area
+:::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png"::: 
+
+## Training & onboarding solution area
+
+:::image type="icon" source="https://docs.microsoft.com/office/icons/files-teams.png":::
+
 
 ### Onboarding new employees
 
@@ -87,6 +76,8 @@ More information: [Onboard new employees](/sharepoint/onboard-employees)
 | | | Viva Connections <br>Viva Learning <br>SharePoint Syntex |
 
 ## Digitized processes solution area
+
+:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |

@@ -42,28 +42,28 @@ The following image shows the employee experiences that are key to frontline wor
 
 Enrich your communications and employee experiences with Microsoft 365 for frontline workers. Using Microsoft Teams, SharePoint, Viva Connections, and Viva Learning, you can connect employees with the tools, people, and devices they need to do their best work and build skills faster. For example:
 
-| Solution area | Description |
-| --- | --- |
-| [Communication](flw-choose-scenarios.md#communication-scenarios) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
-| [Wellbeing & engagement](flw-choose-scenarios.md#wellbeing--engagement-scenarios) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
-| [Training & onboarding](flw-choose-scenarios.md#training--onboarding-scenarios) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
+| Icon | Solution area | Description |
+| --- | --- | --- |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/conversation-chat-teams.png"::: | [Communication](flw-choose-scenarios.md#communication-scenarios) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/heart-teams.png"::: | [Wellbeing & engagement](flw-choose-scenarios.md#wellbeing--engagement-scenarios) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/files-teams.png"::: | [Training & onboarding](flw-choose-scenarios.md#training--onboarding-scenarios) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
 
 ## Enhance workforce management
 
 Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), the schedule management tool in Teams that keeps your frontline workforce connected and in sync. [Shifts connectors](shifts-connectors.md) enable you to integrate Shifts with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
-| Solution area | Description |
-| --- | --- |
-| [Schedule management](flw-choose-scenarios.md#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
+| Icon | Solution area | Description |
+| --- | --- | --- |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png":::  | [Schedule management](flw-choose-scenarios.md#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
 
 ## Increase operations efficiency
 
 Microsoft 365 includes apps liked Lists, Tasks, and Approvals, that can help you streamline operations and bring them from paper-based to digitally-tracked processes. You can enhance these by adding workflow automation, custom apps, and business data tracking with Power Automate, Power Apps, and Power BI from the Power Platform. Extend even further with solutions provided by our partners in the digital ecosystem.
 
-| Solution area | Description |
-| --- | --- |
-| [Digitize your business processes](flw-choose-scenarios.md#digitized-processes) | Drive operational efficiency by digitizing paper-based processes, and automating routine, repetitive steps. |
-| [Digital ecosystem](flw-choose-scenarios.md#digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
+| Icon | Solution area | Description |
+| --- | --- | --- |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::| [Digitize your business processes](flw-choose-scenarios.md#digitized-processes) | Drive operational efficiency by digitizing paper-based processes, and automating routine, repetitive steps. |
+|:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::| [Digital ecosystem](flw-choose-scenarios.md#digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
 
 ## Safeguard your business
 
