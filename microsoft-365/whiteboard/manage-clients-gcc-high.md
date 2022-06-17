@@ -18,6 +18,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Manage clients for Microsoft Whiteboard in GCC High environments
 
+>[!NOTE]
+> This guidance applies to US Government Community Cloud (GCC) High environments.
+
 Whiteboard clients are currently being updated to support One Drive for Business.
 
 ## Clients supported

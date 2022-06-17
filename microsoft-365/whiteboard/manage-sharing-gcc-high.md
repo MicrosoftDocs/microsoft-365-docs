@@ -18,6 +18,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Manage sharing for Microsoft Whiteboard in GCC High environments
 
+>[!NOTE]
+> This guidance applies to US Government Community Cloud (GCC) High environments.
+
 The sharing experience differs based on the device and client being used. 
 
 ## Share in Teams meetings
