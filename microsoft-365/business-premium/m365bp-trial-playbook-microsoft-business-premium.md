@@ -18,7 +18,7 @@ description: "Make the most of your Microsoft 365 Business Premium trial. Try ou
 
 # Trial playbook: Microsoft Business Premium
 
-Welcome to the Microsoft Business Premium trial playbook. This playbook will help you make the most of your 30-day free trial by teaching you how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with Defender for Business. Using Microsoft recommendations, learn how Defender can help you define protection policies, analyze threats to your organization, and enable you to respond to cyberattacks.
+Welcome to the Microsoft Business Premium trial playbook. This playbook will help you make the most of your 30-day free trial by experiencing how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Using Microsoft recommendations, learn how you can set up your threat protection features, analyze detected threats, and respond to cyberattacks.
 
 ## Set up the Microsoft 365 Business Premium trial
 
@@ -31,29 +31,29 @@ First, [set up your trial](../business-premium/m365bp-setup.md)!
 
 After you've initiated the trial and completed the setup process, it may take up to two hours for changes to take effect.
 
-We have automatically configured [Preset security policies](/security/office-365-security/preset-security-policies.md) in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
+Microsoft 365 Business Premium includes [Preset security policies](/security/office-365-security/preset-security-policies.md) that you can use in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
-- Safe Links, Safe Attachments and Anti-Phishing policies that are scoped to the entire tenant or subset of users you may have chosen during the trial setup process.
+- [Safe Links](../security/office-365-security/safe-links.md), [Safe Attachments](../security/office-365-security/safe-attachments.md) and [Anti-Phishing](../security/office-365-security/anti-phishing-protection.md) policies that are scoped to the entire tenant or the subset of users you may have chosen during the trial setup process. (Your trial subscription is for up to 25 users.)
 
-- Protection to all of the Microsoft 365 Business Premium features such as: SharePoint, OneDrive, Office apps, and Microsoft Teams.
+- Protection for productivity apps, such as [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Office apps](/deployoffice/about-microsoft-365-apps), and [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## Add a domain
 
-When you purchase the Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
+When you try or buy Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the sign-up process.
 
 > [!Note]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. From the admin center menu, choose **Setup** to start the wizard.
 
-2. Select **Set up email with a custom domain** and then, **Use a domain you already own** such as contoso.com.
+2. Select **Set up email with a custom domain** and then, **Use a domain you already own** such as `contoso.com`.
 
 3. Follow the rest of the steps in the wizard to complete the process.
 
    > [!Important]
-   > If you purchased a domain during the sign-up, you will not see the Add a domain step here. Go to Add users instead.
+   > If you purchased a domain during the sign-up, you will not see the **Add a domain** step here. Go to **Add users** instead.
 
-4. Follow the steps in the wizard to Create DNS records at any DNS hosting provider for Office 365 that verifies you own the domain. If you know your domain host, see Add a domain to Microsoft 365.
+4. Follow the steps in the wizard to [create DNS records at any DNS hosting provider for Office 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 5. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
