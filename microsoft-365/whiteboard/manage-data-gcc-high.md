@@ -24,7 +24,9 @@ You can manage Whiteboard data using existing OneDrive for Business controls. Fo
 
 You can use existing OneDrive for Business tooling to satisfy data subject requests (DSRs) for General Data Protection Regulation (GDPR). Whiteboard files can be moved in the same way as other content in OneDrive for Business. However, share links and permissions might not move.
 
-Data controls supported today:
+## Data controls supported
+
+The following data controls are currently supported in Whiteboard:
 
 - Retention policies
 - Quota
@@ -32,7 +34,9 @@ Data controls supported today:
 - eDiscovery
 - Legal hold
 
-Data controls planned for future releases:
+## Data controls planned
+
+The following data controls are planned for future releases of Whiteboard:
 
 - Sensitivity labels
 - Auditing
