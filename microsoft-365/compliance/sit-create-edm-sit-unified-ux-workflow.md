@@ -19,8 +19,6 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 ---
 
-display an error for invalidly formatted data (including mismatched fields across rows).
-
 # Create exact data match sensitive information type workflow new experience
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
@@ -31,7 +29,7 @@ Creating and making an exact data match (EDM) based sensitive information type (
 
 - New experience
 
-If you want to create an EDM SIT using the classic experience see, [Create EDM SIT classic experience](sit-create-edm-sit-classic-ux.md).
+If you want to create an EDM SIT using the classic experience see, [Create EDM SIT classic experience](sit-create-edm-sit-classic-ux-workflow.md).
 
 ## Before you begin
 

@@ -29,7 +29,7 @@ You can create the EDM schema and sensitive information type (or rule package) u
 
 - New experience
 
-If you want to create an EDM SIT using the classic experience see, [Create EDM SIT classic experience](sit-create-edm-sit-classic-ux.md).
+If you want to create an EDM SIT using the classic experience see, [Create EDM SIT classic experience workflow](sit-create-edm-sit-classic-ux-workflow.md).
 
 ## Before you begin
 
