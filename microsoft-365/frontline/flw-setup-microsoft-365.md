@@ -34,8 +34,7 @@ The following table lists the scenarios for your frontline workers. You can read
 | [Team communication and collaboration](retail-team-collaboration.md) | [Microsoft Teams](#set-up-microsoft-teams) <br>[Email with Exchange Online](#set-up-email-with-exchange-online) |
 | Corporate communications | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Virtual appointments](bookings-virtual-visits.md) | Microsoft Teams |
-| Engage your employees | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) |
-| Focus on employee wellbeing |  [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Insights](#set-up-viva-insights) |
+| Engage your employees and focus on employee wellbeing| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Insights](#set-up-viva-insights) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | [Microsoft Teams](#set-up-microsoft-teams) |
 | Onboard new employees| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
 | Ongoing training | [Microsoft Teams](#set-up-microsoft-teams) <br>[Viva Learning](#set-up-viva-learning) |
