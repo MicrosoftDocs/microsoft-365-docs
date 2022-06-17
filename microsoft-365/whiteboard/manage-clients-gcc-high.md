@@ -20,13 +20,17 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 Whiteboard clients are currently being updated to support One Drive for Business.
 
-Clients supported today:
+## Clients supported
+
+The following clients are currently supported in Whiteboard:
 
 - Standalone Whiteboard web application at [https://whiteboard.office365.us](https://whiteboard.office365.us)
 - Microsoft Teams meetings, chats, and channels using Teams desktop and web
 - Standalone Whiteboard application for mobile
 
-Clients planned for future releases:
+## Clients planned
+
+The following clients are planned for future releases of Whiteboard:
 
 - Standalone Whiteboard application for Windows 10 or later versions
 - Standalone Whiteboard application for Surface Hub (currently can be used in anonymous mode)
