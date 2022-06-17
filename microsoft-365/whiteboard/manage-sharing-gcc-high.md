@@ -45,7 +45,7 @@ When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will c
 
 ## Create and share in Whiteboard native clients
 
-When you share a whiteboard from the web, desktop, or mobile clients, you can choose specific people or create a sharing link that’s accessible by anyone in the organization. 
+When you share a whiteboard from the web, desktop, or mobile clients, you can choose specific people. You can also create a sharing link that’s accessible by anyone in the organization. 
 
 >[!NOTE]
 > External sharing during a Teams meeting is not yet available, but will be added in a future release.

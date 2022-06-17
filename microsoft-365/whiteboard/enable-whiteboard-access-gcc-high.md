@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
-description: Learn how to enable, disable, and manage Whiteboard data
+description: Learn how to enable, disable, and manage Whiteboard data.
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---
