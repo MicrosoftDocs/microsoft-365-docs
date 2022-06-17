@@ -144,7 +144,7 @@ All schemas that are created using the classic experience or uploaded as a XML f
 
 or
 
-- [Create exact data match sensitive information type classic experience](sit-create-edm-sit-classic-ux-workflow.md#create-exact-data-match-sensitive-information-type-classic-experience)
+- [Create exact data match sensitive information type classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
 ## See also
 
