@@ -61,7 +61,7 @@ Before you migrate mailboxes to Microsoft 365 by using a staged migration, there
 
 - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
 
-- Use the [Microsoft Remote Connectivity Analyzer](https://https://testconnectivity.microsoft.com/) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
+- Use the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
 
 - Run the following commands in Exchange Online PowerShell:
 

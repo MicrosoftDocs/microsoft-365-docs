@@ -389,3 +389,7 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+
+If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view a created admin submission from a user reported message.":::
