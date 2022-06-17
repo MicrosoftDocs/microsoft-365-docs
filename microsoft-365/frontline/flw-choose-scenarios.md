@@ -27,7 +27,7 @@ Microsoft 365 for frontline workers can help you connect and engage your workfor
 
 Use these scenario overviews to start envisioning what your organization can do with Microsoft 365 for frontline workers, then follow the links to find out how to implement these scenarios.
 
-## Communication solution area
+## Communications
 
 :::image type="icon" source="https://docs.microsoft.com/office/icons/chat-room-conversation-teams.png"::: Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
 
@@ -44,35 +44,34 @@ Also see these resources to learn how Yammer can work for your frontline workers
 
 More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
 
-## Wellbeing & engagement solution area
+## Wellbeing & engagement
 
-:::image type="icon" source="https://docs.microsoft.com/office/icons/heart-teams.png":::
+:::image type="icon" source="https://docs.microsoft.com/office/icons/heart-teams.png"::: Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| Engage your employees | | Microsoft Teams <br>SharePoint <br>Viva Connections <br> Yammer| Praise |
-| Focus on employee wellbeing | | Microsoft Teams <br>SharePoint <br>Viva Connections <br>Viva Insights| Praise |
+| Engage your employees and focus on employee wellbeing | Build deeper connections across your organization and create an inclusive workplace. | Microsoft Teams <br>SharePoint <br> Microsoft Stream <br>Viva Connections <br>Viva Insights <br> Yammer| Praise |
 
 Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), Praise, targeted communications (Viva Connections), video broadcasts with Stream or Teams.
 
-## Schedule management solution area
+## Schedule management
 
-:::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png"::: 
+:::image type="icon" source="https://docs.microsoft.com/office/icons/calendar-teams.png"::: Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | | Microsoft Teams | Shifts |
+| [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | Use Shifts and Shifts Connectors to schedule your team and connect with your workforce management tools. | Microsoft Teams | Shifts |
 
-## Training & onboarding solution area
+## Training & onboarding
 
-:::image type="icon" source="https://docs.microsoft.com/office/icons/files-teams.png":::
+:::image type="icon" source="https://docs.microsoft.com/office/icons/files-teams.png"::: Promote continual growth for your employees and encourage knowledge sharing and exchange.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
 | [Onboard new employees](/sharepoint/onboard-employees) | Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Lists <br>Live meetings |
-| Ongoing training | Description TBD | SharePoint <br> Viva Learning <br> Viva Connections | |
+| Ongoing training | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections | |
 
-## Digitized processes solution area
+## Digitized processes
 
 :::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::
 
