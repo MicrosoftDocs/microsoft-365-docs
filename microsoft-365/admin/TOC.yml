@@ -421,8 +421,10 @@
           href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a Teams meeting with guest users
           href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
+    - name: Microsoft 365 feature descriptions
+      href: microsoft-365/admin/m365-feature-descriptions.md
     - name: Troubleshoot
-      href: /office/troubleshoot/
+      href: /office/troubleshoot/  
     - name: Contact support
       href: get-help-support.md
     - name: Navigation guide
