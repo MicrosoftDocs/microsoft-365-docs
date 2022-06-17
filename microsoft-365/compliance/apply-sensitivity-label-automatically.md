@@ -366,7 +366,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
         
         For **Assign a Rights Management owner**, specify a single user by an email address that's owned by your organization. Don't specify a mail contact, a shared mailbox, or any group type, because these aren't supported for this role.
 
-10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. By default, the policy is automatically turned on if it's not edited for 7 days. Decide whether to keep this default setting, or turn it off.
+10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Then decide whether to automatically turned on the policy if it's not edited for 7 days.
     
     ![Test out the configured auto-labeling policy.](../media/simulation-mode-auto-labeling-wizard.png)
     

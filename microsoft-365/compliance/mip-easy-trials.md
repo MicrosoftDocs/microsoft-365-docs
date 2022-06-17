@@ -128,6 +128,9 @@ If you want to edit the client-side auto-labeling configuration, see [How to con
 
 Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates policies that run in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. In simulation mode, items aren't actually labeled until the policy is turned on. You can manually turn on the policy, or unless you change the default setting, the policy will be automatically turned on for you if there aren't any changes to the policy within a set number of days from when the simulation completes.
 
+> [!NOTE]
+> Automatically turning on auto-labeling policies is a new feature that's gradually rolling out. You might not see it immediately, or for all policies.
+
 In most cases, the number of days before an unedited policy is automatically turned on is 7. However, specific to new customers from June 22, 2022, the initial number of days is 25, and then 7 after the policy is edited.
 
 Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
