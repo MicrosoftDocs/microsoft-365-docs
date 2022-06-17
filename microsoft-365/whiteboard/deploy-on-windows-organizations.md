@@ -29,9 +29,9 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 ## Install Whiteboard using Microsoft Intune
 
-1. Add Whiteboard as an available app using the steps in this article: [Add Microsoft Store apps to Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/apps/store-apps-windows).
+1. Add Whiteboard as an available app using the steps in this article: [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-windows).
 
-2. Assign the app to a group using the steps in this article: [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/apps/apps-deploy).
+2. Assign the app to a group using the steps in this article: [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
 
 ## Install Whiteboard using Microsoft Configuration Manager
 
@@ -59,7 +59,7 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 12. As soon as you've downloaded the app, you can deploy it through Configuration Manager. To create an update package, follow steps 7–10 to download a newer version and package it for Configuration Manager.
 
-13. For more information, see [Install applications for a device](https://docs.microsoft.com/en-us/mem/configmgr/apps/deploy-use/install-app-for-device).
+13. For more information, see [Install applications for a device](/mem/configmgr/apps/deploy-use/install-app-for-device).
 
 ## See also
 

@@ -36,7 +36,7 @@ The following URLs are required:
 
 You can control access to Whiteboard in the following ways:
 
-- Enable or disable Whiteboard for your entire tenant using the [SharePoint Online PowerShell module](https://docs.microsoft.com/en-us/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell?view=o365-worldwide).
+- Enable or disable Whiteboard for your entire tenant using the [SharePoint Online PowerShell module](/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell).
 
 - Show or hide Whiteboard for specific users in meetings using a Teams meeting policy. It will still be visible via the web, native clients, and the Teams tab app.
 
@@ -49,9 +49,9 @@ You can control access to Whiteboard in the following ways:
 
 To enable or disable Whiteboard for your tenant, do the following steps: 
 
-1. Use the [SharePoint Online PowerShell module](https://docs.microsoft.com/en-us/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell?view=o365-worldwide) to enable or disable all Fluid Experiences across your Microsoft 365 tenant.
+1. Use the [SharePoint Online PowerShell module](/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell) to enable or disable all Fluid Experiences across your Microsoft 365 tenant.
 
-2. Connect to [SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+2. Connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 3. Enable Fluid using the following <code>Set-SPOTenant</code> cmdlet:
 
@@ -64,7 +64,7 @@ The change should take approximately 60 minutes to apply across your tenancy. If
 
 ## Show or hide Whiteboard
 
-To show or hide Whiteboard in meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing).
+To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing).
 
 ## See also
 

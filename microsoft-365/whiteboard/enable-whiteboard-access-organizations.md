@@ -19,7 +19,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Enable and manage access to Microsoft Whiteboard for your organization
 
 >[!NOTE]
-> This article applies to Enterprise or Education organizations who use Whiteboard. For US Government Community Cloud (GCC) environments, see [Enable Whiteboard on OneDrive for Business](https://support.microsoft.com/office/enable-microsoft-whiteboard-on-onedrive-for-business-2fae9707-0c9b-42f8-a85f-9628b698ac82). For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
+> This article applies to Enterprise or Education organizations who use Whiteboard. For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
 
 Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Today, Whiteboard runs on Azure for Enterprise and Education customers. Whiteboard is transitioning to be run on top of OneDrive for Business. This transition will bring many new capabilities and allow you to create, share, discover, and manage whiteboards as easily as any Office document.
 
@@ -31,7 +31,7 @@ The following admin settings are required for Whiteboard:
 
 - Whiteboard must be enabled globally in the Microsoft 365 admin center.
 
-- The <code>Set-SPOTenant -IsWBFluidEnabled</code> cmdlet must be enabled using [SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+- The <code>Set-SPOTenant -IsWBFluidEnabled</code> cmdlet must be enabled using [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 >[!NOTE]
 > The roll out of OneDrive for Business storage is in progress. When you go to the Microsoft 365 admin center, the option to opt in or out of OneDrive for Business storage is disabled if your tenant already has been transitioned to OneDrive for Business.
@@ -61,7 +61,7 @@ To enable or disable Whiteboard for your tenant, do the following steps:
 
 5. Select **Save**.
 
-6. Connect to [SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+6. Connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 7. Enable Fluid using the following <code>Set-SPOTenant</code> cmdlet:
 
@@ -69,11 +69,11 @@ To enable or disable Whiteboard for your tenant, do the following steps:
  
 ## Show or hide Whiteboard
 
-To show or hide Whiteboard in meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing). 
+To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing). 
 
 ## Prevent access to Whiteboard
 
-To prevent access to Whiteboard for specific users, see [Building a Conditional Access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies).
+To prevent access to Whiteboard for specific users, see [Building a Conditional Access policy](/azure/active-directory/conditional-access/concept-conditional-access-policies).
 
 ## See also
 
