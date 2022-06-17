@@ -31,7 +31,6 @@ The resources in this section help you learn more about what Microsoft Whiteboar
 |Watch videos to explore helpful tips|[Microsoft Whiteboard YouTube channel](https://www.youtube.com/c/MicrosoftWhiteboard/videos/Microsoft%20Whiteboard)|
 |Find Microsoft Whiteboard guidance for end users|[Microsoft Whiteboard help](https://support.microsoft.com/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
 
-
 ## Setup and management
 
 The resources in this section help the admin in your organization to set up and configure Microsoft Whiteboard in your Microsoft 365 environment.
