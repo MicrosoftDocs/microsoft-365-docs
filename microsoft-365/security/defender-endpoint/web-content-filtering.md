@@ -58,6 +58,17 @@ Before trying out this feature, make sure you meet the requirements described in
 
 Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third parties, including our data providers.
 
+## Precedence for multiple active policies
+
+Applying multiple different web content filtering policies to the same device will result in the more restrictive policy applying for each category. Consider the following scenario:
+
+- **Policy 1** blocks categories 1 and 2 and audits the rest
+- **Policy 2** blocks categories 3 and 4 and audits the rest
+
+The result is that categories 1-4 are all blocked.  This is illustrated in the following image.
+
+:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Illustrates precedence of web content filtering policy block mode over audit mode":::
+
 ## Turn on web content filtering
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
