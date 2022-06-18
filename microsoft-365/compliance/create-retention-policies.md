@@ -157,15 +157,11 @@ For more information about how retention policies work for Yammer, see [Learn ab
 
 #### Additional retention policies needed to support Yammer
 
-Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Groups** location. 
+Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Groups** location.
 
-To retain and delete files that are stored in Yammer, you need a retention policy that includes the **Microsoft 365 Groups** location or **OneDrive accounts** locations:
+This location will also include files that are uploaded to Yammer communities. These files are stored in the group-connected SharePoint site for the Yammer community.
 
-- Files that are shared in private messages are stored in the OneDrive account of the user who shared the file. 
-
-- Files that are uploaded to communities are stored in the group-connected SharePoint site for the Yammer community.
-
-It's possible that a retention policy that's applied to SharePoint sites or OneDrive accounts could delete a file that's referenced in a Yammer message before those messages get deleted. In this scenario, the file still displays in the Yammer message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
+It's possible that a retention policy that's applied to SharePoint sites could delete a file that's referenced in a Yammer message before those messages get deleted. In this scenario, the file still displays in the Yammer message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint.
 
 ### Retention policy for locations other than Teams and Yammer
 
@@ -209,7 +205,7 @@ When you create and submit a retention policy, it can take up to seven days for 
 
 First, the retention policy needs to be distributed to the locations that you selected, and then applied to content. You can always check the distribution status of the retention policy by selecting it from the **Retention policies** page in the Microsoft Purview compliance portal. From the flyout pane, if you see **(Error)** included in the status, and in the details for the locations see a message that it's taking longer than expected to deploy the policy or to try redeploying the policy, try running the [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) or [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run one of the following commands:
     
