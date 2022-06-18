@@ -124,5 +124,5 @@ The first release of Graph APIs for records management support the management of
     
     They then use the Graph APIs for records management to create an event for the associated event type. The retention period for the confidential documents starts after this event is created.
 
-For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta).
+For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
