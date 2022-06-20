@@ -86,6 +86,10 @@ Microsoft Search helps your organization find what they need to complete what th
 
 The [Microsoft Search setup guide](https://aka.ms/MicrosoftSearchSetup) helps you configure Microsoft Search whether you want to pilot it to a group of users or roll it out to everyone in your org. You'll assign Search admins and Search editors and then customize the search experience for your users with answers and more options, like adding the Bing extension to Chrome or setting Bing as your default search engine.
 
+### Block use of Internet Explorer in your organization
+
+Microsoft support for Internet Explorer 11 is ending soon for most versions of Windows 10. The [Block use of Internet Explorer in your organization guide](https://aka.ms/retireinternetexplorer) ensures that your users can still run legacy web apps that rely on Internet Explorer. This guide also helps you move those users to Microsoft Edge with IE mode.
+
 ## Guides for authentication and access
 
 ### Configure multi-factor authentication (MFA)
