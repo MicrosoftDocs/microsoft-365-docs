@@ -46,7 +46,7 @@ Use the following resources to learn more:
 
 - If you're not a Microsoft MSP, [learn more about the program](https://partner.microsoft.com/solutions/managed-services).
 - If you're a Microsoft cloud solution provider (CSP), see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md). 
-- To learn more about Microsoft partner programs and options, visit the [Microsoft Partner Network](https://partner.microsoft.com).
+- To learn more about all Microsoft partner programs and options, visit the [Microsoft Partner Network](https://partner.microsoft.com).
 
 ## See also
 
