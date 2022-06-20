@@ -108,16 +108,16 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 
 **GPO Method**
 
-- Open Group Policy Management Editor > **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
-- Select **Turn Off Microsoft Defender Antivirus**.
-- Set the GPO to **Enabled**.
+1. Open Group Policy Management Editor > **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
 
-You can view the Protection status in PowerShell with the command "Get-MpComputerStatus" and the key "AMRunningMode".
+2. Select **Turn Off Microsoft Defender Antivirus**.
 
-## SYNTAX
+3.  Set the GPO to **Enabled**.
+
+You can view your protection status in PowerShell by using the command `Get-MpComputerStatus` and the key `AMRunningMode`. Here's an example of what the output looks like:
 
 ```
-PS C:\Users\tommaso> Get-MpComputerStatus
+PS C:\Users\contoso> Get-MpComputerStatus
 
 
 AMEngineVersion                  : 0.0.0.0
@@ -181,7 +181,7 @@ TroubleShootingStartTime         :
 PSComputerName                   :
 ```
 
-In the following example, the Defender status is **Not Running**.
+In the preceding example, the Defender status is **Not Running**.
 
  > [!NOTE]
  > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded with the modern, unified solution described in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
