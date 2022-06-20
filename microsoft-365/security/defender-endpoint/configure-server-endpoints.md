@@ -132,12 +132,9 @@ Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine
 
 ## Integration with Microsoft Defender for Cloud
 
-Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Cloud. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer.
+Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Cloud. You can onboard servers automatically, have servers monitored by Microsoft Defender for Cloud appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer. 
 
-For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
-
-> [!NOTE]
-> For Windows Server 2012 R2 and 2016 running the modern unified solution, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for automated deployment or upgrade is not yet available for all plans. You can manually install the new solution on these machines, or use Microsoft Defender for server P1 to test the new solution. More information at [New Defender for servers plans](/azure/defender-for-cloud/release-notes#new-defender-for-servers-plans).
+For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md). Servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 > [!NOTE]
 > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
