@@ -74,7 +74,7 @@ From here, you'll see cards for the following solutions:
 
 ## Privacy
 
-The **Privacy** section on the home page shows you at a glance how your organization can build a more privacy-resilient workplace. You can generate actionable insights on enterprise personal data to help you spot issues and reduce risks. Also it Provides easy-to-use policy templates that empower employees to safeguard data, and automation features for a smoother subject rights request process.
+The **Privacy** section on the home page shows you at a glance how your organization can build a more privacy-resilient workplace. You can generate actionable insights on enterprise personal data to help you spot issues and reduce risks. Also, it provides easy-to-use policy templates that empower employees to safeguard data and automation features for a smoother subject rights request process.
 
 ![Microsoft Purview solution Privacy section.](../media/m365-solution-catalog-privacy.png)
 
