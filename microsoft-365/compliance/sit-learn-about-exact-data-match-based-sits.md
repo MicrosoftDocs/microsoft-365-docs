@@ -114,7 +114,7 @@ EDM finds matches by comparing content it finds against a table of sensitive dat
 |Auto-labeling (client side)     |- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients         |
 |Customer Managed Key     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients </br>- Devices         |
 |eDiscovery     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients  |
-|Insider Risk Management     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br> - Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients      |
+|Insider Risk Management     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients      |
 
 ## See also
 
