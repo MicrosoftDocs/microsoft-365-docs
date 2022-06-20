@@ -87,7 +87,9 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 
 6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
 
-7. When you're finished, click the **Submit** button.
+7. Add why you are adding allow using the **Optional Note**. 
+
+8. When you're finished, click the **Submit** button.
 
   :::image type="content" source="../../media/submit-email-for-analysis.png" alt-text="Submit email for analysis." lightbox="../../media/submit-email-for-analysis.png":::
 
