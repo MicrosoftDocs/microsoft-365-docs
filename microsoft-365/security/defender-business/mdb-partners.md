@@ -51,4 +51,5 @@ Use the following resources to learn more:
 ## See also
 
 [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)
+
 [Microsoft Partner Network](https://partner.microsoft.com)
