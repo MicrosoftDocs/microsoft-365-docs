@@ -1,17 +1,16 @@
 ---
 title: Device groups in Microsoft Defender for Business
-description: Learn about device groups in Microsoft Defender for Business
+description: Security policies are applied to devices through device groups in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -20,9 +19,6 @@ ms.collection:
 ---
 
 # Device groups in Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 In Microsoft Defender for Business, policies are applied to devices through certain collections that are called device groups. 
 
@@ -33,10 +29,6 @@ In Microsoft Defender for Business, policies are applied to devices through cert
 - [How to view an existing device group](#view-an-existing-device-group)
 - [What the Add All Devices option does](#what-does-the-add-all-devices-option-do)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## What is a device group?
 
@@ -107,7 +99,7 @@ When you are creating or editing a policy, you might see the **Add all devices**
 
 :::image type="content" source="media/add-all-devices-option.png" alt-text="Screenshot of the Add All Devices option.":::
 
-If you select this option, all devices that are enrolled in Microsoft Endpoint Manager (which includes Microsoft Intune) will receive the policy that you are creating or editing by default. 
+If you select this option, all devices that are enrolled in Microsoft Intune will receive the policy that you are creating or editing by default. 
 
 ## Next steps
 

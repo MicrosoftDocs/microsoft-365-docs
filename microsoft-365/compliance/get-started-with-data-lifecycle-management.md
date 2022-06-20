@@ -23,9 +23,9 @@ description: Ready to start governing your organization's data, but not sure whe
 
 # Get started with data lifecycle management
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ready to start governing your organization's data by retaining the content that you need to keep, and deleting the content that you don't? To get started, use the following guidance for Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance):
 
@@ -90,7 +90,7 @@ If you have a scenario that requires data management of individual items, see th
 
 See the following section for information about end-user documentation to support Microsoft 365 retention.
 
-The data lifecycle management capabilities that support mailbox management (archiving, inactive mailboxes, and import) typically don't require end-user documentation.
+The data lifecycle management capabilities for inactive mailboxes and import of PST files don't require end-user documentation because these are admin operations only. To help users understand and interact with their archive mailboxes in Outlook after you've enabled this capability, see [Manage email storage with online archive mailboxes](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### End-user documentation for retention and deletion
 

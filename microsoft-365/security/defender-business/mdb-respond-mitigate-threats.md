@@ -1,13 +1,12 @@
 ---
 title: Respond to and mitigate threats in Microsoft Defender for Business
-description: As threats are detected, you can take actions to respond to and mitigate those threats.
+description: As threats are detected in Defender for Business, you can take actions to respond to those threats. See how to use the device inventory view.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -21,15 +20,8 @@ ms.collection:
 
 # Respond to and mitigate threats in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business.
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## View detected threats
 

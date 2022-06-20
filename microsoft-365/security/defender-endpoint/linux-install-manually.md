@@ -79,8 +79,8 @@ In order to preview new features and provide early feedback, it is recommended t
     |Distro & version|Package|
     |---|---|
     |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
+    <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -318,12 +318,12 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
 ## Client configuration
 
-1. Copy MicrosoftDefenderATPOnboardingLinuxServer.sh to the target device.
+1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.
 
     > [!NOTE]
     > Initially the client device is not associated with an organization and the *orgId* attribute is blank.
@@ -332,10 +332,21 @@ Download the onboarding package from Microsoft 365 Defender portal.
     mdatp health --field org_id
     ```
 
-2. Run MicrosoftDefenderATPOnboardingLinuxServer.sh.
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
+
+    > [!NOTE]
+    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+    
+    If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
     ```bash
-    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
+    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+    ```
+
+    For the rest of distros and versions, you will need to use `python`.
+    
+    ```bash
+    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
     
 3. Verify that the device is now associated with your organization and reports a valid organization identifier:

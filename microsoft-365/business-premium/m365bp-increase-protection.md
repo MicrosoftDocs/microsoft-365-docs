@@ -31,14 +31,14 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This objective includes information about:
 
-- [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration
+- [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration.
 - [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs
-- [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used. 
+- How to [adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used.
 
 ## Review and apply preset security policies
 
-Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security. 
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security.
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
 
@@ -161,7 +161,7 @@ The following image shows some of the default policies that are included with Mi
 
 ### View your alert policies
 
-1. Go to the Microsoft 365 Compliance center at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+1. Go to the Microsoft Purview compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
 2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
@@ -174,12 +174,12 @@ The following image shows some of the default policies that are included with Mi
 
 ### How to view alerts
 
-Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft 365 Compliance center.
+Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft Purview compliance portal.
 
 | Type of alert  | What to do  |
 |---------|---------|
 | Security alert, such as when a user clicks a malicious link, an email is reported as malware or phish, or a device is detected as containing malware     | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>. |
-| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
+| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
 
 For more information, see [View alerts](../compliance/alert-policies.md#view-alerts).
 
@@ -207,4 +207,6 @@ You can prevent people in your organization from sharing their calendars. You ca
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
 
-Okay, now it's time to start your mission to [**set up BYOD devices**](m365bp-devices-overview.md).
+## Next steps
+
+Okay, now let's [**set up those unmanaged BYOD devices**](m365bp-devices-overview.md).

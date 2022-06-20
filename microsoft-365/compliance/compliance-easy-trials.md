@@ -26,7 +26,7 @@ The Microsoft Purview solutions trial is the easiest way to try all the capabili
 
 ## Terms and conditions
 
-See the [terms and conditions](terms-conditions.md) for Microsoft Purview trials.
+See the [terms and conditions](/legal/microsoft-365/microsoft-365-trial) for Microsoft 365 trials.
 
 ## Eligibility
 
@@ -104,7 +104,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
    When the trial ends:
 
   - Your existing policies will stay turned on unless you turn them off.
-  - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
+  - You'll no longer be able to edit or add Teams or Devices locations in existing or new policies.
 
 - **eDiscovery**
 

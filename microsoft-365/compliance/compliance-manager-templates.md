@@ -1,5 +1,5 @@
 ---
-title: "Working with assessment templates in Microsoft Purview Compliance Manager"
+title: "Learn about assessment templates in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -31,13 +31,16 @@ description: "Understand how to use and manage templates for building assessment
 
 ## Templates overview
 
-A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
 
 ## Template versions: Microsoft and universal
 
-We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
+Compliance Manger can be used to assess different types of products. All templates, except the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template, come in two versions:
 
-Compliance Manger can be used to assess different types of products. All templates apart from the baseline come in at least one version that applies to a pre-defined product, such as Microsoft 365, and a universal version that can be tailored to suit other products. Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
+1. A version that applies to a pre-defined product, such as Microsoft 365, and
+2. A universal version that can be tailored to suit other products.
+
+Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
 
 Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
 
