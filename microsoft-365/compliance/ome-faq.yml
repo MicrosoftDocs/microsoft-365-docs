@@ -171,7 +171,7 @@ sections:
       - question: |
           Does the encrypted message portal support preview of encrypted attachments in protected emails?
         answer: |
-          The encrypted message portal support preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, Powerpoint, and PDF files.  
+          The encrypted message portal support preview of any encrypted attachment copies added to the encrypted mail. The support file types include Word, Excel, Powerpoint, and PDF files.  
 
       - question: |
           Can I automatically encrypt messages by setting up policies?
