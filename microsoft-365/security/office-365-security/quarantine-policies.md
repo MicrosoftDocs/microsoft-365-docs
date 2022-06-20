@@ -22,6 +22,12 @@ ms.prod: m365-security
 
 # Quarantine policies
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined.
 
 Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
@@ -49,7 +55,7 @@ The individual quarantine policy permissions that are contained in the preset pe
 The default quarantine policies, their associated permission groups, and whether quarantine notifications are enabled are described in the following table:
 
 |Default quarantine policy|Permission group used|Quarantine notifications enabled?|
-|---|---|---|
+|---|:---:|:---:|
 |AdminOnlyAccessPolicy|No access|No|
 |DefaultFullAccessPolicy|Full access|No|
 |NotificationEnabledPolicy<sup>\*</sup>|Full access|Yes|
@@ -202,6 +208,9 @@ The default quarantine policies, preset permission groups, and permissions are d
 > If you're happy with the default end-user permissions and quarantine notifications that are provided (or not provided) by the default quarantine policies, you don't need to do anything. If you want to add or remove end-user capabilities (the available buttons) for user quarantined messages, or enable quarantine notifications and add or remove the same capabilities in quarantine notifications, you can assign a different quarantine policy to the quarantine action.
 
 ## Assign quarantine policies in supported policies in the Microsoft 365 Defender portal
+
+> [!NOTE]
+> Users can't release their own messages that were quarantined as malware (anti-malware policies) or high confidence phishing (anti-spam policies), regardless of how the quarantine policy is configured. At best, admins can configure the quarantine policy so users can request the release of their quarantined malware or high confidence phishing messages.
 
 ### Anti-spam policies
 
@@ -493,7 +502,7 @@ The global settings for quarantine policies allow you to customize the quarantin
 
        :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="A custom disclaimer at the bottom of a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
-     - The language identifier for the the **Display name** and **Disclaimer** values. Quarantine notifications are already localized based on the recipient's language settings. The **Display name** and **Disclaimer** values are used in quarantine notifications that apply to the recipient's language.
+     - The language identifier for the **Display name** and **Disclaimer** values. Quarantine notifications are already localized based on the recipient's language settings. The **Display name** and **Disclaimer** values are used in quarantine notifications that apply to the recipient's language.
 
        Select the language in the **Choose language** box _before_ you enter values in the **Display name** and **Disclaimer** boxes. When you change the value in the **Choose language** box, the values in the **Display name** and **Disclaimer** boxes are emptied.
 
@@ -675,6 +684,9 @@ If the quarantine policy assigns the **Full access** permissions (all available 
   - **Review**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="The available buttons in the quarantine notification if the quarantine policy gives the user full access permissions" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+
+> [!NOTE]
+> As explained earlier, quarantine notifications are disabled in the default quarantine policy named DefaultFullAccessPolicy, even though that quarantine policy has the **Full access** permission group assigned. Quarantine notifications are available only in custom quarantine policies that you create or in the default quarantine access policy named NotificationEnabledPolicy ([if that policy is available in your organization](#full-access-permissions-and-quarantine-notifications)).
 
 ### Individual permissions
 

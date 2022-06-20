@@ -28,11 +28,11 @@ search.appverid:
 description: "Learn how to enable Microsoft 365 to protect local Active-Directory-joined Windows 10 devices in just a few steps."
 ---
 
-# Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium
+# Manage Windows devices with Microsoft 365 Business Premium
 
-If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
+If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows devices, while still maintaining access to on-premises resources that require local authentication.
 
-To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
+To set this up, implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
 
 > [!NOTE]
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
@@ -47,9 +47,30 @@ This video describes the steps for how to set this up for the most common scenar
 
 - Synchronize users to Azure AD with Azure AD Connect.
 - Complete Azure AD Connect Organizational Unit (OU) sync.
-- Make sure all the domain users you sync have licenses to Microsoft 365 Business Premium.
+- Make sure all the domain users you sync have licenses for Microsoft 365 Business Premium.
 
 See [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md) for the steps.
+
+## Device actions
+  
+![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
+
+Devices and their associated actions can have the following states:
+  
+|**Status**|**Description**|
+|:-----|:-----|
+|Managed by Intune  |Managed by Microsoft 365 Business Premium.  |
+|Retire pending  |Microsoft 365 Business Premium is getting ready to remove company data from the device.  |
+|Retire in progress  |Microsoft 365 Business Premium is currently removing company data from the device.  |
+|Retire failed  | Remove company data action failed.  |
+|Retire canceled  |Retire action was canceled.  |
+|Wipe pending  |Waiting for factory reset to start.  |
+|Wipe in progress  |Factory reset has been issued.  |
+|Wipe failed  |Couldn't do factory reset.  |
+|Wipe canceled  |Factory wipe was canceled.  |
+|Unhealthy  |An action is pending (or in progress), but the device hasn't checked in for 30+ days.  |
+|Delete pending  |Delete action is pending.  |
+|Discovered  |Microsoft 365 Business Premium has detected the device.  |
 
 ## 1. Verify MDM Authority in Intune
 
@@ -64,7 +85,7 @@ Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.c
 
 2. In the **Azure Active Directory admin center**, go to **Azure Active Directory** , choose **Devices** and then **Device settings**.
 
-3. Verify**Users may join devices to Azure AD** is enabled 
+3. Verify **Users may join devices to Azure AD** is enabled 
 
     1. To enable all users, set to **All**.
 
@@ -112,13 +133,13 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 The first command will establish a connection with the Microsoft cloud, and when you are prompted, specify your Microsoft 365 Business Premium global admin credentials.
 
-## 5. Link the Group Policy
+## 5. Link the group policy
 
 1. In the Group Policy Management Console (GPMC), right-click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu.
 
 2. Select the policy created in the above step, then click **OK**.
 
-## Get the latest Administrative Templates
+## Get the latest administrative templates
 
 If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, or later. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
 
@@ -152,6 +173,6 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 
 - [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 
-## Next objective:
+## Next objective
 
 [Prepare for Office client deployment](m365bp-prepare-for-office-client-deployment.md)

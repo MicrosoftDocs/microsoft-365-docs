@@ -1,7 +1,7 @@
 ---
-title: Stream Microsoft 365 Defender events to Azure Event Hub
-description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to your Event Hub.
-keywords: raw data export, streaming API, API, Azure Event Hub, Azure storage, storage account, Advanced Hunting, raw data sharing
+title: Stream Microsoft 365 Defender events to Azure Event Hubs
+description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to your Event Hubs.
+keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -23,33 +23,27 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Before you begin
+## Prerequisites
 
-1. Create an [Event hub](/azure/event-hubs/) in your tenant.
+Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure the following prerequisites are fulfilled:
 
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.
+1. Create an Event Hubs (for information, see [Set up Event Hubs](configure-event-hub.md#set-up-event-hubs)).
 
-3. Create an Event Hub Namespace, go to **Event Hub > Add** and select the pricing tier, throughput units and Auto-Inflate appropriate for expected load. For more information, see [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/).
+2. Creating an Event Hubs Namespace (for information, see [Set up Event Hubs namespace](configure-event-hub.md#set-up-event-hubs-namespace)).
 
-### Add contributor permissions
+3. Add permissions to the entity who has the privileges of a **Contributor** so that this entity can export data to the Event Hubs. For more information on adding permissions, see [Add permissions](configure-event-hub.md#add-permissions)
 
-Once the Event Hub namespace is created you will need to:
-
-1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
-
-2. If you are connecting to an application, add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver (this can also be done at Resource Group or Subscription level).
-
-    Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignments**.
+> [!NOTE]
+> The Streaming API can be integrated either via Event Hubs or Azure Storage Account.
 
 ## Enable raw data streaming
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
+1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Streaming API settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 
@@ -59,11 +53,11 @@ Once the Event Hub namespace is created you will need to:
 
 5. Choose **Forward events to Azure Event Hub**.
 
-6. You can select if you want to export the event data to a single Event Hub, or to export each event table to a different event hub in your Event Hub namespace.
+6. You can select if you want to export the event data to a single Event Hub, or to export each event table to a different Event Hubs in your Event Hubs namespace.
 
 7. To export the event data to a single Event Hub, enter your **Event Hub name** and your **Event Hub resource ID**.
 
-   To get your **Event Hub resource ID**, go to your Azure Event Hub namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
+   To get your **Event Hub resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
@@ -87,9 +81,9 @@ Once the Event Hub namespace is created you will need to:
 }
 ```
 
-- Each Event Hub message in Azure Event Hub contains list of records.
+- Each Event Hubs message in Azure Event Hubs contains list of records.
 
-- Each record contains the event name, the time Microsoft 365 Defender received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
+- Each record contains the event name, the time Microsoft 365 Defender received the event, the tenant it belongs (you'll only get events from your tenant), and the event in JSON format in a property called "**properties**".
 
 - For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 
@@ -97,9 +91,9 @@ Once the Event Hub namespace is created you will need to:
 
 ## Data types mapping
 
-To get the data types for event properties do the following:
+To get the data types for event properties, do the following steps:
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -109,7 +103,7 @@ To get the data types for event properties do the following:
    | project ColumnName, ColumnType
    ```
 
-- Here is an example for Device Info event:
+- Here's an example for Device Info event:
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
@@ -137,5 +131,5 @@ For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs
 - [Microsoft 365 Defender streaming API](streaming-api.md)
 - [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md)
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
-- [Azure Event Hub documentation](/azure/event-hubs/)
-- [Troubleshoot connectivity issues - Azure Event Hub](/azure/event-hubs/troubleshooting-guide)
+- [Azure Event Hubs documentation](/azure/event-hubs/)
+- [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
