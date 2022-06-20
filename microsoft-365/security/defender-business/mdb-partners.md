@@ -21,7 +21,7 @@ ms.collection:
 
 As you already know, most managed service providers (MSPs) offer a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats.
 
-If you're a Microsoft MSP, Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA) software. 
+If you're a Microsoft MSP, Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA) software.
 
 ## Use APIs to integrate with your MSP solution
 
@@ -45,7 +45,7 @@ Use the following resources to learn more:
 ## What if I'm not a Microsoft MSP yet?
 
 - If you're not a Microsoft MSP, [learn more about the program](https://partner.microsoft.com/solutions/managed-services).
-- If you're a Microsoft cloud solution provider (CSP), see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md). 
+- If you're a Microsoft cloud solution provider (CSP), see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md).
 - To learn more about all Microsoft partner programs and options, visit the [Microsoft Partner Network](https://partner.microsoft.com).
 
 ## See also
