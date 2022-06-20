@@ -94,7 +94,7 @@ Signals from Microsoft 365 Defender and investigations by Defender Experts for H
 
 Threat categories help identify and organize security threats into classes to assess and evaluate their impact and develop strategies to prevent or mitigate these threats to your environment. The Threat categories observed section of the report shows a bar chart with significant risks and threats detected in your environment, helping you understand the breadth and scope of your exposure.
 
-Threats are broadly classified into five categories:
+Threats are broadly classified into five categories. Among the various threat categories available, the following are carefully chosen because they are not covered under the purview of MITRE framework:
 
 - Ransomware
 - Malware
