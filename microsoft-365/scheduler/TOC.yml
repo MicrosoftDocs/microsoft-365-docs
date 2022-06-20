@@ -12,5 +12,7 @@
       href: scheduler-using.md
     - name: Scheduling recurring meetings
       href: scheduler-recurring-meetings.md
+    - name: Scheduler for Microsoft 365 Preferences
+      href: scheduler-preferences.md
     - name: Scheduler for Microsoft 365 FAQ
       href: scheduler-faqs.md

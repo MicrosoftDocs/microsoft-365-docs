@@ -115,7 +115,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 - Filter type: Plugin
 - Plugin bundle identifier: `com.microsoft.wdav`
 - Filter data provider bundle identifier: `com.microsoft.wdav.netext`
-- Filter data provider designated requirement: `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+- Filter data provider designated requirement: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 - Filter sockets: `true`
 
 ## Check installation status

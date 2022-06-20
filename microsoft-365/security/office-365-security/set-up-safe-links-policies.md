@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Set up Safe Links policies in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -43,7 +43,7 @@ You can also use the procedures in this article to create Safe Links policies th
 >
 > You configure the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 >
-> Admins should consider the different configuration settings for Safe Links. One of the available options is to include user identifiable information in Safe Links. This feature enables security operations (SecOps)teams to investigate potential user compromise, take corrective action, and limit costly breaches.
+> Admins should consider the different configuration settings for Safe Links. One of the available options is to include user identifiable information in Safe Links. This feature enables security operations (SecOps) teams to investigate potential user compromise, take corrective action, and limit costly breaches.
 
 You can configure Safe Links policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
 
@@ -113,6 +113,16 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
    - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
+   > [!IMPORTANT]
+   > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+   >
+   > - The recipient is: romain@contoso.com
+   > - The recipient is a member of: Executives
+   >
+   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy is not applied to him.
+   >
+   > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy still applies to him.
+
    When you're finished, click **Next**.
 
 5. On the **Protection settings** page that appears, configure the following settings:
@@ -121,6 +131,10 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
        - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message.
      - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients.
    - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
+
+     > [!NOTE]
+     > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
+
    - **Track user clicks**: Leave this option selected to enable the tracking user clicks on URLs in email messages.
    - **Let users click through to the original URL**: Clear this option to block users from clicking through to the original URL in [warning pages](safe-links.md#warning-pages-from-safe-links).
    - **Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.
@@ -296,6 +310,20 @@ This example creates a safe links rule named Contoso All with the following cond
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
+This example creates a safe links rule that's similar to the previous example, but in this example, the rule applies to recipients in all accepted domains in the organization.
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+This example creates a safe links rule that's similar to the previous examples, but in this example, the rule applies to recipients in the domains specified in a .csv file.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs $SLDomains
+```
+
 For detailed syntax and parameter information, see [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
 
 ### Use PowerShell to view safe links policies
@@ -381,6 +409,20 @@ To modify a safe links rule, use this syntax:
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+This example adds all accepted domains in the organization as a condition to the safe links rule named Contoso All.
+
+```powershell
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+This example adds the domains from the specified .csv as a condition to the safe links rule named Contoso All.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs $SLDomains
 ```
 
 For detailed syntax and parameter information, see [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).

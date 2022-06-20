@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: "Learn how to reset password and send a email to a new Microsoft 365 user."
+description: "Resend the notification email to a new user in Microsoft 365 by resetting the user's password if they didn't get the original email with their new password. "
 ---
 
-# Resend a user's password - Admin Help
+# Resend a Microsoft 365 user's password - Admin help
 
 This article explains how to resend the notification email to a new user in Office 365. This can happen when you create a new user and they don't get an email with their new password. You do this by resetting the user's password.
 
@@ -40,7 +40,7 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 
 3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
 
-4. Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.
+4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
 
 ## Related content
 

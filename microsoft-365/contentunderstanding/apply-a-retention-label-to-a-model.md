@@ -23,7 +23,6 @@ description: Learn how to apply a retention label to a model in SharePoint Synte
 
 </br>
 
-
 You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft SharePoint Syntex. You can do this for both document understanding and form processing models.
 
 Retention labels let you apply retention settings to the documents that your models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).

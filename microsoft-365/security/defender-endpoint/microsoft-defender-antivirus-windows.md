@@ -23,7 +23,8 @@ ms.collection:
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender for Endpoint Plans 1 and 2
+- Microsoft Defender for Business
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -89,7 +90,7 @@ You'll see the name of your antivirus/antimalware solution on the settings page.
 It's important to keep Microsoft Defender Antivirus, or any antivirus/antimalware solution, up to date. Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

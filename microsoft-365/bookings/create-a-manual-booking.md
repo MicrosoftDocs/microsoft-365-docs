@@ -13,9 +13,6 @@ description: "Follow these instructions to create an appointment and assign an e
 
 # Create a manual booking
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 Bookings can be scheduled and staffed in two different ways. The first way is by the customer using a standalone booking page or an embedded booking page that you add to your website. The other way is for you or one of your employees to enter the bookings manually, such as when a customer calls for an appointment. This article covers the manual scenario.
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.

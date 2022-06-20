@@ -21,9 +21,9 @@ description: Instructions to create retention labels for exceptions to retention
 
 # Create retention labels for exceptions to your retention policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 As part of your data governance strategy to retain what you need and delete what you don't, you might need to create a few retention labels for items that need exceptions to your retention policies.
 

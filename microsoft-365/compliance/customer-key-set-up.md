@@ -102,7 +102,7 @@ To submit an offer to activate Customer Key, complete these steps:
 
 2. Once you're logged in, select the appropriate domain.
 
-3. For the selected domain, choose **Request services** from the top navigation bar, and review the list of available offers.
+3. For the selected domain, choose **Deploy** from the top navigation bar, and review the list of available offers.
 
 4. Choose the information card for the offer that applies to you:
 
@@ -139,7 +139,7 @@ The temporary or permanent loss of root encryption keys can be disruptive or eve
 
 - For enabling Customer Key for assigning DEP to individual Exchange Online mailboxes, contact [exock@microsoft.com](mailto:exock@microsoft.com).
 
-   - For enabling Customer Key for assigning DEPs to encrypt content across multiple Microsoft 365 workloads (Exchange Online, Teams, Microsoft Purview Information Protection) for all tenant users, contact [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- For enabling Customer Key for assigning DEPs to encrypt SharePoint Online and OneDrive for Business content (including Teams files) for all tenant users, contact [spock@microsoft.com](mailto:spock@microsoft.com).
 
 - For enabling Customer Key for assigning DEPs to encrypt content across multiple Microsoft 365 workloads (Exchange Online, Teams, Microsoft Purview Information Protection) for all tenant users, contact [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 

@@ -29,7 +29,7 @@ ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: "Change your email address to a friendly email address like tom@fourthcoffee.com by buying a domain name and adding it to Microsoft 365."
 ---
 
-# Change your email address to use your custom domain
+# Change your Microsoft 365 email address to use your custom domain
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   

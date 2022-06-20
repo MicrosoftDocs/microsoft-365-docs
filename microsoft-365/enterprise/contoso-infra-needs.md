@@ -89,7 +89,7 @@ Contoso business needs fall into five main categories:
 
   Reduce maintenance and support costs and improve performance for remote access solution by moving commonly accessed resources to the cloud.
 
-- Provide better connectivity and lower overhead for business-to-susiness (B2B) transactions
+- Provide better connectivity and lower overhead for business-to-business (B2B) transactions
 
   Replace an aging and expensive partner extranet with a cloud-based solution that uses federated authentication.
 
