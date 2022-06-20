@@ -144,13 +144,13 @@ The reported message will be marked as a false positive or a false negative. An 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
-## View admin submissions to Microsoft
+## View email admin submissions to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Emails**, **URL**, or **Email attachment** tab is selected.
+2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
      - **Submission name**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Recipient**
@@ -175,7 +175,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/email-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -192,11 +192,104 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/email-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
-     - **Type**
+     - **Reason**
+     - **Status**
+     - **Result**
+     - **Tags**
+
+   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+
+## View email attachment admin submissions to Microsoft
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, verify that the **Email attachments** tab is selected.
+
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+     - **Attachment name**<sup>\*</sup>
+     - **Date submitted**<sup>\*</sup>
+     - **Reason for submitting**<sup>\*</sup>
+     - **Status**<sup>\*</sup>
+     - **Result**<sup>\*</sup>
+     - **Filter verdict**
+     - **Delivery/Block reason**
+     - **Submission ID**
+     - **Object ID**
+     - **Policy action**
+     - **Submitted by**
+     - **Tags**<sup>\*</sup>
+     - **Allow**
+
+     When you're finished, click **Apply**.
+
+     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Customize column options for email attachment admin submissions.":::
+
+   - To filter the entries, click **Filter**. The available filters are:
+     - **Date submitted**: **Start date** and **End date**.
+     - **Submission ID**: A GUID value that's assigned to every submission.
+     - **Attachment filename**
+     - **Submitted by**
+     - **Reason for submitting**
+     - **Status**
+     - **Tags**
+
+     When you're finished, click **Apply**.
+
+     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Filter options for email attachment admin submissions.":::
+
+   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+     - **None**
+     - **Reason**
+     - **Status**
+     - **Result**
+     - **Tags**
+
+   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+
+## View URLs admin submissions to Microsoft
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, verify that the **URLs** tab is selected.
+
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+     - **URL**<sup>\*</sup>
+     - **Date submitted**<sup>\*</sup>
+     - **Reason for submitting**<sup>\*</sup>
+     - **Status**<sup>\*</sup>
+     - **Result**<sup>\*</sup>
+     - **Filter verdict**
+     - **Delivery/Block reason**
+     - **Submission ID**
+     - **Object ID**
+     - **Policy action**
+     - **Submitted by**
+     - **Tags**<sup>\*</sup>
+     - **Allow**
+
+     When you're finished, click **Apply**.
+
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Customize column options for URL admin submissions.":::
+
+   - To filter the entries, click **Filter**. The available filters are:
+     - **Date submitted**: **Start date** and **End date**.
+     - **Submission ID**: A GUID value that's assigned to every submission.
+     - **URL**
+     - **Submitted by**
+     - **Reason for submitting**
+     - **Status**
+     - **Tags**
+
+     When you're finished, click **Apply**.
+
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Filter options for URL admin submissions.":::
+
+   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+     - **None**
      - **Reason**
      - **Status**
      - **Result**
@@ -296,3 +389,7 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+
+If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view a created admin submission from a user reported message.":::
