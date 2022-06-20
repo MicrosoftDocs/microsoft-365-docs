@@ -72,6 +72,12 @@ From here, you'll see cards for the following solutions:
     - [eDiscovery (Standard)](./get-started-core-ediscovery.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests and eDiscovery cases.
     - [eDiscovery (Premium)](overview-ediscovery-20.md): Builds on eDiscovery capabilities by providing intelligent analytics and  machine learning to help you further analyze data that's relevant to discovery requests.
 
+## Privacy
+
+The **Privacy** section on the home page shows you at a glance how your organization can build a more privacy-resilient workplace. You can generate actionable insights on enterprise personal data to help you spot issues and reduce risks. Also it Provides easy-to-use policy templates that empower employees to safeguard data, and automation features for a smoother subject rights request process.
+
+![Microsoft Purview solution Privacy section.](../media/m365-solution-catalog-privacy.png)
+
 ## How do I get this?
 
 To visit the Microsoft Purview solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
