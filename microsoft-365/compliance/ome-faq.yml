@@ -196,7 +196,7 @@ sections:
       - question: |
           On what types of recipients do the encrypted message portal activity logs work?
         answer: |
-          The encrypted message portal activity logs only capture events for external recipients by accessing the encrypted message portals.  Any activities in email clients triggered by external recipients are not recorded. For internal recipients, see [Purview Audit (Premium) - Mail items accessed logs](compliance/mailitemsaccessed-forensics-investigations#the-mailitemsaccessed-mailbox-auditing-action). 
+          The encrypted message portal activity logs only capture events for external recipients by accessing the encrypted message portals.  Any activities in email clients triggered by external recipients are not recorded. For internal recipients, see [Purview Audit (Premium) - Mail items accessed logs](/compliance/mailitemsaccessed-forensics-investigations#the-mailitemsaccessed-mailbox-auditing-action). 
           
       - question: |
           Are there any reporting capabilities or insights for encrypted emails?
