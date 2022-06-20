@@ -223,13 +223,13 @@
      - name: Tenant Allow/Block List
        items:
        - name: Manage the Tenant Allow/Block List
-         href: tenant-allow-block-list.md
-       - name: Add blocks in the Tenant Allow/Block List
-         href: manage-tenant-blocks.md
-       - name: Add allows in the Tenant Allow/Block List
-         href: manage-tenant-allows.md
-       - name: Modify and remove entries in the Tenant Allow/Block List
-         href: modify-remove-entries-tenant-allow-block.md
+         href: manage-tenant-allow-block-list.md
+       - name: Allow or block emails using the Tenant Allow/Block List
+         href: allow-block-email-spoof.md
+       - name: Allow or block URLs using the Tenant Allow/Block List
+         href: allow-block-urls.md
+       - name: Allow or block files using the Tenant Allow/Block List
+         href: allow-block-files.md
      - name: Create block sender lists
        href: Create-block-sender-lists-in-office-365.md
      - name: Create safe sender lists

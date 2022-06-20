@@ -41,6 +41,7 @@ Watch this video to learn how Microsoft Threat Experts provides Security Operati
 
 > [!NOTE]
 > Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service.
+> Threat Experts is not currently available in the Microsoft 365 for U.S. Government clouds.
 
 If you're a Microsoft Defender for Endpoint customer, you need to apply for **Microsoft Threat Experts - Targeted Attack Notifications** to get special insights and analysis that help identify the most critical threats in your environment so you can respond to them quickly.
 
