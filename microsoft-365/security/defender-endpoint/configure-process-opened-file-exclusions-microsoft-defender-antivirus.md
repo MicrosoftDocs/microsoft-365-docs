@@ -35,8 +35,6 @@ This article describes how to configure exclusion lists.
 
 ## Examples of exclusions
 
-<br/><br/>
-
 |Exclusion|Example|
 |---|---|
 |Any file on the machine that is opened by any process with a specific file name|Specifying `test.exe` would exclude files opened by: <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
@@ -94,8 +92,6 @@ The format for the cmdlets is:
 
 The following are allowed as the \<cmdlet\>:
 
-<br/><br/>
-
 |Configuration action|PowerShell cmdlet|
 |---|---|
 |Create or overwrite the list|`Set-MpPreference`|
@@ -136,8 +132,6 @@ The use of wildcards in the process exclusion list is different from their use i
 In particular, you cannot use the question mark (`?`) wildcard, and the asterisk (`*`) wildcard can only be used at the end of a complete path. You can still use environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the process exclusion list.
 
 The following table describes how the wildcards can be used in the process exclusion list:
-
-<br/><br/>
 
 |Wildcard|Example use|Example matches|
 |---|---|---|

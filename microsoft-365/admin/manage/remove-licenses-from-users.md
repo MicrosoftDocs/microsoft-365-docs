@@ -25,7 +25,7 @@ description: "The method you use to unassign product licenses depends on whether
 ms.date: 04/22/2022
 ---
 
-# Unassign licenses from users
+# Unassign Microsoft 365 licenses from users
 
 You can unassign licenses from users on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to unassign product licenses from specific users or unassign users licenses from a specific product.
 
@@ -113,7 +113,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ## What happens to a user's data when you remove their license?
 
-- When a license is removed from a user, Exchange online data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
+- When a license is removed from a user, Exchange Online data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered. However, it is linked to the retention policy, and the content that matches retention labels is retained for discovery.
 - Files saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, see [OneDrive retention and deletion](/onedrive/retention-and-deletion).
 - When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or eDiscovery (Premium). For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](../../compliance/content-search.md).
 - If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](../../compliance/inactive-mailboxes-in-office-365.md). For more information, see [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
