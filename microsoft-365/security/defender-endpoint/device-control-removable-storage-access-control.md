@@ -153,13 +153,11 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
 
-1. Enable or Disable Removable Storage Access Control (RSAC):
-
-   You can enable Removable Storage Access Control as follows:
+1. Enable or Disable Device control as follows:
 
    - Under **Custom > Configuration settings**, click **Add**.
    - In the **Add Row** pane, enter:
-     - **Name** as **Enable RSAC**
+     - **Name** as **Enable Device Control**
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
      - **Data Type** as **Integer**
      - **Value** as **1**
@@ -173,9 +171,9 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
 2. Set Default Enforcement:
 
-   You can set default access (Deny or Allow) to removable media if there is no policy.
+   You can set default access (Deny or Allow) for all Device Control features (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices).
 
-   For example, you have either Deny or Allow policy for RemovableMediaDevices, but you do not have any policy for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
+   For example, you have either Deny or Allow policy for RemovableMediaDevices, but you do not have any policy for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. If you only want to manage storage, make sure create Allow policy for Printer, otherwise, this Default Enforcement will be applied to Printer as well.
 
    - In the **Add Row** pane, enter:
      - **Name** as **Default Deny**
@@ -301,7 +299,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 1. Enable or Disable Removable Storage Access Control:
 
-   You can enable Removable Storage Access Control (RSAC) as follows:
+   You can enable Device control as follows:
 
    - Go to **Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control**
    - In the **Device Control** window, select **Enabled**.
@@ -310,7 +308,9 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 2. Set Default Enforcement:
 
-   You can set default access (Deny or Allow) to removable media if there is no policy as follows:
+   You can set default access (Deny or Allow) for all Device Control features (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices).
+
+   For example, you have either Deny or Allow policy for RemovableMediaDevices, but you do not have any policy for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. If you only want to manage storage, make sure create Allow policy for Printer, otherwise, this Default Enforcement will be applied to Printer as well.
 
    - Go to **Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control > Select Device Control Default Enforcement**
 
