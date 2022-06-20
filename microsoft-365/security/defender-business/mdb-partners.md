@@ -40,6 +40,12 @@ Use the following resources to learn more:
 | [Overview of management and APIs](../defender-endpoint/management-apis.md) | Defender for Business is built on Microsoft Defender for Endpoint, and is an integration-ready platform. This article describes how to automate workflows and innovate using the Defender for Endpoint APIs. |
 | [Configure managed security service provider integration](../defender-endpoint/configure-mssp-support.md) | Provides an overview of steps to take to successfully integrate a customer's tenant with your MSP solution. |
 
+## What if I'm not a Microsoft MSP yet?
+
+- If you're not a Microsoft MSP, [learn more about the program](https://partner.microsoft.com/solutions/managed-services).
+- If you're a Microsoft cloud solution provider (CSP), see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md). 
+- To learn more about Microsoft partner programs and options, visit the [Microsoft Partner Network](https://partner.microsoft.com).
+
 ## See also
 
 [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)
