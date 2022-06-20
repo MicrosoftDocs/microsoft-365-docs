@@ -55,7 +55,7 @@ Once you publish your booking page, customers will see your booking page where t
 
 :::image type="content" source="media/bookings-self-service-2.png" alt-text="Customer facing booking page.":::
 
-## Publish the booking page
+<!-- ## Publish the booking page
 
 Watch this video or follow the steps below to publish or unpublish your booking page.
 
@@ -69,7 +69,7 @@ Watch this video or follow the steps below to publish or unpublish your booking 
 
 1. Select **Save and publish**. You'll see a confirmation message.
 
-1. Select **Open published page** to see your page in a web browser.
+1. Select **Open published page** to see your page in a web browser. -->
 
 ## Unpublish the booking page
 
