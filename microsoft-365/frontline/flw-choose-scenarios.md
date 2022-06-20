@@ -29,7 +29,9 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 ## Communications
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/chat-room-conversation-teams.png"::: Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
+:::image type="icon" source="https://docs.microsoft.com/office/media/icons/chat-room-conversation-teams.png"::: 
+
+Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
@@ -40,13 +42,17 @@ Also see these resources to learn how Yammer can work for your frontline workers
 
 ## Virtual appointments
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/user-monitor.png"::: Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+:::image type="icon" source="media/virtual-appointment-teams.png"::: 
+
+Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
 More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
 
 ## Wellbeing & engagement
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/heart-teams.png"::: Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.
+:::image type="icon" source="https://docs.microsoft.com/office/media/icons/heart-teams.png"::: 
+
+Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
@@ -56,7 +62,9 @@ Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), P
 
 ## Schedule management
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/calendar-teams.png"::: Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave.
+:::image type="icon" source="https://docs.microsoft.com/office/media/icons/calendar-teams.png"::: 
+
+Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
@@ -64,7 +72,9 @@ Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), P
 
 ## Training & onboarding
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/files-teams.png"::: Promote continual growth for your employees and encourage knowledge sharing and exchange.
+:::image type="icon" source="https://docs.microsoft.com/office/media/icons/files-teams.png"::: 
+
+Promote continual growth for your employees and encourage knowledge sharing and exchange.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
@@ -73,7 +83,9 @@ Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), P
 
 ## Digitized processes
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png"::: Drive operational efficiency by digitizing paper-based processes and automating routine, repetitive steps.
+:::image type="icon" source="https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png"::: 
+
+Drive operational efficiency by digitizing paper-based processes and automating routine, repetitive steps.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
