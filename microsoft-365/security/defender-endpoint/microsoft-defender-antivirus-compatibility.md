@@ -49,7 +49,7 @@ This article describes what happens with Microsoft Defender Antivirus and a non-
 
 ## Antivirus protection without Defender for Endpoint
 
-This section describes what happens when you use Microsoft Defender Antivirus alongside non-Microsoft antivirus/antimalware products on endpoints that are not onboarded to Defender for Endpoint. 
+This section describes what happens when you use Microsoft Defender Antivirus alongside non-Microsoft antivirus/antimalware products on endpoints that aren't onboarded to Defender for Endpoint. 
 
 > [!NOTE]
 > In general, Microsoft Defender Antivirus does not run in passive mode on devices that are not onboarded to Defender for Endpoint.
@@ -63,7 +63,7 @@ The following table summarizes what to expect:
 |Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, version 1803, or newer <br/> Windows Server 2016 <br/> Windows Server 2012 R2 |Microsoft Defender Antivirus|Active mode|
 |Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, version 1803, or newer <br/> Windows Server 2016 |A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
 
-(<a id="fn1">1</a>) On Windows Server, if you are running a non-Microsoft antivirus product, you can uninstall Microsoft Defender Antivirus to prevent conflict. If the device is onboarded to Microsoft Defender for Endpoint, you can use Microsoft Defender Antivirus in passive mode (see below).
+(<a id="fn1">1</a>) On Windows Server, if you're running a non-Microsoft antivirus product, you can uninstall Microsoft Defender Antivirus to prevent conflict. If the device is onboarded to Microsoft Defender for Endpoint, you can use Microsoft Defender Antivirus in passive mode (see below).
 
 > [!TIP]
 > On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
@@ -96,7 +96,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 | Windows Server 2016 <br/> Windows Server 2012 R2  | A non-Microsoft antivirus/antimalware solution | Yes | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup> |
 |Windows Server 2016 <br/> Windows Server 2012 R2  | A non-Microsoft antivirus/antimalware solution | No | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup> |
 
-(<a id="fn2">2</a>)  On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or  Windows Server 2012 R2, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, set Microsoft Defender Antivirus to passive mode to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key. 
+(<a id="fn2">2</a>)  On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or  Windows Server 2012 R2, Microsoft Defender Antivirus doesn't enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, set Microsoft Defender Antivirus to passive mode to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key. 
 
 **Registry Key Method**
 
@@ -195,7 +195,7 @@ Defender for Endpoint includes capabilities that further extend the antivirus pr
 
 For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts even if Microsoft Defender Antivirus is not the primary antivirus product. Such capabilities require Microsoft Defender Antivirus to be installed and running in passive mode or active mode.
 
-### Requirements for Microsoft Defender Antivirus to run in passive mode
+## Requirements for Microsoft Defender Antivirus to run in passive mode
 
 In order for Microsoft Defender Antivirus to run in passive mode, endpoints must meet the following requirements:
 
@@ -233,13 +233,13 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 | [Device control](device-control-report.md) | Yes | Yes | No | No |
 | [PUA protection](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Yes | No | No | No |
 
-(<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
+(<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection doesn't provide any blocking or enforcement, even though it's enabled and in passive mode.
 
-(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans are not scheduled.
+(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled.
 
-(<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it does not remediate threats. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
+(<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it doesn't remediate threats. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
-(<a id="fn7">7</a>) The security intelligence update cadence is controlled by Windows Update settings only. Defender-specific update schedulers (daily/weekly at specific time, interval-based) settings only work when Microsoft Defender Antivirus is in active mode. They are ignored in passive mode.
+(<a id="fn7">7</a>) The security intelligence update cadence is controlled by Windows Update settings only. Defender-specific update schedulers (daily/weekly at specific time, interval-based) settings only work when Microsoft Defender Antivirus is in active mode. They're ignored in passive mode.
 
 (<a id="fn8">8</a>) When Microsoft Defender Antivirus is in passive mode, web content filtering only works with the Microsoft Edge browser. 
 
@@ -248,9 +248,9 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 ## Important notes
 
-- Do not disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Defender for Endpoint, or the Windows Security app. This recommendation includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+- Don't disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Defender for Endpoint, or the Windows Security app. This recommendation includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
-- In Defender for Endpoint, turn EDR in block mode on, even if Microsoft Defender Antivirus is not your primary antivirus solution. EDR in block mode detects and remediate malicious items that are found on the device (post breach). To learn more, see [EDR in block mode](edr-in-block-mode.md).
+- In Defender for Endpoint, turn EDR in block mode on, even if Microsoft Defender Antivirus isn't your primary antivirus solution. EDR in block mode detects and remediate malicious items that are found on the device (post breach). To learn more, see [EDR in block mode](edr-in-block-mode.md).
 
 ## How to confirm the state of Microsoft Defender Antivirus
 
@@ -270,8 +270,8 @@ The table in this section describes various states you might see with Microsoft 
  |  State  |  What happens  | 
  |:---|:---| 
  |  Active mode  |  In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the endpoint itself).  | 
- |  Passive mode or EDR Block mode |  In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. <p>Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) when running in EDR Block Mode, however. <p> Files are scanned by EDR, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. <p> When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. <p> For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). <p> Note that passive mode is only supported on Windows Server 2012 R2 & 2016 when the machine is onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
- |  Disabled or Uninstalled  |  When disabled or uninstalled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. <p> Disabling or uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution. <p> In cases where Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. <p> You might also use [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which works with the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app.  | 
+ |  Passive mode or EDR Block mode |  In passive mode, Microsoft Defender Antivirus isn't used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. <p>Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) when running in EDR Block Mode, however. <p> Files are scanned by EDR, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. <p> When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. <p> For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). <p> Note that passive mode is only supported on Windows Server 2012 R2 & 2016 when the machine is onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
+ |  Disabled or Uninstalled  |  When disabled or uninstalled, Microsoft Defender Antivirus isn't used as the antivirus app. Files aren't scanned and threats aren't remediated. <p> Disabling or uninstalling Microsoft Defender Antivirus isn't recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you're using a non-Microsoft antimalware/antivirus solution. <p> In cases where Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. <p> You might also use [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which works with the Microsoft Defender Antivirus engine to periodically check for threats if you're using a non-Microsoft antivirus app.  | 
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
