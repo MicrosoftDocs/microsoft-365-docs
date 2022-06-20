@@ -1,19 +1,22 @@
 ---
 title: "Add-in deployment email alerts"
-author: ElizabethSamuel-MSFT
-ms.author: efrene
-manager: scotv
+f1.keywords: CSH
+ms.author: ElizabethSamuel-MSFT
+author: elizs
+manager: aljerabe
+ms-reviewer: akshah
 audience: Admin
 ms.topic: article
-ROBOTS: NOINDEX
-ms.service: o365-administration
+ms.prod: o365-administration
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-description: "Send emails to alert users about Office Add-ins you've deployed to them."
-ms.date: 06/15/2022
+ms.custom:
+- AdminSurgePortfolio
+search.appverid: MET150
+description: "Send emails to alert users about Office Add-ins you've deployed to them from the Integrated Apps page."
+ROBOTS: NOINDEX
 ---
 
 # Add-in deployment email alerts
