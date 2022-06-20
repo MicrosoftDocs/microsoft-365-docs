@@ -123,7 +123,7 @@ union withsource=MDTables*
 ## Monitoring created resources
 
 You can monitor the resources created by the streaming API using **Azure Monitor**. 
-For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations). 
+For more information, see [Log Analytics workspace data export in Azure Monitor](/azure/azure-monitor/logs/logs-data-export). 
 
 ## Related topics
 
