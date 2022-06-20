@@ -43,7 +43,7 @@ For now, just deploy the most appropriate MDM security baseline. See [Manage sec
 
 Later, when Microsoft Defender for Endpoint is set up and you’ve connected Intune, deploy the Defender for Endpoint baselines. This topic is covered in the next article in this series: [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).
 
-It is important to understand that these security baselines are not CIS or NIST compliant but closely mirror their recommendations. For more information, see [Are the Intune security baselines CIS or NIST compliant](/mem/intune/protect/security-baselines)?
+It is important to understand that these security baselines are not CIS or NIST compliant but closely mirror their recommendations. For more information, see [Are the Intune security baselines CIS or NIST compliant?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## Customize configuration profiles for your organization
 

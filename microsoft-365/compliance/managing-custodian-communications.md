@@ -1,9 +1,9 @@
 ---
-title: "Work with communications in Advanced eDiscovery"
+title: "Work with communications in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -16,12 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Advanced eDiscovery makes it easy to manage the legal hold notification workflow around notifying custodians in legal investigations."
+description: "eDiscovery (Premium) makes it easy to manage the legal hold notification workflow around notifying custodians in legal investigations."
 ---
 
-# Work with communications in Advanced eDiscovery
+# Work with communications in eDiscovery (Premium)
 
-Advanced eDiscovery allows legal departments to simplify their processes around tracking and distributing legal hold notifications. The custodian communications tool enables legal departments to manage and automate the entire legal hold process, from initial notifications, to reminders, and to escalations, all in one location.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview eDiscovery (Premium) allows legal departments to simplify their processes around tracking and distributing legal hold notifications. The custodian communications tool enables legal departments to manage and automate the entire legal hold process, from initial notifications, to reminders, and to escalations, all in one location.
 
 ## What is a legal hold notification?
 
@@ -31,7 +33,7 @@ A legal hold (also known as a *litigation hold*) notice is a notification sent f
 
 An organization has a duty to preserve relevant information when it learns about an impending litigation or regulatory investigation. To comply with the preservation requirements of an investigation, the organization should immediately inform potential custodians about their duty to preserve relevant information.
 
-With Advanced eDiscovery, legal teams can create and customize their legal hold notification workflow. The custodian communications tool lets legal teams configure the following notices and workflows:
+With eDiscovery (Premium), legal teams can create and customize their legal hold notification workflow. The custodian communications tool lets legal teams configure the following notices and workflows:
 
 1. **Issuance notice:** A legal hold notice is issued (or initiated) by a notification from the legal department to custodians who may have relevant information about the case matter. This notice instructs the custodians to preserve any information that may be needed for discovery.
 

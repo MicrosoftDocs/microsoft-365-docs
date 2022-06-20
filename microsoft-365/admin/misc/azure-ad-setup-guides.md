@@ -41,6 +41,17 @@ An Azure Active Directory P2 license is required to utilize the security feature
 
 [Open the Identity security for Teams catalog](https://aka.ms/teamsidentity)
 
+## Identity Governance
+
+This wizard catalog is designed to help customers with Azure Active Directory P2 functionality, including Access Reviews (AR), Privileged Identity Management (PIM) and Entitlement Management (ELM). For PIM and ELM we offer a curated list of docs and a pointer to the Azure Active Directory admin center, where the admin can configure this functionality. For AR, we offer a fully automated experience that allows admins to choose from two templates. These templates include one that allows group owners to approve guest usage in all Microsoft 365 groups. This is a top policy that customers use today.  
+
+Next, we offer a test template, where the admin is the reviewer of guests for a specific group they choose. If the tenant already has a review in place that covers all Microsoft 365 groups guest users, the admin will be pointed to the Azure Active Directory admin center to manage the existing review and there will be no automated experience.
+
+[Open the Identity Governance setup guide](https://go.microsoft.com/fwlink/p/?linkid=386330)
+
+> [!NOTE]
+> Azure Active Directory P2 license is required to utilize the security features in this catalog.
+
 ## Azure Active Directory deployment  
 
 The Azure Active Directory setup guide will help you set up the most common Azure AD features in a recommended order. The setup guide is split into three sections: **Initial**, **Core**, and **Advanced**. Each section recommends a set of features you should turn on.
@@ -59,7 +70,7 @@ Using Azure Active Directory sync tools is free and included with all Microsoft 
 
 [Open the Add or Sync users setup guide](https://go.microsoft.com/fwlink/?linkid=2183349).
 
-## Add a cloud app to Microsoft 365 
+## Secure your cloud apps with Single Sign On (SSO)
 
 This guide is designed to help you add cloud apps to Microsoft 365. In our guide, you can add an application to your tenant, add users to the app, assign roles, and more.  If the app supports Single Sign-On (SSO), we’ll walk you through that configuration as well.
 

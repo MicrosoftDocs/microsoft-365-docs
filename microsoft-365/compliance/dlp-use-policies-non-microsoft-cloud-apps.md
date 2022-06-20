@@ -1,5 +1,5 @@
 ---
-title: "Use Data loss prevention policies for non-Microsoft cloud apps"
+title: "Use DLP policies for non-Microsoft cloud apps"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -24,7 +24,9 @@ description: Learn how to use dlp policies for non-Microsoft cloud apps.
 
 # Use data loss prevention policies for non-Microsoft cloud apps
 
-Data loss prevention (DLP) policies to non-Microsoft cloud apps are part of the Microsoft 365 DLP suite of features; using these features, you can discover and protect sensitive items across Microsoft 365 services. For more information about all Microsoft DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Data Loss Prevention (DLP) policies to non-Microsoft cloud apps are part of the DLP suite of features; using these features, you can discover and protect sensitive items across Microsoft 365 services. For more information about all Microsoft DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 You can use DLP policies to non-Microsoft cloud apps to monitor and detect when sensitive items are used and shared via non-Microsoft cloud apps. Using these policies gives you the visibility and control that you need to ensure that they're correctly used and protected, and it helps prevent risky behavior that might compromise them.
 
@@ -62,7 +64,7 @@ To use DLP policy to a specific non-Microsoft cloud app, the app must be connect
 After you connect your cloud apps to Defender for Cloud Apps, you can create Microsoft 365 DLP policies for them.
 
 > [!NOTE]
-> It's also possible to use Microsoft Defender for Cloud Apps to create DLP policies to Microsoft cloud apps. However, it's recommended to use Microsoft 365 to create and manage DLP policies to Microsoft cloud apps.
+> It's also possible to use Microsoft Defender for Cloud Apps to create DLP policies to Microsoft cloud apps. However, it's recommended to use Microsoft Purview compliance portal to create and manage DLP policies to Microsoft cloud apps.
 
 ## Create a DLP policy to a non-Microsoft cloud app
 

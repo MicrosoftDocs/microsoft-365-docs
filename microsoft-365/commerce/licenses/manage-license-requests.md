@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests from users for your Microsoft 365 for business subscription."
-ms.date: 06/07/2021
+ms.date: 04/22/2022
 ---
 
 # Manage license requests
@@ -76,4 +76,5 @@ When you return to the **Requests** list, you see the message **You’re using y
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Move users to a different subscription](../subscriptions/move-users-different-subscription.md) (article)\
-[Buy or remove subscription licenses](buy-licenses.md) (article)
+[Buy or remove subscription licenses](buy-licenses.md) (article)\
+[Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.yml)

@@ -20,7 +20,9 @@ ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
 
-Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of a exact string, you can use *configurable match* to tell Microsoft 365 to ignore case and some delimiters.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of a exact string, you can use *configurable match* to tell Microsoft Purview to ignore case and some delimiters.
 
 > [!IMPORTANT]
 > Use this procedure to modify an existing EDM schema and data file.
@@ -99,7 +101,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     - \"
     - \,
 
-6. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+6. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
     > If your organization has set up [Customer Key for Microsoft 365 at the tenant level (public preview)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
@@ -132,6 +134,6 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Custom sensitive information types](./sensitive-information-type-learn-about.md)
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

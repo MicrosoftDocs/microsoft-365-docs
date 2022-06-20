@@ -32,7 +32,7 @@ ms.technology: mde
 
 Microsoft Defender Security Center is the portal where you can access Microsoft Defender for Endpoint capabilities.
 
-Use the **Threat & Vulnerability Management** dashboard to expand your visibility on the overall security posture of your organization. You'll see devices that require attention and recommendations that can help you reduce the attack surface in your organization.
+Use the **Defender Vulnerability Management** dashboard to expand your visibility on the overall security posture of your organization. You'll see devices that require attention and recommendations that can help you reduce the attack surface in your organization.
 
 Use the **Threat analytics** dashboard to continually assess and control risk exposure to Spectre and Meltdown.
 
@@ -46,5 +46,5 @@ In this interactive guide, you'll learn how to investigate threats to your organ
 Topic | Description
 :---|:---
 [Portal overview](portal-overview.md) | Understand the portal layout and area descriptions.
-[View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) | The **Threat & Vulnerability Management dashboard** lets you view exposure and Microsoft Secure Score for Devices side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed devices.
+[View the Defender Vulnerability Management dashboard](../defender-vulnerability-management/tvm-dashboard-insights.md) | The **Defender Vulnerability Management dashboard** lets you view exposure and Microsoft Secure Score for Devices side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed devices.
 [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md) | The **Threat analytics** dashboard helps you continually assess and control risk exposure to threats. Use the charts to quickly identify devices for the presence or absence of mitigations.

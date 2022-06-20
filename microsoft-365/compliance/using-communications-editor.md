@@ -2,8 +2,8 @@
 title: "Use the communications editor"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 ---
 
 # Use the communications editor
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 As you define the content of your portal content, legal hold notifications, and related reminders/escalations, you can use the Communications Editor to format and dynamically customize your content.
 

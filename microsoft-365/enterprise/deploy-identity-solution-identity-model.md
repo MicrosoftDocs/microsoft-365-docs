@@ -2,7 +2,7 @@
 title: "Step 1. Determine your cloud identity model"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.date: 09/30/2020
 ms.topic: overview

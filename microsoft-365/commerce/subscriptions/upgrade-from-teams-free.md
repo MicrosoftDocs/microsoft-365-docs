@@ -29,7 +29,7 @@ ms.date: 07/08/2020
 
 ## Before you begin
 
-You must be a Microsoft Teams Free admin to upgrade a Microsoft Teams Free organization. You're automatically an admin if you created the Microsoft Teams Free organization.
+You must be a Microsoft Teams Free admin to upgrade a Microsoft Teams Free organization. You're automatically an admin if you created the Microsoft Teams Free organization.
 
 ## Step 1: Get your work or school account ID
 

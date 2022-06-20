@@ -27,6 +27,29 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## 101.70.19 (20.122051.17019.0)
+
+- Fixed a bug where threat-related notifications were not always presented to the end user.
+- Performance improvements & other bug fixes
+
+## 101.70.18 (20.122042.17018.0)
+
+- Fixed a bug where the installation package was sometimes hanging indefinitely during product updates
+- Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
+- Performance improvements & other bug fixes
+
+## 101.66.54 (20.122041.16654.0)
+
+- Addressed an issue where `mdatp diagnostic real-time-protection-statistics` was not printing the correct process path in some cases.
+- Bug fixes
+
+## 101.64.15 (20.122032.16415.0)
+
+- Fixed a regression introduced in version 101.61.69 where the status menu icon was sometimes showing an error icon, even though no action was required from the end user
+- Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Mac.
+- Fixed a bug in `mdatp device-control removable-media policy list` where vendor ID and product ID were displayed as decimal instead of hexadecimal
+- Performance improvements & other bug fixes
+
 ## 101.61.69 (20.122022.16169.0)
 
 - Bug fixes

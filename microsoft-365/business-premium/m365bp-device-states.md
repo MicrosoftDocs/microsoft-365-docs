@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -58,4 +58,4 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

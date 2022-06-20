@@ -22,7 +22,7 @@ Exchange Server 2013 will reach its end of support on **April 11, 2023**. If you
 
 ## What does *end of support* mean?
 
-Most Microsoft products have a support lifecycle during which they get new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Because Exchange 2013 reaches its end of support on April 11, 2023, Microsoft will longer provide:
+Most Microsoft products have a support lifecycle during which they get new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Because Exchange 2013 reaches its end of support on April 11, 2023, Microsoft will no longer provide the following after this date:
 
 - Technical support for problems that may occur.
 - Bug fixes for issues that may impact the stability and usability of the server.

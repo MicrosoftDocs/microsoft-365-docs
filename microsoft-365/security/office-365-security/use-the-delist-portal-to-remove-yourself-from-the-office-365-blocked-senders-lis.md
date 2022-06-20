@@ -25,8 +25,6 @@ ms.prod: m365-security
 
 # Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -62,7 +60,6 @@ There are good reasons for senders to wind up on the blocked senders list, but m
     The portal sends an email to the email address that you supply. The email will look something like the following:
 
     :::image type="content" source="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png" alt-text="The email received when you submit a request through the delist portal" lightbox="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png":::
-
 
 4. Click the confirmation link in the email sent to you by the delisting portal.
 

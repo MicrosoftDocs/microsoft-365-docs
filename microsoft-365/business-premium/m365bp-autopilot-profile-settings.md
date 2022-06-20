@@ -10,7 +10,7 @@ f1.keywords:
 - 'O365E_ZTDProfileSettings'
 - 'BCS365_ZTDProfileSettings'
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -57,4 +57,4 @@ You can use AutoPilot profiles to control how Windows is installed on user devic
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

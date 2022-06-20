@@ -2,8 +2,8 @@
 title: "Service assurance in the Security & Compliance Center"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -19,6 +19,8 @@ description: "Download third-party audits, find out how Microsoft keeps customer
 ---
 
 # Service assurance in the Security & Compliance Center
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use Service assurance in the Security & Compliance Center to access documents that describe a variety of topics, including: 
   

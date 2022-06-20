@@ -63,7 +63,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 - Idle session timeout works on a per-browser session basis. A user’s activity on Microsoft Edge is treated differently than their activity in other browsers such as Google Chrome. Users will be signed out from all tabs corresponding to their account within that browser session.
 
-- Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Azure AD Conditional Access](/azure/active-directory/conditional-access/) for policies for different users and groups.
+- Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Azure AD Conditional Access](/azure/active-directory/conditional-access/) policies for different users and groups to access SharePoint and Exchange Online.
 
 - Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they will be considered active and will not be signed out.  
 
@@ -94,7 +94,7 @@ For idle session timeout to get triggered on unmanaged devices, you'll need to a
 
 ### Are there any browsers or browser scenarios in which idle session timeout feature doesn't work?  
 
-Idle session timeout isn't supported when third party cookies are disabled in the browser. Users won't see any sign out prompts. We recommend keeping tracking prevention setting to [Balanced (Default)](/microsoft-edge/web-platform/tracking-prevention) for Microsoft Edge, and third-party cookies enabled in your other browsers. Microsoft 365 apps and services have stopped supporting Internet Explorer 11 since August 17, 2021.
+Idle session timeout isn't supported when third party cookies are disabled in the browser. Users won't see any sign-out prompts. We recommend keeping tracking prevention setting to [Balanced (Default)](/microsoft-edge/web-platform/tracking-prevention) for Microsoft Edge, and third-party cookies enabled in your other browsers. Microsoft 365 apps and services have stopped supporting Internet Explorer 11 since August 17, 2021.
 
 ### How should I prepare if my organization is already using existing Outlook web app and SharePoint Online idle timeout policies?  
 

@@ -47,7 +47,8 @@ Follow these steps to duplicate a document understanding model.
 
 5. Select **Duplicate**.
 
-## See Also
+## See also
+
 [Create a classifier](create-a-classifier.md)
 
 [Rename a model](rename-a-model.md)

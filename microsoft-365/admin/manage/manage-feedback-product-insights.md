@@ -40,6 +40,9 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 
 You need to be an [administrator](../add-users/about-admin-roles.md) to view and read survey reports. Your organization needs to have feedback surveys turned on to view and read survey reports. Check out [Manage Microsoft feedback for your organization](manage-feedback-ms-org.md) to learn more.
 
+> [!IMPORTANT]
+> A minimum of 30 NPS survey submissions is required from your end-users before you can see NPS survey insights.
+
 ## NPS survey insights
 
 1. In the admin center, go to the **Health** > **Product feedback** > **NPS survey insights**.

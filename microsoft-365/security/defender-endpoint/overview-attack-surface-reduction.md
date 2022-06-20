@@ -18,7 +18,7 @@ ms.technology: mde
 ms.collection: 
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
+ms.date: 05/16/2022
 ---
 
 # Understand and use attack surface reduction capabilities
@@ -27,9 +27,13 @@ ms.date: 1/18/2022
 
 **Applies to:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -289,14 +293,14 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 |:---|:---|
 | [Hardware-based isolation](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. Use container isolation for Microsoft Edge to help guard against malicious websites. |
 | [Application control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use application control so that your applications must earn trust in order to run. |
-| [Controlled folder access](controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus) |
-| [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus) |
+| [Controlled folder access](controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus). |
+| [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus). |
 | [Exploit protection](exploit-protection.md) | Help protect the operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |
 | [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
-| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules |
-| [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md) | Lists the recommended steps for attack surface reduction rules deployment |
+| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules. |
+| [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md) | Lists the recommended steps for attack surface reduction rules deployment. |
 | [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
-| [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md) | Shows the steps to transition attack surface reduction rules from test (audit) mode to the active, enabled (Block) mode |
+| [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md) | Shows the steps to transition attack surface reduction rules from test (audit) mode to the active, enabled (Block) mode. |
 | [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md) | Provides information about day-to-day review and maintenance activities. |
 | [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md) | Provides details about each attack surface reduction rule. |
 | [Attack surface reduction rules](attack-surface-reduction.md) | Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware. (Requires Microsoft Defender Antivirus). |

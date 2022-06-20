@@ -72,7 +72,8 @@ The **Models** library in the default content center view groups the created mod
 > [!NOTE]
 > You can't change the designated default content center. It's always the first content center created during setup. 
 
-## See Also
+## See also
+
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)

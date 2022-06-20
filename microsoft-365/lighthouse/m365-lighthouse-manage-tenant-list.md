@@ -1,9 +1,10 @@
 ---
-title: "Manage your tenant list"
+title: "Manage your tenant list in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -13,12 +14,12 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage your tenant list."
 ---
 
-# Manage your tenant list
+# Manage your tenant list in Microsoft 365 Lighthouse
 
 To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply custom tags to your tenants. These tags can be used to organize your tenants and can also help you filter the existing views and insights available to relevant sets of tenants. You can manage your tags from the Tenants page. Once created and assigned, you can filter the data within the Tenants, Users, Devices, Threat management, and Windows 365 pages based on a tag.
 
@@ -101,6 +102,6 @@ After you've created and assigned tags, you can use them to filter your tenants.
 
 ## Related content
 
-[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
-[Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)  
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
+[Overview of the Device compliance page in Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

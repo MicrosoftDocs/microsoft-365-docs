@@ -61,10 +61,10 @@ ms.custom: api
 
   ```json
   {
-	  "time": "<The time WDATP received the event>"
-	  "tenantId": "<Your tenant ID>"
-	  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-	  "properties": { <WDATP Advanced Hunting event as Json> }
+    "time": "<The time WDATP received the event>"
+    "tenantId": "<Your tenant ID>"
+    "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+    "properties": { <WDATP Advanced Hunting event as Json> }
   }
   ```
 
