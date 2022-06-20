@@ -52,7 +52,7 @@ To enable Defender for IoT in Defender for Endpoint, the user must have the foll
 
 ## Enabling the Microsoft Defender for IoT integration
 
-1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Microsoft Defender for IoT**.
+1. In the navigation pane of the [Microsoft 365 Defender portal](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Microsoft Defender for IoT**.
 
    :::image type="content" source="images/enable-defender-for-iot.png" alt-text="The IoT integration setup" lightbox="images/enable-defender-for-iot.png":::
 
@@ -60,13 +60,13 @@ To enable Defender for IoT in Defender for Endpoint, the user must have the foll
 
 ## Set up a network sensor
 
-With the Azure subscription selected, one that has a Defender for IoT plan with Enterprise IoT devices, you can add a network sensor. For more information, see [Get started with enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
+To setup a network sensor you must select an Azure subscription that has a Defender for IoT plan with Enterprise IoT devices. For more information, see [Get started with enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
 To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Manage sensors with Defender for IoT in the Azure portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
 
 ## Managing your IoT devices
 
-To view and manage your devices access the device inventory page by selecting **Device inventory** from the **Endpoints** navigation menu in the [https://security.microsoft.com](https://security.microsoft.com/) and select the IoT devices tab.
+To view and manage your IoT devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/) go to the **Device inventory** from the **Endpoints** navigation menu and select the **IoT devices** tab.
 
 For information on how to view the devices in Defender for IoT, see [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
