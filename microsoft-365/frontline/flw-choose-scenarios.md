@@ -73,7 +73,7 @@ Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), P
 
 ## Digitized processes
 
-:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png":::
+:::image type="icon" source="https://docs.microsoft.com/office/icons/task-checklist-planning-teams.png"::: Drive operational efficiency by digitizing paper-based processes and automating routine, repetitive steps.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
