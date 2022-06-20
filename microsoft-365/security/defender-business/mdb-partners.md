@@ -29,7 +29,7 @@ Using our APIs for custom integration, you can:
 
 - Get access to your customers' Microsoft 365 Defender portal​ to [address alerts and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md)​ about new alerts or vulnerabilities across your customers' tenants.
-- Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.​ 
+- Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.
 - Orchestrate [remediation actions](mdb-review-remediation-actions.md), such as approving actions following automated investigations, or taking manual response actions on a device.
 
 ## Resources to learn more
@@ -51,5 +51,4 @@ Use the following resources to learn more:
 ## See also
 
 [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)
-
 [Microsoft Partner Network](https://partner.microsoft.com)
