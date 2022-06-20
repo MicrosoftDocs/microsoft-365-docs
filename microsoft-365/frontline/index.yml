@@ -28,6 +28,10 @@ productDirectory:
       links:
         - url: flw-overview.md
           text: Overview
+        - url: flw-choose-scenarios.md
+          text: Choose your scenarios for Microsoft 365 for frontline workers
+        - url: flw-trial.md
+          text: Try Microsoft 365 for frontline workers
         - url: flw-licensing-options.md
           text: Licensing options for frontline workers
     # Card
