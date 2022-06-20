@@ -1,7 +1,5 @@
 - name: Microsoft Bookings
   href: bookings-overview.md
-- name: Bookings with me
-  href: bookings-in-outlook.md
   items:
   - name: Setup
     items:
@@ -51,3 +49,5 @@
     href: reporting-info.md
   - name: Microsoft Bookings frequently asked questions (FAQ)
     href: bookings-faq.yml
+  - name: Bookings with me
+    href: bookings-in-outlook.md
