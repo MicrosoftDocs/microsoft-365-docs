@@ -53,13 +53,13 @@ Once you’ve chosen between the Standard and Strict security preset policies fo
 1. Select **Threat policies**.
 1. Select **Preset Security Policies** underneath the **Templated policies** heading
 1. Select **Manage** underneath the Standard protection preset.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the EOP protections apply to section. Click the **Next** button.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the MDO protections apply to section. Click the **Next** button.
-1. Click on the **Confirm** button.
-1. Select the **Manage** link in the Strict protection preset.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the EOP protections apply to section. Click the **Next** button.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the MDO protections apply to section. Click the **Next** button.
-1. Click on the **Confirm** button.
+1. Select **All Recipients** to apply Exchange Online Protection tenant wide, or select **Specific recipients** to manually add add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
+1. Select **All Recipients** to apply Defender for Office 365 Protection tenant wide, or select **Specific recipients** to manually add add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
+1. On the **Impersonation Protection** section, add email addresses & domains to protect from impersonation attacks, then add any trusted senders and domains you do not want the impersonation protection to apply to, then press **Next**
+3. Click on the **Confirm** button.
+4. Select the **Manage** link in the Strict protection preset.
+5. Repeat steps 7-10 again, but for the users strict protection should be applied to. (if applicable)
+7. Click on the **Confirm** button.
 
 > [!TIP]
 > To learn more about preset polcies click [here](../../office-365-security/preset-security-policies.md)
