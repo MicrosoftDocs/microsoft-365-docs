@@ -114,7 +114,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 
 3.  Set the GPO to **Enabled**.
 
-You can view your protection status in PowerShell by using the command `Get-MpComputerStatus` and the key `AMRunningMode`. Here's an example of what the output looks like:
+You can view your protection status in PowerShell by using the command [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) and the key `AMRunningMode`. Here's an example of what the output looks like:
 
 ```
 PS C:\Users\contoso> Get-MpComputerStatus
