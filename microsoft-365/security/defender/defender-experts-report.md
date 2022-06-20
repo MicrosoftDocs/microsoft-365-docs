@@ -53,13 +53,13 @@ Each section of the report is designed to provide more insights about the threat
 
 Refer to the following screenshot of a sample report:
 
-![defender experts report](../../media/defender/defender-experts-report.png)
+![defender experts report](../../media/mte/defender-experts-report.png)
 
 ## View targeted attack notifications
 
-A targeted attack notification describes an advanced threat activity Defender Experts for Hunting observed in your environment and provides recommended resolution to help address the said activity.
+A targeted attack notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
-The Defender Experts for Hunting reports provide you with the total number of targeted attack notifications our Defender Experts have sent for the calendar month. To view these notifications, click **View notification** beside **Notified**.
+The Defender Experts for Hunting reports provide you with the total number of targeted attack notifications our Defender Experts have sent for your chosen period. To view these notifications, click **View notification** beside **Notified**.
 
 This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or targeted attack notifications are labelled with “Defender Experts.”
 
@@ -68,9 +68,11 @@ This link redirects you to the Microsoft 365 Defender incidents page. Defender E
 
 ## Identify potential attack entry points and other security weak spots
 
-Tactics represent an adversary’s tactical goal: the reason for its actions. The **MITRE tactics** observed section of the report tracks the progression of attack attempts in your environment using the following 12 MITRE ATT&CK framework tactics:
+The MITRE ATT&CK tactics represent an adversary goals—what they’re trying to achieve in each attack phase. The **MITRE ATT&CK tactics observed** section of the report tracks the progression of attack against the phase they reached.
 
-1.	Initial access
+1.	Reconnaissance
+2.  Resource Development
+1.  Initial access
 2.	Execution	
 3.	Persistence	
 4.	Privilege escalation	
@@ -83,7 +85,10 @@ Tactics represent an adversary’s tactical goal: the reason for its actions. Th
 11.	Exfiltration	
 12.	Impact
 
-Signals from Microsoft 365 Defender and investigations by Defender Experts for Hunting help identify these stages, represented in the bar chart. This chart helps you visualize on where the surge is and provides you with the information you need to plan the corresponding containment and remediation actions in the recommendation section.
+> [!NOTE]
+> The Reconnaissance and Resource Development tactics are outside Microsoft 365 Defender’s visibility scope, so they’re not included in the bar chart visualization.
+
+Signals from Microsoft 365 Defender and investigations by Defender Experts for Hunting help identify these tactics, represented in the bar chart. This chart helps you visualize where the surge is and provides you with the information you need to plan the corresponding containment and remediation actions in the recommendation section.
 
 ## Know and understand the prevalent threats in your environment
 
@@ -101,15 +106,13 @@ You can prioritize remediation based on the mostly-impacted category, as depicte
 
 ## Address security gaps and apply additional mitigations
 
-Each security recommendation in the Recommended action section includes actionable remediation steps customized based on the observations and findings in the current threat landscape in the context of what’s been happening in your environment . Thus, when the threat landscape changes, the recommendation also changes as it continuously collects information from both.
-
-You are not only notified of the threats and risks but also provided with suggestions to resolve those threats.
+Each security recommendation in the Recommended action section includes actionable remediation steps customized based on the observations and findings in the current threat landscape in the context of what’s been happening in your environment . This set of references also help you shorten the time to deploy your mitigations or solutions.
 
 Some recommendation actions provide additional information and have quick access to relevant resources within Microsoft 365 Defender portal and other documentation. Click the arrow beside a recommendation to expand it.
 
 ## Submit feedback about the report
 
-Microsoft Defender Experts are continuously improving this interactive report to measure its effectiveness and ensure that you’re getting the relevant information and insights you need to defend your environments from attacks.
+Microsoft Defender Experts are continuously improving this report to measure its effectiveness and ensure that you’re getting the relevant information and insights you need to defend your environments from attacks.
 
 To submit feedback, click **Feedback** at the top of this page.
 
