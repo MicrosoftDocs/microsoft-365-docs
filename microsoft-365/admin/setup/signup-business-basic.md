@@ -90,7 +90,7 @@ Use these three factors to determine which of the two options is best for your b
 
 You'll sign in to Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
 
-:::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Screenshot: Sign in with your personal email.":::
+:::image type="content" source="../../media/sign-in-nia-contoso.png" alt-text="Screenshot: Sign in with your personal email.":::
 
 1. Create a password on the next page, and select **Create account** to continue. On the next page, read about how we handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
