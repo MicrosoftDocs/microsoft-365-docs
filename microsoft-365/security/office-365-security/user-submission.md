@@ -90,6 +90,10 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
           >
           > If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
+          > [!IMPORTANT]
+          > If you are performing phishing simulations using Attack Simulation Training, or another third-party phishing simulation product, ensure that this mailbox is set up as a SecOps mailbox. If this mailbox is not set up as a SecOps mailbox, reporting messages may trigger training assignments in that product. See [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md) for more details.
+
+
        Regardless of the value you selected for **Send the reported messages to**, the following settings are available:
 
        - **Let users choose if they want to report their message to Microsoft**
