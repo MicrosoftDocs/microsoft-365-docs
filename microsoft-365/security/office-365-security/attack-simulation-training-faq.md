@@ -130,9 +130,9 @@ If messages that users reported as phishing aren't captured in Attack simulation
 - phish@office365.microsoft.com
 - not\_junk@office365.microsoft.com
 
-### Users are assigned training when after they reported the simulated message
+### Users are assigned training after they report a simulated message
 
-If users are being assigned training after they reported their phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **User Submission Policy** configuration. When configuring a **custom mailbox** this mailbox needs to be excluded from Safe Links & Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
+If users are being assigned training after they report a phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **User Submission Policy**. When configuring a **custom mailbox** this mailbox needs to be excluded from Safe Links & Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
 
 If your organization has a **custom mailbox** configured, and has not set up the required exclusions, these messages may be detonated causing training assignments.
 
