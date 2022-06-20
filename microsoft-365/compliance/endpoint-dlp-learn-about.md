@@ -48,8 +48,8 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |print a document    |Detects when a user attempts to print a protected item to a local or network printer.|supported|supported|auditable and restrictable         |
 |copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session |supported|not supported|  auditable and restrictable|
 |copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|supported|not supported| auditable and restrictable|
-|create an item|Detects when a user creates an item|supported | |auditable|
-|rename an item|Detects when a user renames an item|supported | |auditable|
+|create an item|Detects when a user creates an item|supported |supported |auditable|
+|rename an item|Detects when a user renames an item|supported |supported |auditable|
 
 ## Best practice for endpoint DLP policies
 
