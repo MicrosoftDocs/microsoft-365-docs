@@ -88,7 +88,7 @@ All our updates contain
 <summary>May-2022 (Platform: 4.18.2205.5 | Engine: 1.1.19300.2)</summary>
 
 &ensp;Security intelligence update version: **xx**<br/>
-&ensp;Released: **June 16, 2022**<br/>
+&ensp;Released: **June 20, 2022**<br/>
 &ensp;Platform: **4.18.2205.5**<br/>
 &ensp;Engine: **1.1.19300.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
@@ -98,7 +98,7 @@ Security intelligence update version: xx<br/>
 
 ### What's new
 
-- Added fix to support ASR rule 
+- Added fix to support new ASR rule ("Block WebShell Creation For Servers")
 - Added fix for ETW channel configuration for updates 
 - Added support for [contextual exclusions allowing more specific exclusion targeting](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) 
 
