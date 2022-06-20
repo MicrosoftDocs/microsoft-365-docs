@@ -5,7 +5,7 @@ ms.author: v-lanachin
 manager: samanro
 audience: ITPro
 ms.topic: conceptual
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
   - Microsoft Teams

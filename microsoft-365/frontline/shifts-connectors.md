@@ -6,7 +6,7 @@ ms.reviewer: aaku
 manager: samanro
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn about Shifts connectors and how to use them to connect Shifts to your workforce management system. 
 ms.localizationpriority: medium

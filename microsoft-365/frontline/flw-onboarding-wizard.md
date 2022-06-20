@@ -6,7 +6,7 @@ ms.reviewer: aaglick
 manager: samanro
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to use the Frontline Worker onboarding wizard to quickly deploy an experience in Teams that's tailored to frontline workers and managers in your organization.
 ms.localizationpriority: medium

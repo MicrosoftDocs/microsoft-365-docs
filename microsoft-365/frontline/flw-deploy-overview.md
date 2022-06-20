@@ -6,7 +6,7 @@ ms.reviewer: samanro
 manager: pamgreen
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to start with a deployment of Microsoft 365 for frontline workers for your organization.
 ms.localizationpriority: medium

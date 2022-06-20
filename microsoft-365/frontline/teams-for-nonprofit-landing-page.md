@@ -9,7 +9,7 @@ manager: samanro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
   - Microsoft Teams

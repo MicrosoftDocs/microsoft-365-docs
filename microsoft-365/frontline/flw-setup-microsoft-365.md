@@ -6,7 +6,7 @@ ms.reviewer: samanro
 manager: pamgreen
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to set up Microsoft 365 with the services and features you need for your frontline workers.
 ms.localizationpriority: medium

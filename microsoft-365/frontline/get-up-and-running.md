@@ -6,7 +6,7 @@ ms.reviewer: samanro
 manager: pamgreen
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how frontline managers can get their teams up and running with Microsoft 365 for frontline workers.
 ms.localizationpriority: medium

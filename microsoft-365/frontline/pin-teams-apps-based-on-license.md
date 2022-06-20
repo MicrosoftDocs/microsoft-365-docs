@@ -6,7 +6,7 @@ ms.reviewer: aaglick
 manager: samanro
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn about the tailored app experience for frontline workers in Teams.
 ms.localizationpriority: medium

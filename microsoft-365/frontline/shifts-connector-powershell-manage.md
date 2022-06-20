@@ -6,7 +6,7 @@ ms.reviewer:
 manager: samanro
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management.
 ms.localizationpriority: medium

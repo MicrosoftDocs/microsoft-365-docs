@@ -4,7 +4,7 @@ author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
 ms.topic: reference
-ms.service: msteams
+ms.service: microsoft-365-frontline
 audience: admin
 ms.reviewer: keschm
 description: Guidance on using scripts to deploy or provision Microsoft Teams for Frontline Workers.

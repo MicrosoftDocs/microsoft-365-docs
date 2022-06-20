@@ -6,7 +6,7 @@ ms.reviewer: aaglick
 manager: pamgreen
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn about the F1 and F3 licenses for the Microsoft 365 for frontline workers SKU and what they include.
 ms.localizationpriority: high

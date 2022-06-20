@@ -7,7 +7,7 @@ ms.reviewer: aaglick
 manager: pamgreen
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 ms.localizationpriority: medium
 ms.collection: 

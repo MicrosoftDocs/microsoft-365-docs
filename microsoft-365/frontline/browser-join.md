@@ -5,7 +5,7 @@ ms.author: v-lanachin
 manager: samanro
 audience: ITPro
 ms.topic: article 
-ms.service: msteams 
+ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
   - Microsoft Teams

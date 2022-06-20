@@ -5,7 +5,7 @@ ms.author: v-lanachin
 manager: samanro
 audience: Admin
 ms.topic: article
-ms.service: msteams
+ms.service: microsoft-365-frontline
 ms.reviewer: 
 f1.keywords:
 - NOCSH

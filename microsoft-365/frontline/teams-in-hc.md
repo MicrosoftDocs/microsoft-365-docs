@@ -5,7 +5,7 @@ ms.author: dstrome
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
   - Microsoft Teams
