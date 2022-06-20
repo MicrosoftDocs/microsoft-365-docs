@@ -38,70 +38,29 @@ Microsoft Teams enables your on-the-ground staff to collaborate efficiently with
 
 Teams includes the following ways to communicate and share information:
 
-- [Chat, post messages, and communicate](#chat-post-messages-and-communicate).
-- [Call and meet with team members](#call-and-meet-with-team-members).
-- [Store and share files and documents](#store-and-share-files-and-documents).
+|Task |Description |Manage this capability |End-user training |
+|-----|------------|-----------------------|------------------|
+|Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations to with individual and channel chat messaging. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage Chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) and [Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). |
+|Call and meet with team members |Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a Voice solution to use calling. |[Manage calling and meeting in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) and [Plan your Teams Voice solution](/microsoftteams/cloud-voice-landing-page) |[Make calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) and [Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) |
+|Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a Files tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that is automatically created when the team is created. |[How SharePoint and OneDrive interact with Microsoft Teams](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 
-### Chat, post messages, and communicate
+### See examples of how different industries can use communication capabilities in Teams
 
-Your frontline workers can seamlessly communicate within and across locations to with individual and channel chat messaging. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them.
+#### Financial services
 
-See examples of how your organization can use chat:
+Bank employees can use Teams to communicate across branches and share information. Each branch can use a separate channel, as can different work groups such as tellers and advisors. Banks can hold Teams meetings for different branches to learn about new policies and products. They can also hold morning meetings with the whole region before the branches open. When the bank launches a new product, such as a credit card or account type, fact sheets can be shared in Teams so everyone has quick access to new information.
 
-|Industry |Example |
-|:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |
-|Manufacturing |
+#### Healthcare
 
-[Learn how to manage Chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page).
+Healthcare workers in a hospital use Teams capabilities to coordinate care. Everyone in the office is part of a general chat, and each group of workers (doctors, nurses, receptionists, and other staff) has their own channel where they can ask questions and communicate. Staff in different departments use Teams meetings and calls to keep up to date without having to leave their stations. When multiple staff are attending to one patient, they share notes and care plans over Teams. Staff who work with instruments and machinery, such as medical instrument technicians, can share fact and care sheets about equipment.
 
-Share these trainings with your users:
+#### Nonprofit
 
-- [Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5).
-- [Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885).
+Nonprofit organizations can use Teams to coordinate both internally and with volunteers. For example, an organization with a large volunteer force can set up Teams channels where volunteers can get to know each other and ask their supervisors questions. Organizations can hold volunteer orientations and trainings virtually with Teams meetings, so people who live and work in different areas are more able to stay engaged. Volunteer coordinators can also use Teams to share instructions and fact sheets with volunteers.
 
-### Call and meet with team members
+#### Retail
 
-Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a Voice solution to use calling.
-
-See examples of how your organization can use calls and meetings:
-
-|Industry |Example |
-|:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |A manager can set up a morning video meeting with store associates in different departments to check their status before opening the store. |
-|Manufacturing |
-
-[Learn how to manage calling and meeting in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page).
-[Plan your Teams Voice solution](/microsoftteams/cloud-voice-landing-page)
-
-Share these trainings with your users:
-
-- [Make calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f).
-- [Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4).
-
-### Store and share files and documents
-
-Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a Files tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that is automatically created when the team is created.
-
-See examples of how your organization can use files and documents:
-
-|Industry |Example |
-|:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |
-|Manufacturing |
-
-[Learn how SharePoint and OneDrive interact with Microsoft Teams](/sharepoint/teams-connected-sites).
-
-Share this training with your user: [Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12).
+Retail employees can use Teams to keep in touch and better serve customers. Different locations and departments can use chats and channels to share information about products and policies, such as which items are being promoted or going on sale. Employees in different departments or locations can use Teams meetings to get important updates without leaving their stations. Managers or merchandising specialists can use file sharing to send out diagrams for new displays or new product labels.
 
 ## Apps in Teams
 
@@ -116,17 +75,11 @@ Your team can use apps in Teams to coordinate and collaborate with each other on
 - [Streamline approvals with Approvals](#streamline-approvals-with-approvals)
 - [Check in on progress with Updates](#check-in-on-progress-with-updates)
 
+Financial services organizations can also use the [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) to seamlessly collaborate on the lending process.
+
 ### Create, manage, and share schedules with Shifts
 
-Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers or greeters, assign shifts to employees, add custom labeling and breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, and clock in and out.
-
-|Industry |Example |
-|:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |
-|Manufacturing |
+Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers, nurses, or mortgage specialists, assign shifts to employees, add custom labeling and breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, and clock in and out. Managers can also create open shifts that employees can request. For example, a volunteer coordinator at a nonprofit could create open shifts that volunteers can request to take.
 
 [Learn how to Manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams).
 
@@ -138,11 +91,10 @@ The Walkie Talkie app provides instant push-to-talk communication. By using Walk
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |
-|Manufacturing |
+|Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
+|Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to call another staff member who works with the patient. |
+|Nonprofit | A volunteer in the field can use Walkie Talkie to call a supervisor in the office for help or instructions. |
+|Retail | If a customer asks a store associate a question they don't know the answer to, the associate can use Walkie Talkie to call a manager or another expert without having to leave the customer. |
 
 [Learn how to manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie).
 
@@ -154,11 +106,10 @@ The Praise app allows management and in-store associates to congratulate each ot
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |
-|Manufacturing |
+|Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
+|Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
+|Nonprofit |An event coordinator can send the **Thank you** badge to employees and volunteers who participated in the event. |
+|Retail |A store manager can send the **Awesome** badge to an associate who meets their sales goals. |
 
 [Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app).
 
@@ -174,7 +125,6 @@ Use Tasks in Teams to track to-do items for your whole retail team. Store manage
 |Healthcare |
 |Nonprofit |
 |Retail |
-|Manufacturing |
 
 [Learn how to manage the Tasks app for your organization](/microsoftteams/manage-tasks-app).
 
@@ -189,8 +139,7 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 |Financial services |
 |Healthcare |
 |Nonprofit |
-|Retail |
-|Manufacturing |
+|Retail |A sales associate could submit an approval request to offer a discount or special rate to a customer. |
 
 [Learn about Teams Approvals app availability](/microsoftteams/approval-admin).
 
@@ -206,7 +155,6 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 |Healthcare |
 |Nonprofit |
 |Retail |
-|Manufacturing |
 
 [Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app).
 
