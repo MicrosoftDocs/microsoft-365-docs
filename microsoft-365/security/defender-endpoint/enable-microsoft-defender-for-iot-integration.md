@@ -31,7 +31,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft Defender for Endpoint can now integrate with Microsoft Defender for IoT. This integration extends your device discovery capabilities with the agentless monitoring capabilities provided by Microsoft Defender for IoT. This will help secure enterprise IoT devices connected to IT networks, such as, Voice over Internet Protocol (VoIP) devices, printers, and cameras. It allows organizations to take advantage of a single integrated solution that secures all of their IoT, and Operational Technology (OT) infrastructure. For more information, see [Enterprise IoT network protection](/azure/defender-for-iot/organizations/overview-eiot).
+Microsoft Defender for Endpoint can now integrate with Microsoft Defender for IoT. This integration extends your device discovery capabilities with the agentless monitoring capabilities provided by Microsoft Defender for IoT. This will help secure enterprise IoT devices connected to IT networks, such as, Voice over Internet Protocol (VoIP) devices, printers, and cameras. It allows organizations to take advantage of a single integrated solution that secures all of their IoT, and Operational Technology (OT) infrastructure. For more information, see [Get started with Enterprise IoT](/azure/defender-for-iot/organizations//tutorial-getting-started-eiot-sensor).
 
 With this integration enabled, Microsoft Defender for Endpoint gains increased visibility to help locate, identify, and secure the IoT devices in your network. IoT devices discovered by Microsoft Defender for IoT, or Microsoft Defender for Endpoint will synch automatically across both portals. This will give you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers, and mobile).
 
@@ -39,7 +39,13 @@ Microsoft Defender for IoT also includes a deployable network sensor that provid
 
 ## Prerequisites
 
-To enable Microsoft Defender for IoT, the user must have the following roles:
+### Subscriptions
+
+To use Microsoft Defender for IoT the user must have an Azure subscription with a Defender for IoT plan with Enterprise IoT devices. For more information, see [Managing Microsoft Defender for IoT](/azure/defender-for-iot/organizations/how-to-manage-subscriptions).
+
+### Roles
+
+To enable Defender for IoT in Defender for Endpoint, the user must have the following roles:
 
 - Tenant Global Administrator in Azure Active Directory
 - Security Administrator for the Azure subscription that will be used for the Microsoft Defender for IoT integration
@@ -54,9 +60,16 @@ To enable Microsoft Defender for IoT, the user must have the following roles:
 
 ## Set up a network sensor
 
-With an Azure subscription selected, you can add a network sensor.
+With the Azure subscription selected, one that has a Defender for IoT plan with Enterprise IoT devices, you can add a network sensor. For more information, see [Get started with enterprise IoT](tutorial-getting-started-eiot-sensor).
 
 To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Manage sensors with Defender for IoT in the Azure portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
+
+## Managing your IoT devices
+
+To view and manage your devices access the device inventory page by selecting **Device inventory** from the **Endpoints** navigation menu in the [https://security.microsoft.com](https://security.microsoft.com/) and select the IoT devices tab.
+
+For information on how to view the devices in Defender for IoT, see [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
+
 
 ## Turn off subscription integration
 
