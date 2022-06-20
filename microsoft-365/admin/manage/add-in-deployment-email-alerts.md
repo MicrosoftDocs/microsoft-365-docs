@@ -1,13 +1,13 @@
 ---
 title: "Add-in deployment email alerts"
 f1.keywords: CSH
-ms.author: ElizabethSamuel-MSFT
-author: elizs
+ms.author: elizs
+author: ElizabethSamuel-MSFT
 manager: aljerabe
-ms-reviewer: akshah
+ms.reviewer: akshah
 audience: Admin
 ms.topic: article
-ms.prod: o365-administration
+ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
