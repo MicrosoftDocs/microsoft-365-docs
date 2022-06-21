@@ -80,7 +80,7 @@ From the **Network devices** and **IoT devices** tabs, you'll also see informati
 ![Image of network devices list.](images/device-inventory-networkdevices.png)
 
 > [!NOTE]
-> Device discovery Integrations with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/index.yml) and [Corelight](https://corelight.com/integrations/iot-security) are available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with these integrations will appear on the **IoT devices** tab. For more information, see [Device discovery integrations](device-discovery.md#device-discovery-integrations). 
+> Device discovery Integrations with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/index.yml) and [Corelight](https://corelight.com/integrations/iot-security) are available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with these integrations will appear on the **IoT devices** tab. For more information, see [Device discovery integrations](device-discovery.md#device-discovery-integrations).
 >
 > When configured, you can also view the devices in Defender for IoT, see [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
