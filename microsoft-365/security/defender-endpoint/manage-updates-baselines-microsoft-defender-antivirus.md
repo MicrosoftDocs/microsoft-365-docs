@@ -244,7 +244,7 @@ Security intelligence update version: 1.355.2.0
 ### Known Issues
 No known issues
 <br/>
-</details><details = open>
+</details><details>
 <summary> October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
