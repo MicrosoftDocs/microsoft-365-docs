@@ -60,7 +60,7 @@
   - name: Virtual appointments
     items: 
     - name: Overview
-      href: 
+      href: virtual-appointments.md
     - name: Virtual appointments with Teams and Bookings
       href: bookings-virtual-visits.md
     - name: Virtual appointments with Teams and Cerner EHR 
