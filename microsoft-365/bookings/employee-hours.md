@@ -25,7 +25,7 @@ Watch this video or follow the steps below to set an employee's working hours.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-## Customize employee working hours
+## Steps
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
