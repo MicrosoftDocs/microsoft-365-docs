@@ -55,6 +55,8 @@
     items: 
     - name: Overview
       href: retail-team-collaboration.md
+    - name: Corporate communications with frontline workers
+      href: corp-comms-for-frontline.md
   - name: Virtual appointments
     items: 
     - name: Overview
