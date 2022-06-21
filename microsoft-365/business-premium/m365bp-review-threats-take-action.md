@@ -58,7 +58,7 @@ When you view details about specific threats or devices, you'll see recommendati
 
 ## Manage threat detections in Microsoft InTune
 
-You can use Microsoft Endpoint Manager to manage threat detections. All devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
+You can use Microsoft Endpoint Manager to manage threat detections as well. First, all devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
 
 1. Go to the Microsoft Endpoint Manager admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> and sign in.
 
