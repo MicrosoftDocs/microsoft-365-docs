@@ -26,6 +26,17 @@
         href: usgov.md
       - name: Industry tests
         href: ./top-scoring-industry-tests.md
+    - name: Before you begin
+      items:
+      - name: Prerequisites
+        - name: Eligibility
+          href: whats-new.md
+        - name: Privacy
+          href: whats-new.md
+        - name: Other disclaimers
+          href: whats-new.md
+        - name: Geo-availability
+          href: whats-new.md
     - name: Plan
       items: 
         - name: Prerequisites
