@@ -1,6 +1,6 @@
 ---
 title: Frontline team collaboration
-description: Learn how your frontline teams can collaborate effectively within a store or between stores or locations.
+description: Learn how your frontline teams can communicate and collaborate effectively within or across locations.
 ms.topic: conceptual
 author: daisyfeller
 ms.author: daisyfeller
@@ -26,8 +26,6 @@ appliesto:
 # Frontline team collaboration
 
 Bring your frontline together to communicate, collaborate, and streamline operations with Microsoft Teams. Microsoft 365 and Teams can empower retail associates, healthcare workers, financial services providers, nonprofit organizers, manufacturing workers, and more to seamlessly communicate and collaborate.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw] <!--daisy-->
 
 > [!NOTE]
 > These scenarios are also part of Microsoft Clouds for [Financial Services](/industry/financial-services), [Healthcare](/industry/healthcare), [Nonprofit](/industry/nonprofit), and [Retail](/industry/retail). You can do more with these scenarios when you also use other capabilities from the Microsoft Clouds, such as Microsoft Dynamics 365 and Azure.
