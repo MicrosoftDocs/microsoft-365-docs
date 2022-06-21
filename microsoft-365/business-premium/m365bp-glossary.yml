@@ -9,10 +9,10 @@ metadata:
   audience: admin
   f1.keywords: NOCSH
   ms.localizationpriority: high
-  products: Microsoft 365
-  name: Glossary of terms
+products: Microsoft 365
+name: Glossary of terms
 summary: Glossary of terms for Microsoft 365 Business Premium.
-thumbnailUrl: Null
+thumbnailUrl:
 content: |
 
  ## A

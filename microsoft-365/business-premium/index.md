@@ -64,7 +64,7 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
 > [!Note]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
 
 ## [**Train Your Team**](#tab/Train)
 
@@ -97,7 +97,7 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
 > [!Note]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
 
 ## [**Safeguard Managed Devices**](#tab/Safeguard)
 
@@ -126,4 +126,4 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
 > [!Note]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
