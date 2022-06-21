@@ -134,7 +134,7 @@ If messages that users reported as phishing aren't captured in Attack simulation
 
 If users are assigned training after they report a phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **User Submission Policy**. When configuring a **custom mailbox**, this mailbox needs to be excluded from Safe Links & Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
 
-If your organization has a **custom mailbox** configured, and has not set up the required exclusions, these messages may be detonated causing training assignments.
+If your organization has a **custom mailbox** configured and has not set up the required exclusions, these messages may be detonated, causing training assignments.
 
 ## Other frequently asked questions
 
