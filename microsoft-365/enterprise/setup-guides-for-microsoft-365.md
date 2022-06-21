@@ -86,6 +86,10 @@ Microsoft Search helps your organization find what they need to complete what th
 
 The [Microsoft Search setup guide](https://aka.ms/MicrosoftSearchSetup) helps you configure Microsoft Search whether you want to pilot it to a group of users or roll it out to everyone in your org. You'll assign Search admins and Search editors and then customize the search experience for your users with answers and more options, like adding the Bing extension to Chrome or setting Bing as your default search engine.
 
+### Block use of Internet Explorer in your organization
+
+Microsoft support for Internet Explorer 11 is ending soon for most versions of Windows 10. The [Block use of Internet Explorer in your organization guide](https://aka.ms/retireinternetexplorer) ensures that your users can still run legacy web apps that rely on Internet Explorer. This guide also helps you move those users to Microsoft Edge with IE mode.
+
 ## Guides for authentication and access
 
 ### Configure multi-factor authentication (MFA)
@@ -187,6 +191,14 @@ The [Microsoft Purview Data Lifecycle Management setup guide](https://aka.ms/mig
 ### Microsoft Defender for Cloud Apps setup guide
 
 The [Microsoft Defender for Cloud Apps setup guide](https://aka.ms/cloudappsecuritysetup) provides easy to follow deployment and management guidance to set up your Cloud Discovery solution. With Cloud Discovery, you'll integrate your supported security apps, and then you'll use traffic logs to dynamically discover and analyze the cloud apps that your organization uses. You'll also set up features available through the Defender for Cloud Apps solution, including threat detection policies to identify high-risk use, information protection policies to define access, and real-time session controls to monitor activity. With these features, your environment gets enhanced visibility, control over data movement, and analytics to identify and combat cyberthreats across all your Microsoft and third party cloud services.
+
+### Audit solutions setup guide
+
+The [Microsoft 365 auditing solutions guide](https://aka.ms/auditsolutionsetup) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, and compliance obligations. When you use the auditing solutions in Microsoft 365, you can search the audit log for activities performed in different Microsoft 365 services.
+
+### eDiscovery solutions setup guide
+
+eDiscovery is the process of identifying and delivering electronic information that can be used as evidence in legal cases. The eDiscovery solutions setup guide assists in the use of eDiscovery tools in Microsoft Purview that allow you to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer communities.
 
 ## Guides for collaboration
 
