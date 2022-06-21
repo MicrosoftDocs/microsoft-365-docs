@@ -25,6 +25,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
+## 2022 releases
 
 
 </details><details>
