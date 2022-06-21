@@ -51,7 +51,7 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 > [!NOTE]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-## Recommended actions (preview)
+## Recommended actions
 
 Recommended actions can help your organization get started with communication compliance capabilities and get the most out of your existing policies. Included on the **Policies** page, recommended actions provide insights and summarizes sensitive information types and inappropriate content activities in communications in your organization. Insights are supported by [data classification](data-classification-overview.md) and the application of sensitivity labels, retention labels, and sensitive information type classification. These insights don't include any personally identifiable information (PII) for users in your organization.
 
