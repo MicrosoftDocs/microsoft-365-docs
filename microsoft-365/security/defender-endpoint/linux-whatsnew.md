@@ -25,10 +25,10 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-
+## 2022 releases
 
 <details open>
-<summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
+  <summary>Click to expand!</summary>
 
 &ensp;Released: **May 23, 2022**<br/>
 &ensp;Published: **May 23, 2022**<br/>
