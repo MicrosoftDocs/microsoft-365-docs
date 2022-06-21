@@ -24,8 +24,8 @@ Microsoft 365 Business Premium includes endpoint protection through Microsoft De
 You will cover the following:  
 
 - [What is a device group?](#working-with-device-groups)
-- [How to create a new device group](#create-a-device-group-in-the-Defender-portal)
-- [How to create a new device category in InTune](#create-a-device-category-in-InTune)
+- [How to create a new device group](#create-a-device-group-in-the-defender-portal)
+- [How to create a new device category in InTune](#create-a-device-category-in-intune)
 
 ## Working with device groups
 
@@ -70,7 +70,7 @@ You can create a new device group while you are in the process of creating or ed
 
 Create device categories in InTune from which users must choose when they enroll a device.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](endpoint.microsoft.com).
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
 1. Choose **Devices > Device categories > Create device category** to add a new category.
 
@@ -90,7 +90,7 @@ You can create a dynamic group for either devices or users, but not for both. Yo
 
 Now that categories and device groups are established, users of iOS and Android devices enroll their device and as they do so they must choose a category from the list of categories that were configured. Windows users can use the Company Portal website or the Company Portal app to select a category.
 
-1. After enrolling the device go to the [company portal](portal.microsoft.com) and choose **My Devices**.
+1. After enrolling the device go to the [company portal](https://portal.microsoft.com) and choose **My Devices**.
 
 1. Select the enrolled device from the list, and then select a category.
 
@@ -102,7 +102,7 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## View the categories of devices that you manage
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](endpoint.microsoft.com), choose **Devices > All devices**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices**.
 
 1. In the list of devices, examine the Device category column.
 
@@ -110,7 +110,7 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## Change the category of a device
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](endpoint.microsoft.com), choose **Devices > All devices > choose the device you want > Properties**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices > choose the device you want > Properties**.
 
 1. On the next blade, you can change the Device category of the selected device to any of the category names you previously configured.
 
