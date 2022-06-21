@@ -75,7 +75,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender.
 
-Note that admins can't add allows directly to the Tenant Allow/Block List. Instead, you use the admin submission process to submit the message that were blocked so the corresponding URL, file, and/or senders will be added to the Tenant Allow/Block List. If a block of the file, URL, or sender has not happened, then the allow will not be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allows are removed on the date of the expiry as set by you while creating it.
+Note that admins can't add allows directly to the Tenant Allow/Block List. Instead, you use the admin submission process to submit the message that was blocked so the corresponding URL, file, and/or senders will be added to the Tenant Allow/Block List. If a block of the file, URL, or sender has not happened, then the allow will not be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allows are removed on the date of the expiry as set by you while creating it.
 
 > [!IMPORTANT]
 > Since Microsoft manages the allows for you, sender, URL, or file allows that are not needed or considered to be bad will be removed. This is to protect your environment and prevent a misconfiguration of allows. In cases where you may disagree, a support cases may be needed to help determine why a message is still considered as bad.
