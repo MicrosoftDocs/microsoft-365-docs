@@ -171,9 +171,9 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
 2. Set Default Enforcement:
 
-   You can set default access (Deny or Allow) for all Device Control features (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices).
+   You can set the default access (Deny or Allow) for all Device Control features (`RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`).
 
-   For example, you have either Deny or Allow policy for RemovableMediaDevices, but you do not have any policy for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. If you only want to manage storage, make sure create Allow policy for Printer, otherwise, this Default Enforcement will be applied to Printer as well.
+   For example, you have either a **Deny** or an **Allow** policy for `RemovableMediaDevices`, but you do not have a policy for `CdRomDevices` or `WpdDevices`. You can set **Default Deny** through this policy, then Read/Write/Execute access to `CdRomDevices` or `WpdDevices` will be blocked. If you only want to manage storage, make sure create an **Allow** policy for your printer; otherwise, this default enforcement will be applied to printers as well.
 
    - In the **Add Row** pane, enter:
      - **Name** as **Default Deny**
@@ -190,7 +190,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
 3. Audit Default Deny:
 
-   You can create Audit policy for Default Deny as follows:
+   You can create an Audit policy for Default Deny as follows:
 
    - In the **Add Row** pane, enter:
      - **Name** as **Audit Default Deny**
@@ -203,13 +203,13 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
        XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
 
-       Use the following XML data to create Audit policy for Default Deny:
+       Use the following XML data to create your Audit policy for Default Deny:
 
        :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Screenshot of audit default deny xml file":::
 
 4. ReadOnly - Group:
 
-   You can create removable storage group with ReadOnly access as follows:
+   You can create a removable storage group with ReadOnly access as follows:
 
    - In the **Add Row** pane, enter:
      - **Name** as **Any Removable Storage Group**
@@ -228,7 +228,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
 5. ReadOnly - Policy:
 
-   You can create ReadOnly policy and apply to the ReadOnly removable storage group to allow read activity as follows:
+   You can create a ReadOnly policy and apply it to the ReadOnly removable storage group to allow read activity as follows:
 
    - In the **Add Row** pane, enter:
      - **Name** as **Allow Read Activity**
@@ -245,7 +245,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
        :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Screenshot of read only policy xml file":::
 
-6. Create Group for Allowed Medias: You can create allowed medias group as follows:
+6. Create a Group for Allowed Media: You can create your allowed media group as follows:
    - In the **Add Row** pane, enter:
      - **Name** as **Approved USBs Group**
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
@@ -257,11 +257,11 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
        XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
 
-       Use the following XML data to create allowed medias group:
+       Use the following XML data to create allowed media group:
 
        :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Screenshot of creating group for allowed medias xml file":::
 
-7. Create Policy to allow the approved USB Group: You can create policy to allow the approved USB group as follows:
+7. Create a policy to allow the approved USB Group: You can create a policy to allow the approved USB group as follows:
    - In the **Add Row** pane, enter:
      - **Name** as **Allow access and Audit file information**
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
@@ -289,7 +289,7 @@ This capability is available in the Microsoft Endpoint Manager admin center (<ht
 
 ## Deploying and managing Removable Storage Access Control by using Group Policy
 
-The Removable Storage Access Control feature enables you to apply policy by using Group Policy to either user or device, or both.
+The Removable Storage Access Control feature enables you to apply a policy by using Group Policy to either user or device, or both.
 
 ### Licensing
 
