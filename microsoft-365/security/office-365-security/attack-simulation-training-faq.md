@@ -190,3 +190,8 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
 So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
+
+
+### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
+
+A: No. Any information entered at the credential harvest login page is discarded silently. Only the 'click' is recorded to capture the compromise event.  Microsoft does not collect, log or store any details that users enter at this step.
