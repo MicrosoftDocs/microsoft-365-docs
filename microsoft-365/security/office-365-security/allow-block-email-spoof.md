@@ -75,10 +75,10 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender.
 
-Note that admins can't add allows directly to the Tenant Allow/Block List. Instead, you use the admin submission process to submit the message that was blocked so the corresponding URL, file, and/or senders will be added to the Tenant Allow/Block List. If a block of the file, URL, or sender has not happened, then the allow will not be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allows are removed on the date of the expiry as set by you while creating it.
+You can't directly modify the Tenant Allow/Block List to add allow entries. Instead, use [admin submissions](admin-submission.md) to submit the blocked message. This action will add the corresponding URL, file, and/or sender to the Tenant Allow/Block List. If the item has not been blocked, then the allow won't be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allow entry will be removed on the specified expiration date.
 
 > [!IMPORTANT]
-> Since Microsoft manages the allows for you, sender, URL, or file allows that are not needed or considered to be bad will be removed. This is to protect your environment and prevent a misconfiguration of allows. In cases where you may disagree, a support cases may be needed to help determine why a message is still considered as bad.
+> Because Microsoft manages the allow entries for you, unneeded sender, URL, or file allow entries that aren't needed will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a message is still considered bad.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -92,7 +92,7 @@ Note that admins can't add allows directly to the Tenant Allow/Block List. Inste
 
 6. From the **Remove after** drop-down list, specify how long you want the allow option to work.
 
-7. Add why you are adding allow using the **Optional Note**. 
+7. Add why you are adding the allow using the **Optional Note** box. 
 
 8. When you're finished, select the **Submit** button.
 
@@ -162,18 +162,19 @@ For example, you add an allow entry for the following domain pair:
 - **Domain**: gmail.com
 - **Infrastructure**: tms.mx.com
 
-Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
+Only messages from that domain _and_ sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
 
 ## Create blocked spoofed sender entries
 
 ### Use Microsoft 365 Defender
 
-
 > [!NOTE]
-> 
-> The emails from these senders will be blocked as _phish_.
+> Email from these senders will be blocked as _phish_.
+>
 > Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
+>
 > When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
+>
 > Entries for spoofed senders never expire.
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
