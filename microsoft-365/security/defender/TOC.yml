@@ -29,6 +29,7 @@
     - name: Before you begin
       items:
       - name: Prerequisites
+        items:
         - name: Eligibility
           href: whats-new.md
         - name: Privacy
