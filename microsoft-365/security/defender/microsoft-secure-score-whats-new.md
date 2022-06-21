@@ -35,9 +35,9 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ## June 2022
 
-This update includes the following:
+The following new recommendations are now available as Secure Score improvement actions:
 
-- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations as Secure Score improvement actions:
+- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as a Secure Score improvement actions:
 
   - Disallow offline access to shares
   - Remove share write permission set to **Everyone**
@@ -45,14 +45,18 @@ This update includes the following:
   - Set folder access-based enumeration for shares
   - Update Microsoft Defender for Endpoint core components
 
-- A new Microsoft Defender for Identity recommendation as a Secure Score improvement action:
+- A new Microsoft Defender for Identity recommendation is available as a Secure Score improvement action:
 
   - Resolve unsecure domain configurations
 
-- Salesforce and ServiceNow recommendations are now supported as Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
+- New Salesforce and ServiceNow recommendations are now available as a Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
 
 >[!Note]
 >Salesforce and ServiceNow controls are now available in public preview.
+
+- A new AppG recommendation is now available as a Secure Score improvement action:
+
+  - Regulate apps with priority account consent
 
 ## April 2022
 
