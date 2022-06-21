@@ -47,9 +47,9 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
   - Resolve unsecure domain configurations
 
-- A new App Governance recommendation is now available as a Secure Score improvement action:
+- A new [app governance](https://docs.microsoft.com/defender-cloud-apps/app-governance-manage-app-governance) recommendation is now available as a Secure Score improvement action:
 
-  - Regulate apps with priority account consent
+  - Regulate apps with consent from priority accounts
 
 - New Salesforce and ServiceNow recommendations are now available as Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
 
