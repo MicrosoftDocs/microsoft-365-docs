@@ -88,7 +88,7 @@ You won't be able to deploy a single store app or Microsoft 365 Apps by partner 
 
 1. In the admin center, in the left nav, choose **Settings** and then **Integrated apps**.
 
-2. Select **Upload custom apps**. Only a custom line of apps for Word, PowerPoint, Excel and Outlook  is supported.
+2. Select **Upload custom apps**. Only a custom line of apps for Word, PowerPoint, Excel, and Outlook  is supported.
 
 3. Upload the manifest file from your device or add a URL link. Some apps require you to add users before you can select Deploy.
 
@@ -237,7 +237,7 @@ Updates for add-ins happen as follows:
 - **Office Store add-in**: When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
 > [!NOTE]
-> For Word, Excel and PowerPoint use a [SharePoint App Catalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.  
+> For Word, Excel, and PowerPoint use a [SharePoint App Catalog](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.  
 
 ## Add-in states
 An add-in can be in either the **On** or **Off** state. 

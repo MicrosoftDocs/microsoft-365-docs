@@ -53,6 +53,12 @@ Unintentional sharing of sensitive items can cause financial harm to your organi
 
 For more information, see [Learn about data lifecycle management](/microsoft-365/compliance/data-lifecycle-management).
 
+### Encrypt your data and control your encryption keys
+
+[Encryption](/microsoft-365/compliance/encryption) is an important part of your file protection and information protection strategy. The encryption process encodes your data (referred to as plaintext) into ciphertext. Unlike plaintext, ciphertext can't be used by people or computers unless and until the ciphertext is decrypted. Decryption requires an encryption key that only authorized users have. Encryption helps ensure that only authorized recipients can decrypt your content.
+
+[Microsoft Purview Double Key Encryption](/microsoft-365/compliance/double-key-encryption) helps secure your most sensitive data that is subject to the strictest protection requirements. [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) helps you meet regulatory or compliance obligations for controlling root keys. You explicitly authorize Microsoft 365 services to use your encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, and so on.
+
 ## Identify data risks and manage regulatory compliance requirements
 
 Insider risks are one of the top concerns of security and compliance professionals in the modern workplace. Industry studies have shown that insider risks are often associated with specific user events or activities. Protecting your organization against these risks can be challenging to identify and difficult to mitigate. Insider risks include vulnerabilities in various areas and can cause major problems for your organization, ranging from the loss of intellectual property to workplace harassment, and more.
