@@ -264,7 +264,7 @@ At a high level, here's how Safe Links protection works for URLs in Office 365 a
 ## "Block the following URLs" list for Safe Links
 
 > [!NOTE]
-> You can now manage block URL entries in the [Tenant Allow/Block List](tenant-allow-block-list.md#create-block-url-entries-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
+> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
 
 The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
 
