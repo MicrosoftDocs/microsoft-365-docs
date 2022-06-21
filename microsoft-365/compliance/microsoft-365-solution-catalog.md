@@ -42,8 +42,9 @@ The **Information protection & governance** section shows you at a glance how yo
 
 From here, you'll see cards for the following solutions:
 
-- [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp): Detects sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
+- [App governance](/defender-cloud-apps/app-governance-manage-app-governance): Helps you understand all applications that connect to your organization and govern their API activity.
 - [Data Lifecycle Management](/microsoft-365/compliance/manage-data-governance): Manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don't.
+- [Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp): Detects sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
 - [Information protection](/microsoft-365/compliance/information-protection): Discovers, classifies, and protects sensitive and business-critical content throughout its lifecycle across your organization.
 - [Records management](/microsoft-365/compliance/records-management): Uses intelligent classification to automate and simplify the retention schedule for regulatory, legal, and business-critical records in your organization.
 
@@ -66,6 +67,7 @@ The **Insider risk management** section on the home page shows you at a glance h
 From here, you'll see cards for the following solutions:
 
 - [Communication compliance](/microsoft-365/compliance/communication-compliance): Minimizes communication risks by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to minimize harm.
+- [Information barriers](/microsoft-365/compliance/information-barriers): Allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint Online, and OneDrive for Business.
 - [Insider risk management](/microsoft-365/compliance/insider-risk-management): Detect risky activity across your organization to help you quickly identify, investigate, and take action on insider risks and threats.
 
 ## Discovery & response section
