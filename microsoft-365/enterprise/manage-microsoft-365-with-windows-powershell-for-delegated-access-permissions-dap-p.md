@@ -2,7 +2,7 @@
 title: "Manage Microsoft 365 with Windows PowerShell for DAP partners"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration

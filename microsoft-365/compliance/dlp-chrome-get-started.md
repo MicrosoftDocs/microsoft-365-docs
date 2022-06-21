@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Compliance Extension"
+title: "Get started with the Microsoft Purview Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,19 +19,21 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: "Prepare for and deploy the Microsoft Compliance Extension."
+description: "Prepare for and deploy the Microsoft Purview Extension."
 ---
 
-# Get started with Microsoft Compliance Extension
+# Get started with Microsoft Purview Extension
 
-Use these procedures to roll out the Microsoft Compliance Extension.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Use these procedures to roll out the Microsoft Purview Extension.
 
 ## Before you begin
 
-To use Microsoft Compliance Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Compliance Extension](dlp-chrome-learn-about.md)
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
@@ -74,14 +76,14 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Admins
@@ -91,19 +93,19 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 ### Overall installation workflow
 
-Deploying Microsoft Compliance Extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
+Deploying the extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
 2. [Basic Setup Single Machine Selfhost](#basic-setup-single-machine-selfhost)
 3. [Deploy using Microsoft Endpoint Manager](#deploy-using-microsoft-endpoint-manager)
 4. [Deploy using Group Policy](#deploy-using-group-policy)
-5. [Test the Extension](#test-the-extension)
+5. [Test the extension](#test-the-extension)
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
 7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### Prepare infrastructure
 
-If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -116,7 +118,7 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 This is the recommended method.
 
-1. Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+1. Navigate to [Microsoft Purview Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
 2. Install the extension using the instructions on the Chrome Web Store page.
 
@@ -126,7 +128,7 @@ Use this setup method for organization-wide deployments.
 
 #### Microsoft Endpoint Manager Force Install Steps
 
-Before adding the Microsoft Compliance Extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Before adding the extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
@@ -154,7 +156,7 @@ Before adding the Microsoft Compliance Extension to the list of force-installed 
 
 ### Deploy using Group Policy
 
-If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the Microsoft Compliance Extension across your organization.
+If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the extension across your organization.
 
 #### Adding the Chrome Extension to the ForceInstall List
 
@@ -199,13 +201,13 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Use the Alerts Management Dashboard to viewing Chrome DLP alerts
 
-1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and select **Alerts**.
+1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 ### Viewing Chrome DLP data in activity explorer
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose **Activity explorer**.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and choose **Activity explorer**.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 

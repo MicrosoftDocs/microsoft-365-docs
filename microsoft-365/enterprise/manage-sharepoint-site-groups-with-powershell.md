@@ -2,7 +2,7 @@
 title: "Manage SharePoint Online site groups with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/17/2019
 audience: Admin
 ms.topic: landing-page

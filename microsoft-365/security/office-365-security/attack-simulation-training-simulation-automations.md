@@ -16,6 +16,8 @@ ms.technology: mdo
 
 # Simulation automations for Attack simulation training
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
@@ -23,11 +25,11 @@ For getting started information about Attack simulation training, see [Get start
 
 To create a simulation automation, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation automations** tab.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Simulation automations**.
 
-   To go directly to the **Simulation automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
+   To go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. On the **Simulation automations** tab, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
+2. On **Simulation automations**, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
@@ -83,20 +85,28 @@ In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, y
 
 If you click **Filter**, the following filters are available:
 
+- **Source**: Indicates whether the payload was created in your organization or is a part of Microsoft's pre-existing payload catalog. Valid values are:
+  - **Global** (built-in)
+  - **Tenant** (custom)
+  - **All**
+
 - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are:
   - **Low**
   - **Medium**
   - **High**
-- **Source**: Indicates whether the payload was created in your organization or is a part of Microsoft's pre-existing payload catalog. Valid values are:
-  - **Global**
-  - **Tenant**
-  - **All**
+
 - **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
+
 - **Add tag(s)**
+
 - **Filter by theme**: The available values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
+
 - **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
+
 - **Filter by industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
+
 - **Current event**: The available values are **Yes** or **No**.
+
 - **Controversial**: The available values are **Yes** or **No**.
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
@@ -205,12 +215,9 @@ Back on the main **Training assignment** page, the trainings that you selected a
 - **Source**
 - **Duration (mins)**
 
-For each training in the list, you need to select who gets the training by selecting values in the **Assign to** column:
+For each training in the list, select one or more of the following values in the **Assign to** column to configure who gets the training:
 
 - **All users**
-
-  or one or both of the following values:
-
 - **Clicked payload**
 - **Compromised**
 
@@ -280,61 +287,147 @@ On the **Select end user notification** page, select from the following notifica
 - **Do not deliver notifications**: Click **Proceed** in the alert dialog that appears. If you select this option, you're taken to the [Simulation schedule](#simulation-schedule) page when you click **Next**.
 
 - **Microsoft default notification (recommended)**: The following additional settings are available on the page:
+
   - **Select default language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
-  - By default, the only available notification to select is **Microsoft positive reinforcement notification**. The following information is available for the notification:
-    - **Notifications** (name): The value is **Microsoft default positive reinforcement notification**.
+
+  - By default, the following notifications are included:
+    - **Microsoft positive reinforcement notification**
+    - **Microsoft default training assignment notification**
+    - **Microsoft default training reminder notification**
+
+    For each notification, the following information is available:
+    - **Notifications**: The name of the notification.
     - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
-    - **Type**: The value is **Positive reinforcement**.
-    - **Delivery preferences**: Select from the following values:
+    - **Type**: One of the following values:
+      - **Positive reinforcement notification**
+      - **Training assignment notification**
+      - **Training reminder notification**
+    - **Delivery preferences**: For **Positive reinforcement notification** and **Training reminder notification** types, the following values are available
       - **Do not deliver**
       - **Deliver after campaign ends**
       - **Deliver during campaign**
-    - **Deliver to**: The value is **Not applicable**.
     - **Actions**: If you click on the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
-      - **Preview** tab: View the notification message. To view the message in different languages, use the **Select language** box.
+      - **Preview** tab: View the notification message as users will see it.
+        - To view the message in different languages, use the **Select language** box.
+        - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
       - **Details** tab: View details about the notification:
         - **Notification description**
         - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
-        - **Notification type**
+        - **Notification type**: One of the following types base on the notification you originally selected:
+          - **Positive reinforcement notification**
+          - **Training assignment notification**
+          - **Training reminder notification**
         - **Modified by**
         - **Last modified**
 
         When you're finished, click **Close**.
 
-  If you select this option, you're taken to the [Simulation schedule](#simulation-schedule) page when you click **Next**.
+  You're taken to the [Simulation schedule](#simulation-schedule) page when you click **Next**.
 
-- **Customized end user notifications**: When you click **Next**, you're taken to the **Positive reinforcement notification** page as described in the next section where you can select from existing notifications or create new notifications.
+- **Customized end user notifications**: When you click **Next**, you're taken to the **Training assignment notification** page as described in the next sections.
 
-When you're finished, click **Next**.
+### Training assignment notification
+
+The **Training assignment notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
+
+This page shows the following notifications and their configured languages:
+
+- **Microsoft default training assignment notification**
+- Any custom training assignment notifications that you previously created.
+
+  These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default training assignment notification** is available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+
+You can select an existing training assignment notification or create a new notification to use:
+
+- To select an existing notification, click in the blank area next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
+- To search for an existing notification, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
+
+  Select the notification that you want to use, and then click **Next**.
+
+- To create and use a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
+
+#### Create new training assignment notification wizard
+
+If you clicked ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Training assignment notification** page, a notification creation wizard opens.
+
+The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+
+> [!NOTE]
+> On the **Define details** page, be sure to select the value **Training assignment notification** for **Select notification type**.
+
+When you're finished, you're taken back to the **Training assignment notification** page where the notification that you just created now appears in the list.
+
+Select the notification that you want to use, and then click **Next**.
+
+### Training reminder notification
+
+The **Training reminder notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
+
+- **Set frequency for reminder notification**: Select **Weekly** (default) or **Twice a week**.
+
+- **Select a reminder notification**: This section shows the following notifications and their configured languages:
+
+  - **Microsoft default training reminder notification**
+  - Any custom training reminder notifications that you previously created.
+
+    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default training reminder notification** is available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+
+  You can select an existing training reminder notification or create a new notification to use:
+
+  - To select an existing notification, click in the blank area next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
+  - To search for an existing notification, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
+
+    Select the notification that you want to use, and then click **Next**.
+
+  - To create and use a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
+
+#### Create new training reminder notification wizard
+
+If you clicked ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Training reminder notification** page, a notification creation wizard opens.
+
+The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+
+> [!NOTE]
+> On the **Define details** page, be sure to select the value **Training reminder notification** for **Select notification type**.
+
+When you're finished, you're taken back to the **Training reminder notification** page where the notification that you just created now appears in the list.
+
+Select the notification that you want to use, and then click **Next**.
 
 ### Positive reinforcement notification
 
-The **Positive reinforcement notification** page is available only if you selected **Customized end user notifications** on the previous page.
+The **Positive reinforcement notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
 
 - **Delivery preferences**: Select one of the following values:
-  - **Do not deliver**
-  - **Deliver after the user reports a phish and campaign ends**
-  - **Deliver immediately after the user reports a phish**
 
-- **Select a positive reinforcement notification**: You can select an existing notification or create a new notification of type **Positive reinforcement notification** to use:
+  - **Do not deliver**: If you select this option, you're taken to the [Simulation schedule](#simulation-schedule) page when you click **Next**.
+
+  - **Deliver after the user reports a phish and campaign ends** or **Deliver immediately after the user reports a phish**: These sections show the following notifications and their configured languages in the **Select a positive reinforcement notification** section that appears:
+
+  - **Microsoft default positive reinforcement notification**
+  - Any custom positive reinforcement notifications that you previously created.
+
+    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default positive reinforcement notification** is available on the **Global notifications** tab. Custom positive reinforcement notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+
+  You can select an existing positive reinforcement notification or create a new notification to use:
+
   - To select an existing notification, click in the blank area next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
   - To search for an existing notification, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
-  - To create a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
-  - To modify an existing custom notification, select it and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification**.
 
-#### Create new notification wizard
+    Select the notification that you want to use, and then click **Next**.
+
+  - To create and use a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
+
+#### Create new positive reinforcement notification wizard
 
 If you clicked ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Positive reinforcement notification** page, a notification creation wizard opens.
 
-The creation steps are identical as described in [Create end-user notifications](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications).
+The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
 > [!NOTE]
-> On the **Define details** page, be sure to select the value **Positive reinforcement notification** for **Select notification type**. Don't select **Simulation notification**.
+> On the **Define details** page, be sure to select the value **Positive reinforcement notification** for **Select notification type**.
 
-When you're finished, you're taken back to the **Positive reinforcement notification** page where the notification that you just created now appears in the **Select a positive reinforcement notification** list.
-
-- To create a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png).
-- To modify the notification or add additional translations, select the notification from the list, and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** to start the notification wizard as previously described (with most values already filled in). If the notification already has translations for the 12 supported languages, you can't add more translations.
+When you're finished, you're taken back to the **Positive reinforcement notification** page where the notification that you just created now appears in the list.
 
 Select the notification that you want to use, and then click **Next**.
 

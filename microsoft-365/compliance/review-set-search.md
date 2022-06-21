@@ -2,8 +2,8 @@
 title: "Query the content in a review set"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,11 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to create and run a query in a review set to organize content for a more efficient review in an Advanced eDiscovery case."
+description: "Learn how to create and run a query in a review set to organize content for a more efficient review in a Microsoft Purview eDiscovery (Premium) case."
 ms.custom: seo-marvel-mar2020
 ---
 
 # Query and filter content in a review set
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In most cases, it will be useful to dig deeper into the content in a review set and organize it to facilitate a more efficient review. Using filters and queries in a review set helps you focus on a subset of documents that meet the criteria of your review.
 

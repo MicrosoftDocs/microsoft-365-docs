@@ -414,12 +414,12 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         :::image type="content" source="images/7f9138053dbcbf928e5182ee7b295ebe.png" alt-text="The configuration settings mdatpmdav notifications tray" lightbox="images/7f9138053dbcbf928e5182ee7b295ebe.png":::
 
     - Tab **Notifications**, click **Add** one more time, scroll down to **New Notifications Settings**
-        - **Bundle ID**: `com.microsoft.autoupdate2`
+        - **Bundle ID**: `com.microsoft.autoupdate.fba`
         - Configure the rest of the settings to the same values as above
 
         :::image type="content" source="images/4bac6ce277aedfb4a674f2d9fcb2599a.png" alt-text="The configuration settings mdatpmdav notifications mau" lightbox="images/4bac6ce277aedfb4a674f2d9fcb2599a.png":::
 
-        Note that now you have two 'tables' with notification configurations, one for **Bundle ID: com.microsoft.wdav.tray**, and another for **Bundle ID: com.microsoft.autoupdate2**. While you can configure alert settings per your requirements, Bundle IDs must be exactly the same as described before, and **Include** switch must be **On** for **Notifications**.
+        Note that now you have two 'tables' with notification configurations, one for **Bundle ID: com.microsoft.wdav.tray**, and another for **Bundle ID: com.microsoft.autoupdate.fba**. While you can configure alert settings per your requirements, Bundle IDs must be exactly the same as described before, and **Include** switch must be **On** for **Notifications**.
 
 3. Select the **Scope** tab, then select **Add**.
 

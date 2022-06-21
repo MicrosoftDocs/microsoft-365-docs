@@ -2,7 +2,7 @@
 title: "Set up your network for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2019
 audience: ITPro
 ms.topic: landing-page

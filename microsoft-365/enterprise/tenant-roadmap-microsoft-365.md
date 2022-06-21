@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -38,7 +38,7 @@ To plan for your tenant implementation:
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)
-- [Understand tenant isolation](/compliance/assurance/microsoft-365-isolation-controls)
+- [Understand tenant isolation](/microsoft-365-isolation-in-microsoft-365?view=o365-worldwide&preserve-view=true)
 
 ### Deploy
 

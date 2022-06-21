@@ -1,5 +1,5 @@
 ---
-title: "What's new in Microsoft Compliance Manager"
+title: "What's new in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -19,9 +19,23 @@ search.appverid:
 description: "Find out what’s new in Compliance Manger and what’s to come. Read about updated assessments, new assessment templates, new actions, and more."
 ---
 
-# What's new in Microsoft Compliance Manager
+# What's new in Microsoft Purview Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn about recent updates in Compliance Manager.
+
+## May 2022
+
+Compliance Manager has published the following new assessment templates:
+
+Europe, Middle East, and Africa (EMEA)
+- Qatar National Information Assurance (NIA)
+- UAE Data Privacy Law
+
+US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers should see these templates available in the next few weeks.
+
+View our [full list of assessment templates](compliance-manager-templates-list.md).
 
 ## March 2022
 

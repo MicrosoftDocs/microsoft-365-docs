@@ -23,6 +23,8 @@ description: "Configure device proxy and internet connection settings for Inform
 
 # Configure device proxy and internet connection settings for Information Protection
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Endpoint technologies uses Microsoft Windows HTTP (WinHTTP) to report data and communicate with the Microsoft endpoint cloud service. The embedded service runs in system context using the LocalSystem account.
 
 > [!TIP]

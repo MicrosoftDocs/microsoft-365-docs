@@ -20,6 +20,8 @@ description: "Last Updated: May 2017"
 
 # Privacy statement for Secure Email Portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Last Updated: May 2017
   
 This privacy statement governs the Office 365 the new OME capabilities Portal (the "the new OME capabilities Portal"). Previous versions were known as Office 365 Message Encryption (OME) and the "OME Portal". This privacy statement does not apply to other online or offline Microsoft sites, products, or services. Other privacy statements may also apply to the data you process through the new OME capabilities Portal, such as the privacy statement for Microsoft account (if it is used for authentication) or the privacy statement associated with your device.

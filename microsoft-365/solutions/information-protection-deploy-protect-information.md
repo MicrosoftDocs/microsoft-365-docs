@@ -26,14 +26,14 @@ A number of information protection controls can be employed in your subscription
 These controls are within following solution areas:
 
 - Sensitivity labels
-- Data loss prevention (DLP)
-- Office message encryption (OME)
+- Microsoft Purview Data loss prevention (DLP)
+- Microsoft Purview Message Encryption
 - Teams and sites access controls
 
 ![Key services to protect personal information subject to data privacy regulation.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
-> This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](../security/index.yml). For a complete list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](../compliance/index.yml).
+> This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](../security/index.yml). For a complete list of compliance features in Microsoft 365, see [Microsoft Purview documentation](../compliance/index.yml).
 
 ## Data privacy regulations that impact information protection controls
 
@@ -67,7 +67,7 @@ Microsoft [information protection solutions](../compliance/information-protectio
   - Client-side/content-level
   - Automated for data-at-rest in SharePoint and OneDrive
 - Data Loss Prevention (DLP)
-- [Microsoft 365 Endpoint data loss prevention](../compliance/endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention](../compliance/endpoint-dlp-learn-about.md)
 - [Office 365 Message Encryption new capabilities (OME)](../compliance/ome.md) and OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md)
 
 In addition, site and library level protection are important mechanisms to include in any protection scheme.
@@ -81,7 +81,7 @@ For information on other information protection capabilities outside of Microsof
 
 ## Sensitivity labels
 
-Sensitivity labels from the Microsoft Information Protection framework let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
+Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
 
 > [!div class="mx-imgBorder"]
 > ![Sensitivity labels in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
@@ -93,7 +93,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 1. Understand the following:
    - **Business requirements.** Establish the business reasons for applying sensitivity labels in your enterprise. For example, your data privacy requirements for information protection.
    - **Sensitivity label capabilities.** Sensitivity labeling can get complex, so make sure to read the [sensitivity labels documentation](../compliance/sensitivity-labels.md) before getting started.
-   - **Key things to remember** Sensitivity labels are managed in the Microsoft Compliance admin center but the targeting and application options vary significantly.
+   - **Key things to remember** Sensitivity labels are managed in the Microsoft Purview compliance portal but the targeting and application options vary significantly.
       - There are sensitivity labels for sites, groups, and Teams at the container level (the settings do not apply to content inside the container). These are published to users and groups who apply them when a site, group or Team is provisioned.
       - There are sensitivity labels for active content. These are also published to user or groups, who either manually apply them, or they get applied automatically when:
         - The file is opened/edited/saved, either to the user’s desktop or a SharePoint site.
@@ -109,7 +109,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 
       If you are planning to use modern sensitivity labeling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. See [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
-3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Defender for Cloud Apps. See [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md) to achieve your data privacy-related information protection goals.
+3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, sensitivity labels can be used along-side capabilities like Microsoft Purview Data Loss Prevention (DLP) and Microsoft Defender for Cloud Apps. See [Protect your data with Microsoft Purview](../compliance/information-protection.md) to achieve your data privacy-related information protection goals.
 
 4. Develop a sensitivity label classification and control scheme. See [Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper).
 
@@ -129,7 +129,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 
 ### Create and deploy sensitivity labels for sites, groups, and teams
 
-When you create [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, you can now apply them to these containers:
+When you create [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, you can now apply them to these containers:
 
 - Microsoft Teams sites
 - Microsoft 365 groups (formerly Office 365 groups)
@@ -153,7 +153,7 @@ When you're ready to start protecting your organization's data with sensitivity 
 2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark and have encryption enabled.
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable. You define it once and then you can include it in several label policies assigned to different users.
 
-Once you publish sensitivity labels from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
+Once you publish sensitivity labels from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
 
 ![Sensitivity label deployment flow in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -203,7 +203,7 @@ DLP allows you to:
 
 ### Supported workloads for DLP
 
-With a DLP policy in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, you can identify, monitor, and automatically protect sensitive items across many locations in Microsoft 365, such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams.
+With a DLP policy in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, you can identify, monitor, and automatically protect sensitive items across many locations in Microsoft 365, such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams.
 
 For example, you can identify any document containing a credit card number that's stored in any OneDrive site, or you can monitor just the OneDrive sites of specific people.
 
@@ -246,7 +246,7 @@ Although sensitivity labels can’t be used in DLP policy conditions, certain pr
 
 ### DLP policies
 
-DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of data.
+DLP policies are configured in the Microsoft Purview compliance portal and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of data.
 
 > [!div class="mx-imgBorder"]
 > ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)

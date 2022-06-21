@@ -26,7 +26,7 @@ ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: "Learn how you can have more than one email address, called an email alias, associated with your Microsoft 365 for business account. "
 ---
 
-# Add another email alias for a user
+# Add another email alias for a Microsoft 365 business subscription user
   
 This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
   
@@ -61,7 +61,7 @@ You must have Global Admin rights to add email aliases to a user.
 
 
    > [!IMPORTANT]
-   >  If you get the error message **This user is synchronized with your local Active Directory‎. Some details can be edited only through your local Active Directory**, It means that the Active Directory is authoritative for  attributes on synchronized users, you need to modify the attributes in your on-premises Active Directory.
+   >  If you get the error message **This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory**, It means that the Active Directory is authoritative for  attributes on synchronized users, you need to modify the attributes in your on-premises Active Directory.
   
     > [!TIP]
     > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 

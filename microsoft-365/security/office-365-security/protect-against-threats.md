@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Protect against threats
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -305,7 +305,7 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
 
 6. On the **Review your settings** page, review your settings, verify **Yes, turn it on right away** is selected, and then click **Finish**
 
-To learn more about alert policies, see [Alert policies in the Microsoft 365 compliance center](../../compliance/alert-policies.md).
+To learn more about alert policies, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
 
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
