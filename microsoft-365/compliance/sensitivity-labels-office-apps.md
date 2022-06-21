@@ -410,8 +410,9 @@ Word, Excel, and PowerPoint support the following methods to convert an Office d
 - File > Export > PDF
 - Share > Send a Copy > PDF
 
-When the PDF is created, it inherits the label with any content markings and encryption. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+This action is logged with the **Renamed file** audit event from the [File and page activities](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) auditing group. In the auditing search results in the compliance portal, you'll see the details of this auditing event display **SensitivityLabeledFileRenamed** for the **Activity** field.
 
+When the PDF is created, it inherits the label with any content markings and encryption. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
 PDF scenarios not supported:
 
@@ -423,7 +424,7 @@ PDF scenarios not supported:
 
 - PDF/A format and encryption
     
-     This PDF format designed for long-term archiving isn't supported when the label applies encrytion and will prevent users from converting Office documents to PDF.
+     This PDF format designed for long-term archiving isn't supported when the label applies encrytion and will prevent users from converting Office documents to PDF. For configuration information, see the Group Policy documentation for [Enforce PDF compliance with ISO 19005-1 (PDF/A)](https://admx.help/?Category=Office2016&Policy=office16.Office.Microsoft.Policies.Windows::L_EnforcePDFcompliancewithISO190051PDFA).
     
 - Password protection and encryption
     

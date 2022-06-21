@@ -198,9 +198,10 @@ Configuration Manager name: Not yet available
   
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
-<!-- Hide this intro with no subsequent list items
 Advanced hunting action type:
--->
+
+- AsrVulnerableSignedDriverAudited
+- AsrVulnerableSignedDriverBlocked
 
 <!-- 
 Dependencies: none provided by engineering

@@ -36,3 +36,7 @@ Microsoft 365 Lighthouse enables Microsoft Cloud Service Providers to secure and
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (which now includes [Microsoft Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md))
 
 To learn more, see [Overview of Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md).
+
+## See also
+
+[Microsoft Defender for Business and managed service provider resources](mdb-partners.md)
