@@ -51,7 +51,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
   - Regulate apps with priority account consent
 
-- New Salesforce and ServiceNow recommendations are now available as a Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
+- New Salesforce and ServiceNow recommendations are now available as Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
 
 >[!Note]
 >Salesforce and ServiceNow controls are now available in public preview.
