@@ -132,7 +132,7 @@ Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine
 
 ## Integration with Microsoft Defender for Cloud
 
-Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Cloud. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer.
+Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Cloud. You can onboard servers automatically, have servers monitored by Microsoft Defender for Cloud appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer.
 
 For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
 
