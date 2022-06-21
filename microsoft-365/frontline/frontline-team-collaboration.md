@@ -46,6 +46,8 @@ Teams includes the following ways to communicate and share information:
 
 ### See examples of how different industries can use communication capabilities in Teams
 
+These examples are for industries included in the Microsoft industry clouds, but you can use these capabilities for an organization in any sector.
+
 #### Financial services
 
 Bank employees can use Teams to communicate across branches and share information. Each branch can use a separate channel, as can different work groups such as tellers and advisors. Banks can hold Teams meetings for different branches to learn about new policies and products. They can also hold morning meetings with the whole region before the branches open. When the bank launches a new product, such as a credit card or account type, fact sheets can be shared in Teams so everyone has quick access to new information.
@@ -66,8 +68,6 @@ Retail employees can use Teams to keep in touch and better serve customers. Diff
 
 Your team can use apps in Teams to coordinate and collaborate with each other on everyday tasks, such as the following:
 
-![Infographic showing the different functions available in Teams and as Teams apps as described in the list below.](media/retail-teams-collaborate.png)
-
 - [Create, manage, and share schedules with Shifts](#create-manage-and-share-schedules-with-shifts)
 - [Keep in touch with Walkie Talkie](#keep-in-touch-with-walkie-talkie)
 - [Boost morale with Praise](#boost-morale-with-praise)
@@ -76,6 +76,9 @@ Your team can use apps in Teams to coordinate and collaborate with each other on
 - [Check in on progress with Updates](#check-in-on-progress-with-updates)
 
 Financial services organizations can also use the [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) to seamlessly collaborate on the lending process.
+
+> [!TIP]
+> Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
 
 ### Create, manage, and share schedules with Shifts
 
@@ -121,10 +124,10 @@ Use Tasks in Teams to track to-do items for your whole retail team. Store manage
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |
+|Financial services |A bank manager can assign mortgage specialists a task to review and get familiar with new rates or policies. |
+|Healthcare |A team leader at a doctor's office could assign a nurse a task to attend a training session. |
+|Nonprofit |A volunteer coordinator working in fundraising could assign a volunteer a task to call a significant donor. |
+|Retail |A store manager could assign associates a task to set up a new seasonal display. |
 
 [Learn how to manage the Tasks app for your organization](/microsoftteams/manage-tasks-app).
 
@@ -136,9 +139,9 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
+|Financial services |A lending specialist could submit an approval request to a supervisor to offer a special interest rate. |
+|Healthcare |A nurse could submit an approval request to change an inpatient's medication. |
+|Nonprofit |An event coordinator could submit an approval request to access funding. |
 |Retail |A sales associate could submit an approval request to offer a discount or special rate to a customer. |
 
 [Learn about Teams Approvals app availability](/microsoftteams/approval-admin).
@@ -151,10 +154,10 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |
-|Healthcare |
-|Nonprofit |
-|Retail |
+|Financial services |A bank manager could create and assign a recurring daily template for tellers to confirm morning counts. |
+|Healthcare |A team leader could create and assign a recurring daily template with a checklist for equipment preparation. |
+|Nonprofit |A team leader could assign an update for fundraising volunteers to submit their progress. |
+|Retail |A manager could assign the out-of-the-box Store Opening template for the shift lead to complete every morning. |
 
 [Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app).
 
@@ -180,3 +183,10 @@ More information: [Create a team with templates](https://support.microsoft.com/o
 Refine what's in your team with apps. You can allow or block apps for your organization, or configure settings for apps, in the Microsoft Teams admin center. For more information about managing apps, see [Manage apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
 
 Your users can add any apps that you have allowed to their teams. Share this training with your users to show them how: [Find and use Apps](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
+
+## Learn more about Teams capabilities for specific industries
+
+[Teams for Healthcare](teams-in-hc.md)
+[Teams for nonprofit](teams-for-nonprofit-landing-page.md)
+[Teams for retail](teams-for-retail-landing-page.md)
+[Collaboration manager for Loans for financial services](/industry/financial-services/collaboration-manager/overview)
