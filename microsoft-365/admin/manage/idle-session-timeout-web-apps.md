@@ -13,7 +13,7 @@ ms.collection: Adm_TOC
 description: "Set how long user's session will last in Microsoft 365 before they're timed out."
 ---
 
-# Idle session timeout for Microsoft 365
+# Idle session timeout for Microsoft 365 (Public Preview)
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
