@@ -54,7 +54,7 @@ Bring in-store associates and management together to collaborate and streamline 
 
 **Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
 
-More information: [Retail team collaboration](retail-team-collaboration.md)
+More information: [Frontline team collaboration](flw-team-collaboration.md)
 
 ### Cross-store communication and collaboration
 
@@ -64,7 +64,7 @@ Staff members can communicate and collaboration across multiple stores in a regi
 
 **Additional services:** Viva Connections, Yammer, SharePoint, Power Platform and Power Apps
 
-More information: [Retail team collaboration](retail-team-collaboration.md)
+More information: [Frontline team collaboration](flw-team-collaboration.md)
 
 ### Virtual fittings and consultations
 
@@ -94,7 +94,7 @@ Employee engagement is a significant contributor to workplace satisfaction, loya
 
 **Additional services:** Viva Connections, SharePoint, Stream, Yammer
 
-More information: [Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)
+More information: [Corporate communications with frontline workers](flw-corp-comms.md)
 
 ### Onboarding new employees
 

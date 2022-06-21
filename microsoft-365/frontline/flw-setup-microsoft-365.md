@@ -35,8 +35,8 @@ The following table lists the scenarios for your frontline workers. You can read
 
 | Scenario | Required services |
 |  ------- | -------  |
-| [Team communication and collaboration](retail-team-collaboration.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Email with Exchange Online](#set-up-email-with-exchange-online) |
-| [Corporate communications](/sharepoint/corporate-communications-overview) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
+| [Team communication and collaboration](flw-team-collaboration.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Email with Exchange Online](#set-up-email-with-exchange-online) |
+| [Corporate communications](flw-corp-comms.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Virtual appointments](bookings-virtual-visits.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
 | Engage your employees and focus on employee wellbeing| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Insights](#set-up-viva-insights) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
@@ -118,7 +118,7 @@ Scenarios and apps
 
 | Scenario | Approvals | Bookings | Lists | Praise | Shifts | Tasks | Updates |
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [Team communication and collaboration](retail-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
+| [Team communication and collaboration](flw-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
 | [Corporate communications](/sharepoint/corporate-communications-overview) |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |
 | [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md) |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp;|  &nbsp; |
 | Wellbeing & engagement |  &nbsp; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |

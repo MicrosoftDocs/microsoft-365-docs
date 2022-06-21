@@ -53,10 +53,10 @@
         href: 
   - name: Communications
     items: 
-    - name: Overview
-      href: retail-team-collaboration.md
+    - name: Frontline team collaboration
+      href: flw-team-collaboration.md
     - name: Corporate communications with frontline workers
-      href: corp-comms-for-frontline.md
+      href: flw-corp-comms.md
   - name: Virtual appointments
     items: 
     - name: Overview

@@ -63,7 +63,7 @@ productDirectory:
     - title: Solutions to transform your business
       imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-blue.svg
       links:
-        - url: retail-team-collaboration.md
+        - url: flw-team-collaboration.md
           text: Communication
         - url: bookings-virtual-visits.md
           text: Virtual appointments
