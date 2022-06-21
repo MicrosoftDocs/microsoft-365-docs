@@ -94,7 +94,7 @@ Note that admins can't add allows directly to the Tenant Allow/Block List. Inste
 
 7. Add why you are adding allow using the **Optional Note**. 
 
-8. When you're finished, click the **Submit** button.
+8. When you're finished, select the **Submit** button.
 
   :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Submit malware to Microsoft for analysis example." lightbox="../../media/admin-submission-allow-messages.png":::
 
