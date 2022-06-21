@@ -59,7 +59,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 - Disabling automatic actions on detected threats
-- Suppressing notifications in the Windows Security Center (WSC)
+- Suppressing notifications in the Windows Security app
 
 ### How it works
 
