@@ -49,7 +49,10 @@ This update includes the following:
 
   - Resolve unsecure domain configurations
 
-- Salesforce and ServiceNow recommendations as Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. Salesforce and ServiceNow controls are now also available in public preview. For more information, see[Security configuration overview](https://aka.ms/saas_security_posture_management).
+- Salesforce and ServiceNow recommendations are now supported as Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
+
+>[!Note]
+>Salesforce and ServiceNow controls are now available in public preview.
 
 ## April 2022
 
