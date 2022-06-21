@@ -1,5 +1,5 @@
 ---
-title: "Set up online meetings"
+title: "Set up online meetings in Microsoft Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Set up online meetings with Microsoft Teams."
+description: "Set up online meetings with Microsoft Teams in Microsoft Business Premium."
 ---
 
 # Set up meetings

@@ -1,5 +1,5 @@
 ---
-title: "Collaborate and share securely"
+title: "Collaborate and share securely in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,7 +23,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview on how to collaborate and share files and communicate securely using Teams. In the closed environment provide by Teams, files and communications are free from cyber threats and cyberattacks."
+description: "An overview on how to collaborate and share files and communicate securely using Teams in Microsoft 365 Business Premium. In the closed environment provide by Teams, files and communications are free from cyber threats and cyberattacks."
 ---
 
 # Collaborate and share securely

@@ -53,6 +53,8 @@ For a quick overview of communication compliance, see the [Detect workplace hara
 
 Check out how [TD Securities is using communication compliance](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) to address their regulatory obligations and meet their security and stability needs.
 
+Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) on how insider risk management and communication compliance work together to help minimize data risks from users in your organization.
+
 To keep up with the latest communication compliance updates, select **What's new** in [communication compliance](https://compliance.microsoft.com/) for your organization.
 
 > [!IMPORTANT]
@@ -154,7 +156,7 @@ You can choose from the following policy templates in the Microsoft Purview comp
 - **User-reported messages policy**: This system policy supports user reported messages from channel, group, and private chat messages. Enabled by default in the Teams admin center.
 
 >[!TIP]
->Use [recommended actions](communication-compliance-configure.md#recommended-actions-preview) to help you determine if you need a sensitive information type policy or if you need to update existing inappropriate content policies.
+>Use [recommended actions](communication-compliance-configure.md#recommended-actions) to help you determine if you need a sensitive information type policy or if you need to update existing inappropriate content policies.
 
 ### Investigate
 

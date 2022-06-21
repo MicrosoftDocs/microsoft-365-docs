@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/31/2022
+  ms.date: 05/23/2022
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -39,7 +39,7 @@ landingContent:
         - text: Sign up for a subscription
           url: admin-overview/sign-up-for-office-365.md
         - text: Set up the service
-          url: setup/business-set-up.md
+          url: /microsoft-365/business-premium/m365bp-setup
         - text: Secure Windows 10 PCs
           url: setup/secure-win-10-pcs.md
 
@@ -49,7 +49,7 @@ landingContent:
       - linkListType: video
         links:
         - text: Connect PCs to Microsoft 365
-          url: setup/set-up-windows-devices.md
+          url: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
         - text: Install Microsoft Office apps
           url: setup/install-applications.md
         - text: Set up Outlook for email
@@ -139,9 +139,9 @@ landingContent:
       - linkListType: video
         links:
         - text: Secure Windows 10 Pro devices
-          url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
+          url: /microsoft-365/business-premium/m365bp-secure-windows-devices
         - text: Secure Office apps on iOS
-          url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
+          url: /microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios?view=o365-worldwide
 
   # Card
   - title: Security & compliance
@@ -151,7 +151,7 @@ landingContent:
         - text: Overview of Microsoft 365 Business Premium security
           url: security-and-compliance/secure-your-business-data.md
         - text: (NEW!) Microsoft Defender for Business
-          url: /microsoft-365/security/defender-business/index.yml
+          url: /microsoft-365/security/defender-business/mdb-overview?view=o365-worldwide
         - text: Secure employee accounts with MFA
           url: security-and-compliance/set-up-multi-factor-authentication.md
         - text: Turn on malware detection
@@ -165,9 +165,9 @@ landingContent:
         - text: Manage safe links
           url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
         - text: Prevent data loss
-          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+          url: /microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide
         - text: Create sensitivity labels
-          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+          url: /microsoft-365/business-premium/m365bp-set-up-compliance
   # Card
   - title: Support
     linkLists:

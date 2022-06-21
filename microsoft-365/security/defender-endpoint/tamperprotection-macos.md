@@ -141,7 +141,7 @@ Add the following configuration in your Intune profile:
 > For Intune configuration, you can create a new profile configuration file to add the Tamper protection configuration, or you can add these parameters to the existing one.
 
 ```xml
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1">
     <dict>
@@ -337,7 +337,7 @@ If running the command `mdatp health` reports that the tamper protection is disa
 ```console
 $ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
 
-\[85246\]\[2021-12-08 15:45:34.184781 UTC\]\[info\]: \[{tamperProtection}\]: Feature state: enabledmode: "block"
+
 ```
 
 The mode must be "block" (or "audit"). If it is not, then you haven't set the tamper protection mode either through `mdatp config` command or through Intune.

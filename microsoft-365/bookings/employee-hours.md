@@ -13,9 +13,6 @@ description: "Set employee working hours and availability in Microsoft Bookings.
 
 # Employee working hours in Microsoft Bookings
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 Setting employee working hours ensures that their availability is accurately shown when your customers try to book them. By default, the working hours for each of your employees match the business hours you've established in the Microsoft Bookings app. See the "Set your business hours" section of [Enter business information](enter-business-information.md).
 
 On the **Staff** page, you can customize employee working hours to match the needs of your business and employees.
@@ -28,7 +25,7 @@ Watch this video or follow the steps below to set an employee's working hours.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-## Customize employee working hours
+## Steps
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 

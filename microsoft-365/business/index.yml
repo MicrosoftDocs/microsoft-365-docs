@@ -72,7 +72,7 @@ conceptualContent:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: Get Microsoft 365 Business Premium
-        - url: ../business-premium/m365bp-setup.md#use-the-guided-process-for-basic-setup
+        - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: 1. Complete the basic setup process
         - url: ../business-premium/m365bp-security-overview.md
@@ -158,7 +158,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-increase-protection.md
           itemType: how-to-guide
           text: Protect against phishing, malware, and other threats
-        - url: ../business-premium/avoid-phishing-and-attacks.md
+        - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md
           itemType: how-to-guide
           text: Know what to watch for in email content
         - url: ../business-premium/send-encrypted-email.md

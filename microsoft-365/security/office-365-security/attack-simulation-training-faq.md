@@ -23,6 +23,11 @@ ms.prod: m365-security
 
 # Attack simulation training deployment considerations and FAQ
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+
 Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, de-weaponized phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
 
 For more information about getting started with Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
@@ -124,6 +129,12 @@ If messages that users reported as phishing aren't captured in Attack simulation
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
 - not\_junk@office365.microsoft.com
+
+### Users are assigned training after they report a simulated message
+
+If users are assigned training after they report a phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **user submission policy**. When configuring a **custom mailbox**, this mailbox needs to be excluded from Safe Links and Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
+
+If your organization has a **custom mailbox** configured and has not set up the required exclusions, these messages may be detonated, causing training assignments.
 
 ## Other frequently asked questions
 

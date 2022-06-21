@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 # Configure your Microsoft 365 tenant for increased security
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -97,7 +97,7 @@ Be sure to visit these two areas in Azure Active Directory to complete tenant-wi
 
 If your organization includes offices with secure network access, add the trusted IP address ranges to Azure Active Directory as named locations. This feature helps reduce the number of reported false positives for sign-in risk events.
 
-See: [Named locations in Azure Active Directory](/azure/active-directory/active-directory-named-locations)
+See: [Named locations in Azure Active Directory](/azure/active-directory/conditional-access/location-condition)
 
 ### Block apps that don't support modern authentication
 

@@ -28,7 +28,7 @@ description: "Protect unmanaged or bring-your-own devices (BYOD) from cyberattac
 
 # Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium
 
-This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. It is very likely your small business or campaign may have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
+This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. It is very likely your small business or campaign may have staff who bring their own devices (BYOD), and these devices are not managed. BYOD include personally-owned phones, tablets, and PCs.
 
 >[!NOTE]
 >BYOD users must each install and run the Company Portal app to enroll these devices and receive access to company resources.
@@ -52,6 +52,8 @@ If you have an earlier version of Windows and are using Microsoft Security Essen
 **Turn on Windows Firewall**<p>
 You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions.
 
+## Next mission
+
 Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
 
 ## [Mac](#tab/Mac)
@@ -70,4 +72,3 @@ Use firewall settings to protect your Mac from unwanted contact initiated by oth
 ## Next mission
 
 Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
-
