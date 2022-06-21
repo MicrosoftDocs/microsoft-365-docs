@@ -37,8 +37,8 @@ There are some minimum requirements for onboarding devices to the service. Learn
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
-For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
+For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
@@ -58,10 +58,6 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 
 ### Supported Windows versions
 
-- Windows 7 SP1 Enterprise ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 7 SP1 Pro ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
 - Windows 11 Enterprise
 - Windows 11 Education
 - Windows 11 Pro
@@ -76,6 +72,10 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
+- Windows 7 SP1 Enterprise ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 7 SP1 Pro ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows server
   - Windows Server 2008 R2 SP1 ([Requires ESU for support](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
@@ -101,13 +101,13 @@ For more information on supported versions of Windows 10, see (/windows/release-
 > Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
 > For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+>
+> The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until at least:
 
 - The [end of support date](/lifecycle/products/) (for operating systems that do not have an Extended Security Updates (ESU) program).
 - The [end of ESU date](/lifecycle/faq/extended-security-updates) (for operating systems that have an ESU program).
-
-
 
 ### Other supported operating systems
 
