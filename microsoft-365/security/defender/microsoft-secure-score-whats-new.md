@@ -47,6 +47,8 @@ This update includes this new Microsoft Defender for Identity recommendation a
 
 - Resolve unsecure domain configurations
 
+This update includes Salesforce and ServiceNow recommendations as a Secure Score improvement action for MDA customers. Salesforce and ServiceNow controls are now also available in public preview. For more information, see[Security configuration overview](https://aka.ms/saas_security_posture_management)
+
 ## April 2022
 
 - Turn on user authentication for remote connections
