@@ -36,7 +36,7 @@ The following image shows the employee experiences that are key to frontline wor
 
 :::image type="content" source="media/frontline-employee-experience-wheel.png" alt-text="Diagram of employee experience wheel with methods to connect & engage with frontline workers, enhance workforce management, and increase operational efficiency.":::
 
-[Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
+[Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization. Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E1, E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
 ## Connect and engage your workforce
 
