@@ -36,6 +36,10 @@ Licensing for eDiscovery (Standard) requires the appropriate organization subscr
 
 - **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, users must be assigned one of the following licenses, depending on your organization subscription:
 
+  -  Exchange online Plan 2 license
+
+   OR
+   
   - A Microsoft 365 E3 or Office 365 E3 license or higher
 
    OR

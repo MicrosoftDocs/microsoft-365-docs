@@ -69,7 +69,7 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 
 ## Granular Delegated Admin Privileges (GDAP)
 
-Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
+Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Customers with GDAP-only relationships (without indirect reseller relationships) currently can't onboard to Lighthouse, but will be able to onboard in a future release.<br><br>
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
