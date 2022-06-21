@@ -98,7 +98,7 @@ To configure the settings for the default sharing link type for a site, the [sco
 
 ### PowerShell tips for specifying the advanced settings
 
-Although you can specify the sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. The label name is unique in your tenant, so you can sure you're configuring the correct label. The display name isn't unique and could result in configuring the wrong label. To find the GUID and confirm the label's scope:
+Although you can specify the sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. The label name is unique in your tenant, so you can be sure you're configuring the correct label. The display name isn't unique and could result in configuring the wrong label. To find the GUID and confirm the label's scope:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
