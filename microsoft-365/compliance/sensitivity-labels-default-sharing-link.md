@@ -110,7 +110,7 @@ To remove either of these advanced settings from a sensitivity label, use the sa
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
 ````
 
-To check your label's advanced settings, use the following syntax with your own label GUID:
+To check your label's configuration, including advanced settings, use the following syntax with your own label GUID:
 
 ```powershell
 (Get-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e).settings
