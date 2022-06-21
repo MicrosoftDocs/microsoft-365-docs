@@ -27,7 +27,7 @@ ms.technology: mde
 
 
 
-</details><details>
+<details = open>
 <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
 
 &ensp;Released: **May 23, 2022**<br/>
@@ -46,7 +46,9 @@ ms.technology: mde
 </br>
 
 <br/><br/>
-</details><details>
+</details>
+
+<details>
 <summary>May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)</summary>
 
 &ensp;Released: **May 2, 2022**<br/>
