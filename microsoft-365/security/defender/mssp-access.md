@@ -123,6 +123,3 @@ To implement a multi-tenant delegated access solution, take the following steps:
      At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Defender portal:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
-
-> [!IMPORTANT]
-> Delegated access to Microsoft Defender for Endpoint in the Microsoft 365 Defender portal currently allows access to a single tenant per browser window.
