@@ -123,7 +123,7 @@ Retail staff is typically a mobile workforce: frontline workers and managers who
 
 With high turnover, the ability to add and remove accounts quickly, and get the right policies assigned is key. Get started with the Frontline Worker Onboarding wizard in the Microsoft 365 admin center. The wizard sets up a team for your frontline workers and assigns licenses and policy packages to each team member. For more information, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
 
-If you have a lot of users to add (more than 100), you can quickly provision users and teams and assign all relevant policies with a [scripted deployment for frontline workers](flw-scripted-deployment.md).
+If you have a lot of teams that you want to deploy, see [Deploy teams at scale for frontline workers](deploy-teams-at-scale.md).
 
 The presence of Frontline Workers is often less predictable than other staff as their working hours are typically not the same each day. As an admin, you can configure Teams with Shift-based access (Preview) to show a set of shift-based presence states for the Frontline Workers in your organization to indicate when they are on and off shift. You can also manage access to Teams when frontline workers are off shift. For more information, see [Manage shift-based access for Frontline Workers](manage-shift-based-access-flw.md).
 

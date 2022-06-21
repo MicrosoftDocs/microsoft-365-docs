@@ -35,9 +35,6 @@ Check out this short video for an overview of how to run the wizard to onboard y
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWN6oh]
 
 > [!NOTE]
-> This wizard lets you quickly onboard your frontline workforce to Teams through the Microsoft 365 admin center. For information about how deploy Teams to your frontline workforce using scripts, see [How to provision Teams at scale for Frontline Workers](flw-scripted-deployment.md).
-
-> [!NOTE]
 > The wizard doesn't support [sensitivity labels](/microsoftteams/sensitivity-labels) yet. If your organization requires sensitivity labels to create a team, you won't see the wizard in the Microsoft 365 admin center.
 
 ## Run the wizard
