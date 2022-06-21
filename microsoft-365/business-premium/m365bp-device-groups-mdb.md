@@ -14,7 +14,6 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-description: "How to group devices in Microsoft Defender endpoint protection, as well as how to create device categories in Microsoft InTune."
 ---
 
 # Device groups and categories in Microsoft 365 Business Premium
