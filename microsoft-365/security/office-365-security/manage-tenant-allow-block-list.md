@@ -90,7 +90,7 @@ To allow or block files, see [Allow or block files using the Tenant Allow/Block 
 
 To allow or block URLs, see [Allow or block URLs using the Tenant Allow/Block List](allow-block-urls.md).
 
-These articles contain the instructions to add or remove or modify entries in Tenant Allow/Block List using both Microsoft 365 Defender Portal and Exchange Online Powershell or standalone EOP Powershell.
+These articles contain the instructions to add or remove or modify entries in Tenant Allow/Block List using both Microsoft 365 Defender Portal and Exchange Online PowerShell or standalone EOP PowerShell.
 
 ### What to expect after you add an allow or block entry
 
