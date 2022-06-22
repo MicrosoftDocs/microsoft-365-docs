@@ -179,7 +179,7 @@ This button starts the **Create policy** configuration, which lets you edit whic
 
 ### Additional label policy settings with Security & Compliance PowerShell
 
-Additional label policy settings are available with the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet and [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) from [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
+Additional label policy settings are available with the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet from [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 Advanced settings supported by built-in labeling are included in the PowerShell documentation. For additional advanced settings supported by the Azure Information Protection unified labeling client, see the [documentation from this client's admin guide](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies).
 
