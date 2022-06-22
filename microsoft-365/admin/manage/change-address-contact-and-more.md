@@ -52,6 +52,9 @@ To change other information on your company's profile page:
 2. On the **Organization profile** tab, select **Organization information**.
 3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
 
+> [!NOTE]
+> Sharepoint online and Onedrive has a 256 character limit on your Windows PC. As users synchronize the document libraries to their PCs, they will encounter the error messages when trying to do anything within synchronized document libraries (i.e., create folders, rename documents, etc.).
+
 An explanation of each field is provided below.
 
 ## What do these fields mean?
