@@ -1,5 +1,5 @@
 ---
-title: What is Microsoft 365 for frontline workers?
+title: Get started with Microsoft 365 for frontline workers
 description: Learn how you can use Microsoft 365 and Teams to empower the frontline workers in your organization.
 search.appverid: MET150
 author: samanro
@@ -19,7 +19,7 @@ appliesto:
 
 ---
 
-# What is Microsoft 365 for frontline workers?
+# Get started with Microsoft 365 for frontline workers
 
 Frontline workers are employees whose primary function is to work directly with customers or the general public providing services, support, and selling products, or employees directly involved in the manufacturing and distribution of products and services. Microsoft 365 for frontline workers helps support employee experiences in the following areas so that your frontline workers can do their best work and help your customers:
 

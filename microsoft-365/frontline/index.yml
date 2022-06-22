@@ -27,7 +27,7 @@ productDirectory:
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
       links:
         - url: flw-overview.md
-          text: Overview
+          text: Get started with Microsoft 365 for frontline workers
         - url: flw-choose-scenarios.md
           text: Choose your scenarios for Microsoft 365 for frontline workers
         - url: flw-trial.md
