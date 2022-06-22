@@ -40,7 +40,8 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Release version: **30.122042.16880.0**<br/>
 
 
-### What's new
+**What's new**
+
 - Added support for kernel version `2.6.32-754.47.1.el6.x86_64` when running on RHEL 6
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
 - Fixed an issue where the process name was sometimes incorrectly displayed as `unknown` when running `mdatp diagnostic real-time-protection-statistics`
@@ -160,7 +161,7 @@ This article is updated frequently to let you know what's new in the latest rele
   Build: 101.52.57 <br>
   Release version: 30.121092.15257.0</b></p>
    
-  <p> What's new </p>
+  <p><b> What's new </b></p>
 
    - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Javaprocesses  with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in theVulnerability Management    area of the portal.
    
@@ -172,7 +173,7 @@ This article is updated frequently to let you know what's new in the latest rele
   Build: 101.47.76 <br>
   Release version: 30.121092.14776.0</b></p>
    
-  <p> What's new </p>
+  <p><b>What's new</b></p>
 
    - Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through mdatp config scan-archives --value [enabled/disabled]. By default, this is set to enabled.
 
