@@ -107,6 +107,8 @@ Quickly build custom apps and digital tools for Microsoft Teams, with little or 
 - **[Power Virtual Agents](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams):** Build low-code chatbots to provide conversational, AI-driven insights and information.
 - **[Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams):** Discuss and visualize data to align teams and confidently make data-driven decisions.
 
+Access to the Power Platform features in Teams is available with the F3 license in Microsoft 365 for frontline workers. For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+
 ### Custom apps built on the Teams platform
 
 With code from scratch or leveraging templated and sample code, you can build custom apps on the [Teams platform](/microsoftteams/platform/).
