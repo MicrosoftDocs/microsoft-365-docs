@@ -96,13 +96,13 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
 
 > [!NOTE]
-> Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
+> - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 >
-> Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
+> - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
-> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+> - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 >
-> The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until at least:
 
