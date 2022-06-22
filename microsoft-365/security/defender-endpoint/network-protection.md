@@ -182,21 +182,29 @@ You can enable network protection in **Audit** mode or **Block** mode. If you wa
 
 If you're using advanced hunting to identify audit events you'll have up to 30 days history available from the console. See [Advanced hunting](advanced-hunting-overview.md).
 
-You can find the audit data in **Advanced hunting** in the Microsoft Defender for Endpoint portal.  
+You can find the audit data in **Advanced hunting** in the Defender for Endpoint portal ([https://security.microsoft.com](https://security.microsoft.com)).  
 
-The events are in DeviceEvents with an ActionType of ExploitGuardNetworkProtectionAudited. Blocks are shown by ExploitGuardNetworkProtectionBlocked.  
+The events are in DeviceEvents with an ActionType of `ExploitGuardNetworkProtectionAudited`. Blocks are shown by `ExploitGuardNetworkProtectionBlocked`.  
 
 The following example includes the blocked actions:
+
+```kusto
 
 DeviceEvents
 
 - Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
+```
+
  > [!div class="mx-imgBorder"]
  > ![Advanced hunting for auditing and identifying events](images/network-protection-advanced-hunting.png)
 
 > [!TIP]
-> These entries have data in the AdditionalFields column which gives you great info around the action, if you expand AdditionalFields you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
+> These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
+
+Here is an additional example:
+
+```kusto
 
 DeviceEvents:
 
@@ -205,7 +213,8 @@ DeviceEvents:
 - project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
 - sort by Timestamp desc
 
-Response category tells you what caused the event, for example:
+```
+The Response category tells you what caused the event, for example:
 
 | ResponseCategory | Feature responsible for the event |
 |:---|:---|
@@ -219,7 +228,7 @@ For more information, see [Troubleshoot endpoint blocks](web-protection-overview
 
 You can use the resulting list of URLs and IPs to determine what would have been blocked if the device was in block mode, as well as which feature blocked them. Review each item on the list to identify URLS or IPs whether any are necessary to your environment. If you find any entries that have been audited which are critical to your environment, create an Indicator to allow them in your network. Allow URL / IP indicators take precedence over any block.
 
-Once you've created an Indicator you can look at resolving the underlying issue:
+Once you've created an indicator you can look at resolving the underlying issue:
 
 - SmartScreen – request review
 - Indicator – modify existing indicator
@@ -254,13 +263,15 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how network
 
 ## Review network protection events in the Microsoft 365 Defender portal
 
-Microsoft Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md). You can view these details in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) in the [alerts queue](review-alerts.md) or by using [advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how network protection settings would affect your environment if they were enabled.
+Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md). You can view these details in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) in the [alerts queue](review-alerts.md) or by using [advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how network protection settings would affect your environment if they were enabled.
 
 Here's an example query for advanced hunting:
 
 ```kusto
+
 DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
+
 ```
 
 ## Review network protection events in Windows Event Viewer
@@ -273,14 +284,11 @@ You can review the Windows event log to see events that are created when network
 
 This procedure creates a custom view that filters to only show the following events related to network protection:
 
-****
-
 |Event ID|Description|
 |---|---|
 |5007|Event when settings are changed|
 |1125|Event when network protection fires in audit mode|
 |1126|Event when network protection fires in block mode|
-|
 
 ## Network protection and the TCP three-way handshake
 
@@ -315,10 +323,11 @@ For Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Des
 1. Use [Turn on network protection](enable-network-protection.md) and follow the instructions to apply your policy.
 
 2. Execute the following PowerShell commands:
-  - `Set-MpPreference -EnableNetworkProtection Enabled`
-  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
-  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
-  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
+
+   - `Set-MpPreference -EnableNetworkProtection Enabled`
+   - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+   - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+   - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## Network protection troubleshooting
 
