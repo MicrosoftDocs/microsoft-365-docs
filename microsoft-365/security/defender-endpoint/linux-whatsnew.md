@@ -25,6 +25,11 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
+This article is updated frequently to let you know what's new in the latest releases of Microsoft Defender for Endpoint on Linux. 
+
+- [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
+- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
 ## 2022 releases
 
 <details open> <summary>Click to expand!</summary>
