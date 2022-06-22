@@ -172,18 +172,6 @@ This article is updated frequently to let you know what's new in the latest rele
 
 
 
- <details>
-  <summary><b><u>Top Level Toggle</u></b></summary>
-
-  <p>
-          Great, Top Layer summary text working fine.
-  </p>
-
-  *   <details>
-      <summary><b>Mid Toggle</b></summary>
-
-      <p>
-          Great, Middle Layer summary text working fine.
-      </p>
-
+<details><summary>Hello</summary><blockquote>
+  <details><summary>World</summary></details>
 </details>
