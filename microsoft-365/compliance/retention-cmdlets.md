@@ -70,13 +70,13 @@ When the locations are for Teams chat messages, Teams channel messages, Exchange
 |Cmdlet|Description|Applicable locations|
 |:-----|:-----|:-----|:-----|
 |[Get-AppRetentionCompliancePolicy](/powershell/module/exchange/get-appretentioncompliancepolicy) | View retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
-|[Get-AppRetentionCompliancePolicyRule](/powershell/module/exchange/get-appretentioncompliancepolicyrule) | View retention settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
+|[Get-AppRetentionComplianceRule](/powershell/module/exchange/get-appretentioncompliancerule) | View retention settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
 |[New-AppRetentionCompliancePolicy](/powershell/module/exchange/new-appretentioncompliancepolicy) | Create a retention policy |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
-|[New-AppRetentionCompliancePolicyRule](/powershell/module/exchange/new-appretentioncompliancepolicyrule) | Create retention settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
+|[New-AppRetentionComplianceRule](/powershell/module/exchange/new-appretentioncompliancerule) | Create retention settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
 |[Remove-AppRetentionCompliancePolicy](/powershell/module/exchange/remove-appretentioncompliancepolicy) | Delete a retention policy and corresponding settings |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
-|[Remove-AppRetentionCompliancePolicyRule](/powershell/module/exchange/remove-appretentioncompliancepolicyrule) | Delete settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
+|[Remove-AppRetentionComplianceRule](/powershell/module/exchange/remove-appretentioncompliancerule) | Delete settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
 |[Set-AppRetentionCompliancePolicy](/powershell/module/exchange/remove-appretentioncompliancepolicy) | Configure retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
-|[Set-AppRetentionCompliancePolicyRule](/powershell/module/exchange/remove-appretentioncompliancepolicyrule) | Configure settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
+|[Set-AppRetentionComplianceRule](/powershell/module/exchange/remove-appretentioncompliancerule) | Configure settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
 
 ## Configuration guidance
 
