@@ -40,20 +40,14 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 Network protection helps protect devices from Internet-based events. Network protection is an attack surface reduction capability. It helps prevent employees from accessing dangerous domains through applications. Domains that host phishing scams, exploits, and other malicious content on the Internet are considered dangerous. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or hostnames.
-
-> [!TIP]
-> See the Microsoft Defender for Endpoint testground site at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how network protection works.
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
 
 Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
 ## Requirements for network protection
 
-Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
+Network protection requires Windows 10 or 11 (Pro or Enterprise), or Windows Server version 1803 or later, and Microsoft Defender Antivirus real-time protection.
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
@@ -61,34 +55,31 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 
 ## Why network protection is important
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-> Information about the features that are commercially available follows the Public Preview information.
-
 Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer the network layer of blocking URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections.
 
 By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
 
-- Block IP / URL from your own Threat Intel (Indicators)
-- Block unsanctioned services from Microsoft Defender for Cloud Apps (formerly Microsoft Cloud App Security)
-- Block sites based on category (Web content filtering)
+- Block IP/URL addresses from your own threat intelligence ([indicators](indicator-ip-domain.md))
+- Block unsanctioned services from [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) (formerly known as Microsoft Cloud App Security)
+- Block sites based on category ([Web content filtering](web-content-filtering.md))
 
-Network Protection is a critical part of the Microsoft protection and response stack.
+Network protection is a critical part of the Microsoft protection and response stack.
 
-For details about Network Protection for Windows Server, Linux, MacOS and MTD, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
+> [!TIP]
+> For details about network protection for Windows Server, Linux, MacOS and Mobile Threat Defense (MTD), see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
 ### Block Command and Control (C2) attacks
 
-C2 server computers are used by malicious users to send commands to systems compromised by malware, and then exert some type of control over compromised systems. C2 attacks typically hide in cloud-based services such as file-sharing and webmail services, enabling the C2 servers to avoid detection by blending in with typical traffic.
+Command and Control (C2) server computers are used by malicious users to send commands to systems compromised by malware, and then exert some type of control over compromised systems. C2 attacks typically hide in cloud-based services such as file-sharing and webmail services, enabling the C2 servers to avoid detection by blending in with typical traffic.
 
 C2 servers can be used to initiate commands that can:
 
-- steal data (for example, by way of phishing)
-- control compromised computers in a botnet
-- disrupt legitimate applications
-- spread malware, such as ransomware
+- Steal data (for example, by way of phishing)
+- Control compromised computers in a botnet
+- Disrupt legitimate applications
+- Spread malware, such as ransomware
 
-The Network Protection component of Microsoft Defender for Endpoint identifies and blocks connections to C2 infrastructures used in human-operated ransomware attacks, using techniques like machine learning and intelligent indicator-of-compromise (IoC) identification.
+The network protection component of Defender for Endpoint identifies and blocks connections to C2 infrastructures used in human-operated ransomware attacks, using techniques like machine learning and intelligent indicator-of-compromise (IoC) identification.
 
 #### Network protection: New toast notifications
 
@@ -146,7 +137,7 @@ A user visits a website:
 
 In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
 
-Support for Command and Control (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure means stopping the progression of an attack to its next stage.
+Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure means stopping the progression of an attack to its next stage.
 
 #### Detecting and remediating CobaltStrike (public preview)
 
@@ -154,7 +145,7 @@ One of the most common post-exploitation frameworks used in human-operated ranso
 
 CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators of compromise (IoC). Once captured, these indicators are shared throughout Microsoft's product stack for detection and protection purposes.
 
-Microsoft Defender's command and control detection isn't limited to CobaltStrike. Microsoft Defender can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
+Defender for Endpoint's command and control detection isn't limited to CobaltStrike. Defender for Endpoint can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
 
 Blocking command-and-control communication can severely impede a targeted attack, giving defenders time to find the initial entry vectors and close them down before another attempted attack.
 
@@ -164,7 +155,7 @@ Blocking command-and-control communication can severely impede a targeted attack
 
 ## Smart Screen Unblock
 
-A new feature in Microsoft Defender for Endpoint Indicators enables administrators to allow end users to bypass "Warnings" generated for some URLs and IPs. Depending on why the URL was blocked, when a Smart Screen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
+A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass "Warnings" generated for some URLs and IPs. Depending on why the URL was blocked, when a Smart Screen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
  > [!div class="mx-imgBorder"]
  > ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
