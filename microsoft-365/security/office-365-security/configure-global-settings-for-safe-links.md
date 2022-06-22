@@ -40,6 +40,7 @@ You configure most Safe Links settings in Safe Links policies. For instructions,
 But, Safe Links also uses the following global settings that you configure outside of the Safe Links policies themselves:
 
 - The **Block the following URLs** list. This setting applies to all users who are included in any active Safe Links policies. For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links)
+
 - Safe Links protection for Office 365 apps. These settings apply to all users in the organization who are licensed for Defender for Office 365, regardless of whether the users are included in active Safe Links policies or not. For more information, see [Safe Links settings for Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).
 
 You can configure the global Safe Links settings in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
@@ -70,6 +71,9 @@ You can configure the global Safe Links settings in the Microsoft 365 Defender p
 - [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Configure the "Block the following URLs" list in the Microsoft 365 Defender portal
+
+> [!NOTE]
+> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
 
 The **Block the following URLs** list identifies the links that should always be blocked by Safe Links scanning in supported apps. For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links).
 
