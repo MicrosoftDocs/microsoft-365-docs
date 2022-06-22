@@ -21,6 +21,8 @@ appliesto:
 
 # Get started with Microsoft 365 for frontline workers
 
+## What is Microsoft 365 for frontline workers?
+
 Frontline workers are employees whose primary function is to work directly with customers or the general public providing services, support, and selling products, or employees directly involved in the manufacturing and distribution of products and services. Microsoft 365 for frontline workers helps support employee experiences in the following areas so that your frontline workers can do their best work and help your customers:
 
 - [Connect and engage your workforce](#connect-and-engage-your-workforce)
@@ -36,9 +38,13 @@ The following image shows the employee experiences that are key to frontline wor
 
 :::image type="content" source="media/frontline-employee-experience-wheel.png" alt-text="Diagram of employee experience wheel with methods to connect & engage with frontline workers, enhance workforce management, and increase operational efficiency.":::
 
+### Licensing for your frontline workers
+
 [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
-Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E1, E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization. Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E1, E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization. 
+
+Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 ## Connect and engage your workforce
 

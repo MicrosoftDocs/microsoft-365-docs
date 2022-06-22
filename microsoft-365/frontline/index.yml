@@ -69,7 +69,7 @@ productDirectory:
           text: Virtual appointments
         - url: shifts-for-teams-landing-page.md
           text: Schedule management
-        - url: /sharepoint/onboard-employees
+        - url: flw-onboarding.md
           text: Training and onboarding
         - url: retail-business-processes.md
           text: Digitized processes
