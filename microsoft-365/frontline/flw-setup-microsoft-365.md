@@ -45,7 +45,7 @@ The following table lists the scenarios for your frontline workers. You can read
 | [Simplify business processes](retail-business-processes.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#set-up-power-apps-power-automate-and-power-bi) |
 | Manage sites, stores, and projects| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#set-up-power-apps-power-automate-and-power-bi) |
 
-Some services are only included with F3 licenses, such as email and OneDrive. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
+Some services are only included with F3 licenses, such as email and the Power Platform. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
 
 ## Step 2: Set up your environment and core Microsoft 365
 
@@ -68,10 +68,6 @@ If you want your frontline managers and workers to have access to email, you nee
 
 Note that your users can also install the Outlook app to use for their email, so you'll want to make sure you share where to download the Outlook app with them.
 
-### Set up file storage with OneDrive
-
-[OneDrive](/onedrive) provides file storage, sharing, collaboration, and syncing capabilities. Users must have an F3 license to use OneDrive. [OneDrive setup guide](https://aka.ms/ODfBquickstartguide) to set it up.
-
 ### Set up sites with SharePoint in Microsoft 365
 
 [SharePoint](/sharepoint/sharepoint-online) lets you share documents and create sites. Use the [SharePoint setup guide](https://aka.ms/spoguidance) in the Microsoft 365 admin center to set it up.
@@ -89,11 +85,6 @@ Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeE
 #### Set up Viva Learning
 
 [Viva Learning](/viva/learning/) is an app in Microsoft Teams that empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. See [Set up Microsoft Viva Learning in the Teams admin center](/viva/learning/set-up-viva-learning) to learn how to set up Viva Learning.
-
-
-#### Set up Viva Topics
-
-[Viva Topics](/viva/topics/) . See [Set up Microsoft Viva Topics](/viva/topics/set-up-topic-experiences).
 
 ### Set up your organization's social network with Yammer
 
