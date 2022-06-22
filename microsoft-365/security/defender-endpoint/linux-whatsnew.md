@@ -153,20 +153,19 @@ This article is updated frequently to let you know what's new in the latest rele
 
 </details>
 
-<details> 
- <summary> 2021 releases </summary>
+<details><summary> 2021 releases</summary>
 
-   <details>
-   <summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
+   <details><summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
    
-  <p><b> Build: 101.52.57</p>
-  <p>Release version: 30.121092.15257.0</b></p>
+  <p><b> 
+  Build: 101.52.57
+  Release version: 30.121092.15257.0</b></p>
    
-   <p> What's new </p>
+  <p> What's new </p>
 
    - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Javaprocesses  with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in theVulnerability Management    area of the portal.
    
-   
+   </details>
 </details>
 
 --------------
