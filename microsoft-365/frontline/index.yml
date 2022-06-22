@@ -50,11 +50,9 @@ productDirectory:
         - url: deploy-teams-at-scale.md
           text: Deploy Teams at scale
     # Card
-    - title: Onboard and train users
+    - title: Adoption and end user training
       imageSrc: https://docs.microsoft.com/office/media/icons/users-group.svg
       links:
-        - url: flw-onboarding-wizard.md
-          text: Onboard your users
         - url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
           text: Adoption resources
         - url: https://support.microsoft.com/en-us/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7
