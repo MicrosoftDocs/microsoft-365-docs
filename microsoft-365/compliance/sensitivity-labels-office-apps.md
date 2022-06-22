@@ -424,7 +424,7 @@ PDF scenarios not supported:
 
 - PDF/A format and encryption
     
-     This PDF format designed for long-term archiving isn't supported when the label applies encrytion and will prevent users from converting Office documents to PDF.
+     This PDF format designed for long-term archiving isn't supported when the label applies encrytion and will prevent users from converting Office documents to PDF. For configuration information, see the Group Policy documentation for [Enforce PDF compliance with ISO 19005-1 (PDF/A)](https://admx.help/?Category=Office2016&Policy=office16.Office.Microsoft.Policies.Windows::L_EnforcePDFcompliancewithISO190051PDFA).
     
 - Password protection and encryption
     
