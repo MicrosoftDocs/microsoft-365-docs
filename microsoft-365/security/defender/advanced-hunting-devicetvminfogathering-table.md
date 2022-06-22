@@ -32,7 +32,7 @@ ms.technology: m365d
 >[!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The `DeviceTvmInfoGathering` table in the advanced hunting schema contains the [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) assessment events including the status of various configurations and attack surface area states of devices. You can, for instance, hunt for assessment events [**ADD USE CASE INFO HERE**]. Use this reference to construct queries that return information from the table.
+The `DeviceTvmInfoGathering` table in the advanced hunting schema contains the [Threat & Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) assessment events including the status of various configurations and attack surface area states of devices. You can, for instance, hunt for assessment events [**ADD USE CASE INFO HERE**]. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
