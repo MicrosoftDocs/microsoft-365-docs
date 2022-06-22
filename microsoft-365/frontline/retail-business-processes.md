@@ -25,16 +25,16 @@ appliesto:
 
 # Simplify business processes in Retail environments
 
-You can use Teams apps, Power Apps, and Power BI to simplify business processes for your retail teams.
+You can use Teams apps, Power Apps, and Power BI to simplify business processes for your frontline teams.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
 
 > [!NOTE]
-> Additional capabilities for retail environments are available with the Microsoft Cloud for Retail, which includes capabilities from Dynamics 365 and Microsoft Azure as well as the Microsoft 365 features. For more information, see [Microsoft Cloud for Retail](/industry/retail/).
+> Additional capabilities for [financial services](/industry/financial-services), [healthcare](/industry/healthcare), [nonprofit](/industry/nonprofit), and [retail](/industry/retail) environments are available with the Microsoft industry clouds, which include capabilities from Dynamics 365 and Microsoft Azure as well as the Microsoft 365 features.
 
 ## Manage schedules, tasks, lists, and approvals
 
-Teams includes many apps to help you and your retail team manage their day-to-day work:
+Teams includes many apps to help you and your frontline workforce manage their day-to-day work:
 
 - Use [Shifts](shifts-for-teams-landing-page.md) to create and update schedules for your store team. Your workers can sign up for shifts, trade shifts as needed, and sign in when they start.
 - Publish and track [Tasks](/microsoftteams/manage-tasks-app) for your workers, so they know what needs to be done every day.
@@ -52,4 +52,3 @@ More information: [Power Apps](/microsoftteams/manage-power-platform-apps) and [
 Share and collaborate on interactive Power BI content in Microsoft Teams channels and chats. You can add a [Power BI tab](/microsoftteams/platform/tabs/what-are-tabs) to Teams to embed interactive reports and chat in Teams about your reports, and get notified when important things happen in Power BI right in your Teams activity feed.
 
 More information: [Collaborate in Microsoft Teams with Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams).
-
