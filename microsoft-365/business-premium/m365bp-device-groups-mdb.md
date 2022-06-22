@@ -18,13 +18,13 @@ ms.collection:
 
 # Device groups and categories in Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business as well as in Microsoft InTune. Device protection policies are applied to devices through certain collections that are called device groups. In InTune, devices are grouped into device categories as a different way of organizing them. 
+Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business and in Microsoft Intune. Device protection policies are applied to devices through certain collections that are called device groups. In Intune, devices are grouped into device categories as a different way of organizing them. 
 
-You will cover the following:  
+This article includes the following sections:  
 
-- [What is a device group?](#working-with-device-groups)
+- [Working with device groups](#working-with-device-groups)
 - [How to create a new device group](#create-a-device-group-in-the-defender-portal)
-- [How to create a new device category in InTune](#create-a-device-category-in-intune)
+- [How to create a new device category in Intune](#create-a-device-category-in-intune)
 
 ## Working with device groups
 
@@ -34,7 +34,7 @@ With Microsoft 365 Business Premium, you have default device groups that you can
 
 All device groups, including your default device groups and any custom device groups that you define, are stored in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
-## Create a device group in the Defender portal
+## Create a device group in the Microsoft 365 Defender portal
 
 You can create a new device group while you are in the process of creating or editing a device protection policy.
 
@@ -65,9 +65,9 @@ You can create a new device group while you are in the process of creating or ed
 
 10. On the **Review your policy** step, review all the settings, make any needed edits, and then choose **Create policy** or **Update policy**.
 
-## Create a device category in InTune
+## Create a device category in Intune
 
-Create device categories in InTune from which users must choose when they enroll a device.
+Create device categories in Intune from which users must choose when they enroll a device.
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
@@ -77,11 +77,11 @@ Create device categories in InTune from which users must choose when they enroll
 
 1. When you're done, select **Create**. You can see the new category in the list.
 
-Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they are presented with a list of the categories you configured in InTune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
+Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they are presented with a list of the categories you configured in Intune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
 
-## Create dynamic device groups in Azure Active Directory (AAD)
+## Create dynamic device groups in Azure Active Directory
 
-You can also enter the AAD portal from the Admin center, and create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
+You can also enter the Azure Active Directory (Azure AD) portal from the Admin center, and create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
 
 You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions. 
 
@@ -91,7 +91,7 @@ Now that categories and device groups are established, users of iOS and Android 
 
 1. After enrolling the device go to the [company portal](https://portal.microsoft.com) and choose **My Devices**.
 
-1. Select the enrolled device from the list, and then select a category.
+2. Select the enrolled device from the list, and then select a category.
 
 After choosing a category, the device is automatically added to the corresponding group. If a device is already enrolled before you configure categories, the user sees a notification about the device on the Company Portal website. This lets the user know to select a category the next time they access the Company Portal app on iOS/iPadOS or Android.
 
@@ -103,15 +103,15 @@ After choosing a category, the device is automatically added to the correspondin
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices**.
 
-1. In the list of devices, examine the Device category column.
+2. In the list of devices, examine the Device category column.
 
-1. If the Device category column isn't shown, select **Columns > Category > Apply**.
+3. If the Device category column isn't shown, select **Columns > Category > Apply**.
 
 ## Change the category of a device
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices**. 
 
-1. Select the category you want from the list, to see its properties.
+2. Select the category you want from the list, to see its properties.
 
 ## Next steps
 
