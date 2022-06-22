@@ -1,6 +1,6 @@
 ---
 title: Working with device groups in Microsoft 365 Business Premium
-description: "Learn about device groups and how to apply policies with InTune in Microsoft 365 Business Premium, and increase protection from cyberattacks."
+description: "Learn about device groups and how to apply policies with Intune in Microsoft 365 Business Premium, and increase protection from cyberattacks."
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -18,7 +18,7 @@ ms.collection:
 
 # Device groups and categories in Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business as well as in Microsoft InTune. In Defender, device protection policies are applied to devices through certain collections that are called device groups. In InTune, devices are grouped into device categories as a different way of organizing them. 
+Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business as well as in Microsoft InTune. Device protection policies are applied to devices through certain collections that are called device groups. In InTune, devices are grouped into device categories as a different way of organizing them. 
 
 You will cover the following:  
 
