@@ -87,9 +87,9 @@ All our updates contain
 <details>
 <summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
 
-&ensp;Security intelligence update version: **x.x**<br/>
+&ensp;Security intelligence update version: **1.369.88.0**<br/>
 &ensp;Released: **June 22, 2022**<br/>
-&ensp;Platform: **x.x**<br/>
+&ensp;Platform: **4.18.2205.7**<br/>
 &ensp;Engine: **1.1.19300.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
