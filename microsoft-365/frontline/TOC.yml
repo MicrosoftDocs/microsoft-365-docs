@@ -100,7 +100,7 @@
   - name: Training & onboarding
     items: 
     - name: Onboarding new employees
-      href: /sharepoint/onboard-employees?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: flw-onboarding.md
     - name: Ongoing training
       href: ongoing-training.md
   - name: Digitized processes
