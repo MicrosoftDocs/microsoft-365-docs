@@ -200,7 +200,8 @@ See the following documentation for supported parameters and values:
 - [Set-Label](/powershell/module/exchange/set-label)
 - [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy)
 
-When you're configuring advanced settings for a sensitivity label, you might find it helpful to reference the [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings) section on this page.
+> [!TIP]
+> When you're configuring advanced settings for a sensitivity label, you might find it helpful to reference the [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings) section on this page.
 
 You can also use [Remove-Label](/powershell/module/exchange/remove-label) and [Remove-LabelPolicy](/powershell/module/exchange/remove-labelpolicy) if you need to script the deletion of sensitivity labels or sensitivity label policies. However, before you delete sensitivity labels, make sure you read the next section.
 
