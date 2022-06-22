@@ -81,15 +81,15 @@ Use the device category name when you create the Azure Active Directory (Azure A
 
 ## Create dynamic device groups in Azure Active Directory
 
-You can also enter the Azure Active Directory (Azure AD) portal ([https://portal.azure.com](https://portal.azure.com)) from the Microsoft 365 admin center. 
+You can also enter the Azure Active Directory (Azure AD) portal ([https://portal.azure.com](https://portal.azure.com)) from the Microsoft 365 admin center. In the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)), choose **All admin centers**, and then choose **Azure Active Directory**.
 
-You can create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
+In the Azure AD portal, you can create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
 
 You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions. 
 
 ## After device groups are created
 
-Now that categories and device groups are established, users of iOS and Android devices enroll their device and as they do so they must choose a category from the list of categories that were configured. Windows users can use the Company Portal website or the Company Portal app to select a category.
+Now that categories and device groups are established, users of iOS and Android devices enroll their devices, and as they do so, they must choose a category from the list of categories that were configured. Windows users can use the Company Portal website or the Company Portal app to select a category.
 
 1. After enrolling the device go to the [company portal](https://portal.microsoft.com) and choose **My Devices**.
 
@@ -98,20 +98,20 @@ Now that categories and device groups are established, users of iOS and Android 
 After choosing a category, the device is automatically added to the corresponding group. If a device is already enrolled before you configure categories, the user sees a notification about the device on the Company Portal website. This lets the user know to select a category the next time they access the Company Portal app on iOS/iPadOS or Android.
 
 > [!Note]
->- You can edit a device category in the Azure portal, but you must manually update any Azure AD security groups that reference this category.
->- If you delete a category, devices assigned to it display the category name **Unassigned**.
+> - You can edit a device category in the Azure portal, but you must manually update any Azure AD security groups that reference this category.
+> - If you delete a category, devices assigned to it display the category name **Unassigned**.
 
 ## View the categories of devices that you manage
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**.
 
-2. In the list of devices, examine the Device category column.
+2. In the list of devices, examine the **Device category** column.
 
-3. If the Device category column isn't shown, select **Columns > Category > Apply**.
+3. If the Device category column isn't shown, select **Columns** > **Category** > **Apply**.
 
 ## Change the category of a device
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices**. 
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**. 
 
 2. Select the category you want from the list, to see its properties.
 
