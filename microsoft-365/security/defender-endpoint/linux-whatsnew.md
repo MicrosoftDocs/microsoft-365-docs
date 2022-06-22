@@ -161,12 +161,10 @@ ms.technology: mde
 ## 2021 releases
 
 <details>
-<summary>2021 (Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
+<summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
 
-&ensp;Released: ****<br/>
-&ensp;Published: ****<br/>
-&ensp;Build: ****<br/>
-&ensp;Release version: ****<br/>
+&ensp;Build: **101.52.57**<br/>
+&ensp;Release version: **30.121092.15257.0**<br/>
 
 ### What's new
 - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
@@ -174,7 +172,9 @@ ms.technology: mde
 </details>
 
 <details>
-<summary>2021 (Build: 101.47.76 | Release version: 30.121092.14776.0)</summary>
+<summary>(Build: 101.47.76 | Release version: 30.121092.14776.0)</summary>
+
+
 
 ### What's new
 
@@ -186,7 +186,10 @@ ms.technology: mde
 
 
 <details>
-<summary>2021 (Build: 101.45.13 | Release version: 30.121082.14513.0)</summary>
+<summary>(Build: 101.45.13 | Release version: 30.121082.14513.0)</summary>
+
+&ensp;Build: **101.45.13**<br/>
+&ensp;Release version: **30.121082.14513.0**<br/>
 
 
 ### What's new
@@ -199,7 +202,11 @@ ms.technology: mde
 
 
 <details>
-<summary>2021 (Build: 101.45.00 | Release version: 30.121072.14500.0)</summary>
+<summary>(Build: 101.45.00 | Release version: 30.121072.14500.0)</summary>
+
+&ensp;Build: **101.45.00**<br/>
+&ensp;Release version: **30.121072.14500.0**<br/>
+
 
 ### What's new
 
@@ -213,7 +220,11 @@ ms.technology: mde
 </details>
 
 <details>
-<summary>2021 (Build: 101.39.98 | Release version: 30.121062.13998.0)</summary>
+<summary>(Build: 101.39.98 | Release version: 30.121062.13998.0)</summary>
+
+&ensp;Build: **101.39.98**<br/>
+&ensp;Release version: **30.121062.13998.0**<br/>
+
 
 ### What's new
 
@@ -225,7 +236,11 @@ ms.technology: mde
 
 
 <details>
-<summary>2021 (Build: 101.34.27 | Release version: 30.121052.13427.0)</summary>
+<summary>(Build: 101.34.27 | Release version: 30.121052.13427.0)</summary>
+
+
+&ensp;Build: **101.34.27**<br/>
+&ensp;Release version: **30.121052.13427.0**<br/>
 
 
 ### What's new
@@ -235,7 +250,12 @@ ms.technology: mde
 </details>
 
 <details>
-<summary>2021 (Build: 101.29.64 | Release version: 30.121042.12964.0)</summary>
+<summary>(Build: 101.29.64 | Release version: 30.121042.12964.0)</summary>
+
+&ensp;Build: **101.29.64**<br/>
+&ensp;Release version: **30.121042.12964.0**<br/>
+
+
 
 ### What's new
 
@@ -249,7 +269,11 @@ ms.technology: mde
 </details>
 
 <details>
-<summary>2021 (Build: 101.25.72 | Release version: 30.121022.12563.0)</summary>
+<summary>(Build: 101.25.72 | Release version: 30.121022.12563.0)</summary>
+
+&ensp;Build: **101.25.72**<br/>
+&ensp;Release version: **30.121022.12563.0**<br/>
+
 
 
 ### What's new
@@ -262,7 +286,12 @@ ms.technology: mde
 
 
 <details>
-<summary>2021 (Build: 101.25.63 | Release version: 30.121022.12563.0)</summary>
+<summary>(Build: 101.25.63 | Release version: 30.121022.12563.0)</summary>
+
+&ensp;Build: **101.25.63**<br/>
+&ensp;Release version: **30.121022.12563.0**<br/>
+
+
 
 ### What's new
 
@@ -272,7 +301,11 @@ ms.technology: mde
 
 
 <details>
-<summary>2021 (Build: 101.23.64 | Release version: 30.121021.12364.0)</summary>
+<summary>(Build: 101.23.64 | Release version: 30.121021.12364.0)</summary>
+
+
+&ensp;Build: **101.23.64**<br/>
+&ensp;Release version: **30.121021.12364.0**<br/>
 
 ### What's new
 
@@ -284,7 +317,11 @@ ms.technology: mde
 
 
 <details>
-<summary>2021 (Build: 01.18.53)</summary>
+<summary>(Build: 101.18.53)</summary>
+
+
+&ensp;Build: **101.18.53**<br/>
+
 
 ### What's new
 
