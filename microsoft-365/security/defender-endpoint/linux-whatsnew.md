@@ -30,7 +30,6 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
-## 2022 releases
 
 <details>
   <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
@@ -328,4 +327,25 @@ This article is updated frequently to let you know what's new in the latest rele
 - Performance improvements & bug fixes
 
 </details>
+</details>
+
+
+--------------
+
+
+
+ <details>
+  <summary><b><u>Top Level Toggle</u></b></summary>
+
+  <p>
+          Great, Top Layer summary text working fine.
+  </p>
+
+  *   <details>
+      <summary><b>Mid Toggle</b></summary>
+
+      <p>
+          Great, Middle Layer summary text working fine.
+      </p>
+
 </details>
