@@ -153,21 +153,21 @@ Blocking command-and-control communication can severely impede a targeted attack
 [For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
 -->
 
-## Smart Screen Unblock
+## SmartScreen Unblock
 
-A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass "Warnings" generated for some URLs and IPs. Depending on why the URL was blocked, when a Smart Screen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
+A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
  > [!div class="mx-imgBorder"]
  > ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
 
-Microsoft Defender for Endpoint Administrators can configure Smart Screen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
+Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
 
 <!-- Hide {this intro with no subsequent list items}
 [Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
 -->
 
  > [!div class="mx-imgBorder"]
- > ![Network protection smart screen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
+ > ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
 
 ## Using network protection
 
@@ -176,11 +176,11 @@ Network protection is enabled per device, which is typically done using your man
 > [!NOTE]
 > Microsoft Defender Antivirus must be active to enable Network protection.
 
-You can enable Network Protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling Network Protection before blocking IP's or URLs, you can enable it in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
+You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
-## Advanced Hunting
+## Advanced hunting
 
-If you're using Advanced Hunting to identify audit events you'll have up to 30 days history available from the console. See [Advanced Hunting](advanced-hunting-overview.md).
+If you're using advanced hunting to identify audit events you'll have up to 30 days history available from the console. See [Advanced hunting](advanced-hunting-overview.md).
 
 You can find the audit data in **Advanced hunting** in the Microsoft Defender for Endpoint portal.  
 
@@ -193,7 +193,7 @@ DeviceEvents
 - Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
  > [!div class="mx-imgBorder"]
- > ![Advanced Hunting for auditing and identifying events](images/network-protection-advanced-hunting.png)
+ > ![Advanced hunting for auditing and identifying events](images/network-protection-advanced-hunting.png)
 
 > [!TIP]
 > These entries have data in the AdditionalFields column which gives you great info around the action, if you expand AdditionalFields you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
@@ -221,7 +221,7 @@ You can use the resulting list of URLs and IPs to determine what would have been
 
 Once you've created an Indicator you can look at resolving the underlying issue:
 
-- Smart screen – request review
+- SmartScreen – request review
 - Indicator – modify existing indicator
 - MCA – review unsanctioned APP
 - WCF – request recategorization
