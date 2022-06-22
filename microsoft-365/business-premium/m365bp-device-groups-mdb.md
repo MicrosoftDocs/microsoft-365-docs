@@ -53,7 +53,7 @@ You can create a new device group while you are in the process of creating or ed
 
 4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
 
-5. Choose **+ Create new group**.
+5. Choose **Create new group**.
 
 6. Specify a name and description for the device group, and then choose **Next**.
 
@@ -77,13 +77,13 @@ Create device categories in InTune from which users must choose when they enroll
 
 1. When you're done, select **Create**. You can see the new category in the list.
 
-Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they are presented with a list of the categories you configured in InTune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with the InTune category they chose.
+Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they are presented with a list of the categories you configured in InTune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
 
 ## Create dynamic device groups in Azure Active Directory (AAD)
 
 You can also enter the AAD portal from the Admin center, and create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
 
-You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions. For more info about creating a dynamic group for users and devices, see Create a dynamic group and check status
+You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions. 
 
 ## After device groups are created
 
@@ -109,9 +109,9 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## Change the category of a device
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices > choose the device you want > Properties**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices > All devices**. 
 
-1. On the next blade, you can change the Device category of the selected device to any of the category names you previously configured.
+1. Select the category you want from the list, to see its properties.
 
 ## Next steps
 
