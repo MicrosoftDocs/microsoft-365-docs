@@ -404,10 +404,10 @@ So for each user reported phish message and admin email submission a correspondi
 
 To view the corresponding alert for user reported phish message, click on **User reported messages** tab, double click on the message to open the submission flyout. From the overflow menu inside the flyout select **View alert**.
 
-:::image type="content" source="../../media/alert-from-user-submission" alt-text="Option to view the related alert from a user reported phish message.":::
+:::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Option to view the related alert from a user reported phish message.":::
 
 To view the corresponding alert for admin email submission, click on **Emails** tab, double click on the message to open the submission flyout. 
 Select **View alert**  on the right side of **Open email entity** option.
 
 
-:::image type="content" source="../../media/alert-from-admin-submission" alt-text="Option to view the related alert from an admin submission.":::
+:::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="Option to view the related alert from an admin submission.":::
