@@ -1,5 +1,5 @@
 ---
-title: Onboarding for frontline workers
+title: Provide initial training to help onboard your frontline workers
 description: Learn how you can plan, build, and launch your frontline worker onboarding experience.
 ms.topic: conceptual
 author: daisyfell
@@ -22,7 +22,9 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Onboarding for frontline workers
+# Provide initial training to help onboard your frontline workers
+
+Get your employees ready to start their new roles on your frontline team with a custom initial training and onboarding process. You can use this initial onboarding to welcome new team members, familiarize them with roles and duties, and teach them about how your organization operates.
 
 A smooth onboarding process is essential for new members of your frontline team to get up and running quickly. If your team tends to have low turnover, your workers may benefit from a longer and more in-depth onboarding process. If you employ a lot of seasonal or temporary workers on your frontline team, you may need a lighter onboarding experience. You can also customize your onboarding process for different teams that require different levels of initial training.
 
