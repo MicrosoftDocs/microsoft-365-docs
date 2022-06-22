@@ -32,7 +32,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 ## 2022 releases
 
-<details open> <summary>Click to expand!</summary>
+<details> <summary>Click to expand!</summary>
 <p>
 &ensp;Released: **May 23, 2022**<br/>
 &ensp;Published: **May 23, 2022**<br/>
