@@ -94,9 +94,11 @@ Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeE
 
 You can use all of these apps within Microsoft Teams. For more information about how to set them up, see:
 
-- [Power Apps](/microsoftteams/manage-power-platform-apps)
 - [Power Apps and Microsoft Teams integration](/powerapps/teams/overview)
+- [Power Automate - use flows in Microsoft Teams](/power-automate/teams/overview)
 - [Collaborate in Microsoft Teams with Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams)
+- [Power Virtual Agents app in Microsoft Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)
+- [Power Apps](/microsoftteams/manage-power-platform-apps)
 
 ## Step 5: Configure apps for your scenario
 
