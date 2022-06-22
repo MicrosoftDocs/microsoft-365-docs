@@ -50,16 +50,8 @@ landingContent:
             url: get-defender-business.md
           - text: Use the trial playbook
             url: trial-playbook-defender-business.md
-          - text: Add users and assign licenses
-            url: mdb-add-users.md
-          - text: Visit the Microsoft 365 Defender portal
-            url: mdb-get-started.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
-      - linkListType: tutorial
-        links:
-          - text: Try tutorials and simulations
-            url: mdb-tutorials.md
 
   # Card
   - title: Help and more resources
@@ -70,83 +62,7 @@ landingContent:
             url: mdb-get-help.md
           - text: Frequently asked questions
             url: mdb-faq.yml
-          - text: Troubleshooting
-            url: mdb-troubleshooting.yml
-      - linkListType: reference
-        links:
           - text: Glossary of security terms
             url: /microsoft-365/business-premium/m365bp-glossary
-          - text: API reference information
-            url: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
-          - text: Microsoft 365 Business Premium
-            url: /microsoft-365/business-premium/
-          - text: Microsoft 365 Lighthouse
-            url: /microsoft-365/lighthouse/m365-lighthouse-overview
 
-  # Card
-  - title: Set up and configure
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: See the setup process
-            url: mdb-setup-configuration.md
-          - text: Step 1 - Review the requirements
-            url: mdb-requirements.md
-          - text: Step 2 - Assign roles and permissions
-            url: mdb-roles-permissions.md
-          - text: Step 3 - Set up email notifications
-            url: mdb-email-notifications.md
-          - text: Step 4 - Onboard devices
-            url: mdb-onboard-devices.md
-          - text: Step 5 - Review your security policies
-            url: mdb-view-edit-policies.md
-
-
-  # Card
-  - title: View and respond to threats
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View your threat dashboard
-            url: mdb-view-tvm-dashboard.md
-          - text: View and manage incidents
-            url: mdb-view-manage-incidents.md
-          - text: Respond to and mitigate threats
-            url: mdb-respond-mitigate-threats.md
-          - text: Review remediation actions
-            url: mdb-review-remediation-actions.md
-          - text: View and use reports
-            url: mdb-reports.md
-
-  # Card
-  - title: View or edit security policies
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View, edit, and create policies
-            url: mdb-view-edit-create-policies.md
-          - text: Manage rules for firewall policies
-            url: mdb-custom-rules-firewall.md
-      - linkListType: reference
-        links:
-          - text: Policy order
-            url: mdb-policy-order.md
-          - text: Next-generation protection settings
-            url: mdb-next-gen-configuration-settings.md
-          - text: Firewall settings
-            url: mdb-firewall.md
-
-  # Card
-  - title: Monitor or manage devices
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View and monitor devices
-            url: mdb-manage-devices.md
-          - text: Create device groups
-            url: mdb-create-edit-device-groups.md
-          - text: Onboard devices
-            url: mdb-onboard-devices.md
-          - text: Remove devices
-            url: mdb-offboard-devices.md
-
+ 

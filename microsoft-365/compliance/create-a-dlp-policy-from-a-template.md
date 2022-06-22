@@ -40,7 +40,7 @@ Members of your compliance team who will create DLP policies need permissions to
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
-2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
+2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
 
 3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
     
@@ -200,7 +200,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 

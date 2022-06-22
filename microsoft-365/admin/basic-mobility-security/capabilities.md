@@ -158,7 +158,7 @@ The following option can block users from accessing their Microsoft 365 email if
 
 ## Additional settings
 
-You can set the following additional policy settings by using Security & Compliance Center PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+You can set the following additional policy settings by using Security & Compliance PowerShell cmdlets. For more information, see [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 |Setting name|iOS|Android|
 |---|---|---|

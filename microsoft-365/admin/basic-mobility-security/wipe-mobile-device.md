@@ -41,25 +41,21 @@ Mobile devices can store sensitive organizational information and provide access
 
 ## Wipe a mobile device
 
-1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+1. Sign in to the Microsoft 365 admin center, and go to the [Mobile Device Management page](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
+1. Select **Manage devices**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility and Secruity mobile device management option.":::
+1. Select the device you want to wipe.
 
-3. Select **Manage devices**.
+1. Select **Manage**.
 
-4. Select the device you want to wipe.
-
-5. Select **Manage**.
-
-6. Select the type of remote wipe you want to do.
+1. Select the type of remote wipe you want to do.
 
     - To do a full wipe and restore the device to its factory settings, select **Factory reset**.
     - To do a selective wipe and delete only Microsoft 365 organization information, select **Remove company data**.
     - To remove the device from your organization, select **Remove device**.
 
-7. Select **Yes** to confirm.
+1. Select **Yes** to confirm.
 
 ## How do I know it worked?
 

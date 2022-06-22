@@ -82,7 +82,7 @@ You can disable Bookings for individual users.
 
 ## Allow only selected users to create Bookings calendars
 
-By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. You must first enable Bookings for your entire organization. All users in your organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
+By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. All users in your organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
 
 Users who are included in this policy can create new Bookings calendars and can be added as staff in any capacity (including the administrator role) to existing Bookings calendars. Users who aren't included in this policy won't be able to create new Bookings calendars and will receive an error message if they try to do so.
 

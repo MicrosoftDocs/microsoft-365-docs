@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: 04/05/2022
+ms.date: 06/03/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,7 +18,7 @@ search.appverid:
 description: "Use collections in Microsoft Purview eDiscovery (Premium) to collect cloud attachments for review in an investigation or case." 
 ---
 
-# Collect cloud attachments in Microsoft Purview eDiscovery (Premium) (preview)
+# Collect cloud attachments in Microsoft Purview eDiscovery (Premium)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -41,7 +41,7 @@ The following screenshot shows the option to include the targets of cloud attach
 >- You also have the option to include all versions (in addition to the version that was shared) of cloud attachments in the review set.  
 For instructions committing a collection to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
-## Collecting the version shared in a cloud attachment
+## Collecting the version shared in a cloud attachment (preview)
 
 The eDiscovery (Premium) workflow for collecting cloud attachments only includes adding the most current version of a cloud attachment to a review set. This means the version that's collected and added to a review set could be different than the version that was originally shared in the cloud attachment. So it's possible that content that was present in the cloud attachment at the time it was shared might have been removed and doesn't exist in the current version that's added to the review set.
 

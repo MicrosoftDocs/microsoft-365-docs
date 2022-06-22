@@ -406,6 +406,7 @@
 ###### [Run antivirus scan](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
 ###### [Restrict app execution](respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate devices from the network](respond-machine-alerts.md#isolate-devices-from-the-network)
+###### [Contain devices from the network](respond-machine-alerts.md#contain-devices-from-the-network)
 ###### [Consult a threat expert](respond-machine-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](respond-machine-alerts.md#check-activity-details-in-action-center)
 
@@ -709,4 +710,5 @@
 ## [Defender for Identity](/defender-for-identity/)
 ## [Defender for Cloud Apps](/cloud-app-security/)
 ## [Defender for Business](../defender-business/index.yml)
+## [Defender Vulnerability Management](../defender-vulnerability-management/index.yml) 
 

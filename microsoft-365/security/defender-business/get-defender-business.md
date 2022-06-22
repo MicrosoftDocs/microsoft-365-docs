@@ -27,10 +27,6 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial and assign user licenses](#how-to-activate-your-trial), and then proceed to your [next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Try or buy Microsoft Defender for Business
 
@@ -45,7 +41,7 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 
 ## Get Microsoft 365 Business Premium
 
-*Beginning March 1, 2022, Defender for Business is rolling out as part of Microsoft 365 Business Premium*. 
+*As of March 1, 2022, Defender for Business is included in Microsoft 365 Business Premium*. 
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 

@@ -31,7 +31,7 @@ description: "Learn how to secure Windows 10 PCs after you have set up Microsoft
 
 This article applies to Microsoft 365 Business Premium.
 
-After you have [set up](business-set-up.md) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
+After you have [set up](/microsoft-365/business-premium/m365bp-setup) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
 
 ## Watch: Secure your Windows 10 PCs
 

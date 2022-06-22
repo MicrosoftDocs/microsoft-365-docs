@@ -68,5 +68,5 @@ The following table shows what action the end users or admins may need to take, 
 
 ## Next objective
 
-[Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
+[Create app protection settings](m365bp-protection-settings-for-windows-10-devices.md)
   

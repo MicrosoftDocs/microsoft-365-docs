@@ -48,7 +48,7 @@ When you create a DLP policy, you can configure the user notifications to:
 
 When you create a DLP policy, you can enable **User notifications**. When user notifications are enabled, Microsoft 365 sends out both email notifications and policy tips. You can customize who notification emails are sent to, the email text and the policy tip text.
 
-1. Go to [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/permissions).
 
 2. Sign in using your work or school account.
 
@@ -92,7 +92,10 @@ For each rule in a DLP policy, you can:
 - Customize the text that's included in the notification by using HTML or tokens. See the section below for more information.
 
 > [!NOTE]
-> Email notifications can be sent only to individual recipients—not groups or distribution lists. Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not an email notification.
+>
+> - Email notifications can be sent only to individual recipients, not groups or distribution lists.
+> - Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not email notifications.
+> - External senders don't receive notifications. Notifications go only to internal users.
 
 ![Email notification options.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
@@ -235,7 +238,10 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 - Content contains
 - Content is shared
 
-Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. Also, Outlook does not support showing policy tips for a DLP policy that's applied to a dynamic distribution group.
+Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. 
+
+> [!NOTE]
+> Outlook does not support showing policy tips for a DLP polies that's applied to a dynamic distribution group or non-email enabled security groups. 
 
 ### Policy tips in the Exchange admin center vs. the Microsoft Purview Compliance portal
 

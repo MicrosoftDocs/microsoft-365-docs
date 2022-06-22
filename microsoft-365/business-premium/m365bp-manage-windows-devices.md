@@ -85,7 +85,7 @@ Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.c
 
 2. In the **Azure Active Directory admin center**, go to **Azure Active Directory** , choose **Devices** and then **Device settings**.
 
-3. Verify**Users may join devices to Azure AD** is enabled 
+3. Verify **Users may join devices to Azure AD** is enabled 
 
     1. To enable all users, set to **All**.
 
@@ -133,13 +133,13 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 The first command will establish a connection with the Microsoft cloud, and when you are prompted, specify your Microsoft 365 Business Premium global admin credentials.
 
-## 5. Link the Group Policy
+## 5. Link the group policy
 
 1. In the Group Policy Management Console (GPMC), right-click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu.
 
 2. Select the policy created in the above step, then click **OK**.
 
-## Get the latest Administrative Templates
+## Get the latest administrative templates
 
 If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, or later. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
 
@@ -173,6 +173,6 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 
 - [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 
-## Next objective:
+## Next objective
 
 [Prepare for Office client deployment](m365bp-prepare-for-office-client-deployment.md)
