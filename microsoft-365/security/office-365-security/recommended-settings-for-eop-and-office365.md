@@ -132,14 +132,9 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Protection settings**|||||
-|**Enable the common attachments filter** <p> _EnableFileFilter_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
+|**Enable the common attachments filter** <p> _EnableFileFilter_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|This setting quarantines messages that contain attachments based on file type, regardless of the attachment content. For the list of file types, see [Anti-malware policies](anti-malware-protection.md#anti-malware-policies).|
 |**Enable zero-hour auto purge for malware** <p> _ZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Quarantine policy**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|When you create a new anti-malware policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as malware (AdminOnlyAccessPolicy with no quarantine notifications). <p> Standard and Strict preset security policies use the default quarantine policy (AdminOnlyAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <p> Admins can create and select custom quarantine policies that define more capabilities for users in the default or custom anti-malware policies. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Recipient notifications**|||||
-|**Notify recipients when messages are quarantined as malware** <p> _Action_|Not selected <p> _DeleteMessage_|Not selected <p> _DeleteMessage_|Not selected <p> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
-|**Sender notifications**|||||
-|**Notify internal senders when messages are quarantined as malware** <p> _EnableInternalSenderNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
-|**Notify external senders when messages are quarantined as malware** <p> _EnableExternalSenderNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
 |**Admin notifications**|||||
 |**Notify an admin about undelivered messages from internal senders** <p> _EnableInternalSenderAdminNotifications_ <p> _InternalSenderAdminAddress_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting.|
 |**Notify an admin about undelivered messages from external senders** <p> _EnableExternalSenderAdminNotifications_ <p> _ExternalSenderAdminAddress_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting.|
@@ -147,10 +142,10 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |**Use customized notification text** <p> _CustomNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
 |**From name** <p> _CustomFromName_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**From address** <p> _CustomFromAddress_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Customize notifications for messages from internal senders**||||These settings are used only if **Notify internal senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from internal senders** is selected.|
+|**Customize notifications for messages from internal senders**||||These settings are used only if **Notify an admin about undelivered messages from internal senders** is selected.|
 |**Subject** <p> _CustomInternalSubject_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**Message** <p> _CustomInternalBody_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Customize notifications for messages from external senders**||||These settings are used only if **Notify external senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from external senders** is selected.|
+|**Customize notifications for messages from external senders**||||These settings are used only if **Notify an admin about undelivered messages from external senders** is selected.|
 |**Subject** <p> _CustomExternalSubject_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**Message** <p> _CustomExternalBody_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 
