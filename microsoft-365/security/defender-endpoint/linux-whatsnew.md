@@ -163,7 +163,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 </details>
 
-## 2021 releases
+<details> 
+<summary> 2021 releases </summary>
 
 <details>
 <summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
@@ -335,4 +336,5 @@ This article is updated frequently to let you know what's new in the latest rele
 - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
 - Performance improvements & bug fixes
 
+</details>
 </details>
