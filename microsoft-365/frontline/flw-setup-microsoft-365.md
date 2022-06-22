@@ -38,7 +38,7 @@ The following table lists the scenarios for your frontline workers. You can read
 | [Team communication and collaboration](flw-team-collaboration.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Email with Exchange Online](#set-up-email-with-exchange-online) |
 | [Corporate communications](flw-corp-comms.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Virtual appointments](bookings-virtual-visits.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
-| Engage your employees and focus on employee wellbeing| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Insights](#set-up-viva-insights) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
+| Engage your employees and focus on employee wellbeing| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
 | [Onboard new employees](/sharepoint/onboard-employees)| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
 | Ongoing training | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Viva Learning](#set-up-viva-learning) |
@@ -90,9 +90,6 @@ Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeE
 
 [Viva Learning](/viva/learning/) is an app in Microsoft Teams that empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. See [Set up Microsoft Viva Learning in the Teams admin center](/viva/learning/set-up-viva-learning) to learn how to set up Viva Learning.
 
-#### Set up Viva Insights
-
-[Viva Insights](/viva/insights/introduction) helps people and businesses thrive with data-driven, privacy-protected insights, and recommendations to improve productivity and wellbeing. See [Viva Insights setup overview](/viva/insights/setup/setup-intro) to learn how to set up Viva Insights.
 
 #### Set up Viva Topics
 
