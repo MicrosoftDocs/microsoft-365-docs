@@ -393,3 +393,21 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
 
 :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view a created admin submission from a user reported message.":::
+
+### View associated alert for user and admin email submissions
+
+> [!IMPORTANT]
+> Only applicable for customers having Microsoft Defender for Office 365 Plan 2 or above.
+> Today, for user submissions only alert are generated for messages which are reported as Phish. 
+
+So for each user reported phish message and admin email submission a corresponding alert is generated. 
+
+To view the corresponding alert for user reported phish message, click on **User reported messages** tab, double click on the message to open the submission flyout. From the overflow menu inside the flyout select **View alert**.
+
+:::image type="content" source="../../media/alert-from-user-submission" alt-text="Option to view the related alert from a user reported phish message.":::
+
+To view the corresponding alert for admin email submission, click on **Emails** tab, double click on the message to open the submission flyout. 
+Select **View alert**  on the right side of **Open email entity** option.
+
+
+:::image type="content" source="../../media/alert-from-admin-submission" alt-text="Option to view the related alert from an admin submission.":::
