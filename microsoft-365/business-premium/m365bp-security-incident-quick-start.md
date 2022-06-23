@@ -176,6 +176,10 @@ It's always a good idea to increase the security preparedness for you and your t
 
 2. Read the walkthrough for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
 
+### Explore the Learning center
+
+There are a number of areas in the learning center in which you can increase your knowledge. 
+
 ## See also
 
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
