@@ -248,5 +248,25 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
+   <details><summary>(Build:101.29.64 | Release version: 30.121042.12964.0)</summary>
+   
+   <p><b> 
+   Build: 101.29.64 <br>
+   Release version: 30.121042.12964.0</b></p>
+   
+   <p><b>What's new</b></p>
+
+   - Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
+   - `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+     - `--sort`: sorts the output descending by total number of files scanned
+     - `--top N`: displays the top N results (only works if `--sort` is also specified)
+   - Performance improvements & bug fixes
+  
+   </details>
+
+
+
+
+
 </blockquote></details>
 
