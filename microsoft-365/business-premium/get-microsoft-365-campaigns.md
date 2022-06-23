@@ -1,5 +1,5 @@
 ---
-title: "How to get Microsoft 365 for Campaigns"
+title: "Sign up for Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,7 +26,7 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Get Microsoft 365 for Campaigns so you can protect your campaign from cybersecurity threats to email, data, and communications."
 ---
 
-# How to get Microsoft 365 for Campaigns
+# How to sign up for Microsoft 365 for Campaigns
 
 Campaigns and political parties in the USA are eligible for special pricing for Microsoft 365 Business Premium. Currently this special pricing is available to:
 
