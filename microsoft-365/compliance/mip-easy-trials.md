@@ -133,7 +133,7 @@ In simulation mode, items aren't actually labeled until the policy is turned on.
 > [!NOTE]
 > Automatically turning on auto-labeling policies is new and gradually rolling out for new auto-labeling policies. You might not see this configuration immediately, or for all policies.
 
-In most cases, the number of days before an unedited policy is automatically turned on is 7. However, specific to new customers from June 22, 2022, the initial number of days is 25, and then 7 after the policy is edited.
+In most cases, the number of days before an unedited policy is automatically turned on is 7. However, specific to new customers from June 23, 2022, the initial number of days is 25, and then 7 after the policy is edited.
 
 Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
 
