@@ -41,7 +41,7 @@ Microsoft 365 Business Premium includes [Preset security policies](/security/off
 
 When you try or buy Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the sign-up process.
 
-> [!Note]
+> [!NOTE]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. From the admin center menu, choose **Setup** to start the wizard.
