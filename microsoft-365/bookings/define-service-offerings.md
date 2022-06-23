@@ -17,7 +17,11 @@ When you define your service offerings in Microsoft Bookings, you set a service 
 
 You can also add customized information and URLs to the email confirmation and reminders that you send when someone books a service through your booking page.
 
-## Create the service details
+## Watch: Create a new service
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
+
+## Steps
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 

@@ -54,8 +54,6 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
 
-    ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-
 4. Choose the DLP policy template that protects the types of sensitive information you want to protect \> **Next**.
 
     To start with an empty template, choose **Custom** \> **Custom policy** \> **Next**.

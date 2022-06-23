@@ -42,6 +42,7 @@ Users must hold one of the following admin roles in order to sign up for or end 
 - Billing Administrator
 - Compliance Administrator
 - Global Administrator
+- Compliance Data Administrator
 
 Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
 
@@ -104,7 +105,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
    When the trial ends:
 
   - Your existing policies will stay turned on unless you turn them off.
-  - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
+  - You'll no longer be able to edit or add Teams or Devices locations in existing or new policies.
 
 - **eDiscovery**
 

@@ -2,8 +2,8 @@
 title: "Infographic: Help protect your campaign"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "What you can do to help protect your campaign from digital attacks."
+description: "What you can do to help protect your campaign from digital cyberattacks and other security threats."
 ---
 
 # Infographic: Help protect yourself and your campaign from digital threats
