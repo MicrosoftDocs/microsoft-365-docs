@@ -354,7 +354,7 @@ Use [admin submissions](admin-submission.md) to submit the blocked message. This
 
 > [!NOTE]
 >
-> - The impersonated domain (or user)  will be created and visible under the respective **Antiphishing Policy**  under <https://security.microsoft.com/antiphishing>.
+> - The impersonated domain (or user) will be created and visible under the respective section called **"Trusted senders and domains"** of the **Antiphishing Policy** under <https://security.microsoft.com/antiphishing>.
 
 ## Related articles
 
