@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft 365 Business Premium"
+title: "Sign up for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -25,17 +25,17 @@ search.appverid:
 description: "Get Microsoft 365 Business Premium so you can protect your company from cybersecurity threats to devices, email, data, and communications."
 ---
 
-# How to get Microsoft 365 Business Premium
+# How to sign up for Microsoft 365 Business Premium
 
-When you're ready to get Microsoft 365 Business Premium, you have several options. You can:
+When you're ready to sign up for Microsoft 365 Business Premium, you have several options. You can:
 
-- [Try or buy Microsoft 365 Business Premium on your own](#get-microsoft-365-business-premium-on-your-own)
+- [Try or buy Microsoft 365 Business Premium on your own](#sign-up-for-microsoft-365-business-premium-on-your-own)
 - [Work with a solution provider](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
 > [!TIP]
 > If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
-## Get Microsoft 365 Business Premium on your own
+## Sign up for Microsoft 365 Business Premium on your own
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
