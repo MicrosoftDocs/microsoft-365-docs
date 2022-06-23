@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
-ms.date: 05/20/2022
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -30,9 +29,6 @@ description: "Learn how protection features in Microsoft 365 Business Premium ma
 ---
 
 # How do protection features in Microsoft 365 Business Premium map to Intune settings
-
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Android and iOS application protection settings
 
@@ -74,8 +70,7 @@ The following table details how the Windows 10 application policy settings map t
 To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to [Azure portal](https://portal.azure.com). Select **More services**, and type Intune into the **Filter**. Select **Intune App Protection** \> **App Policy**.
   
  > [!IMPORTANT]
- >
- >A Microsoft 365 Business Premium subscription gives you a license to modify only the Intune settings that map to the settings available in Microsoft 365 Business Premium. 
+ > A Microsoft 365 Business Premium subscription gives you a license to modify only the Intune settings that map to the settings available in Microsoft 365 Business Premium. 
   
 To explore the available settings, select the policy name you want, and then choose **General, Assignments**, **Allowed apps**, **Exempt apps**, **Required settings**, or **Advanced settings** from the left navigation pane. 
   

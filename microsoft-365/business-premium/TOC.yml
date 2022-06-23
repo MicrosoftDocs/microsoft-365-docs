@@ -108,6 +108,8 @@
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Add users
       href: m365bp-add-users.md
+    - name: Reset passwords
+      href: m365bp-reset-passwords.md
     - name: Remove data from devices
       href: m365bp-remove-company-data.md
     - name: Reset devices to factory settings
@@ -115,19 +117,19 @@
 - name: Reference
   items:
     - name: Glossary of terms
-      href: m365bp-glossary.md
+      href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
-    - name: Set up AutoPilot
+    - name: Set up Autopilot
       items:
-        - name: Add AutoPilot devices and profile
-          href: m365bp-add-autopilot-devices-and-profile.md
-        - name: AutoPilot profile settings
-          href: m365bp-autopilot-profile-settings.md
-        - name: Create and edit AutoPilot profiles
-          href: m365bp-create-and-edit-autopilot-devices.md
+        - name: Add Autopilot devices and profile
+          href: m365bp-add-Autopilot-devices-and-profile.md
+        - name: Autopilot profile settings
+          href: m365bp-Autopilot-profile-settings.md
+        - name: Create and edit Autopilot profiles
+          href: m365bp-create-and-edit-Autopilot-devices.md
     - name: App protection settings for Android and iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
     - name: Validate app settings on Android and iOS
