@@ -42,11 +42,11 @@ You can use allotments with any product available to users:
 The following products can't be used with allotments:
 
 - Microsoft Store apps
-- Perpetual software, or software that is directly assigned to a user if there is no license involved.
+- Perpetual software, or software that is directly assigned to a user if there's no license involved.
 - Azure resources
 
 You must be a global or license admin to get started with an allotment.
 
 ## Getting started
 
-The allotments feature is available in a private preview to only a small number of customers. If you're interested in joining, fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+The allotments feature is available in a private preview to only a few customers. If you're interested in joining, fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

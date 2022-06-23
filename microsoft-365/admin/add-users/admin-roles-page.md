@@ -1,5 +1,5 @@
 ---
-title: "About admin roles"
+title: "About the admin roles page in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Admin roles map to business functions and provide permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
+description: "Learn about admin roles, like the Service admin who opens support tickets, that map to business functions and have permissions for tasks in the admin center."
 ---
 
 # Get started with the Microsoft 365 admin roles page

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 05/10/2022
+ms.date: 05/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: high
@@ -25,7 +25,7 @@ In Microsoft 365 Business Premium, security settings for managed devices are con
 **This guidance describes how to**:
 
 - Get an overview of your default policies
-- Work with device policies in Defender security center, Admin center, and InTune.
+- Work with device policies in Defender security center, Admin center, and Intune.
 
 ## About the default device protection policies
 
@@ -35,7 +35,7 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices.
 
-These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft Defender security center as well as how to work with policies in the Admin center and InTune.
+These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft Defender security center as well as how to work with policies in the Admin center and Intune.
 
 ## Working with device polices in the Microsoft Defender security center
 
@@ -152,13 +152,13 @@ To view and manage policies:
   
    ![Manage devices page.](../media/devicesmanage.png)
 
-## Working with device policies in InTune
+## Working with device policies in Intune
 
-Use the following information to create and manage device policies in InTune, done through Endpoint security in the Microsoft Endpoint Manager admin center.
+Use the following information to create and manage device policies in Intune, done through Endpoint security in the Microsoft Endpoint Manager admin center.
 
 ### Create, duplicate and edit policies
 
-To create a policy in InTune
+To create a policy in Intune
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
 
@@ -196,7 +196,7 @@ To create a policy in InTune
 
 1. On the Review + create page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
 
-To duplicate a policy in InTune:
+To duplicate a policy in Intune:
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
 
@@ -230,7 +230,7 @@ Regardless of the policy method, managing the same setting on the same device th
 
 ## See also
 
-[Manage endpoint security in Microsoft InTune](/mem/intune/protect/endpoint-security)
+[Manage endpoint security in Microsoft Intune](/mem/Intune/protect/endpoint-security)
 
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 

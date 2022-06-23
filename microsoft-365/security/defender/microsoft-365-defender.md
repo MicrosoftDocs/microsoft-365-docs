@@ -26,6 +26,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
+adobe-target: true
 ---
 
 # Microsoft 365 Defender
@@ -123,6 +124,9 @@ If you need information about what's changed from the Office 365 Security & Comp
 
 > [!NOTE]
 > The Microsoft 365 Defender portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 Defender portal automatically. However, Microsoft Defender for Cloud Apps will still handle its own roles and permissions.
+
+Watch this short video to learn about the new unified portal in Microsoft 365 Defender.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ### What to expect
 

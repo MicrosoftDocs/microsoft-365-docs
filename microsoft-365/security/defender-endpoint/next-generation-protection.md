@@ -24,6 +24,7 @@ ms.collection: M365-security-compliance
 - Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
 
 **Platforms**
 - Windows
@@ -36,6 +37,7 @@ Microsoft Defender for Endpoint includes next-generation protection to reinforce
 
 > [!TIP]
 > Next-generation protection is included in both Microsoft Defender for Endpoint Plan 1 and Plan 2. [Learn more about Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md)
+> Next-generation protection is also included in Microsoft Defender for Business and Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
 ## Try a demo!
 

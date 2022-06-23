@@ -23,7 +23,8 @@ ms.collection:
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender for Endpoint Plans 1 and 2
+- Microsoft Defender for Business
 - Microsoft Defender Antivirus
 
 **Platforms**

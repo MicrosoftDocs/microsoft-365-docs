@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: chboyd
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -15,7 +16,7 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how view tenant service health."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to view tenant service health."
 ---
 
 # View tenant service health in Microsoft 365 Lighthouse

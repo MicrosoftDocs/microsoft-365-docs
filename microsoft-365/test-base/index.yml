@@ -40,13 +40,17 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create Test Base Account
-            url: createAccount.md
+            url: createaccount.md
           - text: Test your application on Test Base
             url: testoverview.md
           - text: Build a Package
             url: buildpackage.md
+          - text: Clone an existing package
+            url: clonepackage.md
           - text: Test Package Guidelines
             url: contentguideline.md
+          - text: Understand your usage cost
+            url: usagecost.md
           - text: Memory Regression Analysis
             url: memory.md
           - text: CPU Regression Analysis

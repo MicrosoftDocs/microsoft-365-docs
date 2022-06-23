@@ -159,9 +159,6 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 
 - Files that are encrypted with [Microsoft encryption technologies](encryption.md) and are attached to an email message that matches the criteria of a search can be previewed and will be decrypted when exported. At this time, files that are encrypted with Microsoft encryption technologies (and stored in SharePoint or OneDrive for Business) are partially indexed. 
 
-   > [!NOTE]
-   > Files encrypted using sensitivity labels will not be decrypted.
-
 - Email messages encrypted with S/MIME are partially indexed. This includes encrypted messages with or without file attachments.
 
 - Email messages protected using Azure Rights Management are indexed and will be included in the search results if they match the search query. Rights-protected email messages are decrypted and can be previewed and exported. This functionality requires that you are assigned the RMS Decrypt role, which is assigned by default to the eDiscover Manager role group.

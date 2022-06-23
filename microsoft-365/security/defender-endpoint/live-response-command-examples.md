@@ -107,8 +107,8 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > The following file types *cannot* be downloaded using this command from within Live Response:
 >
-> - [Reparse point files](/windows/desktop/fileio/reparse-points/)
-> - [Sparse files](/windows/desktop/fileio/sparse-files/)
+> - [Reparse point files](/windows-hardware/drivers/ifs/reparse-points)
+> - [Sparse files](/windows-server/administration/windows-commands/fsutil-sparse)
 > - Empty files
 > - Virtual files, or files that are not fully present locally
 >

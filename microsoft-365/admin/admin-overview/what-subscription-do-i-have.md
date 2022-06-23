@@ -1,11 +1,11 @@
 ---
-title: "What subscription do I have?"
+title: "What Microsoft 365 subscription do I have?"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration

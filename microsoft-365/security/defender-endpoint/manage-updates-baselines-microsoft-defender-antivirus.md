@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -85,6 +85,33 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
+
+&ensp;Security intelligence update version: **1.369.88.0**<br/>
+&ensp;Released: **June 22, 2022**<br/>
+&ensp;Platform: **4.18.2205.7**<br/>
+&ensp;Engine: **1.1.19300.2**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19300.2<br/>
+Security intelligence update version: 1.369.88.0<br/>
+
+### What's new
+
+- Added fix for ETW channel configuration for updates 
+- Added support for contextual exclusions allowing more specific exclusion targeting 
+- Fixed context maximum size
+- Added fix for [ASR LSASS detection](attack-surface-reduction-rules-reference.md)
+- Added fix to SHSetKnownFolder for rule exclusion logic
+- Added AMSI disk usage limits for The History Store
+- Added fix for Defender service refusing to accept signature updates
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
 <summary>March-2022 *UPDATE* (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
 
 *Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update.*
@@ -161,14 +188,21 @@ Security intelligence update version: 1.361.14.0 <br/>
 No known issues
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
 
 &ensp;Security intelligence update version: **1.357.8.0**<br/>
 &ensp;Released: **February 9, 2022**<br/>
 &ensp;Platform: **4.18.2201.10**<br/>
 &ensp;Engine: **1.1.18900.2**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18900.2 <br/>
 Security intelligence update version: 1.357.8.0 <br/>
@@ -189,14 +223,7 @@ Security intelligence update version: 1.357.8.0 <br/>
 No known issues
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)</summary>
 
 &ensp;Security intelligence update version: **1.355.2.0**<br/>
@@ -295,7 +322,7 @@ No known issues
 
 ### What's new
 - Device control support added for Windows Portable Devices
-- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Block potentially unwanted applications with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).)
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
 - Improvements to the behavior monitoring engine
 
@@ -719,6 +746,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220603.3</summary>
+
+&ensp;Package version: **20220603.3**<br/>
+&ensp;Platform version: **4.18.2203.5**<br/>
+&ensp;Engine version: **1.1.19200.6**<br/>
+&ensp;Signature version: **1.367.1009.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220506.6</summary>
 
 &ensp;Package version: **20220506.6**<br/>

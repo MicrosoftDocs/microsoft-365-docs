@@ -227,6 +227,9 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
 
+> [!NOTE]
+> To automate the hash and upload process after you have created it the first time, see [Refresh your exact data match sensitive information source table file](sit-use-exact-data-refresh-data.md).
+
 ## Next Step
 
 - [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)

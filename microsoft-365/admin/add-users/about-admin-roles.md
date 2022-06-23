@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: "Admin roles such as the Service admin map to business functions and give permissions to do specific tasks in the admin center."
+description: "Learn about admin roles, such as the Service admin role, which map to specific business functions and give permissions to do specific tasks in the admin center."
 ---
 
 # About admin roles in the Microsoft 365 admin center
@@ -62,9 +62,9 @@ Because admins have access to sensitive data and files, we recommend that you fo
 | :------------------- | :------------------- |
 | Have 2 to 4 global admins  | Because only another global admin can reset a global admin's password, we recommend that you have at least 2 global admins in your organization in case of account lockout. But the global admin has almost unlimited access to your org's settings and most of the data, so we also recommend that you don't have more than 4 global admins because that's a security threat. |
 | Assign the *least permissive* role    | Assigning the *least permissive* role means giving admins only the access they need to get the job done. For example, if you want someone to reset employee passwords you shouldn't assign the unlimited global admin role, you should assign a limited admin role, like Password admin or Helpdesk admin.  This will help keep your data secure.                 |
-| Require multi-factor authentication for admins                  |    It's actually a good idea to require MFA for all of your users, but admins should definitely be required to use MFA to sign in. MFA makes users enter a second method of identification to verify they are who they say they are. Admins can have access to a lot of customer and employee data and if you require MFA, even if the admin's password gets compromised, the password is useless without the second form of identification.  <br><br>When you turn on MFA, the next time the user signs in, they'll need to provide an alternate email address and phone number for account recovery.  <br> [Set up multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)          |
+| Require multi-factor authentication for admins                  |    It's actually a good idea to require MFA for all of your users, but admins should definitely be required to use MFA to sign in. MFA makes users enter a second method of identification to verify they're who they say they are. Admins can have access to much of customer and employee data and if you require MFA, even if the admin's password gets compromised, the password is useless without the second form of identification.  <br><br>When you turn on MFA, the next time the user signs in, they'll need to provide an alternate email address and phone number for account recovery.  <br> [Set up multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-If you get a message in the admin center telling you that you don't have permissions to edit a setting or page, it's because you are assigned a role that doesn't have that permission.
+If you get a message in the admin center telling you that you don't have permissions to edit a setting or page, it's because you're assigned a role that doesn't have that permission.
 
 ## Commonly used Microsoft 365 admin center roles
 
@@ -93,11 +93,11 @@ You'll probably only need to assign the following roles in your organization. By
 
 ## Delegated administration for Microsoft Partners
 
-If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company, or their company, admin roles. You might want them to do this, for example, if they are setting up and managing your online organization for you.
+If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company, or their company, admin roles. You might want them to do this, for example, if they're setting up and managing your online organization for you.
   
 A partner can assign these roles:
   
-- **Admin Agent** Privileges equivalent to a global admin, with the exception of managing multi-factor authentication through the Partner Center.
+- **Admin Agent** Privileges equivalent to a global admin, except for managing multi-factor authentication through the Partner Center.
 
 - **Helpdesk Agent** Privileges equivalent to a helpdesk admin.
 

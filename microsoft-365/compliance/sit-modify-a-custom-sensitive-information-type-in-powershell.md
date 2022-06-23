@@ -21,7 +21,7 @@ description: "Learn how to modify a custom sensitive information using PowerShel
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-In Compliance center PowerShell, modifying a custom sensitive information type requires you to:
+In Security & Compliance PowerShell, modifying a custom sensitive information type requires you to:
 
 1. Export the existing rule package that contains the custom sensitive information type to an XML file (or use the existing XML file if you have it).
 
@@ -29,9 +29,9 @@ In Compliance center PowerShell, modifying a custom sensitive information type r
 
 3. Import the updated XML file back into the existing rule package.
 
-To connect to Compliance Center PowerShell, see [Connect to Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
+To connect to Security & Compliance PowerShell, see [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-### Step 1: Export the existing rule package to an XML file
+## Step 1: Export the existing rule package to an XML file
 
 > [!NOTE]
 > If you have a copy of the XML file (for example, you just created and imported it), you can skip to the next step to modify the XML file.
@@ -69,11 +69,11 @@ To connect to Compliance Center PowerShell, see [Connect to Compliance Center Po
    [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-#### Step 2: Modify the sensitive information type in the exported XML file
+## Step 2: Modify the sensitive information type in the exported XML file
 
 Sensitive information types in the XML file and other elements in the file are described earlier in this topic.
 
-#### Step 3: Import the updated XML file back into the existing rule package
+## Step 3: Import the updated XML file back into the existing rule package
 
 To import the updated XML back into the existing rule package, use the [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) cmdlet:
 
