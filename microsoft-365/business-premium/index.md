@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -63,7 +63,7 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
-> [!Note]
+> [!NOTE]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
 
 ## [**Train Your Team**](#tab/Train)
@@ -96,7 +96,7 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
-> [!Note]
+> [!NOTE]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
 
 ## [**Safeguard Managed Devices**](#tab/Safeguard)
@@ -125,5 +125,5 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
-> [!Note]
+> [!NOTE]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
