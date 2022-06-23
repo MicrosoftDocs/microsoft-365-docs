@@ -206,14 +206,14 @@ This article is updated frequently to let you know what's new in the latest rele
 
    </details>
 
-   </details>
+
    <details><summary>(Build:101.45.00 | Release version: 30.121072.14500.0)</summary>
    
-  <p><b> 
-  Build: 101.45.00 <br>
-  Release version: 30.121072.14500.0</b></p>
+   <p><b> 
+   Build: 101.45.00 <br>
+   Release version: 30.121072.14500.0</b></p>
    
-  <p><b>What's new</b></p>
+   <p><b>What's new</b></p>
       
 
   - Added new switches to the command-line tool:
@@ -237,7 +237,7 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   </details>
+   
    <details><summary>(Build:101.34.27 | Release version: 30.121052.13427.0)</summary>
    
   <p><b> 
@@ -252,7 +252,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 
 
-   </details>
+  
    <details><summary>(Build:101.29.64 | Release version: 30.121042.12964.0)</summary>
    
   <p><b> 
@@ -269,7 +269,7 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   </details>
+   
    <details><summary>(Build:101.25.72 | Release version: 30.121022.12563.0)</summary>
    
   <p><b> 
@@ -284,7 +284,7 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   </details>
+   
    <details><summary>(Build:101.25.63 | Release version: 30.121022.12563.0)</summary>
    
   <p><b> 
@@ -296,7 +296,7 @@ This article is updated frequently to let you know what's new in the latest rele
   - Performance improvements & bug fixes
   
    </details>
-   </details>
+   
    <details><summary>(Build:101.23.64 | Release version: 30.121021.12364.0)</summary>
    
   <p><b> 
@@ -312,26 +312,21 @@ This article is updated frequently to let you know what's new in the latest rele
    </details>
 
 
-   </details>
+   
    <details><summary>(Build:101.18.53)</summary>
    
-  <p><b> 
-  Build: 101.18.53 <br>
-     
-  <p><b>What's new</b></p>
+	<p><b> 
+	Build: 101.18.53 <br>
+		
+	<p><b>What's new</b></p>
+	
+	- EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+	- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+	- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
+	- Performance improvements & bug fixes
+	
+	</details>
 
-  - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-  - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
-  - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
-  - Performance improvements & bug fixes
-  
-   </details>
-
-
-
-
-
-</details>
 
 </blockquote></details>
 
