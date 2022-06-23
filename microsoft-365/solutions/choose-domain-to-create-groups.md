@@ -122,4 +122,4 @@ There are a few more things to know:
 
 [Create your collaboration governance plan](collaboration-governance-first.md) (article)
 
-[Create an Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md) (article)
+[Create a Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md) (article)
