@@ -94,7 +94,7 @@ All our updates contain
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19300.2<br/>
-Security intelligence update version: 4.18.2205.7<br/>
+Security intelligence update version: 1.369.88.0<br/>
 
 ### What's new
 
