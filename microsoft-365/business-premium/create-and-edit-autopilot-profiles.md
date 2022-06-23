@@ -32,7 +32,7 @@ description: "Learn to create an Autopilot profile and apply it to a device, as 
 
 # Create and edit Autopilot profiles
 
-You can apply a Windows Autopilot deployment profile to devices that are in a device group.
+You can apply a [Windows Autopilot deployment profile](/mem/autopilot/profiles) to devices that are in a [device group](m365bp-device-groups-mdb.md). Deployment profiles determine the Windows deployment and enrollment experience that users will have. 
 
 ## Create a profile
 
