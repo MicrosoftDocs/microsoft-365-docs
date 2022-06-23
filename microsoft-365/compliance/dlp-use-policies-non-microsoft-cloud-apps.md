@@ -53,11 +53,11 @@ Before you configure DLP policies scoped to Microsoft Defender for Cloud Apps, y
 
 To use a DLP policy thats scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. For information, see:
 
-- [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [Connect Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [Connect Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [Connect Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [Connect Box](/defender-cloud-apps/connect-box)
+- [Connect Dropbox](/defender-cloud-apps/connect-dropbox)
+- [Connect Google Workspace](/defender-cloud-apps/connect-google-workspace)
+- [Connect Salesforce](/defender-cloud-apps/connect-salesforce)
+- [Connect Cisco Webex](/defender-cloud-apps/connect-webex)
 
 After you connect your cloud apps to Defender for Cloud Apps, you can create DLP policies for them.
 
