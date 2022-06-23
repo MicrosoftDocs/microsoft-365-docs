@@ -236,7 +236,17 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
+   <details><summary>(Build:101.34.27 | Release version: 30.121052.13427.0)</summary>
+   
+   <p><b> 
+   Build: 101.34.27 <br>
+   Release version: 30.121052.13427.0</b></p>
+   
+   <p><b>What's new</b></p>
+
+   - Performance improvements & bug fixes
   
+   </details>
 
 </blockquote></details>
 
