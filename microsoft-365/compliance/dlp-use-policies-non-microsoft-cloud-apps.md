@@ -47,7 +47,7 @@ The user who creates the DLP policy should be a:
 
 ### Prepare your Defender for Cloud Apps environment
 
-Before you configure DLP policies scoped to Microsoft Defender for Cloud Apps, you must prepare your Defender for Cloud Apps environment. For instructions, see [Set instant visibility, protection, and governance actions for your apps](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+Before you configure DLP policies scoped to Microsoft Defender for Cloud Apps, you must prepare your Defender for Cloud Apps environment. For instructions, see [Quickstart: Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started).
 
 ### Connect a non-Microsoft cloud app
 
