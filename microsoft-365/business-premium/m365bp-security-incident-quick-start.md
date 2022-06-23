@@ -27,7 +27,7 @@ ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "A set of suggestions for what to focus your efforts upon in the Defender portal when it comes to daily, weekly or monthly operations. "
 ---
 
-# Microsoft Business Premium operations guidance
+# Microsoft 365 Business Premium security operations guide
 
 The following guidance provides a starting point to help you make decisions about security incident priorities in the Microsoft Defender portal.
   
