@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: "Learn to create an Autopilot profile and apply it to a device, as well as edit or delete a profile or remove a profile from a device."
+description: "Learn to create an Autopilot profile and apply it to a device, and edit or delete a profile or remove a profile from a device."
 ---
 
 # Create and edit Autopilot profiles
@@ -66,7 +66,7 @@ Once you've assigned a profile to a device, you can update it, even if you've al
 
 2. Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.
 
-    If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.
+    If you do this task before a user connects the device to the internet, then the profile gets applied to the setup process.
 
 ### Delete a profile
 
