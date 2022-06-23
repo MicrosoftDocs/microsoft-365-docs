@@ -353,8 +353,7 @@ Use [admin submissions](admin-submission.md) to submit the blocked message. This
   :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Submit malware to Microsoft for analysis example." lightbox="../../media/admin-submission-allow-messages.png":::
 
 > [!NOTE]
->
-> - The impersonated domain (or user)  will be created and visible under the respective **Antiphishing Policy**  under <https://security.microsoft.com/antiphishing>.
+> The impersonated domain (or user) will be created and visible in the **Trusted senders and domains** section in the anti-phishing policy at <https://security.microsoft.com/antiphishing>.
 
 ## Related articles
 
