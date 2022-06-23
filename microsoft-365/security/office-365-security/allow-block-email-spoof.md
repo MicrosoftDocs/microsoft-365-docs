@@ -206,7 +206,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoo
 
 ## Create allowed spoofed sender entries 
 
-### Use Tenant allow block list in Microsoft 365 Defender
+### Use the Tenant Allow/Block List in Microsoft 365 Defender
 
 > [!NOTE]
 >
