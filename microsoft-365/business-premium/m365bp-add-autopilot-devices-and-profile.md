@@ -1,5 +1,5 @@
 ---
-title: "Use this step-by-step guide to add AutoPilot devices and profile"
+title: "Use this step-by-step guide to add Autopilot devices and profile"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: "Learn how to use Windows AutoPilot to set up new Windows 10 devices for your business so they're ready for employee use."
+description: "Learn how to use Windows Autopilot to set up new Windows 10 devices for your business so they're ready for employee use."
 ---
 
 # Use this step-by-step guide to add Autopilot devices and profile
@@ -34,7 +34,7 @@ description: "Learn how to use Windows AutoPilot to set up new Windows 10 device
 > [!NOTE]
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md).
 
-You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they're ready for use when you give them to your employees.
+You can use Windows Autopilot to set up **new** Windows 10 devices for your business so they're ready for use when you give them to your employees.
   
 ## Device requirements
 
@@ -46,15 +46,15 @@ Devices must meet these requirements:
 
 ## Use the setup guide to add devices and profiles
 
-If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add AutoPilot devices](m365bp-create-and-edit-autopilot-devices.md) and [assign profiles](../admin/devices/create-and-edit-autopilot-profiles.md) to them without using the guide.
+If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add Autopilot devices](m365bp-create-and-edit-Autopilot-devices.md) and [assign profiles](../admin/devices/create-and-edit-Autopilot-profiles.md) to them without using the guide.
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-1. On the left navigation pane, choose **Devices** \> **AutoPilot**.
+1. On the left navigation pane, choose **Devices** \> **Autopilot**.
 
-    ![In the admin center, choose devices and then AutoPilot.](../media/AutoPilot.png)
+    ![In the admin center, choose devices and then Autopilot.](../media/Autopilot.png)
   
-1. On the **AutoPilot** page, click or tap **Start guide**.
+1. On the **Autopilot** page, click or tap **Start guide**.
 
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
@@ -64,7 +64,7 @@ If you haven't created device groups or profiles yet, the best way to get starte
     - Column B: Windows Product ID
     - Column C: Hardware Hash
 
-You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file.
+You can get this information from your hardware vendor, or you can use the [Get-WindowsAutopilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutopilotInfo) to generate a CSV file.
 
 For more information, see [Device list CSV-file](../admin/misc/device-list.md). You can also download a sample file on the **Upload .csv file with list of devices** page.
 
@@ -83,7 +83,7 @@ For more information, see [Device list CSV-file](../admin/misc/device-list.md). 
 
     - Connect your devices to Azure Active Directory accounts, and automatically enroll them to be managed by Microsoft 365 Business Premium.
 
-    For more information, see [About AutoPilot Profile settings](m365bp-autopilot-profile-settings.md).
+    For more information, see [About Autopilot Profile settings](m365bp-Autopilot-profile-settings.md).
 
 5. The other settings are **Skip privacy settings** and **Don't allow user to become the local admin**. These are both set to **Off** by default.
 
@@ -93,6 +93,6 @@ For more information, see [Device list CSV-file](../admin/misc/device-list.md). 
 
 ## Related content
 
-- [About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
+- [About Autopilot Profile settings](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
 - [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
 - [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
