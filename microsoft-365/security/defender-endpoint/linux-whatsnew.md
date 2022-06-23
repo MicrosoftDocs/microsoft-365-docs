@@ -310,7 +310,7 @@ This article is updated frequently to let you know what's new in the latest rele
 	<p><b> 
 	Build: 101.18.53 <br>
 		
-	<p><b>What's new</b></p>
+	<p>What's new</b></p>
 
    - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
    - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
