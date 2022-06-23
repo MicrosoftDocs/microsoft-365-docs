@@ -42,6 +42,7 @@ Users must hold one of the following admin roles in order to sign up for or end 
 - Billing Administrator
 - Compliance Administrator
 - Global Administrator
+- Compliance Data Admin
 
 Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
 
