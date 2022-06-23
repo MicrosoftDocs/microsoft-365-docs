@@ -170,15 +170,17 @@ Several reports are available in the Microsoft 365 Defender portal.
 
 ### Run a simulation tutorial
 
-It's always a good idea to increase the security preparedness for you and your team through training. Included in the Navigation menu for Defender are tutorials around several types of cyber threats. To get started:
+It's always a good idea to increase the security preparedness for you and your team through training. Included in the Navigation menu for Defender, there are tutorials covering several types of cyber threats. 
+
+To get started:
 
 1. Choose **Tutorials** from the Navigation pane.
 
-2. Read the walkthrough for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
+2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
 
-### Explore the Learning center
+### Explore the Learning hub
 
-There are a number of areas in the learning center in which you can increase your knowledge. 
+There are a number of areas in the Learning hub through which you can increase your knowledge of many of the threats that are out there, and how to address them. It is highly recommended you and your teams spend a lot of time exploring the topics that are offered, especially in the Microsoft 365 Defender and Endpoints sections.
 
 ## See also
 
