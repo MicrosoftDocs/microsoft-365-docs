@@ -297,7 +297,7 @@
         - name: Overview
           href: privileged-access-management-solution-overview.md
         - name: Learn about privileged access management
-          href: privileged-access-management-overview.md
+          href: privileged-access-management.md
         - name: Get started with privileged access management
           href: privileged-access-management-configuration.md
     - name: Protect user and device access
