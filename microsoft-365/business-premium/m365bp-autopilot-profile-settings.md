@@ -35,9 +35,6 @@ description: "Autopilot profiles help you control how Windows gets installed on 
 
 ## Autopilot profile settings
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
-
 You can use Autopilot profiles to control how Windows is installed on user devices. The profiles contain the following settings.
   
 ## Autopilot default features (required) that are set automatically

@@ -31,9 +31,6 @@ description: "Learn how to use Windows Autopilot to set up new Windows 10 device
 
 # Use this step-by-step guide to add Autopilot devices and profile
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md).
-
 You can use Windows Autopilot to set up **new** Windows 10 devices for your business so they're ready for use when you give them to your employees.
   
 ## Device requirements
@@ -50,15 +47,15 @@ If you haven't created device groups or profiles yet, the best way to get starte
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-1. On the left navigation pane, choose **Devices** \> **Autopilot**.
+2. On the left navigation pane, choose **Devices** \> **Autopilot**.
 
     ![In the admin center, choose devices and then Autopilot.](../media/Autopilot.png)
   
-1. On the **Autopilot** page, click or tap **Start guide**.
+3. On the **Autopilot** page, click or tap **Start guide**.
 
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-1. On the **Upload .csv file with list of devices** page, browse to a location where you have the prepared .CSV file, then **Open** \> **Next**. The file must have three headers:
+4. On the **Upload .csv file with list of devices** page, browse to a location where you have the prepared .CSV file, then **Open** \> **Next**. The file must have three headers:
 
     - Column A: Device Serial Number
     - Column B: Windows Product ID
@@ -71,7 +68,7 @@ For more information, see [Device list CSV-file](../admin/misc/device-list.md). 
 > [!NOTE]
 > This script uses WMI to retrieve properties needed for a customer to register a device with Windows Autopilot. Note that it is normal for the resulting CSV file to not collect a Windows Product ID (PKID) value since this is not required to register a device and PKID being NULL in the output CSV is totally fine. Only the serial number and hardware hash will be populated.
 
-4. On the **Assign a profile** page, you can either pick an existing profile or create a new one. If you don't have one yet, you'll be prompted to create one.
+5. On the **Assign a profile** page, you can either pick an existing profile or create a new one. If you don't have one yet, you'll be prompted to create one.
 
     A profile is a collection of settings that can be applied to a single device or to a group of devices.
 
@@ -85,11 +82,11 @@ For more information, see [Device list CSV-file](../admin/misc/device-list.md). 
 
     For more information, see [About Autopilot Profile settings](m365bp-Autopilot-profile-settings.md).
 
-5. The other settings are **Skip privacy settings** and **Don't allow user to become the local admin**. These are both set to **Off** by default.
+6. The other settings are **Skip privacy settings** and **Don't allow user to become the local admin**. These are both set to **Off** by default.
 
     Choose **Next**.
 
-6. **You're done** indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. The settings will be in effect when the device users sign in next. Choose **Close**.
+7. **You're done** indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. The settings will be in effect when the device users sign in next. Choose **Close**.
 
 ## Related content
 
