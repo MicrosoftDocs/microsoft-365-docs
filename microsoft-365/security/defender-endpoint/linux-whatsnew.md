@@ -26,9 +26,9 @@ ms.technology: mde
 
 ## 101.71.18 (30.122052.17118.0)
 
-- Fixed an issue in the product sensor used on RHEL 6 that could lead to a OS hang
-- `mdatp connectivity test` was extended with an additional URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
-- Up until now, the product log level was not persisted between product restarts. Starting from this version, there is a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
+- Fixed an issue in the product sensor used on RHEL 6 that could lead to an OS hang
+- `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
 - Removed the dependency on `python` from the product installation package
 - Performance improvements for file copy operations and processing of network events originating from `auditd`
 - Bug fixes
