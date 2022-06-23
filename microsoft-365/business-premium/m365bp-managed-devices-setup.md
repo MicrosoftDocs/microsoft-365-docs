@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: dansimp
-ms.date: 03/18/2022
 audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
@@ -47,21 +46,28 @@ Follow specific device enrollment guidance below.
 ### For Windows enrollment:
 
 1. Select **Windows** > **Windows enrollment**. 
-1. From the enrollment methods listed, select **Automatic enrollment**.
+
+2. From the enrollment methods listed, select **Automatic enrollment**.
 
 ### For iOS enrollment:
 
 1. Select **iOS** > **iOS enrollment**.
-1. From the list of policies, select a policy to see its details.
-1. Select **Properties** to manage the policy.
-1. Select **Settings** > **System Security** and configure security details in Intune.
-1. Look at configuration profiles. 
-1. Create a profile and push it to the devices in your organization, as needed.
+
+2. From the list of policies, select a policy to see its details.
+
+3. Select **Properties** to manage the policy.
+
+4. Select **Settings** > **System Security** and configure security details in Intune.
+
+5. Look at configuration profiles. 
+
+6. Create a profile and push it to the devices in your organization, as needed.
 
 ### For Android enrollment:
 
 1. Select **Android** > **Android enrollment**.
-1. Choose **Managed Google Play** and grant Microsoft permission to send information to Google.
+
+2. Choose **Managed Google Play** and grant Microsoft permission to send information to Google.
 
 ## Next objective
 

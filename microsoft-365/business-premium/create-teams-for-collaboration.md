@@ -101,7 +101,7 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/m
 
 ## Admin settings
 
-> [!Note]
+> [!NOTE]
 > You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
 
 ## Next objective

@@ -97,7 +97,7 @@ Now that categories and device groups are established, users of iOS and Android 
 
 After choosing a category, the device is automatically added to the corresponding group. If a device is already enrolled before you configure categories, the user sees a notification about the device on the Company Portal website. This lets the user know to select a category the next time they access the Company Portal app on iOS/iPadOS or Android.
 
-> [!Note]
+> [!NOTE]
 > - You can edit a device category in the Azure portal, but you must manually update any Azure AD security groups that reference this category.
 > - If you delete a category, devices assigned to it display the category name **Unassigned**.
 

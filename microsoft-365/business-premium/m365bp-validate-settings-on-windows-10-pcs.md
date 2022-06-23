@@ -31,9 +31,6 @@ description: "Learn how to verify that Microsoft 365 Business Premium app protec
 
 # Validate device protection settings for Windows 10 or 11 PCs
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
-
 ## Verify that Windows 10 or 11 device policies are set
 
 After you [set up device policies](../business-premium/m365bp-protection-settings-for-windows-10-devices.md), it may take up to a few hours for the policy to take effect on users' devices. You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices. Because the users won't be able to modify the Windows Update and Microsoft Defender Antivirus settings on their Windows 10 or 11 devices, many options will be grayed out.

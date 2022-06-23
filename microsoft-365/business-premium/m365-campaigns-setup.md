@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/02/2022
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration

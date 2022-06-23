@@ -38,12 +38,14 @@ The following information tells you how to use Microsoft 365 Business Premium to
 ## How to add a new user
 
 1. Go to admin.microsoft.com
-1. Click **Add a user**.
-1. Enter the basic information and the *personal* email address of the new employee.
+
+2. Click **Add a user**.
+
+3. Enter the basic information and the *personal* email address of the new employee.
 
     When you set up your new employee in the Admin center, make sure to enter and send log-in details to the employee's personal account. This way, they'll receive an email from the Microsoft Online Service Team that tells them how to log in to Microsoft 365 Business Premium. If you don't send it to their personal email address, instead, print out the employee's sign in name and password, and give it to them in person. Or, tell them the information over the phone.
   
-1. Have the new user sign in to use Microsoft 365 Business Premium. Give them the following sign in information:
+4. Have the new user sign in to use Microsoft 365 Business Premium. Give them the following sign in information:
   
     - Sign in at [https://www.office.com](https://www.office.com).
     - Select **Sign in**, then type the user ID and password.
