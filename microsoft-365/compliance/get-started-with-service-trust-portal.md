@@ -72,16 +72,24 @@ Provides a wealth of security implementation and design information with the goa
 - **GDPR** - How Microsoft helps support our customers on their GDPR compliance journeys.
 - **GRC Assessment** - Provides audit and assurance professionals with a common set of assessment procedures.
 - **HIPAA** - US Privacy requirements for personal health information held by covered entities.
-- **IRS 1075** - US government program providing guidance to protect the confidenitality of Federal Tax Information (FTI).
+- **IRS 1075** - US government program providing guidance to protect the confidentiality of Federal Tax Information (FTI).
 - **ISO** - Compliance with specific information security and risk management requirements.
 - **ITAR** - US regulation that controls the manufacture, sale, and distribution of defense.
 - **NIST 800-171 (DFARS)** - US security requirements for protecting Controlled Unclassified Information in Non Federal Systems and Organizations.
 - **PCI DSS** - Validation of controls around cardholder data to reduce credit card fraud.
 - **SOC Reports** - SOC 1, 2, and 3 reports designed to build trust and confidence in Microsoft Services.
 
-### Industries & Regions
+Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the following page.  
 
-Clicking on one of the tiles for certification, standards, or regulations will bring you to a page that is separated into regions represented by the national flags for each country. There is also a section for all whitepapers to view resources for all regions. Select the Regions dropdown list to organize the available resources by geographic region.
+
+
+Filter by date and cloud service
+
+ 
+
+Document download view
+
+
 
 > [!NOTE]
 > Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
@@ -93,15 +101,6 @@ This feature lets you save (or *pin*) documents so that you can quickly access t
 ### All Documents
 
 
-<!--
-### More
-
-Go to **More > Admin** to access administrative functions that are only available to the global administrator account. This option is visible only when you are signed in as a global administrator. There are two options in the **Admin** pull-down menu:
-
-- **Settings:** This page lets you assign user roles for Compliance Manager (classic).
-
-- **User Privacy Settings:** This page lets you export a report that contains action item assignments in Compliance Manager (classic) for a specific user. You can also reassign all action items to a different user and remove any assigned action item from the specified user.
--->
 
 ### Search
 
@@ -109,14 +108,7 @@ Click the magnifying glass in the upper right-hand corner of the Service Trust P
 
 ![Service Trust Portal - Search on Documents with filter applied.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
-
-To list controls from Assessments in Compliance Manager (classic) related your search terms, click **Compliance Manager**. The search results show the date the assessment was created, the name of the assessment grouping, the applicable Microsoft Cloud service, and whether the control is Microsoft or Customer Managed. Click the name of the control to view the control in the Assessment in Compliance Manager (classic).
-
-![Service Trust Portal - Search on Compliance Manager Controls.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
-
-> [!NOTE]
-> Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.
+By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, and regions. Click the document name link to download the document.
 
 ## My Library
 
@@ -126,25 +118,9 @@ Additionally, the notifications feature lets you configure your My Library so th
 
 Also note that we identify any documents in your My Library that have been updated within the last 30 days, regardless of whether or not you turn on notifications. A brief description of the update is also displayed in a tool tip.
 
-<!--
-## Starter packs
-
-Starter packs are a Microsoft-curated set of documentation about Microsoft Cloud services for specific industries. Currently, the Service Trust Portal offers the following three starter packs for financial services organizations. These starter packs help organizations evaluate and assess security, compliance, and privacy in the Microsoft Cloud and provide guidance to help implement Microsoft Cloud services in the highly regulated financial services industry.
-
-- **Evaluation Starter Pack:** Use for early evaluation of the Microsoft cloud for financial services organizations.
-
-- **Assessment Starter Pack:** After evaluation, use the checklists and other guidance in this starter pack to help your organization assess risks related to security, compliance, and privacy.
-
-- **Audit Starter Pack:** User this starter pack for guidance on using auditing controls and other tool to help guide your implementation of Microsoft Cloud services in a way that helps reduce your organization's exposure to risk.
-
-To access these starter packs, go to **Service Trust Portal > Industries & Regions > Industry Solutions > Financial Services**. You can open or a download documents from a starter pack or save them to your My Library.
-
 ## Localization support
 
 The Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice.
-
-![Service Trust Portal - Localized content options.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
--->
 
 ## Give feedback
 
