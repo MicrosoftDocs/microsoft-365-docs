@@ -47,7 +47,10 @@ Restrictions are typically applied by adding the restriction type to the file or
 
 ### Requirements
 
-This capability requires Windows Defender Antivirus March 2022 Engine, version 1.1.19100.X or later.
+This capability requires Windows Defender Antivirus:
+
+- Platform: **4.18.2205.7** or later
+- Engine: **1.1.19300.2** or later
 
 ### Syntax
 
