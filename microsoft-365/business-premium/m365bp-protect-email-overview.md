@@ -4,8 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
