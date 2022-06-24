@@ -85,7 +85,7 @@ Filter by date and cloud service - When viewing the available documents, you can
 
 :::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filter available documents by date range.":::
 
-Document download view - When viewing the available documents, you can sort the results by the applicable cloud service.
+Document download view - When viewing the available documents, you can sort the results by the applicable **Cloud Service**.
 
 :::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filter available documents by cloud service.":::
 
