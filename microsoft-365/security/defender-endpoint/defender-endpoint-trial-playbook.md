@@ -93,4 +93,8 @@ how to goes here
 
 how to goes here
 
+## See also
+
+[Microsoft Defender for Endpoint evaluation lab](/microsoft-365/security/defender-endpoint/evaluation-lab?view=o365-worldwide&branch=mde-trial)
+
 
