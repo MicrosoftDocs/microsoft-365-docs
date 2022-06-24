@@ -2,11 +2,11 @@
 title: "Validate app protection settings for Windows 10 PCs"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
@@ -30,9 +30,6 @@ description: "Learn how to verify that Microsoft 365 Business Premium app protec
 ---
 
 # Validate device protection settings for Windows 10 or 11 PCs
-
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Verify that Windows 10 or 11 device policies are set
 
