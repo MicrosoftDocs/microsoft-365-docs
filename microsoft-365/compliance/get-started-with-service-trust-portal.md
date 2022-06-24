@@ -2,8 +2,8 @@
 title: "Get started with the Microsoft Service Trust Portal"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: overview
