@@ -85,20 +85,26 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>May-2022 (Platform: x.x | Engine: 1.1.19300.2)</summary>
+<summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
 
-&ensp;Security intelligence update version: **x.x**<br/>
-&ensp;Released: **June 20, 2022**<br/>
-&ensp;Platform: **x.x**<br/>
+&ensp;Security intelligence update version: **1.369.88.0**<br/>
+&ensp;Released: **June 22, 2022**<br/>
+&ensp;Platform: **4.18.2205.7**<br/>
 &ensp;Engine: **1.1.19300.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19300.2<br/>
-Security intelligence update version: x.x<br/>
+Security intelligence update version: 1.369.88.0<br/>
 
 ### What's new
 
-- Added fix to support ASR rules 
+- Added fix for ETW channel configuration for updates 
+- Added support for contextual exclusions allowing more specific exclusion targeting 
+- Fixed context maximum size
+- Added fix for [ASR LSASS detection](attack-surface-reduction-rules-reference.md)
+- Added fix to SHSetKnownFolder for rule exclusion logic
+- Added AMSI disk usage limits for The History Store
+- Added fix for Defender service refusing to accept signature updates
 
 ### Known Issues
 
@@ -150,7 +156,7 @@ Security intelligence update version: 1.361.1449.0<br/>
 
 ### Known Issues
 
-No known issues
+- Potential for high resource utilization (CPU and/or memory). See the Platform 4.18.2203.5 and Engine 1.1.19200.5 update for March 2022.
 
 <br/><br/>
 </details><details>

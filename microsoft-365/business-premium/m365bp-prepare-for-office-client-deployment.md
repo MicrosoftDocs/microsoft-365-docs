@@ -2,12 +2,11 @@
 title: "Prepare for Office client deployment with Microsoft 365 Business Premium"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 04/01/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: M365-subscription-management 
