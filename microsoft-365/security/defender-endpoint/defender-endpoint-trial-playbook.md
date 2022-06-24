@@ -60,3 +60,7 @@ Here's how to set up your trial subscription:
 1. Confirm your license state (see [Check license state](production-deployment.md)).
 2. Add users (see [Add users and assign licenses](../../admin/add-users/add-users.md)).
 3. Grant user permissions for your security team (see [Role-based access control](prepare-deployment.md)). 
+4. Visit the Microsoft 365 Defender portal.
+5. Onboard devices (see [Onboarding tool options](/microsoft-365/security/defender-endpoint/onboarding?view=o365-worldwide&branch=mde-trial)).
+6. Configure your security capabilities (see [Configure capabilities](onboarding.md)).  
+7. Run simulated attacks. 
