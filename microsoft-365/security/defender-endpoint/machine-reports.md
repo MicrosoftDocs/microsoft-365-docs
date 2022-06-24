@@ -248,7 +248,7 @@ For information about Manage Microsoft Defender Antivirus update versions, see: 
 
 ## End of section - Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint
 
-## Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint
+## Publicly released: Device health and compliance report in Microsoft Defender for Endpoint
 
 The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
 
