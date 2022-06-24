@@ -26,7 +26,7 @@ Your Microsoft 365 or Office 365 subscription comes with a set of admin roles th
 
 The Microsoft 365 admin center lets you manage some Microsoft Intune roles. However, these roles are a subset of the roles available in the Intune admin center. Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-For more information on assigning roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">Microsoft 365 admin center</a>, see [Assign admin roles](assign-admin-roles.md).
+For more information on assigning roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">Microsoft 365 admin center</a>, see [Assign admin roles](../admin/add-users/assign-admin-roles.md).
 
 In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
 
@@ -51,10 +51,10 @@ A partner can assign these roles:
 
 - Limited administration, which has privileges equivalent to a helpdesk admin.
 
-Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
+Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../admin/misc/add-partner.md).
   
 ## Related content
 
-[About Microsoft 365 admin roles](about-admin-roles.md) (article)\
+[About Microsoft 365 admin roles](../admin/add-users/about-admin-roles.md) (article)\
 [Assign admin roles](assign-admin-roles.md) (article)\
 [Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md) (article)
