@@ -51,3 +51,12 @@ Defender for Endpoint is an enterprise endpoint security platform that uses the 
 </table>
 <br>
 
+Let's get started!
+
+## Set up your trial
+
+Here's how to set up your trial subscription:
+
+1. Confirm your license state (see [Check license state](production-deployment.md)).
+2. Add users (see [Add users and assign licenses](../../admin/add-users/add-users.md)).
+3. Grant user permissions for your security team (see [Role-based access control](prepare-deployment.md)). 
