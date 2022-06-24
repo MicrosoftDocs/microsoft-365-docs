@@ -102,7 +102,7 @@ To submit an offer to activate Customer Key, complete these steps:
 
 2. Once you're logged in, select the appropriate domain.
 
-3. For the selected domain, choose **Request services** from the top navigation bar, and review the list of available offers.
+3. For the selected domain, choose **Deploy** from the top navigation bar, and review the list of available offers.
 
 4. Choose the information card for the offer that applies to you:
 

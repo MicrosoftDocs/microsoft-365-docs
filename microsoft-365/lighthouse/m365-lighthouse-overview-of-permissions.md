@@ -27,9 +27,6 @@ We recommend assigning roles to groups of MSP technicians based on the tasks eac
 
 The tables in the next section describe which GDAP roles grant permission to read customer data and take action on customer tenants in Lighthouse. See [Permissions in the partner tenant](#permissions-in-the-partner-tenant) in this article for additional roles required to manage Lighthouse entities (for example, tags and Lighthouse service requests).
 
-> [!NOTE]
->GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available. Check [Known Issues](m365-lighthouse-known-issues.md) if you're having a problem accessing or performing an action in Lighthouse.
-
 ## Example MSP service tiers, recommended GDAP roles, and permissions
 
 The following table lists the recommended GDAP roles for some example MSP service tiers. 

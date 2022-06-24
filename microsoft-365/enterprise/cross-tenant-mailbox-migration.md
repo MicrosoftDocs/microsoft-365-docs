@@ -20,7 +20,7 @@ ms.collection:
 
 # Cross-tenant mailbox migration (preview)
 
-Commonly, during mergers or divestitures, you need the ability to move your user's Exchange Online mailbox into a new tenant. Cross-tenant mailbox migration allows tenant administrators to use well-known interfaces like Remote PowerShell and MRS to transition users to their new organization.
+Commonly, during mergers or divestitures, you need the ability to move your user's Exchange Online mailbox into a new tenant. Cross-tenant mailbox migration allows tenant administrators to use well-known interfaces like Exchange Online PowerShell and MRS to transition users to their new organization.
 
 Administrators can use the New-MigrationBatch cmdlet, available through the Move Mailboxes management role, to execute cross-tenant moves.
 
@@ -132,7 +132,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 ### Prepare the target tenant by creating the Exchange Online migration endpoint and organization relationship
 
-1. Create a Remote PowerShell connection to the target Exchange Online tenant.
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in the target Exchange Online tenant.
 
 2. Create a new migration endpoint for cross-tenant mailbox moves
 
@@ -180,7 +180,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 2. Accept the application when the pop-up appears. You can also log into your Azure Active Directory portal and find the application under Enterprise applications.
 
-3. Create new or edit your existing organization relationship object to your target (destination) tenant from an Exchange Online Remote PowerShell window.
+3. Create a new organization relationship or edit your existing organization relationship object to your target (destination) tenant in Exchange Online PowerShell:
 
    ```powershell
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"

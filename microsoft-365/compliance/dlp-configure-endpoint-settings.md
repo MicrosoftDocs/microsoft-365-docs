@@ -134,7 +134,7 @@ When **Access by restricted apps** is selected in a policy and a user uses an ap
 > [!IMPORTANT]
 > The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item. 
 
-#### File activities for apps in restricted app groups (preview)
+#### File activities for apps in restricted app groups
 
 Restricted app groups are collections of apps that you create in DLP settings and then add to a rule in a policy. When you add a restricted app group to a policy you can take the actions defined in this table.
 
@@ -149,11 +149,11 @@ Restricted app groups are collections of apps that you create in DLP settings an
 
 #### How DLP applies restrictions to activities
 
-Interactions between **File activities for apps in restricted app groups (preview)**, **File activities for all apps** and the **Restricted app activities** list are scoped to the same rule.
+Interactions between **File activities for apps in restricted app groups**, **File activities for all apps** and the **Restricted app activities** list are scoped to the same rule.
 
 ##### Restricted app groups overrides
 
-Configurations defined in **File activities for apps in restricted app groups (preview)** override the configurations in the **Restricted app activities** list and **File activities for all apps** in the same rule.
+Configurations defined in **File activities for apps in restricted app groups** override the configurations in the **Restricted app activities** list and **File activities for all apps** in the same rule.
 
 ##### Restricted app activities and File activities for all apps
 
@@ -180,7 +180,7 @@ User A opens a DLP protected file using Notepad. DLP allows the access and audit
    
 ##### File activities for all apps only
 
-If an app is not in **File activities for apps in restricted app groups (preview)** or is not in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
+If an app is not in **File activities for apps in restricted app groups** or is not in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
 #### macOS devices
 

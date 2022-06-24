@@ -22,10 +22,6 @@ ms.collection:
 
 Microsoft offers a wide variety of cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. This article is designed to help clarify what security features, such as device protection, are included in Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft Defender for Endpoint.
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 **Use this article to**:
 
