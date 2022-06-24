@@ -31,7 +31,7 @@ description: "A set of suggestions for what to focus your efforts upon in the De
 
 The following guidance provides a starting point to help you make decisions about security incident priorities in the Microsoft Defender portal.
   
-## Daily tasks
+## Suggested daily tasks
 
 Here are some suggestions for security tasks to pursue on a daily basis.
 
@@ -65,7 +65,7 @@ To find out if you have any devices that have had threats at them, do the follow
 
 1. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.
 
-## Weekly tasks
+## Suggested weekly tasks
 
 Here are some suggestions of important security tasks to do at least on a weekly basis.
 
@@ -126,7 +126,7 @@ Improve your security configuration by remediating issues using the security rec
 
 1. Select **Security controls** to go back to the Security recommendations page. The item that you addressed is not listed there anymore, which results in your Microsoft secure score improving.
 
-## Monthly tasks
+## Suggested monthly tasks
 
 These are tasks that you should do on a monthly basis, if not more often. 
 
@@ -180,7 +180,7 @@ To get started:
 
 ### Explore the Learning hub
 
-There are a number of areas in the Learning hub through which you can increase your knowledge of many of the threats that are out there, and how to address them. It is highly recommended you and your teams spend a lot of time exploring the topics that are offered, especially in the Microsoft 365 Defender and Endpoints sections.
+There are a number of areas in the Learning hub through which you can increase your knowledge of many of the threats that are out there, and how to address them. We recommended you and your teams spend a lot of time exploring the topics that are offered, especially in the Microsoft 365 Defender and Endpoints sections.
 
 ## See also
 
