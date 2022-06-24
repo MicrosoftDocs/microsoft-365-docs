@@ -79,7 +79,18 @@ how to goes here
 
 ## Step 4: Visit the Microsoft 365 Defender portal
 
-how to goes here
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for viewing and managing detected threats. This portal combines protection, detection, investigation, and response to threats across devices in a central place.
+
+The Microsoft 365 Defender Portal includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities. 
+
+The Microsoft 365 Defender portal helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
+
+- Incidents & alerts
+- Hunting
+- Action center
+- Threat analytics
+
+
 
 ## Step 5: Onboard devices
 
