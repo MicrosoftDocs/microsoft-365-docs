@@ -81,15 +81,13 @@ Provides a wealth of security implementation and design information with the goa
 
 Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the following page.  
 
+Filter by date and cloud service - When viewing the available documents, you can sort the results by date range by selecting **Dates** and then selecting the range you want to use.
 
+:::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filter available documents by date range.":::
 
-Filter by date and cloud service
+Document download view - When viewing the available documents, you can sort the results by the applicable cloud service.
 
- 
-
-Document download view
-
-
+:::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filter available documents by cloud service.":::
 
 > [!NOTE]
 > Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
@@ -100,7 +98,7 @@ This feature lets you save (or *pin*) documents so that you can quickly access t
 
 ### All Documents
 
-
+This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources.
 
 ### Search
 
