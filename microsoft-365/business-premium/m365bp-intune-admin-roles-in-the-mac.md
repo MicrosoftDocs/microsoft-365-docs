@@ -56,5 +56,5 @@ Before the partner can assign these roles to users, you must add the partner as 
 ## Related content
 
 [About Microsoft 365 admin roles](../admin/add-users/about-admin-roles.md) (article)\
-[Assign admin roles](assign-admin-roles.md) (article)\
-[Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md) (article)
+[Assign admin roles](../admin/add-users/assign-admin-roles.md) (article)\
+[Activity reports in the Microsoft 365 admin center](../admin/activity-reports/activity-reports.md) (article)
