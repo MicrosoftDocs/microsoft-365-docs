@@ -34,6 +34,12 @@ Devices can be categorized as misconfigured or inactive are flagged for varying 
 
 An inactive device is not necessarily flagged because of an issue. The following actions taken on a device can cause a device to be categorized as inactive:
 
+- Device is not in use
+- Device was reinstalled or renamed
+- Device was offboarded
+- Device is not sending signals
+
+
 ### Device is not in use
 
 Any device that is not in use for more than seven days will retain 'Inactive' status in the portal.
