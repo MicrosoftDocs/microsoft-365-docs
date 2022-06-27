@@ -22,7 +22,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 04/22/2022
+ms.date: 06/23/2022
 ---
 
 # Unassign Microsoft 365 licenses from users
@@ -43,7 +43,9 @@ You can unassign licenses from users on either the **Active users** page, or on 
 
 ## Use the Licenses page to unassign licenses
 
-When you use the **Licenses** page to unassign licenses, you unassign licenses for a specific product for up to 20 users.
+The **Licenses** page lets you assign or unassign licenses for up to 20 users at a time. The page shows the products you own, the number of available licenses for each product, and the number of assigned licenses out of the total licenses available. The number of licenses is an aggregate total of licenses for all subscriptions for the same product name.
+
+For example, you might have one subscription for Microsoft 365 Business Premium that has 5 licenses, and another subscription that has 8 licenses for the same product. The **Licenses** page shows that you have a total of 13 licenses for Microsoft 365 Business Premium across all your subscriptions. This is different from what you see on the **Your products** page, which displays a row for each subscription you own, even if they are for the same product.
 
 ::: moniker range="o365-worldwide"
 
@@ -57,13 +59,13 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ::: moniker-end
 
-2. Select the product for which you want to unassign licenses.
+1. Select a product.
 
-3. Select the users for which you want to unassign licenses.
+2. Select the check boxes of the users for which you want to unassign licenses.
 
-4. Select **Unassign licenses**.
+3. Select **Unassign licenses**.
 
-5. In the **Unassign licenses** box, select **Unassign**.
+4. In the **Unassign licenses** box, select **Unassign**.
 
 ## Use the Active users page to unassign licenses
 
