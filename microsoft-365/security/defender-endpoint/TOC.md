@@ -44,43 +44,33 @@
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
 
-## [Configure and onboard devices]()
+## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
-### [Onboarding Windows Client and Server]()
+### [Onboard Windows Client and Server]()
 
-#### [Defender for Endpoint onboarding Windows Client](onboard-windows-client.md)
+#### [Onboarding Windows Client](onboard-windows-client.md)
+##### [Onboard Windows Client using Intune ](configure-endpoints-mdm.md)
+##### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
+##### [Onboard Windows Client using a local script](configure-endpoints-script.md)
+##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-##### [Onboard Windows Client using management tools]()
+#### [Onboarding Windows Server](onboard-windows-server.md)
+##### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
+##### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
+##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-###### [Onboard Windows devices to Defender for Endpoint using Intune ](configure-endpoints-mdm.md)
-###### [Onboard Windows Client devices using Group Policy](configure-endpoints-gp.md)
-###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
-###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-
-#### [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md)
-
-##### [Onboard Windows Server using management tools]()
-
-###### [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md)
-###### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
-###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-
-#### [Defender for Endpoint onboarding previous versions of Windows](onboard-windows-prev-version.md)
-
-### [Microsoft Defender for Endpoint on Windows and Windows Server]()
+### [Onboard previous versions of Windows]()
+#### [Onboard previous versions of Windows](onboard-windows-prev-version.md)
 #### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
+#### [Onboard previous versions of Windows](onboard-downlevel.md)
 #### [Onboard Windows devices and Windows Servers]()
-
-##### [Onboard previous versions of Windows](onboard-downlevel.md)
-
-##### [Onboard Windows devices and Windows Servers]()
-###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
-###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
-###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
-###### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-###### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+##### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
+##### [Onboard Windows devices using a local script](configure-endpoints-script.md)
+##### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+##### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+##### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 
 #### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 
