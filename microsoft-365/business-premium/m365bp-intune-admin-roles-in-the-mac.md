@@ -33,7 +33,7 @@ To create, edit, or assign roles, your account must have one of the following pe
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-Find more information on [AAD roles and RBAC](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+Find more information on [AAD roles and RBAC](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
 
 ### Microsoft Intune built-in roles
 
