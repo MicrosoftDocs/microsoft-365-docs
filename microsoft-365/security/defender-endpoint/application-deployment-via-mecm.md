@@ -33,9 +33,9 @@ ms.technology: mde
 - Down-level OS devices in your environment onboarded with Microsoft Monitoring Agent. To confirm, verify that `MsSenseS.exe` is running in Task Manager details.
 - Presence of the MMA agent. You can verify by checking if the correct Workspace ID is present in the Control Panel> Microsoft Monitoring Agent.
 - M365 Defender portal active, and devices onboarded.
-- A Device Collection containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is setup in your MECM instance.
+- A Device Collection containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is set up in your MECM instance.
 
-For more information on installing the above, see [Supported topics](#supported-topics).
+For more information on installing the above, see the [relevant topics](#relevant-topics) section.
 
 ## App Packaging and Deployment
 
@@ -43,11 +43,11 @@ For more information on installing the above, see [Supported topics](#supported-
 
 Copy the UA agent package, Onboarding Script and migration script to the same Content source you deploy other apps with MECM.
 
-1. Download Onboarding Scrip and UA agent from [MDATP Settings - Microsoft 365 security](https://sip.security.microsoft.com/preferences2/onboarding).
+1. Download Onboarding Script and UA agent from [MDATP Settings - Microsoft 365 security](https://sip.security.microsoft.com/preferences2/onboarding).
      :::image type="content" source="images/onboarding-script.png" alt-text="Onboarding script and UA agent download":::
 2. Download the migration script from the following document [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
      :::image type="content" source="images/migration-script.png" alt-text="Downloading migration script":::
-3. Save all 3 files in a shared folder used by MECM as a Software Source. See the below Screenshot.
+3. Save all three files in a shared folder used by MECM as a Software Source. See the below Screenshot.
      :::image type="content" source="images/ua-migration.png" alt-text="Migrating UA":::
 
 ### Creating the package as an application
@@ -79,13 +79,13 @@ Copy the UA agent package, Onboarding Script and migration script to the same Co
      :::image type="content" source="images/detection-rule-wizard.png" alt-text="Registry key detection":::
 
      **Additional information**:
-     This registry key value was obtained by running the following Powershell command on a device that has had the UA agent installed, other creative methods of detection can be used also. The goal is to identity whether Unified Agent has been already installed on a specific device.
+     This registry key value was obtained by running the following PowerShell command on a device that has had the UA agent installed, other creative methods of detection can be used also. The goal is to identity whether Unified Agent has been already installed on a specific device.
 
      ```powershell
      PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
      ```
 
-11. In the **User Experience** section, you can choose what suits your environment. For **Installation program visibility**, it is advisable to install with **Normal visibility** during phase testing then change it to **Minimized** for general deployment.
+11. In the **User Experience** section, you can choose what suits your environment. For **Installation program visibility**, it's advisable to install with **Normal visibility** during phase testing then change it to **Minimized** for general deployment.
      >[!TIP]
      > Maximum allowed runtime can be lowered from (default)120 minutes to 30 minutes.
 
@@ -100,7 +100,7 @@ Copy the UA agent package, Onboarding Script and migration script to the same Co
 17. Verify in MECM>Monitoring>Deployments the status of this migration. For example, see the below screenshot. 
      :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check":::
 
-## Supported topics
+## Relevant topics
 
 - [Microsoft Monitoring Agent Setup](/services-hub/health/mma-setup)
 - [Deploy applications - Configuration Manager](/mem/configmgr/apps/deploy-use/deploy-applications)
