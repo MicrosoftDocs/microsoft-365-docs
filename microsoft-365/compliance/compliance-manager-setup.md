@@ -122,7 +122,7 @@ Certain improvement actions can be automatically tested by Compliance Manager. T
 
 Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-**Automatic testing is turned on by default for organizations new to Compliance Manager.** When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration. See [Manage automated testing settings](h#manage-automated-testing-settings) below to edit or turn off this setting.
+**Automatic testing is turned on by default for organizations new to Compliance Manager.** When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration. See [Manage automated testing settings](#manage-automated-testing-settings) below to edit or turn off this setting.
 
 #### How to tell which actions are tested automatically
 
