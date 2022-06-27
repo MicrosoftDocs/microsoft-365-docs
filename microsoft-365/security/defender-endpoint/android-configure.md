@@ -52,13 +52,13 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 
 This feature provides protection against rogue Wi-Fi related threats and rogue certificates which are the primary attack vector for Wi-Fi networks. Admins can list the root Certificate Authority (CA) and private root CA certificates in Microsoft Endpoint Manager Admin center and establish trust with endpoints. It provides the user a guided experience to connect to secure networks and also notifies them if a related threat is detected. 
 
-It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center as well as add trusted certificates. Admins can also enable [privacy controls](android-configure.md) to configure the data that is sent by Defender for Endpoint from Android devices.
+It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center as well as add trusted certificates. Admins can also enable [privacy controls](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#privacy-controls) to configure the data that is sent by Defender for Endpoint from Android devices.
 
 Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
 
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
     > [!div class="mx-imgBorder"]
-    > ![Image of how to create a policy.](images/create-policy.png)
+    > ![Image of how to create a policy.](images/android-mem.png)
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
     > [!div class="mx-imgBorder"]
     > ![Image of policy details.](images/appconfigdetails.png)
@@ -96,6 +96,7 @@ Following privacy controls are available for configuring the data that is sent b
 |Malware report |Admins can set up privacy control for malware report - If privacy is enabled, then Defender for Endpoint will not send the malware app name and other app details as part of the malware alert report |
 |Phish report |Admins can set up privacy control for phish report - If privacy is enabled, then Defender for Endpoint will not send the domain name and details of the unsafe website as part of the phish alert report |
 |Vulnerability assessment of apps (Android-only) |By default only information about apps installed in the work profile are sent for vulnerability assessment. Admins can disable privacy to include personal apps|
+|Network Protection (preview)| Admins can enable or disable privacy in network protection - If enabled, then Defender will not send network details.|
 
 ## Configure vulnerability assessment of apps for BYOD devices
 
