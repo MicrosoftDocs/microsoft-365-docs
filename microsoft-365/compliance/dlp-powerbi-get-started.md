@@ -29,7 +29,7 @@ To help organizations detect and protect their sensitive data, [Microsoft Purvie
 
 ## Considerations and limitations
 
-- DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported.
+- DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported. For more information, see [What is Power BI Premium Gen2?](/power-bi/enterprise/service-premium-gen2-what-is).
 - DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not supported.
 - Both classic and new experience workspaces are supported, as long as they are hosted in Premium Gen2 capacities.
 - You must create a custom DLP custom policy for Power BI. DLP templates are not supported.
