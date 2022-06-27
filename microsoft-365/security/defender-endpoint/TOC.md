@@ -46,18 +46,16 @@
 
 ## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
-### [Onboard Windows Client and Server]()
+### [Onboarding Windows Client](onboard-windows-client.md)
+#### [Onboard Windows Client using Intune ](configure-endpoints-mdm.md)
+#### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
+#### [Onboard Windows Client using a local script](configure-endpoints-script.md)
+#### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-#### [Onboarding Windows Client](onboard-windows-client.md)
-##### [Onboard Windows Client using Intune ](configure-endpoints-mdm.md)
-##### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
-##### [Onboard Windows Client using a local script](configure-endpoints-script.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-
-#### [Onboarding Windows Server](onboard-windows-server.md)
-##### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
-##### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+### [Onboarding Windows Server](onboard-windows-server.md)
+#### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
+#### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
+#### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
 ### [Onboard previous versions of Windows]()
 #### [Onboard previous versions of Windows](onboard-windows-prev-version.md)
