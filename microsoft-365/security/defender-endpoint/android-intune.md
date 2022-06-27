@@ -164,7 +164,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
        :::image type="content" alt-text="Image of selected configuration policies." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
 
-    1. In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
+    1. In the **Assignments** page, select the user group to which this app config policy would be assigned. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
        :::image type="content" source="images/android-select-group.png" alt-text="The Selected groups pane" lightbox="images/android-select-group.png":::
 
@@ -286,7 +286,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
     > [!div class="mx-imgBorder"]
     > ![Image of reviewing and creating policy.](images/savepolicy.png)
 
-Admins can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
+Admins also can set up **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
 
 Organizations can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
 
