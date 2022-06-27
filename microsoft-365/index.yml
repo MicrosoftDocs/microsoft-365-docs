@@ -273,7 +273,7 @@ additionalContent:
             - text: Microsoft Viva Insights
               url: /insights/viva-teams-app
             - text: Microsoft Viva Connections
-              url: /sharepoint/viva-connections
+              url: /viva/connections/
             - text: Microsoft Viva Learning
               url: /microsoft-365/learning/
             - text: More Microsoft Viva >
@@ -297,8 +297,8 @@ additionalContent:
       items:
         # Card
         - title: Developers
-          summary: Find tutorials, references, and other resources for developers in the Microsoft 365 Dev Center.
-          url: https://developer.microsoft.com/microsoft-365
+          summary: Find documentation and resources to help you build or extend collaborative apps for Microsoft 365 and Teams.
+          url: /microsoft-365/developer/?view=o365-worldwide
         - title: End users
           summary: Find training, how-to, and help content for users of Microsoft 365 on support.microsoft.com.
           url: https://support.microsoft.com/microsoft-365

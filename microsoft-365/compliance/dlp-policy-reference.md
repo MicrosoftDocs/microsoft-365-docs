@@ -519,8 +519,24 @@ For example, content like an Excel workbook on a OneDrive for Business site that
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-> [!NOTE]
-> Notification emails are sent unprotected.
+> [!IMPORTANT]
+> - Notification emails are sent unprotected.
+> - Email notifications are only supported for the Microsoft 365 services.
+
+#### Email notifications support by selected location
+
+|Selected location  |Email notifications supported  |
+|---------|---------|
+|Devices     |- Not supported         |
+|Exchange + Devices     |- Supported for Exchange </br>- Not supported for Devices  |
+|Exchange    |- Supported        |
+|SharePoint + Devices  |- Supported for SharePoint </br>- Not supported for Devices         |
+|SharePoint    |- Supported |
+|Exchange + SharePoint    |- Supported for Exchange </br>- Supported for SharePoint  |
+|Devices + SharePoint + Exchange    |- Not supported for Devices </br>- Supported for SharePoint </br> Supported for Exchange |
+|Teams    |- Not supported |
+|OneDrive for Business   |- Supported         |
+|OneDrive for Business + Devices     |- Supported for OneDrive for Business </br>- Not supported for Devices         |
 
 You can also give people the option to [override the policy](#user-overrides), so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 
@@ -531,6 +547,9 @@ The user notifications and policy tips configuration options vary depending on t
 - OneDrive
 - Teams Chat and Channel
 - Defender for Cloud Apps
+
+
+
 
 
 You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)

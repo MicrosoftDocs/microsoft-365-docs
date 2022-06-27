@@ -96,6 +96,7 @@ The following sections identify the licensing requirements for Audit (Standard) 
 ### Audit (Standard)
 
 - Microsoft Business Basic subscription
+- Microsoft Business Standard subscription
 - Microsoft 365 Apps for Business subscription
 - Microsoft 365 Enterprise E3 subscription
 - Microsoft 365 Business Premium

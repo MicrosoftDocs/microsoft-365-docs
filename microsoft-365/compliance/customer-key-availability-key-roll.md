@@ -50,7 +50,7 @@ When you roll either of the Azure Key Vault keys associated with a DEP used with
 
 To instruct Customer Key to use the new key to encrypt multiple workloads, complete these steps:
 
-1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-M365DataAtRestEncryptionPolicy cmdlet.
   

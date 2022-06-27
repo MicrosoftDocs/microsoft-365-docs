@@ -40,4 +40,4 @@ After an admin has required the front-line users to use MFA then the authenticat
 
 ## Next objective
 
-Follow the guidance to [Install Office applications](m365bp-install-office-apps.md).
+For your next objective, follow the guidance to [install Office applications](m365bp-install-office-apps.md).
