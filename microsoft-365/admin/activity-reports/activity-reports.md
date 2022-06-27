@@ -150,7 +150,7 @@ Global administrators can revert this change for their tenant and show identifia
 Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center. 
 The API details are below:  
 
-The URL is https://graph.microsoft.com/beta/reportSettings 
+The URL is https://graph.microsoft.com/beta/admin/reportSettings 
 
 Two methods have been approved for this API:
 
