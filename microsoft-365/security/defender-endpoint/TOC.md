@@ -46,8 +46,7 @@
 
 ## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
-### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
-### [Onboarding Windows Client]()
+### [Onboarding Windows Client](onboard-windows-client.md)
 #### [Onboard Windows Client using Intune](configure-endpoints-mdm.md)
 #### [Onboard Windows Client using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 #### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
@@ -57,7 +56,7 @@
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
 
 
-### [Onboarding Windows Server]()
+### [Onboarding Windows Server](onboard-windows-server.md)
 #### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
 #### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
 #### [Onboard Windows Server using a local script](configure-endpoints-script.md)
