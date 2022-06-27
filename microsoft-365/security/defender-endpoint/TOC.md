@@ -58,9 +58,9 @@
 
 
 ### [Onboarding Windows Server]()
-#### [Onboard Windows devices using a local script](configure-endpoints-script.md)
-#### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
+#### [Onboard Windows Server using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 #### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
+#### [Onboard Windows Server using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 #### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
 
