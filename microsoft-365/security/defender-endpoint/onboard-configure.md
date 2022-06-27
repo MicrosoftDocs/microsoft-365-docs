@@ -47,7 +47,7 @@ To onboard devices to the service:
 - Use the appropriate management tool and deployment method for your devices
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
-This article provides information on onboarding methods applicable to Windows Client and Server versions. For more information, see [Defender for Endpoint onboarding Windows Client](onboard-windows-client.md) and [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md) 
+This article provides information on onboarding methods applicable to Windows Client and Server versions.
 
 ## Onboarding and configuration tool options
 The following table lists the available tools based on the endpoint that you need to onboard.
