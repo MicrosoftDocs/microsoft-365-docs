@@ -48,7 +48,11 @@ Use the Viva Connections app for Microsoft Teams to:
 - Make it easy for frontline workers to access important news and announcements
 - Empower frontline workers around a common mission and goal
 
+### Viva Connections components
+
 Viva Connections is comprised of three main components that can be set up and customized in different ways to highlight tools and resources. As you prioritize and align the scenarios to support, consider how and where certain tools and resources should be located. [Learn more about the differences between desktop and mobile apps](/viva/connections/viva-connections-overview#viva-connections-mobile-and-desktop-experiences).
+
+There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [Feed where news, content from Yammer, and videos are aggregated and displayed](/viva/connections/viva-connections-overview#viva-connections-feed) in a personalized view based on the sites and communities that the viewer follows. The [Dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
 
 |Component |Description |Capabilities |Learn more |
 |:---------|:-----------|:------------|:----------|
@@ -56,8 +60,12 @@ Viva Connections is comprised of three main components that can be set up and cu
 |Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows <br> Content can be prioritized to display more prominently in the Feed. |
 |Resources |The Resources surface links to popular SharePoint portals and other content. |Resources are inherited from global navigation in SharePoint. <br> Link to popular SharePoint portals like HR benefits and training resources. <br> Modern SharePoint portals will display in Teams to provide the best possible viewing experience. |
 
+### Empower your workers to share feedback
+
+Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. In addition, getting feedback from these teams can provide 
+
 ## Create communities with Yammer
 
 ## Boost morale with Praise
 
-## Support engagement with SharePoint and Microsoft Stream
+## Support engagement with SharePoint and Microsoft Stream 
