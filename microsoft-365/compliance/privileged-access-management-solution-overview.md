@@ -30,7 +30,7 @@ Use the following steps to configure privileged access management for your organ
 
 ![Insider risk solution privileged access management steps.](../media/ir-solution-pam-steps.png)
 
-1. Learn about [privileged access management](privileged-access-management-overview.md)
+1. Learn about [privileged access management](privileged-access-management.md)
 2. Create an [approver's group](privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 3. Enable [privileged access management](privileged-access-management-configuration.md#step-2-enable-privileged-access)
 4. Create an [access policy](privileged-access-management-configuration.md#step-3-create-an-access-policy)
@@ -38,4 +38,4 @@ Use the following steps to configure privileged access management for your organ
 
 ## More information about privileged access management
 
-- [Frequently asked questions about privileged access management](privileged-access-management-overview.md#frequently-asked-questions)
+- [Frequently asked questions about privileged access management](privileged-access-management.md#frequently-asked-questions)

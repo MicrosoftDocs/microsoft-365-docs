@@ -85,7 +85,7 @@ Information barriers are available in the following subscriptions:
 
 ### Privileged access management
 
-[Microsoft Purview Privileged Access Management](privileged-access-management-overview.md) allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+[Microsoft Purview Privileged Access Management](privileged-access-management.md) allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
 Privileged access management is available in the following subscriptions:
 
