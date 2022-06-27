@@ -78,8 +78,8 @@ Copy the UA agent package, Onboarding Script and migration script to the same Co
 
      :::image type="content" source="images/detection-rule-wizard.png" alt-text="Registry key detection":::
 
-     **Additional information**:
-     This registry key value was obtained by running the following PowerShell command on a device that has had the UA agent installed, other creative methods of detection can be used also. The goal is to identity whether Unified Agent has been already installed on a specific device.
+     >[!TIP]
+     >This registry key value was obtained by running the following PowerShell command on a device that has had the UA agent installed, other creative methods of detection can be used also. The goal is to identity whether Unified Agent has been already installed on a specific device.
 
      ```powershell
      PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
