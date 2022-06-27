@@ -315,7 +315,9 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
 6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
 
-7. When you're finished, click the **Submit** button.
+7. Add why you are adding allow using the **Optional Note**. 
+
+8. When you're finished, click the **Submit** button.
 
     :::image type="content" source="../../media/submit-url-for-analysis.png" alt-text="Submit URL for analysis" lightbox="../../media/submit-url-for-analysis.png":::
 

@@ -62,7 +62,7 @@ Microsoft Threat Experts - Targeted attack notification provides proactive hunti
 
 ## Microsoft Threat Experts - Experts on Demand
 
-Customers can engage our security experts directly from within Microsoft 365 Defender for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
+Customers can engage our security experts directly from within Microsoft 365 Defender portal to get their response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
 - Get additional clarification on alerts including root cause or scope of the incident
 - Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker
