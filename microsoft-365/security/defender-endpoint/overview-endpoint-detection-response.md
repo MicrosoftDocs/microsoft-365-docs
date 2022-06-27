@@ -30,7 +30,7 @@ Endpoint detection and response capabilities in Defender for Endpoint provide ad
 When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an _incident_. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
 > [!NOTE]
-> Defender for Endpoint detection is not intended to be an auditing or logging solution that records every operation or activity that happens on a given machine.Our sensor has an internal throttling mechanism, so the high rate of repeat identical events will not flood the logs.
+> Defender for Endpoint detection is not intended to be an auditing or logging solution that records every operation or activity that happens on a given endpoint. Our sensor has an internal throttling mechanism, so the high rate of repeat identical events will not flood the logs.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4o1j5]
 
