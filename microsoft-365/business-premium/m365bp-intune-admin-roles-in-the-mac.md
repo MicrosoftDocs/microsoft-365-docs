@@ -2,9 +2,9 @@
 title: "About Intune admin roles in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekua
-manager: scotv
+ms.author: v-kcirillo
+author: cirilk
+manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -29,7 +29,7 @@ Before adding specific Intune roles, roles must be assigned in AAD. To see these
 - Properties: The name, description, permissions, and scope tags for the role.
 - Assignments: A list of role assignments defining which users have access to which users or devices. A role can have multiple assignments, and a user can be in multiple assignments.
 
-## About Roles-based access control in Intune
+## About roles-based access control in Intune
 
 Role-based access control (RBAC) helps you manage who has access to your organization's resources and what they can do with those resources. By assigning roles to your Intune users, you can limit what they can see and change. There are both built-in and custom roles, and each role has a set of permissions that determine what users with that role can access, or change within your organization. The following information will cover built-in and custom roles within Intune.
 
