@@ -257,11 +257,6 @@ The device configuration profile is now assigned to the selected user group.
 
 ## Set up Microsoft Defender in Personal Profile on Android Enterprise in BYOD mode
 
-> [!NOTE]
-> Microsoft Defender support in Personal profile in Android Enterprise (AE) in Bring-Your-Own-Device (BYOD) mode is now in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-With Microsoft defender support in Android personal profiles, user devices can be protected against phishing and malware attacks on a personal profile that could potentially compromise corporate resources on work profile.
-
 ### Set up Microsoft Defender in Personal Profile
 
 Admins can go to the [Microsoft Endpoint Management admin center](https://endpoint.microsoft.com) to set up and configure Microsoft Defender support in personal profiles by following these steps:
