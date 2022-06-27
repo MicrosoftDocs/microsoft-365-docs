@@ -118,9 +118,9 @@ The Compliance Manager settings in the Microsoft Purview compliance portal allow
 
 ### Set up automated testing
 
-Certain improvement actions can be automatically tested by Compliance Manager. This is because Compliance Manager detects signals from other Microsoft Purview solutions that your organization subscribes to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). 
+Certain improvement actions can be automatically tested by Compliance Manager. This is because Compliance Manager detects signals from other Microsoft Purview solutions that your organization subscribes to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
-Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets credited to your overall compliance score.
+Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
 Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
 
@@ -154,10 +154,6 @@ The global administrator for your organization can change the settings for autom
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
-
-**Learn more**
-- [Learn more about how continuous monitoring contributes to your compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
-- [Learn more about designating a testing source for an improvement action](compliance-manager-improvement-actions.md#update-testing-source).
 
 ### Manage user history
 
