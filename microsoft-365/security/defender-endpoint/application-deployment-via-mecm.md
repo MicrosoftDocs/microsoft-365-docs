@@ -1,0 +1,109 @@
+---
+title: Migrating Defender sensor from MMA to UA using MECM for down-level OS
+description: Learn how to migrate down-level servers from Microsoft Monitoring Agent to the new Unified Agent step-by-step from this article.
+keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, MECM, Microsoft Monitoring Agent, MMA, downlevel server
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+author: alekyaj
+ms.author: macapara
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+---
+
+# Migrating Defender sensor from MMA to UA using MECM for down-level OS
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+
+- Windows Server 2012 R2
+- Windows Server 2016
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+## Prerequisites
+
+- Microsoft Endpoint Configuration Manager installed (Version 2107 N -2)
+- Down-level OS devices in your environment onboarded with Microsoft Monitoring Agent. To confirm, verify that `MsSenseS.exe` is running in Task Manager details.
+- Presence of the MMA agent. You can verify by checking if the correct Workspace ID is present in the Control Panel> Microsoft Monitoring Agent.
+- M365 Defender portal active, and devices onboarded.
+- A Device Collection containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is setup in your MECM instance.
+
+For more information on installing the above, see [Supported topics](#supported-topics).
+
+## App Packaging and Deployment
+
+### Gathering the files needed before packaging
+
+Copy the UA agent package, Onboarding Script and migration script to the same Content source you deploy other apps with MECM.
+
+1. Download Onboarding Scrip and UA agent from [MDATP Settings - Microsoft 365 security](https://sip.security.microsoft.com/preferences2/onboarding).
+     :::image type="content" source="images/onboarding-script.png" alt-text="Onboarding script and UA agent download":::
+2. Download the migration script from the following document [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
+     :::image type="content" source="images/migration-script.png" alt-text="Downloading migration script":::
+3. Save all 3 files in a shared folder used by MECM as a Software Source. See the below Screenshot.
+     :::image type="content" source="images/ua-migration.png" alt-text="Migrating UA":::
+
+### Creating the package as an application
+
+1. In the MECM console go through these steps: **Software Library>>Applications>>Create Application**.
+2. Select **Manually specify the application information**.
+3. Click Next on the Software Center screen of the wizard.
+     :::image type="content" source="images/manual-application-information.png" alt-text="Manually specify the application information selection":::
+4. On Deployment Types click **Add**.
+5. Select **Manually to specify the deployment type information** and click **Next**.
+6. Give a name to your script deployment and click Next.
+     :::image type="content" source="images/manual-deployment-information.png" alt-text="Manually specify the deployment information selection":::
+7. On this step, copy the UNC path that your content is located. Example: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`.
+     :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC path copy":::
+8. Additionally, set the following as the installation program:
+
+     ```powershell
+       Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -Log -Etl -RemoveMMA 48594f03-7e66-4e15-8b60-d9da2f92d564 -OnboardingScript .\WindowsDefenderATP.onboarding
+     ```
+
+9. Click **Next** and click to add a clause.
+10. The clause will be looking in the registry to see if the following key is present: 
+     `HKEY_LOCAL_MACHINESOFTWARE\Classes\Installer\Products\63FAD065BFFD18F1926692665F704C6D`
+
+     - Value: Product Name
+     - Data Type: String
+     - Check the option: This registry setting must exit on the target system to indicate presence of this application.
+
+     :::image type="content" source="images/detection-rule-wizard.png" alt-text="Registry key detection":::
+
+     **Additional information**:
+     This registry key value was obtained by running the following Powershell command on a device that has had the UA agent installed, other creative methods of detection can be used also. The goal is to identity whether Unified Agent has been already installed on a specific device.
+
+     ```powershell
+     PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+     ```
+
+11. In the **User Experience** section, you can choose what suits your environment. For **Installation program visibility**, it is advisable to install with **Normal visibility** during phase testing then change it to **Minimized** for general deployment.
+     >[!TIP]
+     > Maximum allowed runtime can be lowered from (default)120 minutes to 30 minutes.
+
+     :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="User experience in deployment type wizard":::
+
+12. Click **Next** on requirements.
+13. Click **Next** on Dependencies.
+14. Click **Next** until completion screen comes up then **Close**.
+15. Keep clicking next until the completion of Application Wizard. Verify all has been green checked.
+16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.
+     :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created":::
+17. Verify in MECM>Monitoring>Deployments the status of this migration. For example, see the below screenshot. 
+     :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check":::
+
+## Supported topics
+
+- [Microsoft Monitoring Agent Setup](/services-hub/health/mma-setup)
+- [Deploy applications - Configuration Manager](/mem/configmgr/apps/deploy-use/deploy-applications)
+- [Microsoft Defender for Endpoint - Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
+- [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md)
+- [Microsoft Defender for Endpoint: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292)

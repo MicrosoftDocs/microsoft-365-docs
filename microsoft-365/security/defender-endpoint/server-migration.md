@@ -18,6 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
+
 # Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -104,6 +105,7 @@ Name: ForceDefenderPassiveMode
 Type: REG_DWORD
 Value: 0
 
+For more information on MMA to Unified Agent migration scenario, see [Migrating Defender sensor from MMA to UA using MECM for down-level OS](application-deployment-via-mecm.md).
 
 ## Other migration scenarios
 
