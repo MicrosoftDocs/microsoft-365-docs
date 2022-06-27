@@ -62,7 +62,7 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
     > [!div class="mx-imgBorder"]
     > ![Image of policy details.](images/appconfigdetails.png)
-1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'0'** to diable Network Protection. (Network protection is enabled by default)
+1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'0'** to disable Network Protection. (Network protection is enabled by default)
     > [!div class="mx-imgBorder"]
     > ![Image of how to select enable network protection policy](images/selectnp.png)
     
@@ -95,7 +95,7 @@ Following privacy controls are available for configuring the data that is sent b
 |--------------------|-------------|
 |Malware report |Admins can set up privacy control for malware report - If privacy is enabled, then Defender for Endpoint will not send the malware app name and other app details as part of the malware alert report |
 |Phish report |Admins can set up privacy control for phish report - If privacy is enabled, then Defender for Endpoint will not send the domain name and details of the unsafe website as part of the phish alert report |
-|Vulnerability assessment of apps (Android-only) |By default only information about apps installed in the work profile are sent for vulnerability assessment. Admins can disable privacy to include personal apps|
+|Vulnerability assessment of apps (Android-only) |By default only information about apps installed in the work profile is sent for vulnerability assessment. Admins can disable privacy to include personal apps|
 |Network Protection (preview)| Admins can enable or disable privacy in network protection - If enabled, then Defender will not send network details.|
 
 ## Configure vulnerability assessment of apps for BYOD devices
