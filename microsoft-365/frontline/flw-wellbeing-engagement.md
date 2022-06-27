@@ -55,3 +55,9 @@ Viva Connections is comprised of three main components that can be set up and cu
 |Dashboard |The Dashboard is your employee’s digital toolset and enables quick access to popular tasks. |Prioritize cards that help frontline workers accomplish popular tasks like clocking in and out, or viewing assigned tasks. <br> Cards can be targeted to distinct roles and regions. |
 |Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows <br> Content can be prioritized to display more prominently in the Feed. |
 |Resources |The Resources surface links to popular SharePoint portals and other content. |Resources are inherited from global navigation in SharePoint. <br> Link to popular SharePoint portals like HR benefits and training resources. <br> Modern SharePoint portals will display in Teams to provide the best possible viewing experience. |
+
+## Create communities with Yammer
+
+## Boost morale with Praise
+
+## Support engagement with SharePoint and Microsoft Stream
