@@ -1,5 +1,5 @@
 ---
-title: "How to get Microsoft 365 for Campaigns"
+title: "Get Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: deniseb

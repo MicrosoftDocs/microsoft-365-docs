@@ -85,26 +85,26 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 
 #### ASF settings in anti-spam policies
 
-The table in this section describes the Advanced Spam Filter (ASF) settings that are available in anti-spam policies. All of these settings are **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+For more information about Advanced Spam Filter (ASF) settings in anti-spam policies, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
 
-|Security feature name|Comment|
-|---|---|
-|**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
-|**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
-|**URL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**Links to .biz or .info websites** (_IncreaseScoreWithBizOrInfoUrls_)||
-|**Empty messages** (_MarkAsSpamEmptyMessages_)||
-|**Embed tags in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
-|**JavaScript or VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Form tags in HTML** (_MarkAsSpamFormTagsInHtml_)||
-|**Frame or iframe tags in HTML** (_MarkAsSpamFramesInHtml_)||
-|**Web bugs in HTML** (_MarkAsSpamWebBugsInHtml_)||
-|**Object tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
-|**Sensitive words** (_MarkAsSpamSensitiveWordList_)||
-|**SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
-|**Sender ID filtering hard fail** (_MarkAsSpamFromAddressAuthFail_)||
-|**Backscatter** (_MarkAsSpamNdrBackscatter_)||
-|**Test mode** (_TestModeAction_)|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
+|Security feature name|Default|Recommended<br/>Standard|Recommended<br/>Strict|Comment|
+|---|:---:|:---:|:---:|---|
+|**Image links to remote sites** <p> _IncreaseScoreWithImageLinks_|Off|Off|Off||
+|**Numeric IP address in URL** <p> _IncreaseScoreWithNumericIps_|Off|Off|Off||
+|**URL redirect to other port** <p> _IncreaseScoreWithRedirectToOtherPort_|Off|Off|Off||
+|**Links to .biz or .info websites** <p> _IncreaseScoreWithBizOrInfoUrls_|Off|Off|Off||
+|**Empty messages** <p> _MarkAsSpamEmptyMessages_|Off|Off|Off||
+|**Embed tags in HTML** <p> _MarkAsSpamEmbedTagsInHtml_|Off|Off|Off||
+|**JavaScript or VBScript in HTML** <p> _MarkAsSpamJavaScriptInHtml_|Off|Off|Off||
+|**Form tags in HTML** <p> _MarkAsSpamFormTagsInHtml_|Off|Off|Off||
+|**Frame or iframe tags in HTML** <p> _MarkAsSpamFramesInHtml_|Off|Off|Off||
+|**Web bugs in HTML** <p> _MarkAsSpamWebBugsInHtml_|Off|Off|Off||
+|**Object tags in HTML** <p> _MarkAsSpamObjectTagsInHtml_|Off|Off|Off||
+|**Sensitive words** <p> _MarkAsSpamSensitiveWordList_|Off|Off|Off||
+|**SPF record: hard fail** <p> _MarkAsSpamSpfRecordHardFail_|Off|Off|Off||
+|**Sender ID filtering hard fail** <p> _MarkAsSpamFromAddressAuthFail_|Off|Off|Off||
+|**Backscatter** <p> _MarkAsSpamNdrBackscatter_|Off|Off|Off||
+|**Test mode** <p> _TestModeAction_)|None|None|None|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
 
 #### EOP outbound spam policy settings
 
