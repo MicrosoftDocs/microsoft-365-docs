@@ -130,7 +130,7 @@ On your **Improvement actions** page, find the **Testing source** column. If the
 
 #### Which actions can't be tested automatically
 
-Improvement actions in templates that aren't scoped for Microsoft 365 are currently not eligible for automatic testing. For example, improvement actions in a universal template, or a template for Microsoft Azure or Microsoft Dynamics, don't have any automatically-tested actions. Learn more about [assessment templates](compliance-manager-templates.md).
+Improvement actions in templates not scoped to Microsoft 365 are currently not eligible for automatic testing. For example, universal templates, or a template for Microsoft Azure or Microsoft Dynamics, won't have actions that can be tested automatically. Learn more about [assessment templates](compliance-manager-templates.md).
 
 #### Manage automated testing settings
 
