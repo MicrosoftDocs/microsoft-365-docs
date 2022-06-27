@@ -41,9 +41,22 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+
 ## June 2022
 
-- [simplifying the quarantine experience part Two in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): simplifying the quarantine experience part Two with Microsoft Defender for Office 365.
+- [Spoofing allows using admin submission](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender): Create allowed spoofed sender entries using the Tenant Allow/Block List.
+
+- [Impersonation allows using admin submission](allow-block-email-spoof.md#create-impersonated-sender-entries): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
+
+- [View converted admin submission from user submission](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): Configure the custom mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+
+- [View associated alert for user and admin submissions](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission. 
+
+- [Configurable impersonation protection custom users and domains and increased scope within Preset policies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
+  - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization. 
+  - Configure impersonation protection settings for custom users and custom domains within Preset Strict/Standard policies and automatically protect your targeted users and targeted domain against impersonation attacks.
+
+- [Simplifying the quarantine experience (part two) in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Highlights additional features to make the quarantine experience even more easy to use.
 
 ## April 2022
 
