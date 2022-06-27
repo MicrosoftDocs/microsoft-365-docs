@@ -105,6 +105,8 @@ The following example assumes you need email from contoso.com to skip spam filte
 
 Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). This is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. It is best that you let our filters do what is needed to check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if our filters got it wrong. Bypassing the filtering stack also interferes with [ZAP](zero-hour-auto-purge.md).
 
+By design and for increased security of Exchange Online mailboxes, only the junk email settings for safe senders, blocked senders, and blocked domains are recognized. Safe domains settings are ignored.
+
 When messages skip spam filtering due to a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing were bypassed.
 
 ## Use the IP Allow List
