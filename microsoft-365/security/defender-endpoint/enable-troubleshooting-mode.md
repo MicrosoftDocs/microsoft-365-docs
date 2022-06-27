@@ -109,36 +109,37 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](/defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
-
+Search by deviceId or deviceName by commenting out the respective lines.  
 ```kusto
-let deviceName = "<device name>";   // update with device name
-let deviceId = "<device id>";   // update with device id
-search in (DeviceEvents)
-(DeviceName == deviceName
-) and ActionType == "AntivirusTroubleshootModeEvent"
+//let deviceName = "<deviceName>";   // update with device name
+let deviceId = "<deviceID>";   // update with device id
+DeviceEvents
+| where DeviceId == deviceId
+//| where DeviceName  == deviceName
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,
+| project Timestamp,DeviceId, DeviceName, _tsmodeproperties,
  _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,
  _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,
  _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource
 ```
 
-### Devices currently in troubleshooting mode
+### Devices currently in troubleshooting mode  
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| where Timestamp > ago(3h)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+| order by Timestamp desc
 ```
 
 ### Count of troubleshooting mode instances by device
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
@@ -149,8 +150,8 @@ ActionType == "AntivirusTroubleshootModeEvent"
 ### Total count
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range
