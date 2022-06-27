@@ -52,7 +52,7 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 
 This feature provides protection against rogue Wi-Fi related threats and rogue certificates which are the primary attack vector for Wi-Fi networks. Admins can list the root Certificate Authority (CA) and private root CA certificates in Microsoft Endpoint Manager Admin center and establish trust with endpoints. It provides the user a guided experience to connect to secure networks and also notifies them if a related threat is detected. 
 
-It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center as well as add trusted certificates. Admins can also enable [privacy controls](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#privacy-controls) to configure the data that is sent by Defender for Endpoint from Android devices.
+It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center as well as add trusted certificates. Admins can also enable [privacy controls](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) to configure the data that is sent by Defender for Endpoint from Android devices.
 
 Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
 
