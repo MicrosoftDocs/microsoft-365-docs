@@ -67,11 +67,6 @@
 ### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
-### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
-### [Run a detection test on a newly onboarded device](run-detection-test.md)
-### [Run simulated attacks on devices](attack-simulations.md)
-### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
-### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -177,6 +172,14 @@
 ###### [FAQs and Troubleshooting](ios-troubleshoot.md)
 
 ###### [Privacy](ios-privacy.md)
+
+
+
+### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+### [Run a detection test on a newly onboarded device](run-detection-test.md)
+### [Run simulated attacks on devices](attack-simulations.md)
+### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
+### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
