@@ -24,9 +24,14 @@ description: "The Microsoft 365 admin center lets you manage some Microsoft Intu
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 
+Before adding specific Intune roles, roles must be assigned in AAD. To see these roles, choose **Endpoint Manager > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
+
+- Properties: The name, description, permissions, and scope tags for the role.
+- Assignments: A list of role assignments defining which users have access to which users or devices. A role can have multiple assignments, and a user can be in multiple assignments.
+
 ## About Roles-based access control in Intune
 
-Role-based access control (RBAC) helps you manage who has access to your organization's resources and what they can do with those resources. By assigning roles to your Intune users, you can limit what they can see and change. There are both built-in and custom roles, and each role has a set of permissions that determine what users with that role can access, or change within your organization. The following information will cover built-in and custom roles with Intune.
+Role-based access control (RBAC) helps you manage who has access to your organization's resources and what they can do with those resources. By assigning roles to your Intune users, you can limit what they can see and change. There are both built-in and custom roles, and each role has a set of permissions that determine what users with that role can access, or change within your organization. The following information will cover built-in and custom roles within Intune.
 
 To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
 
@@ -35,12 +40,9 @@ To create, edit, or assign roles, your account must have one of the following pe
 
 Find more information on [AAD roles and RBAC](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
 
-### Microsoft Intune built-in roles
+## Microsoft Intune built-in roles
 
-Built-in roles have pre-defined rules and cover commonly referred to Intune scenarios. In comparison, custom roles are built upon rules that are strictly defined by you. There are also several Azure Active Directory roles that have permissions to Intune. To see these roles, choose **Endpoint Manager > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
-
-- Properties: The name, description, permissions, and scope tags for the role.
-- Assignments: A list of role assignments defining which users have access to which users or devices. A role can have multiple assignments, and a user can be in multiple assignments.
+Built-in roles use pre-defined rules based on common Intune scenarios. Alternatively, custom roles are built upon rules that are strictly defined by you. 
 
 Here are the built-in roles that you can assign:
 
@@ -55,7 +57,7 @@ Here are the built-in roles that you can assign:
 |Cloud PC Administrator     |   A Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.   |
 |Cloud PC Reader     |   A Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.   |
 
-### Microsoft Intune custom roles
+## Microsoft Intune custom roles
 
 You can create custom roles in Intune that include any permissions required for a specific job function. For example, if an IT department group manages applications, policies, and configuration profiles, you can add all those permissions together in one custom role. After creating a custom role, you can assign it to any users that need those permissions.
 
