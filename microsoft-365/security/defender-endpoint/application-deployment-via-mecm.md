@@ -35,7 +35,7 @@ ms.technology: mde
 - M365 Defender portal active, and devices onboarded.
 - A Device Collection containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is set up in your MECM instance.
 
-For more information on installing the above, see the [relevant topics](#relevant-topics) section.
+For more information on installing the above, see the [related topics](#related-topics) section.
 
 ## App Packaging and Deployment
 
@@ -91,16 +91,16 @@ Copy the UA agent package, Onboarding Script and migration script to the same Co
 
      :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="User experience in deployment type wizard":::
 
-12. Click **Next** on requirements.
+12. Click **Next** on Requirements.
 13. Click **Next** on Dependencies.
 14. Click **Next** until completion screen comes up then **Close**.
-15. Keep clicking next until the completion of Application Wizard. Verify all has been green checked.
+15. Keep clicking next until the completion of Application Wizard. Verify all have been green checked.
 16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.
      :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created":::
 17. Verify in MECM>Monitoring>Deployments the status of this migration. For example, see the below screenshot. 
      :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check":::
 
-## Relevant topics
+## Related topics
 
 - [Microsoft Monitoring Agent Setup](/services-hub/health/mma-setup)
 - [Deploy applications - Configuration Manager](/mem/configmgr/apps/deploy-use/deploy-applications)
