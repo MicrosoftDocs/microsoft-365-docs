@@ -44,7 +44,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
      :::image type="content" source="images/onboarding-script.png" alt-text="Onboarding script and UA agent download":::
 2. Download the migration script from the document: [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
      :::image type="content" source="images/migration-script.png" alt-text="Downloading migration script":::
-3. Save all three files in a shared folder used by MECM as a Software Source. Refer to the the below screenshot:
+3. Save all three files in a shared folder used by MECM as a Software Source. Refer to the screenshot below:
      :::image type="content" source="images/ua-migration.png" alt-text="Saving the shared folder by MECM":::
 
 ### Creating the package as an application
@@ -53,7 +53,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
 2. Select **Manually specify the application information**.
       :::image type="content" source="images/manual-application-information.png" alt-text="Manually specify the application information selection":::
 3. Click **Next** on the Software Center screen of the wizard.
-4. On Deployment Types click **Add**.
+4. On the Deployment Types, click **Add**.
 5. Select **Manually to specify the deployment type information** and click **Next**.
 6. Give a name to your script deployment and click Next.
      :::image type="content" source="images/manual-deployment-information.png" alt-text="Specifying the script deployment information":::
