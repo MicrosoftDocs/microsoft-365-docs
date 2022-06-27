@@ -57,7 +57,6 @@
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
 
 
-
 ### [Onboarding Windows Server]()
 #### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 #### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
@@ -65,8 +64,10 @@
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 #### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
 
-### [Onboard previous versions of Windows]()
-#### [Onboard previous versions of Windows](onboard-downlevel.md)
+### [Onboard previous versions of Windows](onboard-downlevel.md)
+
+### [Microsoft Defender for Endpoint on other Operating Systems]()
+#### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
 
 ### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
@@ -75,8 +76,8 @@
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-### [Microsoft Defender for Endpoint on other Operating Systems]()
-#### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
+
+
 
 #### [Microsoft Defender for Endpoint on macOS]()
 ##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
