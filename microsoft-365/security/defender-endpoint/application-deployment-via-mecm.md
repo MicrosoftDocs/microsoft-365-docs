@@ -59,7 +59,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
      :::image type="content" source="images/manual-deployment-information.png" alt-text="Specifying the script deployment information":::
 7. On this step, copy the UNC path that your content is located. Example: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`.
      :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC path copy":::
-9. Additionally, set the following as the installation program:
+8. Additionally, set the following as the installation program:
 
      ```powershell
        Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -Log -Etl -RemoveMMA 48594f03-7e66-4e15-8b60-d9da2f92d564 -OnboardingScript .\WindowsDefenderATP.onboarding
