@@ -30,6 +30,28 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
+<details>
+  <summary>May-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
+
+&ensp;Released: **June 24, 2022**<br/>
+&ensp;Published: **June 24, 2022**<br/>
+&ensp;Build: **101.71.18**<br/>
+&ensp;Release version: **30.122042.16880.0**<br/>
+
+
+**What's new**
+
+- Fixed an issue in the product sensor used on RHEL 6 that could lead to an OS hang
+- `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
+- Removed the dependency on `python` from the product installation package
+- Performance improvements for file copy operations and processing of network events originating from `auditd`
+- Bug fixes
+</br>
+
+<br/><br/>
+</details>
+
 
 <details>
   <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
@@ -38,17 +60,6 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Published: **May 23, 2022**<br/>
 &ensp;Build: **101.68.80**<br/>
 &ensp;Release version: **30.122042.16880.0**<br/>
-
-
-**What's new**
-## 101.71.18 (30.122052.17118.0)
-
-- Fixed an issue in the product sensor used on RHEL 6 that could lead to an OS hang
-- `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
-- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
-- Removed the dependency on `python` from the product installation package
-- Performance improvements for file copy operations and processing of network events originating from `auditd`
-- Bug fixes
 
 ## 101.68.80 (30.122042.16880.0)
 
@@ -217,7 +228,7 @@ This article is updated frequently to let you know what's new in the latest rele
    </details>
 
 
-   <details><summary>(Build:101.45.00 | Release version: 30.121072.14500.0)</summary>
+   <details><summary>(Build: 101.45.00 | Release version: 30.121072.14500.0)</summary>
    
    <p><b> 
    Build: 101.45.00 <br>
@@ -234,7 +245,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
    </details>
 
-   <details><summary>(Build:101.39.980 | Release version: 30.121062.13998.0)</summary>
+   <details><summary>(Build: 101.39.98 | Release version: 30.121062.13998.0)</summary>
    
    <p><b> 
    Build: 101.39.98 <br>
@@ -246,7 +257,7 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   <details><summary>(Build:101.34.27 | Release version: 30.121052.13427.0)</summary>
+   <details><summary>(Build: 101.34.27 | Release version: 30.121052.13427.0)</summary>
    
    <p><b> 
    Build: 101.34.27 <br>
@@ -258,7 +269,7 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   <details><summary>(Build:101.29.64 | Release version: 30.121042.12964.0)</summary>
+   <details><summary>(Build: 101.29.64 | Release version: 30.121042.12964.0)</summary>
    
    <p><b> 
    Build: 101.29.64 <br>
@@ -274,7 +285,7 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   <details><summary>(Build:101.25.72 | Release version: 30.121022.12563.0)</summary>
+   <details><summary>(Build: 101.25.72 | Release version: 30.121022.12563.0)</summary>
    
    <p><b> 
    Build: 101.25.72 <br>
@@ -289,7 +300,7 @@ This article is updated frequently to let you know what's new in the latest rele
    </details>
 
    
-   <details><summary>(Build:101.25.63 | Release version: 30.121022.12563.0)</summary>
+   <details><summary>(Build: 101.25.63 | Release version: 30.121022.12563.0)</summary>
    
    <p><b> 
    Build: 101.25.63 <br>
@@ -301,7 +312,7 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   <details><summary>(Build:101.23.64 | Release version: 30.121021.12364.0)</summary>
+   <details><summary>(Build: 101.23.64 | Release version: 30.121021.12364.0)</summary>
    
    <p><b> 
    Build: 101.23.64 <br>
