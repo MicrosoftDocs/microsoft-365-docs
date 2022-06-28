@@ -27,7 +27,7 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Understand what you need to know before you go through the sign-up process for Office 365."
+description: "Understand what you need to know about the latest versions of the Office programs before you go through the sign-up process for Office 365."
 ms.date: 03/17/2021
 ---
 
@@ -37,7 +37,7 @@ Sign up for Microsoft 365 for business so that your team can begin using the lat
 
 ::: moniker range="o365-21vianet"
 
-If you're in China, Office 365 operated by 21Vianet is designed to meet the needs for secure, reliable, and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet. Microsoft does not operate the service itself. 21Vianet operates, provides, and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Microsoft datacenters to provide you the ability to use Microsoft services while keeping your data within China. 21Vianet also provides your subscription and billing services, as well as support.
+If you're in China, Office 365 operated by 21Vianet is designed to meet the needs for secure, reliable, and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet. Microsoft doesn't operate the service itself. 21Vianet operates, provides, and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Microsoft datacenters to provide you the ability to use Microsoft services while keeping your data within China. 21Vianet also provides your subscription and billing services, and support.
   
 > [!NOTE]
 > These services are subject to Chinese laws.
@@ -83,7 +83,7 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 - **The address and contact information for your subscription:**
 
-  - **Country** where the services will be used. You **won't** be able to change the country later, even during the sign up process; you'll have to restart the sign up wizard.
+  - **Country** where the services will be used. You **won't** be able to change the country later, even during the sign-up process; you'll have to restart the sign-up wizard.
 
   - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 

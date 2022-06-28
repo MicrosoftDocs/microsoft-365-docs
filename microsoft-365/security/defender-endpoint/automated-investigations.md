@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -26,9 +25,9 @@ ms.custom: AIR
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 **Platforms**
 - Windows
@@ -48,15 +47,10 @@ This article provides an overview of AIR and includes links to next steps and ad
 
 An automated investigation can start when an alert is triggered or when a security operator initiates the investigation.
 
-<br>
-
-****
-
 |Situation|What happens|
 |---|---|
 |An alert is triggered|In general, an automated investigation starts when an [alert](review-alerts.md) is triggered, and an [incident](view-incidents-queue.md) is created. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and incident is created. An automated investigation process begins on the device. As other alerts are generated because of the same file on other devices, they are added to the associated incident and to the automated investigation.|
 |An investigation is started manually|An automated investigation can be started manually by your security operations team. For example, suppose a security operator is reviewing a list of devices and notices that a device has a high risk level. The security operator can select the device in the list to open its flyout, and then select **Initiate Automated Investigation**.|
-|
 
 ## How an automated investigation expands its scope
 
@@ -79,11 +73,11 @@ Depending on the [level of automation](automation-levels.md) set for your organi
 All remediation actions, whether pending or completed, are tracked in the [Action center](auto-investigation-action-center.md). If necessary, your security operations team can undo a remediation action. To learn more, see [Review and approve remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [(NEW!) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## Requirements for AIR
 
-Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
+Your subscription must include [Defender for Endpoint](microsoft-defender-endpoint.md) or [Defender for Business](../defender-business/mdb-overview.md).
 
 > [!NOTE]
 > Automated investigation and response requires Microsoft Defender Antivirus for running in passive mode or active mode. If Microsoft Defender Antivirus is disabled or uninstalled, Automated Investigation and Response will not function correctly.

@@ -18,14 +18,14 @@ ms.custom:
 - intro-overview
 search.appverid:
 - MET150
-description: "Learn about Microsoft 365 Business Premium, a subscription service that takes care of IT part for you."
+description: "Learn about Microsoft 365 Business Premium, a subscription service that takes care of the IT part for you."
 feedback_system: None
 ms.date: 10/20/2021
 ---
 
 # Microsoft 365 Business Premium
 
-## Watch: What is Microsoft 365 Business Premium
+## Watch: What is Microsoft 365 Business Premium?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 

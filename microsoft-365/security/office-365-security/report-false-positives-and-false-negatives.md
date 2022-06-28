@@ -17,7 +17,7 @@ ms.prod: m365-security
 
 # Report false positives and false negatives in Outlook
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -42,6 +42,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 - For more information on how to get and enable the Report Message or the Report Phishing add-ins, see [Enable the Report Message or the Report Phishing add-ins](enable-the-report-message-add-in.md).
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+Watch this short video to learn how you can use Microsoft Defender for Office 365 to easily investigate user submissions to determine the contents of a message, and respond to the submission by applying the appropriate remediation action. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
 
 ### Turn off the built-in reporting experience
 

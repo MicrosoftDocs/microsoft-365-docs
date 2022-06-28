@@ -20,7 +20,7 @@ ms.prod: m365-security
 
 # Respond to a compromised connector
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 
@@ -70,7 +70,7 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
 3. Identify: 
 
-    - If **Sender IP** matches with your organization’s on-prem IP address. 
+    - If **Sender IP** matches with your organization's on-prem IP address. 
 
     - If a significant number of emails were recently sent to the **Junk** folder. This is a good indicator of a compromised connector being used to send spam. 
 

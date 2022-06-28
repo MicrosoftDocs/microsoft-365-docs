@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
-ms.date: 04/21/2022
+ms.date: 05/20/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -96,7 +96,7 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
   
 |**Windows 10 device policy setting**|**Intune setting(s)**|
 |:-----|:-----|
-|Help protect PCs from viruses and other threats using Windows Defender Antivirus  |Allow Real-time Monitoring = ON  <br/> Allow Cloud Protection = ON  <br/> Prompt Users for Samples Submission = Send Safe samples automatically (Default Non PII auto submit)  |
+|Help protect PCs from viruses and other threats using Microsoft Defender Antivirus  |Allow Real-time Monitoring = ON  <br/> Allow Cloud Protection = ON  <br/> Prompt Users for Samples Submission = Send Safe samples automatically (Default Non PII auto submit)  |
 |Help protect PCs from web-based threats in Microsoft Edge  |**SmartScreen** in **Edge Browser settings** is set to **Required**.  |
 |Turn off device screen when idle for (minutes)  |Maximum minutes of inactivity until screen locks (minutes)  |
 |Allow users to download apps from Microsoft Store  |Custom URI policy  |
@@ -106,4 +106,4 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

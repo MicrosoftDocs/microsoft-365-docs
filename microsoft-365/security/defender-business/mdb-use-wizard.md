@@ -23,10 +23,6 @@ ms.custom: intro-get-started
 
 Microsoft Defender for Business was designed to save small and medium-sized businesses time and effort. For example, you can do initial setup and configuration with a setup wizard. The setup wizard guides you through granting access to your security team, setting up email notifications for your security team, and onboarding your company's Windows devices.
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 > [!TIP]
 > Using the setup wizard is optional. You can choose to work through the setup and configuration process manually. To learn more, see:

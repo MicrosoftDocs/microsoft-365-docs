@@ -20,10 +20,12 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 04/29/2022
+ms.date: 06/02/2022
 ---
 
-# Cancel your business subscription
+# Cancel your Microsoft subscription
+
+If you want to cancel your subscription, the easiest way to do that is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
 
 > [!IMPORTANT]
 > - This article only applies to Dynamics 365, Intune, Power Platform, and Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
@@ -51,6 +53,9 @@ You can only cancel and receive a prorated credit or refund if you cancel within
 If you need to cancel within seven days after the start or renewal of your subscription, go to [Steps to cancel your subscription](#steps-to-cancel-your-subscription) later in this article.
 
 If more than seven days have passed, [turn off recurring billing](renew-your-subscription.md). This prevents your subscription from renewing at the end of its term.  You keep access to your products and services for the remainder of your subscription. If you have an annual subscription and are paying monthly, you are charged each month for the remainder of your subscription term.
+
+> [!NOTE]
+> Cancel your free trial any time to stop future charges. After your 1-month free trial, you will be charged the applicable subscription fee.
 
 ### If you don't have a billing profile
 
