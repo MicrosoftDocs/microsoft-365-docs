@@ -90,18 +90,18 @@ Make sure that the Windows 10 devices that you plan on reporting in insider risk
 
 1. Must be running Windows 10 x64 build 1809 or later and must have installed the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020.
 2. The user account used to log into the Windows 10 device must be an active Azure Active Directory (AAD) account. The Windows 10 device may be [AAD](/azure/active-directory/devices/concept-azure-ad-join), hybrid AAD, or Active Directory joined, or AAD registered.
-3. Install the Microsoft Edge browser on the endpoint device to monitor actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+3. Install the Microsoft Edge browser on the endpoint device to detect actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### Step 2: Onboarding devices
 <a name="OnboardStep2"> </a>
 
-You must enable device monitoring and onboard your endpoints before you can monitor for insider risk management activities on a device. Both actions are taken in the Microsoft Purview compliance portal.
+You must enable device monitoring and onboard your endpoints before you can detect insider risk management activities on a device. Both actions are taken in the Microsoft Purview compliance portal.
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy as outlined in the following steps.
 
 If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they'll already appear in the managed devices list. Follow [Step 3: If you have devices onboarded into Microsoft Defender for Endpoint](insider-risk-management-settings.md#OnboardStep3) in the next section.
 
-In this deployment scenario, you'll onboard devices that haven't been onboarded yet, and you just want to monitor insider risk activities on Windows 10 devices.
+In this deployment scenario, you'll onboard devices that haven't been onboarded yet, and you just want to detect insider risk activities on Windows 10 devices.
 
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 2. Open the compliance portal settings page and choose **Onboard devices**.
@@ -363,7 +363,7 @@ Complete the following steps to configure priority physical assets:
     > For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for physical access activities for users in your organization.
 
 2. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
-3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
+3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to detect asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
     a) To manually add physical assets IDs, choose **Add priority physical assets**, enter a physical asset ID, then select **Add**. Enter other physical asset IDs and then select **Add priority physical assets** to save all the assets entered.
     b) To add a list of physical asset IDs from a .csv file, choose **Import priority physical assets**. From the file explorer dialog, select the .csv file you wish to import, then select **Open**. The physical asset IDs from the .csv files are added to the list.
 4. Navigate to the **Policy indicators** page in **Settings**.

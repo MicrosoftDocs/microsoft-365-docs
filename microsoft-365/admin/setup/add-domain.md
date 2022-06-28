@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - TopSMBIssues
 - SaRA
 - MSStore_Link

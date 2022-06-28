@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 ms.custom:
+- adminvideo
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos

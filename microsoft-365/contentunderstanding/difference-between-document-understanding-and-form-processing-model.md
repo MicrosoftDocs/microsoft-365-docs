@@ -33,7 +33,7 @@ While both models are generally used for the same purpose, the key differences l
 
 ## Structured versus unstructured and semi-structured content
 
-Use document understanding models to identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract is in sentences or specific regions of the document. For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string *Service start date of* followed by an actual date.
+Use document understanding models to identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract is in sentences or specific regions of the document. For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string `Service start date of` followed by an actual date.
 
 Use form processing models to identify files and extract data from structured or semi-structured documents, such as forms or invoices. Form processing models are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
 
@@ -53,7 +53,7 @@ When you create a document understanding model, you create a new [SharePoint con
 
 Once a content type is created and associated with a model, you can also reference that model from the **Site Content Type** property panel.
 
-![Screenshot of the Site Content Type panel showing the Document understanding model highlighted.](../media/content-understanding/site-content-type-panel.png)
+:::image type="content" source="../media/content-understanding/site-content-type-panel.png" alt-text="Screenshot of the Site Content Type panel showing the Document understanding model highlighted." lightbox="../media/content-understanding/site-content-type-panel.png":::
 
 Form processing models also create new [SharePoint content types](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), and are also stored in the SharePoint Content Types gallery.
 
