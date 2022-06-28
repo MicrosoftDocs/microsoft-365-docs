@@ -1,5 +1,5 @@
 ---
-title: "Update actions in Microsoft Purview Compliance Manager"
+title: "Bring your compliance data into Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,24 +16,57 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Bring your own compliance activites into Microsoft Purview Compliance Manager."
+description: "Migrate your existing compliance data into into Microsoft Purview Compliance Manager using an Excel based upload process."
 ---
 
-# Update your improvement actions in Microsoft Purview Compliance Manager
+# Bring your compliance data into Microsoft Purview Compliance Manager
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**In this article:** Learn how to install and run the Microsoft Compliance Configure Analyzer tool to get quickly started with Microsoft Compliance Manger.
+**In this article:** Learn how to migrate your organization's existing compliance activities into Compliance Manager through an Excel based upload process.
 
 ## Overview
 
-- why would you want to do this; what can you use this for
-- How is this different from modifying a template and editing actions that way
+Compliance Manager lets organizations bring their existing compliance data and evidence into the Compliance Manager solution. An Excel based upload process for updating improvement actions is helpful particularly for organizations that are just starting to use Compliance Manager and need to migrate their existing compliance activities. .... Compliance Manager to centralize the management, testing, and reporting fo your compliance activities. When you migrate compliance data into Compliance Manager, you have greater potential to increase your overall compliance score.
 
+You don't have to be a new Compliance Manager user. This improvement action updating process provides greater flexibility to make updates to improvement actions at a bulk scale. For example, you can:
+
+- Add test results and evidence to multiple improvement actions that were tested in a system other than Compliance Manager
+-  Assign multiple improvement actions to various users based on the actions' score potential
+- Update the implementation or testing status of multiple improvement actions all at one time
 
 ## Summary of the process
 
-text
+To migrate existing data into Compliance Manager or to perform a bulk update of improvement actions, you can start from one of two places in Compliance Manager.
+
+- From **Assessments** tab: allows you to update specific assessments with information from elsewhere, such as test results or evidence or actions that were tested by a separate system
+- From **Improvement actions** tab: allows you to apply updates to multiple actions at one time, such as assigning them to users, changing implementation or test status, adding notes and evidence.
+
+## Prerequisites for updating improvement actions
+
+- Only the improvement actions managed by your organization, not actions that are managed by Microsoft, can be updated by this process. (Learn more about [types of improvement actions](compliance-score-calculation.md#action-types-and-points).)
+
+- Improvement actions must already be associated to an existing assessment before you can update them through this process. (Learn more about [building and managing assessments](compliance-manager-assessments.md).)
+
+## Migrate your existing compliance work into Compliance Manager
+
+If you're new to Compliance Manager, follow these steps to bring your existing compliance activities into Compliance Manager:
+
+1. **Create an assessment.** Compliance Manager can recommend assessments that may be most relevant to your organization, or you can create one through a guided process. Visit [Create assessments](compliance-manager-assessments.md#create-assessments) for instructions.
+
+2. **Export improvement actions.** Export the improvement actions in the assessments that you want to add your data to. You'll do this via one of the two pathways below: on the Improvement actions tab or the Assessments tab. The export is a downloaded Excel file containing improvement action data.
+
+3. **Update the improvement action Excel file.** Use the instructions on the **How to update actions** tab to add or update the information in the specially formatted Excel file.
+
+4. **Upload the Excel file.** Re-upload your formatted Excel file through a simple upload process by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
+
+## Perform a bulk update of improvement actions
+
+Follow the steps below to update status, evidence, notes, or other data in multiple improvement actions at one time.
+
+1. **Export improvement actions.** Export the improvement actions in the assessments that you want to add your data to. You'll do this via one of the two pathways below: on the Improvement actions tab or the Assessments tab. The export is a downloaded Excel file containing improvement action data.
+
+2. 
 
 ## Updating actions from the Improvement actions tab
 
