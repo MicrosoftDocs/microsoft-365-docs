@@ -61,7 +61,7 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Build: **101.68.80**<br/>
 &ensp;Release version: **30.122042.16880.0**<br/>
 
-## 101.68.80 (30.122042.16880.0)
+**What's new** 
 
 - Added support for kernel version `2.6.32-754.47.1.el6.x86_64` when running on RHEL 6
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
