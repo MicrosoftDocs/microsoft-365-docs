@@ -205,6 +205,8 @@ You can use a REST API to automatically create the events that trigger the start
 
 > [!NOTE]
 > Now rolling out in preview, you can alternatively use [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) to create the event, and also create event types and retention labels.
+> 
+> We encourage you to try these Graph APIs because the REST APIs in this section will soon be deprecated and stop working.
 
 A REST API is a service endpoint that supports sets of HTTP operations (methods), which provide create/retrieve/update/delete access to the service's resources. For more information, see [Components of a REST API request/response](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). By using the Microsoft 365 REST API, events can be created and retrieved using the POST and GET methods.
 
