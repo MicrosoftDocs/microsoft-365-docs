@@ -27,19 +27,19 @@ description: "Migrate your existing compliance data into into Microsoft Purview 
 
 ## Overview
 
-Compliance Manager lets organizations bring their existing compliance data and evidence into the Compliance Manager solution. An Excel based upload process for updating improvement actions is helpful particularly for organizations that are just starting to use Compliance Manager and need to migrate their existing compliance activities. .... Compliance Manager to centralize the management, testing, and reporting fo your compliance activities. When you migrate compliance data into Compliance Manager, you have greater potential to increase your overall compliance score.
+Compliance Manager lets organizations bring their existing compliance data and evidence into the Compliance Manager solution. An Excel based upload process for updating improvement actions is an easy way new Compliance Manager customers to migrate their compliance activities and quickly start increasing their overall compliance score.
 
-You don't have to be a new Compliance Manager user. This improvement action updating process provides greater flexibility to make updates to improvement actions at a bulk scale. For example, you can:
+You don't have to be a new Compliance Manager user. This improvement action updating process provides greater flexibility for all users to update improvement actions on a larger scale. For example, you can:
 
 - Add test results and evidence to multiple improvement actions that were tested in a system other than Compliance Manager
--  Assign multiple improvement actions to various users based on the actions' score potential
+- Assign multiple improvement actions to various users based on the actions' score potential
 - Update the implementation or testing status of multiple improvement actions all at one time
 - Change actions' testing source from automatic to manual implementation and testing
 - Parent the testing source of multiple actions at one time, so that those actions inherit the implementation and testing status of another action
 
 ## Summary of the process
 
-To migrate existing data into Compliance Manager or to perform a bulk update of improvement actions, you can start from one of two places in Compliance Manager.
+To migrate existing data into Compliance Manager or to perform a bulk update of improvement actions, you can start from one of two places in Compliance Manager:
 
 - From **Assessments** page: allows you to update specific assessments with information from elsewhere, such as test results or evidence or actions that were tested by a separate system. [Visit these instructions below](#updating-actions-from-the-assessments-page).
 - From **Improvement actions** page: allows you to apply updates to multiple actions at one time, such as assigning them to users, changing implementation or test status, adding notes and evidence. [Visit these instructions below](#updating-actions-from-the-improvement-actions-page).
