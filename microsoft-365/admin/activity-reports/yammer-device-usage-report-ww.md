@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Get the Yammer device usage report to know about which devices your users are using Yammer on."
+description: "Get the Yammer device usage report to learn more about which devices your users are using Yammer on, number of daily users by device type, and details per user."
 ---
 
 # Microsoft 365 Reports in the admin center - Yammer device usage report

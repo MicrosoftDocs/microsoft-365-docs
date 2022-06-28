@@ -228,7 +228,7 @@ After you create the physical badging connector and push your physical badging d
 
    ![Physical badging connector log file displays number of objects from the JSON file that were uploaded.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   The **RecordsSaved** field indicates the number of objects in the JSON file that uploaded. For example, if the JSON file contains four objects, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the objects in the JSON file.
+   The **RecordsSaved** field indicates the number of records in the JSON file that were uploaded. For example, if the JSON file contains four records, then the value of the **RecordsSaved** fields is 4 if the script successfully uploaded all the records in the JSON file. The **RecordsSkipped** field indicates the number of records in the JSON file that were skipped. Before uploading records in the JSON file, the Email IDs of the records will be validated. Any record with an invalid Email ID will be skipped and the corresponding Email ID is displayed in the field **EmailIdsNotSaved**
 
 If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
 

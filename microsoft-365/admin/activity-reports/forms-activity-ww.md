@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Learn how to get a Microsoft Forms activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+description: "Learn how to get a Microsoft Forms activity report using the Microsoft 365 Reports dashboard and find out how licensed users are interacting with forms."
 ---
 
 # Microsoft 365 Reports in the admin center - Forms activity

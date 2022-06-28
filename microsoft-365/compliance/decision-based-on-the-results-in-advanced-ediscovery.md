@@ -41,10 +41,10 @@ This tab includes the following components:
 
   - **Recall**: Percentage of relevant files in the review set.
 
-  - **Next relevant**: Cost to review and identify another relevant file that is not currently in the review set.
+  - **Next relevant**: Cost to review and identify another relevant file that isn't currently in the review set.
 
   - **Total cost**: Cost for reviewing this percentage of the case files. Cost parameter settings can be set by the Case manager.
 
   - **Distribution by relevance score**: Files in the dark gray display to the left are below the cutoff score. A tool-tip displays the Relevance score and the related percentage of files in the review file set in relation to the total files.
 
-The expanded **Details** pane displays more details. Files in collection figures do not include empty or nebulous files. Family files figures represent files that are not loaded in Relevance, yet still counted as part of the family.
+The expanded **Details** pane displays more details. Files in collection figures don't include empty or nebulous files. Family files figures represent files that aren't loaded in Relevance, yet still counted as part of the family.

@@ -41,10 +41,10 @@ The elements you can update are:
 - Banner logo
 - Username hint
 
-For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/file/442111/download).
 
 ## Next steps
 
-1. [Use the Guided process for basic setup](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+1. [Use the Guided process for basic setup](m365bp-setup.md).
 
 2. [Set up your security capabilities](m365bp-security-overview.md).

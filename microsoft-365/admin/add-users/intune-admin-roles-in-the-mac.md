@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
+description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 
 # Intune admin roles in the Microsoft 365 admin center
@@ -43,11 +43,11 @@ In the Microsoft 365 admin center, you can go to **Roles**, and then select any 
 
 ## Delegated administration for Microsoft Partners
 
-If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company - or their company - admin roles. You might want them to do this, for example, if they are setting up and managing your online organization for you.
+If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company - or their company - admin roles. You might want them to do this, for example, if they're setting up and managing your online organization for you.
   
 A partner can assign these roles:
   
-- Full administration, which has privileges equivalent to a global admin, with the exception of managing multi-factor authentication through the Partner Center.
+- Full administration, which has privileges equivalent to a global admin, except for managing multi-factor authentication through the Partner Center.
 
 - Limited administration, which has privileges equivalent to a helpdesk admin.
 

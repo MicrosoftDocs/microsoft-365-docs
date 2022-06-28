@@ -104,7 +104,15 @@ You can verify that your Microsoft 365 tenant is properly configured to use Micr
 
    - The default template names may be different from those displayed above. See [Configuring and managing templates for Azure Information Protection](/azure/information-protection/configure-policy-templates) for more.
 
-4. Run the Remove-PSSession cmdlet to disconnect from the Rights Management service.
+4. If the test fails with an error message **Failed to acquire RMS templates**, execute the following commands and run the Test-IRMConfiguration cmdlet to verify that it passes.
+
+   ```powershell
+   $RMSConfig = Get-AadrmConfiguration
+   $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
+   Set-IRMConfiguration -LicensingLocation $LicenseUri
+   Set-IRMConfiguration -InternalLicensingEnabled $true
+   ```
+5. Run the Remove-PSSession cmdlet to disconnect from the Rights Management service.
 
      ```powershell
      Remove-PSSession $session

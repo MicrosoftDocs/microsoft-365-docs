@@ -13,9 +13,6 @@ description: "Various metrics are available on the main Bookings page, allowing 
 
 # Microsoft Bookings metrics and activity tracking
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 Various metrics are available on the main Bookings page, allowing you to easily track revenue and customer activity.
 
 | Metric | Description |
