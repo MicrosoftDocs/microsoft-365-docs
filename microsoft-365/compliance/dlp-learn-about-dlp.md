@@ -86,7 +86,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - SharePoint Online sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
 - On-premises repositories
 - PowerBI sites

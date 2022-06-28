@@ -1,9 +1,9 @@
 ---
 title: "Threats detected by Microsoft Defender Antivirus"
 f1.keywords: CSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual 
 ms.service: o365-administration
