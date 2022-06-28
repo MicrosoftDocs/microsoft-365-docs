@@ -32,6 +32,10 @@ highlightedContent:
     - title: What's new
       itemType: whats-new
       url: defender/whats-new.md
+    # Card
+    - title: Get Started with Microsoft 365 Defender
+      itemType: get-started
+      url: defender/get-started.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -45,3 +49,15 @@ productDirectory:
       links:
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
           text: Become a Microsoft 365 Defender Ninja
+    # Card
+    - title: Microsoft Learning Paths
+      imageSrc: /microsoft-365/media/check-mark.png
+      links:
+      - url: https://docs.microsoft.com/learn/m365/defender
+        text: Learning paths, modules, and certifications
+    # Card
+    - title: Protect your organization from ransomware
+      imageSrc: /microsoft-365/media/check-mark.png
+      links:
+      - url: /microsoft-365/solutions/ransomware-protection-microsoft-365.md
+        text: Deploy ransomware protections
