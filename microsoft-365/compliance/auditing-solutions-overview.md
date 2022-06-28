@@ -95,14 +95,15 @@ The following sections identify the licensing requirements for Audit (Standard) 
 
 ### Audit (Standard)
 
-- Microsoft Purview Business Basic subscription
-- Microsoft Purview Apps for Business subscription
-- Microsoft Purview Enterprise E3 subscription
-- Microsoft Purview Business Premium
-- Microsoft Purview Education A3 subscription
-- Microsoft Purview Government G3 subscription
-- Microsoft Purview Government G1 subscription
-- Microsoft Purview Frontline F1 or F3 subscription, or F5 Security add-on
+- Microsoft Business Basic subscription
+- Microsoft Business Standard subscription
+- Microsoft 365 Apps for Business subscription
+- Microsoft 365 Enterprise E3 subscription
+- Microsoft 365 Business Premium
+- Microsoft 365 Education A3 subscription
+- Microsoft 365 Government G3 subscription
+- Microsoft 365 Government G1 subscription
+- Microsoft 365 Frontline F1 or F3 subscription, or F5 Security add-on
 - Office 365 Enterprise E3 subscription
 - Office 365 Enterprise E1 subscription
 - Office 365 Education A1 subscription
@@ -153,7 +154,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
   
    - Turning on the Audit (Premium) app/service plan must be for those users.
   
-   - Enabling the auditing of crucial events and then turning on the Audit (Premium)ing app/service plan for those users.
+   - Enabling the auditing of crucial events and then turning on the Audit (Premium) app/service plan for those users.
 
 2. Enable Audit (Premium) events to be logged when users perform searches in Exchange Online and SharePoint Online.
 

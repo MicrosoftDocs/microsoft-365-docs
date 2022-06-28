@@ -78,8 +78,8 @@ To learn more about the capabilities from this solution, see [Learn about record
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and governance in Microsoft 365](/learn/modules/m365-compliance-information-governance)
-- [Govern information in Microsoft 365](/learn/modules/m365-compliance-information-govern-information/)
-- [Manage records in Microsoft 365](/learn/modules/m365-compliance-information-manage-records/)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/learn/modules/m365-compliance-information-governance)
+- [Manage the data lifecycle in Microsoft Purview](/learn/modules/m365-compliance-information-govern-information/)
+- [Manage records in Microsoft Purview](/learn/modules/m365-compliance-information-manage-records/)
 
 For documentation to support users when these solutions are deployed, see the end user documentation sections for [data lifecycle management](get-started-with-information-governance.md#end-user-documentation) and [records management](get-started-with-records-management.md#end-user-documentation).

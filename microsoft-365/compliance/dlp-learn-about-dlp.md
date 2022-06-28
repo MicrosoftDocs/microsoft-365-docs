@@ -117,6 +117,9 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 - add new restricted apps
 - add new restricted sites
 
+> [!NOTE]
+> _Stop processing more rules_ doesn't work in test mode, even when it's turned on.
+
 #### Enable the control and tune your policies
 
 Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. 

@@ -30,7 +30,7 @@ The following overview explains the process of using a data connector to archive
 
 1. Your organization works with 17a-4 to set up and configure the Cisco Jabber DataParser.
 
-2. On a regular basis, Cisco Jabber items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
+2. Regularly, Cisco Jabber items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
 
 3. The Cisco Jabber DataParser connector that you create in the Microsoft Purview compliance portal connects to DataParser and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 

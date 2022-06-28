@@ -1,5 +1,5 @@
 ---
-title: "Set up online meetings"
+title: "Set up online meetings in Microsoft Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,10 +24,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Set up online meetings with Microsoft Teams."
+description: "Set up online meetings with Microsoft Teams in Microsoft Business Premium."
 ---
 
-# Set up meetings
+# Set up meetings with Microsoft Teams
 
 Make sure members of the organization use Microsoft Teams for all meetings. Teams meetings files include audio, video, and sharing, and because they're online, there is always a meeting space and there's no need for a room with a projector! Microsoft Teams meetings are a great way to come together with your staff both inside and outside of your organization.
 

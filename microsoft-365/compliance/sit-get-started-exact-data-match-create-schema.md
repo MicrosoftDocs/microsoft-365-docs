@@ -75,7 +75,7 @@ You can use this wizard to help simplify the schema file creation process.
 
 If you created the EDM schema in the EDM schema wizard, you must export the EDM schema file in XML format. You'll need it in the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) phase.
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. To export the EDM schema file, use this syntax:
 
@@ -170,7 +170,7 @@ The `ignoredDelimiters` flag doesn't support:
 
    Once you have created the EDM schema file in XML format, you have to upload it to the cloud service.
 
-2. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. To upload the database schema, run the following command:
 
