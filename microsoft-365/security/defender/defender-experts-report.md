@@ -55,7 +55,7 @@ Refer to the following screenshot of a sample report:
 
 ![defender experts report](../../media/mte/defender-experts-report.png)
 
-## View targeted attack notifications
+## View defender experts notifications
 
 A targeted attack notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
@@ -85,9 +85,6 @@ The MITRE ATT&CK tactics represent an adversary goals—what they’re trying to
 11.	Exfiltration	
 12.	Impact
 
-> [!NOTE]
-> The Reconnaissance and Resource Development tactics are outside Microsoft 365 Defender’s visibility scope, so they’re not included in the bar chart visualization.
-
 Signals from Microsoft 365 Defender and investigations by Defender Experts for Hunting help identify these tactics, represented in the bar chart. This chart helps you visualize where the surge is and provides you with the information you need to plan the corresponding containment and remediation actions in the recommendation section.
 
 ## Know and understand the prevalent threats in your environment
@@ -104,20 +101,3 @@ Threats are broadly classified into five categories. Among the various threat ca
 
 You can prioritize remediation based on the mostly-impacted category, as depicted in the bar graph.
 
-## Address security gaps and apply additional mitigations
-
-Each security recommendation in the Recommended action section includes actionable remediation steps customized based on the observations and findings in the current threat landscape in the context of what’s been happening in your environment . This set of references also help you shorten the time to deploy your mitigations or solutions.
-
-Some recommendation actions provide additional information and have quick access to relevant resources within Microsoft 365 Defender portal and other documentation. Click the arrow beside a recommendation to expand it.
-
-## Submit feedback about the report
-
-Microsoft Defender Experts are continuously improving this report to measure its effectiveness and ensure that you’re getting the relevant information and insights you need to defend your environments from attacks.
-
-To submit feedback, click **Feedback** at the top of this page.
-
-## Related topics
-
-- [Threat analytics overview](threat-analytics.md)
-- [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
-- [Custom detection rules](custom-detection-rules.md)
