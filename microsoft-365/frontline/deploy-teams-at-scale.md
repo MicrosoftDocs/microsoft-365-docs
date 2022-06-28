@@ -22,7 +22,7 @@ appliesto:
 # Deploy teams at scale for frontline workers in Microsoft Teams
 
 > [!NOTE]
-> This feature is currently in public preview.
+> This feature is currently in public preview. If you'd like to participate, reach out to us at [dscale@microsoft.com](mailto:dscale@microsoft.com).
 
 ## Overview
  
