@@ -43,5 +43,5 @@ The Devices tab also includes the following options:
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-devices.png" alt-text="Microsoft Defender for Endpoint onboarded devices view":::
 
 ## Related content
-[Manage Microsoft Defender for Endpoint incidents](../security/defender-endpoint/manage-incidents.md)(article)\
+[Manage Microsoft Defender for Endpoint incidents](../security/defender-endpoint/manage-incidents.md) (article)\
 [Investigate incidents in Microsoft Defender for Endpoint](../security/defender-endpoint/investigate-incidents.md) (article)
