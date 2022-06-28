@@ -31,7 +31,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-  <summary>May-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
+  <summary>Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
 
 &ensp;Released: **June 24, 2022**<br/>
 &ensp;Published: **June 24, 2022**<br/>
