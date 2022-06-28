@@ -1,7 +1,7 @@
 ---
 title: Understand the Defender Experts for Hunting report in Microsoft 365 Defender
 ms.reviewer: 
-description: Learn about the analyst report section of each threat analytics report. Understand how it provides information about threats, mitigations, detections, advanced hunting queries, and more.
+description: Learn about the hunting report section of each defender experts report. Understand how it provides information about threats, mitigations, detections, advanced hunting queries, and more.
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -12,7 +12,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: vpattnaik
-author: schmurky
+author: vpattnai
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
