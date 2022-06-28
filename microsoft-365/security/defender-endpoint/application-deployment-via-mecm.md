@@ -55,7 +55,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
 3. Click **Next** on the Software Center screen of the wizard.
 4. On the Deployment Types, click **Add**.
 5. Select **Manually to specify the deployment type information** and click **Next**.
-6. Give a name to your script deployment and click Next.
+6. Give a name to your script deployment and click **Next**.
      :::image type="content" source="images/manual-deployment-information.png" alt-text="Specifying the script deployment information":::
 7. On this step, copy the UNC path that your content is located. Example: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`.
      :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC path copy":::
@@ -83,7 +83,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
      PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
      ```
 
-11. In the **User Experience** section, you can choose what suits your environment. For **Installation program visibility**, it's advisable to install with **Normal visibility** during phase testing then change it to **Minimized** for general deployment and click **Next**.
+11. In the **User Experience** section, you can choose what suits your environment and click **Next**. For **Installation program visibility**, it's advisable to install with **Normal visibility** during phase testing then change it to **Minimized** for general deployment.
      >[!TIP]
      > Maximum allowed runtime can be lowered from (default) 120 minutes to 30 minutes.
 
@@ -91,7 +91,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
 
 12. Click **Next** on Requirements.
 13. Click **Next** on Dependencies.
-14. Click **Next** until completion screen comes up then **Close**.
+14. Click **Next** until completion screen comes up, then **Close**.
 15. Keep clicking next until the completion of Application Wizard. Verify all have been green checked.
 16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.
      :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created":::
