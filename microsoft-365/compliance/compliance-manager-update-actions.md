@@ -34,6 +34,8 @@ You don't have to be a new Compliance Manager user. This improvement action upda
 - Add test results and evidence to multiple improvement actions that were tested in a system other than Compliance Manager
 -  Assign multiple improvement actions to various users based on the actions' score potential
 - Update the implementation or testing status of multiple improvement actions all at one time
+- Change actions' testing source from automatic to manual implementation and testing
+- Parent the testing source of multiple actions at one time, so that those actions inherit the implementation and testing status of another action
 
 ## Summary of the process
 
@@ -87,7 +89,7 @@ Follow the instructions below to update improvement actions by starting from the
 
 6. The first page reminds you of the main prerequisites. Check the boxes next to the reminders, then continue the process by selecting **Next**.
 
-7. On the **Import updated improvement actions** page, select **Browse** to locate your updated Excel file from the location you saved it. When After selecting your file, select **Next**. If there are any problems with the format of your file, an error message will give instructions for fixing the problem. Upload your file again, then select **Next**.
+7. On the **Import updated improvement actions** page, select **Browse** to locate your updated Excel file from the location you saved it. When After selecting your file, select **Next**. If there are any problems with the format of your file, an error message will give instructions for fixing the problem. Upload your corrected file again, then select **Next**.
 
 8. On the **Review and finish** page, review the summary showing the number of actions that will be updated, their associated assessments, and their impact on your compliance score. From here you can re-upload a different file, or continue with the upload by selecting **Update actions**.
 
