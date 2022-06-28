@@ -13,7 +13,6 @@ metadata:
   ms.localizationpriority: medium
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
-  ms.date: 05/20/2022
 title: Microsoft 365 Business Premium frequently asked questions
 summary: |
 
@@ -44,7 +43,7 @@ sections:
           - Single admin console to set up and manage users and devices
           - Auto-installation of Office apps on Windows 10 PCs.
           - Always up-to-date Office + Windows 10.
-          - Streamlined deployment of PCs with Windows AutoPilot.
+          - Streamlined deployment of PCs with Windows Autopilot.
           
           **Other entitlements**:
           
@@ -91,7 +90,7 @@ sections:
         answer: |
           Windows 10 Business is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business Premium.
           
-          Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threats. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
+          Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threats. It also includes Windows Autopilot, a service that streamlines the deployment of new Windows 10 PCs.
           
           If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro, which is the prerequisite for deploying Windows 10 Business.
           > [!IMPORTANT]
@@ -154,9 +153,9 @@ sections:
       - question: Does Microsoft 365 Business Premium allow customers to manage Macs?
         answer: Intune helps you securely manage iOS, Android, Windows, and macOS devices.
 
-      - question: What is Windows AutoPilot?
+      - question: What is Windows Autopilot?
         answer: |
-          Windows AutoPilot is a service that streamlines the deployment of new Windows 10 PCs. This process can be done when the end user logs on to Microsoft 365 Business Premium for the first time&mdash;without IT ever touching the device&mdash;by leveraging the centralized management controls of Microsoft 365 Business Premium. You can also use Windows AutoPilot for existing PCs that are running Windows 10 Professional Creators Update (or later) and have been factory reset. Details about Windows AutoPilot can be found in [this June 2017 blog post](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/).
+          Windows Autopilot is a service that streamlines the deployment of new Windows 10 PCs. This process can be done when the end user logs on to Microsoft 365 Business Premium for the first time&mdash;without IT ever touching the device&mdash;by leveraging the centralized management controls of Microsoft 365 Business Premium. You can also use Windows Autopilot for existing PCs that are running Windows 10 Professional Creators Update (or later) and have been factory reset. Details about Windows Autopilot can be found in [this June 2017 blog post](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-Autopilot/).
           
   - name: Compatibility
     questions:
@@ -200,7 +199,7 @@ sections:
         answer: |
           Microsoft 365 Business Premium allows partners to maintain their trusted advisor position with customers by creating a solid and secure platform upon which to sell additional services and to upgrade existing products and services. Microsoft 365 Business Premium provides an opportunity to have an upgrade discussion with customers now using Exchange Server, Exchange Online, or Microsoft 365 Business Basic. Partners may also gain more revenue from increased managed services and/or peruser support fees.
           
-          With the new Windows AutoPilot feature included in Microsoft 365 Business Premium, partners who have been reluctant to sell new Windows devices because of deployment logistics and costs will find this opportunity much more attractive. Customers who are confident in the security of their on-premises and mobile devices are also more likely to invest in more services, such as Dynamics 365.
+          With the new Windows Autopilot feature included in Microsoft 365 Business Premium, partners who have been reluctant to sell new Windows devices because of deployment logistics and costs will find this opportunity much more attractive. Customers who are confident in the security of their on-premises and mobile devices are also more likely to invest in more services, such as Dynamics 365.
           
       - question: Should partners sell Microsoft 365 Business Premium over other plans from Microsoft?
         answer: A Microsoft Cloud Solution Provider should always sell the plan that best suits its customer business needs and budget. For example, if a customer must comply with privacy and security regulations, a CSP may sell Microsoft 365 Business Premium plus any add-ons that help the customer meet its requirements or may suggest the advanced security and management provided by Microsoft 365 Business Enterprise SKUs.

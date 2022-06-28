@@ -326,6 +326,7 @@
 #### [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
@@ -406,6 +407,7 @@
 ###### [Run antivirus scan](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
 ###### [Restrict app execution](respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate devices from the network](respond-machine-alerts.md#isolate-devices-from-the-network)
+###### [Contain devices from the network](respond-machine-alerts.md#contain-devices-from-the-network)
 ###### [Consult a threat expert](respond-machine-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](respond-machine-alerts.md#check-activity-details-in-action-center)
 

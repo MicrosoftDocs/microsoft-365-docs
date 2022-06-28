@@ -307,8 +307,6 @@
             href: end-life-cycle-groups-teams-sites-yammer.md
       - name: File collaboration in SharePoint with Microsoft 365
         href: /sharepoint/deploy-file-collaboration
-      - name: OneDrive Guide for enterprises
-        href: /onedrive/plan-onedrive-enterprise
 
     - name: Compliance
       items:
@@ -320,12 +318,8 @@
         href: ../compliance/ediscovery.md
       - name: Microsoft Purview eDiscovery (Premium)
         href: ../compliance/overview-ediscovery-20.md
-      - name: Regulatory compliance action plans
+      - name: Regulatory compliance FAQs and action plans
         items: 
-        - name: ISO - Recommended action plan
-          href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: NIST - Recommended action plan
-          href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: CCPA - Frequently asked questions
           href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: GDPR - Recommended action plan

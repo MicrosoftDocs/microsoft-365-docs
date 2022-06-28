@@ -43,7 +43,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 ### Download reports
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
 :::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="The Email & collaboration reports page in the Microsoft 365 Defender portal" lightbox="../../media/email-collaboration-download-reports.png":::
 
@@ -219,7 +219,7 @@ PowerShell reporting cmdlets:
 
 |Report|Topic|
 |---|---|
-|Top senders and recipients|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Top senders and recipients|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Top malware|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Mail traffic|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |Safe Links|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|

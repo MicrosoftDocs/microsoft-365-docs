@@ -1,7 +1,7 @@
 ---
 title: "Onboard Windows multi-session devices in Azure Virtual Desktop"
 description: "Read more in this article about Onboarding Windows multi-session devices in Azure Virtual Desktop"
-keywords: Azure Virtual Desktop, WVD, microsoft defender, endpoint, onboard
+keywords: Azure Virtual Desktop, AVD, microsoft defender, endpoint, onboard
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -37,16 +37,16 @@ Familiarize yourself with the [considerations for non-persistent VDI](/microsoft
 > - Single entry for each virtual desktop
 > - Multiple entries for each virtual desktop
 
-Microsoft recommends onboarding Azure Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender for Endpoint portal is in the context of one device based on the machine name. Organizations that frequently delete and redeploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender for Endpoint portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently.
+Microsoft recommends onboarding Azure Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender for Endpoint portal is in the context of one device based on the machine name. Organizations that frequently delete and redeploy AVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender for Endpoint portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently.
 
-Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It's executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you're using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy.
+Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the AVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It's executed as a startup script at first boot on all the AVD machines that are provisioned from the AVD golden image. However, if you're using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy.
 
 > [!NOTE]
-> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It's **not** recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 and 2 take this into account.
+> The placement and configuration of the VDI onboarding startup script on the AVD golden image configures it as a startup script that runs when the AVD starts. It's **not** recommended to onboard the actual AVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 and 2 take this into account.
 
 ### Scenarios
 
-There are several ways to onboard a WVD host machine:
+There are several ways to onboard an AVD host machine:
 
 - Run the script in the golden image (or from a shared location) during startup.
 - Use a management tool to run the script.
@@ -111,7 +111,7 @@ For more information, see [Onboard Windows devices using Configuration Manager](
 
 #### Tagging your machines when building your golden image
 
-As part of your onboarding, you may want to consider setting a machine tag to can differentiate WVD machines more easily in the Microsoft Security Center. For more information, see
+As part of your onboarding, you may want to consider setting a machine tag to differentiate AVD machines more easily in the Microsoft Security Center. For more information, see
 [Add device tags by setting a registry key value](machine-tags.md#add-device-tags-by-setting-a-registry-key-value).
 
 #### Other recommended configuration settings

@@ -89,7 +89,7 @@ This is available as a subscription service. If you're already a Defender for En
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization
 
-You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
+You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft 365 Defender portal for their response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
 
 > [!NOTE]
 >

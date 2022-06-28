@@ -28,7 +28,7 @@ description: "Learn about email and document properties that you can search by u
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-This article describes the email and document properties that you can search for in email items and Microsoft Teams chat conversations in Exchange Online, and documents stored on SharePoint and OneDrive for Business sites using the eDiscovery search tools in the Microsoft Purview compliance portal. This includes Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) (eDiscovery searches in eDiscovery (Premium) are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for these properties. The article also describes:
+This article describes the email and document properties that you can search for in email items and Microsoft Teams chat conversations in Exchange Online, and documents stored on SharePoint and OneDrive for Business sites using the eDiscovery search tools in the Microsoft Purview compliance portal. This includes Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) (eDiscovery searches in eDiscovery (Premium) are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell to search for these properties. The article also describes:
 
 - Using Boolean search operators, search conditions, and other search query techniques to refine your search results.
 - Searching for sensitive data types and custom sensitive data types in SharePoint and OneDrive for Business.
@@ -41,7 +41,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 - [Create a draft collection in eDiscovery (Premium)](create-draft-collection.md)
 
 > [!NOTE]
-> eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+> eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 ## Searchable email properties
 
@@ -141,7 +141,7 @@ The following table lists the contact properties that are indexed and that you c
 
 You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
 
-To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance Center PowerShell to display a list of sensitive information types.
+To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
 
 For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
@@ -149,7 +149,7 @@ For more information about creating queries using the `SensitiveType` property, 
 
 - To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
 
-  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance Center PowerShell:
+  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance PowerShell:
 
   ```powershell
   Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id

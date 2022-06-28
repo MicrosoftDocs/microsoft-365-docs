@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -116,4 +116,4 @@ After you have completed these steps, you're ready to [assign the new licenses](
 
 1. [Sign in to Microsoft 365 for Campaigns](m365-campaigns-sign-in.md).
 
-2. [See the guided process for basic setup](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+2. [See the guided process for basic setup](m365bp-setup.md#guided-setup-process).
