@@ -46,21 +46,21 @@ Teams includes the following ways to communicate and share information:
 
 These examples are for industries included in the Microsoft industry clouds, but you can use these capabilities for an organization in any sector.
 
-#### Financial services
+#### Retail
 
-Bank employees can use Teams to communicate across branches and share information. Each branch can use a separate channel, as can different work groups such as tellers and advisors. Banks can hold Teams meetings for different branches to learn about new policies and products. They can also hold morning meetings with the whole region before the branches open. When the bank launches a new product, such as a credit card or account type, fact sheets can be shared in Teams so everyone has quick access to new information.
+Retail employees can use Teams to keep in touch and better serve customers. Different locations and departments can use chats and channels to share information about products and policies, such as which items are being promoted or going on sale. Employees in different departments or locations can use Teams meetings to get important updates without leaving their stations. Managers or merchandising specialists can use file sharing to send out diagrams for new displays or new product labels.
 
 #### Healthcare
 
 Healthcare workers in a hospital use Teams capabilities to coordinate care. Everyone in the office is part of a general chat, and each group of workers (doctors, nurses, receptionists, and other staff) has their own channel where they can ask questions and communicate. Staff in different departments use Teams meetings and calls to keep up to date without having to leave their stations. When multiple staff are attending to one patient, they share notes and care plans over Teams. Staff who work with instruments and machinery, such as medical instrument technicians, can share fact and care sheets about equipment.
 
+#### Financial services
+
+Bank employees can use Teams to communicate across branches and share information. Each branch can use a separate channel, as can different work groups such as tellers and advisors. Banks can hold Teams meetings for different branches to learn about new policies and products. They can also hold morning meetings with the whole region before the branches open. When the bank launches a new product, such as a credit card or account type, fact sheets can be shared in Teams so everyone has quick access to new information.
+
 #### Nonprofit
 
 Nonprofit organizations can use Teams to coordinate both internally and with volunteers. For example, an organization with a large volunteer force can set up Teams channels where volunteers can get to know each other and ask their supervisors questions. Organizations can hold volunteer orientations and trainings virtually with Teams meetings, so people who live and work in different areas are more able to stay engaged. Volunteer coordinators can also use Teams to share instructions and fact sheets with volunteers.
-
-#### Retail
-
-Retail employees can use Teams to keep in touch and better serve customers. Different locations and departments can use chats and channels to share information about products and policies, such as which items are being promoted or going on sale. Employees in different departments or locations can use Teams meetings to get important updates without leaving their stations. Managers or merchandising specialists can use file sharing to send out diagrams for new displays or new product labels.
 
 ## Apps in Teams
 
@@ -92,10 +92,10 @@ The Walkie Talkie app provides instant push-to-talk communication. By using Walk
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
-|Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to call another staff member who works with the patient. |
-|Nonprofit | A volunteer in the field can use Walkie Talkie to call a supervisor in the office for help or instructions. |
 |Retail | If a customer asks a store associate a question they don't know the answer to, the associate can use Walkie Talkie to call a manager or another expert without having to leave the customer. |
+|Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to call another staff member who works with the patient. |
+|Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
+|Nonprofit | A volunteer in the field can use Walkie Talkie to call a supervisor in the office for help or instructions. |
 
 [Learn how to manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie).
 
@@ -107,10 +107,10 @@ The Praise app allows management and in-store associates to congratulate each ot
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
-|Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
-|Nonprofit |An event coordinator can send the **Thank you** badge to employees and volunteers who participated in the event. |
 |Retail |A store manager can send the **Awesome** badge to an associate who meets their sales goals. |
+|Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
+|Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
+|Nonprofit |An event coordinator can send the **Thank you** badge to employees and volunteers who participated in the event. |
 
 [Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app).
 
@@ -122,10 +122,10 @@ Use Tasks in Teams to track to-do items for your whole retail team. Store manage
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |A bank manager can assign mortgage specialists a task to review and get familiar with new rates or policies. |
-|Healthcare |A team leader at a doctor's office could assign a nurse a task to attend a training session. |
-|Nonprofit |A volunteer coordinator working in fundraising could assign a volunteer a task to call a significant donor. |
 |Retail |A store manager could assign associates a task to set up a new seasonal display. |
+|Healthcare |A team leader at a doctor's office could assign a nurse a task to attend a training session. |
+|Financial services |A bank manager can assign mortgage specialists a task to review and get familiar with new rates or policies. |
+|Nonprofit |A volunteer coordinator working in fundraising could assign a volunteer a task to call a significant donor. |
 
 [Learn how to manage the Tasks app for your organization](/microsoftteams/manage-tasks-app).
 
@@ -137,10 +137,10 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |A lending specialist could submit an approval request to a supervisor to offer a special interest rate. |
-|Healthcare |A nurse could submit an approval request to change an inpatient's medication. |
-|Nonprofit |An event coordinator could submit an approval request to access funding. |
 |Retail |A sales associate could submit an approval request to offer a discount or special rate to a customer. |
+|Healthcare |A nurse could submit an approval request to change an inpatient's medication. |
+|Financial services |A lending specialist could submit an approval request to a supervisor to offer a special interest rate. |
+|Nonprofit |An event coordinator could submit an approval request to access funding. |
 
 [Learn about Teams Approvals app availability](/microsoftteams/approval-admin).
 
@@ -152,10 +152,10 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |A bank manager could create and assign a recurring daily template for tellers to confirm morning counts. |
-|Healthcare |A team leader could create and assign a recurring daily template with a checklist for equipment preparation. |
-|Nonprofit |A team leader could assign an update for fundraising volunteers to submit their progress. |
 |Retail |A manager could assign the out-of-the-box Store Opening template for the shift lead to complete every morning. |
+|Healthcare |A team leader could create and assign a recurring daily template with a checklist for equipment preparation. |
+|Financial services |A bank manager could create and assign a recurring daily template for tellers to confirm morning counts. |
+|Nonprofit |A team leader could assign an update for fundraising volunteers to submit their progress. |
 
 [Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app).
 
@@ -184,7 +184,7 @@ Your users can add any apps that you have allowed to their teams. Share this tra
 
 ## Learn more about Teams capabilities for specific industries
 
+[Teams for retail](teams-for-retail-landing-page.md)
 [Teams for Healthcare](teams-in-hc.md)
 [Teams for nonprofit](teams-for-nonprofit-landing-page.md)
-[Teams for retail](teams-for-retail-landing-page.md)
 [Collaboration manager for Loans for financial services](/industry/financial-services/collaboration-manager/overview)

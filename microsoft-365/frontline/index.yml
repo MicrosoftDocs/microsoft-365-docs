@@ -35,6 +35,32 @@ productDirectory:
         - url: flw-licensing-options.md
           text: Licensing options for frontline workers
     # Card
+    - title: Solutions to transform your business
+      imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-blue.svg
+      links:
+        - url: flw-team-collaboration.md
+          text: Communication
+        - url: bookings-virtual-visits.md
+          text: Virtual appointments
+        - url: flw-wellbeing-engagement.md
+          text: Wellbeing & engagement
+        - url: shifts-for-teams-landing-page.md
+          text: Schedule management
+        - url: flw-onboarding-training.md
+          text: Training & onboarding
+        - url: simplify-business-processes.md
+          text: Digitized processes
+    # Card
+    - title: Solutions for your industry
+      imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
+      links:
+        - url: teams-in-hc.md
+          text: Healthcare
+        - url: teams-for-nonprofit-landing-page.md
+          text: Nonprofit
+        - url: teams-for-retail-landing-page.md
+          text: Retail
+        # Card
     - title: Set up and configure Microsoft 365 for frontline workers
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
@@ -57,30 +83,6 @@ productDirectory:
           text: Adoption resources
         - url: https://support.microsoft.com/en-us/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7
           text: End user training
-    # Card
-    - title: Solutions to transform your business
-      imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-blue.svg
-      links:
-        - url: flw-team-collaboration.md
-          text: Communication
-        - url: bookings-virtual-visits.md
-          text: Virtual appointments
-        - url: shifts-for-teams-landing-page.md
-          text: Schedule management
-        - url: flw-onboarding-training.md
-          text: Training and onboarding
-        - url: simplify-business-processes.md
-          text: Digitized processes
-    # Card
-    - title: Solutions for your industry
-      imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
-      links:
-        - url: teams-in-hc.md
-          text: Healthcare
-        - url: teams-for-nonprofit-landing-page.md
-          text: Nonprofit
-        - url: teams-for-retail-landing-page.md
-          text: Retail
     # Card
     - title: Apps for frontline workers
       imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
