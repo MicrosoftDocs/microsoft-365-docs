@@ -67,8 +67,8 @@ There are two different methods for automatically applying a sensitivity label t
     Specific to auto-labeling for Exchange:
     
     - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there's a match, the email is labeled but not the attachment.
-        - For PDF files, if the label applies encryption, these files are encrypted by using [Message encryption](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they're encrypted by using [Message encryption](ome.md).
+        - For PDF files, if the label applies encryption, these files, if unencrypted, are now encrypted by using [Message encryption](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-). The encryption settings applied are inherited from the email.
+        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption and these files are unencrypted, they're now encrypted by using [Message encryption](ome.md). The encryption settings are inherited from the email.
     - If you have Exchange mail flow rules or Microsoft Purview Data Loss Prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there's a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. If this label is configured for [encryption](encryption-sensitivity-labels.md), that encryption is always applied when the sender is from your organization. By default, that encryption isn't applied when the sender is outside your organization but can be applied by configuring **Additional settings for email** and specifying a Rights Management owner.
@@ -366,9 +366,11 @@ Finally, you can use simulation mode to provide an approximation of the time nee
         
         For **Assign a Rights Management owner**, specify a single user by an email address that's owned by your organization. Don't specify a mail contact, a shared mailbox, or any group type, because these aren't supported for this role.
 
-10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**:
-
+10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Then decide whether to automatically turned on the policy if it's not edited for 7 days:
+    
     ![Test out the configured auto-labeling policy.](../media/simulation-mode-auto-labeling-wizard.png)
+    
+    If you're not ready to run simulation, select **Leave policy turned off**. 
 
 11. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
