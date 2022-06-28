@@ -26,6 +26,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
+adobe-target: true
 ---
 
 # Microsoft 365 Defender

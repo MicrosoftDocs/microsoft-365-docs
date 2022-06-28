@@ -53,6 +53,8 @@ For a quick overview of communication compliance, see the [Detect workplace hara
 
 Check out how [TD Securities is using communication compliance](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) to address their regulatory obligations and meet their security and stability needs.
 
+Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) on how insider risk management and communication compliance work together to help minimize data risks from users in your organization.
+
 To keep up with the latest communication compliance updates, select **What's new** in [communication compliance](https://compliance.microsoft.com/) for your organization.
 
 > [!IMPORTANT]
@@ -123,7 +125,6 @@ Communication compliance policies scan and capture messages across several commu
 - **Microsoft Teams**: Chat communications for public and private [Microsoft Teams](/MicrosoftTeams/Teams-overview) channels and individual chats are supported in communication compliance as a standalone channel source or with other Microsoft 365 services. You'll need to manually add individual users, distribution groups, or specific Microsoft Teams channels when you select users and groups to supervise in a communication compliance policy. Teams users can also self-report inappropriate messages in private and group channels and chats for review and remediation.
 - **Exchange Online**: All mailboxes hosted on [Exchange Online](/Exchange/exchange-online) in your Microsoft 365 organization are eligible for scanning. Emails and attachments matching communication compliance policy conditions are instantly available for monitoring and in compliance reports. Exchange Online is now an optional source channel and is no longer required in communication compliance policies.
 - **Yammer**: Private messages and public community conversations in [Yammer](/yammer/yammer-landing-page) are supported in communication compliance policies. Yammer is an optional channel and must be in [native mode](/yammer/configure-your-yammer-network/overview-native-mode) to support scanning of messages and attachments.
-- **Skype for Business Online**: Communication compliance policies support scanning chat communications and associated attachments in [Skype for Business Online](/SkypeForBusiness/skype-for-business-online).
 - **Third-party sources**: You can scan messages from [third-party sources](archiving-third-party-data.md) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg and others.
 
 To learn more about messaging channel support in communication compliance policies, see [Detect channel signals with communication compliance](communication-compliance-channels.md).
@@ -154,7 +155,7 @@ You can choose from the following policy templates in the Microsoft Purview comp
 - **User-reported messages policy**: This system policy supports user reported messages from channel, group, and private chat messages. Enabled by default in the Teams admin center.
 
 >[!TIP]
->Use [recommended actions](communication-compliance-configure.md#recommended-actions-preview) to help you determine if you need a sensitive information type policy or if you need to update existing inappropriate content policies.
+>Use [recommended actions](communication-compliance-configure.md#recommended-actions) to help you determine if you need a sensitive information type policy or if you need to update existing inappropriate content policies.
 
 ### Investigate
 

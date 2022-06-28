@@ -33,10 +33,9 @@ As you know, emails are full of malicious attacks cloaked as harmless communicat
 
 The mission objectives are to:
 
-- [Protect against phishing and other attacks](avoid-phishing-and-attacks.md)
+- [Protect against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md)
 - [Set up encrypted email](send-encrypted-email.md)
 
 Accomplish these objectives before you move on to the [next mission](m365bp-collaborate-share-securely.md).
 
 :::image type="content" source="media/m365bp-use-email-securely.jpg" alt-text="Protect your email.":::
-   

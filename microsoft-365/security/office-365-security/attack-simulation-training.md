@@ -119,7 +119,7 @@ If you select a payload from the list, details about the payload are shown in a 
 
 If you select a payload from the list by clicking on the name, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
-To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md).
+To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
 When you're finished, click **Next**.
 
