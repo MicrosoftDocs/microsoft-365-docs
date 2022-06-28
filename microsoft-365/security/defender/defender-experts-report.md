@@ -38,7 +38,7 @@ The Defender Experts for Hunting service publishes monthly reports to help you u
 
 To view the latest report in your Microsoft 365 Defender portal, go to Reports, select **General** > **Defender Experts**.
 
-## Scan the Defender Experts for Hunting report to prioritize SecOps tasks
+## Scan the Defender Experts for Hunting report to know what to prioritize
 
 Each section of the report is designed to provide more insights about the threats our Defender Experts found in your environment. The reports include the sections described in the following table:
 
@@ -49,7 +49,6 @@ Each section of the report is designed to provide more insights about the threat
 | Notified (View notification) | The number of targeted attack notifications the Defender Experts sent. These notifications are related to the investigated possible threat activities in your environment that must be prioritized based on urgency and impact. |
 | MITRE tactics observed | The number of attack tactics and techniques observed in your environment and mapped according to the [MITRE ATT&CK framework](https://attack.mitre.org/). This section visualize how many attacks reached each tactic so you can take appropriate actions like reviewing those that progressed . |
 | Threat categories observed | The categories depict the most significant threats and risks observed in your environment. The most critical categories are highlighted to help you further assess and evaluate your security posture based on the threats' known characteristics, behavior, and potential impact. It also enables you to focus and prioritize urgent tasks to address. |
-| Recommended actions | A list of actionable steps that aims to improve your organization's security posture based on the threats and risk observed in your environment. Click each recommendation to view additional information and related resources. |
 
 Refer to the following screenshot of a sample report:
 
@@ -57,11 +56,11 @@ Refer to the following screenshot of a sample report:
 
 ## View defender experts notifications
 
-A targeted attack notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
+A defender experts notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
 The Defender Experts for Hunting reports provide you with the total number of targeted attack notifications our Defender Experts have sent for your chosen period. To view these notifications, click **View notification** beside **Notified**.
 
-This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or targeted attack notifications are labelled with “Defender Experts.”
+This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or defender experts notifications are labelled with “Defender Experts.”
 
 > [!NOTE]
 > The View notification link only appears if the vale displayed in **Notified** is atleast 1.
