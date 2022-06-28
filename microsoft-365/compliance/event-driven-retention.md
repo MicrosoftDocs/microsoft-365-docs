@@ -197,6 +197,8 @@ You can use a PowerShell script to automate event-based retention from your busi
 - [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
+to help identify other cmdlets to create retention labels and their policies, see [PowerShell cmdlets for retention policies and retention labels](retention-cmdlets.md).
+
 ## Automate events by using a REST API
 
 You can use a REST API to automatically create the events that trigger the start of the retention time.
