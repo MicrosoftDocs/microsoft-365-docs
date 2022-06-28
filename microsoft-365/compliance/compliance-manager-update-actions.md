@@ -27,9 +27,9 @@ description: "Migrate your existing compliance data into into Microsoft Purview 
 
 ## Overview
 
-Compliance Manager lets organizations bring their existing compliance data and evidence into the Compliance Manager solution. An Excel based upload process for updating improvement actions is an easy way new Compliance Manager customers to migrate their compliance activities and quickly start increasing their overall compliance score.
+Compliance Manager lets organizations bring their existing compliance data and evidence into the Compliance Manager solution. Using an Excel based upload process for updating improvement actions,  organizations just getting started with Compliance Manager can migrate compliance activities completed in other systems into Compliance Manager, and quickly start increasing their overall compliance score.
 
-You don't have to be a new Compliance Manager user. This improvement action updating process provides greater flexibility for all users to update improvement actions on a larger scale. For example, you can:
+This improvement action updating process provides new and existing Compliance Manager users greater flexibility and ability to update improvement actions on a larger scale. For example, you can:
 
 - Add test results and evidence to multiple improvement actions that were tested in a system other than Compliance Manager
 - Assign multiple improvement actions to various users based on the actions' score potential
