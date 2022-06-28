@@ -29,7 +29,7 @@ You can access the Microsoft Defender for Endpoint page in Microsoft 365 Lightho
 
 The Incidents and alerts tab provides a multi-tenant incidents queue of incidents and alerts that were flagged from devices in your customers’ network. By default, the queue displays any active incidents seen in the last 30 days. You can select any incident or alert to view more information.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-incidents.png" alt-text="Microsoft 365 Lighthouse Device Security Incidents tab":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-incidents.png" alt-text="Microsoft Defender for Endpoint incidents and alerts":::
 
 ## Devices tab
 
@@ -40,7 +40,7 @@ The Devices tab also includes the following options:
 - **Export**: Select to export device compliance data to an Excel comma-separated values (.csv) file.
 - **Search**: Enter keywords to quickly locate a specific device in the list.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-devices.png" alt-text="Microsoft 365 Lighthouse Device Security Device tab":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-devices.png" alt-text="Microsoft Defender for Endpoint onboarded devices view":::
 
 ## Related content
 [Manage Microsoft Defender for Endpoint incidents](../security/defender-endpoint/manage-incidents.md)(article)\
