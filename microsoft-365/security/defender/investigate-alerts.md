@@ -208,6 +208,9 @@ To create a suppression rule for alerts:
     2. All the properties of this 'evidence' will auto populate as a new subgroup in the respective fields below.
     :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Properties of evidence auto-populate" lightbox="../../media/investigate-alerts/properties-evidence.png" :::
 
+    > [!NOTE]
+    > Condition values are not case sensitive. 
+
     3. You can edit and/or delete properties of this 'evidence' as per your requirement (using wildcards, when supported).
 
     4. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added 'evidences' that you can select from the evidence types drop-down list.
