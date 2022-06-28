@@ -58,7 +58,7 @@ If you're new to Compliance Manager, follow these steps to bring your existing c
 
 3. **Update the improvement action Excel file.** Use the instructions on the **How to update actions** tab to add or update the information in the specially formatted Excel file.
 
-4. **Upload the Excel file.** Reupload your formatted Excel file through a simple upload process by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
+4. **Upload the Excel file.** Upload your edited Excel file by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
 
 ## Updating multiple improvement actions at once
 
@@ -68,7 +68,7 @@ Follow the steps below to update status, evidence, notes, or other data in multi
 
 2. **Update the improvement action Excel file.** Use the instructions on the **How to update actions** tab of the Excel file to add or update the information in the specially formatted Excel file.
 
-3. **Upload the Excel file.** Upload your edited Excel file through a simple upload process by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
+3. **Upload the Excel file.** Upload your edited Excel file by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
 
 > [!NOTE]
 > The improvement action update process can't be used to add new improvement actions to Compliance Manager. To add a new improvement action that doesn't already exist in Compliance Manager, you'll need to [create a custom assessment template](compliance-manager-templates-create.md). A custom template  requires you to format and upload a different Excel spreadsheet with action and control-mapping data. See specifically the "Actions tab" formatting instructions at [how to format assessment template data in Excel](compliance-manager-templates-format-excel.md).  
