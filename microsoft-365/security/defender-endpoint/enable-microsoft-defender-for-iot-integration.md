@@ -37,6 +37,8 @@ Once you've defined a Defender for IoT plan and set up an Enterprise IoT network
 
 The Defender for IoT integration provides increased visibility to help locate, identify, and secure the IoT devices in your network. This will give you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers, and mobile).
 
+Customers who've onboarded to Defender for IoT also have security reccommendations for vulnerability assessments and misconfigurations for IoT devices.
+
 ## Prerequisites
 
 To modify settings for your Defender for Endpoint integration, the user must have the following roles:
@@ -46,7 +48,7 @@ To modify settings for your Defender for Endpoint integration, the user must hav
 
 ## Onboard a Defender for IoT plan
 
-1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Microsoft Defender for IoT**.
+1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Enterprise IoT**.
 
 1. Select the following options for your plan:
 
