@@ -37,7 +37,7 @@ Once you've defined a Defender for IoT plan and set up an Enterprise IoT network
 
 The Defender for IoT integration provides increased visibility to help locate, identify, and secure the IoT devices in your network. This will give you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers, and mobile).
 
-Customers who've onboarded to Defender for IoT also have security reccommendations for vulnerability assessments and misconfigurations for IoT devices.
+Customers who've onboarded to Defender for IoT also have security recommendations for vulnerability assessments and misconfigurations for IoT devices.
 
 ## Prerequisites
 
