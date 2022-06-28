@@ -99,10 +99,8 @@
         href: shifts-connector-powershell-manage.md
   - name: Training & onboarding
     items: 
-    - name: Onboard new employees
+    - name: Onboard and train employees
       href: flw-onboarding-training.md
-    - name: Ongoing training
-      href: ongoing-training.md
   - name: Digitized processes
     items: 
     - name: Simplify business processes
