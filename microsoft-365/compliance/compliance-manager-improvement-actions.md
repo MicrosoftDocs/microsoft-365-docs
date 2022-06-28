@@ -245,4 +245,6 @@ You can set up alerts to notify you immediately when certain changes to improvem
 
 ## Export a report
 
-Select **Export** in the upper-left corner of your screen to download an Excel worksheet containing all your improvement actions and the filter categories shown on the improvement actions page.
+Select **Export** in the upper left corner of your screen to download an Excel worksheet containing all your improvement actions and the filter categories shown on the improvement actions page.
+
+The exported Excel file is also what you use to update multiple improvement actions at once. Get details about how to edit the export file to [update multiple improvement actions](compliance-manager-update-actions.md).
