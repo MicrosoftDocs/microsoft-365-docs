@@ -343,7 +343,14 @@ If you need to revert to Microsoft-managed keys, you can. When you offboard, you
 > [!IMPORTANT]
 > Offboarding is not the same as a data purge. A data purge permanently crypto-deletes your organization's data from Microsoft 365, offboarding does not. You can't perform a data purge for a multiple workload policy.
 
-If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to "offboard" from Customer Key. Ask the support team to file a service request against the Microsoft Purview Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions.
+**If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to file a support ticket using your Microsoft admin portal and provide the following details in your request:**
+
+1. Tenant FQDN
+2. Tenant contact for offboarding request
+3. Reason for offboarding
+4. Include a note in the service ticket that the request should be directed to the M365 Customer Key team and include the incident #
+
+You must still retain your Customer Key AKVs and encryption keys with proper permissions for data to be rewrapped using Microsoft managed keys. Please reach out to m365-ck@service.microsoft.com if you have any questions.
 
 If you do not want to encrypt individual mailboxes using mailbox level DEPs anymore, then you can unassign mailbox level DEPs from all your mailboxes.
 

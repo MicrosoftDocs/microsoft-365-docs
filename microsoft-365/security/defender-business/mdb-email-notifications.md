@@ -26,10 +26,6 @@ You can set up email notifications for your security team. Then, as alerts are g
 3. [Proceed to your next steps](#next-steps).
 
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Types of email notifications
 
