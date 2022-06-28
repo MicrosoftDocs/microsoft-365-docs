@@ -11,7 +11,7 @@ ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 ms.prod: m365-security
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial playbook."
@@ -39,9 +39,9 @@ Now you have the option to try Defender for Office 365 in one of two ways:
 
 :::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="A graphical representation of all components of Microsoft Defender for Office 365." lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
-Using the recommendations in this guide, you’ll learn how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
+Using the recommendations in this guide, you'll learn how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
-Let’s get started!
+Let's get started!
 
 ## Blocking mode
 
@@ -161,9 +161,9 @@ Equip your users with the right knowledge to identify threats and report suspici
 
 #### Start your Defender for Office 365 evaluation
 
-After you've completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-audit-mode), it may take up to 2 hours for changes to take effect. We've automatically configured Preset Evaluation policies in your environment.  
+After you've completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-audit-mode), it may take up to 2 hours for changes to take effect. We've automatically configured Preset Evaluation policies in your environment.
 
-Evaluation policies ensure no action is taken on email that's detected by Defender for Office 365.  
+Evaluation policies ensure no action is taken on email that's detected by Defender for Office 365.
 
 #### Enable users to report suspicious content in auditing mode
 
@@ -194,7 +194,7 @@ Defender for Office 365 enables you to investigate activities that put people in
 
 #### Convert to Standard Protection at the end of evaluation period
 
-When you're ready to turn on Defender for Office 365 policies in production, you can use "Convert to Standard Protection" within the evaluation management experience to easily move to Standard protection in [preset security policies](preset-security-policies).
+When you're ready to turn on Defender for Office 365 policies in production, you can use "Convert to Standard Protection" within the evaluation management experience to easily move to Standard protection in [preset security policies](preset-security-policies.md).
 
 1. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, click **Manage**, and then click **Convert to Standard protection**.
 
