@@ -96,7 +96,8 @@ Copy the UA agent package, onboarding script and migration script to the same co
 16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.
      :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created":::
 17. Verify in MECM>Monitoring>Deployments the status of this migration. See the below screenshot:
-     :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check":::
+
+      :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check":::
 
 ## Related topics
 
