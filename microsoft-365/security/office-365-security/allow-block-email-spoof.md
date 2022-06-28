@@ -75,10 +75,11 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender.
 
-You can't directly modify the Tenant Allow/Block List to add allow entries. Instead, use [admin submissions](admin-submission.md) to submit the blocked message. This action will add the corresponding URL, file, and/or sender to the Tenant Allow/Block List. If the item has not been blocked, then the allow won't be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allow entry will be removed on the specified expiration date.
+You can't directly modify the Tenant Allow/Block List to add allow entries. Instead, use [admin submissions](admin-submission.md) to submit the blocked message. This action will add the corresponding URL, file, spoofed sender domain pair, impersonated domain (or user) and/or sender to the Tenant Allow/Block List. If the item has not been blocked, then the allow won't be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allow entry will be removed on the specified expiration date.
 
 > [!IMPORTANT]
-> Because Microsoft manages the allow entries for you, unneeded sender, URL, or file allow entries that aren't needed will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a message is still considered bad.
+> - Because Microsoft manages the allow entries for you, unneeded sender, URL, or file allow entries that aren't needed will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a message is still considered bad.
+
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -205,7 +206,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoo
 
 ## Create allowed spoofed sender entries 
 
-### Use Microsoft 365 Defender
+### Use the Tenant Allow/Block List in Microsoft 365 Defender
 
 > [!NOTE]
 >
@@ -225,6 +226,38 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoo
    - **Action**: Select **Allow**.
 
 4. When you're finished, click **Add**.
+
+### Use Admin Submission in Microsoft 365 Defender
+
+You can also allow spoofed senders using the **Submissions** page in Microsoft 365 Defender.
+
+Use [admin submissions](admin-submission.md) to submit the blocked message. This action will add the corresponding URL, file, spoofed sender domain pair, impersonated domain (or user) and/or sender to the Tenant Allow/Block List. If the item has not been blocked, then the allow won't be created. 
+
+> [!IMPORTANT]
+>
+> - Spoof allows take care of intra-org, cross-org and DMARC spoofing.
+> - The optional note in the admin submission don't apply to spoof allows.
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, verify that the **Emails** tab is selected, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the network message ID or uploading the email file.
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
+
+5. Turn on **Allow messages like this** option.
+
+6. From the **Remove after** drop-down list, specify how long you want the allow option to work though it does not applies to spoof allows as they never expire.
+
+7. When you're finished, select the **Submit** button.
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Submit malware to Microsoft for analysis example." lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+>
+> - The spoofed sender domain pair will be created and visible in the **Spoofed** tab under the **Tenant allow/block list** page.
+
 
 ### Use PowerShell
 
@@ -289,6 +322,38 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
+
+## Create impersonated sender entries
+
+### Use Admin Submission in Microsoft 365 Defender
+
+You can also allow impersonated senders using the **Submissions** page in Microsoft 365 Defender.
+
+Use [admin submissions](admin-submission.md) to submit the blocked message. This action will add the corresponding URL, file, spoofed sender domain pair, impersonated domain (or user) and/or sender to the Tenant Allow/Block List. If the item has not been blocked, then the allow won't be created. 
+
+> [!IMPORTANT]
+>
+> - Impersonation allows take care of domain and user impersonation.
+> - Graph Impersonation is not taken care from here for now.
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, verify that the **Emails** tab is selected, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the network message ID or uploading the email file.
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
+
+5. Turn on **Allow messages like this** option.
+
+6. From the **Remove after** drop-down list, specify how long you want the allow option to work though it does not applies to impersonated allows as they never expire.
+
+7. When you're finished, select the **Submit** button.
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Submit malware to Microsoft for analysis example." lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+> The impersonated domain (or user) will be created and visible in the **Trusted senders and domains** section in the anti-phishing policy at <https://security.microsoft.com/antiphishing>.
 
 ## Related articles
 
