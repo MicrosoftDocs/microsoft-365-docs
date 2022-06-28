@@ -37,7 +37,7 @@ This improvement action updating process provides new and existing Compliance Ma
 - Change actions' testing source from automatic to manual implementation and testing
 - Parent the testing source of multiple actions at one time, so that those actions inherit the implementation and testing status of another action
 
-## Summary of the process
+## Getting started
 
 To migrate existing data into Compliance Manager or to perform a bulk update of improvement actions, you can start from one of two places in Compliance Manager:
 
@@ -48,7 +48,7 @@ To migrate existing data into Compliance Manager or to perform a bulk update of 
 > - Only the improvement actions managed by your organization, not Microsoft managed actions, can be updated by this process. (Learn more about [types of improvement actions](compliance-score-calculation.md#action-types-and-points).)
 > - Improvement actions must already be associated to an existing assessment before you can update them through this process. (Learn more about [building and managing assessments](compliance-manager-assessments.md).)
 
-## Migrate your existing compliance work into Compliance Manager
+## Migrating your existing work into Compliance Manager
 
 If you're new to Compliance Manager, follow these steps to bring your existing compliance activities into Compliance Manager:
 
@@ -60,7 +60,7 @@ If you're new to Compliance Manager, follow these steps to bring your existing c
 
 4. **Upload the Excel file.** Re-upload your formatted Excel file through a simple upload process by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
 
-## Perform a bulk update of improvement actions
+## Updating multiple improvement actions at once
 
 Follow the steps below to update status, evidence, notes, or other data in multiple improvement actions at one time.
 
