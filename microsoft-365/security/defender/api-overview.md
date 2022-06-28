@@ -49,6 +49,9 @@ Along with these Microsoft 365 Defender-specific APIs, each of our other securit
 > [!NOTE]
 > The transition to the unified portal should not affect the PowerBi dashboards based on Microsoft Defender for Endpoint APIs. You can continue to work with the existing APIs regardless of the interactive portal transition.
 
+Watch this short video to learn how you can use Microsoft 365 Defender to automate workflows and integrate apps.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M?rel=0]
+
 ## Learn more
 
 | **Understand how to access the APIs** |

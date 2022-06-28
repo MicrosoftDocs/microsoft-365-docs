@@ -24,11 +24,10 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender Vulnerability Management - Update](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender Vulnerability Management? [Sign up for a free trial.- Update](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
-
 
 ## 1. Get all security baselines assessment configurations
 
@@ -36,16 +35,16 @@ This API retrieves a list of all the possible security baselines assessment conf
 
 ### 1.1 Parameters
 
-- Supports OData V4 queries
+- Supports OData V4 queries
 - OData supported operators:
-  - `$filter` on:  `id`,  `category`,  `name`, `CCE`
-  - `$top` with max value of 10,000
+  - `$filter` on: `id`, `category`, `name`, `CCE`
+  - `$top` with max value of 10,000
   - `$skip`
 
 ### 1.2 HTTP request
 
 ```http
-GET /api/baselineConfigurations 
+GET /api/baselineConfigurations 
 ```
 
 ### 1.3 Request headers
@@ -56,7 +55,7 @@ Authorization|String|Bearer {token}. **Required**.
 
 ### 1.4 Response
 
-If successful, this method returns 200 OK with the list of baseline configurations in the body.  
+If successful, this method returns 200 OK with the list of baseline configurations in the body.
 
 ### 1.5 Properties
 
@@ -81,31 +80,31 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
 ### 1.6.2 Response example
 
 ```json
-{  
-    "@odata.context": " https://api-df.securitycenter.microsoft.com/api/$metadata#BaselineConfigurations ", 
-    "value": [  
-        {  
-            "id": "1.1.8", 
-            "name": "(L1) Ensure 'Allow importing of payment info' is set to 'Disabled'",  
-            "description": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">This policy setting controls whether users are able to import payment information from another browser into Microsoft Edge as well as whether payment information is imported on first use.</p>",  
-            "category": "Microsoft Edge",  
-            "complianceLevels": [  
-                "Level 1 (L1) - Corporate/Enterprise Environment (general use)",  
-                "Level 2 (L2) - High Security/Sensitive Data Environment (limited functionality)"  
-            ],  
-            "cce": "",  
-            "rationale": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">Having payment information automatically imported or allowing users to import payment data from another browser into Microsoft Edge could allow for sensitive data to be imported into Edge.</p>",  
-            "remediation": "<div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\r\n  <p>\r\n    <p>\r\nTo establish the recommended configuration via GP, set the following UI path to                 <span class=\"inline_block\">Disabled</span></p>\r\n    <code class=\"code_block\">Computer Configuration\\Policies\\Administrative Templates\\Microsoft Edge\\Allow importing of payment info\r\n</code>\r\n    <p>\r\n      <strong>Note:</strong>\r\n This Group Policy path may not exist by default. It is provided by the Group Policy template                 <span class=\"inline_block\">MSEdge.admx/adml</span>\r\n that can be downloaded from Microsoft                 <a href=\"https://www.microsoft.com/en-us/edge/business/download\">here</a>\r\n.              </p>\r\n    <p class=\"bold\">Impact:</p>\r\n    <p>\r\n      <p>Users will be unable to perform a payment information import from other browsers into Microsoft Edge.</p>\r\n    </p>\r\n  </p>\r\n</div>",  
-            "benchmarkName": "CIS"  
-"recommendedValue": [ 
-                "Equals '0'" 
-            ], 
-            "source": [ 
-                "hkey_local_machine\\software\\policies\\microsoft\\windows\\eventlog\\security\\retention" 
-            ]
-        }, 
-    ] 
-} 
+{
+    "@odata.context": " https://api-df.securitycenter.microsoft.com/api/$metadata#BaselineConfigurations ", 
+    "value": [
+        {
+            "id": "1.1.8", 
+            "name": "(L1) Ensure 'Allow importing of payment info' is set to 'Disabled'",
+            "description": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">This policy setting controls whether users are able to import payment information from another browser into Microsoft Edge as well as whether payment information is imported on first use.</p>",
+            "category": "Microsoft Edge",
+            "complianceLevels": [
+                "Level 1 (L1) - Corporate/Enterprise Environment (general use)",
+                "Level 2 (L2) - High Security/Sensitive Data Environment (limited functionality)"
+            ],
+            "cce": "",
+            "rationale": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">Having payment information automatically imported or allowing users to import payment data from another browser into Microsoft Edge could allow for sensitive data to be imported into Edge.</p>",
+            "remediation": "<div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\r\n  <p>\r\n    <p>\r\nTo establish the recommended configuration via GP, set the following UI path to                 <span class=\"inline_block\">Disabled</span></p>\r\n    <code class=\"code_block\">Computer Configuration\\Policies\\Administrative Templates\\Microsoft Edge\\Allow importing of payment info\r\n</code>\r\n    <p>\r\n      <strong>Note:</strong>\r\n This Group Policy path may not exist by default. It is provided by the Group Policy template                 <span class=\"inline_block\">MSEdge.admx/adml</span>\r\n that can be downloaded from Microsoft                 <a href=\"https://www.microsoft.com/en-us/edge/business/download\">here</a>\r\n.              </p>\r\n    <p class=\"bold\">Impact:</p>\r\n    <p>\r\n      <p>Users will be unable to perform a payment information import from other browsers into Microsoft Edge.</p>\r\n    </p>\r\n  </p>\r\n</div>",
+            "benchmarkName": "CIS"
+"recommendedValue": [ 
+                "Equals '0'" 
+            ], 
+            "source": [ 
+                "hkey_local_machine\\software\\policies\\microsoft\\windows\\eventlog\\security\\retention" 
+            ]
+        }, 
+    ] 
+} 
 ```
 
 ## See also

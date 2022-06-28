@@ -25,7 +25,7 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you are an Global or security administrator, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows 10, Windows 11, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
+If you are a Global or security administrator, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows 10, Windows 11, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
 
 ## What do you need to know before you begin?
 
@@ -38,6 +38,38 @@ If you are an Global or security administrator, you can now host firewall report
   - The two PowerShell commands are:
     - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable**
     - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable**
+```powershell
+param (
+    [switch]$remediate
+)
+try {
+
+    $categories = "Filtering Platform Packet Drop,Filtering Platform Connection"
+    $current = auditpol /get /subcategory:"$($categories)" /r | ConvertFrom-Csv    
+    if ($current."Inclusion Setting" -ne "failure") {
+        if ($remediate.IsPresent) {
+            Write-Host "Remediating. No Auditing Enabled. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})"
+            $output = auditpol /set /subcategory:"$($categories)" /failure:enable
+            if($output -eq "The command was successfully executed.") {
+                Write-Host "$($output)"
+                exit 0
+            }
+            else {
+                Write-Host "$($output)"
+                exit 1
+            }
+        }
+        else {
+            Write-Host "Remediation Needed. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})."
+            exit 1
+        }
+    }
+
+}
+catch {
+    throw $_
+} 
+```
 
 ## The process
 

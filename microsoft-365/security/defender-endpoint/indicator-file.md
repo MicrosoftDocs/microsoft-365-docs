@@ -23,9 +23,10 @@ ms.technology: mde
 
 **Applies to:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -56,6 +57,9 @@ It's important to understand the following prerequisites prior to creating indic
 
 This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including .exe and .dll files. The coverage will be extended over time.
 
+> [!IMPORTANT]
+> In Defender for Endpoint Plan 1 and Defender for Business, you can create an indicator to block or allow a file. In Defender for Business, your indicator is applied across your environment and cannot be scoped to specific devices.
+
 ## Create an indicator for files from the settings page
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
@@ -67,7 +71,7 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 4. Specify the following details:
     - Indicator - Specify the entity details and define the expiration of the indicator.
     - Action - Specify the action to be taken and provide a description.
-    - Scope - Define the scope of the device group.
+    - Scope - Define the scope of the device group (scoping is not available in [Defender for Business](../defender-business/mdb-overview.md)).
 
 5. Review the details in the Summary tab, then select **Save**.
 

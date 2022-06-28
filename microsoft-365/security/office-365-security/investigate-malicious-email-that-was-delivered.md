@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 # Investigate malicious email that was delivered in Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to:**
 

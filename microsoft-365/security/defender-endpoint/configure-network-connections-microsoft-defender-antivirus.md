@@ -85,7 +85,7 @@ For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun
 
 ### Attempt to download a fake malware file from Microsoft
 
-You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. Visit [https://aka.ms/ioavtest](https://aka.ms/ioavtest) to download the file.
+You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. Visit [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) to download the file.
 
 > [!NOTE]
 > The downloaded file is not exactly malware. It's a fake file designed to test if you're properly connected to the cloud.
@@ -114,7 +114,7 @@ A similar message occurs if you're using Internet Explorer:
    The Windows event log will also show [Windows Defender client event ID 1116](troubleshoot-microsoft-defender-antivirus.md).
 
     > [!TIP]
-    > If you’re looking for Antivirus related information for other platforms, see:
+    > If you're looking for Antivirus related information for other platforms, see:
     > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
     > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
     > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

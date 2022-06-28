@@ -37,7 +37,7 @@ After you have [defined information barriers (IB) policies](information-barriers
 | [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Refer to this article when you run into unexpected issues with information barriers. |
 
 >[!IMPORTANT]
->To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br>- Microsoft 365 Enterprise Global Administrator<br>- Global Administrator<br>- Compliance Administrator<br>- IB Compliance Management (this is a new role!)<br><br>To learn more about prerequisites for information barriers, see [Prerequisites (for information barriers policies)](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met).<br><br> Make sure to [connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+>To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br>- Microsoft 365 Enterprise Global Administrator<br>- Global Administrator<br>- Compliance Administrator<br>- IB Compliance Management (this is a new role!)<br><br>To learn more about prerequisites for information barriers, see [Prerequisites (for information barriers policies)](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met).<br><br> Make sure to [connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Edit user account attributes
 
