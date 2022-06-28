@@ -57,7 +57,7 @@ The following list includes the existing gaps between AIP for Office 365 operate
 To configure AIP for customers in China:
 1. [Enable Rights Management for the tenant](#step-1-enable-rights-management-for-the-tenant).
 
-1. [Add the Microsoft Purview Information Protection Sync Service service principal](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
+1. [Add the Microsoft Information Protection Sync Service service principal](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
 
 1. [Configure DNS encryption](#step-3-configure-dns-encryption).
 
@@ -81,7 +81,7 @@ For the encryption to work correctly, RMS must be enabled for the tenant.
 
 2. If the functional state is `Disabled`, run `Enable-AipService`.
 
-### Step 2: Add the Microsoft Purview Information Protection Sync Service service principal
+### Step 2: Add the Microsoft Information Protection Sync Service service principal
 
 The **Microsoft Purview Information Protection Sync Service** service principal is not available in Azure China tenants by default, and is required for Azure Information Protection. Create this service principal manually via the Azure Az PowerShell module.
 
