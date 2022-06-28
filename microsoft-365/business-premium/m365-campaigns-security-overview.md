@@ -2,11 +2,11 @@
 title: "Bump up security protection for your campaign or business"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -27,7 +27,6 @@ description: "Learn how to protect your campaign or business by increasing your 
 ---
 
 # Bump up security protection for your campaign or business
-
 
 ## Overview 
 

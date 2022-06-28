@@ -48,6 +48,21 @@ You'll need to complete the following general steps to successfully onboard serv
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
+## Integration with Microsoft Defender for Cloud
+
+Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Servers. You can onboard servers automatically, have servers monitored by Microsoft Defender for Cloud appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer.
+
+For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
+
+> [!NOTE]
+> For Windows Server 2012 R2 and 2016 running the modern unified solution, you can either manually install/upgrade the new solution on these machines, or use the integration to automatically deploy or upgrade servers covered by your respective Microsoft Defender for Server plan. More information about making the switch at [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows).
+> - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
+Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
+> - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
+> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
+> - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
+> - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
+
 **Windows Server 2012 R2 and Windows Server 2016**:
 
 - Download installation and onboarding packages
@@ -129,19 +144,6 @@ Workaround:
 3. Import the certificate to the Local Computer trusted "Intermediate Certification Authorities" store.
 You can use the PowerShell command:
 Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
-
-## Integration with Microsoft Defender for Cloud
-
-Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Cloud. You can onboard servers automatically, have servers monitored by Microsoft Defender for Cloud appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer.
-
-For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
-
-> [!NOTE]
-> For Windows Server 2012 R2 and 2016 running the modern unified solution, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for automated deployment or upgrade is not yet available for all plans. You can manually install the new solution on these machines, or use Microsoft Defender for server P1 to test the new solution. More information at [New Defender for servers plans](/azure/defender-for-cloud/release-notes#new-defender-for-servers-plans).
-
-> [!NOTE]
-> - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
-> - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
@@ -310,11 +312,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 > [!IMPORTANT]
 >
-> - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
-Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
-> - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
-> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
-> - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - The Onboarding package for Windows Server 2012 R2, 2016, 2019 and 2022 through Microsoft Endpoint Manager currently ships as a script. For more information on how to deploy programs and scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 ## Windows Server Semi-Annual Enterprise Channel (SAC), Windows Server 2019 and Windows Server 2022
