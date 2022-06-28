@@ -211,9 +211,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
    <details><summary>(Build: 101.45.13 | Release version: 30.121082.14513.0)</summary>
    
-  <p><b> 
-  Build: 101.45.13  <br>
-  Release version: 30.121082.14513.0 </b></p>
+  <p> 
+  Build: <b>101.45.13 </b>  <br>
+  Release version:<b> 30.121082.14513.0 </b></p>
    
   <p><b>What's new</b></p>
 
@@ -230,9 +230,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
    <details><summary>(Build: 101.45.00 | Release version: 30.121072.14500.0)</summary>
    
-   <p><b> 
-   Build: 101.45.00 <br>
-   Release version: 30.121072.14500.0</b></p>
+   <p> 
+   Build:<b> 101.45.00</b> <br>
+   Release version: <b>30.121072.14500.0</b></p>
    
    <p><b>What's new</b></p>
       
@@ -247,9 +247,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
    <details><summary>(Build: 101.39.98 | Release version: 30.121062.13998.0)</summary>
    
-   <p><b> 
-   Build: 101.39.98 <br>
-   Release version: 30.121062.13998.0</b></p>
+   <p> 
+   Build: <b>101.39.98 </b><br>
+   Release version: <b>30.121062.13998.0</b></p>
    
    <p><b>What's new</b></p>
 
@@ -259,9 +259,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
    <details><summary>(Build: 101.34.27 | Release version: 30.121052.13427.0)</summary>
    
-   <p><b> 
-   Build: 101.34.27 <br>
-   Release version: 30.121052.13427.0</b></p>
+   <p> 
+   Build:<b> 101.34.27</b> <br>
+   Release version: <b>30.121052.13427.0</b></p>
    
    <p><b>What's new</b></p>
 
@@ -271,9 +271,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
    <details><summary>(Build: 101.29.64 | Release version: 30.121042.12964.0)</summary>
    
-   <p><b> 
-   Build: 101.29.64 <br>
-   Release version: 30.121042.12964.0</b></p>
+   <p> 
+   Build:<b> 101.29.64 </b><br>
+   Release version:<b> 30.121042.12964.0</b></p>
    
    <p><b>What's new</b></p>
 
@@ -287,9 +287,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
    <details><summary>(Build: 101.25.72 | Release version: 30.121022.12563.0)</summary>
    
-   <p><b> 
-   Build: 101.25.72 <br>
-   Release version: 30.121022.12563.0</b></p>
+   <p> 
+   Build:<b> 101.25.72</b> <br>
+   Release version: <b>30.121022.12563.0</b></p>
    
    <p><b>What's new</b></p>
 
@@ -302,9 +302,9 @@ This article is updated frequently to let you know what's new in the latest rele
    
    <details><summary>(Build: 101.25.63 | Release version: 30.121022.12563.0)</summary>
    
-   <p><b> 
-   Build: 101.25.63 <br>
-   Release version: 30.121022.12563.0</b></p>
+   <p> 
+   Build:<b> 101.25.63</b> <br>
+   Release version: <b>30.121022.12563.0</b></p>
    
    <p><b>What's new</b></p>
 
@@ -314,8 +314,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
    <details><summary>(Build: 101.23.64 | Release version: 30.121021.12364.0)</summary>
    
-   <p><b> 
-   Build: 101.23.64 <br>
+   <p>
+   Build:<b> 101.23.64 </b><br>
    Release version: 30.121021.12364.0</b></p>
    
    <p><b>What's new</b></p>
@@ -326,10 +326,10 @@ This article is updated frequently to let you know what's new in the latest rele
   
    </details>
 
-   <details><summary>(Build:101.18.53)</summary>
+   <details><summary>(Build: 101.18.53)</summary>
    
-	<p><b> 
-	Build: 101.18.53 <br>
+	<p> 
+	Build:<b> 101.18.53 </b><br>
 		
 	<p>What's new</b></p>
 
