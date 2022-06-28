@@ -156,7 +156,7 @@ Security intelligence update version: 1.361.1449.0<br/>
 
 ### Known Issues
 
-No known issues
+- Potential for high resource utilization (CPU and/or memory). See the Platform 4.18.2203.5 and Engine 1.1.19200.5 update for March 2022.
 
 <br/><br/>
 </details><details>

@@ -40,7 +40,7 @@ Protect your administrator accounts with multi-factor authentication and conditi
 
 Next, configure Microsoft Purview Privileged Access Management. Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
-- [Overview of privileged access management](privileged-access-management-overview.md)
+- [Overview of privileged access management](privileged-access-management.md)
 - [Configure privileged access management](privileged-access-management-configuration.md)
 
 Another top recommendation is to use workstations especially configured for administrative work. These are dedicated devices that are only used for administrative tasks. See [Securing privileged access](/windows-server/identity/securing-privileged-access/securing-privileged-access).
