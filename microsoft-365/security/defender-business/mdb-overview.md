@@ -25,10 +25,6 @@ Microsoft Defender for Business is a new endpoint security solution that was des
 
 This article describes what's included in Defender for Business, with links to learn more about these features and capabilities.
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Video: Enterprise-grade protection for small and medium-sized businesses
 
@@ -36,10 +32,9 @@ Watch the following video to learn more about Defender for Business: <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
+## What's included with Defender for Business
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
-
-## What's included with Defender for Business
 
 With Defender for Business, you can help protect the devices and data your business uses with:
 

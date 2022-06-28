@@ -107,6 +107,24 @@ To get the data types for event properties, do the following steps:
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
+## Estimating initial Event Hub capacity
+The following Advanced Hunting query can help provide a rough estimate of data volume throughput and initial event hub capacity based on events/sec and estimated MB/sec. We recommend running the query during regular business hours so as to capture ‘real’ throughput.
+ 
+```kusto 
+let bytes_ = 500;
+union withsource=MDTables*
+| where Timestamp > startofday(ago(6h))
+| summarize count() by bin(Timestamp, 1m), MDTables
+| extend EPS = count_ /60
+| summarize avg(EPS), estimatedMBPerSec = (avg(EPS) * bytes_ ) / (1024*1024) by MDTables
+| sort by toint(estimatedMBPerSec) desc
+```
+
+## Monitoring created resources
+
+You can monitor the resources created by the streaming API using **Azure Monitor**. 
+For more information, see [Log Analytics workspace data export in Azure Monitor](/azure/azure-monitor/logs/logs-data-export). 
+
 ## Related topics
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
