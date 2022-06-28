@@ -101,7 +101,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |[PDF support](#pdf-support) | Under review|  Under review | Under review | Under review | Under review |
-|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2208+ | Rolling out: 4.2203+ | Rolling out |
+|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2208+ | Rolling out: 4.2203+ | Under review |
 |
 
 **Footnotes:**
@@ -462,8 +462,6 @@ PDF scenarios not supported:
     The option **File** > **Info** > **Protect Document** > **Encrypt with Password** isn't supported when the document's label applies encryption. In this scenario, the encrypt with password option becomes unavailable for users.
 
 For more information about this capability, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
-
->>>>>>> cc3abde7ac7756a5735f72be37af26f7e734fbd1
 
 ## Auditing labeling activities
 
