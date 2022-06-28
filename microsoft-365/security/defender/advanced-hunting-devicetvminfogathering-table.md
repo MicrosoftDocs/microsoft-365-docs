@@ -32,7 +32,7 @@ ms.technology: m365d
 >[!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The `DeviceTvmInfoGathering` table in the advanced hunting schema contains the [Threat & Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) assessment events including the status of various configurations and attack surface area states of devices. You can, for instance, hunt for assessment events [**ADD USE CASE INFO HERE**]. Use this reference to construct queries that return information from the table.
+The `DeviceTvmInfoGathering` table in the advanced hunting schema contains the [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) assessment events including the status of various configurations and attack surface area states of devices. You can, for instance, hunt for assessment events related to mitigations for zero-days, posture assessment for emerging threats supporting threat analytics mitigation status reports, enabled TLS protocol versions on servers, and more. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -45,22 +45,16 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `OSPlatform` | `string` | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `AdditionalFields` | `string` | Additional information about the event  |
 
-[**ADD DESCRIPTION FOR SAMPLE QUERY HERE**]
+View all devices with the Log4Shell vulnerability, where the workaround mitigation hasn't been applied or has been applied and is pending reboot.
 
 ```kusto
-DeviceInfoGathering
-| where OSPlatform startswith "WindowsServer"
-// Ensure using system default Tls version, and that the system default disallows using TLS versions 1.0 and 1.1
-| where AdditionalFields.TlsServer10 != "Disabled" or AdditionalFields.TlsServer11 != "Disabled" or AdditionalFields.SystemDefaultTlsVersions40 != "1"
-| join (
-// Devices having software installed with critical cve, and a zero day
-DeviceTvmSoftwareVulnerabilities
-| where VulnerabilitySeverityLevel == "Critical"
-| join (DeviceTvmSoftwareVulnerabilitiesKB | where IsExploitAvailable == 1) on CveId
-// have active alert in the past 24h
-| join (AlertEvidence | where Timestamp > ago(1d)) on DeviceId
+DeviceTvmInfoGathering
+| where AdditionalFields.Log4JEnvironmentVariableMitigation in ("RebootRequired", "false")
+| join kind=inner (
+    DeviceTvmSoftwareVulnerabilities
+    | where CveId == "CVE-2021-44228"
 ) on DeviceId
-| take 5
+| summarize any(DeviceName), any(AdditionalFields.Log4JEnvironmentVariableMitigation) by DeviceId
 ```
 
 ## Related topics

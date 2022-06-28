@@ -32,7 +32,7 @@ ms.technology: m365d
 >[!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The `DeviceTvmInfoGatheringKB` table in the advanced hunting schema contains metadata for the [Threat & Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) assessment events data collected in the `DeviceTvmInfoGathering` table. The `DeviceTvmInfoGatheringKB` table contains the list of various configuration and attack surface area assessments used by Threat & Vulnerability Management information gathering to assess devices. Use this reference to construct queries that return information from the table.
+The `DeviceTvmInfoGatheringKB` table in the advanced hunting schema contains metadata for the [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) assessment events data collected in the `DeviceTvmInfoGathering` table. The `DeviceTvmInfoGatheringKB` table contains the list of various configuration and attack surface area assessments used by Threat & Vulnerability Management information gathering to assess devices. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -44,7 +44,11 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `Categories` | `string` | List of categories that the information belongs to, in JSON array format  |
 | `DataStructure` | `string` | The data structure of the information gathered  |
 
-[**ADD DESCRIPTION FOR SAMPLE QUERY THAT ALSO USES DEVICETVMINFOGATHERING TABLE HERE**]
+View a list of all available information gathering assessments related to network protocols.
+```kusto
+DeviceTvmInfoGatheringKB 
+| where Categories has "network protocol"
+```
 
 
 
