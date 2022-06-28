@@ -93,7 +93,7 @@ If successful, this method returns 200 - Created response code and [Machine Acti
 
 ### Request
 
-Here is an example of the request.
+Here is an example of the request. If there is no JSON comment added, it will error out with code **400**.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard
