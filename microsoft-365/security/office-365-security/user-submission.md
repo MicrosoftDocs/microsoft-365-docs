@@ -89,6 +89,8 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
           > U.S. Government organizations (GCC, GCC High, and DoD) can only configure **My organization's mailbox**. The other two options are disabled.
           >
           > If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
+          >
+          > If you do phishing simulations using [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product, you need to [configure this mailbox as a SecOps mailbox](configure-advanced-delivery.md). If you don't, reporting messages may trigger training assignments in the phishing simulation product.
 
        Regardless of the value you selected for **Send the reported messages to**, the following settings are available:
 

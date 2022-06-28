@@ -54,8 +54,6 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
 
-    ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-
 4. Choose the DLP policy template that protects the types of sensitive information you want to protect \> **Next**.
 
     To start with an empty template, choose **Custom** \> **Custom policy** \> **Next**.
@@ -124,6 +122,7 @@ You can also use the following tokens to help customize the email notification. 
 |%%AppliedActions%%|The actions applied to the content.|
 |%%ContentURL%%|The URL of the document on the SharePoint Online site or OneDrive for Business site.|
 |%%MatchedConditions%%|The conditions that were matched by the content. Use this token to inform people of possible issues with the content.|
+|%%BlockedMessageInfo%%|The details of the message that was blocked. Use this token to inform people of the details of the message that was blocked.|
 
 ![Notification message showing where tokens appear.](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
 
