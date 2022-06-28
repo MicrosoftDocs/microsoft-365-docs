@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
 ---
 
@@ -43,6 +43,6 @@ The message center is where you can learn about official service announcements a
 [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE4C7Ne)
 
 ## Learn More
-[Track new and changed features in the Microsoft 365 Message center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)
+[Track new and changed features in the Microsoft 365 Message center](../../../admin/manage/message-center.md)
 
 [Track your message center tasks in Planner](/office365/planner/track-message-center-tasks-planner)

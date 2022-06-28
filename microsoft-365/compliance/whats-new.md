@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Purview
+title: What's new in Microsoft Purview risk and compliance solutions
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,7 +20,7 @@ description: Whether it be adding new solutions to the compliance center, updati
 ms.custom: seo-marvel-mar2020
 ---
 
-# What's new in Microsoft Purview
+# What's new in Microsoft Purview risk and compliance solutions
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

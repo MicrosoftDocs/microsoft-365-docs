@@ -25,7 +25,7 @@ For Microsoft Purview eDiscovery (Premium) cases that involve many custodians, y
 
 ## Before you import custodians
 
-- You can import a maximum of 1,000 custodians (rows) per CSV file.
+- You can import a maximum of 1,000 custodians (rows) per CSV file. Note that importing 1,000 custodians at the same time might result in timeout errors and some custodians might fail the import. To remediate this, repeat the import and the failed custodians should be imported. To avoid timeouts we recommend importing 200 custodians at a time.
 
 - You can associate up to 500 data sources for each custodian.  
 
