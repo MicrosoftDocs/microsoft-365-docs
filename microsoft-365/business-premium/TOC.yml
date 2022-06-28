@@ -136,6 +136,8 @@
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: Map protection features to Intune settings
       href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Intune admin roles
+      href: m365bp-intune-admin-roles-in-the-mac.md
     - name: Set up Compliance Manager
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business

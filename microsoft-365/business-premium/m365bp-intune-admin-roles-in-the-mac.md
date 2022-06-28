@@ -24,21 +24,21 @@ description: "The Microsoft 365 admin center lets you manage some Microsoft Intu
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 
-Before adding specific Intune roles, roles must be assigned in AAD. To see these roles, choose **Endpoint Manager > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
+Before adding specific Intune roles, roles must be assigned in Azure AD. To see these roles, choose **Endpoint Manager > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
 
 - Properties: The name, description, permissions, and scope tags for the role.
 - Assignments: A list of role assignments defining which users have access to which users or devices. A role can have multiple assignments, and a user can be in multiple assignments.
 
 ## About roles-based access control in Intune
 
-Role-based access control (RBAC) helps you manage who has access to your organization's resources and what they can do with those resources. By assigning roles to your Intune users, you can limit what they can see and change. There are both built-in and custom roles, and each role has a set of permissions that determine what users with that role can access, or change within your organization. The following information will cover built-in and custom roles within Intune.
+Roles-based access control (RBAC) helps you manage who has access to your organization's resources and what they can do with those resources. By assigning roles to your Intune users, you can limit what they can see and change. There are both built-in and custom roles, and each role has a set of permissions that determine what users with that role can access, or change within your organization. The following information will cover both types of roles in Intune.
 
 To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
 
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-Find more information on [AAD roles and RBAC](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
+Find more information on [Azure Active Directory roles and RBAC](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Intune built-in roles
 
