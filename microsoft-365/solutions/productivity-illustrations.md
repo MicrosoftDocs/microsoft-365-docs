@@ -117,7 +117,7 @@ This poster helps you decide which Microsoft telephony solution is right for use
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft Telephony Solutions poster.](../media/solutions-architecture-center/microsoft-voice-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Updated March 2021 | For more information, see [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page).|
+|[![Microsoft Telephony Solutions poster.](../media/solutions-architecture-center/microsoft-voice-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Updated June 2022 | For more information, see [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page).|
 
 
 ## Set up your infrastructure for hybrid work
