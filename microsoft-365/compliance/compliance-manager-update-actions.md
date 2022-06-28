@@ -41,8 +41,8 @@ This improvement action updating process provides new and existing Compliance Ma
 
 To migrate existing data into Compliance Manager or to perform a bulk update of improvement actions, you can start from one of two places in Compliance Manager:
 
-- From **Assessments** page: allows you to update specific assessments with information from elsewhere, such as test results or evidence or actions that were tested by a separate system. [Visit these instructions below](#updating-actions-from-the-assessments-page).
-- From **Improvement actions** page: allows you to apply updates to multiple actions at one time, such as assigning them to users, changing implementation or test status, adding notes and evidence. [Visit these instructions below](#updating-actions-from-the-improvement-actions-page).
+- From **Assessments** page: Helps you update specific assessments with information from elsewhere, such as test results or evidence for actions that were tested by a separate system. [Visit these instructions below](#updating-actions-from-the-assessments-page).
+- From **Improvement actions** page: Facilitates making updates to multiple actions at one time, such as assigning them to users, changing implementation or test status, adding notes and evidence. [Visit these instructions below](#updating-actions-from-the-improvement-actions-page).
 
 > [!IMPORTANT]
 > - Only the improvement actions managed by your organization, not Microsoft managed actions, can be updated by this process. (Learn more about [types of improvement actions](compliance-score-calculation.md#action-types-and-points).)
