@@ -51,7 +51,7 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 > [!NOTE]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-## Recommended actions (preview)
+## Recommended actions
 
 Recommended actions can help your organization get started with communication compliance capabilities and get the most out of your existing policies. Included on the **Policies** page, recommended actions provide insights and summarizes sensitive information types and inappropriate content activities in communications in your organization. Insights are supported by [data classification](data-classification-overview.md) and the application of sensitivity labels, retention labels, and sensitive information type classification. These insights don't include any personally identifiable information (PII) for users in your organization.
 
@@ -240,7 +240,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
-    - Choose the communication channels to scan, including Exchange, Microsoft Teams, Yammer, or Skype for Business. You'll also choose to scan third-party sources if you've configured a connector in Microsoft 365.
+    - Choose the communication channels to scan, including Exchange, Microsoft Teams, or Yammer. You'll also choose to scan third-party sources if you've configured a connector in Microsoft 365.
 
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
 
@@ -316,7 +316,7 @@ Follow these steps to test your communication compliance policy:
 2. Send an email, Microsoft Teams chat, or Yammer message that meets the criteria you've defined in the communication compliance policy. This test can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 
     > [!NOTE]
-    > Email messages can take up to 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take up to 48 hours to fully process in a policy.
+    > Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take approximately 48 hours to fully process in a policy.
 
 3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 

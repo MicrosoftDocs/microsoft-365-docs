@@ -3,7 +3,7 @@ title: "Hybrid Modern Authentication overview and prerequisites for use with on-
 ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article

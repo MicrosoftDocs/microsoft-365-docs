@@ -2,7 +2,7 @@
 title: "Exchange 2007 end of support roadmap"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual

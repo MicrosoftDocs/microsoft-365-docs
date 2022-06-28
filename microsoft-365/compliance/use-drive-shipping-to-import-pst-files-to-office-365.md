@@ -321,7 +321,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the compliance portal, click **Information governance > Import**.
+2. In the left navigation pane of the compliance portal, click **Data lifecycle management** > **Import**.
 
 3. On the **Import** tab, click the job for the drive shipment that you want to enter the tracking number for.
 
@@ -386,7 +386,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the compliance portal, click **Information governance > Import**.
+2. In the left pane of the compliance portal, click **Data lifecycle management** > **Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 

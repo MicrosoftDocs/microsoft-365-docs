@@ -14,9 +14,9 @@ metadata:
   ms.custom: 
   - AdminSurgePortfolio
   - intro-hub-or-landing
-  author: efrene #Required; your GitHub user alias, with correct capitalization.
-  ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/08/2022
+  author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
+  ms.author: deniseb #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/12/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -65,31 +65,31 @@ conceptualContent:
           text: Compare Microsoft 365 for business plans
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: Microsoft 365 for business FAQ
-        - url: ../business-video/index.yml
-          itemType: video
-          text: Microsoft 365 for business training videos
+          text: Microsoft 365 Business Premium FAQ
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: Get Microsoft 365 Business Premium
-        - url: ../business-premium/m365bp-setup-overview.md
+        - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: 1. Complete the basic setup process
         - url: ../business-premium/m365bp-security-overview.md
           itemType: overview
-          text: 2. Protect your environment
+          text: 2. Bump up security
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: 3. Set up personal (unmanaged) devices
+          text: 3. Set up unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-protect-email-overview.md
           itemType: overview
           text: 4. Use email more securely
         - url: ../business-premium/m365bp-collaborate-share-securely.md
           itemType: overview
           text: 5. Collaborate and share more securely
+        - url: ../business-premium/m365bp-protect-devices.md
+          itemType: how-to-guide
+          text: 6. Set up and secure managed devices
         - url: ../business-premium/m365bp-maintain-environment.md
           itemType: overview
           text: Maintain your environment
@@ -130,9 +130,12 @@ conceptualContent:
   # Card
     - title: Protect devices
       links:
+        - url: ../security/defender-business/index.yml
+          itemType: overview
+          text: Get started with Microsoft Defender for Business
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: Protect personal (unmanaged) devices
+          text: Set up unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-multifactor-authentication.md
           itemType: how-to-guide
           text: Set up multi-factor authentication on devices
@@ -149,10 +152,13 @@ conceptualContent:
   # Card
     - title: Protect email content and Office files
       links:
+        - url: ..//security/office-365-security/index.yml
+          itemType: overview
+          text: Get started with Microsoft Defender for Office 365
         - url: ../business-premium/m365bp-increase-protection.md
           itemType: how-to-guide
-          text: Set up your security policies
-        - url: ../business-premium/avoid-phishing-and-attacks.md
+          text: Protect against phishing, malware, and other threats
+        - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md
           itemType: how-to-guide
           text: Know what to watch for in email content
         - url: ../business-premium/send-encrypted-email.md
@@ -174,6 +180,9 @@ conceptualContent:
         - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
           itemType: video
           text: Get help
+        - url: ../business-video/index.yml
+          itemType: video
+          text: Microsoft 365 for business training videos
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
           itemType: overview
           text: Send feedback

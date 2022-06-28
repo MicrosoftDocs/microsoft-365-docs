@@ -43,6 +43,7 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |data exfiltration |Data files that are stolen and sent outside the network through email or other means. |
 |Defender |Microsoft's antivirus software, Microsoft Defender Antivirus. Go here for more information about [Microsoft Defender](https://support.microsoft.com/topic/.getting-started-with-microsoft-defender-9df0cb0f-4866-4433-9cbc-f83e5cf77693).|
 |Device Group |A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft 365 Business Premium (and Defender for Business), Device groups are stored in Azure Active Directory. |
+|device management |Device management is when the organization is actively protecting resources and data on all laptops, PCs, tablets and mobile devices in the organization.|
 |encryption |Encryption is the process by which information is encoded so that only an authorized recipient can decode and consume the information. |
 |exploit |A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. |
 |firewall |A Firewall is a security system to protect an internal network from unauthorized servers and networks based on predefined rules. It acts as a barrier and only allows the secured network to send or receive data. |

@@ -1,8 +1,8 @@
 ---
-title: "Navigation options for SharePoint Online"
+title: Navigation options for SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
@@ -74,7 +74,7 @@ Under **Site Settings** > **Look and Feel** > **Navigation**, you can validate i
 
 Caching can be enabled or disabled at the site collection level and at the site level, and is enabled for both by default. To enable at the site collection level, under **Site Settings** > **Site Collection Administration** > **Site Collection Navigation**, check the box for **Enable caching**.
 
-![Enable caching at site level.](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Enable caching at site collection level.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 To enable at the site level, under **Site Settings** > **Navigation**, check the box for **Enable caching**.
 
@@ -471,7 +471,7 @@ The [above code](#about-the-javascript-file) has the following dependencies:
 
 - jQuery - https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
-- Linq.js - https://linqjs.codeplex.com/, or github.com/neuecc/linq.js
+- Linq.js - `https://linqjs.codeplex.com/`, or github.com/neuecc/linq.js
 
 The current version of LinqJS does not contain the ByHierarchy method used in the above code and will break the navigation code. To fix this, add the following method to the Linq.js file before the line `Flatten: function ()`.
 

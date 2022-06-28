@@ -2,7 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
-### [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
+### [Compare Defender for Endpoint plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Preview features](preview.md)
@@ -54,7 +54,6 @@
 
 ##### [Onboard previous versions of Windows](onboard-downlevel.md)
 
-
 ##### [Onboard Windows devices and Windows Servers]()
 ###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
@@ -64,9 +63,6 @@
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 ###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 
-
-
-
 #### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
@@ -74,8 +70,6 @@
 #### [Run simulated attacks on devices](attack-simulations.md)
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
-
-
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -101,6 +95,7 @@
 ###### [Configure and validate exclusions](mac-exclusions.md)
 ###### [Set preferences](mac-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](mac-pua.md)
+###### [Protect macOS security settings using tamper protection](tamperprotection-macos.md)
 ###### [Device control]()
 ####### [Device control overview](mac-device-control-overview.md)
 ####### [JAMF examples](mac-device-control-jamf.md)
@@ -116,7 +111,6 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
@@ -136,7 +130,6 @@
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
-
 
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
@@ -183,17 +176,12 @@
 
 ###### [Privacy](ios-privacy.md)
 
-
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
 #### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
 #### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
-
-
-
-
 
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
@@ -229,29 +217,7 @@
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
 ## [Detect threats and protect endpoints]()
-### [Threat & vulnerability management]()
-#### [Overview](next-gen-threat-and-vuln-mgt.md)
-#### [Get started]()
-##### [Permissions & prerequisites](tvm-prerequisites.md)
-##### [Supported operating systems platforms and capabilities](tvm-supported-os.md)
-##### [Assign device value](tvm-assign-device-value.md)
-#### [Assess your security posture]()
-##### [Dashboard insights](tvm-dashboard-insights.md)
-##### [Exposure score](tvm-exposure-score.md)
-##### [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
-#### [Improve your security posture & reduce risk]()
-##### [Address security recommendations](tvm-security-recommendation.md)
-##### [Remediate vulnerabilities](tvm-remediation.md)
-##### [Exceptions for security recommendations](tvm-exception.md)
-##### [Plan for end-of-support software](tvm-end-of-support-software.md)
-##### [Mitigate zero-day vulnerabilities](tvm-zero-day-vulnerabilities.md)
-#### [Understand vulnerabilities on your devices]()
-##### [Software inventory](tvm-software-inventory.md)
-##### [Vulnerabilities in my organization](tvm-weaknesses.md)
-##### [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-##### [Vulnerable devices report](tvm-vulnerable-devices-report.md)
-##### [Hunt for exposed devices](tvm-hunt-exposed-devices.md)
-
+### [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
@@ -363,6 +329,10 @@
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
+#### Troubleshooting mode for Defender for Endpoint
+##### [Get started with troubleshooting mode](enable-troubleshooting-mode.md)
+##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
+
 #### Diagnostics and performance for Microsoft Defender Antivirus
 ##### [Device health and compliance reports](machine-reports.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
@@ -393,14 +363,15 @@
 ##### [Client behavioral blocking](client-behavioral-blocking.md)
 ##### [Feedback-loop blocking](feedback-loop-blocking.md)
 
-
 ### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
-
 
 ### [Manage device configuration]()
 
 #### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
 #### [Optimize attack surface reduction rule deployment and detections](configure-machines-asr.md)
+
+## [Guidance for active threats and campaigns]()
+### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
@@ -435,6 +406,7 @@
 ###### [Run antivirus scan](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
 ###### [Restrict app execution](respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate devices from the network](respond-machine-alerts.md#isolate-devices-from-the-network)
+###### [Contain devices from the network](respond-machine-alerts.md#contain-devices-from-the-network)
 ###### [Consult a threat expert](respond-machine-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](respond-machine-alerts.md#check-activity-details-in-action-center)
 
@@ -518,7 +490,6 @@
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
 
-
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
 ####### [Export secure configuration assessment](get-assessment-secure-config.md)
@@ -530,6 +501,9 @@
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
+
+###### [Certificate inventory]()
+####### [Export certificate inventory assessment](export-certificate-inventory-assessment.md)
 
 ###### [Domain]()
 ####### [Get domain related alerts](get-domain-related-alerts.md)
@@ -560,7 +534,6 @@
 ####### [Upload to live response library](upload-library.md)
 ####### [Delete from library](delete-library.md)
 
-
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
 ####### [List machines](get-machines.md)
@@ -576,8 +549,6 @@
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 ####### [Update machine](update-machine-method.md)
-
-
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)
@@ -615,6 +586,11 @@
 ####### [List exposure score by machine group](get-machine-group-exposure-score.md)
 ####### [Get exposure score](get-exposure-score.md)
 ####### [Get device secure score](get-device-secure-score.md)
+
+###### [Security baselines]()
+####### [Export security baselines assessment](export-security-baseline-assessment.md)
+####### [List security baselines assessment profiles](get-security-baselines-assessment-profiles.md)
+####### [List security baselines assessment configurations](get-security-baselines-assessment-configurations.md)
 
 ###### [Software]()
 ####### [Software methods and properties](software.md)
@@ -734,4 +710,5 @@
 ## [Defender for Identity](/defender-for-identity/)
 ## [Defender for Cloud Apps](/cloud-app-security/)
 ## [Defender for Business](../defender-business/index.yml)
+## [Defender Vulnerability Management](../defender-vulnerability-management/index.yml) 
 

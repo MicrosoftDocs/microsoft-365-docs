@@ -9590,9 +9590,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Keywords
 
-Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for the term, not the insurance codes.
+Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for the term, not the insurance codes.
 
-Any term from the Dictionary_icd_10_codes keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for insurance codes, not the description.
+Any term from the Dictionary_icd_10_codes keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for insurance codes, not the description.
 
 ## International classification of diseases (ICD-9-CM)
 

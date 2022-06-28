@@ -40,11 +40,17 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## May 2022
+- (Preview) In line with the recently announced expansion into a new service category called [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), we're introducing the availability of [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) for public preview. Defender Experts for Hunting is for customers who have a robust security operations center but want Microsoft to help them proactively hunt for threats across Microsoft Defender data, including endpoints, Office 365, cloud applications, and identity. 
 
+## April 2022
+- (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email messages straight from hunting query results. Emails can be moved to other folders or deleted permanently. 
+- (Preview) The new [`UrlClickEvents` table](advanced-hunting-urlclickevents-table.md) in advanced hunting can be used to hunt for threats like phishing campaigns and suspicious links based on information coming from Safe Links clicks in email messages, Microsoft Teams, and Office 365 apps.
 
 ## March 2022
 
 - (Preview) The incident queue has been enhanced with several features designed to help your investigations. Enhancements include capabilities such as ability to search for incidents by ID or name, specify a custom time range, and others.
+
 
 ## December 2021
 

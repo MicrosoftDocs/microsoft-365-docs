@@ -48,6 +48,7 @@ To qualify for the MVI program, your organization must meet all the following re
 |SKD Labs|Certification Requirements Product: Anti-virus or Antimalware </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SKD Labs Star Check Certification Requirements Pass >= 98.5% with On Demand, On Access and Total Detection tests|
 |VB 100|VB100 Certification Test V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 Certification|
 |West Coast Labs|Checkmark Certified </br> <http://www.checkmarkcertified.com/sme/>|"A" Rating on Product Security Performance|
+|SE Labs|Protection, Small Business or Enterprise EP Protection Test  </br> <https://selabs.uk/en/reports/consumers/>|Protection A rating or Small Business EP A rating or Enterprise EP Protection A rating |
 
 ## Apply now
 

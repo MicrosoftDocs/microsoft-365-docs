@@ -15,9 +15,9 @@ description: Learn about the default labels and policies for Microsoft Purview I
 
 # Default labels and policies to protect your data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Eligible customers can activate default labels and policies for Microsoft Purview Information Protection: 
 
@@ -130,9 +130,9 @@ Service-side auto-labeling helps label sensitive documents at rest, and emails i
 
 The default service-side auto-labeling has the following configuration: 
 
-- If there are 1-9 instances of credit card numbers found in a document, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
+- If there are 1-9 instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
 
-- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential** \ **All Employees** 
+- If there are 10 or more instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.

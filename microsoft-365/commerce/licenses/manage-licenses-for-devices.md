@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid: MET150
-ms.date: 08/27/2021
+ms.date: 05/12/2022
 ---
 # Manage licenses for devices
 

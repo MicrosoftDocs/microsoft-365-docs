@@ -26,7 +26,7 @@ Your licensing agreement to use Compliance Manager may include one or more built
 
 ## Terms and conditions
 
-See the [terms and conditions](terms-conditions.md) for Microsoft Purview trials.
+See the [terms and conditions](/legal/microsoft-365/microsoft-365-trial) for Microsoft 365 trials.
 
 ## Set up a premium assessment trial
 

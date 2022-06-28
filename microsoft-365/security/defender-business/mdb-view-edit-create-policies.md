@@ -1,13 +1,12 @@
 ---
 title: View or edit policies in Microsoft Defender for Business
-description: Learn how to view, edit, create, and delete next-generation protection policies in Microsoft Defender for Business
+description: Learn how to view, edit, create, and delete cybersecurity policies in Defender for Business. Protect your devices with security policies.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -21,9 +20,6 @@ ms.collection:
 
 # View or edit policies in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 In Microsoft Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
 
 **This article describes how to**:
@@ -33,10 +29,6 @@ In Microsoft Defender for Business, security settings are configured through pol
 - [Edit an existing policy](#edit-an-existing-policy)
 - [Create a new policy](#create-a-new-policy)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Default policies in Defender for Business
 

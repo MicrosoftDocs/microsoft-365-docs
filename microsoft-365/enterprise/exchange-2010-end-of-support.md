@@ -2,7 +2,7 @@
 title: "Exchange 2010 end of support roadmap"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration

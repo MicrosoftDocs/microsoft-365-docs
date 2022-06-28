@@ -139,5 +139,4 @@ If you want to offboard a device, use one of the following procedures:
 
 ## Next objective
 
-Take time to [review and edit poicies](m365bp-view-edit-create-mdb-policies.md).
-
+[Set up protection for your Windows devices](m365bp-protection-settings-for-windows-10-devices.md).

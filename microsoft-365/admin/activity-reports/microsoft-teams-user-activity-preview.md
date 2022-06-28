@@ -37,7 +37,7 @@ You can view the user activity in the Teams report by choosing the **User activi
 
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns.](../../media/user-activity-columns.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you'll need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
 
 The **Microsoft Teams user activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
 
@@ -79,8 +79,8 @@ To make the data in Teams user activity report anonymous, you have to be a globa
 
 3. Select **Save changes**.
 
+## Related content
 
-## See also
 [Microsoft Teams device usage report](../activity-reports/microsoft-teams-device-usage-preview.md)
 
 [Microsoft Teams usage activity report](../activity-reports/microsoft-teams-usage-activity.md) 

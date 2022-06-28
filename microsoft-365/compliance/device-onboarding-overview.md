@@ -138,24 +138,6 @@ Topic | Description
 [Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
 [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
 
-Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
-
-### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
-
-1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and choose Alerts.
-
-2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
-
-### Viewing Endpoint DLP data in activity explorer
-
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft Purview compliance portal and choose Activity explorer.
-
-2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
-
-   > [!div class="mx-imgBorder"]
-   > ![activity explorer filter for endpoint devices.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
-
-
 ## See also
 
 - [Learn about insider risk management](insider-risk-management.md)

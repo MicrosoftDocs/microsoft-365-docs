@@ -1,13 +1,12 @@
 ---
 title: Review remediation actions in Microsoft Defender for Business
-description: View remediations that were taken automatically or that are awaiting approval in the Action center
+description: View remediations that were taken on detected threats with Defender for Business. You can view actions in the Action center in the Microsoft 365 Defender portal.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -21,9 +20,6 @@ ms.collection:
 
 # Review remediation actions in the Action center
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
 
 :::image type="content" source="../../media/defender-business/mdb-actioncenter.png" alt-text="Screenshot of the Action center":::
@@ -33,10 +29,6 @@ As threats are detected, remediation actions come into play. Depending on the pa
 - [How to use the Action center](#how-to-use-the-action-center)
 - [Remediation actions](#remediation-actions)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## How to use the Action center
 

@@ -1,17 +1,16 @@
 ---
 title: Firewall in Microsoft Defender for Business
-description: Learn about Windows Defender Firewall in Microsoft Defender for Business, including configuration settings
+description: Learn about Windows Defender Firewall settings in Defender for Business. Firewall can help prevent unwanted network traffic from flowing to your company devices.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -19,9 +18,6 @@ ms.collection:
 ---
 
 # Firewall in Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender for Business includes firewall capabilities with [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Firewall protection helps secure devices with rules that determine which network traffic is permitted to enter or flow from devices. 
 
@@ -32,10 +28,6 @@ You can use firewall protection to specify whether to allow or block connections
 - [Default firewall settings in Defender for Business](#default-firewall-settings-in-defender-for-business)
 - [Firewall settings you can configure in Defender for Business](#firewall-settings-you-can-configure-in-defender-for-business)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Default firewall settings in Defender for Business
 

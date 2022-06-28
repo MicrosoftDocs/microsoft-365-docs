@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 Content Search and eDiscovery-related activities (for Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium)) that are performed in Microsoft Purview compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and eDiscovery (Standard) tasks in the compliance portal:
   
-- Creating and managing Core and eDiscovery (Premium) cases
+- Creating and managing eDiscovery (Standard) and eDiscovery (Premium) cases
 
 - Creating, starting, and editing Content searches
 
@@ -148,7 +148,7 @@ The following table describes the eDiscovery (Premium) activities logged in the 
 
 ## eDiscovery cmdlet activities
 
-The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the compliance center or by running the corresponding cmdlet in Security & Compliance Center PowerShell. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
+The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the compliance center or by running the corresponding cmdlet in Security & Compliance PowerShell. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
   
 As previously stated, it may take up to 24 hours for eDiscovery cmdlet activities to appear in the audit log search results.
   

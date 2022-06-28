@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection for Microsoft 365 for Business"
+title: "Increase threat protection for Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 description: "Set up Microsoft Defender for Office 365 and safeguard sensitive data against phishing, malware, and other threats."
 ---
-# Increase threat protection
+# Increase threat protection for Microsoft 365 for business
 
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like law offices and health care clinics.
 

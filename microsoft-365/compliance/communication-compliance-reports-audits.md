@@ -45,7 +45,7 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 
 ### Detailed reports
 
-Use the *Export* option to create a .csv file containing the report details for any detailed report.
+Use the *Export* option to create a .csv file containing the report details for any detailed report. The *Export* report option supports file size downloads up to 3 MB.
 
 - **Policy settings and status**: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Includes policy information and how policies are associated with users and groups, locations, review percentages, reviewers, status, and when the policy was last modified. Use the *Export* option to create a .csv file containing the report details.
 - **Items and actions per policy**: Review and export matching items and remediation actions per policy. Includes policy information and how policies are associated with:
@@ -88,7 +88,6 @@ Use the *Export* option to create a .csv file containing the report details for 
 
     - **Email**: Sensitive information types detected in Exchange email messages.
     - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
-    - **Skype for Business**: Sensitive information types detected in Skype for business communications.
     - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
     - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
     - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.

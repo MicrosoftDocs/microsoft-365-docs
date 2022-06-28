@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -28,7 +29,7 @@ Make sure you and your customer tenants meet the requirements listed in [Require
 
 ## View a deployment plan
 
-1. In the left navigation page, select **Tenants**.
+1. In the left navigation pane in Lighthouse, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 

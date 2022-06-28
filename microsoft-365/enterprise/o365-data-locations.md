@@ -1,8 +1,9 @@
 ---
 title: "Microsoft 365 data locations"
-ms.author: deanw
-author: dmwmsft
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -23,9 +24,9 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 
 The tables below shows where customer data is stored at-rest for Microsoft 365 services across all of Microsoft's global cloud locations. Expand the location of your billing address country to find out where customer data for each service would be stored.
 
-If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information. 
+If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information.
 
-Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**. If you [requested to move to a new Geo](request-your-data-move.md), the data location information in the Microsoft 365 admin center may show only your new Geo even though some data may be stored temporarily in your prior Geo during the transition. 
+Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**. If you [requested to move to a new Geo](request-your-data-move.md), the data location information in the Microsoft 365 admin center may show only your new Geo even though some data may be stored temporarily in your prior Geo during the transition.
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
 
@@ -33,89 +34,121 @@ Find information about the contractual commitments for the storage location of c
 
 For Azure Active Directory data locations, please visit [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
-If Customer’s billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer’s billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
-
-
-
+If Customer's billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer's billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
 
 ## FAQ
 
 ### How does Microsoft define data?
+<details><summary>Click to expand</summary>
 
 Review our [definitions for different types of data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft makes contractual commitments regarding customer data/your data. We refer to core customer data as the customer data that is committed to be stored at rest only within your region according to the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
+</details>
+
 ### Where are the exact addresses of the data centers?
+
+<details><summary>Click to expand</summary>
 
 Microsoft does not disclose the exact addresses of its data centers. We established this policy to help secure our data center facilities.  However, we do list city locations. Please see [Data Center Locations](o365-data-locations.md#data-center-locations) to learn more.
 
+</details>
+
 ### Does the location of your customer data have a direct impact on your end users' experience?
+<details><summary>Click to expand</summary>
 
 The performance of Microsoft 365 is not simply proportional to a user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](./network-planning-and-performance.md).
 
+</details>
+
 ### How does Microsoft help me comply with my national, regional, and industry-specific regulations?
+<details><summary>Click to expand</summary>
 
 To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help you manage your data, comply with legal and regulatory requirements, and monitor actions taken on your data.
 
+</details>
+
 ### Who can access your data and according to what rules?
+<details><summary>Click to expand</summary>
 
  Microsoft implements strong measures to help protect your customer data from inappropriate access or use by unauthorized persons. This includes restricting access by Microsoft personnel and subcontractors, and carefully defining requirements for responding to government requests for customer data. However, you can access your own customer data at any time and for any reason. More details are available on the [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?linkid=864392).
 
+</details>
+
 ### Does Microsoft access your data?
+<details><summary>Click to expand</summary>
 
 Microsoft automates most Microsoft 365 operations while intentionally limiting its own access to customer data. This helps us manage Microsoft 365 at scale and address the risks of internal threats to customer data. By default, Microsoft engineers have no standing administrative privileges and no standing access to customer data in Microsoft 365. A Microsoft engineer may have limited and logged access to customer data for a limited amount of time, but only when necessary for normal service operations and only when approved by a member of senior management at Microsoft (and, for customers who are licensed for the Customer Lockbox feature, by the customer).
 
+</details>
+
 ### How does Microsoft secure your data?
+<details><summary>Click to expand</summary>
 
 Microsoft has robust policies, controls, and systems built into Microsoft 365 to help keep your information safe. Review the [Microsoft 365 security section](https://go.microsoft.com/fwlink/p/?linkid=864393) on the Microsoft Trust Center to learn more.
 
+</details>
+
 ### Does Microsoft 365 encrypt your data?
+<details><summary>Click to expand</summary>
 
 Microsoft 365 uses service-side technologies that encrypt customer data at rest and in transit. For customer data at rest, Microsoft 365 uses volume-level and file-level encryption. For customer data in transit, Microsoft 365 uses multiple encryption technologies for communications between data centers and between clients and servers, such as Transport Layer Security (TLS) and Internet Protocol Security (IPsec). Microsoft 365 also includes customer-managed encryption features.
 
+</details>
+
 ### Where can I find data residency information for Microsoft Azure?
+<details><summary>Click to expand</summary>
 
 Please review the [Products available by region](https://go.microsoft.com/fwlink/p/?linkid=2093451) page to find data residency information for Microsoft Azure.
 
-### What are Multi-Geo Capabilities in Microsoft 365?
+</details>
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) gives customers the ability to allocate core customer data at rest to our available locations in the Microsoft 365 cloud.   
+### What are Multi-Geo Capabilities in Microsoft 365?
+<details><summary>Click to expand</summary>
+
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) gives customers the ability to allocate core customer data at rest to our available locations in the Microsoft 365 cloud.
+
+</details>  
 
 ### What services support Multi-Geo?
+<details><summary>Click to expand</summary>
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive for Business, SharePoint Online, and Teams.
 
+</details>
+
 ### Why do I see my Microsoft 365 service requests for my data at rest connecting to servers in countries outside of my region?
+<details><summary>Click to expand</summary>
 
 On occasion, a customer request may be handled by servers in a different region than the location where your data is stored at rest. This may happen where network routing decisions choose a different server for the request processing, but in these cases your data is not moved to a new at rest location.
 
-### What are the exceptions for Intune data locations?
+</details>
 
-Microsoft will not store Intune customer data at rest outside the stated Geo. except if:
+### What are the exceptions for Intune data locations?
+<details><summary>Click to expand</summary>
+
+Microsoft will not store Intune customer data at rest outside the stated geo, except if:
 
 - It is necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
 - The customer configures an account to enable such storage of customer data, including through the use of the following:
-
   - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
-
   - Azure Active Directory (Azure AD), which may store directory data globally. This does not apply to Azure AD deployments in the United States (where Azure AD data is stored solely in the United States) or in Europe (where Azure AD data is stored in Europe or the United States).
-   
   - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally.
 
-Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service’s own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.  
+Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
+
+</details>
 
 ### What are the considerations for Microsoft Viva data locations?
+<details><summary>Click to expand</summary>
 
 - Viva Connections
-
-  - Data for the Dashboard, Resources, and desktop app is stored in SharePoint Online. 
-  
-  - The Feed includes content from SharePoint Online (News), Stream (stored at rest in SharePoint Online), and Yammer (stored at rest in Yammer).  
-  
+  - Data for the Dashboard, Resources, and desktop app is stored in SharePoint Online.
+  - The Feed includes content from SharePoint Online (News), Stream (stored at rest in SharePoint Online), and Yammer (stored at rest in Yammer).
 - Viva Insights
-
   - Data residency for the Personal app is based on the user's mailbox location.
-  
   - The data region for Manager/Leader and Advanced is determined by the primary region of the tenant, not individual users.
+
+</details>
 
 ## Data Center Locations
 
@@ -123,7 +156,7 @@ The table below defines the data location for various services. When determining
 
 ### Data Center Geographies
 
-The following global geographies can store data at rest. The locations where customer data may be stored can change. 
+The following global geographies can store data at rest. The locations where customer data may be stored can change.
 
 | Global Geographies | Locations where customer data may be stored |
 | --- | --- |
@@ -715,7 +748,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Belarus
 <details><summary>Click to expand</summary><p>
@@ -1585,7 +1617,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Congo (Brazzaville)
 <details><summary>Click to expand</summary><p>
 
@@ -1614,7 +1645,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Congo, (Kinshasa)
 <details><summary>Click to expand</summary><p>
 
@@ -1642,7 +1672,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Cook Islands
 <details><summary>Click to expand</summary><p>
@@ -2596,7 +2625,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Greenland
 <details><summary>Click to expand</summary><p>
 
@@ -3072,7 +3100,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## India
 <details><summary>Click to expand</summary><p>
@@ -3662,7 +3689,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Lesotho
 <details><summary>Click to expand</summary><p>
 
@@ -3690,7 +3716,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Liberia
 <details><summary>Click to expand</summary><p>
@@ -3747,7 +3772,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Liechtenstein
 <details><summary>Click to expand</summary><p>
@@ -4449,7 +4473,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Nepal
 <details><summary>Click to expand</summary><p>
 
@@ -4477,7 +4500,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Netherlands
 <details><summary>Click to expand</summary><p>
@@ -4534,7 +4556,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## New Caledonia
 <details><summary>Click to expand</summary><p>
@@ -5268,7 +5289,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 ## Russian Federation
 <details><summary>Click to expand</summary><p>
 
-
 | Service | Location |
 | --- | --- |
 | Exchange Online | Global Geography 1 – EMEA |
@@ -5297,7 +5317,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 ## Rwanda
 <details><summary>Click to expand</summary><p>
 
-
 | Service | Location |
 | --- | --- |
 | Exchange Online | Global Geography 1 – EMEA |
@@ -5325,7 +5344,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 ## Saint Helena
 <details><summary>Click to expand</summary><p>
-
 
 | Service | Location |
 | --- | --- |
@@ -5886,7 +5904,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 ## Somalia
 <details><summary>Click to expand</summary><p>
-
 
 | Service | Location |
 | --- | --- |
@@ -6863,7 +6880,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Vietnam
 <details><summary>Click to expand</summary><p>

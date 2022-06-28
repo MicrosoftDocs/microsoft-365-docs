@@ -2,7 +2,7 @@
 title: "Microsoft 365 tenant-to-tenant migrations"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
