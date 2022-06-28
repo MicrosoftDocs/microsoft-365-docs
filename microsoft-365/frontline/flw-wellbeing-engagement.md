@@ -99,6 +99,50 @@ Use [Adaptive card templates](/adaptive-cards/templating/), the [Card designer](
 
 ## Create communities with Yammer
 
+Yammer is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can post messages and communicate. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization. Communities can be based on:
+
+- Location
+- Roles, such as cashiers or nurses
+- Interests, such as outdoor activities or pop culture
+- Identity groups
+- And more
+
+### Host live events
+
+Members of your leadership or management team can host live events on Yammer where employees can engage and ask questions in real time over chat. Your communications and management teams can use live events to share announcements, host morale events, and more.
+
+[Learn more about Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c).
+
 ## Boost morale with Praise
 
-## Support engagement with SharePoint and Microsoft Stream 
+The Praise app in Microsoft Teams lets managers and employees to congratulate each other and share appreciation by sending badges in Teams chat and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
+
+[Learn how to manage Praise for your organization](/microsoftteams/manage-praise-app).
+
+## Support engagement with SharePoint and Microsoft Stream
+
+One of the biggest struggles for frontline workers is feeling included in the broader organization. By recording important meetings in SharePoint and hosting videos in Microsoft Stream.
+
+### Record Teams meetings and store them in SharePoint
+
+If your organization already uses Microsoft Teams, you may have recorded some of your meetings so that team members can catch up on meetings that they missed. Recording meetings can also benefit your frontline team by making them feel included in the organization. Some ways you can use recorded meetings to help frontline teams include:
+
+- Give them earlier access to announcements such as product releases and new policies.
+- Help them understand your organization's broader business goals.
+- Familiarize them with the leadership team that drives decisions that affect them.
+
+[Learn how to record Teams meetings and store them in SharePoint](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24).
+
+Once a meeting is recorded and saved in SharePoint, your corporate communications team can [add a card in Viva Connections](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards) to make it easily accessible for your frontline team.
+
+### Host live events and share content on Microsoft Stream
+
+Microsoft Stream is your organization's own streaming video platform. With Stream, anyone in your organization can record and upload videos to share. Ways you can use Stream to engage your frontline workers include:
+
+- Share announcements such as product releases and new policies so your frontline team isn't the last to know.
+- Members of the leadership team can introduce themselves and discuss their goals so your frontline team understands who drives decisions and why.
+- Frontline teams from different locations can create videos introducing themselves and showcasing their location so workers in different places can feel connected.
+
+[Learn more about Microsoft Stream](https://support.microsoft.com/office/explore-stream-87a7d1e2-ef0e-44c6-88dc-74b23266cfc0).
+
+Your corporate communications team can make sure everyone has easy access to stream videos by [adding a card in Viva Connections](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards).
