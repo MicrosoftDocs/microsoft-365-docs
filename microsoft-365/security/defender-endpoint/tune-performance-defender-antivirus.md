@@ -103,7 +103,7 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 
 - Supported Windows versions: Windows 10, Windows 11, and Windows Server 2016 and above
 - Platform Version: 4.18.2108.7+
-- PowerShell Version: PowerShell Version 5.1, PowerShell ISE, Remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
+- PowerShell Version: PowerShell Version 5.1, PowerShell ISE, remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## PowerShell reference
 
@@ -150,7 +150,7 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 The above command collects a performance recording and saves it to the specified path: **.\Defender-scans.etl**.
 
-##### Example 2: Collect a performance recording for Remote PowerShell session
+##### Example 2: Collect a performance recording for remote PowerShell session
 
 ```powershell
 $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
@@ -160,9 +160,11 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 The above command collects a performance recording on Server02 (as specified by argument $s of parameter Session) and saves it to the specified path: **C:\LocalPathOnServer02\trace.etl** on Server02.
 
 ##### Example 3: Collect a performance recording in non-interactive mode
+
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
 ```
+
 The above command collects a performance recording for the duration in seconds specified by parameter -Seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
 
 #### Parameters: New-MpPerformanceRecording
@@ -192,6 +194,7 @@ Accept wildcard characters: False
 ```
 
 ##### -Seconds
+
 Specifies the duration of the performance recording in seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
 
 ```yaml
@@ -280,11 +283,13 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+
 ##### Example 5: Using -Raw parameter
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
+
 Using -Raw in the above command specifies that the output should be machine readable and readily convertible to serialization formats like JSON
 
 #### Parameters: Get-MpPerformanceReport
@@ -312,9 +317,10 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+
 ##### -Raw
 
-Specifies that output of performance recording should be machine readable and readily convertible to serialization formats like JSON (for example, via Convert-to-JSON command). This is recommended for users interested in batch processing with other data processing systems. 
+Specifies that output of performance recording should be machine readable and readily convertible to serialization formats like JSON (for example, via Convert-to-JSON command). This is recommended for users interested in batch processing with other data processing systems.
 
 ```yaml
 Type: <SwitchParameter>

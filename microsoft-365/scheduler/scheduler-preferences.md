@@ -16,7 +16,7 @@ Scheduler uses several Outlook preferences to schedule a meeting for an organize
 
 ## Supported settings
 
-- **Time zone**. The time zone Scheduler users to determine an appropriate time for meetings. See [Add, remove, or change time zones](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) for information.
+- **Time zone**. The time zone Scheduler uses to determine an appropriate time for meetings. See [Add, remove, or change time zones](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) for information.
 
 - **Work hours and days**. For most meeting types, Scheduler selects a time according to the organizer's work week and meeting hours preferences. See [Change your work hours and days in Outlook](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f) for information.
 
