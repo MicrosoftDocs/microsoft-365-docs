@@ -104,7 +104,7 @@ This section displays all available documents. Select the documents to save into
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
 
-![Service Trust Portal - Search on Documents with filter applied.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - Search on Documents with filter applied.](../media/86b754e1-c63c-4514-89ac-d014bf334140-2.png)
 
 By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, and regions. Click the document name link to download the document.
 
