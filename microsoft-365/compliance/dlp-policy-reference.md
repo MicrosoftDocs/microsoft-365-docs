@@ -537,6 +537,9 @@ For example, content like an Excel workbook on a OneDrive for Business site that
 |Teams    |- Not supported |
 |OneDrive for Business   |- Supported         |
 |OneDrive for Business + Devices     |- Supported for OneDrive for Business </br>- Not supported for Devices         |
+|Power-BI|- Not supported|
+|Microsoft Defender for Cloud Apps|- Not supported|
+|On-premises repositories|- Not supported|
 
 You can also give people the option to [override the policy](#user-overrides), so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 
