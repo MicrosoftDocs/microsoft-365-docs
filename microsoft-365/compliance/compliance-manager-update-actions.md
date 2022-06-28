@@ -64,7 +64,7 @@ If you're new to Compliance Manager, follow these steps to bring your existing c
 
 Follow the steps below to update status, evidence, notes, or other data in multiple improvement actions at one time.
 
-1. **Export improvement actions.** Export the improvement actions you want to update from either the Improvement actions tab or the Assessments tab. The export is a downloaded Excel file containing improvement action data.
+1. **Export improvement actions.** Export the improvement actions you want to update, staring either from your [Improvement actions](#updating-actions-from-the-improvement-actions-page) page or your [Assessments page](#updating-actions-from-the-assessments-page). The export is a downloaded Excel file containing improvement action data.
 
 2. **Update the improvement action Excel file.** Use the instructions on the **How to update actions** tab of the Excel file to add or update the information in the specially formatted Excel file.
 
