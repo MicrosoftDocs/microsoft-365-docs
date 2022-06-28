@@ -53,7 +53,7 @@ For instance, to see the list of information being collected, you can try the fo
 DeviceTvmInfoGatheringKB  
 ```
 
-From the results, say you become interested in all available categories, you can use the following query:
+From the results, say you become interested in the available categories, you can use the following query:
 
 ```kusto
 // Return all available categories 
@@ -62,7 +62,7 @@ DeviceTvmInfoGatheringKB
 | distinct Categories 
 ```
 
-Then, let's say you want to see all assessment categories involving the TLS protocol:
+Then, let's say you want to see the assessment categories involving the TLS protocol:
 
 ```kusto
 // Return all findings for a specified category 
@@ -81,7 +81,7 @@ DeviceTvmInfoGathering
 
 
 ## Related topics
-
+- [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-- [Overview of Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Overview Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
