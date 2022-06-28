@@ -63,7 +63,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Sender is|condition: *From* <br/><br/> exception: *ExceptIfFrom*|Addresses|Messages that are sent by the specified mailboxes, mail users, mail contacts, or Microsoft 365 groups in the organization.|
 |The sender is a member of |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|Addresses|Messages that are sent by a member of the specified distribution group, mail-enabled security group, or Microsoft 365 group.|
@@ -77,7 +77,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 ### Recipients
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Recipient is|condition: *SentTo* <br/><br/> exception: *ExceptIfSentTo*|Addresses|Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |Recipient domain is|condition: *RecipientDomainIs* <br/><br/> exception: *ExceptIfRecipientDomainIs*|DomainName|Messages where the domain of the recipient's email address matches the specified value.|
@@ -89,7 +89,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 ### Message subject or body
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Subject contains words or phrases|condition: *SubjectContainsWords* <br/> exception: *ExceptIf SubjectContainsWords*|Words|Messages that have the specified words in the Subject field.|
 |Subject matches patterns|condition: *SubjectMatchesPatterns* <br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns|Messages where the Subject field contain text patterns that match the specified regular expressions.|
@@ -100,7 +100,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 ### Attachments
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/><br/> exception: *ExceptIfDocumentIsPasswordProtected*|none|Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents, .zip files, and .7z files.|
 |Attachment's file extension is|condition: *ContentExtensionMatchesWords* <br/><br/> exception: *ExceptIfContentExtensionMatchesWords*|Words|Messages where an attachment's file extension matches any of the specified words.|
@@ -115,14 +115,14 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 ### Message Headers
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Header contains words or phrases|condition: *HeaderContainsWords* <br/><br/> exception: *ExceptIfHeaderContainsWords*|Hash Table|Messages that contain the specified header field, and the value of that header field contains the specified words.|
 |Header matches patterns|condition: *HeaderMatchesPatterns* <br/><br/> exception: *ExceptIfHeaderMatchesPatterns*|Hash Table|Messages that contain the specified header field, and the value of that header field contains the specified regular expressions.|
 
 ### Message properties
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |With importance|condition: *WithImportance* <br/><br/> exception: *ExceptIfWithImportance*|Importance|Messages that are marked with the specified importance level.|
 |Content character set contains words|condition: *ContentCharacterSetContainsWords* <br/><br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Messages that have any of the specified character set names.|
@@ -134,7 +134,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 This table describes the actions that are available in DLP.
 
-|action in DLP|action parameters in Microsoft 365 PowerShell|property type|description|
+|action in DLP|action parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Set header|SetHeader|First property: *Header Name* <br/><br/> Second property: *Header Value*|The SetHeader parameter specifies an action for the DLP rule that adds or modifies a header field and value in the message header. This parameter uses the syntax "HeaderName:HeaderValue". You can specify multiple header name and value pairs separated by commas|
 |Remove header|RemoveHeader|First property: *MessageHeaderField*<br/><br/> Second property: *String*|The RemoveHeader parameter specifies an action for the DLP rule that removes a header field from the message header. This parameter uses the syntax "HeaderName" or "HeaderName:HeaderValue".You can specify multiple header names or header name and value pairs separated by commas|
