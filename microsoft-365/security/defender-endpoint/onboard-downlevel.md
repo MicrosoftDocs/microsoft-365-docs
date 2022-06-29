@@ -178,7 +178,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 ### Using Group Policy
 
-**Step 1: Download the corresponding udpate for your endpoint.**
+**Step 1: Download the corresponding update for your endpoint.**
 
 1. Navigate to c:\windows\sysvol\domain\scripts (Change control could be needed on one of the domain controllers.)
 1. Create a folder named MMA.
