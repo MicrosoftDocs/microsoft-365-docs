@@ -41,7 +41,7 @@ When you submit an email message for analysis, you will get:
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation. 
+Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## What do you need to know before you begin?
@@ -371,11 +371,11 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 > [!NOTE]
 > If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
-### Undo user submissions
+## Undo user submissions
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
 
-### Convert user reported messages from the custom mailbox into an admin submission
+## Convert user reported messages from the custom mailbox into an admin submission
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
@@ -394,20 +394,19 @@ If the message is reported to Microsoft, the **Converted to admin submission** v
 
 :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view a created admin submission from a user reported message.":::
 
-### View associated alert for user and admin email submissions
+## View associated alert for user and admin email submissions
 
 > [!IMPORTANT]
-> Only applicable for customers having Microsoft Defender for Office 365 Plan 2 or above.
-> Today, for user submissions only alert are generated for messages which are reported as Phish. 
+> The information in this section applies only to Defender for Office 365 Plan 2 or higher.
+>
+> Currently, user submissions generate alerts only for messages that are reported as phishing.
 
-So for each user reported phish message and admin email submission a corresponding alert is generated. 
+For each user reported phishing message and admin email submission, a corresponding alert is generated.
 
-To view the corresponding alert for user reported phish message, click on **User reported messages** tab, double click on the message to open the submission flyout. From the overflow menu inside the flyout select **View alert**.
+To view the corresponding alert for a user reported phishing message, select the **User reported messages** tab, and then double-click the message to open the submission flyout. Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select  **View alert**.
 
-:::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Option to view the related alert from a user reported phish message.":::
+:::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Option to view the related alert from a user reported phishing message.":::
 
-To view the corresponding alert for admin email submission, click on **Emails** tab, double click on the message to open the submission flyout. 
-Select **View alert**  on the right side of **Open email entity** option.
-
+To view the corresponding alert for admin email submissions, select the **Emails** tab, and then double-click the message to open the submission flyout. Select **View alert** on the **Open email entity** option.
 
 :::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="Option to view the related alert from an admin submission.":::

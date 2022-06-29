@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: dansimp
-ms.date: 03/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,7 +22,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview about maintaining your org's environment"
+description: "An overview about maintaining your organization's network and systems security environment, and defending against cyberattacks."
 ---
 
 # Maintain your environment

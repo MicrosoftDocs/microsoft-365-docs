@@ -38,7 +38,7 @@ Microsoft 365 Business Premium is a cost-effective solution that empowers small 
 
 ## Video: Top 5 benefits of Microsoft 365 Business Premium
 
-Watch the following video to learn see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
+Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
