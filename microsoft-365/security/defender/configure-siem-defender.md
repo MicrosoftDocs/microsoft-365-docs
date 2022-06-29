@@ -75,7 +75,7 @@ Using the new, fully-supported Splunk Add-on for Microsoft Security that support
 
 For more information on:
 
-- The Splunk Add-on for Microsoft Security, see the [Microoft Security Add-on on Splunkbase](https://splunkbase.splunk.com/app/6207/#/overview)
+- The Splunk Add-on for Microsoft Security, see the [Microsoft Security Add-on on Splunkbase](https://splunkbase.splunk.com/app/6207/#/overview)
 
 - The Microsoft 365 App for Splunk, see the [Microsoft 365 App on Splunkbase](https://splunkbase.splunk.com/app/3786/)
 
