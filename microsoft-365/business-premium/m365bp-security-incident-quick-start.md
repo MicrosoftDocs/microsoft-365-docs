@@ -29,7 +29,7 @@ description: "A set of suggestions for what to focus your efforts upon in the De
 
 # Microsoft 365 Business Premium security operations guide
 
-The following guidance provides a starting point to help you make decisions about security incident priorities in the Microsoft Defender portal.
+The following guidance provides a starting point to help you make decisions about security incident priorities in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
   
 ## Suggested daily tasks
 
@@ -39,7 +39,7 @@ Here are some suggestions for security tasks to pursue on a daily basis.
 
 To find out if you have any devices that have had threats at them, do the following.
 
-1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 1. In the navigation pane, choose **Reports > General > Security report**.
 
