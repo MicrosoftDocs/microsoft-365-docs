@@ -31,9 +31,14 @@ The Configuration Analyzer for Microsoft Purview (CAMP) is a tool that can help 
 
 CAMP can help you quickly see which improvement actions in Compliance Manager apply to your current Microsoft 365 environment. Each action identified by CAMP will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
 
-An additional resource for understanding CAMP is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/CAMP). This page provides detailed information about prerequisites and gives full installation instructions. You don't need a GitHub account to access this page.
+An additional resource for understanding CAMP is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/CAMP#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don't need a GitHub account to access this page.
 
-**Availability**: CAMP is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers.
+#### Availability
+CAMP is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers.
+
+#### Roles
+
+Certain user roles are required to access and use CAMP, as well as to access information in reports. Visit the the [CAMP prerequisite information on GitHub](https://github.com/OfficeDev/CAMP#pre-requisites).
 
 ## Install CAMP and run a report
 
@@ -121,19 +126,7 @@ Follow these instructions to run a report based on a specific location:
 
 ### Role-based reporting
 
-Your report will also be customized based on your role.
-
-The table below shows which roles have access to which sections of the report. Other roles within your organization (not listed in the table below) may not be able to run the tool, or they may run the tool and have limited access to information in the final report.
-
-![CAMP - roles.](../media/compliance-manager-mcca-roles.png "CAMP roles")
-
-Exceptions:
-
-1. Users won't be able to generate report for IP apart from “Use IRM for Exchange Online” section.
-2. Users will be able to generate report for IP apart from “Use IRM for Exchange Online” section.
-3. Users will be able to generate report for IP apart from “Enable Communication Compliance in O365” section.
-4. Users won't be able to generate report for IP apart from “Enable Auditing in Office 365” section.
-5. Users will be able generate report for IP apart from “Enable Auditing in Office 365” section.
+Your report will also be customized based on your role. The the [CAMP prerequisite information on GitHub](https://github.com/OfficeDev/CAMP#pre-requisites) outlines which roles have access to which sections of the report. Other roles within your organization may not be able to run the tool, or they may run the tool and have limited access to information in the final report.
 
 ### Solutions Summary section
 
