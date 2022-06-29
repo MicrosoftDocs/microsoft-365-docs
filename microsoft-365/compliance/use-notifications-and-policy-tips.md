@@ -122,6 +122,7 @@ You can also use the following tokens to help customize the email notification. 
 |%%AppliedActions%%|The actions applied to the content.|
 |%%ContentURL%%|The URL of the document on the SharePoint Online site or OneDrive for Business site.|
 |%%MatchedConditions%%|The conditions that were matched by the content. Use this token to inform people of possible issues with the content.|
+|%%BlockedMessageInfo%%|The details of the message that was blocked. Use this token to inform people of the details of the message that was blocked.|
 
 ![Notification message showing where tokens appear.](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
 
