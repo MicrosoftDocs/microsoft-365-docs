@@ -23,7 +23,7 @@ Microsoft 365 Business Premium includes Microsoft Defender for Business, an endp
 To onboard devices, you can choose from several options:
 
 - [Automatic onboarding for Windows devices that are enrolled in Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
-- [A local script to onboard Windows and macOS devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-macos-devices)
+- [A local script to onboard Windows and macOS devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business)
 - [Intune for enrolling devices, including mobile devices](#use-intune-to-enroll-devices) (Windows, macOS, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
