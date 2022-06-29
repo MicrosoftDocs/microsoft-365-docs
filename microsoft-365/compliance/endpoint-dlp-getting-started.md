@@ -61,7 +61,7 @@ Topic | Description
 :---|:---
 [Onboard Windows 10 or 11 devices using Group Policy](device-onboarding-gp.md) | Use Group Policy to deploy the configuration package on devices.
 [Onboard Windows 10 or 11 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on devices.
-[Onboard Windows 10 or 11 devices using Mobile Device Management tools](device-onboarding-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.
+[Onboard Windows 10 or 11 devices using Microsoft Intune](device-onboarding-mdm.md) | Use Microsoft Intune to deploy the configuration package on device.
 [Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
 [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
 
@@ -80,7 +80,7 @@ Topic | Description
 |[Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | For macOS devices that are managed through JAMF Pro
 |[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers)](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
 
-Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity to Activity explorer.
+Once a device is onboarded, it should be visible in the devices list and also start reporting audit activity to Activity explorer.
 
 <!--### Permissions
 
