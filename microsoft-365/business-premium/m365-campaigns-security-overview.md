@@ -36,18 +36,12 @@ The over-arching mission before you is to secure all the accounts in your organi
 
 Start by watching this video to get an overall picture of how to protect your campaign or business:
 
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
-
 
 Then take the following steps to:
 
 - [Protect against malware and other threats](m365bp-increase-protection.md)
-
 - [Protect access to your campaign data](m365bp-conditional-access.md) by protecting your accounts and apps
-
 - [Protect admin accounts](m365bp-protect-admin-accounts.md)
-
 - [Set up mobile devices](../business/set-up-mobile-devices.md)
-
 - [Train your users](m365-campaigns-users.md)
