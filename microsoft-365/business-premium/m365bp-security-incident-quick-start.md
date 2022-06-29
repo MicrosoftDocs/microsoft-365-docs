@@ -35,7 +35,11 @@ The following guidance provides a starting point to help you make decisions abou
 
 Here are some suggestions for security tasks to pursue on a daily basis.
 
-### Review for devices with threat detections
+- [Review devices with threat detections](#review-devices-with-threat-detections).
+- [Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts).
+- [Run a scan or automated investigation](#run-a-scan-or-automated-investigation).
+
+### Review devices with threat detections
 
 To find out if you have any devices that have had threats at them, do the following.
 
@@ -45,7 +49,7 @@ To find out if you have any devices that have had threats at them, do the follow
 
 1. Scroll down to the Vulnerable devices row. If threats were detected on devices, you'll see that information in this row.
 
-### New incidents or alerts
+### Learn about new incidents or alerts
 
 1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in.
 
@@ -55,7 +59,7 @@ To find out if you have any devices that have had threats at them, do the follow
 
 1. In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert.
 
-### Run a scan or investigation
+### Run a scan or automated investigation
 
 1. In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose Device inventory.
 
@@ -69,7 +73,10 @@ To find out if you have any devices that have had threats at them, do the follow
 
 Here are some suggestions of important security tasks to do at least on a weekly basis.
 
-### Monitor and respond to your Microsoft Secure score
+- [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).
+- 
+
+### Monitor and improve your Microsoft Secure score
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating fewer improvement actions are needed.
 
