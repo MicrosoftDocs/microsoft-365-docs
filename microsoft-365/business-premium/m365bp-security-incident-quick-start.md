@@ -141,8 +141,10 @@ These are tasks that you should do on at least a monthly basis, if not more ofte
 
 - [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).
 - [Review Pending actions in the Action center](#review-pending-actions-in-the-action-center).
-- 
-
+- [Remediate an item](#remediate-an-item).
+- [Run reports](#run-reports).
+- [Run a simulation tutorial](#run-a-simulation-tutorial).
+- [Explore the Learning hub](#explore-the-learning-hub).
 
 ### Use the Threat analytics dashboard
 
