@@ -57,7 +57,7 @@ The following list includes the existing gaps between AIP for Office 365 operate
 To configure AIP for customers in China:
 1. [Enable Rights Management for the tenant](#step-1-enable-rights-management-for-the-tenant).
 
-1. [Add the Microsoft Information Protection Sync Service service principal](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
+1. [Add the Microsoft Information Protection Sync Service service principal](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
 
 1. [Configure DNS encryption](#step-3-configure-dns-encryption).
 
