@@ -204,7 +204,7 @@ DeviceEvents
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
 
-Here's an another example:
+Here's another example:
 
 ```kusto
 
