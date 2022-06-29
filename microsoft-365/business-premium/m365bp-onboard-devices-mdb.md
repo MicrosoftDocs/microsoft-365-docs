@@ -18,11 +18,11 @@ ms.collection:
 
 # Onboard enrolled devices to Microsoft Defender for Business
 
-Now that you've enrolled the devices, you must onboard them to Microsoft Defender for Business to implement next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering, and more. 
+Microsoft 365 Business Premium includes Microsoft Defender for Business, an endpoint security solution for small and medium-sized businesses. Defender for Business provides next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering, and more for your company's devices. Protection is applied when you onboard devices. 
 
 To onboard devices, you can choose from several options:
 
-- [Use automatic onboarding for Windows devices that are already enrolled in Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
+- [Use automatic onboarding for Windows devices that are already enrolled in Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
 
 - [Use a local script to onboard Windows and macOS devices](#use-a-local-script-to-onboard-windows-and-macos-devices)
 
@@ -39,7 +39,7 @@ This article also includes:
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](../security/defender-business/mdb-troubleshooting.yml).
 
-## Use automatic onboarding for Windows devices that are already enrolled in Microsoft Endpoint Manager
+## Use automatic onboarding for Windows devices that are already enrolled in Intune
 
 The automatic onboarding option applies to Windows devices only. Automatic onboarding is available if the following conditions are met:
 
