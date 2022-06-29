@@ -1,5 +1,5 @@
 ---
-title: Wellbeing and engagement for frontline workers
+title: Engage your frontline employees and focus on wellbeing
 description: Learn how to use Viva Connections, SharePoint, Microsoft Teams, and the Praise app to increase frontline worker wellbeing and engagement.
 ms.topic: conceptual
 author: daisyfell
@@ -22,17 +22,17 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Wellbeing and engagement frontline workers
+# Engage your frontline workers and focus on wellbeing
 
 Nurture a sense of belonging among your frontline team by empowering to engage with your entire organization.
 
-Microsoft’s [Work Trend Index Pulse Report](https://www.microsoft.com/worklab/work-trend-index) surveyed 9,600 frontline workers and discovered:
+Survey's like Microsoft’s [Work Trend Index Pulse Report](https://www.microsoft.com/worklab/work-trend-index) show that many frontline workers:
 
-- 57% of frontline workers wish more was being done to support their mental health.
-- 62% of all frontline workers say leadership does not prioritize building culture.
-- 58% of frontline workers believe that work stress will either stay the same or worsen in the coming year.
+- Wish more was being done to support their mental health
+- Say leadership does not prioritize building culture
+- Believe that work stress will either stay the same or worsen in the coming year
 
-Use [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Yammer](#create-communities-with-yammer), [Praise](#boost-morale-with-praise), [SharePoint, and Microsoft Stream](#support-engagement-with-sharepoint-and-microsoft-stream) to help your frontline team overcome these challenges and feel supported in your organization.
+You can help your frontline team overcome these challenges and feel supported in your organization by using [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Yammer](#create-communities-with-yammer), [Praise](#boost-morale-with-praise), [SharePoint, and Microsoft Stream](#support-engagement-with-sharepoint-and-microsoft-stream).
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
@@ -65,9 +65,7 @@ Once you know what your frontline team's needs are, follow the [plan, build, and
 
 ### Increase engagement with communications
 
-Viva Connections is comprised of three main components that can be set up and customized in different ways to highlight tools and resources. As you prioritize and align the scenarios to support, consider how and where certain tools and resources should be located. [Learn more about the differences between desktop and mobile apps](/viva/connections/viva-connections-overview#viva-connections-mobile-and-desktop-experiences).
-
-There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [Feed where news, content from Yammer, and videos are aggregated and displayed](/viva/connections/viva-connections-overview#viva-connections-feed) in a personalized view based on the sites and communities that the viewer follows. The [Dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
+Viva Connections is comprised of three main components that can be set up and customized in different ways to highlight tools and resources.
 
 |Component |Description |Capabilities |Learn more |
 |:---------|:-----------|:------------|:----------|
@@ -75,9 +73,16 @@ There are several ways to use Viva Connections to communicate with your workforc
 |Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows <br> Content can be prioritized to display more prominently in the Feed. |
 |Resources |The Resources surface links to popular SharePoint portals and other content. |Resources are inherited from global navigation in SharePoint. <br> Link to popular SharePoint portals like HR benefits and training resources. <br> Modern SharePoint portals will display in Teams to provide the best possible viewing experience. |
 
+There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [Feed where news, content from Yammer, and videos are aggregated and displayed](/viva/connections/viva-connections-overview#viva-connections-feed) in a personalized view based on the sites and communities that the viewer follows. The [Dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
+
+As you prioritize and align the scenarios to support, consider how and where certain tools and resources should be located. [Learn more about the differences between desktop and mobile apps](/viva/connections/viva-connections-overview#viva-connections-mobile-and-desktop-experiences).
+
 #### Empower your workers to share feedback
 
 Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. In addition, getting feedback from these teams can provide insights into how your organization can improve processes. You can use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) in Viva Connections makes it easy to link to [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) that you can customize for your feedback needs. You can also [integrate third-party survey solutions](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+
+> [!NOTE]
+> Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but they'll need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or [View the detailed license comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 ### Promote health and wellbeing
 
@@ -111,11 +116,14 @@ Yammer is an internal social network that gives members of your organization opp
 
 Members of your leadership or management team can host live events on Yammer where employees can engage and ask questions in real time over chat. Your communications and management teams can use live events to share announcements, host morale events, and more.
 
+> [!NOTE]
+> Only users with an E3 or E5 license can host live events, but users with F licenses can join them. [Learn more about who can host and join live events in Yammer](/yammer/manage-yammer-groups/yammer-live-events).
+
 [Learn more about Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c).
 
 ## Boost morale with Praise
 
-The Praise app in Microsoft Teams lets managers and employees to congratulate each other and share appreciation by sending badges in Teams chat and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
+The Praise app in Microsoft Teams lets managers and employees congratulate each other and share appreciation by sending badges in Teams chat and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
 
 [Learn how to manage Praise for your organization](/microsoftteams/manage-praise-app).
 
@@ -142,6 +150,9 @@ Microsoft Stream is your organization's own streaming video platform. With Strea
 - Share announcements such as product releases and new policies so your frontline team isn't the last to know.
 - Members of the leadership team can introduce themselves and discuss their goals so your frontline team understands who drives decisions and why.
 - Frontline teams from different locations can create videos introducing themselves and showcasing their location so workers in different places can feel connected.
+
+> [!NOTE]
+> Only users with an Enterprise license can host events or publish to stream. Users with F licenses can join events and view videos.
 
 [Learn more about Microsoft Stream](https://support.microsoft.com/office/explore-stream-87a7d1e2-ef0e-44c6-88dc-74b23266cfc0).
 
