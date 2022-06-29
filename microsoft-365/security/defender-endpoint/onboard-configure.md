@@ -40,26 +40,30 @@ Deploying Microsoft Defender for Endpoint is a two-step process.
 ## Onboard devices to the service
 You'll need to go the onboarding section of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device. 
 
-In general, to onboard devices to the service:
+To onboard devices to the service:
 
 - Verify that the device fulfills the [minimum requirements](minimum-requirements.md)
 - Depending on the device, follow the configuration steps provided in the onboarding section of the Defender for Endpoint portal
 - Use the appropriate management tool and deployment method for your devices
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
-
+This article provides information on onboarding methods applicable to Windows Client and Server versions.
 
 ## Onboarding and configuration tool options
 The following table lists the available tools based on the endpoint that you need to onboard.
 
 | Endpoint     | Tool options                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **Windows Client**  |     [Mobile Device Management / Microsoft Intune](configure-endpoints-mdm.md) <br> [Group Policy](configure-endpoints-gp.md) <br> [Local script (up to 10 devices)](configure-endpoints-script.md) <br>[VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
 | **macOS**    | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
+
+> [!NOTE]
+> For devices that aren't managed by a Microsoft Endpoint Manager (either Microsoft Intune or Microsoft Endpoint Configuration Manager), you can use the Security Management for Microsoft Defender for Endpoint to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
 The following table lists the available tools based on the endpoint that you need to onboard.
 

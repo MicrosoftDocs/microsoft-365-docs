@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Purview solutions trial playbook."
+ms.custom: trial-playbook
 ---
 
 # Trial playbook: Microsoft Purview solutions
