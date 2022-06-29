@@ -23,7 +23,7 @@ description: "When you close your account with Microsoft all information related
 ms.date: 04/02/2021
 ---
 
-# Close your account
+# Close your Microsoft account
 
 When you close your account with Microsoft, all information related to your account is deleted. This information includes subscriptions, licenses, payment methods, users, and user data.
 
