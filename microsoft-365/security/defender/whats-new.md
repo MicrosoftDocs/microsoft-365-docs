@@ -40,6 +40,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## June 2022
+- (Preview) The [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) and [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tables are now available in the advanced hunting schema. Use these tables to hunt through assessment events in Defender Vulnerability Management including the status of various configurations and attack surface area states of devices.
+
 ## May 2022
 - (Preview) In line with the recently announced expansion into a new service category called [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), we're introducing the availability of [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) for public preview. Defender Experts for Hunting is for customers who have a robust security operations center but want Microsoft to help them proactively hunt for threats across Microsoft Defender data, including endpoints, Office 365, cloud applications, and identity. 
 

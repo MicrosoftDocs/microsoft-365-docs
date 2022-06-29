@@ -2,6 +2,79 @@
 
 
 
+## Week of June 20, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/20/2022 | [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-21vianet) | modified |
+| 6/20/2022 | [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page?view=o365-21vianet) | modified |
+| 6/20/2022 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-21vianet) | modified |
+| 6/20/2022 | [What's new in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-whats-new?view=o365-21vianet) | modified |
+| 6/20/2022 | [Microsoft Purview solution catalog](/microsoft-365/compliance/microsoft-365-solution-catalog?view=o365-21vianet) | modified |
+| 6/20/2022 | [Stream Microsoft 365 Defender events to Azure Event Hubs](/microsoft-365/security/defender/streaming-api-event-hub?view=o365-21vianet) | modified |
+| 6/21/2022 | [Microsoft Defender for Business and MSP resources](/microsoft-365/security/defender-business/mdb-partners?view=o365-21vianet) | added |
+| 6/21/2022 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 6/21/2022 | [Add-in deployment email alerts](/microsoft-365/admin/manage/add-in-deployment-email-alerts?view=o365-21vianet) | added |
+| 6/21/2022 | [Bookings with me](/microsoft-365/bookings/bookings-in-outlook?view=o365-21vianet) | modified |
+| 6/21/2022 | [Microsoft Purview solution catalog](/microsoft-365/compliance/microsoft-365-solution-catalog?view=o365-21vianet) | modified |
+| 6/21/2022 | [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-21vianet) | modified |
+| 6/21/2022 | [Allow or block emails using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-email-spoof?view=o365-21vianet) | modified |
+| 6/21/2022 | [Manage allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/manage-tenant-allow-block-list?view=o365-21vianet) | modified |
+| 6/21/2022 | [Set up Customer Key](/microsoft-365/compliance/customer-key-set-up?view=o365-21vianet) | modified |
+| 6/21/2022 | [Setup guides for Microsoft 365 and Office 365 services](/microsoft-365/enterprise/setup-guides-for-microsoft-365?view=o365-21vianet) | modified |
+| 6/22/2022 | [Use network protection to help prevent connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection?view=o365-21vianet) | modified |
+| 6/22/2022 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection?view=o365-21vianet) | modified |
+| 6/22/2022 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-21vianet) | modified |
+| 6/22/2022 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-21vianet) | modified |
+| 6/22/2022 | [Communication compliance policies](/microsoft-365/compliance/communication-compliance-policies?view=o365-21vianet) | modified |
+| 6/22/2022 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-21vianet) | modified |
+| 6/22/2022 | [Use sensitivity labels to configure the default sharing link type](/microsoft-365/compliance/sensitivity-labels-default-sharing-link?view=o365-21vianet) | modified |
+| 6/22/2022 | [Web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering?view=o365-21vianet) | modified |
+| 6/22/2022 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
+| 6/22/2022 | [Microsoft 365 admin center activity reports](/microsoft-365/admin/activity-reports/activity-reports?view=o365-21vianet) | modified |
+| 6/22/2022 | [Minimum requirements for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-21vianet) | modified |
+| 6/22/2022 | [Allow or block emails using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-email-spoof?view=o365-21vianet) | modified |
+| 6/22/2022 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 6/22/2022 | [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams?view=o365-21vianet) | modified |
+| 6/23/2022 | [Export software vulnerabilities assessment per device](/microsoft-365/security/defender-endpoint/get-assessment-software-vulnerabilities?view=o365-21vianet) | modified |
+| 6/23/2022 | [Vulnerabilities in my organization](/microsoft-365/security/defender-vulnerability-management/tvm-weaknesses?view=o365-21vianet) | modified |
+| 6/23/2022 | [Identify the available PowerShell cmdlets for retention](/microsoft-365/compliance/retention-cmdlets?view=o365-21vianet) | added |
+| 6/23/2022 | [Create and edit Autopilot profiles](/microsoft-365/business-premium/create-and-edit-autopilot-profiles?view=o365-21vianet) | modified |
+| 6/23/2022 | [Microsoft 365 Business Premium overview](/microsoft-365/business-premium/index?view=o365-21vianet) | modified |
+| 6/23/2022 | [Use this step-by-step guide to add Autopilot devices and profile](/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile?view=o365-21vianet) | modified |
+| 6/23/2022 | [Add a new user to your network and systems](/microsoft-365/business-premium/m365bp-add-users?view=o365-21vianet) | modified |
+| 6/23/2022 | [Set app protection settings for Android or iOS devices](/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios?view=o365-21vianet) | modified |
+| 6/23/2022 | [About Autopilot Profile settings](/microsoft-365/business-premium/m365bp-autopilot-profile-settings?view=o365-21vianet) | modified |
+| 6/23/2022 | [Create and edit Autopilot devices](/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices?view=o365-21vianet) | modified |
+| 6/23/2022 | [Working with device groups in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-device-groups-mdb?view=o365-21vianet) | modified |
+| 6/23/2022 | [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business](/microsoft-365/business-premium/m365bp-manage-windows-devices?view=o365-21vianet) | modified |
+| 6/23/2022 | [Set up managed devices](/microsoft-365/business-premium/m365bp-managed-devices-setup?view=o365-21vianet) | modified |
+| 6/23/2022 | [How do protection features in Microsoft 365 Business Premium map to Intune settings](/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings?view=o365-21vianet) | modified |
+| 6/23/2022 | [Edit or set application protection settings for Windows devices](/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices?view=o365-21vianet) | modified |
+| 6/23/2022 | [Remove company data from devices](/microsoft-365/business-premium/m365bp-remove-company-data?view=o365-21vianet) | modified |
+| 6/23/2022 | [Reset passwords](/microsoft-365/business-premium/m365bp-reset-passwords?view=o365-21vianet) | modified |
+| 6/23/2022 | [Review detected threats on devices and take action](/microsoft-365/business-premium/m365bp-review-threats-take-action?view=o365-21vianet) | modified |
+| 6/23/2022 | [Validate app protection settings on Android or iOS devices](/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios?view=o365-21vianet) | modified |
+| 6/23/2022 | [Validate app protection settings for Windows 10 PCs](/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs?view=o365-21vianet) | modified |
+| 6/23/2022 | [Microsoft 365 Business Premium frequently asked questions](/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-21vianet) | modified |
+| 6/23/2022 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
+| 6/23/2022 | [Schedule Microsoft Defender Antivirus protection updates](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 6/23/2022 | [Contextual file and folder exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus?view=o365-21vianet) | added |
+| 6/23/2022 | Glossary of terms | removed |
+| 6/23/2022 | [Use DLP policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps?view=o365-21vianet) | modified |
+| 6/23/2022 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365?view=o365-21vianet) | modified |
+| 6/23/2022 | [Sign up for Microsoft 365 Business Premium](/microsoft-365/business-premium/get-microsoft-365-business-premium?view=o365-21vianet) | modified |
+| 6/23/2022 | [Double Key Encryption (DKE)](/microsoft-365/compliance/double-key-encryption?view=o365-21vianet) | modified |
+| 6/23/2022 | [Learn about the default labels and policies to protect your data](/microsoft-365/compliance/mip-easy-trials?view=o365-21vianet) | modified |
+| 6/24/2022 | [Host firewall reporting in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/host-firewall-reporting?view=o365-21vianet) | modified |
+| 6/24/2022 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
+| 6/24/2022 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-21vianet) | modified |
+| 6/24/2022 | [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-21vianet) | modified |
+| 6/24/2022 | [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-21vianet) | modified |
+| 6/24/2022 | [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-21vianet) | modified |
+
+
 ## Week of June 13, 2022
 
 
@@ -300,80 +373,3 @@
 | 5/27/2022 | [Use DMARC to validate email, setup steps](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-21vianet) | modified |
 | 5/27/2022 | [eDiscovery (Premium) limits](/microsoft-365/compliance/limits-ediscovery20?view=o365-21vianet) | modified |
 | 5/27/2022 | [Anti-malware protection FAQ](/microsoft-365/security/office-365-security/anti-malware-protection-faq-eop?view=o365-21vianet) | modified |
-
-
-## Week of May 16, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/16/2022 | [Delete an inactive mailbox](/microsoft-365/compliance/delete-an-inactive-mailbox?view=o365-21vianet) | modified |
-| 5/16/2022 | [Recover an inactive mailbox](/microsoft-365/compliance/recover-an-inactive-mailbox?view=o365-21vianet) | modified |
-| 5/16/2022 | [Restore an inactive mailbox](/microsoft-365/compliance/restore-an-inactive-mailbox?view=o365-21vianet) | modified |
-| 5/16/2022 | [Reprovision a Windows 365 Cloud PC](/microsoft-365/lighthouse/m365-lighthouse-reprovision-cloudpc?view=o365-21vianet) | added |
-| 5/16/2022 | [Automatically apply a sensitivity label in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
-| 5/16/2022 | [Microsoft Defender for Office 365 in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-mdo?view=o365-21vianet) | modified |
-| 5/16/2022 | [Create exact data match sensitive information type/rule package](/microsoft-365/compliance/sit-get-started-exact-data-match-create-rule-package?view=o365-21vianet) | modified |
-| 5/16/2022 | [Create the schema for exact data match based sensitive information types](/microsoft-365/compliance/sit-get-started-exact-data-match-create-schema?view=o365-21vianet) | modified |
-| 5/16/2022 | [Lightweight base configuration](/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise?view=o365-21vianet) | modified |
-| 5/16/2022 | [Microsoft Defender for Business frequently asked questions](/microsoft-365/security/defender-business/mdb-faq?view=o365-21vianet) | modified |
-| 5/16/2022 | [What is Microsoft Defender for Business?](/microsoft-365/security/defender-business/mdb-overview?view=o365-21vianet) | modified |
-| 5/16/2022 | [Overview of endpoint detection and response capabilities](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response?view=o365-21vianet) | modified |
-| 5/16/2022 | [Take response actions on a device in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts?view=o365-21vianet) | modified |
-| 5/16/2022 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
-| 5/16/2022 | [Web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering?view=o365-21vianet) | modified |
-| 5/17/2022 | Use customer-managed keys to encrypt your organization's auditing data | removed |
-| 5/17/2022 | [Lightweight base configuration](/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise?view=o365-21vianet) | modified |
-| 5/17/2022 | [Disposition of content](/microsoft-365/compliance/disposition?view=o365-21vianet) | modified |
-| 5/17/2022 | [Form processing overview in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/form-processing-overview) | modified |
-| 5/18/2022 | [Microsoft 365 encryption chains](/microsoft-365/compliance/encryption-office-365-certificate-chains?view=o365-21vianet) | modified |
-| 5/18/2022 | [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview?view=o365-21vianet) | modified |
-| 5/18/2022 | [Increase threat protection for Microsoft 365 for business](/microsoft-365/admin/security-and-compliance/increase-threat-protection?view=o365-21vianet) | added |
-| 5/18/2022 | [Set the password expiration policy for your organization](/microsoft-365/admin/manage/set-password-expiration-policy?view=o365-21vianet) | modified |
-| 5/18/2022 | [Manage Customer Key](/microsoft-365/compliance/customer-key-manage?view=o365-21vianet) | modified |
-| 5/18/2022 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365?view=o365-21vianet) | modified |
-| 5/18/2022 | [Create an extractor Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/create-an-extractor) | modified |
-| 5/18/2022 | [Visit the Action center to see remediation actions](/microsoft-365/security/defender-endpoint/auto-investigation-action-center?view=o365-21vianet) | modified |
-| 5/18/2022 | [Use automated investigations to investigate and remediate threats](/microsoft-365/security/defender-endpoint/automated-investigations?view=o365-21vianet) | modified |
-| 5/18/2022 | [Automation levels in automated investigation and remediation](/microsoft-365/security/defender-endpoint/automation-levels?view=o365-21vianet) | modified |
-| 5/18/2022 | [Configure automated investigation and remediation capabilities](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation?view=o365-21vianet) | modified |
-| 5/18/2022 | [Get started with troubleshooting mode in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode?view=o365-21vianet) | modified |
-| 5/18/2022 | [Review remediation actions following automated investigations](/microsoft-365/security/defender-endpoint/manage-auto-investigation?view=o365-21vianet) | modified |
-| 5/18/2022 | Anti-spam and anti-malware protection | removed |
-| 5/19/2022 | [Get Microsoft Defender for Business](/microsoft-365/security/defender-business/get-defender-business?view=o365-21vianet) | modified |
-| 5/19/2022 | [Configure alert notifications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-email-notifications?view=o365-21vianet) | modified |
-| 5/19/2022 | [Configure vulnerability email notifications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications?view=o365-21vianet) | modified |
-| 5/19/2022 | [Microsoft Defender Vulnerability Management public preview](/microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management?view=o365-21vianet) | modified |
-| 5/19/2022 | [Apply encryption using sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-21vianet) | modified |
-| 5/19/2022 | Add users and assign licenses in Microsoft Defender Vulnerability Management | removed |
-| 5/19/2022 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-21vianet) | modified |
-| 5/20/2022 | [View an enterprise Cloud PC failed network connection in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-view-failed-network-connections?view=o365-21vianet) | added |
-| 5/20/2022 | [GDPR simplified: A guide for your small business](/microsoft-365/admin/security-and-compliance/gdpr-compliance?view=o365-21vianet) | modified |
-| 5/20/2022 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-21vianet) | modified |
-| 5/20/2022 | [Customer-managed encryption features](/microsoft-365/compliance/office-365-customer-managed-encryption-features?view=o365-21vianet) | modified |
-| 5/20/2022 | [Microsoft 365 informed network routing](/microsoft-365/enterprise/office-365-network-mac-perf-cpe?view=o365-21vianet) | modified |
-| 5/20/2022 | [Network connectivity in the Microsoft 365 Admin Center](/microsoft-365/enterprise/office-365-network-mac-perf-overview?view=o365-21vianet) | modified |
-| 5/20/2022 | [Use the Page Diagnostics tool for SharePoint Online](/microsoft-365/enterprise/page-diagnostics-for-spo?view=o365-21vianet) | modified |
-| 5/20/2022 | [Performance troubleshooting plan for Office 365](/microsoft-365/enterprise/performance-troubleshooting-plan?view=o365-21vianet) | modified |
-| 5/20/2022 | [Step 2. Protect your Microsoft 365 privileged accounts](/microsoft-365/enterprise/protect-your-global-administrator-accounts?view=o365-21vianet) | modified |
-| 5/20/2022 | [Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint Online](/microsoft-365/enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo?view=o365-21vianet) | modified |
-| 5/20/2022 | [View email security reports](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
-| 5/20/2022 | [Validate app protection settings on Android or iOS devices](/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios?view=o365-21vianet) | renamed |
-| 5/20/2022 | [Validate app protection settings for Windows 10 PCs](/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs?view=o365-21vianet) | renamed |
-| 5/20/2022 | [Set app protection settings for Android or iOS devices](/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios?view=o365-21vianet) | modified |
-| 5/20/2022 | [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business](/microsoft-365/business-premium/m365bp-manage-windows-devices?view=o365-21vianet) | modified |
-| 5/20/2022 | [Set up multi-factor authentication for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-multifactor-authentication?view=o365-21vianet) | modified |
-| 5/20/2022 | [Prepare for Office client deployment with Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment?view=o365-21vianet) | modified |
-| 5/20/2022 | Edit or create device protection settings for Windows 10 PCs | removed |
-| 5/20/2022 | [View or edit device protection policies](/microsoft-365/business-premium/m365bp-view-edit-create-mdb-policies?view=o365-21vianet) | modified |
-| 5/20/2022 | [Working with improvement actions in Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager-improvement-actions?view=o365-21vianet) | modified |
-| 5/20/2022 | [Get started with content explorer](/microsoft-365/compliance/data-classification-content-explorer?view=o365-21vianet) | modified |
-| 5/20/2022 | [Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-21vianet) | modified |
-| 5/20/2022 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-21vianet) | modified |
-| 5/20/2022 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
-| 5/20/2022 | [Apply Microsoft Defender Antivirus protection updates to out of date endpoints](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 5/20/2022 | Microsoft Defender Antivirus on Windows Server | removed |
-| 5/20/2022 | [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about?view=o365-21vianet) | modified |
-| 5/20/2022 | [Protect security settings with tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-21vianet) | modified |
-| 5/20/2022 | [Anti-malware protection FAQ](/microsoft-365/security/office-365-security/anti-malware-protection-faq-eop?view=o365-21vianet) | modified |
-| 5/20/2022 | [Smart reports and insights](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance?view=o365-21vianet) | modified |
