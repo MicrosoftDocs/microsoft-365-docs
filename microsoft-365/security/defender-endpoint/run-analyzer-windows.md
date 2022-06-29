@@ -89,11 +89,11 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
 - SystemInfoLogs \[Folder\]
   - AddRemovePrograms.csv
 
-    Description: List of x86 installed software on  x64 OS software collected from registry.
+    Description: List of x64 installed software on x64 OS collected from registry.
 
   - AddRemoveProgramsWOW64.csv
 
-    Description: List of x86 installed software on x64 OS software collected from registry.
+    Description: List of x86 installed software on x64 OS collected from registry.
 
     - CertValidate.log
 

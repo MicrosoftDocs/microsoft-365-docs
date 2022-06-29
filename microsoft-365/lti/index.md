@@ -76,6 +76,7 @@ For configuration steps, see:
 
 - [Microsoft Teams Meetings with Canvas](teams-meetings-with-canvas.md).
 - [Microsoft Teams Meetings with Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Meetings with Open LMS](open-lms-teams-classes-and-meetings.md).
 
 ### Teams classes LTI
 
@@ -83,6 +84,7 @@ The Microsoft Teams classes LTI app helps educators and students navigate betwee
 
 For configuration steps, see:
 
-- [Teams Classes LTI with Canvas](teams-classes-with-canvas.md).
-- [Teams Classes LTI with Blackboard](teams-classes-with-blackboard.md).
-- [Teams Classes LTI with Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Classes LTI with Canvas](teams-classes-with-canvas.md).
+- [Microsoft Teams Classes LTI with Blackboard](teams-classes-with-blackboard.md).
+- [Microsoft Teams Classes LTI with Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Classes LTI with Open LMS](open-lms-teams-classes-and-meetings.md).
