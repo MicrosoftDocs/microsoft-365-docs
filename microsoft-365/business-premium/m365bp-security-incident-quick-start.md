@@ -74,7 +74,9 @@ To find out if you have any devices that have had threats at them, do the follow
 Here are some suggestions of important security tasks to do at least on a weekly basis.
 
 - [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).
-- 
+- [Check your threat vulnerability](#check-your-threat-vulnerability).
+- [Review the secure score for devices](#review-the-secure-score-for-devices).
+- [Improve your secure score for devices](#improve-your-secure-score-for-devices).
 
 ### Monitor and improve your Microsoft Secure score
 
@@ -88,7 +90,7 @@ The Secure Score helps organizations:
 
 To check your secure score, in the Navigation pane choose **Secure score**. Review and make decisions about the Remediations and Actions in order to improve your overall Microsoft secure score.
 
-### Look at threat vulnerability
+### Check your threat vulnerability
 
 In brief, you can get a snapshot of threat vulnerability by looking at the Vulnerability management dashboard. It reflects how vulnerable your organization is to cybersecurity threats. A high exposure score means your devices are more vulnerable to exploitation.
 
@@ -135,7 +137,12 @@ Improve your security configuration by remediating issues using the security rec
 
 ## Suggested monthly tasks
 
-These are tasks that you should do on a monthly basis, if not more often. 
+These are tasks that you should do on at least a monthly basis, if not more often. 
+
+- [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).
+- [Review Pending actions in the Action center](#review-pending-actions-in-the-action-center).
+- 
+
 
 ### Use the Threat analytics dashboard
 
@@ -149,7 +156,7 @@ Select **Threat analytics** off of the Navigation pane to display the Threat ana
 
 Click on the title of the one you want to investigate, and read the associated report. You can also review the full Analyst report for additional detail, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.
 
-### Review Pending items in Action center
+### Review Pending actions in the Action center
 
 As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval, which is why these should be monitored regularly. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
 
@@ -162,6 +169,30 @@ As threats are detected, remediation actions come into play. Depending on the pa
 ### Remediate an item
 
 Microsoft Defender for Business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
+
+1. In the navigation pane, choose **Device inventory**.
+
+   :::image type="content" source="./../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
+
+2. Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item, as shown in the following image:  
+
+   :::image type="content" source="./../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="Screenshot of the flyout pane for a selected device":::
+
+3. On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions, as shown in the following image: 
+
+   :::image type="content" source="./../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Screenshot of available actions for a selected device":::
+
+4. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
+
+#### Remediation actions in Microsoft 365 Business Premium
+
+The following table summarizes remediation actions that are available in Microsoft 365 Business Premium:
+
+| Source  | Actions  |
+|---------|---------|
+| Automated investigations      | - Quarantine a file <br/>- Remove a registry key <br/>- Kill a process <br/>- Stop a service <br/>- Disable a driver <br/>- Remove a scheduled task        |
+| Manual response actions   | - Run antivirus scan <br/>- Isolate device <br/>- Stop and quarantine <br/>- Add an indicator to block or allow a file       |
+| Live response  | - Collect forensic data <br/>- Analyze a file <br/>- Run a script <br/>- Send a suspicious entity to Microsoft for analysis <br/>- Remediate a file <br/>- Proactively hunt for threats  |
 
 ### Run reports
 
@@ -188,6 +219,15 @@ To get started:
 ### Explore the Learning hub
 
 There are a number of areas in the Learning hub through which you can increase your knowledge of many of the threats that are out there, and how to address them. We recommended you and your teams spend a lot of time exploring the topics that are offered, especially in the Microsoft 365 Defender and Endpoints sections.
+
+1. In the navigation pane, choose **Learning hub**.
+
+2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.
+
+3. Select an item to learn more about each concept. 
+
+> [!NOTE]
+> Some resources in the Learning hub might cover functionality that isn't actually included in Microsoft 365 Business Premium. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft 365 Defender, but not in Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md).
 
 ## See also
 
