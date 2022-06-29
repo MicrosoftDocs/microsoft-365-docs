@@ -27,6 +27,10 @@ highlightedContent:
     - title: Start with a free trial
       itemType: whats-new
       url: flw-trial.md
+    # Card
+    - title: Deploy Teams at scale
+      itemType: deploy
+      url: deploy-teams-at-scale.md
 
 # productDirectory section (optional)
 productDirectory:
