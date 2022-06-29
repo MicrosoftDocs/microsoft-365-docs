@@ -31,7 +31,7 @@ The Configuration Analyzer for Microsoft Purview (CAMP) is a tool that can help 
 
 CAMP can help you quickly see which improvement actions in Compliance Manager apply to your current Microsoft 365 environment. Each action identified by CAMP will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
 
-An additional resource for understanding CAMP is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/CAMP#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don't need a GitHub account to access this page.
+For more details about CAMP, including prerequisites and full installation instructions, visit the [README instructions on GitHub](https://github.com/OfficeDev/CAMP#overview). You don't need a GitHub account to access this page.
 
 #### Availability
 CAMP is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers.
@@ -77,7 +77,7 @@ After you install CAMP, you can run CAMP and generate a report. To run a report:
     Get-CAMPReport -ExchangeEnvironmentName O365USGovGCCHigh
     ```
 
-3. Once CAMP runs, it does an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Then enter your password at the password prompt.
+3. Once CAMP runs, it does an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](https://github.com/OfficeDev/CAMP#pre-requisites)). Then enter your password at the password prompt.
 
 Your report will then take approximately 2-5 minutes to generate. When it's done, a browser window opens and displays your HTML report. Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the directory C: \ Users \ *username* \ AppData \ Local \ Microsoft \ CAMP.
 
