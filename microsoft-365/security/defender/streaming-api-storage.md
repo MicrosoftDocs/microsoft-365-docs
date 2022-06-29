@@ -106,7 +106,7 @@ In order to get the data types for our events properties do the following:
 ## Monitoring created resources
 
 You can monitor the resources created by the streaming API using **Azure Monitor**. 
-For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs](https://docs.microsoft.com/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations).
+For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs](/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations).
 
 ## Related topics
 
