@@ -50,7 +50,7 @@ Follow the corresponding instructions depending on your preferred deployment met
 
 - [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Offboard devices using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Offboard devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Offboard devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 
 ## Offboard Servers
 
