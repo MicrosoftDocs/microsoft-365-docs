@@ -80,7 +80,7 @@ Topic | Description
 |[Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | For macOS devices that are managed through JAMF Pro
 |[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers)](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
 
-Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity to Activity explorer.
+Once a device is onboarded, it should be visible in the devices list and also start reporting audit activity to Activity explorer.
 
 <!--### Permissions
 
