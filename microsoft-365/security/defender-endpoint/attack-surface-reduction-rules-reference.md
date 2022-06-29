@@ -275,7 +275,7 @@ Dependencies: MDAV
 This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
 
 - Executable files (such as .exe, .dll, or .scr)
-- Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
+- Script files (such as a PowerShell .ps1, Visual Basic .vbs, or JavaScript .js file)
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 

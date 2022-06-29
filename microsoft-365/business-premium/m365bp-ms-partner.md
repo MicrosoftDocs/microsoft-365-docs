@@ -6,8 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: overview
-ms.date: 06/03/2022
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
