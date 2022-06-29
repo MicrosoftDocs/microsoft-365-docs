@@ -24,7 +24,7 @@ To onboard devices, you can choose from several options:
 
 - [Automatic onboarding for Windows devices that are enrolled in Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
 - [A local script to onboard Windows and macOS devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-macos-devices)
-- [Intune for enrolling more devices, including mobile devices](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows, macOS, iOS, and Android) and then apply Defender for Business policies to those devices
+- [Intune for enrolling devices, including mobile devices](#use-intune-to-enroll-devices) (Windows, macOS, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
 
@@ -64,7 +64,7 @@ You can use a local script to onboard Windows and Mac devices. When you run the 
    - Windows devices: [Onboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
    - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
-## Use Intune to enroll more devices
+## Use Intune to enroll devices
 
 To enroll a device, enroll them yourself, or have your users sign in to the company portal and enroll and install any apps that are needed. 
 
