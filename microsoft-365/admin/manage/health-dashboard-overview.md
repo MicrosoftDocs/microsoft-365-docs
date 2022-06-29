@@ -18,12 +18,16 @@ description: "Get an overview of Microsoft 365 Message center and its role in tr
 
 As the admin of your organization, you’re charged with keeping many apps and services running smoothly with a limited amount of time. We've created the Microsoft 365 Health dashboard to help you see apps and services are running in your organization.
 
+The Health dashboard is designed to give you a snapshot of the health of your environment. You can see how well your organization is keeping desktop software up to date, following best practices for security, and using the products and services you’ve paid for.
+
 > [!NOTE]
 > Microsoft 365 Health dashboard is in public preview and may not be available to all customers.
 
-This private preview of this new dashboard begins today.  You can access it by logging into the Microsoft 365 aAdmin cCenter and then visiting https://admin.microsoft.com/AdminPortal/Home?#/healthoverview
+## Health dashboard in the Microsoft 365 admin center
 
- The Health dashboard is designed to give you a snapshot of the health of your environment.  You can see how well your organization is keeping desktop software up to date, following best practices for security, and using the products and services you’ve paid for.  
+1. Sign in to the admin center, and then go to this url: https://admin.microsoft.com/AdminPortal/Home?#/healthoverview.
+
+
 
 ## Critical alerts
 
