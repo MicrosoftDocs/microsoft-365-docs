@@ -1,8 +1,8 @@
 ---
 title: Understand the Defender Experts for Hunting report in Microsoft 365 Defender
 ms.reviewer: 
-description: Learn about the hunting report section of each defender experts report. Understand how it provides information about threats, mitigations, detections, advanced hunting queries, and more.
-keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
+description: The Defender Experts for Hunting service publishes monthly reports to help you understand all the threats the hunting service surfaced in your environment
+keywords: analyst report, defender experts report, detections, defender expert notification, hunting, notifications, threat categories,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -58,7 +58,7 @@ Refer to the following screenshot of a sample report:
 
 A defender experts notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
-The Defender Experts for Hunting reports provide you with the total number of targeted attack notifications our Defender Experts have sent for your chosen period. To view these notifications, click **View notification** beside **Notified**.
+The Defender Experts for Hunting reports provide you with the total number of defender experts notifications our Defender Experts have sent for your chosen period. To view these notifications, click **View notification** beside **Notified**.
 
 This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or defender experts notifications are labelled with “Defender Experts.”
 
