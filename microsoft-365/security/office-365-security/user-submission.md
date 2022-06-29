@@ -43,12 +43,16 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 ## Custom mailbox prerequisites
 
 Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
-
+ 
 - [Identify the custom mailbox as a SecOps mailbox in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [Create an anti-malware policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) for the custom mailbox where zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected).
+- [Create an anti-malware policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) for the custom mailbox where
+    - zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected). 
+    - the common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected). 
 
 If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the users reporting messages:
+
+- [Make sure the custom mailbox is not part of any preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
 - [Create a Safe Links policy](set-up-safe-links-policies.md) for the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
 
