@@ -19,7 +19,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Manage access to Microsoft Whiteboard for your organization
 
 >[!NOTE]
-> This article applies to Enterprise or Education organizations who use Whiteboard. For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
+> This article applies to Enterprise or Education organizations who use Whiteboard. For US Government GCC High environments, see [Manage access to Microsoft Whiteboard for GCC High environments](manage-whiteboard-access-gcc-high.md).
 
 Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Today, Whiteboard runs on Azure for Enterprise and Education customers. Whiteboard is transitioning to be run on top of OneDrive for Business. This transition will bring many new capabilities and allow you to create, share, discover, and manage whiteboards as easily as any Office document.
 
