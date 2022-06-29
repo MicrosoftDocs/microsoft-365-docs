@@ -31,9 +31,15 @@ description: "Learn how to implement cybersecurity for small or medium sized bus
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguard's your data, devices and information. You are your org's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states.
 
-The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized by items the Admin does, and then items the users must attend to, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started.
+The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
 
-Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
+- Tasks the admin does, described in [Fortify your environment](m365bp-setup-overview.md)
+- Tasks that all staff members do, described in [Train your team](m365bp-devices-overview.md)
+- Tasks the admin or security team does, described in [Safeguard managed devices](m365bp-protect-devices.md)
+
+Completing all the missions is the most effective way to thwart hackers, protect against ransomware, and help ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started.
+
+Use the following tabs to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
 ## [**Fortify Your Environment**](#tab/Fortify)
 
