@@ -27,10 +27,6 @@ highlightedContent:
     - title: Start with a free trial
       itemType: whats-new
       url: flw-trial.md
-    # Card
-    - title: Managers - Get your team started with the trial
-      itemType: get-started
-      url: get-up-and-running.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -79,6 +75,8 @@ productDirectory:
       links:
         - url: flw-deploy-overview.md
           text: Deployment overview
+        - url: get-up-and-running.md
+          text: Managers - Get your team started with the trial
         - url: flw-pilot.md
           text: Start with a pilot deployment
         - url: flw-setup-microsoft-365.md
