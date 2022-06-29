@@ -33,9 +33,9 @@ Let us begin by saying that you made a wise choice in adopting Microsoft 365 Bus
 
 The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
 
-- Tasks the admin does, described in [Fortify your environment](m365bp-setup-overview.md); 
-- Tasks that all staff members do, described in [Train your team](m365bp-devices-overview.md); and 
-- Tasks the admin or security team does, described in [Safeguard managed devices](m365bp-protect-devices.md).
+- Tasks the admin does: [Fortify your environment](m365bp-setup-overview.md); 
+- Tasks that all staff members do: [Train your team](m365bp-devices-overview.md); and 
+- Tasks the admin or security team does: [Safeguard managed devices](m365bp-protect-devices.md).
 
 Completing all the missions is the most effective way to thwart hackers, protect against ransomware, and help ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started.
 
