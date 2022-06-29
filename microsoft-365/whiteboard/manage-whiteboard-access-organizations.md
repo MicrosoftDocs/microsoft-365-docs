@@ -1,5 +1,5 @@
 ---
-title: Enable and manage access to Microsoft Whiteboard for your organization
+title: Manage access to Microsoft Whiteboard for your organization
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
-# Enable and manage access to Microsoft Whiteboard for your organization
+# Manage access to Microsoft Whiteboard for your organization
 
 >[!NOTE]
 > This article applies to Enterprise or Education organizations who use Whiteboard. For US Government GCC High environments, see [Enable and manage access to Microsoft Whiteboard for GCC High environments](enable-whiteboard-access-gcc-high.md).
