@@ -38,11 +38,11 @@ CAMP is available to all organizations with Office 365 and Microsoft 365 license
 
 #### Roles
 
-Certain user roles are required to access and use CAMP, as well as to access information in reports. Visit the the [CAMP prerequisite information on GitHub](https://github.com/OfficeDev/CAMP#pre-requisites).
+Certain user roles are required to access and use CAMP, and to access information in reports. Visit the [CAMP prerequisite information on GitHub](https://github.com/OfficeDev/CAMP#pre-requisites).
 
 ## Install CAMP and run a report
 
-You can install the CAMP tool using Windows PowerShell. Once you download and install the tool, you don't need to repeat those steps in order to run reports. Each time you open CAMP, it will ask you for your login credentials, and it will generate a new, updated report.
+You can install the CAMP tool using Windows PowerShell. Once you download and install the tool, you don't need to repeat those steps in order to run reports. Each time you open CAMP, it will ask you for you to log in, and it will generate a new, updated report.
 
 ### Step 1: Install the Exchange Online PowerShell V2 module
 
@@ -126,7 +126,7 @@ Follow these instructions to run a report based on a specific location:
 
 ### Role-based reporting
 
-Your report will also be customized based on your role. The the [CAMP prerequisite information on GitHub](https://github.com/OfficeDev/CAMP#pre-requisites) outlines which roles have access to which sections of the report. Other roles within your organization may not be able to run the tool, or they may run the tool and have limited access to information in the final report.
+Your report will also be customized based on your role. The [CAMP prerequisite information on GitHub](https://github.com/OfficeDev/CAMP#pre-requisites) outlines which roles have access to which sections of the report. Other roles within your organization may not be able to run the tool, or they may run the tool and have limited access to information in the final report.
 
 ### Solutions Summary section
 
@@ -148,7 +148,7 @@ Select a box to view improvements and recommendations.
 
 Select the dropdown next to the **Improvement** label to the right of the improvement action. You'll see a quick summary and details about your current settings and the recommended improvement actions. The summary includes direct links into Compliance Manager, the applicable solution in the Microsoft Purview compliance portal, and relevant documentation.
 
-Selecting the Compliance Manager link takes you to a filtered view of all the improvement actions within that solution that you have not yet implemented. From there, you can see the number of points you can achieve to increase your [compliance score](compliance-score-calculation.md), and the assessments they apply to, and the applicable regulations and certifications.
+Selecting the Compliance Manager link takes you to a filtered view of all the improvement actions within that solution that you haven't yet implemented. From there, you can see the number of points you can achieve to increase your [compliance score](compliance-score-calculation.md), and the assessments they apply to, and the applicable regulations and certifications.
 
 For DLP, there's a **Remediation Script** button that gives you a pre-generated PowerShell script based on what's recommended. You can copy and paste it directly in your PowerShell console. It will create a DLP policy in test mode
 
