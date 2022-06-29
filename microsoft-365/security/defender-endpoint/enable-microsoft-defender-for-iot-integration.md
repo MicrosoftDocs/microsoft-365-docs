@@ -73,7 +73,7 @@ After defining your plan and setting up a network sensor, view detected data and
 - View device data in Defender for Endpoint or Defender for IoT
 - View alerts, recommendations, and vulnerabilities in Defender for Endpoint
 
-For more information, see the [Defender for IoT pricing page](https://azure.microsoft.com/en-gb/pricing/details/iot-defender/). 
+For more information, see the [Defender for IoT pricing page](https://azure.microsoft.com/pricing/details/iot-defender/). 
 
 ## Cancel your Defender for IoT plan
 
