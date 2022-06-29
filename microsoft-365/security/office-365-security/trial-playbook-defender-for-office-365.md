@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial playbook."
+ms.custom: trial-playbook
 ---
 
 # Trial playbook: Microsoft Defender for Office 365
