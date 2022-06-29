@@ -51,7 +51,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `CertificateExpirationTime` | `datetime` | Date and time the certificate is set to expire |
 | `CertificateCountersignatureTime` | `datetime` | Date and time the certificate was countersigned |
 | `IsTrusted` | `boolean` | Indicates whether the file is trusted based on the results of the WinVerifyTrust function, which checks for unknown root certificate information, invalid signatures, revoked certificates, and other questionable attributes |
-| `IsRootSignerMicrosoft` | `boolean` | Indicates whether the signer of the root certificate is Microsoft and file is built-in to Windows OS |
+| `IsRootSignerMicrosoft` | `boolean` | Indicates whether the signer of the root certificate is Microsoft and if the file is include din Windows operating system |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. | 
 
 ## Related topics
