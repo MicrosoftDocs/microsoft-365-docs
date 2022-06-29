@@ -2,11 +2,11 @@
 title: "Validate app protection settings on Android or iOS devices"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
@@ -23,13 +23,11 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: "Learn how to validate the Microsoft 365 Business Premium app protection settings on your Android or iOS devices. Making security settings for your applications is critical in order to protect the files on your mobile apps and devices."
+description: "Learn how to validate the Microsoft 365 Business Premium app protection settings on your Android or iOS devices. Making security settings for your applications is critical in order to protect the files on your mobile apps and devices from any kind of security threats."
 ---
 
 # Validate app protection settings on Android or iOS devices
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md)
 
 Follow the instructions in the following sections to validate app protection settings on Android or iOS devices.
   
