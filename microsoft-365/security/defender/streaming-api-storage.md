@@ -35,6 +35,14 @@ ms.technology: mde
 
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.
 
+### Add contributor permissions
+
+Once the Storage account is created you will need to:
+
+1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
+
+    Go to **Storage Account > Access control (IAM) > Add** and verify under **Role assignments**.
+
 ## Enable raw data streaming
 
 1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a ***Global Administrator*** or ***Security Administrator***.
@@ -94,6 +102,11 @@ In order to get the data types for our events properties do the following:
 - Here is an example for Device Info event:
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example device info query" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+
+## Monitoring created resources
+
+You can monitor the resources created by the streaming API using **Azure Monitor**. 
+For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs](https://docs.microsoft.com/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations).
 
 ## Related topics
 
