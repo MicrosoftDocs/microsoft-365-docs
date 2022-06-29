@@ -37,7 +37,7 @@ ms.custom: api
 
 1. Log in to [Microsoft 365 Defender](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to [Data export settings page](https://security.microsoft.com/interoperability/dataexport) in Microsoft 365 Defender.
+2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft 365 Defender.
 
 3. Click on **Add data export settings**.
 
