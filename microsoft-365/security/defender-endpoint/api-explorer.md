@@ -35,13 +35,13 @@ You can also use the tool to explore the gallery of sample queries, copy result 
 
 With the API Explorer, you can:
 
-- Run requests for any method and see responses in real-time
-- Quickly browse through the API samples and learn what parameters they support
-- Make API calls with ease; no need to authenticate beyond the management portal sign in
+- Run requests for any method and see responses in real-time.
+- Quickly browse through the API samples and learn what parameters they support.
+- Make API calls with ease; no need to authenticate beyond the management portal signin.
 
 ## Access API Explorer
 
-From the left navigation menu, select **Partners & APIs** \> **API Explorer**.
+From the left navigation menu, select **Partners & APIs** \> **[API Explorer](https://security.microsoft.com/interoperability/api-explorer)**.
 
 ## Supported APIs
 
