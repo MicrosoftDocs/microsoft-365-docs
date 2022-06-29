@@ -90,7 +90,7 @@ The following table lists the available products and their **ProductId**.
 
 | Product | ProductId |
 |-----------------------------|--------------|
-| Power Apps per user | CFQ7TTC0LH2H |
+| Power Apps per user* | CFQ7TTC0LH2H |
 | Power Automate per user | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (standalone) | CFQ7TTC0KXG7  |
@@ -102,6 +102,7 @@ The following table lists the available products and their **ProductId**.
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
+| Microsoft 365 F3 | CFQ7TTC0LH05 |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they are automatically blocked using the new IDs. No additional work is required.
 
