@@ -63,7 +63,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 ## How Microsoft 365 Business Premium helps you
 
-Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md).
+Microsoft 365 Business Premium is a comprehensive security and collaboration solution for small and medium businesses. [Learn more about the benefits of Microsoft 365 Business Premium](m365bp-secure-users.md).
 
 ## Next steps
 
