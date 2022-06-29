@@ -150,7 +150,7 @@ These are tasks that you should do on at least a monthly basis, if not more ofte
 
 Use the threat analytics dashboard to get an overview of the current threat landscape by highlighting reports that are most relevant to your organization. 
 
-Select **Threat analytics** off of the Navigation pane to display the Threat analytics dashboard. The dashboard summarizes the threats into the following sections:
+Select **Threat analytics** in the navigation pane to display the Threat analytics dashboard. The dashboard summarizes the threats into the following sections:
 
 - Latest threats—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
 - High-impact threats—lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
@@ -200,7 +200,7 @@ The following table summarizes remediation actions that are available in Microso
 
 Several reports are available in the Microsoft 365 Defender portal.
 
-1. Select **Reports** from the Navigation pane.
+1. In the navigation pane, select **Reports**.
 
 2. Choose a report to review. Each report displays a number of pertinent categories for that report.
 
@@ -214,7 +214,7 @@ It's always a good idea to increase the security preparedness for you and your t
 
 To get started:
 
-1. Choose **Tutorials** from the Navigation pane.
+1. In the navigation pane, choose **Tutorials**.
 
 2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
 
