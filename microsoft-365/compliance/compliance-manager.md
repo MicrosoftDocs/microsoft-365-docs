@@ -48,7 +48,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 - A risk-based compliance score to help you understand your compliance posture by measuring your progress in completing improvement actions.
 
-The Compliance Manager overview page shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of what your Compliance Manager dashboard will look like:
+The Compliance Manager overview page shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of the overview page:
 
 ![Compliance Manager - dashboard.](../media/compliance-manager-overview.png "Compliance Manager overview page")
 
