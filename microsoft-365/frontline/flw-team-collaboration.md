@@ -103,7 +103,7 @@ Share this [Walkie Talkie video training](https://support.microsoft.com/office/u
 
 ### Boost morale with Praise
 
-The Praise app allows management and in-store associates to congratulate each other and share appreciation by sending badges. Praise helps employees feel recognized for achievements such as making sales goals and going above and beyond to help customers.
+The Praise app allows management and frontline team members to congratulate each other and share appreciation by sending badges. Praise helps employees feel recognized for achievements such as making sales goals and going above and beyond to help customers.
 
 |Industry |Example |
 |:--------|:-------|
