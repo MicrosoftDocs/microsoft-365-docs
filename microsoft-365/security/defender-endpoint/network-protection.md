@@ -33,6 +33,8 @@ ms.date:
 
 **Platforms**
 - Windows
+- macOS
+- Linux
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -47,7 +49,7 @@ Watch this video to learn how Network protection helps reduce the attack surface
 
 ## Requirements for network protection
 
-Network protection requires Windows 10 or 11 (Pro or Enterprise), or Windows Server version 1803 or later, and Microsoft Defender Antivirus real-time protection.
+Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server version 1803 or later, macOS version 11 or later, or Defender Supported Linux versions, and Microsoft Defender Antivirus real-time protection.
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
@@ -202,7 +204,7 @@ DeviceEvents
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
 
-Here's an another example:
+Here's another example:
 
 ```kusto
 

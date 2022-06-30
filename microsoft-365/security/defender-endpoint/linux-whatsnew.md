@@ -36,7 +36,7 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Released: **June 24, 2022**<br/>
 &ensp;Published: **June 24, 2022**<br/>
 &ensp;Build: **101.71.18**<br/>
-&ensp;Release version: **30.122042.16880.0**<br/>
+&ensp;Release version: **30.122052.17118.0**<br/>
 
 
 **What's new**

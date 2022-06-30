@@ -14,6 +14,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+ms.custom: intro-get-started
 ---
 
 # Set up Microsoft 365 Business Premium
