@@ -106,8 +106,6 @@ Go to **More > Admin** to access administrative functions that are only availabl
 
 By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
 
-![Service Trust Portal - Search on Documents with filter applied.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
-
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.
 
