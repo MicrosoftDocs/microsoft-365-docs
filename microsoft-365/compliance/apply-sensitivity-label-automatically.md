@@ -25,7 +25,7 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-> [!TIP]
+> [!NOTE]
 > For information about automatically applying a sensitivity label in the data map, see [Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
@@ -265,6 +265,10 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
   - If the labels apply [encryption](encryption-sensitivity-labels.md):
     - When the auto-labeling policy includes locations for SharePoint or OneDrive, the label must be configured for the **Assign permissions now** setting, and **User access to content expires** must be set to **Never**.
     - When the auto-labeling policy is just for Exchange, the label can be configured for either **Assign permissions now** or **Let users assign permissions** (for the Do Not Forward or Encrypt-Only options). You can't auto-apply a label that's [configured to apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
+
+
+> [!TIP]
+> If you haven't already configured auto-labeling policies, you might be eligible for some typically-used auto-labeling policies to be automatically created for you. Even if you're not eligible, you might find it useful to see the configuration of these default auto-labeling policies we're creating for customers. For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
 ### Learn about simulation mode
 
