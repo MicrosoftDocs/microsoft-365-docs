@@ -72,7 +72,7 @@ To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-li
 
 ### Windows 365 Business integration and management actions
 
-Based on user feedback, we've integrated Windows 365 Business into Microsoft 365 Lighthouse. This will help you manage and monitor all of your customers' Cloud PCs from a single location. 
+Based on user feedback, we've integrated Windows 365 Business into Microsoft 365 Lighthouse. This integration will help you manage and monitor all of your customers' Cloud PCs from a single location. 
 
 In addition to integrating with Windows 365 Business Cloud PCs in Microsoft 365 Lighthouse, you can now take the following management actions:
 
