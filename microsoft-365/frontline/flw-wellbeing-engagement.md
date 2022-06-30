@@ -38,32 +38,12 @@ You can help your frontline team overcome these challenges and feel supported in
 
 ![Image of a SharePoint homesite and mobile Viva Connections dashboard](media/viva-connections.png)
 
-Viva Connections brings the power of SharePoint into Microsoft Teams, so your frontline workers can easily access everything they need on the go. Use the Viva Connections app for Microsoft Teams to:
+[Viva Connections](/viva/connections/viva-connections-overview) brings the power of SharePoint into Microsoft Teams, so your frontline workers can easily access everything they need on the go. Use the Viva Connections app for Microsoft Teams to:
 
-- Connect frontline workers and create opportunities to communicate and engage
-- Create a sense of belonging
-- Provide tools that help foster well-being
-- Recognize and celebrate frontline workers' success
+- Connect frontline workers and create opportunities to engage, communicate, and collaborate
 - Make it easy for frontline workers to access important news and announcements
 - Empower frontline workers around a common mission and goal
-
-### Get started planning, building, and launching Viva Connections
-
-First, you'll need to conduct a needs assessment to learn more about the shared challenges frontline workers face in your organization. Build a team of stakeholders (such as representatives from HR, operations, and process owners) who can accurately represent the needs of the frontline workforce. Take an inventory of the concerns of workers in different roles and capture opportunities to increase engagement. Work with stakeholders to create a plan that starts solving common issues and can be built-on over time.
-
-Once you know what your frontline team's needs are, follow the [plan, build, and launch guide](/viva/connections/plan-viva-connections) to deploy Viva Connections.
-
-1. **Make sure the right stakeholders are involved** when planning and design for frontline workers so that the needs of the workers are fully represented and understood.
-
-|Goal |Potential stakeholders |
-|:----|:----------------------|
-|Increase engagement with communications |Internal communications team, HR team, operations team |
-|Promote health and wellbeing |HR team, recruitment team, engagement teams, HR teams, health and safety teams |
-|Create a supportive digital ecosystem |Operations team, technical and digital teams, owners of employee tools and systems |
-
-2. **Develop goals and the metrics that can be used to measure success** before you deploy Viva Connections with frontline workers. Define goals with stakeholders early in the process to ensure your plan can be measured and improved once its implemented. Develop goals that are specific, measurable, assignable, realistic, and time related.
-
-3. **Create communication channels** that allow frontline workers to share feedback about their experience with Viva Connections, ideas on how to improve the experience, and an opportunity to expand support for more processes and tasks. Consider using existing Yammer and Teams channels that are already focused on supporting frontline workers.
+- Create a sense of belonging and provide tools that help foster wellbeing.
 
 ### Increase engagement with communications
 
@@ -83,28 +63,36 @@ As you prioritize and align the scenarios to support, consider how and where cer
 
 #### Empower your workers to share feedback
 
-Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. In addition, getting feedback from these teams can provide insights into how your organization can improve processes. You can use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) in Viva Connections makes it easy to link to [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) that you can customize for your feedback needs. You can also [integrate third-party survey solutions](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. In addition, getting feedback from these teams can provide insights into how your organization can improve processes.
 
-> [!NOTE]
-> Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but they'll need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or [View the detailed license comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+- **On the Dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Yammer communities](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the Dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+    > [!NOTE]
+    > Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but they'll need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or [View the detailed license comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+- **In the Feed**: Strategically [publish a SharePoint news post](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) targeted to frontline workers to highlight different ways to collect feedback and explains how feedback can improve the frontline worker experience.
+- **In Resources**: Link to feedback tools so that frontline workers know where to go to provide feedback.
 
 ### Promote health and wellbeing
 
-Frontline workers need extra support when it comes to managing health and wellbeing. Not only are their jobs fast paced, but they can also be physically and emotionally demanding. Help frontline workers by using the Dashboard to help surface daily health checks, wellness reminders, access to health benefits, and other [third-party solutions that keep people feeling connected and productive](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+Frontline workers need extra support when it comes to managing health and wellbeing. Not only are their jobs fast paced, but they can also be physically and emotionally demanding.
 
-- Use the [Web link card](/viva/connections/create-dashboard#add-a-web-link-card) to link to existing health and wellness resources.
-- Use the [Teams app card](/viva/connections/create-dashboard#add-a-teams-app-card) to connect to health and wellness [apps in Microsoft Teams](https://support.microsoft.com/office/find-teams-apps-dca531fb-3885-428d-ba1a-f3c17032e07e).
-- Use the [Card designer](/viva/connections/create-dashboard#design-your-own-card-with-a-quick-view) to create a custom card.
+- **On the Dashboard**: Surface daily health checks, wellness reminders, and [other third-party solutions that keep people feeling connected and productive](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+- **In the Feed**: Use [SharePoint news posts](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) and [Video news links](/viva/connections/video-news-links) to spotlight wellness and health resources.
+- **In Resources**: Link to wellness and health resources to your workers can access them at any time.
 
 ### Create a supportive digital ecosystem
 
 Empowering frontline workers with the right technology makes their jobs easier and helps your organization quickly adapt to ever-changing work conditions. Use Viva Connections to create a digital ecosystem and curated employee experience.
 
-Use [Adaptive card templates](/adaptive-cards/templating/), the [Card designer](/viva/connections/create-dashboard#design-your-own-card-with-a-quick-view), and [third-party integrations](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration) to create custom cards and quick views that help workers access information and complete everyday tasks such as:
+- **On the Dashboard**: Use [Adaptive card templates](/adaptive-cards/templating/), the [Card designer](/viva/connections/create-dashboard#design-your-own-card-with-a-quick-view), and [third-party integrations](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration) to create custom cards and quick views that help workers access information and complete every day tasks such as:
+    - Finding or securing parking spaces
+    - Accessing pay and benefits information
+    - Requesting new uniforms and supplies
+- **In the Feed**: [SharePoint news posts](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) and [Video news links](/viva/connections/video-news-links) allow you to digitize organizational announcements. News posts are highlighted throughout the entire Microsoft 365 ecosystem, can be translated into different languages, and can be easily found when employees are searching for content.
+- **In Resources**: Link to tools that your teams use to manage work, such as [Teams apps](flw-team-collaboration.md#apps-in-teams).
 
-- Finding or securing parking spaces
-- Accessing pay and benefits information
-- Requesting new uniform pieces
+### Get started planning, building, and launching Viva Connections
+
+Review Viva Connections capabilities, technical requirements, and customization options. Then, work with stakeholders (such as representatives from HR and operations and process owners) who can accurately represent the needs of your frontline workforce. Take inventory of the highest priority needs and align them to Viva Connections capabilities to build a custom experience in Teams. [Get started planning, building, and launching Viva Connections for your organization](/viva/connections/plan-viva-connections).
 
 ## Create communities with Yammer
 
