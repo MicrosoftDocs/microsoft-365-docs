@@ -54,7 +54,7 @@ The quarantine list is a sortable view of quarantine information by tenant. With
 
 You also can adjust the columns and sort data based on tenant, message status, and expiration dates.
 
-:::image type="content" source="../media/m365-lighthouse-data-protection/quarantine-email-page.png" alt-text="Quarantine messages page in Microsoft 365 Lighthouse":::
+:::image type="content" source="../media/m365-lighthouse-data-protection/quarantine-email-page.png" alt-text="Quarantine messages page in Microsoft 365 Lighthouse" lightbox="../media/m365-lighthouse-data-protection/quarantine-email-page.png":::
 
 The **Copy Link to Messages in Microsoft** **365 Defender** option provides a link to Microsoft 365 Defender portal where you can access and manage your tenant’s email quarantine queue. You must authenticate before you can take any action.
 
