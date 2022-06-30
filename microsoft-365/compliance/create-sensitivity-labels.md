@@ -33,7 +33,9 @@ First, create and configure the sensitivity labels that you want to make availab
 Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
 > [!TIP]
-> If you don't have any sensitivity labels, you might be eligible for the automatic creation of default labels and a default label policy. Even if you have some labels, you might find it useful to see the configuration of the default labels we're creating for customers. For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
+> If you don't yet have any sensitivity labels, you might be eligible for the automatic creation of default labels and a default label policy. Even if you have some labels, you might find it useful to see the configuration of these default labels that we're creating for new customers. For example, you can make the same manual configurations to help accelerate your own label deployment.
+> 
+> For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
 ## Before you begin
 

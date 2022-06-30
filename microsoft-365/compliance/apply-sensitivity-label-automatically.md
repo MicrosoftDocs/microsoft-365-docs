@@ -268,7 +268,9 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 
 > [!TIP]
-> If you haven't already configured auto-labeling policies, you might be eligible for some typically-used auto-labeling policies to be automatically created for you. Even if you're not eligible, you might find it useful to see the configuration of these default auto-labeling policies we're creating for customers. For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
+> If you haven't already configured auto-labeling policies, you might be eligible for some auto-labeling policies to be automatically created for you. Even if you're not eligible, you might find it useful to see the configuration of these default auto-labeling policies. For example, you can manually create the same auto-labeling policies to help accelerate your labeling deployment.
+> 
+> For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
 ### Learn about simulation mode
 
