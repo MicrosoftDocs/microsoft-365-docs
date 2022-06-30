@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -20,6 +20,7 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- intro-overview
 search.appverid:
 - BCS160
 - MET150
@@ -63,8 +64,8 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
-> [!Note]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+> [!NOTE]
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
 
 ## [**Train Your Team**](#tab/Train)
 
@@ -96,8 +97,8 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
-> [!Note]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+> [!NOTE]
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
 
 ## [**Safeguard Managed Devices**](#tab/Safeguard)
 
@@ -125,5 +126,5 @@ Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-s
 
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
-> [!Note]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+> [!NOTE]
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
