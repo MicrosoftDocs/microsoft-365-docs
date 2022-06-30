@@ -32,10 +32,14 @@ This article discusses the steps necessary to set up eDiscovery (Standard). This
 
 Licensing for eDiscovery (Standard) requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access eDiscovery (Standard) in the Microsoft Purview compliance portal and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
+- **Organization subscription:** To access eDiscovery (Standard) in the Microsoft Purview compliance portal and use the hold and export features, your organization must have an Exchange online Plan 2 or Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
 
 - **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, users must be assigned one of the following licenses, depending on your organization subscription:
 
+  -  Exchange online Plan 2 license
+
+   OR
+   
   - A Microsoft 365 E3 or Office 365 E3 license or higher
 
    OR

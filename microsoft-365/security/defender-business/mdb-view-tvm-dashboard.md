@@ -32,10 +32,6 @@ Want to see how it works? Watch this video, which describes [Microsoft Defender 
 
 [Learn more about Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Next steps
 

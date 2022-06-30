@@ -81,6 +81,16 @@ This section describes the settings in Safe Attachments policies:
 
   You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
+  > [!IMPORTANT]
+  > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+  >
+  > - The recipient is: romain@contoso.com
+  > - The recipient is a member of: Executives
+  >
+  > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy is not applied to him.
+  >
+  > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy still applies to him.
+
 - **Priority**: If you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
   For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).

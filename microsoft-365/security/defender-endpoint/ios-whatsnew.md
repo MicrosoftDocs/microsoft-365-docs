@@ -28,6 +28,12 @@ ms.technology: mde
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## Network protection
+Network Protection on Microsoft Defender for Endpoint is now in public preview. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices and notifies the user if a related threat is detected. Users will also see a guided experience to connect to secure networks and change networks when they are connected to an unsecure connection.
+
+It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from iOS devices. For more information, read [Configure Network Protection](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
+
+Network protection for iOS is already enabled for your tenant. End-users who are testing Network protection feature can install the preview version of the app via TestFlight. Browse to https://aka.ms/mdeiospp on the iOS device. This will prompt you to install the TestFlight app on your device or open TestFlight in case it is already installed. On the TestFlight app, follow the onscreen instructions to install Microsoft Defender Endpoint. Please verify that the version number of MDE is 1.1.29270104.
 
 ## Integration with Tunnel
 Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app.  Integration with Tunnel provides a simpler, secure VPN experience on iOS with just one app. This feature was earlier available only on Android. For more details, [see the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
@@ -38,15 +44,14 @@ Microsoft Defender for Endpoint on iOS now has specialized ability on supervised
 
 ## Microsoft Defender for Endpoint is now Microsoft Defender in the App store
 
-Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the app store. With this update, the app will be available as preview for **Consumers in the US region**. Based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. For more information, see [this blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals).
+Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the app store. With this update, the app will be available as preview for **Consumers in the US region**. Based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. For more information, see [this blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
 
 ## Threat and Vulnerability Management
 
 On January 25, 2022, we announced the general availability of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
-
 ## 1.1.28250101
-- **Integration with Tunnel** - Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. For more information, see [Microsft Tunnel Overview](/mem/intune/protect/microsoft-tunnel-overview).
+- **Integration with Tunnel** - Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. For more information, see [Microsoft Tunnel Overview](/mem/intune/protect/microsoft-tunnel-overview).
 - **Zero-touch onboard for enrolled iOS devices** enrolled through Microsoft Endpoint Manager (Intune) is generally available. For more information, see [Zero touch onboarding of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/ios-install#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 - Bug fixes.
 
@@ -69,7 +74,7 @@ On January 25, 2022, we announced the general availability of Threat and Vulnera
 
 ## 1.1.20240103
 - Device Health card - Device Health card notifies end-users about any pending software updates.
-- Usability enhancements - End-users can now disable the Defender for Endpoint VPN from the MSDefender app itself. Prior to this update, end-users had to disable VPN only from the Settings app.
+- Usability enhancements - End-users can now disable the Defender for Endpoint VPN from the Microsoft Defender app itself. Prior to this update, end-users had to disable VPN only from the Settings app.
 - Bug fixes.
 
 ## 1.1.20020101
