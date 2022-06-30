@@ -49,7 +49,7 @@ In the center of the page, you’ll see current service health status of your to
 
 ### Microsoft 365 app updates
 
-To help you keep up to date with software updates, this section of the dashboard provides an at-a-glance view of whether Microsoft 365 desktop apps like Word, Excel, and PowerPoint are up-to-date. If some devices have fallen behind, you’ll see a list of devices and vulnerabilities to help you understand the risk. This information is powered by the Software Updates page <link>, which you can access for more information.
+To help you keep up to date with software updates, this section of the dashboard provides an at-a-glance view of whether Microsoft 365 desktop apps like Word, Excel, and PowerPoint are up-to-date. If some devices have fallen behind, you’ll see a list of devices and vulnerabilities to help you understand the risk. This information is powered by the Software Updates page <add link>, which you can access for more information.
 
 ### Recommended actions
 
