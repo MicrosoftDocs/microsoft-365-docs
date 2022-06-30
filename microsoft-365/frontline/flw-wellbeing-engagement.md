@@ -49,13 +49,13 @@ You can help your frontline team overcome these challenges and feel supported in
 
 Viva Connections is comprised of three main components that can be set up and customized in different ways to highlight tools and resources.
 
-|![Image of a Viva Connections mobile dashboard, feed, and resources](media/viva-connections-mobile.png) |
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vpnn]
 
-|Component |Description |Capabilities |Learn more |
-|:---------|:-----------|:------------|:----------|
-|Dashboard |The Dashboard is your employee’s digital toolset and enables quick access to popular tasks. |Prioritize cards that help frontline workers accomplish popular tasks like clocking in and out, or viewing assigned tasks. <br> Cards can be targeted to distinct roles and regions. |
-|Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows <br> Content can be prioritized to display more prominently in the Feed. |
-|Resources |The Resources surface links to popular SharePoint portals and other content. |Resources are inherited from global navigation in SharePoint. <br> Link to popular SharePoint portals like HR benefits and training resources. <br> Modern SharePoint portals will display in Teams to provide the best possible viewing experience. |
+|Component |Description |Capabilities |
+|:---------|:-----------|:------------|
+|Dashboard |The Dashboard is your employee’s digital toolset and enables quick access to popular tasks. |Prioritize cards that help frontline workers accomplish popular tasks like clocking in and out, or viewing assigned tasks. Cards can be targeted to distinct roles and regions. |
+|Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows. Content can be prioritized to display more prominently in the Feed. |
+|Resources |The Resources surface links to popular SharePoint portals and other content. |Resources are inherited from global navigation in SharePoint. Link to popular SharePoint portals like HR benefits and training resources. Modern SharePoint portals will display in Teams to provide the best possible viewing experience. |
 
 There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [Feed where news, content from Yammer, and videos are aggregated and displayed](/viva/connections/viva-connections-overview#viva-connections-feed) in a personalized view based on the sites and communities that the viewer follows. The [Dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
 
@@ -66,8 +66,10 @@ As you prioritize and align the scenarios to support, consider how and where cer
 Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. In addition, getting feedback from these teams can provide insights into how your organization can improve processes.
 
 - **On the Dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Yammer communities](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the Dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+
     > [!NOTE]
     > Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but they'll need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or [View the detailed license comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+
 - **In the Feed**: Strategically [publish a SharePoint news post](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) targeted to frontline workers to highlight different ways to collect feedback and explains how feedback can improve the frontline worker experience.
 - **In Resources**: Link to feedback tools so that frontline workers know where to go to provide feedback.
 
