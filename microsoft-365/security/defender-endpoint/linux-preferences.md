@@ -88,6 +88,17 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 |**Data type**|String|
 |**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
+
+#### Configure file hash computation feature
+
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans.
+
+|Description|Value|
+|---|---|
+|**Key**|enableFileHashComputation|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.// will change version|
   
 #### Run a scan after definitions are updated
 
@@ -315,6 +326,23 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 |**Data type**|String|
 |**Possible values**|optional <p> required (default)|
 |
+
+#### Configure cloud block level
+
+This setting determines how aggressive Defender for Endpoint will be in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. There are five values for setting cloud block level:
+
+- Normal (`normal`): The default blocking level.
+- Moderate (`moderate`): Delivers verdict only for high confidence detections.
+- High (`high`): Aggressively blocks unknown files while optimizing for performance (greater chance of blocking non-harmful files).
+- High Plus (`high_plus`): Aggressively blocks unknown files and applies additional protection measures (might impact client device performance).
+- Zero Tolerance (`zero_tolerance`): Blocks all unknown programs.
+
+|Description|Value|
+|---|---|
+|**Key**|cloudBlockLevel|
+|**Data type**|String|
+|**Possible values**|normal (default) <p> moderate <p> high <p> high_plus <p> zero_tolerance|
+|**Comments**|Available in Defender for Endpoint version 101.56.62 or higher.|
   
 #### Enable / disable automatic sample submissions
 
