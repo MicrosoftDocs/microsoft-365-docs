@@ -46,4 +46,4 @@ The filters and time ranges applied to the incidents queue can provide the follo
 
 Such data can be exported to a CSV file through the **Export** feature.
 
-If you have thoughts or suggestions about the new **Export** button for the incident queue, contact Microsoft team or send your feedback through the Microsoft 365 Defender portal.
+If you have thoughts or suggestions about the new **Export** feature (the **Export** button) for the incident queue, contact Microsoft team or send your feedback through the Microsoft 365 Defender portal.
