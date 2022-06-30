@@ -36,7 +36,9 @@ You can help your frontline team overcome these challenges and feel supported in
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
-![Image of a SharePoint homesite and mobile Viva Connections dashboard](media/viva-connections.png)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vpnn]
+
+<!-- ![Image of a SharePoint homesite and mobile Viva Connections dashboard](media/viva-connections.png) This seems more like an IW image than a frontline one. Swapping out for the video. -->
 
 [Viva Connections](/viva/connections/viva-connections-overview) brings the power of SharePoint into Microsoft Teams, so your frontline workers can easily access everything they need on the go. Use the Viva Connections app for Microsoft Teams to:
 
@@ -47,9 +49,9 @@ You can help your frontline team overcome these challenges and feel supported in
 
 ### Increase engagement with communications
 
-Viva Connections is comprised of three main components that can be set up and customized in different ways to highlight tools and resources.
+Viva Connections is comprised of three main components that can be set up and customized in different ways to highlight tools and resources: the dashboard, feed and resources, shown below.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vpnn]
+![Viva Connections dashboard, feed, and resources.](media/viva-connections-mobile-flw.png)
 
 |Component |Description |Capabilities |
 |:---------|:-----------|:------------|
