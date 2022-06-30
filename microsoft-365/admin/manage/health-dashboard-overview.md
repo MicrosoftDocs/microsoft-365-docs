@@ -51,6 +51,8 @@ In the center of the page, you’ll see current service health status of your to
 
 To help you keep up to date with software updates, this section of the dashboard provides an at-a-glance view of whether Microsoft 365 desktop apps like Word, Excel, and PowerPoint are up-to-date. If some devices have fallen behind, you’ll see a list of devices and vulnerabilities to help you understand the risk. This information is powered by the Software Updates page <add link>, which you can access for more information.
 
+:::image type="content" source="../../media/health-dashboard-app-updates.png" alt-text="Screenshot: Health dashboard app update information":::
+
 ### Recommended actions
 
 At the bottom of the dashboard, you’ll see recommendations on what you can do to improve your organization’s health:
@@ -67,6 +69,4 @@ What other alerts, health indicators, and monitoring would you like to see? Acti
 
 ## Note for Microsoft enterprise customers
 
-A note for our enterprise customers: the initial version of this dashboard focuses on a small or solo IT teams where it is common for one person to manage the complete surface area of Microsoft 365. Over time we intend to expand and evolve the dashboard to address the needs of more IT roles and larger organization sizes. We’d love your input to make sure we get it right along that path; so if you have ideas of what would make it useful in your orgs, please send those too.
-
-We’re excited to bring this dashboard to you.  We hope it will be a useful tool to help you keep tabs on the total health of your Microsoft 365 environment, so you can keep your organization up-to-date, secure, and productive.
+The initial version of the Health dashboard focuses on a smaller teams, where it's common for one person to manage Microsoft 365. We intend to expand and evolve the dashboard to address the needs of more IT roles and larger organization sizes soon. We’d love your input to make sure we get it right.
