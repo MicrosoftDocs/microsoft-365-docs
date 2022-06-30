@@ -53,7 +53,7 @@ On the Services activity chart, the X axis displays the individual services your
 
 - You can filter the series you see on the chart by selecting an item in the legend. Changing this selection doesn't change the info in the grid table.
 
-- You can also export the report data into an Excel .csv file, by selecting the Export link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.
+- You can also export the report data into an Excel .csv file, by selecting the Export link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 
 - You can change what information is displayed in the grid table with column controls.
 If your subscription is operated by 21Vianet, then you will not see Yammer.

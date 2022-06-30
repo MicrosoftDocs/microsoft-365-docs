@@ -35,7 +35,7 @@ The Microsoft 365 Reports dashboard shows you an activity overview across the pr
 
 :::image type="content" alt-text="Microsoft browser usage report." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
-The **Microsoft browser usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. The data in each report usually covers up to the last seven days.
+The **Microsoft browser usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. 
 
 The **Daily active users** chart shows you the daily user count for Microsoft Edge when used to access to Microsoft 365 services.
 
@@ -50,4 +50,4 @@ The table shows you a breakdown of data at the per-user level. You can add or re
 
 Select the **Choose columns** icon to add or remove columns from the report.
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data for all users and enables you to do simple aggregation, sorting, and filtering for further analysis. If you have fewer than 100 users, you can sort and filter within the table in the report itself. If you have more than 100 users, in order to filter and sort, you will need to export the data.
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data for all users and enables you to do simple aggregation, sorting, and filtering for further analysis. 

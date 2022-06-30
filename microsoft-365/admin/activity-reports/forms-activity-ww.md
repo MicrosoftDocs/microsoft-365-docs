@@ -39,7 +39,7 @@ You can view the activities in the Forms report by choosing the **Activity** tab
 
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Forms activity report - choose columns.](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 
 The **Forms activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
