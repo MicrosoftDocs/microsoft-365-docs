@@ -21,8 +21,6 @@ ms.custom:
 - MiniMaven
 - MSB365
 - intro-overview
-ms.prod: microsoft-365-business
-ms.technology: business-premium
 search.appverid:
 - BCS160
 - MET150
