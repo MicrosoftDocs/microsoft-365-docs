@@ -97,7 +97,7 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |**Key**|enableFileHashComputation|
 |**Data type**|String|
 |**Possible values**|disabled (default) <p> enabled|
-|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.// will change version|
+|**Comments**|Available in Defender for Endpoint version 101.73.73 or higher.|
 
 #### Run a scan after definitions are updated
 
