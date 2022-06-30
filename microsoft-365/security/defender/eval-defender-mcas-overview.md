@@ -19,7 +19,6 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-evalutatemtp  
-  - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
 ---

@@ -26,7 +26,7 @@ search.appverid:
 description: "Learn how Microsoft 365 Business Premium helps your business with productivity and security."
 ---
 
-# How Microsoft 365 Business Premium helps your business
+# How Microsoft 365 security recommendations affect your users
 
 Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can help your business, and includes these sections:
 
@@ -38,7 +38,7 @@ Microsoft 365 Business Premium is a cost-effective solution that empowers small 
 
 ## Video: Top 5 benefits of Microsoft 365 Business Premium
 
-Watch the following video to learn see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
+Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
@@ -62,7 +62,7 @@ Microsoft 365 Business Premium includes your favorite Office productivity apps, 
 
 ## Resources to train your users
 
-The security recommendations provided in this library make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training users&mdash; the people in your company who use your systems regularly. Users can help be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment. 
+The security recommendations provided in these missions make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training members of the organization&mdash;the people in your company who use your systems regularly. Users can be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
 
 Resources are available to help everyone in your organization to:
 

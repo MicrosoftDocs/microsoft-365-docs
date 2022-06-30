@@ -4,8 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -37,5 +36,7 @@ Watch a short video on a typical incident response.
 To learn more about incident responses, use the following steps:
 
 1. [Review security recommendations](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
+
 1. [Review remediation actions](m365bp-review-remediation-actions-devices.md).
+
 1. [Respond to a compromised email account](../security/office-365-security/responding-to-a-compromised-email-account.md).

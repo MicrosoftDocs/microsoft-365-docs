@@ -2,8 +2,8 @@
 title: "Protect yourself against phishing and other attacks"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
@@ -39,7 +39,7 @@ In addition to the protection Microsoft 365 Business Premium offers against atta
 - **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
 
 > [!TIP]
-> To learn more security concepts, see our [Glossary of terms](m365bp-glossary.md).
+> To learn more security concepts, see our [Glossary of terms](m365bp-glossary.yml).
 
 ## Best practices
 

@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -26,7 +26,7 @@ description: "Set up compliance features to prevent data loss and help keep your
 ---
 # Set up compliance features
 
-Your Microsoft 365 Business Premium subscription includes compliance and privacy features. These capabilities help protect your company's data, and to help you keep your and your customers' sensitive information secure. This article is designed to help you get started with your compliance features.
+Your Microsoft 365 Business Premium subscription includes compliance and privacy features. These capabilities help protect your company's data, and keep your and your customers' sensitive information secure. This article is designed to help you get started with your compliance features.
 
 ## Before you begin
 

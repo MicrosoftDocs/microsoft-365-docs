@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/18/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -30,7 +29,7 @@ description: "How to set up managed devices"
 
 A "managed" device is one that is under control and being monitored by the organization, and is therefore regularly updated, and secure. Having devices under managed control is a critical objective. To bring these devices under control, they are enrolled in a device manager with Intune and Azure Active Directory Premium, both of which are included with Microsoft Business Premium. 
 
-A Windows 10 PC is considered managed after users have completed the following two steps:
+A Windows 10 or 11 PC is considered managed after users have completed the following two steps:
 
 1. Set up device and data protection policies in the [setup  wizard](../business/set-up.md).
 
@@ -38,7 +37,7 @@ A Windows 10 PC is considered managed after users have completed the following t
 
 ## Enroll devices in Microsoft Endpoint Manager
 
-Now you can enroll devices in Endpoint Manager, go to https://endpoint.microsoft.com and select **Devices** > **Enroll devices**. 
+Now you can enroll devices in Endpoint Manager. Go to https://endpoint.microsoft.com and select **Devices** > **Enroll devices**. 
 
 :::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Use Microsoft Endpoint Manager to enroll devices."::: 
 
@@ -47,21 +46,28 @@ Follow specific device enrollment guidance below.
 ### For Windows enrollment:
 
 1. Select **Windows** > **Windows enrollment**. 
-1. From the enrollment methods listed, select **Automatic enrollment**.
+
+2. From the enrollment methods listed, select **Automatic enrollment**.
 
 ### For iOS enrollment:
 
 1. Select **iOS** > **iOS enrollment**.
-1. From the list of policies, select a policy to see its details.
-1. Select **Properties** to manage the policy.
-1. Select **Settings** > **System Security** and configure security details in Intune.
-1. Look at configuration profiles. 
-1. Create a profile and push it to the devices in your organization, as needed.
+
+2. From the list of policies, select a policy to see its details.
+
+3. Select **Properties** to manage the policy.
+
+4. Select **Settings** > **System Security** and configure security details in Intune.
+
+5. Look at configuration profiles. 
+
+6. Create a profile and push it to the devices in your organization, as needed.
 
 ### For Android enrollment:
 
 1. Select **Android** > **Android enrollment**.
-1. Choose **Managed Google Play** and grant Microsoft permission to send information to Google.
+
+2. Choose **Managed Google Play** and grant Microsoft permission to send information to Google.
 
 ## Next objective
 

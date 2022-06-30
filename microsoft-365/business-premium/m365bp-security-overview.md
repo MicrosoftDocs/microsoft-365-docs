@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -28,7 +27,7 @@ description: "Security overview for Microsoft 365 Business Premium which provide
 
 # Bump up security
 
-In this mission, you bump up your security defenses. As you must know by now, Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. 
+In this mission, you augment your security defenses. As you must know by now, Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. 
 
 To be successful in this mission, you're going to to set up the different Admin roles and specific levels of security for them. You'll also enforce MFA requirements and set up your security defaults. Stay vigilant - the safety and reliability of the system relies upon you.
 

@@ -2,11 +2,11 @@
 title: "Remove company data from devices"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -28,11 +28,6 @@ description: "Discover how to use Microsoft 365 for business to remove company d
 ---
 
 # Remove company data from devices
-
-This article applies to Microsoft 365 Business Premium.
-
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Remove company data
 
