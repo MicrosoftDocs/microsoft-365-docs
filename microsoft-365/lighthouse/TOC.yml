@@ -68,6 +68,8 @@
       href: m365-lighthouse-threat-management-page-overview.md
     - name: Mitigate threats with Microsoft Defender Antivirus
       href: m365-lighthouse-mitigate-threats.md
+    - name: Overview of quarantined messages
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: Get help and support
   items: 
     - name: Get help and support
