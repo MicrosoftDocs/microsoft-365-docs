@@ -43,7 +43,7 @@ Ready to start managing your organization's high-value content for legal, busine
 
 ## Subscription and licensing requirements
 
-A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
+A number of different subscriptions support records management and the licensing requirements for users depends on the features you use.
 
 To see the options for licensing your users to benefit from Microsoft Purview features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For records management, see the [Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) section and related PDF download for feature-level licensing requirements.
 
@@ -80,6 +80,7 @@ Use the following table to help you map your business requirements to the scenar
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
+| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management (preview)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
 
 ## End-user documentation
 
