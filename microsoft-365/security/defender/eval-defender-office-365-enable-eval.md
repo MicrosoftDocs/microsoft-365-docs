@@ -34,7 +34,6 @@ Use the following steps to enable the evaluation for Microsoft Defender for Offi
 
 :::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="The steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
 
-
 - [Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
 - [Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)
 - [Step 3: Audit accepted domains](#step-3-audit-accepted-domains)
@@ -65,28 +64,30 @@ Log on to your existing Microsoft Defender for Office 365 environment or tenant 
 
 ## Step 2: Audit and verify the public MX record
 
-To effectively evaluate Microsoft Defender for Office 365, it's important that inbound external email be relayed through the Exchange Online Protection (EOP) instance associated with your tenant.
+To effectively evaluate Microsoft Defender for Office 365, it's important that inbound email is relayed through the Exchange Online Protection (EOP) instance associated with your tenant.
 
-1. Log on to the M365 Admin Portal, expand Settings, and select Domains.
+1. Log on to the M365 admin portal, expand Settings, and select Domains.
 2. Select your verified email domain and click Manage DNS.
 3. Make note of the MX record generated and assigned to your EOP tenant.
 4. Access your external (public) DNS zone and check the primary MX record associated with your email domain.
     - *If your public MX record currently matches the assigned EOP address (e.g. tenant-com.mail.protection.outlook.com) then no further routing changes should be required*.
-    - If your public MX record currently resolves to a third-party or on-premises SMTP gateway then additional routing configurations may be required.
-    - If your public MX record currently resolves to on-premises Exchange then you may still be in a hybrid model where some recipient mailbox have not yet been migrated to EXO.
+    - If your public MX record currently resolves to a third-party or on-premises SMTP gateway then additional routing configurations might be required.
+    - If your public MX record currently resolves to on-premises Exchange then you might still be in a hybrid model where some recipient mailbox have not yet been migrated to EXO.
 
 ## Step 3: Audit accepted domains
 
-1. Log on the Exchange Online Admin Portal, select Mail Flow, and then click Accepted Domains.
-2. From the list of accepted domains that have been added and verified in your tenant, make note of the **domain type** for your primary email domain.
-    - If the domain type is set to ***Authoritative*** then it is assumed all recipient mailboxes for your organization currently reside in Exchange Online.
-    - If the domain type is set to ***Internal Relay*** then you may still be in a hybrid model where some recipient mailboxes still reside on-premises.
+1. Open the Exchange admin center at <https://admin.exchange.microsoft.com>.
+1. Go to **Mail flow** \> **Accepted domains**.
+1. From the list of accepted domains that have been added and verified in your tenant, make note of the **Domain type** value for your primary email domain:
+    - If the domain type is **Authoritative** then it's assumed that all recipient mailboxes for your organization currently reside in Exchange Online.
+    - If the domain type is **Internal Relay** then you might still be in a hybrid model where some recipient mailboxes still reside on-premises.
 
 ## Step 4: Audit inbound connectors
 
-1. Log on the Exchange Online Admin Portal, select Mail Flow, and then click Connectors.
-2. From the list of configured connectors, make note of any entries which are from **Partner Organization** and may correlate to a third-party SMTP gateway.
-3. From the list of configured connectors, make note of any entries labeled **From your organization's email server** which may indicate that you are still in hybrid scenario.
+1. Open the Exchange admin center at <https://admin.exchange.microsoft.com>.
+1. Go to **Mail flow** \> **Connectors**.
+1. From the list of configured connectors, make note of any entries which are from **Partner Organization** and might correlate to a third-party SMTP gateway.
+1. From the list of configured connectors, make note of any entries labeled **From your organization's email server** which might indicate that you are still in hybrid scenario.
 
 ## Step 5: Activate the evaluation
 
