@@ -34,7 +34,7 @@ ms.technology: mde
 
 ## What is EDR in block mode?
 
-[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) in block mode provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode. EDR in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. Such artifacts might have been missed by the primary, non-Microsoft antivirus product.
+[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) in block mode provides added protection from malicious artifacts when Microsoft Defender Antivirus(MDAV) is not the primary antivirus product and is running in passive mode. EDR in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. Such artifacts might have been missed by the primary, non-Microsoft antivirus product. EDR in block mode allows Microsoft Defender Antivirus to take actions on post-breach, behavioral EDR detections. See: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/edr-in-block-mode?view=o365-worldwide#:~:text=Do%20I%20need%20to%20turn%20EDR%20in%20block%20mode%20on%20if%20I%20have%20Microsoft%20Defender%20Antivirus%20running%20on%20devices%3F
 
 > [!IMPORTANT]
 > EDR in block mode does not provide all the protection that is available when Microsoft Defender Antivirus real-time protection is enabled. All features that depend on Microsoft Defender Antivirus to be the active antivirus solution will not work, including the following key examples:
@@ -44,7 +44,7 @@ ms.technology: mde
 >
 > It is expected that your non-Microsoft antivirus solution provides these capabilities.
 
-EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled.
+EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. This recommendation is primarily for devices using an active 3rd party antivirus (MDAV is in passive mode). There is little benefit to enabling when MDAV is the primary antivirus.  
 
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode.":::
 
@@ -53,9 +53,9 @@ EDR in block mode is integrated with [threat & vulnerability management](next-ge
 
 ## What happens when something is detected?
 
-When EDR in block mode is turned on, and a malicious artifact is detected, Microsoft Defender for Endpoint blocks and remediates that artifact. Your security operations team will see detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions.
+When EDR in block mode is turned on, and a malicious artifact is detected, Microsoft Defender for Endpoint remediates that artifact. Your security operations team will see detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions. 
 
-The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
+The following image shows an instance of unwanted software that was detected and remediated through EDR in block mode:
 
 :::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR in block mode detected something.":::
 
