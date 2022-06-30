@@ -66,9 +66,9 @@ With an Azure subscription selected, you can add a network sensor.
 
 To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Manage sensors with Defender for IoT in the Azure portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
 
-## View devices, alerts, recommendations, and vulnerabities
+## View devices, alerts, recommendations, and vulnerabilities
 
-After defining your plan and setting up a network sensor, view detected data and security assessements in the following locations:
+After defining your plan and setting up a network sensor, view detected data and security assessments in the following locations:
 
 - View device data in Defender for Endpoint or Defender for IoT
 - View alerts, recommendations, and vulnerabilities in Defender for Endpoint
