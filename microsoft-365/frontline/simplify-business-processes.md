@@ -27,8 +27,6 @@ appliesto:
 
 You can use Teams apps, Power Apps, and Power BI to simplify business processes for your frontline teams.
 
-<!-->> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc] -->
-
 > [!NOTE]
 > Additional capabilities for [financial services](/industry/financial-services), [healthcare](/industry/healthcare), [nonprofit](/industry/nonprofit), and [retail](/industry/retail) environments are available with the Microsoft industry clouds, which include capabilities from Dynamics 365 and Microsoft Azure as well as the Microsoft 365 features.
 
@@ -57,7 +55,6 @@ Add Power Apps to create low-code or no-code applications for your organization.
 |:--------|:-------|
 |Financial services |You can create an app for relationship and account managers to track calls and emails to clients. |
 |Healthcare |You can create an app to track consumables inventory in exam rooms to make sure all rooms are ready for patients. |
-|Nonprofit | You can create an app to track calls and donations for fundraising efforts. |
 |Retail | You can create an app to manage and track your inventory, or to conduct store walks where a person in charge checks all areas of a store before opening. |
 
 More information: [Power Apps](/microsoftteams/manage-power-platform-apps) and [Power Apps and Microsoft Teams integration](/powerapps/teams/overview).
