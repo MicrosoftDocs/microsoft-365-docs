@@ -23,7 +23,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->The following features are in preview or generally available (GA) in the latest release of Microsoft 365 Defender.
+Lists the new features and functionality in Microsoft 365 Defender. 
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
