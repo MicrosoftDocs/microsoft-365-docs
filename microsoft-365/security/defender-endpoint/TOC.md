@@ -371,9 +371,6 @@
 #### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
 #### [Optimize attack surface reduction rule deployment and detections](configure-machines-asr.md)
 
-## [Guidance for active threats and campaigns]()
-### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
-
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](overview-endpoint-detection-response.md)

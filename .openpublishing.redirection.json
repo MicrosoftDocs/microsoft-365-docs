@@ -7499,6 +7499,11 @@
       "source_path": "microsoft-365/compliance/privileged-access-management-overview.md",
       "redirect_url": "/microsoft-365/compliance/privileged-access-management",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-manage-Log4shell-guidance.md",
+      "redirect_url": "microsoft-365/security/defender-vulnerability-management/tvm-manage-Log4shell-guidance",
+      "redirect_document_id": true
     }
   ]
 }
