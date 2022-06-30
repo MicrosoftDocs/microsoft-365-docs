@@ -46,6 +46,8 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 Information Protection and Governance
 
+Please note that if you are licensed and eligible for this feature, the Data Loss Prevention alerts will automatically start flowing into Microsoft 365 Defender. If you want to turn it off, please raise a support case. 
+
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
 Before you start, [turn on alerts for all your DLP policies](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
