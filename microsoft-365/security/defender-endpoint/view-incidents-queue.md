@@ -48,9 +48,6 @@ On the top navigation you can:
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.
 
-> [!NOTE]
-> A new button **Export** has been added in the incidents queue to export filter-applied data to a CSV file. For more information, see [Filters and time ranges](../defender/export-button-in-incidents-queue.md#filters-and-time-ranges)
-
 ### Severity
 
 Incident severity | Description
