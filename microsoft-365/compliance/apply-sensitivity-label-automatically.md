@@ -75,6 +75,12 @@ There are two different methods for automatically applying a sensitivity label t
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email when the sender is from your own organization. When the sender is outside your organization, you can specify a Rights Management owner for incoming email that's labeled and encrypted by your policy.
     - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that for incoming email, this configuration can result in displaying the names of people outside your organization.
 
+> [!TIP]
+> For some new customers, we're offering the automatic creation of auto-labeling settings for both client-side labeling and service-side labeling. Even if you're not eligible for this automatic configuration, you might find it useful to reference their configuration. For example, you can manually configure existing labels and create your own auto-labeling policies with the same settings to help accelerate your labeling deployment.
+> 
+> For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
+
+
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:
@@ -265,12 +271,6 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
   - If the labels apply [encryption](encryption-sensitivity-labels.md):
     - When the auto-labeling policy includes locations for SharePoint or OneDrive, the label must be configured for the **Assign permissions now** setting, and **User access to content expires** must be set to **Never**.
     - When the auto-labeling policy is just for Exchange, the label can be configured for either **Assign permissions now** or **Let users assign permissions** (for the Do Not Forward or Encrypt-Only options). You can't auto-apply a label that's [configured to apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
-
-
-> [!TIP]
-> If you haven't already configured auto-labeling policies, you might be eligible for some auto-labeling policies to be automatically created for you. Even if you're not eligible, you might find it useful to see the configuration of these default auto-labeling policies. For example, you can manually create the same auto-labeling policies to help accelerate your labeling deployment.
-> 
-> For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
 ### Learn about simulation mode
 
