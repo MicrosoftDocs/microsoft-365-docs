@@ -48,7 +48,7 @@ The following data controls are planned for future releases of Whiteboard:
 
 ## See also
 
-[Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)
+[Manage access to Whiteboard - GCC High](manage-whiteboard-access-gcc-high.md)
 
 [Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
 
