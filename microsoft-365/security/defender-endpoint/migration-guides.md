@@ -10,7 +10,6 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
-  - m365solution-scenario
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
