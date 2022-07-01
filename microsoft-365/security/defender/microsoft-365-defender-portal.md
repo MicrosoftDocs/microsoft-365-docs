@@ -28,7 +28,7 @@ adobe-target: true
 
 # Microsoft 365 Defender portal
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> combines protection, detection, investigation, and response to email*, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
@@ -44,29 +44,35 @@ The Microsoft 365 Defender portal helps security teams investigate and respond t
 
 - Incidents & alerts
 - Hunting
-- Action center
+- Actions & submissions
 - Threat analytics
+- Secure score
+- Learning hub
+- Trials
 
 Microsoft 365 Defender emphasizes *unity, clarity, and common goals*. 
 
 > [!NOTE]
 > The Microsoft 365 Defender portal is accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal is accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers see only the security features their subscription license supports. The goal of the portal is to centralize security.
 
-## Unified investigations
+## Incident and alert investigations
 
-Centralizing security information creates a single place for investigating security incidents across Microsoft 365. A primary example is **Incidents** under **Incidents & alerts** on the quick launch of Microsoft 365 Defender.
+Centralizing security information creates a single place for investigating security incidents across Microsoft 365. A primary example is **Incidents** under **Incidents & alerts**.
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/converged-incidents-2.png.png":::
 
-Selecting an incident name displays a page that demonstrates the value of centralizing security information.
+Selecting an incident name displays a page that demonstrates the value of centralizing security information as you'll have better insights into the full extend of a threat, from email, to identity, to endpoints.
 
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="The Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/converged-incident-info-3.png":::
 
-Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, **Evidence and response**, and **Graph**  tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure AD, and third-party identity providers. For more information, see [investigate users](investigate-users.md).
-
-Take the time to review the incidents in your environment, drill down into these tabs, and practice building an understanding of how to access the information provided for incidents for different kinds of threats.
+Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
 
 For more information, see [incidents in Microsoft 365 Defender](incidents-overview.md).
+
+## Hunting
+You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
+
+For more information, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md).
 
 ## Improved processes
 
@@ -96,13 +102,7 @@ The **Home** page shows many of the common cards that security teams need. The c
 
 This at-a-glance information helps you keep up with the latest activities in your organization. Microsoft 365 Defender brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
 
-The cards fall into these categories:
-
-- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](/azure/active-directory/identity-protection/overview-identity-protection).
-- **Data** - Help track user activity that could lead to unauthorized data disclosure.
-- **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
-- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about discovered apps in Defender for Cloud Apps](/cloud-app-security/discovered-apps).
-
+You can add and remove different cards depending on your needs.
 
 ### Search across entities (Preview)
 
@@ -121,17 +121,18 @@ You can search across the following entities in Defender for Endpoint and Defend
 
 - **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
 
-## Threat analytics with better data coverage
+## Threat analytics
 
-Track and respond to emerging threats with the following Microsoft 365 Defender threat analytics integrated experience:
+Track and respond to emerging threats with the following Microsoft 365 Defender threat analytics:
+Threat analytics is the Microsoft 365 Defender threat intelligence solution from expert Microsoft security researchers. It's designed to assist security teams to be as efficient as possible while facing emerging threats, such as:
 
-- Better data coverage between Microsoft Defender for Endpoint and Microsoft Defender for Office 365, making combined incident management, automatic investigation, remediation, and proactive or reactive threat hunting across-domain possible.
-- Email-related detections and mitigations from Microsoft Defender for Office 365, in addition to the endpoint data already available from Microsoft Defender for Endpoint.
-- A view of threat-related incidents which aggregate alerts into end-to-end attack stories across Microsoft Defender for Endpoint and Microsoft Defender for Office 365 to reduce the work queue, as well as simplify and speed up your investigation.
-- Attack attempts detected and blocked by Microsoft 365 Defender solutions. There's also data that you can use to drive preventive actions that mitigate the risk of further exposure and increase resilience.
-- Enhanced design that puts actionable information in the spotlight to help you  quickly identify data to urgently focus on, investigate, and leverage from the reports.
+- Active threat actors and their campaigns
+- Popular and new attack techniques
+- Critical vulnerabilities
+- Common attack surfaces
+- Prevalent malware
 
-## A centralized Learning Hub
+## Learning Hub
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> includes a learning hub that provides guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation.
 
