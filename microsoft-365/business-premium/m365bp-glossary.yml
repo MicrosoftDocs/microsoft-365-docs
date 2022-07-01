@@ -88,7 +88,7 @@ content: |
  Malware is a term used to describe malicious applications and code that can cause damage and disrupt normal use of devices. Malware can allow unauthorized access, use system resources, steal passwords, lock you out of your computer and ask for ransom, and more. Malware is the overarching name for applications and other code, like software, that Microsoft classifies more granularly as malicious software or unwanted software.
  ### managed devices
  Devices such as PCs, laptops, tablets and mobile devices that are managed by the organization.
- ### multi factor authentication (MFA)
+ ### multi-factor authentication (MFA)
  An authentication method that requires the user to provide two or more verification factors to gain access to a resource such as an application, online account, or a VPN.
  
  ## P

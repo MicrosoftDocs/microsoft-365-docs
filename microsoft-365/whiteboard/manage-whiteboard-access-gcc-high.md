@@ -1,5 +1,5 @@
 ---
-title: Enable and manage access to Microsoft Whiteboard for GCC High environments
+title: Manage access to Microsoft Whiteboard for GCC High environments
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
-# Enable and manage access to Microsoft Whiteboard for GCC High environments
+# Manage access to Microsoft Whiteboard for GCC High environments
 
 >[!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) High environments.
