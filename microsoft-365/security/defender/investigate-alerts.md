@@ -175,10 +175,11 @@ The **Recommendations** tab provides next-step actions and advice for investigat
  
 ## Suppress an alert
 
-Alert suppression provides the ability to tune and manage alerts in advance, before they trigger. This keeps the queue focused and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behaviour occurs, and rule conditions are met.
+As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. For lower priority alerts, an analyst is still required to triage and resolve the alert which tends to be a manual process. For all organizations, we recognize how critical a SOC analyst’s time is and want to ensure that they can focus on high severity and high priority alerts.  
 
-You need to create rule conditions based on evidence types such as files, processes, scheduled tasks and many other 'evidences' that trigger the alert. Then apply the rule on the selected alert or any alert type that meets rule conditions to suppress the alert.
+Alert suppression provides the ability to tune and manage alerts in advance. This streamlines the alert queue and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behaviour occurs, and rule conditions are met. 
 
+You can create rule conditions based on ‘evidence types’ such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, user can apply the rule on the selected alert or any alert type that meets the rule conditions to suppress the alert. 
 
 > [!NOTE]
 > Suppression of alerts is not recommended. However in certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a suppression rule for the alert. 
@@ -195,7 +196,7 @@ To create a suppression rule for alerts:
 
     However, to apply the rule on any alert type that meets rule conditions select **Any alert type based on IOC conditions**.
  
-    IOCs are indicators such as files, processes, scheduled tasks, and other 'evidences' that trigger the alert.
+    IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
      
 3. In the **IOCs** section, select **Any IOC** to suppress the alert no matter what 'evidence' has caused the alert. 
 
@@ -213,14 +214,14 @@ To create a suppression rule for alerts:
 
     3. You can edit and/or delete properties of this 'evidence' as per your requirement (using wildcards, when supported).
 
-    4. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added 'evidences' that you can select from the evidence types drop-down list.
+    4. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Other types of evidence" lightbox="../../media/investigate-alerts/other-evidence-types.png":::
 
     5. To add another IOC, click **Add filter**. 
     > [!NOTE]
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
     
-4. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related 'evidences' and their properties at once in the **Conditions** section.
+4. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related evidence types and their properties at once in the **Conditions** section.
     :::image type="content" source="../../media/investigate-alerts/auto-fill-IOCs.png" alt-text="Auto fill all alert related IoCs" lightbox="../../media/investigate-alerts/auto-fill-IOCs.png":::
 
 5. In the **Scope** section, set the Scope in the **Conditions** sub-section by selecting specific device, multiple devices, device groups, the entire organization or by user.
