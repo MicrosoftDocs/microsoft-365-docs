@@ -138,7 +138,7 @@ Your Microsoft 365 environment includes protection against malware. You can incr
 
 ### Block attachments with certain file types
 
-You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view [Watch: Raise the level of protection against malware in mail](#watch-raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
+You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view [Watch: Raise the level of protection against malware in mail](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 2. On the **Anti-malware** page, double-click on **Default**. A flyout appears.
