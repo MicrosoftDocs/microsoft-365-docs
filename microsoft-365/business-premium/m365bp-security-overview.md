@@ -33,7 +33,7 @@ To be successful in this mission, you'll set up the different admin roles and sp
 
 This mission has the following objectives:
 
-- [Protect Admin accounts](m365bp-protect-admin-accounts.md)
+- [Protect your admin accounts](m365bp-protect-admin-accounts.md)
 - [Turn on security defaults](m365bp-conditional-access.md)
 - [Protect against malware and other threats](m365bp-increase-protection.md)
 
