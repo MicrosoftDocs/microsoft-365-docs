@@ -71,7 +71,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in the form of cryptocurrencies like Bitcoin, in exchange for access to data.
 
-To protect against ransomware, create one or more mail flow rules to block file extensions that are commonly used for ransomware. (You added these rules in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step.) You can also warn users who receive these attachments in email.
+To protect against ransomware, create one or more mail flow rules to block file extensions that are commonly used for ransomware. (You added these rules in the [Watch: Raise the level of protection against malware in mail](#watch-raise-the-level-of-protection-against-malware-in-mail) step.) You can also warn users who receive these attachments in email.
 
 In addition to the files that you blocked in the previous step, it's a good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users not to open these files from people they don't know.
 

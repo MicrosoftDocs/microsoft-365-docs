@@ -138,7 +138,7 @@ Your Microsoft 365 environment includes protection against malware. You can incr
 
 ### Block attachments with certain file types
 
-You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
+You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view [Watch: Raise the level of protection against malware in mail](#watch-raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 2. On the **Anti-malware** page, double-click on **Default**. A flyout appears.
@@ -176,7 +176,7 @@ You can protect against ransomware by creating one or more mail flow rules to bl
 
 - Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect them to be sent in email, add them to the previous rule (warn users).
 
-To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware), or complete the following steps:
+To create a mail transport rule, view [Watch: Protect against ransomware](increase-threat-protection.md#watch-protect-against-ransomware), or complete the following steps:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
@@ -307,7 +307,7 @@ Do the following to protect against attacks:
 
 - Add a new policy targeted to all recipients in your domain.
 
-To get to Safe Links, view a [short training video](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links), or complete the following steps:
+To get to Safe Links, view [Watch: Protect your email from phishing attacks](increase-threat-protection.md#watch-protect-your-email-from-phishing-attacks), or complete the following steps:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
