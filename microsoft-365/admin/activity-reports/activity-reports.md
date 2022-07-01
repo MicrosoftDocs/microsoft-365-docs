@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -112,6 +113,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No<sup>1</sup>|No<sup>1</sup>|Yes|
 |[Viva Learning activity](viva-learning-activity.md)|Yes|N/A|N/A|N/A|N/A|
 |[Viva Insights activity](viva-insights-activity.md)|Yes|Yes|N/A|N/A|N/A|
+|[Project activity](project-activity.md)|Yes|Yes|N/A|N/A|N/A|
 
 N/A<sup>1</sup>: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 N/A<sup>2</sup>: The service is not available in the environment so no plan to release the report.
@@ -149,6 +151,17 @@ Global administrators can revert this change for their tenant and show identifia
 2. Select **Reports**.
 
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.
+
+Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center. 
+The API details are below:  
+
+The URL is https://graph.microsoft.com/beta/admin/reportSettings 
+
+Two methods have been approved for this API:
+
+:::image type="content" source="../../media/api-show-details.png" alt-text="API Methods.":::
+
+The report will only contain a Privacy Setting property. For more information on Graph API, see [Use the Microsoft Graph API](/graph/use-the-api). Global admins can use the Software Development Kit (SDK) or directly call the API using any program language with network ability. We recommend using [Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
 
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.
 

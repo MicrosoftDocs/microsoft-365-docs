@@ -17,6 +17,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- adminvideo
 search.appverid:
 - MET150
 - MOE150

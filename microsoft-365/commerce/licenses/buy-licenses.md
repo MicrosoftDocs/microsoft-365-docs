@@ -25,7 +25,7 @@ description: "Use these steps to buy more licenses or reduce the number of licen
 ms.date: 06/06/2022
 ---
 
-# Buy or remove licenses
+# Buy or remove Microsoft 365 licenses for a subscription
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
