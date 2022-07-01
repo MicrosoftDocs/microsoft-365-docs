@@ -29,8 +29,6 @@ description: "An overview about maintaining your organization's network and syst
 
 As the users on your network change over time, a secure environment must be maintained. The missions you've completed so far have been about getting the system secured. But in addition to this, you also need to be able to safely and cleanly remove users from the system, thereby removing their access to all data and information. And, there are certain security management tasks to perform. 
 
-Use the following articles to maintain your environment:
-
 - [Review the Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md).
 - [Remove user accounts](m365bp-review-remediation-actions-devices.md).
 - [Add new users](m365bp-add-users.md).
