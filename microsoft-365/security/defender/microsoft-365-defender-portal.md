@@ -28,29 +28,17 @@ adobe-target: true
 
 # Microsoft 365 Defender portal
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> combines protection, detection, investigation, and response to *email*, *collaboration*, *identity*, *device*, and *app* threats, in a central place.
-
-This single pane of glass brings together functionality from existing Microsoft security portals, like the Microsoft 365 Defender portal and the Office 365 Security & Compliance center. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> combines protection, detection, investigation, and response to email*, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
-- **[Microsoft 365 Defender](microsoft-365-defender.md)** is part of Microsoft's *Extended Detection and Response* (XDR) solution that leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, and build a picture of an attack on a single dashboard.
+- **[Microsoft Defender for Identity](/defender-for-identity/what-is.md)** is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
-If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft 365 Defender portal, see:
-
-- [Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
-- [Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
-
-> [!NOTE]
-> The Microsoft 365 Defender portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 Defender portal automatically. However, Microsoft Defender for Cloud Apps will still handle its own roles and permissions.
-
-Watch this short video to learn about the new unified portal in Microsoft 365 Defender.  
+Watch this short video to learn about the Microsoft 365 Defender portal.  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ## What to expect
-
-All the security content that you use in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and the Microsoft 365 security center can now be found in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 The Microsoft 365 Defender portal helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
 
@@ -59,12 +47,7 @@ The Microsoft 365 Defender portal helps security teams investigate and respond t
 - Action center
 - Threat analytics
 
-Microsoft 365 Defender emphasizes *unity, clarity, and common goals* as it merges Microsoft Defender for Office 365 and Microsoft Defender for Endpoint. The merge was based on the priorities listed below, and made without sacrificing the capabilities that each security suite brought to the combination of:
-
-- Common building blocks
-- Common terminology
-- Common entities
-- Feature parity with other workloads
+Microsoft 365 Defender emphasizes *unity, clarity, and common goals*. 
 
 > [!NOTE]
 > The Microsoft 365 Defender portal is accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal is accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers see only the security features their subscription license supports. The goal of the portal is to centralize security.
@@ -97,13 +80,11 @@ Common controls and content either appear in the same place, or are condensed in
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed on the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
 
-Access to Microsoft 365 Defender is configured with Azure AD global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to the Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Microsoft Purview compliance portal and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+Access to Microsoft 365 Defender is configured with Azure AD global roles or by using custom roles.
 
 - Learn more about how to [manage access to Microsoft 365 Defender](m365d-permissions.md)
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 Defender
 
-> [!NOTE]
-> Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft 365 Defender portal](./mssp-access.md).
 
 ### Integrated reports
 
@@ -152,13 +133,7 @@ Track and respond to emerging threats with the following Microsoft 365 Defender 
 
 ## A centralized Learning Hub
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation at docs.microsoft.com.
-
-Inside the learning hub, Email & Collaboration (Microsoft Defender for Office 365) guidance is side-by-side with Endpoint (Microsoft Defender for Endpoint) and Microsoft 365 Defender learning resources.
-
-The learning hub opens with Learning paths organized around topics such as "How to Investigate Using Microsoft 365 Defender?" and "Microsoft Defender for Office 365 Best Practices". This section is currently curated by the security Product Group inside Microsoft. Each Learning path reflects a projected time it takes to get through the concepts. For example 'Steps to take when a Microsoft Defender for Office 365 user account is compromised' is projected to take 8 minutes, and is valuable learning on the fly.
-
-After clicking through to the content, it may be useful to bookmark this site and organize bookmarks into a 'Security' or 'Critical' folder. To see all Learning paths, click the Show all link in the main panel.
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> includes a learning hub that provides guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation.
 
 > [!NOTE]
 > There are helpful **filters** along the top of Microsoft 365 Defender learning hub that will let you choose between products (currently Microsoft 365 Defender, Microsoft Defender for Endpoint, and Microsoft Defender for Office 365). Notice that the number of learning resources for each section is listed, which can help learners keep track of how many resources they have at hand for training and learning.
@@ -171,19 +146,6 @@ After clicking through to the content, it may be useful to bookmark this site an
 ## Send us your feedback
 
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [watch this video to find out how you can trust us to read your feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
-
-You can also leave feedback from this article. In the 'Feedback' section at the end under 'Submit and view feedback for', the options are *This product*, or *This page*.
-
-Use the **This product** button for *product* feedback:
-
-1. Select *This product* at the bottom of the article.
-    1. Right-click the button and 'Open in a new tab' if you want to keep reading these directions.
-2. This will navigate to the **UserVoice forum**.
-3. You have 2 options:
-    1. Scroll down to the text box *How can we improve compliance or protect your users better in Office 365?* and paste in *Microsoft 365 Defender*. You can search the results for an idea like yours and up-vote it, or use the button for **Post a new idea**.
-    1. If you feel certain this issue is already reported, and want to raise its profile with a vote (or votes), use the *Give Feedback* box on the right side of UserVoice. Search for *Microsoft 365 Defender*, **find the issue, and use the vote button** to raise its status.
-
-Use *This page* for feedback on the article itself. Thanks for your feedback. Your voice helps us improve products.
 
 ## Explore what the Microsoft 365 Defender portal has to offer
 
