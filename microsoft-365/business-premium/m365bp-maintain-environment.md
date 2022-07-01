@@ -32,10 +32,10 @@ As the users on your network change over time, a secure environment must be main
 Use the following articles to maintain your environment:
 
 - [Review the Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md).
-- [Learn how to remove users](m365bp-review-remediation-actions-devices.md).
-- [Learn how to add new users](m365bp-add-users.md).
-- [Learn how to reset passwords as needed](m365bp-reset-passwords.md).
-- [Learn how to remove company data from devices (when necessary)](../admin/devices/remove-company-data.md).
+- [Remove user accounts](m365bp-review-remediation-actions-devices.md).
+- [Add new users](m365bp-add-users.md).
+- [Reset passwords (as needed)](m365bp-reset-passwords.md).
+- [Remove company data from devices (when necessary)](../admin/devices/remove-company-data.md).
 - [Reset devices to factory settings (when needed)](../admin/devices/reset-devices-to-factory-settings.md).
 
 ## See also
