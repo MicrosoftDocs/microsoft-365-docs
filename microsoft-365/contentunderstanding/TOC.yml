@@ -3,6 +3,8 @@
  
     - name: Custom models
       items:
+            - name: Differences between custom models 
+              href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Document understanding
               items:
                 - name: Overview
