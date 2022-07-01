@@ -53,7 +53,7 @@ To change other information on your company's profile page:
 3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
 
 > [!NOTE]
-> SharePoint Online and OneDrive have a 256-character limit on Windows PCs. When you synchronize the document libraries to your PC you will encounter error messages when attempting to do anything within the synchronized document libraries (such as creating folders or renaming documents).
+> SharePoint Online and OneDrive have a 256-character limit on Windows PCs. When you synchronize document libraries to your PC, you will receive error messages when you attempt to do anything within the synchronized document libraries, such as creating folders or renaming documents.
 
 An explanation of each field is provided below.
 
