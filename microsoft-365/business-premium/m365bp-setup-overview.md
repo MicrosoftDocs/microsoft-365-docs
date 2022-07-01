@@ -30,7 +30,7 @@ description: "Setup overview for small to medium-sized businesses and campaigns.
 
 Now that you have Microsoft 365 Business Premium, your first critical mission is to complete your initial setup process right away. Let's get you going.
 
-Your objectives is to:
+Your objective is to:
 
 - [Set up your Microsoft 365 Business Premium environment](m365bp-setup.md); or
 - [Set up Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) if this is your subscription.
