@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection: 
   - M365-security-compliance
-description: Admins can learn about the different ways to report good and bad messages and files to Microsoft for analysis.
+description: Admins can learn about the different ways to report good and bad messages, urls, email attachments and admins to Microsoft for analysis.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Report messages and files to Microsoft
+# Report items to Microsoft
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -29,7 +29,9 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, both users and admins have several different methods for reporting email messages and files to Microsoft.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, both users and admins have several different methods for reporting email messages, URLs and email attachments to Microsoft. 
+
+Even Microsoft 365 organizations with Microsoft Defender for Endpoint admins have several methods for reporting files.
 
 |Method|Description|
 |---|---|
