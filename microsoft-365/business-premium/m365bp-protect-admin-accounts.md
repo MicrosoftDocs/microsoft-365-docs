@@ -29,9 +29,9 @@ description: "Learn how to set up and protect your administrator accounts in Mic
 Because admin accounts come with elevated privileges, they're valuable targets for hackers and cyber criminals. This article describes:
 
 - [How to set up an additional administrator account for emergencies](#create-additional-admin-accounts).
-- [Create an emergency admin account](#create-an-emergency-admin-account).
-- 
-- How to protect these accounts.
+- [How to create an emergency admin account](#create-an-emergency-admin-account).
+- [How to create a user account for yourself](#create-a-user-account-for-yourself).
+- [How to protect admin accounts](#protect-admin-accounts).
 
 When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the Global admin). A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
@@ -64,7 +64,7 @@ To create additional admin accounts:
 
 ## Create an emergency admin account
 
-You should also create a backup account that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you're using as a second form of verification). Make sure that the password for this account is a phrase or at least 16 characters long. This is often referred to as a "break-glass account."
+You should also create a backup account that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you're using as a second form of verification). Make sure that the password for this account is a phrase or at least 16 characters long. This emergency admin account is often referred to as a "break-glass account."
 
 ## Create a user account for yourself
 
@@ -81,6 +81,16 @@ To create a new user account:
 4. In the **Optional settings** section, leave the default radio button selected for **User (no admin center access)**.
 
 5. Finish and review your settings and select **Finish adding** to confirm the details.
+
+## Protect admin accounts
+
+To protect all your admin accounts, make sure to follow these recommendations:
+
+- Require all admin accounts to use passwordless authentication (such as Windows Hello or an authenticator app), or MFA. To learn more about why passwordless authentication is important, see the [Microsoft Security whitepaper: Passwordless protection](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2KEup).
+
+- Avoid using custom permissions for admins. Instead of granting permissions to specific users, assign permissions through roles in Azure Active Directory (Azure AD). And, grant access to only the data and operations needed to perform the task at hand. [Learn about least-privileged roles in Azure AD](/azure/active-directory/roles/delegate-by-task).
+
+- Use built-in roles for assigning permissions where possible. Azure role-based access control (RBAC) has several built-in roles that you can use. [Learn more about Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## Additional recommendations
 
