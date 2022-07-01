@@ -28,7 +28,7 @@ description: "An overview of how to set up all the bring-your-own devices (BYOD)
 
 # Set up unmanaged (BYOD) devices
 
-Every  device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, you set up protection for all the bring-your-own devices (BYODs), which are those that are most risky to your organization due to being unmanaged. It's important to get these devices protected as soon as possible.
+Every device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, you set up protection for all the bring-your-own devices (BYODs), which are those that are most risky to your organization due to being unmanaged. It's important to get these devices protected as soon as possible.
 
 Your objectives are as follows:
 

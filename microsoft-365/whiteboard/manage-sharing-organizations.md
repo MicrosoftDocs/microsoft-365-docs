@@ -77,7 +77,7 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 
 ## See also
 
-[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
+[Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Manage data for Whiteboard](manage-data-organizations.md)
 
