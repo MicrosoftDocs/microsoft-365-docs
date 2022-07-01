@@ -64,6 +64,9 @@ You can then also review the *automated investigation details* in your alert's d
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
 
+> [!NOTE]
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../../defender/investigate-incidents.md#alerts).
+
 ## Review affected assets
 
 Selecting a device or a user card in the affected assets sections will switch to the details of the device or user in the details pane.
