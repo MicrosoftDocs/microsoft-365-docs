@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
-  - m365solution-scenario
+
 ms.topic: article
 ms.date: 11/29/2021
 ms.reviewer: chventou
