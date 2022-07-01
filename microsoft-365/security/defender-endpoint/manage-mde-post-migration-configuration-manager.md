@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
 ---
 
@@ -29,15 +29,12 @@ ms.reviewer: chventou
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 We recommend using [Microsoft Endpoint Manager](/mem), which includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) to manage your organization's threat protection features for devices (also referred to as endpoints).
 
 - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
 - [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-mde-post-migration-intune.md)
 
 ## Configure Microsoft Defender for Endpoint with Configuration Manager
-
-<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|

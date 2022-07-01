@@ -1,5 +1,5 @@
 ---
-title: Manage Microsoft Defender for Endpoint post migration
+title: Manage Microsoft Defender for Endpoint after initial setup or migration
 description: Now that you've made the switch to Microsoft Defender for Endpoint, your next step is to manage your threat protection features
 keywords: post-migration, manage, operations, maintenance, utilization, Microsoft Defender for Endpoint, edr
 ms.prod: m365-security
@@ -16,11 +16,11 @@ ms.collection:
   - M365-security-compliance
 
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
 ---
 
-# Manage Microsoft Defender for Endpoint, post migration
+# Manage Microsoft Defender for Endpoint after initial setup or migration
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -29,11 +29,9 @@ ms.reviewer: chventou
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender for Endpoint, your next step is to manage your features and capabilities. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), which includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction), to manage your organization's devices and security settings. However, you can use other tools/methods, such as [Group Policy Objects in Azure Active Directory Domain Services](/azure/active-directory-domain-services/manage-group-policy).
+After you have set up and configured Microsoft Defender for Endpoint, your next step is to manage your features and capabilities. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), which includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction), to manage your organization's devices and security settings. However, you can use other tools/methods, such as [Group Policy Objects in Azure Active Directory Domain Services](/azure/active-directory-domain-services/manage-group-policy).
 
 The following table lists various tools/methods you can use, with links to learn more.
-
-<br/><br/>
 
 |Tool/Method|Description|
 |---|---|
