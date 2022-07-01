@@ -15,7 +15,6 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: 
-- m365solution-scenario
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022

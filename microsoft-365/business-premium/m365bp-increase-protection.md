@@ -70,11 +70,11 @@ If users are assigned multiple policies, an order of priority is used to apply t
 
 1. **Strict protection** receives the highest priority and overrides all other policies.
 
-2. **Standard protection** 
+1. **Standard protection** 
 
-3. **Custom security policies**
+1. **Custom security policies**
 
-4. **Built-in protection** receives the lowest priority and is overridden by strict protection, standard protection, and custom policies.
+1. **Built-in protection** receives the lowest priority and is overridden by strict protection, standard protection, and custom policies.
 
 Strict protection overrides all other policies, and built-in protection is overridden by the other policies. 
 
@@ -95,11 +95,11 @@ To assign preset security policies, follow these steps:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
+1. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-2. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, change the toggle from **Disabled** to **Enabled**, and then select **Manage**.
+1. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, change the toggle from **Disabled** to **Enabled**, and then select **Manage**.
 
-3. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
+1. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
    - **Users**
    - **Groups**
    - **Domains**
@@ -112,11 +112,11 @@ To assign preset security policies, follow these steps:
 
    When you're finished, select **Next**.
 
-4. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the policies apply to (recipient conditions). Specify users, groups, and domains just like what you did in the previous step.
+1. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the policies apply to (recipient conditions). Specify users, groups, and domains just like what you did in the previous step.
 
    When you're finished, click **Next**.
 
-5. On the **Review and confirm your changes** page, verify your selections, and then select **Confirm**.
+1. On the **Review and confirm your changes** page, verify your selections, and then select **Confirm**.
 
 > [!TIP]
 > To learn more about assigning preset security policies, see the following articles:
@@ -139,14 +139,14 @@ Use our quick-start guide, [Protect against threats](../security/office-365-secu
 By default, sharing levels are set to the most permissive level for both SharePoint and OneDrive. We recommend changing the default settings to better protect your business.
 
 1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing** in the SharePoint admin center</a>, and sign in with an account that has [admin permissions for your organization](/sharepoint/sharepoint-admin-role).
- 
-2. Under **External sharing**, specify the level of sharing. (We recommend using **Least permissive** to prevent external sharing.)
 
-3. Under **File and folder links**, select an option (such as **Specific people**). Then choose whether to grant View or Edit permissions by default for shared links (such as **View**).
+1. Under **External sharing**, specify the level of sharing. (We recommend using **Least permissive** to prevent external sharing.)
 
-4. Under **Other settings**, select the options you want to use.
+1. Under **File and folder links**, select an option (such as **Specific people**). Then choose whether to grant View or Edit permissions by default for shared links (such as **View**).
 
-5. Then choose **Save**.
+1. Under **Other settings**, select the options you want to use.
+
+1. Then choose **Save**.
 
 > [!TIP]
 > To learn more about these settings, see [Manage sharing settings](/sharepoint/turn-external-sharing-on-or-off).
@@ -163,9 +163,9 @@ The following image shows some of the default policies that are included with Mi
 
 1. Go to the Microsoft Purview compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
-2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
+1. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
-3. Select an individual policy to view more details or to edit the policy. The following image shows a list of alert policies with one policy selected:
+1. Select an individual policy to view more details or to edit the policy. The following image shows a list of alert policies with one policy selected:
 
    :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="Screenshot of a selected alert policy.":::
 
@@ -189,13 +189,13 @@ You can prevent people in your organization from sharing their calendars. You ca
 
 1. Go [Org settings in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2053743) and sign in.
 
-2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
+1. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
 
    We recommend clearing the **External sharing** option.
 
    If you choose the share with anyone option, you can decide to also only share free/busy information.
 
-3. Choose **Save changes** on the bottom of the page.
+1. Choose **Save changes** on the bottom of the page.
 
    The following image shows that calendar sharing is not allowed.
 
