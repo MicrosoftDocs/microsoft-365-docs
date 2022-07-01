@@ -16,7 +16,7 @@ ms.collection:
   - M365-security-compliance
 
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
 ---
 
@@ -53,8 +53,6 @@ This article describes how to find your Microsoft Defender for Endpoint settings
 ## Configure Microsoft Defender for Endpoint with Intune
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Intune. You don't have to configure everything all at once; choose a task, read the corresponding resources, and then proceed.
-
-<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
