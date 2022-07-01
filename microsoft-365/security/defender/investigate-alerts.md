@@ -175,9 +175,9 @@ The **Recommendations** tab provides next-step actions and advice for investigat
  
 ## Suppress an alert
 
-As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. For lower priority alerts, an analyst is still required to triage and resolve the alert which tends to be a manual process. For all organizations, we recognize how critical a SOC analyst’s time is and want to ensure that they can focus on high severity and high priority alerts.  
+As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. For lower priority alerts, an analyst is still required to triage and resolve the alert which tends to be a manual process. A SOC analyst’s time is valuable, wanting to focus only on high severity and high priority alerts.
 
-Alert suppression provides the ability to tune and manage alerts in advance. This streamlines the alert queue and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behaviour occurs, and rule conditions are met. 
+Alert suppression provides the ability to tune and manage alerts in advance. This streamlines the alert queue and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs, and rule conditions are met. 
 
 You can create rule conditions based on ‘evidence types’ such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, user can apply the rule on the selected alert or any alert type that meets the rule conditions to suppress the alert. 
 
