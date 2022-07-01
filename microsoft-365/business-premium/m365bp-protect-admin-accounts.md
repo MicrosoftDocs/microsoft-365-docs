@@ -32,7 +32,7 @@ Because admin accounts come with elevated privileges, they're valuable targets f
 - [How to create an emergency admin account](#create-an-emergency-admin-account).
 - [How to create a user account for yourself](#create-a-user-account-for-yourself).
 - [How to protect admin accounts](#protect-admin-accounts).
-- [Additional recommendations](#additional-recommendations) and next steps.
+- [Additional recommendations](#additional-recommendations) and your [next objective](#next-objective).
 
 When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the Global admin). A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
