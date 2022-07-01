@@ -36,10 +36,10 @@ You can use this guidance to make decisions about security incident priorities a
 
 | Frequency | Tasks  |
 |---------|---------|
-| Daily tasks  | <ul><li>[Check your threat vulnerability](#check-your-threat-vulnerability).</li><li> [Review pending actions in the Action center](#review-pending-actions-in-the-action-center).</li><li>[Review devices with threat detections](#review-devices-with-threat-detections).</li><li>[Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts).</li></ul> |
-| Weekly tasks | </ul><li>[Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).</li><li>[Review the secure score for devices](#review-the-secure-score-for-devices).</li><li>[Improve your secure score for devices](#improve-your-secure-score-for-devices).</li></ul> |
-| Monthly tasks | <ul><li>[Run reports](#run-reports).</li><li>[Run a simulation tutorial](#run-a-simulation-tutorial).</li><li>[Explore the Learning hub](#explore-the-learning-hub).</li></ul>       |
-| As needed | <ul><li>[Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).</li><li>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).</li><li>[Remediate an item](#remediate-an-item).</li></ul> | 
+| Daily tasks  | [Check your threat vulnerability](#check-your-threat-vulnerability).<p>[Review pending actions in the Action center](#review-pending-actions-in-the-action-center).<p>[Review devices with threat detections](#review-devices-with-threat-detections).<p>[Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts). |
+| Weekly tasks | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<p>[Review the secure score for devices](#review-the-secure-score-for-devices).<p>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
+| Monthly tasks | [Run reports](#run-reports).<p>[Run a simulation tutorial](#run-a-simulation-tutorial).<p>[Explore the Learning hub](#explore-the-learning-hub). |
+| As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<p>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<p>[Remediate an item](#remediate-an-item). | 
 
   
 ## Suggested daily tasks
