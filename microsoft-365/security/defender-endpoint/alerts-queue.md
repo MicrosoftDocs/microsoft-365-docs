@@ -76,7 +76,7 @@ So, for example:
 You can choose to filter the list of alerts based on their Status.
 
 > [!NOTE]
-> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../../defender/investigate-incidents.md#alerts).
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../defender/investigate-incidents.md#alerts).
 
 ### Categories
 
