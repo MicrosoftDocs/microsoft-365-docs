@@ -43,16 +43,16 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 ## Custom mailbox prerequisites
 
 Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
- 
-- [Identify the custom mailbox as a SecOps mailbox in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+
+- [Identify the custom mailbox as a SecOps mailbox](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
 - [Create an anti-malware policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) for the custom mailbox where
-    - zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected). 
-    - the common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected). 
+  - Zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected).
+  - The common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected).
 
 If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the users reporting messages:
 
-- [Make sure the custom mailbox is not part of any preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
+- Make sure the custom mailbox is not part of any [preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
 - [Create a Safe Links policy](set-up-safe-links-policies.md) for the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
 
@@ -129,7 +129,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 You can configure third-party message reporting tools to send reported messages to the custom mailbox. You would do this by setting the **Microsoft Outlook Report Message button** setting to **Off** and setting the **My organization's mailbox** to an Office 365 mailbox of your choice.
 
-The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox). 
+The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
 
  > [!NOTE]
  > If multiple email attachments are present in the email, then the submission will be discarded. We only support emails with one email attachment.
