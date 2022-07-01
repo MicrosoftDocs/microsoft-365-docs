@@ -26,6 +26,9 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
+
 Tamper protection in macOS helps prevent unwanted changes to security settings from being made by unauthorized users. Tamper protection helps prevent unauthorized removal of Microsoft Defender for Endpoint on macOS. This capability also helps important security files, processes, and configuration settings from being tampered.
 
 You can set tamper protection in the following modes:
@@ -45,7 +48,6 @@ When tamper protection is set to audit or block mode, you can expect the followi
 - Creation of new files under Defender for Endpoint location is logged (audited)
 - Deletion of Defender for Endpoint files is logged (audited)
 - Renaming of Defender for Endpoint files is logged (audited)
-- Commands to stop the agent fail
 
 **Block mode**:
 
@@ -64,7 +66,7 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 > [!NOTE]
 >
-> - The mode change will apply immediately. You don't need to change the feature flag nor restart Microsoft Defender for Endpoint.
+> - The mode change will apply immediately.
 > - If you used JAMF during the initial configuration, then you'll need to update the configuration using JAMF as well.
 
 ## Before you begin
@@ -74,8 +76,8 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 **Highly recommended settings:**
 
-1. System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
-1. Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint.
+- System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
+- Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint.
 
 ## Configure tamper protection on macOS devices
 
@@ -87,7 +89,7 @@ There are several ways you can configure tamper protection:
 
 ### Before you begin
 
-Verify that "tamper_protection" is set to "disabled".
+Verify that "tamper_protection" is set to "disabled" to observe the state change.
 
 ![Image of command line with tamper protection in disable mode](images/verify-tp.png)
 
@@ -220,7 +222,7 @@ Tampering alert is raised in the Microsoft 365 Defender portal
 ### Verify block mode and audit modes
 
 - Using Advanced hunting, you'll see tampering alerts appear
-- Tampering events can be found in the local device logs: `sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
+- Tampering events can be found in the local device logs: `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Image of tamper protection log](images/tamper-protection-log.png)
 
