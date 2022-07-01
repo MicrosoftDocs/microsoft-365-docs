@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender
+title: What is Microsoft 365 Defender?
 description: Microsoft 365 Defender is a coordinated threat protection solution designed to protect devices, identity, data and applications
 keywords: introduction to MMicrosoft 365 Defender, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -26,7 +26,7 @@ ms.technology: m365d
 adobe-target: true
 ---
 
-# Microsoft 365 Defender
+# What is Microsoft 365 Defender?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
