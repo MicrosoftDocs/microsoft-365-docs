@@ -44,7 +44,7 @@ We've also added a step to the default baseline to help you set up Microsoft Def
 
 We've added new functionality around email-quarantine data for your managed tenants. Accessible by selecting **Data protection** from the left navigation pane in Microsoft 365 Lighthouse, this feature gives you visibility into the status of quarantined email messages across your customer tenants. You can see consolidated information for total quarantine volumes and detailed information for each managed tenant to help you prioritize any tenants that may require action.
 
-### Increase in maximum license count
+### Increase in maximum license limit
 
 We're making it possible to manage more of your customers in Microsoft 365 Lighthouse by once again increasing the maximum license limit for customer onboarding. Customers with up to 2500 user licenses can now be onboarded to Microsoft 365 Lighthouse. We'll continue to evaluate this requirement in future Microsoft 365 Lighthouse releases. 
 
