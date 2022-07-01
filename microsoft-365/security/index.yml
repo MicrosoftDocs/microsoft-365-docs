@@ -39,8 +39,28 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Learning and training # < 60 chars (optional)
-  summary: Get your learn on # < 160 chars (optional)
+  title: Microsoft 365 Defender products and services # < 60 chars (optional)
+  summary: See the list of products and services that power Microsoft 365 Defender # < 160 chars (optional)
+  items:
+    # Card
+    - title: Microsoft 365 Defender
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /microsoft-365/media/check-mark.png
+      links:
+        - url: /microsoft-365/security/office-365-security
+          text: Microsoft Defender for Office 365
+        - url: /microsoft-365/security/defender-endpoint
+          text: Microsoft Defender for Endpoint
+        - url: /defender-for-identity
+          text: Microsoft Defender for Identity
+        - url: /microsoft-365/security/defender-vulnerability-management/
+          text: Microsoft Defender for Cloud apps
+        - url: /defender-cloud-apps
+
+# conceptualContent section (optional)
+conceptualContent:
+  title: Top tasks for security admins # < 60 chars (optional)
+  summary: Set up, configure, and start protecting your environment # < 160 chars (optional)
   items:
     # Card
     - title: Microsoft 365 Defender Ninja Training
@@ -48,16 +68,41 @@ productDirectory:
       imageSrc: /microsoft-365/media/check-mark.png
       links:
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
+          itemType: concept
           text: Become a Microsoft 365 Defender Ninja
     # Card
     - title: Microsoft Learning Paths
       imageSrc: /microsoft-365/media/check-mark.png
       links:
       - url: https://docs.microsoft.com/learn/m365/defender
+        itemType: learn
         text: Learning paths, modules, and certifications
     # Card
     - title: Protect your organization from ransomware
       imageSrc: /microsoft-365/media/check-mark.png
+      links:
+      - url: /microsoft-365/solutions/ransomware-protection-microsoft-365.md
+        itemType: concept
+        text: Deploy ransomware protections
+
+# additionalContent section (optional)
+additionalContent:
+  title: Top tasks for security operations team # < 60 chars (optional)
+  summary: Empower security ops teams to respond to incidents # < 160 chars (optional)
+  items:
+    # Card
+    - title: Microsoft 365 Defender Ninja Training
+      # imageSrc should be square in ratio with no whitespace
+      links:
+      - url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
+      text: Become a Microsoft 365 Defender Ninja
+    # Card
+    - title: Microsoft Learning Paths
+      links:
+      - url: https://docs.microsoft.com/learn/m365/defender
+        text: Learning paths, modules, and certifications
+    # Card
+    - title: Protect your organization from ransomware
       links:
       - url: /microsoft-365/solutions/ransomware-protection-microsoft-365.md
         text: Deploy ransomware protections
