@@ -28,11 +28,9 @@ description: "Learn how to protect your campaign or business by increasing your 
 
 # Bump up security protection for your campaign or business
 
-This is your first mission, and as you know, the potential threats to the organization are numerous, and from every direction. Even as you read this, malicious attackers try to worm their way through your defenses with malware, ransomware and phishing attacks.
+As you probably already know, the potential threats to the organization are numerous. With phishing and ransomware, cybercriminals take important files and data hostage.  Small businesses need security beyond traditional Antivirus to protect against today’s sophisticated cyberattacks. Microsoft 365 Business Premium includes advanced security capabilities to help you protect against malicious attackers.
 
-The over-arching mission before you is to secure all the accounts in your organization. Carefully follow the guidance in this section. It will aid you greatly.
-
-Start by watching this video to get an overall picture of how to protect your campaign or business:
+The mission before you is to secure your organization's accounts and set up your security capabilities. Start by watching this video to get an overall picture of how to protect your campaign or business:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
