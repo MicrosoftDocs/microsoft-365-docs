@@ -28,7 +28,7 @@ description: "An overview on how to train your team to protect your email from m
 
 # Protect all email
 
-As you know, emails are full of malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable because email is handled by everyone in the organization, and relies on humans making consistently safe decisions with those communications. In this mission, learn how members of the organizations can all help to keep the system safe from attackers.
+As you probably already know, email can contain malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. In this mission, learn how members of the organizations can all help to keep the system safe from attackers.
 
 The mission objectives are to:
 
