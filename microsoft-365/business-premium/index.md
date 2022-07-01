@@ -114,7 +114,7 @@ Now, let's [fortify your environment against cyberattackers](m365bp-setup-overvi
 
 ## Safeguard managed devices
 
-Managed devices are safer because they are monitored for threat detections. In this last critical mission, you onboard and enroll devices in Microsoft Defender for Business, so they are secured and protected with the best tools available.
+Managed devices are safer because they are monitored for threat detections. In this last critical mission, you onboard and enroll devices in Defender for Business, so they are secured and protected with the best tools available.
 
 - [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization!
 
@@ -124,7 +124,7 @@ Managed devices are safer because they are monitored for threat detections. In t
 
 The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+Click (or tap) the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 :::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="media/m365bp-cyber-security-playbook.png":::
 
