@@ -25,7 +25,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
@@ -80,9 +80,9 @@ From the **Network devices** and **IoT devices** tabs, you'll also see informati
 ![Image of network devices list.](images/device-inventory-networkdevices.png)
 
 > [!NOTE]
-> Device discovery Integrations with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/index.yml) and [Corelight](https://corelight.com/integrations/iot-security) are available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with these integrations will appear on the **IoT devices** tab. For more information, see [Device discovery integrations](device-discovery.md#device-discovery-integrations).
+> Device discovery Integrations with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) and [Corelight](https://corelight.com/integrations/iot-security) are available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with these integrations will appear on the **IoT devices** tab. For more information, see [Device discovery integrations](device-discovery.md#device-discovery-integrations).
 >
-> When configured, you can also view the devices in Defender for IoT, see [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
+> When Defender for IoT is configured, you also can view the devices there. See [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
 At the top of each device inventory tab, you can see the total number of devices, the number of devices that are not yet onboarded, and the number of devices that have been identified as a higher risk to your organization. You can use this information to help you prioritize devices for security posture improvements.
 
