@@ -2,8 +2,8 @@
 title: "Microsoft 365 Business Premium overview"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: overview
