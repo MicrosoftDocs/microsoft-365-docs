@@ -36,9 +36,9 @@ The objective here is to configure settings that are part of the default device 
 
 ## Before you begin
 
-Before you can set up Windows devices for Microsoft 365 Business Premium users, make sure all the Windows devices are running Windows 10 Pro, version 1703 (Creators Update) or Windows 11 Pro.
+Before you can set up Windows devices for Microsoft 365 Business Premium users, make sure all the Windows devices are running Windows 10 Pro.
 
-Windows 10 Pro (or Windows 11 Pro) is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and Windows 11 Pro, and enable the centralized management and security controls of Microsoft 365 Business Premium.
+Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and Windows 11 Pro, and enable the centralized management and security controls of Microsoft 365 Business Premium.
 
 [Learn more about requirements for Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
 
