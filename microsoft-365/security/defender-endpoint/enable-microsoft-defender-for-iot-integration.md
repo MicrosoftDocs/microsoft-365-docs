@@ -60,7 +60,7 @@ To enable Defender for IoT in Defender for Endpoint, the user must have the foll
 
 ## Set up a network sensor
 
-To setup a network sensor your Azure subscription must have a Defender for IoT plan with Enterprise IoT devices added. For more information, see [Get started with Defender for IoT](/azure/defender-for-iot/organizations/getting-started).
+To set up a network sensor your Azure subscription must have a Defender for IoT plan with Enterprise IoT devices added. For more information, see [Get started with Defender for IoT](/azure/defender-for-iot/organizations/getting-started).
 
 To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Get started with Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
