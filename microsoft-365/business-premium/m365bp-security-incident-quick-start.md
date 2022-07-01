@@ -1,5 +1,5 @@
 ---
-title: "A security incident operations guide"
+title: "A security operations guide for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -29,7 +29,7 @@ description: "A set of suggestions for what to focus your efforts upon in the De
 
 # Microsoft 365 Business Premium security operations guide
 
-The following guidance provides a starting point to help you make decisions about security incident priorities in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+If you're new to Microsoft 365 Business Premium, or if you don't already have a security operations guide in place, this article can serve as a starting point. You can use this guide to make decisions about security incident priorities and tasks your security team will perform in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
   
 ## Suggested daily tasks
 
@@ -43,31 +43,27 @@ Here are some suggestions for security tasks to pursue on a daily basis.
 
 To find out if you have any devices that have had threats at them, do the following.
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports > General > Security report**.
 
-1. In the navigation pane, choose **Reports > General > Security report**.
-
-1. Scroll down to the Vulnerable devices row. If threats were detected on devices, you'll see that information in this row.
+2. Scroll down to the Vulnerable devices row. If threats were detected on devices, you'll see that information in this row.
 
 ### Learn about new incidents or alerts
 
-1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation menu, select **Incidents**. Incidents are displayed on the page with associated alerts.
 
-1. In the Navigation menu, select **Incidents**. Incidents are displayed on the page with associated alerts.
+2. Select an alert to open its flyout pane, where you can learn more about the alert.
 
-1. Select an alert to open its flyout pane, where you can learn more about the alert.
-
-1. In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert.
+3. In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert.
 
 ### Run a scan or automated investigation
 
 1. In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose Device inventory.
 
-1. Select a device to open its flyout panel, and review the information that is displayed.
+2. Select a device to open its flyout panel, and review the information that is displayed.
 
-1. Select the ellipsis (...) to open the actions menu.
+3. Select the ellipsis (...) to open the actions menu.
 
-1. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.
+4. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.
 
 ## Suggested weekly tasks
 
@@ -88,15 +84,17 @@ The Secure Score helps organizations:
 - Improve their security posture by providing discoverability, visibility, guidance, and control.
 - Compare with benchmarks and establish key performance indicators (KPIs).
 
-To check your secure score, in the Navigation pane choose **Secure score**. Review and make decisions about the Remediations and Actions in order to improve your overall Microsoft secure score.
+1. To check your secure score, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane choose **Secure score**. 
+
+2. Review and make decisions about the remediations and actions in order to improve your overall Microsoft secure score.
 
 ### Check your threat vulnerability
 
 In brief, you can get a snapshot of threat vulnerability by looking at the Vulnerability management dashboard. It reflects how vulnerable your organization is to cybersecurity threats. A high exposure score means your devices are more vulnerable to exploitation.
 
-1. In the Navigation pane, select **Vulnerability management > Dashboard**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Vulnerability management > Dashboard**.
 
-1. Take a look at your Organization exposure score. If it's in the acceptable or "High" range, you can move on. If it isn't, click **Improve score** to see additional details and security recommendations to improve this score.
+2. Take a look at your Organization exposure score. If it's in the acceptable or "High" range, you can move on. If it isn't, click **Improve score** to see additional details and security recommendations to improve this score.
 
 Being aware of your exposure score helps you:
 
@@ -119,21 +117,21 @@ The data on this card is the product of a meticulous and ongoing vulnerability d
 
 Improve your security configuration by remediating issues using the security recommendations list. As you do so, your Microsoft Secure Score for Devices improves and your organization becomes more resilient against cybersecurity threats and vulnerabilities going forward. It's always worth the time it takes to review and improve your score.
 
-1. To check your secure score, from the Navigation pane select **Secure score**.
+1. To check your secure score, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane select **Secure score**.
 
-1. From the Microsoft Secure Score for Devices card in the Defender Vulnerability Management dashboard, select one of the categories. A list of recommendations related to that category displays, along with recommendations.
+2. From the **Microsoft Secure Score for Devices** card in the Defender Vulnerability Management dashboard, select one of the categories. A list of recommendations related to that category displays, along with recommendations.
 
-1. Select an item on the list to display details related to the recommendation.
+3. Select an item on the list to display details related to the recommendation.
 
-1. Select **Remediation options**.
+4. Select **Remediation options**.
 
-1. Read the description to understand the context of the issue and what to do next. Choose a due date, add notes, and select Export all remediation activity data to CSV so you can attach it to an email for follow-up. A confirmation message tells you the remediation task has been created.
+5. Read the description to understand the context of the issue and what to do next. Choose a due date, add notes, and select Export all remediation activity data to CSV so you can attach it to an email for follow-up. A confirmation message tells you the remediation task has been created.
 
-1. Send a follow-up email to your IT Administrator and allow for the time that you've allotted for the remediation to propagate in the system.
+6. Send a follow-up email to your IT Administrator and allow for the time that you've allotted for the remediation to propagate in the system.
 
-1. Return to the Microsoft Secure Score for Devices card on the dashboard. The number of security controls recommendations has decreased as a result of your actions.
+7. Return to the Microsoft Secure Score for Devices card on the dashboard. The number of security controls recommendations has decreased as a result of your actions.
 
-1. Select **Security controls** to go back to the Security recommendations page. The item that you addressed is not listed there anymore, which results in your Microsoft secure score improving.
+8. Select **Security controls** to go back to the Security recommendations page. The item that you addressed is not listed there anymore, which results in your Microsoft secure score improving.
 
 ## Suggested monthly tasks
 
@@ -150,19 +148,23 @@ These are tasks that you should do on at least a monthly basis, if not more ofte
 
 Use the threat analytics dashboard to get an overview of the current threat landscape by highlighting reports that are most relevant to your organization. 
 
-Select **Threat analytics** in the navigation pane to display the Threat analytics dashboard. The dashboard summarizes the threats into the following sections:
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Threat analytics** to display the Threat analytics dashboard. 
 
-- Latest threats—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
-- High-impact threats—lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
-- Highest exposure—lists threats with the highest exposure levels first. The exposure level of a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.
+   The dashboard summarizes the threats into the following sections:
 
-Click on the title of the one you want to investigate, and read the associated report. You can also review the full Analyst report for additional detail, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.
+   - Latest threats—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
+   - High-impact threats—lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
+   - Highest exposure—lists threats with the highest exposure levels first. The exposure level of a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.
 
-### Review Pending actions in the Action center
+2. Select the title of the one you want to investigate, and read the associated report. 
+
+3. You can also review the full Analyst report for additional detail, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.
+
+### Review pending actions in the Action center
 
 As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval, which is why these should be monitored regularly. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
 
-1. In the navigation pane, choose **Action center**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Action center**.
 
 2. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus or antimalware protection, automated investigations, manual response activities, or live response sessions.
 
@@ -170,9 +172,9 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 ### Remediate an item
 
-Microsoft Defender for Business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
+Microsoft 365 Business Premium includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
 
-1. In the navigation pane, choose **Device inventory**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device inventory**.
 
    :::image type="content" source="./../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
 
@@ -198,9 +200,9 @@ The following table summarizes remediation actions that are available in Microso
 
 ### Run reports
 
-Several reports are available in the Microsoft 365 Defender portal.
+Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-1. In the navigation pane, select **Reports**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Reports**.
 
 2. Choose a report to review. Each report displays a number of pertinent categories for that report.
 
@@ -214,7 +216,7 @@ It's always a good idea to increase the security preparedness for you and your t
 
 To get started:
 
-1. In the navigation pane, choose **Tutorials**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.
 
 2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
 
@@ -222,7 +224,7 @@ To get started:
 
 There are a number of areas in the Learning hub through which you can increase your knowledge of many of the threats that are out there, and how to address them. We recommended you and your teams spend a lot of time exploring the topics that are offered, especially in the Microsoft 365 Defender and Endpoints sections.
 
-1. In the navigation pane, choose **Learning hub**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.
 
 2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.
 
