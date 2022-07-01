@@ -34,17 +34,19 @@ Let us begin by saying that you made a wise choice in adopting Microsoft 365 Bus
 
 The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
 
-- Tasks the admin does: [Fortify your environment](m365bp-setup-overview.md); 
-- Tasks that all staff members do: [Train your team](m365bp-devices-overview.md); and 
-- Tasks the admin or security team does: [Safeguard managed devices](m365bp-protect-devices.md).
+- **[Fortify your environment](m365bp-setup-overview.md)** (tasks your admin does); 
+- **[Train your team](m365bp-devices-overview.md)** (tasks that all staff members do); and 
+- **[Safeguard managed devices](m365bp-protect-devices.md)** (tasks your admin or security team does).
 
 Completing all the missions is the most effective way to thwart hackers, protect against ransomware, and help ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started.
 
 Use the following tabs to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
-## [**Fortify Your Environment**](#tab/Fortify)
+## [**Fortify Your environment**](#tab/Fortify)
 
-In these first missions, sign in and set up your initial walls of defense, starting with account access protections.
+## Fortify your environment
+
+In these first missions, you sign in and set up your initial walls of defense, starting with account access protections.
 
 1. [**Set up your environment**](m365bp-setup-overview.md). Complete the basis setup process for Microsoft 365 for your company.
 
@@ -73,7 +75,9 @@ Now, let's [fortify your environment against cyberattackers](m365bp-setup-overvi
 > [!NOTE]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
 
-## [**Train Your Team**](#tab/Train)
+## [**Train your team**](#tab/Train)
+
+## Train your team
 
 We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats.
 
@@ -89,7 +93,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+Click (or tap) the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 :::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="media/m365bp-cyber-security-playbook.png":::
 
@@ -106,9 +110,11 @@ Now, let's [fortify your environment against cyberattackers](m365bp-setup-overvi
 > [!NOTE]
 > If a term or directive is unclear, see the [glossary of terms](m365bp-glossary.yml).
 
-## [**Safeguard Managed Devices**](#tab/Safeguard)
+## [**Safeguard managed devices**](#tab/Safeguard)
 
-A safe device is one that is monitored by the organization. In this last critical mission, you onboard and enroll devices in Microsoft Defender for Business, so they are secured and protected with the best tools available.
+## Safeguard managed devices
+
+Managed devices are safer because they are monitored for threat detections. In this last critical mission, you onboard and enroll devices in Microsoft Defender for Business, so they are secured and protected with the best tools available.
 
 - [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization!
 
