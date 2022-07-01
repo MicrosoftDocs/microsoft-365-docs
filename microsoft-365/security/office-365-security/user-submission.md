@@ -44,13 +44,13 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
 
-- [Identify the custom mailbox as a SecOps mailbox](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+- [Identify the custom mailbox as a SecOps mailbox](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-- [Create an anti-malware policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) for the custom mailbox where
+- [Create an anti-malware policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) for the custom mailbox with the following settings:
   - Zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected).
   - The common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected).
 
-If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the users reporting messages:
+If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the reported messages:
 
 - Make sure the custom mailbox is not part of any [preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
@@ -150,8 +150,5 @@ For example:
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
-
-- Both of these messages are being reported as Not Junk based on Subject.
-- The rest is ignored.
 
 Messages that don't follow this format will not display properly in the Submissions portal.
