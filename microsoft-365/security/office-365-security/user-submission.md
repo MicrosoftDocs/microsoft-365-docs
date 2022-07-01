@@ -56,7 +56,7 @@ If you have Microsoft Defender for Office 365, you should also configure the fol
 
 - [Create a Safe Links policy](set-up-safe-links-policies.md) for the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
 
-- [Create a Safe Attachments policy](set-up-safe-attachments-policies.md) for the custom mailbox where Safe Attachments scanning is turned off (**Safe Attachments unknown malware response** section \> **Off**).
+- [Create a Safe Attachments policy](set-up-safe-attachments-policies.md) for the custom mailbox where Safe Attachments scanning and dynamic delivery is turned off (**Safe Attachments unknown malware response** section \> **Off**).
 
 After you've verified that your mailbox meets all applicable prerequisites, you can use the procedures in this article to configure the user submissions mailbox.
 
