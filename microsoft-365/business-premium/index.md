@@ -32,7 +32,7 @@ description: "Learn how to implement cybersecurity for small or medium sized bus
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguard's your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states.
 
-The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
+The task before you is this—let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
 
 - **[Fortify your environment](m365bp-setup-overview.md)** (tasks your admin does); 
 - **[Train your team](m365bp-devices-overview.md)** (tasks that all staff members do); and 
