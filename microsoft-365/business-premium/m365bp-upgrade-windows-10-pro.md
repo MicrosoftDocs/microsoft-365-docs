@@ -19,13 +19,13 @@ description: "Learn how to upgrade your Windows devices to Windows 10 Pro with M
 
 # Upgrade Windows devices to Windows 10 Pro
 
-If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to upgrade to Windows Pro 10 upgrade.  
+If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to upgrade those devices to Windows Pro 10.  
 
 You can choose from several methods to upgrade:
 
-- Use Windows Update (recommended)
-- Upgrade your device using the Microsoft Software Download site
-- Create installation media from the Microsoft Software Download site
+- [Use Windows Update](#use-windows-update) (recommended for most users)
+- [Upgrade your device using the Microsoft Software Download site](#upgrade-your-device-using-the-microsoft-software-download-site)
+- [Create installation media from the Microsoft Software Download site](#create-installation-media-from-the-microsoft-software-download-site)
 
 ## Use Windows Update
 
