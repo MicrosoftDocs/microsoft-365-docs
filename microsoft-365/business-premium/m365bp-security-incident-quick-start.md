@@ -40,6 +40,7 @@ You can use this guidance to make decisions about security incident priorities a
 | Monthly | [Run reports](#run-reports).<p>[Run a simulation tutorial](#run-a-simulation-tutorial).<p>[Explore the Learning hub](#explore-the-learning-hub). |
 | As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<p>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<p>[Remediate an item](#remediate-an-item). | 
 
+The following sections provide more details about each task.
   
 ## Suggested daily tasks
 
