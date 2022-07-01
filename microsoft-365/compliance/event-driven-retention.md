@@ -85,7 +85,7 @@ High-level workflow for event-driven retention:
 
 ### Step 1: Create a label whose retention period is based on an event
 
-To create and configure your retention label, see the instructions for [Create retention labels](file-plan-manager.md#create-retention-labels) for records management. But specific to event-based retention, on the **Define label settings** page when you create the retention label, select **Retain items forever or for a specific period**. Then, after **When should the period begin?**, select one of the default event types from the dropdown list, or create your own by selecting **Create new event type**:
+To create and configure your retention label, see the instructions for [Create retention labels](file-plan-manager.md#create-retention-labels) for records management. But specific to event-based retention, on the **Define label settings** page when you create the retention label, select **Retain items forever or for a specific period**. Then, on the **Define the period** page, after you've set the time period length, select one of the default event types from the dropdown list for **When should the period begin?**. Or, create your own event type by selecting **Create new event type** and follow the configuration prompts:
 
 ![Create a new event type for a retention label.](../media/SPRetention6.png)
 
