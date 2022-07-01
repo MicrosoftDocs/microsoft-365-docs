@@ -36,6 +36,6 @@ Your objectives are as follows:
 - [Share files and videos](share-files-and-videos.md).
 - [Create a communication site](create-communications-site.md).
 
-After you complete these objectives, start your [final mission: Safeguard managed devices](m365bp-protect-devices.md).
+After you complete these objectives, start your final mission: [Safeguard managed devices](m365bp-protect-devices.md).
 
 :::image type="content" source="media/m365bp-collaborate-share-securely.jpg" alt-text="Collaborate and share securely.":::
