@@ -57,7 +57,7 @@ In brief, you can get a snapshot of threat vulnerability by looking at the Vulne
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Vulnerability management > Dashboard**.
 
-2. Take a look at your Organization exposure score. If it's in the acceptable or "High" range, you can move on. If it isn't, click **Improve score** to see additional details and security recommendations to improve this score.
+2. Take a look at your Organization exposure score. If it's in the acceptable or "High" range, you can move on. If it isn't, select **Improve score** to see more details and security recommendations to improve this score.
 
 Being aware of your exposure score helps you:
 
@@ -106,7 +106,6 @@ To find out if you have any devices that have had threats at them, do the follow
 Here are some suggestions of important security tasks to do at least on a weekly basis.
 
 - [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).
-- [Check your threat vulnerability](#check-your-threat-vulnerability).
 - [Review the secure score for devices](#review-the-secure-score-for-devices).
 - [Improve your secure score for devices](#improve-your-secure-score-for-devices).
 
@@ -153,18 +152,58 @@ Improve your security configuration by remediating issues using the security rec
 
 7. Return to the Microsoft Secure Score for Devices card on the dashboard. The number of security controls recommendations has decreased as a result of your actions.
 
-8. Select **Security controls** to go back to the Security recommendations page. The item that you addressed is not listed there anymore, which results in your Microsoft secure score improving.
+8. Select **Security controls** to go back to the Security recommendations page. The item that you addressed isn't listed there anymore, which results in your Microsoft secure score improving.
 
 ## Suggested monthly tasks
 
-These are tasks that you should do on at least a monthly basis, if not more often. 
+These tasks should be done on at least a monthly basis, if not more often. 
 
-- [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).
-- [Review Pending actions in the Action center](#review-pending-actions-in-the-action-center).
-- [Remediate an item](#remediate-an-item).
 - [Run reports](#run-reports).
 - [Run a simulation tutorial](#run-a-simulation-tutorial).
 - [Explore the Learning hub](#explore-the-learning-hub).
+
+### Run reports
+
+Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Reports**.
+
+2. Choose a report to review. Each report displays many pertinent categories for that report.
+
+3. Select **View details** to see deeper information for each category.
+
+4. Select the title of a particular threat to see details specific to it.
+
+### Run a simulation tutorial
+
+It's always a good idea to increase the security preparedness for you and your team through training. You can access simulation tutorials in the Microsoft 365 Defender portal. The tutorials cover several types of cyber threats. 
+
+To get started:
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.
+
+2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
+
+### Explore the Learning hub
+
+There are many areas in the Learning hub through which you can increase your knowledge of many of the threats that are out there, and how to address them. We recommend that you and your teams spend some time exploring the resources that are offered, especially in the Microsoft 365 Defender and Endpoints sections.
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.
+
+2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.
+
+3. Select an item to learn more about each concept. 
+
+> [!NOTE]
+> Some resources in the Learning hub might cover functionality that isn't actually included in Microsoft 365 Business Premium. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft 365 Defender, but not in Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md).
+
+## As needed
+
+Perform these tasks as needed or as appropriate:
+
+- [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).
+- [Run a scan or automated investigation](#run-a-scan-or-automated-investigation).
+- [Remediate an item](#remediate-an-item).
 
 ### Use the Threat analytics dashboard
 
@@ -180,7 +219,7 @@ Use the threat analytics dashboard to get an overview of the current threat land
 
 2. Select the title of the one you want to investigate, and read the associated report. 
 
-3. You can also review the full Analyst report for additional detail, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.
+3. You can also review the full Analyst report for more details, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.
 
 ### Remediate an item
 
@@ -210,40 +249,8 @@ The following table summarizes remediation actions that are available in Microso
 | Manual response actions   | - Run antivirus scan <br/>- Isolate device <br/>- Stop and quarantine <br/>- Add an indicator to block or allow a file       |
 | Live response  | - Collect forensic data <br/>- Analyze a file <br/>- Run a script <br/>- Send a suspicious entity to Microsoft for analysis <br/>- Remediate a file <br/>- Proactively hunt for threats  |
 
-### Run reports
 
-Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Reports**.
-
-2. Choose a report to review. Each report displays a number of pertinent categories for that report.
-
-3. Click **View details** to see deeper information for each category.
-
-4. Select the title of a particular threat to see details specific to it.
-
-### Run a simulation tutorial
-
-It's always a good idea to increase the security preparedness for you and your team through training. Included in the Navigation menu for Defender, there are tutorials covering several types of cyber threats. 
-
-To get started:
-
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.
-
-2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.
-
-### Explore the Learning hub
-
-There are a number of areas in the Learning hub through which you can increase your knowledge of many of the threats that are out there, and how to address them. We recommended you and your teams spend a lot of time exploring the topics that are offered, especially in the Microsoft 365 Defender and Endpoints sections.
-
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.
-
-2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.
-
-3. Select an item to learn more about each concept. 
-
-> [!NOTE]
-> Some resources in the Learning hub might cover functionality that isn't actually included in Microsoft 365 Business Premium. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft 365 Defender, but not in Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md).
 
 ## See also
 
