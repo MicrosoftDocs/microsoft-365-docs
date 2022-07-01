@@ -33,12 +33,11 @@ If you're new to Microsoft 365 Business Premium, or if you don't already have a 
 
 You can use this guidance to make decisions about security incident priorities and tasks your security team will perform in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-
-| Frequency | Tasks  |
+| Suggested frequency | Tasks  |
 |---------|---------|
-| Daily tasks  | [Check your threat vulnerability](#check-your-threat-vulnerability).<p>[Review pending actions in the Action center](#review-pending-actions-in-the-action-center).<p>[Review devices with threat detections](#review-devices-with-threat-detections).<p>[Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts). |
-| Weekly tasks | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<p>[Review the secure score for devices](#review-the-secure-score-for-devices).<p>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
-| Monthly tasks | [Run reports](#run-reports).<p>[Run a simulation tutorial](#run-a-simulation-tutorial).<p>[Explore the Learning hub](#explore-the-learning-hub). |
+| Daily  | [Check your threat vulnerability](#check-your-threat-vulnerability).<p>[Review pending actions in the Action center](#review-pending-actions-in-the-action-center).<p>[Review devices with threat detections](#review-devices-with-threat-detections).<p>[Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts). |
+| Weekly | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<p>[Review the secure score for devices](#review-the-secure-score-for-devices).<p>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
+| Monthly | [Run reports](#run-reports).<p>[Run a simulation tutorial](#run-a-simulation-tutorial).<p>[Explore the Learning hub](#explore-the-learning-hub). |
 | As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<p>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<p>[Remediate an item](#remediate-an-item). | 
 
   
