@@ -9,8 +9,6 @@
               items:
                 - name: Overview
                   href: document-understanding-overview.md
-                - name: Differences between models 
-                  href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
                 - name: Create a content center 
@@ -49,8 +47,6 @@
               items:
                 - name: Overview 
                   href: form-processing-overview.md
-                - name: Differences between models 
-                  href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Create a form processing model 
                   href: create-a-form-processing-model.md
                 - name: Apply a retention label 
