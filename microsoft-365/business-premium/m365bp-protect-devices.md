@@ -27,7 +27,7 @@ description: "An overview for how to set up and secure managed devices from secu
 
 # Set up and secure managed devices
 
-Welcome to your final critical mission. Here, you will onboard and implement protection for all the managed devices in your organization. You'll want to onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that help lock down your systems. Then, make sure all the Windows devices are protected and set up for Office deployment. Rest assured, you've done what you can to be protected once these objectives have been achieved!
+Welcome to your final critical mission. Here, you'll onboard and implement protection for all the managed devices in your organization. You'll want to onboard your devices to Defender for Business to help ensure your antivirus and antimalware protection is always up to date, and set policies that help lock down your systems. You can also make sure Windows devices are protected and ready for Office deployment. When you're done, you can rest assured, knowing you've done what you can to protect your organization when these objectives have been achieved!
 
 Your mission objectives:
 
@@ -36,7 +36,14 @@ Your mission objectives:
 - [Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
-Once these objectives have been achieved, your overall mission to protect the organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. 
+Once these objectives have been achieved, your overall mission to protect your organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. See your next steps!
 
 :::image type="content" source="media/m365bp-secure-managed-devices.jpg" alt-text="Secure managed devices.":::
 
+## Next steps
+
+1. [Set up a security operations process](m365bp-security-incident-quick-start.md).
+
+2. [Learn about security incident management](m365bp-security-incident-management.md).
+
+3. [Learn how to maintain your environment](m365bp-maintain-environment.md).
