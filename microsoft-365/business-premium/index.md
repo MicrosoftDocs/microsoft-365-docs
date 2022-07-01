@@ -42,7 +42,7 @@ Completing all the missions is the most effective way to thwart hackers, protect
 
 Use the following tabs to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
-## [**Fortify Your environment**](#tab/Fortify)
+## [**Fortify your environment**](#tab/Fortify)
 
 ## Fortify your environment
 
