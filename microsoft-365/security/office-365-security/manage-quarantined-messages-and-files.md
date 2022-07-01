@@ -136,6 +136,8 @@ Watch this short video to learn how to manage quarantined messages as an adminis
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
+note: the search box will only search through the quarantine items that are loaded in the view (it wont search the entire quarantine folder. if you want to search accross more than just the items loaded in the view, please the search box in the filter flyout) 
+
 #### View quarantined message details
 
 When you select quarantined message from the list, the following information is available in the details flyout that appears.
