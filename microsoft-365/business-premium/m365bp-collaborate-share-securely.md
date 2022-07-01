@@ -31,11 +31,11 @@ Now that you're protected by the Microsoft 365 Business Premium Office apps, you
 
 Your objectives are as follows:
 
-- [Create Teams for collaboration](create-teams-for-collaboration.md)
-- [Set up meetings](set-up-meetings.md)
-- [Share files and videos](share-files-and-videos.md)
-- [Create a communication site](create-communications-site.md)
+- [Create Teams for collaboration](create-teams-for-collaboration.md).
+- [Set up meetings](set-up-meetings.md).
+- [Share files and videos](share-files-and-videos.md).
+- [Create a communication site](create-communications-site.md).
 
-After you complete these objectives, start your [final mission](m365bp-protect-devices.md).
+After you complete these objectives, start your [final mission: Safeguard managed devices](m365bp-protect-devices.md).
 
 :::image type="content" source="media/m365bp-collaborate-share-securely.jpg" alt-text="Collaborate and share securely.":::
