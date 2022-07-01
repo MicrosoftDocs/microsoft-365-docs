@@ -27,9 +27,9 @@ description: "Security overview for Microsoft 365 Business Premium which provide
 
 # Bump up security
 
-In this mission, you augment your security defenses. As you must know by now, Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. 
+In this mission, you set up your security defenses. Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. You also need to protect your email content and devices.
 
-To be successful in this mission, you're going to to set up the different Admin roles and specific levels of security for them. You'll also enforce MFA requirements and set up your security defaults. Stay vigilant - the safety and reliability of the system relies upon you.
+To be successful in this mission, you'll set up the different admin roles and specific levels of security for them. You'll also enforce multifactor authentication (MFA) requirements, and set up your security defaults. Stay vigilant - the safety and reliability of the system relies upon you.
 
 This mission has the following objectives:
 
