@@ -14,7 +14,6 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.collection: 
-- m365solution-scenario
 - M365-security-compliance
 ms.date:
 ---
