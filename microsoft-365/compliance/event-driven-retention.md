@@ -38,11 +38,11 @@ Examples for using event-based retention:
     
 - **Product lifetime** Your organization might have retention requirements related to the last manufacturing date of products for content such as technical specifications. In this case, the last manufacturing date is the event that triggers the retention period. 
     
-Event-based retention is typically used as part of a records-management process. This means that:
+Event-based retention is typically used as part of a records management process. This means that:
 
 - Retention labels based on events also usually mark items as a record, as a part of a records management solution. For more information, see [Learn about records management](records-management.md).
 
-- A document that's been declared a record but whose event trigger has not yet happened is retained indefinitely. Until an event triggers that document's retention period, which then expires, records can't be permanently deleted.
+- A document that's been declared a record but whose event trigger hasn't yet happened is retained indefinitely. Until an event triggers that document's retention period, which then expires, records can't be permanently deleted.
 
 - Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose of the content. For more information, see [Disposition of content](disposition.md).
 
@@ -70,7 +70,7 @@ To successfully use event-based retention, it's important to understand the rela
 
 4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to seven days. In the previous diagram, all the items circled in red have their retention period triggered by this event. In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
 
-It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a retention label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all content would start being retained. It's likely this isn't what you intend.
+It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a retention label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all content would start being retained. It's unlikely this outcome is what you intended.
 
 Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
   
@@ -99,12 +99,12 @@ Event-based retention requires retention settings that:
     
 - Delete the content automatically or trigger a disposition review at the end of the retention period.
   
-Event-based retention is typically used for content that's declared a record, so this is a good time to check whether you also need to select the option that marks content as a [record](records-management.md#records).
+Event-based retention is typically used for content that's declared a record, so now is a good time to check whether you also need to select the option that marks content as a [record](records-management.md#records).
 
 If you're using an existing event type rather than creating a new event type, skip to step 3.
 
 > [!NOTE]
-> After you choose an event type and save the retention label, the event type cannot be changed.
+> After you choose an event type and save the retention label, the event type can't be changed.
 
 ### Step 2: Create a new event type for your label
 
@@ -139,7 +139,7 @@ When a particular instance of that event type occurs, such as a product reaches 
 
 ![Create an event to trigger start of retention for event-based retention labels.](../media/create-event-records-management.png)
 
-Up to one million events are supported per tenant.
+Up to 1,000,000 events are supported per tenant.
 
 ### Step 6: Choose the same event type used by the label in step 2
 
@@ -157,7 +157,7 @@ For Exchange items, use keywords or a query that uses Keyword Query Language (KQ
 
 For asset IDs, retention will be enforced only on content with the specified *property:value* pair. For example, if you're using the Asset ID property, enter `ComplianceAssetID:<value>` in the box for asset IDs shown in the following picture.
 
-If an asset ID is not entered, all content with labels of that event type get the same retention date applied to them.
+If an asset ID isn't entered, all content with labels of that event type get the same retention date applied to them.
 
 Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter `ProductID:XYZ` in the box for asset IDs shown in the following picture.
 
@@ -171,7 +171,7 @@ Deleting an event doesn't cancel the retention settings that are now in effect f
 
 ## Use Content Search to find all content with a specific label or asset ID
 
-After retention labels are assigned to content, you can use content search to find all content that's classified with a specific retention label or that contains a specific asset ID:
+After retention labels are assigned to content, you can use content search to find all content that has a specific retention label or that contains a specific asset ID:
   
 - To find all content with a specific retention label, choose the **Retention label** condition, and then enter the complete label name or part of the label name and use a wildcard. 
     
@@ -284,7 +284,7 @@ Sample code to call the REST API:
 
 |Parameters|Description|Notes|
 |--- |--- |--- |
-|<d:Name></d:Name>|Provide a unique name for the event,|Cannot contain trailing spaces or the following characters: % * \ & < \> \| # ? , : ;|
+|<d:Name></d:Name>|Provide a unique name for the event,|Can't contain trailing spaces or the following characters: % * \ & < \> \| # ? , : ;|
 |<d:EventType></d:EventType>|Enter event type name (or Guid),|Example: "Employee termination". Event type has to be associated with a retention label.|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Enter "ComplianceAssetId:" + employee ID|Example: "ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|Event Date and Time|Format: yyyy-MM-ddTHH:mm:ssZ, Example: 2018-12-01T00:00:00Z
