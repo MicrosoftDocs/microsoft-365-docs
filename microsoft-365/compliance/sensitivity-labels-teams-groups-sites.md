@@ -448,7 +448,7 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 ## Auditing sensitivity label activities
 
 > [!IMPORTANT]
-> If you use label separation by selecting just the **Groups & sites** scope for labels that protect containers: Because of the **Detected document sensitivity mismatch** audit event and email described in this section, consider [ordering labels](sensitivity-labels.md#label-priority-order-matters) before labels that have a scope for **Files & emails**. 
+> If you use label separation by selecting just the **Groups & sites** scope for labels that protect containers: Because of the **Detected document sensitivity mismatch** audit event and email described in this section, consider [ordering labels](sensitivity-labels.md#label-priority-order-matters) before labels that have a scope for **Items**. 
 
 If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-labels.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked. For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**. Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.
 
