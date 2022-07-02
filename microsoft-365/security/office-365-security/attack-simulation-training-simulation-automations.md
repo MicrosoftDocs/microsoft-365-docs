@@ -268,11 +268,11 @@ When you're finished, click **Next**.
 
 On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
 
-- **Select landing page preference**: The available values depend on your previous selections on the [Select payloads](#select-payloads) page as described in the following table:
+- **Select landing page preference**: The available values depend on your previous payload selections on the [Select a payload and login page](#select-a-payload-and-login-page) page as described in the following table:
 
-  |Selection on Select payloads page|Available values for Select landing page preference|
+  |Payload selection|Available values for Select landing page preference|
   |---|---|
-  |Manually select|Use Microsoft default landing page <p> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
+  |Manually select|Use Microsoft default landing page <br><br> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
   |Randomize|Use Microsoft default landing page|
 
   The available **Select landing page preference** values and their associated settings are described in the following list:
