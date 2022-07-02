@@ -7504,6 +7504,11 @@
       "source_path": "microsoft-365/compliance/privileged-access-management-overview.md",
       "redirect_url": "/microsoft-365/compliance/privileged-access-management",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-set-up-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_document_id": true
     }
   ]
 }
