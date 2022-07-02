@@ -26,17 +26,20 @@ You can choose from several methods to upgrade:
 - [Use Windows Update](#use-windows-update) (recommended for most users)
 - [Upgrade your device using the Microsoft Software Download site](#upgrade-your-device-using-the-microsoft-software-download-site)
 - [Create installation media from the Microsoft Software Download site](#create-installation-media-from-the-microsoft-software-download-site)
+- [Purchase Windows 10 Pro to upgrade from Windows 10 Home](#purchase-windows-10-pro-to-upgrade-from-windows-10-home)
 
 ## Use Windows Update
 
-*This option is recommended for most users, as it doesn't require users to enter a license.*
+*This option is recommended for most users, as it uses a digital license.*
 
 > [!IMPORTANT]
 > Make sure that users are assigned a Microsoft 365 Business Premium license before they follow this procedure.
 
 1. On a Windows device, sign in using your account for Microsoft 365 Business Premium.
 
-2. Go to Windows Update, and check for updates. If your device isn't running Windows 10 Pro, you'll be prompted to upgrade. 
+2. Go to Windows Update, and check for updates. 
+
+3. If your device isn't running Windows 10 Pro, you'll be prompted to upgrade. Follow the prompts to complete your upgrade.
 
 ## Upgrade your device using the Microsoft Software Download site
   
@@ -56,8 +59,22 @@ You can choose from several methods to upgrade:
 
 > [!NOTE]
 > If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you upgrade those devices to Windows Pro 10.
+
+## Purchase Windows 10 Pro to upgrade from Windows 10 Home
+
+*Select this option for devices that are running Windows 10 Home.*
+
+1. On a Windows device, open the Microsoft Store app.
+
+2. In the Microsoft Store app, search for `Windows 10 Pro`.
+
+3. Select the option to upgrade to Windows 10/11 Pro.
+
+4. Choose either **Learn more** or **Install**, and then follow the prompts. Note that you might need to purchase Windows 10 Pro.
   
-## For more on setting up and using Microsoft 365 Business Premium
+## See also
+
+[Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227#WindowsVersion=Windows_10)
 
 [Microsoft 365 for business training videos](../admin/admin-video-library.yml)
 
