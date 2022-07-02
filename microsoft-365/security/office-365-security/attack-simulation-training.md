@@ -74,7 +74,7 @@ You can also view the login page that's used in the payload, select a different 
 
 ### Payload
 
-The following details information is shown for each payload:
+The following details are shown for each payload:
 
 - **Payload name**
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
@@ -125,7 +125,7 @@ If you select a payload from the list by clicking anywhere in the row other than
 
 Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
 
-The **Login page** tab in the payload details flyout show the login page that's currently selected for the payload.
+The **Login page** tab in the payload details flyout shows the login page that's currently selected for the payload.
 
 To view the complete login page, use the **Page 1** and **Page 2** links at the bottom of the page for two-page login pages.
 
