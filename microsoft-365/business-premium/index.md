@@ -10,21 +10,15 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-overview
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - intro-overview
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Learn how to implement cybersecurity for small or medium sized businesses with Microsoft 365 Business Premium. The cybersecurity capabilities and features are optimized to prevent cyberattacks and security breaches, and help safeguard data, devices and information with high-grade cyber defenses."
 ---
 

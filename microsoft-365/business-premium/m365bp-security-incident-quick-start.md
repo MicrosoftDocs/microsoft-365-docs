@@ -35,10 +35,10 @@ You can use this guidance to make decisions about security incident priorities a
 
 | Suggested frequency | Tasks  |
 |---------|---------|
-| Daily  | [Check your threat vulnerability](#check-your-threat-vulnerability).<p>[Review pending actions in the Action center](#review-pending-actions-in-the-action-center).<p>[Review devices with threat detections](#review-devices-with-threat-detections).<p>[Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts). |
-| Weekly | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<p>[Review the secure score for devices](#review-the-secure-score-for-devices).<p>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
-| Monthly | [Run reports](#run-reports).<p>[Run a simulation tutorial](#run-a-simulation-tutorial).<p>[Explore the Learning hub](#explore-the-learning-hub). |
-| As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<p>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<p>[Remediate an item](#remediate-an-item). | 
+| Daily  | [Check your threat vulnerability](#check-your-threat-vulnerability).<br/>[Review pending actions in the Action center](#review-pending-actions-in-the-action-center).<br/>[Review devices with threat detections](#review-devices-with-threat-detections).<br/>[Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts). |
+| Weekly | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<br/>[Review the secure score for devices](#review-the-secure-score-for-devices).<br/>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
+| Monthly | [Run reports](#run-reports).<br/>[Run a simulation tutorial](#run-a-simulation-tutorial).<br/>[Explore the Learning hub](#explore-the-learning-hub). |
+| As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<br/>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<br/>[Remediate an item](#remediate-an-item). | 
 
 The following sections provide more details about each task.
   
