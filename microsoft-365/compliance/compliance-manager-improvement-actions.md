@@ -151,7 +151,9 @@ Compliance Manager provides you options for how to test improvement actions. In 
 Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
 
 #### Automatic testing source
-If an implementation action is eligible to be automatically tested by Compliance Manager, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that Microsoft Secure Score also monitors. The **Testing logic** field on the **Testing** tab will show what kind of policy or configuration is required in another solution in order for the action to pass and earn points toward your compliance score.
+Certain improvement actions can be automatically tested by Compliance Manager. [Get details](compliance-manager-improvement-actions.md#update-testing-source) on which improvement actions can and can't be tested automatically.
+
+For those improvement actions that can be automatically tested, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that Microsoft Secure Score also monitors. The **Testing logic** field on the **Testing** tab will show what kind of policy or configuration is required in another solution in order for the action to pass and earn points toward your compliance score.
 
 When signals indicate that an improvement action has been successfully implemented, you'll automatically receive the points eligible for that action, which will factor into scores for any related controls and assessments. Learn more about how [continuous assessment affects your compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 

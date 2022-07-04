@@ -23,7 +23,7 @@ description: "Understand how to use Configuration Analyzer for Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**In this article:** Learn how to install and run the Configuration Analyzer for Microsoft Purview (CAMP) tool to get quickly started with Microsoft Compliance Manger.
+**In this article:** Learn how to install and run the Configuration Analyzer for Microsoft Purview (CAMP) tool to get quickly started with Microsoft Purview Compliance Manger.
 
 ## Compliance Configuration Analyzer (CAMP) overview
 

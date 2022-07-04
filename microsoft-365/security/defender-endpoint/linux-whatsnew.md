@@ -41,6 +41,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
+- Fix to support definitions storage in non-standard locations (outside of /var) for v2 definition updates
 - Fixed an issue in the product sensor used on RHEL 6 that could lead to an OS hang
 - `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
 - Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
