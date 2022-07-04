@@ -42,7 +42,7 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - Added an option to configure file hash computation
-- From this build onwards, the product will have the new antivirus engine by default
+- From this build onwards, the product will have the new antimalware engine by default
 </br>
 
 <br/><br/>

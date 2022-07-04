@@ -30,7 +30,7 @@ ms.technology: mde
 ## 101.73.77 (20.122051.17019.0)
 
 - Added an option to configure file hash computation
-- From this build onwards, the product will have the new antivirus engine by default
+- From this build onwards, the product will have the new antimalware engine by default
 
 ## 101.70.19 (20.122051.17019.0)
 
