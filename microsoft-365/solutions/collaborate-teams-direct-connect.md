@@ -68,6 +68,9 @@ As part of this configuration, we enable the **Office 365** application, which i
 > [!NOTE]
 > Changes to cross-tenant access settings may take up to three hours fifteen minutes to take effect.
 
+> [!NOTE]
+> Shared channels between Commercial and GCC clouds are not supported.
+
 ### Add an organization
 
 Add each organization with which you want to participate in shared channels.
