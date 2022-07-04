@@ -27,6 +27,11 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## 101.73.77 (20.122051.17019.0)
+
+- Added an option to configure file hash computation
+- From this build onwards, the product will have the new antivirus engine by default
+
 ## 101.70.19 (20.122051.17019.0)
 
 - Fixed a bug where threat-related notifications were not always presented to the end user.
