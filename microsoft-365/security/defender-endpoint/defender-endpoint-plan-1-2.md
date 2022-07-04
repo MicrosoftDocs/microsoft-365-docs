@@ -66,4 +66,6 @@ However, **you can contact support and request an override for your tenant exper
 
 ## See also
 
+- [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
+
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
