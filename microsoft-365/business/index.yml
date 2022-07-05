@@ -80,7 +80,7 @@ conceptualContent:
           text: 2. Set up security capabilities
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: 3. Set up unmanaged (BYOD) devices
+          text: 3. Protect unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-protect-email-overview.md
           itemType: overview
           text: 4. Use email more securely
