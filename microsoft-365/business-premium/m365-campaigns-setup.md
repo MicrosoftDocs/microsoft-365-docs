@@ -58,7 +58,7 @@ Here's how to sign in:
 
 4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365bp-security-overview.md).
 
-### Staff sign-in
+## How your staff will sign in
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
@@ -69,13 +69,13 @@ Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 
 > [!TIP]
 > Provide your staff a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md) for help signing in, getting Office apps, and saving, copying, and sharing files.
 
-### Customize your sign-in page with a privacy and consent notice
+## Customize your sign-in page with a privacy and consent notice
 
 Your business or campaign can make it easier for law enforcement agencies to file legal charges against online criminals by adding a privacy and consent notice to your sign-in page.
 
 You can customize your sign-in page with your branding. You can also add text to help your users sign in, or to point out legal requirements or restrictions for getting access to Microsoft 365 resources.
 
-### Customize the text on your sign-in page
+## Customize the text on your sign-in page
 
 To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](/azure/active-directory/fundamentals/customize-branding) article.
 
@@ -87,6 +87,14 @@ The elements you can update are:
 - Username hint
 
 For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+
+## Visual guide: Help protect yourself and your campaign from digital threats
+
+To help your staff learn about steps to protect your campaign from cyber threats, use this downloadable guide:
+
+[![Image for secure your help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+
+[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## Next objective
 
