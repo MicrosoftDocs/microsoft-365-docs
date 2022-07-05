@@ -77,7 +77,7 @@ conceptualContent:
           text: 1. Complete the basic setup process
         - url: ../business-premium/m365bp-security-overview.md
           itemType: overview
-          text: 2. Bump up security
+          text: 2. Set up security capabilities
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
           text: 3. Set up unmanaged (BYOD) devices
