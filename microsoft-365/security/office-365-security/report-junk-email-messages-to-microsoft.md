@@ -31,7 +31,7 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, users and admins have several different methods for reporting email messages, URLs, and email attachments to Microsoft. 
 
-Even Microsoft 365 organizations with Microsoft Defender for Endpoint admins have several methods for reporting files.
+In addition, Microsoft 365 organizations with Microsoft Defender for Endpoint admins also have several methods for reporting files.
 
 |Method|Description|
 |---|---|
