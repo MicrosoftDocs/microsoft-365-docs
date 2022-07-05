@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked and email attachments to Microsoft
+# Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
