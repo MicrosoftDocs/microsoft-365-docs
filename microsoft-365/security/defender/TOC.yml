@@ -146,6 +146,8 @@
                 href: incident-queue.md
               - name: Manage incidents
                 href: manage-incidents.md
+              - name: Export data into CSV file
+                href: export-button-in-incidents-queue.md
               - name: Respond to your first incident
                 items: 
                  - name: Overview
