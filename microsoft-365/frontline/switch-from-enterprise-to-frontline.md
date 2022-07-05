@@ -19,26 +19,26 @@ appliesto:
 
 # Changing from a Microsoft 365 E plan to a Microsoft F plan
 
-If you're considering switching some of your users from a Microsoft 365 E plan to a Microsoft 365 [F3](https://www.microsoft.com/microsoft-365/enterprise/f3) or [F1](https://www.microsoft.com/microsoft-365/enterprise/f1) plan, this article provides guidance to help you prepare your organization for the change. Changing from an E plan to an F plan (downgrading) affects the services and features users have access to.
+If you're considering switching some of your users from a Microsoft 365 E plan to a Microsoft 365 [F3](https://www.microsoft.com/microsoft-365/enterprise/f3) or [F1](https://www.microsoft.com/microsoft-365/enterprise/f1) plan, this article provides guidance to help you prepare your organization for the change. Changing from an E plan to an F plan affects the services and features users have access to.
 
-E plans are meant for information workers (employees who typically work at a desk) and F plans are meant for frontline workers (employees who are on the go, often on mobile devices, and work directly with customers or the general public). To learn more, see [Understand frontline worker user types and licensing](flw-licensing-options.md).
+E plans are meant for information workers (employees who typically work at a desk) and F plans are meant for frontline workers (employees who are on the go, often on mobile devices, and work directly with customers or the general public). Each plan may continue to evolve over time to become more tailored for information workers and frontline workers respectively. To learn more, see [Understand frontline worker user types and licensing](flw-licensing-options.md).
 
-You’ll get an overview of what to expect when users are switched to an F plan, how to prepare for the change, and what to do after switching plans to transition the frontline workers in your organization. Note that each plan may continue to evolve over time to become more tailored for information workers and frontline workers respectively.
+You’ll get an overview of what to expect when users are switched to an F plan, how to prepare for the change, and what to do after switching plans to transition the frontline workers in your organization.
 
 ## Understand the key differences between E and F plans
 
 Start by getting familiar with the service and feature differences between the plans.
 
-- For a detailed comparison of what’s included in E and F plans, see [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145).
-- For an overview of service and feature availability across E and F plans, see [service availability](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#service-availability-within-each-microsoft-365-and-office-365-plan) and [feature availability across plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#feature-availability-across-some-plans).
+Some key differences include:
 
-Key differences include:
-
+- F plans don’t include Office desktop apps or the Outlook desktop app.
 - F plans are limited to devices with integrated screens smaller than 10.1 inches on Office mobile apps.
 - F plans [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Walkie Talkie, Tasks, Shifts, and Approvals by default in Microsoft Teams.
-- F plans don’t include Office desktop apps or the Outlook desktop app.
 
-Here, we've included more information about these key differences and highlighted some additional differences to pay attention to.
+In this section, we've included more information about these key differences and highlighted some additional differences to pay attention to. Keep in mind that this isn’t a comprehensive list. To learn more:
+
+- See [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) for a detailed comparison of what’s included in E and F plans.
+- See [service availability](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#service-availability-within-each-microsoft-365-and-office-365-plan) and [feature availability across plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#feature-availability-across-some-plans) for an overview of service and feature availability across E and F plans.
 
 ### Office apps
 
@@ -172,21 +172,21 @@ We'll be referring to this table in later sections of this article.
 
 ## Prepare to switch plans
 
-### Prepare a user readiness strategy
+### Create a change management strategy
 
-An optimal user readiness strategy includes how you’ll communicate with, train, and support your users before and after you switch them to an F plan. For example, here are a few things to consider:
+An optimal change management strategy includes how you’ll communicate with, train, and support your users before and after you switch them to an F plan. For example, here are a few things to consider:
 
 - How will users be aware of the switch?
 - How will users learn to navigate the differences in services and features? The switch to an F plan might need an increased effort in training as it requires a change in behavior.
 - How will users get help and support?
 
-When building your user readiness strategy, consider communication and training preferences. To help ensure a successful transition, tailor your messaging, training, and support to the specific needs of your frontline workers and company culture.
+When building your strategy, consider communication and training preferences. To help ensure a successful transition, tailor your messaging, training, and support to the specific needs of your frontline workers and company culture.
 
 Here's some ideas to help plan your strategy.
 
 |Communication|Training|Support|
 |---------|---------|---------|
-|<ul><li>Email</li><li>Department or store managers</li><li>Champions</li><li>Teams and channels</li></ul> |<ul><li>Microsoft online help, training, and video resources</li><li>In-house training</li></ul>|<ul><li>In-house helpdesk</li><li>Self-serve intranet site</li><li>Microsoft online help, training, and video resources</li><li>Floor walkers and champions</li></ul>         |
+|<ul><li>Email</li><li>Department or store managers</li><li>Champions</li><li>Teams and channels</li><li>Yammer communities</li></ul> |<ul><li>Microsoft online help, training, and video resources</li><li>In-house training</li></ul>|<ul><li>In-house helpdesk</li><li>Self-serve intranet site</li><li>Microsoft online help, training, and video resources</li><li>Floor walkers and champions</li></ul>         |
 
 You may also want to check out these adoption resources to help you engage and train your users:
 
@@ -233,3 +233,4 @@ Here are some links to setup, help, and learning resources that you can share wi
 |Outlook on the web|<ul><li>[Get to know Outlook on the web](https://support.microsoft.com/office/get-to-know-outlook-on-the-web-3f1a229b-0d60-438f-b515-dd7a28026bc1)</li><li>[Get help with Outlook on the web](https://support.microsoft.com/office/get-help-with-outlook-on-the-web-cf659288-35cc-4c6c-8c75-e8e4317fda11)</li><li>[Outlook on the web videos](https://support.microsoft.com/office/learn-more-about-outlook-on-the-web-adbacbab-fe59-4259-a550-6cb7f85f19ec)</li></ul>|
 |Office mobile|Setup:</br><ul><li>[Set up Office apps and email on Android](https://support.microsoft.com/office/set-up-office-apps-and-email-on-android-6ef2ebf2-fc2d-474a-be4a-5a801365c87f)</li><li>[Set up Office apps and email on iOS devices](https://support.microsoft.com/office/set-up-the-office-app-and-outlook-on-ios-devices-0402b37e-49c4-4419-a030-f34c2013041f)</li></ul>Office mobile app help:<ul><li>[Office mobile app for Android help](https://support.microsoft.com/office/microsoft-office-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b)</li><li>[Office app for iOS help](https://support.microsoft.com/office/microsoft-office-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0)</li></ul>Individual Office mobile app help:<ul><li>[Word for Android Phones](https://support.microsoft.com/office/word-for-android-phones-help-764afb31-ad50-4645-8f51-820ecf731d8f), [Word for Android tablets](https://support.microsoft.com/office/word-for-android-tablets-help-8a0dcd56-fb32-4e0d-95d8-997c066125c8),[Word for iPhone](https://support.microsoft.com/office/word-for-iphone-help-d41a5299-f6fa-4cca-b529-46a8069c5796), [Word for iPad](https://support.microsoft.com/office/word-for-ipad-help-6567cf2a-c949-4213-912d-f7a14f6264c5)</li><li>[Excel for Android Phones](https://support.microsoft.com/office/excel-for-android-phones-help-f818cb37-bfac-485d-8480-363b3da40596), [Excel for Android Tablets](https://support.microsoft.com/office/word-for-android-tablets-help-8a0dcd56-fb32-4e0d-95d8-997c066125c8), [Excel for iPhone](https://support.microsoft.com/office/excel-for-iphone-help-b367819b-05b4-4a56-ab1c-678da62e1fd3), [Excel for iPad](https://support.microsoft.com/office/excel-for-ipad-help-6b5dc2e1-a8e4-48e6-bb69-cb9a3964bc91)</li><li>[PowerPoint for Android Phones](https://support.microsoft.com/office/powerpoint-for-android-phones-help-f6714e00-0ee2-48d1-bd3d-e1997565861f), [PowerPoint for Android Tablets](https://support.microsoft.com/office/powerpoint-for-android-tablets-help-2ada1d22-3784-4943-bc47-9d1ede42875c), [PowerPoint for iPhone](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b), [PowerPoint for iPad](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)</li><li>[OneNote for Android](https://support.microsoft.com/office/microsoft-onenote-for-android-46b4b49d-2bef-4746-9c30-6abb5e20b688), [OneNote for iPhone](https://support.microsoft.com/office/microsoft-onenote-for-iphone-b93a0ea8-1285-4d31-a7c5-86a849731902), [OneNote for iPad](https://support.microsoft.com/office/microsoft-onenote-help-ipad-f44e5bcd-5203-4553-9de4-0c56e6500825)</li></ul>
 |Teams|<ul><li>[Teams video training](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)</li><li>[Teams help & learning](https://support.microsoft.com/teams)</li></ul>|
+
