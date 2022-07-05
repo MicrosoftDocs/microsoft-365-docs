@@ -234,7 +234,8 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## [**servers**](#tab/servers)
 
-The ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is currently in preview. Make sure to review the requirements before onboarding a server to Defender for Business.
+> [!IMPORTANT]
+> The ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is currently in preview. Make sure to review the requirements before onboarding a server to Defender for Business.
 
 ## Windows Server
 
