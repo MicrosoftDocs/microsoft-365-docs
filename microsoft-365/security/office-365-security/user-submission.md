@@ -46,9 +46,9 @@ Use the following articles to configure the prerequisites required so user repor
 
 - [Identify the custom mailbox as a SecOps mailbox](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-- [Create an anti-malware policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) for the custom mailbox where
-  - Zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section > **Enable zero-hour auto purge for malware** is not selected).
-  - The common attachment filter option is turned off (**Protection settings** section > **Enable the common attachments filter** is not selected).
+- [Create an anti-malware policy](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies) for the custom mailbox with the following settings:
+  - Zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected).
+  - The common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected).
 
 If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the reported messages:
 
