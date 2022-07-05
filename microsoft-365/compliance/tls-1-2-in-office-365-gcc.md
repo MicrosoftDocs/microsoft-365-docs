@@ -18,8 +18,6 @@ appliesto:
 
 # Disabling TLS 1.0 and 1.1 in Microsoft 365 GCC High and DoD
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Summary
 
 In order to comply with the latest compliance standards for the Federal Risk and Authorization Management Program (FedRAMP), we are disabling Transport Layer Security (TLS) versions 1.1 and 1.0 in Microsoft 365 for GCC High and DoD environments. This change was previously announced through Microsoft Support in [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
