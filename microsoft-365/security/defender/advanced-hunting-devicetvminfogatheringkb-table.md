@@ -29,7 +29,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The `DeviceTvmInfoGatheringKB` table in the advanced hunting schema contains metadata for [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) assessment events data collected in the `DeviceTvmInfoGathering` table. The `DeviceTvmInfoGatheringKB` table contains the list of various configuration and attack surface area assessments used by Defender Vulnerability Management information gathering to assess devices. Use this reference to construct queries that return information from the table.
@@ -75,12 +75,11 @@ Using the resulting fields, you can then use the `DeviceTvmInfoGathering` table 
 ```kusto
 // Return all devices on which the TLS version 1.0 is enabled 
 DeviceTvmInfoGathering 
-| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
+| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
 ```
 
-
-
 ## Related topics
+
 - [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
