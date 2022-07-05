@@ -164,8 +164,6 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
       links:
-        - url: frontline/index.yml
-          text: Microsoft 365 for frontline workers
         - url: solutions/financial-services-secure-collaboration.md
           text: Security and compliance for financial services
         - url: solutions/energy-secure-collaboration.md
