@@ -31,7 +31,7 @@ Retail environments, with their rotating schedules and on-the-go staff, have ver
 1. [Choose your scenarios](#choose-your-scenarios) you want to implement for your business.
 :::image type="content" source="media/retail-teams-scenarios.png" alt-text="Diagram showing Teams scenarios for retail." lightbox="media/retail-teams-scenarios.png":::
 2. [Set up Microsoft 365](/microsoft-365/frontline/flw-deploy-overview) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
-3. [Configure services and apps](#set-up-teams-and-apps) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
+3. [Configure services and apps](#configure-services-and-apps) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram showing teams, team templates and apps that can be included." lightbox="media/retail-teams-apps.png":::
 
 ## Choose your scenarios
