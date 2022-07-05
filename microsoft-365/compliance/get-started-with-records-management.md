@@ -24,8 +24,6 @@ description: Need a records management solution for Microsoft 365 that manages h
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Ready to start managing your organization's high-value content for legal, business, or regulatory obligations by using a records management solution in Microsoft 365? Use the following guidance to get started:
 
 1. **Understand how retention and deletion works** in Microsoft 365, and identify whether you need to use retention policies to supplement retention labels that manage documents and emails at the item level: [Learn about retention policies and retention labels](retention.md)
