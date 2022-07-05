@@ -6697,7 +6697,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-customize-sign-in.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-customize-sign-in",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
       "redirect_document_id": true
     },
     {
@@ -7532,6 +7532,11 @@
     },
     {
       "source_path": "microsoft-365/business-premium/m365-campaigns-sign-in.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-customize-sign-in.md",
       "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
       "redirect_document_id": false
     }
