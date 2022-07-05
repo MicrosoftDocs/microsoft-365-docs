@@ -14,7 +14,6 @@ search.appverid:
 ms.assetid: 
 ms.collection: 
   - M365-security-compliance
-ROBOTS: NOINDEX
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.technology: mdo
 ms.prod: m365-security
