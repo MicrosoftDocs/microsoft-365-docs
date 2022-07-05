@@ -1,5 +1,5 @@
 ---
-title: Configure privacy settings for Microsoft Whiteboard
+title: Configure privacy settings in Microsoft Whiteboard
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
-# Configure privacy settings for Microsoft Whiteboard
+# Configure privacy settings in Microsoft Whiteboard
 
 >[!NOTE]
 > This article is currently in development.
