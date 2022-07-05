@@ -4,7 +4,7 @@
     - name: Top 20 admin help articles
       href: top-m365-admin-articles.yml
     - name: Admin training video library
-      href: admin-video-library.yml
+      href: https://go.microsoft.com/fwlink/?linkid=2197659
     - name: Get started
       items: 
         - name: Sign up
