@@ -33,6 +33,8 @@ ms.date:
 
 **Platforms**
 - Windows
+- macOS
+- Linux
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -47,7 +49,7 @@ Watch this video to learn how Network protection helps reduce the attack surface
 
 ## Requirements for network protection
 
-Network protection requires Windows 10 or 11 (Pro or Enterprise), or Windows Server version 1803 or later, and Microsoft Defender Antivirus real-time protection.
+Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server version 1803 or later, macOS version 11 or later, or Defender Supported Linux versions, and Microsoft Defender Antivirus real-time protection.
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
@@ -139,20 +141,6 @@ In its initial form, ransomware is a commodity threat, pre-programmed and focuse
 
 Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage.
 
-#### Detecting and remediating CobaltStrike (public preview)
-
-One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track _Tactics, Techniques, and Procedures_ (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors. These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim's computer to enable hands-on keyboard activity.
-
-CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators of compromise (IoC). Once captured, these indicators are shared throughout Microsoft's product stack for detection and protection purposes.
-
-Defender for Endpoint's command and control detection isn't limited to CobaltStrike. Defender for Endpoint can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
-
-Blocking command-and-control communication can severely impede a targeted attack, giving your security team time to find the initial entry vectors and close them down before another attempted attack.
-
-<!-- Hide {this intro with no subsequent list items}
-[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
--->
-
 ## SmartScreen Unblock
 
 A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
@@ -202,7 +190,7 @@ DeviceEvents
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
 
-Here's an another example:
+Here's another example:
 
 ```kusto
 

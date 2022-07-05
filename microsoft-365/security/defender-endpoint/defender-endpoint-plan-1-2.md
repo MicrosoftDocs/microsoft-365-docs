@@ -60,10 +60,11 @@ However, **you can contact support and request an override for your tenant exper
 
 ## Start a trial
 
-- To try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial).
-- To try Defender for Endpoint Plan 2, visit [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial).
-- To try the Microsoft Defender Vulnerability Management add-on, visit [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
+- To try Defender for Endpoint, go to the [Defender for Endpoint trial sign-up page](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
+- To try the Microsoft Defender Vulnerability Management add-on for Defender for Endpoint Plan 2, visit [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
 
 ## See also
+
+- [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)

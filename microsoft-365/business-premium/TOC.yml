@@ -64,24 +64,28 @@
         href: create-communications-site.md
 - name: Safeguard managed devices
   items: 
-  - name: Overview
-    href: m365bp-protect-devices.md
-  - name: Set up managed devices
-    href: m365bp-managed-devices-setup.md
-  - name: Onboard enrolled devices and apply policies
-    href: m365bp-onboard-devices-mdb.md
-  - name: Protect Windows devices
-    items: 
-      - name: Secure Windows devices
-        href: m365bp-secure-windows-devices.md
-      - name: Manage Windows devices
-        href: m365bp-manage-windows-devices.md
-      - name: Prepare for Office client deployment
-        href: m365bp-prepare-for-office-client-deployment.md
-      - name: Create app protection settings for Windows devices
-        href: m365bp-protection-settings-for-windows-10-devices.md
-      - name: Validate app settings on Windows devices
-        href: m365bp-validate-settings-on-windows-10-pcs.md
+  - name: Set up and secure managed devices
+    items:
+      - name: Overview
+        href: m365bp-protect-devices.md
+      - name: Set up managed devices
+        href: m365bp-managed-devices-setup.md
+      - name: Onboard enrolled devices and apply policies
+        href: m365bp-onboard-devices-mdb.md
+      - name: Protect Windows devices
+        items: 
+          - name: Upgrade to Windows 10 Pro (if needed)
+            href: m365bp-upgrade-windows-10-pro.md
+          - name: Secure Windows devices
+            href: m365bp-secure-windows-devices.md
+          - name: Manage Windows devices
+            href: m365bp-manage-windows-devices.md
+          - name: Prepare for Office client deployment
+            href: m365bp-prepare-for-office-client-deployment.md
+          - name: Create app protection settings for Windows devices
+            href: m365bp-protection-settings-for-windows-10-devices.md
+          - name: Validate app settings on Windows devices
+            href: m365bp-validate-settings-on-windows-10-pcs.md
   - name: Review and edit device policies
     href: m365bp-view-edit-create-mdb-policies.md
   - name: Manage device groups
@@ -134,6 +138,8 @@
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: Map protection features to Intune settings
       href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Intune admin roles
+      href: m365bp-intune-admin-roles-in-the-mac.md
     - name: Set up Compliance Manager
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business
