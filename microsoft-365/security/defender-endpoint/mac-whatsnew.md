@@ -312,9 +312,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 - `mdatp diagnostic real-time-protection-statistics` now supports two additional switches: 
 
-    - sort: sorts the output descending by total number of files scanned 
+    - `--sort`: sorts the output descending by total number of files scanned 
 
-    - top N: displays the top N results (only works if `--sort` is also specified) 
+    - `--top N`: displays the top N results (only works if `--sort` is also specified) 
 
 - Performance improvements (specifically for when `YARN` is used) & bug fixes
 
