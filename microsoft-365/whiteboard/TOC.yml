@@ -22,7 +22,7 @@
     - name: Privacy and compliance
       items:
         - name: Configure privacy settings
-          href: configure-privacy-setttings.md
+          href: configure-privacy-settings.md
         - name: GDPR requests
           href: gdpr-requests.md
 
