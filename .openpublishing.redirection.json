@@ -7514,6 +7514,11 @@
       "source_path": "microsoft-365/business-premium/m365-campaigns-security-overview.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-protect-campaign-infographic.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
     }
   ]
 }
