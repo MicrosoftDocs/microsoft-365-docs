@@ -25,7 +25,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. Select the tab for your device: **Windows 10 and 11**, **macOS**, **Windows Server**, **Linux Server**, or **mobile**.
+1. Select the tab for your device: **Windows 10 and 11**, **macOS**, **Server** (for Windows Server or Linux Server, or **mobile** (for iOS/iPadOS or Android).
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
@@ -228,7 +228,9 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 - If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**Windows Server**](#tab/WindowsServers)
+## [**Server**](#tab/Server)
+
+The ability to onboard a server, such as Windows Server or Linux Server, is in preview. 
 
 ## Windows Server
 
@@ -285,18 +287,6 @@ After you onboard your Windows Server endpoint to Defender for Business, you can
    ```
 
 After the command runs, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
-
-## View a list of onboarded devices
-
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, under **Endpoints**, choose **Device inventory**.
-
-## Next steps
-
-- If you have other devices to onboard, select the tab for those devices [(Windows 10 and 11, macOS, Windows Server, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
-- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
-
-## [**Linux Server**](#tab/LinuxDevices)
 
 ## Linux Server
 
