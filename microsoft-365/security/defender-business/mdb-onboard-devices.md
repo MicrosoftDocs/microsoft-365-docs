@@ -25,7 +25,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. Select the tab for your device: **Windows 10 and 11**, **macOS**, **Server** (for Windows Server or Linux Server, or **mobile** (for iOS/iPadOS or Android).
+1. Select the tab for your device: **Windows 10 and 11**, **macOS**, **Servers** (for Windows Server or Linux Server), or **mobile** (for iOS/iPadOS or Android devices).
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
@@ -228,9 +228,9 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 - If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**Server**](#tab/Server)
+## [**Servers**](#tab/Servers)
 
-The ability to onboard a server, such as Windows Server or Linux Server, is in preview. 
+The ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is currently in preview. Make sure to review the requirements before onboarding a server to Defender for Business.
 
 ## Windows Server
 
