@@ -4,8 +4,10 @@
   items: 
     - name: Overview
       items:
-      - name: Microsoft 365 Defender
+      - name: What is Microsoft 365 Defender
         href: microsoft-365-defender.md
+      - name: Microsoft 365 Defender portal
+        href: microsoft-365-defender-portal.md
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
       - name: Microsoft 365 Defender services
@@ -38,7 +40,7 @@
       items: 
         - name: Overview
           href: eval-overview.md 
-        - name: Step 1. Create the eval environment
+        - name: Step 1. Create the evaluation environment
           href: eval-create-eval-environment.md  
         - name: Step 2. Defender for Identity
           items:

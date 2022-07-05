@@ -68,16 +68,6 @@ landingContent:
         links:
         - text: Get the Admin mobile app
           url: admin-overview/admin-mobile-app.md
-            
-  # Card
-  - title: Business Voice
-    linkLists:
-      - linkListType: video
-        links:
-        - text: What is Business Voice?
-          url: /microsoftteams/business-voice/whats-business-voice
-        - text: Set up Business Voice
-          url: /microsoftteams/business-voice/set-up-overview   
 
   # Card
   - title: Manage services
