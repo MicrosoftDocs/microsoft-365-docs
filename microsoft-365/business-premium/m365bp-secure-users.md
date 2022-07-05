@@ -10,9 +10,6 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
