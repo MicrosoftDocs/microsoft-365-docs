@@ -4,7 +4,7 @@
     - name: Top 20 admin help articles
       href: top-m365-admin-articles.yml
     - name: Admin training video library
-      href: admin-video-library.yml
+      href: https://go.microsoft.com/fwlink/?linkid=2197659
     - name: Get started
       items: 
         - name: Sign up
@@ -241,6 +241,28 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: Create DNS records at any DNS host
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            - name: Connect your DNS records at IONOS by 1&1
+              href: dns/create-dns-records-at-1-1-internet.md 
+            - name: Connect your DNS records at 123-reg.co.uk
+              href: dns/create-dns-records-at-123-reg-co-uk.md
+            - name: Connect your DNS records at Amazon Web Services (AWS)
+              href: dns/create-dns-records-at-aws.md
+            - name: Connect your DNS records at Cloudflare
+              href: dns/create-dns-records-at-cloudflare.md
+            - name: Connect your DNS records at GoDaddy
+              href: dns/create-dns-records-at-godaddy.md
+            - name: Connect your DNS records at Namecheap
+              href: dns/create-dns-records-at-namecheap.md
+            - name: Connect your DNS records at Network Solutions
+              href: dns/create-dns-records-at-network-solutions.md
+            - name: Connect your DNS records at OVH
+              href: dns/create-dns-records-at-ovh.md
+            - name: Connect your DNS records at web.com
+              href: dns/create-dns-records-at-web-com.md
+            - name: Connect your DNS records at Wix
+              href: dns/create-dns-records-at-wix.md
+            - name: Create DNS records for Microsoft using Windows-based DNS
+              href: dns/create-dns-records-using-windows-based-dns.md
         - name: Troubleshoot domain issues
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services

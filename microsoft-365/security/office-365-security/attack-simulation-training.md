@@ -66,11 +66,15 @@ On the **Name simulation** page, configure the following settings:
 
 When you're finished, click **Next**.
 
-## Select a payload
+## Select a payload and login page
 
-On the **Select payload** page, you need to select an existing payload from the list, or create a new payload.
+On the **Select payload and login** page, you need to select an existing payload from the list, or create a new payload.
 
-The following details are displayed in the list of payloads to help you choose:
+You can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
+
+### Payload
+
+The following details are shown for each payload:
 
 - **Payload name**
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
@@ -82,17 +86,12 @@ In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, y
 
 If you click **Filter**, the following filters are available:
 
-- **Source**: Indicates whether the payload was created in your organization or is a part of Microsoft's pre-existing payload catalog. Valid values are:
-  - **Global** (built-in)
-  - **Tenant** (custom)
-  - **All**
-
 - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are:
-  - **Low**
-  - **Medium**
   - **High**
+  - **Medium**
+  - **Low**
 
-- **Language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 
 - **Add tag(s)**
 
@@ -108,20 +107,55 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
-
-If you select a payload from the list, details about the payload are shown in a flyout:
-
-- The **Overview** tab contains an example and other details about the payload.
-- The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
-
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="The Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
-
-If you select a payload from the list by clicking on the name, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
+If you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
 To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
-When you're finished, click **Next**.
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+
+If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
+
+- The **Payload** tab contains an example and other details about the payload.
+- The **Login page** tab is described in the next section.
+- The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+
+### Login page
+
+Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
+
+The **Login page** tab in the payload details flyout shows the login page that's currently selected for the payload.
+
+To view the complete login page, use the **Page 1** and **Page 2** links at the bottom of the page for two-page login pages.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="The login page tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+To change the login page that's used in the payload, click ![Change login page icon.](../../media/m365-cc-sc-edit-icon.png) **Change login page**.
+
+On the **Select login page** flyout that appears, The following information is shown for each login page:
+
+- **Name**
+- **Language**
+- **Source**: For built-in login pages, the value is **Global**. For custom login pages, the value is **Tenant**.
+- **Status**: **Ready** or **Draft**.
+- **Created by**: For built-in login pages, the value is **Microsoft**. For custom login pages, the value is the UPN of the user who created the login page.
+- **Last modified**
+- **Actions**: Click ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to preview the login page.
+
+To find a login page in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the login page.
+
+Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the login pages by **Source** or **Language**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Login pages** at **Attack simulation training** \> **Simulated content library** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
+
+Back on the **Select login page**, verify the new login page you created is selected, and then click **Save**.
+
+Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
+
+When you're finished on the **Select a payload and login page**, click **Next**.
 
 ## Target users
 
@@ -296,7 +330,7 @@ On the **Select end user notification** page, select from the following notifica
 
 - **Microsoft default notification (recommended)**: The following additional settings are available on the page:
 
-  - **Select default language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+  - **Select default language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 
   - By default, the following notifications are included:
     - **Microsoft positive reinforcement notification**

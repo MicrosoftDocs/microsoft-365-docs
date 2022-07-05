@@ -62,9 +62,16 @@ To modify settings for your Defender for Endpoint integration, the user must hav
 
 ## Set up a network sensor
 
-With an Azure subscription selected, you can add a network sensor.
+To set up a network sensor your Azure subscription must have a Defender for IoT plan with Enterprise IoT devices added. For more information, see [Get started with Defender for IoT](/azure/defender-for-iot/organizations/getting-started).
 
-To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Manage sensors with Defender for IoT in the Azure portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
+To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Get started with Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
+
+## Managing your IoT devices
+
+To view and manage your IoT devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/) go to the **Device inventory** from the **Endpoints** navigation menu and select the **IoT devices** tab.
+
+For information on how to view the devices in Defender for IoT, see [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
+
 
 ## View devices, alerts, recommendations, and vulnerabilities
 
