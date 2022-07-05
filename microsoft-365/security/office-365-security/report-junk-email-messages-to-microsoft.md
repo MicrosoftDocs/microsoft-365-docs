@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection: 
   - M365-security-compliance
-description: Admins can learn about the different ways to report good and bad messages, urls, email attachments and admins to Microsoft for analysis.
+description: Admins can learn about the different ways to report good and bad messages, URLs, email attachments, and admins to Microsoft for analysis.
 ms.technology: mdo
 ms.prod: m365-security
 ---
