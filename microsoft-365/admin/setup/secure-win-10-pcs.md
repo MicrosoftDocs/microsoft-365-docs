@@ -29,11 +29,15 @@ description: "Learn how to secure Windows 10 PCs after you have set up Microsoft
 
 # Secure Windows 10 computers
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article applies to Microsoft 365 Business Premium.
 
 After you have [set up](/microsoft-365/business-premium/m365bp-setup) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
 
 ## Watch: Secure your Windows 10 PCs
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198200).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
 

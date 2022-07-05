@@ -1073,7 +1073,7 @@
           href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated
           href: compliance-score-calculation.md
-        - name: Compliance Configuration Analyzer tool
+        - name: Configuration Analyzer for Microsoft Purview
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
           href: compliance-manager-faq.yml

@@ -23,8 +23,6 @@ search.appverid:
 
 # Plan for communication compliance
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Before getting started with [communication compliance](communication-compliance.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of communication compliance features goes smoothly and is aligned with the best practices for the solution.
 
 For more information and an overview of the planning process to address compliance and risky activities in your organization, see [Starting an insider risk management program](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
@@ -138,7 +136,7 @@ When planning for communication compliance policies, consider the following area
 - Configure the percentage of communications to review at 100% to ensure that policies are catching all issues of concern in communications for your organization.
 - You can scan communications from [third-party sources](communication-compliance-channels.md#third-party-sources) for data imported into mailboxes in your Microsoft 365 organization. To include review of communications in these platforms, you'll need to configure a connector to these services before messages meeting policy conditions are monitored by communication policy.
 - Policies can support monitoring languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](communication-compliance-policies.md#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine learning model using [trainable classifiers](classifier-get-started-with.md) in Microsoft 365.
-- All organizations have different communication standards and policy needs. Monitor for specific keywords using communication compliance [policy conditions](communication-compliance-policies.md#conditional-settings) or monitor for specific types of information with [custom sensitive information types](create-a-custom-sensitive-information-type.md).
+- All organizations have different communication standards and policy needs. Detect specific keywords using communication compliance [policy conditions](communication-compliance-policies.md#conditional-settings) or detect specific types of information with [custom sensitive information types](create-a-custom-sensitive-information-type.md).
 
 ## Creating a communication compliance policy walkthrough
 
@@ -151,4 +149,4 @@ Want to see an in-depth walkthrough of setting up a new communication compliance
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications.
+To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications.
