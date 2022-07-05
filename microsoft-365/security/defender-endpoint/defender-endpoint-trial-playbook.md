@@ -57,52 +57,43 @@ Let's get started!
 
 Here's how to set up your trial subscription:
 
-1. Confirm your license state (see [Check license state](production-deployment.md)).
-2. Add users (see [Add users and assign licenses](../../admin/add-users/add-users.md)).
-3. Grant user permissions for your security team (see [Role-based access control](prepare-deployment.md)). 
-4. Visit the Microsoft 365 Defender portal.
-5. Onboard devices (see [Onboarding tool options](/microsoft-365/security/defender-endpoint/onboarding?view=o365-worldwide&branch=mde-trial)).
-6. Configure your security capabilities (see [Configure capabilities](onboarding.md)).  
-7. Run simulated attacks. 
+1. [Confirm your license state](#step-1-confirm-your-license-state).
+2. 
 
 ## Step 1: Confirm your license state
 
-how to goes here
+To make sure your license is properly provisioned, you can check your license state in either the Microsoft 365 admin center or the Microsoft Azure portal.
 
-## Step 2: Add users and assign licenses
+[Check license state](production-deployment.md#check-license-state).
 
-how to goes here
+## Step 2: Set up role-based access control and grant permissions to your security team
 
-## Step 3: Grant user permissions for your security team
+Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. [Review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose the right one to solve your needs for each persona for this application. Some roles may need to be applied temporarily and removed after the trial has been completed.
 
-how to goes here
+Use [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) to manage your roles to provide additional auditing, control, and access review for users with directory permissions.
+Defender for Endpoint supports two ways to manage permissions:
 
-## Step 4: Visit the Microsoft 365 Defender portal
+- Basic permissions management: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Azure Active Directory have full access. The Security reader role has read-only access and does not grant access to view machines/device inventory.
+- Role-based access control (RBAC): Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information, see [Manage portal access using role-based access control](rbac.md).
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for viewing and managing detected threats. This portal combines protection, detection, investigation, and response to threats across devices in a central place.
+## Step 3: Visit the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender Portal includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities. 
+The Microsoft 365 Defender portal is where you can access your Defender for Endpoint capabilities.
 
-The Microsoft 365 Defender portal helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
+1. [Review what to expect](../defender/microsoft-365-defender.md) in the Microsoft 365 Defender portal.
 
-- Incidents & alerts
-- Hunting
-- Action center
-- Threat analytics
+2. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in.
 
+3. In the navigation pane, see **Endpoints** to access your capabilities. 
 
+## Step 4: Onboard endpoints using any of the supported management tools 
 
-## Step 5: Onboard devices
+This section outlines the general steps you need to take to onboard devices (endpoints).
 
-how to goes here
+1.	Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
 
-## Step 6: Configure security capabilities
+2.	Review which onboarding tool options are most appropriate to your environment to source instructions on how to onboard. 
 
-how to goes here
-
-## Step 7: Run simulated attacks
-
-how to goes here
 
 ## See also
 
