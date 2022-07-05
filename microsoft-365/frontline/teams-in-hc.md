@@ -96,7 +96,7 @@ Also related to secure messaging is the ability to have other tenants federated 
 
 ## Teams templates for healthcare organizations
 
-Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care in wards and departments or operational needs. To learn more, see [Get started with Teams templates for Healthcare organizations](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care or operational needs. To learn more, see [Get started with Teams templates for Healthcare organizations](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ## Care coordination and collaboration
 
