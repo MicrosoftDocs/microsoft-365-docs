@@ -44,10 +44,10 @@ The **Mailbox** chart shows you the total number of user mailbox in your organiz
 The **Storage** chart shows you amount of storage used in your organization. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving in Microsoft 365](../../compliance/autoexpanding-archiving.md).
 
 The **Quota** chart shows you the number of user mailboxes in each quota category. There are four quota categories: 
-- Good: Number of users whose storage used is below the issue warning quota.
-- Warning: Number of users whose storage used is at or above issue warning, but below prohibit send quota.
-- Can't send: Number of users whose storage used is at or above the prohibit send quota, but below prohibit send/receive quota.
-- Can't send/receive: Number of users whose storage used is at or above prohibit send/receive quota.
+- Good: The number of users whose storage used is below the "issue warning" quota.
+- Warning: The number of users whose storage used is at or above the "issue warning" quota, but below the "prohibit send" quota.
+- Can't send: The number of users whose storage used is at or above the prohibit send quota, but below the prohibit send/receive quota.
+- Can't send/receive: The number of users whose storage used is at or above the "prohibit send/receive" quota.
 
 On the Mailbox chart, the Y axis is the count of user mailboxes. 
 
@@ -64,7 +64,7 @@ The table shows you a breakdown of mailbox usage at the per-user level. You can 
 |Item|Description|
 |:-----|:-----|
 |User name |The email address of the user. |
-|Display Name  |The full name if the user. |
+|Display Name  |The full name of the user. |
 |Deleted |The mailbox whose current state is deleted, but was active during some part of the reporting period of the report.|
 |Deleted date |The date the mailbox was deleted. |
 |Create date | The date the mailbox was created.  |

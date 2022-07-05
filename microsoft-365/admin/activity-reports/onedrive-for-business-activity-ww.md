@@ -47,7 +47,7 @@ The **OneDrive for Business activity** report can be viewed for trends over the 
 |:-----|:-----|
 |**Metric**|**Definition**|
 |Username  <br/> |The user name of the owner of the OneDrive account.  <br/> |
-|Last activity date (UTC)  <br/> |The latest date a file activity was performed on the OneDrive account for the selected date range. . To see activity that occurred on a specific date, select the date directly in the chart.  <br/> |
+|Last activity date (UTC)  <br/> |The most recent day file activity occurred on the OneDrive account for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart.  <br/> |
 |Files viewed or edited  <br/> |The number of files that the user uploaded, downloaded, modified, or viewed.   <br/> |
 |Files synced  <br/> |The number of files that have been synced from a user's local device to the OneDrive account. <br/> |
 |Files shared internally  <br/> | The number of files that have been shared with users within the organization, or with users within groups (that might include external users).  <br/> |

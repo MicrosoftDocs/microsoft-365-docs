@@ -43,7 +43,7 @@ You can get a view into your user's Microsoft 365 Apps activity by looking at th
 
 The **Microsoft 365 Apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
 
-The data in each report usually covers up to the last two days. Every six day, we will refresh the report with minor updates to ensure data quality.
+The data in each report usually covers up to the last two days. Every six days, we will refresh the report with minor updates to ensure data quality.
 
 The **Users** view shows the trend in the number of active users for each app – Outlook, Word, Excel, PowerPoint, OneNote, and Teams. "Active users" are any who perform any intentional actions within these apps.
 

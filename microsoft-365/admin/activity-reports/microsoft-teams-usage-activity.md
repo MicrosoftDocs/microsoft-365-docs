@@ -31,7 +31,7 @@ The brand-new **Teams usage report** gives you an overview of the usage activity
 
 ## How to get to the Microsoft Teams usage activity report
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+1. In the admin center, go to the **Reports**, then select **Usage**.
 2. From the dashboard homepage, click on the **View more** button on the **Microsoft Teams activity** card.
 
    ![Microsoft 365 reports - Microsoft Teams activity card.](../../media/teams-usage-card.png)<br/>

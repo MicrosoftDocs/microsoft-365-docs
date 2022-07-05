@@ -32,14 +32,18 @@ For example, the OneDrive card on the dashboard gives you a high-level view of t
 
 ## How do I get to the OneDrive usage report?
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
+1. In the admin center, go to the **Reports**, and then select **Usage**. 
 2. From the dashboard homepage, click on the **View more** button on the OneDrive card.
   
 ## Interpret the OneDrive usage report
 
-You can view the usage in the OneDrive report by choosing the **Usage** tab.<br/>![Microsoft 365 reports - Microsoft OneDrive usage report.](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
+You can view the usage in the OneDrive report by choosing the **Usage** tab.
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![OneDrive usage report - choose columns.](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
+![Microsoft 365 reports - Microsoft OneDrive usage report.](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
+
+Select **Choose columns** to add or remove columns from the report.  
+
+![OneDrive usage report - choose columns.](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 

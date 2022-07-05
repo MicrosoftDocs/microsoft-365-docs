@@ -28,7 +28,7 @@ For example, you can understand the adoption of Viva Insights by looking at the 
 
 ## How do I get to the to the Viva Insights activity report?
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
+1. In the admin center, go to the **Reports**, and then select **Usage**. 
 2. Find **Viva Insights activity**.
 
 ## Interpret the Microsoft 365 Apps usage report 

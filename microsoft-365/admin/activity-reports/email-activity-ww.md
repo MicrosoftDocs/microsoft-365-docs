@@ -43,7 +43,7 @@ The **Email activity** report can be viewed for trends over the last 7 days, 30 
 
 The **Activity** chart enables you to understand the trend of the amount of email activity going on in your organization. You can understand the split of email send, email read, email received, meeting created, or meeting interacted activities. 
 
-The **User** chart enables you to understand the trend of the amount of unique users who are generating the email activities. You can look at the trend of users performing email sending, email reading, email receiving, meeting creating, or meeting interacting activities. 
+The **User** chart enables you to understand the trend of the number of unique users who are generating the email activities. You can look at the trend of users performing email sending, email reading, email receiving, meeting creating, or meeting interacting activities. 
 
 On the Activity chart, the Y axis is the count of activity of the type email sent, email received, email read, meeting created, and meeting interacted. 
 
@@ -59,11 +59,11 @@ You can filter the series you see on the chart by selecting an item in the legen
 |Item|Description|
 |:-----|:-----|
 |Username  |The email address of the user. |
-|Display name |The full name if the user. |
+|Display name |The full name of the user. |
 |Deleted |Refers to the user whose current state is deleted, but was active during some part of the reporting period of the report. |
 |Deleted date |The date the user was deleted. |
 |Last activity date  | The last time the user performed a read or send email activity. |
-|Send actions |the number of times an email send action was recorded for the user.  |
+|Send actions |The number of times an email send action was recorded for the user.  |
 |Receive actions  |The number of times an email received action was recorded for the user. |
 |Read actions |The number of times an email read action was recorded for the user. |
 |Meeting created actions  |The number of times a meeting request send action was recorded for the user. |
@@ -73,7 +73,9 @@ You can filter the series you see on the chart by selecting an item in the legen
 
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md).
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Email activity report - choose columns.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
+Select **Choose columns** to add or remove columns from the report.  
+
+![Email activity report - choose columns.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
 
 You can also export the report data into an Excel .csv file, by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
    

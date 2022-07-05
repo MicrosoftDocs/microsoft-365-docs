@@ -27,7 +27,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
  
 ## How to get to the Microsoft Teams user activity report
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+1. In the admin center, go to the **Reports**, then select **Usage**.
 
 2. From the dashboard homepage, click on the **View more** button on the Microsoft Teams activity card.
 
@@ -35,7 +35,9 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 You can view the user activity in the Teams report by choosing the **User activity** tab. <br/>![Microsoft 365 reports - Microsoft Teams user activity.](../../media/user-activity-charts.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns.](../../media/user-activity-columns.png)
+Select **Choose columns** to add or remove columns from the report.  
+
+![Teams user activity report - choose columns.](../../media/user-activity-columns.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
 

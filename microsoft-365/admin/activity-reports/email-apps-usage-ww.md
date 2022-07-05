@@ -61,6 +61,8 @@ You can filter the series you see on the chart by selecting an item in the legen
    
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md). 
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Email apps usage report - choose columns.](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)
+Select **Choose columns** to add or remove columns from the report.  
+
+![Email apps usage report - choose columns.](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)
 
 You can also export the report data into an Excel .csv file, by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
