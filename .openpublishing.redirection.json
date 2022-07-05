@@ -363,7 +363,7 @@
     {
       "source_path": "microsoft-365/business/increase-threat-protection.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-devices.md",
@@ -6628,7 +6628,7 @@
     {
       "source_path": "microsoft-365/campaigns/get-microsoft-365-campaigns.md",
       "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-campaigns",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/index.md",
@@ -6668,7 +6668,7 @@
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-campaign-infographic.md",
       "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-pcs-macs.md",
