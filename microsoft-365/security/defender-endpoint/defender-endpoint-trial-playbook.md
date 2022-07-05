@@ -94,6 +94,26 @@ This section outlines the general steps you need to take to onboard devices (end
 
 2.	Review which onboarding tool options are most appropriate to your environment to source instructions on how to onboard. 
 
+## Step 5: Configure capabilities 
+
+After onboarding the endpoints, you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
+•	Use this table for the components that you can configure. Choose the components that you'd like to use and remove the ones that do not apply.
+
+## Step 6: Experience Microsoft Defender for Endpoint through simulated attacks
+
+You might want to experience Defender for Endpoint before you onboard more than a few devices to the service. To do this, you can run controlled attack simulations on a few test devices. After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.
+To run any of the provided simulations, you need at least one onboarded device.
+1.	Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.
+2.	Run a simulation
+
+## Step 7: Set up the Microsoft Defender for Endpoint evaluation lab   
+
+The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action. Using the simplified set-up experience in evaluation lab, you can focus on running your own test scenarios and the pre-made simulations to see how Defender for Endpoint performs.
+•	Watch the video overview    of evaluation lab
+•	Get started with the lab 
+
+
+
 
 ## See also
 
