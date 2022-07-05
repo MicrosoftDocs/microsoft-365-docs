@@ -129,7 +129,7 @@ You can also get product updates and important notifications through the [messag
 
 - Microsoft 365 Defender
 
-  The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+  The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](microsoft-365-defender-portal.md).
 
 - [Microsoft 365 Defender threat analytics report](threat-analytics.md)
 
