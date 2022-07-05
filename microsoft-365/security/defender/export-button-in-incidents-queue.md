@@ -42,6 +42,6 @@ If you have thoughts or suggestions about the new **Export** feature (the **Expo
 
 Once you export the incidents queue-related data onto the CSV file, you can analyze the data and filter it further based on your requirements.
 
-For example, for the data on the CSV file, you can apply filters to view and analyze the following data:
+For example, for the data on the CSV file, you can apply filters that will provide you the following data:
 - Data regarding how many high-severity incidents you had in the last 30 days
 - Data regarding who is your most productive analyst
