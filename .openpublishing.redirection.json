@@ -6687,7 +6687,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-sign-up.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-sign-up",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-campaigns",
       "redirect_document_id": true
     },
     {
@@ -7523,6 +7523,11 @@
     {
       "source_path": "microsoft-365/business-premium/m365-campaigns-users.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-secure-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-sign-up.md",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-campaigns",
       "redirect_document_id": false
     }
   ]
