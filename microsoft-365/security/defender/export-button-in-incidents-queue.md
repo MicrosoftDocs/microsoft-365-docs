@@ -1,6 +1,6 @@
 ---
 title: Export button to migrate incident queue report to CSV files
-description: Learn about the newly introduced export button to migrate incidents queue-related data to CSV files
+description: Learn about the newly introduced Export button to migrate incidents queue-related data to CSV files
 keywords: incident, queue, export, csv, migrate
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -35,15 +35,13 @@ The **Export** feature is depicted in the following screenshot:
 
 The **Export** feature enables export of data to a CSV file. The data being exported is the data pertaining to the incidents queue that is displayed to the user. In other words, the incidents queue displayed when the user clicks the **Export** button is the data that is exported to the CSV file.
 
-> [!IMPORTANT]
-> You can apply various filters and time ranges to be applied to the incidents queue (not just in the context of exporting the data, but in a generic context). When you select **Export**, whichever filters and/or time ranges are applied to the incidents queue, such data is exported to the CSV file. For more information about filters and time ranges, see [Examples of filters and time ranges](#examples-of-filters-and-time-ranges).
-
-### Examples of filters and time ranges
-
-The filters and time ranges applied to the incidents queue can provide the following types of data:
-- Data regarding how many high-severity incidents you had in the last 30 days
-- Data regarding who is your most productive analyst.
-
-Such data can be exported to a CSV file through the **Export** feature.
-
 If you have thoughts or suggestions about the new **Export** feature (the **Export** button) for the incident queue, contact Microsoft team or send your feedback through the Microsoft 365 Defender portal.
+
+> [!IMPORTANT]
+> You can apply various filters and time ranges to the incidents queue (not just in the context of exporting the data, but in a generic context). When you select **Export**, whichever filters and/or time ranges are applied to the incidents queue, such data is exported to the CSV file.
+
+Once you export the incidents queue-related data onto the CSV file, you can analyze the data and filter it further based on your requirements.
+
+For example, for the data on the CSV file, you can apply filters to view and analyze the following data:
+- Data regarding how many high-severity incidents you had in the last 30 days
+- Data regarding who is your most productive analyst
