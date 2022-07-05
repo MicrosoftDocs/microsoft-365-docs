@@ -197,7 +197,7 @@ If you're using Windows Server Update Services (WSUS) and/or Microsoft Endpoint 
 You will need to download both the **installation** and **onboarding** packages from the portal.
 
 > [!NOTE]
-   > The installation package is updated monthly, make sure to download the latest package before usage!
+> The installation package is updated monthly. Be sure to download the latest package before usage.
 
 > [!div class="mx-imgBorder"]
 > ![Image of onboarding dashboard](images/install-agent-onboard.png)
