@@ -30,9 +30,13 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 # Set app protection settings for Android or iOS devices
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article applies to Microsoft 365 Business Premium.
 
 ## Watch: Secure Office apps on iOS
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197828).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 
