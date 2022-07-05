@@ -264,7 +264,7 @@ You can onboard an instance of Windows Server to Defender for Business by using 
 
 7. If you're onboarding Windows Server 2012R2 or Windows Server 2016, run the following command:
 
-   `Msiexec /i md4ws.msi /quiet`. 
+   `Msiexec /i md4ws.msi /quiet` 
 
    If you're onboarding Windows Server 1803, 2019, or 2022, skip this step and go to step 8.
 
