@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-description: ""
+description: "Learn about the key concepts and metrics of the predictive coding tool in Microsoft Purview eDiscovery (Premium)."
 ---
 
 # Predictive coding reference (preview)

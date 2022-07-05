@@ -32,7 +32,7 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
   
 4. In the **Individual results** dropdown list, click **Search profile view**. 
 
-   ![DashbordPivot.](../media/dashboardpivot.png)
+   ![DashboardPivot.](../media/dashboardpivot.png)
 
    The **Search profile view** page is displayed; the first time you display this page, three default widgets are displayed.
 
@@ -62,7 +62,7 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
 
 1. Click **...** in the widget title bar, and then click **Apply condition**.
 
-   ![Dashboard.](../media/searchprofilehome.png)
+   ![Dashboard home.](../media/searchprofilehome.png)
 
 2. On the flyout page, click an element on the widget key or widget chart to create a filter.
 

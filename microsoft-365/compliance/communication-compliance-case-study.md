@@ -107,7 +107,7 @@ After configuring the permissions for communication compliance, Contoso IT admin
 
 The quickest way to access the solution is to sign in directly to the **Communication compliance** (<https://compliance.microsoft.com/supervisoryreview>) solution. Using this link, Contoso IT administrators and compliance specialists will be directed to the communication compliance home page where you can quickly review the status of alerts and create new policies from the pre-defined templates.
 
-![Communication compliance overview.](../media/communication-compliance-home.png)
+![Communication compliance home.](../media/communication-compliance-home.png)
 
 ### Starting from the Microsoft Purview compliance portal
 

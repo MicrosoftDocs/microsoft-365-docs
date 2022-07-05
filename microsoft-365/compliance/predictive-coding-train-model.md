@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ""
+description: "Learn about performing the first training round for predictive coding."
 ---
 
 # Train a predictive coding model (preview)
