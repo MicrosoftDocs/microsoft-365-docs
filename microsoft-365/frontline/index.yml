@@ -66,10 +66,10 @@ productDirectory:
     - title: Solutions for your industry
       imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
       links:
+        - url: teams-for-financial-services.md
+          text: Financial services
         - url: teams-in-hc.md
           text: Healthcare
-        - url: teams-for-nonprofit-landing-page.md
-          text: Nonprofit
         - url: teams-for-retail-landing-page.md
           text: Retail
         # Card
