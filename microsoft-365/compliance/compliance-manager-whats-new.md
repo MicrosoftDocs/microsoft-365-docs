@@ -21,8 +21,6 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 # What's new in Microsoft Purview Compliance Manager
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **In this article:** Learn about recent updates in Compliance Manager.
 
 ## May 2022
