@@ -1,5 +1,5 @@
 ---
-title: Shifts for Teams
+title: Shifts for frontline workers
 description: Get the admin guidance you need to set up and manage Shifts, the schedule management tool, in Teams.
 ms.topic: conceptual
 author: LanaChin

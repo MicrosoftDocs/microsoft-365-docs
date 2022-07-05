@@ -96,7 +96,7 @@ Also related to secure messaging is the ability to have other tenants federated 
 
 ## Teams templates for healthcare organizations
 
-New templates for creating Teams were developed to apply to a Hospital setting, and more are expected soon. This makes it easier to create teams that Healthcare workers use to coordinate care for patients in various departments or wards. To learn more, see [Get started with Teams templates for Healthcare organizations](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). Teams can be started for internal departments such as cardiology, or for care wards, and more templates are in development.
+Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care in wards and departments or operational needs. To learn more, see [Get started with Teams templates for Healthcare organizations](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ## Care coordination and collaboration
 
@@ -149,7 +149,7 @@ You can allow the Approvals app for your organization and add it to your teams. 
 
 ### Create, manage, and share schedules with the Shifts app and Frontline Worker integration
 
-Teams integrates with the Shifts app and Frontline Worker, which can be used to coordinate shift staffing features and more. For example, in Shifts, Nurse managers can set up and coordinate schedules for their staff, and nurses can check schedules and swap shifts. Teams includes a built-in Frontline Worker app setup policy that you can assign to Frontline Workers in your organization. By default, the policy includes the Activity, Shifts, Chat, and Calling apps. This policy controls behavior for these apps, for example, pinning the Shifts app to the app bar so the team can quickly access it.
+Teams integrates with the Shifts app and Frontline Worker, which can be used to coordinate shift staffing features and more. For example, in Shifts, Nurse managers can set up and coordinate schedules for their staff, and nurses can check schedules and swap shifts.
 
 To learn more, see [Manage the Shifts app for your organization in Microsoft Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams).
 
