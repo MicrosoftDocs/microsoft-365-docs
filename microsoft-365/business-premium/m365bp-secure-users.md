@@ -26,9 +26,9 @@ search.appverid:
 description: "Learn how Microsoft 365 Business Premium helps your business with productivity and security."
 ---
 
-# How Microsoft 365 security recommendations affect your users
+# How Microsoft 365 Business Premium helps your business
 
-Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can help your business, and includes these sections:
+Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can help your business or campaign. This article includes the following sections:
 
 - [Video: Top 5 benefits of Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [Productivity and advanced security capabilities](#productivity-and-security) that enable you to run your business more securely, across devices, and from just about anywhere
@@ -82,6 +82,8 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 ## Next steps
 
-1. Get [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
+1. Get either [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
 2. [Start the setup process](m365bp-setup-overview.md).
+
+3. [Bump up security](m365bp-security-overview.md).
