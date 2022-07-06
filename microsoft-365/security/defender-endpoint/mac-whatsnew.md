@@ -528,7 +528,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **101.06.63**<br>
 
 **What's new** 
-- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics. 
+- Addressed a performance regression introduced in version 101.05.17. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics. 
 
 <br/>
 </details>
