@@ -11,7 +11,7 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Create and manage Teams classes and meetings with Microsoft OneDrive Learning Tools Interoperability for Open LMS.
+description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability for Open LMS.
 ---
 
 # Integrate Microsoft Teams classes and meetings within Open LMS
