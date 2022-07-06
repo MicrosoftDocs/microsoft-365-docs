@@ -374,7 +374,6 @@
       items:
         - name: Device and app data protection methods 
           href: devices/choose-device-security.md
-        - name: Validate settings on Android or iOS
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security
