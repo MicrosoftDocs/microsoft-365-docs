@@ -28,8 +28,8 @@ With Microsoft Defender for Business, you have several options to choose from fo
 1. Select a tab: 
    - **Windows 10 and 11**
    - **macOS**
-   - **servers** (for Windows Server or Linux Server)
-   - **mobile** (for iOS/iPadOS or Android devices)
+   - **Servers** (for Windows Server or Linux Server)
+   - **Mobile devices** (for iOS/iPadOS or Android devices)
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
