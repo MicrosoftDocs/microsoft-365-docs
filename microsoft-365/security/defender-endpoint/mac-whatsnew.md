@@ -440,7 +440,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 - Improved the reliability of the agent when running on macOS 11 Big Sur. 
-- Added a new command-line switch `--ignore-exclusions` to ignore AV exclusions during custom scans `mdatp scan custom`. 
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`). 
 - Performance improvements & bug fixes
 
 <br/> 
@@ -490,7 +490,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - The new syntax for the mdatp command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line) 
 > [!NOTE]
 > The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
-- Extended `mdatp diagnostic create` with a new parameter `--path [directory]` that allows the diagnostic logs to be saved to a different directory. 
+- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory. 
 - Performance improvements & bug fixes 
 
 <br/>
