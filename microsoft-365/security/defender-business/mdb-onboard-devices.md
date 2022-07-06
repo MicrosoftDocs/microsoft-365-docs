@@ -27,9 +27,9 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 1. Select a tab: 
    - **Windows 10 and 11**
-   - **macOS**
+   - **Mac**
    - **Servers** (for Windows Server or Linux Server)
-   - **Mobile devices** (for iOS/iPadOS or Android devices)
+   - **Mobile** (for iOS/iPadOS or Android devices)
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
@@ -141,21 +141,21 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 - If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**macOS**](#tab/macOSdevices)
+## [**Mac**](#tab/mac)
 
-## macOS computers
+## Mac
 
 > [!NOTE]
-> - We recommend that you use a [local script to onboard macOS devices](#local-script-for-macos). Although you can [set up enrollment for macOS devices in Intune](/mem/intune/enrollment/macos-enroll), the local script is the simplest method for onboarding macOS devices to Defender for Business. 
+> - We recommend that you use a [local script to onboard Mac](#local-script-for-mac). Although you can [set up enrollment for Mac using Intune](/mem/intune/enrollment/macos-enroll), the local script is the simplest method for onboarding macOS devices to Defender for Business. 
 
 Choose one of the following options to onboard macOS devices:
 
-- [Local script for macOS](#local-script-for-macos) (*recommended*)
-- [Intune for macOS](#microsoft-intune-for-macos)
+- [Local script for Mac](#local-script-for-macos) (*recommended*)
+- [Intune for Mac](#microsoft-intune-for-macos)
 
-### Local script for macOS
+### Local script for Mac
 
-When you run the local script on a macOS device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune. We recommend that you onboard up to 10 devices at a time using this method.
+When you run the local script on a Mac, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the Mac in Microsoft Intune, if it isn't already enrolled; and then onboards the Mac to Defender for Business. The local script method works even if you don't currently have Intune. We recommend that you onboard up to 10 devices at a time using this method.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -165,7 +165,7 @@ When you run the local script on a macOS device, it creates a trust with Azure A
 
 4. Select **Download onboarding package**, and save it to a removable drive. Also select **Download installation package**, and save it to your removable device.
 
-5. On a macOS device, save the installation package as `wdav.pkg` to a local directory.
+5. On a Mac, save the installation package as `wdav.pkg` to a local directory.
 
 6. Save the onboarding package as `WindowsDefenderATPOnboardingPackage.zip` to the same directory you used for the installation package.
 
@@ -177,28 +177,28 @@ When you run the local script on a macOS device, it creates a trust with Azure A
 
 10. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
-After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+After a Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
-### Microsoft Intune for macOS
+### Microsoft Intune for Mac
 
-If your subscription includes Microsoft Intune, you can onboard macOS devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
+If your subscription includes Microsoft Intune, you can onboard Mac in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
 
-There are several methods available for enrolling devices in Intune. We recommend one of the following methods:
+There are several methods available for enrolling Mac in Intune. We recommend one of the following methods:
 
-- [Choose an option for company-owned macOS devices](#options-for-company-owned-macos-devices)
-- [Ask users to enroll their own macOS devices in Intune](#ask-users-to-enroll-their-own-macos-devices-in-intune)
+- [Choose an option for company-owned Mac](#options-for-company-owned-mac)
+- [Ask users to enroll their own Mac in Intune](#ask-users-to-enroll-their-own-mac-in-intune)
 
-#### Options for company-owned macOS devices
+#### Options for company-owned Mac
 
 Choose one of the following options to enroll company-managed macOS devices in Intune:
 
 | Option  | Description  |
 |---------|---------|
-| Apple Automated Device Enrollment |  Use this method to automate enrollment on devices purchased through Apple Business Manager or Apple School Manager. Automated device enrollment deploys the enrollment profile "over the air," so you don't need to have physical access to devices. <br/><br/>See [Automatically enroll macOS devices with the Apple Business Manager or Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
+| Apple Automated Device Enrollment |  Use this method to automate enrollment on devices purchased through Apple Business Manager or Apple School Manager. Automated device enrollment deploys the enrollment profile "over the air," so you don't need to have physical access to devices. <br/><br/>See [Automatically enroll Mac with the Apple Business Manager or Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
 | Device enrollment manager (DEM)  |  Use this method for large-scale deployments and when there are multiple people in your organization who can help with enrollment setup. Someone with device enrollment manager (DEM) permissions can enroll up to 1,000 devices with a single Azure Active Directory account. This method uses the Company Portal app or Microsoft Intune app to enroll devices. You can't use a DEM account to enroll devices via Automated Device Enrollment.<br/><br/> See [Enroll devices in Intune by using a device enrollment manager account](/mem/intune/enrollment/device-enrollment-manager-enroll).  |
-| Direct enrollment  | Direct enrollment enrolls devices with no user affinity, so this method is best for devices that aren't associated with a single user. This method requires you to have physical access to the Macs you're enrolling. <br/><br/>See [Use Direct Enrollment for macOS devices](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
+| Direct enrollment  | Direct enrollment enrolls devices with no user affinity, so this method is best for devices that aren't associated with a single user. This method requires you to have physical access to the Macs you're enrolling. <br/><br/>See [Use Direct Enrollment for Mac](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
 
-#### Ask users to enroll their own macOS devices in Intune
+#### Ask users to enroll their own Mac in Intune
 
 If your business prefers to have people enroll their own devices in Intune, direct users to follow these steps:
 
@@ -208,7 +208,7 @@ If your business prefers to have people enroll their own devices in Intune, dire
 
 3. Install the Company Portal app at [https://aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac), and follow the instructions in the app.
 
-### Confirm that a macOS device is onboarded
+### Confirm that a Mac is onboarded
 
 1. To confirm that the device is associated with your company, use the following Python command in Bash:
 
@@ -234,13 +234,16 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## [**Servers**](#tab/Servers)
 
-The ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is currently in preview. Make sure to review the requirements before onboarding a server to Defender for Business.
+*The ability to onboard a server is currently in preview.*
+
+- [Windows Server](#windows-server)
+- [Linux Server](#linux-server)
 
 ## Windows Server
 
 > [!IMPORTANT]
 > The ability to onboard Windows Server endpoints is currently in preview. Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
-> - You have a Microsoft Defender for Business servers license for each server instance.
+> - You have a **Microsoft Defender for Business servers** license for each server instance.
 > - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
