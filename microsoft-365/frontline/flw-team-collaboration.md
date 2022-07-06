@@ -175,7 +175,6 @@ Your users can add any apps that you have allowed to their teams. Share this tra
 
 ## Learn more about Teams capabilities for specific industries
 
-[Teams for retail](teams-for-retail-landing-page.md)
-[Teams for Healthcare](teams-in-hc.md)
-[Teams for nonprofit](teams-for-nonprofit-landing-page.md)
-[Collaboration manager for Loans for financial services](/industry/financial-services/collaboration-manager/overview)
+- [Teams for Retail](teams-for-retail-landing-page.md)
+- [Teams for Healthcare](teams-in-hc.md)
+- [Collaboration Manager for Loans for Financial Services](/industry/financial-services/collaboration-manager/overview)
