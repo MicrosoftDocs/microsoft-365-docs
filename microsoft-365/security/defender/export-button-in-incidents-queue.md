@@ -27,7 +27,13 @@ ms.technology: m365d
 
 # Export
 
-We're thrilled to announce that a new feature "export of data into a CSV file" has been added in Microsoft 365 Defender. This feature is available in the form of a button named **Export**. This feature is now available in public preview.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Applies to:**
+- Microsoft 365 Defender
+
+The **Export** feature allows you to export quickly the displayed incident queue according to the applied filters and time ranges. It's available in the form of a button named **Export**.
 
 The **Export** feature is depicted in the following screenshot:
 
