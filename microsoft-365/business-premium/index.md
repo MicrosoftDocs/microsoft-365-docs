@@ -42,7 +42,7 @@ In these first missions, you sign in and set up your initial walls of defense, s
 
 2. [**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyberattacks.
 
-[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities,.":::](m365bp-setup-overview.md)
+[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Diagram outlining your missions with Fortify Your Environment selected.":::](m365bp-setup-overview.md)
 
 ## Train your team
 
@@ -54,7 +54,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 3. [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-devices-overview.md)
+[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Diagram outlining your missions with Train Your Team selected.":::](m365bp-devices-overview.md)
 
 ## Safeguard managed devices
 
@@ -62,7 +62,7 @@ Managed devices are safer because they are monitored for threat detections. In t
 
 - [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization!
 
-[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-protect-devices.md)
+[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Diagram outlining your missions with Safeguard Managed Devices selected.":::](m365bp-protect-devices.md)
 
 ## Cybersecurity playbook
 
