@@ -23,8 +23,8 @@ Microsoft 365 Business Premium includes [Microsoft Defender for Business](../sec
 To onboard devices to Defender for Business, you can choose from several options:
 
 - [Automatic onboarding for Windows devices that are already enrolled in Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
-- [A local script to onboard Windows and macOS devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business) (for devices that are not already enrolled in Intune)
-- [Intune for enrolling new devices, including mobile devices](#use-intune-to-enroll-devices) (Windows, macOS, iOS, and Android) and then apply Defender for Business policies to those devices
+- [A local script to onboard Windows and Mac devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business) (for devices that are not already enrolled in Intune)
+- [Intune for enrolling new devices, including mobile devices](#use-intune-to-enroll-devices) (Windows, Mac, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
 
@@ -51,7 +51,7 @@ Note that the automatic onboarding option applies to Windows client devices only
 
 To learn more about automatic onboarding, see [Use the wizard to set up Microsoft Defender for Business](../security/defender-business/mdb-use-wizard.md).
 
-## Use a local script to onboard Windows and macOS devices to Defender for Business
+## Use a local script to onboard Windows and Mac devices to Defender for Business
 
 You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. You can onboard up to 10 devices at a time using the local script.
 
@@ -125,7 +125,7 @@ If you want to offboard a device, use one of the following procedures:
 6. Run the script on each device that you want to offboard. Need help with this task? See the following resources:   
 
    - Windows devices: [Offboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script) 
-   - macOS devices: [Uninstalling on macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
+   - Mac: [Uninstalling on Mac](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
