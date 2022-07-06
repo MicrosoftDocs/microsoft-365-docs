@@ -69,7 +69,7 @@ See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enroll
 
 Servers are not supported by default in Microsoft 365 Business Premium and Defender for Business. However, the ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is now in preview. Make sure to review the requirements before onboarding a server:
 
-- You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
+- You have a server license for each server instance in either Microsoft 365 Business Premium or Defender for Business (standalone).
 - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 - The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
