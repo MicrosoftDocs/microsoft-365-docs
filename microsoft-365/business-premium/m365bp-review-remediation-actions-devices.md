@@ -27,9 +27,8 @@ Examples of remediation actions include sending a file to quarantine, stopping a
 
 **This article describes**:
 
-- [How to use the Action center](#how-to-use-your-action-center)
-
-- [Types of remediation actions](#types-of-remediation-actions)
+- [How to use the Action center](#how-to-use-your-action-center).
+- [Types of remediation actions](#types-of-remediation-actions).
 
 
 ## How to use your Action center
