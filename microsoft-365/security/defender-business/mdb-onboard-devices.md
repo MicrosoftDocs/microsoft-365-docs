@@ -41,7 +41,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 - [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
 - [Group Policy](#group-policy-for-windows-10-and-11) (if you're already using Group Policy in your organization)
-- [Microsoft Intune](#microsoft-intune-for-windows-10-and-11) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [Microsoft Intune](#intune-for-windows-10-and-11) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 ### Local script for Windows 10 and 11
 
@@ -70,7 +70,7 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 If you prefer to use Group Policy to onboard Windows clients, follow the guidance in [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). This article describes the steps for onboarding to Microsoft Defender for Endpoint. The steps for onboarding to Defender for Business are similar.
 
-### Microsoft Intune for Windows 10 and 11
+### Intune for Windows 10 and 11
 
 If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
 
@@ -151,7 +151,7 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 Choose one of the following options to onboard Mac devices:
 
 - [Local script for Mac](#local-script-for-mac) (*recommended*)
-- [Intune for Mac](#microsoft-intune-for-mac)
+- [Intune for Mac](#intune-for-mac)
 
 ### Local script for Mac
 
@@ -179,7 +179,7 @@ When you run the local script on a Mac, it creates a trust with Azure Active Dir
 
 After a Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
-### Microsoft Intune for Mac
+### Intune for Mac
 
 If your subscription includes Microsoft Intune, you can onboard Mac in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
 
