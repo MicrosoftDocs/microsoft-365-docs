@@ -43,7 +43,7 @@
 #### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
-#### [Migrating Defender sensor from MMA to UA using MECM](application-deployment-via-mecm.md)
+#### [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md)
 
 ## [Configure and onboard devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)

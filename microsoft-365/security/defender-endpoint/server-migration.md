@@ -105,7 +105,7 @@ Name: ForceDefenderPassiveMode
 Type: REG_DWORD
 Value: 0
 
-For more information on migrating from MMA to Unified Agent scenario, see [Migrating Defender sensor from MMA to UA using MECM for down-level OS](application-deployment-via-mecm.md).
+For more information on migrating servers from MMA to unified solution, see [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md).
 
 ## Other migration scenarios
 

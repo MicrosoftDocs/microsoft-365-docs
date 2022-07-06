@@ -1,7 +1,7 @@
 ---
-title: Migrating Defender sensor from MMA to UA using MECM for down-level OS
-description: Learn how to migrate down-level servers from Microsoft Monitoring Agent to the new Unified Agent step-by-step from this article.
-keywords: migrate server, server, 2012r2, 2016, server migration onboard Microsoft Defender for Endpoint servers, MECM, Microsoft Monitoring Agent, MMA, downlevel server, unified agent, UA
+title: Migrating servers from Microsoft Monitoring Agent to the unified solution
+description: Learn how to migrate down-level servers from Microsoft Monitoring Agent to the new unified solution step-by-step from this article.
+keywords: migrate server, server, 2012r2, 2016, server migration onboard Microsoft Defender for Endpoint servers, MECM, Microsoft Monitoring Agent, MMA, downlevel server, unified solution, UA
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,39 +17,38 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Migrating Defender sensor from MMA to UA using MECM for down-level OS
+# Migrating servers from Microsoft Monitoring Agent to the unified solution
 
 **Applies to:**
 
 - Windows Server 2012 R2
 - Windows Server 2016
 
+This article guides you in migrating down-level servers from Microsoft Monitoring Agent (MMA) to the unified solution.
+
 ## Prerequisites
 
-- Microsoft Endpoint Configuration Manager (MECM) installed (Version 2107 N-2)
+- Microsoft Endpoint Configuration Manager (MECM) older than 2207.
 - Down-level OS devices in your environment onboarded with Microsoft Monitoring Agent. To confirm, verify that `MsSenseS.exe` is running in Task Manager.
 - Presence of the MMA agent. You can verify it by checking if the correct Workspace ID is present in the Control Panel> Microsoft Monitoring Agent.
-- Active M365 Defender portal with devices onboarded.
+- Active Microsoft 365 Defender portal with devices onboarded.
 - A Device Collection containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is set up in your MECM instance.
 
-For more information on installing the above, see [related topics](#related-topics) section.
+For more information on installing the listed prerequisites, see [related topics](#related-topics) section.
 
-## App Packaging and Deployment
+## Gather required files
 
-### Gathering the files needed before packaging
+Copy the unified solution package, onboarding script and migration script to the same content source you deploy other apps with MECM.
 
-Copy the UA agent package, onboarding script and migration script to the same content source you deploy other apps with MECM.
-
-1. Download Onboarding Script and UA agent from [MDATP Settings - Microsoft 365 security](https://sip.security.microsoft.com/preferences2/onboarding).
-     :::image type="content" source="images/onboarding-script.png" alt-text="Onboarding script and UA agent download":::
+1. Download Onboarding Script and the unified solution from [Microsoft 365 Defender settings page](https://sip.security.microsoft.com/preferences2/onboarding).
+     :::image type="content" source="images/onboarding-script.png" alt-text="Onboarding script and unified solution download":::
 2. Download the migration script from the document: [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
-     :::image type="content" source="images/migration-script.png" alt-text="Downloading migration script":::
-3. Save all three files in a shared folder used by MECM as a Software Source. Refer to the screenshot below:
+3. Save all three files in a shared folder used by MECM as a Software Source.
      :::image type="content" source="images/ua-migration.png" alt-text="Saving the shared folder by MECM":::
 
-### Creating the package as an application
+## Creating the package as an application
 
-1. In the MECM console, follow these steps: **Software Library>>Applications>>Create Application**.
+1. In the MECM console, follow these steps: **Software Library>Applications>Create Application**.
 2. Select **Manually specify the application information**.
       :::image type="content" source="images/manual-application-information.png" alt-text="Manually specify the application information selection":::
 3. Click **Next** on the Software Center screen of the wizard.
@@ -77,7 +76,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
      :::image type="content" source="images/detection-rule-wizard.png" alt-text="Registry key detection":::
 
      >[!TIP]
-     >This registry key value was obtained by running the following PowerShell command on a device that has had the UA agent installed. Other creative methods of detection can also be used. The goal is to identity whether Unified Agent has been already installed on a specific device.
+     >This registry key value was obtained by running the following PowerShell command on a device that has had the unified solution installed. Other creative methods of detection can also be used. The goal is to identity whether the unified solution has already been installed on a specific device.
 
      ```powershell
      PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
@@ -95,7 +94,7 @@ Copy the UA agent package, onboarding script and migration script to the same co
 15. Keep clicking next until the completion of Application Wizard. Verify all have been green checked.
 16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.
      :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created":::
-17. Verify in MECM>Monitoring>Deployments the status of this migration. See the below screenshot:
+17. Verify in MECM>Monitoring>Deployments the status of this migration.
 
       :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check":::
 
