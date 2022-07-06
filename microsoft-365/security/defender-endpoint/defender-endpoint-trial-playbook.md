@@ -62,9 +62,9 @@ Here's how to set up your trial subscription:
 
 ## Step 1: Confirm your license state
 
-To make sure your license is properly provisioned, you can check your license state in either the Microsoft 365 admin center or the Microsoft Azure portal.
+To make sure your Defender for Endpoint subscription is properly provisioned, you can check your license state in either the Microsoft 365 admin center or the Microsoft Azure portal.
 
-[Check license state](production-deployment.md#check-license-state).
+[Check your license state](production-deployment.md#check-license-state).
 
 ## Step 2: Set up role-based access control and grant permissions to your security team
 
@@ -84,15 +84,15 @@ The Microsoft 365 Defender portal is where you can access your Defender for Endp
 
 2. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in.
 
-3. In the navigation pane, see **Endpoints** to access your capabilities. 
+3. In the navigation pane, see the **Endpoints** section to access your capabilities. 
 
 ## Step 4: Onboard endpoints using any of the supported management tools 
 
 This section outlines the general steps you need to take to onboard devices (endpoints).
 
-1.	Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
+1. [Watch this video](https://www.microsoft.com/videoplayer/embed/RE4bGqr) for a quick overview of the onboarding process and learn about the available tools and methods.
 
-2.	Review which onboarding tool options are most appropriate to your environment to source instructions on how to onboard. 
+2. Review which onboarding tool options are most appropriate to your environment to source instructions on how to onboard. 
 
 ## Step 5: Configure capabilities 
 
