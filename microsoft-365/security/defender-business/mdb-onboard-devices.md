@@ -22,7 +22,6 @@ ms.collection:
 
 With Microsoft Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through these options and provides an overview of how onboarding works.
 
-
 ## What to do
 
 1. Select a tab: 
@@ -45,7 +44,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 ### Local script for Windows 10 and 11
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune.
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune, and this is the recommended method for Defender for Business customers.
 
 > [!TIP]
 > We recommend that you onboard up to 10 devices at a time when you use the local script method.
@@ -72,9 +71,9 @@ If you prefer to use Group Policy to onboard Windows clients, follow the guidanc
 
 ### Intune for Windows 10 and 11
 
-If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
+If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription, and you can use Intune to onboard devices.  
 
-There are several methods available for enrolling devices in Intune. We recommend one of the following methods:
+There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
 
 - [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll) for company-owned or company-managed devices
 - [Ask users to enroll their own Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device)
@@ -100,7 +99,7 @@ When you set up automatic enrollment, users add their work account to the device
 
 4. Select **Save**.
 
-5. After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+5. After a device is enrolled in Intune, you can add it to a device group in Defender for Business. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
 > [!TIP]
 > To learn more, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
@@ -113,7 +112,7 @@ When you set up automatic enrollment, users add their work account to the device
 
 2. Share this article with users in your organization: [Enroll Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device).
 
-3. After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+3. After a device is enrolled in Intune, you can add it to a device group in Defender for Business. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
 ### Run a detection test on a Windows 10 or 11 device
 
