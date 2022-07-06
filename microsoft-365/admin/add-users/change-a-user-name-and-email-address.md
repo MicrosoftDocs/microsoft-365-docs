@@ -30,12 +30,16 @@ description: "Learn how a Microsoft 365 global admin can change a user's email a
 
 # Change a user name and email address
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Change a user's name or email address
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198016).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 

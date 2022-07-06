@@ -24,8 +24,6 @@ description: Learn how to use dlp policies for non-Microsoft cloud apps.
 
 # Use data loss prevention policies for non-Microsoft cloud apps
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
 
 ## Before you begin
