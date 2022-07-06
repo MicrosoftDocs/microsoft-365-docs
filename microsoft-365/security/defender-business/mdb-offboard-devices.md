@@ -23,7 +23,7 @@ ms.collection:
 If you want to offboard a device, use one of the following procedures:
 
 - [Offboard a Windows device](#offboard-a-windows-device)
-- [Offboard a macOS computer](#offboard-a-macos-computer)
+- [Offboard a Mac](#offboard-a-mac)
 
 ## Offboard a Windows device
 
@@ -41,7 +41,7 @@ If you want to offboard a device, use one of the following procedures:
 
 7. Run the script on each device that you want to offboard.
 
-## Offboard a macOS computer
+## Offboard a Mac
 
 1. Go to **Finder** > **Applications**. 
 
