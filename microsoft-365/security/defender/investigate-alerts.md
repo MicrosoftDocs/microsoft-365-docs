@@ -190,7 +190,7 @@ To create a suppression rule for alerts:
 
 1. Select the investigated alert. In the main alert page, select **Create suppression rule** in the summary details section of the alert page. 
 
-    :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="Create separation rule action":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="Screenshot of Create separation rule action.":::
 
 2. In the **Create suppression rule** pane, select **Only this alert type** to apply the rule on the selected alert.
 
@@ -204,10 +204,10 @@ To create a suppression rule for alerts:
  
     1. For example, in the **Conditions** section, select the triggering evidence **Entity Role: Triggering**, **Equals** and select the evidence type from the drop-down list. 
 
-    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Evidence types drop-down list" lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
+    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Screenshot of evidence types drop-down list." lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
 
     2. All the properties of this 'evidence' will auto populate as a new subgroup in the respective fields below.
-    :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Properties of evidence auto-populate" lightbox="../../media/investigate-alerts/properties-evidence.png" :::
+    :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Screenshot of properties of evidence auto-populating." lightbox="../../media/investigate-alerts/properties-evidence.png" :::
 
     > [!NOTE]
     > Condition values are not case sensitive. 
@@ -215,20 +215,20 @@ To create a suppression rule for alerts:
     3. You can edit and/or delete properties of this 'evidence' as per your requirement (using wildcards, when supported).
 
     4. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
-    :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Other types of evidence" lightbox="../../media/investigate-alerts/other-evidence-types.png":::
+    :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Screenshot of other types of evidence." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
 
     5. To add another IOC, click **Add filter**. 
     > [!NOTE]
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
     
 4. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related evidence types and their properties at once in the **Conditions** section.
-    :::image type="content" source="../../media/investigate-alerts/auto-fill-IOCs.png" alt-text="Auto fill all alert related IoCs" lightbox="../../media/investigate-alerts/auto-fill-IOCs.png":::
+    :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Screenshot of auto fill all alert related IoCs." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
 
 5. In the **Scope** section, set the Scope in the **Conditions** sub-section by selecting specific device, multiple devices, device groups, the entire organization or by user.
     > [!NOTE]
     > You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the **Scope** is set for **User** together with **Device**, **Device groups**.
 
-:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Create suppression rule pane: Conditions, Scope, Action":::
+:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Screenshot of create suppression rule pane.: Conditions, Scope, Action":::
  
 6. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
     Enter **Name**, **Comment**,  and click **Save**.
@@ -241,16 +241,16 @@ IOCs that were selected in the suppression conditions will be selected by defaul
       1. Enter the scope to the **Select scope to apply to**. By default scope for the related alert is selected.
       1. Click **Save**. Now the file is not blocked as it is in the allow list.
 
-    :::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Screenshot of successful suppression rule creation. ":::
 
 8.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
  
-    :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the suppression rule creation feature":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Screenshot of toggle for turning on/off the suppression rule creation feature.":::
 
 9.	**Edit existing rules:** <br> You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
     To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         
 
-    :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Edit suppression rule":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Screenshot of edit suppression rule.":::
   
 ## Resolve an alert
 
