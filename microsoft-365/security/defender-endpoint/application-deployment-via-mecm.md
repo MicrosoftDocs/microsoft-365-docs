@@ -46,7 +46,7 @@ Copy the unified solution package, onboarding script and migration script to the
 3. Save all three files in a shared folder used by MECM as a Software Source.
      :::image type="content" source="images/ua-migration.png" alt-text="Saving the shared folder by MECM":::
 
-## Creating the package as an application
+## Create the package as an application
 
 1. In the MECM console, follow these steps: **Software Library>Applications>Create Application**.
 2. Select **Manually specify the application information**.
