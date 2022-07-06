@@ -135,7 +135,7 @@ By default, the **Items** scope is always selected. The other scopes are selecte
 
 - **Schematized data assets**: [Automatically label your content in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)
 
-If you change the defaults so not all scopes are selected, you see the first page of the configuration settings for scopes you haven't selected, but you can't configure the settings. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
+If you change the defaults so not all scopes are selected, you see the first page of the configuration settings for scopes you haven't selected, but you can't configure the settings. For example, if the scope for items isn't selected, you can't select the options on the next page:
 
 ![Unavailable options for sensitivity labels.](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -143,7 +143,7 @@ For these pages that have unavailable options, select **Next** to continue. Or, 
 
 ### Label priority (order matters)
 
-When you create your sensitivity labels in your admin center, they appear in a list on the **Sensitivity** tab on the **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
+When you create your sensitivity labels in the Microsoft Purview compliance center, they appear in a list on the **Sensitivity** tab on the **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
 
 You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option does not apply to sublabels that share the priority of their parent label.
 
