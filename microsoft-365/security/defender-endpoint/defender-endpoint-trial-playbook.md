@@ -92,31 +92,37 @@ This section outlines the general steps you need to take to onboard devices (end
 
 1. [Watch this video](https://www.microsoft.com/videoplayer/embed/RE4bGqr) for a quick overview of the onboarding process and learn about the available tools and methods.
 
-2. Review which onboarding tool options are most appropriate to your environment to source instructions on how to onboard. 
+2. Review your [device onboarding tool options](onboarding.md) and select the most appropriate option for your environment. 
 
 ## Step 5: Configure capabilities 
 
-After onboarding the endpoints, you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
-•	Use this table for the components that you can configure. Choose the components that you'd like to use and remove the ones that do not apply.
+After onboarding devices (endpoints), you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
+
+Use [this table](onboarding.md) to choose components to configure. Choose the components that you'd like to use and skip the ones that do not apply.
 
 ## Step 6: Experience Microsoft Defender for Endpoint through simulated attacks
 
 You might want to experience Defender for Endpoint before you onboard more than a few devices to the service. To do this, you can run controlled attack simulations on a few test devices. After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.
-To run any of the provided simulations, you need at least one onboarded device.
-1.	Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.
-2.	Run a simulation
+
+To run any of the provided simulations, you need at least [one onboarded device](onboard-configure.md).
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, under **Endpoints**, choose **Tutorials**.
+
+2. Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.
+
+3. [Run a simulation](attack-simulations.md).
 
 ## Step 7: Set up the Microsoft Defender for Endpoint evaluation lab   
 
 The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action. Using the simplified set-up experience in evaluation lab, you can focus on running your own test scenarios and the pre-made simulations to see how Defender for Endpoint performs.
-•	Watch the video overview    of evaluation lab
-•	Get started with the lab 
 
-
+- [Watch the video overview](https://www.microsoft.com/videoplayer/embed/RE4qLUM) of the evaluation lab
+- [Get started with the lab](evaluation-lab.md) 
 
 
 ## See also
 
-[Microsoft Defender for Endpoint evaluation lab](/microsoft-365/security/defender-endpoint/evaluation-lab?view=o365-worldwide&branch=mde-trial)
-
+- [Defender for Endpoint technical documentation](microsoft-defender-endpoint.md)
+- [Microsoft Security technical content library](https://www.microsoft.com/security/content-library/Home/Index)
+- [Defender for Endpoint demonstration](https://cdx.transform.microsoft.com/experience-detail/d5eca65d-13a3-464d-9171-c24cf9dd6050)
 
