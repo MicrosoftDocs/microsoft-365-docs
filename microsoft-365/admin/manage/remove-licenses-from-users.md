@@ -124,7 +124,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ## Next steps
 
-If you’re not going to [reassign the unused licenses to other users](../../managed-desktop/get-started/assign-licenses.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
+If you’re not going to [reassign the unused licenses to other users](assign-licenses-to-users.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
 
 ## Related content
 
