@@ -21,8 +21,6 @@ description: Identify the PowerShell cmdlets for retention that support configur
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use the following sections to identify the main PowerShell cmdlets that are available for retention policies and retention labels that you might need for configuration at-scale, automated scripts, or advanced configuration scenarios. For the full list of  cmdlets, see the [policy-and-compliance-retention list](/powershell/module/exchange#policy-and-compliance-retention) from the PowerShell documentation.
 
 Before you use these cmdlets, you must first [connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
