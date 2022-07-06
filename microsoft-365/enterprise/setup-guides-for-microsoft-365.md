@@ -28,7 +28,7 @@ description: "Get step-by-step tools to plan, migrate, and implement the feature
 Microsoft 365 and Office 365 setup guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. These guides are created using the same best practices that [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) onboarding specialists share in individual interactions, and they're available to all admins within the Microsoft 365 admin center. They give information on product setup, enabling security features, deploying collaboration tools, and provide scripts to speed up advanced deployments.
 
 > [!NOTE]
-> You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant.
+> You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Master Administrator role can use the guides to change settings in the tenant.
 
 ## How to access setup guides in the Microsoft 365 admin center
 
