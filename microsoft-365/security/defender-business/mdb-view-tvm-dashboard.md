@@ -28,7 +28,6 @@ Microsoft Defender for Business includes a vulnerability management dashboard th
 
 [Learn more about Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md).
 
-
 ## Next steps
 
 - [Tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
