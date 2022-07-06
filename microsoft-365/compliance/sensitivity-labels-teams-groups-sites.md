@@ -45,7 +45,7 @@ Content in these containers however, do not inherit the labels for the classific
 
 Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
-![A sensitivity label displayed in the Word desktop app.](../media/sensitivity-label-word.png)
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="A sensitivity label displayed in the Word desktop app." lightbox="../media/sensitivity-label-word.png"
 
 After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
@@ -296,7 +296,7 @@ The dropdown box displays the label names for the selection, and the help icon d
 
 When the label is applied, and users browse to the site, they see the name of the label and applied policies. For example, this site has been labeled as **Confidential**, and the privacy setting is set to **Private**:
 
-![A site that has a sensitivity label applied.](../media/sensitivity-label-site.png)
+:::image type ="content" source:"../media/sensitivity-label-site.png" alt-text="A site that has a sensitivity label applied." lightbox="../media/sensitivity-label-site.png":::
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
@@ -336,7 +336,7 @@ This series of commands lets you label multiple sites across your tenant with th
 
 To view, sort, and search the applied sensitivity labels, use <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
-![The Sensitivity column on the Active sites page.](../media/manage-site-sensitivity-labels.png)
+:::image type="content" source="../media/manage-site-sensitivity-labels.png" alt-text="The Sensitivity column on the Active sites page." lightbox="../media/manage-site-sensitivity-labels.png"
 
 For more information about managing sites from the Active sites page, including how to add a column, see [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
 
