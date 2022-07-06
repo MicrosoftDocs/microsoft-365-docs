@@ -52,7 +52,7 @@ The image and the table below lists the changes in navigation between the Micros
 | Configuration management | Configuration management |
 | Settings | Settings | 
 
-The improved [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
+The improved [Microsoft 365 Defender](microsoft-365-defender-portal.md) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
 
 If you're familiar with the Microsoft Defender Security Center, this article helps describe some of the changes and improvements in Microsoft 365 Defender. However there are some new and updated elements to be aware of.
 
@@ -173,7 +173,7 @@ You can continue to use email alerts for Defender for Endpoint. We've added new 
 
 ### Managed Security Service Providers (MSSP)
 
-Logging in to multiple tenants simultaneously in the same browsing session is currently not supported in the unified portal. You can opt-out of the automatic redirection by [reverting to the former Microsoft Defender for Endpoint portal](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal), to maintain this functionality until the issue is resolved.
+Logging in to multiple tenants simultaneously in the same browsing session is currently not supported in the unified portal. You can opt out of the automatic redirection by [reverting to the former Microsoft Defender for Endpoint portal](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal), to maintain this functionality until the issue is resolved.
 
 ## Related information
 

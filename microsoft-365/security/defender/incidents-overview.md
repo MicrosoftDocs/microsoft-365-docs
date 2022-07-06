@@ -101,6 +101,9 @@ Here's the relationship between an incident and its data and the tabs of an inci
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-security-center.png":::
 
+> [!NOTE]
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](investigate-incidents.md#alerts).
+
 ## Example incident response workflow for Microsoft 365 Defender
 
 Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 Defender portal.

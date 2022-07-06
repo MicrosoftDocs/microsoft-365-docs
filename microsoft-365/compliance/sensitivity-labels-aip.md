@@ -23,8 +23,6 @@ description: When you use the Azure Information Protection (AIP) unified labelin
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or an add-in from the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2). 
 
 Built-in labeling forms the cornerstone of a [Microsoft Purview information protection deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other Microsoft Purview capabilities, such as data classification and Microsoft Purview data loss prevention (DLP).
@@ -71,6 +69,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
     - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
     - Detection of sensitive information as users type
     - In Word, users can review and remove the identified sensitive content
+- [PDF support](sensitivity-labels-office-apps.md#pdf-support) (in preview)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
 - Visibility of labels on the status bar
@@ -160,6 +159,7 @@ The following configurations from the AIP add-in aren't yet supported by built-i
 
 - [Label inheritance from email attachments](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 - [S/MIME for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configure-a-label-to-apply-smime-protection-in-outlook)
+    - This setting is starting to [roll out in preview for built-in labeling across all platforms](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)
 - [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [Default sublabel for a parent label](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
 - [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )

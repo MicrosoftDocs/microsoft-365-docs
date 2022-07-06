@@ -55,7 +55,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- Both add-ins are not available for shared mailboxes.
+- Both add-ins are not available for shared, group, or delegated mailboxes (the add-ins will be greyed out).
 
 - Both add-ins are not available for on-premises Exchange mailboxes.
 
