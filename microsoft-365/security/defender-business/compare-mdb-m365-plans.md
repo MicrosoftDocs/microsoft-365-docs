@@ -65,7 +65,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 |[Automated investigation and response](../defender-endpoint/automated-investigations.md)|Yes <sup>[[3](#fn3)]</sup>|No|Yes|
 |[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention |No <sup>[[4](#fn4)]</sup>|No|Yes|
 |[Threat analytics](../defender-endpoint/threat-analytics.md)|Yes <sup>[[5](#fn5)]</sup>|No|Yes|
-|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS)|Yes <sup>[[6](#fn6)]</sup>|Yes|Yes|
+|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, Mac, iOS, and Android OS)|Yes <sup>[[6](#fn6)]</sup>|Yes|Yes|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)|No|No|Yes|
 |Partner APIs|Yes|Yes|Yes|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes |Yes <sup>[[7](#fn7)]</sup>|Yes <sup>[[7](#fn7)]</sup>|

@@ -52,14 +52,14 @@ sections:
         answer: |
           Server support is now in preview. Note that certain requirements, such as an additional server license, must be met. For more details, see the **servers** tab in [Onboard devices](mdb-onboard-devices.md).  
 
-      - question: Does Defender for Business protect macOS, Android, and iOS/iPadOS client devices?
+      - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
-          Yes. Defender for Business supports protection for macOS, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
+          Yes. Defender for Business supports protection for Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
-          - You can onboard macOS devices using a local script in the Microsoft 365 Defender portal. 
+          - You can onboard Mac devices using a local script in the Microsoft 365 Defender portal. 
           - To onboard Android and iOS/iPadOS devices, you must have a license for [Microsoft Intune](/mem/intune/). Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone).
 
-          More simplification for macOS, iOS/iPadOS, and Android devices is on the roadmap. 
+          More simplification for Mac, iOS/iPadOS, and Android devices is on the roadmap. 
 
       - question: Can I configure more than one web content filtering policy in Defender for Business?
         answer: |
@@ -91,7 +91,7 @@ sections:
 
       - question: If I don't currently have Microsoft Intune, do I need an another license to use features that are included in both Defender for Business and Intune? 
         answer: |
-          If you have Defender for Business as a standalone subscription and you don't have Intune, you can onboard and secure Windows and macOS devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+          If you have Defender for Business as a standalone subscription and you don't have Intune, you can onboard and secure Windows and Mac devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
            
           You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). 
            
