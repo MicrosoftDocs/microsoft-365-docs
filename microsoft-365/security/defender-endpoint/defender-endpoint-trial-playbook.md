@@ -34,19 +34,19 @@ Defender for Endpoint is an enterprise endpoint security platform that uses the 
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
-<td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
-<td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></td>
+<td><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></td>
+<td><center><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></center></td>
+<td><center><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></center></td>
+<td><center><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></center></td>
+<td><center><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></center></td>
 </tr>
 <tr>
 <td colspan="7">
-<a href="#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
+<center><b>Centralized configuration and administration, APIs</b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><center><b>Microsoft 365 Defender</center></b></td>
 </tr>
 </table>
 <br>
@@ -58,7 +58,12 @@ Let's get started!
 Here's how to set up your trial subscription:
 
 1. [Confirm your license state](#step-1-confirm-your-license-state).
-2. 
+2. [Set up role-based access control and grant permissions to your security team](#step-2-set-up-role-based-access-control-and-grant-permissions-to-your-security-team).
+3. [Visit the Microsoft 365 Defender portal](#step-3-visit-the-microsoft-365-defender-portal).
+4. [Onboard endpoints using any of the supported management tools](#step-4-onboard-endpoints-using-any-of-the-supported-management-tools).
+5. [Configure capabilities](#step-5-configure-capabilities).
+6. [Experience Microsoft Defender for Endpoint through simulated attacks](#step-6-experience-microsoft-defender-for-endpoint-through-simulated-attacks).
+7. [Set up the Microsoft Defender for Endpoint evaluation lab](#step-7-set-up-the-microsoft-defender-for-endpoint-evaluation-lab).
 
 ## Step 1: Confirm your license state
 
