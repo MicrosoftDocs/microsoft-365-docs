@@ -45,7 +45,7 @@ The global admin for your organization has full permissions to create and manage
 
 2. On the **Labels** page, select **+ Create a label** to start the new sensitivity label configuration: 
     
-    ![Create a sensitivity label.](../media/create-sensitivity-label-full.png)
+    :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="Create a sensitivity label." lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
     > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
@@ -148,7 +148,7 @@ To check your label's configuration, including advanced settings, use the follow
 
 2. On the **Label policies** page, select **Publish label** to start the **Create policy** configuration:
     
-    ![Publish labels.](../media/publish-sensitivity-labels-full.png)
+   :::image type="content" source="../media/publish-sensitivity-labels-full.png" alt-text="Publish labels." lightbox="../media/publish-sensitivity-labels-full.png":::
     
     > [!NOTE]
     > By default, tenants don't have any label policies and you must create them. 
