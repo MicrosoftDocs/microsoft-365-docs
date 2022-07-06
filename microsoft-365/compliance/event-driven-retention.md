@@ -72,14 +72,14 @@ It's important to understand that if you don't specify an asset ID or keywords f
 
 Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
   
-## How to set up event-driven retention
+## How to set up event-based retention
 
-High-level workflow for event-driven retention:
+High-level workflow for event-based retention:
   
-![Diagram of workflow for setting up event-driven retention.](../media/event-based-retention-process.png)
+![Diagram of workflow for setting up event-based retention.](../media/event-based-retention-process.png)
   
 > [!TIP]
-> See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
+> See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-based retention.
 
 ### Step 1: Create a label whose retention period is based on an event
 
