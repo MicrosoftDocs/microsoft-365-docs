@@ -1,14 +1,14 @@
 ---
-title: Teams for Retail
-description: Learn about the admin resources available to manage and get the most out of Teams for your retail stores and workforce.
+title: Teams for Financial Services
+description: Learn about the admin resources available to manage and get the most out of Teams for your frontline financial services workforce.
 ms.topic: conceptual
-author: samanro
-ms.author: samanro
+author: daisyfell
+ms.author: daisyfeller
 audience: admin
-manager: serdars
+manager: pamgreen
 f1.keywords:
 - NOCSH
-ms.date: 03/01/2019
+ms.date: 07/06/2022
 ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
@@ -18,13 +18,13 @@ ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
   - Microsoft Teams
-  - Microsoft Cloud for Retail
+  - Microsoft Cloud for Financial Services
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
-# Get started with Teams for Retail
+# Get started with Teams for Financial Services
 
 Retail environments, with their rotating schedules and on-the-go staff, have very different needs than other organizations. To get the most benefit for your retail organization, you first choose which scenarios Teams can help you with in your day-to-day business operations, and then make sure that you prepare your Teams environment with the right fundamentals, teams, and apps to support those scenarios.
 
