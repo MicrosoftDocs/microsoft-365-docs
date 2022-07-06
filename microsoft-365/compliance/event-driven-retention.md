@@ -35,6 +35,7 @@ Examples for using event-based retention:
 - **Contract expiration** Suppose that all records related to contracts must be retained for five years from the time the contract expires. The event that triggers the five-year retention period is the expiration of the contract. 
 
 - **Product lifetime** Your organization might have retention requirements related to the last manufacturing date of products for content such as technical specifications. In this case, the last manufacturing date is the event that triggers the retention period. 
+
 Event-based retention, sometimes also referred to as "event-driven retention", is typically used with records management processes. This means that:
 
 - Retention labels based on events also usually mark items as a record, as a part of a records management solution. For more information, see [Learn about records management](records-management.md).
