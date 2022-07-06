@@ -82,7 +82,7 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 2. Then, on the **Choose protection settings for labeled items** page, make sure you select **Encrypt items**
     
-    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Sensitivity label protection options for items." Lightbox="../media/protection-options-sensitivity-label.png:::
+    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Sensitivity label protection options for items." Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  On the **Encryption** page, select one of the following options:
     
