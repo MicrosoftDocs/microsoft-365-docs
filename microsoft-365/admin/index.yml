@@ -54,7 +54,7 @@ productDirectory:
       # need to pick new image for this
       imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
       summary: Learn how to set up and manage Microsoft 365 for your business with short videos.
-      url: admin-video-library.yml
+      url: https://go.microsoft.com/fwlink/?linkid=2197659
     # Card
     - title: Get started
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg

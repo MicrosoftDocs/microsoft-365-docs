@@ -23,8 +23,6 @@ search.appverid:
 
 # Use communication compliance reports and audits
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Reports
 
 The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets isn't exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. 
@@ -88,12 +86,11 @@ Use the *Export* option to create a .csv file containing the report details for 
 
     - **Email**: Sensitive information types detected in Exchange email messages.
     - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
-    - **Skype for Business**: Sensitive information types detected in Skype for business communications.
     - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
     - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
     - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
 
-### Message details report (preview)
+### Message details report
 
 Create custom reports and review details for messages contained in specific policies on the **Policies** tab. These reports can be used for all-up reviews of messages and for creating a report snapshot for the status of messages for a customizable time period. After creating a report, you can view and download the details report as a .csv file on the **Message details reports** tab.
 

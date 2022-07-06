@@ -1,12 +1,12 @@
 ---
-title: "How to get Microsoft 365 for Campaigns"
+title: "Get Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 

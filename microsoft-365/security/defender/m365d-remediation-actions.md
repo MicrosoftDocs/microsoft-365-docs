@@ -45,7 +45,7 @@ The following table summarizes remediation actions that are currently supported 
 
 |Device (endpoint) remediation actions  |Email remediation actions  |Users (accounts)  |
 |:---------|:---------|----------|
-|- Collect investigation package <br/>- Isolate device (this action can be undone)<br/>- Offboard machine <br/>- Release code execution <br/>- Release from quarantine <br/>- Request sample <br/>- Restrict code execution (this action can be undone) <br/>- Run antivirus scan <br/>- Stop and quarantine      |- Block URL (time-of-click)<br/>- Soft delete email messages or clusters<br/>- Quarantine email<br/>- Quarantine an email attachment<br/>- Turn off external mail forwarding          |- Disable user<br />- Reset user password<br />- Confirm user as compromised          |
+|- Collect investigation package <br/>- Isolate device (this action can be undone)<br/>- Offboard machine <br/>- Release code execution <br/>- Release from quarantine <br/>- Request sample <br/>- Restrict code execution (this action can be undone) <br/>- Run antivirus scan <br/>- Stop and quarantine <br/>- Contain devices from the network     |- Block URL (time-of-click)<br/>- Soft delete email messages or clusters<br/>- Quarantine email<br/>- Quarantine an email attachment<br/>- Turn off external mail forwarding          |- Disable user<br />- Reset user password<br />- Confirm user as compromised          |
 
 Remediation actions, whether pending approval or already complete, can be viewed in the [Action center](m365d-action-center.md).
 
@@ -80,3 +80,4 @@ In addition to remediation actions that follow automated investigations, your se
 - [Visit the Action center](m365d-action-center.md)
 - [View and manage remediation actions](m365d-autoir-actions.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
+- [Contain devices from the network](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)
