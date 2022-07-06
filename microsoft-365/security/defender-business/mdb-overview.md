@@ -44,7 +44,7 @@ With Defender for Business, you can help protect the devices and data your busin
 
 - **Flexibility for your environment**. Defender for Business can work with your business environment, whether you're using Microsoft Intune or you're brand new to the Microsoft Cloud. Defender for Business works with components that are built into Windows, and with apps for Mac, iOS, and Android devices.
 
-- **Integration with Microsoft 365 Lighthouse**. If you're a Managed Service Provider (MSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), more capabilities are available. If your customers are using Microsoft 365 Business Premium together with Defender for Business, you can view security incidents and alerts across customer tenants that are onboarded to Microsoft 365 Lighthouse.
+- **Integration with Microsoft 365 Lighthouse, RMM tools, and PSA software**. If you're a Cloud Solution Provider (MSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), more capabilities are available. If your customers are using Microsoft 365 Business Premium together with Defender for Business, you can view security incidents and alerts across customer tenants that are onboarded to Microsoft 365 Lighthouse (see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)). And, if you're a Microsoft managed service provider (MSP), you can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA) software (see [Microsoft Defender for Business and MSP resources](mdb-partners.md)).
 
 ## How to use this guide
 
