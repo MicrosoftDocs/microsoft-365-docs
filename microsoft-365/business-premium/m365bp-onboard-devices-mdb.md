@@ -28,6 +28,7 @@ To onboard devices to Defender for Business, you can choose from several options
 
 This article also includes:
 
+- [What about servers?](#what-about-servers) (NEW!)
 - [How to run a detection test on a Windows device](#run-a-detection-test-on-a-windows-device)
 - [How to onboard devices gradually](#onboard-devices-gradually)
 - [How to offboard a device](#offboard-a-device) if a device is replaced or someone leaves the organization
@@ -63,9 +64,7 @@ See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enroll
 
 ## What about servers?
 
-**Servers are not supported by default in Microsoft 365 Business Premium and Defender for Business. However, the ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is now in preview.** 
-
-Make sure to review the requirements before onboarding a server:
+Servers are not supported by default in Microsoft 365 Business Premium and Defender for Business. However, the ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is now in preview. Make sure to review the requirements before onboarding a server:
 
 - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
 - Preview features is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
