@@ -304,7 +304,7 @@ After the command runs, the Command Prompt window will close automatically. If s
 > - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
-## Onboard Linux Server endpoints
+### Onboard Linux Server endpoints
 
 You can use the following methods to onboard an instance of Linux Server to Defender for Business:
 
