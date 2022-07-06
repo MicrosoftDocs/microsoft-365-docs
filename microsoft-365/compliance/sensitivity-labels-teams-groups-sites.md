@@ -296,7 +296,7 @@ The dropdown box displays the label names for the selection, and the help icon d
 
 When the label is applied, and users browse to the site, they see the name of the label and applied policies. For example, this site has been labeled as **Confidential**, and the privacy setting is set to **Private**:
 
-:::image type ="content" source:"../media/sensitivity-label-site.png" alt-text="A site that has a sensitivity label applied." lightbox="../media/sensitivity-label-site.png":::
+:::image type ="content" source="../media/sensitivity-label-site.png" alt-text="A site that has a sensitivity label applied." lightbox="../media/sensitivity-label-site.png":::
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
