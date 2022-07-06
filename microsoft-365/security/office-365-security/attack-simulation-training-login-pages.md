@@ -69,7 +69,7 @@ You can create custom login pages in the following locations:
    Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard.
 
    > [!NOTE]
-   > The ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation. For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training.md).
+   > ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation or simulation automation. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training.md#select-a-payload-and-login-page) and [Create a simulation automation: Select a payload and login page](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
    >
    > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the login page later. You can pick up where you left off by selecting the login page on the **Tenant login pages** tab in **Login pages**, and then clicking ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The partially-completed login page will have the **Status** value **Draft**.
 
