@@ -232,16 +232,15 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 - If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**servers**](#tab/servers)
+## [**Servers**](#tab/Servers)
 
-> [!IMPORTANT]
-> The ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is currently in preview. Make sure to review the requirements before onboarding a server to Defender for Business.
+The ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is currently in preview. Make sure to review the requirements before onboarding a server to Defender for Business.
 
 ## Windows Server
 
 > [!IMPORTANT]
 > The ability to onboard Windows Server endpoints is currently in preview. Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
-> - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
+> - You have a Microsoft Defender for Business servers license for each server instance.
 > - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
@@ -297,7 +296,7 @@ After the command runs, the Command Prompt window will close automatically. If s
 
 > [!IMPORTANT]
 > The ability to onboard Linux Server endpoints is currently in preview. Make sure that you meet the following requirements before onboarding an instance of Linux Server endpoint:
-> - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
+> - You have a Microsoft Defender for Business servers license for each server instance.
 > - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
@@ -323,7 +322,7 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 - If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**mobile devices**](#tab/mobiles)
+## [**Mobile devices**](#tab/mobiles)
 
 ## Mobile devices
 
