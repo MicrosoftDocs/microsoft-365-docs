@@ -38,13 +38,16 @@ This article also includes:
 
 ## Use automatic onboarding for Windows devices that are already enrolled in Intune
 
-You can onboard Windows client devices to Defender for Business automatically if those devices are already enrolled in Intune. Defender for Business detects Windows client devices that are already enrolled in Intune, and prompts you to choose whether to onboard those devices automatically. Security policies and settings in Defender for Business are then applied to those devices. We call this process *automatic onboarding*. Note that the automatic onboarding option applies to Windows client devices only. Automatic onboarding is available if the following conditions are met:
+You can onboard Windows client devices to Defender for Business automatically if those devices are already enrolled in Intune. Defender for Business detects Windows client devices that are already enrolled in Intune, and prompts you to choose whether to onboard those devices automatically. Security policies and settings in Defender for Business are then applied to those devices. We call this process *automatic onboarding*. 
+
+Automatic onboarding helps get your devices protected almost immediately. 
+Note that the automatic onboarding option applies to Windows client devices only, if the following conditions are met:
 
 - Your organization was already using Intune or Mobile Device Management (MDM) in Intune before you got Defender for Business (Microsoft 365 Business Premium customers already have Microsoft Intune and MDM).
-- You already have Windows devices enrolled in Intune.
+- You already have Windows client devices enrolled in Intune.
 
 > [!TIP]
-> When you're prompted to use automatic onboarding, we recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Intune later on, they'll be onboarded to Defender for Business automatically.
+> If you're prompted to use automatic onboarding, we recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Intune later on, they'll be onboarded to Defender for Business automatically.
 
 To learn more about automatic onboarding, see [Use the wizard to set up Microsoft Defender for Business](../security/defender-business/mdb-use-wizard.md).
 
