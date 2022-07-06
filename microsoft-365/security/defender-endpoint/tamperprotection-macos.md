@@ -102,7 +102,7 @@ healthy                                     : true
 health_issues                               : []
 licensed                                    : true
 engine_version                              : "1.1.19300.3"
-app_version                                 : "1.0.0"
+app_version                                 : "101.70.19"
 org_id                                      : "..."
 log_level                                   : "info"
 machine_guid                                : "..."
@@ -127,7 +127,7 @@ edr_early_preview_enabled                   : "disabled"
 edr_device_tags                             : []
 edr_group_ids                               : ""
 edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
-edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+edr_machine_id                              : "..."
 conflicting_applications                    : []
 network_protection_status                   : "stopped"
 data_loss_prevention_status                 : "disabled"
@@ -158,7 +158,7 @@ full_disk_access_enabled                    : true
   health_issues                               : []
   licensed                                    : true
   engine_version                              : "1.1.19300.3"
-  app_version                                 : "1.0.0"
+  app_version                                 : "101.70.19"
   org_id                                      : "..."
   log_level                                   : "info"
   machine_guid                                : "..."
@@ -183,7 +183,7 @@ full_disk_access_enabled                    : true
   edr_device_tags                             : []
   edr_group_ids                               : ""
   edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
-  edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+  edr_machine_id                              : "..."
   conflicting_applications                    : []
   network_protection_status                   : "stopped"
   data_loss_prevention_status                 : "disabled"
