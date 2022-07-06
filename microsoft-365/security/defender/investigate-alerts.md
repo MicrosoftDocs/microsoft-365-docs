@@ -222,13 +222,13 @@ To create a suppression rule for alerts:
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
     
 4. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related evidence types and their properties at once in the **Conditions** section.
-    :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Screenshot of auto fill all alert related IoCs." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
+    :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Screenshot of auto fill all alert related IOCs." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
 
 5. In the **Scope** section, set the Scope in the **Conditions** sub-section by selecting specific device, multiple devices, device groups, the entire organization or by user.
     > [!NOTE]
     > You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the **Scope** is set for **User** together with **Device**, **Device groups**.
 
-:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Screenshot of create suppression rule pane.: Conditions, Scope, Action":::
+:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Screenshot of create suppression rule pane: Conditions, Scope, Action.":::
  
 6. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
     Enter **Name**, **Comment**,  and click **Save**.
