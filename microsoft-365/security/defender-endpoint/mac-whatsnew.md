@@ -258,7 +258,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - Added new switches to the command-line tool: 
     - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of 2 is used. 
     - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to enabled. 
-- Changing the product log level now requires elevation 
+- Changing the product log level now requires elevation. 
 - Performance improvements & bug fixes 
 
 <br/>
@@ -316,7 +316,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 - [Device control for macOS](mac-device-control-overview.md) is now in general availability. 
-- Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur) 
+- Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur). 
 - Other bug fixes 
 
 <br/>
@@ -377,7 +377,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Release version: **20.121021.12364.0** <br/> 
 
 **What's new**
-- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus` 
+- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`. 
 - Performance improvements & bug fixes 
 
 <br/>
@@ -474,7 +474,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **101.09.61**<br>
 
 **What's new** 
-- Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback) 
+- Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback). 
 - Status menu icon now shows a healthy state when the product settings are managed. Previously, the status menu icon was displaying a warning or error state, even though the product settings were managed by the administrator. 
 - Performance improvements & bug fixes 
 
@@ -487,7 +487,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new** 
 - This product version has been validated on macOS Big Sur 11 beta 9. 
-- The new syntax for the mdatp command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line) 
+- The new syntax for the mdatp command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line). 
 > [!NOTE]
 > The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
 - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory. 
@@ -671,7 +671,7 @@ We will continue supporting the old syntax in parallel with the new syntax and w
 
 **What's new**
 - Fixed an issue where Microsoft Defender for Endpoint on Mac was sometimes interfering with Time Machine. 
-- Added a new switch to the command-line utility for testing the connectivity with the backend service<br> 
+- Added a new switch to the command-line utility for testing the connectivity with the backend service:<br> 
 `BashCopy`<br> 
 `mdatp connectivity test` 
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view). 
