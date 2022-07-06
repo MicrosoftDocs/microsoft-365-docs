@@ -490,7 +490,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - The new syntax for the mdatp command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line) 
 > [!NOTE]
 > The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
-- Extended `mdatp` diagnostic create with a new parameter `--path [directory]` that allows the diagnostic logs to be saved to a different directory. 
+- Extended `mdatp diagnostic create` with a new parameter `--path [directory]` that allows the diagnostic logs to be saved to a different directory. 
 - Performance improvements & bug fixes 
 
 <br/>
@@ -528,7 +528,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **101.06.63**<br>
 
 **What's new** 
-- Addressed a performance regression introduced in version 101.05.17. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics. 
+- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics. 
 
 <br/>
 </details>
@@ -553,7 +553,7 @@ We will continue supporting the old syntax in parallel with the new syntax and w
 
 **What's new** 
 - Improvements to quick scan logic to significantly reduce the number of scanned files. 
-- Added autocompletion support for the command-line tool. 
+- Added [autocompletion support](mac-resources.md#how-to-enable-autocompletion) for the command-line tool. 
 - Bug fixes 
 
 <br/>
