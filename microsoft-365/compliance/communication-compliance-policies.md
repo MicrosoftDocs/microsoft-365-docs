@@ -23,8 +23,6 @@ search.appverid:
 
 # Communication compliance policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Policies
 
 > [!IMPORTANT]
