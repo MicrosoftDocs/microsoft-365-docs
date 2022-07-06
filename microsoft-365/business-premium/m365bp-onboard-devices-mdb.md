@@ -71,7 +71,7 @@ Servers are not supported by default in Microsoft 365 Business Premium and Defen
 
 - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
 - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
-- You've turned on the enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
+- The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
 See the **servers** tab in [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) for detailed instructions.
 
