@@ -24,9 +24,9 @@ appliesto:
 
 The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
-The wizard configures the Shifts connector, creates a connection to your WFM system, and applies the sync settings and team mappings that you choose. Sync settings determine the schedule information that's synced between your WFM system and Shifts. Team mappings define the sync relationship between your WFM sites and teams in Teams. You can map to existing teams and new teams.
+The wizard configures the Shifts connector, creates a connection to your WFM system, and applies the sync settings and team mappings that you choose. Sync settings determine the schedule information that's synced between your WFM system and Shifts. Team mappings define the sync relationship between your WFM instances and teams in Teams. You can map to existing teams and new teams.
 
-You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a WFM site can only be mapped to one team at any given time. If a WFM site is already mapped to a team, it can't be mapped to another team.
+You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a WFM instance can only be mapped to one team at any given time. If a WFM instance is already mapped to a team, it can't be mapped to another team.
 
 With your WFM system as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use your WFM system to set up schedules.
 
@@ -45,13 +45,13 @@ You must be a Microsoft 365 global admin to run the wizard.
 <a name="prerequisites"> </a>
 [!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
 
-- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a Blue Yonder WFM site to it. Otherwise, you'll see duplicate shifts.
+- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. Otherwise, you'll see duplicate shifts.
 
 ## Remove schedules from teams you want to map
 <a name="remove_schedules"> </a>
 
 > [!NOTE]
-> Complete this step if you're mapping Blue Yonder WFM sites to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
+> Complete this step if you're mapping Blue Yonder WFM instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
 
 Use PowerShell to remove schedules from teams.
 
@@ -62,9 +62,9 @@ Use PowerShell to remove schedules from teams.
     Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
     ```
 
-    To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector?view=teams-ps). Schedule data will be removed for the date and time range that you specify.
+    To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
 
-To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord?view=teams-ps).
+To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
 ## Run the wizard
 
@@ -108,26 +108,34 @@ On the Sync settings page, you choose the information to sync from Blue Yonder W
  
 1. When you're done choosing your settings, select **Create connection**.
 
-### Map Blue Yonder Workforce Management sites to teams
+### Map Blue Yonder Workforce Management instances to teams
 <a name="sites"> </a>
 
-Choose the Blue Yonder WFM sites you want to connect to Shifts. You can select up to 100 sites.
+Choose the Blue Yonder WFM instances that you want to connect to Shifts, and then map each instance to a team in Teams. You can map up to 100 instances. There's two ways that you can do this:
 
-:::image type="content" source="media/shifts-connector-wizard-sites.png" alt-text="Screenshot of wizard, showing list of Blue Yonder WFM sites." lightbox="media/shifts-connector-wizard-sites.png":::
+- [Manually map instances to teams](#manually-map-instances-to-teams)
+- [Prepare and upload a CSV file that defines your mappings](#use-a-csv-file-to-map-instances-to-teams)
+
+#### Manually map instances to teams
+
+Select the instances that you want to map.
+
+:::image type="content" source="media/shifts-connector-wizard-sites.png" alt-text="Screenshot of wizard, showing the list of Blue Yonder WFM instances." lightbox="media/shifts-connector-wizard-sites.png":::
 <a name="mapping"> </a>
 <a name="search_teams"> </a>
-Then, map each Blue Yonder WFM site that you selected to a team in Teams. You can map a site to an existing team or you can create a new team.
+Then, map each instance to a team in Teams. You can map an instance to an existing team or you can create a new team.
 :::image type="content" source="media/shifts-connector-wizard-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-search-team.png":::
-#### To map a site to an existing team
 
-1. Select the site name.
-2. In the pane, search for the team, and then select it. Keep in mind that teams that are already mapped to a site in this connection don't show up in the search.
+##### To map an instance to an existing team
+
+1. Select the instance name.
+2. In the pane, search for the team, and then select it. Keep in mind that teams that are already mapped to an instance in this connection don't show up in the search.
 3. Choose the time zone and closest city.
 4. Select **Save**, and then select **Next**.
 
-#### To map a site to a new team
+##### To map an instance to a new team
 
-1. Select the site name.
+1. Select the instance name.
 2. In the pane, choose **Create a new team**. You'll be taken to a new tab in your browser where you can create a new team in the Microsoft 365 admin center.
     1. Enter a name and an optional description for the team.
     1. Add one or more team owners. Make sure you add the Microsoft 365 system account as owner.
@@ -137,6 +145,37 @@ Then, map each Blue Yonder WFM site that you selected to a team in Teams. You ca
 3. Go back to the wizard, search for, and then select the new team you created.
 4. Choose the time zone and closest city.
 5. Select **Save**, and then select **Next**.
+
+#### Use a CSV file to map instances to teams
+
+1. Select **switch to bulk mode**.
+1. Select **download a template file** to download a mapping template that you can use to define your mappings.
+
+    :::image type="content" source="media/shifts-connector-wizard-mapping-file.png" alt-text="Screenshot of the Upload mapping file page of the wizard." lightbox="media/shifts-connector-wizard-mapping-file.png":::
+
+1. Use the template to create your mapping file. It contains these columns, in the following order, starting with the first column. An asterisk (*) indicates a required column.
+
+    |Column name  |Description  |
+    |---------|---------|
+    |**Blue Yonder Instance ID*** |The Blue Yonder WFM instance ID.|
+    |**Blue Yonder Instance Name**|The Blue Yonder WFM instance name.|
+    |**Team ID*** |The team ID.|
+    |**Team Name**|The team name.|
+    |**Time zone*** |The time zone in tz database format. For example, Europe/London.|
+
+    > [!NOTE]
+    > You only need to fill out the required columns (Blue Yonder Instance ID, Team ID, Time zone) to map instances to teams.
+
+    Here's an example of what a mapping file looks like.
+
+    |Blue Yonder Instance ID|Blue Yonder Instance Name|Team ID|Team Name|Time zone|
+    |---------|---------|---------|---------|---------|
+    |2111|Contoso US Team|3a4d78a-2261|US Team|America/Los_Angeles|
+    |3212|Contoso UK Team|2d1f6c2e-5272|UK Team|Europe/London|
+    |4865||bfa6o89e-1328||America/Toronto|
+
+1. When you've created your mapping file, select **Browse** to upload it. The wizard validates your file. If it finds errors, you'll see a list of the errors, and a message requesting that you correct them. Otherwise, you'll see a message to continue to the next step.  
+1. Select **Next**.
 
 ### Review and finish
 
@@ -148,7 +187,7 @@ You’ll see a message to confirm that we received your request along with an op
 
 :::image type="content" source="media/shifts-connector-wizard-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-operation-id.png":::
 
-The wizard starts the process to set up the connection and map the sites to the teams you selected. This process may take some time to complete. The recipients you chose will receive email notifications about setup status.
+The wizard starts the process to set up the connection and map the instances to the teams you selected. This process may take some time to complete. The recipients you chose will receive email notifications about setup status.
 
 Select **Done** to exit the wizard.
 
@@ -168,7 +207,7 @@ You’re on your way but you’re not done yet! Be sure to check your email. You
 >
 > Without this second step, users will still see the capability in Shifts, and will get an "unsupported operation" error message if they try to use it.
 
-To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule?view=graph-rest-1.0) to set the following parameters to ```false``` for each team that you mapped to a Blue Yonder WFM site:
+To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a Blue Yonder WFM instance:
 
 - Open shifts: ```openShiftsEnabled```
 - Swap requests:  ```swapShiftsRequestsEnabled```
@@ -185,4 +224,4 @@ After a connection is set up, you use PowerShell to make changes to it. For exam
 
 - [Shifts connectors](shifts-connectors.md)
 - [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
-- [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)
+- [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

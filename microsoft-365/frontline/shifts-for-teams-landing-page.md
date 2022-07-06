@@ -39,9 +39,9 @@ Use the following resources to help you set up and manage Shifts in your organiz
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
-|<img src="https://docs.microsoft.com/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Manage Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)** Learn how to manage Shifts for your organization.         |
+|<img src="https://docs.microsoft.com/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Manage Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Learn how to manage Shifts for your organization.         |
 |<img src="https://docs.microsoft.com/office/media/icons/users-people.png" alt="Users/people symbol.">   |**[Manage schedule owners for shift management](schedule-owner-for-shift-management.md)** This feature lets you elevate the permissions of a team member to a schedule owner without making the employee a team owner.         |
-|<img src="https://docs.microsoft.com/office/media/icons/help.png" alt="Help symbol.">     | **[Shifts data FAQ](shifts-data-faq.md)** Learn where Shifts data is stored and other topics related to Shifts data, including retention, retrieval, and encryption.        |
+|<img src="https://docs.microsoft.com/office/media/icons/help.png" alt="Help symbol.">     | **[Shifts data FAQ](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Learn where Shifts data is stored and other topics related to Shifts data, including retention, retrieval, and encryption.        |
 
 ## Shifts connectors
 

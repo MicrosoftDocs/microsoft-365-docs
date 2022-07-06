@@ -26,11 +26,11 @@ Use the [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with Blue Yonder WFM.
 
-To set up the connection, you run a PowerShell script. The script configures the connector, applies sync settings, creates the connection, and maps Blue Yonder WFM sites to teams. Sync settings determine the features enabled in Shifts and the schedule information that's synced between Blue Yonder WFM and Shifts. Mappings define the sync relationship between your Blue Yonder WFM sites and teams in Teams. You can map to existing teams and new teams.
+To set up the connection, you run a PowerShell script. The script configures the connector, applies sync settings, creates the connection, and maps Blue Yonder WFM instances to teams. Sync settings determine the features enabled in Shifts and the schedule information that's synced between Blue Yonder WFM and Shifts. Mappings define the sync relationship between your Blue Yonder WFM instances and teams in Teams. You can map to existing teams and new teams.
 
 We provide two scripts. You can use either script, depending on whether you want to map to existing teams or create new teams to map to.
 
-You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a Blue Yonder WFM site can only be mapped to one team at any given time. If a site is already mapped to a team, it can't be mapped to another team.
+You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a Blue Yonder WFM instance can only be mapped to one team at any given time. If an instance is already mapped to a team, it can't be mapped to another team.
 
 With Blue Yonder WFM as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use Blue Yonder WFM to set up schedules.
 
@@ -64,7 +64,7 @@ When you're prompted, sign in using your admin credentials. You're now set up to
 ## Identify the teams you want to map
 
 > [!NOTE]
-> Complete this step if you're mapping Blue Yonder WFM sites to existing teams. If you're creating new teams to map to, you can skip this step.
+> Complete this step if you're mapping Blue Yonder WFM instances to existing teams. If you're creating new teams to map to, you can skip this step.
 
 In the Azure portal, go to the [All groups](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) page to get a list of the TeamIds of teams in your organization.
 
@@ -95,7 +95,7 @@ The script does the following actions. You'll be prompted to enter setup and con
     > The script enables sync for all these options. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
 1. Creates the connection.
-1. Maps Blue Yonder WFM sites to teams. Mappings are based on the Blue Yonder WFM site IDs and TeamIds that you enter or new teams you create, depending on the script that you run. If a team has an existing schedule, the script removes schedule data for the date and time range that you specify.
+1. Maps Blue Yonder WFM instances to teams. Mappings are based on the Blue Yonder WFM instance IDs and TeamIds that you enter or new teams you create, depending on the script that you run. If a team has an existing schedule, the script removes schedule data for the date and time range that you specify.
 
 A Success message on the screen indicates that your connection is successfully set up.
 
@@ -108,7 +108,7 @@ To make changes to a connection after it's set up, see [Use PowerShell to manage
 ### Set up a connection and create new teams to map
 
 ```powershell
-#Map WFM sites to teams script
+#Map WFM instances to teams script
 Write-Host "Map WFM sites to teams"
 Start-Sleep 1
 
@@ -153,7 +153,7 @@ if ($testResult.Code -ne $NULL) {
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create an instance (includes WFM site team ids)
+#Create a connection instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
 $designatorName = Read-Host -Prompt "Enter your Microsoft 365's user name"
 $domain = $designatorName.Split("@")[1]
@@ -183,7 +183,7 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of sites
+#Retrieve the list of WFM instances
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
@@ -210,7 +210,7 @@ $Team = New-Team -DisplayName $teamsTeamName -Visibility "Public" -Owner $teamsU
 Write-Host "Success"
 $TeamsTeamId=$Team.GroupId
 
-#add users to the Team for Shifts
+#Add users to the Team for Shifts
 Write-Host "Adding users to Teams team"
 $currentUser = Read-Host -Prompt "Input the current user's user name or ID"
 Add-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
@@ -236,7 +236,7 @@ $RequestBody = @{
 $teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
 $Schedule = Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
 
-#Create a mapping of the new team to the site
+#Create a mapping of the new team to the WFM instance
 Write-Host "Create a mapping of the new team to the site"
 $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
 $teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
@@ -305,7 +305,7 @@ if ($testResult.Code -ne $NULL) {
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create an instance (includes WFM site team ids)
+#Create a connection instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
 $designatorName = Read-Host -Prompt "Enter your Microsoft 365 user name"
 $domain = $designatorName.Split("@")[1]
@@ -336,7 +336,7 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of sites
+#Retrieve the list of WFM instances
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
@@ -369,7 +369,7 @@ $entityType = $entityType.Trim()
 $entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
 Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $$teamsUserId
 
-#Create a mapping of the new team to the site
+#Create a mapping of the new team to the WFM instance
 Write-Host "Create a mapping of the existing team to the site"
 $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
 $teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
