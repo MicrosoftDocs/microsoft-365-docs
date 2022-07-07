@@ -36,11 +36,11 @@ Frontline workers in the financial services industry have unique needs for commu
 
 Microsoft 365 and Microsoft Teams offer several capabilities that can help financial services organizations with their daily operations and digital transformation. We recommend the following scenarios for financial services organizations:
 
-- Communicate within and across locations
-- Collaborate on files and documents
-- Onboard and train employees
-- Strengthen corporate communications
-- Collaborate on loan applications
+- [Communicate within and across locations](#communicate-within-and-across-locations)
+- [Simplify business processes](#simplify-business-processes)
+- [Onboard and train employees](#onboard-and-train-employees)
+- [Strengthen corporate communications](#strengthen-corporate-communications)
+- [Collaborate on loan applications](#collaborate-on-loan-applications)
 
 > [!NOTE]
 > These scenarios are also part of the Microsoft Cloud for Financial Services. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Financial Services, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Financial Services](/industry/financial-services).
@@ -73,15 +73,13 @@ More information: [Simplify business processes](simplify-business-processes.md)
 
 Financial services organizations have unique needs due to the high knowledge bases of frontline staff. From numeracy skills to up-to-date knowledge of company and governmental regulations, make sure your workforce is prepared with a strong onboarding and training process.
 
-**Key features apps:** Lists, meetings
+**Key features and apps:** Lists, meetings
 
 **Additional services:** Viva Learning, Viva Connections, SharePoint, Yammer
 
 More information: [Training and onboarding](flw-onboarding-training.md)
 
-More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
-
-### Corporate communications
+### Strengthen corporate communications
 
 Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer, Stream, and Viva Connections.
 
@@ -92,11 +90,17 @@ More information: [Corporate communications with frontline workers](flw-corp-com
 > [!NOTE]
 > For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.
 
+### Collaborate on loan applications
+
+Use the [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) app in Teams to accelerate the lending process with automation and collaboration tools, to quickly go from application to signing. The Collaboration Manager for Loans includes tools for keeping track of loan records, taking notes, and managing customer communications and bookings.
+
+More information: [Admin documentation for Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) and [Collaboration Manager for Loans user guide](/industry/financial-services/collaboration-manager/use)
+
 ## Configure services and apps
 
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
 
-### Apps and services for retail <!--daisy you stopped here-->
+### Apps and services for financial services <!--daisy you stopped here-->
 
 Ensure that your workers can communicate, collaborate, and deliver great customer service with apps like Shifts, Walkie Talkie, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
