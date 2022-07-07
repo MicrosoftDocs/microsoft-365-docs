@@ -29,8 +29,8 @@
         href: flw-scripted-deployment.md
     - name: Manage devices
       items:
-      - name: Manage shared devices
-        href: 
+      - name: Manage shared and personal devices
+        href: flw-devices.md
       - name: Sign in to Teams
         href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Sign out of Teams
