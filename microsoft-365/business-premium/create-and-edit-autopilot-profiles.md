@@ -1,12 +1,12 @@
 ---
-title: "Create and edit AutoPilot profiles"
+title: "Create and edit Autopilot profiles"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
@@ -27,29 +27,28 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: "Learn to create an AutoPilot profile and apply it to a device, as well as edit or delete a profile or remove a profile from a device."
+description: "Learn to create an Autopilot profile and apply it to a device, and edit or delete a profile or remove a profile from a device."
 ---
 
-# Create and edit AutoPilot profiles
+# Create and edit Autopilot profiles
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
+You can apply a [Windows Autopilot deployment profile](/mem/autopilot/profiles) to devices that are in a [device group](m365bp-device-groups-mdb.md). Deployment profiles determine the Windows deployment and enrollment experience that users will have. 
 
 ## Create a profile
 
 A profile applies to a device, or a group of devices,
   
-1. In the Microsoft 365 admin center, choose **Devices** \> **AutoPilot**.
+1. In the Microsoft 365 admin center, choose **Devices** \> **Autopilot**.
   
-2. On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.
+2. On the **Autopilot** page, choose the **Profiles** tab \> **Create profile**.
 
-3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing. Turn on the setting you want, and then choose **Save**. For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](m365bp-autopilot-profile-settings.md).
+3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing. Turn on the setting you want, and then choose **Save**. For more information about Autopilot profile settings, see [About Autopilot Profile settings](m365bp-Autopilot-profile-settings.md).
 
     ![Enter name and turn on settings in the Create profile panel.](./../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### Apply profile to a device
 
-After you create a profile, you can apply it to a device or a group of devices. You can pick an existing profile in the [step-by-step guide](m365bp-add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.
+After you create a profile, you can apply it to a device or a group of devices. You can pick an existing profile in the [step-by-step guide](m365bp-add-Autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.
   
 1. On the **Prepare Windows** page, choose the **Devices** tab.
 
@@ -67,7 +66,7 @@ Once you've assigned a profile to a device, you can update it, even if you've al
 
 2. Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.
 
-    If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.
+    If you do this task before a user connects the device to the internet, then the profile gets applied to the setup process.
 
 ### Delete a profile
 
