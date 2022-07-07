@@ -44,32 +44,31 @@ With Defender for Business, you can help protect the devices and data your busin
 
 - **Flexibility for your environment**. Defender for Business can work with your business environment, whether you're using Microsoft Intune or you're brand new to the Microsoft Cloud. Defender for Business works with components that are built into Windows, and with apps for Mac, iOS, and Android devices.
 
-- **Integration with Microsoft 365 Lighthouse, RMM tools, and PSA software**. If you're a Cloud Solution Provider (MSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), more capabilities are available. If your customers are using Microsoft 365 Business Premium together with Defender for Business, you can view security incidents and alerts across customer tenants that are onboarded to Microsoft 365 Lighthouse (see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)). And, if you're a Microsoft managed service provider (MSP), you can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA) software (see [Microsoft Defender for Business and MSP resources](mdb-partners.md)).
+- **Integration with Microsoft 365 Lighthouse, RMM tools, and PSA software**. If you're a Microsoft cloud solution provider (CSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), you can view security incidents and alerts across your customers' tenants (see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)). If you're a Microsoft managed service provider (MSP), you can integrate Defender for Business with your remote monitoring and management (RMM) tools and professional service automation (PSA) software (see [Microsoft Defender for Business and MSP resources](mdb-partners.md)).
 
 ## How to use this guide
 
 **This guide is intended to**:
 
-- **Provide you with an overview of Defender for Business** so you know what's included and how it works
-   - Use this article as a starting point
-   - [Compare security features in Microsoft Defender for Business to other plans](compare-mdb-m365-plans.md) 
-   - [Find out how to get Microsoft Defender for Business](get-defender-business.md)
+- **Provide you with an overview of Defender for Business** so you know what's included and how it works. Use this article as a starting point.
+   - [Compare security features in Microsoft Defender for Business to other plans](compare-mdb-m365-plans.md).
+   - [Find out how to get Microsoft Defender for Business](get-defender-business.md).
 
-- **Walk through setting up and configuring your threat protection capabilities** 
-   - [Use the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md)
-   - [Learn about the simplified configuration process](mdb-simplified-configuration.md)
-   - [See how to set up and configure Defender for Business](mdb-setup-configuration.md)
+- **Learn how to set up your threat protection capabilities**. 
+   - [Use the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md).
+   - [Learn about the simplified configuration process](mdb-simplified-configuration.md).
+   - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 
-- **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal 
-   - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md)
-   - [Try scenarios, tutorials, and simulations](mdb-tutorials.md)
+- **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal. 
+   - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md).
+   - [Try scenarios, tutorials, and simulations](mdb-tutorials.md).
 
-- **Provide guidance on managing devices and security policies**
-   - [Monitor or manage devices](mdb-manage-devices.md)
-   - [View or edit security policies](mdb-view-edit-policies.md)
+- **Provide guidance on managing devices and security policies**.
+   - [Monitor or manage devices](mdb-manage-devices.md).
+   - [View or edit security policies](mdb-view-edit-policies.md).
 
 ## Next steps
 
-- [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
-- [Learn more about the simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md)
-- [Find out how to get Microsoft Defender for Business](get-defender-business.md)
+- [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide).
+- [Learn more about the simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md).
+- [Find out how to get Microsoft Defender for Business](get-defender-business.md).
