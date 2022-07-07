@@ -28,7 +28,7 @@ This playbook is a simple guide to help you make the most of your 30-day free tr
 
 Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses with up to 300 employees. With this endpoint security solution, your organization's devices are well-protected from ransomware, malware, phishing, and other threats.
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Defender for Business features and capabilities.":::
 
 **Let's get started!**
 
@@ -84,7 +84,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 If you choose not to use the setup wizard, see the following diagram that depicts the [overall setup and configuration process](mdb-setup-configuration.md#the-setup-and-configuration-process) for Defender for Business.
 
-[:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::](mdb-setup-configuration.md)
+[:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Defender for Business.":::](mdb-setup-configuration.md)
 
 If you used the setup wizard but you need to onboard more devices, such as non-Windows devices, go directly to step 4 in the following procedure:
 
@@ -106,10 +106,10 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
    |:---|:---|
    | [Windows clients](mdb-onboard-devices.md) | Choose one of the following options to onboard Windows client devices to Defender for Business:<ul><li>Local script (for onboarding devices manually in the Microsoft 365 Defender portal)</li><li>Group Policy (if you're already using Group Policy and prefer this method)</li><li>Microsoft Intune (*recommended*; included in [Microsoft 365 Business Premium](../../business-premium/index.md))</li></ul> |
    | [Mac](mdb-onboard-devices.md) | Choose one of the following options to onboard Mac:<ul><li>Local script for Mac (*recommended*)</li><li>Microsoft Intune for Mac (Intune is included in [Microsoft 365 Business Premium](../../business-premium/index.md))</li></ul><p>We recommend you use a local script to onboard Mac. Although you can [set up enrollment for Mac devices in Intune](/mem/intune/enrollment/macos-enroll), the local script is the simplest method for onboarding Mac to Defender for Business. |
-   | Windows Server and Linux servers | *The ability to onboard an instance of Windows Server or Linux Server is currently in preview*. See the following articles to learn more: <ul><li>[Microsoft Defender for Business requirements](mdb-requirements.md)</li><li>[Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)</li></ul> |
+   | Windows Server and Linux servers | *The ability to onboard an instance of Windows Server or Linux Server is currently in preview*. See the following articles to learn more: <ul><li>[Defender for Business requirements](mdb-requirements.md)</li><li>[Onboard devices to Defender for Business](mdb-onboard-devices.md)</li></ul> |
    | [Mobile devices](mdb-onboard-devices.md) | You need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business-premium/index.md), Intune is part of your subscription. Intune can also be purchased separately. See the following resources to get help enrolling these devices into Intune:<ul><li>[Enroll Android devices](/mem/intune/enrollment/android-enroll)</li><li>[Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)</li></ul> |
 
-5. **[View and configure your security policies](mdb-configure-security-settings.md)**. After you onboard your company's devices to Microsoft Defender for Business, the next step is to view and edit your security policies and settings. Defender for Business includes preconfigured security policies that use recommended settings. But you can edit the settings to suit your business needs.
+5. **[View and configure your security policies](mdb-configure-security-settings.md)**. After you onboard your company's devices to Defender for Business, the next step is to view and edit your security policies and settings. Defender for Business includes preconfigured security policies that use recommended settings. But you can edit the settings to suit your business needs.
 
    | Action | Description |
    |:---|:---|
@@ -160,7 +160,7 @@ In Defender for Business, security settings are configured through policies that
   
 ### Prepare for ongoing security management
 
-New security events, such as threat detection on a device, adding new devices, and employees joining or leaving the organization, will require you to manage security. In Microsoft Defender for Business, there are many ways for you to manage device security.
+New security events, such as threat detection on a device, adding new devices, and employees joining or leaving the organization, will require you to manage security. In Defender for Business, there are many ways for you to manage device security.
 
 - [View a list of onboarded devices](mdb-manage-devices.md#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state.
 - [Take action on a device](mdb-manage-devices.md#take-action-on-a-device-that-has-threat-detections) that has threat detections.
@@ -169,7 +169,7 @@ New security events, such as threat detection on a device, adding new devices, a
 
 ## Additional resources
 
-- [Overview of Microsoft Defender for Business](mdb-overview.md)
-- [Tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
+- [Overview of Defender for Business](mdb-overview.md)
+- [Tutorials and simulations in Defender for Business](mdb-tutorials.md)
 - [Video: Enterprise-Grade Protection for Small & Medium Sized Businesses](https://youtu.be/umhUNzMqZto)
-- [Get Microsoft Defender for Business](get-defender-business.md)
+- [Get Defender for Business](get-defender-business.md)
