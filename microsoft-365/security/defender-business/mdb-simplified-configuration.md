@@ -49,5 +49,5 @@ We recommend the simplified configuration process in Defender for Business becau
 
 ## Next steps
 
-- [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
-- [Get started using Microsoft Defender for Business](mdb-get-started.md)
+- [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
+- [Get started using Microsoft Defender for Business](mdb-get-started.md).
