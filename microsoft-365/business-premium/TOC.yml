@@ -106,6 +106,8 @@
   items: 
     - name: Overview
       href: m365bp-maintain-environment.md
+    - name: Security operations guide
+      href: m365bp-security-incident-quick-start.md
     - name: Remove users
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Add users
