@@ -95,7 +95,7 @@ You don't have to do a thing to set up DMARC for mail that you receive in Micros
 
 ## Set up DMARC for outbound mail from Microsoft 365
 
-If you use Microsoft 365 but you aren't using a custom domain (you use onmicrosoft.com), you don't need to do anything else. SPF is already set up for you, and Microsoft 365 automatically generates a DKIM signature for your outgoing mail. There is nothing more to do to configure DMARC for your organization. For more information about this signature, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+If you use Microsoft 365 but you aren't using a custom domain (you use onmicrosoft.com), SPF is already set up for you and Microsoft 365 automatically generates a DKIM signature for your outgoing mail (for more information about this signature, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)). To set up DMARC for your organization, you need to [Form the DMARC TXT record](#step-4-form-the-dmarc-txt-record-for-your-domain) for the onmicrosoft.com domain and publish it to DNS via [Office 365 Admin Center](https://admin.microsoft.com) > Settings > Domains > click on onmicrosoft.com domain > Add record.
 
  If you have a custom domain or are using on-premises Exchange servers along with Microsoft 365, you need to manually set up DMARC for your outbound mail. Setting up DMARC for your custom domain includes these steps:
 
@@ -129,7 +129,7 @@ As a best practice, ensure that your SPF TXT record takes into account third-par
 
 ### Step 3: Set up DKIM for your custom domain
 
-Once you've set up SPF, you need to set up DKIM. DKIM lets you add a digital signature to email messages in the message header. If you don't set up DKIM and instead allow Microsoft 365 to use the default DKIM configuration for your domain, DMARC may fail. This failure can happen because the default DKIM configuration uses your original *onmicrosoft.com* domain as the *5322.From address*, not your *custom* domain. This creates a mismatch between the *5321.MailFrom* and the *5322.From addresses* in all the email sent from your domain.
+Once you've set up SPF, you need to set up DKIM. DKIM lets you add a digital signature to email messages in the message header. If you don't set up DKIM and instead allow Microsoft 365 to use the default DKIM configuration for your domain, DMARC may fail. This failure can happen because the default DKIM configuration uses your original *onmicrosoft.com* domain as the *5321.MailFrom* address, not your *custom* domain. This creates a mismatch between the *5321.MailFrom* and the *5322.From addresses* in all the email sent from your domain.
 
 If you have third-party senders that send mail on your behalf and the mail they send has mismatched 5321.MailFrom and 5322.From addresses, DMARC will fail for that email. To avoid this, you need to set up DKIM for your domain specifically with that third-party sender. This allows Microsoft 365 to authenticate email from this 3rd-party service. However, it also allows others, for example, Yahoo, Gmail, and Comcast, to verify email sent to them by the third-party as if it was email sent by you. This is beneficial because it allows your customers to build trust with your domain no matter where their mailbox is located, and at the same time Microsoft 365 won't mark a message as spam due to spoofing because it passes authentication checks for your domain.
 
@@ -276,4 +276,4 @@ Want more information about DMARC? These resources can help.
 
 [**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
-[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)

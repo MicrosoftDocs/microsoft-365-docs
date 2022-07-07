@@ -2,8 +2,8 @@
 title: "Microsoft Defender for Business Premium trial playbook"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -24,8 +24,8 @@ Welcome to the Microsoft Business Premium trial playbook. This playbook will hel
 
 When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up.
 
-> [!Tip]
-> When links in the playbook take you away from this location, simply return to this playbook to continue.
+> [!TIP]
+> Save this playbook to your browser favorites. When links in the playbook take you away from this location, simply return to this playbook to continue.
 
 First, [set up your trial](../business-premium/m365bp-setup.md)!
 
@@ -41,7 +41,7 @@ Microsoft 365 Business Premium includes [Preset security policies](/security/off
 
 When you try or buy Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the sign-up process.
 
-> [!Note]
+> [!NOTE]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. From the admin center menu, choose **Setup** to start the wizard.

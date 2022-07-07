@@ -19,8 +19,6 @@ description: "Learn how to protect your sensitive information using Microsoft Pu
 
 # Learn about data loss prevention
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).
 
 In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
@@ -86,7 +84,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - SharePoint Online sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
 - On-premises repositories
 - PowerBI sites
