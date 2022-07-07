@@ -19,20 +19,18 @@ ms.collection:
 
 # Microsoft Defender for Business and managed service provider resources
 
-As you already know, most managed service providers (MSPs) offer a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats.
+Most managed service providers (MSPs) offer a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats.
 
-If you're a Microsoft MSP, Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and professional service automation (PSA) software.
+If you're a Microsoft MSP, Defender for Business (and Microsoft 365 Business Premium) can help you build your cybersecurity stack. You can integrate Defender for Business and Microsoft 365 Business Premium with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software. Such integration can be done by using the [Defender for Endpoint APIs](../defender-endpoint/management-apis.md).
 
-## Use APIs to integrate with your MSP solution
+## Use our APIs to integrate with your MSP solution
 
-Using our APIs for custom integration, you can:
+Using our Defender for Endpoint APIs for to integrate with your RMM tools and PSA software, you can:
 
 - Get access to your customers' Microsoft 365 Defender portal to [address alerts and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
 - Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.
 - Orchestrate [remediation actions](mdb-review-remediation-actions.md), such as approving actions following automated investigations, or taking manual response actions on a device.
-
-## Resources to learn more
 
 Use the following resources to learn more:
 
@@ -44,9 +42,12 @@ Use the following resources to learn more:
 
 ## What if I'm not a Microsoft MSP yet?
 
-- If you're not a Microsoft MSP, [learn more about the program](https://partner.microsoft.com/solutions/managed-services).
-- If you're a Microsoft cloud solution provider (CSP), see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md).
-- To learn more about all Microsoft partner programs and options, visit the [Microsoft Partner Network](https://partner.microsoft.com).
+If you're not a Microsoft MSP yet, resources are available to help.
+
+| Resource | Description |
+|:---|:---|
+| [Microsoft Partner Network](https://partner.microsoft.com) | Get an overview of the various partner programs that are available. Access training and learning resources, and plan your path. |
+| [Managed services program information](https://partner.microsoft.com/solutions/managed-services) | Learn how to build your managed services business. |
 
 ## See also
 

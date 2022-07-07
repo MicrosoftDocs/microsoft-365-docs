@@ -29,7 +29,7 @@ To access the list of incidents, in Microsoft 365 Lighthouse, on the home page, 
 
 ## Learn more about Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse enables Microsoft Cloud Service Providers to secure and manage devices, data, and users at scale for customers who are using one of the following subscriptions:
+Microsoft 365 Lighthouse enables Microsoft CSPs to secure and manage devices, data, and users at scale for customers who are using one of the following subscriptions:
 
 - [Microsoft Defender for Business](/security/defender-business/mdb-overview.md)
 - [Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md)
@@ -41,4 +41,4 @@ To learn more, see [Overview of Microsoft 365 Lighthouse](../../lighthouse/m365-
 
 ## See also
 
-[Microsoft Defender for Business and managed service provider resources](mdb-partners.md)
+[Microsoft Defender for Business and managed service provider resources](mdb-partners.md) (provides information about RMM and PSA integration for MSPs)
