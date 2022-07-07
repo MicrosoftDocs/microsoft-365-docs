@@ -25,7 +25,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Export
+# Export incidents queue to CSV files
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
