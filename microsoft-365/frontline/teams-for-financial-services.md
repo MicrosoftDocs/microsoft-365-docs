@@ -26,26 +26,28 @@ appliesto:
 
 # Get started with Teams for Financial Services
 
-Retail environments, with their rotating schedules and on-the-go staff, have very different needs than other organizations. To get the most benefit for your retail organization, you first choose which scenarios Teams can help you with in your day-to-day business operations, and then make sure that you prepare your Teams environment with the right fundamentals, teams, and apps to support those scenarios.
+Frontline workers in the financial services industry have unique needs for communicating and collaborating based on the services they offer. To get the most benefit for your frontline workforce, you first choose which scenarios Microsoft 365 can help you with in your day-to-day business operations, and then make sure that you prepare your environment with the right fundamentals, teams, and apps to support those scenarios.
 
 1. [Choose your scenarios](#choose-your-scenarios) you want to implement for your business.
-:::image type="content" source="media/retail-teams-scenarios.png" alt-text="Diagram showing Teams scenarios for retail." lightbox="media/retail-teams-scenarios.png":::
 2. [Set up Microsoft 365](/microsoft-365/frontline/flw-deploy-overview) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
 3. [Configure services and apps](#configure-services-and-apps) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
-:::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram showing teams, team templates and apps that can be included." lightbox="media/retail-teams-apps.png":::
 
 ## Choose your scenarios
 
-Microsoft 365 and Microsoft Teams offer several capabilities that can help retail organizations with their daily operations and digital transformation. We recommend the following scenarios for retail organizations:
+Microsoft 365 and Microsoft Teams offer several capabilities that can help financial services organizations with their daily operations and digital transformation. We recommend the following scenarios for financial services organizations:
 
-[![In-store communication and collaboration.](media/retail-scenarios-in-store.png)](#in-store-communication-and-collaboration) [![Cross-store communication and collaboration.](media/retail-scenarios-cross-store.png)](#cross-store-communication-and-collaboration) [![Virtual fittings and consultations.](media/retail-scenarios-virtual-visits.png)](#virtual-fittings-and-consultations) [![Simplify business processes.](media/retail-scenarios-business-processes.png)](#simplify-business-processes) [![Corporate communications.](media/retail-scenarios-corp-comms.png)](#corporate-communications) [![Onboarding new employees.](media/retail-scenarios-onboarding.png)](#onboarding-new-employees)
+- Communicate within and across locations
+- Collaborate on files and documents
+- Onboard and train employees
+- Strengthen corporate communications
+- Collaborate on loan applications
 
 > [!NOTE]
-> These scenarios are also part of the Microsoft Cloud for Retail. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Retail, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Retail](/industry/retail).
+> These scenarios are also part of the Microsoft Cloud for Financial Services. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Financial Services, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Financial Services](/industry/financial-services).
 
-### In-store communication and collaboration
+### Communicate within and across locations
 
-Bring in-store associates and management together to collaborate and streamline operations with Teams and Teams apps.
+Bring associates and management together across branches to collaborate and streamline operations with Teams and Teams apps.
 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
@@ -53,37 +55,31 @@ Bring in-store associates and management together to collaborate and streamline 
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
-### Cross-store communication and collaboration
-
-Staff members can communicate and collaboration across multiple stores in a region, or with headquarters using the same tools and apps you use within your store.
-
-**Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
-
-**Additional services:** Viva Connections, Yammer, SharePoint, Power Platform and Power Apps
-
-More information: [Frontline team collaboration](flw-team-collaboration.md)
-
-### Virtual fittings and consultations
-
-The Bookings app in Microsoft Teams gives organizations a simple way to schedule and manage virtual appointments for associates and customers. Use it to schedule virtual appointments such as virtual shopping experiences.
-
-**Key features and apps:** meetings, Bookings
-
-More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
-
 ### Simplify business processes
 
-You can use Teams apps, Power Apps, and Power BI to simplify business processes. For example, you can:
+- Create and manage schedules for your employees with Shifts
+- Automate your organization's unique workflows with Power Apps
+- Streamline approvals with the Approvals app
+- Track key performance indicators (KPIs) with Power BI reports
+- And more
 
-- Set and maintain schedules for your employees with Shifts.
-- Conduct store walks and inventories with Power Apps.
-- Track key performance indicators (KPIs) with Power BI reports.
-
-**Key apps:** Shifts, Tasks, Lists, Approvals
+**Key apps:** Approvals, Shifts, Updates
 
 **Additional services:** Power Platform with Power Apps and Power BI
 
 More information: [Simplify business processes](simplify-business-processes.md)
+
+### Onboard and train employees
+
+Financial services organizations have unique needs due to the high knowledge bases of frontline staff. From numeracy skills to up-to-date knowledge of company and governmental regulations, make sure your workforce is prepared with a strong onboarding and training process.
+
+**Key features apps:** Lists, meetings
+
+**Additional services:** Viva Learning, Viva Connections, SharePoint, Yammer
+
+More information: [Training and onboarding](flw-onboarding-training.md)
+
+More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
 
 ### Corporate communications
 
@@ -93,16 +89,6 @@ Employee engagement is a significant contributor to workplace satisfaction, loya
 
 More information: [Corporate communications with frontline workers](flw-corp-comms.md)
 
-### Onboarding new employees
-
-Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.
-
-**Key apps:** Lists, Live Meetings
-
-**Additional services:** Viva Learning, SharePoint, Yammer
-
-More information: [Onboard new employees](flw-onboarding-training.md)
-
 > [!NOTE]
 > For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.
 
@@ -110,7 +96,7 @@ More information: [Onboard new employees](flw-onboarding-training.md)
 
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
 
-### Apps and services for retail
+### Apps and services for retail <!--daisy you stopped here-->
 
 Ensure that your workers can communicate, collaborate, and deliver great customer service with apps like Shifts, Walkie Talkie, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
