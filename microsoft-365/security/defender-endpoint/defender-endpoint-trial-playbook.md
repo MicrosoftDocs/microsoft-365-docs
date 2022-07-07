@@ -1,6 +1,6 @@
 ---
 title: Trial playbook - Microsoft Defender for Endpoint
-description: Use this simple guide to get the most of your 90-day free trial. See how Defender for Endpoint can help prevent, detect, investigate, and respond to advanced threats.
+description: Use this guide to get the most of your 90-day free trial. See how Defender for Endpoint can help prevent, detect, investigate, and respond to advanced threats.
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
