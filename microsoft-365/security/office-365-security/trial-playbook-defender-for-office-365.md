@@ -197,13 +197,15 @@ Defender for Office 365 enables you to investigate activities that put people in
 
 When you're ready to turn on Defender for Office 365 policies in production, you can use "Convert to Standard Protection" within the evaluation management experience to easily move to Standard protection in [preset security policies](preset-security-policies.md).
 
-1. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, click **Manage**, and then click **Convert to Standard protection**.
+1. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, click **Manage**.
 
-   art
+   :::image type="content" source="../../media/mdo-trial-playbook-mdo-evaluation-page.png" alt-text="Click Manage on the Defender for Office 365 evaluation page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-mdo-evaluation-page.png":::
 
-1. In the dialog that opens, click **Continue** to initiate the setup.
+2. In the flyout that opens, click **Convert to Standard protection**
 
-   art
+   :::image type="content" source="../../media/mdo-trial-playbook-manage-flyout.png" alt-text="Click Convert to standard protection in the Manage flyout of the Defender for Office 365 evaluation page." lightbox="../../media/mdo-trial-playbook-manage-flyout.png":::
+
+3. In the **Convert to standard protection** dialog that opens, click **Continue** to initiate the setup.
 
 #### Migrate from a third-party protection service or device to Defender for Office 365
 
