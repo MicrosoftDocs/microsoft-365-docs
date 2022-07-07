@@ -33,9 +33,9 @@ highlightedContent:
       itemType: overview
       url: https://www.microsoft.com/security/blog/2021/03/02/microsoft-unifies-siem-and-xdr-to-help-stop-advanced-attacks/
     # Card
-    - title: What is Microsoft 365 Defender
+    - title: Microsoft 365 Defender Tech Community
       itemType: overview
-      url: defender/microsoft-365-defender
+      url: https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection
 
 # productDirectory section (optional)
 productDirectory:
@@ -47,7 +47,7 @@ productDirectory:
       imageSrc: /microsoft-365/media/check-mark.png
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
-        text: What is Microsoft 365 Defender?
+        text: Overview
       - url: /microsoft-365/security/defender/get-started
         text: Get Started
       - url: /microsoft-365/security/defender/eval-overview
@@ -57,7 +57,7 @@ productDirectory:
       imageSrc: /microsoft-365/media/check-mark.png
       links:
        - url: /microsoft-365/security/office-365-security/defender-for-office-365
-         text: What is Defender for Office 365?
+         text: Overview
        - url: /microsoft-365/security/office-365-security/preset-security-policies
          text: Get Started
        - url: /microsoft-365/security/defender/eval-defender-office-365-overview
@@ -67,7 +67,7 @@ productDirectory:
       imageSrc: /microsoft-365/media/check-mark.png
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
-        text: What is Defender for Endpoint?  
+        text: Overview  
       - url: /microsoft-365/security/defender-endpoint/deployment-strategy
         text: Get Started
       - url: /microsoft-365/security/defender/eval-defender-endpoint-overview
@@ -77,7 +77,7 @@ productDirectory:
       imageSrc: /microsoft-365/media/check-mark.png
       links:
       - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
-        text: What is Defender Vulnerability Management?
+        text: Overview
       - url: /microsoft-365/security/defender-vulnerability-management/tvm-prerequisites
         text: Get Started
     # Card
@@ -85,7 +85,7 @@ productDirectory:
       imageSrc: /microsoft-365/media/check-mark.png
       links:
        - url: /defender-for-identity/what-is
-         text: What is Defender for Identity?
+         text: Overview
        - url: /defender-for-identity/deploy-defender-identity
          text: Get Started
        - url: /microsoft-365/security/defender/eval-defender-identity-overview
@@ -95,41 +95,11 @@ productDirectory:
       imageSrc: /microsoft-365/media/check-mark.png
       links:
       - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
-        text: What is Defender for Cloud Apps?
+        text: Overview
       - url: /defender-cloud-apps/get-started
         text: Get Started
       - url: /microsoft-365/security/defender/eval-defender-mcas-overview
         text: Set up an evaluation
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  # Supports up to 3 subsections
-  sections:
-    - items:
-   # Card
-      - title: Security Ops scenarios
-        links:
-         - url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
-           itemType: learn
-           text: Become a Microsoft 365 Defender Ninja
-   # Card
-      - title: Security Admin scenarios
-        links:
-         - url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
-           itemType: learn
-           text: Become a Microsoft 365 Defender Ninja
-         - url: https://docs.microsoft.com/learn/m365/defender
-           itemType: learn
-           text: Learning paths, modules, and certifications
-         - url: /microsoft-365/solutions/ransomware-protection-microsoft-365
-           itemType: concept
-           text: Deploy ransomware protections
-    # Card
-      - title: Train your employees
-        links:
-         - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
-           itemType: overview
-           text: Attack simulation and training
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
@@ -150,4 +120,42 @@ additionalContent:
         - title: Security Operations Analyst Certification & Exams
           summary: Exam SC-200 Microsoft Security Operations Analyst
           url: https://docs.microsoft.com/en-us/learn/certifications/browse/
+          
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  # Supports up to 3 subsections
+  sections:
+    - items:
+   # Card
+      - title: Security Ops scenarios
+        links:
+         - url: /microsoft-365/security/defender/microsoft-365-defender-portal
+           itemType: concept
+           text: Start using the Microsoft 365 Defender Portal
+         - url: /microsoft-365/security/defender/first-incident-overview
+           itemType: how-to-guide
+           text: Respond to your first incident
+         - url: /microsoft-365/security/defender-endpoint/attack-simulations
+           itemType: concept
+           text: Simulate an attack (Defender for Endpoint)
+   # Card
+      - title: Security Admin scenarios
+        links:
+         - url: /microsoft-365/security/defender-endpoint/onboard-configure
+           itemType: how-to-guide
+           text: Protect your endpoints
+         - url: /microsoft-365/security/defender/microsoft-secure-score
+           itemType: concept
+           text: Assess your security posture and take action
+         - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
+           itemType: how-to-guide
+           text: Set up operations for monitoring Defender for Office 365
+    # Card
+      - title: Train your employees
+        links:
+         - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
+           itemType: overview
+           text: Attack simulation and training
+
 
