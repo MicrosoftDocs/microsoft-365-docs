@@ -25,7 +25,7 @@ This playbook is a simple guide to help you make the most of your free trial. Us
 
 [Defender for Endpoint](microsoft-defender-endpoint.md) is an enterprise endpoint security platform that uses the following combination of technology built into Windows and Microsoft's robust cloud service: 
 
-- **Endpoint behavioral sensors**: Embedded in Windows, these sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Defender for Endpoint.
+- **Endpoint behavioral sensors**: Embedded in Windows, these sensors collect and process behavioral signals from the operating system and send sensor data to your private, isolated, cloud instance of Defender for Endpoint.
 
 - **Cloud security analytics**: Leveraging big-data, device learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud products (such as Office 365), and online assets, behavioral signals are translated into insights, detections, and recommended responses to advanced threats.
 
