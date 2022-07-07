@@ -21,6 +21,7 @@ ms.custom:
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
 ms.technology: mdo
 ms.prod: m365-security
+adobe-target: true
 ---
 
 # Find and release quarantined messages as a user in EOP
@@ -57,7 +58,7 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |**Mail flow rules (transport rules)**||||
 |Mail flow rules that quarantine email messages.||||
 
-_Quarantine policies_ define what users are allowed to do to quarantined messages based on the why the message was quarantined in [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users in supported features. For more information, see [Quarantine policies](quarantine-policies.md).
+_Quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined in [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users in supported features. For more information, see [Quarantine policies](quarantine-policies.md).
 
 You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) quarantine notifications from quarantine policies.
 
@@ -132,7 +133,11 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
    After you've entered the search criteria, press ENTER to filter the results.
 
+   > [!NOTE]
+   > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.
+
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
+
 
 ### View quarantined message details
 
@@ -212,5 +217,5 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
 
 :::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="The bulk actions drop down list for messages in quarantine" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
-- ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
+- ![Release messages icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
 - ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.

@@ -28,6 +28,7 @@ ms.technology: m365d
 
 
 **Applies to:**
+
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
@@ -66,6 +67,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[Run this query in advanced hunting](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### Describe the query and specify the tables to search
+
 A short comment has been added to the beginning of the query to describe what it is for. This comment helps if you later decide to save the query and share it with others in your organization. 
 
 ```kusto
@@ -77,7 +79,9 @@ The query itself will typically start with a table name followed by several elem
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+
 ### Set the time range
+
 The first piped element is a time filter scoped to the previous seven days. Limiting the time range helps ensure that queries perform well, return manageable results, and don't time out.
 
 ```kusto
@@ -85,6 +89,7 @@ The first piped element is a time filter scoped to the previous seven days. Limi
 ```
 
 ### Check specific processes
+
 The time range is immediately followed by a search for process file names representing the PowerShell application.
 
 ```kusto
@@ -93,6 +98,7 @@ The time range is immediately followed by a search for process file names repres
 ```
 
 ### Search for specific command strings
+
 Afterwards, the query looks for strings in command lines that are typically used to download files using PowerShell.
 
 ```kusto
@@ -108,6 +114,7 @@ Afterwards, the query looks for strings in command lines that are typically used
 ```
 
 ### Customize result columns and length 
+
 Now that your query clearly identifies the data you want to locate, you can define what the results look like. `project` returns specific columns, and `top` limits the number of results. These operators help ensure the results are well-formatted and reasonably large and easy to process.
 
 ```kusto
@@ -121,6 +128,8 @@ Select **Run query** to see the results.
 >[!TIP]
 >You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
+
+
 ## Learn common query operators
 
 You've just run your first query and have a general idea of its components. It's time to backtrack slightly and learn some basics. The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.
@@ -129,7 +138,7 @@ You've just run your first query and have a general idea of its components. It's
 |--|--|
 | `where` | Filter a table to the subset of rows that satisfy a predicate. |
 | `summarize` | Produce a table that aggregates the content of the input table. |
-| `join` | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. |
+| `join` | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. Watch [Joining tables in KQL](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how.|
 | `count` | Return the number of records in the input record set. |
 | `top` | Return the first N records sorted by the specified columns. |
 | `limit` | Return up to the specified number of rows. |
@@ -155,12 +164,14 @@ Advanced hunting supports Kusto data types, including the following common types
 To learn more about these data types, [read about Kusto scalar data types](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## Get help as you write queries
+
 Take advantage of the following functionality to write queries faster:
 - **Autosuggest**—as you write queries, advanced hunting provides suggestions from IntelliSense. 
 - **Schema tree**—a schema representation that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 - **[Schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—in-portal reference with table and column descriptions as well as supported event types (`ActionType` values) and sample queries
 
 ## Work with multiple queries in the editor
+
 You can use the query editor to experiment with multiple queries. To use multiple queries:
 
 - Separate each query with an empty line.
@@ -196,6 +207,7 @@ For more information on Kusto query language and supported operators, see [Kusto
 >Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
+
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)

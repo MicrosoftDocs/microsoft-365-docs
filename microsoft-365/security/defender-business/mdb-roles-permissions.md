@@ -27,10 +27,6 @@ To perform tasks in the Microsoft 365 Defender portal, such as configuring Micro
 2. [View or edit role assignments for your security team](#view-or-edit-role-assignments).
 3. [Proceed to your next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Roles in Defender for Business
 

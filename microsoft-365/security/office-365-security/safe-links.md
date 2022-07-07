@@ -43,6 +43,9 @@ ms.prod: m365-security
 
 Safe Links is a feature in [Defender for Office 365](defender-for-office-365.md) that provides URL scanning and rewriting of inbound email messages in mail flow, and time-of-click verification of URLs and links in email messages and other locations. Safe Links scanning occurs in addition to the regular [anti-spam](anti-spam-protection.md) and [anti-malware](anti-malware-protection.md) in inbound email messages in Exchange Online Protection (EOP). Safe Links scanning can help protect your organization from malicious links that are used in phishing and other attacks.
 
+Watch this short video on how to protect against malicious links with Safe Links in Microsoft Defender for Office 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
+
 Safe Links protection is available in the following locations:
 
 - **Email messages**: Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
@@ -132,6 +135,16 @@ The settings in Safe Links policies that apply to email messages are described i
   - **The recipient is a member of**
 
   You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+  >
+  > - The recipient is: romain@contoso.com
+  > - The recipient is a member of: Executives
+  >
+  > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy is not applied to him.
+  >
+  > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy still applies to him.
 
 - **Priority**: If you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
@@ -250,6 +263,9 @@ At a high level, here's how Safe Links protection works for URLs in Office 365 a
 
 ## "Block the following URLs" list for Safe Links
 
+> [!NOTE]
+> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
+
 The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
 
 - Email messages.
@@ -286,7 +302,7 @@ Examples of the values that you can enter and their results are described in the
 ## "Do not rewrite the following URLs" lists in Safe Links policies
 
 > [!NOTE]
-> If your organization use Safe Links policies, the **Do not rewrite the following URLs** lists are the only supported method for third party phishing tests.
+> The purpose of the "Do not rewrite the following URLs" list is to skip the Safe Links wrapping of the specified URLs. Instead of using this list, you can now [create allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#create-allow-url-entries).
 
 Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that are not rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 

@@ -33,8 +33,22 @@ description: "Learn about configuring the settings of the default device policy 
 # Secure Windows devices
 
 The objective here is to configure settings that are part of the default device policy for Windows 10 or 11. All users who connect a Windows device, including mobile devices and PCs, by signing in with their work account will automatically receive these settings. We recommend that you accept the default policy during setup and add policies later that target specific groups of users.
+
+## Before you begin
+
+Before you can set up Windows devices for Microsoft 365 Business Premium users, make sure all the Windows devices are running Windows 10 Pro.
+
+Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and Windows 11 Pro, and enable the centralized management and security controls of Microsoft 365 Business Premium.
+
+[Learn more about requirements for Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
+
+## Windows 10 Pro
+
+If you have Windows devices running previous versions of Windows, such as Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to upgrade those devices to Windows 10 Pro or Windows 11 Pro.
   
-## Settings to secure Windows 10 devices
+For more information on how to upgrade Windows devices, see [Upgrade Windows devices to Windows 10 Pro](m365bp-upgrade-windows-10-pro.md).
+
+## Secure your Windows 10 and 11 devices
 
 By default all settings are **On**. The following settings are available: <br/><br/>
 

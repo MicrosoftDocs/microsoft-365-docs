@@ -26,8 +26,6 @@ description: Learn how to add a policy tip to a data loss prevention (DLP) polic
 
 # Send email notifications and show policy tips for DLP policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can use a Microsoft Purview data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
@@ -48,13 +46,11 @@ When you create a DLP policy, you can configure the user notifications to:
 
 When you create a DLP policy, you can enable **User notifications**. When user notifications are enabled, Microsoft 365 sends out both email notifications and policy tips. You can customize who notification emails are sent to, the email text and the policy tip text.
 
-1. Go to [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/permissions).
 
 2. Sign in using your work or school account.
 
 3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
-
-    ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
 4. Choose the DLP policy template that protects the types of sensitive information you want to protect \> **Next**.
 
@@ -92,7 +88,10 @@ For each rule in a DLP policy, you can:
 - Customize the text that's included in the notification by using HTML or tokens. See the section below for more information.
 
 > [!NOTE]
-> Email notifications can be sent only to individual recipients—not groups or distribution lists. Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not an email notification.
+>
+> - Email notifications can be sent only to individual recipients, not groups or distribution lists.
+> - Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not email notifications.
+> - External senders don't receive notifications. Notifications go only to internal users.
 
 ![Email notification options.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
@@ -121,6 +120,7 @@ You can also use the following tokens to help customize the email notification. 
 |%%AppliedActions%%|The actions applied to the content.|
 |%%ContentURL%%|The URL of the document on the SharePoint Online site or OneDrive for Business site.|
 |%%MatchedConditions%%|The conditions that were matched by the content. Use this token to inform people of possible issues with the content.|
+|%%BlockedMessageInfo%%|The details of the message that was blocked. Use this token to inform people of the details of the message that was blocked.|
 
 ![Notification message showing where tokens appear.](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
 
@@ -235,7 +235,10 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 - Content contains
 - Content is shared
 
-Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. Also, Outlook does not support showing policy tips for a DLP policy that's applied to a dynamic distribution group.
+Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. 
+
+> [!NOTE]
+> Outlook does not support showing policy tips for a DLP polies that's applied to a dynamic distribution group or non-email enabled security groups. 
 
 ### Policy tips in the Exchange admin center vs. the Microsoft Purview Compliance portal
 

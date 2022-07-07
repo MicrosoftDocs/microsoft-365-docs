@@ -19,8 +19,6 @@ description: "Administrators can set up a data connector to import employee data
 
 # Set up a connector to import HR data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can set up a data connector in the Microsoft Purview compliance portal to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the compliance portal, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
@@ -214,11 +212,11 @@ Here are requirements for configuring a CSV file with multiple data types:
 
 - You have to add the required columns (and optional if you use them) for each data type and the corresponding column name in the header row. If a data type doesn't correspond to a column, you can leave the value blank.
 
-- To use a CSV file with multiple types of HR data, the HR connector needs to know which rows in the CSV file contain which type HR data. This is accomplished by adding an additional **HRScenario** column to the CSV file. The values in this column identify the type of HR data in each row. For example, values that correspond to the four HR scenarios could be \`Resignation\`, \`Job level change\`, \`Performance review\`, \`Performance improvement plan\`, and \`Employee profile\`.
+- To use a CSV file with multiple types of HR data, the HR connector needs to know which rows in the CSV file contain which type HR data. This is accomplished by adding an additional **HRScenario** column to the CSV file. The values in this column identify the type of HR data in each row. For example, values that correspond to the HR scenarios could be \`Resignation\`, \`Job level change\`, \`Performance review\`, \`Performance improvement plan\`, and \`Employee profile\`.
 
 - If you have multiple CSV files that contain an HRScenario** column, be sure that each file uses the same column name and the same values that identify the specific HR scenarios.
 
-The following example shows a CSV file that contains the **HRScenario** column. The values in the HRScenario column identify the type of data in the corresponding row.
+The following example shows a CSV file that contains the **HRScenario** column. The values in the HRScenario column identify the type of data in the corresponding row. The below sample covers four HR scenarios \`Resignation\`, \`Job level change\`, \`Performance review\`, and \`Performance improvement plan\`.
 
 ```text
 HRScenario,EmailAddress,ResignationDate,LastWorkingDate,EffectiveDate,Remarks,Rating,OldLevel,NewLevel

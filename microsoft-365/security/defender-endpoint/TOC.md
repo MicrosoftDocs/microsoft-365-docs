@@ -44,32 +44,31 @@
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
 
-## [Configure and onboard devices]()
+## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
-
-
-### [Microsoft Defender for Endpoint on Windows and Windows Server]()
-#### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
-#### [Onboard Windows devices and Windows Servers]()
-
-##### [Onboard previous versions of Windows](onboard-downlevel.md)
-
-##### [Onboard Windows devices and Windows Servers]()
-###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
-###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
-###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
-###### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-###### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-
-#### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
-
+### [Onboarding Windows Client](onboard-windows-client.md)
+#### [Onboard Windows Client using Intune](configure-endpoints-mdm.md)
+#### [Onboard Windows Client using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+#### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
+#### [Onboard Windows Client using a local script](configure-endpoints-script.md)
+#### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+#### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
-#### [Run a detection test on a newly onboarded device](run-detection-test.md)
-#### [Run simulated attacks on devices](attack-simulations.md)
-#### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
-#### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
+#### [Onboard previous versions of Windows](onboard-downlevel.md)
+
+
+
+### [Onboarding Windows Server](onboard-windows-server.md)
+#### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
+#### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
+#### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
+#### [Onboard Windows Server using a local script](configure-endpoints-script.md)
+#### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+
+
+
+
+
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -175,6 +174,14 @@
 ###### [FAQs and Troubleshooting](ios-troubleshoot.md)
 
 ###### [Privacy](ios-privacy.md)
+
+
+
+### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+### [Run a detection test on a newly onboarded device](run-detection-test.md)
+### [Run simulated attacks on devices](attack-simulations.md)
+### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
+### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
@@ -326,6 +333,7 @@
 #### [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
@@ -406,6 +414,7 @@
 ###### [Run antivirus scan](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
 ###### [Restrict app execution](respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate devices from the network](respond-machine-alerts.md#isolate-devices-from-the-network)
+###### [Contain devices from the network](respond-machine-alerts.md#contain-devices-from-the-network)
 ###### [Consult a threat expert](respond-machine-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](respond-machine-alerts.md#check-activity-details-in-action-center)
 
@@ -709,4 +718,5 @@
 ## [Defender for Identity](/defender-for-identity/)
 ## [Defender for Cloud Apps](/cloud-app-security/)
 ## [Defender for Business](../defender-business/index.yml)
+## [Defender Vulnerability Management](../defender-vulnerability-management/index.yml) 
 

@@ -134,6 +134,9 @@ Watch this short video to learn how to manage quarantined messages as an adminis
 
    After you've entered the search criteria, press ENTER to filter the results.
 
+   > [!NOTE]
+   > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout. 
+
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
 #### View quarantined message details
@@ -191,7 +194,7 @@ After you select a quarantined message from the list, the following actions are 
 
   - You can't release a message to the same recipient more than once.
   - Only recipients who haven't received the message will appear in the list of potential recipients.
-  - Only members of the **Security Administrators** role group can see and use the **Submit the message to Microsoft to improve detection (false positive)** and **Allow messages like this** options. 
+  - Only members of the **Security Administrators** role group can see and use the **Submit the message to Microsoft to improve detection (false positive)** and **Allow messages like this** options.
 
 - ![Share email icon.](../../media/m365-cc-sc-share-email-icon.png) **Share email**: In the flyout that appears, add one or more recipients to receive a copy of the message. When you're finished, click **Share**.
 

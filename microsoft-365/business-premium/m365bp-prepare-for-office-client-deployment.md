@@ -2,12 +2,11 @@
 title: "Prepare for Office client deployment with Microsoft 365 Business Premium"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 04/01/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: M365-subscription-management 
@@ -68,5 +67,5 @@ The following table shows what action the end users or admins may need to take, 
 
 ## Next objective
 
-[Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
+[Create app protection settings](m365bp-protection-settings-for-windows-10-devices.md)
   

@@ -44,7 +44,7 @@ To onboard down-level Windows client endpoints to Defender for Endpoint, you'll 
 For Windows Server 2008 R2 SP1, you have the option of [onboarding through Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1). Alternatively, a Microsoft Defender for servers license is required, per node, in order to onboard a Windows server through Microsoft Defender for Cloud (Option 2), see [Supported features available in Microsoft Defender for Cloud](/azure/security-center/security-center-services).
+> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1). Alternatively, a Microsoft Defender for servers license is required, per node, in order to onboard a Windows server through Microsoft Defender for Cloud (Option 2), see [Supported features available in Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
@@ -178,7 +178,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 ### Using Group Policy
 
-**Step 1: Download the corresponding udpate for your endpoint.**
+**Step 1: Download the corresponding update for your endpoint.**
 
 1. Navigate to c:\windows\sysvol\domain\scripts (Change control could be needed on one of the domain controllers.)
 1. Create a folder named MMA.
@@ -195,7 +195,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
     Download updates for Windows Server 2008 R2 x64
     
     .NET Framework 3.5.1 (KB315418)<br>
-    [For Windows Server 2008 R2 x64](https://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
+    [For Windows Server 2008 R2 x64](/iis/install/installing-iis-7/install-windows-server-2008-and-windows-server-2008-r2)
     
     >[!NOTE]
     > This article assumes you are using x64-based servers (MMA Agent .exe x64 New SHA-2 compliant version).
@@ -210,22 +210,20 @@ The following command is an example. Replace the following values:
 
 
 ```dos
-@echo off 
-cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
-exit
-) ELSE (
+@echo off  
+cd "C:" 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (  
+exit 
+) ELSE ( 
+ 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart 
+"c:\windows\MMA\MMASetup-AMD64.exe" /c /t:"C:\Windows\MMA"
+c:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID="<your workspace ID>" OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
-wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
-"c:\windows\MMA\MMASetup-AMD64.exe" /c /t: "C:\Windows\MMA"c:\windows\MMA\ setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1
-OPINSIGHTS_WORKSPACE_ID="<your workspace ID>"
-OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
-)
-
-)
+) 
 ```
 
 

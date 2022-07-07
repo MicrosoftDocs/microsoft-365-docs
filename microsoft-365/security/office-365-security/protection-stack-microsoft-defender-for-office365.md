@@ -17,6 +17,12 @@ ms.collection: M365-security-compliance
 ---
 # Step-by-step threat protection in Microsoft Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 The Microsoft Defender for Office 365 protection or filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
 
 > [!TIP]
