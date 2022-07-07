@@ -151,9 +151,6 @@ conceptualContent:
          - url: /microsoft-365/security/defender-endpoint/attack-simulations
            itemType: concept
            text: Simulate an attack (Defender for Endpoint)    
-         - url: 
-          itemType: concept
-           
   # Card
       - title: Train your employees
         links:
