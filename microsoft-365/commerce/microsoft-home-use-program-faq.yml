@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Microsoft Home Use Program FAQ"
+  title: "Microsoft Workplace Discount Program FAQ"
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -17,13 +17,13 @@ metadata:
   - okr_SMB
   - AdminSurgePortfolio
   search.appverid: MET150 
-  description: "Frequently-asked questions (FAQ) about the Microsoft Home Use Program."
-  ms.date: 05/01/2021
-title: Microsoft Home Use Program frequently-asked questions (FAQ)
+  description: "Frequently-asked questions (FAQ) about the Microsoft Workplace Discount Program."
+  ms.date: 07/19/2022
+title: Microsoft Workplace Discount Program frequently-asked questions (FAQ)
 summary: |
-  Volume Licensing customers use the Microsoft Home Use Program (HUP) on the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192).
+  Volume Licensing customers use the Microsoft Workplace Discount Program (formerly known as the Home Use Program, or HUP) on the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192).
   
-  All other customers access HUP by using this step:
+  All other customers access the Workplace Discount Program by using this step:
   
   - In the Microsoft admin center, go to the **Billing** > [**Your products** page](https://go.microsoft.com/fwlink/p/?linkid=842054), select the **Benefits** tab, and then select the **HUP** tab.
   
@@ -32,24 +32,23 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          What is the Microsoft Home Use Program?
+          What is the Microsoft Workplace Discount Program?
         answer: |
-          The Microsoft Home Use Program (HUP) allows employees at eligible companies to buy Microsoft consumer products at a discount. You can check the current discounts for each product offering by visiting the [Home Use Program product page](https://www.microsoft.com/home-use-program).
+          The Microsoft Workplace Discount Program allows employees at eligible companies to buy Microsoft consumer products at a discount. You can check the current discounts for each product offering by visiting the [Workplace Discount Program product page](https://www.microsoft.com/workplace-discount-program).
           
       - question: |
-          In which markets is the Home Use Program offered?
+          In which markets is the Workplace Discount Program offered?
         answer: |
           Discounts on Microsoft 365 Family and Personal subscriptions are offered to eligible companies worldwide with these exceptions:
           
           - Lebanon, Macao, Russia and Venezuela: This offer is not available in these markets.
           - China and Hong Kong: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
-          - Japan: Microsoft 365 Family is not available.
           - Discounts on select Surface devices and accessories are offered to eligible companies in select markets. 
           
       - question: |
-          How does an organization qualify for HUP discounts?
+          How does an organization qualify for Microsoft Workplace Discount Program benefits?
         answer: |
-          For employees to take advantage of the Microsoft Home Use Program discount, they need a valid corporate email address and an active Microsoft Account, and your organization must meet one of the following criteria:
+          For employees to take advantage of the Microsoft Workplace Discount Program reduced pricing, they need a valid corporate email address and an active Microsoft Account, and your organization must meet one of the following criteria:
           
           - Customers who have active Software Assurance for qualifying Office applications
           - Customers who have Microsoft 365/Microsoft 365 E3/E5 From Software Assurance
@@ -57,6 +56,11 @@ sections:
           - Education and non-profit customers
           - Commercial and government customers who have spent $250,000 USD or more in the previous 12 months on eligible Power BI, Office, Surface devices & accessories, Windows and Enterprise Mobility 
           
+      - question: |
+          Why did the name of the program change? What happened to the Home Use Program?
+        answer: |
+          To update and modernize the Home Use Program to a broader range of license and product benefits, we needed to change the way we fulfill HUP. Microsoft Store for Business is used for eligibility validation and to assign HUP benefits, and for that it relies on AAD to connect information from VLSC and to validate the email domains your organization's employees are on. For more information, see [To sign up for Azure AD accounts through Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+
       - question: |
           Why do I have to create an Azure Active Directory (AAD) account to use the Home Use Program/ Microsoft Store for Business?
         answer: |
