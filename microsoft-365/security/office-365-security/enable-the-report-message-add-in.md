@@ -69,8 +69,8 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
 
-> [!CAUTION]
-> To view messages reported to Microsoft in user reported messages tab under Submissions at security.microsoft.com, please do not turn off built-in reporting experience.
+> [!IMPORTANT]
+> To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.
 
 ## Get the Report Message add-in
 
