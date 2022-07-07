@@ -23,7 +23,7 @@
       items:
         - name: Configure privacy settings
           href: configure-privacy-settings.md
-        - name: GDPR requests
+        - name: Manage GDPR requests
           href: gdpr-requests.md
 
     - name: Whiteboard for government
