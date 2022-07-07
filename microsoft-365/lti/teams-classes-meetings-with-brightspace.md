@@ -94,7 +94,7 @@ After registering your Microsoft LTI apps, you need to deploy the apps on your B
 
 Here's the procedure to create a new deployment:
 
-1. On [Microsoft LMS Gateway](https://lti.microsoft.com/), select the tool that you created.
+1. On the Brightspace site, select the tool that you created.
 2. Enter a deployment name.
 3. Select all security settings except **classlist** and **Anonymous**.
 4. Don't set configuration settings.
@@ -106,7 +106,7 @@ Choose the **Org Units** you would like to use the new LTI app. Select the **roo
 
 After creating a deployment, you'll create a new link. This link will add the Microsoft LTI app to educators' Brightspace experience.
 
-1. On [Microsoft LMS Gateway](https://lti.microsoft.com/), select the deployment you created.
+1. On the Brightspace site, select the deployment you created.
 2. Scroll down and select **View Links**.
 3. Select **New link**.
 4. Fill in these required details:
