@@ -18,7 +18,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Manage GDPR data subject requests in Microsoft Whiteboard
 
-The General Data Protection Regulation (GDPR) gives rights to users to manage personal data collected by an organization. These rights can be exercised through a data subject request (DSR). This article provides information about how to export, transfer, or delete personal information from Microsoft Whiteboard.
+The General Data Protection Regulation (GDPR) gives rights to users to manage personal data collected by an organization. These rights can be exercised through a data subject request (DSR).
+
+This article provides information about how to export, transfer, or delete personal information from Microsoft Whiteboard.
 
 ## Export a whiteboard
 
@@ -32,7 +34,7 @@ On Windows 10, do the following steps:
 
 3. In the window that opens, select a location where to save the image.
 
-## On iOS or the web
+### On iOS or the web
 
 On iOS or the web, do the following steps:
 
@@ -53,7 +55,6 @@ On iOS or the web, do the following steps:
 To transfer a whiteboard, contact your IT administrator and have them change ownership of any whiteboards you want to transfer.
 
 ## Delete a whiteboard
-
 
 To delete a whiteboard, do the following steps:
 
