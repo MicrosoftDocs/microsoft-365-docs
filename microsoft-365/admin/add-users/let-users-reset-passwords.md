@@ -32,12 +32,16 @@ description: "Learn how you can set a policy in the Microsoft 365 admin center t
 
 # Let users reset their own passwords
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them. Less work for you!
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
  
 ## Watch: Let users reset their own passwords
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198214).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 

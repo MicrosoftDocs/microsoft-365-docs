@@ -33,7 +33,9 @@ description: "Use the setup wizard to add your domain to Microsoft 365 in the Mi
 
 # Add a domain to Microsoft 365
 
- **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for.
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
   
 ## Before you begin
 
@@ -43,6 +45,8 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Add a domain
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198213).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
@@ -157,20 +161,23 @@ To add an onmicrosoft.com domain:
 
 1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**.
 
-1. Select an existing *.onmicrosoft.com* domain.
-
-1. On the **Overview** tab, select **Add onmicrosoft.com domain**.
+2. Select an existing *.onmicrosoft.com* domain.
 
     ![Domains page.](../../media/onmicrosoft-domains.png)
   
-1. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
 
-    ![Screenshot of Add onmicrosoft domain page.](../../media/add-an-onmicrosoftcom-domain-page.png)
+3. On the **Overview** tab, select **Add onmicrosoft.com domain**.
+
+    ![Screenshot of domain properties.](../../media/add-onmicrosoft-domain-link.png)
+
+4. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
+
+    ![Screenshot of Add onmicrosoft domain.](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
     > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
 
-1. Select **Add domain**. When successfully added, you will see a message stating this. 
+5. Select **Add domain**. When successfully added, you will see a message stating this. 
     
     ![Screenshot of domain added successfully.](../../media/domain-added.png)
 
