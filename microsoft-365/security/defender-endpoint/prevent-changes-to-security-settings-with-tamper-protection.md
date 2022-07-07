@@ -62,7 +62,6 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Suppressing notifications in the Windows Security app
 - Disabling scanning of archives and network files
 
-
 ### How it works
 
 Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:
