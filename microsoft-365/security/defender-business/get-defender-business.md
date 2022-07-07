@@ -71,7 +71,7 @@ When you receive your acceptance email, here's how to activate your trial subscr
 
 3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
-4. Use one of the following procedures:<br/>
+4. Use one of the following procedures, depending on your scenario:<br/>
 
    | Scenario | Procedure |
    |:---|:---|

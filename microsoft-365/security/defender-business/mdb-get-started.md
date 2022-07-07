@@ -25,7 +25,6 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
 
-
 ## The navigation bar
 
 Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies. The following table describes items you'll see in your navigation bar.
@@ -51,5 +50,5 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 ## Next steps
 
-- [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md)
-- [See the setup and configuration process](mdb-setup-configuration.md)
+- [Use the setup wizard in Defender for Business](mdb-use-wizard.md)
+- [See the overall setup and configuration process](mdb-setup-configuration.md)
