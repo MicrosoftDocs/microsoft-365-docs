@@ -34,9 +34,6 @@ This article lists new features in the latest release of Microsoft Defender for 
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
 
-> [!TIP]
-> Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
-
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
@@ -44,10 +41,28 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+
+## June 2022
+
+- [Spoofing allows using admin submission](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender): Create allowed spoofed sender entries using the Tenant Allow/Block List.
+
+- [Impersonation allows using admin submission](allow-block-email-spoof.md#create-impersonated-sender-entries): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
+
+- [View converted admin submission from user submission](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): Configure the custom mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+
+- [View associated alert for user and admin submissions](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission. 
+
+- [Configurable impersonation protection custom users and domains and increased scope within Preset policies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
+  - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization. 
+  - Configure impersonation protection settings for custom users and custom domains within Preset Strict/Standard policies and automatically protect your targeted users and targeted domain against impersonation attacks.
+
+- [Simplifying the quarantine experience (part two) in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Highlights additional features to make the quarantine experience even more easy to use.
+
 ## April 2022
 
 - [Introducing the URLClickEvents table in Microsoft 365 Defender Advanced Hunting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Introducing the UrlClickEvents table in advanced hunting with Microsoft Defender for Office 365.
 - [Manual email remediation enhancements](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): Bringing manual email purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action-focused investigation.
+- [Introducing differentiated protection for priority accounts in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): Introducing the general availability of differentiated protection for priority accounts. 
  
 ## March 2022
 
@@ -69,7 +84,7 @@ For more information on what's new with other Microsoft Defender security produc
   - [Video of admin experience](https://youtu.be/vnar4HowfpY)
   - [Video of end-user experience](https://youtu.be/s-vozLO43rI)
   - Other new capabilities coming to the quarantine experience are described in this blog post: [Simplifying the Quarantine experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
-- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security and Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
+- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security & Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## August 2021
 

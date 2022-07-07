@@ -156,20 +156,20 @@
        items:
        - name: Email authentication
          href: email-validation-and-authentication.md
+       - name: Set up SPF to help prevent spoofing
+         href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+       - name: How Microsoft 365 uses SPF to prevent spoofing
+         href: how-office-365-uses-spf-to-prevent-spoofing.md
        - name: Use DKIM to validate outbound email
          href: use-dkim-to-validate-outbound-email.md
        - name: Support for validation of DKIM signed messages
          href: support-for-validation-of-dkim-signed-messages.md
        - name: Use DMARC to validate email
          href: use-dmarc-to-validate-email.md
-       - name: Set up SPF to help prevent spoofing
-         href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-       - name: How Microsoft 365 uses SPF to prevent spoofing
-         href: how-office-365-uses-spf-to-prevent-spoofing.md
+       - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
+         href: use-arc-exceptions-to-mark-trusted-arc-senders.md
      - name: Mail flow in EOP
        href: mail-flow-in-eop.md
-     - name: User submissions policies
-       href: user-submission.md
      - name: Add support for anonymous inbound email over IPv6
        href: support-for-anonymous-inbound-email-messages-over-ipv6.md
      - name: Install Application Guard for Office
@@ -202,14 +202,18 @@
          href: attack-simulation-training-get-started.md
        - name: Simulate a phishing attack with Attack simulation training
          href: attack-simulation-training.md
-       - name: Create custom payloads for Attack simulation training
+       - name: Payloads in Attack simulation training
          href: attack-simulation-training-payloads.md
        - name: Simulation automations in Attack simulation training
          href: attack-simulation-training-simulation-automations.md
        - name: Payload automations in Attack simulation training
          href: attack-simulation-training-payload-automations.md
+       - name: Create custom payloads for Attack simulation training
+         href: attack-simulation-training-payloads.md
        - name: End-user notifications for Attack simulation training
          href: attack-simulation-training-end-user-notifications.md
+       - name: Login pages in Attack simulation training
+         href: attack-simulation-training-login-pages.md
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md
        - name: Attack simulation training deployment considerations and FAQ
@@ -223,13 +227,13 @@
      - name: Tenant Allow/Block List
        items:
        - name: Manage the Tenant Allow/Block List
-         href: tenant-allow-block-list.md
-       - name: Add blocks in the Tenant Allow/Block List
-         href: manage-tenant-blocks.md
-       - name: Add allows in the Tenant Allow/Block List
-         href: manage-tenant-allows.md
-       - name: Modify and remove entries in the Tenant Allow/Block List
-         href: modify-remove-entries-tenant-allow-block.md
+         href: manage-tenant-allow-block-list.md
+       - name: Allow or block emails using the Tenant Allow/Block List
+         href: allow-block-email-spoof.md
+       - name: Allow or block URLs using the Tenant Allow/Block List
+         href: allow-block-urls.md
+       - name: Allow or block files using the Tenant Allow/Block List
+         href: allow-block-files.md
      - name: Create block sender lists
        href: Create-block-sender-lists-in-office-365.md
      - name: Create safe sender lists
@@ -326,6 +330,8 @@
            href: enable-the-report-message-add-in.md
          - name: Report false positives and false negatives in Outlook
            href: report-false-positives-and-false-negatives.md
+         - name: User reported message settings
+           href: user-submission.md
          - name: Use mail flow rules to see what users are reporting to Microsoft
            href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
          - name: Submit malware and non-malware to Microsoft
@@ -392,8 +398,40 @@
        href: anti-spoofing-protection-faq.yml
      - name: Quarantine FAQ
        href: quarantine-faq.yml
+   - name: Step-by-step guides
+     items: 
+      - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
+        href: step-by-step-guides/step-by-step-guide-overview.md
+      - name: (False Negatives) How to handle malicious emails that are delivered to recipients using Microsoft Defender for Office 365
+        href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+      - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
+        href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+      - name: How to configure quarantine permissions and policies
+        href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+      - name: Stay informed of upcoming changes to Microsoft Defender for Office 365 using the message center
+        href: step-by-step-guides/stay-informed-with-message-center.md
+      - name: Ensuring you always have the optimal security controls with preset security policies
+        href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+      - name: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
+        href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
+      - name: How to run attack simulations for your team
+        href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+      - name: How to setup automated attacks and training within Attack simulation training 
+        href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+      - name: Optimize and correct security policies with configuration analyzer
+        href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+      - name: Protect your c-suite with priority account protection
+        href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+      - name: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
+        href: step-by-step-guides/search-for-emails-and-remediate-threats.md
+      - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
+        href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+      - name: How to prioritize and manage Automated Investigations and Response (AIR)
+        href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
    - name: Reference
-     items:
+     items: 
+     - name: Defender for Office 365 data retention 
+       href: mdo-data-retention.md
      - name: Security roadmap
        href: security-roadmap.md
      - name: Help and support for EOP
@@ -424,3 +462,5 @@
          href: /cloud-app-security
        - name: Defender for Business
          href: ../defender-business/index.yml
+       - name: Defender Vulnerability Management
+         href: ../defender-vulnerability-management/index.yml

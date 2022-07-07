@@ -102,4 +102,4 @@ The following illustration and table provide several examples of policies that c
 
 ## Next steps
 
-For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](//cloud-app-security/).
+For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](/defender-cloud-apps/).

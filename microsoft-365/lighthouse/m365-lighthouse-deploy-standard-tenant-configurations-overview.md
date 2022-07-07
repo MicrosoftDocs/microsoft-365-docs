@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -26,7 +27,7 @@ You can view the default baseline and its deployment steps from within Lighthous
 
 ## Lighthouse baseline
 
-Lighthouse baseline configurations are designed to make sure all managed tenants are secure and compliant. Select **Baselines** from the left navigation pane to view the default baseline that applies to all tenants.  To view the deployment steps included in the default baseline, select **View baseline** to open the default baseline page. Select any of the deployment steps to view deployment details and user impact.
+Lighthouse baseline configurations are designed to make sure all managed tenants are secure and compliant. Select **Baselines** from the left navigation pane to view the default baseline that applies to all tenants.  To view the deployment steps included in the default baseline, select **View baseline** to open the **Default baseline** page. Select any of the deployment steps to view deployment details and user impact.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.":::
 
@@ -38,7 +39,7 @@ Lighthouse baseline configurations are designed to make sure all managed tenants
 | Require MFA for end users | A Conditional Access policy that requires multi-factor authentication for all users.  It's required for all cloud applications. For more information about this baseline, see [Conditional Access: Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
 | Block legacy authentication | A Conditional Access policy to block legacy client authentication. For more information about this baseline, see [Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).|
 | Set up device enrollment | Device enrollment to allow your tenant devices to enroll in Microsoft Endpoint Manager. This is done by setting up Auto Enrollment between Azure Active Directory and Microsoft Endpoint Manager. For more information about this baseline, see [Set up enrollment for Windows devices](/mem/intune/enrollment/windows-enroll). |
-| Setup Exchange Online Protection and Microsoft Defender for Office 365 | A policy to apply recommended anti-spam, anti-malware, anti-phishing, safe links and safe attachment policies to your tenants Exchange Online mailboxes. |
+| Set up Exchange Online Protection and Microsoft Defender for Office 365 | A policy to apply recommended anti-spam, anti-malware, anti-phishing, safe links and safe attachment policies to your tenants Exchange Online mailboxes. |
 | Configure Microsoft Defender Antivirus for Windows 10 and later | A device configuration profile for Windows devices with pre-configured Microsoft Defender Antivirus settings. For more information about this baseline, see [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure).|
 | Configure Microsoft Defender Firewall for Windows 10 and later | A firewall policy to help secure devices by preventing unwanted and unauthorized network traffic. For more information about this baseline, see [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configure a device compliance policy for Windows 10 and later | A Windows device policy with pre-configured settings to meet basic compliance requirements. For more information about this baseline, see [Conditional Access: Require compliant or hybrid Azure AD joined device](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |

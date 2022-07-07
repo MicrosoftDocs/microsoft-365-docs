@@ -1,5 +1,7 @@
 - name: Microsoft 365 Lighthouse
-  items: 
+  items:
+    - name: What's new in Microsoft 365 Lighthouse
+      href: m365-lighthouse-whats-new.md
     - name: Overview of Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
     - name: Requirements for Microsoft 365 Lighthouse
@@ -66,6 +68,10 @@
       href: m365-lighthouse-threat-management-page-overview.md
     - name: Mitigate threats with Microsoft Defender Antivirus
       href: m365-lighthouse-mitigate-threats.md
+    - name: Overview of Device Security page
+      href: m365-lighthouse-device-security-overview.md
+    - name: Overview of quarantined messages
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: Get help and support
   items: 
     - name: Get help and support

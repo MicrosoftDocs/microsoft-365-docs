@@ -19,8 +19,6 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type using PowerShell
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article shows you how to create an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). This article describes a custom sensitive information type that identifies an employee ID. You can use the sample XML in this article as a starting point for your own XML file.
 
 For more information about sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
@@ -447,7 +445,7 @@ In this example, a date validator is defined for a RegEx part of which is date.
 
 ## Changes for Exchange Online
 
-Previously, you might have used Exchange Online PowerShell to import your custom sensitive information types for DLP. Now your custom sensitive information types can be used in both the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and the Compliance center. As part of this improvement, you should use Compliance center PowerShell to import your custom sensitive information types — you can't import them from the Exchange PowerShell anymore. Your custom sensitive information types will continue to work just like before; however, it may take up to one hour for changes made to custom sensitive information types in the Compliance center to appear in the Exchange admin center.
+Previously, you might have used Exchange Online PowerShell to import your custom sensitive information types for DLP. Now your custom sensitive information types can be used in both the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and the Compliance center. As part of this improvement, you should use Security & Compliance PowerShell to import your custom sensitive information types — you can't import them from Exchange Online PowerShell anymore. Your custom sensitive information types will continue to work just like before; however, it may take up to one hour for changes made to custom sensitive information types in the Compliance center to appear in the Exchange admin center.
 
 Note that in the Compliance center, you use the **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet to upload a rule package. (Previously, in the Exchange admin center, you used the  **ClassificationRuleCollection**` cmdlet.)
 
@@ -457,7 +455,7 @@ To upload your rule package, do the following steps:
 
 1. Save it as an .xml file with Unicode encoding.
 
-2. [Connect to Compliance center PowerShell](/powershell/exchange/exchange-online-powershell)
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
 
 3. Use the following syntax:
 

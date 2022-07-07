@@ -118,7 +118,7 @@ For step by step instructions on how to create and send a new simulation, see [S
 
 ### Create a payload
 
-For step by step instructions on how to create a payload for use within a simulation, see [Create a custom payload for Attack simulation training](attack-simulation-training-payloads.md).
+For step by step instructions on how to create a payload for use within a simulation, see [Create a custom payload for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
 ### Gaining insights
 

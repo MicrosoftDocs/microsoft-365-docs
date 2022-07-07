@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can create the schema and EDM SIT by using the [Use the exact data match schema and sensitive information type pattern wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) or [manually](#create-exact-data-match-schema-manually-and-upload). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM-based SITS or their implementation, you should familiarize yourself with:
@@ -75,7 +73,7 @@ You can use this wizard to help simplify the schema file creation process.
 
 If you created the EDM schema in the EDM schema wizard, you must export the EDM schema file in XML format. You'll need it in the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) phase.
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. To export the EDM schema file, use this syntax:
 
@@ -170,7 +168,7 @@ The `ignoredDelimiters` flag doesn't support:
 
    Once you have created the EDM schema file in XML format, you have to upload it to the cloud service.
 
-2. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. To upload the database schema, run the following command:
 
