@@ -95,7 +95,7 @@ You don't have to do a thing to set up DMARC for mail that you receive in Micros
 
 ## Set up DMARC for outbound mail from Microsoft 365
 
-If you use Microsoft 365 but you aren't using a custom domain (you use onmicrosoft.com), you don't need to do anything else. SPF is already set up for you, and Microsoft 365 automatically generates a DKIM signature for your outgoing mail. There is nothing more to do to configure DMARC for your organization. For more information about this signature, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+If you use Microsoft 365 but you aren't using a custom domain (you use onmicrosoft.com), SPF is already set up for you and Microsoft 365 automatically generates a DKIM signature for your outgoing mail (for more information about this signature, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)). To set up DMARC for your organization, you need to [Form the DMARC TXT record](#step-4-form-the-dmarc-txt-record-for-your-domain) for the onmicrosoft.com domain and publish it to DNS via [Office 365 Admin Center](https://admin.microsoft.com) > Settings > Domains > click on onmicrosoft.com domain > Add record.
 
  If you have a custom domain or are using on-premises Exchange servers along with Microsoft 365, you need to manually set up DMARC for your outbound mail. Setting up DMARC for your custom domain includes these steps:
 
@@ -276,4 +276,4 @@ Want more information about DMARC? These resources can help.
 
 [**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
-[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)
