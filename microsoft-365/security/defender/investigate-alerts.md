@@ -98,7 +98,7 @@ Throughout an alert page, you can select the ellipses (**...**) beside any entit
 
 ### Alert sources
 
-Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and the app governance add-on for Microsoft Defender for Cloud Apps. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, the app governance add-on for Microsoft Defender for Cloud Apps, Azure Active Directory Identity Protection, and Microsoft Data Loss Prevention. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
 
 > [!NOTE]
 > - The prepended GUIDs are specific only to unified experiences such as unified alerts queue, unified alerts page, unified investigation, and unified incident.
@@ -106,10 +106,14 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 
 | Alert source | Prepended character |
 | :---|:--- |
+| Microsoft 365 Defender | `ra` <br> `ta` for ThreatExperts <br> `ea` for DetectionSource = DetectionSource.CustomDetection |
 | Microsoft Defender for Office 365 | `fa{GUID}` <br> Example: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Endpoint | `da` or `ed` for custom detection alerts <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Example: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
+| Azure Active Directory (AAD) Identity Protection | `ad` |
+| App Governance | `ma` |
+| Microsoft Data Loss Prevention | `dl` |
 
 ### Analyze affected assets
 
