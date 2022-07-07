@@ -20,7 +20,7 @@ ms.collection:
 
 # View and edit security policies and settings in Microsoft Defender for Business
 
-After you've onboarded your company's devices to Microsoft Defender for Business, the next step is to review your security policies. 
+After you've onboarded your company's devices to Defender for Business, the next step is to review your security policies. 
 
 > [!TIP]
 > Defender for Business includes preconfigured security policies with recommended settings. You can edit these settings to suit your business needs.
@@ -57,7 +57,7 @@ The following table can help you choose where to manage your security policies a
 
 | Option | Description |
 |:---|:---|
-| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings. You can access your security policies and settings, use the [Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place. <p>If you're using Intune, devices that you onboard to Defender for Business and your security policies are visible in the Endpoint Manager admin center. To learn more, see the following articles:<ul><li>[Defender for Business default settings and Microsoft Intune](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-intune)</li><li>[Firewall in Microsoft Defender for Business](mdb-firewall.md)</li></ul>   |
+| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings. You can access your security policies and settings, use the [Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place. <p>If you're using Intune, devices that you onboard to Defender for Business and your security policies are visible in the Endpoint Manager admin center. To learn more, see the following articles:<ul><li>[Defender for Business default settings and Microsoft Intune](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-intune)</li><li>[Firewall in Defender for Business](mdb-firewall.md)</li></ul>   |
 | **Use the Microsoft Endpoint Manager admin center** | If your company is already using Intune to manage security policies, you can continue using the Endpoint Manager admin center to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <p>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
 
 > [!IMPORTANT]
@@ -154,7 +154,7 @@ The following table describes settings you can view and  edit in Defender for Bu
 | **Microsoft 365 Defender** | **Account** | View details such where your data is stored, your tenant ID, and your organization (org) ID. |
 | **Microsoft 365 Defender**  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
 | **Endpoints**  | **Email notifications** | Set up or edit your email notification rules. When vulnerabilities are detected or an alert is created, the recipients specified in your email notification rules will receive an email. [Learn more about email notifications](mdb-email-notifications.md). |
-| **Endpoints**   | **Device management** > **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).   |  
+| **Endpoints**   | **Device management** > **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard devices to Defender for Business](mdb-onboard-devices.md).   |  
 | **Endpoints**  |  **Device management** > **Offboarding** | Offboard (remove) devices from Defender for Business. When you offboard a device, it no longer sends data to Defender for Business, but data received prior to offboarding is retained. To learn more, see [Offboarding a device](mdb-offboard-devices.md).  |
 
 ### Access your settings in the Microsoft 365 Defender portal
@@ -167,7 +167,7 @@ The following table describes settings you can view and  edit in Defender for Bu
 
 ## Next steps
 
-- [Get started using Microsoft Defender for Business](mdb-get-started.md)
-- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)
+- [Get started using Defender for Business](mdb-get-started.md)
+- [Manage devices in Defender for Business](mdb-manage-devices.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
+- [View or edit policies in Defender for Business](mdb-view-edit-policies.md)
