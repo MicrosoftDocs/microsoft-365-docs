@@ -20,7 +20,14 @@ This guide provides the IT admin steps for registering both Teams Classes and Te
 
 For details on managing all LTI apps for any LMS, see [Manage Microsoft LMS Gateway for any LMS](manage-microsoft-one-lti.md).
 
-## Prerequisites before set up
+The basic steps to integrate Teams LTI apps and Brightspace are:
+
+1. [Prerequisites before integration](#prerequisites-before-integration).
+1. [Register Microsoft LTI for use in Brightspace](#register-microsoft-teams-lti-for-use-in-brightspace).
+1. [Deploy the Microsoft LTI apps to Brightspace](#deploy-the-microsoft-lti-apps-to-brightspace).
+1. [Add Teams LTI app links to educators' Brightspace](#add-teams-lti-app-links-to-educators-brightspace).
+
+## Prerequisites before integration
 
 For the integration between D2L Brightspace and Teams to function correctly, Brightspace and Teams must be set up to communicate with one another.
 
@@ -95,7 +102,7 @@ Here's the procedure to create a new deployment:
 
 Choose the **Org Units** you would like to use the new LTI app. Select the **root org** or select individual org unit children.
 
-### Add Teams LTI app links to educators' Brightspace
+## Add Teams LTI app links to educators' Brightspace
 
 After creating a deployment, you'll create a new link. This link will add the Microsoft LTI app to educators' Brightspace experience.
 
