@@ -24,7 +24,7 @@ search.appverid:
 
 # Investigate and remediate communication compliance alerts
 
-After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft Purview compliance portal for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
+After you've configured your [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies), you'll start to receive alerts in the [Microsoft Purview compliance portal](https://compliance.microsoft.com) for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 
 ## Investigate alerts
 
@@ -59,7 +59,7 @@ The following table outlines filter details:
 | **Size** | The size of the message in KB. |
 | **Subject/Title** | The message subject or chat title. |
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
-| **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). The following languages are supported: Chinese (Simplified - ZH), English (EN), French (FR), German (DE), Italian (IT), Japanese (JP), Portuguese (PT), and Spanish (ES). For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the EmailDetectedLanguage field. |
+| **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). For a list of supported languages, see [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about). <br><br> You can also filter by more than one language. For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the *EmailDetectedLanguage* field. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 | **Classifiers** | The name of built-in and custom classifiers that apply to the message. Some examples include *Targeted Harassment*, *Profanity*, *Threat*, and more.
 

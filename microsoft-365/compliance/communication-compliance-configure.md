@@ -26,7 +26,7 @@ search.appverid:
 
 # Get started with communication compliance
 
-Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance). If you'd like to review how Contoso quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
+Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
 
 ## Subscriptions and licensing
 
@@ -242,7 +242,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Choose the communication direction to detect, including inbound, outbound, or internal communications.
 
-    - Define the communication compliance policy [conditions](/microsoft-365/compliance/communication-compliance-policies#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
+    - Define the communication compliance policy [conditions](/microsoft-365/compliance/communication-compliance-policies#conditional-settings). You can choose from message address, keyword, file types, and size match conditions.
 
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
 

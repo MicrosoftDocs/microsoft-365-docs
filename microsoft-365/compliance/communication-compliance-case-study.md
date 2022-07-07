@@ -28,16 +28,16 @@ search.appverid:
 
 # Case study - Contoso quickly configures an inappropriate text policy for Microsoft Teams, Exchange, and Yammer communications
 
-Microsoft Purview Communication Compliance helps minimize communication risks by helping you detect, capture, and act on messages with inappropriate text in your organization. inappropriate text may include profanity, threats, harassment, and inappropriate images. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
+[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) helps minimize communication risks by helping you detect, capture, and act on messages with inappropriate text in your organization. inappropriate text may include profanity, threats, harassment, and inappropriate images. Pre-defined and custom [policies](/microsoft-365/compliance/communication-compliance-policies) allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can [investigate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) for email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) to make sure they're compliant with your organization's message standards.
 
 The Contoso Corporation is a fictional organization that needs to quickly configure a policy to detect inappropriate text. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Yammer support for their users but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
 
 This case study will cover the basics for quickly configuring a communication compliance policy to detect inappropriate text. This guidance includes:
 
-- Step 1 - Planning for communication compliance
-- Step 2 - Accessing communication compliance
-- Step 3 - Configuring prerequisites and creating a communication compliance policy
-- Step 4 - Investigation and remediation of alerts
+- [Step 1: Planning for communication compliance](#step-1-planning-for-communication-compliance)
+- [Step 2: Accessing communication compliance](#step-2-accessing-communication-compliance)
+- [Step 3: Configuring prerequisites and creating a communication compliance policy](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
+- [Step 4: Investigate and remediate alerts](#step-4-investigate-and-remediate-alerts)
 
 ## Step 1: Planning for communication compliance
 
@@ -66,7 +66,7 @@ Users included in communication compliance policies must be assigned one of the 
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 
-1. IT administrators sign in to the Microsoft 365 admin center <https://admin.microsoft.com> and go to Microsoft 365 admin center > **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**Licenses**</a>.
+1. IT administrators sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and go to Microsoft 365 admin center > **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**Licenses**</a>.
 
 2. Here they confirm that they have one of the [license options](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) that includes support for communication compliance.
 
@@ -105,7 +105,7 @@ After configuring the permissions for communication compliance, Contoso IT admin
 
 ### Starting directly from the communication compliance solution
 
-The quickest way to access the solution is to sign in directly to the **Communication compliance** (<https://compliance.microsoft.com/supervisoryreview>) solution. Using this link, Contoso IT administrators and compliance specialists will be directed to the communication compliance home page where you can quickly review the status of alerts and create new policies from the pre-defined templates.
+The quickest way to access the solution is to sign in directly to the [Communication compliance solution](https://compliance.microsoft.com/supervisoryreview). Using this link, Contoso IT administrators and compliance specialists will be directed to the communication compliance home page where you can quickly review the status of alerts and create new policies from the pre-defined templates.
 
 ![Communication compliance home.](../media/communication-compliance-home.png)
 
@@ -123,7 +123,7 @@ Contoso IT administrators and compliance specialists could also choose to access
 
 ### Starting from the Microsoft 365 admin center
 
-To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to [Microsoft Purview compliance portal](https://compliance.microsoft.com)
+To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and go to [Microsoft Purview compliance portal](https://compliance.microsoft.com)
 
 ![Communication compliance link.](../media/communication-compliance-case-compliance-link.png)
 
@@ -161,12 +161,12 @@ Contoso compliance specialists want to add all users to the communication policy
 
 They need to create a new group to include all Contoso users, so they take the following steps:
 
-1. Contoso IT administrators IT sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to Microsoft 365 admin center > **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
+1. Contoso IT administrators IT sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and go to Microsoft 365 admin center > **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 2. They select **Add a group** and complete the wizard to create a new *Microsoft 365 group* or *Distribution group*.
 
     ![Groups.](../media/communication-compliance-case-all-employees.png)
 
-3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
+3. After the new group is created, they need to add all Contoso users to the new group. They open the [Exchange admin center](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
 
     ![Exchange admin center.](../media/communication-compliance-case-eac.png)
 
