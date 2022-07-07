@@ -1,5 +1,5 @@
 ---
-title: "Bring your compliance data into Microsoft Purview Compliance Manager"
+title: "Update improvement actions and bring compliance data into Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -29,11 +29,11 @@ Compliance Manager enables organizations to bring their existing compliance acti
 
 This upload process also gives new and existing Compliance Manager users greater flexibility and ability to update improvement actions on a larger scale. For example, you can:
 
-- Add test results and evidence to multiple improvement actions that were tested in a system other than Compliance Manager
-- Assign multiple improvement actions to various users based on the actions' score potential
-- Update the implementation or testing status of multiple improvement actions all at one time
-- Change actions' testing source from automatic to manual implementation and testing
-- Parent the testing source of multiple actions at one time, so that those actions inherit the implementation and testing status of another action
+- [Add test results and evidence](compliance-manager-improvement-actions.md#perform-work-and-store-documentation) to multiple improvement actions that were tested in a system other than Compliance Manager.
+- [Assign improvement actions](compliance-manager-improvement-actions.md#assign-improvement-actions) to various users based on the actions' score potential.
+- Update the [implementation status](compliance-manager-improvement-actions.md#change-implementation-details) or [testing status](compliance-manager-improvement-actions.md#change-test-status) of multiple improvement actions all at one time.
+- Change improvement actions' [testing source](compliance-manager-improvement-actions.md#update-testing-source) from automatic to manual implementation and testing.
+- [Parent the testing source](compliance-manager-improvement-actions.md#parent-testing-source) of multiple actions at one time, so that those actions inherit the implementation and testing status of another action.
 
 ## Getting started
 
@@ -44,19 +44,19 @@ To migrate existing data into Compliance Manager or to perform a bulk update of 
 
 > [!IMPORTANT]
 > - Only the improvement actions managed by your organization, not Microsoft managed actions, can be updated by this process. (Learn more about [types of improvement actions](compliance-score-calculation.md#action-types-and-points).)
-> - Improvement actions must already be associated to an existing assessment before you can update them through this process. (Learn more about [building and managing assessments](compliance-manager-assessments.md).)
+> - Improvement actions must already be associated to an  assessment before you can update them through this process. (Learn more about [building and managing assessments](compliance-manager-assessments.md).)
 
 ## Migrating your existing work into Compliance Manager
 
 If you're new to Compliance Manager, follow these steps to bring your existing compliance activities into Compliance Manager:
 
-1. **Create an assessment.** Compliance Manager can recommend assessments that may be most relevant to your organization, or you can create one through a guided process. Visit [Create assessments](compliance-manager-assessments.md#create-assessments) for instructions.
+1. **Create an assessment**: Compliance Manager can recommend assessments that may be most relevant to your organization, or you can create one through a guided process. Visit [Create assessments](compliance-manager-assessments.md#create-assessments) for instructions.
 
-2. **Export improvement actions.** You'll export an Excel sheet containing the action data that you want to update. It may make more sense to start the export from your [Assessments page](#updating-actions-from-the-assessments-page), but you can also export from the [Improvement actions](#updating-actions-from-the-improvement-actions-page) page.
+2. **Export improvement actions**: You'll export an Excel file containing the action data that you want to update. It may make more sense to start the export from your [Assessments page](#updating-actions-from-the-assessments-page), but you can also export from the [Improvement actions](#updating-actions-from-the-improvement-actions-page) page.
 
-3. **Update the improvement action Excel file.** Use the instructions on the **How to update actions** tab to add or update the information in the specially formatted Excel file.
+3. **Update the improvement action Excel file**: Use the instructions on the **How to update actions** tab of the Excel file to add your information.
 
-4. **Upload the Excel file.** Upload your edited Excel file by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
+4. **Upload the Excel file**: Upload your edited Excel file by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
 
 ## Updating multiple improvement actions at once
 
@@ -77,11 +77,11 @@ Follow the instructions below to update improvement actions by starting from the
 
 1. In Compliance Manager, go to the **Improvement actions** page.
 
-2. Select the checkbox next to the improvement actions you want to update, then select the **Export** command, located above the list of actions.
+2. Select the checkbox next to the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
 
 3. An Excel file will download, which contains all the data related to the actions. Open the file and refer to the formatting instructions on the tab labeled **How to update actions.**
 
-4. Add or edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
+4. Edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
 
 5. On the **Improvement actions** page, select the **Update actions** command, located above the list of actions. This action will open an improvement actions update wizard.
 
@@ -104,13 +104,13 @@ Follow the instructions below to update improvement actions by starting from the
 
 1. In Compliance Manager, go to the **Assessments** page.
 
-2. Select the checkbox next to the assessment containing the improvement actions you want to update, then select the **Export** command, located above the list of actions.
+2. Select the checkbox next to the assessment containing the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
 
 3. An Excel file will download, which contains all the data related to the actions. Open the file and refer to the formatting instructions on the tab labeled **How to update actions.**
 
-4. Add or edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
+4. Edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
 
-5. On the **Improvement actions** page, select the **Update actions** command, located above the list of actions. This action will open an improvement actions update wizard.
+5. On the **Assessments** page, select the **Update actions** command, located above the list of actions. This action will open an improvement actions update wizard.
 
 6. The first page reminds you of the main prerequisites. Check the boxes next to the reminders, then continue the process by selecting **Next**.
 
