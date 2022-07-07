@@ -23,7 +23,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->The following features are in preview or generally available (GA) in the latest release of Microsoft 365 Defender.
+Lists the new features and functionality in Microsoft 365 Defender. 
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
@@ -39,6 +39,9 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+
+## June 2022
+- (Preview) The [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) and [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tables are now available in the advanced hunting schema. Use these tables to hunt through assessment events in Defender Vulnerability Management including the status of various configurations and attack surface area states of devices.
 
 ## May 2022
 - (Preview) In line with the recently announced expansion into a new service category called [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), we're introducing the availability of [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) for public preview. Defender Experts for Hunting is for customers who have a robust security operations center but want Microsoft to help them proactively hunt for threats across Microsoft Defender data, including endpoints, Office 365, cloud applications, and identity. 
@@ -126,7 +129,7 @@ You can also get product updates and important notifications through the [messag
 
 - Microsoft 365 Defender
 
-  The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+  The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](microsoft-365-defender-portal.md).
 
 - [Microsoft 365 Defender threat analytics report](threat-analytics.md)
 

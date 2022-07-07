@@ -13,7 +13,7 @@ ms.collection: Adm_TOC
 description: "Set how long user's session will last in Microsoft 365 before they're timed out."
 ---
 
-# Idle session timeout for Microsoft 365 (Public preview)
+# Idle session timeout for Microsoft 365
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
@@ -68,7 +68,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 - Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they will be considered active and will not be signed out.  
 
 - Users won’t get signed out in these cases.
-    - If they get single sign-on (SSO) into the web app from the device joined account or selected **Stay signed in** at the time of sign in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
+    - If they get single sign-on (SSO) into the web app from the device joined account or selected **Stay signed in** at the time of sign-in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
     - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Windows Accounts extension](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). For this feature to not trigger on a managed device, an eligible Azure AD Premium P1 or P2 subscription, and a specific Conditional Access policy, is required. See below for further details.
 
 > [!IMPORTANT]

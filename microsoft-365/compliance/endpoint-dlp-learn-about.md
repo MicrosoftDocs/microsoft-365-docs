@@ -23,8 +23,6 @@ description: "Endpoint data loss prevention extends monitoring of file activitie
 
 # Learn about Endpoint data loss prevention
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 **Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
@@ -140,7 +138,7 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices. You can **Turn on device monitoring** to use endpoint DLP.
+If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices will automatically show up in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP. .
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)

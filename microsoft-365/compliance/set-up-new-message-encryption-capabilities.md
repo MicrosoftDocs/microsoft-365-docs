@@ -25,8 +25,6 @@ ms.custom:
 
 # Set up Message Encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview Message Encryption allows organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as third-parties using Outlook.com, Gmail, and other email services.
 
 Follow the steps below to ensure that Microsoft Purview Message Encryption is available in your organization.

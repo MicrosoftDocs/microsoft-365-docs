@@ -14,7 +14,6 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
-- m365solution-scenario
 - m365solution-overview
 ms.custom:
 - intro-overview

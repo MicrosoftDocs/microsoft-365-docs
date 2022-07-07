@@ -23,8 +23,6 @@ description: Create auto-labeling retention policies so you can automatically ap
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!NOTE]
 > This scenario is not supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md).
 
@@ -73,8 +71,8 @@ When you create an auto-apply policy, you select a retention label to automatica
     - If you are using records management:
         - **Solutions** \> **Records management** \> **Label policies** tab \> **Auto-apply a label**
 
-    - If you are using data lifeycle management:
-        - **Solutions** \> **Data lifeycle management** \> **Label policies** tab \> **Auto-apply a label**
+    - If you are using data lifecycle management:
+        - **Solutions** \> **Data lifecycle management** \> **Label policies** tab \> **Auto-apply a label**
 
     Don't immediately see your solution in the navigation pane? First select **Show all**.
 

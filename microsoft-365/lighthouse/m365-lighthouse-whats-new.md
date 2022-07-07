@@ -26,6 +26,40 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## June 2022
+
+### Support for Microsoft 365 E5 customers
+
+We've changed our onboarding requirements to allow you to onboard Microsoft 365 E5 customers to Microsoft 365 Lighthouse. The expanded list of licenses that Microsoft 365 Lighthouse supports for onboarding includes Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender for Business, and Windows 365 for Business. Customers who have at least one of any of these licenses, meet the requirements for delegated access permissions, and do not exceed the maximum number of licensed users can be managed in Microsoft 365 Lighthouse.  
+
+For a full list of requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+
+### Microsoft Defender for Business integration
+
+Microsoft 365 Lighthouse now integrates with Microsoft Defender for Business to bring you related insights and management capabilities for all of your customer tenants that have Microsoft Defender for Business. To see the list of customer devices that have been onboarded to Microsoft Defender for Business, select **Devices** from the left navigation pane in Microsoft 365 Lighthouse. To see the list of incidents and alerts flagged across your customer tenants, go to **Devices** > **Device Security**, and then select the **Incidents and alerts** tab.  
+
+We've also added a step to the default baseline to help you set up Microsoft Defender for Business for your customer tenants. To see this step, select **Baselines** from the left navigation pane in Microsoft 365 Lighthouse or view the deployment plan for any of your customer tenants.
+
+### Status of quarantined email messages
+
+We've added new functionality around email quarantine data for your managed tenants. Accessible by selecting **Data protection** from the left navigation pane in Microsoft 365 Lighthouse, this feature gives you visibility into the status of quarantined email messages across your customer tenants. You can see consolidated information for total quarantine volumes and detailed information for each managed tenant to help you prioritize any tenants that may require action.
+
+### Increase in maximum license limit
+
+We're making it possible to manage more of your customers in Microsoft 365 Lighthouse by once again increasing the maximum license limit for customer onboarding. Customers with up to 2500 user licenses can now be onboarded to Microsoft 365 Lighthouse. We'll continue to evaluate this requirement in future Microsoft 365 Lighthouse releases. 
+
+For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+
+## May 2022
+
+### Redesigned left navigation pane
+
+We've given the left navigation pane in Microsoft 365 Lighthouse a new look. You'll notice a sleeker design, with top-level nodes like Tenants, Users, and Devices that expand to show related subnodes, like Risky users, Device compliance, and Threat management. This navigation model aligns with the model used by other Microsoft 365 admin centers.
+
+### Enriched user details pane
+
+We've redesigned the user details pane to include more user information and more actions that you can take to better manage users. It now has the same look and feel as the user details pane in the Microsoft 365 admin center. To access the user details pane in Microsoft 365 Lighthouse, select **Users** from the left navigation pane, and then select either **Search users** or **Risky users**. Select any user to open the details pane.
+
 ## April 2022
 
 ### Delegated access type and roles on Tenants page
@@ -38,7 +72,7 @@ To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-li
 
 ### Windows 365 Business integration and management actions
 
-Based on user feedback, we've integrated Windows 365 Business into Microsoft 365 Lighthouse. This will help you manage and monitor all of your customers' Cloud PCs from a single location. 
+Based on user feedback, we've integrated Windows 365 Business into Microsoft 365 Lighthouse. This integration will help you manage and monitor all of your customers' Cloud PCs from a single location. 
 
 In addition to integrating with Windows 365 Business Cloud PCs in Microsoft 365 Lighthouse, you can now take the following management actions:
 
@@ -60,9 +94,9 @@ Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular De
 
 To learn more about GDAP in Microsoft 365 Lighthouse, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 
-### Capability to notify users to act on non-compliant devices
+### Capability to notify users to act on noncompliant devices
 
-As part of the device compliance baseline step, we've added the capability to notify users in a customer tenant to act on non-compliant devices. With this change, once you apply the device compliance deployment step for any customer tenant, the device compliance policy created in that tenant will automatically send a notification to users when their device becomes non-compliant reminding them to take appropriate action to bring the device back into compliance.
+As part of the device compliance baseline step, we've added the capability to notify users in a customer tenant to act on noncompliant devices. With this change, once you apply the device compliance deployment step for any customer tenant, the device compliance policy created in that tenant will automatically send a notification to users when their device becomes noncompliant reminding them to take appropriate action to bring the device back into compliance.
 
 ### Deployment validation and reporting
 
