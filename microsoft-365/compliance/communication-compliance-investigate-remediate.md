@@ -24,7 +24,7 @@ search.appverid:
 
 # Investigate and remediate communication compliance alerts
 
-After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft Purview compliance portal for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
+After you've configured your [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies), you'll start to receive alerts in the [Microsoft Purview compliance portal](https://compliance.microsoft.com) for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 
 ## Investigate alerts
 
