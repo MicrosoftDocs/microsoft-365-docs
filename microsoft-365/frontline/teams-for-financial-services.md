@@ -12,7 +12,7 @@ ms.date: 07/06/2022
 ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
-  - microsoftcloud-retail
+  - microsoftcloud-financial-services
   - m365-frontline
 ms.localizationpriority: high
 search.appverid: MET150
@@ -94,56 +94,38 @@ More information: [Corporate communications with frontline workers](flw-corp-com
 
 Use the [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) app in Teams to accelerate the lending process with automation and collaboration tools, to quickly go from application to signing. The Collaboration Manager for Loans includes tools for keeping track of loan records, taking notes, and managing customer communications and bookings.
 
+> [!NOTE]
+> The Collaboration Manager for Loans is also part of the Microsoft Cloud for Financial Services, which includes additional capabilities from Microsoft 365 and Dynamics 365. [Learn more about the Microsoft Cloud for Financial Services](/industry/financial-services).
+
 More information: [Admin documentation for Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) and [Collaboration Manager for Loans user guide](/industry/financial-services/collaboration-manager/use)
 
 ## Configure services and apps
 
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
 
-### Apps and services for financial services <!--daisy you stopped here-->
+### Apps and services for financial services
 
 Ensure that your workers can communicate, collaborate, and deliver great customer service with apps like Shifts, Walkie Talkie, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
-For retail environments, the following apps and services can help you transform your business processes and support communication:
+For financial services environments, the following apps and services can help you transform your business processes and support communication:
 
 | Teams apps and services | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Approvals | Approvals can be integrated into chat for easy sign-off. | [Manage Approvals](/microsoftteams/approval-admin) | [Use Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
-| Chat | Enable quick conversations and checkins between staff with secure, enterprise-grade communications tools, instead of consumer grade apps or SMS. | [Chat, teams, channels & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
-| Documents | Share standard operating procedures, store policies, plans, and more. | [How SharePoint and OneDrive interact with Microsoft Teams](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
+| Approvals | Streamline the sign-off process by integrating Approvals into chat. | [Manage Approvals](/microsoftteams/approval-admin) | [Use Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
+| Chat | Enable quick conversations between staff with secure chat in Teams. | [Chat, teams, channels & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
+| Documents and files | Share standard operating procedures, regulatory compliance policies, company policies, and financial product fact sheets. | [How SharePoint and OneDrive interact with Microsoft Teams](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app.md) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
-| RealWear devices | Handsfree communication with devices. | [Microsoft Teams for RealWear](flw-realwear.md) | [Use Microsoft Teams for RealWear](https://support.microsoft.com/office/using-microsoft-teams-for-realwear-af20d232-d18c-476f-8031-843a4edccd5f) |
 | Shifts | Manage schedules and clock in and out with Shifts. | [Manage Shifts](shifts-for-teams-landing-page.md) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
 | Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](/microsoftteams/manage-tasks-app#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
-| Updates | Check in on recurring or one-off priorities such as daily cleaning. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
-| Walkie Talkie | Push to talk quick communication that's not constrained by geography like standard 2-way radios.| [Manage the Walkie Talkie app](/microsoftteams/walkie-talkie.md) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
+| Updates | Check in on recurring or one-off priorities such as daily counts. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Bookings | Enable virtual fittings and consultations. | [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md) | [Use Bookings](https://support.microsoft.com/en-us/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
-| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as store inventory, sales numbers, incident reports, and more. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
-| SharePoint | When you create a new team, a new SharePoint site is created and connected to the team. Many of the scenarios above rely on SharePoint features already embedded in Teams, such as sharing documents for team collaboration. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
-| Viva Connections | Viva Connections creates a hub in Teams where your retail associates can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
-| Viva Learning | Provide training when needed, right in the flow of their work. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning (Preview)](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
-| Yammer | Connect your organization and allow communication across departments and regions with Yammer. | [Manage Yammer](/yammer) | [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
-
-### Retail templates for teams
-
-Create teams that include a predefined set of settings, channels, tabs, and pre-installed apps for communication and collaboration within an individual store, with a region, or between headquarters and your staff wherever they are.
-
-- The Retail **Organize a store** template includes channels for General, Shift Handoff, Store Readiness, and Learning, and includes the Approvals, Tasks, and Wiki apps.
-- The **Retail for managers** template includes channels for General, Operations, and Learning, and includes a Wiki tab.
-
-You can also [create a custom template](/microsoftteams/create-a-team-template) to include the apps your store needs. More information: [Get started with Retail team templates](/microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
-
-## Get ready to roll out your scenarios - identify roles and responsibilities for scenarios
-
-Now that you know what scenarios you want to implement and what you need to support them, you can gather your team so you can plan, roll out, and monitor how they're working in your organization. For example, the following roles might be needed to roll out these scenarios in your organization:
-
-| Image | Role | Responsibilities | Department |
-| ---- | ---- | ----- | ----- |
-|<img src="/office/media/icons/administrator.png" alt="Administrator symbol."> | IT Administrator | Work with operations and retail management staff to define scenarios and how they'll work for the organization. <br><br>Configure settings in the Teams admin center, such as policies and templates, and enable apps. <br><br>Set up app settings (such as global Shifts settings) for the organization. <br><br>Add and license users.  | IT department |
-|<img src="/office/media/icons/user-monitor.png" alt="User monitor symbol.">| Operations staff | Work with Administrators to define scenarios, and determine which settings, policies, templates, and apps are needed for Teams. <br><br>Create regional or divisional teams from templates. <br><br>Set up tasks, lists, and approval flows for coordination between stores within a region, or between stores and headquarters. <br><br>Set up learning framework for staff. | Central operations |
-|<img src="/office/media/icons/presenter-teams.png" alt="Presenter symbol."> | Store manager | Work with Administrators and Operations staff to define scenarios. <br><br>Create teams for the store from templates. <br><br>Set up channels and apps for the teams, as needed. For example: a channel for shift handovers. <br><br>Set up store schedules in Shifts. <br><br>Set up tasks, lists, updates, and approval flows that are specific to the store. <br><br>Set up learning tasks for staff. | Store management |
+| Bookings | Empower your team to conduct virtual consultations with clients. | [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md) | [Use Bookings](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
+| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as sales numbers, KPIs, and other reports. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
+| SharePoint | A new, connected SharePoint site is created whenever you create a new team. You can use SharePoint to store files, post news, and make sure your workers have access to important information. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
+| Viva Connections | Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
+| Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning (Preview)](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
+| Yammer | Connect your entire organization and enable communication across departments and regions. | [Manage Yammer](/yammer) | [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
 
 For more about successfully implementing and adopting Teams, see [Adopt Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).
