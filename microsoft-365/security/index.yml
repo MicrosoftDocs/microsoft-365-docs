@@ -21,21 +21,21 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Overview of Microsoft 365 Defender
+    - title: Zero Trust and Microsoft 365 Defender
+      itemType: overview
+      url: /microsoft-365/security/microsoft-365-zero-trust.md
+    # Card
+    - title: Ransomware protection in Microsoft 365
+      itemType: how-to-guide
+      url: /microsoft-365/solutions/ransomware-protection-microsoft-365.md
+    # Card
+    - title: Microsoft SIEM and XDR security solutions
+      itemType: overview
+      url: https://www.microsoft.com/security/blog/2021/03/02/microsoft-unifies-siem-and-xdr-to-help-stop-advanced-attacks/
+    # Card
+    - title: What is Microsoft 365 Defender
       itemType: overview
       url: defender/microsoft-365-defender.md
-    # Card
-    - title: Try Microsoft 365 Defender
-      itemType: overview
-      url: defender/eval-overview.md
-    # Card
-    - title: What's new
-      itemType: whats-new
-      url: defender/whats-new.md
-    # Card
-    - title: Get Started with Microsoft 365 Defender
-      itemType: get-started
-      url: defender/get-started.md
 
 # productDirectory section (optional)
 productDirectory:
