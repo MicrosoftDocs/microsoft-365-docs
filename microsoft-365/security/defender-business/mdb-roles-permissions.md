@@ -19,7 +19,7 @@ ms.collection:
 
 # Assign roles and permissions in Microsoft Defender for Business
 
-To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, viewing reports, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
+To perform tasks in the Microsoft 365 Defender portal, such as configuring Defender for Business, viewing reports, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## What to do
 
@@ -34,7 +34,7 @@ The following table describes the three roles that can be assigned in Defender f
 
 | Permission level | Description |
 |:---|:---|
-| **Global administrators** (also referred to as global admins) <p> *As a best practice, limit the number of global admins.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Business is a global administrator by default. <p> Global admins are able to modify settings across all Microsoft 365 portals, such as: <ul><li>The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
+| **Global administrators** (also referred to as global admins) <p> *As a best practice, limit the number of global admins.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default. <p> Global admins are able to modify settings across all Microsoft 365 portals, such as: <ul><li>The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
 | **Security administrators** (also referred to as security admins) | Security admins can perform the following tasks: <ul><li>View and manage security policies</li><li>View and manage security threats and alerts (these activities include taking response actions on endpoints)</li><li>View security information and reports</li></ul> |
 | **Security reader** | Security readers can perform the following tasks:<ul><li>View security policies</li><li>View security threats and alerts</li><li>View security information and reports</li></ul>  |
 
@@ -70,4 +70,4 @@ If you haven't already added users to your subscription, see [Add users and assi
 Go to:
 
 - [Step 3: Set up email notifications](mdb-email-notifications.md)
-- [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+- [Step 4: Onboard devices to Defender for Business](mdb-onboard-devices.md)
