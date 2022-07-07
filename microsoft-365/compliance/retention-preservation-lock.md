@@ -21,8 +21,6 @@ description: "Use Preservation Lock with retention policies and retention label 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
 > Currently, [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) don't support Preservation Lock.
 
