@@ -95,7 +95,7 @@ When working with forms, keep in mind that:
 When a scheduler uses the appointment type to schedule an appointment, they can then choose to include the form, remove it, or add any other forms that you linked to the appointment type. Attendees must fill out the form before they join the appointment.
 
 > [!NOTE]
-> Any information provided by patients in Forms as part of Bookings or virtual appointments services that's necessary for medical records continuity or retention purposes should be downloaded, copied, and/or notated directly in such records. This service does not constitute either a legal medical record or a designated record set.
+> If you're a healthcare provider, any information provided by you or patients in Teams (including the Forms app, Bookings app, meeting recordings if enabled by you, or any other Teams virtual appointments services) that's necessary for medical records continuity or retention purposes should be downloaded, copied, and/or notated directly in such records by you. This service does not maintain legal medical records or a designated record set.
 
 To learn more, see [Create an appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
 
