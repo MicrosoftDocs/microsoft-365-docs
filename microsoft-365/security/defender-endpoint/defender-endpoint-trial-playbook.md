@@ -17,13 +17,13 @@ f1.keywords: NOCSH
 
 # Trial playbook: Microsoft Defender for Endpoint
 
-Welcome to the Microsoft Defender for Endpoint trial playbook!
+Welcome to the Microsoft Defender for Endpoint Plan 2 trial playbook!
 
-This playbook is a simple guide to help you make the most of your 90-day free trial. Using the suggested steps in this article from the Microsoft Defender team, you'll learn how Defender for Endpoint can help you to prevent, detect, investigate, and respond to advanced threats.
+This playbook is a simple guide to help you make the most of your free trial. Using the suggested steps in this article from the Microsoft Defender team, you'll learn how Defender for Endpoint can help you to prevent, detect, investigate, and respond to advanced threats.
 
 ## What is Defender for Endpoint?
 
-Defender for Endpoint is an enterprise endpoint security platform that uses the following combination of technology built into Windows and Microsoft's robust cloud service: 
+[Defender for Endpoint](microsoft-defender-endpoint.md) is an enterprise endpoint security platform that uses the following combination of technology built into Windows and Microsoft's robust cloud service: 
 
 - **Endpoint behavioral sensors**: Embedded in Windows, these sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Defender for Endpoint.
 
