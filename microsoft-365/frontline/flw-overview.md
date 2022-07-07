@@ -83,7 +83,7 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 ## Modern devices
 
-Equip your employees with industry-specific devices tailored for their needs, or provide a more secure way to communicate on shared or personal devices with Microsoft 365 and Microsoft Teams. [Link to devices article]
+Equip your employees with industry-specific devices tailored for their needs, or provide a more secure way to communicate on shared or personal devices with Microsoft 365 and Microsoft Teams. To learn more, see [Manage mobile devices for frontline workers](flw-devices.md).
 
 ## Adoption principles to help envision and implement business scenarios
 
