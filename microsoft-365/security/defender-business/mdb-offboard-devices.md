@@ -45,7 +45,7 @@ If you want to offboard a device, use one of the following procedures:
 
 1. Go to **Finder** > **Applications**. 
 
-2. Right click on Microsoft Defender for Business, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. Right click on **Microsoft Defender for Business**, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
