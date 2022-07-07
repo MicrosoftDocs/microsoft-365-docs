@@ -20,7 +20,7 @@ ms.collection:
 
 # Onboard devices to Microsoft Defender for Business
 
-With Microsoft Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through these options and provides an overview of how onboarding works.
+With Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through these options and provides an overview of how onboarding works.
 
 ## What to do
 
@@ -99,7 +99,7 @@ When you set up automatic enrollment, users add their work account to the device
 
 4. Select **Save**.
 
-5. After a device is enrolled in Intune, you can add it to a device group in Defender for Business. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+5. After a device is enrolled in Intune, you can add it to a device group in Defender for Business. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 > [!TIP]
 > To learn more, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
@@ -112,7 +112,7 @@ When you set up automatic enrollment, users add their work account to the device
 
 2. Share this article with users in your organization: [Enroll Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device).
 
-3. After a device is enrolled in Intune, you can add it to a device group in Defender for Business. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+3. After a device is enrolled in Intune, you can add it to a device group in Defender for Business. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 ### Run a detection test on a Windows 10 or 11 device
 
@@ -137,8 +137,8 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 ## Next steps
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
-- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
+- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md)
+- See [Get started using Defender for Business](mdb-get-started.md).
 
 ## [**Mac**](#tab/mac)
 
@@ -176,7 +176,7 @@ When you run the local script on a Mac, it creates a trust with Azure Active Dir
 
 10. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
-After a Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+After a Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 ### Intune for Mac
 
@@ -219,7 +219,7 @@ If your business prefers to have people enroll their own devices in Intune, dire
 
    `mdatp health --field real_time_protection_enabled`
 
-After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 ## View a list of onboarded devices
 
@@ -228,8 +228,8 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 ## Next steps
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
-- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
+- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
+- See [Get started using Defender for Business](mdb-get-started.md).
 
 ## [**Servers**](#tab/Servers)
 
@@ -258,7 +258,7 @@ You can onboard an instance of Windows Server to Defender for Business by using 
 
 3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then in the **Deployment method** section, choose **Local script**. 
 
-   If you select **Windows Server 2012 R2 and 2016**, you'll have two packages to download and run: an installation package and an onboarding package. The installation package contains an MSI file that installs the Microsoft Defender for Business agent. The onboarding package contains the script to onboard your Windows Server endpoint to Defender for Business.
+   If you select **Windows Server 2012 R2 and 2016**, you'll have two packages to download and run: an installation package and an onboarding package. The installation package contains an MSI file that installs the Defender for Business agent. The onboarding package contains the script to onboard your Windows Server endpoint to Defender for Business.
 
 4. Select **Download onboarding package**. We recommend that you save the onboarding package to a removable drive.
 
@@ -323,8 +323,8 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 ## Next steps
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
-- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
+- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
+- See [Get started using Defender for Business](mdb-get-started.md).
 
 ## [**Mobile devices**](#tab/mobiles)
 
@@ -337,10 +337,10 @@ See the following resources to get help enrolling these devices into Intune:
 - [Enroll Android devices](/mem/intune/enrollment/android-enroll)
 - [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
 
-After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 ## Next steps
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
-- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
+- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
+- See [Get started using Defender for Business](mdb-get-started.md).
