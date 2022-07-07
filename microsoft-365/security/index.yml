@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
-title: Microsoft 365 Defender # < 60 chars
-summary: Documentation and learning resources for Microsoft 365 security # < 160 chars
+title: Microsoft 365 security # < 60 chars
+summary: Protect your Microsoft 365 environment with Microsoft 365 Defender # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
-  title: Microsoft 365 Defender # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Documentation and learning resources for Microsoft 365 security # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft 365 security # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Documentation and learning resources for Microsoft 365 security and Microsoft 365 Defender # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: hub-page # Required
   ms.collection: m365-security-compliance
   ms.prod: m365-security
@@ -43,26 +43,49 @@ productDirectory:
   summary: See the list of products and services that power Microsoft 365 Defender # < 160 chars (optional)
   items:
     # Card
+    - title: Microsoft 365 Defender
+      imageSrc: /microsoft-365/media/check-mark.png
+      links:
+      - url: /microsoft-365/security/defender/get-started.md
+        text: Get Started
+      - url: /microsoft-365/security/defender/eval-overview.md
+        text: Set up an evaluation
+    # Card
     - title: Microsoft Defender for Office 365
       imageSrc: /microsoft-365/media/check-mark.png
-      url: /microsoft-365/security/office-365-security
+      links:
+       - url: /microsoft-365/security/office-365-security/defender-for-office-365.md
+         text: What is Defender for Office 365?
     # Card
     - title: Microsoft Defender Endpoint
       imageSrc: /microsoft-365/media/check-mark.png
-      url: /microsoft-365/security/defender-endpoint
+      links:
+      - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint.md
+        text: What is Defender for Endpoint?  
+      - url: /microsoft-365/security/defender-endpoint/deployment-strategy.md
+        text: Plan your deployment   
     # Card
     - title: Microsoft Defender Vulnerability Management
       imageSrc: /microsoft-365/media/check-mark.png
-      url: /microsoft-365/security/defender-vulnerability-management/
+      links:
+      - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management.md
+        text: What is Defender Vulnerability Management?
     # Card
     - title: Microsoft Defender for Identity
       imageSrc: /microsoft-365/media/check-mark.png
-      url: /defender-for-identity
+      links:
+       - url: /defender-for-identity/what-is
+         text: What is Defender for Identity?
+       - url: /defender-for-identity/deploy-defender-identity.md
+         text: Get Started
      # Card
     - title: Microsoft Defender for Cloud apps
       imageSrc: /microsoft-365/media/check-mark.png
-      url: /defender-cloud-apps
-
+      links:
+      - url: /defender-cloud-apps/what-is-defender-for-cloud-apps.md
+        text: What is Defender for Cloud Apps?
+      - url: /defender-cloud-apps/get-started.md
+        text: Get Started
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
