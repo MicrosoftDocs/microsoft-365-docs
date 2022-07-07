@@ -47,7 +47,7 @@ All remediation actions are tracked in the Action center.
 
 ## Remediation actions
 
-Microsoft Defender for Business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
+Defender for Business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
 
 The following table lists remediation actions that are available.
 
@@ -59,5 +59,5 @@ The following table lists remediation actions that are available.
 
 ## Next steps
 
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
+- [Manage devices in Defender for Business](mdb-manage-devices.md)
