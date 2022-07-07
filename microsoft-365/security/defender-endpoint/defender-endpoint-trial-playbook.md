@@ -84,7 +84,7 @@ Defender for Endpoint supports two ways to manage permissions:
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you can access your Defender for Endpoint capabilities.
 
-1. [Review what to expect](../defender/icrosoft-365-defender-portal.md) in the Microsoft 365 Defender portal.
+1. [Review what to expect](../defender/microsoft-365-defender-portal.md) in the Microsoft 365 Defender portal.
 
 2. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in.
 
