@@ -111,7 +111,7 @@ You can use the [Malware Protection Command-Line Utility](command-line-arguments
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
-> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on **Windows Server**. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`), and confirm that either the  **ForceDefenderPassiveMode** or **PassiveMode** registry keys were set to **0x1**.
+> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for **Event 5007** in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`), and confirm that either the **ForceDefenderPassiveMode** or **PassiveMode** registry keys were set to **0x1**.
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
