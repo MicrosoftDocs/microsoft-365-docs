@@ -21,7 +21,7 @@ ms.custom: intro-overview
 
 # What is Microsoft Defender for Business?
 
-Microsoft Defender for Business is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
+Defender for Business is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
 
 This article describes what's included in Defender for Business, with links to learn more about these features and capabilities.
 
@@ -34,7 +34,7 @@ Watch the following video to learn more about Defender for Business: <br/><br/>
 
 ## What's included with Defender for Business
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Defender for Business features and capabilities.":::
 
 With Defender for Business, you can help protect the devices and data your business uses with:
 
@@ -44,18 +44,18 @@ With Defender for Business, you can help protect the devices and data your busin
 
 - **Flexibility for your environment**. Defender for Business can work with your business environment, whether you're using Microsoft Intune or you're brand new to the Microsoft Cloud. Defender for Business works with components that are built into Windows, and with apps for Mac, iOS, and Android devices.
 
-- **Integration with Microsoft 365 Lighthouse, RMM tools, and PSA software**. If you're a Microsoft cloud solution provider (CSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), you can view security incidents and alerts across your customers' tenants (see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md)). If you're a Microsoft managed service provider (MSP), you can integrate Defender for Business with your remote monitoring and management (RMM) tools and professional service automation (PSA) software (see [Microsoft Defender for Business and MSP resources](mdb-partners.md)).
+- **Integration with Microsoft 365 Lighthouse, RMM tools, and PSA software**. If you're a Microsoft cloud solution provider (CSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), you can view security incidents and alerts across your customers' tenants (see [Microsoft 365 Lighthouse and Defender for Business](mdb-lighthouse-integration.md)). If you're a Microsoft managed service provider (MSP), you can integrate Defender for Business with your remote monitoring and management (RMM) tools and professional service automation (PSA) software (see [Defender for Business and MSP resources](mdb-partners.md)).
 
 ## How to use this guide
 
 **This guide is intended to**:
 
 - **Provide you with an overview of Defender for Business** so you know what's included and how it works. Use this article as a starting point.
-   - [Compare security features in Microsoft Defender for Business to other plans](compare-mdb-m365-plans.md).
-   - [Find out how to get Microsoft Defender for Business](get-defender-business.md).
+   - [Compare security features in Defender for Business to other plans](compare-mdb-m365-plans.md).
+   - [Find out how to get Defender for Business](get-defender-business.md).
 
 - **Learn how to set up your threat protection capabilities**. 
-   - [Use the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md).
+   - [Use the trial playbook: Defender for Business](trial-playbook-defender-business.md).
    - [Learn about the simplified configuration process](mdb-simplified-configuration.md).
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 
@@ -69,6 +69,6 @@ With Defender for Business, you can help protect the devices and data your busin
 
 ## Next steps
 
-- [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide).
-- [Learn more about the simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md).
-- [Find out how to get Microsoft Defender for Business](get-defender-business.md).
+- [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
+- [Learn more about the simplified configuration process in Defender for Business](mdb-simplified-configuration.md)
+- [Find out how to get Defender for Business](get-defender-business.md)
