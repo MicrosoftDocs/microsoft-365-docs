@@ -1,5 +1,5 @@
 ---
-title: "Update improvement actions and bring compliance data into Compliance Manager"
+title: "Update improvement actions and bring compliance data into Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -19,7 +19,7 @@ search.appverid:
 description: "Migrate your existing compliance data into Microsoft Purview Compliance Manager using an Excel based upload process."
 ---
 
-# Bring your compliance data into Microsoft Purview Compliance Manager
+# Update improvement actions and bring compliance data into Compliance Manager
 
 **In this article:** Learn how to migrate your organization's existing compliance activities into Compliance Manager and update multiple improvement actions at once by uploading a formatted Excel file.
 
