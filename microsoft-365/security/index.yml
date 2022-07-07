@@ -23,11 +23,11 @@ highlightedContent:
     # Card
     - title: Zero Trust and Microsoft 365 Defender
       itemType: overview
-      url: /microsoft-365/security/microsoft-365-zero-trust.md
+      url: /microsoft-365/security/microsoft-365-zero-trust
     # Card
     - title: Ransomware protection in Microsoft 365
       itemType: how-to-guide
-      url: /microsoft-365/solutions/ransomware-protection-microsoft-365.md
+      url: /microsoft-365/solutions/ransomware-protection-microsoft-365
     # Card
     - title: Microsoft SIEM and XDR security solutions
       itemType: overview
@@ -35,7 +35,7 @@ highlightedContent:
     # Card
     - title: What is Microsoft 365 Defender
       itemType: overview
-      url: defender/microsoft-365-defender.md
+      url: defender/microsoft-365-defender
 
 # productDirectory section (optional)
 productDirectory:
@@ -46,46 +46,60 @@ productDirectory:
     - title: Microsoft 365 Defender
       imageSrc: /microsoft-365/media/check-mark.png
       links:
-      - url: /microsoft-365/security/defender/get-started.md
+      - url: /microsoft-365/security/defender/microsoft-365-defender
+        text: What is Microsoft 365 Defender?
+      - url: /microsoft-365/security/defender/get-started
         text: Get Started
-      - url: /microsoft-365/security/defender/eval-overview.md
+      - url: /microsoft-365/security/defender/eval-overview
         text: Set up an evaluation
     # Card
     - title: Microsoft Defender for Office 365
       imageSrc: /microsoft-365/media/check-mark.png
       links:
-       - url: /microsoft-365/security/office-365-security/defender-for-office-365.md
+       - url: /microsoft-365/security/office-365-security/defender-for-office-365
          text: What is Defender for Office 365?
+       - url: /microsoft-365/security/office-365-security/preset-security-policies
+         text: Get Started
+       - url: /microsoft-365/security/defender/eval-defender-office-365-overview
+         text: Set up an evaluation 
     # Card
     - title: Microsoft Defender Endpoint
       imageSrc: /microsoft-365/media/check-mark.png
       links:
-      - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint.md
+      - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
         text: What is Defender for Endpoint?  
-      - url: /microsoft-365/security/defender-endpoint/deployment-strategy.md
-        text: Plan your deployment   
+      - url: /microsoft-365/security/defender-endpoint/deployment-strategy
+        text: Get Started
+      - url: /microsoft-365/security/defender/eval-defender-endpoint-overview
+        text: Set up an evaluation   
     # Card
     - title: Microsoft Defender Vulnerability Management
       imageSrc: /microsoft-365/media/check-mark.png
       links:
-      - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management.md
+      - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
         text: What is Defender Vulnerability Management?
+      - url: /microsoft-365/security/defender-vulnerability-management/tvm-prerequisites
+        text: Get Started
     # Card
     - title: Microsoft Defender for Identity
       imageSrc: /microsoft-365/media/check-mark.png
       links:
        - url: /defender-for-identity/what-is
          text: What is Defender for Identity?
-       - url: /defender-for-identity/deploy-defender-identity.md
+       - url: /defender-for-identity/deploy-defender-identity
          text: Get Started
+       - url: /microsoft-365/security/defender/eval-defender-identity-overview
+         text: Set up an evaluation
      # Card
     - title: Microsoft Defender for Cloud apps
       imageSrc: /microsoft-365/media/check-mark.png
       links:
-      - url: /defender-cloud-apps/what-is-defender-for-cloud-apps.md
+      - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
         text: What is Defender for Cloud Apps?
-      - url: /defender-cloud-apps/get-started.md
+      - url: /defender-cloud-apps/get-started
         text: Get Started
+      - url: /microsoft-365/security/defender/eval-defender-mcas-overview
+        text: Set up an evaluation
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -93,13 +107,13 @@ conceptualContent:
   sections:
     - items:
    # Card
-      - title: Security Ops Training
+      - title: Security Ops scenarios
         links:
          - url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
            itemType: learn
            text: Become a Microsoft 365 Defender Ninja
    # Card
-      - title: Security Admin Training
+      - title: Security Admin scenarios
         links:
          - url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
            itemType: learn
@@ -107,12 +121,33 @@ conceptualContent:
          - url: https://docs.microsoft.com/learn/m365/defender
            itemType: learn
            text: Learning paths, modules, and certifications
-         - url: /microsoft-365/solutions/ransomware-protection-microsoft-365.md
+         - url: /microsoft-365/solutions/ransomware-protection-microsoft-365
            itemType: concept
            text: Deploy ransomware protections
     # Card
       - title: Train your employees
         links:
-         - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started.md
+         - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
            itemType: overview
            text: Attack simulation and training
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: Learning, Training, and Community # < 60 chars (optional)
+      summary: Get your learn on # < 160 chars (optional)
+      items:
+        # Card
+        - title: Microsoft 365 Defender Ninja training
+          summary: Enhance your cybersecurity skills with the Microsoft 365 Defender Ninja training
+          url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
+                  # Card
+        - title: Recommended Learning Paths
+          summary: Start your Microsoft 365 Defender learning journey with our recommended learning paths
+          url: https://docs.microsoft.com/en-us/learn/m365/defender
+        # Card
+        - title: Security Operations Analyst Certification & Exams
+          summary: Exam SC-200 Microsoft Security Operations Analyst
+          url: https://docs.microsoft.com/en-us/learn/certifications/browse/
+
