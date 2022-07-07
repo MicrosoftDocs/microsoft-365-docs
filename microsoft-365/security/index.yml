@@ -118,7 +118,7 @@ additionalContent:
           url: https://docs.microsoft.com/en-us/learn/m365/defender
         # Card
         - title: Security Operations Analyst Certification & Exams
-          summary: Exam SC-200 Microsoft Security Operations Analyst
+          summary: Prepare yourself for Microsoft Security certifications with learning and training
           url: https://docs.microsoft.com/en-us/learn/certifications/browse/
           
 # conceptualContent section (optional)
@@ -128,19 +128,7 @@ conceptualContent:
   sections:
     - items:
    # Card
-      - title: Security Ops scenarios
-        links:
-         - url: /microsoft-365/security/defender/microsoft-365-defender-portal
-           itemType: concept
-           text: Start using the Microsoft 365 Defender Portal
-         - url: /microsoft-365/security/defender/first-incident-overview
-           itemType: how-to-guide
-           text: Respond to your first incident
-         - url: /microsoft-365/security/defender-endpoint/attack-simulations
-           itemType: concept
-           text: Simulate an attack (Defender for Endpoint)
-   # Card
-      - title: Security Admin scenarios
+      - title: Protect your Microsoft 365 organization
         links:
          - url: /microsoft-365/security/defender-endpoint/onboard-configure
            itemType: how-to-guide
@@ -151,7 +139,22 @@ conceptualContent:
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
            itemType: how-to-guide
            text: Set up operations for monitoring Defender for Office 365
-    # Card
+   # Card
+      - title: Respond to security incidents
+        links:
+         - url: /microsoft-365/security/defender/microsoft-365-defender-portal
+           itemType: concept
+           text: Start using the Microsoft 365 Defender Portal
+         - url: /microsoft-365/security/defender/first-incident-overview
+           itemType: how-to-guide
+           text: Respond to your first incident
+         - url: /microsoft-365/security/defender-endpoint/attack-simulations
+           itemType: concept
+           text: Simulate an attack (Defender for Endpoint)    
+         - url: 
+          itemType: concept
+           
+  # Card
       - title: Train your employees
         links:
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
