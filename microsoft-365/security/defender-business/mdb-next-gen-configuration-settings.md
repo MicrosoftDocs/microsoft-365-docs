@@ -45,7 +45,7 @@ The following table lists settings and options.
 | **Time of day to run a scheduled scan** | Select a time to run your regularly scheduled antivirus scans to run. |
 | **Use low performance** | This setting is turned off by default. *We recommend keeping this setting turned off.* However, you can turn on this setting to limit the device memory and resources that are used during scheduled scans. <p>**Important** If you turn on **Use low performance**, it configures the following settings for Microsoft Defender Antivirus:<ul><li>Archive files aren't scanned ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)).</li><li>Scans are assigned a low CPU priority ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority)).</li><li>If a full antivirus scan is missed, no catch-up scan will run ([DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan)).</li><li>If a quick antivirus scan is missed, no catch-up scan will run ([DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan)).</li><li>Reduces the average CPU load factor during an antivirus scan from 50 percent to 20 percent ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor)).</li></ul> |
 | **User experience**   |  |
-| **Allow users to access the Windows Security app** | Turn on this setting to enable users to open the Windows Security app on their devices. Users won't be able to override settings that you configure in Microsoft Defender for Business, but they'll be able to run a quick scan or view any detected threats. |
+| **Allow users to access the Windows Security app** | Turn on this setting to enable users to open the Windows Security app on their devices. Users won't be able to override settings that you configure in Defender for Business, but they'll be able to run a quick scan or view any detected threats. |
 | **Antivirus exclusions** | Exclusions are processes, files, or folders that are skipped by Microsoft Defender Antivirus scans. *In general, you shouldn't need to define exclusions.* Microsoft Defender Antivirus includes many automatic exclusions that are based on known operating system behavior and typical management files.<p>[Learn more about exclusions](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md). |
 | **Process exclusions** | Process exclusions prevent files that are opened by specific processes from being scanned by Microsoft Defender Antivirus. <p>[Learn more about process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). |
 | **File extension exclusions** | File extension exclusions prevent files with specific extensions from being scanned by Microsoft Defender Antivirus.<p>[Learn more about file extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
@@ -80,13 +80,13 @@ The following table describes settings that are preconfigured for Defender for B
 
 ## Next steps
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
 
 ## See also
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
-- [Manage firewall settings in Microsoft Defender for Business](mdb-custom-rules-firewall.md)
+- [Manage firewall settings in Defender for Business](mdb-custom-rules-firewall.md)
 - [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)
