@@ -11,7 +11,7 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-edu
 ms.localizationpriority: medium
-description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability for Desire2Learn (D2L) Brightspace.
+description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability (LTI) for Desire2Learn (D2L) Brightspace.
 ---
 
 # Integrate Microsoft Teams classes and meetings within Desire2Learn Brightspace
@@ -85,26 +85,26 @@ If you would like to add the other app too, repeat the steps above, selecting th
 
 After registering your Microsoft LTI apps, you need to deploy the apps on your Brightspace site.
 
-Here is the procedure to create a new deployment:
+Here's the procedure to create a new deployment:
 
-1. On [Microsoft LMS Gateway](https://lti.microsoft.com/), select the tool that you just created.
+1. On [Microsoft LMS Gateway](https://lti.microsoft.com/), select the tool that you created.
 2. Enter a deployment name.
 3. Select all security settings except **classlist** and **Anonymous**.
 4. Don't set configuration settings.
 5. Select **Create Deployment**.
 
-Choose the **Org Units** where you would like to use the new LTI app. Select the **root org** or select individual org unit children.
+Choose the **Org Units** you would like to use the new LTI app. Select the **root org** or select individual org unit children.
 
-### Links
+### Add Teams LTI app links to educators' Brightspace
 
-After creating a deployment, you'll create a new link. This link will add the Microsoft LTI tool to educators' Brightspace experience.
+After creating a deployment, you'll create a new link. This link will add the Microsoft LTI app to educators' Brightspace experience.
 
 1. On [Microsoft LMS Gateway](https://lti.microsoft.com/), select the deployment you created.
 2. Scroll down and select **View Links**.
 3. Select **New link**.
 4. Fill in these required details:
-    1. Paste the **Redirect URL** from *Microsoft LMS gateway* into the **URL** field. This can be accessed by viewing the registration on the gateway.
+    1. Paste the **Redirect URL** from *Microsoft LMS gateway* into the **URL** field. This URL can be accessed by viewing the registration on the gateway.
     1. Set the type to **Basic Launch**.
 5. Select **Save and Close**.
 
-The educator can now add the Microsoft LTI tool by selecting it in the Brightspace **Existing Content** dropdown.
+The educator can now add the Microsoft LTI app by selecting it in the Brightspace **Existing Content** dropdown.
