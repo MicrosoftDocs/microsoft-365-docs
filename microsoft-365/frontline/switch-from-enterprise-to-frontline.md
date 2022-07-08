@@ -40,7 +40,7 @@ Some key differences include:
 In this section, we've included more information about these key differences and highlighted some additional differences to pay attention to. Keep in mind that this isn’t a comprehensive list. To learn more:
 
 - See [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) for a detailed comparison of what’s included in E and F plans.
-- See [service availability](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#service-availability-within-each-microsoft-365-and-office-365-plan) and [feature availability across plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#feature-availability-across-some-plans) for an overview of service and feature availability across E and F plans.
+- See [service availability](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#service-availability-within-each-microsoft-365-and-office-365-plan) and [feature availability across plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#feature-availability-across-some-plans) for a list of service and feature availability across E and F plans.
 
 ### Office apps
 
