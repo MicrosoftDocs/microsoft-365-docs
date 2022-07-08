@@ -193,7 +193,6 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 > - You can only use a maximum of six wildcards per entry.
 > - You cannot use a wildcard in place of a drive letter.
 > - An asterisk `*` in a folder exclusion stands in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
-> - Currently, Microsoft Endpoint Configuration Manager does not support wildcard characters (such as `*` or `?`).
     
 The following table describes how the wildcards can be used and provides some examples.
 
