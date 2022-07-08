@@ -48,7 +48,7 @@ The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft produc
 
 ## Permissions needed to sign an agreement or pay for items
 
-You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you’re a Global admin but don’t have one of those roles, you can assign the roles to yourself. If you’re not a Global admin, ask your Global admin or billing account owner to assign one of the roles to you.
+You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you’re a Global admin but don’t have one of those roles, you can assign the roles to yourself. If you’re not a Global admin, ask your Global admin, or billing account owner to assign one of the roles to you.
 
 The billing account owner and billing account contributor roles are assigned by using either of the following methods.
 
@@ -84,7 +84,7 @@ The overall proposal workflow looks like this:
 - You review the proposal, accept the MCA if needed, and finish the checkout process.
   > [!IMPORTANT]
   > You must have the authority to sign an MCA on behalf of your organization. If you don't have that authority, then someone who does must do this step.
-- After checkout is finished, you're given additional links to set up your products and services.
+- After checkout is finished, you're given more links to set up your products and services.
 
 ## Proposal terms
 
@@ -94,7 +94,7 @@ The following table contains terms and definitions that appear in your proposal 
 |---|---|
 | Billing account | An account used to manage your account settings, invoices, payment methods, and products. |
 | Billing profile | Information about your organization that lets you customize what items are included on your invoice, and how you pay for your invoices. The billing profile includes the billing account name, the payment methods used for the specific billing profile, contact information, invoice settings, and permissions that let you change the billing profile, pay bills, and buy products and services. |
-| Existing agreements | Any agreement that your organization already has in place with Microsoft. This can include, but is not limited to, an Enterprise Agreement, Microsoft Product & Services Agreement, or Microsoft Customer Agreement. |
+| Existing agreements | Any agreement that your organization already has in place with Microsoft. The agreements can include, but aren't limited to, an Enterprise Agreement, Microsoft Product & Services Agreement, or Microsoft Customer Agreement. |
 | Microsoft Customer Agreement (MCA) | An agreement that outlines the terms and conditions of the account held by your organization with Microsoft. |
 | Microsoft representative | An authorized Microsoft representative who prepares a proposal for you and your organization. |
 | Organization | A legal entity that uses Microsoft products, technologies, or services. |
@@ -109,7 +109,7 @@ After you sign in, the first thing you do is review your organization's informat
 
 The **Your organization** section displays the billing account associated with it. The billing account information is either pulled from an existing billing account or created for you by the Microsoft representative. If your organization is an affiliate of another organization, you also see a **Lead organization** section with the name and address of that organization.
 
-If this is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't yet signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you've accepted an MCA, you can review and change your organization's address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the Microsoft 365 admin center. If your organization name changes, open a service request to have it updated. [Learn how to open a service request](../admin/get-help-support.md).
+If this order is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't yet signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you've accepted an MCA, you can review and change your organization's address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the Microsoft 365 admin center. If your organization name changes, open a support request to have it updated. [Learn how to open a support request](../admin/get-help-support.md).
 
 ### Your information
 
@@ -162,12 +162,12 @@ For information about billing profiles, see [Manage billing profiles](billing-an
 
 ### Proposal items in this order
 
-This section shows a list of all items included in the proposal. The list can include one or more of the following categories:
+This section shows a list of all items included in the proposal, which can include one or more of the following categories:
 
 - **Supplemental terms** A list of any amendments to the MCA that contain terms for your organization. For example, this list might include HIPAA or GDPR terms.
 - **Purchase now** A list of items that you pay for during checkout at the end of the proposal acceptance workflow.
 - **Discounts (applied to future charges)** A list of discounts that you receive as part of the proposal.
-- **Included** A list of items included as part of the proposal package at no additional charge. Some of these items might have a cost associated with them in the future.
+- **Included** A list of items included as part of the proposal package at no extra charge. Some of these items might have a cost associated with them in the future.
 
 > [!NOTE]
 > Your proposal might include subscriptions with a future start date. For more information, see [Understand invoicing for future start dates](billing-and-payments/future-start-date.md).
@@ -188,6 +188,6 @@ If you're an existing Azure customer with an Enterprise Agreement, and you're si
 
 ## Understand invoicing
 
-After you check out and complete your order, an initial invoice is sent within 24-48 hours. After that, you receive invoices around the 5th of every month. The monthly invoice contains charges from the previous month. If you have any credits for your account, they're deducted from your billing profile's monetary credits, and applied to your invoice balance. The remaining balance after credits are applied is the balance due. You have 30 days from the billing date to pay the invoice.
+After you check out and complete your order, an initial invoice is sent within 24-48 hours. After that, you receive invoices around the fifth of every month. The monthly invoice contains charges from the previous month. If you have any credits for your account, they're deducted from your billing profile's monetary credits, and applied to your invoice balance. The remaining balance after credits are applied is the balance due. You have 30 days from the billing date to pay the invoice.
 
 Payment instructions for where to send check or wire transfers are included in the PDF copy of your invoice. To view or download your invoice, see [View your bill or invoice](billing-and-payments/view-your-bill-or-invoice.md).
