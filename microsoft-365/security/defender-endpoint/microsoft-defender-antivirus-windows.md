@@ -62,9 +62,9 @@ If you want to check the state of Microsoft Defender Antivirus on your device, y
 
 2. Select **Virus & threat protection**.
 
-3. Under **Virus & threat protection settings**, choose **Manage settings**.
+3. Under **Who's protecting me?**, choose **Manage Providers**.
 
-You'll see the name of your antivirus/antimalware solution on the settings page.
+You'll see the name of your antivirus/antimalware solution on the Security providers page.
 
 ### Use PowerShell to check status of Microsoft Defender Antivirus
 
