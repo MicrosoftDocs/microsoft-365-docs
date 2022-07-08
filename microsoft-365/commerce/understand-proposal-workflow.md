@@ -19,16 +19,16 @@ ms.custom:
 search.appverid: MET150 
 description: "Learn about proposals to help you buy Microsoft products and services."
 ROBOTS: NOINDEX
-ms.date: 04/28/2022
+ms.date: 07/08/2022
 ---
 
 # Understand the Microsoft proposal workflow
 
-A proposal is a formal offer from Microsoft for your organization to buy Microsoft products and services. You work directly with a Microsoft representative to determine the specific products, services, and terms for your proposal.
+A proposal is a formal offer from Microsoft for your organization to buy Microsoft products and services. Proposals represent large orders that your organization’s procurement or IT department place with Microsoft.
 
-A Microsoft representative drafts a proposal that contains the items that you and your representative discussed. The representative sends you an email that has a link to the Azure marketplace portal. The site contains the proposal prepared specifically for you and your organization.
+Before the proposal workflow begins, your procurement department works directly with a designated Microsoft representative to determine the specific products and services your organization needs. Next, your Microsoft representative drafts a proposal and sends your procurement department an email with a link to accept the proposal in the Azure marketplace portal. The site contains the proposal prepared specifically for you and your organization.
 
-After you receive the notification email, follow the link to the proposal site. After you sign in to the site, you can start the proposal review process.
+After you follow the link and sign in to the proposal site, you can start the proposal review process. After you complete the proposal review and check out, you receive an invoice for the purchased products as per the billing plan you selected. To learn how billing works for proposals, see [Understand invoicing](#understand-invoicing) below.
 
 ## Prerequisites for buying items with a proposal
 
@@ -71,7 +71,7 @@ For more information about billing account roles, see [Understand access to bill
 If this is a new billing account, and no one has accepted an agreement, you automatically become the billing account owner, provided you:
 
 - Are the person named in the proposal
-  **or**
+  or
 - Are already an [Azure Active Directory global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your organization
 
 ## What is the overall workflow?
@@ -152,7 +152,7 @@ The checkout page contains the following sections:
 This section shows the billing account used for the proposal. If you need to change any information, select the **Edit** link. You can also use the **Edit** link to add your organization's Tax ID. The Tax ID must be related to the country listed in the **Sold to** section. If you have a tax exemption, you must open a support ticket to request tax-exempt status.
 
 To learn more about Tax IDs, and how to apply for tax-exempt status, see
-[Tax information](billing-and-payments/tax-information.md).
+[Microsoft 365 tax information](billing-and-payments/tax-information.md).
 
 ### Billed to
 
