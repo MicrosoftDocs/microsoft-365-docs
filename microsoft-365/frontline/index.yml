@@ -38,7 +38,6 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: How can Microsoft 365 help your business?
   items:
     # Card
     - title: Solutions to transform your business
