@@ -83,7 +83,7 @@ productDirectory:
           text: More >
     # Card
     - title: Set up and configure Microsoft 365 for frontline workers
-      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
       summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance
       url: flw-deploy-overview.md
     # Card
