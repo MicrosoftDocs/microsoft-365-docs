@@ -36,4 +36,4 @@ Use the following steps to configure communication compliance for your organizat
 ## More information about communication compliance
 
 - [Investigate and remediate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate)
-- [Case study - Contoso quickly configures an inappropriate content policy for Microsoft Teams, Exchange, and Yammer communications](/microsoft-365/compliance/communication-compliance-case-study)
+- [Case study: Contoso quickly configures an inappropriate content policy for Microsoft Teams, Exchange, and Yammer communications](/microsoft-365/compliance/communication-compliance-case-study)

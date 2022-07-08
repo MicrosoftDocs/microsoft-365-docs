@@ -1,5 +1,5 @@
 ---
-title: "Communication compliance with SIEM solutions"
+title: "Use communication compliance with SIEM solutions"
 description: "Learn about communication compliance integration with SIEM solutions."
 keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 ---
 
-# Communication compliance with SIEM solutions
+# Use communication compliance with SIEM solutions
 
 [Communication compliance](/microsoft-365/compliance/communication-compliance) is an insider risk solution in Microsoft Purview that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
