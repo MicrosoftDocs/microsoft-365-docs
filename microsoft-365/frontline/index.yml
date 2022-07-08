@@ -81,21 +81,18 @@ productDirectory:
           text: Updates
         - url: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: More >
-# additionalContent section (optional)
-# Card with summary style
-additionalContent:
-  # Supports up to 4 subsections
-  sections:
-    - items:
-        # Card
-        - title: Set up and configure Microsoft 365 for frontline workers
-          summary: Set up a trial, start with a pilot deployment, or deploy at scale with this guidance.
-          url: flw-deploy-overview.md
-        # Card
-        - title: Adoption resources
-          summary: Go from inspiration to execution with these adoption resources.
-          url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
-        # Card
-        - title: End user training
-          summary: Get your frontline workforce up and running quickly with these training videos.
-          url: https://support.microsoft.com/en-us/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7
+    # Card
+    - title: Set up and configure Microsoft 365 for frontline workers
+      imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
+      summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance.
+      url: flw-deploy-overview.md
+    # Card
+    - title: Adoption resources
+      imageSrc: https://docs.microsoft.com/office/media/icons/users-group.svg
+      summary: Go from inspiration to execution with these adoption resources.
+      url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
+    # Card
+    - title: End user training
+      imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+      summary: Get your frontline workforce up and running quickly with these training videos.
+      url: https://support.microsoft.com/en-us/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7
