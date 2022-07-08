@@ -189,7 +189,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 ![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
 
-The available trainable classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
+The available pre-trained classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 

@@ -268,7 +268,7 @@ When you choose the option for a trainable classifier, you can select one or mor
 
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
 
-The available trainable classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
+The available pre-trained classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
 
 For more information about trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
