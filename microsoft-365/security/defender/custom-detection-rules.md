@@ -126,7 +126,7 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
 
-When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set.
+When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The Rule Frequency is based on the Event Timestamp and the ingestion time.
 
 
 
