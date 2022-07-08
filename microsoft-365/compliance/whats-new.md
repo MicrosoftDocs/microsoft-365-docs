@@ -22,8 +22,6 @@ ms.custom: seo-marvel-mar2020
 
 # What's new in Microsoft Purview risk and compliance solutions
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Whether it be adding new solutions to the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft Purview today.
 
 > [!NOTE]
