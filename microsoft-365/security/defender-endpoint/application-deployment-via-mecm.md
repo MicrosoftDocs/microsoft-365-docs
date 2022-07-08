@@ -86,7 +86,7 @@ Copy the unified solution package, onboarding script and migration script to the
      >[!TIP]
      > Maximum allowed runtime can be lowered from (default) 120 minutes to 30 minutes.
 
-     :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="User experience in deployment type wizard":::
+     :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="Screenshot that shows user experience in deployment-type wizard.":::
 
 12. Click **Next** on Requirements.
 13. Click **Next** on Dependencies.
