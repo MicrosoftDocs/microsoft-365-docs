@@ -48,7 +48,7 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Health** > **Product feedback** > **NPS survey insights**.
 2. From the **NPS survey insights** page, navigate on the page to see survey insights related to NPS for your organization.
 
-:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Screenshot: Net Promoter Score (NPS) main chart" lightbox="product-feedback-main-page.png":::
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Screenshot: Net Promoter Score (NPS) main chart" lightbox="../../media/product-feedback-main-page.png":::
 
 ### Top topic filters
 
