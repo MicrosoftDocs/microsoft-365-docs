@@ -8,7 +8,6 @@ audience: admin
 manager: pamgreen
 f1.keywords:
 - NOCSH
-ms.date: 06/23/2022
 ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
@@ -17,6 +16,7 @@ ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -121,7 +121,7 @@ Members of your leadership or management team can host live events on Yammer whe
 
 The Praise app in Microsoft Teams lets managers and employees congratulate each other and share appreciation by sending badges in Teams chat and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
 
-[Learn how to manage Praise for your organization](/microsoftteams/manage-praise-app).
+[Learn how to manage Praise for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ## Support engagement with SharePoint and Microsoft Stream
 

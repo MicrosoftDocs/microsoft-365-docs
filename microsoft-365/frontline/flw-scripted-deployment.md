@@ -222,7 +222,7 @@ The following settings can be customized to meet your business needs. We have ch
 5. Turn off **Allow user pinning**.
     :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot of Allow user pinning setting.":::
 
-6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams).
+6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
     :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot of the Add pinned apps screen, showing the Add button for the Shifts app":::
 
 7. Remove Calling, if it appears. Removing this feature will not disable it for the user, but will prevent it from appearing on the app bar to simplify the end user experience.
@@ -249,7 +249,7 @@ The following settings can be customized to meet your business needs. We have ch
 5. Turn off **Allow user pinning**.
     :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot of Allow user pinning setting.":::
 
-6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams).
+6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
     :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot of the Add pinned apps screen, showing the Add button for the Shifts app":::
 

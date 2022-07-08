@@ -8,7 +8,6 @@ audience: admin
 manager: pamgreen
 f1.keywords:
 - NOCSH
-ms.date: 03/01/2019
 ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
@@ -40,7 +39,7 @@ Teams includes the following ways to communicate and share information:
 |-----|------------|-----------------------|------------------|
 |Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations to with individual and channel chat messaging. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage Chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) and [Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). |
 |Call and meet with team members |Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a Voice solution to use calling. |[Manage calling and meeting in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) and [Plan your Teams Voice solution](/microsoftteams/cloud-voice-landing-page) |[Make calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) and [Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) |
-|Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a Files tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that is automatically created when the team is created. |[How SharePoint and OneDrive interact with Microsoft Teams](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
+|Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a Files tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that is automatically created when the team is created. |[Overview of Teams and SharePoint integration](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 
 ### See examples of how different industries can use communication capabilities in Teams
 
@@ -78,7 +77,7 @@ Financial services organizations can also use the [Collaboration Manager for Loa
 
 Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers, nurses, or mortgage specialists, assign shifts to employees, add custom labeling and breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, and clock in and out. Managers can also create open shifts that employees can request. For example, a volunteer coordinator at a nonprofit could create open shifts that volunteers can request to take.
 
-[Learn how to Manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams).
+[Learn how to Manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your users.
 
@@ -92,7 +91,7 @@ The Walkie Talkie app provides instant push-to-talk communication. By using Walk
 |Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to call another staff member who works with the patient. |
 |Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
 
-[Learn how to manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie).
+[Learn how to manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Walkie Talkie video training](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) with your users.
 
@@ -106,7 +105,7 @@ The Praise app allows management and frontline team members to congratulate each
 |Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
 |Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
 
-[Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app).
+[Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Praise video training](https://support.microsoft.com/office/communication-and-praise-7d37ef80-542b-42e5-aa01-0fabbaa634b6) with your users.
 
@@ -120,7 +119,7 @@ Use Tasks in Teams to track to-do items for your whole retail team. Store manage
 |Healthcare |A team leader at a doctor's office could assign a nurse a task to attend a training session. |
 |Financial services |A bank manager can assign mortgage specialists a task to review and get familiar with new rates or policies. |
 
-[Learn how to manage the Tasks app for your organization](/microsoftteams/manage-tasks-app).
+[Learn how to manage the Tasks app for your organization](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
 
@@ -134,7 +133,7 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 |Healthcare |A nurse could submit an approval request to change an inpatient's medication. |
 |Financial services |A lending specialist could submit an approval request to a supervisor to offer a special interest rate. |
 
-[Learn about Teams Approvals app availability](/microsoftteams/approval-admin).
+[Learn how to manage the Approvals app for your organization](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Approvals video training](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) with your users.
 
@@ -148,13 +147,13 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 |Healthcare |A team leader could create and assign a recurring daily template with a checklist for equipment preparation. |
 |Financial services |A bank manager could create and assign a recurring daily template for tellers to confirm morning counts. |
 
-[Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app).
+[Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) with your users.
 
 ## Set up your teams, channels, and apps
 
-When you're ready to connect your retail associates in Teams, you can set up teams and channels for your store teams and managers with pre-built or custom templates. The easiest way is to start with a template. The **Organize a store** and **Retail for managers** [templates](/microsoftteams/get-started-with-retail-teams-templates) are pre-made templates that include channels and apps designed for retail. You can also create a template based off of an existing team. Even when you start with a template, you can customize the team and channels, and add more apps to suit your team's needs.
+When you're ready to connect your retail associates in Teams, you can set up teams and channels for your store teams and managers with pre-built or custom templates. The easiest way is to start with a template. The **Organize a store** and **Retail for managers** [templates](/microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) are pre-made templates that include channels and apps designed for retail. You can also create a template based off of an existing team. Even when you start with a template, you can customize the team and channels, and add more apps to suit your team's needs.
 
 - Use channels with tabs to share news, keep employees in touch across shifts, and build community.
 - Use teams templates to set up teams with similar structures (such as channels and tabs) across stores or regions.

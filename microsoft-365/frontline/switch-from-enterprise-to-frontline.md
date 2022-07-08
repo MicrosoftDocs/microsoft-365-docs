@@ -6,14 +6,16 @@ ms.reviewer:
 manager: samanro
 ms.topic: article
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: 
-ms.localizationpriority: medium
-ms.collection: 
+description: Learn about the things to consider and how to prepare if you're switching some of your users from a Microsoft 365 E plan to a Microsoft 365 F plan. 
+ms.localizationpriority: high
+ms.collection:  
   - M365-collaboration
   - Teams_ITAdmin_FLW
+  - m365-frontline
 appliesto: 
+  - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 

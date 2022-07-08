@@ -8,7 +8,6 @@ audience: admin
 manager: pamgreen
 f1.keywords:
 - NOCSH
-ms.date: 06/23/2022
 ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
@@ -37,10 +36,10 @@ Teams includes many apps to help you and your frontline workforce manage their d
 |Task |App |Manage this capability |End-user training |
 |-----|------------|-----------------------|------------------|
 |Create and update schedules for your frontline team. Your workers can sign up for shifts, trade shifts as needed, and clock in when they start. |Shifts |[Manage Shifts](shifts-for-teams-landing-page.md). |[Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
-|Publish and track tasks for your workers so they know what needs to be done every day. |Tasks |[Manage the Tasks app](/microsoftteams/manage-tasks-app). |[Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
-|Easily make and sign off on approval requests. |Approvals | [Manage the Approvals app](/microsoftteams/approval-admin). |[Approvals video training](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) |
-|Check in on recurring responsibilities and track the progress of larger tasks. |Updates | [Manage the Updates app](/microsoftteams/manage-updates-app). | [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
-|Make custom lists to keep track of everything else. |Lists |[Manage the Lists app](/microsoftteams/manage-lists-app). |[Lists video training](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd) |
+|Publish and track tasks for your workers so they know what needs to be done every day. |Tasks |[Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). |[Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
+|Easily make and sign off on approval requests. |Approvals | [Manage the Approvals app](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). |[Approvals video training](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) |
+|Check in on recurring responsibilities and track the progress of larger tasks. |Updates | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). | [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
+|Make custom lists to keep track of everything else. |Lists |[Manage the Lists app](/microsoftteams/manage-lists-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). |[Lists video training](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd) |
 
 [Learn more about how your frontline team can communicate and collaborate with Microsoft Teams apps](flw-team-collaboration.md#apps-in-teams)
 

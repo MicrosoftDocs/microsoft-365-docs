@@ -8,7 +8,6 @@ audience: admin
 manager: pamgreen
 f1.keywords:
 - NOCSH
-ms.date: 06/22/2022
 ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration

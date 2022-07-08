@@ -9,7 +9,7 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to use the Frontline Worker onboarding wizard to quickly deploy an experience in Teams that's tailored to frontline workers and managers in your organization.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
@@ -85,7 +85,6 @@ After you run the wizard, it's important to:
     > Keep in mind that users who have F1 licenses won't receive a welcome email because the F1 license doesn't include email access.  
 
 When the frontline employee opens Teams for the first time, they'll receive a tailored first run experience, which includes chats and channels, calling, and task management all within Teams.
-
 
 ## Related articles
 

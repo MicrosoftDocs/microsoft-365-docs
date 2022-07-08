@@ -9,7 +9,7 @@ ms.service: microsoft-365-frontline
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
@@ -51,7 +51,7 @@ Use this report to gain insight into virtual appointment activity and trends in 
 
 ### Virtual Visits
 
-The graphs you'll see here depend on whether you have a license for the Bookings app, the Teams EHR connector, or both. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin), and [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
+The graphs you'll see here depend on whether you have a license for the Bookings app, the Teams EHR connector, or both. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json), and [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
 :::image type="content" source="media/virtual-visits-usage-report-virtual-visits.png" alt-text="Screenshot of the Virtual Visits tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-virtual-visits.png":::
 
@@ -78,7 +78,7 @@ The graphs you'll see here depend on whether you have a license for the Bookings
 |**6**   |You can export the report to a CSV file for offline analysis. Select **Export to Excel**, and then on the **Downloads** tab, choose **Download** to download the report when it's ready.|
 ### Bookings
 
-You'll see this tab if you have a license that includes the Bookings app. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin).
+You'll see this tab if you have a license that includes the Bookings app. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 :::image type="content" source="media/virtual-visits-usage-report-bookings.png" alt-text="Screenshot of the Bookings tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-bookings.png":::
 

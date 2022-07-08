@@ -9,11 +9,13 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how frontline managers can get their teams up and running with Microsoft 365 for frontline workers.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - Teams_ITAdmin_FLW
+  -  m365-frontline
 appliesto: 
   - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Managers - Get your team started with Microsoft 365 for frontline workers
@@ -72,7 +74,7 @@ To create a schedule in Shifts:
 
 Watch [this video](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) to learn more about creating schedules in shifts.
 
-If your organization is already using a workforce management system for scheduling, your IT team can integrate it with Teams to pull all of your schedules into shifts. Right now Shifts is able to integrate with Blue Yonder and Reflexis workforce management systems. [Learn more about connecting your workforce management system](/microsoftteams/expand-teams-across-your-org/shifts/shifts-connectors).
+If your organization is already using a workforce management system for scheduling, your IT team can integrate it with Teams to pull all of your schedules into shifts. Right now Shifts is able to integrate with Blue Yonder and Reflexis workforce management systems. [Learn more about connecting your workforce management system](shifts-connectors.md).
 
 ## Manage work items
 

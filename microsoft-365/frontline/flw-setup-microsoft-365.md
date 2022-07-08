@@ -9,10 +9,11 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to set up Microsoft 365 with the services and features you need for your frontline workers.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
 appliesto: 
+  - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
@@ -120,6 +121,4 @@ Scenarios and apps
 
 ## Step 6: Set up devices
 
-To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see:
-
-Link TBD
+To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage mobile devices for frontline workers](flw-devices.md).

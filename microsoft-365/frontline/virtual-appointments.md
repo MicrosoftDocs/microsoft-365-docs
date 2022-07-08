@@ -1,21 +1,22 @@
 ---
-title: Virtual appointments with Microsoft Teams 
-author: lanachin
+title: Virtual appointments with Microsoft Teams.
+author: LanaChin
 ms.author: v-lanachin
+ms.reviewer: 
 manager: samanro
-audience: ITPro
-ms.topic: article 
-ms.service: microsoft-365-frontline 
-search.appverid: 
-searchScope:
-  - Microsoft Teams
-  - Microsoft 365 for frontline workers
+ms.topic: article
+audience: admin
+ms.service: microsoft-365-frontline
+search.appverid: MET150
+description: Learn about the capabilities in Microsoft Teams for scheduling and managing virtual appointments.
+ms.localizationpriority: high
+ms.collection: 
+  - m365-frontline
 f1.keywords:
 - NOCSH
-ms.localizationpriority: medium
-ms.collection: m365-frontline
-ms.reviewer: 
-description: Learn about virtual appointments with Microsoft Teams. 
+appliesto: 
+  - Microsoft Teams
+  - Microsoft 365 for frontline workers
 ---
 
 # Virtual appointments with Microsoft Teams
