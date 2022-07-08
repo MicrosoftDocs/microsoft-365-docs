@@ -255,37 +255,48 @@ The patterns are designed to match actual credentials with reasonable confidence
 
 - secret
 - password
-pw
-Keyword_PasswordContextInXml:
-userpass
-password
-pw
-connectionstring
-key
-credential
-token
-sas
-secret
-Keyword_SymmetricKey128:
-secret
-key
-password
-pw
-Keyword_SymmetricKey128Hex:
-dapi
-key
-secret
-token
-password
-pw
-Keyword_SymmetricKey192:
-password
--p
-azurecr
-Keyword_SymmetricKey256:
-SharedAccessKey
-AccountKey
-Keyword_SymmetricKey512:
-SharedAccessKey
-AccountKey
+- pw
 
+### Keyword_PasswordContextInXml
+
+- userpass
+- password
+- pw
+- connectionstring
+- key
+- credential
+- token
+- sas
+- secret
+
+### Keyword_SymmetricKey128
+
+- secret
+- key
+- password
+- pw
+
+### Keyword_SymmetricKey128Hex
+
+- dapi
+- key
+- secret
+- token
+- password
+- pw
+
+### Keyword_SymmetricKey192
+
+- password
+- -p
+- azurecr
+
+### Keyword_SymmetricKey256
+
+- SharedAccessKey
+- AccountKey
+
+### Keyword_SymmetricKey512
+
+- SharedAccessKey
+- AccountKey
