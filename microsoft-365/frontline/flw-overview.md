@@ -7,7 +7,6 @@ ms.author: samanro
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.date: 05/19/2022
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 

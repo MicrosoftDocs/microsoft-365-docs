@@ -9,7 +9,7 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to set up a 90-day Teams for frontline workers trial for your organization.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
 appliesto: 

@@ -13,7 +13,7 @@ searchScope:
   - Microsoft Cloud for Retail
 f1.keywords:
 - NOCSH
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - microsoftcloud-healthcare
   - microsoftcloud-retail

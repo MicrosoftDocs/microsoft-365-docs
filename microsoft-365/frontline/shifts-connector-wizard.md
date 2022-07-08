@@ -9,7 +9,7 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to use the Shifts connector wizard to integrate Shifts in Teams with Blue Yonder Workforce Management.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline

@@ -15,7 +15,7 @@ searchScope:
 description: Learn how to manage shift owners for schedule management. You can set a policy to elevate the permission of a team member to a schedule owner. 
 f1.keywords:
 - NOCSH
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
@@ -82,5 +82,5 @@ Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ScheduleOwnerPo
 
 ## Related articles
 
-- [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)
-- [Manage shift-based access for frontline workers in Teams](manage-shift-based-access-flw.md) 
+- [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [Manage shift-based access for frontline workers in Teams](manage-shift-based-access-flw.md)

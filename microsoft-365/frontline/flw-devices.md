@@ -7,6 +7,7 @@ manager: samanro
 ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
+ms.localizationpriority: high
 search.appverid: MET150
 description: Get an overview of managing mobile devices for frontline workers in your organization. 
 ms.collection: m365-frontline

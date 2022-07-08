@@ -9,7 +9,7 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to deploy teams at scale for the frontline workers in your organization. 
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline

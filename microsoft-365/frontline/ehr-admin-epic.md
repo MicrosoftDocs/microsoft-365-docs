@@ -12,7 +12,7 @@ searchScope:
   - Microsoft Cloud for Healthcare
 f1.keywords:
 - NOCSH
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - Teams_ITAdmin_Healthcare

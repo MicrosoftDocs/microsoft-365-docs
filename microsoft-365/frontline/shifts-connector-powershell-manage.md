@@ -9,7 +9,7 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
@@ -391,5 +391,5 @@ For help with Shifts connector cmdlets, search for **CsTeamsShiftsConnection** i
 - [Shifts connectors](shifts-connectors.md)
 - [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)
 - [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
-- [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)
+- [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)

@@ -9,7 +9,7 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn about the tailored app experience for frontline workers in Teams.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
@@ -99,9 +99,9 @@ The feature is off.   | The frontline worker gets the apps defined in the global
 
 ## Related articles
 
-- [Manage the Walkie Talkie app in Teams](/microsoftteams/walkie-talkie)
-- [Manage the Tasks app in Teams](/microsoftteams/manage-tasks-app)
-- [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)
-- [Manage the Approvals app in Teams](/microsoftteams/approval-admin)
+- [Manage the Walkie Talkie app in Teams](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [Manage the Tasks app in Teams](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [Manage the Approvals app in Teams](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Manage app setup policies in Teams](/microsoftteams/teams-app-setup-policies)
 - [Manage app permission policies in Teams](/microsoftteams/teams-app-permission-policies)

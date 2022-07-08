@@ -9,10 +9,11 @@ audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to start with a deployment of Microsoft 365 for frontline workers for your organization.
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
 appliesto: 
+  - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 

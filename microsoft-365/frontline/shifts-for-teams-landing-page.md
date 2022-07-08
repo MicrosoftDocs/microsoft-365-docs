@@ -15,6 +15,7 @@ ms.collection:
   - microsoftcloud-healthcare
   - microsoftcloud-retail
 search.appverid: MET150
+ms.localizationpriority: high
 searchScope:
   - Microsoft Teams
   - Microsoft Cloud for Healthcare
