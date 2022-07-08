@@ -34,10 +34,6 @@ A smooth onboarding and initial training process is essential for new members of
 > [!TIP]
 > If your frontline team will primarily be using Teams on mobile devices to communicate and collaborate, you can use [Viva Connections](/viva/connections/viva-connections-overview) and [Viva Learning](/viva/learning/overview-viva-learning) to make SharePoint content easily visible in Teams.
 
-### Next steps
-
-[Learn how to manage ongoing training](ongoing-training.md) to keep your workforce up to date with their skills after onboarding.
-
 ## Ongoing training
 
 This article will show you how Viva Learning can help you streamline ongoing training for your frontline team. Viva Learning pulls content from your chosen sources into Teams, making it easy for your frontline team to access. You can use Viva Learning to manage types of ongoing training including:
