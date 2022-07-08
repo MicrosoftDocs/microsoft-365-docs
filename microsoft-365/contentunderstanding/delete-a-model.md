@@ -17,7 +17,7 @@ description: Learn how to delete a document understanding model in Microsoft Sha
 
 # Delete a model in Microsoft SharePoint Syntex
 
-At some point, you might want to delete a document understanding model. Before you delete a model, you must first remove the model from all of the SharePoint document libraries where it has been applied.
+At some point, you might want to delete a document understanding model or a prebuilt model. Before you delete the model, you must first remove the model from all of the SharePoint document libraries where it has been applied.
 
 ## Remove a model from a library
 
@@ -28,7 +28,7 @@ You can remove a model from a document library either from the model home page, 
 
 ## Delete a model
 
-Follow these steps to delete a document understanding model.
+Follow these steps to delete a document understanding model or a prebuilt model.
 
 1. Make sure the model has been [removed](#remove-a-model-from-a-library) from its document library.
  
