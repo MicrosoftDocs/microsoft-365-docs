@@ -120,6 +120,4 @@ Scenarios and apps
 
 ## Step 6: Set up devices
 
-To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see:
-
-Link TBD
+To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage shared and personal devices](flw-devices.md).
