@@ -40,7 +40,8 @@ Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful
 - Teams templates
 - Care coordination and collaboration
 
-This functionality is part of Microsoft Cloud for Healthcare. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Healthcare](/industry/healthcare).
+> [!NOTE]
+> This functionality is also part of Microsoft Cloud for Healthcare. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Healthcare](/industry/healthcare).
 
 Watch the following video to learn more about using the healthcare collection to enhance health team collaboration in Teams.
 
