@@ -53,7 +53,6 @@ In addition, patterns that a human would see as indicative of names are also mat
 
 - English
 - Bulgarian
-- Chinese
 - Croatian
 - Czech
 - Danish
