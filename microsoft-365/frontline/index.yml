@@ -24,15 +24,15 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Get started with Microsoft 365 for frontline workers
+    - title: What is Microsoft 365 for frontline workers?
       itemType: overview
       url: flw-overview.md
     # Card
-    - title: Choose your scenarios for Microsoft 365 for frontline workers
+    - title: Choose your scenarios for Microsoft 365
       itemType: get-started
       url: flw-choose-scenarios.md
     # Card
-    - title: Start with a free trial
+    - title: Try Microsoft 365 for frontline workers (start a free trial)
       itemType: whats-new
       url: flw-trial.md
 
