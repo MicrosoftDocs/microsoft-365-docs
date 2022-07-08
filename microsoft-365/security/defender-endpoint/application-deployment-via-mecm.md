@@ -41,7 +41,7 @@ For more information on installing the listed prerequisites, see [related topics
 Copy the unified solution package, onboarding script and migration script to the same content source you deploy other apps with MECM.
 
 1. Download Onboarding Script and the unified solution from [Microsoft 365 Defender settings page](https://sip.security.microsoft.com/preferences2/onboarding).
-     :::image type="content" source="images/onboarding-script.png" alt-text="Onboarding script and unified solution download":::
+      :::image type="content" source="images/onboarding-script.png" alt-text="Onboarding script and unified solution download" lightbox="images/onboarding-script.png":::
 2. Download the migration script from the document: [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Save all three files in a shared folder used by MECM as a Software Source.
      :::image type="content" source="images/ua-migration.png" alt-text="Saving the shared folder by MECM":::
@@ -96,7 +96,7 @@ Copy the unified solution package, onboarding script and migration script to the
      :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created":::
 17. Verify in MECM>Monitoring>Deployments the status of this migration.
 
-      :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check":::
+      :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check" lightbox="images/deployment-status.png":::
 
 ## Related topics
 
