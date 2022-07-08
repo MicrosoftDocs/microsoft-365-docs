@@ -14,9 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
-  - m365solution-scenario
 ms.topic: article
-ms.date: 11/29/2021
 ms.reviewer: chventou
 ---
 
@@ -41,13 +39,11 @@ You can use Group Policy Objects in Azure Active Directory Domain Services to ma
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Group Policy Objects.
 
-<br/><br/>
-
 |Task|Resources to learn more|
 |---|---|
 |**Manage settings for user and computer objects** <br/><br/> *Customize built-in Group Policy Objects, or create custom Group Policy Objects and organizational units to suit your organizational needs.*|[Administer Group Policy in an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/manage-group-policy)|
 |**Configure Microsoft Defender Antivirus** <br/><br/> *Configure antivirus features & capabilities, including policy settings, exclusions, remediation, and scheduled scans on your organization's devices (also referred to as endpoints).*|[Use Group Policy settings to configure and manage Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/> [Use Group Policy to enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)|
-|**Manage your organization's attack surface reduction rules** <br/><br/> *Customize your attack surface reduction rules by excluding files & folders, or by adding custom text to notification alerts that appear on users' devices.*|[Customize attack surface reduction rules with Group Policy Objects](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders)|
+|**Manage your organization's attack surface reduction rules** <br/><br/> *Customize your attack surface reduction rules by excluding files & folders, or by adding custom text to notification alerts that appear on users' devices.*|[Customize attack surface reduction rules with Group Policy Objects](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement)|
 |**Manage exploit protection settings** <br/><br/> *You can customize your exploit protection settings, import a configuration file, and then use Group Policy to deploy that configuration file.*|[Customize exploit protection settings](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [Import, export, and deploy exploit protection configurations](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml) <br/><br/> [Use Group Policy to distribute the configuration](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)|
 |**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/> *We recommend using [audit mode](/microsoft-365/security/defender-endpoint/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.*|[Turn on network protection using Group Policy](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |**Configure controlled folder access** to protect against ransomware <br/><br/> *[Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders) is also referred to as antiransomware protection.*|[Enable controlled folder access using Group Policy](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|

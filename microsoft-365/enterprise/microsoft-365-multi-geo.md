@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Multi-Geo"
-ms.reviewer: adwood
+ms.reviewer: anfra
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars

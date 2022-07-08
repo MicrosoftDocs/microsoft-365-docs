@@ -16,6 +16,8 @@ ms.technology: mdo
 
 # Simulation automations for Attack simulation training
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
@@ -23,11 +25,11 @@ For getting started information about Attack simulation training, see [Get start
 
 To create a simulation automation, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation automations** tab.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Simulation automations**.
 
-   To go directly to the **Simulation automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
+   To go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. On the **Simulation automations** tab, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
+2. On **Simulation automations**, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
@@ -61,7 +63,13 @@ If you click the **View details** link in the description, a details flyout open
 
 When you're finished, click **Next**.
 
-## Select payloads
+## Select a payload and login page
+
+On the **Select payload and login** page, you need to select an existing payload from the list, or create a new payload.
+
+You can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
+
+### Payload
 
 On the **Select payloads** page, select one of the following options:
 
@@ -70,11 +78,11 @@ On the **Select payloads** page, select one of the following options:
 
 If you select **Randomize**, there's nothing to configure on this page, so click **Next** to continue.
 
-If you select **Manually select**, you need to select one or more payloads from the list. The following details are displayed to help you choose:
+If you select **Manually select**, you need to select one or more payloads from the list. The following details are shown for each payload:
 
 - **Payload name**
 - **Technique**: You need to select at least one payload per technique that you selected on the previous page.
-- **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
+- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 - **Click rate**: How many people have clicked on this payload.
 - **Predicted compromise rate**: Historical data for the payload across Microsoft 365 that predicts the percentage of people who will get compromised by this payload.
 - **Simulations launched** counts the number of times this payload was used in other simulations.
@@ -83,17 +91,13 @@ In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, y
 
 If you click **Filter**, the following filters are available:
 
-- **Source**: Indicates whether the payload was created in your organization or is a part of Microsoft's pre-existing payload catalog. Valid values are:
-  - **Global** (built-in)
-  - **Tenant** (custom)
-  - **All**
-
 - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are:
-  - **Low**
-  - **Medium**
-  - **High**
 
-- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
+  - **High**
+  - **Medium**
+  - **Low**
+
+- **Language**
 
 - **Add tag(s)**
 
@@ -109,14 +113,49 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-If you select a payload from the list by clicking on the name, details about the payload are shown in a flyout:
+If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
 
-- The **Overview** tab contains an example and other details about the payload.
+- The **Payload** tab contains an example and other details about the payload.
+- The **Login page** tab is described in the next section.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="The Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-When you're finished, click **Next**.
+### Login page
+
+Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
+
+The **Login page** tab in the payload details flyout shows the login page that's currently selected for the payload.
+
+To view the complete login page, use the **Page 1** and **Page 2** links at the bottom of the page for two-page login pages.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="The login page tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+To change the login page that's used in the payload, click ![Change login page icon.](../../media/m365-cc-sc-edit-icon.png) **Change login page**.
+
+On the **Select login page** flyout that appears, The following information is shown for each login page:
+
+- **Name**
+- **Language**
+- **Source**: For built-in login pages, the value is **Global**. For custom login pages, the value is **Tenant**.
+- **Status**: **Ready** or **Draft**.
+- **Created by**: For built-in login pages, the value is **Microsoft**. For custom login pages, the value is the UPN of the user who created the login page.
+- **Last modified**
+- **Actions**: Click ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to preview the login page.
+
+To find a login page in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the login page.
+
+Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the login pages by **Source** or **Language**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Login pages** at **Attack simulation training** \> **Simulated content library** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
+
+Back on the **Select login page**, verify the new login page you created is selected, and then click **Save**.
+
+Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
+
+When you're finished on the **Select a payload and login page**, click **Next**.
 
 ## Target users
 
@@ -229,11 +268,11 @@ When you're finished, click **Next**.
 
 On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
 
-- **Select landing page preference**: The available values depend on your previous selections on the [Select payloads](#select-payloads) page as described in the following table:
+- **Select landing page preference**: The available values depend on your previous payload selections on the [Select a payload and login page](#select-a-payload-and-login-page) page as described in the following table:
 
-  |Selection on Select payloads page|Available values for Select landing page preference|
+  |Payload selection|Available values for Select landing page preference|
   |---|---|
-  |Manually select|Use Microsoft default landing page <p> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
+  |Manually select|Use Microsoft default landing page <br><br> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
   |Randomize|Use Microsoft default landing page|
 
   The available **Select landing page preference** values and their associated settings are described in the following list:
@@ -305,7 +344,7 @@ On the **Select end user notification** page, select from the following notifica
       - **Deliver after campaign ends**
       - **Deliver during campaign**
     - **Actions**: If you click on the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
-      - **Preview** tab: View the notification message.
+      - **Preview** tab: View the notification message as users will see it.
         - To view the message in different languages, use the **Select language** box.
         - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
       - **Details** tab: View details about the notification:
@@ -333,7 +372,7 @@ This page shows the following notifications and their configured languages:
 - **Microsoft default training assignment notification**
 - Any custom training assignment notifications that you previously created.
 
-  These notifications are also available on the **End-user notifications** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Microsoft default training assignment notification** is available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+  These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default training assignment notification** is available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
 You can select an existing training assignment notification or create a new notification to use:
 
@@ -368,7 +407,7 @@ The **Training reminder notification** page is available only if you selected **
   - **Microsoft default training reminder notification**
   - Any custom training reminder notifications that you previously created.
 
-    These notifications are also available on the **End-user notifications** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Microsoft default training reminder notification** is available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default training reminder notification** is available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
   You can select an existing training reminder notification or create a new notification to use:
 
@@ -405,7 +444,7 @@ The **Positive reinforcement notification** page is available only if you select
   - **Microsoft default positive reinforcement notification**
   - Any custom positive reinforcement notifications that you previously created.
 
-    These notifications are also available on the **End-user notifications** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Microsoft default positive reinforcement notification** is available on the **Global notifications** tab. Custom positive reinforcement notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default positive reinforcement notification** is available on the **Global notifications** tab. Custom positive reinforcement notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
   You can select an existing positive reinforcement notification or create a new notification to use:
 

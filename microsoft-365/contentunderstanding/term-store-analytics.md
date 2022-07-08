@@ -38,7 +38,7 @@ View the distribution of open and closed term sets. This is useful if you want t
 
 ### Terms without synonyms
 
-View the number of terms in each of the added working languages that do not have synonyms defined. This is useful to help identify languages where you want to define synonyms. Synonyms help end users disambiguate and find the correct terms to tag their content.
+View the number of terms in each of the added working languages that don't have synonyms defined. This is useful to help identify languages where you want to define synonyms. Synonyms help end users disambiguate and find the correct terms to tag their content.
 
 ## See also
 

@@ -27,6 +27,25 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## 101.71.18 (20.122052.17118.0)
+
+- `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
+- Fixed a bug in the product installation package that in rare cases could lead a loss of product state during updates
+- Performance improvements for file copy operations and built-in macOS applications
+- Bug fixes
+
+## 101.70.19 (20.122051.17019.0)
+
+- Fixed a bug where threat-related notifications were not always presented to the end user.
+- Performance improvements & other bug fixes
+
+## 101.70.18 (20.122042.17018.0)
+
+- Fixed a bug where the installation package was sometimes hanging indefinitely during product updates
+- Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
+- Performance improvements & other bug fixes
+
 ## 101.66.54 (20.122041.16654.0)
 
 - Addressed an issue where `mdatp diagnostic real-time-protection-statistics` was not printing the correct process path in some cases.

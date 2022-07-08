@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
