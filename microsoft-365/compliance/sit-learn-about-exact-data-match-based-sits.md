@@ -21,9 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-[Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
+[Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
 
 - patterns
 - keyword evidence such as *employee*, *social security number*, or *ID*
@@ -41,7 +39,7 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 
 ![EDM-based classification.](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [Microsoft Purview data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [Microsoft Purview data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft Purview Information Protection supports double byte character set languages for:
@@ -96,7 +94,6 @@ Proximity - Number of characters between primary and supporting element
 
 When you create an EDM SIT, you define a *primary element* field in the rule package. Primary fields are the elements for which all your content will be searched, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the *secondary* or supporting elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT.
 
-
 ## How matching works
 
 EDM finds matches by comparing content it finds against a table of sensitive data that you define. The match testing is done using a combination of traditional rules and patterns to ensure that the matched data is an actual instance of data you want to find and protect. At its core, EDM works by comparing strings in your documents and emails against values in a table of sensitive data you provide to find out if the values in your content are present in the table by comparing one-way cryptographic hashes.
@@ -104,7 +101,19 @@ EDM finds matches by comparing content it finds against a table of sensitive dat
 > [!TIP]
 > A common practice is to combine the use of EDM Sensitive information types and the regular sensitive information types on which they are based in DLP rules, with different thresholds. For example, you could use an EDM sensitive information type that looks for social security numbers and other data, with strict requirements and low tolerance where one or more matches will cause a DLP alert, and use the regular sensitive information type, like the U.S. Social Security Number built-in sit for higher counts.  
 
+## Services that EDM supports
+
+
+|Service  |Locations  |
+|---------|---------|
+| Microsoft Purview Data Loss Prevention    | - SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Devices       |
+|Microsoft Defender for Cloud Apps     | - SharePoint Online </br>- OneDrive for Business        |
+|Auto-labeling (service side)     |- SharePoint online </br>- OneDrive for Business </br>- Exchange Online         |
+|Auto-labeling (client side)     |- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients         |
+|Customer Managed Key     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients </br>- Devices         |
+|eDiscovery     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients  |
+|Insider Risk Management     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients      |
+
 ## See also
 
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-   

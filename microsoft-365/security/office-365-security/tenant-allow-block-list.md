@@ -21,7 +21,7 @@ ms.prod: m365-security
 
 # Manage the Tenant Allow/Block List
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -68,17 +68,16 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - **Senders, URLs and files**:
-    - To add and remove values from the Tenant Allow/Block List, you need to be a member of
-      - **Organization Management** or **Security Administrator** role group (**Security admin role**)
-      - **Security Operator** role group (**Tenant AllowBlockList Manager**).
-    - For read-only access to the Tenant Allow/Block List, you need to be a member of
-      - **Global Reader**  role group
-      - **Security Reader** role group
-  - **Spoofing**: One of the following combinations:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
+  - To add and remove entries from the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Organization Management** (the **Security admin** role).
+    - **Security Administrator** (the **Security admin** role).
+    - **Security Operator** (the **Tenant AllowBlockList Manager** role).
+
+  - For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Global Reader** role group.
+    - **Security Reader** role group.
+    - **View-Only Configuration** role group.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -243,7 +242,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - Wildcards (*) are allowed in the following scenarios:
 
-  - A left wildcard must be followed by a period to specify a subdomain.
+  - A left wildcard must be followed by a period to specify a subdomain. (only applicable for blocks)
 
     For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.
 
@@ -260,8 +259,6 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
   - A left tilde implies a domain and all subdomains.
 
     For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.
-
-- URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
 - A username or password isn't supported or required.
 
@@ -280,7 +277,6 @@ Valid URL entries and their results are described in the following sections.
 - **Allow match**: contoso.com
 
 - **Allow not matched**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -290,7 +286,6 @@ Valid URL entries and their results are described in the following sections.
   - www.contoso.com/q=a@contoso.com
 
 - **Block match**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -303,15 +298,16 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard (subdomain)
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `*.contoso.com`
 
-- **Allow match** and **Block match**:
-
+- **Block match**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
-
+- **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -322,13 +318,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/a/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **Allow not matched** and **Block not matched**:
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -339,13 +333,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `~contoso.com`
 
 - **Allow match** and **Block match**:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -355,7 +347,6 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -368,17 +359,19 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `*.contoso.com/*`
 
-- **Allow match** and **Block match**:
-
+- **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Allow not matched** and **Block not matched**: contoso.com/b
+- **Block not matched**: contoso.com/b
 
 #### Scenario: Left and right tilde
 
@@ -486,3 +479,9 @@ For example, you add an allow entry for the following domain pair:
 - **Infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
+
+## What to expect after you add an allow or block entry
+
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
+
+We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.

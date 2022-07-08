@@ -1,5 +1,5 @@
 ---
-title: "Configure a team with security isolation"
+title: "Configure a team with security isolation by using a unique sensitivity label"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -20,7 +20,7 @@ recommendations: false
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
 
-# Configure a team with security isolation
+# Configure a team with security isolation by using a unique sensitivity label
 
 This article provides you with recommendations and steps to configure a private team in Microsoft Teams and use a unique sensitivity label to encrypt files so that only team members can decrypt them.
 
@@ -257,7 +257,7 @@ This training should include hands-on exercises so that your team members can ex
 
 In the weeks after training:
 
-- Quickly address team member feedback and fine tune polices and configurations.
+- Quickly address team member feedback and fine tune policies and configurations.
 - Analyze usage for the team and compare it with usage expectations.
 - Verify that highly regulated files have been properly labeled with the sensitivity label. (You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
 

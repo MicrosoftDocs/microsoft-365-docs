@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "Make the most of your Defender for Business trial with this playbook. Get set up quickly and get started using your new security capabilities."
+ms.custom: trial-playbook
 ---
 
 # Trial playbook: Microsoft Defender for Business
@@ -29,7 +30,7 @@ Defender for Business is a new endpoint security solution that was designed espe
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
 
-**Let’s get started!**
+**Let's get started!**
 
 ## Set up your trial
 
@@ -77,7 +78,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
    
    To onboard other devices, see [step 4](#step-4-set-up-and-configure-defender-for-business).
 
-4.  **[View and if necessary, edit your security policies](mdb-configure-security-settings.md)**. Defender for Business includes default security policies for next generation protection and firewall protection that can be applied to your company’s devices. These preconfigured security policies use recommended settings so you're protected as soon as your devices are onboarded to Defender for Business. And you still have the ability to edit policies or create new ones. 
+4.  **[View and if necessary, edit your security policies](mdb-configure-security-settings.md)**. Defender for Business includes default security policies for next generation protection and firewall protection that can be applied to your company's devices. These preconfigured security policies use recommended settings so you're protected as soon as your devices are onboarded to Defender for Business. And you still have the ability to edit policies or create new ones. 
 
 ### Step 4: Set up and configure Defender for Business
 

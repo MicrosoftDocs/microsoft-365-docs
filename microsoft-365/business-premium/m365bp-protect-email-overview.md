@@ -2,10 +2,9 @@
 title: "Protect email Overview"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -29,14 +28,13 @@ description: "An overview on how to train your team to protect your email from m
 
 # Protect all email
 
-As you know, emails are full of malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable because email is handled by everyone in the organization, and it relies upon humans making consistently safe decisions with those communications. In this mission you are ensuring email systems are safe from attackers. 
+As you probably already know, email can contain malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. In this mission, learn how members of the organizations can all help to keep the system safe from attackers.
 
 The mission objectives are to:
 
-- [Protect against phishing and other attacks](avoid-phishing-and-attacks.md)
-- [Set up encrypted email](send-encrypted-email.md)
+- [Protect against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md).
+- [Set up encrypted email](send-encrypted-email.md).
 
 Accomplish these objectives before you move on to the [next mission](m365bp-collaborate-share-securely.md).
 
 :::image type="content" source="media/m365bp-use-email-securely.jpg" alt-text="Protect your email.":::
-   

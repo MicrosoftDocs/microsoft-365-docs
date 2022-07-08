@@ -25,7 +25,7 @@ ROBOTS: NOINDEX
 description: "Learn how to make a CSV file for AutoPilot in Microsoft 365 for business."
 ---
 
-# Device list CSV-file
+# Windows Autopilot device list CSV-file
 
 ## Device list .csv file format
 

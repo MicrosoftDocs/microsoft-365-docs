@@ -16,8 +16,6 @@ description: "Admins can set up a connector to import and archive data from MS S
 
 # Set up a connector to archive data from MS SQL Database
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from MS SQL Database to user mailboxes in your Microsoft 365 organization. Veritas provides you with an MS SQL Database Importer connector that's configured to capture items from a database using an XML configuration file and import those items to Microsoft 365. The connector converts content from MS SQL Database to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After content from MS SQL Database stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using an MS SQL Database connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
@@ -80,7 +78,7 @@ After you create the MS SQL Database Importer connector, you can view the connec
 
 2. Click the **Connectors** tab and then select the **MS SQL Database** **Importer** connector to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 

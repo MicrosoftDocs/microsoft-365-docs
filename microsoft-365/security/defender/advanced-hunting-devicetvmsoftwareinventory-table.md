@@ -53,7 +53,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `EndOfSupportStatus` | `string` | Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date |
 | `EndOfSupportDate` | `string` | End-of-support (EOS) or end-of-life (EOL) date of the software product |
 | `ProductCodeCpe` | `string` | CPE of the software product or 'not available' where there is no CPE |
-
+| `CveTags` | `string` | An array of the tags relevant to the CVE. Tags that are currently supported are “ZeroDay” and “NoSecurityUpdate”.
 
 ## Related topics
 

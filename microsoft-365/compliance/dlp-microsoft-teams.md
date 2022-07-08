@@ -19,8 +19,6 @@ description: "Microsoft Teams chats and channels support Data Loss Prevention (D
 
 # Data loss prevention and Microsoft Teams
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 If your organization has Microsoft Purview Data Loss Prevention (DLP), you can define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session. Here are some examples of how this protection works:
 
 - **Example 1: Protecting sensitive information in messages**. Suppose that someone attempts to share sensitive information in a Teams chat or channel with guests (external users). If you have a DLP policy defined to prevent this, messages with sensitive information that are sent to external users are deleted. This happens automatically, and within seconds, according to how your DLP policy is configured.
@@ -37,7 +35,7 @@ If your organization has Microsoft Purview Data Loss Prevention (DLP), you can d
  
 ## DLP Licensing for Microsoft Teams
 
-[Data loss prevention](dlp-learn-about-dlp.md) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages** for:
+[Data loss prevention](dlp-learn-about-dlp.md) capabilities include Microsoft Teams chat and channel messages, **including private channel messages** for:
 
 - Office 365 E5/A5/G5
 - Microsoft 365 E5/A5/G5
@@ -91,7 +89,7 @@ Returning to our example, where a sender shared a social security number in a Te
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Compliance Center ([https://compliance.microsoft.com](https://compliance.microsoft.com)) and sign in.
+1. Go to the Purview Compliance Center ([https://compliance.microsoft.com](https://compliance.microsoft.com)) and sign in.
 
 2. Choose **Data loss prevention** > **Policy**.
 
@@ -99,13 +97,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. Either create a new rule, or edit an existing rule for the policy.
 
-    > [!div class="mx-imgBorder"]
-    > ![Editing a rule for a policy.](../media/dlp-teams-editrule.png)
-
 5. On the **User notifications** tab, select **Customize the email text** and/or **Customize the policy tip text** options.
-
-    > [!div class="mx-imgBorder"]
-    > ![Customize user notifications and policy tips.](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. Specify the text you want to use for email notifications and/or policy tips, and then choose **Save**.
 
@@ -124,13 +116,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 3. Select a policy, and look at the values under **Locations**. If you see **Teams chat and channel messages**, you're all set. If you don't, click **Edit**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Locations for existing policy.](../media/dlp-teams-editexistingpolicy.png)
-
 4. In the **Status** column, turn on the policy for **Teams chat and channel messages**.
-
-    > [!div class="mx-imgBorder"]
-    > ![DLP for Teams chats and channels.](../media/dlp-teams-addteamschatschannels.png)
 
 5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
 
@@ -157,9 +143,6 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
     In our example, we chose the U.S. Personally Identifiable Information Data template.
 
-    > [!div class="mx-imgBorder"]
-    > ![Privacy template for DLP policy.](../media/dlp-teams-createnewpolicy-template.png)<br/>
-
 4. On the **Name your policy** tab, specify a name and description for the policy, and then choose **Next**.
 
 5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
@@ -168,8 +151,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
     1. Distribution lists and security groups to include or exclude. **This is a public preview feature.**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
-    ![DLP policy locations.](../media/dlp-teams-selectlocationsnewpolicy.png)
-
+ 
     > [!NOTE]
     > If you want to make sure documents that contain sensitive information are not shared inappropriately in Teams, make sure **SharePoint sites** and **OneDrive accounts** are turned on, along with **Teams chat and channel messages**.
 
@@ -177,15 +159,11 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 7.  On the **Policy settings** tab, under **What do you want to do if we detect sensitive info?**, review the settings. Here's where you can choose to keep default [policy tips and email notifications](use-notifications-and-policy-tips.md), or customize them.
 
-    > [!div class="mx-imgBorder"]
-    > ![DLP policy settings with tips and notifications.](../media/dlp-teams-policysettings-tipsemails.png)
+
 
     When you're finished reviewing or editing settings, choose **Next**.
 
 8. On the **Policy settings** tab, under **Do you want to turn on the policy or test things out first?**, choose whether to turn on the policy, [test it first](dlp-overview-plan-for-dlp.md#policy-deployment), or keep it turned off for now, and then choose **Next**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Specify whether to turn the policy on.](../media/dlp-teams-policysettings-turnonnow.png)
 
 9. On the **Review your settings** tab, review the settings for your new policy. Choose **Edit** to make changes. When you're finished, choose **Create**.
 
@@ -222,11 +200,10 @@ DLP policy in action when attempting to share a document in SharePoint that cont
 > [!div class="mx-imgBorder"]
 > ![External sharing blocked.](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
 
-
-DLP policy in action when guest attempts to open a document in Teams with block external:
-
+<!--DLP policy in action when guest attempts to open a document in Teams with block external:
+can't use the below image it contains a non-approved name.
 > [!div class="mx-imgBorder"]
-> ![External access blocked.](../media/dlp-teams-external-sharing/external-access-blocked.png)
+> ![External access blocked.](../media/dlp-teams-external-sharing/external-access-blocked.png)-->
 
 ## Related articles
 

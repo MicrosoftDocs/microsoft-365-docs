@@ -19,8 +19,6 @@ description: "Learn how to protect your sensitive information using Microsoft Pu
 
 # Learn about data loss prevention
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).
 
 In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
@@ -86,7 +84,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - SharePoint Online sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
 - On-premises repositories
 - PowerBI sites
@@ -116,6 +114,9 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 - add new people
 - add new restricted apps
 - add new restricted sites
+
+> [!NOTE]
+> _Stop processing more rules_ doesn't work in test mode, even when it's turned on.
 
 #### Enable the control and tune your policies
 
@@ -178,7 +179,7 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### DLP Alerts Dashboard
 

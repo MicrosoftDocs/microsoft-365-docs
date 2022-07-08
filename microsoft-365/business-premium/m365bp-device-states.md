@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -29,7 +29,7 @@ ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: "Learn about the various device states in the Device actions list in Admin home in Microsoft 365 for business."
 ---
 
-# Device states
+# Device states in Microsoft 365 for business
 
 This article applies to Microsoft 365 Business Premium.
 
@@ -58,4 +58,4 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
