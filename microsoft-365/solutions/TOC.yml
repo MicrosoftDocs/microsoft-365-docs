@@ -230,7 +230,30 @@
           href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Build learning and training experiences
           href: /sharepoint/build-learning-and-training-experiences-for-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-
+      - name: Create a Teams hybrid meeting experience
+        items:
+          - name: "Overview"
+            href: /microsoftteams/hybrid-meetings-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 1 - Get familiar with Teams meeting features"
+            href: /microsoftteams/hybrid-meetings-features?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 2 - Attendee best practices"
+            items:
+            - name: "Meeting organizers"
+              href: /microsoftteams/hybrid-meetings-educate-organizer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: "Remote participants"
+              href: /microsoftteams/hybrid-meetings-educate-remote?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: "In-room participants"
+              href: /microsoftteams/hybrid-meetings-educate-inroom?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 3 - Design a meeting space"
+            href: /microsoftteams/hybrid-meetings-room-design?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 4 - Select room devices"
+            href: /microsoftteams/hybrid-meetings-device-select?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 5 - Build out your room"
+            href: /microsoftteams/hybrid-meetings-room-build?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 6 - Set up your devices"
+            href: /microsoftteams/hybrid-meetings-device-config?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 7 - Manage and monitor rooms and meetings"
+            href: /microsoftteams/hybrid-meetings-manage?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Teamwork and collaboration
       items:
       - name: Manage contracts for your business
