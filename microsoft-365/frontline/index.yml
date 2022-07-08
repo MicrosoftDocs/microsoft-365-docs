@@ -28,7 +28,7 @@ highlightedContent:
       itemType: overview
       url: flw-overview.md
     # Card
-    - title: Choose your scenarios for Microsoft 365
+    - title: Choose your scenarios for Microsoft 365 for frontline workers
       itemType: get-started
       url: flw-choose-scenarios.md
     # Card
@@ -89,7 +89,7 @@ additionalContent:
     - items:
         # Card
         - title: Set up and configure Microsoft 365 for frontline workers
-          summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance.
+          summary: Set up a trial, start with a pilot deployment, or deploy at scale with this guidance.
           url: flw-deploy-overview.md
         # Card
         - title: Adoption resources
