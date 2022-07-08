@@ -30,7 +30,7 @@ You can remove a model from a document library either from the model home page, 
 
 Follow these steps to delete a document understanding model.
 
-1. Make sure the model has been [removed](#remove-a-model-from-a-library) from the library.
+1. Make sure the model has been [removed](#remove-a-model-from-a-library) from its document library.
  
 2. From the content center, select **Models** to see your models list.
 
