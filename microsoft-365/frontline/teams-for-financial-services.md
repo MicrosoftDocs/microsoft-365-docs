@@ -92,10 +92,10 @@ More information: [Corporate communications with frontline workers](flw-corp-com
 
 ### Collaborate on loan applications
 
-Use the [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) app in Teams to accelerate the lending process with automation and collaboration tools, to quickly go from application to signing. The Collaboration Manager for Loans includes tools for keeping track of loan records, taking notes, and managing customer communications and bookings.
+Use [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) to accelerate the lending process with automation and collaboration tools, to quickly go from application to signing. Collaboration Manager for Loans includes tools for keeping track of loan records, taking notes, and managing customer communications and bookings.
 
 > [!NOTE]
-> The Collaboration Manager for Loans is also part of the Microsoft Cloud for Financial Services, which includes additional capabilities from Microsoft 365 and Dynamics 365. [Learn more about the Microsoft Cloud for Financial Services](/industry/financial-services).
+> Collaboration Manager for Loans is available as part of the Microsoft Cloud for Financial Services, which includes additional capabilities from Microsoft 365 and Dynamics 365. [Learn more about the Microsoft Cloud for Financial Services](/industry/financial-services).
 
 More information: [Admin documentation for Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) and [Collaboration Manager for Loans user guide](/industry/financial-services/collaboration-manager/use)
 
