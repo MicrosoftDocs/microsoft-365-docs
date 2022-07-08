@@ -112,7 +112,7 @@ Configure Phase 1 of the frontline Teams experience to mimic the consumer tools 
 
 ### Set up Microsoft 365 and Teams
 
-??? Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [devices TBD] and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients).
+Determine what devices you'll support. For example, you can use the Teams mobile clients on Android and iOS to provide secure access to Teams and frontline worker apps. See [Manage shared and personal devices](flw-devices.md) and [Get the Teams desktop, web, and mobile clients](/microsoftteams/get-clients).
 
 See [Set up Microsoft 365 for frontline workers](flw-setup-microsoft-365.md) for guidance on how to set up Microsoft 365, Microsoft Teams, and the other services you'll need for your pilot.
 
