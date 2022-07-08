@@ -21,31 +21,27 @@ recommendations: false
 description: "General password sensitive information type entity definition."
 ---
 
-# General password
+# General Password
 
 ## Format
 
-A combination of up to 20,000 characters consisting of letters, digits, and special characters.
+Up to 20,000-character combination of letters, digits, and special characters.
 
 or
 
-A paired username and password used in URL.
+Login credentials used in command lines
 
 or
 
-Login credentials used in command lines.
+Plain-text password used in code snippets
 
 or
 
-Plain text password used in code snippets.
+Plain-text password used in script
 
 or
 
-Plain text password used in script.
-
-or
-
-Plain text password used in XML configuration.
+Plain-text password used in XML configuration
 
 or
 
@@ -65,17 +61,16 @@ A combination of 44 characters consisting of letters, digits, and special charac
 
 or
 
-A combination of 88 characters consisting of letters, digits, and special characters.
-
+An 88-character combination of letters, digits, and special characters.
 
 ## Pattern
 
-A combination of up to 20,000 characters:
+Any combination of up to 20,000 characters consisting of:
 
-- a-z (not case-sensitive)
+- a-z (case insensitive)
 - 0-9
 - forward slashes (/) or plus signs (+)
-- Up to 2 equals signs (==)
+- Up to 2 equal signs (=)
 
 for example:
 
@@ -83,65 +78,67 @@ MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF
 
 or
 
-Various URL username and password formats, for example:
- 
-https://username:********@contoso.com/... <br>
-ftp://username:********@contoso.com:20/... <br>
+Various command line login credentials formats, for example: 
+
+... -u username:******** ...
+... -u username -p ******** ...
+... /f ... /p ********...
+... -Password ********...
+... -U username%******** ...
+... -secrets:******** ...
 ...
+
+for example:
+
+zDbg.DataPuller.exe -secrets:eyJ
 
 or
 
-Various command line login credentials formats, for example:
+Various password formats in code snippets, for example: 
 
-... -u username:******** ... <br>
-... -u username -p ******** ... <br>
-... /f ... /p ********... <br>
-... -Password ********... <br>
-... -U username%******** ... <br>
-... -secrets:******** ... <br>
+... new X509Certificates2( ...
+... ConvertTo-SecureString -String ********...
+... password = "********"...
+... "password" : "********"...
+... UserPasswordCredential( ...
 ...
+
+for example:
+
+password = "ZYXWVU_1";
 
 or
 
-Various password formats in code snippets for example:
- 
-... new X509Certificates2( ... <br>
-... ConvertTo-SecureString -String ********... <br>
-... password = "********"... <br>
-... "password" : "********"... <br>
-... UserPasswordCredential( ... <br>
+Various password formats in script, for example: 
+
+... password = ********...
 ...
+
+for example:
+ password=ZYXWVU_1 
 
 or
 
-Various password formats in script for example:
+Various password formats in XML, for example: 
 
-... -password "********" ... <br>
-... -UserPassword "********" ... <br>
-... password = ********... <br>
-... password: ********... <br>
-...
-
-or
-
-Various password formats in XML for example:
-
-```xml
 ... <secret>********</secret> ...
 ... <password>********</password> ...
 ... <setting name="password" value="********" > ...
 ... <setting name="password">********</setting> ...
 ... <setting name="password"><value>********</value></setting> ...
 ...
-```
+
+for example:
+
+<secret>ZYXWVU_1</secret>
 
 or
 
-A combination of 22 characters:
+Any combination of 22 characters consisting of: 
 
-- a-z (not case-sensitive)
+- a-z (case insensitive)
 - digits, forward slashes, or plus signs
-- ends with two equal signs (==)
+- ends with two equal signs (=)
 
 for example:
 
@@ -149,13 +146,9 @@ abcdefgh0123456789/+AB==
 
 or
 
-A combination of 32 characters:
+Any combination of 32 characters consisting of: 
 
-- a-f or A-F (case-sensitive)
-
-or
-
-- 0-9
+- a-f or A-F (case-sensitive) or 0-9
 
 for example:
 
@@ -163,12 +156,11 @@ abcdef0123456789abcdef0123456789
 
 or
 
-A combination of 32 characters:
- 
-- a-z (not case-sensitive)
+Any combination of 32 characters consisting of: 
+
+- a-z (case insensitive)
 - 0-9
 - forward slashes (/) or plus signs (+)
-
 
 for example:
 
@@ -176,12 +168,11 @@ abcdefghijklmnopqr0123456789/+AB
 
 or
 
-A combination of 43 characters:
+Any combination of 43 characters consisting of: 
 
-- a-z (not case-sensitive)
+- a-z (case insensitive)
 - 0-9
-- forward slashes (/)  or plus signs (+)
-- or plus signs (+)
+- forward slashes (/) or plus signs (+)
 - ends with an equal sign (=)
 
 for example:
@@ -190,9 +181,9 @@ abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=
 
 or
 
-A combination of 86 characters:
+Any combination of 86 characters consisting of: 
 
-- a-z (not case-sensitive)
+- a-z (case insensitive)
 - 0-9
 - forward slashes (/) or plus signs (+)
 - ends with two equal signs (=)
@@ -205,14 +196,11 @@ abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/
 
 Yes
 
-## Definition
+## Description
 
-This SIT is designed to match the security information that's like usernames and passwords used in [general login process](/azure/key-vault/quick-create-portal). 
-
-It uses several primary resources:
+This SIT is designed to match the security information that's like usernames and passwords used in general login process (https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
-- Patterns of User Login Credentials in URL.
 - Patterns of Password context in command line.
 - Patterns of Password context in code.
 - Patterns of Password context in script.
@@ -224,21 +212,18 @@ It uses several primary resources:
 - Patterns of Base64 encoded 512 bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
 - Patterns of mockup values, redactions, and placeholders.
-- A dictionary of vocabulary.
+- A dictionary of vocabulary words.
+
 
 The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
 
 ## Keywords
 
-### Keyword_Base64EncodedStringLiteral:
+### Keyword_Base64EncodedStringLiteral
 
 - MII
 
-### Keyword_LoginCredentialsInUrl:
-
-- ://
-
-### Keyword_PasswordContextInCmdLine:
+### Keyword_PasswordContextInCmdLine
 
 - certutil
 - zdbg
@@ -257,7 +242,7 @@ The patterns are designed to match actual credentials with reasonable confidence
 - winexe
 - net
 
-### Keyword_PasswordContextInCode:
+## Keyword_PasswordContextInCode
 
 - key
 - x509c
@@ -266,52 +251,41 @@ The patterns are designed to match actual credentials with reasonable confidence
 - pw
 - securestring
 
-### Keyword_PasswordContextInScript:
+### Keyword_PasswordContextInScript
 
 - secret
 - password
-- pw
+pw
+Keyword_PasswordContextInXml:
+userpass
+password
+pw
+connectionstring
+key
+credential
+token
+sas
+secret
+Keyword_SymmetricKey128:
+secret
+key
+password
+pw
+Keyword_SymmetricKey128Hex:
+dapi
+key
+secret
+token
+password
+pw
+Keyword_SymmetricKey192:
+password
+-p
+azurecr
+Keyword_SymmetricKey256:
+SharedAccessKey
+AccountKey
+Keyword_SymmetricKey512:
+SharedAccessKey
+AccountKey
 
-### Keyword_PasswordContextInXml:
-
-- userpass
-- password
-- pw
-- connectionstring
-- key
-- credential
-- token
-- sas
-- secret
-
-### Keyword_SymmetricKey128:
-
-- secret
-- key
-- password
-- pw
-
-### Keyword_SymmetricKey128Hex:
-
-- dapi
-- key
-- secret
-- token
-- password
-- pw
-
-### Keyword_SymmetricKey192:
-
-- password
-- -p
-- azurecr
-
-### Keyword_SymmetricKey256:
-
-- SharedAccessKey
-- AccountKey
-
-### Keyword_SymmetricKey512:
-
-- SharedAccessKey
-- AccountKey
