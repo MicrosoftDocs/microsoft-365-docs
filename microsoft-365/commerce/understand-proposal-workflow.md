@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150 
 description: "Learn about proposals to help you buy Microsoft products and services."
 ROBOTS: NOINDEX
-ms.date: 07/08/2022
+ms.date: 07/11/2022
 ---
 
 # Understand the Microsoft proposal workflow
