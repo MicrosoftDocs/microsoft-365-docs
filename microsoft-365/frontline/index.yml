@@ -38,6 +38,7 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
+  title: How can Microsoft 365 help your business?
   items:
     # Card
     - title: Solutions to transform your business
@@ -85,8 +86,9 @@ productDirectory:
 # Card with summary style
 additionalContent:
   # Supports up to 4 subsections
-  sections:
-    - items:
+    sections:
+    - title: Resources for your organization
+      items:
         # Card
         - title: Set up and configure Microsoft 365 for frontline workers
           summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance.
