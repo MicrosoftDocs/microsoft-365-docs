@@ -1,5 +1,5 @@
 ---
-title: Teams for Financial Services
+title: Microsoft 365 for Financial Services
 description: Learn about the admin resources available to manage and get the most out of Teams for your frontline financial services workforce.
 ms.topic: conceptual
 author: daisyfell
@@ -24,12 +24,12 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Get started with Teams for Financial Services
+# Get started with Microsoft 365 for Financial Services
 
 Frontline workers in the financial services industry have unique needs for communicating and collaborating based on the services they offer. To get the most benefit for your frontline workforce, you first choose which scenarios Microsoft 365 can help you with in your day-to-day business operations, and then make sure that you prepare your environment with the right fundamentals, teams, and apps to support those scenarios.
 
 1. [Choose your scenarios](#choose-your-scenarios) you want to implement for your business.
-2. [Set up Microsoft 365](/microsoft-365/frontline/flw-deploy-overview) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
+2. [Set up Microsoft 365](flw-setup-microsoft-365.md) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
 3. [Configure services and apps](#configure-services-and-apps) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
 
 ## Choose your scenarios

@@ -1,5 +1,5 @@
 ---
-title: "Get started with Teams for healthcare organizations"
+title: "Get started with Microsoft 365 for healthcare organizations"
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -30,9 +30,9 @@ ms.custom:
 - seo-marvel-jun2020
 ---
 
-# Get started with Teams for healthcare organizations
+# Get started with Microsoft 365 for healthcare organizations
 
-Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations. Teams features are under development to aid hospitals with:
+Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful for hospitals and other Healthcare organizations. Teams features are under development to aid hospitals with:
 
 - Virtual appointments and Electronic Healthcare Record (EHR) integration
 - Teams policy packages
@@ -46,8 +46,13 @@ Watch the following video to learn more about using the healthcare collection to
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hqan]
 
-> [!NOTE]
-> The content in this section assumes that you've already deployed Teams in your organization. If you haven't yet rolled out Teams, start by reading [How to roll out Microsoft Teams](/microsoftteams/deploy-overview).
+To get the most benefit for your healthcare organization, you first choose which scenarios Microsoft 365 and Microsoft Teams can help you with in your day-to-day activities, and then make sure that you prepare your Teams environment with the right fundamentals, teams, and apps to support those scenarios.
+
+1. [Choose your scenarios](#scenarios-for-healthcare) you want to implement.
+2. [Set up Microsoft 365](flw-setup-microsoft-365.md) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
+3. [Configure services and apps](flw-setup-microsoft-365.md#step-5-configure-apps-for-your-scenario) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
+
+## Scenarios for healthcare
 
 The following scenarios are available for healthcare organizations:
 
@@ -55,12 +60,19 @@ The following scenarios are available for healthcare organizations:
 | -------- | -------- | -------- |
 | [Virtual appointments with Electronic Healthcare Record (EHR) integration](#virtual-appointments-and-electronic-healthcare-record-ehr-integration) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Cerner or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings*. <br> Organizations must have Cerner version November 2018 or later or Epic version November 2018 or later. <br>Details for [Cerner EHR](ehr-admin-cerner.md#before-you-begin) and [Epic EHR](ehr-admin-epic.md#before-you-begin) requirements |
 | [Virtual appointments with Microsoft Bookings and the Bookings app](#virtual-appointments-and-electronic-healthcare-record-ehr-integration) | Schedule, manage, and conduct virtual appointments with patients. This scenario relies on Microsoft Bookings to support virtual appointments. | Microsoft Bookings must be turned on for the organization. <br> All users of the Bookings app and all staff participating in meetings must have a license that supports Teams Meeting scheduling*. <br>[Details for Bookings requirements](/microsoftteams/bookings-app-admin#prerequisites-to-use-the-bookings-app-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)|
-| [Teams policy packages](#teams-policy-packages)| Ensure that clinical workers, information workers, and patient room devices have the appropriate access to Teams functionality.| Users must have an appropriate license*. |
-| [Secure messaging](#secure-messaging) | Get quicker attention to urgent messages and have confidence that the message was received and read. | Users must have an appropriate license*.  |
-| [Teams templates](#teams-templates-for-healthcare-organizations) | Create teams that include a predefined template of settings, channels, and pre-installed apps for communication and collaboration within a ward, pod, or department, or between multiple wards, pods, and departments within a hospital. | Users must have an appropriate license*.  |
 | [Care coordination and collaboration](#care-coordination-and-collaboration) | Clinicians and staff can collaborate internally on schedules, documents, tasks, and so on.| Users must have an appropriate license*. |
 
 *Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3, and E5, Business Standard are supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams/user-access).
+
+Or choose from other [scenarios](flw-choose-scenarios.md) for Microsoft 365 for frontline workers, such as [Corporate communications](flw-corp-comms.md) or [Wellbeing and engagement](flw-wellbeing-engagement.md).
+
+And take advantage of these features that help Microsoft Teams work for your healthcare organization:
+
+| Feature | Description | Requirements |
+| -------- | -------- | -------- |
+| [Teams policy packages](#teams-policy-packages)| Ensure that clinical workers, information workers, and patient room devices have the appropriate access to Teams functionality.| Users must have an appropriate license*. |
+| [Secure messaging](#secure-messaging) | Get quicker attention to urgent messages and have confidence that the message was received and read. | Users must have an appropriate license*.  |
+| [Teams templates](#teams-templates-for-healthcare-organizations) | Create teams that include a predefined template of settings, channels, and pre-installed apps for communication and collaboration within a ward, pod, or department, or between multiple wards, pods, and departments within a hospital. | Users must have an appropriate license*.  |
 
 ## Virtual appointments and Electronic Healthcare Record (EHR) integration
 
@@ -119,9 +131,6 @@ In addition, your team can use apps in Teams to:
 - Create, manage, and share schedules with the Shifts app
 
 ### Share lists and track information with the Lists app
-
-> [!NOTE]
-> Effective October 30, 2020, the Patients app has been retired and replaced by the [Lists app](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in Teams. With Lists, care teams in your healthcare organization can create patient lists for scenarios ranging from rounds and interdisciplinary team meetings to general patient monitoring.
 
 The Lists app in Teams helps teams track information and organize work. The app is pre-installed for all Teams users and is available as a tab in every team and channel. Lists can be created from scratch, from predefined templates, or by importing data to Excel.
 
