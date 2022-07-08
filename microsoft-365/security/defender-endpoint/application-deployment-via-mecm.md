@@ -50,7 +50,7 @@ Copy the unified solution package, onboarding script and migration script to the
 
 1. In the MECM console, follow these steps: **Software Library>Applications>Create Application**.
 2. Select **Manually specify the application information**.
-      :::image type="content" source="images/manual-application-information.png" alt-text="Manually specify the application information selection":::
+      :::image type="content" source="images/manual-application-information.png" alt-text="Manually specify the application information selection" lightbox="images/manual-application-information.png":::
 3. Click **Next** on the Software Center screen of the wizard.
 4. On the Deployment Types, click **Add**.
 5. Select **Manually to specify the deployment type information** and click **Next**.
@@ -93,7 +93,7 @@ Copy the unified solution package, onboarding script and migration script to the
 14. Click **Next** until completion screen comes up, then **Close**.
 15. Keep clicking next until the completion of Application Wizard. Verify all have been green checked.
 16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.
-     :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created":::
+     :::image type="content" source="images/deploy-application.png" alt-text="Deployment of application created" lightbox="images/deploy-application.png":::
 17. Verify in MECM>Monitoring>Deployments the status of this migration.
 
       :::image type="content" source="images/deployment-status.png" alt-text="Deployment status check" lightbox="images/deployment-status.png":::
