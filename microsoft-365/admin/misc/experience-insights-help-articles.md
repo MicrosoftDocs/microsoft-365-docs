@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 help article report"
+title: "Experience insights help article report"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -11,19 +11,19 @@ ms.localizationpriority: medium
 description: "Get a report of the Microsoft 365 help articles people in your organization are reading."
 ---
 
-# Microsoft 365 help article report
+# Experience insights help article report
 
-As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help. To learn more about adoption and training for users in your organization, see [Microsoft 365 Adoption and Training dashboard](training-specialist.md).
+As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help. To learn more about adoption and training for users in your organization, see [Experience insights dashboard](training-specialist.md).
 
 :::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
 ## How to get to the Adoption and Training dashboard
 
-1. In the admin center, go to the **Health** -> .
+Sign in to the Microsoft 365 admin center as a user who is a member of the global reader admin role.
 
-2. Select an option under **Additional resources** to get started.
+1. You'll either be defaulted into the **Experience insights** view or select **Experience insights** from the admin center home page.
 
-3. Select an app or service and then select **Help content**.
+2. Select an app or service and then select **Help content**.
 
 ## Interpret your organization's help article views
 
@@ -40,7 +40,7 @@ Chart information gives you insight into the apps and services that you want to 
 
 ## Examples of help articles
 
-Help articles can be found in-app in the help pane or at [Microsoft support page](https://support.microsoft.com/).
+Help articles can be found in-app in the help pane or at the [Microsoft support page](https://support.microsoft.com/).
 
 ### Help article on Microsoft support page
 
