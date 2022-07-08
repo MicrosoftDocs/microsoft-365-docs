@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
 ms.reviewer: 
-description: Learn how to use the Bookings app in Microsoft Teams to schedule, manage, and conduct virtual appointments. 
+description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments with your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
