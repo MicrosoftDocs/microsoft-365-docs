@@ -223,7 +223,7 @@ Follow the guidance in the [What to expect](#what-to-expect) section earlier in 
 - Teams
 - OneDrive
 
-Communicate to your users that the change is completed and let them know how to get help as defined in your user readiness strategy. You may want to include links to [help and learning resources](#user-setup-help-and-learning-resources) to support them in the transition.
+Communicate to your users that the change is completed and let them know how to get help as defined in your change management strategy. You may want to include links to [help and learning resources](#user-setup-help-and-learning-resources) to support them in the transition.
 
 ## User setup, help, and learning resources
 
