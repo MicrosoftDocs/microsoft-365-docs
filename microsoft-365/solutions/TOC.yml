@@ -236,13 +236,13 @@
             href: /microsoftteams/hybrid-meetings-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: "Step 1 - Get familiar with Teams meeting features"
             href: /microsoftteams/hybrid-meetings-features?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-          - name: "Step 2 - Attendee best practices"
+          - name: "Step 2 - Evangelize meeting best practices"
             items:
             - name: "Meeting organizers"
               href: /microsoftteams/hybrid-meetings-educate-organizer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: "Remote participants"
+            - name: "Remote attendees"
               href: /microsoftteams/hybrid-meetings-educate-remote?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: "In-room participants"
+            - name: "In-room attendees"
               href: /microsoftteams/hybrid-meetings-educate-inroom?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: "Step 3 - Design a meeting space"
             href: /microsoftteams/hybrid-meetings-room-design?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
