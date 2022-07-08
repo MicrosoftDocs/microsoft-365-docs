@@ -189,8 +189,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 ![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
+The available trainable classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
