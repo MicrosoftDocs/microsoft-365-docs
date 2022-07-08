@@ -23,8 +23,6 @@ description: "There are many sensitive information types that are ready for you 
 
 # Sensitive information type entity definitions
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article is a list of all sensitive information type (SIT) entity definitions. Each link takes you to the definition of that specific SIT  and shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
