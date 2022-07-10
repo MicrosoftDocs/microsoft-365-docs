@@ -80,7 +80,7 @@ The table below provides the servicePlanName values which you may obtain from th
 10. Click **Support**.
 11. Click **New service request**.
 12. Enter **How to setup defender for endpoint (Microsoft Defender for Endpoint)**.
-13. Click **->**.
+13. Click the arrow button.
 14. Click **Contact support**.
 15. In the Description, explain that you are attempting to migrate to MDB, and paste the output you copied in step 8.
 16. Complete the form.
