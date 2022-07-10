@@ -41,7 +41,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | **Defender for** Identity  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | Timeline                   | Microsoft 365 Defender Alerts/Incidents queue                |
-| Reports                    | remaining in the Defender for Identity portal                    |
+| Reports                    | Will remain in the [classic Defender for Identity portal](/defender-for-identity/classic-workspace-portal). <br> Customized reports can be created in the Microsoft 365 Defender portal using   [Advanced hunting](#advanced-hunting-new).               |
 | User page                  | Microsoft 365 Defender User page                             |
 | Device page                | Microsoft 365 Defender Device page                           |
 | Group page                 | Microsoft 365 Defender groups side pane                      |
