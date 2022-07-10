@@ -22,8 +22,6 @@ description: "Use the PowerShell script in this article to quickly clone an exis
 
 # Clone a Content Search
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Creating a Content Search in the Microsoft Purview compliance portal in Microsoft 365 that searches many mailboxes or SharePoint and OneDrive for Business sites can take a while. Specifying the sites to search can also be prone to errors if you mistype a URL. To avoid these issues, you can use the Windows PowerShell script in this article to quickly clone an existing Content Search. When you clone a search, a new search (with a different name) is created that contains the same properties (such as the content locations and the search query) as the original search. Then you can edit the new search by changing the keyword query or the date range, and run it.
 
 Why clone Content Searches?
@@ -35,6 +33,8 @@ Why clone Content Searches?
 - To decrease the size of the search results. For example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
 
 ## Script information
+
+- You need to install the Exchange Online V2 module. For instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
 - You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the script described in this topic.
 
@@ -61,20 +61,8 @@ To clone a search:
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `CloneSearch.ps1`.
 
    ```powershell
-   # This PowerShell script clones an existing content search in the Microsoft Purview compliance portal.
-   # Get login credentials from the user
-   if(!$UserCredential)
-   {
-       $UserCredential = Get-Credential
-       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-       if (!$Session)
-       {
-           Write-Error "Couldn't create a remote PowerShell session."
-           return
-       }
-       Import-PSSession $Session -AllowClobber -DisableNameChecking
-       $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance PowerShell)"
-   }
+   # This PowerShell script clones an existing content search in Microsoft Purview compliance.
+
    # Ask for the name of the search you want to clone
    $searchName = Read-Host 'Enter the name of the search that you want to clone'
    # Ask for the name of the new search
@@ -118,7 +106,7 @@ To clone a search:
    }
    ```
 
-2. Open Windows PowerShell and go to the folder where you saved the script.
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell). In the same PowerShell window, go to the folder where you saved the script.
 
 3. Run the script; for example:
 
@@ -126,12 +114,9 @@ To clone a search:
      .\CloneSearch.ps1
      ```
 
-4. When prompted for your credentials, enter your email address and password, and then click **OK**.
-
-5. Enter following information when prompted by the script. Type each piece of information and then press **Enter**.
+4. Enter following information when prompted by the script. Type each piece of information and then press **Enter**.
 
      - The name of the existing search.
-
      - The name of the new search.
 
      The script creates the new Content Search, but doesn't start it. This gives you a chance to edit and run the search in the next step. You can view the properties of the new search by running the **Get-ComplianceSearch** cmdlet or by going to the **Content search** or **eDiscovery** page in the Microsoft Purview compliance portal, depending on whether the new search is associated with a case.

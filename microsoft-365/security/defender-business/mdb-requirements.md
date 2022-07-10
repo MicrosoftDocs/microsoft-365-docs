@@ -27,10 +27,6 @@ This article describes the requirements for Microsoft Defender for Business.
 1. [Review the requirements and make sure you meet them](#review-the-requirements).
 2. [Proceed to your next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Review the requirements
 

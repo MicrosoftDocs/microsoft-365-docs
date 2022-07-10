@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Purview
+title: What's new in Microsoft Purview risk and compliance solutions
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,9 +20,7 @@ description: Whether it be adding new solutions to the compliance center, updati
 ms.custom: seo-marvel-mar2020
 ---
 
-# What's new in Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# What's new in Microsoft Purview risk and compliance solutions
 
 Whether it be adding new solutions to the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft Purview today.
 

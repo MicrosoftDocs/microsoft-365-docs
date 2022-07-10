@@ -55,7 +55,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- Both add-ins are not available for shared mailboxes.
+- Both add-ins are not available for shared, group, or delegated mailboxes (the add-ins will be greyed out).
 
 - Both add-ins are not available for on-premises Exchange mailboxes.
 
@@ -68,6 +68,9 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
+
+> [!IMPORTANT]
+> To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.
 
 ## Get the Report Message add-in
 

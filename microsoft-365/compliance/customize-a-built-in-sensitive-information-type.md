@@ -22,15 +22,13 @@ description: Learn how to create a custom sensitive information type that will a
 
 # Customize a built-in sensitive information type
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When looking for sensitive information in content, you need to describe that information in what's called a *rule*. Microsoft Purview Data Loss Prevention (DLP) includes rules for the most-common sensitive information types that you can use right away. To use these rules, you have to include them in a policy. You might find that you want to adjust these built-in rules to meet your organization's specific needs, and you can do that by creating a custom sensitive information type. This topic shows you how to customize the XML file that contains the existing rule collection to detect a wider range of potential credit-card information.
 
 You can take this example and apply it to other built-in sensitive information types. For a list of default sensitive information types and XML definitions, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 ## Export the XML file of the current rules
 
-To export the XML, you need to [connect to the Security and Compliance Center via Remote PowerShell.](/powershell/exchange/connect-to-scc-powershell).
+To export the XML, you need to [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 1. In the PowerShell, type the following to display your organization's rules on screen. If you haven't created your own, you'll only see the default, built-in rules, labeled "Microsoft Rule Package."
 
@@ -38,7 +36,7 @@ To export the XML, you need to [connect to the Security and Compliance Center vi
    Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-2. Store your organization's rules in a variable by typing the following. Storing something in a variable makes it easily available later in a format that works for remote PowerShell commands.
+2. Store your organization's rules in a variable by typing the following. Storing something in a variable makes it easily available later in a format that works for PowerShell commands.
 
    ```powershell
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
@@ -198,7 +196,7 @@ To upload your rule, you need to do the following.
 
 1. Save it as an .xml file with Unicode encoding. This is important because the rule won't work if the file is saved with a different encoding.
 
-2. [Connect to the Security and Compliance Center via Remote PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. In the PowerShell, type the following.
 

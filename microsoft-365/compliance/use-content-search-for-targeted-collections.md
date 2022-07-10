@@ -23,8 +23,6 @@ description: "Use Content search in the Microsoft Purview compliance portal to p
 
 # Use Content search for targeted collections
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 The Content search tool in the Microsoft Purview compliance portal doesn't provide a direct way in the UI to search specific folders in Exchange mailboxes or SharePoint and OneDrive for Business sites. However, it's possible to search specific folders (called a *targeted collection*) by specifying the folder ID property for email or path (DocumentLink) property for sites in the actual search query syntax. Using Content Search to perform a targeted collection is useful when you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. You can use the script in this article to obtain the folder ID for mailbox folders or the path (DocumentLink) for folders on a SharePoint and OneDrive for Business site. Then you can use the folder ID or path in a search query to return items located in the folder.
 
 > [!NOTE]
@@ -38,10 +36,10 @@ The Content search tool in the Microsoft Purview compliance portal doesn't provi
 
 - The script in this article supports modern authentication. You can use the script as-is if you are a Microsoft 365 or a Microsoft 365 GCC organization. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Specifically, you have to edit the line `Connect-ExchangeOnline` and use the *ExchangeEnvironmentName* parameter (and the appropriate value for your organization type) to connect to Exchange Online PowerShell.  Also, you have to edit the line `Connect-IPPSSession` and use the *ConnectionUri* and *AzureADAuthorizationEndpointUri* parameters (and the appropriate values for your organization type) to connect to Security & Compliance PowerShell. For more information, see the examples in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) and [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
-- Each time you run the script, a new remote PowerShell session is created. That means you can use up all the remote PowerShell sessions available to you. To prevent this from happening, run the following command to disconnect your active remote PowerShell sessions.
+- Each time you run the script, a new remote PowerShell session is created. That means you can use up all the remote PowerShell sessions available to you. To prevent this from happening, run the following commands to disconnect your active remote PowerShell sessions.
 
   ```powershell
-  Get-PSSession | Remove-PSSession
+  Get-PSSession | Remove-PSSession; Disconnect-ExchangeOnline
   ```
 
     For more information, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).

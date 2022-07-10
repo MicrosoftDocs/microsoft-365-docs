@@ -25,8 +25,6 @@ ms.custom:
 
 # Manage holds in eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can use an Microsoft Purview eDiscovery (Premium) case to create holds to preserve content that might be relevant to your case. Using the eDiscovery (Premium) hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
 
 ## Manage custodian-based holds
@@ -96,7 +94,7 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
 12. Review your settings, and then click **Create this hold**.
 
 > [!NOTE]
-> When you create a query-based hold, all content from selected locations is initially placed on hold. Subsequently, any content that doesn't match the specified query is cleared from the hold every seven to 14 days. However, a query-based hold won't clear content if more than five holds of any type are applied to a content location, or if any item has indexing issues.
+> When you create a query-based hold, all content from selected locations is initially placed on hold. After the timer job in either Exchange or SharePoint runs, any content that doesn't match the specified query is cleared from the hold. After the character count across all queries on a single location exceeds 10,000 characters, the entire location is placed on hold. 
 
 > [!NOTE]
 > If the SMTP address of the user changes after you place the user's mailbox on hold, the mailbox will remain on hold. To use the new SMTP address to place hold, create a new hold.
