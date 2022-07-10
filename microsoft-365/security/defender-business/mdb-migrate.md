@@ -21,7 +21,7 @@ Microsoft offers various versions of Microsoft Defender for Endpoint (MDE) and M
 
 **Use this article to:**
 - [Prepare your organization to migrate from MDE to MDB](#prepare-your-organization-to-migrate-from-mde-to-mdb)
-- [Troubleshoot issues with migrating from MDE to MDB](#how-to-migrate-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-business)
+- [Troubleshoot issues with migrating from MDE to MDB](#troubleshoot-issues-with-migrating-from-mde-to-mdb)
 
 ## Prepare your organization to migrate from MDE to MDB
 
@@ -85,3 +85,5 @@ The table below provides the servicePlanName values which you may obtain from th
 15. In the Description, explain that you are attempting to migrate to MDB, and paste the output you copied in step 8.
 16. Complete the form.
 17. Click **Contact me**.
+
+Microsoft 365 Support should contact you to assist with removing the conflicting setting on the back end.
