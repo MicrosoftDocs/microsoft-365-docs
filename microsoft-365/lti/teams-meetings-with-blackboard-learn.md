@@ -32,4 +32,4 @@ This guide provides the IT admin steps for registering the Teams Meetings LTI ap
 
 6. Select **Allow grade service access** and **Allow Membership Service Access**.
 
-Educators and students can now access the tool in their Blackboard courses (Both *Ultra* and *Classic*).
+Educators and students can now access the tool in their Blackboard courses in both *Blackboard Learn Ultra* and *Blackboard Learn Original Experience*.
