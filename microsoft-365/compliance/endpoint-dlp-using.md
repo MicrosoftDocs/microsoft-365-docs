@@ -46,7 +46,7 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-for full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
+For full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## Scenario 1: Create a policy from a template, audit only
 
