@@ -45,16 +45,16 @@ productDirectory:
       links:
         - url: flw-team-collaboration.md
           text: Communication
-        - url: bookings-virtual-visits.md
-          text: Virtual appointments
         - url: flw-wellbeing-engagement.md
           text: Wellbeing & engagement
-        - url: shifts-for-teams-landing-page.md
-          text: Schedule management
         - url: flw-onboarding-training.md
           text: Training & onboarding
+        - url: shifts-for-teams-landing-page.md
+          text: Schedule management
         - url: simplify-business-processes.md
           text: Digitized processes
+        - url: bookings-virtual-visits.md
+          text: Virtual appointments
     # Card
     - title: Solutions for your industry
       imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
