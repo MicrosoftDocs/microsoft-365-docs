@@ -55,28 +55,14 @@
       href: flw-team-collaboration.md
     - name: Corporate communications with frontline workers
       href: flw-corp-comms.md
-  - name: Virtual appointments
-    items: 
-    - name: Overview
-      href: virtual-appointments.md
-    - name: Virtual appointments with Teams and Bookings
-      href: bookings-virtual-visits.md
-    - name: Virtual appointments with Teams and Cerner EHR 
-      href: ehr-admin-cerner.md
-    - name: Virtual appointments with Teams and Epic EHR 
-      href: ehr-admin-epic.md
-    - name: EHR connector Virtual Appointments report
-      href: ehr-connector-report.md
-    - name: Virtual Visits usage report
-      href: virtual-visits-usage-report.md
-    - name: Manage the join experience on browsers
-      href: browser-join.md
-    - name: Help your clients and customers use virtual appointments
-      href: virtual-appointments-toolkit.md
   - name: Wellbeing & engagement
     items: 
     - name: Engage your employees and focus on wellbeing
       href: flw-wellbeing-engagement.md
+  - name: Training & onboarding
+    items: 
+    - name: Onboard and train employees
+      href: flw-onboarding-training.md
   - name: Schedule management
     items: 
     - name: Get started with Shifts for Teams
@@ -95,14 +81,28 @@
         href: shifts-connector-blue-yonder-powershell-setup.md
       - name: Use PowerShell to manage your Shifts to Blue Yonder WFM connection
         href: shifts-connector-powershell-manage.md
-  - name: Training & onboarding
-    items: 
-    - name: Onboard and train employees
-      href: flw-onboarding-training.md
   - name: Digitized processes
     items: 
     - name: Simplify business processes
       href: simplify-business-processes.md
+  - name: Virtual appointments
+    items: 
+    - name: Overview
+      href: virtual-appointments.md
+    - name: Virtual appointments with Teams and Bookings
+      href: bookings-virtual-visits.md
+    - name: Virtual appointments with Teams and Cerner EHR 
+      href: ehr-admin-cerner.md
+    - name: Virtual appointments with Teams and Epic EHR 
+      href: ehr-admin-epic.md
+    - name: EHR connector Virtual Appointments report
+      href: ehr-connector-report.md
+    - name: Virtual Visits usage report
+      href: virtual-visits-usage-report.md
+    - name: Manage the join experience on browsers
+      href: browser-join.md
+    - name: Help your clients and customers use virtual appointments
+      href: virtual-appointments-toolkit.md
   - name: Industry-specific solutions
     items: 
     - name: Financial services

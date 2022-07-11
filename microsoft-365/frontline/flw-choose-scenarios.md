@@ -39,14 +39,6 @@ Communications solutions connect your frontline workers and allow them to collab
 
 Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
 
-## Virtual appointments
-
-:::image type="icon" source="media/virtual-appointment-teams.png"::: 
-
-Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
-
-More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
-
 ## Wellbeing & engagement
 
 :::image type="icon" source="https://docs.microsoft.com/office/media/icons/heart-teams.png"::: 
@@ -59,16 +51,6 @@ Nurture a sense of belonging with your frontline employees by helping them engag
 
 Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), Praise, targeted communications (Viva Connections), video broadcasts with Stream or Teams.
 
-## Schedule management
-
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/calendar-teams.png"::: 
-
-Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave.
-
-| Scenario | Description | Services | Teams apps |
-| --- | --- | --- |--- |
-| [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | Use Shifts and Shifts Connectors to schedule your team and connect with your workforce management tools. | Microsoft Teams | Shifts |
-
 ## Training & onboarding
 
 :::image type="icon" source="https://docs.microsoft.com/office/media/icons/files-teams.png"::: 
@@ -80,6 +62,16 @@ Promote continual growth for your employees and encourage knowledge sharing and 
 | [Onboard new employees](flw-onboarding-training.md) | Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Lists <br>Live meetings |
 | [Ongoing training](flw-onboarding-training.md#ongoing-training) | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections | |
 
+## Schedule management
+
+:::image type="icon" source="https://docs.microsoft.com/office/media/icons/calendar-teams.png"::: 
+
+Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave.
+
+| Scenario | Description | Services | Teams apps |
+| --- | --- | --- |--- |
+| [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | Use Shifts and Shifts Connectors to schedule your team and connect with your workforce management tools. | Microsoft Teams | Shifts |
+
 ## Digitized processes
 
 :::image type="icon" source="https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png"::: 
@@ -90,6 +82,14 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 | --- | --- | --- | --- |
 | [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
 <!--| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | | |-->
+
+## Virtual appointments
+
+:::image type="icon" source="media/virtual-appointment-teams.png"::: 
+
+Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+
+More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
 
 ## More scenarios and solutions with the digital ecosystem
 
