@@ -2,6 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
+### [Trial playbook: Get the most out of your trial](defender-endpoint-trial-playbook.md)
 ### [Compare Defender for Endpoint plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
@@ -43,6 +44,7 @@
 #### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
+##### [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md)
 
 ## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)

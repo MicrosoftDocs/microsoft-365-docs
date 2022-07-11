@@ -125,15 +125,15 @@ When you create a sensitivity label, you're asked to configure the label's scope
 - Which label settings you can configure for that label
 - Where the label will be visible to users
 
-This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. You can also select the scope for Microsoft Purview Data Map assets:
+This scope configuration lets you have sensitivity labels that are just for items such as documents and emails, and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. You can also select the scope for schematized data assets for Microsoft Purview Data Map:
 
 ![Scope options for sensitivity labels.](../media/sensitivity-labels-scopes.png)
 
-By default, the **Items** scope is always selected. The other scopes are selected by default when the features are enabled for your tenant:
+By default, the **Items** scope (previously named **Files & emails**) is always selected. The other scopes are selected by default when the features are enabled for your tenant:
 
-- **Groups & sites**: [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+- **Groups & sites**: See [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Schematized data assets**: [Automatically label your content in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)
+- **Schematized data assets**: See [Automatically label your content in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)
 
 If you change the defaults so not all scopes are selected, you see the first page of the configuration settings for scopes you haven't selected, but you can't configure the settings. For example, if the scope for items isn't selected, you can't select the options on the next page:
 
