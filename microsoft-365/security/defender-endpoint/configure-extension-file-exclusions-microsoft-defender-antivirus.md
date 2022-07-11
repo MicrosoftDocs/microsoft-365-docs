@@ -33,8 +33,8 @@ You can define exclusions for Microsoft Defender Antivirus that apply to [schedu
 - [Exclusions for files that are opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, such as [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
-> To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
+> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, such as [attack surface reduction (ASR) rules](attack-surface-reduction.md) and [controlled folder access](controlled-folders.md). Files that you exclude using the methods described in this article can still trigger endpoint detection and response (EDR) alerts and other detections.
+> To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](manage-indicators.md).
 
 ## Before you begin
 
@@ -45,8 +45,7 @@ See [Recommendations for defining exclusions](configure-exclusions-microsoft-def
 To exclude certain files from Microsoft Defender Antivirus scans, you modify your exclusion lists. Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 > [!NOTE]
-> Exclusions apply to Potentially Unwanted Apps (PUA) detections as well.
->
+> Exclusions apply to [potentially unwanted apps (PUA) detections](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) as well.
 > Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
 
 The following table lists some examples of exclusions based on file extension and folder location.
