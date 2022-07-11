@@ -74,7 +74,6 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
     - If they get single sign-on (SSO) into the web app from the device joined account or selected **Stay signed in** at the time of sign-in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
     - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Windows Accounts extension](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). For this feature to not trigger on a managed device, an eligible Azure AD Premium P1 or P2 subscription, and a specific Conditional Access policy, is required. See below for further details.
 
-
 ## Idle session timeout on unmanaged devices  
 
 For idle session timeout to get triggered on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
