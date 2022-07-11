@@ -126,7 +126,7 @@ Check out this short video for an overview of how to run the wizard to get your 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWN6oh]
 
-The wizard sets up a team for your frontline workers and assigns licenses and [policy packages](/microsoftteams/manage-policy-packages) to each team member. You can create your team from scratch or from a [team template](/microsoftteams/get-started-with-teams-templates-in-the-admin-console), and then you add users and assign roles. The role determines whether the wizard assigns the Frontline Manager or Frontline Worker policy package to the user.
+The wizard sets up a team for your frontline workers and assigns licenses and [policy packages](/microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to each team member. You can create your team from scratch or from a [team template](/microsoftteams/get-started-with-teams-templates-in-the-admin-console), and then you add users and assign roles. The role determines whether the wizard assigns the Frontline Manager or Frontline Worker policy package to the user.
 
 The wizard is available to all organizations that have at least one [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline). You can run the wizard as many times as you need to roll out Teams to your frontline workforce in different locations or sites across your organization.
 

@@ -39,8 +39,8 @@
       items: 
       - name: Tailor Teams apps for your frontline workers
         href: pin-teams-apps-based-on-license.md
-      - name: Policy packages for frontline workers and managers
-        href: /microsoftteams/manage-policy-packages?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Teams policy packages for frontline managers and workers
+        href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Secure messaging
         href: messaging-policies-hc.md
       - name: Message delegation
