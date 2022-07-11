@@ -50,7 +50,7 @@ If you encounter these issues, begin by [collecting MDEClientAnalyzer logs](run-
 When you use XMDEClientAnalyzer, the following files will display output that provide insights to help you troubleshoot issues.
 - auditd_info.txt
 - auditd_log_analysis.txt
-- 
+
 
 ### auditd_info.txt
 
