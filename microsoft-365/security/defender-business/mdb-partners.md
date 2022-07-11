@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Business and MSP resources
+title: Microsoft Defender for Business and Microsoft partner resources
 description: Learn about resources available for managed service providers and Microsoft Defender for Business.
 search.appverid: MET150
 author: denisebmsft
@@ -17,7 +17,20 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Microsoft Defender for Business and managed service provider resources
+# Microsoft Defender for Business and Microsoft partner resources
+
+Microsoft partners have access to resources, programs, and tools that empower partners to enable customers to succeed. This article provides an overview of resources that are available for Microsoft partners who serve customers using Defender for Business or Microsoft 365 Business Premium.
+
+
+## Partner resources
+
+| Resource | Description |
+|:---|:---|
+| [Microsoft Partner Network](https://partner.microsoft.com) | Learn how to become a Microsoft partner and join the Microsoft Partner Network. |
+| [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <ul><li>Practical guidance about how to have conversations with your customers about security and drive upsell to Business Premium. </li><li>Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. </li><li>A panel of experts to help answer your questions.</li></ul>   |
+| [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance for partners about how to build a profitable managed services practice, with: <ul><li>Real-world examples of successful managed service offers from industry experts and peers. </li><li>Technical enablement and checklists from Microsoft experts. </li><li>Sales enablement and customer conversation aids to help you market your solution. </li></ul> |
+
+## Resources for Microsoft managed service providers
 
 Most managed service providers (MSPs) offer a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats.
 
