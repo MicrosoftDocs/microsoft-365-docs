@@ -221,7 +221,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
    >
    > Manually blocking domains by adding the domains to the blocked domains list isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
    >
-   > There will be times when our filters will miss a message, you don't agree with the filtering verdict, or it takes time for our systems to catch up to it. In these cases, the allow list and block list are available to override the current filtering verdicts. But, you should use these lists sparingly and temporarily: longs lists can become unmanageable, and our filtering stack should be doing what it's supposed to be doing. If you're going to keep an allowed domain for an extended period of time, you should tell the sender to verify that their domain is authenticated and set to DMARC reject if it's not.
+   > There will be times when our filters will miss a message, you don't agree with the filtering verdict, or it takes time for our systems to catch up to it. In these cases, the allow list and block list are available to override the current filtering verdicts. But, you should use these lists sparingly and temporarily: longs lists can become unmanageable, and our filtering stack should be doing what it's supposed to be doing. If you're going to keep an allowed domain for an extended period of time, you should tell the sender to verify that their domain is authenticated and set to DMARC reject appropriately.
 
    The steps to add entries to any of the lists are the same:
 
