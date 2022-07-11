@@ -57,7 +57,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 
 ## July 2022
-- - [Add domain controller devices - Evaluation lab enhancement](evaluation-lab.md#add-a-domain-controller-preview)<br>Now generally available - Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
+- - [Add domain controller devices - Evaluation lab enhancement](evaluation-lab.md#add-a-domain-controller)<br>Now generally available - Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
 
 
 
@@ -67,7 +67,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 ## May 2022
 - [Tamper protection for macOS (preview)](tamperprotection-macos.md)<br>Tamper protection helps prevent unauthorized removal of Microsoft Defender for Endpoint on macOS.
 
-- [Add domain controller devices - Evaluation lab enhancement (preview)](evaluation-lab.md#add-a-domain-controller-preview)<br>Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
+- [Add domain controller devices - Evaluation lab enhancement (preview)](evaluation-lab.md#add-a-domain-controller)<br>Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
 
 ## April 2022
 - [Updated onboarding and feature parity for Windows Server 2012 R2 and Windows Server 2016)](configure-server-endpoints.md)<br/> The new unified solution package is now generally available and makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with many new feature improvements.
