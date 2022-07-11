@@ -18,8 +18,6 @@ description: Learn how to set up Microsoft Teams meetings with Blackboard Learn.
 
 This guide provides the IT admin steps for registering the Teams Meetings LTI app on Blackboard Learn.
 
-For details on managing all LTI apps for any LMS, see [Manage Microsoft LMS Gateway for any LMS](manage-microsoft-one-lti.md).
-
 ## Add the Blackboard Learn Teams Meetings LTI 1.3 Tool
 
 1. From the Blackboard Administrator Panel, select **LTI Tool Providers**.
