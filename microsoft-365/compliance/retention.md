@@ -1,5 +1,5 @@
 ---
-title: "Learn about retention policies & labels to automatically retain or delete content"
+title: "Learn about retention policies & labels to retain or delete"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn about retention policies and retention labels that help you to retain what you need and delete what you don't.
+description: Learn about retention policies and retention labels to retain what you need and delete what you don't.
 ---
 
 # Learn about retention policies and retention labels
