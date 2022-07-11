@@ -55,11 +55,11 @@ Microsoft Defender for Endpoint P1 is available as a standalone user subscriptio
 
 Microsoft Defender for Endpoint P2, which was previously called Microsoft Defender for Endpoint, is available as a standalone license and as part of the following plans:
 
-Windows 11 Enterprise E5/A5
-Windows 10 Enterprise E5/A5
-Microsoft 365 E5/A5/G5 (which includes Windows 10 or Windows 11 Enterprise E5)
-Microsoft 365 E5/A5/G5/F5 Security
-Microsoft 365 F5 Security & Compliance
+- Windows 11 Enterprise E5/A5
+- Windows 10 Enterprise E5/A5
+- Microsoft 365 E5/A5/G5 (which includes Windows 10 or Windows 11 Enterprise E5)
+- Microsoft 365 E5/A5/G5/F5 Security
+- Microsoft 365 F5 Security & Compliance
 
 ## Mixed licensing scenarios
 
