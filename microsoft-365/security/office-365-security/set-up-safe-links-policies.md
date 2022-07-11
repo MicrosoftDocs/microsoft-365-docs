@@ -139,6 +139,9 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
    - **Let users click through to the original URL**: Clear this option to block users from clicking through to the original URL in [warning pages](safe-links.md#warning-pages-from-safe-links).
    - **Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.
 
+     > [!NOTE]
+     > The purpose of the "Do not rewrite the following URLs" list is to skip the Safe Links wrapping of the specified URLs. Instead of using this list, you can now [create allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#create-allow-url-entries).
+
      In the box, type the URL or value that you want, and then click **Add**. Repeat this step as many times as necessary.
 
      To remove an existing entry, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry.

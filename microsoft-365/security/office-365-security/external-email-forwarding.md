@@ -12,7 +12,8 @@ ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
+- adminvideo
 description: This article covers topics including external email forwarding, Automatic forwarding, 5.7.520 Access Denied messages, disabling external forwarding, 'Your administrator has disabled external forwarding' messages, as well as outbound anti-spam policy.
 ms.technology: mdo
 ms.prod: m365-security

@@ -18,6 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
+
 # Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -32,7 +33,9 @@ ms.technology: mde
 > [!NOTE]
 > Always ensure the operating system, and Microsoft Defender Antivirus on Windows Server 2016, are fully updated before proceeding with installation or upgrade. To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved after installation. In addition, to keep protection components updated, please reference [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
-These instructions apply to the new unified solution and installer (MSI) package of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016. This article contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
+These instructions apply to the new unified solution and installer (MSI) package of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016. This article contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment. 
+
+**If you are using Microsoft Defender for Cloud to perform deployment, you can automate installation and upgrade. See [Defender for Servers Plan 2 now integrates with MDE unified solution](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
 
 > [!NOTE]
 > Operating system upgrades with Microsoft Defender for Endpoint installed are not supported. Please offboard then uninstall before proceeding with an upgrade.
@@ -40,10 +43,9 @@ These instructions apply to the new unified solution and installer (MSI) package
 > [!NOTE]
 > Full Microsoft Endpoint Configuration Manager automation and integration to perform an automated upgrade will be available in a later release of MECM. From the 2107 release with the latest hotfix rollup, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in Microsoft Endpoint Configuration Manager to automate manual upgrade steps; methods for which are described below.
 
-
 ## Installer script
 
-To facilitate upgrades when Microsoft Endpoint Configuration Manager or Microsoft Defender for Cloud are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It can help automate the following required steps:
+To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet available or updated to perform the automated upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It can help automate the following required steps:
 
 1. Remove the OMS workspace for Microsoft Defender for Endpoint (OPTIONAL).
 2. Remove System Center Endpoint Protection (SCEP) client if installed.
@@ -58,7 +60,7 @@ EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\Windo
 ## Microsoft Endpoint Configuration Manager migration scenarios 
 
 >[!NOTE]
->You'll need Microsoft Endpoint Configuration Manager, version 2107 or later.
+>You'll need Microsoft Endpoint Configuration Manager, version 2107 or later to perfom Endpoint Protection policy configuration.
 
 Migration steps: 
 
@@ -104,6 +106,7 @@ Name: ForceDefenderPassiveMode
 Type: REG_DWORD
 Value: 0
 
+For more information on migrating servers from MMA to unified solution, see [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md).
 
 ## Other migration scenarios
 

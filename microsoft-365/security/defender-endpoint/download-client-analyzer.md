@@ -21,6 +21,7 @@ ms.technology: m365d
 # Download the Microsoft Defender for Endpoint client analyzer
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Learn how to download the Microsoft Defender for Endpoint client analyzer on supported Windows, macOS, and Linux Operating Systems.
