@@ -22,7 +22,7 @@ appliesto:
 
 Across every industry, frontline workers make up a large segment of the workforce. Frontline worker roles include retail associates, factory workers, field and service technicians, healthcare personnel, and many more.
 
-Because the workforce is largely mobile and often shift-based, managing the devices that frontline workers use for Teams is a key fundamental. Some questions to consider:
+Because the workforce is largely mobile and often shift-based, managing the devices that frontline workers use is a key fundamental. Some questions to consider:
 
 - Do workers use company-owned devices or their own personal devices?
 - Are company-owned devices shared between workers or assigned to an individual?
