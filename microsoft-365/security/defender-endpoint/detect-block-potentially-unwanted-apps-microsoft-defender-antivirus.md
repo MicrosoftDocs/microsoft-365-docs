@@ -83,12 +83,6 @@ You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device
 
 You can also use PUA protection in audit mode to detect potentially unwanted applications without blocking them. The detections are captured in the Windows event log.
 
-> [!TIP]
-> Visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) to confirm that the feature is working, and see it in action.
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
 PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
 ### Use Intune to configure PUA protection
