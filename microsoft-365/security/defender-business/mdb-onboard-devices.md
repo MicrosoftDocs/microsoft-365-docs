@@ -233,7 +233,10 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## [**Servers**](#tab/Servers)
 
-*The ability to onboard a server is currently in preview.*
+## Servers
+
+> [!NOTE]
+> The ability to onboard a server is currently in preview, and requires an additional license for each server instance.
 
 Choose the operating system for your server:
 
