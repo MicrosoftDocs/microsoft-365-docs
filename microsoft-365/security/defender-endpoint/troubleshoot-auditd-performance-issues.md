@@ -51,7 +51,7 @@ To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-an
 
 Contains general AuditD configuration and will display:
 
-- What processes are registered as AuditD consumers 
+- What processes are registered as AuditD consumers. 
 
 - **Auditctl -s** output with **enabled=2**  
 
@@ -93,11 +93,11 @@ AuditD exclusion – support tool syntax help:
 
 **By initiator** 
 
-**-e**/ -exe full binary path > Removes all events by this initiator 
+- **-e/ -exe** full binary path > Removes all events by this initiator 
 
 **By path** 
 
-**-d** / -dir full path to a directory > Removes filesystem events targeting this directory 
+- **-d / -dir** full path to a directory > Removes filesystem events targeting this directory 
 
 Examples: 
 
@@ -125,7 +125,7 @@ The -x flag is used to exclude access to subdirectories by specific initiators f
 
 `./mde_support_tool.sh exclude -x /usr/sbin/mv /tmp`
 
-The above will exclude monitoring of /tmp subfolder, when accessed by mv process 
+The above will exclude monitoring of /tmp subfolder, when accessed by mv process. 
 
  
 > [!NOTE]
