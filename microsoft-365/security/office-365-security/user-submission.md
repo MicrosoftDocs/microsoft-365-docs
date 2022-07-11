@@ -43,20 +43,20 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 ## Custom mailbox prerequisites
 
 Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
- 
-- [Identify the custom mailbox as a SecOps mailbox in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [Create an anti-malware policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) for the custom mailbox where
-    - zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected). 
-    - the common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected). 
+- [Identify the custom mailbox as a SecOps mailbox](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the users reporting messages:
+- [Create an anti-malware policy](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies) for the custom mailbox with the following settings:
+  - Zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected).
+  - The common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected).
 
-- [Make sure the custom mailbox is not part of any preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
+If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the reported messages:
 
-- [Create a Safe Links policy](set-up-safe-links-policies.md) for the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
+- Make sure the custom mailbox is not part of any [preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
-- [Create a Safe Attachments policy](set-up-safe-attachments-policies.md) for the custom mailbox where Safe Attachments scanning is turned off (**Safe Attachments unknown malware response** section \> **Off**).
+- [Create a Safe Links policy](set-up-safe-links-policies.md) for the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section > **Off**).
+
+- [Create a Safe Attachments policy](set-up-safe-attachments-policies.md) for the custom mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off (**Safe Attachments unknown malware response** section > **Off**).
 
 After you've verified that your mailbox meets all applicable prerequisites, you can use the procedures in this article to configure the user submissions mailbox.
 
@@ -79,11 +79,11 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## Use the Microsoft 365 Defender portal to configure the user submissions mailbox
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** > **Threat policies** > **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 2. On the **User submissions** page, what you see is determined by whether the **Microsoft Outlook Report Message button** setting is **Off** or **On**:
 
-   - **Microsoft Outlook Report Message button** \> **On** ![Toggle on.](../../media/scc-toggle-on.png): Select this option if you use the Report Message add-in, the Report Phishing add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
+   - **Microsoft Outlook Report Message button** > **On** ![Toggle on.](../../media/scc-toggle-on.png): Select this option if you use the Report Message add-in, the Report Phishing add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
      - **Send the reported messages to**: Select one of the following options:
        - **Microsoft**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
        - **Microsoft and my organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
@@ -118,7 +118,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
           > Your email will be submitted as-is to Microsoft for analysis. Some emails might contain personal or sensitive information.
 
-   - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
+   - **Microsoft Outlook Report Message button** > **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
 
    - **Quarantine report message button**: Enable this feature if you want to let end users report messages from quarantine.
@@ -129,7 +129,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 You can configure third-party message reporting tools to send reported messages to the custom mailbox. You would do this by setting the **Microsoft Outlook Report Message button** setting to **Off** and setting the **My organization's mailbox** to an Office 365 mailbox of your choice.
 
-The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox). 
+The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
 
  > [!NOTE]
  > If multiple email attachments are present in the email, then the submission will be discarded. We only support emails with one email attachment.
@@ -150,8 +150,5 @@ For example:
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
-
-- Both of these messages are being reported as Not Junk based on Subject.
-- The rest is ignored.
 
 Messages that don't follow this format will not display properly in the Submissions portal.

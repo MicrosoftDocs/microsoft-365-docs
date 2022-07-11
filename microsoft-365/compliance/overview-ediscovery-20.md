@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 04/08/2022
+ms.date: 07/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -23,8 +23,6 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Overview of Microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Microsoft Purview eDiscovery (Premium) solution builds on the existing Microsoft eDiscovery and analytics capabilities. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
@@ -90,38 +88,9 @@ At a high level, here's how eDiscovery (Premium) supports the EDRM workflow:
 
 ## Subscriptions and licensing
 
-Licensing for eDiscovery (Premium) requires the appropriate organization subscription and per-user licensing.
+For information regarding what licenses provide the rights for a user to benefit from eDiscovery (Premium) please see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145). 
 
-- **Organization subscription:** To access eDiscovery (Premium) in the Microsoft Purview compliance portal, your organization must have one of the following:
-
-  - Microsoft 365 E5 or Office 365 E5 subscription
-  
-  - Microsoft 365 E3 subscription with E5 Compliance add-on
-
-  - Microsoft 365 E3 subscription with E5 eDiscovery and Audit add-on
-
-  - Microsoft 365 Education A5 or Office 365 Education A5 subscription
-
-   If you don't have an existing Microsoft 365 E5 plan and want to try eDiscovery (Premium), you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 E5.
-
-- **Per-user licensing:** To add a user as a custodian in an Advance eDiscovery case, that user must be assigned one of the following licenses, depending on your organization subscription:
-
-  - Microsoft 365: Users must be assigned one of the following:
-  
-    - Microsoft 365 E5 license, an E5 Compliance add-on license, or an E5 eDiscovery and Audit add-on
-
-    - Microsoft 365 Frontline users must be assigned an F5 Compliance or F5 Security & Compliance add-on
-
-    - Microsoft 365 Education users must be assigned an A5 license
-
-  - Office 365: Users must be assigned an Office 365 E5 or Office 365 Education A5 license.
-
-For information about licensing, download and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
-
-For information about how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-> [!NOTE]
-> Users only need an E5 or A5 license (or the appropriate add-on license) to be added as custodians to an eDiscovery (Premium) case. IT admins, eDiscovery managers, lawyers, paralegals, or investigators who use eDiscovery (Premium) to manage cases and review case data don't need an E5, A5, or add-on license.
+For information about how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Get started with eDiscovery (Premium)
 

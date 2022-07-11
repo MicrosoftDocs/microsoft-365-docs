@@ -52,6 +52,6 @@ The following table list the reports that are available in the **Dashboard**:
 
 ## Related topics
 
-[Microsoft 365 Defender portal](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md)
 
 [Protect against threats in Office 365](protect-against-threats.md)

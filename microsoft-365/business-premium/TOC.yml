@@ -74,6 +74,8 @@
         href: m365bp-onboard-devices-mdb.md
       - name: Protect Windows devices
         items: 
+          - name: Upgrade to Windows 10 Pro (if needed)
+            href: m365bp-upgrade-windows-10-pro.md
           - name: Secure Windows devices
             href: m365bp-secure-windows-devices.md
           - name: Manage Windows devices
@@ -104,6 +106,8 @@
   items: 
     - name: Overview
       href: m365bp-maintain-environment.md
+    - name: Security operations guide
+      href: m365bp-security-incident-quick-start.md
     - name: Remove users
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Add users

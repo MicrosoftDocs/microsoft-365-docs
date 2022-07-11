@@ -128,7 +128,7 @@ Select **Run query** to see the results.
 >[!TIP]
 >You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
-Watch this [short video](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how you can use Kusto Query Language to join tables.
+
 
 ## Learn common query operators
 
@@ -138,7 +138,7 @@ You've just run your first query and have a general idea of its components. It's
 |--|--|
 | `where` | Filter a table to the subset of rows that satisfy a predicate. |
 | `summarize` | Produce a table that aggregates the content of the input table. |
-| `join` | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. |
+| `join` | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. Watch [Joining tables in KQL](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how.|
 | `count` | Return the number of records in the input record set. |
 | `top` | Return the first N records sorted by the specified columns. |
 | `limit` | Return up to the specified number of rows. |

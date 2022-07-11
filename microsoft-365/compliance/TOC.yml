@@ -238,9 +238,9 @@
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Learn about communication compliance reports & audits
+        - name: Use communication compliance reports & audits
           href: communication-compliance-reports-audits.md
-        - name: Communication compliance with SIEM solutions 
+        - name: Use communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an inappropriate text policy 
           href: communication-compliance-case-study.md
