@@ -42,8 +42,6 @@ If you're using a non-Microsoft antivirus/antimalware product on your device, yo
 
 The following table describes what to expect when Microsoft Defender Antivirus is in active mode, passive mode, or disabled.
 
-<br/><br/>
-
 | Mode | What happens |
 |---|---|
 | Active mode | In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device. Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app. |
@@ -54,21 +52,21 @@ To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defend
 
 ## Check the state of Microsoft Defender Antivirus on your device
 
-If you want to check the state of Microsoft Defender Antivirus on your device, you can use one of several methods, such as the Windows Security app or Windows PowerShell.
+You can use one of several methods, such as the Windows Security app or Windows PowerShell, to check the state of Microsoft Defender Antivirus on your device.
 
-### Use the Windows Security app to check status of Microsoft Defender Antivirus
+### Use the Windows Security app to check the status of Microsoft Defender Antivirus
 
-1. On your Windows device, select the Start menu, and begin typing `Security`. Then open the Windows Security app in the results.
+1. On your Windows device, select the **Start** menu, and begin typing `Security`. Then open the Windows Security app in the results.
 
 2. Select **Virus & threat protection**.
 
 3. Under **Who's protecting me?**, choose **Manage Providers**.
 
-You'll see the name of your antivirus/antimalware solution on the Security providers page.
+You'll see the name of your antivirus/antimalware solution on the security providers page.
 
-### Use PowerShell to check status of Microsoft Defender Antivirus
+### Use PowerShell to check the status of Microsoft Defender Antivirus
 
-1. Select the Start menu, and begin typing `PowerShell`. Then open Windows PowerShell in the results.
+1. Select the **Start** menu, and begin typing `PowerShell`. Then open Windows PowerShell in the results.
 
 2. Type `Get-MpComputerStatus`.
 
@@ -87,7 +85,7 @@ You'll see the name of your antivirus/antimalware solution on the Security provi
 
 ## Get your antivirus/antimalware platform updates
 
-It's important to keep Microsoft Defender Antivirus, or any antivirus/antimalware solution, up to date. Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+It's important to keep Microsoft Defender Antivirus (or any antivirus/antimalware solution) up to date. Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
