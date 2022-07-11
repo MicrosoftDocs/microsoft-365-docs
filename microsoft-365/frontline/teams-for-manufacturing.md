@@ -43,9 +43,6 @@ Microsoft 365 and Microsoft Teams offer several capabilities that can help manuf
 - [Maintain health and safety](#maintain-health-and-safety)
 
 > [!NOTE]
-> These scenarios are also part of the Microsoft Cloud for Manufacturing. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Manufacturing, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Manufacturing](/industry/manufacturing).
-
-> [!NOTE]
 > For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.
 
 ### Connect and engage your workforce
@@ -95,10 +92,6 @@ Learn how to keep everyone informed and engaged with health and safety resources
 
 ## Configure services and apps
 
-:::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
-
-### Apps and services for manufacturing
-
 Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
 For manufacturing environments, the following apps and services can help you transform your business processes and support communication:
@@ -118,7 +111,7 @@ For manufacturing environments, the following apps and services can help you tra
 | Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as sales numbers, KPIs, and other reports. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
 | SharePoint | A new, connected SharePoint site is created whenever you create a new team. You can use SharePoint to store files, post news, and make sure your workers have access to important information. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
-| Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning (Preview)](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
+| Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
 | Yammer | Connect your entire organization and enable communication across departments and regions. | [Manage Yammer](/yammer) | [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
 
 For more about successfully implementing and adopting Teams, see [Adopt Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).
