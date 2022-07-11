@@ -155,10 +155,9 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
     1. Select **Permissions > Add**. From the list, select the available app permissions > **OK**.
     2. Select an option for each permission to grant with this policy:
 
-
-       - **Prompt** -  Prompt the user to accept or deny.
-       - **Auto grant** - Automatically approve without notifying the user.
-       - **Auto deny** - Automatically deny without notifying the user. 
+       - **Prompt** -  Prompts the user to accept or deny.
+       - **Auto grant** - Automatically approves without notifying the user.
+       - **Auto deny** - Automatically denies without notifying the user. 
 
     1. In the **Settings** page, go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format. 
 
