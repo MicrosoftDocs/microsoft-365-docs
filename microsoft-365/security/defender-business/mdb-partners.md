@@ -21,7 +21,6 @@ ms.collection:
 
 Microsoft partners have access to resources, programs, and tools that empower partners to enable customers to succeed. This article provides an overview of resources that are available for Microsoft partners who serve customers using Defender for Business or Microsoft 365 Business Premium.
 
-
 ## Partner resources
 
 | Resource | Description |
@@ -29,6 +28,7 @@ Microsoft partners have access to resources, programs, and tools that empower pa
 | [Microsoft Partner Network](https://partner.microsoft.com) | Learn how to become a Microsoft partner and join the Microsoft Partner Network. |
 | [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <ul><li>Practical guidance about how to have conversations with your customers about security and drive upsell to Business Premium. </li><li>Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. </li><li>A panel of experts to help answer your questions.</li></ul>   |
 | [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance for partners about how to build a profitable managed services practice, with: <ul><li>Real-world examples of successful managed service offers from industry experts and peers. </li><li>Technical enablement and checklists from Microsoft experts. </li><li>Sales enablement and customer conversation aids to help you market your solution. </li></ul> |
+| [Managed services program information](https://partner.microsoft.com/solutions/managed-services) | Learn how to build your managed services business. |
 
 ## Resources for Microsoft managed service providers
 
@@ -53,14 +53,6 @@ Use the following resources to learn more:
 | [Overview of management and APIs](../defender-endpoint/management-apis.md) | Defender for Business is built on Microsoft Defender for Endpoint, and is an integration-ready platform. This article describes how to automate workflows and innovate using the Defender for Endpoint APIs. |
 | [Configure managed security service provider integration](../defender-endpoint/configure-mssp-support.md) | Provides an overview of steps to take to successfully integrate a customer's tenant with your MSP solution. |
 
-## What if I'm not a Microsoft MSP yet?
-
-If you're not a Microsoft MSP yet, resources are available to help.
-
-| Resource | Description |
-|:---|:---|
-| [Microsoft Partner Network](https://partner.microsoft.com) | Get an overview of the various partner programs that are available. Access training and learning resources, and plan your path. |
-| [Managed services program information](https://partner.microsoft.com/solutions/managed-services) | Learn how to build your managed services business. |
 
 ## See also
 
