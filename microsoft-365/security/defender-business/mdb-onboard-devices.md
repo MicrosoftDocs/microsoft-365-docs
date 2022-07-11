@@ -277,7 +277,7 @@ You can onboard an instance of Windows Server to Defender for Business by using 
 
    `Msiexec /i md4ws.msi /quiet` 
 
-   If you're onboarding Windows Server 1803, 2019, or 2022, skip this step and go to step 8.
+   If you're onboarding Windows Server 1803, 2019, or 2022, skip this step, and go to step 8.
 
 8. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press Enter (or select **OK**).
 
