@@ -135,7 +135,7 @@ The following table lists the contact properties that are indexed and that you c
 |Surname|The name in the **Last** name property.|
 |Title|The title in the **Job title** property.|
 
-## Searchable sensitive data types
+<!--## Searchable sensitive data types
 
 You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
 
