@@ -11,10 +11,10 @@
         href: trial-playbook-defender-business.md
       - name: Compare plans for small and medium-sized businesses
         href: compare-mdb-m365-plans.md
-      - name: Integration with Microsoft 365 Lighthouse
-        href: mdb-lighthouse-integration.md
       - name: Resources for partners
         href: mdb-partners.md
+      - name: Integration with Microsoft 365 Lighthouse
+        href: mdb-lighthouse-integration.md
     - name: Get started
       items:
       - name: Get Defender for Business
