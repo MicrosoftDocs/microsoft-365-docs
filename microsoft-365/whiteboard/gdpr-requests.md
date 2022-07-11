@@ -24,9 +24,9 @@ This article provides information about how to export, transfer, or delete perso
 
 ## Export a whiteboard
 
-### On Windows 10
+### On Windows
 
-On Windows 10, do the following steps:
+On Windows, do the following steps:
 
 1. Select the **More** (**...**) button for the whiteboard that you want to export. 
 
@@ -62,6 +62,13 @@ To delete a whiteboard, do the following steps:
 
 2. Select **Delete**.
 
+To delete a whiteboard file in OneDrive for Business, do the following steps:
+
+1.	Navigate to the Whiteboards folder in OneDrive.
+
+2.	Right-click the whiteboard file you want to delete.
+
+3. Select **Delete**.
+
 >[!WARNING]
 > This will permanently delete the selected whiteboard.
-
