@@ -151,6 +151,14 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
         - Click **Select App**, choose **Microsoft Defender ATP**, select **OK** and then **Next**.
 
         :::image type="content" source="images/android-create-app.png" alt-text=" The Associated app details pane" lightbox="images/android-create-app.png":::
+     
+    1. Select **Permissions > Add**. From the list, select the available app permissions > **OK**.
+    2. Select an option for each permission to grant with this policy:
+
+
+       - **Prompt** -  Prompt the user to accept or deny.
+       - **Auto grant** - Automatically approve without notifying the user.
+       - **Auto deny** - Automatically deny without notifying the user. 
 
     1. In the **Settings** page, go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format. 
 
