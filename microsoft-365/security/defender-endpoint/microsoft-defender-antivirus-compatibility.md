@@ -106,7 +106,6 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 - Type: `REG_DWORD`
 - Value: `1`
 
-
 You can view your protection status in PowerShell by using the command [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) and the key `AMRunningMode`. Here's an example of what the output looks like:
 
 ```
