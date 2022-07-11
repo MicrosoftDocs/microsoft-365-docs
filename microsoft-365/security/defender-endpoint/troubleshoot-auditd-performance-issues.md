@@ -21,33 +21,38 @@ ms.technology: mde
 
 # Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux 
 
-This article provides guidance on how to troubleshoot AuditD related performance issues that you might encounter with Microsoft Defender for Linux. 
+This article provides guidance on how to troubleshoot AuditD related performance issues that you might encounter with Microsoft Defender for Endpoint on Linux. 
 
 **Background:** 
 
 - Microsoft Defender for Endpoint on Linux OS distributions uses AuditD framework to collect certain types of telemetry events. 
 
-- System events captured by rules added to /etc/audit/rules.d/ will add to audit.log(s) and might affect host auditing and upstream collection.  
+- System events captured by rules added to `/etc/audit/rules.d/` will add to audit.log(s) and might affect host auditing and upstream collection.  
 
-- Events added by Microsoft Defender for Endpoint on Linux will be tagged with **mdatp** key. 
+- Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key. 
 
 - If the AuditD service is misconfigured or offline, then some events might be missing. To troubleshoot such an issue, refer to: [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.](linux-support-events.md)
 
-In certain server workload, two issues may be observed: 
+In certain server workloads, two issues may be observed: 
 
 - High CPU resource consumption from ***mdatp_audisp_plugin*** process. 
 
 - ***/var/log/audit/audit.log*** becoming large or frequently rotating. 
 
-The above issues may occur on servers with many events flooding AuditD.  
+These issues may occur on servers with many events flooding AuditD.  
 
-This can happen if there are multiple consumers for AuditD, or too many rules with the combination of MDE and third party consumers, or high workload that generates a lot of events. 
+This can happen if there are multiple consumers for AuditD, or too many rules with the combination of Microsoft Defender for Endpoint and third party consumers, or high workload that generates a lot of events. 
 
-To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-analyzer-macos-linux.md) on the sample affected server. 
+If you encounter these issues, begin by [collecting MDEClientAnalyzer logs](run-analyzer-macos-linux.md) on the sample affected server. 
 
-## XMDEClientAnalyzer - relevant output 
+## XMDEClientAnalyzer
 
-**auditd_info.txt**
+When you use XMDEClientAnalyzer, the following files will display output that provide insights to help you troubleshoot issues.
+- auditd_info.txt
+- auditd_log_analysis.txt
+- 
+
+### auditd_info.txt
 
 Contains general AuditD configuration and will display:
 
@@ -61,17 +66,17 @@ Contains general AuditD configuration and will display:
 
     - Will show what rules are currently loaded into the kernel (which may be different that what exists on disk in “/etc/auditd/rules.d/mdatp.rules”). 
     
-    - Will show which rules are related to MDE. 
+    - Will show which rules are related to Microsoft Defender for Endpoint. 
     
-**auditd_log_analysis.txt** 
+### auditd_log_analysis.txt
 
 Contains important aggregated information that is useful when investigating AuditD performance issues.  
 
-- Which component owns the most reported events (MDE events will be tagged with “key=mdatp”). 
+- Which component owns the most reported events (Microsoft Defender for Endpoint events will be tagged with `key=mdatp`). 
 
 - The top reporting initiators. 
 
-- The most common system calls (network or filesystem events etc.). 
+- The most common system calls (network or filesystem events, and others). 
 
 - What file system paths are the noisiest. 
 
@@ -81,7 +86,7 @@ To mitigate most AuditD performance issues, you can implement AuditD exclusion.
 > Exclusions should be made only for low threat and high noise initiators or paths. For example, do not exclude /bin/bash which risks creating a large blind spot.
 
 > [!NOTE]
-> As a general best practice, it is recommended to update the [MDE agent to latest available version](linux-whatsnew.md) and confirming issue still persists before investigating further.
+> As a general best practice, it is recommended to update the [Microsoft Defender for Endpoint agent to latest available version](linux-whatsnew.md) and confirming issue still persists before investigating further.
 
 ## Exclusion Types 
 
