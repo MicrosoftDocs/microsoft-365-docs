@@ -1,5 +1,5 @@
 ---
-title: Integrate Microsoft Teams classes and meetings with Desire2Learn Brightspace
+title: Integrate Microsoft Teams classes and meetings LTI apps with Desire2Learn Brightspace LMS
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -11,10 +11,10 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-edu
 ms.localizationpriority: medium
-description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability (LTI) for Desire2Learn (D2L) Brightspace.
+description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability (LTI) for the Desire2Learn (D2L) Brightspace LMS.
 ---
 
-# Integrate Microsoft Teams classes and meetings within Desire2Learn Brightspace
+# Integrate Microsoft Teams classes and meetings LTI apps within Desire2Learn Brightspace LMS
 
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps for the Desire2Learn (D2L) Brightspace LMS.
 
@@ -36,13 +36,13 @@ For the integration between D2L Brightspace and Teams to function correctly, Bri
    > [!NOTE]
    > Select **Class Team** for **Integration type** when setting up the connector to ensure compatibility with Teams LTI tools.
 
-2. Teams Meetings will work without the course connector. However, certain features such as **Add entire class** won't be available.
+2. Teams Meetings will work without the course connector. However, certain features such as **Add entire class** won't be available. We recommend installing **Brightspace Course Connector** for the Teams Meetings LTI app.
 
 ## Register Microsoft Teams LTI for use in Brightspace
 
 1. Visit [Microsoft LMS Gateway](https://lti.microsoft.com/) and select the **Go to Registration Portal** button.
 
-2. Sign in with a *Microsoft 365 administrator account* or an account with a *Teacher license*.
+2. Sign in with a *Microsoft 365 administrator account*.
 
 3. After signing in, select **Add new registration**.
 
@@ -96,7 +96,7 @@ Here's the procedure to create a new deployment:
 
 1. On the Brightspace site, select the tool that you created.
 2. Enter a deployment name.
-3. Select all security settings except **classlist** and **Anonymous**.
+3. Select all security settings except **Classlist** and **Anonymous**.
 4. Don't set configuration settings.
 5. Select **Create Deployment**.
 
