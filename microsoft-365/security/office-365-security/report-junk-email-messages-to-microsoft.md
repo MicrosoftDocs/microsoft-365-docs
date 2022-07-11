@@ -36,7 +36,7 @@ In addition, Microsoft 365 organizations with Microsoft Defender for Endpoint ad
 Watch this video that shows more information about the unified submissions experience.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50HhM]
 
-# Report a suspicious email to Microsoft
+## Report a suspicious email to Microsoft
 
 |Method|Description|
 |---|---|
