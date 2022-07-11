@@ -43,7 +43,7 @@ Microsoft 365 and Microsoft Teams offer several capabilities that can help manuf
 - [Maintain health and safety](#maintain-health-and-safety)
 
 > [!NOTE]
-> These scenarios are also part of the Microsoft Cloud for Manufacturing. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Manufacturing, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Financial Services](/industry/manufacturing).
+> These scenarios are also part of the Microsoft Cloud for Manufacturing. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Manufacturing, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Manufacturing](/industry/manufacturing).
 
 > [!NOTE]
 > For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.
@@ -97,11 +97,11 @@ Learn how to keep everyone informed and engaged with health and safety resources
 
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
 
-### Apps and services for financial services
+### Apps and services for manufacturing
 
-Ensure that your workers can communicate, collaborate, and deliver great customer service with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
+Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
-For financial services environments, the following apps and services can help you transform your business processes and support communication:
+For manufacturing environments, the following apps and services can help you transform your business processes and support communication:
 
 | Teams apps and services | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
