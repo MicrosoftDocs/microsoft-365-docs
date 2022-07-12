@@ -48,21 +48,25 @@ To configure attack surface reduction in your environment, follow these steps:
 
 1. [Enable hardware-based isolation for Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-2. Enable application control.
+2. [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment.md)
+
+3. Enable application control.
 
    1. Review base policies in Windows. See [Example Base Policies](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
    2. See the [Windows Defender Application Control design guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
    3. Refer to [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
-3. [Enable controlled folder access](enable-controlled-folders.md).
+4. [Enable controlled folder access](enable-controlled-folders.md).
 
-4. [Turn on Network protection](enable-network-protection.md).
+5. [Removable Storage Protection](device-control-removable-storage-protection.md)
 
-5. [Enable exploit protection](enable-exploit-protection.md).
+6. [Turn on Network protection](enable-network-protection.md).
 
-6. [Deploy attack surface reduction rules](attack-surface-reduction-rules-deployment.md).
+7. Enable [Web protection overview](web-protection-overview.md)
 
-7. Set up your network firewall.
+8. [Enable exploit protection](enable-exploit-protection.md).
+
+9. Set up your network firewall.
 
    1. Get an overview of [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
    2. Use the [Windows Defender Firewall design guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) to decide how you want to design your firewall policies.
@@ -291,7 +295,7 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 | [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus). |
 | [Exploit protection](exploit-protection.md) | Help protect the operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |
 | [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
-| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules. |
+| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules, followed by step-by-step guidance for testing, enabling and monitoring. |
 | [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md) | Lists the recommended steps for attack surface reduction rules deployment. |
 | [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
 | [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md) | Shows the steps to transition attack surface reduction rules from test (audit) mode to the active, enabled (Block) mode. |
