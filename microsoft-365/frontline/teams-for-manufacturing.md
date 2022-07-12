@@ -30,7 +30,7 @@ Empower your frontline workforce with digital tools and modern devices that offe
 
 1. [Choose your scenarios](#choose-your-scenarios) you want to implement for your business.
 2. [Set up Microsoft 365](flw-setup-microsoft-365.md) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
-3. [Configure services and apps](#configure-services-and-apps) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
+3. [Configure services and apps](#apps-and-services-for-manufacturing) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
 
 ## Choose your scenarios
 
