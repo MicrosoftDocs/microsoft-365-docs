@@ -43,9 +43,13 @@ These issues may occur on servers with many events flooding AuditD.
 
 This can happen if there are multiple consumers for AuditD, or too many rules with the combination of Microsoft Defender for Endpoint and third party consumers, or high workload that generates a lot of events. 
 
-If you encounter these issues, begin by [collecting MDEClientAnalyzer logs](run-analyzer-macos-linux.md) on the sample affected server. 
+To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-analyzer-macos-linux.md) on the sample affected server. 
 
-## XMDEClientAnalyzer
+> [!NOTE]
+> As a general best practice, it is recommended to update the [Microsoft Defender for Endpoint agent to latest available version](linux-whatsnew.md) and confirming issue still persists before investigating further.
+
+
+## XMDEClientAnalyzer 
 
 When you use XMDEClientAnalyzer, the following files will display output that provide insights to help you troubleshoot issues.
 - auditd_info.txt
@@ -85,8 +89,7 @@ To mitigate most AuditD performance issues, you can implement AuditD exclusion.
 > [!NOTE]
 > Exclusions should be made only for low threat and high noise initiators or paths. For example, do not exclude /bin/bash which risks creating a large blind spot.
 
-> [!NOTE]
-> As a general best practice, it is recommended to update the [Microsoft Defender for Endpoint agent to latest available version](linux-whatsnew.md) and confirming issue still persists before investigating further.
+
 
 ## Exclusion Types 
 
