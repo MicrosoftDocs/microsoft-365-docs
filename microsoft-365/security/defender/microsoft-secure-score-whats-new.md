@@ -27,9 +27,34 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+To make Microsoft Secure Score a better representative of your security posture, we continue to add new features and improvement actions.
 
-Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
+
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+
+## June 2022
+
+- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as a Secure Score improvement actions:
+
+  - Disallow offline access to shares
+  - Remove share write permission set to **Everyone**
+  - Remove shares from the root folder
+  - Set folder access-based enumeration for shares
+  - Update Microsoft Defender for Endpoint core components
+
+- A new Microsoft Defender for Identity recommendation is available as a Secure Score improvement action:
+
+  - Resolve unsecure domain configurations
+
+- A new [app governance](/defender-cloud-apps/app-governance-manage-app-governance) recommendation is now available as a Secure Score improvement action:
+
+  - Regulate apps with consent from priority accounts
+
+- New Salesforce and ServiceNow recommendations are now available as Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
+
+>[!Note]
+>Salesforce and ServiceNow controls are now available in public preview.
 
 ## April 2022
 

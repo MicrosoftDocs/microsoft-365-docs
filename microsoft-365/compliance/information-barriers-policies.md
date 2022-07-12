@@ -20,8 +20,6 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with information barriers
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article describes how to configure information barriers (IB) policies in your organization. Several steps are involved, so make sure you review the entire process before you begin configuring IB policies.
 
 You'll configure IB in your organization using the [Microsoft Purview compliance portal](https://compliance.microsoft.com) or by using [Office 365 Security and Compliance PowerShell](/powershell/exchange/scc-powershell). For organizations configuring IB for the first time, we recommend using the **Information barriers** solution in the compliance portal. If you're managing an existing IB configuration and you're comfortable using PowerShell, you still have this option.

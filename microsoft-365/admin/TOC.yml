@@ -3,7 +3,7 @@
   items: 
     - name: Top 20 admin help articles
       href: top-m365-admin-articles.yml
-    - name: Admin training video library
+    - name: YouTube - Microsoft 365 help for small businesses
       href: https://go.microsoft.com/fwlink/?linkid=2197659
     - name: Get started
       items: 
@@ -374,7 +374,6 @@
       items:
         - name: Device and app data protection methods 
           href: devices/choose-device-security.md
-        - name: Validate settings on Android or iOS
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security
@@ -441,8 +440,10 @@
           href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a Teams meeting with guest users
           href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
+    - name: Microsoft 365 feature descriptions
+      href: m365-feature-descriptions.md
     - name: Troubleshoot
-      href: /office/troubleshoot/
+      href: /office/troubleshoot/  
     - name: Contact support
       href: get-help-support.md
     - name: Navigation guide
