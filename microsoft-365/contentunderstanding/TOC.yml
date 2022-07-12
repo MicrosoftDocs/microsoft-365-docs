@@ -3,7 +3,9 @@
  
     - name: Build a custom model
       items:
-            - name: Decide which custom model to use 
+            - name: Overview of custom models 
+              href: custom-models-overview.md  
+            - name: Compare custom models 
               href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Classify and extract by text pattern
               items:

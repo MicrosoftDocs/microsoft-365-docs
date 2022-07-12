@@ -51,9 +51,11 @@ Or, if you don't need to build a custom model, you can use a [prebuilt model](pr
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn more about document understanding|[Document understanding overview](./document-understanding-overview.md)|
-|Learn more about form processing|[Form processing overview](./form-processing-overview.md)|
-|Understand the differences between the two methods|[Difference between document understanding and form processing models](./difference-between-document-understanding-and-form-processing-model.md)|
+|Learn about custom models in SharePoint Syntex|[Overview of custom models](./custom-models-overview.md)|
+|Learn more about classification and extraction by text pattern|[Classify and extract by text pattern](./document-understanding-overview.md)|
+|Learn more about extraction by layout|[Extract by layout](./form-processing-overview.md)|
+|Learn more about extraction by text pattern and layout|[Extract by text pattern and layout](./form-processing-overview.md)|
+|Understand the differences in custom models|[Compare custom models](./difference-between-document-understanding-and-form-processing-model.md)|
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |How to get SharePoint Syntex |[SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
