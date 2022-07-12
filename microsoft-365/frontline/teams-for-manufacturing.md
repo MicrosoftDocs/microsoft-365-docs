@@ -86,11 +86,7 @@ Make sure that all your workers have the knowledge and capabilities they need to
 
 More information: [Training and onboarding](flw-onboarding-training.md)
 
-### Maintain health and safety
-
-Learn how to keep everyone informed and engaged with health and safety resources using SharePoint, Teams, Yammer, Stream, and Viva Connections.
-
-## Configure services and apps
+## Apps and services for manufacturing
 
 Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
@@ -108,7 +104,7 @@ For manufacturing environments, the following apps and services can help you tra
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as sales numbers, KPIs, and other reports. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
+| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as , KPIs, and other reports. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
 | SharePoint | A new, connected SharePoint site is created whenever you create a new team. You can use SharePoint to store files, post news, and make sure your workers have access to important information. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
