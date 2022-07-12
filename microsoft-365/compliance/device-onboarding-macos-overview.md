@@ -19,8 +19,6 @@ description: Learn about onboarding macOS devices into Compliance solutions
 
 # Onboard macOS devices into Microsoft 365 overview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 MacOS devices can be onboarded into Microsoft Purview solutions using either Intune or JAMF Pro. The onboarding procedures differ depending on which management solution you are using. If your macOS devices have already been onboarded into Microsoft Defender for Endpoint (MDE), there are fewer steps. See [Next steps](#next-steps) for links to the appropriate procedures for you.
 
 **Applies to:**

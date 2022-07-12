@@ -23,7 +23,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->The following features are in preview or generally available (GA) in the latest release of Microsoft 365 Defender.
+Lists the new features and functionality in Microsoft 365 Defender. 
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
@@ -129,7 +129,7 @@ You can also get product updates and important notifications through the [messag
 
 - Microsoft 365 Defender
 
-  The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+  The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](microsoft-365-defender-portal.md).
 
 - [Microsoft 365 Defender threat analytics report](threat-analytics.md)
 

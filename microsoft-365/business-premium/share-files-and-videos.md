@@ -10,16 +10,9 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -27,9 +20,7 @@ search.appverid:
 description: "Share files and videos inside your campaign with Microsoft Teams and SharePoint. Microsoft 365 Business premium includes Teams which is a great way to safely share files and videos."
 ---
 
-
 # Share files and videos in a safe environment
-
 
 Another thing to pay attention to is ensuring all members of the organization control who can view and edit files, and that they are stored in a secure location with the proper permissions applied. Microsoft 365 Business Premium users can use Microsoft Teams to store files, and then share the files either inside or outside of the firm, practice or campaign. You can also send a SharePoint link. Sending a link rather than an email attachment means you know who is viewing and modifying the files, and they can't be viewed or modified without permission.
 
