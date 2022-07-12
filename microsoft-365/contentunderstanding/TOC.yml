@@ -1,7 +1,7 @@
     - name: Microsoft SharePoint Syntex
       href: index.md
  
-    - name: Build a custom model
+    - name: Create a custom model
       items:
             - name: Overview 
               href: custom-models-overview.md 
