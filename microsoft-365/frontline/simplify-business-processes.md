@@ -55,6 +55,7 @@ Add Power Apps to create low-code or no-code applications for your organization.
 |Financial services |You can create an app for relationship and account managers to track calls and emails to clients. |
 |Healthcare |You can create an app to track consumables inventory in exam rooms to make sure all rooms are ready for patients. |
 |Retail | You can create an app to manage and track your inventory, or to conduct store walks where a person in charge checks all areas of a store before opening. |
+|Manufacturing |You can create an app to track machinery and equipment inspections and repair needs. |
 
 More information: [Power Apps](/microsoftteams/manage-power-platform-apps) and [Power Apps and Microsoft Teams integration](/powerapps/teams/overview).
 
