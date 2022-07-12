@@ -102,7 +102,6 @@ You'll have to find a predefined SIT that detects the sensitive information that
 
 When the primary element is found in a scanned item, EDM will then look for *secondary* or supporting elements. Secondary elements don't need to follow a pattern, but do need to be within a certain proximity to the primary element.
 
-
 ## How matching works
 
 EDM works by comparing strings in your documents and emails against values in the sensitive information source table to see if the values in the scanned content are present in the table. The comparison is done by comparing one-way cryptographic hashes.
@@ -110,6 +109,19 @@ EDM works by comparing strings in your documents and emails against values in th
 
 > [!TIP]
 > You can use both EDM SITs and the predefined SITs that they are based on, together, in DLP rules for better detection. Use the EDM SIT with higher confidence levels, and the predefined SIT with lower confidence levels. For example use an EDM SIT that looks for social security number and other supporting data with strict requirements with high confidence. Using the high confidence will generate a DLP match when few instances are detected. Then use a predefined SIT, like the U.S. Social Security Number, with lower confidence levels that will trigger a DLP match when higher numbers of occurrences are detected.  
+
+## Services that EDM supports
+
+
+|Service  |Locations  |
+|---------|---------|
+| Microsoft Purview Data Loss Prevention    | - SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Devices       |
+|Microsoft Defender for Cloud Apps     | - SharePoint Online </br>- OneDrive for Business        |
+|Auto-labeling (service side)     |- SharePoint online </br>- OneDrive for Business </br>- Exchange Online         |
+|Auto-labeling (client side)     |- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients         |
+|Customer Managed Key     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients </br>- Devices         |
+|eDiscovery     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients  |
+|Insider Risk Management     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients      |
 
 ## See also
 

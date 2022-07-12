@@ -22,7 +22,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-While [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal) is the new home for monitoring and managing security across your identities, data, devices, and apps, you will need to access various portals for certain specialized tasks.
+While [Microsoft 365 Defender portal](microsoft-365-defender-portal.md) is the new home for monitoring and managing security across your identities, data, devices, and apps, you will need to access various portals for certain specialized tasks.
 
 > [!TIP] 
 > To access various relevant portals from Microsoft 365 Defender portal, select **More resources** in the navigation pane.

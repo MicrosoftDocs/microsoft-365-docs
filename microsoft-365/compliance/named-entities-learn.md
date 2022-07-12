@@ -20,8 +20,6 @@ description: "Learn how named entities help you detect sensitive items containin
 
 # Learn about named entities
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 *Named entities* are [sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Microsoft Purview compliance portal > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
 
 
