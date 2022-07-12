@@ -46,6 +46,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 Watch this short video to learn how you can use Microsoft Defender for Office 365 to easily investigate user submissions to determine the contents of a message, and respond to the submission by applying the appropriate remediation action. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
 
+> [!IMPORTANT]
+> To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.
+
 ## Use the Report Message feature
 
 ### Report junk and phishing messages
