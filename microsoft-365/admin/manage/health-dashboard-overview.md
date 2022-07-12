@@ -5,13 +5,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
+description: "Get an overview of Microsoft 365 Health dashboard and its role in keeping you up to date on the health of your Microsoft 365 organization."
 ---
 
 # Microsoft 365 Health dashboard
@@ -29,9 +28,7 @@ The Health dashboard is designed to give you a snapshot of the overall health of
 
 You need to be a member of the global admin role or global reader role to access the health dashboard.
 
-### Critical alerts
-
-:::image type="content" source="../../media/health-dashboard.png" alt-text="Health dashboard":::
+:::image type="content" source="../../media/health-dashboard-view.png" alt-text="Health dashboard":::
 
 At the top of the dashboard, you’ll see critical alerts about any issues that need your attention.  Two types of notifications will appear here:
 
@@ -45,11 +42,13 @@ If there are no alerts, a green banner lets you know that the health dashboard d
 
 In the center of the page, you’ll see current service health status of your top apps and services. This is a selected view of the top products. If you want to see the list of all your products, you can follow the link to see the full list. This section also shows you average daily usage and a view of license utilization. This helps you understand how products are being used in your organization.
 
+:::image type="content" source="../../media/service-health-usage.png" alt-text="Screenshot: Health dashboard service health and usage":::
+
 ### Microsoft 365 app updates
 
 To help you keep up to date with software updates, this section of the dashboard provides an at-a-glance view of whether Microsoft 365 desktop apps like Word, Excel, and PowerPoint are up-to-date. If some devices have fallen behind, you’ll see a list of devices and vulnerabilities to help you understand the risk. This information is powered by the Software Updates page, which you can access for more information.
 
-:::image type="content" source="../../media/health-dashboard-app-updates.png" alt-text="Screenshot: Health dashboard app update information":::
+:::image type="content" source="../../media/app-updates.png" alt-text="Screenshot: Health dashboard app update information":::
 
 ### Recommended actions
 
