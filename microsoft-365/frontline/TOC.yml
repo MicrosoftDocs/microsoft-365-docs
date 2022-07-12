@@ -122,9 +122,7 @@
       - name: Use retail team templates
         href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manufacturing
-      items:
-      - name: Overview
-        href: teams-for-manufacturing.md
+      href: teams-for-manufacturing.md
   - name: Apps for frontline workers
     items:
     - name: About apps in Microsoft Teams

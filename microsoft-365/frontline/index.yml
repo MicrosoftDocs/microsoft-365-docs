@@ -65,6 +65,8 @@ productDirectory:
           text: Retail
         - url: teams-for-financial-services.md
           text: Financial services
+        - url: teams-for-manufacturing.md
+          text: Manufacturing
     # Card
     - title: Manage Apps
       imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
