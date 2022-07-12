@@ -50,5 +50,5 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features** \> **Preview features**.
 
-2. Toggle the setting between **On** and **Off** and select **Save preferences**.
+2. Turn the setting to **On**, and then select **Save preferences**.
 
