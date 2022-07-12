@@ -13,13 +13,13 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about document understanding in Microsoft SharePoint Syntex.
+description: Learn about custom models in Microsoft SharePoint Syntex.
 ---
 
 # Overview of custom models in Microsoft SharePoint Syntex
 
 
-Content understanding in Microsoft SharePoint Syntex starts with models. Models let you to identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
 Three custom model types are available:
 
@@ -100,4 +100,4 @@ Form processing models can currently be applied only to the SharePoint document 
 
 [Extract by layout](form-processing-overview.md)
 
-[Extract by text pattern and layout](./form-processing-overview.md)
+[Extract by text pattern and layout](./extract-by-text-pattern-and-layout-overview.md)

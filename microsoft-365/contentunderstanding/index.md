@@ -36,15 +36,15 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex. Depending on the types of files you want to classify and extract information from, you can choose either to build a [custom model](custom-models-overview.md) or to use a [prebuilt model](prebuilt-overview.md).
+The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex. Depending on the types of files you want to classify and extract information from, you can choose to either build a [custom model](custom-models-overview.md) or use a [prebuilt model](prebuilt-overview.md).
 
 There are three custom model types you can choose from:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
 - [Extract by layout](form-processing-overview.md)
-- [Extract by text pattern and layout](extract-by-text-pattern-and-layput-overview.md)
+- [Extract by text pattern and layout](extract-by-text-pattern-and-layout-overview.md)
 
-Or, if you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md).
+Or, if you don't need to build a custom model, you can use a trained [prebuilt model](prebuilt-overview.md).
 
 > [!NOTE]
 > You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
@@ -96,7 +96,7 @@ The resources in this section help you learn how to create and configure the mod
 |Learn about custom models in SharePoint Syntex|[Overview of custom models](./custom-models-overview.md)|
 |Learn more about how to classify and extract by text pattern|[Overview of classification and extraction by text pattern](./document-understanding-overview.md)|
 |Learn more about how to extract by layout|[Overview of extraction by layout](./form-processing-overview.md)|
-|Learn more about how to extract by text pattern and layout|[Overview of extraction by text pattern and layout](./form-processing-overview.md)|
+|Learn more about how to extract by text pattern and layout|[Overview of extraction by text pattern and layout](./extract-by-text-pattern-and-layout-overview.md)|
 |Understand the differences in custom models|[Compare custom models](./difference-between-document-understanding-and-form-processing-model.md)|
 |Learn how to work with models|[Create a content center](./create-a-content-center.md)<br><br>[Create a classifier](./create-a-classifier.md)<br><br>[Duplicate a model](./duplicate-a-model.md)<br><br>[Rename a model](./rename-a-model.md)<br><br>[Create an extractor](./create-an-extractor.md)<br><br>[Rename an extractor](./rename-an-extractor.md)<br><br>[Create a form processing model](./create-a-form-processing-model.md)<br><br>[Explanation types](./explanation-types-overview.md)<br><br>[Use explanation templates](./explanation-templates.md)<br><br>[Apply a document understanding model](./apply-a-model.md)<br><br>[Learn about document understanding models through the sample model](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
