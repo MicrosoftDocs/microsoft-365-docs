@@ -42,7 +42,9 @@ When working with features in public preview, these features:
 
 ## Turn on preview features
 
-You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.
+If you turn on preview features, you'll have access to upcoming features, enabling you to provide feedback and help improve the overall experience before these features are generally available.
+
+:::image type="content" source="media/mdb-previewfeatures.png" alt-text="Screenshot showing how to turn on preview features in advanced settings for endpoints.":::
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
