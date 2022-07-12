@@ -1,5 +1,5 @@
 ---
-title: "Create EDM SIT schema and rule package new experience"
+title: "Create EDM SIT using the new experience"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ description: Create EDM SIT rule package new experience
 ms.custom: seo-marvel-apr2020
 ---
 
-# Create EDM SIT schema and rule package new experience
+# Create EDM SIT using the new experience
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -29,7 +29,7 @@ You can create the EDM schema and sensitive information type (or rule package) u
 
 - New experience
 
-If you want to create an EDM SIT using the classic experience see, [Create EDM SIT classic experience workflow](sit-create-edm-sit-classic-ux-workflow.md).
+If you want to create an EDM SIT using the classic experience see, [Create EDM SIT classic experience workflow](sit-create-edm-sit-classic-ux-workflow.md). If you need help deciding which one to use, see [Choosing the right EDM SIT creation experience for you](sit-get-started-exact-data-match-based-sits-overview.md#choosing-the-right-edm-sit-creation-experience-for-you).
 
 ## Before you begin
 
