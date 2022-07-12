@@ -14,6 +14,7 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
+- zerotrust-solution
 ms.prod: m365-security
 ---
 
