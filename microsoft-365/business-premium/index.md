@@ -46,7 +46,7 @@ In these first missions, you sign in and set up your initial walls of defense, s
 
 ## Train your team
 
-We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats.
+We've included a set of missions here with some objectives that need to be completed by your team (all employees). You have to make sure the team's devices are protected, and that your team is trained to use email and file sharing safely, and able to recognize and report threats.
 
 1. [**Set up BYOD devices**](m365bp-protect-pcs-macs.md). In this mission, you set up all the unmanaged (BYOD) devices so they are safely part of the ecosystem.
 
@@ -60,7 +60,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 Managed devices are safer because they are monitored for threat detections. In this last critical mission, you onboard and enroll devices in Defender for Business, so they are secured and protected with the best tools available.
 
-- [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization!
+- [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization.
 
 [:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Diagram outlining your missions with Safeguard Managed Devices selected.":::](m365bp-protect-devices.md)
 

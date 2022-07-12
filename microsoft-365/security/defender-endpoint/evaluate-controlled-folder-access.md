@@ -38,12 +38,6 @@ It is especially useful in helping protect against [ransomware](https://www.micr
 
 This article helps you evaluate controlled folder access. It explains how to enable audit mode so you can test the feature directly in your organization.
 
-> [!TIP]
-> You can also visit the Microsoft Defender for Endpoint demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
 ## Use audit mode to measure impact
 
 Enable the controlled folder access in audit mode to see a record of what *would* have happened if it was fully enabled. Test how the feature will work in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how many suspicious file modification attempts generally occur over a certain period of time.
