@@ -42,6 +42,9 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
+> [!NOTE]
+> The ["Block the following URLs" list in Safe Links policies](safe-links.md#block-the-following-urls-list-for-safe-links) is in the process of being deprecated. You can now manage block URL entries in the Tenant Allow/Block List. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
+
 ## What do you need to know before you begin?
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.

@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 06/17/2022
+ms.date: 07/11/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -43,6 +43,16 @@ The following table summarizes what's included in each Defender for Endpoint pla
 
 > [!IMPORTANT]
 > The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, such as endpoints running Windows Server or Linux, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+
+Microsoft Defender for Endpoint Plan 1 is available as a standalone user subscription license for commercial and education customers. It's also included as part of Microsoft 365 E3/A3.
+
+Microsoft Defender for Endpoint Plan 2, which was previously called Microsoft Defender for Endpoint, is available as a standalone license and as part of the following plans:
+
+- Windows 11 Enterprise E5/A5
+- Windows 10 Enterprise E5/A5
+- Microsoft 365 E5/A5/G5 (which includes Windows 10 or Windows 11 Enterprise E5)
+- Microsoft 365 E5/A5/G5/F5 Security
+- Microsoft 365 F5 Security & Compliance
 
 ## Mixed licensing scenarios
 
