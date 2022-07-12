@@ -4597,7 +4597,12 @@
     },
     {
       "source_path": "microsoft-365/business-video/index.yml",
-      "redirect_url": "/microsoft-365/admin/admin-video-library",
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2197659",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-video-library.yml",
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2197659",
       "redirect_document_id": true
     },
     {
