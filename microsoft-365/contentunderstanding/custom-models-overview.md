@@ -18,7 +18,6 @@ description: Learn about custom models in Microsoft SharePoint Syntex.
 
 # Overview of custom models in Microsoft SharePoint Syntex
 
-
 Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
 Three custom model types are available:
@@ -29,6 +28,8 @@ Three custom model types are available:
 
 [image]
 
+The type of model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+
 To see the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
 > [!NOTE]
@@ -36,14 +37,58 @@ To see the side-by-side differences in custom models, see [Compare custom models
 
 ## Classify and extract by text pattern
 
+Use the **Classify and extract by text pattern** to create a custom model to automatically classify documents and extract info from them. Use the patterns of the text in example documents to train the model.
+
+Classify files
+
+Identify and classify documents uploaded to the library. For example, the phrase "consulting and licensing agreement" might be used to identify other files like the one on this page
+
+Supported file types
+
+Office files, PDFs, images, and TIFF files.
+
+Supported languages
+
+Languages that use the same characters as English
+
+Learn more
+
+Overview of classification and extraction by text pattern https://go.microsoft.com/fwlink/?linkid=2201043
+
+
 
 ## Extract by layout
+
+Use the **Extract by layout** model to create a custom model to automatically identify field and table values from structured or semi-structured documents like forms.
+
+Extract information
+
+Pull information from the documents. For example, for each delivery order uploaded to your document library, pull the delivery order number and show it in a column of the library. Pull the info from the product table and save it to a list linked to the library.
+
+PDFs, images, and TIFF files
+
+Language support for more than 73 languages.
+
 
 
 ## Extract by text pattern and layout
 
+Use the **Extract by text pattern and layout** model to create a custom model to automatically extract info from them. Use the patterns of the text or the layout in example documents to train the model.
 
-The type of model you choose
+Early access
+
+Pull information from the files. For example, for each service agreement uploaded, pull the services provided based on the checkbox values, part of the layout of the file. Pull the agreement date based on the text, “THIS AGREEMENT”, which is always just before the date.
+
+PDFs, images, and TIFF files
+
+Only available in English
+
+Overview of extraction by text pattern and layout (preview) https://go.microsoft.com/fwlink/?linkid=2201164
+
+
+
+
+
 <!---
 For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 
