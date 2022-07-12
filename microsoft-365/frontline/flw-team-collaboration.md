@@ -57,6 +57,10 @@ Healthcare workers in a hospital use Teams capabilities to coordinate care. Ever
 
 Bank employees can use Teams to communicate across branches and share information. Each branch can use a separate channel, as can different work groups such as tellers and advisors. Banks can hold Teams meetings for different branches to learn about new policies and products. They can also hold morning meetings with the whole region before the branches open. When the bank launches a new product, such as a credit card or account type, fact sheets can be shared in Teams so everyone has quick access to new information.
 
+#### Manufacturing
+
+Manufacturing workers can use Teams to communicate and coordinate production within and across locations. Plants can hold morning stand-up meetings without anyone having to leave their stations. Workers can use chat to get in touch with each other and foremen or supervisors so they don't need to search across large areas to find help. Your team can use file sharing to make sure everyone has on-the-go access to manuals, instruction sheets, inspection records, and any other information your workers need.
+
 ## Apps in Teams
 
 Your team can use apps in Teams to coordinate and collaborate with each other on everyday tasks, such as the following:
@@ -90,6 +94,7 @@ The Walkie Talkie app provides instant push-to-talk communication. By using Walk
 |Retail | If a customer asks a store associate a question they don't know the answer to, the associate can use Walkie Talkie to call a manager or another expert without having to leave the customer. |
 |Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to call another staff member who works with the patient. |
 |Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
+|Manufacturing |A technician can use Walkie Talkie to consult with an expert in another location while performing equipment maintenance or repair. |
 
 [Learn how to manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
@@ -104,6 +109,7 @@ The Praise app allows management and frontline team members to congratulate each
 |Retail |A store manager can send the **Awesome** badge to an associate who meets their sales goals. |
 |Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
 |Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
+|Manufacturing |A supervisor can sent the **Leadership** badge to a foreman whose team is performing well. |
 
 [Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
@@ -118,6 +124,7 @@ Use Tasks in Teams to track to-do items for your whole retail team. Store manage
 |Retail |A store manager could assign associates a task to set up a new seasonal display. |
 |Healthcare |A team leader at a doctor's office could assign a nurse a task to attend a training session. |
 |Financial services |A bank manager can assign mortgage specialists a task to review and get familiar with new rates or policies. |
+|Manufacturing |A supervisor can assign a worker a task to inspect a new batch of products. |
 
 [Learn how to manage the Tasks app for your organization](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
@@ -132,6 +139,7 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 |Retail |A sales associate could submit an approval request to offer a discount or special rate to a customer. |
 |Healthcare |A nurse could submit an approval request to change an inpatient's medication. |
 |Financial services |A lending specialist could submit an approval request to a supervisor to offer a special interest rate. |
+|Manufacturing |A machine operator can submit a request for approval to adjust the settings on a piece of equipment. |
 
 [Learn how to manage the Approvals app for your organization](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
@@ -146,6 +154,7 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 |Retail |A manager could assign the out-of-the-box Store Opening template for the shift lead to complete every morning. |
 |Healthcare |A team leader could create and assign a recurring daily template with a checklist for equipment preparation. |
 |Financial services |A bank manager could create and assign a recurring daily template for tellers to confirm morning counts. |
+|Manufacturing |A supervisor can create and assign a template to keep track of progress on production of a new batch of items. |
 
 [Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
