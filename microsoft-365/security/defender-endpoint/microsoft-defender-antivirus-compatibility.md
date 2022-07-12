@@ -114,74 +114,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 
 3.  Set the GPO to **Enabled**.
 
-You can view your protection status in PowerShell by using the command [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) and the key `AMRunningMode`. Here's an example of what the output looks like:
-
-```
-PS C:\Users\contoso> Get-MpComputerStatus
-
-
-AMEngineVersion                  : 0.0.0.0
-AMProductVersion                 : 4.18.2205.4
-AMRunningMode                    : Not running
-AMServiceEnabled                 : False
-AMServiceVersion                 : 0.0.0.0
-AntispywareEnabled               : False
-AntispywareSignatureAge          : 4294967295
-AntispywareSignatureLastUpdated  :
-AntispywareSignatureVersion      : 0.0.0.0
-AntivirusEnabled                 : False
-AntivirusSignatureAge            : 4294967295
-AntivirusSignatureLastUpdated    :
-AntivirusSignatureVersion        : 0.0.0.0
-BehaviorMonitorEnabled           : False
-ComputerID                       : 5CF99D95-BF09-4B2E-9911-8E01C55642E5
-ComputerState                    : 0
-DefenderSignaturesOutOfDate      : False
-DeviceControlDefaultEnforcement  : N/A
-DeviceControlPoliciesLastUpdated : 01/01/1601 00:00:00
-DeviceControlState               : N/A
-FullScanAge                      : 4294967295
-FullScanEndTime                  :
-FullScanOverdue                  : False
-FullScanRequired                 : False
-FullScanSignatureVersion         :
-FullScanStartTime                :
-IoavProtectionEnabled            : False
-IsTamperProtected                : False
-IsVirtualMachine                 : True
-LastFullScanSource               : 0
-LastQuickScanSource              : 0
-NISEnabled                       : False
-NISEngineVersion                 : 0.0.0.0
-NISSignatureAge                  : 4294967295
-NISSignatureLastUpdated          :
-NISSignatureVersion              : 0.0.0.0
-OnAccessProtectionEnabled        : False
-ProductStatus                    : 1
-QuickScanAge                     : 4294967295
-QuickScanEndTime                 :
-QuickScanOverdue                 : False
-QuickScanSignatureVersion        :
-QuickScanStartTime               :
-RealTimeProtectionEnabled        : False
-RealTimeScanDirection            : 0
-RebootRequired                   : False
-TamperProtectionSource           : Signatures
-TDTMode                          : N/A
-TDTStatus                        : N/A
-TDTTelemetry                     : N/A
-TroubleShootingDailyMaxQuota     :
-TroubleShootingDailyQuotaLeft    :
-TroubleShootingEndTime           :
-TroubleShootingExpirationLeft    :
-TroubleShootingMode              :
-TroubleShootingModeSource        :
-TroubleShootingQuotaResetTime    :
-TroubleShootingStartTime         :
-PSComputerName                   :
-```
-
-In the preceding example, the Defender status is **Not Running**.
+You can view your protection status in PowerShell by using the command [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus). Check the value for `AMRunningMode`. You should see **Normal**, **Passive**, or **EDR Block Mode** if Microsoft Defender Antivirus is enabled on the endpoint. 
 
  > [!NOTE]
  > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded with the modern, unified solution described in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
@@ -259,7 +192,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
  | Windows Security app | <ol><li>On a Windows device, open the Windows Security app.</li><li>Select **Virus & threat protection**.</li><li>Under **Who's protecting me?** select **Manage providers**.</li><li>On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.</li></ol> | 
  | Task Manager | <ol><li>On a Windows device, open the Task Manager app.</li><li>Select the **Details** tab.</li><li>Look for **MsMpEng.exe** in the list.</li></ol> | 
  | Windows PowerShell <br/> (To confirm that Microsoft Defender Antivirus is running) | <ol><li>On a Windows device, open Windows PowerShell. </li><li>Run the following PowerShell cmdlet: `Get-Process`.</li><li>Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled.</li></ol> | 
- | Windows PowerShell <br/>(To confirm that antivirus protection is in place) |  You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<ol><li>On a Windows device, open Windows PowerShell.</li><li>Run following PowerShell cmdlet:<br/>`Get-MpComputerStatus | select AMRunningMode`.</li><li>Review the results. You should see either **Normal**, **Passive**, or **EDR Block Mode** if Microsoft Defender Antivirus is enabled on the endpoint. </li></ol>Note that this procedure is only to confirm whether Microsoft Defender Antivirus is enabled on an endpoint. | 
+ | Windows PowerShell <br/>(To confirm that antivirus protection is in place) |  You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<ol><li>On a Windows device, open Windows PowerShell.</li><li>Run following PowerShell cmdlet:<br/>`Get-MpComputerStatus | select AMRunningMode`.</li><li>Review the results. You should see **Normal**, **Passive**, or **EDR Block Mode** if Microsoft Defender Antivirus is enabled on the endpoint. </li></ol>Note that this procedure is only to confirm whether Microsoft Defender Antivirus is enabled on an endpoint. | 
 
 ## More details about Microsoft Defender Antivirus states
 
