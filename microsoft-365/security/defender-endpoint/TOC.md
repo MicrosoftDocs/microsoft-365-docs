@@ -262,6 +262,12 @@
 ##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
+#### [Device Control]()
+##### [Removable Storage Protection](device-control-removable-storage-protection.md)
+##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Installation](mde-device-control-device-installation.md)
+##### [Device Control Printer Protection](printer-protection.md)
+##### [Device Control Reports](device-control-report.md)
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
 ##### [Exploit protection evaluation](evaluate-exploit-protection.md)
@@ -273,6 +279,14 @@
 ##### [Protect your network](network-protection.md)
 ##### [Evaluate network protection](evaluate-network-protection.md)
 ##### [Turn on network protection](enable-network-protection.md)
+#### [Web protection]()
+##### [Web protection overview](web-protection-overview.md)
+##### [Web threat protection]()
+###### [Web threat protection overview](web-threat-protection.md)
+###### [Monitor web security](web-protection-monitoring.md)
+###### [Respond to web threats](web-protection-response.md)
+##### [Web content filtering](web-content-filtering.md)
+
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -352,21 +366,6 @@
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [Web protection]()
-##### [Web protection overview](web-protection-overview.md)
-##### [Web threat protection]()
-###### [Web threat protection overview](web-threat-protection.md)
-###### [Monitor web security](web-protection-monitoring.md)
-###### [Respond to web threats](web-protection-response.md)
-##### [Web content filtering](web-content-filtering.md)
-
-#### [Device Control]()
-##### [Removable Storage Protection](device-control-removable-storage-protection.md)
-##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
-##### [Device Installation](mde-device-control-device-installation.md)
-##### [Device Control Printer Protection](printer-protection.md)
-##### [Device Control Reports](device-control-report.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
