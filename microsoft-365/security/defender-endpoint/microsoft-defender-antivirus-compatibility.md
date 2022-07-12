@@ -102,6 +102,8 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 - Type: `REG_DWORD`
 - Value: `1`
 
+You can view your protection status in PowerShell by using the command [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus). Check the value for `AMRunningMode`. You should see **Normal**, **Passive**, or **EDR Block Mode** if Microsoft Defender Antivirus is enabled on the endpoint. 
+
  > [!NOTE]
  > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded with the modern, unified solution described in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
@@ -171,9 +173,14 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 ## How to confirm the state of Microsoft Defender Antivirus
 
-You can use one of several methods to confirm the state of Microsoft Defender Antivirus:
+You can use one of several methods to confirm the state of Microsoft Defender Antivirus. You can:
 
-### Use the Windows Security app
+- [Use the Windows Security app to identify your antivirus app](#use-the-windows-security-app-to-identify-your-antivirus-app).
+- [Use Task Manager to confirm that Microsoft Defender Antivirus is running](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Use Windows PowerShell to confirm that Microsoft Defender Antivirus is running](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Use Windows PowerShell to confirm that antivirus protection is running](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
+
+### Use the Windows Security app to identify your antivirus app
 
 1. On a Windows device, open the Windows Security app.
 
@@ -183,7 +190,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 
 4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.
 
-### Use Task Manager
+### Use Task Manager to confirm that Microsoft Defender Antivirus is running
 
 1. On a Windows device, open the Task Manager app.
 

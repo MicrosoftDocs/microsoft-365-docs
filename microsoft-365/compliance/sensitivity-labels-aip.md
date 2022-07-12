@@ -171,6 +171,7 @@ The following configurations from the AIP add-in aren't yet supported by built-i
 Although new capabilities for built-in labeling are being added all the time, the AIP Office Add-in supports the following capabilities that aren't planned to be available in future releases for built-in labeling:
 
 - Application of labels to Microsoft Office 97-2003 formats, such as .doc files
+- Local usage logging to the Windows event log
 - Permanently disconnected computers
 - Standalone editions of Office (sometimes called "Office Perpetual") rather than subscription-based
 
