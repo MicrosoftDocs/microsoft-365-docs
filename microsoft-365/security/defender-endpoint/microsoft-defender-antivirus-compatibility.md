@@ -185,14 +185,50 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 ## How to confirm the state of Microsoft Defender Antivirus
 
-You can use one of several methods to confirm the state of Microsoft Defender Antivirus, as described in the following table:
+You can use one of several methods to confirm the state of Microsoft Defender Antivirus:
 
- | Method | Procedure | 
- |:---|:---| 
- | Windows Security app | <ol><li>On a Windows device, open the Windows Security app.</li><li>Select **Virus & threat protection**.</li><li>Under **Who's protecting me?** select **Manage providers**.</li><li>On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.</li></ol> | 
- | Task Manager | <ol><li>On a Windows device, open the Task Manager app.</li><li>Select the **Details** tab.</li><li>Look for **MsMpEng.exe** in the list.</li></ol> | 
- | Windows PowerShell <br/> (To confirm that Microsoft Defender Antivirus is running) | <ol><li>On a Windows device, open Windows PowerShell. </li><li>Run the following PowerShell cmdlet: `Get-Process`.</li><li>Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled.</li></ol> | 
- | Windows PowerShell <br/>(To confirm that antivirus protection is in place) |  You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<ol><li>On a Windows device, open Windows PowerShell.</li><li>Run following PowerShell cmdlet:<br/>`Get-MpComputerStatus | select AMRunningMode`.</li><li>Review the results. You should see **Normal**, **Passive**, or **EDR Block Mode** if Microsoft Defender Antivirus is enabled on the endpoint. </li></ol>Note that this procedure is only to confirm whether Microsoft Defender Antivirus is enabled on an endpoint. | 
+### Use the Windows Security app
+
+1. On a Windows device, open the Windows Security app.
+
+2. Select **Virus & threat protection**.
+
+3. Under **Who's protecting me?** select **Manage providers**.
+
+4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.
+
+### Use Task Manager
+
+1. On a Windows device, open the Task Manager app.
+
+2. Select the **Details** tab.
+
+3. Look for **MsMpEng.exe** in the list.
+
+### Use Windows PowerShell to confirm that Microsoft Defender Antivirus is running
+
+> [!NOTE]
+> Use this procedure only to confirm whether Microsoft Defender Antirivus is running on an endpoint.
+
+1. On a Windows device, open Windows PowerShell. 
+
+2. Run the following PowerShell cmdlet: `Get-Process`.
+
+3. Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled.
+
+### Use Windows PowerShell to confirm that antivirus protection is running
+
+> [!NOTE]
+> Use this procedure only to confirm whether antivirus protection is enabled on an endpoint.
+
+1. On a Windows device, open Windows PowerShell.
+
+2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.
+
+3. Review the results. You should see **Normal**, **Passive**, or **EDR Block Mode** if antivirus protection is enabled on the endpoint. 
+
+> [!NOTE]
+> Note that this procedure is only to confirm whether antivirus protection is enabled on an endpoint.
 
 ## More details about Microsoft Defender Antivirus states
 
