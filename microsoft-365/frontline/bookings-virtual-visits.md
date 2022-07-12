@@ -75,7 +75,7 @@ To learn more, see [Create a Bookings calendar](https://support.microsoft.com//o
 
 In the booking calendar, go to **More options** (...) > **Settings**, and then select **Staff**. Add staff members and assign a role to each person you add. You can add up to 100 staff members to a booking calendar.
 
-The Bookings app integrates with Outlook. After you add staff, you’ll be able to view that person’s calendar availability and schedule bookings for them. To learn more, see [Add staff and view a Bookings calendar](https://support.microsoft.com/office/add-staff-and-view-a-bookings-calendar-6c579f61-8adb-4514-9458-021de2023fa0).
+The Bookings app integrates with Outlook. After you add staff, you’ll be able to view their calendar availability and schedule bookings for them. To learn more, see [Add staff and view a Bookings calendar](https://support.microsoft.com/office/add-staff-and-view-a-bookings-calendar-6c579f61-8adb-4514-9458-021de2023fa0).  
 
 ### Create appointment types
 

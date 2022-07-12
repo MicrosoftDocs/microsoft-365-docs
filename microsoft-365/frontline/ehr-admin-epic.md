@@ -62,7 +62,7 @@ Review the following information to get an understanding of the overall integrat
 
 You'll need to request access to the Teams app.
 
-1. Request to download the Teams app in the [Epic App Orchard marketplace](https://apporchard.epic.com/Gallery?id=6153). Doing this triggers a request from Epic to the Microsoft EHR connector team.
+1. Request to download the Teams app in the [Epic App Orchard marketplace](https://apporchard.epic.com/Gallery?id=16793). Doing this triggers a request from Epic to the Microsoft EHR connector team.
 1. After you make your request, send an email to [TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) with your organization name, tenant ID, and the email address of your Epic technical contact.
 1. The Microsoft EHR connector team will respond to your email with confirmation of enablement.
 
@@ -279,5 +279,5 @@ The EHR user’s unique ID is stored in one of the three geographic regions desc
 ## Related articles
 
 - [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
-- [Teams EHR connector admin reports](ehr-connector-report.md)
+- [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)

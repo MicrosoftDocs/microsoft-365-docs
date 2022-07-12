@@ -1,5 +1,5 @@
 ---
-title: Virtual appointments with Microsoft Teams.
+title: Virtual appointments with Microsoft Teams
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: 
@@ -61,4 +61,5 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 
 - [Manage the join experience for Teams virtual appointments on browsers](browser-join.md)
 - [Virtual Visits usage report](virtual-visits-usage-report.md)
+- [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)
