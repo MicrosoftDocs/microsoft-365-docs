@@ -31,7 +31,7 @@ ms.collection:
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Endpoint Attack Notifications is a managed threat hunting service. Once you apply and are accepted, you'll receive endpoint attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities.
+Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notification) is a managed threat hunting service. Once you apply and are accepted, you'll receive endpoint attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities.
 Microsoft Threat Experts – Experts on Demand lets you get expert advice about threats your organization is facing. You can reach out for help on threats your organization is facing. It's available as a subscription service.
 
 ## Apply for Endpoint Attack Notifications
