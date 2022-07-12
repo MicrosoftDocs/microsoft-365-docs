@@ -173,9 +173,14 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 ## How to confirm the state of Microsoft Defender Antivirus
 
-You can use one of several methods to confirm the state of Microsoft Defender Antivirus:
+You can use one of several methods to confirm the state of Microsoft Defender Antivirus. You can:
 
-### Use the Windows Security app
+- [Use the Windows Security app to identify your antivirus app](#use-the-windows-security-app-to-identify-your-antivirus-app).
+- [Use Task Manager to confirm that Microsoft Defender Antivirus is running](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Use Windows PowerShell to confirm that Microsoft Defender Antivirus is running](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Use Windows PowerShell to confirm that antivirus protection is running](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
+
+### Use the Windows Security app to identify your antivirus app
 
 1. On a Windows device, open the Windows Security app.
 
@@ -185,7 +190,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 
 4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.
 
-### Use Task Manager
+### Use Task Manager to confirm that Microsoft Defender Antivirus is running
 
 1. On a Windows device, open the Task Manager app.
 
