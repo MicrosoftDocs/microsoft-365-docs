@@ -28,7 +28,7 @@ ms.custom: seo-marvel-apr2020
 - [New experience](sit-create-edm-sit-unified-ux-workflow.md)
 - [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the *new experience* or the existing *classic experience*. EDM SITs can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article helps you understand the differences between the two experiences and helps you pick the right one for your needs.
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the *new experience* the existing *classic experience*  or via PowerShell. EDM SITs can be used in Microsoft Purview Data Loss Prevention, auto-labeling, Microsoft Purview Insider Risk Management policies, eDiscovery and certain content governance tasks  This article helps you understand the differences between the two experiences and helps you pick the right one for your needs.
 
 ## Before you begin
 
@@ -95,7 +95,7 @@ You can view the status of an EDM SIT in the creation process.
 
 ### Automated schema and SIT creation
 
-In the new experience you can provide a sample data file that has the same header values and enough rows (20-30) of representative data to the system. The system validates the format and creates the schema based on the headers. You then identify the primary fields in the schema and the system recommends the SITs that best match it to associate with the primary field. If you don't want to upload the file, you can enter the same values manually in the UI.
+In the new experience you can provide a sample data file that has the same header values and enough rows (10-20) of representative data to the system. The system validates the format and creates the schema based on the headers. You then identify the primary fields in the schema and the system recommends the SITs that best match it to associate with the primary field. If you don't want to upload the file, you can enter the same values manually in the UI.
 
 > [!IMPORTANT]
 > Be sure to use sample data values that aren't sensitive, but are in the same format as your actual sensitive data. Using non-sensitive data is essential because the sample data file doesn't get encrypted and hashed when you upload it like the actual sensitive information table does. The data from the sample data file is not retained or accessible once the EDM SIT is created.
@@ -106,12 +106,12 @@ The system generates the EDM SIT detection rules, one for each primary field. Ba
 
 <!--As the Azure-based EDM cloud service leverages a shared infrastructure, a misconfigured EDM SIT that triggers excessive EDM lookups could impact EDM performance for other customers if it wasn't controlled. This is prevented by throttling instances where EDM is misconfigured in a way that would cause excessive lookups.--> 
 
-The system warns you if it finds a primary field mapped to SIT that detects a broad range of values, called a *loosely defined SIT*.  This can cause the system to perform lookups on large numbers of strings that aren't related to the kind of content that your looking for. Mapping between these types of SITs and primary fields can result in false negatives and decrease performance.
+The system warns you if it finds a primary field mapped to a SIT that detects a broad range of values, called a *loosely defined SIT*.  This can cause the system to perform lookups on large numbers of strings that aren't related to the kind of content that you're looking for. Mapping between these types of SITs and primary fields can result in false negatives and decrease performance.
 
 > [!NOTE]
 > As *loosely defined SIT*, like a custom one that looks for all personal identification numbers, has detection rules that allow for greater variability in the items detected. A *strongly defined SIT*, like U.S. Social Security Number, has detection rules that only allow a narrow, well defined set of items to be detected. 
 
-The system will also warn you if the primary field you select occurs multiple times in a large number of rows. This can cause large numbers of result sets to be returned and processed, which could cause a time out.
+The system will also warn you if the values in the primary field you select occurs multiple times in a large number of rows. This can cause large numbers of result sets to be returned and processed, which could cause a time out. Time outs can result in missed detections and poor performance.
 
 
 ## Choosing the right EDM SIT creation experience for you
@@ -132,7 +132,7 @@ In EDM, you can create a maximum of 10 schemas. Each time you create an EDM SIT 
 
 ### You need to specify the name of your EDM schema
 
-If you need to specify a name for your EDM SIT schemas, you have to use the classic experience to create and manage them. Because the new experience automatically creates the schema, you don't get the opportunity to give your schema a custom name. The auto-generated name is concatenation of the EDM SIT name and the word *schema*. For example, if the EDM SIT name is *PatientNumber*, the schema name would be *PatientNumberschema*.
+If you need to specify a name for your EDM SIT schemas, you have to use the classic experience to create and manage them. Because the new experience automatically creates the schema, you don't get the opportunity to give your schema a custom name. The auto-generated name is a concatenation of the EDM SIT name and the word *schema*. For example, if the EDM SIT name is *PatientNumber*, the schema name would be *PatientNumberschema*.
 
 ### You need to edit EDM schemas that were created in the classic experience
 
