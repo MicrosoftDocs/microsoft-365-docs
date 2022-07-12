@@ -1,5 +1,5 @@
 ---
-title: Report spam, non-spam, and phishing messages to Microsoft
+title: Report spam, non-spam, phishing, suspicious emails and files to Microsoft
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection: 
   - M365-security-compliance
-description: Admins can learn about the different ways to report good and bad messages, URLs, email attachments, and admins to Microsoft for analysis.
+description: How do I report a suspicious email or file to Microsoft? Report messages, URLs, email attachments and files to Microsoft for analysis. Learn to report spam email and phishing emails.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Report items to Microsoft
+# How do I report a suspicious email or file to Microsoft?
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -29,9 +29,14 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, users and admins have several different methods for reporting email messages, URLs, and email attachments to Microsoft. 
+Wondering what to do with suspicious emails or files? In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, *users* and *admins* have different ways to report a suspicious email message, URL, or email attachment to Microsoft.
 
 In addition, Microsoft 365 organizations with Microsoft Defender for Endpoint admins also have several methods for reporting files.
+
+Watch this video that shows more information about the unified submissions experience.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50HhM]
+
+## Report a suspicious email to Microsoft
 
 |Method|Description|
 |---|---|

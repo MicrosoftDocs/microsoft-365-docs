@@ -1307,7 +1307,7 @@
     },
     {
       "source_path": "microsoft-365/admin/misc/index.md",
-      "redirect_url": "index",
+      "redirect_url": "misc",
       "redirect_document_id": false
     },
     {
@@ -7511,6 +7511,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-manage-Log4shell-guidance.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-manage-Log4shell-guidance",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-premium/m365-campaigns-security-overview.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
@@ -7538,6 +7543,11 @@
     {
       "source_path": "microsoft-365/business-premium/m365-customize-sign-in.md",
       "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/use.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
       "redirect_document_id": false
     }
   ]
