@@ -86,7 +86,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
 ## Notes
 
-<sup>1</sup> Encrypted files located on a local computer and cloud attachments copied to an email message aren't decrypted and indexed for eDiscovery. For more information and a workaround for these scenarios, see the [Decryption limitations with email attachments](#decryption-limitations-with-email-attachments) section in this article.
+<sup>1</sup> Encrypted files located on a local computer and cloud attachments copied to an email message aren't decrypted and indexed for eDiscovery. 
 
 <sup>2</sup> Only items labeled within SharePoint online service will be decrypted, everything else is unsupported including labeling or encrypting in the client before upload, legacy doc library RMS templates or settings, SMIME or any other standard etc. See [Enable sensitivity labels for Office files](sensitivity-labels-sharepoint-onedrive-files.md).
 
