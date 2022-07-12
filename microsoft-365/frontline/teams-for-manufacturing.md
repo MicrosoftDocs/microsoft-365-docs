@@ -40,7 +40,6 @@ Microsoft 365 and Microsoft Teams offer several capabilities that can help manuf
 - [Enhance workforce management](#enhance-workforce-management)
 - [Increase operational efficiency](#increase-operational-efficiency)
 - [Onboard and train employees](#onboard-and-train-employees)
-- [Maintain health and safety](#maintain-health-and-safety)
 
 > [!NOTE]
 > For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.
@@ -94,7 +93,7 @@ For manufacturing environments, the following apps and services can help you tra
 
 | Teams apps and services | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Approvals | Streamline the sign-off process by integrating Approvals into chat. For example, technicians and operators can request approval to perform and adjustment on a piece of equipment. | [Manage Approvals](/microsoftteams/approval-admin) | [Use Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
+| Approvals | Streamline the sign-off process by integrating Approvals into chat. For example, technicians and operators can request approval to perform an adjustment on a piece of equipment. | [Manage Approvals](/microsoftteams/approval-admin) | [Use Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
 | Chat | Enable quick conversations between staff and managers with secure chat in Teams. | [Chat, teams, channels & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documents and files | Share standard operating procedures, manuals, diagrams, inspection records, and more. | [How SharePoint and OneDrive interact with Microsoft Teams](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app.md) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
