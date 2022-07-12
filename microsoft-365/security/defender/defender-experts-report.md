@@ -63,7 +63,7 @@ The Defender Experts for Hunting reports provide you with the total number of de
 This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or defender experts notifications are labeled with “Defender Experts.”
 
 > [!NOTE]
-> The View notification link only appears if the value displayed in **Notified** is at least 1.
+> The **View notification** link only appears if the value displayed in **Notified** is at least 1.
 
 ## Identify potential attack entry points and other security weak spots
 
@@ -71,8 +71,8 @@ The MITRE ATT&CK tactics represent adversary goals—what they’re trying to ac
 
 1.	Reconnaissance
 2.  Resource Development
-1.  Initial access
-2.	Execution	
+3.  Initial access
+4.	Execution	
 3.	Persistence	
 4.	Privilege escalation	
 5.	Defense evasion	
@@ -90,7 +90,7 @@ Signals from Microsoft 365 Defender and investigations by Defender Experts for H
 
 Threat categories help identify and organize security threats into classes to assess and evaluate their impact and develop strategies to prevent or mitigate these threats to your environment. The **Threat categories observed** section of the report shows a bar chart with significant risks and threats detected in your environment, helping you understand the breadth and scope of your exposure.
 
-Threats are broadly classified into five categories. Among the various threat categories available, the following are carefully chosen because they are not covered under the purview of MITRE framework:
+Among the various threat categories available, the following categories are carefully chosen because they are not covered under the purview of MITRE ATT&CK framework:
 
 - Ransomware
 - Malware
