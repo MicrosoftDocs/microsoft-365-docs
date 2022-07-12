@@ -35,7 +35,7 @@ For Exchange, Microsoft eDiscovery tools support items encrypted with Microsoft 
 > [!NOTE]
 > The decryption of email messages sent with an [Microsoft Purview Message Encryption custom branding template](add-your-organization-brand-to-encrypted-messages.md) is not supported by Microsoft eDiscovery tools. When using an OME custom branding template, email messages are delivered to the OME portal instead of the recipient's mailbox. Therefore, you won't be able to use eDiscovery tools to search for encrypted messages because those messages are never received by the recipient's mailbox.
 
-For SharePoint, content labeled with SharePoint online service will be decrypted. Items labeled or encrypted in the client before uploading to SharePoint, legacy document library RMS templates or settings and S/MIME or other standards are not supported.
+For SharePoint, content labeled with SharePoint online service will be decrypted. Items labeled or encrypted in the client before uploading to SharePoint, legacy document library RMS templates or settings and S/MIME or other standards are not supported<sup>2</sup>.
 
 ## eDiscovery activities that support encrypted items
 
