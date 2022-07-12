@@ -686,6 +686,21 @@ Alerts can be sent every time an activity matches a rule, which can be noisy or 
 
 DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
+### DLP Policy Limitations
+|Description|Limit|
+|---|---|---|---|
+| Character limit in policy names | 64 |
+| Number of SITs per rule | 125 |
+| Number of rules per policy | Limited by the size of the policy(100 KB) & total count of 600 across all the policies |
+| Number of included locations per policy (EXO) | 1000 |
+| Number of included locations per policy (ODB) | 100 users or 50 groups |
+| Number of included locations per policy (SPO) | 100 |
+| Number of DLP policies | Limited by total rules of 600 across policies |
+| DLP rule size limit | 80KB |
+| DLP policy size limit | 100 KB |
+| Sender domain is | Domain name length <67 characters |
+| Number of recipients and domains in a single rule | Domain count <= 50 |
+
 ### Additional options
 
 If you have multiple rules in a policy, you can use the **Additional options** to control further rule processing if there is a match to the rule you are editing as well as setting the priority for evaluation of the rule.
