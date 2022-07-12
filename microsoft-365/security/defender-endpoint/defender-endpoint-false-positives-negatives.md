@@ -15,8 +15,8 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
+- m365solution-overview
+- m365solution-fpfn
 ms.topic: how-to
 ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola

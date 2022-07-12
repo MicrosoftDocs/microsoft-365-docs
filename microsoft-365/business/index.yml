@@ -72,15 +72,15 @@ conceptualContent:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: Get Microsoft 365 Business Premium
-        - url: ../business-premium/get-microsoft-365-business-premium.md
+        - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
           text: 1. Complete the basic setup process
         - url: ../business-premium/m365bp-security-overview.md
           itemType: overview
-          text: 2. Bump up security
+          text: 2. Set up security capabilities
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: 3. Set up unmanaged (BYOD) devices
+          text: 3. Protect unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-protect-email-overview.md
           itemType: overview
           text: 4. Use email more securely

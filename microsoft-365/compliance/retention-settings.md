@@ -23,8 +23,6 @@ description: "Understand the settings you can configure in a retention policy or
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Many settings for retention are common to both retention policies and retention label policies. Use the following information to help you configure these settings to proactively retain content, delete content, or both—retain and then delete the content.
 
 For the scenarios that support these policies for retention, see:
@@ -404,7 +402,7 @@ Before you configure retention, first familiarize yourself with capacity and sto
 #### Relabeling at the end of the retention period
 
 > [!NOTE]
-> This option is currently rolling out in preview and is subject to change.
+> This option is in preview and subject to change.
 
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically change the retention settings for the item.
 

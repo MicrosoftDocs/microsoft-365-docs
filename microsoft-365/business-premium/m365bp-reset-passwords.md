@@ -2,8 +2,8 @@
 title: "Reset passwords"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
