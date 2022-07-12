@@ -35,6 +35,8 @@ For Exchange, Microsoft eDiscovery tools support items encrypted with Microsoft 
 > [!NOTE]
 > The decryption of email messages sent with an [Microsoft Purview Message Encryption custom branding template](add-your-organization-brand-to-encrypted-messages.md) is not supported by Microsoft eDiscovery tools. When using an OME custom branding template, email messages are delivered to the OME portal instead of the recipient's mailbox. Therefore, you won't be able to use eDiscovery tools to search for encrypted messages because those messages are never received by the recipient's mailbox.
 
+For SharePoint, content labeled with SharePoint online service will be decrypted. Items labeled or encrypted in the client before uploading to SharePoint, legacy document library RMS templates or settings and S/MIME or other standards are not supported.
+
 ## eDiscovery activities that support encrypted items
 
 The following table identifies the supported tasks that can be performed in Microsoft 365 eDiscovery tools on encrypted files attached to email messages and encrypted documents in SharePoint and OneDrive. These supported tasks can be performed on encrypted files that match the criteria of a search. A value of `N/A` indicates the functionality isn't available in the corresponding eDiscovery tool.
@@ -48,9 +50,6 @@ The following table identifies the supported tasks that can be performed in Micr
 |Export encrypted files attached to email    |Yes       |Yes  |Yes    |
 |Export encrypted documents in SharePoint and OneDrive    |No       |No  |Yes    |
 |||||
-
-> [!NOTE]
-> <sup>1</sup> Encrypted files located on a local computer and cloud attachments copied to an email message aren't decrypted and indexed for eDiscovery. For more information and a workaround for these scenarios, see the [Decryption limitations with email attachments](#decryption-limitations-with-email-attachments) section in this article.
 
 ## Decryption limitations with sensitivity labels in SharePoint and OneDrive
 
@@ -66,18 +65,6 @@ Documents encrypted with the previous settings can still be returned by an eDisc
 
 > [!IMPORTANT]
 > Decryption isn't supported for files that are locally encrypted and then uploaded to SharePoint or OneDrive. For example, local files that are encrypted by the Azure Information Protection (AIP) client and then uploaded to Microsoft 365 aren't supported. Only files that are encrypted in the SharePoint or OneDrive service are supported for decryption.
-
-## Decryption limitations with email attachments
-
-The following scenarios describe limitations in the decryption of files attached to email messages. These scenario descriptions also include workarounds to mitigate these limitations.
-
-- If a file that's located on a local computer (and not stored in a SharePoint site or OneDrive account) is attached to an email message, and a sensitivity label that applies encryption is applied to the email message, the attached file can't be decrypted by eDiscovery. That means that if you run a keyword search query of the recipient's mailbox, the encrypted file attachment won't be returned by a keyword search query.
-
-  The workaround for this limitation is to search the sender's mailbox for the same file attachment. That's because the encryption applied by the sensitivity label is applied during transport of the email message. This means the attachment is encrypted when the email message is sent. The result is the instance of the attached file in the sender's mailbox is unencrypted, even though the same file in the recipient's mailbox is encrypted.
-
-- Similarly, cloud attachments (files stored in a SharePoint site or OneDrive account) that are copied to an email message (by using the **Attach as copy** option in Outlook) can't be decrypted by eDiscovery. This is also because the encryption that applied by a sensitivity label is applied when the email message is sent. Searching the sender's mailbox for the unencrypted instance of the copy of the cloud attachment is also the workaround for this limitation.
-
-In both these scenarios, email messages with encrypted file attachments can be returned by an eDiscovery search if an email property (such as sent date, sender, recipient, or subject) matches the search query.
 
 ## Requirements for decryption in eDiscovery
 
@@ -96,3 +83,11 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 - In addition to decrypting file attachments when exporting search results, you can also preview the decrypted file when previewing search results. You can only view the rights-protected email message after you export it.
 
 - If you need to prevent someone from decrypting RMS-protect messages and encrypted file attachments, you have to create a custom role group (by copying the built-in eDiscovery Manager role group) and then remove the RMS Decrypt management role from the custom role group. Then add the person who you don't want to decrypt messages as a member of the custom role group.
+
+## Notes
+
+<sup>1</sup> Encrypted files located on a local computer and cloud attachments copied to an email message aren't decrypted and indexed for eDiscovery. For more information and a workaround for these scenarios, see the [Decryption limitations with email attachments](#decryption-limitations-with-email-attachments) section in this article.
+
+<sup>2</sup> Only items labeled within SharePoint online service will be decrypted, everything else is unsupported including labeling or encrypting in the client before upload, legacy doc library RMS templates or settings, SMIME or any other standard etc. See [Enable sensitivity labels for Office files](sensitivity-labels-sharepoint-onedrive-files.md).
+
+<sup>3</sup> The RMS keys need to be fully managed in M365/O365 cloud service - meaning DKE, BYOK, OnPrem RMS, etc. are not supported. See [Your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key#tenant-root-keys-generated-by-microsoft).
