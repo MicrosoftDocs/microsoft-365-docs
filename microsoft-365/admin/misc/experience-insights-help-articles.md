@@ -17,7 +17,7 @@ As the admin of a Microsoft 365 organization, you get a report of the Microsoft 
 
 :::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
-## How to get to the Adoption and Training dashboard
+## How to get to the Experience insights dashboard
 
 Sign in to the Microsoft 365 admin center as a user who is a member of the global reader admin role.
 
