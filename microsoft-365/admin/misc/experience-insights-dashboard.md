@@ -24,9 +24,9 @@ There are a couple of ways to get the Experience insights dashboard page. If you
 > [!NOTE]
 > The Experience insights dashboard is in preview and may not be available to all customers.
 
-:::image type="content" source="../../media/experience-insights-dashboard.png" alt-text="Screenshot: Experience insights dashboard":::
+If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option.
 
-If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option
+:::image type="content" source="../../media/experience-insights-dashboard.png" alt-text="Screenshot: Experience insights dashboard":::
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
