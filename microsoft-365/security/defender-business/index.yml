@@ -32,6 +32,8 @@ landingContent:
             url: mdb-simplified-configuration.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
+          - text: Resources for Microsoft partners
+            url: mdb-partners.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
       - linkListType: how-to-guide
@@ -52,6 +54,8 @@ landingContent:
             url: trial-playbook-defender-business.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
+          - text: Turn on preview features
+            url: mdb-preview.md
 
   # Card
   - title: Help and more resources
