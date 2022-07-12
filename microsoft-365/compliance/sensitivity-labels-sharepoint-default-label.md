@@ -71,9 +71,9 @@ For an existing document library:
 
 1. In SharePoint, navigate to the document library > **Settings**.
 
-2. From the **Library settings** flyout pane, select **Default sensitivity label**, and then select a label from the drop-down box.
+2. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select a label from the drop-down box.
 
-If you're creating a new document library, you can configure the same **Default sensitivity label** setting from the **Create document library** flyout pane.
+If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
 
 ## Monitoring application of library default sensitivity labels
 
