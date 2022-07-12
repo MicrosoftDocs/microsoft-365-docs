@@ -27,8 +27,6 @@ description: "How to create a custom Messaging Records Management (MRM) archivin
 
 # Customize an archive and deletion policy for mailboxes in your organization
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
 
 You do this by creating a Messaging Records Management (MRM) retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the mailbox after they reach a certain age limit.

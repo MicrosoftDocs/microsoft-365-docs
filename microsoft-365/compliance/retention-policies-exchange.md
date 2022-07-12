@@ -23,8 +23,6 @@ description: "Learn how retention works for Exchange."
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)

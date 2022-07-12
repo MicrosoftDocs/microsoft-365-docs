@@ -23,7 +23,6 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 The Microsoft Defender for Endpoint API Explorer is a tool that helps you explore various Defender for Endpoint APIs interactively.
@@ -36,13 +35,13 @@ You can also use the tool to explore the gallery of sample queries, copy result 
 
 With the API Explorer, you can:
 
-- Run requests for any method and see responses in real-time
-- Quickly browse through the API samples and learn what parameters they support
-- Make API calls with ease; no need to authenticate beyond the management portal sign in
+- Run requests for any method and see responses in real-time.
+- Quickly browse through the API samples and learn what parameters they support.
+- Make API calls with ease; no need to authenticate beyond the management portal signin.
 
 ## Access API Explorer
 
-From the left navigation menu, select **Partners & APIs** \> **API Explorer**.
+From the left navigation menu, select **Partners & APIs** \> **[API Explorer](https://security.microsoft.com/interoperability/api-explorer)**.
 
 ## Supported APIs
 

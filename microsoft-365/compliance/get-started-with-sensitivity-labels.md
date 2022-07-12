@@ -25,8 +25,6 @@ description: "Ready to deploy sensitivity labels to help protect your organizati
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 For information about what sensitivity labels are and how they can help you protect your organization's data, see [Learn about sensitivity labels](sensitivity-labels.md).
 
 If you have [Azure Information Protection](/azure/information-protection/what-is-information-protection) and are still using Azure Information Protection labels that were managed from the Azure portal, you must migrate these labels to the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). For Windows computers, you can then [choose which labeling client to use](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) for your published sensitivity labels.
@@ -41,7 +39,7 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable—you define it once, and then you can include it in several label policies assigned to different users. So for example, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
 
-
+> [!TIP]
 > You might be eligible for the automatic creation of default labels and a default label policy that takes care of steps 1-3 for you. For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
 The basic flow for deploying and applying sensitivity labels:

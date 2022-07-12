@@ -17,14 +17,13 @@ ms.collection:
 - m365solution-overview
 - m365solution-mip
 - m365initiative-compliance
+- zerotrust-solution
 description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 
 # Deploy an information protection solution with Microsoft Purview
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Your information protection strategy is driven by your business needs. Many organizations must comply with regulations, laws, and business practices. Additionally, organizations need to protect proprietary information, such as data for specific projects.
 
