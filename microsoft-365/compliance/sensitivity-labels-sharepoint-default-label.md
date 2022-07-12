@@ -23,8 +23,6 @@ description: "Configure a default sensitivity label for a SharePoint document li
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!NOTE]
 > This feature is in preview and subject to change.
 
@@ -59,8 +57,6 @@ Summary of outcomes:
 - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## Limitations
-
-- A maximum of 25,000 documents per tenant can be labeled by using this feature.
 
 - Doesn't apply to existing files at rest in SharePoint.
 
