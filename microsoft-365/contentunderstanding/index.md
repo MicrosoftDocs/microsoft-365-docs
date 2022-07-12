@@ -42,7 +42,7 @@ There are three custom model types you can choose from:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
 - [Extract by layout](form-processing-overview.md)
-- [Extract by text pattern and layout](form-processing-overview.md)
+- [Extract by text pattern and layout](extract-by-text-pattern-and-layput-overview.md)
 
 Or, if you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md).
 
@@ -52,9 +52,9 @@ Or, if you don't need to build a custom model, you can use a [prebuilt model](pr
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn about custom models in SharePoint Syntex|[Overview of custom models](./custom-models-overview.md)|
-|Learn more about classification and extraction by text pattern|[Classify and extract by text pattern](./document-understanding-overview.md)|
-|Learn more about extraction by layout|[Extract by layout](./form-processing-overview.md)|
-|Learn more about extraction by text pattern and layout|[Extract by text pattern and layout](./form-processing-overview.md)|
+|Learn more about how to classify and extract by text pattern|[Overview of classification and extraction by text pattern](./document-understanding-overview.md)|
+|Learn more about how to extract by layout|[Overview of extraction by layout](./form-processing-overview.md)|
+|Learn more about how to extract by text pattern and layout|[Overview of extraction by text pattern and layout](./form-processing-overview.md)|
 |Understand the differences in custom models|[Compare custom models](./difference-between-document-understanding-and-form-processing-model.md)|
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
@@ -93,6 +93,11 @@ The resources in this section help you learn how to create and configure the mod
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
+|Learn about custom models in SharePoint Syntex|[Overview of custom models](./custom-models-overview.md)|
+|Learn more about how to classify and extract by text pattern|[Overview of classification and extraction by text pattern](./document-understanding-overview.md)|
+|Learn more about how to extract by layout|[Overview of extraction by layout](./form-processing-overview.md)|
+|Learn more about how to extract by text pattern and layout|[Overview of extraction by text pattern and layout](./form-processing-overview.md)|
+|Understand the differences in custom models|[Compare custom models](./difference-between-document-understanding-and-form-processing-model.md)|
 |Learn how to work with models|[Create a content center](./create-a-content-center.md)<br><br>[Create a classifier](./create-a-classifier.md)<br><br>[Duplicate a model](./duplicate-a-model.md)<br><br>[Rename a model](./rename-a-model.md)<br><br>[Create an extractor](./create-an-extractor.md)<br><br>[Rename an extractor](./rename-an-extractor.md)<br><br>[Create a form processing model](./create-a-form-processing-model.md)<br><br>[Explanation types](./explanation-types-overview.md)<br><br>[Use explanation templates](./explanation-templates.md)<br><br>[Apply a document understanding model](./apply-a-model.md)<br><br>[Learn about document understanding models through the sample model](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
 |Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
