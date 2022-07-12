@@ -56,6 +56,14 @@ Summary of outcomes:
 
 - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
+- You have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md)
+
+- Microsoft 365 Apps for enterprise:
+    - **Windows**:
+    - **macOS**: 
+    - **iOS**:
+    - **Android**:
+
 ## Limitations
 
 - Doesn't apply to existing files at rest in SharePoint.
@@ -74,6 +82,8 @@ For an existing document library:
 2. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select a label from the drop-down box. For example:
     
     ![Configuring a default sensitivity label for a SharePoint library.](../media/default-sensitivity-label-spo.png)
+    
+    Although you see the setting mention support for PDF, this file type isn't currently supported for this scenario.
 
 If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
 
