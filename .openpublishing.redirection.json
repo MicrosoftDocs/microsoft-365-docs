@@ -1307,7 +1307,7 @@
     },
     {
       "source_path": "microsoft-365/admin/misc/index.md",
-      "redirect_url": "index",
+      "redirect_url": "misc",
       "redirect_document_id": false
     },
     {
@@ -4597,8 +4597,13 @@
     },
     {
       "source_path": "microsoft-365/business-video/index.yml",
-      "redirect_url": "/microsoft-365/admin/admin-video-library",
-      "redirect_document_id": true
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2197659",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-video-library.yml",
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2197659",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
@@ -7508,6 +7513,11 @@
     {
       "source_path": "microsoft-365/business-premium/m365bp-set-up-windows-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-manage-Log4shell-guidance.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-manage-Log4shell-guidance",
       "redirect_document_id": false
     },
     {

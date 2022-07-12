@@ -76,6 +76,6 @@ You can choose from several methods to upgrade:
 
 [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227#WindowsVersion=Windows_10)
 
-[Microsoft 365 for business training videos](../admin/admin-video-library.yml)
+[Microsoft 365 for business training videos](https://go.microsoft.com/fwlink/?linkid=2197659)
 
 
