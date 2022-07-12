@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 description: Use Microsoft 365 retention labels and policies to manage personal data in your Microsoft 365 environment.
 ---

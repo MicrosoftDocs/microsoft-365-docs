@@ -1,5 +1,5 @@
 ---
-title: "Learn about retention policies & labels to automatically retain or delete content"
+title: "Learn about retention policies & labels to retain or delete"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,15 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn about retention policies and retention labels that help you to retain what you need and delete what you don't.
+description: Learn about retention policies and retention labels to retain what you need and delete what you don't.
 ---
 
 # Learn about retention policies and retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > If you're seeing messages about retention policies in Teams or have questions about retention labels in your apps, contact your IT department for information about how they have been configured for you. In the meantime, you might find the following articles helpful:

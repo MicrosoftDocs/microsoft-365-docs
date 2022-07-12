@@ -23,8 +23,6 @@ description: "Learn about records to help you implement a records management sol
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!NOTE]
 > Because regulatory records block editing, record versioning is not available for regulatory records.
 >

@@ -363,7 +363,7 @@
     {
       "source_path": "microsoft-365/business/increase-threat-protection.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-devices.md",
@@ -457,7 +457,7 @@
     },
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-windows-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
     {
@@ -1307,7 +1307,7 @@
     },
     {
       "source_path": "microsoft-365/admin/misc/index.md",
-      "redirect_url": "index",
+      "redirect_url": "misc",
       "redirect_document_id": false
     },
     {
@@ -6342,7 +6342,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/connect.md",
-      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-up-windows-devices",
       "redirect_document_id": false
     },
     {
@@ -6628,7 +6628,7 @@
     {
       "source_path": "microsoft-365/campaigns/get-microsoft-365-campaigns.md",
       "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-campaigns",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/index.md",
@@ -6667,8 +6667,8 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-campaign-infographic.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-protect-campaign-infographic",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-pcs-macs.md",
@@ -6677,33 +6677,33 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-security-overview.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-security-overview",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-sign-in.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-sign-in",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-sign-up.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-sign-up",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-campaigns",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-users.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-users",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-users",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/campaigns/m365-customize-sign-in.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-customize-sign-in",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/microsoft-365-campaigns-setup-overview.md",
       "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/send-encrypted-email.md",
@@ -7504,6 +7504,51 @@
       "source_path": "microsoft-365/compliance/privileged-access-management-overview.md",
       "redirect_url": "/microsoft-365/compliance/privileged-access-management",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-set-up-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-manage-Log4shell-guidance.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-manage-Log4shell-guidance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-security-overview.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-protect-campaign-infographic.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-users.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-sign-up.md",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-campaigns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-sign-in.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-customize-sign-in.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/use.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
     }
   ]
 }

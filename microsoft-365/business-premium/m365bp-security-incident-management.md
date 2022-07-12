@@ -2,8 +2,8 @@
 title: "Security incident management"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -36,5 +36,9 @@ Watch a short video on a typical incident response.
 To learn more about incident responses, use the following steps:
 
 1. [Review security recommendations](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
-1. [Review remediation actions](m365bp-review-remediation-actions-devices.md).
-1. [Respond to a compromised email account](../security/office-365-security/responding-to-a-compromised-email-account.md).
+
+2. [Review detected threats and take action](m365bp-review-threats-take-action.md).
+
+3. [Review remediation actions](m365bp-review-remediation-actions-devices.md).
+
+4. [Respond to a compromised email account](../security/office-365-security/responding-to-a-compromised-email-account.md).

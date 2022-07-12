@@ -19,8 +19,6 @@ ms.topic: how-to
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
 ms.custom: FPFN
 ---
 
