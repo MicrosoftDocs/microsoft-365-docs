@@ -45,7 +45,7 @@ Make sure you review:
 |---|---|
 |[Phase 1: Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- Read access to the sensitive data|
 |[Phase 2:Create the sample file](sit-create-edm-sit-unified-ux-sample-file.md)|- Know the column headers and the format of the data you will be looking for in each column.
-|[Phase 3: Create the EDM schema and SIT rule package](sit-create-edm-sit-unified-ux-schema-rule-package.md)|- Access to **Microsoft Purview Compliance portal** > **Data classification** > **Exact data match** |
+|[Phase 3: Create the EDM SIT](sit-create-edm-sit-unified-ux-schema-rule-package.md)|- Access to **Microsoft Purview Compliance portal** > **Data classification** > **Exact data match** |
 |[Phase 4: Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)|- Custom security group and user account </br>- **Hash and upload from one computer**: local admin access to a computer with direct internet access and to host the EDM Upload Agent </br>- **Hash and upload from separate computers**: local admin access to a computer with direct internet access and host the EDM Upload Agent for the upload and local admin access to a secure computer to host the EDM Upload Agent to hash the sensitive information source table </br>- Read access to the sensitive information source table file|
 |[Phase 5: Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - Access to the Microsoft Purview compliance portal
 
