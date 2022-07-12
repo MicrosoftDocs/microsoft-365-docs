@@ -83,7 +83,7 @@ For an existing document library:
     
     ![Configuring a default sensitivity label for a SharePoint library.](../media/default-sensitivity-label-spo.png)
     
-    Although you see the setting mention support for PDF, this file type isn't currently supported for this scenario.
+    Although you see the setting mentions support for PDF, this file type isn't currently supported for this scenario.
 
 If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
 
