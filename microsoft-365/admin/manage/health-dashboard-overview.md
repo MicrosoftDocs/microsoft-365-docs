@@ -5,6 +5,7 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
+ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom: 
 - AdminSurgePortfolio
