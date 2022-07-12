@@ -1,5 +1,5 @@
 ---
-title: Custom models overview in Microsoft SharePoint Syntex
+title: Overview of custom models in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,10 +16,36 @@ ms.localizationpriority:  medium
 description: Learn about document understanding in Microsoft SharePoint Syntex.
 ---
 
-# Custom models in Microsoft SharePoint Syntex
+# Overview of custom models in Microsoft SharePoint Syntex
 
 
-Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and then to extract relevant information from each file. For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
+Content understanding in Microsoft SharePoint Syntex starts with models. Models let you to identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+
+Three custom model types are available:
+
+- [Classify and extract by text pattern](document-understanding-overview.md)
+- [Extract by layout](form-processing-overview.md)
+- [Extract by text pattern and layout](form-processing-overview.md)
+
+[image]
+
+To see the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
+
+> [!NOTE]
+> If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and purchase orders.
+
+## Classify and extract by text pattern
+
+
+## Extract by layout
+
+
+## Extract by text pattern and layout
+
+
+The type of model you choose
+<!---
+For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 
 Content understanding lets you create *models* to identify and extract the information you need. Models have value in helping to resolve business issues for search, business processes, compliance, and many others.
 
@@ -31,7 +57,7 @@ There are two custom model types that you can use:
 While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
 > [!NOTE]
-> See the [Get started driving adoption of SharePoint Syntex](./adoption-getstarted.md) for more information about form processing and document understanding scenario examples.
+> To see examples of how models can used in your organization, see [Scenarios and use cases for Microsoft SharePoint Syntex](./adoption-scenarios.md).
 
 ## Structured versus unstructured and semi-structured content
 
@@ -64,7 +90,7 @@ Form processing models also create new [SharePoint content types](https://suppor
 You can apply document understanding models to SharePoint document libraries that you have access to. Use the content center to create a document understanding model, and apply it to different document libraries. The content center gives you a more central control for how document understanding models are used and where they're applied. Note this information must also roll up to a content center.
 
 Form processing models can currently be applied only to the SharePoint document library from which you created them. This allows licensed users with access to the site to create a form processing model. Note that an admin needs to enable form processing on a SharePoint document library for it to be available to licensed users.
-
+--->
 
 ## See also
 

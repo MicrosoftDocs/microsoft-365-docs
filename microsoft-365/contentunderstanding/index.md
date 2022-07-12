@@ -36,7 +36,7 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the methods of data classification and extraction used by SharePoint Syntex. Depending on the results you want to achieve, you can choose either to build a custom model or to use a prebuilt model.
+The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex. Depending on the types of files you want to classify and extract information from, you can choose either to build a [custom model](custom-models-overview.md) or to use a [prebuilt model](prebuilt-overview.md).
 
 There are three custom model types you can choose from:
 
@@ -67,7 +67,7 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to start planning to use SharePoint Syntex |[SharePoint Syntex adoption: get started](./adoption-getstarted.md)| 
+|Learn how to start planning to use SharePoint Syntex |[Get started driving adoption of Microsoft SharePoint Syntex](./adoption-getstarted.md)| 
 |See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization |[Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md)| 
 |Set up and run a trial pilot program for SharePoint Syntex |[Run a trial](./trial-syntex.md)|
 |Learn how to use SharePoint Syntex to automate document processes |[Manage contracts using a Microsoft 365 solution](./solution-manage-contracts-in-microsoft-365.md)| 

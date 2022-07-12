@@ -1,5 +1,5 @@
 ---
-title: Form processing overview in Microsoft SharePoint Syntex
+title: Overview of extraction by layout in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ ms.localizationpriority:  medium
 description: Learn how to use AI Build to create form processing models in Microsoft SharePoint Syntex.
 ---
 
-# Form processing overview in Microsoft SharePoint Syntex
+# Overview of extraction by layout in Microsoft SharePoint Syntex
 
  ![AI Builder.](../media/content-understanding/ai-builder.png)</br>
 

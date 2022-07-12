@@ -1,5 +1,5 @@
 ---
-title: Document understanding overview in Microsoft SharePoint Syntex
+title: Overview of classification and extraction by text pattern in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about document understanding in Microsoft SharePoint Syntex.
 ---
 
-# Document understanding overview in Microsoft SharePoint Syntex
+# Overview of classification and extraction by text pattern in Microsoft SharePoint Syntex
 
 
 </br>
