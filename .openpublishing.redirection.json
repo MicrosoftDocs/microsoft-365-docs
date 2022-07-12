@@ -7506,8 +7506,13 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/business-premium/m365bp-set-up-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/tvm-manage-Log4shell-guidance.md",
-      "redirect_url": "microsoft-365/security/defender-vulnerability-management/tvm-manage-Log4shell-guidance",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-manage-Log4shell-guidance",
       "redirect_document_id": false
     }
   ]
