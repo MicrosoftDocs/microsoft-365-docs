@@ -66,7 +66,7 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 As part of this configuration, we enable the **Office 365** application, which includes Teams and Teams-integrated services such as SharePoint.
 
 > [!NOTE]
-> Changes to cross-tenant access settings may take up to three hours fifteen minutes to take effect.
+> Changes to cross-tenant access settings may take up to six hours to take effect.
 
 > [!NOTE]
 > Shared channels between Commercial and GCC clouds are not supported.
