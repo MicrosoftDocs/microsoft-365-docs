@@ -16,6 +16,8 @@
           href: microsoft-365-security-center-mde.md
         - name: Defender for Office 365 in Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
+        - name: Defender for Identity in Microsoft 365 Defender
+          href: microsoft-365-security-center-mdi.md
         - name: Defender for Cloud Apps in Microsoft 365 Defender
           href: microsoft-365-security-center-defender-cloud-apps.md
         - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
@@ -148,6 +150,8 @@
                 href: incident-queue.md
               - name: Manage incidents
                 href: manage-incidents.md
+              - name: Export incidents queue to CSV file
+                href: export-incidents-queue.md
               - name: Respond to your first incident
                 items: 
                  - name: Overview
