@@ -3,8 +3,8 @@
  
     - name: Build a custom model
       items:
-            - name: Overview of custom models 
-              href: custom-models-overview.md  
+            - name: Overview 
+              href: custom-models-overview.md 
             - name: Compare custom models 
               href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Classify and extract by text pattern
@@ -60,7 +60,7 @@
             - name: Extract by text pattern and layout
               items:
                 - name: Overview 
-                  href: form-processing-overview.md
+                  href: extract-by-text-pattern-and-layout-overview.md
                 - name: Create a form processing model 
                   href: create-a-form-processing-model.md
                 - name: Apply a retention label 
