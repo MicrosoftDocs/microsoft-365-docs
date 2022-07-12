@@ -19,18 +19,16 @@ The Experience insights (preview) dashboard shows you employee satisfaction data
 
 There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights for Microsoft 365 dashboard. You can access it at any time by selecting **Experience insights (preview)** from the admin home page.
 
-
+:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Experience insights first run experience":::
 
 > [!NOTE]
 > The Experience insights dashboard is in preview and may not be available to all customers.
 
-**add screenshot**
+:::image type="content" source="../../media/experience-insights-dashboard.png" alt-text="Screenshot: Experience insights dashboard":::
 
 If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option
 
-**add screenshot**
-
-To learn more, see About admin roles and Assign admin roles.
+To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Apps and services data
 
@@ -68,17 +66,25 @@ Select a product or service to see more detailed information about product usage
 
 For some apps and services, you can see additional information into the usage of specific features to get a better understanding of what your users are using the most.
 
+:::image type="content" source="../../media/experience-insights-teams-usage.png" alt-text="Screenshot: Experience insights Teams usage in your organization":::
+
 ### Teams user feedback example
 
 In the user feedback section, you can see the actual comments your users submitted to help you gauge if there is a pattern that needs to be addressed.
+
+:::image type="content" source="../../media/experience-insights-teams-feedback.png" alt-text="Screenshot: Experience insights Teams feedback in your organization":::
 
 ### Teams Net Promoter Score (NPS) example
 
 NPS details allow you see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
 
+:::image type="content" source="../../media/experience-insights-teams-nps.png" alt-text="Screenshot: Experience insights Teams net promoter score information in your organization":::
+
 ### Teams help article example
 
 For the first time, you can now see what articles your users are consuming on Support.Microsoft.com com or via the Microsoft 365 in-app help experiences.  You can see the top articles for the specific app or service in your organization, how many people are viewing the app, and preview the article in-line.  This can be an excellent way of identifying what your users are trying to do and where they may be struggling.  Since not all users seek out help, it’s a good indication of content that may be beneficial to a broader set of users in the organization. Learn more.
+
+:::image type="content" source="../../media/experience-insights-teams-help-article.png" alt-text="Screenshot: Experience insights Teams help article information in your organization":::
 
 ## View your organization's Productivity Score
 
@@ -95,13 +101,3 @@ Welcome to the Driving Adoption Community! Connect and discuss the latest topics
 ## Use the Microsoft 365 adoption tools
 
 Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience.
-
-## Who can see the information on the adoption and training dashboard?
-
-People who have the following permissions:
-  
-- Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.
-
-- Adoption specialist admin role **verify role**
-
-To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
