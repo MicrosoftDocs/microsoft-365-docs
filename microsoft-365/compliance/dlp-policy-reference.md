@@ -22,8 +22,6 @@ ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy reference
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview Data Loss Prevention (DLP) policies have many components to configure. To create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
 
 ## Policy templates 
@@ -523,6 +521,24 @@ For example, content like an Excel workbook on a OneDrive for Business site that
 > - Notification emails are sent unprotected.
 > - Email notifications are only supported for the Microsoft 365 services.
 
+#### Email notifications support by selected location
+
+|Selected location  |Email notifications supported  |
+|---------|---------|
+|Devices     |- Not supported         |
+|Exchange + Devices     |- Supported for Exchange </br>- Not supported for Devices  |
+|Exchange    |- Supported        |
+|SharePoint + Devices  |- Supported for SharePoint </br>- Not supported for Devices         |
+|SharePoint    |- Supported |
+|Exchange + SharePoint    |- Supported for Exchange </br>- Supported for SharePoint  |
+|Devices + SharePoint + Exchange    |- Not supported for Devices </br>- Supported for SharePoint </br> Supported for Exchange |
+|Teams    |- Not supported |
+|OneDrive for Business   |- Supported         |
+|OneDrive for Business + Devices     |- Supported for OneDrive for Business </br>- Not supported for Devices         |
+|Power-BI|- Not supported|
+|Microsoft Defender for Cloud Apps|- Not supported|
+|On-premises repositories|- Not supported|
+
 You can also give people the option to [override the policy](#user-overrides), so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 
 The user notifications and policy tips configuration options vary depending on the monitoring locations you selected. If you selected:
@@ -532,6 +548,9 @@ The user notifications and policy tips configuration options vary depending on t
 - OneDrive
 - Teams Chat and Channel
 - Defender for Cloud Apps
+
+
+
 
 
 You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
@@ -612,6 +631,19 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > [!NOTE]
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
+
+#### Blocking and notifications in SharePoint Online and OneDrive for Business
+
+This table shows the DLP blocking and notification behavior for policies that are scoped to SharePoint Online and OneDrive for Business.
+
+|Conditions  |Actions config |User Notification config|Incident Reports config |Blocking and Notification behavior|
+|---------|---------|---------|---------|---------|
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |No actions are configured         |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |- **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** set to **On** </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**         |- Notifications will be sent only when a file is shared with an external user and an external user access the file.  |
+|- **Content is shared from Microsoft 365** </br>- **only with people inside my organization**        | No actions are configured         |-  **User notifications** set to **On**   </br>- **Notify users in Office 365 service with a policy tip** is selected  </br>- **Notify the user who sent, shared, or last modified the content** is selected    |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |- Notifications are sent when a file is uploaded |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiveing email or accessing shared SharePoint, OndeDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it is uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiveing email or accessing shared SharePoint, OndeDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
+
 
 ### User overrides
 

@@ -85,6 +85,8 @@ The licensing card for the trial shows the following information:
     - You have custom polices that are scoped to specific users.
   - **Full protection**: The total number of users that are protected by Defender for Office 365 Plan 2 features (AIR, Threat Explorer, Attack simulation training, etc.).
 
+For pricing information, see [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
+
 ## Permissions
 
 To start or end the trial, you need to be a member of the **Global Administrator** or **Security Administrator** roles in Azure Active Directory. For details, see [About admin roles](../../admin/add-users/about-admin-roles.md).

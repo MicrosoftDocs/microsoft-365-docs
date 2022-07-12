@@ -85,26 +85,26 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 
 #### ASF settings in anti-spam policies
 
-The table in this section describes the Advanced Spam Filter (ASF) settings that are available in anti-spam policies. All of these settings are **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+For more information about Advanced Spam Filter (ASF) settings in anti-spam policies, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
 
-|Security feature name|Comment|
-|---|---|
-|**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
-|**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
-|**URL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**Links to .biz or .info websites** (_IncreaseScoreWithBizOrInfoUrls_)||
-|**Empty messages** (_MarkAsSpamEmptyMessages_)||
-|**Embed tags in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
-|**JavaScript or VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Form tags in HTML** (_MarkAsSpamFormTagsInHtml_)||
-|**Frame or iframe tags in HTML** (_MarkAsSpamFramesInHtml_)||
-|**Web bugs in HTML** (_MarkAsSpamWebBugsInHtml_)||
-|**Object tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
-|**Sensitive words** (_MarkAsSpamSensitiveWordList_)||
-|**SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
-|**Sender ID filtering hard fail** (_MarkAsSpamFromAddressAuthFail_)||
-|**Backscatter** (_MarkAsSpamNdrBackscatter_)||
-|**Test mode** (_TestModeAction_)|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
+|Security feature name|Default|Recommended<br/>Standard|Recommended<br/>Strict|Comment|
+|---|:---:|:---:|:---:|---|
+|**Image links to remote sites** <p> _IncreaseScoreWithImageLinks_|Off|Off|Off||
+|**Numeric IP address in URL** <p> _IncreaseScoreWithNumericIps_|Off|Off|Off||
+|**URL redirect to other port** <p> _IncreaseScoreWithRedirectToOtherPort_|Off|Off|Off||
+|**Links to .biz or .info websites** <p> _IncreaseScoreWithBizOrInfoUrls_|Off|Off|Off||
+|**Empty messages** <p> _MarkAsSpamEmptyMessages_|Off|Off|Off||
+|**Embed tags in HTML** <p> _MarkAsSpamEmbedTagsInHtml_|Off|Off|Off||
+|**JavaScript or VBScript in HTML** <p> _MarkAsSpamJavaScriptInHtml_|Off|Off|Off||
+|**Form tags in HTML** <p> _MarkAsSpamFormTagsInHtml_|Off|Off|Off||
+|**Frame or iframe tags in HTML** <p> _MarkAsSpamFramesInHtml_|Off|Off|Off||
+|**Web bugs in HTML** <p> _MarkAsSpamWebBugsInHtml_|Off|Off|Off||
+|**Object tags in HTML** <p> _MarkAsSpamObjectTagsInHtml_|Off|Off|Off||
+|**Sensitive words** <p> _MarkAsSpamSensitiveWordList_|Off|Off|Off||
+|**SPF record: hard fail** <p> _MarkAsSpamSpfRecordHardFail_|Off|Off|Off||
+|**Sender ID filtering hard fail** <p> _MarkAsSpamFromAddressAuthFail_|Off|Off|Off||
+|**Backscatter** <p> _MarkAsSpamNdrBackscatter_|Off|Off|Off||
+|**Test mode** <p> _TestModeAction_)|None|None|None|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
 
 #### EOP outbound spam policy settings
 
@@ -132,14 +132,9 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Protection settings**|||||
-|**Enable the common attachments filter** <p> _EnableFileFilter_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
+|**Enable the common attachments filter** <p> _EnableFileFilter_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|This setting quarantines messages that contain attachments based on file type, regardless of the attachment content. For the list of file types, see [Anti-malware policies](anti-malware-protection.md#anti-malware-policies).|
 |**Enable zero-hour auto purge for malware** <p> _ZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Quarantine policy**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|When you create a new anti-malware policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as malware (AdminOnlyAccessPolicy with no quarantine notifications). <p> Standard and Strict preset security policies use the default quarantine policy (AdminOnlyAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <p> Admins can create and select custom quarantine policies that define more capabilities for users in the default or custom anti-malware policies. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Recipient notifications**|||||
-|**Notify recipients when messages are quarantined as malware** <p> _Action_|Not selected <p> _DeleteMessage_|Not selected <p> _DeleteMessage_|Not selected <p> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
-|**Sender notifications**|||||
-|**Notify internal senders when messages are quarantined as malware** <p> _EnableInternalSenderNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
-|**Notify external senders when messages are quarantined as malware** <p> _EnableExternalSenderNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
 |**Admin notifications**|||||
 |**Notify an admin about undelivered messages from internal senders** <p> _EnableInternalSenderAdminNotifications_ <p> _InternalSenderAdminAddress_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting.|
 |**Notify an admin about undelivered messages from external senders** <p> _EnableExternalSenderAdminNotifications_ <p> _ExternalSenderAdminAddress_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting.|
@@ -147,10 +142,10 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |**Use customized notification text** <p> _CustomNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
 |**From name** <p> _CustomFromName_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**From address** <p> _CustomFromAddress_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Customize notifications for messages from internal senders**||||These settings are used only if **Notify internal senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from internal senders** is selected.|
+|**Customize notifications for messages from internal senders**||||These settings are used only if **Notify an admin about undelivered messages from internal senders** is selected.|
 |**Subject** <p> _CustomInternalSubject_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**Message** <p> _CustomInternalBody_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Customize notifications for messages from external senders**||||These settings are used only if **Notify external senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from external senders** is selected.|
+|**Customize notifications for messages from external senders**||||These settings are used only if **Notify an admin about undelivered messages from external senders** is selected.|
 |**Subject** <p> _CustomExternalSubject_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**Message** <p> _CustomExternalBody_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 
@@ -282,7 +277,7 @@ In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/se
 
 |Security feature name|Default|Built-in protection|Comment|
 |---|:---:|:---:|---|
-|**Block the following URLs** <p> _ExcludedUrls_|Blank <p> `$null`|Blank <p> `$null`|We have no specific recommendation for this setting. <p> For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links).
+|**Block the following URLs** <p> _ExcludedUrls_|Blank <p> `$null`|Blank <p> `$null`|We have no specific recommendation for this setting. <p> For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links). <p> **Note**: You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.|
 |**Use Safe Links in Office 365 apps** <p> _EnableSafeLinksForO365Clients_|On <p> `$true`|On <p> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).|
 |**Do not track when users click protected links in Office 365 apps** <p> _TrackClicks_|On <p> `$false`|Off <p> `$true`|Turning off this setting (setting _TrackClicks_ to `$true`) tracks user clicks in supported Office 365 apps.|
 |**Do not let users click through to the original URL in Office 365 apps** <p> _AllowClickThrough_|On <p> `$false`|On <p> `$false`|Turning on this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL in supported Office 365 apps.|
@@ -307,7 +302,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |**Apply real-time URL scanning for suspicious links and links that point to files** <p> _ScanUrls_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Wait for URL scanning to complete before delivering the message** <p> _DeliverMessageAfterScan_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Do not rewrite URLs, do checks via Safe Links API only** <p> _DisableURLRewrite_|Not selected <p> `$false`|Selected <p> `$true`|Not selected <p> `$false`|Not selected <p> `$false`||
-|**Do not rewrite the following URLs in email** <p> _DoNotRewriteUrls_|Not selected <p> blank|Not selected <p> blank|Not selected <p> blank|Not selected <p> blank|We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
+|**Do not rewrite the following URLs in email** <p> _DoNotRewriteUrls_|Not selected <p> blank|Not selected <p> blank|Not selected <p> blank|Not selected <p> blank|We have no specific recommendation for this setting. <p> **Note**: The purpose of the "Do not rewrite the following URLs" list is to skip the Safe Links wrapping of the specified URLs. Instead of using this list, you can now [create allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#create-allow-url-entries).|
 |**Action for potentially malicious URLs in Microsoft Teams**||||||
 |**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** <p> _EnableSafeLinksForTeams_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Click protection settings**||||||

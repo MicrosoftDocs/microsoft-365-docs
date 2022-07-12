@@ -20,8 +20,6 @@ description: "Use these procedures to take advantage of named entities in your d
 
 # Use named entities in your data loss prevention policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Read through [Learn about named entities](named-entities-learn.md) before you start to use them.
 
 ## Before you begin
