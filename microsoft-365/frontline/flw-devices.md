@@ -34,7 +34,7 @@ It’s important to set a secure, compliant baseline to manage devices for your 
 
 With the [My Staff](/azure/active-directory/roles/my-staff-configure) feature in Azure Active Directory (Azure AD), you can delegate common user management tasks to frontline managers through the My Staff portal. Frontline managers can perform password resets or manage phone numbers for frontline workers directly from the store or factory floor, without having to route the requests to helpdesk, operations, or IT.
 
-My Staff also enables frontline managers to register their team members' phone numbers for SMS sign in. If [SMS-based authentication](/azure/active-directory/authentication/howto-authentication-sms-signin) is enabled in your organization, frontline workers can sign in to Teams and other apps using only their phone numbers and a one-time passcode sent via SMS. This makes signing in for frontline workers simple, secure, and fast.
+My Staff also enables frontline managers to register their team members' phone numbers for SMS sign-in. If [SMS-based authentication](/azure/active-directory/authentication/howto-authentication-sms-signin) is enabled in your organization, frontline workers can sign in to Teams and other apps using only their phone numbers and a one-time passcode sent via SMS. This makes signing in for frontline workers simple, secure, and fast.
 
 ## Shared devices
 
@@ -50,7 +50,7 @@ This section provides an overview of capabilities available to manage shared dev
 
 [Shared device mode](/azure/active-directory/develop/msal-shared-devices) is a feature of Azure AD that enables you to configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign-out for Microsoft Teams and all other apps that support shared device mode. You can integrate this capability into your line-of-business (LOB) apps using the Microsoft Authentication Library (MSAL).
 
-Here's how shared device mode works, using Teams as an example. When an employee signs in to Teams at the start of their shift, they’re automatically signed in to all other apps that support shared device mode on the device. At the end of their shift, when they sign out of Teams, they're signed out globally from all other apps that support shared device mode. After sign out, the employee's data and company data in Teams (including apps hosted within it) and in all other apps that support shared device mode can no longer be accessed. The device is ready for the next employee and can be safely handed off.
+Here's how shared device mode works, using Teams as an example. When an employee signs in to Teams at the start of their shift, they’re automatically signed in to all other apps that support shared device mode on the device. At the end of their shift, when they sign out of Teams, they're signed out globally from all other apps that support shared device mode. After sign-out, the employee's data and company data in Teams (including apps hosted within it) and in all other apps that support shared device mode can no longer be accessed. The device is ready for the next employee and can be safely handed off.
 
 You use a mobile device management (MDM) solution like Microsoft Intune in Microsoft Endpoint Manager to prepare a device to be shared by installing the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/how-to-use-the-microsoft-authenticator-app-9783c865-0308-42fb-a519-8cf666fe0acc) and turning on shared mode. Teams and all other apps that support shared device mode use the shared mode setting to manage users on the device. The MDM solution you use should also perform a device cleanup when sign out occurs.
 
@@ -77,7 +77,7 @@ If you're a developer, see the following resources for more information about ho
 
 ## Personal devices (BYOD)
 
-Some organizations use a bring-your-own-device (BYOD) model where frontline workers use their own mobile devices to access Teams and other Microsoft 365 apps. Here's an overview of some ways to manage access and compliance on personal devices.
+Some organizations use a bring-your-own-device (BYOD) model where frontline workers use their own mobile devices to access Teams and other business apps. Here's an overview of some ways to manage access and compliance on personal devices.
 
 ### Enroll Android and iOS personal devices
 
