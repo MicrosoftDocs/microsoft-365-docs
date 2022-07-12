@@ -17,7 +17,7 @@ description: Learn about key differences between custom models in Microsoft Shar
 
 # Comparison of custom models in Microsoft SharePoint Syntex 
 
-Use the following table to see differences in custom models to help identify the model to best to meet your needs.
+Use the following table to see differences in custom models to help identify the most appropriate model to use for your needs.
 
 | Feature | Classify and extract by text pattern | Extract by layout | Extract by text pattern and layout |
 | ------- | ------- | ------- | ------- |
