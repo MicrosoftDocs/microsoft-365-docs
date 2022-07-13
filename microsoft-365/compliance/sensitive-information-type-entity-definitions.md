@@ -13648,6 +13648,69 @@ This unbundled named entity detects patterns related to physical address from No
 
 Medium
 
+## Philippines passport number 
+
+### Format
+
+Seven or eight or nine alphanumeric characters
+
+### Pattern
+
+Seven or eight or nine alphanumeric characters
+
+- one letter followed by six digits.
+or
+- two letters followed by six digits. 
+or
+- two letters followed by seven digits. 
+or
+- one letter followed by seven digits followed by one letter 
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
+
+- The regular expression Regex_philippines_passport_number finds content that matches the pattern. 
+- A keyword from Keyword_philippines_passport_number is found. 
+
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
+
+- The regular expression Regex_philippines_passport_number finds content that matches the pattern. 
+
+```xml
+     <!-- Philippines Passport Number -->
+     <Entity id="6fa57f91-314a-4561-8248-7ab921957448" patternsProximity="300" recommendedConfidence="85" relaxProximity="true" filters="philippines_passport_filter">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_philippines_passport_number" />
+          <Match idRef="Keyword_philippines_passport_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Regex_philippines_passport_number" />
+        </Pattern>
+     </Entity>
+```
+
+### Keywords
+
+#### Keyword_philippines_passport_number 
+
+- passport 
+- passport no 
+- passport number 
+- passport# 
+- passportno 
+- passport no. 
+- passportno# 
+- passport book 
+- passportbook# 
+- pasaporte 
+- numero ng pasaporte 
+- libro ng pasaporte 
+
 ## Philippines unified multi-purpose identification number
 
 ### Format
@@ -14588,6 +14651,62 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tin id
 - tin no
 - tin#
+
+## Qatari ID card number
+
+### Format
+
+eleven digits
+
+### Pattern
+
+eleven digits:
+
+- a digit 2 or 3 
+- two digits representing the last two numbers of year of birth 
+- three digits representing ISO country code 
+- five digits  
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
+
+- The regular expression Regex_qatari_id_card finds content that matches the pattern. 
+- A keyword from Keyword_qatari_id_card is found. 
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
+
+- The regular expression Regex_qatari_id_card finds content that matches the pattern. 
+
+```xml
+     <!-- Qatari ID Card Number-->
+        <Entity id="52b1b60e-a4be-4b5a-a67b-6f9bbb7811da" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
+          <Pattern confidenceLevel="85">
+            <IdMatch idRef="Regex_qatari_id_card" />
+            <Match idRef="Keyword_qatari_id_card" />
+          </Pattern>
+          <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_qatari_id_card" />
+          </Pattern>
+        </Entity>
+```
+
+### Keywords
+
+#### Keyword_qatari_id_card
+
+- GP 
+- DOB 
+- D.O.B 
+- Date of Birth 
+- Birth Date 
+- date of issue 
+- date of expiry 
+
 
 ## Romania driver's license number
 
