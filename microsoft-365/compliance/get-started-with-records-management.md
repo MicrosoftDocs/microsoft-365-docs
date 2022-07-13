@@ -24,8 +24,6 @@ description: Need a records management solution for Microsoft 365 that manages h
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Ready to start managing your organization's high-value content for legal, business, or regulatory obligations by using a records management solution in Microsoft 365? Use the following guidance to get started:
 
 1. **Understand how retention and deletion works** in Microsoft 365, and identify whether you need to use retention policies to supplement retention labels that manage documents and emails at the item level: [Learn about retention policies and retention labels](retention.md)
@@ -43,7 +41,7 @@ Ready to start managing your organization's high-value content for legal, busine
 
 ## Subscription and licensing requirements
 
-A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
+A number of different subscriptions support records management and the licensing requirements for users depends on the features you use.
 
 To see the options for licensing your users to benefit from Microsoft Purview features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For records management, see the [Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) section and related PDF download for feature-level licensing requirements.
 
@@ -80,6 +78,7 @@ Use the following table to help you map your business requirements to the scenar
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
+| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management (preview)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
 
 ## End-user documentation
 
