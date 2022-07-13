@@ -7554,6 +7554,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/use.md",
       "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/microsoft-365-security-for-bdm.md",
+      "redirect_url": "/microsoft-365/security/",
+      "redirect_document_id": false
     }
   ]
 }
