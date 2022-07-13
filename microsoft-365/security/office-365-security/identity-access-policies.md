@@ -19,6 +19,7 @@ ms.collection:
   - remotework
   - m365solution-identitydevice
   - m365solution-scenario
+  - zerotrust-solution
 ms.technology: mdo
 ---
 
