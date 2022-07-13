@@ -22,9 +22,9 @@ Content understanding in SharePoint Syntex starts with models. Models let you id
 
 Three custom model types are available:
 
-- [Classify and extract by text pattern](document-understanding-overview.md)
-- [Extract by layout](form-processing-overview.md)
-- [Extract by text pattern and layout](form-processing-overview.md)
+- [Classify and extract by text pattern](#classify-and-extract-by-text-pattern)
+- [Extract by layout](#extract-by-layout)
+- [Extract by text pattern and layout](#extract-by-text-pattern-and-layout)
 
 [image]
 
@@ -43,21 +43,15 @@ For example, an unstructured document could be a contract renewal letter that ca
 
 **Classify and extract by text pattern** models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
-> [!NOTE]
-> You must have access to a content center site to create a **Classify and extract by text pattern** model or to apply one to a SharePoint document library. 
-
 For more information, see [Overview of classification and extraction by text pattern](document-understanding-overview.md).
 
 ## Extract by layout
 
 Use the **Extract by layout** model to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
-**Extract by layout** models use Microsoft Power Apps AI Builder document processing (formerly named form processing) to create models within SharePoint document libraries. 
-You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents.
+**Extract by layout** models use Microsoft Power Apps [AI Builder](/ai-builder/overview) document processing (formerly named form processing) to create models within SharePoint document libraries. You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents. You can then use Power Automate flows to automatically process the files.
 
 These models are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
-
-Your organization might regularly receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, form processing automates this process.
 
 For more information, see [Overview of extraction by layout](form-processing-overview.md).
 
@@ -65,9 +59,9 @@ For more information, see [Overview of extraction by layout](form-processing-ove
 
 Use the **Extract by text pattern and layout** model to automatically extract information from unstructured and free-form documents such as letters and contracts.
 
-Like the **Extract by layout** models, the **Extract by text pattern and layout** models use Microsoft Power Apps AI Builder document processing (formerly named form processing) to create models within SharePoint document libraries. You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents.
+The **Extract by text pattern and layout** models also use Microsoft Power Apps [AI Builder](/ai-builder/overview) document processing (formerly called form processing) to create models within SharePoint document libraries. You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents. You can then use Power Automate flows to automatically process the files.
 
-
+Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and and other information from these documents, this model automates this process.
 
 For more information, see [Overview of extraction by text pattern and layout](extract-by-text-pattern-and-layout-overview.md).
 
@@ -123,10 +117,6 @@ Form processing models can currently be applied only to the SharePoint document 
 
 ## See also
 
+[Compare custom models in SharePoint Syntex](./difference-between-document-understanding-and-form-processing-model.md)
+
 [Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
-
-[Classify and extract by text pattern](document-understanding-overview.md)
-
-[Extract by layout](form-processing-overview.md)
-
-[Extract by text pattern and layout](./extract-by-text-pattern-and-layout-overview.md)
