@@ -128,8 +128,8 @@ sections:
       - question: |
           What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
         answer: |
-          You can attach any file type to a protected mail. With one exception, protection policies are applied only to a subset of the file formats mentioned in [File types supported by the Azure Information Protection client](/information-protection/rms-client/client-admin-guide-file-types). 
-          Microsoft Purview Message Encrpyption only supports the following Office files extensions
+          You can attach any file type to a protected mail. Protection policies are applied only to a subset of the file formats mentioned in [File types supported by the Azure Information Protection client](/information-protection/rms-client/client-admin-guide-file-types). 
+          Microsoft Purview Message Encryption only supports the following Office files extensions:
           |Office file type|
           |docx|
           |docm|
