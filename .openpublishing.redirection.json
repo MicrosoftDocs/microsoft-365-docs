@@ -7558,7 +7558,7 @@
     {
       "source_path": "microsoft-365/security/microsoft-365-security-for-bdm.md",
       "redirect_url": "/microsoft-365/security/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
