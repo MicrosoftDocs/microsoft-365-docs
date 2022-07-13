@@ -41,7 +41,7 @@ Contact your account team or Microsoft representative to subscribe to Microsoft 
 
 ## Apply for Endpoint Attack Notifications service
 
-If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, you can apply for Endpoint Attack Notifications through their Microsoft 365 Defender portal.  Endpoint Attack Notifications grant you special insight and analysis to help identify the most critical threats to your organization, so you can respond to them quickly.
+If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, you can apply for Endpoint Attack Notifications through your Microsoft 365 Defender portal.  Endpoint Attack Notifications grant you special insight and analysis to help identify the most critical threats to your organization, so you can respond to them quickly.
 
 1. From the navigation pane, go to **Settings > Endpoints > General > Advanced features > Endpoint Attack Notifications**.
 
@@ -49,7 +49,7 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 
     :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text=" The Microsoft Threat Experts settings page in the Microsoft 365 Defender portal" lightbox="../../media/mte/hmte.png":::
 
-3. Enter your sil address so that Microsoft can contact you about your application.
+3. Enter your email address so that Microsoft can contact you about your application.
 
     :::image type="content" source="../../media/mte/mte-apply.png" alt-text="The Microsoft Threat Experts application page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-apply.png":::
   
@@ -69,13 +69,13 @@ You can receive Endpoint Attack Notifications from Microsoft Threat Experts thro
 - The Microsoft 365 Defender portal's **Alerts** dashboard
 - OData alerting [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) and [REST API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
-- Your inbox, if you choose to have targeted attack notifications sent to you via email. See [Create an email notification rule](#create-an-email-notification-rule) below.
+- Your inbox, if you choose to have Endpoint Attack Notifications sent to you via email. See [Create an email notification rule](#create-an-email-notification-rule) below.
 
 ### Create an email notification rule
 
 You can create rules to send email notifications for notification recipients. For full details, see  [Configure alert notifications](/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) to create, edit, delete, or troubleshoot email notification.
 
-## View targeted attack notifications
+## View Endpoint Attack Notifications
 
 You'll start receiving Endpoint Attack Notifications from Microsoft Threat Experts in your email after you have configured your system to receive email notification.
 
