@@ -27,33 +27,25 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## 101.71.18 (20.122052.17118.0)
+For more information on Microsoft Defender for Endpoint on other operating systems: 
+- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md) 
+- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Jun-2022 (Build: 101.71.18  | Release version: 20.122052.17118.0)</summary>
+
+&ensp;Released: **Jun 2, 2022**<br/>
+&ensp;Published: **Jun 2, 2022**<br/>
+&ensp;Build: **101.71.18**<br/>
+&ensp;Release version: **20.122052.17118.0**<br/>
+
+**What's new**
 
 - `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
 - Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
 - Fixed a bug in the product installation package that in rare cases could lead a loss of product state during updates
 - Performance improvements for file copy operations and built-in macOS applications
 - Bug fixes
-
-## 101.70.19 (20.122051.17019.0)
-
-For more information on Microsoft Defender for Endpoint on other operating systems: 
-- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md) 
-- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
-
-<details>
-  <summary>Jun-2022 (Build: 101.70.19  | Release version: 20.122051.17019.0)</summary>
-
-&ensp;Released: **Jun 14, 2022**<br/>
-&ensp;Published: **Jun 14, 2022**<br/>
-&ensp;Build: **101.70.19**<br/>
-&ensp;Release version: **20.122051.17019.0**<br/>
-
-
-**What's new**
-
-- Improvement updates #1 
-- Bug fixes #1 
 
 <br/>
 </details>
@@ -66,11 +58,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **101.70.18**<br/>
 &ensp;Release version: **20.122042.17018.0**<br/>
 
-
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- Fixed a bug where the installation package was sometimes hanging indefinitely during product updates
+- Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
+- Performance improvements & other bug fixes
 
 <br/>
 </details>
@@ -86,8 +78,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- Addressed an issue where `mdatp diagnostic real-time-protection-statistics` was not printing the correct process path in some cases.
+- Bug fixes
 
 <br/>
 </details>
@@ -102,8 +94,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- Fixed a regression introduced in version 101.61.69 where the status menu icon was sometimes showing an error icon, even though no action was required from the end user
+- Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Mac.
+- Fixed a bug in `mdatp device-control removable-media policy list` where vendor ID and product ID were displayed as decimal instead of hexadecimal
+- Performance improvements & other bug fixes
 
 <br/>
 </details>
@@ -118,8 +112,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- Bug fixes
 
 <br/>
 </details>
@@ -134,8 +127,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
 
 <br/>
 </details>
@@ -150,8 +142,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- This version adds support for macOS 12.3. Starting with macOS 12.3, [Apple is removing Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). There will be no Python version preinstalled on macOS by default. **ACTION NEEDED**: 
+  - Users must update Microsoft Defender for Endpoint for Mac to version 101.59.50 (or newer) prior to updating their devices to macOS Monterey 12.3 (or newer). This minimal version 101.59.50 is a prerequisite to eliminating Python-related issues with Microsoft Defender for Endpoint for Mac on macOS Monterey.
+  - For remote deployments, existing MDM setups must be updated to Microsoft Defender for Endpoint for Mac version 101.59.50 (or newer). Pushing via MDM an older Microsoft Defender for Endpoint for Mac version to macOS Monterey 12.3 (or newer) will result in an installation failure.
 
 <br/>
 </details>
@@ -166,8 +159,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Extended device control to handle devices connected over Thunderbolt 3
+- Improved the handling of device control policies containing invalid vendor IDs and product IDs. Prior to this version, if the policy contained one or more invalid IDs, the entire policy was ignored. Starting from this version, only the invalid portions of the policy are ignored. Issues with the policy are surfaced through `mdatp device-control removable-media policy list`.
+- Bug fixes
 
 <br/>
 </details>
@@ -182,8 +177,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- Bug fixes 
 
 <br/>
 </details>
@@ -198,8 +192,14 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
+- The application has been renamed from "Microsoft Defender ATP" to "Microsoft Defender". End users will observe the following changes:
+- The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
+- Within the user experience, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
+- Resolved an issue where some VPN applications could not connect due to the network content filter that is distributed with Microsoft Defender for Endpoint for Mac
+- Addressed an issue discovered in macOS 12.2 beta 2 where the installation package could not be opened due to a change in the operating system (OS) that prevents installation of packages with certain characteristics. While it appears that this OS change is not included in the final release of macOS 12.2, it is likely that it will be reintroduced in a future macOS version. As such, we encourage all enterprise administrators to refresh the Microsoft Defender for Endpoint package in their management console to this product version (or a newer version).
+- Addressed an issue seen on some M1 devices where the product was stuck with invalid antimalware definitions and could not successfully update to a working set of definitions.
+- `mdatp health` output has been extended with an additional attribute called `full_disk_access_enabled` that can be used to determine whether Full Disk Access has been granted to all components of Microsoft Defender for Endpoint for Mac.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -214,9 +214,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Improvement updates #1 
-- Bug fixes #1 
-
+- macOS 10.14 (Mojave) is no longer supported
+- After a product setting stops being managed by the administrator through MDM, it now reverts to the value it had before it was managed (the value configured locally by the end user or, if no such local value was explicitly provided, the default value used by the product). Prior to this change, after a setting stopped being managed, its managed value persisted and was still used by the product.
+- Performance improvements & bug fixes
+    
 <br/>
 </details>
 
@@ -536,7 +537,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **101.06.63**<br>
 
 **What's new** 
-- Addressed a performance regression introduced in version 101.05.17. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics. 
+- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics. 
 
 <br/>
 </details>
@@ -548,7 +549,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 **What's new** 
 > [!IMPORTANT]
 > We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax. 
-We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months. 
+> We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months. 
 - Addressed a kernel panic that occurred sometimes when accessing SMB file shares. 
 - Performance improvements & bug fixes 
 
@@ -635,7 +636,10 @@ We will continue supporting the old syntax in parallel with the new syntax and w
 
 **What's new**
 > [!CAUTION]
-> To ensure the most complete protection for your macOS devices and in alignment with Apple stopping delivery of macOS native security updates to OS versions older than [current - 2], MDATP for Mac deployment and updates will no longer be supported on macOS Sierra [10.12]. MDATP for Mac updates and enhancements will be delivered to devices running versions Catalina [10.15], Mojave [10.14], and High Sierra [10.13].<br> If you already have MDATP for Mac deployed to your Sierra [10.12] devices, please upgrade to the latest macOS version to eliminate risks of losing protection.
+> To ensure the most complete protection for your macOS devices and in alignment with Apple stopping delivery of macOS native security updates to OS versions older than [current - 2], MDATP for Mac deployment and updates will no longer be supported on macOS Sierra [10.12]. MDATP for Mac updates and enhancements will be delivered to devices running versions Catalina [10.15], Mojave [10.14], and High Sierra [10.13].
+>
+> If you already have MDATP for Mac deployed to your Sierra [10.12] devices, please upgrade to the latest macOS version to eliminate risks of losing protection.
+
 -  Performance improvements & bug fixes 
 
 <br/>
@@ -679,9 +683,11 @@ We will continue supporting the old syntax in parallel with the new syntax and w
 
 **What's new**
 - Fixed an issue where Microsoft Defender for Endpoint on Mac was sometimes interfering with Time Machine. 
-- Added a new switch to the command-line utility for testing the connectivity with the backend service:<br> 
-`BashCopy`<br> 
-`mdatp connectivity test` 
+- Added a new switch to the command-line utility for testing the connectivity with the backend service
+ 
+  ```bash
+  mdatp connectivity test
+  ```
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view). 
 - Performance improvements & bug fixes
 
@@ -726,10 +732,13 @@ We will continue supporting the old syntax in parallel with the new syntax and w
 **What's new**
 - Added support for macOS Catalina. 
 > [!CAUTION]
-> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.<br> 
-The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:<br> 
-    - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#how-to-allow-full-disk-access).<br>
-    - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics. 
+> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
+> 
+> The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:
+> 
+> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#how-to-allow-full-disk-access).
+> - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics. 
+
 - Performance improvements & bug fixes 
 
 <br/>
