@@ -53,7 +53,7 @@ productDirectory:
           text: Schedule management
         - url: simplify-business-processes.md
           text: Digitized processes
-        - url: bookings-virtual-visits.md
+        - url: virtual-appointments.md
           text: Virtual appointments
     # Card
     - title: Solutions for your industry
@@ -68,7 +68,7 @@ productDirectory:
         - url: teams-for-manufacturing.md
           text: Manufacturing
     # Card
-    - title: Manage Apps
+    - title: Manage apps
       imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
       links:
         - url: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
