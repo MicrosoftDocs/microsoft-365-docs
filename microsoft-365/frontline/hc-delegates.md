@@ -1,8 +1,8 @@
 ---
 title: Message delegation
-author: dstrome
-ms.author: dstrome
-manager: serdars
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-frontline

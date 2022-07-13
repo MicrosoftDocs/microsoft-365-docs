@@ -2,7 +2,7 @@
 title: Manage mobile devices for frontline workers
 author: lanachin
 ms.author: v-lanachin
-ms.reviewer: 
+ms.reviewer: mabolan
 manager: samanro
 ms.topic: article
 audience: admin

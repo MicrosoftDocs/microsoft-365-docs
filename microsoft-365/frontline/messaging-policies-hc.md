@@ -1,8 +1,8 @@
 ---
-title: "Secure Messaging for healthcare organizations using Microsoft Teams"
-author: dstrome
-ms.author: dstrome
-manager: serdars
+title: Secure Messaging for healthcare organizations using Microsoft Teams
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-frontline

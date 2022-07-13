@@ -1,8 +1,8 @@
 ---
-title: "Get started with Microsoft 365 for healthcare organizations"
-author: dstrome
-ms.author: dstrome
-manager: serdars
+title: Get started with Microsoft 365 for healthcare organizations
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-frontline
@@ -24,7 +24,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: 
-description: Learn about health care features like Microsoft Teams telehealth, EHR integration, Frontline worker system integration, and the Patients app.
+description: Learn about the telemedicine features in Microsoft 365 and Microsoft Teams and how you can implement them in your healthcare organization. 
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
