@@ -71,3 +71,6 @@ For more information about onboarding methods, see the following articles:
     - [Threat Detection \> Allow Defender for Endpoint to access my data](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
     For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).
+
+> [!NOTE]
+> Any client who has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy.
