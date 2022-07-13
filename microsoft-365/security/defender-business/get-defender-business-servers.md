@@ -19,17 +19,21 @@ ms.collection:
 
 # Get Microsoft Defender for Business servers (preview)
 
-**Defender for Business servers is currently in preview**. 
-
-## How to get Defender for Business servers (preview)
+**Microsoft Defender for Business servers is currently in preview**. This article describes how to get Microsoft Defender for Business servers (preview). 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
-2. Turn on preview settings. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features** \> **Preview features**. Turn the setting to **On**, and then select **Save preferences**.
+2. Turn on preview settings. 
 
-3. Turn on the enforcement scope for Windows Server. Go to **Settings** \> **Endpoints** \> **Configuration management** \> **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
+   1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features** \> **Preview features**. 
+   2. Turn the setting to **On**, and then select **Save preferences**.
 
-4. Proceed to [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+3. Turn on the enforcement scope for Windows Server. 
+
+   1. Go to **Settings** \> **Endpoints** \> **Configuration management** \> **Enforcement scope**. 
+   2. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
+
+4. Proceed to follow the guidance for Windows Server and Linux Server in [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 > [!IMPORTANT]
 > Defender for Business servers is currently in preview. When it becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Defender for Business servers will be priced at $3 per server instance.
