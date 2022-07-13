@@ -50,7 +50,7 @@ sections:
 
       - question: Does Defender for Business support servers? 
         answer: |
-          Server support is now in preview. Note that certain requirements, such as an additional server license, must be met. For more details, see the **Servers** tab in [Onboard devices](mdb-onboard-devices.md).  
+          Server support is now in preview! See [How to get Microsoft Defender for Business servers (preview)](get-defender-business-servers.md).  
 
       - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
