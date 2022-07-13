@@ -78,7 +78,7 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 - [Introduction to security in Microsoft 365](/learn/modules/security-in-m365/)
 - [Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/)
-- [Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks?view=o365-worldwide)
+- [Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks)
 
 ## Modern devices
 
