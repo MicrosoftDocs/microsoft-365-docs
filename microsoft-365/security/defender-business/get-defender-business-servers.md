@@ -36,7 +36,7 @@ ms.collection:
 4. Proceed to follow the guidance for Windows Server and Linux Server in [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 > [!IMPORTANT]
-> Defender for Business servers is currently in preview. When it becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Defender for Business servers will be priced at $3 per server instance.
+> Microsoft Defender for Business servers is currently in preview. When it becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance.
 
 
 ## See also
