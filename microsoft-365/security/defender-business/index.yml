@@ -56,6 +56,8 @@ landingContent:
             url: mdb-use-wizard.md
           - text: Turn on preview features
             url: mdb-preview.md
+          - text: Get Microsoft Defender for Business servers (preview)
+            url: get-defender-business-servers.md
 
   # Card
   - title: Help and more resources
