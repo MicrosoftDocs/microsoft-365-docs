@@ -1,5 +1,5 @@
 ---
-title: Differences between custom models in Microsoft SharePoint Syntex
+title: Compare custom models in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,13 +15,13 @@ ms.localizationpriority:  medium
 description: Learn about key differences between custom models in Microsoft SharePoint Syntex.
 ---
 
-# Comparison of custom models in Microsoft SharePoint Syntex 
+# Compare custom models in Microsoft SharePoint Syntex 
 
 Use the following table to see differences in custom models to help identify the most appropriate model to use for your needs.
 
 | Feature | Classify and extract by text pattern | Extract by layout | Extract by text pattern and layout |
 | ------- | ------- | ------- | ------- |
-| Use for this type of content | Unstructured or semi-structured file formats, for example, Office documents where there are differences in the layout, but still similar information to be extracted. | Structured and semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar.  | Unstructured and semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar. |
+| Use for this type of content | Unstructured or semi-structured file formats, for example Office documents where there are differences in the layout, but still similar information to be extracted. | Structured and semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar.  | Unstructured and free-form file formats, for example documents that have no set structure such as letters, contracts, and statements of work. |
 | Model creation | Model created in SharePoint in a new site, the content center.  | Model created in AI builder with seamless access from SharePoint document library.| Model created in AI builder with seamless access from SharePoint document library. |
 | Classification type | Trainable classifier with optional extractors using machine teaching to assign document location on what data to extract. | Settable classifier is used to give clues to the system on what data to extract.| Settable classifier is used to give clues to the system on what data to extract. |
 | Locations | Can be applied to multiple libraries. | Trained for a single document library. | Trained for a single document library. |

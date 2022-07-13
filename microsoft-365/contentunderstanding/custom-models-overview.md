@@ -37,55 +37,39 @@ To see the side-by-side differences in custom models, see [Compare custom models
 
 ## Classify and extract by text pattern
 
-Use the **Classify and extract by text pattern** to create a custom model to automatically classify documents and extract info from them. Use the patterns of the text in example documents to train the model.
+Use the **Classify and extract by text pattern** model to automatically classify documents and extract information from them. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
-Classify files
+For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.
 
-Identify and classify documents uploaded to the library. For example, the phrase "consulting and licensing agreement" might be used to identify other files like the one on this page
+**Classify and extract by text pattern** models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
-Supported file types
+> [!NOTE]
+> You must have access to a content center site to create a **Classify and extract by text pattern** model or to apply one to a SharePoint document library. 
 
-Office files, PDFs, images, and TIFF files.
-
-Supported languages
-
-Languages that use the same characters as English
-
-Learn more
-
-Overview of classification and extraction by text pattern https://go.microsoft.com/fwlink/?linkid=2201043
-
-
+For more information, see [Overview of classification and extraction by text pattern](document-understanding-overview.md).
 
 ## Extract by layout
 
-Use the **Extract by layout** model to create a custom model to automatically identify field and table values from structured or semi-structured documents like forms.
+Use the **Extract by layout** model to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
-Extract information
+**Extract by layout** models use Microsoft Power Apps AI Builder document processing (formerly named form processing) to create models within SharePoint document libraries. 
+You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents.
 
-Pull information from the documents. For example, for each delivery order uploaded to your document library, pull the delivery order number and show it in a column of the library. Pull the info from the product table and save it to a list linked to the library.
+These models are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
 
-PDFs, images, and TIFF files
+Your organization might regularly receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, form processing automates this process.
 
-Language support for more than 73 languages.
-
-
+For more information, see [Overview of extraction by layout](form-processing-overview.md).
 
 ## Extract by text pattern and layout
 
-Use the **Extract by text pattern and layout** model to create a custom model to automatically extract info from them. Use the patterns of the text or the layout in example documents to train the model.
+Use the **Extract by text pattern and layout** model to automatically extract information from unstructured and free-form documents such as letters and contracts.
 
-Early access
-
-Pull information from the files. For example, for each service agreement uploaded, pull the services provided based on the checkbox values, part of the layout of the file. Pull the agreement date based on the text, “THIS AGREEMENT”, which is always just before the date.
-
-PDFs, images, and TIFF files
-
-Only available in English
-
-Overview of extraction by text pattern and layout (preview) https://go.microsoft.com/fwlink/?linkid=2201164
+Like the **Extract by layout** models, the **Extract by text pattern and layout** models use Microsoft Power Apps AI Builder document processing (formerly named form processing) to create models within SharePoint document libraries. You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents.
 
 
+
+For more information, see [Overview of extraction by text pattern and layout](extract-by-text-pattern-and-layout-overview.md).
 
 
 
