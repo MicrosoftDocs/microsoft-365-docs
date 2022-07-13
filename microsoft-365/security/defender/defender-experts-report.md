@@ -58,9 +58,9 @@ Refer to the following screenshot of a sample report:
 
 A defender experts notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
-The Defender Experts for Hunting reports provide you with the total number of defender experts notifications our Defender Experts have sent for your chosen time period. To view these notifications, click **View notification** beside **Notified**.
+The Defender Experts for Hunting reports provide you with the total number of defender experts notifications our Defender Experts have sent for your chosen time. To view these notifications, click **View notification** beside **Notified**.
 
-This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or defender experts notifications are labeled with “Defender Experts.”
+This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or Defender Experts Notifications are labeled with **Defender Experts**.
 
 > [!NOTE]
 > The **View notification** link only appears if the value displayed in **Notified** is at least 1.
