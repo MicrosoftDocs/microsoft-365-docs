@@ -202,7 +202,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 3. To remove the add-in, select **Remove app** under **Actions** in the same flyout.
 
-## Get the Report Message and the Report Phishing add-ins for the GCC and GCCH users
+## Get the Report Message or the Report Phishing add-ins for the GCC and GCCH users
 
 If you're a Government Community Cloud High (GCCH) or a Government Community Cloud (GCC) admin, use the following steps to get the Report Message or the Report Phishing add-ins for your organization. Note that if you're an individual user, you can't get the add-in using Microsoft AppSource.
 
@@ -219,6 +219,6 @@ If you're a Government Community Cloud High (GCCH) or a Government Community Clo
 
 5. To fully configure the settings, see [User reported message settings](user-submission.md). 
 
-## Use the Report Message and the Report Phishing add-ins
+## Use the Report Message or the Report Phishing add-ins
 
-You can use the Report Message and the Report Phishing features to submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+You can use the Report Message or the Report Phishing features to submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
