@@ -77,6 +77,8 @@
         href: mdb-offboard-devices.md
     - name: Reference information
       items: 
+      - name: Defender for Business servers (preview)
+        href: get-defender-business-servers.md
       - name: How to get help or contact support
         href: mdb-get-help.md
       - name: Frequently asked questions

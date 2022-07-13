@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
+ms.localizationpriority: none
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -19,23 +19,23 @@ ms.collection:
 
 # Get Microsoft Defender for Business servers (preview)
 
-Defender for Business servers is currently in preview. This article describes how to get Defender for Business servers (preview) and onboard your server endpoints.
+**Defender for Business servers is currently in preview**. 
+
+## How to get Defender for Business servers (preview)
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
-2. 
+2. Turn on preview settings. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features** \> **Preview features**. Turn the setting to **On**, and then select **Save preferences**.
 
-Switch on preview (docs link)
+3. Turn on the enforcement scope for Windows Server. Go to **Settings** \> **Endpoints** \> **Configuration management** \> **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
-Turn on Enforcement for Win Servers (docs link)
+4. Proceed to [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
-Not needed for Linux?
-
-Onboard servers (docs link)
-
-And also add "MDB Servers is now in Preview. At time of GA it will be offered as an add-on to M365BP and MDB standalone requiring a paid license of MDB Servers priced at $3 per server instance"
+> [!IMPORTANT]
+> Defender for Business servers is currently in preview. When it becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Defender for Business servers will be priced at $3 per server instance.
 
 
+## See also
 
 - [See the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md).
 - [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
