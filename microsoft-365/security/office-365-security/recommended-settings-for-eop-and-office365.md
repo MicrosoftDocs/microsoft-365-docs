@@ -303,7 +303,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |**Action for potentially malicious URLs in Microsoft Teams**||||||
 |**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** <p> _EnableSafeLinksForTeams_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Action for potentially malicious URLs in Microsoft Office apps**||||||
-|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <p> _EnableSafeLinksForO365Clients_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <p> _EnableSafeLinksForO365Clients_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links.md#safe-links-settings-for-office-apps).|
 |**Click protection settings**||||||
 |**Track user clicks** <p> _TrackUserClicks_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Let users click through to the original URL** <p> _AllowClickThrough_|Selected <p> `$true`|Selected <p> `$true`|Not selected <p> `$false`|Not selected <p> `$false`|Turning off this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL.|
