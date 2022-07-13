@@ -59,7 +59,7 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
 When accepted, you will receive a welcome email and you will see the **Apply** button change to a toggle that is "on". In case you want to take yourself out of the Endpoint Attack Notifications service, slide the toggle "off" and click **Save preferences** at the bottom of the page.
 
-## Where you'll see the targeted attack notifications from Microsoft Threat Experts
+## Where you'll see the Endpoint Attack Notifications from Microsoft Threat Experts
 
 You can receive targeted attack notification from Microsoft Threat Experts through the following medium:
 
@@ -75,7 +75,7 @@ To receive Endpoint Attack Notifications through email, create an email notifica
 
 You can create rules to send email notifications for notification recipients. See  [Configure alert notifications](configure-email-notifications.md) to create, edit, delete, or troubleshoot email notification, for details.
 
-## View the targeted attack notification
+## View the Endpoint Attack Notifications
 
 You'll start receiving Endpoint Attack Notifications from Microsoft Threat Experts in your email after you have configured your system to receive email notification.
 
