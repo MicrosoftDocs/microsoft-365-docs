@@ -146,4 +146,4 @@ You can view key metrics such as lobby wait time and appointment duration. Use t
 
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)
 
-- [Bookings app in Teams help documentation](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?#PickTab=Bookings)
+- [Bookings app in Teams help documentation](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
