@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Microsoft Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium.
+summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium.
 metadata:
   title: Microsoft Defender for Business documentation
-  description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price.
+  description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price. 
   ms.prod: m365-security
   ms.technology: mdb
   ms.topic: landing-page
@@ -32,6 +32,8 @@ landingContent:
             url: mdb-simplified-configuration.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
+          - text: Resources for Microsoft partners
+            url: mdb-partners.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
       - linkListType: how-to-guide
@@ -52,6 +54,8 @@ landingContent:
             url: trial-playbook-defender-business.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
+          - text: Turn on preview features
+            url: mdb-preview.md
 
   # Card
   - title: Help and more resources
