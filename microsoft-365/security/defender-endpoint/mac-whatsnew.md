@@ -27,7 +27,15 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article is updated frequently to let you know what's new in the latest releases of Microsoft Defender for Endpoint on mac. 
+## 101.71.18 (20.122052.17118.0)
+
+- `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
+- Fixed a bug in the product installation package that in rare cases could lead a loss of product state during updates
+- Performance improvements for file copy operations and built-in macOS applications
+- Bug fixes
+
+## 101.70.19 (20.122051.17019.0)
 
 For more information on Microsoft Defender for Endpoint on other operating systems: 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md) 
