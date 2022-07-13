@@ -19,7 +19,7 @@ ms.collection:
 
 # Get Microsoft Defender for Business servers (preview)
 
-**Microsoft Defender for Business servers is currently in preview**. This article describes how to get Microsoft Defender for Business servers (preview). 
+## How to get Microsoft Defender for Business servers (preview)
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
@@ -37,7 +37,6 @@ ms.collection:
 
 > [!IMPORTANT]
 > Microsoft Defender for Business servers is currently in preview. When it becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance.
-
 
 ## See also
 
