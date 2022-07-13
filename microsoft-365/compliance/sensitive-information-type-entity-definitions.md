@@ -500,14 +500,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Australia business number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 11 digits with optional delimiters
@@ -564,14 +556,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - businessno#
 
 ## Australia company number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -1117,14 +1101,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Austria identity card
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 A 24-character combination of letters, digits, and special characters
@@ -1403,14 +1379,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tax number
 
 ## Austria value added tax
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -2328,13 +2296,6 @@ Medium
 
 ## Belgium value added tax number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -2870,13 +2831,6 @@ This unbundled named entity detects patterns related to physical address from Bu
 Medium
 
 ## Bulgaria uniform civil number
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -4561,14 +4515,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Cyprus identity card
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 10 digits without spaces and delimiters
@@ -4704,13 +4650,6 @@ Medium
 
 ## Cyprus tax identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -5825,13 +5764,6 @@ dokumendi nr
 
 ## Estonia Personal Identification Code
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -5925,11 +5857,11 @@ Medium
 
 ### Format
 
-16 digits
+16 to 19 formatted or unformatted digits
 
 ### Pattern
 
-Complex and robust pattern
+16 to 19 digits 
 
 ### Checksum
 
@@ -5948,9 +5880,15 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
     - The function Func_expiration_date finds a date in the right date format.
 - The checksum passes.
 
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_eu_debit_card finds content that matches the pattern.
+- The checksum passes.
+
+
 ```xml
     <!-- EU Debit Card Number -->
-    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
+    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_eu_debit_card" />
         <Any minMatches="1">
@@ -5960,6 +5898,9 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
           <Match idRef="Keyword_card_expiration_terms_dict" />
           <Match idRef="Func_expiration_date" />
         </Any>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_eu_debit_card" />
       </Pattern>
     </Entity>
 ```
@@ -6328,7 +6269,7 @@ These entities are in the EU National Identification Number and are sensitive in
 - [Luxemburg](#luxemburg-national-identification-number-natural-persons)
 - [Malta](#malta-identity-card-number)
 - [Netherlands](#netherlands-citizens-service-bsn-number)
-- [Poland](#poland-national-id-pesel)
+- [Poland](#poland-identity-card)
 - [Portugal](#portugal-citizen-card-number)
 - [Romania](#romania-personal-numeric-code-cnp)
 - [Slovakia](#slovakia-personal-number)
@@ -6595,14 +6536,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - ajokortin numerot
 
 ## Finland european health insurance number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -7007,14 +6940,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## France health insurance number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 21-digit number
@@ -7363,14 +7288,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin#
 
 ## France value added tax number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -7882,14 +7799,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Germany value added tax number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 11 character alphanumeric pattern
@@ -8255,14 +8164,6 @@ Medium
 
 ## Greece Social Security Number (AMKA)
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 11 digits without spaces and delimiters
@@ -8315,14 +8216,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
 ## Greece tax identification number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -8714,14 +8607,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Hungary personal identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 11 digits
@@ -8849,14 +8734,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Hungary tax identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 10 digits with no spaces or delimiters
@@ -8930,14 +8807,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - vat number
 
 ## Hungary value added tax number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -10432,13 +10301,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - patenti guida
 
 ## Italy fiscal code
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -10614,14 +10476,6 @@ This unbundled named entity detects patterns related to physical address from It
 Medium
 
 ## Italy value added tax number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -10855,14 +10709,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Japan My Number - Corporate
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 13-digit number
@@ -10918,14 +10764,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 指定通知書
 
 ## Japan My Number - Personal
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -11774,14 +11612,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Lithuania personal code
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 11 digits without spaces and delimiters
@@ -12112,14 +11942,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Führerschäin
 
 ## Luxemburg national identification number (natural persons)
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -12615,14 +12437,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - liċenzji tas-sewwieq
 
 ## Malta identity card number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -13302,14 +13116,6 @@ Medium
 
 ## Netherlands tax identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 nine digits without spaces or delimiters
@@ -13388,14 +13194,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Netherlands value added tax number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 14 character alphanumeric pattern
@@ -13453,14 +13251,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## New Zealand bank account number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 14-digit to 16-digit pattern with optional delimiter
@@ -13517,14 +13307,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - bank_acct_nbr
 
 ## New Zealand driver's license number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -13635,14 +13417,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - new zealand automobile association
 
 ## New Zealand inland revenue number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -13757,14 +13531,6 @@ This unbundled named entity detects patterns related to physical address from Ne
 Medium
 
 ## New Zealand social welfare number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -13932,17 +13698,17 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-14 digits containing two forward slashes
+11 or 14 digits containing two forward slashes
 
 ### Pattern
 
-14 digits and two forward slashes:
+11 or 14 digits containing two forward slashes:
 
 - five digits
 - a forward slash
 - two digits
 - a forward slash
-- seven digits
+- four or seven digits
 
 ### Checksum
 
@@ -14297,14 +14063,6 @@ Medium
 
 ## Poland REGON number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 9-digit or 14-digit number
@@ -14366,14 +14124,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - numeruregon#
 
 ## Poland tax identification number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -15088,14 +14838,6 @@ Pașaport nr
 
 ## Romania personal numeric code (CNP)
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 13 digits without spaces and delimiters
@@ -15198,14 +14940,6 @@ Medium
 
 ## Russia passport number domestic
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 10-digit number
@@ -15261,14 +14995,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - номерпаспорта#
 
 ## Russia passport number international
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -15671,14 +15397,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Slovakia personal number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 nine or 10 digits containing optional backslash
@@ -16035,14 +15753,6 @@ Medium
 
 ## Slovenia tax identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 eight digits with no spaces or delimiters
@@ -16108,14 +15818,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tin#
 
 ## Slovenia Unique Master Citizen Number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -16292,14 +15994,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 주민등록번호
 
 ## Spain DNI
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -16722,14 +16416,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - número de la seguridad social
 
 ## Spain tax identification number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -17264,14 +16950,6 @@ Medium
 
 ## Sweden tax identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 10 digits and a symbol in the specified pattern
@@ -17431,14 +17109,6 @@ This unbundled named entity detects patterns related to physical address from Sw
 Medium
 
 ## Switzerland SSN AHV number
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
@@ -18156,14 +17826,6 @@ Medium
 
 ## U.K. Unique Taxpayer Reference Number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 10 digits without spaces and delimiters
@@ -18672,14 +18334,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Ukraine passport domestic
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ### Format
 
 nine digits
@@ -18721,14 +18375,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - персональний
 
 ## Ukraine passport international
-
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
 
 ### Format
 
