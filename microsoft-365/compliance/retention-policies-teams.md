@@ -88,7 +88,7 @@ When the retention policy is to retain and then delete:
 
 For the two paths in the diagram:
 
-1. **If a chat or channel message is edited or deleted** by a user during the retention period, the original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is stored there for at least 1 day. When the retention period expires, the message is permanently deleted the next time the timer job runs (typically between 1-7 days).
+1. **If a chat or channel message is edited or deleted** by a user during the retention period, the original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder. When a user deletes a Teams message, although the message disappears from the Teams app, the message doesn't go into the SubstrateHolds folder for 21 days. The message is stored in the SubstrateHolds folder for at least 1 day. When the retention period expires, the message is permanently deleted the next time the timer job runs (typically between 1-7 days).
 
 2. **If a chat or channel message is not deleted** by a user and for current messages after editing, the message is moved to the SubstrateHolds folder after the retention period expires. This action typically takes between 1-7 days from the expiry date. When the message is in the SubstrateHolds folder, it's stored there for at least 1 day, and then the message is permanently deleted the next time the timer job runs (typically between 1-7 days). 
 
@@ -97,7 +97,7 @@ For the two paths in the diagram:
 
 When the retention period expires and moves a message to the SubstrateHolds folder, a delete operation is communicated to the backend Azure chat service, that then relays the same operation to the Teams client app. Delays in this communication or caching can explain why, for a short period of time, users continue to see these messages in their Teams app.
 
-In this scenario where the Azure chat service receives a delete command because of a retention policy, the corresponding message in the Teams client app is deleted for all users in the conversation. Some of these users might be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
+In this scenario where the Azure chat service receives a delete command because of a retention policy, the corresponding message in the Teams client app is deleted for all users in the conversation. This [behavior might seem unexpected](/microsoftteams/troubleshoot/teams-im-presence/messages-unexpectedly-deleted-retention-policy) because some of these users can be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
 
 > [!IMPORTANT]
 > Messages visible in the Teams app are not an accurate reflection of whether they are retained or permanently deleted for compliance requirements.
@@ -106,13 +106,13 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 ### Content paths for retain-only retention policy
 
-1. **If a chat or channel message is edited or deleted** by a user during the retention period: The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder, and retained there for at least 1 day. If the retention policy is configured to retain forever, the item remains there. If the retention policy has an end date for the retention period and it expires, the message is permanently deleted the next time the timer job runs (typically between 1-7 days).
+1. **If a chat or channel message is edited or deleted** by a user during the retention period: The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder. When a user deletes a Teams message, although the message disappears from the Teams app, the message doesn't go into the SubstrateHolds folder for 21 days. The message is stored in the SubstrateHolds folder for at least 1 day. If the retention policy is configured to retain forever, the item remains there. If the retention policy has an end date for the retention period and it expires, the message is permanently deleted the next time the timer job runs (typically between 1-7 days).
 
 2. **If the chat or channel message is not modified or deleted** by a user and for current messages after editing during the retention period: Nothing happens before and after the retention period; the message remains in its original location.
 
 ### Content paths for delete-only retention policy
 
-1. **If the chat or channel message is edited or deleted** by a user during the retention period: The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is retained there for at least 1 day and permanently deleted the next time the timer job runs (typically between 1-7 days).
+1. **If the chat or channel message is edited or deleted** by a user during the retention period: The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder.  When a user deletes a Teams message, although the message disappears from the Teams app, the message doesn't go into the SubstrateHolds folder for 21 days. The message is stored in the SubstrateHolds folder for at least 1 day and permanently deleted the next time the timer job runs (typically between 1-7 days).
 
 2. **If a chat or channel message is not deleted** by a user during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. This action typically takes between 1-7 days from the expiry date. The message is retained there for at least 1 day and then permanently deleted the next time the timer job runs (typically between 1-7 days).
 
@@ -140,9 +140,9 @@ Retention outcomes:
     - On day 5, the message is copied to the SubstrateHolds folder where it can still be searched with eDiscovery tools for a minimum of 7 years from day 1 (the retention period).
 
 - For the current (edited) message:
-    - On day 30, the message moves to the SubstrateHolds folder where it can still be searched with eDiscovery tools for a minimum of 7 years from day 1 (the retention period).
+    - On day 30, the message is no longer displayed in the Teams app and moves to the SubstrateHolds folder after 21 days where it continues to be searchable with eDiscovery tools for a minimum of 7 years from day 1 (the retention period).
 
-If the user had deleted the current message after the specified retention period, instead of within the retention period, the message would still be moved to the SubstrateHolds folder. However, now the retention period has expired, the message would be permanently deleted after the minimum of 1 day and then typically within 1-7 days.
+If the user had deleted the current message after the specified retention period, instead of within the retention period, the message would still be moved to the SubstrateHolds folder after 21 days. However, now the retention period has expired, the message would be permanently deleted there after the minimum of 1 day and then typically within 1-7 days.
 
 ##### Example 2: Retain for 30 days and then delete
 
