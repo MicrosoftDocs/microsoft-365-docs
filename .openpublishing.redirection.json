@@ -377,8 +377,8 @@
     },
     {
       "source_path": "microsoft-365/business/secure-win-10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/setup/secure-win-10-pcs",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-profiles.md",
@@ -1307,7 +1307,7 @@
     },
     {
       "source_path": "microsoft-365/admin/misc/index.md",
-      "redirect_url": "index",
+      "redirect_url": "misc",
       "redirect_document_id": false
     },
     {
@@ -4597,8 +4597,13 @@
     },
     {
       "source_path": "microsoft-365/business-video/index.yml",
-      "redirect_url": "/microsoft-365/admin/admin-video-library",
-      "redirect_document_id": true
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2197659",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-video-library.yml",
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2197659",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
@@ -6337,7 +6342,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/secure-win10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/setup/secure-win-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
     {
@@ -6397,7 +6402,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/secure-win-10-pro-devices.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
     {
@@ -7511,6 +7516,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-manage-Log4shell-guidance.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-manage-Log4shell-guidance",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-premium/m365-campaigns-security-overview.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
@@ -7538,6 +7548,21 @@
     {
       "source_path": "microsoft-365/business-premium/m365-customize-sign-in.md",
       "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/use.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/microsoft-365-security-for-bdm.md",
+      "redirect_url": "/microsoft-365/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365//admin/setup/secure-win-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     }
   ]
