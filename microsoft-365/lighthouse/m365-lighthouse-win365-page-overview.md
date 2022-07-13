@@ -66,6 +66,7 @@ Select any Cloud PC in the list to view more details and execute management acti
 - **Restart:** Select to reboot the device. 
 - **Reprovision:** Select to reset the device. You can also view the provisioning policy in the Microsoft Endpoint Manager link.
 - **Rename:** Select to rename the device assigned to a user.
+- **Change account type:** Select the account type for the user: Standard user (recommended) or Local administrator.
 
 The All Cloud PCs tab also includes the following options:
 
