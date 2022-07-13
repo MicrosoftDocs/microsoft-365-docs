@@ -17,9 +17,7 @@ ms.collection:
 - m365-security-compliance
 ---
 
-# Get Microsoft Defender for Business servers (preview)
-
-## How to get Microsoft Defender for Business servers (preview)
+# How to get Microsoft Defender for Business servers (preview)
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
