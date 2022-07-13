@@ -27,7 +27,7 @@ With Defender for Business, you have several options to choose from for onboardi
 1. Select a tab: 
    - **Windows 10 and 11**
    - **Mac**
-   - **Servers** (for Windows Server or Linux Server)
+   - **Servers** (NEW! Windows Server or Linux Server)
    - **Mobile** (for iOS/iPadOS or Android devices)
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
