@@ -35,7 +35,7 @@ ms.collection:
 > [!IMPORTANT]
 > Before you apply, make sure to discuss the eligibility requirements for Endpoint Attack Notifications managed threat hunting service with your Microsoft Technical Service provider and account team.
 
-To receive targeted attack notifications, you'll need to have Microsoft 365 Defender deployed with devices enrolled. Then, submit an application through the M365 portal for Endpoint Attack Notifications.
+To receive Endpoint Attack Notifications, you'll need to have Microsoft 365 Defender deployed with devices enrolled. Then, submit an application through the M365 portal for Endpoint Attack Notifications.
 
 Contact your account team or Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand. Experts on Demand lets you consult with our threat experts on how to protect your organization from relevant detections and adversaries.
 
@@ -47,9 +47,9 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 
 2. Select **Apply**.
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text=" The Microsoft Threat Experts settings page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text=" The Microsoft Threat Experts settings page in the Microsoft 365 Defender portal" lightbox="../../media/mte/hmte.png":::
 
-3. Enter your name and email address so that Microsoft can contact you about your application.
+3. Enter your sil address so that Microsoft can contact you about your application.
 
     :::image type="content" source="../../media/mte/mte-apply.png" alt-text="The Microsoft Threat Experts application page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-apply.png":::
   
@@ -57,7 +57,7 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 
     :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="The Microsoft Threat Experts application confirmation in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-applicationconfirmation.png":::
 
-5. After you receive your welcome email, you'll automatically start receiving targeted attack notifications.
+5. After you receive your welcome email, you'll automatically start receiving Endpoint Attack Notifications.
 
 6. You can verify your status by visiting **Settings > Endpoints > General > Advanced features**. Once approved, the **Endpoint Attack Notification** toggle will be visible and switched **On**.
 
