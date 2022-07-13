@@ -219,6 +219,6 @@ If you're a Government Community Cloud High (GCCH) or a Government Community Clo
 
 5. To fully configure the settings, see [User reported message settings](user-submission.md). 
 
-## Use the Report Message and Report Phishing add-ins
+## Use the Report Message and the Report Phishing add-ins
 
 You can use the Report Message and Report Phishing features to submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
