@@ -20,7 +20,7 @@ description: "Learn how to review your list of Microsoft-certified solution prov
 ms.date: 12/03/2021
 ---
 
-# Review partner administrative privileges
+# Review Microsoft-certified cloud solution provider partner administrative privileges
 
 If you have a Microsoft-certified cloud solution provider (reseller partner), we recommend you conduct a quarterly review of the delegated administrative privileges (DAP) assigned to them. Make sure your organization wants this partner to have access to your organization’s data and make purchases on your behalf.
 

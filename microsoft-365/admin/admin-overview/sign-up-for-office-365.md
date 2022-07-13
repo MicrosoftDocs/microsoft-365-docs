@@ -33,6 +33,8 @@ ms.date: 03/17/2021
 
 # How to sign up - Admin Help
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 Sign up for Microsoft 365 for business so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs.
 
 ::: moniker range="o365-21vianet"
@@ -49,11 +51,14 @@ Ready to sign up? [Select a Plan](https://products.office.com/zh-cn/business/com
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## Choose a plan
 
 Before you buy, put some thought into the plan you sign up for. This will help prevent growing pains later.
 
 ## Watch: Choose a Microsoft 365 subscription
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198032).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
