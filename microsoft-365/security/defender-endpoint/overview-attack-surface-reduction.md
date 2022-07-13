@@ -58,11 +58,11 @@ To configure attack surface reduction in your environment, follow these steps:
 
 4. [Enable controlled folder access](enable-controlled-folders.md).
 
-5. [Removable Storage Protection](device-control-removable-storage-protection.md)
+5. Enable [removable storage protection](device-control-removable-storage-protection.md)
 
-6. [Turn on Network protection](enable-network-protection.md).
+6. [Turn on network protection](enable-network-protection.md).
 
-7. Enable [Web protection overview](web-protection-overview.md)
+7. Enable [Web protection](web-protection-overview.md)
 
 8. [Enable exploit protection](enable-exploit-protection.md).
 
@@ -86,7 +86,8 @@ As part of your organization's security team, you can configure attack surface r
 - Attack surface reduction rules
 - Exploit protection
 - Network protection
-- And controlled folder access
+- Controlled folder access
+- Device control
 
 Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
@@ -107,9 +108,7 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-### Attack surface reduction (ASR) rules
-
-Attack surface reduction (ASR) rules are pre-defined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction (ASR) rules deployment topics:
+For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction (ASR) rules are pre-defined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction (ASR) rules deployment topics:
 
 - [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 - [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
@@ -289,16 +288,13 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 
 | Article | Description |
 |:---|:---|
-| [Hardware-based isolation](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. Use container isolation for Microsoft Edge to help guard against malicious websites. |
 | [Application control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use application control so that your applications must earn trust in order to run. |
-| [Controlled folder access](controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus). |
-| [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus). |
-| [Exploit protection](exploit-protection.md) | Help protect the operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |
-| [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
-| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules, followed by step-by-step guidance for testing, enabling and monitoring. |
-| [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md) | Lists the recommended steps for attack surface reduction rules deployment. |
-| [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
-| [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md) | Shows the steps to transition attack surface reduction rules from test (audit) mode to the active, enabled (Block) mode. |
-| [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md) | Provides information about day-to-day review and maintenance activities. |
 | [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md) | Provides details about each attack surface reduction rule. |
-| [Attack surface reduction rules](attack-surface-reduction.md) | Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware. (Requires Microsoft Defender Antivirus). |
+| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules, followed by step-by-step guidance for testing (audit mode), enabling (block mode) and monitoring. |
+| [Controlled folder access](controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus). |
+| [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
+| [Exploit protection](exploit-protection.md) | Help protect the operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |
+| [Hardware-based isolation](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. Use container isolation for Microsoft Edge to help guard against malicious websites. |
+| [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus). |
+| [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
+| [Web protection](web-protection-overview.md) | Web protection lets you secure your devices against web threats and helps you regulate unwanted content. |
