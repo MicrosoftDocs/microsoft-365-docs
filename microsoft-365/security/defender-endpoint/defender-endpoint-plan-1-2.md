@@ -47,10 +47,6 @@ The following table summarizes what's included in each Defender for Endpoint pla
 | [Microsoft 365 Defender](../defender/microsoft-365-defender.md) | Services include: <ul><li>[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)</li><li>[Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md)</li><li>[Microsoft Defender for Office 365](../office-365-security/overview.md)</li><li>[Microsoft Defender for Identity](/defender-for-identity/)</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/)</li></ul>|
 | [Defender for Business](../defender-business/mdb-overview.md) <br/>and<br/>[Microsoft 365 Business Premium](../../business-premium/index.md) | Services optimized for small and medium-sized businesses include: <ul><li>Email protection</li><li>Antispam protection</li><li>Antimalware protection</li><li>Next-generation protection</li><li>Attack surface reduction</li><li>Endpoint detection and response</li><li>Automated investigation and response </li><li>Threat & vulnerability management</li><li>Centralized reporting</li><li>APIs (for integration with custom apps or reporting solutions)</li></ul> |
 
-> [!IMPORTANT]
-> The standalone versions of Defender for Business, Defender for Endpoint Plan 1 and 2, and Microsoft 365 Business Premium do not include server licenses. To onboard servers, choose from the following options:
-> - Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
-> - Microsoft Defender for Business servers (preview) for small and medium-sized businesses. See [How to get Microsoft Defender for Business servers (preview)](../defender-business/get-defender-business-servers.md).
 
 Microsoft Defender for Endpoint Plan 1 is available as a standalone user subscription license for commercial and education customers. It's also included as part of Microsoft 365 E3/A3.
 
@@ -61,6 +57,15 @@ Microsoft Defender for Endpoint Plan 2, which was previously called Microsoft De
 - Microsoft 365 E5/A5/G5 (which includes Windows 10 or Windows 11 Enterprise E5)
 - Microsoft 365 E5/A5/G5/F5 Security
 - Microsoft 365 F5 Security & Compliance
+
+## Options for onboarding servers
+
+The standalone versions of Defender for Business, Defender for Endpoint Plan 1 and 2, and Microsoft 365 Business Premium do not include server licenses. To onboard servers, choose from the following options:
+
+- Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+
+- Microsoft Defender for Business servers (preview) for small and medium-sized businesses. See [How to get Microsoft Defender for Business servers (preview)](../defender-business/get-defender-business-servers.md).
+
 
 ## Mixed licensing scenarios
 
