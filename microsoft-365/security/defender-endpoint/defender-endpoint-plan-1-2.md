@@ -47,16 +47,17 @@ The following table summarizes what's included in each Defender for Endpoint pla
 | [Microsoft 365 Defender](../defender/microsoft-365-defender.md) | Services include: <ul><li>[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)</li><li>[Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md)</li><li>[Microsoft Defender for Office 365](../office-365-security/overview.md)</li><li>[Microsoft Defender for Identity](/defender-for-identity/)</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/)</li></ul>|
 | [Defender for Business](../defender-business/mdb-overview.md) <br/>and<br/>[Microsoft 365 Business Premium](../../business-premium/index.md) | Services optimized for small and medium-sized businesses include: <ul><li>Email protection</li><li>Antispam protection</li><li>Antimalware protection</li><li>Next-generation protection</li><li>Attack surface reduction</li><li>Endpoint detection and response</li><li>Automated investigation and response </li><li>Threat & vulnerability management</li><li>Centralized reporting</li><li>APIs (for integration with custom apps or reporting solutions)</li></ul> |
 
+Microsoft Defender for Endpoint Plan 1 is available as a standalone subscription for commercial and education customers. It's also included as part of Microsoft 365 E3/A3.
 
-Microsoft Defender for Endpoint Plan 1 is available as a standalone user subscription license for commercial and education customers. It's also included as part of Microsoft 365 E3/A3.
-
-Microsoft Defender for Endpoint Plan 2, which was previously called Microsoft Defender for Endpoint, is available as a standalone license and as part of the following plans:
+Microsoft Defender for Endpoint Plan 2, which was previously called Microsoft Defender for Endpoint, is available as a standalone subscription. It's also included as part of the following plans:
 
 - Windows 11 Enterprise E5/A5
 - Windows 10 Enterprise E5/A5
 - Microsoft 365 E5/A5/G5 (which includes Windows 10 or Windows 11 Enterprise E5)
 - Microsoft 365 E5/A5/G5/F5 Security
 - Microsoft 365 F5 Security & Compliance
+
+Microsoft Defender for Business is available as a standalone subscription for small and medium-sized businesses. It's also included as part of Microsoft 365 Business Premium.
 
 ## Options for onboarding servers
 
