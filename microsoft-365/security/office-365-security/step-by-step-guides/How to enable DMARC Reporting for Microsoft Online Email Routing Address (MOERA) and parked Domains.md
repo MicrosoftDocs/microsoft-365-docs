@@ -27,9 +27,13 @@ This guide is designed to help you configure DMARC for the domains not covered i
 
 ## What you’ll need
 
-- Microsoft 365 admin centre and access to your DNS provider hosting your domains
+- Microsoft 365 admin center and access to your DNS provider hosting your domains
 - Sufficient permissions as Global Admin to make the appropriate changes in the Microsoft 365 Admin Center
 - 10 Minutes to complete the following steps
+- DMARC report provider 
+
+> [!TIP]
+> Visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
 
 ## Activate DMARC for MOERA Domain
 1.  Login to the [Microsoft 365 Admin Center](https://admin.microsoft.com).
@@ -44,13 +48,13 @@ This guide is designed to help you configure DMARC for the domains not covered i
 1.  Press **Save**.
 
 ## Active DMARC for parked domains
-1.  Check if SPF is already configured for your parked domain, following this guide: [Set up SPF to help prevent spoofing - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide#how-to-handle-subdomains)
+1.  Check if SPF is already configured for your parked domain, following this guide: [Set up SPF to help prevent spoofing - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing#how-to-handle-subdomains)
 1.  Contact your DNS Domain provider.
-1.  Ask to add this DMARC txt record with your appropriate email addresses "v=DMARC1; p=reject; rua=mailto:d@rua.contoso.com;ruf=mailto:d@ruf.contoso.com"
+1.  Ask to add this DMARC txt record with your appropriate email reporting addresses "v=DMARC1; p=reject; rua=mailto:d@rua.contoso.com;ruf=mailto:d@ruf.contoso.com"
 
 ## Next Steps
 Wait until the DNS changes are propagated and try to spoof the configured domains. Check if the attempt is blocked based in the DMARC record, and you receive a DMARC report.
 
 ## More Information
-[Set up SPF to help prevent spoofing - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
-[Use DMARC to validate email, setup steps - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Set up SPF to help prevent spoofing - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)
+[Use DMARC to validate email, setup steps - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
