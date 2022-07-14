@@ -33,7 +33,7 @@ The type of model you choose will depend on the types of files you use, the form
 To see the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
 > [!NOTE]
-> If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and purchase orders.
+> If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
 
 ## Classify and extract by text pattern
 
