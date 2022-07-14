@@ -63,10 +63,24 @@ You can use the unified Action center if you have appropriate permissions and on
 > [!TIP]
 > To learn more, see [Requirements](./prerequisites.md).
 
+You can navigate to the list of actions pending approval in two different ways:
+
+Go to  https://security.microsoft.com/action-center
+
+Or
+
+Select **Approve in Action Center** in the Automated investigation & response card.
+
+
 ## Using the Action center
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 2. In the navigation pane, choose **Action center**. 
+
+    OR
+
+    Select **Approve in Action Center** in the Automated investigation & response card.
+    
 
 When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
 

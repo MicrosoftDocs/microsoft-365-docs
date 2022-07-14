@@ -94,6 +94,13 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 
 To view investigations, go to the **Incidents** page. Select an incident, and then select the **Investigations** tab. To learn more, see [Details and results of an automated investigation](m365d-autoir-results.md).
 
+## Automated investigation & response card 
+
+Automated investigation & response card is a feature available in the Microsoft 365 Defender portal that provides visibility to the total number of alerts available for remediation. The card also gives an overview of all the alerts and required approval time for each alert.
+
+Using the Automated investigation & response card, your security operations team can quickly navigate to the Action center by selecting Approve in Action Center and take appropriate actions. This enables your security operations team to effectively manage all the pending approvals. 
+
+
 ## Training for security analysts
 
 Use this learning module from Microsoft Learn to understand how Microsoft 365 Defender uses automated self-healing for incident investigation and response.

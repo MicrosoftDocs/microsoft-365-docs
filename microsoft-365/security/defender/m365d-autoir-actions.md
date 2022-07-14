@@ -42,6 +42,13 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 > [!NOTE]
 > You must have [appropriate permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see the [prerequisites](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
+You can navigate to the Action Center either by going to https://security.microsoft.com/action-center
+
+Or
+
+Select **Approve in Action Center** in the Automated investigation & response card.
+
+
 ## Review pending actions in the Action center
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
