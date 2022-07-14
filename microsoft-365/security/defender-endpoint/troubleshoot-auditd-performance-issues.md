@@ -84,7 +84,7 @@ Contains important aggregated information that is useful when investigating Audi
 
 - What file system paths are the noisiest. 
 
-To mitigate most AuditD performance issues, you can implement AuditD exclusion. 
+**To mitigate most AuditD performance issues, you can implement AuditD exclusion. **
 
 > [!NOTE]
 > Exclusions should be made only for low threat and high noise initiators or paths. For example, do not exclude /bin/bash which risks creating a large blind spot.
