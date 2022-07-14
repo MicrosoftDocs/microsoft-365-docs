@@ -139,7 +139,6 @@ Use netsh to configure a system-wide static proxy.
 > [!NOTE]
 >
 > - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
-> - Laptops that are changing topology (for example: from office to home) will malfunction with netsh command. Use the registry-based static proxy configuration.
 
 1. Open an elevated command line:
    1. Go to **Start** and type **cmd**.
