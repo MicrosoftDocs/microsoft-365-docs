@@ -57,7 +57,7 @@ The following table summarizes what's included in Microsoft endpoint security pl
 - Microsoft 365 E5/A5/G5/F5 Security
 - Microsoft 365 F5 Security & Compliance
 
-(<a id="fn3">3</a>) Microsoft Defender for Business is available as a standalone subscription for small and medium-sized businesses. It's also included as part of Microsoft 365 Business Premium.
+(<a id="fn3">3</a>) Microsoft Defender for Business is available as a standalone subscription for small and medium-sized businesses. It's also included as part of Microsoft 365 Business Premium. These plans feature advanced security capabilities with a simplified setup and configuration experience.
 
 ## Options for onboarding servers
 
