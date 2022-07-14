@@ -34,7 +34,7 @@ Like any other system in an IT environment, these too should have an Endpoint De
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Virtual desktop infrastructure (VDI) devices
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
-- Windows 365
+
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -165,7 +165,6 @@ For more information, follow the guidance in [Deployment guide for Microsoft Def
 
 After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
 
-The following recommendations are applicable for Windows 365 endpoints, but can be used on other supported VDI devices as well. 
 
 ### Next generation protection configuration
 
