@@ -49,7 +49,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 1. Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.
 1. In the left navigation pane, select **Users**, and then on the **Users - all users** page, select **Password reset**.
 1. Select **All** to enable self-service password reset, and then select **Save**.
-1. In the left navigatino pane, select **Authentication methods**, and select the **Number of methods required to reset**, and desired **Methods available to users**, and then click **Save**. 
+1. In the left navigation pane, select **Authentication methods** and select the **Number of methods required to reset** and desired **Methods available to users**, and then select **Save**. 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
  
