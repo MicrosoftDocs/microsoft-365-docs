@@ -73,4 +73,4 @@ For more information about onboarding methods, see the following articles:
     For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).
 
 > [!NOTE]
-> Any client who has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy.
+> Any client that has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy.
