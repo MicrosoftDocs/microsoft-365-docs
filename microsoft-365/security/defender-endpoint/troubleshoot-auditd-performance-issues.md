@@ -64,7 +64,7 @@ Contains general AuditD configuration and will display:
 
 - **Auditctl -s** output with **enabled=2**  
 
-    - Suggests auditd is in lockdown (requires restart for any config changes to take effect). 
+    - Suggests auditd is in immutable mode (requires restart for any config changes to take effect). 
 
 - **Auditctl -l** output  
 
@@ -88,6 +88,7 @@ To mitigate most AuditD performance issues, you can implement AuditD exclusion.
 
 > [!NOTE]
 > Exclusions should be made only for low threat and high noise initiators or paths. For example, do not exclude /bin/bash which risks creating a large blind spot.
+> [Common mistakes to avoid when defining exclusions.](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 
 
