@@ -99,6 +99,7 @@ All actions, whether they're pending approval or were already taken, are tracked
 - Restrict code execution (this action can be undone) 
 - Run antivirus scan 
 - Stop and quarantine 
+- Contain devices from the network
 
 In addition to remediation actions that are taken automatically as a result of [automated investigations](m365d-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft 365 Defender. For more information about automatic and manual remediation actions, see [Remediation actions](m365d-remediation-actions.md).
 

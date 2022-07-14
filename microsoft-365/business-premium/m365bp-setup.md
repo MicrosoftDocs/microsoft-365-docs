@@ -1,13 +1,12 @@
 ---
 title: Set up Microsoft 365 Business Premium
-description: See how to set up Microsoft 365 Business Premium
+description: "How to set up Microsoft 365 Business Premium or work with a solution provider to do so."
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 06/03/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -15,6 +14,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+ms.custom: intro-get-started
 ---
 
 # Set up Microsoft 365 Business Premium
@@ -33,19 +33,20 @@ Make sure that you meet the following requirements before you begin your setup p
 | Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating system | **Windows**:  Windows 11, Windows 10, Windows 8.1, Windows Server 2019 or later, or Windows Server 2016<br/><br/>**macOS**: One of the three most recent versions of macOS |
+| Operating system | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS <br/>Currently, Microsoft 365 Business Premium and the standalone version of Microsoft Defender for Business do not support servers.  |
 
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Guided setup process
 
-Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium.<br/><br/>
+Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+> Make sure to proceed to [Bump up security](m365bp-security-overview.md).
 
 ## Work with a Microsoft partner
 

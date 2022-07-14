@@ -18,11 +18,6 @@ description: Get ready to integrate One LMS and Microsoft Teams by setting up an
 
 In this article, you'll learn how to install and configure the Moodle plugin to incorporate Microsoft Teams with your Open LMS experience.
 
-> [!NOTE]
-> Currently, Open LMS and Microsoft Teams LTI integrations are only available in private preview.
->
->If you'd like to participate in the private preview program, [sign up here](https://m365crmedu.powerappsportals.com/LMSSignup)
-
 ## Prerequisites
 
 Here are the prerequisites to install the Moodle plugin:

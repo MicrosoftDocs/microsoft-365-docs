@@ -22,10 +22,6 @@ ms.collection:
 
 The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business.
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## View detected threats
 
@@ -54,5 +50,5 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 ## Next steps
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [Manage devices in Defender for Business](mdb-manage-devices.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)

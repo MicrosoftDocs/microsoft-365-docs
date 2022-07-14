@@ -40,7 +40,7 @@ As of 1 October 2021, automatic payments in India might block some credit card t
 
 [Learn more about the Reserve Bank of India regulation for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-On 1 July 2022, Microsoft and other online merchants will no longer store credit card information. To comply with this regulation, Microsoft will remove all stored card details from the Microsoft 365 admin center. To avoid service interruption, you must add a payment method and make a one-time payment for all subscriptions and billing profiles.
+On 30 September 2022, Microsoft and other online merchants will no longer store credit card information. To comply with this regulation, Microsoft will remove all stored card details from the Microsoft 365 admin center. To avoid service interruption, you must add a payment method and make a one-time payment for all subscriptions and billing profiles.
 
 [Learn about the Reserve Bank of India regulation for card storage](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 

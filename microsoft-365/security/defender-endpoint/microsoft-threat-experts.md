@@ -1,8 +1,8 @@
 ---
 title: Microsoft Threat Experts
 ms.reviewer:
-description: Microsoft Threat Experts provides an additional layer of expertise to Microsoft Defender for Endpoint.
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, Targeted Attack Notification
+description: Microsoft Threat Experts provides an extra layer of expertise to Microsoft Defender for Endpoint.
+keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -32,7 +32,7 @@ ms.technology: mde
 
 Microsoft Threat Experts is a managed threat hunting service that provides your Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in your unique environments don't get missed.
 
-This managed threat hunting service provides expert-driven insights and data through these two capabilities: targeted attack notification and access to experts on demand.
+This managed threat hunting service provides expert-driven insights and data through these two capabilities: endpoint attack notification and access to experts on demand.
 
 Watch this video to learn how Microsoft Threat Experts provides Security Operation Centers (SOCs) with expert-level monitoring and analysis and ensures that no critical threat is missed. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qZ0B]
@@ -41,18 +41,19 @@ Watch this video to learn how Microsoft Threat Experts provides Security Operati
 
 > [!NOTE]
 > Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service.
+> Threat Experts is not currently available in the Microsoft 365 for U.S. Government clouds.
 
-If you're a Microsoft Defender for Endpoint customer, you need to apply for **Microsoft Threat Experts - Targeted Attack Notifications** to get special insights and analysis that help identify the most critical threats in your environment so you can respond to them quickly.
+If you're a Microsoft Defender for Endpoint customer, you need to apply for **Endpoint Attack Notifications** to get special insights and analysis that help identify the most critical threats in your environment so you can respond to them quickly.
 
-To enroll to Microsoft Threat Experts - Targeted Attack Notifications benefits, go to **Settings** \> **Endpoints** \> **General** \> **Advanced features** \> **Microsoft Threat Experts - Targeted Attack Notifications** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications.
+To enroll to Endpoint Attack Notifications benefits, go to **Settings** \> **Endpoints** \> **General** \> **Advanced features** \> **Endpoint Attack Notifications** to apply. Once accepted, you'll get the benefits of Endpoint Attack Notifications.
 
 Contact your account team or Microsoft representative to subscribe to **Microsoft Threat Experts - Experts on Demand** to consult with our threat experts on relevant detections and adversaries that your organization is facing.
 
 See [Configure Microsoft Threat Experts capabilities](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) for details.
 
-## Microsoft Threat Experts - Targeted attack notification
+## Endpoint attack notification
 
-Microsoft Threat Experts - Targeted attack notification provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber-espionage. These notifications show up as a new alert. The managed hunting service includes:
+Endpoint attack notification provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber-espionage. These notifications show up as a new alert. The managed hunting service includes:
 
 - Threat monitoring and analysis, reducing dwell time and risk to the business
 - Hunter-trained artificial intelligence to discover and prioritize both known and unknown attacks
@@ -61,9 +62,9 @@ Microsoft Threat Experts - Targeted attack notification provides proactive hunti
 
 ## Microsoft Threat Experts - Experts on Demand
 
-Customers can engage our security experts directly from within Microsoft 365 Defender for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
+Customers can engage our security experts directly from within Microsoft 365 Defender portal to get their response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to more threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
-- Get additional clarification on alerts including root cause or scope of the incident
+- Get more clarification on alerts including root cause or scope of the incident
 - Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques
 
@@ -92,6 +93,6 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
-## Related topic
+## See also
 
 - [Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
