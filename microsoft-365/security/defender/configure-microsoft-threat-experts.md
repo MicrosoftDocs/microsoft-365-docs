@@ -47,7 +47,7 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 
 2. Select **Apply**.
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text=" The Microsoft Threat Experts settings page in the Microsoft 365 Defender portal" lightbox="../../media/mte/hmte.png":::
+    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text=" The Microsoft Threat Experts settings page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 3. Enter your email address so that Microsoft can contact you about your application.
 

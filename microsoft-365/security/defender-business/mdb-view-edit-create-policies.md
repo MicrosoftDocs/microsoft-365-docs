@@ -20,7 +20,7 @@ ms.collection:
 
 # View or edit policies in Microsoft Defender for Business
 
-In Microsoft Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
+In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
 
 **This article describes how to**:
 
@@ -64,7 +64,7 @@ In Defender for Business, there are two main types of policies to protect your c
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
-   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).)
+   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).)
    - To apply the policy to another device group, select **Use existing group**.
 
    After you have specified which device groups should receive the policy, choose **Next**.
@@ -106,7 +106,7 @@ In Defender for Business, there are two main types of policies to protect your c
 
    To learn more about device groups, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
-8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-next-gen-configuration-settings.md).
+8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Defender for Business](mdb-next-gen-configuration-settings.md).
 
 9. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
@@ -119,7 +119,7 @@ In Defender for Business, there are two main types of policies to protect your c
 Choose one or more of the following tasks:
 
 - [Manage devices](mdb-manage-devices.md)
-- [Create a new policy in Microsoft Defender for Business](mdb-create-new-policy.md)
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [Create a new policy in Defender for Business](mdb-create-new-policy.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
