@@ -52,6 +52,8 @@ sections:
         answer: |
           Server support is now in preview! See [How to get Microsoft Defender for Business servers (preview)](get-defender-business-servers.md).  
 
+          When the Microsoft Defender for Business servers license becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance. At that point, you can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
+          
       - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
           Yes. Defender for Business supports protection for Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
