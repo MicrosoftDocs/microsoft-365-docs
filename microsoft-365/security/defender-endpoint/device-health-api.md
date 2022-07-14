@@ -37,9 +37,10 @@ ms.custom: api
 ## API description
 
 Retrieves a list of Microsoft Defender Antivirus device health details.
+URL: GET: /api/public/avdeviceshealth
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
-<br>```$filter``` on: ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory```, ```subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```, and ```status``` properties.
+<br>```$filter```  on: ```machineId```, ```computerDnsName```, ```osKind```, ```osPlatform```, ```osVersion```, a```vMode```, ```avSignatureVersion```, ```avEngineVersion```, ```avPlatformVersion```, ```quickScanResult```, ```quickScanError```, ```fullScanResult```, ```fullScanError```, ```avIsSignatureUpToDate```, ```avIsEngineUpToDate```, ```vIsPlatformUpToDate```, ```rbacGroupId```
 <br>```$top``` with max value of 10,000.
 <br>```$skip```.
 <br>See examples at [OData queries with Microsoft Defender for Endpoint.](exposed-apis-odata-samples.md]
@@ -50,20 +51,22 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permission | Permission display name |
 |:----|:----|:----|
-| Application | SecurityRecommendation.Read.All | 'Read Threat and Vulnerability Management security recommendation information' |
-| Delegated (work or school account) | SecurityRecommendation.Read | 'Read Threat and Vulnerability Management security recommendation information' |
+| Application | Machine.Read.All | 'Read all machine profiles' |
+| Application | Machine.ReadWrite.All | 'Read and write all machine information' |
+| Delegated (work or school account) | Machine.Read | 'Read machine information' |
+| Delegated (work or school account) | Macine.ReadWrite | 'Read and write machine information' |
 
 ## HTTP request
 
 ```http
-GET /api/recommendations 
+GET /api/public/avdeviceshealth
 ```
 
 ## Request headers
 
 | Name | Type | Description |
 |:----|:----|:----|
-| Authorization | String | Bearer {token}. Required |
+| Authorization | String | Bearer {token}. **Required** |
 
 ## Request body
 
@@ -71,7 +74,7 @@ _Empty_
 
 ## Response
 
-If successful, this method returns 200 OK with the list of security recommendations in the body.
+If successful, this method returns 200 OK with a list of device health details.
 
 ## Example
 
@@ -80,7 +83,7 @@ If successful, this method returns 200 OK with the list of security recommendati
 Here is an example of the request:
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/recommendations 
+GET https://api.securitycenter.microsoft.com/api/public/avdeviceshealth 
 ```
 
 ### Example response
@@ -89,42 +92,64 @@ Here is an example of the response:
 
 ```json
 { 
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations", 
+
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#avdeviceshealth", 
+
     "value": [ 
+
         { 
-            "id": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11", 
-            "productName": "windows_10" "Windows_11", 
-            "recommendationName": "Update Windows 10" "Update Windows 11", 
-            "weaknesses": 397, 
-            "vendor": "microsoft", 
-            "recommendedVersion": "", 
-            "recommendationCategory": "Application", 
-            "subCategory": "", 
-            "severityScore": 0, 
-            "publicExploit": true, 
-            "activeAlert": false, 
-            "associatedThreats": [ 
-                "3098b8ef-23b1-46b3-aed4-499e1928f9ed", 
-                "40c189d5-0330-4654-a816-e48c2b7f9c4b", 
-                "4b0c9702-9b6c-4ca2-9d02-1556869f56f8", 
-                "e8fc2121-3cf3-4dd2-9ea0-87d7e1d2b29d", 
-                "94b6e94b-0c1d-4817-ac06-c3b8639be3ab" 
-            ], 
-            "remediationType": "Update", 
-            "status": "Active", 
-            "configScoreImpact": 0, 
-            "exposureImpact": 7.674418604651163, 
-            "totalMachineCount": 37, 
-            "exposedMachinesCount": 7, 
-            "nonProductivityImpactedAssets": 0, 
-            "relatedComponent": "Windows 10" "Windows 11" 
-        } 
+
+           "id": "sampleId", 
+
+           "machineId": "sampleMachineId", 
+
+           "computerDnsName": "sampleDnsName", 
+
+           "osKind": "mac", 
+
+           "osPlatform": "macOS", 
+
+           "osVersion": "11.6.5.0", 
+
+           "avMode": "0", 
+
+           "avSignatureVersion": "87523", 
+
+           "avEngineVersion": "3.0", 
+
+           "avPlatformVersion": "101.61.69", 
+
+           "lastSeenTime": "2022-04-02T06:12:07+00:00", 
+
+           "quickScanResult": "-", 
+
+           "quickScanError": "-", 
+
+           "fullScanResult": "-", 
+
+           "fullScanError": "-", 
+
+           "dataRefreshTimestamp": "2022-04-06T21:50:48+00:00", 
+
+           "avSignatureUpdateTime": "2022-04-01T01:31:58+00:00", 
+
+           "avIsSignatureUpToDate": "Unknown", 
+
+           "avIsEngineUpToDate": "Unknown", 
+
+           "avIsPlatformUpToDate": "Unknown", 
+
+           "rbacGroupId": 86 
+
+        }, 
+
         ... 
+
      ] 
-} 
+
+}  
 ```
 
 ## See also
 
 [Device health and compliance report in Microsoft Defender for Endpoint](machine-reports.md)
-
