@@ -48,7 +48,7 @@ You'll need to complete the following general steps to successfully onboard serv
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
-## Integration with Microsoft Defender for Cloud
+## Integration with Microsoft Defender for Servers
 
 Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Servers. You can onboard servers automatically, have servers monitored by Microsoft Defender for Cloud appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer.
 
