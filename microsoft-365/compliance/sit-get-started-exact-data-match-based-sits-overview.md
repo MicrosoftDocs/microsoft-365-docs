@@ -28,7 +28,18 @@ ms.custom: seo-marvel-apr2020
 - [New experience](sit-create-edm-sit-unified-ux-workflow.md)
 - [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the *new experience* the existing *classic experience*  or via PowerShell. EDM SITs can be used in Microsoft Purview Data Loss Prevention, auto-labeling, Microsoft Purview Insider Risk Management policies, eDiscovery and certain content governance tasks  This article helps you understand the differences between the two experiences and helps you pick the right one for your needs.
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the *new experience* the existing *classic experience*  or via PowerShell. This article helps you understand the differences between the two experiences and helps you pick the right one for your needs.
+
+EDM SITs can be used in:
+
+- Microsoft Purview Data Loss Prevention
+- Auto-labeling (service adn client side)
+- Microsoft Purview Insider Risk Management policies
+- Microsoft Purview eDiscovery
+- Microsoft Purview Insider Risk Management
+- Microsoft Defender for Cloud Apps
+
+
 
 ## Before you begin
 
@@ -83,7 +94,9 @@ The new EDM experience combines the functionality of the EDM schema and EDM sens
 
 ### Simplified workflow
 
-You can view the status of an EDM SIT in the creation process.
+With the new experience, the schema and SIT are created via one user experience meaning fewer clicks, better guidance on mapping primary elements to default SITs and default confidence levels for the rules.
+
+When you need to see the status of an EDM SIT in the creation process, the new experience reports on this in the UI.
 
 - Data not yet uploaded
 - Data upload percent
