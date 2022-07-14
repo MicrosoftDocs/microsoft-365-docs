@@ -21,7 +21,7 @@ ms.collection:
 
 # Compare Microsoft endpoint security plans
 
-Microsoft endpoint security plans, such as Microsoft Defender for Endpoint and Microsoft 365 Defender, were designed to help enterprise organizations prevent, detect, investigate, and respond to advanced threats. Microsoft Defender for Business and Microsoft 365 Business Premium provide enterprise-grade endpoint security capabilities for small and medium-sized businesses. These plans provide advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. 
+Microsoft endpoint security plans, such as Microsoft Defender for Endpoint and Microsoft 365 Defender, were designed to help enterprise organizations prevent, detect, investigate, and respond to advanced threats. Microsoft Defender for Business and Microsoft 365 Business Premium provide similar capabilities, optimized for small and medium-sized businesses. These plans provide advanced threat protection with antivirus and antimalware protection, ransomware mitigation, and more, together with centralized management and reporting. 
 
 This article helps clarify what's included in the following plans: 
 
