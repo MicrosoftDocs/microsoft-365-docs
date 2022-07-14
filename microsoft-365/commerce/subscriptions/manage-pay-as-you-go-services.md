@@ -42,7 +42,7 @@ If you already have a subscription, you can buy a new plan that has a calling pl
 4. Enter the number of licenses you want to buy, select the **Subscription length** and **Billing frequency**, then select **Buy**.
 5. Review the details of your order, then select **Place order**.
 6. In the confirmation pane, select **Enable overage on your calling plan**. This link takes you to the inventory detail page for your subscription.
-7. In the Pay-as-you-go services section, select the product name. This opens the **Change pay-as-you-go option** pane.
+7. In the **Pay-as-you-go services** section, select the product name. This opens the **Change pay-as-you-go option** pane.
 8. In the **Change pay-as-you-go option** pane, select **On**, then select **Save**.
 
 ## Manage pay-as-you-go for an existing subscription
