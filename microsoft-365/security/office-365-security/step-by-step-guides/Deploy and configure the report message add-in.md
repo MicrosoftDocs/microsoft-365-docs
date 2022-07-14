@@ -1,5 +1,5 @@
 ---
-title: Deploy & configure the report message add-in
+title: Deploy and configure the report message add-in
 description: The steps to deploy and configure Microsoft's phish reporting add-in(s) aimed at security administrators
 search.product: 
 search.appverid: 
@@ -19,9 +19,9 @@ ms.topic: how-to
 ms.technology: mdo
 ---
 
-# Deploy & configure the report message add-in to users.
+# Deploy and configure the report message add-in to users.
 
-The Report message & report phishing add-in for Outlook makes it easy to report phishing to Microsoft and its affiliates for analysis, along with easy triage for admins in the [submissions portal](https://security.microsoft.com/reportsubmission?viewid=user). 
+The Report message and report phishing add-in for Outlook makes it easy to report phishing to Microsoft and its affiliates for analysis, along with easy triage for admins in the [submissions portal](https://security.microsoft.com/reportsubmission?viewid=user). 
 
 Depending on whether you are licensed for Defender for Office 365, you'll also get added functionality such as alerting & automated investigation and response (AIR), which will remove the burden from your security operations staff. This guide will walk you through configuring the add-in deployment as recommended by the Microsoft Defender for Office 365 team.
 
