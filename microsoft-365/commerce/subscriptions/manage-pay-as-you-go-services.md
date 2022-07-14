@@ -19,6 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 search.appverid: MET150
+ROBOTS: noindex, nofollow
 description: "Learn how to buy a subscription with a calling plan and enable overage for Microsoft Teams calls."
 ms.date: 07/15/2022
 ---
