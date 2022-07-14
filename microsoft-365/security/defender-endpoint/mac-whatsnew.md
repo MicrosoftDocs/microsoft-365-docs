@@ -34,8 +34,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 <details>
   <summary>Jun-2022 (Build: 101.71.18  | Release version: 20.122052.17118.0)</summary>
 
-&ensp;Released: <br/>
-&ensp;Published: <br/>
+&ensp;Released: **Jul 7, 2022**<br/>
+&ensp;Published: **Jul 7, 2022**<br/>
 &ensp;Build: **101.71.18**<br/>
 &ensp;Release version: **20.122052.17118.0**<br/>
 
@@ -49,6 +49,23 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 <br/>
 </details>
+
+<details>
+  <summary>Jun-2022 (Build: 101.70.19  | Release version: 20.122051.17019.0)</summary>
+
+&ensp;Released: **Jun 14, 2022**<br/>
+&ensp;Published: **Jun 14, 2022**<br/>
+&ensp;Build: **101.70.19**<br/>
+&ensp;Release version: **20.122051.17019.0**<br/>
+
+**What's new**
+
+- Fixed a bug where threat-related notifications were not always presented to the end user.
+- Performance improvements & other bug fixes
+
+<br/>
+</details>
+
 
 <details>
   <summary>Jun-2022 (Build: 101.70.18 | Release version: 20.122042.17018.0)</summary>
