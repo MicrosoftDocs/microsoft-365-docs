@@ -11,7 +11,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-description: "Get an overview of Microsoft 365 Health dashboard and its role in keeping you up to date on the health of your Microsoft 365 organization."
+description: "Get an overview of Microsoft 365 Health dashboard and its role in keeping you up to date about the health of your Microsoft 365 organization."
 ---
 
 # Microsoft 365 Health dashboard

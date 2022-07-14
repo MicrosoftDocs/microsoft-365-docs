@@ -124,7 +124,7 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 6. **The Report Message add-ins** enable people to easily report false positives (good email, mistakenly marked as *bad*) or false negatives (bad email marked as *good*) to Microsoft for further analysis.
 
-7. **Safe Links for Office clients** offers the same Safe Links time-of-click protection, natively, inside of Office clients like Word, PowerPoint, and Excel.
+7. **Safe Links for Office clients** offers the same Safe Links time-of-click protection, natively, inside supported Office apps like Word, PowerPoint, and Excel.
 
 8. **Protection for OneDrive, SharePoint, and Teams** offers the same Safe Attachments protection against malicious files, natively, inside of OneDrive, SharePoint, and Microsoft Teams.
 
