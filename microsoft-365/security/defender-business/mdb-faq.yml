@@ -47,12 +47,6 @@ sections:
       - question: How many devices can I onboard and secure with Defender for Business? 
         answer: |
           You can onboard and secure up to five client devices per user license.
-
-      - question: Does Defender for Business support servers? 
-        answer: |
-          Server support is now in preview! See [How to get Microsoft Defender for Business servers (preview)](get-defender-business-servers.md).  
-
-          When the Microsoft Defender for Business servers license becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance. At that point, you can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
           
       - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
@@ -62,6 +56,41 @@ sections:
           - To onboard Android and iOS/iPadOS devices, you must have a license for [Microsoft Intune](/mem/intune/). Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone).
 
           More simplification for Mac, iOS/iPadOS, and Android devices is on the roadmap. 
+
+      - question: Does Defender for Business support servers? 
+        answer: |
+          Server support is now in preview! See [How to get Microsoft Defender for Business servers (preview)](get-defender-business-servers.md).  
+
+          When the Microsoft Defender for Business servers license becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance. At that point, you can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
+
+      - question: What is the difference between Microsoft Defender for Business servers and Microsoft Defender for Servers Plan 1 and Plan 2 that are part of Microsoft Defender for Cloud?
+        answer: |
+          Both server licenses provide strong threat protection capabilities for your company's server endpoints. 
+
+          - Defender for Business servers is an add-on to Defender for Business and Microsoft 365 Business Premium only. It provides a single endpoint security experience for both clients and servers within the Defender for Business security admin portal (https://security.microsoft.com) for businesses with up to 300 employees. With a simplified configuration process and device onboarding options, Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Servers or Defender for Cloud to protect company devices. Capabilities including threat and vulnerability management, attack surface reduction, next-gen anti-virus, endpoint detection and response, and automated investigation and remediation. Multi-customer views of security alerts, incidents , and devices are available via Microsoft 365 Lighthouse for Microsoft CSP Partners when using Microsoft Defender for Business.
+
+          - Defender for Servers Plan 1/Plan 2 is an enterprise-focused offering that can be purchased with any other Microsoft cloud plan. Advanced threat hunting with six months of data retention and the Microsoft Threat Experts service are available with Defender for Servers Plan 1 or Plan 2.
+
+          - Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources. The admin experience for Defender for Cloud resides within Azure portal (portal.azure.com).
+
+          | Feature/Capability | Microsoft Defender for Business servers | Microsoft Defender for Servers Plan 1/Plan 2 |
+          |:---|:---|
+          | Centralized management | Yes | Yes |
+          | Simplified client configuration | Yes | No |
+          | Threat & vulnerability management | Yes | Yes |
+          | Attack surface reduction capabilities | Yes | Yes |
+          | Next-generation protection | Yes | Yes |
+          | Endpoint detection and response | Yes | Yes |
+          | Automated investigation and response | Yes | Yes |
+          | Threat hunting and six months of data retention | No | Yes |
+          | Threat analytics | Yes | Yes |
+          | Cross-platform support <br/>(Windows, macOS, iOS, and Android OS) | Yes | Yes |
+          | Microsoft Threat Experts |	No |	Yes |
+          | Partner APIs | Yes | Yes |
+          | Microsoft 365 Lighthouse integration <br/>(For viewing security incidents across customer tenants) | Yes | No |
+
+
+
 
       - question: Can I configure more than one web content filtering policy in Defender for Business?
         answer: |
