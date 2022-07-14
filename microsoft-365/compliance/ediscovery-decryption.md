@@ -30,7 +30,7 @@ Prior to this new capability, only the content of an email message protected by 
 
 ## Supported encryption technologies
 
-For Exchange, Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies are Azure Rights Management (Azure RMS)<sup>3</sup> and Microsoft Purview Information Protection (specifically sensitivity labels). For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by S/MIME or third-party encryption technologies isn't supported. For example, previewing or exporting content encrypted with non-Microsoft technologies isn't supported.
+For Exchange, Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies are Azure Rights Management (Azure RMS)<sup>3</sup> and Microsoft Purview Information Protection (specifically sensitivity labels). For more information about Microsoft encryption technologies, see [Encryption](encryption.md) and the various [email encryption](email-encryption.md#comparing-email-encryption-options-available-in-office-365) options available. Content encrypted by S/MIME or third-party encryption technologies isn't supported. For example, previewing or exporting content encrypted with non-Microsoft technologies isn't supported.
 
 > [!NOTE]
 > The decryption of email messages sent with an [Microsoft Purview Message Encryption custom branding template](add-your-organization-brand-to-encrypted-messages.md) is not supported by Microsoft eDiscovery tools. When using an OME custom branding template, email messages are delivered to the OME portal instead of the recipient's mailbox. Therefore, you won't be able to use eDiscovery tools to search for encrypted messages because those messages are never received by the recipient's mailbox.
@@ -86,7 +86,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
 ## Notes
 
-<sup>1</sup> Encrypted files located on a local computer and cloud attachments copied to an email message aren't decrypted and indexed for eDiscovery. 
+<sup>1</sup> Encrypted files located on a local computer and copied to an email message aren’t decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. For more information about advanced indexing, see [Advanced indexing of custodian data](indexing-custodian-data.md).
 
 <sup>2</sup> Only items labeled within SharePoint online service will be decrypted, everything else is unsupported including labeling or encrypting in the client before upload, legacy doc library RMS templates or settings, SMIME or any other standard etc. See [Enable sensitivity labels for Office files](sensitivity-labels-sharepoint-onedrive-files.md).
 
