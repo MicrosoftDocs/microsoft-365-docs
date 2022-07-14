@@ -113,7 +113,7 @@ Next, to set up the integration, your Microsoft 365 admin does the following:
 
 1. Adds a Fast Health Interoperability Resources (FHIR) base URL from your Epic technical specialist and specifies the environment. Configure as many FHIR base URLs as needed, depending on your organization’s needs and the environments you want to test.
 
-    - The FHIR base URL is a static address that corresponds to your server FHIR API endpoint. An example URL is `https://lamnahealthcare.org/fihr/auth/connect-ocurprd-oauth/api/FHDST`.
+    - The FHIR base URL is a static address that corresponds to your server FHIR API endpoint. An example URL is `https://lamnahealthcare.com/fhir/auth/connect-ocurprd-oauth/api/FHDST`.
 
     - You can set up the integration for test and production environments. For initial setup, we encourage you to configure the connector from a test environment before moving to production.
 
