@@ -33,9 +33,9 @@ This article provides guidance on how to troubleshoot AuditD related performance
 
 - If the AuditD service is misconfigured or offline, then some events might be missing. To troubleshoot such an issue, refer to: [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.](linux-support-events.md)
 
-In certain server workloads, two issues may be observed: 
+In certain server workloads, two issues might be observed: 
 
-- High CPU resource consumption from ***mdatp_audisp_plugin*** process. 
+- **High CPU** resource consumption from ***mdatp_audisp_plugin*** process. 
 
 - ***/var/log/audit/audit.log*** becoming large or frequently rotating. 
 
