@@ -31,27 +31,27 @@ ms.collection:
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Threat Experts - Targeted Attack Notifications is a managed threat hunting service. Once you apply and are accepted, you'll receive targeted attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities.
+Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notification) is a managed threat hunting service. Once you apply and are accepted, you'll receive endpoint attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities.
 Microsoft Threat Experts – Experts on Demand lets you get expert advice about threats your organization is facing. You can reach out for help on threats your organization is facing. It's available as a subscription service.
 
-## Apply for Microsoft Threat Experts – Targeted Attack Notifications
+## Apply for Endpoint Attack Notifications
 
 > [!IMPORTANT]
-> Before you apply, make sure to discuss the eligibility requirements for Microsoft Threat Experts – Targeted Attack Notifications  with your Microsoft Technical Service provider and account team.
+> Before you apply, make sure to discuss the eligibility requirements for Endpoint Attack Notifications with your Microsoft Technical Service provider and account team.
 
-If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, you can apply for Microsoft Threat Experts – Targeted Attack Notifications through their Microsoft 365 Defender portal. Go to **Settings > Endpoints > General > Advanced features > Microsoft Threat Experts – Targeted Attack Notifications**, and select **Apply**. See [Configure Microsoft Threat Experts capabilities](./configure-microsoft-threat-experts.md) for a full description.
+If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, you can apply for Endpoint Attack Notifications through their Microsoft 365 Defender portal. Go to **Settings > Endpoints > General > Advanced features > Endpoint Attack Notifications**, and select **Apply**. See [Configure Microsoft Threat Experts capabilities](./configure-microsoft-threat-experts.md) for a full description.
 
 :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="The Advanced features option on the left-navigation pane of the Endpoints page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
-Once your application is approved, you'll start receiving targeted attack notifications whenever Threat Experts detect a threat to your environment.
+Once your application is approved, you'll start receiving endpoint attack notifications whenever Threat Experts detect a threat to your environment.
 
 ## Subscribe to Microsoft Threat Experts - Experts on Demand
 
 Contact your Microsoft representative to subscribe to Experts on Demand.  See [Configure Microsoft Threat Experts capabilities](./configure-microsoft-threat-experts.md) for full details.
 
-## Receive targeted attack notification
+## Receive endpoint attack notification
 
-The Microsoft Threat Experts – Targeted Attack Notification capability provides proactive hunting for the most important threats to your network. Our threat experts hunt for human adversary intrusions, hands-on-keyboard attacks, and advanced attacks, such as cyberespionage. These notifications will show up as a new alert. The managed hunting service includes:
+The Endpoint Attack Notification capability provides proactive hunting for the most important threats to your network. Our threat experts hunt for human adversary intrusions, hands-on-keyboard attacks, and advanced attacks, such as cyberespionage. These notifications will show up as a new alert. The managed hunting service includes:
 
 - Threat monitoring and analysis, reducing dwell time and the risk to your business
 - Hunter-trained artificial intelligence to discover and target both known attacks and emerging threats
