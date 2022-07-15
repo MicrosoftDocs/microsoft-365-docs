@@ -60,7 +60,9 @@ The rest of this article explains how to use the spoof intelligence insight in t
 >
 > - The spoof intelligence insight and the **Spoof** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
->- The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
+> - The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
+>
+> - The latest available data is 3 to 4 days old.
 
 ## What do you need to know before you begin?
 
@@ -69,9 +71,9 @@ The rest of this article explains how to use the spoof intelligence insight in t
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of 
-    -   **Organization Management**
-    -   **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of one of the following role groups:
+    - **Organization Management**
+    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
   - For read-only access to the spoof intelligence policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -31,6 +31,8 @@ Setting up a Healthcare connector consists of the following tasks:
 - Running a script to push healthcare EHR auditing data to the API endpoint.
 
 - Optionally, scheduling the script to run automatically to import the auditing data.
+
+If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
 
 ## Before you set up the connector
 
