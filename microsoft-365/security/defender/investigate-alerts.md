@@ -115,7 +115,7 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 
 The **Actions taken** section has a list of impacted assets, such as mailboxes, devices, and users affected by this alert. 
 
-You can also select **View in action center** to view the **History** tab of the **Action center** in the Microsoft 365 Defender portal. 
+You can also select **View in action center** to view the **History** tab of the **Action center** in the Microsoft 365 Defender portal.
 
 ### Trace an alert's role in the alert story
 
@@ -141,16 +141,14 @@ The **Manage alert** pane allows you to view or specify:
 - The alert status (New, Resolved, In progress).
 - The user account that has been assigned the alert.
 - The alert's classification:
-
-   - **Not set** (the default).
-
-   - **True positive** with a type of threat. Use this classification for alerts that accurately indicate a real threat. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
-
-   - **Informational, expected activity** with a type of activity. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
-
-   - **False positive** for types of alerts that were created even when there is no malicious activity. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
-
+     - **Not Set** (default).
+     - **True positive** with a type of threat. Use this classification for alerts that accurately indicate a real threat. Specifying this threat type alerts your security team see threat patterns and act to defend your organization from them.
+     - **Informational, expected activity** with a type of activity. Use this option for alerts that are technically accurate, but represent normal behavior or simulated threat activity. You generally want to ignore these alerts but expect them for similar activities in the future where the activities are triggered by actual attackers or malware. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
+     - **False positive** for types of alerts that were created even when there is no malicious activity or for a false alarm. Use the options in this category to classify alerts that are mistakenly identified as normal events or activities as malicious or suspicious. Unlike alerts for 'Informational, expected activity', which can also be useful for catching real threats, you generally don’t want to see these alerts again.Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
 - A comment on the alert.
+
+>[!NOTE]
+> Alert determination values (APT, SecurityPersonnel and SecurityTesting) have been deprecated and are no longer available via the API.
 
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>

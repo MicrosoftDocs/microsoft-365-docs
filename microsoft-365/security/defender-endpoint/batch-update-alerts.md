@@ -87,9 +87,12 @@ Property | Type | Description
 alertIds | List&lt;String&gt;| A list of the IDs of the alerts to be updated. **Required**
 status | String | Specifies the updated status of the specified alerts. The property values are: 'New', 'InProgress' and 'Resolved'.
 assignedTo | String | Owner of the specified alerts
-classification | String | Specifies the specification of the specified alerts. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
+classification | String | Specifies the specification of the specified alerts. The property values are: 'True positive', 'Informational, expected activity' and 'False positive'.
 determination | String | Specifies the determination of the specified alerts. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Comment to be added to the specified alerts.
+
+>[!NOTE]
+>Alert determination values such as APT, SecurityPersonnel and SecurityTesting have been deprecated and are no longer available via the API.
 
 ## Response
 
