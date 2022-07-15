@@ -30,7 +30,7 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 ## Communications
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/chat-room-conversation-teams.png"::: 
+:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: 
 
 Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
 
@@ -43,7 +43,7 @@ Also see these resources to learn how Yammer can work for your frontline workers
 
 ## Wellbeing & engagement
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/heart-teams.png"::: 
+:::image type="icon" source="/office/media/icons/heart-teams.png"::: 
 
 Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.
 
@@ -55,7 +55,7 @@ Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), P
 
 ## Training & onboarding
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/files-teams.png"::: 
+:::image type="icon" source="/office/media/icons/files-teams.png"::: 
 
 Promote continual growth for your employees and encourage knowledge sharing and exchange.
 
@@ -66,7 +66,7 @@ Promote continual growth for your employees and encourage knowledge sharing and 
 
 ## Schedule management
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/calendar-teams.png"::: 
+:::image type="icon" source="/office/media/icons/calendar-teams.png"::: 
 
 Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave.
 
@@ -76,7 +76,7 @@ Simplify and streamline schedule coordination with your frontline workforce. Gai
 
 ## Digitized processes
 
-:::image type="icon" source="https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png"::: 
+:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png"::: 
 
 Drive operational efficiency by digitizing paper-based processes and automating routine, repetitive steps.
 
