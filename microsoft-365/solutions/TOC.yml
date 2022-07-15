@@ -234,6 +234,8 @@
         items:
           - name: "Overview"
             href: /microsoftteams/hybrid-meetings-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Hybrid meeting principles"
+            href: /microsoftteams/hybrid-meetings-principles?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: "Step 1 - Get familiar with Teams meeting features"
             href: /microsoftteams/hybrid-meetings-features?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: "Step 2 - Evangelize meeting best practices"
