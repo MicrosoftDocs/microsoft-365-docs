@@ -20,7 +20,6 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-overview
   - m365-frontline
-  - m365solution-frontline
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

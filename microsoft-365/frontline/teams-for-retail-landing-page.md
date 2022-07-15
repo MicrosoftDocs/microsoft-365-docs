@@ -13,7 +13,6 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-retail
   - m365-frontline
-  - m365solution-frontline
   - m365solution-retail
   - m365solution-overview
 ms.localizationpriority: high
