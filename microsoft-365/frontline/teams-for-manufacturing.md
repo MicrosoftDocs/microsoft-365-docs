@@ -13,8 +13,6 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-manufacturing
   - m365-frontline
-  - m365solution-frontline
-  - m365solution-scenario
   - m365solution-manufacturing
   - m365solution-overview
 ms.localizationpriority: high
