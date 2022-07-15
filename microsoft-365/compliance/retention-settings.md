@@ -81,10 +81,10 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you're using the records management solution:
-        - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
+        - **Solutions** \> **Records management** \> **Adaptive scopes** tab \> + **Create scope**
         
     - If you're using the data lifecycle management solution:
-       - **Solutions** > **Data lifecycle management** > **Adaptive scopes** tab > + **Create scope**
+       - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Adaptive scopes** tab \> + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
