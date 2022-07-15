@@ -62,7 +62,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
-ANNAPURNA INTEGRATE YOUR TC DEFINITIONS IN ALPHABETICAL ORDER IN THE LIST ABOVE THIS LINE
+ANNAPURNA INTEGRATE YOUR TC DEFINITIONS IN ALPHABETICAL ORDER IN THE LIST ABOVE THIS LINE. MERGE YOUR PR INTO THIS WORKING BRANCH NOT MAIN. OPEN THIS LINK TO EDIT https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/chrfox-tc-definitions/microsoft-365/compliance/classifier-tc-definitions.md  CONTACT ME BEFORE YOU EDIT SO I CAN SHOW YOU HOW TO MERGE PROPERLY
 
 These classifiers appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
