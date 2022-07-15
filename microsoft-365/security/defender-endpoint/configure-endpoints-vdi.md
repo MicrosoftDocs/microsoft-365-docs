@@ -246,9 +246,6 @@ The following configuration settings are recommended:
 #### Attack surface reduction rules
 - Configure all available rules to Audit.
 
->[!IMPORTANT]
->For Windows 365 Devices, we recommend always enabling the rule: **Block credential stealing from the Windows local security authority subsystem** by default. This is to minimize the risk of credential theft on cloud PC devices
-
 
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
