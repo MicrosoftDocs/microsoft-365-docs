@@ -78,9 +78,9 @@ In this step, you'll create the three custom retention tags that were previously
 
 To create new retention tags, you'll use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in your Exchange Online organization. Be sure to use the classic version of the EAC.
   
-1. Go to [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) and sign in using your credentials.
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) and sign in using your credentials.
   
-2. In the EAC, go to **Compliance management** > **Retention tags**
+2. In the compliance portal, go to **Solutions** \> **Data lifecycle management** \> **Exchange (legacy)** > **Retention tags**
 
     A list of the retention tags for your organization is displayed.
 
@@ -156,7 +156,7 @@ The last retention tag to create is a custom retention policy tag (RPT) for the 
 
 After you create the custom retention tags, the next step is to create a new retention policy and add the retention tags. You'll add the three custom retention tags that you created in Step 2, and the built-in tags that were mentioned in the first section. In Step 4, you'll assign this new retention policy to user mailboxes.
   
-1. In the EAC, go to **Compliance management** > **Retention policies**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Data lifecycle management** \> **Exchange (legacy)** > **Retention policies**.
 
 2. On the **Retention policies** page, select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
 
@@ -185,7 +185,7 @@ After you create the custom retention tags, the next step is to create a new ret
 
 When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
   
-1. In the EAC, go to **Recipients** > **Mailboxes**.
+1. In the Exchange admin center, go to **Recipients** > **Mailboxes**.
 
     A list of all user mailboxes in your organization is displayed.
 
