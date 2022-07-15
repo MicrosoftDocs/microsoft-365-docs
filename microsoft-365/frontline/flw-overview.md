@@ -11,6 +11,8 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - m365solution-overview
+  - m365solution-frontline
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams

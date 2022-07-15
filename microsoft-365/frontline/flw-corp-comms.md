@@ -12,6 +12,8 @@ ms.service: microsoft-365-frontline
 ms.collection:
   - M365-collaboration
   - m365-frontline
+  - m365solution-frontline
+  - m365solution-scenario
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

@@ -14,6 +14,8 @@ ms.collection:
   - m365-frontline
   - microsoftcloud-healthcare
   - microsoftcloud-retail
+  - m365solution-frontline
+  - m365solution-scenario
 search.appverid: MET150
 ms.localizationpriority: high
 searchScope:
