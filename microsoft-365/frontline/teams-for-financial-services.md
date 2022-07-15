@@ -102,7 +102,7 @@ More information: [Admin documentation for Collaboration Manager for Loans](/ind
 
 ## Configure services and apps
 
-:::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
+:::image type="content" source="media/financial-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
 
 ### Apps and services for financial services
 
