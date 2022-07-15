@@ -37,9 +37,16 @@ If you want to create an EDM SIT using the classic experience see, [Create EDM S
 
 ## Formatting the sample file
 
-The system will use the sample file to create the schema, and the SIT. It must be formatted identically to your source sensitive informaition table file and should contain synthetic values that are representative of your actual data. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values), or pipe-separated (|) format, but should be the same as your actual source sensitive information table file. The .tsv format is recommended in cases where your data values may included commas, such as street addresses.
+The system will extract the column names from the sample file to create the schema, and will recommend base SITs to map the sample field data to. It must be formatted identically to your source sensitive information table file and should contain synthetic values that are representative of your actual data. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values), or pipe-separated (|) format, but should be the same as your actual source sensitive information table file. The .tsv format is recommended in cases where your data values may included commas, such as street addresses.
 
-Use about 20-30 rows of data to ensure that the system has enough samples to work with.
+- Use about 10-20 rows of data to ensure that the system has enough samples to work with.
+- Field values that contain commas must be enclosed in quotes *"*.
+- The first row must be the header row and contain column names.
+- The file must contain at least one row of data.
+- Each row of data must contain the correct number of fields, corresponding to the headers.
+- The sample file contain up to 32 columns.
+- The sample file can exceed 2.5 MB in size.
+- Column (field) names must start with a letter, be at least three characters long, and consist of only alphanumeric characters (A-Z, a-z, 0-9) and can’t include spaces, underscores or other special characters. 
 
 For example, if your actual data looks like this and uses tab delimited (.tsv) format
 

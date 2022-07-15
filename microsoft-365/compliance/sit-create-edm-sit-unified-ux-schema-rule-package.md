@@ -64,7 +64,7 @@ If you are not familiar with EDM based SITS or their implementation, it is essen
 
 1. Select **+ Create EDM classifier**.
 
-1. Name the SIT and add a description. The name that the system generates for the schema will be the SIT name you enter here concatenated with *schema*. Select **Next**.
+1. Name the SIT and add a description. The name that the system generates for the schema will be the SIT name you enter here concatenated with *schema*. It will be displayed at the end of the flow. Select **Next**.
 
 1. Select the method you want to use to define your schema, either **Upload a file containing sample data**, or **Manually define your data structure**. We recommend the upload sample data file option and the rest of this procedure assumes you have chosen to upload your sample file. Select **Next**.
 
@@ -79,7 +79,7 @@ If you are not familiar with EDM based SITS or their implementation, it is essen
 
 > [!TIP]
 > - Select primary elements whose values make that row unique in the table. For example, don't pick fields like *FirstName* or *DateOfBirth* as there will most likely be many duplications of first names or dates of birth in your actual sensitive data file. Instead pick things like *Social Security Number* and *BankAccountNumber* whose value will be unique in your table and therefore make the row unique in the table.
-> - You can pick up to five primary elements. The more you can pick that have values that are unique in your actual sensitive data table, the better the accuracy of your EDM SIT will be. It will also improve performance and avoid timeouts caused by process overloading.
+> - You must pick one primary element but no more than five primary elements. If you have a multi-token corroborative data field, you should map that to a base SIT as well. The more you can pick that have values that are unique in your actual sensitive data table, the better the accuracy of your EDM SIT will be. It will also improve performance and avoid timeouts caused by process overloading. 
 > - Select a sensitive information type that closely matches the format of the content you want to find. Selecting a SIT that matches unnecessary content, like one that matches all text strings, or all numbers can cause excessive load in the system which could result in sensitive information being missed.
 
 9. On the **Configure settings for data fields** you can tell set how EDM treats case and which delimiters to ignore. You can set this for the values for all elements values or specify the settings for each element individually. Choose **Next**.
