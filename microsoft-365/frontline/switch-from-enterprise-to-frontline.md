@@ -1,5 +1,5 @@
 ---
-title: Changing from a Microsoft 365 E plan to a Microsoft F plan
+title: Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: 
@@ -19,7 +19,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Changing from a Microsoft 365 E plan to a Microsoft F plan
+# Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
 
 If you're considering switching some of your users from a Microsoft 365 E plan to a Microsoft 365 [F3](https://www.microsoft.com/microsoft-365/enterprise/f3) or [F1](https://www.microsoft.com/microsoft-365/enterprise/f1) plan, this article provides guidance to help you prepare your organization for the change. Changing from an E plan to an F plan affects the services and features users have access to.
 
