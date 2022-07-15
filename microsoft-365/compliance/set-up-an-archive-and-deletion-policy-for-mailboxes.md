@@ -185,7 +185,7 @@ After you create the custom retention tags, the next step is to create a new ret
 
 When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
   
-1. In the Exchange admin center, go to **Recipients** > **Mailboxes**.
+1. In the [Exchange admin center (EAC)](https://go.microsoft.com/fwlink/p/?linkid=2059104), go to **Recipients** > **Mailboxes**.
 
     A list of all user mailboxes in your organization is displayed.
 
