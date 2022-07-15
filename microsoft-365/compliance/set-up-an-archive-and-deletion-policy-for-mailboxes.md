@@ -189,23 +189,21 @@ When a new mailbox is created, a retention policy named Default MRM policy is as
 
     A list of all user mailboxes in your organization is displayed.
 
-2. Select all the mailboxes by clicking on the first one in the list, holding down the **Shift** key, and then clicking the last one in the list. 
+2. Select all the mailboxes by selecting the box for **Display name**. 
 
-3. In the details pane in the EAC, under **Bulk Edit**, select **More options**.
+3. Select the **Mailbox policies** option.
 
-4. Under **Retention Policy**, select **Update**.
+4. In the **Mailbox policies** flyout pane, under **Retention Policy**, select the retention policy that you created in Step 3; for example, **Alpine House Archive and Retention Policy**.
 
-5. On the **Bulk assign retention policy** page, in the **Select the retention policy** drop-down list, select the retention policy that you created in Step 3; for example, **Alpine House Archive and Retention Policy**.
+5. Select **Save** to save the new retention policy assignment.
 
-6. Select **Save** to save the new retention policy assignment.
+6. To verify that the new retention policy was assigned to mailboxes:
 
-7. To verify that the new retention policy was assigned to mailboxes:
+   1. Select a mailbox on the **Mailboxes** page.
 
-   1. Select a mailbox on the **Mailboxes** page, and then select **Edit** ![Edit.](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png).
+   2. On the mailbox properties page for the selected user, select **Mailbox**.
 
-   2. On the mailbox properties page for the selected user, select **Mailbox features**.
-
-   The name of the new policy assigned to the mailbox is displayed in the **Retention policy** drop-down list.
+   The name of the new policy assigned to the mailbox is displayed for the **Retention policy**.
 
 ## (Optional) Step 5: Run the Managed Folder Assistant to apply the new settings
 
