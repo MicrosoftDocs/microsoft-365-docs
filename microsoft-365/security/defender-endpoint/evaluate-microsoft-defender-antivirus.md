@@ -31,19 +31,7 @@ ms.collection: m365-security-compliance
 **Platforms**
 - Windows
 
-Use this guide to determine how well Microsoft Defender Antivirus protects you from viruses, malware, and potentially unwanted applications.
-
-> [!TIP]
->You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
->
-> - Cloud-delivered protection
-> - Fast learning (including Block at first sight)
-> - Potentially unwanted application blocking
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
-It explains the important next-generation protection features of Microsoft Defender Antivirus available for both small and large enterprises, and how they increase malware detection and protection across your network.
+Use this guide to determine how well Microsoft Defender Antivirus protects you from viruses, malware, and potentially unwanted applications. It explains the important next-generation protection features of Microsoft Defender Antivirus available for both small and large enterprises, and how they increase malware detection and protection across your network.
 
 You can choose to configure and evaluate each setting independently, or all at once. We have grouped similar settings based upon typical evaluation scenarios, and include instructions for using PowerShell to enable the settings.
 
