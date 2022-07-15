@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Purview Compliance Manager premium assessments trial playbook."
+ms.custom: trial-playbook
 ---
 
 # Trial playbook: Microsoft Purview Compliance Manager premium assessments
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Welcome to the Microsoft Purview Compliance Manager premium assessment trial playbook.
 

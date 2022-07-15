@@ -14,6 +14,9 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 description: Require that your users sign in securely with multi-factor authentication (MFA) and other features.
 ---

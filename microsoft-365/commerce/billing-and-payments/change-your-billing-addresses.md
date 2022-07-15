@@ -23,7 +23,7 @@ description: "Learn how to update your billing addresses or the email address us
 ms.date: 01/24/2022
 ---
 
-# Change your billing addresses
+# Change your Microsoft 365 for business billing addresses
 
 Your bill or invoice contains three addresses:
   

@@ -151,6 +151,13 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
         - Click **Select App**, choose **Microsoft Defender ATP**, select **OK** and then **Next**.
 
         :::image type="content" source="images/android-create-app.png" alt-text=" The Associated app details pane" lightbox="images/android-create-app.png":::
+     
+    1. Select **Permissions > Add**. From the list, select the available app permissions > **OK**.
+    2. Select an option for each permission to grant with this policy:
+
+       - **Prompt** -  Prompts the user to accept or deny.
+       - **Auto grant** - Automatically approves without notifying the user.
+       - **Auto deny** - Automatically denies without notifying the user. 
 
     1. In the **Settings** page, go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format. 
 
@@ -164,7 +171,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
        :::image type="content" alt-text="Image of selected configuration policies." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
 
-    1. In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
+    1. In the **Assignments** page, select the user group to which this app config policy would be assigned. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
        :::image type="content" source="images/android-select-group.png" alt-text="The Selected groups pane" lightbox="images/android-select-group.png":::
 
@@ -257,11 +264,6 @@ The device configuration profile is now assigned to the selected user group.
 
 ## Set up Microsoft Defender in Personal Profile on Android Enterprise in BYOD mode
 
-> [!NOTE]
-> Microsoft Defender support in Personal profile in Android Enterprise (AE) in Bring-Your-Own-Device (BYOD) mode is now in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-With Microsoft defender support in Android personal profiles, user devices can be protected against phishing and malware attacks on a personal profile that could potentially compromise corporate resources on work profile.
-
 ### Set up Microsoft Defender in Personal Profile
 
 Admins can go to the [Microsoft Endpoint Management admin center](https://endpoint.microsoft.com) to set up and configure Microsoft Defender support in personal profiles by following these steps:
@@ -291,7 +293,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
     > [!div class="mx-imgBorder"]
     > ![Image of reviewing and creating policy.](images/savepolicy.png)
 
-Admins can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
+Admins also can set up **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
 
 Organizations can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
 
