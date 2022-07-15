@@ -15,6 +15,8 @@ ms.collection:
   - m365-frontline
   - m365solution-frontline
   - m365solution-scenario
+  - m365solution-financialservices
+  - m365solution-overview
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
