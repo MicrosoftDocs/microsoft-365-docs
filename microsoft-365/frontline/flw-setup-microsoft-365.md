@@ -12,6 +12,7 @@ description: Learn how to set up Microsoft 365 with the services and features yo
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - m365solution-frontline
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -23,7 +24,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 
 1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you have determined which scenarios you want, use the table below to identify the required apps and services for each scenario that you want to implement.
 1. **[Set up your environment and core Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)**: Follow the Setup Guides in the Microsoft 365 admin center to set up Microsoft 365. Keep reading to learn how to access these guides.
-1. **[Set up Microsoft Teams](#step-3-set-up-microsoft-teams)**: Use either the onboarding wizard or the the Deploy teams at scale process to configure the service and create your teams.
+1. **[Set up Microsoft Teams](#step-3-set-up-microsoft-teams)**: Use either the onboarding wizard or the Deploy teams at scale process to configure the service and create your teams.
 1. **[Set up any other services needed for your scenario](#step-4-set-up-other-services)**: Follow the instructions in the sections below to setup these services.
 1. **[Configure apps](#step-5-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
 1. **[Devices](#step-6-set-up-devices)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
@@ -38,13 +39,12 @@ The following table lists the scenarios for your frontline workers. You can read
 |  ------- | -------  |
 | [Team communication and collaboration](flw-team-collaboration.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Email with Exchange Online](#set-up-email-with-exchange-online) |
 | [Corporate communications](flw-corp-comms.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
-| [Virtual appointments](bookings-virtual-visits.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
-| Engage your employees and focus on employee wellbeing| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
+| [Virtual appointments](virtual-appointments.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
+| [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md)| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
 | [Onboard new employees](/sharepoint/onboard-employees)| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
-| Ongoing training | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Viva Learning](#set-up-viva-learning) |
+| [Ongoing training](flw-onboarding-training.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Viva Learning](#set-up-viva-learning) |
 | [Simplify business processes](simplify-business-processes.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#set-up-power-apps-power-automate-and-power-bi) |
-| Manage sites, stores, and projects| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#set-up-power-apps-power-automate-and-power-bi) |
 
 Some services are only included with F3 licenses, such as email and the Power Platform. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
 

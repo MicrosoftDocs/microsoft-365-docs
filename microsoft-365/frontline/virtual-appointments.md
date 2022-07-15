@@ -12,6 +12,8 @@ description: Learn about the capabilities in Microsoft Teams for scheduling and 
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - m365solution-frontline
+  - m365solution-scenario
 f1.keywords:
 - NOCSH
 appliesto: 

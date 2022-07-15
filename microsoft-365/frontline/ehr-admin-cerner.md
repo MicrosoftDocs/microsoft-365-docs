@@ -78,7 +78,7 @@ Next, to set up the integration, your Microsoft 365 admin adds a Fast Health Int
 
 :::image type="content" source="media/ehr-admin-cerner-configuration.png" alt-text="Screenshot of the Configuration information page of the Teams EHR connector configuration portal." lightbox="media/ehr-admin-cerner-configuration.png":::
 
-- The FHIR base URL is a static address that corresponds to your server FHIR API endpoint. An example URL is `https://lamnahealthcare.org/fihr/auth/connect-ocurprd-oauth/api/FHDST`.
+- The FHIR base URL is a static address that corresponds to your server FHIR API endpoint. An example URL is `https://lamnahealthcare.com/fhir/auth/connect-ocurprd-oauth/api/FHDST`.
 
 - You can set up the integration for test and production environments. For initial setup, we encourage you to configure the connector from a test environment before moving to production.
 

@@ -7,7 +7,7 @@
     href: flw-choose-scenarios.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
-  - name: Setup and configure
+  - name: Set up and configure
     items:
     - name: Overview
       href: flw-deploy-overview.md
@@ -127,6 +127,8 @@
     items:
     - name: About apps in Microsoft Teams
       href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Overview of app management in Microsoft Teams
+      href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json 
     - name: Manage the Approvals app
       href: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manage the Bookings app

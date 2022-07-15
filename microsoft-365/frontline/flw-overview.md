@@ -11,6 +11,8 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - m365solution-overview
+  - m365solution-frontline
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
@@ -51,9 +53,9 @@ Enrich your communications and employee experiences with Microsoft 365 for front
 
 | Icon | Solution area | Description |
 | --- | --- | --- |
-|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/chat-room-conversation-teams.png"::: | [Communication](flw-choose-scenarios.md#communications) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
-|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/heart-teams.png"::: | [Wellbeing & engagement](flw-choose-scenarios.md#wellbeing--engagement) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
-|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/files-teams.png"::: | [Training & onboarding](flw-choose-scenarios.md#training--onboarding) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
+|:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: | [Communication](flw-choose-scenarios.md#communications) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
+|:::image type="icon" source="/office/media/icons/heart-teams.png"::: | [Wellbeing & engagement](flw-choose-scenarios.md#wellbeing--engagement) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
+|:::image type="icon" source="/office/media/icons/files-teams.png"::: | [Training & onboarding](flw-choose-scenarios.md#training--onboarding) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
 
 ## Enhance workforce management
 
@@ -61,7 +63,7 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 
 | Icon | Solution area | Description |
 | --- | --- | --- |
-|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/calendar-teams.png"::: | [Schedule management](flw-choose-scenarios.md#schedule-management) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
+|:::image type="icon" source="/office/media/icons/calendar-teams.png"::: | [Schedule management](flw-choose-scenarios.md#schedule-management) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
 
 ## Increase operations efficiency
 
@@ -69,8 +71,8 @@ Microsoft 365 includes apps liked Lists, Tasks, and Approvals, that can help you
 
 | Icon | Solution area | Description |
 | --- | --- | --- |
-|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png":::| [Digitize your business processes](flw-choose-scenarios.md#digitized-processes) | Drive operational efficiency by digitizing paper-based processes, and automating routine, repetitive steps. |
-|:::image type="icon" source="https://docs.microsoft.com/office/media/icons/share-teams.png":::| [Digital ecosystem](flw-choose-scenarios.md#more-scenarios-and-solutions-with-the-digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
+|:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png":::| [Digitize your business processes](flw-choose-scenarios.md#digitized-processes) | Drive operational efficiency by digitizing paper-based processes, and automating routine, repetitive steps. |
+|:::image type="icon" source="/office/media/icons/share-teams.png":::| [Digital ecosystem](flw-choose-scenarios.md#more-scenarios-and-solutions-with-the-digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
 
 ## Safeguard your business
 
@@ -78,7 +80,7 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 - [Introduction to security in Microsoft 365](/learn/modules/security-in-m365/)
 - [Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/)
-- [Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks?view=o365-worldwide)
+- [Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks)
 
 ## Modern devices
 

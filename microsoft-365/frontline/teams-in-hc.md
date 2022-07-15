@@ -1,8 +1,8 @@
 ---
-title: "Get started with Microsoft 365 for healthcare organizations"
-author: dstrome
-ms.author: dstrome
-manager: serdars
+title: Get started with Microsoft 365 for healthcare organizations
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-frontline
@@ -20,11 +20,12 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-overview
   - m365-frontline
+  - m365solution-frontline
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: 
-description: Learn about health care features like Microsoft Teams telehealth, EHR integration, Frontline worker system integration, and the Patients app.
+description: Learn about the telemedicine features in Microsoft 365 and Microsoft Teams and how you can implement them in your healthcare organization. 
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
@@ -109,7 +110,7 @@ Also related to secure messaging is the ability to have other tenants federated 
 
 ## Teams templates for healthcare organizations
 
-Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care or operational needs. To learn more, see [Get started with Teams templates for Healthcare organizations](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care or operational needs. To learn more, see [Use healthcare team templates](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ## Care coordination and collaboration
 
@@ -155,7 +156,7 @@ To learn more, see [Manage the Tasks app for your organization in Microsoft Team
 
 Use [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) to streamline all of your requests and processes with your team. Create, manage, and share approvals directly from your hub for teamwork. Start an approval flow from the same place you send a chat, in a channel conversation, or from the Approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request.
 
-You can allow the Approvals app for your organization and add it to your teams. To learn more, see [Teams Approvals app availability](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+You can allow the Approvals app for your organization and add it to your teams. To learn more, see [Manage the Approvals app](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ### Create, manage, and share schedules with the Shifts app and Frontline Worker integration
 
@@ -169,4 +170,4 @@ There are many resources available to help all of the users in your organization
 
 - Visit the [Teams adoption center](https://adoption.microsoft.com/microsoft-teams/) for advice on rolling out Teams if you are just starting your organization's journey with Teams, or expanding Teams into more areas of your organization.
 - Consider setting up custom [learning pathways](https://adoption.microsoft.com/microsoft-365-learning-pathways/) for your users to cover just the tasks they need to do.
-- Get help and training for your users on how to perform basic tasks in Teams on the [Teams support site](https://support.microsoft.com/teams), including [quick training videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). This site also has help and training for the Teams apps, including [Lists](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070), [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), [Bookings](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b), and [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
+- Get help and training for your users on how to perform basic tasks in Teams on the [Teams support site](https://support.microsoft.com/teams), including [quick training videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). This site also has help and training for the Teams apps, including [Lists](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070), [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), [Bookings](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5), and [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).

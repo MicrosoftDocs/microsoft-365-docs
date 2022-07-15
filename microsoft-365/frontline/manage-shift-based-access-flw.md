@@ -3,12 +3,12 @@ title: Manage shift-based access for frontline workers in Teams
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: aaku
-manager: serdars
+manager: samanro
 ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to manage shift-based access in Teams for Frontline Workers in your organization.
+description: Learn how to manage shift-based access in Teams for frontline workers in your organization.
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration

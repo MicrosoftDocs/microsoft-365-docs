@@ -116,10 +116,11 @@ Download and [customize](#customize-your-infographic) one of these infographics 
 
 ### Customize your infographic
 
-1. Choose one of three pre-made infographics depending on your organization's needs:
+1. Choose one of the pre-made infographics depending on your organization's needs:
     1. Healthcare
     2. Financial services
     3. Retail
+    1. Any industry
 
 2. Customize the infographic in PowerPoint.
     1. Use your organization's colors and preferred fonts.
