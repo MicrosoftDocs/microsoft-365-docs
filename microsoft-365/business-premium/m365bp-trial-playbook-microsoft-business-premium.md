@@ -59,6 +59,9 @@ When you try or buy Microsoft 365 Business Premium, you have the option of using
 
 ## Onboard and protect devices
 
+> [!NOTE]
+> The ability to onboard endpoints running Windows Server or Linux Server is now in preview! See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
+
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md).

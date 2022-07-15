@@ -55,7 +55,6 @@
 #### [Onboard Windows Client using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 #### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-#### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 ### [Run a detection test on a newly onboarded device](run-detection-test.md)
 ### [Run simulated attacks on devices](attack-simulations.md)
+### [Onboard devices without Internet access](onboard-offline-machines.md)
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
@@ -262,6 +262,12 @@
 ##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
+#### [Device Control]()
+##### [Removable Storage Protection](device-control-removable-storage-protection.md)
+##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Installation](mde-device-control-device-installation.md)
+##### [Device Control Printer Protection](printer-protection.md)
+##### [Device Control Reports](device-control-report.md)
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
 ##### [Exploit protection evaluation](evaluate-exploit-protection.md)
@@ -273,6 +279,14 @@
 ##### [Protect your network](network-protection.md)
 ##### [Evaluate network protection](evaluate-network-protection.md)
 ##### [Turn on network protection](enable-network-protection.md)
+#### [Web protection]()
+##### [Web protection overview](web-protection-overview.md)
+##### [Web threat protection]()
+###### [Web threat protection overview](web-threat-protection.md)
+###### [Monitor web security](web-protection-monitoring.md)
+###### [Respond to web threats](web-protection-response.md)
+##### [Web content filtering](web-content-filtering.md)
+
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -353,21 +367,6 @@
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Web protection]()
-##### [Web protection overview](web-protection-overview.md)
-##### [Web threat protection]()
-###### [Web threat protection overview](web-threat-protection.md)
-###### [Monitor web security](web-protection-monitoring.md)
-###### [Respond to web threats](web-protection-response.md)
-##### [Web content filtering](web-content-filtering.md)
-
-#### [Device Control]()
-##### [Removable Storage Protection](device-control-removable-storage-protection.md)
-##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
-##### [Device Installation](mde-device-control-device-installation.md)
-##### [Device Control Printer Protection](printer-protection.md)
-##### [Device Control Reports](device-control-report.md)
-
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
 ##### [Client behavioral blocking](client-behavioral-blocking.md)
@@ -379,9 +378,6 @@
 
 #### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
 #### [Optimize attack surface reduction rule deployment and detections](configure-machines-asr.md)
-
-## [Guidance for active threats and campaigns]()
-### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
