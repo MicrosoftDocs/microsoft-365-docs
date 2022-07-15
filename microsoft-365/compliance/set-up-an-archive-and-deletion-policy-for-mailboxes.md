@@ -48,7 +48,10 @@ The steps in this article set up an archiving and retention policy for a fictiti
 - Create a new retention policy and adding the new custom retention tags to it. Additionally, you'll also add built-in retention tags to the new retention policy. This includes personal tags that users can assign to items in their mailbox. You'll also add a retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This action helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
 
 You can follow some or all of the steps in this article to set up an archive and deletion policy for mailboxes in your own organization. We recommend that you test this process on a few mailboxes before implementing it on all mailboxes in your organization.
-  
+
+> [!NOTE]
+> Instructions in this article use the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md) and the [new Exchange admin center](/exchange/features-in-new-eac).
+
 ## Before you set up an archive and deletion policy
 
 - You must be a global administrator in your organization to perform the steps in this article.
@@ -76,12 +79,12 @@ In this step, you'll create the three custom retention tags that were previously
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (custom tag for the Deleted Items folder)
 
-To create new retention tags, you'll use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in your Exchange Online organization. Be sure to use the classic version of the EAC.
+To create new retention tags, you'll use the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md).
   
 1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) and sign in using your credentials.
   
 2. In the compliance portal, go to **Solutions** \> **Data lifecycle management** \> **Exchange (legacy)** > **Retention tags**
-
+    
     A list of the retention tags for your organization is displayed.
 
 ### Create a custom archive default policy tag
@@ -184,8 +187,10 @@ After you create the custom retention tags, the next step is to create a new ret
 ## Step 4: Assign the new retention policy to user mailboxes
 
 When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
+
+To follow these steps, make sure you use the [new Exchange admin center](/exchange/features-in-new-eac), rather than the classic version.
   
-1. In the [Exchange admin center (EAC)](https://go.microsoft.com/fwlink/p/?linkid=2059104), go to **Recipients** > **Mailboxes**.
+1. Sign in to the new [Exchange admin center (EAC)](https://admin.exchange.microsoft.com/), and go to **Recipients** > **Mailboxes**.
 
     A list of all user mailboxes in your organization is displayed.
 
@@ -281,4 +286,4 @@ You do this by using Exchange Online PowerShell to update your organization's de
 
     > <sup>\*</sup> Users can use the Recover Deleted Items tool in Outlook and Outlook on the web (formerly known as Outlook Web App) to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Exchange Online PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
-- Using the **Recoverable Items 14 days Move to Archive** retention tag helps free up storage space in the Recoverable Items folder in the user's primary mailbox. This is useful when a user's mailbox is placed on hold, which means nothing is ever permanently deleted from the user's mailbox. Without moving items to the archive mailbox, it's possible the storage quota for the Recoverable Items folder in the primary mailbox will be reached. For more information about this and how to avoid it, see [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+- Using the **Recoverable Items 14 days Move to Archive** retention tag helps free up storage space in the Recoverable Items folder in the user's primary mailbox. This is useful when a user's mailbox is placed on hold or has a retention policy applied that retains items. Both configurations prevent emails from being permanently deleted from the user's mailbox. Without moving items to the archive mailbox, it's possible the storage quota for the Recoverable Items folder in the primary mailbox will be reached. For more information about this scenario, see [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).
