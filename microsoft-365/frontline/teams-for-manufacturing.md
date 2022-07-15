@@ -31,7 +31,7 @@ Empower your frontline workforce with digital tools and modern devices that offe
 
 1. [Choose your scenarios](#choose-your-scenarios) you want to implement for your business.
 2. [Set up Microsoft 365](flw-setup-microsoft-365.md) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
-3. [Configure services and apps](#apps-and-services-for-manufacturing) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
+3. [Configure services and apps](#configure-services-and-apps) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
 
 ## Choose your scenarios
 
@@ -86,7 +86,11 @@ Make sure that all your workers have the knowledge and capabilities they need to
 
 More information: [Training and onboarding](flw-onboarding-training.md)
 
-## Apps and services for manufacturing
+## Configure services and apps
+
+:::image type="content" source="media/manufacturing-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
+
+### Apps and services for manufacturing
 
 Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
