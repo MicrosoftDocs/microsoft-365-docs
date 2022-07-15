@@ -57,4 +57,4 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 [Onboard previous versions of Windows](onboard-downlevel.md)
 
 ### Microsoft Defender for Cloud
-    - Review the prerequisites section in [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites)
+- Review the prerequisites section in [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites)
