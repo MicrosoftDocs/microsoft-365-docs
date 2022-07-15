@@ -54,7 +54,7 @@ Refer to the following screenshot of a sample report:
 
 ![defender experts report](../../media/mte/defender-experts-report.png)
 
-## View defender experts notifications
+## View Defender Experts Notifications
 
 A defender experts notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
