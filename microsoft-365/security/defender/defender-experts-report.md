@@ -46,7 +46,7 @@ Each section of the report is designed to provide more insights about the threat
 |--|--|
 | Hunted and triaged | The total number of potential cybersecurity issues found in your environment. |
 | Investigated | The number of cybersecurity issues that need further analysis to determine their nature and extent. |
-| Notified (View notification) | The number of defender experts notifications the Defender Experts sent. These notifications are related to the investigated possible threat activities in your environment that must be prioritized based on urgency and impact. |
+| Notified (View notification) | The number of Defender Experts Notifications the Defender Experts sent. These notifications are related to the investigated possible threat activities in your environment that must be prioritized based on urgency and impact. |
 | MITRE ATT&CK tactics observed | The number of attack tactics and techniques observed in your environment and mapped according to the [MITRE ATT&CK framework](https://attack.mitre.org/). This section visualizes how many attacks reached each tactic so you can take appropriate actions like reviewing those that progressed further first. |
 | Threat categories observed | The categories depict the most significant threats and risks observed in your environment. The most critical categories are highlighted to help you further assess and evaluate your security posture based on the threats' known characteristics, behavior, and potential impact. It also enables you to focus and prioritize urgent tasks to address. |
 
@@ -56,9 +56,9 @@ Refer to the following screenshot of a sample report:
 
 ## View Defender Experts Notifications
 
-A defender experts notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
+A Defender Experts Notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
-The Defender Experts for Hunting reports provide you with the total number of defender experts notifications our Defender Experts have sent for your chosen time. To view these notifications, click **View notification** beside **Notified**.
+The Defender Experts for Hunting reports provide you with the total number of Defender Experts Notifications our Defender Experts have sent for your chosen time. To view these notifications, click **View notification** beside **Notified**.
 
 This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or Defender Experts Notifications are labeled with **Defender Experts**.
 
