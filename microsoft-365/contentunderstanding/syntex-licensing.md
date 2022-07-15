@@ -47,8 +47,8 @@ If you plan to use a custom Power Platform environment, you must [allocate credi
 Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
   
 ## Additional term store features
- 
-A subscription to SharePoint Syntex features the following additional term store features:
+
+Having one or more SharePoint Syntex licenses in your organization enables the following additional term store features for SharePoint admins:
  
 - SKOS-based term set import
 - Pushing enterprise content types to a hub site, which also adds them to the associated sites and any newly created lists or libraries
