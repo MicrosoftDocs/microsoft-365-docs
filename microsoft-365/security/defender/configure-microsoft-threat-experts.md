@@ -33,23 +33,23 @@ ms.collection:
 ## Before you begin
 
 > [!IMPORTANT]
-> Before you apply, make sure to discuss the eligibility requirements for the Microsoft Threat Experts – Targeted Attack Notifications managed threat hunting service with your Microsoft Technical Service provider and account team.
+> Before you apply, make sure to discuss the eligibility requirements for Endpoint Attack Notifications managed threat hunting service with your Microsoft Technical Service provider and account team.
 
-To receive targeted attack notifications, you'll need to have Microsoft 365 Defender deployed with devices enrolled. Then, submit an application through the M365 portal for Microsoft Threat Experts - Targeted Attack Notifications.
+To receive Endpoint Attack Notifications, you'll need to have Microsoft 365 Defender deployed with devices enrolled. Then, submit an application through the M365 portal for Endpoint Attack Notifications.
 
 Contact your account team or Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand. Experts on Demand lets you consult with our threat experts on how to protect your organization from relevant detections and adversaries.
 
-## Apply for Microsoft Threat Experts - Targeted Attack Notifications service
+## Apply for Endpoint Attack Notifications service
 
-If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, you can apply for Microsoft Threat Experts – Targeted Attack Notifications through their Microsoft 365 Defender portal.  Targeted attack notifications grant you special insight and analysis to help identify the most critical threats to your organization, so you can respond to them quickly.
+If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, you can apply for Endpoint Attack Notifications through your Microsoft 365 Defender portal.  Endpoint Attack Notifications grant you special insight and analysis to help identify the most critical threats to your organization, so you can respond to them quickly.
 
-1. From the navigation pane, go to **Settings > Endpoints > General > Advanced features > Microsoft Threat Experts - Targeted Attack Notifications**.
+1. From the navigation pane, go to **Settings > Endpoints > General > Advanced features > Endpoint Attack Notifications**.
 
 2. Select **Apply**.
 
     :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text=" The Microsoft Threat Experts settings page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
-3. Enter your name and email address so that Microsoft can contact you about your application.
+3. Enter your email address so that Microsoft can contact you about your application.
 
     :::image type="content" source="../../media/mte/mte-apply.png" alt-text="The Microsoft Threat Experts application page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-apply.png":::
   
@@ -57,27 +57,27 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 
     :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="The Microsoft Threat Experts application confirmation in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-applicationconfirmation.png":::
 
-5. After you receive your welcome email, you'll automatically start receiving targeted attack notifications.
+5. After you receive your welcome email, you'll automatically start receiving Endpoint Attack Notifications.
 
-6. You can verify your status by visiting **Settings > Endpoints > General > Advanced features**. Once approved, the **Microsoft Threat Experts - Targeted Attack Notification** toggle will be visible and switched **On**.
+6. You can verify your status by visiting **Settings > Endpoints > General > Advanced features**. Once approved, the **Endpoint Attack Notification** toggle will be visible and switched **On**.
 
-## Where you'll see the targeted attack notifications from Microsoft Threat Experts
+## Where you'll see the Endpoint Attack Notifications from Microsoft Threat Experts
 
-You can receive targeted attack notification from Microsoft Threat Experts through the following mediums:
+You can receive Endpoint Attack Notifications from Microsoft Threat Experts through the following mediums:
 
 - The Microsoft 365 Defender portal's **Incidents** page
 - The Microsoft 365 Defender portal's **Alerts** dashboard
 - OData alerting [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) and [REST API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
-- Your inbox, if you choose to have targeted attack notifications sent to you via email. See [Create an email notification rule](#create-an-email-notification-rule) below.
+- Your inbox, if you choose to have Endpoint Attack Notifications sent to you via email. See [Create an email notification rule](#create-an-email-notification-rule) below.
 
 ### Create an email notification rule
 
 You can create rules to send email notifications for notification recipients. For full details, see  [Configure alert notifications](/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) to create, edit, delete, or troubleshoot email notification.
 
-## View targeted attack notifications
+## View Endpoint Attack Notifications
 
-You'll start receiving targeted attack notification from Microsoft Threat Experts in your email after you have configured your system to receive email notification.
+You'll start receiving Endpoint Attack Notifications from Microsoft Threat Experts in your email after you have configured your system to receive email notification.
 
 1. Select the link in the email to go to the corresponding alert context in the dashboard tagged with **Threat experts**.
 
@@ -131,7 +131,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 - Can you give more context or insight about the alert, "Suspicious behavior by a system utility was observed"?
 - I observed an alert titled "Creation of forwarding/redirect rule". I believe the activity is benign. Can you tell me why I received an alert?
 
-### Possible machine compromise
+### Possible device compromise
 
 - Can you help explain why we see a message or alert for "Unknown process observed" on many devices in our organization? We appreciate any input to clarify whether this message or alert is related to malicious activity.
 - Can you help validate a possible compromise on the following system, dating from last week? It's behaving similarly as a previous malware detection on the same system six months ago.

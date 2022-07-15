@@ -79,7 +79,7 @@ If the previous step doesn't solve the problem, you can collect more information
 
 Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring.
 
-1. Download [Process Monitor v3.60](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
+1. Download [Process Monitor v3.89](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
 
 2. To remove the file's mark of the web:
     1. Right-click **ProcessMonitor.zip** and select **Properties**.
