@@ -76,8 +76,8 @@ In order for the Moodle plugins to communicate with Microsoft services, the Open
 
 You must configure the connection between the Microsoft 365 plugins and Microsoft services before they can work together.
 
-        > [!NOTE]
-        > * While configuring the integration, keep your Microsoft 365 Moodle Integration configuration page open in a separate browser tab as you need to return to this set of pages throughout the process. 
+  > [!NOTE]
+  > * While configuring the integration, keep your Microsoft 365 Moodle Integration configuration page open in a separate browser tab as you need to return to this set of pages throughout the process. 
 
 ### The Teams for Moodle set up process
 
