@@ -55,7 +55,6 @@
 #### [Onboard Windows Client using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 #### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-#### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 ### [Run a detection test on a newly onboarded device](run-detection-test.md)
 ### [Run simulated attacks on devices](attack-simulations.md)
+### [Onboard devices without Internet access](onboard-offline-machines.md)
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
