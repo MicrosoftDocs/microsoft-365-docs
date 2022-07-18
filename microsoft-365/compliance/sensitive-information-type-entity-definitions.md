@@ -13652,7 +13652,7 @@ Medium
 
 ### Format
 
-Seven or eight or nine alphanumeric characters
+seven or eight or nine alphanumeric characters
 
 ### Pattern
 
