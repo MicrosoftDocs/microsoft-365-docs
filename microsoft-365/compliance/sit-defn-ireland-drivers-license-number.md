@@ -218,8 +218,6 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
     </Entity>
 ```
 
-## Keywords
-
 ### Keyword_ipaddress
 
 - IP (this keyword is case-sensitive)
