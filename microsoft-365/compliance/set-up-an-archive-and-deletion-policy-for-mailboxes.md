@@ -155,17 +155,19 @@ After you create the custom retention tags, the next step is to create a new ret
 
     A list of the retention tags in your organization is displayed, which includes the custom tags that you created in Step 2.
 
-5. Add the 9 retention tags that are described in more detail in the [More information](#more-information) section. To add these retention tags, select them, and then select **Add**.
+5. Add the 9 retention tags that are described in more detail in the [More information](#more-information) section:
     
-    - Alpine House 3 Year Move to Archive
-    - Alpine House 7 Year Permanently Delete
-    - Alpine House Deleted Items 5 Years Delete and Allow Recovery
-    - Recoverable Items 14 days Move to Archive
-    - Junk Email
-    - 1 Month Delete
-    - 1 Year Delete
-    - Never Delete
-    - Personal 1 year move to archive
+    - **Alpine House 3 Year Move to Archive**
+    - **Alpine House 7 Year Permanently Delete**
+    - **Alpine House Deleted Items 5 Years Delete and Allow Recovery**
+    - **Recoverable Items 14 days Move to Archive**
+    - **Junk Email**
+    - **1 Month Delete**
+    - **1 Year Delete**
+    - **Never Delete**
+    - **Personal 1 year move to archive**
+    
+    To add these retention tags, select them, and then select **Add**.
 
 7. Back on the **Configure your policy** page, select **Next** to review and submit the new policy.
 
