@@ -198,7 +198,7 @@ Yes
 
 ## Description
 
-This SIT is designed to match the security information that's like usernames and passwords used in general sign in process (https://docs.micro/azure/key-vault/quick-create-portal). It uses several primary resources:
+This SIT is designed to match the security information that's like usernames and passwords used in general sign in process (/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
 - Patterns of Password context in command line.
