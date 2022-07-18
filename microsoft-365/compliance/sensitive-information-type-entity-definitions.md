@@ -13656,7 +13656,7 @@ seven or eight or nine alphanumeric characters
 
 ### Pattern
 
-Seven or eight or nine alphanumeric characters
+Seven or eight or nine alphanumeric characters:
 
 - one letter followed by six digits
 or
