@@ -28,9 +28,9 @@ Three custom model types are available:
 
 [image]
 
-The type of model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
 
-To see the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
+To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
 > [!NOTE]
 > If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
