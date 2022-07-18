@@ -13658,13 +13658,13 @@ seven or eight or nine alphanumeric characters
 
 Seven or eight or nine alphanumeric characters
 
-- one letter followed by six digits.
+- one letter followed by six digits
 or
-- two letters followed by six digits. 
+- two letters followed by six digits
 or
-- two letters followed by seven digits. 
+- two letters followed by seven digits
 or
-- one letter followed by seven digits followed by one letter 
+- one letter followed by seven digits followed by one letter.
 
 ### Checksum
 
