@@ -87,7 +87,7 @@ If you're already a Microsoft Defender for Endpoint customer, you can contact yo
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization
 
-You can contact Microsoft Threat Experts from inside the Microsoft 365 Defender portal. Experts can help you understand complex threats and targeted attack notifications. Partner with experts for further details about alerts and incidents, or advice on handling compromise. Gain insight into the threat intelligence context described by your portal dashboard.
+You can contact Microsoft Threat Experts from inside the Microsoft 365 Defender portal. Experts can help you understand complex threats and Endpoint Attack Notifications. Partner with experts for further details about alerts and incidents, or advice on handling compromise. Gain insight into the threat intelligence context described by your portal dashboard.
 
 > [!NOTE]
 >
