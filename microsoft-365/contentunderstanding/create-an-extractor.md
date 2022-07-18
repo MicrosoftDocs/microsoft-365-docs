@@ -43,6 +43,8 @@ You need to create an extractor for each entity in the document that you want to
 
     > [!NOTE]
     > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you select exceeding the limit get truncated. To select greater than 255 characters, choose the **Multiple Lines of Text** column type when creating the extractor.
+    >
+    >By default, **Multiple Lines of Text** columns are created with a limit to the amount of text that can be added. In this case, extracted text may appear truncated. If this occurs, the column setting **Allow unlimited length in document libraries** can be used to remove the limit.
 
 3. When you're done, select **Create**.
 
