@@ -62,7 +62,7 @@ Delegated (work or school account) | AdvancedHunting.Read | Run advanced queries
 >[!Note]
 > When obtaining a token using user credentials:
 >
->- The user needs to have the 'View Data' AD role
+>- The user needs to have the 'View Data' role.
 >- The user needs to have access to the device, based on device group settings.
 
 ## HTTP request

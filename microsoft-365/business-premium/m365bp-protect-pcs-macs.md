@@ -61,9 +61,9 @@ You should always run Windows Defender Firewall even if you have another firewal
 
 Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
 
-## [macOS](#tab/macOS)
+## [Mac](#tab/Mac)
 
-## macOS
+## Mac
 
 ### Use FileVault to encrypt your Mac disk
 
