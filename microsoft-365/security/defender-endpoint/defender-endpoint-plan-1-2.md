@@ -1,7 +1,7 @@
 ---
-title: Compare Microsoft Defender for Endpoint plans
-description: Compare Defender for Endpoint Plan 1 to Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
-keywords: Defender for Endpoint, advanced threat protection, endpoint protection
+title: Compare Microsoft endpoint security plans
+description: Compare Microsoft endpoint security plans, such as Defender for Endpoint Plan 1 to Defender for Endpoint Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
+keywords: Defender for Endpoint, advanced threat protection, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
@@ -63,8 +63,7 @@ The following table summarizes what's included in Microsoft endpoint security pl
 
 The standalone versions of Defender for Business, Defender for Endpoint Plan 1 and 2, and Microsoft 365 Business Premium do not include server licenses. To onboard servers, choose from the following options:
 
-- **Defender for Servers Plan 1 or Plan 2** as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
-
+- **Microsoft Defender for Servers Plan 1 or Plan 2** as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 - **Microsoft Defender for Business servers (preview)** for small and medium-sized businesses. See [How to get Microsoft Defender for Business servers (preview)](../defender-business/get-defender-business-servers.md).
 
 ## Mixed licensing scenarios
@@ -89,5 +88,5 @@ However, **you can contact support and request an override for your tenant exper
 ## See also
 
 - [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
-
+- [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
