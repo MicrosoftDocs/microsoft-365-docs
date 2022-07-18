@@ -148,7 +148,7 @@ The **Manage alert** pane allows you to view or specify:
 - A comment on the alert.
 
 >[!NOTE]
-> Around August 29th, 2022, previously supported alert determination values (‘Apt’ and ‘SecurityPersonnel’) will be deprecated and no longer available via the API.”
+> Around August 29th, 2022, previously supported alert determination values (‘Apt’ and ‘SecurityPersonnel’) will be deprecated and no longer available via the API.
 
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>
