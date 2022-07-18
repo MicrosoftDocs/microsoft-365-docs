@@ -14660,7 +14660,7 @@ eleven digits
 
 ### Pattern
 
-eleven digits:
+Eleven digits:
 
 - a digit 2 or 3 
 - two digits representing the last two numbers of year of birth 
