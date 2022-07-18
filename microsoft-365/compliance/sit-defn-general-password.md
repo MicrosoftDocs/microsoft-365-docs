@@ -29,7 +29,7 @@ Up to 20,000-character combination of letters, digits, and special characters.
 
 or
 
-Login credentials used in command lines
+Sign in credentials used in command lines
 
 or
 
@@ -70,7 +70,7 @@ Any combination of up to 20,000 characters consisting of:
 - a-z (case insensitive)
 - 0-9
 - forward slashes (/) or plus signs (+)
-- Up to 2 equal signs (=)
+- Up to two equal signs (=)
 
 for example:
 
@@ -78,7 +78,7 @@ MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF
 
 or
 
-Various command line login credentials formats, for example: 
+Various command line sign in credentials formats, for example: 
 
 ... -u username:******** ...
 ... -u username -p ******** ...
@@ -198,19 +198,19 @@ Yes
 
 ## Description
 
-This SIT is designed to match the security information that's like usernames and passwords used in general login process (https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal). It uses several primary resources:
+This SIT is designed to match the security information that's like usernames and passwords used in general sign in process (https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
 - Patterns of Password context in command line.
 - Patterns of Password context in code.
 - Patterns of Password context in script.
 - Patterns of Password context in XML.
-- Patterns of Base64 encoded 128 bits symmetric key.
-- Patterns of Hex encoded 128 bits symmetric key.
-- Patterns of Base64 encoded 192 bits symmetric key.
-- Patterns of Base64 encoded 256 bits symmetric key.
-- Patterns of Base64 encoded 512 bits symmetric key.
-- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
+- Patterns of Base64 encoded 128-bits symmetric key.
+- Patterns of Hex encoded 128-bits symmetric key.
+- Patterns of Base64 encoded 192-bits symmetric key.
+- Patterns of Base64 encoded 256-bits symmetric key.
+- Patterns of Base64 encoded 512-bits symmetric key.
+- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID, AccountName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary words.
 
@@ -230,7 +230,7 @@ The patterns are designed to match actual credentials with reasonable confidence
 - secret
 - VSTS_TOKEN
 - curl
-- powershell
+- PowerShell
 - ps1
 - -u
 - Smc
