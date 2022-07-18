@@ -14665,7 +14665,7 @@ Eleven digits:
 - a digit 2 or 3 
 - two digits representing the last two numbers of year of birth 
 - three digits representing ISO country code 
-- five digits  
+- five digits.
 
 ### Checksum
 
