@@ -92,7 +92,7 @@ determination | String | Specifies the determination of the specified alerts. Th
 comment | String | Comment to be added to the specified alerts.
 
 >[!NOTE]
->Alert determination values such as APT, SecurityPersonnel and SecurityTesting have been deprecated and are no longer available via the API.
+>Alert determination values such as APT and Security personnel have been deprecated and are no longer available via the API. Security testing will soon be deprecated around August, 2022.
 
 ## Response
 
