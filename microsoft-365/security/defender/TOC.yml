@@ -348,6 +348,8 @@
          items:
               - name: Overview
                 href: defenderexpertsforhuntingprev.md
+              - name: Understand Defender Experts for Hunting reports
+                href: defender-experts-report.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
