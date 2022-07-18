@@ -91,69 +91,55 @@ To create new retention tags, you'll use the [Microsoft Purview compliance porta
   
 First, you'll create a custom archive default policy tag (DPT) that will move items to the archive mailbox after 3 years.
   
-1. On the **Retention tags** page, select **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
+1. On the **Retention tags** page, select **+ New tag**, and then on the **Define how the tag will be applied** page, select **Automatically to entire mailbox (default)**.
 
-2. On the **New tag applied automatically to entire mailbox (default)** page, complete the following fields: 
-
-    ![Settings to create a new archive default policy tag.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+2. On the **Define retention settings** page, complete the following fields: 
   
-   1. **Name** Type a name for the new retention tag. 
+   1. **When items reaches the following age (in days)** Enter the duration of the retention period. For this scenario, items will be moved to the archive mailbox after 1095 days (3 years). 
 
-   2. **Retention action** Select **Move to Archive** to move items to the archive mailbox when the retention period expires.
+   2. For the **Retention Action** Select **Move item to archive** to move items to the archive mailbox when the retention period expires.
 
-   3. **Retention period** Select **When the item reaches the following age (in days)**, and then enter the duration of the retention period. For this scenario, items will be moved to the archive mailbox after 1095 days (3 years).
+3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
 
-   4. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag.
+4. Select **Next** and then review and submit to create the custom archive DPT.
 
-3. Select **Save** to create the custom archive DPT.
-
-    The new archive DPT is displayed in the list of retention tags.
+The new archive DPT is displayed in the list of retention tags.
 
 ### Create a custom deletion default policy tag
   
 Next, you'll create another custom DPT but this one will be a deletion policy that permanently deletes items after 7 years.
   
-1. On the **Retention tags** page, select **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
+1. Back on the **Retention tags** page, select **+ New tag**, and then on the **Define how the tag will be applied** page, select **Automatically to entire mailbox (default)** again.
 
-2. On the **New tag applied automatically to entire mailbox (default)** page, complete the following fields: 
-
-    ![Settings to create a new deletion default policy tag.](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+2. On the **Define retention settings** page, complete the following fields: 
   
-   1. **Name** Type a name for the new retention tag. 
+   1. **When items reaches the following age (in days)** Enter the duration of the retention period. For this scenario, items will be purged after 2555 days (7 years). 
 
-   2. **Retention action** Select **Permanently Delete** to purge items from the mailbox when the retention period expires.
+   2. For the **Retention Action** Select **Permanently delete** to purge items from the mailbox when the retention period expires.
 
-   3. **Retention period** Select **When the item reaches the following age (in days)**, and then enter the duration of the retention period. For this scenario, items will be purged after 2555 days (7 years).
+3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
 
-   4. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag. 
+4. Select **Next** and then review and submit to create the custom deletion DPT.
 
-3. Select **Save** to create the custom deletion DPT. 
-
-    The new deletion DPT is displayed in the list of retention tags.
+The new deletion DPT is displayed in the list of retention tags.
 
 ### Create a custom retention policy tag for the Deleted Items folder
   
 The last retention tag to create is a custom retention policy tag (RPT) for the Deleted Items folder. This tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
+
+1. Back on the **Retention tags** page, select **+ New tag**, and then on the **Define how the tag will be applied** page, select **Automatically to entire mailbox (default)** again.
+
+2. On the **Define retention settings** page, complete the following fields: 
   
-1. On the **Retention tags** page, select **New tag** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to a default folder**.
+   1. **When items reaches the following age (in days)** Enter the duration of the retention period. For this scenario, items will be deleted after 1825 days (5 years). 
 
-2. On the **New tag applied automatically to a default folder** page, complete the following fields:
+   2. For the **Retention Action** Select **Delete and allow recovery** to delete items when the retention period expires, but allow users to recover a deleted item within the deleted item retention period (which by default is 14 days).
 
-    ![Settings to create a new retention policy tag for the Deleted Items folder.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
-  
-   1. **Name** Type a name for the new retention tag. 
+3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
 
-   2. **Apply this tag to the following default folder** In the drop-down list, select **Deleted Items**.
+4. Select **Next** and then review and submit to create the custom deletion DPT.
 
-   3. **Retention action** Select **Delete and Allow Recovery** to delete items when the retention period expires, but allow users to recover a deleted item within the deleted item retention period (which by default is 14 days).
-
-   4. **Retention period** Select **When the item reaches the following age (in days)**, and then enter the duration of the retention period. For this scenario, items will be deleted after 1825 days (5 years).
-
-   5. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag. 
-
-3. Select **Save** to create the custom RPT for the Deleted Items folder.
-
-    The new RPT is displayed in the list of retention tags.
+The new RPT is displayed in the list of retention tags.
 
 ## Step 3: Create a new retention policy
 
