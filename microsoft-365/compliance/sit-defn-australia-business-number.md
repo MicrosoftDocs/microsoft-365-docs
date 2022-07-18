@@ -82,6 +82,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - business number
 - abn#
 - businessid#
-- business id
+- business ID
 - abn
 - businessno#

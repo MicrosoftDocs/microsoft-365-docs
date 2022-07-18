@@ -72,7 +72,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - österreich
 - st.nr.
 - steuernummer
-- tax id
+- tax ID
 - tax identification no
 - tax identification number
 - tax no#
@@ -85,7 +85,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
 - tin#
 - tax number
