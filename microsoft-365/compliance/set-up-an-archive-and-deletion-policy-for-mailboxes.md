@@ -147,32 +147,35 @@ After you create the custom retention tags, the next step is to create a new ret
   
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Data lifecycle management** \> **Exchange (legacy)** > **Retention policies**.
 
-2. On the **Retention policies** page, select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+2. On the **Retention policies** page, select **New policy**.
 
 3. In the **Name** box, type a name for the new retention policy; for example, **Alpine House Archive and Deletion Policy**.
 
-4. Under **Retention tags**, select **Add** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. Select **+ Add tag**.
 
-    A list of the retention tags in your organization is displayed. Note the custom tags that you created in Step 2 are displayed.
+    A list of the retention tags in your organization is displayed, which includes the custom tags that you created in Step 2.
 
-5. Add the 9 retention tags that are highlighted in the following screenshot (these tags are described in more detail in the [More information](#more-information) section). To add a retention tag, select it and then select **Add**.
+5. Add the 9 retention tags that are described in more detail in the [More information](#more-information) section. To add these retention tags, select them, and then select **Add**.
+    
+    - Alpine House 3 Year Move to Archive
+    - Alpine House 7 Year Permanently Delete
+    - Alpine House Deleted Items 5 Years Delete and Allow Recovery
+    - Recoverable Items 14 days Move to Archive
+    - Junk Email
+    - 1 Month Delete
+    - 1 Year Delete
+    - Never Delete
+    - Personal 1 year move to archive
 
-    ![Add retention tags to the new retention policy.](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
-  
-    > [!TIP]
-    > You can select multiple retention tags by holding down the **Ctrl** key and then clicking each tag. 
-  
-6. After you've added the retention tags, select **OK**.
+7. Back on the **Configure your policy** page, select **Next** to review and submit the new policy.
 
-7. On the **New retention policy** page, select **Save** to create the new policy.
+The new retention policy is displayed in the list. Select it to display the retention tags linked to it in the details pane.
 
-    The new retention policy is displayed in the list. Select it to display the retention tags linked to it in the details pane.
-
-    ![The new retention policy and the list of linked retention tags.](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
-  
 ## Step 4: Assign the new retention policy to user mailboxes
 
-When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
+When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. 
+
+Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
 
 To follow these steps, make sure you use the [new Exchange admin center](/exchange/features-in-new-eac), rather than the classic version.
   
