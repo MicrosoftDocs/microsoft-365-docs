@@ -66,7 +66,7 @@
          href: archive-bloomberg-message-data.md 
        - name: Epic EHR healthcare data (preview)
          href: import-epic-data.md
-       - name: Facebook Business 
+       - name: Facebook Business (preview)
          href: archive-facebook-data-with-sample-connector.md
        - name: Generic EHR healthcare data (preview)
          href: import-healthcare-data.md
@@ -78,11 +78,11 @@
          href: archive-instant-bloomberg-data.md
        - name: LinkedIn
          href: archive-linkedin-data.md
-       - name: Physical badging data
+       - name: Physical badging data (preview)
          href: import-physical-badging-data.md
        - name: Slack eDiscovery (preview)
          href: archive-slack-data-microsoft.md
-       - name: Twitter
+       - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
    - name: Veritas data connectors
      items:  
@@ -238,9 +238,9 @@
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Learn about communication compliance reports & audits
+        - name: Use communication compliance reports & audits
           href: communication-compliance-reports-audits.md
-        - name: Communication compliance with SIEM solutions 
+        - name: Use communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an inappropriate text policy 
           href: communication-compliance-case-study.md
@@ -297,7 +297,7 @@
         - name: Overview
           href: privileged-access-management-solution-overview.md
         - name: Learn about privileged access management
-          href: privileged-access-management-overview.md
+          href: privileged-access-management.md
         - name: Get started with privileged access management
           href: privileged-access-management-configuration.md
     - name: Protect user and device access
@@ -601,6 +601,8 @@
               href: retention-policies-exchange.md
         - name: Common settings for retention and deletion
           href: retention-settings.md
+        - name: PowerShell cmdlets for retention and deletion
+          href: retention-cmdlets.md
         - name: Limits for retention and deletion
           href: retention-limits.md
     - name: Data lifecycle management
@@ -1071,7 +1073,7 @@
           href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated
           href: compliance-score-calculation.md
-        - name: Compliance Configuration Analyzer tool
+        - name: Configuration Analyzer for Microsoft Purview
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
           href: compliance-manager-faq.yml

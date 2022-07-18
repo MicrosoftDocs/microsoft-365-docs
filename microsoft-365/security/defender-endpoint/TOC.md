@@ -2,6 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
+### [Trial playbook: Get the most out of your trial](defender-endpoint-trial-playbook.md)
 ### [Compare Defender for Endpoint plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
@@ -43,33 +44,32 @@
 #### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
+##### [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md)
 
-## [Configure and onboard devices]()
+## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
+### [Onboarding Windows Client](onboard-windows-client.md)
+#### [Onboard Windows Client using Intune](configure-endpoints-mdm.md)
+#### [Onboard Windows Client using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+#### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
+#### [Onboard Windows Client using a local script](configure-endpoints-script.md)
+#### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+#### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+#### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
-### [Microsoft Defender for Endpoint on Windows and Windows Server]()
-#### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
-#### [Onboard Windows devices and Windows Servers]()
 
-##### [Onboard previous versions of Windows](onboard-downlevel.md)
+### [Onboarding Windows Server](onboard-windows-server.md)
+#### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
+#### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
+#### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
+#### [Onboard Windows Server using a local script](configure-endpoints-script.md)
+#### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-##### [Onboard Windows devices and Windows Servers]()
-###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
-###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
-###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
-###### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-###### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 
-#### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 
-#### [Onboard devices without Internet access](onboard-offline-machines.md)
-#### [Run a detection test on a newly onboarded device](run-detection-test.md)
-#### [Run simulated attacks on devices](attack-simulations.md)
-#### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
-#### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
+
+
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -176,6 +176,15 @@
 
 ###### [Privacy](ios-privacy.md)
 
+
+
+### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+### [Run a detection test on a newly onboarded device](run-detection-test.md)
+### [Run simulated attacks on devices](attack-simulations.md)
+### [Onboard devices without Internet access](onboard-offline-machines.md)
+### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
+### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
+
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
@@ -253,6 +262,12 @@
 ##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
+#### [Device Control]()
+##### [Removable Storage Protection](device-control-removable-storage-protection.md)
+##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Installation](mde-device-control-device-installation.md)
+##### [Device Control Printer Protection](printer-protection.md)
+##### [Device Control Reports](device-control-report.md)
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
 ##### [Exploit protection evaluation](evaluate-exploit-protection.md)
@@ -264,6 +279,14 @@
 ##### [Protect your network](network-protection.md)
 ##### [Evaluate network protection](evaluate-network-protection.md)
 ##### [Turn on network protection](enable-network-protection.md)
+#### [Web protection]()
+##### [Web protection overview](web-protection-overview.md)
+##### [Web threat protection]()
+###### [Web threat protection overview](web-threat-protection.md)
+###### [Monitor web security](web-protection-monitoring.md)
+###### [Respond to web threats](web-protection-response.md)
+##### [Web content filtering](web-content-filtering.md)
+
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -326,6 +349,7 @@
 #### [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
@@ -343,21 +367,6 @@
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Web protection]()
-##### [Web protection overview](web-protection-overview.md)
-##### [Web threat protection]()
-###### [Web threat protection overview](web-threat-protection.md)
-###### [Monitor web security](web-protection-monitoring.md)
-###### [Respond to web threats](web-protection-response.md)
-##### [Web content filtering](web-content-filtering.md)
-
-#### [Device Control]()
-##### [Removable Storage Protection](device-control-removable-storage-protection.md)
-##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
-##### [Device Installation](mde-device-control-device-installation.md)
-##### [Device Control Printer Protection](printer-protection.md)
-##### [Device Control Reports](device-control-report.md)
-
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
 ##### [Client behavioral blocking](client-behavioral-blocking.md)
@@ -369,9 +378,6 @@
 
 #### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
 #### [Optimize attack surface reduction rule deployment and detections](configure-machines-asr.md)
-
-## [Guidance for active threats and campaigns]()
-### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
