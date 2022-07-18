@@ -1,5 +1,5 @@
 ---
-title: "X.509 certificate private key entity definition"
+title: "X.509 certificate private key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "X.509 certificate private key sensitive information type entity definition."
 ---
 
-# X.509 certificate private key
+# X.509 certificate private key (preview)
 
 ## Format
 

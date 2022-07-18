@@ -1,5 +1,5 @@
 ---
-title: "GitHub personal access token entity definition"
+title: "GitHub personal access token entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "GitHub personal access token sensitive information type entity definition."
 ---
 
-# GitHub personal access token 
+# GitHub personal access token (preview)
 
 ## Format
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure Bot service app secret entity definition"
+title: "Azure Bot service app secret entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Bot service app secret sensitive information type entity definition."
 ---
 
-# Azure Bot service app secret
+# Azure Bot service app secret (preview)
 
 ## Format
 

@@ -1,5 +1,5 @@
 ---
-title: "General Symmetric key entity definition"
+title: "General Symmetric key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "General Symmetric key sensitive information type entity definition."
 ---
 
-# General Symmetric key
+# General Symmetric key (preview)
 
 ## Format
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure Container Registry access key entity definition"
+title: "Azure Container Registry access key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Container Registry access key sensitive information type entity definition."
 ---
 
-# Azure Container Registry access key 
+# Azure Container Registry access key (preview)
 
 ## Format
 

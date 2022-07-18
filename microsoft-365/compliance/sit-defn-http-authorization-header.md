@@ -1,5 +1,5 @@
 ---
-title: "Http authorization header entity definition"
+title: "Http authorization header entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Http authorization header sensitive information type entity definition."
 ---
 
-# Http authorization header 
+# Http authorization header (preview)
 
 ## Format
 

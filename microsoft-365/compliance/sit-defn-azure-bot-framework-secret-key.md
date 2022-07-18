@@ -1,5 +1,5 @@
 ---
-title: "Azure Bot Framework secret key entity definition"
+title: "Azure Bot Framework secret key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Bot Framework secret key sensitive information type entity definition."
 ---
 
-# Azure Bot Framework secret key
+# Azure Bot Framework secret key (preview)
 
 ## Format
 

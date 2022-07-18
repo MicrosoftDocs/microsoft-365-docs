@@ -1,5 +1,5 @@
 ---
-title: "General password entity definition"
+title: "General password entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "General password sensitive information type entity definition."
 ---
 
-# General Password
+# General Password (preview)
 
 ## Format
 

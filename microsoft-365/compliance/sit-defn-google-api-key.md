@@ -1,5 +1,5 @@
 ---
-title: "Google API key entity definition"
+title: "Google API key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Google API key sensitive information type entity definition."
 ---
 
-# Google API key 
+# Google API key (preview)
 
 ## Format
 

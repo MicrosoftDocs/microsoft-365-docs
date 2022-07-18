@@ -1,5 +1,5 @@
 ---
-title: "Azure Storage account shared access signature entity definition"
+title: "Azure Storage account shared access signature entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Storage account shared access signature sensitive information type entity definition."
 ---
 
-# Azure Storage account shared access signature
+# Azure Storage account shared access signature (preview)
 
 ## Format
 

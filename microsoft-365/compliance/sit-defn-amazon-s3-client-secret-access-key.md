@@ -1,5 +1,5 @@
 ---
-title: "Amazon S3 client secret access key entity definition"
+title: "Amazon S3 client secret access key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Amazon S3 client secret access key sensitive information type entity definition."
 ---
 
-# Amazon S3 client secret access key 
+# Amazon S3 client secret access key (preview)
 
 ## Format
 

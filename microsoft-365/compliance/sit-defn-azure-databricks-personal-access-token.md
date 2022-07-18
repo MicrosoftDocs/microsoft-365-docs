@@ -1,5 +1,5 @@
 ---
-title: "Azure Databricks personal access token entity definition"
+title: "Azure Databricks personal access token entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Databricks personal access token sensitive information type entity definition."
 ---
 
-# Azure Databricks personal access token  
+# Azure Databricks personal access token (preview) 
 
 ## Format
 

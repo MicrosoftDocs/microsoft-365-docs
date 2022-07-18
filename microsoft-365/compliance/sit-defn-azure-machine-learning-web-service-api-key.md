@@ -1,5 +1,5 @@
 ---
-title: "Azure Machine Learning web service API key entity definition"
+title: "Azure Machine Learning web service API key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Machine Learning web service API key sensitive information type entity definition."
 ---
 
-# Azure Machine Learning web service API key  
+# Azure Machine Learning web service API key (preview) 
 
 ## Format
 

@@ -1,5 +1,5 @@
 ---
-title: "User login credentials entity definition"
+title: "User login credentials entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "User login credentials sensitive information type entity definition."
 ---
 
-# User login credentials
+# User login credentials (preview)
 
 ## Format
 

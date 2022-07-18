@@ -1,5 +1,5 @@
 ---
-title: "Slack access token entity definition"
+title: "Slack access token entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Slack access token sensitive information type entity definition."
 ---
 
-# Slack access token
+# Slack access token (preview)
 
 ## Format
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure AD client secret entity definition"
+title: "Azure AD client secret entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure AD client secret sensitive information type entity definition."
 ---
 
-# Azure AD client secret
+# Azure AD client secret (preview)
 
 ## Format
 

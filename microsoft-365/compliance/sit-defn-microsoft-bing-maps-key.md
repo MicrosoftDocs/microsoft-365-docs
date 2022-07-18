@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Bing maps key entity definition"
+title: "Microsoft Bing maps key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Microsoft Bing maps key sensitive information type entity definition."
 ---
 
-# Microsoft Bing maps key
+# Microsoft Bing maps key (preview)
 
 ## Format
 

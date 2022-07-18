@@ -1,5 +1,5 @@
 ---
-title: "ASP.NET machine key entity definition"
+title: "ASP.NET machine key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "ASP.NET machine key sensitive information type entity definition."
 ---
 
-# ASP.NET machine key
+# ASP.NET machine key (preview)
 
 ## Format
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure COSMOS DB account access key entity definition"
+title: "Azure COSMOS DB account access key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure COSMOS DB account access key sensitive information type entity definition."
 ---
 
-# Azure COSMOS DB account access key 
+# Azure COSMOS DB account access key (preview)
 
 ## Format
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure DevOps personal access token entity definition"
+title: "Azure DevOps personal access token entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure DevOps personal access token sensitive information type entity definition."
 ---
 
-# Azure DevOps personal access token 
+# Azure DevOps personal access token (preview)
 
 ## Format
 

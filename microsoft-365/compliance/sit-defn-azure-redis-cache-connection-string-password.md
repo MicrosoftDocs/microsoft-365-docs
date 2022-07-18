@@ -1,5 +1,5 @@
 ---
-title: "Azure Redis cache connection string password entity definition"
+title: "Azure Redis cache connection string password entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Redis cache connection string password sensitive information type entity definition."
 ---
 
-# Azure Redis cache connection string password 
+# Azure Redis cache connection string password (preview)
 
 ## Format
 

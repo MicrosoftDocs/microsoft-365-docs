@@ -1,5 +1,5 @@
 ---
-title: "Azure Function Master / API key entity definition"
+title: "Azure Function Master / API key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Function Master / API key sensitive information type entity definition."
 ---
 
-# Azure Function Master / API key  
+# Azure Function Master / API key (preview)  
 
 ## Format
 

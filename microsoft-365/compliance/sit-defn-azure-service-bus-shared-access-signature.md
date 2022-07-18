@@ -1,5 +1,5 @@
 ---
-title: "Azure service bus shared access signature entity definition"
+title: "Azure service bus shared access signature entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure service bus shared access signature sensitive information type entity definition."
 ---
 
-# Azure service bus shared access signature 
+# Azure service bus shared access signature (preview)
 
 ## Format
 
