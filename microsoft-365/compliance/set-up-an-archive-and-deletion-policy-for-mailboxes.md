@@ -198,8 +198,8 @@ To follow these steps, make sure you use the [new Exchange admin center](/exchan
    1. Select a mailbox on the **Mailboxes** page.
 
    2. On the mailbox properties page for the selected user, select **Mailbox**.
-
-   The name of the new policy assigned to the mailbox is displayed for the **Retention policy**.
+    
+    The name of the new policy assigned to the mailbox is displayed for the **Retention policy**.
 
 ## (Optional) Step 5: Run the Managed Folder Assistant to apply the new settings
 
