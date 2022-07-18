@@ -49,18 +49,24 @@ Here's what happens:
 
 ## What happens when a user tries to download an infected file by using the browser?
 
-If a file is infected, users can't download the file from SharePoint Online by using a browser.
+If a file is infected, by default users can download the file from SharePoint Online by using a browser.
 
 Here's what happens:
 
 1. A user opens a web browser and tries to download an infected file from SharePoint Online.
-2. The user is given a warning that a virus has been detected. By default, the user is given the option to download the file and attempt to clean it using the anti-virus software on their own device.
+2. The user is given a warning that a virus has been detected. The user is given the option to proceed to download the file and attempt to clean it using the anti-virus software on their own device.
 
 > [!NOTE]
 >
-> Admins can use the *DisallowInfectedFileDownload* parameter on the [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet in SharePoint Online PowerShell to prevent users from downloading infected files, even in the anti-virus warning window. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
+> Admins can use the *DisallowInfectedFileDownload* parameter on the [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet in SharePoint Online PowerShell to prevent users from downloading infected file, even in the anti-virus warning window. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 >
-> As soon as you enable the *DisallowInfectedFileDownload* parameter, access to the detected/blocked files is completely blocked for users and admins.
+> When you enable the *DisallowInfectedFileDownload* parameter, access to the detected/blocked files is completely blocked for users.
+
+## Can administrators bypass *DisallowInfectedFileDownload* and extract infected files?
+
+We allow SharePoint and Global administrators to perform forensic file extraction of malware infected files via SharePoint Online PowerShell with the cmdlet [Get-SPOMalwareFileContent](/powershell/module/sharepoint-online/get-spomalwarefilecontent). It is not necessary that the administrators have access to the site hosting the malware content, only that the file to be extracted is marked as malware. 
+
+For additional investigative details, administrators can use the [Get-SPOMalwareFile](/powershell/module/sharepoint-online/get-spomalwarefile) cmdlet to retrieve information on the type of malware that was detected and the status of the infection. 
 
 ## What happens when the OneDrive sync client tries to sync an infected file?
 
