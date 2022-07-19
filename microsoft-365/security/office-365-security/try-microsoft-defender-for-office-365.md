@@ -224,10 +224,11 @@ For more information about Azure AD permissions in the Microsoft 365 Defender po
 
 The settings in the Defender for Office 365 that are specifically created for the evaluation are described in the following tables:
 
-**Anti-phishing evaluation policy settings**:
+### Anti-phishing evaluation policy settings
 
 |Setting|Value|
 |---|---|
+|Name|Evaluation Policy|
 |AdminDisplayName|Evaluation Policy|
 |AuthenticationFailAction|MoveToJmf|
 |Enabled|True|
@@ -244,86 +245,99 @@ The settings in the Defender for Office 365 that are specifically created for th
 |EnableUnauthenticatedSender|True|
 |EnableUnusualCharactersSafetyTips|False|
 |EnableViaTag|True|
-|Guid|GUID value|
+|ExcludedDomains|{}|
+|ExcludedSenders|{}|
 |ImpersonationProtectionState|Manual|
 |IsDefault|False|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
-|Name|Evaluation Policy|
 |PhishThresholdLevel|1|
+|PolicyTag|blank|
 |RecommendedPolicyType|Evaluation|
 |SpoofQuarantineTag|DefaultFullAccessPolicy|
 |TargetedDomainActionRecipients|{}|
 |TargetedDomainProtectionAction|NoAction|
 |TargetedDomainQuarantineTag|DefaultFullAccessPolicy|
+|TargetedDomainsToProtect|{}|
 |TargetedUserActionRecipients|{}|
 |TargetedUserProtectionAction|NoAction|
 |TargetedUserQuarantineTag|DefaultFullAccessPolicy|
-|||
-|AntiPhishPolicyLevelDataList|blank|
-|AntiSpoofEnforcementType|High|
-|AuthenticationSafetyTipText|blank|
-|AuthenticationSoftPassSafetyTipText|blank|
-|EnableAuthenticationSafetyTip|False|
-|EnableAuthenticationSoftPassSafetyTip|False|
-|PolicyTag|blank|
-|SimilarUsersSafetyTipsCustomText|blank|
-|TreatSoftPassAsAuthenticated|True|
-|UnusualCharactersSafetyTipsCustomText|blank|
-|||
-|ExcludedDomains|{}|
-|ExcludedSenders|{}|
-|TargetedDomainsToProtect|{}|
 |TargetedUsersToProtect|{}|
 
-**Safe Attachments evaluation policy settings**:
+### Safe Attachments evaluation policy settings
 
 |Setting|Value|
 |---|---|
+|Name|Evaluation Policy|
 |Action|Allow|
 |ActionOnError|True|
 |AdminDisplayName|Evaluation Policy|
 |ConfidenceLevelThreshold|80|
 |Enable|True|
 |EnableOrganizationBranding|False|
-|Guid|GUID value|
 |IsBuiltInProtection|False|
 |IsDefault|False|
-|Name|Evaluation Policy|
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|Evaluation|
 |Redirect|False|
-|RedirectAddress|{}|
+|RedirectAddress|blank|
 |ScanTimeout|30|
 
-**Safe Links evaluation policy settings**:
+### Safe Links evaluation policy settings
 
 |Setting|Value|
 |---|---|
+|Name|Evaluation Policy|
 |AdminDisplayName|Evaluation Policy|
-|AllowClickThrough|False|
+|AllowClickThrough|True|
 |CustomNotificationText|blank|
 |DeliverMessageAfterScan|True|
 |DisableUrlRewrite|True|
 |DoNotRewriteUrls|{}|
 |EnableForInternalSenders|False|
 |EnableOrganizationBranding|False|
-|EnableSafeLinksForTeams|True|
-|Guid|GUID value|
+|EnableSafeLinksForEmail|True|
+|EnableSafeLinksForOffice|False|
+|EnableSafeLinksForTeams|False|
 |IsBuiltInProtection|False|
-|IsDefault|False|
-|IsEnabled|True|
 |LocalizedNotificationTextList|{}|
-|Name|"EvaluationPolicy"|
 |RecommendedPolicyType|Evaluation|
 |ScanUrls|True|
 |TrackClicks|True|
-|||
-|DoNotAllowClickThrough|blank|
-|DoNotTrackUserClicks|False|
-|EnableSafeLinksForEmail|True|
-|EnableSafeLinksForOffice|True|
-|ExcludedUrls|{}|
-|WhiteListedUrls|blank|
+
+## Frequently asked questions
+
+### Q: Do I need to get or activate trial licenses?
+
+A: No. The trial automatically provisions Defender for Office 365 Plan 2 licenses if you don't already have them as shown in the following table:
+
+|SKU|Evaluation period|P2 trial<br>provisioned?|Trial period|
+|---|:---:|:---:|---|
+|standalone EOP <br><br> Microsoft 365 E3|90 days|Yes|90 days|
+|Defender for Office 365 Plan 1|Unlimited<sup>\*</sup>|Yes|90 days <br><br> <sup>\*</sup>After 90 days, P2 capabilities are turned off. Evaluation continues to work.|
+|Defender for Office 365 Plan 2|Unlimited|No|n/a|
+|Microsoft 365 E5|Unlimited|No|n/a|
+
+### Q: How do I extend the trial?
+
+A: See [Extend your trial](/microsoft-365/commerce/try-or-buy-microsoft-365#extend-your-trial).
+
+### Q: What happens to my data after the trial expires?
+
+A: After your trial expires, you'll have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial will be deleted.
+
+### Q: How many times can I use the Defender for Office 365 trial in my organization?
+
+A: A maximum of 2 times. If your first trial expires, you need to wait at least 30 days after the expiration date before you can enroll in the Defender for Office 365 trial again. After your second trial, you can't enroll in another trial.
+
+### Q: In audit mode, are there scenarios where Defender for Office 365 will act on messages?
+
+A: Yes. No one in any program or SKU can turn off or bypass acting on messages that are classified as malware or high confidence phishing by the service.
+
+In audit mode, [anti-spoofing protection in EOP](set-up-anti-phishing-policies.md#spoof-settings) also takes action on message. To prevent anti-spoofing protection from acting on messages, create an Exchange mail flow rule (also known as a transport rule) where inbound email bypasses all types of filtering that can be bypassed (including anti-spoofing protection). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+
+### Q: In what order are policies evaluated?
+
+A: See [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies).
