@@ -14,7 +14,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+    - M365-security-compliance
+    - m365solution-getstarted
 ms.topic: conceptual
 search.appverid: 
   - MOE150
