@@ -49,7 +49,7 @@ This event is generated each time a sensitivity label is updated on the document
 - For the AIP unified client, AIP unified scanner and MIP SDK sources, the AIP *upgrade label* and *downgrade label* action maps to Activity explorer *label changed*
 
 - It is captured at the point of save in Office native applications and web applications.
-- It is captured at the time of occurrence for the Azure Information Protection (AIP) unified labeling client and scanner enforcements
+- It is captured at the time of occurrence for the AIP unified labeling client and scanner enforcements
 - Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter. The *justification* text is also captured except for SharePoint Online and OneDrive.
 - Sensitivity labeling done in Office native apps on Outlook collects the last action that was generated before file save/email send actions. For example, if the user changes label on an email multiple times before sending, the last label found on the email when it is sent is captured in the audit log and then reported in Activity explorer.
 
