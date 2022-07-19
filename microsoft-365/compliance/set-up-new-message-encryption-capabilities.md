@@ -47,10 +47,9 @@ For more information, see:
 
 ### Manually activating Azure Rights Management
 
-If you disabled Azure RMS, or if it was not automatically activated for any reason, you can activate it manually in the:
+If you disabled Azure RMS, or if it was not automatically activated for any reason, you can activate it manually. 
 
-- **Microsoft 365 admin center**: See [How to activate Azure Rights Management from the admin center](/azure/information-protection/activate-office365) for instructions.
-- **Azure portal**: See [How to activate Azure Rights Management from the Azure portal](/azure/information-protection/activate-azure) for instructions.
+For instructions, see [How to activate or confirm the status of the protection service](/azure/information-protection/activate-service#how-to-activate-or-confirm-the-status-of-the-protection-service).
 
 ## Configure management of your Azure Information Protection tenant key
 
