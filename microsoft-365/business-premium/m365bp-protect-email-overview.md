@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -22,7 +23,6 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "An overview on how to train your team to protect your email from malware, phishing, and other malicious cyberattacks, using the cybersecurity tools included with Microsoft 365 Business Premium."
 ---
 
