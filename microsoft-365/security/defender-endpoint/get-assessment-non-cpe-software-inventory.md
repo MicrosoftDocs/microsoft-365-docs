@@ -29,10 +29,10 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This API returns all the data for installed software that doesn't has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that does have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
+This API returns all the data for installed software that doesn't have a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that does have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
 
 > [!NOTE]
-> Software products without a CPE are not be supported by vulnerability management. They will be shown in the software inventory page, but because CPEs are used by vulnerability management to identify the software and any vulnerabilities, information like, exploits, number of exposed devices, and weaknesses won't be available for them. For more information, see [Software inventory](../defender-vulnerability-management/tvm-software-inventory.md).
+> Software products without a CPE are not supported by vulnerability management. They will be shown in the software inventory page, but because CPEs are used by vulnerability management to identify the software and any vulnerabilities, information like, exploits, number of exposed devices, and weaknesses won't be available for them. For more information, see [Software inventory](../defender-vulnerability-management/tvm-software-inventory.md).
 
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
