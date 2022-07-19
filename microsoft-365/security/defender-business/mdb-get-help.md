@@ -6,8 +6,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.collection: 
 - SMB
