@@ -33,6 +33,7 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
+### [Migrate Microsoft Defender for Endpoint servers to Defender for Cloud](migrating-mde-server-to-cloud.md)
 ### [Move to Defender for Endpoint](switch-to-mde-overview.md)
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
@@ -45,7 +46,6 @@
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
 ##### [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md)
-### [Migrate Microsoft Defender for Endpoint servers to Microsoft Defender for Cloud](migrating-mde-server-to-cloud)
 
 ## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
