@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance                 
 search.appverid: MET150
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 description: Get help or contact support if you have any issues with Defender for Business.
 ---
 
@@ -25,6 +26,9 @@ If you need help with Defender for Business, select the Help icon (?) in the upp
 
 If you don't see the answer to your question, you can open a support ticket. See [Get support](../../admin/get-help-support.md)
 
+## Resources for partners
+
+If you're a Microsoft partner helping your customer with security capabilities in Defender for Business, see [Microsoft Defender for Business and Microsoft partner resources](mdb-partners.md).
 
 ## See also
 
