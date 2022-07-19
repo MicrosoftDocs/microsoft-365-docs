@@ -123,18 +123,18 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
       links:
-        - url: compliance/insider-risk-solution-overview.md
-          text: Insider risk solutions in Microsoft Purview
-        - url: compliance/compliance-quick-tasks.md
-          text: Quick tasks for getting started with Microsoft Purview
-        - url: compliance/information-protection.md
-          text: Manage information protection
-        - url: compliance/manage-data-governance.md
-          text: Manage information governance
-        - url: compliance/auditing-solutions-overview.md
+        - url: /microsoft-365/compliance/purview-compliance
+          text: Microsoft Purview risk and compliance solutions
+        - url: /microsoft-365/compliance/insider-risk-solution-overview
+          text: Insider risk solutions
+        - url: /microsoft-365/compliance/information-protection-solution
+          text: Information protection solutions
+        - url: /microsoft-365/compliance/data-governance-solution
+          text: Data lifecycle management solutions
+        - url: /microsoft-365/compliance/ediscovery
+          text: eDiscovery solutions
+        - url: /microsoft-365/compliance/auditing-solutions-overview
           text: Auditing solutions
-        - url: compliance/overview-ediscovery-20.md
-          text: eDiscovery (Premium)
     # Card
     - title: Deploy and manage your desktops and devices
       # imageSrc should be square in ratio with no whitespace
@@ -168,7 +168,7 @@ productDirectory:
           text: Security and compliance for financial services
         - url: solutions/energy-secure-collaboration.md
           text: Security and compliance for energy and utility services
-        - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+        - url: frontline/teams-in-hc.md
           text: Teams for Healthcare organizations
         - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
           text: Teams for Education
@@ -195,6 +195,8 @@ additionalContent:
               url: business/index.yml
             - text: Microsoft 365 for enterprise
               url: enterprise/index.yml
+            - text: Microsoft 365 for frontline workers
+              url: frontline/index.yml
             - text: Microsoft Purview
               url: compliance/index.yml
             - text: Microsoft 365 security
@@ -297,8 +299,8 @@ additionalContent:
       items:
         # Card
         - title: Developers
-          summary: Find tutorials, references, and other resources for developers in the Microsoft 365 Dev Center.
-          url: https://developer.microsoft.com/microsoft-365
+          summary: Find documentation and resources to help you build or extend collaborative apps for Microsoft 365 and Teams.
+          url: /microsoft-365/developer/?view=o365-worldwide
         - title: End users
           summary: Find training, how-to, and help content for users of Microsoft 365 on support.microsoft.com.
           url: https://support.microsoft.com/microsoft-365

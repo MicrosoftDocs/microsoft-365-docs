@@ -162,7 +162,8 @@ rbacGroupId|String|The role-based access control (RBAC) group ID.
 RecommendationReference|String|A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate|String|Name or description of the security update provided by the software vendor to address the vulnerability.
 RecommendedSecurityUpdateId|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles.
-Registry Paths Array\[string\]|Registry evidence that the product is installed in the device.
+Registry Paths|Array[string]|Registry evidence that the product is installed in the device.
+SecurityUpdateAvailable|Boolean|Indicates whether a security update is available for the software.
 SoftwareName|String|Name of the software product.
 SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.

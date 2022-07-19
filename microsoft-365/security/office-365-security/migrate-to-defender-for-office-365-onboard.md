@@ -196,20 +196,13 @@ You can pause at this stage for more large-scale data recording and tuning.
 > [!NOTE]
 >
 > - When you switch the MX record for your domain, it can take up to 48 hours for the changes to propagate throughout the internet.
->
 > - We recommend lowering the TTL value of your DNS records to enable faster response and possible rollback (if required). You can revert to the original TTL value after the switchover is complete and verified.
->
 > - You should consider starting with changing domains that are used less frequently. You can pause and monitor before moving to larger domains. However, even if you do this, you still should make sure that all users and domains are covered by policies, because secondary SMTP domains are resolved to primary domains prior to the policy application.
->   
 > - Multiple MX records for a single domain will technically work, allowing you to have split routing, provided that you have followed all the guidance in this article. Specifically, you should make sure that policies are applied to all users, that the SCL=-1 mail flow rule is applied only to mail that passes through your existing protection service as described in [Setup Step 3: Maintain or create the SCL=-1 mail flow rule](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule). However, this configuration introduces behavior that makes troubleshooting much more difficult, and therefore we do not typically recommend it, especially for extended periods of time.
->
 > - Before you switch your MX records, verify that the following settings are not enabled on the inbound connector from the protection service to Microsoft 365. Typically, the connector will have one or more of the following settings configured:
->
 >   - **and require that the subject name on the certificate that the partner uses to authenticate with Office 365 matches this domain name** (*RestrictDomainsToCertificate*)
 >   - **Reject email messages if they aren't sent from within this IP address range** (*RestrictDomainsToIPAddresses*)
->
 >   If the connector type is **Partner** and either of these settings are turned on, all mail delivery to your domains will fail after you switch your MX records. You need to disable these settings before you continue. If the connector is an on-premises connector that's used for hybrid, you don't need to modify the on-premises connector. But, you can still check for the presence of a **Partner** connector.
->   
 > - If your current mail gateway is also providing recipient validation, you may want to check that the domain is configured as [Authoritative](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365. This can prevent unnecessary bounce messages.
 
 When you're ready, switch the MX record for your domains. You can migrate all of your domains at once. Or, you can migrate less frequently used domains first, and then migrate the rest later.
