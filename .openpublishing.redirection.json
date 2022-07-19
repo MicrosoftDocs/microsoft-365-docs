@@ -7568,7 +7568,7 @@
     {
       "source_path": "microsoft-365/commerce/microsoft-home-use-program-faq.yml",
       "redirect_url": "/microsoft-365/commerce/microsoft-workplace-discount-program",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
