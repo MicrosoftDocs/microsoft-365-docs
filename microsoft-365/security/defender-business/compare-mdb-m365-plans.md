@@ -8,8 +8,8 @@ manager: dansimp
 audience: Admin
 ms.date: 07/19/2022
 ms.topic: conceptual
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 ms.collection: 
