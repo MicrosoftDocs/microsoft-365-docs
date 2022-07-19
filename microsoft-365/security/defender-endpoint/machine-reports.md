@@ -246,7 +246,7 @@ For more details on the current versions and how to update the different Microso
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
 The general definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There's a three-day grace period from the day when WU is released.
 
-| Microsoft considers devices with **Antivirus engine updates** that have:  |  to be in the listed update state:  |
+| Microsoft considers devices with **Antivirus engine updates** that have:  |  to be:  |
 |:----|:----|
 | Communicated to Defender in last 7 days with Signature Publish time within last 7 days _and have_ Engine or Platform version build time _within_ last 60 days   | Up-to-date  |
 | Communicated to Defender in last 7 days with Signature Publish time within last 7 days but Engine or Platform version build time _older than_ 60 days | Out-of-date  |
@@ -259,7 +259,7 @@ The general definition of ‘_Up to date_’ – the engine version on the devic
 This card identifies devices that have security intelligence versions that are up to date versus out of date.
 The general definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
 
-| Microsoft considers devices with **Security Intelligence updates** that have:  | to be in the listed update state:  |
+| Microsoft considers devices with **Security Intelligence updates** that have:  | to be:  |
 |:----|:----|
 |  A security intelligence version written in the past 7 days | Up-to-date  |
 | Communicated to Defender in last 7 days with Signature Publish time within last 7 days | Up-to-date  |
@@ -272,7 +272,7 @@ The general definition of ‘**Up to date**’ – the security intelligence ver
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
 The general definition of ‘_Up to date_’ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There's a three-day grace period from the day when WU is released.
 
-| Microsoft considers devices with **Antivirus platform updates** that have  :  |  to be in the listed update state:  |
+| Microsoft considers devices with **Antivirus platform updates** that have:  |  to be:  |
 |:----|:----|
 | Communicated to Defender in last 7 days with Signature Publish time within last 7 days _and have_ Engine or Platform version build time _within_ last 60 days   | Up-to-date  |
 | Communicated to Defender in last 7 days with Signature Publish time within last 7 days but Engine or Platform version build time _older than_ 60 days | Out-of-date  |
