@@ -6,11 +6,12 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ms.service: microsoft-365-security
 ms.subservice: mdb
+ms.date: 07/19/2022
 search.appverid: 
 - MOE150
 - MET150
