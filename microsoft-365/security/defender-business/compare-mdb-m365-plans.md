@@ -6,17 +6,17 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: reference
+ms.date: 07/19/2022
+ms.topic: conceptual
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
-ms.date: 07/19/2022
-f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
+f1.keywords: NOCSH
 ---
 
 # Compare security features in Microsoft 365 plans for small and medium-sized businesses
