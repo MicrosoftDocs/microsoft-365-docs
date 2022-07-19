@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
