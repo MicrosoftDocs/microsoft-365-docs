@@ -71,7 +71,7 @@ For more information on the Microsoft 365 Defender Add-on for Splunk, see [splun
 
 ### Datadog
 
-Microsoft 365 Defender for Endpoint Integration with Datadog supports:
+Microsoft 365 Defender for Endpoint integration with Datadog supports:
 
 - Ingesting Microsoft Defender for Endpoint alerts and Incidents
 - Dashboards that enable monitoring metrics across Endpoint, Threats & Vulnerabilities, and Software
