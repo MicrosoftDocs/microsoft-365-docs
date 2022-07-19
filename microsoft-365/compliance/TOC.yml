@@ -483,7 +483,7 @@
               - name: Azure Shared Access key / Web Hook token
                 href: sit-defn-azure-shared-access-key-web-hook-token.md
               - name: Azure SignalR access key
-                href: sit-defn-azure-signair-access-key.md
+                href: sit-defn-azure-signalr-access-key.md
               - name: Azure SQL connection string 
                 href: sit-defn-azure-sql-connection-string.md
               - name: Azure storage account access key  

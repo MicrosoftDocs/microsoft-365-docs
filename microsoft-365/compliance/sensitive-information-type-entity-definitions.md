@@ -85,7 +85,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Azure service bus connection string](sit-defn-azure-service-bus-connection-string.md)
 - [Azure service bus shared access signature (preview)](sit-defn-azure-service-bus-shared-access-signature.md) 
 - [Azure Shared Access key / Web Hook token (preview)](sit-defn-azure-shared-access-key-web-hook-token.md) 
-- [Azure SignalR access key (preview)](sit-defn-azure-signair-access-key.md)
+- [Azure SignalR access key (preview)](sit-defn-azure-signalr-access-key.md)
 - [Azure SQL connection string (preview)](sit-defn-azure-sql-connection-string.md)
 - [Azure storage account access key (preview)](sit-defn-azure-storage-account-access-key.md)
 - [Azure storage account key](sit-defn-azure-storage-account-key.md)
