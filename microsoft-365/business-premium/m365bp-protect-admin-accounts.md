@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
