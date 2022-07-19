@@ -3,7 +3,7 @@
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Trial playbook: Get the most out of your trial](defender-endpoint-trial-playbook.md)
-### [Compare Defender for Endpoint plans](defender-endpoint-plan-1-2.md)
+### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Preview features](preview.md)
@@ -55,7 +55,6 @@
 #### [Onboard Windows Client using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 #### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-#### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 ### [Run a detection test on a newly onboarded device](run-detection-test.md)
 ### [Run simulated attacks on devices](attack-simulations.md)
+### [Onboard devices without Internet access](onboard-offline-machines.md)
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
