@@ -64,7 +64,7 @@ For Azure VMs, no extra steps are required, these are automatically onboarded to
 2. On your multi-cloud connector, enable Defender for Servers on [AWS](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) or [GCP](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings#configure-the-servers-plan) connectors.
 3. Enable auto-provisioning on the multi-cloud connector for the Azure Arc agent, Microsoft Defender for Endpoint extension, Vulnerability Assessment and, optionally, Log Analytics extension.
      :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot of enabling auto-provisioning for Azure Arc agent":::
-To learn more about Defender for Cloud’s multi-cloud capabilities, click this [link](https://aka.ms/mdcmc).
+To learn more about Defender for Cloud’s multi-cloud capabilities, click [here](https://aka.ms/mdcmc).
 
 ## What happens once all migration steps are completed?
 
