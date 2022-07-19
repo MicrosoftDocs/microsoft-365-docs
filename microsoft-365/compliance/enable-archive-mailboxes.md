@@ -27,8 +27,6 @@ description: "Learn how to enable or disable archive mailboxes to support your o
 
 # Enable archive mailboxes in the Microsoft Purview compliance portal
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with more mailbox storage space. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
 
 Use the information in this article to enable or disable an archive mailbox in the Microsoft Purview compliance portal, or by using PowerShell. Also learn how to run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
@@ -50,11 +48,10 @@ If you don't see the **Archive** page in the Microsoft Purview compliance portal
    > [!NOTE]
    > The **Archive** page shows a maximum of 500 users. Use the search box if you can't immediately see the name of the user you want.
 
-3. In the list of mailboxes, select the user to enable their mailbox for archive, and then select the **Enable Archive** option:
-
+3. In the list of mailboxes, select the user to enable their mailbox for archive, and then select the **Enable archive** option:
+    
    ![Enable archive option for a selected user.](../media/enable-archive-option.png)
-
-
+    
    A warning is displayed saying that if you enable the archive mailbox, items in the user's mailbox that are older than the archiving policy assigned to the mailbox will be moved to the new archive mailbox. The default archive policy that is part of the retention policy assigned to Exchange Online mailboxes moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
 
 5. Select **Enable** to confirm.
@@ -120,6 +117,10 @@ A flyout page opens in the Microsoft 365 admin center. Enter the email address o
 
 > [!NOTE]
 > You must be a Microsoft 365 global admin to use the archive mailbox diagnostic check. Also, this feature isn't available in Microsoft 365 Government clouds, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
+## Instructions for end users
+
+Explain to users how their archive mailbox works, and how they can interact with it in Outlook on Windows, macOS, and the web. The most effective documentation will be customized for your organization. But for basic instructions, see [Manage email storage with online archive mailboxes](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## Next steps
 

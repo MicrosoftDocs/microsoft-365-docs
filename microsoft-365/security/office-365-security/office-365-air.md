@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 # Automated investigation and response (AIR) in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -115,7 +115,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Changes are coming soon in your Microsoft 365 Defender portal
 
-If you're already using AIR capabilities in Microsoft Defender for Office 365, you're about to see some changes in the [improved Microsoft 365 Defender portal](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
+If you're already using AIR capabilities in Microsoft Defender for Office 365, you're about to see some changes in the [improved Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The Unified Action center" lightbox="../../media/m3d-action-center-unified.png":::
 

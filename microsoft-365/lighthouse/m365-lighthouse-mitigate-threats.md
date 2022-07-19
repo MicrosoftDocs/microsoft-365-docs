@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: algreer
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -34,7 +35,7 @@ Microsoft 365 Lighthouse lets partners investigate and mitigate threats across a
 
 To investigate a specific threat:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Threats** tab.
 
@@ -56,7 +57,7 @@ The threat details pane provides the following information:
 
 To investigate threats on a specific device:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
@@ -70,7 +71,7 @@ Lighthouse displays all threats found on the device. To see details, select the 
 
 A quick scan searches common locations where malware could be, such as registry keys and know startup folders. A full scan searches the entire device. In most cases, a quick scan is sufficient and is the recommended option for scheduled scans.
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
@@ -84,7 +85,7 @@ You can also scan multiple devices by selecting the checkbox next to each device
 
 To update Microsoft Defender Antivirus on a single device:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
@@ -100,7 +101,7 @@ If you need to create a new policy, select **Update policy** from the device det
 
 When consecutive actions are applied to a device, you'll receive an action pending message. To check which actions are pending on a device:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
@@ -112,7 +113,7 @@ When consecutive actions are applied to a device, you'll receive an action pendi
 
 Some updates may require a device to restart to install correctly.
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 

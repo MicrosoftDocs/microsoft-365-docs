@@ -20,8 +20,6 @@ ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of a exact string, you can use *configurable match* to tell Microsoft Purview to ignore case and some delimiters.
 
 > [!IMPORTANT]
@@ -101,7 +99,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     - \"
     - \,
 
-6. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+6. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
     > If your organization has set up [Customer Key for Microsoft 365 at the tenant level (public preview)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.

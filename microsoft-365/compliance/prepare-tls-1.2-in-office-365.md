@@ -17,8 +17,6 @@ appliesto:
 
 # Preparing for TLS 1.2 in Office 365 and Office 365 GCC
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Summary
 
 To provide the best-in-class encryption to our customers, Microsoft plans to deprecate Transport Layer Security (TLS) versions 1.0 and 1.1 in Office 365 and Office 365 GCC. We understand that the security of your data is important, and we're committed to transparency about changes that may affect your use of the TLS service.
@@ -27,7 +25,7 @@ The [Microsoft TLS 1.0 implementation](https://support.microsoft.com/help/311733
 
 For information about how to remove TLS 1.0 and 1.1 dependencies, see the following white paper: [Solving the TLS 1.0 problem](https://www.microsoft.com/download/details.aspx?id=55266).
 
-After you upgrade to TLS 1.2, make sure that the cipher suites you're using are supported by Azure Front Door. Microsoft 365 and Azure Front Door have slight differences in cipher suite support. For details, see [What are the current cipher suites supported by Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-).
+After you upgrade to TLS 1.2, make sure that the cipher suites you're using are supported by Azure Front Door. Microsoft 365 and Azure Front Door have slight differences in cipher suite support. For details, see [What are the current cipher suites supported by Azure Front Door?](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
 
 ## More information
 

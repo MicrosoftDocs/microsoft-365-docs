@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -33,15 +34,11 @@ This article provides instructions for how to sign up for Microsoft 365 Lighthou
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
-1. Go to **Billing** > **Purchase Services** > **Other Services**.
+2. Go to **Billing** > **Purchase Services** > **Microsoft 365 Services**.
+   
+3. Under **Microsoft 365 Lighthouse**, select **Details**. 
 
-    If Microsoft 365 Lighthouse isn't in the services list, select **See all other services products**.
-
-    If you encounter the Purchase services error page, select **View products** at the bottom of the page.
-
-1. Under **Microsoft 365 Lighthouse**, select **Details**. 
-
-1. Select **Buy**.
+4. Select **Buy**.
 
     > [!NOTE]
     > Lighthouse requires one license for the partner tenant only. No additional per-user licenses are required for the partner, and no Lighthouse licenses are required in any customer tenant. 

@@ -13,9 +13,6 @@ description: "If you need to ask customers questions when they book an appointme
 
 # Add custom and required questions to the booking page
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 Bookings lets you create questions to ask your customers when they are booking appointments. It also lets you choose which questions are required.
 
 You associate the questions with a service, so each service can have a different set of questions. For example, a hair stylist may ask customers who are booking a hair coloring appointment if they have any known allergies to bleaches or tints. This allows you and your customers to save time when they arrive for their appointment.
