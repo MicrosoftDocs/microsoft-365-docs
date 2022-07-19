@@ -244,17 +244,41 @@ For more details on the current versions and how to update the different Microso
 ##### Antivirus engine updates card
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
-Definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There's a three-day grace period from the day when WU is released.
+The general definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There's a three-day grace period from the day when WU is released.
+
+| Microsoft considers devices with **Antivirus engine updates** that have:  |  to be in the listed update state:  |
+|:----|:----|
+| Communicated to Defender in last 7 days with Signature Publish time within last 7 days _and have_ Engine or Platform version build time _within_ last 60 days   | Up-to-date  |
+| Communicated to Defender in last 7 days with Signature Publish time within last 7 days but Engine or Platform version build time _older than_ 60 days | Out-of-date  |
+| Communicated to Defender in last 7 days with Signature Publish time _greater than_  days  | No data available  |
+| NOT communicated to Defender in last 7 days and whose last status was "Up-to-date"  | No data available  |
+| NOT communicated to Defender in last 7 days and whose last status was "Out-of-date"  | No data available |
 
 ##### Security intelligence updates card
 
 This card identifies devices that have security intelligence versions that are up to date versus out of date.
-Definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
+The general definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
+
+| Microsoft considers devices with **Security Intelligence updates** that have:  | to be in the listed update state:  |
+|:----|:----|
+|  A security intelligence version written in the past 7 days | Up-to-date  |
+| Communicated to Defender in last 7 days with Signature Publish time within last 7 days | Up-to-date  |
+| Communicated to Defender in last 7 days with Signature Publish time greater than last 7 days | Out-of-date |
+| NOT communicated to Defender in last 7 days and whose last status was "Up-to-date"  |  No data available  |
+| NOT communicated to Defender in last 7 days and whose last status was Out-of-date  | Out-of-date |
 
 ##### Antivirus platform updates card
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
-Definition of ‘_Up to date_’ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There's a three-day grace period from the day when WU is released.
+The general definition of ‘_Up to date_’ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There's a three-day grace period from the day when WU is released.
+
+| Microsoft considers devices with **Antivirus platform updates** that have  :  |  to be in the listed update state:  |
+|:----|:----|
+| Communicated to Defender in last 7 days with Signature Publish time within last 7 days _and have_ Engine or Platform version build time _within_ last 60 days   | Up-to-date  |
+| Communicated to Defender in last 7 days with Signature Publish time within last 7 days but Engine or Platform version build time _older than_ 60 days | Out-of-date  |
+| Communicated to Defender in last 7 days with Signature Publish time _greater than_  days  | No data available  |
+| NOT communicated to Defender in last 7 days and whose last status was "Up-to-date"  | No data available  |
+| NOT communicated to Defender in last 7 days and whose last status was "Out-of-date"  | No data available |
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
