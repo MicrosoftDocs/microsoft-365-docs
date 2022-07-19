@@ -40,7 +40,7 @@ Retrieves a list of Microsoft Defender Antivirus device health details.
 URL: GET: /api/public/avdeviceshealth
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
-<br>```$filter```  on: ```machineId```, ```computerDnsName```, ```osKind```, ```osPlatform```, ```osVersion```, a```vMode```, ```avSignatureVersion```, ```avEngineVersion```, ```avPlatformVersion```, ```quickScanResult```, ```quickScanError```, ```fullScanResult```, ```fullScanError```, ```avIsSignatureUpToDate```, ```avIsEngineUpToDate```, ```vIsPlatformUpToDate```, ```rbacGroupId```
+<br>```$filter``` on: ```machineId```, ```computerDnsName```, ```osKind```, ```osPlatform```, ```osVersion```, a```vMode```, ```avSignatureVersion```, ```avEngineVersion```, ```avPlatformVersion```, ```quickScanResult```, ```quickScanError```, ```fullScanResult```, ```fullScanError```, ```avIsSignatureUpToDate```, ```avIsEngineUpToDate```, ```vIsPlatformUpToDate```, ```rbacGroupId```
 <br>```$top``` with max value of 10,000.
 <br>```$skip```.
 <br>See examples at [OData queries with Microsoft Defender for Endpoint.](exposed-apis-odata-samples.md]
