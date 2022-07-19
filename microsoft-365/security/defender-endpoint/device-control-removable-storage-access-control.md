@@ -153,6 +153,8 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ### Deploying Removable Storage Access Control by using Intune OMA-URI
 
+To block a specific removable storage class but allow specific media, you can use ‘IncludedIdList a group through PrimaryId and ExcludedIDList a group through DeviceId/HardwareId/etc.’
+
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
 
 1. Enable or Disable Device control as follows:
