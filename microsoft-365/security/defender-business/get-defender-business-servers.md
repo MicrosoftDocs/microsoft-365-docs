@@ -10,11 +10,12 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: none
-ms.reviewer: shlomiakirav
-f1.keywords: NOCSH 
 ms.collection: 
 - SMB
 - m365-security-compliance
+ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
+f1.keywords: NOCSH 
 ---
 
 # How to get Microsoft Defender for Business servers (preview)
