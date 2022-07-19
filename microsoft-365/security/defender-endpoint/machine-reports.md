@@ -45,21 +45,26 @@ In the Microsoft 365 Security dashboard navigation panel, select **Reports**, an
 The Device health and compliance dashboard is structured in two tabs:
 
 - The [**Sensor health & OS** tab](#sensor-health--os-tab) provides general operating system information, divided into three cards that display the following device attributes:
-  - [Sensor health](#sensor-health)
-  - [Operating systems and platforms](#os-systems-and-platforms)
-  - [Windows 10 versions](#windows-10-versions)
+  - [Sensor health card](#sensor-health-card)
+  - [Operating systems and platforms card](#operating-systems-and-platforms-card)
+  - [Windows 10 versions card](#windows-10-versions-card)
 
 - The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus:
-  - [Antivirus mode](#antivirus-mode)
-  - [Antivirus engine version](#antivirus-engine-version)
-  - [Antivirus security intelligence version](#antivirus-security-intelligence-version)
-  - [Antivirus platform version](#antivirus-platform-version)
-  - [Recent antivirus scan results](#recent-antivirus-scan-results)
-  - [Antivirus engine updates](#antivirus-engine-updates)
-  - [Security intelligence updates](#security-intelligence-updates)
-  - [Antivirus platform updates](#antivirus-platform-updates)
+  - [Antivirus mode card](#antivirus-mode-card)
+  - [Antivirus engine version card](#antivirus-engine-version-card)
+  - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
+  - [Antivirus platform version card](#antivirus-platform-version-card)
+  - [Recent antivirus scan results card](#recent-antivirus-scan-results-card)
+  - [Antivirus engine updates card](#antivirus-engine-updates-card)
+  - [Security intelligence updates card](#security-intelligence-updates-card)
+  - [Antivirus platform updates card](#antivirus-platform-updates-card)
 
 ### Sensor health & OS tab
+
+Sensor health and OS cards report on general operating system health, which includes detection sensor health, up-to-date versus out-of-date operating systems, and Windows 10 versions.
+
+> [!div class="mx-imgBorder"]
+> ![Shows Sensor health and Operating system information](images/device-health-sensor-health-os-tab.png)
 
 Each of the three cards on the **Sensor health** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
@@ -67,25 +72,30 @@ Each of the three cards on the **Sensor health** tab have two reporting sections
 
 In each card, the Current state (referred to in some documentation as _Device summary_) is the top, horizontal bar graph. Current state is a snapshot that shows information collected about devices in your organization, scoped to the current day. This graph represents the distribution of devices across your organization that report status or are detected to be in a specific state.
 
+> [!div class="mx-imgBorder"]
+> ![Shows the current state graph within Device Health](images/device-health-sensor-health-os-current-state-graph.png)
+
 #### Device trends graph
 
-The lower graph on each of the three cardss isn't named, but is commonly known as _device trends_. The device trends graph depicts the collection of devices across your organization, throughout the time span indicated directly above the graph.
+The lower graph on each of the three cards isn't named, but is commonly known as _device trends_. The device trends graph depicts the collection of devices across your organization, throughout the time span indicated directly above the graph.
 By default, the device trends graph displays device information from the 30-day period, ending in the latest full day. To gain a better perspective about trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, open the filter and select a start day and end day.
+
+> [!div class="mx-imgBorder"]
+> ![Shows Device Health version trends](images/device-health-sensor-health-os-device-trends-graph.png)
 
 #### Filtering data
 
 Use the provided filters to include or exclude devices with certain attributes. You can select multiple filters to apply from the device attributes. When applied, filters apply to all three cards in the report.
 
-**Example**
-To show data about Windows 10 devices with Active sensor health state:
+For example, to show data about Windows 10 devices with Active sensor health state:
 
 1. Under **Filters** > **Sensor health state** > **Active**.
 2. Then select **OS platforms** > **Windows 10**.
 3. Select **Apply**.
 
-#### Sensor health
+#### Sensor health card
 
-Displays information about the sensor state on devices. Sensor health provides an aggregate view of devices that are:
+The Sensor health card displays information about the sensor state on devices. Sensor health provides an aggregate view of devices that are:
 
 - active
 - inactive
@@ -94,7 +104,7 @@ Displays information about the sensor state on devices. Sensor health provides a
 
 Devices that are either experiencing impaired communications, or devices from which no sensor data is detected could expose your organization to risks, and warrant investigation. Likewise, devices that are inactive for extended periods of time could expose your organization to threats due to out-of-date software. Devices that are inactive for long periods of time also warrant investigation.
 
-#### OS systems and platforms
+#### Operating systems and platforms card
 
 This card shows the distribution of operating systems and platforms that exist within your organization.
 _OS systems and platforms_ can give useful insights into whether devices in your organization are running current or outdated operating systems. When new operating systems are introduced, security enhancements are frequently included that improve your organization's posture against security threats.
@@ -102,7 +112,7 @@ _OS systems and platforms_ can give useful insights into whether devices in your
 For example, Secure Boot, introduced in Windows 8, practically eliminated the threat from some of the most harmful types of malware. Improvements in Windows 10 provide PC manufacturers the option to prevent users from disabling the Secure Boot feature. Preventing users from disabling the Secure Boot feature removes almost any chance of malicious rootkits or other low-level malware from infecting the boot process.
 Ideally, the “Current state” graph shows that the number of operating systems is weighted in favor of more current OS over older versions.  Otherwise, the trends graph indicates that new systems are being adopted and/or older systems are being updated or replaced.
 
-#### Windows 10 versions
+#### Windows 10 versions card
 
 The card shows the distribution of Windows devices and their versions in your organization.
 In the same way that an upgrade from Windows 8 to Windows 10 improves security in your organization, changing from early releases of Windows to more current versions improves your posture against possible threats.
@@ -113,15 +123,15 @@ The Windows version trend graph can help you quickly determine whether your orga
 
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
 
-Two cards, [Antivirus mode](#antivirus-mode) and [Recent antivirus scan results](#recent-antivirus-scan-results), report about Microsoft Defender Antivirus functions.
+Two cards, [Antivirus mode card](#antivirus-mode-card) and [Recent antivirus scan results card](#recent-antivirus-scan-results-card), report about Microsoft Defender Antivirus functions.
 
-The remaining six cards report the Microsoft Defender Antivirus status for devices in your organization:
+The remaining six cards report about the Microsoft Defender Antivirus status for devices in your organization:
 
 | _version_ cards: | _update_ cards{<a id="fn1">1</a>} |
 |:---|:---|
-| [Antivirus engine version](#antivirus-engine-version) <br> [Antivirus security intelligence version](#antivirus-security-intelligence-version) <br> [Antivirus platform version](#antivirus-platform-version) | [Antivirus engine updates](#antivirus-engine-updates) <br> [Security intelligence updates](#security-intelligence-updates) <br> [Antivirus platform updates](#antivirus-platform-updates)  |
+| [Antivirus engine version card](#antivirus-engine-version-card) <br> [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card) <br> [Antivirus platform version card](#antivirus-platform-version-card) | [Antivirus engine updates card](#antivirus-engine-updates-card) <br> [Security intelligence updates card](#security-intelligence-updates-card) <br> [Antivirus platform updates card](#antivirus-platform-updates-card)  |
 
-<sup>{[1](#fn1)}</sup> For the three _updates_ cards, "**No data available**" indicates devices that aren't reporting update status. Devices that aren't reporting update status can due to various reasons, such as:
+<sup>{[1](#fn1)}</sup> For the three _updates_ cards, "**No data available**" indicates devices that aren't reporting update status. Devices that aren't reporting update status can be due to various reasons, such as:
 
 - Computer is disconnected from the network
 - Computer is powered down or in a hibernation state
@@ -129,16 +139,31 @@ The remaining six cards report the Microsoft Defender Antivirus status for devic
 
 > [!NOTE]
 >
-> Up-to-date" reporting is currently available for Windows devices only. Up-to-date reporting will generate information about Windows devices with engine version: 19000.1 and newer.
+> Up-to-date" reporting is currently available for Windows devices only. Up-to-date reporting generates information about Windows devices with engine version: 19000.1 and newer.
+
+> [!div class="mx-imgBorder"]
+> ![Shows the Microsoft Defender Antivirus health tab](images/device-health-defender-antivirus-health-tab.png)
 
 #### Card functionality
 
-The functionality is essentially the same for all cards. By clicking on a numbered bar in any of the cards, a **Details** flyout opens enabling you to review information about all the devices configured with that version number. If the version number that you clicked on is:
+The functionality is essentially the same for all cards. By clicking on a numbered bar in any of the cards, the **Microsoft Defender Antivirus details** flyout opens enabling you to review information about all the devices configured with the version number of an aspect on that card.
+
+> [!div class="mx-imgBorder"]
+> ![Shows Microsoft Defender Antivirus health details](images/device-health-defender-antivirus-health-antivirus-details.png)
+
+If the version number that you clicked on is:
 
 - A current version, then **Remediation required** and **Security recommendation** aren't present
 - An outdated version, a notification at the top of the report is present, indicating **Remediation required**, and a **Security recommendation** link is present. Select the security recommendation link to navigate to the threat and vulnerability management console, which can recommend appropriate antivirus updates.
 
+To add or remove specific types of information on the **Microsoft Defender Antivirus details** flyout,  click **Customize Columns**. In **Customize Columns**, select or clear items to specify what you want included in the Microsoft Defender Antivirus details report.
+
+> [!div class="mx-imgBorder"]
+> ![Shows custom column options for Microsoft Defender Antivirus health reporting](images/device-health-defender-antivirus-engine-version-details-custom-columns.png)
+
 Within the flyout: clicking on the name of the device will redirect you to the "Device page" for that device, where you can access detailed reports.
+
+You can use the **Export** button within the _Microsoft Defender Antivirus details_ flyout to export a report to an Excel spreadsheet. Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
 
 #### Microsoft Defender Antivirus version card functionality
 
@@ -146,16 +171,27 @@ Following are descriptions for the six cards that report about the _version_ and
 
 ##### Full report
 
-In any of the three _version_ cards, click **Full report** to display the nine most recent Microsoft Defender Antivirus _version_ reports for each of the three device types: Windows, Mac, and Linux; if fewer than nine exist, they're all shown. An **Other** category captures recent antivirus engine versions ranking tenth and below, if detected.
+In any of the three _version_ cards, click **View full report** to display the nine most recent Microsoft Defender Antivirus _version_ reports for each of the three device types: Windows, Mac, and Linux; if fewer than nine exist, they're all shown. An **Other** category captures recent antivirus engine versions ranking tenth and below, if detected.
+
+> [!div class="mx-imgBorder"]
+> ![Shows the distribution of the top nine operating systems of each type](images/device-health-defender-antivirus-health-view-full-report.png)
+
 A primary benefit of the three _version_ cards is that they provide quick indicators as to whether the most current versions of the antivirus engines, platforms, and security intelligence are being utilized. Coupled with the detailed information that is linked to the card, the versions cards become a powerful tool to check if versions are up to date and to gather information about individual computers, or groups of computers.
 Ideally, when you run these reports, they'll indicate that the most current antivirus versions are installed, as opposed to older versions.
 Use these reports to determine whether your organization is taking full advantage of the most current versions.
+
+> [!div class="mx-imgBorder"]
+> ![Shows Microsoft Defender Antivirus version details](images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png)
 
 To help ensure your anti-malware solution detects the latest threats, get updates automatically as part of Windows Update.
 
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-#### Antivirus mode
+#### Card descriptions
+
+Following are brief summaries of the collected information reported in each of the _Antivirus version_ cards:
+
+##### Antivirus mode card
 
 Reports on how many devices in your organization – on the date indicated on the card – are in any of the following modes:
 
@@ -166,6 +202,9 @@ Reports on how many devices in your organization – on the date indicated on th
 | 2 | Disabled (uninstalled, disabled, or SideBySidePassive {also known as Low Periodic Scan}) |
 | 3 | Others (Not running, Unknown) |
 | 4 | EDRBlocked |
+
+> [!div class="mx-imgBorder"]
+> ![Shows filtering Microsoft Defender Antivirus modes](images/device-health-defender-antivirus-health-antivirus-mode.png)
 
 Following are descriptions for each mode:
 
@@ -179,68 +218,44 @@ Devices that are in either passive, LPS, or Off present a potential security ris
 
 For details about LPS, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
-#### Recent antivirus scan results
+##### Recent antivirus scan results card
 
 This card has two bars graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
 By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that aren't in active antivirus scan mode, and devices that have failed or canceled recent antivirus scans. You can return to the report with this information and gather more details and security recommendations.
 
 For more details on the current Microsoft Defender Antivirus versions and how to update the different Microsoft Defender Antivirus components, visit [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-#### Antivirus security intelligence version
+##### Antivirus security intelligence version card
 
 Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
 Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft anti-malware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
 
-#### Security intelligence updates
+##### Security intelligence updates card
 
 This card identifies devices that have security intelligence versions that are up to date versus out of date.
 Definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
 
-<!-- Hide {this intro with no subsequent list items}
-[Confirm that it is versus as apposed to "out of date" only.]
--->
-
-<!-- Hide {this intro with no subsequent list items}
-[link - https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide#security-intelligence-updates]
--->
-
-#### Antivirus engine version
+##### Antivirus engine version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization. Microsoft Defender Antivirus engine is updated monthly.
 For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-#### Antivirus engine updates
+##### Antivirus engine updates card
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
 Definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There's a three-day grace period from the day when WU is released.
 
-<!-- Hide {this intro with no subsequent list items}
-[Confirm that it is versus as apposed to "out of date" only.]
--->
-
-<!-- Hide {this intro with no subsequent list items}
-[https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide#monthly-platform-and-engine-versions]
--->
-
-#### Antivirus platform version
+##### Antivirus platform version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-#### Antivirus platform updates
+##### Antivirus platform updates card
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
-Definition of ‘_Up to date_’ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There is a three-day grace period from the day when WU is released.
+Definition of ‘_Up to date_’ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There's a three-day grace period from the day when WU is released.
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
-
-<!-- Hide {this intro with no subsequent list items}
-[Confirm that it is versus as apposed to "out of date" only.]
--->
-
-<!-- Hide {this intro with no subsequent list items}
-[@@@ check mail for link]
--->
 
 ### Related articles
 
