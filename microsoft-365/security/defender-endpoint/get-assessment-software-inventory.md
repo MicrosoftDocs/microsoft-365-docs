@@ -29,7 +29,7 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This API returns all the data for installed software that has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that doesn't have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
+This API returns all the data for installed software that has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis.
 
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
@@ -207,6 +207,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 }
 ```
 
+> [!NOTE]
+> The information returned by this API, along with the information returned by the [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that doesn't have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
+
 ## 2. Export software inventory assessment (via files)
 
 ### 2.1 API method description
@@ -281,6 +284,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 - [Export assessment methods and properties per device](get-assessment-methods-properties.md)
 - [Export secure configuration assessment per device](get-assessment-secure-config.md)
 - [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
+- [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 
 Other related
 
