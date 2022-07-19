@@ -32,7 +32,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 ## See also
 
 - [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
-
 - [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 ## Next objectives
