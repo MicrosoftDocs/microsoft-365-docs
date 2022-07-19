@@ -99,9 +99,11 @@ First, you'll create a custom archive default policy tag (DPT) that will move it
 
    2. For the **Retention Action** Select **Move item to archive** to move items to the archive mailbox when the retention period expires.
 
-3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
+3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag. 
+    
+    For our example scenario, we'll name this tag "Alpine House 3 Year Move to Archive".
 
-4. Select **Next** and then review and submit to create the custom archive DPT.
+4. Select **Next**, and then review and submit to create the custom archive DPT.
 
 The new archive DPT is displayed in the list of retention tags.
 
@@ -117,9 +119,11 @@ Next, you'll create another custom DPT but this one will be a deletion policy th
 
    2. For the **Retention Action** Select **Permanently delete** to purge items from the mailbox when the retention period expires.
 
-3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
+3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag. 
+    
+    For our example scenario, we'll name this tag "Alpine House 7 Year Permanently Delete".
 
-4. Select **Next** and then review and submit to create the custom deletion DPT.
+4. Select **Next**, and then review and submit to create the custom deletion DPT.
 
 The new deletion DPT is displayed in the list of retention tags.
 
@@ -136,8 +140,10 @@ The last retention tag to create is a custom retention policy tag (RPT) for the 
    2. For the **Retention Action** Select **Delete and allow recovery** to delete items when the retention period expires, but allow users to recover a deleted item within the deleted item retention period (which by default is 14 days).
 
 3. On the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
+    
+    For our example scenario, we'll name this tag "Alpine House Deleted Items 5 Years Delete and Allow Recovery".
 
-4. Select **Next** and then review and submit to create the custom deletion DPT.
+4. Select **Next**, and then review and submit to create the custom deletion DPT.
 
 The new RPT is displayed in the list of retention tags.
 
@@ -157,9 +163,9 @@ After you create the custom retention tags, the next step is to create a new ret
 
 5. Add the 9 retention tags that are described in more detail in the [More information](#more-information) section:
     
-    - **Alpine House 3 Year Move to Archive**
-    - **Alpine House 7 Year Permanently Delete**
-    - **Alpine House Deleted Items 5 Years Delete and Allow Recovery**
+    - **Alpine House 3 Year Move to Archive** - the custom archive default policy tag created in step 2 of these instructions
+    - **Alpine House 7 Year Permanently Delete** - the custom deletion tag created in step 2 of these instructions
+    - **Alpine House Deleted Items 5 Years Delete and Allow Recovery** - the custom tag for the Deleted Items folder created in step 2 of these instructions
     - **Recoverable Items 14 days Move to Archive**
     - **Junk Email**
     - **1 Month Delete**
