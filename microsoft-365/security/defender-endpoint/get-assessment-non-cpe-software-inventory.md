@@ -31,11 +31,12 @@ ms.custom: api
 
 This API returns all the data for installed software that doesn't has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis.
 
-## Non CPE software in the software inventory
-
-You can use the **Product Code (CPE)** filter, to view all software, including software with and without a CPE, in the software inventory list.
-
-As CPEs are used by vulnerability management to identify the software and any vulnerabilities, even though software products without a CPE will be shown in the software inventory page, they will not be supported by vulnerability management and information like, exploits, number of exposed devices, and weaknesses won't be available for them. For more information, see [Software inventory in Defender Vulnerability Management](../defender-vulnerability-management/tvm-software-inventory.md).
+> [!NOTE]
+> **About non CPE software in the software inventory**
+>
+> You can use the **Product Code (CPE)** filter, to view all software, including software with and without a CPE, in the software inventory list.
+>
+> As CPEs are used by vulnerability management to identify the software and any vulnerabilities, even though software products without a CPE will be shown in the software inventory page, they will not be supported by vulnerability management and information like, exploits, number of exposed devices, and weaknesses won't be available for them. For more information, see [Software inventory in Defender Vulnerability Management](../defender-vulnerability-management/tvm-software-inventory.md).
 
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
