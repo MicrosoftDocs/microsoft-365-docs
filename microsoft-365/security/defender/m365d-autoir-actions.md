@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -27,9 +28,6 @@ ms.technology: m365d
 
 # View and manage actions in the Action center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-
 **Applies to:**
 - Microsoft 365 Defender
 
@@ -42,12 +40,10 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 > [!NOTE]
 > You must have [appropriate permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see the [prerequisites](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
-You can navigate to the Action Center either by going to https://security.microsoft.com/action-center
+To navigate to the Action center, take one of the following steps:
 
-Or
-
-Select **Approve in Action Center** in the Automated investigation & response card.
-
+- Go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); or
+- In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
 
 ## Review pending actions in the Action center
 
