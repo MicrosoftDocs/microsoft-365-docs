@@ -129,7 +129,8 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 
 | _version_ cards: | _update_ cards{<a id="fn1">1</a>} |
 |:---|:---|
-| [Antivirus engine version card](#antivirus-engine-version-card) <br> [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card) <br> [Antivirus platform version card](#antivirus-platform-version-card) | [Antivirus engine updates card](#antivirus-engine-updates-card) <br> [Security intelligence updates card](#security-intelligence-updates-card) <br> [Antivirus platform updates card](#antivirus-platform-updates-card)  |
+| [Antivirus engine version card](#antivirus-engine-version-card) <br> [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card) <br> [Antivirus platform version card](#antivirus-platform-version-card) | [Antivirus engine updates card](#antivirus-engine-updates-card) <br> [Security intelligence updates card](#security-intelligence-updates-card) <br> [Antivirus platform updates card](#antivirus-platform-updates-card) |
+| The three update cards provide links to additional resources to learn more. | The three version cards provide flyout reports that provide additional information, and enable further exploration. |
 
 <sup>{[1](#fn1)}</sup> For the three _updates_ cards, "**No data available**" indicates devices that aren't reporting update status. Devices that aren't reporting update status can be due to various reasons, such as:
 
@@ -165,7 +166,7 @@ Within the flyout: clicking on the name of the device will redirect you to the "
 
 You can use the **Export** button within the _Microsoft Defender Antivirus details_ flyout to export a report to an Excel spreadsheet. Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
 
-#### Microsoft Defender Antivirus version card functionality
+#### Microsoft Defender Antivirus version and update cards functionality
 
 Following are descriptions for the six cards that report about the _version_ and _update_ information for Microsoft Defender Antivirus engine, security intelligence, and platform components:
 
@@ -193,7 +194,7 @@ Following are brief summaries of the collected information reported in each of t
 
 ##### Antivirus mode card
 
-Reports on how many devices in your organization – on the date indicated on the card – are in any of the following modes:
+Reports on how many devices in your organization – on the date indicated on the card – are in any of the following Microsoft Defender Antivirus modes:
 
 | value | mode |
 |---|---|
@@ -221,34 +222,34 @@ For details about LPS, see [Use limited periodic scanning in Microsoft Defender 
 ##### Recent antivirus scan results card
 
 This card has two bars graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
-By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that aren't in active antivirus scan mode, and devices that have failed or canceled recent antivirus scans. You can return to the report with this information and gather more details and security recommendations.
+By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that aren't in active antivirus scan mode, and devices that have failed or canceled recent antivirus scans. You can return to the report with this information and gather more details and security recommendations. If any error codes are reported in this card, there will be a link to learn more about error codes.
 
 For more details on the current Microsoft Defender Antivirus versions and how to update the different Microsoft Defender Antivirus components, visit [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
-
-##### Antivirus security intelligence version card
-
-Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
-Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft anti-malware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
-
-##### Security intelligence updates card
-
-This card identifies devices that have security intelligence versions that are up to date versus out of date.
-Definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
 
 ##### Antivirus engine version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization. Microsoft Defender Antivirus engine is updated monthly.
 For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-##### Antivirus engine updates card
+##### Antivirus security intelligence version card
 
-This card identifies devices that have antivirus engine versions that are up to date versus out of date.
-Definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There's a three-day grace period from the day when WU is released.
+Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
+Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft anti-malware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
 
 ##### Antivirus platform version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
+
+##### Antivirus engine updates card
+
+This card identifies devices that have antivirus engine versions that are up to date versus out of date.
+Definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There's a three-day grace period from the day when WU is released.
+
+##### Security intelligence updates card
+
+This card identifies devices that have security intelligence versions that are up to date versus out of date.
+Definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
 
 ##### Antivirus platform updates card
 
