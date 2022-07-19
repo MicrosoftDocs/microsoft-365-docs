@@ -49,16 +49,16 @@ Any combination of:
 
 for example:
 
-"VersionProfile": null, "TokenCache": { "CacheData": 
-"AgAAAAIAAACZAWh0dHBzOi8vbG9naW4ubWljcm9zb2…
+`"VersionProfile": null, "TokenCache": { "CacheData": 
+"AgAAAAIAAACZAWh0dHBzOi8vbG9naW4ubWljcm9zb2`
 
 or
 
 Variant client secret or refresh token formats e.g. <br> 
-ClientSecret:******** <br>
-AppSecret=******** <br>
-ConsumerKey:=******** <br>
-Refresh_Token:******** <br>
+`ClientSecret:********` <br>
+`AppSecret=********` <br>
+`ConsumerKey:=********` <br>
+`Refresh_Token:********` <br>
 
 or
 
@@ -76,7 +76,7 @@ A combination of up to 1,000 characters consisting
 
 for example:
 
-eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyIsImtpZCI6Ing0Nzh4…
+`eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyIsImtpZCI6Ing0Nzh4`
 
 
 

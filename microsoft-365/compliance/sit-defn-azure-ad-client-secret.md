@@ -40,7 +40,7 @@ A combination of up to 40 characters consisting of:
 
 for example:
 
-abc7Q~defghijklmnopqrs0t123456789-_.~
+`abc7Q~defghijklmnopqrs0t123456789-_.~`
 
 ## Checksum
 

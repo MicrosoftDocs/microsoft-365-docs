@@ -45,18 +45,18 @@ Any combination of up to 20,000 characters consisting of:
 
 for example: 
 
-MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM…
+`MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
 or
 
 Variant username and password formats, for example:
 
-username=...;password=********; <br>
-user id=...;password=********; <br>
-uid=...;pwd=********; <br>
-DB_USER=...;DB_PASS=********; <br>
-Service Account=...;Password=********; <br>
-...
+`username=...;password=********;` <br>
+`user id=...;password=********;` <br>
+`uid=...;pwd=********;` <br>
+`DB_USER=...;DB_PASS=********;` <br>
+`Service Account=...;Password=********;` <br>
+
 
 ## Checksum
 

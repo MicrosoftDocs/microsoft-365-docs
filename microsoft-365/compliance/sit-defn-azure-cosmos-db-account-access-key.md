@@ -39,7 +39,7 @@ Any combination of 86 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
 ## Checksum
 

@@ -38,7 +38,7 @@ A combination of up to 29 characters:
 
 for example:
 
-xoxp-abcdef-abcdef-abcdef-abcdef 
+`xoxp-abcdef-abcdef-abcdef-abcdef` 
 
 ## Checksum
 

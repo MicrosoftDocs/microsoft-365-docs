@@ -43,12 +43,12 @@ A combination of 88 characters consisting of letters, digits, and special charac
 
 Various username and password formats, for example:
  
-username=...;password=********; <br>
-user id=...;password=********; <br>
-uid=...;pwd=********; <br>
-DB_USER=...;DB_PASS=********; <br>
-Service Account=...;Password=********; <br>
-...
+`username=...;password=********;` <br>
+`user id=...;password=********;` <br>
+`uid=...;pwd=********;` <br>
+`DB_USER=...;DB_PASS=********;` <br>
+`Service Account=...;Password=********;` <br>
+
 
 or
 
@@ -71,13 +71,13 @@ for example
 or
 
 Various password formats in code snippets, for example:
-. 
-... new X509Certificates2( ... <br>
-... ConvertTo-SecureString -String ********... <br>
-... password = "********"... <br>
-... "password" : "********"... <br>
-... UserPasswordCredential( ... <br>
-...
+
+`new X509Certificates2(` <br>
+`ConvertTo-SecureString -String ********` <br>
+`password = "********"` <br>
+`"password" : "********"`<br>
+`UserPasswordCredential(` <br>
+
 
 or
 
@@ -91,7 +91,7 @@ A combination of 86 characters:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
 
 ## Checksum

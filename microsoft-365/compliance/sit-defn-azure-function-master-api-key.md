@@ -43,7 +43,7 @@ Any combination of 54 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOP==
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOP==`
 
 or
 

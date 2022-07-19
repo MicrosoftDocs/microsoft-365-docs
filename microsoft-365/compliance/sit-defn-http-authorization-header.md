@@ -31,11 +31,11 @@ An authorization header used in HTTP request.
 
 Various authentication header formats for example:
  
-authorization: basic ******** <br>
-authorization: bearer ******** <br>
-authorization: digest ******** <br>
-authorization: negotiate ******** <br>
-...
+`authorization: basic ********` <br>
+`authorization: bearer ********` <br>
+`authorization: digest ********` <br>
+`authorization: negotiate ********` <br>
+
 
 ## Checksum
 

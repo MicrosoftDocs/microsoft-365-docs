@@ -38,7 +38,7 @@ A combination of 32 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqr0123456789/+AB
+`abcdefghijklmnopqr0123456789/+AB`
 
 ## Checksum
 

@@ -41,7 +41,7 @@ A combination of 55 characters:
 - or dots (.)
 
 
-abcdefghijklmnopqrstuvwxyz.0123456789_ABCDEabcdefghijkl
+`abcdefghijklmnopqrstuvwxyz.0123456789_ABCDEabcdefghijkl`
 
 or for the 63 characters
 
@@ -78,7 +78,7 @@ A combination of 43 characters
 
 for example:
 
-abcdefghijk.lmn.opq.rstuvwxyz0123456789-_ABCDEFGHIJKLMNOPQRSTUV
+`abcdefghijk.lmn.opq.rstuvwxyz0123456789-_ABCDEFGHIJKLMNOPQRSTUV`
 
 
 ## Checksum

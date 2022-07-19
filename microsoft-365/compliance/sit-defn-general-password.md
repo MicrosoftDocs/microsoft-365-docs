@@ -74,63 +74,91 @@ Any combination of up to 20,000 characters consisting of:
 
 for example:
 
-MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM…
+`MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
 or
 
 Various command line sign in credentials formats, for example: 
 
-... -u username:******** ...
-... -u username -p ******** ...
-... /f ... /p ********...
-... -Password ********...
-... -U username%******** ...
-... -secrets:******** ...
-...
+`-u username:********`
+
+or
+
+`-u username -p ********`
+
+or
+
+`/f ... /p ********`
+
+or
+
+`-Password ********`
+
+or
+
+`-U username%********`
+
+or
+
+`-secrets:********`
 
 for example:
 
-zDbg.DataPuller.exe -secrets:eyJ
+`zDbg.DataPuller.exe -secrets:eyJ`
 
 or
 
 Various password formats in code snippets, for example: 
 
-... new X509Certificates2( ...
-... ConvertTo-SecureString -String ********...
-... password = "********"...
-... "password" : "********"...
-... UserPasswordCredential( ...
-...
+`new X509Certificates2(`
+
+or
+
+`ConvertTo-SecureString -String ********`
+
+or
+
+`password = "********"`
+
+or
+
+`"password" : "********"`
+
+or
+
+`UserPasswordCredential(`
+
 
 for example:
 
-password = "ZYXWVU_1";
+`password = "ZYXWVU_1";`
 
 or
 
 Various password formats in script, for example: 
 
-... password = ********...
-...
+`password = ********`
+
 
 for example:
- password=ZYXWVU_1 
+
+`password=ZYXWVU_1` 
 
 or
 
 Various password formats in XML, for example: 
 
-... <secret>********</secret> ...
-... <password>********</password> ...
-... <setting name="password" value="********" > ...
-... <setting name="password">********</setting> ...
-... <setting name="password"><value>********</value></setting> ...
-...
+```xml
+<secret>********</secret>
+<password>********</password>
+<setting name="password" value="********" >
+<setting name="password">********</setting>
+<setting name="password"><value>********</value></setting>
+```
 
 for example:
 
-<secret>ZYXWVU_1</secret>
+`<secret>ZYXWVU_1</secret>`
 
 or
 
@@ -142,7 +170,7 @@ Any combination of 22 characters consisting of:
 
 for example:
 
-abcdefgh0123456789/+AB==
+`abcdefgh0123456789/+AB==`
 
 or
 
@@ -152,7 +180,7 @@ Any combination of 32 characters consisting of:
 
 for example:
 
-abcdef0123456789abcdef0123456789
+`abcdef0123456789abcdef0123456789`
 
 or
 
@@ -164,7 +192,7 @@ Any combination of 32 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqr0123456789/+AB
+`abcdefghijklmnopqr0123456789/+AB`
 
 or
 
@@ -177,7 +205,7 @@ Any combination of 43 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
 
 or
 
@@ -190,7 +218,7 @@ Any combination of 86 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
 ## Checksum
 

@@ -39,11 +39,11 @@ Plain-text password used in XML configuration.
 
 Various username and password formats, for example:
 
-username=...password=******** <br>
-/user:.../pass:******** <br>
-SharePointOnlineAuthenticatedContext... <br>
-sign_in...<br>
-...
+`username=...password=********` <br>
+`/user:.../pass:********` <br>
+`SharePointOnlineAuthenticatedContext` <br>
+`sign_in`<br>
+
 
 or
 

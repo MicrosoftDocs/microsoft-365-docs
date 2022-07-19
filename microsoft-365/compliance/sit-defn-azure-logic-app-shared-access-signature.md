@@ -38,7 +38,7 @@ Any combination of 43 to 73 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D
+`abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
 ## Checksum
 

@@ -38,7 +38,7 @@ Any combination of 60 characters consisting of:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOPQRSTUV
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOPQRSTUV`
 
 
 

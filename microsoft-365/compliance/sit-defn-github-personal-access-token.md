@@ -43,15 +43,16 @@ A combination of 40 characters consisting of letters and digits.
 
 for example:
 
-ghp_abcdefghijklmnopqrstuvwxyzABCD012345
+`ghp_abcdefghijklmnopqrstuvwxyzABCD012345`
 
 or
 
 Various URL username and password formats for example:
  
-https://username:********@contoso.com/... <br>
-ftp://username:********@contoso.com:20/... <br>
-...
+`https://username:********@contoso.com/` <br>
+
+`ftp://username:********@contoso.com:20/`<br>
+
 
 or
 
@@ -61,7 +62,7 @@ A combination of 40 characters:
 
 for example:
 
-abcdef0123456789abcdef0123456789abcdef01
+`abcdef0123456789abcdef0123456789abcdef01`
 
 ## Checksum
 

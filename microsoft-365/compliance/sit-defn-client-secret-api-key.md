@@ -56,10 +56,10 @@ A combination of 88 characters consisting of letters, digits, and special charac
 
 Various client secret or refresh token formats for example:
  
-ClientSecret:******** <br>
-AppSecret=******** <br>
-ConsumerKey:=******** <br>
-Refresh_Token:******** <br>
+`ClientSecret:********` <br>
+`AppSecret=********` <br>
+`ConsumerKey:=********` <br>
+`Refresh_Token:********` <br>
 
 or
 
@@ -71,7 +71,7 @@ A combination of 22 characters:
 
 for example:
 
-abcdefgh0123456789/+AB==
+`abcdefgh0123456789/+AB==`
 
 or
 
@@ -82,7 +82,7 @@ A combination of 32 characters:
 
 for example:
 
-abcdef0123456789abcdef0123456789
+`abcdef0123456789abcdef0123456789`
 
 or
 
@@ -96,7 +96,7 @@ or
 
 for example:
 
-abcdef0123456789abcdef0123456789abcdef01
+`abcdef0123456789abcdef0123456789abcdef01`
 
 or
 
@@ -110,7 +110,7 @@ A combination of 43 characters:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
 
 or
 
@@ -123,7 +123,7 @@ A combination of 54 characters:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOP==
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOP==`
 
 or
 
@@ -136,7 +136,7 @@ A combination of 86 characters:
 
 for example:
 
-abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==
+`abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
 
 ## Checksum

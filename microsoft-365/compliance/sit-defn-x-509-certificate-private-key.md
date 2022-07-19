@@ -45,7 +45,7 @@ Up to two equal signs (==)
 
 for example:
 
-MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM…
+`MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
 or
 
@@ -59,7 +59,7 @@ And a combination of up to 30 characters:
 
 for example:
 
------BEGIN PRIVATE KEY-----
+`-----BEGIN PRIVATE KEY-----`
 
 
 ## Checksum

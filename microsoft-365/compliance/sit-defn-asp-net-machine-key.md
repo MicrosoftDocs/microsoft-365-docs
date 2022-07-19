@@ -31,9 +31,10 @@ Symmetric keys in XML configuration.
 
 Various symmetric key formats in XML, for example:
 
-... <machineKey decryptionKey="******** ...  <br>
-... <machineKey validationKey="******** ...
-
+```xml
+<machineKey decryptionKey="******** </br> 
+<machineKey validationKey="********
+```
 ## Checksum
 
 No

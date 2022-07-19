@@ -40,7 +40,7 @@ A combination of 35 characters:
 
 for example:
 
-AIzaefgh0123456789_-ABCDEFGHIJKLMNOPQRS
+`AIzaefgh0123456789_-ABCDEFGHIJKLMNOPQRS`
 
 ## Checksum
 
