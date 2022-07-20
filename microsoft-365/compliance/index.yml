@@ -16,6 +16,7 @@ metadata:
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
   ms.date: 04/22/2022 #Required; mm/dd/yyyy format
   ms.localizationpriority: high
+  titleSuffix: Microsoft Purview (compliance)
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -77,8 +78,10 @@ landingContent:
         links:
           - text: Secure data with Zero Trust
             url: /security/zero-trust/data
-          - text: Deploy a Microsoft Purview Information Protection solution
+          - text: Deploy an information protection solution
             url: /microsoft-365/compliance/information-protection-solution
+          - text: Deploy a data governance solution
+            url: /microsoft-365/compliance/data-governance-solution
           - text: Deploy information protection for data privacy regulations
             url: /microsoft-365/solutions/information-protection-deploy
           - text: Explore information protection & compliance illustrations

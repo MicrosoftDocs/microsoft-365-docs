@@ -24,6 +24,7 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -160,7 +161,8 @@ rbacGroupId|String|The role-based access control (RBAC) group ID.
 RecommendationReference|String|A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate|String|Name or description of the security update provided by the software vendor to address the vulnerability.
 RecommendedSecurityUpdateId|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles.
-Registry Paths Array\[string\]|Registry evidence that the product is installed in the device.
+Registry Paths|Array[string]|Registry evidence that the product is installed in the device.
+SecurityUpdateAvailable|Boolean|Indicates whether a security update is available for the software.
 SoftwareName|String|Name of the software product.
 SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.

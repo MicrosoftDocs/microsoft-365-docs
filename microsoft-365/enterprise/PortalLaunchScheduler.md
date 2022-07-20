@@ -1,5 +1,5 @@
 ---
-title: "Launch your portal using the Portal launch scheduler"
+title: Launch your portal using the Portal launch scheduler
 ms.author: jhendr
 author: jhendr
 manager: pamgreen
@@ -16,7 +16,7 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: "This article describes how you can launch your portal using the Portal launch scheduler"
+description: This article describes how you can launch your portal using the Portal launch scheduler.
 ---
 
 # Launch your portal using the SharePoint Portal launch scheduler
@@ -42,7 +42,7 @@ Site permissions must be set up separately from waves as part of the launch. For
 > - The number of waves required is automatically determined by the expected number of users.
 > - Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page of the site is healthy.
 > - At the end of the launch, all users with permissions to the site will be able to access the new site.
-> - If your organization is using [Viva Connections](/SharePoint/viva-connections), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched.
+> - If your organization is using [Viva Connections](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched.
 > - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans.
 
 ## Understand the differences between Portal launch scheduler options:

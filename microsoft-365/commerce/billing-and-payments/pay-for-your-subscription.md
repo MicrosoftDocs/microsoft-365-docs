@@ -22,7 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/18/2022
+ms.date: 05/26/2022
 ---
 
 # How to pay for your subscription
@@ -41,6 +41,16 @@ You can use a credit or debit card, or bank account to pay for your subscription
 
 - You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - The payment method that you choose during checkout is the payment method that we use for all future billing periods. You can change it at any time.
+
+## Directives from the Reserve Bank of India
+
+Currently, some credit card transactions, especially transactions exceeding 5,000 INR, are blocked due to a directive by the Reserve Bank of India. This might affect automatic payments, which means that you might have to make payments manually in the Microsoft 365 admin center. This directive doesn't affect usage charges. 
+
+[Learn more about the Reserve Bank of India directive for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+
+30 September 2022, Microsoft and other online merchants will no longer store credit card information. Microsoft will remove all stored card details from the Microsoft 365 admin center. To avoid service interruption, you must add and verify a payment method for all subscriptions and billing profiles.
+
+[Learn about the Reserve Bank of India directive for card storage](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## Paying by credit or debit card, or bank account
 

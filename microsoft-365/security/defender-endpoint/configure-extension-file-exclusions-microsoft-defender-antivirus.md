@@ -33,8 +33,8 @@ You can define exclusions for Microsoft Defender Antivirus that apply to [schedu
 - [Exclusions for files that are opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction), and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
-> To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
+> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, such as [attack surface reduction (ASR) rules](attack-surface-reduction.md) and [controlled folder access](controlled-folders.md). Files that you exclude using the methods described in this article can still trigger endpoint detection and response (EDR) alerts and other detections.
+> To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](manage-indicators.md).
 
 ## Before you begin
 
@@ -45,8 +45,7 @@ See [Recommendations for defining exclusions](configure-exclusions-microsoft-def
 To exclude certain files from Microsoft Defender Antivirus scans, you modify your exclusion lists. Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 > [!NOTE]
-> Exclusions apply to Potentially Unwanted Apps (PUA) detections as well.
->
+> Exclusions apply to [potentially unwanted apps (PUA) detections](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) as well.
 > Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
 
 The following table lists some examples of exclusions based on file extension and folder location.
@@ -104,6 +103,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 3. Expand the tree to **Windows components** \> **Windows Defender Antivirus** \> **Exclusions**.
 
 4. Open the **Path Exclusions** setting for editing, and add your exclusions.
+
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
     3. Specify each folder on its own line under the **Value name** column.
@@ -113,6 +113,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 5. Choose **OK**.
 
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
+
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
     3. Enter each file extension on its own line under the **Value name** column.
@@ -187,16 +188,12 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 
 > [!IMPORTANT]
 > There are key limitations and usage scenarios for these wildcards:
->
 > - Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
 > - You can only use a maximum of six wildcards per entry.
 > - You cannot use a wildcard in place of a drive letter.
 > - An asterisk `*` in a folder exclusion stands in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
-> - Currently, Microsoft Endpoint Configuration Manager does not support wildcard characters (such as `*` or `?`).
     
 The following table describes how the wildcards can be used and provides some examples.
-
-<br/><br/>
 
 |Wildcard|Examples|
 |---|---|
@@ -206,9 +203,7 @@ The following table describes how the wildcards can be used and provides some ex
 
 > [!IMPORTANT]
 > If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
->
 > For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument `c:\data\*\marked\date*`.
->
 > This argument, however, will not match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
 
 <a id="review"></a>
@@ -284,7 +279,7 @@ The following table lists and describes the system account environment variables
 
 You can retrieve the items in the exclusion list using one of the following methods:
 
-- [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
@@ -292,7 +287,6 @@ You can retrieve the items in the exclusion list using one of the following meth
 
 > [!IMPORTANT]
 > Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
->
 > Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
 If you use PowerShell, you can retrieve the list in two ways:

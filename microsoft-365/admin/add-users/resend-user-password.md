@@ -40,7 +40,7 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 
 3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
 
-4. Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.
+4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
 
 ## Related content
 

@@ -21,8 +21,6 @@ description: "Microsoft Purview Compliance Manager provides templates for buildi
 
 # Compliance Manager templates list
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]
@@ -292,7 +290,8 @@ The templates listed below may be purchased by your organization.
 - Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - China - Personal Information Security Specification  
-- Cybersecurity Law of the People's Republic of China  
+- Cybersecurity Law of the People's Republic of China
+- Hong Kong - Code of Banking Practice and Payment Card
 - Hong Kong - Personal Data (Privacy) Ordinance  
 - India Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules
 - India - Information Technology Act  
@@ -392,6 +391,7 @@ The templates listed below may be purchased by your organization.
 - Nigeria Data Protection Regulation  
 - Oman - Electronic Transactions Law  
 - Qatar Cloud Security Policy
+- Qatar National Information Assurance (NIA)
 - Romania - Data Protection Law 190/2018  
 - Russia - Federal Law 149-FZ On Information, Information Technology and Information Security
 - [Russian Federation Federal Law Regarding Personal Data](/compliance/regulatory/offering-russia-data-localization)  
@@ -402,11 +402,12 @@ The templates listed below may be purchased by your organization.
 - Slovakia Act on the Protection of Personal Data  
 - Spain - Nation Security Framework  
 - Switzerland - Federal Act on Data Protection (FADP)  
-- Turkey - KVKK Protection of Personal Data 6698  
+- Turkey - KVKK Protection of Personal Data 6698
 - UAE - Federal Decree Law on Combating Cyber Crimes  
 - UAE - Federal Law Concerning Electronic Transactions and Commerce
 - UAE - Federal Law No 2 of 2019 On the Use of the Information and Communication Technology (ICT) in Health Fields  
-- UAE - NESA Information Assurance Standards  
+- UAE - NESA Information Assurance Standards
+- UAE Data Privacy Law
 - UAE Regulatory Policy TRA - Internet of Things  
 - UAE's Federal Decree Law Regulating the Telecommunications Sector  
 - Uganda - The Data Protection and Privacy Act  
