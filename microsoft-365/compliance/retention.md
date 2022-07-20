@@ -294,7 +294,7 @@ Scenario: By default, SharePoint items are automatically retained and then delet
 
 1. You create and configure a retention policy that automatically retains and then deletes content after five years, and apply the policy to all SharePoint and Microsoft 365 Groups instances.
 
-2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint sites so that site admins can apply it as a default label to be inherited by all items in specific document libraries.
+2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint sites so that site members can apply it as a default label to be inherited by all items in specific document libraries.
 
 #### Example to delete items in a shorter time period
 
