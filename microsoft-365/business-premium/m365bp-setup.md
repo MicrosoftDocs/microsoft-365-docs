@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,8 +22,8 @@ ms.custom: intro-get-started
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration; or
-- [Work with a partner](m365bp-setup.md#work-with-a-microsoft-partner), such as a Microsoft Cloud Solution Provider (CSP).
+- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration, and then proceed to [Bump up security](m365bp-security-overview.md); or
+- [Work with a Microsoft partner](m365bp-setup.md#work-with-a-microsoft-partner) who can help you get everything set up and configured.
 
 ## Before you begin
 
@@ -46,8 +46,8 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
-> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
-> Make sure to proceed to [Bump up security](m365bp-security-overview.md).
+> - After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+> - Make sure to proceed to [Bump up security](m365bp-security-overview.md).
 
 ## Work with a Microsoft partner
 
