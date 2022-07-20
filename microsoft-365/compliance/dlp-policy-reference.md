@@ -37,7 +37,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 updated: 06/23/2021
 
-|Category| Template | SIT |
+|Category|Template | SIT |
 |---------|---------|---------|
 |Financial| Australia Financial Data| - [SWIFT code](sit-defn-swift-code.md) </br> -  [Australia tax file number](sit-defn-australia-tax-file-number.md) </br> - [Australia bank account number](sit-defn-australia-bank-account-number.md) </br> - [Credit card number](sit-defn-credit-card-number.md)|
 |Financial| Canada Financial data |- [Credit card number](sit-defn-credit-card-number.md) </br> - [Canada bank account number](sit-defn-canada-bank-account-number.md)|
