@@ -66,7 +66,7 @@
          href: archive-bloomberg-message-data.md 
        - name: Epic EHR healthcare data (preview)
          href: import-epic-data.md
-       - name: Facebook Business 
+       - name: Facebook Business (preview)
          href: archive-facebook-data-with-sample-connector.md
        - name: Generic EHR healthcare data (preview)
          href: import-healthcare-data.md
@@ -78,11 +78,11 @@
          href: archive-instant-bloomberg-data.md
        - name: LinkedIn
          href: archive-linkedin-data.md
-       - name: Physical badging data
+       - name: Physical badging data (preview)
          href: import-physical-badging-data.md
        - name: Slack eDiscovery (preview)
          href: archive-slack-data-microsoft.md
-       - name: Twitter
+       - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
    - name: Veritas data connectors
      items:  
@@ -971,6 +971,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Content stored in mailboxes for eDiscovery
               href: what-is-stored-in-exo-mailbox.md
+            - name: eDiscovery Graph connector
+              href: ediscovery-graph-connector.md  
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Conversation review sets

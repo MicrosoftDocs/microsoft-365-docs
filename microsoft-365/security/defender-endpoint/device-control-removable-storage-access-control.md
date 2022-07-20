@@ -153,6 +153,8 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ### Deploying Removable Storage Access Control by using Intune OMA-URI
 
+To block a specific removable storage class but allow specific media, you can use ‘IncludedIdList a group through PrimaryId and ExcludedIDList a group through DeviceId/HardwareId/etc.’
+
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
 
 1. Enable or Disable Device control as follows:
@@ -307,6 +309,9 @@ Before you get started with Removable Storage Access Control, you must confirm y
    - In the **Device Control** window, select **Enabled**.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Screenshot of Enabling RSAC using Group Policy " lightbox="images/enable-rsac-gp.png":::
+
+> [!NOTE]
+> If you don't see this group policy objects, you need to add group policy administrative template. you can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples.
 
 2. Set Default Enforcement:
 

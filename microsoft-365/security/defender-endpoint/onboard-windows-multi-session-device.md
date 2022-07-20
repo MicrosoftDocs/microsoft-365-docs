@@ -65,7 +65,7 @@ Follow the instructions for a single entry for each device.
 
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
-##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows 365 Defender portal
+##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Microsoft 365 Defender portal
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)
 
