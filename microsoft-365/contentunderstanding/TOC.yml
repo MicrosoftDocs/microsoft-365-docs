@@ -40,7 +40,18 @@
                   href: delete-a-model.md
                 - name: Model usage analytics
                   href: model-usage-analytics.md
-
+                - name: Manage models with PowerShell
+                  items:
+                    - name: Overview
+                      href: powershell-syntex-intro.md
+                    - name: Export and import models
+                      href: powershell-syntex-import-export.md
+                    - name: Publish models
+                      href: powershell-syntex-publishing.md
+                    - name: Request processing by a model
+                      href: powershell-syntex-processing.md
+                    - name: Work with model explanations
+                      href: powershell-syntex-explanations.md
 
 
 
