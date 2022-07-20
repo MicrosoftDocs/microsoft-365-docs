@@ -1,6 +1,17 @@
     - name: Microsoft SharePoint Syntex
       href: index.md
  
+    - name: Get started
+      items:
+            - name: Overview of SharePoint Syntex
+              href: syntex-overview.md 
+            - name: Licensing for SharePoint Syntex
+              href: syntex-licensing.md
+            - name: Set up SharePoint Syntex
+              href: set-up-content-understanding.md
+            - name: Create a content center 
+              href: create-a-content-center.md
+
     - name: Create a custom model
       items:
             - name: Overview 
