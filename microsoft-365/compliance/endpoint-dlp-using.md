@@ -37,15 +37,6 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 
 ### SKU/subscriptions licensing
 
-Before you get started with Endpoint DLP, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. To access and use Endpoint DLP functionality, you must have one of these subscriptions or add-ons.
-
-- Microsoft 365 E5
-- Microsoft 365 A5 (EDU)
-- Microsoft 365 E5 compliance
-- Microsoft 365 A5 compliance
-- Microsoft 365 E5 information protection and governance
-- Microsoft 365 A5 information protection and governance
-
 For full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## Scenario 1: Create a policy from a template, audit only
