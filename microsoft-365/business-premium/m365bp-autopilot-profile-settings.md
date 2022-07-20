@@ -11,23 +11,15 @@ f1.keywords:
 - 'BCS365_ZTDProfileSettings'
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: "Autopilot profiles help you control how Windows gets installed on user devices. The profiles contain default and optional settings like skip Cortana installation."
 ---
 

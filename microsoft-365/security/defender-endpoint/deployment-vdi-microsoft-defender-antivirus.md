@@ -28,9 +28,6 @@ ms.collection: m365-security-compliance
 
 In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-> [!NOTE]
-> The Defender for Endpoint demo site at `demo.wd.microsoft.com` is deprecated and will be removed in the future.
-
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
 - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
@@ -40,8 +37,6 @@ This guide describes how to configure your VMs for optimal protection and perfor
 - [Disable scans from occurring after every update](#disable-scans-after-an-update)
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
-
-You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
 For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 

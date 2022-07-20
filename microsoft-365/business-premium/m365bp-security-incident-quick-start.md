@@ -9,21 +9,14 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management 
-- Adm_TOC
+ms.date: 07/19/2022
+ms.collection:
+- m365solution-smb
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "A set of suggestions for what to focus your efforts upon in the Defender portal when it comes to daily, weekly or monthly operations. "
 ---
 
