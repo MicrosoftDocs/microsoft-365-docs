@@ -29,11 +29,13 @@ These service advisories are displayed in the Microsoft 365 admin center. To vie
 
 :::image type="content" alt-text="Mailbox utilization service alert." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-To display a list of mailboxes that are nearing their storage quota (called the *mailbox usage report*), click the highlighted link in the following screenshot. This link is displayed in the service advisory.
+To display a list of mailboxes that are nearing their storage quota, click the highlighted link in the following screenshot to access your mailbox usage report. This link is displayed in the service advisory.
 
 :::image type="content" alt-text="Link to mailbox usage report." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 Alternatively, the direct URL to the mailbox usage report is <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>.
+
+Please note that the mailbox usage report information could be 24 hours behind your mailbox utilization service advisory alert.
 
 ## What do these service advisories indicate?
 
