@@ -34,7 +34,7 @@ While both products offer server protection capabilities, Microsoft Defender for
 
 ## How do I migrate my servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud?
 
-If you have servers onboarded to Defender for Endpoint, the migration process varies depending on machine type, but there's a set of shared prerequisites.
+If you have servers onboarded to Defender for Endpoint, the migration process varies depending on machine type, but there's a set of shared prerequisites like connectivity requirements for Azure Arc need to be met. In addition, Azure Arc doesn't support all MDE supported operating systems.
 
 Microsoft Defender for Cloud is a subscription-based service in the Microsoft Azure portal. Therefore, Defender for Cloud and the underlying plans like Microsoft Defender for Servers Plan 1 or Plan 2 need to be enabled on Azure subscriptions.
 
@@ -64,7 +64,7 @@ For Azure VMs, no extra steps are required, these are automatically onboarded to
 2. On your multi-cloud connector, enable Defender for Servers on [AWS](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) or [GCP](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings#configure-the-servers-plan) connectors.
 3. Enable auto-provisioning on the multi-cloud connector for the Azure Arc agent, Microsoft Defender for Endpoint extension, Vulnerability Assessment and, optionally, Log Analytics extension.
      :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot of enabling auto-provisioning for Azure Arc agent":::
-To learn more about Defender for Cloud’s multi-cloud capabilities, click [here](https://aka.ms/mdcmc).
+For more information, see [Defender for Cloud’s multicloud capabilities](https://aka.ms/mdcmc).
 
 ## What happens once all migration steps are completed?
 
