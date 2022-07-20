@@ -377,8 +377,8 @@
     },
     {
       "source_path": "microsoft-365/business/secure-win-10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/setup/secure-win-10-pcs",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-profiles.md",
@@ -6342,7 +6342,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/secure-win10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/setup/secure-win-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
     {
@@ -6402,7 +6402,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/secure-win-10-pro-devices.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
     {
@@ -7553,6 +7553,21 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/use.md",
       "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/microsoft-365-security-for-bdm.md",
+      "redirect_url": "/microsoft-365/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365//admin/setup/secure-win-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/microsoft-home-use-program-faq.yml",
+      "redirect_url": "/microsoft-365/commerce/microsoft-workplace-discount-program-faq",
       "redirect_document_id": false
     }
   ]
