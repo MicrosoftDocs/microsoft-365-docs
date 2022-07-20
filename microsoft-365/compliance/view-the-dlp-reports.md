@@ -85,19 +85,19 @@ To view DLP reports in the Security & Compliance Center, you have to be assigned
 
 To use the DLP reporting cmdlets, do these steps:
 
-1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Security & Compliance PowerShell](exchange/docs-conceptual/connect-to-scc-powershell.md)
 
 2. Use these cmdlets:
 
-   - [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
-   - [Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
-   - [Get-DlpSiDetectionsReport](/powershell/module/exchange/get-dlpsidetectionsreport)
+   - [Get-DlpDetailReport](exchange/exchange-ps/exchange/Get-DlpDetailReport.md)
+   - [Get-DlpDetectionsReport](exchange/exchange-ps/exchange/Get-DlpDetectionsReport.md)
+   - [Get-DlpSiDetectionsReport](exchange/exchange-ps/exchange/Get-DlpSiDetectionsReport.md)
 
 However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, the following cmdlets for DLP reports are available in Exchange Online Powershell. To use the cmdlets for these DLP reports, do these steps:
 
-1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connect to Exchange Online PowerShell](exchange/docs-conceptual/connect-to-exchange-online-powershell.md)
 
 2. Use these cmdlets:
 
-   - [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
-   - [Get-MailDetailDlpPolicyReport](/powershell/module/exchange/get-maildetaildlppolicyreport)
+   - [Get-DlpDetailReport](exchange/exchange-ps/exchange/Get-DlpDetailReport.md)
+   - [Get-MailDetailDlpPolicyReport](exchange/exchange-ps/exchange/Get-MailDetailDlpPolicyReport.md)
