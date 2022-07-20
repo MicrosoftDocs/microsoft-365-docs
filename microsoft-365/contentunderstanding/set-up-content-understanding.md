@@ -1,5 +1,5 @@
 ---
-title: 'Set up SharePoint Syntex'
+title: Set up Microsoft SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
@@ -17,7 +17,7 @@ ms.localizationpriority: high
 description: "Set up SharePoint Syntex"
 ---
 
-# Set up SharePoint Syntex
+# Set up Microsoft SharePoint Syntex
 
 Admins can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to set up [Microsoft SharePoint Syntex](index.md). 
 

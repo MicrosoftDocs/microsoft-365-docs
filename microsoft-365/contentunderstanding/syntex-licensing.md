@@ -1,5 +1,5 @@
 ---
-title: 'Licensing for SharePoint Syntex'
+title: Licensing for Microsoft SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
@@ -15,7 +15,7 @@ ms.localizationpriority: high
 description: "Learn about licensing for SharePoint Syntex"
 ---
 
-# Licensing for SharePoint Syntex
+# Licensing for Microsoft SharePoint Syntex
 
 To use SharePoint Syntex, each Syntex user must have a license for it. If you cancel your SharePoint Syntex licenses at a future date (or your trial expires), users will no longer be able to create, publish, or run document understanding or form processing models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted and site permissions will not be changed.
  
