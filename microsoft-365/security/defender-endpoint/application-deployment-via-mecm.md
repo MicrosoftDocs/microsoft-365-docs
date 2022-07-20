@@ -32,7 +32,7 @@ This article guides you in migrating down-level servers from Microsoft Monitorin
 - Down-level OS devices in your environment onboarded with Microsoft Monitoring Agent. To confirm, verify that `MsSenseS.exe` is running in Task Manager.
 - Presence of the MMA agent. You can verify it by checking if the correct Workspace ID is present in the Control Panel> Microsoft Monitoring Agent.
 - Active Microsoft 365 Defender portal with devices onboarded.
-- A Device Collection containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is set up in your MECM instance.
+- A **Device Collection** containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is set up in your MECM instance.
 
 For more information on installing the listed prerequisites, see [related topics](#related-topics) section.
 
@@ -61,42 +61,41 @@ Copy the unified solution package, onboarding script and migration script to the
 8. Additionally, set the following as the installation program:
 
      ```powershell
-       Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -Log -Etl -RemoveMMA 48594f03-7e66-4e15-8b60-d9da2f92d564 -OnboardingScript .\WindowsDefenderATP.onboarding
+       Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -Log -Etl -RemoveMMA <workspace ID> -OnboardingScript .\WindowsDefenderATPOnboardingScript.cmd 
      ```
 
+      Click **Next** and make sure to add your own Workspace ID in cmdlet.
 9. Click **Next** and click add a clause.
-10. The clause will be looking in the registry to see if the following key is present:
-     `HKEY_LOCAL_MACHINESOFTWARE\Classes\Installer\Products\63FAD065BFFD18F1926692665F704C6D`
+10. The detection method will be based on the registry key shown below.
+      `HKEY_LOCAL_MACHINESOFTWARE\Classes\Installer\Products\63FAD065BFFD18F1926692665F704C6D`
 
-     Provide the following inputs:
-     - Value: **ProductName**
-     - Data Type: **String**
-     - Check the option: **This registry setting must exit on the target system to indicate presence of this application.**
+      Check the option: **This registry setting must exit on the target system to indicate presence of this application.**
 
      :::image type="content" source="images/detection-rule-wizard.png" alt-text="Screenshot that shows registry key detection.":::
 
      >[!TIP]
-     >This registry key value was obtained by running the following PowerShell command on a device that has had the unified solution installed. Other creative methods of detection can also be used. The goal is to identity whether the unified solution has already been installed on a specific device.
+     >This registry key value was obtained by running the following PowerShell command as shown below on a device that has the unified solution installed. Other creative methods of detection can also be used. The goal is to identity whether the unified solution has already been installed on a specific device.
 
      ```powershell
      PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
      ```
 
-11. In the **User Experience** section, you can choose what suits your environment and click **Next**. For **Installation program visibility**, it's advisable to install with **Normal visibility** during phase testing then change it to **Minimized** for general deployment.
+11. In the **User Experience** section,check the recommended settings shown in the screenshot. You can choose what suits your environment and click **Next**. For **Installation program visibility**, it's advisable to install with **Normal** during phase testing then change it to **Minimized** for general deployment.
      >[!TIP]
-     > Maximum allowed runtime can be lowered from (default) 120 minutes to 30 minutes.
+     > Maximum allowed runtime can be lowered from (default) 120 minutes to 60 minutes.
 
      :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="Screenshot that shows user experience in deployment-type wizard.":::
 
-12. Click **Next** on Requirements.
-13. Click **Next** on Dependencies.
+12. Add any additional requirements then click **Next**. 
+13. Under the Dependencies section, click **Next**. 
 14. Click **Next** until completion screen comes up, then **Close**.
-15. Keep clicking next until the completion of Application Wizard. Verify all have been green checked.
-16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.
+15. Keep clicking **Next** until the completion of Application Wizard. Verify all have been green checked.
+16. Close the wizard, right click on the recently created application and deploy it to your down-level-server collection.Locally, the installation can be confirmed at Software Center. For details, check the CM logs at `C:\Windows\CCM\Logs\AppEnforce.log`.
      :::image type="content" source="images/deploy-application.png" alt-text="Screenshot that shows deployment of created application." lightbox="images/deploy-application.png":::
-17. Verify in MECM>Monitoring>Deployments the status of this migration.
+17. Verify the status of the migration at MECM>Monitoring>Deployments.
 
       :::image type="content" source="images/deployment-status.png" alt-text="Screenshot that shows deployment status check." lightbox="images/deployment-status.png":::
+18. Troubleshooting .ETL files will be created and automatically saved locally in each server at this location `C:\Windows\ccmcache\#\`. These files can be leveraged by support to troubleshoot onboarding issues.
 
 ## Related topics
 
