@@ -53,13 +53,16 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
 
-1. Go to the [Browse Partners](https://appsource.microsoft.com/en-us/marketplace/partner-dir).
+1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir).
 
 2. In the **Filters** pane, specify search criteria, such as:
 
    - Your location
    - Your organization's size
    - **Focus areas**, such as **Security** and/or **Threat Protection** 
+   - **Services**, such as **Licensing** or **Managed Services (MSP)**
+
+   As soon as you select one or more criteria, the list of partners updates.
 
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
