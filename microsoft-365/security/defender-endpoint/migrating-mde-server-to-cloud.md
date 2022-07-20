@@ -34,7 +34,7 @@ While both products offer server protection capabilities, Microsoft Defender for
 
 ## How do I migrate my servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud?
 
-If you have servers onboarded to Defender for Endpoint, the migration process varies depending on machine type, but there's a set of shared prerequisites like connectivity requirements for Azure Arc need to be met. In addition, Azure Arc doesn't support all MDE supported operating systems.
+If you have servers onboarded to Defender for Endpoint, the migration process varies depending on machine type, but there's a set of shared prerequisites. 
 
 Microsoft Defender for Cloud is a subscription-based service in the Microsoft Azure portal. Therefore, Defender for Cloud and the underlying plans like Microsoft Defender for Servers Plan 1 or Plan 2 need to be enabled on Azure subscriptions.
 
@@ -46,7 +46,7 @@ To enable Defender for Servers for Azure VMs and on premises servers connected t
 4. Make sure the [MDE integration](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows) is enabled on your subscription. If you have pre-existing Azure subscriptions, you may see one (or both) of the two opt-in buttons shown in the image below.
      :::image type="content" source="images/mde-integration.png" alt-text="Screenshot of enabling MDE integration":::
 If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default.
-5. Microsoft Defender for Cloud requires all on-premises and non-Azure machines to be connected via the Azure Arc agent. Learn how to plan for [Azure Arc deployments](/azure/azure-arc/servers/plan-at-scale-deployment).
+5. Make sure the connectivity requirements for Azure Arc are met. Microsoft Defender for Cloud requires all on-premises and non-Azure machines to be connected via the Azure Arc agent. In addition, Azure Arc doesn't support all MDE supported operating systems. So, learn how to plan for [Azure Arc deployments here](/azure/azure-arc/servers/plan-at-scale-deployment).
 6. *Recommended:* If you want to see vulnerability findings in Defender for Cloud, make sure to enable [Microsoft Defender Vulnerability Management](/azure/defender-for-cloud/enable-data-collection?tabs=autoprovision-va) for Defender for Cloud.
    :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Screenshot of enabling vulnerability management"::: 
 
