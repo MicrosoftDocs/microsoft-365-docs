@@ -2,21 +2,16 @@
 title: "About Intune admin roles in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- M365-subscription-management
-- Adm_O365
-
 ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
-- admindeeplinkMAC
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 
@@ -48,14 +43,14 @@ Here are the built-in roles that you can assign:
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|
-|Application manager     |   Assign the Application manager role to users who manage the application lifecycle for mobile apps, configure policy-managed apps, and view device info and configuration profiles.  |
-|Help desk operator     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
-|Intune role administrator    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
-|Policy and profile manager     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |
-|Read only operator     |   Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.   |
-|School administrator     |   Assign the school administrator role to users for full access to manage Windows 10 and iOS devices, apps and configurations in Intune for Education.   |
-|Cloud PC Administrator     |   A Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.   |
-|Cloud PC Reader     |   A Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.   |
+|**Application manager**     |   Assign the Application manager role to users who manage the application lifecycle for mobile apps, configure policy-managed apps, and view device info and configuration profiles.  |
+|**Help desk operator**     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
+|**Intune role administrator**    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
+|**Policy and profile manager**     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |
+|**Read only operator**     |   Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.   |
+|**School administrator**     |   Assign the school administrator role to users for full access to manage Windows 10-11 and iOS devices, apps, and configurations in Intune for Education.   |
+|**Cloud PC Administrator**     |   A Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.   |
+|**Cloud PC Reader**     |   A Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.   |
 
 ## Microsoft Intune custom roles
 

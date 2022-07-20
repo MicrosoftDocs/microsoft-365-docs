@@ -20,8 +20,6 @@ description: Learn how to configure Exchange Online IRM to use on-premises Activ
 
 # Exchange Online mail encryption with AD RMS
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 To help prevent information leakage, Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. You can configure Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS), if needed, to satisfy your organization requirements. This is not common. If you do not have a requirement to use AD RMS, use [Microsoft Purview Message Encryption](ome.md) instead.
 
 IRM protection can be applied by users in Microsoft Outlook or Outlook on the web, and it can be applied by administrators using transport protection rules or Outlook protection rules. IRM helps you and your users control who can access, forward, print, or copy sensitive data within an email.

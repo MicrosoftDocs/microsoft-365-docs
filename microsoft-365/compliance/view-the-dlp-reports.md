@@ -23,8 +23,6 @@ description: Use the DLP reports in Office 365 to view the number of DLP policy 
 
 # View the reports for data loss prevention
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 After you create your Microsoft Purview data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Microsoft Purview compliance portal, you can quickly view:
 
 - **DLP policy matches** This report shows the count of DLP policy matches over time. You can filter the report by date, location, policy, or action. You can use this report to:
@@ -87,19 +85,19 @@ To view DLP reports in the Security & Compliance Center, you have to be assigned
 
 To use the DLP reporting cmdlets, do these steps:
 
-1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Security & Compliance PowerShell](exchange/docs-conceptual/connect-to-scc-powershell.md)
 
 2. Use these cmdlets:
 
-   - [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
-   - [Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
-   - [Get-DlpSiDetectionsReport](/powershell/module/exchange/get-dlpsidetectionsreport)
+   - [Get-DlpDetailReport](exchange/exchange-ps/exchange/Get-DlpDetailReport.md)
+   - [Get-DlpDetectionsReport](exchange/exchange-ps/exchange/Get-DlpDetectionsReport.md)
+   - [Get-DlpSiDetectionsReport](exchange/exchange-ps/exchange/Get-DlpSiDetectionsReport.md)
 
 However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, the following cmdlets for DLP reports are available in Exchange Online Powershell. To use the cmdlets for these DLP reports, do these steps:
 
-1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connect to Exchange Online PowerShell](exchange/docs-conceptual/connect-to-exchange-online-powershell.md)
 
 2. Use these cmdlets:
 
-   - [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
-   - [Get-MailDetailDlpPolicyReport](/powershell/module/exchange/get-maildetaildlppolicyreport)
+   - [Get-DlpDetailReport](exchange/exchange-ps/exchange/Get-DlpDetailReport.md)
+   - [Get-MailDetailDlpPolicyReport](exchange/exchange-ps/exchange/Get-MailDetailDlpPolicyReport.md)
