@@ -98,9 +98,10 @@ Throughout an alert page, you can select the ellipses (**...**) beside any entit
 
 ### Alert sources
 
-Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, the app governance add-on for Microsoft Defender for Cloud Apps, Azure Active Directory Identity Protection, and Microsoft Data Loss Prevention. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+Microsoft 365 Defender alerts may come from solutions like [Microsoft Defender for Endpoint](../defender-endpoint/alerts-queue-endpoint-detection-response.md), [Microsoft Defender for Office 365](../office-365-security/mdo-sec-ops-manage-incidents-and-alerts.md), [Microsoft Defender for Identity](../defender-for-identity/what-is.md), [Microsoft Defender for Cloud Apps](../defender-cloud-apps/what-is-defender-for-cloud-apps.md), [the app governance add-on for Microsoft Defender for Cloud Apps](../defender-cloud-apps/app-governance-manage-app-governance.md), [Azure Active Directory Identity Protection](azure/active-directory/identity-protection/overview-identity-protection.md), and [Microsoft Data Loss Prevention](../compliance/dlp-learn-about-dlp.md). You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
 
 > [!NOTE]
+>
 > - The prepended GUIDs are specific only to unified experiences such as unified alerts queue, unified alerts page, unified investigation, and unified incident.
 > - The prepended character does not change the GUID of the alert. The only change to the GUID is the prepended component.
 
@@ -176,7 +177,6 @@ The **Recommendations** tab provides next-step actions and advice for investigat
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Example of alert recommendations":::
 
- 
 ## Suppress an alert
 
 As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. For lower priority alerts, an analyst is still required to triage and resolve the alert which tends to be a manual process. A SOC analyst’s time is valuable, wanting to focus only on high severity and high priority alerts.
