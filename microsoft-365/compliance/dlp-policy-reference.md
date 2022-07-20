@@ -214,7 +214,7 @@ Conditions are inclusive and are where you define what you want the rule to look
 - [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [sensitivity labels](sensitivity-labels.md)
 - [retention labels](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-- (In Preview)[Trainable Classifiers](classifier-learn-about.md)
+- [Trainable Classifiers](classifier-learn-about.md) (in preview) 
 
 depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to. 
 
