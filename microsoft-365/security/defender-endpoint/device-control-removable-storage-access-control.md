@@ -310,6 +310,9 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Screenshot of Enabling RSAC using Group Policy " lightbox="images/enable-rsac-gp.png":::
 
+> [!NOTE]
+> If you don't see this group policy objects, you need to add group policy administrative template. you can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples.
+
 2. Set Default Enforcement:
 
    You can set default access (Deny or Allow) for all Device Control features (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices).
