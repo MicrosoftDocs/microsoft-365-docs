@@ -23,6 +23,15 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
+## July 2022
+
+Compliance Manager has published the following new assessment template:
+
+- Hong Kong - Code of Banking Practice and Payment Card
+
+View our [full list of assessment templates](compliance-manager-templates-list.md).
+
+
 ## May 2022
 
 Compliance Manager has published the following new assessment templates:
