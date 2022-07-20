@@ -65,11 +65,12 @@ You can set the policy for all of your groups, only selected groups (up to 500),
 
 ## How expiry works with the retention policy
 
-If you have set up a retention policy for groups in the Security and Compliance center, the expiration policy works seamlessly with retention policy. When a group expires, the group's mailbox conversations and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users will not see the group, or its content, after expiration however.
+If you have set up a retention policy for groups in the Microsoft Purview compliance portal, the expiration policy works seamlessly with retention policy. When a group expires, the group's mailbox conversations and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users will not see the group, or its content, after expiration however.
 
 ## How and when a group owner learns if their groups are going to expire
 
-Group owners will only be notified via email. If the group was created via Planner, SharePoint, or any other app, the expiration notifications will always come via email. If the group was created via Teams, the group owner will receive a notification to renew through the activity section. It's not recommended that you enable expiration on a group if your group owner doesn't have a valid email address.
+If the group was created via Planner, SharePoint, or any other app, the expiration notifications will always come via email.
+If the group was created via Teams, the group owner will receive an email and a notification to renew through the activity section. It's not recommended that you enable expiration on a group if your group owner doesn't have a valid email address.
 
 30 days before the group expires, the group owners (or the email addresses that you specified for groups that don't have an owner) will receive an email allowing them to easily renew the group. If they don't renew it, they'll receive another renewal email 15 days before expiration. If they still haven't renewed it, they will receive one more email notification the day before expiration.
 

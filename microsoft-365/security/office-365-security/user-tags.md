@@ -76,7 +76,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
-- For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
+- For information about securing _privileged accounts_ (admin accounts), see [this topic](/security/compass/critical-impact-accounts).
 
 ## Use the Microsoft 365 Defender portal to create user tags
 

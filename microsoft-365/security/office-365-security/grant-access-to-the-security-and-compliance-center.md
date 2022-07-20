@@ -57,9 +57,9 @@ For more information about the different permissions you can give to users in th
 
 5. When you're finished, click **Save**.
 
-## Use Security & Compliance Center PowerShell to give another user access to the Security & Compliance Center
+## Use Security & Compliance PowerShell to give another user access to the Security & Compliance Center
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Use the following syntax:
 
@@ -83,7 +83,7 @@ To verify that you've successfully granted access to the Security & Compliance C
 
 - In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group.
 
-- In Security & Compliance Center PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
+- In Security & Compliance PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"

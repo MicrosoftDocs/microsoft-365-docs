@@ -42,6 +42,9 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
+> [!NOTE]
+> The ["Block the following URLs" list in Safe Links policies](safe-links.md#block-the-following-urls-list-for-safe-links) is in the process of being deprecated. You can now manage block URL entries in the Tenant Allow/Block List. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
+
 ## What do you need to know before you begin?
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
@@ -64,21 +67,20 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - An entry should be active within 30 minutes.
 
-- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
+- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for blocks only).
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - **Senders, URLs and files**:
-    - To add and remove values from the Tenant Allow/Block List, you need to be a member of
-      - **Organization Management** or **Security Administrator** role group (**Security admin role**)
-      - **Security Operator** role group (**Tenant AllowBlockList Manager**).
-    - For read-only access to the Tenant Allow/Block List, you need to be a member of
-      - **Global Reader**  role group
-      - **Security Reader** role group
-  - **Spoofing**: One of the following combinations:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
+  - To add and remove entries from the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Organization Management** (the **Security admin** role).
+    - **Security Administrator** (the **Security admin** role).
+    - **Security Operator** (the **Tenant AllowBlockList Manager** role).
+
+  - For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Global Reader** role group.
+    - **Security Reader** role group.
+    - **View-Only Configuration** role group.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -481,9 +483,8 @@ For example, you add an allow entry for the following domain pair:
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
 
-
 ## What to expect after you add an allow or block entry
 
-After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately once the entry in active. The entry will mostly be active within 30 minutes, but sometimes it can take upto 24 hours.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.

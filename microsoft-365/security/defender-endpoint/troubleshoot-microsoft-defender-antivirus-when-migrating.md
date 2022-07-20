@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.topic: article
 author: martyav
-ms.author: v-maave
+ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp

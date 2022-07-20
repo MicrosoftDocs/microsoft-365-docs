@@ -67,6 +67,6 @@ Once you've added a Content Search Web Part, you can refine the search and retur
   
 ## Query building and testing tool
 
-For a tool to build and test complex queries, see the [Search Query Tool](https://sp2013searchtool.codeplex.com/) on Codeplex. 
+For a tool to build and test complex queries, see the [Search Query Tool](https://github.com/pnp/PnP-Tools/tree/master/Solutions/SharePoint.Search.QueryTool#download-the-tool).
   
 

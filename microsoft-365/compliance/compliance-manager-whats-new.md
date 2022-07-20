@@ -21,9 +21,28 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 # What's new in Microsoft Purview Compliance Manager
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **In this article:** Learn about recent updates in Compliance Manager.
+
+## July 2022
+
+Compliance Manager has published the following new assessment template:
+
+- Hong Kong - Code of Banking Practice and Payment Card
+
+View our [full list of assessment templates](compliance-manager-templates-list.md).
+
+
+## May 2022
+
+Compliance Manager has published the following new assessment templates:
+
+Europe, Middle East, and Africa (EMEA)
+- Qatar National Information Assurance (NIA)
+- UAE Data Privacy Law
+
+US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers should see these templates available in the next few weeks.
+
+View our [full list of assessment templates](compliance-manager-templates-list.md).
 
 ## March 2022
 

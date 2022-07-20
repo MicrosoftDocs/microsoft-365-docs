@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,7 +21,7 @@ description: "Change subscriptions manually by buying a new subscription and ens
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
-# Change plans manually
+# Manually change Microsoft plans
 
 ## Step 1: Decide how to change plans
 

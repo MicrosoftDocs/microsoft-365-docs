@@ -9,16 +9,12 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -40,4 +36,4 @@ After an admin has required the front-line users to use MFA then the authenticat
 
 ## Next objective
 
-Follow the guidance to [Install Office applications](m365bp-install-office-apps.md).
+For your next objective, follow the guidance to [install Office applications](m365bp-install-office-apps.md).

@@ -2,26 +2,17 @@
 title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
-- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -51,7 +42,7 @@ This video describes the steps for how to set this up for the most common scenar
 
 See [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md) for the steps.
 
-## Device actions
+## Possible device actions and statuses
   
 ![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
 
@@ -85,7 +76,7 @@ Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.c
 
 2. In the **Azure Active Directory admin center**, go to **Azure Active Directory** , choose **Devices** and then **Device settings**.
 
-3. Verify**Users may join devices to Azure AD** is enabled 
+3. Verify **Users may join devices to Azure AD** is enabled 
 
     1. To enable all users, set to **All**.
 
@@ -133,13 +124,13 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 The first command will establish a connection with the Microsoft cloud, and when you are prompted, specify your Microsoft 365 Business Premium global admin credentials.
 
-## 5. Link the Group Policy
+## 5. Link the group policy
 
 1. In the Group Policy Management Console (GPMC), right-click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu.
 
 2. Select the policy created in the above step, then click **OK**.
 
-## Get the latest Administrative Templates
+## Get the latest administrative templates
 
 If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, or later. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
 
@@ -173,6 +164,6 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 
 - [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 
-## Next objective:
+## Next objective
 
 [Prepare for Office client deployment](m365bp-prepare-for-office-client-deployment.md)

@@ -14,6 +14,7 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
+- zerotrust-solution
 ms.prod: m365-security
 ---
 
@@ -102,4 +103,4 @@ The following illustration and table provide several examples of policies that c
 
 ## Next steps
 
-For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](//cloud-app-security/).
+For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](/defender-cloud-apps/).
