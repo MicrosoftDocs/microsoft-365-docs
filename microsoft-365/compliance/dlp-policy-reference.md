@@ -41,7 +41,8 @@ updated: 06/23/2021
 |---------|---------|---------|
 |Financial| Australia Financial Data| - [SWIFT code](sit-defn-swift-code.md) </br> -  [Australia tax file number](sit-defn-australia-tax-file-number.md) </br> - [Australia bank account number](sit-defn-australia-bank-account-number.md) </br> - [Credit card number](sit-defn-credit-card-number.md)|
 |Financial| Canada Financial data |- [Credit card number](sit-defn-credit-card-number.md) </br> - [Canada bank account number](sit-defn-canada-bank-account-number.md)|
-|Financial| France Financial data |- [Credit card number](sit-defn-credit-card-number.md) </br> - [EU debit card number](sit-defn-eu-debit-card-number.md) |Financial| Germany Financial Data |- [Credit card number](sit-defn-credit-card-number.md) </br> - [EU debit card number](sit-defn-eu-debit-card-number.md)|
+|Financial| France Financial data |- [Credit card number](sit-defn-credit-card-number.md) </br> - [EU debit card number](sit-defn-eu-debit-card-number.md)|
+|Financial| Germany Financial Data |- [Credit card number](sit-defn-credit-card-number.md) </br> - [EU debit card number](sit-defn-eu-debit-card-number.md)|
 |Financial| Israel Financial Data |- [Israel bank account number](sit-defn-israel-bank-account-number.md) </br> - [SWIFT code](sit-defn-swift-code.md) </br> - [Credit card number](sit-defn-credit-card-number.md)|
 |Financial| Japan Financial Data |- [Japan bank account number](sit-defn-japan-bank-account-number.md)</br> - [Credit card number](sit-defn-credit-card-number.md)|
 |Financial| PCI Data Security Standard (PCI DSS)|- [Credit card number](sit-defn-credit-card-number.md)|
