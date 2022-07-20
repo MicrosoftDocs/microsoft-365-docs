@@ -136,8 +136,8 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
        - **Do not rewrite the following URLs in email** section: Click **Manage (nn) URLs** to allow access to specific URLs that would otherwise be blocked by Safe Links.
 
-     > [!NOTE]
-     > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#create-allow-url-entries) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
+         > [!NOTE]
+         > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#create-allow-url-entries) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
 
      1. In the **Manage URLs to not rewrite** flyout that appears, click ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) **Add URLs**.
      2. In the **Add URLs** flyout that appears, type the URL or value that you want, select the entry that appears below the box, and then click **Save**. Repeat this step as many times as necessary.
