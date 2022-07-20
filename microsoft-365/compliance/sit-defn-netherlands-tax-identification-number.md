@@ -18,7 +18,7 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Netherlands physical addresses sensitive information type entity definition."
+description: "Netherlands tax identification number sensitive information type entity definition."
 ---
 
 # Netherlands tax identification number
