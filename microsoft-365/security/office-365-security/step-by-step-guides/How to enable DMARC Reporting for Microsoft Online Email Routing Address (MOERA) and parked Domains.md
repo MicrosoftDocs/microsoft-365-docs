@@ -52,9 +52,9 @@ This guide is designed to help you configure DMARC for the domains not covered i
 1.  Contact your DNS Domain provider.
 1.  Ask to add this DMARC txt record with your appropriate email reporting addresses "v=DMARC1; p=reject; rua=mailto:d@rua.contoso.com;ruf=mailto:d@ruf.contoso.com"
 
-## Next Steps
+## Next steps
 Wait until the DNS changes are propagated and try to spoof the configured domains. Check if the attempt is blocked based in the DMARC record, and you receive a DMARC report.
 
-## More Information
+## More information
 [Set up SPF to help prevent spoofing - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)
 [Use DMARC to validate email, setup steps - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
