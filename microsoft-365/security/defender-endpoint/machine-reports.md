@@ -137,10 +137,13 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 - Computer is disconnected from the network
 - Computer is powered down or in a hibernation state
 - Microsoft Defender Antivirus is disabled
+- Device is a non-Windows (Mac or Linux) device
+- Cloud protection is not enabled
+
 
 > [!NOTE]
 >
-> Up-to-date" reporting is currently available for Windows devices only. Up-to-date reporting generates information about Windows devices with engine version: 19000.1 and newer.
+> Up-to-date" reporting is currently available for Windows devices only. Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 19000.1 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
 
 > [!div class="mx-imgBorder"]
 > ![Shows the Microsoft Defender Antivirus health tab](images/device-health-defender-antivirus-health-tab.png)
