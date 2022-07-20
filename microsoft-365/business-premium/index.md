@@ -9,6 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-overview
@@ -24,7 +25,7 @@ description: "Learn how to implement cybersecurity for small or medium sized bus
 
 # Microsoft 365 Business Premium &mdash; cybersecurity for small business
 
-Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguard's your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states.
+Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguards your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states.
 
 The task before you is this—let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
 
@@ -46,7 +47,7 @@ In these first missions, you sign in and set up your initial walls of defense, s
 
 ## Train your team
 
-We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats.
+We've included a set of missions here with some objectives that need to be completed by your team (all employees). You have to make sure the team's devices are protected, and that your team is trained to use email and file sharing safely, and able to recognize and report threats.
 
 1. [**Set up BYOD devices**](m365bp-protect-pcs-macs.md). In this mission, you set up all the unmanaged (BYOD) devices so they are safely part of the ecosystem.
 
@@ -60,7 +61,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 Managed devices are safer because they are monitored for threat detections. In this last critical mission, you onboard and enroll devices in Defender for Business, so they are secured and protected with the best tools available.
 
-- [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization!
+- [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization.
 
 [:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Diagram outlining your missions with Safeguard Managed Devices selected.":::](m365bp-protect-devices.md)
 
