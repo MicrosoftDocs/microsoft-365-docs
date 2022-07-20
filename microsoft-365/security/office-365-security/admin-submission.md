@@ -86,7 +86,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="The New URL submission process" lightbox="../../media/submission-flyout-email.png":::
 
-## Report questionable URL to Microsoft
+## Report questionable URLs to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -106,7 +106,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
     > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="The New Email submission process" lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
- >  URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select URL will be greyed out.
+ > URL submissions are not available in clouds that do not allow for data to leave the environment. The ability to select URL will be greyed out.
 
 ## Report questionable email attachment to Microsoft
 
