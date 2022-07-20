@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Find resources about how to set up and manage Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
