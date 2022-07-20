@@ -143,7 +143,7 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 
 > [!NOTE]
 >
-> Up-to-date" reporting is currently available for Windows devices only. Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 19000.1 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
+> Currently, "Up-to-date" reporting is only available for Windows devices.  Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 19000.1 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
 
 > [!div class="mx-imgBorder"]
 > ![Shows the Microsoft Defender Antivirus health tab](images/device-health-defender-antivirus-health-tab.png)
@@ -216,7 +216,7 @@ Following are descriptions for each mode:
 - **Passive** mode - In passive mode, Microsoft Defender Antivirus isn't used as the primary antivirus app on the device. Files are scanned, and detected threats are reported, but threats aren't remediated by Microsoft Defender Antivirus. IMPORTANT: Microsoft Defender Antivirus can run in passive mode only on endpoints that are onboarded to Microsoft Defender for Endpoint. See [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
 - **Disabled** mode  - synonymous with: uninstalled, disabled, sideBySidePassive, and Low Periodic Scan. When disabled, Microsoft Defender Antivirus isn't used. Files aren't scanned, and threats aren't remediated. In general, Microsoft doesn't recommend disabling or uninstalling Microsoft Defender Antivirus.
 - **Others** mode - Not running, Unknown
-- **EDRBlocked** mode - In endpoint detection and response (EDR) blocked mode,
+- **EDR in Block** mode - In endpoint detection and response (EDR) blocked mode. See [Endpoint detection and response in block mode](edr-in-block-mode.md)
 
 Devices that are in either passive, LPS, or Off present a potential security risk and should be investigated.
 
@@ -232,7 +232,7 @@ For more details on the current Microsoft Defender Antivirus versions and how to
 ##### Antivirus engine version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization. Microsoft Defender Antivirus engine is updated monthly.
-For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
+For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ##### Antivirus security intelligence version card
 
