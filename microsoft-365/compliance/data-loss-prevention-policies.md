@@ -30,8 +30,6 @@ description: data loss prevention reference material
 
 # Data loss prevention reference
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
 > This is reference topic is no longer the main resource for Microsoft Purview Data Loss Prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
@@ -565,13 +563,13 @@ These permissions are required only to create and apply a DLP policy. Policy enf
 
 To use most of the cmdlets for the Microsoft Purview compliance portal, you need to:
 
-1. [Connect to the Office 365 Microsoft Purview compliance portal using remote PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Use any of these [policy-and-compliance-dlp cmdlets](/powershell/module/exchange/export-dlppolicycollection).
 
 However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, ***the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Microsoft Purview compliance portal Powershell***. Therefore, to use the cmdlets for the DLP reports, you need to:
 
-1. [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Use any of these cmdlets for the DLP reports:
 

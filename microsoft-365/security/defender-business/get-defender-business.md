@@ -19,18 +19,16 @@ ms.collection:
 
 # Get Microsoft Defender for Business
 
+Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get Defender for Business.
+
 If you don't already have Microsoft Defender for Business, you can choose from several options:
 
-- [Try or buy the standalone version of Defender for Business](#try-or-buy-microsoft-defender-for-business)
-- [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business
-- [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider) who can help you get everything set up and configured
+- [Try or buy the standalone version of Defender for Business](#try-or-buy-microsoft-defender-for-business).
+- [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business.
+- [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider) who can help you get everything set up and configured.
 
 If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial and assign user licenses](#how-to-activate-your-trial), and then proceed to your [next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Try or buy Microsoft Defender for Business
 
@@ -75,7 +73,7 @@ When you receive your acceptance email, here's how to activate your trial subscr
 
 3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
-4. Use one of the following procedures:<br/>
+4. Use one of the following procedures, depending on your scenario:<br/>
 
    | Scenario | Procedure |
    |:---|:---|

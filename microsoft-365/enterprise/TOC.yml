@@ -646,7 +646,6 @@
   href: ../solutions/index.yml
 
 - name: Enterprise Business Continuity Management (EBCM) with cloud services
-  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items: 
     - name: Customer and cloud partner EBCM responsibilities
       href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
