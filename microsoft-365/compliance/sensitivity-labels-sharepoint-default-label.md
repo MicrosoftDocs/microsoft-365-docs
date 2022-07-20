@@ -60,7 +60,7 @@ Summary of outcomes:
 
 - Doesn't apply to existing files at rest in SharePoint.
 
-- Unless you've [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md), you'll see a delay in applying the default sensitivity label for a document library with the **File** > **Save as** action.
+- Unless you've [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md), you'll see a delay in applying the default sensitivity label for a document library when users select the **File** \> **Save as** option.
 
 - As with sensitivity labels for Office for the web, some [label configurations that apply encryption](encryption-sensitivity-labels.md#configure-encryption-settings) aren't suitable for SharePoint, and so don't support a default sensitivity label for a SharePoint document library:
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
