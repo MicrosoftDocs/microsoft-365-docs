@@ -16,8 +16,6 @@ description: "Learn how to set up and use a 17a-4 Quip DataParser connector to i
 
 # Set up a connector to archive Quip data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use the [Quip DataParser](https://www.17a-4.com/quip-dataparser/) from 17a-4 LLC to import and archive data from Quip to user mailboxes in your Microsoft 365 organization. The DataParser includes a Quip connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Quip DataParser connector converts Quip data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After Quip data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Quip connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
@@ -74,7 +72,7 @@ After you create a Quip DataParser connector, you can view the connector status 
 
 2. Click the **Connectors** tab and then select the Quip DataParser connector that you created to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 

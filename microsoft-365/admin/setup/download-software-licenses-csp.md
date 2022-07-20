@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,7 +23,7 @@ description: Learn how to download the software and product license keys for per
 ms.date: 01/27/2021
 ---
 
-# Download perpetual software and product license keys
+# Download perpetual software and product license keys in Microsoft 365
 
 This article explains how to download software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
 

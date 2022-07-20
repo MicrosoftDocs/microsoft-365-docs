@@ -16,8 +16,6 @@ description: "Learn how to set up and use a 17a-4 ICE Connect Chat DataParser co
 
 # Set up a connector to archive ICE Connect Chat data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use the [ICE DataParser](https://www.17a-4.com/ice-dataparser/) from 17a-4 LLC to import and archive data from ICE Connect Chat to user mailboxes in your Microsoft 365 organization. The DataParser includes an ICE Chat connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The ICE DataParser connector converts ICE Connect Chat data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After ICE Connect Chat data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an ICE DataParser connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
@@ -74,7 +72,7 @@ After you create an ICE DataParser connector, you can view the connector status 
 
 2. Click the **Connectors** tab and then select the ICE DataParser connector that you created to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 

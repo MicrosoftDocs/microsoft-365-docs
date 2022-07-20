@@ -16,8 +16,6 @@ description: "Admins can set up a connector to import and archive CellTrust data
 
 # Set up a connector to archive CellTrust data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the CellTrust platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [CellTrust](https://globanet.com/celltrust/) connector that captures items from the third-party data source and imports those items to Microsoft 365. The connector converts the content of SMS messages from CellTrust accounts to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 
 After CellTrust data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a CellTrust connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
@@ -80,7 +78,7 @@ After you create the CellTrust connector, you can view the connector status in t
 
 2. Click the **Connectors** tab and then select the **CellTrust** connector to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 

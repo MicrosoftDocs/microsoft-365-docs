@@ -1,5 +1,5 @@
 ---
-title: "Sign up for Microsoft Teams as part of a business subscription"
+title: "Sign up for a Microsoft Teams business subscription"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

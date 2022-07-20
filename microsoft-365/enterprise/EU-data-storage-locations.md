@@ -2,7 +2,7 @@
 title: "Data locations for the European Union"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -89,7 +89,7 @@ Only in rare cases does a Microsoft engineer need access to customer data. Typic
 
 Customers can use customer-managed keys to further prevent their data from being readable in case of unauthorized access. Both server-side and client-side encryption can rely on customer-managed keys or customer-provided keys. In either case, Microsoft would not have access to encryption keys and cannot decrypt the data. A SOC audit by an AICPA-accredited auditor twice a year to verifies the effectiveness of our security controls in audit scope. The SOC 2 Type 2 attestation report published by the auditor explains under what circumstances access to customer data can occur and how.
 
-In addition to storing and processing your data when you use the online services, Microsoft generates service data to monitor system health and to perform service operations such as troubleshooting. As a privacy protective measure, Microsoft generates and relies upon pseudonymous identifiers in this service generated data to be able to distinguish one user from another without identifying the actual users. Pseudonymous identifiers do not directly identify a person, and the information that enables mapping pseudonymous identifiers to actual users is protected as part of your data.
+In addition to storing and processing your data when you use the online services, Microsoft generates service data to monitor system health and to perform service operations such as troubleshooting. As a privacy protective measure, Microsoft generates and relies upon pseudonymous identifiers in this service generated data to be able to distinguish one user from another without identifying the actual users. Pseudonymous identifiers don't directly identify a person, and the information that enables mapping pseudonymous identifiers to actual users is protected as part of your data.
 
 To learn more, see [Who can access your data](https://www.microsoft.com/trust-center/privacy/data-access) and on what terms and [Subprocessors and Data Privacy](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2).
 

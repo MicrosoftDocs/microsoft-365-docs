@@ -16,9 +16,12 @@ ms.collection:
 description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties.
 ms.technology: mdo
 ms.prod: m365-security
+adobe-target: true
 ---
 
 # Microsoft Defender for Office 365 security overview
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

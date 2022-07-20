@@ -50,11 +50,11 @@ productDirectory:
       summary: Check out the help articles that are most popular with other admins.
       url: top-m365-admin-articles.yml
     # Card
-    - title: Admin training video library
+    - title: YouTube - Microsoft 365 help for small businesses
       # need to pick new image for this
       imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
       summary: Learn how to set up and manage Microsoft 365 for your business with short videos.
-      url: admin-video-library.yml
+      url: https://go.microsoft.com/fwlink/?linkid=2197659
     # Card
     - title: Get started
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
@@ -88,7 +88,7 @@ additionalContent:
         # Card
         - title: Overview of the Microsoft 365 admin center
           summary: Learn about admin roles, how to stay on top of changes, and how to customize your subscription. 
-          url: admin-overview/about-the-admin-center.md
+          url: admin-overview/admin-center-overview.md
         # Card
         - title: Users and groups
           summary: Manage passwords, add and remove users, set up and manage groups, manage guest access, and assign user licenses. 

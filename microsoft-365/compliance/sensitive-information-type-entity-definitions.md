@@ -23,8 +23,6 @@ description: "There are many sensitive information types that are ready for you 
 
 # Sensitive information type entity definitions
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
@@ -129,7 +127,6 @@ In addition, patterns that a human would see as indicative of names are also mat
 
 - English
 - Bulgarian
-- Chinese
 - Croatian
 - Czech
 - Danish
@@ -9590,9 +9587,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Keywords
 
-Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for the term, not the insurance codes.
+Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for the term, not the insurance codes.
 
-Any term from the Dictionary_icd_10_codes keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for insurance codes, not the description.
+Any term from the Dictionary_icd_10_codes keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for insurance codes, not the description.
 
 ## International classification of diseases (ICD-9-CM)
 

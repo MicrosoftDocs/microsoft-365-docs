@@ -4,8 +4,10 @@
   items: 
     - name: Overview
       items:
-      - name: Microsoft 365 Defender
+      - name: What is Microsoft 365 Defender
         href: microsoft-365-defender.md
+      - name: Microsoft 365 Defender portal
+        href: microsoft-365-defender-portal.md
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
       - name: Microsoft 365 Defender services
@@ -14,8 +16,14 @@
           href: microsoft-365-security-center-mde.md
         - name: Defender for Office 365 in Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
+        - name: Defender for Identity in Microsoft 365 Defender
+          href: microsoft-365-security-center-mdi.md
+        - name: Defender for Cloud Apps in Microsoft 365 Defender
+          href: microsoft-365-security-center-defender-cloud-apps.md
         - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
+        - name: Redirecting Defender for Identity to Microsoft 365 Defender
+          href: microsoft-365-security-mdi-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md
       - name: Microsoft 365 Defender for US Government customers
@@ -34,7 +42,7 @@
       items: 
         - name: Overview
           href: eval-overview.md 
-        - name: Step 1. Create the eval environment
+        - name: Step 1. Create the evaluation environment
           href: eval-create-eval-environment.md  
         - name: Step 2. Defender for Identity
           items:
@@ -142,6 +150,8 @@
                 href: incident-queue.md
               - name: Manage incidents
                 href: manage-incidents.md
+              - name: Export incidents queue to CSV file
+                href: export-incidents-queue.md
               - name: Respond to your first incident
                 items: 
                  - name: Overview
@@ -164,6 +174,8 @@
                 items: 
                  - name: Incidents
                    href: investigate-incidents.md
+                 - name: Data loss incidents
+                   href: investigate-dlp.md
                  - name: Alerts
                    href: investigate-alerts.md    
                  - name: Alert grading playbooks
@@ -270,6 +282,10 @@
                   href: advanced-hunting-deviceprocessevents-table.md
                 - name: DeviceRegistryEvents
                   href: advanced-hunting-deviceregistryevents-table.md
+                - name: DeviceTvmInfoGathering
+                  href: advanced-hunting-devicetvminfogathering-table.md
+                - name: DeviceTvmInfoGatheringKB
+                  href: advanced-hunting-devicetvminfogatheringkb-table.md                  
                 - name: DeviceTvmSecureConfigurationAssessment
                   href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                 - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -298,6 +314,8 @@
                   href: advanced-hunting-identitylogonevents-table.md
                 - name: IdentityQueryEvents
                   href: advanced-hunting-identityqueryevents-table.md
+                - name: UrlClickEvents
+                  href: advanced-hunting-urlclickevents-table.md
              - name: Functions
                items: 
                 - name: AssignedIPAddresses()
@@ -306,6 +324,8 @@
                   href: advanced-hunting-devicefromip-function.md
                 - name: FileProfile()
                   href: advanced-hunting-fileprofile-function.md
+                - name: SeenBy()
+                  href: advanced-hunting-seenby-function.md
              - name: Custom detections
                items: 
                 - name: Custom detections overview
@@ -324,6 +344,18 @@
                 href: microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: configure-microsoft-threat-experts.md
+       - name: Collaborate with Microsoft Defender Experts for Hunting
+         items:
+              - name: Overview
+                href: defenderexpertsforhuntingprev.md
+              - name: Understand Defender Experts for Hunting reports
+                href: defender-experts-report.md
+       - name: Ransomware playbooks
+         items: 
+              - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
+                href: playbook-detecting-ransomware-m365-defender.md
+              - name: Responding to ransomware attacks
+                href: playbook-responding-ransomware-m365-defender.md
     - name: Security operations guide
       items: 
        - name: Overview
@@ -487,3 +519,5 @@
          href: /cloud-app-security
        - name: Defender for Business
          href: ../defender-business/index.yml
+       - name: Defender Vulnerability Management
+         href: ../defender-vulnerability-management/index.yml
