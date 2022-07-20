@@ -12,6 +12,26 @@
             - name: Create a content center 
               href: create-a-content-center.md
 
+    - name: Content understanding models
+      items:
+            - name: Model types
+              href: custom-models-overview.md 
+            - name: Compare models 
+              href: difference-between-document-understanding-and-form-processing-model.md 
+            - name: Local models 
+              href: create-local-model.md 
+            - name: Create a model
+              href: create-syntex-model.md             
+            - name: Classify and extract by text pattern
+              items:
+                - name: Overview
+                  href: document-understanding-overview.md
+                - name: Import a sample model 
+                  href: learn-about-document-understanding-models-through-the-sample-model.md
+
+
+
+
     - name: Create a custom model
       items:
             - name: Overview 
