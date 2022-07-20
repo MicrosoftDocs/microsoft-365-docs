@@ -122,6 +122,10 @@ Settings=@(
 Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress),(ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
 ```
 
+> [!NOTE]
+> Locale settings is not yet supported in Microsoft Teams workload.
+
+
 #### PowerShell tips for specifying the advanced settings
 
 Although you can specify a sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. The label name is unique in your tenant, so you can be sure you're configuring the correct label. The display name isn't unique and could result in configuring the wrong label. To find the GUID and confirm the label's scope:
