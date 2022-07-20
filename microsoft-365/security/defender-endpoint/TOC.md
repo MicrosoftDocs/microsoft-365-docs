@@ -3,7 +3,7 @@
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Trial playbook: Get the most out of your trial](defender-endpoint-trial-playbook.md)
-### [Compare Defender for Endpoint plans](defender-endpoint-plan-1-2.md)
+### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Preview features](preview.md)
@@ -138,6 +138,7 @@
 ###### [Troubleshoot RHEL 6 installation issues](linux-support-rhel.md)
 ###### [Troubleshoot performance issues](linux-support-perf.md)
 ###### [Troubleshoot missing events issues](linux-support-events.md)
+###### [Troubleshoot AuditD performance issues](troubleshoot-auditd-performance-issues.md)
 
 ##### [Privacy](linux-privacy.md)
 ##### [Resources](linux-resources.md)

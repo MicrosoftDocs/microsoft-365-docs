@@ -32,7 +32,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
 
 <details>
-  <summary>Jun-2022 (Build: 101.71.18  | Release version: 20.122052.17118.0)</summary>
+  <summary>Jul-2022 (Build: 101.71.18  | Release version: 20.122052.17118.0)</summary>
 
 &ensp;Released: **Jul 7, 2022**<br/>
 &ensp;Published: **Jul 7, 2022**<br/>

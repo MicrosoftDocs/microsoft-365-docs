@@ -12,14 +12,13 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about compliance and how to configure privacy settings in Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
 # Configure privacy settings in Microsoft Whiteboard
 
 >[!NOTE]
-> If your users want to learn more about default privacy settings and how diagnostic data is collected, direct them to [Microsoft Whiteboard privacy and compliance](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
+> If you or your users want to learn more about default privacy settings, optional connected experiences, and how diagnostic data is collected, direct them to [Microsoft Whiteboard privacy and compliance](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
 
 If you are the Microsoft Whiteboard administrator for your organization, you can control the following:
 
@@ -27,13 +26,13 @@ If you are the Microsoft Whiteboard administrator for your organization, you can
 
 - Whether optional connected experiences in Whiteboard are available to your users.
 
-To configure the level of diagnostic data, sign in to the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) with your administrator account. From the admin center home page, go to **Show all > Settings > Org settings > Whiteboard**.
+To configure the level of diagnostic data, sign in to the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) with your administrator account. From the admin center home page, go to **Show all > Settings > Org settings > Whiteboard**.
 
-To configure the availability of optional connected experiences, use the [Office cloud policy service](https://docs.microsoft.com/deployoffice/admincenter/overview-office-cloud-policy-service) in the [Microsoft 365 Apps admin center](https://config.office.com). Sign in with your administrator account and go to **Customization > Policy Management**. The policy you want to configure is named: **Allow the use of additional optional connected experiences in Office**.
+To configure the availability of optional connected experiences, use the [Office cloud policy service](/deployoffice/admincenter/overview-office-cloud-policy-service) in the [Microsoft 365 Apps admin center](https://config.office.com). Sign in with your administrator account and go to **Customization > Policy Management**. The policy you want to configure is named: **Allow the use of additional optional connected experiences in Office**.
 
 ## Diagnostic data setting for your organization
 
-You can choose the level of [diagnostic data](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1#diagnostic_data)that is collected and sent to Microsoft about the Whiteboard client software running on devices in your organization. Optional diagnostic data will be sent to Microsoft, unless you change the setting in the Microsoft 365 admin center. If you choose to send optional diagnostic data, required diagnostic data is also included.
+You can choose the level of diagnostic data that is collected and sent to Microsoft about the Whiteboard client software running on devices in your organization. Optional diagnostic data will be sent to Microsoft, unless you change the setting in the Microsoft 365 admin center. If you choose to send optional diagnostic data, required diagnostic data is also included.
 
 In addition to **Required** or **Optional**, there is also a choice of **Neither**. If you choose that option, no diagnostic data about Whiteboard client software running on the user’s device is sent to Microsoft. This option, however, significantly limits Microsoft’s ability to detect, diagnose, and remediate problems that your users may encounter while using Whiteboard.
 
@@ -41,7 +40,7 @@ Your users won’t be able to change the diagnostic data level for their devices
 
 ## Optional connected experiences setting for your organization
 
-You can choose whether to make [optional connected experiences](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1?storagetype=live#optional) in Whiteboard available to your users. These connected experiences will be available to your users unless you change the setting in the Microsoft 365 admin center.
+You can choose whether to make optional connected experiences in Whiteboard available to your users. These connected experiences will be available to your users unless you change the setting in the Microsoft 365 admin center. 
 
 These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
