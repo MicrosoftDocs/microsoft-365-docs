@@ -39,12 +39,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/defender-threat-intelligence/breadcrumb/toc.json",
+      "breadcrumb_path": "/defender/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "Defender-Threat-Intelligence"
+    "dest": "Defender"
   }
 }
