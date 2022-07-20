@@ -30,11 +30,11 @@ This article guides you in migrating servers from Microsoft Defender for Endpoin
 
 [Microsoft Defender for Cloud](https://azure.microsoft.com/services/defender-for-cloud/) is a solution for cloud security posture management (CSPM) and cloud workload protection (CWP) that finds weak spots across your cloud configuration. It also helps strengthen the overall security posture of your environment, and can protect workloads across multi-cloud and hybrid environments from evolving threats.
 
-While both products offer server protection capabilities, Microsoft Defender for Cloud is our primary solution to protect infrastructure resources, including servers. For a detailed comparison of these products and sales guidance, click [here](https://gearup.microsoft.com/download/6c78e8b7-1355-4dd1-ebb5-08da0b7da490).
+While both products offer server protection capabilities, Microsoft Defender for Cloud is our primary solution to protect infrastructure resources, including servers. 
 
 ## How do I migrate my servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud?
 
-If your customer has servers onboarded to Defender for Endpoint, the migration process varies depending on machine type, but there's a set of shared prerequisites.
+If you have servers onboarded to Defender for Endpoint, the migration process varies depending on machine type, but there's a set of shared prerequisites.
 
 Microsoft Defender for Cloud is a subscription-based service in the Microsoft Azure portal. Therefore, Defender for Cloud and the underlying plans like Microsoft Defender for Servers Plan 1 or Plan 2 need to be enabled on Azure subscriptions.
 
