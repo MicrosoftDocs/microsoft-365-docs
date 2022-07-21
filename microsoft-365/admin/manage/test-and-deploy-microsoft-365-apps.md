@@ -292,7 +292,7 @@ There are two cases in which an Exchange Admin won't be able to deploy an add-in
 
 ### Which administrator role do I need to access Integrated apps?
 
-Only global and Exchange administrators can access Integrated Apps. Integrated apps won't show up in the left nav for other administrators.
+Only global admins and Exchange admins can access Integrated Apps. Integrated apps won't show up in the left nav for other administrators.
 
 ### Why do I see Add-in in the left nav under Setting but not Integrated apps?
 
