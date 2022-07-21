@@ -29,6 +29,15 @@ When you enable shared channels in Teams with another organization:
 - Your organization's custom (line of business) apps will be available in shared channels and external participants will be able to access them.
 - Your organization's apps list will be available in shared channels and external participants will be able to access them.
 
+## Prerequisites
+
+Collaborating with external participants in a shared channel requires that guest access be turned on in Microsoft 365. Guest access settings in Microsoft 365 are enabled by default, but if your organization has made changes to them, confirm the following settings before configuring shared channels:
+
+- [Azure Active Directory](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#azure-active-directory) must allow guest invitations by the team owners who will be sharing the channel. The domains that you plan to collaborate with must not be blocked.
+- [Microsoft 365 Groups sharing settings](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#microsoft-365-groups) must both be enabled.
+- [Teams guest access](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#teams) must be turned on.
+- SharePoint [organization level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-and-onedrive-organization-level) and [site level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-site-level) sharing settings must allow guests.
+
 ## Video demonstration
 
 This video shows the configuration steps described in this document.
