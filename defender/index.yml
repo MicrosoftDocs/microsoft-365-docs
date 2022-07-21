@@ -27,14 +27,13 @@ highlightedContent:
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
 
-
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   sections:
     - items:
-        # Card
-        - title: Microsoft 365 Defender 
-      links:
+      # Card
+      - title: Microsoft 365 Defender 
+        links:
         - url: /microsoft-365/security/defender/
           itemType: overview
           text: Microsoft 365 Defender
