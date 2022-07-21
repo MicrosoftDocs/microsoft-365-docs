@@ -115,7 +115,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     > [!TIP]
     > Optionally, you can run a validation against your csv file before uploading by running:
     >
-    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
     >
     > For more information on all the EdmUploadAgent.exe supported parameters, run
     >
