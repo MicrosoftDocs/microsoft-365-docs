@@ -36,7 +36,7 @@
                   href: rename-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
-                - name: Model usage analytics
+                - name: Analyze model usage
                   href: model-usage-analytics.md
                 - name: Manage models with PowerShell
                   items:
@@ -46,9 +46,9 @@
                       href: powershell-syntex-import-export.md
                     - name: Publish models
                       href: powershell-syntex-publishing.md
-                    - name: Request processing by a model
+                    - name: Request model processing
                       href: powershell-syntex-processing.md
-                    - name: Work with model explanations
+                    - name: Work with explanations
                       href: powershell-syntex-explanations.md
 
 
@@ -69,7 +69,7 @@
                       href: create-a-classifier.md
                     - name: Create an extractor
                       href: create-an-extractor.md
-                    - name: Leverage term store taxonomy when creating an extractor
+                    - name: Leverage term store taxonomy to create an extractor
                       href: leverage-term-store-taxonomy.md
                     - name: Explanation types 
                       href: explanation-types-overview.md
