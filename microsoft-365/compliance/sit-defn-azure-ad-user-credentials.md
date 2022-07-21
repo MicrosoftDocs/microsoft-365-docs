@@ -49,12 +49,11 @@ or
 
 Various password formats in code snippets, for example:
 
-... new X509Certificates2( ... <br>
-... ConvertTo-SecureString -String ********...<br>
-... password = "********"... <br>
-... "password" : "********"... <br>
-... UserPasswordCredential( ... <br>
-...
+`new X509Certificates2( ...` <br>
+`ConvertTo-SecureString -String ********...`<br>
+`password = "********"...` <br>
+`"password" : "********"...` <br>
+`UserPasswordCredential( ...` <br>
 
 or
 
@@ -67,7 +66,6 @@ Various password formats in XML, for example:
 ... <setting name="password" value="********" > ... 
 ... <setting name="password">********</setting> ... 
 ... <setting name="password"><value>********</value></setting> ... 
-...
 ```
 
 

@@ -25,18 +25,18 @@ description: "Azure service bus connection string sensitive information type ent
 
 ## Format
 
-The string "EndPoint" followed by the characters and strings outlined in the pattern below, including the strings "servicebus.windows.<!--no-hyperlink-->net" and "SharedAccesKey".
+The string `EndPoint` followed by the characters and strings outlined in the pattern below, including the strings `servicebus.windows.net` and `SharedAccesKey`.
 
 ## Pattern
 
-- the string "EndPoint"
+- the string `EndPoint`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
 - any combination of between 1-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
-- the string "servicebus.windows.<!--no-hyperlink-->net"
+- the string `servicebus.windows.net`
 - any combination of between 1-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
-- the string "SharedAccessKey"
+- the string `SharedAccessKey`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
@@ -51,8 +51,8 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzureServiceBusConnectionString finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
+- The regular expression `CEP_Regex_AzureServiceBusConnectionString` finds content that matches the pattern.
+- The regular expression `CEP_CommonExampleKeywords` doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -70,7 +70,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### CEP_common_example_keywords
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam

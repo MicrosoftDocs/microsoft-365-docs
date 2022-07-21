@@ -25,11 +25,11 @@ description: "Azure DocumentDB auth key sensitive information type entity defini
 
 ## Format
 
-The string "DocumentDb" followed by the characters and strings outlined in the pattern below.
+The string `DocumentDb` followed by the characters and strings outlined in the pattern below.
 
 ## Pattern
 
-- The string "DocumentDb"
+- The string `DocumentDb`
 - Any combination of between 3-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
 - A greater than symbol (>), an equal sign (=), a quotation mark ("), or an apostrophe (')
 - Any combination of 86 lower- or uppercase letters, digits, forward slash (/), or plus sign (+)
@@ -43,8 +43,8 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzureDocumentDBAuthKey finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
+- The regular expression `CEP_Regex_AzureDocumentDBAuthKey` finds content that matches the pattern.
+- The regular expression `CEP_CommonExampleKeywords` doesn't find content that matches the pattern.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -62,7 +62,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### CEP_CommonExampleKeywords
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam
