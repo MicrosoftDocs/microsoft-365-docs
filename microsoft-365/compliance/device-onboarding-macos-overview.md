@@ -63,7 +63,7 @@ Endpoint DLP supports these browsers on macOS Catalina 10.15 or higher:
 
 See, [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
-## Activities that can be restricted on macOS 
+## Activities that can be audited and restricted on macOS 
 
 Once a macOS device is onboarded into Microsoft Purview solutions, you can monitor and restrict these actions with data loss prevention (DLP) policies.
 

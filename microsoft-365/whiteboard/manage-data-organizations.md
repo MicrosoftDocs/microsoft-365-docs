@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about data retention for Microsoft Whiteboard in Azure and OneDrive for Business.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
