@@ -112,7 +112,7 @@ These settings are at the organization level. See [Create settings for a specifi
 
 ## Teams
 
-The Teams master guest access switch, **Allow guest access in Teams**, must be **On** for the other guest settings to be available.
+The Teams guest access switch, **Allow guest access in Teams**, must be **On** for the other guest settings to be available.
 
 **Admin role:** Teams service administrator
 
