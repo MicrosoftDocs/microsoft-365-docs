@@ -36,7 +36,7 @@ Collaborating with external participants in a shared channel requires that guest
 - [Azure Active Directory](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#azure-active-directory) must allow guest invitations by the team owners who will be sharing the channel. The domains that you plan to collaborate with must not be blocked.
 - [Microsoft 365 Groups sharing settings](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#microsoft-365-groups) must both be enabled.
 - [Teams guest access](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#teams) must be turned on.
-- SharePoint [organization level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-and-onedrive-organization-level) and [site level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-site-level) sharing settings must allow guests.
+- SharePoint [organization level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-and-onedrive-organization-level) and [site level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-site-level) sharing settings must allow guests. The domains you're sharing with must not be blocked.
 
 ## Video demonstration
 
