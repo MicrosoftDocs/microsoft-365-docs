@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn about retention policies and retention labels to retain what you need and delete what you don't.
+description: Learn about Microsoft 365 retention policies and retention labels to retain what you need and delete what you don't to manage your organization's data.
 ---
 
 # Learn about retention policies and retention labels
