@@ -194,7 +194,7 @@ You can easily select specific service sources that you want to get email notifi
 You can get notifications only for a specific detection source. 
 
 **Set the severity per detection or service source**:
-You can choose to get email notifications only on specific severities per source. For example, you can get notified for Medium and High alerts for EDR and all severities for Microsoft Threat Experts.  
+You can choose to get email notifications only on specific severities per source. For example, you can get notified for Medium and High alerts for EDR and all severities for Microsoft Defender Experts.  
 
 The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to the incident and start your analysis right away. For more information, see [Investigate incidents](investigate-incidents.md).
 
