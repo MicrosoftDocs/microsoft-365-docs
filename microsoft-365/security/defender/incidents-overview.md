@@ -208,7 +208,7 @@ Likewise, if your organization is using role-based access control (RBAC), you ca
 
 Follow these steps to create a new rule and customize email notification settings.
 
-1. Go to [Microsoft 365 Defender](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47) in the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
+1. Go to [Microsoft 365 Defender](https://security.microsoft.com) in the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
 2. Select **Add item**.
 3. On the **Basics** page, type the rule name and a description, and then select **Next**.
 4. On the **Notification settings** page, configure:
