@@ -68,6 +68,15 @@ The standalone versions of Defender for Business, Defender for Endpoint Plan 1 a
 
 ## Mixed licensing scenarios
 
+This section is for customers who have more than one Microsoft endpoint security solution. It includes:
+
+- [An overview of mixed licensing scenarios](#what-are-mixed-licensing-scenarios)
+- [How to choose your subscription state](#choose-your-subscription-state)
+- [How to use device tagging for mixed licenses](#use-device-tagging-for-mixed-licenses)
+- [Additional resources](#additional-resources)
+
+### What are mixed licensing scenarios?
+
 A mixed licensing scenario is a situation in which an organization is using a mix of Microsoft endpoint security subscriptions. The following table lists a few examples. 
 
 | Scenario | Description |
@@ -83,11 +92,15 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 
 ### Choose your subscription state
 
-Up until recently, in cases of mixed licenses, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Referring to the preceding examples, the tenant experience would be Defender for Endpoint Plan 2 or Microsoft 365 E5 for all users. However, you now have more options available. You can set your subscription state to:
+Up until recently, in cases of mixed licenses, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience.
 
-- Use Defender for Endpoint Plan 1 features and capabilities across all onboarded devices
-- Use Defender for Endpoint Plan 2 features and capabilities across all onboarded devices
-- Choose which devices receive features and capabilities from Defender for Endpoint Plan 1 or Plan 2
+However, you now have more options available! You can:
+
+- Set your subscription state to use features and capabilities from one plan across all users and onboarded devices
+- Choose which devices receive features and capabilities from two plans (such as Defender for Endpoint Plan 1 and Plan 2)
+- Use Defender for Business features and capabilities even if other Microsoft endpoint security subscriptions are present (for small and medium-sized businesses up to 300 employees; see the [FAQ for Defender for Business](../defender-business/mdb-faq.yml))
+
+
 
 ### Use device tagging for mixed licenses
 
@@ -96,6 +109,11 @@ HOW TO GOES HERE
 <!---
 https://www.figma.com/file/4cBJUoIO9Z6mH3TbnUiRhC/M365-MDE-SMB?node-id=9687%3A156437
 --->
+
+### Additional resources
+
+- For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+- For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
 ## Start a trial
 
