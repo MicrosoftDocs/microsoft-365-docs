@@ -25,16 +25,16 @@ description: "Azure SAS sensitive information type entity definition."
 
 ## Format
 
-The string "sig" followed by the characters and strings outlined in the pattern below.
+The string `sig` followed by the characters and strings outlined in the pattern below.
 
 ## Pattern
 
-- the string "sig"
+- the string `sig`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
 - any combination of between 43-53 characters that are lower- or uppercase letters, digits, or the percent sign (%)
-- the string "%3d"
+- the string `%3d`
 - any character that isn't a lower- or uppercase letter, digit, or percent sign (%)
 
 ## Checksum
@@ -45,7 +45,7 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzureSAS finds content that matches the pattern.
+- The regular expression `CEP_Regex_AzureSAS` finds content that matches the pattern.
 
 ```xml
 <!--Azure SAS-->
