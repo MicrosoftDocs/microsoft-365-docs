@@ -38,6 +38,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Published: **Jul 21, 2022**<br/>
 &ensp;Build: **101.73.77**<br/>
 &ensp;Release version: **20.122062.17377.0**<br/>
+&ensp;Engine version: **need to add**<br/>
+&ensp;Signature version: **need to add**<br/>
 
 **What's new**
 
