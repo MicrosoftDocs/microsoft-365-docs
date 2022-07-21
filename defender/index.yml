@@ -40,6 +40,8 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
       links:
+        - url: /microsoft-365/security/defender/
+          text: Microsoft 365 Defender
         - url: /microsoft-365/security/microsoft-defender-endpoint.md
           text: Microsoft Defender for Endpoint
         - url: /microsoft-365/security/office-365-security/defender-for-office-365.md
@@ -76,4 +78,9 @@ productDirectory:
           text: Microsoft Defender for Resource Manager
         - url: /azure/defender-for-cloud/defender-for-databases-introduction
           text: Microsoft Defender for open-source relational databases
-   
+       # Card
+    - title: Microsoft Defender Threat Intelligence
+      # imageSrc should be square in ratio with no whitespace
+      links:
+        - url: /azure/defender-for-cloud/
+          text: Microsoft Defender Threat Intelligence
