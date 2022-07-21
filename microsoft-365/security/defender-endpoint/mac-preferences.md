@@ -87,6 +87,18 @@ Specifies the enforcement preference of antivirus engine. There are three values
 |**Comments**|Available in Microsoft Defender for Endpoint version 101.10.72 or higher.|
 |||
 
+#### Configure file hash computation feature
+
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|enableFileHashComputation|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
+
 #### Run a scan after definitions are updated
 
 Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
@@ -207,7 +219,7 @@ Specify content excluded from being scanned by full file path.
 
 ## Supported exclusion types
 
-The follow table shows the exclusion types supported by Defender for Endpoint on Mac.
+The following table shows the exclusion types supported by Defender for Endpoint on Mac.
 
 <br>
 
@@ -469,6 +481,24 @@ Diagnostic data is used to keep Microsoft Defender for Endpoint secure and up-to
 |**Data type**|String|
 |**Possible values**|optional (default) <p> required|
 |||
+
+#### Configure cloud block level
+
+This setting determines how aggressive Defender for Endpoint will be in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. There are five values for setting cloud block level:
+
+- Normal (`normal`): The default blocking level.
+- Moderate (`moderate`): Delivers verdict only for high confidence detections.
+- High (`high`): Aggressively blocks unknown files while optimizing for performance (greater chance of blocking non-harmful files).
+- High Plus (`high_plus`): Aggressively blocks unknown files and applies additional protection measures (might impact client device performance).
+- Zero Tolerance (`zero_tolerance`): Blocks all unknown programs.
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|cloudBlockLevel|
+|**Data type**|String|
+|**Possible values**|normal (default) <p> moderate <p> high <p> high_plus <p> zero_tolerance|
+|**Comments**|Available in Defender for Endpoint version 101.56.62 or higher.|
 
 #### Enable / disable automatic sample submissions
 
