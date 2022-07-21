@@ -72,7 +72,7 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 
 | Scenario | Description |
 |:---|:---|
-| Mixed tenant | Use different sets of capabilities for groups of users. Examples:<br/>- Using Defender for Endpoint Plan 1 to some users, and Defender for Endpoint Plan 2 for other users <br/>- Using Microsoft 365 E3 for some users, and Microsoft 365 E5 for other users    |
+| Mixed tenant | Use different sets of capabilities for groups of users. Examples:<ul><li>Using Defender for Endpoint Plan 1 to some users, and Defender for Endpoint Plan 2 for other users </li><li>Using Microsoft 365 E3 for some users, and Microsoft 365 E5 for other users</li><li>Using Defender for Business for up to 300 users, and Defender for Endpoint Plan 1 for additional users (see the [FAQ for Defender for Business](../defender-business/mdb-faq.yml))</li><li>Using Microsoft 365 Business Premium for up to 300 users, and Microsoft 365 E3 or E5 for additional users</li></ul>   |
 | Mixed trial | Try a premium level subscription for some users. Examples: <br/>- Defender for Endpoint Plan 1 (purchased for most users), and Defender for Endpoint Plan 2 (trial for some users) <br/>Microsoft 365 E3 (purchased for most users), and Microsoft 365 E5 (trial for some users) |
 | Phased upgrades | Upgrade user licenses in phases. Examples:<br/>- Moving groups of users from Defender for Endpoint Plan 1 to Defender for Endpoint Plan 2 <br/>- Moving groups of users from Microsoft 365 E3 to Microsoft 365 E5   |
 
