@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to deploy Microsoft Whiteboard on devices running Windows 10 or later versions.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
