@@ -40,7 +40,7 @@ With this data source enabled, all events from Corelight network appliances are 
 1. To setup the Corelight data integration, the user must have the following roles:
    - Tenant Global Administrator in Azure Active Directory
    - Security Administrator for the Azure subscription that will be used for the Microsoft Defender for IoT integration
-2. An onboarded Defender for IoT plan. For more information, [Onboard Microsoft Defender for IoT with Microsoft Defender for Endpoint](enable-microsoft-defender-for-iot-integration.md)
+2. An onboarded Defender for IoT plan. For more information, see [Onboard Microsoft Defender for IoT with Microsoft Defender for Endpoint](enable-microsoft-defender-for-iot-integration.md).
 
 ## Enabling the Corelight integration
 
