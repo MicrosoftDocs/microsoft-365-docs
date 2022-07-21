@@ -138,27 +138,6 @@
         - name: Term store reports
           href: term-store-analytics.md
 
-    - name: Setup and administration
-      items:
-        - name: Licensing for SharePoint Syntex
-          href: syntex-licensing.md
-        - name: Set up SharePoint Syntex
-          href: set-up-content-understanding.md
-        - name: Create a content center 
-          href: create-a-content-center.md
-        - name: Manage SharePoint Syntex with PowerShell
-          items:
-            - name: Overview
-              href: powershell-syntex-intro.md
-            - name: Export and import models
-              href: powershell-syntex-import-export.md
-            - name: Publish models
-              href: powershell-syntex-publishing.md
-            - name: Request processing by a model
-              href: powershell-syntex-processing.md
-            - name: Work with model explanations
-              href: powershell-syntex-explanations.md
-
     - name: Adoption
       items:
         - name: Get started with adoption
@@ -179,10 +158,12 @@
               href: solution-manage-contracts-step2.md
             - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
-        - name: Contracts Management site template
-          href: use-contracts-management-site.md 
-        - name: Content Center site template
-          href: use-content-center-site.md 
+        - name: Site templates
+          items:
+            - name: Contracts management site template
+              href: use-contracts-management-site.md 
+            - name: Content center site template
+              href: use-content-center-site.md 
 
     - name: Extensibility
       items: 
