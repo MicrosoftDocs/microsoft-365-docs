@@ -85,7 +85,7 @@ Up until recently, in cases of mixed licenses, the highest functional Microsoft 
 
 - Use Defender for Endpoint Plan 1 features and capabilities across all onboarded devices
 - Use Defender for Endpoint Plan 2 features and capabilities across all onboarded devices
-- Choose which devices receive Defender for Endpoint Plan 1 or Plan 2 features and capabilities
+- Choose which devices receive features and capabilities from Defender for Endpoint Plan 1 or Plan 2
 
 
 
