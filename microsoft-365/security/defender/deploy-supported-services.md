@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365solution-getstarted
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -74,7 +74,7 @@ The table below lists how each supported service provides additional data, oppor
 
 ## Deploy the services
 
-Deploying each service typically requires provisioning to your tenant and some initial configuration. See the following table to understand how each of these services are deployed.
+Deploying each service typically requires provisioning to your tenant and some initial configuration. See the following table to understand how each of these services is deployed.
 
 | Service | Provisioning instructions | Initial configuration |
 | ------ | ------ | ------ |
