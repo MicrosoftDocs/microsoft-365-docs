@@ -129,7 +129,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
-> File ubmissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File will be greyed out.
+> File submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File will be greyed out.
 
 ## View email admin submissions to Microsoft
 
