@@ -35,7 +35,8 @@ To display a list of mailboxes that are nearing their storage quota, select the 
 
 Alternatively, the direct URL to the mailbox usage report is <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>.
 
-Please note that the mailbox usage report information could be 24 hours behind your mailbox utilization service advisory alert.
+> [!NOTE]
+> The mailbox usage report information could be 24 hours behind your mailbox utilization service advisory alert.
 
 ## What do these service advisories indicate?
 
