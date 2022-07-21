@@ -28,57 +28,72 @@ highlightedContent:
       url: /MicrosoftTeams/remote-learning-edu
 
 
-# productDirectory section (optional)
-productDirectory:
-  title: Microsoft Defender products and services # < 60 chars (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   sections:
-  items:
-    # Card
-    - title: Microsoft 365 Defender 
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    - items:
+        # Card
+        - title: Microsoft 365 Defender 
       links:
         - url: /microsoft-365/security/defender/
+          itemType: overview
           text: Microsoft 365 Defender
         - url: /microsoft-365/security/microsoft-defender-endpoint.md
+          itemType: overview
           text: Microsoft Defender for Endpoint
         - url: /microsoft-365/security/office-365-security/defender-for-office-365.md
+          itemType: overview
           text: Microsoft Defender for Office 365
         - url: solutions/deploy-threat-protection.md
+          itemType: overview
           text: Microsoft Defender for Identity
         - url: /defender-cloud-apps/what-is-defender-for-cloud-apps.md
+          itemType: overview
           text: Microsoft Defender for Cloud Apps
         - url: business-premium/index.md
+          itemType: overview
           text: Microsoft 365 Defender for Businesses
         - url: /microsoft-365/security/defender-vulnerability-management.md
+          itemType: overview
           text: Microsoft Defender Vulnerability Management
     # Card
     - title: Microsoft Defender for Cloud
       # imageSrc should be square in ratio with no whitespace
       links:
         - url: /azure/defender-for-cloud/
+          itemType: overview
           text: Microsoft Defender for Cloud 
         - url: /azure/defender-for-cloud/defender-for-servers-introduction
+          itemType: overview
           text: Microsoft Defender for Servers
         - url: /azure/defender-for-cloud/defender-for-storage-introduction
+          itemType: overview
           text: Microsoft Defender for Storage
         - url: /azure/defender-for-cloud/defender-for-sql-introduction
+          itemType: overview
           text: Microsoft Defender for SQL
         - url: /azure/defender-for-cloud/defender-for-containers-introduction
+          itemType: overview
           text: Microsoft Defender for Containers
         - url: /azure/defender-for-cloud/defender-for-app-service-introduction
+          itemType: overview
           text: Microsoft Defender for App Service
         - url: /azure/defender-for-cloud/defender-for-key-vault-introduction
+          itemType: overview
           text: Microsoft Defender for Key Vault
         - url: /azure/defender-for-cloud/defender-for-dns-introduction
+          itemType: overview
           text: Microsoft Defender for DNS
         - url: /azure/defender-for-cloud/defender-for-resource-manager-introduction
+          itemType: overview
           text: Microsoft Defender for Resource Manager
         - url: /azure/defender-for-cloud/defender-for-databases-introduction
+          itemType: overview
           text: Microsoft Defender for open-source relational databases
        # Card
     - title: Microsoft Defender Threat Intelligence
       # imageSrc should be square in ratio with no whitespace
       links:
         - url: /azure/defender-for-cloud/
+          itemType: overview
           text: Microsoft Defender Threat Intelligence
