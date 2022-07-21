@@ -241,10 +241,6 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
 The Device installation feature allows you to apply policy through Group Policy.
 
-#### Licensing
-
-To access and use Device installation, you must have Windows E3.
-
 #### Deploying policy
 
 You can find the deployment detail here: [Manage Device Installation with Group Policy (Windows 10) - Windows Client](/windows/client-management/manage-device-installation-with-group-policy).
