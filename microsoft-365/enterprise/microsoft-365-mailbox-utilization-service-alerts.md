@@ -29,7 +29,7 @@ These service advisories are displayed in the Microsoft 365 admin center. To vie
 
 :::image type="content" alt-text="Mailbox utilization service alert." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-To display a list of mailboxes that are nearing their storage quota, click the highlighted link in the following screenshot to access your mailbox usage report. This link is displayed in the service advisory.
+To display a list of mailboxes that are nearing their storage quota, select the highlighted link in the following screenshot to access your mailbox usage report. This link is displayed in the service advisory.
 
 :::image type="content" alt-text="Link to mailbox usage report." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
