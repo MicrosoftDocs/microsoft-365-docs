@@ -17,7 +17,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Need a records management solution for Microsoft 365 that manages high-value content for legal, business, or regulatory obligations, but not sure where to start? Read some practical guidance to get started.
+description: Prescriptive steps, licensing requirements, permissions needed, and common scenarios to manage high-value content in Microsoft 365 for your legal, business, or regulatory obligations.
 ---
 
 # Get started with records management
