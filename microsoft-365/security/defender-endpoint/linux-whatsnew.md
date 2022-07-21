@@ -43,8 +43,10 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
-- Added an option to configure file hash computation
+- Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
 - From this build onwards, the product will have the new antimalware engine by default
+- Performance improvements for file copy operations
+- Bug fixes
 </br>
 
 <br/><br/>

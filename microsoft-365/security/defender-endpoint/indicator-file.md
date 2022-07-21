@@ -111,7 +111,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 >
 > For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 >
-> For more details on configuring this feature on Defender for Endpoint on Linux and macOS, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md) and [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
+> For more details on configuring this feature on Defender for Endpoint on Linux and macOS, see [Configure file hash computation feature on Linux](linux-preferences.md#configure-file-hash-computation-feature) and [Configure file hash computation feature on macOS](mac-preferences.md#configure-file-hash-computation-feature).
 
 ## Public Preview: Advanced hunting capabilities
 
