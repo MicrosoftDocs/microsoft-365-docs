@@ -9,13 +9,12 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
