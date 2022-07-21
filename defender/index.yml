@@ -23,9 +23,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Remote learning with Microsoft Teams
-      itemType: get-started
-      url: /MicrosoftTeams/remote-learning-edu
+    - title: Microsoft 365 Defender
+      itemType: learn
+      url: /learn/m365/defender
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -43,13 +43,13 @@ conceptualContent:
           - url: /microsoft-365/security/office-365-security/defender-for-office-365.md
             itemType: overview
             text: Microsoft Defender for Office 365
-          - url: solutions/deploy-threat-protection.md
+          - url: /defender-for-identity/
             itemType: overview
             text: Microsoft Defender for Identity
           - url: /defender-cloud-apps/what-is-defender-for-cloud-apps.md
             itemType: overview
             text: Microsoft Defender for Cloud Apps
-          - url: business-premium/index.md
+          - url: /microsoft-365/security/defender-business/mdb-overview
             itemType: overview
             text: Microsoft 365 Defender for Businesses
           - url: /microsoft-365/security/defender-vulnerability-management.md
