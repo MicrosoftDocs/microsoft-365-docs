@@ -54,7 +54,7 @@ To enable the Corelight integration, you'll need to take the following steps:
 
 1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Data sources**.
 
-   :::image type="content" source="images/enable-corelight.png" alt-text="The data sources page in the Microsoft 365 Defender portal" lightbox="images/enable-corelight.png":::
+   :::image type="content" source="./../media/defender-endpoint/enable-corelight.png" alt-text="The data sources page in the Microsoft 365 Defender portal" lightbox="images/enable-corelight.png":::
 
 2. Select **Send Corelight data to M365D** and select **Save**.
 
