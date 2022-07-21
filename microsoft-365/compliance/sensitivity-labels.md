@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Use sensitivity labels from Microsoft Purview Information Protection to classify and protect sensitive content.
+description: Learn how sensitivity labels from Microsoft Purview Information Protection helps to protect your organization's sensitive content, wherever it's stored.
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
