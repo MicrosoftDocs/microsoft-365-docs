@@ -191,7 +191,7 @@ You can set up Microsoft 365 Defender to notify your staff with an email about n
 You can easily select specific service sources that you want to get email notifications for.
  
 **Get more granularity with specific detection sources**:
-If you prefer to get updates only for a specific detection source, this is now an option! 
+You can get notifications only for a specific detection source. 
 
 **Set the severity per detection or service source**:
 You can choose to get email notifications only on specific severities per source. For example, you can get notified for Medium and High alerts for EDR and all severities for Microsoft Threat Experts.  
