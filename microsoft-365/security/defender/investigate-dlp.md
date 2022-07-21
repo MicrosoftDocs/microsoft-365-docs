@@ -46,6 +46,9 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 Information Protection and Governance
 
+> [!NOTE] 
+> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. Open a support case if you want to disable this feature. 
+
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
 Before you start, [turn on alerts for all your DLP policies](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
@@ -92,12 +95,13 @@ You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import
 3. You can use **AlertType**, **startTime**, and **endTime** to query the **CloudAppEvents** table to get all the user activities that contributed to the alert. Use this query to identify the underlying activities:
 
 ```kusto
-let Alert = SecurityAlert 
-| where TimeGenerated  > ago(30d) 
-| where SystemAlertId == "" // insert the systemAlertID here 
-CloudAppEvents 
-| extend correlationId = parse_json(tostring(RawEventData.Data)).cid
-| join kind=inner Alert on $left.correlationId == $right.AlertType 
+let Alert = SecurityAlert
+| where TimeGenerated > ago(30d)
+| where SystemAlertId == ""; // insert the systemAlertID here
+CloudAppEvents
+| extend correlationId1 = parse_json(tostring(RawEventData.Data)).cid
+| extend correlationId = tostring(correlationId1)
+| join kind=inner Alert on $left.correlationId == $right.AlertType
 | where RawEventData.CreationTime > StartTime and RawEventData.CreationTime < EndTime
 ```
 

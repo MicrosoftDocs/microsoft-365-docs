@@ -22,6 +22,7 @@ ms.technology: m365d
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Running the analyzer through GUI scenario
@@ -63,7 +64,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 > 
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
-> - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+> - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary). <br> Note that the binary is currently unsigned. To allow the package run on MacOS, you will need to use the syntax: "spctl --add /Path/To/Application.app".
 >
 > - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
 > `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`

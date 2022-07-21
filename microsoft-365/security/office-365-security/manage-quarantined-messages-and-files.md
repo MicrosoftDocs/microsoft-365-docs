@@ -134,6 +134,9 @@ Watch this short video to learn how to manage quarantined messages as an adminis
 
    After you've entered the search criteria, press ENTER to filter the results.
 
+   > [!NOTE]
+   > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout. 
+
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
 #### View quarantined message details

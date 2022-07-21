@@ -9,16 +9,12 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -26,9 +22,9 @@ search.appverid:
 description: "Learn how Microsoft 365 Business Premium helps your business with productivity and security."
 ---
 
-# How Microsoft 365 security recommendations affect your users
+# How Microsoft 365 Business Premium helps your business
 
-Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can help your business, and includes these sections:
+Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can help your business or campaign. This article includes the following sections:
 
 - [Video: Top 5 benefits of Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [Productivity and advanced security capabilities](#productivity-and-security) that enable you to run your business more securely, across devices, and from just about anywhere
@@ -62,7 +58,7 @@ Microsoft 365 Business Premium includes your favorite Office productivity apps, 
 
 ## Resources to train your users
 
-The security recommendations provided in this library make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training users&mdash; the people in your company who use your systems regularly. Users can help be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment. 
+The security recommendations provided in these missions make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training members of the organization&mdash;the people in your company who use your systems regularly. Users can be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
 
 Resources are available to help everyone in your organization to:
 
@@ -82,6 +78,8 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 ## Next steps
 
-1. Get [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
+1. Get either [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
 2. [Start the setup process](m365bp-setup-overview.md).
+
+3. [Bump up security](m365bp-security-overview.md).

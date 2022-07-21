@@ -22,8 +22,6 @@ ms.custom: seo-marvel-apr2020
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When you have [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) sensitivity labels from the Microsoft Purview compliance portal, they start to appear in Office apps for users to classify and protect data as it's created or edited.
 
 Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need for features that are specific to built-in labeling, any additional configuration information for these features, and understand interactions with the Azure Information Protection unified labeling client and other apps and services.
@@ -101,7 +99,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |[PDF support](#pdf-support) | Under review|  Under review | Under review | Under review | Under review |
-|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Under review | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2208+ | Rolling out: 4.2203+ | Under review |
+|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Under review | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2226+ | Rolling out: 4.2203+ | Under review |
 
 **Footnotes:**
 

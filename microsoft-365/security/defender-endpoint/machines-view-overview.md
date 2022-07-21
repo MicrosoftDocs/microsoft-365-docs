@@ -79,6 +79,11 @@ From the **Network devices** and **IoT devices** tabs, you'll also see informati
 
 ![Image of network devices list.](images/device-inventory-networkdevices.png)
 
+> [!NOTE]
+> Device discovery Integrations with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) and [Corelight](https://corelight.com/integrations/iot-security) are available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with these integrations will appear on the **IoT devices** tab. For more information, see [Device discovery integrations](device-discovery.md#device-discovery-integrations).
+>
+> When Defender for IoT is configured, you also can view the devices there. See [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
+
 At the top of each device inventory tab, you can see the total number of devices, the number of devices that are not yet onboarded, and the number of devices that have been identified as a higher risk to your organization. You can use this information to help you prioritize devices for security posture improvements.
 
 The **Newly discovered** device count for network devices and IoT devices tabs, shows the number of new devices discovered, in the last 7 days, listed in the current view.
