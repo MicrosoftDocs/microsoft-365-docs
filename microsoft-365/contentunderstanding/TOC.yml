@@ -34,8 +34,6 @@
                   href: apply-a-sensitivity-label-to-a-model.md
                 - name: Rename a model
                   href: rename-a-model.md
-                - name: Duplicate a model
-                  href: duplicate-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
                 - name: Model usage analytics
@@ -55,10 +53,8 @@
 
 
 
-    - name: Create a custom model
+    - name: Custom models
       items:
-            - name: Overview 
-              href: custom-models-overview.md 
             - name: Compare custom models 
               href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Classify and extract by text pattern
@@ -67,46 +63,26 @@
                   href: document-understanding-overview.md
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
-                - name: Create a content center 
-                  href: create-a-content-center.md
-                - name: Create a classifier
-                  href: create-a-classifier.md
-                - name: Create an extractor
+                - name: Train a model
                   items:
-                    - name: Overview
+                    - name: Create a classifier
+                      href: create-a-classifier.md
+                    - name: Create an extractor
                       href: create-an-extractor.md
-                    - name: Rename an extractor
-                      href: rename-an-extractor.md
+                    - name: Leverage term store taxonomy when creating an extractor
+                      href: leverage-term-store-taxonomy.md
                     - name: Explanation types 
                       href: explanation-types-overview.md
                     - name: Use explanation templates 
                       href: explanation-templates.md
-                    - name: Leverage term store taxonomy when creating an extractor
-                      href: leverage-term-store-taxonomy.md
-                - name: Manage a model
-                  items:
-                    - name: Duplicate a model
-                      href: duplicate-a-model.md
-                    - name: Rename a model
-                      href: rename-a-model.md
-                    - name: Delete a model
-                      href: delete-a-model.md
-                - name: Apply a document understanding model
-                  href: apply-a-model.md
-                - name: Publish and discover a model
-                  href: model-discovery.md
-                - name: Apply a compliance label
-                  items:
-                    - name: Apply a retention label 
-                      href: apply-a-retention-label-to-a-model.md
-                    - name: Apply a sensitivity label 
-                      href: apply-a-sensitivity-label-to-a-model.md
-                - name: Create a local model 
-                  href: create-local-model.md
-                - name: Model usage analytics
-                  href: model-usage-analytics.md
-                - name: Accessibility mode
-                  href: accessibility-mode.md
+                    - name: Use accessibility mode
+                      href: accessibility-mode.md
+                    - name: Rename an extractor
+                      href: rename-an-extractor.md
+                - name: Duplicate a model
+                  href: duplicate-a-model.md
+
+ 
             - name: Extract by layout
               items:
                 - name: Overview 
@@ -128,7 +104,7 @@
                 - name: Model usage analytics
                   href: model-usage-analytics.md
 
-    - name: Use a prebuilt model
+    - name: Prebuilt models
       items:
             - name: Overview 
               href: prebuilt-overview.md
