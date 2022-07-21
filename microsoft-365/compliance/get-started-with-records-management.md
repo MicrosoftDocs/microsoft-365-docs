@@ -17,7 +17,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Prescriptive steps, licensing requirements, permissions needed, and common scenarios to manage high-value content in Microsoft 365 for your legal, business, or regulatory obligations.
+description: Prescriptive steps for admins, licensing requirements, and common scenarios that manage high-value content in Microsoft 365 for your legal, business, or regulatory obligations.
 ---
 
 # Get started with records management

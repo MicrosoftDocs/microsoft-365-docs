@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Prescriptive steps, licensing requirements, permissions needed, and common scenarios to deploy sensitivity labels to help protect your organization's data."
+description: "Prescriptive steps for admins, licensing requirements, and common scenarios that use sensitivity labels to help protect your organization's data."
 ---
 
 # Get started with sensitivity labels

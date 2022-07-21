@@ -18,7 +18,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: Prescriptive steps, licensing requirements, permissions needed, and common scenarios to manage the lifecycle of your organization's data.
+description: Prescriptive steps for admins, licensing requirements, and common scenarios that manage the lifecycle of your organization's data.
 ---
 
 # Get started with data lifecycle management
