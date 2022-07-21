@@ -25,18 +25,18 @@ description: "Azure IAAS database connection string and Azure SQL connection str
 
 ## Format
 
-The string "Server", "server", or "data source" followed by the characters and strings outlined in the pattern below, including the string "cloudapp.azure.<!--no-hyperlink-->com" or "cloudapp.azure.<!--no-hyperlink-->net" or "database.windows.<!--no-hyperlink-->net", and the string "Password" or "password" or "pwd".
+The string `Server`, `server`, or `data source` followed by the characters and strings outlined in the pattern below, including the string `cloudapp.azure.com` or `cloudapp.azure.net` or `database.windows.net`, and the string `Password` or `password` or `pwd`.
 
 ## Pattern
 
-- the string "Server", "server", or "data source"
+- the string `Server`, `server`, or `data source`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
 - any combination of between 1-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
 - The string "cloudapp.azure.<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net", or "database.windows.<!--no-hyperlink-->net"
 - any combination of between 1-300 lower- or uppercase letters, digits, symbols, special characters, or spaces
-- the string "Password", "password", or "pwd"
+- the string `Password`, `password`, or `pwd`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
@@ -51,8 +51,8 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzureConnectionString finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
+- The regular expression `CEP_Regex_AzureConnectionString` finds content that matches the pattern.
+- The regular expression `CEP_CommonExampleKeywords` doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -70,7 +70,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### CEP_common_example_keywords
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam
