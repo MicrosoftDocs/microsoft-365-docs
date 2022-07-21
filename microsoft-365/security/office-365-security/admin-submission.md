@@ -90,7 +90,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **URLs** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.****
+2. On the **Submissions** page, verify that the **URLs** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
 3. In the **URL** box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
