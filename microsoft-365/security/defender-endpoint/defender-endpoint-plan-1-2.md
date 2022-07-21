@@ -81,11 +81,13 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 
 ### Choose your subscription state
 
-Up until recently, in cases of mixed licenses, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Referring to the preceding examples, the tenant experience would be Defender for Endpoint Plan 2 or Microsoft 365 E5 for all users. However, you now have more options available. For example, you can choose to set your subscription state to:
+Up until recently, in cases of mixed licenses, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Referring to the preceding examples, the tenant experience would be Defender for Endpoint Plan 2 or Microsoft 365 E5 for all users. However, you now have more options available. You can set your subscription state to:
 
 - Use Defender for Endpoint Plan 1 features and capabilities across all onboarded devices
 - Use Defender for Endpoint Plan 2 features and capabilities across all onboarded devices
 - Choose which devices receive features and capabilities from Defender for Endpoint Plan 1 or Plan 2
+
+### Use device tagging for mixed licenses
 
 
 
