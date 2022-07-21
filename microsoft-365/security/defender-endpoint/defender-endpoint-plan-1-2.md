@@ -68,7 +68,16 @@ The standalone versions of Defender for Business, Defender for Endpoint Plan 1 a
 
 ## Mixed licensing scenarios
 
-Suppose that your organization is using a mix of Microsoft endpoint security subscriptions, such as Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2. **Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. In this example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
+A mixed licensing scenario is a situation in which an organization is using a mix of Microsoft endpoint security subscriptions. The following table describes some examples of mixed licensing scenarios:
+
+| Scenario | Description |
+|:---|:---|
+| Mixed trial | Try a higher level subscription for some users. Examples: <br/>- Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (trial for some users) <br/>Microsoft 365 E3 (purchased for all users), and Defender for Endpoint Plan 2 (trial for some users) |
+| Phased upgrades | Upgrade user licenses in phases. Examples:   |
+| Mixed tenant | Use different sets of capabilities for groups of users. Examples:   |
+
+
+**Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. In this example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
 
 However, **you can contact support and request an override for your tenant experience**. That is, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users. 
 
