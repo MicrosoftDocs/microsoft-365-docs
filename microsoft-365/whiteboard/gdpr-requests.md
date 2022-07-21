@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to export, transfer, or delete personal information from Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
