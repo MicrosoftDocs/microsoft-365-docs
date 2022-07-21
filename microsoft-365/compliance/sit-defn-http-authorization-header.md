@@ -36,7 +36,6 @@ Various authentication header formats for example:
 `authorization: digest ********` <br>
 `authorization: negotiate ********` <br>
 
-
 ## Checksum
 
 No

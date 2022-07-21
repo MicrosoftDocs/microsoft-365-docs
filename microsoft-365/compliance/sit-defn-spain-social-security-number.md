@@ -45,13 +45,13 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_spanish_social_security_number finds content that matches the pattern.
+- The function `Func_spanish_social_security_number` finds content that matches the pattern.
 - The checksum passes.
-- - A keyword from `Keywords_spain_eu_ssn_or_equivalent` is found.
+    - A keyword from `Keywords_spain_eu_ssn_or_equivalent` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_spanish_social_security_number finds content that matches the pattern.
+- The function `Func_spanish_social_security_number` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml

@@ -56,7 +56,6 @@ It uses several primary resources:
 
 The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
 
-
 ## Keywords
 
 ### Keyword_SlackTokens:

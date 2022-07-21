@@ -43,13 +43,13 @@ Yes
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Func_denmark_eu_tax_file_number finds content that matches the pattern.
-- A keyword from Keyword_denmark_id is found.
+- The regular expression `Func_denmark_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keyword_denmark_id` is found.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Func_denmark_eu_tax_file_number finds content that matches the pattern.
+- The regular expression `Func_denmark_eu_tax_file_number` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml

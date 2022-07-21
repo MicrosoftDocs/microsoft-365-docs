@@ -35,23 +35,21 @@ Plain-text password used in script
 
 Various URL username and password formats, for example: 
 
-https://username:********@contoso.com/...
-ftp://username:********@contoso.com:20/...
-...
+`https://username:********@contoso.com/...`
+`ftp://username:********@contoso.com:20/...`
 
 for example:
-https://myuser:mypassword@localhost
+`https://myuser:mypassword@localhost`
 
 or
 
 Various password formats in script, for example: 
 
-... password = ********...
-...
+`password = ********...`
 
 for example:
 
-password=ZYXWVU_1 
+`password=ZYXWVU_1`
 
 ## Checksum
 
@@ -59,7 +57,7 @@ No
 
 ## Description
 
-This SIT is designed to match the security information that's used as a token in URL to do client validation or identification (/azure/key-vault/quick-create-portal). It uses several primary resources:
+This SIT is designed to match the security information that's used as a token in URL to do client validation or identification [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of User Login Credentials in URL.
 - Patterns of Password context in script.

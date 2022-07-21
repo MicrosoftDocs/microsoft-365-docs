@@ -21,8 +21,6 @@ recommendations: false
 description: "Luxemburg national identification number (natural persons) sensitive information type entity definition."
 ---
 
-
-
 # Luxemburg national identification number (natural persons)
 
 This sensitive information type is only available for use in:

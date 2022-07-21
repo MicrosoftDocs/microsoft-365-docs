@@ -39,8 +39,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_uk_electoral finds content that matches the pattern.
-- A keyword from Keyword_uk_electoral is found.
+- The regular expression `Regex_uk_electoral` finds content that matches the pattern.
+- A keyword from `Keyword_uk_electoral` is found.
 
 ```xml
 <!-- U.K. Electoral Number -->

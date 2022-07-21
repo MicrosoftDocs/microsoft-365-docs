@@ -42,8 +42,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_taiwan_resident_certificate finds content that matches the pattern.
-- A keyword from Keyword_taiwan_resident_certificate is found.
+- The regular expression `Regex_taiwan_resident_certificate` finds content that matches the pattern.
+- A keyword from `Keyword_taiwan_resident_certificate` is found.
 
 ```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->

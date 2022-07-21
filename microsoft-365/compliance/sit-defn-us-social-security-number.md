@@ -34,10 +34,10 @@ nine digits, which may be in a formatted or unformatted pattern
 
 four functions look for SSNs in four different patterns:
 
-- Func_ssn finds SSNs with pre-2011 strong formatting that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
-- Func_unformatted_ssn finds SSNs with pre-2011 strong formatting that are unformatted as nine consecutive digits (ddddddddd)
-- Func_randomized_formatted_ssn finds post-2011 SSNs that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
-- Func_randomized_unformatted_ssn finds post-2011 SSNs that are unformatted as nine consecutive digits (ddddddddd)
+- `Func_ssn` finds SSNs with pre-2011 strong formatting that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
+- `Func_unformatted_ssn` finds SSNs with pre-2011 strong formatting that are unformatted as nine consecutive digits (ddddddddd)
+- `Func_randomized_formatted_ssn` finds post-2011 SSNs that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
+- `Func_randomized_unformatted_ssn` finds post-2011 SSNs that are unformatted as nine consecutive digits (ddddddddd)
 
 ## Checksum
 
@@ -52,7 +52,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function  Func_unformatted_ssn` finds content that matches the pattern.
+- The function `Func_unformatted_ssn` finds content that matches the pattern.
 - A keyword from `Keyword_ssn` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:

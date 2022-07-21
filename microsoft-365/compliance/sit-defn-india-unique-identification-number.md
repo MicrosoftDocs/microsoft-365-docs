@@ -46,13 +46,13 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_india_aadhaar finds content that matches the pattern.
-- A keyword from Keyword_india_aadhar is found.
+- The function `Func_india_aadhaar` finds content that matches the pattern.
+- A keyword from `Keyword_india_aadhar` is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_india_aadhaar finds content that matches the pattern.
+- The function `Func_india_aadhaar` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml
@@ -67,9 +67,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
   </Pattern>
 </Entity>
 ```
+
 ## Keywords
 
 ### Keyword_india_aadhar
+
 - aadhaar
 - aadhar
 - aadhar#

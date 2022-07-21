@@ -39,8 +39,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_saudi_arabia_national_id finds content that matches the pattern.
-- A keyword from Keyword_saudi_arabia_national_id is found.
+- The regular expression `Regex_saudi_arabia_national_id` finds content that matches the pattern.
+- A keyword from `Keyword_saudi_arabia_national_id` is found.
 
 ```xml
 <!-- Saudi Arabia National ID -->

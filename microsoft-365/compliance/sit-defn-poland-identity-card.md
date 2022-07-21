@@ -39,8 +39,8 @@ Yes
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_polish_national_id finds content that matches the pattern.
-- A keyword from Keyword_polish_national_id_passport_number is found.
+- The function `Func_polish_national_id` finds content that matches the pattern.
+- A keyword from `Keyword_polish_national_id_passport_number` is found.
 - The checksum passes.
 
 ```xml

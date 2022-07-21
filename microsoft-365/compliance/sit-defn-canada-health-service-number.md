@@ -39,8 +39,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_canada_health_service_number finds content that matches the pattern.
-- A keyword from Keyword_canada_health_service_number is found.
+- The regular expression `Regex_canada_health_service_number` finds content that matches the pattern.
+- A keyword from `Keyword_canada_health_service_number` is found.
 
 ```xml
 <!-- Canada Health Service Number -->

@@ -51,13 +51,13 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_czech_id_card finds content that matches the pattern.
-- A keyword from Keyword_czech_id_card is found.
+- The function `Func_czech_id_card` finds content that matches the pattern.
+- A keyword from `Keyword_czech_id_card` is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_czech_id_card_new_format finds content that matches the pattern.
+- The function `Func_czech_id_card_new_format` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml

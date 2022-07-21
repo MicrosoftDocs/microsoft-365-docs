@@ -53,12 +53,12 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_polish_regon_number finds content that matches the pattern.
-- A keyword from Keywords_polish_regon_number is found.
+- The function `Func_polish_regon_number` finds content that matches the pattern.
+- A keyword from `Keywords_polish_regon_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_polish_regon_number finds content that matches the pattern.
+- The function `Func_polish_regon_number` finds content that matches the pattern.
 
 ```xml
       <!-- Polish REGON Number  -->
@@ -72,6 +72,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
         </Pattern>
       </Entity>
 ```
+
 ## Keywords
 
 ### Keywords_poland_regon_number

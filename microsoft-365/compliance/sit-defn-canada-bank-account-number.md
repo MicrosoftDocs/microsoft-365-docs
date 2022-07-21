@@ -48,14 +48,14 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_canada_bank_account_number finds content that matches the pattern.
-- A keyword from Keyword_canada_bank_account_number is found.
-- The regular expression Regex_canada_bank_account_transit_number finds content that matches the pattern.
+- The regular expression `Regex_canada_bank_account_number` finds content that matches the pattern.
+- A keyword from `Keyword_canada_bank_account_number` is found.
+- The regular expression `Regex_canada_bank_account_transit_number` finds content that matches the pattern.
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_canada_bank_account_number finds content that matches the pattern.
-- A keyword from Keyword_canada_bank_account_number is found.
+- The regular expression `Regex_canada_bank_account_number` finds content that matches the pattern.
+- A keyword from `Keyword_canada_bank_account_number` is found.
 
 ```xml
 <!-- Canada Bank Account Number -->

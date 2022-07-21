@@ -41,18 +41,18 @@ No
 
 For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_ipv6_address finds content that matches the pattern.
-- No keyword from Keyword_ipaddress is found.
+- The regular expression `Regex_ipv6_address` finds content that matches the pattern.
+- No keyword from `Keyword_ipaddress` is found.
 
 For IPv4, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_ipv4_address finds content that matches the pattern.
-- A keyword from Keyword_ipaddress is found.
+- The regular expression `Regex_ipv4_address` finds content that matches the pattern.
+- A keyword from `Keyword_ipaddress` is found.
 
 For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_ipv6_address finds content that matches the pattern.
-- No keyword from Keyword_ipaddress is found.
+- The regular expression `Regex_ipv6_address` finds content that matches the pattern.
+- No keyword from `Keyword_ipaddress` is found.
 
 ```xml
     <!-- IP Address -->

@@ -21,7 +21,6 @@ recommendations: false
 description: "Malta physical addresses sensitive information type entity definition."
 ---
 
-
 # Malta physical addresses
 
 This unbundled named entity detects patterns related to physical address from Malta. It's also included in the [All Physical Addresses](sit-defn-all-physical-addresses.md) bundled named entity SIT.

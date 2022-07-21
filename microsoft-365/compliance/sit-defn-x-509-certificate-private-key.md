@@ -31,7 +31,6 @@ or
 
 A combination of up to 40 characters consisting of upper-case letters, space, and dashes.
 
-
 ## Pattern
 
 A combination of up to 20,000 characters:

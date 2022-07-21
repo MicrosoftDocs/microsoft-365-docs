@@ -44,13 +44,13 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- the function Func_finnish_national_id finds content that matches the pattern
-- a keyword from Keyword_finnish_national_id is found
+- the function `Func_finnish_national_id` finds content that matches the pattern
+- a keyword from `Keyword_finnish_national_id` is found
 - the checksum passes
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- the function Func_finnish_national_id finds content that matches the pattern
+- the function `Func_finnish_national_id` finds content that matches the pattern
 - the checksum passes
 
 ```xml

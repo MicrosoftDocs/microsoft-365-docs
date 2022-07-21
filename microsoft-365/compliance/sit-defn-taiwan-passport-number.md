@@ -29,6 +29,7 @@ description: "Taiwan passport number sensitive information type entity definitio
 - non-biometric passport number: nine digits
 
 ## Pattern
+
 biometric passport number:
 
 - the character "3"
@@ -46,8 +47,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_taiwan_passport finds content that matches the pattern.
-- A keyword from Keyword_taiwan_passport is found.
+- The regular expression `Regex_taiwan_passport` finds content that matches the pattern.
+- A keyword from `Keyword_taiwan_passport` is found.
 
 ```xml
 <!-- Taiwan Passport Number -->

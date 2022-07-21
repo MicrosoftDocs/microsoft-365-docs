@@ -46,17 +46,17 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_jp_bank_account finds content that matches the pattern.
-- A keyword from Keyword_jp_bank_account is found.
+- The function `Func_jp_bank_account` finds content that matches the pattern.
+- A keyword from `Keyword_jp_bank_account` is found.
 - One of the following is true:
 
-- The function Func_jp_bank_account_branch_code finds content that matches the pattern.
-- A keyword from Keyword_jp_bank_branch_code is found.
+- The function `Func_jp_bank_account_branch_code` finds content that matches the pattern.
+- A keyword from `Keyword_jp_bank_branch_code` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_jp_bank_account finds content that matches the pattern.
-- A keyword from Keyword_jp_bank_account is found.
+- The function `Func_jp_bank_account` finds content that matches the pattern.
+- A keyword from `Keyword_jp_bank_account` is found.
 
 ```xml
 <!-- Japan Bank Account Number -->

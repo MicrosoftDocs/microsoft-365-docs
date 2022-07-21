@@ -39,12 +39,12 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- A keyword from Dictionary_icd_9_updated is found.
-- A keyword from Dictionary_icd_9_codes is found.
+- A keyword from `Dictionary_icd_9_updated` is found.
+- A keyword from `Dictionary_icd_9_codes` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- A keyword from Dictionary_icd_9_updated is found.
+- A keyword from `Dictionary_icd_9_updated` is found.
 
 ```xml
     <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -60,6 +60,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Keywords
 
-Any term from the Dictionary_icd_9_updated keyword dictionary, which is based on the [International Classification of Diseases,Ninth Revision, Clinical Modification (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). This type looks only for the term, not the insurance codes.
+Any term from the `Dictionary_icd_9_updated` keyword dictionary, which is based on the [International Classification of Diseases,Ninth Revision, Clinical Modification (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). This type looks only for the term, not the insurance codes.
 
-Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on the [International Classification of Diseases,Ninth Revision, Clinical Modification (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). This type looks only for insurance codes, not the description.
+Any term from the `Dictionary_icd_9_codes` keyword dictionary, which is based on the [International Classification of Diseases,Ninth Revision, Clinical Modification (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). This type looks only for insurance codes, not the description.

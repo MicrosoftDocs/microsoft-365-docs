@@ -108,7 +108,7 @@ for example:
 
 or
 
-Various password formats in code snippets, for example: 
+Various password formats in code snippets, for example:
 
 `new X509Certificates2(`
 
@@ -128,25 +128,23 @@ or
 
 `UserPasswordCredential(`
 
-
 for example:
 
 `password = "ZYXWVU_1";`
 
 or
 
-Various password formats in script, for example: 
+Various password formats in script, for example:
 
 `password = ********`
 
-
 for example:
 
-`password=ZYXWVU_1` 
+`password=ZYXWVU_1`
 
 or
 
-Various password formats in XML, for example: 
+Various password formats in XML, for example:
 
 ```xml
 <secret>********</secret>
@@ -162,7 +160,7 @@ for example:
 
 or
 
-Any combination of 22 characters consisting of: 
+Any combination of 22 characters consisting of:
 
 - a-z (case insensitive)
 - digits, forward slashes, or plus signs
@@ -174,7 +172,7 @@ for example:
 
 or
 
-Any combination of 32 characters consisting of: 
+Any combination of 32 characters consisting of:
 
 - a-f or A-F (case-sensitive) or 0-9
 
@@ -184,7 +182,7 @@ for example:
 
 or
 
-Any combination of 32 characters consisting of: 
+Any combination of 32 characters consisting of:
 
 - a-z (case insensitive)
 - 0-9
@@ -196,7 +194,7 @@ for example:
 
 or
 
-Any combination of 43 characters consisting of: 
+Any combination of 43 characters consisting of:
 
 - a-z (case insensitive)
 - 0-9
@@ -209,7 +207,7 @@ for example:
 
 or
 
-Any combination of 86 characters consisting of: 
+Any combination of 86 characters consisting of:
 
 - a-z (case insensitive)
 - 0-9
@@ -226,7 +224,7 @@ Yes
 
 ## Description
 
-This SIT is designed to match the security information that's like usernames and passwords used in general sign in process (/azure/key-vault/quick-create-portal). It uses several primary resources:
+This SIT is designed to match the security information that's like usernames and passwords used in general sign in process [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
 - Patterns of Password context in command line.

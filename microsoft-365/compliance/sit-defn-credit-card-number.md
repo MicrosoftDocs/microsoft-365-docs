@@ -40,16 +40,16 @@ Yes, the Luhn check
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_credit_card finds content that matches the pattern.
+- The function `Func_credit_card` finds content that matches the pattern.
 - One of the following conditions is true:
-  - A keyword from Keyword_cc_verification is found.
-  - A keyword from Keyword_cc_name is found.
-  - The function Func_expiration_date finds a date in the right date format.
+  - A keyword from `Keyword_cc_verification` is found.
+  - A keyword from `Keyword_cc_name` is found.
+  - The function `Func_expiration_date` finds a date in the right date format.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_credit_card finds content that matches the pattern.
+- The function `Func_credit_card` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml

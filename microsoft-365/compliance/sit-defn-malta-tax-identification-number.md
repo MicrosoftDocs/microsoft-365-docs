@@ -21,7 +21,6 @@ recommendations: false
 description: "Malta tax identification number sensitive information type entity definition."
 ---
 
-
 # Malta tax identification number
 
 ## Format

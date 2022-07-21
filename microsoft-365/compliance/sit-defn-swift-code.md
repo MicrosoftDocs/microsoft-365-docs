@@ -45,8 +45,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_swift finds content that matches the pattern.
-- A keyword from Keyword_swift is found.
+- The regular expression `Regex_swift` finds content that matches the pattern.
+- A keyword from `Keyword_swift` is found.
 
 ```xml
 <Entity id="cb2ab58c-9cb8-4c81-baf8-a4e106791df4" patternsProximity="300" recommendedConfidence="75">

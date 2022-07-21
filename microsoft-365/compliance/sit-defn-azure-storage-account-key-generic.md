@@ -41,7 +41,7 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzureStorageAccountKeyGeneric finds content that matches the pattern.
+- The regular expression `CEP_Regex_AzureStorageAccountKeyGeneric` finds content that matches the pattern.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->

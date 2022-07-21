@@ -39,13 +39,13 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_eu_debit_card finds content that matches the pattern.
+- The function `Func_eu_debit_card` finds content that matches the pattern.
 - At least one of the following is true:
-    - A keyword from Keyword_eu_debit_card is found.
-    - A keyword from Keyword_card_terms_dict is found.
-    - A keyword from Keyword_card_security_terms_dict is found.
-    - A keyword from Keyword_card_expiration_terms_dict is found.
-    - The function Func_expiration_date finds a date in the right date format.
+    - A keyword from `Keyword_eu_debit_card` is found.
+    - A keyword from `Keyword_card_terms_dict` is found.
+    - A keyword from `Keyword_card_security_terms_dict` is found.
+    - A keyword from `Keyword_card_expiration_terms_dict` is found.
+    - The function `Func_expiration_date` finds a date in the right date format.
 - The checksum passes.
 
 ```xml

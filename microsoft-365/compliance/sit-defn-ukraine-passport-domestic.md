@@ -47,8 +47,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regex Regex_Ukraine_Passport_Domestic finds content that matches the pattern.
-- A keyword from Keyword_Ukraine_Passport_Domestic is found.
+- The regex `Regex_Ukraine_Passport_Domestic` finds content that matches the pattern.
+- A keyword from `Keyword_Ukraine_Passport_Domestic` is found.
 
 ```xml
       <!-- Ukraine Passport Domestic -->

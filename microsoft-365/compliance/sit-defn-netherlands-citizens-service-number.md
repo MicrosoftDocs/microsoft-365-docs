@@ -45,8 +45,8 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_netherlands_bsn finds content that matches the pattern.
-- A keyword from Keyword_netherlands_bsn is found.
+- The function `Func_netherlands_bsn finds` content that matches the pattern.
+- A keyword from `Keyword_netherlands_bsn` is found.
 - The checksum passes.
 
 ```xml

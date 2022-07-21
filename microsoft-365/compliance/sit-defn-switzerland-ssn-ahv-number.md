@@ -55,12 +55,12 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_swiss_social_security_number_ahv finds content that matches the pattern.
-- A keyword from Keywords_swiss_social_security_number_ahv is found.
+- The function `Func_swiss_social_security_number_ahv` finds content that matches the pattern.
+- A keyword from `Keywords_swiss_social_security_number_ahv` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_swiss_social_security_number_ahv finds content that matches the pattern.
+- The function `Func_swiss_social_security_number_ahv` finds content that matches the pattern.
 
 ```xml
       <!-- Swiss SSN AHV Number -->

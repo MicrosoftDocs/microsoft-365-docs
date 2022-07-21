@@ -42,16 +42,16 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_new_york_drivers_license_number finds content that matches the pattern.
-- A keyword from Keyword_[state_name]_drivers_license_name is found.
-- A keyword from Keyword_us_drivers_license is found.
+- The function `Func_new_york_drivers_license_number` finds content that matches the pattern.
+- A keyword from `Keyword_[state_name]_drivers_license_name` is found.
+- A keyword from `Keyword_us_drivers_license` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_new_york_drivers_license_number finds content that matches the pattern.
-- A keyword from Keyword_[state_name]_drivers_license_name is found.
-- A keyword from Keyword_us_drivers_license_abbreviations is found.
-- No keyword from Keyword_us_drivers_license is found.
+- The function `Func_new_york_drivers_license_number` finds content that matches the pattern.
+- A keyword from `Keyword_[state_name]_drivers_license_name` is found.
+- A keyword from `Keyword_us_drivers_license_abbreviations` is found.
+- No keyword from `Keyword_us_drivers_license` is found.
 
 ```xml
 <Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">

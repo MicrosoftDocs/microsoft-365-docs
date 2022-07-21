@@ -21,8 +21,6 @@ recommendations: false
 description: "Luxemburg driver's license number sensitive information type entity definition."
 ---
 
-
-
 # Luxemburg drivers license number
 
 ## Format

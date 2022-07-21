@@ -40,13 +40,13 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
-- A keyword from Keyword_nz_terms is found.
+- The function `Func_new_zealand_ministry_of_health_number` finds content that matches the pattern.
+- A keyword from `Keyword_nz_terms` is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
+- The function `Func_new_zealand_ministry_of_health_number` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml

@@ -51,8 +51,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regex Regex_Finland_European_Health_Insurance_Number finds content that matches the pattern.
-- A keyword from Keyword_Finland_European_Health_Insurance_Number is found.
+- The regex `Regex_Finland_European_Health_Insurance_Number` finds content that matches the pattern.
+- A keyword from `Keyword_Finland_European_Health_Insurance_Number` is found.
 
 ```xml
       <!-- Finland European Health Insurance Number -->
@@ -63,6 +63,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
         </Pattern>
       </Entity>
 ```
+
 ## Keywords
 
 ### Keyword_finland_european_health_insurance_number

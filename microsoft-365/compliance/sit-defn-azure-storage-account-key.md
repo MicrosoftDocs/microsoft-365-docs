@@ -25,16 +25,16 @@ description: "Azure storage account key sensitive information type entity defini
 
 ## Format
 
-The string "DefaultEndpointsProtocol" followed by the characters and strings outlined in the pattern below, including the string "AccountKey".
+The string `DefaultEndpointsProtocol` followed by the characters and strings outlined in the pattern below, including the string `AccountKey`.
 
 ## Pattern
 
-- the string "DefaultEndpointsProtocol"
+- the string `DefaultEndpointsProtocol`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
 - any combination of between 1-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
-- the string "AccountKey"
+- the string `AccountKey`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
@@ -49,9 +49,9 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzureStorageAccountKey finds content that matches the pattern.
-- The regular expression CEP_AzureEmulatorStorageAccountFilter doesn't find content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
+- The regular expression `CEP_Regex_AzureStorageAccountKey` finds content that matches the pattern.
+- The regular expression `CEP_AzureEmulatorStorageAccountFilter` doesn't find content that matches the pattern.
+- The regular expression `CEP_CommonExampleKeywords` doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -70,13 +70,13 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### CEP_azure_emulator_storage_account_filter
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 ### CEP_common_example_keywords
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam

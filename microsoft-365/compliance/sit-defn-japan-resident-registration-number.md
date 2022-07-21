@@ -39,8 +39,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_jp_resident_registration_number finds content that matches the pattern.
-- A keyword from Keyword_jp_resident_registration_number is found.
+- The function `Func_jp_resident_registration_number` finds content that matches the pattern.
+- A keyword from `Keyword_jp_resident_registration_number` is found.
 
 ```xml
 <!-- Japan Resident Registration Number -->

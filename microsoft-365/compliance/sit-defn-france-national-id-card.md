@@ -39,8 +39,8 @@ No
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_france_cni finds content that matches the pattern.
-- A keyword from Keywords_france_eu_national_id_card is found.
+- The regular expression `Regex_france_cni` finds content that matches the pattern.
+- A keyword from `Keywords_france_eu_national_id_card` is found.
 
 ```xml
     <!-- France CNI -->

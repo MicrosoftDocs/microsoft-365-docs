@@ -39,12 +39,12 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- A keyword from Dictionary_icd_10_updated is found.
-- A keyword from Dictionary_icd_10_codes is found.
+- A keyword from `Dictionary_icd_10_updated` is found.
+- A keyword from `Dictionary_icd_10_codes` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- A keyword from Dictionary_icd_10_ updated is found.
+- A keyword from `Dictionary_icd_10_ updated` is found.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -61,6 +61,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Keywords
 
-Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for the term, not the insurance codes.
+Any term from the `Dictionary_icd_10_updated` keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for the term, not the insurance codes.
 
-Any term from the Dictionary_icd_10_codes keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for insurance codes, not the description.
+Any term from the `Dictionary_icd_10_codes` keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). This type looks only for insurance codes, not the description.

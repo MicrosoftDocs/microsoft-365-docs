@@ -21,7 +21,6 @@ recommendations: false
 description: "Malta identity card number sensitive information type entity definition."
 ---
 
-
 # Malta identity card number
 
 This sensitive information type is only available for use in:

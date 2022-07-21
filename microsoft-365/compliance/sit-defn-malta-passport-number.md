@@ -21,7 +21,6 @@ recommendations: false
 description: "Malta passport number sensitive information type entity definition."
 ---
 
-
 # Malta passport number
 
 ## Format

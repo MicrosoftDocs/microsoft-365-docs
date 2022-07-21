@@ -49,7 +49,6 @@ Various username and password formats, for example:
 `DB_USER=...;DB_PASS=********;` <br>
 `Service Account=...;Password=********;` <br>
 
-
 or
 
 ```xml
@@ -62,7 +61,6 @@ Inner XML content
 An embeded XML element </password>
 An XML element </login>
 ```
-
 
 for example
 
@@ -78,7 +76,6 @@ Various password formats in code snippets, for example:
 `"password" : "********"`<br>
 `UserPasswordCredential(` <br>
 
-
 or
 
 A combination of 86 characters:
@@ -92,7 +89,6 @@ A combination of 86 characters:
 for example:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
-
 
 ## Checksum
 

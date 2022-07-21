@@ -56,12 +56,12 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_belgium_value_added_tax_number finds content that matches the pattern.
-- A keyword from Keywords_belgium_value_added_tax_number is found.
+- The function `Func_belgium_value_added_tax_number` finds content that matches the pattern.
+- A keyword from `Keywords_belgium_value_added_tax_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_belgium_value_added_tax_number finds content that matches the pattern.
+- The function `Func_belgium_value_added_tax_number` finds content that matches the pattern.
 
 ```xml
       <!-- Belgium Value Added Tax Number -->

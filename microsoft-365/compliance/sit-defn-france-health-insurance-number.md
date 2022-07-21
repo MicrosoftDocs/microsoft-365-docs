@@ -53,8 +53,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- the regex Regex_France_Health_Insurance_Number finds content that matches the pattern.
-- a keyword from Keyword_France_Health_Insurance_Number is found.
+- the regex `Regex_France_Health_Insurance_Number` finds content that matches the pattern.
+- a keyword from `Keyword_France_Health_Insurance_Number` is found.
 
 ```xml
       <!-- France Health Insurance Number -->

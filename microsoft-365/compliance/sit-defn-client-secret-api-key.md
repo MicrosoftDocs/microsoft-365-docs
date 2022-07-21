@@ -90,7 +90,7 @@ A combination of 40 characters:
 
 - a-f or A-F (case-sensitive)
 
-or 
+or
 
 - 0-9
 

@@ -39,8 +39,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_canada_passport_number finds content that matches the pattern.
-- A keyword from Keyword_canada_passport_number or Keyword_passport is found.
+- The regular expression `Regex_canada_passport_number` finds content that matches the pattern.
+- A keyword from `Keyword_canada_passport_number` or `Keyword_passport` is found.
 
 ```xml
 <!-- Canada Passport Number -->

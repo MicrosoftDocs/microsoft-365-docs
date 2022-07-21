@@ -45,11 +45,11 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function Func_uk_nhs_number finds content that matches the pattern.
+- The function `Func_uk_nhs_number` finds content that matches the pattern.
 - One of the following is true:
-    - A keyword from Keyword_uk_nhs_number is found.
-    - A keyword from Keyword_uk_nhs_number1 is found.
-    - A keyword from Keyword_uk_nhs_number_dob is found.
+    - A keyword from `Keyword_uk_nhs_number` is found.
+    - A keyword from `Keyword_uk_nhs_number1` is found.
+    - A keyword from `Keyword_uk_nhs_number_dob` is found.
 - The checksum passes.
 
 ```xml
