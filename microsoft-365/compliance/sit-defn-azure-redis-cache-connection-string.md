@@ -25,13 +25,13 @@ description: "Azure Redis cache connection string sensitive information type ent
 
 ## Format
 
-The string "redis.cache.windows.<!--no-hyperlink-->net" followed by the characters and strings outlined in the pattern below, including the string "password" or "pwd".
+The string `redis.cache.windows.net` followed by the characters and strings outlined in the pattern below, including the string `password` or `pwd`.
 
 ## Pattern
 
-- the string "redis.cache.windows.<!--no-hyperlink-->net"
+- the string `redis.cache.windows.net`
 - any combination of between 1-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
-- the string "password" or "pwd"
+- the string `password` or `pwd`
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
@@ -46,8 +46,8 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzureRedisCacheConnectionString finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
+- The regular expression `CEP_Regex_AzureRedisCacheConnectionString` finds content that matches the pattern.
+- The regular expression `CEP_CommonExampleKeywords` doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -65,7 +65,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### CEP_common_example_keywords
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam
