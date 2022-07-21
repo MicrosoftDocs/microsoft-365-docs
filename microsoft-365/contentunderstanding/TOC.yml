@@ -185,7 +185,10 @@
           href: use-content-center-site.md 
 
     - name: Extensibility
-      href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+      items: 
+        - name: SharePoint Syntex REST API 
+          href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+
 
 
 
