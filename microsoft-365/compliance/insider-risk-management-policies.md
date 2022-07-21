@@ -23,7 +23,7 @@ Check out the [Insider Risk Management Policies Configuration video](https://www
 
 ## TEST SECTION FOR ERIN
 
-Thanks for doing this test, Erin. It won't help the other IRM PMs.
+Thanks for doing this test, Erin. It will help the other IRM PMs.
 
 ## Policy dashboard
 
