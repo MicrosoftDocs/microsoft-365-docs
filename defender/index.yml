@@ -23,9 +23,6 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Learning 
-      itemType: how-to-guide
-      url: solutions/empower-people-to-work-remotely.md
     - title: Remote learning with Microsoft Teams
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
@@ -34,6 +31,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Microsoft Defender products and services # < 60 chars (optional)
+  sections:
   items:
     # Card
     - title: Microsoft 365 Defender 
