@@ -83,8 +83,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 6. When you're finished, click **Submit**.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="The New URL submission process" lightbox="../../media/submission-flyout-email.png":::
+   > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="The New URL submission process" lightbox="../../media/submission-flyout-email.png":::
 
 ## Report questionable URLs to Microsoft
 
@@ -102,7 +101,6 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 5. When you're finished, click **Submit**.
 
-    > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="The New Email submission process" lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
@@ -124,7 +122,6 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 4. When you're finished, click **Submit**.
 
-    > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="The New Attachment submission process" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
@@ -161,7 +158,6 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
      > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
@@ -178,7 +174,6 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
      > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
@@ -339,7 +334,6 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
      > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="The New Filter options for user submissions" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
@@ -375,8 +369,7 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Report spam**
 - **Trigger investigation**
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+  :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
 
 If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
 
