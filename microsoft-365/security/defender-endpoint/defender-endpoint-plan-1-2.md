@@ -72,11 +72,22 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 
 | Scenario | Description |
 |:---|:---|
-| Mixed tenant | Use different sets of capabilities for groups of users. Examples:<br/>- Using Defender for Endpoint Plan 1 to some users, and Defender for Endpoint Plan 2 for other users <br/>- Using Microsoft 365 E3 for some users, and Microsoft 365 E5 for other users <br/>- Using Defender for Business for up to 300 users, and Defender for Endpoint Plan 1 for additional users (see the [FAQ for Defender for Business](../defender-business/mdb-faq.yml))   |
+| Mixed tenant | Use different sets of capabilities for groups of users. Examples:<br/>- Using Defender for Endpoint Plan 1 to some users, and Defender for Endpoint Plan 2 for other users <br/>- Using Microsoft 365 E3 for some users, and Microsoft 365 E5 for other users    |
 | Mixed trial | Try a premium level subscription for some users. Examples: <br/>- Defender for Endpoint Plan 1 (purchased for most users), and Defender for Endpoint Plan 2 (trial for some users) <br/>Microsoft 365 E3 (purchased for most users), and Microsoft 365 E5 (trial for some users) |
 | Phased upgrades | Upgrade user licenses in phases. Examples:<br/>- Moving groups of users from Defender for Endpoint Plan 1 to Defender for Endpoint Plan 2 <br/>- Moving groups of users from Microsoft 365 E3 to Microsoft 365 E5   |
 
-**Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. In this example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
+> [!NOTE]
+> Microsoft 365 E3 includes Defender for Endpoint Plan 1, and Microsoft 365 E5 includes Defender for Endpoint Plan 2.
+
+### Choose your subscription state
+
+Up until recently, in cases of mixed licenses, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Referring to the preceding examples, the tenant experience would be Defender for Endpoint Plan 2 or Microsoft 365 E5 for all users. However, you now have more options available. For example, you can choose to set your subscription state to:
+
+- Use Defender for Endpoint Plan 1 features and capabilities across all onboarded devices
+- Use Defender for Endpoint Plan 2 features and capabilities across all onboarded devices
+- Choose which devices receive Defender for Endpoint Plan 1 or Plan 2 features and capabilities
+
+
 
 However, **you can contact support and request an override for your tenant experience**. That is, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users. 
 
