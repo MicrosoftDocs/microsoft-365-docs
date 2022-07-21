@@ -134,7 +134,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
      - **Submission name**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Recipient**
@@ -158,7 +158,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -174,7 +174,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
+     :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -191,7 +191,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **Email attachments** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
      - **Attachment name**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
@@ -238,7 +238,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **URLs** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
      - **URL**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
@@ -298,7 +298,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show the options. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show the options. The default values are marked with an asterisk (*):
 
      - **Email subject**<sup>\*</sup>
      - **Reported by**<sup>\*</sup>
