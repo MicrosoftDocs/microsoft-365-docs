@@ -89,8 +89,11 @@ Up until recently, in cases of mixed licenses, the highest functional Microsoft 
 
 ### Use device tagging for mixed licenses
 
+HOW TO GOES HERE
 
-
+<!---
+https://www.figma.com/file/4cBJUoIO9Z6mH3TbnUiRhC/M365-MDE-SMB?node-id=9687%3A156437
+--->
 
 ## Start a trial
 
