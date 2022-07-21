@@ -68,14 +68,13 @@ The standalone versions of Defender for Business, Defender for Endpoint Plan 1 a
 
 ## Mixed licensing scenarios
 
-A mixed licensing scenario is a situation in which an organization is using a mix of Microsoft endpoint security subscriptions. The following table describes some examples of mixed licensing scenarios:
+A mixed licensing scenario is a situation in which an organization is using a mix of Microsoft endpoint security subscriptions. The following table lists a few examples. 
 
 | Scenario | Description |
 |:---|:---|
-| Mixed trial | Try a higher level subscription for some users. Examples: <br/>- Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (trial for some users) <br/>Microsoft 365 E3 (purchased for all users), and Defender for Endpoint Plan 2 (trial for some users) |
-| Phased upgrades | Upgrade user licenses in phases. Examples:   |
-| Mixed tenant | Use different sets of capabilities for groups of users. Examples:   |
-
+| Mixed trial | Try a premium level subscription for some users. Examples: <br/>- Defender for Endpoint Plan 1 (purchased for most users), and Defender for Endpoint Plan 2 (trial for some users) <br/>Microsoft 365 E3 (purchased for most users), and Microsoft 365 E5 (trial for some users) |
+| Phased upgrades | Upgrade user licenses in phases. Examples:<br/>- Moving groups of users from Defender for Endpoint Plan 1 to Defender for Endpoint Plan 2 <br/>- Moving groups of users from Microsoft 365 E3 to Microsoft 365 E5   |
+| Mixed tenant | Use different sets of capabilities for groups of users. Examples:<br/>- Using Defender for Endpoint Plan 1 to some users, and Defender for Endpoint Plan 2 for other users <br/>- Using Microsoft 365 E3 for some users, and Microsoft 365 E5 for other users <br/>- Using Defender for Business for up to 300 users, and Defender for Endpoint Plan 1 for additional users (see the [FAQ for Defender for Business](../defender-business/mdb-faq.yml))   |
 
 **Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. In this example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
 
