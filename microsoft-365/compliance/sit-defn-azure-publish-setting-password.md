@@ -25,11 +25,11 @@ description: "Azure publish setting password sensitive information type entity d
 
 ### Format
 
-The string "userpwd=" followed by an alphanumeric string.
+The string `userpwd=` followed by an alphanumeric string.
 
 ### Pattern
 
-- the string "userpwd="
+- the string `userpwd=`
 - any combination of 60 lowercase letters or digits
 - a quotation mark (")
 
@@ -41,8 +41,8 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression CEP_Regex_AzurePublishSettingPasswords finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
+- The regular expression `CEP_Regex_AzurePublishSettingPasswords` finds content that matches the pattern.
+- The regular expression `CEP_CommonExampleKeywords` doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure Publish Setting Password-->
