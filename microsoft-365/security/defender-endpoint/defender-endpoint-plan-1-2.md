@@ -89,15 +89,6 @@ Up until recently, in cases of mixed licenses, the highest functional Microsoft 
 
 
 
-However, **you can contact support and request an override for your tenant experience**. That is, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users. 
-
-- For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
-- For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
-
-> [!TIP]
-> If your organization is a small or medium-sized business, see the following articles:
-> - [What is Microsoft Defender for Business?](../defender-business/mdb-overview.md)
-> - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
 ## Start a trial
 
