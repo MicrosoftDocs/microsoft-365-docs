@@ -84,7 +84,7 @@ Identifying and resolving internal risk activities and compliance issues with in
 
 ### Policies
 
-[Insider risk management policies](insider-risk-management-policies.md) are created using pre-defined templates and policy conditions that define what triggering events and risk indicators are examined in your organization. These conditions include how risk indicators are used for alerts, what users are included in the policy, which services are prioritized, and the monitoring time period.
+[Insider risk management policies](insider-risk-management-policies.md) are created using pre-defined templates and policy conditions that define what triggering events and risk indicators are examined in your organization. These conditions include how risk indicators are used for alerts, what users are included in the policy, which services are prioritized, and the detection time period.
 
 You can select from the following policy templates to quickly get started with insider risk management:
 

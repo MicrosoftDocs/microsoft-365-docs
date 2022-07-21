@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Find resources about how to set up and manage Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -39,10 +38,13 @@ The resources in this section help the admin in your organization to set up and 
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Learn how to set up and manage access to Whiteboard for your organization|[Manage access to Whiteboard](manage-whiteboard-access-organizations.md)|
+|Learn how to set up Whiteboard for your organization|[Set up and use Whiteboard](/surface-hub/whiteboard-collaboration)|
+|Deploy Whiteboard on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager|[Deploy Microsoft Whiteboard on Windows devices](deploy-on-windows-organizations.md)|
+|Learn how to manage access to Whiteboard for your organization|[Manage access to Whiteboard](manage-whiteboard-access-organizations.md)|
 |Find where your Whiteboard content and data are stored in Azure and OneDrive for Business  |[Manage data for Whiteboard](manage-data-organizations.md)  |
 |Learn about the sharing experience in Teams and how to share links to specific users  |[Manage sharing for Whiteboard](manage-sharing-organizations.md)  |
-|Deploy Whiteboard on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager  |[Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)  |
+|Learn how to configure privacy settings and diagnostic data for Whiteboard |[Configure privacy settings in Whiteboard](configure-privacy-settings.md)  |
+|Learn how to manage General Data Protection Regulation (GDPR) requirements for personal data collected in Whiteboard |[Manage GDPR data subject requests in Whiteboard](gdpr-requests.md)  |
 
 ### For government
 

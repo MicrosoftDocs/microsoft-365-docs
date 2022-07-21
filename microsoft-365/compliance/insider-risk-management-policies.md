@@ -335,7 +335,7 @@ Complete the following steps to manage an existing policy:
 2. On the policy dashboard, select the policy you want to manage.
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you can't edit the following:
-    - **Policy template**: The template used to define the types of risk indicators monitored by the policy.
+    - **Policy template**: The template used to define the types of risk indicators detected by the policy.
     - **Name**: The friendly name for the policy
 5. On the **Name and description** page, update the description for the policy in the **Description** field.
 6. Select **Next** to continue.

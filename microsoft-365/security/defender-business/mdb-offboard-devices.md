@@ -23,7 +23,7 @@ ms.collection:
 If you want to offboard a device, use one of the following procedures:
 
 - [Offboard a Windows device](#offboard-a-windows-device)
-- [Offboard a macOS computer](#offboard-a-macos-computer)
+- [Offboard a Mac](#offboard-a-mac)
 
 ## Offboard a Windows device
 
@@ -41,11 +41,11 @@ If you want to offboard a device, use one of the following procedures:
 
 7. Run the script on each device that you want to offboard.
 
-## Offboard a macOS computer
+## Offboard a Mac
 
 1. Go to **Finder** > **Applications**. 
 
-2. Right click on Microsoft Defender for Business, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. Right click on **Microsoft Defender for Business**, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
