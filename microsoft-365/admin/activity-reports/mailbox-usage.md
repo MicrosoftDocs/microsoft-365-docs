@@ -23,7 +23,7 @@ description: "Learn how to get the Mailbox usage report to find out about activi
 
 # Microsoft 365 Reports in the admin center - Mailbox usage
 
-The **Mailbox usage report** provides information about users with a user mailbox and the level of activity by each based on the email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas. 
+The **Mailbox usage report** provides information about users with a user mailbox and the level of activity by each based on the email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas. The mailbox usage report also contains information on mailboxes shared amongst users, providing storage and quota data on shared mailboxes.
  
 ## How to get to the mailbox usage report
 
@@ -34,6 +34,8 @@ The **Mailbox usage report** provides information about users with a user mailbo
 ## Interpret the mailbox usage report
 
 You can get a view into your organization's **Mailbox usage** by looking at the **Mailbox**, **Storage** and **Quota** charts.
+
+To access shared mailbox information, change the drop-down selection at the top right of the charts to **Shared**.  If your tenant does not have shared mailboxes, you will not be able to view any shared mailbox information.  Also note that if you’ve opted to view shared charts, currently you will not be able to export the chart information. This is a known issue and will be corrected in a future iteration.
   
 :::image type="content" alt-text="Mailbox usage report." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
@@ -49,7 +51,9 @@ The **Quota** chart shows you the number of user mailboxes in each quota categor
 - Can't send: The number of users whose storage used is at or above the prohibit send quota, but below the prohibit send/receive quota.
 - Can't send/receive: The number of users whose storage used is at or above the "prohibit send/receive" quota.
 
-On the Mailbox chart, the Y axis is the count of user mailboxes. 
+### How to interpret chart data
+
+On the Mailbox chart, the Y axis is the number of user mailboxes. 
 
 On the Storage chart, the Y axis is the amount of storage being used by user mailboxes in your organization.
 
@@ -58,6 +62,8 @@ The X axis on the Mailbox and Storage charts is the selected date range for this
 On the Quota chart, the Y axis is the number of user mailboxes in each storage quota. And the X axis is the quota category.
 
 You can filter charts you see by selecting an item in the legend.
+
+## Mailbox usage per user table
 
 The table shows you a breakdown of mailbox usage at the per-user level. You can add additional columns to the table. 
 
