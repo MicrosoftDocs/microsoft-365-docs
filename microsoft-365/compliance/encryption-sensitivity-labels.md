@@ -346,9 +346,9 @@ Now rolling out in preview for built-in labeling in Windows, users can specify a
 
 ![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
 
-For example, a user types "@sales.contoso.com" (or "sales.contoso.com") and grants read access. Because Contoso Corporation owns the sales.contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
+For example, a user types "@contoso.com" (or "contoso.com") and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
 
-It's important to let users know that access isn't restricted to just the users in the domain specified. For example, the "sales.contoso.com" entry would also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
+It's important to let users know that access isn't restricted to just the users in the domain specified. For example, "@sales.contoso.com" entry wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
 
 ## Example configurations for the encryption settings
 
