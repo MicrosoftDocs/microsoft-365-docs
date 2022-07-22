@@ -71,57 +71,31 @@ Follow the steps below to update status, evidence, notes, or other data in multi
 > [!NOTE]
 > The improvement action update process can't be used to add new improvement actions to Compliance Manager. To add a new improvement action that doesn't already exist in Compliance Manager, you'll need to [create a custom assessment template](compliance-manager-templates-create.md). A custom template  requires you to format and upload a different Excel spreadsheet with action and control-mapping data. See specifically the "Actions tab" formatting instructions at [how to format assessment template data in Excel](compliance-manager-templates-format-excel.md).  
 
-## Updating actions from the Improvement actions page
+## Steps for updating actions
 
-Follow the instructions below to update improvement actions by starting from the **Improvement actions** page. You can filter your list of actions to more easily select the actions you want to update.
+The following steps outline the process for bringing compliance activity data into your assessments, and for making updates to improvement actions.
 
-1. In Compliance Manager, go to the **Improvement actions** page.
+1. In Compliance Manager, begin from either from the **Assessments** page or the **Improvement actions** page.
 
-2. Select the checkbox next to the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
+2. If starting from the **Improvement actions** page: Select the checkbox next to the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
+ 
+3. If starting from the **Assessments** page: Select the checkbox next to the assessment containing the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
 
-3. An Excel file will download, which contains all the data related to the actions. Open the file and refer to the formatting instructions on the tab labeled **How to update actions.**
+4. An Excel file will download, which contains all the data related to the actions. Open the file and refer to the formatting instructions on the tab labeled **How to update actions.**
 
-4. Edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
+5. Edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
 
-5. On the **Improvement actions** page, select the **Update actions** command, located above the list of actions. This action will open an improvement actions update wizard.
+6. On the **Improvement actions** page, select the **Update actions** command, located above the list of actions. This action will open an improvement actions update wizard.
 
-6. The first page reminds you of the main prerequisites. Check the boxes next to the reminders, then continue the process by selecting **Next**.
+7. The first page reminds you of the main prerequisites. Check the boxes next to the reminders, then continue the process by selecting **Next**.
 
-7. On the **Import updated improvement actions** page, select **Browse** to locate your updated Excel file from the location you saved it. When After selecting your file, select **Next**. If there are any problems with the format of your file, an error message will give instructions for fixing the problem. Upload your corrected file again, then select **Next**.
+8. On the **Import updated improvement actions** page, select **Browse** to locate your updated Excel file from the location you saved it. When After selecting your file, select **Next**. If there are any problems with the format of your file, an error message will give instructions for fixing the problem. Upload your corrected file again, then select **Next**.
 
-8. On the **Review and finish** page, review the summary showing the number of actions that will be updated, their associated assessments, and how they affect your compliance score. From here you can upload a different file, or continue with the upload by selecting **Update actions**.
+9. On the **Review and finish** page, review the summary showing the number of actions that will be updated, their associated assessments, and how they affect your compliance score. From here you can upload a different file, or continue with the upload by selecting **Update actions**.
 
-9. When your file has been successfully uploaded, you'll see a confirmation screen. Select **Finish** to exit the wizard and arrive back at your **Improvement actions** page.
-
-Most of the updates will take effect right away, but it may take up to a day for all the updated information to be fully reflected in Compliance Manager.
-
-> [!NOTE]
-> Control mapping won't be included in the Excel file that's downloaded when you *Export* actions. Control mapping is handled via the process of creating an assessment template using a [differently formatted Excel file for importing template data](compliance-manager-templates-format-excel.md).
-
-## Updating actions from the Assessments page
-
-Follow the instructions below to update improvement actions by starting from the **Assessments** page. When you select an assessment, the exported Excel file will contain all the improvement actions for controls that are mapped to that assessment.
-
-1. In Compliance Manager, go to the **Assessments** page.
-
-2. Select the checkbox next to the assessment containing the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
-
-3. An Excel file will download, which contains all the data related to the actions. Open the file and refer to the formatting instructions on the tab labeled **How to update actions.**
-
-4. Edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
-
-5. On the **Assessments** page, select the **Update actions** command, located above the list of actions. This action will open an improvement actions update wizard.
-
-6. The first page reminds you of the main prerequisites. Check the boxes next to the reminders, then continue the process by selecting **Next**.
-
-7. On the **Import updated improvement actions** page, select **Browse** to locate your updated Excel file from the location you saved it. When After selecting your file, select **Next**. If there are any problems with the format of your file, an error message will give instructions for fixing the problem. Upload your file again, then select **Next**.
-
-8. On the **Review and finish** page, review the summary showing the number of actions that will be updated, their associated assessments, and how they affect compliance score. From here you can upload a different file, or continue with the upload by selecting **Update actions**.
-
-9. When your file has been successfully uploaded, you'll see a confirmation screen. Select **Finish** to exit the wizard and arrive back at your **Improvement actions** page.
+10. When your file has been successfully uploaded, you'll see a confirmation screen. Select **Finish** to exit the wizard and arrive back at your **Improvement actions** page.
 
 Most of the updates will take effect right away, but it may take up to a day for all the updated information to be fully reflected in Compliance Manager.
 
 > [!NOTE]
 > Control mapping won't be included in the Excel file that's downloaded when you *Export* actions. Control mapping is handled via the process of creating an assessment template using a [differently formatted Excel file for importing template data](compliance-manager-templates-format-excel.md).
-
