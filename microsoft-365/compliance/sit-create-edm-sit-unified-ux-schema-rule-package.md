@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Create EDM SIT using the new experience
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can create the EDM schema and sensitive information type (or rule package) using the new experience in the compliance portal.
 
 ## Applies to
