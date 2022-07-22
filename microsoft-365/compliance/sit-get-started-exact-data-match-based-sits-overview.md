@@ -15,7 +15,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Get started creating exact data match based sensitive information types.
+description: Get an overview of creating exact data match based sensitive information types.
 ms.custom: seo-marvel-apr2020
 
 ---
