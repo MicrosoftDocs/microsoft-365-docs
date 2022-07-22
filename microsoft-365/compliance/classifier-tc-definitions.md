@@ -61,10 +61,10 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
-
-ANNAPURNA INTEGRATE YOUR TC DEFINITIONS IN ALPHABETICAL ORDER IN THE LIST ABOVE THIS LINE. MERGE YOUR PR INTO THIS WORKING BRANCH NOT MAIN. OPEN THIS LINK TO EDIT https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/chrfox-tc-definitions/microsoft-365/compliance/classifier-tc-definitions.md  CONTACT ME BEFORE YOU EDIT SO I CAN SHOW YOU HOW TO MERGE PROPERLY
-
-this is a change
+- 
+<!--KC, PLEASE INSERT THE CELA APPROVED DEFN INTO THE ABOVE LIST IN ALPHABETICAL ORDER -->
+<!--KC, WHEN ANNAPURNA AND SWATI ARE DONE WITH THIS FILE https://microsoft-my.sharepoint-df.com/:t:/p/chrfox/EaSdmzpR-cRBrrq-2kYHwfYBPl1CNmhSRQNRg9HrYRnj1w?e=pzQ3b6 PLEASE INSERT THE CELA APPROVED DEFN INTO THE ABOVE LIST IN ALPHABETICAL ORDER -->
+<!--KC, PLEASE INSERT THE CELA APPROVED DEFN INTO THE ABOVE LIST IN ALPHABETICAL ORDER -->
 
 These classifiers appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
