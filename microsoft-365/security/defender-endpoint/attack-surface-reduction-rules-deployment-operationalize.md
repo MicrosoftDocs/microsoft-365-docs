@@ -18,7 +18,7 @@ ms.technology: mde
 ms.topic: article
 ms.collection: 
  - M365-security-compliance
-- m365solution-asr-rules
+ - m365solution-asr-rules
 ms.date: 1/18/2022
 ---
 
