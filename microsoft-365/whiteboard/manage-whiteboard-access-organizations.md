@@ -1,7 +1,7 @@
 ---
 title: Manage access to Microsoft Whiteboard for your organization
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin

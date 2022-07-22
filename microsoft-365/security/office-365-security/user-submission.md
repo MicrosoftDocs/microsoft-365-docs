@@ -35,7 +35,7 @@ This feature works with these message reporting options:
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- [Third-party reporting tools](#third-party-reporting-tools)
+- [Third-party reporting tools](user-submission.md#third-party-email-reporting-tools)
 
 Delivering user-reported messages to a custom mailbox instead of directly to Microsoft allows admins to selectively and manually report email messages to Microsoft using [Admin submission](admin-submission.md). *These settings were formerly known as the User submissions policy*.
 
