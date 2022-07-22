@@ -38,9 +38,11 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex. Depending on the types of files you want to classify and extract information from, you can choose to either build a [custom model](#custom-models) or use a [prebuilt model](#prebuilt-models).
+The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex.
 
 <!---
+Depending on the types of files you want to classify and extract information from, you can choose to either build a [custom model](#custom-models) or use a [prebuilt model](#prebuilt-models).
+
 There are three custom model types you can choose from:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
