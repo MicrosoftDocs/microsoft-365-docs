@@ -15,9 +15,7 @@
     - name: Content understanding models
       items:
             - name: Model types
-              href: custom-models-overview.md 
-            - name: Compare models 
-              href: difference-between-document-understanding-and-form-processing-model.md 
+              href: model-types-overview.md 
             - name: Local models 
               href: create-local-model.md 
             - name: Create a model
@@ -51,8 +49,6 @@
                     - name: Work with explanations
                       href: powershell-syntex-explanations.md
 
-
-
     - name: Custom models
       items:
             - name: Compare custom models 
@@ -81,7 +77,6 @@
                       href: rename-an-extractor.md
                 - name: Duplicate a model
                   href: duplicate-a-model.md
-
  
             - name: Extract by layout
               items:
@@ -147,9 +142,11 @@
         - name: Assess your environment
           href: adoption-assessment-tool.md 
         - name: Run a trial
-          href: trial-syntex.md 
-        - name: Manage contracts in Microsoft 365
+          href: trial-syntex.md
+        - name: Solutions
           items:
+            - name: Manage contracts in Microsoft 365
+              items:
             - name: Overview
               href: solution-manage-contracts-in-microsoft-365.md 
             - name: Step 1. Use SharePoint Syntex

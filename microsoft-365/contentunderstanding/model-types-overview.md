@@ -16,26 +16,36 @@ ms.localizationpriority:  medium
 description: Learn about custom models in Microsoft SharePoint Syntex.
 ---
 
-# Overview of custom models in Microsoft SharePoint Syntex
+# Overview of model types in Microsoft SharePoint Syntex
 
 Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
-Three custom model types are available:
+SharePoint Syntex uses custom models and prebuilt models. 
+
+Custom models include:
 
 - [Classify and extract by text pattern](#classify-and-extract-by-text-pattern)
 - [Extract by layout](#extract-by-layout)
 - [Extract by text pattern and layout](#extract-by-text-pattern-and-layout)
 
+To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
+
+
+Prebuilt models include:
+
+- [Invoices](prebuilt-models.md)
+- [Receipts](prebuilt-models.md)
+
 [image]
 
 The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
 
-To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
-
 > [!NOTE]
 > If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
 
-## Classify and extract by text pattern
+## Custom models
+
+### Classify and extract by text pattern
 
 Use the **Classify and extract by text pattern** model to automatically classify documents and extract information from them. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
@@ -45,7 +55,7 @@ For example, an unstructured document could be a contract renewal letter that ca
 
 For more information, see [Overview of classification and extraction by text pattern](document-understanding-overview.md).
 
-## Extract by layout
+### Extract by layout
 
 Use the **Extract by layout** model to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
@@ -55,7 +65,7 @@ These models are trained to understand the layout of your form from example docu
 
 For more information, see [Overview of extraction by layout](form-processing-overview.md).
 
-## Extract by text pattern and layout
+### Extract by text pattern and layout
 
 Use the **Extract by text pattern and layout** model to automatically extract information from unstructured and free-form documents such as letters and contracts.
 
@@ -65,6 +75,21 @@ Because your organization receives letters and documents in large quantities fro
 
 For more information, see [Overview of extraction by text pattern and layout](extract-by-text-pattern-and-layout-overview.md).
 
+## Prebuilt models
+
+If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
+
+Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
+
+### Invoice models
+
+The invoice prebuilt model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
+
+### Receipt models
+
+The receipt prebuilt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+
+For more information about prebuilt models, see [Overview of prebuilt models](prebuilt-overview.md).
 
 
 <!---
