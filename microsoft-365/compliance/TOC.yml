@@ -1575,7 +1575,7 @@
               href: permissions-filtering-for-content-search.md
             - name: Content stored in mailboxes for eDiscovery
               href: what-is-stored-in-exo-mailbox.md
-            - name: eDiscovery Graph connector
+            - name: eDiscovery for Graph connectors
               href: ediscovery-graph-connector.md  
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
