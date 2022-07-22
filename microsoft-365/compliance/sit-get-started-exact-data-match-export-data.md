@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Export source data for exact data match based sensitive information type
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Applies to
 
 - [New experience](sit-create-edm-sit-unified-ux-workflow.md)

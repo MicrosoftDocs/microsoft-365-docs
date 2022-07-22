@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Applies to
 
 - Classic experience

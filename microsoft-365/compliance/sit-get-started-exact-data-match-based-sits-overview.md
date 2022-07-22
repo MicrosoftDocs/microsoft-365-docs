@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 ---
 # Get started with exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Applies to 
 
 - [New experience](sit-create-edm-sit-unified-ux-workflow.md)

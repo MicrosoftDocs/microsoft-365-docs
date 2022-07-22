@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 [Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. They are also used to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
 
 - patterns

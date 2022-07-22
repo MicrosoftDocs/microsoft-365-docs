@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Applies to
 
 - [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
