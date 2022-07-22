@@ -140,7 +140,6 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 - Device is a non-Windows (Mac or Linux) device
 - Cloud protection is not enabled
 
-
 > [!NOTE]
 >
 > Currently, "Up-to-date" reporting is only available for Windows devices.  Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 19000.1 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
