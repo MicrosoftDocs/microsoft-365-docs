@@ -50,7 +50,7 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 > - An OMS gateway server cannot be used as proxy for disconnected Windows or Windows Server devices when configured via 'TelemetryProxyServer' registry or GPO.
 > - For Windows or Windows Server - while you may use TelemetryProxyServer, it must point to a standard proxy device or appliance.
 
-- Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
+- Set up Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
   - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
 
