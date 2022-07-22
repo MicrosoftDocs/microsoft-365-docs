@@ -71,7 +71,10 @@ Follow the steps below to update status, evidence, notes, or other data in multi
 3. **Upload the Excel file.** Upload your edited Excel file by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
 
 > [!NOTE]
-> The improvement action update process can't be used to add new improvement actions to Compliance Manager. To add a new improvement action that doesn't already exist in Compliance Manager, you'll need to [create a custom assessment template](compliance-manager-templates-create.md). A custom template  requires you to format and upload a different Excel spreadsheet with action and control-mapping data. See specifically the "Actions tab" formatting instructions at [how to format assessment template data in Excel](compliance-manager-templates-format-excel.md).  
+> The improvement action update process can't be used to add new improvement actions to Compliance Manager. Adding a new action requires the [creation of a custom assessment template](compliance-manager-templates-create.md), which involves a different type of Excel file with action and control-mapping data. See specifically the "Actions tab" formatting instructions at [how to format assessment template data in Excel](compliance-manager-templates-format-excel.md).
+
+> [!NOTE]
+> If you export the improvement actions from an assessment, the exported Excel file will include control-mapping data for that assessment. However, you won't be able to change the control-mapping data when you re-upload your spreadsheet.
 
 ## Steps for updating actions
 
@@ -89,15 +92,15 @@ The following steps outline the process for bringing compliance activity data in
 
 5. Edit the information on the **Action Update** tab of the spreadsheet according to the formatting instructions. Then save your updated version of the Excel file to your computer.
 
-6. On the **Improvement actions** page, select the **Update actions** command, located above the list of actions. This action will open an improvement actions update wizard.
+6. On your **Assessments** page or **Improvement actions** page, select the **Update actions** command, which will open the improvement actions update wizard.
 
-7. The first page reminds you of the main prerequisites. Check the boxes next to the reminders, then continue the process by selecting **Next**.
+7. The first page in the wizard lists the main prerequisites: that all improvement actions must be associated to at least one assessment, and that your data needs to be formatted in an Excel file for upload. Check the boxes next to the reminders, then continue the process by selecting **Next**.
 
-8. On the **Import updated improvement actions** page, select **Browse** to locate your updated Excel file from the location you saved it. When After selecting your file, select **Next**. If there are any problems with the format of your file, an error message will give instructions for fixing the problem. Upload your corrected file again, then select **Next**.
+8. On the **Import updated improvement actions** page, select **Browse** to locate your updated Excel file from its saved location, then select **Next**. If there are any problems with the format of your file, an error message will give instructions for fixing the problem. Upload your corrected file again, then select **Next**.
 
 9. On the **Review and finish** page, review the summary showing the number of actions that will be updated, their associated assessments, and how they affect your compliance score. From here you can upload a different file, or continue with the upload by selecting **Update actions**.
 
-10. When your file has been successfully uploaded, you'll see a confirmation screen. Select **Finish** to exit the wizard and arrive back at your **Improvement actions** page.
+10. When your file has been successfully uploaded, you'll see a confirmation screen. Select **Finish** to exit the wizard and arrive back at the page where you began the update actions process.
 
 Most of the updates will take effect right away, but it may take up to a day for all the updated information to be fully reflected in Compliance Manager.
 
