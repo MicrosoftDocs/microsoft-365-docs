@@ -27,13 +27,13 @@ ms.collection: M365-security-compliance
 **Platforms**
 - Windows
 
-You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). **Generally, you don't need to apply exclusions**. If you do need to apply exclusions, you can choose from several different kinds:
+You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). **Generally, you don't need to apply exclusions**. If you do need to apply exclusions, then you can choose from the following:
 
 - Exclusions based on file extensions and folder locations (described in this article)
 - [Exclusions for files that are opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, such as [attack surface reduction (ASR) rules](attack-surface-reduction.md) and [controlled folder access](controlled-folders.md). Files that you exclude using the methods described in this article can still trigger endpoint detection and response (EDR) alerts and other detections.
+> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, such as [attack surface reduction (ASR) rules](attack-surface-reduction.md) and [controlled folder access](controlled-folders.md). Files that you exclude using the methods described in this article can still trigger Endpoint Detection and Response (EDR) alerts and other detections.
 > To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](manage-indicators.md).
 
 ## Before you begin
@@ -96,7 +96,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 > [!NOTE]
 > If you specify a fully qualified path to a file, then only that file is excluded. If a folder is defined in the exclusion, then all files and sub-directories under that folder are excluded.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and then select **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and select **Administrative templates**.
 
@@ -277,7 +277,7 @@ The following table lists and describes the system account environment variables
 
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list using one of the following methods:
+You can retrieve the items in the exclusion list by using one of the following methods:
 
 - [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
@@ -289,7 +289,7 @@ You can retrieve the items in the exclusion list using one of the following meth
 > Exclusion list changes made with Group Policy **will show** in the lists of [Windows Security app](microsoft-defender-security-center-antivirus.md).
 > Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
-If you use PowerShell, you can retrieve the list in two ways:
+If you use PowerShell, you can retrieve the list in the following two ways:
 
 - Retrieve the status of all Microsoft Defender Antivirus preferences. Each list is displayed on separate lines, but the items within each list are combined into the same line.
 - Write the status of all preferences to a variable, and use that variable to only call the specific list you are interested in. Each use of `Add-MpPreference` is written to a new line.
