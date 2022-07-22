@@ -43,40 +43,41 @@ The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 d
 
 ### The Mailbox chart
 
-The **Mailbox** chart shows you the total number of user mailbox in your organization, and the total number that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.
+The **Mailbox** chart shows you the total number of user or shared mailboxes in your organization, and the total number that are active on any given day of the reporting period. A user or shared mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.
 
 On the Mailbox chart:
-- The Y axis is the number of user mailboxes. 
+- The Y axis is the number of user or shared mailboxes. 
 - The X axis is the selected date range for this specific report.
 
 ### The Storage chart
 
-The **Storage** chart shows you amount of storage used in your organization. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving in Microsoft 365](../../compliance/autoexpanding-archiving.md).
+The **Storage** chart shows you amount of storage used in your organization by mailbox type. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving in Microsoft 365](../../compliance/autoexpanding-archiving.md).
 
 On the Storage chart:
-- The Y axis is the amount of storage being used by user mailboxes in your organization.
+- The Y axis is the amount of storage being used by user or shared mailboxes in your organization.
 - The X axis is the selected date range for this specific report.
 
 ### The Quota chart
 
-The **Quota** chart shows you the number of user mailboxes in each quota category. There are four quota categories: 
-- Good: The number of users whose storage used is below the "issue warning" quota.
-- Warning: The number of users whose storage used is at or above the "issue warning" quota, but below the "prohibit send" quota.
-- Can't send: The number of users whose storage used is at or above the prohibit send quota, but below the prohibit send/receive quota.
-- Can't send/receive: The number of users whose storage used is at or above the "prohibit send/receive" quota.
+The **Quota** chart shows you the number of user or shared mailboxes in each quota category. There are four quota categories: 
+- Good: The number of users or shared mailboxes whose storage used is below the "issue warning" quota.
+- Warning: The number of users or shared mailboxes whose storage used is at or above the "issue warning" quota, but below the "prohibit send" quota.
+- Can't send: The number of users or shared mailboxes whose storage used is at or above the prohibit send quota, but below the prohibit send/receive quota.
+- Can't send/receive: The number of users or shared mailboxes whose storage used is at or above the "prohibit send/receive" quota.
 
 On the Quota chart:
-- The Y axis is the number of user mailboxes in each storage quota.
+- The Y axis is the number of user or shared mailboxes in each storage quota.
 - The X axis is the quota category.
 
 You can filter charts you see by selecting an item in the legend.
 
-## Mailbox usage per user table
+## Mailbox usage per mailbox table
 
-This table shows you a breakdown of mailbox usage at the per-user level. You can add additional columns to the table. 
+This table shows you a breakdown of mailbox usage at the per mailbox level. You can add additional columns to the table. 
 
 |Item|Description|
 |:-----|:-----|
+|Recipient type |Either Shared or User. |
 |User name |The email address of the user. |
 |Display Name  |The full name of the user. |
 |Deleted |The mailbox whose current state is deleted, but was active during some part of the reporting period of the report.|
