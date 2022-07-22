@@ -83,14 +83,13 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 6. When you're finished, click **Submit**.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="The New URL submission process" lightbox="../../media/submission-flyout-email.png":::
+   > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="The New URL submission process" lightbox="../../media/submission-flyout-email.png":::
 
 ## Report questionable URLs to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **URLs** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.****
+2. On the **Submissions** page, verify that the **URLs** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
 3. In the **URL** box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
@@ -102,7 +101,6 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 5. When you're finished, click **Submit**.
 
-    > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="The New Email submission process" lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
@@ -124,12 +122,11 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 4. When you're finished, click **Submit**.
 
-    > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="The New Attachment submission process" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
-> File ubmissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File will be greyed out.
+> File submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File will be greyed out.
 
 ## View email admin submissions to Microsoft
 
@@ -137,7 +134,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
      - **Submission name**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Recipient**
@@ -161,8 +158,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -178,8 +174,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
+     :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -196,7 +191,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **Email attachments** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
      - **Attachment name**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
@@ -243,7 +238,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **URLs** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
      - **URL**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
@@ -303,7 +298,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show the options. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show the options. The default values are marked with an asterisk (*):
 
      - **Email subject**<sup>\*</sup>
      - **Reported by**<sup>\*</sup>
@@ -339,7 +334,6 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
      When you're finished, click **Apply**.
 
-     > [!div class="mx-imgBorder"]
      > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="The New Filter options for user submissions" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
@@ -354,7 +348,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Tags**
 
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
-   - To notify users see [Admin Review for Reported messages](admin-reiew-reported-messages.md)
+   - To notify users see [Admin Review for Reported messages](admin-review-reported-message.md)
  
 > [!NOTE]
 > If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
@@ -375,8 +369,7 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Report spam**
 - **Trigger investigation**
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+  :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
 
 If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
 
