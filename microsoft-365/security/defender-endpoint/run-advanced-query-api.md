@@ -32,6 +32,9 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+> [!NOTE]
+> This API can only query tables belonging to Microsoft Defender for Endpoint. Tables belonging to other Microsoft 365 Defender services require the use of the [Microsoft 365 Defender Advanced hunting API](https://docs.microsoft.com/en-us/microsoft-365/security/defender/api-advanced-hunting?view=o365-worldwide)
+
 ## Limitations
 
 1. You can only run a query on data from the last 30 days.
