@@ -74,11 +74,11 @@ Follow the steps below to update status, evidence, notes, or other data in multi
 > The improvement action update process can't be used to add new improvement actions to Compliance Manager. Adding a new action requires the [creation of a custom assessment template](compliance-manager-templates-create.md), which involves a different type of Excel file with action and control-mapping data. See specifically the "Actions tab" formatting instructions at [how to format assessment template data in Excel](compliance-manager-templates-format-excel.md).
 
 > [!NOTE]
-> If you export the improvement actions from an assessment, the exported Excel file will include control-mapping data for that assessment. However, you won't be able to change the control-mapping data when you re-upload your spreadsheet.
+> If you export the improvement actions from an assessment, the exported Excel file will include control-mapping data for that assessment. However, you won't be able to change the control-mapping data when you edit your Excel file.
 
 ## Steps for updating actions
 
-The following steps outline the process for bringing compliance activity data into your assessments, and for making updates to improvement actions.
+The following steps outline the process for bringing compliance activity data into your assessments and updating improvement actions.
 
 1. In Compliance Manager, begin from either from the **Assessments** page or the **Improvement actions** page.
 
