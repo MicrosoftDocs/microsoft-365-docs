@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- SMB
-- M365-security-compliance
-- m365-initiative-defender-business
+ - SMB
+ - M365-security-compliance
+ - m365solution-mdb-setup
 ---
 
 # View and edit security policies and settings in Microsoft Defender for Business

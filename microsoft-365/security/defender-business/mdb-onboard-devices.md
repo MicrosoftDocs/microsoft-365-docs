@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- SMB
-- M365-security-compliance
-- m365-initiative-defender-business
+ - SMB
+ - M365-security-compliance
+ - m365solution-mdb-setup
 ---
 
 # Onboard devices to Microsoft Defender for Business

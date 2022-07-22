@@ -19,16 +19,16 @@ ms.technology: mde
 # Supported managed security service providers
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+The following managed security service providers can be accessed through the portal.
 
-The following managed security service providers can be accessed through the portal. 
-
-Logo |Partner name   | Description 
+Logo |Partner name   | Description
 :---|:---|:---
 ![Image of Accenture logo.](images/accenture-logo.png)|[Accenture Managed Detection & Response (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | Manage, maintain, and enhance global cybersecurity operations with extended capabilities that detect, proactively hunt for and respond to advanced cyber-attacks across both IT and OT environments located in the cloud and on-premise.
 ![Image of Aujas logo.](images/aujas-logo.png) | [Aujas managed MDE Service](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas cybersecurity provides 24*7 managed security services across the entire enterprise spectrum, using Microsoft Defender for Endpoint through its Cyber Defense Centers.
@@ -40,7 +40,7 @@ Logo |Partner name   | Description
 ![Image of CSIS Managed Detection & Response logo.](images/csis-logo.png)| [CSIS Managed Detection & Response](https://go.microsoft.com/fwlink/?linkid=2091005) | 24/7 monitoring and analysis of security alerts giving companies actionable insights into what, when and how security incidents have taken place
 ![Image of CyberProof logo.](images/cyberproof-logo.png) |[CyberProof Managed Detection & Response (MDR)](https://go.microsoft.com/fwlink/?linkid=2163964) | 24x7 managed threat detection and response services fully integrated with Microsoft Sentinel and Defender for Endpoint.
 ![Image of Dell Technologies Advanced Threat Protection logo.](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Professional monitoring service for malicious behavior and anomalies with 24/7 capability
-![Image of DXC-Managed Endpoint Threat Detection and Response logo.](images/dxc-logo.png)| [DXC-Managed Endpoint Threat Detection and Response](https://go.microsoft.com/fwlink/?linkid=2090395) | Identify endpoint threats that evade traditional security defenses and contain them in hours or minutes, not days
+:::image type="content" source="images/dxc-logo.png" alt-text="Image of DXC-Managed Endpoint Threat Detection and Response logo.":::.| [DXC-Managed Endpoint Threat Detection and Response](https://go.microsoft.com/fwlink/?linkid=2090395) | Identify endpoint threats that evade traditional security defenses and contain them in hours or minutes, not days.
 ![Image of eSentire log.](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | 24x7 threat investigations and response via Microsoft Defender for Endpoint.
 ![Image of expel logo.](images/expel-logo.png)| [Expel Managed detection and response for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel helps your security keep up by detecting security risks in Microsoft Defender for Endpoint.
 ![Image of Mandiant logo.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2164352) | Fortify your Defender for Endpoint with 24/7 frontline MDR intelligence and expertise from Mandiant.
@@ -56,4 +56,5 @@ Logo |Partner name   | Description
 ![Image of Zero Trust Analytics Platform (ZTAP) logo.](images/ztap-logo.png)| [Zero Trust Analytics Platform (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | Reduce your alerts by 99% and access a full range of security capabilities from mobile devices
 
 ## Related topics
+
 - [Configure managed service security provider integration](configure-mssp-support.md)
