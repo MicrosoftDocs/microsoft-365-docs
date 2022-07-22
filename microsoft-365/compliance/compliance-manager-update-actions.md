@@ -71,7 +71,7 @@ Follow the steps below to update status, evidence, notes, or other data in multi
 3. **Upload the Excel file.** Upload your edited Excel file by selecting the **Upload actions** command on the **Assessments** or **Improvement actions** page.
 
 > [!NOTE]
-> The improvement action update process can't be used to add new improvement actions to Compliance Manager. Adding a new action requires the [creation of a custom assessment template](compliance-manager-templates-create.md), which involves a different type of Excel file with action and control-mapping data. See specifically the "Actions tab" formatting instructions at [how to format assessment template data in Excel](compliance-manager-templates-format-excel.md).
+> The improvement action update process can't be used to add new improvement actions to Compliance Manager. Adding a new action requires the [creation of a custom assessment template](compliance-manager-templates-create.md), which involves a different type of Excel file with action and control-mapping data. Refer to the [template formatting instructions](compliance-manager-templates-format-excel.md); in particular, the "Actions" tab instructions.
 
 > [!NOTE]
 > If you export the improvement actions from an assessment, the exported Excel file will include control-mapping data for that assessment. However, you won't be able to change the control-mapping data when you edit your Excel file.
