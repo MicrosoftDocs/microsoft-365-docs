@@ -28,16 +28,19 @@ SharePoint Syntex is a Microsoft 365 service that helps organizations to:
 
 The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
 
 </br>
+--->
 
 ## Get started
 
-The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex. Depending on the types of files you want to classify and extract information from, you can choose to either build a [custom model](custom-models-overview.md) or use a [prebuilt model](prebuilt-overview.md).
+The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex. Depending on the types of files you want to classify and extract information from, you can choose to either build a [custom model](#custom-models) or use a [prebuilt model](#prebuilt-models).
 
+<!---
 There are three custom model types you can choose from:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
@@ -45,17 +48,14 @@ There are three custom model types you can choose from:
 - [Extract by text pattern and layout](extract-by-text-pattern-and-layout-overview.md)
 
 Or, if you don't need to build a custom model, you can use a trained [prebuilt model](prebuilt-overview.md).
+--->
 
 > [!NOTE]
 > You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Learn about custom models in SharePoint Syntex|[Overview of custom models](./custom-models-overview.md)|
-|Learn more about how to classify and extract by text pattern|[Overview of classification and extraction by text pattern](./document-understanding-overview.md)|
-|Learn more about how to extract by layout|[Overview of extraction by layout](./form-processing-overview.md)|
-|Learn more about how to extract by text pattern and layout|[Overview of extraction by text pattern and layout](./form-processing-overview.md)|
-|Understand the differences in custom models|[Compare custom models](./difference-between-document-understanding-and-form-processing-model.md)|
+|Learn about custom models in SharePoint Syntex|[Overview of model types](./modeltypes-overview.md)|
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |How to get SharePoint Syntex |[SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
@@ -65,7 +65,7 @@ Or, if you don't need to build a custom model, you can use a trained [prebuilt m
 
 Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Learn how to start planning to use SharePoint Syntex |[Get started driving adoption of Microsoft SharePoint Syntex](./adoption-getstarted.md)| 
 |See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization |[Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md)| 
@@ -76,28 +76,27 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 
 ## Set up SharePoint Syntex
 
-The resources in this section help your admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.
+The resources in this section help the admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Set up and configure SharePoint Syntex|[Set up SharePoint Syntex](./set-up-content-understanding.md)|
 |Learn about licensing for SharePoint Syntex|[Licensing for SharePoint Syntex](./syntex-licensing.md)|
 |Learn about image tagging and how to disable|[Image tagging in SharePoint Syntex](./image-tagging.md)|
 |Use PowerShell to manage SharePoint Syntex|[Manage SharePoint Syntex with PowerShell](./powershell-syntex-intro.md)|
 
-## Learn about models
+## Learn about model types
 
 The resources in this section help you learn how to create and configure the model that's best suited for your type of files.
 
 ### Custom models
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Learn about custom models in SharePoint Syntex|[Overview of custom models](./custom-models-overview.md)|
+|Understand the differences in custom models|[Compare custom models](./difference-between-document-understanding-and-form-processing-model.md)|
 |Learn more about how to classify and extract by text pattern|[Overview of classification and extraction by text pattern](./document-understanding-overview.md)|
 |Learn more about how to extract by layout|[Overview of extraction by layout](./form-processing-overview.md)|
 |Learn more about how to extract by text pattern and layout|[Overview of extraction by text pattern and layout](./extract-by-text-pattern-and-layout-overview.md)|
-|Understand the differences in custom models|[Compare custom models](./difference-between-document-understanding-and-form-processing-model.md)|
 |Learn how to work with models|[Create a content center](./create-a-content-center.md)<br><br>[Create a classifier](./create-a-classifier.md)<br><br>[Duplicate a model](./duplicate-a-model.md)<br><br>[Rename a model](./rename-a-model.md)<br><br>[Create an extractor](./create-an-extractor.md)<br><br>[Rename an extractor](./rename-an-extractor.md)<br><br>[Create a form processing model](./create-a-form-processing-model.md)<br><br>[Explanation types](./explanation-types-overview.md)<br><br>[Use explanation templates](./explanation-templates.md)<br><br>[Apply a document understanding model](./apply-a-model.md)<br><br>[Learn about document understanding models through the sample model](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
 |Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
@@ -110,7 +109,7 @@ The resources in this section help you learn how to create and configure the mod
 
 ### Prebuilt models
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Learn more about prebuilt models|[Overview of prebuilt models](./prebuilt-overview.md)|
 |Use prebuilt models to extract info from documents |[Use a prebuilt model to extract info from invoices or receipts](./prebuilt-models.md)|
@@ -119,7 +118,7 @@ The resources in this section help you learn how to create and configure the mod
 
 A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment. The resources in this section give you more details about these features and how to use them.
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Learn about importing a data set using Simple Knowledge Organization System based format|[Import a term set using a SKOS-based format](./import-term-set-skos.md)<br><br>[SKOS format reference for SharePoint taxonomy](./skos-format-reference.md)<br><br>|
 |Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](./push-content-type-to-hub.md)|
@@ -129,6 +128,6 @@ A SharePoint Syntex license gives your users premium content services that give 
 
 Use REST APIs to create a document understanding model, apply or remove the model to one or more libraries, and obtain or update information about the model.
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Use REST APIs for document understanding models|[SharePoint Syntex document understanding model REST API](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|

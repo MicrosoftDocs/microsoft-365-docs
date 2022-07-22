@@ -1,5 +1,5 @@
 ---
-title: Overview of custom models in Microsoft SharePoint Syntex
+title: Overview of model types in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,16 +13,16 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about custom models in Microsoft SharePoint Syntex.
+description: Learn about custom models and prebuilt models in Microsoft SharePoint Syntex.
 ---
 
 # Overview of model types in Microsoft SharePoint Syntex
 
 Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
-SharePoint Syntex uses custom models and prebuilt models. 
+SharePoint Syntex uses *custom models* and *prebuilt models*. 
 
-Custom models include:
+[Custom models](#custom-models) include:
 
 - [Classify and extract by text pattern](#classify-and-extract-by-text-pattern)
 - [Extract by layout](#extract-by-layout)
@@ -31,19 +31,16 @@ Custom models include:
 To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
 
-Prebuilt models include:
+[Prebuilt models](#prebuilt-models) include:
 
-- [Invoices](prebuilt-models.md)
-- [Receipts](prebuilt-models.md)
+- [Invoices](#invoice-models)
+- [Receipts](#receipt-models)
 
-[image]
-
-The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
-
-> [!NOTE]
-> If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
+[diagram]
 
 ## Custom models
+
+The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
 
 ### Classify and extract by text pattern
 
