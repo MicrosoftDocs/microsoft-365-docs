@@ -58,7 +58,7 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
 ### Azure virtual machines
 
-- For devices running the previous, MMA-based solution, setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
+- For devices running the previous, MMA-based solution, set up Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
     - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
     - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
 - Offline Azure VMs in the same network of OMS Gateway
