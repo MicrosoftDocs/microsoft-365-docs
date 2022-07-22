@@ -39,8 +39,10 @@ This upload process also gives new and existing Compliance Manager users greater
 
 To migrate existing data into Compliance Manager or to perform a bulk update of improvement actions, you can start from one of two places in Compliance Manager:
 
-- From **Assessments** page: Helps you update specific assessments with information from elsewhere, such as test results or evidence for actions that were tested by a separate system. [Visit these instructions below](#updating-actions-from-the-assessments-page).
-- From **Improvement actions** page: Facilitates updating multiple actions at once, such as assigning them to users, changing implementation or test status, and adding notes and evidence. [Visit these instructions below](#updating-actions-from-the-improvement-actions-page).
+- From **Assessments** page: Helps you update specific assessments with information from elsewhere, such as test results or evidence for actions that were tested by a separate system. 
+- From **Improvement actions** page: Facilitates updating multiple actions at once, such as assigning them to users, changing implementation or test status, and adding notes and evidence.
+
+To begin the process of migrating data or updating actions, [follow the steps outlined below](#updating-actions-from-the-improvement-actions-page).
 
 > [!IMPORTANT]
 > - Only the improvement actions managed by your organization, not Microsoft managed actions, can be updated by this process. (Learn more about [types of improvement actions](compliance-score-calculation.md#action-types-and-points).)
@@ -52,7 +54,7 @@ If you're new to Compliance Manager, follow these steps to bring your existing c
 
 1. **Create an assessment**: Compliance Manager can recommend assessments that may be most relevant to your organization, or you can create one through a guided process. Visit [Create assessments](compliance-manager-assessments.md#create-assessments) for instructions.
 
-2. **Export improvement actions**: You'll export an Excel file containing the action data that you want to update. It may make more sense to start the export from your [Assessments page](#updating-actions-from-the-assessments-page), but you can also export from the [Improvement actions](#updating-actions-from-the-improvement-actions-page) page.
+2. **Export improvement actions**: You'll export an Excel file containing the action data that you want to update. It may make more sense to start the export from your **Assessments** page, but you can also export from the **Improvement actions** page. See the [steps outlined below](#updating-actions-from-the-improvement-actions-page).
 
 3. **Update the improvement action Excel file**: Use the instructions on the **How to update actions** tab of the Excel file to add your information.
 
@@ -62,7 +64,7 @@ If you're new to Compliance Manager, follow these steps to bring your existing c
 
 Follow the steps below to update status, evidence, notes, or other data in multiple improvement actions at one time.
 
-1. **Export improvement actions.** Export the improvement actions you want to update, staring either from your [Improvement actions](#updating-actions-from-the-improvement-actions-page) page or your [Assessments page](#updating-actions-from-the-assessments-page). The export is a downloaded Excel file containing improvement action data.
+1. **Export improvement actions.** Export the improvement actions you want to update, staring either from your **Improvement actions** page or your **Assessments** page. The export is a downloaded Excel file containing improvement action data. See the [steps outlined below](#updating-actions-from-the-improvement-actions-page).
 
 2. **Update the improvement action Excel file.** Use the instructions on the **How to update actions** tab of the Excel file to add or update the information in the specially formatted Excel file.
 
@@ -77,9 +79,11 @@ The following steps outline the process for bringing compliance activity data in
 
 1. In Compliance Manager, begin from either from the **Assessments** page or the **Improvement actions** page.
 
-2. If starting from the **Improvement actions** page: Select the checkbox next to the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
- 
-3. If starting from the **Assessments** page: Select the checkbox next to the assessment containing the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
+2. Export the improvement actions that you want to update:
+
+    a. From the **Improvement actions** page: Select the checkbox next to the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
+    
+    b. From the **Assessments** page: Select the checkbox next to the assessment containing the improvement actions you want to update, then select the **Export actions** command, located above the list of actions.
 
 4. An Excel file will download, which contains all the data related to the actions. Open the file and refer to the formatting instructions on the tab labeled **How to update actions.**
 
