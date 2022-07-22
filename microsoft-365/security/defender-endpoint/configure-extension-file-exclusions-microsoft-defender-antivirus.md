@@ -214,7 +214,7 @@ The following table lists and describes the system account environment variables
 
 |This system environment variable...|Redirects to this|
 |---|---|
-|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%`|`C:\Windows\system32\config\systemprofile\Appdata\Roaming`|
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
@@ -270,10 +270,10 @@ The following table lists and describes the system account environment variables
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Users\UserName`|
-|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Windows\system32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\system32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\system32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\system32\config\systemprofile\AppData\Roaming`|
 
 ## Review the list of exclusions
 
