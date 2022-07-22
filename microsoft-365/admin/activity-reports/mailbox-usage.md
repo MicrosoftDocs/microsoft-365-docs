@@ -73,7 +73,7 @@ You can filter charts you see by selecting an item in the legend.
 
 ## Mailbox usage per user table
 
-The table shows you a breakdown of mailbox usage at the per-user level. You can add additional columns to the table. 
+This table shows you a breakdown of mailbox usage at the per-user level. You can add additional columns to the table. 
 
 |Item|Description|
 |:-----|:-----|
@@ -94,7 +94,7 @@ The table shows you a breakdown of mailbox usage at the per-user level. You can 
 |Has Archive|Shows if the mailbox has an online archive enabled. |
 
 
-If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **Hide user details in the reports** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md.
+If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **Hide user details in the reports** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md).
 
 Select **Choose columns** to add or remove columns from the report.  <br/> :::image type="content" alt-text="Mailbox usage report - choose columns." source="../../media/ea3d0b18-6ac6-41b0-9bb9-4844f040ea75.png":::
 
