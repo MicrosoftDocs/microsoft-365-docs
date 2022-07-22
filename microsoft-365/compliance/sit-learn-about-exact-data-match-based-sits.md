@@ -96,7 +96,7 @@ When you create an EDM SIT, you define a *primary element* field in the rule pac
 > [!NOTE]
 > See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs.  
 
-You'll have to find a predefined SIT that detects the sensitive information that you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT. Primary elements need to follow a defined pattern in order to be detected.
+You'll have to find a predefined SIT that detects the sensitive information that you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sit-defn-us-social-security-number.md) SIT. Primary elements need to follow a defined pattern in order to be detected.
 
 When the primary element is found in a scanned item, EDM will then look for *secondary* or supporting elements. Secondary elements don't need to follow a pattern, but do need to be within a certain proximity to the primary element.
 
