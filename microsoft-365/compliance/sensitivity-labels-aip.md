@@ -105,7 +105,7 @@ Alternatively, you can interactively disable or remove the **Microsoft Azure Inf
 
 Whichever method you choose, the changes take effect when Office apps restart.
 
-If, after making these changes, the **Sensitivity** button doesn't display on the Office ribbon, check whether sensitivity labeling has been [turned off](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows).  Although this isn't the default configuration, an administrator might have explicitly set this configuration by using Group Policy or by directly editing the registry.
+If after making these changes the **Sensitivity** button doesn't display on the Office ribbon, check whether sensitivity labeling has been [turned off](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows). Although this isn't the default configuration, an administrator might have explicitly set this configuration by using Group Policy or by directly editing the registry.
 
 > [!NOTE]
 > Built-in labels require a subscription edition of Office apps. If you have standalone editions of Office, sometimes called "Office Perpetual", we recommend you upgrade to Microsoft 365 Apps for Enterprise to benefit from the [latest labeling capabilities](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
