@@ -50,7 +50,7 @@ To begin the process of migrating data or updating actions, [follow the steps ou
 
 ## Migrating your existing work into Compliance Manager
 
-If you're new to Compliance Manager, follow these steps to bring your existing compliance activities into Compliance Manager:
+If you're new to Compliance Manager, this is the basic workflow for how to bring your existing compliance activities into Compliance Manager:
 
 1. **Create an assessment**: Compliance Manager can recommend assessments that may be most relevant to your organization, or you can create one through a guided process. Visit [Create assessments](compliance-manager-assessments.md#create-assessments) for instructions.
 
@@ -62,7 +62,7 @@ If you're new to Compliance Manager, follow these steps to bring your existing c
 
 ## Updating multiple improvement actions at once
 
-Follow the steps below to update status, evidence, notes, or other data in multiple improvement actions at one time.
+To update the status, evidence, notes, or other data in multiple improvement actions at one time, you'll follow the basic flow outlined below:
 
 1. **Export improvement actions.** Export the improvement actions you want to update, staring either from your **Improvement actions** page or your **Assessments** page. The export is a downloaded Excel file containing improvement action data. See the [steps outlined below](#steps-for-updating-actions).
 
