@@ -13,8 +13,9 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- SMB
-- M365-security-compliance
+ - SMB
+ - M365-security-compliance
+ - m365solution-mdb-setup
 ---
 
 # Assign roles and permissions in Microsoft Defender for Business

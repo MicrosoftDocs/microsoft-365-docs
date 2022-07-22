@@ -43,6 +43,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
+- Addressed an issue where printing could not be completed successfully due to the network extension
 - Added an option to [configure file hash computation](mac-preferences.md#configure-file-hash-computation-feature)
 - From this build onwards, the product will have the new anti-malware engine by default
 - Performance improvements for file copy operations
