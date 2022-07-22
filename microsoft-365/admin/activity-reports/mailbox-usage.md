@@ -66,7 +66,8 @@ The **Quota** chart shows you the number of user mailboxes in each quota categor
 - Can't send/receive: The number of users whose storage used is at or above the "prohibit send/receive" quota.
 
 On the Quota chart:
-- The Y axis is the number of user mailboxes in each storage quota. - The X axis is the quota category.
+- The Y axis is the number of user mailboxes in each storage quota.
+- The X axis is the quota category.
 
 You can filter charts you see by selecting an item in the legend.
 
