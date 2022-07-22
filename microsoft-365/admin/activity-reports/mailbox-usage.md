@@ -31,7 +31,7 @@ The **Mailbox usage report** provides information about users with a user mailbo
 2. Select **View More** under **Email activity**. 
 3. From the **Email activity** drop-down list, select **Exchange** \> **Mailbox usage**.
 
-## Interpret the mailbox usage report
+## Interpret the Mailbox usage report
 
 You can get a view into your organization's mailbox usage by looking at the **Mailbox**, **Storage** and **Quota** charts.
 
