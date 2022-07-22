@@ -96,7 +96,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 > [!NOTE]
 > If you specify a fully qualified path to a file, then only that file is excluded. If a folder is defined in the exclusion, then all files and sub-directories under that folder are excluded.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and then select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure, and then select **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and select **Administrative templates**.
 
