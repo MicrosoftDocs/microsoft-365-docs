@@ -150,6 +150,8 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
     - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
 
     :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab" lightbox="images/ios-deploy-8.png":::
+    - To mandate that VPN cannot be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, its not configured and users can disable VPN only in the Settings.
+    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot the change the toggle from within the app.
 
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
@@ -177,6 +179,9 @@ Admins can configure Microsoft Defender for Endpoint to deploy and activate sile
     - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
 
     :::image type="content" source="images/ios-deploy-9.png" alt-text="The VPN profile Configuration page" lightbox="images/ios-deploy-9.png":::
+
+    - To mandate that VPN cannot be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, its not configured and users can disable VPN only in the Settings.
+    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot the change the toggle from within the app.
 
 1. Select **Next** and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
