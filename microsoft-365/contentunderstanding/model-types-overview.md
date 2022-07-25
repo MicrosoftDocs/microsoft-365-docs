@@ -71,21 +71,21 @@ Because your organization receives letters and documents in large quantities fro
 
 For more information, see [Overview of extraction by text pattern and layout](extract-by-text-pattern-and-layout-overview.md).
 
-## Prebuilt models
+## Trained models
 
-If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
+If you don't need to build a custom model, you can use a [trained model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
 
-Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
+Trained models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
 ### Invoice models
 
-The invoice prebuilt model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
+The trained invoice model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
 
 ### Receipt models
 
-The receipt prebuilt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+The trained receipt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-For more information about prebuilt models, see [Overview of prebuilt models](prebuilt-overview.md).
+For more information about prebuilt models, see [Overview of trained models](prebuilt-overview.md).
 
 
 <!---
