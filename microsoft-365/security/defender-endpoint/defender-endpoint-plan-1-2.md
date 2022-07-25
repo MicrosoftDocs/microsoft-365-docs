@@ -83,6 +83,7 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 | *Phased upgrades* | Upgrade user licenses in phases. Examples:<ul><li>Moving some groups of users from Defender for Endpoint Plan 1 to Plan 2</li><li>Moving groups of users from Microsoft 365 E3 to E5 </li></ul>  |
 
 > [!NOTE]
+> Defender for Endpoint Plan 1 and Plan 2, and Defender for Business are each available as a standalone subscription. They're also available as part of a larger subscription, as follows:
 > - Microsoft 365 E3 includes [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md).
 > - Microsoft 365 E5 includes [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md).
 > - Microsoft 365 Business Premium includes [Defender for Business](../defender-business/mdb-overview.md).
