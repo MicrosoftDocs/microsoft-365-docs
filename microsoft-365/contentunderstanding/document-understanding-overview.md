@@ -47,7 +47,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## File limitations
 
-**Classify and extract by text pattern** models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files. Files are scanned when you train a model with example files and when you run the model against files in a document library.
+**Classify and extract by text pattern** models use optical character recognition (OCR) technology to scan PDFs, images, and TIFF files. Files are scanned when you train a model with example files and when you run the model against files in a document library.
 
 Note the following differences about Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
 

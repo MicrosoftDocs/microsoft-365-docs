@@ -17,6 +17,8 @@ description: Learn how to apply a retention label to a model in SharePoint Synte
 
 # Apply a retention label to a model in SharePoint Syntex
 
+<sub>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern | &ensp; &#10003; Extract by layout</sub>
+
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GydO]  
