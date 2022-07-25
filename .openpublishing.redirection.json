@@ -7572,7 +7572,7 @@
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/turn-on-protocol-recognition.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/network-protection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/network-protection",
       "redirect_document_id": false
     }
   ]
