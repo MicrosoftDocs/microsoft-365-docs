@@ -16,8 +16,7 @@ description: Learn how to create a local model on a local SharePoint site with S
 ---
 
 # Create a model on a local SharePoint site with Microsoft SharePoint Syntex
-
-<sub>**Applies to:**  &ensp; &#10003; All custom models | &ensp; &#10003; All prebuilt models</sub>
+<sub>**Applies to:**  &ensp; &#10003; All custom models | &ensp; &#10003; All trained models</sub>
 
 <!---
 <sub>**Applies to:**</sub>
