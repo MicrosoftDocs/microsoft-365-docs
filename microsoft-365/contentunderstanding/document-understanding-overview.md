@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about document understanding in Microsoft SharePoint Syntex.
+description: Learn about the **Classify and extract by text pattern** model in Microsoft SharePoint Syntex.
 ---
 
 # Overview of classification and extraction by text pattern in Microsoft SharePoint Syntex
@@ -25,17 +25,17 @@ description: Learn about document understanding in Microsoft SharePoint Syntex.
 
 </br>
 
-Document understanding uses artificial intelligence (AI) models to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+The **Classify and extract by text pattern** model uses artificial intelligence (AI) to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
-> See the [SharePoint Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about document understanding scenario examples.
+> See [Get started driving adoption of SharePoint Syntex](./adoption-getstarted.md) and [Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md) for more information about how to you SharePoint Syntex and scenario examples.
 
-Document understanding models are created and managed in a type of SharePoint site called a *content center*. When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
+**Classify and extract by text pattern** models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
 > [!NOTE]
-> Read-only or sealed content types cannot be updated, so they can't be used in a model.
+> Read-only or sealed content types can't be updated, so they can't be used in a model.
 
-Add *classifiers* and *extractors* to your document understanding models to do the following actions:
+Add [classifiers](create-a-classifier.md) and [extractors](create-an-extractor.md) to your **Classify and extract by text pattern** models to do the following actions:
 
 - Classifiers are used to identify and classify documents that are uploaded to the document library. For example, a classifier can be "trained" to identify all *contract renewal* documents that are uploaded to the library. The contract renewal content type is defined by you when you create your classifier.
 
@@ -47,7 +47,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## File limitations
 
-Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files. Files are scanned when you train a model with example files and when you run the model against files in a document library.
+**Classify and extract by text pattern** models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files. Files are scanned when you train a model with example files and when you run the model against files in a document library.
 
 Note the following differences about Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
 
@@ -84,7 +84,7 @@ OCR processing works best on documents that meet the following requirements:
 
 ### Supported file types
 
-Document understanding models support the following file types:
+**Classify and extract by text pattern** models support the following file types:
 
 - doc
 - docx
@@ -111,7 +111,7 @@ Document understanding models support the following file types:
 
 ### Supported languages
 
-Document understanding models support *all* of the Latin-based languages, including:
+**Classify and extract by text pattern** models support *all* of the Latin-based languages, including:
 
 - English
 - French
@@ -121,18 +121,12 @@ Document understanding models support *all* of the Latin-based languages, includ
 
 ## See also
 
-[Create a classifier](create-a-classifier.md)
-
-[Create an extractor](create-an-extractor.md)
-
-[Create a content center](create-a-content-center.md)
-
-[Create a form processing model](create-a-form-processing-model.md)
+[Compare custom models](difference-between-document-understanding-and-form-processing-model.md)
 
 [Apply a model](apply-a-model.md)
 
-[Difference between a document understanding and a form processing model](difference-between-document-understanding-and-form-processing-model.md)
-  
-[Form processing overview](form-processing-overview.md)
+[Extraction by layout overview](form-processing-overview.md)
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Extract by text pattern and layout overview](extract-by-text-pattern-and-layout-overview.md)
+
+[Accessibility mode in SharePoint Syntex](accessibility-mode.md)
