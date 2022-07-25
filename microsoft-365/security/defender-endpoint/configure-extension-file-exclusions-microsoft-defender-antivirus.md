@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer:
+ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
 ---
@@ -25,6 +25,7 @@ ms.collection: M365-security-compliance
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
 You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). **Generally, you don't need to apply exclusions**. If you do need to apply exclusions, then you can choose from the following:
@@ -68,9 +69,9 @@ The following table lists some examples of exclusions based on file extension an
 
 - Don't exclude mapped network drives. Specify the actual network path.
 
-- Folders that are reparse points are created after the Microsoft Defender Antivirus service starts and those have been added to the exclusion list will not be included. Restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
+- Folders that are reparse points are created after the Microsoft Defender Antivirus service starts, and those that have been added to the exclusion list will not be included. Restart the service by restarting Windows for new reparse points to be recognized as a valid exclusion target.
 
-- Exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), but not across Defender for Endpoint. To define exclusions across Defender for Endpoint, use [custom indicators](manage-indicators.md).
+- Exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), but not across all Defender for Endpoint capabilities. To define exclusions across Defender for Endpoint, use [custom indicators](manage-indicators.md).
 
 - By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists take precedence when there are conflicts. In addition, exclusion list changes made with Group Policy are visible in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
