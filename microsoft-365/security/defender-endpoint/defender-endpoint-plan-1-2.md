@@ -58,7 +58,7 @@ The following table summarizes what's included in Microsoft endpoint security pl
 
 ## Options for onboarding servers
 
-The standalone versions of Defender for Business, Defender for Endpoint Plan 1 and 2, and Microsoft 365 Business Premium do not include server licenses. To onboard servers, choose from the following options:
+Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalone), and Microsoft 365 Business Premium do not include server licenses. To onboard servers, choose from the following options:
 
 - **Microsoft Defender for Servers Plan 1 or Plan 2** as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 - **Microsoft Defender for Business servers (preview)** for small and medium-sized businesses. See [How to get Microsoft Defender for Business servers (preview)](../defender-business/get-defender-business-servers.md).
