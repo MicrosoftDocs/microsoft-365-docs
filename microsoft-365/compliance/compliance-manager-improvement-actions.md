@@ -184,7 +184,7 @@ You can upload evidence in the form of files and links related to implementation
 #### Upload evidence
 
 - From the improvement action's details page, go to the **Documents** tab and select **Add evidence**.
-- On the **Add evidence** flyout pane, choose whether to add a Document or Link. The accepted file types for **Document** are:
+- On the **Add evidence** flyout pane, choose whether to add a **Document** or **Link**. The accepted file types for **Document** are:
   - Documents (.doc, .xls, .ppt, .txt, .pdf)
   - Images (.jpg, .png)
   - Video (.mkv)
