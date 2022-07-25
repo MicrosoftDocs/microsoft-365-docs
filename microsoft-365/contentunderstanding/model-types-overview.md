@@ -28,9 +28,6 @@ SharePoint Syntex uses *custom models* and *prebuilt models*.
 - [Extract by layout](#extract-by-layout)
 - [Extract by text pattern and layout](#extract-by-text-pattern-and-layout)
 
-To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
-
-
 [Prebuilt models](#prebuilt-models) include:
 
 - [Invoices](#invoice-models)
@@ -41,6 +38,8 @@ To view the side-by-side differences in custom models, see [Compare custom model
 ## Custom models
 
 The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+
+To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
 ### Classify and extract by text pattern
 
