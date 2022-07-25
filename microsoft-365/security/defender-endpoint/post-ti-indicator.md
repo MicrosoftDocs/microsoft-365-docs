@@ -83,6 +83,7 @@ expirationTime|DateTimeOffset|The expiration time of the indicator. **Optional**
 severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium", and "High". **Optional**
 recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
+educateUrl|String|Custom notification/support URL. Supported for Block and Warn action types for URL indicators. **Optional**
 generateAlert|Enum|**True** if alert generation is required, **False** if this indicator should not generate an alert.
 ## Response
 
