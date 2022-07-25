@@ -20,7 +20,7 @@ description: Learn about custom models and prebuilt models in Microsoft SharePoi
 
 Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
-SharePoint Syntex uses *custom models* and *prebuilt models*. 
+SharePoint Syntex uses *custom models* and *trained models*. 
 
 [Custom models](#custom-models) include:
 
@@ -28,7 +28,7 @@ SharePoint Syntex uses *custom models* and *prebuilt models*.
 - [Extract by layout](#extract-by-layout)
 - [Extract by text pattern and layout](#extract-by-text-pattern-and-layout)
 
-[Prebuilt models](#prebuilt-models) include:
+[Trained models](#prebuilt-models) include:
 
 - [Invoices](#invoice-models)
 - [Receipts](#receipt-models)
@@ -81,11 +81,13 @@ Trained models are pretrained to recognize documents and the structured informat
 
 The trained invoice model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
 
+For more information about trained invoice models, see [Use a trained model to extract information from invoices](prebuilt-models.md).
+
 ### Receipt models
 
 The trained receipt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-For more information about prebuilt models, see [Overview of trained models](prebuilt-overview.md).
+For more information about trained receipt models, see [Use a trained model to extract information from receipts](prebuilt-models.md).
 
 
 <!---
