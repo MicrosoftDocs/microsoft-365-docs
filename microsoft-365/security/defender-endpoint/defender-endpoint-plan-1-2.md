@@ -94,7 +94,9 @@ Up until recently, in cases of mixed licenses, the highest functional Microsoft 
 - Set your subscription state to use features and capabilities from one plan across all users and devices.
 - Specify the devices to receive features and capabilities from each plan.
 
+### Set your subscription state
 
+If you are using multiple Microsoft endpoint security solutions, such as Defender for Endpoint Plan 1 and Plan 2, you can choose to set your subscription state
 
 ### Use device tagging for mixed licenses
 
