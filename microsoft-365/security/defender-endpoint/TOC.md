@@ -555,7 +555,7 @@
 ####### [List machines](get-machines.md)
 ####### [Get machine by ID](get-machine-by-id.md)
 ####### [Get machine log on users](get-machine-log-on-users.md)
-####### [Get machine related alerts](get-machine-related(-alerts.md)
+####### [Get machine related alerts](get-machine-related-alerts.md)
 ####### [Get machines security states collection API](get-machinesecuritystates-collection.md)
 ####### [Get installed software](get-installed-software.md)
 ####### [Get discovered vulnerabilities](get-discovered-vulnerabilities.md)
