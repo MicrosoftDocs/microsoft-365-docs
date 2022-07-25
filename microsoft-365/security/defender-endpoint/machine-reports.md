@@ -142,7 +142,7 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 
 > [!NOTE]
 >
-> Currently, "Up-to-date" reporting is only available for Windows devices.  Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 19000.1 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
+> Currently, "Up-to-date" reporting is only available for Windows devices.  Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 1.1.19300.2 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
 
 > [!div class="mx-imgBorder"]
 > ![Shows the Microsoft Defender Antivirus health tab](images/device-health-defender-antivirus-health-tab.png)
