@@ -17,6 +17,17 @@ description: Learn how to create a local model on a local SharePoint site with S
 
 # Create a model on a local SharePoint site with Microsoft SharePoint Syntex
 
+
+|Applies to  |
+|---------|
+|> [!div class="checklist"]<br>
+> * All custom models<br>
+> * All prebuilt models<br>   |
+
+> [!div class="checklist"]
+> * All custom models
+> * All prebuilt models
+
 SharePoint Syntex provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
 
 By activating document classification and extraction on your SharePoint site, SharePoint Syntex lets you classify files in document libraries, extract information from new files, and automate activities based on extracted information.
