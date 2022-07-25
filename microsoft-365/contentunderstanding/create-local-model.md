@@ -17,7 +17,12 @@ description: Learn how to create a local model on a local SharePoint site with S
 
 # Create a model on a local SharePoint site with Microsoft SharePoint Syntex
 
+**Applies to:**
+> [!div class="checklist"]
+> * All custom models
+> * All prebuilt models
 
+<!---
 |Applies to  |
 |---------|
 |> [!div class="checklist"]<br> > * All custom models<br> > * All prebuilt models<br>   |
@@ -30,6 +35,7 @@ description: Learn how to create a local model on a local SharePoint site with S
 > The article applies to: > [!div class="checklist"]
 > * All custom models
 > * All prebuilt models
+--->
 
 SharePoint Syntex provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
 
