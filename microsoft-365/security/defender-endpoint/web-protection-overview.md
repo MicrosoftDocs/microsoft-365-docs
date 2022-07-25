@@ -146,7 +146,7 @@ DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
