@@ -100,7 +100,16 @@ If you are using multiple Microsoft endpoint security solutions, such as Defende
 
 1. Go to **Settings** > **Endpoints** > **Licenses**.
 
-2. Under **Subscription state**, select **Manage subscription settings**. 
+2. Under **Subscription state**, select **Manage subscription settings**. (If you do not see **Manage subscription settings**, it's because you have only one subscription applied to your tenant.)
+
+3. A **Subscription settings** flyout opens where you can choose your subscription state. Choose one of the following options:
+
+   - Use one plan for all users and devices
+   - Choose multiple plans and set up a plan assignment option for devices.
+
+4. To set up a plan assignment option, follow these steps:
+
+   1. Choose the option to create a device rule, such as a Plan 1 rule (which will apply Defender for Endpoint Plan 1 features and capabilities to specified devices).
 
 ### Use device tagging for mixed licenses
 
