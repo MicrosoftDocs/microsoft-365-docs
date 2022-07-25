@@ -50,7 +50,7 @@ To begin the process of migrating data or updating actions, [follow the steps ou
 
 ## Migrating your existing work into Compliance Manager
 
-If you're new to Compliance Manager, this is the basic workflow for how to bring your existing compliance activities into Compliance Manager:
+If you're new to Compliance Manager, the steps below illustrate the basic workflow for bringing your existing compliance activities into Compliance Manager:
 
 1. **Create an assessment**: Compliance Manager can recommend assessments that may be most relevant to your organization, or you can create one through a guided process. Visit [Create assessments](compliance-manager-assessments.md#create-assessments) for instructions.
 
