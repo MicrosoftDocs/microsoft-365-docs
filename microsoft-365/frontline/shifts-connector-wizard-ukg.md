@@ -30,7 +30,7 @@ You can set up multiple connections, each with different sync settings. For exam
 
 With your WFM system as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use your WFM system to set up schedules.
 
-## Integrate Shifts with Blue Yonder Workforce Management
+## Integrate Shifts with UKG Dimensions
 
 Currently, the wizard supports the [Microsoft Teams Shifts connector for UKG Dimensions](). This connector enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to UKG Dimensions through the connector.
 
@@ -74,7 +74,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 1. Select **Connect your workforce management system**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. When you're ready, select **Get started**.
-1. Select **Next** to create an UKG Dimensions connection.
+1. On the Choose your connector page, choose **UKG Dimensions**, and then select **Next** to create an UKG Dimensions connection.
 
 ### Enter connection details
 <a name="connection_details"> </a>
@@ -108,7 +108,7 @@ On the Sync settings page, you choose the information to sync from UKG Dimension
  
 1. When you're done choosing your settings, select **Create connection**.
 
-### Map Blue Yonder Workforce Management instances to teams
+### Map UKG Dimensions instances to teams
 <a name="sites"> </a>
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each instance to a team in Teams. You can map up to 100 instances. There's two ways that you can do this:
@@ -157,18 +157,18 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 
     |Column name  |Description  |
     |---------|---------|
-    |**Blue Yonder Instance ID*** |The Blue Yonder WFM instance ID.|
-    |**Blue Yonder Instance Name**|The Blue Yonder WFM instance name.|
+    |**UKG Dimensions Instance ID** |The UKG Dimensions WFM instance ID.|
+    |**UKG Dimensions Instance Name**|The UKG Dimensions WFM instance name.|
     |**Team ID*** |The team ID.|
     |**Team Name**|The team name.|
     |**Time zone*** |The time zone in tz database format. For example, Europe/London.|
 
     > [!NOTE]
-    > You only need to fill out the required columns (Blue Yonder Instance ID, Team ID, Time zone) to map instances to teams.
+    > You only need to fill out the required columns (UKG Dimensions Instance ID, Team ID, Time zone) to map instances to teams.
 
     Here's an example of what a mapping file looks like.
 
-    |Blue Yonder Instance ID|Blue Yonder Instance Name|Team ID|Team Name|Time zone|
+    |UKG Dimensions Instance ID|UKG Dimensions Instance Name|Team ID|Team Name|Time zone|
     |---------|---------|---------|---------|---------|
     |2111|Contoso US Team|3a4d78a-2261|US Team|America/Los_Angeles|
     |3212|Contoso UK Team|2d1f6c2e-5272|UK Team|Europe/London|
