@@ -91,7 +91,7 @@ The resources in this section help the admin in your organization to set up and 
 
 The resources in this section help you learn how to create and configure the model that's best suited for your type of files.
 
-### Custom models
+### Build a custom model
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
@@ -109,12 +109,12 @@ The resources in this section help you learn how to create and configure the mod
 |Learn how to see data about your models|[Model usage analytics](./model-usage-analytics.md)|
 |Learn how to use accessibility mode when training a model|[SharePoint Syntex accessibility mode](./accessibility-mode.md)|
 
-### Prebuilt models
+### Use a trained model
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Learn more about prebuilt models|[Overview of prebuilt models](./prebuilt-overview.md)|
-|Use prebuilt models to extract info from documents |[Use a prebuilt model to extract info from invoices or receipts](./prebuilt-models.md)|
+|Learn more about trained models|[Overview of trained models](./prebuilt-overview.md)|
+|Use trained models to extract information from documents |[Use a prebuilt model to extract info from invoices or receipts](./prebuilt-models.md)|
 
 ## Premium services
 
