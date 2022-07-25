@@ -91,7 +91,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Vulnerabilities",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#BrowserExtension",
     "value": [
 {
   "value": [
