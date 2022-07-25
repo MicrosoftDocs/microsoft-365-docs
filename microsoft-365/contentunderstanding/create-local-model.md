@@ -17,10 +17,13 @@ description: Learn how to create a local model on a local SharePoint site with S
 
 # Create a model on a local SharePoint site with Microsoft SharePoint Syntex
 
-<sub>**Applies to:**
+<sub>**Applies to:**</sub>
 > [!div class="checklist"]
-> * All custom models
-> * All prebuilt models</sub>
+> <sub>* All custom models</sub>
+> <sub>* All prebuilt models</sub>
+
+
+<sub>**Applies to:**  All custom models | All prebuilt models</sub>
 
 **Applies to:**
 > [!div class="checklist"]
