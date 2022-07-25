@@ -1,5 +1,5 @@
 ---
-title: Publish and discover models in Microsoft SharePoint Syntex
+title: Discover models in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,14 +15,14 @@ ms.localizationpriority:  medium
 description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft SharePoint Syntex.
 ---
 
-# Publish and discover models in Microsoft SharePoint Syntex
+# Discover models in Microsoft SharePoint Syntex
 
-You can make your trained document understanding models available for others to view and use directly from the SharePoint document library. 
+You can make your trained **Classify and extract by text pattern** models available for others to view and use directly from the SharePoint document library. 
 
 You can also find and evaluate trained models in other content centers that were created by others in your organization. Select the model that is most useful for classifying your files or extracting specific information from them. 
 
 > [!NOTE]
-> This feature is not yet available for form processing models.
+> This feature is not yet available for **Extract by layout** and **Extract by text pattern and layout** models.
 
 ## Make your model discoverable to others
 
@@ -54,7 +54,7 @@ To make your trained model available for others to use:
 
 To find trained models that might be suitable for your content:
 
-1. In the document library for your model, select **Automate** > **View document understanding models**.
+1. In the document library for your model, select **Automate** > **View Classify and extract by text pattern models**.
 
 2. On the **Review models and apply new ones** page, you can review the applied models and the models that are available to be applied to your document library.
 
@@ -112,6 +112,4 @@ To remove an applied model from your document library:
 
 ## See also
 
-[Apply a document understanding model](apply-a-model.md)
-
-[Document understanding overview](document-understanding-overview.md)
+[Overview of classification and extraction by text pattern](document-understanding-overview.md)
