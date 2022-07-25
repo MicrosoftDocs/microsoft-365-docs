@@ -1,5 +1,5 @@
 ---
-title: Prebuilt models overview in Microsoft SharePoint Syntex
+title: Overview of trained models overview in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,15 +16,15 @@ ms.localizationpriority:  medium
 description: Learn about prebuilt models in Microsoft SharePoint Syntex.
 ---
 
-# Prebuilt models overview in Microsoft SharePoint Syntex
+# Overview of trained models overview in Microsoft SharePoint Syntex
 
-In addition to [document understanding models](document-understanding-overview.md) and [form processing models](form-processing-overview.md), SharePoint Syntex provides prebuilt models to automate the extraction of information.
+In addition to [document understanding models](document-understanding-overview.md) and [form processing models](form-processing-overview.md), SharePoint Syntex provides prebuilt trained models to automate the extraction of information.
 
-Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
+Trained models are prebuilt to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
-Prebuilt models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific document types. You start by analyzing one of your files against the prebuilt model. You then select the detected fields that make sense for your purpose. If the model doesn't detect the fields that you need, you can analyze again by using a different file.
+Trained models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific document types. You start by analyzing one of your files against the prebuilt model. You then select the detected fields that make sense for your purpose. If the model doesn't detect the fields that you need, you can analyze again by using a different file.
 
-Like document understanding models, prebuilt models are created and managed in the [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. 
+Like other models, trained models are created and managed in the [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. 
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
@@ -64,6 +64,8 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 
 ## See also
 
-[Use a prebuilt model to extract info from invoices or receipts](prebuilt-overview.md)
+[Use a trained model to extract information from invoices](prebuilt-models.md)
+
+[Use a trained model to extract information from receipts](prebuilt-models.md)
  
 
