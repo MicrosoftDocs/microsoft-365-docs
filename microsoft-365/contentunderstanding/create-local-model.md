@@ -20,11 +20,14 @@ description: Learn how to create a local model on a local SharePoint site with S
 
 |Applies to  |
 |---------|
-|> [!div class="checklist"]<br>
-> * All custom models<br>
-> * All prebuilt models<br>   |
+|> [!div class="checklist"]<br> > * All custom models<br> > * All prebuilt models<br>   |
 
 > [!div class="checklist"]
+> * All custom models
+> * All prebuilt models
+
+> [!NOTE]
+> The article applies to: > [!div class="checklist"]
 > * All custom models
 > * All prebuilt models
 
