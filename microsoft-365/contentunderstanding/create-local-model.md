@@ -28,7 +28,7 @@ When you activate local model creation, the following lists and libraries will b
 - Explanation templates list
 - Model usage list
 
-This feature is available only for creating [**Classify and extract by text pattern** models](apply-a-model.md) and [prebuilt models](prebuilt-models.md). 
+This feature is available only for creating all [model types](model-types-overview.md). 
 
 ## Create a model on a local site
 
