@@ -28,7 +28,7 @@ For more information about Windows 365, see [What is Windows 365?](/windows-365/
 > [!IMPORTANT]
 > You must go to [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
 
-Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
+Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
 
 ## Overview tab
 
@@ -66,6 +66,7 @@ Select any Cloud PC in the list to view more details and execute management acti
 - **Restart:** Select to reboot the device. 
 - **Reprovision:** Select to reset the device. You can also view the provisioning policy in the Microsoft Endpoint Manager link.
 - **Rename:** Select to rename the device assigned to a user.
+- **Change account type:** Select the account type for the user: Standard user (recommended) or Local administrator.
 
 The All Cloud PCs tab also includes the following options:
 
