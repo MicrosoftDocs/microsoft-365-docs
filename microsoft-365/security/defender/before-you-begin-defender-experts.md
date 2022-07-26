@@ -20,7 +20,17 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-This section outlines the key infrastructure requirements you must meet and important information on data access and compliance you must know before enrolling in the Microsoft Defender Experts for Hunting service. _Microsoft understands that customers who use our managed services entrust us with their most valued asset, their data_.
+> [!IMPORTANT]
+> Some information relates to pre-released products which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+This section outlines the key infrastructure requirements you must meet and important information on data access and compliance you must know before enrolling in the Microsoft Defender Experts for Hunting service. Microsoft understands that customers who use our managed services entrust us with their most valued asset, their data.
 
 ## Check if your environment meets licensing and access prerequisites
 
