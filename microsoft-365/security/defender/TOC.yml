@@ -351,9 +351,9 @@
               - name: Overview
                 href: defender-experts-for-hunting.md
                 name: Before you begin
-                href: before-you-begin-defender-experts.md
+                href: before-using-defender-experts.md
                 name: Start using Defender Experts for Hunting
-                href: onboarding-defender-experts-for-hunting.md
+                href: onboarding-dex-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
        - name: Ransomware playbooks
