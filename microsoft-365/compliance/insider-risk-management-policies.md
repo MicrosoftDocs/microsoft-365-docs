@@ -21,11 +21,6 @@ Insider risk management policies determine which users are in-scope and which ty
 
 Check out the [Insider Risk Management Policies Configuration video](https://www.youtube.com/watch?v=kudK5ajZTUo) for an overview of how policies created with built-in policy templates can help you to quickly act on potential risks.
 
-## TEST SECTION FOR ERIN
-```suggestion
-Erin's suggested change
-Thanks for doing this test, Erin. It will help the other IRM PMs.
-
 ## Policy dashboard
 
 The **Policy dashboard** allows you to quickly see the policies in your organization, the health of the policy, manually add users to policies, and to view the status of alerts associated with each policy.
