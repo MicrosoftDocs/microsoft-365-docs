@@ -40,7 +40,7 @@ For more information about how to set up Conditional Access with Defender for En
 
 ### Jailbreak detection by Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. If a device is detected to be jailbroken, a **High**-risk alert will be reported to the Microsoft 365 Defender portal and if Conditional Access is setup based on device risk score, then the device will be blocked from accessing corporate data.
+Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. If a device is detected to be jailbroken, a **High**-risk alert will be reported to the Microsoft 365 Defender portal and if Conditional Access is set up based on device risk score, then the device will be blocked from accessing corporate data.
 
 ## Web Protection and VPN
 
@@ -63,9 +63,9 @@ While enabled by default, there might be some cases that require you to disable 
 
 ## Disable Web Protection
 
-Web Protection is one of the key features of Defender for Endpoint and it requires a VPN to provide that capability. The VPN used is a local/loopback VPN and not a traditional VPN, however there are several reasons for which customers might not prefer the VPN. Customers who do not want to setup a VPN, there is an option to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features will continue to work.
+Web Protection is one of the key features of Defender for Endpoint and it requires a VPN to provide that capability. The VPN used is a local/loopback VPN and not a traditional VPN, however there are several reasons for which customers might not prefer the VPN. Customers who do not want to set up a VPN, there is an option to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features will continue to work.
 
-This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. For customers with MDM, admins can configure the **Web Protection** through Managed devices in the App Config. For customers without enrolment, using MAM, admins can configure the **Web Protection** through Managed apps in the App Config.
+This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. For customers with MDM, admins can configure the **Web Protection** through Managed devices in the App Config. For customers without enrollment, using MAM, admins can configure the **Web Protection** through Managed apps in the App Config.
 
 ### Configure Web Protection
 
@@ -80,7 +80,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
         - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
         - Click Next and assign this profile to targeted devices/users.
 
-1. **Disable Web Protection(MAM)** Use the following steps to disable **Web Protection** for un enrolled devices.
+1. **Disable Web Protection(MAM)** Use the following steps to disable **Web Protection** for unenrolled devices.
 
     - In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed apps**.
     - Give the policy a name.
@@ -112,7 +112,7 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
     |Key| Default (true-enable, false-disable)|Description|
     |---|---|---|
     |DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
-    |DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
+    |DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender|
     |DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|
   
 5. In Assignments section, admin can choose groups of users to include and exclude from the policy.
@@ -151,7 +151,7 @@ Microsoft Defender for Endpoint on iOS enables the App Protection Policy scenari
 ## Privacy Controls
 
 Microsoft Defender for Endpoint on iOS enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) as well as unenrolled (MAM) devices.
-For Customers with MDM, admins can configure the Privacy Controls through Managed devices in the App Config. For Customers without enrolment, using MAM, admins can configure the Privacy Controls through Managed apps in the App Config. End Users will also have the ability to configure the Privacy Settings from the Defender App settings.
+For Customers with MDM, admins can configure the Privacy Controls through Managed devices in the App Config. For Customers without enrollment, using MAM, admins can configure the Privacy Controls through Managed apps in the App Config. End Users will also have the ability to configure the Privacy Settings from the Defender App settings.
 
 ### Configure privacy in phish alert report
 
@@ -173,7 +173,7 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
 
     - Click **Next** and assign this profile to targeted devices/users.
 
-1. **Admin Privacy Controls (MAM)** Use the following steps to enable privacy and not collect the domain name as part of the phish alert report for un enrolled devices.
+1. **Admin Privacy Controls (MAM)** Use the following steps to enable privacy and not collect the domain name as part of the phish alert report for unenrolled devices.
 
     - In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed apps**.
 
