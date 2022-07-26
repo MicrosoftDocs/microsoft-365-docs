@@ -81,3 +81,8 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 - Complete the [Customer Interest Form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_xMkpZdsClLjYwQYYo1uONURTgyU0EzQUQyUjFFVEtIVFozT1ZUUlZDTyQlQCN0PWcu). Anyone from your company can apply, but if you are accepted, you need to work with your Commercial Executive to transact the SKU .
 - Enter your company email ID.
 - Select **Submit**. Someone from our sales team will reach out within 5 business days.
+
+
+### What's next
+
+- [Start using Defender Experts for Hunting](onboarding-defender-experts-for-hunting.md)
