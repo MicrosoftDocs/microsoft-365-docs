@@ -46,7 +46,7 @@ Anyone from your organization can complete the customer interest form for Micros
 
 ## Understand the service's availability and data access requirements
 
-Defender Experts for Hunting is a managed threat hunting service that proactively hunts for threats across endpoints, email, identity, and cloud apps. To carry out hunting on your behalf, Microsoft experts need access to your Microsoft 365 Defender advanced hunting data. Enrolling in this service means you are granting permission to Microsoft experts to access the said data.
+Defender Experts for Hunting is a managed threat hunting service that proactively hunts for threats across endpoints, email, identity, and cloud apps. To carry out hunting on your behalf, Microsoft experts need access to your Microsoft 365 Defender advanced hunting data. Enrolling in this service means you're granting permission to Microsoft experts to access the said data.
 
 The following enumerates additional information about the service's data usage, compliance, and availability. For more information about Microsoft's commitment in valuing and protecting your data, visit the [Trust Center](https://aka.ms/trustcenter-dex4hunting).
 
@@ -60,7 +60,7 @@ Microsoft experts hunt over [advanced hunting logs](https://docs.microsoft.com/m
 
 ### Security and compliance
 
-When you purchase and onboard to Defender Experts for Hunting, you are granting permission to Microsoft experts to access the customer's advanced hunting data.
+When you purchase and onboard to Defender Experts for Hunting, you're granting permission to Microsoft experts to access the customer's advanced hunting data.
 
 This service has been developed in alignment with existing security and privacy standards and is working towards several certifications, including ISO 27001 and ISO 27018.
 
@@ -76,9 +76,9 @@ Defender Experts for Hunting is currently delivered in English language only.
 
 If you haven't done so yet, you can complete the customer interest form for Defender Experts for Hunting:
 
-- Complete the [Customer Interest Form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_xMkpZdsClLjYwQYYo1uONURTgyU0EzQUQyUjFFVEtIVFozT1ZUUlZDTyQlQCN0PWcu). Anyone from your company can apply, but if you are accepted, you need to work with your Commercial Executive to transact the SKU .
+- Complete the [Customer Interest Form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_xMkpZdsClLjYwQYYo1uONURTgyU0EzQUQyUjFFVEtIVFozT1ZUUlZDTyQlQCN0PWcu). Anyone from your company can apply, but if you're accepted, you need to work with your Commercial Executive to transact the SKU.
 - Enter your company email ID.
-- Select **Submit**. Someone from our sales team will reach out within 5 business days.
+- Select **Submit**. Someone from our sales team will reach out within five business days.
 
 
 ### What's next
