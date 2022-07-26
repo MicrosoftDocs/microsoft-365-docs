@@ -2,7 +2,7 @@
 title: Start using Microsoft Defender Experts for Hunting
 ms.reviewer:
 description: Defender Experts for Hunting is a proactive threat hunting service that goes beyond the endpoint to hunt across endpoints
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
+keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, defender experts notifications, endpoint attack notifications, Microsoft Defender Experts for hunting, threat hunting and analysis.
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -57,13 +57,13 @@ Refer to the following screenshot to see a sample Defender Experts Notification:
 
 You can receive Defender Experts Notifications from Defender Experts through the following mediums: 
 
-- The Microsoft 365 Defender portal's [Incidents](https://security.microsoft.com/incidents?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page 
-- The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page 
+- The Microsoft 365 Defender portal's [Incidents](https://security.microsoft.com/incidents?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
+- The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
 - OData alerting [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) and [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [DeviceAlertEvents](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
 - Your inbox if you choose to have Defender Experts Notifications sent to you via email. See [Get incident notifications](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview?view=o365-worldwide&viewFallbackFrom=o365-worldwide%22%20%5Cl%20%22get-incident-notifications-by-email),for details.
 
-### Create an email notification rule 
+### Create an email notification rule
 
 You can create rules to send email notifications for notification recipients. For full details, see [Configure alert notifications](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview?view=o365-worldwide&viewFallbackFrom=o365-worldwide%22%20%5Cl%20%22create-a-rule-for-email-notifications%22%20HYPERLINK%20%22https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fwindows%2Fsecurity%2Fthreat-protection%2Fmicrosoft-defender-atp%2Fconfigure-email-notifications) to create, edit, delete, or troubleshoot email notifications.
 
@@ -78,9 +78,9 @@ You'll start receiving Defender Experts Notifications from Defender Experts in y
 
 You can also filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
 
-1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the filter icon. 
-2. Scroll down to the **Tags** field > select the **Defender Experts** check box. 
-3. Click **Apply**. 
+1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the filter icon.
+2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
+3. Click **Apply**.
 
 ### Collaborate with Experts on Demand
 

@@ -22,10 +22,6 @@ ms.technology: mde
 
 # Before you begin using Defender Experts for Hunting
 
-> [!IMPORTANT]
-> Some information relates to pre-released products which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
@@ -72,7 +68,7 @@ This service has been developed in alignment with existing security and privacy 
 
 Defender Experts for Hunting is available worldwide for customers in our commercial public clouds. This service is currently not available to customers in government and sovereign clouds.
 
-### Languages 
+### Languages
 
 Defender Experts for Hunting is currently delivered in English language only.
 
