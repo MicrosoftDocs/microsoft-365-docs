@@ -532,7 +532,7 @@
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
 
 ###### [Information Gathering]()
-####### [Export certificate inventory assessment](get-assessment-information-gathering.md)
+####### [Export information gathering assessment](get-assessment-information-gathering.md)
 
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
