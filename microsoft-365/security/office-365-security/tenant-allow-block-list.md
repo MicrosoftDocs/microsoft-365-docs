@@ -36,9 +36,6 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 - Files to block.
 - Sender emails or domains to block.
 - Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
-- URLs to allow.
-- Files to allow.
-- Sender emails or domains to allow.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -97,8 +94,6 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
 To add all blocks, see [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
 
-To add all allows, see [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md).
-
 To modify and remove all blocks and allows, see [Modify and remove entries in the Tenant Allow/Block List](modify-remove-entries-tenant-allow-block.md).
 
 ### Use Exchange Online PowerShell or standalone EOP PowerShell
@@ -113,7 +108,7 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
    - **Senders**:
      - **Value**: The sender domain or email address.
-     - **Action**: The value **Allow** or **Block**.
+     - **Action**: The value **Block**.
      - **Modified by**
      - **Last updated**
      - **Remove on**
@@ -125,14 +120,14 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
      - **Action**: The value **Block** or **Allow**.
    - **URLs**:
      - **Value**: The URL.
-     - **Action**: The value **Allow** or **Block**.
+     - **Action**: The value **Block**.
      - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **Files**
      - **Value**: The file hash.
-     - **Action**: The value **Allow** or **Block**.
+     - **Action**: The value **Block**.
      - **Modified by**
      - **Last updated**
      - **Remove on**
