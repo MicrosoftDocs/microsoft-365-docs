@@ -145,7 +145,7 @@ conceptualContent:
       - title: Respond to security incidents
         links:
          - url: /microsoft-365/security/defender/microsoft-365-defender-portal
-           itemType: concept
+           itemType: none
            text: Start using the Microsoft 365 Defender Portal
          - url: /microsoft-365/security/defender/first-incident-overview
            itemType: how-to-guide
