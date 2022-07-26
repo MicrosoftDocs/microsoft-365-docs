@@ -126,7 +126,7 @@ Follow the steps to enable endpoint protection and configuration of custom clien
 1. In the **Administration** workspace, click **Client Settings.**
 1. On the **Home** tab, in the **Create** group, click **Create Custom Client Device Settings.**
 1. In the **Create Custom Client Device Settings** dialog box, provide a name and a description for the group of settings, and then select **Endpoint Protection.**
-1. Configure the Endpoint Protection client settings that you require. For a full list of Endpoint Protection client settings that you can configure, see the Endpoint Protection section in [About client settings.](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
+1. Configure the Endpoint Protection client settings that you require. For a full list of Endpoint Protection client settings that you can configure, see the Endpoint Protection section in [About client settings.](/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
 
     > [!IMPORTANT]
     > Install the Endpoint Protection site system role before you configure client settings for Endpoint Protection.
@@ -135,7 +135,8 @@ Follow the steps to enable endpoint protection and configuration of custom clien
 1. Next, deploy the custom client settings to a collection. Select the custom client settings you want to deploy. In the **Home** tab, in the **Client Settings** group, click **Deploy.**
 1. In the **Select Collection** dialog box, choose the collection to which you want to deploy the client settings and then click **OK.** The new deployment is shown in the **Deployments** tab of the details pane.
 
-Clients are configured with these settings when they next download client policy. For more information, see [Initiate policy retrieval for a Configuration Manager client.](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/manage/manage-clients#start-policy-retrieval)
+Clients are configured with these settings when they next download client policy. For more information, see [Initiate policy retrieval for a Configuration Manager client.](/mem/configmgr/core/clients/manage/manage-clients)
+
 
 ##### Installation of Endpoint Protection client from a command prompt
 Follow the steps to complete installation of endpoint protection client from the command prompt.
