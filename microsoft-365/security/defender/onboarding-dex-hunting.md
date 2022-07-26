@@ -1,7 +1,7 @@
 ---
 title: Start using Microsoft Defender Experts for Hunting
 ms.reviewer:
-description: If you're new to Microsoft 365 Defender and Defender Experts for Hunting
+description: Defender Experts for Hunting is a proactive threat hunting service that goes beyond the endpoint to hunt across endpoints
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, defender experts notifications, endpoint attack notifications, Microsoft Defender Experts for hunting, threat hunting and analysis.
 search.product: Windows 10
 ms.prod: m365-security
