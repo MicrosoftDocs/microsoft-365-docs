@@ -30,9 +30,11 @@ AI and machine learning help you better understand your content by accurately an
 
 ## Content understanding models
 
-Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file. With SharePoint Syntex, you use [custom models](model-types-overview.md) and [trained models](prebuilt-overview.md) to organize, label, and classify documents in SharePoint libraries. 
+Understanding your content with SharePoint Syntex begins with models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
 
 The type of model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+
+In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [trained models](prebuilt-overview.md). 
 
 You build and train custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
 
