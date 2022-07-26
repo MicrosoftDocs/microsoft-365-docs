@@ -15,9 +15,9 @@ ms.localizationpriority:  medium
 description: Learn how to apply a retention label to a model in Microsoft SharePoint Syntex.
 ---
 
-# Apply a retention label to a model in SharePoint Syntex
+# Apply a retention label to a model in Microsoft SharePoint Syntex
 
-<sub>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout  | &ensp; &#10003; All trained models</sub>
+<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout &ensp;| &ensp; &#10003; All trained models</sup>
 
 </br>
 
