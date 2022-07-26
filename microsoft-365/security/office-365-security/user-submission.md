@@ -229,7 +229,7 @@ The difference between these two elements isn't obvious when you manage user sub
 
 - There's only one report submission rule, and its default name is DefaultReportSubmissionRule. You can delete the report submission rule and recreate it with a different name, but the rule is always associated with the one and only report submission policy named DefaultReportSubmissionPolicy. So, we recommend that you name the report submission rule DefaultReportSubmissionRule whenever you create or recreate the report submission rule.
 
-- When you specify the email address of the user submissions mailbox, that value is primarily set in the report submission rule, but the value is also copied into cosmetically related properties in the report submission rule.
+- When you specify the email address of the user submissions mailbox in the Microsoft 365 Defender portal, that value is primarily set in the report submission rule, but the value is also copied into the related properties in the report submission rule.
 
 ### Use PowerShell to view the report submission policy and the report submission rule
 
