@@ -1,5 +1,5 @@
 ---
-title: Apply a retention label to a model in SharePoint Syntex
+title: Apply a retention label to a model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a retention label to a model in SharePoint Syntex.
+description: Learn how to apply a retention label to a model in Microsoft SharePoint Syntex.
 ---
 
 # Apply a retention label to a model in SharePoint Syntex
 
-<sub>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern | &ensp; &#10003; Extract by layout</sub>
+<sub>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout</sub>
 
 </br>
 
@@ -116,7 +116,6 @@ You can add a retention label to an existing form processing model that you own 
 
      ![Model details.](../media/content-understanding/retention-label-model-details.png)</br> 
 
-
 3. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.
 
 > [!NOTE]
@@ -129,4 +128,4 @@ You can add a retention label to an existing form processing model that you own 
 
 [Create an extractor](create-an-extractor.md)
 
-[Document Understanding overview](document-understanding-overview.md)
+
