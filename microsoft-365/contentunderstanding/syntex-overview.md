@@ -32,6 +32,8 @@ AI and machine learning help you better understand your content by accurately an
 
 With SharePoint Syntex, you use [custom models](model-types-overview.md) and [trained models](prebuilt-overview.md) to organize, label, and classify documents in SharePoint libraries. 
 
+The type of model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+
 You build and train custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
