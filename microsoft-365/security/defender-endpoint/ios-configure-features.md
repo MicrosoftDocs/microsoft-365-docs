@@ -195,10 +195,8 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
-        - By default it's set to `true`, the unsafe site information will be sent to Organization.
-             :::image type="content" source="images/ios-privacyurl-toggle-on.png" alt-text="Screenshot that shows Privacy Settings." lightbox="images/ios-privacyurl-toggle-on.png":::
-        - If user toggles it to `false`, the unsafe site details will not be shared to their Organization.
-            :::image type="content" source="images/ios-privacyurl-toggle-off.png" alt-text="Screenshot that shows Privacy Settings." lightbox="images/ios-privacyurl-toggle-off.png":::
+        - By default its set to `true`, the unsafe site information will be sent.
+        - If user toggles it to `false`, the unsafe site details will not be sent.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 
@@ -227,7 +225,8 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
     - Even if the user has skipped VPN, the device will be able to onboard, and heartbeat will be sent.
     - Since `VPN` is disabled, `Web Protection` will not be active.
     - Later, User can enable the `Web Protection` from within the App. This will install the VPN configuration on the device.
->[!NOTE]
+
+> [!NOTE]
 >**Optional Permission** is different from **Disable Web Protection**. Optional VPN Permission only helps to skip the permission during onboarding but its available for the end user to later review and enable it. While **Disable Web Protection** allows users to onboard the MDE app without the Web Protection. It cannot be enabled later.
 
 ## Configure compliance policy against jailbroken devices
