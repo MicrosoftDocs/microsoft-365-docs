@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to implement cybersecurity for small or medium sized businesses with Microsoft 365 Business Premium. The cybersecurity capabilities and features are optimized to prevent cyberattacks and security breaches, and help safeguard data, devices and information with high-grade cyber defenses."
 ---
 
-# Microsoft 365 Business Premium &mdash; cybersecurity for small business
+# Microsoft 365 Business Premium – cybersecurity for small business
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguards your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states.
 
