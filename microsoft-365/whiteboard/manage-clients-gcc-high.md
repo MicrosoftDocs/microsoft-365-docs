@@ -1,7 +1,7 @@
 ---
 title: Manage clients for Microsoft Whiteboard in GCC High environments
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn which clients are currently supported for Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

@@ -21,7 +21,7 @@ description: Learn how to enable shared channels in Microsoft Teams for collabor
 
 # Collaborate with external participants in a shared channel
 
-If you want to enable your users to collaborate with people outside your organization in [shared channels](/MicrosoftTeams/shared-channels), you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
+If you want to enable your users to collaborate with people in other Microsoft 365 organizations in [shared channels](/MicrosoftTeams/shared-channels), you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 When you enable shared channels in Teams with another organization:
 

@@ -14,7 +14,7 @@ search.appverid:
   - MOE150
 ms.collection:
   - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365solution-mdo-migration
 ms.custom: migrationguides
 description: "Take the steps to begin migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.technology: mdo
@@ -80,7 +80,7 @@ You should also confirm that all users in the pilot have a supported message rep
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- Supported third party reporting tools as described [here](user-submission.md#third-party-reporting-tools).
+- Supported third party reporting tools as described [here](user-submission.md#third-party-email-reporting-tools)
 
 Don't underestimate the importance of this step. Data from user submissions will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, as well as provide data-backed reports to your management that the migration went smoothly.
 
