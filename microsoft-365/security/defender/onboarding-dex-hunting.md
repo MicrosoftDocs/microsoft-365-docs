@@ -1,5 +1,5 @@
 ---
-title: Start using Microsoft Defender Experts for Hunting
+title: Onboarding to Microsoft Defender Experts for Hunting
 ms.reviewer:
 description: Defender Experts for Hunting is a proactive threat hunting service that goes beyond the endpoint to hunt across endpoints
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, defender experts notifications, endpoint attack notifications, Microsoft Defender Experts for hunting, threat hunting and analysis.
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Start using Microsoft Defender Experts for Hunting
+# Onboarding to Microsoft Defender Experts for Hunting
 
 > [!IMPORTANT]
 > Some information relates to pre-released products which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
