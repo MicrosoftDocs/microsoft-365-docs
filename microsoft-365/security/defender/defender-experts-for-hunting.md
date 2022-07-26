@@ -1,0 +1,46 @@
+---
+title: Microsoft Defender Experts for Hunting
+ms.reviewer:
+description: Defender Experts for Hunting is a proactive threat hunting service that goes beyond the endpoint to hunt across endpoints
+keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
+search.product: Windows 10
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: vpattnaik
+author: vpattnai
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection:
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
+ms.topic: conceptual
+ms.technology: mde
+---
+
+# Microsoft Defender Experts for Hunting
+
+> [!IMPORTANT]
+> Some information relates to pre-released products which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+Defender Experts for Hunting was created for customers who have a robust security operations center but want Microsoft to help them proactively hunt threats using Microsoft Defender data. Defender Experts for Hunting is a proactive threat hunting service that goes beyond the endpoint to hunt across endpoints, Office 365, cloud applications, and identity. Our experts will investigate anything they find, then hand off the contextual alert information along with remediation instructions, so you can quickly respond.
+
+The following capabilities included in this managed threat hunting service could also help with your daily SecOps work:
+
+- **Threat hunting and analysis** – Defender Experts for Hunting look deeper to expose advanced threats and identify the scope and impact of malicious activity associated with human adversaries or hands-on-keyboard attacks.
+- **Targeted attack notification** – Notifications show up as incidents in Microsoft 365 Defender, helping to improve your security operations' incident response with specific information about the scope, method of entry, and remediation instructions.
+- **Experts on Demand** – Consult a threat expert about a specific incident, nation-state actor, or attack vector.
+- **Hunter-trained AI** – Our Defender Experts for Hunting share their learning back into the automated tools they use to improve threat discovery and prioritization.
+- **Reports** – An interactive report summarizing what we hunted, what we found, and what we recommended.
+
+[Watch this short video](https://youtu.be/4t1JgE0X0jc) to learn more about how Microsoft Defender Experts for Hunting can help you track the latest advanced threats in your environment.
+
