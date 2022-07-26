@@ -1,7 +1,7 @@
 ---
 title: Manage data for Microsoft Whiteboard in GCC High environments
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
