@@ -61,6 +61,12 @@ Advanced metadata search lets you use the metadata associated with a document to
 
 For more information, see [Search for metadata in document libraries in SharePoint Syntex](metadata-search.md).
 
+## Content compliance with SharePoint Syntex
+
+Understanding your content allows for better organization. Organization increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Being able to correctly process data is key to ensuring that it is secure and accurate. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+
+For more information, see [Apply a retention label to a model in SharePoint Syntex](apply-a-retention-label-to-a-model.md) and [Apply a sensitivity label to a model in Microsoft SharePoint Syntex](apply-a-sensitivity-label-to-a-model.md).
+
 ## Scenarios and use cases for SharePoint Syntex
 
 SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
