@@ -63,9 +63,9 @@ While enabled by default, there might be some cases that require you to disable 
 
 ## Disable Web Protection
 
-Web Protection is one of the key features of MDE and it requires a VPN to provide that capability. The VPN used is a local/loopback VPN and not a traditional VPN, however there are several reasons for which Customers might not prefer the VPN. Customers who do not want to setup a VPN, there is an option to disable **Web Protection** and deploy MDE without that feature. Other MDE features will continue to work.
+Web Protection is one of the key features of Defender for Endpoint and it requires a VPN to provide that capability. The VPN used is a local/loopback VPN and not a traditional VPN, however there are several reasons for which customers might not prefer the VPN. Customers who do not want to setup a VPN, there is an option to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features will continue to work.
 
-This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. For Customers with MDM, admins can configure the **Web Protection** through Managed devices in the App Config. For Customers without enrolment, using MAM, admins can configure the **Web Protection** through Managed apps in the App Config.
+This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. For customers with MDM, admins can configure the **Web Protection** through Managed devices in the App Config. For customers without enrolment, using MAM, admins can configure the **Web Protection** through Managed apps in the App Config.
 
 ### Configure Web Protection
 
@@ -77,7 +77,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **Boolean**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to MDE portal whenever user opens the app.
+        - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
         - Click Next and assign this profile to targeted devices/users.
 
 1. **Disable Web Protection(MAM)** Use the following steps to disable **Web Protection** for un enrolled devices.
@@ -88,7 +88,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**, .
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to MDE portal whenever user opens the app.
+        - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
         - Click Next and assign this profile to targeted devices/users.
 
 ## Configure Network Protection
