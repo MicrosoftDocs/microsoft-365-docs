@@ -136,7 +136,7 @@ conceptualContent:
            itemType: how-to-guide
            text: Protect your endpoints
          - url: /microsoft-365/security/defender/microsoft-secure-score
-           itemType: concept
+           itemType: how-to-guide
            text: Assess your security posture and take action
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
            itemType: how-to-guide
