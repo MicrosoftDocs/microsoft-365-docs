@@ -26,14 +26,12 @@ description: "Learn how Microsoft 365 Business Premium helps you run your busine
 
 Microsoft 365 Business Premium is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
 
-- Enable employees to be connected and productive, whether they're working on site or remotely, with best-in-class collaboration tools like Microsoft Teams.
+- Enable your employees to be connected and productive, whether they're working on site or remotely, with best-in-class collaboration tools like Microsoft Teams.
 - Provide your employees with secure access to their business data and apps, and help ensure that only authorized personnel can access confidential work data.
 - Defend against sophisticated cyberthreats and safeguard your business data with protection against phishing, ransomware, and data loss.
 - Manage and secure the devices (Windows, Mac, iOS, and Android) that connect to your data, and help keep those devices up to date.
 
-Microsoft 365 Business Premium offers you one comprehensive solution for productivity and security. As an admin or IT Pro, you have everything you need in one place for administration, billing, and 24x7 support, while reducing cost and complexity for your business. 
-
-This article describes how Microsoft 365 Business Premium can help your business or campaign, and includes the following sections:
+Microsoft 365 Business Premium offers you one comprehensive solution for productivity and security. As an admin or IT Pro, you have everything you need in one place for administration, billing, and 24x7 support, while reducing cost and complexity for your business. This article describes how Microsoft 365 Business Premium can help your business or campaign, and includes the following sections:
 
 - [Video: Top 5 benefits of Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [Productivity and advanced security capabilities](#productivity-and-security) that enable you to run your business more securely, across devices, and from almost anywhere
