@@ -113,6 +113,64 @@ Configure all available rules to Audit.
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
+For deploying AV and ASR policies through Microsoft System Center Configuration Manager (SCCM) follow the steps:
+
+- Enable Endpoint Protection and configure custom client settings.
+- Install the Endpoint Protection client from a command prompt.
+- Verify the Endpoint Protection client installation
+
+##### Enable Endpoint Protection and configure custom client settings
+Follow the steps to enable endpoint protection and configuration of custom client settings:
+
+1. In the Configuration Manager console, click **Administration.**
+1. In the **Administration** workspace, click **Client Settings.**
+1. On the **Home** tab, in the **Create** group, click **Create Custom Client Device Settings.**
+1. In the **Create Custom Client Device Settings** dialog box, provide a name and a description for the group of settings, and then select **Endpoint Protection.**
+1. Configure the Endpoint Protection client settings that you require. For a full list of Endpoint Protection client settings that you can configure, see the Endpoint Protection section in [About client settings.](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
+
+    > [!IMPORTANT]
+    > Install the Endpoint Protection site system role before you configure client settings for Endpoint Protection.
+
+1. Click **OK** to close the **Create Custom Client Device Settings** dialog box. The new client settings are displayed in the **Client Settings** node of the **Administration** workspace.
+1. Next, deploy the custom client settings to a collection. Select the custom client settings you want to deploy. In the **Home** tab, in the **Client Settings** group, click **Deploy.**
+1. In the **Select Collection** dialog box, choose the collection to which you want to deploy the client settings and then click **OK.** The new deployment is shown in the **Deployments** tab of the details pane.
+
+Clients are configured with these settings when they next download client policy. For more information, see [Initiate policy retrieval for a Configuration Manager client.](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/manage/manage-clients#start-policy-retrieval)
+
+##### Installation of Endpoint Protection client from a command prompt
+Follow the steps to complete installation of endpoint protection client from the command prompt.
+
+1. Copy **scepinstall.exe** from the **Client** folder of the Configuration Manager installation folder to the computer on which you want to install the Endpoint Protection client software.
+1. Open a command prompt as an administrator. Change directory to the folder with the installer. Then run ```scepinstall.exe```, adding any extra command-line properties that you require:
+
+     |**Property**  |**Description**  |
+     |---------|---------|
+     |```/s```      |Run the installer silently|
+     |```/q```      |Extract the setup files silently|
+     |```/i```      |Run the installer normally|
+     |```/policy``` |Specify an antimalware policy file to configure the client during installation|
+     |```/sqmoptin```|Opt-in to the Microsoft Customer Experience Improvement Program (CEIP)|
+
+1. Follow the on-screen instructions to complete the client installation.
+1. If you downloaded the latest update definition package, copy the package to the client computer, and then double-click the definition package to install it.
+
+     > [!NOTE]
+     > After the Endpoint Protection client install completes, the client automatically performs a definition update check. If this update check succeeds, you don't have to manually install the latest definition update package.
+
+**Example: install the client with an antimalware policy**
+
+```scepinstall.exe /policy <full path>\<policy file>```
+
+##### Verify the Endpoint Protection client installation
+
+After you install the Endpoint Protection client on your reference computer, verify that the client is working correctly.
+
+1. On the reference computer, open **System Center Endpoint Protection** from the Windows notification area.
+1. On the **Home** tab of the **System Center Endpoint Protection** dialog box, verify that **Real-time protection** is set to **On.**
+1. Verify that **Up-to-date** is displayed for **Virus and spyware definitions.**
+1. To make sure that your reference computer is ready for imaging, under **Scan options,** select **Full,** and then click **Scan now.**
+
+
 #### Network protection
 
 Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
