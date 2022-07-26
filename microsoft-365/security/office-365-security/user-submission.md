@@ -35,7 +35,7 @@ User reported message settings and the user submissions mailbox work with the fo
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- [Third-party reporting tools](user-submission.md#third-party-email-reporting-tools)
+- [Third-party reporting tools](#third-party-reporting-tools-options)
 
 Delivering user reported messages to a user submissions mailbox instead of directly to Microsoft allows admins to selectively and manually report messages to Microsoft on the **Submissions** page at <https://security.microsoft.com/reportsubmission>. For more information, see [Admin submission](admin-submission.md).
 
@@ -251,7 +251,7 @@ Write-Output -InputObject `r`n,"Report Submission Policy","---------------------
 
 Remember, if you've never gone to <https://security.microsoft.com/userSubmissionsReportMessage> or manually created the report submission policy or the report submission rule in PowerShell, there is no report submission policy or report submission rule, so the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets return nothing.
 
-For detailed syntax and parameter information, see [Get-ReportSubmissionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-reportsubmissionpolicy) and [Get-ReportSubmissionRule](https://docs.microsoft.com/powershell/module/exchange/get-reportsubmissionrule).
+For detailed syntax and parameter information, see [Get-ReportSubmissionPolicy](/powershell/module/exchange/get-reportsubmissionpolicy) and [Get-ReportSubmissionRule](/powershell/module/exchange/get-reportsubmissionrule).
 
 ### Use PowerShell to create the report submission policy and the report submission rule
 
@@ -259,7 +259,7 @@ If the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets r
 
 Always create the report submission policy first, because you specify the report submission policy in the report submission rule.
 
-For detailed syntax and parameter information, see [New-ReportSubmissionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-reportsubmissionpolicy) and [New-ReportSubmissionRule](https://docs.microsoft.com/powershell/module/exchange/new-reportsubmissionrule).
+For detailed syntax and parameter information, see [New-ReportSubmissionPolicy](/powershell/module/exchange/new-reportsubmissionpolicy) and [New-ReportSubmissionRule](/powershell/module/exchange/new-reportsubmissionrule).
 
 #### Use PowerShell to enable the Microsoft integrated reporting experience with report to Microsoft only
 
@@ -372,7 +372,7 @@ New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPoli
 
 The same settings are available when you modify the report submission policy in PowerShell as when you created the policy as described in [the previous section](#use-powershell-to-create-the-report-submission-policy-and-the-report-submission-rule). The major difference is: the additional parameters that were required to create the policy (for example, _DisableQuarantineReportingOption_) are no long required. But, you might have to undo or nullify some important settings that you previously configured or didn't configure. And, you might need to create or delete the report submission rule to allow or prevent reporting to a user submissions mailbox.
 
-For detailed syntax and parameter information, see [Set-ReportSubmissionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-reportsubmissionpolicy).
+For detailed syntax and parameter information, see [Set-ReportSubmissionPolicy](/powershell/module/exchange/set-reportsubmissionpolicy).
 
 The following examples show how to change the user reporting experience without concern for the existing settings or values:
 
@@ -432,15 +432,15 @@ The only meaningful setting that you can modify in the report submission rule is
 Get-ReportSubmissionRule | Set-ReportSubmissionRule -SentTo newemailaddress@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Set-ReportSubmissionRule](https://docs.microsoft.com/powershell/module/exchange/set-reportsubmissionrule).
+For detailed syntax and parameter information, see [Set-ReportSubmissionRule](/powershell/module/exchange/set-reportsubmissionrule).
 
-To temporarily disable sending email messages to the user submissions mailbox (Microsoft integrated reporting experience or third-party tools) without deleing the report submission rule, use [Disable-ReportSubmissionRule](https://docs.microsoft.com/powershell/module/exchange/disable-reportsubmissionrule). For example:
+To temporarily disable sending email messages to the user submissions mailbox (Microsoft integrated reporting experience or third-party tools) without deleing the report submission rule, use [Disable-ReportSubmissionRule](/powershell/module/exchange/disable-reportsubmissionrule). For example:
 
 ```powershell
 Get-ReportSubmissionRule | Disable-ReportSubmissionRule -Confirm:$false
 ```
 
-To enable the report submission rule again, use [Enable-ReportSubmissionRule](https://docs.microsoft.com/powershell/module/exchange/enable-reportsubmissionrule). For example:
+To enable the report submission rule again, use [Enable-ReportSubmissionRule](/powershell/module/exchange/enable-reportsubmissionrule). For example:
 
 ```powershell
 Get-ReportSubmissionRule | Disable-ReportSubmissionRule -Confirm:$false
@@ -468,4 +468,4 @@ To remove both the report submission policy and report submission rule in the sa
 Remove-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy; Get-ReportSubmissionRule | Remove-ReportSubmissionRule -Confirm:$false
 ```
 
-For detailed syntax and parameter information, see [Remove-ReportSubmissionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-reportsubmissionpolicy) and [Remove-ReportSubmissionRule](https://docs.microsoft.com/powershell/module/exchange/remove-reportsubmissionrule).
+For detailed syntax and parameter information, see [Remove-ReportSubmissionPolicy](/powershell/module/exchange/remove-reportsubmissionpolicy) and [Remove-ReportSubmissionRule](/powershell/module/exchange/remove-reportsubmissionrule).
