@@ -63,11 +63,7 @@ For more information, see [Search for metadata in document libraries in SharePoi
 
 ## Scenarios and use cases for SharePoint Syntex
 
-SharePoint Syntex can help your organization:
-
-- Automate business processes
-- Improve search accuracy
-- Manage compliance risk
+SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
 
 To spark ideas about how you can use SharePoint Syntex in your organization, see [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md).
 
