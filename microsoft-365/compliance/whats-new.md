@@ -40,7 +40,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- [Microsoft Purview Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md) - added three ADD roles that have permissions to create or edit alert policies.
+- [Microsoft Purview Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md) - added three AAD roles that have permissions to create or edit alert policies.
 - [Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md) - new name and updated reference links for this getting-started tool for Compliance Manager formerly named 'Microsoft Compliance Configuration Analyzer'.
 
 ### Data Loss Prevention

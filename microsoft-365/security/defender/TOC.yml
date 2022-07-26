@@ -10,6 +10,8 @@
         href: microsoft-365-defender-portal.md
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
+      - name: Preview features in Microsoft 365 Defender
+        href: preview.md
       - name: Microsoft 365 Defender services
         items:
         - name: Defender for Endpoint in Microsoft 365 Defender
@@ -30,17 +32,6 @@
         href: usgov.md
       - name: Industry tests
         href: ./top-scoring-industry-tests.md
-    - name: Before you begin
-      items:
-      - name: Prerequisites
-        - name: Eligibility
-          href: whats-new.md
-        - name: Privacy
-          href: whats-new.md
-        - name: Other disclaimers
-          href: whats-new.md
-        - name: Geo-availability
-          href: whats-new.md
     - name: Plan
       items: 
         - name: Prerequisites
@@ -359,7 +350,7 @@
          items:
               - name: Overview
                 href: defenderexpertsforhuntingprev.md
-              - name: Defender experts report
+              - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
        - name: Ransomware playbooks
          items: 
@@ -395,6 +386,8 @@
               href: m365d-time-zone.md
             - name: View device profiles
               href: device-profile.md
+            - name: Troubleshoot Microsoft 365 Defender service issues
+              href: troubleshoot.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
