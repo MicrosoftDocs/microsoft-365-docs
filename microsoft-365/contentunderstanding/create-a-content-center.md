@@ -25,13 +25,13 @@ description: Learn how to create a content center in Microsoft SharePoint Syntex
 
 </br>
 
-To create and manage document understanding models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
+To create and manage models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
 
    ![Select a doc library.](../media/content-understanding/content-center-page.png)
 
-You create a default content center during [setup](set-up-content-understanding.md). But a SharePoint admin can also choose to create additional centers as needed. While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which might have different needs and permission requirements for their models.
+You create a default content center during [setup](set-up-content-understanding.md). But a SharePoint admin can also choose to create additional centers as needed. While a single content center might be fine for environments for which you want a roll-up of all model activity, you might want to have additional centers for multiple departments within your organization, which might have different needs and permission requirements for their models.
 
-Additionally, if you want to try SharePoint Syntex, you can create a content center using the instructions in this article without purchasing licenses. Unlicensed users can create document understanding models but can't apply them to a document library.
+Additionally, if you want to try SharePoint Syntex, you can create a content center using the instructions in this article without purchasing licenses. Unlicensed users can create models but can't apply them to a document library.
 
 > [!NOTE]
 > In a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), if you have a single default content center in your central location, you can only provide a roll-up of model activity from within that location. You currently cannot get a roll-up of model activity across farm-boundaries in Multi-Geo environment. 
@@ -67,21 +67,16 @@ In SharePoint Syntex, the first content center created during setup is the *defa
 
 ![Screenshot of the Model library in the default content center.](../media/content-understanding/model-library-default-content-center.png)
 
-The **Models** library in the default content center view groups the created models by content center for a summary view of all document understanding models and form processing models that have been created.
+The **Models** library in the default content center view groups the created models by content center for a summary view of all models that have been created.
 
 > [!NOTE]
 > You can't change the designated default content center. It's always the first content center created during setup. 
 
 ## See also
 
+[Overview of model types](model-types-overview.md)
+
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)
 
-[Create a content center](create-a-content-center.md)
-
-[Document understanding overview](document-understanding-overview.md)
-
-[Create a form processing model](create-a-form-processing-model.md)
-
-[Apply a model](apply-a-model.md)
