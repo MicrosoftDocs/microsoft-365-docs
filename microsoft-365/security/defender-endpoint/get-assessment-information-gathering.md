@@ -31,7 +31,7 @@ ms.custom: api
 
 This API response contains the data for the information gathering assessment per device. It returns a table with an entry for every unique combination of DeviceId, DeviceName, AdditionalDetails.
 
-- [Export information gathering assessment **via files**](#1-export-browser-extension-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+- [Export information gathering assessment **via files**](#1-export-information-gathering-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
   - Call the API to get a list of download URLs with all your organization data.
   - Download all the files using the download URLs and process the data as you like.
 
@@ -113,6 +113,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/InfoGatheringExport?$s
 ## Other related
 
 - [DeviceTvmInfoGathering](../defender/advanced-hunting-devicetvminfogathering-table.md)
-- [DeviceTvmInfoGatheringKB](../defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb.md)
+- [DeviceTvmInfoGatheringKB](../defender/advanced-hunting-devicetvminfogatheringkb-table.md)
 - [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
 - [Vulnerabilities in your organization](../defender-vulnerability-management/tvm-weaknesses.md)
