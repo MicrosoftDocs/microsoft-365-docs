@@ -91,3 +91,4 @@ Among the various threat categories available, the following categories are care
 - Delivery
 
 You can prioritize remediation based on the most impacted category, as depicted in the bar graph.
+
