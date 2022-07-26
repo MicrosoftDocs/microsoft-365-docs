@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how Microsoft 365 Business Premium helps you run your business with productivity and security."
+description: "Learn how Microsoft 365 Business Premium helps you run your business more securely with productivity and security."
 ---
 
 # Productivity and security for small and medium-sized businesses 
