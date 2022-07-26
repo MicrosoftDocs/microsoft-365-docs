@@ -126,9 +126,9 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   # Supports up to 3 subsections
   sections:
-      title: Key scenarios # < 60 chars (optional)
-      items:
-   # Card
+  - title: Key scenarios
+    items:
+      # Card
       - title: Protect your Microsoft 365 organization
         links:
          - url: /microsoft-365/security/defender-endpoint/onboard-configure
