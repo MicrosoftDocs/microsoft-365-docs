@@ -56,21 +56,21 @@ The following enumerates additional information about the service's data usage, 
 
 ### Data collection, usage, and retention
 
-All data used for hunting from existing Defender services will continue to reside in the customer's original Microsoft 365 Defender service storage location. Learn more 
+All data used for hunting from existing Defender services will continue to reside in the customer's original Microsoft 365 Defender service storage location. [Learn more](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)
 
-Defender Experts for Hunting operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no less than 90 days after a customer leaves the service.  
+Defender Experts for Hunting operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no less than 90 days after a customer leaves the service.
 
-Microsoft experts hunt over advanced hunting logs in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Azure Active Directory). Experts also leverage a large set of internal threat intelligence data to inform their hunting and automation. 
+Microsoft experts hunt over [advanced hunting logs](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Azure Active Directory). Experts also leverage a large set of internal threat intelligence data to inform their hunting and automation.
 
 ### Security and compliance
 
 When you purchase and onboard to Defender Experts for Hunting, you are granting permission to Microsoft experts to access the customer's advanced hunting data.
 
-This service has been developed in alignment with existing security and privacy standards and is working towards several certifications, including ISO 27001 and ISO 27018. 
+This service has been developed in alignment with existing security and privacy standards and is working towards several certifications, including ISO 27001 and ISO 27018.
 
 ### Availability
 
-Defender Experts for Hunting is available worldwide for customers in our commercial public clouds. This service is currently not available to customers in government and sovereign clouds. 
+Defender Experts for Hunting is available worldwide for customers in our commercial public clouds. This service is currently not available to customers in government and sovereign clouds.
 
 ### Languages 
 
