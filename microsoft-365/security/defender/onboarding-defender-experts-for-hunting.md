@@ -103,7 +103,7 @@ The option to '**Ask Defender Experts**' is available in several places througho
 
 - Alerts page flyout menu 
 
-![image](../../media/mte/defenderexperts/alerts-flyout-menu.png)
+![Alerts page flyout menu](../../media/mte/defenderexperts/alerts-flyout-menu.png)
 
 - Incidents page actions menu
 
@@ -113,7 +113,7 @@ The Microsoft Defender Experts for Hunting - Experts on Demand menu option in th
 
 - Incidents inventory page
 
-[image]
+[**image yet to be added by engg**]
 
 
 > [!NOTE]
