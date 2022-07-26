@@ -59,7 +59,7 @@ You can receive Defender Experts Notifications from Defender Experts through the
 - The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
 - OData alerting [API](../../security/defender-endpoint/get-alerts.md) and [REST API](../defender-endpoint/configure-siem.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
-- Your inbox if you choose to have Defender Experts Notifications sent to you via email. See [Get incident notifications](../../security/defender/incidents-overview.md),for details.
+- Your inbox if you choose to have Defender Experts Notifications sent to you via email. See [Get incident notifications](../../security/defender/incidents-overview.md), for details.
 
 ### Create an email notification rule
 
