@@ -32,26 +32,24 @@ AI and machine learning help you better understand your content by accurately an
 
 Understanding your content with SharePoint Syntex begins with models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
 
-The type of model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [trained models](prebuilt-overview.md). The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
 
-In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [trained models](prebuilt-overview.md). 
-
-You build and train custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
+**Custom models** – You build and train custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
 - [Extract by layout](form-processing-overview.md)
 - [Extract by text pattern and layout](extract-by-text-pattern-and-layout-overview.md)
 
-If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md). Trained models include:
+**Trained models** – If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md). Trained models include:
 
 - [Invoice model](prebuilt-models.md)
 - [Receipt model](prebuilt-models.md)
 
-For more information, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
+For more information about custom and trained models, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
 ## Content assembly
 
-With SharePoint Syntex, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or user inputs as a data source.
+With SharePoint Syntex, you can use an existing document to create a *modern template*, and then use that template to automatically generate new documents using SharePoint lists or user inputs as a data source.
 
 This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and less prone to errors in SharePoint Syntex.
 
