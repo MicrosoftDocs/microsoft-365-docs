@@ -21,7 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
@@ -49,9 +50,9 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint.
 
-    To enable RBAC in the customer Microsoft Defender Security Center, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
+    To enable RBAC in the customer Microsoft 365 Defender portal, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
 
-    ![Image of MSSP access.](images/mssp-access.png)
+    :::image type="content" source="images/mssp-access.png" alt-text="MSSP access" lightbox="images/mssp-access.png":::
 
     Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via "Assigned user groups".
 
@@ -81,7 +82,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, we will call it **MSSP Accesses**.
 
-    ![Image of new catalog.](images/goverance-catalog.png)
+    :::image type="content" source="images/goverance-catalog.png" alt-text="The new catalog page" lightbox="images/goverance-catalog.png":::
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -97,7 +98,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
     - Access auto expires after 365 days
 
     > [!div class="mx-imgBorder"]
-    > ![Image of new access package.](images/new-access-package.png)
+    > :::image type="content" source="images/new-access-package.png" alt-text="The New access package page" lightbox="images/new-access-package.png":::
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -106,7 +107,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of access properties.](images/access-properties.png)
+    > :::image type="content" source="images/access-properties.png" alt-text="The Properties page" lightbox="images/access-properties.png":::
 
     The link is located on the overview page of each access package.
 
@@ -122,7 +123,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-    At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Defender portal: `https://security.microsoft.com/?tid=<CustomerTenantId>`
 
 ## Related topics
 

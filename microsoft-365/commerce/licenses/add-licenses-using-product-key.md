@@ -1,9 +1,9 @@
 ---
-title: "Add licenses to or extend a subscription paid for using a product key"
+title: "Add licenses using a product key"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,16 +14,16 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - TopSMBIssues
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: "Learn how to add licenses to or extend your subscription with a product key."
 ROBOTS: NOINDEX
-ms.date: 04/07/2021
+ms.date: 06/06/2022
 ---
 
-# Add licenses to or extend a subscription paid for using a product key
+# Add licenses to or extend a paid subscription by using a Microsoft 365 product key
 
 Prepaid licenses are issued to you as a 25-character alphanumeric code. After you have purchased the licenses you need, you can add them to your subscription. You can also use a product key to extend the expiration date of your subscription.
 
@@ -35,12 +35,6 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -61,12 +55,6 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

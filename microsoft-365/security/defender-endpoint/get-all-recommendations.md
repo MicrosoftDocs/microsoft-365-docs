@@ -2,7 +2,6 @@
 title: List all recommendations
 description: Retrieves a list of all security recommendations affecting the organization.
 keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +22,7 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -98,9 +97,9 @@ Here is an example of the response.
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
         {
-            "id": "va-_-microsoft-_-windows_10",
-            "productName": "windows_10",
-            "recommendationName": "Update Windows 10",
+            "id": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11",
+            "productName": "windows_10" "Windows_11",
+            "recommendationName": "Update Windows 10" "Update Windows 11",
             "weaknesses": 397,
             "vendor": "microsoft",
             "recommendedVersion": "",
@@ -123,7 +122,7 @@ Here is an example of the response.
             "totalMachineCount": 37,
             "exposedMachinesCount": 7,
             "nonProductivityImpactedAssets": 0,
-            "relatedComponent": "Windows 10"
+            "relatedComponent": "Windows 10" "Windows 11"
         }
         ...
      ]

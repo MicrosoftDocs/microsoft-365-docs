@@ -2,7 +2,6 @@
 title: Get alert related machine information
 description: Retrieve all devices related to a specific alert using Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get alert information, alert information, related device
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +23,8 @@ ms.custom: api
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -100,7 +100,7 @@ Here is an example of the response.
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
     "lastSeen": "2021-01-25T07:27:36.052313Z",
-    "osPlatform": "Windows10",
+    "osPlatform": "Windows10" "Windows11", 
     "osProcessor": "x64",
     "version": "1901",
     "lastIpAddress": "10.166.113.46",

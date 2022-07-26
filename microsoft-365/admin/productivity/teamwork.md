@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Productivity Score - Teamwork"
+title: "Microsoft Productivity Score and teamwork insights"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article

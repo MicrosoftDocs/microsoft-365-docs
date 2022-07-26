@@ -46,7 +46,7 @@ All cipher suites supported by Office 365 use algorithms acceptable under FIPS 1
 
 TLS, and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. Office 365 supports TLS version 1.2 (TLS 1.2).
 
-TLS version 1.3 (TLS 1.3) is currently not supported.
+TLS version 1.3 (TLS 1.3) is supported by some of the services.
 
 > [!IMPORTANT]
 > Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.

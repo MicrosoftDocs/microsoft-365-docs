@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -23,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -34,7 +34,7 @@ Device control for macOS has the following prerequisites:
 
 > [!div class="checklist"]
 >
-> - Microsoft Defender for Endpoint entitlement (can be trial)
+> - Microsoft Defender for Endpoint entitlement (can be trial)
 > - Minimum OS version: macOS 11 or higher
 > - Minimum product version: 101.34.20
 
@@ -67,7 +67,7 @@ The device control policy can be used to:
 
 When the device control policy that you have put in place is enforced on a device (for example, access to a removable media device is restricted), a notification is displayed to the user.
 
-![Device control notification.](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="The Device control notification" lightbox="images/mac-device-control-notification.png":::
 
 When end users click this notification, a web page is opened in the default browser. You can configure the URL that is opened when end users click the notification.
 
@@ -335,19 +335,20 @@ To find the vendor ID, product ID, and serial number of a USB device:
 1. Plug in the USB device for which you want to look up the identifiers.
 1. In the top-level menu of macOS, select **About This Mac**.
 
-    ![About this Mac.](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="The About this Mac page" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. Select **System Report**.
 
-    ![System Report.](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="The system report" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. From the left column, select **USB**.
 
-    ![View of all USB devices.](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="The view of all the USB devices" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. Under **USB Device Tree**, navigate to the USB device that you plugged in.
 
-    ![Details of a USB device.](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="The details of a USB device" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. The vendor ID, product ID, and serial number are displayed. When adding the vendor ID and product ID to the removable media policy, you must only add the part after `0x`. For example, in the below image, vendor ID is `1000` and product ID is `090c`.
 

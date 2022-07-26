@@ -230,6 +230,9 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 
 ## Multi-geo reporting
 
+> [!NOTE]
+> The multi-geo reporting feature is currently in Preview, is not available in all organizations, and is subject to change.
+
 **Multi-Geo Usage Reports** in the Microsoft 365 admin center displays the user count by geo location. The report displays user distribution for the current month and provides historical data for the past 6 months.
 
 ## See also

@@ -2,8 +2,8 @@
 title: "Move email and data to Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article

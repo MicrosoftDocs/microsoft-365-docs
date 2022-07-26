@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
+ms.author: dansimp
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
@@ -18,6 +18,10 @@ ms.collection: M365-security-compliance
 ---
 
 # Migrating from a third-party HIPS to ASR rules
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article helps you to map common rules to Microsoft Defender for Endpoint.
 

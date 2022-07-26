@@ -7,7 +7,7 @@ metadata:
   author: kwekua
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection: 
@@ -21,10 +21,8 @@ metadata:
   - MET150
   - MOE150
   description: "Review the answers to frequent questions about Centralized Deployment from the Microsoft 365 admin center."
-    
 title: Centralized Deployment FAQ
-summary: Centralized Deployment is the recommended way for an Office 365 admin to deploy Office add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. 
-
+summary: Centralized Deployment is the recommended way for an Office 365 admin to deploy Office Add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. 
 
 sections:
   - name: Ignored
@@ -36,7 +34,7 @@ sections:
            
           Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
           
-          You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
+          You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
             
       - question: |
           How do you target add-in user assignments with Centralized Deployment?
@@ -48,9 +46,9 @@ sections:
           For more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).
            
       - question: |
-          How long does it take for add-ins to show up for all users? 
+          How long does it take for add-ins to show up for all users?
         answer: |
-          It can take up to 24 hours for an add-in to show up for all users. It can take the same amount of time for add-in updates, changes from turn on or turn off, or add-in removals. 
+          It can take up to 24 hours for a new add-in deployment to show up for all users. It can take up to 72 hours for add-in updates, changes from turn on or turn off, or add-in removals to reflect for users.
 
       - question: |
           As an administrator, how do I manage the user access to add-ins for my organization?
@@ -103,7 +101,7 @@ sections:
       - question: |
           Which admin role do I need to manage add-ins for my organization? 
         answer: |
-          Global Admin is the recommended role with complete access to add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.
+          Global Admin is the recommended role with complete access to the add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.
 
           Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  
            

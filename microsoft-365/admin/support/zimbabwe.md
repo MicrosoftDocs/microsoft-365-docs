@@ -17,7 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Zimbabwe
 
-[Find another country or region](../../business-video/get-help-support.md).
+[Find another country or region](../get-help-support.md).
 
 ## Phone number
 +27 21 427 3315

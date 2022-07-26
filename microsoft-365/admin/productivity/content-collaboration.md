@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Productivity Score - Content collaboration"
+title: "Microsoft Productivity Score content collaboration insights"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article

@@ -21,7 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -87,7 +88,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ### At service onboarding
 
-By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Window Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
+By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Microsoft Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
 
 ### At contract termination or expiration
 

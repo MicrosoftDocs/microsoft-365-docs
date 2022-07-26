@@ -14,7 +14,7 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: 
 ms.localizationpriority:  medium
-description: Find scenarios about how to use SharePoint Syntex in your organization.
+description: Find business scenarios about how to use SharePoint Syntex in your organization.
 ---
 
 # Scenarios and use cases for Microsoft SharePoint Syntex
@@ -134,4 +134,4 @@ When you automate this scenario, you can ensure that:
 
 ## See also
 
-[Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted.md)
+[Get started driving adoption of SharePoint Syntex](adoption-getstarted.md)

@@ -40,12 +40,6 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=202
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.

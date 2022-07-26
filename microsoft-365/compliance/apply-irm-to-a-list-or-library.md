@@ -1,5 +1,5 @@
 ---
-title: "Apply Information Rights Management (IRM) to a list or library"
+title: "Apply IRM to a list or library"
 f1.keywords:
 - NOCSH
 ms.author: krowley

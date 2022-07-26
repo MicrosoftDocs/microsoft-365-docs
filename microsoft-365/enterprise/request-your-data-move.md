@@ -1,9 +1,9 @@
 ---
 title: "How to request your data move"
-ms.author: andyber
-author: andybergen
-manager: laurawi
-ms.date: 12/10/2019
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -22,25 +22,26 @@ ms.custom: seo-marvel-apr2020
 > [!NOTE]
 > The information on this page only applies to customers who had existing Microsoft 365 tenants before the new datacenters in their datacenter geo opened. Migration eligibility also depends on the specific service provisioning date.  The tenant creation date may not always be the single date that matters.
   
-Eligible Microsoft 365 customers may request migration for their entire organization’s core customer data at rest.  The program supports requests for each country in the time period described in the table and from customers with an eligible signup country associated with their Microsoft 365 tenant.
+Eligible Microsoft 365 customers may request migration for their entire organization's core customer data at rest.  The program supports requests for each country in the time period described in the table and from customers with an eligible signup country associated with their Microsoft 365 tenant.
   
 ## When can I request a move?
 
 | Customers with signup country in | Request period begins | Request deadline |
 |:-----|:-----|:-----|
-|Japan  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|Australia, New Zealand, Fiji  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|India  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|Canada  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|United Kingdom  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|South Korea  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|France  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|United Arab Emirates  <br/> |July 15, 2019  <br/> |June 30, 2020  <br/> |
-|South Africa  <br/> |July 25, 2019  <br/> |June 30, 2020  <br/> |
-|Switzerland, Liechtenstein  <br/> |December 10, 2019  <br/> |June 30, 2020  <br/> |
-|Norway  <br/> |April 15, 2020  <br/> |October 31, 2020  <br/> |
-|Germany  <br/> |November 1, 2020  <br/> |April 30, 2021  <br/> |
-|Brazil  <br/> |November 18, 2020  <br/> |May 31, 2021  <br/> |
+|Japan  | |Request period closed  |
+|Australia, New Zealand, Fiji  | |Request period closed  |
+|India  | |Request period closed  |
+|Canada  | |Request period closed  |
+|United Kingdom  | |Request period closed  |
+|South Korea  | |Request period closed  |
+|France  | |Request period closed  |
+|United Arab Emirates  | |Request period closed  |
+|South Africa  | |Request period closed  |
+|Switzerland, Liechtenstein  | |Request period closed  |
+|Norway  | |Request period closed  |
+|Germany  | |Request period closed  |
+|Brazil  | |Request period closed  |
+|Sweden  |November 16, 2021  |May 31, 2022  |
 
 ## How to request a move
 
@@ -69,7 +70,7 @@ As of January 2020, customers in eligible Office 365 countries can opt-in for mi
 
 [Moving core data to new Office 365 datacenter geos](moving-data-to-new-datacenter-geos.md)
 
-[Data move general FAQ](data-move-faq.yml)
+[Data move general FAQ](data-move-faq.md)
 
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

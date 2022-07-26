@@ -2,8 +2,8 @@
 title: "Manage Microsoft Rewards"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,13 +21,13 @@ description: "Users who have personal Microsoft accounts can earn Microsoft Rewa
 
 # Manage Microsoft Rewards
 
-Users who have personal Microsoft accounts can earn [Microsoft Rewards](https://www.microsoft.com/rewards) points in connection with their work searches if the *Link Microsoft Azure Active Directory (Azure AD) with Rewards* feature is enabled.
+Users who have personal Microsoft accounts can earn [Microsoft Rewards](https://www.microsoft.com/rewards) points with their work searches if the *Link Microsoft Azure Active Directory (Azure AD) with Rewards* feature is enabled.
 
-Unless the user opts out of this feature, their personal Microsoft account will be associated with their workplace Azure AD account. Microsoft Rewards receives and logs information that a search has occurred, but does not receive any information about the content of the search. The content of queries from your organization will not be shared with Microsoft Rewards as part of this feature.
+Unless the user opts out of this feature, their personal Microsoft account will be associated with their workplace Azure AD account. Microsoft Rewards receives and logs information that a search has occurred, but doesn't receive any information about the content of the search. The content of queries from your organization won't be shared with Microsoft Rewards as part of this feature.
 
-For administrators of educational organizations with minor children, a parental Microsoft account is required for the child to participate in Microsoft Rewards. The parental account will not be associated with the student’s organizational account. For more information about Microsoft accounts for children, see [Parental consent and Microsoft child accounts](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e).
+For administrators of educational organizations with minor children, a parental Microsoft account is required for the child to participate in Microsoft Rewards. The parental account won't be associated with the student’s organizational account. For more information about Microsoft accounts for children, see [Parental consent and Microsoft child accounts](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e).
 
-This feature is not available for Government users. Administrators should ensure that their organization’s compliance policies permit the use of personal Microsoft Rewards accounts with work searches.
+This feature isn't available for Government users. Administrators should ensure that their organization’s compliance policies permit the use of personal Microsoft Rewards accounts with work searches.
 
 ## Related content
 

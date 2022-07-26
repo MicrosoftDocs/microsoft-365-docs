@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Poland
 
-[Find another country or region](../../business-video/get-help-support.md).
+[Find another country or region](../get-help-support.md).
 
 ## Phone number
 800 70 23 20

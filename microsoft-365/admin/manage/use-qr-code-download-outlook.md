@@ -11,7 +11,6 @@ ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
-
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -47,6 +46,9 @@ This feature is on by default. To disable this feature, follow the steps below.
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
+
+> [!NOTE]
+> When using the Exchange PowerShell command, changes may take up to 8 hours to propagate.
 
 ## Related content
 

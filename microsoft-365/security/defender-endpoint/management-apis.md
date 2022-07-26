@@ -3,8 +3,6 @@ title: Overview of management and APIs
 ms.reviewer:
 description: Learn about the management tools and API categories in Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +23,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mgt-apis-abovefoldlink)
@@ -37,7 +36,7 @@ Acknowledging that customer environments and structures can vary, Defender for E
 
 ## Endpoint onboarding and portal access
 
-Device onboarding is fully integrated into Microsoft Endpoint Manager and Microsoft Intune for client devices and Azure Defender for server devices, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender for Endpoint supports Group Policy and other third-party tools used for devices management.
+Device onboarding is fully integrated into Microsoft Endpoint Manager and Microsoft Intune for client devices and Microsoft Defender for server devices, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender for Endpoint supports Group Policy and other third-party tools used for devices management.
 
 Defender for Endpoint provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 
@@ -51,7 +50,7 @@ The Microsoft Defender for Endpoint solution is built on top of an integration-r
 
 Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.
 
-![Image of available API and integration in Microsoft Defender for Endpoint.](images/mdatp-apis.png)
+:::image type="content" source="images/mdatp-apis.png" alt-text="The available API and integration in Microsoft Defender for Endpoint" lightbox="images/mdatp-apis.png":::
 
 The Defender for Endpoint APIs can be grouped into three:
 
@@ -84,7 +83,7 @@ For more information, see [Microsoft 365 Defender Streaming API](../defender/str
 
 ## SIEM API
 
-When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. For more information, see [SIEM integration](enable-siem-integration.md).
+When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft 365 Defender using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. 
 
 ## Related topics
 

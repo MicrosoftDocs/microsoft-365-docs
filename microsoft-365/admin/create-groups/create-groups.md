@@ -39,17 +39,19 @@ While users can create a Microsoft 365 group from Outlook or other apps, as an a
 
 2. Select **Add a group**.
   
-3. On the **Choose a group type** page, select **Office 365**, and select **Next**.
+3. On the **Choose a group type** page, select **Microsoft 365**, and select **Next**.
 
 4. On the **Basics** page, type a name for the group, and, optionally, a description. Select **Next**.
-    
-5. On the **Edit settings** page, type a unique email address for the group, choose a privacy option and whether you want to add Microsoft Teams, and then select**Next**.
-    
-6. On the **Owners** choose the name of one or more people who will be designated to manage the group. Anyone who is a group owner will be able to delete email from the Group inbox. Other members won't be able to delete email from the Group inbox. Select **Next**.
-    
-7. After reviewing your settings and making any changes, select **Create group**.
 
-8. Select **Close**.
+5.  On the **Owners** page, choose the name of one or more people who will be designated to manage the group. Anyone who is a group owner will be able to delete email from the Group inbox. Other members won't be able to delete email from the Group inbox. Select **Next**.
+
+6.  On the **Members** page, choose the name of one or more people who will be designated as members of the group. Select **Next**.
+
+7. On the **Settings** page, type a unique email address for the group, choose a privacy option and whether you want to add Microsoft Teams, and then select **Next**.
+    
+8. After reviewing your settings and making any changes, select **Create group**.
+
+9. Select **Close**.
     
 ## Add members to the group
 

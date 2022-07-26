@@ -1,5 +1,5 @@
 ---
-title: "Define your service offerings in Bookings"
+title: "Define your Bookings service offerings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -17,11 +17,15 @@ When you define your service offerings in Microsoft Bookings, you set a service 
 
 You can also add customized information and URLs to the email confirmation and reminders that you send when someone books a service through your booking page.
 
-## Create the service details
+## Watch: Create a new service
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
+
+## Steps
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-2. Go to **Settings** -> [Manage services page](https://outlook.office.com/bookings/settings/services) and select **Add new service**.
+2. Go to **Your calendar** > **Services** and select **Add new service**.
 
 3. On the **Basic details** page, add your selections.
 
@@ -81,8 +85,6 @@ You can also add customized information and URLs to the email confirmation and r
 
 4. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings.":::
-
 5. **Default price**  This is the price that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
 
 6. **Notes** This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
@@ -93,13 +95,13 @@ You can also add customized information and URLs to the email confirmation and r
 
 8. On the **Reminders and Confirmations** page, you can set up reminders and notifications you send. Reminders and notifications are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
 
    You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
 
-9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
+9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
 
    - Opt-in box on the manual booking and Self-Service Page:
 

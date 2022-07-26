@@ -11,7 +11,7 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 07/11/2022
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -21,7 +21,12 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus 
+
+**Platforms**
+- Windows
 
 This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization.
 
@@ -32,7 +37,7 @@ This article describes an antivirus/antimalware feature known as "block at first
 
 Block at first sight is a threat protection feature of next-generation protection that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled. These settings include:
 
-- Cloud-delivered protection;
+- [Cloud protection](cloud-protection-microsoft-defender-antivirus.md);
 - A specified sample submission timeout (such as 50 seconds); and
 - A file-blocking level of high.
 
@@ -44,7 +49,7 @@ When Microsoft Defender Antivirus encounters a suspicious but undetected file, i
 
 Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, intelligent, and real-time protection.
 
-![List of Microsoft Defender AV engines.](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="The list of Microsoft Defender AV engines" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > To learn more, see [(Blog) Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
@@ -59,7 +64,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 - In many cases, this process can reduce the response time for new malware from hours to seconds.
 
-- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) when a file is blocked. You can change the company name, contact information, and message URL.
+- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 ## Turn on block at first sight with Microsoft Intune
 
@@ -77,7 +82,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Time extension for file scanning by the cloud**: 50
    - **Prompt users before sample submission**: Send all data without prompting
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune config block at first sight.":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune config block at first sight" lightbox="../../media/intune-block-at-first-sight.png":::
 
 4. Save your settings.
 
@@ -100,9 +105,9 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
    - **Turn on cloud-delivered protection**: Yes
    - **Cloud-delivered protection level**: High
-   - **Defender Cloud Extended Timeout in Seconds**: 50
+   - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager.":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in the Microsoft Endpoint Manager portal" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
 4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 
@@ -132,7 +137,7 @@ You can confirm that block at first sight is enabled on individual client device
 
 2. Select **Virus & threat protection**, and then, under **Virus & threat protection settings**, select **Manage Settings**.
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot of the Virus & threat protection settings label in the Windows Security app":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="The Virus & threat protection settings label in the Windows Security app" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 3. Confirm that **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
@@ -140,12 +145,6 @@ You can confirm that block at first sight is enabled on individual client device
 >
 > - If the prerequisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints.
 > - Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
-
-## Validate block at first sight is working
-
-To validate that the feature is working, download the [Block at first sight sample file](https://demo.wd.microsoft.com/Page/BAFS). To download the file, you will need an account in Azure AD that has either the Security Administrator or Global Administrator role assigned.
-
-To validate that cloud-enabled protection is working, follow the guidance in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 ## Turn off block at first sight
 
@@ -168,7 +167,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
    - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
    - Set **Cloud-delivered protection level** to **Not configured**.
-   - Clear the check box for **Defender Cloud Extended Timeout In Seconds**.
+   - Clear the check box for **Microsoft Defender Antivirus Extended Timeout In Seconds**.
 
 6. Review and save your settings.
 
@@ -208,6 +207,15 @@ If you have a personal device that is not managed by an organization, you might 
      > [!CAUTION]
      > Turning off block at first sight lowers the level of protection for your device. We do not recommend permanently disabling block at first sight.
 
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 

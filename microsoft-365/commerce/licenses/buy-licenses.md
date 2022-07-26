@@ -2,8 +2,8 @@
 title: "Buy or remove licenses"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,17 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_o365
 ms.custom:
+- commerce_licensing
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 09/16/2021
+ms.date: 06/06/2022
 ---
 
-# Buy or remove licenses
+# Buy or remove Microsoft 365 licenses for a subscription
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 You can buy more licenses or reduce the number of licenses for your subscriptions by using the following steps.
 
@@ -38,6 +41,8 @@ You can buy more licenses or reduce the number of licenses for your subscription
 - If you bought your Microsoft 365 for business or Office 365 Enterprise plan through a third-party partner, you must buy additional licenses through that partner.
 
 ## Watch: Buy new licenses
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198206).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -54,12 +59,6 @@ If you’ve removed licenses from a subscription, the next thing to do is [delet
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

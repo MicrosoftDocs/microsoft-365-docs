@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
@@ -26,7 +25,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +49,7 @@ To approve the system extensions, create the following payload:
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![Approved system extensions screenshot.](images/mac-approved-system-extensions.png)
+    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" The Approved system extensions page" lightbox="images/mac-approved-system-extensions.png":::
 
 ### Privacy Preferences Policy Control
 
@@ -60,7 +60,7 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 3. Set Code Requirement to `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
 
-    ![Privacy Preferences Policy Control.](images/mac-system-extension-privacy.png)
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" The Privacy Preferences Policy Control menu item" lightbox="images/mac-system-extension-privacy.png":::
 
 ### Network Extension Policy
 
@@ -85,7 +85,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
             <key>PayloadIdentifier</key>
             <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
             <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP Network Extension</string>
+            <string>Microsoft Defender Network Extension</string>
             <key>PayloadDescription</key>
             <string/>
             <key>PayloadVersion</key>
@@ -118,7 +118,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
                     <key>FilterType</key>
                     <string>Plugin</string>
                     <key>UserDefinedName</key>
-                    <string>Microsoft Defender ATP Network Extension</string>
+                    <string>Microsoft Defender Network Extension</string>
                     <key>PluginBundleID</key>
                     <string>com.microsoft.wdav</string>
                     <key>FilterSockets</key>
@@ -188,7 +188,7 @@ To approve the system extensions:
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   ![System configuration profiles screenshot.](images/mac-system-extension-intune2.png)
+   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" The System configuration profiles page" lightbox="images/mac-system-extension-intune2.png":::
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
@@ -212,7 +212,7 @@ Save the following content to a file named **sysext.xml**:
         <key>PayloadIdentifier</key>
         <string>7E53AC50-B88D-4132-99B6-29F7974EAA3C</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP System Extensions</string>
+        <string>Microsoft Defender System Extensions</string>
         <key>PayloadDescription</key>
         <string/>
         <key>PayloadVersion</key>
@@ -245,7 +245,7 @@ Save the following content to a file named **sysext.xml**:
                 <key>FilterType</key>
                 <string>Plugin</string>
                 <key>UserDefinedName</key>
-                <string>Microsoft Defender ATP Network Extension</string>
+                <string>Microsoft Defender Network Extension</string>
                 <key>PluginBundleID</key>
                 <string>com.microsoft.wdav</string>
                 <key>FilterSockets</key>
@@ -310,7 +310,7 @@ To deploy this custom configuration profile:
 3. Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
 4. Select **OK**.
 
-    ![System extension in Intune screenshot.](images/mac-system-extension-intune.png)
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" The System extension in Intune page" lightbox="images/mac-system-extension-intune.png":::
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.

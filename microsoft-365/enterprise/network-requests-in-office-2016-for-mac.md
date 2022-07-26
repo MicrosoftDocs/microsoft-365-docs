@@ -2,7 +2,7 @@
 title: "Network requests in Office for Mac"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/9/2018
 audience: ITPro
 ms.topic: conceptual
