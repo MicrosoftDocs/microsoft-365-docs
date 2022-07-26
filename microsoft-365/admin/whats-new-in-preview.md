@@ -176,7 +176,7 @@ Learn more at [Microsoft product NPS feedback and insights for your organization
 
 ### Microsoft 365 admin center video training
 
-We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](admin-video-library.yml) page to learn how to set up and manage Microsoft 365 for your business.
+We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](https://go.microsoft.com/fwlink/?linkid=2197659) page to learn how to set up and manage Microsoft 365 for your business.
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
 

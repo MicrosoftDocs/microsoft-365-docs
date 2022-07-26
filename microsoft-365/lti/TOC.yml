@@ -30,3 +30,7 @@
         href: open-lms-plugin-configuration.md
       - name: Use Microsoft Teams classes and meetings with Open LMS
         href: open-lms-teams-classes-and-meetings.md
+    - name: Desire2Learn Brightspace integrations
+      items:
+      - name: Use Microsoft Teams classes and meetings with Brightspace
+        href: teams-classes-meetings-with-brightspace.md

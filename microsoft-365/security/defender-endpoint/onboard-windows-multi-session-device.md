@@ -1,6 +1,6 @@
 ---
-title: "Onboard Windows multi-session devices in Azure Virtual Desktop"
-description: "Read more in this article about Onboarding Windows multi-session devices in Azure Virtual Desktop"
+title: "Onboard Windows devices in Azure Virtual Desktop"
+description: Learn bout onboarding Windows devices to Defender for Endpoint in Azure Virtual Desktop
 keywords: Azure Virtual Desktop, AVD, microsoft defender, endpoint, onboard
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -17,13 +17,14 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ---
 
-# Onboard Windows multi-session devices in Azure Virtual Desktop
+# Onboard Windows devices in Azure Virtual Desktop
 
 6 minutes to read
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows multi-session running on Azure Virtual Desktop (AVD)
+- [Windows 10 Enterprise Multi-Session](/microsoft-365/security/defender-endpoint/azure-server-integration)
 
 Microsoft Defender for Endpoint supports monitoring both VDI and Azure Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Azure Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
@@ -64,7 +65,7 @@ Follow the instructions for a single entry for each device.
 
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
-##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows 365 Defender portal
+##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Microsoft 365 Defender portal
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)
 

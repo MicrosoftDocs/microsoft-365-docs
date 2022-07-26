@@ -25,8 +25,6 @@ ms.custom:
 
 # Set up Message Encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview Message Encryption allows organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as third-parties using Outlook.com, Gmail, and other email services.
 
 Follow the steps below to ensure that Microsoft Purview Message Encryption is available in your organization.
@@ -49,10 +47,9 @@ For more information, see:
 
 ### Manually activating Azure Rights Management
 
-If you disabled Azure RMS, or if it was not automatically activated for any reason, you can activate it manually in the:
+If you disabled Azure RMS, or if it was not automatically activated for any reason, you can activate it manually. 
 
-- **Microsoft 365 admin center**: See [How to activate Azure Rights Management from the admin center](/azure/information-protection/activate-office365) for instructions.
-- **Azure portal**: See [How to activate Azure Rights Management from the Azure portal](/azure/information-protection/activate-azure) for instructions.
+For instructions, see [How to activate or confirm the status of the protection service](/azure/information-protection/activate-service#how-to-activate-or-confirm-the-status-of-the-protection-service).
 
 ## Configure management of your Azure Information Protection tenant key
 

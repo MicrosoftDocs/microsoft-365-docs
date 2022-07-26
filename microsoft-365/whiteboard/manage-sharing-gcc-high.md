@@ -1,7 +1,7 @@
 ---
 title: Manage sharing for Microsoft Whiteboard in GCC High environments
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard in GCC High environments.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -58,7 +57,7 @@ When you share a whiteboard from the web, desktop, or mobile clients, you can ch
 
 ## See also
 
-[Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)
+[Manage access to Whiteboard - GCC High](manage-whiteboard-access-gcc-high.md)
 
 [Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)
 

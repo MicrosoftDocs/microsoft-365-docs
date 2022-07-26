@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -26,11 +27,15 @@ description: "Get a periodic report of how people in your organization are using
 
 # Microsoft 365 Reports in the admin center
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model will not be included in the reports.
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
+  
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
 
 ## Watch: Act on a usage report in Office 365
+  
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
@@ -150,7 +155,7 @@ Global administrators can revert this change for their tenant and show identifia
 Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center. 
 The API details are below:  
 
-The URL is https://graph.microsoft.com/beta/reportSettings 
+The URL is https://graph.microsoft.com/beta/admin/reportSettings 
 
 Two methods have been approved for this API:
 

@@ -6,10 +6,10 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: overview
-ms.date: 06/03/2022
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -32,7 +32,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 ## See also
 
 - [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
-
 - [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 ## Next objectives

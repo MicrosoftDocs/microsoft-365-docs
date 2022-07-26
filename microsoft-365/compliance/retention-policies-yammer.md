@@ -16,14 +16,12 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about retention policies that apply to Yammer."
+description: "Learn about Microsoft 365 retention policies that apply to Yammer so you can manage automatic retention or deletion of Yammer messages for your organization."
 ---
 
 # Learn about retention for Yammer
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 

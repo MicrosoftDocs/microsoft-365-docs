@@ -1,7 +1,7 @@
 ---
 title: Manage data for Microsoft Whiteboard in GCC High environments
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to enable, disable, and manage access to Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -48,7 +47,7 @@ The following data controls are planned for future releases of Whiteboard:
 
 ## See also
 
-[Enable and manage access to Whiteboard - GCC High](enable-whiteboard-access-gcc-high.md)
+[Manage access to Whiteboard - GCC High](manage-whiteboard-access-gcc-high.md)
 
 [Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
 
