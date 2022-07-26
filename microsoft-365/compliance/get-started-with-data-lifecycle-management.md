@@ -18,14 +18,14 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: Ready to start governing your organization's data, but not sure where to start? Read some prescriptive guidance to get started.
+description: Prescriptive steps for admins, licensing requirements, and common scenarios that manage the lifecycle of your organization's data.
 ---
 
 # Get started with data lifecycle management
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Ready to start governing your organization's data by retaining the content that you need to keep, and deleting the content that you don't? To get started, use the following guidance for Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance):
+Ready to start managing the lifecycle of your organization's data by retaining the content that you need to keep, and deleting the content that you don't? To get started, use the following guidance for Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance):
 
 1. **Understand how retention and deletion works** in Microsoft 365, and then identify the workloads that need a retention policy and whether you need to create retention labels for exceptions: [Learn about retention](retention.md)
     
