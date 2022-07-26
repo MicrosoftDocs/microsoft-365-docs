@@ -1,7 +1,7 @@
 ---
 title: Configure privacy settings in Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about compliance and how to configure privacy settings in Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -27,7 +26,7 @@ If you are the Microsoft Whiteboard administrator for your organization, you can
 
 - Whether optional connected experiences in Whiteboard are available to your users.
 
-To configure the level of diagnostic data, sign in to the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) with your administrator account. From the admin center home page, go to **Show all > Settings > Org settings > Whiteboard**.
+To configure the level of diagnostic data, sign in to the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) with your administrator account. From the admin center home page, go to **Show all > Settings > Org settings > Whiteboard**.
 
 To configure the availability of optional connected experiences, use the [Office cloud policy service](/deployoffice/admincenter/overview-office-cloud-policy-service) in the [Microsoft 365 Apps admin center](https://config.office.com). Sign in with your administrator account and go to **Customization > Policy Management**. The policy you want to configure is named: **Allow the use of additional optional connected experiences in Office**.
 

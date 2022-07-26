@@ -140,7 +140,7 @@ After you've connected to Security & Compliance PowerShell, the next step is to 
    if($cc.status -eq 'Closed')
    {
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
-   add-tocasereport -casename $cc.name -casestatus -casetype $cc.casetype $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   add-tocasereport -casename $cc.name -casestatus $cc.Status -casetype $cc.casetype -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
    }
    else{
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
