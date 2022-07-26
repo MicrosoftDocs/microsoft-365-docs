@@ -97,20 +97,21 @@ The option to '**Ask Defender Experts**' is available in several places througho
 
 - Device page actions menu
 
-[image]
+![Device page actions menu](../../media/mte/defenderexperts/device-page-actions-menu.png)
 
 - Device inventory page flyout menu
-[image]
+
+![Device inventory page flyout menu](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
 
 - Alerts page flyout menu 
 
-[image]
+![image](../../media/mte/defenderexperts/alerts-flyout-menu.png)
 
 - Incidents page actions menu
 
 The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Device page action menu in the Microsoft 365 Defender portal
 
-[image]
+![Incidents page actions menu](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
 - Incidents inventory page
 
