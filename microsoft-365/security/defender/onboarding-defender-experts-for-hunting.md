@@ -41,6 +41,8 @@ If you're new to Microsoft 365 Defender and Defender Experts for Hunting:
 3. The Microsoft 365 Defender quick tour will get you familiar with the security suite, where the capabilities are and how important they are. Click **Take a quick tour**.  
 4. Read the short descriptions about what the Microsoft Defender Experts service is and the capabilities it provides. Click **Next**. You'll see the welcome page:
 
+![Start using Defender Experts for Hunting](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
+
 ## Receive Defender Experts Notifications
 
 The Defender Experts Notifications service includes:
@@ -51,7 +53,7 @@ The Defender Experts Notifications service includes:
 
 Refer to the following screenshot to see a sample Defender Experts Notification:
 
-[image]
+![Receive defender experts notifications](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
 
 ### Where you'll find Defender Experts Notifications
 
