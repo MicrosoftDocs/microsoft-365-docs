@@ -349,7 +349,7 @@
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
-                href: defenderexpertsforhuntingprev.md
+                href: defender-experts-for-hunting.md
                 name: Before you begin
                 href: before-you-begin.md
                 name: Start using Defender Experts for Hunting
