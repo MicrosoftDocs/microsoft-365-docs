@@ -9,16 +9,9 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management 
-- Adm_TOC
+ms.date: 07/19/2022
 ms.custom:
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
