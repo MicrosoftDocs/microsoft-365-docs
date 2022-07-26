@@ -124,6 +124,7 @@ additionalContent:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: Key scenarios # < 60 chars (optional)
   # Supports up to 3 subsections
   sections:
     - items:
