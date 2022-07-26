@@ -31,6 +31,28 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+  <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
+
+&ensp;Released: **July 21, 2022**<br/>
+&ensp;Published: **July 21, 2022**<br/>
+&ensp;Build: **101.73.77**<br/>
+&ensp;Release version: **30.122062.17377.0**<br/>
+&ensp;Engine version: **1.1.19200.3**<br/>
+&ensp;Signature version: **1.367.1011.0**<br/>
+
+
+**What's new**
+
+- Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
+- From this build onwards, the product will have the new anti-malware engine by default
+- Performance improvements for file copy operations
+- Bug fixes
+</br>
+
+<br/><br/>
+</details>
+
+<details>
   <summary>Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
 
 &ensp;Released: **June 24, 2022**<br/>

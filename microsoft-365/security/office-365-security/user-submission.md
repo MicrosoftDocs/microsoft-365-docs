@@ -1,11 +1,11 @@
 ---
-title: User reported message settings
+title: User-reported email settings for spam, phish, as malicious mail
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 07/19/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.custom:
-description: Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users.
+description: How to configure a mailbox to collect spam and phishing email reported by users. Make a mailbox for messages that users report as spam, phish, as malicious, or not malicious.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -29,20 +29,22 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a mailbox to receive messages that users report as malicious or not malicious. When users report messages using the various reporting options, you can use this mailbox to intercept messages (send to the custom mailbox only) or receive copies of messages (send to the custom mailbox and Microsoft). This feature works with the following message reporting options:
+In Microsoft 365 organizations with Exchange Online mailboxes, you can direct mail to a mailbox when users report spam, phish, as malicious, or even not malicious messages. When users report emails using various reporting options, admins can use this mailbox to intercept those email messages (send to the custom mailbox only) or receive copies of messages (send to the custom mailbox and Microsoft).
+
+This feature works with these message reporting options:
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- [Third-party reporting tools](#third-party-reporting-tools)
+- [Third-party reporting tools](user-submission.md#third-party-email-reporting-tools)
 
-Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md). These settings were formerly known as the User submissions policy.
+Delivering user-reported messages to a custom mailbox instead of directly to Microsoft allows admins to selectively and manually report email messages to Microsoft using [Admin submission](admin-submission.md). *These settings were formerly known as the User submissions policy*.
 
   > [!NOTE]
-  > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user reported messages here will override that setting and enable users to report messages in Outlook on the web again.
+  > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user-reported messages here will override that setting and enable users to report messages in Outlook on the web again.
 
 ## Custom mailbox prerequisites
 
-Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
+Use the articles below to configure prerequisites user-reported email messages go to your custom mailbox:
 
 - [Identify the custom mailbox as a SecOps mailbox](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -50,7 +52,7 @@ Use the following articles to configure the prerequisites required so user repor
   - Zero-hour auto purge (ZAP) for malware is turned off (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected).
   - The common attachment filter option is turned off (**Protection settings** section \> **Enable the common attachments filter** is not selected).
 
-If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the reported messages:
+**If you have Microsoft Defender for Office 365**, you should also configure the following settings so that our advanced filtering doesn't impact the reported emails:
 
 - Make sure the custom mailbox is not part of any [preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
@@ -58,7 +60,7 @@ If you have Microsoft Defender for Office 365, you should also configure the fol
 
 - [Create a Safe Attachments policy](set-up-safe-attachments-policies.md) for the custom mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off (**Safe Attachments unknown malware response** section > **Off**).
 
-After you've verified that your mailbox meets all applicable prerequisites, you can use the procedures in this article to configure the user submissions mailbox.
+After you've verified that your mailbox meets prerequisites, you can use the rest of this article to configure the user submissions mailbox.
 
 ## What do you need to know before you begin?
 
@@ -77,7 +79,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
   - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## Use the Microsoft 365 Defender portal to configure the user submissions mailbox
+## Use the Microsoft 365 Defender portal to configure the user submissions mailbox for emails
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** > **Threat policies** > **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
@@ -125,7 +127,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 3. When you're finished, click **Confirm**. To clear these values, click **Restore**.
 
-## Third-party reporting tools
+## Third-party email reporting tools
 
 You can configure third-party message reporting tools to send reported messages to the custom mailbox. You would do this by setting the **Microsoft Outlook Report Message button** setting to **Off** and setting the **My organization's mailbox** to an Office 365 mailbox of your choice.
 
