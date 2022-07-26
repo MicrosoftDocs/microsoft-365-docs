@@ -52,7 +52,7 @@ Watch the following video to see how Microsoft 365 Business Premium helps your b
 
 ## Productivity and security
 
-Microsoft 365 Business Premium includes your favorite Office productivity apps, collaboration tools like Microsoft Teams, and enterprise-grade security, identity, and device management solutions. With Microsoft 365 Business Premium, you can run your business more securely, across devices, and from just about anywhere. Microsoft 365 Business Premium includes:
+Microsoft 365 Business Premium includes your favorite Office productivity apps, collaboration tools like Microsoft Teams, and enterprise-grade security, identity, and device management solutions. With Microsoft 365 Business Premium, you can run your business more securely, across devices, and from almost anywhere. Microsoft 365 Business Premium includes:
 
 - **Windows 10 and 11 Pro** upgrades for your company's Windows devices
 - **Office apps**, such as Word, Excel, and PowerPoint, that you can install on your computers (Windows and Mac), and on your mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
