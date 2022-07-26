@@ -34,7 +34,7 @@ Understanding your content with SharePoint Syntex begins with models. Models let
 
 In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [trained models](prebuilt-overview.md). The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
 
-**Custom models** – You build and train custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
+**Custom models** – You build custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
 - [Extract by layout](form-processing-overview.md)
