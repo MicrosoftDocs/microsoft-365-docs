@@ -499,6 +499,9 @@
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
 
+###### [Device Health]()
+####### [Device Health](device-health-api.md)
+
 ###### [Domain]()
 ####### [Get domain related alerts](get-domain-related-alerts.md)
 ####### [Get domain related machines](get-domain-related-machines.md)
@@ -522,7 +525,6 @@
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
 
-
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
 ####### [List machines](get-machines.md)
@@ -538,8 +540,6 @@
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 ####### [Update machine](update-machine-method.md)
-
-
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)

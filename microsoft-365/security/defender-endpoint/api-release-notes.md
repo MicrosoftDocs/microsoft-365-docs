@@ -35,6 +35,10 @@ The following information lists the updates made to the Microsoft Defender for E
 
 ## Release notes - newest to oldest (dd.mm.yyyy)
 
+### 07.30.2022
+
+- Added new Device Health API methoid - GET /api/public/avdeviceshealth [Device Health API](device-health-api.md)
+
 ### 06.10.2021
 
 - Added new Export assessment API method  - _Delta Export software vulnerabilities assessment (JSON response)_ [Export assessment methods and properties per device](get-assessment-methods-properties.md).
