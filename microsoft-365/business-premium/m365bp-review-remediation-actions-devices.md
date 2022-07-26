@@ -1,17 +1,16 @@
 ---
 title: Review remediation actions in Microsoft 365 Business Premium
-description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center
+description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
-ms.reviewer: inbadian, shlomiakirav
+ms.date: 07/19/2022
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -29,9 +28,8 @@ Examples of remediation actions include sending a file to quarantine, stopping a
 
 **This article describes**:
 
-- [How to use the Action center](#how-to-use-your-action-center)
-
-- [Types of remediation actions](#types-of-remediation-actions)
+- [How to use the Action center](#how-to-use-your-action-center).
+- [Types of remediation actions](#types-of-remediation-actions).
 
 
 ## How to use your Action center
@@ -42,7 +40,7 @@ Examples of remediation actions include sending a file to quarantine, stopping a
 
 3. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
 
-4. Select the **History** tab to view a list of completed actions. 
+4. Select the **History** tab to view a list of completed actions.
 
 ## Types of remediation actions
 

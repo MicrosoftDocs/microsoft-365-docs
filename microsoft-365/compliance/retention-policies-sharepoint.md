@@ -16,14 +16,12 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how retention works for SharePoint and OneDrive."
+description: "Learn how Microsoft 365 retention works for SharePoint and OneDrive, using retention policies and retention labels to manage the automatic retention or deletion of data for your organization."
 ---
 
 # Learn about retention for SharePoint and OneDrive
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to SharePoint and OneDrive.
 

@@ -1,5 +1,5 @@
 ---
-title: "Limits for retention policies and retention label policies"
+title: "Limits for Microsoft 365 retention policies and retention label policies"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 hideEdit: true
-description: "Understand the maximum number of policies and items per policy for retention policies and retention label policies"
+description: "Understand the maximum number of policies and items per policy for Microsoft 365 retention policies and retention label policies"
 ---
 
 # Limits for retention policies and retention label policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When you use [retention policies and retention label policies](retention.md#retention-policies-and-retention-labels) to automatically retain or delete data for your organization, there are some maximum numbers to be aware of.
 

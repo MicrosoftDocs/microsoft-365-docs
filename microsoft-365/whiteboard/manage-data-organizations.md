@@ -1,7 +1,7 @@
 ---
 title: Manage data for Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about data retention for Microsoft Whiteboard in Azure and OneDrive for Business.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -75,7 +74,7 @@ Data controls planned for future releases:
 
 ## See also
 
-[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
+[Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Manage sharing for Whiteboard](manage-sharing-organizations.md)
 
