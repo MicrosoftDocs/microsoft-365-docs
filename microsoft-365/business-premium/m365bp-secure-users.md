@@ -1,5 +1,5 @@
 ---
-title: "How Microsoft 365 Business Premium helps your business"
+title: "Microsoft 365 Business Premium - Productivity and security"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,10 +19,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how Microsoft 365 Business Premium helps your business with productivity and security."
+description: "Learn how Microsoft 365 Business Premium helps you run your business with productivity and security."
 ---
 
-# How Microsoft 365 Business Premium helps your business
+# Productivity and security for small and medium-sized businesses 
 
 Microsoft 365 Business Premium is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
 
