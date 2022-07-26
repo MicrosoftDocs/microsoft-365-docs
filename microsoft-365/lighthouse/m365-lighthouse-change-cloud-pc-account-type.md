@@ -56,10 +56,6 @@ Once the update is applied, the assigned user of the Cloud PC will need to sign 
 
 ## Related content
 
-[Cloud PC role-based access control](/windows-365/enterprise/role-based-access) (article)
-
-
-[Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse](m365-lighthouse-win365-page-overview.md) (article)
-
-
+[Cloud PC role-based access control](/windows-365/enterprise/role-based-access) (article)\
+[Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse](m365-lighthouse-win365-page-overview.md) (article)\
 [Reprovision a Windows 365 Cloud PC in Microsoft 365 Lighthouse](m365-lighthouse-reprovision-cloudpc.md) (article)
