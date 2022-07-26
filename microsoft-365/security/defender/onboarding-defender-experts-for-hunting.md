@@ -82,7 +82,7 @@ You can also filter your incidents and alerts if you want to only see the Defend
 2. Scroll down to the **Tags** field > select the **Defender Experts** check box. 
 3. Click **Apply**. 
 
-## Collaborate with Experts on Demand
+### Collaborate with Experts on Demand
 
 > [!NOTE]
 > Experts on Demand is included in your Defender Experts for Hunting subscription with monthly allocations. However, it's not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](https://docs.microsoft.com/en-us/services-hub/).
@@ -93,17 +93,32 @@ Click the **Ask Defender Experts** button  directly inside the Microsoft 365 sec
 - Gain clarity into suspicious devices, alerts, or incidents and take next steps if faced with an advanced attacker
 - Determine risks and available protections related to threat actors, campaigns, or emerging attacker techniques
 
-The option to 'Ask Defender Experts' is available in several places throughout the portal:
+The option to '**Ask Defender Experts**' is available in several places throughout the portal:
 
-- Ask Defender Experts in the flyout menu
+- Device page actions menu
 
 [image]
 
-- Incident page
+- Device inventory page flyout menu
 [image]
+
+- Alerts page flyout menu 
+
+[image]
+
+- Incidents page actions menu
+
+The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Device page action menu in the Microsoft 365 Defender portal
+
+[image]
+
+- Incidents inventory page
+
+[image]
+
 
 > [!NOTE]
-> _Experts If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub_.
+> Experts If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.
 
 ### What's next
 
