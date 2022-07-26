@@ -64,16 +64,16 @@ The MITRE ATT&CK tactics represent adversary goals—what they’re trying to ac
 1.	Reconnaissance
 2.  Resource Development
 3.  Initial access
-4.	Execution	
-3.	Persistence	
-4.	Privilege escalation	
-5.	Defense evasion	
+4.	Execution
+3.	Persistence
+4.	Privilege escalation
+5.	Defense evasion
 6.	Credential access
 7.	Discovery
-8.	Lateral movement	
+8.	Lateral movement
 9.	Collection
 10.	Command and control
-11.	Exfiltration	
+11.	Exfiltration
 12.	Impact
 
 Signals from Microsoft 365 Defender and investigations by Defender Experts for Hunting help identify these tactics, represented in the bar chart. This chart helps you visualize where the surge is and provides you with the information you need to plan the corresponding containment and remediation actions.
