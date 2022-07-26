@@ -191,14 +191,14 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
 
 1. **End User Privacy Controls** These controls help the end user to configure the information shared to their organization.
     - For Supervised devices, End User controls will not be visible. Admin will decide and controls the settings.
-    - However, For Unsupervised devices, the control will be displayed under the **Settings-> Privacy**
+    - However, for Unsupervised devices, the control will be displayed under the **Settings-> Privacy**
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
-        - By default its set to `true`, the unsafe site information will be sent to Organization.
-             :::image type="content" source="images/ios-privacyurl-toggle-on.png" alt-text="Privacy Settings" lightbox="images/ios-privacyurl-toggle-on.png":::
+        - By default it's set to `true`, the unsafe site information will be sent to Organization.
+             :::image type="content" source="images/ios-privacyurl-toggle-on.png" alt-text="Screenshot that shows Privacy Settings." lightbox="images/ios-privacyurl-toggle-on.png":::
         - If user toggles it to `false`, the unsafe site details will not be shared to their Organization.
-            :::image type="content" source="images/ios-privacyurl-toggle-off.png" alt-text="Privacy Settings" lightbox="images/ios-privacyurl-toggle-off.png":::
+            :::image type="content" source="images/ios-privacyurl-toggle-off.png" alt-text="Screenshot that shows Privacy Settings." lightbox="images/ios-privacyurl-toggle-off.png":::
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 
