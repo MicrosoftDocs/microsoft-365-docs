@@ -17,7 +17,7 @@ description: Learn how to apply a retention label to a model in Microsoft ShareP
 
 # Apply a retention label to a model in SharePoint Syntex
 
-<sub>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout</sub>
+<sub>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout  | &ensp; &#10003; All trained models</sub>
 
 </br>
 
