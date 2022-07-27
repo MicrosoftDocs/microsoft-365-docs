@@ -89,40 +89,6 @@ The trained receipt model analyzes and extracts key information from sales recei
 
 For more information about trained receipt models, see [Use a trained model to extract information from receipts](prebuilt-models.md).
 
-
-<!---
-For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
-
-Content understanding lets you create *models* to identify and extract the information you need. Models have value in helping to resolve business issues for search, business processes, compliance, and many others.
-
-There are two custom model types that you can use:
-
-- [Document understanding models](document-understanding-overview.md)
-- [Form processing models](form-processing-overview.md)
-
-While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
-
-> [!NOTE]
-> To see examples of how models can used in your organization, see [Scenarios and use cases for Microsoft SharePoint Syntex](./adoption-scenarios.md).
-
-## Structured versus unstructured and semi-structured content
-
-Use document understanding models to identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract is in sentences or specific regions of the document. For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string `Service start date of` followed by an actual date.
-
-Use form processing models to identify files and extract data from structured or semi-structured documents, such as forms or invoices. Form processing models are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
-
-> [!NOTE]
-> You must have access to a content center site to create a document understanding model or to apply one to a SharePoint document library. 
-
-## Where models are created
-
-Document understanding models are created and managed in a SharePoint content center site. 
-
-> [!NOTE]
-> For more information about input documents, see [Form processing model requirements and limitations](/ai-builder/form-processing-model-requirements). 
-
-Form processing models are created in Power Apps [AI Builder](/ai-builder/overview), but the creation starts directly from a SharePoint document library. A document library must have form processing model creation enabled before a user can create a form processing model for it. Admins can enable form processing model creation in the content understanding admin settings. Form processing models use Power Automate flows to process files when they're uploaded to the document library.
-
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. Or you can use existing content types to define your model if needed.
 
 Once a content type is created and associated with a model, you can also reference that model from the **Site Content Type** property panel.
