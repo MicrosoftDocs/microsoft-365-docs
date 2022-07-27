@@ -36,10 +36,16 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 > [!NOTE]
 > This article provides a high-level overview of threat protection features included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Defender for Business is also available as a standalone subscription, and is also included in Microsoft 365 Business Premium. The following table compares security features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium.
+Defender for Business is also available as a standalone subscription, and is also included in Microsoft 365 Business Premium. The following table compares features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium.
 
-|Feature/capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
-|---|---|---|
+| Microsoft Defender for Business (standalone) | Microsoft 365 Business Premium |
+|:---|:---|
+| <ul><li>Next-generation protection (Microsoft Defender Antivirus together with cloud protection)</li><li>Cross-platform support for devices (Windows, Mac, iOS, and Android) <sup>[[a](#fna)]</sup></li><li>Endpoint Detection and Reponse</li><li>Threat and vulnerability management</li><li>...and more!</li></ul> | <ul><li>Microsoft 365 Business Standard (includes Office apps and services, and Microsoft Teams)</li><li>Defender for Business</li><li>Microsoft Defender for Office 365 Plan 1</li><li>Microsoft Intune</li><li>Azure Active Directory Premium Plan 1</li><li>Azure Information Protection Premium Plan 1</li><li>Exchange Online Archiving</li><li>Windows Autopilot</li><li>Azure Virtual Desktop</li><li>Windows 10/11 Business</li><li>Shared computer activation</li></ul> |
+
+(<a id="fna">a</a>) Microsoft Intune is required to onboard iOS and Android devices. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+
+
+
 |Email protection|Yes <br/>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Yes <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
 |Antispam protection|Yes<br/>For devices|Yes <ul><li>For devices</li><li>For Microsoft 365 email content, such as messages and attachments</li></ul>|
 |Antimalware protection|Yes<br/>For devices|Yes<ul><li>For devices</li><li>For Microsoft 365 email content, such as messages and attachments</li></ul>|
@@ -50,6 +56,9 @@ Defender for Business is also available as a standalone subscription, and is als
 |[Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md)|Yes|Yes|
 |Centralized management and reporting|Yes|Yes|
 |[APIs](../defender-endpoint/apis-intro.md) <br/>(for integration with custom apps or reporting solutions)|Yes|Yes|
+
+| Feature/capability | [Microsoft Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business) |
+| Endpoint security | Yes 
 
 ## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2
 
@@ -88,6 +97,8 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 (<a id="fn6">6</a>) See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 (<a id="fn7">7</a>) The ability to view incidents across tenants using Defender for Endpoint is new!
+
+Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md).
 
 ## Next steps
 
