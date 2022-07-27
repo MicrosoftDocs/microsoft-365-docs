@@ -16,3 +16,5 @@ description: Learn how to create a model with SharePoint Syntex.
 ---
 
 # Share an enterprise model in Microsoft SharePoint Syntex
+
+*Rework "publish & discover" article, using the publish pieces*

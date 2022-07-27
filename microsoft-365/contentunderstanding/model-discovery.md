@@ -17,6 +17,9 @@ description: Learn how to make trained models available to other users and how t
 
 # Discover models in Microsoft SharePoint Syntex
 
+*"Update apply a model article to show the new discovery experience (via ""classify & extract"" button OR from apply model action in model home page) + model recommendation & quick test. This article can include pieces from the ""publish & discover"" article"*
+
+
 You can make your trained **Classify and extract by text pattern** models available for others to view and use directly from the SharePoint document library. 
 
 You can also find and evaluate trained models in other content centers that were created by others in your organization. Select the model that is most useful for classifying your files or extracting specific information from them. 
