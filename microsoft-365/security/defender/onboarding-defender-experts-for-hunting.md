@@ -101,7 +101,7 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 ![Device inventory page flyout menu](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
 
-- Alerts page flyout menu 
+- Alerts page flyout menu
 
 ![Alerts page flyout menu](../../media/mte/defenderexperts/alerts-flyout-menu.png)
 
