@@ -83,4 +83,4 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 
 ### What's next
 
-- [Start using Defender Experts for Hunting](onboarding-dex-hunting.md)
+- [Start using Defender Experts for Hunting](onboarding-defender-experts-for-hunting.md)
