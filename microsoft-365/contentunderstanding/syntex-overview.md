@@ -24,7 +24,7 @@ description: Learn about the capabilities and features in Microsoft SharePoint S
 
 </br>
 
-SharePoint Syntex is a content understanding, processing, and compliance service that uses Artificial Intelligence (AI) and machine learning to automatically and thoughtfully organize and classify documents in your SharePoint library—transforming the data in your business documents into working knowledge for your business.
+SharePoint Syntex is a content understanding, processing, and compliance service that uses Artificial Intelligence (AI) and machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint library—transforming the data in your business documents into working knowledge for your business.
 
 AI and machine learning help you better understand your content by accurately and efficiently classifying and extracting relevant information. Rather than clicking and sorting through hundreds, or even thousands of files, SharePoint Syntex extracts data for you, streamlining the search and discovery process. This returns valuable time to you and your team. Not only can you dive deeper into your content to truly understand it, now you can also increase document insight and control.
 
@@ -49,9 +49,9 @@ For more information about custom and trained models, see [Overview of model typ
 
 ## Content assembly
 
-With SharePoint Syntex, you can use an existing document to create a *modern template*, and then use that template to automatically generate new documents using SharePoint lists or user inputs as a data source.
+With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user inputs as a data source.
 
-This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and less prone to errors in SharePoint Syntex.
+This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
 
 For more information, see [Create documents using content assembly in SharePoint Syntex](content-assembly.md).
 
@@ -59,13 +59,13 @@ For more information, see [Create documents using content assembly in SharePoint
 
 The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
-Advanced metadata search lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+Advanced metadata search lets you use the metadata associated with a document to help find the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 For more information, see [Search for metadata in document libraries in SharePoint Syntex](metadata-search.md).
 
 ## Content compliance
 
-Understanding your content allows for better organization. Organization increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Being able to correctly process data is key to ensuring that it is secure and accurate. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+Understanding your content allows for better compliance organization. Organization increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Being able to correctly process data is key to ensuring that it is secure and accurate. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
 
 For more information, see [Apply a retention label to a model in SharePoint Syntex](apply-a-retention-label-to-a-model.md) and [Apply a sensitivity label to a model in Microsoft SharePoint Syntex](apply-a-sensitivity-label-to-a-model.md).
 
