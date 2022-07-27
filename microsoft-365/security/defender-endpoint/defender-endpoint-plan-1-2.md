@@ -78,9 +78,9 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 
 | Scenario | Description |
 |:---|:---|
-| *Mixed tenant* | Use different sets of capabilities for groups of users. Examples:<ul><li>Defender for Endpoint Plan 1 for some users, and Defender for Endpoint Plan 2 for other users </li><li>Microsoft 365 E3 for some users, and Microsoft 365 E5 for other users</li><li>Defender for Business for up to 300 users, and Defender for Endpoint Plan 1 for additional users</li><li>Microsoft 365 Business Premium for up to 300 users, and Microsoft 365 E3 or E5 for additional users</li></ul>  |
-| *Mixed trial* | Try a premium level subscription for some users. Examples: <ul><li>Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (trial subscription for some users)</li><li>Microsoft 365 E3 (purchased for most users), and Microsoft 365 E5 (trial for some users)</li></ul> |
-| *Phased upgrades* | Upgrade user licenses in phases. Examples:<ul><li>Moving some groups of users from Defender for Endpoint Plan 1 to Plan 2</li><li>Moving groups of users from Microsoft 365 E3 to E5 </li></ul>  |
+| *Mixed tenant* | Use different sets of capabilities for groups of users and their devices Examples:<ul><li>Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2</li><li>Microsoft 365 E3 and Microsoft 365 E5</li></ul>  |
+| *Mixed trial* | Try a premium level subscription for some users. Examples: <ul><li>Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (start a trial subscription for some users)</li><li>Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (start a trial for some users)</li></ul> |
+| *Phased upgrades* | Upgrade user licenses in phases. Examples:<ul><li>Moving groups of users from Defender for Endpoint Plan 1 to Plan 2</li><li>Moving groups of users from Microsoft 365 E3 to E5 </li></ul>  |
 
 > [!NOTE]
 > Defender for Endpoint Plan 1 and Plan 2, and Defender for Business are each available as a standalone subscription. They're also available as part of a larger subscription, as follows:
