@@ -125,11 +125,11 @@ sections:
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
-          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in your tenant?*
+          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
           A tenant with Defender for Business will default to the Defender for Business experience, tenant wide. 
 
-          If you have a mix of Defender for Business and Defender for Endpoint Plan 1 licenses, all users and onboarded devices will receive Defender for Business capabilities.
+          If you have a mix of Defender for Business and Defender for Endpoint Plan licenses, all users and onboarded devices will receive Defender for Business capabilities.
 
           For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
