@@ -582,7 +582,7 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 ## Use retention policies and retention labels instead of older features
 
-If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use retention policies and retention labels instead of the following older features.
+If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use Microsoft 365 retention policies and retention labels instead of the following older features.
 
 If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
 
@@ -595,6 +595,10 @@ If you currently use these older features, they will continue to work side by si
   - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
 
   - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Journaling](/exchange/security-and-compliance/journaling/journaling) (retention and archive)
+    
+    Might be required to integrate with third-party solutions and copies of email messages and their data communication are stored outside Exchange Online.
 
 - [Litigation hold](create-a-litigation-hold.md) (retention only)
 
