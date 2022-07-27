@@ -9,18 +9,12 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
@@ -35,6 +29,7 @@ In this objective, you increase your threat protection with Microsoft 365 Busine
 - [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs.
 - [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used.
+- [Next steps](#next-steps) (such as securing unmanaged devices)
 
 ## Review and apply preset security policies
 
