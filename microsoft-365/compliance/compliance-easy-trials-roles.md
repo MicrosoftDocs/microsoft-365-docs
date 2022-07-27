@@ -24,7 +24,7 @@ For basic information about roles and permissions, including guidance on how to 
 
 - For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
 - For Microsoft Purview and Priva: [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-- For Microsoft Defender: [Create and manage roles for role-based access control](..//security/defender-endpoint/user-roles)
+- For Microsoft Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
 
 ## Who can start a trial
 
@@ -32,8 +32,8 @@ A user with one of the roles listed below can start any Microsoft 365 trial.
  
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
-| Global administrator | Global administrator   | Purview compliance portal > Azure AD roles |
-| Billing Admin | Billing Administrator | Purview compliance portal > Role groups for Microsoft Purview solutions |
+| Global administrator | Global administrator   | Purview compliance portal > Permissions > Azure AD roles |
+| Billing Admin | Billing Administrator | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 
 ## Additional roles for starting specific trials
 
@@ -47,9 +47,8 @@ Purview trials include:
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
-| Compliance Administrator | Compliance Administrator   | Purview compliance portal > Role groups for Microsoft Purview solutions |
-| TBD | Compliance Data Administrator | Purview compliance portal > Role groups for Microsoft Purview solutions |
-
+| Compliance Administrator | Compliance Administrator   | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
+| TBD | Compliance Data Administrator | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 
 ### Priva trials
 
@@ -59,8 +58,14 @@ Priva trials include:
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
-| Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Role groups for Microsoft Purview solutions |
-| Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Role groups for Microsoft Purview solutions |
+| Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
+| Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 
+### Security trials
 
+Security trials include the Defender Vulnerability Management trial.
 
+| Role | Role Group | Where to assign role | 
+| :------------- | :-------------: | :------------: |
+| TBD (there is no Security operations role) | Security Operator  | Microsoft 365 Defender portal > Permissions > Email & collaboration roles  |
+| Thread and vulnerability management (I dont see this anywhere) | TBD | Purview compliance portal > Microsoft 365 Defender portal > Permissions > Email & collaboration roles |
