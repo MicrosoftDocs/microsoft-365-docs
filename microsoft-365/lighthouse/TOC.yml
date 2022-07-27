@@ -60,7 +60,7 @@
       href: m365-lighthouse-win365-page-overview.md
     - name: Reprovision a Windows 365 Cloud PC
       href: m365-lighthouse-reprovision-cloudpc.md
-    - name: Change a Windows 365 Business Cloud PC account type
+    - name: Change a Windows 365 Cloud PC account type
       href: m365-lighthouse-change-cloud-pc-account-type.md
     - name: View an enterprise Cloud PC failed network connection
       href: m365-lighthouse-view-failed-network-connections.md
