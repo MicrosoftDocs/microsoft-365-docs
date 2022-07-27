@@ -47,12 +47,12 @@ Choosing to set up multiple billing tenants might be the right approach, dependi
 
 There are two types of tenants in a multi-tenant billing scenario:
 
-1. **Primary billing tenant** &mdash; The primary billing tenant is the tenant used when the billing account is set up. By default, all subscriptions are bought in this tenant and only users from this tenant can get access to the billing account.
-2. **Associated billing tenant** &mdash; An associated billing tenant is a tenant that is linked to your primary billing tenant's billing account. These tenants can buy subscriptions using your billing account or can accept subscriptions from you. You can also assign billing account roles to users in an associated billing tenant.
+1. **Primary billing tenant**—The primary billing tenant is the tenant used when the billing account is set up. By default, all subscriptions are bought in this tenant and only users from this tenant can get access to the billing account.
+2. **Associated billing tenant**—An associated billing tenant is a tenant that is linked to your primary billing tenant's billing account. These tenants can buy subscriptions using your billing account or can accept subscriptions from you. You can also assign billing account roles to users in an associated billing tenant.
 
 ## What access settings are available for associated billing tenants?
 
-When you invite an associated billing tenant to use your billing account, you can enable one or both of the following access settings.
+When you add an associated billing tenant to your billing account, you can enable one or both of the following access settings.
 
 - **Provisioning** allows the creation of subscriptions in the associated billing tenants.
 - **Billing management** lets billing account owners assign roles to users in an associated billing tenant, giving them permission to access billing information and make purchasing decisions.
