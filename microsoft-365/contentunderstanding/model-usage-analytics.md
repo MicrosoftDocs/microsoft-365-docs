@@ -17,6 +17,8 @@ description: Learn how to find more information about how your document understa
 
 # Analyze how your models are used in Microsoft SharePoint Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
