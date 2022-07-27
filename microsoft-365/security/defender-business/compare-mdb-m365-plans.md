@@ -31,12 +31,10 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 > [!TIP]
 > Defender for Business is available as a standalone security solution for small and medium-sized businesses. It's also included in Microsoft 365 Business Premium. If you already have Microsoft 365 Business Basic or Standard, consider either upgrading to Microsoft 365 Business Premium, or adding Defender for Business to your subscription to get more threat protection capabilities for your devices.
 
-## Compare security features in Microsoft Defender for Business to Microsoft 365 Business Premium
+## Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
 > [!NOTE]
-> This article provides a high-level overview of threat protection features included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
-
-Defender for Business is also available as a standalone subscription, and is also included in Microsoft 365 Business Premium. The following table compares features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium.
+> This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 | Microsoft Defender for Business (standalone) | Microsoft 365 Business Premium |
 |:---|:---|
