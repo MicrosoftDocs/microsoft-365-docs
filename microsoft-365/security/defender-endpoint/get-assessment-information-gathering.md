@@ -27,7 +27,7 @@ ms.custom: api
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). <br/>
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink) <br/>
 > Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 This API response returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, DeviceGatheredInfo.
@@ -44,27 +44,34 @@ Data that is collected (using _via files_) is the current snapshot of the curren
 
 ## 1. Export information gathering assessment (via files)
 
-### 2.1 API method description
+### 1.1 API method description
 
 Returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, DeviceGatheredInfo.
 
-#### 2.2 Limitations
+#### Limitations
 
 Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
-### 2.3 URL
+### 1.2 Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details](apis-intro.md).
+
+Permission type|Permission|Permission display name
+---|---|---
+Application|Vulnerability.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account)|Vulnerability.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+
+### 1.3 URL
 
 ```http
 GET /api/Machines/InfoGatheringExport
 ```
 
-### 2.4 Parameters
+### 1.4 Parameters
 
 - sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours)
 
-### 2.5 Properties
-
-### 2.5 Properties (JSON response)
+### 1.5 Properties
 
 > [!NOTE]
 > The files are gzip compressed & in multiline Json format.
@@ -83,15 +90,15 @@ Property (ID)|Data type|Description
 |GeneratedTime|DateTime|The time the export was generated.
 |
 
-### 2.6 Examples
+### 1.6 Examples
 
-#### 2.6.1 Request example
+#### 1.6.1 Request example
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/InfoGatheringExport?$sasValidHours=1
 ```
 
-#### 2.6.2 Response example
+#### 1.6.2 Response example
 
 ```json
 {
