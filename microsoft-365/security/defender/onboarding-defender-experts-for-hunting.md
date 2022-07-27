@@ -37,7 +37,7 @@ If you're new to Microsoft 365 Defender and Defender Experts for Hunting:
 3. The Microsoft 365 Defender quick tour will get you familiar with the security suite, where the capabilities are and how important they are. Select **Take a quick tour**.  
 4. Read the short descriptions about what the Microsoft Defender Experts service is and the capabilities it provides. Select **Next**. You'll see the welcome page:
 
-![Start using Defender Experts for Hunting](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
+![Screenshot of the Microsoft 365 Defender welcome page with a card for the Defender Experts for Hunting service.](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
 
 ## Receive Defender Experts Notifications
 
@@ -49,7 +49,7 @@ The Defender Experts Notifications service includes:
 
 Refer to the following screenshot to see a sample Defender Experts Notification:
 
-![Receive defender experts notifications](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
+![Secreenshot of a Defender Experts Notification in Microsoft 365 Defender. A Defender Expert Notification includes a title that describes the threat or activity observed, an executive summary, and list of recommendations.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
 
 ### Where you'll find Defender Experts Notifications
 
@@ -76,7 +76,7 @@ You'll start receiving Defender Experts Notifications from Defender Experts in y
 
 You can also filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
 
-1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![filter](../../media/mte/defenderexperts/filter.png) icon.
+1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter](../../media/mte/defenderexperts/filter.png) icon.
 2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
 3. Select **Apply**.
 
@@ -95,19 +95,19 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 - Device page actions menu
 
-![Device page actions menu](../../media/mte/defenderexperts/device-page-actions-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/device-page-actions-menu.png)
 
 - Device inventory page flyout menu
 
-![Device inventory page flyout menu](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
 
 - Alerts page flyout menu
 
-![Alerts page flyout menu](../../media/mte/defenderexperts/alerts-flyout-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
 
 - Incidents page actions menu
 
-![Incidents page actions menu](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
 - Incidents inventory page
 

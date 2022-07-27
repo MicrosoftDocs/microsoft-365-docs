@@ -44,7 +44,7 @@ Each section of the report is designed to provide more insights about the threat
 
 Refer to the following screenshot of a sample report:
 
-![defender experts report](../../media/mte/defender-experts-report.png)
+![Screenshot of a Microsoft Defender Experts for Hunting report in Microsoft 365 Defender portal.](../../media/mte/defender-experts-report.png)
 
 ## View Defender Experts Notifications
 
