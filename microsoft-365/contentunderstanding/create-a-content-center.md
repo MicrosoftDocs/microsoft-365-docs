@@ -77,7 +77,4 @@ The **Models** library in the default content center view groups the created mod
 
 [Overview of model types](model-types-overview.md)
 
-[Create a classifier](create-a-classifier.md)
-
-[Create an extractor](create-an-extractor.md)
 
