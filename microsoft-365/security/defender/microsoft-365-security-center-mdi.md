@@ -2,7 +2,7 @@
 title: Microsoft Defender for Identity in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender for Identity to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, NDI
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
