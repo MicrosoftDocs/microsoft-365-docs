@@ -132,9 +132,6 @@ See the following for more information:
     > [!NOTE]
     > In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** \> **Update & security** \> **Windows Defender** or from the Windows Defender client.
 
-## Review scan results
-
-Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
