@@ -144,7 +144,7 @@ Register Moodle as an application in your Azure AD using the PowerShell script. 
     1. Scroll down and find the task **Sync users with Azure AD** and select **Run now**.
         1. This will sync Azure AD users to your Moodle site according to the user sync options.
     1. Next, find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
-        1. This task will create groups for all Moodle courses with sync option turn on, and also Teams if the an **Team owner** can be found in the course.
+        1. This task will create groups for all Moodle courses with sync option turn on, and also Teams if a **Team owner** can be found in the course.
         1. This task will also sync Moodle users enrolled in the course to Teams as owners or members.
             1. A Team **owner** is a Moodle user who meets all of the following criteria:
                 1. is connected to a Microsoft 365 account.
