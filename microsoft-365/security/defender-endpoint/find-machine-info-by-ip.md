@@ -71,7 +71,7 @@ If no machine found - 404 Not Found.
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
@@ -80,9 +80,9 @@ Content-type: application/json
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
-The response will return a list of all devices that reported this IP address within sixteen minutes prior and after the timestamp.
+The response will return a list of all devices that reported this IP address within 16 minutes prior and after the timestamp.
 
 ```json
 HTTP/1.1 200 OK
