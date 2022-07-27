@@ -18,10 +18,49 @@ description: "Learn which user roles are required in order to sign up for a tria
 
 # User roles for starting Microsoft 365 trials
 
-Microsoft Purview solutions help protect your organization from internal threats arising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
+Certain user roles are required in order to sign up for a Microsoft 365 trial. This article explains the necessary roles.
 
-The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+For basic information about roles and permissions, including guidance on how to assign users to roles, refer to the following articles:
 
-## Terms and conditions
+- For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
+- For Microsoft Purview and Priva: [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+- For Microsoft Defender: [Create and manage roles for role-based access control](..//security/defender-endpoint/user-roles)
 
-See the 
+## Who can start a trial
+
+A user with one of the roles listed below can start any Microsoft 365 trial.
+ 
+| Role | Role Group | Where to assign role | 
+| :------------- | :-------------: | :------------: |
+| Global administrator | Global administrator   | Purview compliance portal > Azure AD roles |
+| Billing Admin | Billing Administrator | Purview compliance portal > Role groups for Microsoft Purview solutions |
+
+## Additional roles for starting specific trials
+
+There are additional roles that have permissions to start specific Microsoft 365 trials. Refer the tables below for each trial.
+
+### Purview trials
+
+Purview trials include:
+- The Microsoft Purview solutions trial
+- The Compliance Manager premium assessments trial
+
+| Role | Role Group | Where to assign role | 
+| :------------- | :-------------: | :------------: |
+| Compliance Administrator | Compliance Administrator   | Purview compliance portal > Role groups for Microsoft Purview solutions |
+| TBD | Compliance Data Administrator | Purview compliance portal > Role groups for Microsoft Purview solutions |
+
+
+### Priva trials
+
+Priva trials include:
+- The Privacy Risk Management trial
+- The Subject Rights Requests trial
+
+| Role | Role Group | Where to assign role | 
+| :------------- | :-------------: | :------------: |
+| Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Role groups for Microsoft Purview solutions |
+| Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Role groups for Microsoft Purview solutions |
+
+
+
