@@ -27,13 +27,16 @@ ms.custom: api
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
 
-This API response contains the data for the information gathering assessment per device. It returns a table with an entry for every unique combination of DeviceId, DeviceName, AdditionalDetails.
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
-- [Export information gathering assessment **via files**](#1-export-information-gathering-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
-  - Call the API to get a list of download URLs with all your organization data.
-  - Download all the files using the download URLs and process the data as you like.
+This API response returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, AdditionalDetails.
+
+It pulls all relevant data in your organization as a download file. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+
+- Call the API to get a list of download URLs with all your organization data.
+- Download all the files using the download URLs and process the data as you like.
 
 Data that is collected (using _via files_) is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
 
@@ -44,20 +47,11 @@ Data that is collected (using _via files_) is the current snapshot of the curren
 
 ### 2.1 API method description
 
-This API response contains the data for the information gathering assessment per device. It returns a table with an entry for every unique combination of DeviceId, DeviceName, AdditionalDetails.
+Returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, AdditionalDetails.
 
-#### 2.1.1 Limitations
+#### 2.2 Limitations
 
 Rate limitations for this API are 5 calls per minute and 20 calls per hour.
-
-### 2.2 Permissions
-
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
-
-Permission type|Permission|Permission display name
----|---|---
-Application|Software.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ### 2.3 URL
 
@@ -65,26 +59,29 @@ Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability
 GET /api/Machines/InfoGatheringExport
 ```
 
-### Parameters
+### 2.4 Parameters
 
 - sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours)
 
 ### 2.5 Properties
 
+### 2.5 Properties (JSON response)
+
 > [!NOTE]
+> The files are gzip compressed & in multiline Json format.
 >
-> - The files are gzip compressed & in multiline JSON format.
-> - The download URLs are only valid for 3 hours. Otherwise you can use the parameter.
-> - For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
+> The download URLs are only valid for 3 hours; otherwise, you can use the parameter.
+>
+> To maximize download speeds, make sure you are downloading the data from the same Azure region where your data resides.
+>
+> Each record is approximately 1KB of data. You should take this into account when choosing the pageSize parameter that works for you.
+>
+> Some additional columns might be returned in the response. These columns are temporary and might be removed. Only use the documented columns.
 
-<br>
-
-****
-
-Property (ID)|Data type|Description|Example of a returned value
-:---|:---|:---|:---
-Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|The time that the export was generated.|2021-05-20T08:00:00Z
+Property (ID)|Data type|Description
+:---|:---|:---
+|Export files|String[array]|A list of download URLs for files holding the current snapshot of the organization.
+|GeneratedTime|DateTime|The time the export was generated.
 |
 
 ### 2.6 Examples
