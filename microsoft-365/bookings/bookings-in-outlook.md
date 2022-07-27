@@ -65,9 +65,14 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    "Anonymous:CalendarSharingFreeBusyReviewer"" should be one of the domains in the response.
+    "Anonymous:CalendarSharingFreeBusySimple": Share free/busy hours only.
+    "Anonymous:CalendarSharingFreeBusyDetail": Share free/busy hours, subject and location.
+    "Anonymous:CalendarSharingFreeBusyReviewer": Share free/busy hours, subject, location and the body of the message or calendar item.
+    "Anonymous:ContactsSharing": Share contacts only.
+    
+   You should have one of the above domains in the response.
 
-   To enable anonymous sharing, use the following command.
+   To enable anonymous sharing, use the following command or alter **Add** section with the domain that you would like to add.
 
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
