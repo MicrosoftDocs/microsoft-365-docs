@@ -103,8 +103,10 @@
       items:
             - name: Overview 
               href: prebuilt-overview.md
-            - name: Invoice and receipt trained models 
-              href: prebuilt-models.md
+            - name: Use a trained invoice model 
+              href: prebuilt-model-invoice.md
+            - name: Use a trained receipt model 
+              href: prebuilt-model-receipt.md
             - name: Apply a retention label 
               href: apply-a-retention-label-to-a-model.md
             - name: Create a local model 
@@ -157,9 +159,9 @@
               href: solution-manage-contracts-step3.md
         - name: Site templates
           items:
-            - name: Contracts management site template
+            - name: Contracts management template
               href: use-contracts-management-site.md 
-            - name: Content center site template
+            - name: Content center template
               href: use-content-center-site.md 
 
     - name: Extensibility
