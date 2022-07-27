@@ -1,8 +1,8 @@
 ---
-title: Pre-requisites before subscribing to Defender Experts for Hunting
+title: Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service
 ms.reviewer:
 description: This section outlines the key infrastructure requirements you must meet and important information on data access and compliance
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
+keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, defender experts notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
