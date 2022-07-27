@@ -41,7 +41,7 @@ Use the [Microsoft 365 Defender portal](https://security.microsoft.com/) to subm
 
 ### Submit a file or file hash
 
-For more information, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
+Use the unified submissions feature in Microsoft Defender for Endpoint to submit files and file hashes to Microsoft for review. For more information, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
 ## Can I send a sample by email?
 
