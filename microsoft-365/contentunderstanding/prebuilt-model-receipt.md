@@ -1,5 +1,5 @@
 ---
-title: Use a trained model to extract info from invoices or receipts in Microsoft SharePoint Syntex
+title: Use a trained model to extract info from receipts in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create and configure a trained model in SharePoint Syntex.
+description: Learn how to create, configure, and use a trained model in SharePoint Syntex.
 
 ---
 
-# Use a trained model to extract info from invoices in Microsoft SharePoint Syntex
+# Use a trained model to extract info from receipts in Microsoft SharePoint Syntex
 
-The trained *invoice model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
+The trained *receipt model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-## Create a trained invoice model
+## Create a trained receipt model
 
-Follow these steps to create a trained model to classify documents in SharePoint Syntex.
+Follow these steps to create a trained receipt model to classify documents in SharePoint Syntex.
 
 1. From the **Models** page, select **Create a model**.
 
@@ -32,7 +32,7 @@ Follow these steps to create a trained model to classify documents in SharePoint
 
     ![Screenshot of the New document understanding model panel showing the model types available.](../media/content-understanding/prebuilt-create-panel.png) 
 
-3. In the **Model type** section, select **Invoice processing prebuilt**.
+3. In the **Model type** section, select **Receipt processing prebuilt**.
 
    If you want to create a traditional, untrained document understanding model instead of a trained model, select **Classify and extract by text pattern**.
 
