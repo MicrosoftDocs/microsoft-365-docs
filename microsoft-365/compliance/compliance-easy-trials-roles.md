@@ -25,6 +25,7 @@ For basic information about roles and permissions, including guidance on how to 
 - For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
 - For Microsoft Purview and Priva: [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 - For Microsoft Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
+- [Prerequisites & permissions for Microsoft Defender Vulnerability Management](../security/defender-endpoint/user-roles.md)
 
 ## Who can start a trial
 
