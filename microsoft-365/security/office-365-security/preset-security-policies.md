@@ -227,7 +227,7 @@ To disable the **Standard protection** or **Strict protection** preset security 
 
 There are two cmdlets that you can use to view these policies:
 
-1. To View Safe Attachments and Safe Link Policies, you can use the below Cmdlet
+1. To view Safe Attachments and Safe Link policies, use the following cmdlet:
 
 ```
 Get-ATPProtectionPolicyRule
