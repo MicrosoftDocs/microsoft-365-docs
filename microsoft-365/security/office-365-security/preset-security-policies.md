@@ -239,7 +239,6 @@ Get-ATPProtectionPolicyRule
 Get-EOPProtectionPolicyRule
 ```
 
-
 ### Use the Microsoft 365 Defender portal to modify the assignments of the Built-in protection preset security policy
 
 Remember, the **Built-in protection** preset security policy is assigned to all recipients, and doesn't affect recipients who are defined in the **Standard protection** or **Strict protection** preset security policies, or custom Safe Links or Safe Attachments policies.
