@@ -81,13 +81,13 @@ Trained models are pretrained to recognize documents and the structured informat
 
 The trained invoice model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
 
-For more information about trained invoice models, see [Use a trained model to extract information from invoices](prebuilt-models.md).
+For more information about trained invoice models, see [Use a trained model to extract information from invoices](prebuilt-invoice-model.md).
 
 ### Receipt models
 
 The trained receipt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-For more information about trained receipt models, see [Use a trained model to extract information from receipts](prebuilt-models.md).
+For more information about trained receipt models, see [Use a trained model to extract information from receipts](prebuilt-receipt-model.md).
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. Or you can use existing content types to define your model if needed.
 
