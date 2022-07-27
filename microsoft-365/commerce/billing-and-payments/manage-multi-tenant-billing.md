@@ -59,7 +59,7 @@ When you invite an associated billing tenant to use your billing account, you ca
 
 ## Add an associated billing tenant
 
-Before you begin, make sure you have either the tenant ID or the primary domain name for the tenant you want to invite. For more information, see [Find tenant ID, domain name, user object ID](https://docs.microsoft.com/en-us/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+Before you begin, make sure you have either the tenant ID or the primary domain name for the tenant you want to invite. For more information, see [Find tenant ID, domain name, user object ID](https://docs.microsoft.com/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 2. Select the name of the billing account you want to use as the primary billing tenant.
@@ -117,5 +117,5 @@ As a global administrator of an associated billing tenant, you can accept or dec
 
 ## Related articles
 
-[Understand billing accounts \| Microsoft Docs](https://docs.microsoft.com/en-us/microsoft-365/commerce/manage-billing-accounts?view=o365-worldwide) (article)\
-[Understand billing profiles \| Microsoft Docs](https://docs.microsoft.com/en-us/microsoft-365/commerce/billing-and-payments/manage-billing-profiles?view=o365-worldwide) (article)
+[Understand your Microsoft billing accounts](../manage-billing-accounts.md) (article)\
+[Understand billing profiles](manage-billing-profiles.md) (article)
