@@ -22,22 +22,17 @@ Content understanding in SharePoint Syntex starts with models. Models let you id
 
 SharePoint Syntex uses *custom models* and *trained models*. 
 
-[Custom models](#custom-models) include:
-
-- [Classify and extract by text pattern](#classify-and-extract-by-text-pattern)
-- [Extract by layout](#extract-by-layout)
-- [Extract by text pattern and layout](#extract-by-text-pattern-and-layout)
-
-[Trained models](#prebuilt-models) include:
-
-- [Invoices](#invoice-models)
-- [Receipts](#receipt-models)
-
 [diagram]
 
 ## Custom models
 
 The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+
+[Custom models](#custom-models) include:
+
+- [Classify and extract by text pattern](#classify-and-extract-by-text-pattern)
+- [Extract by layout](#extract-by-layout)
+- [Extract by text pattern and layout](#extract-by-text-pattern-and-layout)
 
 To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
@@ -73,7 +68,13 @@ For more information, see [Overview of extraction by text pattern and layout](ex
 
 ## Trained models
 
-If you don't need to build a custom model, you can use a [trained model](prebuilt-overview.md) that has already been trained for specific structured documents, such as invoices and receipts.
+If you don't need to build a custom model, you can use a [trained model](prebuilt-overview.md) that has already been trained for specific structured documents.
+
+[Trained models](#trained-models) include:
+
+- [Invoices](#invoice-models)
+- [Receipts](#receipt-models)
+
 
 Trained models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
@@ -88,21 +89,6 @@ For more information about trained invoice models, see [Use a trained model to e
 The trained receipt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
 For more information about trained receipt models, see [Use a trained model to extract information from receipts](prebuilt-receipt-model.md).
-
-When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. Or you can use existing content types to define your model if needed.
-
-Once a content type is created and associated with a model, you can also reference that model from the **Site Content Type** property panel.
-
-:::image type="content" source="../media/content-understanding/site-content-type-panel.png" alt-text="Screenshot of the Site Content Type panel showing the Document understanding model highlighted." lightbox="../media/content-understanding/site-content-type-panel.png":::
-
-Form processing models also create new [SharePoint content types](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), and are also stored in the SharePoint Content Types gallery.
-
-## Where they can be applied
-
-You can apply document understanding models to SharePoint document libraries that you have access to. Use the content center to create a document understanding model, and apply it to different document libraries. The content center gives you a more central control for how document understanding models are used and where they're applied. Note this information must also roll up to a content center.
-
-Form processing models can currently be applied only to the SharePoint document library from which you created them. This allows licensed users with access to the site to create a form processing model. Note that an admin needs to enable form processing on a SharePoint document library for it to be available to licensed users.
---->
 
 ## See also
 
