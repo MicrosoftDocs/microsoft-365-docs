@@ -30,7 +30,7 @@ ms.custom: api
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). <br/>
 > Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
-This API response returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, AdditionalDetails.
+This API response returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, DeviceGatheredInfo.
 
 It pulls all relevant data in your organization as a download file. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
 
@@ -46,7 +46,7 @@ Data that is collected (using _via files_) is the current snapshot of the curren
 
 ### 2.1 API method description
 
-Returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, AdditionalDetails.
+Returns all information gathering assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, DeviceName, DeviceGatheredInfo.
 
 #### 2.2 Limitations
 
