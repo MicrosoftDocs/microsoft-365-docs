@@ -50,7 +50,7 @@ Refer to the following screenshot of a sample report:
 
 A Defender Experts Notification describes the significant threat activity Defender Experts for Hunting observed in your environment and provides recommendations to remediate and defend your organization.
 
-The Defender Experts for Hunting reports provide you with the total number of Defender Experts Notifications our Defender Experts have sent for your chosen time. To view these notifications, click **View notification** beside **Notified**.
+The Defender Experts for Hunting reports provide you with the total number of Defender Experts Notifications our Defender Experts have sent for your chosen time. To view these notifications, select **View notification** beside **Notified**.
 
 This link redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or Defender Experts Notifications are labeled with **Defender Experts**.
 
@@ -82,7 +82,7 @@ Signals from Microsoft 365 Defender and investigations by Defender Experts for H
 
 Threat categories help identify and organize security threats into classes to assess and evaluate their impact and develop strategies to prevent or mitigate these threats to your environment. The **Threat categories observed** section of the report shows a bar chart with significant risks and threats detected in your environment, helping you understand the breadth and scope of your exposure.
 
-Among the various threat categories available, the following categories are carefully chosen because they are not covered under the purview of MITRE ATT&CK framework:
+Among the various threat categories available, the following categories are carefully chosen because they aren't covered under the purview of MITRE ATT&CK framework:
 
 - Ransomware
 - Malware
@@ -90,5 +90,5 @@ Among the various threat categories available, the following categories are care
 - Exploit
 - Delivery
 
-You can prioritize remediation based on the most impacted category, as depicted in the bar graph.
+You can prioritize remediation based on the most impacted category, as depicted in the bar chart.
 
