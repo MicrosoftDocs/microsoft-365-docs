@@ -237,7 +237,7 @@ In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/se
 |Security feature name|Default|Built-in protection|Comment|
 |---|:---:|:---:|---|
 |**Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** <br><br> _EnableATPForSPOTeamsODB_|Off <br><br> `$false`|On <br><br> `$true`|To prevent users from downloading malicious files, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
-|**Turn on Safe Documents for Office clients** <br><br> _EnableSafeDocs_|Off <br><br> `$false`|On <br><br> `$true`|This feature is available and meaningful only with licenses that are not included in Defender for Office 365 (for example, Microsoft 365 E5 or Microsoft 365 E5 Security). For more information, see [Safe Documents in Microsoft 365 E5](safe-docs.md).|
+|**Turn on Safe Documents for Office clients** <br><br> _EnableSafeDocs_|Off <br><br> `$false`|On <br><br> `$true`|This feature is available and meaningful only with licenses that are not included in Defender for Office 365 (for example, Microsoft 365 A5 or Microsoft 365 E5 Security). For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](safe-docs.md).|
 |**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <br><br> _AllowSafeDocsOpen_|Off <br><br> `$false`|Off <br><br> `$false`|This setting is related to Safe Documents.|
 
 #### Safe Attachments policy settings
