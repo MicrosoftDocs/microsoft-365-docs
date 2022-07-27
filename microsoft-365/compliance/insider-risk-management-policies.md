@@ -171,7 +171,7 @@ These insider risk management policies can use specific indicators and the order
 - **Clean-up**: These category signals focus on deletion activities by in-scope policy users. An example activity in this category would be deleting files from a device.
 
 > [!NOTE]
-> Sequence detection uses indicators that are enabled in the global settings for insider risk management and indicators that are selected in a policy. If appropriate indicators are not selected, sequence detection will not work.
+> Sequence detection uses indicators that are enabled in the global settings for insider risk management and indicators that are selected in a policy. If appropriate indicators are not selected, you'll be able to turn on these indicators in the sequence detection step in the policy wizard.
 
 You can customize individual threshold settings for each sequence detection type when configured in the policy. These threshold settings adjust alerts based on the volume of files associated with the sequence.
 
