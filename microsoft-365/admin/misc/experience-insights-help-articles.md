@@ -21,7 +21,7 @@ As the admin of a Microsoft 365 organization, you get a report of the Microsoft 
 
 There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
 
-:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing how to get to the experience insights dashboard":::
 
 If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 
@@ -53,4 +53,4 @@ Help articles can be found in-app in the help pane or at the [Microsoft support 
 
 ### In-app help article in Microsoft Word
 
-:::image type="content" source="../../media/help-article-example-in-app-word.png" alt-text="Screenshot: Example support.microsoft.com article":::
+:::image type="content" source="../../media/help-article-example-in-app-word.png" alt-text="Screenshot: Example Word desktop app help article":::
