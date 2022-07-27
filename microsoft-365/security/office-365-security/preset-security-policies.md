@@ -223,6 +223,23 @@ The steps to modify the assignment of the **Standard protection** or **Strict pr
 
 To disable the **Standard protection** or **Strict protection** preset security policies while still preserving the existing conditions and exceptions, slide the toggle to **Disabled** ![Toggle Off.](../../media/scc-toggle-off.png). To enable the policies, slide the toggle to **Enabled** ![Toggle On](../../media/scc-toggle-on.png).
 
+### Use PowerShell to review the settings of the preset security policy
+
+There are two cmdlets that we can use to view these policies:
+
+1. To View Safe Attachments and Safe Link Policies, you can use the below Cmdlet
+
+```
+Get-ATPProtectionPolicyRule
+```
+
+2. To View Hosted Connection Filter, Anti-Phish and Malware Filter you can use the below Cmdlet
+
+```
+Get-EOPProtectionPolicyRule
+```
+
+
 ### Use the Microsoft 365 Defender portal to modify the assignments of the Built-in protection preset security policy
 
 Remember, the **Built-in protection** preset security policy is assigned to all recipients, and doesn't affect recipients who are defined in the **Standard protection** or **Strict protection** preset security policies, or custom Safe Links or Safe Attachments policies.
