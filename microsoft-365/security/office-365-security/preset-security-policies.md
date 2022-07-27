@@ -225,7 +225,7 @@ To disable the **Standard protection** or **Strict protection** preset security 
 
 ### Use PowerShell to review the settings of the preset security policy
 
-There are two cmdlets that we can use to view these policies:
+There are two cmdlets that you can use to view these policies:
 
 1. To View Safe Attachments and Safe Link Policies, you can use the below Cmdlet
 
