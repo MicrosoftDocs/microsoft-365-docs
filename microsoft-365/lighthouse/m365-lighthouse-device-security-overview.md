@@ -21,19 +21,19 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Microsoft Defender for Endpoint page in Microsoft 365 Lighthouse
 
-Microsoft Defender for Endpoint provides endpoint security to secure your customers’ devices from ransomware, malware, phishing, and other threats. Microsoft 365 Lighthouse allows you to view endpoint security insights and information for all your customer tenants.
+Microsoft Defender for Endpoint provides endpoint security to secure your customers' devices from ransomware, malware, phishing, and other threats. Microsoft 365 Lighthouse allows you to view endpoint security insights and information for all your customer tenants.
 
-You can access the Microsoft Defender for Endpoint page in Microsoft 365 Lighthouse from the **Home** page under **Security Incidents** card or from the left navigation pane, **Devices \> Device Security tab**. You'll see any security incidents and alerts in your tenants that need attention, and devices that have been onboarded to Microsoft Defender for Endpoint.
+You can access the Microsoft Defender for Endpoint page in Microsoft 365 Lighthouse from the **Security incidents** card on the Home page or from the left navigation pane by selecting **Devices** > **Device security**. You'll see any security incidents and alerts in your tenants that need attention, and devices that have been onboarded to Microsoft Defender for Endpoint.
 
 ## Incidents and alerts tab
 
-The Incidents and alerts tab provides a multi-tenant incidents queue of incidents and alerts that were flagged from devices in your customers’ network. By default, the queue displays any active incidents seen in the last 30 days. You can select any incident or alert to view more information.
+The Incidents and alerts tab provides a multi-tenant incidents queue of incidents and alerts that were flagged from devices in your customers' network. By default, the queue displays any active incidents seen in the last 30 days. You can select any incident or alert to view more information.
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-incidents.png" alt-text="Microsoft Defender for Endpoint incidents and alerts":::
 
 ## Devices tab
 
-The Devices tab list of all devices in your customer tenants that have been onboarded to Microsoft Defender for Endpoint. This list includes devices that are managed by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
+The Devices tab lists all of the devices in your customer tenants that have been onboarded to Microsoft Defender for Endpoint. This list includes devices that are managed by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
 
 The Devices tab also includes the following options:
 
