@@ -28,6 +28,16 @@ Like other models, trained models are created and managed in the [content center
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
+## Available trained models
+
+Currently, there are two trained models available: invoice and receipt.
+
+- The trained *invoice model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
+
+- The trained *receipt model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+
+Additional trained models will be available in future releases.
+
 ## Requirements
 
 - Supported file formats: JPEG, PNG, BMP, TIFF, and PDF (text-embedded or scanned).

@@ -16,3 +16,5 @@ description: Learn how to create a model with SharePoint Syntex.
 ---
 
 # Create a model in Microsoft SharePoint Syntex
+
+*New article to summarize the creation process (as it's the same for all to get started; training is where it differs)*
