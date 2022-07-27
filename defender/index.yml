@@ -27,6 +27,10 @@ highlightedContent:
       itemType: overview
       url: /azure/security/
     # Card
+    - title: Learn modules for Azure security 
+      itemType: learn
+      url: /learn/browse/?products=azure&subjects=security     
+    # Card
     - title: Microsoft 365 security documentation
       itemType: overview
       url: /microsoft-365/security/
@@ -34,10 +38,6 @@ highlightedContent:
     - title: Learn modules for Microsoft 365 Defender
       itemType: learn
       url: /learn/m365/defender
-    # Card
-    - title: Learn modules for Azure security 
-      itemType: learn
-      url: /learn/browse/?products=azure&subjects=security
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -114,11 +114,11 @@ conceptualContent:
         - title: Microsoft Defender Threat Intelligence
       # imageSrc should be square in ratio with no whitespace
           links:
-            - url: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
+            - url: /defender/threat-intelligence
               itemType: overview
-              text: Microsoft Defender Antivirus 
+              text: Microsoft Defender Threat Intelligence 
 # Card
-        - title: Microsoft Defender services in Windows
+        - title: Microsoft Defender capabilities in Windows
       # imageSrc should be square in ratio with no whitespace
           links:
             - url: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
