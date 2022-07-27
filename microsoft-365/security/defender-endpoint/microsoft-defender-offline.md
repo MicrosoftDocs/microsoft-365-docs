@@ -127,7 +127,6 @@ See the following for more information:
     > [!NOTE]
     > In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** \> **Update & security** \> **Windows Defender** or from the Windows Defender client.
 
-
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
