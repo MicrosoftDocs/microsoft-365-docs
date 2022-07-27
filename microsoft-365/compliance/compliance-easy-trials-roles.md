@@ -68,4 +68,4 @@ Security trials include the Defender Vulnerability Management trial.
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
 | TBD (there is no Security operations role) | Security Operator  | Microsoft 365 Defender portal > Permissions > Email & collaboration roles  |
-| Thread and vulnerability management (I dont see this anywhere) | TBD | Purview compliance portal > Microsoft 365 Defender portal > Permissions > Email & collaboration roles |
+| Thread and vulnerability management (I dont see this anywhere) | TBD | Microsoft 365 Defender portal > Permissions > Email & collaboration roles |
