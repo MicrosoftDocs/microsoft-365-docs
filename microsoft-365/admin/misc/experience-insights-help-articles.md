@@ -13,9 +13,9 @@ description: "Get a report of the Microsoft 365 help articles people in your org
 
 # Experience insights help article report
 
-The Experience insights (preview) dashboard shows you data across usage and sentiment to give you a fuller view of your organization's experience with Microsoft 365. This information and data on the dashboard will help you better understand and improve your users experience with Microsoft 365. The dashboard shows you data across usage and user sentiment, and helps give you a fuller picture of your user's overall experience. You can drill down into specific information such as feature usage for certain apps, exact feedback and Net Promoter Score (NPS) comments, and top help articles viewed by users in your organization. This info can help you identify opportunities to improve user’s Microsoft 365 products and app experiences in your organization.
+As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help. To learn more about adoption and training for users in your organization, see Experience insights dashboard.
 
-<!--To learn more about adoption and training for users in your organization, see [Experience insights help article report](experience-insights-help-articles.md). -->
+:::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
 ## How to get to the Experience insights dashboard
 
@@ -25,81 +25,23 @@ There are a couple of ways to get the Experience insights dashboard page. If you
 
 If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 
-:::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+Select an app or service and then select **Help content**.
 
-To learn more, see About admin roles and Assign admin roles.
+## Interpret your organization's help article views
 
-## Apps and services data
-
-The **Apps and services** data section shows you a unified view across usage and sentiment in your organization to give you an at-a-glance understanding of your users' experience with Microsoft 365. Select an app or service to get additional details, such as comments submitted through feedback and NPS surveys, or the top Microsoft 365 help articles your users viewed. You can also favorite the apps or services in the list so that you can more easily view them.
-
-### Apps and services chart information
-
-The chart information gives you insight into the apps and services that you want to track data on. Select an app or service to dig deeper into usage, product feedback, net promoter score and help content data.
-
-**Active users** tells you The total count of unique users who performed at least one intentional action, like opening a file, in the app over the selected time period. Use this data to make sure you are hitting your adoption goals. [Learn more](../activity-reports/active-users-ww.md)
-
-**Product usage** is the percentage of people who are actively using the products that are enabled for them to use. Use this data to make decisions on where to optimize product assignments.
-
-**In-product feedback** Is the total number of feedback response from within the app or service that were initiated and submitted by your users. Use this data to gauge the success and satisfaction people have with the apps. [Learn more](feedback-user-control.md)
-
-**NPS survey response volume** is the total number of responses to the Net Promoter Score (NPS) survey. By default, Microsoft sends the survey to 5% of your users and asks “Would you recommend this product?” Use this data to gauge user satisfaction and to see what people are saying about the app. [Learn more](../manage/manage-feedback-product-insights.md)
-
-**Help article views** is the total number of views of Microsoft help articles and training videos about the app. Use this data to find topics of interest and share the suggested training with your users. [Learn more](experience-insights-help-articles.md)
-
-> [!NOTE]
-> You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.
-
-## Products and services data
-
-Select a product or service to see more detailed information about product usage, user feedback, Net Promoter Score (NPS) and what help articles your users are reading.
-
-### Teams usage example
-
-For some apps and services, you can see additional information into the usage of specific features to get a better understanding of what your users are using the most.
-
-### Teams user feedback example
-
-In the user feedback section, you can see the actual comments your users submitted to help you gauge if there is a pattern that needs to be addressed.
-
-### Teams Net Promoter Score (NPS) example
-
-NPS details allow you see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
-
-### Teams help article example
-
-For the first time, you can now see what articles your users are consuming on Support.Microsoft.com com or via the Microsoft 365 in-app help experiences. You can see the top articles for the specific app or service in your organization, how many people are viewing the app, and preview the article in-line. This can be an excellent way of identifying what your users are trying to do and where they may be struggling. Since not all users seek out help, it’s a good indication of content that may be beneficial to a broader set of users in the organization. [Learn more](experience-insights-help-articles.md)
-
-## Additional resources
-
-:::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
-
-### View your organization's Productivity Score
-
-Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. For more information on Productivity Score, read, [Productivity Score](../productivity/productivity-score.md).
-
-### Take training for adoption specialists
-
-In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real world scenarios.
-
-### Join the adoption community
-
-Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Meet and learn from peers and Microsoft Staff and stay up to date on upcoming trainings, events and our monthly Community calls.
-
-### Use the Microsoft 365 adoption tools
-
-Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience.
-
-<!-- Chart information gives you insight into the apps and services that you want to track data on. **Help article views** is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on [support.microsoft.com](https://support.microsoft.com).
+Chart information gives you insight into the apps and services that you want to track data on. Help article views is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on support.microsoft.com.
 
 :::image type="content" source="../../media/help-articles-detail-view2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+
+> [!NOTE]
+> Help article views are only shown for users who have signed in to the desktop app or have signed in to [support.microsoft.com](https://support.microsoft.com).
 
 |Item|Description|
 |:-----|:-----|
 |1 |Use the Help content tab to see where people need help using the app or service. |
-|2 |You can filter for trends over the last 7 days, 30 days, 90 days, or 180 days. |
+|2 |You can filter for trends over the last 30 days, 90 days, or 180 days. |
 |3 |Total number of help article page views in app or on [support.microsoft.com](https://support.microsoft.com). |
-|4 |List of the top help articles related to the app or service that your end-users are reading. |
+|4 |List of the top help articles related to the app or service that your end-users are reading. If an article covers multiple apps, it will be shown for each related app. |
 
 ## Examples of help articles
 
@@ -112,5 +54,3 @@ Help articles can be found in-app in the help pane or at the [Microsoft support 
 ### In-app help article in Microsoft Word
 
 :::image type="content" source="../../media/help-article-example-in-app-word.png" alt-text="Screenshot: Example support.microsoft.com article":::
-
--->
