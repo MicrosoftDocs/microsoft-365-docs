@@ -40,23 +40,12 @@ The resources on this page are designed to get you started with learning about a
 
 The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex.
 
-<!---
-Depending on the types of files you want to classify and extract information from, you can choose to either build a [custom model](#custom-models) or use a [prebuilt model](#prebuilt-models).
-
-There are three custom model types you can choose from:
-
-- [Classify and extract by text pattern](document-understanding-overview.md)
-- [Extract by layout](form-processing-overview.md)
-- [Extract by text pattern and layout](extract-by-text-pattern-and-layout-overview.md)
-
-Or, if you don't need to build a custom model, you can use a trained [prebuilt model](prebuilt-overview.md).
---->
-
 > [!NOTE]
 > You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
+|See an overview of SharePoint Syntex|[Overview of SharePoint Syntex](./syntex-overview.md)|
 |Learn about custom models in SharePoint Syntex|[Overview of model types](./modeltypes-overview.md)|
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
@@ -89,7 +78,7 @@ The resources in this section help the admin in your organization to set up and 
 
 ## Learn about model types
 
-The resources in this section help you learn how to create and configure the model that's best suited for your type of files.
+The resources in this section help you learn how to choose, create, and configure the model that's best suited for your types of documents.
 
 ### Build a custom model
 
@@ -114,7 +103,14 @@ The resources in this section help you learn how to create and configure the mod
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Learn more about trained models|[Overview of trained models](./prebuilt-overview.md)|
-|Use trained models to extract information from documents |[Use a prebuilt model to extract info from invoices or receipts](./prebuilt-models.md)|
+|Use a trained model to extract information from invoices |[Use a trained invoice model](./prebuilt-model-invoice.md)|
+|Use a trained model to extract information from receipts |[Use a trained receipt model](./prebuilt-model-receipt.md)|
+
+## PowerShell for SharePoint Syntex
+
+| If you're looking for this information | Go to this resource |
+|:-----|:-----|
+|Use PowerShell to manage SharePoint Syntex|[Manage SharePoint Syntex with PowerShell](./powershell-syntex-intro.md)|
 
 ## Premium services
 
@@ -125,6 +121,8 @@ A SharePoint Syntex license gives your users premium content services that give 
 |Learn about importing a data set using Simple Knowledge Organization System based format|[Import a term set using a SKOS-based format](./import-term-set-skos.md)<br><br>[SKOS format reference for SharePoint taxonomy](./skos-format-reference.md)<br><br>|
 |Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](./push-content-type-to-hub.md)|
 |Learn about the term store reports that are available to you|[Term store reports](./term-store-analytics.md)|
+
+## PowerShell for SharePoint Syntex
 
 ## Extensibility
 
