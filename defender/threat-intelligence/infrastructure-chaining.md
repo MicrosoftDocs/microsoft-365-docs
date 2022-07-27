@@ -1,9 +1,9 @@
 --- 
-title: Microsoft Defender Threat Intelligence (Defender TI): Infrastructure Chaining
-description: In this concept article, learn about infrastructure chaining and how you can apply that process to perform threat infrastructure analysis using Microsoft Defender Threat Intelligence (Defender TI).
+title: 'Microsoft Defender Threat Intelligence (Defender TI): Infrastructure Chaining'
+description: 'In this concept article, learn about infrastructure chaining and how you can apply that process to perform threat infrastructure analysis using Microsoft Defender Threat Intelligence (Defender TI).'
 author: alexroland24
 ms.author: aroland
-ms.service: https://docs.microsoft.com/defender-threat-intelligence 
+ms.service: threat-intelligence 
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept 
@@ -17,9 +17,8 @@ Infrastructure chaining leverages the relationships between highly connected dat
 
 ## Prerequisites
 
-1. Review [Microsoft Defender Threat Intelligence (Defender TI)’s Data sets overview article](overview-data-sets.md)
-2. Review [Microsoft Defender Threat Intelligence (Defender TI)’s Searching and pivoting how-to article](how-to-searching-and-pivoting.md)
-
+1. Review [Microsoft Defender Threat Intelligence (Defender TI)’s Data sets overview article](data-sets.md)
+2. Review [Microsoft Defender Threat Intelligence (Defender TI)’s Searching and pivoting how-to article](searching-and-pivoting.md)
 
 ## All you need is a starting point...
 
@@ -29,10 +28,10 @@ We see attack campaigns employ a wide array of obfuscation techniques such as si
 
 An adversary’s outside-in perspective enables them to take advantage of your continually expanding web and mobile presence that operates outside of your firewall.
 
-Approaching and interacting with the web and mobile properties as a real user enables Microsoft’s crawling, scanning, and machine-learning technology to disarm adversaries’ evasion techniques by collecting user session data, detecting phishing, malware, rogue apps, unwanted content, and domain infringement at scale. This helps deliver actionable, event-based threat alerts and workflows in the form of [threat intelligence](overview-what-is-microsoft-defender-threat-intelligence-(defender-ti).md), [system tags](how-to-tags.md), [analyst insights](overview-analyst-insights.md), and [reputation scores](overview-reputation-scoring.md) associated with adversaries’ infrastructure.
+Approaching and interacting with the web and mobile properties as a real user enables Microsoft’s crawling, scanning, and machine-learning technology to disarm adversaries’ evasion techniques by collecting user session data, detecting phishing, malware, rogue apps, unwanted content, and domain infringement at scale. This helps deliver actionable, event-based threat alerts and workflows in the form of [threat intelligence](what-is-microsoft-defender-threat-intelligence-(defender-ti).md), [system tags](using-tags.md), [analyst insights](analyst-insights.md), and [reputation scores](reputation-scoring.md) associated with adversaries’ infrastructure.
 
-As more threat data becomes available, more tools, education, and effort are required for analysts to understand the data sets and their corresponding threats. Microsoft Defender Threat Intelligence (Defender TI) unifies these efforts by providing a single view into multiple data sources. 
+As more threat data becomes available, more tools, education, and effort are required for analysts to understand the data sets and their corresponding threats. Microsoft Defender Threat Intelligence (Defender TI) unifies these efforts by providing a single view into multiple data sources.
 
 ## Next steps
 
-For more information, see [Tutorial: Gathering threat intelligence and infrastructure chaining](tutorial-gathering-threat-intelligence-and-infrastructure-chaining.md).
+For more information, see [Tutorial: Gathering threat intelligence and infrastructure chaining](gathering-threat-intelligence-and-infrastructure-chaining.md).
