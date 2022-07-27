@@ -159,9 +159,9 @@ sections:
                  
       - question: How can I view my organization's Microsoft subscriptions and user licenses?
         answer: |
-          You can view your current subscriptions and licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). 
-          
-          See [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses).
+          You can view your current subscriptions and licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). Choose **Settings** > **Endpoints** > **Licenses**.
+
+          Also see [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses).
 
 
 additionalContent: |
