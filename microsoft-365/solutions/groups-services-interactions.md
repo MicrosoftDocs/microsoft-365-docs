@@ -609,7 +609,7 @@ Creating a community (formerly known as “group”) in Yammer creates a mailbox
 
 A Microsoft 365 group that is associated with Yammer cannot be used with a team in Microsoft Teams.
 
-A Yammer group cannot be used to be a PowerBI Pro Workspace.
+A Yammer group cannot be used with a PowerBI Pro Workspace.
 
 **Key features provided to Groups**
 
