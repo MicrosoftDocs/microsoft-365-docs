@@ -34,6 +34,10 @@ highlightedContent:
     - title: Learn modules for Microsoft 365 Defender
       itemType: learn
       url: /learn/m365/defender
+    # Card
+    - title: Learn modules for Azure security 
+      itemType: learn
+      url: /learn/browse/?products=azure&subjects=security
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -97,6 +101,15 @@ conceptualContent:
             - url: /azure/defender-for-cloud/defender-for-databases-introduction
               itemType: overview
               text: Microsoft Defender for open-source relational databases
+# Card
+        - title: Microsoft Defender for IoT 
+          links:
+          - url: /azure/defender-for-iot/organizations/overview
+            itemType: overview
+            text: Microsoft Defender for IoT for end-user organizations
+          - url: /azure/defender-for-iot/device-builders/overview
+            itemType: overview
+            text: Microsoft Defender for IoT for device builders
 # Card
         - title: Microsoft Defender Threat Intelligence
       # imageSrc should be square in ratio with no whitespace
