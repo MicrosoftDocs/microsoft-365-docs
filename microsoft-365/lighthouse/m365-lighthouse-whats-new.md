@@ -147,7 +147,7 @@ You can now view usage data for Microsoft 365 services from within Microsoft 365
 
 These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity. 
 
-For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 usage card](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
+For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
 ### Exchange Online Protection and Microsoft 365 Defender for Office 365 default baseline step
 
