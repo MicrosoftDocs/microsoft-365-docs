@@ -59,7 +59,7 @@ When you invite an associated billing tenant to use your billing account, you ca
 
 ## Add an associated billing tenant
 
-Before you begin, make sure you have either the tenant ID or the primary domain name for the tenant you want to invite. For more information, see [Find tenant ID, domain name, user object ID](https://docs.microsoft.com/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+Before you begin, make sure you have either the tenant ID or the primary domain name for the tenant you want to invite. For more information, see [Find a tenant ID or domain name](https://aka.ms/findtenantiddomain).
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 2. Select the name of the billing account you want to use as the primary billing tenant.
@@ -67,7 +67,7 @@ Before you begin, make sure you have either the tenant ID or the primary domain 
 4. In the **Add an** **associated billing tenant** pane, enter the tenant ID or domain name, then enter a friendly name for the tenant.
 5. In the **Access settings** section, select one or both options for **Provisioning** and **Billing management**.
 6. Read and select the box next to the user visibility statement.
-6  Select **Add tenant**.
+7. Select **Add tenant**.
 
 If the **Provisioning** access setting is turned on, a unique link is created for you to send to the global admin on the associated billing tenant. They must accept the request before you can move subscriptions to their tenant.
 
@@ -77,7 +77,7 @@ If the **Provisioning** access setting is turned on, a unique link is created fo
 2. Select the name of the billing account to assign roles.
 3. On the billing account details page, select the **Billing account roles** tab, then select **Assign roles.**
 4. In the **Assign role** pane, search for the associated billing tenant, select a role, then enter the email address of the users to whom you want to assign a role.
-5  Select **Assign.**
+5. Select **Assign.**
 
 The user receives an email with a link to review the role assignment request. After they accept the role, they have access to your billing account. For information about billing account roles, see [Understand your Microsoft billing accounts](../manage-billing-accounts.md).
 
