@@ -13,7 +13,7 @@ description: "Get a report of the Microsoft 365 help articles people in your org
 
 # Experience insights help article report
 
-As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help. To learn more about adoption and training for users in your organization, see Experience insights dashboard.
+As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help. To learn more about adoption and training for users in your organization, see [Microsoft 365 Experience insights dashboard](experience-insights-dashboard.md).
 
 :::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
@@ -21,7 +21,7 @@ As the admin of a Microsoft 365 organization, you get a report of the Microsoft 
 
 There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
 
-:::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
 If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 

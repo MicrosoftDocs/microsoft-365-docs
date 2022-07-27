@@ -27,7 +27,7 @@ If you’re a member of the reports reader role, once you sign into the admin ce
 
 :::image type="content" source="../../media/experience-insights-dashboard.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
-To learn more, see About admin roles and Assign admin roles.
+To learn more, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md) and [Assign admin roles in the Microsoft 365 admin center](../add-users/assign-admin-roles.md).
 
 ## Apps and services data
 
