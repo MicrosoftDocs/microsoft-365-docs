@@ -114,6 +114,7 @@ sections:
            
           - [Overview of Defender for Business](mdb-overview.md)
           - [Compare Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+          - [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
           
           Defender for Business extends security capabilities in Microsoft 365 Business Premium with endpoint protection for your company's devices.
 
@@ -121,13 +122,13 @@ sections:
         answer: |
           Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
           
-          To learn more about the differences, see [Compare security plans for small and medium-sized businesses](compare-mdb-m365-plans.md).
+          To learn more about the differences, see [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2).
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
           *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
-          A tenant with Defender for Business will default to the Defender for Business experience, tenant wide. 
+          Currently, a tenant with Defender for Business will default to the Defender for Business experience, tenant wide, even if you have Defender for Endpoint licenses in your tenant. 
 
           If you have a mix of Defender for Business and Defender for Endpoint Plan licenses, all users and onboarded devices will receive Defender for Business capabilities. Note that Defender for Business was designed especially for small and medium-sized businesses, and includes more security features and capabilities than Defender for Endpoint Plan 1 (standalone). For more details, see [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2).
 
