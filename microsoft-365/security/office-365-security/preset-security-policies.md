@@ -233,7 +233,7 @@ There are two cmdlets that you can use to view these policies:
 Get-ATPProtectionPolicyRule
 ```
 
-2. To View Hosted Connection Filter, Anti-Phish and Malware Filter you can use the below Cmdlet
+2. To view the Hosted Connection, Anti-Phish, and Malware filters, use the following cmdlet:
 
 ```
 Get-EOPProtectionPolicyRule
