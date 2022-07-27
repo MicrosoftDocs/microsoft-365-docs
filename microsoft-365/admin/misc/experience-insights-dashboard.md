@@ -80,7 +80,7 @@ For the first time, you can now see what articles your users are consuming on Su
 
 ## Additional resources
 
-:::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+:::image type="content" source="../../media/additional-resources.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
 ### View your organization's Productivity Score
 
