@@ -74,7 +74,7 @@ This section is for customers who have more than one Microsoft endpoint security
 
 ### What are mixed licensing scenarios?
 
-A mixed licensing scenario is a situation in which an organization is using a mix of Microsoft endpoint security subscriptions. The following table lists a few examples. 
+A mixed licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. The following table lists a few examples. 
 
 | Scenario | Description |
 |:---|:---|
@@ -87,13 +87,14 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 > - Microsoft 365 E3 includes [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md).
 > - Microsoft 365 E5 includes [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md).
 > - Microsoft 365 Business Premium includes [Defender for Business](../defender-business/mdb-overview.md).
+> - If you're a small or medium-sized business using Defender for Business, and you add Defender for Endpoint licenses to your tenant, your experience will continue to be the Defender for Business experience. See the [Defender for Business FAQ: What happens if I have a mix of Microsoft endpoint security subscriptions](../defender-business/mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?.
 
 ### Choose your subscription state
 
 Up until recently, in cases of mixed licenses, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. However, you now have several options available. You can:
 
 - (Recommended) Set your tenant to mixed mode, and use device tags to specify which devices will receive features and capabilities from each plan.
-- Choose one subscription state to use features and capabilities from one plan across all users and devices.
+- Choose to use the features and capabilities from one plan across all users and devices.
 
 ### Set your subscription state to mixed mode and specify device tags
 
