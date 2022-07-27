@@ -32,10 +32,10 @@ ms.technology: mde
 
 If you're new to Microsoft 365 Defender and Defender Experts for Hunting:  
 
-1. Upon getting your welcome email, click the **Log into Microsoft 365 Defender** button.
-2. Sign in if you already have a Microsoft account, if none, create one.
-3. The Microsoft 365 Defender quick tour will get you familiar with the security suite, where the capabilities are and how important they are. Click **Take a quick tour**.  
-4. Read the short descriptions about what the Microsoft Defender Experts service is and the capabilities it provides. Click **Next**. You'll see the welcome page:
+1. Upon getting your welcome email, select **Log into Microsoft 365 Defender**.
+2. Sign in if you already have a Microsoft account. If none, create one.
+3. The Microsoft 365 Defender quick tour will get you familiar with the security suite, where the capabilities are and how important they are. Select **Take a quick tour**.  
+4. Read the short descriptions about what the Microsoft Defender Experts service is and the capabilities it provides. Select **Next**. You'll see the welcome page:
 
 ![Start using Defender Experts for Hunting](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
 
@@ -63,11 +63,11 @@ You can receive Defender Experts Notifications from Defender Experts through the
 
 ### Create an email notification rule
 
-You can create rules to send email notifications for notification recipients. For full details, see [Configure alert notifications](../../security/defender/incidents-overview.md) to create, edit, delete, or troubleshoot email notifications.
+You can create rules to send email notifications for notification recipients. For full details, see [Configure alert notifications](../../security/defender/incidents-overview.md) to create, edit, delete, or troubleshoot email notifications.
 
-### View Defender Expert Notifications
+## View Defender Expert Notifications
 
-You'll start receiving Defender Experts Notifications from Defender Experts in your email after you have configured your system to receive email notification. 
+You'll start receiving Defender Experts Notifications from Defender Experts in your email after you've configured your system to receive email notification. 
 
 1. Select the link in the email to go to the corresponding alert context in the dashboard tagged with **Defender Experts**.
 2. From the **Alerts** page, select the same alert topic as the one you received in the email, to view further details.
@@ -78,20 +78,20 @@ You can also filter your incidents and alerts if you want to only see the Defend
 
 1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![filter](../../media/mte/defenderexperts/filter.png) icon.
 2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
-3. Click **Apply**.
+3. Select **Apply**.
 
 ### Collaborate with Experts on Demand
 
 > [!NOTE]
 > Experts on Demand is included in your Defender Experts for Hunting subscription with monthly allocations. However, it's not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
-Click the **Ask Defender Experts** button  directly inside the Microsoft 365 security portal to get  swift and accurate responses to all your threat hunting questions. Experts can provide insight to better understand the complex threats your organization may face. Experts on Demand can help to: 
+Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat hunting questions. Experts can provide insight to better understand the complex threats your organization may face. Experts on Demand can help to: 
 
 - Gather additional information on alerts and incidents, including root causes and scope
 - Gain clarity into suspicious devices, alerts, or incidents and take next steps if faced with an advanced attacker
 - Determine risks and available protections related to threat actors, campaigns, or emerging attacker techniques
 
-The option to '**Ask Defender Experts**' is available in several places throughout the portal:
+The option to **Ask Defender Experts** is available in several places throughout the portal:
 
 - Device page actions menu
 
@@ -107,8 +107,6 @@ The option to '**Ask Defender Experts**' is available in several places througho
 
 - Incidents page actions menu
 
-The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Device page action menu in the Microsoft 365 Defender portal
-
 ![Incidents page actions menu](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
 - Incidents inventory page
@@ -117,8 +115,8 @@ The Microsoft Defender Experts for Hunting - Experts on Demand menu option in th
 
 
 > [!NOTE]
-> Experts If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.
+> If you'd like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.
 
 ### What's next
 
-- [Defender experts report](defender-experts-report.md)
+- [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md)
