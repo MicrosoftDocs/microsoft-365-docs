@@ -45,7 +45,7 @@ ms.custom: api
    - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 
-4. The maximal execution time of a single request is 10 minutes.
+4. The maximal execution time of a single request is 200 seconds.
 
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
 
