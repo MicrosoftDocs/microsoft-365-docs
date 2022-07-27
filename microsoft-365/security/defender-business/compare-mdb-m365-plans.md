@@ -40,20 +40,14 @@ Defender for Business is also available as a standalone subscription, and is als
 
 | Microsoft Defender for Business (standalone) | Microsoft 365 Business Premium |
 |:---|:---|
-| <ul><li>[Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)<br/>(antivirus/antimalware protection on devices together with cloud protection)</li><li>[Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md)</li><li>[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md)<br/>(behavior-based detection and manual response actions)</li><li>[Automated investigation and response](../defender-endpoint/automated-investigations.md)</li><li>[Threat and vulnerability management](mdb-view-tvm-dashboard.md)</li><li>Cross-platform support for devices<br/>(Windows, Mac, iOS, and Android) <sup>[[b](#fnb)]</sup></li><li>...and more!</li></ul> | <ul><li>Microsoft 365 Business Standard (includes Office apps and services, and Microsoft Teams)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>Defender for Business</li><li>Microsoft Defender for Office 365 Plan 1</li><li>Microsoft Intune</li><li>Azure Active Directory Premium Plan 1</li><li>Azure Information Protection Premium Plan 1</li><li>Exchange Online Archiving</li><li>Windows Autopilot</li><li>Azure Virtual Desktop</li><li>Windows 10/11 Business</li><li>Shared computer activation</li></ul> |
+| <ul><li>[Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)<br/>(antivirus/antimalware protection on devices together with cloud protection)</li><li>[Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <sup>[[a](#fna)]</sup></li><li>[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md)<br/>(behavior-based detection and manual response actions)</li><li>[Automated investigation and response](../defender-endpoint/automated-investigations.md)</li><li>[Threat and vulnerability management](mdb-view-tvm-dashboard.md)</li><li>Cross-platform support for devices<br/>(Windows, Mac, iOS, and Android) <sup>[[b](#fnb)]</sup></li><li>Centralized management and reporting</li><li>APIs for integration with custom reporting</li></ul> | <ul><li>Microsoft 365 Business Standard (includes Office apps and services, and Microsoft Teams)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>Defender for Business</li><li>Microsoft Defender for Office 365 Plan 1</li><li>Microsoft Intune</li><li>Azure Active Directory Premium Plan 1</li><li>Azure Information Protection Premium Plan 1</li><li>Exchange Online Archiving</li><li>Windows Autopilot</li><li>Azure Virtual Desktop</li><li>Windows 10/11 Business</li><li>Shared computer activation</li></ul> |
+
+(<a id="fna">a</a>) Microsoft Intune is required to modify or customize attack surface reduction rules.
 
 (<a id="fnb">b</a>) Microsoft Intune is required to onboard iOS and Android devices. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 
-
-|Email protection|Yes <br/>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Yes <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
-|Antispam protection|Yes<br/>For devices|Yes <ul><li>For devices</li><li>For Microsoft 365 email content, such as messages and attachments</li></ul>|
-|Antimalware protection|Yes<br/>For devices|Yes<ul><li>For devices</li><li>For Microsoft 365 email content, such as messages and attachments</li></ul>|
-|[Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection for onboarded devices)|Yes |Yes |
-|[Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(ASR rules in Windows 10 or later and firewall protection)|Yes|Yes|
-|[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(behavior-based detection and manual response actions)|Yes|Yes|
-|[Automated investigation and response](../defender-endpoint/automated-investigations.md)|Yes|Yes|
-|[Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md)|Yes|Yes|
+tvm-dashboard-insights.md)|Yes|Yes|
 |Centralized management and reporting|Yes|Yes|
 |[APIs](../defender-endpoint/apis-intro.md) <br/>(for integration with custom apps or reporting solutions)|Yes|Yes|
 
