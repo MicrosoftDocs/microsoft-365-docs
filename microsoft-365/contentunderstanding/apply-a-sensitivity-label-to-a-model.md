@@ -17,7 +17,7 @@ description: Learn how to apply a sensitivity label to a model in SharePoint Syn
 
 # Apply a sensitivity label to a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp;| &ensp; &#10003; All trained models </sup>
+<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
 
 You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to **Classify and extract by text pattern** models in Microsoft SharePoint Syntex. 
 
