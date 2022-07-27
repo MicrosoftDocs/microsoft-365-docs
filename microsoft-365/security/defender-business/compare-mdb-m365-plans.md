@@ -46,14 +46,6 @@ Defender for Business is also available as a standalone subscription, and is als
 
 (<a id="fnb">b</a>) Microsoft Intune is required to onboard iOS and Android devices. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
-
-tvm-dashboard-insights.md)|Yes|Yes|
-|Centralized management and reporting|Yes|Yes|
-|[APIs](../defender-endpoint/apis-intro.md) <br/>(for integration with custom apps or reporting solutions)|Yes|Yes|
-
-| Feature/capability | [Microsoft Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business) |
-| Endpoint security | Yes 
-
 ## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2
 
 Defender for Business brings the enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses. The following table compares security features and capabilities in Defender for Business to the enterprise offerings, Microsoft Defender for Endpoint Plans 1 and 2.
