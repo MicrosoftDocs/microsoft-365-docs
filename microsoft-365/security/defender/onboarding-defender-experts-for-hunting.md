@@ -42,10 +42,10 @@ If you're new to Microsoft 365 Defender and Defender Experts for Hunting:
 ## Receive Defender Experts Notifications
 
 The Defender Experts Notifications service includes:
-- Threat monitoring and analysis, reducing dwell time and the risk to your business.
-- Hunter-trained artificial intelligence to discover and target both known attacks and emerging threats. 
-- Identification of the most pertinent risks, helping SOCs maximize their effectiveness. 
-- Help scoping compromises and providing as much context as can be quickly delivered to enable a swift SOC response. 
+- Threat monitoring and analysis, reducing dwell time and the risk to your business
+- Hunter-trained artificial intelligence to discover and target both known attacks and emerging threats 
+- Identification of the most pertinent risks, helping SOCs maximize their effectiveness 
+- Help in scoping compromises and as much context as can be quickly delivered to enable a swift SOC response 
 
 Refer to the following screenshot to see a sample Defender Experts Notification:
 
