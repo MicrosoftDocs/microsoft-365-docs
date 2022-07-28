@@ -56,7 +56,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 3. Click the **Activity** column to sort the results and look for **Consent to application**.
 
-4. Select an entry from the list to see the details of the activity. Check to see if IsAdminContent is set to True.
+4. Select an entry from the list to see the details of the activity. Check to see if IsAdminConsent is set to True.
 
 > [!NOTE]
 >
