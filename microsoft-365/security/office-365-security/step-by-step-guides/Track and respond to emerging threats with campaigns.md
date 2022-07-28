@@ -53,7 +53,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 In the scenario that a campaign has targeted your organization and you’d like to learn more about the impact: 
 1. Navigate to the campaign page: https://security.microsoft.com/campaigns 
 1. Select the campaign name that you would like to investigate. 
-1. Upon the flyout opening, select **“Download threat report.”**
+1. Upon the flyout opening, select **Download threat report**.
 1. Open the threat report and it will provide more information surrounding the campaign. The information in the report includes: 
 - **Executive summary:** High-level summary of the type of campaign and the number of users targeted in your organization. 
 - **Analysis:** Timeline chart of when the campaign started, the count of messages targetting your organization, and the destination and verdicts of the messages. 
