@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint subscription settings
+title: Manage your Microsoft Defender for Endpoint subscription settings
 description: Learn about your options for managing your Defender for Endpoint subscription settings. Choose Plan 1, Plan 2, or mixed mode.
 keywords: Defender for Endpoint, choose plan 1, choose plan 2, mixed mode, device tag, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150  
@@ -19,7 +19,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 ---
 
-# Microsoft Defender for Endpoint subscription settings
+# Manage Microsoft Defender for Endpoint subscription settings across devices
 
 Up until recently, in cases of [mixed licenses](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios), the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. However, if you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you now have several options available to manage your subscription settings across devices. You can:
 
