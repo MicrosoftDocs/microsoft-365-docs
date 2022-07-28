@@ -45,9 +45,9 @@ This article provides instructions for how to sign up for Microsoft 365 Lighthou
 
     To verify that Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing > Your Products** in the Microsoft 365 admin center.
 
-1. If you aren't redirected to the Lighthouse portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+5. If you aren't redirected to the Lighthouse portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-1. Select **Agree & Continue** to complete the partner agreement amendment.
+6. Select **Agree & Continue** to complete the partner agreement amendment.
 
     > [!NOTE]
     > After you complete sign-up, it can take up to 48 hours for customer data to appear in Lighthouse.
