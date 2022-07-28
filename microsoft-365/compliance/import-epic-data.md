@@ -95,7 +95,7 @@ The next step is to create an Epic connector in the compliance portal. After you
 
    A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your Epic EHR audit records data.
 
-    Review page with job ID and link to github for sample script
+    Review page with job ID and link to GitHub for sample script
 
     1. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
 
