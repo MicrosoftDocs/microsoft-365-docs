@@ -14,6 +14,7 @@
   - name: Infrastructure chaining
     href: infrastructure-chaining.md
 - name: Quickstart
+  items:
   - name: Learn how to access Microsoft Defender Threat Intelligence and make customizations in your portal
     href: learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md
 - name: How-to
