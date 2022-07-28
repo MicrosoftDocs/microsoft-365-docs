@@ -658,7 +658,7 @@ This can be done before the migration is complete, but you should not assign a l
       | Information Protection for Office 365 - Premium  |
       | Information Protection for Office 365 - Standard |
       | Insights by MyAnalytics                          |
-      | Microsoft 365 Advanced Auditing                  |
+      | Microsoft Purview Audit (Premium)                  |
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (Full)                     |
