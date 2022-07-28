@@ -9,23 +9,15 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.collection: 
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
-- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: "Learn how to use Windows Autopilot to set up new Windows 10 devices for your business so they're ready for employee use."
 ---
 

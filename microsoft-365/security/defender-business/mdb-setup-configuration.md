@@ -14,9 +14,9 @@ ms.reviewer: shlomiakirav
 ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
-- SMB
-- M365-security-compliance
-- m365-initiative-defender-business
+ - SMB
+ - M365-security-compliance
+ - m365solution-mdb-setup
 ---
 
 # Set up and configure Microsoft Defender for Business

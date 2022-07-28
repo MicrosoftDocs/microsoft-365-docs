@@ -13,7 +13,9 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 ms.date: 07/19/2022
 f1.keywords: NOCSH 
-ms.collection: M365-security-compliance
+ms.collection: 
+ - M365-security-compliance
+ - m365solution-mdb-setup
 ---
 
 # Set up email notifications

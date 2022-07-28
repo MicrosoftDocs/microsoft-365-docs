@@ -9,8 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
-- SMB
+ms.date: 07/19/2022
 search.appverid:
 - MET150
 - MOE150

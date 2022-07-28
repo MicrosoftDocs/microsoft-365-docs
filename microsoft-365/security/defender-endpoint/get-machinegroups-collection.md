@@ -4,7 +4,7 @@ description: Learn how to use the Get KB collection API to retrieve a collection
 keywords: apis, graph api, supported apis, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
