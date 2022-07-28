@@ -40,7 +40,7 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 > [!TIP]
-> If you are migrating records to Microsoft 365 and need to validate that files haven't been altered, see [Validating migrated records](records-management.md#validating-migrated-records).
+> If you're migrating records to Microsoft 365 and need to validate that they haven't been altered, see [Validating migrated records](records-management.md#validating-migrated-records).
 
 ## Subscription and licensing requirements
 
