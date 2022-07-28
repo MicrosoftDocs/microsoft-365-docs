@@ -78,7 +78,7 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 | *Mixed trial* | Try a premium level subscription for some users. Examples include: <ul><li>Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (start a trial subscription for some users)</li><li>Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (start a trial for some users)</li></ul> |
 | *Phased upgrades* | Upgrade user licenses in phases. Examples include:<ul><li>Moving groups of users from Defender for Endpoint Plan 1 to Plan 2</li><li>Moving groups of users from Microsoft 365 E3 to E5 </li></ul>  |
 
-If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you can now manage your subscription settings. This new capability enables you to:
+**If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you can now manage your subscription settings across devices**. This new capability enables you to:
 
 - Apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices; or
 - Use mixed mode, and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
@@ -87,8 +87,8 @@ See [Manage your Defender for Endpoint subscription settings across devices](def
 
 ## More resources
 
-- For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
-- For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
+- [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+- [How to contact support for Defender for Endpoint](contact-support.md).
 - [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
