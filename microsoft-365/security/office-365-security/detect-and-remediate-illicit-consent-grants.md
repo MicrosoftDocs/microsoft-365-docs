@@ -1,7 +1,7 @@
 ---
 title: Detect and Remediate Illicit Consent Grants
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -9,9 +9,9 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.collection:
-  - o365_security_incident_response
-  - M365-security-compliance
-
+- o365_security_incident_response
+- M365-security-compliance
+ms.date: 07/28/2022
 ms.localizationpriority: medium
 search.appverid:
   - MET150
