@@ -1,7 +1,7 @@
 ---
 title: Detect and Remediate Illicit Consent Grants
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -9,9 +9,9 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.collection:
-  - o365_security_incident_response
-  - M365-security-compliance
-
+- o365_security_incident_response
+- M365-security-compliance
+ms.date: 07/28/2022
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -56,7 +56,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 3. Click the **Activity** column to sort the results and look for **Consent to application**.
 
-4. Select an entry from the list to see the details of the activity. Check to see if IsAdminContent is set to True.
+4. Select an entry from the list to see the details of the activity. Check to see if IsAdminConsent is set to True.
 
 > [!NOTE]
 >
