@@ -83,7 +83,7 @@ If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you can now 
 - Choose to apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices
 - Choose mixed mode and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
 
-**[Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md)**.
+See [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md).
 
 ## More resources
 
