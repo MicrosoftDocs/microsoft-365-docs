@@ -80,7 +80,3 @@ When it comes to using Defender TI to investigate potential threats, we recommen
 Users can perform various types of searches within Defender TI. As such, it’s important to approach your intelligence gathering method in a way that presents you with broad results before diving into investigating specific indicators. For example, if you search an IP address against the Defender TI Home Page, what articles have an association with that IP address? What information do these articles present about the IP address that you wouldn’t otherwise find navigating directly to the IP address’ Data tab for dataset enrichment. For example, has this IP address been identified as a possible C2, who is the threat actor, what other related indicators of compromise is listed in the article, what TTPs is the threat actor using and who are they targeting?
 
 In addition to performing various types of searches with Defender TI, users can collaborate on investigations together. That said, users are encouraged to create projects, add indicators related to an investigation to a project and add collaborators to a project if more than one person is working on the same investigation. This helps reduce time spent analyzing the same IOCs and should result in a quicker workflow observed.
-
-## Next steps
-
-For more information, see [Tutorial: Working with projects to collaborate on investigations](working-with-projects-to-collaborate-on-investigations.md).
