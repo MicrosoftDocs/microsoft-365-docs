@@ -24,9 +24,9 @@ ms.technology: mdo
 Campaigns can be used to track and respond to emerging threats because campaigns allow you to investigate a coordinated email attack against your organization. As new threats target your organization, Microsoft Defender for Office 365 will automatically detect and correlate malicious messages. 
 
 ## What you will need
-- Microsoft Defender for Office 365 Plan 2 (Included in E5 Plans)
-- Sufficient permissions (Security Reader role)
-- 5-10 minutes to perform the steps below.
+- Microsoft Defender for Office 365 Plan 2 (included in E5 plans).
+- Sufficient permissions (Security Reader role).
+- Five to ten minutes to perform these steps.
 
 ## What is a campaign
 
