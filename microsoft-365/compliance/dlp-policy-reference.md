@@ -104,7 +104,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| workspaces | data-in-use | No|
+|Power BI| workspaces | data-in-use | No|
 
 If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
@@ -127,14 +127,14 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |Teams Chat and Channel messages | Yes| No| No|
 |Devices |Yes | Yes|  No|
 |Microsoft Defender for Cloud Apps | Yes| Yes| Yes|
-|On-Premises repositories| Yes| Yes| No|
-|PowerBI|Yes | Yes| No|
+|On-premises repositories| Yes| Yes| No|
+|Power BI|Yes | Yes| No|
 
 > [!NOTE]
-> DLP supports (in preview) the using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange email online, Sharepoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
+> DLP supports (in preview) using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, Sharepoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
 
 > [!NOTE]
-> DLP supports detecting sensitivity labels on emails and attachments See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
 
@@ -151,7 +151,7 @@ Rules are the business logic of DLP policies. They consist of:
 - [**Conditions**](#conditions) that when matched, trigger the policy
 - [**Exceptions**](#exceptions) to the conditions
 - [**Actions**](#actions) to take when the policy is triggered
-- [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they are doing something that triggers a policy and help educate them on how your org wants sensitive information treated
+- [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
 - [**Incident Reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
 - [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
@@ -162,7 +162,7 @@ Rules are the business logic of DLP policies. They consist of:
 
 #### Hosted service workloads
 
-For the hosted service workloads, like Exchange Online, SharePoint Online and OneDrive for Business, each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
+For the hosted service workloads, like Exchange Online, SharePoint Online and OneDrive for Business, each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.
   
 ![Rules in priority order](../media/dlp-rules-in-priority-order.png)
 
@@ -170,7 +170,7 @@ When content is evaluated against rules, the rules are processed in priority ord
   
 - Rule 1: only notifies users
 - Rule 2: notifies users, restricts access, and allows user overrides
-- *Rule 3: notifies users, restricts access, and does not allow user overrides*
+- *Rule 3: notifies users, restricts access, and doesn't allow user overrides*
 - Rule 4: restricts access
 
 Rules 1, 2, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the most restrictive rule is applied.
@@ -187,18 +187,18 @@ Priority for rules on endpoints is also assigned according to the order in which
 
 When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since it's the most restrictive.
 
-- Rule 1: only audits all activity 
+- Rule 1: only audits all activity
 - *Rule 2: blocks all activity*
 - Rule 3: blocks all activity with option for end user to override
 
 In the below example, Rule 1 takes precedence over the other matching rules since it's the most restrictive.
 
-- *Rule 1: blocks activity and does not allow user override*
+- *Rule 1: blocks activity and doesn't allow user override*
 - Rule 2: blocks activity and allows user overrides
 - Rule 3: only audits all activity
 - Rule 4: no enforcement
 
-All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
+All the other rules are evaluated but their actions aren't enforced. Audit logs will show the most restrictive rule applied on the file. If there's more than one rule that matches and they're equally restrictive, then policy and rule priority governs which rule would be applied on the file.
 
 ### Conditions
 
@@ -216,11 +216,11 @@ Conditions are inclusive and are where you define what you want the rule to look
 - [retention labels](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 - [Trainable Classifiers](classifier-learn-about.md) (in preview) 
 
-depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to. 
+depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to.
 
-The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick. 
+The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick.
 
-SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
 > SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
