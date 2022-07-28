@@ -202,7 +202,8 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1838|  CSP: Failed to Set Device Tagging Criticality Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  ?  | ? |
    |1839| CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |  ?  | ? |
    |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  ?  | ? |
-
+   |
+   
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## See also
