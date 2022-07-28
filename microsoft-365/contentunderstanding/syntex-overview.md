@@ -59,13 +59,13 @@ For more information, see [Create documents using content assembly in SharePoint
 
 The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
-Advanced metadata search lets you use the metadata associated with a document to help find the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 For more information, see [Search for metadata in document libraries in SharePoint Syntex](metadata-search.md).
 
 ## Content compliance
 
-Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Being able to correctly process data is key to ensuring that it is secure and accurate. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
 
 For more information, see [Apply a retention label to a model in SharePoint Syntex](apply-a-retention-label-to-a-model.md) and [Apply a sensitivity label to a model in Microsoft SharePoint Syntex](apply-a-sensitivity-label-to-a-model.md).
 
