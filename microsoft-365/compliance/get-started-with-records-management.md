@@ -39,6 +39,9 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
+> [!TIP]
+> If you are migrating records to Microsoft 365 and need to validate that files haven't been altered, see [Validating records after migrating to SharePoint or OneDrive](records-management.md#validating-records-after-migrating-to-sharepoint-or-onedrive).
+
 ## Subscription and licensing requirements
 
 A number of different subscriptions support records management and the licensing requirements for users depends on the features you use.
@@ -87,17 +90,3 @@ If you're using retention policies for baseline data governance, they typically 
 In comparison, retention labels have a UI presence in Microsoft 365 apps, so make sure you provide guidance for end users and your help desk before these labels are deployed to your production network. To help users apply retention labels in SharePoint and OneDrive, and information about unlocking records for editing, see [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
 However, the most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following page and downloads that you can use to help train your users: [End User Training for Retention Labels](https://microsoft.github.io/ComplianceCxE/enduser/retention/).
-
-## Validating records after migrating to SharePoint Online or OneDrive for Business
-
-Because of record immutability and to meet chain of custody requirements, your organization may want to validate that a file has not been altered after programmatic migration to SharePoint Online or OneDrive for Business.  Typical properties and methods commonly used for validation (such as file size or file hash) may not be sufficient as certain metatdata is updated by the SharePoint document parser at the time of upload.
-
-Instead you can use the value of the `vti_writevalidationtoken` property, which is a Base64-encoded XOR hash of the file from before it is modified by the parser, by following these steps:
-
-1. Generate the XOR hash of the original file using the QuickXorHash algorithm.  For more information, review the [QuickXorHash Algorithm code snippet](/onedrive/developer/code-snippets/quickxorhash).
-
-2. Base64 encode the XOR hash.  For more information, see the [Base64Encode method documentation](/windows/win32/seccrypto/utilities-base64encode).
-
-3. After migration, retrieve the value of the `vti_writevalidationtoken` property from the uploaded file.
-
-4. Compare the value generated in step 2 with the value retrieved in step 3. These two values should match.
