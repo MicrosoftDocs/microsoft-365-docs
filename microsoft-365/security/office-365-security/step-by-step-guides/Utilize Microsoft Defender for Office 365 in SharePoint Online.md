@@ -35,8 +35,8 @@ If licensed for Microsoft Defender for Office 365 **(free 90 day evaluation avai
 
 Learn more at the [Safe Attachments Detailed Documentation](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams)
 
-1.	**Login** to the security center’s safe attachments configuration page. https://security.microsoft.com/safeattachmentv2
-1.	Press **Global settings**.
+1.	Sign in to the [security center’s safe attachments configuration page](https://security.microsoft.com/safeattachmentv2).
+1.	Select **Global settings**.
 1.	Ensure **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** is set to **on**.
 1.	Navigate to the security center’s Safe links configuration page. https://security.microsoft.com/safelinksv2 
 1.	Press **Save**.
