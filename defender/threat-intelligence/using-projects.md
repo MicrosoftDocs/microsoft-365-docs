@@ -31,7 +31,7 @@ Users can also download artifacts within a project by selecting the download ico
 
 - When did this team member last edit the project?
 
-    ![My Pillow Magecart Breach](media/projectsDetailedProjectChromeScreenshot.png)
+    ![Projects Detailed Project Chrome Screenshot](media/projectsDetailedProjectChromeScreenshot.png)
 
 ## Prerequisites
 

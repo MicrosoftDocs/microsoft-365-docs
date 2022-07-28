@@ -12,7 +12,7 @@ ms.custom: template-how-to
 # Sorting, filtering, and downloading data
 The Microsoft Defender Threat Intelligence (Defender TI) platform enables analysts to access our vast collection of crawling data in an indexed and pivot table format.  These data sets can be very large, returning expansive amounts of historic and recent data. Thus, allowing analysts to appropriately sort and filter the data provides the ability easily to surface the connections of interest.
 
-![](media/dataTab.png)
+![Data Tab](media/dataTab.png)
 
 In this how-to article, you’ll learn how to sort and filter data for the following data sets:
 
@@ -63,7 +63,7 @@ Data can be sorted across each data set blade within the Data tab for each IP, d
 1. Search a domain, IP address, or host in the Defender TI Threat Intelligence search bar and navigate to the Data tab.
 2. Apply sorting preferences to the First Seen and Last Seen columns within the Resolutions Data blade.
 
-![](media/filtersResolutions.gif)
+![Filters Re solutions](media/filtersResolutions.gif)
 
 ## Filtering data
 
@@ -82,7 +82,7 @@ The following filters apply to resolution data:
 1. Search a domain, IP address, or host in the Defender TI Threat Intelligence search bar and navigate to the Data tab.
 2. Apply filters to each of the types of filter options noted above within the Resolutions Data blade.
 
-![](media/sortingResolutions.gif)
+![Sorting Re solutions](media/sortingResolutions.gif)
 
 ## Tracker filters
 
@@ -96,7 +96,7 @@ The following filters apply to tracker data:
 2. Navigate to the Trackers Data blade.
 3. Apply filters to each of the types of filter options noted above within the Trackers Data blade.
 
-![](media/filtersTrackers.gif)
+![Filters Trackers](media/filtersTrackers.gif)
 
 ## Component filters
 
@@ -110,7 +110,7 @@ The following filters apply to component data:
 2. Navigate to the Components Data blade.
 3. Apply filters to each of the types of filter options noted above within the Components Data blade.
 
-![](media/filtersComponents.gif)
+![Filters Components](media/filtersComponents.gif)
 
 ## Host pair filters
 
@@ -125,7 +125,7 @@ The following filters apply to host pair data:
 2. Navigate to the Host Pairs Data blade.
 3. Apply filters to each of the types of filter options noted above within the Host Pairs Data blade.
 
-![](media/filtersHostPairs.gif)
+![Filters Host Pairs](media/filtersHostPairs.gif)
 
 ## DNS & Reverse DNS filters
 
@@ -138,13 +138,13 @@ The following filters apply to DNS and Reverse DNS data:
 2. Navigate to the DNS and later, Reverse DNS Data blades.
 3. Apply filters to each of the types of filter options noted above within the DNS and Reverse DNS Data blades.
 
-![](media/filtersDNS.gif)
+![Filters DNS](media/filtersDNS.gif)
 
 ## Downloading data
 
 In Defender TI, there are various sections that a user can download data as a csv export.   Users need to look out for the download icon to export data as a csv.
 
-![](media/downloadIcon.png)
+![Download Icon](media/downloadIcon.png)
 
 Data can be downloaded within the following sections:
 

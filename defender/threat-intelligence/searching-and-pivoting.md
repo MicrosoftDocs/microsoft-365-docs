@@ -13,7 +13,7 @@ ms.custom: template-how-to
 
 Microsoft Defender Threat Intelligence (Defender TI) offers a robust and flexible search engine to streamline the investigation process. The platform is designed to allow users to pivot across a wide variety of indicators from different data sources, making it easier than ever to discover relationships between disparate infrastructure. This article will help users understand how to conduct a search and pivot across different data sets to discover relationships between different artifacts.
 
-![](media/searchHomePageChromeScreenshot.png)
+![Search HomePage Chrome Screenshot](media/searchHomePageChromeScreenshot.png)
 
 ## Prerequisites
 
@@ -34,113 +34,113 @@ Defender TI’s Threat Intelligence search is both simple and powerful, designed
 ### Search artifact types
 1. **IP address:** Search ‘195.161.141[.]65’ in the Threat Intelligence Search bar. This action results in an IP Address search.
 
-    ![](media/searchIpAddress.png)
+    ![Search Ip Address](media/searchIpAddress.png)
 
 2. **Domain:** Search `fabrikam.com` in the Threat Intelligence Search bar. This action results in a Domain search.
 
-    ![](media/searchDomain.png)
+    ![Search Domain](media/searchDomain.png)
 
 3. **Host:** Search `canary.fabrikam.com` in the Threat Intelligence Search bar. This action results in a Host search.
 
-    ![](media/searchHost.png)
+    ![Search Host](media/searchHost.png)
 
 4. **Keyword:** Search ‘apt29’ in the Threat Intelligence Search bar. This action results in a Keyword search. Keyword searches cover any type of keyword, which may include a term, email address, etc. Keyword searches result in associations with articles, projects, as well as data sets.
 
-    ![](media/searchKeyword.png)
+    ![Search Keyword](media/searchKeyword.png)
 
 5. **CVE-ID:** Search ‘CVE-2021-40444’ in the Threat Intelligence Search bar. This action results in a CVE-ID Keyword search.
 
 6. **Article:** Search ‘Commodity Skimming & Magecart Trends in First Quarter of 2022’ in the Threat Intelligence Search bar. This action results in an Article search.
 
-    ![](media/searchTiArticle.png)
+    ![Search Ti Article](media/searchTiArticle.png)
 
 7. **Tag:** Select ‘Tag’ from the Threat Intelligence Search drop-down and type in ‘magecart’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Tag search.
 
     > [!NOTE]
     > This does not return articles that share that tag value.
 
-![](media/searchTag.png)
+![Search Tag](media/searchTag.png)
 
 8. **Component:** Select ‘Component’ from the Threat Intelligence Search drop-down and type in ‘cobalt strike’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Component search.
 
-    ![](media/searchComponent.png)
+    ![Search Component](media/searchComponent.png)
 
 9. **Tracker:** Select ‘Trackers’ from the Threat Intelligence Search drop-down and type in ‘07d14d16d21d21d00042d41d00041d47e4e0ae17960b2a5b4fd6107fbb0926’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Tracker search. Note: In this example, this was a JarmHash Tracker type.
 
     > [!NOTE]
     > In this example, this was a JarmHash Tracker type.
 
-    ![](media/searchTrackers.png)
+    ![Search Trackers](media/searchTrackers.png)
 
 10. **WHOIS Email:** Select ‘WHOIS’ > ‘Email’ from the Threat Intelligence Search drop-down and type in domains@microsoft.com in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Email search.
 
-    ![](media/searchWhoisEmail.png)
+    ![Search Whois Email](media/searchWhoisEmail.png)
 
 11. **WHOIS Name:** Select ‘WHOIS’ > ‘Name’ from the Threat Intelligence Search drop-down and type in ‘MSN Hostmaster’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Name search.
 
-    ![](media/searchWhoisName.png)
+    ![Search Whois Name](media/searchWhoisName.png)
 
 12. **WHOIS Organization:** Select ‘WHOIS’ > ‘Organization’ from the Threat Intelligence Search drop-down and type in ‘Microsoft Corporation’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Organization search.
 
-    ![](media/searchWhoisOrganization.png)
+    ![Search Whois Organization](media/searchWhoisOrganization.png)
 
 13. **WHOIS Address:** Select ‘WHOIS’ > ‘Address’ from the Threat Intelligence Search drop-down and type in ‘One Microsoft Way’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Address search.
 
-    ![](media/searchWhoisAddress.png)
+    ![Search Whois Address](media/searchWhoisAddress.png)
 
 14. **WHOIS City:** Select ‘WHOIS’ > ‘City’ from the Threat Intelligence Search drop-down and type in ‘Redmond’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS City search.
 
-    ![](media/searchWhoisCity.png)
+    ![Search Whois City](media/searchWhoisCity.png)
 
 15. **WHOIS State:** Select ‘WHOIS’ > ‘State’ from the Threat Intelligence Search drop-down and type in ‘WA’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS State search.
 
-    ![](media/searchWhoisState.png)
+    ![Search Whois State](media/searchWhoisState.png)
 
 16. **WHOIS Postal Code:** Select ‘WHOIS’ > ‘Postal Code’ from the Threat Intelligence Search drop-down and type in ‘98052’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Postal Code search.
 
-    ![](media/searchWhoisPostalCode.png)
+    ![Search Whois Postal Code](media/searchWhoisPostalCode.png)
 
 17. **WHOIS Country:** Select ‘WHOIS’ > ‘Country’ from the Threat Intelligence Search drop-down and type in ‘US’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Country search.
 
-    ![](media/searchWhoisCountry.png)
+    ![Search Whois Country](media/searchWhoisCountry.png)
 
 18. **WHOIS Phone:** Select ‘WHOIS’ > ‘Phone’ from the Threat Intelligence Search drop-down and type in ‘+1.4258828080’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Phone search.
 
-    ![](media/searchWhoisPhone.png)
+    ![Search Whois Phone](media/searchWhoisPhone.png)
 
 19. **WHOIS Nameserver:** Select ‘WHOIS’ > ‘Nameserver’ from the Threat Intelligence Search drop-down and type in `ns1-03.azure-dns.com` in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Nameserver search.
 
-    ![](media/searchWhoisNameserver.png)
+    ![Search Whois Name server](media/searchWhoisNameserver.png)
 
 20. **Certificate SHA-1:** Select ‘Certificate’ > ‘SHA-1’ from the Threat Intelligence Search drop-down and type in ‘35cd04a03ef86664623581cbd56e45ed07729678’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Certificate SHA-1 search.
 
-    ![](media/searchCertificateSha1.png)
+    ![Search Certificate Sha1](media/searchCertificateSha1.png)
 
 21. **Certificate Serial Number:** Select ‘Certificate’ > ‘Serial Number’ from the Threat Intelligence Search drop-down and type in ‘1137354899731266880939192213383415094395905558’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Certificate Serial Number search.
 
-    ![](media/searchCertificateSerialNumber.png)
+    ![Search Certificate Serial Number](media/searchCertificateSerialNumber.png)
 
 22. **Certificate Issuer Common Name:** Select ‘Certificate’ > ‘Issuer Common Name’ from the Threat Intelligence Search drop-down and type in ‘Microsoft Azure TLS Issuing CA 05’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Certificate Issuer Common Name search.
 
-    ![](media/searchCertificateIssuerCommonName.png)
+    ![Search Certificate Issuer CommonName](media/searchCertificateIssuerCommonName.png)
 
 23. **Certificate Issuer Alternative Name:** Select ‘Certificate’ > ‘Issuer Alternative Name’ from the Threat Intelligence Search drop-down and type in a certificate issuer alternative name in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Certificate Issuer Alternative Name search.
 
 24. **Certificate Subject Common Name:** Select ‘Certificate’ > ‘Subject Common Name’ from the Threat Intelligence Search drop-down and type in `*.oneroute.microsoft.com` in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Certificate Subject Common Name search.
 
-    ![](media/searchCertificateSubjectCommonName.png)
+    ![Search Certificate Subject CommonName](media/searchCertificateSubjectCommonName.png)
 
 25. **Certificate Subject Alternative Name:** Select ‘Certificate’ > ‘Subject Alternative Name’ from the Threat Intelligence Search drop-down and type in `oneroute.microsoft.com` in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Certificate Subject Alternative Name search.
 
-    ![](media/searchCertificateSubjectAlternativeName.png)
+    ![Search Certificate Subject Alternative Name](media/searchCertificateSubjectAlternativeName.png)
 
 26. **Cookie Name:** Select ‘Cookie’ > ‘Name’ from the Threat Intelligence Search drop-down and type in ‘ARRAffinity’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Cookie Name search.
 
-    ![](media/searchCookieName.png)
+    ![Search Cookie Name](media/searchCookieName.png)
 
 27. **Cookie Domain:** Select ‘Cookie’ > ‘Domain’ from the Threat Intelligence Search drop-down and type in `portal.fabrikam.com` in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Cookie Domain search.
 
-    ![](media/searchCookieDomain.png)
+    ![Search Cookie Domain](media/searchCookieDomain.png)
 
 28. **Pivots:** For any of the searches performed in the steps above, there are artifacts with hyperlinks that you can pivot off to discover further enriched results associated with those indicators. Feel free to experiment with this on your own.
 
@@ -161,7 +161,7 @@ At the top of the page, the platform provides some basic information about the a
 - **OS:** the operating system associated with the artifact.
 - **Host:** the hosting provider for the artifact. Some hosting providers are more reputable than others, so this value can help indicate the validity of an artifact.
 
-![](media/searchIPKeyInsights.png)
+![Search IP Key Insights](media/searchIPKeyInsights.png)
 
 This section also shows any tags applied to the artifact or any projects that include it. Users can also add a tag or add the artifact to a project.
 
@@ -178,7 +178,7 @@ The platform provides a list of rules with a description and severity rating. In
 
 For more information, see [Reputation scoring](reputation-scoring.md).
 
-![](media/summaryTabReputation.png)
+![Summary Tab Reputation](media/summaryTabReputation.png)
 
 ### Analyst insights
 
@@ -186,7 +186,7 @@ The Analyst Insights section provides quick insights about the artifact that may
 
 For more information, see [Analyst insights](analyst-insights.md).
 
-![](media/summaryTabAnalystInsights.png)
+![Summary Tab Analyst Insights](media/summaryTabAnalystInsights.png)
 
 ### Articles
 
@@ -194,25 +194,25 @@ The Articles section displays any articles that may provide insight on how to be
 
 For more information, see [What is Microsoft Defender Threat Intelligence (Defender TI)?](what-is-microsoft-defender-threat-intelligence-defender-ti.md)
 
-![](media/summaryTabArticles.png)
+![Summary Tab Articles](media/summaryTabArticles.png)
 
 ### Services
 
 This section lists any detected services running on the IP address artifact. This is helpful when trying to understand the intended use of the entity. When investigating malicious infrastructure, this information can help determine the capabilities of an artifact, enabling users to proactively defend their organization based on this information
 
-![](media/summaryTabServices.png)
+![Summary Tab Services](media/summaryTabServices.png)
 
 ### Resolutions
 
 Resolutions are individual DNS records captured using passive sensors distributed throughout the world. These values reveal a history of how a Domain or IP address changes infrastructure over time. They can be used to discover additional infrastructure and measure risk based on levels of connection. For each resolution, we provide “first seen” and “last seen” timestamps to showcase the lifecycle of the resolutions.
 
-![](media/summaryTabResolutions.png)
+![Summary Tab Re solutions](media/summaryTabResolutions.png)
 
 ### Certificates
 
 Beyond securing your data, SSL Certificates are a fantastic way for users to connect disparate network infrastructure. SSL certificates can make connections that passive DNS or WHOIS data may miss. This means more ways of correlating potential malicious infrastructure and identifying potential operational security failures of actors. For each SSL certificate, we provide the certificate name, expiration date, subject common name, and subject organization name.
 
-![](media/summaryTabCertificates.png)
+![Summary Tab Certificates](media/summaryTabCertificates.png)
 
 ### Projects
 
@@ -222,13 +222,13 @@ When a user searches an IP address, domain, or host, if that indicator is listed
 
 For more information, see [Using projects](using-projects.md).
 
-![](media/summaryTabProjects.png)
+![Summary Tab Projects](media/summaryTabProjects.png)
 
 ### Hashes
 
 Microsoft partners with several commercial and open-source repositories of malware data to pair it with queried infrastructure to populate the Hash data set. Malware repositories today include Proofpoint’s Emerging Threats, Hybrid Analysis, and VirusTotal. This data helps users understand actor capabilities, intent, and motives of an attacker while also aiding in connecting infrastructure together. Each result contains a unique hash. Our hash data includes the detection source, sample, and collection date.
 
-![](media/summaryTabHashes.png)
+![Summary Tab Hashes](media/summaryTabHashes.png)
 
 ## Data tab
 
@@ -236,7 +236,7 @@ Microsoft partners with several commercial and open-source repositories of malwa
 
 The Data tab helps users deep-dive into the tangible connections observed by the Defender TI platform. While the Summary tab surfaces key findings to provide immediate context about an artifact, the Data tab enables analysts to study these connections much more granularly. Users can click on any returned value to pivot across any related metadata.
 
-![](media/dataSetsEdgeScreenshot.png)
+![Data Sets Edge Screenshot](media/dataSetsEdgeScreenshot.png)
 
 ### Data types
 
@@ -273,7 +273,7 @@ Our PDNS resolution data includes the following:
 - **Source:** the source that enabled the detection of the relationship.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabResolutions.png)
+![Data Tab Re solutions](media/dataTabResolutions.png)
 
 ### WHOIS
 
@@ -303,7 +303,7 @@ Our WHOIS data includes the following:
 - **Phone:** any phone numbers listed in the record, and the type of contact it is associated with.
 - **Name Servers:** any name servers associated with the registered entity.
 
-![](media/dataTabWHOIS.png)
+![Data Tab WHOIS](media/dataTabWHOIS.png)
 
 ### Certificates
 
@@ -320,7 +320,7 @@ Our certificate data includes the following:
 - **Last Seen:** a timestamp that displays the date that we last observed this certificate on an artifact.
 - **Infrastructure:** any related infrastructure associated with the certificate.
 
-![](media/dataTabCertificatesList.png)
+![Data Tab Certificates List](media/dataTabCertificatesList.png)
 
 When a user clicks on a Sha1 hash, the user will be able to see details about the certificate in the right-hand pane, which includes:
 
@@ -346,7 +346,7 @@ When a user clicks on a Sha1 hash, the user will be able to see details about th
 - **Issuer Country:** The country where the issuer organization is located.
 - **Related Infrastructure:** any related infrastructure associated with the certificate.
 
-![](media/dataTabCertificateDetails.png)
+![Data Tab Certificate Details](media/dataTabCertificateDetails.png)
 
 ### Subdomains
 
@@ -357,7 +357,7 @@ Our subdomain data includes the following:
 - **Hostname:** the subdomain associated with the domain that was searched.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabSubdomains.png)
+![Data Tab Sub domains](media/dataTabSubdomains.png)
 
 ### Trackers
 
@@ -374,7 +374,7 @@ Our tracker data includes the following:
 - **Value:** the identification value for the tracker.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabTrackers.png)
+![Data Tab Trackers](media/dataTabTrackers.png)
 
 ### Components
 
@@ -391,7 +391,7 @@ Our component data includes the following:
 - **Name + Version:** the component name and the version running on the artifact (e.g. Microsoft IIS (v8.5).
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabComponents.png)
+![Data Tab Components](media/dataTabComponents.png)
 
 ### Host pairs
 
@@ -406,7 +406,7 @@ Our host pair data includes the following:
 - **Cause:** the type of connection between the parent and child hostname. Potential causes include redirects, img.src, css.import or script.src connections.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabHostPairs.png)
+![Data Tab Host Pairs](media/dataTabHostPairs.png)
 
 ### Hashes
 
@@ -418,7 +418,7 @@ Our hash data includes the following:
 2. **Sample:** the unique identification code for the detected hash.
 3. **Collection Date:** the day that the hash sample was collected by the designated source.
 
-![](media/dataTabHashes.png)
+![Data Tab Hashes](media/dataTabHashes.png)
 
 ### Cookies
 
@@ -433,7 +433,7 @@ Our cookie data includes the following:
 - **Domain:** the domain associated with the cookie.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabCookies.png)
+![Data Tab Cookies](media/dataTabCookies.png)
 
 ### Services
 Service names and port numbers are used to distinguish between different services that run over transport protocols such as TCP, UDP, DCCP, and SCTP. Port numbers can suggest what type of application is running on a particular port. But applications or services can be changed to use a different port to obfuscate or hide the service or application on an IP address. Knowing the port and header/banner information can identify the true application/service and the combination of ports being used. Defender TI surfaces 14 days of history within the Services tab, displaying the last banner response associated with a port observed.
@@ -452,7 +452,7 @@ Our Services data includes the following:
    - Closed
 - Banner response
 
-![](media/dataTabServices.png)
+![Data Tab Services](media/dataTabServices.png)
 
 ### DNS
 
@@ -466,7 +466,7 @@ Our DNS data includes the following:
 - **Type:** the type of infrastructure associated with the record. Potential options include Mail Servers (MX), text files (TXT), name servers (NS), CNAMES, and Start of Authority (SOA) records.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabDNS.png)
+![Data Tab DNS](media/dataTabDNS.png)
 
 ### Reverse DNS
 
@@ -480,13 +480,13 @@ Our reverse DNS data includes the following:
 - **Type:** the type of infrastructure associated with the record. Potential options include Mail Servers (MX), text files (TXT), name servers (NS), CNAMES, and Start of Authority (SOA) records.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabReverseDNS.png)
+![Data Tab Reverse DNS](media/dataTabReverseDNS.png)
 
 ### Intelligence
 
 The intelligence section highlights any curated insights in the Defender TI platform, whether derived from our Research Team via Articles or your own team via Projects. The Intelligence section helps users understand key additional context behind a queried artifact; analysts can learn from the investigation efforts of the larger security community to jumpstart their own.
 
-![](media/dataTabIntelligence.png)
+![Data Tab Intelligence](media/dataTabIntelligence.png)
 
 ### Articles
 
@@ -494,7 +494,7 @@ The Articles section displays any articles that may provide insight on how to be
 
 For more information, see [What is Microsoft Defender Threat Intelligence (Defender TI)?](hat-is-microsoft-defender-threat-intelligence-defender-ti.md)
 
-![](media/dataTabIntelligenceArticles.png)
+![Data Tab Intelligence Articles](media/dataTabIntelligenceArticles.png)
 
 ### Projects
 
@@ -508,7 +508,7 @@ The Defender TI platform allows users to develop multiple project types for orga
 
 For more information, see [Using projects](using-projects.md).
 
-![](media/dataTabIntelligenceProjects.png)
+![Data Tab Intelligence Projects](media/dataTabIntelligenceProjects.png)
 
 ## Next steps
 

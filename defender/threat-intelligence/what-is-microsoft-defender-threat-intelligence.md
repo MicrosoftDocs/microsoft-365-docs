@@ -78,7 +78,7 @@ Vulnerability Articles also include a Defender TI Priority Score and severity in
 
 Defender TI provides proprietary reputation scores for any Host, Domain, or IP Address. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities, such as First and Last Seen timestamps, ASN, country, associated infrastructure, and a list of rules that impact the reputation score when applicable.
 
-![Place holder](media/reputationSummaryCard.png)
+![Reputation Summary Card](media/reputationSummaryCard.png)
 
 IP reputation data is important to understanding the trustworthiness of your own attack surface and is also useful when assessing unknown hosts, domains or IP addresses that appear in investigations. These scores will uncover any prior malicious or suspicious activity that impacted the entity, or other known indicators of compromise that should be considered.
 
@@ -92,7 +92,7 @@ Insights are meant to be small facts or observations about a domain or IP addres
 
 For more information, see [Analyst insights](analyst-insights.md).
 
-![Place holder](media/summaryTabAnalystInsights.png)
+![Summary Tab Analyst Insights](media/summaryTabAnalystInsights.png)
 
 ## Data sets
 Microsoft centralizes numerous data sets into a single platform, Defender TI, making it easier for Microsoft’s community and customers to conduct infrastructure analysis. Microsoft’s primary focus is to provide as much data as possible about Internet infrastructure to support a variety of security use cases.
@@ -106,7 +106,7 @@ For more information, see:
 - [Sorting, filtering, and downloading data](sorting-filtering-and-downloading-data.md)
 - [Data sets](data-sets.md)
 
-![tiOverviewDataSets](media/tiOverviewDataSets.png)
+![ti Overview Data Sets](media/tiOverviewDataSets.png)
 
 ## Tags
 
@@ -116,7 +116,7 @@ The Defender TI platform offers two types of tags: system tags and custom tags.
 
 For more information, see [Using tags](using-tags.md).
 
-![Place holder](media/tagsCustom.png)
+![Tags Custom](media/tagsCustom.png)
 
 ## Projects
 

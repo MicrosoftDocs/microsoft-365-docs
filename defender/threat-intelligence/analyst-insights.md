@@ -13,7 +13,7 @@ ms.custom: template-overview
 
 In Microsoft Defender Threat Intelligence (Defender TI), the Analyst Insights section provides quick insights about the artifact that may help determine the next step in an investigation. This section will list any insights that apply to the artifact, as well as those that do not apply for additional visibility. In the below example, we can quickly determine that the IP Address is routable, hosts a web server, and had an open port within the past five days. Furthermore, the system displays rules that were not triggered, which can be equally helpful when kickstarting an investigation.
 
-![](media/analystInsightsEdgeScreenshot.png)
+![Analyst Insights Edge Screenshot](media/analystInsightsEdgeScreenshot.png)
 
 ## Analyst insight types and questions they can address
 
