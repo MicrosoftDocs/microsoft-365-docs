@@ -21,7 +21,7 @@ ms.technology: mdo
 
 # Track and respond to emerging threats with campaigns
 
-Campaigns can be used to track and respond to emerging threats because Campaigns allow you to investigate a coordinated email attack against your organization. As new threats target your organization, Microsoft Defender for Office 365 will automatically detect and correlate malicious messages. 
+Campaigns can be used to track and respond to emerging threats because campaigns allow you to investigate a coordinated email attack against your organization. As new threats target your organization, Microsoft Defender for Office 365 will automatically detect and correlate malicious messages. 
 
 ## What you will need
 - Microsoft Defender for Office 365 Plan 2 (Included in E5 Plans)
