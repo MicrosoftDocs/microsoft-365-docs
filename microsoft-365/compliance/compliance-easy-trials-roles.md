@@ -13,12 +13,12 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn which user roles are required in order to sign up for a trial of Microsoft 365 compliance and security products."
+description: "Learn which user roles are required in order to sign up for a trial of Microsoft 365 Purview, Priva, and security products."
 ---
 
 # User roles for starting Microsoft 365 trials
 
-Certain user roles are required in order to sign up for a Microsoft 365 trial. This article explains the necessary roles.
+This article outlines the user roles required in order to enroll your organization in a Microsoft 365 trial.
 
 ## Who can start a trial
 
@@ -29,9 +29,9 @@ A user with one of the roles listed below can start any Microsoft 365 trial.
 | Global administrator | Global administrator   | Purview compliance portal > Permissions > Azure AD roles |
 | Billing Admin | Billing Administrator | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 
-## Additional roles for starting specific trials
+## Roles for starting specific trials
 
-Each trial allows users with additional roles to start a trial. View each trial's roles below.
+Each trial allows users with other roles to start a trial. Refer to the tables below for each group of trials.
 
 #### Purview trials
 
@@ -51,18 +51,18 @@ Priva trials include the **Privacy Risk Management** trial and the **Subject Rig
 | Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 | Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 
-### Security trials
+#### Security trials
 
 Security trials include the **Defender Vulnerability Management** trial.
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
-| TBD (there is no Security operations role) | Security Operator  | Microsoft 365 Defender portal > Permissions > Email & collaboration roles  |
-| Thread and vulnerability management (I dont see this anywhere) | TBD | Microsoft 365 Defender portal > Permissions > Email & collaboration roles |
+| TBD  | Security Operator  | Microsoft 365 Defender portal > Permissions > Email & collaboration roles  |
+| TBD/Threat and vulnerability management | TBD | Microsoft 365 Defender portal > Permissions > Email & collaboration roles |
 
 ## How to assign roles
 
-For more information about about roles and permissions, including guidance on how to assign users to roles, refer to the following articles:
+For more information about roles and permissions, including guidance on how to assign users to roles, see:
 
 - For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
 - For Microsoft Purview and Priva: [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
