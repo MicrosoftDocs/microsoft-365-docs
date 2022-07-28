@@ -20,13 +20,6 @@ description: "Learn which user roles are required in order to sign up for a tria
 
 Certain user roles are required in order to sign up for a Microsoft 365 trial. This article explains the necessary roles.
 
-For basic information about roles and permissions, including guidance on how to assign users to roles, refer to the following articles:
-
-- For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
-- For Microsoft Purview and Priva: [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-- For Microsoft Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
-- [Prerequisites & permissions for Microsoft Defender Vulnerability Management](../security/defender-endpoint/user-roles.md)
-
 ## Who can start a trial
 
 A user with one of the roles listed below can start any Microsoft 365 trial.
@@ -70,3 +63,12 @@ Security trials include the Defender Vulnerability Management trial.
 | :------------- | :-------------: | :------------: |
 | TBD (there is no Security operations role) | Security Operator  | Microsoft 365 Defender portal > Permissions > Email & collaboration roles  |
 | Thread and vulnerability management (I dont see this anywhere) | TBD | Microsoft 365 Defender portal > Permissions > Email & collaboration roles |
+
+## How to assign roles
+
+For more information about about roles and permissions, including guidance on how to assign users to roles, refer to the following articles:
+
+- For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
+- For Microsoft Purview and Priva: [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
+- For Microsoft Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
+- [Prerequisites & permissions for Microsoft Defender Vulnerability Management](../security/defender-vulnerability-management/tvm-prerequisites.md)
