@@ -74,8 +74,6 @@ You should have one of the following domains in the response:
     "Anonymous:CalendarSharingFreeBusyReviewer": Share free/busy hours, subject, location, and the body of the message or calendar item.
     
     "Anonymous:ContactsSharing": Share contacts only.
-    
-   You should have one of the above domains in the response.
 
    To enable anonymous sharing, use the following command or alter the **Add** section with the domain that you would like to add.
 
