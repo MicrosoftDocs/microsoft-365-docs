@@ -74,4 +74,4 @@ In the scenario that a campaign has targeted your organization and you’d like 
 
 ## Next Steps
 
-Read the detailed documentation on campaigns to learn more [Campaign Views in Microsoft Defender for Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/campaigns)
+To learn more, read, [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
