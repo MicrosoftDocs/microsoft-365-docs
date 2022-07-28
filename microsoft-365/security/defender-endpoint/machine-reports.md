@@ -283,7 +283,6 @@ For information about Manage Microsoft Defender Antivirus update versions, see: 
 ### Related articles
 
 [Threat protection report](threat-protection-reports.md)
-[Device Health API](device-health-api.md)
 
 ## End of section - Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint
 

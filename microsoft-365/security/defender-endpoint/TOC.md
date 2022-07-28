@@ -499,9 +499,6 @@
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
 
-###### [Device Health]()
-####### [Device Health](device-health-api.md)
-
 ###### [Domain]()
 ####### [Get domain related alerts](get-domain-related-alerts.md)
 ####### [Get domain related machines](get-domain-related-machines.md)
