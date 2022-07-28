@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: article
 ms.collection:
