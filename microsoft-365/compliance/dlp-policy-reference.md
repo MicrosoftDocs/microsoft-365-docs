@@ -131,6 +131,9 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |PowerBI|Yes | Yes| No|
 
 > [!NOTE]
+> DLP supports (in preview) the using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange email online, Sharepoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
+
+> [!NOTE]
 > DLP supports detecting sensitivity labels on emails and attachments See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
@@ -211,6 +214,7 @@ Conditions are inclusive and are where you define what you want the rule to look
 - [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [sensitivity labels](sensitivity-labels.md)
 - [retention labels](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+- [Trainable Classifiers](classifier-learn-about.md) (in preview) 
 
 depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to. 
 
@@ -303,6 +307,9 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - Content contains
+- (preview) The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
+- File extension is
+- File type is
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### Conditions Microsoft Defender for Cloud Apps supports
@@ -403,9 +410,11 @@ The actions that are available in a rule are dependent on the locations that hav
 
 #### Devices actions
 
+<!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- (preview) Audit or restricted activities when users acceses sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
 - Audit or restrict activities on Windows devices
 
-To use these settings, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
+To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
 
 The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 

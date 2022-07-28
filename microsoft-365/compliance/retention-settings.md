@@ -1,5 +1,5 @@
 ---
-title: "Configure retention settings to automatically retain or delete content"
+title: "Configure Microsoft 365 retention settings to automatically retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand the settings you can configure in a retention policy or retention label policy to keep what you want and get rid of what you don't want."
+description: "Understand the settings you can configure for Microsoft 365 retention policies and retention labels to keep or delete your organization's data."
 ---
 
 # Common settings for retention policies and retention label policies
@@ -402,7 +402,7 @@ Before you configure retention, first familiarize yourself with capacity and sto
 #### Relabeling at the end of the retention period
 
 > [!NOTE]
-> This option is currently rolling out in preview and is subject to change.
+> This option is in preview and subject to change.
 
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically change the retention settings for the item.
 

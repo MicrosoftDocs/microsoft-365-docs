@@ -39,14 +39,14 @@ The **Microsoft browser usage** report can be viewed for trends over the last 7 
 
 The **Daily active users** chart shows you the daily user count for Microsoft Edge when used to access to Microsoft 365 services.
 
-The **Active Users** chart shows you the total number of users using Microsoft Edge when used to access to Microsoft 365 services over the selected time period.
+The **Active Users** chart shows you the total number of users accessing Microsoft 365 services while using Microsoft Edge over the selected time period.
 
 The table shows you a breakdown of data at the per-user level. You can add or remove columns from the table.
 
 |Item|Description|
 |:-----|:-----|
 |**Username** | The email address of the user who connected to Microsoft 365 services using Microsoft Edge.|
-| **Used Microsoft Edge**| Displays tick mark if the user used Microsoft Edge to connect to Microsoft 365 services.|
+| **Used Microsoft Edge**| Displays a tick mark if the Microsoft 365 services user connected with Microsoft Edge.|
 
 Select the **Choose columns** icon to add or remove columns from the report.
 

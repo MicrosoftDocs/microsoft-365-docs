@@ -9,10 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection: 
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
+ms.date: 07/19/2022
 search.appverid:
 - BCS160
 - MET150
