@@ -26,9 +26,9 @@ Microsoft SharePoint Online is a widely used collaboration and file storage tool
 ## What you'll need
 
 - Microsoft Defender for Office 365 Plan 1
-- Sufficient permissions (SharePoint administrator / security administrator)
-- Microsoft SharePoint Online (part of M365)
-- 5-10 minutes to perform the steps below.
+- Sufficient permissions (SharePoint administrator/security administrator).
+- Microsoft SharePoint Online (part of Microsoft 365).
+- Five to ten minutes to perform these steps.
 
 ## Turn on Microsoft Defender for Office 365 in SharePoint
 If licensed for Microsoft Defender for Office 365 **(free 90 day evaluation available at aka.ms/trymdo)** you can ensure seamless protection from zero day malware and time of click protection within Microsoft Teams.
