@@ -70,14 +70,6 @@ Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalo
 
 ## Mixed licensing scenarios
 
-This section is for customers who have more than one Microsoft endpoint security solution. It includes:
-
-- [An overview of mixed licensing scenarios](#what-are-mixed-licensing-scenarios)
-- [How to choose your subscription state](#choose-your-subscription-state) and [use device tagging for mixed licenses](#set-your-tenant-to-mixed-mode-and-specify-device-tags)
-- [More resources](#more-resources)
-
-### What are mixed licensing scenarios?
-
 A mixed licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. Some examples are described in the following table: 
 
 | Scenario | Description |
@@ -85,6 +77,13 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 | *Mixed tenant* | Use different sets of capabilities for groups of users and their devices Examples:<ul><li>Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2</li><li>Microsoft 365 E3 and Microsoft 365 E5</li></ul>  |
 | *Mixed trial* | Try a premium level subscription for some users. Examples: <ul><li>Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (start a trial subscription for some users)</li><li>Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (start a trial for some users)</li></ul> |
 | *Phased upgrades* | Upgrade user licenses in phases. Examples:<ul><li>Moving groups of users from Defender for Endpoint Plan 1 to Plan 2</li><li>Moving groups of users from Microsoft 365 E3 to E5 </li></ul>  |
+
+If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you can now manage your subscription settings. This new capability enables you to:
+
+- Choose to apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices
+- Choose mixed mode and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
+
+See [Manage your Defender for Endpoint subscription settings](defender-endpoint-subscription-settings.md).
 
 > [!NOTE]
 > Defender for Endpoint Plan 1 and Plan 2, and Defender for Business are each available as a standalone subscription. They're also available as part of a larger subscription, as follows:

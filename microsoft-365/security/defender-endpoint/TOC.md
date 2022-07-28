@@ -58,18 +58,12 @@
 #### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 
-
-
 ### [Onboarding Windows Server](onboard-windows-server.md)
 #### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
 #### [Onboard Windows Server using Configuration Manager](configure-endpoints-sccm.md)
 #### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
 #### [Onboard Windows Server using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-
-
-
-
 
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
@@ -227,6 +221,8 @@
 ##### [Monitor and increase device onboarding](configure-machines-onboarding.md)
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
+
+### [Manage Defender for Endpoint subscriptions across devices](defender-endpoint-subscription-settings.md)
 
 ## [Detect threats and protect endpoints]()
 ### [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
