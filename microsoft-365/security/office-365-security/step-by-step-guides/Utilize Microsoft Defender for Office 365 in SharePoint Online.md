@@ -43,7 +43,7 @@ Learn more at the [Safe Attachments Detailed Documentation](https://docs.microso
 
 ## Disallow infected file downloads in SharePoint
 
-By default, users can't open, move, copy, or share* malicious files that are detected by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams. Download is still available and should be disabled. 
+By default, users can't open, move, copy, or share malicious files that are detected by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams. However, the Download option is still available and should be disabled. 
 
 Learn more at the [Detailed Documentation](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)
 
