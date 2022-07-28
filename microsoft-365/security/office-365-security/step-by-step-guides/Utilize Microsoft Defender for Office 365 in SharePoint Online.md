@@ -21,7 +21,7 @@ ms.technology: mdo
 
 # Utilize Microsoft Defender for Office 365 in SharePoint Online
 
-Microsoft SharePoint Online is a widely used collaboration & file storage tool. Below are a set of steps you can perform to reduce the attack surface area in SharePoint Online and help keep your organization secure. – it’s important to note there is a balance to strike between security and productivity, and not all these steps may be relevant for your organizational risk profile.
+Microsoft SharePoint Online is a widely used collaboration and file storage tool. The following are a set of steps you can perform to reduce the attack surface area in SharePoint Online and help keep your organization secure. However, it’s important to note there is a balance to strike between security and productivity, and not all these steps may be relevant for your organizational risk profile.
 
 ## What you'll need
 
