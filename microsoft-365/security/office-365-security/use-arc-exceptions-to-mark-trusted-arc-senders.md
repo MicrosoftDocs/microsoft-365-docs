@@ -101,9 +101,9 @@ header.from=contoso.com;compauth=pass reason=130
 
 ## PowerShell steps to add or remove a trusted ARC sealer
 
-**Admins can also set up ARC configurations with Exchange Online Powershell.**
+**Admins can also set up ARC configurations with Exchange Online PowerShell.**
 
-1. Connect to Exchange online powershell.
+1. Connect to Exchange Online PowerShell.
 2. Connect-ExchangeOnline.
 3. To add or update a domain into a trusted ARC sealer:
 </br>
