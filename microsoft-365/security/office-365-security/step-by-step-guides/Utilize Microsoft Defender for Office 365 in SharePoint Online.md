@@ -52,4 +52,4 @@ Learn more at the [Detailed Documentation](https://docs.microsoft.com/en-us/micr
 
 
 ### Further reading
-Implement the recommended Zero Trust identity and device access policies to protect SharePoint and OneDrive for Business. [Recommended secure document policies](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/sharepoint-file-access-policies)
+[Policy recommendations for securing SharePoint sites and files](/microsoft-365/security/office-365-security/sharepoint-file-access-policies)
