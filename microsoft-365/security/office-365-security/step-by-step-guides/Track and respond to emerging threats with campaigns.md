@@ -32,7 +32,7 @@ Campaigns can be used to track and respond to emerging threats because campaigns
 
 A campaign is a coordinated email attack against one or many organizations. Email attacks that steal credentials and company data are a large and lucrative industry. As technologies to stop attacks grow and multiply, attackers modify their methods to continue their success.
 
-Microsoft leverages vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
+Microsoft leverages vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns. We analyze and classify the attack information according to several factors, for example:
 
 - Attack source: The source IP addresses and sender email domains.
 -	Message properties: The content, style, and tone of the messages.
