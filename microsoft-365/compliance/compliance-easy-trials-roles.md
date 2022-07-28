@@ -53,7 +53,7 @@ Priva trials include the **Privacy Risk Management** trial and the **Subject Rig
 
 #### Security trials
 
-Security trials include the **Defender Vulnerability Management** trial.
+Security trials include the **Defender Vulnerability Management** trial and the **Defender Vulnerability Management public preview add-on** trial.
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
