@@ -75,7 +75,7 @@ For an existing document library:
 
 2. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select a label from the drop-down box. For example:
     
-    ![Configuring a default sensitivity label for a SharePoint library.](../media/default-sensitivity-label-spo.png)
+    ![Screenshot that shows configuring a default sensitivity label for a SharePoint library.](../media/default-sensitivity-label-spo.png)
     
     Although you see the setting mentions support for PDF files, this file type isn't currently supported for this scenario.
 
