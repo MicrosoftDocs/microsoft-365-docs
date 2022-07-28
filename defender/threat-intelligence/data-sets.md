@@ -173,15 +173,15 @@ When a user expands on a SHA1 hash, the user will be able to see details about t
 **Questions this data set may help answer:**
 
 - What other infrastructure has this certificate been observed associated with?
-  ![](media/dataSetsCertificateRelatedInfrastructure.png)
+    ![](media/dataSetsCertificateRelatedInfrastructure.png)
 - Are there any unique data points in the certificate that would serve as good pivot points?
-  ![](media/dataSetsCertificatePivotPoints.png)
+    ![](media/dataSetsCertificatePivotPoints.png)
 - Is the certificate self-signed?
-  ![](media/dataSetsCertificateSelfSigned.png)
+    ![](media/dataSetsCertificateSelfSigned.png)
 - Is the certificate from a free provider?
-  ![](media/dataSetsCertificateFreeProvider.png)
+    ![](media/dataSetsCertificateFreeProvider.png)
 - Over what timeframe has the certificate been observed in use?
-  ![](media/dataSetsCertificatesObservationDates.png)
+    ![](media/dataSetsCertificatesObservationDates.png)
 
 ## Subdomains
 
@@ -189,8 +189,8 @@ A subdomain is an internet domain, which is part of a primary domain. Subdomains
 
 Our subdomain data includes the following:
 
-  - **Hostname:** the subdomain associated with the domain that was searched.
-  - **Tags:** any tags applied to this artifact in the Defender TI system.
+- **Hostname:** the subdomain associated with the domain that was searched.
+- **Tags:** any tags applied to this artifact in the Defender TI system.
 
 ![](media/dataTabSubdomains.png)
 
