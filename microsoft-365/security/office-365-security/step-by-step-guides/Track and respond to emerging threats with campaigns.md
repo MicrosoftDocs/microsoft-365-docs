@@ -63,9 +63,9 @@ In the scenario that a campaign has targeted your organization and you’d like 
 
 ## Investigate inboxed messages that are part of a campaign
 
-1.	Navigate to the campaign page: security.microsoft.com/campaigns.
-1.	Scroll through the list of campaigns in the **Details view**, below the graph.
-1.	**Select** the campaign name you want to investigate. If the campaign has a click count more than zero, that indicates that a user in your organization clicked on a URL or downloaded a file from the email.
+1. Navigate to the [campaign page](https://security.microsoft.com/campaigns).
+1. Scroll through the list of campaigns in the **Details view**, below the graph.
+1. Select the campaign name you want to investigate. If the campaign has a click count of more than zero, that indicates that a user in your organization clicked on a URL or downloaded a file from the email.
 1. The campaign flyout displays more information about the campaign, the graph displays a timeline of the campaign from campaign start to end date, and the horizontal flow diagram displays the stages of the campaign from its origin, the verdict, and the current location of the messages.
 1. Below the flow diagram, select the **URL clicks** tab to display information regarding the click. Here you can see the user that clicked on a URL, if the user is tagged as a priority account user, the URL itself, and the time of click. 
 1. If you want to learn more about the inboxed and clicked messages, select **Explore messages** > **Inboxed messages**. A new tab will open and navigate to Threat Explorer. 
