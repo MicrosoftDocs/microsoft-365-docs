@@ -27,7 +27,7 @@ A user with one of the roles listed below can start any Microsoft 365 trial.
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
 | Global administrator | Global administrator   | Purview compliance portal > Permissions > Azure AD roles |
-| Billing Admin | Billing Administrator | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
+| Billing Admin | Billing Administrator | Purview compliance portal > Permissions > Purview solutions roles |
 
 ## Roles for starting specific trials
 
@@ -39,8 +39,8 @@ Purview trials include the **Microsoft Purview solutions** trial and the **Compl
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
-| Compliance Administrator | Compliance Administrator   | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
-| TBD | Compliance Data Administrator | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
+| Compliance Administrator | Compliance Administrator   | Purview compliance portal > Permissions > Purview solutions roles |
+| TBD | Compliance Data Administrator | Purview compliance portal > Permissions > Purview solutions roles |
 
 #### Priva trials
 
@@ -48,8 +48,8 @@ Priva trials include the **Privacy Risk Management** trial and the **Subject Rig
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
-| Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
-| Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
+| Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Permissions > Purview solutions roles |
+| Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Permissions > Purview solutions roles |
 
 #### Security trials
 
