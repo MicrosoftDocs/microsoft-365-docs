@@ -32,7 +32,7 @@ It's important to manage who in your organization has access to the Microsoft Pu
 
 Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You'll want to make sure that you've assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You'll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Manager.
 
-For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions).
 
 ## Task 2: Know your state of compliance
 
