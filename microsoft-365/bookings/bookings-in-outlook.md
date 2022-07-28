@@ -65,9 +65,14 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
+You should have one of the following domains in the response:
+
     "Anonymous:CalendarSharingFreeBusySimple": Share free/busy hours only.
-    "Anonymous:CalendarSharingFreeBusyDetail": Share free/busy hours, subject and location.
-    "Anonymous:CalendarSharingFreeBusyReviewer": Share free/busy hours, subject, location and the body of the message or calendar item.
+    
+    "Anonymous:CalendarSharingFreeBusyDetail": Share free/busy hours, subject, and location.
+    
+    "Anonymous:CalendarSharingFreeBusyReviewer": Share free/busy hours, subject, location, and the body of the message or calendar item.
+    
     "Anonymous:ContactsSharing": Share contacts only.
     
    You should have one of the above domains in the response.
