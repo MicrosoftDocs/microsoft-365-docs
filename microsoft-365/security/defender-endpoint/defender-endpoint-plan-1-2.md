@@ -83,16 +83,9 @@ If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you can now 
 - Choose to apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices
 - Choose mixed mode and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
 
-See [Manage your Defender for Endpoint subscription settings](defender-endpoint-subscription-settings.md).
+**[Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md)**.
 
-> [!NOTE]
-> Defender for Endpoint Plan 1 and Plan 2, and Defender for Business are each available as a standalone subscription. They're also available as part of a larger subscription, as follows:
-> - Microsoft 365 E3 includes [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md).
-> - Microsoft 365 E5 includes [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md).
-> - Microsoft 365 Business Premium includes [Defender for Business](../defender-business/mdb-overview.md).
-> - If you're a small or medium-sized business using Defender for Business, and you add Defender for Endpoint licenses to your tenant, your experience will continue to be the Defender for Business experience. See the [Defender for Business FAQ: What happens if I have a mix of Microsoft endpoint security subscriptions](../defender-business/mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
-
-### More resources
+## More resources
 
 - For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 - For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
