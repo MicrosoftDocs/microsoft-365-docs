@@ -80,8 +80,8 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 
 If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you can now manage your subscription settings. This new capability enables you to:
 
-- Choose to apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices
-- Choose mixed mode and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
+- Apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices; or
+- Use mixed mode, and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
 
 See [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md).
 
