@@ -25,11 +25,11 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 
 **Use this article to**:
 
-- [Compare Defender for Business (standalone) to Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium).
+- [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](#compare-microsoft-defender-for-business-to-microsoft-365-business-premium).
 - [Compare Defender for Business (standalone) to Defender for Endpoint enterprise offerings](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > [!TIP]
-> Defender for Business is available as a standalone security solution for small and medium-sized businesses. It's also included in Microsoft 365 Business Premium. If you already have Microsoft 365 Business Basic or Standard, consider either upgrading to Microsoft 365 Business Premium, or adding Defender for Business to your subscription to get more threat protection capabilities for your devices.
+> Defender for Business is available as a standalone security solution for small and medium-sized businesses. Defender for Business is now included in Microsoft 365 Business Premium. If you already have Microsoft 365 Business Basic or Standard, consider either upgrading to Microsoft 365 Business Premium or adding Defender for Business to your current subscription to get more threat protection capabilities for your devices.
 
 ## Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
