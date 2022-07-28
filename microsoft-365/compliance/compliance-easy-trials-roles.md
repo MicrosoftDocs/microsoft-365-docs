@@ -70,5 +70,4 @@ For more information about about roles and permissions, including guidance on ho
 
 - For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
 - For Microsoft Purview and Priva: [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
-- For Microsoft Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
-- [Prerequisites & permissions for Microsoft Defender Vulnerability Management](../security/defender-vulnerability-management/tvm-prerequisites.md)
+- For Microsoft 365 Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
