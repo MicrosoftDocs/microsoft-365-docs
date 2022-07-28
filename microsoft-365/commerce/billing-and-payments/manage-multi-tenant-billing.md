@@ -88,6 +88,9 @@ The user receives an email with a link to review the role assignment request. Af
 
 The global administrator of the associated billing tenant must accept the provisioning request from the primary billing tenant before you can move subscriptions to their associated billing tenant.
 
+> [!IMPORTANT]
+> You can only move a subscription to an associated billing tenant if all licenses in the subscription are available. If any licenses are assigned, you can't move the subscription.
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the name of the product that you want to move to the associated billing tenant.
 3. On the product details page, in the **Licenses assigned from all subscriptions** section, select **Move to another tenant**.

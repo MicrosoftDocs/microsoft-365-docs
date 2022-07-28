@@ -56,6 +56,8 @@
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Manage payment methods
       href: billing-and-payments/manage-payment-methods.md
+    - name: Manage billing across multiple tenants
+      href: billing-and-payments/manage-multi-tenant-billing.md
     - name: Change billing frequency
       href: billing-and-payments/change-payment-frequency.md
     - name: Manage billing notifications and invoice attachments
