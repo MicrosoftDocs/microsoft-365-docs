@@ -142,7 +142,7 @@ Defender TI processes customer data. By default, customer data is replicated to 
 
 For more information, see:
 
-- [Quickstart: Learn how to access Microsoft Defender Threat Intelligence and make customizations in your portal](learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md.md)
+- [Quickstart: Learn how to access Microsoft Defender Threat Intelligence and make customizations in your portal](learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md)
 - [Data sets](data-sets.md)
 - [Searching and pivoting](searching-and-pivoting.md)
 - [Sorting, filtering, and downloading data](sorting-filtering-and-downloading-data.md)
