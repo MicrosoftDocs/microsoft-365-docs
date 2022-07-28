@@ -35,8 +35,8 @@ A campaign is a coordinated email attack against one or many organizations. Emai
 Microsoft leverages vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns. We analyze and classify the attack information according to several factors, for example:
 
 - Attack source: The source IP addresses and sender email domains.
--	Message properties: The content, style, and tone of the messages.
--	Message recipients: How recipients are related. For example, recipient domains, recipient job functions (admins, executives, etc.), company types (large, small, public, private, etc.), and industries.
+- Message properties: The content, style, and tone of the messages.
+- Message recipients: How recipients are related, for example, recipient domains, recipient job functions (such as admins and executives), company types (such as large, small, public, and private), and industries.
 -	Attack payload: Malicious links, attachments, or other payloads in the messages.
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
