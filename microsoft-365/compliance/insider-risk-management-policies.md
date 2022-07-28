@@ -156,14 +156,14 @@ When you create an insider risk management policy in the policy wizard, you can 
 
 ## Sequence detection
 
-Risky activities may not occur as isolated events. These risks are frequently part of a larger sequence of events. A sequence is a group of two or more user activities performed one after the other that might suggest an elevated risk. Identifying these related activities is an important part of evaluating overall risk. When sequence detection is enabled for data theft or data leaks policies, insights from sequence information activities are displayed on the **User activity** tab within an insider risk management case. The following policy templates support sequence detection:
+Risky activities may not occur as isolated events. These risks are frequently part of a larger sequence of events. A sequence is a group of two or more user activities performed one after the other that might suggest an elevated risk. Identifying these related activities is an important part of evaluating overall risk. When sequence detection is selected for data theft or data leaks policies, insights from sequence information activities are displayed on the **User activity** tab within an insider risk management case. The following policy templates support sequence detection:
 
 - Data theft by departing users
 - General data leaks
 - Data leaks by priority users
 - Data leaks by disgruntled users
 
-These insider risk management policies can use specific indicators and the order that they occur to detect each step in a sequence of risk. File names are used when mapping activities across a sequence. These risks are organized into four main categories of activity:
+These insider risk management policies can use specific indicators and the order that they occur to detect each step in a sequence of risk. For policies created from the *General data leaks* and *Data leaks by priority user* templates, you can also select which sequences trigger the policy. File names are used when mapping activities across a sequence. These risks are organized into four main categories of activity:
 
 - **Collection**: These category signals focus on download activities by in-scope policy users. Some example activities in this category would be downloading files from SharePoint sites or moving files into a compressed folder.
 - **Exfiltration**: These category signals focus on sharing or extraction activities to internal and external sources by in-scope policy users. An example activity in this category would be sending emails with attachments from your organization to external recipients.
@@ -301,9 +301,10 @@ Complete the following steps to create a new policy:
     >Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
 
 12. Select **Next** to continue.
-13. If you've selected the *General data leaks* or *Data leaks by priority users* templates, you'll see options on the **Triggers** for this policy page for custom triggering events and policy indicators. You have the choice to select a DLP policy or indicators for triggering events that bring users assigned to the policy in-scope for activity scoring. If you select the **User matches a data loss prevention (DLP) policy triggering event** option, you must select a DLP policy from the DLP policy dropdown list to enable triggering indicators for the DLP Policy for this insider risk management policy. If you select the **User performs an exfiltration activity triggering event** option, you must select one or more of the listed indicators for the policy triggering event.
-    >[!IMPORTANT]
-    >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
+13. If you've selected the *General data leaks* or *Data leaks by priority users* templates, you'll see options on the **Triggers** for this policy page for custom triggering events and policy indicators. You have the choice to select a DLP policy or indicators for triggering events that bring users assigned to the policy in-scope for activity scoring. If you select the **User matches a data loss prevention (DLP) policy triggering event** option, you must select a DLP policy from the DLP policy dropdown list to enable triggering indicators for the DLP Policy for this insider risk management policy. If you select the **User performs an exfiltration activity** option, you must select one or more of the listed indicators in the **Select which activities will trigger this policy* or *Select which sequences will trigger this policy* sections.
+
+    > [!IMPORTANT]
+    > If you're unable to select a listed indicator or sequence, it's because they aren't currently enabled for your organization. To make them available to select and assign to the policy, select the **Turn on indicators** prompt.
 
     If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
