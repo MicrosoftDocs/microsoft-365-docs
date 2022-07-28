@@ -20,7 +20,7 @@ description: Learn about custom models and prebuilt models in Microsoft SharePoi
 
 Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
-SharePoint Syntex uses *custom models* and *trained models*. 
+SharePoint Syntex uses [custom models](#custom-models) and [trained models](#trained-models). 
 
 [diagram]
 
@@ -28,7 +28,7 @@ SharePoint Syntex uses *custom models* and *trained models*.
 
 The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
 
-[Custom models](#custom-models) include:
+Custom models include:
 
 - [Classify and extract by text pattern](#classify-and-extract-by-text-pattern)
 - [Extract by layout](#extract-by-layout)
@@ -70,7 +70,7 @@ For more information, see [Overview of extraction by text pattern and layout](ex
 
 If you don't need to build a custom model, you can use a [trained model](prebuilt-overview.md) that has already been trained for specific structured documents.
 
-[Trained models](#trained-models) include:
+Trained models include:
 
 - [Invoices](#invoice-models)
 - [Receipts](#receipt-models)
