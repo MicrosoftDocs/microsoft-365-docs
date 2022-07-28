@@ -326,7 +326,7 @@
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
-          - name: Create a custom sensitive information types - Compliance Center
+          - name: Create a custom sensitive information type - Compliance Center
             href: create-a-custom-sensitive-information-type.md
           - name: Get started with exact data match based sensitive information types
             href: sit-get-started-exact-data-match-based-sits-overview.md
