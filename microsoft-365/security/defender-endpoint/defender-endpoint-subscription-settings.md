@@ -23,7 +23,7 @@ ms.collection:
 
 ### Choose your subscription state
 
-Up until recently, in cases of [mixed licenses](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios), the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. However, you now have several options available. You can:
+Up until recently, in cases of [mixed licenses](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios), the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. However, if you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you now have several options available to manage your subscription settings across devices. You can:
 
 - (Recommended) Set your tenant to mixed mode, and use device tags to specify which devices will receive features and capabilities from each plan.
 - Choose to use the features and capabilities from one plan across all users and devices.
