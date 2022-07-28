@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: overview
 ms.date: 07/25/2022
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: shlomi, efratka
 f1.keywords: NOCSH  
@@ -92,51 +92,6 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 > - Microsoft 365 E5 includes [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md).
 > - Microsoft 365 Business Premium includes [Defender for Business](../defender-business/mdb-overview.md).
 > - If you're a small or medium-sized business using Defender for Business, and you add Defender for Endpoint licenses to your tenant, your experience will continue to be the Defender for Business experience. See the [Defender for Business FAQ: What happens if I have a mix of Microsoft endpoint security subscriptions](../defender-business/mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
-
-### Choose your subscription state
-
-Up until recently, in cases of mixed licenses, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. However, you now have several options available. You can:
-
-- (Recommended) Set your tenant to mixed mode, and use device tags to specify which devices will receive features and capabilities from each plan.
-- Choose to use the features and capabilities from one plan across all users and devices.
-
-### Set your tenant to mixed mode and specify device tags
-
-If you're using multiple Microsoft endpoint security solutions, such as Defender for Endpoint Plan 1 and Plan 2, you can choose to set your subscription state to either use features and capabilities from one plan across your users and devices. 
-
-1. Go to **Settings** > **Endpoints** > **Licenses**.
-
-2. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
-
-3. A **Subscription settings** flyout opens. Choose the option to use multiple plans and use device tagging for mixed licenses.
-
-4. To select an assignment option for devices, take one or more of the following steps:
-
-   - Select an existing rule, such as a **Plan 1 devices rule**.
-   - Create a new device rule to tag devices.
-   - Tag devices (device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md)).
-
-> [!NOTE]
-> You only need to tag one set of devices, such as devices to receive features and capabilities from Defender for Endpoint Plan 1. It can take up to three hours for your changes to take effect.
-
-### Choose one plan for your users and devices
-
-1. Go to **Settings** > **Endpoints** > **Licenses**.
-
-2. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
-
-3. A **Subscription settings** flyout opens. Choose one plan for all users and devices, and then select **Done**. 
-
-> [!NOTE]
-> It can take up to three hours for your changes to take effect.
-
-### Review license usage
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-
-2. Choose **Settings** > **Endpoints** > **Licenses**.
-
-3. Review your available and assigned licenses.
 
 ### More resources
 
