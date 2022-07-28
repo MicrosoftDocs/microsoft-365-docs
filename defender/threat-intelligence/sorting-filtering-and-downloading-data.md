@@ -1,6 +1,6 @@
 --- 
 title: 'Sorting, filtering, and downloading data using Microsoft Defender Threat Intelligence (Defender TI)'
-description: Learn how to sort, filter and download data using Microsoft Defender Threat Intelligence (Defender TI). 
+description: 'Learn how to sort, filter and download data using Microsoft Defender Threat Intelligence (Defender TI).'
 author: alexroland24
 ms.author: aroland
 ms.service: threat-intelligence 
