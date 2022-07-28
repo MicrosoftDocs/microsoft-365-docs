@@ -35,7 +35,7 @@ Our PDNS resolution data includes the following:
 - **Source:** the source that enabled the detection of the relationship.
 - **Tags:** any tags applied to this artifact in the Defender TI system.
 
-![](media/dataTabResolutions.png)
+![Data Tab Resolutions](media/dataTabResolutions.png)
 
 ## Questions this data set may help answer:
 
@@ -266,9 +266,9 @@ Our component data includes the following:
 - What unique web components is the threat actor using that can track them to other domains?
 - Are any components marked as malicious?
 - What is the number of web components identified?
-  ![](media/dataSetsComponentsNumberOfComponents.png)
+  ![Data Sets Components Number Of Components](media/dataSetsComponentsNumberOfComponents.png)
 - Are there any unique or strange technologies not often seen?
-  ![](media/dataSetsComponentsUniqueComponents.png)
+  ![Data Sets Components Unique Components](media/dataSetsComponentsUniqueComponents.png)
 - Are there any fake versions of specific technologies?
 - What is the frequency of changes in web components–often or rarely done?
 - Are there any suspicious libraries known to be abused?
