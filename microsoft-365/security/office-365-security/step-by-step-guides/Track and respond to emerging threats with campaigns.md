@@ -37,7 +37,7 @@ Microsoft leverages vast amounts of anti-phishing, anti-spam, and anti-malware d
 - Attack source: The source IP addresses and sender email domains.
 - Message properties: The content, style, and tone of the messages.
 - Message recipients: How recipients are related, for example, recipient domains, recipient job functions (such as admins and executives), company types (such as large, small, public, and private), and industries.
--	Attack payload: Malicious links, attachments, or other payloads in the messages.
+- Attack payload: Malicious links, attachments, or other payloads in the messages.
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
