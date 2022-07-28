@@ -117,15 +117,15 @@ Containers include SharePoint document libraries, OneDrive accounts, and Exchang
 
 If you are migrating records to SharePoint or OneDrive, you might need to validate these files haven't been altered and retain their immutability status. For example, you're using a migration solution and need to meet the chain of custody requirements for your records. Typical file properties and methods often used for this type of validation, such as file size or file hash, might not be sufficient because SharePoint automatically updates the metadata for a file when it's uploaded.
 
-Instead, to validate these files, you can use the value of the `vti_writevalidationtoken` property, which is a base64-encoded XOR hash of the file from before it is modified by SharePoint. Use the following steps:
+Instead, to validate these files, you can use the value of the `vti_writevalidationtoken` property, which is a base64-encoded XOR hash of the file before it is modified by SharePoint. Use the following steps:
 
 1. Generate the XOR hash of the original file by using the QuickXorHash algorithm. For more information, see the [QuickXorHash Algorithm code snippet](/onedrive/developer/code-snippets/quickxorhash).
 
-2. Base64 encode the XOR hash. For more information, see the [Base64Encode method documentation](/windows/win32/seccrypto/utilities-base64encode).
+2. Base64-encode the XOR hash. For more information, see the [Base64Encode method documentation](/windows/win32/seccrypto/utilities-base64encode).
 
 3. After the file is migrated, retrieve the value of the `vti_writevalidationtoken` property from the uploaded file.
 
-4. Compare the value generated in step 2 with the value retrieved in step 3. These two values should match.
+4. Compare the value generated in step 2 with the value retrieved in step 3. These two values should match. If they do, you've validated that the record hasn't changed.
 
 
 ## Configuration guidance
