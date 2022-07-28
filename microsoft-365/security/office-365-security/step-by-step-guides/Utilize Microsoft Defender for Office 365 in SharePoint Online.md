@@ -1,6 +1,6 @@
 ---
 title: Utilize Microsoft Defender for Office 365 in SharePoint Online
-description: The steps to ensure you are getting value from Microsoft Defender for Office 365 within SharePoint Online and OneDrive for Business
+description: Steps to ensure that you get value from Microsoft Defender for Office 365 within SharePoint Online and OneDrive for Business
 search.product: 
 search.appverid: 
 ms.prod: m365-security
