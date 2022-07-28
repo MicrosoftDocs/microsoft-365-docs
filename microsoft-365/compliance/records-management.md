@@ -113,7 +113,7 @@ Containers include SharePoint document libraries, OneDrive accounts, and Exchang
 >
 > Because of the restrictions and irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
-## Validating records after migrating to SharePoint or OneDrive
+## Validating migrated records
 
 If you are migrating records to SharePoint or OneDrive, you might need to validate these files haven't been altered and retain their immutability status. For example, you're using a migration solution and need to meet the chain of custody requirements for your records. Typical file properties and methods often used for this type of validation, such as file size or file hash, might not be sufficient because SharePoint automatically updates the metadata for a file when it's uploaded.
 
