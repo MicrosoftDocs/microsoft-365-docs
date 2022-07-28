@@ -37,9 +37,9 @@ Learn more at the [Safe Attachments Detailed Documentation](https://docs.microso
 
 1.	Sign in to the [security center’s safe attachments configuration page](https://security.microsoft.com/safeattachmentv2).
 1.	Select **Global settings**.
-1.	Ensure **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** is set to **on**.
-1.	Navigate to the security center’s Safe links configuration page. https://security.microsoft.com/safelinksv2 
-1.	Press **Save**.
+1.	Ensure that **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** is set to **on**.
+1.	Navigate to the [security center’s Safe links configuration page](https://security.microsoft.com/safelinksv2).
+1.	Select **Save**.
 
 ## Disallow infected file downloads in SharePoint
 
