@@ -25,7 +25,9 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you're a Global or security administrator, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows 10, Windows 11, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location. You can also avail this host firewall reporting feature for WS2012R2 & WS2016 servers when deployed with Unified Agent. However, it will not work with the old MMA.
+If you're a Global or security administrator, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows 10, Windows 11, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location. 
+
+You can also view the host firewall reporting for WS2012R2 & WS2016 servers from a centralized location when deployed with Unified Agent. However, it will not work with the old MMA. For more information, see [New Windows Server 2012 R2 and 2016 functionality in the modern unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 ## What do you need to know before you begin?
 
