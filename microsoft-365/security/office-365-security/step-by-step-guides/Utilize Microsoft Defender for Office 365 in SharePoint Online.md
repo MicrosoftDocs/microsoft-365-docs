@@ -47,8 +47,8 @@ By default, users can't open, move, copy, or share malicious files that are dete
 
 Learn more at the [Detailed Documentation](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)
 
-1.	Open & Connect to **SharePoint Online PowerShell** https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online
-1.	Run the following command: **Set-SPOTenant -DisallowInfectedFileDownload $true**
+1.	Open and connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1.	Run the following command: **Set-SPOTenant -DisallowInfectedFileDownload $true**.
 
 
 ### Further reading
