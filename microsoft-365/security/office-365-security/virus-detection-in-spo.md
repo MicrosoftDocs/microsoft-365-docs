@@ -63,7 +63,7 @@ Here's what happens:
 
 ## Can administrators bypass *DisallowInfectedFileDownload* and extract infected files?
 
-We allow SharePoint and Global administrators to perform forensic file extraction of malware infected files via SharePoint Online PowerShell with the cmdlet [Get-SPOMalwareFileContent](/powershell/module/sharepoint-online/get-spomalwarefilecontent). It is not necessary that the administrators have access to the site hosting the malware content, only that the file to be extracted is marked as malware. 
+We allow SharePoint and global administrators to perform forensic file extraction of malware-infected files via SharePoint Online PowerShell with the [Get-SPOMalwareFileContent](/powershell/module/sharepoint-online/get-spomalwarefilecontent) cmdlet. It is not necessary that the administrators have access to the site hosting the malware content, only that the file to be extracted is marked as malware. 
 
 For additional investigative details, administrators can use the [Get-SPOMalwareFile](/powershell/module/sharepoint-online/get-spomalwarefile) cmdlet to retrieve information on the type of malware that was detected and the status of the infection. 
 
