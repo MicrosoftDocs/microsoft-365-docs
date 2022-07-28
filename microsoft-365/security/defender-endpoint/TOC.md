@@ -502,6 +502,9 @@
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
 
+###### [Device Health]()
+####### [Device Health](device-health-api.md)
+
 ###### [Certificate inventory]()
 ####### [Export certificate inventory assessment](export-certificate-inventory-assessment.md)
 
