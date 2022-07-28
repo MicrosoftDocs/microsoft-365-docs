@@ -72,6 +72,6 @@ In the scenario that a campaign has targeted your organization and you’d like 
 1. In the **details view** of Explorer you can reference **Latest delivery** to determine if a message is still in the inbox or was moved into quarantine by system ZAP. _To get more details about the specific message, select the message. The flyout provides extra information. Upon selecting the **Open email entity page** on the top left of the flyout, a new tab will open and give you further information about the message._
 1.	If you would like to take an action and move the messages out of the inbox, you can select the message and then select **Message actions** > **Move to junk folder**. This will ensure your user doesn’t continue to interact with the malicious message that could result in a potential breach. 
 
-## Next Steps
+## Next steps
 
 To learn more, read, [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
