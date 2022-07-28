@@ -61,23 +61,23 @@ Copy the unified solution package, onboarding script and migration script to the
 8. Additionally, set the following as the installation program:
 
      ```powershell
-       Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -Log -Etl -RemoveMMA <workspace ID> -OnboardingScript .\WindowsDefenderATPOnboardingScript.cmd 
+      Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -RemoveMMA <workspace ID> -OnboardingScript .\WindowsDefenderATPOnboardingScript.cmd 
      ```
 
-      Click **Next** and make sure to add your own Workspace ID in cmdlet.
+      Click **Next** and make sure to add your own Workspace ID in this section.
 9. Click **Next** and click add a clause.
 10. The detection method will be based on the registry key shown below.
-      `HKEY_LOCAL_MACHINESOFTWARE\Classes\Installer\Products\63FAD065BFFD18F1926692665F704C6D`
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense\ImagePath`
 
       Check the option: **This registry setting must exit on the target system to indicate presence of this application.**
 
-     :::image type="content" source="images/detection-rule-wizard.png" alt-text="Screenshot that shows registry key detection.":::
+      :::image type="content" source="images/detection-wizard.png" alt-text="Screenshot that shows detection type wizard":::
 
-     >[!TIP]
-     >This registry key value was obtained by running the following PowerShell command as shown below on a device that has the unified solution installed. Other creative methods of detection can also be used. The goal is to identity whether the unified solution has already been installed on a specific device.
+      >[!TIP]
+      >This registry key value was obtained by running the Powershell command shown below on a device that has the unified solution installed. Other creative methods of detection can also be used. The goal is to identify whether the unified solution has already been installed on a specific device.
 
      ```powershell
-     PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+      get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize 
      ```
 
 11. In the **User Experience** section,check the recommended settings shown in the screenshot. You can choose what suits your environment and click **Next**. For **Installation program visibility**, it's advisable to install with **Normal** during phase testing then change it to **Minimized** for general deployment.
