@@ -3,10 +3,10 @@ title: 'Microsoft Defender Threat Intelligence (Defender TI) Data Sets'
 description: 'In this overview article, learn about Microsoft Defender Threat Intelligence (Defender TI)’s data sets feature.'
 author: alexroland24
 ms.author: aroland
-ms.service: threat-intelligence 
+ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
-ms.custom: template-concept 
+ms.custom: template-concept
 ---
 
 # Data sets
@@ -304,7 +304,7 @@ Our host pair data includes the following:
 
 ## Hashes
 
-Microsoft partners with Proofpoint to surface MD5 [malware](/microsoft-365/security/intelligence/malware-naming?view=o365-worldwide) hashes associated with the domain, host, or IP address a user search. Users are encouraged to purchase an Emerging Threats license by Proofpoint if they wish to analyze MD5 hash details. This data helps users understand actor capabilities, intent, and motives of an attacker while also aiding in connecting infrastructure together. Each result contains a unique hash.
+Microsoft partners with Proofpoint to surface MD5 [malware](/microsoft-365/security/intelligence/malware-naming) hashes associated with the domain, host, or IP address a user search. Users are encouraged to purchase an Emerging Threats license by Proofpoint if they wish to analyze MD5 hash details. This data helps users understand actor capabilities, intent, and motives of an attacker while also aiding in connecting infrastructure together. Each result contains a unique hash.
 
 Our hash data includes the following:
 
@@ -438,4 +438,3 @@ For more information, see:
 - [Searching and pivoting](searching-and-pivoting.md)
 - [Sorting, filtering, and downloading data](sorting-filtering-and-downloading-data.md)
 - [Infrastructure chaining](infrastructure-chaining.md)
-- [Tutorial: Gathering threat intelligence and infrastructure chaining](gathering-threat-intelligence-and-infrastructure-chaining.md)
