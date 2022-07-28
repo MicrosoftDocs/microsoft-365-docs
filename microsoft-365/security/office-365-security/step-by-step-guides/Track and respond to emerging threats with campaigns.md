@@ -48,7 +48,6 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
 
-
 ## Investigating a campaign
 
 In the scenario that a campaign has targeted your organization and you’d like to learn more about the impact: 
