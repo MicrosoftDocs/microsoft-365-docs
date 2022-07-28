@@ -9,16 +9,12 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -34,8 +30,8 @@ For more information about security defaults and the policies they enforce, see 
 
 This article provides information about:
 
-- [Security defaults](#security-defaults) (suitable for most businesses)
-- [Conditional Access](#conditional-access) (for businesses with more stringent security requirements)
+- **[Security defaults](#security-defaults)** (suitable for most businesses)
+- **[Conditional Access](#conditional-access)** (for businesses with more stringent security requirements)
 
 > [!NOTE]
 > If you've been using Conditional Access policies, you'll need to turn them off before using security defaults. You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
