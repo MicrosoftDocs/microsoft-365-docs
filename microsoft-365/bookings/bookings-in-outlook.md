@@ -72,7 +72,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
     
    You should have one of the above domains in the response.
 
-   To enable anonymous sharing, use the following command or alter **Add** section with the domain that you would like to add.
+   To enable anonymous sharing, use the following command or alter the **Add** section with the domain that you would like to add.
 
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
