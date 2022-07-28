@@ -138,6 +138,7 @@ What makes SSL certificates more valuable is that they are capable of making con
 SSL certificates are files that digitally bind a cryptographic key to a set of user-provided details. Using internet-scanning techniques, Defender TI collects SSL certificate associations from IP addresses on various ports. These certificates are stored inside of a local database and allow us to create a timeline for where a given SSL certificate appeared on the Internet.
 
 Our certificate data includes the following:
+
 - **Sha1:** The SHA1 algorithm hash for an SSL Cert asset.
 - **First Seen:** a timestamp that displays the date that we first observed this certificate on an artifact.
 - **Last Seen:** a timestamp that displays the date that we last observed this certificate on an artifact.
@@ -173,15 +174,15 @@ When a user expands on a SHA1 hash, the user will be able to see details about t
 **Questions this data set may help answer:**
 
 - What other infrastructure has this certificate been observed associated with?
-    ![](media/dataSetsCertificateRelatedInfrastructure.png)
+  ![](media/dataSetsCertificateRelatedInfrastructure.png)
 - Are there any unique data points in the certificate that would serve as good pivot points?
-    ![](media/dataSetsCertificatePivotPoints.png)
+  ![](media/dataSetsCertificatePivotPoints.png)
 - Is the certificate self-signed?
-    ![](media/dataSetsCertificateSelfSigned.png)
+  ![](media/dataSetsCertificateSelfSigned.png)
 - Is the certificate from a free provider?
-    ![](media/dataSetsCertificateFreeProvider.png)
+  ![](media/dataSetsCertificateFreeProvider.png)
 - Over what timeframe has the certificate been observed in use?
-    ![](media/dataSetsCertificatesObservationDates.png)
+  ![](media/dataSetsCertificatesObservationDates.png)
 
 ## Subdomains
 
