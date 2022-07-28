@@ -31,24 +31,20 @@ A user with one of the roles listed below can start any Microsoft 365 trial.
 
 ## Additional roles for starting specific trials
 
-There are additional roles that have permissions to start specific Microsoft 365 trials. Refer the tables below for each trial.
+Each trial allows users with additional roles to start a trial. View each trial's roles below.
 
-### Purview trials
+#### Purview trials
 
-Purview trials include:
-- The Microsoft Purview solutions trial
-- The Compliance Manager premium assessments trial
+Purview trials include the **Microsoft Purview solutions** trial and the **Compliance Manager premium assessments** trial. 
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
 | Compliance Administrator | Compliance Administrator   | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 | TBD | Compliance Data Administrator | Purview compliance portal > Permissions > Role groups for Microsoft Purview solutions |
 
-### Priva trials
+#### Priva trials
 
-Priva trials include:
-- The Privacy Risk Management trial
-- The Subject Rights Requests trial
+Priva trials include the **Privacy Risk Management** trial and the **Subject Rights Requests** trial.
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
@@ -57,7 +53,7 @@ Priva trials include:
 
 ### Security trials
 
-Security trials include the Defender Vulnerability Management trial.
+Security trials include the **Defender Vulnerability Management** trial.
 
 | Role | Role Group | Where to assign role | 
 | :------------- | :-------------: | :------------: |
