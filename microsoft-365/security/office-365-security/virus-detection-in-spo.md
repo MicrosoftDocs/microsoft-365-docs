@@ -57,7 +57,6 @@ Here's what happens:
 2. The user is given a warning that a virus has been detected. The user is given the option to proceed to download the file and attempt to clean it using the anti-virus software on their own device.
 
 > [!NOTE]
->
 > Admins can use the *DisallowInfectedFileDownload* parameter on the [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet in SharePoint Online PowerShell to prevent users from downloading infected file, even in the anti-virus warning window. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 >
 > When you enable the *DisallowInfectedFileDownload* parameter, access to the detected/blocked files is completely blocked for users.
