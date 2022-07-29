@@ -278,6 +278,7 @@
 ##### [Enable exploit protection](enable-exploit-protection.md)
 ##### [Customize exploit protection](customize-exploit-protection.md)
 ##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
+##### [Troubleshoot exploit protection mitigations](troubleshoot-exploit-protection-mitigations.md)
 ##### [Exploit protection reference](exploit-protection-reference.md)
 #### [Network protection]()
 ##### [Protect your network](network-protection.md)
