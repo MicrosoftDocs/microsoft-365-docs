@@ -12,7 +12,7 @@ ms.custom: template-how-to
 # Sorting, filtering, and downloading data
 The Microsoft Defender Threat Intelligence (Defender TI) platform enables analysts to access our vast collection of crawling data in an indexed and pivot table format.  These data sets can be very large, returning expansive amounts of historic and recent data. Thus, allowing analysts to appropriately sort and filter the data provides the ability easily to surface the connections of interest.
 
-![Data Tab](media/dataTab.png)
+![Sorting DataSets Chrome Screenshot](media/sortingDataSetsChromeScreenshot.png)
 
 In this how-to article, you’ll learn how to sort and filter data for the following data sets:
 
@@ -34,7 +34,7 @@ For more information, see [Data sets](data-sets.md).
 In this how-to article, you’ll also learn how to download indicators/artifacts from the following features:
 
 - Projects
-- Threat Intelligence Articles
+- Articles
 - Data Sets
 
 ## Prerequisites
@@ -63,7 +63,7 @@ Data can be sorted across each data set blade within the Data tab for each IP, d
 1. Search a domain, IP address, or host in the Defender TI Threat Intelligence search bar and navigate to the Data tab.
 2. Apply sorting preferences to the First Seen and Last Seen columns within the Resolutions Data blade.
 
-![Filters Re solutions](media/filtersResolutions.gif)
+![Sorting Resolutions](media/sortingResolutions.gif)
 
 ## Filtering data
 
@@ -82,7 +82,7 @@ The following filters apply to resolution data:
 1. Search a domain, IP address, or host in the Defender TI Threat Intelligence search bar and navigate to the Data tab.
 2. Apply filters to each of the types of filter options noted above within the Resolutions Data blade.
 
-![Sorting Re solutions](media/sortingResolutions.gif)
+![Filters Resolutions](media/filtersResolutions.gif)
 
 ## Tracker filters
 
