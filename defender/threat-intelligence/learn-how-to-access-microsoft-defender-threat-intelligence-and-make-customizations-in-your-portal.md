@@ -13,9 +13,7 @@ ms.custom: template-quickstart
 
 Understanding how to adjust your theme in Microsoft Defender Threat Intelligence (Defender TI)’s Portal will make it easier on your eyes when using our platform. Additionally, this guide will walk you through how to enable sources for enrichment, so you can see more results when performing searches in our platform. You will also learn how to successfully login and logout of Defender TI.
 
-If you don’t have a Defender TI Premium or Community license, create a free trial account here.
-
-![Accessing TI Portal Chrome Screenshot](media/accessingTiPortalChromeScreenshot.png)
+![Ti Overview HomePage Chrome Screenshot](media/tiOverviewHomePageChromeScreenshot.png)
 
 ## Prerequisites
 
