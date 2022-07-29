@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how retention works for Exchange."
+description: "Learn how Microsoft 365 retention works for Exchange, using retention policies and retention labels to manage the automatic retention or deletion of data for your organization."
 ---
 
 # Learn about retention for Exchange
