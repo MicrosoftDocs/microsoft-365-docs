@@ -125,6 +125,8 @@ This section contains general information about the user and alert. This  inform
 - **User profile**: Displays general information about the user assigned to the alert. If anonymization is enabled, the username, email address, alias, and organization fields are anonymized.
 - **User alert history**: Displays a list of alerts for the user for the last 30 days. Includes a link to view the complete alert history for the user.
 
+Alerts generated from policies scoped to only activities that include [priority content](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) include the *Only activity with priority content was scored for this alert* notification in this section.
+
 ### All risk factors
 
 This tab opens the summary of risk factors for the user's alert activity. Risk factors can help you determine how risky this user's activity is during your review. The risk factors include summaries for:
