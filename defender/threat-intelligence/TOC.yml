@@ -21,9 +21,13 @@
   items:
   - name: Searching and pivoting
     href: searching-and-pivoting.md
-  - name: Sorting, filtering, and downloading data 
+  - name: Sorting, filtering, and downloading data
     href: sorting-filtering-and-downloading-data.md
   - name: Using tags
     href: using-tags.md
   - name: Using projects
     href: using-projects.md
+- name: Tutorials
+  items:
+  - name: Gathering threat intelligence and infrastructure chaining
+    href: gathering-threat-intelligence-and-infrastructure-chaining.md

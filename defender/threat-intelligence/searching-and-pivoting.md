@@ -59,7 +59,7 @@ Defender TI’s Threat Intelligence search is both simple and powerful, designed
     > [!NOTE]
     > This does not return articles that share that tag value.
 
-![Search Tag](media/searchTag.png)
+    ![Search Tag](media/searchTag.png)
 
 8. **Component:** Select ‘Component’ from the Threat Intelligence Search drop-down and type in ‘cobalt strike’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a Component search.
 

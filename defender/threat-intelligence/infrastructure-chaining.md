@@ -31,3 +31,6 @@ An adversary’s outside-in perspective enables them to take advantage of your c
 Approaching and interacting with the web and mobile properties as a real user enables Microsoft’s crawling, scanning, and machine-learning technology to disarm adversaries’ evasion techniques by collecting user session data, detecting phishing, malware, rogue apps, unwanted content, and domain infringement at scale. This helps deliver actionable, event-based threat alerts and workflows in the form of [threat intelligence](what-is-microsoft-defender-threat-intelligence-defender-tI.md), [system tags](using-tags.md), [analyst insights](analyst-insights.md), and [reputation scores](reputation-scoring.md) associated with adversaries’ infrastructure.
 
 As more threat data becomes available, more tools, education, and effort are required for analysts to understand the data sets and their corresponding threats. Microsoft Defender Threat Intelligence (Defender TI) unifies these efforts by providing a single view into multiple data sources.
+
+## Next steps
+For more information, see [Tutorial: Gathering threat intelligence and infrastructure chaining](gathering-threat-intelligence-and-infrastructure-chaining.md).

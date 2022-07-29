@@ -41,25 +41,34 @@ Our PDNS resolution data includes the following:
 
 ### Domains
 - When was the domain first observed resolving to an IP address by Defender TI?
-  ![Data Sets Domain First Seen](media/dataSetsDomainFirstSeen.png)
+
+    ![Data Sets Domain First Seen](media/dataSetsDomainFirstSeen.png)
 
 - When was the last time it was seen actively resolving to an IP address by Defender TI?
-  ![Data Sets Domain Last Seen](media/dataSetsDomainLastSeen.png)
+    ![Data Sets Domain Last Seen](media/dataSetsDomainLastSeen.png)
 
 - What IP address(s) does it currently resolve to?
-  ![Data Sets Domain Active Re solutions](media/dataSetsDomainActiveResolutions.png)
+    ![Data Sets Domain Active Re solutions](media/dataSetsDomainActiveResolutions.png)
   
 ### IP Addresses
-  - Is the IP address routable?
-  ![Data Sets Routable IPs](media/dataSetsRoutableIPs.png)
-  - What subnet is it part of?
-  ![Data Sets IP Subnet](media/dataSetsIPSubnet.png)
-  - Is there an owner associated with the subnet?
-  ![Data Sets IP Owner](media/dataSetsIPOwner.png)
-  - What AS is it part of?
-  ![Data Sets IPASN](media/dataSetsIPASN.png)
-  - What geolocation is there?
-  ![Data Sets IP Geo location](media/dataSetsIPGeolocation.png)
+- Is the IP address routable?
+
+    ![Data Sets Routable IPs](media/dataSetsRoutableIPs.png)
+
+- What subnet is it part of?
+
+    ![Data Sets IP Subnet](media/dataSetsIPSubnet.png)
+
+- Is there an owner associated with the subnet?
+  
+    ![Data Sets IP Owner](media/dataSetsIPOwner.png)
+
+- What AS is it part of?
+
+    ![Data Sets IPASN](media/dataSetsIPASN.png)
+
+- What geolocation is there?
+    ![Data Sets IP Geo location](media/dataSetsIPGeolocation.png)
 
 ## Whois
 
@@ -103,26 +112,45 @@ Defender TI’s Whois History repository provides users with access to all known
 **Questions this data set may help answer:**
 
 - How old is the domain?
-  ![Data Sets Whois Domain Age](media/dataSetsWhoisDomainAge.png)
+
+    ![Data Sets Whois Domain Age](media/dataSetsWhoisDomainAge.png)
+
 - Does the information appear to be privacy protected?
-  ![Data Sets Whois Privacy Protected](media/dataSetsWhoisPrivacyProtected.png)
+
+    ![Data Sets Whois Privacy Protected](media/dataSetsWhoisPrivacyProtected.png)
+
 - Does any of the data appear to be unique?
-  ![Data Sets Whois Unique](media/dataSetsWhoisUnique.png)
+
+![Data Sets Whois Unique](media/dataSetsWhoisUnique.png)
+
 - What name servers are used?
-  ![Data Sets Whois Name Servers](media/dataSetsWhoisNameServers.png)
+
+    ![Data Sets Whois Name Servers](media/dataSetsWhoisNameServers.png)
+
 - Is this a sinkhole domain?
-  ![Data Sets Whois Sinkhole](media/dataSetsWhoisSinkhole.png)
+
+    ![Data Sets Whois Sinkhole](media/dataSetsWhoisSinkhole.png)
+
 - Is this a parked domain?
-  ![Data Sets Whois Parked Domain](media/dataSetsWhoisParkedDomain.png)
+
+    ![Data Sets Whois Parked Domain](media/dataSetsWhoisParkedDomain.png)
+
 - Is this a honeypot domain?
-  ![Data Sets Whois Honeypot Domain](media/dataSetsWhoisHoneypotDomain.png)
+
+    ![Data Sets Whois Honeypot Domain](media/dataSetsWhoisHoneypotDomain.png)
+
 - Is there any history?
-  ![Data Sets Whois History](media/dataSetsWhoisHistory.gif)
+
+    ![Data Sets Whois History](media/dataSetsWhoisHistory.gif)
+
 - Are there any fake privacy protection emails?
-  ![Data Sets Whois Fake Privacy Emails](media/dataSetsWhoisFakePrivacyEmails.png)
+    ![Data Sets Whois Fake Privacy Emails](media/dataSetsWhoisFakePrivacyEmails.png)
+
 - Are there any fake names in the Whois record?
+
 - Did you identify additional related IOCs from searching against potentially shared Whois values across domains?
-  ![Data Sets Whois Shared Value Search](media/dataSetsWhoisSharedValueSearch.gif)
+
+    ![Data Sets Whois Shared Value Search](media/dataSetsWhoisSharedValueSearch.gif)
 
 ## Certificates
 Beyond securing your data, SSL Certificates are a fantastic way for users to connect disparate network infrastructure. Modern scanning techniques allow us to perform data requests against every node on the Internet in a matter of hours, meaning we can easily associate a certificate to an IP address hosting it on a regular basis.
@@ -174,15 +202,24 @@ When a user expands on a SHA1 hash, the user will be able to see details about t
 **Questions this data set may help answer:**
 
 - What other infrastructure has this certificate been observed associated with?
-  ![Data Sets Certificate Related Infrastructure](media/dataSetsCertificateRelatedInfrastructure.png)
+
+    ![Data Sets Certificate Related Infrastructure](media/dataSetsCertificateRelatedInfrastructure.png)
+
 - Are there any unique data points in the certificate that would serve as good pivot points?
-  ![Data Sets Certificate Pivot Points](media/dataSetsCertificatePivotPoints.png)
+
+    ![Data Sets Certificate Pivot Points](media/dataSetsCertificatePivotPoints.png)
+
 - Is the certificate self-signed?
-  ![Data Sets Certificate Self Signed](media/dataSetsCertificateSelfSigned.png)
+
+    ![Data Sets Certificate Self Signed](media/dataSetsCertificateSelfSigned.png)
+
 - Is the certificate from a free provider?
-  ![Data Sets CertificateFree Provider](media/dataSetsCertificateFreeProvider.png)
+
+    ![Data Sets CertificateFree Provider](media/dataSetsCertificateFreeProvider.png)
+
 - Over what timeframe has the certificate been observed in use?
-  ![Data Sets Certificates Observation Dates](media/dataSetsCertificatesObservationDates.png)
+
+    ![Data Sets Certificates Observation Dates](media/dataSetsCertificatesObservationDates.png)
 
 ## Subdomains
 
@@ -198,12 +235,19 @@ Our subdomain data includes the following:
 **Questions this data set may help answer:**
 
 - Are there more subdomains associated with the higher-level domain?
-  ![Data Sets Sub domains](media/dataSetsSubdomains.png)
+
+    ![Data Sets Sub domains](media/dataSetsSubdomains.png)
+
 - Are any subdomains associated with malicious activity?
-  ![Data Sets Sub domains Malicious](media/dataSetsSubdomainsMalicious.png)
+
+    ![Data Sets Sub domains Malicious](media/dataSetsSubdomainsMalicious.png)
+
 - If this is your domain, do any subdomains look unfamiliar?
+
 - Is there any pattern to the subdomains that are listed associated with other malicious domains?
+
 - Does pivoting off each subdomain reveal new IP space not previously associated with the target?
+
 - What other unrelated infrastructure can you find that does not match the root domain?
 
 ## Trackers
@@ -226,18 +270,30 @@ Our tracker data includes the following:
 **Questions this data set may help answer:**
 
 - Are there other resources using the same analytics IDs?
-  ![Data Sets Trackers Pivot Analytics Account](media/dataSetsTrackersPivotAnalyticsAccount.gif)
+
+    ![Data Sets Trackers Pivot Analytics Account](media/dataSetsTrackersPivotAnalyticsAccount.gif)
+
 - Are these resources associated with the organization, or are they attempting to conduct an infringement attack?
+
 - Is there any overlap between trackers–are they shared with other websites?
+
 - What are the types of trackers found within the web page?
-  ![Data Sets Trackers Types](media/dataSetsTrackersTypes.png)
+
+    ![Data Sets Trackers Types](media/dataSetsTrackersTypes.png)
+
 - What is the length of time for trackers?
-  ![Data Sets Trackers LengthOf Time](media/dataSetsTrackersLengthOfTime.png)
+
+    ![Data Sets Trackers LengthOf Time](media/dataSetsTrackersLengthOfTime.png)
+
 - What is the frequency of change for tracker values– do they come, go, or remain?
+
 - Are there any trackers linking to website cloning software (MarkOfTheWeb or HTTrack)?
-  ![Data Sets TrackersHt Track](media/dataSetsTrackersHtTrack.png)
+
+    ![Data Sets TrackersHt Track](media/dataSetsTrackersHtTrack.png)
+
 - Are there any trackers linking to malicious C2 server malware (JARM)?
-  ![Data Sets Trackers JARM](media/dataSetsTrackersJARM.png)
+
+    ![Data Sets Trackers JARM](media/dataSetsTrackersJARM.png)
 
 ## Components
 
@@ -258,20 +314,31 @@ Our component data includes the following:
 **Questions this data set may help answer:**
 
 - What vulnerable infrastructure are you using?
-  ![Data Sets Components Vulnerable Components](media/dataSetsComponentsVulnerableComponents.png)
 
-  ![Data Sets Components Prototype Js Vulnerable Version](media/dataSetsComponentsPrototypeJsVulnerableVersion.png)
+    ![Data Sets Components Vulnerable Components](media/dataSetsComponentsVulnerableComponents.png)
 
-  Magento v1.9 is so dated that Microsoft could not locate reliable documentation for that particular version.
+    ![Data Sets Components Prototype Js Vulnerable Version](media/dataSetsComponentsPrototypeJsVulnerableVersion.png)
+
+    Magento v1.9 is so dated that Microsoft could not locate reliable documentation for that particular version.
+
 - What unique web components is the threat actor using that can track them to other domains?
+
 - Are any components marked as malicious?
+
 - What is the number of web components identified?
-  ![Data Sets Components Number Of Components](media/dataSetsComponentsNumberOfComponents.png)
+
+    ![Data Sets Components Number Of Components](media/dataSetsComponentsNumberOfComponents.png)
+
 - Are there any unique or strange technologies not often seen?
-  ![Data Sets Components Unique Components](media/dataSetsComponentsUniqueComponents.png)
+
+    ![Data Sets Components Unique Components](media/dataSetsComponentsUniqueComponents.png)
+
 - Are there any fake versions of specific technologies?
+
 - What is the frequency of changes in web components–often or rarely done?
+
 - Are there any suspicious libraries known to be abused?
+
 - Are there any technologies with vulnerabilities associated with them?
 
 ## Host pairs
@@ -294,12 +361,18 @@ Our host pair data includes the following:
 - Have any of the connected artifacts been blocklisted?
 - Have any of the connected artifacts been tagged (Phishing, APT, Malicious, Suspicious, Threat Actor Name)?
 - Is this host redirecting users to malicious content?
-  ![Data Sets Host Pairs Malicious Redirect](media/dataSetsHostPairsMaliciousRedirect.png)
+
+    ![Data Sets Host Pairs Malicious Redirect](media/dataSetsHostPairsMaliciousRedirect.png)
+
 - Are resources pulling in CSS or images to set up infringement attacks?
-  ![Data Sets Host Pairs Infringement Attack](media/dataSetsHostPairsInfringementAttack.png)
+
+    ![Data Sets Host Pairs Infringement Attack](media/dataSetsHostPairsInfringementAttack.png)
+
 - Are resources pulling in a script or referencing a link.href to set up a Magecart or skimming attack?
-  ![Data Sets Host Pairs Skimmer Reference](media/dataSetsHostPairsSkimmerReference.png)
+    ![Data Sets Host Pairs Skimmer Reference](media/dataSetsHostPairsSkimmerReference.png)
+
 - Where are users being redirected from/to?
+
 - What type of redirection is taking place?
 
 ## Hashes
@@ -317,13 +390,20 @@ Our hash data includes the following:
 **Questions this data set may help answer:**
 
 - Does the domain connect to malware
+
     ![Data Sets Hashes](media/dataSetsHashes.png)
+
 - Does this IP address have malware associated with it?
     ![Data Sets IP Hashes](media/dataSetsIPHashes.png)
+
 - Are the hashes collected associated with malware?
+
 - How recently was this suspicious activity observed?
+
 - Which vendors/ sources have observed malicious binaries?
+
 - Has the IP or domain queried served as a command-and-control server for malware?
+
 - Can evaluating the file associated with the hash for a given query lead me to other indicators for threat hunting purposes?
 
 ## Cookies
@@ -344,14 +424,21 @@ Our cookie data includes the following:
 **Questions this data set may help answer:**
 
 - What other websites are issuing the same cookies?
+
     ![Data Sets Cookies Domains Issuing Same Cookie](media/dataSetsCookiesDomainsIssuingSameCookie.png)
+
 - What other websites are tracking the same cookies?
     ![Data Sets Cookies Domains Tracking Same Cookie](media/dataSetsCookiesDomainsTrackingSameCookie.png)
+
 - Does the cookie domain match your query?
+
 - What is the number of cookies associated with the artifact?
     ![Data Sets Cookies Number Associated with Artifact](media/dataSetsCookiesNumberAssociatedwithArtifact.png)
+
 - Are there unique cookie names or domains?
+
 - What are the time periods associated with cookies?
+
 - What is the frequency of newly observed cookies or changes associated with cookies?
 
 ## Services
@@ -377,18 +464,29 @@ Our Services data includes the following:
 **Questions this data set may help answer:**
 
 - What applications are running on a particular port for a given IP address?
+
     ![Data Sets Services Applications Running](media/dataSetsServicesApplicationsRunning.png)
+
 - What version of applications are in use?
+
     ![Data Sets Services Version Running](media/dataSetsServicesVersionRunning.png)
+
 - Have there been recent changes in the open, filtered, or closed status for a given port?
+
     ![Data Sets Services Port Statuses](media/dataSetsServicesPortStatuses.png)
+
 - Was a certificate associated with the connection?
+
     ![Data Sets Services Certificate Associations](media/dataSetsServicesCertificateAssociations.png)
+
 - Are vulnerable or deprecated technologies in use on a given asset?
+
     ![Data Sets Services Applications Running](media/dataSetsServicesApplicationsRunning.png)
 
     ![Data Sets Services Vulnerable Service](media/dataSetsServicesVulnerableService.png)
+
 - Is information being exposed by a running service that could be used for nefarious purposes?
+
 - Are security best practices being followed?
 
 ## DNS
@@ -438,3 +536,4 @@ For more information, see:
 - [Searching and pivoting](searching-and-pivoting.md)
 - [Sorting, filtering, and downloading data](sorting-filtering-and-downloading-data.md)
 - [Infrastructure chaining](infrastructure-chaining.md)
+- [Tutorial: Gathering threat intelligence and infrastructure chaining](gathering-threat-intelligence-and-infrastructure-chaining.md)
