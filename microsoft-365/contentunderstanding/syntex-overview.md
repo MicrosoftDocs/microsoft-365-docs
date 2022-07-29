@@ -40,6 +40,13 @@ In SharePoint Syntex, you can build [custom models](model-types-overview.md) or 
 - [Extract by layout](form-processing-overview.md)
 - [Extract by text pattern and layout](extract-by-text-pattern-and-layout-overview.md)
 
+| Classify and extract by text pattern  | Extract by layout  | Extract by text pattern and layout  |
+| ------------- | ------------- | ------------- |
+| [Image] | [Image] | [Image] |
+| Create a custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files.
+ <br>[Learn more about this model](document-understanding-overview.md) | Create a custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for non-English languages and files with tables.
+ <br>[Learn more about this model](form-processing-overview.md) | Create a custom model to automatically extract info from them. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more about this model](extract-by-text-pattern-and-layout-overview.md) |
+
 **Trained models** – If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md). Trained models include:
 
 - [Invoice model](prebuilt-model-invoice.md)
