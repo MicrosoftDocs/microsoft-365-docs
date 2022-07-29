@@ -25,7 +25,7 @@ The Microsoft Service Trust Portal provides a variety of content, tools, and oth
 
 ## Accessing the Service Trust Portal
 
-The Service Trust Portal is Microsoft's public site for publishing audit reports and other compliance-related information associated with Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored whitepapers that provide details on how Microsoft builds and operates cloud services. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
+The Service Trust Portal is Microsoft's public site for publishing audit reports and other compliance-related information associated with Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored whitepapers that provide details on how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
 
 ### Existing customers
 
@@ -68,7 +68,7 @@ Provides a wealth of security implementation and design information with the goa
 
 - **DoD** - Cloud computing security requirements for the US Department of Defense.
 - **FedRAMP** - US government program providing a standard approach to security, authorization, and monitoring.
-- **Financial Services** - The Microsoft Cloud for FInancial Services provides capabilities to manage data.
+- **Financial Services** - Resources for the Financial Services Industry.
 - **GDPR** - How Microsoft helps support our customers on their GDPR compliance journeys.
 - **GRC Assessment** - Provides audit and assurance professionals with a common set of assessment procedures.
 - **HIPAA** - US Privacy requirements for personal health information held by covered entities.
@@ -78,14 +78,15 @@ Provides a wealth of security implementation and design information with the goa
 - **NIST 800-171 (DFARS)** - US security requirements for protecting Controlled Unclassified Information in Non Federal Systems and Organizations.
 - **PCI DSS** - Validation of controls around cardholder data to reduce credit card fraud.
 - **SOC Reports** - SOC 1, 2, and 3 reports designed to build trust and confidence in Microsoft Services.
+- **Tenant Specific** – These documents are restricted by tenants.
 
 Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the following page.  
 
-Filter by date and cloud service - When viewing the available documents, you can sort the results by date range by selecting **Dates** and then selecting the range you want to use.
+Filter by date and cloud service - When viewing the available documents, you can filter the results by date range by selecting **Dates** and then selecting the range you want to use.
 
 :::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filter available documents by date range.":::
 
-Document download view - When viewing the available documents, you can sort the results by the applicable **Cloud Service**.
+Document download view - When viewing the available documents, you can filter the results by the applicable **Cloud Service**.
 
 :::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filter available documents by cloud service.":::
 
@@ -98,7 +99,7 @@ This feature lets you save (or *pin*) documents so that you can quickly access t
 
 ### All Documents
 
-This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources.
+This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
 
 ### Search
 
