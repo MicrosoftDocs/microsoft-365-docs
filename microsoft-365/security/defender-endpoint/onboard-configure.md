@@ -47,7 +47,7 @@ Defender for Endpoint supports two ways to manage permissions:
 
 - **Role-based access control (RBAC)**: Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
 
-Microsoft recommends leveraging RBAC to ensure that only users that have a business justification can access Defender for Endpoint.
+We recommend leveraging RBAC to ensure that only users that have a business justification can access Defender for Endpoint.
 
 ## Onboard devices to the service
 You'll need to go the onboarding section of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device. 
