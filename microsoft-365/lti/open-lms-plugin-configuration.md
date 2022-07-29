@@ -55,7 +55,7 @@ Register Open LMS as an application in your Azure AD using the PowerShell script
 - On operating systems that aren't Windows, you should only follow the manual process to register your Open LMS instance in Azure. Check the *Important* alert section below for details.
 
 > [!IMPORTANT]
-> For more information on registering your Open LMS instance manually, see [Register your Moodle instance as an application](https://docs.moodle.org/400/en/Microsoft_365#Azure_App_Creation_and_Configuration).
+> For more information on registering your Open LMS instance manually, see [Register your Open LMS instance as an application](https://docs.moodle.org/400/en/Microsoft_365#Azure_App_Creation_and_Configuration).
 >
 > Once you register your app, verify that all the Azure app permissions are applied. For more information, see [Azure app permissions](https://docs.moodle.org/400/en/Microsoft_365#Azure_app_permissions).
 
