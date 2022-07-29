@@ -21,11 +21,11 @@ ms.technology: mdo
 
 # How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
 
-Best practice for domain email security protection is to protect yourself from spoofing using Domain-based Message Authentication, Reporting, and Conformance (DMARC). If you haven’t already enabled DMARC for your domains, that should be the first step, detailed here: [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+Best practice for domain email security protection is to protect yourself from spoofing using Domain-based Message Authentication, Reporting, and Conformance (DMARC). If you haven't already enabled DMARC for your domains, that should be the first step, detailed here: [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
 
 This guide is designed to help you configure DMARC for the domains not covered in the above guide, both your Microsoft Online Email Routing Address (MOERA) aka contosocorp.onmicrosoft.com and parked domains which you may not be using for email yet, but could be leveraged by attackers until protected.
 
-## What you’ll need
+## What you'll need
 
 - Microsoft 365 admin centre and access to your DNS provider hosting your domains
 - Sufficient permissions as Global Admin to make the appropriate changes in the Microsoft 365 Admin Center
