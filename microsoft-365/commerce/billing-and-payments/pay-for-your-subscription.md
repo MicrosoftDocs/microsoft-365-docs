@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: MET150 
 description: "Use a credit or debit card or bank account to pay for your Microsoft 365 for business subscription, or in some cases, you can pay by invoice."
 ms.custom: 
+- VSBFY23
 - commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
