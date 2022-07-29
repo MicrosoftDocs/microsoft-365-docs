@@ -86,7 +86,7 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The current supported actions for file IOC are allow, audit and block and remediate. After choosing to block a file, you can choose whether triggering an alert is needed. In this way you will be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
+The current supported actions for file IOC are allow, audit and block, and remediate. After choosing to block a file, you can choose whether triggering an alert is needed. In this way you will be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
 
 In Microsoft 365 Defender, go to **Settings** > **Endpoints** > **Indicators** > **Add New File Hash**.
 
@@ -110,6 +110,8 @@ Choose if to Generate an alert on the file block event and define the alerts set
 > - If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
 >
 > For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
+>
+> For more details on configuring this feature on Defender for Endpoint on Linux and macOS, see [Configure file hash computation feature on Linux](linux-preferences.md#configure-file-hash-computation-feature) and [Configure file hash computation feature on macOS](mac-preferences.md#configure-file-hash-computation-feature).
 
 ## Public Preview: Advanced hunting capabilities
 
