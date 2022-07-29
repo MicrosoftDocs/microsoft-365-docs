@@ -44,7 +44,6 @@ For more details on how to get started, visit the Defender for Endpoint on macOS
 > [!NOTE]
 > The following capabilities are not currently supported on macOS endpoints:
 >
-> - Data loss prevention
 > - Security Management for Microsoft Defender for Endpoint
 
 ## Microsoft Defender for Endpoint on Linux

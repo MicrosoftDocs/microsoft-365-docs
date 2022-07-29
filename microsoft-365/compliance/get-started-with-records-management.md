@@ -17,7 +17,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Need a records management solution for Microsoft 365 that manages high-value content for legal, business, or regulatory obligations, but not sure where to start? Read some practical guidance to get started.
+description: Prescriptive steps for admins, licensing requirements, and common scenarios that manage high-value content in Microsoft 365 for your legal, business, or regulatory obligations.
 ---
 
 # Get started with records management
@@ -38,6 +38,9 @@ Ready to start managing your organization's high-value content for legal, busine
 
     - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+
+> [!TIP]
+> If you're migrating records to Microsoft 365 and need to validate that they haven't been altered, see [Validating migrated records](records-management.md#validating-migrated-records).
 
 ## Subscription and licensing requirements
 

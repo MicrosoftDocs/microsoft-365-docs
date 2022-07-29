@@ -291,7 +291,7 @@ Designate the custom mailbox where user reported messages are sent on the **User
 >
 > - The custom mailbox is an Exchange Online mailbox.
 > - The third-party reporting tool must include the original reported message as an uncompressed .EML or .MSG attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
-> - The custom mailbox requires specific prerequisites to allow potentially bad messages to be delivered. For more information, see [Custom mailbox prerequisites](user-submission.md#custom-mailbox-prerequisites).
+> - The custom mailbox requires specific prerequisites to allow potentially bad messages to be delivered. For more information, see [Configuration requirements for the user submissions mailbox](user-submission.md#configuration-requirements-for-the-user-submissions-mailbox).
 
 When user reported email arrives in the custom mailbox, Defender for Office 365 automatically generates the alert named **Email reported by user as malware or phish**. This alert launches an [AIR playbook](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). The playbook performs a series of automated investigations steps:
 
