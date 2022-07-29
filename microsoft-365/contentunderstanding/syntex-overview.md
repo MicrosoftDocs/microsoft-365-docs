@@ -47,8 +47,13 @@ In SharePoint Syntex, you can build [custom models](model-types-overview.md) or 
 
 **Trained models** – If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md). Trained models include:
 
-- [Invoice model](prebuilt-model-invoice.md)
-- [Receipt model](prebuilt-model-receipt.md)
+- [Invoices](prebuilt-model-invoice.md)
+- [Receipts](prebuilt-model-receipt.md)
+
+| Invoices model  | Receipts model  | 
+| ------------- | ------------- |
+| [Image] | [Image] |
+| Save time processing invoices. Automatically extract key info specific to invoices. <br>[Learn more](prebuilt-model-invoice.md) | Save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more](prebuilt-model-receipt.md) | 
 
 For more information about custom and trained models, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
