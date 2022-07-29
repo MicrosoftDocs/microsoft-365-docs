@@ -121,7 +121,7 @@ Defender TI’s Whois History repository provides users with access to all known
 
 - Does any of the data appear to be unique?
 
-![Data Sets Whois Unique](media/dataSetsWhoisUnique.png)
+    ![Data Sets Whois Unique](media/dataSetsWhoisUnique.png)
 
 - What name servers are used?
 
@@ -144,6 +144,7 @@ Defender TI’s Whois History repository provides users with access to all known
     ![Data Sets Whois History](media/dataSetsWhoisHistory.gif)
 
 - Are there any fake privacy protection emails?
+
     ![Data Sets Whois Fake Privacy Emails](media/dataSetsWhoisFakePrivacyEmails.png)
 
 - Are there any fake names in the Whois record?
@@ -433,6 +434,7 @@ Our cookie data includes the following:
 - Does the cookie domain match your query?
 
 - What is the number of cookies associated with the artifact?
+
     ![Data Sets Cookies Number Associated with Artifact](media/dataSetsCookiesNumberAssociatedwithArtifact.png)
 
 - Are there unique cookie names or domains?
