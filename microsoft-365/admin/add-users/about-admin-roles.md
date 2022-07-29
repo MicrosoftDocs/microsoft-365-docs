@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: "Learn about admin roles, such as the Service admin role, which map to specific business functions and give permissions to do specific tasks in the admin center."
+description: "Learn about admin roles, such as the global admin role, or the service admin role. Roles map to specific business functions and give permissions to do specific tasks in the Microsoft 365 admin center."
 ---
 
 # About admin roles in the Microsoft 365 admin center
