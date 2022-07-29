@@ -11,6 +11,10 @@
         href: trial-playbook-defender-business.md
       - name: Compare plans for small and medium-sized businesses
         href: compare-mdb-m365-plans.md
+      - name: Preview features
+        href: mdb-preview.md
+      - name: Resources for partners
+        href: mdb-partners.md
       - name: Integration with Microsoft 365 Lighthouse
         href: mdb-lighthouse-integration.md
     - name: Get started
@@ -73,6 +77,8 @@
         href: mdb-offboard-devices.md
     - name: Reference information
       items: 
+      - name: How to get Microsoft Defender for Business servers (preview)
+        href: get-defender-business-servers.md
       - name: How to get help or contact support
         href: mdb-get-help.md
       - name: Frequently asked questions

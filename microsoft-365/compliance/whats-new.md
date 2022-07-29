@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Purview
+title: What's new in Microsoft Purview risk and compliance solutions
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,9 +20,7 @@ description: Whether it be adding new solutions to the compliance center, updati
 ms.custom: seo-marvel-mar2020
 ---
 
-# What's new in Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# What's new in Microsoft Purview risk and compliance solutions
 
 Whether it be adding new solutions to the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft Purview today.
 
@@ -37,6 +35,47 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 > - [What's new in Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+
+## June 2022
+
+### Compliance Manager
+
+- [Microsoft Purview Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md) - added three AAD roles that have permissions to create or edit alert policies.
+- [Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md) - new name and updated reference links for this getting-started tool for Compliance Manager formerly named 'Microsoft Compliance Configuration Analyzer'.
+
+### Data Loss Prevention
+
+- Numerous page updates for Microsoft Purview branded screenshots.
+
+### Data lifecycle management and records management
+
+- In preview: [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview)
+
+### Microsoft Priva
+
+- [Subject Rights Requests](/privacy/priva/subject-rights-requests) - significant updates, and restructuring of SRR content to better assist users through each progress step; details below.
+  - [Learn about Priva Subject Rights Requests](/privacy/priva/subject-rights-requests) - clearer articulation of customer value prop and general outline of the SRR process.
+  - [Understand the workflow and details pages](/privacy/priva/subject-rights-requests-workflow) - articulates the steps in completing a request, indicating manual vs. automatic progression, and linking off to detailed content; a section explains how to interpret and work with a request's details page, including the new "History" tab.
+  - [Create a request and define search settings](/privacy/priva/subject-rights-requests-create) - new framing with subheads explaining there are now two ways to create a request: via a custom method using a guided process, and via the new feature of using a template, whose search parameters aim to retrieve the most relevant content for the situation.
+  - [Data estimate and retrieval](/privacy/priva/subject-rights-requests-data-retrieval) - explains why some requests pause at the data estimate stage and how to adjust the search as a result; also explains how to set a request to pause first before automatically progressing to data retrieval.
+  - [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review) - new import file features allows users to bring files from non-Microsoft 365 locations, or files otherwise not picked up by the search, into the Data collected tab.
+  - [Generate reports and close requests](/privacy/priva/subject-rights-requests-reports) - clarifies when final data packages are generated and what types of files they include.
+  - [Integrate and extend through Microsoft Graph API and Power Automate](/privacy/priva/subject-rights-requests-automate) - revised the title of this previous Power Automate page and expanded page content to include Graph API content and reference links that previously lived on another page.
+
+### Sensitive Information Types
+
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md) - added section on services that EDM supports.
+
+### Sensitivity labels
+
+- In preview: [PDF support for Office apps](sensitivity-labels-office-apps.md#pdf-support), which includes converting documents to PDF format, inheriting the label with any visual markings and encryption. Print to PDF isn't supported, and this option becomes unavailable for users if their label policy is configured for mandatory labeling.
+- In preview: The dialog box that users see when their label policy is configured to require justification to remove or downgrade a label is updated to warn users that their typed response should not include sensitive data. The screenshot in the [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) section shows this updated dialog box that will make its way into the Office deployment channels for production use.
+- In preview: [Support for Outlook to apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) is just starting to roll out across client platforms.
+- For [auto-labeling policies](apply-sensitivity-label-automatically.md#creating-an-auto-labeling-policy), a new setting that can automatically turn on the policy if not edited within a set number of days.
+
+### Trainable Classifiers
+
+- [Learn about trainable classifiers](classifier-learn-about.md) - added Adult, Racy, Gory images trainable classifier.
 
 ## May 2022
 
@@ -290,32 +329,3 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - New [monitoring capabilities](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) for auto-labeling policies.
 - Now rolling out: default label for existing documents, and justification text for Office on the web.
 - Announced for the July Semi-Annual Enterprise Channel with version 2202+: Co-authoring and auditing for Outlook.
-
-## December 2021
-
-### Compliance and service assurance
-
-- [Azure, Dynamics 365, and Windows breach notification under the GDPR](/compliance/regulatory/gdpr-breach-notification) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications
-
-### eDiscovery
-
-- [eDiscovery (Premium) workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - updated with a new downloadable quick reference guide for managing Teams content in eDiscovery (Premium)
-
-### Data lifecycle management
-
-- [Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - added section about new diagnostics tool for archive mailboxes
-- [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST import now supports AzCopy v10
-- [Restore an inactive mailbox](restore-an-inactive-mailbox.md) - revised procedure to restore an inactive mailbox by first adding LegacyExchangeDN of inactive mailbox to target mailbox
-
-### Information protection
-
-- [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Purview Information Protection
-
-### Retention and records management
-
-- New guidance for [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-- New tenant settings rolling out: A records management setting that prevents the editing of properties for labeled SharePoint items that are marked as a record and locked, and other setting to prevent users from unlocking items that are marked as a record
-
-### Sensitivity labels
-
-- Mandatory labeling and a default label for Power BI are now generally available (GA)

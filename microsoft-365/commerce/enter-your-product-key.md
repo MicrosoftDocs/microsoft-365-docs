@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom: 
+- VSBFY23
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio

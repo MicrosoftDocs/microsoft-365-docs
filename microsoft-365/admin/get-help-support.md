@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
@@ -28,7 +29,11 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 ::: moniker range="o365-worldwide"
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 ## Watch: Get help or support
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197598).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -54,8 +59,12 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
-Technical support is provided in English 24 hours a day, 7 days a week.\
+Use the drop-down menu below to find the number for your country or region.
+
+[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+Billing support and Technical support hours (and languages) are listed on each country's page selected from the drop-down.
+
 Admins, have your account details ready when you call.
 
 > [!NOTE]
@@ -68,10 +77,6 @@ Admins, have your account details ready when you call.
 - **In Canada, call 1 800 865 9408.**
 
 - **In the United Kingdom, call 0800 032 6417.**
-
-If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
 
 ## Small business support with Business Assist
 

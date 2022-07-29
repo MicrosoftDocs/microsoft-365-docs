@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
 ---
 
 # Prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
 
-When alerts are triggered in Microsoft 365 Defender, automated investigation and response (AIR) will trigger to hunt across an organization's subscription, determine the impact and scope of the threat, and collate the information into a single Incident so that admins don’t have to manage multiple incidents.
+When alerts are triggered in Microsoft 365 Defender, automated investigation and response (AIR) will trigger to hunt across an organization's subscription, determine the impact and scope of the threat, and collate the information into a single Incident so that admins don't have to manage multiple incidents.
 
-## What you’ll need
+## What you'll need
 
 - Microsoft Defender for Office 365 Plan 2 or higher
 - Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)
@@ -42,7 +42,7 @@ If you are looking for specific alerts, either use the incident search capabilit
 
 ## Investigate & Respond to Incidents
 
-After you have prioritized your incident queue, click on the Incident you’d like to investigate to load the incidents Overview page. There will be useful information such as *MITRE ATT&CK techniques observed* and a *timeline of the attack*.
+After you have prioritized your incident queue, click on the Incident you'd like to investigate to load the incidents Overview page. There will be useful information such as *MITRE ATT&CK techniques observed* and a *timeline of the attack*.
 
 The tabs at the top of the incident page allow you to explore more details such as the affected users, mailboxes, endpoints, and et cetera.
 

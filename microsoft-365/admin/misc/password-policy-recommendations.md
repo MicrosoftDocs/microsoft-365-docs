@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -56,7 +57,8 @@ Good password practices fall into a few broad categories:
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
   
-- Maintain an 8-character minimum length requirement
+
+- Maintain an eight-character minimum length requirement
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 

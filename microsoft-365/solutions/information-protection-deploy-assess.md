@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom:
 description: Determine the data privacy regulations, the relevant scenarios, your readiness, and the sensitive information types that are in your Microsoft 365 environment.
 ---
@@ -205,9 +206,9 @@ See these articles for more information:
 
 - [Customize a built-in sensitive information type](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [Learn about sensitive information types](../compliance/sensitive-information-type-learn-about.md)
-- [Create a custom sensitive information type in the Microsoft 365 Purview compliance portal](../compliance/create-a-custom-sensitive-information-type.md)
-- [Create a custom sensitive information type in Security & Compliance PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Create custom sensitive information types with Exact Data Match based classification](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Create a custom sensitive information type in the Security & Compliance Center](../compliance/create-a-custom-sensitive-information-type.md)
+- [Create a custom sensitive information type in Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Create custom sensitive information types with Exact Data Match based classification](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
 
 ### Content Explorer
 

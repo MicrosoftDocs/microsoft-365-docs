@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinms, jmueller
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -99,6 +99,7 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Microsoft 365 E3
 - Microsoft 365 E5
 - Microsoft 365 F1
+- Microsoft 365 F3
 
 > [!NOTE]
 > Office 365 Extra File Storage is also available for GCC, GCC High, and DOD plans.
