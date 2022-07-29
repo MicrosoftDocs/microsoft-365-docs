@@ -45,7 +45,7 @@ Defender for Endpoint supports two ways to manage permissions:
 
 - **Basic permissions management**: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Azure Active Directory have full access. The Security reader role has read-only access and does not grant access to view machines/device inventory.
 
-- **Role-based access control (RBAC)**: Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
+- **Role-based access control (RBAC)**: Sets granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
 
 We recommend leveraging RBAC to ensure that only users that have a business justification can access Defender for Endpoint.
 
