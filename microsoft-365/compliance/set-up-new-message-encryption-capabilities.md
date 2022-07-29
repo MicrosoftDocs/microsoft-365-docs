@@ -101,10 +101,10 @@ You can verify that your Microsoft 365 tenant is properly configured to use Micr
 
    - The default template names may be different from those displayed above. See [Configuring and managing templates for Azure Information Protection](/azure/information-protection/configure-policy-templates) for more.
 
-4. If the test fails with an error message **Failed to acquire RMS templates**, execute the following commands and run the Test-IRMConfiguration cmdlet to verify that it passes.
+4. If the test fails with an error message **Failed to acquire RMS templates**, execute the following commands and run the Test-IRMConfiguration cmdlet to verify that it passes. Connect to the [AIPService module](/powershell/module/aipservice/?view=azureipps) to run the cmdlet.
 
    ```powershell
-   $RMSConfig = Get-AadrmConfiguration
+   $RMSConfig = Get-AipServiceConfiguration
    $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
    Set-IRMConfiguration -LicensingLocation $LicenseUri
    Set-IRMConfiguration -InternalLicensingEnabled $true
