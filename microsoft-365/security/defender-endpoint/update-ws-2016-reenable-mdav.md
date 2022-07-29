@@ -30,6 +30,7 @@ To update Windows Server 2016, ensure that the following prerequisites are fulfi
 
    > [!NOTE]
    > If you use a third-party antivirus solution such as McAfee and use it as the primary antivirus solution over MDAV, then McAfee will uninstall MDAV from the server machine. For more information on how McAfee uninstalls MDAV and the status of the Windows Defender feature after this uninstallation, see https://kcm.trellix.com/corporate/index?page=content&id=KB88214&locale=en_US. This step is optional and arises only if you use McAfee.
+
 3. Re-enable MDAV on the machine running Windows server 2016, Version 1803 or later. For more information, see [Re-enable MDAV on Windows Server, Version 1803 or later](switch-to-mde-phase-2.md).
 
 4. Reboot the system.
@@ -37,7 +38,6 @@ To update Windows Server 2016, ensure that the following prerequisites are fulfi
 
    > [!NOTE]
    > This platform update will be automatically installed if you run the [script](https://github.com/microsoft/mdefordownlevelserver/blob/main/Install.ps1). However, to run this script, your machine has to be in the state in which this script can run successfully.
-1. Install the MDE Unified client using the onboarding package group policy (it's a script).
 
 
 
