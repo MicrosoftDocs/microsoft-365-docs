@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the capabilities and features in Microsoft SharePoint Syntex.
+description: Learn about the capabilities and features in SharePoint Syntex.
 ---
 
 # Overview of Microsoft SharePoint Syntex
@@ -53,7 +53,7 @@ In SharePoint Syntex, you can build [custom models](model-types-overview.md) or 
 | Invoices model  | Receipts model  | 
 | ------------- | ------------- |
 | [Image] | [Image] |
-| Save time processing invoices. Automatically extract key info specific to invoices. <br>[Learn more](prebuilt-model-invoice.md) | Save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more](prebuilt-model-receipt.md) | 
+| Save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more](prebuilt-model-invoice.md) | Save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more](prebuilt-model-receipt.md) | 
 
 For more information about custom and trained models, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
