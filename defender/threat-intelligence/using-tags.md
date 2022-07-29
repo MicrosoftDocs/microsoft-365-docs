@@ -60,8 +60,8 @@ Just as users can add tags, they can also modify or remove them. Once a tag is a
 
 5. Add any tags you would like to associate with this indicator.
 
-> ![Note]
-> Press the Tab key to add a new indicator.
+    > [!Note]
+    > Press the Tab key to add a new indicator.
 
     ![Tags Search Add Tags](media/tagsSearchAddTags.png)
 
