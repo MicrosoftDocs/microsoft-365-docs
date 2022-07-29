@@ -144,11 +144,11 @@ The **Manage alert** pane allows you to view or specify:
      - **Not Set** (default).
      - **True positive** with a type of threat. Use this classification for alerts that accurately indicate a real threat. Specifying this threat type alerts your security team see threat patterns and act to defend your organization from them.
      - **Informational, expected activity** with a type of activity. Use this option for alerts that are technically accurate, but represent normal behavior or simulated threat activity. You generally want to ignore these alerts but expect them for similar activities in the future where the activities are triggered by actual attackers or malware. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
-     - **False positive** for types of alerts that were created even when there is no malicious activity or for a false alarm. Use the options in this category to classify alerts that are mistakenly identified as normal events or activities as malicious or suspicious. Unlike alerts for 'Informational, expected activity', which can also be useful for catching real threats, you generally don’t want to see these alerts again. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
+     - **False positive** for types of alerts that were created even when there is no malicious activity or for a false alarm. Use the options in this category to classify alerts that are mistakenly identified as normal events or activities as malicious or suspicious. Unlike alerts for 'Informational, expected activity', which can also be useful for catching real threats, you generally don't want to see these alerts again. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
 - A comment on the alert.
 
 >[!NOTE]
-> Around August 29th, 2022, previously supported alert determination values (‘Apt’ and ‘SecurityPersonnel’) will be deprecated and no longer available via the API.
+> Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>
@@ -173,11 +173,11 @@ The **Recommendations** tab provides next-step actions and advice for investigat
  
 ## Suppress an alert
 
-As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. For lower priority alerts, an analyst is still required to triage and resolve the alert which tends to be a manual process. A SOC analyst’s time is valuable, wanting to focus only on high severity and high priority alerts.
+As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. For lower priority alerts, an analyst is still required to triage and resolve the alert which tends to be a manual process. A SOC analyst's time is valuable, wanting to focus only on high severity and high priority alerts.
 
 Alert suppression provides the ability to tune and manage alerts in advance. This streamlines the alert queue and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs, and rule conditions are met. 
 
-You can create rule conditions based on ‘evidence types’ such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, user can apply the rule on the selected alert or any alert type that meets the rule conditions to suppress the alert. 
+You can create rule conditions based on 'evidence types' such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, user can apply the rule on the selected alert or any alert type that meets the rule conditions to suppress the alert. 
 
 > [!NOTE]
 > Suppression of alerts is not recommended. However in certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a suppression rule for the alert. 
@@ -232,7 +232,7 @@ To create a suppression rule for alerts:
     Enter **Name**, **Comment**,  and click **Save**.
 
 7. **Prevent the IOCs from being blocked in the future:**<br>
-Once you save the suppression rule, in the **Successful suppression rule creation** page that appears, you can add the selected IOCs as indicators to the “allow list” and prevent them from being blocked in the future. <br>
+Once you save the suppression rule, in the **Successful suppression rule creation** page that appears, you can add the selected IOCs as indicators to the "allow list" and prevent them from being blocked in the future. <br>
 All alert-related IOCs will be shown in the list. <br>
 IOCs that were selected in the suppression conditions will be selected by default.
       1. For example, you can add files to be allowed to the **Select evidence (IOC) to allow**. By default the file that triggered the alert is selected.
