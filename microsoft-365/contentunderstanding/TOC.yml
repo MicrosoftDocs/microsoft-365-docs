@@ -12,7 +12,7 @@
             - name: Create a content center 
               href: create-a-content-center.md
 
-    - name: Content understanding models
+    - name: AI models
       items:
             - name: Model types
               href: model-types-overview.md 

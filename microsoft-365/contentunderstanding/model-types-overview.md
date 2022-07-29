@@ -18,7 +18,7 @@ description: Learn about custom models and prebuilt models in Microsoft SharePoi
 
 # Overview of model types in Microsoft SharePoint Syntex
 
-Content understanding in SharePoint Syntex starts with models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+Content understanding in SharePoint Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
 SharePoint Syntex uses [custom models](#custom-models) and [trained models](#trained-models). 
 
