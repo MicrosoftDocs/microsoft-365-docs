@@ -101,9 +101,9 @@ header.from=contoso.com;compauth=pass reason=130
 
 ## PowerShell steps to add or remove a trusted ARC sealer
 
-**Admins can also set up ARC configurations with Exchange Online Powershell.**
+**Admins can also set up ARC configurations with Exchange Online PowerShell.**
 
-1. Connect to Exchange online powershell.
+1. Connect to Exchange Online PowerShell.
 2. Connect-ExchangeOnline.
 3. To add or update a domain into a trusted ARC sealer:
 </br>
@@ -138,6 +138,6 @@ Here, you see the same organization **after leveraging the ability to create a t
 
 ## Next steps: After you set up ARC for Microsoft 365 Defender for Office
 
-After setup, check your ARC Headers with [Message Header Analyzer](/connectivity-analyzer/message-header-analyzer).
+After setup, check your ARC Headers with [Message Header Analyzer](https://mha.azurewebsites.net).
 
 Review [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md), configuration steps.
