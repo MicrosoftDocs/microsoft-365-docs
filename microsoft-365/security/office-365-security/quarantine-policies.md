@@ -96,6 +96,8 @@ For new organizations or older organizations that never had end-user spam notifi
 
 1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & Rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
+   :::image type="content" source="../../media/mdo-quarantine-policy-page.png" alt-text="Quarantine policy page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-page.png":::
+
 2. On the **Quarantine policies** page, click ![Add custom policy icon.](../../media/m365-cc-sc-create-icon.png) **Add custom policy**.
 
 3. The **New policy** wizard opens. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. You'll need to identify and select the quarantine policy by name in upcoming steps. When you're finished, click **Next**.
@@ -526,6 +528,8 @@ The global settings for quarantine policies allow you to customize the quarantin
    - **Send end-user spam notification every (days)**: Select the frequency for quarantine notifications. The default value is 3 days, but you can select 1 to 15 days.
 
 4. When you're finished, click **Save**.
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Quarantine notification settings flyout in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
 
 ## View quarantine policies in the Microsoft 365 Defender portal
 

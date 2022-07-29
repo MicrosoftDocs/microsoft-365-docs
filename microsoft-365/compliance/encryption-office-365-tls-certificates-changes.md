@@ -138,7 +138,8 @@ The current Root CA, Intermediate CA, and leaf certificates will not be revoked.
 Under very rare circumstances, enterprise users may see certificate validation errors where the Root CA "DigiCert Global Root G2" appears as revoked. This is due to a known Windows bug under both of the following conditions:
 
 - The Root CA is in the [CurrentUser\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) and is missing the `NotBeforeFileTime` and `NotBeforeEKU` properties
-- The Root CA is also in the [LocalMachine\AuthRoot certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) but has both the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is in the [LocalMachine\AuthRoot certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) but has both the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is NOT in the [LocalMachine\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)
 
 All leaf certificates issued from this Root CA after the `NotBeforeFileTime` will appear revoked. 
 
@@ -177,7 +178,12 @@ certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
 
-A user can resolve the issue by deleting the copy of the Root CA in the `CurrentUser\Root` certificate store:
+A user can resolve the issue by deleting the copy of the Root CA in the `CurrentUser\Root` certificate store by doing:
 ```
 certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
+or 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+The first approach creates a Windows dialog that a user must click through while the second approach does not. 

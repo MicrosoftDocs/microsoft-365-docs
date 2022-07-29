@@ -226,7 +226,7 @@ See the [Configure advanced features in Defender for Endpoint](/windows/security
 
 ## Step 5 (required): Configure insider risk settings
 
-[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
+[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, intelligent detections, and more.
 
 Before configuring a policy, define the following insider risk settings:
 

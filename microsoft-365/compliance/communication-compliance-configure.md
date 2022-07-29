@@ -26,7 +26,7 @@ search.appverid:
 
 # Get started with communication compliance
 
-Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance). If you'd like to review how Contoso quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
+Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
 
 ## Subscriptions and licensing
 
@@ -154,11 +154,11 @@ Use the following chart to help you configure groups in your organization for co
 |Supervised users <br> Excluded users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups <br> Microsoft 365 groups with dynamic membership |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
 
-When you assign a *distribution group* in the policy, the policy monitors all emails and Teams chats from each user in the *distribution group*. When you assign a *Microsoft 365 group* in the policy, the policy detects all emails and Teams chats sent to the *Microsoft 365 group*,* not the individual emails and chats received by each group member. Using distribution groups in communication compliance policies are recommended so that individual emails and Teams chats from each user are automatically monitored.
+When you assign a *distribution group* in the policy, the policy detects all emails and Teams chats from each user in the *distribution group*. When you assign a *Microsoft 365 group* in the policy, the policy detects all emails and Teams chats sent to the *Microsoft 365 group*,* not the individual emails and chats received by each group member. Using distribution groups in communication compliance policies are recommended so that individual emails and Teams chats from each user are automatically detected.
 
-If you're an organization with an Exchange on-premises deployment or an external email provider and you want to detect Microsoft Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes to monitor. Later in these steps, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard. For more information about the requirements and limitations for enabling cloud-based storage and Teams support for on-premises users, see [Search for Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+If you're an organization with an Exchange on-premises deployment or an external email provider and you want to detect Microsoft Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes. Later in these steps, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard. For more information about the requirements and limitations for enabling cloud-based storage and Teams support for on-premises users, see [Search for Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
+To manage supervised users in large enterprise organizations, you may need to detect messages for all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to detect messages for thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
 
 1. Create a dedicated [distribution group](/powershell/module/exchange/new-distributiongroup) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
@@ -221,7 +221,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Confirm or update the policy name. Policy names can't be changed once the policy is created.
 
-    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to monitor for internal communications.
+    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to detect internal communications.
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
@@ -242,7 +242,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Choose the communication direction to detect, including inbound, outbound, or internal communications.
 
-    - Define the communication compliance policy [conditions](/microsoft-365/compliance/communication-compliance-policies#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
+    - Define the communication compliance policy [conditions](/microsoft-365/compliance/communication-compliance-policies#conditional-settings). You can choose from message address, keyword, file types, and size match conditions.
 
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
 
