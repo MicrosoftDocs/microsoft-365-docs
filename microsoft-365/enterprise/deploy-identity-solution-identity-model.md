@@ -12,6 +12,9 @@ ms.collection:
 - Ent_O365
 - M365-identity-device-management
 - M365-security-compliance
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 f1.keywords:
 - CSH
 ms.custom:

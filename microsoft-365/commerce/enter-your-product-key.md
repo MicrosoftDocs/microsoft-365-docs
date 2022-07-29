@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom: 
+- VSBFY23
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio

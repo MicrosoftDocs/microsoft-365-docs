@@ -83,6 +83,9 @@ determination|Enum|Specifies the determination of the incident. Possible values 
 tags|string List|List of Incident tags.
 comment|string|Comment to be added to the incident.
 
+>[!NOTE]
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+
 ## Response
 
 If successful, this method returns `200 OK`. The response body will contain the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns

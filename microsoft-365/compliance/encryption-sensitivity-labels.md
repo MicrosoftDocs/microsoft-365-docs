@@ -22,8 +22,6 @@ ms.custom: seo-marvel-apr2020
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When you create a sensitivity label, you can restrict access to content that the label will be applied to. For example, with the encryption settings for a sensitivity label, you can protect content so that:
 
 - Only users within your organization can open a confidential document or email.
@@ -78,13 +76,13 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 ## How to configure a label for encryption
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Files & emails** is selected for the label's scope: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the label's scope: 
     
     ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. Then, on the **Choose protection settings for files and emails** page, make sure you select **Encrypt files and emails**
+2. Then, on the **Choose protection settings for labeled items** page, make sure you select **Encrypt items**
     
-    ![Sensitivity label protection options for files and emails.](../media/protection-options-sensitivity-label.png)
+    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Sensitivity label protection options for items." Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  On the **Encryption** page, select one of the following options:
     
@@ -94,7 +92,7 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
     
     - **Configure encryption settings**: Turns on encryption and makes the encryption settings visible:
         
-        ![Sensitivity label options for encryption.](../media/encrytion-options-sensitivity-label.png)
+        :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="Sensitivity label options for encryption. "lightbox="../media/encrytion-options-sensitivity-label.png":::
         
         Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
 
@@ -286,7 +284,7 @@ You can use the following options to let users assign permissions when they manu
 
     This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users, or the label is visible for consistency but it can't be applied with an explanation message to users.
     
-    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions: - Prompt users**.
+    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the rows for **Let users assign permissions**.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
@@ -341,6 +339,16 @@ For built-in labeling, and for the Azure Information Protection unified labeling
 
 > [!TIP]
 > If users were familiar with configuring custom permissions with the Azure Information Protection unified labeling client before [co-authoring was enabled](sensitivity-labels-coauthoring.md), you might find it helpful to review the mapping of permission levels to individual usage rights: [Rights included in permissions levels](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
+
+#### Support for organization-wide custom permissions
+
+Now rolling out in preview for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+
+![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
+
+For example, a user types "@contoso.com" (or "contoso.com") and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
+
+It's important to let users know that access isn't restricted to just the users in the domain specified. For example, "@sales.contoso.com" wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
 
 ## Example configurations for the encryption settings
 
@@ -410,7 +418,7 @@ The new users that you add will be able open documents and emails that have alre
 
 This configuration has the advantage that you don't need to specify users, groups, or domains to encrypt an email or document. The content will still be encrypted and you can still specify usage rights, an expiry date, and offline access.
 
-Use this configuration only when you don't need to restrict who can open the protected document or email. [More information about this setting](#requirements-and-limitations-for-add-any-authenticated-users)
+Use this configuration only when you don't need to restrict who can open the protected document or email. See [more information about this setting](#requirements-and-limitations-for-add-any-authenticated-users).
 
 1. On the **Encryption** page: For **Assign permissions now or let users decide?** make sure **Assign permissions now** is selected.
 

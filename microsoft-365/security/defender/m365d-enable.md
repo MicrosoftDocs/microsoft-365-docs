@@ -14,7 +14,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+    - M365-security-compliance
+    - m365solution-getstarted
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -88,7 +90,7 @@ Once the service is provisioned, it adds:
 *Microsoft 365 Defender portal with incidents management and other capabilities*
 
 ### Getting Microsoft Defender for Identity data 
-To enable the integration with Microsoft Defender for Cloud Apps, you'll need to login to the Microsoft Defender for Cloud Apps at least once.
+To enable the integration with Microsoft Defender for Cloud Apps, you'll need to log in to the Microsoft Defender for Cloud Apps at least once.
 
 ## Get assistance
 

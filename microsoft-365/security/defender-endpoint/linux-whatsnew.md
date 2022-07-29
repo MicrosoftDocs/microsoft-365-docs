@@ -31,6 +31,28 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+  <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
+
+&ensp;Released: **July 21, 2022**<br/>
+&ensp;Published: **July 21, 2022**<br/>
+&ensp;Build: **101.73.77**<br/>
+&ensp;Release version: **30.122062.17377.0**<br/>
+&ensp;Engine version: **1.1.19200.3**<br/>
+&ensp;Signature version: **1.367.1011.0**<br/>
+
+
+**What's new**
+
+- Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
+- From this build onwards, the product will have the new anti-malware engine by default
+- Performance improvements for file copy operations
+- Bug fixes
+</br>
+
+<br/><br/>
+</details>
+
+<details>
   <summary>Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
 
 &ensp;Released: **June 24, 2022**<br/>
@@ -41,6 +63,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
+- Fix to support definitions storage in non-standard locations (outside of /var) for v2 definition updates
 - Fixed an issue in the product sensor used on RHEL 6 that could lead to an OS hang
 - `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
 - Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
