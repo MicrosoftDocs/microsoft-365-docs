@@ -32,17 +32,17 @@ Following are the vulnerability management features and capabilities in Microsof
 
 - **Dashboard**: Provides information about vulnerabilities, exposure, and recommendations. You can see recent remediation activities, exposed devices, and ways to improve your company's overall security. Each card in the dashboard includes a link to more detailed information or to a page where you can take a recommended action.
 
-:::image type="content" source="media/mdb-mdvm-dashboard.png" alt-text="Screenshot of Microsoft Defender Vulnerability Management Dashboard." lightbox="media/mdb-mdvm-dashboard.png":::
+    :::image type="content" source="media/mdb-mdvm-dashboard.png" alt-text="Screenshot of Microsoft Defender Vulnerability Management Dashboard." lightbox="media/mdb-mdvm-dashboard.png":::
 
 - **Recommendations**: Lists current security recommendations and related threat information to review and consider. When you select an item in the list, a flyout panel opens with more details about threats and actions you can take.
 - **Remediation**: Lists any remediation actions and their status. Remediation activities can include sending a file to quarantine, stopping a process from running, and blocking a detected threat from running. Remediation activities can also include updating a device, running an antivirus scan, and more. 
 
-:::image type="content" source="media/mdb-mdvm-remediation.png" alt-text="Screenshot of Microsoft Defender Vulnerability Management-Remediation." lightbox="media/mdb-mdvm-remediation.png":::
+    :::image type="content" source="media/mdb-mdvm-remediation.png" alt-text="Screenshot of Microsoft Defender Vulnerability Management-Remediation." lightbox="media/mdb-mdvm-remediation.png":::
 
 - **Inventories**: Lists software and apps currently in use in your organization. You'll see browsers, operating systems, and other software on devices, along with identified weaknesses and threats.
 - **Weaknesses**: Lists vulnerabilities along with the number of exposed devices in your organization. If you see "0" in the Exposed devices column, you do not have to take any immediate action. However, you can learn more about each vulnerability listed on this page. Select an item to learn more about it and what you can do to mitigate the potential threat to your company.
 
-:::image type="content" source="media/mdb-mdvm-weakness-details.png" alt-text="Screenshot of Microsoft Defender Vulnerability Management-Weaknesses." lightbox="media/mdb-mdvm-weakness-details.png":::
+    :::image type="content" source="media/mdb-mdvm-weakness-details.png" alt-text="Screenshot of Microsoft Defender Vulnerability Management-Weaknesses." lightbox="media/mdb-mdvm-weakness-details.png":::
 
 - **Event timeline**: Lists vulnerabilities that affect your organization in a timeline view.   
 
