@@ -39,7 +39,7 @@ Deploying Microsoft Defender for Endpoint is a two-step process.
 
 ## Role-based access control
 
-Microsoft recommends using Privileged Identity Management to manage your roles to provide additional auditing, control, and access review for users with directory permissions.
+We recommend using Privileged Identity Management to manage your roles to provide additional auditing, control, and access review for users with directory permissions.
 
 Defender for Endpoint supports two ways to manage permissions:
 
