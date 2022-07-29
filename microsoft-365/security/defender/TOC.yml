@@ -477,6 +477,8 @@
               href: ../intelligence/macro-malware.md
             - name: Phishing
               href: ../intelligence/phishing.md
+            - name: Phishing trends and techniques
+              href: ../intelligence/phishing-trends.md
             - name: Ransomware
               href: /security/compass/human-operated-ransomware
             - name: Rootkits
@@ -487,6 +489,8 @@
               href: ../intelligence/support-scams.md
             - name: Trojans
               href: ../intelligence/trojans-malware.md
+            - name: Troubleshoot MSI portal errors caused by admin block
+              href: ../intelligence/portal-submission-troubleshooting.md
             - name: Unwanted software
               href: ../intelligence/unwanted-software.md
             - name: Worms
