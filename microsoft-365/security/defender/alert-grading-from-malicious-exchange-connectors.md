@@ -86,7 +86,7 @@ In this section, we will describe steps to investigate an alert and remediate th
   
 ## Advanced Hunting Queries
 
-You can use [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide) queries to gather information related to an alert and determine whether the activity is suspicious. 
+You can use [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?) queries to gather information related to an alert and determine whether the activity is suspicious. 
 
 Ensure you have access to the following tables:
 
