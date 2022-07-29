@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about prebuilt models in Microsoft SharePoint Syntex.
+description: Learn about trained models in SharePoint Syntex.
 ---
 
 # Overview of trained models overview in Microsoft SharePoint Syntex
@@ -30,11 +30,11 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Available trained models
 
-Currently, there are two trained models available: invoice and receipt.
+Currently, there are two trained models available: invoices and receipts.
 
-- The trained *invoice model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
+- The trained *invoices model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
 
-- The trained *receipt model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+- The trained *receipts model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
 Additional trained models will be available in future releases.
 

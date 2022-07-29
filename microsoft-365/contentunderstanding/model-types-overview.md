@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about custom models and prebuilt models in Microsoft SharePoint Syntex.
+description: Learn about custom models and trained models in Microsoft SharePoint Syntex.
 ---
 
 # Overview of model types in Microsoft SharePoint Syntex
@@ -22,7 +22,7 @@ Content understanding in SharePoint Syntex starts with AI models. Models let you
 
 SharePoint Syntex uses [custom models](#custom-models) and [trained models](#trained-models). 
 
-[diagram]
+[Diagram]
 
 ## Custom models
 
@@ -72,21 +72,20 @@ If you don't need to build a custom model, you can use a [trained model](prebuil
 
 Trained models include:
 
-- [Invoices](#invoice-models)
-- [Receipts](#receipt-models)
+- [Invoices](#invoices-model)
+- [Receipts](#receipts-model)
 
+Trained models are prebuilt to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
-Trained models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
+### Invoices model
 
-### Invoice models
-
-The trained invoice model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
+The trained invoices model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
 
 For more information about trained invoice models, see [Use a trained model to extract information from invoices](prebuilt-model-invoice.md).
 
-### Receipt models
+### Receipts model
 
-The trained receipt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+The trained receipts model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
 For more information about trained receipt models, see [Use a trained model to extract information from receipts](prebuilt-model-receipt.md).
 

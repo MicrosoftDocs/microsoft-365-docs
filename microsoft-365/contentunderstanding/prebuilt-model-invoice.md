@@ -12,17 +12,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create and configure a trained model in SharePoint Syntex.
+description: Learn how to use a trained invoices model in SharePoint Syntex.
 
 ---
 
 # Use a trained model to extract info from invoices in Microsoft SharePoint Syntex
 
-The trained *invoice model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
+The trained *invoices model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
 
-## Create a trained invoice model
+## Use an invoices model
 
-Follow these steps to create a trained model to classify documents in SharePoint Syntex.
+Follow these steps to use a trained invoices model to classify documents in SharePoint Syntex.
 
 1. From the **Models** page, select **Create a model**.
 

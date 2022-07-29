@@ -12,17 +12,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create, configure, and use a trained model in SharePoint Syntex.
+description: Learn how to use a trained receipts model in SharePoint Syntex.
 
 ---
 
 # Use a trained model to extract info from receipts in Microsoft SharePoint Syntex
 
-The trained *receipt model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+The trained *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-## Create a trained receipt model
+## Create a receipts model
 
-Follow these steps to create a trained receipt model to classify documents in SharePoint Syntex.
+Follow these steps to use a trained receipts model to classify documents in SharePoint Syntex.
 
 1. From the **Models** page, select **Create a model**.
 
