@@ -62,7 +62,7 @@ To find the unlicensed accounts in your organization, run this command.
 Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
 ```
 
-To find the unlicensed Synchornized users in your oganization, run this command.
+To find the unlicensed synchronized users in your organization, run this command.
 
 ```powershell
 Get-MgUser -Filter 'assignedLicenses/$count eq 0 and OnPremisesSyncEnabled eq true' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All -Select UserPrincipalName
