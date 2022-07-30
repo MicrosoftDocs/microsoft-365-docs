@@ -36,7 +36,7 @@ By default, there's nothing to configure for cross-tenant authentication to work
 
 For example, another organization might have settings configured that prevent their users from opening content encrypted by your organization. In this scenario, until their Azure AD admin reconfigures their cross-tenant settings, an external user attempting to open that content will see a message that informs them **Access is blocked by the organization** with an email address to contact to request access. 
 
-Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to Microsoft Azure Information Protection, which has an app ID of `00000012-0000-0000-c000-000000000000`. If this access isn't allowed, users can't be authenticated and authorized to open encrypted content. This configuration can be set as a default setting and as an organizational setting:
+Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to **Microsoft Azure Information Protection**, which has an app ID of `00000012-0000-0000-c000-000000000000`. If this access isn't allowed, users can't be authenticated and authorized to open encrypted content. This configuration can be set as a default setting and as an organizational setting:
 
 - To permit sharing of encrypted content with another organization, create an inbound setting that allows access to Microsoft Azure Information Protection (ID: 00000012-0000-0000-c000-000000000000). 
 
@@ -44,19 +44,19 @@ Whenever cross-tenant access settings restrict access by applications, they must
 
 When these settings are configured for Microsoft Azure Information Protection, the application displays **Microsoft Rights Management Services**.
 
-For more information how to configure these cross-tenant access settings, see [Configure cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration).
+For instructions to configure these cross-tenant access settings, see [Configure cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration).
 
 If you have also configured Azure AD Conditional Access policies that require multi-factor authentication (MFA) for users, cross-tenant access settings must also be configured to trust MFA claims from one, many, or all external Azure AD organizations. Then see the following section how to configure Conditional Access for encrypted content.
 
 ## Conditional Access policies and encrypted content
 
-If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
+If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview) that include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
-Without this guest account, they can't open the encrypted content and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
+Without this guest account, those users can't open the encrypted content and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
 
-If you can't create and configure guest accounts in your tenant for external users who need to open content encrypted by your organization, you must either remove Azure Information Protection from the Conditional Access policies, or exclude external users from the policies.
+If you can't create and configure guest accounts in your tenant for external users who need to open content encrypted by your organization, you must either remove Microsoft Azure Information Protection from the Conditional Access policies, or exclude external users from the policies.
 
-For more information about Conditional Access and Azure Information Protection, see the frequently asked question, [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+For more information, see the frequently asked question, [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## Next steps
 
