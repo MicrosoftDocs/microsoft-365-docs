@@ -62,6 +62,6 @@ For more information about Conditional Access and Azure Information Protection, 
 
 If you use [sensitivity labels](sensitivity-labels.md) to encrypt documents and emails, you might be interested in [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) to understand which settings apply across tenants, and options for users who don't have an account in Azure AD. 
 
-If you're interested to learn the technical details of how the encryption service works, see [How does Azure RMS work? Under the hood](/azure/information-protection/how-does-it-work).
+If you're interested to learn how and when the encryption service is accessed, see [Walkthrough of how Azure RMS works: First use, content protection, content consumption](/azure/information-protection/how-does-it-work#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption).
 
 
