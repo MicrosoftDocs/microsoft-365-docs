@@ -16,7 +16,7 @@ description: How to configure Azure AD cross-tenant access settings and Conditio
 
 # Azure AD configuration for encrypted content
 
-If you protect sensitive items such as emails and documents by using encryption from the Azure Rights Management Service from [Microsoft Purview Information Protection](information-protection.md), there are some optional Azure Active Directory (AD) configurations that can prevent authorized access to this encrypted content.
+If you protect sensitive items such as emails and documents by using encryption from the Azure Rights Management Service from [Microsoft Purview Information Protection](information-protection.md), there are some Azure Active Directory (Azure AD) configurations that can prevent authorized access to this encrypted content.
 
 Similarly, if your users receive encrypted email from another organization or collaborate with other organizations that encrypt documents by using the Azure Rights Management Service, your users might not be able to open that email or document because of how their Azure AD is configured.
 
@@ -28,7 +28,7 @@ For example:
 
 - Users can successfully open an encrypted document when they are in the office, but can't when they try to access this document remotely and they're prompted for multi-factor authentication (MFA).
 
-To ensure that access to the encryption service isn't inadvertently blocked, use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization. Without access to this service, users can't be authenticated and authorized to open encrypted content.
+To ensure access to the encryption service isn't inadvertently blocked, use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization. Without access to this service, users can't be authenticated and authorized to open encrypted content.
 
 ## How to configure cross-tenant access settings for encrypted content
 
