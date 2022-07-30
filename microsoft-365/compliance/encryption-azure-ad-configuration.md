@@ -28,7 +28,7 @@ For example:
 
 - Users can successfully open an encrypted document when they are in the office, but can't when they try to access this document remotely and they're prompted for multi-factor authentication (MFA).
 
-Use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization, to ensure that access to the encryption service isn't inadvertently blocked. Without access to this service, users can't be authenticated and authorized to open encrypted content.
+To ensure that access to the encryption service isn't inadvertently blocked, use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization. Without access to this service, users can't be authenticated and authorized to open encrypted content.
 
 ## How to configure cross-tenant access settings for encrypted content
 
