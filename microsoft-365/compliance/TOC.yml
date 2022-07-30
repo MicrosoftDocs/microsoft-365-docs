@@ -1032,6 +1032,8 @@
       items: 
         - name: Understand encryption
           href: encryption.md
+        - name: Configure Azure AD
+          href: encryption-azure-ad-configuration.md
         - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
         - name: Double Key Encryption FAQ
