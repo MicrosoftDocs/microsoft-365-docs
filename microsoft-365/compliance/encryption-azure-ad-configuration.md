@@ -48,7 +48,7 @@ For more information how to configure these cross-tenant access settings, see [C
 
 If you have also configured Azure Active Directory Conditional Access policies that require multi-factor authentication (MFA) for users, cross-tenant access settings must also be configured to trust MFA claims from one, many, or all external Azure AD organizations. Then see the following section how to configure Conditional Access for encrypted content.
 
-## Conditional Access policies
+## How to configure Conditional Access policies for encrypted content
 
 If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
