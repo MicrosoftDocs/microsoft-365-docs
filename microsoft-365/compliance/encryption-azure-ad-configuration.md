@@ -29,7 +29,7 @@ Similarly, if your users receive encrypted email from another organization or co
 
 The optional Azure AD configurations that can prevent authorized access to encrypted content include Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and Azure AD [Conditional Access](/azure/active-directory/conditional-access/overview).
 
-For example:
+Example scenarios where the configuration of Azure AD can prevent authorized access to encrypted content:
 
 - A user can't open encrypted email sent from another organization. Or, a user reports that the recipients in another organization can't open the encrypted email they sent them.
 
