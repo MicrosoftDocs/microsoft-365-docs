@@ -30,7 +30,7 @@ For example:
 
 To ensure access to the encryption service isn't inadvertently blocked, use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization. Without access to this service, users can't be authenticated and authorized to open encrypted content.
 
-## How to configure cross-tenant access settings for encrypted content
+## Cross-tenant access settings and encrypted content
 
 By default, there's nothing to configure for cross-tenant authentication to work when users protect content by using encryption from the Azure Rights Management Service. However, your organization can restrict access by using Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview). Conversely, another organization can also configure these settings to restrict access with users in your organization. These settings affect opening any encrypted items, which include encrypted emails and encrypted documents.
 
@@ -48,7 +48,7 @@ For more information how to configure these cross-tenant access settings, see [C
 
 If you have also configured Azure AD Conditional Access policies that require multi-factor authentication (MFA) for users, cross-tenant access settings must also be configured to trust MFA claims from one, many, or all external Azure AD organizations. Then see the following section how to configure Conditional Access for encrypted content.
 
-## How to configure Conditional Access policies for encrypted content
+## Conditional Access policies and encrypted content
 
 If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
