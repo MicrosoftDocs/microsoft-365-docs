@@ -22,7 +22,7 @@ Similarly, if your users receive encrypted email from another organization or co
 
 For example:
 
-- A user can't open encrypted email sent from another organization. Or, a user reports that the recipients in another organization can't open the encrypted email they sent them.
+- A user can't open encrypted email sent from another organization. Or, a user reports that the recipients in another organization can't open an encrypted email that they sent them.
 
 - Your organization collaborates with another organization on a joint project, and project documents are protected by encrypting them, granting access by using groups in Azure AD. Users can't open the documents encrypted by users in the other organization.
 
