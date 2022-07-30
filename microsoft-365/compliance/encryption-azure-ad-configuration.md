@@ -1,5 +1,5 @@
 ---
-title: "Azure AD configuration for encryption from Microsoft Purview Information Protection"
+title: "Azure AD configuration for content encrypted by Microsoft Purview Information Protection"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
-description: Azure AD management considerations when content is encrypted by Microsoft Purview Information Protection.
+description: How to configure Azure AD cross-tenant access settings and Conditional Access policies for content encrypted by Microsoft Purview Information Protection.
 ---
 
-# Azure AD configuration for encryption content
+# Azure AD configuration for encrypted content
 
 If you protect sensitive items such as emails and documents by using encryption from the Azure Rights Management Service from [Microsoft Purview Information Protection](information-protection.md), there are some optional Azure Active Directory (AD) configurations that can prevent authorized access to this encrypted content.
 
