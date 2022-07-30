@@ -22,22 +22,22 @@ Similarly, if your users receive encrypted email from another organization or co
 
 > [!NOTE]
 > Examples of encryption by the Azure Rights Management Service include:
-> - A file or email that has a [sensitivity label](sensitivity-labels.md) applied and that label applies the encryption.
+> - A file or email that has a [sensitivity label](sensitivity-labels.md) applied from a Microsoft 365 app or service, and that label applies the encryption.
 > - Emails that aren't labeled but are still encrypted by using [Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md).
+> A file or email that's encrypted by a third-party solution using the [Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk).
 > - A document or email that has been encrypted in an Office app by using the older Information Rights Management (IRM) feature to restrict access.
-> - A document or email that's encrypted by a third-party solution using the Microsoft Information Protection SDK.
 
-These optional Azure AD configurations that can prevent authorized access to encrypted content include Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and Azure AD [Conditional Access](/azure/active-directory/conditional-access/overview).
+The optional Azure AD configurations that can prevent authorized access to encrypted content include Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and Azure AD [Conditional Access](/azure/active-directory/conditional-access/overview).
 
 For example:
 
 - A user can't open encrypted email sent from another organization. Or, a user reports that the recipients in another organization can't open the encrypted email they sent them.
 
-- Your organization collaborates with another organization on a joint project, and project documents are protected by encrypting them, granting access and editing permissions by using groups in Azure AD. Users can't open the documents encrypted users in the other organization.
+- Your organization collaborates with another organization on a joint project, and project documents are protected by encrypting them, granting access by using groups in Azure AD. Users can't open the documents encrypted by users in the other organization.
 
-- Users can successfully open an encrypted document when they are in the office, but can't when they try to access this document remotely and they're prompted for two-factor authentication.
+- Users can successfully open an encrypted document when they are in the office, but can't when they try to access this document remotely and they're prompted for multi-factor authentication (MFA).
 
-Use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator, to ensure that access to the encryption service isn't inadvertently blocked. Without access to this service, users can't be authenticated and authorized to open encrypted content.
+Use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization, to ensure that access to the encryption service isn't inadvertently blocked. Without access to this service, users can't be authenticated and authorized to open encrypted content.
 
 ## How to configure cross-tenant access settings for encrypted content
 
