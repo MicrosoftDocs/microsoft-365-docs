@@ -23,7 +23,7 @@ Similarly, if your users receive encrypted email from another organization or co
 > [!NOTE]
 > Examples of encryption by the Azure Rights Management Service include:
 > - A file or email that has a [sensitivity label](sensitivity-labels.md) applied and that label applies the encryption.
-> - Emails that aren't labeled but are still encrypted by using [Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities).
+> - Emails that aren't labeled but are still encrypted by using [Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md).
 > - A document or email that has been encrypted in an Office app by using the older Information Rights Management (IRM) feature to restrict access.
 > - A document or email that's encrypted by a third-party solution using the Microsoft Information Protection SDK.
 
