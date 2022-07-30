@@ -20,16 +20,7 @@ If you protect sensitive items such as emails and documents by using encryption 
 
 Similarly, if your users receive encrypted email from another organization or collaborate with other organizations that encrypt documents by using the Azure Rights Management Service, your users might not be able to open that email or document because of how their Azure AD is configured.
 
-> [!NOTE]
-> Examples of encryption by the Azure Rights Management Service include:
-> - A file or email that has a [sensitivity label](sensitivity-labels.md) applied from a Microsoft 365 app or service, and that label applies the encryption.
-> - Emails that aren't labeled but are still encrypted by using [Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md).
-> A file or email that's encrypted by a third-party solution using the [Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk).
-> - A document or email that has been encrypted in an Office app by using the older Information Rights Management (IRM) feature to restrict access.
-
-The optional Azure AD configurations that can prevent authorized access to encrypted content include Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and Azure AD [Conditional Access](/azure/active-directory/conditional-access/overview).
-
-Example scenarios where the configuration of Azure AD can prevent authorized access to encrypted content:
+For example:
 
 - A user can't open encrypted email sent from another organization. Or, a user reports that the recipients in another organization can't open the encrypted email they sent them.
 
