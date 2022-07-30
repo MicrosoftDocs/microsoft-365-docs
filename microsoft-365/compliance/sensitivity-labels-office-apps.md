@@ -227,11 +227,11 @@ This means that if you share documents with another organization that uses diffe
 
 ### Sharing encrypted documents with external users
 
-In addition to restricting access to users in your own organization, you can extend access to any other user who has an account in Azure Active Directory. By default, these external users will be authenticated without any additional configuration. However, there are additional configuration steps for Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and [Conditional Access](/azure/active-directory/conditional-access/overview). For more information, see [Azure AD configuration for encryption content](encryption-azure-ad-configuration.md).
+Besides restricting access to users in your own organization, you can extend access to any other user who has an account in Azure Active Directory (Azure AD). By default, these external users will be authenticated without any additional configuration. However, there might be additional configuration required for Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and [Conditional Access](/azure/active-directory/conditional-access/overview). For more information, see [Azure AD configuration for encryption content](encryption-azure-ad-configuration.md).
 
 All Office apps and other [RMS-enlightened application](/azure/information-protection/requirements-applications#rms-enlightened-applications) can open encrypted documents after the user has successfully authenticated. 
 
-If external users do not have an account in Azure Active Directory, they can authenticate by using guest accounts in your tenant. These guest accounts can also be used to access shared documents in SharePoint or OneDrive when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
+If external users don't have an account in Azure AD, they can authenticate by using guest accounts in your tenant. These guest accounts can also be used to access shared documents in SharePoint or OneDrive when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
 
 - One option is to create these guest accounts yourself. You can specify any email address that these users already use. For example, their Gmail address.
     
