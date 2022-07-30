@@ -46,7 +46,7 @@ When these settings are configured for Microsoft Azure Information Protection, t
 
 For more information how to configure these cross-tenant access settings, see [Configure cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration).
 
-If you have also configured Azure Active Directory Conditional Access policies that require multi-factor authentication (MFA) for users, cross-tenant access settings must also be configured to trust MFA claims from one, many, or all external Azure AD organizations. Then see the following section how to configure Conditional Access for encrypted content.
+If you have also configured Azure AD Conditional Access policies that require multi-factor authentication (MFA) for users, cross-tenant access settings must also be configured to trust MFA claims from one, many, or all external Azure AD organizations. Then see the following section how to configure Conditional Access for encrypted content.
 
 ## How to configure Conditional Access policies for encrypted content
 
