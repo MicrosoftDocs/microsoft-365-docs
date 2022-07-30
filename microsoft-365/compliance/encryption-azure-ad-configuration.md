@@ -52,7 +52,7 @@ If you have also configured Azure Active Directory Conditional Access policies t
 
 If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
-Without this guest account, they can't open the encrypted document and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
+Without this guest account, they can't open the encrypted content and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
 
 If you can't create and configure guest accounts in your tenant for external users who need to open content encrypted by your organization, you must either remove Azure Information Protection from the Conditional Access policies, or exclude external users from the policies.
 
@@ -60,8 +60,10 @@ For more information about Conditional Access and Azure Information Protection, 
 
 ## Next steps
 
-If you use sensitivity labels to encrypt documents and emails, you might be interested in [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) to understand which settings apply across tenants, and options for users who don't have an account in Azure AD. For instructions to configure a label for encryption, see [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md).
+If you use [sensitivity labels](sensitivity-labels.md) to encrypt documents and emails, you might be interested in [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) to understand which settings apply across tenants, and options for users who don't have an account in Azure AD. 
 
-If you're interested to learn in detail how the encryption service works, see [How does Azure RMS work? Under the hood](/azure/information-protection/how-does-it-work).
+For instructions to configure a label for encryption, see [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md).
+
+If you're interested to learn the technical details of how the encryption service works, see [How does Azure RMS work? Under the hood](/azure/information-protection/how-does-it-work).
 
 
