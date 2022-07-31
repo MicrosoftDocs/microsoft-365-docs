@@ -21,7 +21,7 @@ ms.technology: mdo
 
 # Assess the impact of security configuration changes with Explorer
 
-Before you make change(s) to your security configuration, such as policies or transport rules, it’s important to understand the impact of the change(s) so that you can plan and ensure *minimal* disruption to your organization.
+Before you make change(s) to your security configuration, such as policies or transport rules, it's important to understand the impact of the change(s) so that you can plan and ensure *minimal* disruption to your organization.
 
 This step-by-step guide will take you through assessing a change, and exporting the impacted emails for assessment. The procedure can be applied to many different changes, by altering the criteria (filters) you use in explorer.
 
