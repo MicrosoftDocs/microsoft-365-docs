@@ -15,6 +15,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/01/2022
+ms.reviewer: tewchen
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
