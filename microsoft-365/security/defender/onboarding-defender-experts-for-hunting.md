@@ -100,6 +100,33 @@ The option to **Ask Defender Experts** is available in several places throughout
 > [!NOTE]
 > If you'd like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.
 
+## Sample questions you can ask from Defender Experts
+
+### Alert information
+
+- We saw a new type of alert for a living-off-the-land binary. We can provide the alert ID. Can you tell us more about this alert and how we can investigate it further?
+- We've observed two similar attacks, which both try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
+- We received an odd alert today about an abnormal number of failed logins from a high profile user's device. We can't find any further evidence for these attempts. How can Microsoft 365 Defender see these attempts? What type of logins are being monitored?
+- Can you give more context or insight about the alert, "Suspicious behavior by a system utility was observed"?
+- I observed an alert titled "Creation of forwarding/redirect rule". I believe the activity is benign. Can you tell me why I received an alert?
+
+### Possible device compromise
+
+- Can you help explain why we see a message or alert for "Unknown process observed" on many devices in our organization? We appreciate any input to clarify whether this message or alert is related to malicious activity.
+- Can you help validate a possible compromise on the following system, dating from last week? It's behaving similarly as a previous malware detection on the same system six months ago.
+
+### Threat intelligence details
+
+- We detected a phishing email that delivered a malicious Word document to a user. The document caused a series of suspicious events, which triggered multiple alerts for a particular malware family. Do you have any information on this malware? If yes, can you send us a link?
+- We recently saw a blog post about a threat that is targeting our industry. Can you help us understand what protection Microsoft 365 Defender provides against this threat actor?
+- We recently observed a phishing campaign conducted against our organization. Can you tell us if this was targeted specifically to our company or vertical?
+
+### Microsoft Defender Experts for Hunting' alert communications
+
+- Can your incident response team help us address the targeted attack notification that we got?
+- We received this Defender Experts Notification from Microsoft Defender Experts for Hunting. We don't have our own incident response team. What can we do now, and how can we contain the incident?
+- We received a Defender Experts Notification from Microsoft Defender Experts for Hunting. What data can you provide to us that we can pass on to our incident response team?
+
 ### Next step
 
 - [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md)
