@@ -32,6 +32,9 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+> [!NOTE]
+> This API can only query tables belonging to Microsoft Defender for Endpoint. Tables belonging to other Microsoft 365 Defender services require the use of the [Microsoft 365 Defender Advanced hunting API](/microsoft-365/security/defender/api-advanced-hunting).
+
 ## Limitations
 
 1. You can only run a query on data from the last 30 days.
@@ -42,11 +45,11 @@ ms.custom: api
    - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 
-4. The maximal execution time of a single request is 10 minutes.
+4. The maximal execution time of a single request is 200 seconds.
 
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
 
-6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the amount of results and try again" will appear.
+6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" will appear.
 
 ## Permissions
 

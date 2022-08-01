@@ -16,6 +16,7 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos

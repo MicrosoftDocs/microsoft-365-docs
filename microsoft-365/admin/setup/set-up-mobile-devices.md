@@ -14,6 +14,7 @@ ms.collection:
 - M365-identity-device-management
 - Adm_TOC 
 ms.custom:
+- VSBFY23
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
