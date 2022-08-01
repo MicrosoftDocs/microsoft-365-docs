@@ -104,15 +104,15 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 ### Alert information
 
-- We saw a new type of alert for a living-off-the-land binary. We can provide the alert ID. Can you tell us more about this alert and how we can investigate it further?
+- We saw a new type of alert for a living-off-the-land binary. We can provide the alert ID. Can you tell us more about this alert and if it's related to any incident and how we can investigate it further?
 - We've observed two similar attacks, which both try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
 - We received an odd alert today about an abnormal number of failed logins from a high profile user's device. We can't find any further evidence for these attempts. How can Microsoft 365 Defender see these attempts? What type of logins are being monitored?
-- Can you give more context or insight about the alert, "Suspicious behavior by a system utility was observed"?
+- Can you give more context or insight about the alert and any related incidents, "Suspicious behavior by a system utility was observed"?
 - I observed an alert titled "Creation of forwarding/redirect rule". I believe the activity is benign. Can you tell me why I received an alert?
 
 ### Possible device compromise
 
-- Can you help explain why we see a message or alert for "Unknown process observed" on many devices in our organization? We appreciate any input to clarify whether this message or alert is related to malicious activity.
+- Can you help explain why we see a message or alert for "Unknown process observed" on many devices in our organization? We appreciate any input to clarify whether this message or alert is related to malicious activity or incidents.
 - Can you help validate a possible compromise on the following system, dating from last week? It's behaving similarly as a previous malware detection on the same system six months ago.
 
 ### Threat intelligence details
