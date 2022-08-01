@@ -42,7 +42,7 @@ For more information about Microsoft's commercial licensing terms, visit [this p
 
 ### Access requirements
 
-Anyone from your organization can complete the customer interest form for Microsoft Defender Experts for Hunting service, however, you need to work with your Commercial Executive to transact the SKU.
+Anyone from your organization can complete the customer interest form for Microsoft Defender Experts for Hunting service, however, you need to work with your Commercial Executive to transact the SKU. You might need certain roles and permissions to fully access the service capabilities. Refer to [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md) for details.
 
 ## Understand the service's availability and data access requirements
 
