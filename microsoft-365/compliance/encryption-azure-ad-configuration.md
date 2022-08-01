@@ -38,9 +38,9 @@ For example, another organization might have settings configured that prevent th
 
 Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to **Microsoft Azure Information Protection**, which has the following an app ID:
 
-```plaintext
+````plaintext
 00000012-0000-0000-c000-000000000000
-```
+````
 
 If this access isn't allowed, users can't be authenticated and authorized to open encrypted content. This configuration can be set as a default setting and as an organizational setting:
 
