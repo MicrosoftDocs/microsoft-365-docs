@@ -9,9 +9,12 @@ metadata:
   ms.topic: landing-page # Required
   author: SKjerland #Required; your GitHub user alias, with correct capitalization.
   ms.author: sharik #Required; microsoft alias of author; optional team alias.
+  manager: scotv
   ms.date: 06/09/2022 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
-  ms.custom: AdminSurgePortfolio
+  ms.custom: 
+  - VSBFY23
+  - AdminSurgePortfolio
   ms.collection: Adm_TOC
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

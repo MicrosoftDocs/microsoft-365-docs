@@ -22,7 +22,7 @@ ms.technology: mdo
 
 Priority account protection helps IT and security teams ensure a high quality of service and protection for the critical people within your organization. Tagging an account as a priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
 
-## What you’ll need
+## What you'll need
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5 plans)
 - Sufficient permissions (Security Administrator role)
 - 5 minutes to perform the steps below.

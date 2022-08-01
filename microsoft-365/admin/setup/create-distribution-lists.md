@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 ms.custom:
+- VSBFY23
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
