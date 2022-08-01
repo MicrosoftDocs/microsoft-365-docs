@@ -64,7 +64,7 @@ You can receive Defender Experts Notifications from Defender Experts through the
 
 You can filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
 
-1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter](../../media/mte/defenderexperts/filter.png) icon.
+1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter icon](../../media/mte/defenderexperts/filter.png) icon.
 2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
 3. Select **Apply**.
 
