@@ -36,7 +36,13 @@ By default, there's nothing to configure for cross-tenant authentication to work
 
 For example, another organization might have settings configured that prevent their users from opening content encrypted by your organization. In this scenario, until their Azure AD admin reconfigures their cross-tenant settings, an external user attempting to open that content will see a message that informs them **Access is blocked by the organization** with an email address to contact to request access. 
 
-Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to **Microsoft Azure Information Protection**, which has an app ID of `00000012-0000-0000-c000-000000000000`. If this access isn't allowed, users can't be authenticated and authorized to open encrypted content. This configuration can be set as a default setting and as an organizational setting:
+Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to **Microsoft Azure Information Protection**, which has the following an app ID:
+
+``` plaintext
+00000012-0000-0000-c000-000000000000
+```
+
+If this access isn't allowed, users can't be authenticated and authorized to open encrypted content. This configuration can be set as a default setting and as an organizational setting:
 
 - To permit sharing of encrypted content with another organization, create an inbound setting that allows access to Microsoft Azure Information Protection (ID: 00000012-0000-0000-c000-000000000000). 
 
