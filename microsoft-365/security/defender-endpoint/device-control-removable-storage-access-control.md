@@ -510,6 +510,6 @@ DeviceFileEvents
 3. Locate the media in the Device Manager, then right-click and select `Properties`.
 ![image](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
 
-4. Open `Details`, and select `Property`
+4. Open `Details`, and select `Property`.
 ![image](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
     
