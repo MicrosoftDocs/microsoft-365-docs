@@ -52,7 +52,7 @@ content: |
  ### data exfiltration
  Data files that are stolen and sent outside the network through email or other means.
  ### Defender
- The Microsoft Defender family includes products and services to protect against cyberthreats. It includes, but is not limited to, Microsoft Defender Antivirus, which is built into Windows 10 and 11. The Microsoft Defender family also includes Microsoft Defender for Business to help small and medium-sized businesses protect devices. There are other products and services as well. [Learn more about the Microsoft Defender family](https://www.microsoft.com/security/business/microsoft-defender).
+ The Microsoft Defender family includes products and services to protect against cyberthreats. It includes, but is not limited to, [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows), which is built into Windows 10 and 11. The Microsoft Defender family also includes [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) to help small and medium-sized businesses protect devices. There are other products and services as well. [Learn more about the Microsoft Defender family](https://www.microsoft.com/security/business/microsoft-defender).
  ### Device Group
  A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft 365 Business Premium (and Defender for Business), Device groups are stored in Azure Active Directory.
  ### device management
@@ -66,7 +66,7 @@ content: |
  
  ## F
  ### firewall
- A Firewall is a security system to protect an internal network from unauthorized servers and networks based on predefined rules. It acts as a barrier and only allows the secured network to send or receive data.
+ A firewall is a security system to protect an internal network from unauthorized servers and networks based on predefined rules. It acts as a barrier and only allows the secured network to send or receive data. Windows Defender Firewall is built into Windows 10 and 11. In addition, firewall protection is included in Defender for Business.
  
  ## H 
  ### hacker
