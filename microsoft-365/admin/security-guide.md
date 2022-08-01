@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom:
+- VSBFY23
 - SMB_SuccessCenter
 - seo-marvel-mar
 - AdminSurgePortfolio
