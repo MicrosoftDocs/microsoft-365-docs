@@ -53,7 +53,7 @@ Priva trials include the **Privacy Risk Management** trial and the **Subject Rig
 
 #### Security trials
 
-Security trials include the **Defender Vulnerability Management** trial and the **Defender Vulnerability Management add-on** trial.
+Security trials include the **Defender Vulnerability Management** trial and the **Defender Vulnerability Management add-on** trial. Users will need a role created for them with the permissions listed below.
 
 | Permission | Where to assign | 
 | :------------- | :-------------: |
@@ -62,8 +62,8 @@ Security operations  | Microsoft 365 Defender portal > Permissions > Endpoints r
 
 ## How to assign roles
 
-For more information about roles and permissions, including guidance on how to assign users to roles, see:
+For more information about how to assign user roles and permissions, see the following articles:
 
-- For Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
-- For Microsoft Purview and Priva: [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
-- For Microsoft 365 Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
+- Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
+- Microsoft Purview and Priva: [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
+- Microsoft 365 Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
