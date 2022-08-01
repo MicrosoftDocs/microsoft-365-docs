@@ -24,7 +24,7 @@ This article outlines the user roles required in order to enroll your organizati
 
 A user with one of the roles listed below can start any Microsoft 365 trial.
  
-| Role | Role Group | Where to assign role | 
+| Role | Role Group | Where to assign | 
 | :------------- | :-------------: | :------------: |
 | Global administrator | Global administrator   | Purview compliance portal > Permissions > Azure AD roles |
 | Billing Admin | Billing Administrator | Purview compliance portal > Permissions > Purview solutions roles |
@@ -37,7 +37,7 @@ Each trial allows users with other roles to start a trial. Refer to the tables b
 
 Purview trials include the **Microsoft Purview solutions** trial and the **Compliance Manager premium assessments** trial. 
 
-| Role | Role Group | Where to assign role | 
+| Role | Role Group | Where to assign | 
 | :------------- | :-------------: | :------------: |
 | Compliance Administrator | Compliance Administrator   | Purview compliance portal > Permissions > Purview solutions roles |
 | TBD | Compliance Data Administrator | Purview compliance portal > Permissions > Purview solutions roles |
@@ -46,19 +46,19 @@ Purview trials include the **Microsoft Purview solutions** trial and the **Compl
 
 Priva trials include the **Privacy Risk Management** trial and the **Subject Rights Requests** trial.
 
-| Role | Role Group | Where to assign role | 
+| Role | Role Group | Where to assign | 
 | :------------- | :-------------: | :------------: |
 | Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Permissions > Purview solutions roles |
 | Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Permissions > Purview solutions roles |
 
 #### Security trials
 
-Security trials include the **Defender Vulnerability Management** trial and the **Defender Vulnerability Management public preview add-on** trial.
+Security trials include the **Defender Vulnerability Management** trial and the **Defender Vulnerability Management add-on** trial.
 
-| Role | Role Group | Where to assign role | 
-| :------------- | :-------------: | :------------: |
-| TBD  | Security Operator  | Microsoft 365 Defender portal > Permissions > Email & collaboration roles  |
-| TBD/Threat and vulnerability management | TBD | Microsoft 365 Defender portal > Permissions > Email & collaboration roles |
+| Permission | Where to assign | 
+| :------------- | :-------------: |
+Security operations  | Microsoft 365 Defender portal > Permissions > Endpoints roles & groups  |
+| Threat and vulnerability management | Microsoft 365 Defender portal > Permissions > Endpoints roles & groups >Roles |
 
 ## How to assign roles
 
