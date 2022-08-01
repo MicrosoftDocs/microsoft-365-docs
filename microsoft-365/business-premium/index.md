@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/01/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-overview
@@ -23,11 +23,11 @@ search.appverid:
 description: "Learn how to implement cybersecurity for small or medium sized businesses with Microsoft 365 Business Premium. The cybersecurity capabilities and features are optimized to prevent cyberattacks and security breaches, and help safeguard data, devices and information with high-grade cyber defenses."
 ---
 
-# Microsoft 365 Business Premium – cybersecurity for small business
+# Microsoft 365 Business Premium – productivity and cybersecurity for small business
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguards your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states.
 
-The task before you is this—let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
+The task before you is this: let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are organized as follows:
 
 - **[Fortify your environment](m365bp-setup-overview.md)** (tasks your admin does); 
 - **[Train your team](m365bp-devices-overview.md)** (tasks that all staff members do); and 
@@ -84,4 +84,4 @@ Microsoft 365 Business Premium is a comprehensive security and collaboration sol
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
 
 > [!NOTE]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.yml).
+> If a term or directive is unclear, see the [glossary of terms](m365bp-glossary.yml).
