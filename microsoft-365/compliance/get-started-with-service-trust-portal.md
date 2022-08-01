@@ -115,7 +115,7 @@ Use the My Library feature to add documents and resources on the Service Trust P
 
 Additionally, the notifications feature lets you configure your My Library so that an email message is sent to you whenever Microsoft updates a document that you've added to your My Library. To set up notifications, go to your My Library and click **Notification Settings**. You can choose the frequency of notifications and specify an email address in your organization to send notifications to. Email notifications include links to the documents that have been updated and a brief description of the update.
 
-Also note that we identify any documents in your My Library that have been updated within the last 30 days, regardless of whether or not you turn on notifications. A brief description of the update is also displayed in a tool tip.
+If a document is part of a series, you will be subscribed to the series and will receive notifications when there is an update to that series. You can view the individual documents and Series documents that you have subscribed to, in 2 sections as shown below:
 
 ## Localization support
 
