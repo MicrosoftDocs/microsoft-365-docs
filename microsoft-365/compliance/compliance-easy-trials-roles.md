@@ -53,7 +53,7 @@ Priva trials include the **Privacy Risk Management** trial and the **Subject Rig
 
 #### Security trials
 
-Security trials include the **Defender Vulnerability Management** trial and the **Defender Vulnerability Management add-on** trial. Users will need a role created for them with the permissions listed below.
+Security trials include the **Defender Vulnerability Management** trial and the **Defender Vulnerability Management add-on** trial. Users will need a role with one of the permissions listed below in order to start a trial.
 
 | Permission | Where to assign | 
 | :------------- | :-------------: |
