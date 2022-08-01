@@ -31,6 +31,28 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+  <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
+
+&ensp;Released: **August 2, 2022**<br/>
+&ensp;Published: **August 2, 2022**<br/>
+&ensp;Build: **101.75.43**<br/>
+&ensp;Release version: **30.122071.17543.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Added support for Red Hat Enterprise Linux version 9.0
+- Added a new field in the output of `mdatp health` that can be used to query the enforcement level of the network protection feature. The new field is called `network_protection_enforcement_level` and can take one of the following values: `audit`, `block`, or `disabled`.
+- Addressed a product bug where detection of the same content could lead to duplicate entries in the threat history
+- Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was not properly terminated when the service was stopped
+- Other bug fixes
+</br>
+
+<br/><br/>
+</details>
+
+<details>
   <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
 
 &ensp;Released: **July 21, 2022**<br/>
