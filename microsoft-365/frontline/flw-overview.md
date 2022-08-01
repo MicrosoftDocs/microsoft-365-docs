@@ -43,11 +43,13 @@ The following image shows the employee experiences that are key to frontline wor
 
 [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
-Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E1, E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization. 
+Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E1, E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
 Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-## Connect and engage your workforce
+## Enhance communications and collaboration
+
+## Transform employee experience
 
 Enrich your communications and employee experiences with Microsoft 365 for frontline workers. Using Microsoft Teams, SharePoint, Viva Connections, and Viva Learning, you can connect employees with the tools, people, and devices they need to do their best work and build skills faster. For example:
 
@@ -57,7 +59,7 @@ Enrich your communications and employee experiences with Microsoft 365 for front
 |:::image type="icon" source="/office/media/icons/heart-teams.png"::: | [Wellbeing & engagement](flw-choose-scenarios.md#wellbeing--engagement) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
 |:::image type="icon" source="/office/media/icons/files-teams.png"::: | [Training & onboarding](flw-choose-scenarios.md#training--onboarding) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
 
-## Enhance workforce management
+## Increase frontline operational efficiency
 
 Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), the schedule management tool in Teams that keeps your frontline workforce connected and in sync. [Shifts connectors](shifts-connectors.md) enable you to integrate Shifts with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
@@ -65,7 +67,7 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 | --- | --- | --- |
 |:::image type="icon" source="/office/media/icons/calendar-teams.png"::: | [Schedule management](flw-choose-scenarios.md#schedule-management) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
 
-## Increase operations efficiency
+## (same as above)
 
 Microsoft 365 includes apps liked Lists, Tasks, and Approvals, that can help you streamline operations and bring them from paper-based to digitally-tracked processes. You can enhance these by adding workflow automation, custom apps, and business data tracking with Power Automate, Power Apps, and Power BI from the Power Platform. Extend even further with solutions provided by our partners in the digital ecosystem.
 
