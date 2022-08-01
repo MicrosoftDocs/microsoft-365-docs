@@ -43,8 +43,7 @@ To manage external storage, use removable storage access control instead of [dev
 
 - Applied at either the device level, user level. or both. Only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
 - Support MEM OMA-URI and GPO.
-- Supported  '[Device Properties](#device-properties)' as listed.
-- For feature in Windows, see [Removable storage Access Control](device-control-removable-storage-access-control.md).
+- For Windows devices, see [Removable storage Access Control](device-control-removable-storage-access-control.md).
 
 **Supported Platform** - Windows 10, Windows 11
 
@@ -64,7 +63,6 @@ To manage external storage, use removable storage access control instead of [dev
 
 - Applied at the device level: the same policy applies for any logged on user.
 - Supports Microsoft Endpoint Manager and Group Policy Objects.
-- Supported  '[Device Properties](#device-properties)' as listed.
 - For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
 **Supported Platform** - Windows 10, Windows 11
