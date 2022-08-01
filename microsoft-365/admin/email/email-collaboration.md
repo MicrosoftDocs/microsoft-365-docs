@@ -12,8 +12,9 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
