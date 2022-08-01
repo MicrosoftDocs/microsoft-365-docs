@@ -44,8 +44,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - Added support for Red Hat Enterprise Linux version 9.0
 - Added a new field in the output of `mdatp health` that can be used to query the enforcement level of the network protection feature. The new field is called `network_protection_enforcement_level` and can take one of the following values: `audit`, `block`, or `disabled`.
-- Addressed a product bug where detection of the same content could lead to duplicate entries in the threat history
-- Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was not properly terminated when the service was stopped
+- Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history
+- Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was sometimes not properly terminated when the service was stopped
 - Other bug fixes
 </br>
 
