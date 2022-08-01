@@ -69,7 +69,7 @@ If you want to buy your subscription before your trial is over, use these steps:
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Your products** page, find the subscription that you want to buy.
 3. In the **Licenses** section, select **Purchase subscription**.
-4. Choose either a monthly or annual commitment for your subscription, then select **Checkout**.
+4. Choose a billing frequency for your subscription, then select **Checkout**.
 5. On the next page, verify the subscription, and select **Checkout**.
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
 7. When you\'re finished, select **Accept agreement & place order**.
