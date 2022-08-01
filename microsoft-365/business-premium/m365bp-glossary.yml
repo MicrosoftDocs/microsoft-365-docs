@@ -66,7 +66,7 @@ content: |
  
  ## F
  ### firewall
- A firewall is a security system to protect an internal network from unauthorized servers and networks based on predefined rules. It acts as a barrier and only allows the secured network to send or receive data. Windows Defender Firewall is built into Windows 10 and 11. In addition, firewall protection is included in Defender for Business.
+ A firewall is a security system to protect an internal network from unauthorized servers and networks based on predefined rules. It acts as a barrier and only allows the secured network to send or receive data. Windows Defender Firewall is built into Windows 10 and 11. In addition, firewall protection is included in [Defender for Business](/microsoft-365/security/defender-business/mdb-configure-security-settings).
  
  ## H 
  ### hacker
