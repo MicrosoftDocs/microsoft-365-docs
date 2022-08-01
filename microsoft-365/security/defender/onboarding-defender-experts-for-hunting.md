@@ -117,6 +117,6 @@ The option to **Ask Defender Experts** is available in several places throughout
 > [!NOTE]
 > If you'd like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.
 
-### What's next
+### Next step
 
 - [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md)

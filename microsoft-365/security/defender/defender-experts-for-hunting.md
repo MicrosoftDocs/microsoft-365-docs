@@ -42,6 +42,6 @@ The following capabilities included in this managed threat hunting service could
 
 Defender Experts for Hunting is sold separately from other Microsoft 365 Defender products. If you're a Microsoft 365 Defender customer and are interested in purchasing Defender Experts for Hunting, complete [this form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_xMkpZdsClLjYwQYYo1uONURTgyU0EzQUQyUjFFVEtIVFozT1ZUUlZDTyQlQCN0PWcu).
 
-### What's next
+### Next step
 
 - [Before you begin using Defender Experts for Hunting](before-you-begin-defender-experts.md)

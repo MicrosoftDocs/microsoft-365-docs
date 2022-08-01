@@ -81,6 +81,6 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 3. Select **Submit**. Someone from our sales team will reach out within five business days.
 
 
-### What's next
+### Next step
 
 - [Start using Defender Experts for Hunting](onboarding-defender-experts-for-hunting.md)
