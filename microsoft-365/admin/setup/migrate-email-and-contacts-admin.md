@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - seo-marvel-may2020

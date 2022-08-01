@@ -55,7 +55,7 @@ For instructions, see [How to activate or confirm the status of the protection s
 
 This is an optional step. Allowing Microsoft to manage the root key for Azure Information Protection is the default setting and recommended best practice for most organizations. If this is the case, you don't need to do anything.
 
-There are many reasons, for example compliance requirements, that may necessitate you generating and managing your own root key (also known as bring your own key (BYOK)). If this is the case, we recommend that you complete the required steps before setting up Microsoft Purview Message Encryption. See [Planning and implementing your Azure Information Protection tenant key](/information-protection/plan-design/plan-implement-tenant-key) for more.
+There are many reasons, for example compliance requirements, that may necessitate you generating and managing your own root key, also known as "bring your own key" (BYOK). If this is the case, we recommend that you complete the required steps before setting up Microsoft Purview Message Encryption. See [Planning and implementing your Azure Information Protection tenant key](/information-protection/plan-design/plan-implement-tenant-key) for more.
 
 ## Verify Microsoft Purview Message Encryption configuration in Exchange Online PowerShell
 
@@ -65,7 +65,7 @@ You can verify that your Microsoft 365 tenant is properly configured to use Micr
 
 2. Run the Get-IRMConfiguration cmdlet.
 
-     You should see a value of $True for the AzureRMSLicensingEnabled parameter, which indicates that Microsoft Purview Message Encryption is configured in your tenant. If it is not, use Set-IRMConfiguration to set the value of AzureRMSLicensingEnabled to $True to enable Microsoft Purview Message Encryption.
+     You should see a value of `$True` for the AzureRMSLicensingEnabled parameter, which indicates that Microsoft Purview Message Encryption is configured in your tenant. If it is not, use Set-IRMConfiguration to set the value of AzureRMSLicensingEnabled to `$True` to enable Microsoft Purview Message Encryption.
 
 3. Run the Test-IRMConfiguration cmdlet using the following syntax:
 

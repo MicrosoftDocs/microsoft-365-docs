@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
