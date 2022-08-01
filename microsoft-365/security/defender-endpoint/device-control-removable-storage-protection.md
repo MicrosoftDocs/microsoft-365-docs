@@ -37,7 +37,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 - *Audit* Read or Write or Execute access to removable storage based on various device properties, with or without an exclusion.
 - *Prevent* Read or Write or Execute access with or without an exclusion - Allow specific device based on various device properties.
 
-You should consider this feature if you want to manage external storage, instead of the Device Installation feature below.
+To manage external storage, use removable storage access control instead of [device installation](#device-installation).
 
 **Windows 10 and Windows 11 support details**:
 
