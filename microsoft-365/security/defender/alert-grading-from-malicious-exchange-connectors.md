@@ -31,22 +31,24 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Threat actors can use compromised exchange connectors for sending out spam and phishing emails in bulk to unsuspecting recipients by masquerading as legitimate emails. Since the connector is compromised, the emails would usually be trusted by the recipients. These kinds of phishing emails are common vectors for phishing campaigns and business email compromise (BEC) scenario. Hence, such emails need to be monitored heavily due to the likelihood of successful recipients’ compromises being high.
+Threat actors use compromised exchange connectors for sending out spam and phishing emails in bulk to unsuspecting recipients by masquerading legitimate emails. Since the connector is compromised, the emails would usually be trusted by the recipients. These kinds of phishing emails are common vectors for phishing campaigns, and business email compromise (BEC) scenario. Hence, such emails need to be monitored heavily due to the likelihood of successful recipients’ compromises being high.
 
-The playbook helps in investigating instances where malicious connectors are setup/deployed by malicious actors. Accordingly, they take necessary steps to remediate the attack and mitigate the security risks arising from it. Playbook is available for security teams like security operations center (SOC) and IT administrators, who review, handle/manage, and grade the alerts. Playbook will help in grading the alerts as either True Positive (TP) or False Positive (FP). If there is TP, playbook will take necessary recommended actions for remediating the attack.
+The playbook helps in investigating instances, where malicious connectors are setup/deployed by malicious actors. Accordingly, they take necessary steps to remediate the attack and mitigate the security risks arising from it. Playbook is available for security teams like security operations center (SOC) and IT administrators, who review, handle/manage, and grade the alerts. Playbook will help in grading the alerts as either True Positive (TP) or False Positive (FP). If there is TP, playbook will take necessary recommended actions for remediating the attack.
 
 Following are the results of using a playbook:
-- Determination of the alert as either malicious (TP) or benign (FP). 
+
+- Determination of the alert as malicious (TP) or benign (FP). 
     - If malicious, remediate/remove the malicious connector from the environment.
 
 ## Exchange Connectors
 
 Exchange connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization. Usually, most Microsoft 365 and Office 365 organizations don't need connectors for regular mail flow.
-Connectors are used to route mail traffic between remote email systems and Office 365 (O365) or O365 and on-premises email systems.
+
+Connectors are used to route mail traffic between remote email systems and Office 365 (O365) or O365, and on-premises email systems.
 
 ## Malicious Exchange Connectors
 
-Attackers may compromise an existing exchange connector or compromise an admin and set up a new connector, by sending phish or spam/bulk emails. 
+Attackers may compromise an existing exchange connector or compromise an admin, and set up a new connector by sending phish or spam/bulk emails. 
 
 The typical indicators of a malicious connector can be found when looking at email traffic and its headers. For example, when email traffic is observed from a connector node with a mismatch in P1 (header sender) and P2 (envelope sender) sender addresses along with no information on Sender’s AccountObjectId.
 
@@ -71,7 +73,7 @@ You must follow the sequence to identify malicious exchange connectors:
 In this section, we will describe steps to investigate an alert and remediate the security risk due to this incident.
 
 - Determine whether the connector demonstrates bad (malicious) behavior.
-  - Look for events indicating unusual mail traffic and identify whether any new exchange connector was added recently.
+  - Look for events indicating unusual mail traffic and identify, whether any new exchange connector was added recently.
     - For mail traffic observed, determine if the email accounts are compromised by inspecting whether the accounts are responsible for unusual mail traffic.
   - Look for mail content containing malicious artifacts (bad links/attachments).
   - Look for domains that are not part of your environment. 
@@ -81,7 +83,7 @@ In this section, we will describe steps to investigate an alert and remediate th
   - Empty values in the SenderObjectId field.
 - Use telemetry data to note:
   - The NetworkMessageId (Message ID) of the emails that were sent from the malicious connector. 
-  - The connector creation date, last modified date and last modified by date
+  - The connector creation date, last modified date, and last modified by date.
   - The IP address of the connector from where the email traffic is observed.
   
 ## Advanced Hunting Queries
