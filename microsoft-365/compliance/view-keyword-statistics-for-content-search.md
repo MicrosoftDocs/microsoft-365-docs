@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,8 +19,6 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # View statistics for eDiscovery search results
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 After you create and run a Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed on the search flyout page), the query statistics such as the number of content locations with items that match the search query, and the identity of content locations that have the most matching items.
   
@@ -38,7 +36,7 @@ To display statistics for a Content search or a search associated with a eDiscov
 
      OR
 
-   - Click **eDiscovery** > **Core**, select a case, and then select a search on the **Searches** tab to display the flyout page.
+   - Click **eDiscovery** > **eDiscovery (Standard)**, select a case, and then select a search on the **Searches** tab to display the flyout page.
 
 2. On the flyout page of the selected search, click the **Search statistics** tab.
   

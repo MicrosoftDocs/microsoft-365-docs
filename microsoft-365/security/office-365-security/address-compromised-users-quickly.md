@@ -20,6 +20,8 @@ ms.prod: m365-security
 
 # Address compromised user accounts with automated investigation and response
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -57,6 +59,9 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 
 > [!IMPORTANT]
 > You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
+
+Watch this short video to learn how you can detect and respond to user compromise in Microsoft Defender for Office 365 using Automated Investigation and Response (AIR) and compromised user alerts.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
 
 ### View and investigate restricted users
 

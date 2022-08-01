@@ -1,29 +1,25 @@
 ---
-title: "Collaborate and share securely"
+title: "Collaborate and share securely in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
-manager: scotv
-ms.date: 03/07/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 search.appverid:
 - BCS160
 - MET150
-description: "An overview on how to collaborate and share files and communicate securely using Teams. In the closed environment provide by Teams, files and communications are free from cyber threats and cyberattacks."
+description: "An overview on how to collaborate and share files and communicate securely using Teams in Microsoft 365 Business Premium. In the closed environment provide by Teams, files and communications are free from cyber threats and cyberattacks."
 ---
 
 # Collaborate and share securely
@@ -32,11 +28,11 @@ Now that you're protected by the Microsoft 365 Business Premium Office apps, you
 
 Your objectives are as follows:
 
-- [Create Teams for collaboration](create-teams-for-collaboration.md)
-- [Set up meetings](set-up-meetings.md)
-- [Share files and videos](share-files-and-videos.md)
-- [Create a communication site](create-communications-site.md)
+- [Create Teams for collaboration](create-teams-for-collaboration.md).
+- [Set up meetings](set-up-meetings.md).
+- [Share files and videos](share-files-and-videos.md).
+- [Create a communication site](create-communications-site.md).
 
-After you complete these objectives, start your [final mission](m365bp-protect-devices.md).
+After you complete these objectives, start your final mission: [Safeguard managed devices](m365bp-protect-devices.md).
 
 :::image type="content" source="media/m365bp-collaborate-share-securely.jpg" alt-text="Collaborate and share securely.":::

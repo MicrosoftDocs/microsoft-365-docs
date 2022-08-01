@@ -20,21 +20,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Get started with insider risk management settings
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
-- Privacy
-- Indicators
-- Policy timelines
-- Intelligent detections
-- Export alerts
-- Priority user groups (preview)
-- Priority physical assets (preview)
-- Power Automate flows (preview)
-- Microsoft Teams (preview)
-- Analytics
-- Admin notifications
+- [Privacy](#privacy)
+- [Indicators](#indicators)
+- [Policy timeframes](#policy-timeframes)
+- [Intelligent detections](#intelligent-detections)
+- [Export alerts](#export-alerts)
+- [Priority user groups (preview)](#priority-user-groups-preview)
+- [Priority physical assets (preview)](#priority-physical-assets-preview)
+- [Power Automate flows (preview)](#power-automate-flows-preview)
+- [Microsoft Teams (preview)](#microsoft-teams-preview)
+- [Analytics](#analytics)
+- [Admin notifications](#admin-notifications)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -65,7 +63,7 @@ Certain policy indicators may also be used for customizing triggering events for
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Microsoft Teams, and email messaging.
-- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select *Device indicators*, activity is processed for devices with Windows 10 Build 1809 or higher and macOS (Catalina 10.15 or later) devices. For both Windows and macOS devices, you must first onboard devices to the compliance center. Device indicators also include browser signal detection to help your organization detect and act on exfiltration signals for non-executable files viewed, copied, shared, or printed in Microsoft Edge and Google Chrome. For more information on configuring Windows devices for integration with insider risk, see the following [Enable device indicators and onboard Windows devices](insider-risk-management-settings.md#OnboardDevices) section in this article. For more information on configuring macOS devices for integration with insider risk, see the following Enable device indicators and onboard macOS devices section in this article. For more information about browser signal detection, see [Learn about and configure insider risk management browser signal detection](insider-risk-management-browser-support.md).
+- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select *Device indicators*, activity is processed for devices with Windows 10 Build 1809 or higher and macOS (Catalina 10.15 or later) devices. For both Windows and macOS devices, you must first onboard devices to the compliance portal. Device indicators also include browser signal detection to help your organization detect and act on exfiltration signals for non-executable files viewed, copied, shared, or printed in Microsoft Edge and Google Chrome. For more information on configuring Windows devices for integration with insider risk, see the following [Enable device indicators and onboard Windows devices](insider-risk-management-settings.md#OnboardDevices) section in this article. For more information on configuring macOS devices for integration with insider risk, see the following Enable device indicators and onboard macOS devices section in this article. For more information about browser signal detection, see [Learn about and configure insider risk management browser signal detection](insider-risk-management-browser-support.md).
 - **Security policy violation indicator (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Health record access indicators (preview)**: These include policy indicators for patient medical record access. For example, attempted access to patient medical records in your electronic medical records (EMR) system logs can be shared with insider risk management healthcare policies. To receive these types of alerts in insider risk management, you must have a healthcare-specific data connector and the HR data connector configured.
 - **Physical access indicators (preview)**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
@@ -82,7 +80,7 @@ To define the insider risk policy indicators that are enabled in all insider ris
 ### Enable device indicators and onboard Windows devices
 <a name="OnboardDevices"> </a>
 
-To enable the monitoring of risk activities on Windows devices and include policy indicators for these activities, your Windows devices must meet the following requirements and you must complete the following onboarding steps.
+To enable the detection of risk activities on Windows devices and include policy indicators for these activities, your Windows devices must meet the following requirements and you must complete the following onboarding steps.
 
 #### Step 1: Prepare your endpoints
 
@@ -90,21 +88,21 @@ Make sure that the Windows 10 devices that you plan on reporting in insider risk
 
 1. Must be running Windows 10 x64 build 1809 or later and must have installed the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020.
 2. The user account used to log into the Windows 10 device must be an active Azure Active Directory (AAD) account. The Windows 10 device may be [AAD](/azure/active-directory/devices/concept-azure-ad-join), hybrid AAD, or Active Directory joined, or AAD registered.
-3. Install the Microsoft Edge browser on the endpoint device to monitor actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+3. Install the Microsoft Edge browser on the endpoint device to detect actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### Step 2: Onboarding devices
 <a name="OnboardStep2"> </a>
 
-You must enable device monitoring and onboard your endpoints before you can monitor for insider risk management activities on a device. Both actions are taken in the Microsoft Purview compliance portal.
+You must enable device monitoring and onboard your endpoints before you can detect insider risk management activities on a device. Both actions are taken in the Microsoft Purview compliance portal.
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy as outlined in the following steps.
 
 If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they'll already appear in the managed devices list. Follow [Step 3: If you have devices onboarded into Microsoft Defender for Endpoint](insider-risk-management-settings.md#OnboardStep3) in the next section.
 
-In this deployment scenario, you'll onboard devices that haven't been onboarded yet, and you just want to monitor insider risk activities on Windows 10 devices.
+In this deployment scenario, you'll onboard devices that haven't been onboarded yet, and you just want to detect insider risk activities on Windows 10 devices.
 
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
-2. Open the Compliance Center settings page and choose **Onboard devices**.
+2. Open the compliance portal settings page and choose **Onboard devices**.
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
@@ -130,7 +128,7 @@ Once done and endpoint is onboarded, it should be visible in the devices list an
 If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
 
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
-2. Open the Compliance Center settings page and choose **Enable device monitoring**.
+2. Open the compliance portal settings page and choose **Enable device monitoring**.
 3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting into Microsoft Defender for Endpoint.
 4. Choose **Onboarding** if you need to onboard more devices.
 5. Choose the way you want to deploy to these more devices from the **Deployment method** list and then **Download package**.
@@ -154,7 +152,7 @@ macOS devices (Catalina 10.15 or later) can be onboarded into Microsoft 365 to s
 
 When creating a policy in the policy wizard, you can configure how the daily number of risk events should influence the risk score for insider risk alerts. These indicator settings help you control how the number of occurrences of risk events in your organization should affect the risk score, and so the associated alert severity, for these events. If you prefer, you can also choose to keep the default event threshold levels recommended by Microsoft for all enabled indicators.
 
-For example, you decide to enable SharePoint indicators in the insider risk policy settings and to set custom thresholds for SharePoint events when configuring indicators for a new insider risk *Data leaks* policy. While in the insider risk policy wizard, you configure three different daily event levels for each SharePoint indicator to influence the risk score for alerts associated with these events.
+For example, you decide to enable SharePoint indicators in the insider risk policy settings and to **set custom thresholds** for SharePoint events when configuring indicators for a new insider risk *Data leaks* policy. While in the insider risk policy wizard, you configure three different daily event levels for each SharePoint indicator to influence the risk score for alerts associated with these events.
 
 ![Insider risk management custom indicator settings.](../media/insider-risk-custom-indicators.png)
 
@@ -164,6 +162,8 @@ For the first daily event level, you set the threshold at *10 or more events per
 - If there are 10-19  SharePoint events that take place after a triggering event, the risk score is inherently lower and alert severity levels would tend to be at a low level.
 - If there are 20-29 SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a medium level.
 - If there are 30 or more SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a high level.
+
+Another option for policy thresholds is to assign the policy triggering event to activity that is above the usual amount of daily activity for users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
 
 ## Policy timeframes
 
@@ -343,7 +343,7 @@ Identifying access to priority physical assets and correlating access activity t
 
 With priority physical assets enabled and the [Physical badging data connector](import-physical-badging-data.md) configured, insider risk management integrates signals from your physical control and access systems with other user risk activities. By examining patterns of behavior across physical access systems and correlating these activities with other insider risk events, insider risk management can help compliance investigators and analysts make more informed response decisions for alerts. Access to priority physical assets are scored and identified in insights differently from access to non-priority assets.
 
-For example, your organization has a badging system for users that monitors and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled.
+For example, your organization has a badging system for users that governs and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled.
 
 You choose to enable the Physical badging data connector in Microsoft 365 to import access information from your physical badging system and specify priority physical assets in insider risk management. By importing information from your badging system and correlating physical access information with other risk activities identified in insider risk management, you notice that one of the users on the project is accessing the project offices after normal working hours and is also exporting large amounts of data to a personal cloud storage service from their normal work area. This physical access activity associated with the online activity may point to possible data theft and compliance investigators and analysts can take appropriate actions as dictated by the circumstances for this user.
 
@@ -361,7 +361,7 @@ Complete the following steps to configure priority physical assets:
     > For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for physical access activities for users in your organization.
 
 2. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
-3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
+3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to detect asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
     a) To manually add physical assets IDs, choose **Add priority physical assets**, enter a physical asset ID, then select **Add**. Enter other physical asset IDs and then select **Add priority physical assets** to save all the assets entered.
     b) To add a list of physical asset IDs from a .csv file, choose **Import priority physical assets**. From the file explorer dialog, select the .csv file you wish to import, then select **Open**. The physical asset IDs from the .csv files are added to the list.
 4. Navigate to the **Policy indicators** page in **Settings**.
@@ -576,7 +576,7 @@ Complete the following steps to turn off insider risk analytics:
 
 Admin notifications automatically send an email notification to selectable insider risk management role groups. You can enable notifications and assign which role groups will receive the notifications for the following scenarios:
 
-- Send a notification email when the first alert is generated for a new policy. Policies are checked every 24 hours for first-time alerts and notifications are not sent on subsequent alerts for the policy.
+- Send a notification email when the first alert is generated for a new policy. Policies are checked every 24 hours for first-time alerts and notifications aren't sent on subsequent alerts for the policy.
 - Send a daily email when new high severity alerts are generated. Policies are checked every 24 hours for high severity alerts.
 - Send a weekly email summarizing policies that have unresolved warnings
 

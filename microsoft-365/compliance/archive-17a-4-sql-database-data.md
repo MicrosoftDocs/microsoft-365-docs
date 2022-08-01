@@ -16,8 +16,6 @@ description: "Learn how to set up and use a 17a-4 SQL DataParser connector to im
 
 # Set up a connector to archive SQL data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use the [SQL DataParser](https://www.17a-4.com/sql-dataparser/) from 17a-4 LLC to import and archive data from a SQL database to user mailboxes in your Microsoft 365 organization. The DataParser includes a SQL connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The SQL DataParser connector converts SQL data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After SQL data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a SQL connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
@@ -74,7 +72,7 @@ After you create a SQL DataParser connector, you can view the connector status i
 
 2. Click the **Connectors** tab and then select the SQL DataParser connector that you created to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 

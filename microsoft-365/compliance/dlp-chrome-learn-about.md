@@ -21,9 +21,7 @@ search.appverid:
 description: "The Microsoft Purview Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser"
 ---
 
-# Learn about the Microsoft Purview Extension)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# Learn about the Microsoft Purview Extension
 
 [Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 

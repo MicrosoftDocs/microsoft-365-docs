@@ -16,8 +16,6 @@ description: "Admins can set up a connector to import and archive data from Work
 
 # Set up a connector to archive Workplace from Facebook data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from Workplace from Facebook to user mailboxes in your Microsoft 365 organization. Veritas provides a [Workplace from Facebook](https://globanet.com/workplace/) connector that is configured to capture items from the third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts the content such as chats, attachments, posts, and videos from Workplace to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After Workplace data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using Workplace from Facebook connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
@@ -84,7 +82,7 @@ After you create the Workplace from Facebook connector, you can view the connect
 
 2. Click the **Connectors** tab and then select the **Workplace from Facebook** connector to display the flyout page. This page contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 

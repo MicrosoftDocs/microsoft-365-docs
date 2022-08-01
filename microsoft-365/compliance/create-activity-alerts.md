@@ -23,8 +23,6 @@ description: Add and manage activity alerts in the Microsoft Purview compliance 
 
 # Create activity alerts
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens.
 
  **Why use activity alerts instead of searching the audit log?** There might be certain kinds of activity or activity performed by specific users that you really want to know about. Instead of having to remember to search the audit log for those activities, you can use activity alerts to have Microsoft 365 send you an email message when users perform those activities. For example, you can create an activity alert to notify you when a user deletes files in SharePoint, or you can create an alert to notify you when a user permanently deletes messages from their mailbox. The email notification sent to you includes information about which activity was performed and the user who performed it.
@@ -123,7 +121,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     |Permanently deletes (purges) an email message from their mailbox.  |Purged messages from mailbox  | Exchange mailbox activities  |
     |Sends an email message from a shared mailbox.  |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  | Exchange mailbox activities  |
 
-- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance Center PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
+- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
 
   - If you use a cmdlet to add an activity to the alert that isn't listed in the **Activities** drop-down list, a message is displayed in on the property page for the alert that says, "This alert has custom operations not listed in the picker."
 

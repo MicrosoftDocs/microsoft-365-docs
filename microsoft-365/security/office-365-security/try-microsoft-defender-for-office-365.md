@@ -23,9 +23,6 @@ ROBOTS:
 
 # Try Microsoft Defender for Office 365
 
-> [!NOTE]
-> The feature that's described by this article is in Preview, is not available in all organizations, and is subject to change.
-
 The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 90 days before you fully commit to it. But, there are differences in the evaluation experiences based on the nature of your Microsoft 365 organization:
 
 - You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization. Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
@@ -42,7 +39,12 @@ The unified **Trials** portal in the Microsoft 365 Defender portal provides a si
 
 You're invited to start your trial in various Defender for Office 365 feature locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. The centralized location to start your trial is on the **Trials** page at <https://security.microsoft.com/atpEvaluation>.
 
+Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmIe]
+
 The rest of this article explains the difference between audit mode blocking mode, how to configure evaluations, and other details.
+
+For a companion guide for how to use your trial, see [Trial playbook: Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md).
 
 ## Overview of Defender for Office 365
 
@@ -133,7 +135,7 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
             [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-            When a third-party service or device sits in from of Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages, and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md)).
+            When a third-party service or device sits in front of Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md)).
 
           - **List each gateway IP address your messages pass through**: This setting is available only if you selected **Other** for **Select a third party service provider**. Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 

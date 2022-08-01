@@ -16,12 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how retention works for SharePoint and OneDrive."
+description: "Learn how Microsoft 365 retention works for SharePoint and OneDrive, using retention policies and retention labels to manage the automatic retention or deletion of data for your organization."
 ---
 
 # Learn about retention for SharePoint and OneDrive
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -77,7 +75,7 @@ Users also see an error message if they try to delete a labeled item in any of t
     
     To check or change this setting, go to the **Records management** solution in the Microsoft Purview compliance portal > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**. There are separate settings for SharePoint and OneDrive.
     
-    Alternatively, and if you don't have access to the **Records management** solution, you can use *AllowFilesWithKeepLabelToBeDeletedSPO* and *AllowFilesWithKeepLabelToBeDeletedODB* from [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) and [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
+    Alternatively, and if you don't have access to the **Records management** solution, you can use *AllowFilesWithKeepLabelToBeDeletedSPO* and *AllowFilesWithKeepLabelToBeDeletedODB* from [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) and [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
 
 - The retention label marks items as a record and it's [locked](record-versioning.md).
     
@@ -141,11 +139,15 @@ Only pages and sections are impacted by the retention settings that you specify.
 
 Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-When a document with versions is subject to retention settings to retain that content, versions that get copied to the Preservation Hold library exist as a separate item. If the retention settings are configured to delete at the end of the retention period:
+When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Currently rolling out to tenants, all versions of the file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files.
+
+If the retention settings are configured to delete at the end of the retention period:
 
 - If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 
-- If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
+- If the retention period is based on when the content was last modified:
+    - **After the change where all versions of the file are retained in a single file in the Preservation Hold library**: Each version has the same expiration date as the last version of the document. The last version of the document and its versions all expire at the same time.
+    - **Before the change where versions were copied to the Preservation Hold library as separate files**: Each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
 
 When the retention action is to delete the document, all versions not in the Preservation Hold library are deleted at the same time according to the current version.
 

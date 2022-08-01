@@ -3,7 +3,7 @@ title: Understand your bill or invoice
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 f1.keywords:
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- VSBFY23
 - commerce_billing
 - AdminSurgePortfolio
 - AdminTemplateSet

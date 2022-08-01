@@ -2,7 +2,7 @@
 title: "Microsoft 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: landing-page
 ms.service: o365-solutions

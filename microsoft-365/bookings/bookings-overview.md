@@ -8,13 +8,11 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
+ms.custom: VSBFY23
 description: "An overview of the Microsoft Bookings app, which includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book appointments."
 ---
 
 # Microsoft Bookings
-
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 Microsoft Bookings makes scheduling and managing appointments a breeze. Bookings includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book a time that works best for them. Email and SMS text notifications reduce no-shows and enhances customer satisfaction. Your organization saves time with a reduction in repetitive scheduling tasks. With built-in flexibility and ability to customize, Bookings can be designed to fit the situation and needs of many different parts of an organization.
 
