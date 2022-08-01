@@ -14,7 +14,7 @@ ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: "Learn about archive mailboxes to provide additional mailbox storage."
+description: "Learn about archive mailboxes to provide extra mailbox storage."
 ---
 
 # Learn about archive mailboxes
