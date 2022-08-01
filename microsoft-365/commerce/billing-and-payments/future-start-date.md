@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn what it means when your invoice has a subscription with a future start date."
 ms.custom: 
 - commerce_billing
-- null
+- empty
 ms.date: 04/08/2022
 ---
 
