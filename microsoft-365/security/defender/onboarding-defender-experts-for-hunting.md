@@ -59,22 +59,10 @@ You can receive Defender Experts Notifications from Defender Experts through the
 - The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
 - OData alerting [API](../../security/defender-endpoint/get-alerts.md) and [REST API](../defender-endpoint/configure-siem.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
-- Your inbox if you choose to have Defender Experts Notifications sent to you via email. See [Get incident notifications](../../security/defender/incidents-overview.md), for details.
-
-### Create an email notification rule
-
-You can create rules to send email notifications for notification recipients. For full details, see [Configure alert notifications](../../security/defender/incidents-overview.md) to create, edit, delete, or troubleshoot email notifications.
-
-## View Defender Expert Notifications
-
-You'll start receiving Defender Experts Notifications from Defender Experts in your email after you've configured your system to receive email notification. 
-
-1. Select the link in the email to go to the corresponding alert context in the dashboard tagged with **Defender Experts**.
-2. From the **Alerts** page, select the same alert topic as the one you received in the email, to view further details.
 
 ### Filter to view just the Defender Experts Notifications
 
-You can also filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
+You can filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
 
 1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter](../../media/mte/defenderexperts/filter.png) icon.
 2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
