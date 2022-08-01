@@ -457,7 +457,7 @@ DeviceEvents
 
 You can generate the GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
 
-![image](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
+![Screenshot of GUID in PowerShell.](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
 ### What are the removable storage media and policy limitations?
 
@@ -508,13 +508,13 @@ DeviceFileEvents
 
 2. Open Device Manager. 
 
-   ![image](https://user-images.githubusercontent.com/81826151/181859412-affd6aa1-09ad-44bf-9541-330499cc2c87.png)
+   ![Screenshot of Device Manager.](https://user-images.githubusercontent.com/81826151/181859412-affd6aa1-09ad-44bf-9541-330499cc2c87.png)
 
 3. Locate the media in the Device Manager, right-click, and then select **Properties**.
 
-   ![image](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
+   ![Screenshot of USB selected in Disk drives, and Properties highlighted.](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
 
-4. Open **Details**, and select **Property**.
+4. Open **Details**, and select **Properties**.
 
-   ![image](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
+   ![Screenshot of USB device properties.](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
     
