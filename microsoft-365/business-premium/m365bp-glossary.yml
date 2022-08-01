@@ -92,7 +92,7 @@ content: |
  
  ## Q
  ### quarantine
- Isolating a potentially malicious file so that it can no longer be a threat to the network or system.
+ Isolating a potentially malicious file so that it can no longer be a threat to the network or system. 
  
  ## R
  ### ransomware
@@ -100,7 +100,7 @@ content: |
  
  ## S
  ### Secure Score
- Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. You can find Secure Score in the Microsoft 365 Defender portal (at https://security.microsoft.com/securescore).
+ Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. You can find Secure Score in the Microsoft 365 Defender portal ([https://security.microsoft.com/securescore](https://security.microsoft.com/securescore)).
  ### spam
  When large numbers of pieces of content are sent to a large number of recipients, usually through email, and often containing malware.
  ### spoofing
