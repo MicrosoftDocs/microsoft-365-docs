@@ -38,7 +38,7 @@ Following are the system requirements to schedule  antivirus in Microsoft Defend
 
 ## Scheduling Antivirus in Red Hat Linux
 
-Microsoft has thoroughly documented how to schedule cron jobs to initiate antivirus scans on a schedule. How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Docs. This works well if the device is up and running 24/7. But what if it is not i.e., workstations, laptops, or servers that are shut down during the cron schedule. This is where we can use Anacron. One of the advantages of using anacron is that it uses timestamps to find the last time the job was executed. If the device was shutdown during the scheduled cron job it will need to wait until the next scheduled time. Using Anacron it will see if the job runs, if not then it will execute it.
+Microsoft has thoroughly documented how to schedule cron jobs to initiate antivirus scans on a schedule. How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Docs. This works well if the device is up and running 24/7. But what if it isn't i.e., workstations, laptops, or servers that are shut down during the cron schedule. This is where we can use Anacron. One of the advantages of using anacron is that it uses timestamps to find the last time the job was executed. If the device was shutdown during the scheduled cron job it will need to wait until the next scheduled time. Using Anacron it will see if the job runs, if not then it will execute it.
 
 ### Steps to schedule antivirus in Red Hat Linux
 
@@ -60,7 +60,7 @@ Microsoft has thoroughly documented how to schedule cron jobs to initiate antivi
 
 1. A few things to note in the file.
     1. Shell is /bin/sh not /bin/bash. Remember this when writing the jobs
-    1. RANDOM_DELAY: The maximum time in minutes for the job. This is used to offset the jobs so that there would not be too many jobs running at the same time. This would be ideal for VDI solutions.
+    1. RANDOM_DELAY: The maximum time in minutes for the job. This is used to offset the jobs so that there wouldn't be too many jobs running at the same time. This would be ideal for VDI solutions.
     1. START_HOURS_RANGE: The time range that the job can be executed.
     1. cron.daily: The 1 is the period of days for the frequency the job executions. The 5 is the delay in minutes the anacron waits after the device restarts.
 
@@ -105,9 +105,9 @@ Microsoft has thoroughly documented how to schedule cron jobs to initiate antivi
     total 0
     ```
 
-1. Ignoring the /etc/cron.d directory you will see a /etc/corn.daily, hourly, monthly, and weekly 
+1. Ignoring the /etc/cron.d directory you'll see a /etc/corn.daily, hourly, monthly, and weekly 
 
-1. Let’s say you are required to schedule weekly antivirus scans. You can create a file (Job) under the /etc/cron.weekly directory.
+1. Let’s say you're required to schedule weekly antivirus scans. You can create a file (Job) under the /etc/cron.weekly directory.
 
     cd /etc/cron.weekly
     vi mdavfullscan
