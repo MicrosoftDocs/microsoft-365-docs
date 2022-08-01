@@ -76,6 +76,19 @@ The *Report a concern* option is enabled by default and can be controlled via Te
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
+## Policy for insider risk management integration (preview)
+
+Communication compliance can provide disgruntlement signals detected in messages to [insider risk management](/microsoft-365/compliance/insider-risk-management). disgruntlement policies by using a dedicated [Detect inappropriate text](#policy-templates) policy. This policy is automatically created (if selected as an option) during configuration of a [Data leaks by disgruntled employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) or [Security policy violations by disgruntled employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) policy in insider risk management.
+
+When configured for an insider risk management disgruntlement policy, a dedicated policy named *Disgruntlement in messages - (date created)* is created in communication compliance and includes all organization users in the policy. This policy starts detecting disgruntlement behavior in messages by using the built-in [Threat, Harassment, and Discrimination classifiers](#classifiers) and automatically sends these signals to insider risk management.  
+
+Users that send 5 or more messages classified as disgruntled within 24 hours are automatically brought in-scope for insider risk management policies that include this option. Once in-scope, the insider risk management detect risky activities configured in the policy and generate alerts as applicable. It may take up to 48 hours from the time disgruntlement messages are sent until the time a user is brought in-scope in an insider risk management policy.
+
+You should also consider the following guidance when integrating this policy with insider risk management:
+
+- **For organizations without an existing *Detect inappropriate text* policy**. The new *Disgruntlement in messages - (date created)* policy will be automatically created by the insider risk management policy wizard. In most cases, no further actions are needed.
+- **For organizations with an existing *Detect inappropriate text* policy**. The new *Disgruntlement in messages - (date created)* policy will be automatically created by the insider risk management policy wizard. Since your organization already has an existing *Detect inappropriate text* policy, we recommended that you [pause](#pause-a-policy) your existing inappropriate text policy. This will prevent duplicate alerts for activities detected by this policy. If needed, you can edit this policy to change the in-scope users or individual policy conditions as applicable.
+
 ## Pause a policy
 
 After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspection and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admin* role group.
