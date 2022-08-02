@@ -57,7 +57,7 @@ Security trials include the **Defender Vulnerability Management** trial and the 
 
 | Permission | Where to assign | 
 | :------------- | :-------------: |
-Security operations  | Microsoft 365 Defender portal > Permissions > Endpoints roles & groups  |
+Security operations  | Microsoft 365 Defender portal > Permissions > Endpoints roles & groups >Roles  |
 | Threat and vulnerability management | Microsoft 365 Defender portal > Permissions > Endpoints roles & groups >Roles |
 
 ## How to assign roles
