@@ -52,7 +52,7 @@ You can use the Microsoft 365 Defender portal or PowerShell to allow or block em
 
 > [!NOTE]
 > The emails from these senders will be blocked as _high confidence spam_ (SCL = 9).
-> Users in the organization won't be able to send emails to these blocked domains and addresses. They will be receiving NDR which will state the following "5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization’s tenant allow/block list policy"
+> Users in the organization won't be able to send emails to these blocked domains and addresses. They will receive a non-delivery report which will state the following: "5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization’s tenant allow/block list policy."
 
 ### Use PowerShell
 
