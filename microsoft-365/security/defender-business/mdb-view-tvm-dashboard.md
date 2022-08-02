@@ -21,11 +21,11 @@ ms.custom: intro-get-started
 
 # Use your vulnerability management dashboard in Microsoft Defender for Business
 
-Defender for Business includes a vulnerability management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, you can also view information about exposed devices and security recommendations. You can use your threat & vulnerability management dashboard to:
+Defender for Business includes a vulnerability management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, that dashboard enables you to view information about exposed devices and see relevant security recommendations. You can use your threat & vulnerability management dashboard to:
 
-- View your exposure score, which is associated with devices in your company
-- View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions
-- View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices
+- View your exposure score, which is associated with devices in your company.
+- View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions.
+- View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices.
 
 ## Vulnerability management features and capabilities
 
