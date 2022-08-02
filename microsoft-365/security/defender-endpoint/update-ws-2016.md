@@ -28,7 +28,7 @@ To update Windows Server 2016, perform the following steps:
 1. Uninstall MDAV, if you are using McAfee, a third-party antivirus solution, and reboot the system.
 
    > [!IMPORTANT]
-   > Implement this step only if your Windows Server 2016 machine is using McAfee or any other third-party antivirus solution. Else, proceed to the next step. 
+   > Implement Step-3 only if your Windows Server 2016 machine is using McAfee or any other third-party antivirus solution. Else, proceed to the next step. 
 
 1. Re-enable MDAV on the machine running Windows server 2016, Version 1803 or later. For more information, see [Re-enable MDAV on Windows Server, Version 1803 or later](switch-to-mde-phase-2.md).
 1. Reboot the system.
