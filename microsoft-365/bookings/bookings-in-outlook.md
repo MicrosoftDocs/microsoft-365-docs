@@ -75,7 +75,7 @@ You should have one of the following domains in the response:
     
     Anonymous:ContactsSharing: Share contacts only.
 
-   To enable anonymous sharing, use the following command or alter the **Add** section with the domain that you would like to add.
+To enable anonymous sharing, use the following command or alter the **Add** section with the domain that you would like to add.
 
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
