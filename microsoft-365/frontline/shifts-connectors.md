@@ -38,6 +38,10 @@ Data flows via the connector both ways to ensure schedules are always up to date
 
 Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed.
 
+- [Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)
+- [Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)
+- [Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)
+
 ### Microsoft Teams Shifts connector for Blue Yonder
 <a name="blue_yonder"> </a>
 
