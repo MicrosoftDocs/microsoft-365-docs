@@ -32,7 +32,7 @@ With your WFM system as the system of record, your frontline workers can see and
 
 ## Integrate Shifts with UKG Dimensions
 
-Currently, the wizard supports the [Microsoft Teams Shifts connector for UKG Dimensions](). This connector enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to UKG Dimensions through the connector.
+Currently, the wizard supports the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions). This connector enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to UKG Dimensions through the connector.
 
 > [!NOTE]
 > You can also use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-dimensions-powershell-setup.md).
