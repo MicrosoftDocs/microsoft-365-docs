@@ -51,7 +51,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
-  ```console
+  ```DOS
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -59,13 +59,17 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for domains & addresses, 500 entries for URLs, 500 entries for file hashes, and 1024 entries for spoofing (spoofed senders).
+- The Tenant Allow/Block List has the following limits:
+  - 500 entries for domains & addresses.
+  - 500 entries for URLs.
+  - 500 entries for file hashes.
+  - 1024 entries for spoofing (spoofed senders).
 
-- The maximum number of characters for each entry is:
-  - File hashes = 64
-  - URL = 250
+- Entries in the Tenant Allow/Block List have the following limits:
+  - 64 character for file hashes.
+  - 250 characters for URLs.
 
-- 99.99% of entries should be active within 30 minutes. The rest of the scenarios can take up to 24 hours. 
+- 99.99% of entries should be active within 30 minutes. Entries that aren't active within 30 minutes can take up to 24 hours. 
 
 - By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for blocks only).
 
@@ -485,6 +489,6 @@ Only messages from that domain *and* sending infrastructure pair are allowed to 
 
 ## What to expect after you add an allow or block entry
 
-After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately once the entry is active. 99.99% of entries will be active within 30 minutes, while the rest of the cases can take up to 24 hours.
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately once the entry is active. 99.99% of entries should be active within 30 minutes. Entries that aren't active within 30 minutes can take up to 24 hours.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
