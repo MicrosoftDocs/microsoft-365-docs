@@ -118,14 +118,15 @@ Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
 7. Review and assign this profile to targeted devices/users.
 
-**End User Privacy Controls**
+**End user privacy controls**
 
 These controls help the end user to configure the information shared to their organization.
 
-1. For **Android Enterprise work profile**, End User controls will not be visible. Admin will decide and controls the settings.
-2. However, for **Android Enterprise personal profile**, the control will be displayed under **Settings-> Privacy**.
-3. Users will see a toggle for Unsafe Site Info, malicious application and network protection.
-These toggles will only be visible if enabled by the admin. Users can decide if they want to send the information to their Organization or not.
+1. For **Android Enterprise work profile**, end user controls will not be visible. Admins controls these settings.
+2. For **Android Enterprise personal profile**, the control is displayed under **Settings> Privacy**.
+3. Users will see a toggle for Unsafe Site Info, malicious application, and network protection.
+
+These toggles will only be visible if enabled by the admin. Users can decide if they want to send the information to their organization or not.
 
 Enabling/disabling the above privacy controls will not impact the device compliance check or conditional access.
 
