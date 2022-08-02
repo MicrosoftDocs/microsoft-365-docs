@@ -16,6 +16,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - commerce_purchase
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
