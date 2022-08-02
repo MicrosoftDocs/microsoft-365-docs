@@ -21,15 +21,23 @@ ms.technology: mde
 
 # Update Windows Server 2016
 
-This article describes how you can update the Window Server 2016.
-
-To update Windows Server 2016, ensure that the following prerequisites are fulfilled:
+To update Windows Server 2016, perform the following steps:
 
 1. Install the latest Servicing Stack Update (SSU) on the machine running Windows server 2016.
-1. Install the latest cumulative update (LCU) on the machine running Windows server 2016. 
+1. Install the latest cumulative update (LCU) on the machine running Windows server 2016.
+1. Uninstall MDAV, if you are using McAfee, a third-party antivirus solution, and reboot the system.
+
+   > [!IMPORTANT]
+   > Implement this step only if your Windows Server 2016 machine is using McAfee or any other third-party antivirus solution. Else, proceed to the next step. 
+
 1. Re-enable MDAV on the machine running Windows server 2016, Version 1803 or later. For more information, see [Re-enable MDAV on Windows Server, Version 1803 or later](switch-to-mde-phase-2.md).
 1. Reboot the system.
 1. Install the latest version of the platform update, namely 4.18.2202.4.
 
    > [!NOTE]
-   > This platform update will be automatically installed if you run the [script](https://github.com/microsoft/mdefordownlevelserver/blob/main/Install.ps1). However, to run this script, your machine has to be in the state in which this script can run successfully.
+   > Re-enabling MDAV does not automatically install the platform update. Therefore, this step is a seperate and mandatory step.
+   >  
+   > If you want this platform update to be automatically installed, you've to run the [script](https://github.com/microsoft/mdefordownlevelserver/blob/main/Install.ps1).
+   > 
+   > Ensure that your machine is in the state that is conducive to run this script for automatic platform updates.
+
