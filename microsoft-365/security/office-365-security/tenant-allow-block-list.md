@@ -485,6 +485,6 @@ Only messages from that domain *and* sending infrastructure pair are allowed to 
 
 ## What to expect after you add an allow or block entry
 
-After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately once the entry in active. 99.99% of entries will be active within 30 minutes, while rest of the cases it can take upto 24 hours.
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately once the entry is active. 99.99% of entries will be active within 30 minutes, while the rest of the cases can take up to 24 hours.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
