@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to automatically create documents and other content using a modern template in Microsoft SharePoint Syntex.
+description: Learn how to automate the creation of new documents and other content using a modern template in Microsoft SharePoint Syntex.
 ---
 
 # Create documents using content assembly in Microsoft SharePoint Syntex
 
-You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistentently, and less prone to errors by using content assembly in SharePoint Syntex.
+You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, invoices, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and less prone to errors by using content assembly in SharePoint Syntex.
 
 With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or user inputs as a data source.
 
