@@ -65,7 +65,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   - File hashes = 64
   - URL = 250
 
-- 99.999% entries should be active within 30 minutes. Rest of the scenarios can take upto 24 hours. 
+- 99.99% of entries should be active within 30 minutes. The rest of the scenarios can take up to 24 hours. 
 
 - By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for blocks only).
 
