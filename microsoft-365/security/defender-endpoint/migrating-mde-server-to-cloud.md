@@ -49,7 +49,7 @@ To enable Defender for Servers for Azure VMs and non-Azure machines connected th
 
      :::image type="content" source="images/mde-integration.png" alt-text="Screenshot that shows how to enable MDE integration.":::
 
-If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default.
+   If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default.
 
 5. Make sure the connectivity requirements for Azure Arc are met. Microsoft Defender for Cloud requires all on-premises and non-Azure machines to be connected via the Azure Arc agent. In addition, Azure Arc doesn't support all MDE supported operating systems. So, learn how to plan for [Azure Arc deployments here](/azure/azure-arc/servers/plan-at-scale-deployment).
 
@@ -75,7 +75,7 @@ For Azure VMs, no extra steps are required, these are automatically onboarded to
 
      :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable auto-provisioning for Azure Arc agent.":::
 
-For more information, see [Defender for Cloud’s multicloud capabilities](https://aka.ms/mdcmc).
+   For more information, see [Defender for Cloud’s multicloud capabilities](https://aka.ms/mdcmc).
 
 ## What happens once all migration steps are completed?
 
