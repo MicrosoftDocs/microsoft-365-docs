@@ -172,7 +172,7 @@ The installer package will check if the following components have already been i
 
 - The Servicing Stack Update (SSU) from September 14, 2021 or later must be installed.
 - The Latest Cumulative Update (LCU) from September 20, 2018 or later must be installed.  It's recommended to install the latest available SSU and LCU on the server
-- Enable the Microsoft Defender Antivirus (MDAV) feature and ensure it's up to date. For more information on enabling Microsoft Defender Antivirus on Windows Server 2016, see [Re-enable Microsoft Defender Antivirus on Windows Server 2016](switch-to-mde-phase-2.md#re-enable-microsoft-defender-antivirus-on-windows-server-2016).
+- Enable the Microsoft Defender Antivirus (MDAV) feature and ensure it's up to date. For more information on enabling Microsoft Defender Antivirus on Windows Server 2016, see [Re-enable Microsoft Defender Antivirus on Windows Server 2016](switch-to-mde-phase-2.md#re-enable-microsoft-defender-antivirus-on-windows-server-2016) and [Re-enable Microsoft Defender Antivirus on Windows Server, version 1803 or later](switch-to-mde-phase-2.md#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later).
 - Download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 #### Prerequisites for running with third-party security solutions
