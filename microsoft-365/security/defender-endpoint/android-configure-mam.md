@@ -129,7 +129,52 @@ Select **Setting > Max allowed device threat level** in **Device Conditions** an
 
 6. Select **Continue** to log into the managed application. 
 
+### Configure privacy controls 
+Admins can use the following steps to enable privacy and not collect the domain name, app details and network information as part of the alert report for corresponding threats.
 
+1. In Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+
+2. Give the policy a **name**.
+
+3. Under the Select Public Apps, choose **Microsoft Defender for Endpoint** as the target app.
+
+4. In Settings page, under the General Configuration Settings add **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** as the keys and value as true.
+
+5. Assign this policy to users. By default, this value is set to false.
+
+6. Review and create the policy.
+
+## Optional permissions 
+
+Microsoft Defender for Endpoint on Android enables Optional Permissions in the onboarding flow. Currently the permissions required by MDE are mandatory in the onboarding flow. With this feature, admin can deploy MDE on Android devices with MAM policies without enforcing the mandatory VPN and Accessibility Permissions during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. 
+
+### Configure Optional Permission
+Use the following steps to enable Optional permission for devices.
+
+1. In Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+
+2. Give the policy a **name**.
+
+3. Select **Microsoft Defender for Endpoint*** in public apps.
+
+4. In Settings page, select **Use configuration designer** and add **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key and value type as Boolean. 
+
+5. To enable optional permission, enter value as **true** and assign this policy to users. By default, this value is set to false.
+For users with key set as true, the users will be able to onboard the app without giving these permission.
+
+6. Click Next and assign this profile to targeted devices/users.
+
+### End User flow 
+
+User will install and open the app to start the onboarding.
+
+1. If admin has setup Optional permissions, then user can Skip VPN or accessibility permission or both and complete onboarding.
+2. Even if the user has skipped these permissions, the device will be able to onboard, and heartbeat will be sent.
+3. Since permissions are disabled, web protection will not be active. It will be partially active if one of the permissions is given.
+4. Later, user can enable web protection from within the App. This will install the VPN configuration on the device.
+
+>[!NOTE] 
+> Optional Permissions is different from Disable Web Protection. Optional Permissions only helps to skip the permissions during onboarding but its available for the end user to later review and enable it. While Disable Web Protection allows users to onboard the MDE app without the Web Protection. It cannot be enabled later.
 
 ## Related topics
 
