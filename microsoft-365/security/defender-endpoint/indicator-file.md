@@ -71,7 +71,7 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 4. Specify the following details:
     - Indicator - Specify the entity details and define the expiration of the indicator.
     - Action - Specify the action to be taken and provide a description.
-    - Scope - Define the scope of the device group (scoping is not available in [Defender for Business](../defender-business/mdb-overview.md)).
+    - Scope - Define the scope of the device group (scoping isn't available in [Defender for Business](../defender-business/mdb-overview.md)).
 
 5. Review the details in the Summary tab, then select **Save**.
 
@@ -86,7 +86,7 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The current supported actions for file IOC are allow, audit and block, and remediate. After choosing to block a file, you can choose whether triggering an alert is needed. In this way you will be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
+The current supported actions for file IOC are allow, audit and block, and remediate. After choosing to block a file, you can choose whether triggering an alert is needed. In this way, you'll be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
 
 In Microsoft 365 Defender, go to **Settings** > **Endpoints** > **Indicators** > **Add New File Hash**.
 
@@ -111,7 +111,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 >
 > For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 >
-> For more details on configuring this feature on Defender for Endpoint on Linux and macOS, see [Configure file hash computation feature on Linux](linux-preferences.md#configure-file-hash-computation-feature) and [Configure file hash computation feature on macOS](mac-preferences.md#configure-file-hash-computation-feature).
+> For more information on configuring this feature on Defender for Endpoint on Linux and macOS, see [Configure file hash computation feature on Linux](linux-preferences.md#configure-file-hash-computation-feature) and [Configure file hash computation feature on macOS](mac-preferences.md#configure-file-hash-computation-feature).
 
 ## Public Preview: Advanced hunting capabilities
 
@@ -128,7 +128,7 @@ Timestamp > ago(30d)
 
 For more information about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
-Below are additional thread names which can be used in the sample query from above:
+Below are other thread names that can be used in the sample query from above:
 
 Files:
 
@@ -145,7 +145,7 @@ The response action activity can also be viewable in the device timeline.
 
 Cert and File IoC policy handling conflict will follow the below order:
 
-- If the file is not allowed by Windows Defender Application Control and AppLocker enforce mode policy/policies, then **Block**
+- If the file isn't allowed by Windows Defender Application Control and AppLocker enforce mode policy/policies, then **Block**
 - Else if the file is allowed by the Microsoft Defender Antivirus exclusion, then **Allow**
 - Else if the file is blocked or warned by a block or warn file IoC, then **Block/Warn**
 - Else if the file is allowed by an allow file IoC policy, then **Allow**

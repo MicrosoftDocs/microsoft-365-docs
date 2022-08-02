@@ -25,7 +25,7 @@ To update Windows Server 2016, perform the following steps:
 
 1. Install the latest Servicing Stack Update (SSU) on the machine running Windows server 2016.
 1. Install the latest cumulative update (LCU) on the machine running Windows server 2016.
-1. Uninstall MDAV, if you are using McAfee, a third-party antivirus solution, and reboot the system.
+1. Uninstall MDAV, if you're using McAfee, a third-party antivirus solution, and reboot the system.
 
    > [!IMPORTANT]
    > Implement Step-3 only if your Windows Server 2016 machine is using McAfee or any other third-party antivirus solution. Else, proceed to the next step. 
