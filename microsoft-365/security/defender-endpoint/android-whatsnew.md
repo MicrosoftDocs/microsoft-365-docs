@@ -27,9 +27,9 @@ ms.technology: mde
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 >[!NOTE]
-> Microsoft Defender for endpoint's **Anti malware engine** is now in GA. All the users are required to have an MDE version above **1.0.3815.0000** to utilize this new malware protection capability. Therefore, users on MDE version below 1.0.3815.0000 will be sent **notifications and in-app overlay messages** to **update their MDE application**. Users can click on the link provided in the overlay message to directly go to managed play store and update the application. 
+> Microsoft Defender for Endpoint's **Anti malware engine** is now generally available. All the users are required to have a Microsoft Defender for Endpoint version above **1.0.3815.0000** to utilize this new malware protection capability. Users on Microsoft Defender for Endpoint version below 1.0.3815.0000 will be sent notifications and in-app overlay messages to update their Microsoft Defender for Endpoint application. Users can click on the link provided in the overlay message to  go to the managed play store and update the application. 
 >
-> For users who cannot access play store due to some reason, app can be updated through **company portal**. 
+> If users can't access the play store, the app can be updated through the company portal. 
 
 
 ## Microsoft defender on Android enterprise BYOD personal profile
