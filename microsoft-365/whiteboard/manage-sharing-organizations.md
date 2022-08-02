@@ -21,9 +21,9 @@ The sharing experience differs based on whether you’re in a Teams meeting, if 
 
 ## Share in Teams meetings
 
-When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization. It then automatically shares the whiteboard with any in-tenant users in the meeting.
+When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization. Also, whiteboards are shared automatically with any in-tenant users in the meeting. Whiteboards are shared using company-shareable links, regardless of the default setting. Support for the default sharing link type is planned.
 
-There’s an additional capability for temporary collaboration by external and shared device accounts during a meeting. This capability allows these users to temporarily view and collaborate on whiteboards when they’re shared in a Teams meeting, similar to PowerPoint Live sharing.
+There’s an additional capability for temporary collaboration by external and shared device accounts during a Teams meeting. Users can temporarily view and collaborate on whiteboards that are shared in a meeting, in a similar way to PowerPoint Live sharing.
 
 >[!NOTE]
 > This isn't a share link and doesn't grant access to the file. It provides temporary viewing and collaboration on the whiteboard for the duration of the Teams meeting only.
@@ -43,7 +43,7 @@ If you restrict external sharing for OneDrive for Business, you can keep it rest
 This setting applies only to whiteboards and replaces the previously shared settings, **OneDriveLoopSharingCapability** and **CoreLoopSharingCapability**. Those settings are no longer applicable and can be disregarded.
 
 >[!NOTE]
-> By default, the Teams meeting setting **Anonymous users can interact with apps in meetings** is enabled. If you have disabled it, any anonymous users (as opposed to guests or federated users) won't have access to the whiteboard during the meeting.
+> This applies only to guests and federated users. It does not apply to anonymous meeting users at this time.
 
 These changes should take approximately 60 minutes to apply across your tenancy. 
 
