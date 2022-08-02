@@ -42,10 +42,32 @@ Currently, the wizard supports the [Microsoft Teams Shifts connector for UKG Dim
 You must be a Microsoft 365 global admin to run the wizard.
 
 ### Prerequisites
+
+Before you get started, make sure you have the following prerequisites:
+
+- UKG Dimensions version ???
+- Your UKG Dimensions service account name and password and service URLs:
+
+  - Application program interface URL
+  - Application key
+  - Client ID
+  - Client secret
+  - Single Sign On URL
+
+  If you don't have this information, contact UKG Dimensions support.
+- Federated single sign-on (SSO) authentication is enabled in your UKG Dimensions environment. Azure Active Directory (Azure AD) is the supported identity provider for SSO. To enable SSO, set up integration between Azure AD and UKG Dimensions. For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). After the integration is set up, configure users as federated accounts on their profile page in UKG Dimensions.
+- At least one team is set up in Teams.
+- You added your Microsoft 365 system account as a team owner to all teams you want to map.</br> [Create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions.
+
+    We recommend that you create an account specifically for this purpose and not use your user account.
+
+- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
+
+### Prerequisites
 <a name="prerequisites"> </a>
 [!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
 
-- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map an UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
+- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
 
 ## Remove schedules from teams you want to map
 <a name="remove_schedules"> </a>
@@ -74,7 +96,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 1. Select **Connect your workforce management system**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. When you're ready, select **Get started**.
-1. On the Choose your connector page, choose **UKG Dimensions**, and then select **Next** to create an UKG Dimensions connection.
+1. On the Choose your connector page, choose **UKG Dimensions**, and then select **Next** to create a UKG Dimensions connection.
 
 ### Enter connection details
 <a name="connection_details"> </a>
@@ -201,13 +223,13 @@ You’re on your way but you’re not done yet! Be sure to check your email. You
 > [!IMPORTANT]
 > Follow these steps only if you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests in the wizard. Completing this step hides the capability in Shifts.
 >
-> - Open shifts: **Shifts users will not see Blue Yonder WFM data**
+> - Open shifts: **Shifts users will not see UKG Dimensions data**
 > - Swap requests: **Feature is disabled for all users**
 > - Time off requests: **Feature is disabled for all users**
 >
 > Without this second step, users will still see the capability in Shifts, and will get an "unsupported operation" error message if they try to use it.
 
-To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a Blue Yonder WFM instance:
+To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a UKG Dimensions instance:
 
 - Open shifts: ```openShiftsEnabled```
 - Swap requests:  ```swapShiftsRequestsEnabled```
