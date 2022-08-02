@@ -70,7 +70,7 @@ You must follow the sequence to identify malicious exchange connectors:
 
 ## Investigating malicious connectors
 
-In this section, we will describe steps to investigate an alert and remediate the security risk due to this incident.
+This section describes the steps to investigate an alert and remediate the security risk due to this incident.
 
 - Determine whether the connector demonstrates bad (malicious) behavior.
   - Look for events indicating unusual mail traffic and identify, whether any new exchange connector was added recently.
@@ -226,7 +226,7 @@ Following are the AHQ considerations for protecting the recipients from maliciou
 
 Once it’s determined that the observed alert activities are part of TP, classify those alerts and perform the actions below:
 
-- Disable/remove the connector, which has been found to be malicious.
+- Disable or remove the connector that was found to be malicious.
 - If the admin account was compromised, reset the admin’s account credentials. Also, disable/revoke tokens for the compromised admin account and enable multi-factor authentication for all admin accounts.
   - Look for suspicious activities performed by the admin.
 - Check for other suspicious activities across other connectors in the environment.
