@@ -94,6 +94,14 @@ You can disable this setting to ensure that only globally-defined lists (such as
 
 4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Click **OK**.
 
+### Use Microsoft Endpoint Manager to disable local list merging
+
+1. In the [Microsoft Endpoint Manager](https://docs.microsoft.com/en-us/mem/endpoint-manager-overview) admin center, click **Endpoint security** then select **Antivirus**.
+
+2. Here you can select **Create Policy** or modify an existing **Microsoft Defender Antivirus** policy.
+
+3. Under the **Configuration settings**, select the drop-down next to **Disable Local Admin Merge** and select **Disable Local Admin Merge**.
+
 > [!NOTE]
 > If you disable local list merging, it will override controlled folder access settings. It also overrides any protected folders or allowed apps set by the local administrator. For more information about controlled folder access settings, see [Allow a blocked app in Windows Security](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
 
