@@ -90,6 +90,53 @@ For step-by-step guidance, see:
 
 After a connection is set up, you can use PowerShell to update and change connection settings at any time, as needed. As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
+### Microsoft Teams Shifts connector for UKG Dimensions
+<a name="ukg_dimensions"> </a>
+
+The Teams Shifts connector for UKG Dimensions is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date.  
+
+Frontline managers can:
+
+- Publish shifts and schedules in UKG Dimensions and view them in Shifts.
+- Create, manage, and assign open shifts in UKG Dimensions and view them in Shifts.
+- Assign open shifts that were created in UKG Dimensions and view in Shifts.
+- Create, edit, and delete time off in UKG Dimensions and view in Shifts.
+- View and approve schedule requests from workers in both UKG Dimensions and Shifts.
+- Set and update worker availability in UKG Dimensions and view in Shifts.
+
+Frontline workers can:
+
+- See their own and their team's shifts and schedules in Shifts.
+- Request time off and view their team's open shifts in Shifts.
+
+The following actions are currently not supported:
+
+- Set availability in Shifts and view in UKG Dimensions.
+- Add, edit, delete, save, or publish shifts in Shifts.
+- Add, edit, delete, save, or publish time off in Shifts.
+- Add, edit, delete, save, or publish open shifts in Shifts.
+
+When a frontline manager or worker tries to do any of these actions in Shifts, they'll receive a message to let them know the action isn't supported.
+
+#### Example scenario
+
+Ravi, a manager, publishes a schedule in UKG Dimensions, which is synced to Shifts in Teams through the connector. Camille, a staff member, gets notified in Teams on her mobile device, and views her schedule and assigned shifts.
+
+Camille needs to take some time off and requests a day off using Shifts. The request is sent to UKG Dimensions through the connector in real time. UKG Dimensions ensures that the request is compliant with business rules and the request is created. Ravi sees and approves the request in UKG Dimensions, and the approval is synced to Teams. (Ravi can also see and approve the request in Shifts). Camille is notified in Teams that her request is approved and views her updated schedule.
+
+Camille wants to swap a shift with a coworker. In Shifts, Camille sees a list of all shifts that are eligible for a swap based on business rules in UKG Dimensions. Camille chooses a shift that's currently assigned to Hayden. Hayden is notified in Teams on their mobile device and accepts the swap request. Ravi sees and approves the request in Shifts, and the approval is synced to UKG Dimensions. (Ravi can also see and approve the request in UKG Dimensions). Camille and Hayden are notified in Teams, and view their updated schedules.
+
+#### Set up a connection
+
+Integrating Shifts with UKG Dimensions using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
+
+For step-by-step guidance, see:
+
+- [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)
+- [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
+
+After a connection is set up, you can use PowerShell to update and change connection settings at any time, as needed. As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
+
 ### Reflexis Shifts connector for Microsoft Teams
 
 The Reflexis Shifts connector for Microsoft Teams is hosted and managed by Zebra. With this connector, you can integrate Shifts with the Reflexis WFM system to manage your schedules and keep them up to date.
