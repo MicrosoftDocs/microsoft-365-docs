@@ -34,6 +34,7 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
+### [Migrate Defender for Endpoint servers to Defender for Cloud](migrating-mde-server-to-cloud.md)
 ### [Move to Defender for Endpoint](switch-to-mde-overview.md)
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
@@ -278,6 +279,7 @@
 ##### [Enable exploit protection](enable-exploit-protection.md)
 ##### [Customize exploit protection](customize-exploit-protection.md)
 ##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
+##### [Troubleshoot exploit protection mitigations](troubleshoot-exploit-protection-mitigations.md)
 ##### [Exploit protection reference](exploit-protection-reference.md)
 #### [Network protection]()
 ##### [Protect your network](network-protection.md)

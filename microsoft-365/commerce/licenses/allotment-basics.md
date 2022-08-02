@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - commerce_licensing
+- empty
 search.appverid: MET150
 description: "Learn about the new allotments feature."
 ms.date: 05/12/2022
