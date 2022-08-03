@@ -88,6 +88,8 @@ All our updates contain
 <details>
 <summary>July-2022 (Platform: 4.18.2205.x | Engine: 1.1.19500.2)</summary>
 
+*This section contains pre-release information that is still in active development. Expect updates, including the final security update version number, to occur.*
+
 &ensp;Security intelligence update version: **x.xxx.xx.x**<br/>
 &ensp;Release date: **August 8, 2022**<br/>
 &ensp;Platform: **4.18.2205.x**<br/>
@@ -101,16 +103,16 @@ Security intelligence update version: x.xxx.xx.x<br/>
 
 - Defender performance improvements during file copy operations
 - Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
-- Added fix for Defender WINEVT channels across update/restarts. (See [Windows Event Log](/windows/win32/api/_wes/) for more information about WINEVT.)
+- Added fix for Defender WINEVT channels across update/restarts. (See [Windows Event Log](/windows/win32/api/_wes/) for more details about WINEVT.)
 - Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
 - Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](troubleshoot-microsoft-defender-antivirus.md) 
-- Added support for Microsoft Defender for Endpoint stack processes token hardening 
-- Performance improvement for hybrid sleep delay when Microsoft Defender Antivirus is active 
+- Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
+- Performance improvement for [hybrid sleep](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) delay when Microsoft Defender Antivirus is active 
 - Fixed client detection behavior related to custom [certificate blocking indicators of compromise](indicator-certificates.md) 
-- Performance improvement for AntiMalware Scan Interface (AMSI) caching 
-- Improved detection and remediation for Microsoft Visual Basic for Applications (VBA) related macros 
+- Performance improvement for [AntiMalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) caching 
+- Improved detection and remediation for [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) related macros 
 - Improved processing of AMSI exclusions 
-- Fixed deadlock detection in Host Intrusion Prevention System (HIPS) rule processing 
+- Fixed deadlock detection in Host Intrusion Prevention System (HIPS) rule processing. (For additional information about HIPS and Defender for Endpoint, see [Migrating from a third-party HIPS to ASR rules](migrating-asr-rules.md).) 
 - Fixed memory leak where `MsMpEng.exe` was consuming private bytes. (If high CPU usage is also an issue, see [High CPU usage due to Microsoft Defender Antivirus](troubleshooting-mode-scenarios.md)) 
 - Fixed deadlock with [behavior monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) 
 - Improved trust validation 
