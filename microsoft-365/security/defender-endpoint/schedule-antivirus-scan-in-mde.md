@@ -37,7 +37,7 @@ Following are the system requirements to schedule  antivirus in Microsoft Defend
 
 ## Scheduling Antivirus in Red Hat Linux
 
-Microsoft has documented how to schedule cron jobs to initiate antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Docs](/microsoft-365/security/defender-endpoint/linux-schedule-scan-mde?view=o365-worldwide). This works well if the device is up and running 24/7. But what if the devices don't work in the workstations, laptops, or servers that are shut down during the cron schedule. In these situations, we can use Anacron to read the timestamp and find the last executed job. If the device was shutdown during the scheduled cron job, it needs to wait until the next scheduled time. Using Anacron it will see if the job runs, if not then it will execute it.
+Microsoft has documented how to schedule cron jobs to initiate antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Docs](/microsoft-365/security/defender-endpoint/linux-schedule-scan-mde?). This works well if the device is up and running 24/7. But what if the devices don't work in the workstations, laptops, or servers that are shut down during the cron schedule. In these situations, we can use Anacron to read the timestamp and find the last executed job. If the device was shutdown during the scheduled cron job, it needs to wait until the next scheduled time. Using Anacron it will see if the job runs, if not then it will execute it.
 
 ### Steps to schedule antivirus in Red Hat Linux
 
