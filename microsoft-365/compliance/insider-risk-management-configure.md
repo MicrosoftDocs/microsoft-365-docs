@@ -96,7 +96,7 @@ You'll choose from these role group options and solution actions when working wi
 |View & export audit logs|Yes|No|No|No|Yes|
 
 > [!IMPORTANT]
-> Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
+> Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
 
 Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admin* role group:
 
@@ -226,7 +226,7 @@ See the [Configure advanced features in Defender for Endpoint](/windows/security
 
 ## Step 5 (required): Configure insider risk settings
 
-[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
+[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, intelligent detections, and more.
 
 Before configuring a policy, define the following insider risk settings:
 

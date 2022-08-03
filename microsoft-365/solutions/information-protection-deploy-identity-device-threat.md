@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 description: Prevent personal data breaches with identity, device, and threat protection services of Microsoft 365.
 ---

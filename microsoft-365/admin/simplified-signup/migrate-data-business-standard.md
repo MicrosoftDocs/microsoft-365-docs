@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
 ---

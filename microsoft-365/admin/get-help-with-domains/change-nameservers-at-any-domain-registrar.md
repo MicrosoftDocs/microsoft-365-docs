@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet

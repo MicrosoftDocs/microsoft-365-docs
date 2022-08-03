@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender Security Center to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, security portal, defender security portal
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
