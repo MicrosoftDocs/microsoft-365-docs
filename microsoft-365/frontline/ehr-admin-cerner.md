@@ -48,7 +48,7 @@ This article describes how to set up and configure the Teams EHR connector to in
 
 Before you integrate the Teams EHR connector in your healthcare organization, you must have the following:
 
-- An active subscription⁠ to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
+- An active subscription to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.

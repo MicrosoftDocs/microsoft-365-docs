@@ -253,7 +253,7 @@ Upon request, Microsoft will provide an attestation letter of compliance with SE
 
 In addition, these capabilities also help Microsoft 365 meet storage requirements for [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) from the **U.S. Commodity Futures Trading Commission** and [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) from the **Financial Industry Regulatory Authority.** Collectively, these rules represent the most-prescriptive guidance globally for financial institutions to retain records.
 
-Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available at  [Assessment of Office 365 Exchange Online SEC 17a-4(f) / CFTC 1.31(c)-(d) by Cohasset Associates](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
+Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available with the [Office 365 - Cohasset Assessment - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Yammer (2022)](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) download document.
 
 ## Establish ethical walls with information barriers
 
