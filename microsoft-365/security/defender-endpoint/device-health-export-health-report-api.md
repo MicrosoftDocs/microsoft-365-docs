@@ -39,7 +39,7 @@ This API retrieves a list of Microsoft Defender Antivirus device health details.
 
 This API has different API calls (methods) to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
-- **Method one:** [1 Export health reporting \(**JSON response**\)](#export-health-reporting-json-response)  The method pulls all data in your organization as JSON responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- **Method one:** [1 Export health reporting \(**JSON response**\)](#1-export-health-reporting-json-response)  The method pulls all data in your organization as JSON responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
 - **Method two:** [2 Export health reporting \(**via files**\)](#2-export-health-reporting-via-files) This method enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
   - Call the API to get a list of download URLs with all your organization data.
@@ -255,6 +255,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport
 
 Here is an example response:
 
+```json
 {
 
     "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
@@ -270,9 +271,10 @@ Here is an example response:
     "generatedTime": "2022-08-02T22:01:00Z" 
 
 }
+```
 
 ## See also
 
-[Export device health methods and properties](device-health-export-api.md)
+[Export device health report](device-health-export-health-report-api.md)
 
 [Device health and compliance reporting](machine-reports.md)
