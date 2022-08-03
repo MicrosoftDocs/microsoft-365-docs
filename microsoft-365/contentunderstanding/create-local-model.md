@@ -30,7 +30,7 @@ When you activate local model creation, the following lists and libraries will b
 - Explanation templates list
 - Model usage list
 
-This feature is available only for creating all [model types](model-types-overview.md). 
+This feature is available for all [model types](model-types-overview.md). 
 
 ## Create a model on a local site
 
