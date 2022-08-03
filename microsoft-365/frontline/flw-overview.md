@@ -26,9 +26,9 @@ appliesto:
 
 Frontline workers are employees whose primary function is to work directly with customers or the general public providing services, support, and selling products, or employees directly involved in the manufacturing and distribution of products and services. Microsoft 365 for frontline workers helps support employee experiences in the following areas so that your frontline workers can do their best work and help your customers:
 
-- [Connect and engage your workforce](#connect-and-engage-your-workforce)
-- [Enhance your workforce management](#enhance-workforce-management)
-- [Increase operations efficiency](#increase-operations-efficiency)
+- [Enhance communications and collaboration](#enhance-communications-and-collaboration)
+- [Transform employee experiences](#transform-employee-experiences)
+- [Increase frontline operational efficiency](#increase-frontline-operational-efficiency)
 
 Microsoft 365 for frontline workers also:
 
@@ -55,7 +55,7 @@ Streamline team and one-on-one communication across your entire organization wit
 | --- | --- | --- |
 |:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: | [Communication](flw-choose-scenarios.md#communications) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
 
-## Transform employee experience
+## Transform employee experiences
 
 Foster an inclusive company culture and increase employee wellbeing while making sure all of your workers have the resources they need to succeed. Using Microsoft Teams, SharePoint, Viva Connections, and Viva Learning, you can connect employees with the tools, people, and devices they need to do their best work and build skills faster. For example:
 
