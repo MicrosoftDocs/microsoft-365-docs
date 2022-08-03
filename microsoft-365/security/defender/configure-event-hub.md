@@ -18,7 +18,7 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-MS.technology: mde
+MS.technology: m365d
 ---
 
 # Configure your Event Hubs

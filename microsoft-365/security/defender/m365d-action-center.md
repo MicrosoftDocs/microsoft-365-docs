@@ -19,6 +19,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
+ms.technology: m365d
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
