@@ -84,7 +84,7 @@ If successful, this method returns 200 OK with the list of all permissions reque
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api//browserextensions/permissionsinfo
+GET https://api.securitycenter.microsoft.com/api/browserextensions/permissionsinfo
 ```
 
 ### Response example
