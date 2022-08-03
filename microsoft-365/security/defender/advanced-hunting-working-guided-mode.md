@@ -27,7 +27,7 @@ ms.technology: m365d
 ## Data types
 [ADD INTRO]
 The following data types are supported for filtering:
-
+2
 ### Numbers
 [INTRO]
 
