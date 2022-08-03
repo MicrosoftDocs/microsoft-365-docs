@@ -46,7 +46,7 @@ The table shows you a breakdown of data at the per-user level. You can add or re
 |Item|Description|
 |:-----|:-----|
 |**Username** | The email address of the user who connected to Microsoft 365 services using Microsoft Edge.|
-| **Used Microsoft Edge**| DDisplays a tick mark if the Microsoft 365 services user connected with Microsoft Edge.|
+| **Used Microsoft Edge**| Displays a tick mark if the Microsoft 365 services user connected with Microsoft Edge.|
 
 Select the **Choose columns** icon to add or remove columns from the report.
 

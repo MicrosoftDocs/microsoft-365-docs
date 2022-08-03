@@ -149,7 +149,7 @@ Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine
 
 Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Cloud. You can onboard servers automatically, have servers monitored by Microsoft Defender for Cloud appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer. 
 
-For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md). Servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md). Linux servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 > [!NOTE]
 > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
@@ -272,7 +272,11 @@ Support for Windows Server provides deeper insight into server activities, cover
 
 ##### Install Microsoft Defender for Endpoint using a script
 
-You can use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. For more information, see the instructions in the following section to use the script with Group Policy.
+You can use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. 
+> [!NOTE]
+> The installation script is signed. Any modifications to the script will invalidate the signature. When you download the script from GitHub, the recommended approach to avoid inadvertent modification is to download the source files as a zip archive then extract it to obtain the install.ps1 file (on the main Code page, click the Code dropdown menu and select "Download ZIP").
+
+This script can be used in a variety of scenarios, including those described in [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](/microsoft-365/security/defender-endpoint/server-migration) and for deployment using Group Policy as described below.
 
 ##### Apply the Microsoft Defender for Endpoint installation and onboarding packages using Group policy
 

@@ -105,7 +105,7 @@ Alternatively, you can interactively disable or remove the **Microsoft Azure Inf
 
 Whichever method you choose, the changes take effect when Office apps restart.
 
-If, after making these changes, the **Sensitivity** button doesn't display on the Office ribbon, check whether sensitivity labeling has been [turned off](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows).  Although this isn't the default configuration, an administrator might have explicitly set this configuration by using Group Policy or by directly editing the registry.
+If after making these changes the **Sensitivity** button doesn't display on the Office ribbon, check whether sensitivity labeling has been [turned off](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows). Although this isn't the default configuration, an administrator might have explicitly set this configuration by using Group Policy or by directly editing the registry.
 
 > [!NOTE]
 > Built-in labels require a subscription edition of Office apps. If you have standalone editions of Office, sometimes called "Office Perpetual", we recommend you upgrade to Microsoft 365 Apps for Enterprise to benefit from the [latest labeling capabilities](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
@@ -145,7 +145,7 @@ Use the following information to help you identify if you're using a feature fro
 | **Category: Encryption** | |
 |Admin-defined permissions | ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#assign-permissions-now) |
 |User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint| ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint | In planning or development |
+|User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint | [In preview](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |Co-authoring and AutoSave | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md) |
 |Double key encryption | In planning or development |
 |Document revocation for users | Under review |

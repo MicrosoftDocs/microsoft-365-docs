@@ -290,7 +290,8 @@ The templates listed below may be purchased by your organization.
 - Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - China - Personal Information Security Specification  
-- Cybersecurity Law of the People's Republic of China  
+- Cybersecurity Law of the People's Republic of China
+- Hong Kong - Code of Banking Practice and Payment Card
 - Hong Kong - Personal Data (Privacy) Ordinance  
 - India Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules
 - India - Information Technology Act  

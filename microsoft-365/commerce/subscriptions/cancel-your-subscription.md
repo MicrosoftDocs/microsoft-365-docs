@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - commerce_subscriptions
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -65,14 +66,14 @@ The steps to cancel your trial or paid subscription depend on the number of lice
 |25 or fewer licenses  | [Use the steps below to cancel](#steps-to-cancel-your-subscription) your trial or paid subscription online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.        |
 |More than 25 licenses   | Reduce the number of licenses to 25 or fewer and then [use the steps below to cancel](#steps-to-cancel-your-subscription).      |
 
-If you can’t reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). This prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
+If you can't reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). This prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 
 If you're unable to cancel your subscription, [contact support](../../admin/get-help-support.md) for help.
 
 ## Steps to cancel your subscription
 
 > [!NOTE]
-> If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won’t impact the purchased licenses or services inside the others.
+> If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won't impact the purchased licenses or services inside the others.
 
 ::: moniker range="o365-worldwide"
 

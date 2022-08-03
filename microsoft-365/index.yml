@@ -168,7 +168,7 @@ productDirectory:
           text: Security and compliance for financial services
         - url: solutions/energy-secure-collaboration.md
           text: Security and compliance for energy and utility services
-        - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+        - url: frontline/teams-in-hc.md
           text: Teams for Healthcare organizations
         - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
           text: Teams for Education
@@ -195,6 +195,8 @@ additionalContent:
               url: business/index.yml
             - text: Microsoft 365 for enterprise
               url: enterprise/index.yml
+            - text: Microsoft 365 for frontline workers
+              url: frontline/index.yml
             - text: Microsoft Purview
               url: compliance/index.yml
             - text: Microsoft 365 security
