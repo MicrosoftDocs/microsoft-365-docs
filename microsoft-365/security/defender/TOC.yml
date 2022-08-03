@@ -246,6 +246,16 @@
                    href: advanced-hunting-go-hunt.md
                  - name: Link query results to an incident
                    href: advanced-hunting-link-to-incident.md
+                 - name: Functions
+                   items: 
+                    - name: AssignedIPAddresses()
+                      href: advanced-hunting-assignedipaddresses-function.md                    
+                    - name: DeviceFromIP()
+                      href: advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: advanced-hunting-fileprofile-function.md
+                    - name: SeenBy()
+                      href: advanced-hunting-seenby-function.md                   
                  - name: Optimize & handle errors
                    items: 
                     - name: Apply query best practices
@@ -326,16 +336,6 @@
                   href: advanced-hunting-identityqueryevents-table.md
                 - name: UrlClickEvents
                   href: advanced-hunting-urlclickevents-table.md
-             - name: Functions
-               items: 
-                - name: AssignedIPAddresses()
-                  href: advanced-hunting-assignedipaddresses-function.md                    
-                - name: DeviceFromIP()
-                  href: advanced-hunting-devicefromip-function.md
-                - name: FileProfile()
-                  href: advanced-hunting-fileprofile-function.md
-                - name: SeenBy()
-                  href: advanced-hunting-seenby-function.md
              - name: Custom detections
                items: 
                 - name: Custom detections overview
