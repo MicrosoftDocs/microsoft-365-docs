@@ -44,7 +44,7 @@ Delivering user reported messages to a user submissions mailbox instead of direc
 
 ## Configuration requirements for the user submissions mailbox
 
-Before you get started, yu need to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the user submissions mailbox without being filtered as described in the following steps:
+Before you get started, you need to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the user submissions mailbox without being filtered as described in the following steps:
 
 - Identify the user submissions mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
