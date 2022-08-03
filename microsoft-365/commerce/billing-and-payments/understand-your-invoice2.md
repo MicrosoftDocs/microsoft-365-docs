@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
@@ -85,9 +86,9 @@ To update the **Sold-To** address, see [Change your organization's address, tech
 
 #### Order Details
 
-On page one of your invoice, the **Product** is "Online Services,” the generic term we use to describe your subscription. Page two lists the individual products in your order.
+On page one of your invoice, the **Product** is "Online Services," the generic term we use to describe your subscription. Page two lists the individual products in your order.
 
-**Customer PO Number** is the purchase order (PO) number that you specify. You can't add a PO number to an existing invoice. If you update the PO number, it’s included in future invoices. To change the PO number, see [Change your purchase order number](#change-your-purchase-order-number).
+**Customer PO Number** is the purchase order (PO) number that you specify. You can't add a PO number to an existing invoice. If you update the PO number, it's included in future invoices. To change the PO number, see [Change your purchase order number](#change-your-purchase-order-number).
 
 **Order Number** is the globally unique identifier (GUID) that identifies your order. Every time you buy a new subscription, a new order with a new order number is created. You receive an invoice for each order every billing period.
 
@@ -113,7 +114,7 @@ If you pay by credit card, you see "Please DO NOT PAY. You will be charged the a
 
 ### Electronic Fund Transfer (EFT) and check
 
-If you chose “invoice” as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire, ACH, SEPA, and so on). Usually, your bank has a reference field you complete when you send a payment. Make sure you reference the invoice number in that field.
+If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire, ACH, SEPA, and so on). Usually, your bank has a reference field you complete when you send a payment. Make sure you reference the invoice number in that field.
 
 If we accept payments by check for your country or region, you also see a **Check** section that contains the payee name and mailing address. Make sure you reference your invoice number on the check.
 

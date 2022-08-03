@@ -16,6 +16,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - commerce_licensing
+- VSBFY23
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA

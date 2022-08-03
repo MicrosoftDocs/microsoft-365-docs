@@ -123,6 +123,7 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration|Configure degree of parallelism for on-demand scans|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |Configuration|Turn on/off scans after security intelligence updates|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |Configuration|Turn on/off archive scanning (on-demand scans only)|`mdatp config scan-archives --value [enabled/disabled]`|
+|Configuration|Turn on/off file hash computation|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
 |Health|Check the product's health|`mdatp health`|
