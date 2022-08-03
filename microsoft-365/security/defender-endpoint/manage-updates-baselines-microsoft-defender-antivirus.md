@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+ms.date: 08/03/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.technology: mde
 ms.collection: 
