@@ -103,7 +103,7 @@ If you didn't add the payment method used to pay for the subscription, you must 
 > - Paying by check is only available in a few countries.
 > - If you must pay the membership fee for the Microsoft Partner Network (MPN) program (Action Pack subscription, Silver or Gold competencies), see [Pay competency fees](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view) for information about how to make an MPN payment.
 
-# Check or wire transfer payment processing time
+## Check or wire transfer payment processing time
 
 Payments made by check are posted three to five business days after the check clears your bank. You can contact your bank to confirm the check status.
 
