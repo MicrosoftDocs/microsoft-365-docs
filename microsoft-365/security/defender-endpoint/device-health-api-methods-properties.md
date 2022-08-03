@@ -70,5 +70,6 @@ Property (ID)|Data type|Description
 
 ## See also
 
-[Device health and compliance report](machine-reports.md)
 [Export device health report](device-health-export-health-report-api.md)
+
+[Device health and compliance reporting](machine-reports.md)

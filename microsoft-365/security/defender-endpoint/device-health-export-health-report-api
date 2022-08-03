@@ -273,6 +273,6 @@ Here is an example response:
 
 ## See also
 
-[Device health API methods and properties](device-health-api.md)
+[Export device health methods and properties](device-health-export-api.md)
 
 [Device health and compliance reporting](machine-reports.md)
