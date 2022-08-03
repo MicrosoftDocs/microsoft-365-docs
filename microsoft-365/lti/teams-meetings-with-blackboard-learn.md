@@ -24,7 +24,7 @@ This guide provides the IT admin steps for registering the Teams Meetings LTI ap
 
 2. Select **Register LTI 1.3 Tool**.
 
-3. In the *Client ID* field, type or copy and paste this ID: <To Be shared>.
+3. In the *Client ID* field, type or copy and paste this ID: `027328b7-c2e3-4c9e-aaa1-07802dae6c89`.
 
 4. Review the pre-populated settings and **Tool Status**, then select **Enabled**.
 
