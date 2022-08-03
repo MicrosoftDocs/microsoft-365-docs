@@ -36,6 +36,24 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## July 2022
+
+### Data lifecycle management and records management
+
+- [Combined licensing section](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) with added details for scenarios.
+- The retention of SharePoint document versions no longer uses separate files in the Preservation Hold library. For more information, see the updated documentation, [How retention works with document versions](retention-policies-sharepoint.md#how-retention-works-with-document-versions).
+- Guidance how to [validate records that you've migrated to SharePoint or OneDrive](records-management.md#validating-migrated-records).
+- Updated Cohasset Assessment report for [SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d).
+- Removed preview disclaimers for retention policies for Teams shared channels now that this feature is rolling out in GA.
+
+### Sensitivity labels
+
+- In preview: [Default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md).
+- In preview: [Organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) for Windows when a sensitivity label is configured to let users assign permissions. For more information, see  [Support for organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions).
+- Now rolling out to Current Channel (Preview) for Windows: Default label for existing documents.
+- Now available with the Semi-Annual Enterprise Channel: [Co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
+- The [label scope name](sensitivity-labels.md#label-scopes) of "Files & emails" that you see when configuring a sensitivity label is now "Items".
+
 ## June 2022
 
 ### Compliance Manager
@@ -308,24 +326,3 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - Now in preview: Mobile devices (iOS and Android) support [co-authoring](sensitivity-labels-coauthoring.md) when you have minimum versions and opt in to this preview.
 - Support for setting the default sharing link type is extended to individual documents in SharePoint and OneDrive. For more information, see the new article [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive]( sensitivity-labels-default-sharing-link.md).
 - Teams admin center now supports container labels (sensitivity labels with the scope of Groups & sites).
-
-## January 2022
-
-### Microsoft Purview Data Lifecycle Management
-
-- The documentation for what was formerly Microsoft Information Governance has been substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft Purview compliance portal: Data Connectors, Data Lifecycle Management, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for data lifecycle management vs. records management.
-- [Learn about data lifecycle management](data-lifecycle-management.md) - new, to support the restructure.
-- [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md) - new, to replace "Get started with retention", this article includes getting started steps for all data lifecycle management capabilities, which include retention.
-- [Create retention labels for exceptions to your retention policies](create-retention-labels-data-lifecycle-management.md) - new, identified scenario for using retention labels for data lifecycle management rather than records management.
-- [Learn about archive mailboxes](archive-mailboxes.md) - new, to support the restructure, contains conceptual information that was previously in the "Enable archive mailboxes" article.
-
-### Microsoft Priva
-
-- [Privacy management is now Microsoft Priva](/privacy/priva/priva-overview) - updated to rebrand the product and its solutions, Priva Privacy Risk Management and Priva Subject Rights Requests.
-
-### Sensitivity labels
-
-- Support for new [role groups and roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), now in preview.
-- New [monitoring capabilities](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) for auto-labeling policies.
-- Now rolling out: default label for existing documents, and justification text for Office on the web.
-- Announced for the July Semi-Annual Enterprise Channel with version 2202+: Co-authoring and auditing for Outlook.
