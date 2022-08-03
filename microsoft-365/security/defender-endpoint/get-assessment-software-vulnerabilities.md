@@ -92,8 +92,6 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 <br>
 
-****
-
 Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
 CveId|String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992
