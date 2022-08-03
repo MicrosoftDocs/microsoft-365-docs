@@ -160,14 +160,21 @@ Security intelligence update version: 1.361.1449.0<br/>
 - Potential for high resource utilization (CPU and/or memory). See the Platform 4.18.2203.5 and Engine 1.1.19200.5 update for March 2022.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)</summary>
 
 &ensp;Security intelligence update version: **1.361.14.0**<br/>
 &ensp;Released: **March 14, 2022**<br/>
 &ensp;Platform: **4.18.2202.4**<br/>
 &ensp;Engine: **1.1.19000.8**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19000.8 <br/>
 Security intelligence update version: 1.361.14.0 <br/>
@@ -189,14 +196,7 @@ Security intelligence update version: 1.361.14.0 <br/>
 No known issues
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
 
 &ensp;Security intelligence update version: **1.357.8.0**<br/>
