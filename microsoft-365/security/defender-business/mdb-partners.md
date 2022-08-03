@@ -10,6 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/03/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -52,4 +53,8 @@ Use the following resources to learn more:
 
 Microsoft Cloud Solution Providers (CSPs) can go beyond reselling licenses and be more involved in customers' business. For example, CSPs can use Microsoft 365 Lighthouse to manage small and medium-sized business customers' security settings and capabilities. CSPs can also view and manage detected threats, including running antivirus scans on devices.
 
-[Learn more about Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md).
+| Resource | Description |
+|:---|:---|
+| [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md) | Describes how Defender for Business integrates with Microsoft 365 Lighthouse and includes links to additional information. |
+
+
