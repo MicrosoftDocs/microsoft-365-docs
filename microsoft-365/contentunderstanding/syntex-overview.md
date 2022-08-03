@@ -36,7 +36,9 @@ Understanding your content with SharePoint Syntex begins with AI models. Models 
 
 In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [trained models](prebuilt-overview.md). The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
 
-**Custom models** – You build custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
+### Custom models
+
+You build custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
 
 - [Classify and extract by text pattern](document-understanding-overview.md)
 - [Extract by layout](form-processing-overview.md)
@@ -47,7 +49,9 @@ In SharePoint Syntex, you can build [custom models](model-types-overview.md) or 
 |  ![Icon for Classify and extract by text pattern model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for Extract by layout model.](../media/content-understanding/custom-extract-by-layout.png) | ![Icon for Extract by text pattern and layout model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |
 | Create a custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more](document-understanding-overview.md) | Create a custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for non-English languages and files with form layouts or tables. <br>[Learn more](form-processing-overview.md) | Create a custom model to automatically extract info from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more](extract-by-text-pattern-and-layout-overview.md) |
 
-**Trained models** – If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md). Trained models include:
+### Trained models
+
+If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md). Trained models include:
 
 - [Invoices](prebuilt-model-invoice.md)
 - [Receipts](prebuilt-model-receipt.md)
