@@ -31,6 +31,8 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+
 If you are considering switching from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), or you are in the planning phase, use this article as a guide. This article describes the overall process of moving to Defender for Endpoint.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="The migration process to switch your endpoint protection solution to Defender for Endpoint" lightbox="images/nonms-mde-migration.png":::
