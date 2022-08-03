@@ -39,7 +39,7 @@ ms.technology: mde
 The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
 
 > [!IMPORTANT]
->"For Windows Server 2012 R2 and Windows Server 2016 to appear in device health reports, the [New Windows Server 2012 R2 and 2016 unified solution](configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) must be installed.
+>"For Windows Server 2012 R2 and Windows Server 2016 to appear in device health reports, the [New Windows Server 2012 R2 and 2016 unified solution](configure-server-endpoints) must be installed.
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 The Device health and compliance dashboard is structured in two tabs:
