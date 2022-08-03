@@ -107,7 +107,7 @@ When **Microsoft Outlook Report Message button** is **On** ![Toggle on.](../../m
 
 - **Send the reported messages to** section: Select one of the following options:
 
-  - **Microsoft**: The user reports go directly to Microsoft for analysis. Only the metadata such as sender, recipient, reported by, and the message details from the user reports are provided to the tenant admin via the Microsoft 365 Security Center.
+  - **Microsoft**: The user reports go directly to Microsoft for analysis. Only the metadata such as sender, recipient, reported by, and the message details from the user reports are provided to the tenant admin via the Microsoft 365 Defender portal.
 
   - **Microsoft and my organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox to use as the user submissions mailbox. Distribution groups are not allowed. User submissions go to Microsoft for analysis and to the user submissions mailbox for an admin or security operations team to analyze.
 
