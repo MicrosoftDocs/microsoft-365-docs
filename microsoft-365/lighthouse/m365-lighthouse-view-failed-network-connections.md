@@ -34,7 +34,7 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 2. Select the **Azure network connections** tab.
 
-3. From the connection summary section, select **Failed connections**.
+3. From the colored count-annotation bar, select **Failed connections**.
 
 4. From the filtered list, select **View connection details in Microsoft Endpoint Manager** next to the connection you want to investigate.
 

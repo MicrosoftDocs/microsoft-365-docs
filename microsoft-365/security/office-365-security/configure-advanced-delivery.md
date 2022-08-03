@@ -34,10 +34,10 @@ To keep your organization [secure by default](secure-by-default.md), Exchange On
 - **Third-party phishing simulations**: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - **Security operations (SecOps) mailboxes**: Dedicated mailboxes that are used by security teams to collect and analyze unfiltered messages (both good and bad).
 
-You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messages _in these specific scenarios_ from being filtered.<sup>\*</sup> The advanced delivery policy ensures that messages in these scenarios achieve the following results:
+You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messages _in these specific scenarios_ from being filtered<sup>\*</sup>. The advanced delivery policy ensures that messages in these scenarios achieve the following results:
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
-- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*\*</sup>
+- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages<sup>\*\*</sup>.
 - [Default system alerts](/microsoft-365/compliance/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:

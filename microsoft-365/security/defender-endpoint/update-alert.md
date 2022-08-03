@@ -88,6 +88,9 @@ Classification|String|Specifies the specification of the alert. The property val
 Determination|String|Specifies the determination of the alert. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 Comment|String|Comment to be added to the alert.
 
+>[!NOTE]
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+
 ## Response
 
 If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body with the updated properties. If alert with the specified ID wasn't found - 404 Not Found.
