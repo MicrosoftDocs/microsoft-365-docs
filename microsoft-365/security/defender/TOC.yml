@@ -230,24 +230,32 @@
                    href: advanced-hunting-example.md
                  - name: Transition from Defender for Endpoint 
                    href: advanced-hunting-migrate-from-mde.md
-             - name: Work with query results
-               href: advanced-hunting-query-results.md
-             - name: Take action on query results
-               href: advanced-hunting-take-action.md
-             - name: Quickly investigate with go hunt
-               href: advanced-hunting-go-hunt.md
-             - name: Link query results to an incident
-               href: advanced-hunting-link-to-incident.md
-             - name: Optimize & handle errors
+             - name: Build queries using guided mode 
                items: 
-                - name: Apply query best practices
-                  href: advanced-hunting-best-practices.md
-                - name: Handle errors
-                  href: advanced-hunting-errors.md
-                - name: Quotas and usage parameters
-                  href: advanced-hunting-limits.md
-                - name: Extend data coverage
-                  href: advanced-hunting-extend-data.md
+                 - name: Get started with query builder
+                   href: advanced-hunting-guided-hunting.md
+                 - name: Refine your query in guided mode
+                   href: advanced-hunting-working-guided-mode.md
+             - name: Create queries using advanced mode
+               items: 
+                 - name: Work with query results
+                   href: advanced-hunting-query-results.md
+                 - name: Take action on query results
+                   href: advanced-hunting-take-action.md
+                 - name: Quickly investigate with go hunt
+                   href: advanced-hunting-go-hunt.md
+                 - name: Link query results to an incident
+                   href: advanced-hunting-link-to-incident.md
+                 - name: Optimize & handle errors
+                   items: 
+                    - name: Apply query best practices
+                      href: advanced-hunting-best-practices.md
+                    - name: Handle errors
+                      href: advanced-hunting-errors.md
+                    - name: Quotas and usage parameters
+                      href: advanced-hunting-limits.md
+                    - name: Extend data coverage
+                      href: advanced-hunting-extend-data.md
              - name: Data schema
                items: 
                 - name: Understand the schema
