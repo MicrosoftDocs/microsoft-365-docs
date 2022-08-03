@@ -1,6 +1,6 @@
 ---
-title: Utilize Microsoft Defender for Office 365 in SharePoint Online
-description: Steps to ensure that you get value from Microsoft Defender for Office 365 within SharePoint Online and OneDrive for Business
+title: Use Microsoft Defender for Office 365 in SharePoint Online
+description: The steps to ensure that you can use, and get the value from, Microsoft Defender for Office 365 in SharePoint Online and OneDrive for Business
 search.product: 
 search.appverid: 
 ms.prod: m365-security
@@ -19,9 +19,9 @@ ms.topic: how-to
 ms.technology: mdo
 ---
 
-# Utilize Microsoft Defender for Office 365 in SharePoint Online
+# Use Microsoft Defender for Office 365 with SharePoint Online
 
-Microsoft SharePoint Online is a widely used collaboration and file storage tool. The following are a set of steps you can perform to reduce the attack surface area in SharePoint Online and help keep your organization secure. However, it’s important to note there is a balance to strike between security and productivity, and not all these steps may be relevant for your organizational risk profile.
+Microsoft SharePoint Online is a widely used user collaboration and file storage tool. The following steps help reduce the attack surface area in SharePoint Online and that help keep this collaboration tool in your organization secure. However, it’s important to note there is a balance to strike between security and productivity, and not all these steps may be relevant for your organizational risk profile. Take a look, test, and maintain that balance.
 
 ## What you'll need
 
@@ -30,7 +30,7 @@ Microsoft SharePoint Online is a widely used collaboration and file storage tool
 - Microsoft SharePoint Online (part of Microsoft 365).
 - Five to ten minutes to perform these steps.
 
-## Turn on Microsoft Defender for Office 365 in SharePoint
+## Turn on Microsoft Defender for Office 365 in SharePoint Online
 If licensed for Microsoft Defender for Office 365 **(free 90-day evaluation available at aka.ms/trymdo)** you can ensure seamless protection from zero day malware and time of click protection within Microsoft Teams.
 
 To learn more, read [Step 1: Use the Microsoft 365 Defender portal to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams).
@@ -41,15 +41,14 @@ To learn more, read [Step 1: Use the Microsoft 365 Defender portal to turn on Sa
 1.	Navigate to the [security center’s Safe links configuration page](https://security.microsoft.com/safelinksv2).
 1.	Select **Save**.
 
-## Disallow infected file downloads in SharePoint
+## Stop infected file downloads from SharePoint Online
 
-By default, users can't open, move, copy, or share malicious files that are detected by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams. However, the Download option is still available and should be disabled. 
+By default, users can't open, move, copy, or share malicious files that are detected by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams. However, the *Download* option is still available and should be *disabled*. 
 
-To learn more, read [Step 2: (Recommended) Use SharePoint Online PowerShell to prevent users from downloading malicious files](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
+To learn more, read [Step 2: (*Recommended*) Use SharePoint Online PowerShell to prevent users from downloading malicious files](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
 1.	Open and connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 1.	Run the following command: **Set-SPOTenant -DisallowInfectedFileDownload $true**.
-
 
 ### Further reading
 [Policy recommendations for securing SharePoint sites and files](/microsoft-365/security/office-365-security/sharepoint-file-access-policies)
