@@ -25,7 +25,7 @@ ms.date: 06/06/2022
 
 # Add licenses to or extend a paid subscription by using a Microsoft 365 product key
 
-Prepaid licenses are issued to you as a 25-character alphanumeric code. After you have purchased the licenses you need, you can add them to your subscription. You can also use a product key to extend the expiration date of your subscription.
+Prepaid licenses are issued to you as a 25-character alphanumeric code. After you have purchased the licenses you need, you can add them to your subscription. You can also use a product key to extend the expiration date of your existing prepaid subscription.
 
 > [!NOTE]
 > If you don't want to purchase a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses or to extend your subscription expiration date. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
