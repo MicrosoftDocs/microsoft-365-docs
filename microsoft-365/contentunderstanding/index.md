@@ -102,9 +102,9 @@ The resources in this section help you learn how to choose, create, and configur
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Learn more about trained models|[Overview of trained models](./prebuilt-overview.md)|
-|Use a trained model to extract information from invoices |[Use a trained invoices model](./prebuilt-model-invoice.md)|
-|Use a trained model to extract information from receipts |[Use a trained receipts model](./prebuilt-model-receipt.md)|
+|Learn how to save time by using models that have been pretrained |[Overview of trained models](./prebuilt-overview.md)|
+|Use a trained model to extract information from invoices |[Use the invoices model](./prebuilt-model-invoice.md)|
+|Use a trained model to extract information from receipts |[Use the receipts model](./prebuilt-model-receipt.md)|
 
 ## PowerShell for SharePoint Syntex
 
