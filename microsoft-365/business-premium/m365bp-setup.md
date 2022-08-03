@@ -9,11 +9,10 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- SMB
 - M365-security-compliance
 ms.custom: intro-get-started
 ---
@@ -47,13 +46,13 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 > [!TIP]
 > - After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
-> - Proceed to [Bump up security](m365bp-security-overview.md).
+> - Make sure to proceed to [Bump up security](m365bp-security-overview.md).
 
 ## Work with a Microsoft partner
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
 
-1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir).
+1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir) page.
 
 2. In the **Filters** pane, specify search criteria, such as:
 
@@ -74,4 +73,4 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ### Next objective
 
-Once you've achieved these objectives, go [increase security protections](m365bp-security-overview.md).
+Once you've achieved these objectives, proceed to [Bump up security](m365bp-security-overview.md).
