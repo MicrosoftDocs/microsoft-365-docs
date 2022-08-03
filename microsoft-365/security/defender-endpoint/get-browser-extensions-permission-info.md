@@ -39,12 +39,9 @@ ms.custom: api
 
 ## API description
 
-Retrieves a list of all the permissions requested by a specific browser extension.
+Retrieves a list of all the permissions requested by a specific browser extension. This is a static data description and would mainly be used to enhance the data returned by the [Export browser extensions assessment API](get-assessment-browser-extensions.md).
 
-This is a static data description of the permissions requested and would mainly be used with the [Export browser extensions assessment API](get-assessment-browser-extensions.md)
-
-By combining these APIs you’ll be able to view the static descriptions of the permissions requested by the browser extensions that are returned in [Export browser extensions assessment](get-assessment-browser-extensions.md) results.
-
+By combining these APIs you’ll be able to see a description of the permissions requested by the browser extensions that come up in the [Export browser extensions assessment](get-assessment-browser-extensions.md) results.
 
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
