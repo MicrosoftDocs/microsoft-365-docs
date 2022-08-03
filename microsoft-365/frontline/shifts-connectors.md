@@ -83,14 +83,14 @@ Alex needs to take some time off and requests a day off using Shifts. The reques
 
 Alex wants to swap a shift with a coworker. In Shifts, Alex sees a list of all shifts that are eligible for a swap based on business rules in Blue Yonder WFM. Alex chooses a shift that's currently assigned to Gena. Gena is notified in Teams on their mobile device and accepts the swap request. Eden sees and approves the request in Shifts, and the approval is synced to Blue Yonder WFM. (Eden can also see and approve the request in Blue Yonder WFM). Alex and Gena are notified in Teams, and view their updated schedules.
 
-#### Set up a connection
+#### Set up a connection  to Blue Yonder Workforce Management
 
 Integrating Shifts with Blue Yonder WFM using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
 
 For step-by-step guidance, see:
 
-- [Use the Shifts connector wizard to connect Shifts to UKG Dimensions](shifts-connector-wizard-ukg.md)
-- [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md)
+- [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)
+- [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
 
 After a connection is set up, you can use PowerShell to update and change connection settings at any time, as needed. As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
@@ -130,14 +130,14 @@ Camille needs to take some time off and requests a day off using Shifts. The req
 
 [Camille wants to swap a shift with a coworker. In Shifts, Camille sees a list of all shifts that are eligible for a swap based on business rules in UKG Dimensions. Camille chooses a shift that's currently assigned to Kristen. Kristen is notified in Teams on their mobile device and accepts the swap request. Ravi sees and approves the request in Shifts, and the approval is synced to UKG Dimensions. (Ravi can also see and approve the request in UKG Dimensions). Camille and Kristen are notified in Teams, and view their updated schedules.]
 
-#### Set up a connection
+#### Set up a connection to UKG Dimensions
 
 Integrating Shifts with UKG Dimensions using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
 
 For step-by-step guidance, see:
 
-- [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)
-- [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
+- [Use the Shifts connector wizard to connect Shifts to UKG Dimensions](shifts-connector-wizard-ukg.md)
+- [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md)
 
 After a connection is set up, you can use PowerShell to update and change connection settings at any time, as needed. As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
