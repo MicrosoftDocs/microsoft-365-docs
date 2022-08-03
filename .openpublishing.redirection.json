@@ -7564,6 +7564,16 @@
       "source_path": "microsoft-365//admin/setup/secure-win-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/microsoft-home-use-program-faq.yml",
+      "redirect_url": "/microsoft-365/commerce/microsoft-workplace-discount-program-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/turn-on-protocol-recognition.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/network-protection",
+      "redirect_document_id": false
     }
   ]
 }

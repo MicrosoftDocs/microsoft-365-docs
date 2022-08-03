@@ -161,6 +161,8 @@
              href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
+           - name: Microsoft 365 group mailbox size management
+             href: create-groups/group-mailbox-size-management.md 
            - name: Add or remove group members
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
@@ -364,6 +366,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Manage and monitor priority accounts
           href: setup/priority-accounts.md
+        - name: Increase threat protection for Microsoft 365 for business
+          href: security-and-compliance/increase-threat-protection.md
         - name: Turn on Idle session timeout
           href: manage/idle-session-timeout-web-apps.md
         - name: Enable Modern Authentication for Office 2013
