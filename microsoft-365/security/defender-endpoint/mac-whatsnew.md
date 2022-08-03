@@ -44,8 +44,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 **What's new**
 
 - Added a new field in the output of `mdatp health` that can be used to query the enforcement level of the network protection feature. The new field is called `network_protection_enforcement_level` and can take one of the following values: `audit`, `block`, or `disabled`.
-- Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history
-- Other bug fixes
+- Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history.
+- Other bug fixes.
 
 <br/>
 </details>
