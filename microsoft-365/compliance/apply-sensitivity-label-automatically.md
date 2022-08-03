@@ -100,7 +100,7 @@ Use the following table to help you identify the differences in behavior for the
 |For emails, replace existing label that has same or lower priority |No |Yes (configurable)|
 
 > [!NOTE]
-> (In Preview) Auto-labeling policies using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, Sharepoint Online sites, or OneDrive for Business accounts. For more information, see [Trainable Classifiers](classifier-learn-about.md)
+> (In Preview) Auto-labeling policies can use trainable classifiers as a condition to detect sensitive documents. You can define content with trainable classifiers in Exchange Online, Sharepoint Online sites, or OneDrive for Business accounts. For more information on Trainable Classifiers, see [Trainable Classifiers](classifier-learn-about.md).
 
 \* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Microsoft Purview compliance portal. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
