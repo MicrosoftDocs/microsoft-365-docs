@@ -19,7 +19,7 @@ description: Learn how to create a model with SharePoint Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
 
-Whether you want to create a custom model or use a trained model, you start in the **Models** library. For information about the different model types, see [Overview of model types in SharePoint Syntex](model-types-overview.md)
+Whether you want to create a custom model or use a trained model, you start in the **Models** library. For information about the different model types, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
 ## Create a model
 
@@ -34,7 +34,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
 ### To build a custom model
 
-1. In the **Build a custom model** section, select the type of custom model you want to learn more about or to start creating it. 
+1. In the **Build a custom model** section, select the type of custom model you want to learn more about or you want to start creating. 
 
     - **Classify and extract by text pattern** – Best for Office files and automatic classification of files
 
@@ -56,11 +56,17 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
 
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add.If a compliance label has been already applied to the library where the file is stored, it will be shown.
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
 
 4. When you are ready to create the model, select **Create**.
 
-5. To begin training the model, you will need to [upload six example files](create-a-classifier#add-your-example-files).
+5. You are now ready to begin training the model:
+
+    - [Upload six example files](create-a-classifier#add-your-example-files).
+    - [Train the model to classify](create-a-classifier.md).
+    - [Add explanations of text patterns](explanation-types-overview.md).
+    - [Train extractors](create-an-extractor.md) (optional).
+    - [Test model](create-a-classifier#test-your-model) (optional).
 
 #### Extract by layout
 
@@ -92,7 +98,11 @@ Follow these steps to create a model in SharePoint Syntex.
 
 4. When you are ready to create the model, select **Create**.
 
-5. The next step is to [upload an example file](create-a-classifier#add-your-example-files).
+5. To complete the model:
+
+    - [Upload an example file](create-a-classifier#add-your-example-files).
+    - [Select extractors](create-an-extractor.md).
+    - [Apply model to library](apply-a-model.md).
 
 #### Invoices
 
