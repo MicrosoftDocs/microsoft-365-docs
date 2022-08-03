@@ -37,7 +37,7 @@ Following are the system requirements to schedule  antivirus in Microsoft Defend
 
 ## Scheduling Antivirus in Red Hat Linux
 
-Microsoft has documented how to schedule cron jobs to initiate antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Docs](/microsoft-365/security/defender-endpoint/linux-schedule-scan-mde?view=o365-worldwide). This works well if the device is up and running 24/7. But what if the devices do not work in the workstations, laptops, or servers that are shut down during the cron schedule. In these situation, we can use Anacron to read the timestamp and find the last executed job. If the device was shutdown during the scheduled cron job, it needs to wait until the next scheduled time. Using Anacron it will see if the job runs, if not then it will execute it.
+Microsoft has documented how to schedule cron jobs to initiate antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Docs](/microsoft-365/security/defender-endpoint/linux-schedule-scan-mde?view=o365-worldwide). This works well if the device is up and running 24/7. But what if the devices don't work in the workstations, laptops, or servers that are shut down during the cron schedule. In these situations, we can use Anacron to read the timestamp and find the last executed job. If the device was shutdown during the scheduled cron job, it needs to wait until the next scheduled time. Using Anacron it will see if the job runs, if not then it will execute it.
 
 ### Steps to schedule antivirus in Red Hat Linux
 
@@ -60,7 +60,7 @@ Follow the steps to schedule antivirus in Red Hat linux:
     ```
 
 1. A few things to note in the file.
-    1. **Shell:** Shell is referred as ```/bin/sh```, and not as ```/bin/bash```. Remember this when writing the jobs.
+    1. **Shell:** Shell is referred as ```/bin/sh```, and not as ```/bin/bash```. Remember when writing the jobs.
     1. **RANDOM_DELAY:** Describes the maximum time in minutes for the job. This is used to offset the jobs so there wouldn't be too many jobs running at the same time. This would be ideal for VDI solutions.
     1. **START_HOURS_RANGE:** Describes the time range to execute the job.
     1. **cron.daily:** Describes 1 as the period of days required for the frequency of job executions. 5 is the delay in minutes the anacron waits after the device restarts.
