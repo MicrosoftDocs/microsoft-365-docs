@@ -35,8 +35,6 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-This API retrieves a list of Microsoft Defender Antivirus device health details. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
-
 This API has different API calls (methods) to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
 - **Method one:** [1 Export health reporting \(**JSON response**\)](#1-export-health-reporting-json-response)  The method pulls all data in your organization as JSON responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
@@ -51,7 +49,13 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 ### 1.1 API method description
 
-This API response contains data related to Microsoft Defender Antivirus health on a per-device basis. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
+This API retrieves a list of Microsoft Defender Antivirus device health details. Returns a table with an entry for every unique combination of:
+
+- DeviceId
+- Device name
+- AV mode
+- Up-to-date status
+- Scan results
 
 #### 1.1.1 Limitations
 
@@ -111,7 +115,7 @@ Supports [OData V4 queries](https://www.odata.org/documentation/).
 
 #### Request example
 
-Here is an example request:
+Here's an example request:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/deviceavinfo 
@@ -119,7 +123,7 @@ GET https://api.securitycenter.microsoft.com/api/deviceavinfo
 
 #### Response example
 
-Here is an example response:
+Here's an example response:
 
 ```json
 { 
@@ -195,7 +199,13 @@ Here is an example response:
 
 ### 2.1 API method description
 
-This API response contains all the data of Antivirus health and status per device. Returns a table with an entry for every unique combination of DeviceId, device name, AV mode, Up to date status and Scan results.
+This API response contains all the data of Antivirus health and status per device. Returns a table with an entry for every unique combination of:
+
+- DeviceId
+- device name
+- AV mode
+- Up-to-date status
+- Scan results
 
 #### 2.1.2 Limitations
 
@@ -245,7 +255,7 @@ GET /api/machines/InfoGatheringExport
 
 #### 2.6.1 Request example
 
-Here is a an example request:
+Here's an example request:
 
 ```HTTP
 GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport 
@@ -253,7 +263,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport
 
 #### 2.6.2 Response example  
 
-Here is an example response:
+Here's an example response:
 
 ```json
 {
