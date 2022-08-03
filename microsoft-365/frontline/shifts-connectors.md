@@ -115,7 +115,7 @@ Frontline workers can:
 
 The following actions are currently not supported:
 
-- Set availability in Shifts and view in UKG Dimensions.
+- Frontline workers set their availability in Shifts and view in UKG Dimensions.
 - Add, edit, delete, save, or publish shifts in Shifts.
 - Add, edit, delete, save, or publish time off in Shifts.
 - Add, edit, delete, save, or publish open shifts in Shifts.
