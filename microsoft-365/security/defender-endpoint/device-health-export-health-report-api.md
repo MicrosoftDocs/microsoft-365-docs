@@ -51,7 +51,7 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 ### 1.1 API method description
 
-This API response contains data related to Microsoft Defenter Antivirus health on a per-device basis. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
+This API response contains data related to Microsoft Defender Antivirus health on a per-device basis. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
 #### 1.1.1 Limitations
 

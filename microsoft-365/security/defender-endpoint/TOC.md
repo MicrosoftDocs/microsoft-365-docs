@@ -503,7 +503,7 @@
 ####### [Start Investigation](initiate-autoir-investigation.md)
 
 ###### [Device Health]()
-####### [Export device health methods and properties](device-health-export-api.md)
+####### [Export device health methods and properties](device-health-api-methods-properties.md)
 ####### [Export device health report](device-health-export-health-report-api.md)
 
 ###### [Certificate inventory]()
