@@ -274,6 +274,6 @@ Here's an example response:
 
 ## See also
 
-####### [Export device health methods and properties](device-health-api-methods-properties.md)
+[Export device health methods and properties](device-health-api-methods-properties.md)
 
 [Device health and compliance reporting](machine-reports.md)
