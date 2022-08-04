@@ -27,7 +27,7 @@ description: Instructions how to configure a retention label with custom actions
 > [!NOTE]
 > This scenario is rolling out in preview and subject to change.
 
-By default, the actions that are supported for a [retention labels](retention.md) when it reaches the end of the retention period are:
+By default, the actions that are supported for a [retention label](retention.md) when it reaches the end of the retention period are:
 - Automatically delete the item
 - Relabel the item
 - Deactivate the label (do nothing)
@@ -59,7 +59,7 @@ The following processes show the high-level overview of how retention labels wor
 
 In Power Automate, you create an automated cloud flow that uses the trigger **When the retention period expires**. Then, configure the flow with your required actions.
 
-Create a new retention label with the following configuration:
+Them, create a new retention label with the following configuration:
 - Retain the item for a specified period of time
 - At the end of the retention period, trigger the flow that you just created
 
