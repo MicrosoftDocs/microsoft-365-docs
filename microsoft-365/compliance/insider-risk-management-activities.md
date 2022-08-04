@@ -121,7 +121,7 @@ Use the following sections and tabs on the Alert detail page for more informatio
 This section contains general information about the user and alert. This  information is available for context while reviewing detailed information about the detected activity included in the alert for the user:
 
 - **Activity that generated this alert**: Displays the top risk activity and policy match during the activity evaluation period that led to the alert being generated. For example, you'll see sequence events, data exfiltration/infiltration, or other activity types displayed for the alert here. If enabled in settings, analysts and investigators can select **Reduce alerts for this activity** to [quickly edit the policy](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) for the current activity and future detection of the same activity.
-- **Triggering event**: Displays the most recent triggering event that prompted the policy to start assigning risk scores to the user's activity. Includes sequence acivities if sequences are configured as a trigger in applicable policies.
+- **Triggering event**: Displays the most recent triggering event that prompted the policy to start assigning risk scores to the user's activity.
 - **User profile**: Displays general information about the user assigned to the alert. If anonymization is enabled, the username, email address, alias, and organization fields are anonymized.
 - **User alert history**: Displays a list of alerts for the user for the last 30 days. Includes a link to view the complete alert history for the user.
 
