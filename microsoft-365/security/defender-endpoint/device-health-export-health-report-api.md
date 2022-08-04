@@ -45,7 +45,7 @@ This API has two methods to retrieve Microsoft Defender Antivirus device health 
 
 Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages. See [Export device health details API methods and properties](device-health-api-methods-properties.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
@@ -110,7 +110,7 @@ If successful, this method returns 200 OK with a list of device health details.
 
 ### 1.5 Properties
 
-See: [Export device health details API methods and properties \/ 1.2 Properties \(JSON response\)](device-health-api-methods-properties.md#1-2-properties-json-response)
+See: [Export device health details API methods and properties \/ 1.2 Properties \(JSON response\)](device-health-api-methods-properties.md#12-properties-json-response)
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
@@ -238,7 +238,7 @@ GET /api/machines/InfoGatheringExport
 
 ### 2.5 Properties
 
-See: [Export device health details API methods and properties \/ 1.3 Properties \(via files\)](device-health-api-methods-properties.md#1-3-properties-via-files).
+See: [Export device health details API methods and properties \/ 1.3 Properties \(via files\)](device-health-api-methods-properties.md#13-properties-via-files).
 
 ### 2.6 Examples
 
