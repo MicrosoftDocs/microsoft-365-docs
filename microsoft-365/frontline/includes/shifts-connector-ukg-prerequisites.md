@@ -23,5 +23,3 @@ Before you get started, make sure you have the following prerequisites:
 - You added your Microsoft 365 system account as a team owner to all teams you want to map.</br> [Create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions.
 
     We recommend that you create an account specifically for this purpose and not use your user account.
-
-- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
