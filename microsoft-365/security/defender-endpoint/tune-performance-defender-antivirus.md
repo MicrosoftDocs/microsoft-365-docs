@@ -11,9 +11,7 @@ audience: ITPro
 author: jweston-1
 ms.author: v-jweston
 ms.date: 08/13/2022
-ms.localizationpriority: medium
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
