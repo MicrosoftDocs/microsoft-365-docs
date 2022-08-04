@@ -110,7 +110,7 @@ If successful, this method returns 200 OK with a list of device health details.
 
 ### 1.5 Properties
 
-See: [1.2 Export device antivirus health details API properties (JSON response)](#12-export-device-antivirus-health-details-api-properties-json-response)
+See: [1.2 Export device antivirus health details API properties (JSON response)](device-health-api-methods-properties.md#12-export-device-antivirus-health-details-api-properties-json-response)
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
@@ -238,7 +238,7 @@ GET /api/machines/InfoGatheringExport
 
 ### 2.5 Properties
 
-See: [1.3 Export device antivirus health details API properties \(via files\)](#13-export-device-antivirus-health-details-api-properties-via-files).
+See: [1.3 Export device antivirus health details API properties \(via files\)](device-health-api-methods-properties.md#13-export-device-antivirus-health-details-api-properties-via-files).
 
 ### 2.6 Examples
 
