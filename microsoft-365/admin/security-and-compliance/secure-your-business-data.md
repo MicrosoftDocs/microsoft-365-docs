@@ -1,5 +1,5 @@
 ---
-title: Best practices for securing Microsoft 365 for business
+title: Top 10 ways to secure your business data - Best practices for small and medium-sized businesses
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.date: 08/04/2022
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -31,7 +32,7 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
-# Best practices for securing Microsoft 365 for business
+# Top 10 ways to secure your business data - Best practices for small and medium-sized businesses
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
