@@ -277,7 +277,7 @@ Insider risk management policies include assigned users and define which types o
 
 10. Select **Next** to continue.
 
-11. If you've selected **I want to prioritize content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels*, *file extensions*, and *Scoring*. Use these detail pages to define the SharePoint, sensitive info types, sensitivity labels, and file extensions to prioritize in the policy. The *Scoring* detail page allows you to scope the policy to only assign risk scores to priority content.
+11. If you've selected **I want to prioritize content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels*, *file extensions*, and *Scoring*. Use these detail pages to define the SharePoint, sensitive info types, sensitivity labels, and file extensions to prioritize in the policy. The *Scoring* detail page allows you to scope the policy to only assign risk scores and generate alerts for specified activities that include priority content.
 
     - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
