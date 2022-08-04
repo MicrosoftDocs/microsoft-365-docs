@@ -32,7 +32,7 @@ With your WFM system as the system of record, your frontline workers can see and
 
 ## Integrate Shifts with UKG Dimensions
 
-Currently, the wizard supports the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions). This connector enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to UKG Dimensions through the connector.
+The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to UKG Dimensions through the connector.
 
 > [!NOTE]
 > You can also use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-dimensions-powershell-setup.md).
@@ -42,51 +42,14 @@ Currently, the wizard supports the [Microsoft Teams Shifts connector for UKG Dim
 You must be a Microsoft 365 global admin to run the wizard.
 
 ### Prerequisites
-
-Before you get started, make sure you have the following prerequisites:
-
-- UKG Dimensions version ???
-- Your UKG Dimensions service account name and password and service URLs:
-
-  - Application program interface URL
-  - Application key
-  - Client ID
-  - Client secret
-  - Single Sign On URL
-
-  If you don't have this information, contact UKG Dimensions support.
-- Federated single sign-on (SSO) authentication is enabled in your UKG Dimensions environment. Azure Active Directory (Azure AD) is the supported identity provider for SSO. To enable SSO, set up integration between Azure AD and UKG Dimensions. For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). After the integration is set up, configure users as federated accounts on their profile page in UKG Dimensions.
-- At least one team is set up in Teams.
-- You added your Microsoft 365 system account as a team owner to all teams you want to map.</br> [Create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions.
-
-    We recommend that you create an account specifically for this purpose and not use your user account.
-
-- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
-
-### Prerequisites
 <a name="prerequisites"> </a>
-[!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
+[!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
 
 - The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
 
 ## Remove schedules from teams you want to map
 <a name="remove_schedules"> </a>
-
-> [!NOTE]
-> Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
-
-Use PowerShell to remove schedules from teams.
-
-1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-powershell-manage.md#set-up-your-environment).
-1. Run the following command:
-
-    ```powershell
-    Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
-    ```
-
-    To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
-
-To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
+[!INCLUDE [shifts-connector-remove-schedules](includes/shifts-connector-remove-schedules.md)]
 
 ## Run the wizard
 

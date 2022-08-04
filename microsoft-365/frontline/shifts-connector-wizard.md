@@ -32,7 +32,7 @@ With your WFM system as the system of record, your frontline workers can see and
 
 ## Integrate Shifts with Blue Yonder Workforce Management
 
-Currently, the wizard supports the [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder). This connector enables you to integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to Blue Yonder WFM through the connector.
+The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) enables you to integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to Blue Yonder WFM through the connector.
 
 > [!NOTE]
 > You can also use PowerShell to integrate Shifts with Blue Yonder WFM. To learn more, see [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md).
@@ -49,22 +49,7 @@ You must be a Microsoft 365 global admin to run the wizard.
 
 ## Remove schedules from teams you want to map
 <a name="remove_schedules"> </a>
-
-> [!NOTE]
-> Complete this step if you're mapping Blue Yonder WFM instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
-
-Use PowerShell to remove schedules from teams.
-
-1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-powershell-manage.md#set-up-your-environment).
-1. Run the following command:
-
-    ```powershell
-    Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
-    ```
-
-    To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
-
-To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
+[!INCLUDE [shifts-connector-remove-schedules](includes/shifts-connector-remove-schedules.md)]
 
 ## Run the wizard
 
@@ -74,7 +59,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 1. Select **Connect your workforce management system**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. When you're ready, select **Get started**.
-1. Select **Next** to create a Blue Yonder WFM connection.
+1. On the Choose your connector page, choose **Blue Yonder Workforce Management**, and then select **Next** to create a Blue Yonder WFM connection.
 
 ### Enter connection details
 <a name="connection_details"> </a>

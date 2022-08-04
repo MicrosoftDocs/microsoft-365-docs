@@ -99,6 +99,8 @@ After a connection is set up, you can use PowerShell to update and change connec
 
 The Teams Shifts connector for UKG Dimensions is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date.  
 
+[placeholder for screenshot]
+
 Frontline managers can:
 
 - Publish shifts and schedules in UKG Dimensions and view them in Shifts.

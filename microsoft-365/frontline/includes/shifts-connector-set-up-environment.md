@@ -4,7 +4,7 @@ ms.author: v-lanachin
 ms.date: 03/31/2022 
 ms.topic: include
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 ---
 1. Install PowerShell version 7 or later. For step-by-step guidance, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 

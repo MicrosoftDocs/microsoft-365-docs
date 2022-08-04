@@ -4,7 +4,7 @@ ms.author: v-lanachin
 ms.date: 03/31/2022 
 ms.topic: include
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 ---
 Before you get started, make sure you have the following prerequisites:
 
