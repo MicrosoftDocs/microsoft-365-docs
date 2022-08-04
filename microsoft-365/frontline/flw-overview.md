@@ -78,23 +78,35 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 
 Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, identity and threat protection, and security management. The offerings available to your workforce in these areas depends on the licenses you assign to your users in the Microsoft 365 admin center.
 
-- **Manage identities and access with Azure Active Directory**
-    - [Azure Active Directory fundamentals](/azure/active-directory/fundamentals/active-directory-whatis)
+**Manage identities and access with Azure Active Directory**
 
-- **Mitigate compliance and privacy risks**
-    - [Introduction to security in Microsoft 365](/learn/modules/security-in-m365/)
-    - [Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/)
-    - [Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks)
+|Capability |License availability |
+|-----------|---------------------|
+|[Azure Active Directory fundamentals](/azure/active-directory/fundamentals/active-directory-whatis) |Enterprise, F1, F3 |
 
-- **Simplify deployment and management at scale**
-    - [Frontline worker onboarding wizard](flw-onboarding-wizard.md)
-    - [Deploy Teams at scale](deploy-teams-at-scale.md)
-    - [Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw)
+**Mitigate compliance and privacy risks**
 
-- **Secure endpoints and apps across device types and operating systems**
-    - [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)
-    - [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
-    - [Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners)
+|Capability |License availability |
+|-----------|---------------------|
+|[Introduction to security in Microsoft 365](/learn/modules/security-in-m365/) |Enterprise, F1, F3 |
+|[Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/) |Enterprise, F1, F3 |
+|[Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks) |Enterprise, available as an add-on for F3 |
+
+**Simplify deployment and management at scale**
+
+|Capability |License availability |
+|-----------|---------------------|
+|[Frontline worker onboarding wizard](flw-onboarding-wizard.md) |Enterprise, F1, F3 |
+|[Deploy Teams at scale](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
+|[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) |Enterprise, F1, F3 |
+
+**Secure endpoints and apps across device types and operating systems**
+
+|Capability |License availability |
+|-----------|---------------------|
+|[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) |Enterprise, F1, F3 |
+|[Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
+|[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |
 
 ## Modern devices
 
