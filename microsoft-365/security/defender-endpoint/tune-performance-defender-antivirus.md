@@ -5,9 +5,9 @@ keywords: tune, performance, microsoft defender for endpoint, defender antivirus
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
 author: jweston-1
+ms.author: v-jweston
+ms.date: 06/10/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
