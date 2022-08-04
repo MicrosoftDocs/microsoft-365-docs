@@ -1,5 +1,5 @@
 ---
-title: Update Windows Server 2016
+title: Enable and update Microsoft Defender Antivirus (MDAV) to latest version on Windows Server 2016
 description: Learn how to update Windows Server 2016
 keywords: Windows Server 2016, Microsoft Defender Antivirus (MDAV)
 ms.prod: m365-security
@@ -19,23 +19,18 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Update Windows Server 2016
+# Enable and update Microsoft Defender Antivirus (MDAV) to latest version on Windows Server 2016
 
 To update Windows Server 2016, perform the following steps:
 
 1. Install the latest Servicing Stack Update (SSU) on the machine running Windows server 2016.
 1. Install the latest cumulative update (LCU) on the machine running Windows server 2016.
-1. Uninstall MDAV, if you're using McAfee, a third-party antivirus solution, and reboot the system.
-
-   > [!IMPORTANT]
-   > Implement Step-3 only if your Windows Server 2016 machine is using McAfee or any other third-party antivirus solution. Else, proceed to the next step. 
-
-1. Re-enable MDAV on the machine running Windows server 2016, Version 1803 or later. For more information, see [Re-enable MDAV on Windows Server, Version 1803 or later](switch-to-mde-phase-2.md).
+1. Reinstall Microsoft Defender Antivirus (MDAV) (if removed from Windows Server 2016) or re-enable MDAV (if installed but disabled from Windows Server 2016). For more information on how to reinstall or re-enable MDAV on Windows Server 2016, see [Re-enable Microsoft Defender Antivirus on Windows Server 2016](switch-to-mde-phase-2.md#re-enable-microsoft-defender-antivirus-on-windows-server-2016) and [Re-enable Microsoft Defender Antivirus on Windows Server, version 1803 or later](switch-to-mde-phase-2.md#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later).
 1. Reboot the system.
-1. Install the latest version of the platform update, namely 4.18.2202.4.
+1. Install the latest version of the platform update.
 
    > [!NOTE]
-   > Re-enabling MDAV does not automatically install the platform update. Therefore, this step is a seperate and mandatory step.
+   > Re-enabling MDAV does not automatically install the platform update. Therefore, this step is a separate and mandatory step.
    >  
    > If you want this platform update to be automatically installed, you've to run the [script](https://github.com/microsoft/mdefordownlevelserver/blob/main/Install.ps1).
    > 
