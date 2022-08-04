@@ -75,7 +75,7 @@ Link to your organization’s booking page. Let your customers know if there are
 
 **Who can I make an appointment with?**
 
-Make sure your clients can maintain relationships with their preferred providers by sharing which, if any, staff are operating exclusively virtually or in-person.
+Make sure your clients can maintain relationships with their preferred providers by sharing which, if any, staff members are operating exclusively virtually or in-person.
 
 **How do I cancel or reschedule a virtual appointment?**
 
