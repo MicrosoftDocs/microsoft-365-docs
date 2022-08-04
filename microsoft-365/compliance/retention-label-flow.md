@@ -59,30 +59,43 @@ The following processes show the high-level overview of how retention labels wor
 
 In Power Automate, you create an automated cloud flow that uses the trigger **When the retention period expires**. Then, configure the flow with your required actions.
 
-Them, create a new retention label with the following configuration:
+Next, create a new retention label with the following configuration:
 - Retain the item for a specified period of time
 - At the end of the retention period, trigger the flow that you just created
 
-Apply the label using either of the following methods, and the flow is triggered at the end of the retention period:
+Apply the label using either of the following methods:
 - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
+When the retention period expires, the flow is triggered.
 
 ## Limitations
 
+You must create a new retention label to trigger a flow at the end of the retention period. You can edit an existing retention label for this configuration.
+
+The account that creates the Power Automate flow must be the same account that creates the retention label.
+
 ## Prerequisites
 
+To create the Power Automate flow, you must have a subscription for this app. You can request a trial subscription.
 
-## How to configure a retention label to trigger a Power Automate flow
+
+## Configuring a retention label to trigger a Power Automate flow
 
 ## When the flow is triggered
 
+Just as it can take up to 7 days to apply a retention label, so you should allow up to 7 days after the expiration period before the Power Automate flow is triggered. The initiation of the flow can then take a few hours.
+
+Both the flow and the retention action of delete and relabel are queued so that if there are any network or service delays, they are automatically retried.
+
+The [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) still apply to retention labels that are configured to trigger a flow at the end of the retention period, in that an item is always retained for the longest period if there is a conflict with one or more retention policies. However, the flow is always triggered at the end of the label's retention period.
+
+
 ## Next steps
 
-To help you track the labels applied from your published retention labeling policies:
+To help you track the retention labels that you apply:
 
 - [Monitoring retention labels](retention.md#monitoring-retention-labels)
 - [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 - [Auditing retention actions](retention.md#auditing-retention-actions)
 
-Event-based retention is another supported scenario for retention labels. For more information, see [Start retention when an event occurs](event-driven-retention.md).
