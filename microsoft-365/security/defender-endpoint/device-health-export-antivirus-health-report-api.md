@@ -80,7 +80,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|:---|
 | Application | Machine.Read.All | ‘Read all machine profiles’ |
 | Application | Machine.ReadWrite.All |  ‘Read and write all machine information’ |
-|Delegated (work or school account) \ Machine.Read | ‘Read machine information’ |
+|Delegated (work or school account) | Machine.Read | ‘Read machine information’ |
 | Delegated (work or school account) | Machine.ReadWrite | ‘Read and write machine information’ |
 
 ### 1.3 URL (HTTP request)
