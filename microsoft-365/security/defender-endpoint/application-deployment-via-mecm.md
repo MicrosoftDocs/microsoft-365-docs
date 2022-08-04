@@ -65,7 +65,7 @@ Copy the unified solution package, onboarding script and migration script to the
      
 7. On this step, copy the UNC path that your content is located. Example: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`.
 
-   :::image type="content" source="images/deployment-type-wizard.png" alt-text="Screenshot that shows UNC path copy.":::\
+   :::image type="content" source="images/deployment-type-wizard.png" alt-text="Screenshot that shows UNC path copy.":::
   
 8. Additionally, set the following as the installation program:
 
