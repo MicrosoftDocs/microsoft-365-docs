@@ -1,7 +1,7 @@
 ---
 title: Try and evaluate Defender for Office 365
 description: Learn how to evaluate and try the capabilities of Microsoft Defender for Office 365 without affecting your existing mail flow.
-keywords:
+keywords: Try, Evaluate, Trial, Evaluation, Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: chrisda
@@ -23,26 +23,16 @@ ROBOTS:
 
 # Try Microsoft Defender for Office 365
 
-The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 90 days before you fully commit to it. But, there are differences in the evaluation experiences based on the nature of your Microsoft 365 organization:
+The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365 Plan 2. The intent is to allow you to try the features of Defender for Office 365 Plan 2 before you fully commit to it.
 
-- You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization. Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
+You're invited to try Defender for Office 365 Plan 2 in various feature locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. The centralized location to start your trial is on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>.
 
-  ![Mail flows from the internet through the third-party protection service or device before delivery into Microsoft 365.](../../media/mdo-migration-before.png)
+Before you start your trial, there are some key questions that you need to ask yourself:
 
-  In these environments, you can only try Defender for Office 365 in *audit* mode. You don't need to change your mail flow (MX records) to try Defender for Office 365.
+- Do I want to passively observe what Defender for Office 365 Plan 2 can do for me, or do I want Defender for Office 365 Plan 2 to take direct action on messages?
+- How long do I have before I need to make a decision to keep Defender for Office 365 Plan 2?
 
-- You already have a Microsoft 365 organization. Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
-
-  ![Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
-
-  In these environments, you can try Defender for Office 365 in *audit* mode or in *blocking mode*.
-
-You're invited to start your trial in various Defender for Office 365 feature locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. The centralized location to start your trial is on the **Trials** page at <https://security.microsoft.com/atpEvaluation>.
-
-Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmIe]
-
-The rest of this article explains the difference between audit mode blocking mode, how to configure evaluations, and other details.
+This article will help you answer those questions so you can take full advantage of your evaluation of Defender for Office 365.
 
 For a companion guide for how to use your trial, see [Trial playbook: Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md).
 
@@ -54,7 +44,59 @@ You can also learn more about Defender for Office 365 at this [interactive guide
 
 ![Microsoft Defender for Office 365 conceptual diagram.](../../media/microsoft-defender-for-office-365.png)
 
-## Policies in blocking mode or audit mode
+Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMmIe]
+
+## Audit mode vs. blocking mode
+
+How you evaluate Defender for Office 365 Plan 2 features before you buy depends on the nature of your Microsoft 365 organization:
+
+- You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization. Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
+
+  ![Mail flows from the internet through the third-party protection service or device before delivery into Microsoft 365.](../../media/mdo-migration-before.png)
+
+  In these environments, you can only try Defender for Office 365 in *audit* mode. You don't need to change your mail flow (MX records) to try Defender for Office 365.
+
+- You already have a Microsoft 365 organization. Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+
+  ![Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
+
+  In these environments, you can try Defender for Office 365 in *audit* mode or in *blocking* mode.
+
+## Evaluation vs. trial
+
+Although the terms 'evaluation' and 'trial' are typically synonymous, the terms have different meanings when you try out Defender for Office 365 Plan 2 features. Specifically, the differences have to do with licensing. You don't need to decide whether you want an 'evaluation' or a 'trial'. We make that decision for you based on the nature of your Microsoft 365 organization:
+
+- **A 'trial' is for Microsoft 365 organizations who don't already have Defender for Office 365 Plan 2 features**: These organizations require Defender for Office 365 Plan 2 licenses so the features of Defender for Office 365 Plan 2 are available to them during the trial period. We automatically provision the required Plan 2 trial licenses for you when you enroll in the trial. Manual steps for getting and assigning licensing are no longer required. Affected Microsoft 365 organizations include:
+
+  - Microsoft 365 E3.
+  - Standalone Exchange Online Protection (EOP) organizations (no Exchange Online mailboxes).
+  - Organizations with Defender for Office 365 Plan 1 licenses (included or as an add-on). These organizations are in a mixed state compared to the others. For example, they already have impersonation protection in anti-phishing policies, Safe Links policies, and Safe Attachments policies that E3 or standalone EOP organizations don't have. But, they also require trial licenses for the [Automation, investigation, remediation, and education capabilities](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) that are available only in Plan 2.
+
+  The important thing to remember about trial licenses for Defender for Office 365 Plan 2 features: they last for 90 days. After 90 days, the Plan 2 licenses are removed (but [extensions are possible](#q-how-do-i-extend-the-trial)).
+
+- **An 'evaluation' is for Microsoft 365 organizations who already have Defender for Office 365 Plan 2 features**: These organizations don't need additional licenses for Defender for Office 365 Plan 2. Affected Microsoft 365 organizations include:
+
+  - Microsoft 365 E5.
+  - Organizations with Defender for Office 365 Plan 2 add-on licenses.
+
+  The important thing to remember about an evaluation of Defender for Office 365 Plan 2 features: it never expires.
+
+The differences between an 'evaluation' and a 'trial' are summarized in the following table:
+
+|SKU|Evaluation period|P2 trial<br>provisioned?|Trial period|
+|---|:---:|:---:|---|
+|Microsoft 365 E3|n/a|Yes|90 days|
+|Standalone EOP (no Exchange Online mailboxes)|n/a|Yes|90 days|
+|Defender for Office 365 Plan 1|Unlimited<sup>\*</sup>|Yes|90 days <br><br> <sup>\*</sup>After 90 days, P2 capabilities are turned off. Evaluation continues to work.|
+|Defender for Office 365 Plan 2|Unlimited|No|n/a|
+|Microsoft 365 E5|Unlimited|No|n/a|
+
+> [!IMPORTANT]
+> Throughout the rest of this article, we'll use derivatives of the words 'trial' and 'evaluation' synonymously. If we need to call out licensing, we'll clearly state the differences as required. In other words, don't get confused when we say 'try' or 'evaluate'; they mean the same thing.
+
+## Policies for Defender for Office 365 features
 
 When you evaluate Defender for Office 365, the policies that control protection features in Microsoft 365 are present:
 
@@ -64,15 +106,15 @@ When you evaluate Defender for Office 365, the policies that control protection 
   - [Inbound anti-spam protection](anti-spam-protection.md)
   - [Anti-spoofing protection in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings)
 
-  The default policies for these features are always on, apply to all recipients, and are always applied last (after any custom policies).
+  The default policies for these features are always on, apply to all recipients, and are always applied last after any custom policies.
 
-- **Defender for Office 365**: Policies that are exclusive to Defender for Office 365 are created for your evaluation of Defender for Office 365:
+- **Defender for Office 365**: Policies that are exclusive to Defender for Office 365 are created for your evaluation of Defender for Office 365 as needed:
 
   - [Impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Safe Attachments for email messages](safe-attachments.md)
   - [Safe Links for email messages and Microsoft Teams](safe-links.md)
 
-  But, the nature of these policies is different in blocking mode and audit mode:
+  But, the nature of these policies is different in audit mode vs. blocking mode:
 
   - **Audit mode**: Regular policies are created, but the policies are configured only to *detect* threats. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined).
 
@@ -82,7 +124,7 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 **Notes**:
 
-- Safe Links will detonate URLs in mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Safe Links will detonate URLs during mail flow. To prevent specific URLs from being detonated, use Allow entries in the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 - Safe Links doesn't wrap URL links in email message bodies.
 - The evaluation policy settings are described in the [Evaluation policy settings](#evaluation-policy-settings) section later in this article.
 
@@ -135,7 +177,7 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
             [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-            When a third-party service or device sits in front of Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md)).
+            When a third-party service or device sits in front of Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
 
           - **List each gateway IP address your messages pass through**: This setting is available only if you selected **Other** for **Select a third party service provider**. Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 
@@ -311,14 +353,7 @@ The settings in the Defender for Office 365 that are specifically created for th
 
 ### Q: Do I need to get or activate trial licenses?
 
-A: No. The trial automatically provisions Defender for Office 365 Plan 2 licenses if you don't already have them as shown in the following table:
-
-|SKU|Evaluation period|P2 trial<br>provisioned?|Trial period|
-|---|:---:|:---:|---|
-|standalone EOP <br><br> Microsoft 365 E3|90 days|Yes|90 days|
-|Defender for Office 365 Plan 1|Unlimited<sup>\*</sup>|Yes|90 days <br><br> <sup>\*</sup>After 90 days, P2 capabilities are turned off. Evaluation continues to work.|
-|Defender for Office 365 Plan 2|Unlimited|No|n/a|
-|Microsoft 365 E5|Unlimited|No|n/a|
+A: No. The trial automatically provisions Defender for Office 365 Plan 2 licenses if you need them as previously described.
 
 ### Q: How do I extend the trial?
 
