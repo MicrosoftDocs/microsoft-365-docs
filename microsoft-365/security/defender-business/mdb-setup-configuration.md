@@ -28,10 +28,6 @@ Microsoft Defender for Business provides a streamlined setup and configuration e
 > - [Configure your security policies and settings](mdb-configure-security-settings.md)
 > - [Visit your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## The setup and configuration process
 

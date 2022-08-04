@@ -29,10 +29,6 @@ To learn more about firewall policies and settings, see [Firewall in Microsoft D
 - [Edit a custom rule for a firewall policy](#edit-a-custom-rule-for-a-firewall-policy)
 - [Delete a custom rule](#delete-a-custom-rule)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Create a custom rule for a firewall policy
 
