@@ -32,6 +32,25 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
 
 <details>
+  <summary>Aug-2022 (Build: 101.75.90  | Release version: 20.122071.17590.0)</summary>
+
+&ensp;Released: **Aug 3, 2022**<br/>
+&ensp;Published: **Aug 3, 2022**<br/>
+&ensp;Build: **101.75.90**<br/>
+&ensp;Release version: **20.122071.17590.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Added a new field in the output of `mdatp health` that can be used to query the enforcement level of the network protection feature. The new field is called `network_protection_enforcement_level` and can take one of the following values: `audit`, `block`, or `disabled`.
+- Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history.
+- Other bug fixes.
+
+<br/>
+</details>
+
+<details>
   <summary>Jul-2022 (Build: 101.73.77  | Release version: 20.122062.17377.0)</summary>
 
 &ensp;Released: **Jul 21, 2022**<br/>
