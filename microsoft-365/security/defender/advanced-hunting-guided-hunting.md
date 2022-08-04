@@ -40,11 +40,15 @@ In the **Advanced hunting** page, select **Create new** to open a new tab and se
 [IMAGE]
 
 ### Specify the data domain to hunt in
-By default, the guided hunting scope includes data from all domains--devices, identities, email & collaboration, and cloud apps. You can control the scope of the hunt by selecting the **View in** control:
+By default, the guided hunting scope includes a few basic filters.
+
+You can control the scope of the hunt by selecting the **View in** control:
 
 [IMAGE]
 
 **View in** controls the filters. Selecting **All** allows you to filter the entire dataset while narrowing down to a specific domain allows filters relevant to that domain only. 
+
+
 
 ### Create conditions
 
