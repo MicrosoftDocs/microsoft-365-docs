@@ -35,7 +35,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-This API has different API calls (methods) to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
+This API has two methods to retrieve Microsoft Defender Antivirus device health details:
 
 - **Method one:** [1 Export health reporting \(**JSON response**\)](#1-export-health-reporting-json-response)  The method pulls all data in your organization as JSON responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
@@ -44,6 +44,10 @@ This API has different API calls (methods) to get different types of data. Becau
   - Download all the files using the download URLs and process the data as you like.
 
 Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages. See [Export device health details API methods and properties](device-health-api-methods-properties.md).
+
+> [!NOTE]
+>
+> For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 ## 1 Export health reporting (JSON response)
 
@@ -102,12 +106,11 @@ If successful, this method returns 200 OK with a list of device health details.
 ### 1.4 Parameters
 
 - Default page size is 20
-- See examples at OData queries with Microsoft Defender for Endpoint
+- See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ### 1.5 Properties
 
-Property (ID)|Data type|Description|Example of a returned value
-:---|:---|:---|:---
+See: [Export device health details API methods and properties \/ 1.2 Properties \(JSON response\)](device-health-api-methods-properties.md#1-2-properties-json-response)
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
@@ -235,21 +238,7 @@ GET /api/machines/InfoGatheringExport
 
 ### 2.5 Properties
 
-> [!NOTE]
->
-> - The files are gzip compressed & in multiline Json format.
-> - The download URLs are only valid for 3 hours; otherwise you can use the parameter.
-> - For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
-> - Each record is approximately 1KB of data. You should take this into account when choosing the correct pageSize parameter for you.
-> - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
-
-| Property (ID) | Data type | Description | Example of a returned value |
-|:---|:---|:---|:---|
-| Export files | array[string] | A list of download URLs for files holding the current snapshot of the organization. | ["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-| GeneratedTime | String | The time that the export was generated. | 2022-05-20T08:00:00Z |
-
-> [!NOTE]
-> In each of the Export files a property “DeviceGatheredInfo” containing the data about Antivirus information can be found. Each of its attributes can provide you with information on the device's health and its status.
+See: [Export device health details API methods and properties \/ 1.3 Properties \(via files\)](device-health-api-methods-properties.md#1-3-properties-via-files).
 
 ### 2.6 Examples
 

@@ -47,6 +47,10 @@ Retrieves a list of Microsoft Defender Antivirus device health details. This API
 
 Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
 
+> [!NOTE]
+>
+> For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
+
 ## 1. Export secure configurations assessment
 
 Returns all of the configurations and their status, on a per-device basis.
@@ -60,13 +64,50 @@ Export secure configuration assessment **(via files)**|Secure configuration by d
 
 ### 1.2 Properties (JSON response)
 
-Property (ID)|Data type|Description
-:---|:---|:---
+> [!NOTE]
+>
+> - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+> - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+
+| Property (ID) | Data type | Description | Example of a returned value |
+|:----|:----|:----|:----|
+| avEngineUpdateTime | DateTimeOffset |   | 2022-08-04T12:44:02Z |
+| avEngineVersion | String |   | 1.1.19400.3 |
+| avIsEngineUpToDate | String |   | “True”, “False”, “Unknown” |
+| avMode | String | Antivirus mode | Each mode will be a string typed integer value ranging from 0 to 5. Refer to the mapping below to see its value’s meaning: <ul><li>'' = Other</li><li> '0' = Active</li><li> '1' = Passive</li><li> '2' = Disabled</li><li> '3' = Other</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul>
+| avIsPlatformUpToDate | String |   | “True”, “False”, “Unknown” |
+| avIsSignatureUpToDate | String |   | “True”, “False”, “Unknown” |
+| avPlatformVersion | String |   | 4.18.2203.5 |
+| avPlatformUpdateTime | DateTimeOffset |   | 2022-08-04T12:44:02Z |
+| avSignaturePublishTime | DateTimeOffset |   | 2022-08-04T12:44:02Z |
+| avSignatureUpdateTime | DateTimeOffset |   | 2022-08-04T12:44:02Z |
+| avSignatureVersion | String |   | 1.371.1323.0 |
+| computerDnsName | String | DNS name | SampleDns |
+| dataRefreshTimestamp | DateTimeOffset |   | 2022-08-04T12:44:02Z |
+| fullScanResult | String |   |   |
+| fullScanError | String |   |    |
+| fullScanTime | DateTimeOffset |   | 2022-08-04T12:44:02Z |
+| id | String | Machine GUID | 30a8fa2826abf24d24379b23f8a44d471f00feab |
+| lastSeenTime | DateTimeOffset |   | 2022-08-04T12:44:02Z |
+| machineId | String | Machine GUID | 30a8fa2826abf24d24379b23f8a44d471f00feab |
 
 ### 1.3 Properties (via files)
 
-Property (ID)|Data type|Description
-:---|:---|:---
+> [!NOTE]
+>
+> - The files are gzip compressed & in multiline Json format.
+> - The download URLs are only valid for 3 hours; otherwise you can use the parameter.
+> - For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
+> - Each record is approximately 1KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+> - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+
+| Property (ID) | Data type | Description | Example of a returned value |
+|:----|:----|:----|:----|
+| Export files | array[string] | A list of download URLs for files holding the current snapshot of the organization. | ["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"] |
+| GeneratedTime | String | The time that the export was generated. | 2022-05-20T08:00:00Z |
+
+> [!NOTE]
+> In each of the Export files a property “DeviceGatheredInfo” containing the data about Antivirus information can be found. Each of its attributes can provide you with information on the device's health and its status.
 
 ## See also
 
