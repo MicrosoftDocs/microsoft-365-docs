@@ -24,7 +24,9 @@ The sharing experience differs based on the device and client being used.
 
 ## Share in Teams meetings
 
-When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization. It then automatically shares the whiteboard with any in-tenant users in the meeting.
+When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization and automatically shares the whiteboard with any in-tenant users in the meeting. Whiteboards are shared using company-shareable links, regardless of the default setting. Support for the default sharing link type is planned.
+
+There's additional capability for temporary collaboration by most external and shared device accounts during a meeting. This allows users to temporarily view and collaborate on whiteboards when they’re shared in a Teams meeting, similar to PowerPoint Live sharing.
 
 >[!NOTE]
 > External sharing during a Teams meeting is not yet available, but will be added in a future release.
