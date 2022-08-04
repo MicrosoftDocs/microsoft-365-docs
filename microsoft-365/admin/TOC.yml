@@ -3,7 +3,7 @@
   items: 
     - name: Top 20 admin help articles
       href: top-m365-admin-articles.yml
-    - name: Admin training video library
+    - name: YouTube - Microsoft 365 help for small businesses
       href: https://go.microsoft.com/fwlink/?linkid=2197659
     - name: Get started
       items: 
@@ -43,8 +43,8 @@
              href: setup/setup-business-basic.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Secure Windows 10 computers
-          href: setup/secure-win-10-pcs.md
+        - name: Secure Windows 10 or 11 computers
+          href: ../business-premium/m365bp-secure-windows-devices.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: Download software and product keys
           href: setup/download-software-licenses-csp.md
         - name: Install Office apps
@@ -161,6 +161,8 @@
              href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
+           - name: Microsoft 365 group mailbox size management
+             href: create-groups/group-mailbox-size-management.md 
            - name: Add or remove group members
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
@@ -364,6 +366,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Manage and monitor priority accounts
           href: setup/priority-accounts.md
+        - name: Increase threat protection for Microsoft 365 for business
+          href: security-and-compliance/increase-threat-protection.md
         - name: Turn on Idle session timeout
           href: manage/idle-session-timeout-web-apps.md
         - name: Enable Modern Authentication for Office 2013
@@ -415,7 +419,7 @@
         - name: Set up Microsoft 365 for Google migration
           href: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
         - name: Set up security policies for Windows devices
-          href: setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+          href: ../business-premium/m365bp-secure-windows-devices.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
         - name: Add Google Workspace Domain 
           href: moveto-microsoft-365/add-google-domain.md
         - name: Install Office apps and Microsoft Teams

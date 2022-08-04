@@ -35,7 +35,7 @@ The booking calendar is where all relevant information about that booking calend
 
    ![Image of Users UI in Microsoft 365 admin center.](../media/bookings-admin-center-users.png)
 
-1. On the **Active Users** page, choose the names of the users that you want to delete, and then select **Delete user**.
+1. On the **Active Users** page, choose the name of the booking calendar that you want to delete and then select **Delete user**.
 
    ![Image of Delete User UI in Microsoft 365 admin center.](../media/bookings-delete-user.png)
 

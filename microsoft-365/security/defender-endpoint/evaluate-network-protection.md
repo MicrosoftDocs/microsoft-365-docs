@@ -31,12 +31,6 @@ ms.date:
 
 This article helps you evaluate network protection by enabling the feature and guiding you to a testing site. The sites in this evaluation article aren't malicious. They're specially created websites that pretend to be malicious. The site will replicate the behavior that would happen if a user visited a malicious site or domain.
 
-> [!TIP]
-> You can also visit the Microsoft Defender demo scenarios website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how other protection features work.
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
 ## Enable network protection in audit mode
 
 Enable network protection in audit mode to see which IP addresses and domains would have been blocked. You can make sure it doesn't affect line-of-business apps, or get an idea of how often blocks occur.

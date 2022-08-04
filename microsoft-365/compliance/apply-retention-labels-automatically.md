@@ -268,12 +268,11 @@ When you choose the option for a trainable classifier, you can select one or mor
 
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
 
-> [!CAUTION]
-> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
-
-To automatically apply a label by using this option, SharePoint sites, as well as mailboxes, must have at least 10 MB of data.
+The available pre-trained classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
 
 For more information about trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
+
+To automatically apply a label by using this option, SharePoint sites, as well as mailboxes, must have at least 10 MB of data.
 
 > [!TIP]
 > If you use trainable classifiers for Exchange, see [How to retrain a classifier in content explorer](classifier-how-to-retrain-content-explorer.md).
