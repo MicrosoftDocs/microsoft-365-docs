@@ -28,8 +28,8 @@ This guide provides the IT admin steps for registering the Teams Meetings LTI ap
 
 4. Review the pre-populated settings and **Tool Status**, then select **Enabled**.
 
-5. In *Institution Policies*, select **Role in Course**, **Name**, and **Email Address**, and then select **Yes** for both. (both what?)
+5. In *Institution Policies*, select **Role in Course**, **Name**, and **Email Address**.
 
-6. Select **Allow grade service access** and **Allow Membership Service Access**.
+6. Select **Yes** for both **Allow grade service access** and **Allow Membership Service Access**.
 
 Educators and students can now access the tool in their Blackboard courses in both *Blackboard Learn Ultra* and *Blackboard Learn Original Experience*.
