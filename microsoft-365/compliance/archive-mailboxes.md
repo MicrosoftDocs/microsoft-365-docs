@@ -25,9 +25,9 @@ Mailbox archiving in Microsoft Purview is sometimes also called *In-Place Archiv
 
 Users can access and store messages in their archive mailboxes by using Outlook and Outlook on the web. Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
 
-## Managing archive mailboxes with Messaging Records Management (MRM)
+## Managing archive mailboxes with messaging records management (MRM)
 
-Messages can also be moved to the archive mailbox by the [default Exchange retention policy](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) from Messaging Records Management (MRM). This default policy is automatically assigned to every mailbox and does the following:
+Messages can also be moved to the archive mailbox by the [default Exchange retention policy](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) from messaging records management (MRM). This default policy is automatically assigned to every mailbox and does the following:
 
   - Moves items that are two years or older from a user's primary mailbox to their archive mailbox.
 

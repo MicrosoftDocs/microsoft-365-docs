@@ -125,7 +125,7 @@ An inactive mailbox that's configured with an auto-expanding archive can't be re
 
 ## Inactive mailboxes and Exchange MRM retention policies
 
-Applying an Exchange retention policy (the Messaging Records Management, or MRM, feature in Exchange Online) does not create an inactive mailbox when the user account is deleted.
+Applying an Exchange retention policy (the messaging records management, or MRM, feature in Exchange Online) does not create an inactive mailbox when the user account is deleted.
 
 However, if this MRM retention policy was applied to a mailbox before it went inactive, any deletion policies (MRM retention tags configured with a **Delete** action) will continue to be processed on the inactive mailbox. That means items that are tagged with an MRM deletion policy will be moved to the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) when the retention period expires. Those items are purged from the inactive mailbox when the hold duration expires. If a hold duration isn't specified for the inactive mailbox, items in the Recover Items folder will be retained indefinitely.
 
