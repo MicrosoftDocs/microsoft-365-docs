@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Antivirus Export Device Health details API methods and properties
+title: Microsoft Defender Antivirus export device antivirus health details API methods and properties
 description: Retrieves a list of Microsoft Defender Antivirus (MDAV) device health details. 
 keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
 ms.prod: m365-security 
@@ -17,7 +17,7 @@ MS.technology: mde
 ms.custom: api 
 --- 
 
-# Export device health details API methods and properties
+# Export device antivirus health details API methods and properties
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## API description
+## Export device antivirus health details API description
 
 Retrieves a list of Microsoft Defender Antivirus device health details. This API has different API calls (methods) to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
@@ -51,18 +51,14 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 >
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
-## 1. Export secure configurations assessment
-
-Returns all of the configurations and their status, on a per-device basis.
-
-### 1.1 Methods
+### 1.1 Export device antivirus health details API methods
 
 Method|Data type|Description
 :---|:---|:---
-Export secure configuration assessment **(JSON response)**|Secure configuration by device collection. See: [1.2 Properties (JSON response)](#12-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
-Export secure configuration assessment **(via files)**|Secure configuration by device collection. See: [1.3 Properties (via files)](#13-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
+**(JSON response)**|Microsoft Defender Antivirus health per device collection. See: [1.2 Export device antivirus health details API properties (JSON response)](#12-export-device-antivirus-health-details-api-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
+**(via files)**|Microsoft Defender Antivirus health per device collection. See: [1.3 Export device antivirus health details API properties \(via files\)](#13-export-device-antivirus-health-details-api-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
 
-### 1.2 Properties (JSON response)
+### 1.2 Export device antivirus health details API properties (JSON response)
 
 > [!NOTE]
 >
@@ -91,7 +87,7 @@ Export secure configuration assessment **(via files)**|Secure configuration by d
 | lastSeenTime | DateTimeOffset |   | 2022-08-04T12:44:02Z |
 | machineId | String | Machine GUID | 30a8fa2826abf24d24379b23f8a44d471f00feab |
 
-### 1.3 Properties (via files)
+### 1.3 Export device antivirus health details API properties (via files)
 
 > [!NOTE]
 >
@@ -111,6 +107,6 @@ Export secure configuration assessment **(via files)**|Secure configuration by d
 
 ## See also
 
-[Export device health report](device-health-export-health-report-api.md)
+[Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 
 [Device health and compliance reporting](machine-reports.md)

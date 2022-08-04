@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Antivirus Device Health export health reporting
+title: Microsoft Defender Antivirus Device Health export device antivirus health reporting
 description: Presents methods to retrieve Microsoft Defender Antivirus (MDAV) device health details. 
 keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
 ms.prod: m365-security 
@@ -17,7 +17,7 @@ MS.technology: mde
 ms.custom: api 
 ---
 
-# Device health export health reporting
+# Export device antivirus health report
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-This API has two methods to retrieve Microsoft Defender Antivirus device health details:
+This API has two methods to retrieve Microsoft Defender Antivirus device antivirus health details:
 
 - **Method one:** [1 Export health reporting \(**JSON response**\)](#1-export-health-reporting-json-response)  The method pulls all data in your organization as JSON responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
@@ -53,7 +53,7 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 ### 1.1 API method description
 
-This API retrieves a list of Microsoft Defender Antivirus device health details. Returns a table with an entry for every unique combination of:
+This API retrieves a list of Microsoft Defender Antivirus device antivirus health details. Returns a table with an entry for every unique combination of:
 
 - DeviceId
 - Device name
