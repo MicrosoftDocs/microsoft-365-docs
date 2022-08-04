@@ -214,22 +214,6 @@
          items: 
              - name: Overview
                href: advanced-hunting-overview.md
-             - name: Learn, train, & get examples
-               items: 
-                 - name: Learn the query language
-                   href: advanced-hunting-query-language.md
-                 - name: Get expert training
-                   href: advanced-hunting-expert-training.md
-                 - name: Use shared queries
-                   href: advanced-hunting-shared-queries.md
-                 - name: Hunt across devices, emails, apps, and identities
-                   href: advanced-hunting-query-emails-devices.md
-                 - name: Hunt for ransomware
-                   href: advanced-hunting-find-ransomware.md
-                 - name: Advanced hunting example
-                   href: advanced-hunting-example.md
-                 - name: Transition from Defender for Endpoint 
-                   href: advanced-hunting-migrate-from-mde.md
              - name: Build queries using guided mode 
                items: 
                  - name: Get started with query builder
@@ -237,7 +221,23 @@
                  - name: Refine your query in guided mode
                    href: advanced-hunting-working-guided-mode.md
              - name: Create queries using advanced mode
-               items: 
+               items:
+                 - name: Learn, train, & get examples
+                   items: 
+                     - name: Learn the query language
+                       href: advanced-hunting-query-language.md
+                     - name: Get expert training
+                       href: advanced-hunting-expert-training.md
+                     - name: Use shared queries
+                       href: advanced-hunting-shared-queries.md
+                     - name: Hunt across devices, emails, apps, and identities
+                       href: advanced-hunting-query-emails-devices.md
+                     - name: Hunt for ransomware
+                       href: advanced-hunting-find-ransomware.md
+                     - name: Advanced hunting example
+                       href: advanced-hunting-example.md
+                     - name: Transition from Defender for Endpoint 
+                       href: advanced-hunting-migrate-from-mde.md                
                  - name: Work with query results
                    href: advanced-hunting-query-results.md
                  - name: Quickly investigate with go hunt
