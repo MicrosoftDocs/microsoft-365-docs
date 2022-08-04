@@ -22,13 +22,7 @@ appliesto:
 
 ## Overview
 
-The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
-
-The wizard configures the Shifts connector, creates a connection to your WFM system, and applies the sync settings and team mappings that you choose. Sync settings determine the schedule information that's synced between your WFM system and Shifts. Team mappings define the sync relationship between your WFM instances and teams in Teams. You can map to existing teams and new teams.
-
-You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a WFM instance can only be mapped to one team at any given time. If a WFM instance is already mapped to a team, it can't be mapped to another team.
-
-With your WFM system as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use your WFM system to set up schedules.
+[!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
 ## Integrate Shifts with Blue Yonder Workforce Management
 
@@ -80,7 +74,8 @@ On the Sync settings page, you choose the information to sync from Blue Yonder W
 1. Under **Email notification recipients**, choose who receives email notifications about this connection. You can add individual users and groups. The email notifications contain information about connection setup status and any issues or errors that may occur after the connection is set up.
 1. Choose your sync settings:
     1. Under **Schedule and shifts**, choose the Blue Yonder WFM data that Shifts users can see or change, and then set the sync frequency.
-    2. Under **Requests**, choose the types of requests that Shifts users can see and create.
+    1. Under **Time card**, choose what action Shifts users can do with time entries.
+    1. Under **Requests**, choose the types of requests that Shifts users can see and create.
 
     > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
