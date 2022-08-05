@@ -160,6 +160,6 @@ The response from Microsoft Threat Experts will vary according to your inquiry. 
 
 If an expert requests more information or file samples, it's crucial to respond quickly to keep the investigation moving.
 
-## To learn more about proactive threat hunting service across endpoints, Office 365, cloud applications, and identity, refer to: 
+## To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to: 
 
 - [Microsoft Defender Experts for Hunting overview](defender-experts-for-hunting.md)
