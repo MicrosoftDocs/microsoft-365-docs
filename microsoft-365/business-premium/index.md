@@ -51,17 +51,16 @@ Completing all six missions is the most effective way to thwart hackers, protect
 
 ## Cybersecurity playbook
 
-The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
+The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download ([Get the PDF here](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)).
 
-- [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
-- Select the following infographic to see a larger version.
+- [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
+- Select the following infographic to view a larger version in your browser.
 
 :::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Cybersecurity playbook." lightbox="media/m365bp-cyber-security-playbook.png":::
 
-[Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 
 ## Next steps
 
-Proceed to [Fortify your environment with Microsoft 365 Business Premium](m365bp-setup-overview.md)!
+Proceed to [Fortify your environment](m365bp-setup-overview.md).
 
 
