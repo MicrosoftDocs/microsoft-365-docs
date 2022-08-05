@@ -91,8 +91,11 @@ To create the Power Automate flow, you must have a license that's separate from 
 
 2. Specific to this scenario:
     
-    a. On the **Define label settings** page, select **Retain items indefinitely or for a specific period** and specify the retention period.
-    b. On the **Choose what happens after the retention period **page, select **Run a Power Automate flow", and then "Select a flow". From the **Select a Power Automate flow **flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
+    1. On the **Define label settings** page, select **Retain items indefinitely or for a specific period** and specify the retention period.
+    
+    2. On the **Choose what happens after the retention period** page, select **Run a Power Automate flow", and then "Select a flow". 
+    
+    From the **Select a Power Automate flow **flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
 
 A retention label can be configured for only one Power Automate flow, but the same flow can be used by more than one retention label.
 
