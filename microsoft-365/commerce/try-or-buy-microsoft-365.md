@@ -96,7 +96,7 @@ If you already have a Microsoft 365 for business subscription, you can use the M
 When you add a subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>], the new subscription is associated with the same organization (domain namespace) as your existing subscription. This association makes it easier to move users in your organization between subscriptions, or to assign them a license for the additional products they need.
 
 1. In the admin center, go to the **Marketplace**
-2. On the **Marketplace** page, you see the plans that are available to your organization. Choose the Microsoft 365 plan that you want to try.
+2. On the **Marketplace** page, you'll see the plans that are available to your organization. Choose the Microsoft 365 plan that you want to try.
 3. On the next page, select **Get free trial**. The trial gives you 25 user licenses for a one-month term.
 4. Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.
 5. Enter the verification code, then select **Start your free trial**.
