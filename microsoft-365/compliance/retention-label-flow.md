@@ -91,8 +91,8 @@ When the retention period expires, the flow is triggered.
     1. On the **Define label settings** page, select **Retain items indefinitely or for a specific period** and specify the retention period.
     
     2. On the **Choose what happens after the retention period** page, select **Run a Power Automate flow", and then "Select a flow". 
-    
-    From the **Select a Power Automate flow **flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
+        
+        From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
 
 A retention label can be configured for only one Power Automate flow, but the same flow can be used by more than one retention label.
 
