@@ -23,17 +23,17 @@ description: "Security overview for Microsoft 365 Business Premium which provide
 
 # Bump up security
 
-In this mission, you set up your security defenses. You begin by enforcing multifactor authentication (MFA) requirements, with either security defaults or Conditional Access. And, you'll set up the different admin roles and specific levels of security for them. Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. You also need to protect your email content and devices.
+:::image type="content" source="media/mission2.png" alt-text="Boost your security protection with Microsoft 365 Business Premium.":::
+
+In this mission, you boost your security defenses. You begin by enforcing multifactor authentication (MFA) requirements by using either security defaults or Conditional Access. You'll set up the different admin roles and specific levels of security for them. Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. And, you'll protect your email content and devices.
 
 Stay vigilant - the safety and reliability of the system relies upon you.
 
-This mission has the following objectives:
+Your objectives are to:
 
-- [Protect your admin accounts](m365bp-protect-admin-accounts.md).
 - [Turn on security defaults](m365bp-conditional-access.md).
+- [Protect your admin accounts](m365bp-protect-admin-accounts.md).
 - [Protect against malware and other threats](m365bp-increase-protection.md).
 
-Achieve these objectives and then start your [next mission](m365bp-devices-overview.md).
 
-:::image type="content" source="media/m365bp-bump-up-protection.jpg" alt-text="Bump up security.":::
 

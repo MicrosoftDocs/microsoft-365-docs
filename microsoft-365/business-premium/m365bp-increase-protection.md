@@ -202,6 +202,6 @@ You can prevent people in your organization from sharing their calendars. You ca
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
 
-## Next steps
+## Next objective
 
-Okay, now let's [**set up those unmanaged BYOD devices**](m365bp-devices-overview.md).
+Okay, now let's [**set up those unmanaged (BYOD) devices**](m365bp-devices-overview.md).
