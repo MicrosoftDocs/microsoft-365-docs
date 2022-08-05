@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - commerce_billing
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150

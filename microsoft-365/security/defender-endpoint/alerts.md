@@ -90,7 +90,7 @@ ms.custom: api
 |
 
 >[!NOTE]
->Around August 29th, 2022, previously supported alert determination values (‘Apt’ and ‘SecurityPersonnel’) will be deprecated and no longer available via the API.
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ### Response example for getting single alert:
 
