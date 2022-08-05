@@ -52,7 +52,7 @@ Data that is collected (using either _Json response_ or _via files_) is the curr
 
 This API response contains all the data for installed browser extensions per device. Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionId.
 
-#### Limitations
+#### 1.1.1 Limitations
 
 - Maximum page size is 200,000.
 - Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
@@ -180,7 +180,7 @@ Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability 
 GET /api/Machines/BrowserExtensionsInventoryByMachine
 ```
 
-### Parameters
+### 2.4 Parameters
 
 - sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours)
 

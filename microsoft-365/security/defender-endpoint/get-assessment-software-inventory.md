@@ -50,7 +50,7 @@ Data that is collected (using either _Json response_ or _via files_) is the curr
 
 This API response contains all the data of installed software that has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
-#### Limitations
+#### 1.1.1 Limitations
 
 - Maximum page size is 200,000.
 - Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
