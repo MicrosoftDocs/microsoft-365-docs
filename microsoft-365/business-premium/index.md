@@ -34,14 +34,14 @@ The task before you is this: let Microsoft 365 Business Premium help secure your
 
 | Mission  | Description  |
 |---------|---------|
-| **Fortify your environment** | Tasks your admin completes | 
-| [**1. Sign in and set up your environment**](m365bp-setup-overview.md).    | Complete the basis setup process for Microsoft 365 for your company.   |
+| **Fortify your environment** <br/>(Tasks your admin completes)   | 
+| [**1. Sign in and set up your environment**](m365bp-setup-overview.md).    | Complete the basic setup process for Microsoft 365 for your business or campaign.   |
 | [**2. Bump up security protection**](m365bp-security-overview.md).   |  Set up critical front-line security measures to prevent cyberattacks.   |
-| **Train your team** | Tasks that all staff members do |
+| **Train your team** <br/>(Tasks that all staff members do)  |
 | [**3. Set up unmanaged (BYOD) devices**](m365bp-protect-pcs-macs.md). | Set up all the unmanaged ("bring your own device," also referred to as BYOD) devices so they are safely part of the ecosystem. |
 | [**4. Use email securely**](m365bp-protect-email-overview.md). | Know what to watch for, and take the necessary steps to protect yourself from attacks through email systems. |
 | [**5. Collaborate and share securely**](m365bp-collaborate-share-securely.md). | Learn how to share files with others and collaborate more securely with Microsoft Teams, SharePoint, and OneDrive. |
-| **Safeguard managed devices** | Tasks your admin or security team does |
+| **Safeguard managed devices** <br/>(Tasks your admin or security team does)   |
 | [**6. Set up and secure managed devices**](m365bp-protect-devices.md). | Enroll and secure company devices so they monitored and protected from threats. |
 
 Completing all six missions is the most effective way to thwart hackers, protect against ransomware, and help ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started!
