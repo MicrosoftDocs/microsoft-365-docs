@@ -27,11 +27,7 @@ description: Instructions how to configure a retention label with custom actions
 > [!NOTE]
 > This scenario is rolling out in preview and subject to change.
 
-When you configure a [retention label](retention.md) to retain items, you specify what action to take at the end of the retention period. Built-in actions include:
-- Automatically delete the item
-- Relabel the item
-- Deactivate the label (do nothing)
-- Start a disposition review
+When you configure a [retention label](retention.md) to retain items for a specific period, you specify what action to take at the end of that retention period. You can choose from the built-in actions of permanently deleting the item, relabeling the item, deactivating the label, and starting a disposition review.
 
 However, if you choose the option to trigger a Power Automate flow, currently rolling out in preview, this label configuration supports custom actions such as:
 
