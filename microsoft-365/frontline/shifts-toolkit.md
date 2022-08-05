@@ -1,5 +1,5 @@
 ---
-title: Help your clients and customers use virtual appointments
+title: Help your frontline workers track time and attendance
 author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
@@ -19,16 +19,16 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
 ms.reviewer: 
-description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments with your organization. 
+description: Resources to help train your frontline team in using Shifts to access and manage their schedules.
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
-# Help your clients and customers use virtual appointments
+# Help your frontline workers track time and attendance
 
-Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
-
+Now that your organization has begun using Shifts to manage schedules, you'll need to make sure that your frontline workers understand how to track their time and attendance.
+<!--stopped here-->
 Watch this video for a quick overview of what virtual appointments can do for your organization.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
