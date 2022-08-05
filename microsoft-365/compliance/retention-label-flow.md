@@ -40,7 +40,7 @@ These actions also allow integration with other apps and services. For example, 
 
 It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
 
-- [Overview of using retention labels with a Power Automate flow](@overview-of-using-retention-labels-with-a-power=automate-flow)
+- [Overview of using retention labels with a Power Automate flow](#overview-of-using-retention-labels-with-a-power=automate-flow)
 - [Limitations](#limitations)
 - [Prerequisites](#prerequisites)
 - [How to configure a retention label to trigger a Power Automate flow](#how-to-configure-a-retention-label-to-trigger-a-power-automate-flow)
