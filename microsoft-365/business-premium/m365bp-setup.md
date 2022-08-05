@@ -72,6 +72,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 - [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
 - [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 
-### Next objective
+## Next objective
 
-Once you've achieved these objectives, proceed to [Bump up security](m365bp-security-overview.md).
+Proceed to [Bump up security](m365bp-security-overview.md).
