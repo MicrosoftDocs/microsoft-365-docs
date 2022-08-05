@@ -56,8 +56,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Software.Read.All|'Read browser extension permission information'
-Delegated (work or school account)|Software.Read|'Read browser extension permission information'
+Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
 
 ## HTTP request
 

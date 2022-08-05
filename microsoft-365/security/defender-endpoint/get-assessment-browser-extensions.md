@@ -62,9 +62,9 @@ This API response contains all the data for installed browser extensions per dev
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
 Permission type|Permission|Permission display name
----|---|---
-Application|Software.Read.All|\'Read browser extension information\'
-Delegated (work or school account)|Software.Read|\'Read browser extension information\'
+:---|:---|:---
+Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
 
 ### 1.3 URL
 
@@ -170,9 +170,9 @@ Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
 Permission type|Permission|Permission display name
----|---|---
-Application|Software.Read.All|\'Read browser extension information\'
-Delegated (work or school account)|Software.Read|\'Read browser extension information\'
+:---|:---|:---
+Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
 
 ### 2.3 URL
 
