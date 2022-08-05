@@ -23,7 +23,9 @@ description: "Setup overview for small to medium-sized businesses and campaigns.
 
 # Fortify your environment with Microsoft 365 Business Premium
 
-Now that you have Microsoft 365 Business Premium, your first critical mission is to complete your initial setup process right away. Let's get you going.
+Now that you have Microsoft 365 Business Premium, your first critical mission is to complete your initial setup process right away. Let's get you going!
+
+:::image type="content" source="media/mission1.png" alt-text="Sign in and set up." lightbox="media/mission1.png":::
 
 Your objective is to:
 
