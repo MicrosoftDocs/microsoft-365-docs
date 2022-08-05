@@ -40,7 +40,7 @@ These actions also allow integration with other apps and services. For example, 
 
 It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
 
-- [Overview of using retention labels with a Power Automate flow](#overview-of-using-retention-labels-with-a-power=automate-flow)
+- [Overview of using retention labels with a Power Automate flow](#overview-of-using-retention-labels-with-a-power-automate-flow)
 - [Limitations](#limitations)
 - [Prerequisites](#prerequisites)
 - [How to configure a retention label to trigger a Power Automate flow](#how-to-configure-a-retention-label-to-trigger-a-power-automate-flow)
@@ -75,13 +75,9 @@ When the retention period expires, the flow is triggered.
 
 ## Prerequisites
 
-To create the Power Automate flow:
-
 - In addition to [licenses to create and apply retention labels](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management), you must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
 
-- Permissions to create an automated cloud flow in Power Automate.
-
-The Power Automate flow must be created from scratch rather than a template, and configured to use the trigger **When the retention period expires**.
+- The Power Automate flow must be created from scratch rather than a template, and configured to use the trigger **When the retention period expires**.
 
 For more information, see the [Microsoft Power Automate Documentation](/power-automate).
 
