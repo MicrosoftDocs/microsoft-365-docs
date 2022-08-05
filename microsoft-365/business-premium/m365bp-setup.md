@@ -34,7 +34,7 @@ Make sure that you meet the following requirements before you begin your setup p
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
-| Operating systems (servers) | Windows Server or Linux Server with Microsoft Defender for Business servers (currently in preview) <br/>See [How to get Microsoft Defender for Business servers (preview)](../security/defender-business/get-defender-business-servers.md).  |
+| Operating systems (servers) | Windows Server or Linux Server <br/>Requires Microsoft Defender for Business servers (currently in preview)<br/>See [How to get Microsoft Defender for Business servers (preview)](../security/defender-business/get-defender-business-servers.md).  |
 
 > [!NOTE]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
