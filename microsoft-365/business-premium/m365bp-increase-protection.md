@@ -29,7 +29,7 @@ In this objective, you increase your threat protection with Microsoft 365 Busine
 - [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs.
 - [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used.
-- [Next steps](#next-steps) (such as securing unmanaged devices)
+- [Next objective](#next-objective) (securing unmanaged devices)
 
 ## Review and apply preset security policies
 
