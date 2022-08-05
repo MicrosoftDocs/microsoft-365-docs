@@ -30,9 +30,9 @@ Rather than clicking and sorting through hundreds, or even thousands of files, S
 </br>
 
 
-## AI models
+## Models
 
-Understanding your content with SharePoint Syntex begins with AI models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
+Understanding your content with SharePoint Syntex begins with models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
 
 In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [trained models](prebuilt-overview.md). The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
 
