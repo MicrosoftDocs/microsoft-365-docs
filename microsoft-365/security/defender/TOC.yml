@@ -214,12 +214,16 @@
          items: 
              - name: Overview
                href: advanced-hunting-overview.md
+             - name: Guided and advanced modes
+               href: advanced-hunting-modes.md               
              - name: Build queries using guided mode 
                items: 
                  - name: Get started with query builder
                    href: advanced-hunting-guided-hunting.md
                  - name: Refine your query in guided mode
                    href: advanced-hunting-working-guided-mode.md
+                 - name: Working with query results in guided mode
+                   href: advanced-hunting-query-results-guided.md                   
              - name: Create queries using advanced mode
                items:
                  - name: Learn, train, & get examples
