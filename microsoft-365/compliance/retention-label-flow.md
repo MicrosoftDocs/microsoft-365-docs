@@ -53,7 +53,7 @@ The following processes show the high-level overview of how retention labels wor
 
 ![Process overview of how retention labels work with a Power Automate flow.](../media/retention-label-flow-overview.png)
 
-In Power Automate, you create an automated cloud flow that uses the trigger **When the retention period expires**. Then, configure the flow with your required actions.
+In Power Automate, you create an automated cloud flow from scratch that uses the trigger **When the retention period expires**. Then, configure the flow with your required actions.
 
 Next, create a new retention label with the following configuration:
 - Retain the item for a specified period of time
@@ -75,8 +75,15 @@ When the retention period expires, the flow is triggered.
 
 ## Prerequisites
 
-- To create the Power Automate flow, you must have a license that's separate from licenses to apply retention labels. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
+To create the Power Automate flow:
 
+- In addition to [licenses to create and apply retention labels](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management), you must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
+
+- Permissions to create an automated cloud flow in Power Automate.
+
+The Power Automate flow must be created from scratch rather than a template, and configured to use the trigger **When the retention period expires**.
+
+For more information, see the [Microsoft Power Automate Documentation](/power-automate).
 
 ## How to configure a retention label to trigger a Power Automate flow
 
@@ -103,9 +110,11 @@ The [principles of retention](retention.md#the-principles-of-retention-or-what-t
 
 ## Next steps
 
-To help you track the retention labels that you apply:
+To help you track the retention labels with this configuration:
 
 - [Monitoring retention labels](retention.md#monitoring-retention-labels)
 - [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 - [Auditing retention actions](retention.md#auditing-retention-actions)
+
+To edit and monitor your Power Automate flows, use 
 
