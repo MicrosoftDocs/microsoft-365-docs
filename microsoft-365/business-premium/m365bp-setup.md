@@ -41,13 +41,15 @@ Make sure that you meet the following requirements before you begin your setup p
 
 ## Guided setup process
 
-Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).<br/><br/>
+Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
+As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).
+
 > [!TIP]
 > - After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
-> - Make sure to proceed to [Bump up security](m365bp-security-overview.md).
+
 
 ## Work with a Microsoft partner
 
