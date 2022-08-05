@@ -36,7 +36,7 @@ To update Windows Server 2016, perform the following steps:
 
 ## Re-enable Microsoft Defender Antivirus on Windows Server 2016
 
-You can use the Malware Protection Command-Line Utility to re-enable Microsoft Defender Antivirus on Windows Server 2016.
+You can use the [Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
 
 As a local administrator on the server, perform the following steps:
 
@@ -70,7 +70,7 @@ As a local administrator on the server, perform the following steps:
    Dism /Online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
-   When using the DISM command within a task sequence running PowerShell, the following path to cmd.exe is required.
+   When the DISM command is being used within a task sequence running PowerShell, the following path to cmd.exe is required.
    Example:
 
    ```powershell
