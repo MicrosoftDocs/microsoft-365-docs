@@ -35,32 +35,38 @@ Advanced hunting is a query-based threat hunting tool that lets you explore up t
 To reduce the learning curve for hunting, remove the KQL challenge, and enable all analysts to hunt,  **Guided hunting** experience is supported. This is a hunting mode that enables all analysts to hunt—without knowing KQL or the data schema. In this mode, you can use a query builder to write your queries. You just need to know what you are looking for and you can easily filter for it. 
 
 ## Query in builder
-In the **Advanced hunting** page, select **Create new** to open a new tab and select the **Query in builder** mode.
+In the **Advanced hunting** page, select **Create new** to open a new query tab and select **Query in builder**. This brings you to the guided mode, where you can then construct your query by selecting different components using dropdown menus.
 
-[IMAGE]
+[IMAGE: HIGHLIGHTED QUERY IN BUILDER]
 
 ### Specify the data domain to hunt in
-By default, the guided hunting scope includes a few basic filters.
+By default, guided hunting includes a few basic filters to get you started fast.
 
 You can control the scope of the hunt by selecting the **View in** control:
 
-[IMAGE]
+[IMAGE: View in]
 
-**View in** controls the filters. Selecting **All** allows you to filter the entire dataset while narrowing down to a specific domain allows filters relevant to that domain only. 
+**View in** controls the filters. Selecting **All** allows you to filter the entire dataset. narrowing down to a specific domain allows filters relevant to that domain only. 
+
+You can choose from:
+- All domains - to look through all available data in your query
+- Endpoints - to look through endpoint data as provided by Microsoft Defender for Endpoint
+- Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with Activity log can find the same data here
+- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with Threat Explorer can find the same data here
 
 
 
 ### Create conditions
 
-[describe condition] To add a condition, select **Select a filter**. Explore the different filter sections to find what you are looking for.
+To add a condition to your query, select **Select a filter**. Explore the different filter sections to find what is available to you.
  
-[IMAGE]
+[IMAGE: select a filter]
 
-Type the section's titles to find the filter or use the search box at the top of the list. _* Info_ sections contain filters that provide information about the different components you can look at. _* Events_ sections contain filters that allow you to look for any system or network event.
+Type the section's titles to find the filter or use the search box at the top of the list. _* Info_ sections contain filters that provide information about the different components you can look at. _* Events_ sections contain filters that allow you to look for any system or network event. 
 
-You can also create AND, OR conditions. Select the [operator options?] that pertain to the filters you want to apply AND or OR conditions to. 
+You can also create AND, OR conditions. Select **AND** to include results that  
 
-## Try simple queries
+## Try some queries
 
 ### Hunt for successful connections to specific IP
 to hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
@@ -95,7 +101,7 @@ Then, add another condition this time specifying the folder or **DeliveryLocatio
 
 Another way to get familiar with guided hunting is to load sample queries pre-created in guided mode. 
 
-In the **Getting started** section of the hunting page, we have provided three guided query examples that you can load. The query examples contain some of the most common filters and inputs you would typically need in your hunting. Loading any of the three sample queries opens a guided query tab. 
+In the **Getting started** section of the hunting page, we have provided three guided query examples that you can load. The query examples contain some of the most common filters and inputs you would typically need in your hunting. Loading any of the three sample queries opens a guided tour of how you would construct the entry using guided mode.
 
 [IMAGE]
 
