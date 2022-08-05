@@ -33,7 +33,7 @@ Scenario requirements and setup
 
 - Click the create and download new file button
 - You should see the browser scanning the file, followed by an antivirus block notification.
-- Create & download new file!
+- [Create & download new file!](https://demo.wd.microsoft.com/Files/Create)
 
 ## See also
 
