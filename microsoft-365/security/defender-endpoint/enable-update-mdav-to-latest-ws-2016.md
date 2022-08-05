@@ -41,7 +41,8 @@ You can use the Malware Protection Command-Line Utility to re-enable Microsoft D
 As a local administrator on the server, perform the following steps:
 
 1. Open Command Prompt.
-1. Run the following command `MpCmdRun.exe -wdenable`.
+1. Run the following command:
+   `MpCmdRun.exe -wdenable`.
 1. Restart the device.
 
 ## Re-enable Microsoft Defender Antivirus on Windows Server, Version 1803 or later
