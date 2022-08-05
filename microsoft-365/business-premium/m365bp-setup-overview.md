@@ -31,3 +31,5 @@ Your objective is to:
 
 - [Set up your Microsoft 365 Business Premium environment](m365bp-setup.md); or
 - [Set up Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) if this is your subscription.
+
+Once you've achieved this objective, proceed to [bump up security protection](m365bp-security-overview.md).

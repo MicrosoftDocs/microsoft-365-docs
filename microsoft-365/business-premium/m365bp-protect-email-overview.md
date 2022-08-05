@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -32,4 +32,4 @@ Your objectives are to:
 - [Protect against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md).
 - [Set up encrypted email](send-encrypted-email.md).
 
-
+Once you've achieved these objectives, proceed to [Collaborate and share securely](m365bp-collaborate-share-securely.md).

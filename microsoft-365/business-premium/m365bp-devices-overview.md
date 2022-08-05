@@ -33,3 +33,4 @@ Your objectives are to:
 - [Get Office apps installed on devices](m365bp-install-office-apps.md).
 - [Protected unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md).
 
+Once you've achieved these objectives, proceed to [Use email securely](m365bp-protect-email-overview.md).
