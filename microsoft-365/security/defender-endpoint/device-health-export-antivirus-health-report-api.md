@@ -225,8 +225,8 @@ One of the following permissions is required to call this API.
 
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
-| Application | Software.Read.All | 'Read Threat and Vulnerability Management vulnerability information' |
-| Delegated (work or school account) | Software.Read | 'Read Threat and Vulnerability Management vulnerability information' |
+| Application | Machine.ReadWrite.All | ' Read and write all machine information’  |
+| Delegated (work or school account) | Machine.Read | ' Read machine information ' |
 
 To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details](apis-intro.md).
 
@@ -261,17 +261,19 @@ Here's an example response:
 ```json
 {
 
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+   "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
 
-    "exportFiles": [ 
+   "exportFiles": [
 
-        "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=10717/part-00055-83fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",               
+       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",               
 
-        "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=6698/part-00055-83fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=.." 
+       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=.."
 
-    ], 
+   ],
 
-    "generatedTime": "2022-08-02T22:01:00Z" 
+
+   "generatedTime": "2022-08-02T22:01:00Z"
+
 
 }
 ```
