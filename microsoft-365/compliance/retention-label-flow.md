@@ -98,9 +98,9 @@ A retention label can be configured for only one Power Automate flow, but the sa
 
 ## When the flow is triggered
 
-Just as it can take up to 7 days to apply a retention label, so you should allow up to 7 days after the expiration period before the Power Automate flow is triggered. The initiation of the flow can then take a few hours.
+Just as it can take up to 7 days to apply a retention label, so you should allow up to 7 days after the expiration period expires before the Power Automate flow is triggered. The initiation of the flow can then take a few hours.
 
-Both the flow and the retention action of delete and relabel are queued so that if there are any network or service delays, they are automatically retried.
+Both the flow itself and the retention actions in the flow of delete and relabel are queued so that if there are any network or service delays, the flow and actions are automatically retried.
 
 The [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) still apply to retention labels that are configured to trigger a flow at the end of the retention period, in that an item is always retained for the longest period if there is a conflict with one or more retention policies. However, the flow is always triggered at the end of the label's retention period.
 
