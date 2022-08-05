@@ -330,9 +330,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
-    The rules use conditions that include sensitive information types and sharing options:
-    - For sensitive information types, you can select both built-in and custom sensitive information types.
-    - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
+    The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
+    - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
+    - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
 
     If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select:
     - Sender IP address is
