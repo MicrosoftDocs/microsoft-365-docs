@@ -23,7 +23,7 @@ description: "Details of the Teamwork - people experiences Adoption Score."
 
 # Teamwork – People experiences
 
-Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The teamwork category is part of the measurements that falls under people experiences. To learn more, check out the [Adoption Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The teamwork category is part of the measurements that falls under people experiences. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 

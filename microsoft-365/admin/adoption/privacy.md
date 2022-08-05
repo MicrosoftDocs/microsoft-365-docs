@@ -23,7 +23,7 @@ description: "How privacy is protected with the Adoption Score."
 
 # Privacy controls for Adoption Score
 
-Adoption Score provides insights into your organization’s digital transformation journey through its use of Microsoft 365 and the technology experiences that support it.  Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. For more details, view the [Adoption Score overview](productivity-score.md).
+Adoption Score provides insights into your organization’s digital transformation journey through its use of Microsoft 365 and the technology experiences that support it.  Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. For more details, view the [Adoption Score overview](adoption-score.md).
 
 Your privacy is important to Microsoft. To learn how we protect your privacy, see [Microsoft's privacy statement](https://privacy.microsoft.com/privacystatement). Adoption Score gives you, as your organization's IT administrator, access to privacy settings to help make sure any Adoption Score information you view is actionable, while not compromising the trust your organization places in Microsoft.
 
