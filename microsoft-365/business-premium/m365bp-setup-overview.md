@@ -25,13 +25,12 @@ description: "Setup overview for small to medium-sized businesses and campaigns.
 
 Now that you have Microsoft 365 Business Premium, your first critical mission is to complete your initial setup process right away. Let's get you going!
 
-:::image type="content" source="media/mission1.png" alt-text="Sign in and set up." lightbox="media/mission1.png":::
+:::image type="content" source="media/mission1.png" alt-text="Sign in and set up.":::
 
 Your objective is to:
 
 - [Set up your Microsoft 365 Business Premium environment](m365bp-setup.md); or
 - [Set up Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) if this is your subscription.
 
-Once you've achieved this objective, go [increase security protections](m365bp-security-overview.md).
+Once you've achieved this objective, proceed to [bump up security protection](m365bp-security-overview.md).
 
-:::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Business Premium setup":::
