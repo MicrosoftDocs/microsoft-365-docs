@@ -47,7 +47,7 @@ It's outside the scope of this article to document all the ways in which you can
 - [Overview of using retention labels with a Power Automate flow](@overview-of-using-retention-labels-with-a-power=automate-flow)
 - [Limitations](#limitations)
 - [Prerequisites](#prerequisites)
-- [How to configure a retention label to trigger a Power Automate flow](##configuring-a-retention-label-to-trigger-a-power-automate-flow)
+- [How to configure a retention label to trigger a Power Automate flow](#how-to-configure-a-retention-label-to-trigger-a-power-automate-flow)
 - [When the flow is triggered](#when-the-flow-is-triggered)
  
 
@@ -71,18 +71,18 @@ When the retention period expires, the flow is triggered.
 
 ## Limitations
 
-You must create a new retention label to trigger a flow at the end of the retention period. You can edit an existing retention label for this configuration.
+- You must create a new retention label to trigger a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
-The account that creates the Power Automate flow must be the same account that creates the retention label.
+- The account that creates the Power Automate flow must be the same account that creates the retention label.
 
-If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
+- If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
 
 ## Prerequisites
 
-To create the Power Automate flow, you must have a license that's separate from licenses to apply retention labels. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
+- To create the Power Automate flow, you must have a license that's separate from licenses to apply retention labels. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
 
 
-## Configuring a retention label to trigger a Power Automate flow
+## How to configure a retention label to trigger a Power Automate flow
 
 1. In the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), create a new retention label with your preferred name and settings. For more information, see [Use file plan to create and manage retention labels](file-plan-manager.md)
 
