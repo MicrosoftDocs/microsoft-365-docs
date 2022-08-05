@@ -28,7 +28,7 @@ description: "An overview on how to collaborate and share files and communicate 
 
 Now that you're protected by the Microsoft 365 Business Premium Office apps, your next mission is to set up secure file sharing and communication. The best way to do this is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and are not being stored in unsafe ways outside of it. Your organization depends on protecting your data and information, which means that you want to protect your files by all means possible.
 
-Your objectives are as follows:
+Your objectives are to:
 
 - [Create Teams for collaboration](create-teams-for-collaboration.md).
 - [Set up meetings](set-up-meetings.md).
