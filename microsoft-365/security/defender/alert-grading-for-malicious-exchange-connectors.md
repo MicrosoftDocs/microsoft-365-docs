@@ -1,5 +1,5 @@
 ---
-title: Alert grading from malicious exchange connectors
+title: Alert grading for malicious exchange connectors
 description: Alert grading recipients from malicious exchange connectors activity and protect their network from malicious attack. 
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.prod: m365-security
@@ -23,7 +23,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Alert grading from malicious exchange connectors
+# Alert grading for malicious exchange connectors
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
