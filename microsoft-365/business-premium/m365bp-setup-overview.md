@@ -21,7 +21,7 @@ search.appverid:
 description: "Setup overview for small to medium-sized businesses and campaigns. How to set up cybersecurity and prevent cyberattacks."
 ---
 
-# Fortify your organization with Microsoft 365 Business Premium
+# Fortify your environment with Microsoft 365 Business Premium
 
 Now that you have Microsoft 365 Business Premium, your first critical mission is to complete your initial setup process right away. Let's get you going.
 
