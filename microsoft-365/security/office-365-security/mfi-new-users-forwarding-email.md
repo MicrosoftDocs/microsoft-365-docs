@@ -26,7 +26,7 @@ ms.collection: M365-security-compliance
 
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 
-The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
+The **New users forwarding email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 

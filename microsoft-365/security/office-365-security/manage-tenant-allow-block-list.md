@@ -44,7 +44,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+- In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
@@ -60,7 +60,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   - File hashes = 64
   - URL = 250
 
-- An entry should be active within 30 minutes.
+- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
 
 - By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for block type of entries).
 
@@ -84,17 +84,13 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 ## Configure the Tenant Allow/Block List
 
-### Use the Microsoft 365 Defender portal
-
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
-
-### Use Exchange Online PowerShell or standalone EOP PowerShell
-
 To allow or block emails, see [Allow or block emails using the Tenant Allow/Block List](allow-block-email-spoof.md).
 
 To allow or block files, see [Allow or block files using the Tenant Allow/Block List](allow-block-files.md).
 
 To allow or block URLs, see [Allow or block URLs using the Tenant Allow/Block List](allow-block-urls.md).
+
+These articles contain the instructions to add or remove or modify entries in Tenant Allow/Block List using both Microsoft 365 Defender Portal and Exchange Online PowerShell or standalone EOP PowerShell.
 
 ### What to expect after you add an allow or block entry
 

@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.collection:
   - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365solution-mdo-migration
 ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.technology: mdo
