@@ -57,14 +57,6 @@ The Endpoint Attack Notification capability provides proactive hunting for the m
 - Identification of the most pertinent risks, helping SOCs maximize their effectiveness
 - Help scoping compromises and providing as much context as can be quickly delivered to enable a swift SOC response.
 
-### Filter to view just the Endpoint Attack Notifications
-
-You can filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
-
-1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter icon](../../media/mte/defenderexperts/filter.png) icon.
-2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
-3. Select **Apply**.
-
 ## Collaborate with experts on demand
 
 Select **Ask Defender Experts** directly inside the Microsoft 365 security portal.  Experts can provide insight to better understand the complex threats your organization might face.  Ask Defender Experts to:
