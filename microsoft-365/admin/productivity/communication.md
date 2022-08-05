@@ -175,7 +175,7 @@ We also provide you with information that helps you gain visibility into how you
 
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
-## View trends over time
+## View communication trends over time
 
 For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
 

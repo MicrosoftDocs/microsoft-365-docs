@@ -52,7 +52,7 @@ We provide a primary insight that contains the key metrics for content collabora
 
 Microsoft OneDrive for Business and SharePoint help people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight contains information from everyone who can use OneDrive for Business and SharePoint. Additionally it breaks down the details about how many people read, create, and collaborate on content stored in OneDrive for Business and SharePoint.
 
-:::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Primary insights from communication collaboration score.":::
+:::image type="content" source="../../media/collabscore_primary.png" alt-text="Primary insights from communication collaboration score.":::
 
 
 Types considered for this information include Word, Excel, PowerPoint, OneNote, and PDF files.
@@ -187,7 +187,7 @@ Understand how many users are attaching physical files in email rather than link
       - **21-40**: The red (colored) portion of the bar represents the percentage of devices with a network performance score between 20-40. 
       - **0-20**: The dark red (colored) portion of the bar represents the percentage of devices with the worst network performance score between 0-20. 
 
-## View trends over time
+## View content collaboration trends over time
 
 For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
 

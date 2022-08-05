@@ -150,7 +150,7 @@ We also provide additional information about how people in your organization wor
         The number in the center of the donut chart represents the total number of shared workspaces that have a Microsoft Teams team associated with them.
 4. **View related content:** Select this link to view help content.
 
-## View trends over time
+## View teamwork trends over time
 
 For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
 

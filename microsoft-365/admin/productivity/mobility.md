@@ -140,7 +140,7 @@ We also provide you with information that helps you gain visibility into how peo
 2. **Body:** Highlights the importance of facilitating remote work for people without access to your organization's physical offices.
 3. **Visualization:** Shows trend-line for daily percentage of people who only work remotely as well as daily percentage of people who also work onsite. Users are considered onsite if they perform at least three hours of activity in Microsoft 365 Apps in a day.
 
-## View trends over time
+## View mobility trends over time
 
 For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
 
