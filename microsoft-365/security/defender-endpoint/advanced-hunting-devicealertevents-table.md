@@ -26,7 +26,6 @@ ms.technology: mde
 
 >[!IMPORTANT]
 >The `AlertInfo` and `AlertEvidence` tables replace the `DeviceAlertEvents` table in the Microsoft Defender for Endpoint schema. See more, for 
-[Map DeviceAlertEvents](/defender/advanced-hunting-migrate-from-mde?view=o365-worldwide#map-devicealertevents-table)
 
 Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
