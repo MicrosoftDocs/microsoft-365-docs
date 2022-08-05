@@ -29,7 +29,7 @@ Let us begin by saying that you made a wise choice in adopting Microsoft 365 Bus
 
 The task before you is this: let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions: 
 
-:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing six missions" lightbox="media/sixmissions.png":::
+:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing six missions.":::
 
 
 | Mission  | Description  |
