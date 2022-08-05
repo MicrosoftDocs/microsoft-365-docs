@@ -27,7 +27,7 @@ description: Instructions how to configure a retention label with custom actions
 > [!NOTE]
 > This scenario is rolling out in preview and subject to change.
 
-By default, the actions that are supported for a [retention label](retention.md) when it reaches the end of the retention period are:
+When you configure a [retention label](retention.md) to retain items, you specify what action to take at the end of the retention period. Built-in actions include:
 - Automatically delete the item
 - Relabel the item
 - Deactivate the label (do nothing)
@@ -38,20 +38,20 @@ However, if you choose the option to trigger a Power Automate flow, currently ro
 - Send an email notification to a records manager, or to the person who created or last modified a document
 - Move the item to another location where you centrally store records
 
-In addition to the default actions that you can select for a flow, you can also select actions to delete the item and relabel the item. For example, move the item and send an email notification.
+In addition to the standard Power Automate actions that you can select as part of your flow configuration, you can also select the label-specific actions of delete the item and relabel the item. For example, a flow can move the item and relabel it.
 
-These actions also allow integration with other apps and services. For example, you have another solution that starts your own customized disposition review process upon receipt of that email notification, or your flow updated a table that then automatically starts an existing records management procedure.
+These actions also allow integration with other apps and services. For example, you have another solution that starts your own customized disposition review process upon receipt of an email notification, or your flow updated a table that then automatically starts an existing records management procedure.
 
-It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. To learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
+It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
 
-- Overview of how retention labels work with a Power Automate flow
-- Limitations
-- Prerequisites
-- How to configure a retention label to trigger a Power Automate flow
-- When the flow is triggered
+- [Overview of using retention labels with a Power Automate flow](@overview-of-using-retention-labels-with-a-power=automate-flow)
+- [Limitations](#limitations)
+- [Prerequisites](#prerequisites)
+- [How to configure a retention label to trigger a Power Automate flow](##configuring-a-retention-label-to-trigger-a-power-automate-flow)
+- [When the flow is triggered](#when-the-flow-is-triggered)
  
 
-## Overview of how retention labels work with a Power Automate flow
+## Overview of using retention labels with a Power Automate flow
 
 The following processes show the high-level overview of how retention labels work with a Power Automate flow:
 
