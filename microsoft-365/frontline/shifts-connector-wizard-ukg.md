@@ -59,7 +59,7 @@ You must be a Microsoft 365 global admin to run the wizard.
 <a name="connection_details"> </a>
 
 1. On the Connection details page, give your connection a unique name. It can't be longer than 128 characters or have any special characters.
-    :::image type="content" source="media/shifts-connector-wizard-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-connection-details.png":::
+    :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 1. Enter your UKG Dimensions service account name and password and service URLs.
 1. When you're done, select **Next** to test the connection with the settings you entered.
 
@@ -69,7 +69,7 @@ You must be a Microsoft 365 global admin to run the wizard.
 On the Sync settings page, you choose the information to sync from UKG Dimensions to Shifts, the sync frequency, and whether Shifts users can make changes to the data.
 
 1. Enter your Microsoft 365 system account.
-    :::image type="content" source="media/shifts-connector-wizard-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-sync-settings.png":::
+    :::image type="content" source="media/shifts-connector-wizard-ukg-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-ukg-sync-settings.png":::
 <a name="email"> </a>
 1. Under **Email notification recipients**, choose who receives email notifications about this connection. You can add individual users and groups. The email notifications contain information about connection setup status and any issues or errors that may occur after the connection is set up.
 1. Choose your sync settings:
@@ -104,7 +104,7 @@ Select the instances that you want to map.
 <a name="mapping"> </a>
 <a name="search_teams"> </a>
 Then, map each instance to a team in Teams. You can map an instance to an existing team or you can create a new team.
-:::image type="content" source="media/shifts-connector-wizard-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-search-team.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-ukg-search-team.png":::
 
 [!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
@@ -113,7 +113,7 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 1. Select **switch to bulk mode**.
 1. Select **download a template file** to download a mapping template that you can use to define your mappings.
 
-    :::image type="content" source="media/shifts-connector-wizard-mapping-file.png" alt-text="Screenshot of the Upload mapping file page of the wizard." lightbox="media/shifts-connector-wizard-mapping-file.png":::
+    :::image type="content" source="media/shifts-connector-wizard-ukg-mapping-file.png" alt-text="Screenshot of the Upload mapping file page of the wizard." lightbox="media/shifts-connector-wizard-ukg-mapping-file.png":::
 
 1. Use the template to create your mapping file. It contains these columns, in the following order, starting with the first column. An asterisk (*) indicates a required column.
 
@@ -143,11 +143,11 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 
 Review your settings. If you need to make changes to any team mappings, choose **Edit** to do so. When you're ready, select **Finish**.
 
-:::image type="content" source="media/shifts-connector-wizard-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-review.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-ukg-review.png":::
 
 You’ll see a message to confirm that we received your request along with an operation ID. Make a note of the operation ID. You'll need it to check the setup status of your connection.
 
-:::image type="content" source="media/shifts-connector-wizard-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-operation-id.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-ukg-operation-id.png":::
 
 The wizard starts the process to set up the connection and map the instances to the teams you selected. This process may take some time to complete. The recipients you chose will receive email notifications about setup status.
 
