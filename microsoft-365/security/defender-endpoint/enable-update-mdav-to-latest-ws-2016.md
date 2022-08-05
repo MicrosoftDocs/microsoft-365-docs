@@ -71,8 +71,7 @@ As a local administrator on the server, perform the following steps:
    ```
 
    When the DISM command is being used within a task sequence running PowerShell, the following path to cmd.exe is required.
-   Example:
-
+   
    ```powershell
    C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
    C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender
