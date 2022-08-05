@@ -50,52 +50,10 @@ As you're making the switch to Defender for Endpoint, you might need to take cer
 |Endpoint type|What to do|
 |---|---|
 |Windows clients (such as endpoints running Windows 10 and Windows 11)|In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). In general, Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process. <br/><br/> When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <br/><br/> If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.|
-|Windows servers|On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus cannot run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <br/><br/> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <br/>- [Reinstall Microsoft Defender Antivirus on Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Reinstall Microsoft Defender Antivirus on Windows Server, version 1803 or later](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>If you run into issues reinstalling or re-enabling Microsoft Defender Antivirus on Windows Server, see [Troubleshooting: Microsoft Defender Antivirus is getting uninstalled on Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Windows servers|On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus cannot run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <br/><br/> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <br/>- [Reinstall Microsoft Defender Antivirus on Windows Server 2016](enable-update-mdav-to-latest-ws-2016.md#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Reinstall Microsoft Defender Antivirus on Windows Server, version 1803 or later](enable-update-mdav-to-latest-ws-2016.md#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>If you run into issues reinstalling or re-enabling Microsoft Defender Antivirus on Windows Server, see [Troubleshooting: Microsoft Defender Antivirus is getting uninstalled on Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > To learn more about Microsoft Defender Antivirus states with non-Microsoft antivirus protection, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
-
-### Re-enable Microsoft Defender Antivirus on Windows Server 2016
-
-You can use the [Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
-
-1. As a local administrator on the server, open Command Prompt.
-
-2. Run the following command: `MpCmdRun.exe -wdenable`
-
-3. Restart the device.
-
-### Re-enable Microsoft Defender Antivirus on Windows Server, version 1803 or later
-
-> [!IMPORTANT]
-> The following procedure applies only to endpoints or devices that are running the following versions of Windows:
-> - Windows Server 2022
-> - Windows Server 2019
-> - Windows Server, version 1803 (core-only mode)
-
-1. As a local administrator on the server, open Windows PowerShell.
-
-2. Run the following PowerShell cmdlets:
-
-   ```powershell
-   # For Windows Server 2016
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   
-   # For Windows Server 2019 and Windows Server 2022
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-   When using the DISM command within a task sequence running PowerShell, the following path to cmd.exe is required.
-   Example:
-
-   ```powershell
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-3. Restart the device.
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
