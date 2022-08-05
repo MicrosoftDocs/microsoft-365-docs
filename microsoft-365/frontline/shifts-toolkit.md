@@ -29,7 +29,7 @@ appliesto:
 
 Now that your organization has begun using Shifts to manage schedules, you'll need to make sure that your frontline workers understand how to track their time and attendance.
 
-## What's included in this toolkit
+## vid
 
 Tags with Shifts
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202712>]
