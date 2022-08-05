@@ -18,26 +18,24 @@ description: Learn how to manage sharing for Microsoft Whiteboard in GCC High en
 # Manage sharing for Microsoft Whiteboard in GCC High environments
 
 >[!NOTE]
-> This guidance applies to US Government Community Cloud (GCC) High environments. The sharing experience differs based on the device and client being used. 
+> This guidance applies to US Government Community Cloud (GCC) High environments. The sharing experience differs based on the device and client being used.
 
 ## Share in Teams meetings
 
-When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link that’s accessible by anyone within the organization and automatically shares the whiteboard with any in-tenant users in the meeting. Whiteboards are shared using company-shareable links, regardless of the default setting. Support for the default sharing link type is planned.
+When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link. This link is accessible by anyone within the organization. The whiteboard is also shared with any in-tenant users in the meeting. Whiteboards are shared using company-shareable links, regardless of the default setting. Support for the default sharing link type is planned.
 
-There's additional capability for temporary collaboration by most external and shared device accounts during a meeting. This allows users to temporarily view and collaborate on whiteboards when they’re shared in a Teams meeting, similar to PowerPoint Live sharing.
+There's more capability for temporary collaboration by most external and shared device accounts during a meeting. Users can temporarily view and collaborate on whiteboards when they’re shared in a Teams meeting, similar to PowerPoint Live sharing.
 
-This isn't a share link and doesn't grant access to the file. It provides temporary viewing and collaboration on the whiteboard for the duration of the Teams meeting only.
+In this case, Whiteboard provides temporary viewing and collaboration on the whiteboard during the Teams meeting only. A share link isn't created and Whiteboard doesn't grant access to the file.
 
 If you have external sharing enabled for OneDrive for Business, no further action is required.
 
-If you restrict external sharing for OneDrive for Business, you can keep it restricted and just enable a new setting in order for external and shared device accounts to work. To do so, follow these steps:
+If you restrict external sharing for OneDrive for Business, you can keep it restricted, and just enable a new setting in order for external and shared device accounts to work. To do so, follow these steps:
 
-1. Ensure that Whiteboard is enabled for your organization. See [Manage access to Whiteboard](manage-whiteboard-access-gcc-high.md)
-for more information.
+1. Ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-gcc-high.md).
 2. Using PowerShell, connect to your tenant and ensure the SharePoint Online module is updated by running the following command:
 
    <pre><code class="lang-powershell">Update-Module -Name Microsoft.Online.SharePoint.PowerShell</code></pre>
- 
 3. Then run the following <code>Set-SPOTenant</code> cmdlet:
 
    <pre><code class="lang-powershell">Set-SPOTenant -AllowAnonymousMeetingParticipantsToAccessWhiteboards On</code></pre>
@@ -64,7 +62,7 @@ When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will c
 
 ## Create and share in Whiteboard native clients
 
-When you share a whiteboard from the web, desktop, or mobile clients, you can choose specific people. You can also create a sharing link that’s accessible by anyone in the organization. 
+When you share a whiteboard from the web, desktop, or mobile clients, you can choose specific people. You can also create a sharing link that’s accessible by anyone in the organization.
 
 >[!NOTE]
 > External sharing during a Teams meeting is not yet available, but will be added in a future release.
