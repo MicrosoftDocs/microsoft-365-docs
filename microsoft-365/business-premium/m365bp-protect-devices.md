@@ -25,7 +25,7 @@ description: "An overview for how to set up and secure managed devices from secu
 
 :::image type="content" source="media/mission6.png" alt-text="Secure managed devices with Defender for Business.":::
 
-Welcome to your final critical mission. Here, you'll onboard and implement protection for all the managed devices in your organization. You'll want to onboard your devices to Defender for Business to help ensure your antivirus and anti-malware protection is always up to date, and set policies that help lock down your systems. You can also make sure Windows devices are protected and ready for Office deployment. When you're done, you can rest assured, knowing you've done what you can to protect your organization when these objectives have been achieved!
+Welcome to your final critical mission. Here, you'll onboard and implement protection for all the managed devices in your organization. Onboard your devices to Defender for Business to help ensure those devices are protected from ransomware, malware, phishing, and other threats. You can also make sure Windows devices are protected and ready for Office deployment. When you're done, you can rest assured, knowing you've done what you can to protect your organization when these objectives have been achieved!
 
 Your objectives are to:
 
@@ -36,7 +36,7 @@ Your objectives are to:
 
 Once these objectives have been achieved, your overall mission to protect your organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. See your next steps!
 
-## See also
+## Next steps
 
 - [Set up a security operations process](m365bp-security-incident-quick-start.md).
 - [Learn about security incident management](m365bp-security-incident-management.md).
