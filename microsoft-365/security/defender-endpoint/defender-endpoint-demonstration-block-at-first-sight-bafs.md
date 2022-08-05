@@ -26,15 +26,13 @@ Scenario requirements and setup
 
 - Windows 10 Anniversary update (1607) or later
 - Cloud protection enabled
-- You can download and use the Powershell script to enable this setting and others
-
-## Scenario
+- You can [download and use the Powershell script)](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others
 
 ### Test BAFS
 
 - Click the create and download new file button
 - You should see the browser scanning the file, followed by an antivirus block notification.
-- Create & download new file!
+- [Create & download new file!](https://demo.wd.microsoft.com/Files/Create)
 
 ## See also
 
