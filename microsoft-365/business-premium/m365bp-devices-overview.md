@@ -27,7 +27,7 @@ description: "An overview of how to set up all the bring-your-own devices (BYOD)
 
 Every device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, train everyone to protect their bring-your-own devices (BYODs). Unmanaged devices can pose a risk to your organization. It's important to help everyone get their devices protected as soon as possible.
 
-Your objectives are as follows:
+Your objectives are to:
 
 - [Get everyone to set up MFA](m365bp-multifactor-authentication.md).
 - [Get Office apps installed on devices](m365bp-install-office-apps.md).
