@@ -31,7 +31,20 @@ The task before you is this: let Microsoft 365 Business Premium help secure your
 
 :::image type="content" source="media/sixmissions.png" alt-text="Diagram listing six missions" lightbox="media/sixmissions.png":::
 
-Completing all the missions is the most effective way to thwart hackers, protect against ransomware, and help ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started!
+
+| Mission  | Description  |
+|---------|---------|
+|Fortify your environment | Tasks your admin completes | 
+| [**1. Sign in and set up your environment**](m365bp-setup-overview.md).    | Complete the basis setup process for Microsoft 365 for your company.   |
+| [**2. Bump up security protection**](m365bp-security-overview.md).   |  Set up critical front-line security measures to prevent cyberattacks.   |
+| Train your team | Tasks that all staff members do |
+| [**3. Set up unmanaged (BYOD) devices**](m365bp-protect-pcs-macs.md). | Set up all the unmanaged ("bring your own device," also referred to as BYOD) devices so they are safely part of the ecosystem. |
+| [**4. Use email securely**](m365bp-protect-email-overview.md). | Know what to watch for, and take the necessary steps to protect yourself from attacks through email systems. |
+| [**5. Collaborate and share securely**](m365bp-collaborate-share-securely.md). | Learn how to share files with others and collaborate more securely with Microsoft Teams, SharePoint, and OneDrive. |
+| Safeguard managed devices | Tasks your admin or security team does |
+| [**6. Set up and secure managed devices**](m365bp-protect-devices.md). | Enroll and secure company devices so they monitored and protected from threats. |
+
+Completing all six missions is the most effective way to thwart hackers, protect against ransomware, and help ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started!
 
 > [!TIP]
 > If you're new to cybersecurity, or if a term is unclear, see the [glossary of terms](m365bp-glossary.yml).
@@ -40,18 +53,15 @@ Completing all the missions is the most effective way to thwart hackers, protect
 
 The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-Click (or tap) the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+- Select the infographic to see a larger version.
+- [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Cybersecurity playbook." lightbox="media/m365bp-cyber-security-playbook.png":::
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 
-## Learn more about how Microsoft 365 Business Premium helps your business
-
-Microsoft 365 Business Premium is a comprehensive security and collaboration solution for small and medium businesses. [Learn more about the benefits of Microsoft 365 Business Premium](m365bp-secure-users.md).
-
 ## Next steps
 
-Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
+Proceed to [Fortify your environment with Microsoft 365 Business Premium](m365bp-setup-overview.md)!
 
 
