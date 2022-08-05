@@ -24,7 +24,7 @@ description: "Setup overview for Microsoft 365 Business for campaigns or other b
 
 # Setup for Microsoft 365 Business for Campaigns
 
-Now that you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
+After you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
 
 ## Before you begin
 
