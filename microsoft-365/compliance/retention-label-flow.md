@@ -36,7 +36,7 @@ However, if you choose the option to trigger a Power Automate flow, currently ro
 
 In addition to the standard Power Automate actions that you can select as part of your flow configuration, you can also select the label-specific actions of delete the item and relabel the item. For example, a flow can move the item and relabel it.
 
-These actions also allow integration with other apps and services. For example, you have another solution that starts your own customized disposition review process upon receipt of an email notification, or your flow updated a table that then automatically starts an existing records management procedure.
+These actions also allow integration with other apps and services. For example, you have another solution that starts your own customized disposition review process when an email notification is received, or your flow adds a new entry into a table and this change automatically starts an existing records management procedure.
 
 It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
 
