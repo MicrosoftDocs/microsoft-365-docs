@@ -73,13 +73,13 @@ When the retention period expires, the flow is triggered.
 
 - If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
 
-## Prerequisites
+## Dependencies
 
 - In addition to [licenses to create and apply retention labels](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management), you must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
 
 - The Power Automate flow must be created from scratch rather than a template, and configured to use the trigger **When the retention period expires**.
 
-For more information, see the [Microsoft Power Automate Documentation](/power-automate).
+For more information how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
 
 ## How to configure a retention label to trigger a Power Automate flow
 
