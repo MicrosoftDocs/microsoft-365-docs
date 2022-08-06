@@ -114,5 +114,5 @@ To help you track the retention labels with this configuration:
 - [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 - [Auditing retention actions](retention.md#auditing-retention-actions)
 
-To edit and monitor your Power Automate flows, use 
+To confirm there weren't any failures or errors with your flow, go to the [Power Automate dashboard](https://flow.microsoft.com), select **My flows**, and then select your flow to review the 28-day run history.
 
