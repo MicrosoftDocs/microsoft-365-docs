@@ -58,7 +58,7 @@ If you find something wrong within an article, you can submit feedback to the SQ
 
 Did you know that you could edit the content on docs.microsoft.com yourself? If you do so, not only will our documentation improve, but you'll also be credited as a contributor to the page. To get started, see:
 
-- [Microsoft Docs contributor guide](/contribute/)
+- [Microsoft Docs contributor guide](../README.md)
 
 ## Next steps
 
