@@ -53,17 +53,17 @@ The following processes show the high-level overview of how retention labels wor
 
 ![Process overview of how retention labels work with a Power Automate flow.](../media/retention-label-flow-overview.png)
 
-In Power Automate, you create an automated cloud flow from scratch that uses the trigger **When the retention period expires**. Then, configure the flow with your required actions.
+In Power Automate, you create an automated cloud flow from scratch that uses the trigger **When the retention period expires**. Then, add one or more steps and specify the operations that run your choice of actions.
 
-Next, create a new retention label with the following configuration:
+Next, in the Microsoft Purview compliance portal, create a new retention label with the following configuration:
 - Retain the item for a specified period of time
-- At the end of the retention period, trigger the flow that you just created
+- At the end of the retention period, run the flow that you just created
 
 Apply the label using either of the following methods:
 - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-When the retention period expires, the flow is triggered.
+When the retention period expires, your configured flow runs.
 
 ## Limitations
 
