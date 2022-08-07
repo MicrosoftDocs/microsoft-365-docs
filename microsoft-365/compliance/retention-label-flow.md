@@ -77,9 +77,9 @@ When the retention period expires, your configured flow runs.
 
 - You must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
 
-- The Power Automate flow must be created from scratch rather than a template, and configured to use the trigger **When the retention period expires**.
+- The Power Automate flow must be an automated cloud flow that is created from scratch, and configured to use the trigger **When the retention period expires**.
 
-For more information how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
+For more information about how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
 
 ## How to configure a retention label to run a Power Automate flow
 
