@@ -95,8 +95,8 @@ For more information how to use and configure the dependent automated cloud flow
         
     
     3. From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
-    
-    Select the flow you want, and complete the configuration to create the retention label.
+        
+        Select the flow you want, and complete the configuration to create the retention label.
 
 A retention label can be configured for only one Power Automate flow, but the same flow can be used by more than one retention label.
 
