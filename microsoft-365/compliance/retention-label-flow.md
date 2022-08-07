@@ -32,7 +32,7 @@ When you configure a [retention label](retention.md) to retain items for a speci
 However, if you choose the option to run a Power Automate flow, currently rolling out in preview, this label configuration supports custom actions such as:
 
 - Send an email notification to a records manager, or to the person who created or last modified a document
-- Move the item to another location where you centrally store records
+- Move the item to a SharePoint location where you centrally store records
 
 In addition to the standard Power Automate actions that you can select as part of your flow configuration, you can also select the label-specific actions of delete the item and relabel the item. For example, a flow can move the item and relabel it.
 
@@ -41,7 +41,7 @@ These actions also allow integration with other apps and services. For example, 
 It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
 
 - [Overview of using retention labels with a Power Automate flow](#overview-of-using-retention-labels-with-a-power-automate-flow)
-- [Limitations](#limitations)
+- [Limitations](#limitations-for-this-scenario)
 - [Power Automate dependency](#power-automate-dependency)
 - [How to configure a retention label to run a Power Automate flow](#how-to-configure-a-retention-label-to-run-a-power-automate-flow)
 - [When the flow is triggered](#when-the-flow-is-triggered)
@@ -65,7 +65,7 @@ Apply the label using either of the following methods:
 
 When the retention period expires, your configured flow runs.
 
-## Limitations
+## Limitations for this scenario
 
 - You must create a new retention label to run a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
