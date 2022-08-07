@@ -29,7 +29,7 @@ description: Instructions how to configure a retention label with custom actions
 
 When you configure a [retention label](retention.md) to retain items for a specific period, you specify what action to take at the end of that retention period. You can choose from the built-in actions of permanently deleting the item, relabeling the item, deactivating the label, and starting a disposition review.
 
-However, if you choose the option to trigger a Power Automate flow, currently rolling out in preview, this label configuration supports custom actions such as:
+However, if you choose the option to run a Power Automate flow, currently rolling out in preview, this label configuration supports custom actions such as:
 
 - Send an email notification to a records manager, or to the person who created or last modified a document
 - Move the item to another location where you centrally store records
@@ -42,7 +42,7 @@ It's outside the scope of this article to document all the ways in which you can
 
 - [Overview of using retention labels with a Power Automate flow](#overview-of-using-retention-labels-with-a-power-automate-flow)
 - [Limitations](#limitations)
-- [Prerequisites](#power-automate-dependency)
+- [Power Automate dependency](#power-automate-dependency)
 - [How to configure a retention label to run a Power Automate flow](#how-to-configure-a-retention-label-to-run-a-power-automate-flow)
 - [When the flow is triggered](#when-the-flow-is-triggered)
  
