@@ -67,7 +67,7 @@ When the retention period expires, your configured flow runs.
 
 ## Limitations
 
-- You must create a new retention label to trigger a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
+- You must create a new retention label to run a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
 - The account that creates the Power Automate flow must be the same account that creates the retention label.
 
