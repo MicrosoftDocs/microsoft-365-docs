@@ -81,7 +81,7 @@ When the retention period expires, your configured flow runs.
 
 For more information how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
 
-## How to configure a retention label to trigger a Power Automate flow
+## How to configure a retention label to run a Power Automate flow
 
 1. In the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), create a new retention label with your preferred name and settings. For more information, see [Use file plan to create and manage retention labels](file-plan-manager.md)
 
