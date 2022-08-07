@@ -75,7 +75,7 @@ When the retention period expires, your configured flow runs.
 
 ## Dependencies
 
-- In addition to [licenses to create and apply retention labels](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management), you must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
+- You must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
 
 - The Power Automate flow must be created from scratch rather than a template, and configured to use the trigger **When the retention period expires**.
 
@@ -93,7 +93,10 @@ For more information how to use and configure the dependent automated cloud flow
         
         ![Configuring a retention label to run a Power Automate flow after the retention period expires.](../media/retention-label-flow-configuration.png)
         
-        3. From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
+    
+    3. From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
+    
+    Select the flow you want, and complete the configuration to create the retention label.
 
 A retention label can be configured for only one Power Automate flow, but the same flow can be used by more than one retention label.
 
