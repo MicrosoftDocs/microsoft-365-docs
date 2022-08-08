@@ -80,5 +80,3 @@ As a local administrator on the server, perform the following steps:
    > You can also use Server Manager or PowerShell cmdlets to install the Defender Antivirus feature.
 
 3. Reboot the system.
-
-
