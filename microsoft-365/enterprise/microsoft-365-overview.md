@@ -115,7 +115,7 @@ For an example of how a fictional but representative multinational organization 
 
 ## Additional Microsoft 365 products
 
-- [Microsoft 365 Business Premium](https://docs.microsoft.com//microsoft-365/business/)
+- [Microsoft 365 Business Premium](/microsoft-365/business/)
 
   Bring together the best-in-class productivity and collaboration capabilities with device management and security solutions to safeguard business data for small and midsize businesses.
 
