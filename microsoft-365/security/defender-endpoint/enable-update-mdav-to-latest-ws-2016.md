@@ -21,20 +21,20 @@ ms.technology: mde
 
 # Enable and update Defender Antivirus to the latest version on Windows Server
 
-If you wish to use Defender Antivirus on your Windows Server, and it had been previously disabled or uninstalled, you may need to take additional steps to re-enable it and ensure it is fully updated.
+If you wish to use Defender Antivirus on your Windows Server, and it had been previously disabled or uninstalled, you may need to take further steps to re-enable it and ensure it's fully updated.
 
 To enable and update Defender Antivirus on Windows Server, perform the following steps:
 
 1. Install the latest Servicing Stack Update (SSU).
 2. Install the latest cumulative update (LCU).
-3. Reinstall Defender Antivirus or re-enable it. For more information on how to reinstall or re-enable MDAV on Windows Server, see [Re-enable Defender Antivirus on Windows Server if it was disabled](#re-enable-defender-antivirus-on-windows-server-if-it-was-disabled) and [Re-enable Microsoft Defender Antivirus on Windows Server if it was uninstalled](#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
+3. Reinstall Defender Antivirus or re-enable it. For more information on how to reinstall or re-enable Defender Antivirus on Windows Server, see [Re-enable Defender Antivirus on Windows Server if it was disabled](#re-enable-defender-antivirus-on-windows-server-if-it-was-disabled) and [Re-enable Microsoft Defender Antivirus on Windows Server if it was uninstalled](#re-enable-defender-antivirus-on-windows-server-if-it-was-uninstalled).
 4. Reboot the system.
 5. Install the latest version of the platform update.
 
    > [!NOTE]
    > Re-enabling Defender Antivirus doesn't automatically install the platform update. You can download and install the latest platform version using Windows update. Alternatively, you can download the update package from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from the [Antimalware and cyber security portal](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
    >  
-   > If you are preparing to install the modern, unified solution on Windows Server 2016, you can leverage the [Installer help script](https://github.com/microsoft/mdefordownlevelserver/blob/main/Install.ps1) to automate the platform update and the subsequent installation and onboarding. It can also assist in re-enabling Defender Antivirus.
+   > If you're preparing to install the modern, unified solution on Windows Server 2016, you can leverage the [Installer help script](https://github.com/microsoft/mdefordownlevelserver/blob/main/Install.ps1) to automate the platform update and the subsequent installation and onboarding. This script can also assist in re-enabling Defender Antivirus.
 
 ## Re-enable Defender Antivirus on Windows Server if it was disabled
 
@@ -77,10 +77,8 @@ As a local administrator on the server, perform the following steps:
    ```
 
    > [!NOTE]
-   > You can also use Server Manager or PowerShell cmdlets to install the feature.
+   > You can also use Server Manager or PowerShell cmdlets to install the Defender Antivirus feature.
 
 3. Reboot the system.
-
-
 
 
