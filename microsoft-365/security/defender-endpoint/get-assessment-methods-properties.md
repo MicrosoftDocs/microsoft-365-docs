@@ -243,5 +243,5 @@ GeneratedTime|String|The time that the export was generated.
 
 Other related
 
-- [Risk-based Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
