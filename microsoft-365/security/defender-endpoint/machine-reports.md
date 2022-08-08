@@ -11,6 +11,7 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
+ms.date: 08/08/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -164,7 +165,10 @@ Within the flyout: clicking on the name of the device will redirect you to the "
 
 You can use the **Export** button within the _Microsoft Defender Antivirus details_ flyout to export a report to an Excel spreadsheet. Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
 
-For additional information on exporting using API, see [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md), and  [device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
+For additional information on exporting using API, see the following articles:
+
+- [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
+- [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
 
 #### Microsoft Defender Antivirus version and update cards functionality
 
