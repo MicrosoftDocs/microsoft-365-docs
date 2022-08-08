@@ -57,12 +57,12 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 
 - **View data**
   - **Security operations** - View all security operations data in the portal
-  - **Threat and vulnerability management** - View threat and vulnerability management data in the portal
+  - **Defender Vulnerability Management** - View Defender Vulnerability Management data in the portal
 
 - **Active remediation actions**
   - **Security operations** - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators
-  - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
-  - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
+  - **Defender Vulnerability Management - Exception handling** - Create new exceptions and manage active exceptions
+  - **Defender Vulnerability Management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
 
 - **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files
 
