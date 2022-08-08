@@ -59,7 +59,7 @@
                   href: document-understanding-overview.md
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
-                - name: Train a model
+                - name: Train the model
                   items:
                     - name: Create a classifier
                       href: create-a-classifier.md
@@ -135,8 +135,6 @@
         - name: Solutions
           items:
             - name: Manage contracts in Microsoft 365
-              items:
-            - name: Overview
               href: solution-manage-contracts-in-microsoft-365.md 
             - name: Step 1. Use SharePoint Syntex
               href: solution-manage-contracts-step1.md
