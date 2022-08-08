@@ -184,9 +184,7 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Network assessments|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Network discovery|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Reports: Device Control, Firewall|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Reports: Device health|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg) Not supported|![No](images/svg/check-no.svg) Not supported|  
