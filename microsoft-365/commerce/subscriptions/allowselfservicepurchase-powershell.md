@@ -121,9 +121,9 @@ The following table describes the settings for the **Value** parameter.
 
 | **Setting** | **Impact** |
 |---|---|
-| **Enabled** | Users can make self-service purchases and acquire trials for the product. |
-| **OnlyTrialsWithoutPaymentMethod** | Users cannot make self-service purchases but can acquire trials for the product. They can't purchase the full version after the trial expires. |
-| **Disabled** | Users can't make self-service purchases or acquire trials for the product. |
+| Enabled | Users can make self-service purchases and acquire trials for the product. |
+| OnlyTrialsWithoutPaymentMethod | Users cannot make self-service purchases but can acquire trials for the product. They can't purchase the full version after the trial expires. |
+| Disabled | Users can't make self-service purchases or acquire trials for the product. |
 
 To get the policy setting for a specific product, run the following command:
 
