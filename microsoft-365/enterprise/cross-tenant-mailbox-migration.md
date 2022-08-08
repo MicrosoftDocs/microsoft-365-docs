@@ -654,15 +654,24 @@ This can be done before the migration is complete, but you should not assign a l
       | Exchange Online Plan 1                           |
       | Exchange Online POP                              |
       | Exchange Online Protection                       |
+      | Graph Connectors Search with Index                |
       | Information Barriers                             |
       | Information Protection for Office 365 - Premium  |
       | Information Protection for Office 365 - Standard |
       | Insights by MyAnalytics                          |
+      | Microsoft Information Governance                 |
       | Microsoft Purview Audit (Premium)                  |
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
-      | Microsoft MyAnalytics (Full)                     |
+      | Microsoft Data Investigations                    |
+      | Microsoft MyAnalytics (Full)       
+      | Microsoft Communications Compliance               |
+      | Microsoft Communications DLP                     |
+      | Microsoft Customer Key                           |
+      | Microsoft 365 Advanced Auditing                  |
+      | Microsoft Records Management                     |
       | Office 365 eDiscovery (Premium)                   |
+      | Office 365 Advanced eDiscovery                   |
       | Microsoft Defender for Office 365 (Plan 1)       |
       | Microsoft Defender for Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |
