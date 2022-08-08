@@ -35,31 +35,31 @@ Use your [corporate communications strategy](flw-corp-comms.md) to share these v
 
 [End user training for posts and messages in Teams](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885) <br>
 [View the Tags in Microsoft Teams video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202727)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202727>]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2202727]
 
 ## Walkie Talkie
 
 [End user training for Walkie Talkie](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) <br>
 [View the Walkie Talkie video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202710)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202710>]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2202710]
 
 ## Approvals
 
 [End user training for Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) <br>
 [View the Approvals video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202800)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202800>]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2202800]
 
 ## Tasks
 
 [End user training for Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) <br>
 [View the Tasks video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202616)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202616>]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2202616]
 
 ## Updates
 
 [End user training for Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) <br>
 [View the Updates video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202831)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202831>]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2202831]
 
 ## Shifts
 
