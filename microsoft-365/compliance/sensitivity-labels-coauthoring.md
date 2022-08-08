@@ -167,28 +167,28 @@ Use the [Set-PolicyConfig](/powershell/module/exchange/set-policyconfig) cmdlet 
 
 2. Run the followwing script
     
-```Powershell
-[CmdletBinding(SupportsShouldProcess = $True)]
-Param(
-    [Parameter(Mandatory=$true)]
-    [switch] $EnableLabelCoauth,
-)
-$CurrentPolicyConfig = Get-PolicyConfig
-if ($EnableLabelCoauth -ne $CurrentPolicyConfig.EnableLabelCoauth)
-{
-    if ($CurrentPolicyConfig.EnableLabelCoauth)
+    ```Powershell
+    [CmdletBinding(SupportsShouldProcess = $True)]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [switch] $EnableLabelCoauth,
+    )
+    $CurrentPolicyConfig = Get-PolicyConfig
+    if ($EnableLabelCoauth -ne $CurrentPolicyConfig.EnableLabelCoauth)
     {
-        if ($PSCmdlet.ShouldProcess("Are you sure you want to turn off co-authoring for your tenant, and understand that you might lose labeling information?"))
+        if ($CurrentPolicyConfig.EnableLabelCoauth)
         {
-            Set-PolicyConfig -EnableLabelCoauth:$false
+            if ($PSCmdlet.ShouldProcess("Are you sure you want to turn off co-authoring for your tenant, and understand that you might lose labeling information?"))
+            {
+                Set-PolicyConfig -EnableLabelCoauth:$false
+            }
+        }
+        else
+        {
+            Set-PolicyConfig -EnableLabelCoauth:$true -EnableSpoAipMigration:$true 
         }
     }
-    else
-    {
-        Set-PolicyConfig -EnableLabelCoauth:$true -EnableSpoAipMigration:$true 
-    }
-}
-```
+    ```
 
 
 
