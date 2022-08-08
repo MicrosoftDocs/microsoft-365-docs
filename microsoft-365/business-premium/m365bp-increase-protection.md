@@ -206,10 +206,7 @@ If your users are allowed to share their calendars, see [these instructions](htt
 
 Proceed to:
 
-[Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
-
-[Protect all email](m365bp-protect-email-overview.md)
-
-[Collaborate and share securely](m365bp-collaborate-share-securely.md)
-
-[Set up and secure managed devices](m365bp-protect-devices.md)
+- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
+- [Protect all email](m365bp-protect-email-overview.md)
+- [Collaborate and share securely](m365bp-collaborate-share-securely.md)
+- [Set up and secure managed devices](m365bp-protect-devices.md)
