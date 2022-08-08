@@ -165,7 +165,7 @@ Use the [Set-PolicyConfig](/powershell/module/exchange/set-policyconfig) cmdlet 
 
 1. In a PowerShell session, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Run the followwing script
+2. Run the following set of commands:
     
     ```PowerShell
     [CmdletBinding(SupportsShouldProcess = $True)]
