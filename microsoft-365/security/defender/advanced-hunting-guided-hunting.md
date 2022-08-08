@@ -60,11 +60,13 @@ You can choose from:
 
 To add a condition to your query, select **Select a filter**. Explore the different filter sections to find what is available to you.
  
-[IMAGE: select a filter]
+![Screenshot showing different filters you can use](media/guided-hunting/create-conditions-filters.png)
 
 Type the section's titles to find the filter or use the search box at the top of the list. _* Info_ sections contain filters that provide information about the different components you can look at. _* Events_ sections contain filters that allow you to look for any system or network event. 
 
 You can also create AND, OR conditions. Select **AND** to include results that  
+
+![Screenshot showing different conditions you can use](media/guided-hunting/create-conditions-and-or.png)
 
 ## Try some queries
 
