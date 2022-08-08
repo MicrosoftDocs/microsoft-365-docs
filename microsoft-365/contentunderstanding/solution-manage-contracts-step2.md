@@ -31,7 +31,7 @@ When your organization sets up a contracts management solution, you need a centr
 
 ## Attach your SharePoint document library to the Contracts tab
 
-After you create a **Contracts** tab in your Contracts Management channel, you need to [attach your SharePoint document library to it](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). The SharePoint document library you want to attach is the one in which you applied your SharePoint Syntex document understanding model to in the previous section.
+After you create a **Contracts** tab in your Contracts Management channel, you need to [attach your SharePoint document library to it](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). The SharePoint document library you want to attach is the one in which you applied your **Classify and extract by text pattern** model to in the previous section.
 
 After you attach the SharePoint document library, you'll be able to view any classified contracts through a default list view.
 
