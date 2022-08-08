@@ -117,5 +117,5 @@ Here is an example of the response.
 
 ## See also
 
-- [Risk-based vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender Vulnerability Managementt](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
