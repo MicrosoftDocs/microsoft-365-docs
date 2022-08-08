@@ -60,44 +60,46 @@ You can choose from:
 
 To add a condition to your query, select **Select a filter**. Explore the different filter sections to find what is available to you.
  
-![Screenshot showing different filters you can use](media/guided-hunting/create-conditions-filters.png)
+![Screenshot showing different filters you can use](../../media/guided-hunting/create-conditions-filters.png)
 
 Type the section's titles to find the filter or use the search box at the top of the list. _* Info_ sections contain filters that provide information about the different components you can look at. _* Events_ sections contain filters that allow you to look for any system or network event. 
 
 You can also create AND, OR conditions. Select **AND** to include results that  
 
-![Screenshot showing different conditions you can use](media/guided-hunting/create-conditions-and-or.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/create-conditions-and-or.png)
 
 ## Try some queries
 
 ### Hunt for successful connections to specific IP
-to hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
-[IMAGE]
+To hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
+
+![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-1.png)
+
 To look for events involving this IP address where this IP is the destination of the communication, select DestinationIPAddress under the IP Address Events section. Then select the **equals** operator and type the IP and press **Enter**:
 
-[IMAGE]
+![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-2.png)
 
 Then, to add a second condition which searches for successful network communication events, search for the filter of a specific event type:
 
-[IMAGE]
+![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-3.png)
 
 **Event** filter is filtering for the different event types logged. It is equivalent to the **ActionType** column which exists in most of the tables in advanced hunting. Select it to select one or more event types to filter for. To look for successful network communication events, expand the **DeviceNetworkEvents** section and then choose **ConnectionSuccess**:
 
-[IMAGE]
+![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-4.png)
 
 Finally, select **Run query** to hunt for all successful network communications to the 52.168.117.170 IP address:
 
-[IMAGE]
+![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-5.png)
 
 ### Hunt for high confidence phish or spam emails delivered to inbox
 
 tT look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select ConfidenceLevel under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
 
-[IMAGE]
+![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-1.png)
 
 Then, add another condition this time specifying the folder or **DeliveryLocation, Inbox/folder**. 
 
-[IMAGE]
+![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-2.png)
 
 ## Load sample queries
 
@@ -105,6 +107,6 @@ Another way to get familiar with guided hunting is to load sample queries pre-cr
 
 In the **Getting started** section of the hunting page, we have provided three guided query examples that you can load. The query examples contain some of the most common filters and inputs you would typically need in your hunting. Loading any of the three sample queries opens a guided tour of how you would construct the entry using guided mode.
 
-[IMAGE]
+![Screenshot showing different conditions you can use](../../media/guided-hunting/load-sample-queries.png)
 
 ## See also
