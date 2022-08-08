@@ -166,6 +166,9 @@ For example, you add an allow entry for the following domain pair:
 
 Only messages from that domain _and_ sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
 
+> [!NOTE]
+> Wildcard characters cannot be used for Sending infrastructure.
+
 ## Create blocked spoofed sender entries
 
 ### Use Microsoft 365 Defender
