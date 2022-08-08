@@ -42,7 +42,7 @@ For example, a flow can move the item, relabel it, and then send an email notifi
 
 The actions also allow integration with other apps and services. For example, you have another solution that starts your own customized disposition review process when an email notification is received, or your flow adds a new entry into a table and this change automatically starts an existing records management procedure.
 
-It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
+It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Microsoft Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
 
 - [Overview of using retention labels with a Power Automate flow](#overview-of-using-retention-labels-with-a-power-automate-flow)
 - [Limitations](#limitations-for-this-scenario)
@@ -78,6 +78,8 @@ When the retention period expires, your configured flow runs.
 - If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
 
 ## Power Automate dependency
+
+Power Automate is a workflow service that automates actions across applications and services. Specific to running a a Power Automate flow at the end of the retention period:
 
 - You must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
 
