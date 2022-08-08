@@ -182,6 +182,15 @@ To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then t
 
 After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
+## Check the health of a connection
+
+You can view information about your connection, such as health status and sync intervals, in the Microsoft 365 admin center.
+
+1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
+2. Select **Manage Shifts connectors**, and then choose **Manage**. Keep in mind that this option is available only if you've already set up a connection.
+
+    Here, you'll see a list of all the connections you've set up by using the wizard or PowerShell, along with information about each one.
+
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
