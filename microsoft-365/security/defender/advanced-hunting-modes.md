@@ -39,7 +39,7 @@ The main difference between the two modes is that the advanced mode requires the
 
 When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas. Select **Try out guided hunting** when it appears once you open the **advanced hunting** page from the left-hand navigation pane in Microsoft 365 Defender.
 
-[IMAGE OF TRY OUT GUIDED 1-guided-hunting-banner]
+:::image type="content" source="media/guided-hunting/1-guided-hunting-banner.png" alt-text="banner inviting user to take the tour" lightbox="media/guided-hunting/1-guided-hunting-banner.png":::
 
 This takes you through the tour, which suggests some queries to get you started, like how to get a list of high-confidence phishing emails sent to your organization, a list of activities performed by a file you specify, or a list of alerts where a certain user is involved. These sample queries can be found in the **Getting started** section. Simply select **Load example** to edit the query, and run it by selecting **Run query**.
 
