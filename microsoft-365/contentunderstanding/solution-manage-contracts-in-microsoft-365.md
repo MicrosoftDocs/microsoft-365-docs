@@ -14,7 +14,7 @@ ms.collection:
 search.appverid: 
 ms.localizationpriority:  medium
 ROBOTS: 
-description: Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, SharePoint Lists, Microsoft Teams, and Power Automate.
+description: Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, SharePoint lists, Microsoft Teams, and Power Automate.
 ---
 
 # Manage contracts using a Microsoft 365 solution
@@ -57,7 +57,7 @@ This contract management solution guidance includes four components of Microsoft
 
   ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
+1. Documents are uploaded to a SharePoint document library. A SharePoint Syntex **Classify and extract by text pattern** model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
 
 2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the *Client*, *Contractor*, and *Fee amount*.
 
@@ -87,7 +87,7 @@ This solution relies on the following functionality, all available as part of a 
 
 New to SharePoint Syntex? Learn how to use SharePoint Syntex to manage content using AI.
 
-The [Get started with SharePoint Syntex](/learn/paths/syntex-get-started) learning path will teach how you can use document understanding and form processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
+The [Get started with SharePoint Syntex](/learn/paths/syntex-get-started) learning path will teach how you can use models to classify documents, extract text, and label your documents for quick and easy knowledge management.
 
 ## Create the solution
 
