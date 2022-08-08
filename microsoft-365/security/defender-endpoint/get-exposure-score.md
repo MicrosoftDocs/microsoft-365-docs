@@ -92,4 +92,4 @@ Here is an example of the response.
 ## See also
 
 - [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability exposure score](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Defender Vulnerability Management exposure score](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
