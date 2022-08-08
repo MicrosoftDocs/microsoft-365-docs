@@ -31,8 +31,6 @@ ms.technology: mde
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> Information about the features that are _commercially released_ follows the prerelease information in the section titled [Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint](#publicly-released-device-health-and-compliance-report-in-microsoft-defender-for-endpoint).
 
 The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
 
@@ -40,13 +38,12 @@ The dashboard is structured into two sections:
 
 ![Image of the device report.](images/device-reports.png)
 
-****
 
 |Section|Description|
 |---|---|
 |1|Device trends|
 |2|Device summary (current day)|
-|||
+
 
 ### Device trends
 
