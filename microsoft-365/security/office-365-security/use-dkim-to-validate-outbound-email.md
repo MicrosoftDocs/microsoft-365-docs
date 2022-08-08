@@ -231,7 +231,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 #### To enable DKIM signing for your custom domain in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **DKIM** in the **Rules** section. To go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Email Authentication Settings** in the **Rules** section \>**DKIM**. To go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
 
 2. On the **DKIM** page, select the domain by clicking on the name.
 
