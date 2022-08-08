@@ -117,7 +117,7 @@ For deploying AV and ASR policies through Microsoft System Center Configuration 
 
 - Enable Endpoint Protection and configure custom client settings.
 - Install the Endpoint Protection client from a command prompt.
-- Verify the Endpoint Protection client installation
+- Verify the Endpoint Protection client installation.
 
 ##### Enable Endpoint Protection and configure custom client settings
 Follow the steps to enable endpoint protection and configuration of custom client settings:
