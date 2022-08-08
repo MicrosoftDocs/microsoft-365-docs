@@ -34,6 +34,7 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
+### [Migrate Defender for Endpoint servers to Defender for Cloud](migrating-mde-server-to-cloud.md)
 ### [Move to Defender for Endpoint](switch-to-mde-overview.md)
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
@@ -512,6 +513,7 @@
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
 ####### [Export secure configuration assessment](get-assessment-secure-config.md)
 ####### [Export software inventory assessment](get-assessment-software-inventory.md)
+####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
