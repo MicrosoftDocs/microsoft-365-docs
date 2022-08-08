@@ -79,9 +79,9 @@ When the retention period expires, your configured flow runs.
 
 ## Power Automate dependency
 
-Power Automate is a workflow service that automates actions across applications and services. Specific to running a a Power Automate flow at the end of the retention period:
+Power Automate is a workflow service that automates actions across applications and services. Specific to running a Power Automate flow at the end of the retention period:
 
-- You must have a Power Automate per user plan that includes premium connectors. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
+- You must have a Power Automate per user plan that includes premium connectors, separate from your Microsoft 365 compliance plan. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
 
 - The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When the retention period expires**.
 
