@@ -132,9 +132,9 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 
     |UKG Dimensions Instance ID|UKG Dimensions Instance Name|Team ID|Team Name|Time zone|
     |---------|---------|---------|---------|---------|
-    |2111|Contoso US Team|3a4d78a-2261|US Team|America/Los_Angeles|
-    |3212|Contoso UK Team|2d1f6c2e-5272|UK Team|Europe/London|
-    |4865||bfa6o89e-1328||America/Toronto|
+    |4201|CO/France|ee0bbc99-7120||Australia/Sydney|
+    |4203|CO/US|90db4db7-be44|Tailwind Traders US Team|America/New_York|
+    |4251||c88b4ead-c965||Europe/London|
 
 1. When you've created your mapping file, select **Browse** to upload it. The wizard validates your file. If it finds errors, you'll see a list of the errors, and a message requesting that you correct them. Otherwise, you'll see a message to continue to the next step.  
 1. Select **Next**.
