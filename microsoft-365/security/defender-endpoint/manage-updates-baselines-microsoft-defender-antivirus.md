@@ -101,12 +101,6 @@ Security intelligence update version: x.xxx.xx.x<br/>
 
 ### What's new
 
-- Defender performance improvements during file copy operations
-- Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
-- Added fix for Defender WINEVT channels across update/restarts. (See [Windows Event Log](/windows/win32/api/_wes/) for more details about WINEVT.)
-- Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
-- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](troubleshoot-microsoft-defender-antivirus.md) 
-- Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
 - Performance improvement for [hybrid sleep](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) delay when Microsoft Defender Antivirus is active 
 - Fixed client detection behavior related to custom [certificate blocking indicators of compromise](indicator-certificates.md) 
 - Performance improvement for [AntiMalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) caching 
