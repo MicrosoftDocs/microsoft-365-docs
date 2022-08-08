@@ -80,7 +80,9 @@ Provides a wealth of security implementation and design information with the goa
 - **SOC Reports** - SOC 1, 2, and 3 reports designed to build trust and confidence in Microsoft Services.
 - **Tenant Specific** – These documents are restricted by tenants.
 
-Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the following page.  
+Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the download page.  
+
+:::image type="content" source="../media/stp-series.png" alt-text="Document series are marked and can be viewed on the download page.":::
 
 Filter by date and cloud service - When viewing the available documents, you can filter the results by date range by selecting **Dates** and then selecting the range you want to use.
 
@@ -100,6 +102,8 @@ This feature lets you save (or *pin*) documents so that you can quickly access t
 ### All Documents
 
 This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
+
+:::image type="content" source="../media/stp-filter-by-service.png" alt-text="Filter available documents by cloud service.":::
 
 ### Search
 
