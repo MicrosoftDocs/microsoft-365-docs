@@ -29,22 +29,36 @@ appliesto:
 
 Now that your organization has begun using Shifts to manage schedules, you'll need to make sure that your frontline workers understand how to track their time and attendance.
 
-## vid
+Leverage your [corporate communications strategy](flw-corp-comms.md) to share Shifts training content with your team and make sure they have access to the resources they need:
 
-Tags with Shifts
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202712>]
+1. Share the [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your team to help them understand the basics.
+2. Share [Videos for managers](#shifts-videos-for-managers) with your frontline managers to help them set up and manage schedules for their teams.
+3. Share [Videos for users](#shifts-videos-for-users) with all of your frontline staff to help them perform regular tasks such as clocking in and swapping shifts.
 
-Clocking in with Shifts
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202613>]
+## Shifts videos for managers
 
-Create a schedule with Shifts
+Create a schedule with Shifts <br>
+[View Create a schedule with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202612)
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202612>]
 
-Re-use a weekly schedule from Excel with Shifts
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202611>]
-
-Copy a schedule with Shifts
+Copy a schedule with Shifts <br>
+[View Copy a schedule with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202298)
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202298>]
 
-Swap Shifts
+Re-use a weekly schedule from Excel with Shifts <br>
+[View Re-use a weekly schedule from Excel with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202611)
+> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202611>]
+
+## Shifts videos for users
+
+Clocking in with Shifts <br>
+[View Clocking in with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202613)
+> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202613>]
+
+Swap Shifts <br>
+[View Swap Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202711)
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202711>]
+
+Tags with Shifts <br>
+[View Tags with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202712)
+> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202712>]
