@@ -27,7 +27,7 @@ additionalContent:
           summary: Learn about Scheduler for Microsoft 365 and its features, who and how it will benefit.
           url: scheduler-overview.md
         # Card
-        - title: Trust and privacy 
+        - title: Trust and privacy
           summary: Learn about how Scheduler for Microsoft 365 makes sure your Trust and Privacy is protected.
           url: scheduler-trust-privacy.md
         # Card
@@ -39,7 +39,15 @@ additionalContent:
           summary: Learn how to use Scheduler for Microsoft 365.
           url: scheduler-using.md
         # Card
-        - title: FAQ's for Scheduler
-          summary: Learn the frequently asked questions on Scheduler for Microsoft 365 and answers to them.
+        - title: Schedule dynamic recurring meetings
+          summary: Learn more about scheduling dynamic recurring meetings.
+          url: scheduler-recurring-meetings.md
+        # Card
+        - title: Preferences
+          summary: Learn how to adjust scheduling preferences.
+          url: scheduler-preferences.md
+        # Card
+        - title: Scheduler FAQ
+          summary: Frequently asked questions and answers in Scheduler for Microsoft 365.
           url: scheduler-faqs.md
       

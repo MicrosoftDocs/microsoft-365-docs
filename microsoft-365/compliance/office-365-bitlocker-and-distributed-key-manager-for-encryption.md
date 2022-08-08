@@ -1,5 +1,5 @@
 ---
-title: "BitLocker for Encryption"
+title: "BitLocker for encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 search.appverid:
 - MET150
 ms.collection:

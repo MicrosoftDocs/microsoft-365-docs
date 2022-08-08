@@ -4,11 +4,11 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-modern-desktop
 - Strat_O365_Enterprise

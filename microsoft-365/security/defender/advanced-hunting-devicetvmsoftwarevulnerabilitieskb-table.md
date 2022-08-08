@@ -12,12 +12,10 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
 ---
@@ -39,14 +37,14 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `CveId` | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system |
-| `CvssScore` | string | Severity score assigned to the security vulnerability under th Common Vulnerability Scoring System (CVSS) |
-| `IsExploitAvailable` | boolean | Indicates whether exploit code for the vulnerability is publicly available |
-| `VulnerabilitySeverityLevel` | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape |
-| `LastModifiedTime` | datetime | Date and time the item or related metadata was last modified |
-| `PublishedDate` | datetime | Date vulnerability was disclosed to public |
-| `VulnerabilityDescription` | string | Description of vulnerability and associated risks |
-| `AffectedSoftware` | string | List of all software products affected by the vulnerability |
+| `CveId` | `string` | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system |
+| `CvssScore` | `string` | Severity score assigned to the security vulnerability under th Common Vulnerability Scoring System (CVSS) |
+| `IsExploitAvailable` | `boolean` | Indicates whether exploit code for the vulnerability is publicly available |
+| `VulnerabilitySeverityLevel` | `string` | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape |
+| `LastModifiedTime` | `datetime` | Date and time the item or related metadata was last modified |
+| `PublishedDate` | `datetime` | Date vulnerability was disclosed to public |
+| `VulnerabilityDescription` | `string` | Description of vulnerability and associated risks |
+| `AffectedSoftware` | `string` | List of all software products affected by the vulnerability |
 
 ## Related topics
 

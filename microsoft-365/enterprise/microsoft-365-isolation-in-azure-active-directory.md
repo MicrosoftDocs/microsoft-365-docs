@@ -2,11 +2,11 @@
 title: "Microsoft 365 Isolation and Access Control in Azure Active Directory"
 ms.author: robmazz
 author: robmazz
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:

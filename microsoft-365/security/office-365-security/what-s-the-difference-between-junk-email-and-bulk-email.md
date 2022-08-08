@@ -1,5 +1,5 @@
 ---
-title: What&apos;s the difference between junk email and bulk email?
+title: What's the difference between junk email and bulk email?
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
@@ -23,8 +23,6 @@ ms.prod: m365-security
 ---
 
 # What's the difference between junk email and bulk email in EOP?
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

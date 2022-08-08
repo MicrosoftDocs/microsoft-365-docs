@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
   - M365-security-compliance
@@ -20,8 +20,6 @@ ms.prod: m365-security
 ---
 
 # Tune anti-phishing protection
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

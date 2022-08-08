@@ -2,8 +2,6 @@
 title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +10,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -31,13 +29,10 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
->
-
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
 
 You can use the same threat hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 
@@ -45,12 +40,12 @@ This capability is similar to [advanced hunting in Microsoft Defender for Endpoi
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
 To use advanced hunting, [turn on Microsoft 365 Defender](m365d-enable.md).
 
-For more information on advanced hunting in Microsoft Cloud App Security data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
+For more information on advanced hunting in Microsoft Defender for Cloud Apps data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
 
 ## Get started with advanced hunting
 

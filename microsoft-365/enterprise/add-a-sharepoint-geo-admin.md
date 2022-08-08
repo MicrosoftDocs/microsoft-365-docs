@@ -8,7 +8,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Need to configure separate administrators for each geo location? Learn how to add or remove a geo administrator in Microsoft 365 Multi-Geo.

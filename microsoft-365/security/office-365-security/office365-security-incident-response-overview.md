@@ -12,7 +12,7 @@ ms.collection:
   - o365_security_incident_response
   - M365-security-compliance
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 description: This solution tells you what the most common cybersecurity attacks might look like in Microsoft 365 and how to respond to them
@@ -23,8 +23,6 @@ ms.prod: m365-security
 ---
 
 # Security Incident Response
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

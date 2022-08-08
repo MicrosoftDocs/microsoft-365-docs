@@ -4,13 +4,11 @@
   items: 
     - name: Get started
       items: 
+        - name: Microsoft 365 Zero Trust deployment plan
+          href: microsoft-365-zero-trust.md
         - name: Top tasks to support working from home
-          href: top-security-tasks-for-remote-work.md
-        - name: Microsoft 365 Security for BDMs
-          href: Microsoft-365-security-for-bdm.md
-        - name: Security recommendations for priority accounts
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
-    - name: Identity and device access configurations
+          href: top-security-tasks-for-remote-work.md        
+    - name: Zero Trust identity and device access configurations
       items: 
         - name: Overview
           href: ./office-365-security/microsoft-365-policies-configurations.md
@@ -22,23 +20,31 @@
           href: ./office-365-security/identity-access-policies-guest-access.md
         - name: Recommended Teams access policies
           href: ./office-365-security/teams-access-policies.md
-        - name: Recommended Exchange Online access policies
+        - name: Recommended Exchange access policies
           href: ./office-365-security/secure-email-recommended-policies.md
-        - name: Recommended SharePoint Online access policies
+        - name: Recommended SharePoint access policies
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: Recommended MCAS policies for SaaS apps
+        - name: Recommended Defender for Cloud Apps policies for SaaS apps
           href: ./office-365-security/mcas-saas-access-policies.md
-    - name: Microsoft 365 Defender
-      href: ./defender/index.yml
-    - name: Microsoft Defender for Office 365
-      href: ./office-365-security/index.yml
-    - name: Microsoft Defender for Endpoint
-      href: ./defender-endpoint/index.yml
-    - name: Microsoft Defender for Identity
-      href: /defender-for-identity
-    - name: Microsoft 365 for Enterprise
+        - name: Continuous access evaluation
+          href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
+    - name: Microsoft 365 Defender docs
+      items: 
+       - name: Microsoft 365 Defender
+         href: ./defender/index.yml
+       - name: Defender for Office 365
+         href: ./office-365-security/index.yml
+       - name: Defender for Endpoint
+         href: ./defender-endpoint/index.yml
+       - name: Defender for Identity
+         href: /defender-for-identity
+       - name: Defender for Cloud Apps
+         href: /cloud-app-security
+       - name: Defender for Business
+         href: ./defender-business/index.yml
+    - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
-    - name: Microsoft 365 for Business
-      href: ./index.yml
-    - name: Microsoft 365 Compliance
+    - name: Microsoft Purview
       href: ../compliance/index.yml
+    - name: Manage active content in Office documents
+      href: active-content-in-trusted-docs.md

@@ -7,68 +7,89 @@ author: chrfox
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.NewPolicyFromTemplate'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-mar2020
+- admindeeplinkCOMPLIANCE
 description: In this article, you'll learn about how to create DLP policies using one of the templates included in Office 365.
 ---
 
 # Create a DLP policy from a template
 
-The easiest, most common way to get started with DLP policies is to use one of the templates included in Office 365. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
+The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft Purview compliance portal. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
 
-Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. For example, there are DLP policy templates for:
+Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. See; [Policy templates](dlp-policy-reference.md#policy-templates) for a complete list. 
 
-- Gramm-Leach-Bliley Act (GLBA)
-- Payment Card Industry Data Security Standard (PCI-DSS)
-- United States Personally Identifiable Information (U.S. PII)
-- United States Health Insurance Act (HIPAA)
-
-You can fine tune a template by modifying any of the existing rules or adding new ones. For example, you can add new types of sensitive information to a rule, modify the counts in a rule to make it harder or easier to trigger, allow people to override the actions in a rule by providing a business justification, or change who notifications and incident reports are sent to. A DLP policy template is a flexible starting point for many common compliance scenarios.
+You can fine tune a template by modifying any of its existing rules or adding new ones. For example, you can add new types of sensitive information to a rule, modify the counts in a rule to make it harder or easier to trigger, allow people to override the actions in a rule by providing a business justification, or change who notifications and incident reports are sent to. A DLP policy template is a flexible starting point for many common compliance scenarios.
 
 You can also choose the Custom template, which has no default rules, and configure your DLP policy from scratch, to meet the specific compliance requirements for your organization.
 
-## Example: Identify sensitive information across all OneDrive for Business sites and restrict access for people outside your organization
+## Permissions
 
-OneDrive for Business accounts make it easy for people across your organization to collaborate and share documents. But a common concern for compliance officers is that sensitive information stored in OneDrive for Business accounts may be inadvertently shared with people outside your organization. A DLP policy can help mitigate this risk.
+Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
+  
+1. Create a group in Microsoft 365 and add compliance officers to it.
+    
+2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
 
-In this example, you'll create a DLP policy that identifies U.S. PII data, which includes Individual Taxpayer Identification Numbers (ITIN), Social Security Numbers, and U.S. passport numbers. You'll get started by using a template, and then you'll modify the template to meet your organization's compliance requirements—specifically, you'll:
+3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
+    
+4. Use the **Choose Members** section to add the Microsoft 365 group you created before to the role group.
 
-- Add a couple of types of sensitive information—U.S. bank account numbers and U.S. driver's license numbers—so that the DLP policy protects even more of your sensitive data.
+Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
-- Make the policy more sensitive, so that a single occurrence of sensitive information is enough to restrict access for external users.
+For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+  
+These permissions are required to create and apply a DLP policy not to enforce policies.
 
-- Allow users to override the actions by providing a business justification or reporting a false positive. This way, your DLP policy won't prevent people in your organization from getting their work done, provided they have a valid business reason for sharing the sensitive information.
+### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of applicable role groups. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
 
 ### Create the DLP policy from a template
 
-1. Go to <https://compliance.microsoft.com>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
-2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
+2. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 
-3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
+3. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
 
-    ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-
-4. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
-
-    In this example, you'll select **Privacy** \> **U.S. Personally Identifiable Information (PII) Data** because it already includes most of the types of sensitive information that you want to protect - you'll add a couple later.
+4. Name the policy \> **Next**.
+ 
+<!--In this example, you'll select **Privacy** \> **U.S. Personally Identifiable Information (PII) Data** because it already includes most of the types of sensitive information that you want to protect - you'll add a couple later.
 
     When you select a template, you can read the description on the right to learn what types of sensitive information the template protects.
 
-    ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
+    ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-5. Name the policy \> **Next**.
+5. To choose the locations that you want the DLP policy to protect and either accept the default scope for each location or customize the scope. See, [Locations](dlp-policy-reference.md#locations) for scoping options.
 
-6. To choose the locations that you want the DLP policy to protect, do one of the following:
+6. Choose \> **Next**.
+ 
+1. Do one of the following:
 
    - Choose **All locations in Office 365** \> **Next**.
    - Choose **Let me choose specific locations** \> **Next**. For this example, choose this.
@@ -77,17 +98,29 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
    To include only specific SharePoint sites or OneDrive for Business accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. When you apply a policy to a site, the rules configured in that policy are automatically applied to all subsites of that site.
 
-   ![Options for locations where a DLP policy can be applied.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![Options for locations where a DLP policy can be applied.](../media/all-locations.png)
 
    In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.
 
-7. Choose **Use advanced settings** \> **Next**.
+7. Choose **Review and customize default settings from the template** \> **Next**.
 
 8. A DLP policy template contains predefined rules with conditions and actions that detect and act upon specific types of sensitive information. You can edit, delete, or turn off any of the existing rules, or add new ones. When done, click **Next**.
 
     ![Rules expanded in US PII policy template.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
-    In this example, the U.S. PII Data template includes two predefined rules:
+9. Choose to detect when this content is shared inside your organization or outside your organization if you have selected any of these locations:
+    1. Exchange
+    1. SharePoint
+    1. OneDrive
+    1. Teams Chat and Channel Messages 
+
+10. Choose **Next**.
+
+11. On the **Protection actions** page if you want, you can customize the policy tip notifications and notification emails. Enable **When content matches the policy conditions, show policy tips to users and send them an email notification**, then choose **Customize the tip and email**.
+12. Choose **Next**.
+
+
+<!--    In this example, the U.S. PII Data template includes two predefined rules:
 
    - **Low volume of content detected U.S. PII** This rule looks for files containing between 1 and 10 occurrences of each of three types of sensitive information (ITIN, SSN, and U.S. passport numbers), where the files are shared with people outside the organization. If found, the rule sends an email notification to the primary site collection administrator, document owner, and person who last modified the document.
 
@@ -149,9 +182,23 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 After you create and turn on a DLP policy, it's deployed to any content sources that it includes, such as SharePoint Online sites or OneDrive for Business accounts, where the policy begins automatically enforcing its rules on that content.
 
+
+## Example: Identify sensitive information across all OneDrive for Business sites and restrict access for people outside your organization
+
+OneDrive for Business accounts make it easy for people across your organization to collaborate and share documents. But a common concern for compliance officers is that sensitive information stored in OneDrive for Business accounts may be inadvertently shared with people outside your organization. A DLP policy can help mitigate this risk.
+
+In this example, you'll create a DLP policy that identifies U.S. PII data, which includes Individual Taxpayer Identification Numbers (ITIN), Social Security Numbers, and U.S. passport numbers. You'll get started by using a template, and then you'll modify the template to meet your organization's compliance requirements—specifically, you'll:
+
+- Add a couple of types of sensitive information—U.S. bank account numbers and U.S. driver's license numbers—so that the DLP policy protects even more of your sensitive data.
+
+- Make the policy more sensitive, so that a single occurrence of sensitive information is enough to restrict access for external users.
+
+- Allow users to override the actions by providing a business justification or reporting a false positive. This way, your DLP policy won't prevent people in your organization from getting their work done, provided they have a valid business reason for sharing the sensitive information.
+
+
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 
@@ -161,7 +208,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

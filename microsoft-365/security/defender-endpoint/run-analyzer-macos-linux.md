@@ -2,8 +2,6 @@
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,24 +13,24 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
 # Run the client analyzer on macOS and Linux
 
+
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Running the analyzer through GUI scenario
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'AC086D65202D31EBCF9DC76F7CA29A5B8B355CD6F78D31BBF89289EB7AA2B67D'.
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -47,29 +45,42 @@ ms.technology: m365d
 
 ## Running the analyzer using a terminal or SSH scenario
 
-1. Open a terminal or SSH into the relevant machine.
+Open a terminal or SSH into the relevant machine and run the following commands:
 
-2. Run `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
 
-3. Run `./mde_support_tool.sh -d` to generate the result archive file.
+2. `unzip -q XMDEClientAnalyzer.zip`
+
+3. `cd XMDEClientAnalyzer`
+
+4. `chmod +x mde_support_tool.sh`
+
+3. Run as non-root use to install required pip and lxml which components: `./mde_support_tool.sh`
+
+4. To collect actual diagnostic package and generate the result archive file run again as root: `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
+> 
+> - In addition, the tool currently requires Python version 3 or later to be installed.
 >
-> In addition, the tool currently requires Python version 3 or later to be installed.
+> - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary). <br> Note that the binary is currently unsigned. To allow the package run on MacOS, you will need to use the syntax: "spctl --add /Path/To/Application.app".
+> - The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2'
+>
+> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
+> `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Example:
 
-![Image of command line example.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+:::image type="content" source="images/4ca188f6c457e335abe3c9ad3eddda26.png" alt-text="The  command line example" lightbox="images/4ca188f6c457e335abe3c9ad3eddda26.png":::
 
 Additional syntax help:
 
 **-h** \# Help<br>
 \# Show help message
 
-**-p** \# Performance<br>
-\# Planned parameter that is not yet implemented.<br>
-\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand.
+**performance** \# Performance<br>
+\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand. Using `--length=<seconds>` to specify the duration of the benchmark.
 
 **-o** \# Output<br>
 \# Specify the destination path for the result file
@@ -114,6 +125,10 @@ Additional syntax help:
 
   Description: Additional XML file used by the analyzer when building the HTML report.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
+  Description: details on audited service and related components for [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS
+
+- perf_benchmark.tar.gz
+
+  Description: The performance test reports. You will see this only if you are using the performance parameter.

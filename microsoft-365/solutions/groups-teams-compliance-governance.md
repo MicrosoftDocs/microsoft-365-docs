@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - m365solution-collabgovernance
@@ -34,8 +34,8 @@ The following table provides a quick reference for the compliance controls avail
 ||Automatically classify sensitive content|[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)|
 ||Encrypt sensitive content|[Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)|
 |Information protection|||
-||Prevent the loss of sensitive information|[Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md)|
-||Protect sensitive information in chat.|[Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Prevent the loss of sensitive information|[Learn about Microsoft Purview Data Loss Prevention](../compliance/dlp-learn-about-dlp.md)|
+||Protect sensitive information in chat.|[Microsoft Purview Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Define your organization's sensitive information|[Custom sensitive information types](../compliance/sensitive-information-type-learn-about.md)|
 |User segmentation|||
 ||Restrict communication between user segments|[Information barriers](../compliance/information-barriers.md)|
@@ -121,7 +121,7 @@ With Microsoft 365 Multi-Geo, you can provision and store data at rest in the ge
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

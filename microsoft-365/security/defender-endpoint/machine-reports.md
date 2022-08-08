@@ -2,8 +2,6 @@
 title: Device health and compliance report in Microsoft Defender for Endpoint
 description: Use the device health and compliance report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -26,12 +24,17 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus 
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+**Platforms**
+- Windows
+- Mac OS
+- Linux
+- iOS
+- Android
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
 > Information about the features that are _commercially released_ follows the prerelease information in the section titled [Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint](#publicly-released-device-health-and-compliance-report-in-microsoft-defender-for-endpoint).
 
 ## Public Preview - Device health and antivirus compliance report in Microsoft Defender for Endpoint
@@ -39,7 +42,6 @@ ms.technology: mde
 The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
 
 > [!IMPORTANT]
->
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
@@ -142,7 +144,6 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 - Cloud protection is not enabled
 
 > [!NOTE]
->
 > Currently, "Up-to-date" reporting is only available for Windows devices.  Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 1.1.19300.2 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
 
 > [!div class="mx-imgBorder"]
@@ -301,15 +302,12 @@ The devices status report provides high-level information about the devices in y
 
 The dashboard is structured into two sections:
 
-![Image of the device report.](images/device-reports.png)
-
-****
+:::image type="content" source="images/device-reports.png" alt-text="The device report" lightbox="images/device-reports.png":::
 
 |Section|Description|
 |---|---|
 |1|Device trends|
 |2|Device summary (current day)|
-|||
 
 ### Device trends
 
@@ -329,7 +327,6 @@ Unlike the device trends graph, the device summary graph shows device informatio
 
 > [!NOTE]
 > The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is March 27, 2019, the data on the summary section will reflect numbers starting from September 28, 2018 to March 27, 2019.
->
 > The filter applied on the trends section is not applied on the summary section.
 
 The device trends section allows you to drill down to the devices list with the corresponding filter applied to it. For example, clicking on the Inactive bar in the Sensor health state card will bring you the devices list with results showing only devices whose sensor status is inactive.
@@ -358,6 +355,18 @@ For example, to show data about Windows 10 devices with Active sensor health sta
 2. Then select **OS platforms > Windows 10**.
 3. Select **Apply**.
 
-### Related topic
+### Related articles
 
 - [Threat protection report](threat-protection-reports.md)
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+

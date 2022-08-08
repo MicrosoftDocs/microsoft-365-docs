@@ -3,7 +3,7 @@ title: Scenarios and use cases for Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: laurieellis
+ms.reviewer: lauris
 ms.date: 
 audience: admin
 ms.topic: article
@@ -13,8 +13,8 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
-localization_priority: Normal
-description: Find scenarios about how to use SharePoint Syntex in your organization.
+ms.localizationpriority:  medium
+description: Find business scenarios about how to use SharePoint Syntex in your organization.
 ---
 
 # Scenarios and use cases for Microsoft SharePoint Syntex
@@ -134,4 +134,4 @@ When you automate this scenario, you can ensure that:
 
 ## See also
 
-[Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted.md)
+[Get started driving adoption of SharePoint Syntex](adoption-getstarted.md)

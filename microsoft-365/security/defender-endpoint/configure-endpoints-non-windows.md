@@ -10,10 +10,12 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
@@ -24,7 +26,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms**
@@ -58,17 +60,12 @@ You'll need to take the following steps to onboard non-Windows devices:
 
 ## Offboard non-Windows devices
 
-1. Follow the third party's documentation to disconnect the third-party solution from Microsoft Defender for Endpoint.
+For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint. In the navigation pane, select **Settings** \> **Offboard** \> **Select Operating System to start the offboarding Process**.
 
-2. Remove permissions for the third-party solution in your Azure AD tenant.
-   1. Sign in to the [Azure portal](https://portal.azure.com).
-   2. Select **Azure Active Directory > Enterprise Applications**.
-   3. Select the application you'd like to offboard.
-   4. Select the **Delete** button.
+You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://security.microsoft.com/interoperability/partners).
 
 ## Related topics
-
-- [Onboard Windows 10 devices](configure-endpoints.md)
+- [Onboard Windows devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshooting Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

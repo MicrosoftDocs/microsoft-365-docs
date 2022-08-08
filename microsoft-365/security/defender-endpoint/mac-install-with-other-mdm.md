@@ -2,20 +2,17 @@
 title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac on other management solutions.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: mavel
 author: maximvelichko
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -26,7 +23,8 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -52,10 +50,10 @@ Microsoft Defender for Endpoint on macOS does not depend on any vendor-specific 
 
 Most modern MDM solutions include these features, however, they may call them differently.
 
-You can deploy Defender without the last requirement from the preceding list, however:
+You can deploy Defender for Endpoint without the last requirement from the preceding list, however:
 
-- You will not be able to collect status in a centralized way
-- If you decide to uninstall Defender, you will need to log on to the client device locally as an administrator
+- You will not be able to collect status in a centralized way.
+- If you decide to uninstall Defender for Endpoint, you will need to log on to the client device locally as an administrator.
 
 ## Deployment
 
@@ -79,7 +77,7 @@ Your system may support an arbitrary property list in XML format. You can upload
 Alternatively, it may require you to convert the property list to a different format first.
 
 Typically, your custom profile has an ID, name, or domain attribute. You must use exactly "com.microsoft.wdav.atp" for this value.
-MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender uses this file for loading the onboarding information.
+MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender for Endpoint uses this file for loading the onboarding information.
 
 ### Kernel extension policy
 
@@ -117,7 +115,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 - Filter type: Plugin
 - Plugin bundle identifier: `com.microsoft.wdav`
 - Filter data provider bundle identifier: `com.microsoft.wdav.netext`
-- Filter data provider designated requirement: `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+- Filter data provider designated requirement: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 - Filter sockets: `true`
 
 ## Check installation status

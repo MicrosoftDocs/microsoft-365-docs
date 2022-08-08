@@ -2,12 +2,12 @@
 title: "Activate rights management in the admin center"
 ms.author: krowley
 author: kccross
-manager: laurawi
+manager: scotv
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 

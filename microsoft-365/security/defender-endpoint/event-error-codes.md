@@ -2,15 +2,13 @@
 title: Review events and errors using Event Viewer
 description: Get descriptions and further troubleshooting steps (if necessary) for all events reported by the Microsoft Defender for Endpoint service.
 keywords: troubleshoot, event viewer, log summary, failure code, failed, Microsoft Defender for Endpoint service, can't start, broken, can't start
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -27,7 +25,8 @@ ms.technology: mde
 
 **Applies to:**
 - Event Viewer
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -78,7 +77,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |26|Microsoft Defender for Endpoint service failed to set the onboarding status in the registry. Failure code: `variable`.|The device didn't onboard correctly. <p> It will report to the portal, however the service may not appear as registered in SCCM or the registry.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md).|
    |27|Microsoft Defender for Endpoint service failed to enable SENSE aware mode in Microsoft Defender Antivirus. Onboarding process failed. Failure code: `variable`.|Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Defender for Endpoint.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md). <p> Ensure real-time antimalware protection is running properly.|
    |28|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration failed. Failure code: `variable`.|An error occurred with the Windows telemetry service.|[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy). <p> Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md).|
-   |29|Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3|This event occurs when the system can&#39;t read the offboarding parameters.|Ensure the device has Internet access, then run the entire offboarding process again. Ensure the offboarding package hasn't expired.|
+   |29|Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3|This event occurs when the system can't read the offboarding parameters.|Ensure the device has Internet access, then run the entire offboarding process again. Ensure the offboarding package hasn't expired.|
    |30|Microsoft Defender for Endpoint service failed to disable SENSE aware mode in Microsoft Defender Antivirus. Failure code: `variable`.|Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Defender for Endpoint.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md). <p> Ensure real-time antimalware protection is running properly.|
    |31|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service unregistration failed. Failure code: `variable`.|An error occurred with the Windows telemetry service during onboarding. The offboarding process continues.|[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).|
    |32|Microsoft Defender for Endpoint service failed to request to stop itself after offboarding process. Failure code: %1|An error occurred during offboarding.|Reboot the device.|
@@ -103,6 +102,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |51|New cloud configuration failed to apply, version: %1. Successfully applied the last known good configuration, version %2.|Received a bad configuration file from the cloud service. Last known good configuration was applied successfully.|If this error persists, contact Support.|
    |52|New cloud configuration failed to apply, version: %1. Also failed to apply last known good configuration, version %2. Successfully applied the default configuration.|Received a bad configuration file from the cloud service. Failed to apply the last known good configuration - and the default configuration was applied.|The service will attempt to download a new configuration file within 5 minutes. If you don't see event #50 - contact Support.|
    |53|Cloud configuration loaded from persistent storage, version: %1.|The configuration was loaded from persistent storage on service startup.|Normal operating notification; no action required.|
+   |54| Global (per-pattern) state changed. State: %1, pattern: %2 | If state = 0: Cyber-data reporting rule has reached its defined capping quota and won't send more data until the capping quota expires. If state = 1: The capping quota expired and the rule will resume sending data. | Normal operating notification; no action required. |
    |55|Failed to create the Secure ETW autologger. Failure code: %1|Failed to create the secure ETW logger.|Reboot the device. If this error persists, contact Support.|
    |56|Failed to remove the Secure ETW autologger. Failure code: %1|Failed to remove the secure ETW session on offboarding.|Contact Support.|
    |57|Capturing a snapshot of the machine for troubleshooting purposes.|An investigation package, also known as forensics package, is being collected.|Normal operating notification; no action required.|

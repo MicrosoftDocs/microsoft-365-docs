@@ -17,7 +17,10 @@ search.appverid:
 - MET150
 f1.keywords: NOCSH
 ms.custom: 
-localization_priority: Priority
+- admindeeplinkMAC
+- admindeeplinkTEAMS
+- admindeeplinkSPO
+ms.localizationpriority: high
 recommendations: false
 description: "Learn about the options to limit or disable sharing in Microsoft 365."
 ---
@@ -54,15 +57,15 @@ If you want to limit sharing in a Microsoft 365 group or Microsoft Teams team, i
 If you want to prevent guest access in Teams, you can turn off guest sharing in the Teams admin center.
 
 To turn off guest sharing for Teams
-1. In the Teams admin center, expand **Org-wide settings**, and then click **Guest access**.
+1. In the Teams admin center, expand **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access** tab</a>.
 2. Turn off **Allow guest access in Teams**.
 3. Click **Save**.
 
 If you want to prevent guest access in Microsoft 365 Groups, you can turn off the groups guest access settings in the Microsoft 365 admin center.
 
 To turn off guest sharing in Microsoft 365 Groups
-1. In the Microsoft 365 admin center, click **Settings**, and then click **Org Settings**.
-2. On the **Services** tab, click **Microsoft 365 Groups**.
+1. In the Microsoft 365 admin center, click **Settings** > **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>.
+2. Click **Microsoft 365 Groups**.
 3. Clear the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes.
 4. Click **Save changes**.
 
@@ -103,12 +106,13 @@ To turn off access requests
 You can limit site sharing to specific domains by allowing or blocking domains for the site.
 
 To limit site sharing by domain
-1. In the SharePoint admin center, under **Sites**, click **Active sites**.
-2. Click the site that you want to configure.
-3. On the **Policies** tab, under **External sharing** click **Edit**.
+
+1. In the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+2. Select the site that you want to configure.
+3. On the **Policies** tab, under **External sharing** select **Edit**.
 4. Under **Advanced settings for external sharing**, select the **Limit sharing by domain**.
-5. Add the domains that you want to allow or block, and then click **Save**.
-6. Click **Save**.
+5. Add the domains that you want to allow or block, and then select **Save**.
+6. Select **Save**.
 
     ![Screenshot of allowed domains site-level setting.](../media/limit-site-sharing-by-domain.png)
 
@@ -137,18 +141,19 @@ To limit site, file, and folder sharing to owners
 If you want to prevent sharing SharePoint or OneDrive files and folders with people outside your organization, you can turn off guest sharing for the entire organization or for an individual site.
 
 To turn off SharePoint guest sharing for your organization
-1. In the SharePoint admin center, under **Policies**, click **Sharing**.
+
+1. In the SharePoint admin center, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
 2. Under **External sharing**, drag the SharePoint slider down to **Only people in your organization**.
-3. Click **Save**.
+3. Select **Save**.
 
     ![Screenshot of SharePoint organization-level sharing settings set to Anyone.](../media/sharepoint-tenant-sharing-off.png)
 
 
 To turn off guest sharing for a site
-1. In the SharePoint admin center, under **Sites**, click **Active sites**.
-2. Click the site that you want to configure.
-3. On the **Policies** tab, under **External sharing** click **Edit**.
-4. Under **External sharing**, choose **Only people in your organization**, and then click **Save**.
+1. In the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+2. Select the site that you want to configure.
+3. On the **Policies** tab, under **External sharing** select **Edit**.
+4. Under **External sharing**, choose **Only people in your organization**, and then select **Save**.
 
     ![Screenshot of SharePoint site-level sharing settings set to Only people in your organization.](../media/sharepoint-site-external-sharing-settings-off.png)
 
@@ -157,17 +162,19 @@ You can turn off guest sharing for an individual OneDrive by clicking the user i
 If you would like to allow sharing with people outside your organization but you want to make sure that everyone authenticates, you can disable *Anyone* (anonymous sharing) links for the entire organization or for an individual site.
 
 To turn off *Anyone* links at the organization level
-1. In the SharePoint admin center, under **Policies**, click **Sharing**.
+
+1. In the SharePoint admin center, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
 2. Under **External sharing**, drag the SharePoint slider down to **New and existing guests**.
-3. Click **Save**.
+3. Select **Save**.
 
     ![Screenshot of SharePoint organization-level sharing settings set to New and existing guests.](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 To turn off *Anyone* links for a site
-1. In the SharePoint admin center, under **Sites**, click **Active sites**.
-2. Click the site that you want to configure.
-3. On the **Policies** tab, under **External sharing** click **Edit**.
-4. Under **External sharing**, choose **New and existing guests**, and then click **Save**.
+
+1. In the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+2. Select the site that you want to configure.
+3. On the **Policies** tab, under **External sharing** select **Edit**.
+4. Under **External sharing**, choose **New and existing guests**, and then select **Save**.
 
     ![Screenshot of SharePoint site-level sharing settings set to New and existing settings.](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
@@ -176,13 +183,13 @@ To turn off *Anyone* links for a site
 By default, members of a site can share files and folders with other people in your organization by using a *People in your organization* link. You can disable *People in your organization* links by using PowerShell:
 
 ```powershell
-Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks Disabled
 ```
 
 For example:
 
 ```powershell
-Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
 
 ## Create sites, groups, and teams

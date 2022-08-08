@@ -4,7 +4,7 @@ description: Learn how to create and track tickets in ServiceNow from the Micros
 keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
 ms.author: dansimp
