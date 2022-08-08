@@ -132,7 +132,7 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 
     |UKG Dimensions Instance ID|UKG Dimensions Instance Name|Team ID|Team Name|Time zone|
     |---------|---------|---------|---------|---------|
-    |4201|CO/France|ee0bbc99-7120||Australia/Sydney|
+    |4201|CO/Australia|ee0bbc99-7120||Australia/Sydney|
     |4203|CO/US|90db4db7-be44|US Team|America/New_York|
     |4251||c88b4ead-c965||Europe/London|
 
