@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
