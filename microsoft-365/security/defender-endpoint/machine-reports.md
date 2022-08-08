@@ -2,6 +2,8 @@
 title: Device health and compliance report in Microsoft Defender for Endpoint
 description: Use the device health and compliance report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,20 +20,12 @@ ms.technology: mde
 
 # Device health and compliance report in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Defender Antivirus 
 
-**Platforms**
-- Windows
-- Mac OS
-- Linux
-- iOS
-- Android
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -288,21 +282,19 @@ The general definition of ‘_Up to date_’ – the platform version on the dev
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-### Related articles
+### See also
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
 - [device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
 - [Threat protection report](threat-protection-reports.md)
 
-### End of section - Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint
-
 ## Publicly released: Device health and compliance report in Microsoft Defender for Endpoint
 
-The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
+The device status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
 
 The dashboard is structured into two sections:
 
-:::image type="content" source="images/device-reports.png" alt-text="The device report" lightbox="images/device-reports.png":::
+![Image of the device report.](images/device-reports.png)
 
 |Section|Description|
 |---|---|
@@ -368,5 +360,3 @@ For example, to show data about Windows 10 devices with Active sensor health sta
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
-
