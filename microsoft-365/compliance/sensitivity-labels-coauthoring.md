@@ -167,7 +167,7 @@ Use the [Set-PolicyConfig](/powershell/module/exchange/set-policyconfig) cmdlet 
 
 2. Run the followwing script
     
-    ```Powershell
+    ```PowerShell
     [CmdletBinding(SupportsShouldProcess = $True)]
     Param(
         [Parameter(Mandatory=$true)]
