@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business Premium"
+title: "Protect against malware and other threats with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,7 +21,7 @@ search.appverid:
 description: "Get help with increasing the level of protection in Microsoft 365 Business Premium"
 ---
 
-# Increase threat protection for Microsoft 365 Business Premium
+# Protect against malware and other cyberthreats with Microsoft 365 Business Premium
 
 In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
 
