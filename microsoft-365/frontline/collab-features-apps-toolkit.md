@@ -29,23 +29,38 @@ appliesto:
 
 Now that your organization has begun using Microsoft 365 for frontline workers and Microsoft Teams, you'll need to make sure your workforce is comfortable using the apps and features available to them.
 
-## Microsoft Teams features
+Use your [corporate communications strategy](flw-corp-comms.md) to share these video resources to help your frontline team make the most out of the tools available to them.
 
-Tags in Microsoft Teams
+## Tags in Microsoft Teams
+
+[End user training for posts and messages in Teams](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885) <br>
+[View the Tags in Microsoft Teams video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202727)
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202727>]
 
-## Microsoft Teams apps
+## Walkie Talkie
 
-Walkie Talkie
+[End user training for Walkie Talkie](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) <br>
+[View the Walkie Talkie video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202710)
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202710>]
 
-Tasks
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202616>]
+## Approvals
 
-Approvals
+[End user training for Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) <br>
+[View the Approvals video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202800)
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202800>]
 
-Updates
+## Tasks
+
+[End user training for Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) <br>
+[View the Tasks video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202616)
+> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202616>]
+
+## Updates
+
+[End user training for Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) <br>
+[View the Updates video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202831)
 > [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202831>]
 
-Shifts (link to Shifts article when ready)
+## Shifts
+
+[Learn how to help your employees use Shifts](shifts-toolkit.md)
