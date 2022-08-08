@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/01/2022
+ms.date: 08/08/2022
 ms.reviewer: tewchen
 ---
 
@@ -78,7 +78,7 @@ You can use the following properties to create a removable storage group:
 |Property Name|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. All properties are case sensitive. |**PrimaryId**: The Primary ID includes `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, and `PrinterDevices`. <p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`, `Device instance path` in the Device Manager. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: Transforms `Device instance path` to Device ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07. <p>**HardwareId**: A string identified the device in the system, for example, USBSTOR\DiskGeneric_Flash_Disk___8.07, `Hardware Ids` in the Device Manager. Note: Hardware ID is not unique; different devices might share the same value.<p>**FriendlyNameId**: A string attached to the device, for example, Generic Flash Disk USB Device, `Friendly name` in the Device Manager. <p>**BusId**: For example, USB, SCSI. <p>**SerialNumberId**: You can find SerialNumberId from `Device instance path` in the Device Manager, for example, `03003324080520232521` is SerialNumberId in USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0. <p>**VID_PID**: Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device; Support wildcard, transform `Device instance path` to Vendor ID and Product ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers). <p>`0751_55E0`: match this exact VID/PID pair<p>`_55E0`: match any media with PID=55E0 <p>`0751_`: match any media with VID=0751 <p> **Note**: Look at the 'How can I find the media property in the Device Manager?' under the 'Fequently asked questions' section that follows to understand how to find the property in Device Manager.|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. All properties are case sensitive. |**PrimaryId**: The Primary ID includes `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`. <p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It is the `Device instance path` in the Device Manager. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: To transform `Device instance path` to Device ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: A string that identifies the device in the system, for example, `USBSTOR\DiskGeneric_Flash_Disk___8.07`, It is `Hardware Ids` in the Device Manager. <br>**Note**: Hardware Id is not unique; different devices might share the same value.<p>**FriendlyNameId**: It is a string attached to the device, for example, `Generic Flash Disk USB Device`. It is the `Friendly name` in the Device Manager. <p>**BusId**: For example, USB, SCSI <p>**SerialNumberId**: You can find SerialNumberId from `Device instance path` in the Device Manager, for example, `03003324080520232521` is SerialNumberId in USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID**: Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcard. To transform `Device instance path` to Vendor ID and Product ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers). For example: <br>`0751_55E0`: match this exact VID/PID pair<br>`_55E0`: match any media with PID=55E0 <br>`0751_`: match any media with VID=0751 <p> **Note**: See [How do I find the media property in the Device Manager?](#how-do-i-find-the-media-property-in-the-device-manager) under [Frequently asked questions](#frequently-asked-questions) section below to understand how to find the property in Device Manager.|
 |**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.|
 
 ### Access Control Policy
@@ -410,6 +410,8 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunt
 
 - Microsoft 365 for E5 reporting
 
+If `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**, an event will be sent to Advanced hunting or the Device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
+
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
@@ -513,9 +515,9 @@ DeviceFileEvents
 
 3. Locate the media in the Device Manager, right-click, and then select **Properties**.
 
-   ![Screenshot of USB selected in Disk drives, and Properties highlighted.](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
+   :::image type="content" alt-text="Screenshot of media in the Device Manager." source="https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png":::
 
 4. Open **Details**, and select **Properties**.
 
-   ![Screenshot of USB device properties.](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
+   :::image type="content" alt-text="Screenshot of device property in Device Manager." source="https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png":::
     

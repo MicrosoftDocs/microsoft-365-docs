@@ -83,34 +83,34 @@ You'll start receiving Endpoint Attack Notifications from Microsoft Threat Exper
 
 2. From the dashboard, select the same alert topic that you got from the email, to view the details.
 
+
+### Filter to view just the Endpoint Attack Notifications
+You can filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
+
+1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the Filter icon icon.
+2. Scroll down to the Tags field > select the **Defender Experts** check box.
+3. Select **Apply**.
+
 ## Subscribe to Microsoft Threat Experts - Experts on Demand
 
 This is available as a subscription service. If you're already a Defender for Endpoint customer, you can contact your Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand.
 
-## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization
+## Ask Defender Experts about suspicious cybersecurity activities in your organization
 
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft 365 Defender portal for their response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
 
 > [!NOTE]
 >
 > - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
-> - You need to have the **Manage security settings** permission in the Microsoft 365 Defender portal to be able to submit a "Consult a threat expert" inquiry.
+> - You need to have the **Manage security settings** permission in the Microsoft 365 Defender portal to be able to submit the **Ask Defender Experts** inquiry.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 
-2. From the upper right-hand menu, click the **?** icon. Then, select **Consult a threat expert**.
+2. From the upper right-hand menu, click the **?** icon. Then, select **Ask Defender Experts **
 
-    :::image type="content" source="images/mte-eod-menu.png" alt-text="The Microsoft Threat Experts Experts on Demand menu item" lightbox="images/mte-eod-menu.png":::
+A flyout screen opens. The following screen shows when you are on a trial subscription. The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
 
-    A flyout screen opens. The following screen shows when you are on a trial subscription.
-
-    :::image type="content" source="images/mte-eod.png" alt-text="The Microsoft Threat Experts Experts on Demand page" lightbox="images/mte-eod.png":::
-
-    The following screen shows when you are on a full Microsoft Threat Experts - Experts on-Demand subscription.
-
-    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="The Microsoft Threat Experts Experts on Demand full subscription page" lightbox="images/mte-eod-fullsubscription.png":::
-
-    The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or device details page that you were at when you made the request.
+The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or device details page that you were at when you made the request.
 
 3. In the next field, provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
 
@@ -142,7 +142,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 - We detected a phishing email that delivered a malicious Word document to a user. The malicious Word document caused a series of suspicious events, which triggered multiple Endpoint Attack Notifications alerts for [malware name] malware. Do you have any information on this malware? If yes, can you send me a link?
 - I recently saw a [social media reference, for example, Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Defender for Endpoint provides against this threat actor?
 
-### Microsoft Threat Experts' alert communications
+### Defender Experts' alert communications
 
 - Can your incident response team help us address the Endpoint Attack Notifications that we got?
 - I received this Endpoint Attack Notifications from Microsoft Threat Experts. We don't have our own incident response team. What can we do now, and how can we contain the incident?
@@ -155,7 +155,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 ### Receive a progress report about your managed hunting inquiry
 
-Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you about your **Consult a threat expert** inquiry within two days, to communicate the investigation status from the following categories:
+Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you about your **Ask Defender Experts** inquiry within two days, to communicate the investigation status from the following categories:
 
 - More information is needed to continue with the investigation
 - A file or several file samples are needed to determine the technical context
@@ -164,7 +164,5 @@ Response from Microsoft Threat Experts varies according to your inquiry. They wi
 
 It is crucial to respond in quickly to keep the investigation moving.
 
-## Related topic
-
-- [Microsoft Threat Experts overview](microsoft-threat-experts.md)
-- [Microsoft Threat Experts in Microsoft 365 Overview](/microsoft-365/security/mtp/microsoft-threat-experts)
+#### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to:
+- [Microsoft Defender Experts in Microsoft 365 Overview](defender-experts-for-hunting.md) 
