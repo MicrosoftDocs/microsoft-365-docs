@@ -58,7 +58,7 @@ Are you a new customer, and you don't already have an account with Microsoft? Us
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
 2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
 3. On the next page, follow the steps to set up your account.
-4. The sign-up process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
+4. The sign-up process may take several minutes to complete. After it's complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 ## Buy a subscription from your free trial
 
