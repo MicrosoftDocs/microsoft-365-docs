@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 08/08/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -18,12 +19,9 @@ ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date:
 ---
 
 # Protect your network
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -32,6 +30,7 @@ ms.date:
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 - macOS
 - Linux
@@ -179,8 +178,7 @@ The following example includes the blocked actions:
 ```kusto
 
 DeviceEvents
-
-- Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
@@ -196,10 +194,10 @@ Here's another example:
 
 DeviceEvents:
 
-- where ActionType contains "ExploitGuardNetworkProtection"
-- extend ParsedFields=parse_json(AdditionalFields)
-- project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
-- sort by Timestamp desc
+|where ActionType contains "ExploitGuardNetworkProtection"
+|extend ParsedFields=parse_json(AdditionalFields)
+|project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
+|sort by Timestamp desc
 
 ```
 The Response category tells you what caused the event, for example:
