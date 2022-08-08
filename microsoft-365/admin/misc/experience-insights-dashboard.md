@@ -37,7 +37,7 @@ The **Apps and services** data section shows you a unified view across usage and
 
 The chart information gives you insight into the apps and services that you want to track data on. Select an app or service to dig deeper into usage, product feedback, net promoter score and help content data.
 
-:::image type="content" source="../../media/app-services-data.png" alt-text="Screenshot: Image showing the apps and services chart data":::
+:::image type="content" source="../../media/apps-services-latest.png" alt-text="Screenshot: Image showing the apps and services chart data":::
 
 **Active users** tells you the total count of unique users who performed at least one intentional action, like opening a file, in the app over the selected time period. Use this data to make sure you are hitting your adoption goals. [Learn more](../activity-reports/active-users-ww.md)
 
