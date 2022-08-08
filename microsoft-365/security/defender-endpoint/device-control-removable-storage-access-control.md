@@ -410,7 +410,7 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunt
 
 - Microsoft 365 for E5 reporting
 
-If `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**, an event will be sent to Advanced hunting or Device control report for every covered access (`AccessMask` in the entry), no matter whether it is triggered by the system or it is triggered by the user who is signed in.
+If `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**, an event will be sent to Advanced hunting or the Device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
