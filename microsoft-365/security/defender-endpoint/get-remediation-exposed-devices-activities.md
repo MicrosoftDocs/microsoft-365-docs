@@ -113,5 +113,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
 - [List all remediation activities](get-remediation-all-activities.md)
-- [Risk-based Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

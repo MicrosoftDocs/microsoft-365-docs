@@ -90,6 +90,6 @@ vendorId|String|Related vendor name
 
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 
-- [Risk-based Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
