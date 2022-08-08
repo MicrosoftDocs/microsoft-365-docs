@@ -98,5 +98,4 @@ To protect all your admin accounts, make sure to follow these recommendations:
 
 ## Next objective
 
-Take the steps to [turn on security defaults](m365bp-conditional-access.md).
-
+[Increase threat protection for Microsoft 365 Business Premium](m365bp-increase-protection.md)

@@ -24,10 +24,10 @@
     items: 
       - name: Overview
         href: m365bp-security-overview.md
-      - name: Protect admin accounts
-        href: m365bp-protect-admin-accounts.md
-      - name: Turn on security defaults
+      - name: Turn on security defaults (MFA)
         href: m365bp-conditional-access.md
+      - name: Protect your admin accounts
+        href: m365bp-protect-admin-accounts.md
       - name: Protect against malware and other threats
         href: m365bp-increase-protection.md
 - name: Train your team
