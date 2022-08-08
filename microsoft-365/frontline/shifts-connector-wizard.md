@@ -191,7 +191,7 @@ You can view information about your connection, such as health status and sync i
 
     Here, you'll see a list of all the connections you've set up by using the wizard or PowerShell, along with information about each one.
 
-    :::image type="content" source="../../media/shifts-connector-wizard-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="../../media/shifts-connector-wizard-manage.png":::
+    :::image type="content" source="media/shifts-connector-wizard-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-wizard-manage.png":::
 
 ## Related articles
 
