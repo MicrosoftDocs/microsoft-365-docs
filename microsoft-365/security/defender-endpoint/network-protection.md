@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 08/08/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -18,12 +19,9 @@ ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date:
 ---
 
 # Protect your network
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -32,6 +30,7 @@ ms.date:
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 - macOS
 - Linux
