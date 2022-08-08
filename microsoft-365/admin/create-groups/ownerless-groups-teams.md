@@ -50,7 +50,7 @@ To set an ownerless group or team policy
 
 1. Type the number of active members that you want to notify and select the number of weeks to send the notification. (The notification list is created during the first notification and does not change.) Select **Next**.
 
-1. On the *Who is this email coming from* page, select a sender for the email, and then select **Next**.
+1. On the *Who is this email coming from* page, select a sender for the email, and then select **Next**. Note that shared mailboxes are not supported. The sender must be either a user mailbox or a group mailbox.
 
 1. On the *Subject and message* page, customize the email and optionally include a **policy guideline URL**, and then select **Next**.
 

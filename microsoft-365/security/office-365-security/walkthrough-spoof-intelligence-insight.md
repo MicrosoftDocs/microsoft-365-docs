@@ -94,7 +94,7 @@ To configure allowed and blocked senders in spoof intelligence, follow these ste
    ```
 
 2. Edit the CSV file to add or modify the following values:
-   - **Sender** (domain in source server's PTR record or IP/24 address)
+   - **Sender** (domain in source server's PTR record, IP/24 address, or verified DKIM domain)
    - **SpoofedUser**: One of the following values:
      - The internal user's email address.
      - The external user's email domain.
