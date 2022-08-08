@@ -12,7 +12,7 @@ ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
 ---
 
