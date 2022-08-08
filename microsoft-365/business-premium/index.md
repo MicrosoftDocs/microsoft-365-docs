@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/01/2022
+ms.date: 08/08/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-overview
