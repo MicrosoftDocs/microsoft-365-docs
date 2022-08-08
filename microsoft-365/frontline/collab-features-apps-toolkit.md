@@ -35,7 +35,7 @@ Use your [corporate communications strategy](flw-corp-comms.md) to share these v
 
 [End user training for posts and messages in Teams](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885) <br>
 [View the Tags in Microsoft Teams video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202727)
-> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2202727]
+> [!VIDEO https://www.youtube.com/watch?v=KmWsysDXIvc]
 
 ## Walkie Talkie
 
