@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/licenses/add-licenses-bought-through-vlsc.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/join-guest-meeting.md",
       "redirect_url": "https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508",
       "redirect_document_id": false
