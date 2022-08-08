@@ -22,7 +22,7 @@ description: "Learn how to apply a promotional code to your Microsoft 365 subscr
 ms.date: 03/17/2021
 ---
 
-# Use your promo code to reduce price
+# Use your Microsoft 365 for business promo code to reduce the price
 
 When you purchase a subscription, you can use a promotional code to reduce the price. Read this article to learn how to apply a promo code to your subscription, to learn about the [Promo code terms](#promo-code-terms), and to [Troubleshoot promo codes](#troubleshooting-promo-codes).
   

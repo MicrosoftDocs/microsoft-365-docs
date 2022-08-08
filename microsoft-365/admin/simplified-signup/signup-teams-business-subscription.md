@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 description: "Follow the steps in this article to sign up for Microsoft Teams as part of a business subscription."
 ---

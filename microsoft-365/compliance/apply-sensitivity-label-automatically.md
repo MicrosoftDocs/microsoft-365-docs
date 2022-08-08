@@ -23,9 +23,7 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-> [!TIP]
+> [!NOTE]
 > For information about automatically applying a sensitivity label in the data map, see [Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
@@ -67,13 +65,19 @@ There are two different methods for automatically applying a sensitivity label t
     Specific to auto-labeling for Exchange:
     
     - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there's a match, the email is labeled but not the attachment.
-        - For PDF files, if the label applies encryption, these files are encrypted by using [Message encryption](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they're encrypted by using [Message encryption](ome.md).
+        - For PDF files, if the label applies encryption, these files, if unencrypted, are now encrypted by using [Message encryption](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-). The encryption settings applied are inherited from the email.
+        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption and these files are unencrypted, they're now encrypted by using [Message encryption](ome.md). The encryption settings are inherited from the email.
     - If you have Exchange mail flow rules or Microsoft Purview Data Loss Prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there's a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. If this label is configured for [encryption](encryption-sensitivity-labels.md), that encryption is always applied when the sender is from your organization. By default, that encryption isn't applied when the sender is outside your organization but can be applied by configuring **Additional settings for email** and specifying a Rights Management owner.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email when the sender is from your own organization. When the sender is outside your organization, you can specify a Rights Management owner for incoming email that's labeled and encrypted by your policy.
     - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that for incoming email, this configuration can result in displaying the names of people outside your organization.
+
+> [!TIP]
+> For some new customers, we're offering the automatic configuration of default auto-labeling settings for both client-side labeling and service-side labeling. Even if you're not eligible for this automatic configuration, you might find it useful to reference their configuration. For example, you can manually configure existing labels and create your own auto-labeling policies with the same settings to help accelerate your labeling deployment.
+> 
+> For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
+
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
@@ -139,7 +143,7 @@ For built-in labeling in Office apps, check the [minimum versions required](sens
 
 The Azure Information Protection unified labeling client supports automatic labeling only for built-in and custom sensitive info types, and doesn't support trainable classifiers or sensitive info types that use Exact Data Match (EDM) or named entities.
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Files & emails** is selected for the label's scope:
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Items** is selected for the label's scope:
 
 ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
@@ -185,8 +189,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 ![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
+The available pre-trained classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -264,7 +267,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
   - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these aren't applied to documents.
   - If the labels apply [encryption](encryption-sensitivity-labels.md):
     - When the auto-labeling policy includes locations for SharePoint or OneDrive, the label must be configured for the **Assign permissions now** setting, and **User access to content expires** must be set to **Never**.
-    - When the auto-labeling policy is just for Exchange, the label can be configured for either **Assign permissions now** or **Let users assign permissions** (for the Do Not Forward or Encrypt-Only options).
+    - When the auto-labeling policy is just for Exchange, the label can be configured for either **Assign permissions now** or **Let users assign permissions** (for the Do Not Forward or Encrypt-Only options). You can't auto-apply a label that's [configured to apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
 ### Learn about simulation mode
 
@@ -366,9 +369,11 @@ Finally, you can use simulation mode to provide an approximation of the time nee
         
         For **Assign a Rights Management owner**, specify a single user by an email address that's owned by your organization. Don't specify a mail contact, a shared mailbox, or any group type, because these aren't supported for this role.
 
-10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**:
-
+10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Then decide whether to automatically turn on the policy if it's not edited for 7 days:
+    
     ![Test out the configured auto-labeling policy.](../media/simulation-mode-auto-labeling-wizard.png)
+    
+    If you're not ready to run simulation, select **Leave policy turned off**. 
 
 11. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
@@ -447,7 +452,9 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 
 Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the following methods to increase your labeling reach:
 
-- With SharePoint Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint library are automatically labeled.
+- For SharePoint document libraries, you can apply a default sensitivity label for new and edited files. For more information, see [Configure a default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md).
+
+- With SharePoint Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint document library are automatically labeled.
 
 - When you use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2):
 

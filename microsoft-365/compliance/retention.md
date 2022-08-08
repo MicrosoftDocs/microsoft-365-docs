@@ -1,5 +1,5 @@
 ---
-title: "Learn about retention policies & labels to automatically retain or delete content"
+title: "Learn about retention policies & labels to retain or delete"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,15 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn about retention policies and retention labels that help you to retain what you need and delete what you don't.
+description: Learn about Microsoft 365 retention policies and retention labels to retain what you need and delete what you don't to manage your organization's data.
 ---
 
 # Learn about retention policies and retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > If you're seeing messages about retention policies in Teams or have questions about retention labels in your apps, contact your IT department for information about how they have been configured for you. In the meantime, you might find the following articles helpful:
@@ -290,13 +288,13 @@ Scenario: By default, content in users' OneDrive accounts is automatically delet
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-Example to retain items for longer**
+#### Example to retain items for longer
 
 Scenario: By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
 1. You create and configure a retention policy that automatically retains and then deletes content after five years, and apply the policy to all SharePoint and Microsoft 365 Groups instances.
 
-2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
+2. You create and configure a retention label that automatically retains content for ten years. You add this label to a label policy that you publish to all SharePoint and Microsoft 365 Groups instances so that SharePoint admins can then apply it as a default label to be inherited by all items in specific document libraries.
 
 #### Example to delete items in a shorter time period
 
@@ -546,39 +544,9 @@ Retention actions that are logged as auditing events are available only for rete
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-To use the retention cmdlets, you must first [connect to Office 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:
+Use [Office 365 Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) for Purview retention cmdlets that support configuration at scale, scripting for automation, or might be necessary for advanced configuration scenarios.
 
-- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
-
-- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
-
-- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
-
-- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
-
-- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
-
-- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
-
-- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
-
-- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
-
-- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
-
-- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
-
-- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)
-
-- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
-
-- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
-
-- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
-
-- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
-
-- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+For a list of available cmdlets, and to identify which ones are supported for the different locations, see [PowerShell cmdlets for retention policies and retention labels](retention-cmdlets.md).
 
 ## When to use retention policies and retention labels or eDiscovery holds
 

@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 [Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
 
 - patterns
@@ -94,8 +92,7 @@ Proximity - Number of characters between primary and supporting element
 
 ### Primary and secondary support elements
 
-When you create an EDM SIT, you define a *primary element* field in the rule package. Primary fields are the elements for which all your content will be searched, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the *secondary* or supporting elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT.
-
+When you create an EDM SIT, you define a *primary element* field in the rule package. Primary fields are the elements for which all your content will be searched, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the *secondary* or supporting elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sit-defn-us-social-security-number.md) SIT.
 
 ## How matching works
 
@@ -103,6 +100,19 @@ EDM finds matches by comparing content it finds against a table of sensitive dat
 
 > [!TIP]
 > A common practice is to combine the use of EDM Sensitive information types and the regular sensitive information types on which they are based in DLP rules, with different thresholds. For example, you could use an EDM sensitive information type that looks for social security numbers and other data, with strict requirements and low tolerance where one or more matches will cause a DLP alert, and use the regular sensitive information type, like the U.S. Social Security Number built-in sit for higher counts.  
+
+## Services that EDM supports
+
+
+|Service  |Locations  |
+|---------|---------|
+| Microsoft Purview Data Loss Prevention    | - SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Devices       |
+|Microsoft Defender for Cloud Apps     | - SharePoint Online </br>- OneDrive for Business        |
+|Auto-labeling (service side)     |- SharePoint online </br>- OneDrive for Business </br>- Exchange Online         |
+|Auto-labeling (client side)     |- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients         |
+|Customer Managed Key     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients </br>- Devices         |
+|eDiscovery     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients  |
+|Insider Risk Management     |- SharePoint online </br>- OneDrive for Business </br>- Teams Chat </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange desktop clients      |
 
 ## See also
 

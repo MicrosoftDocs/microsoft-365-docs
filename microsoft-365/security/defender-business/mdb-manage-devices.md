@@ -20,7 +20,7 @@ ms.collection:
 
 # Manage devices in Microsoft Defender for Business
 
-In Microsoft Defender for Business, you can manage devices as follows:
+In Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
@@ -38,7 +38,7 @@ In Microsoft Defender for Business, you can manage devices as follows:
 
 3. Select a device to open its flyout panel, where you can learn more about its status and take action. 
 
-   If you don't have any devices listed yet, [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+   If you don't have any devices listed yet, [Onboard devices to Defender for Business](mdb-onboard-devices.md)
 
 ## Take action on a device that has threat detections
 
@@ -54,7 +54,7 @@ In Microsoft Defender for Business, you can manage devices as follows:
 
 ## Onboard a device
 
-See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+See [Onboard devices to Defender for Business](mdb-onboard-devices.md).
 
 ## Offboard a device
 
@@ -62,7 +62,7 @@ See [Offboarding a device](mdb-offboard-devices.md).
 
 ## Next steps
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 - [Create or edit device groups](mdb-create-edit-device-groups.md)

@@ -10,6 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -19,11 +20,13 @@ ms.collection:
 
 # Get Microsoft Defender for Business
 
+Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get Defender for Business.
+
 If you don't already have Microsoft Defender for Business, you can choose from several options:
 
-- [Try or buy the standalone version of Defender for Business](#try-or-buy-microsoft-defender-for-business)
-- [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business
-- [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider) who can help you get everything set up and configured
+- [Try or buy the standalone version of Defender for Business](#try-or-buy-microsoft-defender-for-business).
+- [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business.
+- [Work with a Microsoft partner](#work-with-a-microsoft-partner) who can help you get everything set up and configured.
 
 If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial and assign user licenses](#how-to-activate-your-trial), and then proceed to your [next steps](#next-steps).
 
@@ -49,17 +52,22 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 
 3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
 
-## Work with a Microsoft Solution Provider
+## Work with a Microsoft partner
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium and Microsoft Defender for Business. To find a solution provider in your area, take the following steps:
 
-1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
- 
-2. In the search box, fill in your location and company size. 
+1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir).
 
-3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
+2. In the **Filters** pane, specify search criteria, such as:
 
-4. Review the list of results. Select a provider to learn more about their expertise and the services they provide. Your provider can help you sign up for Defender for Business.
+   - Your location
+   - Your organization's size
+   - **Focus areas**, such as **Security** and/or **Threat Protection** 
+   - **Services**, such as **Licensing** or **Managed Services (MSP)**
+
+   As soon as you select one or more criteria, the list of partners updates.
+
+3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 ## How to activate your trial
 
@@ -71,7 +79,7 @@ When you receive your acceptance email, here's how to activate your trial subscr
 
 3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
-4. Use one of the following procedures:<br/>
+4. Use one of the following procedures, depending on your scenario:<br/>
 
    | Scenario | Procedure |
    |:---|:---|
