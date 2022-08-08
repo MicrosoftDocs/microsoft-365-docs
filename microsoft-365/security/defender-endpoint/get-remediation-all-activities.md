@@ -149,5 +149,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [Get one remediation activity by ID](get-remediation-one-activity.md)
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Risk-based Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
