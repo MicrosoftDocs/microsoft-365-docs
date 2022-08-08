@@ -20,7 +20,7 @@ description: "Learn which user roles are required in order to sign up for a tria
 
 This article outlines the user roles required in order to enroll your organization in a Microsoft 365 trial.
 
-## Who can start a trial
+## Who can start all trials
 
 A user with one of the roles listed below can start any Microsoft 365 trial.
  
@@ -31,7 +31,7 @@ A user with one of the roles listed below can start any Microsoft 365 trial.
 
 ## Roles for starting specific trials
 
-Each trial allows users with other roles to start a trial. Refer to the tables below for each group of trials.
+The Purview, Priva, and Defender trials allow users with specific roles aside from Global administrator and Billing Admin to start their trials. Refer to the tables below for details.
 
 #### Purview trials
 
@@ -64,6 +64,6 @@ Security operations  | Microsoft 365 Defender portal > Permissions > Endpoints r
 
 For more information about how to assign user roles and permissions, see the following articles:
 
-- Microsoft 365 admin roles: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
-- Microsoft Purview and Priva: [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
-- Microsoft 365 Defender: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
+- **Microsoft 365 admin roles**: [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md)
+- **Microsoft Purview and Priva**: [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
+- **Microsoft 365 Defender**: [Create and manage roles for role-based access control](../security/defender-endpoint/user-roles.md)
