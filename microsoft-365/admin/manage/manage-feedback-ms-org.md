@@ -75,11 +75,15 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 |**Policy name**|**Default state**|**Control summary**|
 |:-----|:-----|:-----|
+|Allow users to access feedback portal|On|Manage user access to the Feedback portal|
 |Allow users to submit feedback to Microsoft|On|Controls feedback entry points across applications|
 |Allow users to receive and respond to in-product surveys from Microsoft|On|Controls survey prompts within product|
 |Allow users to include screenshots and attachments when they submit feedback to Microsoft|Off|Determines what metadata the user can decide to submit with feedback/survey|
 |Allow Microsoft to follow up on feedback submitted by users|Off|Determines if user can share contact info with feedback/survey|
 |Allow users to include log files and content samples when feedback is submitted to Microsoft|Off|Determines metadata the user can decide to submit with feedback/survey|
+
+> [!NOTE]
+> "Allow users to access feedback portal" is only available via Office Cloud policy.
 
 ## Configure policies
 
