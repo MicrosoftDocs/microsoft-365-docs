@@ -39,7 +39,6 @@ The main difference between the two modes is that the advanced mode requires the
 
 When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas. Select **Try out guided hunting** when it appears once you open the **advanced hunting** page from the left-hand navigation pane in Microsoft 365 Defender.
 
-:::image type="content" source="media/guided-hunting/1-guided-hunting-banner.png" alt-text="banner inviting user to take the tour" lightbox="media/guided-hunting/1-guided-hunting-banner.png":::
 
 [ ![banner inviting user to take the tour](media/guided-hunting/1-guided-hunting-banner.png) ](media/guided-hunting/1-guided-hunting-banner.png#lightbox)
 
