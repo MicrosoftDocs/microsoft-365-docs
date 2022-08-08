@@ -93,7 +93,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
    :::image type="content" source="../../media/ts-mode-menu.png" alt-text="Turn on troubleshooting mode" lightbox="../../media/ts-mode-menu.png":::
 
 > [!NOTE]
-> The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the pre-requisites for troubleshooting mode.  
+> The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the prerequisites for troubleshooting mode.  
 
 3. Confirm you want to turn on troubleshooting mode for the device.
 
