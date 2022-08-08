@@ -34,7 +34,7 @@ However, if you choose the option to run a Power Automate flow, currently rollin
 - Send an email notification to a records manager, or to the person who created or last modified a document
 - Move a document item to a SharePoint location where you centrally store records
 
-You can also select the Microsoft 365 compliance label-specific actions of permanently delete the item or relabel the item:
+You can also select the Microsoft 365 compliance label-specific actions of relabel the item or permanently delete it:
 
 ![Configuring a Power Automate flow for when the retention period expires.](../media/retention-label-power-automate.png)
 
