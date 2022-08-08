@@ -195,6 +195,9 @@ To create a suppression rule for alerts:
     However, to apply the rule on any alert type that meets rule conditions select **Any alert type based on IOC conditions**.
  
     IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
+    
+    > [!NOTE]
+    > You cannot suppress an alert triggered by 'custom detection' source. You cannot create a suppression rule for this alert.
      
 3. In the **IOCs** section, select **Any IOC** to suppress the alert no matter what 'evidence' has caused the alert. 
 
@@ -214,7 +217,7 @@ To create a suppression rule for alerts:
 
     4. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Screenshot of other types of evidence." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-
+    
     5. To add another IOC, click **Add filter**. 
     > [!NOTE]
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
