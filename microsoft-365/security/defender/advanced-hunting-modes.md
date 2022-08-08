@@ -41,6 +41,8 @@ When you open the advanced hunting page for the first time after guided hunting 
 
 :::image type="content" source="media/guided-hunting/1-guided-hunting-banner.png" alt-text="banner inviting user to take the tour" lightbox="media/guided-hunting/1-guided-hunting-banner.png":::
 
+[ ![banner inviting user to take the tour](media/guided-hunting/1-guided-hunting-banner.png) ](media/guided-hunting/1-guided-hunting-banner.png#lightbox)
+
 This takes you through the tour, which suggests some queries to get you started, like how to get a list of high-confidence phishing emails sent to your organization, a list of activities performed by a file you specify, or a list of alerts where a certain user is involved. These sample queries can be found in the **Getting started** section. Simply select **Load example** to edit the query, and run it by selecting **Run query**.
 
 You can take the tour again at any time by going to **Help resources** > **Learn more** and selecting **Take the tour**.
