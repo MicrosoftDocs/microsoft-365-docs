@@ -32,13 +32,15 @@ When you configure a [retention label](retention.md) to retain items for a speci
 However, if you choose the option to run a Power Automate flow, currently rolling out in preview, this label configuration supports custom actions such as:
 
 - Send an email notification to a records manager, or to the person who created or last modified a document
-- Move the item to a SharePoint location where you centrally store records
+- Move a document item to a SharePoint location where you centrally store records
 
-In addition to the standard Power Automate actions that you can select as part of your flow configuration, you can also select the Microsoft 365 compliance label-specific actions of permanently delete the item and relabel the item. For example, a flow can move the item and relabel it.
+You can also select the Microsoft 365 compliance label-specific actions of permanently delete the item or relabel the item:
 
 ![Configuring a Power Automate flow for when the retention period expires.](../media/retention-label-power-automate.png)
 
-The actions from Power Automate flows also allow integration with other apps and services. For example, you have another solution that starts your own customized disposition review process when an email notification is received, or your flow adds a new entry into a table and this change automatically starts an existing records management procedure.
+For example, a flow can move the item, relabel it, and then send an email notification.
+
+The actions also allow integration with other apps and services. For example, you have another solution that starts your own customized disposition review process when an email notification is received, or your flow adds a new entry into a table and this change automatically starts an existing records management procedure.
 
 It's outside the scope of this article to document all the ways in which you can configure a flow and integrate with other solutions. However, to learn more about Power Automate, see [Get started with Power Automate](/power-automate/getting-started) and [Overview of cloud flows](/power-automate/overview-cloud). In this article we'll cover:
 
