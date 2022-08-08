@@ -542,7 +542,7 @@ Even if there are no recipient conditions or exceptions applied to a preset secu
   Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
   ```
 
-  This example configures exceptions from the Defender for Office 365 protections in the Strict preset security for the specified security operations (SecOps) mailboxes.
+  This example configures exceptions from the Defender for Office 365 protections in the Strict preset security policy for the specified security operations (SecOps) mailboxes.
 
   ```powershell
   Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"
