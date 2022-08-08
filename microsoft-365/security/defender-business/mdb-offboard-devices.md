@@ -52,6 +52,6 @@ If you want to offboard a device, use one of the following procedures:
 
 ## Next steps
 
-- [Use your Threat & Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+- [Use your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)

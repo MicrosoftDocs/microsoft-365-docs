@@ -39,7 +39,7 @@ Here are the periodic or as-needed tasks to maintain your SOC for Microsoft 365 
 |Deploy automation scripts and services where appropriate|Download and test automation scripts and configuration files from approved Microsoft sites to improve Microsoft 365 Defender operations.|Weekly and as needed|Engineering and SecOps|
 |Portal or license management|Check announcements and the Microsoft Messaging Center for Microsoft 365 Defender portal or licensing needs based on Microsoft updates and new features.|Weekly|SOC Oversight|
 |Update SOC escalation tickets|All SOC teams update escalation tickets (such as Sentinel, ServiceNow tickets) assigned to them.|Daily|All SOC teams|
-|Track Microsoft 365 Defender Threat & Vulnerability remediation activity|Generate TvM Secure Score remediation activity and report to asset owners through an intranet portal.|Daily|Monitoring|
+|Track Microsoft Defender Vulnerability Management (MDVM) activity|Generate MDVM Secure Score remediation activity and report to asset owners through an intranet portal.|Daily|Monitoring|
 |Generate Secure Score report|Monitoring team tracks and reports Secure Score improvements.|Weekly SOC|Monitoring|
 |Run IR tabletop exercise|Test SOC team playbooks in tabletop exercise.|As needed|All SOC teams|
 

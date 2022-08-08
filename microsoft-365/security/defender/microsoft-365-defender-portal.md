@@ -119,7 +119,7 @@ You can search across the following entities in Defender for Endpoint and Defend
     >[!NOTE]
     >IP and URL searches are exact match and don't appear in the search results page – they lead directly to the entity page. 
 
-- **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
+- **MDVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
 
 ## Threat analytics
 

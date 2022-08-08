@@ -125,5 +125,5 @@ Click the user account to see details about the user account. For more informati
 
 - [Understand the Microsoft Defender for Endpoint portal](use.md)
 - [Portal overview](portal-overview.md)
-- [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- [View the Microsoft Defender Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)

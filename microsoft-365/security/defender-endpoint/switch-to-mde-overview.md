@@ -62,7 +62,7 @@ In this migration guide, we focus on [next-generation protection](microsoft-defe
 
 |Feature/Capability|Description|
 |---|---|
-|[Threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)|Threat & vulnerability management capabilities help identify, assess, and remediate weaknesses across your endpoints (such as devices).|
+|[Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)|Defender Vulnerability Management capabilities help identify, assess, and remediate weaknesses across your endpoints (such as devices).|
 |[Attack surface reduction](overview-attack-surface-reduction.md)|Attack surface reduction rules help protect your organization's devices and applications from cyberthreats and attacks.|
 |[Next-generation protection](microsoft-defender-antivirus-in-windows-10.md)|Next-generation protection includes Microsoft Defender Antivirus to help block threats and malware.|
 |[Endpoint detection and response](overview-endpoint-detection-response.md)|Endpoint detection and response capabilities detect, investigate, and respond to intrusion attempts and active breaches.|

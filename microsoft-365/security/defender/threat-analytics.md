@@ -186,7 +186,7 @@ In the **Exposure & mitigations** section, review the list of specific actionabl
   - Potentially unwanted application (PUA) protection
   - Real-time protection
 
-Mitigation information in this section incorporates data from [threat and vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
+Mitigation information in this section incorporates data from [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
 :::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="The mitigations section of a threat analytics report showing secure configuration details" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
@@ -246,7 +246,7 @@ To access threat analytics reports, you need certain roles and permissions. See 
 
 - To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
 - To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data.
-- To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
+- To view mitigations, you need to have permissions to Defender Vulnerability Management data in Microsoft Defender for Endpoint.
 
 When looking at the threat analytics data, remember the following factors:
 
