@@ -13,7 +13,7 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: 
 ms.localizationpriority:  medium
-description: Learn how to use and implement SharePoint Syntex in your organization to help you streamline your business processes.
+description: Learn how to use and implement SharePoint Syntex in your organization to help streamline your business processes.
 ---
 
 # Get started driving adoption of Microsoft SharePoint Syntex
@@ -43,9 +43,9 @@ If you don't need to build a custom model, you can use a [trained model](prebuil
 
 To prepare for using SharePoint Syntex in your organization, you first need to understand the scenarios in which it will be useful. The "why" helps determine what model will be needed, and how to structure your organization based on where the model will be applied. Here are a few scenarios where custom models can help your organization:
 
-- **Content processing:** Process contracts, statements of work, and other form-like documents. Intake the forms, train the model to understand and map the fields, and then run your forms through to automatically collect the data. For more information, see [Form processing overview](form-processing-overview.md).
+- **Content processing**: Process contracts, statements of work, and other form-like documents. Intake the forms, train the model to understand and map the fields, and then run your forms through to automatically collect the data.
 
-- **Invoice analysis:** Pull out the relevant details from your invoices and make sure they're complying with policy or are being processed appropriately.
+- **Invoice analysis**: Pull out the relevant details from your invoices and make sure they're complying with policy or are being processed appropriately.
 
 Think about ways that SharePoint Syntex can help your organization:
 
@@ -71,7 +71,7 @@ Determine who in your organization will build and manage the models. The followi
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
 | AAD role| AAD role | AAD role | Champions |
-| Configure Power Platform | Configure Dataverse environment for form processing | Gather use cases | Gather business use cases |
+| Configure Power Platform | Configure Dataverse environment | Gather use cases | Gather business use cases |
 | Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
 
 Knowledge manager, business process owner, and content model owner create sample models and champion adoption in the organization. Others who might be involved the compliance admin and taxonomy managers.
@@ -79,7 +79,7 @@ Knowledge manager, business process owner, and content model owner create sample
 Where will they build and apply the models? Are there existing processes or repositories that could be enhanced?
 
 - **Classify and extract by text pattern**: You can create multiple content centers for different business areas.
-- **Extract by layout** or **Extract by text pattern and layout**: Decide which sites will get Form processing action.
+- **Extract by layout** or **Extract by text pattern and layout**: Decide which sites will get this action.
 
 ## Strategic positioning
 
@@ -145,4 +145,4 @@ To get ready for implementing SharePoint Syntex, you need to:
 
 [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
 
-[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
+[Overview of model types in SharePoint Syntex](syntex-overview.md)
