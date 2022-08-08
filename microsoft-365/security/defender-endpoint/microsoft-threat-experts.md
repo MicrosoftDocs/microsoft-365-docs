@@ -68,23 +68,12 @@ Customers can engage our security experts directly from within Microsoft 365 Def
 - Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques
 
-The option to **Consult a threat expert** is available in several places in the portal so you can engage with experts in the context of your investigation:
+The option to **Ask Defender Experts** is available in several places in the portal so you can engage with experts in the context of your investigation:
 
 - ***Help and support menu***
-
-  :::image type="content" source="images/mte-eod-menu.png" alt-text="The MTE-EOD menu item" lightbox="images/mte-eod-menu.png":::
-
 - ***Device page actions menu***
-
-  :::image type="content" source="images/mte-eod-machines.png" alt-text="The MTE-EOD device page action menu option" lightbox="images/mte-eod-machines.png":::
-
 - ***Alerts page actions menu***
-
-  :::image type="content" source="images/mte-eod-alerts.png" alt-text="The MTE-EOD alert page action menu option" lightbox="images/mte-eod-alerts.png":::
-
 - ***File page actions menu***
-
-  :::image type="content" source="images/mte-eod-file.png" alt-text="The MTE-EOD file page action menu option" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
