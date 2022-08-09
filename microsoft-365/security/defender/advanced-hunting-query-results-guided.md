@@ -33,19 +33,33 @@ ms.technology: m365d
 
 In hunting using guided mode, the results of the query appear in the **Results** tab. 
 
-[IMAGE]
+[ ![banner inviting user to take the tour](../../media/guided-hunting/results-view.png) ](../../media/guided-hunting/results-view.png#lightbox)
 
-You can work on the results further by exporting the items to a CSV file by selecting **Export**. This downloads the CSV file for your use.
+You can work on the results further by exporting them to a CSV file by selecting **Export**. This downloads the CSV file for your use.
 
 You can view other information in the Results view:
-- The number of records in the results list beside the Search button
-- 
+- Number of records in the results list (beside the Search button)
+- Duration of the query run time
+- Resource usage of the query
 
+## View more columns
 
+A few standard columns are included in the results for easy viewing. 
 
-A few standard columns are included in the results for easy viewing. to view more columns, select **Customize columns** in the upper right-hand portion of the results view.
+To view more columns:
+1. Select **Customize columns** in the upper right-hand portion of the results view.
+ 
+ 
+![Screenshot showing different conditions you can use](../../media/guided-hunting/results-view-2.png)
 
+2. From here, select the columns to include in the results view and deselect columns to hide. 
 
+![Screenshot showing different conditions you can use](../../media/guided-hunting/results-view-customize-columns.png)
+
+3. Select **Apply** to view results with tne added columns. Use the scroll bars if necessary.
 
 
 ## See also
+- [Advanced hunting quotas and usage parameters](advanced-hunting-limits.md)
+- [Switch to advanced mode](advanced-hunting-working-guided-mode.md#switching-to-advanced-mode-after-building-a-query)
+- [Refine your query in guided mode](advanced-hunting-working-guided-mode.md)
