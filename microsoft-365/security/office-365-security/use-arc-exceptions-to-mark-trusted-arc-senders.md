@@ -41,7 +41,7 @@ Services that modify content during transport of the message before delivery to 
 
 ## When to use trusted ARC sealers?
 
-A list of trusted ARC sealers is only needed where intermediaries are part of an organization’s email flow and:
+A list of trusted ARC sealers is only needed where intermediaries are part of an organization's email flow and:
 
 1. May modify the email header or email contents.
 2. May cause authentication to fail for other reasons (example, by removing attachments).

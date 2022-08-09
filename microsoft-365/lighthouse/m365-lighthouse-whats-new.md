@@ -26,6 +26,20 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## July 2022
+
+### Enhanced baseline deployment
+
+Microsoft 365 Lighthouse now makes the deployment of baselines to all of your managed tenants faster and easier by:
+
+- Automatically detecting and reporting the status of each assigned task
+- Consolidating the status reporting and simplifying the logic that determines deployment status
+- Reporting which tasks are complete and which tasks need your attention
+- Reporting user-level deployment status for applicable tasks
+- Detecting existing configurations from within the tenant and comparing them to the baseline
+- Providing details around tasks that have been dismissed
+- Identifying where additional licensing is required to complete an assigned task
+
 ## June 2022
 
 ### Support for Microsoft 365 E5 customers

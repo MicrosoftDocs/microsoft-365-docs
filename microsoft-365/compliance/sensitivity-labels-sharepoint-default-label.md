@@ -25,7 +25,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 > [!NOTE]
 > This feature is gradually rolling out in preview and subject to change. It is also a premium feature with licensing details to be provided when the feature becomes generally available (GA).
 > 
-> To read the preview announcement, see the [Yammer post](https://www.yammer.com/askipteam/threads/1846702701985792).
+> To read the preview announcement, see the [blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
 When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
 
@@ -57,6 +57,8 @@ Summary of outcomes:
 
 - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
+- [SharePoint Information Rights Management (IRM) is not enabled for the library](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). This older technology isn't compatible with using a default sensitivity label for a SharePoint document library. If a library is enabled for IRM, you won't be able to select a default sensitivity label.
+
 ## Limitations
 
 - Doesn't apply to existing files at rest in SharePoint.
@@ -72,7 +74,7 @@ Summary of outcomes:
 
 For an existing document library:
 
-1. In SharePoint, navigate to the document library > **Settings**.
+1. In SharePoint, navigate to the document library \> **Settings** \> **Library settings**.
 
 2. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select a label from the drop-down box. For example:
     

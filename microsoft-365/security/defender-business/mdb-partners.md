@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/03/2022
 ms.reviewer: shlomiakirav
 ms.date: 07/19/2022
 f1.keywords: NOCSH 
@@ -27,7 +28,7 @@ Microsoft partners have access to resources, programs, and tools that empower pa
 | Resource | Description |
 |:---|:---|
 | [Microsoft Partner Network](https://partner.microsoft.com) | Visit the Microsoft Partner Network to learn how to become a Microsoft partner and join the Microsoft Partner Network. |
-| [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <ul><li>Practical guidance about how to have conversations with your customers about security and drive upsell to Business Premium. </li><li>Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. </li><li>A panel of experts to help answer your questions.</li></ul>   |
+| [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <ul><li>Practical guidance about how to have conversations with your customers about security and drive upsell to Microsoft 365 Business Premium. </li><li>Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. </li><li>A panel of experts to help answer your questions.</li></ul>   |
 | [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance on building a profitable managed services practice, with: <ul><li>Examples of successful managed service offers from industry experts and peers. </li><li>Technical enablement and checklists from Microsoft experts. </li><li>Sales enablement and customer conversation aids to help you market your solution. </li></ul> |
 | [Defender for Business partner kit](https://aka.ms/MDBPartnerKit) | The Defender for Business partner kit provides you with practical guidance, technical information, and customer-ready resources to market and sell Defender for Business to small and medium-sized businesses.  |
 
@@ -53,4 +54,8 @@ Use the following resources to learn more:
 
 Microsoft Cloud Solution Providers (CSPs) can go beyond reselling licenses and be more involved in customers' business. For example, CSPs can use Microsoft 365 Lighthouse to manage small and medium-sized business customers' security settings and capabilities. CSPs can also view and manage detected threats, including running antivirus scans on devices.
 
-[Learn more about Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md).
+| Resource | Description |
+|:---|:---|
+| [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md) | Describes how Defender for Business integrates with Microsoft 365 Lighthouse and includes links to additional information. |
+
+

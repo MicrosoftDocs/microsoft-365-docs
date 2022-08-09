@@ -104,7 +104,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
    - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    > [!IMPORTANT]
-   > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
    > - The recipient is: romain@contoso.com
    > - The recipient is a member of: Executives
