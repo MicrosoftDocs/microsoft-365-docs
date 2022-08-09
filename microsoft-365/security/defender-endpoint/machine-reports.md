@@ -62,9 +62,9 @@ The Device health and compliance dashboard is structured in two tabs:
 Sensor health and OS cards report on general operating system health, which includes detection sensor health, up-to-date versus out-of-date operating systems, and Windows 10 versions.
 
 > [!div class="mx-imgBorder"]
-> ![Shows Sensor health and Operating system information](images/device-health-sensor-health-os-tab.png)
+> ![Shows Sensor health and Operating system information. Microsoft Defender Antivirus health tab which has antivirus engine, antivirus security intelligence, antivirus platform details. ](images/device-health-sensor-health-os-tab.png)
 
-Each of the three cards on the **Sensor health** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
+Each of the three cards on the **Sensor health** tab has two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
 #### Current state graph
 
@@ -289,7 +289,7 @@ For information about Manage Microsoft Defender Antivirus update versions, see: 
 ### See also
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
-- [device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
+- [Device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
 - [Threat protection report](threat-protection-reports.md)
 
 ## Publicly released: Device health and compliance report in Microsoft Defender for Endpoint
