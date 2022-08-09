@@ -29,8 +29,6 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[Here include: Customize columns, other contents or query results page]
-
 In hunting using guided mode, the results of the query appear in the **Results** tab. 
 
 [ ![banner inviting user to take the tour](../../media/guided-hunting/results-view.png) ](../../media/guided-hunting/results-view.png#lightbox)
