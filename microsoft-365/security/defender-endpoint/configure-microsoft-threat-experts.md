@@ -25,6 +25,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -83,11 +84,11 @@ You'll start receiving Endpoint Attack Notifications from Microsoft Threat Exper
 
 2. From the dashboard, select the same alert topic that you got from the email, to view the details.
 
-
 ### Filter to view just the Endpoint Attack Notifications
+
 You can filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
 
-1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the Filter icon icon.
+1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter to view Defender Experts notifications](../../media/mte/defenderexperts/filter.png) icon.
 2. Scroll down to the Tags field > select the **Defender Experts** check box.
 3. Select **Apply**.
 
@@ -107,7 +108,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 
 2. From the upper right-hand menu, click the **?** icon. Then, select **Ask Defender Experts**
- 
+
 ![The Microsoft Ask Defender Experts trial subscription page](../../media/mte/flyout-screen-trial-subscription.png)
 
 A flyout screen opens. The following screen shows when you are on a trial subscription. The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
@@ -123,7 +124,7 @@ The **Inquiry topic** field is pre-populated with the link to the relevant page 
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
+> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4pk9f>]
 
 ## Sample investigation topics that you can consult with Microsoft Threat Experts - Experts on Demand
 
@@ -166,5 +167,6 @@ Response from Microsoft Threat Experts varies according to your inquiry. They wi
 
 It is crucial to respond in quickly to keep the investigation moving.
 
-#### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to:
+#### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to
+
 - [Microsoft Defender Experts in Microsoft 365 Overview](defender-experts-for-hunting.md)
