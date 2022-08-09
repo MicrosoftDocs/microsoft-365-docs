@@ -64,7 +64,7 @@ Sensor health and OS cards report on general operating system health, which incl
 > [!div class="mx-imgBorder"]
 > ![Shows Sensor health and Operating system information. Microsoft Defender Antivirus health tab which has antivirus engine, antivirus security intelligence, antivirus platform details. ](images/device-health-sensor-health-os-tab.png)
 
-Each of the three cards on the **Sensor health** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
+Each of the three cards on the **Sensor health** tab has two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
 #### Current state graph
 
