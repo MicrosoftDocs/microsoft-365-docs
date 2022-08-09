@@ -46,6 +46,7 @@ Follow these steps to automatically generate documents using a modern template a
 3. In the subsequent screen, select the trigger that should start the automated document generation process. 
 
     We recommend starting with any one of the following three triggers:
+
     - When an item is created
     - When an item is created or modified
     - When an ttem is deleted
