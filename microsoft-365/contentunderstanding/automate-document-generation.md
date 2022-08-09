@@ -19,7 +19,7 @@ description: Learn how to automatically create documents and other content using
 
 Using content assembly in SharePoint Syntex together with Power Automate, you can automate the generation of documents using modern templates. 
 
-This preview version is a Power Automate action in a SharePoint connector. The action is named “Generate document using SharePoint Syntex (preview)” and has limited capabilities. 
+This preview version is a Power Automate action in a SharePoint connector. The action is named “Generate document using SharePoint Syntex (preview)” and has limited capabilities for preview. 
 
 ## Scope of the preview 
 
@@ -55,20 +55,20 @@ Follow these steps to automatically generate documents using a modern template a
 
    ![Screenshot of the When a document is created or modified trigger showing a sample site address and site name.](../media/content-understanding/document-generation-trigger.png)
 
-5. Select the SharePoint connector again and search for and select the action “Generate document using SharePoint Syntex (preview).” 
+5. Select the SharePoint connector again and search for and select the action **Generate document using SharePoint Syntex (preview)**.
 
    ![Screenshot of the SharePoint connector Actions tab showing Generate document using SharePoint Syntex (preview) action.](../media/content-understanding/document-generation-action.png) 
 
 6. Enter the site information and select the document library that contains the modern template. 
 
-7. Once the template is selected, you will start seeing the template fields. Associate the fields with the columns in the list. 
+7. Once the template is selected, you'll start seeing the template fields. Associate the fields with the columns in the list. 
 
     > [!NOTE]
     >Honoring the data mapping in the template is not supported in this preview. For example, if you have associated a field in your template with an MMD column during automated generation, you will be able to associate this field with a column in a list. 
 
 8. Once done, save the flow. 
 
-9. You are all set! 
+9. You're all set! 
 
 > [!NOTE]
 > We recommend using templates that do not need users to add values manually for document generation. If the template needs manual input for a field, you can specify that value against the field rather than mapping it to a SharePoint list column.  
