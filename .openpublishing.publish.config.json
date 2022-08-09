@@ -1,20 +1,6 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "business-assist-api",
-      "build_source_folder": "business-assist-api",
-      "build_output_subfolder": "business-assist-api",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "Defender-Threat-Intelligence",
       "build_source_folder": "defender",
       "build_output_subfolder": "Defender-Threat-Intelligence",
