@@ -30,5 +30,22 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 [Here include: Customize columns, other contents or query results page]
- 
+
+In hunting using guided mode, the results of the query appear in the **Results** tab. 
+
+[IMAGE]
+
+You can work on the results further by exporting the items to a CSV file by selecting **Export**. This downloads the CSV file for your use.
+
+You can view other information in the Results view:
+- The number of records in the results list beside the Search button
+- 
+
+
+
+A few standard columns are included in the results for easy viewing. to view more columns, select **Customize columns** in the upper right-hand portion of the results view.
+
+
+
+
 ## See also
