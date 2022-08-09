@@ -75,7 +75,7 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 |**Policy name**|**Default state**|**Control summary**|
 |:-----|:-----|:-----|
-|Allow users to access feedback portal|On|Manage user access to the Feedback portal|
+|Allow users to access feedback portal|On|Manage user access to the feedback portal|
 |Allow users to submit feedback to Microsoft|On|Controls feedback entry points across applications|
 |Allow users to receive and respond to in-product surveys from Microsoft|On|Controls survey prompts within product|
 |Allow users to include screenshots and attachments when they submit feedback to Microsoft|Off|Determines what metadata the user can decide to submit with feedback/survey|
