@@ -54,11 +54,11 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
    :::image type="content" source="images/mte-apply.png" alt-text="The Name field on the Microsoft Threat Experts application page" lightbox="images/mte-apply.png":::
 
-4. Read the [privacy statement](https://privacy.microsoft.com/privacystatement), then click **Submit** when you're done. You will receive a welcome email once your application is approved.
+4. Read the [privacy statement](https://privacy.microsoft.com/privacystatement), then click **Submit** when you're done. You'll receive a welcome email once your application is approved.
 
    :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="The Microsoft Threat Experts application confirmation message" lightbox="images/mte-applicationconfirmation.png":::
 
-When accepted, you will receive a welcome email and you will see the **Apply** button change to a toggle that is "on". In case you want to take yourself out of the Endpoint Attack Notifications service, slide the toggle "off" and click **Save preferences** at the bottom of the page.
+When accepted, you'll receive a welcome email and you'll see the **Apply** button change to a toggle that is "on". In case you want to take yourself out of the Endpoint Attack Notifications service, slide the toggle "off" and click **Save preferences** at the bottom of the page.
 
 ## Where you'll see the Endpoint Attack Notifications from Microsoft Threat Experts
 
@@ -78,7 +78,7 @@ You can create rules to send email notifications for notification recipients. Se
 
 ## View the Endpoint Attack Notifications
 
-You'll start receiving Endpoint Attack Notifications from Microsoft Threat Experts in your email after you have configured your system to receive email notification.
+You'll start receiving Endpoint Attack Notifications from Microsoft Threat Experts in your email after you've configured your system to receive email notification.
 
 1. Click the link in the email to go to the corresponding alert context in the dashboard tagged with **Threat experts**.
 
@@ -132,7 +132,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 - We see a new type of alert for a living-off-the-land binary: [AlertID]. Can you tell us something more about this alert and how we can investigate further?
 - We've observed two similar attacks, which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
-- I receive an odd alert today for abnormal number of failed logins from a high profile user's device. I cannot find any further evidence around these sign-in attempts. How can Defender for Endpoint see these attempts? What type of sign-ins are being monitored?
+- I receive an odd alert today for abnormal number of failed logins from a high profile user's device. I can't find any further evidence around these sign-in attempts. How can Defender for Endpoint see these attempts? What type of sign-ins are being monitored?
 - Can you give more context or insights about this alert: "Suspicious behavior by a system utility was observed".
 
 ### Possible device compromise
@@ -158,14 +158,14 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 ### Receive a progress report about your managed hunting inquiry
 
-Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you about your **Ask Defender Experts** inquiry within two days, to communicate the investigation status from the following categories:
+Response from Microsoft Threat Experts varies according to your inquiry. They'll email a progress report to you about your **Ask Defender Experts** inquiry within two days, to communicate the investigation status from the following categories:
 
 - More information is needed to continue with the investigation
 - A file or several file samples are needed to determine the technical context
 - Investigation requires more time
 - Initial information was enough to conclude the investigation
 
-It is crucial to respond in quickly to keep the investigation moving.
+It's crucial to respond in quickly to keep the investigation moving.
 
 #### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to
 
