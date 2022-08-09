@@ -25,9 +25,31 @@ description: Learn how to share data loss prevention alerts to users with minima
 
 # Share data loss prevention alerts
 
-Microsoft Purview Data Loss Prevention (DLP) can take actions when it encounters a sensitive item that meets the conditions defined in a policy. Notifications of these actions are sent to the alerts dashboard which is accessible only if you have the appropriate permissions. But, as alerts are triaged and investigated, you may need to share them with other users who don't, and shouldn't, have full permissions to the DLP and the alerts console. You can share an alert with users who don't have full permissions to the alerts dashboard by following the procedures in this article.
+Microsoft Purview Data Loss Prevention (DLP) can take actions when it encounters a sensitive item that meets the conditions defined in a policy. Notifications of these actions are sent to the alerts dashboard, which is accessible only if you have the appropriate permissions. But, as alerts are triaged and investigated, you may need to share them with other users who don't, and shouldn't, have full permissions to DLP and the alerts console. 
 
- You'll see how to use the DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to view alerts, events, and associated metadata for DLP policy violations.
+You can share an alert with users who don't have full permissions to the alerts dashboard by following the procedures in this article.
+
+1. Create a custom role group or assign an account these roles
+    1. View-Only DLP Compliance Management - required
+    1. Data Classification Content Viewer - required
+    1. Preview - optional. Assign this if the reviewer needs to see the source content.
+    
+1. Add the users who need to review individual alerts to this group.
+
+1. Someone with admin access to the DLP alerts console collects the Alert ID and creation time.
+1. 
+1. the investigators open the DLP page and append the alert IT and creation time
+
+
+
+
+
+
+
+
+
+
+You'll see how to use the DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to view alerts, events, and associated metadata for DLP policy violations.
 
 ## Features
 
@@ -92,7 +114,7 @@ To work with the DLP alert management dashboard:
     | Category          | Property name                 | Description                                                                | Applicable event types                   |
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*Event details*||
-    |      | Id                            | Unique ID associated with the event                                        | All events                               |
+    |      | ID                            | Unique ID associated with the event                                        | All events                               |
     |                   | Location                      | Workload where the event was detected                                      | All events                               |
     |                   | Time of activity              | Time of the user activity that caused the DLP violation                    | All events                               |
     |*Impacted entities*||
