@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -60,8 +61,8 @@ The setup wizard is designed to help you set up and configure Defender for Busin
 
 3. **Onboard and configure Windows devices**. In this step, you can onboard your company's Windows devices to Defender for Business quickly. Onboarding devices right away helps to protect those devices from day one. 
 
-   - **If you're already using Microsoft Intune**, and your company has devices enrolled in Intune, you'll be asked whether you want to use [automatic onboarding](#what-is-automatic-onboarding) for some or all of your enrolled Windows devices. Automatic onboarding sets up a connection between Intune and Defender for Business, and then onboards Windows devices to Defender for Business seamlessly. 
-   - **If you're not already using Intune**, you can [onboard devices to Defender for Business](mdb-onboard-devices.md). 
+   - **If you're already using Microsoft Intune**, and your company has devices enrolled in Intune, you can continue using Intune. 
+   - **If you're not using Intune**, you can onboard devices in the Microsoft 365 Defender portal. 
    
    [Learn more about onboarding devices to Defender for Business](mdb-onboard-devices.md).
    
