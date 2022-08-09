@@ -323,7 +323,7 @@ A: See [Order of precedence for preset security policies and other policies](pre
 > [!WARNING]
 > Do not attempt to create, modify, or remove the individual security policies that are associated with the evaluation of Defender for Office 365. The only supported method for creating the individual security policies for the evaluation is to start the evaluation in audit mode in the Microsoft 365 Defender portal for the first time.
 
-[As previously described](#policies-for-trying-defender-for-office-365-features), when you choose audit mode for your trial, evaluation policies with the required settings to observe but not take action on messages are automatically created.
+[As previously described](#defender-for-office-365-features-and-policies), when you choose audit mode for your trial, evaluation policies with the required settings to observe but not take action on messages are automatically created.
 
 To see these policies and their settings, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -462,6 +462,6 @@ Enable-ATPEvaluationRule -Identity "Evaluation Rule"
 
 #### Policies and rules in block mode
 
-[As previously described](#policies-for-trying-defender-for-office-365-features), when you choose blocking mode for your trial, policies are created using the Standard template for [preset security policies](preset-security-policies.md).
+[As previously described](#defender-for-office-365-features-and-policies), when you choose blocking mode for your trial, policies are created using the Standard template for [preset security policies](preset-security-policies.md).
 
 To use Exchange Online PowerShell to view the individual security policies that are associated with the Standard preset security policy, and to use Exchange Online PowerShell to view and configure the recipient conditions and exceptions for the preset security policy, see [Preset security policies in Exchange Online PowerShell](preset-security-policies.md#preset-security-policies-in-exchange-online-powershell).
