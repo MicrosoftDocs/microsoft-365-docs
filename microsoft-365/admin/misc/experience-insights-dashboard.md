@@ -90,12 +90,12 @@ Productivity Score supports the journey to digital transformation with insights 
 
 ### Take training for adoption specialists
 
-In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real world scenarios.
+In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real world scenarios. For more information on training for adoption specialists, read, [Training for adoption specialists](https://docs.microsoft.com/learn/paths/m365-service-adoption/)
 
 ### Join the adoption community
 
-Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Meet and learn from peers and Microsoft Staff and stay up to date on upcoming trainings, events and our monthly Community calls.
+Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Meet and learn from peers and Microsoft Staff and stay up to date on upcoming trainings, events and our monthly Community calls. For more information read, [Adoption community](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption)
 
 ### Use the Microsoft 365 adoption tools
 
-Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience.
+Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience. For more information read, [Microsoft 365 adoption tools](https://adoption.microsoft.com)
