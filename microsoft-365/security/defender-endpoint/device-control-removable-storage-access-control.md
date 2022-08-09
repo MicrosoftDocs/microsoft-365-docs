@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/01/2022
+ms.date: 08/08/2022
 ms.reviewer: tewchen
 ---
 
@@ -409,6 +409,8 @@ Before you get started with Removable Storage Access Control, you must confirm y
 The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
 - Microsoft 365 for E5 reporting
+
+If `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**, an event will be sent to Advanced hunting or the Device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
