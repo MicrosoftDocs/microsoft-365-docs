@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
@@ -521,6 +518,10 @@
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
+
+###### [Device Health]()
+####### [Export device health methods and properties](device-health-api-methods-properties.md)
+####### [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 
 ###### [Certificate inventory]()
 ####### [Export certificate inventory assessment](export-certificate-inventory-assessment.md)
