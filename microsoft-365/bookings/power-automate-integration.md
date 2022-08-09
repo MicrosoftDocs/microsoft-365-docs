@@ -16,7 +16,7 @@ Microsoft Bookings Connector is built to extend Booking appointments with other 
 
 ## Before you begin
 
-Customers who want to use the Bookings Connector must have a Bookings license. For more information about Microsoft Bookings licenses and subscriptions, see [Microsoft Bookings Frequently Asked Questions](bookings-faq.yml#is-bookings-available-for-my-subscription).
+Customers who want to use the Bookings Connector must have a Bookings license. For more information about Microsoft Bookings licenses and subscriptions, see [Microsoft Bookings Frequently Asked Questions](bookings-faq.yml#is-bookings-available-for-my-subscription-).
 
 Microsoft Bookings uses Azure Active Directory (AAD) authentication. A valid Microsoft 365 account ensures that you are authenticated to use Bookings Connector. You must be signed in to create appointment-based flows.
 
