@@ -289,7 +289,7 @@ For information about Manage Microsoft Defender Antivirus update versions, see: 
 ### See also
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
-- [device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
+- [Device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
 - [Threat protection report](threat-protection-reports.md)
 
 ## Publicly released: Device health and compliance report in Microsoft Defender for Endpoint
