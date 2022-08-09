@@ -45,7 +45,7 @@ In addition to always-on, real-time protection and [on-demand antivirus](run-sca
 
 ## Quick scan, full scan, and custom scan
 
-When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended.
+When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended, however it is recommended to run at least one full scan after installing or enabling Defender Antivirus. This provides an opportunity to find existing threats as well as help populate the cache for future scans.
 
 <br/><br/>
 
