@@ -83,7 +83,7 @@ Your devices must be on a minimum build number to use these policies. See the ta
 |Allow users to include log files and content samples when feedback is submitted to Microsoft|Off|Determines metadata the user can decide to submit with feedback/survey|
 
 > [!NOTE]
-> The ***Allow users to access the Feedback portal*** policy is a cloud policy. This policy is not defined in ADMX and does not have a corresponding registry key available to set this policy. Customers must create a cloud policy to enforce. The reason this is a cloud policy is because the feedback portal is a web application that makes a call to the cloud policy service which is also a web application requesting the policies for the user that is signing in. If this policy is configured, the feedback portal will receive the configured policy value in the response from the cloud policy service.
+> The **Allow users to access the feedback portal** policy is a cloud policy. This policy is not defined in ADMX and does not have a corresponding registry key available to set the policy. You should create a cloud policy to enforce it. This is a cloud policy because the feedback portal is a web application that makes a call to the cloud policy service, which is also a web application, requesting the policies for the person who signs in. If this policy is configured, the feedback portal will receive the configured policy value in the response from the cloud policy service.
 
 ## Configure policies
 
