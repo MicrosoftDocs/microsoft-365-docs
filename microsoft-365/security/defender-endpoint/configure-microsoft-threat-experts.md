@@ -106,7 +106,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 
-2. From the upper right-hand menu, click the **?** icon. Then, select **Ask Defender Experts **
+2. From the upper right-hand menu, click the **?** icon. Then, select **Ask Defender Experts**
  
 ![The Microsoft Ask Defender Experts trial subscription page](../../media/mte/flyout-screen-trial-subscription.png)
 
@@ -167,4 +167,4 @@ Response from Microsoft Threat Experts varies according to your inquiry. They wi
 It is crucial to respond in quickly to keep the investigation moving.
 
 #### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to:
-- [Microsoft Defender Experts in Microsoft 365 Overview](defender-experts-for-hunting.md) 
+- [Microsoft Defender Experts in Microsoft 365 Overview](defender-experts-for-hunting.md)
