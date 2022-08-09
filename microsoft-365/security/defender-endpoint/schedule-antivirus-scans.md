@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/22/2022
+ms.date: 08/09/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.technology: mde
@@ -39,15 +39,13 @@ In addition to always-on, real-time protection and [on-demand antivirus](run-sca
 
 ## Keep the following points in mind
 
-- By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default.
+- By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default.
 
 - If a device is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Microsoft Defender Antivirus will run a full scan at the next scheduled time.
 
 ## Quick scan, full scan, and custom scan
 
-When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended, however it is recommended to run at least one full scan after installing or enabling Defender Antivirus. This provides an opportunity to find existing threats as well as help populate the cache for future scans.
-
-<br/><br/>
+When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended; however, we also recommend that you run at least one full scan after installing or enabling Defender Antivirus. This scan provides an opportunity to find existing threats and helps populate the cache for future scans.
 
 |Quick scan|Full scan|Custom scan|
 |---|---|---|
