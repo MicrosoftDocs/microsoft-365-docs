@@ -249,7 +249,7 @@ IOCs that were selected in the suppression conditions will be selected by defaul
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Screenshot of toggle for turning on/off the suppression rule creation feature.":::
     > [!NOTE]
-    > Soon, you will not be able to go back to the previous experience. Only the new suppression experience will be available.
+    > Soon, only the new alert suppression experience will be available. You will not be able to go back to the previous experience.
 
 9.	**Edit existing rules:** <br> You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
     To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         
