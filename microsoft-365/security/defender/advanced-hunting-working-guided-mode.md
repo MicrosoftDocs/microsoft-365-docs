@@ -29,8 +29,8 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
-- 
-- 
+
+
 ## Data types
 [ADD INTRO]
 The following data types are supported for filtering:
