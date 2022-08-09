@@ -92,8 +92,6 @@ catch {
 
 ## Supported scenarios
 
-The following scenarios are supported during Ring0 Preview:
-
 - [Firewall reporting](#firewall-reporting)
 - [From "Computers with a blocked connection" to device](#from-computers-with-a-blocked-connection-to-device)
 - [Drill into advanced hunting (preview refresh)](#drill-into-advanced-hunting-preview-refresh)

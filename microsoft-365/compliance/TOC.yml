@@ -326,7 +326,7 @@
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
-          - name: Create a custom sensitive information types - Compliance Center
+          - name: Create a custom sensitive information type - Compliance Center
             href: create-a-custom-sensitive-information-type.md
           - name: Get started with exact data match based sensitive information types
             href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -1020,6 +1020,8 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Configure a default sensitivity label for SharePoint libraries
+          href: sensitivity-labels-sharepoint-default-label.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
         - name: Set the default sharing link type by using sensitivity labels

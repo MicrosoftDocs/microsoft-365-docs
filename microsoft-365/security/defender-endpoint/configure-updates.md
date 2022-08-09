@@ -40,10 +40,6 @@ To create your own custom gradual rollout process for Defender updates, you can 
 
 The following table lists the available group policy settings for configuring update channels:
 
-<br>
-
-****
-
 |Setting title|Description|Location|
 |---|---|---|
 |Select gradual Microsoft Defender monthly platform update rollout channel|Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout. <p> Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices. <p> Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments. <p> Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%). <p> Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%). <p> Critical- Time Delay: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only. <p>If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.|Windows Components\Microsoft Defender Antivirus|
@@ -99,7 +95,7 @@ Example:
 
 Use `Set-MpPreference -PlatformUpdatesChannel Beta` to configure platform updates to arrive from the Beta Channel.
 
-For more information on the parameters and how to configure them, see [Set-MpPreference (Microsoft Defender Antivirus)|Microsoft Docs](/powershell/module/defender/set-mppreference).
+For more information on the parameters and how to configure them, see [Set-MpPreference](/powershell/module/defender/set-mppreference) (Microsoft Defender Antivirus).
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

@@ -93,7 +93,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 > Cores: 2 minimum, 4 preferred
 > Memory: 1 GB minimum, 4 preferred
 
-For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
+For more information on supported versions of Windows 10, see [Windows 10 release information](/windows/release-health/release-information).
 
 > [!NOTE]
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.

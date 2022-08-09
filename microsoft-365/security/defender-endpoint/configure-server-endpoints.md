@@ -272,7 +272,11 @@ Support for Windows Server provides deeper insight into server activities, cover
 
 ##### Install Microsoft Defender for Endpoint using a script
 
-You can use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. For more information, see the instructions in the following section to use the script with Group Policy.
+You can use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. 
+> [!NOTE]
+> The installation script is signed. Any modifications to the script will invalidate the signature. When you download the script from GitHub, the recommended approach to avoid inadvertent modification is to download the source files as a zip archive then extract it to obtain the install.ps1 file (on the main Code page, click the Code dropdown menu and select "Download ZIP").
+
+This script can be used in a variety of scenarios, including those described in [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](/microsoft-365/security/defender-endpoint/server-migration) and for deployment using Group Policy as described below.
 
 ##### Apply the Microsoft Defender for Endpoint installation and onboarding packages using Group policy
 

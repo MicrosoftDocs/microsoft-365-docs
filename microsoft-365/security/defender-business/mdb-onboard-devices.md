@@ -10,6 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/28/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -339,6 +340,10 @@ See the following resources to get help enrolling these devices into Intune:
 - [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
+
+## View a list of onboarded devices
+
+To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). On the navigation pane, under **Endpoints**, choose **Device inventory**.
 
 ## Next steps
 
