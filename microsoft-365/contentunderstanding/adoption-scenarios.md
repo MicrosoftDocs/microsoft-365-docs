@@ -21,7 +21,7 @@ description: Find business scenarios about how to use SharePoint Syntex in your 
 
 Use the following example scenarios to prompt ideas about how you can use SharePoint Syntex in your organization.
 
-- [Scenario: Track data from invoices by using the **Extract by layout** model](adoption-scenarios.md#scenario-track-data-from-invoices-by-using-the-extract-by-layout-model)
+- [Scenario: Track information from invoices by using the **Extract by layout** model](adoption-scenarios.md#scenario-track-information-from-invoices-by-using-the-extract-by-layout-model)
 - [Scenario: Track information from contracts by using the **Classify and extract by text pattern** model](adoption-scenarios.md#scenario-track-information-from-contracts-by-using-the-classify-and-extract-by-text-pattern-model)
 - [Scenario: Avoid risk with records management, document governance, and compliance processes based on SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
 - [Scenario: Capture information from previously inaccessible documents](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
@@ -29,7 +29,7 @@ Use the following example scenarios to prompt ideas about how you can use ShareP
 - [Scenario: Automate order processing](adoption-scenarios.md#scenario-automate-order-processing)
 - [Scenario: Simplify visa renewal process](adoption-scenarios.md#scenario-simplify-visa-renewal-process)
 
-## Scenario: Track data from invoices by using the Extract by layout model
+## Scenario: Track information from invoices by using the Extract by layout model
 
 For example, you can set up a process using SharePoint Syntex and Power Automate features to track and monitor invoices.
 
@@ -48,7 +48,7 @@ When you automate this scenario, you can:
 - Save time and money by automatically extracting data from the invoices instead of doing it manually.
 - Reduce potential errors and ensure better compliance by using workflows to check invoices and notify you of any issues.
 
-## Scenario: Track information from contracts by using the Classify and extract by text pattern
+## Scenario: Track information from contracts by using the Classify and extract by text pattern model
 
 As another example, you can set up a process to identify contracts your company has with other companies or individuals. Set up a model to extract key information from those contracts, such as the client name, fees, dates, or other important information, and add the information to the library as fields you can quickly view. Apply a retention label on the document library to ensure that contracts can't be deleted before a specific length of time for appropriate compliance with your business regulations.
 
