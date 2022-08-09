@@ -21,7 +21,7 @@ Whiteboard content is stored in both Azure and OneDrive for Business. New whiteb
 
 ## Azure storage overview
 
-Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). 
+Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
 
 Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. Content can be managed using [Whiteboard PowerShell cmdlets](/powershell/module/whiteboard/) and over time, this content will need to be either migrated to OneDrive for Business or deleted.
 
@@ -34,13 +34,13 @@ We're changing how whiteboards are stored when a user's account is deleted in Az
 
 As of **June 1, 2022**, the behavior of whiteboards on Azure has changed. Any whiteboards shared with other users will be deleted.
 
-If you want to retain a deleted user’s whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user. 
+If you want to retain a deleted user’s whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user.
 
 - Follow these instructions to [transfer all whiteboards](/powershell/module/whiteboard/invoke-transferallwhiteboards).
 
 - For more information about how to delete user accounts, see [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user).
 
-Ensure that any deletion process or script handles this change. If you're fine with the whiteboards being deleted, then no action is required. 
+Ensure that any deletion process or script handles this change. If you're fine with the whiteboards being deleted, then no action is required.
 
 ## OneDrive for Business storage overview
 
@@ -50,7 +50,7 @@ Any users who do not have OneDrive for Business provisioned will no longer be ab
 
 An average whiteboard might be anywhere from 50 KB to 1 MB in size and located wherever your OneDrive for Business content resides. To check where data for your tenant is stored, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). Then look at the location for OneDrive for Business.
 
-### Controls for OneDrive for Business storage 
+### Controls for OneDrive for Business storage
 
 You can manage Whiteboard data using existing OneDrive for Business controls. For more information, see [OneDrive guide for enterprises](/onedrive/plan-onedrive-enterprise).
 
@@ -79,5 +79,3 @@ Data controls planned for future releases:
 [Manage sharing for Whiteboard](manage-sharing-organizations.md)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)
-
-
