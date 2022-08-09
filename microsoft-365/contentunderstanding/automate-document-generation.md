@@ -49,7 +49,7 @@ Follow these steps to automatically generate documents using a modern template a
 
     - When an item is created
     - When an item is created or modified
-    - When an ttem is deleted
+    - When an item is deleted
 
 4. Next, set up the trigger by associating the SharePoint site with the name of the SharePoint list. Select **New step**. 
 
