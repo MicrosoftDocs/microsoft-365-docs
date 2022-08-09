@@ -46,8 +46,8 @@ You can use the Shifts connector wizard in the Microsoft 365 admin center or Pow
 
 |Connector|Connection setup|
 |---------|---------|
-|[Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)|Use the [Shifts connector wizard](shifts-connector-wizard.md) or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to connect Shifts to Blue Yonder Workforce Management.|
-|[Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md) to connect Shifts to UKG Dimensions.|
+|[Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)|Connect Shifts to Blue Yonder Workforce Management by using the [Shifts connector wizard](shifts-connector-wizard.md) or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md).|
+|[Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions)|Connect Shifts to UKG Dimensions by using the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md).|
 
 After a connection is set up, you manage it by using [Shifts connector PowerShell cmdlets](#shifts-connector-cmdlets).
 
