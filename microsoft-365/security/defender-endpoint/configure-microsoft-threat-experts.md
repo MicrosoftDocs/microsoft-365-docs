@@ -107,6 +107,8 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 
 2. From the upper right-hand menu, click the **?** icon. Then, select **Ask Defender Experts **
+ 
+   :::image type="content" source="images/flyout-screen-trial-subscription.png" alt-text="The Microsoft Ask Defender Experts trial subscription page" lightbox="images/flyout-screen-trial-subscription.png":::
 
 A flyout screen opens. The following screen shows when you are on a trial subscription. The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
 
