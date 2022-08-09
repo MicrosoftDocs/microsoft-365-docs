@@ -135,8 +135,9 @@
         - name: Solutions
           items:
             - name: Manage contracts in Microsoft 365
-              href: solution-manage-contracts-in-microsoft-365.md 
               items:
+               - name: Overview
+                 href: solution-manage-contracts-in-microsoft-365.md 
                - name: Step 1. Use SharePoint Syntex
                  href: solution-manage-contracts-step1.md
                - name: Step 2. Use Microsoft Teams
