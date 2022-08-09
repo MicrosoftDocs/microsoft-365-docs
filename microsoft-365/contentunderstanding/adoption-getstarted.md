@@ -100,8 +100,8 @@ Identify the stakeholders for your project.
 
 |Role |Responsibilities |Department |
 |:-------|:-------|:--------|
-| Executive sponsors   | Communicate high-level vision and values to the company   |  Executive leadership   |
-| Project leads | Oversee the entire launch execution and rollout process | Project management |
+| Executive sponsor   | Communicate high-level vision and values to the company   |  Executive leadership   |
+| Project lead | Oversee the entire launch execution and rollout process | Project management |
 | Knowledge administrators| Create and manage the content centers | IT or other department|
 | Content managers and model owners| Gather use cases and create and apply models | Any department|
 | Champions | Help evangelize and manage objection handling | Any department (staff) |
