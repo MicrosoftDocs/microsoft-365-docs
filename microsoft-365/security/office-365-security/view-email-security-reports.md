@@ -331,6 +331,45 @@ On the **Mailflow status report** page, the ![Export icon.](../../media/m365-cc-
 
 The **Mail latency report** in Defender for Office 365 contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-mdo.md#mail-latency-report).
 
+## Post-delivery activities
+
+The **Post-delivery activities** report shows information about email messages that removed from user mailboxes after delivery by zero-hour auto purge (ZAP). For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
+
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **ZAP report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ZapReport>.
+
+<!---Insert widget with data screenshot---->
+
+On the **Post-delivery activities** page, the chart shows the following information for the specified date range:
+
+- **Not spam**: The number of unique delivered messages that were found to be not spam by ZAP.
+- **Spam**: The number of unique messages that were removed from mailboxes by ZAP for spam.
+- **Phishing**: The number of unique messages that were removed from mailboxes by ZAP for phishing.
+- **Malware**: The number of unique messages that were removed from mailboxes by ZAP for phishing.
+
+The details table below the graph shows the following information:
+
+- **Subject**
+- **Received time**
+- **Sender**
+- **ZAP time**
+- **Original location**
+- **Updated threat**
+
+You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+
+- **Date (UTC)**: **Start date** and **End date**.
+- **Verdict**:
+  - **Not spam**
+  - **Spam**
+  - **Phishing**
+  - **Malware**
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the **Post delivery activities** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+
+<!---Insert page with data screenshot---->
+
 ## Spam detections report
 
 > [!NOTE]
