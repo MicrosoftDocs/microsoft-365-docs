@@ -44,12 +44,11 @@ The person who performs this integration should be an administrator of Schoology
 1. Locate the **Microsoft OneDrive** app and select it to view the details.
 1. Select the **Install LTI 1.3 App** button to begin the installation process.
 1. Select the **I agree** button.
-1. You'll be prompted to share required information with the app and to confirm access to *LTI Advantage services*, like **Deep Linking**, **Names and Roles**, and **Assignments and Grading**.
-1. Select the **Continue** button.
+1. You'll be prompted to share required information with the app and to confirm access to *LTI Advantage services*, like **Deep Linking**, **Names and Roles**, and **Assignments and Grading**. Select the **Continue** button.
 1. You'll be asked if this should be installed for your entire organization, or just for you. Select **Add to Organization**, and you'll be redirected to the **Organization Apps** page to complete the configuration.
 1. From the [**Organization Apps list**](https://app.schoology.com/apps/school_apps), locate the **Microsoft OneDrive** app and select the **Configure** button.
     1. Copy the **Deployment ID** assigned to your deployment of the app.
-        1. This ID will be used in the **Microsoft LMS Gateway** configuration process.
+        1. This ID will be used in the **Microsoft LMS Gateway's** configuration process.
 1. From the [**Organization Apps list**](https://app.schoology.com/apps/school_apps), locate the **Microsoft OneDrive** app and select the **Install/Remove** button.
     1. To install the app for all courses, choose the **All Courses** checkbox.
         1. Don't check the **Course Admins Only** option to ensure the app is available to all members of the course.
