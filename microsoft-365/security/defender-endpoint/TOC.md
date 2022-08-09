@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
@@ -513,6 +510,7 @@
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
 ####### [Export secure configuration assessment](get-assessment-secure-config.md)
 ####### [Export software inventory assessment](get-assessment-software-inventory.md)
+####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
@@ -520,6 +518,10 @@
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
+
+###### [Device Health]()
+####### [Export device health methods and properties](device-health-api-methods-properties.md)
+####### [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 
 ###### [Certificate inventory]()
 ####### [Export certificate inventory assessment](export-certificate-inventory-assessment.md)

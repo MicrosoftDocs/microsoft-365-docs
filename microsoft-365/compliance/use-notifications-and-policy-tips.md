@@ -156,7 +156,7 @@ Here are some fine points to understand about using a policy tip to override a r
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
 
-- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FlasePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
+- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
 
 #### Availability of Override
 

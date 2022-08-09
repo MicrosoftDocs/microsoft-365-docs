@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business Premium"
+title: "Protect against malware and other threats with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -21,7 +21,7 @@ search.appverid:
 description: "Get help with increasing the level of protection in Microsoft 365 Business Premium"
 ---
 
-# Increase threat protection for Microsoft 365 Business Premium
+# Protect against malware and other cyberthreats with Microsoft 365 Business Premium
 
 In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
 
@@ -29,7 +29,7 @@ In this objective, you increase your threat protection with Microsoft 365 Busine
 - [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs.
 - [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used.
-- [Next steps](#next-steps) (such as securing unmanaged devices)
+- [Your next objectives](#next-objectives).
 
 ## Review and apply preset security policies
 
@@ -202,6 +202,11 @@ You can prevent people in your organization from sharing their calendars. You ca
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
 
-## Next steps
+## Next objectives
 
-Okay, now let's [**set up those unmanaged BYOD devices**](m365bp-devices-overview.md).
+Proceed to:
+
+- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
+- [Protect all email](m365bp-protect-email-overview.md)
+- [Collaborate and share securely](m365bp-collaborate-share-securely.md)
+- [Set up and secure managed devices](m365bp-protect-devices.md)
