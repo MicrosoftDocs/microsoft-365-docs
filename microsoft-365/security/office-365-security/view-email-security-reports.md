@@ -331,7 +331,7 @@ On the **Mailflow status report** page, the ![Export icon.](../../media/m365-cc-
 
 The **Mail latency report** in Defender for Office 365 contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-mdo.md#mail-latency-report).
 
-## Post-delivery activities
+## Post-delivery activities report
 
 The **Post-delivery activities** report shows information about email messages that removed from user mailboxes after delivery by zero-hour auto purge (ZAP). For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
