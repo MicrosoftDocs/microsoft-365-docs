@@ -29,6 +29,9 @@ If your organization doesn't have a requirement to restrict collaboration with o
 > [!NOTE]
 > Changes to cross-tenant access settings may take two hours to take effect.
 
+> [!NOTE]
+> The groups should also be enabled for guest access. For more informaton, read [Manage groups guest access](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/manage-guest-access-in-groups)
+
 ## Allow users to invite people in other organizations to participate in shared channels
 
 You can allow your users to invite people from other organizations to use shared resources - such as shared channels in Teams - by default.
