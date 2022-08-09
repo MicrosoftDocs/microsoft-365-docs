@@ -1,5 +1,5 @@
 ---
-title: Use PowerShell to manage your Shifts connection to your workforce management system
+title: Manage your Shifts connection to your workforce management system
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer:
@@ -18,7 +18,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Use PowerShell to manage your Shifts connection to your workforce management system
+# Manage your Shifts connection to your workforce management system
 
 ## Overview
 
