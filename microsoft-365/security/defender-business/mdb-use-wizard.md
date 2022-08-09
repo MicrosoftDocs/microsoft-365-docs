@@ -66,7 +66,9 @@ The setup wizard is designed to help you set up and configure Defender for Busin
    
    [Learn more about onboarding devices to Defender for Business](mdb-onboard-devices.md).
    
-4. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. And, if you're already using Intune, you can continue using the Microsoft Endpoint Manager admin center to manage your security policies.
+4. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. 
+
+   If you're already using Intune to manage your devices and security policies, you can continue using the Microsoft Endpoint Manager admin center.
 
    [View and edit your security policies and settings](mdb-configure-security-settings.md).
 
