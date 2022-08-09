@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dgali
+ms.author: v-dgali
 author: dgali297
 ms.localizationpriority: medium
 manager: dansimp
