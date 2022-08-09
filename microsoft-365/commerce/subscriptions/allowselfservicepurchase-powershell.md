@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 4/7/2022
+ms.date: 08/09/2022
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
@@ -29,9 +29,10 @@ The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](ht
 
 You can use the **MSCommerce** PowerShell module to:
 
-- View the default state of the **AllowSelfServicePurchase** parameter value — whether it's enabled or disabled
-- View a list of applicable products and whether self-service purchase is enabled or disabled
+- View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled, disabled, or allows trials without a payment method
+- View a list of applicable products and whether self-service purchase is enabled, disabled, or allows trials without a payment method
 - View or modify the current setting for a specific product to either enable or disable it
+- View or modify the setting for trials without payment methods
 
 ## Requirements
 
@@ -112,7 +113,17 @@ The following table lists the available products and their **ProductId**.
 
 ## View or set the status for AllowSelfServicePurchase
 
-After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.
+You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or prevent users from making a self-service purchase. You can also use the **OnlyTrialsWithoutPaymentMethod** value to allow users to try products from the approved list of products. Users can only buy the product after the trial is over if **AllowSelfServicePurchase** is enabled.
+
+The **OnlyTrialsWithoutPaymentMethod** value allows temporary trials while still blocking purchases.
+
+The following table describes the settings for the **Value** parameter.
+
+| **Setting** | **Impact** |
+|---|---|
+| Enabled | Users can make self-service purchases and acquire trials for the product. |
+| OnlyTrialsWithoutPaymentMethod | Users cannot make self-service purchases but can acquire trials for the product. They can't purchase the full version after the trial expires. |
+| Disabled | Users can't make self-service purchases or acquire trials for the product. |
 
 To get the policy setting for a specific product, run the following command:
 
@@ -123,13 +134,19 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 To enable the policy setting for a specific product, run the following command:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Enabled"
 ```
 
 To disable the policy setting for a specific product, run the following command:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Disabled"
+```
+
+To allow users to try a specific product without a payment method, run the following command:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
 ## Example script to disable AllowSelfServicePurchase
@@ -140,16 +157,15 @@ The following example walks you through how to import the **MSCommerce** module,
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Value "Disabled"
 ```
 
 If there are multiple values for the product, you can run the command individually for each value as shown in the following example:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
 ```
-
 
 ## Troubleshooting
 
@@ -185,5 +201,4 @@ Uninstall-Module -Name MSCommerce
 ## Related content
 
 [Manage self-service purchases (Admin)](manage-self-service-purchases-admins.md) (article)
-
 [Self-service purchase FAQ](self-service-purchase-faq.yml) (article)

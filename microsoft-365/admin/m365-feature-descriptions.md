@@ -224,7 +224,7 @@ Microsoft Office 365 provides the following help and training resources. Communi
 
 **Languages for Troubleshooting:** Chinese-Simplified, Chinese-Traditional, French, German, Italian, Japanese, Korean, Polish, Portuguese-Brazil, Russian, and Spanish.
 
-# [**Domains, networks, partners, S&C, and SLA**](#tab/Domains)
+# [**Domains, networking and partners**](#tab/Domains)
 
 ## Domains
 
@@ -297,6 +297,8 @@ As an authorized Microsoft partner, Microsoft Office 365 offers you an opportuni
 **Connect with customers and other partners in the Office 365 Marketplace:** Office 365 Marketplace offers customers the opportunity to find partner services and expertise. For more information, see [Connect with customers through record or up next widget](/dynamics365/sales/connect-with-customers) and [Work with other partners - Partner Center](/partner-center/work-with-other-partners).
 
 **Microsoft partner network:** The Microsoft Partner Network is committed to serving the needs of our partners. To join the network, and to see how Microsoft serves its partners, see [Microsoft Partner Network](https://go.microsoft.com/fwlink/?LinkID=272021&clcid=0x409).
+
+# [**Privacy, security, rights, and SLA**](#tab/Privacy)
 
 ## Privacy, security, and transparency
 

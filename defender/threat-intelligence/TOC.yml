@@ -31,3 +31,5 @@
   items:
   - name: Gathering threat intelligence and infrastructure chaining
     href: gathering-threat-intelligence-and-infrastructure-chaining.md
+  - name: Gathering vulnerability intelligence
+    href: gathering-vulnerability-intelligence.md
