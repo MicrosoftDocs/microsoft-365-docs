@@ -34,6 +34,7 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
+### [Migrate Defender for Endpoint servers to Defender for Cloud](migrating-mde-server-to-cloud.md)
 ### [Move to Defender for Endpoint](switch-to-mde-overview.md)
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
@@ -66,9 +67,6 @@
 #### [Onboard Windows Server devices using Group Policy](configure-endpoints-gp.md)
 #### [Onboard Windows Server using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-
-
-
 
 
 
@@ -278,6 +276,7 @@
 ##### [Enable exploit protection](enable-exploit-protection.md)
 ##### [Customize exploit protection](customize-exploit-protection.md)
 ##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
+##### [Troubleshoot exploit protection mitigations](troubleshoot-exploit-protection-mitigations.md)
 ##### [Exploit protection reference](exploit-protection-reference.md)
 #### [Network protection]()
 ##### [Protect your network](network-protection.md)
@@ -511,6 +510,7 @@
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
 ####### [Export secure configuration assessment](get-assessment-secure-config.md)
 ####### [Export software inventory assessment](get-assessment-software-inventory.md)
+####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
@@ -518,6 +518,10 @@
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
+
+###### [Device Health]()
+####### [Export device health methods and properties](device-health-api-methods-properties.md)
+####### [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 
 ###### [Certificate inventory]()
 ####### [Export certificate inventory assessment](export-certificate-inventory-assessment.md)

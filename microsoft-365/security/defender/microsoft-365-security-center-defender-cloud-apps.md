@@ -2,7 +2,7 @@
 title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -33,7 +33,7 @@ ms.custom: admindeeplinkDEFENDER
 Microsoft Defender for Cloud Apps is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
 SOC analysts will be able to triage, investigate and hunt across all Microsoft 365 Defender workloads, including cloud apps.
-Defender for Cloud Apps alerts will continue to appear in Microsoft 365 Defender’s incidents queue and alerts queue, but now with relevant content inside the alert pages available in the Microsoft 365 Defender portal, in a unified format with the proper adaptations to each alerts type.
+Defender for Cloud Apps alerts will continue to appear in Microsoft 365 Defender's incidents queue and alerts queue, but now with relevant content inside the alert pages available in the Microsoft 365 Defender portal, in a unified format with the proper adaptations to each alerts type.
 
 Take a look in Microsoft 365 Defender at <https://security.microsoft.com>.
 

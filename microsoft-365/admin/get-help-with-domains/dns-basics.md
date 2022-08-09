@@ -12,8 +12,8 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet

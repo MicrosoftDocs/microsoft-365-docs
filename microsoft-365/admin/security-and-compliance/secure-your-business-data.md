@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb

@@ -46,7 +46,6 @@ Existing customers that have their core customer data stored in an already exist
 |**Norway**| European Union | Norway | April 2020 |
 |**Brazil**| Americas | Brazil | November 2020 |
 |**Sweden**| European Union | Sweden | November 2021 |
-|**Qatar**| European Union | Qatar | August 2022 |
 
 As of October 1, 2020 customers with an Office 365 Education subscription included in the tenant are not eligible for migration.
 

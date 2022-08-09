@@ -46,7 +46,7 @@ You must be either a Windows 365 Administrator or a Global Administrator in the 
 
 5.  From the list of Cloud PCs, select the Cloud PC for which you want to change the account type.
 
-6.  In the **Cloud PC details** pane, select **Change account type**.
+6.  In the Cloud PC details pane, select **Change account type**.
 
 7.  In the **Change Cloud PC account type** pane, select the account type for the Cloud PC, and then select **Save**.
 
