@@ -77,4 +77,4 @@ You can assign more than one staff member as host. If your service has only one 
 ## Related content
 
 [Microsoft Power Automate Connectors](https://make.preview.powerautomate.com/connectors/shared_microsoftbookings/microsoft-bookings/)\
-[Microsoft Bookings (Preview) Reference](https://docs.microsoft.com/connectors/microsoftbookings/) (article)
+[Microsoft Bookings (Preview) Reference](/connectors/microsoftbookings/) (article)
