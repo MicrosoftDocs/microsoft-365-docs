@@ -85,7 +85,7 @@ After the app is registered in Brightspace, copy values from Brightspace's regis
 
 After Microsoft OneDrive LTI and Brightspace are connected, you need to deploy the OneDrive LTI app in users' Brightspace experience.
 
-1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
+1. Sign into your Brightspace admin site.
 1. Select the LTI app that you created.
 1. Enter in a deployment a name.
 1. Select all security settings except **Classlist** and **Anonymous**.
@@ -95,7 +95,7 @@ After Microsoft OneDrive LTI and Brightspace are connected, you need to deploy t
 
 ### Create links to the OneDrive LTI app in users' Brightspace experience
 
-1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
+1. Sign into your Brightspace admin site.
 1. Select the Brightspace OneDrive LTI app you created. Deployment details will appear.
 1. Select **View Links**.
 1. Select **Create a link**.
