@@ -71,7 +71,7 @@ Determine who in your organization will build and manage the models. The followi
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
 | AAD role| AAD role | AAD role | Champions |
-| Configure Power Platform | Configure Dataverse environment | Gather use cases | Gather business use cases |
+| Configure **Extract by layout** and **Extract by text pattern and layout** models | Configure Dataverse environment | Gather use cases | Gather business use cases |
 | Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
 
 Knowledge manager, business process owner, and content model owner create sample models and champion adoption in the organization. Others who might be involved the compliance admin and taxonomy managers.
@@ -100,8 +100,8 @@ Identify the stakeholders for your project.
 
 |Role |Responsibilities |Department |
 |:-------|:-------|:--------|
-| Executive sponsor(s)   | Communicate high-level vision and values to the company   |  Executive leadership   |
-| Project lead(s) | Oversee the entire launch execution and rollout process | Project management |
+| Executive sponsors   | Communicate high-level vision and values to the company   |  Executive leadership   |
+| Project leads | Oversee the entire launch execution and rollout process | Project management |
 | Knowledge administrators| Create and manage the content centers | IT or other department|
 | Content managers and model owners| Gather use cases and create and apply models | Any department|
 | Champions | Help evangelize and manage objection handling | Any department (staff) |
