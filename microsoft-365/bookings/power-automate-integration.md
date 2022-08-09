@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 description: "Use Power Automate Bookings Connectors to create custom workflows with appointment triggers."
 ---
 
+# Use Power Automate connectors to build Bookings workflows
+
 Microsoft Bookings Connector is built to extend Booking appointments with other functionalities that power platform has to offer. If you've ever wanted to build custom workflows for your business customer appointments, for example allowing customers to book a Zoom meeting along with an appointment, integrating a payment method using Stripe, uploading customer data to a CRM system, or sending out welcome emails, Bookings Connector is your Bookings solution.
 
 ## Before you begin
@@ -56,15 +58,13 @@ HTTP Error Codes while creating flows:
 - '403': Only Bookings admins can create appointment flows. See the first issue in Known issues and limitations above.
 - '403': Notification URL domain isn't part of the allowed list.
 - '429': More than the expected number of appointment flows have been created for a business. See the limit of five flows issues in the Known issues and limitations above.
-- '500': This is an internal server error. Report this to your support engineer and include the error details in the flow creation response.
+- '500': This is an internal server error. Report this error to your support engineer and include the error details in the flow creation response.
 
 ## Frequently Asked Questions
 
 **How do I get the SMTP address for creating an appointment trigger based flow?**
 
-To create appointment trigger-based flows, the creator must get the SMTP address of the Bookings business. This is the same SMTP address that is used to make graph calls. This is also a part of the Bookings page URL.
-
-![SMTPAddress.png](/.attachments/SMTPAddress-15765399-bfdb-4ff0-84c6-776240b35884.png)
+To create appointment trigger-based flows, the creator must get the SMTP address of the Bookings business. This is the same SMTP address used to make graph calls. This is also a part of the Bookings page URL.
 
 **How can I get customer data from the appointment trigger responses?**
 
@@ -77,4 +77,4 @@ You can assign more than one staff member as host. If your service has only one 
 ## Related content
 
 [Microsoft Power Automate Connectors](https://make.preview.powerautomate.com/connectors/shared_microsoftbookings/microsoft-bookings/)\
-[Microsoft Bookings (Preview) Reference](https://docs.microsoft.com/connectors/microsoftbookings/) (article)\
+[Microsoft Bookings (Preview) Reference](https://docs.microsoft.com/connectors/microsoftbookings/) (article)
