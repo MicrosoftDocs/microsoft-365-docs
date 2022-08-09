@@ -108,7 +108,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 2. From the upper right-hand menu, click the **?** icon. Then, select **Ask Defender Experts **
  
-   :::image type="content" source="images/flyout-screen-trial-subscription.png" alt-text="The Microsoft Ask Defender Experts trial subscription page" lightbox="images/flyout-screen-trial-subscription.png":::
+![The Microsoft Ask Defender Experts trial subscription page](../../media/mte/flyout-screen-trial-subscription.png)
 
 A flyout screen opens. The following screen shows when you are on a trial subscription. The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
 
