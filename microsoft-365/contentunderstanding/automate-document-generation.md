@@ -19,7 +19,7 @@ description: Learn how to automatically create documents and other content using
 
 Using content assembly in SharePoint Syntex together with Power Automate, you can automate the generation of documents using modern templates. 
 
-The preview version of this Power Automate action is a SharePoint connector named “Generate document using SharePoint Syntex (preview)” and has limited capabilities. 
+This preview version is a Power Automate action in a SharePoint connector named “Generate document using SharePoint Syntex (preview)” and has limited capabilities. 
 
 ## Scope of the preview 
 
