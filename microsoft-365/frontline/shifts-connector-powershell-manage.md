@@ -61,7 +61,7 @@ This article describes how to use PowerShell to do the following:
 - [Disable sync for a connection](#disable-sync-for-a-connection)
 
 > [!NOTE]
-> This article assumes that you've already set up a connection to your workforce management system, either by using the wizard or PowerShell.
+> This article assumes that you've already set up a connection to your WFM system, either by using the wizard or PowerShell.
 
 ## Before you begin
 
