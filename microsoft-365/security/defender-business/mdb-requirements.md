@@ -10,6 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -34,7 +35,7 @@ The following table lists the basic requirements you need to configure and use D
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Microsoft 365 Business Premium or Defender for Business (standalone). See [How to get Defender for Business](get-defender-business.md).<p>Note that if you have multiple subscriptions, the highest subscription takes precedence. For example, if you have Microsoft Defender for Endpoint Plan 2 (purchased or trial subscription), and you get Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business experience. See [What happens if I have a mix of Microsoft 365 Defender subscriptions](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?  |
+| Subscription | Microsoft 365 Business Premium or Defender for Business (standalone). See [How to get Defender for Business](get-defender-business.md).  |
 | Datacenter | One of the following datacenter locations: <ul><li>European Union</li><li>United Kingdom</li><li>United States</li></ul> |
 | User accounts |<ul><li>User accounts are created in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).</li><li>Licenses for Defender for Business (or Microsoft 365 Business Premium) are assigned in the Microsoft 365 admin center.</li></ul>To get help with this task, see [Add users and assign licenses](mdb-add-users.md). |
 | Permissions  | To sign up for Defender for Business, you must be a Global Admin.<p>To access the Microsoft 365 Defender portal, users must have one of the following [roles in Azure AD](mdb-roles-permissions.md) assigned:<ul><li>Security Reader</li><li>Security Admin</li><li>Global Admin</li></ul>To learn more, see [Roles and permissions in Defender for Business](mdb-roles-permissions.md). |
