@@ -60,7 +60,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Bulk email threshold & spam properties**|||||
-|**Bulk email threshold** <br><br> _BulkThreshold_|7|6|4|For details, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).|
+|**Bulk email threshold** <br><br> _BulkThreshold_|7|6|5|For details, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|This setting is only available in PowerShell.|
 |**Increase spam score** settings|Off|Off|Off|All of these settings are part of the Advanced Spam Filter (ASF). For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
 |**Mark as spam** settings|Off|Off|Off|Most of these settings are part of ASF. For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
