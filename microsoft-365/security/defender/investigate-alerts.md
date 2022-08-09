@@ -197,7 +197,7 @@ To create a suppression rule for alerts:
     IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
     
     > [!NOTE]
-    > You cannot suppress an alert triggered by 'custom detection' source. You cannot create a suppression rule for this alert.
+    > You can no longer suppress an alert triggered by 'custom detection' source. You cannot create a suppression rule for this alert.
      
 3. In the **IOCs** section, select **Any IOC** to suppress the alert no matter what 'evidence' has caused the alert. 
 
@@ -245,8 +245,11 @@ IOCs that were selected in the suppression conditions will be selected by defaul
     :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Screenshot of successful suppression rule creation. ":::
 
 8.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
+
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Screenshot of toggle for turning on/off the suppression rule creation feature.":::
+    > [!NOTE]
+    > Soon you will not be able to go back to the previous experience. Only the new suppression experience will be available.
 
 9.	**Edit existing rules:** <br> You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
     To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         
