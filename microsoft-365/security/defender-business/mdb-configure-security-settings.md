@@ -86,11 +86,11 @@ Depending on whether you're using the Microsoft 365 Defender portal or the Micro
 
 Web content filtering enables your security team to track and regulate access to websites based on content categories, such as:
 
-- Adult content: Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence
-- High bandwidth: Download sites, image sharing sites, or peer-to-peer hosts
-- Legal liability: Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities
-- Leisure: Sites that provide web-based chat rooms, online gaming, web-based email, or social networking
-- Uncategorized: Sites that have no content or that are newly registered
+- **Adult content**: Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence
+- **High bandwidth**: Download sites, image sharing sites, or peer-to-peer hosts
+- **Legal liability**: Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities
+- **Leisure**: Sites that provide web-based chat rooms, online gaming, web-based email, or social networking
+- **Uncategorized**: Sites that have no content or that are newly registered
 
 Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
 
@@ -102,9 +102,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 2. Specify a name and description for your policy.
 
-3. Select the categories to block. Use the expand icon to fully expand each parent category, and then select specific web content categories. To set up an audit-only policy that doesn't block any websites, don't select any categories.
-
-   Don't select **Uncategorized**.
+3. Select the categories to block. Use the expand icon to fully expand each parent category, and then select specific web content categories. To set up an audit-only policy that doesn't block any websites, don't select any categories. Don't select **Uncategorized**.
 
 4. Specify the policy scope by selecting device groups to apply the policy to. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 
