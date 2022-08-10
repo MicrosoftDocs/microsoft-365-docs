@@ -18,9 +18,9 @@ f1.keywords: NOCSH
 # Test Base SDK for Python
 
 ## Overview
-The Test Base SDK can be used to interact with the Azure test base resource. (i.e. manage your application package, include create package, edit package and delete package)
+The Test Base SDK can be used to interact with the Azure test base resource. (that is, manage your application package, include create package, edit package and delete package) i.e.
 
-With the SDK, the test summary and Analysis Result which can be gotten include : scriptExecution, reliability, memoryUtilization, cpuUtilization, memoryRegression, cpuRegression.
+With the SDK, the test summary and Analysis Result that can be gotten include: scriptExecution, reliability, memoryUtilization, cpuUtilization, memoryRegression, cpuRegression.
 
 With the Test Base SDK, you can integrate test base in your CI/CD pipeline.
 
