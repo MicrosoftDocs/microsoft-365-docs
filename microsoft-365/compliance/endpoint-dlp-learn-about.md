@@ -97,8 +97,9 @@ File Types are a grouping of file formats which are utilized to protect specific
 |word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
 |spreadsheet    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
 |presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
-|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
 |email    |Outlook |.pst, .ost, .msg         |
+<!--|encrypted |file explorer | .pgp |-->
 
 ### File extensions
 
