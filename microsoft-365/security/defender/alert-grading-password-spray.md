@@ -47,7 +47,7 @@ This section contains step-by-step guidance to respond to the alert and take the
 
 Here's an example of a password spray alert in the alert queue:
 
-![Alt image text](../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png)
+:::image type="content" source="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 interface showing the Device type." lightbox="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png":::
 
 This means there's suspicious user activity originating from an IP address that might be associated with a brute-force or password spray attempt according to threat intelligence sources.
 
