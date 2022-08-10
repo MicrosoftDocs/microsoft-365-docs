@@ -47,7 +47,7 @@ This section contains step-by-step guidance to respond to the alert and take the
 
 Here's an example of a password spray alert in the alert queue:
 
-![Alt image text](../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png)
+:::image type="content" source="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png" alt-text="Screenshot of a notification in the alert queue." lightbox="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png":::
 
 This means there's suspicious user activity originating from an IP address that might be associated with a brute-force or password spray attempt according to threat intelligence sources.
 
@@ -62,7 +62,7 @@ This means there's suspicious user activity originating from an IP address that 
 
     - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the Activity log indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. Note that this activity must be further correlated to other activities.
 
-        ![Alt image text](../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png)
+        :::image type="content" source="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 interface showing the Device type." lightbox="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png":::
 
         _Figure 1. The Device type field shows `Unknown(BAV2ROPC)` user agent in Microsoft 365 Defender._ 
     - **Check the use of anonymous proxies or the Tor network.** Threat actors often use these alternative proxies to hide their information, making them difficult to trace. However, not all use of said proxies correlate with malicious activities. You must investigate other suspicious activities that might provide better attack indicators.
