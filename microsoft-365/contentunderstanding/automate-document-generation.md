@@ -41,9 +41,9 @@ Follow these steps to automatically generate documents using a modern template a
 
 1. Sign in to Power Automate.
 
-2. In the left panel, select **Connectors**, and then select **SharePoint** under popular connectors.
+2. In the left panel, select **Connectors**. In the search box, search for *SharePoint*, and then select the **SharePoint** connector.
 
-3. In the subsequent screen, select the trigger that should start the automated document generation process. 
+3. On the SharePoint connector page, select the trigger that should start the automated document generation process. 
 
     We recommend starting with any one of the following three triggers:
 
@@ -64,14 +64,12 @@ Follow these steps to automatically generate documents using a modern template a
 7. Once the template is selected, you'll start seeing the template fields. Associate the fields with the columns in the list. 
 
     > [!NOTE]
-    >Honoring the data mapping in the template is not supported in this preview. For example, if you have associated a field in your template with an MMD column during automated generation, you will be able to associate this field with a column in a list. 
+    >Honoring the data mapping in the template is not supported in this preview. For example, if you have associated a field in your template with a managed metadata column during automated generation, you will be able to associate this field with a column in a list. 
 
-8. Once done, save the flow. 
-
-9. You're all set! 
+8. When done, select **Save** to save the flow. 
 
 > [!NOTE]
-> We recommend using templates that do not need users to add values manually for document generation. If the template needs manual input for a field, you can specify that value against the field rather than mapping it to a SharePoint list column.  
+> We recommend using templates that don't need users to manually add values for document generation. If the template needs manual input for a field, you can specify that value against the field rather than mapping it to a SharePoint list column.  
 
 ## See also
 
