@@ -32,7 +32,7 @@ Email authentication mechanisms like [SPF](set-up-spf-in-office-365-to-help-prev
 
 ## Authenticated Received Chain (ARC) in Microsoft 365 Defender for Office
 
-Services that modify content during transport of the message before delivery to your organization, can invalidate the DKIM email signature and affect the authentication of the message. When these intermediary services, perform such actions, they can use ARC to provide details of the original authentication before the modifications occurred, which your organization can then trust to help with authenticating the message.  
+Services that modify content during transport of the message before delivery to your organization can invalidate the DKIM email signature and affect the authentication of the message. When these intermediary services perform such actions, they can use ARC to provide details of the original authentication before the modifications occurred, which your organization can then trust to help with authenticating the message.  
 
 **Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** Trusted ARC sealers allows Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
