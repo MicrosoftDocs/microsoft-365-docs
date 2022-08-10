@@ -29,7 +29,7 @@ Watch this video for a quick summary of the tuning and retraining process. You'l
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
+<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]-->
 
 > [!NOTE]
 > Pre-trained classifiers cannot be retrained.
