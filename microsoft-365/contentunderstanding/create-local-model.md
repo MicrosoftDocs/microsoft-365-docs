@@ -55,7 +55,7 @@ This feature is available for all [model types](model-types-overview.md).
 
     ![Screenshot of the Create a model panel.](../media/content-understanding/local-model-create-a-model.png) 
 
-6. Proceed to [train your **Classify and extract by text pattern** model](apply-a-model.md) or to [configure your prebuilt model](prebuilt-models.md) using the files that you selected.
+6. Proceed to [train your **Classify and extract by text pattern** model](apply-a-model.md) or to [configure your prebuilt model](prebuilt-overview.md) using the files that you selected.
 
 7. When done, the **Add to library** panel opens.
 
