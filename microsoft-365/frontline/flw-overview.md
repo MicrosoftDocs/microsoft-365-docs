@@ -33,7 +33,7 @@ Frontline workers are employees whose primary function is to work directly with 
 
 The following image shows the employee experiences that are key to frontline workers, and common areas where Microsoft 365 can improve experiences for frontline workers:
 
-:::image type="content" source="media/flw-pillars-wheel.png" alt-text="Diagram of employee experience wheel with methods to connect & engage with frontline workers, enhance workforce management, and increase operational efficiency.":::
+:::image type="content" source="media/flw-pillars.png" alt-text="Diagram of employee experience wheel with methods to connect & engage with frontline workers, enhance workforce management, and increase operational efficiency.":::
 
 ### Licensing for your frontline workers
 
