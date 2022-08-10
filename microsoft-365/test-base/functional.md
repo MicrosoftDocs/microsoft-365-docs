@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 
 As a software publisher, you can now perform custom functional tests, using the test framework of your choice - via the self-serve Test Base for Microsoft 365 portal. 
 
-When we initially launched the service, we offered the Out-of-box tests, which is a pre-defined set of tests driven through standardized scripting. However,this couldn't achieve full test coverage for many Independent Software publishers (ISVs). 
+When we initially launched the service, we offered the Out-of-box tests, which is a pre-defined set of tests driven through standardized scripting. However, this couldn't achieve full test coverage for many Independent Software Vendors (ISVs). 
 
 Hence, in response to your feedback, we're providing our ISVs with the ability to upload automated functional tests.
 
@@ -43,7 +43,7 @@ Tab 1 - Enter basic information. Provide the name and version of your applicatio
 
 ![Select the functional testing tab.](Media/functional_testing_tab1.png)
 
-Tab 2 - Upload the components of your package by uploading a zip file with your entire test (binaries, dependencies, scripts etc., etch, eta). 
+Tab 2 - Upload the components of your package by uploading a zip file with your entire test (binaries, dependencies, scripts etc). 
 
 See aka.ms/usl-package-outline for details. (Note: Both the Out-of-Box test scripts and the Functional test contents should be placed into the same zip file). Currently, the file size is limited to 2 GB.
 
@@ -71,6 +71,6 @@ The verification process could take up to 24 hours. Once verification is complet
 
 1. Verification succeeds: The package will be automatically tested against pre-release Windows updates for the OS builds you selected.
 or
-2. Verification fails: You'll need to investigate the reasons for the failure, fix the issue, and reUpload your package.
+2. Verification fails: You'll need to investigate the reasons for the failure, fix the issue, and reupload your package.
 
 You'll also be notified of either outcome via the notification icon in the Azure portal.
