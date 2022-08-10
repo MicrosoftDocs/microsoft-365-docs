@@ -20,7 +20,7 @@ description: Learn which clients are currently supported for Whiteboard.
 >[!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) High environments.
 
-Whiteboard clients are currently being updated to support One Drive for Business.
+Whiteboard clients are currently being updated to support OneDrive for Business.
 
 ## Clients supported
 

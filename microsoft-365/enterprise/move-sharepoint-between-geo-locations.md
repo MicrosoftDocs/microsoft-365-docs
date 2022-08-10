@@ -214,9 +214,9 @@ SharePoint 2013 workflows have to be republished after the site move. SharePoint
 
 If you are moving a site with apps, you must reinstantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.
 
-### Flow
+### Power Automate
 
-In most cases, Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
+In most cases, Power Automate Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
 
 ### Power Apps
 
