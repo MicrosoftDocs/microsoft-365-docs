@@ -98,4 +98,4 @@ Welcome to the Driving Adoption Community! Connect and discuss the latest topics
 
 ### Use the Microsoft 365 adoption tools
 
-Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience. For more information, read [Drive value with Microsoft 365 adoption tools](https://adoption.microsoft.com)
+Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience. For more information, read [Drive value with Microsoft 365 adoption tools](https://adoption.microsoft.com).
