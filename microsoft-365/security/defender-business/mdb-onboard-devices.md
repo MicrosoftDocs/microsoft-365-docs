@@ -41,7 +41,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 - [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
 - [Group Policy](#group-policy-for-windows-10-and-11) (if you're already using Group Policy in your organization)
-- [Microsoft Intune](#intune-for-windows-10-and-11) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [Microsoft Intune](#intune-for-windows-10-and-11)
 
 ### Local script for Windows 10 and 11
 
@@ -72,9 +72,7 @@ If you prefer to use Group Policy to onboard Windows clients, follow the guidanc
 
 ### Intune for Windows 10 and 11
 
-If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription, and you can use Intune to onboard devices.  
-
-There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
+You can onboard Windows clients and other devices in Intune by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
 
 - [Enable Windows automatic enrollment for company-owned or company-managed devices](#enable-automatic-enrollment-for-windows-10-and-11)
 - [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-enroll-their-own-windows-10-and-11-devices)
@@ -155,7 +153,7 @@ Choose one of the following options to onboard Mac:
 
 ### Local script for Mac
 
-When you run the local script on a Mac, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the Mac in Microsoft Intune, if it isn't already enrolled; and then onboards the Mac to Defender for Business. The local script method works even if you don't currently have Intune. We recommend that you onboard up to 10 devices at a time using this method.
+When you run the local script on a Mac, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the Mac in Microsoft Intune, if it isn't already enrolled; and then onboards the Mac to Defender for Business. We recommend that you onboard up to 10 devices at a time using this method.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -181,9 +179,7 @@ After a Mac is enrolled in Intune, you can add it to a device group. [Learn more
 
 ### Intune for Mac
 
-If your subscription includes Microsoft Intune, you can onboard Mac in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
-
-There are several methods available for enrolling Mac in Intune. We recommend one of the following methods:
+You can enroll Mac computers in Intune by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling Mac in Intune. We recommend one of the following methods:
 
 - [Choose an option for company-owned Mac](#options-for-company-owned-mac)
 - [Ask users to enroll their own Mac in Intune](#ask-users-to-enroll-their-own-mac-in-intune)
