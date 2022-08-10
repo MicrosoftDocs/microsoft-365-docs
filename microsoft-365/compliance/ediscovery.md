@@ -139,7 +139,7 @@ The following sections show the minimum subscription requirements for Content se
 ### eDiscovery (Standard)
 
 - Exchange online Plan 2
-- Sharepoint online Plan 2
+- SharePoint online Plan 2
 - Microsoft 365 E3 subscription
 - Microsoft 365 G3 subscription
 - Microsoft 365 Business Premium subscription

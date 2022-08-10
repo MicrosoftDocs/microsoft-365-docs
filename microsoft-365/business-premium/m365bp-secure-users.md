@@ -22,7 +22,7 @@ search.appverid:
 description: "Learn how Microsoft 365 Business Premium helps you run your business more securely with productivity and security."
 ---
 
-# Productivity and security for small- and medium-sized businesses 
+# Productivity and security for small and medium-sized businesses 
 
 Microsoft 365 Business Premium is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
 

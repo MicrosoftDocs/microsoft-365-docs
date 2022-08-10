@@ -10,7 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -76,10 +76,10 @@ If your subscription includes Intune, you can onboard Windows clients and other 
 
 There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
 
-- [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll) for company-owned or company-managed devices
-- [Ask users to enroll their own Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device)
+- [Enable Windows automatic enrollment for company-owned or company-managed devices](#enable-automatic-enrollment-for-windows-10-and-11)
+- [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-enroll-their-own-windows-10-and-11-devices)
 
-#### To enable automatic enrollment for Windows 10 and 11
+#### Enable automatic enrollment for Windows 10 and 11
 
 When you set up automatic enrollment, users add their work account to the device. In the background, the device registers and joins Azure Active Directory (Azure AD) and is enrolled in Intune.
 
@@ -105,7 +105,7 @@ When you set up automatic enrollment, users add their work account to the device
 > [!TIP]
 > To learn more, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
 
-#### To have users enroll their own Windows 10 and 11 devices
+#### Ask users enroll their own Windows 10 and 11 devices
 
 1. Watch the following video to see how enrollment works:<br/><br/>
 

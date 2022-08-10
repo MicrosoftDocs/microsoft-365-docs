@@ -76,6 +76,9 @@ On the **All placeholders** panel:
 
 4. Select **Add**.
 
+   > [!NOTE]
+   > You can configure multiple date formatters such as MM/DD/YYYY, DD/MM/YYYY, YYYY/MM/DD, and Month DD, including setting time in both 12-hour and 24-hour format. 
+
 ### Associate a placeholder by selecting from choices in a column of a list or library
 
 On the **All placeholders** panel:
