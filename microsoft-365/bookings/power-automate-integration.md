@@ -34,7 +34,7 @@ Stripe allows private individuals and businesses to accept payments over the int
 
 ### Integration with Zoom
 
-The Zoom Meetings Connector helps to automate Zoom meeting operations. For more information, see [Zoom Meetings (Independent Publisher) | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_zoommeetingsip/zoom-meetings-independent-publisher/).
+The Zoom Meetings connector helps to automate Zoom meeting operations. For more information, see [Zoom Meetings (Independent Publisher) | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_zoommeetingsip/zoom-meetings-independent-publisher/).
 
 ### Integration with Dynamic 365
 
@@ -46,7 +46,7 @@ For all of the available Bookings connectors, see [Supported connectors | Micros
 
 - **Only admins can create flows using appointment triggers.** Only Bookings admins can create appointment triggers. If you're a user and not an admin (Team Member, Scheduler, Viewer, Guest), you should ask your admin to create a flow. Alternatively, you can also request for admin access.
 
-- **Only five flows can be created per Bookings Mailbox.** This is a Bookings Mailbox-level limit and not a per-admin limit. If you want more than one action for an appointment trigger, you can add the action to one of the existing flows with the **Add Action** button. For support, contact other Booking admins.
+- **Only five flows can be created per Bookings mailbox.** This is a Bookings mailbox-level limit and not a per-admin limit. If you want more than one action for an appointment trigger, you can add the action to one of the existing flows with the **Add Action** button. For support, contact other Booking admins.
 
 - **Some Bookings parameters are not populated.** Cancel Reason and Custom Notes for 1:1 Bookings are not populated. The fix for this will be rolled out soon.
 
@@ -57,9 +57,9 @@ For all of the available Bookings connectors, see [Supported connectors | Micros
 HTTP Error Codes while creating flows:
 
 - '401': Check for authentication related issues in your connection.
-- '403': Only Bookings admins can create appointment flows. See the first issue in Known issues and limitations above.
+- '403': Only Bookings admins can create appointment flows. See the first issue in "Known issues and limitations" above.
 - '403': Notification URL domain isn't part of the allowed list.
-- '429': More than the expected number of appointment flows have been created for a business. See the limit of five flows issues in the Known issues and limitations above.
+- '429': More than the expected number of appointment flows have been created for a business. See the limit of five flows per Bookings mailbox in  "Known issues and limitations" above.
 - '500': This is an internal server error. Report this error to your support engineer and include the error details in the flow creation response.
 
 ## Frequently Asked Questions
