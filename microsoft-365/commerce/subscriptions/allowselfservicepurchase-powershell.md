@@ -200,5 +200,5 @@ Uninstall-Module -Name MSCommerce
 
 ## Related content
 
-[Manage self-service purchases (Admin)](manage-self-service-purchases-admins.md) (article)
+[Manage self-service purchases (Admin)](manage-self-service-purchases-admins.md) (article)\
 [Self-service purchase FAQ](self-service-purchase-faq.yml) (article)
