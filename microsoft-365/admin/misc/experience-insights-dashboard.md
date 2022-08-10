@@ -94,7 +94,7 @@ In this introductory course, you'll learn the six critical elements to drive ado
 
 ### Join the adoption community
 
-Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Meet and learn from peers and Microsoft Staff and stay up to date on upcoming trainings, events and our monthly Community calls. For more information read, [Adoption community](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption)
+Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Meet and learn from peers and Microsoft Staff and stay up to date on upcoming training, events, and our monthly Community calls. For more information, read [Driving Adoption](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption).
 
 ### Use the Microsoft 365 adoption tools
 
