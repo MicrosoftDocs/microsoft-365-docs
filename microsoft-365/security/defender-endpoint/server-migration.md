@@ -11,6 +11,7 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -69,7 +70,7 @@ For instructions on how to migrate using Microsoft Endpoint Configuration Manage
 
 ## If you are running a non-Microsoft antivirus solution
 
-1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016) ensuring [prerequisites](configure-server-endpoints.md#prerequisites) have been met.
+1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016) ensuring [prerequisites](configure-server-endpoints.md#prerequisites) have been met. For more information on the prerequisites that have to be met, see [Prerequisites for Windows Server 2016](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Ensure third-party antivirus management no longer pushes antivirus agents to these machines.*
 3. Author your policies for the protection capabilities in Microsoft Defender for Endpoint and target those to the machine in the tool of your choice.*
 4. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
