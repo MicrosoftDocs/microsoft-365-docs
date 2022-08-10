@@ -15,10 +15,9 @@ ms.localizationpriority:  medium
 description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft SharePoint Syntex.
 ---
 
-# Discover models in Microsoft SharePoint Syntex
+# Publish and discover models in Microsoft SharePoint Syntex
 
-*"Update apply a model article to show the new discovery experience (via ""classify & extract"" button OR from apply model action in model home page) + model recommendation & quick test. This article can include pieces from the ""publish & discover"" article"*
-
+*Rework "publish & discover" article, using the publish pieces*
 
 You can make your trained **Classify and extract by text pattern** models available for others to view and use directly from the SharePoint document library. 
 
