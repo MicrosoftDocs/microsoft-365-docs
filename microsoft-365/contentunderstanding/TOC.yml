@@ -73,7 +73,7 @@
       items: 
         - name: Create documents using content assembly 
           href: content-assembly.md
-        - name: Automate document generation using Power Automate 
+        - name: Generate documents using Power Automate 
           href: automate-document-generation.md
      
     - name: Metadata search
