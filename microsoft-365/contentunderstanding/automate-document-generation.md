@@ -43,7 +43,7 @@ Follow these steps to automatically generate documents using a modern template a
 
 2. In the left panel, select **Connectors**. In the search box, search for *SharePoint*, and then select the **SharePoint** connector.
 
-3. On the SharePoint connector page, select the trigger that should start the automated document generation process. 
+3. On the SharePoint connector page, select the trigger that you want to use to start the automated document generation process. 
 
     We recommend starting with any one of the following three triggers:
 
