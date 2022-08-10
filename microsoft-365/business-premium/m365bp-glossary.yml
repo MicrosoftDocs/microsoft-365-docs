@@ -97,6 +97,8 @@ content: |
  Phishing attacks attempt to steal sensitive information through emails, websites, text messages, or other forms of electronic communication. They try to look like official communications from legitimate companies or individuals.
  ### preview features
  Preview features are prerelease capabilities that you can try if you have opted in to receive preview features. [Learn more about preview features](/microsoft-365/security/defender-business/mdb-preview).
+ ### PUA
+ Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software that might be unexpected or unwanted. Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. [Learn more about PUA protection](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
  
  ## Q
  ### quarantine
