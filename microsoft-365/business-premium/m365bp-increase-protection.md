@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/09/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -169,7 +169,7 @@ The following image shows some of the default policies that are included with Mi
 
 ### How to view alerts
 
-Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft Purview compliance portal.
+You can view your alerts in either the Microsoft 365 Defender portal or the Microsoft Purview compliance portal.
 
 | Type of alert  | What to do  |
 |---------|---------|
