@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb

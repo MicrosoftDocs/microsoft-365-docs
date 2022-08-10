@@ -123,7 +123,7 @@ After you've connected to Security & Compliance PowerShell, the next step is to 
    }
    }
    else{
-   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+    "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
    " "
    [string]$cc.name | out-file -filepath $noholdsfilepath -append
    }

@@ -190,6 +190,8 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Suspicious inbox manipulation rules
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Malicious exchange connectors
+                      href: alert-grading-for-malicious-exchange-connectors.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -349,7 +351,11 @@
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
-                href: defenderexpertsforhuntingprev.md
+                href: defender-experts-for-hunting.md
+              - name: Before you begin
+                href: before-you-begin-defender-experts.md
+              - name: Start using Defender Experts for Hunting
+                href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
        - name: Ransomware playbooks
@@ -477,6 +483,8 @@
               href: ../intelligence/macro-malware.md
             - name: Phishing
               href: ../intelligence/phishing.md
+            - name: Phishing trends and techniques
+              href: ../intelligence/phishing-trends.md
             - name: Ransomware
               href: /security/compass/human-operated-ransomware
             - name: Rootkits
@@ -487,6 +495,8 @@
               href: ../intelligence/support-scams.md
             - name: Trojans
               href: ../intelligence/trojans-malware.md
+            - name: Troubleshoot MSI portal errors caused by admin block
+              href: ../intelligence/portal-submission-troubleshooting.md
             - name: Unwanted software
               href: ../intelligence/unwanted-software.md
             - name: Worms
