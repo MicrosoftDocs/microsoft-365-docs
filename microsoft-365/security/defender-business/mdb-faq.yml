@@ -83,7 +83,7 @@ sections:
 
       - question: How do I run custom reports with Defender for Business?
         answer: |
-          Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
+          Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners). Also see [Microsoft Defender for Business and Microsoft partner resources](mdb-partners.md).
 
       - question: I'm a Microsoft partner. Will I be able to manage multiple tenants from one control panel, or will I have to sign in to each tenant individually? 
         answer: |
