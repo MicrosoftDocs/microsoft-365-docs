@@ -27,7 +27,7 @@ To enable and update Defender Antivirus on Windows Server, perform the following
 
 1. Install the latest Servicing Stack Update (SSU).
 2. Install the latest cumulative update (LCU).
-3. Reinstall Defender Antivirus or re-enable it. For more information on how to reinstall or re-enable Defender Antivirus on Windows Server, see [Re-enable Defender Antivirus on Windows Server if it was disabled](#re-enable-defender-antivirus-on-windows-server-if-it-was-disabled) and [Re-enable Microsoft Defender Antivirus on Windows Server if it was uninstalled](#re-enable-defender-antivirus-on-windows-server-if-it-was-uninstalled).
+3. Reinstall Defender Antivirus or re-enable it. For more information on how to reinstall or re-enable Defender Antivirus on Windows Server, see [Re-enable Defender Antivirus on Windows Server if it was disabled](#re-enable-defender-antivirus-on-windows-server-if-it-was-disabled) and [Re-enable Defender Antivirus on Windows Server if it was uninstalled](#re-enable-defender-antivirus-on-windows-server-if-it-was-uninstalled).
 4. Reboot the system.
 5. Install the latest version of the platform update.
 
