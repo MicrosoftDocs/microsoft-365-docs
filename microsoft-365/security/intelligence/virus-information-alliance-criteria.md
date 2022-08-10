@@ -52,7 +52,7 @@ To be eligible for VIA your organization must:
 
 2. Fit into one of the following categories:
 
-    - Your organization develops anti-malware technology that can run on Windows and your organization’s product is commercially available.
+    - Your organization develops anti-malware technology that can run on Windows and your organization's product is commercially available.
     - Your organization provides security services to Microsoft customers or for Microsoft products.
     - Your organization publishes anti-malware testing reports regularly.
     - Your organization has a research or response team dedicated to fighting malware to protect your organization, your customers, or the general public.

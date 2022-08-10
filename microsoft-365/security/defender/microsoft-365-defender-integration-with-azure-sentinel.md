@@ -44,7 +44,7 @@ Watch this short overview of Microsoft Sentinel integration with Microsoft 365 D
 
 Here's how it works.
 
-:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="The flow and sharing of incident data between Microsoft 365 Defender and Microsoft Sentinel.":::
+:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="The flow and sharing of incident data for the Microsoft 365 Defender and Microsoft Sentinel portals" lightbox="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png":::
 
 ## Next steps
 

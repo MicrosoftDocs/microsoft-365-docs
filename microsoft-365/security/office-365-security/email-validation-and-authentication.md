@@ -1,18 +1,18 @@
 ---
 title: Email authentication in Microsoft 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-search.appverid: 
+search.appverid:
   - MET150
-ms.assetid: 
-ms.collection: 
+ms.assetid:
+ms.collection:
   - M365-security-compliance
   - Strat_O365_IP
 ms.custom: TopSMBIssues
@@ -24,13 +24,12 @@ ms.prod: m365-security
 
 # Email authentication in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 
 Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In all Microsoft 365 organizations, EOP uses these standards to verify inbound email:
 
@@ -163,7 +162,11 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
-For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the source IP address (divided up into /24 CIDR ranges), or the organizational domain of the reverse DNS (PTR) record.
+For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
+
+- The source IP address (divided up into /24 CIDR ranges)
+- The organizational domain of the reverse DNS (PTR) record.
+- A verified DKIM domain.
 
 ### Create an allow entry for the sender/recipient pair
 

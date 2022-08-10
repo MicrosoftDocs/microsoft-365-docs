@@ -5,7 +5,7 @@ keywords: security, malware, Microsoft 365, M365, Microsoft 365 Defender, securi
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: v-maave
+ms.author: dansimp
 author: martyav
 manager: dansimp
 audience: ITPro

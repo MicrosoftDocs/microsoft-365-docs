@@ -1,7 +1,7 @@
 - name: Office 365 security
   href: index.yml
   expanded: true
-  items: 
+  items:
    - name: Overview
      items:
        - name: Overview of Office 365 security
@@ -15,7 +15,7 @@
    - name: Get started
      items:
    - name: Evaluate
-     items: 
+     items:
      - name: Step 1 - Evaluate Defender for Office 365
        href: office-365-evaluation.md
      - name: Step 2 - Migrate from a third-party protection service or device to Defender for Office 365
@@ -366,7 +366,7 @@
            href: mfi-domain-mail-flow-status-insight.md
      - name: Report messages and files to Microsoft
        items:
-         - name: Report messages and files to Microsoft
+         - name: How do I report a suspicious email or file to Microsoft
            href: report-junk-email-messages-to-microsoft.md
          - name: Admin submissions
            href: admin-submission.md
@@ -374,12 +374,14 @@
            href: enable-the-report-message-add-in.md
          - name: Report false positives and false negatives in Outlook
            href: report-false-positives-and-false-negatives.md
+         - name: User reported message settings
+           href: user-submission.md
          - name: Use mail flow rules to see what users are reporting to Microsoft
            href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
          - name: Submit malware and non-malware to Microsoft
            href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
    - name: Respond
-     items: 
+     items:
      - name: Detect and address compromised user accounts quickly
        href: address-compromised-users-quickly.md
      - name: Detect and Remediate Illicit Consent Grants in Office 365
@@ -390,30 +392,42 @@
        href: air-report-false-positives-negatives.md
      - name: Admin review for reported messages
        href: admin-review-reported-message.md
-     - name: Recover from a ransonmware attack
+     - name: Recover from a ransomware attack
        href: recover-from-ransomware.md
      - name: Remediate malicious email
        href: remediate-malicious-email-delivered-office-365.md
      - name: Responding to a Compromised Email Account in Office 365
        href: responding-to-a-compromised-email-account.md
+     - name: Respond to a compromised connector
+       href: respond-compromised-connector.md
+     - name: Remove blocked entities
+       items:
+        - name: Remove blocked users
+          href: removing-user-from-restricted-users-portal-after-spam.md
+        - name: Remove blocked connectors
+          href: remove-blocked-connectors.md
      - name: Review and approve (or reject) pending actions
        href: air-review-approve-pending-completed-actions.md
      - name: Tune anti-phishing protection
        href: tuning-anti-phishing.md
-     - name: Find and release quarantined messages as a user
-       href: find-and-release-quarantined-messages-as-a-user.md
-     - name: Manage quarantined messages and files as an admin
-       href: manage-quarantined-messages-and-files.md
-     - name: Quarantine policies
-       href: quarantine-policies.md
-     - name: Release quarantined messages from shared mailboxes
-       href: view-and-release-quarantined-messages-from-shared-mailboxes.md
-     - name: Remove blocked users from the Restricted Users portal
-       href: removing-user-from-restricted-users-portal-after-spam.md
+     - name: Quarantine
+       items:
+       - name: Quarantine
+         href: quarantine-email-messages.md
+       - name: Admin quarantine
+         href: manage-quarantined-messages-and-files.md
+       - name: End-user quarantine
+         href: find-and-release-quarantined-messages-as-a-user.md
+       - name: Quarantine policies
+         href: quarantine-policies.md
+       - name: Release quarantined messages from shared mailboxes
+         href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+       - name: Quarantine notifications
+         href: use-spam-notifications-to-release-and-report-quarantined-messages.md
      - name: Use the delist portal to remove yourself from the blocked senders list
        href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
    - name: FAQ
-     items: 
+     items:
      - name: Delegated administration FAQ
        href: delegated-administration-faq.yml
      - name: EOP general FAQ
@@ -428,20 +442,46 @@
        href: anti-spoofing-protection-faq.yml
      - name: Quarantine FAQ
        href: quarantine-faq.yml
+   - name: Step-by-step guides
+     items: 
+      - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
+        href: step-by-step-guides/step-by-step-guide-overview.md
+      - name: (False Negatives) How to handle malicious emails that are delivered to recipients using Microsoft Defender for Office 365
+        href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+      - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
+        href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+      - name: How to configure quarantine permissions and policies
+        href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+      - name: Stay informed of upcoming changes to Microsoft Defender for Office 365 using the message center
+        href: step-by-step-guides/stay-informed-with-message-center.md
+      - name: Ensuring you always have the optimal security controls with preset security policies
+        href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+      - name: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
+        href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
+      - name: How to run attack simulations for your team
+        href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+      - name: How to setup automated attacks and training within Attack simulation training 
+        href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+      - name: Optimize and correct security policies with configuration analyzer
+        href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+      - name: Protect your c-suite with priority account protection
+        href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+      - name: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
+        href: step-by-step-guides/search-for-emails-and-remediate-threats.md
+      - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
+        href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+      - name: How to prioritize and manage Automated Investigations and Response (AIR)
+        href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
    - name: Reference
      items: 
+     - name: Defender for Office 365 data retention 
+       href: mdo-data-retention.md
      - name: Security roadmap
        href: security-roadmap.md
      - name: Help and support for EOP
        href: help-and-support-for-eop.md
      - name: Troubleshooting mail sent to Microsoft 365
        href: troubleshooting-mail-sent-to-office-365.md
-     - name: How Microsoft 365 uses SPF to prevent spoofing
-       href: how-office-365-uses-spf-to-prevent-spoofing.md
-     - name: How Office 365 validates the From address to prevent phishing
-       href: how-office-365-validates-the-from-address.md
-     - name: How policies and protections are combined
-       href: how-policies-and-protections-are-combined.md
      - name: Anti-spam message headers
        href: anti-spam-message-headers.md
      - name: "Reference:Policies, practices, and guidelines"
@@ -450,18 +490,12 @@
        href: sending-mail-to-office-365.md
      - name: Services for non-customers
        href: services-for-non-customers.md
-     - name: Spam confidence level (SCL)
-       href: spam-confidence-levels.md
-     - name: Support for validation of DKIM signed messages
-       href: support-for-validation-of-dkim-signed-messages.md
-     - name: Virus detection in SharePoint Online
-       href: virus-detection-in-spo.md
-     - name: What's the difference between junk email and bulk email?
-       href: what-s-the-difference-between-junk-email-and-bulk-email.md
+     - name: Configure EOP to deliver spam to Junk Email folders in hybrid
+       href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
    - name: Microsoft 365 Defender docs
-     items: 
+     items:
        - name: Microsoft 365 Defender
-         href: ../defender/index.yml 
+         href: ../defender/index.yml
        - name: Defender for Endpoint
          href: ../defender-endpoint/index.yml
        - name: Defender for Identity
@@ -516,6 +550,3 @@
         href: configure-advanced-delivery.md
       - name: Smart reports and insights in the Security & Compliance Center
         href: reports-and-insights-in-security-and-compliance.md
-
-
-      

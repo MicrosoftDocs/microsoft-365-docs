@@ -38,15 +38,15 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 
 3. Select **Upload file to library**.
 
-    ![Image of upload file.](images/upload-file.png)
+   :::image type="content" source="images/upload-file.png" alt-text="The upload file" lightbox="images/upload-file.png":::
 
 4. Select **Choose file**.
 
-    ![Image of choose file button1.](images/choose-file.png)
+   :::image type="content" source="images/choose-file.png" alt-text="The choose file button-1" lightbox="images/choose-file.png":::
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
-   ![Image of choose file button2.](images/analyzer-file.png)
+   :::image type="content" source="images/analyzer-file.png" alt-text="The choose file button-2" lightbox="images/analyzer-file.png":::
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 

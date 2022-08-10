@@ -36,7 +36,7 @@ Contoso Bank needs to classify the credit card numbers that they issue as sensit
 
 ## Test numbers similar to Social Security numbers
 
-Contoso has identified a few nine-digit test numbers that trigger false positive matches in the Social Security Number (SSN) data loss prevention (DLP) policy. They would like to exclude these numbers from the list of valid matches for SSN.
+Contoso has identified a few nine-digit test numbers that trigger false positive matches in the Social Security Number (SSN) Microsoft Purview data loss prevention (DLP) policy. They would like to exclude these numbers from the list of valid matches for SSN.
 
 **Suggested solution**
 

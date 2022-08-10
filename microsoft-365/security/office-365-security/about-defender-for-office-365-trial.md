@@ -59,7 +59,7 @@ By default, these policies are scoped to all users in the organization, but duri
 > [!NOTE]
 > Your existing anti-spam policies are likely configured with the action **Move message to Junk Email folder** for the high confidence spam verdict in anti-spam policies. The Standard template for preset security policies uses the action **Quarantine message** for high confidence spam, and preset security policies are always applied before custom anti-spam policies or the default anti-spam policy. For more information about default, Standard, and Strict settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-Other workloads are also available for protection (for example, [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) and [Safe Links for supported Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).
+Other workloads are also available for protection (for example, [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) and [Safe Links for supported Office apps](safe-links.md#safe-links-settings-for-office-apps).
 
 During the setup of the trial, response functionality that's exclusive to Defender for Office 365 Plan 2 (for example, [AIR](office-365-air.md) and [Threat Explorer](threat-explorer.md) is also set up for the entire organization. No policy scoping is required.
 
@@ -69,7 +69,7 @@ As part of the trial setup, the Defender for Office 365 licenses are automatical
 
 The licensing card for the trial shows the following information:
 
-![The Licensing card in the Microsoft Defender for Office 365 trial.](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="The Licensing card in the Microsoft Defender for Office 365 trial" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **Usage type** section:
   - **Trial**: The number of trial Defender for Office 365 licenses that are available for you to use.
@@ -84,6 +84,8 @@ The licensing card for the trial shows the following information:
     - During the trial, you scoped the policies to specific users.
     - You have custom polices that are scoped to specific users.
   - **Full protection**: The total number of users that are protected by Defender for Office 365 Plan 2 features (AIR, Threat Explorer, Attack simulation training, etc.).
+
+For pricing information, see [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
 
 ## Permissions
 
@@ -121,7 +123,7 @@ Defender for Office 365 helps organizations secure their enterprise by offering 
 
 You can also learn more about Defender for Office 365 at this [interactive guide](https://aka.ms/MS365D.InteractiveGuide).
 
-![Microsoft Defender for Office 365 conceptual diagram.](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="The Microsoft Defender for Office 365 conceptual diagram" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### Prevention
 

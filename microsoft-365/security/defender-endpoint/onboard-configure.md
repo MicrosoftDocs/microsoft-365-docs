@@ -35,36 +35,52 @@ Deploying Microsoft Defender for Endpoint is a two-step process.
 - Onboard devices to the service
 - Configure capabilities of the service
 
-![Illustration of onboarding and configuration process](images/deployment-steps.png)
+:::image type="content" source="images/deployment-steps.png" alt-text="The onboarding and configuration process" lightbox="images/deployment-steps.png":::
+
+## Role-based access control
+
+We recommend using Privileged Identity Management to manage your roles to provide additional auditing, control, and access review for users with directory permissions.
+
+Defender for Endpoint supports two ways to manage permissions:
+
+- **Basic permissions management**: Sets permissions to either full access or read-only. Users with global administrator or security administrator roles in Azure Active Directory (Azure AD) have full access. The security reader role has read-only access and does not grant access to view machines/device inventory.
+
+- **Role-based access control (RBAC)**: Sets granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
+
+We recommend leveraging RBAC to ensure that only users that have a business justification can access Defender for Endpoint.
 
 ## Onboard devices to the service
 You'll need to go the onboarding section of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device. 
 
-In general, to onboard devices to the service:
+To onboard devices to the service:
 
 - Verify that the device fulfills the [minimum requirements](minimum-requirements.md)
 - Depending on the device, follow the configuration steps provided in the onboarding section of the Defender for Endpoint portal
 - Use the appropriate management tool and deployment method for your devices
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
-
+This article provides information on onboarding methods applicable to Windows Client and Server versions.
 
 ## Onboarding and configuration tool options
 The following table lists the available tools based on the endpoint that you need to onboard.
 
 | Endpoint     | Tool options                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Windows Client**  |     [Mobile Device Management / Microsoft Intune](configure-endpoints-mdm.md) <br> [Group Policy](configure-endpoints-gp.md) <br> [Local script (up to 10 devices)](configure-endpoints-script.md) <br>[VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
 | **macOS**    | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
-| **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
+| **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)     |
+| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)           |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
+
+> [!NOTE]
+> For devices that aren't managed by a Microsoft Endpoint Manager (either Microsoft Intune or Microsoft Endpoint Configuration Manager), you can use the Security Management for Microsoft Defender for Endpoint to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
 The following table lists the available tools based on the endpoint that you need to onboard.
 
 ## Configure capabilities of the service
-Onboarding devices effectively enables the endpoint detection and response capability of Micorosft Defender for Endpoint.
+Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint.
 
 After onboarding the devices, you'll then need to configure the other capabilities of the service. The following table lists the capabilities you can configure to get the best protection for your environment.
 

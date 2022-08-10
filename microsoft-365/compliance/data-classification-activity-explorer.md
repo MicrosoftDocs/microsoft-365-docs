@@ -1,5 +1,5 @@
 ---
-title: "Get started with activity explorer"
+title: "Get started with Activity explorer"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -58,14 +58,14 @@ An account must be explicitly assigned membership in any one of these role group
 
 There are roles and role groups in preview that you can test out to fine-tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Admins
@@ -94,7 +94,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
-**Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive. Some examples are:
+**Sensitivity label activities** and **Retention labeling activities** from Office native applications, the Azure Information Protection (AIP) unified labeling client and scanner, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive. Some examples are:
 
 - Label applied
 - Label changed (upgraded, downgraded, or removed)
@@ -120,7 +120,7 @@ Activity explorer also gathers **DLP policy matches** events from Exchange Onlin
 - Copied to network share
 - Accessed by unallowed app 
 
-Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [data loss prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
+Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.

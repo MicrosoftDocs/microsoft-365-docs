@@ -81,7 +81,7 @@ where
 Run the following query:
 
 ```powershell
-$query = 'RegistryEvents | limit 10' # Paste your own query here
+$query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 $url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 $headers = @{ 

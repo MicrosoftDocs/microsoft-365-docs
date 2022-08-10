@@ -106,7 +106,7 @@ landingContent:
             url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Auditing solutions
             url: ../compliance/auditing-solutions-overview.md
-          - text: Microsoft 365 Advanced eDiscovery
+          - text: eDiscovery (Premium)
             url: ../compliance/overview-ediscovery-20.md
       - linkListType: reference
         links:

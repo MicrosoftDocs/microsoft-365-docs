@@ -18,6 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-identitydevice
   - m365solution-scenario
+  - zerotrust-solution
 ms.technology: mdo
 ---
 
@@ -117,6 +118,6 @@ Here are some additional recommendations:
 
 ## Next step
 
-[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
 [Configure the common Zero Trust identity and device access policies](identity-access-policies.md)

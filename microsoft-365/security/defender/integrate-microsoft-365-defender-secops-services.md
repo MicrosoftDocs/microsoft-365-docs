@@ -67,7 +67,7 @@ To integrate the capabilities of Microsoft 365 Defender, you will need to refine
 
 - [What is Microsoft Defender for Endpoint?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)
-- [What is Defender for Office 365?](/office-365-security/defender-for-office-365)
+- [What is Defender for Office 365?](/microsoft-365/security/defender/microsoft-365-defender)
 - [What is Microsoft Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)
 
 ## Next step

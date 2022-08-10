@@ -1,6 +1,7 @@
 ---
 title: "Use communication compliance reports and audits"
 description: "Learn more about using communication compliance reports and audits."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -42,7 +43,7 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 
 ### Detailed reports
 
-Use the *Export* option to create a .csv file containing the report details for any detailed report.
+Use the *Export* option to create a .csv file containing the report details for any detailed report. The *Export* report option supports file size downloads up to 3 MB.
 
 - **Policy settings and status**: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Includes policy information and how policies are associated with users and groups, locations, review percentages, reviewers, status, and when the policy was last modified. Use the *Export* option to create a .csv file containing the report details.
 - **Items and actions per policy**: Review and export matching items and remediation actions per policy. Includes policy information and how policies are associated with:
@@ -85,12 +86,11 @@ Use the *Export* option to create a .csv file containing the report details for 
 
     - **Email**: Sensitive information types detected in Exchange email messages.
     - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
-    - **Skype for Business**: Sensitive information types detected in Skype for business communications.
     - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
     - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
     - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
 
-### Message details report (preview)
+### Message details report
 
 Create custom reports and review details for messages contained in specific policies on the **Policies** tab. These reports can be used for all-up reviews of messages and for creating a report snapshot for the status of messages for a customizable time period. After creating a report, you can view and download the details report as a .csv file on the **Message details reports** tab.
 
@@ -98,7 +98,7 @@ Create custom reports and review details for messages contained in specific poli
 
 To create a new message details report, complete the following steps:
 
-1. Sign into the Microsoft 365 compliance center with an account that is a member of the *Communication Compliance Investigators* role group.
+1. Sign into the Microsoft Purview compliance portal with an account that is a member of the *Communication Compliance Investigators* role group.
 2. Navigate to the **Policies** tab, select a policy, and then select **Create message details report**.
 3. On the **Create message details report** pane, enter a name for the report in the **Report name** field.
 4. In **Choose a date range**, select a *Start date* and *End date* for the report.
@@ -136,7 +136,7 @@ Message details reports contain the following information for each message item 
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 > [!IMPORTANT]
-> Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
+> Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
 
 To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 
@@ -156,7 +156,7 @@ To view communication compliance review activities for a policy, select the **Ex
 | **Operations** | The review operations performed on the policy. |
 | **AuditData** | This field is the main data source for all policy review activities. All review activities are recorded and separated by comma delimiters. |
 
-You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. To learn more about audit log retention policies, see [Manage audit log retention policies](audit-log-retention-policies.md).
+You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. To learn more about audit log retention policies, see [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies).
 
 For example, the following example returns the activities for all the supervisory review activities (policies and rules):
 

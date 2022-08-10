@@ -1,7 +1,6 @@
 ---
 title: AADSpnSignInEventsBeta table in the advanced hunting schema
 description: Learn about information associated with Azure Active Directory's service principal and managed identity sign-in events table.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

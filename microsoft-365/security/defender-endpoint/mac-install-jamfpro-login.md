@@ -30,15 +30,15 @@ ms.technology: mde
 
 1. Enter your credentials.
 
-    ![Image of Jamf Pro dashboard1.](images/jamf-pro-portal1.png)
+   :::image type="content" source="images/jamf-pro-portal1.png" alt-text="The Jamf Pro dashboard1" lightbox="images/jamf-pro-portal1.png":::
 
 2. Select **Computers**.
 
-    ![Image of Jamf Pro dashboard2.](images/jamf-pro-dashboard.png)
+   :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="The Jamf Pro dashboard2" lightbox="images/jamf-pro-dashboard.png":::
 
 3. You will see the settings that are available.
 
-     ![Image of Jamf Pro dashboard3.](images/jamfpro-settings.png)
+   :::image type="content" source="images/jamfpro-settings.png" alt-text="The Jamf Pro dashboard3" lightbox="images/jamfpro-settings.png":::
 
 
 ## Next step

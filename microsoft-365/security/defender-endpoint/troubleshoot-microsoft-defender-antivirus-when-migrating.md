@@ -8,9 +8,8 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.topic: article
 author: martyav
-ms.author: v-maave
+ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -24,7 +23,10 @@ ms.collection: M365-security-compliance
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Antivirus](https://www.microsoft.com/windows/comprehensive-security)
 
+**Platforms**
+- Windows
 
 You can find help here if you encounter issues while migrating from a third-party security solution to Microsoft Defender Antivirus.
 
@@ -130,6 +132,17 @@ Another feature, known as [limited periodic scanning](limited-periodic-scanning-
 
 > [!IMPORTANT]
 > Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 
 ### See also
 

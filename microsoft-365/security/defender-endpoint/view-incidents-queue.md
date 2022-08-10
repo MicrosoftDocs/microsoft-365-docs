@@ -41,8 +41,9 @@ On the top navigation you can:
 - Batch-select the incidents to assign 
 - Navigate between pages
 - Apply filters
+- Customize and apply date ranges
 
-![Image of incidents queue.](images/atp-incident-queue.png)
+:::image type="content" source="images/atp-incident-queue.png" alt-text="The Incidents queue" lightbox="images/atp-incident-queue.png":::
 
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.

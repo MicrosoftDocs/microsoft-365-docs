@@ -18,6 +18,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
 ---
@@ -56,4 +57,4 @@ To configure these policies, use the recommended guidance and settings prescribe
 
 ## Next steps
 
-Go to [Step 2. Enroll devices into management with Intune](manage-devices-with-intune-enroll.md). 
+Go to [Step 2. Enroll devices to Intune](manage-devices-with-intune-enroll.md). 

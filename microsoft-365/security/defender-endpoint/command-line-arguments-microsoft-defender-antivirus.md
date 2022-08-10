@@ -22,6 +22,10 @@ ms.collection: M365-security-compliance
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus 
+
+**Platforms**
+- Windows
 
 You can perform various functions in Microsoft Defender Antivirus using the dedicated command-line tool **mpcmdrun.exe**. This utility is useful when you want to automate Microsoft Defender Antivirus tasks. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.
 
@@ -77,6 +81,16 @@ The following table lists common errors that can occur while using the MpCmdRun 
 |**ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80508015**|The firewall is blocking the connection or conducting SSL inspection.|
 |**ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D**|The firewall is blocking the connection or conducting SSL inspection.|
 |**ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)**|The firewall is blocking the connection or conducting SSL inspection.|
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 

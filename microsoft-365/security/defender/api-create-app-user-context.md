@@ -102,28 +102,31 @@ This article explains how to:
 
 For more information on Azure Active Directory tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
-### Get an access token using PowerShell
+### Get an access token on behalf of a user using PowerShell
+
+Use the MSAL.PS library to acquire access tokens with Delegated permissions. Run the following commands to get access token on behalf of a user:
 
 ```PowerShell
-if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps } # Install the ADAL.PS package in case it's not already present
+Install-Module -Name MSAL.PS # Install the MSAL.PS module from PowerShell Gallery
 
-$tenantId = '' # Paste your directory (tenant) ID here.
-$clientId = '' # Paste your application (client) ID here.
-$redirectUri = '' # Paste your app's redirection URI
+$TenantId = " " # Paste your directory (tenant) ID here.
+$AppClientId="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" # Paste your application (client) ID here.
 
-$authority = "https://login.windows.net/$tenantId"
-$resourceUrl = 'https://api.security.microsoft.com'
+$MsalParams = @{
+   ClientId = $AppClientId
+   TenantId = $TenantId
+   Scopes   = 'https://graph.microsoft.com/User.Read.All','https://graph.microsoft.com/Files.ReadWrite'
+}
 
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
-$response.AccessToken | clip
-
-$response.AccessToken
+$MsalResponse = Get-MsalToken @MsalParams
+$AccessToken  = $MsalResponse.AccessToken
+ 
+$AccessToken # Display the token in PS console
 ```
-
 ## Validate the token
 
 1. Copy and paste the token into [JWT](https://jwt.ms) to decode it.
-1. Make sure that the *roles* claim within the decoded token contains the desired permissions.
+2. Make sure that the *roles* claim within the decoded token contains the desired permissions.
 
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 

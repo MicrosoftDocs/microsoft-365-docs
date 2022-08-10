@@ -42,7 +42,7 @@ You can not only look through analyze the sample model to get a better understan
 
 You can access the [SharePoint Syntex Samples repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of document understanding models. The samples in this repository contain both the document understanding model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
 
-## See Also
+## See also
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)

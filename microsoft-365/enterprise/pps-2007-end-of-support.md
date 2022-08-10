@@ -2,7 +2,7 @@
 title: "PerformancePoint Server 2007 end of support roadmap"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
