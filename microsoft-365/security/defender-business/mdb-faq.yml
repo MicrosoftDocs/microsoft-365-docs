@@ -87,9 +87,11 @@ sections:
 
       - question: I'm a Microsoft partner. Will I be able to manage multiple tenants from one control panel, or will I have to sign in to each tenant individually? 
         answer: |
-          Defender for Business is enabled in Microsoft 365 Lighthouse for multi-tenant support in a single console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
 
-          To learn more, see [Overview of Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).
+          Several options are available, including Microsoft 365 Lighthouse and using APIs to integrate with your tools. See [Microsoft Defender for Business and Microsoft partner resources](mdb-partners.md).
+
+          - Defender for Business integrates with Microsoft 365 Lighthouse for multi-tenant support in a single console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). See [Overview of Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).
+          - You can use the Defender for Endpoint APIs to integrate Defender for Business with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software. See [Microsoft Defender for Business and Microsoft partner resources](mdb-partners.md).
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
