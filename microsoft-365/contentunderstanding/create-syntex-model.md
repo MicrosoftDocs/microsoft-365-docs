@@ -29,18 +29,18 @@ Follow these steps to create a model in SharePoint Syntex.
 
 2. On the **View options for classification and extraction** page, there are two sections:
 
-    - **Build a custom model**
-    - **Use a trained model**
+    - [**Build a custom model**](#build-a-custom-model)
+    - [**Use a trained model**](#use-a-trained-model)
 
 ## Build a custom model
 
 1. In the **Build a custom model** section, view the types of custom models you can create. 
 
-    - **Classify and extract by text pattern** – Best for Office files and automatic classification of files
+    - [**Classify and extract by text pattern**](#classify-and-extract-by-text-pattern) – Best for Office files and automatic classification of files
 
-    - **Extract by layout** – Best for non-English languages and files with tables
+    - [**Extract by layout**](#extract-by-layout) – Best for non-English languages and files with tables
 
-    - **Extract by text pattern and layout** – Best for a mix of both text and layout needs
+    - [**Extract by text pattern and layout**](#extract-by-text-pattern-and-layout) – Best for a mix of both text and layout needs
 
 2. Select the type of custom model you want to create.
 
@@ -72,19 +72,67 @@ Follow these steps to create a model in SharePoint Syntex.
 
 ### Extract by layout
 
+1. On the **Extract by layout** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
+
+2. On the **Create model to extract by layout** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Service agreements*.
+
+    - **Description** – Enter information about how this model will be used.
+    
+3. Under **Advanced settings**:
+
+    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
+
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
+
+4. When you are ready to create the model, select **Create**.
+
+5. You are now ready to begin training the model:
+
+    - [Name extractors](create-an-extractor.md)
+    - [Add collections of documents](create-a-form-processing-model.md#step-2-add-and-analyze-documents)
+    - [Tag documents](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
+    - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
+    - [Apply model to library](apply-a-model.md)
+
 ### Extract by text pattern and layout
+
+1. On the **Extract by text pattern and layout** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
+
+2. On the **Create model to extract by text pattern and layout** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Service agreements*.
+
+    - **Description** – Enter information about how this model will be used.
+    
+3. Under **Advanced settings**:
+
+    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
+
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
+
+4. When you are ready to create the model, select **Create**.
+
+5. You are now ready to begin training the model:
+    
+    - [Name extractors](create-an-extractor.md)
+    - [Add collections of documents](create-a-form-processing-model.md#step-2-add-and-analyze-documents)
+    - [Tag documents](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
+    - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
+    - [Apply model to library](apply-a-model.md) 
 
 ## Use a trained model
 
 1. In the **Use a trained model** section, view the types of trained models you can use. select the type of trained model you want to learn more about or to start using. 
 
-    - **Receipts** – Save time processing receipts for expenses. Automatically extract key info specific to expenses.
+    - [**Receipts**](#receipts) – Save time processing receipts for expenses. Automatically extract key info specific to expenses.
 
-    - **Invoices** – Save time processing invoices. Automatically extract key info specific to invoices.
+    - [**Invoices**](#invoices) – Save time processing invoices. Automatically extract key info specific to invoices.
 
 2. Select the type of trained model you want to use.
 
-#### Receipts
+### Receipts
 
 1. On the **Receipts** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
 
@@ -108,5 +156,27 @@ Follow these steps to create a model in SharePoint Syntex.
     - [Select extractors](create-an-extractor.md).
     - [Apply model to library](apply-a-model.md).
 
-#### Invoices
+### Invoices
+
+1. On the **Invoices** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+
+2. On the **Create a model to process invoices** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Office expenses*.
+
+    - **Description** – Enter information about how this model will be used.
+    
+3. Under **Advanced settings**:
+
+    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
+
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
+
+4. When you are ready to create the model, select **Create**.
+
+5. To complete the model:
+
+    - [Upload an example file](create-a-classifier#add-your-example-files).
+    - [Select extractors](create-an-extractor.md).
+    - [Apply model to library](apply-a-model.md).
 
