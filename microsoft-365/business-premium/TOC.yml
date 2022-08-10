@@ -10,6 +10,8 @@
       href: get-microsoft-365-business-premium.md
     - name: Get Microsoft 365 for Campaigns
       href: get-microsoft-365-campaigns.md
+    - name: Resources for partners
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
   items: 
   - name: Sign in and set up
