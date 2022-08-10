@@ -10,7 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -332,9 +332,7 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## Mobile devices
 
-You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you have Intune. 
-
-See the following resources to get help enrolling these devices into Intune:
+You can use Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:
 
 - [Enroll Android devices](/mem/intune/enrollment/android-enroll)
 - [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
