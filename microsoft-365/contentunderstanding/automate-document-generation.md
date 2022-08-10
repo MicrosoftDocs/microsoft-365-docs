@@ -51,11 +51,11 @@ Follow these steps to automatically generate documents using a modern template a
     - When an item is created or modified
     - When an item is deleted
 
-4. Next, set up the trigger by associating the SharePoint site with the name of the SharePoint list. Select **New step**. 
+4. Next, set up the trigger by entering the SharePoint site address and the name of the SharePoint list. Select **New step**. 
 
    ![Screenshot of the When a document is created or modified trigger showing a sample site address and site name.](../media/content-understanding/document-generation-trigger.png)
 
-5. Select the SharePoint connector again and search for and select the action **Generate document using SharePoint Syntex (preview)**.
+5. Select the SharePoint connector again. In the search box, search for and select the action **Generate document using SharePoint Syntex (preview)**.
 
    ![Screenshot of the SharePoint connector Actions tab showing Generate document using SharePoint Syntex (preview) action.](../media/content-understanding/document-generation-action.png) 
 
