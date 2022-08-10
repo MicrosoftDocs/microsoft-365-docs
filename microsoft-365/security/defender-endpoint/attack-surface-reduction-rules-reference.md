@@ -16,7 +16,7 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 02/04/2022
+ms.date: 08/10/2022
 ---
 
 # Attack surface reduction rules reference
