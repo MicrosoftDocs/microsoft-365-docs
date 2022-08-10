@@ -1,5 +1,5 @@
 ---
-title: Deploy teams at scale for frontline workers in Microsoft Teams
+title: Deploy Teams at scale for frontline workers
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: rahuldey
@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to deploy teams at scale for the frontline workers in your organization. 
+description: Learn how to deploy Teams at scale for the frontline workers in your organization. 
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
@@ -19,10 +19,7 @@ appliesto:
 
 ---
 
-# Deploy teams at scale for frontline workers in Microsoft Teams
-
-> [!NOTE]
-> This feature is currently in public preview. If you'd like to participate, reach out to us at [dscale@microsoft.com](mailto:dscale@microsoft.com).
+# Deploy Teams at scale for frontline workers
 
 ## Overview
  
@@ -37,14 +34,14 @@ Here's an overview of the capabilities available today for creating and managing
 |**Number of teams you can create per batch**|Up to 100 |Up to 500|
 |**Number of users you can add per team**|Up to 25|Up to 25|
 
-Deploying teams at scale allows you to:
+Deploying Teams at scale allows you to:
 
 - Create teams using pre-built templates or your own custom templates.
 - Add users to teams as owners or members.
 - Manage teams at scale by adding or removing users from existing teams.
 - Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
 
-## How to deploy teams at scale
+## How to deploy Teams at scale
 
 > [!NOTE]
 > Before you deploy your teams, make sure that all teams owners have a Teams license.
