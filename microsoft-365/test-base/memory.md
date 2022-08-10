@@ -42,7 +42,7 @@ Failure for the application due to higher memory consumption, will also be displ
 
 ![Test summary results.](Media/02_test-summary.png)
 
-By providing this failure signals upfront, our goal is to clearly flag potential issues that can disrupt and impact the end user experience for your application. 
+By providing the failure signals upfront, our goal is to clearly flag potential issues that can disrupt and impact the end user experience for your application. 
 
 You can then download the log files and use the Windows Performance Analyzer, or your preferred toolkit, to investigate further. You can also work jointly with the Test Base for Microsoft 365 team on remediating the issue and help prevent issues impacting end users.
 
