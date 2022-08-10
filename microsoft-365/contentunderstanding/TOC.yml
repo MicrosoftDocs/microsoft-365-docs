@@ -23,9 +23,9 @@
             - name: Manage a model
               items:
                 - name: Discover and apply a model
-                  href: model-discovery.md
+                  href: apply-a-model.md
                 - name: Share an enterprise model 
-                  href: share-enterprise-model.md
+                  href: model-discovery.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
                 - name: Apply a sensitivity label 
