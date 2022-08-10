@@ -11,7 +11,9 @@ audience: ITPro
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
+ms.custom: 
+- nextgen
+- admindeeplinkDEFENDER
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -24,9 +26,13 @@ ms.collection: M365-security-compliance
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 - Microsoft 365
+
+**Platforms**
+- Windows
 
 You might already know that:
 
@@ -68,15 +74,25 @@ Microsoft Defender for Office 365 integrated with Microsoft Defender for Endpoin
 
     SO
 
-- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-If you haven't already done so, [integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+If you haven't already done so, [integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
 
 ## More good reasons to use OneDrive
 
 Protection from ransomware is one great reason to put your files in OneDrive. And there are several more good reasons, summarized in this video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Want to learn more? See these resources:
 
@@ -85,3 +101,5 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
+
+

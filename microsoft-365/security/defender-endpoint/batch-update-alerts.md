@@ -2,7 +2,6 @@
 title: Batch Update alert entities API
 description: Learn how to update Microsoft Defender for Endpoint alerts in a batch by using this API. You can update the status, determination, classification, and assignedTo properties.
 keywords: apis, graph api, supported apis, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,9 +22,11 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Applies to:** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -86,9 +87,12 @@ Property | Type | Description
 alertIds | List&lt;String&gt;| A list of the IDs of the alerts to be updated. **Required**
 status | String | Specifies the updated status of the specified alerts. The property values are: 'New', 'InProgress' and 'Resolved'.
 assignedTo | String | Owner of the specified alerts
-classification | String | Specifies the specification of the specified alerts. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
+classification | String | Specifies the specification of the specified alerts. The property values are: 'True positive', 'Informational, expected activity' and 'False positive'.
 determination | String | Specifies the determination of the specified alerts. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Comment to be added to the specified alerts.
+
+>[!NOTE]
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 

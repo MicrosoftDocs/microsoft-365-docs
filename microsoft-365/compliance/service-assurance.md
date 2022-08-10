@@ -2,8 +2,8 @@
 title: "Service assurance in the Security & Compliance Center"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -90,7 +90,7 @@ Depending on your specific set-up, options included in your view might have some
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](../business-video/get-help-support.md).
+[Contact support for business products - Admin Help](../admin/get-help-support.md).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

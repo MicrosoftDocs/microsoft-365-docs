@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # How EOP validates the From address to prevent phishing
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -132,4 +132,4 @@ You can't override the From address requirements for outbound email that you sen
 
 ## Other ways to prevent and protect against cybercrimes in Microsoft 365
 
-For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).
+For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).

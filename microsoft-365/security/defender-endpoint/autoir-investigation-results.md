@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,14 +19,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom: 
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ---
 
 # View the details and results of an automated investigation
 
 **Applies to:**
-- Microsoft Defender for Endpoint
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 With Microsoft Defender for Endpoint, when an [automated investigation](automated-investigations.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions.
 
@@ -48,7 +50,7 @@ You can open the investigation details view by using one of the following method
 
 The improved [Action center](auto-investigation-action-center.md) brings together [remediation actions](manage-auto-investigation.md#remediation-actions) across your devices, email & collaboration content, and identities. Listed actions include remediation actions that were taken automatically or manually. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed. You can also navigate to more details, such as an investigation page.
 
-1. Go to <https://security.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 2. In the navigation pane, choose **Action center**.
 3. On either the **Pending** or **History** tab, select an item. Its flyout pane opens.
 4. Review the information in the flyout pane, and then take one of the following steps:
@@ -61,7 +63,7 @@ The improved [Action center](auto-investigation-action-center.md) brings togethe
 
 Use an incident details page to view detailed information about an incident, including alerts that were triggered information about any affected devices, user accounts, or mailboxes.
 
-1. Go to <https://security.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 2. In the navigation pane, choose **Incidents & alerts** \> **Incidents**.
 3. Select an item in the list, and then choose **Open incident page**.
 4. Select the **Investigations** tab, and then select an investigation in the list. Its flyout pane opens.
@@ -79,7 +81,7 @@ In the Investigation details view, you can see information on the **Investigatio
 |Tab|Description|
 |---|---|
 |**Investigation graph**|Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval. <p> You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts.|
-|**Alerts**|Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
+|**Alerts**|Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Defender for Cloud Apps, and other Microsoft 365 Defender features.|
 |**Devices**|Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to the [automation level for device groups](automation-levels.md).)|
 |**Mailboxes**|Lists mailboxes that are impacted by detected threats.|
 |**Users**|Lists user accounts that are impacted by detected threats.|

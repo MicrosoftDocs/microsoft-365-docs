@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
@@ -98,7 +98,7 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 ## See also
 
-[Identity roadmap](identity-roadmap-microsoft-365.md)
+[Deploy identity](deploy-identity-solution-overview.md)
 
 [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 

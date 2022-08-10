@@ -25,7 +25,8 @@ ms.technology: mde
 
 **Applies to:**
 - Event Viewer
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -101,6 +102,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |51|New cloud configuration failed to apply, version: %1. Successfully applied the last known good configuration, version %2.|Received a bad configuration file from the cloud service. Last known good configuration was applied successfully.|If this error persists, contact Support.|
    |52|New cloud configuration failed to apply, version: %1. Also failed to apply last known good configuration, version %2. Successfully applied the default configuration.|Received a bad configuration file from the cloud service. Failed to apply the last known good configuration - and the default configuration was applied.|The service will attempt to download a new configuration file within 5 minutes. If you don't see event #50 - contact Support.|
    |53|Cloud configuration loaded from persistent storage, version: %1.|The configuration was loaded from persistent storage on service startup.|Normal operating notification; no action required.|
+   |54| Global (per-pattern) state changed. State: %1, pattern: %2 | If state = 0: Cyber-data reporting rule has reached its defined capping quota and won't send more data until the capping quota expires. If state = 1: The capping quota expired and the rule will resume sending data. | Normal operating notification; no action required. |
    |55|Failed to create the Secure ETW autologger. Failure code: %1|Failed to create the secure ETW logger.|Reboot the device. If this error persists, contact Support.|
    |56|Failed to remove the Secure ETW autologger. Failure code: %1|Failed to remove the secure ETW session on offboarding.|Contact Support.|
    |57|Capturing a snapshot of the machine for troubleshooting purposes.|An investigation package, also known as forensics package, is being collected.|Normal operating notification; no action required.|

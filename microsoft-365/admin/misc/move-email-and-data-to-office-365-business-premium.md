@@ -2,8 +2,8 @@
 title: "Move email and data to Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150

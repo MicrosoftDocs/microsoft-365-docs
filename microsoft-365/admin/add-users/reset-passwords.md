@@ -14,12 +14,15 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -27,27 +30,37 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: "Sign in with your Microsoft 365 admin account to reset passwords for users in Microsoft 365 for business subscription."
+description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a Microsoft 365 for business subscription."
 ---
 
-# Reset passwords
+# Reset passwords in Microsoft 365 for business
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
 
 > [!NOTE]
 > You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
 
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [Overview in the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
 ## Watch: Reset a business password for a user
 
-Watch a short video about resetting user passwords.<br><br>
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+
+1. When a user requests a new password, you'll receive a password reset request in email. To reset the password, open the app launcher and select **Admin**.
+1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
+1. Select **Auto-generate password** to have a random password automatically created.
+1. Select **Reset**.
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
   
@@ -88,7 +101,6 @@ If you forgot your password and can't sign in:
 - Or, [call Microsoft Support](../../business-video/get-help-support.md).
 
 ## Reset all business passwords for everyone in your organization at the same time
-<a name="bkmk_forgot"> </a>
 
 These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk (maximum 40 users at a time).
   
@@ -96,14 +108,13 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 2. Select the option next to **Display name** to select everyone in your business. Then unselect yourself. You can't reset your own password at the same time you reset everyone else's password.
 
-3. Select **Reset password**. 
+3. Select **Reset password**.
 
 4. Follow the instructions on the **Reset password** page, and select **Reset**.  If you opted for auto-generating the passwords, the new temporary passwords will be displayed.
 
 5. Enter an email address where you can receive the temporary passwords. You'll need to notify your users what their temporary passwords are.
   
 ## Reset business passwords in bulk
-<a name="bkmk_forgot"> </a>
 
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   

@@ -21,8 +21,12 @@ ms.collection: M365-security-compliance
 # Configure the cloud block timeout period
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+**Platforms**
+- Windows
 
 When Microsoft Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Microsoft Defender Antivirus cloud service](cloud-protection-microsoft-defender-antivirus.md).
 
@@ -42,7 +46,7 @@ You can specify the cloud block timeout period with an [endpoint security policy
 
 3. Select (or create) an antivirus policy.
 
-4. In the **Configuration settings** section, expand **Cloud protection**. Then, in the **Defender Cloud Extended Timeout In Seconds** box, specify the more time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
+4. In the **Configuration settings** section, expand **Cloud protection**. Then, in the **Microsoft Defender Antivirus Extended Timeout In Seconds** box, specify the more time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
 
 5. (This step is optional) Make any other changes to your antivirus policy. (Need help? See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
@@ -66,4 +70,12 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 5. Select **OK**.
 
- 
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 

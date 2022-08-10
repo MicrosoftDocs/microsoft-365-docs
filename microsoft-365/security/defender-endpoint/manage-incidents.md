@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
@@ -26,7 +26,8 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -36,8 +37,7 @@ Managing incidents is an important part of every cybersecurity operation. You ca
 
 Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.
 
-
-![Image of the incidents management pane.](images/atp-incidents-mgt-pane-updated.png)
+:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="The incidents management pane" lightbox="images/atp-incidents-mgt-pane-updated.png":::
 
 You can assign incidents to yourself, change the status and classification, rename, or comment on them to keep track of their progress.
 
@@ -49,8 +49,7 @@ You can assign incidents to yourself, change the status and classification, rena
 > Incidents that existed prior the rollout of automatic incident naming will retain their names.
 >
 
-
-![Image of incident detail page.](images/atp-incident-details-updated.png)
+:::image type="content" source="images/atp-incident-details-updated.png" alt-text="The incident detail page" lightbox="images/atp-incident-details-updated.png":::
 
 ## Assign incidents
 If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.

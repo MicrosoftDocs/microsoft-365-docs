@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -44,12 +45,6 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
  ::: moniker range="o365-worldwide"
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 

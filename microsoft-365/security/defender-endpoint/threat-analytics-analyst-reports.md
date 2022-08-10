@@ -22,14 +22,15 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
-![Image of the analyst report section of a threat analytics report.](images/ta-analyst-report-small.png)
+:::image type="content" source="images/ta-analyst-report-small.png" alt-text="The analyst report section of a threat analytics report" lightbox="images/ta-analyst-report-small.png":::
 
 _Analyst report section of a threat analytics report_
 
@@ -89,11 +90,10 @@ While detections allow you to identify and stop the tracked threat automatically
 
 [Advanced hunting](advanced-hunting-overview.md) provides a query interface based on Kusto Query Language that simplifies locating subtle indicators of threat activity. It also allows you to surface contextual information and verify whether indicators are connected to a threat.
 
-Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://securitycenter.windows.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
+Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
 
 ## Related topics
 
 - [Threat analytics overview](threat-analytics.md)
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Custom detection rules](custom-detection-rules.md)
-- 

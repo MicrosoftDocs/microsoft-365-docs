@@ -2,8 +2,8 @@
 title: "Gather the information you need to create DNS records"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-
 - Adm_O365_Setup
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -36,12 +36,6 @@ description: "Gather the values/information you need to create DNS records to co
 ::: moniker range="o365-worldwide"
 
 1. In the Microsoft 365 admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
@@ -68,12 +62,6 @@ description: "Gather the values/information you need to create DNS records to co
 ::: moniker range="o365-worldwide"
 
 1. In the Microsoft 365 admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-::: moniker-end
-    
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
 
 ::: moniker-end
 

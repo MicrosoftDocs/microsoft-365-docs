@@ -22,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -40,8 +41,9 @@ On the top navigation you can:
 - Batch-select the incidents to assign 
 - Navigate between pages
 - Apply filters
+- Customize and apply date ranges
 
-![Image of incidents queue.](images/atp-incident-queue.png)
+:::image type="content" source="images/atp-incident-queue.png" alt-text="The Incidents queue" lightbox="images/atp-incident-queue.png":::
 
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.

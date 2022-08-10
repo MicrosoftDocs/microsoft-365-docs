@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus event IDs and error codes
 description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 08/04/2022
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -24,23 +23,20 @@ ms.collection: M365-security-compliance
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+**Platforms**
+- Windows
 
 If you encounter a problem with Microsoft Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
 The tables list:
 
-- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to both Windows 10 and Windows Server 2016)
+- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to Windows 10, Windows 11, and Windows Server 2016)
 - [Microsoft Defender Antivirus client error codes](#error-codes)
 - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
-> [!TIP]
-> You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
->
-> - Cloud-delivered protection
-> - Fast learning (including Block at first sight)
-> - Potentially unwanted application blocking
 
 <a id="windows-defender-av-ids"></a>
 ## Microsoft Defender Antivirus event IDs
@@ -333,7 +329,7 @@ To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -401,7 +397,7 @@ For more information, see the following:
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -834,7 +830,7 @@ Microsoft Defender Antivirus has detected a suspicious behavior.<br/>For more in
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -911,7 +907,7 @@ Microsoft Defender Antivirus has detected malware or other potentially unwanted 
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -992,7 +988,7 @@ Microsoft Defender Antivirus has taken action to protect this machine from malwa
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1119,7 +1115,7 @@ Microsoft Defender Antivirus has encountered a non-critical error when taking ac
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1214,7 +1210,7 @@ Microsoft Defender Antivirus has encountered a critical error when taking action
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1286,7 +1282,7 @@ Verify that the user has permission to access the necessary resources.
 If this event persists:<ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1327,6 +1323,61 @@ Microsoft Defender Antivirus client is up and running in a healthy state.
 <td >
 <div class="alert"><b>Note: This event will only be logged if the following policy is set: <b>ThreatFileHashLogging     unsigned</b>.</div>
 <div> </div>
+</td>
+</tr>
+<tr>
+<th colspan="2">Event ID: 1127</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Controlled Folder Access(CFA) blocked an untrusted process from making changes to the memory.
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+Controlled Folder Access has blocked an untrusted process from potentially modifying disk sectors.
+<br/> For more information about the event record, see the following:
+<dl>
+<dt>EventID: &lt;EventID&gt;, for example: 1127</dt>
+<dt>Version: &lt;Version&gt;, for example: 0</dt>
+<dt>Level: &lt;Level&gt;, for example: win:Warning</dt>
+<dt>TimeCreated: &lt;SystemTime&gt;, time when the event was created</dt>
+<dt>EventRecordID: &lt;EventRecordID&gt;, index number of the event in the event log</dt>
+<dt>Execution ProcessID: &lt;Execution ProcessID&gt;, process that generated the event</dt>
+<dt>Channel: &lt;Event channel&gt;, for example: Microsoft-Windows-Windows Defender/Operational</dt>
+<dt>Computer: &lt;Computer name&gt;</dt>
+<dt>Security UserID: &lt;Security UserID&gt;</dt>
+<dt>Product Name: &lt;Product Name&gt;, for example: Microsoft Defender Antivirus</dt>
+<dt>Product Version: &lt;Product Version&gt;</dt>
+<dt>Detection Time: &lt;Detection Time&gt;, time when CFA blocked an untrusted process</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>Path: &lt;Device name&gt;, name of the device or disk that an untrusted process accessed for modification</dt>
+<dt>Process Name: &lt;Process path&gt;, the process path name that CFA blocked from accessing the device or disk for modification</dt>
+<dt>Security Intelligence Version: &lt;Security intelligence version&gt;</dt>
+<dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+User action:
+</td>
+<td >
+The user can add the blocked process to the <i>Allowed Process</i> list for CFA, using Powershell or Windows Security Center.
 </td>
 </tr>
 <tr>
@@ -1547,7 +1598,7 @@ To troubleshoot this event:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1639,7 +1690,7 @@ The Microsoft Defender Antivirus client update failed. This event occurs when th
 To troubleshoot this event:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1691,7 +1742,7 @@ To troubleshoot this event:
 <li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -2333,7 +2384,7 @@ Microsoft Defender Antivirus Real-time Protection has restarted a feature. It is
 User action:
 </td>
 <td >
-The real-time protection feature has restarted. If this event happens again, contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+The real-time protection feature has restarted. If this event happens again, contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </td>
 </tr>
 <tr>
@@ -2508,7 +2559,7 @@ To troubleshoot this event:<ol>
 </li>
 </ul>
 </li>
-<li>If it fails in the same way, look up the error code by accessing the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.</li>
+<li>If it fails in the same way, look up the error code by accessing the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.</li>
 </ol>
 </td>
 </tr>
@@ -2522,7 +2573,7 @@ To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -2637,6 +2688,34 @@ Microsoft Defender Antivirus scanning for viruses is disabled.
 </td>
 </tr>
 <tr>
+<th colspan="2">Event ID: 5013</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Tamper protection blocked a change to Microsoft Defender Antivirus.
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+If Tamper protection is enabled then, any attempt to change any of Defender's settings is blocked. Event ID 5013 is generated and states which setting change was blocked.
+</td>
+</tr>
+<tr>
 <th colspan="2">Event ID: 5100</th>
 </tr>
 <tr><td>
@@ -2708,8 +2787,7 @@ Description of the error. </dt>
 
 <a id="error-codes"></a>
 ## Microsoft Defender Antivirus client error codes
-If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-This section provides the following information about Microsoft Defender Antivirus client errors.
+If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
 - The error code
 - The possible reason for the error
 - Advice on what to do now
@@ -2757,7 +2835,7 @@ This error indicates that there might be a problem with your security product.
 </tr><tr><td>Resolution</td><td>
 <ol>
 <li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Microsoft Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Or,
+<li>Get your security intelligence updates in the Windows Security app. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Or,
 </li>
 <li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
@@ -2777,8 +2855,7 @@ Note: The size of the definitions file downloaded from the site can exceed 60 MB
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that there might be an engine configuration error; commonly, this is related to input
-data that does not allow the engine to function properly.
+This error indicates that there might be an engine configuration error; commonly, this is related to input data that does not allow the engine to function properly.
 </td>
 </tr>
 <tr>
@@ -2907,7 +2984,7 @@ Run offline Microsoft Defender Antivirus. You can read about how to do this in t
 <td>
 This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform.
 </td></tr><tr><td>Resolution</td><td>
-You can only use Microsoft Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
+You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 
@@ -3241,6 +3318,17 @@ This is an internal error. It might have triggered when a scan fails to complete
 </td>
 </tr>
 </table>
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 
 ## Related topics
 

@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -34,9 +35,17 @@ ms.technology: mde
 
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.
 
+### Add contributor permissions
+
+Once the Storage account is created you will need to:
+
+1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
+
+    Go to **Storage Account > Access control (IAM) > Add** and verify under **Role assignments**.
+
 ## Enable raw data streaming
 
-1. Log in to the Microsoft 365 Defender portal (<https://security.microsoft.com>) as a ***Global Administrator*** or ***Security Administrator***.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to **Settings** \> **Microsoft 365 Defender** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
 
@@ -47,7 +56,7 @@ ms.technology: mde
    2. Select **Forward events to Azure Storage**.
    3. In the **Storage Account Resource ID** box that appears, type your **Storage Account Resource ID**. To get your **Storage Account Resource ID**, open the Azure portal at <https://portal.azure.com>, click **Storage accounts** \> go to the properties tab \> copy the text under **Storage Account Resource ID**.
 
-      ![Image of event hub resource ID1.](../defender-endpoint/images/storage-account-resource-id.png)
+      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="A Storage Account Resource ID" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
 
    4. Back on the **Add new Streaming API settings** flyout, choose the **Event types** that you want to stream.
 
@@ -57,7 +66,7 @@ ms.technology: mde
 
 - A blob container will be created for each event type:
 
-  ![Image of event hub resource ID2.](../defender-endpoint/images/storage-account-event-schema.png)
+  :::image type="content" source="../defender-endpoint/images/storage-account-event-schema.png" alt-text="Example of a blob container" lightbox="../defender-endpoint/images/storage-account-event-schema.png":::
 
 - The schema of each row in a blob is the following JSON:
 
@@ -80,7 +89,7 @@ ms.technology: mde
 
 In order to get the data types for our events properties do the following:
 
-1. Log in to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and go to **Hunting** \> **Advanced hunting**. To go directly to the **Advanced hunting** page, use <security.microsoft.com/advanced-hunting>.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to **Hunting** \> **Advanced hunting**. To go directly to the **Advanced hunting** page, use <security.microsoft.com/advanced-hunting>.
 
 2. On the **Query** tab, run the following query to get the data types mapping for each event:
 
@@ -92,7 +101,12 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of event hub resource ID3.](../defender-endpoint/images/machine-info-datatype-example.png)
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example device info query" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+
+## Monitoring created resources
+
+You can monitor the resources created by the streaming API using **Azure Monitor**. 
+For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs](/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations).
 
 ## Related topics
 

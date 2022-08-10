@@ -13,14 +13,13 @@ search.appverid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
+  - m365solution-ransomware
 description: Microsoft 365 admins can learn how to recover from a ransomware attack.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
 # Recover from a ransomware attack in Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -121,7 +120,7 @@ Scam reporting websites provide information about how to prevent and avoid scams
 
 - Germany: [Bundesamt für Sicherheit in der Informationstechnik](https://www.bsi.bund.de/DE/Home/home_node.html)
 
-- Ireland: [An Garda Síochána](http://www.garda.ie/)
+- Ireland: [a Garda Síochána](http://www.garda.ie/)
 
 - New Zealand: [Consumer Affairs Scams](http://www.consumeraffairs.govt.nz/scams)
 
@@ -167,12 +166,12 @@ Microsoft Azure:
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps:
 
--  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 

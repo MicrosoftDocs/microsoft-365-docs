@@ -16,12 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365solution-getstarted
+ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Get started with Microsoft 365 for Defender
+# Get started with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -30,9 +31,12 @@ ms.technology: m365d
 
 Microsoft 365 Defender is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location. 
 
+Watch this short video to learn how Microsoft 365 Defender helps to prevent, detect, investigate, and remediate threats across Microsoft 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
+
 Whether you're new to the Microsoft suite of security products or familiar with individual workflows, this topic will guide you in the simple steps you need to take to get started with Microsoft 365 Defender.
 
-![Image of getting started with Microsoft 365 Defender steps.](../../media/mtp/get-started-m365d.png)
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="The steps to get started with the Microsoft 365 Defender portal" lightbox="../../media/mtp/get-started-m365d.png":::
 
 In general, you'll need to take the following steps to get started:
 
@@ -46,6 +50,7 @@ In general, you'll need to take the following steps to get started:
 
 
 ## Key capabilities
+
 Turning on Microsoft 365 Defender and deploying services will give you access to the following key capabilities:
 
 
@@ -54,9 +59,4 @@ Turning on Microsoft 365 Defender and deploying services will give you access to
 | Microsoft Defender for Endpoint | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
 |Microsoft Defender for Office 365 | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
 | Microsoft Defender for Identity | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
-| Microsoft Cloud App Security | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
-
-
-
-
-
+| Microsoft Defender for Cloud Apps | Identify and combat cyberthreats across your Microsoft and third-party cloud services |

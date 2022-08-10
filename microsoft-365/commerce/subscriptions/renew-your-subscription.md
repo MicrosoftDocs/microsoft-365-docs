@@ -2,10 +2,10 @@
 title: "Renew Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,9 +14,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
+- VSBFY23
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150 
 description: "Learn how to renew most Microsoft 365 for business subscriptions by turning recurring billing off or on."
@@ -26,7 +27,7 @@ ms.date: 05/04/2021
 # Renew Microsoft 365 for business
 
 > [!IMPORTANT]
-> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you're an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
 
 This article applies to most paid Microsoft 365 for business subscriptions.
   
@@ -47,12 +48,6 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
@@ -61,7 +56,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 2. Select the subscription for which you want to manage recurring billing.
 3. On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.
-4. In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.
+4. In the **Edit recurring billing** pane, select **On**, **On, but renew once**, or **Turn off**.
 5. Select **Save**.
 
     > [!NOTE]

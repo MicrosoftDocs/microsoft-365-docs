@@ -2,8 +2,8 @@
 title: "Signing up for Office 365 with a personal email address"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150

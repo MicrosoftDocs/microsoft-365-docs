@@ -11,6 +11,7 @@ metadata:
   ms.technology: mdo
   ms.topic: landing-page # Required 
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 04/13/2021 #Required; mm/dd/yyyy format.
@@ -46,10 +47,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Evaluate Defender for Office 365
-          url: office-365-evaluation.md
-        - text: Switch to Exchange Online Protection
-          url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+        - text: Try Defender for Office 365
+          url: try-microsoft-defender-for-office-365.md
+        - text: Migrate to Defender for Office 365
+          url: migrate-to-defender-for-office-365.md
    # Card
   - title: Setting up Email Authentication protection
     linkLists:
@@ -90,8 +91,8 @@ landingContent:
             url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
           - text: Threat Trackers
             url: threat-trackers.md
-          - text: Smart reports and insights in the Security & Compliance Center
-            url: reports-and-insights-in-security-and-compliance.md
+          - text: Email security reports in the Microsoft 365 Defender portal
+            url: view-email-security-reports.md
      # Card
   - title: Investigate
     linkLists:

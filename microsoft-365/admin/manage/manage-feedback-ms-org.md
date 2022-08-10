@@ -64,10 +64,10 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 |**Build #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|In-product feedback|At least 16.0.13328|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
-|In-product surveys|At least 16.0.13328|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
-|Metadata collection|At least 16.0.13328|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
-|Customer engagement|At least 16.0.13328|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
+|In-product feedback|At least Version 2010|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
+|In-product surveys|At least Version 2010|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
+|Metadata collection|At least Version 2010|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
+|Customer engagement|At least Version 2010|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
 
 ## Specific policies you can configure
 
@@ -75,27 +75,23 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 |**Policy name**|**Default state**|**Control summary**|
 |:-----|:-----|:-----|
+|Allow users to access feedback portal|On|Manage user access to the feedback portal|
 |Allow users to submit feedback to Microsoft|On|Controls feedback entry points across applications|
 |Allow users to receive and respond to in-product surveys from Microsoft|On|Controls survey prompts within product|
 |Allow users to include screenshots and attachments when they submit feedback to Microsoft|Off|Determines what metadata the user can decide to submit with feedback/survey|
 |Allow Microsoft to follow up on feedback submitted by users|Off|Determines if user can share contact info with feedback/survey|
 |Allow users to include log files and content samples when feedback is submitted to Microsoft|Off|Determines metadata the user can decide to submit with feedback/survey|
 
+> [!NOTE]
+> The **Allow users to access the feedback portal** policy is a cloud policy. This policy is not defined in ADMX and does not have a corresponding registry key available to set the policy. You should create a cloud policy to enforce it. This is a cloud policy because the feedback portal is a web application that makes a call to the cloud policy service, which is also a web application, requesting the policies for the person who signs in. If this policy is configured, the feedback portal will receive the configured policy value in the response from the cloud policy service.
+
 ## Configure policies
 
-1. Go to [https://config.office.com](https://config.office.com) and login.
-1. Select **Customization** then **Policy Management**.
-1. Select **Create**.
-1. Enter **name** and **description**.
-1. Choose the Azure Active directory groups that you want to configure.
-1. Search for **Feedback** and **Survey**.
-1. For each policy listed, set the value you want.
-
-For more information, see [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service).
+To configure these policy settings, you can use the Office cloud policy service. For more information, see [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service). You can search for "feedback" or "survey" within the Office cloud policy service UI to find the policy settings to configure them. 
 
 These policy settings are also available if you use Group Policy. To use these policy settings, download at least version 5146.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), released on March 22, 2021.
 
-You can find these policy settings under User Configuration -> Policies -> Administrative Templates -> Microsoft Office 2016 -> Privacy -> Trust Center.
+You can find these policy settings under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
 
 > [!NOTE]
 > It takes a few hours for the client applications to update.

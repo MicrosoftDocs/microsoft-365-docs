@@ -20,6 +20,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
+ms.custom: api
 ---
 
 # Microsoft 365 Defender incidents API and the incidents resource type
@@ -68,12 +69,15 @@ createdTime | DateTimeOffset | The date and time (in UTC) the Incident was creat
 lastUpdateTime | DateTimeOffset | The date and time (in UTC) the Incident was last updated.
 assignedTo | string | Owner of the Incident.
 severity | Enum | Severity of the Incident. Possible values are: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```, and ```High```.
-status | Enum | Specifies the current status of the incident. Possible values are: ```Active```, ```Resolved```, and ```Redirected```.
+status | Enum | Specifies the current status of the incident. Possible values are: ```Active```, ```InProgress```, ```Resolved```, and ```Redirected```.
 classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
 determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | List of Incident tags.
 comments | List of incident comments | Incident Comment object contains: comment string, createdBy string, and createTime date time.
 alerts | Alert List | List of related alerts. See examples at [List incidents](api-list-incidents.md) API documentation.
+
+>[!NOTE]
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Related articles
 

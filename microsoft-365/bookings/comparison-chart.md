@@ -1,5 +1,5 @@
 ---
-title: "Comparison chart: Bookings web app vs. Bookings Teams app"
+title: "Comparison: Bookings web app vs. Bookings Teams app"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -32,3 +32,4 @@ Teams app features are being added all the time and we will continue to update t
 | Publish a self-service scheduling page | Yes | No |
 | Manage customer contacts | Yes | No |
 | Set time off for staff | Yes | No |
+| Scheduled queue view | No | Yes |

@@ -13,7 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
@@ -24,7 +26,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms**
@@ -60,7 +62,7 @@ You'll need to take the following steps to onboard non-Windows devices:
 
 For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint. In the navigation pane, select **Settings** \> **Offboard** \> **Select Operating System to start the offboarding Process**.
 
-You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://securitycenter.windows.com/interoperability/partners). 
+You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://security.microsoft.com/interoperability/partners).
 
 ## Related topics
 - [Onboard Windows devices](configure-endpoints.md)

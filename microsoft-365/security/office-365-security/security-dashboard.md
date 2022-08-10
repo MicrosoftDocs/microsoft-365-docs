@@ -1,6 +1,6 @@
 ---
 title: Security dashboard overview
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -8,13 +8,13 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-ms.collection: 
+ms.collection:
   - M365-security-compliance
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Use the new Security Dashboard to review Office 365 Threat Protection Status, and view and act on security alerts.
 ms.technology: mdo
@@ -23,8 +23,7 @@ ms.prod: m365-security
 
 # Security dashboard in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 ## Basic functions and how to open Security dashboard
 
@@ -45,18 +44,13 @@ To view the Security Dashboard in the Security & Compliance Center, go to go to 
 
 The Threat Management Summary widget tells you at a glance how your organization was protected from threats over the past seven (7) days.
 
-![Security Dashboard - Threat Management Summary widget.](../../media/SecDash-ThreatMgmtSummary.png)
+:::image type="content" source="../../media/SecDash-ThreatMgmtSummary.png" alt-text="The Security Dashboard - Threat Management Summary widget" lightbox="../../media/SecDash-ThreatMgmtSummary.png":::
 
 The information you'll see in the Threat Management Summary depends on what your subscription includes. The following table describes what information is included for Office 365 E3 and Office 365 E5.
-
-<br>
-
-****
 
 |Office 365 E3|Office 365 E5|
 |---|---|
 |Malware messages blocked<br>Phishing messages blocked<br>Messages reported by users<br><br><br><br>|Malware messages blocked<br>Phishing messages blocked<br>Messages reported by users<br>Zero-day malware blocked<br>Advanced phishing messages detected<br>Malicious URLs blocked|
-|
 
 To view or access the Threat Management Summary widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
@@ -64,19 +58,14 @@ To view or access the Threat Management Summary widget, you must have permission
 
 The Threat Protection Status widget shows threat protection effectiveness with a trending and detailed view of phish and malware.
 
-![Threat protection status widget.](../../media/tpswidget.png)
+:::image type="content" source="../../media/tpswidget.png" alt-text="The Threat protection status widget" lightbox="../../media/tpswidget.png":::
 
 The details depend on whether your Microsoft 365 subscription includes [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) with or without [Microsoft Defender for Office 365](defender-for-office-365.md).
-
-<br>
-
-****
 
 |If your subscription includes...|You'll see these details|
 |---|---|
 |EOP but not Microsoft Defender for Office 365|Malicious email that was detected and blocked by EOP.<p> See [Threat Protection Status report (EOP)](view-email-security-reports.md#threat-protection-status-report).|
 |Microsoft Defender for Office 365|Malicious content and malicious email detected and blocked by EOP and Defender for Office 365 <p> Aggregated count of unique email messages with malicious content blocked by the anti-malware engine, [zero-hour auto purge](zero-hour-auto-purge.md), and Defender for Office 365 features (including [Safe Links](safe-links.md), [Safe Attachments](safe-attachments.md), and [Anti-phishing in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> See [Threat protection status report](view-reports-for-mdo.md#threat-protection-status-report).|
-|
 
 To view or access the Threat Protection Status widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -84,13 +73,9 @@ To view or access the Threat Protection Status widget, you must have permissions
 
 The Global Weekly Threat Detections widget shows how many threats were detected in email messages over the past seven (7) days.
 
-![Global Weekly Threat Detections widget.](../../media/globalweeklythreatdetections.png)
+:::image type="content" source="../../media/globalweeklythreatdetections.png" alt-text="The Global Weekly Threat Detections widget" lightbox="../../media/globalweeklythreatdetections.png":::
 
 The metrics are calculated as described in the following table:
-
-<br>
-
-****
 
 |Metric|How it's calculated|
 |---|---|
@@ -98,19 +83,18 @@ The metrics are calculated as described in the following table:
 |Threats stopped|Number of email messages identified as containing malware multiplied by the number of recipients|
 |Blocked by [Defender for Office 365](defender-for-office-365.md)|Number of email messages blocked by Defender for Office 365 multiplied by the number of recipients|
 |Removed after delivery|Number of messages removed by [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) multiplied by the number of recipients|
-|
 
 ## Malware
 
 Malware widgets show details about malware trends and malware family types over the past seven (7) days.
 
-![Malware trends and family types.](../../media/malwarewidgetatpe5.png)
+:::image type="content" source="../../media/malwarewidgetatpe5.png" alt-text="The Malware trends and family types" lightbox="../../media/malwarewidgetatpe5.png":::
 
 ## Insights
 
 Insights not only surface key issues you should review, they also include recommendations and actions to consider.
 
-![Smart insights.](../../media/smartinsights.png)
+:::image type="content" source="../../media/smartinsights.png" alt-text="The Smart insights" lightbox="../../media/smartinsights.png":::
 
 For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
 
@@ -124,7 +108,7 @@ To learn more, see [Get started using Automated investigation and response (AIR)
 
 Near the bottom of the Security Dashboard is a **Trends** section, which summarizes email flow trends for your organization. Reports provide information about email categorized as spam, malware, phishing attempts, and good email. Click a tile to view more detailed information in the report.
 
-![The Trends section summarizes email flow trends for the organization.](../../media/trends.png)
+:::image type="content" source="../../media/trends.png" alt-text="The Trends section that summarizes email flow trends for the organization" lightbox="../../media/trends.png":::
 
 And, if your organization's subscription includes [Defender for Office 365 Plan 2](office-365-ti.md), you will also have a **Recent threat management alerts** report in this section that enables your security team to view and take action on high-priority security alerts.
 

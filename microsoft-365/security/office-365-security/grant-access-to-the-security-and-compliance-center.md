@@ -10,9 +10,8 @@ audience: Admin
 ms.topic: how-to
 f1_keywords: 
   - 'ms.o365.cc.PermissionsHelp'
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid: 
   - MOE150
   - MET150
@@ -25,7 +24,7 @@ ms.prod: m365-security
 
 # Give users access to the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -58,9 +57,9 @@ For more information about the different permissions you can give to users in th
 
 5. When you're finished, click **Save**.
 
-## Use Security & Compliance Center PowerShell to give another user access to the Security & Compliance Center
+## Use Security & Compliance PowerShell to give another user access to the Security & Compliance Center
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Use the following syntax:
 
@@ -84,7 +83,7 @@ To verify that you've successfully granted access to the Security & Compliance C
 
 - In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group.
 
-- In Security & Compliance Center PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
+- In Security & Compliance PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"

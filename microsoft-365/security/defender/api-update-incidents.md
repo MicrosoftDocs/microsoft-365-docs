@@ -20,6 +20,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
+ms.custom: api
 ---
 
 # Update incidents API
@@ -81,6 +82,9 @@ classification|Enum|Specification of the incident. Possible values are: `Unknown
 determination|Enum|Specifies the determination of the incident. Possible values are: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
 tags|string List|List of Incident tags.
 comment|string|Comment to be added to the incident.
+
+>[!NOTE]
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 
