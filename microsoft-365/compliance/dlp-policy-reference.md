@@ -131,7 +131,7 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |Power BI|Yes | Yes| No|
 
 > [!NOTE]
-> DLP supports (in preview) using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, Sharepoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
+> DLP supports (in preview) using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, SharePoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
