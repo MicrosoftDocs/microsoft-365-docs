@@ -35,7 +35,7 @@ You can set up multiple connections, each with different sync settings. For exam
 With UKG Dimensions as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
 
 > [!NOTE]
-> You can also use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center to connect Shifts to UKG Dimensions.
+> You can also use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center to connect Shifts to UKG Dimensions.
 
 ## Before you begin
 
