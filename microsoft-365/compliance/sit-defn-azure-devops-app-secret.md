@@ -36,7 +36,7 @@ Any combination of 52 characters consisting of:
 
 for example:
 
-`ntpi2ch67ci2vjzcohglogyygwo5fuyl365n2zdowwxhsys6jnoa`
+`abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst`
 
 
 ## Checksum
