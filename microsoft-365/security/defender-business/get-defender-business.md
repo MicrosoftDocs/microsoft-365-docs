@@ -10,7 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -96,7 +96,7 @@ When you're ready to get started, you'll work with two main portals: the Microso
 | The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))     | Use the Microsoft 365 Defender portal to set up and configure Defender for Business.<p>You'll use the Microsoft 365 Defender portal to: <ul><li>View your devices and device protection policies.</li><li>View detected threats and take action.</li><li>View security recommendations and manage your security settings.</li></ul><p>To learn more, see [Get started using the Microsoft 365 Defender portal](mdb-get-started.md).        |
 
 > [!TIP]
-> If you have Microsoft 365 Business Premium, then you also have Microsoft Intune. You can use the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) to manage devices and configure security settings. To learn more about Intune, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).
+> You can use the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) to onboard devices, and to configure security settings. To learn more about Intune, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).
 
 
 ## Next steps
