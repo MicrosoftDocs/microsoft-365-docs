@@ -175,6 +175,8 @@ The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, 
 
 To run the client analyzer for troubleshooting performance issues, see [Run the client analyzer on macOS and Linux](run-analyzer-macos-linux.md).
 
+>[!NOTE]
+>In case after following the above steps, the performance problem persists, please contact customer support for further instructions and mitigation. 
 
 
 ## See also
