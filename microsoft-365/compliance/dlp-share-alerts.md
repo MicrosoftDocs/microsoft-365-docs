@@ -25,7 +25,7 @@ description: Learn how to share data loss prevention alerts to users with minima
 
 # Share data loss prevention alerts (preview)
 
-Users with the [appropriate permissions]([Roles](dlp-configure-view-alerts-policies.md#roles)) can view Microsoft Purview Data Loss Prevention (DLP) alerts in the DLP Alerts console. But, as alerts are triaged and investigated, you may need to share them with other users who don't, and shouldn't, have full permissions to DLP and the alerts console.
+Users with the [appropriate permissions](dlp-configure-view-alerts-policies.md#roles) can view Microsoft Purview Data Loss Prevention (DLP) alerts in the DLP Alerts console. But, as alerts are triaged and investigated, you may need to share them with other users who don't, and shouldn't, have full permissions to DLP and the alerts console.
 
 You can share an alert with users that you give limited permissions to using the procedures in this article.
 
