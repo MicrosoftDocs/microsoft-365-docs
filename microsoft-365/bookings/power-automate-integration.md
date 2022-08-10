@@ -22,7 +22,7 @@ Microsoft Bookings uses Azure Active Directory (AAD) authentication. A valid Mic
 
 To create a custom flow that uses Bookings appointments as triggers, you must provide the Bookings business SMTP address.
 
-![Image of an SMTP address.](../media/bookings-teams-smtp.png)
+![Image of an SMTP address.](media/bookings-teams-smtp.png)
 
 ## Get started with connectors
 
