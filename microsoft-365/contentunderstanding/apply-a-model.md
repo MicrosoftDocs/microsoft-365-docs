@@ -17,6 +17,8 @@ description: Learn how to apply a published a model to a SharePoint document lib
 
 # Apply a document understanding model in Microsoft SharePoint Syntex
 
+*"Update apply a model article to show the new discovery experience (via ""classify & extract"" button OR from apply model action in model home page) + model recommendation & quick test. This article can include pieces from the ""publish & discover"" article"*
+
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
