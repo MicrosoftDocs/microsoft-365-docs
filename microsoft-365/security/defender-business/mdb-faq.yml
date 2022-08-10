@@ -11,7 +11,7 @@ metadata:
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
-  ms.date: 07/22/2022
+  ms.date: 08/10/2022
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH 
   ms.collection: 
@@ -25,11 +25,6 @@ summary: |
 sections:
   - name: General
     questions:
-      - question: Can I extend my preview trial of Defender for Business?
-        answer: |
-          As Defender for Business is now generally available, the preview program has ended and can't be extended. 
-          
-          See [Get Defender for Business](get-defender-business.md).
 
       - question: How do I try or buy Defender for Business?
         answer: |
@@ -86,7 +81,7 @@ sections:
           
           To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-business).
 
-      - question: How can I run custom reports with Defender for Business?
+      - question: How do I run custom reports with Defender for Business?
         answer: |
           Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
 
