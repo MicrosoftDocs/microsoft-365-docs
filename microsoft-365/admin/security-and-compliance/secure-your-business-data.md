@@ -57,14 +57,18 @@ If you are a small or medium-size business and you have one of the Microsoft 365
 
 ## Security features comparison
 
-All the Microsoft 365 plans offer baseline protection, and Windows devices include Microsoft Defender Antivirus. Microsoft 365 Business Premium includes threat protection, data protection, and device management features. These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers. The following table summarizes security capabilities included in Microsoft 365 for business plans.
+All the Microsoft 365 plans offer baseline protection with Exchange Online Protection. Microsoft Defender for Business is available as an add-on for Microsoft 365 Business Basic and Standard, and is included in Microsoft 365 Business Premium. Microsoft 365 Business Premium includes additional threat protection, data protection, and device management capabilities.
+
+The following table summarizes the security capabilities that are included in Microsoft 365 for business plans.
+
 
 | Subscription | What's included |
 |:---|:---|
-| Microsoft 365 Business Basic |  |
+| Microsoft 365 Business Basic | Exchange Online Protection (includes anti-spam, anti-malware, and anti-phishing)<br>Ability to add on [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) |
 | Microsoft 365 Business Standard | |
 | Microsoft 365 Business Premium |  |
 
+For more details, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
 
 ## See also
 
