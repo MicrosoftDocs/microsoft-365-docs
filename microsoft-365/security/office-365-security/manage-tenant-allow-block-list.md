@@ -104,7 +104,7 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
 2. Select the tab you want. The columns that are available depend on the tab you selected:
 
-   - **Domains or email addresses**:
+   - **Domains & addresses**:
      - **Value**: The domain or email address.
      - **Action**: The value **Allow** or **Block**.
      - **Modified by**
@@ -135,7 +135,7 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
    You can click **Group** to group the results. The values that are available depend on the tab you selected:
 
-   - **Domains or email addresses**: You can group the results by **Action**.
+   - **Domains & addresses**: You can group the results by **Action**.
    - **Spoofed sender**: You can group the results by **Action** or **Spoof type**.
    - **URLs**: You can group the results by **Action**.
    - **Files**: You can group the results by **Action**.
@@ -144,7 +144,7 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
    Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
 
-   - **Domains or email addresses**
+   - **Domains & addresses**
      - **Action**
      - **Never expire**
      - **Last updated date**
@@ -176,7 +176,7 @@ We recommend letting entries automatically expire after 30 days to see if the sy
    - **Files**
 
 3. Select the entry that you want to modify, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The values that you are able to modify in the flyout that appears depend on the tab you selected in the previous step:
-   - **Domains or email addresses**
+   - **Domains & addresses**
      - **Never expire** and/or expiration date.
      - **Optional note**
    - **Spoofed senders**
@@ -200,7 +200,7 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab that contains the type of entry that you want to remove:
-   - **Domains or email addresses**
+   - **Domains & addresses**
    - **Spoofed senders**
    - **URLs**
    - **Files**
