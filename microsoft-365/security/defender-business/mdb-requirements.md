@@ -10,7 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -47,7 +47,6 @@ The following table lists the basic requirements you need to configure and use D
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) is used to manage user permissions and device groups. Azure AD is included in your Defender for Business subscription. 
 > - If you don't have a Microsoft 365 subscription before you start your trial, Azure AD will be provisioned for you during the activation process. 
 > - If you do have another Microsoft 365 subscription when you start your Defender for Business trial, you can use your existing Azure AD service. 
-> - If you're using [Microsoft 365 Business Premium](../../business/index.yml) when you start your Defender for Business trial, you have the option to manage your devices using Intune.
 
 ## Next steps
 
