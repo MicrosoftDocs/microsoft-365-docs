@@ -159,10 +159,10 @@ You can verify that events are being sent to the Event Hubs by running a basic A
 
 ```console
 EmailEvents
-|joinkind=fullouterEmailAttachmentInfoonNetworkMessageId
-|joinkind=fullouterEmailUrlInfoonNetworkMessageId
-|joinkind=fullouterEmailPostDeliveryEventsonNetworkMessageId
-|whereTimestamp\>ago(1h)
+|join kind=fullouter EmailAttachmentInfo on NetworkMessageId
+|join kind=fullouter EmailUrlInfo on NetworkMessageId
+|join kind=fullouter EmailPostDeliveryEvents on NetworkMessageId
+|where Timestamp > ago(1h)
 |count
 ```
 
