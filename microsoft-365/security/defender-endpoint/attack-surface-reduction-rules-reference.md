@@ -16,7 +16,7 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 02/04/2022
+ms.date: 08/10/2022
 ---
 
 # Attack surface reduction rules reference
@@ -224,7 +224,7 @@ Advanced hunting action type:
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block all Office applications from creating child processes
 
@@ -243,7 +243,7 @@ Advanced hunting action type:
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block credential stealing from the Windows local security authority subsystem
 
@@ -268,7 +268,7 @@ Advanced hunting action type:
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block executable content from email client and webmail
 
@@ -288,7 +288,7 @@ Advanced hunting action type:
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 > [!NOTE]
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
@@ -319,7 +319,7 @@ Advanced hunting action type:
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-Dependencies: MDAV, Cloud Protection
+Dependencies: Microsoft Defender Antivirus, Cloud Protection
 
 ### Block execution of potentially obfuscated scripts
 
@@ -344,7 +344,7 @@ Advanced hunting action type:
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dependencies: MDAV, AMSI
+Dependencies: Microsoft Defender Antivirus, AMSI
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
@@ -363,7 +363,7 @@ Advanced hunting action type:
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
-Dependencies: MDAV, AMSI
+Dependencies: Microsoft Defender Antivirus, AMSI
 
 ### Block Office applications from creating executable content
 
@@ -382,7 +382,7 @@ Advanced hunting action type:
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
-Dependencies: MDAV, RPC
+Dependencies: Microsoft Defender Antivirus, RPC
 
 ### Block Office applications from injecting code into other processes
 
@@ -405,7 +405,7 @@ Advanced hunting action type:
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block Office communication application from creating child processes
 
@@ -427,7 +427,7 @@ Advanced hunting action type:
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block persistence through WMI event subscription
 
@@ -449,7 +449,7 @@ Advanced hunting action type:
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
-Dependencies: MDAV, RPC
+Dependencies: Microsoft Defender Antivirus, RPC
 
 ### Block process creations originating from PSExec and WMI commands
 
@@ -469,7 +469,7 @@ Advanced hunting action type:
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block untrusted and unsigned processes that run from USB
 
@@ -489,7 +489,7 @@ Advanced hunting action type:
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block Win32 API calls from Office macros
 
@@ -515,7 +515,7 @@ Advanced hunting action type:
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
-Dependencies: MDAV, AMSI
+Dependencies: Microsoft Defender Antivirus, AMSI
 
 ### Use advanced protection against ransomware
 
@@ -541,4 +541,4 @@ Advanced hunting action type:
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-Dependencies: MDAV, Cloud Protection
+Dependencies: Microsoft Defender Antivirus, Cloud Protection
