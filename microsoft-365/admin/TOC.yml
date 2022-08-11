@@ -320,8 +320,6 @@
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
-         - name: Show or hide new features
-           href: manage/show-hide-new-features.md
          - name: Power BI usage analytics
            items: 
            - name: About usage analytics
