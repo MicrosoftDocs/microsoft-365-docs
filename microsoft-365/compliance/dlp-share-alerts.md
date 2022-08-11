@@ -52,15 +52,17 @@ In this procedure, you need to create a custom role group for Purview. If you ha
 
 ![Image showing details of a DLP alert](../media/dlp-alert-details1.png)
 
-6. Construct the shareable URL in this format:
+6. The value in the **Time detected** field is the local time. You need to convert that value to UTC time for use in the `creationtime` parameter. There are a number of local to UTC time converters available via an internet search.
+
+7. Construct the shareable URL in this format:
 
 `<compliance-portal-domain>/datalossprevention/alerts/eventdeeplink?eventid={eventId}&creationtime={creationTime}`
-
-Use the **Time detected** value for the `creationtime` field
- 
+  
 For example:
  
-`compliance.microsoft.com/datalossprevention/alerts/eventdeeplink?eventid=1eae3e53-c045-1c9b-ee00-08da7a6751dc&creationtime=2022-08-9T09:38:47Z`
+`compliance.microsoft.com/datalossprevention/alerts/eventdeeplink?eventid=1eae3e53-c045-1c9b-ee00-08da7a6751dc&creationtime=2022-08-10T12:30:00Z`
 
-7. You can share this link with people in the group you created, they'll be able to access the alert for review and investigation.
+In this example, the **Time detected** value is **August 9, 2022 5:30 PM** Pacific Daylight Time. This converts to **August 10, 12:30 AM** UTC or `2022-08-10T12:30:00Z`
+
+8. You can share this link with people in the group you created, they'll be able to access the alert for review and investigation.
 
