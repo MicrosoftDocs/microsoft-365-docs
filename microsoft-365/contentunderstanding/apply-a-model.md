@@ -25,7 +25,7 @@ description: Learn how to apply a published a model to a SharePoint document lib
 
 </br>
 
-After publishing your document understanding model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
+After publishing your custom model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
 
 > [!NOTE]
 > You are only able to apply the model to document libraries that you have access to.
@@ -75,7 +75,7 @@ The model identifies any files and folders with the model’s associated content
 > [!NOTE]
 > If two or more document understanding models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only. <br><br>If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
 
-## Sync changes to one or more libraries
+## Sync changes to one or more document libraries
 
 When you publish a model to multiple document libraries and then update the model, such as adding or removing an extractor, you need to push the update to all the libraries that the model has been applied.
 
@@ -110,7 +110,7 @@ While an applied model processes all files and folder content uploaded to the do
 
 ### Classification Date field
 
-When a SharePoint Syntex document understanding model (or a form processing model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a custom is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
 
@@ -140,4 +140,4 @@ To run the flow:
 
 [Create an extractor](create-an-extractor.md)
 
-[Document Understanding overview](document-understanding-overview.md)
+
