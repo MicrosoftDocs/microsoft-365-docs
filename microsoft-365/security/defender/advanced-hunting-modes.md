@@ -58,8 +58,8 @@ You can then start building your query to hunt for threats. The following articl
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Craft your first query** | Give description | [Build hunting queries in guided mode](advanced-hunting-query-builder.md) |
-| **Refine your query in guided mode** |  Learn the different supported data types, how to use subgroups, an | [Refine your query in guided mode](advanced-hunting-query-builder-details.md) |
+| **Craft your first query** | Learn the basics of the query builder like specifying the data domain and adding conditions and filters to help you create a meaningful query. Learn further by running sample queries. | [Build hunting queries in guided mode](advanced-hunting-query-builder.md) |
+| **Learn the different query building basics** |  Get to know the different supported data types, how to use subgroups, an | [Refine your query in guided mode](advanced-hunting-query-builder-details.md) |
 | **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results in guided mode](advanced-hunting-query-results-guided.md)<br /> - [Take action on query results](advanced-hunting-take-action.md) <br /> - [Link query results to an incident](advanced-hunting-link-to-incident.md) |
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically. | - [Custom detections overview](custom-detections-overview.md) <br />- [Custom detection rules](custom-detection-rules.md) |
 
