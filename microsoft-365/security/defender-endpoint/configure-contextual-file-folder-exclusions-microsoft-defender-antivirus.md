@@ -9,6 +9,7 @@ ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -80,7 +81,7 @@ You can restrict exclusions to only apply if the target is a file or a folder by
 
 #### File/folder exclusions default behavior
 
-If you don't specify any other options, the file/folder is excluded from all types of scans _and_ the exclusion applies regardless of whether the target is a file or a folder. For more information about customizing exclusions to only apply to a specific scan type, see [Scan type restriction](#scan-type-restriction).
+If you don't specify any other options, the file/folder is excluded from all types of scans, _and_ the exclusion applies regardless of whether the target is a file or a folder. For more information about customizing exclusions to only apply to a specific scan type, see [Scan type restriction](#scan-type-restriction).
 
 #### Folders
 
