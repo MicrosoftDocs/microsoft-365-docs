@@ -1,5 +1,5 @@
 ---
-title: Apply a document understanding model in Microsoft SharePoint Syntex
+title: Apply a model to a document library in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ ms.localizationpriority:  medium
 description: Learn how to apply a published a model to a SharePoint document library in Microsoft SharePoint Syntex.
 ---
 
-# Apply a document understanding model in Microsoft SharePoint Syntex
+# Apply a model to a document library in Microsoft SharePoint Syntex
 
 *"Update apply a model article to show the new discovery experience (via ""classify & extract"" button OR from apply model action in model home page) + model recommendation & quick test. This article can include pieces from the ""publish & discover"" article"*
 
@@ -60,7 +60,7 @@ To apply your model to a SharePoint document library:
 
 6. On the model home page, in the **Where the model is applied** section, you should see the name of the SharePoint site listed.
 
-7. Go to your document library and make sure you are in the model's document library view. Select **Automate** > **View document understanding models**.
+7. Go to your document library and make sure you are in the model's document library view. Select **Automate** > **View models**.
 
 8. On the **Review models and apply new ones** page, select the **Applied** tab to see the models that are applied to the document library.
 
@@ -73,7 +73,7 @@ After applying the model to the document library, you can begin uploading docume
 The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you're extracting from each file or folder.
 
 > [!NOTE]
-> If two or more document understanding models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only. <br><br>If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
+> If two or more **Classify and extract by text pattern** models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only. <br><br>If an **Extract by layout** model or an **Extract by text pattern and layout** model and a **Classify and extract by text pattern** model are applied to the same library, the file is classified using the **Classify and extract by text pattern** model and any trained extractors for that model. If there are any empty columns that match the **Extract by layout** model or the **Extract by text pattern and layout** model, the columns will be populated using those extracted values.
 
 ## Sync changes to one or more document libraries
 
