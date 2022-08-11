@@ -104,10 +104,6 @@ The following table lists the available products and their **ProductId**.
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
 | Microsoft 365 F3 | CFQ7TTC0LH05 |
-| Dynamics 365 Marketing | CFQ7TTC0LH3N |
-| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | 
-| Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK |
-| Dynamics 365 Marketing Additional Non-Prod Application | CFQ7TTC0LHWM |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they are automatically blocked using the new IDs. No additional work is required.
 
@@ -200,5 +196,5 @@ Uninstall-Module -Name MSCommerce
 
 ## Related content
 
-[Manage self-service purchases (Admin)](manage-self-service-purchases-admins.md) (article)
+[Manage self-service purchases (Admin)](manage-self-service-purchases-admins.md) (article)\
 [Self-service purchase FAQ](self-service-purchase-faq.yml) (article)
