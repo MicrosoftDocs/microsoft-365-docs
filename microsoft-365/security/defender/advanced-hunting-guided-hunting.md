@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 
-To reduce the learning curve for hunting, remove the KQL challenge, and enable all analysts to hunt,  **Guided hunting** experience is supported. This is a hunting mode that enables all analysts to hunt—without knowing KQL or the data schema. In this mode, you can use a query builder to write your queries. You just need to know what you are looking for and you can easily filter for it. 
+To reduce the learning curve for hunting, remove the KQL challenge, and enable all analysts to hunt,  **Guided hunting** experience is supported. This is a hunting mode that enables all analysts to hunt—*without knowing KQL or the data schema*. In this mode, you can use a query builder to write your queries. You just need to know what you are looking for and you can easily filter for it. 
 
 ## Query in builder
 In the **Advanced hunting** page, select **Create new** to open a new query tab and select **Query in builder**. This brings you to the guided mode, where you can then construct your query by selecting different components using dropdown menus.
