@@ -76,7 +76,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 - Epic version November 2018 or later.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
-- A person in your organization who is a Microsoft 365 global admin with access to the Teams admin center.
+- Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
 > [!IMPORTANT]
