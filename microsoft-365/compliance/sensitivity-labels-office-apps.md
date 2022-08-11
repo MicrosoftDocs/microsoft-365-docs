@@ -34,7 +34,7 @@ If you can't upgrade to Microsoft 365 Apps for enterprise for the subscription v
 
 ## Support for sensitivity label capabilities in apps
 
-The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels that are built in to Office apps. Or, if the label capability is in public preview or under review for a future release. Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) for details about new capabilities that are planned for future releases.
+The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels that are built in to Office apps. Or, if the label capability is in public preview or under review for a future release. Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new capabilities that are planned for future releases.
 
 New versions of Office apps are made available at different times for different update channels. For Windows, you'll get the new capabilities earlier when you are on the Current Channel or Monthly Enterprise Channel, rather than Semi-Annual Enterprise Channel. The minimum version numbers can also be different from one update channel to the next. For more information, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels) and [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
@@ -99,7 +99,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | Current Channel: 2009+ <br /><br> Monthly Enterprise Channel: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
-|[PDF support](#pdf-support) | Under review|  Under review | Under review | Under review | Under review |
+|[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Under review | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2226+ | Rolling out: 4.2203+ | Under review |
 
 **Footnotes:**
@@ -443,11 +443,13 @@ This action is logged with the **Renamed file** audit event from the [File and p
 
 When the PDF is created, it inherits the label with any content markings and encryption. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
+Outlook doesn't currently support PDF attachments inheriting encryption from a labeled message. However, Outlook now does support warning or blocking users from printing to PDF, as described next.
+
 PDF scenarios not supported:
 
 - Print to PDF
     
-    If users select this option, they are warned that the document will lose the protection of the label, and encryption (if applied), and must confirm to continue. If your sensitivity label policy requires justification to remove a label or lower its classification, they see this prompt.
+    If users select this option, they are warned that the document or email will lose the protection of the label, and encryption (if applied), and must confirm to continue. If your sensitivity label policy requires justification to remove a label or lower its classification, they see this prompt.
     
     Because this option removes the sensitivity label, this option won't be available to users if you're using mandatory labeling. This configuration refers to the sensitivity label policy setting that requires users to apply a label to their emails and documents.
 
