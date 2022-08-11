@@ -122,8 +122,6 @@ A SharePoint Syntex license gives your users premium content services that give 
 |Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](./push-content-type-to-hub.md)|
 |Learn about the term store reports that are available to you|[Term store reports](./term-store-analytics.md)|
 
-## PowerShell for SharePoint Syntex
-
 ## Extensibility
 
 Use REST APIs to create a document understanding model, apply or remove the model to one or more libraries, and obtain or update information about the model.
