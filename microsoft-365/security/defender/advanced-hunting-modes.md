@@ -53,7 +53,7 @@ You can take the tour again at any time by going to **Help resources** > **Learn
 ![hunting icon](../../media/guided-hunting/help-resources.png)
 
 
-Getting started in guided mode is easy. For a description of the different 
+You can then start building your query to hunt for threats. The following articles 
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -63,7 +63,7 @@ Getting started in guided mode is easy. For a description of the different
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically. | - [Custom detections overview](custom-detections-overview.md) <br />- [Custom detection rules](custom-detection-rules.md) |
 
 ## Get started with advanced hunting mode
-We recommend going through several steps to quickly get started with advanced hunting.
+We recommend going through these steps to quickly get started with advanced hunting: 
 
 | Learning goal | Description | Resource |
 |--|--|--|
