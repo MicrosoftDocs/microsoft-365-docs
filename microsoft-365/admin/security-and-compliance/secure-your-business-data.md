@@ -34,13 +34,13 @@ description: "Protect your business email and data from cyberthreats, including 
 
 # Top 10 ways to secure your business data - Best practices for small and medium-sized businesses
 
-If you are a small or medium-size business and you have one of the Microsoft 365 for business plans, you can use the guidance in this article to secure your business data. 
+Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. If you're a small or medium-size business and you have one of the Microsoft 365 for business plans, you can use the guidance in this article to secure your business data. 
 
 ## Top 10 ways to secure your business data
 
 | Number | What to do | 
 |:---:|:---|
-| 1 | **[Use multi-factor authentication](#set-up-multi-factor-authentication.md)** (MFA). MFA is also called 2-step verification. It requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. To set up MFA, you can use either security defaults (suitable for most businesses) or Conditional Access (for more stringent security requirements). To learn more, see the following articles: <br/>- [Security defaults and multi-factor authentication](../../business-premium/m365bp-conditional-access.md)<br/>- [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) |
+| 1 | **[Use multi-factor authentication](#set-up-multi-factor-authentication.md)** (MFA). MFA is also called two-step verification. It requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. To set up MFA, you can use either security defaults (suitable for most businesses) or Conditional Access (for more stringent security requirements). To learn more, see the following articles: <br/>- [Security defaults and multi-factor authentication](../../business-premium/m365bp-conditional-access.md)<br/>- [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) |
 | 2 | **[Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md)**. Administrator accounts (also called admins) have elevated privileges, making these accounts susceptible to cyberattacks. To protect your admin accounts, see [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md).  |
 | 3 | **[Use preset security policies](../../business-premium/m365bp-increase-protection.md#review-and-apply-preset-security-policies)**. Your subscription includes [preset security policies](../../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security. To learn more, see [Protect against malware and other cyberthreats](../../business-premium/m365bp-increase-protection.md).|
 | 4 | **[Set sharing settings for SharePoint and OneDrive files and folders](../../business-premium/m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)**. By default, sharing levels are set to the most permissive level for both SharePoint and OneDrive. We recommend changing the default settings to better protect your business. See [Set sharing settings for SharePoint and OneDrive files and folders](../../business-premium/m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). | 
@@ -56,8 +56,6 @@ If you are a small or medium-size business and you have one of the Microsoft 365
 
 
 ## Security features comparison
-
-All the Microsoft 365 plans offer baseline protection with Exchange Online Protection. Microsoft Defender for Business is available as an add-on for Microsoft 365 Business Basic and Standard, and is included in Microsoft 365 Business Premium. Microsoft 365 Business Premium includes additional threat protection, data protection, and device management capabilities.
 
 The following table summarizes the capabilities that are included in Microsoft 365 for business plans. For more details, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
 
