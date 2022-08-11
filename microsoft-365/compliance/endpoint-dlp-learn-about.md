@@ -99,7 +99,7 @@ File Types are a grouping of file formats which are utilized to protect specific
 |presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
 |archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
 |email    |Outlook |.pst, .ost, .msg         |
-<!--|encrypted |file explorer | .pgp |-->
+
 
 ### File extensions
 

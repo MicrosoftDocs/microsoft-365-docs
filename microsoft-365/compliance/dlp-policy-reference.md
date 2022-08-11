@@ -307,12 +307,11 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - Content contains
-<!-- - (preview) Document or attachment is password protected. (.pdf, Office files are fully supported, .zip are detected only)
-- (preview) File is pgp encrypted.-->
+- (preview) Document or attachment is password protected/file is encrypted. (.pdf, Office files are fully supported. Only pgp encrypted files are supported)
+- (preview) Content doesn't have sensitivity label applied.
 - (preview) The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
 - File extension is
 - File type is
-<!-- - (preview) Content doesn't have sensitivity label applied.-->
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### Conditions Microsoft Defender for Cloud Apps supports
