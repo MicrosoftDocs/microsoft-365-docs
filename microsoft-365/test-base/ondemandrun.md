@@ -28,7 +28,8 @@ For an active package, you can access the run-on-request feature from the Manage
 > [!div class="mx-imgBorder"]
 > [ ![Manage packages](Media/runondemand01-managepackages.png) ](Media/runondemand01-managepackages.png#lightbox)
 
-By specifying the OS update type and Windows product which are pre-defined with the package, you can kick off the test on demand which immediately get scheduled for the current monthly churn of Windows update.
+By specifying the OS update type and Windows product which are pre-defined with the package, you can kick off the test on demand which immediately gets scheduled for the current monthly churn of Windows updates.
+
 
 > [!div class="mx-imgBorder"]
 > [ ![Run on request](Media/runondemand02-runonrequest.png) ](Media/runondemand02-runonrequest.png#lightbox)
