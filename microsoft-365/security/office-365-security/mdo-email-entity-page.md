@@ -161,7 +161,24 @@ Users will see enriched detonation details for known malicious attachments or UR
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
+## Actions into Email entity Page
 
+Security teams can now take email actions like soft delete/ hard delete/ move to junk/ move to inbox etc, trigger an investigation  , submit to Microsoft for review in line. **Tenant level block** actions like file/ URL/ sender can also be trigged from Email entity page.  
+
+You will be able to click on Take actions from the top right corner of the entity page and this will open the Action wizard for you to select the specific action. 
+![Take action from entity page.](../../media/Take-ActionWizard-Email-entity.png)
+
+In the Action wizard you can take email actions, email submissions, block sender / sender domain, investigative actions and two step approval   (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete/Submissions/Investigation actions), for example. You will be able to see and track these actions in the 
+ [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the 
+  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in [Tenant Allow/Block Lists](https://security.microsoft.com/tenantAllowBlockList) page for (TABL blocks). 
+
+We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the TABL block URL and block attachments can be tracked under TABL/URL and TABL/file page. 
+![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
+
+Please refer  [permission](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center?view=o365-worldwide).
+ required to take these actions. 
+
+ 
 ### Email summary panel
 
 The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (e.g., detections), as well as context-specific information (e.g., for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
