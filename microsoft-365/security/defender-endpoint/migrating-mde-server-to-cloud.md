@@ -63,7 +63,7 @@ For Azure VMs, no extra steps are required, these are automatically onboarded to
 
 ## How do I migrate on-premises machines to Microsoft Defender for Servers?
 
-Once all prequisites are met, [connect](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) your on-premises machines via Azure Arc-connected servers.
+Once all prerequisites are met, [connect](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) your on-premises machines via Azure Arc-connected servers.
 
 ## How do I migrate VMs from AWS or GCP environments?
 
