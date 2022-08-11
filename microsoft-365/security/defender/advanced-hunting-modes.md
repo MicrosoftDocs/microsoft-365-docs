@@ -29,6 +29,10 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+You can find the **advanced hunting** page by going to the left navigation bar in Microsoft 365 Defender and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapse, look for the ![hunting icon](../../media/guided-hunting/hunting-icon.png) icon. 
+
+:::image type="content" source="../../media/guided-hunting/hunting-icon.png" alt-text="{alt-text}":::
+
 When you go to the **advanced hunting** page, you can choose from the following modes:
 - **Guided mode** – craft queries with the query builder
 - **Advanced mode** – craft KQL queries with the query editor 
