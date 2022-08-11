@@ -59,19 +59,18 @@ If you are a small or medium-size business and you have one of the Microsoft 365
 
 All the Microsoft 365 plans offer baseline protection with Exchange Online Protection. Microsoft Defender for Business is available as an add-on for Microsoft 365 Business Basic and Standard, and is included in Microsoft 365 Business Premium. Microsoft 365 Business Premium includes additional threat protection, data protection, and device management capabilities.
 
-The following table summarizes the security capabilities that are included in Microsoft 365 for business plans.
+The following table summarizes the capabilities that are included in Microsoft 365 for business plans. For more details, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
 
 
 | Subscription | What's included |
 |:---|:---|
-| Microsoft 365 Business Basic | Exchange Online Protection (includes anti-spam, anti-malware, and anti-phishing)<br>Ability to add on [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) |
-| Microsoft 365 Business Standard | |
-| Microsoft 365 Business Premium |  |
-
-For more details, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
+| [Microsoft 365 Business Basic](../setup/setup-business-basic.md) | - Web and mobile versions of Word, Excel, and PowerPoint <br/>- Outlook <br/>- Microsoft Teams<br/>- Microsoft Exchange <br/>- OneDrive<br/>- SharePoint<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (anti-spam, anti-malware, and anti-phishing)<br>- The ability to add on [Defender for Business](../../security/defender-business/mdb-overview.md) |
+| [Microsoft 365 Business Standard](../setup/setup-business-standard.md) | - Web, desktop, and mobile versions of Word, Excel, and PowerPoint <br/>- Publisher (for Windows computers)<br/>- Access (for Windows computers) <br/>- Outlook <br/>- Microsoft Teams<br/>- Exchange <br/>- OneDrive<br/>- SharePoint<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (anti-spam, anti-malware, and anti-phishing)<br>- The ability to add on [Defender for Business](../../security/defender-business/mdb-overview.md)  |
+| [Microsoft 365 Business Premium](../../business-premium/index.md) | - Web, desktop, and mobile versions of Word, Excel, and PowerPoint <br/>- Publisher (for Windows computers)<br/>- Access (for Windows computers) <br/>- Outlook <br/>- Microsoft Teams<br/>- Exchange <br/>- OneDrive<br/>- SharePoint <br/>- [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) <br/>- [Azure Information Protection](/azure/information-protection/what-is-information-protection)<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (includes anti-spam, anti-malware, and anti-phishing) <br/>- [Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md) (includes advanced anti-phishing, Safe Links, and Safe Attachments, and real-time detections)<br>- [Defender for Business](../../security/defender-business/mdb-overview.md)   |
 
 ## See also
 
-- [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md)
+- [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../../security/defender-business/compare-mdb-m365-plans.md) (for more details about Defender for Business and Microsoft 365 Business Premium)
+- [Compare Microsoft endpoint security plans](../../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
 - [Microsoft 365 Business Premium — cybersecurity for small business](/microsoft-365/business-premium/)
 
