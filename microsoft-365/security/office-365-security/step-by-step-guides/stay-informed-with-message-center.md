@@ -1,5 +1,5 @@
 ---
-title: Set up weekly digest notifications of changes to Microsoft Defender for Office 365 using the message center
+title: Set up weekly digest notifications of changes to Microsoft Defender for Office 365 with message center
 description: The steps to setup a weekly digest of message center activity to stay informed of changes to Microsoft Defender for Office 365.
 search.product: 
 search.appverid: 
