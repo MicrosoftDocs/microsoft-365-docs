@@ -50,6 +50,8 @@ To take the tour, select **Try out guided hunting** when this banner appears:
 
 You can take the tour again at any time by going to **Help resources** > **Learn more** and selecting **Take the tour**.
 
+![hunting icon](../../media/guided-hunting/help-resources.png)
+
 
 Getting started in guided mode is easy. For a description of the different 
 
