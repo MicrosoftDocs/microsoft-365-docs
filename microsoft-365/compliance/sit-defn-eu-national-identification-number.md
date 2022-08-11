@@ -45,7 +45,7 @@ These entities are in the EU National Identification Number and are sensitive in
 - [Luxemburg](sit-defn-luxemburg-national-identification-number-natural-persons.md)
 - [Malta](sit-defn-malta-identity-card-number.md)
 - [Netherlands](sit-defn-netherlands-citizens-service-number.md)
-- [Poland](sit-defn-poland-national-id.md)
+- [Poland](sit-defn-poland-identity-card.md)
 - [Portugal](sit-defn-portugal-citizen-card-number.md)
 - [Romania](sit-defn-romania-personal-numeric-code.md)
 - [Slovakia](sit-defn-slovakia-personal-number.md)
