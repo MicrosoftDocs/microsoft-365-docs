@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -427,25 +428,25 @@ The following configuration profile contains entries for all settings described 
          {
             "$type":"excludedPath",
             "isDirectory":false,
-            "path":"/var/log/system.log"
+            "path":"/var/log/system.log<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/run"
+            "path":"/run<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home/*/git"
+            "path":"/home/*/git<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":".pdf"
+            "extension":".pdf<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileName",
-            "name":"cat"
+            "name":"cat<EXAMPLE DO NOT USE>"
          }
       ],
       "allowedThreats":[
