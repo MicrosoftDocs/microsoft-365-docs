@@ -9,6 +9,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -41,6 +42,8 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## July 2022
+- [Introducing actions into the email entity page](mdo-email-entity-page.md): Admins can take preventative, remediation and submission actions from emial entity page.
 
 ## June 2022
 
