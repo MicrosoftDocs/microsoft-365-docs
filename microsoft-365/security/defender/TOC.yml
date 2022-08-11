@@ -221,11 +221,11 @@
              - name: Build queries using guided mode 
                items: 
                  - name: Get started with query builder
-                   href: advanced-hunting-guided-hunting.md
+                   href: advanced-hunting-query-builder.md
                  - name: Refine your query in guided mode
-                   href: advanced-hunting-working-guided-mode.md
+                   href: advanced-hunting-query-builder-details.md
                  - name: Working with query results in guided mode
-                   href: advanced-hunting-query-results-guided.md                   
+                   href: advanced-hunting-query-builder-results.md                   
              - name: Create queries using advanced mode
                items:
                  - name: Learn, train, & get examples
