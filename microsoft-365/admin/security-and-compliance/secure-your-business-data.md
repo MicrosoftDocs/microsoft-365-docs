@@ -36,6 +36,9 @@ description: "Protect your business email and data from cyberthreats, including 
 
 Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. If you're a small or medium-size business and you have one of the Microsoft 365 for business plans, you can use the guidance in this article to secure your business data. 
 
+> [!TIP]
+> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
 ## Top 10 ways to secure your business data
 
 | Number | What to do | 
