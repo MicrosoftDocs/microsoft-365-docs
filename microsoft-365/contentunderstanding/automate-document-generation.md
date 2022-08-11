@@ -68,9 +68,9 @@ Follow these steps to automatically generate documents using a modern template a
 
 8. When done, select **Save** to save the flow. 
 
-> [!NOTE]
-> We recommend using templates that don't need users to manually add values for document generation. If the template needs manual input for a field, you can specify that value against the field rather than mapping it to a SharePoint list column.<br> 
-> Currently we only support generation of Word documents (.docx) using this action.  
+    > [!NOTE]
+    > We recommend using templates that don't need users to manually add values for document generation. If the template needs manual input for a field, you can specify that value against the field rather than mapping it to a SharePoint list column.<br><br> 
+    > Currently, only Word documents (.Docx) are supported using this action.  
 
 ## See also
 
