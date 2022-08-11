@@ -19,12 +19,9 @@ description: Learn how to make trained models available to other users and how t
 
 *Rework "publish & discover" article, using the publish pieces*
 
-You can make your trained **Classify and extract by text pattern** models available for others to view and use directly from the SharePoint document library. 
+You can make your trained models available for others to view and use directly from the SharePoint document library. 
 
 You can also find and evaluate trained models in other content centers that were created by others in your organization. Select the model that is most useful for classifying your files or extracting specific information from them. 
-
-> [!NOTE]
-> This feature is not yet available for **Extract by layout** and **Extract by text pattern and layout** models.
 
 ## Make your model discoverable to others
 
@@ -65,7 +62,6 @@ To find trained models that might be suitable for your content:
    - On the **Applied** tab, see the models that have been applied to your library. Select **View model details** to see information about the model, such as description, extractors, and other settings.
    
    - On the **Available** tab, see the trained models that are available to be applied to your library.
-
 
 ### Apply a trained model to your library
 
@@ -112,6 +108,3 @@ To remove an applied model from your document library:
 2. On the model you want to remove, select **View model details**, and then select **Remove from library**.
 
 
-## See also
-
-[Overview of classification and extraction by text pattern](document-understanding-overview.md)
