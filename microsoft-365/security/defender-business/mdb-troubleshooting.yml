@@ -29,9 +29,7 @@ sections:
       - question: My setup and configuration process failed
         answer: |
 
-          If you're using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually.
-
-          See [Set up and configure Defender for Business](mdb-setup-configuration.md).
+          If you're using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually. See [Set up and configure Defender for Business](mdb-setup-configuration.md).
 
       - question: I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business
         answer: |
@@ -106,8 +104,6 @@ sections:
           - [Run Microsoft Defender for Endpoint Client Analyzer on Windows](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)
 
           Alternately, you can try onboarding devices manually. See [Onboard devices](mdb-onboard-devices.md).
-
-
 
 additionalContent: |
  ## See also
