@@ -5,15 +5,14 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 search.appverid:
-  - MET150
+- MET150
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.custom:
 description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
