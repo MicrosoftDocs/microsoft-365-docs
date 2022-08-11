@@ -106,8 +106,6 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     Specific to Excel: Metadata for a sensitivity label that doesn't apply encryption can be deleted from a file if somebody edits and saves that file by using a version of Excel that doesn't support the metadata changes for sensitivity labels.
 
-- Supporting Office apps for iOS and Android are currently in [preview](https://office.com/insider).
-
 - Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
@@ -123,8 +121,6 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 > [!CAUTION]
 > Turning on this setting is a one-way action. Enable it only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
-
-If you've already turned on this setting during the preview period, no further action is needed and you can skip this procedure.
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a global admin for your tenant.
 
