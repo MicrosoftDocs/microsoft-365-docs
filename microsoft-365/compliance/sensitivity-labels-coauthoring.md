@@ -71,8 +71,8 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
     - **macOS**: Minimum version 16.51
-    - **iOS**: In preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
-    - **Android**: In preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
+    - **iOS**: Minimum version 2.58
+    - **Android**: Minimum version 16.0.14931
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
@@ -97,12 +97,6 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Defender for Cloud Apps configured to apply sensitivity labels](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
-
-### Opt in to the preview of co-authoring for iOS and Android
-
-To try the preview of co-authoring for iOS and Android, you must have the minimum versions stated in the previous section, and also request your tenant is added to the preview: [Consent to Enable co-authoring for files encrypted with sensitivity labels on mobile](https://ncv.microsoft.com/5Oob3oDj1O)
-
-For more information, see the following blog post announcement: [Co-authoring on Microsoft Information Protection encrypted documents is now in public preview on mobile devices](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
 
 ## Limitations
 
