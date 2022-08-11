@@ -30,6 +30,10 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
+
+Advanced hunting supports two modes, guided and advanced. Use [guided mode](advanced-hunting-query-builder.md) if you are not yet familiar with Kusto Query Language (KQL) or prefer the convenience of a query builder. Use [advanced mode](advanced-hunting-query-language.md) if you are comfortable using KQL to create queries from scratch. 
+
+To start hunting, read [Choose between guided and advanced modes to hunt in Microsoft 365 Defender](advanced-hunting-modes.md).
 <br><br>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
@@ -65,9 +69,8 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 Time information in advanced hunting is in the UTC (Universal Time Coordinated) time zone.
 
 ## Related topics
+- [Choose between guided and advanced hunting modes](advanced-hunting-modes.md)
+- [Build hunting queries using guided mode](advanced-hunting-query-builder.md)
 - [Learn the query language](advanced-hunting-query-language.md)
-- [Get expert training](advanced-hunting-expert-training.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](custom-detections-overview.md)

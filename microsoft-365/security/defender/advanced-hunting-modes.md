@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 ms.technology: m365d
 ---
 
-# Choose between guided and advanced modes when hunting in Microsoft 365 Defender
+# Choose between guided and advanced modes to hunt in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -29,28 +29,28 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-You can find the **advanced hunting** page by going to the left navigation bar in Microsoft 365 Defender and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapse, look for the ![hunting icon](../../media/guided-hunting/hunting-icon.png) icon. 
+You can find the **advanced hunting** page by going to the left navigation bar in Microsoft 365 Defender and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapsed, select the hunting icon ![hunting icon](../../media/guided-hunting/hunting-icon.png). 
 
-:::image type="content" source="../../media/guided-hunting/hunting-icon.png" alt-text="{alt-text}":::
+In the **advanced hunting** page, two modes are supported:
+- **Guided mode** – to query using the query builder
+- **Advanced mode** – to query using the query editor using Kusto Query Language (KQL)
 
-When you go to the **advanced hunting** page, you can choose from the following modes:
-- **Guided mode** – craft queries with the query builder
-- **Advanced mode** – craft KQL queries with the query editor 
+The main difference between the two modes is that the guided mode does not require the hunter to know KQL to query the database, while advanced mode requires KQL knowledge. 
 
-The main difference between the two modes is that the advanced mode requires the user to know the KQL language in order to create a query from scratch. Guided mode, on the other hand, has an easy-to-use, visual, building block style of constructing queries through dropdown filters and conditions. 
+Guided mode features a query builder that has an easy-to-use, visual, building-block style of constructing queries through dropdown filters and conditions. Advanced mode features a query editor area where users can create queries from scratch.
 
-## Take the tour
+## Get started with guided hunting mode
 
-When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas. Select **Try out guided hunting** when it appears once you open the **advanced hunting** page from the left-hand navigation pane in Microsoft 365 Defender.
+When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas. 
+
+To take the tour, select **Try out guided hunting** when this banner appears:
 
 
 [ ![banner inviting user to take the tour](../../media/guided-hunting/1-guided-hunting-banner.png) ](../../media/guided-hunting/1-guided-hunting-banner.png#lightbox)
 
-This takes you through the tour, which suggests some queries to get you started, like how to get a list of high-confidence phishing emails sent to your organization, a list of activities performed by a file you specify, or a list of alerts where a certain user is involved. These sample queries can be found in the **Getting started** section. Simply select **Load example** to edit the query, and run it by selecting **Run query**.
-
 You can take the tour again at any time by going to **Help resources** > **Learn more** and selecting **Take the tour**.
 
-## Get started with guided hunting mode
+
 Getting started in guided mode is easy. For a description of the different 
 
 | Learning goal | Description | Resource |
