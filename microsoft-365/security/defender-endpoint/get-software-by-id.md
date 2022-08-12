@@ -1,7 +1,7 @@
 ---
 title: Get software by ID
 description: Retrieves a list of software details by ID.
-keywords: apis, graph api, supported apis, get, software, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, supported apis, get, software, Microsoft Defender for Endpoint tvm api, mdvm, Microsoft Defender Vulnerability Management
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -93,5 +93,5 @@ Here's an example of the response.
 
 ## Related topics
 
-- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Risk-based Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
