@@ -141,11 +141,11 @@ Support for Command and Control servers (C2) is a key part of this ransomware ev
 
 A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
-    ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
+   ![Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
 
 Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft 365 Defender portal](https://security.microsoft.com), using the following configuration tool. 
 
-    ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
+   ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
 
 ## Using network protection
 
