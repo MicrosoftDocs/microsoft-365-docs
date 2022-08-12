@@ -39,26 +39,26 @@ Leverage your [corporate communications strategy](flw-corp-comms.md) to share Sh
 
 Create a schedule with Shifts <br>
 [View Create a schedule with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202612)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202612>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE546xr]
 
 Copy a schedule with Shifts <br>
 [View Copy a schedule with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202298)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202298>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE54jxu]
 
 Re-use a weekly schedule from Excel with Shifts <br>
 [View Re-use a weekly schedule from Excel with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202611)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202611>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE546xQ]
 
 ## Shifts videos for users
 
 Clocking in with Shifts <br>
 [View Clocking in with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202613)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202613>]
+<!-- >> [!VIDEO https://www.microsoft.com/videoplayer/embed/x] -->
 
 Swap Shifts <br>
 [View Swap Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202711)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202711>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE54jBv]
 
 Tags with Shifts <br>
 [View Tags with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202712)
-> [!VIDEO <https://go.microsoft.com/fwlink/?linkid=2202712>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5443n]
