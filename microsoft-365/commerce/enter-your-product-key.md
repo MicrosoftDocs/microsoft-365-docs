@@ -22,7 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: "If you purchased Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
-ms.date: 11/13/2020
+ms.date: 08/12/2022
 ---
 
 # Enter your product key for Microsoft 365 Business Standard
@@ -52,7 +52,7 @@ If you purchased Microsoft 365 Business Standard from a retail store, this artic
 
 ## Extend the expiration date or add a license to an existing subscription
 
-To extend the expiration date or add a license to your existing Microsoft 365 Business Standard subscription, use a new and unused key for the same Microsoft 365 plan. Entering your original Microsoft 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](licenses/add-licenses-using-product-key.md).
+To extend the expiration date or add a license to your existing Microsoft 365 Business Standard subscription, use a new and unused product key for the same Microsoft 365 plan. Entering your original Microsoft 365 product key won't work because a key that has already been redeemed can't be used again. See [Extend the expiration date of your prepaid subscription by using a Microsoft 365 product key](subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key) and [Add licenses to a prepaid subscription by using a Microsoft 365 product key](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
 ## Next steps
 
