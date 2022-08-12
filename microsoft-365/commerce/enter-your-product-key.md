@@ -21,13 +21,13 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: "If you purchased Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
+description: "If you bought Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
 ms.date: 08/12/2022
 ---
 
 # Enter your product key for Microsoft 365 Business Standard
 
-If you purchased Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
+If you bought Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
   
  **Need something else?**
  **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  

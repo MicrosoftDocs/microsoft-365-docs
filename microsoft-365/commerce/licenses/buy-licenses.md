@@ -84,7 +84,7 @@ If you've removed licenses from a subscription, the next thing to do is [delete 
 Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
 > [!NOTE]
-> If you don't want to purchase a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
+> If you don't want to buy a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
   
 ::: moniker range="o365-worldwide"
 
