@@ -227,4 +227,4 @@ Email [dscale@microsoft.com](mailto:dscale@microsoft.com) and include your orche
 
 ## Related articles
 
-- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
+- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview) 
