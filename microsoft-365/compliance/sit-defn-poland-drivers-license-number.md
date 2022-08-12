@@ -25,17 +25,17 @@ description: "Poland driver's license number sensitive information type entity d
 
 ## Format
 
-14 digits containing two forward slashes
+11 or 14 digits containing two forward slashes
 
 ## Pattern
 
-14 digits and two forward slashes:
+11 or 14 digits containing two forward slashes
 
 - five digits
 - a forward slash
 - two digits
 - a forward slash
-- seven digits
+- four or seven digits
 
 ## Checksum
 
