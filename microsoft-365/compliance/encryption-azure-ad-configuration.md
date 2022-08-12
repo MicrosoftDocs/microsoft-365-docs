@@ -56,11 +56,17 @@ If you have also configured Azure AD Conditional Access policies that require mu
 
 ## Conditional Access policies and encrypted content
 
-If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview) that include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
+If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview) that include **Microsoft Azure Information Protection** and the policy extends to external users:
 
-Without this guest account, those users can't open the encrypted content and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
+- Use Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and configure trust MFA claims from one, many, or all external Azure AD organizations. 
 
-If you can't create and configure guest accounts in your tenant for external users who need to open content encrypted by your organization, you must either remove Microsoft Azure Information Protection from the Conditional Access policies, or exclude external users from the policies.
+- For external users who have an Azure AD account in their own tenant, we recommend that you use [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) and configure trust MFA claims from one, many, or all external Azure AD organizations.
+- 
+- If external users not covered by the previous entry, for example, users who don't have an Azure AD account, they must have a guest account in your tenant.
+    
+Without either of these configurations, external users can't open the encrypted content and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
+
+If you can't meet these configuration requirements for external users who need to open content encrypted by your organization, you must either remove Microsoft Azure Information Protection from the Conditional Access policies, or exclude external users from the policies.
 
 For more information, see the frequently asked question, [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
