@@ -37,6 +37,18 @@ Deploying Microsoft Defender for Endpoint is a two-step process.
 
 :::image type="content" source="images/deployment-steps.png" alt-text="The onboarding and configuration process" lightbox="images/deployment-steps.png":::
 
+## Role-based access control
+
+We recommend using Privileged Identity Management to manage your roles to provide additional auditing, control, and access review for users with directory permissions.
+
+Defender for Endpoint supports two ways to manage permissions:
+
+- **Basic permissions management**: Sets permissions to either full access or read-only. Users with global administrator or security administrator roles in Azure Active Directory (Azure AD) have full access. The security reader role has read-only access and does not grant access to view machines/device inventory.
+
+- **Role-based access control (RBAC)**: Sets granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
+
+We recommend leveraging RBAC to ensure that only users that have a business justification can access Defender for Endpoint.
+
 ## Onboard devices to the service
 You'll need to go the onboarding section of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device. 
 
@@ -74,7 +86,7 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 
 | Capability | Description |
 |-|-|
-| [Configure Threat & Vulnerability Management (TVM)](tvm-prerequisites.md) | Threat & Vulnerability Management is a component of Microsoft Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including: <br><br> - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities. <br><br> - Invaluable device vulnerability context during incident investigations. <br><br> - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager.  |
+| [Configure Microsoft Defender Vulnerability Management (MDVM)](tvm-prerequisites.md) | Defender Vulnerability Management is a component of Microsoft Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including: <br><br> - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities. <br><br> - Invaluable device vulnerability context during incident investigations. <br><br> - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager.  |
 | [Configure Next-generation protection (NGP)](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender Antivirus is a built-in antimalware solution that provides next-generation protection for desktops, portable computers, and servers. Microsoft Defender Antivirus includes:<br> <br>-Cloud-delivered protection for near-instant detection and blocking of new and emerging threats. Along with machine learning and the Intelligent Security Graph, cloud-delivered protection is part of the next-gen technologies that power Microsoft Defender Antivirus.<br> <br> - Always-on scanning using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection").<br><br> - Dedicated protection updates based on machine learning, human and automated big-data analysis, and in-depth threat resistance research. |
 | [Configure attack surface reduction (ASR)](overview-attack-surface-reduction.md) | Attack surface reduction capabilities in Microsoft Defender for Endpoint help protect the devices and applications in the organization from new and emerging threats. |
 | [Configure Auto Investigation & Remediation (AIR) capabilities](configure-automated-investigations-remediation.md) | Microsoft Defender for Endpoint uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. |

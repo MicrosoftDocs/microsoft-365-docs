@@ -73,8 +73,8 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
     - In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
     - Give the policy a name, **Platform > iOS/iPadOS**.
-    - Select Microsoft Defender for Endpoint as the target app.
-    - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **Boolean**.
+    - Select Microsoft Defender for Endpoint as the target app.
+    - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **Boolean**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
         - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
@@ -84,8 +84,8 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
     - In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed apps**.
     - Give the policy a name.
-    - Under the Select Public Apps, choose Microsoft Defender for Endpoint as the target app.
-    - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**, .
+    - Under the Select Public Apps, choose Microsoft Defender for Endpoint as the target app.
+    - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**, .
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
         - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
@@ -101,10 +101,10 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
    :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
 
-2. Provide a name and description to uniquely identify the policy. Then click on ‘Select Public apps’ and choose ‘Microsoft Defender’ for Platform iOS/IPadOS
+2. Provide a name and description to uniquely identify the policy. Then click on 'Select Public apps' and choose 'Microsoft Defender' for Platform iOS/IPadOS
    :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
 
-3. In Settings page, add 'DefenderNetworkProtectionEnable’ as the key and value as 'false' to disable Network Protection. (Network protection is enabled by default)
+3. In Settings page, add 'DefenderNetworkProtectionEnable' as the key and value as 'false' to disable Network Protection. (Network protection is enabled by default)
    :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
 
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.

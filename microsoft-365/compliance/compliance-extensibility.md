@@ -124,4 +124,4 @@ Now rolling out, the first release of Graph APIs for records management support 
 
 For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
-For licensing requirements to use these APIs, see the records management section from [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+For licensing requirements to use these APIs, see the records management information from the Microsoft 365 guidance for security & compliance, [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section.

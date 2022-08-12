@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
@@ -134,7 +135,7 @@ Your Microsoft 365 environment includes protection against malware. You can incr
 
 - Using [pre-set policies for Microsoft Office 365](../../../microsoft-365/security/office-365-security/preset-security-policies.md).
 - Blocking attachments with certain file types.
-- Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Threat and Vulnerability Management (TVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software.
+- Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Microsoft Defender Vulnerability Management (MDVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software.
 
 ### Block attachments with certain file types
 

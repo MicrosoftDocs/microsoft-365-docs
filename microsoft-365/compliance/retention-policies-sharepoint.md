@@ -129,6 +129,8 @@ Because the retention label is not applied to the original file, the labeled fil
 
 The copy that's stored in the Preservation Hold library is typically created within an hour from the cloud attachment being shared.
 
+To safeguard against the original file being deleted by users before the copy can be created and labeled, files in locations included in the auto-labeling policy are automatically copied into the Preservation Hold library if they are deleted. These files have a temporary retention period of one day and then follow the standard cleanup process described on this page. When the original file has been deleted, the copy for retaining cloud attachments uses this version of the file. The automatic and temporary retention of deleted files in the Preservation Hold library is unique to auto-labeling policies for cloud attachments.
+
 ## How retention works with OneNote content
 
 When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote pages and sections are individual files that inherit the retention settings. This means that each section within a page will be individually retained and deleted, according to the retention settings you specify.
@@ -139,7 +141,7 @@ Only pages and sections are impacted by the retention settings that you specify.
 
 Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Currently rolling out to tenants, all versions of the file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files.
+When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Now, all versions of the file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files.
 
 If the retention settings are configured to delete at the end of the retention period:
 

@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - TRN_M365B

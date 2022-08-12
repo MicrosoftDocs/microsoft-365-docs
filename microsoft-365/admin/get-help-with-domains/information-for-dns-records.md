@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-
 - Adm_O365_Setup
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC

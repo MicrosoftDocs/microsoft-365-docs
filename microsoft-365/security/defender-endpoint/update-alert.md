@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
 ---
 
@@ -89,7 +89,7 @@ Determination|String|Specifies the determination of the alert. The property valu
 Comment|String|Comment to be added to the alert.
 
 >[!NOTE]
->Around August 29th, 2022, previously supported alert determination values (‘Apt’ and ‘SecurityPersonnel’) will be deprecated and no longer available via the API.
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 
