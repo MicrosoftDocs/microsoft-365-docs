@@ -27,6 +27,11 @@ SharePoint Syntex lets you create [custom models](model-types-overview.md) and [
 
 ## Classify and extract by text pattern
 
+| Icon          | Description   |
+| ------------- | ------------- |
+| ![a hand and arrow](https://docs.microsoft.com/office/media/icons/files-blue.png)  | **Supported file types** <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. |
+| ![a map](https://docs.microsoft.com/office/media/icons/users-people.png)  | **Supported languages** <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. |
+| ![a map](https://docs.microsoft.com/office/media/icons/paragraph-writing-blue.png)  | **OCR processing** <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. |
 
 ## Extract by layout
 
