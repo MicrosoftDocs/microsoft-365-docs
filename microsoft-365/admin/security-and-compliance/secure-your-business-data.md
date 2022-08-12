@@ -79,7 +79,8 @@ For more detailed information, see [Reimagine productivity with Microsoft 365 an
 
 ## See also
 
+- [What is Microsoft Defender for Business?](../../security/defender-business/mdb-overview.md)
+- [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
 - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../../security/defender-business/compare-mdb-m365-plans.md) (for more details about Defender for Business and Microsoft 365 Business Premium)
 - [Compare Microsoft endpoint security plans](../../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
-- [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
 
