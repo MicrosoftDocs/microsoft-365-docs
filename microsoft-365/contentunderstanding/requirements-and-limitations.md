@@ -29,9 +29,13 @@ SharePoint Syntex lets you create [custom models](model-types-overview.md) and [
 
 | Icon          | Description   |
 | ------------- | ------------- |
-| ![a hand and arrow](https://docs.microsoft.com/office/media/icons/files-blue.png)  | **Supported file types** <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. |
-| ![a map](https://docs.microsoft.com/office/media/icons/users-people.png)  | **Supported languages** <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. |
-| ![a map](https://docs.microsoft.com/office/media/icons/paragraph-writing-blue.png)  | **OCR processing** <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. |
+| ![a hand and arrow](https://docs.microsoft.com/office/media/icons/files-blue.png)  | **Supported file types** <br>This model supports the following file types: .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx. |
+| ![a map](https://docs.microsoft.com/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This model supports all of the Latin-based languages, including: English,  French, German, Italian, and Spanish. |
+| ![a map](https://docs.microsoft.com/office/media/icons/paragraph-writing-blue.png)  | **OCR considerations** <br>This model uses optical character recognition (OCR) technology to scan .pdf files, image files, and .tiff files. OCR processing works best on documents that meet the following requirements:
+- File format of .jpg, .png, or .pdf (text or scanned). Text-embedded .pdf files are better, because there won't be any errors in character extraction and location.
+- If your .pdf files are password-locked, you must remove the lock before submitting them.
+- The combined file size of the documents used for training per collection must not exceed 50 MB, and PDF documents shouldn't have more than 500 pages.
+- For images, dimensions must be between 50 x 50 and 10,000 x 10,000 pixels. |
 
 ## Extract by layout
 
