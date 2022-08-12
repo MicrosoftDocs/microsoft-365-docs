@@ -62,7 +62,7 @@ To modify settings for your Defender for Endpoint integration, the user must hav
 
 ## Set up a network sensor
 
-To set up a network sensor your Azure subscription must have a Defender for IoT plan with Enterprise IoT devices added. For more information, see [Get started with Defender for IoT](/azure/defender-for-iot/organizations/getting-started).
+To set up a network sensor your Azure subscription must have a Defender for IoT plan with Enterprise IoT devices added, as described [above](#onboard-a-defender-for-iot-plan).
 
 To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Get started with Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
@@ -84,7 +84,7 @@ For more information, see the [Defender for IoT pricing page](https://azure.micr
 
 ## Cancel your Defender for IoT plan
 
-You can cancel your Defender for IoT plan from the Defender for Endpoint settings page in the [https://security.microsoft.com](https://security.microsoft.com/) portal. Once you cancel your plan, the integration stops and you'll no longer get security assessment value in Defender for Endpoint, or detect new devices in Defender for IoT.
+Cancel your Defender for IoT plan from the Defender for Endpoint settings page in the [https://security.microsoft.com](https://security.microsoft.com/) portal. Once you cancel your plan, the integration stops and you'll no longer get security assessment value in Defender for Endpoint, or detect new devices in Defender for IoT.
 
 ## See also
 

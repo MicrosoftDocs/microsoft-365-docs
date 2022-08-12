@@ -284,7 +284,7 @@ You can use the following options to let users assign permissions when they manu
 
     This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users, or the label is visible for consistency but it can't be applied with an explanation message to users.
     
-    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions: - Prompt users**.
+    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the rows for **Let users assign permissions**.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
@@ -339,6 +339,16 @@ For built-in labeling, and for the Azure Information Protection unified labeling
 
 > [!TIP]
 > If users were familiar with configuring custom permissions with the Azure Information Protection unified labeling client before [co-authoring was enabled](sensitivity-labels-coauthoring.md), you might find it helpful to review the mapping of permission levels to individual usage rights: [Rights included in permissions levels](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
+
+#### Support for organization-wide custom permissions
+
+Now rolling out in preview for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+
+![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
+
+For example, a user types "@contoso.com" (or "contoso.com") and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
+
+It's important to let users know that access isn't restricted to just the users in the domain specified. For example, "@sales.contoso.com" wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
 
 ## Example configurations for the encryption settings
 

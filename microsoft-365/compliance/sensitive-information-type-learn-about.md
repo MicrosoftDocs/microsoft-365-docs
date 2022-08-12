@@ -40,6 +40,8 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
 
+
+
 ## Categories of sensitive information types
 
 ### Built in sensitive information types
@@ -80,9 +82,9 @@ Every sensitive information type entity is defined by these fields:
 
 ![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Learn more about confidence levels in this short video.
+<!--Learn more about confidence levels in this short video.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
 
 ### Example sensitive information type
 

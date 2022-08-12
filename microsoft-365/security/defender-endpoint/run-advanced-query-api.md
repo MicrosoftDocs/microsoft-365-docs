@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
 ---
 
@@ -45,11 +45,11 @@ ms.custom: api
    - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 
-4. The maximal execution time of a single request is 10 minutes.
+4. The maximal execution time of a single request is 200 seconds.
 
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
 
-6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the amount of results and try again" will appear.
+6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" will appear.
 
 ## Permissions
 

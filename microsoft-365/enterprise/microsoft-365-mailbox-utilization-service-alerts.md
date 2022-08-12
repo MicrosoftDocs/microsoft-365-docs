@@ -23,7 +23,7 @@ description: "Use mailbox utilization service advisories to monitor mailboxes on
 
 # Service advisories for mailbox utilization in Exchange Online monitoring
 
-We've released a new Exchange Online service advisories that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service advisories provide visibility to the number of mailboxes in your organization that may require admin intervention.
+We've released a new Exchange Online service advisory that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service advisories provide visibility to the number of mailboxes in your organization that may require admin intervention.
 
 These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service advisory.
 

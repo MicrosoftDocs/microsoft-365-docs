@@ -41,7 +41,7 @@ Services that modify content during transport of the message before delivery to 
 
 ## When to use trusted ARC sealers?
 
-A list of trusted ARC sealers is only needed where intermediaries are part of an organization’s email flow and:
+A list of trusted ARC sealers is only needed where intermediaries are part of an organization's email flow and:
 
 1. May modify the email header or email contents.
 2. May cause authentication to fail for other reasons (example, by removing attachments).
@@ -55,9 +55,9 @@ from being sent to *Junk* due to authentication failures.
 
 Trusted ARC sealers in Microsoft 365 Defender portal shows all the ARC sealers acknowledged by and added to your tenant.
 
-**To add a new Trusted ARC sealer in the admin portal:**
+**To add a new Trusted ARC sealer in the Microsoft 365 Defender portal:**
 
-1. Navigate to the [email authentication settings](https://security.microsoft.com/authentication?viewid=ARC) page.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Email Authentication Settings** in the **Rules** section \> **ARC** . To go directly to the ARC page, use [email authentication settings](https://security.microsoft.com/authentication?viewid=ARC).
 
 2. If this is the first time you've added a trusted ARC sealer, click the Add button.
 3. Add trusted ARC sealers in the textbox shown.
@@ -101,9 +101,9 @@ header.from=contoso.com;compauth=pass reason=130
 
 ## PowerShell steps to add or remove a trusted ARC sealer
 
-**Admins can also set up ARC configurations with Exchange Online Powershell.**
+**Admins can also set up ARC configurations with Exchange Online PowerShell.**
 
-1. Connect to Exchange online powershell.
+1. Connect to Exchange Online PowerShell.
 2. Connect-ExchangeOnline.
 3. To add or update a domain into a trusted ARC sealer:
 </br>

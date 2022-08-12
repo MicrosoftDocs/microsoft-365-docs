@@ -18,7 +18,7 @@ description: "Set how long user's session will last in Microsoft 365 before they
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
 > [!IMPORTANT]
-> Idle session timeout isn't available for Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+> Idle session timeout isn't available for Microsoft 365 operated by 21Vianet or Microsoft 365 Germany.
 
 Use idle session timeout to configure a policy on how long users are inactive in your organization before they are signed out of Microsoft 365 web apps. This helps protect sensitive company data and adds another layer of security for end users who work on non-company or shared devices.
 

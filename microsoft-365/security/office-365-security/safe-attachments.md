@@ -44,7 +44,7 @@ The following table describes scenarios for Safe Attachments in Microsoft 365 an
 |Pat's Microsoft 365 E5 organization has no Safe Attachments policies configured.|Pat is protected by Safe Attachments due to the **Built-in protection** preset security policy that applies to all recipients who are not otherwise defined in Safe Attachments policies.|
 |Lee's organization has a Safe Attachments policy that applies only to finance employees. Lee is a member of the sales department.|Lee and the rest of the sales department are protected by Safe Attachments due to the **Built-in protection** preset security policy that applies to all recipients who are not otherwise defined in Safe Attachments policies.|
 |Yesterday, an admin in Jean's organization created a Safe Attachments policy that applies to all employees. Earlier today, Jean received an email message that included an attachment.|Jean is protected by Safe Attachments due to that custom Safe Attachments policy. <br/><br/> Typically, it takes about 30 minutes for a new policy to take effect.|
-|Chris's organization has long-standing Safe Attachments policies for everyone in the organization. Chris receives an email that has an attachment, and then forwards the message to external recipients.|Chis is protected by Safe Attachments. <br/><br/> If the external recipients in a Microsoft 365 organization, then the forwarded messages are also protected by Safe Attachments.|
+|Chris's organization has long-standing Safe Attachments policies for everyone in the organization. Chris receives an email that has an attachment, and then forwards the message to external recipients.|Chis is protected by Safe Attachments. <br/><br/> If the external recipients are in a Microsoft 365 organization, then the forwarded messages are also protected by Safe Attachments.|
 
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
@@ -84,7 +84,7 @@ This section describes the settings in Safe Attachments policies:
   You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+  > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
   >
   > - The recipient is: romain@contoso.com
   > - The recipient is a member of: Executives
