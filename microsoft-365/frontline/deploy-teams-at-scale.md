@@ -24,7 +24,7 @@ appliesto:
 ## Overview
 
 ### Original
- 
+
 Your organization may have a lot of teams that you use to drive communication and collaboration among your frontline workforce, who are spread across different stores, locations, and roles. Currently, there isn't an easy solution to deploy, set up, and manage these teams and users at scale.
 
 We're building a solution to enable admins to deploy and manage teams at scale.
@@ -227,4 +227,4 @@ Email [dscale@microsoft.com](mailto:dscale@microsoft.com) and include your orche
 
 ## Related articles
 
-- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview) 
+- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
