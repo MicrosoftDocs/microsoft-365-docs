@@ -46,7 +46,7 @@ When you open the advanced hunting page for the first time after guided hunting 
 To take the tour, select **Try out guided hunting** when this banner appears:
 
 
-[ ![banner inviting user to take the tour](../../media/guided-hunting/1-guided-hunting-banner.png) ](../../media/guided-hunting/1-guided-hunting-banner.png#lightbox)
+[ ![banner inviting user to take the tour](../../media/guided-hunting/1-guided-hunting-banner-tb.png) ](../../media/guided-hunting/1-guided-hunting-banner.png#lightbox)
 Follow the blue teaching bubbles that appear throughout the page and select **Next** to move from one step to the next.
 
 You can take the tour again at any time by going to **Help resources** > **Learn more** and selecting **Take the tour**.
