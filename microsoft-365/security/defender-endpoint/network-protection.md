@@ -128,9 +128,8 @@ A user visits a website:
 - If the url has a bad reputation, a toast notification will present the user with the following options:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
-  
-  > [!div class="mx-imgBorder"]
-  > ![ Shows a network protection known phishing content blocked notification](images/network-protection-phishing-blocked.png)
+
+   ![ Shows a network protection known phishing content blocked notification](images/network-protection-phishing-blocked.png)
 
 ### Network protection: C2 detection and remediation
 
@@ -142,20 +141,18 @@ Support for Command and Control servers (C2) is a key part of this ransomware ev
 
 A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
- > [!div class="mx-imgBorder"]
- > ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
+    ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
 
-Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft 365 Defender portal](https://security.microsoft.com), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
+Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft 365 Defender portal](https://security.microsoft.com), using the following configuration tool. 
 
- > [!div class="mx-imgBorder"]
- > ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
+    ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
 
 ## Using network protection
 
 Network protection is enabled per device, which is typically done using your management infrastructure. For supported methods, see [Turn on network protection](enable-network-protection.md).
 
 > [!NOTE]
-> Microsoft Defender Antivirus must be active to enable Network protection.
+> Microsoft Defender Antivirus must be active to enable network protection.
 
 You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
