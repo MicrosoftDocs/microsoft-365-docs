@@ -119,7 +119,7 @@ Share this [Praise video training](https://support.microsoft.com/office/communic
 
 ### Track and monitor work with Tasks
 
-Use Tasks in Teams to track to-do items for your whole retail team. Store managers and employees can create, assign, and schedule tasks, categorize tasks, and update status at any time from any device running Teams. IT pros and admins can also publish tasks to specific teams for your organization. For example, you could publish a set of tasks for daily cleaning or steps to set up a new display.
+Use Tasks in Teams to track to-do items for your whole frontline team. Store managers and employees can create, assign, and schedule tasks, categorize tasks, and update status at any time from any device running Teams. IT pros and admins can also publish tasks to specific teams for your organization. For example, you could publish a set of tasks for daily cleaning or steps to set up a new display.
 
 |Industry |Example |
 |:--------|:-------|
