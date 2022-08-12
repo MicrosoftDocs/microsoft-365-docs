@@ -54,9 +54,9 @@ For instructions to configure these cross-tenant access settings, see [Configure
 
 If you have also configured Azure AD Conditional Access policies that require multi-factor authentication (MFA) for users, see the following section how to configure Conditional Access for encrypted content.
 
-## Conditional Access policies and encrypted content
+## Conditional Access policies and encrypted documents
 
-If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview) that include **Microsoft Azure Information Protection** and the policy extends to external users:
+If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview) that include **Microsoft Azure Information Protection** and the policy extends to external users who need to open documents encrypted by your organization:
 
 - For external users who have an Azure AD account in their own tenant, we recommend you use [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) to configure trust settings for MFA claims from one, many, or all external Azure AD organizations.
 
@@ -67,6 +67,32 @@ Without one of these configurations, external users won't be able to open the en
 If you can't meet these configuration requirements for external users who need to open content encrypted by your organization, you must either remove Microsoft Azure Information Protection from the Conditional Access policies, or exclude external users from the policies.
 
 For more information, see the frequently asked question, [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+
+## Guest accounts for external users
+
+You might need guest accounts in your Azure AD tenant for external users to open documents encrypted by your organization. Options to create the guest accounts:
+
+- Create these guest accounts yourself. You can specify any email address that these users already use. For example, their Gmail address.
+    
+    The advantage of this option is that you can restrict access and rights to specific users by specifying their email address in the encryption settings. The downside is the administration overhead for the account creation and coordination with the label configuration.
+
+- Use [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration) so that guest accounts are automatically created when your users share links.
+    
+    The advantage of this option is minimum administrative overhead because the accounts are created automatically, and simpler label configuration. For this scenario, you must select the encryption option [Add any authenticated user](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) because you won't know the email addresses in advance. The downside is that this setting doesn't let you restrict access and usage rights to specific users.
+
+External users can also use a Microsoft account to open encrypted documents when they use Windows and Microsoft 365 Apps ([formerly Office 365 apps](/deployoffice/name-change)) or the standalone edition of Office 2019. More recently supported for other platforms, Microsoft accounts are also supported for opening encrypted documents on macOS (Microsoft 365 Apps, version 16.42+), Android (version 16.0.13029+), and iOS (version 2.42+). 
+
+For example, a user in your organization shares an encrypted document with a user outside your organization, and the encryption settings specify a Gmail email address for the external user. This external user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for them. For a walkthrough example of this scenario, see [Opening and editing the protected document](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+
+> [!NOTE]
+> The email address for the Microsoft account must match the email address that's specified to restrict access for the encryption settings.
+
+When a user with a Microsoft account opens an encrypted document in this way, it automatically creates a guest account for the tenant if a guest account with the same name doesn't already exist. When the guest account exists, it can then be used to open documents in SharePoint and OneDrive by using Office on the web, in addition to opening encrypted documents from the supported desktop and mobile Office apps.
+
+However, the automatic guest account is not created immediately in this scenario, because of replication latency. If you specify personal email addresses as part of your label encryption settings, we recommend that you create corresponding guest accounts in Azure Active Directory. Then let these users know that they must use this account to open an encrypted document from your organization.
+
+> [!TIP]
+> Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts (for specific users) or when you use [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (for any authenticated user) is a more reliable method to support secure collaboration with external users.
 
 ## Next steps
 
