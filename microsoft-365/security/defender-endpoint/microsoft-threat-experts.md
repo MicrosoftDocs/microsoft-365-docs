@@ -68,6 +68,9 @@ Customers can engage our security experts directly from within Microsoft 365 Def
 - Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques
 
+> [!NOTE]
+> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**.
+
 The option to **Ask Defender Experts** is available in several places in the portal so you can engage with experts in the context of your investigation:
 
 - ***Device page actions menu***
@@ -75,7 +78,6 @@ The option to **Ask Defender Experts** is available in several places in the por
 ![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft 365 Defender portal.](../../media/mte/device-page-actions-menu.png)
 
 - ***Alerts page actions menu***
-
 
 ![Screenshot of the Ask Defender Experts menu option in the Alerts page action menu in the Microsoft 365 Defender portal.](../../media/mte/alerts-page-actions-menu.png)
 
