@@ -177,15 +177,15 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
 
  A [policy package](/microsoftteams/manage-policy-packages) in Teams is a collection of predefined policies and policy settings that you can assign to users who have the same or similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies for your frontline workforce. You can manage policy packages by using the Microsoft Teams admin center or PowerShell.
 
-Teams includes the Frontline manager and Frontline worker policy packages. Each policy package creates a set of policies and policy settings that support collaboration and communication activities that are typical for that role. 
+Teams includes the Frontline manager and Frontline worker policy packages. Each policy package creates a set of policies and policy settings that support collaboration and communication activities that are typical for that role.
 
 Policy packages pre-define policies for the following, depending on the package:
 
-    - Messaging policy
-    - Meeting policy
-    - Calling policy
-    - App setup policy
-    - Live events policy
+- Messaging policy
+- Meeting policy
+- Calling policy
+- App setup policy
+- Live events policy
 
 Each individual policy is given the name of the policy package so you can easily identify the policies that are linked to a policy package. For example, when you assign the Frontline manager policy package to store managers in your organization, a policy named Frontline_Manager is created for each policy in the package.
 
