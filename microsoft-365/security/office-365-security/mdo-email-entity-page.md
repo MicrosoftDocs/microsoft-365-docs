@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 04/01/2022
+ms.date: 08/12/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -175,8 +175,7 @@ In the Action wizard you can take email actions, email submissions, block sender
 We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the TABL block URL and block attachments can be tracked under TABL/URL and TABL/file page. 
 ![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
 
-Please refer  [permission](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center?view=o365-worldwide).
- required to take these actions. 
+See [permissions](permissions-microsoft-365-security-center.md) required to take these actions. 
 
  
 ### Email summary panel
