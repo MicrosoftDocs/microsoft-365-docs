@@ -99,11 +99,15 @@ Prepaid product licenses are issued to you as a 25-character alphanumeric code, 
 ::: moniker-end
 
 2. On the **Products** tab, select the subscription to which you want to add licenses.
+
 3. On the subscription details page, in the **Licenses** section, select **Add more licenses**.
+
 4. In the **Add more licenses pane**, select **Use a new and unused product key**, then select **Next**.
+
 5. Enter the product key, then select **Next**.
     > [!NOTE]
     > If you have more than one product key, you can select **Add another product key** to enter them.
+
 6. Review your order details, then select **Redeem**.
 
 ## What if I don't see the Buy licenses or Remove licenses buttons?

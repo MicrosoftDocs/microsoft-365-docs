@@ -55,8 +55,11 @@ If you prepaid for your subscription with a product key, your subscription will 
 ::: moniker-end
 
 2. Select the subscription for which you want to manage recurring billing.
+
 3. On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.
+
 4. In the **Edit recurring billing** pane, select **On**, **On, but renew once**, or **Turn off**.
+
 5. Select **Save**.
 
     > [!NOTE]
@@ -83,11 +86,15 @@ Prepaid product licenses are issued to you as a 25-character alphanumeric code, 
 ::: moniker-end
 
 2. On the **Products** tab, select the subscription that you want to extend.
+
 3. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
+
 4. On the **renew or add user licenses** page, select **Use a new and unused product key**, then select **Next**.
+
 5. Enter the product key, then select **Next**.
     > [!NOTE]
     > If you have more than one product key, you can select **Add another product key** to enter them.
+
 6. Review your order details, then select **Redeem**.
 
 ## Related content
