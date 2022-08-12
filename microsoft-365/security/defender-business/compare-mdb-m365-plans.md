@@ -53,7 +53,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 |---|---|---|---|
 |[Centralized management](../defender-endpoint/manage-atp-post-migration.md) |Yes <sup>[[1](#fn1)]</sup>|Yes|Yes|
 |[Simplified client configuration](mdb-simplified-configuration.md)|Yes|No|No|
-|[Threat & vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|Yes|No|Yes|
+|[Microsoft Defender Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|Yes|No|Yes|
 |[Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md)|Yes|Yes|Yes|
 |[Next-generation protection](../defender-endpoint/next-generation-protection.md)|Yes|Yes|Yes|
 |[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md)|Yes <sup>[[2](#fn2)]</sup>|No|Yes|
