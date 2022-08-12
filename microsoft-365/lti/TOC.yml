@@ -36,3 +36,7 @@
       items:
       - name: Use Microsoft Teams classes and meetings with Brightspace
         href: teams-classes-meetings-with-brightspace.md
+    - name: Schoology integrations
+      items:
+      - name: Use Microsoft Teams meetings with Schoology
+        href: teams-classes-and-meetings-with-schoology.md
