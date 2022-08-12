@@ -59,7 +59,7 @@ If you have also configured Azure AD Conditional Access policies that require mu
 If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview) that include **Microsoft Azure Information Protection** and the policy extends to external users:
 
 - For external users who have an Azure AD account in their own tenant, we recommend you use [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) to configure trust claims from one, many, or all external Azure AD organizations.
-- 
+
 - For external users not covered by the previous entry, for example, users who don't have an Azure AD account or you haven't configured cross-tenant access settings for trust claims, these external users must have a guest account in your tenant.
     
 Without one of these configurations, external users won't be able to open the encrypted content and will see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
