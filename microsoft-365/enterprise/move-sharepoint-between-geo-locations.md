@@ -226,4 +226,4 @@ Power Apps need to be recreated in the destination location.
 
 SharePoint uses Azure Blob storage for its content, while the metadata associated with sites and its files is stored within SharePoint. After the site is moved from its source geo location to its destination geo location, the service will also move its associated Blob Storage. Blob Storage moves complete in approximately 40 days, this will not have any impact to users interation with the data. 
 
-You can use check the Blob storage move state status using [Get-SPOCrossGeoMoveReport](powershell/module/sharepoint-online/get-spocrossgeomovereport). 
+You can check the Blob Storage move status using the [Get-SPOCrossGeoMoveReport](powershell/module/sharepoint-online/get-spocrossgeomovereport) cmdlet. 
