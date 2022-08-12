@@ -47,7 +47,7 @@ Deploying Teams at scale allows you to:
  
 Do you need deploy and manage a large number of teams to drive communication and collaboration among your frontline workforce? This article is for you if you need to create, set up, and manage teams at scale.
 
-Deploying Teams at scale enables you to deploy up to 500 teams and add up to 25 users per team at a time. This solution allows you to meet your organization's scale needs and significantly reduces deployment time. You can also add an remove users from existing teams at scale. 
+Deploying Teams at scale enables you to deploy up to 500 teams and add up to 25 users per team at a time. This solution allows you to meet your organization's scale needs and significantly reduces deployment time. You can also add an remove users from existing teams at scale.
 
 With this solution, you can:
 
@@ -55,6 +55,8 @@ With this solution, you can:
 - Add users to teams as owners or members.
 - Manage teams at scale by adding or removing users from existing teams.
 - Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
+
+This article guides you through how to deploy Teams at scale. You'll learn how to a provision a large number of teams, and then apply all relevant policies to configure the experience in Teams for your frontline workforce.
 
 ## Deploy Teams at scale
 
