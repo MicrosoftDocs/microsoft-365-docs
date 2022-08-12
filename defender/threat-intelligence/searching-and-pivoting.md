@@ -192,7 +192,7 @@ For more information, see [Analyst insights](analyst-insights.md).
 
 The Articles section displays any articles that may provide insight on how to best investigate and ultimately disarm the impacted artifact. These articles are written by researchers who study the behavior of known threat actors and their infrastructure, surfacing key findings that can help others mitigate risk to their organization. In this example, the searched IP Address has been identified as an IOC that relates to the findings within the article.
 
-For more information, see [What is Microsoft Defender Threat Intelligence (Defender TI)?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+For more information, see [What is Microsoft Defender Threat Intelligence (Defender TI)?](index.md)
 
 ![Summary Tab Articles](media/summaryTabArticles.png)
 
@@ -492,7 +492,7 @@ The intelligence section highlights any curated insights in the Defender TI plat
 
 The Articles section displays any articles that may provide insight on how to best investigate and ultimately disarm the impacted artifact. These articles are written by researchers who study the behavior of known threat actors and their infrastructure, surfacing key findings that can help others mitigate risk to their organization. In this example, the searched IP Address has been identified as an IOC that relates to the findings within the article.
 
-For more information, see [What is Microsoft Defender Threat Intelligence (Defender TI)?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+For more information, see [What is Microsoft Defender Threat Intelligence (Defender TI)?](index.md)
 
 ![Data Tab Intelligence Articles](media/dataTabIntelligenceArticles.png)
 
@@ -518,5 +518,5 @@ For more information, see:
 - [Data sets](data-sets.md)
 - [Reputation scoring](reputation-scoring.md)
 - [Analyst insights](analyst-insights.md)
-- [What is Microsoft Defender Threat Intelligence (Defender TI)?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [What is Microsoft Defender Threat Intelligence (Defender TI)?](index.md)
 - [Using projects](using-projects.md)

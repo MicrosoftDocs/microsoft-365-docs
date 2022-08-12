@@ -49,7 +49,7 @@ The Defender Experts Notifications service includes:
 
 Refer to the following screenshot to see a sample Defender Experts Notification:
 
-![Secreenshot of a Defender Experts Notification in Microsoft 365 Defender. A Defender Expert Notification includes a title that describes the threat or activity observed, an executive summary, and list of recommendations.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
+![Screenshot of a Defender Experts Notification in Microsoft 365 Defender. A Defender Expert Notification includes a title that describes the threat or activity observed, an executive summary, and list of recommendations.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
 
 ### Where you'll find Defender Experts Notifications
 
@@ -105,7 +105,7 @@ The option to **Ask Defender Experts** is available in several places throughout
 ### Alert information
 
 - We saw a new type of alert for a living-off-the-land binary. We can provide the alert ID. Can you tell us more about this alert and if it's related to any incident and how we can investigate it further?
-- We've observed two similar attacks, which both try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
+- We've observed two similar attacks, which both try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by Office 365." What is the difference?
 - We received an odd alert today about an abnormal number of failed logins from a high profile user's device. We can't find any further evidence for these attempts. How can Microsoft 365 Defender see these attempts? What type of logins are being monitored?
 - Can you give more context or insight about the alert and any related incidents, "Suspicious behavior by a system utility was observed"?
 - I observed an alert titled "Creation of forwarding/redirect rule". I believe the activity is benign. Can you tell me why I received an alert?
@@ -123,7 +123,7 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 ### Microsoft Defender Experts for Hunting' alert communications
 
-- Can your incident response team help us address the targeted attack notification that we got?
+- Can your incident response team help us address the Defender Experts Notification that we got?
 - We received this Defender Experts Notification from Microsoft Defender Experts for Hunting. We don't have our own incident response team. What can we do now, and how can we contain the incident?
 - We received a Defender Experts Notification from Microsoft Defender Experts for Hunting. What data can you provide to us that we can pass on to our incident response team?
 

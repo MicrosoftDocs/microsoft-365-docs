@@ -60,8 +60,8 @@ The property names for sites are based on SharePoint site managed properties. Fo
 
 The attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
-- **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
-- **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
+- **Alias** maps to the LDAP name **mailNickname** that displays as **Email** in the Azure AD admin center.
+- **Email addresses** maps to the LDAP name **proxyAddresses** that displays as **Proxy address** in the Azure AD admin center.
 
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
@@ -81,10 +81,10 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you're using the records management solution:
-        - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
+        - **Solutions** \> **Records management** \> **Adaptive scopes** tab \> + **Create scope**
         
     - If you're using the data lifecycle management solution:
-       - **Solutions** > **Data lifecycle management** > **Adaptive scopes** tab > + **Create scope**
+       - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Adaptive scopes** tab \> + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
@@ -122,7 +122,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
-        For example, because SharePoint sites scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
+        For example, because SharePoint site scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
         - `SITEPAGEPUBLISHING` for modern communication sites
         - `GROUP` for Microsoft 365 group-connected sites
         - `TEAMCHANNEL` for Microsoft Teams private channel sites

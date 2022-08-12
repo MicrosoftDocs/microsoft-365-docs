@@ -55,9 +55,9 @@ from being sent to *Junk* due to authentication failures.
 
 Trusted ARC sealers in Microsoft 365 Defender portal shows all the ARC sealers acknowledged by and added to your tenant.
 
-**To add a new Trusted ARC sealer in the admin portal:**
+**To add a new Trusted ARC sealer in the Microsoft 365 Defender portal:**
 
-1. Navigate to the [email authentication settings](https://security.microsoft.com/authentication?viewid=ARC) page.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Email Authentication Settings** in the **Rules** section \> **ARC** . To go directly to the ARC page, use [email authentication settings](https://security.microsoft.com/authentication?viewid=ARC).
 
 2. If this is the first time you've added a trusted ARC sealer, click the Add button.
 3. Add trusted ARC sealers in the textbox shown.

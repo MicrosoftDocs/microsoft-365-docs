@@ -40,14 +40,22 @@ Microsoft Defender for Cloud is a subscription-based service in the Microsoft Az
 To enable Defender for Servers for Azure VMs and non-Azure machines connected through [Azure Arc-enabled servers](/azure/azure-arc/servers/overview), follow this guideline:
 
 1. If you aren't already using Azure, plan your environment following the [Azure Well-Architected Framework](/azure/architecture/framework/).
+
 2. Enable [Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started) on your subscription(s).
+
 3. Enable one of the Microsoft Defender for Server plans on your [subscription(s)](/azure/defender-for-cloud/enable-enhanced-security). In case you're using Defender for Servers Plan 2, make sure to also enable it on the Log Analytics workspace your machines are connected to; it will enable you to use optional features like File Integrity Monitoring, Adaptive Application Controls and more.
+
 4. Make sure the [MDE integration](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows) is enabled on your subscription. If you have pre-existing Azure subscriptions, you may see one (or both) of the two opt-in buttons shown in the image below.
-     :::image type="content" source="images/mde-integration.png" alt-text="Screenshot that shows how to enable MDE integration.":::
-If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default.
+
+     :::image type="content" source="images/mde-integration.png" alt-text="Screenshot that shows how to enable MDE integration." lightbox="images/mde-integration.png":::
+
+   If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default. In this case, you will not see these buttons in your environment.
+
 5. Make sure the connectivity requirements for Azure Arc are met. Microsoft Defender for Cloud requires all on-premises and non-Azure machines to be connected via the Azure Arc agent. In addition, Azure Arc doesn't support all MDE supported operating systems. So, learn how to plan for [Azure Arc deployments here](/azure/azure-arc/servers/plan-at-scale-deployment).
+
 6. *Recommended:* If you want to see vulnerability findings in Defender for Cloud, make sure to enable [Microsoft Defender Vulnerability Management](/azure/defender-for-cloud/enable-data-collection?tabs=autoprovision-va) for Defender for Cloud.
-   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Screenshot that shows how to enable vulnerability management."::: 
+
+   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Screenshot that shows how to enable vulnerability management." lightbox="images/enable-threat-and-vulnerability-management.png"::: 
 
 ## How do I migrate existing Azure VMs to Microsoft Defender for Cloud?
 
@@ -55,15 +63,19 @@ For Azure VMs, no extra steps are required, these are automatically onboarded to
 
 ## How do I migrate on-premises machines to Microsoft Defender for Servers?
 
-[Connect](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) your on-premises machines via Azure Arc-connected servers.
+Once all prerequisites are met, [connect](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) your on-premises machines via Azure Arc-connected servers.
 
 ## How do I migrate VMs from AWS or GCP environments?
 
 1. Create a new multi-cloud connector on your subscription. (For more information on connector, see [AWS accounts](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings) or [GCP projects](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings).
+
 2. On your multi-cloud connector, enable Defender for Servers on [AWS](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) or [GCP](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings#configure-the-servers-plan) connectors.
+
 3. Enable auto-provisioning on the multi-cloud connector for the Azure Arc agent, Microsoft Defender for Endpoint extension, Vulnerability Assessment and, optionally, Log Analytics extension.
-     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable auto-provisioning for Azure Arc agent.":::
-For more information, see [Defender for Cloud’s multicloud capabilities](https://aka.ms/mdcmc).
+
+     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable auto-provisioning for Azure Arc agent." lightbox="images/select-plans-aws-gcp.png":::
+
+   For more information, see [Defender for Cloud’s multicloud capabilities](https://aka.ms/mdcmc).
 
 ## What happens once all migration steps are completed?
 

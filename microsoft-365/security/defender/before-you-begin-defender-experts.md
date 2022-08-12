@@ -76,8 +76,8 @@ This service is currently delivered in English language only.
 
 If you haven't done so yet, you can complete the customer interest form for Defender Experts for Hunting:
 
-1. Complete the customer interest form. Anyone from your company can apply, but if you're accepted, you need to work with your Commercial Executive to transact the SKU.
-2. Enter your company email ID.
+1. Complete the [customer interest form](https://aka.ms/DEX4HuntingCustomerInterestForm). Anyone from your company can apply, but if you're accepted, you need to work with your Commercial Executive to transact the SKU.
+2. Enter your name, company name, and company email ID.
 3. Select **Submit**. Someone from our sales team will reach out within five business days.
 
 

@@ -71,4 +71,4 @@ There are no resources to clean up in this section.
 
 For more information, see:
 
-[‘What is Microsoft Defender Threat Intelligence (Defender TI)?’](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+[‘What is Microsoft Defender Threat Intelligence (Defender TI)?’](index.md)
