@@ -40,11 +40,11 @@ In the **Advanced hunting** page, select **Create new** to open a new query tab 
 This brings you to the guided mode, where you can then construct your query by selecting different components using dropdown menus.
 
 ### Specify the data domain to hunt in
-By default, guided hunting includes a few basic filters to get you started fast.
+
 
 You can control the scope of the hunt by selecting the **View in** control:
 
-[IMAGE: View in]
+![hunting icon](../../media/guided-hunting/query-builder-view-in.png)
 
 **View in** controls the filters. Selecting **All** allows you to filter the entire dataset. narrowing down to a specific domain allows filters relevant to that domain only. 
 
@@ -54,42 +54,43 @@ You can choose from:
 - Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with Activity log can find the same data here
 - Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with Threat Explorer can find the same data here
 
-
+By default, guided hunting includes a few basic filters to get you started fast.
+![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
 
 ### Create conditions
 
 To add a condition to your query, select **Select a filter**. Explore the different filter sections to find what is available to you.
  
-![Screenshot showing different filters you can use](../../media/guided-hunting/create-conditions-filters.png)
+![Screenshot showing different filters you can use](../../media/guided-hunting/query-builder-filters.png)
 
 Type the section's titles to find the filter or use the search box at the top of the list. _* Info_ sections contain filters that provide information about the different components you can look at. _* Events_ sections contain filters that allow you to look for any system or network event. 
 
 You can also create AND, OR conditions. Select **AND** to include results that  
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/create-conditions-and-or.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators.png)
 
 ## Try some queries
 
 ### Hunt for successful connections to specific IP
 To hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-1.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip.png)
 
 To look for events involving this IP address where this IP is the destination of the communication, select DestinationIPAddress under the IP Address Events section. Then select the **equals** operator and type the IP and press **Enter**:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-2.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-2.png)
 
 Then, to add a second condition which searches for successful network communication events, search for the filter of a specific event type:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-3.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-3.png)
 
 **Event** filter is filtering for the different event types logged. It is equivalent to the **ActionType** column which exists in most of the tables in advanced hunting. Select it to select one or more event types to filter for. To look for successful network communication events, expand the **DeviceNetworkEvents** section and then choose **ConnectionSuccess**:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-4.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-4.png)
 
 Finally, select **Run query** to hunt for all successful network communications to the 52.168.117.170 IP address:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-ip-5.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-5.png)
 
 ### Hunt for high confidence phish or spam emails delivered to inbox
 
@@ -107,6 +108,6 @@ Another way to get familiar with guided hunting is to load sample queries pre-cr
 
 In the **Getting started** section of the hunting page, we have provided three guided query examples that you can load. The query examples contain some of the most common filters and inputs you would typically need in your hunting. Loading any of the three sample queries opens a guided tour of how you would construct the entry using guided mode.
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/load-sample-queries.png)
+![Screenshot showing different conditions you can use](../../media/guided-hunting/load-examples.png)
 
 ## See also
