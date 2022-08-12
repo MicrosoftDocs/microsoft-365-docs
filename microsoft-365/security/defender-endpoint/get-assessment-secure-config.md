@@ -101,7 +101,7 @@ DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.e
 IsApplicable|bool|Indicates whether the configuration or policy is applicable|true
 IsCompliant|bool|Indicates whether the configuration or policy is properly configured|false
 IsExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied|true
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
+OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management (MDVM) supported operating systems and platforms for details.|Windows10 and Windows 11
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
 RecommendationReference|string|A reference to the recommendation ID related to this software.|sca-_-scid-20000
 Timestamp|string|Last time the configuration was seen on the device|2020-11-03 10:13:34.8476880
@@ -288,5 +288,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 Other related
 
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Risk-based Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
