@@ -17,7 +17,7 @@ description: Learn about file limitations, file types, supported languages, and 
 
 # Requirements and limitations for models in Microsoft SharePoint Syntex
 
-SharePoint Syntex lets you create [custom models](model-types-overview.md) and [trained models](prebuilt-overview.md). Depending on the type of model you choose to use, there might be different file type and size requirements, different languages that are supported, and other considerations when you choose one of these models.
+SharePoint Syntex lets you create [custom models and trained models](model-types-overview.md). Depending on the type of model you choose to use, there might be different file type and size requirements, different languages that are supported, geographical considerations, and other factors to consider when you're choosing a model to use.
 
 - [Classify and extract by text pattern](#classify-and-extract-by-text-pattern)
 - [Extract by layout](#extract-by-layout)
