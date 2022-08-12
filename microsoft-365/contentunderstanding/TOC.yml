@@ -53,6 +53,8 @@
       items:
             - name: Compare custom models 
               href: difference-between-document-understanding-and-form-processing-model.md  
+            - name: Requirements and limitations 
+              href: requirements-and-limitations.md  
             - name: Classify and extract by text pattern
               items:
                 - name: Overview
