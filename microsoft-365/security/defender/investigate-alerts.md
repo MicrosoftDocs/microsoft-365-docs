@@ -212,7 +212,7 @@ To create a suppression rule for alerts:
 
     3. You can edit and/or delete properties of this 'evidence' as per your requirement (using wildcards, when supported).
 
-    4. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
+    4. Other than files and processes, AntiMalware Scan Interface (AMSI) script, Windows Management Instrumentation (WMI) event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Screenshot of other types of evidence." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
 
     5. To add another IOC, click **Add filter**. 

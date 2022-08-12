@@ -344,7 +344,7 @@ Advanced hunting action type:
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dependencies: Microsoft Defender Antivirus, AMSI
+Dependencies: Microsoft Defender Antivirus, AntiMalware Scan Interface
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
