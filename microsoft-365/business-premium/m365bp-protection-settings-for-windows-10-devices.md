@@ -11,22 +11,14 @@ f1.keywords:
 - 'BCS365_Win10AppPolicy'
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management
-- Adm_TOC 
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: "Learn how to create or edit app management policies and protect work files on your users' personal Windows devices."
 ---
 

@@ -26,6 +26,20 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## July 2022
+
+### Enhanced baseline deployment
+
+Microsoft 365 Lighthouse now makes the deployment of baselines to all of your managed tenants faster and easier by:
+
+- Automatically detecting and reporting the status of each assigned task
+- Consolidating the status reporting and simplifying the logic that determines deployment status
+- Reporting which tasks are complete and which tasks need your attention
+- Reporting user-level deployment status for applicable tasks
+- Detecting existing configurations from within the tenant and comparing them to the baseline
+- Providing details around tasks that have been dismissed
+- Identifying where additional licensing is required to complete an assigned task
+
 ## June 2022
 
 ### Support for Microsoft 365 E5 customers
@@ -36,13 +50,13 @@ For a full list of requirements, see [Requirements for Microsoft 365 Lighthouse]
 
 ### Microsoft Defender for Business integration
 
-Microsoft 365 Lighthouse now integrates with Microsoft Defender for Business to bring you related insights and management capabilities for all of your customer tenants that have Microsoft Defender for Business. To see the list of customer devices that have been onboarded to Microsoft Defender for Business, select **Devices** from the left navigation pane in Microsoft 365 Lighthouse. To see the list of incidents and alerts flagged across your customer tenants, go to **Devices** > **Device Security**, and then select the **Incidents and alerts** tab.  
+Microsoft 365 Lighthouse now integrates with Microsoft Defender for Business to bring you related insights and management capabilities for all of your customer tenants that have Microsoft Defender for Business. To see the list of customer devices that have been onboarded to Microsoft Defender for Business, select **Devices** in the left navigation pane in Microsoft 365 Lighthouse. To see the list of incidents and alerts flagged across your customer tenants, go to **Devices** > **Device Security**, and then select the **Incidents and alerts** tab.  
 
-We've also added a step to the default baseline to help you set up Microsoft Defender for Business for your customer tenants. To see this step, select **Baselines** from the left navigation pane in Microsoft 365 Lighthouse or view the deployment plan for any of your customer tenants.
+We've also added a step to the default baseline to help you set up Microsoft Defender for Business for your customer tenants. To see this step, select **Baselines** in the left navigation pane in Microsoft 365 Lighthouse or view the deployment plan for any of your customer tenants.
 
 ### Status of quarantined email messages
 
-We've added new functionality around email quarantine data for your managed tenants. Accessible by selecting **Data protection** from the left navigation pane in Microsoft 365 Lighthouse, this feature gives you visibility into the status of quarantined email messages across your customer tenants. You can see consolidated information for total quarantine volumes and detailed information for each managed tenant to help you prioritize any tenants that may require action.
+We've added new functionality around email quarantine data for your managed tenants. Accessible by selecting **Data protection** in the left navigation pane in Microsoft 365 Lighthouse, this feature gives you visibility into the status of quarantined email messages across your customer tenants. You can see consolidated information for total quarantine volumes and detailed information for each managed tenant to help you prioritize any tenants that may require action.
 
 ### Increase in maximum license limit
 
@@ -58,7 +72,7 @@ We've given the left navigation pane in Microsoft 365 Lighthouse a new look. You
 
 ### Enriched user details pane
 
-We've redesigned the user details pane to include more user information and more actions that you can take to better manage users. It now has the same look and feel as the user details pane in the Microsoft 365 admin center. To access the user details pane in Microsoft 365 Lighthouse, select **Users** from the left navigation pane, and then select either **Search users** or **Risky users**. Select any user to open the details pane.
+We've redesigned the user details pane to include more user information and more actions that you can take to better manage users. It now has the same look and feel as the user details pane in the Microsoft 365 admin center. To access the user details pane in Microsoft 365 Lighthouse, select **Users** in the left navigation pane, and then select either **Search users** or **Risky users**. Select any user to open the details pane.
 
 ## April 2022
 
@@ -147,7 +161,7 @@ You can now view usage data for Microsoft 365 services from within Microsoft 365
 
 These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity. 
 
-For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 usage card](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
+For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
 ### Exchange Online Protection and Microsoft 365 Defender for Office 365 default baseline step
 
@@ -189,7 +203,7 @@ We've made it easier to communicate with users in your customer tenants about ac
 
 ### Capability to take action on noncompliant devices
 
-We've introduced the capability to sync or restart one or more devices across multiple customer tenants. This functionality helps ensure that your customers' devices are protected from risk. To check out this functionality, select **Devices** from the left navigation pane in Microsoft 365 Lighthouse, and then select the **Devices** tab. Look for the **Sync** and **Restart** options above the devices list. You can also access these options from the device details pane of any device.
+We've introduced the capability to sync or restart one or more devices across multiple customer tenants. This functionality helps ensure that your customers' devices are protected from risk. To check out this functionality, select **Devices** in the left navigation pane in Microsoft 365 Lighthouse, and then select the **Devices** tab. Look for the **Sync** and **Restart** options above the devices list. You can also access these options from the device details pane of any device.
 
 ### Capability to monitor and manage Windows 365 Cloud PCs
 
@@ -222,7 +236,7 @@ With the new baselines feature, you can now deploy standard configurations to he
 - Configure Defender AV policy for Windows devices 
 - Configure Compliance Policy for Windows devices 
 
-To act on these deployment steps, select **Tenants** from the left navigation pane in Microsoft 365 lighthouse, select a tenant from the tenants list, and then select the **Deployment plan** tab. 
+To act on these deployment steps, select **Tenants** in the left navigation pane in Microsoft 365 lighthouse, select a tenant from the list of tenants, and then select the **Deployment plan** tab. 
 
 ## May 2021
 

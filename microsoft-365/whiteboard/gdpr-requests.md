@@ -1,7 +1,7 @@
 ---
 title: Manage GDPR data subject requests in Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to export, transfer, or delete personal information from Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

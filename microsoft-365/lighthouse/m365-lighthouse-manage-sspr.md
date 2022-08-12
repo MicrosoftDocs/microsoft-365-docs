@@ -33,7 +33,7 @@ The following conditions must be met before a tenant will appear in the list:
 
 ## View SSPR tenant status
 
-- In the left navigation pane of Lighthouse, select **Users** > **Password reset**.
+- In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
 
 The Password reset tab provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
 

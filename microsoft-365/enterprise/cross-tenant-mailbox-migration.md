@@ -94,7 +94,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 14. Next, select Application permissions
 
-15. Then, under Select permissions, expand Mailbox, and check Mailbox.Migration, and Add permissions at the bottom on the screen.
+15. Then, under Select permissions, expand Mailbox, check Mailbox.Migration, and Add permissions at the bottom on the screen.
 
     ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
@@ -658,7 +658,7 @@ This can be done before the migration is complete, but you should not assign a l
       | Information Protection for Office 365 - Premium  |
       | Information Protection for Office 365 - Standard |
       | Insights by MyAnalytics                          |
-      | Microsoft 365 Advanced Auditing                  |
+      | Microsoft Purview Audit (Premium)                  |
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (Full)                     |

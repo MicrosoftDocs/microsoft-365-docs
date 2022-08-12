@@ -50,12 +50,25 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 > - An OMS gateway server cannot be used as proxy for disconnected Windows or Windows Server devices when configured via 'TelemetryProxyServer' registry or GPO.
 > - For Windows or Windows Server - while you may use TelemetryProxyServer, it must point to a standard proxy device or appliance.
 
-- Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
+- Set up Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
   - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
 
 [Onboard previous versions of Windows](onboard-downlevel.md)
 
-### Microsoft Defender for Cloud
+### Azure virtual machines
 
-- Review the prerequisites section in [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites)
+- For devices running the previous, MMA-based solution, set up Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
+    - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
+- Offline Azure VMs in the same network of OMS Gateway
+    - Configure Azure Log Analytics IP as a proxy
+    - Azure Log Analytics Workspace Key & ID
+- Microsoft Defender for Cloud
+    - [Security Policy \> Log Analytics Workspace](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Threat Detection \> Allow Defender for Endpoint to access my data](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+
+    For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).
+
+> [!NOTE]
+> Any client that has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy.

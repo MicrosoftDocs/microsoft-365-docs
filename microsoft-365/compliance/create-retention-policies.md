@@ -69,7 +69,7 @@ When you have more than one retention policy, and when you also use retention la
 ### Retention policy for Teams locations
 
 > [!NOTE]
-> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
+> Retention policies support [shared channels](/MicrosoftTeams/shared-channels). When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
 
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
@@ -84,7 +84,7 @@ When you have more than one retention policy, and when you also use retention la
     - If you chose **Static**: On the **Choose locations to apply the policy** page, select one or more locations for Teams:
         - **Teams channel message**: Messages from standard and shared channel chats, and standard and shared channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
         - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
-        - **Teams private channel messages**: Messages from private channel chats and private channel meetings.
+        - **Teams private channel messages**: Messages from private channel chats and private channel meetings. If you select this option, you can't select the other Teams locations in the same retention policy.
         
        By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 

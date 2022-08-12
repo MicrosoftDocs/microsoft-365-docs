@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about retention policies that apply to Microsoft Teams."
+description: "Learn about Microsoft 365 retention policies that apply to Microsoft Teams so you can manage automatic retention or deletion of Teams messages for your organization."
 ---
 
 # Learn about retention for Microsoft Teams
@@ -39,7 +39,7 @@ For other workloads, see:
 ## What's included for retention and deletion
 
 > [!NOTE]
-> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. Any shared channels inherit retention settings from the parent channel.
+> Retention policies support [shared channels](/MicrosoftTeams/shared-channels). Any shared channels inherit retention settings from the parent channel.
 
 Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 

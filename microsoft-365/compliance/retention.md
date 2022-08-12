@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn about retention policies and retention labels to retain what you need and delete what you don't.
+description: Learn about Microsoft 365 retention policies and retention labels to retain what you need and delete what you don't to manage your organization's data.
 ---
 
 # Learn about retention policies and retention labels
@@ -288,13 +288,13 @@ Scenario: By default, content in users' OneDrive accounts is automatically delet
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-Example to retain items for longer**
+#### Example to retain items for longer
 
 Scenario: By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
 1. You create and configure a retention policy that automatically retains and then deletes content after five years, and apply the policy to all SharePoint and Microsoft 365 Groups instances.
 
-2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
+2. You create and configure a retention label that automatically retains content for ten years. You add this label to a label policy that you publish to all SharePoint and Microsoft 365 Groups instances so that SharePoint admins can then apply it as a default label to be inherited by all items in specific document libraries.
 
 #### Example to delete items in a shorter time period
 

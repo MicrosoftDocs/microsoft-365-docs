@@ -9,21 +9,15 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Learn how to send encrypted email using Outlook."
 ---
 
