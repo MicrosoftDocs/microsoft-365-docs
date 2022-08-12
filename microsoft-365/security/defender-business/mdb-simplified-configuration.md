@@ -33,7 +33,6 @@ To onboard devices and configure security settings for your company's devices, y
 1. [Review your setup and configuration options](#review-your-setup-and-configuration-options).
 2. [Proceed to your next steps](#next-steps).
 
-
 ## Review your setup and configuration options
 
 The following table describes each experience.
