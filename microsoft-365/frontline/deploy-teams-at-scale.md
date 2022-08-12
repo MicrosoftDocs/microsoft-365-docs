@@ -22,6 +22,8 @@ appliesto:
 # Deploy Teams at scale for frontline workers
 
 ## Overview
+
+### Original
  
 Your organization may have a lot of teams that you use to drive communication and collaboration among your frontline workforce, who are spread across different stores, locations, and roles. Currently, there isn't an easy solution to deploy, set up, and manage these teams and users at scale.
 
@@ -41,7 +43,20 @@ Deploying Teams at scale allows you to:
 - Manage teams at scale by adding or removing users from existing teams.
 - Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
 
-## How to deploy Teams at scale
+### Updated
+ 
+Do you need deploy and manage a large number of teams to drive communication and collaboration among your frontline workforce? This article is for you if you need to create, set up, and manage teams at scale.
+
+Deploying Teams at scale enables you to deploy up to 500 teams and add up to 25 users per team at a time. This solution allows you to meet your organization's scale needs and significantly reduces deployment time. You can also add an remove users from existing teams at scale. 
+
+With this solution, you can:
+
+- Create teams using pre-built templates or your own custom templates.
+- Add users to teams as owners or members.
+- Manage teams at scale by adding or removing users from existing teams.
+- Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
+
+## Deploy Teams at scale
 
 > [!NOTE]
 > Before you deploy your teams, make sure that all teams owners have a Teams license.
@@ -157,6 +172,52 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
     ```powershell
     Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
+
+## Apply and assign Teams policies
+
+ A [policy package](/microsoftteams/manage-policy-packages) in Teams is a collection of predefined policies and policy settings that you can assign to users who have the same or similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies for your frontline workforce. You can manage policy packages by using the Microsoft Teams admin center or PowerShell.
+
+Teams includes the Frontline manager and Frontline worker policy packages. Each policy package creates a set of policies and policy settings that support collaboration and communication activities that are typical for that role. 
+
+Policy packages pre-define policies for the following, depending on the package:
+
+    - Messaging policy
+    - Meeting policy
+    - Calling policy
+    - App setup policy
+    - Live events policy
+
+Each individual policy is given the name of the policy package so you can easily identify the policies that are linked to a policy package. For example, when you assign the Frontline manager policy package to store managers in your organization, a policy named Frontline_Manager is created for each policy in the package.
+
+### View the policy settings in the policy package
+
+View the settings of each policy in a policy package before you assign a package. In the left navigation of the Microsoft Teams admin center, go to **Policy packages**, select the package name, and then select the policy name.
+
+Decide whether the predefined values are appropriate for your organization or whether you need to customize them to be more restrictive or lenient based on your organization's needs.
+
+### Customize policy settings in the policy package
+
+Customize the settings of policies in the policy package, as needed, to fit the needs of your organization. Any changes you make to policy settings are automatically applied to users who are assigned the package. To edit the settings of a policy in a policy package, in the left navigation of the Microsoft Teams admin center, go to **Policy packages**, select the policy package, select the name of the policy you want to edit, and then select **Edit**.
+
+Keep in mind that you can also change the settings of policies in a package after you assign the policy package. To learn more, see [Customize policies in a policy package](/microsoftteams/manage-policy-packages#customize-policies-in-a-policy-package).
+
+### Assign the policy package
+
+Assign the policy package to frontline workers and managers. You can assign a policy package to an individual user, a group, or a batch of users. For step-by-step guidance on how to assign policy packages, see [Assign policy packages to users and groups](/microsoftteams/assign-policy-packages).
+
+If a user has a policy assigned, and then later you assign a different policy, the most recent assignment will take priority.
+
+### Assign a policy package to a group
+
+Policy package assignment to groups lets you assign multiple policies to a group of users, such as a security group or distribution list. The policy assignment is propagated to members of the group according to precedence rules. As members are added to or removed from a group, their inherited policy assignments are updated accordingly. This method is recommended for groups of up to 50,000 users but will also work with larger groups.
+
+To learn more, see [Assign a policy package to a group](/microsoftteams/assign-policy-packages#assign-a-policy-package-to-a-group).
+
+### Assign a policy package to a large set (batch) of users
+
+Use batch policy package assignment to assign a policy package to large sets of users at a time. You use the [New-CsBatchPolicyPackageAssignmentOperation](/powershell/module/teams/new-csbatchpolicypackageassignmentoperation) cmdlet to submit a batch of users and the policy package that you want to assign. The assignments are processed as a background operation and an operation ID is generated for each batch.
+
+A batch can contain up to 5,000 users. You can specify users by their object ID or Session Initiation Protocol (SIP)  address. To learn more, see [Assign a policy package to a batch of users](/microsoftteams/assign-policy-packages#assign-a-policy-package-to-a-batch-of-users).
 
 ## Send us feedback
 
