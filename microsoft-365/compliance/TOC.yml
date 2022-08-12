@@ -1679,6 +1679,8 @@
           href: compliance-manager-templates-list.md
         - name: Working with improvement actions
           href: compliance-manager-improvement-actions.md
+        - name: Updating improvement actions
+          href: compliance-manager-update-actions.md
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated
