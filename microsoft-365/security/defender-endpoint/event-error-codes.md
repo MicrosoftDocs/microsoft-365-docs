@@ -144,26 +144,28 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |103|Microsoft Defender for Endpoint Network Detection and Response executable has ended|The SenseNdr executable has ended.|Normal operating notification; no action required.|
    |104|Failed to queue asynchronous driver unload. Failure code: %1|Occurs during offboarding.|Normal operating notification; no action required.|
    |105 |Failed to wait for driver unload| Occurs during offboarding|Normal operating notification; no action required.|
-   |106  |$(build.sense.productDisplayName) service failed to start. Failure code %1 ; Failed to load MsSense DLL. Module  | Occurs during startup   | Contact support. |
-   |107  | $(build.sense.productDisplayName) service failed to start. Failure code %1 ; Issue with MsSense DLL Module.  | Occurs during startup.   | Contact support. |
-   |108  |Update phase:%1, new platform version: %2, message: %3.|Occurs during update.|Normal operating notification; no action required.   |
-   |109  | Update phase:%1 new platform version: %2, failure message: %3, error: %4.  | Occurs during update.   |Contact support.   |
+   |106  |Microsoft Defender for Endpoint service failed to start. Failure code %1 ; Failed to load MsSense DLL. Module  | Occurs during startup   | Contact support. |
+   |107  | Microsoft Defender for Endpoint service failed to start. Failure code %1 ; Issue with MsSense DLL Module.  | Occurs during startup.   | Contact support. |
+   |108  |Update phase:%1, new platform version: %2, message: %3.|Occurs during update.|Normal operating notification; no action required.|
+   |109  | Update phase:%1 new platform version: %2, failure message: %3, error: %4.  | Occurs during update.   |Contact support. |
    |110  |Failed to remove MDEContain WFP filters.   | Occurs during offboarding.   | Contact support.  |
    |307| Failed to update driver permissions Failure code: %1. |Occurs during onboarding.    |Contact support.   |
    |308 | Failed to ACL on Folder %1 Failure code: %2.  |Occurs during onboarding.    | Contact support.  |
-   |401  | $(build.sense.productDisplayName) service failed to generate key. Failure code: %1  | Failed to create crypto key |If machine is not reporting, contact support. Otherwise, no action required   |
-   |402 |$(build.sense.productDisplayName) service failed to persist authentication state. Failure code: %1| Failed to persist authentication state.   | If machine is not reporting, contact support. Otherwise, no action required.  |
-   |403 |Registration of $(build.sense.productDisplayName) service completed.| Successful registration to authentication service   |Normal operating notification; no action required.   |
-   |404  |$(build.sense.productDisplayName) service successfully generated a key.  |Successful crypto key generation  |Normal operating notification; no action required. |
-   |405|Failed to communicate with authentication service. %1 request failed, hresult: %2,  HTTP error code: %3 . |Failed to send request to authentication service    |Normal operating notification; no action required.   |
+   |401  | Microsoft Defender for Endpoint service failed to generate key. Failure code: %1  | Failed to create crypto key |If machine is not reporting, contact support. Otherwise, no action required   |
+   |402 |Microsoft Defender for Endpointservice failed to persist authentication state. Failure code: %1| Failed to persist authentication state.   | If machine is not reporting, contact support. Otherwise, no action required.  |
+   |403|Registration of Microsoft Defender for Endpoint service completed.|Successful registration to authentication service|Normal operating notification; no action required.|
+   |404  |Microsoft Defender for Endpoint service successfully generated a key.  |Successful crypto key generation  |Normal operating notification; no action required.|
+   |405|Failed to communicate with authentication service. %1 request failed, hresult: %2,  HTTP error code: %3 . |Failed to send request to authentication service|Normal operating notification; no action required.|
    |406|Request for %1 rejected by authentication service. Hresult: %2, error code: %3 .   | Request returned undesired response   |Normal operating notification; no action required. |
-   |407|$(build.sense.productDisplayName) service failed to sign message (authentication). Failure code: %1.  |Failed to sign request.    |Normal operating notification; no action required.   |
-   |408|$(build.sense.productDisplayName) service failed to remove persist authentication state. State: %1, Failure code: %2.   |Failed to persist authentication state.    |If machine is not reporting, contact support. Otherwise, no action required.   |
-   |409| $(build.sense.productDisplayName) service failed to open key. Failure code: %1.  |Failed to open crypto key.    |If machine is not reporting, contact support. Otherwise, no action required.   |
-   |410|Registration is required as part of re-onboarding of $(build.sense.productDisplayName) service.   |Occurs during reonboarding    |Normal operating notification; no action required.|
-   |1800| CSP: Get Node&apos;s Value. NodeId: (%1), TokenName: (%2).  | An operation of Get is about to start.   | Contact support. |
-   |1801|CSP: Failed to Get Node&apos;s Value. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Get has failed.   |Contact support.  |
-   |1802| CSP: Get Node&apos;s Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).  | An operation of Get has succeeded.   |Contact support.  |
+   |407|Microsoft Defender for Endpoint service failed to sign message (authentication). Failure code: %1.  |Failed to sign request.    |Normal operating notification; no action required.   |
+   |408|Microsoft Defender for Endpoint service failed to remove persist authentication state. State: %1, Failure code: %2.   |Failed to persist authentication state. |If machine is not reporting, contact support. Otherwise, no action required.|
+   |409| Microsoft Defender for Endpoint service failed to open key. Failure code: %1.  |Failed to open crypto key.|If machine is not reporting, contact support. Otherwise, no action required.|
+   |410|Registration is required as part of re-onboarding of Microsoft Defender for Endpoint service.   |Occurs during reonboarding |Normal operating notification; no action required.|
+   |411|$(string.CyberUploadSuspendedMessage)|Cyber upload temporarily suspended|Normal operating notification; no action required.|
+   |412|$(string.CyberUploadResumedMessage)|Cyber upload successfully resumed|Normal operating notification; no action required.|
+   |1800| CSP: Get `Node&apos;s` Value. NodeId: (%1), TokenName: (%2).  | An operation of Get is about to start.   | Contact support. |
+   |1801|CSP: Failed to Get `Node&apos;s` Value. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Get has failed.   |Contact support.|
+   |1802| CSP: Get `Node&apos;s` Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).  | An operation of Get has succeeded.   |Contact support. |
    |1803| CSP: Get Last Connected value complete. Result (%1), IsDefault: (%2).  |Last time the device communicated with CNC.    | Normal operating notification; no action required. |
    |1804| CSP: Get Org ID value complete. Result: (%1), IsDefault: (%2).  |The org ID device get during onboarding.    |Normal operating notification; no action required. |
    |1805|CSP: Get Sense Is Running value complete. Result: (%1).   | Sense running message after onboarding.   |Normal operating notification; no action required.  |
@@ -178,10 +180,10 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1814| CSP: Onboarding process. Pending service running state complete. Result: (%1).  | Finished waiting for Sense to start as part of onboarding flow.   |Normal operating notification; no action required. |
    |1815|CSP: Set Sample Sharing value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |Set sample sharing value.    |Normal operating notification; no action required.  |
    |1816|CSP: Offboarding process. Delete Onboarding blob complete. Result (%1).   |Deleted onboarding blob as part of offboarding flow.   | Normal operating notification; no action required. |
-   |1817|CSP: Offboarding process. Write Offboarding blob complete. Result (%1).|Wrote offboarding blob to registry as part of offboarding flow.    |Normal operating notification; no action required.  |
-   |1818|CSP: Set Node&apos;s Value started. NodeId: (%1), TokenName: (%2).   | An operation of Set is about to start.   |Normal operating notification; no action required.  |
-   |1819|CSP: Failed to Set Node&apos;s Value. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Set has failed.   |Contact support. |
-   |1820|CSP: Set Node&apos;s Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Set has succeeded.   |Normal operating notification; no action required.  |
+   |1817|CSP: Offboarding process. Write Offboarding blob complete. Result (%1).|Wrote offboarding blob to registry as part of offboarding flow. |Normal operating notification; no action required.  |
+   |1818|CSP: Set `Node&apos;s` Value started. NodeId: (%1), TokenName: (%2).   | An operation of Set is about to start.   |Normal operating notification; no action required.|
+   |1819|CSP: Failed to Set `Node&apos;s` Value. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Set has failed.   |Contact support. |
+   |1820|CSP: Set `Node&apos;s` Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Set has succeeded.   |Normal operating notification; no action required.  |
    |1821|CSP: Set Telemetry Reporting Frequency started. New value: (%1).   |  ?  | ? |
    |1822| CSP: Set Telemetry Reporting Frequency complete. Previous value: (%1), IsDefault: (%2), New value: (%3), Result: (%4).  |   ? | ? |
    |1823|  CSP: Get Telemetry Reporting Frequency complete. Value: (%1), Registry Value: (%2), IsDefault: (%3). |   ? | ? |
