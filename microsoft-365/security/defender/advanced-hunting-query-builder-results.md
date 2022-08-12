@@ -47,12 +47,11 @@ A few standard columns are included in the results for easy viewing.
 To view more columns:
 1. Select **Customize columns** in the upper right-hand portion of the results view.
  
- 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/results-view-2.png)
 
 2. From here, select the columns to include in the results view and deselect columns to hide. 
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/results-view-customize-columns.png)
+
+[ ![banner inviting user to take the tour](../../media/guided-hunting/results-view-customize-columns.png) ](../../media/guided-hunting/results-view-customize-columns-tb.png#lightbox)
 
 3. Select **Apply** to view results with tne added columns. Use the scroll bars if necessary.
 
