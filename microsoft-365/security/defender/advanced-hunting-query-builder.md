@@ -41,6 +41,7 @@ This brings you to the guided mode, where you can then construct your query by s
 
 ### Specify the data domain to hunt in
 
+By default, guided hunting includes a few basic filters to get you started fast. [default AND operators]![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
 
 You can control the scope of the hunt by selecting the **View in** control:
 
@@ -54,8 +55,22 @@ You can choose from:
 - Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with Activity log can find the same data here
 - Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with Threat Explorer can find the same data here
 
-By default, guided hunting includes a few basic filters to get you started fast.
-![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
+When you choose one data source, for instance, **Endpoints**, the query builder displays only the applicable filter groups. You can then choose a filter you are interested in narrowing down by selecting that filter group, for instance, **EventType**, and selecting the filter of your choice.
+
+![hunting icon](../../media/guided-hunting/query-builder-query-basic-filter.png)
+
+Once the query is ready, select the blue **Run query** button. If the button is grayed out, it means the query needs to be edited further.
+
+To view more filter groups and conditions, select the toggle **Toggle to see more filters and conditions**
+
+![hunting icon](../../media/guided-hunting/query-builder-view-in-endpoints.png)
+
+When the **All filters** toggle is active, you can now use the full range of filters and conditions.
+
+![hunting icon](../../media/guided-hunting/query-builder-all-filters.png)
+
+
+
 
 ### Create conditions
 
@@ -68,6 +83,14 @@ Type the section's titles to find the filter or use the search box at the top of
 You can also create AND, OR conditions. Select **AND** to include results that  
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators.png)
+
+## Try sample query walk-throughs
+
+Another way to get familiar with guided hunting is to load sample queries pre-created in guided mode. 
+
+In the **Getting started** section of the hunting page, we have provided three guided query examples that you can load. The query examples contain some of the most common filters and inputs you would typically need in your hunting. Loading any of the three sample queries opens a guided tour of how you would construct the entry using guided mode.
+
+![Screenshot showing different conditions you can use](../../media/guided-hunting/load-examples.png)
 
 ## Try some queries
 
@@ -102,12 +125,10 @@ Then, add another condition this time specifying the folder or **DeliveryLocatio
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-2.png)
 
-## Load sample queries
 
-Another way to get familiar with guided hunting is to load sample queries pre-created in guided mode. 
-
-In the **Getting started** section of the hunting page, we have provided three guided query examples that you can load. The query examples contain some of the most common filters and inputs you would typically need in your hunting. Loading any of the three sample queries opens a guided tour of how you would construct the entry using guided mode.
-
-![Screenshot showing different conditions you can use](../../media/guided-hunting/load-examples.png)
 
 ## See also
+
+- [Refine your query in guided mode](advanced-hunting-query-builder-details.md)
+- [Work with query results in guided mode](advanced-hunting-query-builder-results.md)
+ - [Understand the schema](advanced-hunting-schema-tables.md)
