@@ -36,7 +36,7 @@ The best way to change all your users from one plan to another is to [use the Up
 To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-buy-a-new-subscription) in this topic.
 
 > [!IMPORTANT]
-> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](move-users-different-subscriptions.md).
+> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](move-users-different-subscription.md).
 
 ## Step 2: Buy a new subscription
 

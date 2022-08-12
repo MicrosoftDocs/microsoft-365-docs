@@ -83,5 +83,5 @@ For more information, see [Device list CSV-file](../admin/misc/device-list.md). 
 ## Related content
 
 [About Autopilot Profile settings](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
-[Options for protecting your devices and app data](../admin/basic-mobility-and-security/choose-between-basic-mobility-and-security-and-intune.md) (article)\
+[Options for protecting your devices and app data](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md) (article)\
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
