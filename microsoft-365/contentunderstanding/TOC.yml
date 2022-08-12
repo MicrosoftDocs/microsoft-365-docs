@@ -16,6 +16,8 @@
       items:
             - name: Model types
               href: model-types-overview.md 
+            - name: Requirements and limitations 
+              href: requirements-and-limitations.md  
             - name: Local models 
               href: create-local-model.md 
             - name: Create a model
@@ -53,8 +55,6 @@
       items:
             - name: Compare custom models 
               href: difference-between-document-understanding-and-form-processing-model.md  
-            - name: Requirements and limitations 
-              href: requirements-and-limitations.md  
             - name: Classify and extract by text pattern
               items:
                 - name: Overview
