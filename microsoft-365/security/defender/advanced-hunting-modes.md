@@ -47,6 +47,7 @@ To take the tour, select **Try out guided hunting** when this banner appears:
 
 
 [ ![banner inviting user to take the tour](../../media/guided-hunting/1-guided-hunting-banner.png) ](../../media/guided-hunting/1-guided-hunting-banner.png#lightbox)
+Follow the blue teaching bubbles that appear throughout the page and select **Next** to move from one step to the next.
 
 You can take the tour again at any time by going to **Help resources** > **Learn more** and selecting **Take the tour**.
 
@@ -58,9 +59,9 @@ You can then start building your query to hunt for threats. The following articl
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Craft your first query** | Learn the basics of the query builder like specifying the data domain and adding conditions and filters to help you create a meaningful query. Learn further by running sample queries. | [Build hunting queries in guided mode](advanced-hunting-query-builder.md) |
-| **Learn the different query building basics** |  Get to know the different supported data types, how to use subgroups, an | [Refine your query in guided mode](advanced-hunting-query-builder-details.md) |
-| **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results in guided mode](advanced-hunting-query-results-guided.md)<br /> - [Take action on query results](advanced-hunting-take-action.md) <br /> - [Link query results to an incident](advanced-hunting-link-to-incident.md) |
+| **Craft your first query** | Learn the basics of the query builder like specifying the data domain and adding conditions and filters to help you create a meaningful query. Learn further by running sample queries. | [Build hunting queries using guided mode](advanced-hunting-query-builder.md) |
+| **Learn the different query building basics** |  Get to know the different supported data types and guided mode capabilities to help you fine-tune your query according to your needs. | [Refine your query in guided mode](advanced-hunting-query-builder-details.md) |
+| **Learn what you can do with query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results in guided mode](advanced-hunting-query-builder-results.md)<br /> - [Take action on query results](advanced-hunting-take-action.md) <br /> - [Link query results to an incident](advanced-hunting-link-to-incident.md) |
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically. | - [Custom detections overview](custom-detections-overview.md) <br />- [Custom detection rules](custom-detection-rules.md) |
 
 ## Get started with advanced hunting mode
@@ -76,3 +77,6 @@ We recommend going through these steps to quickly get started with advanced hunt
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically. | - [Custom detections overview](custom-detections-overview.md) <br />- [Custom detection rules](custom-detection-rules.md)|
 
 ## See also
+- [Understand the schema](advanced-hunting-schema-tables.md)
+- [Build hunting queries using guided mode](advanced-hunting-query-builder.md)
+- [Learn the query language](advanced-hunting-query-language.md)
