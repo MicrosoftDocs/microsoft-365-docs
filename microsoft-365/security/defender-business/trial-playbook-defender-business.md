@@ -23,7 +23,7 @@ ms.custom: trial-playbook
 
 **Welcome to the Defender for Business trial playbook!**
 
-This playbook is a simple guide to help you make the most of your 30-day free trial. Use the recommendations in this article from the Microsoft Defender team to learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and threat and vulnerability management.
+This playbook is a simple guide to help you make the most of your 30-day free trial. Use the recommendations in this article from the Microsoft Defender team to learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and Defender Vulnerability Management.
 
 ## What is Defender for Business?
 
@@ -106,7 +106,7 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
    | Device type | Onboarding methods |
    |:---|:---|
    | [Windows clients](mdb-onboard-devices.md) | Choose one of the following options to onboard Windows client devices to Defender for Business:<ul><li>Local script (for onboarding devices manually in the Microsoft 365 Defender portal)</li><li>Group Policy (if you're already using Group Policy and prefer this method)</li><li>Microsoft Intune (if you're already using Intune and prefer to continue using it)</li></ul> |
-   | [Mac](mdb-onboard-devices.md) | Choose one of the following options to onboard Mac:<ul><li>Local script for Mac (*recommended*)</li><li>Microsoft Intune for Mac </li></ul><p>We recommend you use a local script to onboard Mac. Although you can [set up enrollment for Mac devices in Intune](/mem/intune/enrollment/macos-enroll), the local script is the simplest method for onboarding Mac to Defender for Business. |
+   | [Mac](mdb-onboard-devices.md) | Choose one of the following options to onboard Mac:<ul><li>Local script for Mac (*recommended*)</li><li>Microsoft Intune for Mac </li></ul><br/>We recommend you use a local script to onboard Mac. Although you can [set up enrollment for Mac devices in Intune](/mem/intune/enrollment/macos-enroll), the local script is the simplest method for onboarding Mac to Defender for Business. |
    | Windows Server and Linux servers | *The ability to onboard an instance of Windows Server or Linux Server is currently in preview and requires an additional license*. See the following articles to learn more: <ul><li>[Defender for Business requirements](mdb-requirements.md)</li><li>[Onboard devices to Defender for Business](mdb-onboard-devices.md)</li></ul> |
    | [Mobile devices](mdb-onboard-devices.md) | Use Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:<ul><li>[Enroll Android devices](/mem/intune/enrollment/android-enroll)</li><li>[Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)</li></ul> |
 
@@ -125,14 +125,14 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
 
 In the next 30 days, we recommend you try out your new security capabilities, as described in the following sections:
 
-- [Use your Threat & Vulnerability Management dashboard](#use-the-threat--vulnerability-management-dashboard) 
+- [Use your Microsoft Defender Vulnerability Management dashboard](#use-the-defender-vulnerability-management-dashboard) 
 - [View and respond to detected threats](#view-and-respond-to-detected-threats)
 - [Review security policies](#review-security-policies)
 - [Prepare for ongoing security management](#prepare-for-ongoing-security-management)
 
-### Use the Threat & Vulnerability Management dashboard
+### Use the Defender Vulnerability Management dashboard
 
-Defender for Business includes a Threat & Vulnerability Management dashboard that's designed to save your security team time and effort. [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
+Defender for Business includes a Defender Vulnerability Management dashboard that's designed to save your security team time and effort. [Use your Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
 
 - View your exposure score, which is associated with devices in your organization.
 - View your top security recommendations, such as address impaired communications with devices, turn on firewall protection, or update Microsoft Defender Antivirus definitions.
