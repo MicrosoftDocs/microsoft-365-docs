@@ -112,6 +112,12 @@ Security intelligence update version: *coming soon*<br/>
 - Improved trust validation 
 - Fixed engine crash issue on legacy operating platforms 
 - Performance Analyzer v3 updates: Added top path support, scan skip information, and OnDemand scan support. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md). 
+- Defender performance improvements during file copy operations
+- Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
+- Added fix for Defender WINEVT channels across update/restarts. (See [Windows Event Log](/windows/win32/api/_wes/) for more details about WINEVT.)
+- Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
+- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](troubleshoot-microsoft-defender-antivirus.md) 
+- Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
 
 
 ### Known Issues
