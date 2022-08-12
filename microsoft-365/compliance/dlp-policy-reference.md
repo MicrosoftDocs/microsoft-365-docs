@@ -131,7 +131,7 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |Power BI|Yes | Yes| No|
 
 > [!NOTE]
-> DLP supports (in preview) using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, Sharepoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
+> DLP supports (in preview) using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, SharePoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -411,7 +411,7 @@ The actions that are available in a rule are dependent on the locations that hav
 #### Devices actions
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (preview) Audit or restricted activities when users accesses sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
+- (preview) Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
 - Audit or restrict activities on Windows devices
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.

@@ -121,7 +121,7 @@
              href: manage/remove-licenses-from-users.md
            - name: Guest users
              href: add-users/about-guest-users.md
-           - name: Add guest users to a Microsoft 365 group
+           - name: Manage guest access in Microsoft 365 group
              href: create-groups/manage-guest-access-in-groups.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
@@ -161,6 +161,8 @@
              href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
+           - name: Microsoft 365 group mailbox size management
+             href: create-groups/group-mailbox-size-management.md 
            - name: Add or remove group members
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
@@ -318,8 +320,6 @@
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
-         - name: Show or hide new features
-           href: manage/show-hide-new-features.md
          - name: Power BI usage analytics
            items: 
            - name: About usage analytics
@@ -375,7 +375,7 @@
     - name: Manage devices and app data
       items:
         - name: Device and app data protection methods 
-          href: devices/choose-device-security.md
+          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security
