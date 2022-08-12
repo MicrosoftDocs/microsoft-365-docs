@@ -145,7 +145,7 @@ With retention labels, you can:
 
 - **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied.
 
-- **Apply retention labels to content automatically** if it matches specific conditions, that include cloud attachments that are shared in email or Teams, or when the content contains:
+- **Apply retention labels to content automatically** if it matches specific conditions, that includes cloud attachments that are shared in email or Teams, or when the content contains:
   - Specific types of sensitive information.
   - Specific keywords that match a query you create.
   - Pattern matches for a trainable classifier.
