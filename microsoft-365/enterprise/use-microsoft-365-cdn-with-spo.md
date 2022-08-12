@@ -158,7 +158,6 @@ Unless you specify otherwise, Office 365 sets up some default origins for you wh
 
 Default private CDN origins:
 
-+ \*/userphoto.aspx
 + \*/siteassets
 
 Default public CDN origins:
