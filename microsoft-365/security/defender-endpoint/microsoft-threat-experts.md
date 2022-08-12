@@ -2,7 +2,7 @@
 title: Microsoft Threat Experts
 ms.reviewer:
 description: Microsoft Threat Experts provides an extra layer of expertise to Microsoft Defender for Endpoint.
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
+keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification, Ask Defender Experts
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -70,10 +70,18 @@ Customers can engage our security experts directly from within Microsoft 365 Def
 
 The option to **Ask Defender Experts** is available in several places in the portal so you can engage with experts in the context of your investigation:
 
-- ***Help and support menu***
 - ***Device page actions menu***
+
+![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft 365 Defender portal.](../../media/mte/device-page-actions-menu.png)
+
 - ***Alerts page actions menu***
+
+
+![Screenshot of the Ask Defender Experts menu option in the Alerts page action menu in the Microsoft 365 Defender portal.](../../media/mte/alerts-page-actions-menu.png)
+
 - ***File page actions menu***
+
+![Screenshot of the Ask Defender Experts menu option in the Incidents page action menu in the Microsoft 365 Defender portal.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
