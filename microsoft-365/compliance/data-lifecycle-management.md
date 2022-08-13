@@ -21,7 +21,9 @@ description: Learn how Microsoft Purview Data Lifecycle Management helps you kee
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) provides you with tools and capabilities to retain the content that you need to keep, and delete the content that you don't. Retaining and deleting content is often needed for compliance and regulatory requirement, but deleting content that no longer has business value also helps you manage risk and liability. For example, it reduces your attack surface.
+Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) provides you with tools and capabilities to retain the content that you need to keep, and delete the content that you don't. 
+
+Retaining and deleting content is often needed for compliance and regulatory requirement, but deleting content that no longer has business value also helps you manage risk and liability. For example, it reduces your attack surface.
 
 ## Microsoft 365 features
 
@@ -46,9 +48,9 @@ Other data lifecycle management capabilities to help you keep what you need and 
 
 ## Exchange (legacy) features
 
-Originally configurable from the Classic Exchange admin center and not available in the [new Exchange admin center](/exchange/features-in-new-eac), are retention policies and retention tags from messaging records management (MRM), and journaling rules.
+**Retention policies and retention tags** from messaging records management (MRM), and **journaling rules** are older compliance features from Exchange that were originally configurable from the Classic Exchange admin center. They haven't been brought forward to the [new Exchange admin center](/exchange/features-in-new-eac).
 
-If you're not already using these features, or have a specific business requirement to use them instead of the Microsoft 365 features for data lifecycle management, we don't recommend you use these older features from Exchange. Instead, use the newer Microsoft 365 features that retain data in place and support policies across other Microsoft 365 services.
+If you're not already using these features, or have a specific business requirement to use them instead of the Microsoft 365 features for data lifecycle management, we don't recommend you use these older compliance features. Instead, use the newer Microsoft 365 features that retain data in place and support policies across other Microsoft 365 services.
 
 For more information, see [Use retention policies and retention labels instead of older features](retention.md#use-retention-policies-and-retention-labels-instead-of-older-features).
 
