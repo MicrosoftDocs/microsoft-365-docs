@@ -27,10 +27,14 @@ Follow these steps to create a model in SharePoint Syntex.
 
 1. From the **Models** page, select **Create a model**.
 
+    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/create-a-model-from-models-page.png) 
+
 2. On the **View options for classification and extraction** page, there are two sections:
 
     - [**Build a custom model**](#build-a-custom-model)
     - [**Use a trained model**](#use-a-trained-model)
+
+    ![Screenshot of the View options for classification and extraction page showing the custom models and trained models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
 
 ## Build a custom model
 
