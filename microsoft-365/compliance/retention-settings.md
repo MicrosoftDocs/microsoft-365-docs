@@ -298,6 +298,10 @@ When you configure a policy for retention that uses adaptive policy scopes and s
 
 To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. For retention policies, this location includes the group mailbox and SharePoint teams site. For retention labels, this location includes the SharePoint teams site only.
 
+For detailed information about which items are included and excluded for Microsoft 365 Groups:
+- For group mailboxes, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
+- For SharePoint teams sites, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
+
 Mailboxes that you target with this policy location require at least 10 MB of data before retention settings will apply to them.
 
 > [!NOTE]
