@@ -20,8 +20,6 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Get started with insider risk management settings
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
 - [Privacy](#privacy)
@@ -82,7 +80,7 @@ To define the insider risk policy indicators that are enabled in all insider ris
 ### Enable device indicators and onboard Windows devices
 <a name="OnboardDevices"> </a>
 
-To enable the monitoring of risk activities on Windows devices and include policy indicators for these activities, your Windows devices must meet the following requirements and you must complete the following onboarding steps.
+To enable the detection of risk activities on Windows devices and include policy indicators for these activities, your Windows devices must meet the following requirements and you must complete the following onboarding steps.
 
 #### Step 1: Prepare your endpoints
 
@@ -345,7 +343,7 @@ Identifying access to priority physical assets and correlating access activity t
 
 With priority physical assets enabled and the [Physical badging data connector](import-physical-badging-data.md) configured, insider risk management integrates signals from your physical control and access systems with other user risk activities. By examining patterns of behavior across physical access systems and correlating these activities with other insider risk events, insider risk management can help compliance investigators and analysts make more informed response decisions for alerts. Access to priority physical assets are scored and identified in insights differently from access to non-priority assets.
 
-For example, your organization has a badging system for users that monitors and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled.
+For example, your organization has a badging system for users that governs and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled.
 
 You choose to enable the Physical badging data connector in Microsoft 365 to import access information from your physical badging system and specify priority physical assets in insider risk management. By importing information from your badging system and correlating physical access information with other risk activities identified in insider risk management, you notice that one of the users on the project is accessing the project offices after normal working hours and is also exporting large amounts of data to a personal cloud storage service from their normal work area. This physical access activity associated with the online activity may point to possible data theft and compliance investigators and analysts can take appropriate actions as dictated by the circumstances for this user.
 

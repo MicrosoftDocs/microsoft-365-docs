@@ -9,20 +9,12 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management
-- Adm_TOC
+ms.date: 07/19/2022
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MSB365
-- OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: "Learn how to validate the Microsoft 365 Business Premium app protection settings on your Android or iOS devices. Making security settings for your applications is critical in order to protect the files on your mobile apps and devices from any kind of security threats."
 ---
 

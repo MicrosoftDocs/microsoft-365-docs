@@ -9,30 +9,26 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: "Learn how to create, edit, or delete an app management policy, and protect work files on Android or iOS devices."
 ---
 
 # Set app protection settings for Android or iOS devices
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article applies to Microsoft 365 Business Premium.
 
 ## Watch: Secure Office apps on iOS
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197828).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 

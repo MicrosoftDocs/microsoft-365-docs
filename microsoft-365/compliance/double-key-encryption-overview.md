@@ -18,8 +18,6 @@ ms.collection:
 
 # Double Key Encryption frequently asked questions
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Have a question about how Double Key Encryption works? Check for an answer here.
 
 ## What is Double Key Encryption (DKE)?

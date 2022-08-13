@@ -19,6 +19,7 @@ ms.collection:
   - m365solution-identitydevice
   - m365solution-overview
   - m365solution-zero-trust
+  - zerotrust-solution
 ms.technology: mdo
 ---
 # Zero Trust identity and device access configurations

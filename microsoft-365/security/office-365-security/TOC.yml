@@ -322,7 +322,7 @@
            href: mfi-domain-mail-flow-status-insight.md
      - name: Report messages and files to Microsoft
        items:
-         - name: Report messages and files to Microsoft
+         - name: How do I report a suspicious email or file to Microsoft
            href: report-junk-email-messages-to-microsoft.md
          - name: Admin submissions
            href: admin-submission.md

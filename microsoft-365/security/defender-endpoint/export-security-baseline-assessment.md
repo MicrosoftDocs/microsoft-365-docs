@@ -27,7 +27,7 @@ ms.custom: api
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender Vulnerability Management? [Sign up for a free trial.- Update](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 
@@ -92,7 +92,7 @@ Property (ID)|Data type|Description
 |isCompliant|Boolean|Indicates whether the device is compliant with configuration.
 |id|String|Unique identifier for the record, which is a combination of DeviceId, ProfileId, and ConfigurationId.
 |osVersion|String|Specific version of the operating system running on the device.
-|osPlatform|String|Operating system platform running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [TVM supported operating systems and platforms](tvm-supported-os.md) for details.
+|osPlatform|String|Operating system platform running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [MDVM supported operating systems and platforms](tvm-supported-os.md) for details.
 |rbacGroupId|Int|The role-based access control (RBAC) group Id. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 |rbacGroupName|String|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 |DataCollectionTimeOffset|DateTime|The time the data was collected from the device. This field may not appear if no data was collected.

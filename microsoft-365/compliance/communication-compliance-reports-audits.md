@@ -23,8 +23,6 @@ search.appverid:
 
 # Use communication compliance reports and audits
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 ## Reports
 
 The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets isn't exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. 
@@ -138,7 +136,7 @@ Message details reports contain the following information for each message item 
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 > [!IMPORTANT]
-> Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
+> Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
 
 To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 
@@ -158,7 +156,7 @@ To view communication compliance review activities for a policy, select the **Ex
 | **Operations** | The review operations performed on the policy. |
 | **AuditData** | This field is the main data source for all policy review activities. All review activities are recorded and separated by comma delimiters. |
 
-You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. To learn more about audit log retention policies, see [Manage audit log retention policies](audit-log-retention-policies.md).
+You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. To learn more about audit log retention policies, see [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies).
 
 For example, the following example returns the activities for all the supervisory review activities (policies and rules):
 

@@ -24,8 +24,6 @@ description: "Prepare for and deploy the Microsoft Purview Extension."
 
 # Get started with Microsoft Purview Extension
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use these procedures to roll out the Microsoft Purview Extension.
 
 ## Before you begin

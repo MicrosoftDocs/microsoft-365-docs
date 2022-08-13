@@ -9,23 +9,15 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.collection: 
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
-- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: "Learn how to use Windows Autopilot to set up new Windows 10 devices for your business so they're ready for employee use."
 ---
 
@@ -90,6 +82,6 @@ For more information, see [Device list CSV-file](../admin/misc/device-list.md). 
 
 ## Related content
 
-- [About Autopilot Profile settings](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
-- [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
-- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[About Autopilot Profile settings](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
+[Options for protecting your devices and app data](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md) (article)\
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

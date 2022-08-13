@@ -20,8 +20,6 @@ description: "Use the Microsoft Purview eDiscovery (Premium) dashboard for revie
 
 # eDiscovery (Premium) dashboard for review sets
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 For some cases in Microsoft Purview eDiscovery (Premium), you may have a large volume of documents and email messages that need to be reviewed. Before you start the review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy. To do this, you can use the eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus.
 
 ## Step 1: Create a widget on the review set dashboard
@@ -34,7 +32,7 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
   
 4. In the **Individual results** dropdown list, click **Search profile view**. 
 
-   ![DashbordPivot.](../media/dashboardpivot.png)
+   ![DashboardPivot.](../media/dashboardpivot.png)
 
    The **Search profile view** page is displayed; the first time you display this page, three default widgets are displayed.
 
@@ -64,7 +62,7 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
 
 1. Click **...** in the widget title bar, and then click **Apply condition**.
 
-   ![Dashboard.](../media/searchprofilehome.png)
+   ![Dashboard home.](../media/searchprofilehome.png)
 
 2. On the flyout page, click an element on the widget key or widget chart to create a filter.
 

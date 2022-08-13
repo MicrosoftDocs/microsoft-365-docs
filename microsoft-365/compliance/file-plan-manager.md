@@ -23,8 +23,6 @@ description: File plan provides advanced management capabilities for retention l
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Although you can create and manage retention labels from **Data lifecycle management** in the Microsoft Purview compliance portal, file plan from **Records management** has additional management capabilities:
 
 - You can bulk-create retention labels by importing the relevant information from a spreadsheet.

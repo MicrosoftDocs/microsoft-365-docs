@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 [Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
 
 - patterns
@@ -94,7 +92,7 @@ Proximity - Number of characters between primary and supporting element
 
 ### Primary and secondary support elements
 
-When you create an EDM SIT, you define a *primary element* field in the rule package. Primary fields are the elements for which all your content will be searched, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the *secondary* or supporting elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT.
+When you create an EDM SIT, you define a *primary element* field in the rule package. Primary fields are the elements for which all your content will be searched, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the *secondary* or supporting elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sit-defn-us-social-security-number.md) SIT.
 
 ## How matching works
 

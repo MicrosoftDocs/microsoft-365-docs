@@ -1,5 +1,5 @@
 ---
-title: Differences between document understanding and form processing models
+title: Differences between custom models in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ ms.localizationpriority:  medium
 description: Learn about key differences between a document understanding model and a form processing model.
 ---
 
-# Differences between document understanding and form processing models 
+# Differences between custom models in Microsoft SharePoint Syntex 
 
 Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and then to extract relevant information from each file. For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 
@@ -73,7 +73,7 @@ Use the following table to understand when to use form processing and when to us
 | Model creation | Model created in AI builder with seamless access from SharePoint document library.| Model created in SharePoint in a new site, the content center. |
 | Classification type| Settable classifier is used to give clues to the system on what data to extract.| Trainable classifier with optional extractors using machine teaching to assign document location on what data to extract.|
 | Locations | Trained for a single document library.| Can be applied to multiple libraries.|
-| Supported file types| Train on PDF, JPG, PNG format, total 50 MB and 500 pages.| Train on 5-10 PDF, Office, or email files, including negative examples.<br>Office files are truncated at 64K characters. OCR-scanned files are limited to 20 pages. Document understanding models support the following file types doc, docx, eml, heic, heif, htm, html, jpeg, jpg, markdown, md, msg, pdf, png, ppt, pptx, rtf, tif, tiff, txt, xls and xlsx.|
+| Supported file types| Train on PDF, JPG, PNG format, total 50 MB and 500 pages.| Train on 5-10 PDF, Office, or email files, including negative examples.<br>Office files are truncated at 64K characters. OCR-scanned files are limited to 20 pages. See [supported file types](document-understanding-overview.md#supported-file-types).|
 | Integrate with Managed Metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
 | Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set sensitivity labels is coming. | Set published retention labels.<br>Set published sensitivity labels. |
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|

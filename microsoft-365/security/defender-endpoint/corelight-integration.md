@@ -35,6 +35,13 @@ Microsoft has partnered with [Corelight](https://corelight.com/integrations/iot-
 
 With this data source enabled, all events from Corelight network appliances are sent to Microsoft 365 Defender. You can view these activities in the unmanaged devices timeline, available in the Microsoft Defender for Endpoint device inventory. For more information, see [Device discovery](device-discovery.md).
 
+## Prerequisites
+
+1. To setup the Corelight data integration, the user must have the following roles:
+   - Tenant Global Administrator in Azure Active Directory
+   - Security Administrator for the Azure subscription that will be used for the Microsoft Defender for IoT integration
+2. An onboarded Defender for IoT plan. For more information, see [Onboard Microsoft Defender for IoT with Microsoft Defender for Endpoint](enable-microsoft-defender-for-iot-integration.md).
+
 ## Enabling the Corelight integration
 
 To enable the Corelight integration, you'll need to take the following steps:
@@ -47,7 +54,7 @@ To enable the Corelight integration, you'll need to take the following steps:
 
 1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Data sources**.
 
-   :::image type="content" source="images/enable-corelight.png" alt-text="The data sources page in the Microsoft 365 Defender portal" lightbox="images/enable-corelight.png":::
+   :::image type="content" source="../../media/defender-endpoint/enable-corelight.png" alt-text="The data sources page in the Microsoft 365 Defender portal" lightbox="../../media/defender-endpoint/enable-corelight.png":::
 
 2. Select **Send Corelight data to M365D** and select **Save**.
 

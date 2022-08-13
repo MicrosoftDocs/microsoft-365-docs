@@ -85,6 +85,14 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
 
+
+## Other resources
+
+| Title | Description | Watch |
+|---|---|---|
+|Joining tables in KQL | Learn the power of joining tables in creating meaningful results. | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
+| Optimizing tables in KQL | Learn how to avoid timeouts when running complex queries by optimizing your queries. | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
+
 ## Related topics
 
 - [Advanced hunting overview](advanced-hunting-overview.md)

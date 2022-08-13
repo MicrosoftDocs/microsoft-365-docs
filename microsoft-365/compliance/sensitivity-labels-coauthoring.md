@@ -19,8 +19,6 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps so that when documents are labeled and encrypted by [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
 
 Without this setting enabled for your tenant, users must check out an encrypted document stored in SharePoint or OneDrive when they use Office desktop apps. As a result, they can't collaborate in real time. Or, they must use Office on the web when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -71,15 +69,16 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel (Preview)
+    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
     - **macOS**: Minimum version 16.51
-    - **iOS**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
-    - **Android**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
+    - **iOS**: In preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
+    - **Android**: In preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
     - **Azure Information Protection unified labeling client and scanner:**
         - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+        - For Office apps, requires minimum versions listed for Microsoft 365 Apps for enterprise
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008

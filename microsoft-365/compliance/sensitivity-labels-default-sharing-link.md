@@ -23,8 +23,6 @@ description: "Use sensitivity labels to configure the default sharing link type 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 As an additional configuration to the settings you see in the Microsoft Purview compliance portal for [sensitivity labels](sensitivity-labels.md), you can use these labels to configure settings for the default sharing link type for a SharePoint site or OneDrive account, and for individual documents. These settings are automatically selected, but not highly visible to users when they select the **Share** button in their Office apps. As an example:
 
 ![Example default sharing link dialog box.](../media/default-sharing-link-example.png)
@@ -89,11 +87,11 @@ PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8e
 
 For more help to specify PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
-To configure the settings for the default sharing link type for a site, the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) must include **Groups & sites** when you create the sensitivity label in the Microsoft Purview compliance portal. After it's created, you see this displayed as **Site, UnifiedGroup** in the **Scope** column on the **Labels** page, and the PowerShell *ContentType* setting also displays this same value. For documents, the scope must include **Files & emails**, which displays as **File, Email**. Then:
+To configure the settings for the default sharing link type for a site, the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) must include **Groups & sites** when you create the sensitivity label in the Microsoft Purview compliance portal. After it's created, you see this displayed as **Site, UnifiedGroup** in the **Scope** column on the **Labels** page, and the PowerShell *ContentType* setting also displays this same value. For documents, the scope must include **Items**, which displays as **File, Email**. Then:
 
 - When the scope includes **Groups & sites**, you can apply the label to a site, which sets the default sharing link type for that site. For information how to apply a sensitivity label to a site, see [How to apply sensitivity labels to containers](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
-- When the scope of the sensitivity label includes **Files & emails**, you can apply the label to documents, which sets the default sharing link type for that document. The label can be applied [manually](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) or [automatically](apply-sensitivity-label-automatically.md).
+- When the scope of the sensitivity label includes **Items**, you can apply the label to documents, which sets the default sharing link type for that document. The label can be applied [manually](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) or [automatically](apply-sensitivity-label-automatically.md).
 
 > [!TIP]
 > You can also specify that the label is the default sensitivity label to be applied for new sites or new documents, as a [label policy setting](sensitivity-labels.md#what-label-policies-can-do).

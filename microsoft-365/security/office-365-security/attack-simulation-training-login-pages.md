@@ -25,7 +25,7 @@ To see the available login pages, open the Microsoft 365 Defender portal at <htt
 
 **Login pages** has two tabs:
 
-- **Global login pages**: Contains the built-in, non-modifiable login pages. There are four built-in login pages localized into 12 languages:
+- **Global login pages**: Contains the built-in, non-modifiable login pages. There are four built-in login pages localized into 12+ languages:
   - **GitHub login page**
   - **LinkedIn login page**
   - **Microsoft login page**
@@ -52,7 +52,7 @@ When you select a login page from the list, a details flyout appears with the fo
 
 - ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** is available only in custom login pages on the **Tenant login pages** tab.
 - ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** to make this login page the default selection in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md). If the login page is already the default, ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** isn't available.
-- **Preview** tab: View the login page as users will see it. **Page 1** and **Page 2** links are available at the bottom of the page for custom two-page login pages.
+- **Preview** tab: View the login page as users will see it. **Page 1** and **Page 2** links are available at the bottom of the page for two-page login pages.
 - **Details** tab: View details about the login page:
   - **Description**
   - **Status**: **Ready** or **Draft**.
@@ -69,10 +69,7 @@ You can create custom login pages in the following locations:
    Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard.
 
    > [!NOTE]
-   > The ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during payload and payload automation creation. For more information, see the following topics:
-   >
-   > - [Create custom payloads for Attack simulation training in Defender for Office 365](attack-simulation-training-payloads.md#create-payloads)
-   > - [Create payload automations for Attack simulation training](attack-simulation-training-payload-automations.md#create-payload-automations)
+   > ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation or simulation automation. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training.md#select-a-payload-and-login-page) and [Create a simulation automation: Select a payload and login page](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
    >
    > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the login page later. You can pick up where you left off by selecting the login page on the **Tenant login pages** tab in **Login pages**, and then clicking ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The partially-completed login page will have the **Status** value **Draft**.
 
@@ -84,7 +81,7 @@ You can create custom login pages in the following locations:
 
 3. On the **Configure login page** page, configure the following settings:
 
-   - **Select a language**
+   - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
    - **Make this the default login page**: If you select this option, the login page will be the default selection in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
