@@ -40,6 +40,8 @@ Follow these steps to create a model in SharePoint Syntex.
 
 1. In the **Build a custom model** section, view the types of custom models you can create. 
 
+    ![Screenshot of the Build a custom model section on the View options for classification and extraction page.](../media/content-understanding/build-a-custom-model-section.png) 
+
     - [**Classify and extract by text pattern**](#classify-and-extract-by-text-pattern) – Best for Office files and automatic classification of files
 
     - [**Extract by layout**](#extract-by-layout) – Best for non-English languages and files with tables
@@ -129,6 +131,8 @@ Follow these steps to create a model in SharePoint Syntex.
 ## Use a trained model
 
 1. In the **Use a trained model** section, view the types of trained models you can use. select the type of trained model you want to learn more about or to start using. 
+
+    ![Screenshot of the Use a trained model section on the View options for classification and extraction page.](../media/content-understanding/use-a-trained-model-section.png) 
 
     - [**Receipts**](#receipts) – Save time processing receipts for expenses. Automatically extract key info specific to expenses.
 
