@@ -62,31 +62,31 @@ The image and the table below lists the changes in navigation between Microsoft 
 | Create Cloud Discovery snapshot report | On the Cloud Discovery page, under Actions |
 | **Investigate** |  |
 | Activity log | Cloud apps -> Activity log |
-| Files | Files |
+| Files | Cloud apps -> Files |
 | Users and accounts | Assets -> Identities |
 | Security configuration | remaining in Defender for Cloud Apps portal |
 | Identity security posture | [Microsoft Defender for Identity's identity security posture assessments](/defender-for-identity/isp-overview) |
 | OAuth apps | Cloud apps -> OAuth apps |
 | Connected apps | remaining in Defender for Cloud Apps portal |
 | **Control** |  |
-| Policies | Policy management |
+| Policies | Cloud apps -> Policy management |
 | Templates | Policy templates |
 | **Settings** |  |
-| Settings | Settings -> Cloud  Apps |
-| System  settings | Settings -> Cloud  Apps |
-| Settings/Governance log | Governance log |
-| Security  extensions | Settings -> Cloud  Apps |
-| Playbooks | Settings -> Cloud  Apps |
-| SIEM  agents | Settings -> Cloud  Apps |
-| External  DLP | Settings -> Cloud  Apps |
-| API  tokens | Settings -> Cloud  Apps |
-| Manage  admin access | Permissions-> Cloud  Apps-> Roles |
-| Exported  reports | Reports -> Cloud  Apps -> Exported reports |
-| Scoped  deployment and privacy | Permissions -> Cloud  Apps -> Activity Privacy permissions |
+| Settings | Settings -> Cloud apps |
+| System  settings | Settings -> Cloud apps |
+| Settings/Governance log | Cloud apps -> Governance log |
+| Security  extensions | Settings -> Cloud apps |
+| Playbooks | Settings -> Cloud apps |
+| SIEM  agents | Settings -> Cloud apps |
+| External  DLP | Settings -> Cloud apps |
+| API  tokens | Settings -> Cloud apps |
+| Manage  admin access | Permissions-> Cloud apps-> Roles |
+| Exported  reports | Reports -> Cloud apps -> Exported reports |
+| Scoped  deployment and privacy | Permissions -> Cloud apps -> Activity Privacy permissions |
 | Connected Apps/App connectors | Settings -> Cloud Apps -> Connected Apps |
-| Conditional Access App Control | Settings -> Cloud  Apps -> Conditional Access App Control apps |
-| IP  address ranges              | Settings -> Cloud  Apps                                      |
-| User  groups                    | Settings -> Cloud  Apps                                      |
+| Conditional Access App Control | Settings -> Cloud apps -> Conditional Access App Control apps |
+| IP  address ranges              | Settings -> Cloud apps                                      |
+| User  groups                    | Settings -> Cloud apps                                      |
 
 > [!NOTE]
 > The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
