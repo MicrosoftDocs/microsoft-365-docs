@@ -67,10 +67,10 @@ The image and the table below lists the changes in navigation between Microsoft 
 | Security configuration | remaining in Defender for Cloud Apps portal |
 | Identity security posture | [Microsoft Defender for Identity's identity security posture assessments](/defender-for-identity/isp-overview) |
 | OAuth apps | Cloud apps -> OAuth apps |
-| Connected apps | remaining in Defender for Cloud Apps portal |
+| Connected apps | Settings -> Cloud apps -> Connected apps |
 | **Control** |  |
 | Policies | Cloud apps -> Policy management |
-| Templates | Policy templates |
+| Templates | Cloud apps -> Policy templates |
 | **Settings** |  |
 | Settings | Settings -> Cloud apps |
 | System  settings | Settings -> Cloud apps |
