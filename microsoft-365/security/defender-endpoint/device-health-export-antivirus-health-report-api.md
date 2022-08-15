@@ -225,8 +225,8 @@ One of the following permissions is required to call this API.
 
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
-| Application | Machine.ReadWrite.All | ' Read and write all machine information’  |
-| Delegated (work or school account) | Machine.Read | ' Read machine information ' |
+| Application | Vulnerability.Read.All | 'Read "threat and vulnerability management" vulnerability information’  |
+| Delegated (work or school account) | Vulnerability.Read. | 'Read "threat and vulnerability management" vulnerability information’ |
 
 To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details](apis-intro.md).
 
