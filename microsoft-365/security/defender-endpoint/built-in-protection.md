@@ -31,7 +31,7 @@ After built-in protection has arrived, whenever devices are onboarded to Defende
 
 ## Can I change built-in protection settings?
 
-Built-in protection is default settings only. You can change your settings to suit your business needs. Although we don't recommend turning off built-in protection, you can do that. You can also exclude certain devices from built-in protection settings.
+Built-in protection is a set of default settings; however, you are not required to keep these default settings in place. You can always change your settings to suit your business needs, including turning off built-in protection (although we don't recommend it). You can also exclude certain devices from receiving built-in protection settings.
 
 ## See also
 
