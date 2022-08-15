@@ -44,7 +44,7 @@
           href: device-onboarding-script.md
         - name: Non-persistent virtual desktop infrastructure (VDI)
           href: device-onboarding-vdi.md
-    - name: macOS devices
+    - name: Onboard macOS devices
       items:
         - name: Overview 
           href: device-onboarding-macos-overview.md
