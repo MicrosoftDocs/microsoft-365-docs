@@ -38,7 +38,7 @@
           href: device-onboarding-mdm.md
         - name: Configuration Manager
           href: device-onboarding-sccm.md
-        - name: Onboard Windows 10 and Windows 11 devices via Group Policy
+        - name: Group Policy
           href: device-onboarding-gp.md
         - name: Local script
           href: device-onboarding-script.md
