@@ -200,7 +200,6 @@ Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
 Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|string|The time that the export was generated.|2021-05-20T08:00:00Z
-|
 
 ### 2.6 Examples
 
@@ -227,6 +226,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/BrowserExtensionsExpor
 ## See also
 
 - [Get browser extensions permission info](get-browser-extensions-permission-info.md)
+- [Browser extensions assessment](tvm-browser-extensions.md)
 
 ## Other related
 
