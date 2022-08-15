@@ -33,6 +33,37 @@ The more improvement actions you take, the higher your Secure Score will be. For
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
 
+## August 2022
+
+New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as Secure Score improvement actions:
+
+- **Information protection – Labeling**
+  - Extend M365 sensitivity labeling to assets in Azure Purview data map
+  - Ensure Auto-labeling data classification policies are setup and used
+  - Publish M365 sensitivity label data classification policies
+  - Create Data Loss Prevention (DLP) policies
+
+- **Anti-spam - Inbound policy**
+  - Set the email bulk complaint level (BCL) threshold to be 6 or lower
+  - Set action to take on spam detection
+  - Set action to take on high confidence spam detection
+  - Set action to take on phishing detection
+  - Set action to take on high confidence phishing detection
+  - Set action to take on bulk spam detection
+  - Retain spam in quarantine for 30 days
+  - Ensure spam safety tips are enabled
+  - Ensure that no sender domains are allowed for anti-spam policies (will replace “Ensure that there are no sender domains allowed for Anti-spam policies” to extend functionality also for specific senders)
+
+- **Anti-spam - Outbound policy**
+  - Set maximum number of external recipients that a user can email per hour
+  - Set maximum number of internal recipients that a user can send to within an hour
+  - Set a daily message limit
+  - Block users who reached the message limit
+  - Set Automatic email forwarding rules to be system controlled
+
+- **Anti-spam - Connection filter**
+  - Don't add allowed IP addresses in the connection filter policy
+
 ## June 2022
 
 - New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as Secure Score improvement actions:
