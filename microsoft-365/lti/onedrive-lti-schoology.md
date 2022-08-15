@@ -40,7 +40,7 @@ The person who performs this integration should be an administrator of Schoology
 ## Register the OneDrive LTI app in Schoology
 
 1. Sign into your Schoology instance as an administrator with access to install and configure apps.
-1. Access the **Microsoft OneDrive Assignments** app in the [**App Center**](https://app.schoology.com/apps) by opening this direct link [Microsoft OneDrive Assignments on Schoology](https://app.schoology.com/apps/profile/1078786112).
+1. Access the **Microsoft OneDrive** app in the [**App Center**](https://app.schoology.com/apps) by opening this direct link [Microsoft OneDrive on Schoology](https://app.schoology.com/apps/profile/5910037138).
 1. Select the **Install LTI 1.3 App** button to begin the installation process.
 1. Select the **I agree** button.
 1. You'll be prompted to share required information with the app and to confirm access to *LTI Advantage services*, like **Deep Linking**, **Names and Roles**, and **Assignments and Grading**. Select the **Continue** button.
