@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/psd2.md",
+      "redirect_url": "https://support.microsoft.com/account-billing/payment-services-directive-2-and-strong-customer-authentication-3527fa95-9c6a-5f6f-d8e6-f27f33aba50e",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/misc/power-bi-in-your-organization.md",
       "redirect_url": "https://docs.microsoft.com/power-bi/enterprise/service-admin-org-subscription",
       "redirect_document_id": false
