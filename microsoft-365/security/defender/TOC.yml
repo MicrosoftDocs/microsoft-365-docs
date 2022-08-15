@@ -224,7 +224,7 @@
                    href: advanced-hunting-query-builder.md
                  - name: Refine your query in guided mode
                    href: advanced-hunting-query-builder-details.md
-                 - name: Working with query results in guided mode
+                 - name: Work with query results in guided mode
                    href: advanced-hunting-query-builder-results.md                   
              - name: Create queries using advanced mode
                items:

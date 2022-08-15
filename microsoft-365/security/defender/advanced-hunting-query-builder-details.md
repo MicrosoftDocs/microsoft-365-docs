@@ -35,25 +35,25 @@ ms.technology: m365d
 
 Advanced hunting in guided mode supports several data types that you can use to fine-tune your query.
 
-- Numbers
+- Numbers<br>
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/data-numbers.png)
 
-- Strings
+- Strings<br>
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/data-strings.png)
 
-   In the free text box, type the value and press **Enter** to add it. Note that the delimiter between values is **Enter**.
+   In the free text box, type the value and press **Enter** to add it. Note that the delimiter between values is **Enter**.<br>
 
    ![Screenshot showing different conditions you can use](../../media/guided-hunting/data-strings-2.png)
 
-- Boolean
+- Boolean<br>
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/boolean.png)
 
 
-- Datetime
+- Datetime<br>
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/data-datetime.png)
 
 
-- Closed list - You don’t need to remember the exact value you are looking for. You can easily choose from a suggested closed list that supports multi-selection.
+- Closed list - You don’t need to remember the exact value you are looking for. You can easily choose from a suggested closed list that supports multi-selection.<br>
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/data-closed.png)
 
 
@@ -104,3 +104,5 @@ If you change the view to **Emails & collaboration**, the query is narrowed down
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/switch-to-advanced-3.png)
 
 ## See also
+ - [Advanced hunting quotas and usage parameters](advanced-hunting-limits.md)
+ - [Extend advanced hunting coverage with the right settings](advanced-hunting-extend-data.md)
