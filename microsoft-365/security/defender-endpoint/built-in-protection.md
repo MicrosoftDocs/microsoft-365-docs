@@ -35,3 +35,10 @@ Built-in protection are default settings only. You can change your settings to s
 
 
 
+## See also
+
+[Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security)
+
+[Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure)
+
+[Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
