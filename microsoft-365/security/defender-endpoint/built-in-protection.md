@@ -29,4 +29,9 @@ When built-in protection becomes available, you'll be notified that your tenant 
 
 After built-in protection has arrived, whenever devices are onboarded to Defender for Endpoint, built-in protection settings will be applied to devices running Windows.
 
-## Can I exclude devices from built-in protection?
+## Can I change built-in protection settings?
+
+Built-in protection are default settings only. You can change your settings to suit your business needs. Although we do not recommend turning built-in protection off, you can do that. You can also exclude certain devices from built-in protection settings.
+
+
+
