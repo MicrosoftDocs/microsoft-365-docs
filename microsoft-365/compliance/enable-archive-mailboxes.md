@@ -43,7 +43,7 @@ If you don't see the **Archive** page in the Microsoft Purview compliance portal
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in.
 
-2. In the left pane of the compliance portal, select **Data lifecycle management** > **Archive**.
+2. In the left pane of the compliance portal, select **Data lifecycle management** > **Microsoft 365** > **Archive**.
 
    On the **Archive** page, the  **Archive mailbox** column identifies whether an archive mailbox is enabled or disabled for each user.
 
