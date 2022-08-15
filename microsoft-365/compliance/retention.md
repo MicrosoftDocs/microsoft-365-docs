@@ -145,7 +145,7 @@ With retention labels, you can:
 
 - **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied.
 
-- **Apply retention labels to content automatically** if it matches specific conditions, that include cloud attachments that are shared in email or Teams, or when the content contains:
+- **Apply retention labels to content automatically** if it matches specific conditions, that includes cloud attachments that are shared in email or Teams, or when the content contains:
   - Specific types of sensitive information.
   - Specific keywords that match a query you create.
   - Pattern matches for a trainable classifier.
@@ -582,7 +582,7 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 ## Use retention policies and retention labels instead of older features
 
-If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use retention policies and retention labels instead of the following older features.
+If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use Microsoft 365 retention policies and retention labels instead of the following older features.
 
 If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
 
@@ -595,6 +595,10 @@ If you currently use these older features, they will continue to work side by si
   - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
 
   - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Journaling](/exchange/security-and-compliance/journaling/journaling) (retention and archive)
+    
+    Might be required to integrate with third-party solutions and copies of email messages and their data communication are stored outside Exchange Online. Because you're moving data outside Microsoft 365, you must take extra precautions to secure it and also resolve any duplications that might result from this solution. It will be your responsibility to monitor and follow up on any non-delivery receipts to the journaling mailbox that can occur because of external and dependent services. You don't have these additional administrative overheads when you use Microsoft 365 retention and other Microsoft Purview compliance solutions that also aren't limited to just email messages.
 
 - [Litigation hold](create-a-litigation-hold.md) (retention only)
 

@@ -42,7 +42,7 @@ The following table describes the recommended tutorials for Defender for Busines
 |---------|---------|
 | **Document Drops Backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft 365 Defender portal. This tutorial requires that Microsoft Word is installed on your test device.   |
 | **Live Response**     | Learn how to use basic and advanced commands with Live Response. Learn how to locate a suspicious file, remediate the file, and gather information on a device.   |
-| **Threat & Vulnerability Management (core scenarios)**     | Learn about threat and vulnerability management through three scenarios:<ol><li>Reduce your company's threat and vulnerability exposure.</li><li>Request a remediation.</li><li>Create an exception for security recommendations.</li></ol> <br/> Threat & Vulnerability Management uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
+| **Microsoft Defender Vulnerability Management(core scenarios)**     | Learn about Defender Vulnerability Management through three scenarios:<ol><li>Reduce your company's threat and vulnerability exposure.</li><li>Request a remediation.</li><li>Create an exception for security recommendations.</li></ol> <br/> Defender Vulnerability Management uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
 
 Each tutorial includes a walkthrough document that explains the scenario, how it works, and what to do.
 
@@ -59,7 +59,7 @@ Each tutorial includes a walkthrough document that explains the scenario, how it
 
    - **Document Drops Backdoor**
    - **Live Response**
-   - **Threat & Vulnerability Management (core scenarios)**
+   - **Microsoft Defender Vulnerability Management (core scenarios)**
 
 ## Next steps
 
