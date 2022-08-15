@@ -30,7 +30,7 @@
       href: compliance-extensibility.md
 - name: Onboard devices for Microsoft Purview
   items:
-    - name: Onboard Windows
+    - name: Onboard Windows devices
       items:
         - name: Overview
           href: device-onboarding-overview.md
