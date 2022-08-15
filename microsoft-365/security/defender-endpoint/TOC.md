@@ -300,6 +300,7 @@
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
+#### [Built-in protection helps guard against ransomware](built-in-protection.md)
 #### [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Why cloud protection should be on](why-cloud-protection-should-be-on-mdav.md)
 ##### [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
