@@ -43,19 +43,10 @@ In the **Advanced hunting** page, select **Create new** to open a new query tab 
 
 This brings you to the guided mode, where you can then construct your query by selecting different components using dropdown menus.
 
-### Use basic filters
-
-By default, guided hunting includes a few basic filters to get you started fast. 
-
-![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
-
-
-#### Specify the data domain to hunt in
+## Specify the data domain to hunt in
 You can control the scope of the hunt by selecting the **View in** control:
 
 ![hunting icon](../../media/guided-hunting/query-builder-view-in.png)
-
-
 
 
 **View in** controls the filters. Selecting **All** allows you to filter the entire dataset. Narrowing down to a specific domain allows filters relevant to that domain only. 
@@ -66,6 +57,14 @@ You can choose from:
 - Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](defender-cloud-apps/activity-filters.md) can find the same data here
 - Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](office-365-security/threat-explorer.md) can find the same data here
 
+## Use basic filters
+
+By default, guided hunting includes a few basic filters to get you started fast. 
+
+![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
+
+
+
 When you choose one data source, for instance, **Endpoints**, the query builder displays only the applicable filter groups. You can then choose a filter you are interested in narrowing down by selecting that filter group, for instance, **EventType**, and selecting the filter of your choice.
 
 ![hunting icon](../../media/guided-hunting/query-builder-query-basic-filter.png)
@@ -74,7 +73,7 @@ Once the query is ready, select the blue **Run query** button. If the button is 
 
 Note that the basic filter view uses the **AND** operator only, meaning running the query generates results for which all set filters are true. 
 
-### Use more filters
+## Use more filters
 
 To view more filter groups and conditions, select **Toggle to see more filters and conditions**.
 
@@ -87,7 +86,7 @@ When the **All filters** toggle is active, you can now use the full range of fil
 
 
 
-#### Create conditions
+### Create conditions
 
 To specify a set of data to be used in the query, select **Select a filter**. Explore the different filter sections to find what is available to you.
  
@@ -95,7 +94,13 @@ To specify a set of data to be used in the query, select **Select a filter**. Ex
 
 Type the section's titles to find the filter or use the search box at the top of the list. Sections ending in *info* contain filters that provide information about the different components you can look at. Sections ending in *events* contain filters that allow you to look for any system or network event. 
 
+>[!NOTE]
+> Choosing a filter that isn't in the basic filters list that first appears when you open Query in Builder deactivates or grays out the toggle to return to the basic filters view.
+
+
 [MORE INFO ABOUT OPERATORS]
+
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators.png)
 
 You can further narrow down your query by using **AND**, and **OR** conditions. AND returns results that fulfill all conditions in the query, while OR returns results that fulfill any of the conditions in the query.  
 
