@@ -99,5 +99,5 @@ Here is an example of the response.
 
 ## Related topics
 
-- [Risk-based Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability exposure score](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Vulnerability Management exposure score](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
