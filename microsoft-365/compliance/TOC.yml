@@ -28,33 +28,33 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
-- name: Cross-solution features
+- name: Onboard devices for Microsoft Purview
   items:
-    - name: Onboard Windows 10 and Windows 11 devices
+    - name: Onboard Windows devices
       items:
-        - name: Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
+        - name: Overview
           href: device-onboarding-overview.md
-        - name: Onboard Windows 10 and Windows 11 devices via Group Policy
-          href: device-onboarding-gp.md
-        - name: Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
+        - name: Intune
           href: device-onboarding-mdm.md
-        - name: Onboard Windows 10 Windows 11 devices using Configuration Manager
+        - name: Configuration Manager
           href: device-onboarding-sccm.md
-        - name: Onboard Windows 10 and Windows 11 devices using a local script
+        - name: Group Policy
+          href: device-onboarding-gp.md
+        - name: Local script
           href: device-onboarding-script.md
-        - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+        - name: Non-persistent virtual desktop infrastructure (VDI)
           href: device-onboarding-vdi.md
     - name: Onboard macOS devices
       items:
-        - name: Onboard macOS devices into Microsoft 365 overview 
+        - name: Overview 
           href: device-onboarding-macos-overview.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune
+        - name: Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers
+        - name: Intune for Microsoft Defender for Endpoint
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro
+        - name: JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
+        - name: JAMF Pro for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Manage connectors for third-party data
   items: 
