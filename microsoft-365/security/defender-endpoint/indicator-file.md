@@ -161,7 +161,7 @@ If there are conflicting file IoC policies with the same enforcement type and ta
 > [!WARNING]
 > Policy conflict handling for files and certs differ from policy conflict handling for domains/URLs/IP addresses.
 
-Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
+Microsoft Defender Vulnerability Management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
 
 ### Examples
 
