@@ -226,7 +226,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/BrowserExtensionsExpor
 ## See also
 
 - [Get browser extensions permission info](get-browser-extensions-permission-info.md)
-- [Browser extensions assessment](tvm-browser-extensions.md)
+- [Browser extensions assessment](../defender-vulnerability-management/tvm-browser-extensions.md)
 
 ## Other related
 

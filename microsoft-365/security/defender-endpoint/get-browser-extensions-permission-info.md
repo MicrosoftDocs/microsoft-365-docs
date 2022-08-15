@@ -128,7 +128,7 @@ Here is an example of the response.
 ## See also
 
 - [Get browser extensions permission info](get-assessment-browser-extensions.md)
-- [Browser extensions assessment](tvm-browser-extensions.md)
+- [Browser extensions assessment](../defender-vulnerability-management/tvm-browser-extensions.md)
 
 ## Other related
 
