@@ -23,7 +23,12 @@ f1.keywords: NOCSH
 
 ## What is built-in protection?
 
-Built-in protection is a set of default settings to help ensure your devices are protected as soon as those devices are onboarded. Built-in protection means some settings, such as tamper protection, will be turned on, helping to guard against ransomware from day one. As devices are onboarded to Defender for Endpoint, built-in protection is applied to those devices.
+Built-in protection is a set of default settings to help ensure your devices are protected as soon as those devices are onboarded. Built-in protection means some settings, such as tamper protection, will be turned on by default, helping to guard against ransomware from day one. 
 
-## 
+When built-in protection becomes available, you'll be notified that your tenant is about to receive built-in protection. 
 
+When built-in protection arrives, certain settings, such as tamper protection, will be turned on for your tenant, and these settings will be applied to your organization's Windows devices.
+
+As devices are onboarded to Defender for Endpoint, built-in protection will be applied to Windows devices.
+
+## Can I exclude devices from built-in protection?
