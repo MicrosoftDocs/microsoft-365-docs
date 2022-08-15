@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 
 # Built-in protection helps guard against ransomware
 
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) helps prevent, detect, investigate, and respond to advanced threats, such as ransomware attacks. [Next-generation protection](next-generation-protection.md), a component of Defender for Endpoint, is designed to catch emerging threats. Next-generation protection includes [cloud-protection](cloud-protection-microsoft-defender-antivirus.md), [always-on scanning](configure-protection-features-microsoft-defender-antivirus.md), and [regular protection updates](manage-updates-baselines-microsoft-defender-antivirus.md). Protection from ransomware and other cyberthreats requires certain settings to be configured. For example, [protection from potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) (PUA), software that can cause your machine to run slowly, display unexpected ads, or even install unexpected or unwanted software, is not turned on by default. [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), a key part of your ransomware protection, should be turned on (if it's not already enabled). This is where built-in protection can help!
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) helps prevent, detect, investigate, and respond to advanced threats, such as ransomware attacks. [Next-generation protection](next-generation-protection.md), a component of Defender for Endpoint, is designed to catch emerging threats. Next-generation protection includes [cloud-protection](cloud-protection-microsoft-defender-antivirus.md), [always-on scanning](configure-protection-features-microsoft-defender-antivirus.md), and [regular protection updates](manage-updates-baselines-microsoft-defender-antivirus.md). Protection from ransomware and other cyberthreats requires certain settings to be configured. For example, [protection from potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) (PUA), software that can cause your machine to run slowly, display unexpected ads, or even install unexpected or unwanted software, isn't turned on by default. [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), a key part of your ransomware protection, should be turned on (if it's not already enabled). Built-in protection can help!
 
 ## What is built-in protection, and how does it work?
 
@@ -31,9 +31,7 @@ After built-in protection has arrived, whenever devices are onboarded to Defende
 
 ## Can I change built-in protection settings?
 
-Built-in protection are default settings only. You can change your settings to suit your business needs. Although we do not recommend turning built-in protection off, you can do that. You can also exclude certain devices from built-in protection settings.
-
-
+Built-in protection is default settings only. You can change your settings to suit your business needs. Although we don't recommend turning off built-in protection, you can do that. You can also exclude certain devices from built-in protection settings.
 
 ## See also
 
