@@ -50,8 +50,8 @@ You can use the Microsoft 365 Defender portal or PowerShell to allow or block em
 4. When you're finished, click **Add**.
 
 > [!NOTE]
-> The emails from these addresses or domains will be blocked as _high confidence spam_ (SCL = 9).
-> Users in the organization won't be able to send emails to these blocked domains and addresses. They will receive a non-delivery report which will state the following: "5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization’s tenant allow/block list policy."
+> - The emails from these addresses or domains will be blocked as _high confidence spam_ (SCL = 9) and moved to junk folder.
+> - Users in the organization won't be able to send emails to these blocked domains and addresses. They will receive a non-delivery report which will state the following: "5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization’s tenant allow/block list policy."
 
 ### Use PowerShell
 
