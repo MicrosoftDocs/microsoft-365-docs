@@ -95,7 +95,7 @@ To specify a set of data to be used in the query, select **Select a filter**. Ex
 Type the section's titles to find the filter or use the search box at the top of the list. Sections ending in *info* contain filters that provide information about the different components you can look at. Sections ending in *events* contain filters that allow you to look for any system or network event. 
 
 >[!NOTE]
-> Choosing a filter that isn't in the basic filters list that first appears when you open Query in Builder deactivates or grays out the toggle to return to the basic filters view.
+> Choosing a filter that isn't in the basic filters list deactivates or grays out the toggle to return to the basic filters view. To reset the query or remove existing filters in the current query, select **Clear all**. This also reactivates the basic filters list.
 
 
 [MORE INFO ABOUT OPERATORS]
