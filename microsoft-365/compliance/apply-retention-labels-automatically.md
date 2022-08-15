@@ -72,7 +72,7 @@ When you create an auto-apply policy, you select a retention label to automatica
         - **Solutions** \> **Records management** \> **Label policies** tab \> **Auto-apply a label**
 
     - If you are using data lifecycle management:
-        - **Solutions** \> **Data lifecycle management** \> **Label policies** tab \> **Auto-apply a label**
+        - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Label policies** tab \> **Auto-apply a label**
 
     Don't immediately see your solution in the navigation pane? First select **Show all**.
 
