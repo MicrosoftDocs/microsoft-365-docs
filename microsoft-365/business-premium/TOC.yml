@@ -2,7 +2,7 @@
   items: 
     - name: Overview
       href: index.md
-    - name: How Microsoft 365 helps your business
+    - name: Run your business more securely 
       href: m365bp-secure-users.md
     - name: Microsoft 365 Business Premium trial playbook
       href: m365bp-trial-playbook-microsoft-business-premium.md
@@ -10,6 +10,8 @@
       href: get-microsoft-365-business-premium.md
     - name: Get Microsoft 365 for Campaigns
       href: get-microsoft-365-campaigns.md
+    - name: Resources for partners
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
   items: 
   - name: Sign in and set up
@@ -24,10 +26,10 @@
     items: 
       - name: Overview
         href: m365bp-security-overview.md
-      - name: Protect admin accounts
-        href: m365bp-protect-admin-accounts.md
-      - name: Turn on security defaults
+      - name: Turn on security defaults (MFA)
         href: m365bp-conditional-access.md
+      - name: Protect your admin accounts
+        href: m365bp-protect-admin-accounts.md
       - name: Protect against malware and other threats
         href: m365bp-increase-protection.md
 - name: Train your team
