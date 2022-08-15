@@ -120,7 +120,7 @@ To set site-level sharing settings
 
 ## Invite users
 
-Guest sharing settings are now configured, so you can start adding internal users and guests to your site. Site access is controlled through the associated Microsoft 365 Group, so we'll be adding users there.
+Guest sharing settings are now configured, so you can start adding internal users and guests to your site. Site access is controlled through the associated Microsoft 365 group, so we'll be adding users there.
 
 To invite internal users to a group
 
@@ -129,7 +129,7 @@ To invite internal users to a group
 3. Select **Add members**.
 4. Type the names or email addresses of the users that you want to invite to the site, and then select **Save**.
 
-Guests can't be added from the site. For information about how to add guest to a Microsoft 365 group, see [Adding guests to Microsoft 365 Groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6).
+Guests can't be added to the Microsoft 365 group from the site. For information about how to add guest to a group, see [Adding guests to Microsoft 365 Groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6).
 
 ## See also
 
