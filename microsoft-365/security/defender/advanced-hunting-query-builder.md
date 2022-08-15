@@ -30,7 +30,11 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-To reduce the learning curve for hunting, remove the KQL challenge, and enable all analysts to hunt,  **Guided hunting** experience is supported. This is a hunting mode that enables all analysts to hunt—*without knowing KQL or the data schema*. In this mode, you can use a query builder to write your queries. You just need to know what you are looking for and you can easily filter for it. 
+
+The query builder in guided mode allows analysts to craft meaningful hunting queries *without knowing Kusto Query Language (KQL) or the data schema*. Analysts from every tier of experience can use the query builder to filter through data from the last 30 days to look for threats, expand incident investigations, perform data analytics on threat data, or focus on specific threat areas.
+
+The analyst can choose which data set to look at and which filters and conditions to use to narrow the data down to what they need. 
+
 
 ## Open Query in builder
 In the **Advanced hunting** page, select **Create new** to open a new query tab and select **Query in builder**. 
@@ -41,46 +45,54 @@ This brings you to the guided mode, where you can then construct your query by s
 
 ### Specify the data domain to hunt in
 
-By default, guided hunting includes a few basic filters to get you started fast. [default AND operators]![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
+By default, guided hunting includes a few basic filters to get you started fast. 
+
+![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
 
 You can control the scope of the hunt by selecting the **View in** control:
 
 ![hunting icon](../../media/guided-hunting/query-builder-view-in.png)
 
-**View in** controls the filters. Selecting **All** allows you to filter the entire dataset. narrowing down to a specific domain allows filters relevant to that domain only. 
+**View in** controls the filters. Selecting **All** allows you to filter the entire dataset. Narrowing down to a specific domain allows filters relevant to that domain only. 
 
 You can choose from:
 - All domains - to look through all available data in your query
 - Endpoints - to look through endpoint data as provided by Microsoft Defender for Endpoint
-- Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with Activity log can find the same data here
-- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with Threat Explorer can find the same data here
+- Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](defender-cloud-apps/activity-filters.md) can find the same data here
+- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](office-365-security/threat-explorer.md) can find the same data here
 
 When you choose one data source, for instance, **Endpoints**, the query builder displays only the applicable filter groups. You can then choose a filter you are interested in narrowing down by selecting that filter group, for instance, **EventType**, and selecting the filter of your choice.
 
 ![hunting icon](../../media/guided-hunting/query-builder-query-basic-filter.png)
 
-Once the query is ready, select the blue **Run query** button. If the button is grayed out, it means the query needs to be edited further.
+Once the query is ready, select the blue **Run query** button. If the button is grayed out, it means the query needs to be filled out or edited further. 
 
-To view more filter groups and conditions, select the toggle **Toggle to see more filters and conditions**
+Note that the basic filter view uses the **AND** operator only, meaning running the query generates results for which all set filters are true. 
+
+### View more filters
+
+To view more filter groups and conditions, select **Toggle to see more filters and conditions**.
 
 ![hunting icon](../../media/guided-hunting/query-builder-view-in-endpoints.png)
 
-When the **All filters** toggle is active, you can now use the full range of filters and conditions.
+When the **All filters** toggle is active, you can now use the full range of filters and conditions in guided mode.
 
 ![hunting icon](../../media/guided-hunting/query-builder-all-filters.png)
 
 
 
 
-### Create conditions
+#### Create conditions
 
-To add a condition to your query, select **Select a filter**. Explore the different filter sections to find what is available to you.
+To specify a set of data to be used in the query, select **Select a filter**. Explore the different filter sections to find what is available to you.
  
 ![Screenshot showing different filters you can use](../../media/guided-hunting/query-builder-filters.png)
 
-Type the section's titles to find the filter or use the search box at the top of the list. _* Info_ sections contain filters that provide information about the different components you can look at. _* Events_ sections contain filters that allow you to look for any system or network event. 
+Type the section's titles to find the filter or use the search box at the top of the list. Sections ending in *info* contain filters that provide information about the different components you can look at. Sections ending in *events* contain filters that allow you to look for any system or network event. 
 
-You can also create AND, OR conditions. Select **AND** to include results that  
+[MORE INFO ABOUT OPERATORS]
+
+You can further narrow down your query by using **AND**, and **OR** conditions. AND returns results that fulfill all conditions in the query, while OR returns results that fulfill any of the conditions in the query.  
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators.png)
 
@@ -92,6 +104,8 @@ In the **Getting started** section of the hunting page, we have provided three g
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/load-examples.png)
 
+Follow the instructions in the blue teaching bubbles to construct your query. Select **Run query**.
+
 ## Try some queries
 
 ### Hunt for successful connections to specific IP
@@ -99,7 +113,7 @@ To hunt for successful network communications to a specific IP address, start ty
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip.png)
 
-To look for events involving this IP address where this IP is the destination of the communication, select DestinationIPAddress under the IP Address Events section. Then select the **equals** operator and type the IP and press **Enter**:
+To look for events involving this IP address where this IP is the destination of the communication, select `DestinationIPAddress` under the IP Address Events section. Then select the **equals** operator and type the IP and press **Enter**:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-2.png)
 
@@ -107,7 +121,7 @@ Then, to add a second condition which searches for successful network communicat
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-3.png)
 
-**Event** filter is filtering for the different event types logged. It is equivalent to the **ActionType** column which exists in most of the tables in advanced hunting. Select it to select one or more event types to filter for. To look for successful network communication events, expand the **DeviceNetworkEvents** section and then choose **ConnectionSuccess**:
+**Event** filter looks for the different event types logged. It is equivalent to the **ActionType** column which exists in most of the tables in advanced hunting. Select it to choose one or more event types to filter for. To look for successful network communication events, expand the **DeviceNetworkEvents** section and then choose `ConnectionSuccess`:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-4.png)
 
@@ -115,9 +129,9 @@ Finally, select **Run query** to hunt for all successful network communications 
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-5.png)
 
-### Hunt for high confidence phish or spam emails delivered to inbox
+### Hunt for high confidence phish or spam emails delivered to inbox [NEEDS NEW IMAGES]
 
-tT look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select ConfidenceLevel under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
+To look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select ConfidenceLevel under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-1.png)
 

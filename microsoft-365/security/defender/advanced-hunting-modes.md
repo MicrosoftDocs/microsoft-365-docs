@@ -35,15 +35,17 @@ In the **advanced hunting** page, two modes are supported:
 - **Guided mode** – to query using the query builder
 - **Advanced mode** – to query using the query editor using Kusto Query Language (KQL)
 
-The main difference between the two modes is that the guided mode does not require the hunter to know KQL to query the database, while advanced mode requires KQL knowledge. 
+The main difference between the two modes is that the guided mode *does not* require the hunter to know KQL to query the database, while advanced mode requires KQL knowledge. 
 
-Guided mode features a query builder that has an easy-to-use, visual, building-block style of constructing queries through dropdown filters and conditions. Advanced mode features a query editor area where users can create queries from scratch.
+Guided mode features a query builder that has an easy-to-use, visual, building-block style of constructing queries through dropdown menus containing available filters and conditions. To use guided mode, see [Get started with guided hunting mode](advanced-hunting-modes.md#get-started-with-guided-hunting-mode).
+
+Advanced mode features a query editor area where users can create queries from scratch. To use advanced mode, see [Get started with advanced hunting mode](advanced-hunting-modes.md#get-started-with-advanced-hunting-mode).
 
 ## Get started with guided hunting mode
 
 When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas. 
 
-To take the tour, select **Try out guided hunting** when this banner appears:
+To take the tour, select **Take tour** when this banner appears:
 
 
 [ ![banner inviting user to take the tour](../../media/guided-hunting/1-guided-hunting-banner-tb.png) ](../../media/guided-hunting/1-guided-hunting-banner.png#lightbox)
@@ -61,7 +63,7 @@ You can then start building your query to hunt for threats. The following articl
 |--|--|--|
 | **Craft your first query** | Learn the basics of the query builder like specifying the data domain and adding conditions and filters to help you create a meaningful query. Learn further by running sample queries. | [Build hunting queries using guided mode](advanced-hunting-query-builder.md) |
 | **Learn the different query building basics** |  Get to know the different supported data types and guided mode capabilities to help you fine-tune your query according to your needs. | [Refine your query in guided mode](advanced-hunting-query-builder-details.md) |
-| **Learn what you can do with query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results in guided mode](advanced-hunting-query-builder-results.md)<br /> - [Take action on query results](advanced-hunting-take-action.md) <br /> - [Link query results to an incident](advanced-hunting-link-to-incident.md) |
+| **Learn what you can do with query results** | Get familiar with the Results view and what you can do with generated results like how to take action on them or link them to an incident. | - [Work with query results in guided mode](advanced-hunting-query-builder-results.md)<br /> - [Take action on query results](advanced-hunting-take-action.md) <br /> - [Link query results to an incident](advanced-hunting-link-to-incident.md) |
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically. | - [Custom detections overview](custom-detections-overview.md) <br />- [Custom detection rules](custom-detection-rules.md) |
 
 ## Get started with advanced hunting mode
