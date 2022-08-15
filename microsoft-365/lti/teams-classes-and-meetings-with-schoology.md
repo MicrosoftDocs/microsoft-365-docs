@@ -21,7 +21,7 @@ This guide provides the IT admin steps for registering the Teams Meetings LTI ap
 For an overview of Microsoft LTI, see [Integrating Microsoft products with your Learning Management System (LMS)](index.md).
 
 > [!NOTE]
-> The person who performs this integration should be an administrator of Schoology and an administrator of the Microsoft 365 tenant.
+> The person who performs this integration should be an administrator of Schoology. However, Schoology users with access to the Schoology **App Center** can also install the Microsoft Teams Meetings LTI app.
 
 ## Register the Teams Meetings LTI app in Schoology
 
