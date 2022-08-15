@@ -103,7 +103,7 @@ Topic | Description
 |[Intune](device-onboarding-offboarding-macos-intune.md)|For macOS devices that are managed through Intune
 |[Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md) |For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them
 |[JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | For macOS devices that are managed through JAMF Pro
-|[JAMF Pro for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
+|[JAMF Pro for Microsoft Defender for Endpoint](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
 
 
 ## Related topics

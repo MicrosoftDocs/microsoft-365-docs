@@ -208,5 +208,5 @@ Now that you've learned about Endpoint DLP, your next steps are:
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding)
 - [Insider risk management](insider-risk-management.md)
