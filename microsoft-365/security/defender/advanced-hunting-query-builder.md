@@ -44,12 +44,12 @@ In the **Advanced hunting** page, select **Create new** to open a new query tab 
 This brings you to the guided mode, where you can then construct your query by selecting different components using dropdown menus.
 
 ## Specify the data domain to hunt in
-You can control the scope of the hunt by selecting the **View in** control:
+You can control the scope of the hunt by selecting which domain the query covers:
 
 ![hunting icon](../../media/guided-hunting/query-builder-view-in.png)
 
 
-**View in** controls the filters. Selecting **All** allows you to filter the entire dataset. Narrowing down to a specific domain allows filters relevant to that domain only. 
+Selecting **All** includes data from all domains you currently have access to. Narrowing down to a specific domain allows filters relevant to that domain only. 
 
 You can choose from:
 - All domains - to look through all available data in your query
