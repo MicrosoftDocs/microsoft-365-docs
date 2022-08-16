@@ -64,8 +64,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|SecurityConfiguration.Read.All|\'Read all security configurations\'
-Delegated (work or school account)|SecurityConfiguration.Read|\'Read all security configurations\'
+Application|Vulnerability.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account)|Vulnerability.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ### 1.3 URL
 
@@ -227,8 +227,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|SecurityConfiguration.Read.All|\'Read all security configurations\'
-Delegated (work or school account)|SecurityConfiguration.Read|\'Read all security configurations\'
+Application|Vulnerability.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account)|Vulnerability.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ### 2.3 URL
 
