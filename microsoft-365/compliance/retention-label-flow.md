@@ -73,7 +73,7 @@ When the retention period expires, your configured flow runs.
 
 - You must create a new retention label to run a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
-- By default, the account that creates the Power Automate flow must be the same account that creates the retention label. If you share the flow in Power Automate, you people you share it with will also be able to select the flow when they create a retention label.
+- By default, the account that creates the Power Automate flow must be the same account that creates the retention label. If you share the flow in Power Automate, the people you share it with can also select the flow when they create a retention label.
 
 - If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
 
