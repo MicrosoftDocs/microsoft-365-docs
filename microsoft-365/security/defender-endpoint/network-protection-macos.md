@@ -81,7 +81,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
 mdatp --health releaseRing 
 ```
 
-If your device isn't already in the  InsiderSlow(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
+If your device isn't already in the InsiderSlow(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
 
 ```bash
 defaults write com.microsoft.autoupdate2 ChannelName -string InsiderSlow
