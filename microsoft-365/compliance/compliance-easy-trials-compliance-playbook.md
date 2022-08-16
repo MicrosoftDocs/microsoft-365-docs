@@ -60,19 +60,20 @@ You may also want to jump right to key sections of our documentation using the l
 
 Start working with assessments and taking improvement actions to implement controls and improve your compliance score.
 
-1. Choose a pre-built template to create and manage your first assessment.
-1. Understand how to use templates for building assessments.
-1. Perform implementation and testing work on improvement actions to complete controls in your assessments.
-1. Better understand how different actions impact your compliance score.
+1. [Choose a pre-built template to create and manage your first assessment](compliance-manager-assessments.md).
+1. [Understand how to use templates for building assessments](compliance-manager-templates.md).
+1. [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md).
+1. [Better understand how different actions impact your compliance score](compliance-score-calculation.md).
 
 > [!NOTE]
 > Microsoft 365 or Office 365 E1/E3 subscription includes Microsoft Data Protection Baseline template. Microsoft 365 or Office 365 E5, E5 Compliance includes templates for:
->  - Microsoft Data Protection Baseline
+>
+> - Microsoft Data Protection Baseline
 > - European Union GDPR
 > - ISO/IEC 27001,
 > - NIST 800-53
 
-Compliance Manager includes 300+ regulatory or premium templates that can be purchased as an add-on with Compliance Manager premium assessments add-on. See the list here. With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service
+Compliance Manager includes 300+ regulatory or premium templates that can be purchased as an add-on with [Compliance Manager premium assessments add-on](compliance-easy-trials-compliance-manager-assessments.md). With any [premium templates](compliance-manager-templates-list.md) (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service
 
 ### Step 3: Scaling up: use advanced functionality to meet your custom needs
 
@@ -80,11 +81,11 @@ Custom assessments are helpful for:
 
 - Managing compliance for non-Microsoft 365 products such as third-party apps and services, on-premises applications, and other assets
 - Managing your own custom or business-specific compliance controls:
-  1. Extend a Compliance Manager template by adding your own controls and improvement actions
-  1. Create your own custom template
-  1. Modify an existing template to add or remove controls and actions
-  1. Set up automated testing of improvement actions
-  1. Reassign improvement actions to another user
+  1. [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
+  1. [Create your own custom template](compliance-manager-templates-create.md)
+  1. [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
+  1. [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
+  1. [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
 
 **Organizational Concerns**
 
@@ -115,9 +116,9 @@ Choosing the default configuration, with 1-click, the following is automatically
 - Service-side auto-labeling
 - Data loss prevention (DLP) policies for Teams and devices
 
-Activate the default labels and policies. If necessary, you can edit it manually after the configuration is complete. If necessary, you can edit it manually after the configuration is complete.
+[Activate the default labels and policies](mip-easy-trials.md#activate-the-default-labels-and-policies). If necessary, you can edit it manually after the configuration is complete. If necessary, you can edit it manually after the configuration is complete.
 
-You can follow the actions below or alternatively, use the Microsoft Purview Information Protection Setup Guide to set up your Information Protection and Data Loss Protection.
+You can follow the actions below or alternatively, use the [Microsoft Purview Information Protection Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197428) to set up your Information Protection and Data Loss Protection.
 
 **Actions to try:**
 
@@ -127,9 +128,9 @@ You can follow the actions below or alternatively, use the Microsoft Purview Inf
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
 
-1. Create and configure sensitivity labels
-1. Publish sensitivity label policy to all users
-1. Create an auto-labeling policy
+1. [Create and configure sensitivity labels](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)
+1. [Publish sensitivity label policy to all users](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)
+1. Create an [auto-labeling policy](apply-sensitivity-label-automatically.md)
    - Choose info you want label applied to
    - Define locations to apply label
    - Select label to apply
@@ -144,27 +145,27 @@ Now on the Information protection > Auto-labeling page, you see your auto-labeli
 1. Select your policy to see the details of the configuration and status. When the simulation is complete, select the Items to review tab to see which emails or documents matched the rules that are specified.
 1. When you’re ready to run the policy without simulation, select the Turn on policy option.
 
-## Data Loss Prevention
+## Microsoft Purview Data Loss Prevention
 
 ### Step 1: Prevent data loss on Microsoft Teams locations
 
 If your organization has data loss prevention (DLP), you can define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session.
 
-1. Learn about DLP Licensing for Microsoft Teams and the scope of DLP protection
-1. Add Microsoft Teams as a location to existing DLP policies
-1. Configure our default DLP policy for Teams or define a new DLP policy for Microsoft Teams
+1. [Learn about DLP Licensing for Microsoft Teams and the scope of DLP protection](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
+1. [Add Microsoft Teams as a location to existing DLP policies](dlp-microsoft-teams.md#add-microsoft-teams-as-a-location-to-existing-dlp-policies)
+1. [Configure our default DLP policy for Teams or define a new DLP policy for Microsoft Teams](mip-easy-trials.md)
 
 ### Step 2: Prevent data loss on devices
 
 Microsoft Purview DLP for endpoints allows you to detect and prevent when sensitive items are used or shared on Windows 10, Windows 11 and macOS devices.
 
-1. Prepare your endpoints - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP meet these requirements
-1. Onboard devices into device management - You must onboard your endpoints before you can detect and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
+1. Prepare your endpoints - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP [meet these requirements](endpoint-dlp-getting-started.md#skusubscriptions-licensing).
+1. [Onboard devices into device management](endpoint-dlp-getting-started.md#windows-10-and-windows-11-onboarding-procedures) - You must onboard your endpoints before you can detect and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
    - Scenario 1 – Onboarding devices that have not been onboarded yet.
    - Scenario 2 - Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list.
-1. Configure our default DLP policy for devices or define a new DLP policy for devices.
-1. View Endpoint DLP alerts in DLP Alerts Management dashboard.
-1. View Endpoint DLP data in activity explorer.
+1. [Configure our default DLP policy for devices or define a new DLP policy for devices](mip-easy-trials.md#dlp-for-devices).
+1. [View Endpoint DLP alerts](dlp-configure-view-alerts-policies.md) in DLP Alerts Management dashboard.
+1. [View Endpoint DLP data](data-classification-activity-explorer.md) in activity explorer.
 
 ### Step 3: Expand policies in scope or protection
 
@@ -174,14 +175,14 @@ You have flexibility in how you configure your DLP policies. You can start with 
 1. Add sensitive information types or labels to protect
 1. Add actions
    - Teams:
-      i. Prevent external access to sensitive documents
-      i. Get policy tips to help educate users and instructions for customizing policy tips
+      i. [Prevent external access to sensitive documents](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
+      i. [Get policy tips to help educate users and instructions for customizing policy tips](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - Devices: switch from audit only to block
-1. Configure and view alerts for data loss prevention policies
+1. [Configure and view alerts for data loss prevention policies](dlp-configure-view-alerts-policies.md)
 
-## Governance
+## Data governance
 
-The second organizational concern customers convey is how to reduce risk and meet regulations by classifying data to keep what they need and delete what they don't need. Customers want compliant lifecycle management of sensitive data, to meet recordkeeping obligations, and to reduce the risk from over-retained data.
+The second organizational concern customers convey is how to reduce risk and meet regulations by classifying data to keep what they need and delete what they don't need. Customers want compliant lifecycle management of sensitive data, to meet record keeping obligations, and to reduce the risk from over-retained data.
 
 Microsoft Purview Data Lifecycle Management and Records Management help you to:
 
@@ -193,7 +194,7 @@ Microsoft Purview Data Lifecycle Management and Records Management help you to:
 
 ### Govern at scale with automation
 
-Start with the Data Lifecycle Management Setup Guide. Additionally, you may want to consider implementing these common scenarios:
+Start with the [Data Lifecycle Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197335). Additionally, you may want to consider implementing these common scenarios:
 
 1. Auto-apply retention or deletion settings to sensitive data
 1. Auto-apply retention or deletion settings to everything in a SharePoint document library
@@ -201,23 +202,23 @@ Start with the Data Lifecycle Management Setup Guide. Additionally, you may want
 
 ### Step 1: Auto-apply retention or deletion settings to sensitive data
 
-Start by managing the lifecycle of sensitive data by managing it automatically using retention and deletion settings. First, decide on the type of sensitive data that you want to protect. You may want to use one of our pre-built sensitive information types. Next, create a retention label with your desired retention or deletion settings. Finally, automatically apply the retention label  that contains the sensitive information type you selected.
+Start by managing the lifecycle of sensitive data by managing it automatically using retention and deletion settings. First, decide on the type of sensitive data that you want to protect. You may want to use one of our pre-built [sensitive information types](sensitive-information-type-learn-about.md). Next, [create a retention label](retention.md#retention-labels) with your desired retention or deletion settings. Finally, [automatically apply the retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information) that contains the sensitive information type you selected.
 
 ### Step 2: Auto-apply retention or deletion settings to everything in a SharePoint document library, folder, or document set
 
 You can set a default retention label in SharePoint to automatically apply it to all items within a specific document library, folder, or document set in SharePoint. This option is useful when users store a specific type of document in one of these locations.
 
-First, identify the content you would like to manage and the location of the content in SharePoint. Next, create a retention label with your desired retention or deletion settings. Finally, publish the retention to the document library, folder, or document set.
+First, identify the content you would like to manage and the location of the content in SharePoint. Next, [create a retention label](retention.md#retention-labels) with your desired retention or deletion settings. Finally, [publish the retention to the document library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
 ### Step 3: Dynamically target retention policies with Adaptive Policy Scopes
 
 Many customers want to target a retention policy to specific users or mailboxes. For example, they may want to apply a longer retention period to the mailboxes of people in leadership roles or apply shorter retention to shared mailboxes. Adaptive policy scopes allow you to do this by using their AD attributes to target the policy. If one of the attribute values changes then the retention policy will automatically update its membership.
 
-First, decide what attributes you will use to target the users or mailboxes that you want to include or exclude from your policy. Next, Create an Adaptive Policy Scope and use it with a retention policy.  
+First, [decide what attributes you will use to target](retention-settings.md#configuration-information-for-adaptive-scopes) the users or mailboxes that you want to include or exclude from your policy. Next, [Create an Adaptive Policy Scope and use it with a retention policy](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
-## Records Management
+## Microsoft Purview Records Management
 
-### Manage high-value items for business, legal, or regulatory record-keeping requirements
+**Manage high-value items for business, legal, or regulatory record-keeping requirements**
 
 Records Management helps you to comply with more granular retention and deletion requirements. As an example, you can track your retention schedule or use flexible automation options. Additionally, you can make content immutable, trigger retention using an event, or require approval before items are disposed.
 
@@ -230,7 +231,7 @@ Here are our most popular records management scenarios:
 ### Step 1: Automatically apply a retention label based on SharePoint file metadata
 
 Auto-applying labels removes the need for your users to manually perform the labeling activities. As an example, you can auto-apply retention labels to content that has specific metadata properties in SharePoint.
-First, decide the metadata properties you would like to use, the locations where you want to look for matches, and the retention or deletion settings you want to apply. Next, create a retention label. Then, follow these steps to auto-apply the label based on SharePoint metadata. 
+First, decide the metadata properties you would like to use, the locations where you want to look for matches, and the retention or deletion settings you want to apply. Next, [create a retention label](retention.md#retention-labels). Then, [follow the steps](auto-apply-retention-labels-scenario.md) to auto-apply the label based on SharePoint metadata.
 
 ### Step 2: Review content to approve before it's permanently deleted
 
@@ -238,11 +239,12 @@ Some organizations have a requirement to review content at the end of its retent
 
 ### Step 3: Make content immutable to prevent users from editing it
 
-Some content has a lifecycle phase where both the file and the metadata should not be available for editing, often called declaring the content as an immutable record. Learn how to configure this option in Records Management: Create a retention label that declares content as a record or a regulatory record  The second organizational concern customers convey is how to determine what data they need to keep vs. delete to prevent the proliferation of data. Customers want compliant management of sensitive data, meet recordkeeping obligations, and reduce the risk from over-retained data.
+Some content has a lifecycle phase where both the file and the metadata should not be available for editing, often called declaring the content as an immutable record. Learn how to configure this option in Records Management: [Create a retention label that declares content as a record or a regulatory record](declare-records.md).
 
-## Manage insider risk
+## Manage insider risks
 
-The third organizational concern we hear is how to protect your data and respond to potential insider data security incident risks, which may include data theft and inappropriate sharing of confidential information across all platforms like email and IM (e.g. Microsoft Teams).  
+The third organizational concern we hear is how to protect your data and respond to potential insider data security incident risks, which may include data theft and inappropriate sharing of confidential information across all platforms like email and IM (e.g. Microsoft Teams).
+  
 Using Insider Risk Management and Communication Compliance you can quickly identify and act on insider data security incidents and regulatory requirement risks, empowering you to collaborate with your Security, HR, Legal and other teams, depending on your organization.
 
 - Get rich insights – identifying hidden risks with customizable ML templates requiring no endpoint agents.
@@ -267,13 +269,13 @@ If you are not able to see permissions, please talk to your tenant admin to assi
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it’s OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see Turn audit log search on or off. After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see Search the audit log.
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
 ### Step 3 (recommended): Enable and view Insider Risk Management analytics insights
 
 Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
 
-To learn more about analytics insights, see Insider risk management settings: Analytics and check out the Insider risk management analytics video to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
+To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider risk management analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
 
 > [!NOTE]
 > To enable insider risk analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin.
@@ -282,13 +284,16 @@ To learn more about analytics insights, see Insider risk management settings: An
 
 Quickly get started and get the most out of Insider Risk Management capabilities with Recommended actions. Included on the Overview page, recommended actions will help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
 
-Select a recommendation from the list to get started with configuring insider risk management.
+[Select a recommendation from the list](insider-risk-management-configure.md#recommended-actions-preview) to get started with configuring insider risk management.
 
 :::image type="content" source="../media/compliance-trial/irm-recommended-actions.png" alt-text="Insider Risk Management recommended actions":::
 
 Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization.
-Note that the recommended steps in the playbook (above) may also be included in the Recommended actions shown in the portal. 
-Set up recommendations are also available on the Microsoft docs page, via the Microsoft Purview Insider Risk Management Setup Guide. 
+
+Note that the recommended steps in the playbook (above) may also be included in the Recommended actions shown in the portal.
+
+Set up recommendations are also available on the Microsoft docs page, via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
+
 To fully leverage the functionality of Insider Risk Management, we recommend setting up policies for your organization to better identify potential risky actions that may lead to a security incident, leveraging templates for Data leaks or Data theft.  
 
 ## Communication Compliance
@@ -299,11 +304,11 @@ Microsoft Purview Communication Compliance helps organizations detect explicit r
 
 ### Step 1: Enable permissions for communication compliance
 
-Assign users communication compliance roles to be able to use the product. The "Communication Compliance" role group gives you all the permissions to use the product. Learn about other communication compliance role groups here: Get started with communication compliance. 
+Assign users communication compliance roles to be able to use the product. The "Communication Compliance" role group gives you all the permissions to use the product. Learn about other communication compliance role groups here: [Get started with communication compliance](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
 ### Step 2: Enable the audit log
 
-To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see Turn audit log search on or off.
+To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 ### Step 3: Review recommended actions insights
 
@@ -311,15 +316,15 @@ Included on the Policies page, recommended actions helps you discover risks you 
 
 ### Step 4: Create a communication compliance policy
 
-Create a communication compliance policy using the existing templates: 1- Sensitive information; 2- Regulatory compliance; 3- Conflict of interest. Learn more about our out of the box policy templates and how to create a custom policy here: Communication compliance policies.
+Create a communication compliance policy using the existing templates: 1- Sensitive information; 2- Regulatory compliance; 3- Conflict of interest. Learn more about our out of the box policy templates and how to create a custom policy here: [Communication compliance policies](communication-compliance-policies.md).
 
 ### Step 5: Investigate and remediate alerts
 
-Investigate and remediate communication compliance alerts.
+[Investigate and remediate communication compliance alerts](communication-compliance-investigate-remediate.md).
 
 ### Step 6: Review reports for insights
 
-Review reports for insights on your overall communication compliance posture.
+[Review reports for insights on your overall communication compliance posture](communication-compliance-reports-audits.md).
 
 ## Discover & respond
 
@@ -340,24 +345,24 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 
 To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. Set up eDiscovery (Premium) – Assign eDiscovery permissions
-1. Add or remove members from a case
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### Step 2 (required): Create a Case
 
 More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
-1. Manage eDiscovery (Premium) – learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results.
-1. Create an eDiscovery case using eDiscovery Premium’s new case format
-1. Close or delete a case - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
+1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/learn/modules/manage-advanced-ediscovery).
+1. [Create an eDiscovery case](advanced-ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
+1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
 ### Step 3 (optional): Settings
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. You can manage settings such as attorney-client privilege detection, historical versions and many more.
 
-1. Configure global settings for eDiscovery (Premium)
-1. Configure search and analytics settings
-1. Manage jobs in eDiscovery (Premium)
+1. [Configure global settings for eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
+1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 
 ### Step 4 (optional): Compliance Boundaries
 
