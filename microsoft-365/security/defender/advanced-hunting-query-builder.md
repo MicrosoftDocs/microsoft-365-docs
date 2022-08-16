@@ -82,7 +82,8 @@ Once the query is ready, select the blue **Run query** button. If the button is 
 Another quick way to get familiar with guided hunting is to load sample queries using the **Load sample queries** dropdown menu. 
 ![hunting icon](../../media/guided-hunting/load-sample-queries.png)
 
-> [!NOTE] Selecting a sample query overrides the existing query. 
+>[!NOTE] 
+> Selecting a sample query overrides the existing query. 
 
 Once the sample query is loaded, select **Run query**.
 
