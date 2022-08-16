@@ -39,7 +39,7 @@ Teams includes the following ways to communicate and share information:
 
 |Task |Description |Manage this capability |End-user training |
 |-----|------------|-----------------------|------------------|
-|Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations to with individual and channel chat messaging. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage Chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) and [Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). |
+|Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations to with individual and channel chat messaging. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage Chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) and [Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). Watch the [Tags in Microsoft Teams video](https://go.microsoft.com/fwlink/?linkid=2202727). |
 |Call and meet with team members |Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a voice solution to use calling. |[Manage calling and meeting in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) and [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page) |[Make calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) and [Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) |
 |Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a Files tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that is automatically created when the team is created. |[Overview of Teams and SharePoint integration](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 
@@ -91,6 +91,15 @@ Use Shifts to seamlessly manage and share schedules. Managers can create custom 
 
 Share this [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your users.
 
+#### Shifts videos
+
+- [Watch the Tags with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202712)
+- [Watch the Clocking in with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202613)
+- [Watch the Create a schedule with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202612)
+- [Watch the Re-use a schedule from Excel with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202611)
+- [Watch the Copy a schedule with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202298)
+- [Watch the Swap Shifts video](https://go.microsoft.com/fwlink/?linkid=2202711)
+
 ### Keep in touch with Walkie Talkie
 
 The Walkie Talkie app provides instant push-to-talk communication. By using Walkie Talkie, employees and managers can communicate from anywhere in the store. For example, if a customer on one side of the store asks an employee if an item is in stock on the other side of the store, the employee can use Walkie Talkie to contact someone who works near the item. Because Walkie Talkie doesn’t have limited range, employees can also easily consult with experts in other stores or corporate offices.
@@ -105,6 +114,8 @@ The Walkie Talkie app provides instant push-to-talk communication. By using Walk
 [Learn how to manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Walkie Talkie video training](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) with your users.
+
+Watch the [Walkie Talkie featurette video](https://go.microsoft.com/fwlink/?linkid=2202710).
 
 ### Boost morale with Praise
 
@@ -136,6 +147,8 @@ Use Tasks in Teams to track to-do items for your whole frontline team. Store man
 
 Share this [Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
 
+Watch the [Tasks featurette video](https://go.microsoft.com/fwlink/?linkid=2202616).
+
 ### Streamline approvals with Approvals
 
 Use Approvals to streamline requests and processes with your team. Create, manage, and share approvals directly from your hub for teamwork. Start an approval flow from the same place you send a chat, in a channel conversation, or from the Approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request. You can allow the Approvals app for your organization and add it to Teams.
@@ -151,6 +164,8 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 
 Share this [Approvals video training](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) with your users.
 
+Watch the [Approvals featurette video](https://go.microsoft.com/fwlink/?linkid=2202800).
+
 ### Check in on progress with Updates
 
 The Updates in Microsoft Teams app provides a centralized place for members of your organization to create, review, and submit updates. By creating templates, you can use the Updates app to keep track of anything your organization needs. Updates is available for both desktop and mobile.
@@ -165,6 +180,8 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 [Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) with your users.
+
+Watch the [Updates featurette video](https://go.microsoft.com/fwlink/?linkid=2202831).
 
 ## Set up your teams, channels, and apps
 
