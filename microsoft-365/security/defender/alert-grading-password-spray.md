@@ -1,7 +1,7 @@
 ---
 title: Suspicious password-spray-related IP address activity alert
 description: Alert grading for suspicious password-spray-related IP address activity to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, 365, microsoft, m365, password, spray
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, devices, users, 365, microsoft, m365, password, spray, alert classification, alert grading, cloud apps, suspicious IP
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ search.appverid:
   - MOE150
 ms.technology: m365d
 ---
-# Alert grading for suspicious password spray activity
+# Suspicious password spray-related IP activity
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -47,7 +47,7 @@ This section contains step-by-step guidance to respond to the alert and take the
 
 Here's an example of a password spray alert in the alert queue:
 
-:::image type="content" source="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 interface showing the Device type." lightbox="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png":::
+:::image type="content" source="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 alert." lightbox="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png":::
 
 This means there's suspicious user activity originating from an IP address that might be associated with a brute-force or password spray attempt according to threat intelligence sources.
 
