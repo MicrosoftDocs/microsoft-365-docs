@@ -41,7 +41,7 @@ Microsoft is bringing Network protection functionality to macOS (min. macOS 11).
 [Text]
 -->
 
-Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
+Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
 
 - phishing scams
 - exploits
@@ -54,7 +54,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
 - You can run your corporate VPN in tandem or “side by side” with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.  
 - You can use Web content filtering for testing with network protection for macOS.  
   - [Web content filtering](web-content-filtering.md)
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal should be respected in browsers including Chromium Microsoft Edge. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as  Microsoft Defender for Cloud Applications or Custom Indicators currently also require network protection.
+  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal should be respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as  Microsoft Defender for Cloud Applications or Custom Indicators currently also require network protection.
 
 ### Known issues
 
@@ -75,7 +75,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
 - Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
-  - Latest product version
+  - Product version 101.78.13 or later
 - Your device must be in the InsiderFast (Preview) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
 
 ```bash
@@ -94,7 +94,7 @@ Alternatively, if you are in a managed environment (JAMF or Intune), you can con
 
 ### Microsoft 365 Defender for Endpoint
 
-After you’ve configured your device to be in the  InsiderSlow(preview) update channel, install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
+After you’ve configured your device to be in the InsiderSlow(preview) update channel, install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
 
 ```bash
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app
@@ -273,23 +273,6 @@ Web threat protection is part of web protection in Microsoft 365 Defender for En
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
-<!-- Hide {this intro with no subsequent list items}
-[#### Test web threat protection
-
-You can test web threat protection by navigating to [https://smartscreentestratings2.net/](https://smartscreentestratings2.net/). When correctly configured, web threat protection will block the browser from loading the page.
-
-> [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-macos-web-block.png)
-
-You can also test web threat protection from the Terminal by running the following command and noticing that the connection is blocked by network protection:
-
-```bash
-curl https://smartscreentestratings2.net
-```
-
-Run through the custom indicator flow below to get hits on the Custom Indicator type.]
--->
-
 ### Custom Indicators of Compromise  
 
 Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of indicators for detection and for blocking (prevention and response).
@@ -297,19 +280,6 @@ Indicator of compromise (IoCs) matching is an essential feature in every endpoin
 Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken as well as the duration for when to apply the action and the scope of the device group to apply it to.
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
-
-<!-- Hide {this intro with no subsequent list items}
-[Create an indicator for IPs, URLs, or domains from the Microsoft 365 Defender portal’s **Settings** > **Endpoints** page:
-
-1. In the navigation pane, select **Settings** > **Indicators**.
-2. Select the **IP addresses** or **URLs/Domains** tab.
-3. Select **Add indicator**. The **Add URL/Domain indicator** opens. **Add URL/Domain indicator** is shown in the image that follows this procedure.
-4. Specify the following details:
-   - **Indicator** - Specify the entity details and define the expiration of the indicator
-   - **Action** - Specify the action to be taken and provide a description
-   - **Scope** - Define the scope of the machine group
-5. Review the details in the **Summary** tab, then select **Save**.]
--->
 
 > [!div class="mx-imgBorder"]
 > ![MEM Create Profile](images/network-protection-add-url-domain-indicator.png)
@@ -323,21 +293,6 @@ Web content filtering is part of the [Web protection](web-protection-overview.md
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
-
-<!-- Hide {this intro with no subsequent list items}
-[To add a new policy:
-
-1. Select **Add policy** on the **Web content filtering** page in **Settings**.Apps
-2. Specify a name
-3. Select the categories to block. Use the expand icon to fully expand each parent category and select specific web content categories.
-4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
-5. Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected devices.
-
-> [!NOTE]
-> If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
->
-> ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.]
--->
 
 > [!div class="mx-imgBorder"]
 > ![MEM Create Profile](images/network-protection-wcf-add-policy.png)
