@@ -2,6 +2,15 @@
 
 
 
+## Week of August 08, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/8/2022 | [Sorting, filtering, and downloading data using Microsoft Defender Threat Intelligence (Defender TI)](/defender/threat-intelligence/sorting-filtering-and-downloading-data) | modified |
+| 8/11/2022 | [What is Microsoft Defender Threat Intelligence (Defender TI)?](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | added |
+
+
 ## Week of August 01, 2022
 
 

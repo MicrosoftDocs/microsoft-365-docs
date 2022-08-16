@@ -116,7 +116,7 @@ Remember, when you use this method to disable the AIP add-in, you can still use 
 
 Many of the labeling features supported by the AIP add-in are now supported by built-in labeling. For a more detailed list of capabilities, minimum versions that might be needed, and configuration information, see [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
 
-More features are planned and in development. If there's a specific feature that you're interested in, check the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) and consider joining the [Microsoft Information Protection in Office Private Preview](https://aka.ms/MIP/PreviewRing).
+More features are planned and in development. If there's a specific feature that you're interested in, check the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) and consider joining the [Microsoft Information Protection in Office Private Preview](https://aka.ms/MIP/PreviewRing).
 
 Use the following information to help you identify if you're using a feature from the AIP add-in that isn't yet supported by built-in labeling:
 
