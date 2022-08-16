@@ -43,9 +43,9 @@ Access helpful resources such as links to blogs and other resources related to  
 
 - [Incident response at your fingertips with Defender for Endpoint live response](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Incident-response-at-your-fingertips-with-Microsoft-Defender-ATP/ba-p/614894)
 
-## Threat Vulnerability Management
+## Vulnerability Management
 
-- [Defender for Endpoint Threat & Vulnerability Management now publicly available!](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
+- [Defender for Endpoint Vulnerability Management now publicly available!](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
 
 ## Operational
 
