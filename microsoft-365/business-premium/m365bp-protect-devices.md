@@ -31,6 +31,13 @@ Your objectives are to:
 
 - [Set up managed devices](m365bp-managed-devices-setup.md)
 - [Onboard enrolled devices and apply policies](m365bp-onboard-devices-mdb.md)
+- Protect Windows devices by:
+   - [Upgrade Windows devices to Windows 10 Pro](m365bp-upgrade-windows-10-pro.md) (if necessary)
+   - [Learn about threat protection by Microsoft Defender Antivirus](m365bp-threats-detected-defender-av.md)
+   - [Secure Windows devices with default settings](m365bp-secure-windows-devices.md)
+   - [Manage Windows devices with Microsoft 365 Business Premium](m365bp-manage-windows-devices.md)
+   - [Prepare to automatically install Office apps to client computers](m365bp-prepare-for-office-client-deployment.md)
+   - [Validate device protection settings for Windows 10 or 11 PCs](m365bp-validate-settings-on-windows-10-pcs.md)
 - [Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
