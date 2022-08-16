@@ -46,8 +46,8 @@ When you investigate a specific device, you'll see:
 - Device details
 - Response actions
 - Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
-- Cards (active alerts, logged on users, security assessment, device health status)
-  For more information on device health status, see [Sensor health & OS tab](/microsoft-365/security/defender-endpoint/machine-reports##sensor-health--os-tab).
+- Cards (active alerts, logged on users, security assessment, device health status) 
+ 
 
 :::image type="content" source="images/specific-device.png" alt-text="The device view" lightbox="images/specific-device.png":::
 
@@ -204,7 +204,7 @@ The **Device health status** card shows a summarized health report for the speci
 
 To gain a in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
 
-:::image type="content" source="device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
+:::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
 
 
 
