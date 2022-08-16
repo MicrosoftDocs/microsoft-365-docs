@@ -70,7 +70,7 @@ You don’t need to remember the device ID, full device name, or user account na
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/smart-auto.png)
 
-## Using `EventType`
+## Use `EventType`
 You can even look for specific event types like all failed logons, file modification events, or successful network connections by using the **EventType** filter in any section where it is applicable.
 
 For instance, if you want to add a condition that looks for registry value deletions, you can go to the **Registry Events** section and select **EventType**.

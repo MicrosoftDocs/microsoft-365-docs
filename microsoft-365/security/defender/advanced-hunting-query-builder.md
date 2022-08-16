@@ -69,10 +69,33 @@ When you choose one data source, for instance, **Endpoints**, the query builder 
 
 ![hunting icon](../../media/guided-hunting/query-builder-query-basic-filter.png)
 
+
+
 Once the query is ready, select the blue **Run query** button. If the button is grayed out, it means the query needs to be filled out or edited further. 
 
 >[!NOTE]
 > The basic filter view uses the **AND** operator only, meaning running the query generates results for which all set filters are true. 
+
+
+## Load sample queries
+
+Another quick way to get familiar with guided hunting is to load sample queries using the **Load sample queries** dropdown menu. 
+![hunting icon](../../media/guided-hunting/load-sample-queries.png)
+
+> [!NOTE] Selecting a sample query overrides the existing query. 
+
+Once the sample query is loaded, select **Run query**.
+
+![hunting icon](../../media/guided-hunting/load-sample-queries-1.png)
+
+if you have previously selected a domain, the list of available sample queries changes accordingly.
+
+![hunting icon](../../media/guided-hunting/load-sample-queries-2.png)
+
+To restore the complete list of sample queries, select **All domains** then reopen **Load sample queries**.
+
+If the loaded sample query uses filters outside of the basic filter set, the toggle button is grayed out. To go back to the basic filter set, select **Clear all** then toggle **All filters**. 
+
 
 ## Use more filters
 
@@ -153,6 +176,7 @@ To look for all high confidence phish and spam emails that were delivered to the
 Then, add another condition this time specifying the folder or **DeliveryLocation, Inbox/folder**. 
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-2.png)
+
 
 
 
