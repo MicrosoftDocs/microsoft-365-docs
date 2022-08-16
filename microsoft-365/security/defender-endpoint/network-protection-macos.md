@@ -136,7 +136,7 @@ After you create this configuration profile, assign it to the devices where you 
 
 ##### Configure the enforcement level
 
-Note: if you’ve already configured Microsoft 365 Defender for Endpoint on Mac using the instructions listed here, then update the plist file you previously deployed with the content listed below and redeploy it from JAMF.
+Note: If you’ve already configured Microsoft 365 Defender for Endpoint on Mac using the instructions listed here, then update the plist file you previously deployed with the content listed below and redeploy it from JAMF.
 
 1. In **Computers** > **Configuration Profiles**, select **Options** > **Applications & Custom Settings**
 2. Select **Upload File** (PLIST file)
