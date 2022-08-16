@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/psd2.md",
+      "redirect_url": "https://support.microsoft.com/account-billing/payment-services-directive-2-and-strong-customer-authentication-3527fa95-9c6a-5f6f-d8e6-f27f33aba50e",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/power-bi-in-your-organization.md",
+      "redirect_url": "https://docs.microsoft.com/power-bi/enterprise/service-admin-org-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/set-up-outlook-to-read-email.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/setup/setup-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/show-hide-new-features.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/whats-new-in-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/security-guide.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/business-premium/m365bp-secure-users#download-the-digital-threats-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/choose-device-security.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/manage-microsoft-rewards.md",
+      "redirect_url": "https://www.microsoft.com/rewards?rtc=1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/back-up-data-before-switching-plans.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/licenses/add-licenses-bought-through-vlsc.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses",
       "redirect_document_id": false
@@ -7578,6 +7618,11 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/turn-on-protocol-recognition.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/network-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "defender/threat-intelligence/index.md",
+      "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
       "redirect_document_id": false
     }
   ]
