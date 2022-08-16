@@ -436,8 +436,6 @@ For detailed syntax and parameter information, see [Set-PhishSimOverrideRule](/p
 
 You can't modify the URL values directly. You can [remove existing URL entries](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) and [add new URL entries](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) as described in this article.
 
-
-
 To modify other properties of an allowed phishing simulation URL entry (for example, the expiration date or comments), use the following syntax:
 
 ```powershell
