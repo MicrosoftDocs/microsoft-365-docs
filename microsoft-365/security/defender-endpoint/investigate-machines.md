@@ -46,7 +46,8 @@ When you investigate a specific device, you'll see:
 - Device details
 - Response actions
 - Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
-- Cards (active alerts, logged on users, security assessment)
+- Cards (active alerts, logged on users, security assessment, device health status)
+  For more information on device health status, see [](/microsoft-365/security/defender-endpoint/machine-reports#public-preview---device-health-and-antivirus-compliance-report-in-microsoft-defender-for-endpoint).
 
 :::image type="content" source="images/specific-device.png" alt-text="The device view" lightbox="images/specific-device.png":::
 
