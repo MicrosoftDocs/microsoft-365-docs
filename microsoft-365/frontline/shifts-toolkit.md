@@ -32,7 +32,7 @@ Now that your organization has begun using Shifts to manage schedules, you'll ne
 Leverage your [corporate communications strategy](flw-corp-comms.md) to share Shifts training content with your team and make sure they have access to the resources they need:
 
 1. Share the [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your team to help them understand the basics.
-2. Share [Videos for managers](#shifts-videos-for-managers) with your frontline managers to help them set up and manage schedules for their teams.
+2. Share [Videos for frontline managers](#shifts-videos-for-managers) with your managers to help them set up and manage schedules for their teams.
 3. Share [Videos for users](#shifts-videos-for-users) with all of your frontline staff to help them perform regular tasks such as clocking in and swapping shifts.
 
 ## Shifts videos for managers
