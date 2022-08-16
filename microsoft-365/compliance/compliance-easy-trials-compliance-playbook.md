@@ -72,206 +72,201 @@ You may also want to jump right to key sections of our documentation using the l
 - Learn about improvement actions
 - Understand assessments
 - Do a quick scan of your environment using the Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)
- 
-Compliance Manager - dashboard.
-Step 2: Configure Compliance Manager to manage your compliance activities
+
+:::image type="content" source="../media/compliance-trial/compliance-portal.png" alt-text="Compliance Manager - dashboard":::
+
+### Step 2: Configure Compliance Manager to manage your compliance activities
+
 Start working with assessments and taking improvement actions to implement controls and improve your compliance score.
-1.	Choose a pre-built template to create and manage your first assessment.
-2.	Understand how to use templates for building assessments.
-3.	Perform implementation and testing work on improvement actions to complete controls in your assessments.
-4.	Better understand how different actions impact your compliance score.
 
-[!NOTE] Microsoft 365 or Office 365 E1/E3 subscription includes Microsoft Data Protection Baseline template. Microsoft 365 or Office 365 E5, E5 Compliance includes templates for:
-•	Microsoft Data Protection Baseline
-•	European Union GDPR
+1. Choose a pre-built template to create and manage your first assessment.
+1. Understand how to use templates for building assessments.
+1. Perform implementation and testing work on improvement actions to complete controls in your assessments.
+1. Better understand how different actions impact your compliance score.
 
-•	ISO/IEC 27001,
-•	NIST 800-53
+> [!NOTE]
+> Microsoft 365 or Office 365 E1/E3 subscription includes Microsoft Data Protection Baseline template. Microsoft 365 or Office 365 E5, E5 Compliance includes templates for:
+>  - Microsoft Data Protection Baseline
+> - European Union GDPR
+> - ISO/IEC 27001,
+> - NIST 800-53
+
 Compliance Manager includes 300+ regulatory or premium templates that can be purchased as an add-on with Compliance Manager premium assessments add-on. See the list here. With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service
 
-Step 3: Scaling up: use advanced functionality to meet your custom needs
+### Step 3: Scaling up: use advanced functionality to meet your custom needs
+
 Custom assessments are helpful for:
-•	Managing compliance for non-Microsoft 365 products such as third-party apps and services, on-premises applications, and other assets
-•	Managing your own custom or business-specific compliance controls
 
-1.	Extend a Compliance Manager template by adding your own controls and improvement actions
-2.	Create your own custom template
-3.	Modify an existing template to add or remove controls and actions
-4.	Set up automated testing of improvement actions
-5.	Reassign improvement actions to another user
+- Managing compliance for non-Microsoft 365 products such as third-party apps and services, on-premises applications, and other assets
+- Managing your own custom or business-specific compliance controls:
+  1. Extend a Compliance Manager template by adding your own controls and improvement actions
+  1. Create your own custom template
+  1. Modify an existing template to add or remove controls and actions
+  1. Set up automated testing of improvement actions
+  1. Reassign improvement actions to another user
 
-Organizational Concerns 
+**Organizational Concerns**
 
-Information protection
-The first organizational concern raised by customers is understanding what, where and how sensitive, business-critical data is being used and how to protect sensitive and confidential data from unauthorized access or leakage. 
+## Information protection
+
+The first organizational concern raised by customers is understanding what, where and how sensitive, business-critical data is being used and how to protect sensitive and confidential data from unauthorized access or leakage.
+
 Get data visibility and protection starting with Information Protection and Data Loss Prevention.
-•	Detect – discover sensitive data across your entire digital estate and understand how it’s being used.
-•	Protect – classify information and apply sensitivity labels with a unified approach. 
-•	Prevent – prevent accidental, malicious, and unauthorized oversharing of sensitive data. 
 
-Information Protection and Data Loss Prevention
-Discover, classify and protect your sensitive data
-One of the main concerns for most organizations, regarding compliance regulations, is how to classify their sensitive data, how to protect it, and prevent data loss. Purview Information Protection and Data Loss Protection Prevention solutions allow customers to discover and classify their sensitive data, to protect their sensitive data using sensitivity labels, and finally to setup data loss prevention policies to prevent unauthorized sharing, use, or transfer of sensitive data through multiple egress points. The classification, labeling, and DLP capabilities are natively built-in Microsoft 365 workloads such as SharePoint Online, Exchange Online, OneDrive for Business, and Teams. You can extend these to non-Microsoft workloads. 
-Set up your information protection and data loss prevention trial
+- Detect – discover sensitive data across your entire digital estate and understand how it’s being used.
+- Protect – classify information and apply sensitivity labels with a unified approach.
+- Prevent – prevent accidental, malicious, and unauthorized oversharing of sensitive data.
+
+## Information Protection and Data Loss Prevention
+
+**Discover, classify and protect your sensitive data**
+
+One of the main concerns for most organizations, regarding compliance regulations, is how to classify their sensitive data, how to protect it, and prevent data loss. Purview Information Protection and Data Loss Prevention solutions allow customers to discover and classify their sensitive data, to protect their sensitive data using sensitivity labels, and finally to setup data loss prevention policies to prevent unauthorized sharing, use, or transfer of sensitive data through multiple egress points. The classification, labeling, and DLP capabilities are natively built-in Microsoft 365 workloads such as SharePoint Online, Exchange Online, OneDrive for Business, and Teams. You can extend these to non-Microsoft workloads.
+
+### Set up your information protection and data loss prevention trial
+
 Eligible customers can activate default labels and default DLP policies for Information Protection and Data Loss Prevention. When you enable the default configuration in the trial, it will take about 2 minutes to configure all policies for your tenant and up to 24 hours to see the results of these default policies.
+
 Choosing the default configuration, with 1-click, the following is automatically configured:
-•	Sensitivity labels and a sensitivity label policy
-•	Client-side auto-labeling
-•	Service-side auto-labeling
-•	Data loss prevention (DLP) policies for Teams and devices
+
+- Sensitivity labels and a sensitivity label policy
+- Client-side auto-labeling
+- Service-side auto-labeling
+- Data loss prevention (DLP) policies for Teams and devices
 
 Activate the default labels and policies. If necessary, you can edit it manually after the configuration is complete. If necessary, you can edit it manually after the configuration is complete.
+
 You can follow the actions below or alternatively, use the Microsoft Purview Information Protection Setup Guide to set up your Information Protection and Data Loss Protection.
 
-Actions to try:
-Information Protection 
-Step 1: Automatically apply sensitivity labels to documents
+**Actions to try:**
+
+## Information Protection
+
+### Step 1: Automatically apply sensitivity labels to documents
+
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
-1.	Create and configure sensitivity labels
-2.	Publish sensitivity label policy to all users
-3.	Create an auto-labeling policy
-a.	Choose info you want label applied to
-b.	Define locations to apply label
-c.	Select label to apply
-d.	Run policy in simulation mode
 
- 
-New policy configuration for auto-labeling.
+1. Create and configure sensitivity labels
+1. Publish sensitivity label policy to all users
+1. Create an auto-labeling policy
+   - Choose info you want label applied to
+   - Define locations to apply label
+   - Select label to apply
+   - Run policy in simulation mode
 
-Step 2: Review and turn on auto-labeling policy
+:::image type="content" source="../media/compliance-trial/new-policy.png" alt-text="New policy configuration for auto-labeling":::
+
+### Step 2: Review and turn on auto-labeling policy
+
 Now on the Information protection > Auto-labeling page, you see your auto-labeling policy in the Simulation section.
-1.	Select your policy to see the details of the configuration and status. When the simulation is complete, select the Items to review tab to see which emails or documents matched the rules that are specified.
-2.	When you’re ready to run the policy without simulation, select the Turn on policy option.
 
-Data Loss Prevention
-Step 1: Prevent data loss on Microsoft Teams locations
+1. Select your policy to see the details of the configuration and status. When the simulation is complete, select the Items to review tab to see which emails or documents matched the rules that are specified.
+1. When you’re ready to run the policy without simulation, select the Turn on policy option.
+
+## Data Loss Prevention
+
+### Step 1: Prevent data loss on Microsoft Teams locations
+
 If your organization has data loss prevention (DLP), you can define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session.
-1.	Learn about DLP Licensing for Microsoft Teams and the scope of DLP protection 
-2.	Add Microsoft Teams as a location to existing DLP policies
-3.	Configure our default DLP policy for Teams or define a new DLP policy for Microsoft Teams
 
-Step 2: Prevent data loss on devices
-Microsoft Purview DLP for endpoints allows you to detect and prevent when sensitive items are used or shared on  monitor Windows 10, Windows 11 and macOS devices. and detect when sensitive items are used and shared.
-1.	Prepare your endpoints - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP meet these requirements
-2.	Onboard devices into device management - You must enable device monitoring   and onboard your endpoints before you can detect monitor   and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
-a.	Scenario 1 – Onboarding devices that have not been onboarded yet.
-b.	Scenario 2 - Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list.
-3.	Configure our default DLP policy for devices or define a new DLP policy for devices.
-4.	View Endpoint DLP alerts in DLP Alerts Management dashboard.
-5.	View Endpoint DLP data in activity explorer.
+1. Learn about DLP Licensing for Microsoft Teams and the scope of DLP protection
+1. Add Microsoft Teams as a location to existing DLP policies
+1. Configure our default DLP policy for Teams or define a new DLP policy for Microsoft Teams
 
-Step 3: Expand policies in scope or protection
+### Step 2: Prevent data loss on devices
+
+Microsoft Purview DLP for endpoints allows you to detect and prevent when sensitive items are used or shared on Windows 10, Windows 11 and macOS devices.
+
+1. Prepare your endpoints - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP meet these requirements
+1. Onboard devices into device management - You must onboard your endpoints before you can detect and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
+   - Scenario 1 – Onboarding devices that have not been onboarded yet.
+   - Scenario 2 - Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list.
+1. Configure our default DLP policy for devices or define a new DLP policy for devices.
+1. View Endpoint DLP alerts in DLP Alerts Management dashboard.
+1. View Endpoint DLP data in activity explorer.
+
+### Step 3: Expand policies in scope or protection
+
 You have flexibility in how you configure your DLP policies. You can start with our default DLP policy for Teams and devices and expand those policies to protect additional locations, sensitive information types, or labels. Note customers can run a DLP policy in test mode to understand or fine tune how the policy is working before it is turned on. In addition, you can expand upon the policy actions and customize alerting.
-1.	Add locations
-2.	Add sensitive information types or labels to protect
-3.	Add actions
-a.	Teams:
-i.	Prevent external access to sensitive documents
-ii.	Get policy tips to help educate users and instructions for customizing policy tips
-b.	Devices: switch from audit only to block
-4.	Configure and view alerts for data loss prevention policies
 
+1. Add locations
+1. Add sensitive information types or labels to protect
+1. Add actions
+   - Teams:
+      i. Prevent external access to sensitive documents
+      i. Get policy tips to help educate users and instructions for customizing policy tips
+   - Devices: switch from audit only to block
+1. Configure and view alerts for data loss prevention policies
 
-Governance
-Governance
+## Governance
+
 The second organizational concern customers convey is how to reduce risk and meet regulations by classifying data to keep what they need and delete what they don't need. Customers want compliant lifecycle management of sensitive data, to meet recordkeeping obligations, and to reduce the risk from over-retained data.
+
 Microsoft Purview Data Lifecycle Management and Records Management help you to:
-•	Apply retention and deletion policies to data where users collaborate to manage risk and prevent productivity loss.
-•	Ensure the correct policies are enforced by auto-classifying content.
-•	Comply with recordkeeping obligations with immutability options, defensible disposal, and advanced policy targeting.
 
-￼
-Data Lifecycle Management 
-Govern at scale with automation:
+- Apply retention and deletion policies to data where users collaborate to manage risk and prevent productivity loss.
+- Ensure the correct policies are enforced by auto-classifying content.
+- Comply with record keeping obligations with immutability options, defensible disposal, and advanced policy targeting.
+
+## Data Lifecycle Management
+
+### Govern at scale with automation
+
 Start with the Data Lifecycle Management Setup Guide. Additionally, you may want to consider implementing these common scenarios:
-1.	Auto-apply retention or deletion settings to sensitive data
-2.	Auto-apply retention or deletion settings to everything in a SharePoint document library
-3.	Target a retention or deletion policy to only specific users or mailboxes
 
-Step 1: Auto-apply retention or deletion settings to sensitive data
+1. Auto-apply retention or deletion settings to sensitive data
+1. Auto-apply retention or deletion settings to everything in a SharePoint document library
+1. Target a retention or deletion policy to only specific users or mailboxes
+
+### Step 1: Auto-apply retention or deletion settings to sensitive data
+
 Start by managing the lifecycle of sensitive data by managing it automatically using retention and deletion settings. First, decide on the type of sensitive data that you want to protect. You may want to use one of our pre-built sensitive information types. Next, create a retention label with your desired retention or deletion settings. Finally, automatically apply the retention label  that contains the sensitive information type you selected.
 
-Step 2: Auto-apply retention or deletion settings to everything in a SharePoint document library, folder, or document set
+### Step 2: Auto-apply retention or deletion settings to everything in a SharePoint document library, folder, or document set
+
 You can set a default retention label in SharePoint to automatically apply it to all items within a specific document library, folder, or document set in SharePoint. This option is useful when users store a specific type of document in one of these locations.
 
 First, identify the content you would like to manage and the location of the content in SharePoint. Next, create a retention label with your desired retention or deletion settings. Finally, publish the retention to the document library, folder, or document set.
 
-Step 3: Dynamically target retention policies with Adaptive Policy Scopes
+### Step 3: Dynamically target retention policies with Adaptive Policy Scopes
+
 Many customers want to target a retention policy to specific users or mailboxes. For example, they may want to apply a longer retention period to the mailboxes of people in leadership roles or apply shorter retention to shared mailboxes. Adaptive policy scopes allow you to do this by using their AD attributes to target the policy. If one of the attribute values changes then the retention policy will automatically update its membership.
 
-First, decide what attributes you will use to target the users or mailboxes that you want to include or exclude from your policy. Next, Create an Adaptive Policy Scope and use it with a retention policy   .  
- 
-Records Management
-Manage high-value items for business, legal, or regulatory record-keeping requirements:
+First, decide what attributes you will use to target the users or mailboxes that you want to include or exclude from your policy. Next, Create an Adaptive Policy Scope and use it with a retention policy.  
+
+## Records Management
+
+### Manage high-value items for business, legal, or regulatory record-keeping requirements
+
 Records Management helps you to comply with more granular retention and deletion requirements. As an example, you can track your retention schedule or use flexible automation options. Additionally, you can make content immutable, trigger retention using an event, or require approval before items are disposed.
 
 Here are our most popular records management scenarios:
-1.	Automatically apply a retention label based on SharePoint file metadata
-2.	Conduct a disposition review at the end of a retention period
-3.	Make content immutable to prevent users from editing it
 
-Step 1: Automatically apply a retention label based on SharePoint file metadata 
+1. Automatically apply a retention label based on SharePoint file metadata
+1. Conduct a disposition review at the end of a retention period
+1. Make content immutable to prevent users from editing it
+
+### Step 1: Automatically apply a retention label based on SharePoint file metadata
+
 Auto-applying labels removes the need for your users to manually perform the labeling activities. As an example, you can auto-apply retention labels to content that has specific metadata properties in SharePoint.
 First, decide the metadata properties you would like to use, the locations where you want to look for matches, and the retention or deletion settings you want to apply. Next, create a retention label. Then, follow these steps to auto-apply the label based on SharePoint metadata. 
 
-Step 2: Review content to approve before it's permanently deleted
+### Step 2: Review content to approve before it's permanently deleted
+
 Some organizations have a requirement to review content at the end of its retention period before it is permanently deleted. Using Records Management, users you specify ("reviewers") can be notified to review the content and approve the permanent disposal action. Reviewers can also choose to assign a different retention period to the content or postpone deletion. Learn more here:   Disposition of content.
 
-Step 3: Make content immutable to prevent users from editing it
+### Step 3: Make content immutable to prevent users from editing it
+
 Some content has a lifecycle phase where both the file and the metadata should not be available for editing, often called declaring the content as an immutable record. Learn how to configure this option in Records Management: Create a retention label that declares content as a record or a regulatory record  The second organizational concern customers convey is how to determine what data they need to keep vs. delete to prevent the proliferation of data. Customers want compliant management of sensitive data, meet recordkeeping obligations, and reduce the risk from over-retained data.
-Manage your organization’s data using Data Lifecycle Management and Records Management. 
-•	Mitigate – retain or delete data and manage records where users collaborate to manage risk and prevent productivity loss.
-•	Comply – demonstrate compliance with label analytics insights, defensible disposal, and rich audit trails.
-•	Achieve scalability – manage non-Microsoft data with pre-built data connectors.*
 
-*Pre-built data connectors include connectors built by Microsoft and by partners—Veritas, Telemessage, CellTrust and 17a-4 LLC. Except for Veritas, Telemessage, CellTrust and 17a-4 LLC, Microsoft does not have direct relationships with the data source companies in bringing these data connectors to the platform.
+## Manage insider risk
 
-Data Lifecycle Management 
-Govern at scale with automation:
-Improve your ability to adapt to changes in your organization with policy scopes that automatically update. Automate labelling of content to reduce manual efforts and improve compliance posture.
-Start with the Error! Hyperlink reference not valid.. 
-1.	Auto-apply to sensitive data
-2.	Apply a default label to a document library
-3.	Adaptive scopes
-
-Step 1: Dynamically target retention policies with Adaptive Policy Scopes
- Adaptive policy scopes allow you to dynamically target a policy to certain users, groups, or sites based on their AD attributes. Attributes for scopes can be selected from a list or customized using an advanced query builder.
-Policies using adaptive policy scopes stay current as the organization changes with new employees joining or leaving. Additionally, they are not subject to the previous limits of 100/1,000 locations included in a policy.
-Error! Hyperlink reference not valid.
-
-Step 2: Automate labeling to apply a label to all items by default
- Default labels allow you to automatically apply a retention label to all items within a specified library, folder, or document set in SharePoint.
-
-Error! Hyperlink reference not valid.
-
- Records Management
-Manage high-value items for business, legal, or regulatory record-keeping requirements:
-Use integrated Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Leverage automation capabilities from creation through collaboration, to declare records, retain contents, and dispose of them at the end. 
- 
-Step 1: Mark contents as records
- When content is declared a record, restrictions are placed on the item in terms of what actions are allowed or blocked, additional activities about the items are logged, and you have proof of disposition if the items are deleted at the end of their retention period.
-
-Error! Hyperlink reference not valid.
-
-Step 2: Review content to approve before it's permanently deleted
- At the end of the retention period, users you specify ("reviewers") can be notified to review the content and approve the permanent disposal action. This supports if a different action than deletion is more appropriate, such as assigning a different retention period to the content or suspending deletion for an audit.
-
-Error! Hyperlink reference not valid.
-
-Step 3: Apply labels automatically to content that matches specific conditions
- Auto-applying labels removes the need for your users to manually perform the labeling activities. You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for trainable classifiers.
-
-1.	Error! Hyperlink reference not valid.
-2.	Error! Hyperlink reference not valid.
-3.	Error! Hyperlink reference not valid.
-
-
-Manage insider risk 
 The third organizational concern we hear is how to protect your data and respond to potential insider data security incident risks, which may include data theft and inappropriate sharing of confidential information across all platforms like email and IM (e.g. Microsoft Teams).  
 Using Insider Risk Management and Communication Compliance you can quickly identify and act on insider data security incidents and regulatory requirement risks, empowering you to collaborate with your Security, HR, Legal and other teams, depending on your organization.
-•	Get rich insights – identifying hidden risks with customizable ML templates requiring no endpoint agents.
-•	Investigate – integrated investigation workflows enable end-to-end collaboration across Security, HR and Legal.
-•	Know privacy is built-in – protect user privacy and, prevent bias by removing identifiable user details, like name or email, while mitigating organizational risk.
+
+- Get rich insights – identifying hidden risks with customizable ML templates requiring no endpoint agents.
+- Investigate – integrated investigation workflows enable end-to-end collaboration across Security, HR and Legal.
+- Know privacy is built-in – protect user privacy and prevent bias by removing identifiable user details, like name or email, while mitigating organizational risk.
 
 Insider Risk Management
 Detect and remediate insider risks
