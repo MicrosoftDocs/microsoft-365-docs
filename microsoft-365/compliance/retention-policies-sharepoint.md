@@ -129,6 +129,8 @@ Because the retention label is not applied to the original file, the labeled fil
 
 The copy that's stored in the Preservation Hold library is typically created within an hour from the cloud attachment being shared.
 
+To safeguard against the original file being deleted by users before the copy can be created and labeled, files in locations included in the auto-labeling policy are automatically copied into the Preservation Hold library if they are deleted. These files have a temporary retention period of one day and then follow the standard cleanup process described on this page. When the original file has been deleted, the copy for retaining cloud attachments uses this version of the file. The automatic and temporary retention of deleted files in the Preservation Hold library is unique to auto-labeling policies for cloud attachments.
+
 ## How retention works with OneNote content
 
 When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote pages and sections are individual files that inherit the retention settings. This means that each section within a page will be individually retained and deleted, according to the retention settings you specify.

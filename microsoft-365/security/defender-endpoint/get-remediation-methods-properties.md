@@ -1,6 +1,6 @@
 ---
 title: Remediation activity methods and properties
-description: The API response contains threat & vulnerability management remediation activities created in your tenant. You can request all the remediation activities, only one remediation activity, or information about exposed devices for a selected remediation task.
+description: The API response contains Microsoft Defender Vulnerability Management remediation activities created in your tenant. You can request all the remediation activities, only one remediation activity, or information about exposed devices for a selected remediation task.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -37,7 +37,7 @@ ms.custom: api
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-The API response contains [Threat & vulnerability management](next-gen-threat-and-vuln-mgt.md) remediation activities that have been created in your tenant.
+The API response contains [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md) remediation activities that have been created in your tenant.
 
 ## Methods
 
@@ -90,6 +90,6 @@ vendorId|String|Related vendor name
 
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
