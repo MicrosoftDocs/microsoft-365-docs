@@ -75,7 +75,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.78.13 or later
-- Your device must be in the InsiderSlow (Preview) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
+  - Your device must be in either the InsiderSlow (Preview) or InsiderFast (Beta) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
 
 ```bash
 mdatp --health releaseRing 
