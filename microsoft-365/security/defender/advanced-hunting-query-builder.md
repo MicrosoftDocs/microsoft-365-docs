@@ -93,7 +93,7 @@ To specify a set of data to be used in the query, select **Select a filter**. Ex
  
 ![Screenshot showing different filters you can use](../../media/guided-hunting/query-builder-filters.png)
 
-Type the section's titles to find the filter or use the search box at the top of the list. Sections ending in *info* contain filters that provide information about the different components you can look at. Sections ending in *events* contain filters that allow you to look for any system or network event. 
+Type the section's titles to find the filter or use the search box at the top of the list. Sections ending in *info* contain filters that provide information about the different components you can look at and will filter for the states of entities. Sections ending in *events* contain filters that allow you to look for any monitored event on this entity. For instance, to hunt for activities involving certain devices, you can use the filters under the **Device events** section.
 
 >[!NOTE]
 > Choosing a filter that isn't in the basic filters list deactivates or grays out the toggle to return to the basic filters view. To reset the query or remove existing filters in the current query, select **Clear all**. This also reactivates the basic filters list.

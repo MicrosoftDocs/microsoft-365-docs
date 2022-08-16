@@ -264,10 +264,6 @@
                       href: advanced-hunting-best-practices.md
                     - name: Handle errors
                       href: advanced-hunting-errors.md
-                    - name: Quotas and usage parameters
-                      href: advanced-hunting-limits.md
-                    - name: Extend data coverage
-                      href: advanced-hunting-extend-data.md
              - name: Data schema
                items: 
                 - name: Understand the schema
@@ -347,7 +343,11 @@
              - name: Take action on query results
                href: advanced-hunting-take-action.md
              - name: Link query results to an incident
-               href: advanced-hunting-link-to-incident.md                                     
+               href: advanced-hunting-link-to-incident.md
+             - name: Quotas and usage parameters
+               href: advanced-hunting-limits.md
+             - name: Extend data coverage
+               href: advanced-hunting-extend-data.md                                                    
        - name: Track and respond to emerging threats
          items:
               - name: Threat analytics overview
