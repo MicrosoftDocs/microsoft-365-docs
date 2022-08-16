@@ -71,7 +71,7 @@ You can use web content filtering for testing with Network protection for Linux.
 
 ## Instructions
 
-Deploy Linux manually, see [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md]
+Deploy Linux manually, see [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md)
 
 The following example shows the sequence of commands needed to the mdatp package on ubuntu 20.04 for insiders-fast channel.
 

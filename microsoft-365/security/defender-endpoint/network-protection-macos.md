@@ -76,7 +76,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.78.13 or later
-- Your device must be in the InsiderFast (Preview) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
+- Your device must be in the InsiderSlow (Preview) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
 
 ```bash
 mdatp --health releaseRing 
@@ -85,7 +85,7 @@ mdatp --health releaseRing
 If your device isn't already in the  InsiderSlow(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
 
 ```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
+defaults write com.microsoft.autoupdate2 ChannelName -string InsiderSlow
 ```
 
 Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the device group remotely. For more information, see [Set preferences for Microsoft 365 Defender for Endpoint on macOS](mac-preferences.md).
@@ -292,7 +292,7 @@ Web content filtering is part of the [Web protection](web-protection-overview.md
 
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
-Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
+Web content filtering is available on the major web browsers, with blocks performed by Network Protection (Safari, Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
 > [!div class="mx-imgBorder"]
 > ![MEM Create Profile](images/network-protection-wcf-add-policy.png)
