@@ -5,14 +5,14 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 search.appverid:
-  - MET150
+- MET150
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.custom:
 description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
@@ -34,11 +34,11 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
 - URLs to block.
 - Files to block.
-- Sender emails or domains to block.
+- Domains or email addresses to block - both sending and receiving.
 - Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
 - URLs to allow.
 - Files to allow.
-- Sender emails or domains to allow.
+- Domains or email addresses to allow - both sending and receiving.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -54,7 +54,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
 
-- For senders, URLs, and file hashes, the Tenant Allow/Block List allows 500 entries each for both allows and blocks, making it a total of 1000 entries. For spoofing (spoofed senders), the total number of entries allowed is 1024.
+- For domains or email addresses, URLs, and file hashes, the Tenant Allow/Block List allows 500 entries each for both allows and blocks, making it a total of 1000 entries. For spoofed senders(spoofing), the total number of entries allowed is 1024.
 
 - The maximum number of characters for each entry is:
   - File hashes = 64
@@ -104,14 +104,14 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
 2. Select the tab you want. The columns that are available depend on the tab you selected:
 
-   - **Senders**:
-     - **Value**: The sender domain or email address.
+   - **Domains & addresses**:
+     - **Value**: The domain or email address.
      - **Action**: The value **Allow** or **Block**.
      - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
-   - **Spoofing**
+   - **Spoofed senders**
      - **Spoofed user**
      - **Sending infrastructure**
      - **Spoof type**: The value **Internal** or **External**.
@@ -135,8 +135,8 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
    You can click **Group** to group the results. The values that are available depend on the tab you selected:
 
-   - **Senders**: You can group the results by **Action**.
-   - **Spoofing**: You can group the results by **Action** or **Spoof type**.
+   - **Domains & addresses**: You can group the results by **Action**.
+   - **Spoofed sender**: You can group the results by **Action** or **Spoof type**.
    - **URLs**: You can group the results by **Action**.
    - **Files**: You can group the results by **Action**.
 
@@ -144,12 +144,12 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 
    Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
 
-   - **Senders**
+   - **Domains & addresses**
      - **Action**
      - **Never expire**
      - **Last updated date**
      - **Remove on**
-   - **Spoofing**
+   - **Spoofed senders**
      - **Action**
      - **Spoof type**
    - **URLs**
@@ -170,16 +170,16 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab that contains the type of entry that you want to modify:
-   - **Senders**
-   - **Spoofing**
+   - **Domains or email addresses**
+   - **Spoofed senders**
    - **URLs**
    - **Files**
 
 3. Select the entry that you want to modify, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The values that you are able to modify in the flyout that appears depend on the tab you selected in the previous step:
-   - **Senders**
+   - **Domains & addresses**
      - **Never expire** and/or expiration date.
      - **Optional note**
-   - **Spoofing**
+   - **Spoofed senders**
      - **Action**: You can change the value to **Allow** or **Block**.
    - **URLs**
      - **Never expire** and/or expiration date.
@@ -188,7 +188,7 @@ We recommend letting entries automatically expire after 30 days to see if the sy
      - **Never expire** and/or expiration date.
      - **Optional note**
 
-    Note that the values for senders, URLs, and files never expire for blocked entries only. 
+    Note that the values for domains or email addresses, URLs, and files never expire for blocked entries only. 
 
 4. When you're finished, click **Save**.
 
@@ -200,8 +200,8 @@ We recommend letting entries automatically expire after 30 days to see if the sy
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab that contains the type of entry that you want to remove:
-   - **Senders**
-   - **Spoofing**
+   - **Domains & addresses**
+   - **Spoofed senders**
    - **URLs**
    - **Files**
 
