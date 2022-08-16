@@ -20,6 +20,10 @@ ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
 
+## Applies to
+
+- Exact data match (EDM) sensitive information type (SIT) creation using PowerShell.
+
 Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of a exact string, you can use *configurable match* to tell Microsoft Purview to ignore case and some delimiters.
 
 > [!IMPORTANT]

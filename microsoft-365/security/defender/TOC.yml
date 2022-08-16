@@ -190,6 +190,10 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Suspicious inbox manipulation rules
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Suspicious password-spray-related IP address
+                      href: alert-grading-password-spray.md                      
+                    - name: Malicious exchange connectors
+                      href: alert-grading-for-malicious-exchange-connectors.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks

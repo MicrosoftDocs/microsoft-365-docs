@@ -11,6 +11,7 @@ ms.date:                   05/30/2022
 ms.prod:                   m365-security
 ms.localizationpriority:   medium
 ms.collection:             M365-security-compliance
+ms.technology:             m365d
 f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
