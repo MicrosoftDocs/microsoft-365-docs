@@ -372,18 +372,18 @@ Compliance boundaries create logical boundaries within an organization that cont
 
 Set up compliance boundaries for eDiscovery investigations:
 
-1. Identify a user attribute to define your agencies
-1. Create a role group for each agency
-1. Create a search permissions filter to enforce the compliance boundary
-1. Create an eDiscovery case for an intra-agency investigations
+1. [Identify a user attribute to define your agencies](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
+1. [Create a role group for each agency](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
+1. [Create a search permissions filter to enforce the compliance boundary](set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
+1. [Create an eDiscovery case for an intra-agency investigations](set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the eDiscovery (Premium) collection workflow to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-draft-collection) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
 [Learn more about collection queries and estimates.](building-search-queries.md)
 
-## Audit (Premium)
+## Microsoft Purview Audit (Premium)
 
 **Conduct investigations**
 
@@ -393,20 +393,20 @@ Advanced Audit helps organizations to conduct forensic and compliance investigat
 
 Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
-Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, perform the following steps for each user.
+Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
 
-1. Enable Audit (Premium) events - enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint to be audited for each user in Exchange Online PowerShell.
-1. Set up audit retention policies - create additional audit log retention policies to meet the requirements of your organization’s security operations, IT, and compliance teams.
-1. Search for Audit (Premium) events - search for crucial Audit (Premium) events and other activities when conducting forensic investigations.
+1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization’s security operations, IT, and compliance teams.
+1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
 
 ### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies
 
 Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization.
 
-1. Before you create an audit log retention policy – key things to know before creating your policy.
-1. Create an audit log retention policy
-1. Manage audit log retention policies in the Microsoft Purview compliance portal - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
-1. Create and manage audit log retention policies on PowerShell - You can also use Security & Compliance Center PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
+1. Before you create an audit log retention policy – [key things to know](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) before creating your policy.
+1. [Create an audit log retention policy](audit-log-retention-policies.md#create-an-audit-log-retention-policy).
+1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
+1. [Create and manage audit log retention policies on PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) - You can also use Security & Compliance Center PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
 
 ## Additional trials and add-ons
 
