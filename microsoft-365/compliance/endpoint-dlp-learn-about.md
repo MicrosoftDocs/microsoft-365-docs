@@ -61,7 +61,7 @@ See, [Design a data loss prevention policy](dlp-policy-design.md) for more guida
 
 ## Monitored files
 
-Endpoint DLP supports monitoring of these file types. DLP audits the activities for these file types, even if there isn't a policy match. 
+Endpoint DLP supports monitoring of these file types through policy:
 
 - Word files
 - PowerPoint files
@@ -78,6 +78,13 @@ Endpoint DLP supports monitoring of these file types. DLP audits the activities 
 - .h files
 - .java files
  
+DLP audits the activities for these file types, even if there isn't a policy match: 
+
+- Word files
+- PowerPoint files
+- Excel files
+- PDF files
+
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
 > [!NOTE]
