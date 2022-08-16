@@ -1,7 +1,7 @@
 ---
 title: Configure privacy settings in Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -25,6 +25,9 @@ If you are the Microsoft Whiteboard administrator for your organization, you can
 - What level of diagnostic data is collected and sent to Microsoft about the Whiteboard client software running on the user’s device.
 
 - Whether optional connected experiences in Whiteboard are available to your users.
+
+In order to configure privacy settings, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
+
 
 To configure the level of diagnostic data, sign in to the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) with your administrator account. From the admin center home page, go to **Show all > Settings > Org settings > Whiteboard**.
 

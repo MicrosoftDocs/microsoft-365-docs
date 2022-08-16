@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
 ---
 
@@ -35,6 +35,10 @@ The following information lists the updates made to the Microsoft Defender for E
 > ```
 
 ## Release notes - newest to oldest (dd.mm.yyyy)
+
+### 08.08.2022
+
+- Added new Export Device Health API method - GET /api/public/avdeviceshealth [Export device health methods and properties](device-health-api-methods-properties.md)
 
 ### 06.10.2021
 

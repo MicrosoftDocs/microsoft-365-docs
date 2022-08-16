@@ -26,6 +26,12 @@ ms.technology: mde
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+>[!NOTE]
+> Microsoft Defender for Endpoint's **Anti malware engine** is now generally available. All the users are required to have a Microsoft Defender for Endpoint version above **1.0.3815.0000** to utilize this new malware protection capability. Users on Microsoft Defender for Endpoint version below 1.0.3815.0000 will be sent notifications and in-app overlay messages to update their Microsoft Defender for Endpoint application. Users can click on the link provided in the overlay message to  go to the managed play store and update the application. 
+>
+> If users can't access the play store, the app can be updated through the company portal. 
+
+
 ## Microsoft defender on Android enterprise BYOD personal profile
 Microsoft Defender for Endpoint is now supported on Android Enterprise personal profile (BYOD only) with all the key features including malware scanning, protection from phishing links, network protection and vulnerability management. This support is coupled with [privacy controls](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) to ensure user privacy on personal profile. For more information, read the [announcement](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) and the [deployment guide](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).
 
@@ -49,9 +55,9 @@ To update, users can use the following steps:
 
 Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the play store. With this update, the app will be available as preview for **Consumers in the US region** - based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. Please see [this blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) for more details.
 
-## Threat and Vulnerability Management
+## Vulnerability Management
 
-On January 25, 2022, we announced the general availability of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+On January 25, 2022, we announced the general availability of Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## Upcoming permission changes for Microsoft Defender for Endpoint running Android 11 or later (Nov 2021)
 
