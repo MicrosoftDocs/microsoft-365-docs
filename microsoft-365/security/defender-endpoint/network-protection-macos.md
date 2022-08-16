@@ -51,10 +51,9 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
 
 ## New and updated capabilities
 
-- You can run your corporate VPN in tandem or “side by side” with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.  
-- You can use Web content filtering for testing with network protection for macOS.  
-  - [Web content filtering](web-content-filtering.md)
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal should be respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as  Microsoft Defender for Cloud Applications or Custom Indicators currently also require network protection.
+- You can run your corporate VPN in tandem or “side by side” with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
+  - Web content filtering is supported with network protection for macOS.  
+  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as  Microsoft Defender for Cloud Applications or Custom Indicators currently also require network protection.
 
 ### Known issues
 

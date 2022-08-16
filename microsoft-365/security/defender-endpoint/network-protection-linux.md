@@ -269,25 +269,25 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
-<!-- Hide {this intro with no subsequent list items}
-[To add a new policy:
-
-1. Select **Add policy** on the **Web content filtering** page in **Settings**.
-2. Specify a name
-3. Select the categories to block. Use the expand icon to fully expand each parent category and select specific web content categories.
-4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
-5. Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected devices.
-
-> [!NOTE]
-> If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
->
-> ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.]
--->
-
 > [!div class="mx-imgBorder"]
 > ![MEM Create Profile](images/network-protection-wcf-add-policy.png)
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
+
+### Microsoft Defender for Cloud Applications
+
+The Microsoft Defender for Cloud Applications / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
+
+> [!div class="mx-imgBorder"]
+> ![MEM Create Profile](images/network-protection-macos-mcas-monitored-apps.png)
+
+Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article). 
+
+> [!NOTE]
+> Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in  Microsoft Defender for Cloud Applications.
+
+> [!div class="mx-imgBorder"]
+> ![MEM Create Profile](images/network-protection-macos-mcas-cloud-app-security.png)
 
 ## See also
 
