@@ -1207,6 +1207,8 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
+            - name: Share DLP Alerts (preview)
+              href: dlp-share-alerts.md
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
