@@ -199,7 +199,8 @@ The **Security assessments** card shows the overall exposure level, security rec
 
 The **Device health status** card shows a summarized health report for the specific device. The status indicates when a device is up to date, or when a quick scan has failed. [MARYSIA - PLEASE LET ME KNOW OF THE OTHER STATUS :) THANK YOU]. Other information includes, the last full scan, last quick scan, security intelligence, engine, platform, and Defender Antivirus mode. 
 
-Currently, the overall status for mac and Linux devices is not available. However, the information in the **Type** and **State** column is updated to show the specific status of each  
+>[!NOTE]
+>Currently, the overall status for macOS and Linux devices is not available. However, the information in the **Type** and **State** column is updated to show its specific statuses.  
 
 To gain a in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
 
