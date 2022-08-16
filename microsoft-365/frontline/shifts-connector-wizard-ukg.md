@@ -100,7 +100,7 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 Select the instances that you want to map.
 
-:::image type="content" source="media/shifts-connector-wizard-sites.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-sites.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-sites.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-sites.png":::
 <a name="mapping"> </a>
 <a name="search_teams"> </a>
 Then, map each instance to a team in Teams. You can map an instance to an existing team or you can create a new team.
