@@ -42,17 +42,17 @@ We recommend that you become familiar with Compliance Manager and improve your o
 
 Our Compliance Manager overview page is the best first stop for a comprehensive review of what Compliance Manager is and how it works.
 
-- Start with the Microsoft Purview Compliance Manager Setup Guide.
+- Start with the [Microsoft Purview Compliance Manager Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197452).
 
 You may also want to jump right to key sections of our documentation using the links below:
 
-- Understand your compliance score
-- Overview of key elements: controls, assessments, templates, and improvement actions
-- Understand the Compliance Manager dashboard
-- Filter your dashboard view
-- Learn about improvement actions
-- Understand assessments
-- Do a quick scan of your environment using the Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)
+- [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
+- [Overview of key elements](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions): controls, assessments, templates, and improvement actions
+- [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+- [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
+- [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
+- [Understand assessments](compliance-manager.md#assessments)
+- [Do a quick scan of your environment using the Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)](compliance-manager-mcca.md)
 
 :::image type="content" source="../media/compliance-trial/compliance-portal.png" alt-text="Compliance Manager - dashboard":::
 
