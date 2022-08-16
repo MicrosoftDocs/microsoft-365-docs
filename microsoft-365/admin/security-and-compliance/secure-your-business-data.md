@@ -65,7 +65,7 @@ The following table describes the top 10 days to secure your business data with 
 
 (<a id="fn1">1</a>) [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices.
 
-## Comparing features across Microsoft 365 for business plans
+## Comparing features in Microsoft 365 for business plans
 
 The following table summarizes the capabilities that are included in Microsoft 365 for business plans. 
 
