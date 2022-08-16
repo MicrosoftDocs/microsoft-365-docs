@@ -194,6 +194,17 @@ The **Security assessments** card shows the overall exposure level, security rec
 
 :::image type="content" source="images/security-assessments.png" alt-text="The security assessments card" lightbox="images/security-assessments.png":::
 
+
+### Device health status
+
+The **Device health status** card shows a summarized health report for the specific device. 
+
+
+Currently, the overall status for mac and Linux devices is not available. However, the information in the **Type** and **State** column is updated. 
+
+To gain a in-depth view of the report, you can 
+
+
 ## Related topics
 
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
