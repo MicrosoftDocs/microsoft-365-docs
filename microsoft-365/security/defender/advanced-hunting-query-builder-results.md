@@ -31,7 +31,7 @@ ms.technology: m365d
 
 In hunting using guided mode, the results of the query appear in the **Results** tab. 
 
-[ ![banner inviting user to take the tour](../../media/guided-hunting/results-view.png) ](../../media/guided-hunting/results-view.png#lightbox)
+[![banner inviting user to take the tour](../../media/guided-hunting/results-view.png) ](../../media/guided-hunting/results-view.png#lightbox)
 
 You can work on the results further by exporting them to a CSV file by selecting **Export**. This downloads the CSV file for your use.
 

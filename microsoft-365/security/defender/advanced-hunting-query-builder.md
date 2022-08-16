@@ -71,7 +71,8 @@ When you choose one data source, for instance, **Endpoints**, the query builder 
 
 Once the query is ready, select the blue **Run query** button. If the button is grayed out, it means the query needs to be filled out or edited further. 
 
-Note that the basic filter view uses the **AND** operator only, meaning running the query generates results for which all set filters are true. 
+>[!NOTE]
+> The basic filter view uses the **AND** operator only, meaning running the query generates results for which all set filters are true. 
 
 ## Use more filters
 
@@ -98,13 +99,17 @@ Type the section's titles to find the filter or use the search box at the top of
 > Choosing a filter that isn't in the basic filters list deactivates or grays out the toggle to return to the basic filters view. To reset the query or remove existing filters in the current query, select **Clear all**. This also reactivates the basic filters list.
 
 
-[MORE INFO ABOUT OPERATORS]
+Next, set the appropriate condition to further filter the data by selecting it from the second dropdown menu and providing entries in the third dropdown menu:
+
+![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators-equals.png)
+
+You can add more conditions to your query by using **AND**, and **OR** conditions. AND returns results that fulfill all conditions in the query, while OR returns results that fulfill any of the conditions in the query.  
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators.png)
 
-You can further narrow down your query by using **AND**, and **OR** conditions. AND returns results that fulfill all conditions in the query, while OR returns results that fulfill any of the conditions in the query.  
+Refining your query allows you to automatically sift through voluminous records to generate a list of results that is already targeted to your specific threat hunting need.
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators.png)
+To get to know what data types are supported and other guided mode capabilities to help you fine-tune your query, read [Refine your query in guided mode](advanced-hunting-query-builder-details.md).
 
 ## Try sample query walk-throughs
 
@@ -139,7 +144,7 @@ Finally, select **Run query** to hunt for all successful network communications 
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-5.png)
 
-### Hunt for high confidence phish or spam emails delivered to inbox [NEEDS NEW IMAGES]
+### Hunt for high confidence phish or spam emails delivered to inbox 
 
 To look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select ConfidenceLevel under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
 
