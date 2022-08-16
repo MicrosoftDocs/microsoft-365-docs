@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type workflow classic experience
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, auto-lableing, eDiscovery and certain content governance tasks.  This article outlines the workflow and links to the procedures for each phase using the classic experience.
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, auto-labeling, eDiscovery and certain content governance tasks.  This article outlines the workflow and links to the procedures for each phase using the classic experience.
 
 ## Applies to
 
