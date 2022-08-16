@@ -18,6 +18,7 @@ ms.collection:
 - deploy security baselines
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
 ---

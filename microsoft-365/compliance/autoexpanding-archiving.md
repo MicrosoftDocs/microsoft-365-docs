@@ -21,8 +21,6 @@ description: "Learn about auto-expanding archiving, which provides additional ar
 
 # Learn about auto-expanding archiving
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 In Office 365, archive mailboxes provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage is available. In the past, when the 100-GB storage quota was reached, organizations had to contact Microsoft to request additional storage space for an archive mailbox. That's no longer the case.
 
 The archiving feature in Microsoft 365 (called *auto-expanding archiving*) provides up to 1.5 TB of additional storage in archive mailboxes. When the storage quota in the archive mailbox is reached, Microsoft 365 automatically (and incrementally) increases the size of the archive until the archive mailbox reaches 1.5 TB.
@@ -82,7 +80,7 @@ To access messages that are stored in an auto-expanded archive, users have to us
 
 - Outlook 2016 or Outlook 2019 for Windows
 
-- Outlook on the web
+- Outlook on the web when the primary mailbox is in Exchange Online rather than on-premises
 
 - Outlook 2016 or Outlook 2019 for Mac
 
@@ -94,7 +92,7 @@ Here are some things to consider when using Outlook or Outlook on the web to acc
 
 - You can delete items in an auto-expanded storage area. However, you can't use the Recover Deleted Items feature to recover an item after auto-expanding archiving is enabled for a mailbox.
 
-- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises).
+- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
 
 - Auto-expanded archive search is available in Outlook for Windows in Monthly Enterprise Channel. With this update the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 

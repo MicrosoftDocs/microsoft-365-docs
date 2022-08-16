@@ -21,8 +21,6 @@ description: "This article describes how to manage eDiscovery (Standard) cases. 
 
 # Close, reopen, and delete a eDiscovery (Standard) case
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article describes how to close, reopen, and delete Microsoft Purview eDiscovery (Standard) cases in Microsoft 365.
 
 ## Close a case

@@ -59,6 +59,8 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 - Disabling automatic actions on detected threats
+- Suppressing notifications in the Windows Security app
+- Disabling scanning of archives and network files
 
 ### How it works
 
@@ -145,7 +147,6 @@ If your organization uses Microsoft Endpoint Manager (MEM) you can turn tamper p
 
 ### Requirements for managing tamper protection in Endpoint Manager
 
-- Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 - Your organization uses [Microsoft Endpoint Manager to manage devices](/mem/endpoint-manager-getting-started). (Microsoft Endpoint Manager (MEM) licenses are required; MEM is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses.)
 - Your Windows devices must be running Windows 11 or Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), or later. (For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).)
@@ -233,9 +234,9 @@ Using [endpoint detection and response](overview-endpoint-detection-response.md)
 
 ## Review your security recommendations
 
-Tamper protection integrates with [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) capabilities. [Security recommendations](tvm-security-recommendation.md) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
+Tamper protection integrates with [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md) capabilities. [Security recommendations](tvm-security-recommendation.md) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
-To learn more about Threat & Vulnerability Management, see [Dashboard insights - threat and vulnerability management](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
+To learn more about Microsoft Defender Vulnerability Management, see [Dashboard insights - Defender Vulnerability Management](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
 ## Frequently asked questions
 

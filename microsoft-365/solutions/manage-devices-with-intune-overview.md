@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-overview
+- zerotrust-solution
 ms.custom:
 keywords:
 ---

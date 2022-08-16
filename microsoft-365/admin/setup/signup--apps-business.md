@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 description: "Sign up for Microsoft 365 Apps for business."
 ---

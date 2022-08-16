@@ -25,8 +25,6 @@ ms.custom:
 
 # Search the audit log in the compliance portal
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
 ## Microsoft 365 services that support auditing
@@ -58,6 +56,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Retention policies and retention labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 | Sensitive information types|DlpSensitiveInformationType|
 | Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| Encrypted message portal|OMEPortal|
 | SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
 | Stream|MicrosoftStream|
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
@@ -404,7 +403,7 @@ Click one of the following links to go to a specific table.
         [Encrypted message portal activities](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        [SystemSync activities] (#systemsync-activities)
+        [SystemSync activities](#systemsync-activities)
     :::column-end:::
     :::column:::
         

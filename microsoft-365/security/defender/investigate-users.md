@@ -49,7 +49,10 @@ From here, you can select **Go to user page** to see the details of a user accou
 
 You can also see this page by selecting the name of the user account from the list on the **Users** page.
 
-You can see group membership for the user by selecting the number under **Groups**.
+You can see group membership for the user by selecting the number under **Groups**. Selecting a group will open the **Groups** pane, which includes additional information such as the creation date and group membership.
+
+> [!NOTE]
+> Group membership only displays the first 1000 group members.
 
 :::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="The information about the group membership for a user in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/user-group-membership.png":::
 

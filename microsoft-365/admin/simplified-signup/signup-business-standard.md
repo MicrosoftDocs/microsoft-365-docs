@@ -13,6 +13,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
+- VSBFY23
 description: "Purchase Microsoft 365 Business Standard and set up your organization."
 ---
 

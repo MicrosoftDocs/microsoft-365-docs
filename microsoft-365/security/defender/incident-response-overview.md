@@ -16,10 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
-  - m365solution-incidentresponse
-  - m365solution-scenario
-  - m365solution-overview
 ms.topic: conceptual
 search.appverid: 
   - MOE150

@@ -1,18 +1,14 @@
 ---
 title: "Threats detected by Microsoft Defender Antivirus"
 f1.keywords: CSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual 
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection:
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.date: 07/19/2022
 search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
 ---

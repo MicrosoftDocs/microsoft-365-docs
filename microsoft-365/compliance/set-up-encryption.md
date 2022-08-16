@@ -19,8 +19,6 @@ description: "With Office 365, some encryption capabilities are turned on by def
 
 # Set up encryption in Office 365 Enterprise
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Encryption can protect your content from being read by unauthorized users. Because [encryption in Office 365](encryption.md) can be done using various technologies and methods, there isn't one single place where you turn on or set up encryption. This article provides information about various ways you can set up or configure encryption as part of your information protection strategy.
 
 > [!TIP]
