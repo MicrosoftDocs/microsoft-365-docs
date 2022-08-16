@@ -31,7 +31,7 @@ Your objectives are to:
 
 - [Set up managed devices](m365bp-managed-devices-setup.md)
 - [Onboard enrolled devices and apply policies](m365bp-onboard-devices-mdb.md)
-- Protect Windows devices by:
+- Protect Windows devices by taking these steps:
    - [Upgrade Windows devices to Windows 10 Pro](m365bp-upgrade-windows-10-pro.md) (if necessary)
    - [Learn about threat protection by Microsoft Defender Antivirus](m365bp-threats-detected-defender-av.md)
    - [Secure Windows devices with default settings](m365bp-secure-windows-devices.md)
