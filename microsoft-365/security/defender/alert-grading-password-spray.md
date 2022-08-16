@@ -35,9 +35,9 @@ This guide helps you investigate instances where IP addresses have been labeled 
 
 The intended results of using this guide are:
 
-- You have identified the alerts associated with password-spray IP addresses as malicious (TP) or false positive (FP) activities.
+- You've identified the alerts associated with password-spray IP addresses as malicious (TP) or false positive (FP) activities.
 
-- You have taken the necessary action if IP addresses have been performing password spray attacks.
+- You've taken the necessary action if IP addresses have been performing password spray attacks.
 
 ## Investigation steps
 
@@ -58,9 +58,9 @@ This means there's suspicious user activity originating from an IP address that 
 
     - **Does the interval between attempts to sign in look suspicious?** Automated password spray attacks tend to have a regular time interval between attempts.
 
-    - **Are there successful attempts of a user/several users signing in with [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365) prompts?** The existence of these attempts might indicate that the IP is not malicious.
+    - **Are there successful attempts of a user/several users signing in with [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365) prompts?** The existence of these attempts might indicate that the IP isn't malicious.
 
-    - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the [Activity log](https://docs.microsoft.com/defender-cloud-apps/activity-filters#ip-address-insights) indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. Note that this activity must be further correlated to other activities.
+    - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the [Activity log](https://docs.microsoft.com/defender-cloud-apps/activity-filters#ip-address-insights) indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. This activity must be further correlated to other activities.
 
         :::image type="content" source="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 interface showing the Device type." lightbox="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png":::
 
@@ -78,7 +78,7 @@ Once a suspicious IP is recognized, you can review the accounts that signed in. 
 Filter all successful attempts to sign in from the IP address around and shortly after the time of the alerts. Then search for malicious or unusual activities in such accounts after signing in. 
 -	User account activities
 
-    **Validate that the activity in the account preceding the password spray activity is not suspicious.** For example, check if there is anomalous activity based on common location or ISP, if the account is utilizing a user-agent that it did not use before, if any additional guest accounts were created, if any additional credentials were created after the account signed in from a malicious IP, among others.
+    **Validate that the activity in the account preceding the password spray activity is not suspicious.** For example, check if there's anomalous activity based on common location or ISP, if the account is utilizing a user-agent that it didn't use before, if any other guest accounts were created, if any other credentials were created after the account signed in from a malicious IP, among others.
 -	Alerts
     
     **Check whether the user received other alerts preceding the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country, and suspicious email deletion activity, among others.
