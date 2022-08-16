@@ -181,7 +181,7 @@ For a scanned item to satisfy rule criteria, the number of unique instances of a
 For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
 
 > [!NOTE]
-> We support up to 100 exact data match (EDM) evaluations, thus policies should not be written with a **min** or **max** instance count value greater than 100 for EDM SITs.
+> We support up to 100 exact data match (EDM) evaluations. Policies that use EDM SITs should not be written with a **min** or **max** instance count value greater than 100.
 
 > [!NOTE]
 > Microsoft 365 Information Protection supports double byte character set languages for:
