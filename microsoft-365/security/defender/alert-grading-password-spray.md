@@ -60,13 +60,13 @@ This means there's suspicious user activity originating from an IP address that 
 
     - **Are there successful attempts of a user/several users signing in with [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365) prompts?** The existence of these attempts might indicate that the IP is not malicious.
 
-    - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the Activity log indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. Note that this activity must be further correlated to other activities.
+    - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the [Activity log](https://docs.microsoft.com/defender-cloud-apps/activity-filters#ip-address-insights) indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. Note that this activity must be further correlated to other activities.
 
         :::image type="content" source="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 interface showing the Device type." lightbox="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png":::
 
         _Figure 1. The Device type field shows `Unknown(BAV2ROPC)` user agent in Microsoft 365 Defender._ 
     - **Check the use of anonymous proxies or the Tor network.** Threat actors often use these alternative proxies to hide their information, making them difficult to trace. However, not all use of said proxies correlate with malicious activities. You must investigate other suspicious activities that might provide better attack indicators.
-    - Is the IP address coming from a virtual private network (VPN)? Is the VPN trustworthy? **Check if the IP originated from a VPN and review the organization behind it by using tools** like RiskIQ. 
+    - Is the IP address coming from a virtual private network (VPN)? Is the VPN trustworthy? **Check if the IP originated from a VPN and review the organization behind it by using tools** like [RiskIQ](https://community.riskiq.com/learn-more/enterprise). 
     - **Check other IPs with the same subnet/ISP.** Sometimes password spray attacks originate from many different IPs within the same subnet/ISP.
 -	**Is the IP address common for the tenant?** Check the Activity log to see if the tenant has seen the IP address in the past 30 days.
 -	**Search for other suspicious activities or alerts that originated from the IP in the tenant.** Examples of activities to look out for might include email deletion, forwarding rules creation, or file downloads after a successful attempt to sign in.
@@ -88,7 +88,7 @@ Filter all successful attempts to sign in from the IP address around and shortly
 
 ## Advanced hunting queries
 
-[Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md) is a query-based threat hunting tool that lets you inspect events in your network and locate threat indicators.
+[Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview) is a query-based threat hunting tool that lets you inspect events in your network and locate threat indicators.
 
 Use this query to find accounts with attempts to sign in with the highest risk scores that came from the malicious IP. This query also filters all successful attempts to sign in with corresponding risk scores.
 ```kusto
@@ -170,11 +170,11 @@ AlertInfo
 ```
 ## Recommended Actions
 
-1. [Block the attacker's IP address.](/azure/active-directory/conditional-access/block-legacy-authentication)
+1. [Block the attacker's IP address.](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
 2. Reset user accounts' credentials. 
 3. Revoke access tokens of compromised accounts.
-4. [Block legacy authentication.](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) 
-5. [Require MFA for users](/microsoft-365/business-premium/m365bp-conditional-access.md) if possible to [enhance account security](/azure/active-directory/authentication/tutorial-enable-azure-mfa) and make account compromise by a password spray attack difficult for the attacker. 
+4. [Block legacy authentication.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) 
+5. [Require MFA for users](/microsoft-365/business-premium/m365bp-conditional-access) if possible to [enhance account security](https://docs.microsoft.com//azure/active-directory/authentication/tutorial-enable-azure-mfa) and make account compromise by a password spray attack difficult for the attacker. 
 6. Block the compromised user account from signing in if needed.
 ## See also
 
