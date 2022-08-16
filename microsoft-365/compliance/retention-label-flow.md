@@ -73,7 +73,7 @@ When the retention period expires, your configured flow runs.
 
 - You must create a new retention label to run a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
-- The account that creates the Power Automate flow must be the same account that creates the retention label.
+- By default, the account that creates the Power Automate flow must be the same account that creates the retention label. If you share the flow in Power Automate, you people you share it with will also be able to select the flow when they create a retention label.
 
 - If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
 
@@ -89,7 +89,7 @@ For more information about how to use and configure the dependent automated clou
 
 ## How to configure a retention label to run a Power Automate flow
 
-1. In the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), create a new retention label with your preferred name and settings. For more information, see [Use file plan to create and manage retention labels](file-plan-manager.md)
+1. In the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), create a new retention label with your preferred name and settings. For more information, see [Use file plan to create and manage retention labels](file-plan-manager.md).
 
 2. Specific to this scenario:
     
@@ -100,7 +100,7 @@ For more information about how to use and configure the dependent automated clou
         ![Configuring a retention label to run a Power Automate flow after the retention period expires.](../media/retention-label-flow-configuration.png)
         
     
-    3. From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created and that have the **When the retention period expires** trigger.
+    3. From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created (or somebody has shared with you) and that have the **When the retention period expires** trigger.
         
         Select the flow you want, and complete the configuration to create the retention label.
 
