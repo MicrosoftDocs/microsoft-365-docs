@@ -168,7 +168,7 @@ You can't create allow file entries directly on the Tenant Allow/Block List page
    Click **Filter** to filter the results. The following values are available in the **Filter** flyout that appears:
 
    - **Action**: **Allow** and **Block**.
-   - **Never expire**: ![Toggle on.](../../media/scc-toggle-on.png) or ![Toggle off.](../../media/scc-toggle-ff.png)
+   - **Never expire**: ![Toggle on.](../../media/scc-toggle-on.png) or ![Toggle off.](../../media/scc-toggle-off.png)
    - **Last updated date**: Select **From** and **To** dates.
    - **Remove on**: Select **From** and **To** dates.
 

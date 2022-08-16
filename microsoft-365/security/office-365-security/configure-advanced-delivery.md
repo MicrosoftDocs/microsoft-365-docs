@@ -337,7 +337,7 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 
 For detailed syntax and parameter information, see [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule).
 
-#### Step 3: (Optional) Use Exchange Online PowerShell to identify the phishing simulation URLs to allow
+#### Step 3: (Optional) Use PowerShell to identify the phishing simulation URLs to allow
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -435,6 +435,8 @@ For detailed syntax and parameter information, see [Set-PhishSimOverrideRule](/p
 ### Use PowerShell to modify the allowed phishing simulation URL entries
 
 You can't modify the URL values directly. You can [remove existing URL entries](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) and [add new URL entries](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) as described in this article.
+
+
 
 To modify other properties of an allowed phishing simulation URL entry (for example, the expiration date or comments), use the following syntax:
 
