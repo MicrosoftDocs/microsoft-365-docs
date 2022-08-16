@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Teamwork"
+title: "Microsoft Productivity Score and teamwork insights"
 f1.keywords:
 - NOCSH
 ms.author: efrene

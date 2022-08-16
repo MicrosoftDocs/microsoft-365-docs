@@ -17,6 +17,8 @@ ms.technology: mdo
 
 # Insights and reports for Attack simulation training in Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
@@ -300,4 +302,4 @@ The **Recommended actions** section on the simulation details page shows recomme
 
 [Create a phishing attack simulation](attack-simulation-training.md)
 
-[create a payload for training your people](attack-simulation-training-payloads.md)
+[create a payload for training your people](attack-simulation-training-payloads.md#create-payloads)

@@ -38,6 +38,7 @@ Once on the detailed profile page, you can switch between the new and old page l
 You can get information from the following sections in the file view:
 
 - File details, Malware detection, File prevalence
+- File PE metadata (if it exists)
 - Deep analysis
 - Alerts
 - Observed in organization
@@ -64,7 +65,7 @@ The file details, incident, malware detection, and file prevalence cards display
 
 You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file's prevalence.
 
-The file prevalence card shows where the file was seen in devices in the organization and worldwide.
+The file prevalence card shows where the file was seen in devices in the organization and worldwide. You can easily pivot to the first and last devices where the file was seen on, and continue the investigation in the device timeline. 
 
 > [!NOTE]
 > Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
@@ -73,7 +74,7 @@ The file prevalence card shows where the file was seen in devices in the organiz
 
 ## Alerts
 
-The **Alerts** tab provides a list of alerts that are associated with the file. This list covers much of the same information as the Alerts queue, except for the device group, if any, the affected device belongs to. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
+The **Alerts** tab provides a list of alerts that are associated with the file, as well as the incident the alert is linked to. This list covers much of the same information as the Alerts queue, except for the device group, if any, the affected device belongs to. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
 
 :::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="The alerts related to the file section" lightbox="images/atp-alerts-related-to-file.png":::
 
@@ -86,7 +87,7 @@ The **Observed in organization** tab allows you to specify a date range to see w
 
 :::image type="content" source="images/atp-observed-machines.png" alt-text="The most recent observed devices with the file" lightbox="images/atp-observed-machines.png":::
 
-Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
+Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can get assisted by the alerts indication over the range. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
 ## Deep analysis
 
@@ -99,6 +100,10 @@ The **Deep analysis** tab allows you to [submit the file for deep analysis](resp
 The **File names** tab lists all names the file has been observed to use, within your organizations.
 
 :::image type="content" source="images/atp-file-names.png" alt-text="The File names tab" lightbox="images/atp-file-names.png":::
+
+## Action center
+
+The **Action center** displays the action center filtered on a specific file, so you can see pending actions and the history of actions taken on the file.
 
 ## Related topics
 

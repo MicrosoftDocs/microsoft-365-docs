@@ -20,6 +20,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - zerotrust-solution
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d

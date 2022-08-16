@@ -5,7 +5,7 @@ description: Learn about the analyst report section of each threat analytics rep
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,9 +29,6 @@ ms.custom: seo-marvel-apr2020
 **Applies to:**
 
 - Microsoft 365 Defender
-
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
->
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 

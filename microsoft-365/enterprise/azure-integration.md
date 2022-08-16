@@ -2,7 +2,7 @@
 title: "Azure integration with Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration

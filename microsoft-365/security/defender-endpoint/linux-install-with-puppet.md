@@ -131,9 +131,13 @@ $version = undef
 ){
     case $::osfamily {
         'Debian' : {
+        $release = $channel ? {
+        'prod' => $facts['os']['distro']['codename']
+        default => $channel
+        }
             apt::source { 'microsoftpackages' :
                 location => "https://packages.microsoft.com/${distro}/${version}/prod",
-                release  => $channel,
+                release  =>  $release,
                 repos    => 'main',
                 key      => {
                     'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',

@@ -1,8 +1,8 @@
 ---
-title: "About AutoPilot Profile settings"
-ms.author: efrene
-author: efrene
-manager: scotv
+title: "About Autopilot Profile settings"
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 f1.keywords:
@@ -10,37 +10,26 @@ f1.keywords:
 - 'O365E_ZTDProfileSettings'
 - 'BCS365_ZTDProfileSettings'
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: "AutoPilot profiles help you control how Windows gets installed on user devices. The profiles contain default and optional settings like skip Cortana installation."
+description: "Autopilot profiles help you control how Windows gets installed on user devices. The profiles contain default and optional settings like skip Cortana installation."
 ---
 
-# About AutoPilot Profile settings
+# About Autopilot Profile settings
 
-## AutoPilot profile settings
+## Autopilot profile settings
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
-
-You can use AutoPilot profiles to control how Windows is installed on user devices. The profiles contain the following settings.
+You can use Autopilot profiles to control how Windows is installed on user devices. The profiles contain the following settings.
   
-## AutoPilot default features (required) that are set automatically
+## Autopilot default features (required) that are set automatically
   
 | Setting | Description |
 |:-----|:-----|
@@ -57,4 +46,4 @@ You can use AutoPilot profiles to control how Windows is installed on user devic
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

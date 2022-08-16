@@ -40,10 +40,9 @@ Here's a quick overview of the process.
 
 1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created, and the warning quota for the archive mailbox is set to 90 GB.
 
-2. An administrator enables auto-expanding archiving for the mailbox. When the archive mailbox (including the Recoverable Items folder) reaches 90 GB, it's converted to an auto-expanding archive, and Microsoft 365 adds storage space to the archive until it reaches a maximum size of 1.5 TB. It can take up to 30 days for the additional storage space to be provisioned.
-
-   > [!NOTE]
-   > If a mailbox is placed on hold or assigned to a retention policy, the storage quota for the archive mailbox is increased to 110 GB when auto-expanding archiving is enabled. Similarly, the archive warning quota is increased to 100 GB.
+2. An administrator enables auto-expanding archiving for the mailbox. If the mailbox has a hold or retention policy applied to it, the storage quota for the archive mailbox is increased to 110 GB and the archive warning quota is increased to 100 GB.
+    
+    Then, when the archive mailbox (including the Recoverable Items folder) reaches its storage quota, the archive mailbox is converted to an auto-expanding archive. Extra storage space is added until it reaches a maximum size of 1.5 TB. It can take up to 30 days for the additional storage space to be provisioned.
 
 3. Microsoft 365 automatically adds more storage space when necessary.
 
@@ -81,7 +80,7 @@ To access messages that are stored in an auto-expanded archive, users have to us
 
 - Outlook 2016 or Outlook 2019 for Windows
 
-- Outlook on the web
+- Outlook on the web when the primary mailbox is in Exchange Online rather than on-premises
 
 - Outlook 2016 or Outlook 2019 for Mac
 
@@ -93,7 +92,7 @@ Here are some things to consider when using Outlook or Outlook on the web to acc
 
 - You can delete items in an auto-expanded storage area. However, you can't use the Recover Deleted Items feature to recover an item after auto-expanding archiving is enabled for a mailbox.
 
-- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises).
+- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
 
 - Auto-expanded archive search is available in Outlook for Windows in Monthly Enterprise Channel. With this update the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
@@ -105,7 +104,7 @@ This section explains the functionality between auto-expanding archiving and oth
 
 - **eDiscovery:** When you use an eDiscovery tool, such as Content Search or In-Place eDiscovery, the additional storage areas in an auto-expanded archive are also searched.
 
-- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the security and compliance center, content located in an auto-expanded archive is also placed on hold.
+- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the Microsoft Purview compliance portal, content located in an auto-expanded archive is also placed on hold.
 
 - **Messaging records management (MRM):** If you use MRM deletion policies in Exchange Online to permanently delete expired mailbox items, expired items located in the auto-expanded archive will also be deleted.
 

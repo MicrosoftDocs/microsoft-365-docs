@@ -24,6 +24,8 @@ ms.date: 06/10/2021
 
 # Review and manage remediation actions in Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 

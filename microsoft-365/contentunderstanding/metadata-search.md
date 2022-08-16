@@ -51,7 +51,4 @@ Advanced metadata search lets you use the metadata associated with a document to
 
     ![Screenshot of the Add more options menu on the metadata search pane.](../media/content-understanding/metadata-search-add-more-options.png)
 
-    > [!NOTE]
-    > Currently, the ability to add managed metadata fields or multiline text fields is not available. 
-
 4. Select **Search**. The documents that match your metadata search are shown on the results page. 

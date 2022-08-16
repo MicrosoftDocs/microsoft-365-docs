@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 07/28/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -19,12 +20,13 @@ ms.collection: M365-security-compliance
 
 # Run and review the results of a Microsoft Defender Offline scan
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Microsoft Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 
@@ -39,7 +41,6 @@ Microsoft Defender Offline in Windows 10 and Windows 11 has the same hardware re
 For more information about Windows 10 and Windows 11 requirements, see the following topics:
 
 - [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-
 - [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
 
 > [!NOTE]
@@ -91,8 +92,6 @@ You can run a Microsoft Defender Offline scan with the following:
 - Windows Management Instrumentation (WMI)
 - The Windows Security app
 
-
-
 ### Use PowerShell cmdlets to run an offline scan
 
 Use the following cmdlets:
@@ -128,9 +127,15 @@ See the following for more information:
     > [!NOTE]
     > In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** \> **Update & security** \> **Windows Defender** or from the Windows Defender client.
 
-## Review scan results
-
-Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](microsoft-defender-security-center-antivirus.md).
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Related articles
 

@@ -28,7 +28,7 @@ If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03
 
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
-- [Top 10 ways to secure Office 365 and Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 - [Microsoft 365 for Campaigns](../business-premium/index.md) (includes a recommended security configuration for Microsoft 365 Business)
 
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
@@ -238,7 +238,7 @@ Get started with Defender for Cloud Apps now. Later you can set up more sophisti
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+- [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender-portal.md)
 - [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps

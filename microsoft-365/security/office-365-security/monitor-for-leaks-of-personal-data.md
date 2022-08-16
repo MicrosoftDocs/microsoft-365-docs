@@ -1,6 +1,6 @@
 ---
 title: Monitor for leaks of personal data
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: brendacarter
@@ -8,14 +8,14 @@ manager: laurawi
 ms.date: 02/07/2018
 audience: ITPro
 ms.topic: overview
-ms.collection: 
+ms.collection:
   - Strat_O365_Enterprise
   - Ent_O365
   - GDPR
   - M365-security-compliance
 
 ms.localizationpriority: high
-search.appverid: 
+search.appverid:
   - MET150
 description: Learn about three tools you can use to monitor for leaks of personal data.
 ms.technology: mdo
@@ -23,16 +23,13 @@ ms.prod: m365-security
 ---
 # Monitor for leaks of personal data
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
 :::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="The tools to monitor the use and transport of personal data" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 In the illustration:
 
-- Start with Microsoft 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These reports provide the greatest level of detail for monitoring personal data. However, these reports don't include all services in Office 365.
+- Start with Microsoft Purview data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These reports provide the greatest level of detail for monitoring personal data. However, these reports don't include all services in Office 365.
 
 - Next, use alert policies and the audit log to monitor activity across services. Set up ongoing monitoring or search the audit log to investigate an incident. The audit log works across services—Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
 
@@ -53,7 +50,7 @@ You can use the DLP reports to:
 
 In addition, you can use the DLP reports to fine-tune your DLP policies as you run them in test mode.
 
-DLP reports are in the Microsoft 365 compliance center. Go to **Reports** \> **Organizational data** section to find the **DLP policy matches**, **DLP incidents**, and **DLP false positives and overrides** reports.
+DLP reports are in the Microsoft Purview compliance portal. Go to **Reports** \> **Organizational data** section to find the **DLP policy matches**, **DLP incidents**, and **DLP false positives and overrides** reports.
 
 For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
@@ -63,9 +60,9 @@ For more information, see [View the reports for data loss prevention](../../comp
 
 The audit log contains events from Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway, and other services.
 
-The Microsoft 365 Defender portal and the Microsoft 365 compliance center provide two ways to monitor and report against the audit log:
+The Microsoft 365 Defender portal and the Microsoft Purview compliance portal provide two ways to monitor and report against the audit log:
 
-- Set up alert policies, view alerts, and monitor trends—Use the alert policy and alert dashboard tools in either the Microsoft 365 Defender portal or the Microsoft 365 compliance center.
+- Set up alert policies, view alerts, and monitor trends—Use the alert policy and alert dashboard tools in either the Microsoft 365 Defender portal or the Microsoft Purview compliance portal.
 - Search the audit log directly: Search for all events in a specified date rage. Or you can filter the results based on specific criteria, such as the user who performed the action, the action, or the target object.
 
 Information compliance and security teams can use these tools to proactively review activities performed by both end users and administrators across services. Automatic alerts can be configured to send email notifications when certain activities occur on specific site collections - for example when content is shared from sites known to contain GDPR-related information. This allows those teams to follow up with users to ensure that corporate security policies are followed, or to provide additional training.

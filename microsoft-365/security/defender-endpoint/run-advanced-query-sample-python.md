@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
 ---
 
@@ -80,7 +80,7 @@ where
  Run the following query:
 
 ```python
-query = 'RegistryEvents | limit 10' # Paste your own query here
+query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 headers = { 

@@ -1,9 +1,10 @@
 ---
-title: "Microsoft 365 Lighthouse Users page overview"
+title: "Overview of the Users page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -18,17 +19,17 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Users page."
 ---
 
-# Microsoft 365 Lighthouse Users page overview 
+# Overview of the Users page in Microsoft 365 Lighthouse 
 
-Microsoft 365 Lighthouse lets you manage users across customer tenant accounts by selecting **Users** in the left navigation pane to open the Users page. From this page, you can search for users and assess and act on the security state of your user accounts. You can also view insights into risky users and the status of multifactor authentication and self-service password reset.  
+Microsoft 365 Lighthouse lets you manage users across customer tenant accounts by selecting any of the links under **Users** in the left navigation pane. From the Users page, you can search for users and assess and act on the security state of your user accounts. You can also view insights into risky users and the status of multifactor authentication and self-service password reset.  
   
 ## Search users tab  
   
-From the Search users tab, you can quickly search across tenants for specific users and perform basic user management actions such as resetting an account password.
+From the Search users tab, you can quickly search across tenants for specific users and perform common user management tasks like updating user account information, resetting passwords, assigning licenses, and managing a user's groups, mailbox, or OneDrive.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Screenshot of the Search users tab.":::
 
-## Risky users tab
+## Risky Users tab
 
 The Risky Users tab shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in. For more information about risk types and detection, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 

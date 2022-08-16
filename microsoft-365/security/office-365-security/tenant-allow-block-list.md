@@ -1,17 +1,17 @@
 ---
 title: Manage your allows and blocks in the Tenant Allow/Block List
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Admins can learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
@@ -21,18 +21,12 @@ ms.prod: m365-security
 
 # Manage the Tenant Allow/Block List
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
->
-> Some of the features described in this article are in Preview, are subject to change, and are not available in all organizations.
->
-> If your organization does not have the spoof features as described in this article, see the older spoof management experience at [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
@@ -40,13 +34,16 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
 - URLs to block.
 - Files to block.
-- Sender emails or domains to block.
+- Email domains or addresses to block.
 - Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
 - URLs to allow.
 - Files to allow.
-- Sender emails or domains to allow.
+- Email domains or addresses to allow.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+
+> [!NOTE]
+> The ["Block the following URLs" list in Safe Links policies](safe-links.md#block-the-following-urls-list-for-safe-links) is in the process of being deprecated. You can now manage block URL entries in the Tenant Allow/Block List. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
 
 ## What do you need to know before you begin?
 
@@ -54,7 +51,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
-  ```console
+  ```DOS
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -62,32 +59,40 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for senders, 500 entries for URLs, 500 entries for file hashes, and 1024 entries for spoofing (spoofed senders).
+- The Tenant Allow/Block List has the following limits:
+  - 500 entries for domains & addresses.
+  - 500 entries for URLs.
+  - 500 entries for file hashes.
+  - 1024 entries for spoofing (spoofed senders).
 
-- The maximum number of characters for each entry is:
-  - File hashes = 64
-  - URL = 250
+- Entries in the Tenant Allow/Block List have the following limits:
+  - 64 character for file hashes.
+  - 250 characters for URLs.
 
-- An entry should be active within 30 minutes.
+- 99.99% of entries should be active within 30 minutes. Entries that aren't active within 30 minutes can take up to 24 hours. 
 
-- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
+- Email addresses & domains does not support punycode.
+
+- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for blocks only).
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
-  - **Senders, URLs and files**:
-    - To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups or you are assigned the **Tenant AllowBlockList Manager** role.
-    - For read-only access to the Tenant Allow/Block List, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-  - **Spoofing**: One of the following combinations:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
+  - To add and remove entries from the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Organization Management** (the **Security admin** role).
+    - **Security Administrator** (the **Security admin** role).
+    - **Security Operator** (the **Tenant AllowBlockList Manager** role).
+
+  - For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:
+    - **Global Reader** role group.
+    - **Security Reader** role group.
+    - **View-Only Configuration** role group.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  >
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ## Configure the Tenant Allow/Block List
@@ -108,17 +113,22 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
 ## View entries in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab you want. The columns that are available depend on the tab you selected:
 
-   - **Senders**:
-     - **Value**: The sender domain or email address.
+   - **Domains & addresses**:
+     - **Value**: The domain or email address.
      - **Action**: The value **Allow** or **Block**.
      - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
+   - **Spoofed senders**
+     - **Spoofed user**
+     - **Sending infrastructure**
+     - **Spoof type**: The value **Internal** or **External**.
+     - **Action**: The value **Block** or **Allow**.
    - **URLs**:
      - **Value**: The URL.
      - **Action**: The value **Allow** or **Block**.
@@ -133,30 +143,28 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
      - **Last updated**
      - **Remove on**
      - **Notes**
-   - **Spoofing**
-     - **Spoofed user**
-     - **Sending infrastructure**
-     - **Spoof type**: The value **Internal** or **External**.
-     - **Action**: The value **Block** or **Allow**.
 
    You can click on a column heading to sort in ascending or descending order.
 
    You can click **Group** to group the results. The values that are available depend on the tab you selected:
 
-   - **Senders**: You can group the results by **Action**.
+   - **Domains & addresses**: You can group the results by **Action**.
+   - **Spoofed senders**: You can group the results by **Action** or **Spoof type**.
    - **URLs**: You can group the results by **Action**.
    - **Files**: You can group the results by **Action**.
-   - **Spoofing**: You can group the results by **Action** or **Spoof type**.
 
    Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon.](../../media/m365-cc-sc-close-icon.png) **Clear search**.
 
    Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
 
-   - **Senders**
+   - **Domains & addresses**
      - **Action**
      - **Never expire**
      - **Last updated date**
      - **Remove on**
+   - **Spoofed senders**
+     - **Action**
+     - **Spoof type**
    - **URLs**
      - **Action**
      - **Never expire**
@@ -167,17 +175,14 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
      - **Never expire**
      - **Last updated**
      - **Remove on**
-   - **Spoofing**
-     - **Action**
-     - **Spoof type**
 
    When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
-4. When you're finished, click **Add**.
+3. When you're finished, click **Add**.
 
-## View sender, file or URL entries in the Tenant Allow/Block List
+## View domains & addresses, file or URL entries in the Tenant Allow/Block List
 
-To view block sender, file or URL entries in the Tenant Allow/Block List, use the following syntax:
+To view block domains & addresses, file or URL entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
@@ -246,7 +251,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - Wildcards (*) are allowed in the following scenarios:
 
-  - A left wildcard must be followed by a period to specify a subdomain.
+  - A left wildcard must be followed by a period to specify a subdomain. (only applicable for blocks)
 
     For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.
 
@@ -263,8 +268,6 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
   - A left tilde implies a domain and all subdomains.
 
     For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.
-
-- URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
 - A username or password isn't supported or required.
 
@@ -283,7 +286,6 @@ Valid URL entries and their results are described in the following sections.
 - **Allow match**: contoso.com
 
 - **Allow not matched**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -293,7 +295,6 @@ Valid URL entries and their results are described in the following sections.
   - www.contoso.com/q=a@contoso.com
 
 - **Block match**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -306,15 +307,16 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard (subdomain)
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `*.contoso.com`
 
-- **Allow match** and **Block match**:
-
+- **Block match**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
-
+- **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -325,13 +327,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/a/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **Allow not matched** and **Block not matched**:
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -342,13 +342,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `~contoso.com`
 
 - **Allow match** and **Block match**:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -358,7 +356,6 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -371,17 +368,19 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `*.contoso.com/*`
 
-- **Allow match** and **Block match**:
-
+- **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Allow not matched** and **Block not matched**: contoso.com/b
+- **Block not matched**: contoso.com/b
 
 #### Scenario: Left and right tilde
 
@@ -472,6 +471,7 @@ A domain pair for a spoofed sender in the Tenant Allow/Block List uses the follo
 - **Sending infrastructure**: This value indicates the source of messages from the spoofed user. Valid values include:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address (for example, fabrikam.com).
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+  - A verified DKIM domain.
 
 Here are some examples of valid domain pairs to identify spoofed senders:
 
@@ -481,7 +481,7 @@ Here are some examples of valid domain pairs to identify spoofed senders:
 
 The maximum number of spoofed sender entries is 1000.
 
-Adding a domain pair only allows or blocks the *combination* of the spoofed user *and* the sending infrastructure. It does not allow email from the spoofed user from any source, nor does it allow email from the sending infrastructure source for any spoofed user. 
+Adding a domain pair only allows or blocks the *combination* of the spoofed user *and* the sending infrastructure. It does not allow email from the spoofed user from any source, nor does it allow email from the sending infrastructure source for any spoofed user.
 
 For example, you add an allow entry for the following domain pair:
 
@@ -489,3 +489,9 @@ For example, you add an allow entry for the following domain pair:
 - **Infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
+
+## What to expect after you add an allow or block entry
+
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately once the entry is active. 99.99% of entries should be active within 30 minutes. Entries that aren't active within 30 minutes can take up to 24 hours.
+
+We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.

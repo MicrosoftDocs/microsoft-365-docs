@@ -75,6 +75,9 @@ So, for example:
 
 You can choose to filter the list of alerts based on their Status.
 
+> [!NOTE]
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../defender/investigate-incidents.md#alerts).
+
 ### Categories
 
 We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will keep the previous category names.

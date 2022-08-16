@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: 
   - MET150
   - MOE150
@@ -16,9 +16,12 @@ ms.collection:
 description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties.
 ms.technology: mdo
 ms.prod: m365-security
+adobe-target: true
 ---
 
 # Microsoft Defender for Office 365 security overview
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -126,7 +129,7 @@ This quick-reference will help you understand what capabilities come with each M
 
 - Microsoft Defender for Office 365 Plan 1 and Defender for Office 365 Plan 2 are each available as an add-on for certain subscriptions. To learn more, here's another link [Feature availability across Microsoft Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
+- The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
 
 - If your current subscription doesn't include Microsoft Defender for Office 365 and you want it, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and find out how Microsoft Defender for Office 365 can work for in your organization.
 

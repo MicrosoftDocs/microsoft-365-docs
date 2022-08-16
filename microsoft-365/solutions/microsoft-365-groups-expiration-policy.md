@@ -30,11 +30,11 @@ When a group expires it is "soft-deleted" which means it can still be recovered 
 Administrators can specify an expiration period and any inactive group that reaches the end of that period, and is not renewed, will be deleted. (This includes archived teams.) The expiration period begins when the group is created, or on the date it was last renewed. Group owners will automatically be sent an email before the expiration that allows them to renew the group for another expiration interval. Teams users will see persistent notifications in Teams.
 
 Groups that are actively in use are renewed automatically. Any of the following actions will autorenew a group:
-- SharePoint - view, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
-- Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
-- Teams - visiting a teams channel.
-
-Note that the only Yammer activity that will trigger an automatic group renewal is the upload of a document to SharePoint within the community.
+- SharePoint - View, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
+- Outlook - Join or edit group, read or write group message from the group, and like a message (Outlook on the web).
+- Teams - Visit a teams channel.
+- Yammer - View a post within a Yammer community or an interactive email in Outlook.
+- Forms - View, create, or edit forms, or submit a response to a form. 
 
 > [!IMPORTANT]
 > When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
@@ -59,17 +59,20 @@ The group lifetime is specified in days and can be set to 180, 365 or to a custo
 
 If the group does not have an owner, the expiration emails will go to the specified administrator.
 
-You can set the policy for all of your groups, only selected groups (up to 500), or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
+You can set the policy for all of your groups, only selected groups (up to 500), or turn it off completely by selecting **None**. When You select **None** all groups which are active and pending for verification will have no expiration date. However, the groups that are already expired are not impacted.
+
+Note that currently you can't have different policies for different groups.
 
 ![Screenshot of Groups expiration settings in Azure Active Directory.](../media/azure-groups-expiration-settings.png)
 
 ## How expiry works with the retention policy
 
-If you have set up a retention policy for groups in the Security and Compliance center, the expiration policy works seamlessly with retention policy. When a group expires, the group's mailbox conversations and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users will not see the group, or its content, after expiration however.
+If you have set up a retention policy for groups in the Microsoft Purview compliance portal, the expiration policy works seamlessly with retention policy. When a group expires, the group's mailbox conversations and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users will not see the group, or its content, after expiration however.
 
 ## How and when a group owner learns if their groups are going to expire
 
-Group owners will only be notified via email. If the group was created via Planner, SharePoint, or any other app, the expiration notifications will always come via email. If the group was created via Teams, the group owner will receive a notification to renew through the activity section. It's not recommended that you enable expiration on a group if your group owner doesn't have a valid email address.
+If the group was created via Planner, SharePoint, or any other app, the expiration notifications will always come via email.
+If the group was created via Teams, the group owner will receive an email and a notification to renew through the activity section. It's not recommended that you enable expiration on a group if your group owner doesn't have a valid email address.
 
 30 days before the group expires, the group owners (or the email addresses that you specified for groups that don't have an owner) will receive an email allowing them to easily renew the group. If they don't renew it, they'll receive another renewal email 15 days before expiration. If they still haven't renewed it, they will receive one more email notification the day before expiration.
 

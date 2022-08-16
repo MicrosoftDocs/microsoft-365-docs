@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # View email security reports in the Microsoft 365 Defender portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,22 +40,25 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 >
 > Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
+Watch this short video to learn how you can use reports to understand the effectiveness of Defender for Office 365 in your organization.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
+
 ## Email security report changes in the Microsoft 365 Defender portal
 
 The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
 
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
-|**URL trace** <p> Get-URLTrace|[URL protection report](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
-|**Sent and received email report** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[Threat protection status report](#threat-protection-status-report) <br> [Mailflow status report](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|June 2021|
-|**Forwarding report** <p> no cmdlets|[Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> no cmdlets|MC250533|June 2021|
-|**Safe Attachments file types report** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|June 2021|
-|**Safe Attachments message disposition report** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|June 2021|
-|**Malware detected in email report** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
-|**Spam detection report** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
-|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|May 2022|
-|**Exchange transport rule report** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
-|Get-MailTrafficTopReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
+|**URL trace** <br/><br/> Get-URLTrace|[URL protection report](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
+|**Sent and received email report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[Threat protection status report](#threat-protection-status-report) <br> [Mailflow status report](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|June 2021|
+|**Forwarding report** <br/><br/> no cmdlets|[Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> no cmdlets|MC250533|June 2021|
+|**Safe Attachments file types report** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|June 2021|
+|**Safe Attachments message disposition report** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|June 2021|
+|**Malware detected in email report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
+|**Spam detection report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
+|Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|May 2022|
+|**Exchange transport rule report** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
+|Get-MailTrafficTopReport|[Top senders and recipient report](view-email-security-reports.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
 
 ## Compromised users report
 
@@ -105,7 +108,6 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 On the **Exchange transport rule report** page, the available charts and data are described in the following sections.
 > [!NOTE]
 > The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
-
 
 ### Chart breakdown by Direction
 
@@ -418,7 +420,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Pending**
   - **Completed**
 
-The details table below the graph shows the same information and has the same **Group** or **Customize columns** options as on the **Submitted for analysis** tab at **Email & collaboration** \> **Submissions**. For more information, see [View admin submissions to Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
+The details table below the graph shows the same information and has the same **Group** or **Customize columns** options as on the **Submitted for analysis** tab at **Email & collaboration** \> **Submissions**. For more information, see [View email admin submissions to Microsoft](admin-submission.md#view-email-admin-submissions-to-microsoft).
 
 On the **Submissions** page, the **[Export](#export-report)** button is available.
 
@@ -459,11 +461,7 @@ No details table is available below the chart.
 If you click **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**.
-- **Detection**:
-  - **Email malware**
-  - **Email phish**
-  - **Email spam**
-  - **Content malware**
+- **Detection**: The same values as in the chart.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**.
 - **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
 - **Direction**:
@@ -491,24 +489,24 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 In the **View data by Email \> Phish** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
-- **URL malicious reputation**<sup>\*</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.
 - **Advanced filter**: Phishing signals based on machine learning.
+- **Campaign**<sup>\*</sup>: Messages identified as part of a [campaign](campaigns.md).
+- **File detonation**<sup>\*</sup>: [Safe Attachments](safe-attachments.md) detected a malicious attachment during detonation analysis.
+- **File detonation reputation**<sup>\*</sup>: File attachments previously detected by [Safe Attachments](safe-attachments.md) detonations in other Microsoft 365 organizations.
+- **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
+- **Fingerprint matching**: The message closely resembles a previous detected malicious message.
 - **General filter**: Phishing signals based on analyst rules.
-- **Spoof intra-org**: Sender is trying to spoof the recipient domain.
-- **Spoof external domain**: Sender is trying to spoof some other domain.
-- **Spoof DMARC**: DMARC authentication failure on messages.
-- **Impersonation brand**: Impersonation of well-known brands based on senders.
-- **Mixed analysis detection**
-- **File reputation**
-- **Fingerprint matching**
-- **URL detonation reputation**<sup>\*</sup>
-- **URL detonation**<sup>\*</sup>
-- **Impersonation user**<sup>\*</sup>
-- **Impersonation domain**<sup>\*</sup>: Impersonation of domains that the customer owns or defines.
-- **Mailbox intelligence impersonation**<sup>\*</sup>: Impersonation of users defined by admin or learned through mailbox intelligence.
-- **File detonation**<sup>\*</sup>
-- **File detonation reputation**<sup>\*</sup>
-- **Campaign**<sup>\*</sup>
+- **Impersonation brand**: Sender impersonation of well-known brands.
+- **Impersonation domain**<sup>\*</sup>: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+- **Impersonation user**<sup>\*</sup>: Impersonation of protected senders that you specified in [anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) or learned through mailbox intelligence.
+- **Mailbox intelligence impersonation**<sup>\*</sup>: Impersonation detections from mailbox intelligence in [anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+- **Mixed analysis detection**: Multiple filters contributed to the message verdict.
+- **Spoof DMARC**: The message failed [DMARC authentication](use-dmarc-to-validate-email.md).
+- **Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.
+- **Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.
+- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links.md) detected a malicious URL in the message during detonation analysis.
+- **URL detonation reputation**<sup>\*</sup>: URLs previously detected by [Safe Links](safe-links.md) detonations in other Microsoft 365 organizations.
+- **URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.
 
 <sup>\*</sup> Defender for Office 365 only
 
@@ -518,7 +516,7 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detection technology**
+- **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
@@ -555,14 +553,13 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 In the **View data by Email \> Spam** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
-- **URL malicious reputation**
-- **Advanced filter**
-- **General filter**
+- **Advanced filter**: Phishing signals based on machine learning.
+- **Bulk**: The [bulk complaint level (BCL)](bulk-complaint-level-values.md) of the message exceeds the defined threshold for spam.
+- **Domain reputation**: The message was from a domain that was previously identified as sending spam in other Microsoft 365 organizations.
+- **Fingerprint matching**: The message closely resembles a previous detected malicious message.
+- **IP reputation**: The message was from a source that was previously identified as sending spam in other Microsoft 365 organizations.
 - **Mixed analysis detection**: Multiple filters contributed to the verdict for the message.
-- **Fingerprint matching**: The message was marked as bad due to previous messages.
-- **Domain reputation**: This message was considered spam based on the sender domain reputation.
-- **Bulk**: Items detected as exceeding the bulk setting for the user.
-- **IP reputation**: The message was considered spam based on the sending IP address reputation.
+- **URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.
 
 In the details table below the chart, the following information is available:
 
@@ -570,7 +567,7 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detection technology**
+- **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
@@ -609,15 +606,16 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 In the **View data by Email \> Malware** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
-- **File detonation**<sup>\*</sup>: Detection by Safe Attachments.
-- **File detonation reputation**<sup>\*</sup>: All malicious file reputation generated by Defender for Office 365 detonations.
-- **File reputation**
+- **File detonation**<sup>\*</sup>: [Safe Attachments](safe-attachments.md) detected a malicious attachment during detonation analysis.
+- **File detonation reputation**<sup>\*</sup>: File attachments previously detected by [Safe Attachments](safe-attachments.md) detonations in other Microsoft 365 organizations.
+- **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 - **Anti-malware engine**<sup>\*</sup>: Detection from anti-malware engines.
-- **Anti-malware policy file type block**: These are email messages filtered out due to the type of malicious file identified in the message.
-- **URL malicious reputation**<sup>\*</sup>
-- **URL detonation**<sup>\*</sup>
-- **URL detonation reputation**<sup>\*</sup>
-- **Campaign**<sup>\*</sup>
+- **Anti-malware policy file type block**: The message was blocked due to the file type of the attachment ([common attachment filtering in anti-malware policies](anti-malware-protection.md)).
+- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links.md) detected a malicious URL in the message during detonation analysis.
+- **URL detonation reputation**<sup>\*</sup>>: URLs previously detected by [Safe Links](safe-links.md) detonations in other Microsoft 365 organizations.
+- **Campaign**<sup>\*</sup>: Messages identified as part of a [campaign](campaigns.md).
+
+<sup>\*</sup> Defender for Office 365 only
 
 In the details table below the chart, the following information is available:
 
@@ -625,7 +623,7 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detection technology**
+- **Detection technology**: The same detection technology values from the chart.
 - **Delivery Status**
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
@@ -675,7 +673,7 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detection technology**
+- **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
@@ -683,25 +681,7 @@ In the details table below the chart, the following information is available:
 If you click **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
-- **Detection**:
-  - **URL malicious reputation**<sup>\*</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.
-  - **Advanced filter**: Phishing signals based on machine learning.
-  - **General filter**: Phishing signals based on analyst rules.
-  - **Spoof intra-org**: Sender is trying to spoof the recipient domain.
-  - **Spoof external domain**: Sender is trying to spoof some other domain.
-  - **Spoof DMARC**: DMARC authentication failure on messages.
-  - **Impersonation brand**: Impersonation of well-known brands based on senders.
-  - **Mixed analysis detection**
-  - **File reputation**
-  - **Fingerprint matching**
-  - **URL detonation reputation**<sup>\*</sup>
-  - **URL detonation**<sup>\*</sup>
-  - **Impersonation user**<sup>\*</sup>
-  - **Impersonation domain**<sup>\*</sup>: Impersonation of domains that the customer owns or defines.
-  - **Mailbox intelligence impersonation**<sup>\*</sup>: Impersonation of users defined by admin or learned through mailbox intelligence.
-  - **File detonation**<sup>\*</sup>
-  - **File detonation reputation**<sup>\*</sup>
-  - **Campaign**<sup>\*</sup>
+- **Detection**: Detection technology values as previously described in this article and at [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
 - **Protected by**: **MDO** (Defender for Office 365) or **EOP**
 - **Direction**:
   - **All**
@@ -748,7 +728,7 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detection technology**
+- **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
@@ -756,25 +736,7 @@ In the details table below the chart, the following information is available:
 If you click **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
-- **Detection**:
-  - **URL malicious reputation**<sup>\*</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.
-  - **Advanced filter**: Phishing signals based on machine learning.
-  - **General filter**: Phishing signals based on analyst rules.
-  - **Spoof intra-org**: Sender is trying to spoof the recipient domain.
-  - **Spoof external domain**: Sender is trying to spoof some other domain.
-  - **Spoof DMARC**: DMARC authentication failure on messages.
-  - **Impersonation brand**: Impersonation of well-known brands based on senders.
-  - **Mixed analysis detection**
-  - **File reputation**
-  - **Fingerprint matching**
-  - **URL detonation reputation**<sup>\*</sup>
-  - **URL detonation**<sup>\*</sup>
-  - **Impersonation user**<sup>\*</sup>
-  - **Impersonation domain**<sup>\*</sup>: Impersonation of domains that the customer owns or defines.
-  - **Mailbox intelligence impersonation**<sup>\*</sup>: Impersonation of users defined by admin or learned through mailbox intelligence.
-  - **File detonation**<sup>\*</sup>
-  - **File detonation reputation**<sup>\*</sup>
-  - **Campaign**<sup>\*</sup>
+- **Detection**: Detection technology values as previously described in this article and at [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
 - **Protected by**: **MDO** (Defender for Office 365) or **EOP**
 - **Direction**:
   - **All**
@@ -807,21 +769,21 @@ In the **View data by Content \> Malware** view, the following information is sh
 
 - **Anti-malware engine**: Malicious files detected in SharePoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).
 - **MDO detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
-- **File reputation**
+- **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 
 In the details table below the chart, the following information is available:
 
 - **Date (UTC)**
 - **Attachment filename**
 - **Workload**
-- **Detection technology**
+- **Detection technology**: The same detection technology values from the chart.
 - **File size**
 - **Last modifying user**
 
 If you click **Filter**, the following filters are available:
 
-- **Date (UTC)** **Start date** and **End date**
-- **Detection**: **Anti-malware engine**, **MDO detonation**, and **File detonation**
+- **Date (UTC)** **Start date** and **End date**.
+- **Detection**: The same values as in the chart.
 - **Workload**: **Teams**, **SharePoint**, and **OneDrive**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
@@ -983,7 +945,7 @@ When you hover over a wedge in the pie chart, you can see the message count for 
 
 The details table below the graph shows the senders or recipients and message counts based on the view you selected.
 
-You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**.
+You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags. 
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
@@ -1022,7 +984,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-To group the entries, click **Group** and select one of the following values from the drop down list:
+To group the entries, click **Group** and select one of the following values from the drop-down list:
 
 - **None**
 - **Reason**
@@ -1043,7 +1005,7 @@ The details table below the graph shows the following information:
 - **Rescan result**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
-To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop down list:
+To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop-down list:
 
 - **Report clean**
 - **Report phishing**
@@ -1174,7 +1136,9 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Related topics
 
-[Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
+[Anti-spam protection in EOP](anti-spam-protection.md)
+
+[Anti-malware protection in EOP](anti-malware-protection.md)
 
 [Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 

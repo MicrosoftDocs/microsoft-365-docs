@@ -142,24 +142,25 @@ Return to the Microsoft Defender for Endpoint onboarding screen, select **Allow*
 
 If a user faces an issue which is not already addressed in the above sections or is unable to resolve using the listed steps, the user can provide **in-app feedback** along with **diagnostic data**. Our team can then investigate the logs to provide the right solution. Users can follow these steps to do the same:
 
-1.	Open the **MDE application** on your device and click on the **profile icon** in the top-left corner.
+1. Open the **MDE application** on your device and click on the **profile icon** in the top-left corner.
 
     :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="images/select-profile-icon-1.jpg":::
 
-2.	Select "Help & feedback".
+2. Select "Help & feedback".
 
     :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
 
-3.	Select "Send feedback to Microsoft".
+3. Select "Send feedback to Microsoft".
 
     :::image type="content" alt-text="Select send feedback to Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
 
-4.	Choose from the given options. To report an issue, select "I want to report an issue".
+4. Choose from the given options. To report an issue, select "I want to report an issue".
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="images/report-issue-4.jpg":::
 
-5.	Provide details of the issue that you are facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
+5. Provide details of the issue that you are facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 
-6.	Click on "Submit" to successfully send the feedback.
+6. Click on "Submit" to successfully send the feedback.
+

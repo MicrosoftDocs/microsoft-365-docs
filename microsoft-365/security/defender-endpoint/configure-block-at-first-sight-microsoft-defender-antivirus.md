@@ -11,7 +11,7 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 07/11/2022
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -23,6 +23,10 @@ ms.collection: M365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus 
+
+**Platforms**
+- Windows
 
 This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization.
 
@@ -33,7 +37,7 @@ This article describes an antivirus/antimalware feature known as "block at first
 
 Block at first sight is a threat protection feature of next-generation protection that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled. These settings include:
 
-- Cloud-delivered protection;
+- [Cloud protection](cloud-protection-microsoft-defender-antivirus.md);
 - A specified sample submission timeout (such as 50 seconds); and
 - A file-blocking level of high.
 
@@ -142,15 +146,6 @@ You can confirm that block at first sight is enabled on individual client device
 > - If the prerequisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints.
 > - Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
-## Validate block at first sight is working
-
-To validate that the feature is working, download the [Block at first sight sample file](https://demo.wd.microsoft.com/Page/BAFS). To download the file, you will need an account in Azure AD that has either the Security Administrator or Global Administrator role assigned.
-
-To validate that cloud-enabled protection is working, follow the guidance in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
 ## Turn off block at first sight
 
 > [!CAUTION]
@@ -212,6 +207,15 @@ If you have a personal device that is not managed by an organization, you might 
      > [!CAUTION]
      > Turning off block at first sight lowers the level of protection for your device. We do not recommend permanently disabling block at first sight.
 
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 

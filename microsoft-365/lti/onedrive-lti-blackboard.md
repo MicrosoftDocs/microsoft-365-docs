@@ -30,21 +30,21 @@ Integrating Microsoft OneDrive LTI with Blackboard is a two-step process. The fi
 > [!NOTE]
 >
 > - Cookies aren't allowed by default in the Chrome browser incognito mode and will need to be allowed.
-> - Microsoft OneDrive LTI works in the private mode in Microsoft Edge browser. Ensure that you haven’t blocked cookies (which are allowed by default).
+> - Microsoft OneDrive LTI works in the private mode in Microsoft Edge browser. Ensure that you haven't blocked cookies (which are allowed by default).
 
 ## Register the OneDrive LTI 1.3 tool in Blackboard
 
-1. From Blackboard’s Administrator Panel, select **LTI Tool Providers**.
-2. Select **Register LTI 1.3 Tool**.
-3. In the Client ID field, type or copy and paste this ID: ``78cd1b1c-ccbd-4318-9f90-22241f63b1f5``
+1. From Blackboard's Administrator Panel, select **LTI Tool Providers**.
+2. Select **Register LTI 1.3 Tool**.
+3. In the Client ID field, type or copy and paste this ID: ``78cd1b1c-ccbd-4318-9f90-22241f63b1f5``
 
-  > [!NOTE]
-  > Adding this client ID will configure two different placements in Blackboard: one that allows access to the tool from the Content Market, Books and Tools, and the Rich text editor, and another which allows access to the tool from the Add Content menu in the course online for Ultra courses.
+   > [!NOTE]
+   > Adding this client ID will configure two different placements in Blackboard: one that allows access to the tool from the Content Market, Books and Tools, and the Rich text editor, and another which allows access to the tool from the Add Content menu in the course online for Ultra courses.
 
 4. Select **Submit**.
-5. Review all pre-populated settings in the **Tool Status** view, and make sure the **Tool Status** round button selected is **Approved**.
-6. In **Institution Policies**, select the **Role in course** and the **Name** checkboxes in the user fields to send. All other user fields are optional, but it’s recommended to leave them on to future proof your OneDrive installation.
-7. **Allow grade service access** and **Allow membership service access** are also optional at this time but might be required for future updates to the LTI tool.
+5. Review all pre-populated settings in the **Tool Status** view, and make sure the **Tool Status** round button selected is **Approved**.
+6. In **Institution Policies**, select the **Role in course** and the **Name** checkboxes in the user fields to send. All other user fields are optional, but it's recommended to leave them on to future proof your OneDrive installation.
+7. **Allow grade service access** and **Allow membership service access** are also optional at this time but might be required for future updates to the LTI tool.
 8. Copy the **Deployment ID**. You will need it to configure the Microsoft LTI Tool.
 9. Select the **Submit** button to finish.
 
@@ -62,7 +62,7 @@ Integrating Microsoft OneDrive LTI with Blackboard is a two-step process. The fi
 6. Review and save your changes. A message will be displayed upon successful registration.
 7. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
 
-After you complete these steps, your instructors will be able to open documents from OneDrive when they use the ‘plus’ menu in the Course Content page.
+After you complete these steps, your instructors will be able to open documents from OneDrive when they use the ‘plus' menu in the Course Content page.
 
 ## Recommended content
 

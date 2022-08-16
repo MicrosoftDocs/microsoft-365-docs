@@ -80,7 +80,7 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 
 ### Nest the newly created security group into the role group
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
    ```powershell
    Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`

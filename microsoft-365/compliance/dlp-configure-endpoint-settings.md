@@ -1,5 +1,5 @@
 ---
-title: "Configure endpoint data loss prevention settings"
+title: "Configure endpoint DLP settings"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -41,7 +41,7 @@ Before you get started, you should set up your DLP settings.
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Restricted apps     |Supported         |Supported         |         |
@@ -56,9 +56,9 @@ Before you get started, you should set up your DLP settings.
 
 ### Advanced classification scanning and protection
 
-Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview), and [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers) in your DLP policies.
+Advanced classification scanning and protection allows the more advanced Microsoft Purview cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, and [named entities](named-entities-learn.md) in your DLP policies.
 
-When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities (preview), and trainable classifiers aren't available. When When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
+When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities, and trainable classifiers aren't available. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
 If bandwidth utilization isn't a concern, you select **No limit** to allow unlimited bandwidth utilization.
 
@@ -76,7 +76,7 @@ These Windows versions support advanced classification scanning and protection:
 
 ### File path exclusions
 
-Open [Compliance center](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
+Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they're too noisy or don’t contain files you're interested in. Files in those locations won't be audited and any files that are created or modified in those locations won't be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
@@ -86,7 +86,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
-- Valid file path that ends with `\*`, which means only files under subfolders, besides the files directly under the folder. <br/>For example: `C:\Temp\*`
+- Valid file path that ends with `\*`, which means only files under subfolders. Files directly under the folder are not excluded. <br/>For example: `C:\Temp\*`
 
 - Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
 
@@ -98,7 +98,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - A mix of all the above. <br/>For example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-#### macOS devices (preview)
+#### macOS devices
 
 Similar to Windows 10 devices you can add your own exclusions for macOS devices.
 
@@ -122,7 +122,7 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 #### Restricted apps
 
-**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices (preview).
+**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices.
 
 When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
 
@@ -132,7 +132,7 @@ When **Access by restricted apps** is selected in a policy and a user uses an ap
 > [!IMPORTANT]
 > The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item. 
 
-#### File activities for apps in restricted app groups (preview)
+#### File activities for apps in restricted app groups
 
 Restricted app groups are collections of apps that you create in DLP settings and then add to a rule in a policy. When you add a restricted app group to a policy you can take the actions defined in this table.
 
@@ -147,11 +147,11 @@ Restricted app groups are collections of apps that you create in DLP settings an
 
 #### How DLP applies restrictions to activities
 
-Interactions between **File activities for apps in restricted app groups (preview)**, **File activities for all apps** and the **Restricted app activities** list are scoped to the same rule.
+Interactions between **File activities for apps in restricted app groups**, **File activities for all apps** and the **Restricted app activities** list are scoped to the same rule.
 
 ##### Restricted app groups overrides
 
-Configurations defined in **File activities for apps in restricted app groups (preview)** override the configurations in the **Restricted app activities** list and **File activities for all apps** in the same rule.
+Configurations defined in **File activities for apps in restricted app groups** override the configurations in the **Restricted app activities** list and **File activities for all apps** in the same rule.
 
 ##### Restricted app activities and File activities for all apps
 
@@ -178,9 +178,9 @@ User A opens a DLP protected file using Notepad. DLP allows the access and audit
    
 ##### File activities for all apps only
 
-If an app is not in **File activities for apps in restricted app groups (preview)** or is not in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
+If an app is not in **File activities for apps in restricted app groups** or is not in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
-#### macOS devices (preview)
+#### macOS devices
 
 Just like on Windows devices, you'll now be able to prevent macOS apps from accessing sensitive data by defining them in the **Restricted app activities** list. 
 
@@ -231,7 +231,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 #### Service domains
 
 > [!NOTE]
-> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [the Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installed.
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
 
 You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
@@ -246,9 +246,23 @@ Use the FQDN format of the service domain without the ending `.`
 
 For example:
 
- `www.contoso.com` 
 
-Wildcards aren't supported.
+| Input | URL matching behavior |
+|---|---|
+| **CONTOSO.COM** |**Matches the specified domain name, and any subsite**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*://contoso.com/anysubsite1/anysubsite2 (etc) <p>**Does not match sub-domains or unspecified domains**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
+| ***.CONTOSO.COM** |**Matches the specified domain name, any subdomain, and any site**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc) <p>**Does not match unspecified domains** <p>*://anysubdomain.contoso.com.AU/ |
+| **`www.contoso.com`** |**Matches the specified domain name**: <p>`www.contoso.com` <p>**Does not match unspecified domains or subdomains** <p>*://anysubdomain.contoso.com/, in this case, you have to put the FQDN domain name itself `www.contoso.com`|
+
+#### Sensitive service domains (preview)
+
+When you list a website in Sensitive services domains you can audit, block with override, or block users when they attempt to:
+
+- print from a website
+- copy data from a website
+- save a website as local files
+
+Each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. Sensitive service domains (preview) is used in conjunction with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
+
 
 ### Additional settings for endpoint DLP
 
@@ -287,7 +301,7 @@ File activity will always be audited for onboarded devices, regardless of whethe
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview)
+- [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

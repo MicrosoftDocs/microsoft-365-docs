@@ -13,13 +13,19 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Use Threat Explorer or Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
 # Threat hunting in Threat Explorer for Microsoft Defender for Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In this article:
 
@@ -30,7 +36,6 @@ In this article:
 
 > [!NOTE]
 > This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
-
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -49,6 +54,9 @@ With these tools, you can:
 
 For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
+Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Microsoft Defender for Office 365. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
+
 ## Threat Explorer walk-through
 
 In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 and Plan 2. Manually operated Threat hunting tools exist in both plans, under different names and with different capabilities.
@@ -64,7 +72,6 @@ Once a security operations (Sec Ops) person selects the data they want to see, w
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/sender-drop-down.png" alt-text="The Sender button in Threat Explorer" lightbox="../../media/sender-drop-down.png":::
-
 
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
 
@@ -209,7 +216,7 @@ Names and GUIDs of the transport rules applied to the message appear. Analysts w
 > [!IMPORTANT]
 > Exchange transport rule search and name availability depend on the specific role assigned to you. You need to have one of the following roles or permissions to view the transport rule names and search. However, even without the roles or permissions below, an analyst may see the transport rule label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
 >
-> - Exchange Online Only - Data Loss Prevention: All
+> - Exchange Online Only - data loss prevention: All
 > - Exchange Online Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory or Exchange Online - Security Admin: All
 > - Azure Active Directory or Exchange Online - Security Reader: All
