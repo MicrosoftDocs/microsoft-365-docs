@@ -58,7 +58,7 @@ This means there's suspicious user activity originating from an IP address that 
 
     - **Does the interval between attempts to sign in look suspicious?** Automated password spray attacks tend to have a regular time interval between attempts.
 
-    - **Are there successful attempts of a user/several users signing in with [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) prompts?** The existence of these attempts might indicate that the IP is not malicious.
+    - **Are there successful attempts of a user/several users signing in with [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365) prompts?** The existence of these attempts might indicate that the IP is not malicious.
 
     - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the Activity log indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. Note that this activity must be further correlated to other activities.
 
