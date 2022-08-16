@@ -139,6 +139,28 @@ The `ignoredDelimiters` flag doesn't support:
 >
 > The number of columns in your sensitive information source table and the number of fields in your schema must match, order doesn't matter.
 
+The characters that are used as *token separators* behave differently than the other delimiters. Here are some examples:
+- \ (space)
+- \\t
+- \,
+- \.
+- \;
+- \?
+- \!
+- \\r
+- \\n  
+
+When you include a *token separator*, EDM will break the token where the separator is. For example, EDM will see the value **Middle-Last Name** into **Middle-Last** and **Name** for the `LastName` field. If the *ignoredDelimiters* is included for the `LastName` field with the character '-', that action only happens after the value is broken. In the end, EDM would see the following values **MiddleLast** and **Name**.
+
+To use the following characters as *ignoredDelimiters* and not *token separators*, a SIT that matches the corresponding format needs to be associated with the field. For example, a SIT that detects a multi-word string with dashes in it needs to be associated with the `LastName` field.
+- \.
+- \;
+- \!
+- \?
+- \\
+
+It is possible to associate SITs to secondary elements using PowerShell.
+
 1. Define the schema in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the sensitive information source table, there is a line that uses the syntax:
 
       `\<Field name="" searchable=""/\>`.
