@@ -21,6 +21,10 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
+## Applies to
+
+- Classic experience
+
 You can create the schema and EDM SIT by using the [Use the exact data match schema and sensitive information type pattern wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) or [manually](#create-exact-data-match-schema-manually-and-upload). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM-based SITS or their implementation, you should familiarize yourself with:
@@ -30,7 +34,6 @@ If you are not familiar with EDM-based SITS or their implementation, you should 
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to 10 different EDM schemas in a Microsoft 365 tenant.
-
 
 
 ## Use the Exact Data Match Schema and Sensitive Information Type Wizard
