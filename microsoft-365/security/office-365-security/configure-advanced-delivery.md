@@ -143,9 +143,9 @@ In addition to the two scenarios that the advanced delivery policy can help you 
 
 - **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we _**highly recommended**_ that these allowances are temporary.
 
-## Security & Compliance PowerShell procedures for SecOps mailboxes in the advanced delivery policy
+## PowerShell procedures for SecOps mailboxes in the advanced delivery policy
 
-In Security & Compliance PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
+In PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
 
 - **The SecOps override policy**: Controlled by the **\*-SecOpsOverridePolicy** cmdlets.
 - **The SecOps override rule**: Controlled by the **\*-SecOpsOverrideRule** cmdlets.
@@ -276,9 +276,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 For detailed syntax and parameter information, see [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## Security & Compliance PowerShell procedures for third-party phishing simulations in the advanced delivery policy
+## PowerShell procedures for third-party phishing simulations in the advanced delivery policy
 
-In Security & Compliance PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
+In PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
 
 - **The phishing simulation override policy**: Controlled by the **\*-PhishSimOverridePolicy** cmdlets.
 - **The phishing simulation override rule**: Controlled by the **\*-PhishSimOverrideRule** cmdlets.
