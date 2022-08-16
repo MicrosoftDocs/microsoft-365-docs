@@ -54,9 +54,9 @@ You can use the Microsoft 365 Defender portal or PowerShell to allow or block em
 >
 > Users in the organization can't send email to these blocked domains and addresses. They'll received the following non-delivery report (also known as an NDR or bounce message): "5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization’s tenant allow/block list policy."
 
-### Use Exchange Online PowerShell to create block entries for domains or email addresses
+### Use PowerShell to create block entries for domains or email addresses
 
-To add domains or email addresses block entries in the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType <Sender> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
@@ -107,7 +107,7 @@ You can't directly modify the Tenant Allow/Block List to add allow entries. Inst
 
 ## View domain or email addresses entries
 
-To view blocked domains or email addresses entries in the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Sender> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
@@ -117,7 +117,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ## Modify domain or email addresses entries
 
-To modify allowed or blocked domains or email addresses entries in the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Sender> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
@@ -127,7 +127,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 ## Remove domain or email addresses entries
 
-To remove allowed or blocked domains or email addresses entries from the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Sender> -Ids <"Id1","Id2",..."IdN">
@@ -198,9 +198,9 @@ Only messages from that domain _and_ sending infrastructure pair are allowed to 
 > [!NOTE]
 > The emails from these senders will be blocked as _phishing_.
 
-### Use Exchange Online PowerShell to create blocked spoofed sender entries
+### Use PowerShell to create blocked spoofed sender entries
 
-To add spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
@@ -262,9 +262,9 @@ Use [admin submissions](admin-submission.md) to submit the blocked message. This
 >
 > - The spoofed sender domain pair will be created and visible in the **Spoofed senders** tab under the **Tenant allow/block list** page.
 
-### Use Exchange Online PowerShell to create allowed spoofed sender entries
+### Use PowerShell to create allowed spoofed sender entries
 
-To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell), use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
@@ -274,7 +274,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoo
 
 ## View spoofed sender entries
 
-To view spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems [-Action <Allow | Block>] [-SpoofType <External | Internal>
@@ -302,7 +302,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 ## Modify spoofed sender entries
 
-To modify allow or block spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
@@ -318,7 +318,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoo
 
 ## Remove spoofed sender entries
 
-To remove allow or block spoof sender entries from the Tenant Allow/Block List, use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">

@@ -32,13 +32,17 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages (does not apply to intra-org messages) and at the time of user clicks. You can specify the following types of overrides:
 
-- URLs to block.
-- Files to block.
-- Domains or email addresses to block - both sending and receiving.
-- Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
-- URLs to allow.
-- Files to allow.
-- Domains or email addresses to allow - both sending and receiving.
+- **Block**:
+  - URLs
+  - Files
+  - Domains or email addresses, both sending and receiving.
+  - Spoofed senders. If you override the allow verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual block entry that appears only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create block entries for spoofed senders here before they're detected by spoof intelligence.
+
+- **Allow**:
+  - URLs
+  - Files
+  - Domains or email addresses, both sending and receiving.
+  - Spoofed senders. If you override the block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow entry that appears only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow entries for spoofed senders here before they're detected by spoof intelligence.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -84,7 +88,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 ## Configure the Tenant Allow/Block List
 
-To allow or block emails, see [Allow or block emails using the Tenant Allow/Block List](allow-block-email-spoof.md).
+To allow or block domains or email addresses, see [Allow or block emails using the Tenant Allow/Block List](allow-block-email-spoof.md).
 
 To allow or block files, see [Allow or block files using the Tenant Allow/Block List](allow-block-files.md).
 
@@ -92,7 +96,7 @@ To allow or block URLs, see [Allow or block URLs using the Tenant Allow/Block Li
 
 These articles contain the instructions to add or remove or modify entries in Tenant Allow/Block List using both Microsoft 365 Defender Portal and Exchange Online PowerShell or standalone EOP PowerShell.
 
-### What to expect after you add an allow or block entry
+## What to expect after you add an allow or block entry
 
 After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
 

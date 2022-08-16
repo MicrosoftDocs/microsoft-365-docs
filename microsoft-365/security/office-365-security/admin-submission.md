@@ -89,22 +89,27 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **URLs** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, select the **URLs** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. In the **URL** box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
+3. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
 
-4. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (False positive)**
-   - **Should have been blocked (False negative)**: In the **This URL should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
-     - **Phish**
-     - **Malware**
+   - **Select the submission type**: Verify the value **URL** is selected.
+
+     > [!NOTE]
+     > URL submissions are not available in clouds that do not allow for data to leave the environment. **URL** is greyed out.
+
+   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears.
+
+   - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
+
+4. In the **This URL should have been categorized as** section that appears, select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
 5. When you're finished, click **Submit**.
 
     > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="The New Email submission process" lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
- > URL submissions are not available in clouds that do not allow for data to leave the environment. The ability to select URL will be greyed out.
+ > For instructions on how to report a false positive, see [Use the Microsoft 365 Defender portal to create allow URL entries on the Submissions page](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-url-entries-on-the-submissions-page).
 
 ## Report questionable email attachment to Microsoft
 
@@ -114,13 +119,13 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 3. In the **File** section that appears, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**.
 
-3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
+4. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
    - **Should not have been blocked (False positive)**
    - **Should have been blocked (False negative)**: In the **This file should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
      - **Phish**
      - **Malware**
 
-4. When you're finished, click **Submit**.
+5. When you're finished, click **Submit**.
 
     > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="The New Attachment submission process" lightbox="../../media/submission-file-flyout.png":::
 
@@ -349,7 +354,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
    - To notify users see [Admin Review for Reported messages](admin-review-reported-message.md)
- 
+
 > [!NOTE]
 > If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
