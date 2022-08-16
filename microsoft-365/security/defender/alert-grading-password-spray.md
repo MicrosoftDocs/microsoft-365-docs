@@ -60,7 +60,7 @@ This means there's suspicious user activity originating from an IP address that 
 
     - **Are there successful attempts of a user/several users signing in with [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365) prompts?** The existence of these attempts might indicate that the IP isn't malicious.
 
-    - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the [Activity log](https://docs.microsoft.com/defender-cloud-apps/activity-filters#ip-address-insights) indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. This activity must be further correlated to other activities.
+    - **Are legacy protocols used?** Using protocols like POP3, IMAP, and SMTP might indicate an attempt to perform a password spray attack. Finding `Unknown(BAV2ROPC)` in the user agent (Device type) in the [Activity log](/defender-cloud-apps/activity-filters#ip-address-insights) indicates use of legacy protocols. You can refer to the example below when looking at the Activity log. This activity must be further correlated to other activities.
 
         :::image type="content" source="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 interface showing the Device type." lightbox="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png":::
 
@@ -170,11 +170,11 @@ AlertInfo
 ```
 ## Recommended Actions
 
-1. [Block the attacker's IP address.](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
+1. [Block the attacker's IP address.](/azure/active-directory/conditional-access/block-legacy-authentication)
 2. Reset user accounts' credentials. 
 3. Revoke access tokens of compromised accounts.
-4. [Block legacy authentication.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) 
-5. [Require MFA for users](/microsoft-365/business-premium/m365bp-conditional-access) if possible to [enhance account security](https://docs.microsoft.com//azure/active-directory/authentication/tutorial-enable-azure-mfa) and make account compromise by a password spray attack difficult for the attacker. 
+4. [Block legacy authentication.](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) 
+5. [Require MFA for users](/microsoft-365/business-premium/m365bp-conditional-access) if possible to [enhance account security](/azure/active-directory/authentication/tutorial-enable-azure-mfa) and make account compromise by a password spray attack difficult for the attacker. 
 6. Block the compromised user account from signing in if needed.
 ## See also
 
