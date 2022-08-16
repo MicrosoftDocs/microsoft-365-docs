@@ -22,25 +22,6 @@ ms.custom: trial-playbook
 
 Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
 
-Trying each solution will help you make informed decisions to meet your organization's compliance needs.
-
-Features:
-
-- [Audit (Premium)](#audit-premium)
-- [Communication Compliance](#communication-compliance)
-- [Compliance Manager](#compliance-manager)
-- [Data Lifecycle Management](#data-lifecycle-management)
-- [Microsoft Purview Data Loss Prevention](#data-loss-prevention)
-- [eDiscovery](#ediscovery)
-- [Information Protection](#information-protection)
-- [Insider Risk Management](#insider-risk-management)
-- [Records Management](#records-management)
-
-Optional add-ons:
-
-- [Compliance Manager premium assessments](#compliance-manager-premium-assessments)
-- [Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
-
 ## Compliance actions with Microsoft Purview
 
 Easily and quickly start trying Microsoft’s compliance solutions without changing your organization’s metadata.
@@ -268,116 +249,159 @@ Using Insider Risk Management and Communication Compliance you can quickly ident
 - Investigate – integrated investigation workflows enable end-to-end collaboration across Security, HR and Legal.
 - Know privacy is built-in – protect user privacy and prevent bias by removing identifiable user details, like name or email, while mitigating organizational risk.
 
-Insider Risk Management
-Detect and remediate insider risks
+## Insider Risk Management
+
+**Detect and remediate insider risks**
+
 Leverage end-to-end workflows to help you quickly identify, triage, and remediate. Using logs from Microsoft 365    and Azure services, you can define policies to identify potential data security incidents and take remediation actions such as promoting user education or initiating an investigation.
 
-Step 1 (required): Enable permissions for Insider Risk Management
+### Step 1 (required): Enable permissions for Insider Risk Management
+
 There are four role groups used to configure permissions to manage Insider Risk Management features, which have different roles and level of access. Setting up permissions to Insider Risk Management is key before proceeding.
-Add users to an insider risk management role group
+
+[Add users to an insider risk management role group](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
-Step 2 (required): Enable the Microsoft 365 audit log
+
+### Step 2 (required): Enable the Microsoft 365 audit log
+
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it’s OK to turn auditing back on when completing this step.
+
 For step-by-step instructions to turn on auditing, see Turn audit log search on or off. After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see Search the audit log.
 
-Step 3 (recommended): Enable and view Insider Risk Management analytics insights
-Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
-To learn more about analytics insights, see Insider risk management settings: Analytics and check out the Insider risk management analytics video to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
-Note: to enable insider risk analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin. 
+### Step 3 (recommended): Enable and view Insider Risk Management analytics insights
 
-Step 4: Start with Recommended actions
+Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
+
+To learn more about analytics insights, see Insider risk management settings: Analytics and check out the Insider risk management analytics video to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
+
+> [!NOTE]
+> To enable insider risk analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin.
+
+### Step 4: Start with Recommended actions
+
 Quickly get started and get the most out of Insider Risk Management capabilities with Recommended actions. Included on the Overview page, recommended actions will help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
+
 Select a recommendation from the list to get started with configuring insider risk management.
 
- 
-Insider Risk Management recommended actions.
+:::image type="content" source="../media/compliance-trial/irm-recommended-actions.png" alt-text="Insider Risk Management recommended actions":::
+
 Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization.
 Note that the recommended steps in the playbook (above) may also be included in the Recommended actions shown in the portal. 
 Set up recommendations are also available on the Microsoft docs page, via the Microsoft Purview Insider Risk Management Setup Guide. 
 To fully leverage the functionality of Insider Risk Management, we recommend setting up policies for your organization to better identify potential risky actions that may lead to a security incident, leveraging templates for Data leaks or Data theft.  
 
+## Communication Compliance
 
-Communication Compliance
-Identify regulatory compliance policy violations
+**Identify regulatory compliance policy violations**
+
 Microsoft Purview Communication Compliance helps organizations detect explicit regulatory compliance violations such as SEC or FINRA obligations, including inappropriate sharing of sensitive or confidential information. With built in workflows, the solution can help you investigate and remediate possible regulatory compliance violations. Built with privacy by design, this solution has usernames pseudonymized by default, role-based access controls are built-in, investigators must be explicitly added by an administrator to a policy, and audit logs are in place to help ensure user-level privacy.
-Step 1: Enable permissions for communication compliance
- Assign users communication compliance roles to be able to use the product. The "Communication Compliance" role group gives you all the permissions to use the product. Learn about other communication compliance role groups here: Get started with communication compliance. 
 
-Step 2: Enable the audit log
+### Step 1: Enable permissions for communication compliance
+
+Assign users communication compliance roles to be able to use the product. The "Communication Compliance" role group gives you all the permissions to use the product. Learn about other communication compliance role groups here: Get started with communication compliance. 
+
+### Step 2: Enable the audit log
+
 To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see Turn audit log search on or off.
 
-Step 3: Review recommended actions insights
-Included on the Policies page, recommended actions helps you discover risks you may not be aware of, like inappropriate sharing of sensitive or confidential information that are already occurring in your organization. This view includes only the aggregate number of matches per classification type, with none of the insights containing any personally identifiable information, and helps you determine the type and scope of communication compliance policies to configure.
-     
+### Step 3: Review recommended actions insights
 
-Step 4: Create a communication compliance policy
+Included on the Policies page, recommended actions helps you discover risks you may not be aware of, like inappropriate sharing of sensitive or confidential information that are already occurring in your organization. This view includes only the aggregate number of matches per classification type, with none of the insights containing any personally identifiable information, and helps you determine the type and scope of communication compliance policies to configure.
+
+### Step 4: Create a communication compliance policy
+
 Create a communication compliance policy using the existing templates: 1- Sensitive information; 2- Regulatory compliance; 3- Conflict of interest. Learn more about our out of the box policy templates and how to create a custom policy here: Communication compliance policies.
 
-Step 5: Investigate and remediate alerts
-Investigate and remediate communication compliance alerts. 
+### Step 5: Investigate and remediate alerts
 
-Step 6: Review reports for insights
-Review reports for insights on your overall communication compliance posture. 
+Investigate and remediate communication compliance alerts.
 
+### Step 6: Review reports for insights
 
-Discover & respond
-The fourth organizational concern from customers is how to find relevant data when needed for investigations, regulatory requests, or litigations and for meeting regulatory requirements.   
+Review reports for insights on your overall communication compliance posture.
+
+## Discover & respond
+
+The fourth organizational concern from customers is how to find relevant data when needed for investigations, regulatory requests, or litigations and for meeting regulatory requirements.
+
 With eDiscovery and Audit, you can discover data efficiently.
-•	Discover and collect data in-place – collect, filter, and gain data insights faster, with greater visibility.
-•	Manage workflows – reduce the friction of identifying and collecting potential sources of relevant information by automatically mapping unique and shared data sources.
-•	Accelerate the discovery process – manage the increase of data volume by searching and processing highly relevant content in-place. 
 
-eDiscovery (Premium) 
+- Discover and collect data in-place – collect, filter, and gain data insights faster, with greater visibility.
+- Manage workflows – reduce the friction of identifying and collecting potential sources of relevant information by automatically mapping unique and shared data sources.
+- Accelerate the discovery process – manage the increase of data volume by searching and processing highly relevant content in-place. 
+
+## eDiscovery (Premium)
+
 Discover more efficiently with an end-to-end workflow
 Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that’s responsive to your organization’s internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case.
-Step 1 (required): Permissions
+
+### Step 1 (required): Permissions
+
 To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
-1.	Set up eDiscovery (Premium) – Assign eDiscovery permissions
-2.	Add or remove members from a case
 
-Step 2 (required): Create a Case
+1. Set up eDiscovery (Premium) – Assign eDiscovery permissions
+1. Add or remove members from a case
+
+### Step 2 (required): Create a Case
+
 More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
-1.	Manage eDiscovery (Premium) – learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results.
-2.	Create an eDiscovery case using eDiscovery Premium’s new case format
-3.	Close or delete a case - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
-Step 3 (optional): Settings
+1. Manage eDiscovery (Premium) – learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results.
+1. Create an eDiscovery case using eDiscovery Premium’s new case format
+1. Close or delete a case - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
+
+### Step 3 (optional): Settings
+
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. You can manage settings such as attorney-client privilege detection, historical versions and many more.
-1.	Configure global settings for eDiscovery (Premium)
-2.	Configure search and analytics settings
-3.	Manage jobs in eDiscovery (Premium) 
 
-Step 4 (optional): Compliance Boundaries
+1. Configure global settings for eDiscovery (Premium)
+1. Configure search and analytics settings
+1. Manage jobs in eDiscovery (Premium)
+
+### Step 4 (optional): Compliance Boundaries
+
 Compliance boundaries create logical boundaries within an organization that control the user content locations (such as mailboxes, OneDrive accounts, and SharePoint sites) that eDiscovery managers can search. They also control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization.
- 
-Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases.
+
+:::image type="content" source="../media/compliance-trial/compliance-boundaries.png" alt-text="Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases":::
+
 Set up compliance boundaries for eDiscovery investigations:
-1.	Identify a user attribute to define your agencies
-2.	Create a role group for each agency
-3.	Create a search permissions filter to enforce the compliance boundary
-4.	Create an eDiscovery case for an intra-agency investigations
 
-Step 5 (optional): eDiscovery Premium’s collection tool
-Use the eDiscovery (Premium) collection workflow to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.  
-Learn more about collection queries and estimates.
+1. Identify a user attribute to define your agencies
+1. Create a role group for each agency
+1. Create a search permissions filter to enforce the compliance boundary
+1. Create an eDiscovery case for an intra-agency investigations
 
-Audit (Premium)
-Conduct investigations
+### Step 5 (optional): eDiscovery Premium’s collection tool
+
+Use the eDiscovery (Premium) collection workflow to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+
+[Learn more about collection queries and estimates.](building-search-queries.md)
+
+## Audit (Premium)
+
+**Conduct investigations**
+
 Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
-Step 1: Apply the E5 license to each user for which you’d like to generate E5 events
+
+### Step 1: Apply the E5 license to each user for which you’d like to generate E5 events
+
 Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
+
 Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, perform the following steps for each user.
-1.	Enable Audit (Premium) events - enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint to be audited for each user in Exchange Online PowerShell.
-2.	Set up audit retention policies - create additional audit log retention policies to meet the requirements of your organization’s security operations, IT, and compliance teams.
-3.	Search for Audit (Premium) events - search for crucial Audit (Premium) events and other activities when conducting forensic investigations.
 
-Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies
+1. Enable Audit (Premium) events - enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint to be audited for each user in Exchange Online PowerShell.
+1. Set up audit retention policies - create additional audit log retention policies to meet the requirements of your organization’s security operations, IT, and compliance teams.
+1. Search for Audit (Premium) events - search for crucial Audit (Premium) events and other activities when conducting forensic investigations.
+
+### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies
+
 Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization.
-1.	Before you create an audit log retention policy – key things to know before creating your policy.
-2.	Create an audit log retention policy
-3.	Manage audit log retention policies in the Microsoft Purview compliance portal - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
-4.	Create and manage audit log retention policies on PowerShell - You can also use Security & Compliance Center PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
 
+1. Before you create an audit log retention policy – key things to know before creating your policy.
+1. Create an audit log retention policy
+1. Manage audit log retention policies in the Microsoft Purview compliance portal - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
+1. Create and manage audit log retention policies on PowerShell - You can also use Security & Compliance Center PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
 
 ## Additional trials and add-ons
 
