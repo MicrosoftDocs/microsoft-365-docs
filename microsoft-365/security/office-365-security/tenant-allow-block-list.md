@@ -34,13 +34,16 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
 - URLs to block.
 - Files to block.
-- Sender emails or domains to block.
+- Email domains or addresses to block.
 - Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
 - URLs to allow.
 - Files to allow.
-- Sender emails or domains to allow.
+- Email domains or addresses to allow.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+
+> [!NOTE]
+> The ["Block the following URLs" list in Safe Links policies](safe-links.md#block-the-following-urls-list-for-safe-links) is in the process of being deprecated. You can now manage block URL entries in the Tenant Allow/Block List. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
 
 ## What do you need to know before you begin?
 
@@ -48,7 +51,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
-  ```console
+  ```DOS
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -56,15 +59,21 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for senders, 500 entries for URLs, 500 entries for file hashes, and 1024 entries for spoofing (spoofed senders).
+- The Tenant Allow/Block List has the following limits:
+  - 500 entries for domains & addresses.
+  - 500 entries for URLs.
+  - 500 entries for file hashes.
+  - 1024 entries for spoofing (spoofed senders).
 
-- The maximum number of characters for each entry is:
-  - File hashes = 64
-  - URL = 250
+- Entries in the Tenant Allow/Block List have the following limits:
+  - 64 character for file hashes.
+  - 250 characters for URLs.
 
-- An entry should be active within 30 minutes.
+- 99.99% of entries should be active within 30 minutes. Entries that aren't active within 30 minutes can take up to 24 hours. 
 
-- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
+- Email addresses & domains does not support punycode.
+
+- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for blocks only).
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -108,14 +117,14 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
 2. Select the tab you want. The columns that are available depend on the tab you selected:
 
-   - **Senders**:
-     - **Value**: The sender domain or email address.
+   - **Domains & addresses**:
+     - **Value**: The domain or email address.
      - **Action**: The value **Allow** or **Block**.
      - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
-   - **Spoofing**
+   - **Spoofed senders**
      - **Spoofed user**
      - **Sending infrastructure**
      - **Spoof type**: The value **Internal** or **External**.
@@ -139,8 +148,8 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
    You can click **Group** to group the results. The values that are available depend on the tab you selected:
 
-   - **Senders**: You can group the results by **Action**.
-   - **Spoofing**: You can group the results by **Action** or **Spoof type**.
+   - **Domains & addresses**: You can group the results by **Action**.
+   - **Spoofed senders**: You can group the results by **Action** or **Spoof type**.
    - **URLs**: You can group the results by **Action**.
    - **Files**: You can group the results by **Action**.
 
@@ -148,12 +157,12 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
    Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
 
-   - **Senders**
+   - **Domains & addresses**
      - **Action**
      - **Never expire**
      - **Last updated date**
      - **Remove on**
-   - **Spoofing**
+   - **Spoofed senders**
      - **Action**
      - **Spoof type**
    - **URLs**
@@ -171,9 +180,9 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
 3. When you're finished, click **Add**.
 
-## View sender, file or URL entries in the Tenant Allow/Block List
+## View domains & addresses, file or URL entries in the Tenant Allow/Block List
 
-To view block sender, file or URL entries in the Tenant Allow/Block List, use the following syntax:
+To view block domains & addresses, file or URL entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
@@ -462,6 +471,7 @@ A domain pair for a spoofed sender in the Tenant Allow/Block List uses the follo
 - **Sending infrastructure**: This value indicates the source of messages from the spoofed user. Valid values include:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address (for example, fabrikam.com).
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+  - A verified DKIM domain.
 
 Here are some examples of valid domain pairs to identify spoofed senders:
 
@@ -482,6 +492,6 @@ Only messages from that domain *and* sending infrastructure pair are allowed to 
 
 ## What to expect after you add an allow or block entry
 
-After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately once the entry is active. 99.99% of entries should be active within 30 minutes. Entries that aren't active within 30 minutes can take up to 24 hours.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.

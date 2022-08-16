@@ -34,10 +34,10 @@ To keep your organization [secure by default](secure-by-default.md), Exchange On
 - **Third-party phishing simulations**: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - **Security operations (SecOps) mailboxes**: Dedicated mailboxes that are used by security teams to collect and analyze unfiltered messages (both good and bad).
 
-You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messages _in these specific scenarios_ from being filtered.<sup>\*</sup> The advanced delivery policy ensures that messages in these scenarios achieve the following results:
+You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messages _in these specific scenarios_ from being filtered<sup>\*</sup>. The advanced delivery policy ensures that messages in these scenarios achieve the following results:
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
-- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*\*</sup>
+- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages<sup>\*\*</sup>.
 - [Default system alerts](/microsoft-365/compliance/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
@@ -79,7 +79,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 2. On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected, and then do one of the following steps:
    - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
-   - If there are no configured phishing simulations, click **Add**.
+   - If there are no configured SecOps mailboxes, click **Add**.
 
 3. On the **Edit SecOps mailboxes** flyout that opens, enter an existing Exchange Online mailbox that you want to designate as SecOps mailbox by doing one of the following steps:
    - Click in the box, let the list of mailboxes resolve, and then select the mailbox.
@@ -106,24 +106,25 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    - **Domain**: Expand this setting and enter at least one email address domain (for example, contoso.com) by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 20 entries.
 
      > [!NOTE]
-     > Use the domain from the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DomainKeys Identified Mail (DKIM) domain as specified by your phishing simulation vendor. 
+     > Use the domain from the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DomainKeys Identified Mail (DKIM) domain as specified by your phishing simulation vendor.
 
    - **Sending IP**: Expand this setting and enter at least one valid IPv4 address by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 10 entries. Valid values are:
      - Single IP: For example, 192.168.1.1.
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
+
    - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). These URLs are wrapped at the time of click, but they aren't blocked.
 
    To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    > [!NOTE]
-   > To configure a third-party phishing simulation in Advanced Delivery, you need to provie the following information:
-   > 
+   > To configure a third-party phishing simulation in Advanced Delivery, you need to provide the following information:
+   >
    > - At least one **Domain** from either of the following sources:
    >   - The `5321.MailFrom` address (also known as the MAIL FROM address, P1 sender, or envelope sender).
    >   - The DKIM domain.
    > - At least one **Sending IP**.
-   > 
+   >
    > You may optionally include **Simulation URLs to allow** to ensure that URLs in simulation messages are not blocked.
    > You may specify up to 10 entries for each field.
    > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
@@ -138,9 +139,9 @@ The third-party phishing simulation entries that you configured are displayed on
 
 In addition to the two scenarios that the advanced delivery policy can help you with, there are other scenarios that might require you bypass filtering:
 
-- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*. If you'd like to add protection, you'll need to enable Enhanced Filtering for Connectors (also known as *skip listing*). For more information, see [Manage mail flow using a third-party cloud service with Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). If you don't want Enhanced Filtering for Connectors, use mail flow rules (also known as transport rules) to bypass Microsoft filtering for messages that have already been evaluated by third-party filtering. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+- **Third-party filters**: If your domain's MX record _doesn't_ point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) _is not available_. If you'd like to add protection, you'll need to enable Enhanced Filtering for Connectors (also known as _skip listing_). For more information, see [Manage mail flow using a third-party cloud service with Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). If you don't want Enhanced Filtering for Connectors, use mail flow rules (also known as transport rules) to bypass Microsoft filtering for messages that have already been evaluated by third-party filtering. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
-- **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we ***highly recommended*** that these allowances are temporary.
+- **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we _**highly recommended**_ that these allowances are temporary.
 
 ## Security & Compliance PowerShell procedures for SecOps mailboxes in the advanced delivery policy
 

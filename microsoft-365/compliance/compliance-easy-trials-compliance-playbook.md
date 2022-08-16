@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Purview solutions trial playbook."
+ms.custom: trial-playbook
 ---
 
 # Trial playbook: Microsoft Purview solutions
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your 90-day free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
 
@@ -180,7 +179,7 @@ Adaptive policy scopes allow you to dynamically target a policy to certain users
 
 Policies using adaptive policy scopes stay current as the organization changes with new employees joining or leaving. Additionally, they are not subject to the previous limits of 100/1,000 locations included in a policy.
 
-- Create an Adaptive Policy Scope, and use it with a retention policy
+- Create an [Adaptive Policy Scope](retention.md#adaptive-or-static-policy-scopes-for-retention), and use it with a retention policy
 
 ### Step 2: Automate labeling to apply a label to all items by default
 
@@ -189,7 +188,7 @@ Policies using adaptive policy scopes stay current as the organization changes w
 
 Default labels allow you to automatically apply a retention label to all items within a specified library, folder, or document set in SharePoint.
 
-- Publish a label and apply it as default in SharePoint
+- Publish a label and apply it as default in [SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)
 
 ## Data Loss Prevention
 
@@ -380,7 +379,7 @@ To enable insider risk Analytics, you must be a member of the Insider Risk Manag
 
 **Manage high-value items for business, legal, or regulatory record-keeping requirements**:
 
-Use Microsoft Purview Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Leverage automation capabilities from creation through collaboration, to declare records, retain contents, and dispose of them at the end.
+Use integrated Microsoft Purview Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Leverage automation capabilities from creation through collaboration, to declare records, retain contents, and dispose of them at the end.
 
 ### Step 1: Mark contents as records  
 
@@ -389,7 +388,7 @@ Use Microsoft Purview Records Management features to automate the retention sche
 
 When content is declared a record, restrictions are placed on the item in terms of what actions are allowed or blocked, additional activities about the items are logged, and you have proof of disposition if the items are deleted at the end of their retention period.
 
-- Create a retention label that declares content as a record or a regulatory record
+- Create a retention label that [declares content as a record or a regulatory record](declare-records.md)
 
 ### Step 2: Review content to approve before it's permanently deleted
 
@@ -398,7 +397,7 @@ When content is declared a record, restrictions are placed on the item in terms 
 
 At the end of the retention period, users you specify ("reviewers") can be notified to review the content and approve the permanent disposal action. This supports if a different action than deletion is more appropriate, such as assigning a different retention period to the content or suspending deletion for an audit.
 
-- Create a retention label that uses disposition review
+- [Create a retention label that uses disposition review](disposition.md#disposition-reviews)
 
 ### Step 3: Apply labels automatically to content that matches specific conditions
 
@@ -407,9 +406,9 @@ At the end of the retention period, users you specify ("reviewers") can be notif
 
 Auto-applying labels removes the need for you users to manually perform the labeling activities. You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for trainable classifiers.
 
-- Auto-apply retention labels to content with specific types of sensitive information
-- Auto-apply retention labels to content using trainable classifiers
-- Auto-apply retention labels with keywords or searchable properties
+- [Auto-apply retention labels to content with specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [Auto-apply retention labels to content using trainable classifiers](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [Auto-apply retention labels with keywords or searchable properties](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 ## Additional trials and add-ons
 

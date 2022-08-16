@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom:
 description: Deploy Microsoft 365 security and compliance features and protect your personal information.
 ---

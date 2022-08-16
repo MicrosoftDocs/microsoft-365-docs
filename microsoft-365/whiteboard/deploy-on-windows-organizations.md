@@ -1,7 +1,7 @@
 ---
 title: Deploy Microsoft Whiteboard on Windows 10 devices
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to deploy Microsoft Whiteboard on devices running Windows 10 or later versions.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -63,7 +62,7 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 ## See also
 
-[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
+[Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Manage data for Whiteboard](manage-data-organizations.md)
 

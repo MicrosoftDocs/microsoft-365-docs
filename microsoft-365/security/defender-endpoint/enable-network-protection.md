@@ -94,6 +94,28 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 ### Microsoft Endpoint Manager
 
+#### Microsoft Defender for Endpoint Baseline method
+
+1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
+2. Go to **Endpoint security** > **Security baselines** > **Microsoft Defender for Endpoint Baseline**.
+3. Select **Create a profile**, then provide a name for your profile, and then select **Next**.
+4. In the **Configuration settings** section, go to **Attack Surface Reduction Rules** > set **Block**, **Enable** or **Audit** for **Enable network protection**. Select **Next**.
+5. Select the appropriate **Scope tags** and **Assignments** as required by your organization.
+7. Review all the information, and then select **Create**.
+
+#### Antivirus policy method
+1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
+2. Go to **Endpoint security** > **Antivirus**
+3. Select **Create a policy**
+4. In the **Create a policy** flyout, choose **Windows 10, Windows 11, and Windows Server** from the **Platform** list.
+5. Choose **Microsoft Defender Antivirus** from the **Profile** list then choose **Create**
+6. Provide a name for your profile, and then select **Next**.
+7. In the **Configuration settings** section, select **Disabled**, **Enabled (block mode)** or **Enabled (audit mode)** for **Enable Network Protection**, then select **Next**.
+8. Select the appropriate **Assignments** and **Scope tags** as required by your organization.
+9. Review all the information, and then select **Create**.
+
+#### Configuration profile method
+
 1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
