@@ -17,6 +17,8 @@ description: Learn about data retention for Microsoft Whiteboard in Azure and On
 
 # Manage data for Microsoft Whiteboard
 
+In order to manage data, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
+
 Whiteboard content is stored in both Azure and OneDrive for Business. New whiteboards will be stored in OneDrive for Business; the only exception is whiteboards started from a Surface Hub will be stored in Azure (which will be moved to OneDrive for Business in the future). For more information, see [Manage sharing in Whiteboard](manage-sharing-organizations.md).
 
 ## Azure storage overview
@@ -27,7 +29,7 @@ Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retenti
 
 ### If a user account is deleted in Azure
 
-We're changing how whiteboards are stored when a user's account is deleted in Azure. Prior to the change, when a user's account was deleted, whiteboards that the user owned was also deleted, but whiteboards that were shared with others weren't deleted.
+We're changing how whiteboards are stored when a user's account is deleted in Azure. Prior to the change, any whiteboards that were owned by a deleted user's account were also deleted. However, whiteboards that were shared with others weren't deleted.
 
 >[!NOTE]
 > Whiteboards stored in OneDrive for Business will be handled like any other content in OneDrive for Business. For more information, see [Set the OneDrive retention for deleted users](/onedrive/set-retention).
@@ -44,9 +46,9 @@ Ensure that any deletion process or script handles this change. If you're fine w
 
 ## OneDrive for Business storage overview
 
-Whiteboards will be created in the OneDrive for Business folder of the person who starts the whiteboard (SharePoint isn't yet supported). This process applies to all whiteboards created in the standalone Whiteboard applications, and in Microsoft Teams meetings, chats, and channels. The only exception is whiteboards started from a Surface Hub will be stored in Azure (which will be moved to OneDrive for Business in the future).
+Whiteboards will be created in the OneDrive for Business folder of the person who starts the whiteboard. SharePoint isn't yet supported. This process applies to all whiteboards created in the standalone Whiteboard applications, and in Microsoft Teams meetings, chats, and channels. The only exception is whiteboards started from a Surface Hub will be stored in Azure, though they'll be moved to OneDrive for Business in the future.
 
-Any users who do not have OneDrive for Business provisioned will no longer be able to create new whiteboards when this change is implemented. However, they can still edit their previously created boards. They can also collaborate on any whiteboards that are shared with them by others who have OneDrive for Business.
+Any users who don't have OneDrive for Business provisioned will no longer be able to create new whiteboards when this change is implemented. However, they can still edit their previously created boards. They can also collaborate on any whiteboards that are shared with them by others who have OneDrive for Business.
 
 An average whiteboard might be anywhere from 50 KB to 1 MB in size and located wherever your OneDrive for Business content resides. To check where data for your tenant is stored, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). Then look at the location for OneDrive for Business.
 
@@ -64,13 +66,13 @@ Data controls supported today:
 - Quota
 - Legal hold
 - DLP
-- Basic eDiscovery – The .whiteboard files are stored as files in the creator's OneDrive for Business. They're indexed for keyword and file type search, but aren't available to preview or review. Upon export, an admin needs to upload the file back to OneDrive for Business to view the content. Additional support is planned for the future.
+- Basic eDiscovery – The .whiteboard files are stored as files in the creator's OneDrive for Business. They're indexed for keyword and file type search, but aren't available to preview or review. Upon export, an admin needs to upload the file back to OneDrive for Business to view the content. More support is planned for the future.
 
 Data controls planned for future releases:
 
 - Sensitivity labels
 - Analytics
-- Additional eDiscovery support
+- More eDiscovery support
 
 ## See also
 
