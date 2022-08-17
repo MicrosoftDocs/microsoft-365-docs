@@ -22,7 +22,7 @@ ms.topic: article
 ms.technology: m365d
 ---
 
-# Working with query results in guided mode
+# Work with query results in guided mode
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
@@ -53,7 +53,7 @@ To view more columns:
 
 [ ![banner inviting user to take the tour](../../media/guided-hunting/results-view-customize-columns.png) ](../../media/guided-hunting/results-view-customize-columns-tb.png#lightbox)
 
-3. Select **Apply** to view results with tne added columns. Use the scroll bars if necessary.
+3. Select **Apply** to view results with the added columns. Use the scroll bars if necessary.
 
 
 ## See also

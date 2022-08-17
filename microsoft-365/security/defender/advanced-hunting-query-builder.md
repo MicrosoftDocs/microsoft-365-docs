@@ -89,7 +89,7 @@ Once the sample query is loaded, select **Run query**.
 
 ![hunting icon](../../media/guided-hunting/load-sample-queries-1.png)
 
-if you have previously selected a domain, the list of available sample queries changes accordingly.
+If you have previously selected a domain, the list of available sample queries changes accordingly.
 
 ![hunting icon](../../media/guided-hunting/load-sample-queries-2.png)
 
@@ -117,13 +117,13 @@ To specify a set of data to be used in the query, select **Select a filter**. Ex
  
 ![Screenshot showing different filters you can use](../../media/guided-hunting/query-builder-filters.png)
 
-Type the section's titles to find the filter or use the search box at the top of the list. Sections ending in *info* contain filters that provide information about the different components you can look at and will filter for the states of entities. Sections ending in *events* contain filters that allow you to look for any monitored event on this entity. For instance, to hunt for activities involving certain devices, you can use the filters under the **Device events** section.
+Type the section's titles in the search box at the top of the list to find the filter. Sections ending in *info* contain filters that provide information about the different components you can look at and filters for the states of entities. Sections ending in *events* contain filters that allow you to look for any monitored event on the entity. For instance, to hunt for activities involving certain devices, you can use the filters under the **Device events** section.
 
 >[!NOTE]
 > Choosing a filter that isn't in the basic filters list deactivates or grays out the toggle to return to the basic filters view. To reset the query or remove existing filters in the current query, select **Clear all**. This also reactivates the basic filters list.
 
 
-Next, set the appropriate condition to further filter the data by selecting it from the second dropdown menu and providing entries in the third dropdown menu:
+Next, set the appropriate condition to further filter the data by selecting it from the second dropdown menu and providing entries in the third dropdown menu if necessary:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators-equals.png)
 
@@ -152,7 +152,7 @@ To hunt for successful network communications to a specific IP address, start ty
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip.png)
 
-To look for events involving this IP address where this IP is the destination of the communication, select `DestinationIPAddress` under the IP Address Events section. Then select the **equals** operator and type the IP and press **Enter**:
+To look for events involving a specific IP address where the IP is the destination of the communication, select `DestinationIPAddress` under the IP Address Events section. Then select the **equals** operator. Type the IP in the third dropdown menu and press **Enter**:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-2.png)
 
@@ -160,7 +160,7 @@ Then, to add a second condition which searches for successful network communicat
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-3.png)
 
-**Event** filter looks for the different event types logged. It is equivalent to the **ActionType** column which exists in most of the tables in advanced hunting. Select it to choose one or more event types to filter for. To look for successful network communication events, expand the **DeviceNetworkEvents** section and then choose `ConnectionSuccess`:
+The **EventType** filter looks for the different event types logged. It is equivalent to the **ActionType** column which exists in most of the tables in advanced hunting. Select it to choose one or more event types to filter for. To look for successful network communication events, expand the **DeviceNetworkEvents** section and then choose `ConnectionSuccess`:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-4.png)
 
@@ -170,11 +170,11 @@ Finally, select **Run query** to hunt for all successful network communications 
 
 ### Hunt for high confidence phish or spam emails delivered to inbox 
 
-To look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select ConfidenceLevel under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
+To look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select **ConfidenceLevel** under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-1.png)
 
-Then, add another condition this time specifying the folder or **DeliveryLocation, Inbox/folder**. 
+Then, add another condition, this time specifying the folder or **DeliveryLocation, Inbox/folder**. 
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-2.png)
 
