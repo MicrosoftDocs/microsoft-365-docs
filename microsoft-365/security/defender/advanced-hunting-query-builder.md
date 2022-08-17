@@ -30,6 +30,8 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The query builder in guided mode allows analysts to craft meaningful hunting queries *without knowing Kusto Query Language (KQL) or the data schema*. Analysts from every tier of experience can use the query builder to filter through data from the last 30 days to look for threats, expand incident investigations, perform data analytics on threat data, or focus on specific threat areas.
 

@@ -43,6 +43,9 @@ Advanced mode features a query editor area where users can create queries from s
 
 ## Get started with guided hunting mode
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas. 
 
 To take the tour, select **Take tour** when this banner appears:
