@@ -47,7 +47,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. [Deploy the onboarding package](#deploy-the-onboarding-package)
 1. [Enable system extension](#enable-system-extension)
 1. [Get the installation package](#get-the-installation-package)
-1. [Deploy the installation package](#deploy-the-microsoft-dlp-installation-package)
+1. [Publish application](#publish-application)
 
 ### Create system configuration profiles
 
