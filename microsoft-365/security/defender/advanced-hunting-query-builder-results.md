@@ -1,5 +1,5 @@
 ---
-title: Supported data types and filters in guided mode
+title: Work with query results in guided mode
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
@@ -61,5 +61,5 @@ To view more columns:
 
 ## See also
 - [Advanced hunting quotas and usage parameters](advanced-hunting-limits.md)
-- [Switch to advanced mode](advanced-hunting-working-guided-mode.md#switching-to-advanced-mode-after-building-a-query)
-- [Refine your query in guided mode](advanced-hunting-working-guided-mode.md)
+- [Switch to advanced mode](advanced-hunting-query-builder-details.md#switch-to-advanced-mode-after-building-a-query)
+- [Refine your query in guided mode](advanced-hunting-query-builder-details.md)

@@ -1,5 +1,5 @@
 ---
-title: Overview - Advanced hunting
+title: Choose between guided and advanced modes
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 ms.prod: m365-security
