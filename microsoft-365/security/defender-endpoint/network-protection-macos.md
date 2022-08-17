@@ -37,9 +37,6 @@ ms.date:
 ## Overview
 
 Microsoft is bringing Network protection functionality to macOS (min. macOS 11).
-<!-- Hide {IPMORTANT ! This above line of text to be removed at publication when product/feature is released to public | becomes publicly available}
-[Text]
--->
 
 Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
 
@@ -278,7 +275,7 @@ Create indicators that define the detection, prevention, and exclusion of entiti
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-add-url-domain-indicator.png)
+> ![shows network protection add url or domain indicator](images/network-protection-add-url-domain-indicator.png)
 
 For more information, see: [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -291,7 +288,7 @@ Configure policies across your device groups to block certain categories. Blocki
 Web content filtering is available on the major web browsers, with blocks performed by Network Protection (Safari, Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-wcf-add-policy.png)
+> ![shows network protection web content filtering add policy](images/network-protection-wcf-add-policy.png)
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
@@ -300,19 +297,19 @@ For more information about reporting, see [Web content filtering](web-content-fi
 The Microsoft Defender for Cloud Applications / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-macos-mcas-monitored-apps.png)
+> ![shows network protection monitored apps](images/network-protection-macos-mcas-monitored-apps.png)
 
 Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-macos-indicators-urls-domains-warn.png)
+> ![shows network protection indicators for urls or domains warning](images/network-protection-macos-indicators-urls-domains-warn.png)
 
 When the end user will be attempting to access monitored domains, they'll be warned by Microsoft 365 Defender for Endpoint.
 
 - The user will get a plain block experience accompanied by the following toast message, which will be displayed by the operating system including the name of the blocked application (e.g Blogger.com)
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-macos-content-blocked.png)
+> ![shows end-user network protection content blocked toast notification](images/network-protection-macos-content-blocked.png)
 
 If the end user encounters a _block_, the user will have two possible resolutions:
 
@@ -328,7 +325,7 @@ If the end user encounters a _block_, the user will have two possible resolution
 > Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in  Microsoft Defender for Cloud Applications.
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-macos-mcas-cloud-app-security.png)
+> ![shows network protection cloud app security overview](images/network-protection-macos-mcas-cloud-app-security.png)
 
 ## Appendix
 
