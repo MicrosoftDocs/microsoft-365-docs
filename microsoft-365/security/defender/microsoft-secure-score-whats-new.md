@@ -35,13 +35,15 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 ## August 2022
 
-New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as Secure Score improvement actions:
+New Microsoft Microsoft Information protection recommendations are now available as Secure Score improvement actions:
 
 - **Information protection – Labeling**
   - Extend M365 sensitivity labeling to assets in Azure Purview data map
   - Ensure Auto-labeling data classification policies are setup and used
   - Publish M365 sensitivity label data classification policies
   - Create Data Loss Prevention (DLP) policies
+
+New Microsoft Defender for Office 365 recommendations are now available as Secure Score improvement actions:
 
 - **Anti-spam - Inbound policy**
   - Set the email bulk complaint level (BCL) threshold to be 6 or lower
