@@ -22,7 +22,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-To run an Microsoft Defender Antivirus scan for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
+To run a scan of Microsoft Defender Antivirus for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
 > [!NOTE]
 > This article supports Microsoft Defender for Endpoint on Linux for Red Hat Enterprise Linux distributions (RHEL).
@@ -36,9 +36,9 @@ See the following system requirements needed to schedule Microsoft Defender Anti
 
 ## Scheduling Microsoft Defender Antivirus scan in Red Hat Linux
 
-You can schedule cron jobs to initiate Microsoft Defender Antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md). This works well if the device is always up and running. 
+You can schedule cron jobs to initiate Microsoft Defender Antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md). This process works well if the device is always up and running. 
 
-But if the Linux devices are shut down or offline during the cron schedule, the scan won't run. In these situations, you can use **Anacron** to read the timestamp and find the last executed job. If the device was shutdown during the scheduled cron job, it needs to wait until the next scheduled time. By using **Anacron**, the system will detect the last time the scan was run, and if it the cron job did not run, will automatically start it. 
+But if the Linux devices are shut down or offline during the cron schedule, the scan won't run. In these situations, you can use **anacron** to read the timestamp and find the last executed job. If the device was shut down during the scheduled cron job, it needs to wait until the next scheduled time. By using **anacron**, the system will detect the last time the scan was run. If the device didn't run the cron job, it will automatically start it. 
 
 ### Schedule Microsoft Defender Antivirus scans in Red Hat Linux
 
@@ -64,7 +64,7 @@ Use the following steps to schedule scans:
 
 1. Note the following items in the file.
     1. **Shell:** Shell is referred as ```/bin/sh```, and not as ```/bin/bash```. Remember when writing the jobs.
-    1. **RANDOM_DELAY:** Describes the maximum time in minutes for the job. This is used to offset the jobs so there wouldn't be too many jobs running at the same time. This is ideal for VDI solutions.
+    1. **RANDOM_DELAY:** Describes the maximum time in minutes for the job. This value is used to offset the jobs so there wouldn't be too many jobs running at the same time. Using this delay is ideal for VDI solutions.
     1. **START_HOURS_RANGE:** Describes the time range to run the job.
     1. **cron.daily:** Describes 1 as the period of days required for the frequency of job executions. 5 is the delay in minutes that anacron waits after the device restarts.
 
