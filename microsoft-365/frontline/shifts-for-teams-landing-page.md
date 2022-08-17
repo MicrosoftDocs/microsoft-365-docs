@@ -38,8 +38,6 @@ Managers can create, update, and manage shift schedules for their teams. They ca
 
 Use the following resources to help you set up and manage Shifts in your organization.
 
-:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
-
 ## Set up and manage Shifts
 
 |&nbsp;  |&nbsp; |
@@ -54,11 +52,11 @@ If you're using a third-party workforce management (WFM) system for scheduling, 
 
 |&nbsp;  |&nbsp;  |
 |---------|---------|
-|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Shifts connectors overview](shifts-connectors.md)** Get an overview of Shifts connectors and how they work. Learn about the managed connectors that are available and the supported WFM systems.   |
-|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Managed Shifts connectors](shifts-connectors.md#managed-shifts-connectors)** Managed Shifts connectors, developed in collaboration with our partners, are hosted and managed either by us or our partners. To learn more, see [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) and [Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams).    |
-|   | **[Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)** The Shifts connector wizard in the Microsoft 365 admin center helps you to quickly set up a connection to your WFM system. Currently, the wizard supports the Teams Shifts connector for Blue Yonder to integrate Shifts with Blue Yonder Workforce Management.
-|  | **[Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)** Learn how to use PowerShell to set up a connection to Blue Yonder Workforce Management through the Teams Shifts connector for Blue Yonder.         |
-|   | **[Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)** Get guidance on how to use PowerShell manage your Shifts connection to Blue Yonder Workforce Management after you set it up through the Shifts connector wizard or PowerShell.
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Overview](shifts-connectors.md)** Get an overview of Shifts connectors and how they work. Learn about the managed connectors that are available and the supported WFM systems.   |
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)** Learn how to set up a connection to Blue Yonder Workforce Management using the [Shifts connector wizard](shifts-connector-wizard.md)) or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md). |
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for Blue Yonder](shifts-connectors-ukg.md#microsoft-teams-shifts-connector-for-ukg-dimensions)** Learn how to set up a connection to UKG Dimensions using the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md).|
+|   | **[Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)** Get guidance on how to use PowerShell manage your Shifts connection to Blue Yonder Workforce Management after you set it up through the Shifts connector wizard or PowerShell.|
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams)** Learn about integrating Shifts with the Reflexis WFM system.|
 
 ## Shifts extensions
 
