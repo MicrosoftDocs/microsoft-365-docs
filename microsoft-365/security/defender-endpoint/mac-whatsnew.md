@@ -32,6 +32,26 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
 
 <details>
+  <summary>Aug-2022 (Build: 101.78.13  | Release version: 20.122072.17813.0)</summary>
+
+&ensp;Build: **101.78.13**<br/>
+&ensp;Release version: **20.122072.17813.0**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.373.556.0**<br/>
+
+**What's new**
+
+- Fix for uninstaller to properly delete Application Support folder
+- Fix for Network Protection not filtering Safari when Firewall or iCloud Private Relay is on
+- Fix for osqueryui zombie processes
+- Fix for UI crash on Ventura
+- Fix for definitions not getting downloaded right after install
+- Other bug fixes.
+
+<br/>
+</details>
+
+<details>
   <summary>Aug-2022 (Build: 101.75.90  | Release version: 20.122071.17590.0)</summary>
 
 &ensp;Released: **Aug 3, 2022**<br/>
