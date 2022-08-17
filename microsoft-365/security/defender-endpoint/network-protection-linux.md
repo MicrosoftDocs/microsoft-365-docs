@@ -173,7 +173,7 @@ Also, make sure that in **Microsoft Defender** > **Settings** > **Endpoints** > 
 > [!IMPORTANT]
 > The above **‘Custom network indicators’** toggle controls **Custom Indicators** enablement **for ALL platforms with Network Protection support, including Windows. Reminder that - on Windows - for indicators to be enforced you also must have Network Protection explicitly enabled.
 
->:::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png:::
+>:::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png":::
 
 ## How to explore the features
 
@@ -214,7 +214,7 @@ Create indicators that define the detection, prevention, and exclusion of entiti
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
 
->:::image type=content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
+>:::image type="content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
 
 For more information, see: [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
