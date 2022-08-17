@@ -90,8 +90,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 
 1. Find the existing MDE Preferences configuration profile. See, [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
-
-1. Add a new key to the profile using these values:
+    1. Add a new key to the profile using these values:
 
 ```xml
 <key>features</key> 
@@ -102,9 +101,8 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
     <string>enabled</string> 
 </dict> 
 ``` 
-for example:
 
-`mdatp-xplat/com.microsoft.wdav.mobileconfig at master · microsoft/mdatp-xplat · GitHub`
+Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
  
 ## Offboard macOS devices using Intune
 

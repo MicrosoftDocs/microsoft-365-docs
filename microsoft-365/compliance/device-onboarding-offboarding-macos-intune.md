@@ -246,7 +246,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS
 
-1. Follow the procedures in [Intune-based deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-with-intune) to deploy MDE to enrolled macOS devices.
+1. Follow the procedures in [Intune-based deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-with-intune#publish-application) to deploy MDE to enrolled macOS devices.
 
 ## Offboard macOS devices using Intune
 
