@@ -21,7 +21,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150 
 description: "Learn how to renew most Microsoft 365 for business subscriptions by turning recurring billing off or on."
-ms.date: 08/12/2022
+ms.date: 08/18/2022
 ---
 
 # Renew Microsoft 365 for business

@@ -22,7 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: "If you bought Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
-ms.date: 08/12/2022
+ms.date: 08/18/2022
 ---
 
 # Enter your product key for Microsoft 365 Business Standard

@@ -22,7 +22,7 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 08/12/2022
+ms.date: 08/18/2022
 ---
 
 # Buy or remove Microsoft 365 licenses for a subscription
