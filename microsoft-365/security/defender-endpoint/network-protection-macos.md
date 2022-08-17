@@ -261,7 +261,7 @@ Web threat protection is part of web protection in Microsoft 365 Defender for En
 - untrusted or low-reputation sites
 - sites you've blocked in your custom indicator list
 
-> :::image type="content" source="images/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections. lightbox="images/network-protection-reports-web-protection.png":::
+> :::image type="content" source="images/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="images/network-protection-reports-web-protection.png":::
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
