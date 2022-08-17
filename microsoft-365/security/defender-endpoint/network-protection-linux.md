@@ -216,23 +216,6 @@ Web threat protection is part of Web protection in Microsoft Defender for Endpoi
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
-<!-- Hide {this intro with no subsequent list items}
-[#### Test Web threat protection
-
-You can test Web threat protection by navigating to [https://smartscreentestratings2.net/](https://smartscreentestratings2.net/). When correctly configured, Web threat protection will block the browser from loading the page.
-
-> [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-linux-web-threat-protection-block.png)
-
-You can also test Web threat protection from the Terminal by running the following command and noticing that the connection is blocked by Network Protection:
-
-```bash
-curl https://smartscreentestratings2.net
-```
-
-Run through the custom indicator flow below to get hits on the Custom Indicator type.]
--->
-
 #### Custom Indicators of Compromise  
 
 Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of indicators for detection and for blocking (prevention and response).
@@ -240,21 +223,6 @@ Indicator of compromise (IoCs) matching is an essential feature in every endpoin
 Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken as well as the duration for when to apply the action and the scope of the device group to apply it to.
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
-
-<!-- Hide {this intro with no subsequent list items}
-[Create an indicator for IPs, URLs, or domains from the Microsoft Defender portal’s **Settings** > **Endpoints** page:
-
-1. In the navigation pane, select **Settings** > **Indicators**.
-2. Select the **IP addresses** or **URLs/Domains** tab.
-3. Select **Add indicator**. The **Add URL/Domain indicator** opens. This is shown in the image that follows this procedure.
-4. Specify the following details:
-   - **Indicator** - Specify the entity details and define the expiration of the indicator
-   - **Action** - Specify the action to be taken and provide a description.
-   > [!NOTE]
-   > A _Warn_ action type will effectively be a block type on the endpoint because there is no UX to bypass the warn.
-   - **Scope** - Define the scope of the machine group
-5. Review the details in the **Summary** tab, then click **Save**.]
--->
 
 > [!div class="mx-imgBorder"]
 > ![MEM Create Profile](images/network-protection-add-url-domain-indicator.png)
@@ -281,10 +249,7 @@ The Microsoft Defender for Cloud Applications / Cloud App Catalog identifies app
 > [!div class="mx-imgBorder"]
 > ![MEM Create Profile](images/network-protection-macos-mcas-monitored-apps.png)
 
-Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article). 
-
-> [!NOTE]
-> Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in  Microsoft Defender for Cloud Applications.
+Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
 
 > [!div class="mx-imgBorder"]
 > ![MEM Create Profile](images/network-protection-macos-mcas-cloud-app-security.png)
