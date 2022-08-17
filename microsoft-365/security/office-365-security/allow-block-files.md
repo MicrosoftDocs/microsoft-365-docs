@@ -2,8 +2,8 @@
 title: Allow or block files using the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
@@ -76,13 +76,15 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 You create block file entries directly in the Tenant Allow/Block List.
 
 > [!NOTE]
-> Email messages that contain block entry files are blocked as *malware*.
+> Email that contains these blocked files is identified as *malware*.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. On the **Tenant Allow/Block List** page, select the **Files** tab, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
+2. On the **Tenant Allow/Block List** page, select the **Files** tab.
 
-3. In the **Block Files** flyout that appears, configure the following settings:
+3. On the **Files** tab, click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
+
+4. In the **Block files** flyout that appears, configure the following settings:
 
    - **Add file hashes**: Enter one SHA256 hash value per line, up to a maximum of 20.
 
@@ -93,7 +95,9 @@ You create block file entries directly in the Tenant Allow/Block List.
      - **Never expire**
      - **Specific date**: The maximum value is 90 days from today.
 
-4. When you're finished, click **Add**.
+   - **Optional note**: Enter descriptive text for the entries.
+
+5. When you're finished, click **Add**.
 
 ### Use PowerShell to create block file entries in the Tenant Allow/Block List
 
@@ -113,13 +117,18 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to create allow file entries on the Submissions page
 
-You can't create allow file entries directly on the Tenant Allow/Block List page. Instead, you use the **Submissions** page. For more information, see [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md).
+You can't create allow file entries directly on the Tenant Allow/Block List page. Instead, you use the **Submissions** page. For more information about the **Submissions** page, see [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md).
+
+> [!IMPORTANT]
+> Because Microsoft manages allow entries for you, unneeded file allow entries will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a file is still considered bad.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, select the **Email attachments** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, select the **Email attachments** tab.
 
-3. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
+3. On the **Email attachments** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+4. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
 
    - **Select the submission type**: Verify the value **Email attachment** is selected.
 
@@ -139,12 +148,12 @@ You can't create allow file entries directly on the Tenant Allow/Block List page
 
    When you're finished, click **Submit**, and then click **Done**.
 
-   :::image type="content" source="../../media/submit-email-for-analysis.png" alt-text="Submit email for analysis." lightbox="../../media/submit-email-attachment-for-analysis.png":::
+   :::image type="content" source="../../media/submit-email-for-analysis.png" alt-text="Submit false positive (good) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submit-email-attachment-for-analysis.png":::
 
-4. After a few moments, the allow file entry will appear on the **Files** tab on the **Tenant Allow/Block List** page.
+5. After a few moments, the allow file entry will appear on the **Files** tab on the **Tenant Allow/Block List** page.
 
 > [!NOTE]
-> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
+> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered. Malware and high confidence phishing checks are never skipped.
 
 ## Use the Microsoft 365 Defender portal to view allow or block file entries in the Tenant Allow/Block List
 
@@ -169,12 +178,10 @@ You can't create allow file entries directly on the Tenant Allow/Block List page
 
    - **Action**: **Allow** and **Block**.
    - **Never expire**: ![Toggle on.](../../media/scc-toggle-on.png) or ![Toggle off.](../../media/scc-toggle-off.png)
-   - **Last updated date**: Select **From** and **To** dates.
+   - **Last updated**: Select **From** and **To** dates.
    - **Remove on**: Select **From** and **To** dates.
 
-   When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
-
-   When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+   When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
 ### Use PowerShell to view allow or block file entries in the Tenant Allow/Block List
 
@@ -206,13 +213,15 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to modify allow or block file entries in the Tenant Allow/Block List
 
-When you modify an allow or block file entry in the Tenant Allow/Block list, you can only modify the expiration date and comments.
+When you modify an allow or block file entry in the Tenant Allow/Block list, you can only modify the expiration date and notes.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. Select the **Files** tab, and then select the check box of the entry that you want to modify.
+2. Select the **Files** tab
 
-3. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** button that appears. The following values are available in the **Edit file** flyout that appears:
+3. On the **Files** tab, select the check box of the entry that you want to modify, and then click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** button that appears.
+
+4. The following settings are available in the **Edit file** flyout that appears:
 
    - **Remove allow entry after** or **Remove block entry after**:
      - You can extend allow entries for a maximum of 30 days after the creation date.
@@ -230,13 +239,13 @@ When you modify an allow or block file entry in the Tenant Allow/Block list, you
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <FileHash> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <FileHash> <-Ids <Identity value> | -Entries <Value value>> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
 This example changes the expiration date of the specified block file entry.
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType FileHash -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "9/1/2022"
+Set-TenantAllowBlockListItems -ListType FileHash -Entries "27c5973b2451db9deeb01114a0f39e2cbcd2f868d08cedb3e210ab3ece102214" -ExpirationDate "9/1/2022"
 ```
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
@@ -245,28 +254,30 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. Select the **Files** tab. Use either of the following methods to select and remove the entry:
+2. Select the **Files** tab.
+
+3. On the **Files** tab, do one of the following steps:
 
    - Select the check box of the entry that you want to remove, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
    - Select the entry that you want to remove by click anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
-3. In the warning dialog that appears, click **Delete**.
+4. In the warning dialog that appears, click **Delete**.
 
 > [!NOTE]
-> You can select multiple entries by selecting each check box, or selecting all entries by selecting the check box next to the **Value** column header.
+> You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
-## Use PowerShell to remove allow or block file entries from the Tenant Allow/Block List
+### Use PowerShell to remove allow or block file entries from the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType FileHash -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType FileHash <-Ids <Identity value> | -Entries <Value value>>
 ```
 
 This example removes the specified block file entry from the Tenant Allow/Block List.
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType FileHash -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
+Remove-TenantAllowBlockListItems -ListType FileHash -Entries "27c5973b2451db9deeb01114a0f39e2cbcd2f868d08cedb3e210ab3ece102214"
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).

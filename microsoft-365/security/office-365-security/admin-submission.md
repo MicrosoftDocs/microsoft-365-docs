@@ -95,10 +95,10 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **Select the submission type**: Verify the value **URL** is selected.
 
+   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears.
+
      > [!NOTE]
      > URL submissions are not available in clouds that do not allow for data to leave the environment. **URL** is greyed out.
-
-   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears.
 
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
@@ -109,29 +109,33 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
     > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="The New Email submission process" lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
- > For instructions on how to report a false positive, see [Use the Microsoft 365 Defender portal to create allow URL entries on the Submissions page](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-url-entries-on-the-submissions-page).
+ > To report a URL as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow URL entries on the Submissions page](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-url-entries-on-the-submissions-page).
 
-## Report questionable email attachment to Microsoft
+## Report questionable email attachments to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Email attachments** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, select the **Email attachments** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. In the **File** section that appears, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**.
+3. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
 
-4. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (False positive)**
-   - **Should have been blocked (False negative)**: In the **This file should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
-     - **Phish**
-     - **Malware**
+   - **Select the submission type**: Verify the value **Email attachment** is selected.
+
+   - **File**: Click **Browse files** to find and select the file to submit.
+
+     > [!NOTE]
+     > File submissions are not available in clouds that do not allow for data to leave the environment. **Browse files** is greyed out.
+
+   - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
+
+4. In the **This file should have been categorized as** section that appears, select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
 5. When you're finished, click **Submit**.
 
     > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="The New Attachment submission process" lightbox="../../media/submission-file-flyout.png":::
 
-> [!NOTE]
-> If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
-> File submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File will be greyed out.
+ > [!NOTE]
+ > To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow file entries on the Submissions page](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-file-entries-on-the-submissions-page).
 
 ## View email admin submissions to Microsoft
 
