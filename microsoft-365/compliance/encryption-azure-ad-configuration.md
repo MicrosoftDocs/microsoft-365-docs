@@ -41,7 +41,7 @@ By default, there's nothing to configure for cross-tenant authentication to work
 
 For example, another organization might have settings configured that prevent their users from opening content encrypted by your organization. In this scenario, until their Azure AD admin reconfigures their cross-tenant settings, an external user attempting to open that content will see a message that informs them **Access is blocked by your organization** with a reference to **Your tenant administrator**. In that message, the external users see their own organization domain name that identifies it's their Azure AD tenant, rather than yours, that's responsible for blocking the access.
 
-Your users will see a similar message but with your own organization name when it's your Azure AD configuration that restricts access. If it's another Azure AD organization that's responsible for blocking access, the message changes to **Access is blocked by the organization** and the domain name of that organization.
+Your users will see a similar message but with your own organization name when it's your Azure AD configuration that blocks access. If it's another Azure AD organization that's responsible for blocking access, the message changes to **Access is blocked by the organization** and the domain name of that organization.
 
 Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to **Microsoft Azure Information Protection**, which has the following an app ID:
 
