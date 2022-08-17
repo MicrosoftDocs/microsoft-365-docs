@@ -53,7 +53,7 @@ Re-use a weekly schedule from Excel with Shifts <br>
 
 Clocking in with Shifts <br>
 [View Clocking in with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202613)
-<!-- >> [!VIDEO https://www.microsoft.com/videoplayer/embed/x] -->
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE54uyx]
 
 Swap Shifts <br>
 [View Swap Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202711)
