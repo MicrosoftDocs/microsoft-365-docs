@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to find more information about how your document understanding and form processing models are performing.
+description: Learn how to find more information about how your AI models are performing.
 ---
 
 # Analyze how your models are used in Microsoft SharePoint Syntex
@@ -40,7 +40,8 @@ In SharePoint Syntex, the default content center is created during setup. More c
 
 Regarding model usage analytics, note that:
 
-- Your default content center will show model usage analytics for all content centers and models in your org, including ones created in other content centers. This gives content managers and other stakeholders a centralized portal to manage and oversee the content centers and models across the company.  
+- Your default content center will show model usage analytics for all content centers and models in your organization, including ones created in other content centers. This gives content managers and other stakeholders a centralized portal to manage and oversee the content centers and models across the company.
+ 
 - Other content centers will only show model usage analytics for the models that were created in them. This gives content managers insights into usage data for only the models they're concerned with.
 
 
@@ -61,7 +62,7 @@ The **Classification by library** bar chart helps you determine the effectivenes
 
 ## Model usage
 
-The Model Usage list will show usage analytics for the models created through the content center.  
+The model usage list shows usage analytics for the models created through the content center.  
 
 > [!NOTE]
 > If you are in the default content center and have additional content centers in your organization, the model usage list will be grouped by content center.
@@ -72,13 +73,3 @@ Each model in the model usage list will show the usage data:
 - Average confidence score: Average accuracy score of the model when run against files.
 - Target list URL: The SharePoint document library to which the model is applied.
 
-
-
-## See also
-[Create a classifier](create-a-classifier.md)
-
-[Create an extractor](create-an-extractor.md)
-
-[Document Understanding overview](document-understanding-overview.md)
-
-[Create a form processing model](create-a-form-processing-model.md)  
