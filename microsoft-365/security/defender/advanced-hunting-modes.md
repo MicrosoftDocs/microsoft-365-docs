@@ -1,7 +1,7 @@
 ---
-title: Choose between guided and advanced modes
-description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+title: Choose between guided and advanced modes for hunting in Microsoft 365 Defender
+description: Guided hunting in Microsoft 365 Defender does not require KQL knowledge while advanced hunting allows you to write a query from scratch.
+keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
-ms.topic: article
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
 ---
