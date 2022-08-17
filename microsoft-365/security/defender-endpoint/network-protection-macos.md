@@ -246,12 +246,9 @@ plutil -lint com.microsoft.wdav.xml
    > [!NOTE]
    > If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
    > Pro tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
-4. [Integrate Microsoft Defender for Endpoint with Cloud App Security](/defender-cloud-apps/mde-integration.md) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
+4. [Integrate Microsoft Defender for Endpoint with Cloud App Security](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
    > [!NOTE]
    > Discovery and other features are currently not supported on these platforms.
-
-> [!div class="mx-imgBorder"]
-> ![Web Protection reports web threat detections](images/network-protection-reports-web-protection.png)
 
 ## Scenarios
 
@@ -268,7 +265,7 @@ Web threat protection is part of web protection in Microsoft 365 Defender for En
 - sites you've blocked in your custom indicator list
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-web-protection-report.png)
+> ![Web Protection reports web threat detections](images/network-protection-reports-web-protection.png)
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 

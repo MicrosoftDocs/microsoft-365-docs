@@ -194,9 +194,6 @@ Also, make sure that in **Microsoft Defender** > **Settings** > **Endpoints** > 
    > [!NOTE]
    > Discovery and other features are currently not supported on these platforms.
 
-> [!div class="mx-imgBorder"]
-> ![Web Protection reports web threat detections](images/network-protection-reports-web-protection.png)
-
 ## Scenarios
 
 The following scenarios are supported during public preview:
@@ -212,7 +209,7 @@ Web threat protection is part of Web protection in Microsoft Defender for Endpoi
 - sites you've blocked in your custom indicator list
 
 > [!div class="mx-imgBorder"]
-> ![MEM Create Profile](images/network-protection-web-protection-report.png)
+> ![Web Protection reports web threat detections](images/network-protection-reports-web-protection.png)
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
