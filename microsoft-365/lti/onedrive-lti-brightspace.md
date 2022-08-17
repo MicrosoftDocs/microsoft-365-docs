@@ -14,8 +14,6 @@ description: Create and grade assignments, build and curate course content, and 
 
 # Integrate Microsoft OneDrive LTI with Desire2Learn Brightspace
 
-Desire2Learn (D2L) is transitioning their OneDrive feature to a OneDrive LTI app created and supported by Microsoft. This transition will occur in a few phases as D2L adds support for the OneDrive file picker into Brightspace. At a future date, we'll announce the deprecation of the older version.
-
 This guide provides IT admins steps for registering the OneDrive LTI app for the Desire2Learn (D2L) Brightspace LMS.
 
 For an overview of Microsoft LTI, see [Integrating Microsoft products with your Learning Management System (LMS)](index.md).
@@ -57,10 +55,7 @@ The steps to add the OneDrive LTI app are:
     1. Paste Microsoft's **Redirect URL** into Brightspace's **ToolOIDCLaunchRedirectUri** field.
     1. Paste Microsoft's **OpenID Connect Login URL** into Brightspace's **OIDCLoginInitiationUri** field.
     1. Paste Microsoft's **Keyset URL** in Brightspace's **ToolPublicJwksUri** field.
-1. Select the following extensions:
-    1. **Assignment and Grade Services**.
-    1. **Deep Linking**.
-    1. **Names and Role Provisions Services**.
+1. Select the **Deep Linking** extension.
 1. Select **Register**.
 1. You'll be shown Brightspace registration details.
     1. Keep this page open in its own tab when completing the next set of steps.
@@ -126,7 +121,8 @@ You'll need to repeat these steps for every org ID (or parent org ID) where you 
 1. Navigate to **Admin** > **External Learning Tools** > **LTI Advantage Deployments** > **View Links** at the bottom of the page.
 1. Navigate to the correct link, and then move your mouse to the URL at the top of the browser.
     1. For example, `https://example.desire2learn.com/d2l/le/ltiadvantage/deployments/3bfcc0b7-2fb6-4ffe-b353-95b520d4bae6/links/details/25988`.
-1. Copy the URL.
+1. Copy the digits after the final `/` in the URL.
+    1. For example, using the URL above, copy `25988`.
 
 ### Update the Config Variables
 
