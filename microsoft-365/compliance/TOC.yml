@@ -328,18 +328,38 @@
           items:
           - name: Create a custom sensitive information type - Compliance Center
             href: create-a-custom-sensitive-information-type.md
-          - name: Get started with exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-based-sits-overview.md
-          - name: Export source data for exact data match based sensitive information type
-            href: sit-get-started-exact-data-match-export-data.md
-          - name: Create the schema for exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-create-schema.md
-          - name: Hash and upload the sensitive information source table for exact data match sensitive information types
-            href: sit-get-started-exact-data-match-hash-upload.md
-          - name: Create exact data match sensitive information type/rule package
-            href: sit-get-started-exact-data-match-create-rule-package.md
-          - name: Test an exact data match sensitive information type
-            href: sit-get-started-exact-data-match-test.md  
+          - name: Creating EDM SITS
+            items:
+            - name: Get started with EDM SITS
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: Create EDM SIT new experience
+              items: 
+              - name: Create EDM SIT workflow new experience
+                href: sit-create-edm-sit-unified-ux-workflow.md
+              - name: Export source data
+                href: sit-get-started-exact-data-match-export-data.md 
+              - name: Create EDM SIT sample file for the new experience
+                href: sit-create-edm-sit-unified-ux-sample-file.md
+              - name: Create EDM SIT schema and rule package new experience
+                href: sit-create-edm-sit-unified-ux-schema-rule-package.md
+              - name: Hash and upload the sensitive information source table for EDM classic experience
+                href: sit-get-started-exact-data-match-hash-upload.md
+              - name: Test an EDM sensitive information type
+                href: sit-get-started-exact-data-match-test.md
+            - name: Create EDM SIT classic experience
+              items:
+              - name: Create exact EDM SIT workflow classic experience
+                href: sit-create-edm-sit-classic-ux-workflow.md
+              - name: Export source data
+                href: sit-get-started-exact-data-match-export-data.md
+              - name: Create the schema for EDM classic experience
+                href: sit-get-started-exact-data-match-create-schema.md
+              - name: Hash and upload the sensitive information source table for EDM classic experience
+                href: sit-get-started-exact-data-match-hash-upload.md
+              - name: Create exact data match sensitive information type/rule package
+                href: sit-get-started-exact-data-match-create-rule-package.md
+              - name: Test an EDM sensitive information type
+                href: sit-get-started-exact-data-match-test.md
         - name: Use sensitive information types
           items:
           - name: Customize a built-in sensitive information type
@@ -836,6 +856,8 @@
                 href: sit-defn-norway-identification-number.md
               - name: Norway physical addresses
                 href: sit-defn-norway-physical-addresses.md
+              - name: Philippines passport number
+                href: sit-defn-philippines-passport-number.md
               - name: Philippines unified multi-purpose identification number
                 href: sit-defn-philippines-unified-multi-purpose-identification-number.md
               - name: Poland drivers license number
@@ -862,6 +884,8 @@
                 href: sit-defn-portugal-physical-addresses.md
               - name: Portugal tax identification number
                 href: sit-defn-portugal-tax-identification-number.md
+              - name: Qatari identification card number
+                href: sit-defn-qatari-id-card-number.md
               - name: Romania drivers license number
                 href: sit-defn-romania-drivers-license-number.md
               - name: Romania passport number
@@ -1187,6 +1211,8 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
+            - name: Share DLP Alerts (preview)
+              href: dlp-share-alerts.md
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
