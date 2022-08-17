@@ -20,11 +20,13 @@ description: Learn how to create a content center in Microsoft SharePoint Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPSF]
 
 </br>
+--->
 
 To create and manage models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
 
@@ -43,20 +45,20 @@ A SharePoint admin can create a content center site like they would [create any 
 
 To create a new content center:
 
-1. On the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">SharePoint admin center > **Active sites**</a>.
+1. On the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**SharePoint admin center** > **Active sites**</a>.
 
-2. On the **Active Sites** page, click **Create**, and then select **Other options**.
+2. On the **Active sites** page, select **Create**, and then select **Other options**.
 
-3. On the **Choose a template** menu, select **Content Center**.
+3. On the **Choose a template** menu, select **Content center**.
 
-4. For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</br>
+4. For the new site, provide a **Site name**, **Primary administrator**, and a **Language**.</br>
 
    > [!NOTE] 
    > You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files. Also note that like other site templates, the default site language isn't editable after the site is created.
 
 5. Select **Finished**.
  
-After you create a content center site, you will see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center. 
+After you create a content center site, you'll see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center. 
 
 ### Give access to additional users
  
