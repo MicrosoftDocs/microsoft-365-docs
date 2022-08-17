@@ -160,4 +160,4 @@ The day your plan upgrade is complete, the billing on your old subscription will
 ## Related content
 
 [Change plans manually](change-plans-manually.md) (article)\
-[Back up data before switching Microsoft 365 for business plans](back-up-data-before-switching-plans.md) (article)
+[Back up data before switching Microsoft 365 for business plans](move-users-different-subscription.md) (article)
