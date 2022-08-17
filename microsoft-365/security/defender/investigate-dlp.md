@@ -65,7 +65,7 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
 
 6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">here</a>).
 
-7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and Devices.
+7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like SharePoint, OneDrive, Exchange and Devices.
 
 8. You can also download the email by selecting **Actions** \> **Download email**. 
 

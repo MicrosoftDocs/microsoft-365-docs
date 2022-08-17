@@ -71,6 +71,8 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - 99.99% of entries should be active within 30 minutes. Entries that aren't active within 30 minutes can take up to 24 hours. 
 
+- Email addresses & domains does not support punycode.
+
 - By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for blocks only).
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
@@ -469,6 +471,7 @@ A domain pair for a spoofed sender in the Tenant Allow/Block List uses the follo
 - **Sending infrastructure**: This value indicates the source of messages from the spoofed user. Valid values include:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address (for example, fabrikam.com).
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+  - A verified DKIM domain.
 
 Here are some examples of valid domain pairs to identify spoofed senders:
 

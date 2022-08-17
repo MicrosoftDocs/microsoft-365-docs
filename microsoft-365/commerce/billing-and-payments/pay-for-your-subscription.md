@@ -23,7 +23,7 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/26/2022
+ms.date: 08/04/2022
 ---
 
 # How to pay for your subscription
@@ -64,9 +64,14 @@ You can pay for your subscription with a credit or debit card, or a bank account
 
 In some cases, you can pay for your subscription by invoice with a check or EFT. To be eligible to pay by invoice, you must:
 
-- Be an established customer
-- Have a subscription cost that exceeds a certain amount (this amount varies by service location)
+- Be an established customer for at least six months and have no outstanding balances
+- Spend a minimum of $6,000 USD a month, or purchase a minimum amount for any 3 of the last 12 months (this amount can vary by service location).
 - Pass a credit check
+
+When you request to change your payment method to check/wire transfer, there are two possible results:
+
+- You're automatically approved, and you're prompted for information about your company.
+- You're not automatically approved, but you can submit a [support request](../../admin/get-help-support.md).
 
 If a credit check is required, you're notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
@@ -97,6 +102,18 @@ If you didn't add the payment method used to pay for the subscription, you must 
 > [!NOTE]
 > - Paying by check is only available in a few countries.
 > - If you must pay the membership fee for the Microsoft Partner Network (MPN) program (Action Pack subscription, Silver or Gold competencies), see [Pay competency fees](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view) for information about how to make an MPN payment.
+
+## Check or wire transfer payment processing time
+
+Payments made by check are posted three to five business days after the check clears your bank. You can contact your bank to confirm the check status.
+
+Payments made by wire transfer have processing times that vary, depending on the type of transfer:
+
+- ACH domestic transfers - Five business days. Two to three days to arrive, plus two days to post.
+- Wire transfers (domestic) - Four business days. Two days to arrive, plus two days to post.
+- Wire transfers (international) - Seven business days. Five days to arrive, plus two days to post.
+
+If your account is approved for payment by check or wire transfer, the instructions for payment are on the invoice.
 
 ## Can I pay my invoice online?
 
