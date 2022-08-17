@@ -10,6 +10,8 @@
       href: get-microsoft-365-business-premium.md
     - name: Get Microsoft 365 for Campaigns
       href: get-microsoft-365-campaigns.md
+    - name: Resources for partners
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
   items: 
   - name: Sign in and set up
@@ -76,6 +78,8 @@
         items: 
           - name: Upgrade to Windows 10 Pro (if needed)
             href: m365bp-upgrade-windows-10-pro.md
+          - name: Threat protection by Microsoft Defender Antivirus
+            href: m365bp-threats-detected-defender-av.md
           - name: Secure Windows devices
             href: m365bp-secure-windows-devices.md
           - name: Manage Windows devices
