@@ -23,14 +23,6 @@ description: "Australia business number sensitive information type entity defini
 
 # Australia business number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 11 digits with optional delimiters

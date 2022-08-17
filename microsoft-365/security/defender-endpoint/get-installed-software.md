@@ -102,5 +102,5 @@ Here is an example of the response.
 
 ## See also
 
-- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Vulnerability Management software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

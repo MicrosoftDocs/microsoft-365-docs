@@ -185,6 +185,13 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
         When you're finished, click **Add**.
 
+     > [!NOTE]
+     > If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
+     >
+     > - `⁠noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
+
      Back on the **Manage custom domains for impersonation** flyout, you can remove entries from the **Sender** and **Domain** tabs by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
 
      After you select at least one entry, the **Delete** icon appears, which you can use to remove the selected entries.
