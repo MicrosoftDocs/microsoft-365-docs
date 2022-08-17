@@ -1,7 +1,7 @@
 ---
-title: How to schedule antivirus scanning in Microsoft Defender for Endpoint (Linux)
-description: Learn how to schedule an antivirus scan in Microsoft Defender for Endpoint (Linux) for better protection of your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
+title: How to schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux
+description: Learn how to schedule an antivirus scan in Microsoft Defender for Endpoint on Linux for better protection of your organization's assets.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint on linux
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,39 +16,38 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Microsoft Defender for Endpoint (Linux)
+# Schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-To run a scan for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
+To run an Microsoft Defender Antivirus scan for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
-## Red Hat Linux Antivirus Scanning
-
-This document is in support of Microsoft Defender for Endpoint (MDE, formerly MDATP) on Red Hat Enterprise Linux (RHEL).
+> [!NOTE]
+> This article supports Microsoft Defender for Endpoint on Linux for Red Hat Enterprise Linux distributions (RHEL).
 
 ## System requirements
 
-Following are the system requirements to schedule antivirus scan in Microsoft Defender Endpoint.
+See the following system requirements needed to schedule Microsoft Defender Antivirus scan in Microsoft Defender Endpoint on Linux.
 
 - Linux server distributions and versions: Red Hat Enterprise Linux 7.2 or higher.
 - The **FANOTIFY** option in kernel must be enabled.
 
-## Scheduling Antivirus in Red Hat Linux
+## Scheduling Microsoft Defender Antivirus scan in Red Hat Linux
 
-Microsoft has documented how to schedule cron jobs to initiate antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Docs](linux-schedule-scan-mde.md). This works well if the device is up and running 24/7. 
+You can schedule cron jobs to initiate Microsoft Defender Antivirus scans on a schedule. For more information, see [How to schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md). This works well if the device is always up and running. 
 
-But what if the devices don't work in the workstations, laptops, or servers that are shut down during the cron schedule. In these situations, you can use Anacron to read the timestamp and find the last executed job. If the device was shutdown during the scheduled cron job, it needs to wait until the next scheduled time. Using Anacron it will see if the job runs, if not then it will execute it.
+But if the Linux devices are shut down or offline during the cron schedule, the scan won't run. In these situations, you can use **Anacron** to read the timestamp and find the last executed job. If the device was shutdown during the scheduled cron job, it needs to wait until the next scheduled time. By using **Anacron**, the system will detect the last time the scan was run, and if it the cron job did not run, will automatically start it. 
 
-### Steps to schedule antivirus in Red Hat Linux
+### Schedule Microsoft Defender Antivirus scans in Red Hat Linux
 
-Follow the steps to schedule antivirus in Red Hat linux:
+Use the following steps to schedule scans:
 
 1. Connect to the RedHat server using Putty.
-1. Let’s look at the anacron file: 
+1. Edit the anacron file: 
 
-    ```vi /etc/anacron```.
+    ```vi /etc/anacron```
 
     :::image type="content" source="images/vi_etc_anacron.png" alt-text="anacron file":::
 
@@ -63,13 +62,13 @@ Follow the steps to schedule antivirus in Red Hat linux:
     # delay will be 5 minutes + RANDOM_DELAY for cron.daily
     ```
 
-1. A few things to note in the file.
+1. Note the following items in the file.
     1. **Shell:** Shell is referred as ```/bin/sh```, and not as ```/bin/bash```. Remember when writing the jobs.
-    1. **RANDOM_DELAY:** Describes the maximum time in minutes for the job. This is used to offset the jobs so there wouldn't be too many jobs running at the same time. This would be ideal for VDI solutions.
-    1. **START_HOURS_RANGE:** Describes the time range to execute the job.
-    1. **cron.daily:** Describes 1 as the period of days required for the frequency of job executions. 5 is the delay in minutes the anacron waits after the device restarts.
+    1. **RANDOM_DELAY:** Describes the maximum time in minutes for the job. This is used to offset the jobs so there wouldn't be too many jobs running at the same time. This is ideal for VDI solutions.
+    1. **START_HOURS_RANGE:** Describes the time range to run the job.
+    1. **cron.daily:** Describes 1 as the period of days required for the frequency of job executions. 5 is the delay in minutes that anacron waits after the device restarts.
 
-1. Let’s look at the anacron jobs:
+1. Review look at the anacron jobs:
 
     ```ls -lh /etc/cron*```
 
@@ -114,7 +113,7 @@ Follow the steps to schedule antivirus in Red Hat linux:
 
 1. Ignore the ```/etc/cron.d``` directory, you'll see ```/etc/corn.daily, hourly, monthly, and weekly```. 
 
-1. Let’s say you're required to schedule weekly antivirus scans. You can create a file (Job) under the ```/etc/cron.weekly``` directory.
+1. To schedule a weekly antivirus scan, you can create a file (Job) under the ```/etc/cron.weekly``` directory.
 
     ```cd /etc/cron.weekly```
 
@@ -161,7 +160,7 @@ Follow the steps to schedule antivirus in Red Hat linux:
     
     ```./mdavfullscan```
 
-1. Use the command to verify the job ran.
+1. Use the command to verify the job ran successfully.
 
     ```cat /logs/mdav_avacron_full_scan.log```
 
