@@ -54,7 +54,7 @@ Follow the blue teaching bubbles that appear throughout the page and select **Ne
 
 You can take the tour again at any time by going to **Help resources** > **Learn more** and selecting **Take the tour**.
 
-![Help resources](../../media/guided-hunting/help-resources.png)
+![Screenshot of help resources](../../media/guided-hunting/help-resources.png)
 
 
 You can then start building your query to hunt for threats. The following articles can help you get the most out of hunting in guided mode:

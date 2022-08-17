@@ -58,7 +58,7 @@ Advanced hunting in guided mode supports several data types that you can use to 
 
 
 ## Use subgroups
-You can create conditions groups by clicking **Add subgroup**:
+You can create groups of conditions by clicking **Add subgroup**:
 
 ![Screenshot showing different conditions you can use](../../media/guided-hunting/subgroup-1.png)
 
