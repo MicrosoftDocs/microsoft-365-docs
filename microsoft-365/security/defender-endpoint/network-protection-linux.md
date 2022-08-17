@@ -64,10 +64,10 @@ You can use web content filtering for testing with Network protection for Linux.
 
 ### Prerequisites
 
-- Licensing: Microsoft Defender for Endpoint tenant (can be trial)
+- Licensing: Microsoft Defender for Endpoint tenant (can be trial) and platform specific requirements found in [Microsoft Defender for Endpoint for non-Windows platforms](/defender-endpoint/non-windows.md#licensing-requirements)
 - Onboarded Machines:
   - **Minimum Linux version**: For a list of supported distributions, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
-  - **Microsoft Defender for Endpoint Linux client version**: 101.71.18 -insidersslow
+  - **Microsoft Defender for Endpoint Linux client version**: 101.78.13 -insidersslow
 
 ## Instructions
 
