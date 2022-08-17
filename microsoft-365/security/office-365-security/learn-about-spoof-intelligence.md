@@ -56,9 +56,9 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 > [!NOTE]
 >
-> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
+> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
 >
-> - The spoof intelligence insight and the **Spoof** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
+> - The spoof intelligence insight and the **Spoofed senders** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
 > - The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
 >
@@ -105,7 +105,7 @@ To view information about the spoof intelligence detections, click **View spoofi
 ### View information about spoofed messages
 
 > [!NOTE]
-> Remember, only spoofed senders that were detected by spoof intelligence appear on this page. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoof** tab in the Tenant Allow/Block List.
+> Remember, only spoofed senders that were detected by spoof intelligence appear on this page. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 
 On the **Spoof intelligence insight** page that appears after you click **View spoofing activity** in the spoof intelligence insight, the page contains the following information:
 
