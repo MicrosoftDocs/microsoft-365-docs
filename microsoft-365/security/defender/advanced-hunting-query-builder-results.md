@@ -31,7 +31,7 @@ ms.technology: m365d
 
 In hunting using guided mode, the results of the query appear in the **Results** tab. 
 
-[![banner inviting user to take the tour](../../media/guided-hunting/results-view.png) ](../../media/guided-hunting/results-view.png#lightbox)
+[![Screenshot of results tab](../../media/guided-hunting/results-view.png) ](../../media/guided-hunting/results-view.png#lightbox)
 
 You can work on the results further by exporting them to a CSV file by selecting **Export**. This downloads the CSV file for your use.
 
@@ -51,7 +51,7 @@ To view more columns:
 2. From here, select the columns to include in the results view and deselect columns to hide. 
 
 
-[ ![banner inviting user to take the tour](../../media/guided-hunting/results-view-customize-columns.png) ](../../media/guided-hunting/results-view-customize-columns-tb.png#lightbox)
+[ ![Screenshot of list of columns you can add to the results view](../../media/guided-hunting/results-view-customize-columns.png) ](../../media/guided-hunting/results-view-customize-columns-tb.png#lightbox)
 
 3. Select **Apply** to view results with the added columns. Use the scroll bars if necessary.
 

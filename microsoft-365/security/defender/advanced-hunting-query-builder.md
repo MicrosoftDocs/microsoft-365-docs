@@ -39,14 +39,14 @@ The analyst can choose which data set to look at and which filters and condition
 ## Open Query in builder
 In the **Advanced hunting** page, select **Create new** to open a new query tab and select **Query in builder**. 
 
-![hunting icon](../../media/guided-hunting/query-in-builder-page.png)
+![Screenshot of guided mode query builder](../../media/guided-hunting/query-in-builder-page.png)
 
 This brings you to the guided mode, where you can then construct your query by selecting different components using dropdown menus.
 
 ## Specify the data domain to hunt in
 You can control the scope of the hunt by selecting which domain the query covers:
 
-![hunting icon](../../media/guided-hunting/query-builder-view-in.png)
+![Screenshot of guided mode query builder domains dropdown](../../media/guided-hunting/query-builder-view-in.png)
 
 
 Selecting **All** includes data from all domains you currently have access to. Narrowing down to a specific domain allows filters relevant to that domain only. 
@@ -61,13 +61,13 @@ You can choose from:
 
 By default, guided hunting includes a few basic filters to get you started fast. 
 
-![hunting icon](../../media/guided-hunting/query-builder-basic-filters.png)
+![Screenshot of guided mode query builder basic filter set](../../media/guided-hunting/query-builder-basic-filters.png)
 
 
 
 When you choose one data source, for instance, **Endpoints**, the query builder displays only the applicable filter groups. You can then choose a filter you are interested in narrowing down by selecting that filter group, for instance, **EventType**, and selecting the filter of your choice.
 
-![hunting icon](../../media/guided-hunting/query-builder-query-basic-filter.png)
+![Screenshot of guided mode query builder endpoint basic filter set](../../media/guided-hunting/query-builder-query-basic-filter.png)
 
 
 
@@ -80,18 +80,18 @@ Once the query is ready, select the blue **Run query** button. If the button is 
 ## Load sample queries
 
 Another quick way to get familiar with guided hunting is to load sample queries using the **Load sample queries** dropdown menu. 
-![hunting icon](../../media/guided-hunting/load-sample-queries.png)
+![Screenshot of guided mode query builder load sample queries list](../../media/guided-hunting/load-sample-queries.png)
 
 >[!NOTE] 
 > Selecting a sample query overrides the existing query. 
 
 Once the sample query is loaded, select **Run query**.
 
-![hunting icon](../../media/guided-hunting/load-sample-queries-1.png)
+![Screenshot of guided mode query builder loaded query](../../media/guided-hunting/load-sample-queries-1.png)
 
 If you have previously selected a domain, the list of available sample queries changes accordingly.
 
-![hunting icon](../../media/guided-hunting/load-sample-queries-2.png)
+![Screenshot of guided mode query builder restricted list](../../media/guided-hunting/load-sample-queries-2.png)
 
 To restore the complete list of sample queries, select **All domains** then reopen **Load sample queries**.
 
@@ -102,11 +102,11 @@ If the loaded sample query uses filters outside of the basic filter set, the tog
 
 To view more filter groups and conditions, select **Toggle to see more filters and conditions**.
 
-![hunting icon](../../media/guided-hunting/query-builder-view-in-endpoints.png)
+![Screenshot of guided mode query builder more filters toggle](../../media/guided-hunting/query-builder-view-in-endpoints.png)
 
 When the **All filters** toggle is active, you can now use the full range of filters and conditions in guided mode.
 
-![hunting icon](../../media/guided-hunting/query-builder-all-filters.png)
+![Screenshot of guided mode query builder all filters active](../../media/guided-hunting/query-builder-all-filters.png)
 
 
 
@@ -129,7 +129,7 @@ Next, set the appropriate condition to further filter the data by selecting it f
 
 You can add more conditions to your query by using **AND**, and **OR** conditions. AND returns results that fulfill all conditions in the query, while OR returns results that fulfill any of the conditions in the query.  
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-operators.png)
+![Screenshot showing AND OR operators](../../media/guided-hunting/query-builder-operators.png)
 
 Refining your query allows you to automatically sift through voluminous records to generate a list of results that is already targeted to your specific threat hunting need.
 
@@ -141,7 +141,7 @@ Another way to get familiar with guided hunting is to load sample queries pre-cr
 
 In the **Getting started** section of the hunting page, we have provided three guided query examples that you can load. The query examples contain some of the most common filters and inputs you would typically need in your hunting. Loading any of the three sample queries opens a guided tour of how you would construct the entry using guided mode.
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/load-examples.png)
+![Screenshot of guided mode query builder getting started query walkthroughs](../../media/guided-hunting/load-examples.png)
 
 Follow the instructions in the blue teaching bubbles to construct your query. Select **Run query**.
 
@@ -150,33 +150,33 @@ Follow the instructions in the blue teaching bubbles to construct your query. Se
 ### Hunt for successful connections to specific IP
 To hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip.png)
+![Screenshot of guided mode query builder hunt for successful connections to specific IP first filter](../../media/guided-hunting/query-builder-hunt-ip.png)
 
 To look for events involving a specific IP address where the IP is the destination of the communication, select `DestinationIPAddress` under the IP Address Events section. Then select the **equals** operator. Type the IP in the third dropdown menu and press **Enter**:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-2.png)
+![Screenshot of guided mode query builder hunt for successful connections to specific IP](../../media/guided-hunting/query-builder-hunt-ip-2.png)
 
 Then, to add a second condition which searches for successful network communication events, search for the filter of a specific event type:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-3.png)
+![Screenshot of guided mode query builder hunt for successful connections to specific IP, second condition](../../media/guided-hunting/query-builder-hunt-ip-3.png)
 
 The **EventType** filter looks for the different event types logged. It is equivalent to the **ActionType** column which exists in most of the tables in advanced hunting. Select it to choose one or more event types to filter for. To look for successful network communication events, expand the **DeviceNetworkEvents** section and then choose `ConnectionSuccess`:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-4.png)
+![Screenshot of guided mode query builder hunt for successful connections to specific IP third condition](../../media/guided-hunting/query-builder-hunt-ip-4.png)
 
 Finally, select **Run query** to hunt for all successful network communications to the 52.168.117.170 IP address:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/query-builder-hunt-ip-5.png)
+![Screenshot of guided mode query builder hunt for successful connections to specific IP results view](../../media/guided-hunting/query-builder-hunt-ip-5.png)
 
 ### Hunt for high confidence phish or spam emails delivered to inbox 
 
 To look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select **ConfidenceLevel** under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-1.png)
+![Screenshot of guided mode query builder hunt high confidence phish or spam emails delivered to inbox, first condition](../../media/guided-hunting/hunt-spam-1.png)
 
 Then, add another condition, this time specifying the folder or **DeliveryLocation, Inbox/folder**. 
 
-![Screenshot showing different conditions you can use](../../media/guided-hunting/hunt-spam-2.png)
+![Screenshot of guided mode query builder hunt high confidence phish or spam emails delivered to inbox, second condition](../../media/guided-hunting/hunt-spam-2.png)
 
 
 
