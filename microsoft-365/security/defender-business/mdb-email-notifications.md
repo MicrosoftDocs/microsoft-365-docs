@@ -27,8 +27,6 @@ You can set up email notifications for your security team. Then, as alerts are g
 2. [View and edit email notification settings](#view-and-edit-email-notifications).
 3. [Proceed to your next steps](#next-steps).
 
-
-
 ## Types of email notifications
 
 When you set up email notifications, you can choose from two types, as described in the following table:

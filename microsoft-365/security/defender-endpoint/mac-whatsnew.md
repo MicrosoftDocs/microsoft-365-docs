@@ -420,7 +420,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Release version: **20.121022.12750.0** <br/> 
 
 **What's new**
-- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Threat & Vulnerability Management (TVM) functionality.  
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality.  
 
 <br/>
 </details>

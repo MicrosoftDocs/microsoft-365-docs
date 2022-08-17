@@ -78,6 +78,8 @@
         items: 
           - name: Upgrade to Windows 10 Pro (if needed)
             href: m365bp-upgrade-windows-10-pro.md
+          - name: Threat protection by Microsoft Defender Antivirus
+            href: m365bp-threats-detected-defender-av.md
           - name: Secure Windows devices
             href: m365bp-secure-windows-devices.md
           - name: Manage Windows devices
