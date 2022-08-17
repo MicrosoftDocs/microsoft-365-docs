@@ -23,14 +23,6 @@ description: "New Zealand bank account number sensitive information type entity 
 
 # New Zealand bank account number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 14-digit to 16-digit pattern with optional delimiter

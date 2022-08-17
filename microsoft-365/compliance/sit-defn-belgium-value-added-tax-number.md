@@ -23,14 +23,6 @@ description: "Belgium value added tax number sensitive information type entity d
 
 # Belgium value added tax number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 12-character alphanumeric pattern
