@@ -36,13 +36,13 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
   - URLs
   - Files
   - Domains or email addresses, both sending and receiving.
-  - Spoofed senders. If you override the allow verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual block entry that appears only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create block entries for spoofed senders here before they're detected by spoof intelligence.
+  - Spoofed senders. If you override the allow verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create block entries for spoofed senders here before they're detected by spoof intelligence.
 
 - **Allow**:
   - URLs
   - Files
   - Domains or email addresses, both sending and receiving.
-  - Spoofed senders. If you override the block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow entry that appears only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow entries for spoofed senders here before they're detected by spoof intelligence.
+  - Spoofed senders. If you override the block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow entries for spoofed senders here before they're detected by spoof intelligence.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
