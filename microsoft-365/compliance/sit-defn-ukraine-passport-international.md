@@ -23,14 +23,6 @@ description: "Ukraine passport international sensitive information type entity d
 
 # Ukraine passport international
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 eight-character alphanumeric pattern
