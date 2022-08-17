@@ -33,11 +33,13 @@ To ensure access to the encryption service isn't inadvertently blocked, use the 
 ## Cross-tenant access settings and encrypted content
 
 > [!IMPORTANT]
-> Another organization's cross-tenant access settings can be responsible for their users being unable to open content that's encrypted by your users. If you get reports of users in another organization being unable to open this content, and the email address in the message they see belongs to the external organization, direct their Azure AD admin to this section.
+> Another organization's cross-tenant access settings can be responsible for either their users being unable to open content that your users have encrypted, or your users being unable to open content encrypted by the other organization. The message that they see indicates which organization blocked access. You might need to direct the Azure AD admin from the other organization to this section.
 
 By default, there's nothing to configure for cross-tenant authentication to work when users protect content by using encryption from the Azure Rights Management Service. However, your organization can restrict access by using Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview). Conversely, another organization can also configure these settings to restrict access with users in your organization. These settings affect opening any encrypted items, which include encrypted emails and encrypted documents.
 
-For example, another organization might have settings configured that prevent their users from opening content encrypted by your organization. In this scenario, until their Azure AD admin reconfigures their cross-tenant settings, an external user attempting to open that content will see a message that informs them **Access is blocked by the organization** with an email address to contact to request access. The email address confirms which tenant is responsible for blocking the access.
+For example, another organization might have settings configured that prevent their users from opening content encrypted by your organization. In this scenario, until their Azure AD admin reconfigures their cross-tenant settings, an external user attempting to open that content will see a message that informs them **Access is blocked by your organization** with a reference to **Your tenant administrator**. In that message, they see their own organization domain name that identifies it's their Azure AD tenant, rather than yours, that's responsible for blocking the access.
+
+When it's another Azure AD organization that's responsible for blocking access for your users, the message they see changes to **Access is blocked by the organization** and the domain name of that organization.
 
 Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to **Microsoft Azure Information Protection**, which has the following an app ID:
 
