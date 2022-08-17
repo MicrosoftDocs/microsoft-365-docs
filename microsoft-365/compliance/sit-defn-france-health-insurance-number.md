@@ -23,14 +23,6 @@ description: "France health insurance number sensitive information type entity d
 
 # France health insurance number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 21-digit number
