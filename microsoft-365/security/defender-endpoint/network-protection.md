@@ -117,10 +117,9 @@ A user visits a website:
   - **Unblock** - The user won't need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for another 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-  > [!div class="mx-imgBorder"]
-  > ![Shows a network protection phishing content warn notification](images/network-protection-phishing-warn-2.png)
+    :::"image type"content" source="images/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
 
-  > [NOTE!]
+  > [!NOTE]
   > The images shown here for warn experience and block experience (below) both list **"blocked url"** as example placeholder text; in a functioning environment the actual url or domain will be listed.  
 
 #### Block experience
@@ -131,8 +130,7 @@ A user visits a website:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
   
-  > [!div class="mx-imgBorder"]
-  > ![ Shows a network protection known phishing content blocked notification](images/network-protection-phishing-blocked.png)
+    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification.":::
 
 ### Network protection: C2 detection and remediation
 
@@ -144,8 +142,7 @@ Support for Command and Control servers (C2) is a key part of this ransomware ev
 
 A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
- > [!div class="mx-imgBorder"]
- > ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
+:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
 Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
 
@@ -153,8 +150,7 @@ Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock
 [Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
 -->
 
- > [!div class="mx-imgBorder"]
- > ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
+:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
 
 ## Using network protection
 
@@ -182,8 +178,8 @@ DeviceEvents
 
 ```
 
- > [!div class="mx-imgBorder"]
- > ![Advanced hunting for auditing and identifying events](images/network-protection-advanced-hunting.png)
+
+:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events.":::
 
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
