@@ -35,9 +35,9 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 ## August 2022
 
-New Microsoft Microsoft Information protection recommendations are now available as Secure Score improvement actions:
+New Microsoft Information Protection recommendations are now available as Secure Score improvement actions:
 
-- **Information protection – Labeling**
+- **Labeling**
   - Extend M365 sensitivity labeling to assets in Azure Purview data map
   - Ensure Auto-labeling data classification policies are setup and used
   - Publish M365 sensitivity label data classification policies
