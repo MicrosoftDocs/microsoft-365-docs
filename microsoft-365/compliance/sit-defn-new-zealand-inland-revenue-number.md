@@ -23,14 +23,6 @@ description: "New Zealand inland revenue number sensitive information type entit
 
 # New Zealand inland revenue number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 eight or nine digits with optional delimiters
