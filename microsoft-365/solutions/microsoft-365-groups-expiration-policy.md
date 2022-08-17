@@ -23,7 +23,7 @@ description: "Learn about Microsoft 365 groups expiration policies."
 
 With the increase in usage of Microsoft 365 groups and Microsoft Teams, administrators and users need a way to clean up unused groups and teams. A Microsoft 365 groups expiration policy can help remove inactive groups from the system and make things cleaner.
 
-When a group expires, almost all of its associated services (the mailbox, Planner, SharePoint site, team, etc.) are also deleted.
+When a group expires, [almost all of its associated services (the mailbox, Planner, SharePoint site, team, etc.) are also deleted](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer).
 
 When a group expires it is "soft-deleted" which means it can still be recovered for up to 30 days.
 
