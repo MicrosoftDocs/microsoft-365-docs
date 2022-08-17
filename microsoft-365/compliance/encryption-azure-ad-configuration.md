@@ -33,7 +33,9 @@ To ensure access to the encryption service isn't inadvertently blocked, use the 
 ## Cross-tenant access settings and encrypted content
 
 > [!IMPORTANT]
-> Another organization's cross-tenant access settings can be responsible for either their users being unable to open content that your users have encrypted, or your users being unable to open content encrypted by the other organization. The message that they see indicates which organization blocked access. You might need to direct the Azure AD admin from the other organization to this section.
+> Another organization's cross-tenant access settings can be responsible for either their users being unable to open content that your users have encrypted, or your users being unable to open content encrypted by the other organization.
+> 
+> The message that users see indicates which organization blocked access. You might need to direct the Azure AD admin from another organization to this section.
 
 By default, there's nothing to configure for cross-tenant authentication to work when users protect content by using encryption from the Azure Rights Management Service. However, your organization can restrict access by using Azure AD [External Identities cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview). Conversely, another organization can also configure these settings to restrict access with users in your organization. These settings affect opening any encrypted items, which include encrypted emails and encrypted documents.
 
