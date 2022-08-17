@@ -62,7 +62,7 @@ Promote continual growth for your employees and encourage knowledge sharing and 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
 | [Onboard new employees](flw-onboarding-training.md) | Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Lists <br>Live meetings |
-| [Ongoing training](flw-onboarding-training.md#ongoing-training) | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections | |
+| [Ongoing training](flw-onboarding-training.md#ongoing-training) | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer| |
 
 ## Schedule management
 

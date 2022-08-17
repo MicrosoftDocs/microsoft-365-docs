@@ -22,14 +22,14 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "How to create a custom Messaging Records Management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
+description: "How to create a custom messaging records management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
 ---
 
 # Customize an archive and deletion policy for mailboxes in your organization
 
 Microsoft Purview admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
 
-You do this by creating a Messaging Records Management (MRM) retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the mailbox after they reach a certain age limit.
+You do this by creating a messaging records management (MRM) retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the mailbox after they reach a certain age limit.
 
 The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Retention tags are linked to an MRM retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted.
   

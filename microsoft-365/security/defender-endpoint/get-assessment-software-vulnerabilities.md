@@ -585,5 +585,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 Other related
 
-- [Risk-based Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

@@ -207,7 +207,7 @@ After selecting **Review update** from the assessment details page, a flyout pan
 - An overview explaining the update
 - Specific details about the changes, including the impact to your compliance score, the amount of progress toward completion of the assessment, and the specific number of changes to improvement actions and controls.
 
-Selecting the **Updated template** link will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** link downloads a file of the existing template without the changes.
+Selecting the **Updated template** command will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** command downloads a file of the existing template without the updates.
 
 To accept the update and make the changes to your assessment, select **Accept update**. Accepted changes are permanent.
 
