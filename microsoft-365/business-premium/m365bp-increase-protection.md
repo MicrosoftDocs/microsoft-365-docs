@@ -181,7 +181,7 @@ For more information, see [View alerts](../compliance/alert-policies.md#view-ale
 
 ## Manage calendar sharing
 
-You can prevent people in your organization from sharing their calendars. You can also manage what level of detail they can share. For example, you can restrict the sharing to free/busy times only.
+You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.
 
 1. Go [Org settings in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2053743) and sign in.
 
