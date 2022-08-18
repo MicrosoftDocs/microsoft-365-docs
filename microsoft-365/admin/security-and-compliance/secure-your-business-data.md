@@ -64,9 +64,17 @@ The following table describes the top 10 days to secure your business data with 
 
 (<a id="fn1">1</a>) [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices.
 
-## Comparing features in Microsoft 365 for business plans
+## Comparing security features in Microsoft 365 for business plans
 
-The following table summarizes the capabilities that are included in Microsoft 365 for business plans. 
+All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
+
+The following table compares security capabilities that are included in Microsoft 365 for business plans. 
+
+| Capability | Microsoft 365<br/>Business Basic | Microsoft 365<br/>Business Standard | Microsoft 365<br/>Business Premium |
+|:---|:--:|:--:|:--:|
+| Antispam, antiphishing, and antimalware for email <br/>([Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md)) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| Mobile device management and mobile application management <br/>([Microsoft Intune](/mem/intune/fundamentals/what-is-intune)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+
 
 | Subscription | What's included |
 |:---|:---|
