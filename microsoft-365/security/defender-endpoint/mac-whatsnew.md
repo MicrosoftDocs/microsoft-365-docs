@@ -46,7 +46,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - Fix for osqueryui zombie processes
 - Fix for UI crash on Ventura
 - Fix for definitions not getting downloaded right after install
-- Other bug fixes.
+- Other bug fixes
 
 <br/>
 </details>
