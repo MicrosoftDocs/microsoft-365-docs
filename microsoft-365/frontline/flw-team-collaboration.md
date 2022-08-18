@@ -122,7 +122,7 @@ The Praise app allows management and frontline team members to congratulate each
 |Retail |A store manager can send the **Awesome** badge to an associate who meets their sales goals. |
 |Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
 |Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
-|Manufacturing |A supervisor can sent the **Leadership** badge to a foreman whose team is performing well. |
+|Manufacturing |A supervisor can send the **Leadership** badge to a foreman whose team is performing well. |
 
 [Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
