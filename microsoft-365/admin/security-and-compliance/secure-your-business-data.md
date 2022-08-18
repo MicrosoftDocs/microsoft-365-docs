@@ -83,7 +83,7 @@ The following table compares capabilities that are included in Microsoft 365 for
 
 (<a id="fn2">2</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops.
 
-(<a id="fn3">3</a>) Defender for Business (standalone) can be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
+(<a id="fn3">3</a>) Defender for Business is included in Microsoft 365 Business Premium. It's also available as a standalone subscription that can be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
 
 > [!NOTE]
