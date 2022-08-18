@@ -85,7 +85,7 @@ The following table compares capabilities that are included in Microsoft 365 for
 (<a id="fn3">3</a>) Defender for Business (standalone) can be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
 
-> [!TIP]
+> [!NOTE]
 > All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
 > For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
 
