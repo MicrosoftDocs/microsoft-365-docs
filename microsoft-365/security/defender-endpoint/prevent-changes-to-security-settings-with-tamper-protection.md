@@ -86,7 +86,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 ## Potential dependency on cloud protection  
   
-Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS).
+Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS).
 
 The following table provides details on the methods, tools, and dependencies.
 
@@ -95,6 +95,20 @@ The following table provides details on the methods, tools, and dependencies.
 |Microsoft Intune|No|
 |Microsoft Endpoint Configuration Manager with Tenant Attach|No|
 |Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))|Yes|
+
+## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
+
+If you're using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
+
+On Windows Server 2016, the Settings app won't accurately reflect the status of real-time protection when tamper protection is enabled.
+
+### Use PowerShell to determine whether tamper protection and real-time protection are turned on
+
+1. Open the Windows PowerShell app.
+
+2. Use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet.
+
+3. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
 
 ## View information about tampering attempts
 
