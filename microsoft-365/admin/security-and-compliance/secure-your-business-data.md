@@ -80,7 +80,7 @@ The following table compares security capabilities that are included in Microsof
 | Mobile device management and mobile application management <br/>([Microsoft Intune](/mem/intune/fundamentals/what-is-intune)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | Advanced device security with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>([Defender for Business](../../security/defender-business/mdb-overview.md)) | See note <sup>[[2](#fn2)]</sup>  | See note <sup>[[2](#fn2)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
-(<a id="fn2">2</a>) [Defender for Business](/microsoft-365/security/defender-business/mdb-overview) can be added onto Microsoft 365 Business Basic or Standard.
+(<a id="fn2">2</a>) [Defender for Business](/microsoft-365/security/defender-business/mdb-overview) can be added onto Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
 
 All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
