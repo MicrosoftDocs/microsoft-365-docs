@@ -28,9 +28,11 @@ Easily and quickly start trying Microsoft’s compliance solutions without chang
 
 Depending on your priorities, you can start with any of these solution areas to see immediate value. Here are four top organizational concerns as communicated by our customers and recommended solutions to start with.
 
+:::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Top organizational concerns":::
+
 **Let’s get started!**
 
-## Compliance Manager
+## Microsoft Purview Compliance Manager
 
 We recommend that you become familiar with Compliance Manager and improve your organization’s compliance posture. What can Compliance Manager do for your organization?
 
@@ -122,7 +124,7 @@ You can follow the actions below or alternatively, use the [Microsoft Purview In
 
 **Actions to try:**
 
-## Information Protection
+## Microsoft Purview Information Protection
 
 ### Step 1: Automatically apply sensitivity labels to documents
 
@@ -180,7 +182,7 @@ You have flexibility in how you configure your DLP policies. You can start with 
    - Devices: switch from audit only to block
 1. [Configure and view alerts for data loss prevention policies](dlp-configure-view-alerts-policies.md)
 
-## Data governance
+## Microsoft Purview data governance
 
 The second organizational concern customers convey is how to reduce risk and meet regulations by classifying data to keep what they need and delete what they don't need. Customers want compliant lifecycle management of sensitive data, to meet record keeping obligations, and to reduce the risk from over-retained data.
 
@@ -190,7 +192,7 @@ Microsoft Purview Data Lifecycle Management and Records Management help you to:
 - Ensure the correct policies are enforced by auto-classifying content.
 - Comply with record keeping obligations with immutability options, defensible disposal, and advanced policy targeting.
 
-## Data Lifecycle Management
+## Microsoft Purview Data Lifecycle Management
 
 ### Govern at scale with automation
 
@@ -251,7 +253,7 @@ Using Insider Risk Management and Communication Compliance you can quickly ident
 - Investigate – integrated investigation workflows enable end-to-end collaboration across Security, HR and Legal.
 - Know privacy is built-in – protect user privacy and prevent bias by removing identifiable user details, like name or email, while mitigating organizational risk.
 
-## Insider Risk Management
+## Microsoft Purview Insider Risk Management
 
 **Detect and remediate insider risks**
 
@@ -296,7 +298,7 @@ Set up recommendations are also available on the Microsoft docs page, via the [M
 
 To fully leverage the functionality of Insider Risk Management, we recommend setting up policies for your organization to better identify potential risky actions that may lead to a security incident, leveraging templates for Data leaks or Data theft.  
 
-## Communication Compliance
+## Microsoft Purview Communication Compliance
 
 **Identify regulatory compliance policy violations**
 
@@ -336,7 +338,7 @@ With eDiscovery and Audit, you can discover data efficiently.
 - Manage workflows – reduce the friction of identifying and collecting potential sources of relevant information by automatically mapping unique and shared data sources.
 - Accelerate the discovery process – manage the increase of data volume by searching and processing highly relevant content in-place. 
 
-## eDiscovery (Premium)
+## Microsoft Purview eDiscovery (Premium)
 
 Discover more efficiently with an end-to-end workflow
 Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that’s responsive to your organization’s internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case.
