@@ -49,7 +49,7 @@ You build custom models to understand the layout of your files from example docu
 | Classify and extract by text pattern  | Extract by layout<br><br>  | Extract by text pattern and layout  |
 | ------------- | ------------- | ------------- |
 |  ![Icon for Classify and extract by text pattern model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for Extract by layout model.](../media/content-understanding/custom-extract-by-layout.png) | ![Icon for Extract by text pattern and layout model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |
-| Create a custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more](document-understanding-overview.md) | Create a custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for non-English languages and files with form layouts or tables. <br>[Learn more](form-processing-overview.md) | Create a custom model to automatically extract info from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more](extract-by-text-pattern-and-layout-overview.md) |
+| Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more](document-understanding-overview.md) | Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files with form layouts or tables. <br>[Learn more](form-processing-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more](extract-by-text-pattern-and-layout-overview.md) |
 
 ### Trained models
 
@@ -61,7 +61,7 @@ If you don't need to build a custom model, you can use a prebuilt [trained model
 | Invoices  | Receipts  | 
 | ------------- | ------------- |
 | ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
-| Save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more](prebuilt-model-invoice.md) | Save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more](prebuilt-model-receipt.md) | 
+| Use this trained model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more](prebuilt-model-invoice.md) | Use this trained model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more](prebuilt-model-receipt.md) | 
 
 For more information about custom and trained models, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
