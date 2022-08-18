@@ -122,7 +122,7 @@ The Praise app allows management and frontline team members to congratulate each
 |Retail |A store manager can send the **Awesome** badge to an associate who meets their sales goals. |
 |Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
 |Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
-|Manufacturing |A supervisor can sent the **Leadership** badge to a foreman whose team is performing well. |
+|Manufacturing |A supervisor can send the **Leadership** badge to a foreman whose team is performing well. |
 
 [Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
@@ -199,6 +199,23 @@ More information: [Create a team with templates](https://support.microsoft.com/o
 Refine what's in your team with apps. You can allow or block apps for your organization, or configure settings for apps, in the Microsoft Teams admin center. For more information about managing apps, see [Manage apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
 
 Your users can add any apps that you have allowed to their teams. Share this training with your users to show them how: [Find and use apps](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
+
+
+### Use Viva Connections to create a personalized experience
+
+Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams. 
+
+![Screenshot of the Viva Connections Dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
+
+
+Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user. 
+
+Learn more about [how to get Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections Dashboard](/viva/connections/create-dashboard). 
+
+
+
+
+
 
 ## Learn more about Teams capabilities for specific industries
 
