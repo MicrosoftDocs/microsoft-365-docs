@@ -50,7 +50,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Submissions portal](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-submissions-portal): Create allowed spoofed sender entries using the Tenant Allow/Block List.
 
-- [Impersonation allows using admin submission](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-impersonated-domains-or-senders-in-the-submissions-portal): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
+- [Impersonation allows using admin submission](allow-block-email-spoof.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
 
 - [View converted admin submission from user submission](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): Configure the custom mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 

@@ -84,22 +84,44 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **Select a reason for submitting to Microsoft**: Verify **Should not have been blocked (False positive)** is selected.
 
-   - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgement.
+     - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgement.
+
+     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+
+       After you select this option, the following settings are available:
+
+       - By default, **Sender** is selected but you can select **Domain** instead.
+
+       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+           - **1 day**
+           - **7 days**
+           - **30 days**
+           - **90 days**
+           - **Never expire**
+           - **Specific date**
+
+       - **Block entry note**: Enter optional information about why you're allowing this email.
 
    When you're finished, click **Submit**, and then click **Done**.
 
 > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-flyout-email.png":::
 
- > [!NOTE]
- > To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses on the Submissions page](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page).
+> [!NOTE]
+> For messages that were incorrectly blocked by [spoof intelligence](learn-about-spoof-intelligence.md), a block entry for the domain pair is not created in the Tenant Allow/Block List.
+>
+> For messages that were incorrectly blocked by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), a block entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the impersonated domain or user is added to the **Add trusted senders and domains** section of the anti-phishing policy. For more information about configuring anti-phishing policies, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+>
+> To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 ## Report questionable email attachments to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, select the **Email attachments** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, select the **Email attachments** tab.
 
-3. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
+3. On the **Email attachments** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+4. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
 
    - **Select the submission type**: Verify the value **Email attachment** is selected.
 
@@ -110,14 +132,28 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
-   - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+
+     - **Block this file**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+
+       After you select this option, the following settings are available:
+
+       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+           - **1 day**
+           - **7 days**
+           - **30 days**
+           - **90 days**
+           - **Never expire**
+           - **Specific date**
+
+       - **Block entry note**: Enter optional information about why you're allowing this email.
 
    When you're finished, click **Submit**, and then click **Done**.
 
 > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-file-flyout.png":::
 
  > [!NOTE]
- > To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for files on the Submissions page](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-on-the-submissions-page).
+ > To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for files in the Submissions portal](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
 
 ## Report questionable URLs to Microsoft
 
@@ -138,14 +174,28 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
-   - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+
+     - **Block this URL**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+
+       After you select this option, the following settings are available:
+
+       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+           - **1 day**
+           - **7 days**
+           - **30 days**
+           - **90 days**
+           - **Never expire**
+           - **Specific date**
+
+       - **Block entry note**: Enter optional information about why you're allowing this email.
 
    When you're finished, click **Submit**, and then click **Done**.
 
 > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
- > To report a URL as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for URLs on the Submissions page](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page).
+ > To report a URL as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for URLs in the Submissions portal](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
 
 ## View email admin submissions to Microsoft
 
