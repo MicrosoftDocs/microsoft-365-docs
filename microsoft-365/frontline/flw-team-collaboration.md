@@ -200,6 +200,23 @@ Refine what's in your team with apps. You can allow or block apps for your organ
 
 Your users can add any apps that you have allowed to their teams. Share this training with your users to show them how: [Find and use apps](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 
+
+### Use Viva Connections to create a personalized experience
+
+Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams. 
+
+![Screenshot of the Viva Connections Dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
+
+
+Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user. 
+
+Learn more about how to get Viva Connections and how to create a Viva Connections Dashboard. 
+
+
+
+
+
+
 ## Learn more about Teams capabilities for specific industries
 
 - [Teams for Retail](teams-for-retail-landing-page.md)
