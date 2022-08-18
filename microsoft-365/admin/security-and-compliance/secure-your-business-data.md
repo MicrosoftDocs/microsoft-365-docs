@@ -62,7 +62,6 @@ The following table describes the top 10 days to secure your business data with 
 | 9 | **[Manage calendar sharing for your business](../../business-premium/m365bp-increase-protection.md#disable-or-manage-calendar-sharing)**. You can prevent people in your organization from sharing their calendars. You can also manage what level of detail they can share. For example, you can restrict the sharing to free/busy times only. <br/><br/>To learn more, see [Disable or manage calendar sharing](../../business-premium/m365bp-increase-protection.md#disable-or-manage-calendar-sharing).  |
 | 10 | **[Maintain your environment](../../business-premium/m365bp-maintain-environment.md)**. After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. You'll need to perform certain tasks, such as adding or removing users, resetting passwords, and resetting devices to factory settings as needed. <br/><br/> To learn more, see [Maintain your environment](../../business-premium/m365bp-maintain-environment.md). |
 
-
 (<a id="fn1">1</a>) [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices.
 
 ## Comparing features in Microsoft 365 for business plans
