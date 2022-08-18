@@ -210,7 +210,7 @@ Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-over
 
 Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user. 
 
-Learn more about how to get Viva Connections and how to create a Viva Connections Dashboard. 
+Learn more about [how to get Viva Connections](/viva-connections-setup-overview) and [how to create a Viva Connections Dashboard](/viva/connections/create-dashboard). 
 
 
 
