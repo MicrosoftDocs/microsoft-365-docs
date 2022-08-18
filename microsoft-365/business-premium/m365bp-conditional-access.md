@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/08/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -26,7 +26,8 @@ description: "Learn how security defaults can help protect your organization fro
 
 Microsoft 365 Business Premium was designed to help protect your company's user accounts with preconfigured security settings. These settings include enabling multi-factor authentication (MFA) for all your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security.
 
-For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+> [!TIP]
+> For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 This article provides information about:
 
@@ -97,4 +98,4 @@ To learn more about Conditional Access, see [What is Conditional Access?](/azure
 
 ## Next objective
 
-Set up ways to [protect against malware and other threats](m365bp-increase-protection.md).
+[Protect your administrator accounts in Microsoft 365 Business Premium](m365bp-protect-admin-accounts.md)

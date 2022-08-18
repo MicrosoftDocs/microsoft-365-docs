@@ -11,8 +11,7 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Use Microsoft Teams classes with Blackboard Learn Ultra"
+description: Use Microsoft Teams classes with Blackboard Learn Ultra.
 ---
 
 # Use Microsoft Teams classes with Blackboard Learn Ultra

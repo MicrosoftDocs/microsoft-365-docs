@@ -23,14 +23,6 @@ description: "Japan My Number - Personal sensitive information type entity defin
 
 # Japan My Number - Personal
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 12-digit number
