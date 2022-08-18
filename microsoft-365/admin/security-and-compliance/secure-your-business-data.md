@@ -66,7 +66,9 @@ The following table describes the top 10 days to secure your business data with 
 
 ## Comparing features in Microsoft 365 for business plans
 
-All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers. The following table compares capabilities that are included in Microsoft 365 for business plans. 
+All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers. 
+
+The following table compares capabilities that are included in Microsoft 365 for business plans. 
 
 | Capability | Microsoft 365<br/>Business Basic | Microsoft 365<br/>Business Standard | Microsoft 365<br/>Business Premium |
 |:---|:--:|:--:|:--:|
