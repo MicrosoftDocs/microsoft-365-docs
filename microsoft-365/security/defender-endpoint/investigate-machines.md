@@ -208,7 +208,7 @@ The **Device health status** card shows a summarized health report for the speci
 - Defender Antivirus not active
 - Status not available for macOS & Linux
 
-Other information in the card includes, the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode. 
+Other information in the card include: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode. 
 
 >[!NOTE]
 >The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & linux'. Up to date reporting is currently only available on Windows devices. Other information in the table is up to date to show the individual states of each device health signal. 
