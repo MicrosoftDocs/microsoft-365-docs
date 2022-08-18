@@ -30,188 +30,58 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages (does not apply to intra-org messages) and at the time of user clicks. You can specify the following types of overrides:
+The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages form external senders (does not apply to intra-org messages) and at the time of user clicks. You can specify the following types of overrides:
 
-- **Block**:
-  - URLs
-  - Files
-  - Domains or email addresses, both sending and receiving.
-  - Spoofed senders. If you override the allow verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create block entries for spoofed senders here before they're detected by spoof intelligence.
+- **Block**: In the Tenant Allow/Block List, you can directly create block entries for the following types of items:
 
-- **Allow**:
-  - URLs
-  - Files
-  - Domains or email addresses, both sending and receiving.
-  - Spoofed senders. If you override the block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow entries for spoofed senders here before they're detected by spoof intelligence.
+  - **Domains and email addresses**:
+    - Email messages from these blocked senders are identified as *high confidence spam* (SCL = 9) and are moved to the Junk Email folder by default.
+    - Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 
-This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+  - **Spoofed senders**:
+    - You can proactively create a block entry for a spoofed sender before [spoof intelligence](learn-about-spoof-intelligence.md) identifies and allows the message as spoofing.
+    - If you manually override an existing allow verdict from spoof intelligence, the blocked spoofed sender becomes a manual block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 
-## What do you need to know before you begin?
+  - **Files**: Email messages that contain these blocked files are identified as *malware*.
 
-- In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+  - **URLs**: Email messages that contain these blocked URLs are identified as *phishing* (not *high confidence phishing*).
 
-- You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
+  By default, block entries for **domains and email addresses**, **files** and **URLs** will expire after 30 days, but you can set them to expire up 90 days or to never expire. Block entries for **spoofed senders** never expire.
 
-  ```console
-  certutil.exe -hashfile "<Path>\<Filename>" SHA256
-  ```
+- **Allow**: In most cases, you can't directly create allow entries in the Tenant Allow/Block List:
 
-  An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
+  - **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the **Submission** page in the Microsoft 365 Defender portal (also known as the *Submissions portal* or *admin submission*) to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
 
-- For domains or email addresses, URLs, and file hashes, the Tenant Allow/Block List allows 500 entries each for both allows and blocks, making it a total of 1000 entries. For spoofed senders(spoofing), the total number of entries allowed is 1024.
+  - **Spoofed senders**: You can create allow entries directly in the Tenant Allow/Block List or on the **Submission** page.
+    - You can proactively create an allow entry for a spoofed sender on the **Spoofed sender** tab in the Tenant Allow/Block List before [spoof intelligence](learn-about-spoof-intelligence.md) identifies and blocks the message as spoofing.
+    - If spoof intelligence has already blocked the message as spoofing, use the **Submission** page to report the **email** to Microsoft as **Should not have been blocked (False positive)**.
 
-- The maximum number of characters for each entry is:
-  - File hashes = 64
-  - URL = 250
+  The following list describes what happens in the Tenant Allow/Block List when you report something to Microsoft on the **Submission** page:
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+  - **Email attachments and URLs**: An allow entry is created and it appears on the **Files** or **URLs** tab in the Tenant Allow/Block List.
 
-- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire (for block type of entries).
+  - **Email**: An allow entry is created for the sender *only if* the message has been blocked by the Microsoft 365 filtering stack:
+    - If the message was blocked by spoof intelligence, an allow entry for the sender is created and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
+    - If the message was blocked for other reasons, an allow entry for the is created and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
+    - If the message was not blocked, and allow entry for the sender is not created, so it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+The Tenant Allow/Block list is available in the the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - To add and remove values from the Tenant Allow/Block List, you need to be a member of
-    - **Organization Management** or **Security Administrator** role group (**Security admin role**)
-    - **Security Operator** role group (**Tenant AllowBlockList Manager**).
-  - For read-only access to the Tenant Allow/Block List, you need to be a member of
-    - **Global Reader**  role group
-    - **Security Reader** role group
-    - **View-Only configuration** role group
+## Create and manage entries that appear in the Tenant Allow/Block List
 
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+For domains and email addresses or spoofed senders, see [Allow or block emails using the Tenant Allow/Block List](allow-block-email-spoof.md).
 
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+For files, see [Allow or block files using the Tenant Allow/Block List](allow-block-files.md).
 
-## Configure the Tenant Allow/Block List
+For URLs, see [Allow or block URLs using the Tenant Allow/Block List](allow-block-urls.md).
 
-To allow or block domains or email addresses, see [Allow or block emails using the Tenant Allow/Block List](allow-block-email-spoof.md).
-
-To allow or block files, see [Allow or block files using the Tenant Allow/Block List](allow-block-files.md).
-
-To allow or block URLs, see [Allow or block URLs using the Tenant Allow/Block List](allow-block-urls.md).
-
-These articles contain the instructions to add or remove or modify entries in Tenant Allow/Block List using both Microsoft 365 Defender Portal and Exchange Online PowerShell or standalone EOP PowerShell.
+These articles contain procedures in Tenant Allow/Block List in the Microsoft 365 Defender Portal and in PowerShell.
 
 ## What to expect after you add an allow or block entry
 
 After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
-
-## View entries in the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. Select the tab you want. The columns that are available depend on the tab you selected:
-
-   - **Domains & addresses**:
-     - **Value**: The domain or email address.
-     - **Action**: The value **Allow** or **Block**.
-     - **Modified by**
-     - **Last updated**
-     - **Remove on**
-     - **Notes**
-   - **Spoofed senders**
-     - **Spoofed user**
-     - **Sending infrastructure**
-     - **Spoof type**: The value **Internal** or **External**.
-     - **Action**: The value **Block** or **Allow**.
-   - **URLs**:
-     - **Value**: The URL.
-     - **Action**: The value **Allow** or **Block**.
-     - **Modified by**
-     - **Last updated**
-     - **Remove on**
-     - **Notes**
-   - **Files**
-     - **Value**: The file hash.
-     - **Action**: The value **Allow** or **Block**.
-     - **Modified by**
-     - **Last updated**
-     - **Remove on**
-     - **Notes**
-
-   You can click on a column heading to sort in ascending or descending order.
-
-   You can click **Group** to group the results. The values that are available depend on the tab you selected:
-
-   - **Domains & addresses**: You can group the results by **Action**.
-   - **Spoofed sender**: You can group the results by **Action** or **Spoof type**.
-   - **URLs**: You can group the results by **Action**.
-   - **Files**: You can group the results by **Action**.
-
-   Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon.](../../media/m365-cc-sc-close-icon.png) **Clear search**.
-
-   Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
-
-   - **Domains & addresses**
-     - **Action**
-     - **Never expire**
-     - **Last updated date**
-     - **Remove on**
-   - **Spoofed senders**
-     - **Action**
-     - **Spoof type**
-   - **URLs**
-     - **Action**
-     - **Never expire**
-     - **Last updated date**
-     - **Remove on**
-   - **Files**
-     - **Action**
-     - **Never expire**
-     - **Last updated**
-     - **Remove on**
-
-   When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
-
-## Modify entries in the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. Select the tab that contains the type of entry that you want to modify:
-   - **Domains or email addresses**
-   - **Spoofed senders**
-   - **URLs**
-   - **Files**
-
-3. Select the entry that you want to modify, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The values that you are able to modify in the flyout that appears depend on the tab you selected in the previous step:
-   - **Domains & addresses**
-     - **Never expire** and/or expiration date.
-     - **Optional note**
-   - **Spoofed senders**
-     - **Action**: You can change the value to **Allow** or **Block**.
-   - **URLs**
-     - **Never expire** and/or expiration date.
-     - **Optional note**
-   - **Files**
-     - **Never expire** and/or expiration date.
-     - **Optional note**
-
-    Note that the values for domains or email addresses, URLs, and files never expire for blocked entries only. 
-
-4. When you're finished, click **Save**.
-
-> [!NOTE]
-> You can only extend allows for a maximum of 30 days after the creation date. Blocks can be extended for up to 90 days, but unlike allows, they can also be set to Never expire.
-
-## Remove entries from the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. Select the tab that contains the type of entry that you want to remove:
-   - **Domains & addresses**
-   - **Spoofed senders**
-   - **URLs**
-   - **Files**
-
-3. Select the entry that you want to remove, and then click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
-
-4. In the warning dialog that appears, click **Delete**.
 
 ## Related articles
 

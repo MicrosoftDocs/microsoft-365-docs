@@ -270,7 +270,7 @@ For more information about the order of precedence and how multiple policies are
 ## "Block the following URLs" list for Safe Links
 
 > [!NOTE]
-> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
+> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
 
 The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
 
@@ -308,7 +308,7 @@ Examples of the values that you can enter and their results are described in the
 ## "Do not rewrite the following URLs" lists in Safe Links policies
 
 > [!NOTE]
-> Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-url-entries-on-the-submissions-page) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
+> Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](aallow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
 
 Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that are not rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 
