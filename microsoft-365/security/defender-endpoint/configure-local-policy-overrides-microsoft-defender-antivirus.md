@@ -1,6 +1,6 @@
 ---
 title: Configure local overrides for Microsoft Defender Antivirus settings
-description: Enable or disable users from locally changing settings in Microsoft Defender AV.
+description: Enable or disable users from locally changing settings in Microsoft Defender Antivirus.
 keywords: local override, local policy, group policy, gpo, lockdown,merge, lists
 ms.prod: m365-security
 ms.technology: mde
