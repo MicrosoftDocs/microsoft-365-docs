@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus in the Windows Security app
 description: With Microsoft Defender Antivirus now included in the Windows Security app, you can review, compare, and perform common tasks.
-keywords: wdav, antivirus, firewall, security, windows
+keywords: wdav, antivirus, firewall, security, windows, microsoft defender antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage

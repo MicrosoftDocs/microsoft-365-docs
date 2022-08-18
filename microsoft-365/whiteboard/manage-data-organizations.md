@@ -17,9 +17,9 @@ description: Learn about data retention for Microsoft Whiteboard in Azure and On
 
 # Manage data for Microsoft Whiteboard
 
-In order to manage data, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
-
 Whiteboard content is stored in both Azure and OneDrive for Business. New whiteboards will be stored in OneDrive for Business; the only exception is whiteboards started from a Surface Hub will be stored in Azure (which will be moved to OneDrive for Business in the future). For more information, see [Manage sharing in Whiteboard](manage-sharing-organizations.md).
+
+In order to manage data, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
 
 ## Azure storage overview
 

@@ -23,14 +23,6 @@ description: "Malta identity card number sensitive information type entity defin
 
 # Malta identity card number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 seven digits followed by one letter

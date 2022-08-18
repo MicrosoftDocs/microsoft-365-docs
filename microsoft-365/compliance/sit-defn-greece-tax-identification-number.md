@@ -23,14 +23,6 @@ description: "Greece tax identification number sensitive information type entity
 
 # Greece tax identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 Nine digits without spaces and delimiters

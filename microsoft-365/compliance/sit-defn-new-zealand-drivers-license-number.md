@@ -23,14 +23,6 @@ description: "New Zealand driver's license number sensitive information type ent
 
 # New Zealand drivers license number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 eight character alphanumeric pattern
