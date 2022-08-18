@@ -74,7 +74,7 @@ Copy the unified solution package, onboarding script and migration script to the
       Click **Next** and make sure to add your own Workspace ID in this section.
 9. Click **Next** and click add a clause.
 10. The detection method will be based on the registry key shown below.
-      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense\ImagePath`
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense`
 
       Check the option: **This registry setting must exit on the target system to indicate presence of this application.**
 
