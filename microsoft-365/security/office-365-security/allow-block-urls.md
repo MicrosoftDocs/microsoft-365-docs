@@ -105,7 +105,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-## Use the Microsoft 365 Defender portal to create allow entries for URLs on the Submissions page
+## Use the Microsoft 365 Defender portal to create allow entries for URLs in the Submissions portal
 
 You can't create URL allow entries directly in the Tenant Allow/Block List. Instead, you use the **Submissions** page (also known as the *Submissions portal* or *admin submissions*) to report the message as a false positive. For more information about admin submissions, see [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md).
 
