@@ -282,6 +282,8 @@
 ##### [Protect your network](network-protection.md)
 ##### [Evaluate network protection](evaluate-network-protection.md)
 ##### [Turn on network protection](enable-network-protection.md)
+##### [Network protection for Linux](network-protection-linux.md)
+##### [Network protection for MacOS](network-protection-macos.md)
 #### [Web protection]()
 ##### [Web protection overview](web-protection-overview.md)
 ##### [Web threat protection]()
