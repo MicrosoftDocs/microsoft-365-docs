@@ -321,7 +321,7 @@ The instructions are nearly identical to the steps in [Use the Microsoft 365 Def
 The only differences are:
 
 - The **Remove allow entry after** setting in Step 4 is meaningless, because entries for spoofed senders never expire.
-- The **Remove allow entry after** setting doesn't apply to allow entries for spoofed senders.
+- The **Allow entry note** setting in Step 4 doesn't apply to entries for spoofed senders.
 
 ### Use PowerShell to create allow entries for spoofed senders
 
