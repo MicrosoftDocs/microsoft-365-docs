@@ -72,6 +72,7 @@ The following table compares security capabilities that are included in Microsof
 
 | Capability | Microsoft 365<br/>Business Basic | Microsoft 365<br/>Business Standard | Microsoft 365<br/>Business Premium |
 |:---|:--:|:--:|:--:|
+| Web and mobile versions of Word, Excel, and PowerPoint | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | Antispam, antiphishing, and antimalware for email <br/>([Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md)) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | Mobile device management and mobile application management <br/>([Microsoft Intune](/mem/intune/fundamentals/what-is-intune)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
