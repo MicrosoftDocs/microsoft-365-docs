@@ -145,7 +145,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
- > To report a URL as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create URL allow entries on the Submissions page](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page).
+ > To report a URL as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for URLs on the Submissions page](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page).
 
 ## View email admin submissions to Microsoft
 

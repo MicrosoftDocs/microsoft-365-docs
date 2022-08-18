@@ -282,7 +282,7 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 You have the following options to create allow entries for spoofed senders:
 
-- [The **Tenant Allow/Block List** in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+- [The **Tenant Allow/Block List** in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 - [The **Submissions** page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-on-the-submissions-page)
 - [PowerShell](#use-powershell-to-create-allow-entries-for-spoofed-senders)
 
