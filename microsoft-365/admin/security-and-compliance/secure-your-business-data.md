@@ -81,7 +81,7 @@ The following table compares security capabilities that are included in Microsof
 
 (<a id="fn2">2</a>) Microsoft Publisher and Microsoft Access are for Windows computers only.
 
-(<a id="fn3">3</a>) [Defender for Business](/microsoft-365/security/defender-business/mdb-overview) can be added onto Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
+(<a id="fn3">3</a>) Defender for Business (standalone) can be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
 
 All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
