@@ -84,8 +84,8 @@ Defender for Endpoint customers can also set up the Enterprise IoT network senso
 
 To add a network sensor, in the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal:
 
-1. Select **Settings** \> **Device discovery** \> **Enterprise IoT**.
-2. Under **Set up network sensors** choose the **Microsoft Defender for IoT** link.
+1. Select **Settings** \> **Device discovery** \> **Enterprise IoT**
+2. Under **Set up network sensors** choose the **Microsoft Defender for IoT** link
 
 This brings you to the sensor setup process in the Azure portal. For more information, see [Get started with Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
