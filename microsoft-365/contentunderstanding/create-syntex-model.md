@@ -60,7 +60,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - **Description** – Enter information about how this model will be used.
 
-    ![Screenshot of the Create a model to classify and extract by text pattern page.](../media/content-understanding/create-a-model-to-classify-and-extract-by-text-pattern-panel.png) 
+        ![Screenshot of the Create a model to classify and extract by text pattern page.](../media/content-understanding/create-a-model-to-classify-and-extract-by-text-pattern-panel.png) 
     
 3. Under **Advanced settings**:
 
