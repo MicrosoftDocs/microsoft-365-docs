@@ -59,6 +59,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 - [Device health status](investigate-machines.md#device-health-status)<br>The Device health status card shows a summarized health report for the specific device.
 
+- [Device health reporting (Preview)](/microsoft-365/security/defender-endpoint/machine-reports)<br> The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
+
 
 ## July 2022
 - - [Add domain controller devices - Evaluation lab enhancement](evaluation-lab.md#add-a-domain-controller)<br>Now generally available - Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.

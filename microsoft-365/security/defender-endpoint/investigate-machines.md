@@ -211,9 +211,9 @@ The **Device health status** card shows a summarized health report for the speci
 Other information in the card include: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode. 
 
 >[!NOTE]
->The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for on Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms. 
+>The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms. 
 
-To gain a in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
+To gain an in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
 
 :::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
 
