@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 
-description: "Get a periodic report about how people in your organization use  Microsoft 365 services and drill into each chart for more insights."
+description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
 
 # Microsoft 365 Experience insights dashboard
