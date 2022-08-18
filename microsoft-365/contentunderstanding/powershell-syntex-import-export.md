@@ -1,5 +1,5 @@
 ---
-title: Export and import document understanding models with PowerShell
+title: Export and import Classify and extract by text pattern models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -26,7 +26,7 @@ SharePoint Syntex models can be exported as PnP templates, enabling reuse across
 
 ## Export all models in a content center
 
-To export all models in a content center into a single PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
+To export all **Classify and extract by text pattern** models in a content center into a single PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -36,7 +36,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## Export specific models
 
-To export specific models from a content center into a PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
+To export specific **Classify and extract by text pattern** models from a content center into a PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
