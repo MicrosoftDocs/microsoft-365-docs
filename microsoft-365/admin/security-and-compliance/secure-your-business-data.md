@@ -64,9 +64,8 @@ The following table describes the top 10 days to secure your business data with 
 
 (<a id="fn1">1</a>) [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices.
 
-## Comparing security features in Microsoft 365 for business plans
+## Comparing features in Microsoft 365 for business plans
 
-All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
 
 The following table compares security capabilities that are included in Microsoft 365 for business plans. 
 
@@ -77,8 +76,18 @@ The following table compares security capabilities that are included in Microsof
 | Publisher and Access (for Windows computers) |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | Secure collaboration and communication <br/>(Microsoft Teams, Microsoft Exchange, OneDrive, and SharePoint) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | Antispam, antiphishing, and antimalware for email <br/>([Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md)) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| Advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| Advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections <br/>([Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | Mobile device management and mobile application management <br/>([Microsoft Intune](/mem/intune/fundamentals/what-is-intune)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| Advanced device security with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>([Defender for Business](../../security/defender-business/mdb-overview.md)) | See note <sup>[[2](#fn2)]</sup>  | See note <sup>[[2](#fn2)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+
+(<a id="fn2">2</a>) [Defender for Business](/microsoft-365/security/defender-business/mdb-overview) can be added onto Microsoft 365 Business Basic or Standard.
+
+
+All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
+
+
+> [!TIP]
+> For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
 
 
 | Subscription | What's included |
@@ -87,8 +96,6 @@ The following table compares security capabilities that are included in Microsof
 | [Microsoft 365 Business Standard](../setup/setup-business-standard.md) | - Web, desktop, and mobile versions of Word, Excel, and PowerPoint <br/>- Publisher and Access (for Windows computers) <br/>- Outlook <br/>- Microsoft Teams<br/>- Exchange <br/>- OneDrive<br/>- SharePoint<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (anti-spam, anti-malware, and anti-phishing)<br>- The ability to add on [Defender for Business](../../security/defender-business/mdb-overview.md) |
 | [Microsoft 365 Business Premium](../../business-premium/index.md) | - Web, desktop, and mobile versions of Word, Excel, and PowerPoint <br/>- Publisher and Access (for Windows computers) <br/>- Outlook <br/>- Microsoft Teams<br/>- Exchange <br/>- OneDrive<br/>- SharePoint <br/>- [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) <br/>- [Azure Information Protection](/azure/information-protection/what-is-information-protection)<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (includes anti-spam, anti-malware, and anti-phishing) <br/>- [Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md) (advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections)<br>- [Defender for Business](../../security/defender-business/mdb-overview.md) (advanced device security with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more)  |
 
-> [!TIP]
-> For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
 
 ## See also
 
