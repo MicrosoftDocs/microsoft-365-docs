@@ -41,15 +41,13 @@ By default, there's nothing to configure for cross-tenant authentication to work
 
 For example, another organization might have settings configured that prevent their users from opening content encrypted by your organization. In this scenario, until their Azure AD admin reconfigures their cross-tenant settings, an external user attempting to open that content will see a message that informs them **Access is blocked by your organization** with a reference to **Your tenant administrator**.
 
-Example message for a user in the Fabrikam, Inc organization, when their local Azure AD blocks access:
+Example message for the signed in user from the Fabrikam, Inc organization, when their local Azure AD blocks access:
 
 ![Example message when the local Azure AD tenant blocks access to encrypted content.](../media/blocked-by-your-org.png)
 
 Your users will see a similar message when it's your Azure AD configuration that blocks access.
 
-From the perspective of the signed in user, if it's another Azure AD organization that's responsible for blocking access, the message changes to **Access is blocked by the organization** and displays the domain name of that other organization.
-
-Example message for a user in the Northwind Traders organization, when an another organization (in this case, Fabrikam, Inc) blocks access:
+From the perspective of the signed in user, if it's another Azure AD organization that's responsible for blocking access, the message changes to **Access is blocked by the organization** and displays the domain name of that other organization in the body of the message. For example:
 
 ![Example message when another Azure AD tenant blocks access to encrypted content.](../media/blocked-by-external-org.png)
 
