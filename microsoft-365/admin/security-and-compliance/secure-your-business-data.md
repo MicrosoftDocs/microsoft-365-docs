@@ -67,7 +67,7 @@ The following table describes the top 10 days to secure your business data with 
 ## Comparing features in Microsoft 365 for business plans
 
 
-The following table compares security capabilities that are included in Microsoft 365 for business plans. 
+The following table compares capabilities that are included in Microsoft 365 for business plans. 
 
 | Capability | Microsoft 365<br/>Business Basic | Microsoft 365<br/>Business Standard | Microsoft 365<br/>Business Premium |
 |:---|:--:|:--:|:--:|
@@ -85,18 +85,9 @@ The following table compares security capabilities that are included in Microsof
 (<a id="fn3">3</a>) Defender for Business (standalone) can be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
 
-All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
-
-
 > [!TIP]
+> All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers.
 > For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
-
-
-| Subscription | What's included |
-|:---|:---|
-| [Microsoft 365 Business Basic](../setup/setup-business-basic.md) | - Web and mobile versions of Word, Excel, and PowerPoint <br/>- Outlook <br/>- Microsoft Teams<br/>- Microsoft Exchange <br/>- OneDrive<br/>- SharePoint<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (anti-spam, anti-malware, and anti-phishing)<br>- The ability to add on [Defender for Business](../../security/defender-business/mdb-overview.md) |
-| [Microsoft 365 Business Standard](../setup/setup-business-standard.md) | - Web, desktop, and mobile versions of Word, Excel, and PowerPoint <br/>- Publisher and Access (for Windows computers) <br/>- Outlook <br/>- Microsoft Teams<br/>- Exchange <br/>- OneDrive<br/>- SharePoint<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (anti-spam, anti-malware, and anti-phishing)<br>- The ability to add on [Defender for Business](../../security/defender-business/mdb-overview.md) |
-| [Microsoft 365 Business Premium](../../business-premium/index.md) | - Web, desktop, and mobile versions of Word, Excel, and PowerPoint <br/>- Publisher and Access (for Windows computers) <br/>- Outlook <br/>- Microsoft Teams<br/>- Exchange <br/>- OneDrive<br/>- SharePoint <br/>- [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) <br/>- [Azure Information Protection](/azure/information-protection/what-is-information-protection)<br/>- [Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) (includes anti-spam, anti-malware, and anti-phishing) <br/>- [Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md) (advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections)<br>- [Defender for Business](../../security/defender-business/mdb-overview.md) (advanced device security with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more)  |
 
 
 ## See also
