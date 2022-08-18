@@ -70,7 +70,7 @@ All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft T
 
 The following table compares capabilities that are included in Microsoft 365 for business plans. 
 
-| Capability | Microsoft 365<br/>Business Basic | Microsoft 365<br/>Business Standard | Microsoft 365<br/>Business Premium |
+| Capability | [Microsoft 365 Business Basic](../setup/setup-business-basic.md) | [Microsoft 365 Business Standard](../setup/setup-business-standard.md) | [Microsoft 365 Business Premium](../../business-premium/index.md) |
 |:---|:--:|:--:|:--:|
 | **Outlook and Web/mobile versions of Office apps** <br/>(Word, Excel, and PowerPoint) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Desktop versions of Office apps**<br/>(Word, Excel, PowerPoint, Publisher, and Access) <sup>[[2](#fn2)]</sup> |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
