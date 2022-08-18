@@ -12,10 +12,12 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn about how to export and import document understanding models with PowerShell in SharePoint Syntex."
+description: Learn about how to export and import models with PowerShell in SharePoint Syntex.
 ---
 
-# Export and import document understanding models with PowerShell
+# Export and import Classify and extract by text pattern models with PowerShell
+
+<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
 
 > [!IMPORTANT]
 > The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
@@ -89,7 +91,8 @@ If you do not include the property "includeTrainingData", the default behavior i
 > Training data is required for a model to be editable when imported to a destination content center.
 
 ## Import models to a content center
-Document understanding models that have been exported to PnP templates can be imported to a content center on any tenant. If the export included training data, then the model will be editable once imported.
+
+**Classify and extract by text pattern** models that have been exported to PnP templates can be imported to a content center on any tenant. If the export included training data, then the model will be editable once imported.
 
 To import a model, use the following commands:
 
