@@ -43,6 +43,14 @@ For example, another organization might have settings configured that prevent th
 
 Your users will see a similar message but with your own organization name when it's your Azure AD configuration that blocks access. From the perspective of the signed in user, if it's another Azure AD organization that's responsible for blocking access, the message changes to **Access is blocked by the organization** and the domain name of that other organization.
 
+Example message for a user in the Fabrikam organization, when their local Azure AD blocks access:
+
+![Example message when the local Azure AD tenant blocks access to encrypted content.](../media/blocked-by-your-org.png)
+
+Example message for a user in the Northwind Traders organization, when an another organization (in this case, Fabrikam, Inc) blocks access: 
+
+![Example message when another Azure AD tenant blocks access to encrypted content.](../media/blocked-by-external-org.png)
+
 Whenever cross-tenant access settings restrict access by applications, they must be configured to allow access to **Microsoft Azure Information Protection**, which has the following an app ID:
 
 ````plaintext
