@@ -38,7 +38,7 @@ ms.collection:
 > To help ensure that tamper protection doesn't interfere with non-Microsoft security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
 > After you've made this update, tamper protection continues to protect your registry settings, and logs attempts to modify them without returning errors.
 
-If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to manage tamper protection. You must have appropriate admin permissions on your device to do change security settings, such as tamper protection.
+If you're a home user, or you aren't subject to settings managed by a security team, you can use the Windows Security app to manage 'tamper protection'. You must have appropriate admin permissions on your device to do change security settings, such as tamper protection.
 
 Here's what you see in the Windows Security app:
 
@@ -52,9 +52,9 @@ Here's what you see in the Windows Security app:
 
 ## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
-If you are using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
+If you're using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
 
-On Windows Server 2016, the Settings app will not accurately reflect the status of real-time protection when tamper protection is enabled.
+On Windows Server 2016, the Settings app won't accurately reflect the status of real-time protection when tamper protection is enabled.
 
 ### Use PowerShell to determine whether tamper protection and real-time protection are turned on
 
