@@ -80,7 +80,7 @@ The following table compares capabilities that are included in Microsoft 365 for
 | **Information protection** capabilities to discover, classify, protect, and govern sensitive information <br/>([Azure Information Protection](/azure/information-protection/what-is-information-protection))  | | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>([Defender for Business](../../security/defender-business/mdb-overview.md)) | See note <sup>[[3](#fn3)]</sup>  | See note <sup>[[3](#fn3)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
-(<a id="fn2">2</a>) Microsoft Publisher and Microsoft Access are for Windows computers only.
+(<a id="fn2">2</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops.
 
 (<a id="fn3">3</a>) Defender for Business (standalone) can be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
