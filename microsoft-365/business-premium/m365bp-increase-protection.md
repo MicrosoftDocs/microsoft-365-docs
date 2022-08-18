@@ -185,7 +185,7 @@ You can help people in your organization share their calendars appropriately for
 
 1. Go [Org settings in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2053743) and sign in.
 
-2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. We recommend clearing the **External sharing** option. If you choose the share with anyone option, you can decide to also only share free/busy information.
+2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. We recommend clearing the **External sharing** option. If you choose to share calendars with anyone option, you can choose to also share free/busy information only.
 
 3. Choose **Save changes** on the bottom of the page.
 
