@@ -42,11 +42,11 @@ Follow these steps to create a model in SharePoint Syntex.
 
     ![Screenshot of the Build a custom model section on the View options for classification and extraction page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-    - [**Classify and extract by text pattern**](#classify-and-extract-by-text-pattern) – Best for Office files and automatic classification of files
+    - [**Classify and extract by text pattern**](#classify-and-extract-by-text-pattern)
 
-    - [**Extract by layout**](#extract-by-layout) – Best for non-English languages and files with tables
+    - [**Extract by layout**](#extract-by-layout)
 
-    - [**Extract by text pattern and layout**](#extract-by-text-pattern-and-layout) – Best for a mix of both text and layout needs
+    - [**Extract by text pattern and layout**](#extract-by-text-pattern-and-layout)
 
 2. When you select a custom model, on the next page you will find more information about the model. If you want to continue to create the model, select **Next**.
 
@@ -59,6 +59,8 @@ Follow these steps to create a model in SharePoint Syntex.
     - **Model name** – Enter the name of the model, for example *Service agreements*.
 
     - **Description** – Enter information about how this model will be used.
+
+    ![Screenshot of the Create a model to classify and extract by text pattern page.](../media/content-understanding/create-a-model-to-classify-and-extract-by-text-pattern-panel.png) 
     
 3. Under **Advanced settings**:
 
@@ -134,9 +136,9 @@ Follow these steps to create a model in SharePoint Syntex.
 
     ![Screenshot of the Use a trained model section on the View options for classification and extraction page.](../media/content-understanding/use-a-trained-model-section.png) 
 
-    - [**Receipts**](#receipts) – Save time processing receipts for expenses. Automatically extract key info specific to expenses.
+    - [**Receipts**](#receipts)
 
-    - [**Invoices**](#invoices) – Save time processing invoices. Automatically extract key info specific to invoices.
+    - [**Invoices**](#invoices)
 
 2. When you select a trained model, on the next page you will find more information about the model. If you want to continue to create the model, select **Next**.
 
