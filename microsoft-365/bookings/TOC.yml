@@ -47,6 +47,8 @@
     href: turn-bookings-on-or-off.md
   - name: Reporting information for Microsoft Bookings
     href: reporting-info.md
+  - name: Use Power Automate connectors
+    href: power-automate-integration.md
   - name: Microsoft Bookings frequently asked questions (FAQ)
     href: bookings-faq.yml
   - name: Bookings with me

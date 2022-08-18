@@ -37,7 +37,7 @@ You can create indicators for certificates. Some common use cases include:
 
 It's important to understand the following requirements prior to creating indicators for certificates:
 
-- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - The Antimalware client version must be  4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
     

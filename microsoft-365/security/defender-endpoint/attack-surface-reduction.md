@@ -49,7 +49,7 @@ For more information about configuring attack surface reduction rules, see [Enab
 
 ## Assess rule impact before deployment
 
-You can assess how an attack surface reduction rule might affect your network by opening the security recommendation for that rule in [threat and vulnerability management](/windows/security/threat-protection/#tvm).
+You can assess how an attack surface reduction rule might affect your network by opening the security recommendation for that rule in [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="The ASR recommendation" lightbox="images/asrrecommendation.png":::
 

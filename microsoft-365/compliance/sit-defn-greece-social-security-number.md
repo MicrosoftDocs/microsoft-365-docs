@@ -23,14 +23,6 @@ description: "Greece Social Security Number (AMKA) sensitive information type en
 
 # Greece Social Security Number (AMKA)
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 11 digits without spaces and delimiters
