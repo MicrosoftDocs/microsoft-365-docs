@@ -61,7 +61,7 @@ To modify settings for your Defender for Endpoint integration, the user must hav
 3. Accept the **terms and conditions** and select **Save**.
 
 > [!NOTE]
-> Setting up an Enterprise IoT Network sensor is currently in PREVIEW. See the Supplemental Terms of Use for Microsoft Azure Previews for additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+> Setting up an Enterprise IoT network sensor is currently in public preview. For more information, see [Shared device inventory](#shared-device-inventory).
 
 ## Managing your IoT devices
 
@@ -88,6 +88,9 @@ To add a network sensor, in the navigation pane of the [https://security.microso
 2. Under **Set up network sensors** choose the **Microsoft Defender for IoT** link.
 
 This brings you to the sensor setup process in the Azure portal. For more information, see [Get started with Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
+
+> [!IMPORTANT]
+> Setting up an Enterprise IoT Network sensor is currently in PREVIEW. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 ## Cancel your Defender for IoT plan
 
