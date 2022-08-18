@@ -87,6 +87,8 @@ Follow these steps to create a model in SharePoint Syntex.
     - **Model name** – Enter the name of the model, for example *Service agreements*.
 
     - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Extract by layout page.](../media/content-understanding/create-a-model-panel.png) 
     
 3. Under **Advanced settings**:
 
@@ -106,13 +108,15 @@ Follow these steps to create a model in SharePoint Syntex.
 
 ### Extract by text pattern and layout
 
-1. On the right panel of the **Extract by text pattern and layout** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
+1. On the **Extract by text pattern and layout** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
 
-2. On the **Create model to extract by text pattern and layout** page, enter the following information.
+2. On the right panel of the **Create model to extract by text pattern and layout** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Service agreements*.
 
     - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Extract by text pattern and layout page.](../media/content-understanding/create-a-model-panel.png) 
     
 3. Under **Advanced settings**:
 
@@ -144,13 +148,15 @@ Follow these steps to create a model in SharePoint Syntex.
 
 ### Receipts
 
-1. On the right panel of the **Receipts** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+1. On the **Receipts** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
 
-2. On the **Create a model to process receipts** page, enter the following information.
+2. On the right panel of the **Create a model to process receipts** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Office expenses*.
 
     - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Create a model to process receipts page.](../media/content-understanding/create-a-model-panel.png) 
     
 3. Under **Advanced settings**:
 
@@ -168,13 +174,15 @@ Follow these steps to create a model in SharePoint Syntex.
 
 ### Invoices
 
-1. On the right panel of the **Invoices** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+1. On the **Invoices** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
 
-2. On the **Create a model to process invoices** page, enter the following information.
+2. On the right panel of the **Create a model to process invoices** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Office expenses*.
 
     - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Create a model to process invoices page.](../media/content-understanding/create-a-model-panel.png) 
     
 3. Under **Advanced settings**:
 
