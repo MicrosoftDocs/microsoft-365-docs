@@ -79,7 +79,7 @@ The following table compares capabilities that are included in Microsoft 365 for
 | **Advanced protection for email and documents** inlcudes advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>([Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 | **Mobile device management** and mobile app management <br/>([Microsoft Intune](/mem/intune/fundamentals/what-is-intune)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Information protection** capabilities to discover, classify, protect, and govern sensitive information <br/>([Azure Information Protection](/azure/information-protection/what-is-information-protection))  | | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>([Defender for Business](../../security/defender-business/mdb-overview.md)) | See note <sup>[[3](#fn3)]</sup>  | See note <sup>[[3](#fn3)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>([Microsoft Defender for Business](../../security/defender-business/mdb-overview.md)) | See note <sup>[[3](#fn3)]</sup>  | See note <sup>[[3](#fn3)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
 (<a id="fn2">2</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops.
 
