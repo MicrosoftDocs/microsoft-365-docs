@@ -22,6 +22,8 @@ appliesto:
 
 ## Overview
 
+[!INCLUDE [preview-feature](includes/preview-feature.md)]
+
 [!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
 ## Integrate Shifts with UKG Dimensions
