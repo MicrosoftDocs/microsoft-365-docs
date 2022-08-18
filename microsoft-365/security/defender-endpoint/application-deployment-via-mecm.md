@@ -44,7 +44,7 @@ Copy the unified solution package, onboarding script and migration script to the
 1. Download Onboarding Script and the unified solution from [Microsoft 365 Defender settings page](https://sip.security.microsoft.com/preferences2/onboarding).
    :::image type="content" source="images/onboarding-script.png" alt-text="Screenshot of onboarding script and unified solution download" lightbox="images/onboarding-script.png":::
    > [!Note]
-   > You must select the Group Policy from the Deployment Method dropdown to obtain the .cmd file.
+   > You must select the Group Policy from the Deployment method dropdown to obtain the .cmd file.
 2. Download the migration script from the document: [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Save all three files in a shared folder used by MECM as a Software Source.
 
