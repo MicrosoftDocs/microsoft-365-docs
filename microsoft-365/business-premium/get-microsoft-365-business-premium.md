@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/20/2022
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -30,7 +31,7 @@ description: "Get Microsoft 365 Business Premium so you can protect your company
 When you're ready to sign up for Microsoft 365 Business Premium, you have several options. You can:
 
 - [Try or buy Microsoft 365 Business Premium on your own](#sign-up-for-microsoft-365-business-premium-on-your-own)
-- [Work with a solution provider](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
+- [Work with a Microsoft partner](#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium)
 
 > [!TIP]
 > If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
@@ -43,17 +44,22 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 
 3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](m365bp-setup.md).
 
-## Work with a Microsoft Solution Provider to get Microsoft 365 Business Premium
+## Work with a Microsoft partner to get Microsoft 365 Business Premium
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. If you're not already working with a solution provider, you can find one by following these steps: 
 
-1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
- 
-2. In the search box, fill in your location and company size. 
+1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir).
 
-3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
+2. In the **Filters** pane, specify search criteria, such as:
 
-4. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
+   - Your location
+   - Your organization's size
+   - **Focus areas**, such as **Security** and/or **Threat Protection** 
+   - **Services**, such as **Licensing** or **Managed Services (MSP)**
+
+   As soon as you select one or more criteria, the list of partners updates.
+
+3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 ## Next steps
 

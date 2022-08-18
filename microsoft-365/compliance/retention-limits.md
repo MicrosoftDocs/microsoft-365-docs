@@ -1,5 +1,5 @@
 ---
-title: "Limits for retention policies and retention label policies"
+title: "Limits for Microsoft 365 retention policies and retention label policies"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 hideEdit: true
-description: "Understand the maximum number of policies and items per policy for retention policies and retention label policies"
+description: "Understand the maximum number of policies and items per policy for Microsoft 365 retention policies and retention label policies"
 ---
 
 # Limits for retention policies and retention label policies

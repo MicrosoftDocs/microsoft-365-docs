@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 04/01/2022
+ms.date: 08/12/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -161,7 +161,23 @@ Users will see enriched detonation details for known malicious attachments or UR
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
+## Actions into Email entity Page
 
+Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be trigged from Email entity page.  
+
+You will be able to click on **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need. 
+![Take action from entity page.](../../media/Take-ActionWizard-Email-entity.png)
+
+In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You will be able to see and track these actions in the 
+ [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the 
+  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in [Tenant Allow/Block Lists](https://security.microsoft.com/tenantAllowBlockList) page for (TABL blocks). 
+
+We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the Tenant Allow and Block Lists (or TABL) block URL and block attachments can be tracked under TABL/URL and TABL/file pages. 
+![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
+
+See [permissions](permissions-microsoft-365-security-center.md) required to take these actions. 
+
+ 
 ### Email summary panel
 
 The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (e.g., detections), as well as context-specific information (e.g., for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.

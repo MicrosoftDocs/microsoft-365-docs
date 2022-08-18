@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
+- VSBFY23
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -26,7 +27,7 @@ ms.date: 05/04/2021
 # Renew Microsoft 365 for business
 
 > [!IMPORTANT]
-> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you're an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
 
 This article applies to most paid Microsoft 365 for business subscriptions.
   

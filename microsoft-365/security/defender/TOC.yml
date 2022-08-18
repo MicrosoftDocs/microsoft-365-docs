@@ -10,6 +10,8 @@
         href: microsoft-365-defender-portal.md
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
+      - name: Preview features in Microsoft 365 Defender
+        href: preview.md
       - name: Microsoft 365 Defender services
         items:
         - name: Defender for Endpoint in Microsoft 365 Defender
@@ -188,6 +190,10 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Suspicious inbox manipulation rules
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Suspicious password-spray-related IP address
+                      href: alert-grading-password-spray.md                      
+                    - name: Malicious exchange connectors
+                      href: alert-grading-for-malicious-exchange-connectors.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -347,7 +353,13 @@
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
-                href: defenderexpertsforhuntingprev.md
+                href: defender-experts-for-hunting.md
+              - name: Before you begin
+                href: before-you-begin-defender-experts.md
+              - name: Start using Defender Experts for Hunting
+                href: onboarding-defender-experts-for-hunting.md
+              - name: Understand Defender Experts for Hunting reports
+                href: defender-experts-report.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
@@ -382,6 +394,8 @@
               href: m365d-time-zone.md
             - name: View device profiles
               href: device-profile.md
+            - name: Troubleshoot Microsoft 365 Defender service issues
+              href: troubleshoot.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
@@ -471,6 +485,8 @@
               href: ../intelligence/macro-malware.md
             - name: Phishing
               href: ../intelligence/phishing.md
+            - name: Phishing trends and techniques
+              href: ../intelligence/phishing-trends.md
             - name: Ransomware
               href: /security/compass/human-operated-ransomware
             - name: Rootkits
@@ -481,6 +497,8 @@
               href: ../intelligence/support-scams.md
             - name: Trojans
               href: ../intelligence/trojans-malware.md
+            - name: Troubleshoot MSI portal errors caused by admin block
+              href: ../intelligence/portal-submission-troubleshooting.md
             - name: Unwanted software
               href: ../intelligence/unwanted-software.md
             - name: Worms

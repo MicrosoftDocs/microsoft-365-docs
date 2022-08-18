@@ -54,9 +54,9 @@ Every account that accesses and uses data classification must have a license ass
 
 An account must be explicitly assigned membership in any one of these role groups or explicitly granted the role.
 
-### Roles and Role Groups in preview
+### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine-tune your access controls.
+There are roles and role groups that you can use to fine-tune your access controls.
 
 Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
@@ -94,7 +94,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
-**Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive. Some examples are:
+**Sensitivity label activities** and **Retention labeling activities** from Office native applications, the Azure Information Protection (AIP) unified labeling client and scanner, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive. Some examples are:
 
 - Label applied
 - Label changed (upgraded, downgraded, or removed)
