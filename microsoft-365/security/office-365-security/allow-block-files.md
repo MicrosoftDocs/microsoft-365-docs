@@ -73,7 +73,7 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 You create block entries for files directly in the Tenant Allow/Block List.
 
 > [!NOTE]
-> Email messages that contain these blocked files are identified as *malware*.
+> Email messages that contain these blocked files are blocked as *malware*.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -114,7 +114,9 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to create allow entries for files on the Submissions page
 
-You can't create allow entries for files directly on the Tenant Allow/Block List page. Instead, you use the **Submissions** page. For more information about the **Submissions** page, see [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md).
+You can't create allow entries for files directly in the Tenant Allow/Block List. Instead, you use the **Submissions** page (also known as the *Submissions portal* or *admin submissions*) to report the message as a false positive. For more information about admin submissions, see [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md).
+
+Reporting the file as a false positive on the **Submissions** page adds an allow entry for the file in the Tenant Allow/Block List.
 
 > [!IMPORTANT]
 > Because Microsoft manages allow entries for you, unneeded allow entries for files will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a file is still considered bad.
@@ -281,7 +283,7 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 ## Related articles
 
-- [Admin submissions](admin-submission.md)
+- [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md)
 - [Report false positives and false negatives](report-false-positives-and-false-negatives.md)
 - [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md)
 - [Allow or block emails in the Tenant Allow/Block List](allow-block-email-spoof.md)

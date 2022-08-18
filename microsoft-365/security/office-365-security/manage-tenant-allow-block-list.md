@@ -35,16 +35,16 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 - **Block**: In the Tenant Allow/Block List, you can directly create block entries for the following types of items:
 
   - **Domains and email addresses**:
-    - Email messages from these blocked senders are identified as *high confidence spam* (SCL = 9) and are moved to the Junk Email folder by default.
+    - Email messages from these senders are blocked as *high confidence spam* (SCL = 9) and moved to the Junk Email folder.
     - Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 
   - **Spoofed senders**:
     - You can proactively create a block entry for a spoofed sender before [spoof intelligence](learn-about-spoof-intelligence.md) identifies and allows the message as spoofing.
     - If you manually override an existing allow verdict from spoof intelligence, the blocked spoofed sender becomes a manual block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 
-  - **Files**: Email messages that contain these blocked files are identified as *malware*.
+  - **Files**: Email messages that contain these blocked files are blocked as *malware*.
 
-  - **URLs**: Email messages that contain these blocked URLs are identified as *phishing* (not *high confidence phishing*).
+  - **URLs**: Email messages that contain these blocked URLs are blocked as *phishing*.
 
   By default, block entries for **domains and email addresses**, **files** and **URLs** will expire after 30 days, but you can set them to expire up 90 days or to never expire. Block entries for **spoofed senders** never expire.
 
@@ -60,8 +60,9 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
   - **Email attachments and URLs**: An allow entry is created and it appears on the **Files** or **URLs** tab in the Tenant Allow/Block List.
 
-  - **Email**: An allow entry is created for the sender *only if* the message has been blocked by the Microsoft 365 filtering stack:
+  - **Email**: If a message was blocked by the Microsoft 365 filtering stack, and allow entry might be created for the sender:
     - If the message was blocked by spoof intelligence, an allow entry for the sender is created and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
+    - If the message was blocked by by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the anti-phishing policy.
     - If the message was blocked for other reasons, an allow entry for the is created and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
     - If the message was not blocked, and allow entry for the sender is not created, so it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
@@ -82,9 +83,3 @@ These articles contain procedures in Tenant Allow/Block List in the Microsoft 36
 After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
-
-## Related articles
-
-- [Allow or block files in the Tenant Allow/Block List](allow-block-files.md)
-- [Allow or block emails in the Tenant Allow/Block List](allow-block-email-spoof.md)
-- [Allow or block URLs in the Tenant Allow/Block List](allow-block-urls.md)
