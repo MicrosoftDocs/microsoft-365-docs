@@ -59,7 +59,7 @@ The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterp
 
 For a pilot project, you can use the Frontline worker onboarding wizard to set up a single team, configured for your frontline workers. For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
 
-For full deployments, follow the guidance in [Deploy teams at scale for frontline workers](deploy-teams-at-scale.md).
+For full deployments, follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
 
 ## Step 4: Set up other services
 
