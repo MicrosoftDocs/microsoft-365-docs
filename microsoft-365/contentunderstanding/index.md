@@ -23,8 +23,8 @@ description: Learn how to find resources for Microsoft SharePoint Syntex.
 SharePoint Syntex is a Microsoft 365 service that provides an end-to-end intelligent document processing solution for your organization. With SharePoint Syntex, you can:
 
 - Use artificial intelligence (AI), machine learning, and advanced AI technologies to amplify human experiences.
-- Automate your document-based processes by using models to extract information from structured, semi-structured, and unstructured documents.
-- Use that information to facilitate knowledge discovery and sharing, provide business process automation, and to ensure content compliance.
+- Automate your document-based processes by using models to extract knowledge and information from structured, semi-structured, and unstructured documents.
+- Leverage that information to facilitate knowledge discovery and sharing, provide business process automation, and to ensure content compliance.
 
 The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
 
@@ -107,6 +107,8 @@ The resources in this section help you learn how to choose, create, and configur
 |Use a trained model to extract information from receipts |[Use the receipts model](./prebuilt-model-receipt.md)|
 
 ## PowerShell for SharePoint Syntex
+
+PowerShell lets you manage your SharePoint scenarios, such as exporting and importing models, and publishing models to document libaries. 
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
