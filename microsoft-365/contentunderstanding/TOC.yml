@@ -95,7 +95,7 @@
                   href: extract-by-text-pattern-and-layout-overview.md
                 - name: Train your model
                   items:
-                    - name: Train-the-model 
+                    - name: Train the model 
                       href: create-extract-by-text-pattern-and-layout-model.md
 
     - name: Trained models
