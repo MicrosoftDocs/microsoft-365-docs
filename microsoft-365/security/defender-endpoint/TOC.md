@@ -128,6 +128,7 @@
 ###### [Set preferences](linux-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
+###### [Schedule antivirus scan in Defender for Endpoint on Linux](schedule-antivirus-scan-in-mde.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 ##### [Troubleshoot]()
