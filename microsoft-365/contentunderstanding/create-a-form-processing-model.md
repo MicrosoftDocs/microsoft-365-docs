@@ -1,5 +1,5 @@
 ---
-title: Create a form processing model in Microsoft SharePoint Syntex
+title: Create an Extract by layout model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,16 +13,18 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to create a form processing model in SharePoint Syntex.
+description: Learn how to create an Extract by layout model in SharePoint Syntex.
 ---
 
-# Create a form processing model in Microsoft SharePoint Syntex
+# Create an Extract by layout model in Microsoft SharePoint Syntex
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
 
 </br>
+--->
 
 Using [AI Builder](/ai-builder/overview) - a feature in Microsoft Power Apps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
