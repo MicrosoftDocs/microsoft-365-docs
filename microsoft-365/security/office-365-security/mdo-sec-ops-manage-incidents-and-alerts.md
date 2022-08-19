@@ -116,7 +116,7 @@ Security teams can take wide variety of response actions on email using Defender
 
 - You can report false positive or false negative detections directly to Microsoft using [Threat Explorer](threat-explorer.md) or [admin submissions](admin-submission.md).
 
-- You can block undetected malicious files, URLs, or senders using the [Tenant Allow/Block List](tenant-allow-block-list.md).
+- You can block undetected malicious files, URLs, or senders using the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
 Defender for Office 365 actions are seamlessly integrated into hunting experiences and the history of actions are visible on the **History** tab in the unified **Action center** at <https://security.microsoft.com/action-center/history>.
 
