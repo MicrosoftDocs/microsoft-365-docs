@@ -19,24 +19,24 @@ description: In this article, learn how to manage folders and rules feature in M
 
 # Manage Folders and Rules feature in Microsoft 365 Groups
 
-Users can organize groups emails effectively by creating folders and setting rules inside groups mailbox. Once the folders are created in groups mailbox, users can move and copy messages to different folders manually as well as using Rules.
+Users can organize groups emails effectively by creating folders and setting rules inside groups mailbox. Once the folders are created in groups mailbox, users can move and copy messages to different folders manually as well as using **Rules**.
 
 This capability is currently available only in Outlook Web Application and Outlook Mobile application.
 
-## Enable folders and rules feature for Microsoft 365 Groups in Outlook
+## Enable Folders and Rules feature for Microsoft 365 Groups in Outlook
 
 Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -IsGroupFoldersAndRulesEnabled`.
 
- - [-IsGroupFoldersAndRulesEnabled<Boolean>] - optional
+ - `[-IsGroupFoldersAndRulesEnabled<Boolean>]` - optional
 
-   The `IsGroupFoldersAndRulesEnabled` parameter specifies whether folder and rules feature is enabled for the tenant.
+   The `IsGroupFoldersAndRulesEnabled` parameter specifies whether Folders and Rules feature is enabled for the tenant.
 
    Possible values: true/false
 
    Default Value: false
 
 > [!NOTE]
-> Once the `IsGroupFoldersAndRulesEnabled` is turned off after creating some folder and rules,
+> Once the `IsGroupFoldersAndRulesEnabled` parameter is turned off after creating some folder and rules,
   > 
   > - Existing Folders and Rules will keep getting rendered.
   > 
@@ -44,21 +44,21 @@ Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -Is
   > 
   > - Folder Creation/Updation/Deletion will be blocked.
   > 
-  > - Message level actions Copy/Move will be blocked
+  > - Message level actions Copy/Move will be blocked.
 
 Once the feature is enabled, by default only owner of the group has the permission to create folder, rename folder, move and copy messages across folders.
   
 ## Enable member permission option
 
-If there is a need for members in the group to create folders and triage messages in groups mailbox then member permission to edit groups content has to be enabled by admin at tenant level and group owner at group level respectively.
+If there is a need for members in the group to create folders and triage messages in groups mailbox then member permission to edit groups content has to be enabled by the admin at tenant level and group owner at group level respectively.
 
-By default, this setting is set “off” at tenant level and group level
+By default, this setting is set **off** at tenant level and group level
   
-Admin can enable the member permission to the tenant using the cmdlet `IsGroupMemberAllowedToEditContent`
+Admin can enable the member permission to the tenant using the cmdlet `IsGroupMemberAllowedToEditContent`.
 
- - [-IsGroupMemberAllowedToEditContent<Boolean>]- optional
+ - `[-IsGroupMemberAllowedToEditContent<Boolean>]`- optional
 
-   The `IsGroupMemberAllowedToEditContent` parameter specifies whether group owner can grant permission to members for folder and rules feature content edit.
+   The `IsGroupMemberAllowedToEditContent` parameter specifies whether group owner can grant permission to members for Folders and Rules feature content edit.
 
    Possible values: True/False
 
@@ -67,27 +67,25 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 Once this is enabled, Group owners have the option to provide group members with the ability to create folders, rename folders, copy, move and delete messages. Group level member permission is handled by Group owners.
 
 > [!NOTE]
-> Admins can see the current value of the settings using Get-OrganizationConfig cmdlet.
+> Admins can see the current value of the settings using `Get-OrganizationConfig` cmdlet.
 
 ## Block “Move” message capability
 
-Admins have an option to block the **Move** message option for all Microsoft 365 groups within a tenant using the cmdlet `Set-OrganizationConfig -BlockMoveMessagesForGroupFold`
+Admins have an option to block the **Move** message option for all Microsoft 365 groups within a tenant using the cmdlet `Set-OrganizationConfig -BlockMoveMessagesForGroupFold`.
 
- - [-BlockMoveMessagesForGroupFolders<Boolean>] – optional
+ - `[-BlockMoveMessagesForGroupFolders<Boolean>]` – optional
 
-   The `BlockMoveMessagesForGroupFolders` parameter specifies whether message move
-
-   action is disabled.
+   The `BlockMoveMessagesForGroupFolders` parameter specifies whether message the **Move** action is disabled.
 
    Possible values: True/False
 
    Default value: false
 
 > [!NOTE]
-> Creation of move rule is also disabled when BlockMoveMessagesForGroupFolders is enabled
+> Creation of **Move** rule is also disabled when `BlockMoveMessagesForGroupFolders` is enabled.
 
 > [!NOTE]
-> This is useful if there are mixed set of users using Outlook on Web and Outlook Desktop App. For users on Outlook Desktop App where folders are not available today, they can get the messages from group inbox. 
+> This is useful if there are mixed set of users using Outlook on Web and Outlook Desktop App. For users on Outlook Desktop App where folders are not available, they can get the messages from group inbox. 
   
   
   
