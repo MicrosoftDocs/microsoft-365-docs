@@ -108,7 +108,7 @@ The resources in this section help you learn how to choose, create, and configur
 
 ## PowerShell for SharePoint Syntex
 
-PowerShell lets you manage your SharePoint scenarios, such as exporting and importing models, and publishing models to document libaries. 
+PowerShell lets you manage your SharePoint scenarios, such as exporting and importing models and publishing models to document libaries. 
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
