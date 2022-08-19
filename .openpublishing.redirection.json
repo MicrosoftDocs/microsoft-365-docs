@@ -7551,6 +7551,11 @@
       "redirect_document_id": false
     },
     {
+    "source_path": "microsoft-365/security/office-365-security/tenant-allow-block-list.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+    "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/privileged-access-management-overview.md",
       "redirect_url": "/microsoft-365/compliance/privileged-access-management",
       "redirect_document_id": true
