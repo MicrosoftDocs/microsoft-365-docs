@@ -42,9 +42,30 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## August 2022
+
+**Automatic redirection from Office 365 Security and Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security and Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
+- Redirection URLs:
+    - GCC Environment:
+        - From Office 365 Security & Compliance Center URL: protection.office.com
+        - To Microsoft 365 Defender URL: security.microsoft.com
+    - GCC-High Environment:
+        - From Office 365 Security & Compliance Center URL: scc.office365.us
+        - To Microsoft 365 Defender URL: security.microsoft.us
+    - DoD Environment:
+        - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
+        - To Microsoft 365 Defender URL: security.apps.mil
+- Items in the Office 365 Security and Compliance Center that are not related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886. 
+- This is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
+- This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
+- This change impacts all customers who use the Office 365 Security and Compliance Center (protection.office.com), including Microsoft Defender for Office (Plan 1 or Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5, and Exchange Online Protection. For the full list, see [Security & Compliance Center - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+- This change impacts all users who log in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the **Microsoft Defender Portal** > **Review** > **Quarantine**.
+- Redirection is enabled by default and impacts all users of the Tenant.
+- Global Administrators and Security Administrators can turn on or off redirection in the Microsoft 365 Defender portal by navigating to **Settings** > **Email & collaboration** > **Portal redirection** and switch the redirection toggle.
+
 ## July 2022
 
-- [Introducing actions into the email entity page](mdo-email-entity-page.md): Admins can take preventative, remediation and submission actions from emial entity page.
+- [Introducing actions into the email entity page](mdo-email-entity-page.md): Admins can take preventative, remediation and submission actions from email entity page.
 
 ## June 2022
 
@@ -60,7 +81,7 @@ For more information on what's new with other Microsoft Defender security produc
   - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
   - Configure impersonation protection settings for custom users and custom domains within Preset Strict/Standard policies and automatically protect your targeted users and targeted domain against impersonation attacks.
 
-- [Simplifying the quarantine experience (part two) in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Highlights additional features to make the quarantine experience even more easy to use.
+- [Simplifying the quarantine experience (part two) in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Highlights additional features to make the quarantine experience even easier to use.
 
 ## April 2022
 
@@ -112,7 +133,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## June 2021
 
-- New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
+- New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or don't often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
   - [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
   - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
