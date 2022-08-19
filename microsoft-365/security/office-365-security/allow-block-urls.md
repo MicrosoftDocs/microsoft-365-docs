@@ -159,7 +159,7 @@ Reporting the URL as a false positive on the **Submissions** page adds an allow 
 
 > [!NOTE]
 >
-> - When the URL is detected again, it's not sent for [Safe Links](safe-links.md) detonation or URL reputation checks, and all other URL-based filters are skipped. Malware and high confidence phishing checks are never skipped.
+> - When the URL is detected again, it's not sent for [Safe Links](safe-links.md) detonation or URL reputation checks, and all other URL-based filters are skipped.
 > - During mail flow, if messages containing the URL pass other non-URL checks in the filtering stack, the messages will be delivered.
 
 ## Use the Microsoft 365 Defender portal to view allow or block entries for URLs in the Tenant Allow/Block List
@@ -233,7 +233,7 @@ When you modify an allow or block URL entry in the Tenant Allow/Block list, you 
    When you're finished, click **Save**.
 
 > [!NOTE]
-> For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the detail flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+> For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
 
 ### Use PowerShell to modify allow or block entries for URLs in the Tenant Allow/Block List
 

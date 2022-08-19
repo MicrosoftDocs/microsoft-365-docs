@@ -165,7 +165,7 @@ Reporting the file as a false positive on the **Submissions** page adds an allow
 5. After a few moments, the allow entry will appear on the **Files** tab on the **Tenant Allow/Block List** page.
 
 > [!NOTE]
-> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered. Malware and high confidence phishing checks are never skipped.
+> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
 
 ## Use the Microsoft 365 Defender portal to view allow or block entries for files in the Tenant Allow/Block List
 
@@ -244,7 +244,7 @@ When you modify an allow or block file entry in the Tenant Allow/Block list, you
    When you're finished, click **Save**.
 
 > [!NOTE]
-> For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the detail flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+> For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
 
 ### Use PowerShell to modify allow or block entries for files in the Tenant Allow/Block List
 

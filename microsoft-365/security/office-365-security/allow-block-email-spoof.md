@@ -179,7 +179,7 @@ You can't create allow entries for domains and email addresses directly in the T
 >
 > - Allows are added during mail flow, based on which filters determined the message to be malicious. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
 > - When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped.
-> - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-validation-and-authentication.md) passes, a message from a sender in the allow entry will be delivered. Malware and high confidence phishing checks are never skipped.
+> - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-validation-and-authentication.md) passes, a message from a sender in the allow entry will be delivered.
 
 ### Use the Microsoft 365 Defender portal to view allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
@@ -252,7 +252,7 @@ When you modify an allow or block entry for domains and email addresses in the T
    When you're finished, click **Save**.
 
 > [!NOTE]
-> For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the detail flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+> For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
 
 #### Use PowerShell to modify allow or block entries for domains and email addresses in the Tenant Allow/Block List
 

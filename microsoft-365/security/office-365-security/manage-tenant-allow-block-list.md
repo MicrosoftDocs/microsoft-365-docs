@@ -46,11 +46,13 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
   - **URLs**: Email messages that contain these blocked URLs are blocked as *phishing*.
 
+  You can also use the Submissions portal at <https://security.microsoft.com/reportsubmission> to create block entries for **domains and email addresses**, **files**, and **URLs** as you report them as false positives to Microsoft.
+
   By default, block entries for **domains and email addresses**, **files** and **URLs** will expire after 30 days, but you can set them to expire up 90 days or to never expire. Block entries for **spoofed senders** never expire.
 
 - **Allow**: In most cases, you can't directly create allow entries in the Tenant Allow/Block List:
 
-  - **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the **Submission** page in the Microsoft 365 Defender portal (also known as the *Submissions portal* or *admin submission*) to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
+  - **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the **Submission** page in the Microsoft 365 Defender portal (also known as the *Submissions portal* or *admin submission*) at <https://security.microsoft.com/reportsubmission> to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
 
   - **Spoofed senders**: You can create allow entries directly in the Tenant Allow/Block List or on the **Submission** page.
     - You can proactively create an allow entry for a spoofed sender on the **Spoofed sender** tab in the Tenant Allow/Block List before [spoof intelligence](learn-about-spoof-intelligence.md) identifies and blocks the message as spoofing.
@@ -60,9 +62,9 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 
   - **Email attachments and URLs**: An allow entry is created and it appears on the **Files** or **URLs** tab in the Tenant Allow/Block List.
 
-  - **Email**: If a message was blocked by the Microsoft 365 filtering stack, and allow entry might be created for the sender:
-    - If the message was blocked by spoof intelligence, an allow entry for the sender is created and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
-    - If the message was blocked by by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the anti-phishing policy.
+  - **Email**: If a message was blocked by the Microsoft 365 filtering stack, an allow entry might be created in the Tenant Allow/Block List for the sender:
+    - If the message was blocked by [spoof intelligence](learn-about-spoof-intelligence.md), an allow entry for the sender is created and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
+    - If the message was blocked by by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md).
     - If the message was blocked for other reasons, an allow entry for the is created and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
     - If the message was not blocked, and allow entry for the sender is not created, so it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
