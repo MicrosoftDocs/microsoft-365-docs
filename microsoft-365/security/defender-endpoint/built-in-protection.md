@@ -29,7 +29,7 @@ Built-in protection is a set of default settings to help ensure your devices are
 - When built-in protection arrives, tamper protection will be turned on for your tenant, and will be applied to your organization's Windows devices.
 - After built-in protection has arrived, whenever new devices are onboarded to Defender for Endpoint, built-in protection settings will be applied to the new devices running Windows.
 
-Built-in protection sets default values for Windows devices. If endpoint security settings change, such as through endpoint security baselines or policies in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), 
+Built-in protection sets default values for Windows devices. If endpoint security settings change, such as through baselines or policies in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), those settings override the built-in protection settings.  
 
 ## Can I change built-in protection settings?
 
