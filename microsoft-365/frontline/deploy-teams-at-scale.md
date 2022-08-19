@@ -58,7 +58,7 @@ Deploying Teams at scale enables you to:
 
 This article guides you through how to deploy Teams at scale. You'll learn how to use PowerShell to provision a large number of teams, and then apply and assign policies to configure the experience in Teams for your frontline workforce.
 
-## Set up and create your teams
+## Set up and deploy your teams
 
 > [!NOTE]
 > Before you deploy your teams, make sure that all teams owners have a Teams license.
@@ -177,7 +177,7 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
 
 ## Apply and assign Teams policies
 
- A [policy package](/microsoftteams/manage-policy-packages) in Teams is a collection of predefined policies and policy settings that you can assign to users who have the same or similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies for your frontline workforce. You can manage policy packages by using the Microsoft Teams admin center or PowerShell.
+ Policies in Teams let you control how Teams behaves in your environment and what features are available to users. A [policy package](/microsoftteams/manage-policy-packages) in Teams is a collection of predefined policies and policy settings that you can assign to users who have the same or similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies for your frontline workforce. You can manage policy packages by using the Microsoft Teams admin center or PowerShell.
 
 Teams includes the Frontline manager and Frontline worker policy packages. Each policy package creates a set of policies and policy settings that support collaboration and communication activities that are typical for that role.
 
