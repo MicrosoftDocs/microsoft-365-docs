@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
-  - m365solution-scenario
 ms.topic: article
 ms.reviewer: chventou
 ---
@@ -61,6 +60,6 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - commerce_subscriptions
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet

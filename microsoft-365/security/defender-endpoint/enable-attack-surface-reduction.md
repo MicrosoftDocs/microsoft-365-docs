@@ -15,7 +15,6 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: 
-- m365solution-scenario
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
@@ -55,7 +54,7 @@ You can set attack surface reduction rules for devices that are running any of t
 
 To use the entire feature-set of attack surface reduction rules, you need:
 
-- Windows Defender Antivirus as primary AV (real-time protection on)
+- Microsoft Defender Antivirus as primary AV (real-time protection on)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (some rules require that)
 - Windows 10 Enterprise E5 or E3 License
 
@@ -137,7 +136,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 4. Select **OK** on the three configuration panes. Then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.
 
-#### Endpoint security policy**
+#### Endpoint security policy
 
 1. Select **Endpoint Security** \> **Attack surface reduction**. Choose an existing ASR rule or create a new one. To create a new one, select **Create Policy** and enter information for this profile. For **Profile type**, select **Attack surface reduction rules**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 

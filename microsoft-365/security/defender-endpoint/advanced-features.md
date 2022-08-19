@@ -201,6 +201,10 @@ Forwards endpoint security alerts and their triage status to Microsoft Purview c
 
 After configuring the [Security policy violation indicators](/microsoft-365/compliance/insider-risk-management-settings#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
 
+## Authenticated telemetry
+
+You can **Turn on** Authenticated telemetry to prevent spoofing telemetry into your dashboard.
+
 ## Microsoft Intune connection
 
 Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-intune) to [enable device risk-based conditional access](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Defender for Endpoint device information with Intune, enhancing policy enforcement.

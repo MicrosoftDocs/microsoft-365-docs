@@ -27,7 +27,7 @@ description: "Learn how to enable or disable archive mailboxes to support your o
 
 # Enable archive mailboxes in the Microsoft Purview compliance portal
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with more mailbox storage space. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
 
@@ -43,7 +43,7 @@ If you don't see the **Archive** page in the Microsoft Purview compliance portal
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in.
 
-2. In the left pane of the compliance portal, select **Data lifecycle management** > **Archive**.
+2. In the left pane of the compliance portal, select **Data lifecycle management** > **Microsoft 365** > **Archive**.
 
    On the **Archive** page, the  **Archive mailbox** column identifies whether an archive mailbox is enabled or disabled for each user.
 

@@ -53,7 +53,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `IsLocalAdmin` | `boolean` | Boolean indicator of whether the user is a local administrator on the machine |
 | `LogonId` | `string` | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
 | `RemoteDeviceName` | `string` | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name  or a host name without domain information |
-| `RemoteIP` | `string` | IP address that was being connected to |
+| `RemoteIP` | `string` | IP address of the device from which the logon attempt was performed |
 | `RemoteIPType` | `string` | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemotePort` | `int` | TCP port on the remote device that was being connected to |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |

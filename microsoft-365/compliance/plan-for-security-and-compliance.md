@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Plan for security &amp; compliance
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Managing security and compliance is a partnership. You are responsible for protecting your data, identities, and devices, while Microsoft vigorously protects Microsoft 365 services. You can use Microsoft 365 and Enterprise Mobility + Security (EMS) together to help you achieve the appropriate level of protection for your organization.
   
 ## Step 1: Review capabilities
@@ -35,7 +33,7 @@ Orient yourself to the information protection capabilities in the Information Pr
 
 After setting up your Microsoft 365 subscription, take note of your starting score. Secure Score provides configuration suggestions that you can take to increase your score. The goal is to be aware of opportunities that you can take to protect your environment which won't negatively affect the productivity of your users.
   
-- [Introducing the Office 365 Secure Score](../security/defender/microsoft-secure-score.md)
+- [Microsoft Secure Score](../security/defender/microsoft-secure-score.md)
     
 ## Step 3: Plan access protection for identity and devices
 

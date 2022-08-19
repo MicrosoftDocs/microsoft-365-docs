@@ -20,8 +20,6 @@ ms.custom: seo-marvel-apr2020
 
 # Retry a Content Search to resolve a content location error
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When you use Content Search in the security and compliance center to search a large number of mailboxes, you may get search errors that are similar to the  error:
 
 ```text

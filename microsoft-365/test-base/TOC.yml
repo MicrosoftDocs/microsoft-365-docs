@@ -6,7 +6,7 @@
     href: overview.md 
 - name: Quickstarts
   items:  
-    - name: Create Test Base Account
+    - name: Creating a Test Base Account
       href: createaccount.md
     - name: Test your application on Test Base
       items:
@@ -26,6 +26,8 @@
       href: contentguideline.md
     - name: Understand your usage cost
       href: usagecost.md
+    - name: Run your test on-demand
+      href: ondemandrun.md
     - name: Application/Test rules
       href: rules.md
 - name: How-to guides
@@ -40,6 +42,8 @@
     href: memory.md
   - name: CPU Regression Analysis
     href: cpu.md 
+  - name: Request to change access level
+    href: accesslevel.md
   - name: SDK & API
     href: sdkapi.md
 - name: Reference

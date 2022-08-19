@@ -19,8 +19,6 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 
 # Onboard and offboard macOS devices into Microsoft Purview solutions using Intune
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
@@ -49,7 +47,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. [Deploy the onboarding package](#deploy-the-onboarding-package)
 1. [Enable system extension](#enable-system-extension)
 1. [Get the installation package](#get-the-installation-package)
-1. [Deploy the installation package](#deploy-the-microsoft-dlp-installation-package)
+1. [Publish application](#publish-application)
 
 ### Create system configuration profiles
 
@@ -244,9 +242,11 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 > Before you can deploy the *wdav.pkg.* package via Intune, it must be reformatted using the *Intune App Wrapping Tools for Mac* into the *wdav.pkg.intunemac* format.
  
 
-### Deploy the Microsoft DLP installation package
+### Publish application
 
-1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos) to convert the *wdav.pkg* file into the proper format and deploy it through Intune.
+Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS
+
+1. Follow the procedures in [Intune-based deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-with-intune#publish-application) to deploy MDE to enrolled macOS devices.
 
 ## Offboard macOS devices using Intune
 

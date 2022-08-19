@@ -29,11 +29,11 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 ## Reprovision a Windows 365 Cloud PC
 
-1. In the left navigation pane in Lighthouse, select **Windows 365**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
 
 2. Select the **All Cloud PCs** tab.
 
-3. From the **Filters** drop-down list, select license type.
+3. From the **Filters** dropdown list, select license type.
 
 4. From the filtered list, select a device.
 
@@ -46,11 +46,11 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 ## Check the device action status
 
-1. In the left navigation pane in Lighthouse, select **Windows 365**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
 
 2. Select the **All Cloud PCs** tab.
 
-3. From the device list, select a device.
+3. From the list of devices, select a device.
 
 4. In the device details pane, select the **Device action status** tab.
 

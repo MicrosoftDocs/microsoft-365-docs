@@ -18,6 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-identitydevice
   - m365solution-scenario
+  - zerotrust-solution
 ms.technology: mdo
 ---
 

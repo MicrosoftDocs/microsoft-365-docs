@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
@@ -32,6 +33,8 @@ description: "Protect your business email and data from cyberthreats, including 
 
 # Best practices for securing Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 If you are a small or medium-size organization using one of Microsoft's business plans, the guidance in this article helps you tighten the security of your organization. Among your choices, Microsoft 365 Business Premium leads the way since it now includes Microsoft Defender for Business and other [security protections](../../business-premium/get-microsoft-365-business-premium.md). The recommended actions included here will help you achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
 > [!TIP]
@@ -39,9 +42,11 @@ If you are a small or medium-size organization using one of Microsoft's business
 
 ## Watch: A quick overview of security
 
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198012).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-All the Microsoft 365 plans offer baseline protection and security with Defender Antivirus, but with Microsoft 365 Business Premium you also have threat protection, data protection, and device management features due to the inclusion of Microsoft Defender for Business.  These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers.
+All the Microsoft 365 plans offer baseline protection and security with Microsoft Defender Antivirus, but with Microsoft 365 Business Premium you also have threat protection, data protection, and device management features due to the inclusion of Microsoft Defender for Business.  These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers.
 
 ## Security features comparison
 
@@ -130,11 +135,11 @@ Your Microsoft 365 environment includes protection against malware. You can incr
 
 - Using [pre-set policies for Microsoft Office 365](../../../microsoft-365/security/office-365-security/preset-security-policies.md).
 - Blocking attachments with certain file types.
-- Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Threat and Vulnerability Management (TVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software.
+- Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Microsoft Defender Vulnerability Management (MDVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software.
 
 ### Block attachments with certain file types
 
-You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
+You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view [Watch: Raise the level of protection against malware in mail](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 2. On the **Anti-malware** page, double-click on **Default**. A flyout appears.
@@ -172,7 +177,7 @@ You can protect against ransomware by creating one or more mail flow rules to bl
 
 - Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect them to be sent in email, add them to the previous rule (warn users).
 
-To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware), or complete the following steps:
+To create a mail transport rule, view [Watch: Protect against ransomware](increase-threat-protection.md#watch-protect-against-ransomware), or complete the following steps:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
@@ -303,7 +308,7 @@ Do the following to protect against attacks:
 
 - Add a new policy targeted to all recipients in your domain.
 
-To get to Safe Links, view a [short training video](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links), or complete the following steps:
+To get to Safe Links, view [Watch: Protect your email from phishing attacks](increase-threat-protection.md#watch-protect-your-email-from-phishing-attacks), or complete the following steps:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
