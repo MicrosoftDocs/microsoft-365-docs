@@ -58,7 +58,7 @@ Deploying Teams at scale allows you to:
 
 This article guides you through how to deploy Teams at scale. You'll learn how to use PowerShell to provision a large number of teams, and then apply all relevant policies to configure the experience in Teams for your frontline workforce.
 
-## Deploy Teams at scale
+## Set up and create your teams
 
 > [!NOTE]
 > Before you deploy your teams, make sure that all teams owners have a Teams license.
@@ -122,9 +122,9 @@ Use the following examples to help you create your CSV files. Here, we've named 
 |Sydney Mattos|sydneym@contoso.com|Contoso Store 9|AddMember|Member|
 |Violet Martinez|violetm@contoso.com|Contoso Store 10|AddMember|Member|
 
-### Step 2: Deploy your teams
+### Step 2: Create your teams
 
-Now that you've created your CSV files, you're ready to set up your environment and deploy your teams.
+Now that you've created your CSV files, you're ready to set up your environment and create your teams.
 
 You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the ```Get-CsBatchTeamsDeployment``` cmdlet to track the progress and status of each batch.
 
