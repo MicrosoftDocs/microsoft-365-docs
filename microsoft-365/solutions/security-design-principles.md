@@ -73,10 +73,8 @@ To help you clear these hurdles, Microsoft has curated several resources designe
 |Resource   |More information  |
 |---------|---------|
 |[Top tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)      | If you find yourself suddenly supporting a mostly work-at-home workforce, this article helps you ramp up security quickly. It includes top recommended tasks based on your licensing plan.    |
-|[Microsoft 365 Security for Business Decisions Makers](../security/Microsoft-365-security-for-bdm.md)    | When you have time for a more comprehensive plan, this article includes recommendations that span Microsoft 365, prioritized by attack surface. It even comes with a spreadsheet you can use to sort on licensing and area (such as identity, threat protection, and monitoring).  |
-|[Microsoft security architecture recommendations](/security/compass/compass)    | If you are a security architect, be sure to see security recommendations organized by discipline, including identity, networking, and security operations.   |
-|[Microsoft Security Operations recommendations](/security/compass/security-operations-videos-and-decks)|Learn Microsoft recommendations for setting up and running a Security Operations Center (SOC) |
-|[Chief Information Security Officer (CISO) Workshop Training](/security/ciso-workshop/ciso-workshop)   | If you’re new to cloud security, don’t miss this series of videos.        |
+|[Microsoft 365 Zero Trust deployment plan](../security/microsoft-365-zero-trust.md)    | This article provides a deployment plan for building Zero Trust security with Microsoft 365. It includes a downloadable poster you can use to track your progress. |
+|[Zero Trust Guidance Center](/security/zero-trust/)  | Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using the deployment plans. |
 |[docs.security.com/security](/security/)    | Technical guidance from across Microsoft for security strategy and architecture.        |
 | | |
 
