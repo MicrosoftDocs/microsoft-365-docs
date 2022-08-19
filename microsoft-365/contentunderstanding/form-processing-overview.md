@@ -38,6 +38,9 @@ After you train and publish your model, your model creates a [Power Automate flo
 
 An Office 365 admin needs to [enable form processing](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
 
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
+
+<!---
 ## File limitations
 
 When using form processing models, make sure to note the [requirements and limitations for file usage](/ai-builder/form-processing-model-requirements).
@@ -53,14 +56,10 @@ When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo environment](../
 ## Custom environments
 
 If you use a custom environment (rather than the default environment) for Power Platform processing, there are additional setup requirements. For more information, see [Custom Power Platform environments](set-up-content-understanding.md#requirements).
-
+--->
 
 ## See also
   
 [Power Automate documentation](/power-automate/)
-
-[Create a form processing model](create-a-form-processing-model.md)
-
-[Document understanding overview](document-understanding-overview.md)
 
 [Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

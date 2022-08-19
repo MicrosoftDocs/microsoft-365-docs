@@ -40,6 +40,10 @@ Additional trained models will be available in future releases.
 
 ## Requirements
 
+See [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
+
+
+<!---
 - Supported file formats: JPEG, PNG, BMP, TIFF, and PDF (text-embedded or scanned).
 
 - Supported languages: only English language invoices from the United States are currently supported. English sales receipts from Australia, Canada, United States, Great Britain, and India are supported.
@@ -71,11 +75,12 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 - If a prebuilt model is applied to a library that has a custom form processing model, the file is classified using the prebuilt model and any detected extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
 
 - Applying more than one custom form processing model to a library is not supported.
+--->
 
 ## See also
 
-[Use a trained model to extract information from invoices](prebuilt-models.md)
+[Use a trained model to extract information from invoices](prebuilt-model-invoice.md)
 
-[Use a trained model to extract information from receipts](prebuilt-models.md)
+[Use a trained model to extract information from receipts](prebuilt-model-receipt.md)
  
 

@@ -17,3 +17,7 @@ description: Learn how to use AI Build to create form processing models in Micro
 
 # Overview of extraction by text pattern and layout in Microsoft SharePoint Syntex
 
+
+
+
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
