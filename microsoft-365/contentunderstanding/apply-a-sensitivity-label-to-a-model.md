@@ -21,14 +21,17 @@ description: Learn how to apply a sensitivity label to a model in SharePoint Syn
 
 You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to **Classify and extract by text pattern** models in Microsoft SharePoint Syntex. 
 
-Sensitivity labels let you apply encryption to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but also to apply a sensitivity label that's configured with encryption settings to restrict who can access that content and how it can be used. SharePoint Syntex models honor the [label order](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) rules and also do not overwrite an existing label that was manually applied by a user to the file. 
+> [!Note]
+> Sensitivity labels are not yet available for trained models or **Extract by layout** and  **Extract by text pattern and layout** models.
+
+Sensitivity labels let you apply encryption to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but also to apply a sensitivity label that's configured with encryption settings to restrict who can access that content and how it can be used. SharePoint Syntex models honor the [label order](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) rules and also don't overwrite an existing label that was manually applied by a user to the file. 
 
 You can apply a pre-existing sensitivity label to your model through your model settings on your model's home page. The label must already be published to be available for selection from model settings. Labels apply to Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx). 
 
 > [!Important]
-> For sensitivity labels to be available to apply to your document understanding models, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
+> For sensitivity labels to be available to apply to your models, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
-## Add a sensitivity label to a document understanding model
+## Add a sensitivity label to a Classify and extract by text pattern model
 
 1. From the model home page, select **Model settings**.
 
@@ -47,7 +50,7 @@ After you apply the sensitivity label to your model, you can apply it to a:
  
 ### Apply the sensitivity label to a document library to which the model is already applied
 
-If your document understanding model has already been applied to a document library, you can do the following to sync your sensitivity label update to apply it to the document library:
+If your **Classify and extract by text pattern** model has already been applied to a document library, you can do the following to sync your sensitivity label update to apply it to the document library:
 
 1. On the model home page, in the **Libraries with this model** section, select the document library to which you want to apply the sensitivity label update.
 
@@ -69,57 +72,7 @@ On your model's view page in your document library, a new **Sensitivity label** 
 
 For example, all financial documents that your model identifies also will have the *Encryption* sensitivity label applied to them, preventing them from being accessed by unauthorized people. If an attempt is made to access the file from the document library by an unauthorized person, an error will display saying it isn't allowed because of the applied sensitivity label.
 
-<!---
-## Add a sensitivity label to a form processing model
-
-> [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
-
-You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
-
-### Add a sensitivity label when you create a form processing model
-
-1. When you [create a new form processing model](create-a-form-processing-model.md), select **Advanced settings**.
-
-2. In **Advanced settings**, in the **Sensitivity label** section, select the menu and then select the sensitivity label you want to apply to the model.
-
-3.  After you've completed your remaining model settings, select **Create** to build your model.
-
-### Add a sensitivity label to an existing form processing model
-
-You can add a sensitivity label to an existing form processing model in different ways:
-
-- Through the **Automate** menu in the document library
-- Through the **Active model** settings in the document library 
-
-#### Add a sensitivity label to an existing form processing model through the Automate menu
-
-You can add a sensitivity label to an existing form processing model that you own through the **Automate** menu in the document library in which the model is applied.
-
-1. In your document library to which the form processing model is applied, select the **Automate** menu, select **AI Builder**, and then select **View form processing model details**.
-
-2. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
-
-#### Add a sensitivity label to an existing form processing model in the active model settings
-
-You can add a sensitivity label to an existing form processing model that you own through the **Active model** settings in the document library in which the model is applied.
-
-1. In the SharePoint document library in which the model is applied, select the **View active models** icon, and then select **View active models**.
-
-2. In **Active models**, select the form processing model to which you want to apply the sensitivity label.
-
-3. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
-
-   > [!NOTE]
-   > You must be the model owner for the **Model settings** pane to be editable. 
---->
-
 ## See also
 
 [Apply a retention label](apply-a-retention-label-to-a-model.md)
 
-[Create a classifier](create-a-classifier.md)
-
-[Create an extractor](create-an-extractor.md)
-
-[Document Understanding overview](document-understanding-overview.md)
