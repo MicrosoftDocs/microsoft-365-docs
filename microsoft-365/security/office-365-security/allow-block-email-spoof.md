@@ -171,7 +171,7 @@ You can't create allow entries for domains and email addresses directly in the T
 
    When you're finished, click **Submit**, and then click **Done**.
 
-   :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-allow-messages.png":::
+   :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
 
 5. After a few moments, the allow entry will appear on the **Domains & addresses** tab on the **Tenant Allow/Block List** page.
 
