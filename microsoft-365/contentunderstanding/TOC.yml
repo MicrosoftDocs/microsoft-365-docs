@@ -22,7 +22,7 @@
               href: create-local-model.md 
             - name: Create a model
               href: create-syntex-model.md             
-            - name: Manage a model
+            - name: Manage your model
               items:
                 - name: Discover and apply a model
                   href: apply-a-model.md
@@ -61,7 +61,7 @@
                   href: document-understanding-overview.md
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
-                - name: Train the model
+                - name: Train your model
                   items:
                     - name: Create a classifier
                       href: create-a-classifier.md
@@ -84,15 +84,19 @@
               items:
                 - name: Overview 
                   href: form-processing-overview.md
-                - name: Create a form processing model 
-                  href: create-a-form-processing-model.md
+                - name: Train your model
+                  items:
+                    - name: Train the model 
+                      href: create-a-form-processing-model.md
 
             - name: Extract by text pattern and layout
               items:
                 - name: Overview 
                   href: extract-by-text-pattern-and-layout-overview.md
-                - name: Create a form processing model 
-                  href: create-a-form-processing-model.md
+                - name: Train your model
+                  items:
+                    - name: Train-the-model 
+                      href: create-extract-by-text-pattern-and-layout-model.md
 
     - name: Trained models
       items:
