@@ -61,7 +61,7 @@ Live response leverages Defender for Endpoint sensor registration with WNS servi
 
 1. `notify.windows.com` is not blocked in your environment. For more information, see, [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 2. WpnService (Windows Push Notifications System Service) is not disabled.
-3. WpnService connectivity with WNS cloud is not disabled via group policy or MDM setting. ['Turn off notifications network usage'](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications) should not be set to '1'.
+3. WpnService connectivity with WNS cloud is not disabled via group policy or MDM setting. ['Turn off notifications network usage'](/windows/client-management/mdm/policy-csp-notifications) should not be set to '1'.
 For more information on this policy refer to 
 
 Refer to the articles below to fully understand the WpnService service behavior and requirements:
