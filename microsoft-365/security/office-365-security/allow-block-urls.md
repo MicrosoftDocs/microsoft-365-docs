@@ -153,7 +153,7 @@ Reporting the URL as a false positive on the **Submissions** page adds an allow 
 
    When you're finished, click **Submit**, and then click **Done**.
 
-   :::image type="content" source="../../media/submit-url-for-analysis.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submit-url-for-analysis.png":::
+   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
 
 5. After a few moments, the URL allow entry will appear on the **URL** tab on the **Tenant Allow/Block List** page.
 

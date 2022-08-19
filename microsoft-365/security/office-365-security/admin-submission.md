@@ -104,7 +104,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    When you're finished, click **Submit**, and then click **Done**.
 
-> :::image type="content" source="../../media/submission-flyout-email.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-flyout-email.png":::
+> :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
 
 > [!NOTE]
 > For messages that were incorrectly blocked by [spoof intelligence](learn-about-spoof-intelligence.md), a block entry for the domain pair is not created in the Tenant Allow/Block List.
@@ -150,7 +150,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    When you're finished, click **Submit**, and then click **Done**.
 
-> :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-file-flyout.png":::
+> :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-block.png":::
 
  > [!NOTE]
  > To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for files in the Submissions portal](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
@@ -192,7 +192,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    When you're finished, click **Submit**, and then click **Done**.
 
-> :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-url-flyout.png":::
+> :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-block.png":::
 
  > [!NOTE]
  > To report a URL as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for URLs in the Submissions portal](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
@@ -229,7 +229,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize columns option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/admin-submission-email-customize-columns.png" alt-text="Customize columns option for email admin submissions." lightbox="../../media/admin-submission-email-customize-columns.png":::
 
    - To filter the entries, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following values are available in the **Filter** flyout that appears:
      - **Date submitted**: **Start date** and **End date** values.
@@ -245,7 +245,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-     :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
+     :::image type="content" source="../../media/admin-submission-email-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/admin-submission-email-filters.png":::
 
    - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -281,7 +281,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Customize column options for email attachment admin submissions.":::
+     :::image type="content" source="../../media/admin-submission-file-customize-columns.png" alt-text="Customize column options for email attachment admin submissions.":::
 
    - To filter the entries, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following values are available in the **Filter** flyout that appears:
      - **Date submitted**: **Start date** and **End date**.
@@ -294,7 +294,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Filter options for email attachment admin submissions.":::
+     :::image type="content" source="../../media/admin-submission-file-filters.png" alt-text="Filter options for email attachment admin submissions.":::
 
    - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the drop down list:
      - **None**
@@ -330,7 +330,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Customize column options for URL admin submissions.":::
+     :::image type="content" source="../../media/admin-submission-url-customize-columns.png" alt-text="Customize column options for URL admin submissions.":::
 
    - To filter the entries, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following values are available in the **Filter** flyout that appears:
      - **Date submitted**: **Start date** and **End date**.
@@ -343,7 +343,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-     :::image type="content" source="../../media/url-admin-submission-filters.png" alt-text="Filter options for URL admin submissions.":::
+     :::image type="content" source="../../media/admin-submission-url-filters.png" alt-text="Filter options for URL admin submissions.":::
 
    - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -408,7 +408,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Filter options for user submissions." lightbox="../../media/admin-submission-reported-messages.png":::
+     > :::image type="content" source="../../media/admin-submission-user-reported-filters.png" alt-text="Filter options for user submissions." lightbox="../../media/admin-submission-user-reported-filters.png":::
 
    - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -444,7 +444,7 @@ On the **User reported messages** tab, select a message in the list, click ![Sub
 - **Report spam**
 - **Trigger investigation**
 
-  :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+  :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
 If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
 
