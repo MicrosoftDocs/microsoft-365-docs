@@ -49,14 +49,14 @@ Does your organization use a large number of teams to drive communication and co
 
 You can use PowerShell to deploy up to 500 teams and add up to 25 users per team at a time. You can also add and remove users from existing teams at scale. Use this solution to meet your organization's scale needs and significantly reduce deployment time.
 
-Deploying Teams at scale allows you to:
+Deploying Teams at scale enables you to:
 
 - Create teams using pre-built templates or your own custom templates.
 - Add users to teams as owners or members.
 - Manage teams at scale by adding or removing users from existing teams.
 - Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
 
-This article guides you through how to deploy Teams at scale. You'll learn how to use PowerShell to provision a large number of teams, and then apply all relevant policies to configure the experience in Teams for your frontline workforce.
+This article guides you through how to deploy Teams at scale. You'll learn how to use PowerShell to provision a large number of teams, and then apply and assign policies to configure the experience in Teams for your frontline workforce.
 
 ## Set up and create your teams
 
