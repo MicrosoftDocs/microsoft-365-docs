@@ -64,7 +64,7 @@ sections:
       - question: |
           What rules to enable? All, or can I turn on individual rules?
         answer: |
-          To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible affect to your organization. For example, your line-of-business applications.
+          To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible effect to your organization. For example, your line-of-business applications.
 
       - question: |
           How do ASR rules exclusions work?
