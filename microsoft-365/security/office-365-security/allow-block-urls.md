@@ -141,7 +141,7 @@ Reporting the URL as a false positive on the **Submissions** page adds an allow 
 
    - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
 
-     - **Allow this URL**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
+     - **Allow this URL**: Turn on this setting ![Toggle on.](../../media/scc-toggle-on.png).
 
          - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
            - **1 day**

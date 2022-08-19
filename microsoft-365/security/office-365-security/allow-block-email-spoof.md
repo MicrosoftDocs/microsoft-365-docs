@@ -159,7 +159,7 @@ You can't create allow entries for domains and email addresses directly in the T
 
    - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
 
-     - **Allow emails with similar attributes (URL, sender, etc.)**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
+     - **Allow emails with similar attributes (URL, sender, etc.)**: Turn on this setting ![Toggle on.](../../media/scc-toggle-on.png).
 
          - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
            - **1 day**
@@ -309,7 +309,7 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 You have the following options to create block entries for spoofed senders:
 
 - The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-allow-entries-for-spoofed-senders)
-- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-submissions-portal)
+- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal)
 
 > [!NOTE]
 > Allow entries for spoofed senders take care of intra-org, cross-org, and DMARC spoofing.
@@ -554,7 +554,7 @@ In organizations with Microsoft Defender for Office 365, you can't create allow 
 
 Reporting a message that was incorrectly blocked as impersonation in the Submissions portal at <https://security.microsoft.com/reportsubmission>  does not add the sender or domain as an allow entry in the Tenant Allow/Block List.
 
-Instead, the domain or user is added to the **Add trusted senders and domains** section of the anti-phishing policy. For more information about configuring anti-phishing policies, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
 The instructions to report the message are identical to the steps in [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
