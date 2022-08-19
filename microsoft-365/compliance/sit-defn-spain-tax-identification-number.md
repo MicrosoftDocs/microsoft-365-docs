@@ -23,14 +23,6 @@ description: "Spain tax identification number sensitive information type entity 
 
 # Spain tax identification number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 seven or eight digits and one or two letters in the specified pattern

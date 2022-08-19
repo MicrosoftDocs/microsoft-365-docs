@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
@@ -131,6 +128,7 @@
 ###### [Set preferences](linux-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
+###### [Schedule antivirus scan in Defender for Endpoint on Linux](schedule-antivirus-scan-in-mde.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 ##### [Troubleshoot]()
@@ -285,6 +283,8 @@
 ##### [Protect your network](network-protection.md)
 ##### [Evaluate network protection](evaluate-network-protection.md)
 ##### [Turn on network protection](enable-network-protection.md)
+##### [Network protection for Linux](network-protection-linux.md)
+##### [Network protection for MacOS](network-protection-macos.md)
 #### [Web protection]()
 ##### [Web protection overview](web-protection-overview.md)
 ##### [Web threat protection]()
@@ -298,6 +298,7 @@
 #### [Next-generation protection overview](next-generation-protection.md)
 ##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 ##### [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-windows.md)
+##### [Enable and update Microsoft Defender Antivirus on Windows Server](enable-update-mdav-to-latest-ws.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
@@ -309,7 +310,13 @@
 ##### [Cloud protection and sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 #### [Specify additional definition sets for network traffic inspection](specify-additional-definitions-network-traffic-inspection-mdav.md)
-#### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+#### [Tamper protection]()
+##### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [Manage tamper protection using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)
+##### [Manage tamper protection using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)
+##### [Manage tamper protection with Configuration Manager](manage-tamper-protection-configuration-manager.md)
+##### [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)
+##### [FAQs on tamper protection](faqs-tamper-protection.md)
 #### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 #### [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
 #### [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
@@ -521,6 +528,10 @@
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
+
+###### [Device Health]()
+####### [Export device health methods and properties](device-health-api-methods-properties.md)
+####### [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 
 ###### [Certificate inventory]()
 ####### [Export certificate inventory assessment](export-certificate-inventory-assessment.md)

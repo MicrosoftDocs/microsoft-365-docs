@@ -23,14 +23,6 @@ description: "Netherlands value added tax number sensitive information type enti
 
 # Netherlands value added tax number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 14 character alphanumeric pattern
