@@ -123,7 +123,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |74|Device tag in registry exceeds length limit. Tag name: %2. Length limit: %1.|The device tag exceeds the length limit.|Use a shorter device tag.|
    |81|Failed to create Microsoft Defender for Endpoint ETW autologger. Failure code: %1|Failed to create the ETW session.|Reboot the device. If this error persists, contact Support.|
    |82|Failed to remove Microsoft Defender for Endpoint ETW autologger. Failure code: %1|Failed to delete the ETW session.|Contact Support.|
-   |84|Set Windows Defender Antivirus running mode. Force passive mode: %1, result code: %2.|Set defender running mode (active or passive).|Normal operating notification; no action required.|
+   |84|Set Microsoft Defender Antivirus running mode. Force passive mode: %1, result code: %2.|Set defender running mode (active or passive).|Normal operating notification; no action required.|
    |85|Failed to trigger Microsoft Defender for Endpoint executable. Failure code: %1|Starring SenseIR executable failed.|Reboot the device. If this error persists, contact Support.|
    |86|Starting again stopped external service that should be up. Name: %1, exit code: %2|Starting the external service again.|Normal operating notification; no action required.|
    |87|Cannot start the external service. Name: %1|Failed to start the external service.|Contact Support.|

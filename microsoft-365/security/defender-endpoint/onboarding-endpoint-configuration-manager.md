@@ -244,7 +244,7 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="The next-generation protection pane11" lightbox="images/configmgr-select-collection.png":::
 
-After completing this task, you now have successfully configured Windows Defender Antivirus.
+After completing this task, you now have successfully configured Microsoft Defender Antivirus.
 
 ### Attack surface reduction
 
