@@ -94,7 +94,7 @@ If you're using Microsoft Edge, you'll also see a notification message:
 
 A similar message occurs if you're using Internet Explorer:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender AV notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender Antivirus notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### View the fake malware detection in your Windows Security app
 

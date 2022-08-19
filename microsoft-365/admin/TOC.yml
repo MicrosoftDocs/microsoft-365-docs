@@ -320,8 +320,6 @@
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
-         - name: Show or hide new features
-           href: manage/show-hide-new-features.md
          - name: Power BI usage analytics
            items: 
            - name: About usage analytics
@@ -377,7 +375,7 @@
     - name: Manage devices and app data
       items:
         - name: Device and app data protection methods 
-          href: devices/choose-device-security.md
+          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security
