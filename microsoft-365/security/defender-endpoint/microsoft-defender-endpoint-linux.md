@@ -88,6 +88,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Red Hat Enterprise Linux 6.7 or higher (Preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 9.x
   - CentOS 6.7 or higher (Preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
@@ -240,6 +241,6 @@ High I/O workloads from certain applications can experience performance issues w
   
 ## Related articles
   
--  [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
--  [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
-
+- [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
+- [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+- [Turn on network protection for Linux](network-protection-linux.md)
