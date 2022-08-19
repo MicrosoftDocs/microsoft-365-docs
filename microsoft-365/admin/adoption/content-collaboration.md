@@ -54,7 +54,6 @@ Microsoft OneDrive for Business and SharePoint help people to easily create, rea
 
 :::image type="content" source="../../media/collabscore_primary.png" alt-text="Primary insights from communication collaboration score.":::
 
-
 Types considered for this information include Word, Excel, PowerPoint, OneNote, and PDF files.
 
 1. **Header:** Shows the percentage of people in your org who have access to OneDrive or SharePoint who are collaborating on content.
