@@ -19,11 +19,13 @@ description: Learn how to apply a retention label to a model in Microsoft ShareP
 
 <sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout &ensp;| &ensp; &#10003; All trained models</sup>
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GydO]  
 
 </br>
+--->
 
 You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft SharePoint Syntex.
 
