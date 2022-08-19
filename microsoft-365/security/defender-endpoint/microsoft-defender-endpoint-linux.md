@@ -88,6 +88,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Red Hat Enterprise Linux 6.7 or higher (Preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 9.x
   - CentOS 6.7 or higher (Preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
