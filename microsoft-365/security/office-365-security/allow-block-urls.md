@@ -65,8 +65,14 @@ You manage allow and block entries for URLs in the Microsoft 365 Defender Portal
 
 You have the following options to create block entries for URLs:
 
-- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-urls-in-the-tenant-allowblock-list)
 - [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-submissions-portal)
+- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-urls-in-the-tenant-allowblock-list)
+
+### Use the Microsoft 365 Defender portal to create block entries for URLs in the Submissions portal
+
+When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report URLs as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry for the URL in the Tenant Allow/Block List.
+
+For instructions, see [Report questionable URLs to Microsoft](admin-submission.md#report-questionable-urls-to-microsoft).
 
 ### Use the Microsoft 365 Defender portal to create block entries for URLs in the Tenant Allow/Block List
 
@@ -111,12 +117,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### Use the Microsoft 365 Defender portal to create block entries for URLs in the Submissions portal
-
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report URLs as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry for the URL in the Tenant Allow/Block List.
-
-For instructions, see [Report questionable URLs to Microsoft](admin-submission.md#report-questionable-urls-to-microsoft).
 
 ## Use the Microsoft 365 Defender portal to create allow entries for URLs in the Submissions portal
 

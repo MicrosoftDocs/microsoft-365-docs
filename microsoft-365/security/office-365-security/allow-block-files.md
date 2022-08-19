@@ -72,8 +72,14 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 
 You have the following options to create block entries for files:
 
-- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-files-in-the-tenant-allowblock-list)
 - [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-submissions-portal)
+- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-files-in-the-tenant-allowblock-list)
+
+### Use the Microsoft 365 Defender portal to create block entries for files in the Submissions portal
+
+When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry for the file in the Tenant Allow/Block List.
+
+For instructions, see [Report questionable email attachments to Microsoft](admin-submission.md#report-questionable-email-attachments-to-microsoft).
 
 ### Use the Microsoft 365 Defender portal to create block entries for files in the Tenant Allow/Block List
 
@@ -118,12 +124,6 @@ New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695e
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### Use the Microsoft 365 Defender portal to create block entries for files in the Submissions portal
-
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry for the file in the Tenant Allow/Block List.
-
-For instructions, see [Report questionable email attachments to Microsoft](admin-submission.md#report-questionable-email-attachments-to-microsoft).
 
 ## Use the Microsoft 365 Defender portal to create allow entries for files in the Submissions portal
 

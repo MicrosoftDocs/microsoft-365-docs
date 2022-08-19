@@ -308,8 +308,8 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 You have the following options to create block entries for spoofed senders:
 
-- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 - [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal)
+- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 
 > [!NOTE]
 > Allow entries for spoofed senders take care of intra-org, cross-org, and DMARC spoofing.
@@ -319,6 +319,22 @@ You have the following options to create block entries for spoofed senders:
 > When you configure an allow entry for a domain pair, messages from that domain pair no longer appear in the [spoof intelligence insight](learn-about-spoof-intelligence.md).
 >
 > Allow entries for spoofed senders never expire.
+
+#### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Submissions portal
+
+Submitting messages that were blocked by [spoof intelligence](learn-about-spoof-intelligence.md) to Microsoft from the **Submissions** page adds the sender as an allow entry on the **Spoofed senders** tab in Tenant Allow/Block List.
+
+> [!NOTE]
+> When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
+>
+> If the sender has not been blocked by spoof intelligence, submitting the email message to Microsoft won't create an allow entry in the Tenant Allow/Block List.
+
+The instructions to report the message are nearly identical to the steps in [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+
+The only differences are:
+
+- The **Remove allow entry after** setting in Step 4 is meaningless, because entries for spoofed senders never expire.
+- The **Allow entry note** setting in Step 4 doesn't apply to entries for spoofed senders in the Tenant Allow/Block List.
 
 #### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Tenant Allow/Block List
 
@@ -355,22 +371,6 @@ New-TenantAllowBlockListSpoofItems -Identity Default -Action Allow -SendingInfra
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
-
-#### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Submissions portal
-
-Submitting messages that were blocked by [spoof intelligence](learn-about-spoof-intelligence.md) to Microsoft from the **Submissions** page adds the sender as an allow entry on the **Spoofed senders** tab in Tenant Allow/Block List.
-
-> [!NOTE]
-> When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
->
-> If the sender has not been blocked by spoof intelligence, submitting the email message to Microsoft won't create an allow entry in the Tenant Allow/Block List.
-
-The instructions to report the message are nearly identical to the steps in [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
-
-The only differences are:
-
-- The **Remove allow entry after** setting in Step 4 is meaningless, because entries for spoofed senders never expire.
-- The **Allow entry note** setting in Step 4 doesn't apply to entries for spoofed senders in the Tenant Allow/Block List.
 
 ### Use the Microsoft 365 Defender portal to create block entries for spoofed senders in the Tenant Allow/Block List
 
