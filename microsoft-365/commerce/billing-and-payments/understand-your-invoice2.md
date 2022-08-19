@@ -32,6 +32,12 @@ Your bill or invoice provides a summary of charges for your subscription and inc
 > [!NOTE]
 > If you have other subscriptions instead of or in addition to Microsoft 365, see [Understand your bill or invoice](understand-your-invoice.md).
 
+## Watch: Understand your bill or invoice
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197915).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
+
 ## How often and when am I billed?
 
 Depending on the billing frequency you chose when you bought your subscription, you receive an invoice either monthly or annually. The amount of time since the last invoice date is called the *Billing Period* and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
