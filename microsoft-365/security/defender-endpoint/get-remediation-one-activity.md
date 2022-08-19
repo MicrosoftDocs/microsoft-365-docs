@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
 ---
 
@@ -141,5 +141,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [List all remediation activities](get-remediation-all-activities.md)
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
