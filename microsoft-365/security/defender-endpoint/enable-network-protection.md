@@ -179,7 +179,7 @@ Use the following procedure to enable network protection on domain-joined comput
    - **Audit**
    - **Disabled**
 
-6. Complete the rest of the steps, and save the policy. 
+6. Complete the rest of the steps, and save the policy.
 
 7. From the ribbon, select **Deploy** to deploy the policy to a collection.
 
