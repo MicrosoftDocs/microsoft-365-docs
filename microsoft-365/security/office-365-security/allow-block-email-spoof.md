@@ -69,10 +69,16 @@ You manage allow and block entries for email in the Microsoft 365 Defender Porta
 
 You have the following options to create block entries for domains and email addresses:
 
-- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list)
 - [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-submissions-portal)
+- The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list)
 
 To create block entries for spoofed senders, see the [Use the Microsoft 365 Defender portal to view allow or block entries for spoofed senders in the Tenant Allow/Block List](#use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list) section later in this article.
+
+#### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Submissions portal
+
+When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report email messages as **Should have been blocked (False negative)**, you can select **Block all emails from this recipient** to add a block entry for the domain or sender in the Tenant Allow/Block List.
+
+For instructions, see [Report questionable email to Microsoft](admin-submission.md#report-questionable-email-to-microsoft).
 
 #### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Tenant Allow/Block List
 
@@ -119,12 +125,6 @@ New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattacker
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-#### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Submissions portal
-
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report email messages as **Should have been blocked (False negative)**, you can select **Block all emails from this recipient** to add a block entry for the domain or sender in the Tenant Allow/Block List.
-
-For instructions, see [Report questionable email to Microsoft](admin-submission.md#report-questionable-email-to-microsoft).
 
 ### Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal
 
