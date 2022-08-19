@@ -5196,15 +5196,14 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Topics | Qatar* |
 | Azure Active Directory | European Union |
 | Dataverse for Teams | European Union |
-| Forms | European Union |
 | Intune | European Union |
 | Planner | European Union |
-| Power Apps for Microsoft 365 | European Union |
-| Power Automate for Microsoft 365 | European Union |
+| Power Automate Desktop | European Union |
 | Power Virtual Agent for Teams | European Union |
 | Viva Insights - Mgr / Leader / Advanced | European Union |
 | Viva learning | European Union |
 | Yammer | European Union |
+| Forms | United States |
 *Every service that stores customer data at rest in Exchange Online, SharePoint Online or OneDrive for Business, or is deployed locally.
 </p></details>
 
