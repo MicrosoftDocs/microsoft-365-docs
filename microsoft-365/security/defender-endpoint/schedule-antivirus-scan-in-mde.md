@@ -141,7 +141,7 @@ Use the following steps to schedule scans:
     ```Chmod 755 mdavfullscan```
     ```ls -la```
 
-    :::image type="content" source="images/Chmod_755_mdavfullscan.png" alt-text="7.	Change file permissions":::
+    :::image type="content" source="images/chmod_755_mdavfullscan.png" alt-text="7.	Change file permissions":::
 
     ```
     [root@enaredhat7 	cron.weekly]# 1s -1a
