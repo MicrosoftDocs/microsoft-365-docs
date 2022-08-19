@@ -75,7 +75,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
   - Your device must be in either the InsiderSlow (Preview) or InsiderFast (Beta) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
 
 ```bash
-mdatp --health releaseRing 
+mdatp health --field release_ring 
 ```
 
 If your device isn't already in the InsiderSlow(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
@@ -357,3 +357,4 @@ No End-user notification on third party browsers? Check your toast message setti
 - [Web protection](web-protection-overview.md)
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)

@@ -66,67 +66,136 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Emails** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
-3. In the **Add the network message ID or upload the email file** section, use one of the following options:
+3. On the **Emails** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+4. In the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
+
+   - **Select the submission type**: Verify the value **Email** is selected.
+
+   - **Add the network message ID or upload the email file**: Select one of the following options:
+
      - **Add the email network message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
+
      - **Upload the email file (.msg or .eml)**: Click **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
-4. In the **Choose a recipient who had an issue** box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
+   - **Choose a recipient who had an issue**: Specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
-5. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (False positive)**
-   - **Should have been blocked (False negative)**: In the **The email should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
-     - **Phish**
-     - **Malware**
-     - **Spam**
+   - **Select a reason for submitting to Microsoft**: Verify **Should not have been blocked (False positive)** is selected.
 
-6. When you're finished, click **Submit**.
+     - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgement.
 
-   > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="The New URL submission process" lightbox="../../media/submission-flyout-email.png":::
+     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+
+       After you select this option, the following settings are available:
+
+       - By default, **Sender** is selected but you can select **Domain** instead.
+
+       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+           - **1 day**
+           - **7 days**
+           - **30 days**
+           - **90 days**
+           - **Never expire**
+           - **Specific date**
+
+       - **Block entry note**: Enter optional information about why you're allowing this email.
+
+   When you're finished, click **Submit**, and then click **Done**.
+
+> :::image type="content" source="../../media/submission-flyout-email.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-flyout-email.png":::
+
+> [!NOTE]
+> For messages that were incorrectly blocked by [spoof intelligence](learn-about-spoof-intelligence.md), a block entry for the domain pair is not created in the Tenant Allow/Block List.
+>
+> For messages that were incorrectly blocked by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), a block entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+>
+> To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+
+## Report questionable email attachments to Microsoft
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, select the **Email attachments** tab.
+
+3. On the **Email attachments** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+4. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
+
+   - **Select the submission type**: Verify the value **Email attachment** is selected.
+
+   - **File**: Click **Browse files** to find and select the file to submit.
+
+     > [!NOTE]
+     > File submissions are not available in clouds that do not allow for data to leave the environment. **Browse files** is greyed out.
+
+   - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
+
+     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+
+     - **Block this file**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+
+       After you select this option, the following settings are available:
+
+       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+           - **1 day**
+           - **7 days**
+           - **30 days**
+           - **90 days**
+           - **Never expire**
+           - **Specific date**
+
+       - **Block entry note**: Enter optional information about why you're allowing this email.
+
+   When you're finished, click **Submit**, and then click **Done**.
+
+> :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-file-flyout.png":::
+
+ > [!NOTE]
+ > To report a file as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for files in the Submissions portal](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
 
 ## Report questionable URLs to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **URLs** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, select the **URLs** tab.
 
-3. In the **URL** box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
+3. On the **URLs** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-4. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (False positive)**
-   - **Should have been blocked (False negative)**: In the **This URL should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
-     - **Phish**
-     - **Malware**
+4. In the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
 
-5. When you're finished, click **Submit**.
+   - **Select the submission type**: Verify the value **URL** is selected.
 
-    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="The New Email submission process" lightbox="../../media/submission-url-flyout.png":::
+   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears.
+
+     > [!NOTE]
+     > URL submissions are not available in clouds that do not allow for data to leave the environment. **URL** is greyed out.
+
+   - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
+
+     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+
+     - **Block this URL**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+
+       After you select this option, the following settings are available:
+
+       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+           - **1 day**
+           - **7 days**
+           - **30 days**
+           - **90 days**
+           - **Never expire**
+           - **Specific date**
+
+       - **Block entry note**: Enter optional information about why you're allowing this email.
+
+   When you're finished, click **Submit**, and then click **Done**.
+
+> :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/submission-url-flyout.png":::
 
  > [!NOTE]
- > URL submissions are not available in clouds that do not allow for data to leave the environment. The ability to select URL will be greyed out.
-
-## Report questionable email attachment to Microsoft
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
-
-2. On the **Submissions** page, verify that the **Email attachments** tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
-
-3. In the **File** section that appears, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**.
-
-3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (False positive)**
-   - **Should have been blocked (False negative)**: In the **This file should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
-     - **Phish**
-     - **Malware**
-
-4. When you're finished, click **Submit**.
-
-    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="The New Attachment submission process" lightbox="../../media/submission-file-flyout.png":::
-
-> [!NOTE]
-> If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
-> File submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File will be greyed out.
+ > To report a URL as **Should not have been blocked (False positive)**, see [Use the Microsoft 365 Defender portal to create allow entries for URLs in the Submissions portal](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
 
 ## View email admin submissions to Microsoft
 
@@ -134,7 +203,9 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
+   - You can sort the entries by clicking on an available column header.
+
+   - Click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns** to select the columns that you want to view. The default values are marked with an asterisk (\*):
      - **Submission name**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Recipient**
@@ -158,32 +229,32 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      When you're finished, click **Apply**.
 
-     :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize column option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Customize columns option for email admin submissions." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
-   - To filter the entries, click **Filter**. The available filters are:
-     - **Date submitted**: **Start date** and **End date**.
+   - To filter the entries, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following values are available in the **Filter** flyout that appears:
+     - **Date submitted**: **Start date** and **End date** values.
      - **Submission ID**: A GUID value that's assigned to every submission.
      - **Network Message ID**
      - **Sender**
      - **Recipient**
      - **Name**
      - **Submitted by**
-     - **Reason for submitting**
-     - **Status**
-     - **Tags**
+     - **Reason for submitting**: The values **Not junk**, **Phish**, **Malware**, and **Spam**.
+     - **Status**: The values **Pending** and **Completed**.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
 
-     When you're finished, click **Apply**.
+     When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
      :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Filter options for email admin submissions." lightbox="../../media/email-admin-submission-filters.png":::
 
-   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+   - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the dropdown list:
      - **None**
      - **Reason**
      - **Status**
      - **Result**
      - **Tags**
 
-   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+   - To export the entries, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**. In the dialog that appears, save the .csv file.
 
 ## View email attachment admin submissions to Microsoft
 
@@ -191,8 +262,10 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **Email attachments** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
-     - **Attachment name**<sup>\*</sup>
+   - You can sort the entries by clicking on an available column header.
+
+   - Click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns** to select the columns that you want to view. The default values are marked with an asterisk (\*):
+     - **Attachment filename**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
      - **Status**<sup>\*</sup>
@@ -210,27 +283,27 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Customize column options for email attachment admin submissions.":::
 
-   - To filter the entries, click **Filter**. The available filters are:
+   - To filter the entries, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following values are available in the **Filter** flyout that appears:
      - **Date submitted**: **Start date** and **End date**.
      - **Submission ID**: A GUID value that's assigned to every submission.
      - **Attachment filename**
      - **Submitted by**
      - **Reason for submitting**
      - **Status**
-     - **Tags**
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
 
      When you're finished, click **Apply**.
 
      :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Filter options for email attachment admin submissions.":::
 
-   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+   - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the drop down list:
      - **None**
      - **Reason**
      - **Status**
      - **Result**
      - **Tags**
 
-   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+   - To export the entries, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**. In the dialog that appears, save the .csv file.
 
 ## View URLs admin submissions to Microsoft
 
@@ -238,7 +311,9 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, verify that the **URLs** tab is selected.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to select the columns you need. All columns can be selected and showed in the submission grid. The default values are marked with an asterisk (*):
+   - You can sort the entries by clicking on an available column header.
+
+   - Click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns** to select the columns that you want to view. The default values are marked with an asterisk (\*):
      - **URL**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
@@ -257,31 +332,31 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Customize column options for URL admin submissions.":::
 
-   - To filter the entries, click **Filter**. The available filters are:
+   - To filter the entries, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following values are available in the **Filter** flyout that appears:
      - **Date submitted**: **Start date** and **End date**.
      - **Submission ID**: A GUID value that's assigned to every submission.
      - **URL**
      - **Submitted by**
      - **Reason for submitting**
      - **Status**
-     - **Tags**
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
 
-     When you're finished, click **Apply**.
+     When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Filter options for URL admin submissions.":::
+     :::image type="content" source="../../media/url-admin-submission-filters.png" alt-text="Filter options for URL admin submissions.":::
 
-   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+   - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the dropdown list:
      - **None**
      - **Reason**
      - **Status**
      - **Result**
      - **Tags**
 
-   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+   - To export the entries, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**. In the dialog that appears, save the .csv file.
 
-### Admin submission result details
+## Admin submission result details
 
-Messages that are submitted in admin submissions are reviewed and results shown in the submissions detail flyout:
+Messages that are submitted in admin submissions are reviewed by Microsoft and results shown in the submissions detail flyout:
 
 - If there was a failure in the sender's email authentication at the time of delivery.
 - Information about any policy hits that could have affected or overridden the verdict of a message.
@@ -298,8 +373,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show the options. The default values are marked with an asterisk (*):
-
+   - Click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns** to select the columns that you want to view. The default values are marked with an asterisk (\*):
      - **Email subject**<sup>\*</sup>
      - **Reported by**<sup>\*</sup>
      - **Date reported**<sup>\*</sup>
@@ -319,24 +393,24 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
      When you're finished, click **Apply**.
 
-   - To filter the entries, click **Filter**. The available filters are:
+   - To filter the entries, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following values are available in the **Filter** flyout that appears:
      - **Date reported**: **Start date** and **End date**.
      - **Reported by**
      - **Email subject**
      - **Message reported ID**
      - **Network Message ID**
      - **Sender**
-     - **Reported reason**: **Not junk**, **Phish**, or **Spam**
-     - **Reported from**: **Microsoft add-in** or **Third party add-in**
-     - **Phish simulation**: **Yes** or **No**
-     - **Converted to admin submission**: **Yes** or **No**
-     - **Tags**
+     - **Reported reason**: The values **Not junk**, **Phish**, or **Spam**.
+     - **Reported from**: The values **Microsoft add-in** or **Third party add-in**.
+     - **Phish simulation**: The values **Yes** or **No**.
+     - **Converted to admin submission**: The values **Yes** or **No**.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
 
-     When you're finished, click **Apply**.
+     When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="The New Filter options for user submissions" lightbox="../../media/admin-submission-reported-messages.png":::
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Filter options for user submissions." lightbox="../../media/admin-submission-reported-messages.png":::
 
-   - To group the entries, click **Group** and select one of the following values from the dropdown list:
+   - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the dropdown list:
      - **None**
      - **Reason**
      - **Sender**
@@ -347,21 +421,22 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Converted to admin submission**
      - **Tags**
 
-   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
-   - To notify users see [Admin Review for Reported messages](admin-review-reported-message.md)
- 
+   - To export the entries, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**. In the dialog that appears, save the .csv file.
+
+   - To notify users, see [Admin Review for Reported messages](admin-review-reported-message.md)
+
 > [!NOTE]
-> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
+> If organizations are configured to send user reported messages to the [custom mailbox only](user-submission.md), reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
 ## Undo user submissions
 
-Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
+Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it's available for recovery in their Deleted Items or Junk Email folders.
 
 ## Convert user reported messages from the custom mailbox into an admin submission
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
-On the **User reported messages** tab, select a message in the list, click **Submit to Microsoft for analysis**, and then select one of the following values from the dropdown list:
+On the **User reported messages** tab, select a message in the list, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Submit to Microsoft for analysis**, and then select one of the following values from the dropdown list:
 
 - **Report clean**
 - **Report phishing**
