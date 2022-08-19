@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 08/19/2022
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -64,7 +64,7 @@ The following table describes the top 10 days to secure your business data with 
 
 (<a id="fn1">1</a>) [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices.
 
-## Comparing features in Microsoft 365 for business plans
+## Comparing Microsoft 365 for business plans
 
 All the Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. With Microsoft 365 Business Premium, you also get threat protection, data protection, and device management capabilities. These additional capabilities protect your organization from online threats and unauthorized access and allow you to manage company data on your phones, tablets, and computers. 
 
@@ -78,7 +78,7 @@ The following table compares capabilities that are included in Microsoft 365 for
 | **Antispam, antiphishing, and antimalware protection** for email <br/>([Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md)) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Mobile device management** and mobile app management <br/>([Microsoft Intune](/mem/intune/fundamentals/what-is-intune)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>([Microsoft Defender for Business](../../security/defender-business/mdb-overview.md)) | See note <sup>[[3](#fn3)]</sup>  | See note <sup>[[3](#fn3)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Advanced protection for email and documents** includes advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>([Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+| **Advanced protection for email and documents** with advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>([Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 | **Information protection** capabilities to discover, classify, protect, and govern sensitive information <br/>([Azure Information Protection](/azure/information-protection/what-is-information-protection))  | | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
 (<a id="fn2">2</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops.
