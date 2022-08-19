@@ -50,7 +50,7 @@ Once the feature is enabled, by default only owner of the group has the permissi
   
 ## Enable member permission option
 
-If there is a need for members in the group to create folders and triage messages in groups mailbox then member permission to edit groups content has to be enabled by the admin at tenant level and group owner at group level respectively.
+If there is a need for members in the group to create folders and triage messages in groups mailbox, then member permission to edit groups content has to be enabled by the admin at tenant level and group owner at group level respectively.
 
 By default, this setting is set **off** at tenant level and group level
   
@@ -64,14 +64,14 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 
    Default value: false
 
-Once this is enabled, Group owners have the option to provide group members with the ability to create folders, rename folders, copy, move and delete messages. Group level member permission is handled by Group owners.
+Once this is enabled, Group owners can provide group members with the ability to create folders, rename folders, copy, move and delete messages. Group level member permission is handled by Group owners.
 
 > [!NOTE]
 > Admins can see the current value of the settings using `Get-OrganizationConfig` cmdlet.
 
 ## Block “Move” message capability
 
-Admins have an option to block the **Move** message option for all Microsoft 365 groups within a tenant using the cmdlet `Set-OrganizationConfig -BlockMoveMessagesForGroupFold`.
+Admins can block the **Move** message option for all Microsoft 365 groups within a tenant using the cmdlet `Set-OrganizationConfig -BlockMoveMessagesForGroupFold`.
 
  - `[-BlockMoveMessagesForGroupFolders<Boolean>]` – optional
 
