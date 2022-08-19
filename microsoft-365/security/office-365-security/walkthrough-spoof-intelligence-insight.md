@@ -36,7 +36,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 > Spoofed sender management in Exchange Online PowerShell or Standalone EOP PowerShell is in the process of being migrated exclusively to the related **\*-TenantAllowBlockListSpoofItems**, **Get-SpoofIntelligenceInsight**, and **Get-SpoofMailReport** cmdlets. For procedures using these cmdlets, see the following articles:
 >
 > - [Use PowerShell to view allow or block entries for spoofed senders in the Tenant Allow/Block List](allow-block-email-spoof.md#use-powershell-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
-> - [Use PowerShell to create allow entries for spoofed senders](allow-block-email-spoof.md#use-powershell-to-create-allow-entries-for-spoofed-senders)
+> - [Use PowerShell to create allow entries for spoofed senders](allow-block-email-spoof.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 > - [Use PowerShell to create block entries for spoofed senders](allow-block-email-spoof.md#use-powershell-to-create-block-entries-for-spoofed-senders)
 > - [Use PowerShell to modify allow or block entries for spoofed senders in the Tenant Allow/Block List](allow-block-email-spoof.md#use-powershell-to-modify-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 > - [Use PowerShell to remove allow or block entries for spoofed senders from the Tenant Allow/Block List](allow-block-email-spoof.md#use-powershell-to-remove-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
