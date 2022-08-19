@@ -24,9 +24,9 @@ search.appverid:
 description: "Learn how to use the tenant switcher and multi-tenant views that give you the ability to manage tenants from a single location."
 ---
 
-# Multi-tenant management
+# Multi-tenant management for Microsoft 365 partner admins
 
-Multi-tenant management offers a unified form of management that allows Microsoft 365 partner admins the ability to administer all the tenants they manage from a single location. If you're a partner who manages multiple tenants, you can:
+Multi-tenant management offers a unified form of management that allows Microsoft 365 partner admins the ability to administer all the tenants they manage from a single location. If you're a partner who has a delegated admin role and manages multiple tenants, you can:
 
 - Move quickly between tenants you manage.
 - Assess service health, products, and billing across multiple tenants.

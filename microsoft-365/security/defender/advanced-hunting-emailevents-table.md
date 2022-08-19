@@ -27,10 +27,11 @@ ms.technology: m365d
 **Applies to:**
 
 - Microsoft 365 Defender
+- Microsoft Defender for Office 365
 
 The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
->[!TIP]
+> [!TIP]
 > For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the Defender for Cloud.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
@@ -46,7 +47,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SenderMailFromAddress` | `string` | Sender email address in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
 | `SenderFromAddress` | `string` | Sender email address in the FROM header, which is visible to email recipients on their email clients |
 | `SenderDisplayName` | `string` | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
-| `SenderObjectId` | `string` |Unique identifier for the sender’s account in Azure AD |
+| `SenderObjectId` | `string` |Unique identifier for the sender's account in Azure AD |
 | `SenderMailFromDomain` | `string` | Sender domain in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
 | `SenderFromDomain` | `string` | Sender domain in the FROM header, which is visible to email recipients on their email clients |
 | `SenderIPv4` | `string` | IPv4 address of the last detected mail server that relayed the message |

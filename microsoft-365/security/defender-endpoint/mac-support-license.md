@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -34,7 +33,7 @@ ms.technology: mde
 
 While you are going through [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:
 
-![Image of license error.](images/no-license-found.png)
+:::image type="content" source="images/no-license-found.png" alt-text="License error" lightbox="images/no-license-found.png":::
 
 **Message:** 
 

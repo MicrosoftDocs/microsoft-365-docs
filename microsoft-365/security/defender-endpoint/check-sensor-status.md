@@ -1,5 +1,5 @@
 ---
-title: Check the health state of the sensor in Microsoft Defender for Endpoint
+title: Check the health state of the sensor at Microsoft Defender for Endpoint
 description: Check the sensor health on devices to identify which ones are misconfigured, inactive, or aren't reporting sensor data.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 ms.prod: m365-security
@@ -17,7 +17,7 @@ ms.date: 04/24/2018
 ms.technology: mde
 ---
 
-# Check sensor health state in Microsoft Defender for Endpoint
+# Check sensor health state at Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ There are two status indicators on the tile that provide information on the numb
 
 Clicking any of the groups directs you to **Devices list**, filtered according to your choice.
 
-![Screenshot of Devices with sensor issues tile.](images/atp-devices-with-sensor-issues-tile.png)
+:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="Devices with sensor issues tile" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
 
 On **Devices list**, you can filter the health state list by the following status:
 
@@ -52,7 +52,7 @@ You can also download the entire list in CSV format using the **Export** feature
 > [!NOTE]
 > Export the list in CSV format to display the unfiltered data. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.
 
-![Screenshot of Devices list page.](images/atp-devices-list-page.png)
+:::image type="content" source="images/atp-devices-list-page.png" alt-text="The Export tab in the Device list page" lightbox="images/atp-devices-list-page.png":::
 
 You can view the device details when you click on a misconfigured or inactive device.
 

@@ -53,7 +53,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `IsLocalAdmin` | `boolean` | Boolean indicator of whether the user is a local administrator on the machine |
 | `LogonId` | `string` | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
 | `RemoteDeviceName` | `string` | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name  or a host name without domain information |
-| `RemoteIP` | `string` | IP address that was being connected to |
+| `RemoteIP` | `string` | IP address of the device from which the logon attempt was performed |
 | `RemoteIPType` | `string` | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemotePort` | `int` | TCP port on the remote device that was being connected to |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
@@ -84,6 +84,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | `string` | Additional information about the event in JSON array format |
+
+>[!NOTE]
+>The collection of DeviceLogonEvents is not supported on Windows 7 or Windows Server 2008R2 devices onboarded to Defender for Endpoint. We recommend upgrading to a more recent operating system for optimal visibility into user logon activity.
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

@@ -2,8 +2,8 @@
 title: "Configure support integration with ServiceNow - Basic Authentication"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -197,6 +197,16 @@ These steps are required to set up the integration between your ServiceNow insta
     The Microsoft 365 support integration app will execute tests to ensure the integration is working. If there is a problem with the configuration, an error message will explain what needs to be fixed. Otherwise, the application is ready.
      :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
+1. \[ServiceNow Admin\] Enable Microsoft support integration for an existing user.
+
+    Microsoft 365 support integration is enabled for the user with one of these roles:
+
+    - x\_mioms\_m365\_assis.insights\_user
+
+    - x\_mioms\_m365\_assis.administrator
+
 1. \[OPTIONAL\] [The user with role x_mioms_m365_assis.administrator link] Link Microsoft 365 Admin account.
+
     If any user has the role x_mioms_m365_assis.administrator and is using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must go to Microsoft 365 support > Link Account to set up their Microsoft 365 admin email.
+    
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::

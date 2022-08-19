@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -44,7 +43,7 @@ Exclusions can be useful to avoid incorrect detections on files or software that
 
 ## Supported exclusion types
 
-The follow table shows the exclusion types supported by Defender for Endpoint on Mac.
+The following table shows the exclusion types supported by Defender for Endpoint on Mac.
 
 Exclusion|Definition|Examples
 ---|---|---
@@ -73,7 +72,7 @@ For more information on how to configure exclusions from JAMF, Intune, or anothe
 
 Open the Defender for Endpoint application and navigate to **Manage settings** \> **Add or Remove Exclusion...**, as shown in the following screenshot:
 
-![Manage exclusions screenshot.](images/mdatp-37-exclusions.png)
+:::image type="content" source="images/mdatp-37-exclusions.png" alt-text="The Manage exclusions page" lightbox="images/mdatp-37-exclusions.png":::
 
 Select the type of exclusion that you wish to add and follow the prompts.
 

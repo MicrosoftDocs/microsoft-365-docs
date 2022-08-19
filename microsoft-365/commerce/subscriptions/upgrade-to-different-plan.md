@@ -2,10 +2,10 @@
 title: "Upgrade to a different business plan"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,16 +14,16 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150 
 description: "The easiest way to upgrade plans is to use the Upgrade tab in the admin center. However, the Upgrade tab isn't always supported."
 ms.date: 04/21/2021
 ---
 
-# Upgrade to a different plan
+# Upgrade to a different Microsoft plan
 
 When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
 
@@ -31,9 +31,9 @@ When your business changes, or you need more features, you can upgrade plans. Th
 
 When you use the **Upgrade** tab, you're led through the process of buying a new plan. All users are automatically assigned licenses in the new plan, and your old plan is canceled for you.
 
-1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to upgrade.
-3. On the subscription details page, select **Upgrade**.
+3. On the subscription details page, under **Product details and upgrades**, select **View upgrades recommended for your org**.
 4. Find the plan to which you want to upgrade, then select the **Upgrade** button.
 5. Enter the number of licenses that you need, choose whether to pay each month or for the whole year, then select **Go to checkout**.
     > [!NOTE]
@@ -160,4 +160,4 @@ The day your plan upgrade is complete, the billing on your old subscription will
 ## Related content
 
 [Change plans manually](change-plans-manually.md) (article)\
-[Back up data before switching Microsoft 365 for business plans](back-up-data-before-switching-plans.md) (article)
+[Back up data before switching Microsoft 365 for business plans](move-users-different-subscription.md) (article)

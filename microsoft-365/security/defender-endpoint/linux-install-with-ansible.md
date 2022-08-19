@@ -70,7 +70,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
@@ -136,7 +136,7 @@ Create a subtask or role files that contribute to a playbook or task.
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel".
+    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle utilize, replace *[version]* with the version of Oracle Linux.
 
   ```bash
   - name: Add Microsoft APT key

@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+title: Onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -9,25 +9,25 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 ---
 
-# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)
+# Onboard and offboard macOS devices into Microsoft Purview solutions using Intune
 
-You can use Intune to onboard macOS devices into Microsoft 365 compliance solutions.
+You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 ## Before you begin
 
@@ -38,7 +38,7 @@ You can use Intune to onboard macOS devices into Microsoft 365 compliance soluti
 - Install the v95+ Edge browser on your macOS devices 
 
 
-## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
 Onboarding a macOS device into Compliance solutions is a six phase process.
 
@@ -47,7 +47,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. [Deploy the onboarding package](#deploy-the-onboarding-package)
 1. [Enable system extension](#enable-system-extension)
 1. [Get the installation package](#get-the-installation-package)
-1. [Deploy the installation package](#deploy-the-microsoft-dlp-installation-package)
+1. [Publish application](#publish-application)
 
 ### Create system configuration profiles
 
@@ -242,9 +242,11 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 > Before you can deploy the *wdav.pkg.* package via Intune, it must be reformatted using the *Intune App Wrapping Tools for Mac* into the *wdav.pkg.intunemac* format.
  
 
-### Deploy the Microsoft DLP installation package
+### Publish application
 
-1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos) to convert the *wdav.pkg* file into the proper format and deploy it through Intune.
+Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS
+
+1. Follow the procedures in [Intune-based deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-with-intune#publish-application) to deploy MDE to enrolled macOS devices.
 
 ## Offboard macOS devices using Intune
 

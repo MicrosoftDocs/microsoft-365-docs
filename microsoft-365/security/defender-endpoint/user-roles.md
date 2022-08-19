@@ -57,7 +57,7 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 
 - **View data**
   - **Security operations** - View all security operations data in the portal
-  - **Threat and vulnerability management** - View threat and vulnerability management data in the portal
+  - **Threat and vulnerability management** - View Defender Vulnerability Management data in the portal
 
 - **Active remediation actions**
   - **Security operations** - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators
@@ -71,7 +71,7 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
     > [!NOTE]
     > This setting is only available in the Microsoft Defender for Endpoint administrator (default) role.
 
-- **Manage security settings in Defender for Cloud** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
+- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, manage email notifications, and manage evaluation lab
 
 - **Live response capabilities**
   - **Basic** commands:

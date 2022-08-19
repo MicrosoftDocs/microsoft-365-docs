@@ -31,7 +31,7 @@ The threat protection report provides high-level information about alerts genera
 
 The dashboard is structured into two sections:
 
-![Image of the threat protection report.](images/threat-protection-reports.png)
+:::image type="content" source="images/threat-protection-reports.png" alt-text="The threat protection report" lightbox="images/threat-protection-reports.png":::
 
 Section|Description
 ---|---

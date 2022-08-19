@@ -75,7 +75,7 @@ For more information about how to resolve this issue, see [Egress network connec
 
 This insight will be displayed if we detected devices between your users and Microsoft's network. We recommend that latency-sensitive Microsoft 365 network traffic bypass such devices. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
-One network intermediary insight we show is SSL break and inspection when critical Microsoft 365 network endpoints for Exchange, SharePoint and Teams are intercepted and decrypted by network intermediary devices.
+One network intermediary insight we show is SSL break and inspection when critical Microsoft 365 network endpoints for Exchange, SharePoint, and Teams are intercepted and decrypted by network intermediary devices.
 
 ### What does this mean?
 

@@ -2,7 +2,7 @@
 title: "How to configure Skype for Business on-premises to use Hybrid Modern Authentication"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article

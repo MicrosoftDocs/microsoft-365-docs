@@ -61,7 +61,7 @@ Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-
    1. Go to **Start** and type **cmd**.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
+    :::image type="content" source="images/run-as-admin.png" alt-text="The Window Start menu pointing to Run as administrator" lightbox="images/run-as-admin.png":::
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -116,7 +116,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
    1. Go to **Start** and type **cmd**.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
-        ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
+      :::image type="content" source="images/run-as-admin.png" alt-text="The Windows Start menu pointing to the Run as administrator option" lightbox="images/run-as-admin.png":::
 
 4. Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

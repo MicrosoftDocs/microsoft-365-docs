@@ -2,8 +2,8 @@
 title: "Microsoft Productivity Score"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -130,9 +130,9 @@ The details pages are:
 - [Microsoft 365 Apps health – technology experiences](apps-health.md)
 - [Endpoint Analytics](/mem/analytics/productivity-score)
 
-## Business continuity special report
+## Business resilience special report
 
-The Business continuity report is a limited-time Workplace Intelligence report available to all Microsoft 365 customers to help them guide their organizations during this challenging time.  
+The Business resilience report is a limited-time Workplace Intelligence report available to all Microsoft 365 customers to help them guide their organizations during this challenging time.  
 
 This report helps organizations understand: 
 
@@ -142,7 +142,7 @@ This report helps organizations understand:
 
 - Whether remote meetings support effective decision-making.
 
-[Learn more about the Business continuity report](/Workplace-Analytics/tutorials/bcrps)
+[Learn more about the Business resilience report](/Workplace-Analytics/tutorials/bcrps)
 
 [Learn more about Microsoft Graph](/graph/)
 

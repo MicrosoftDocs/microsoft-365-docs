@@ -11,7 +11,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: "Learn about how to export and import document understanding models with PowerShell in SharePoint Syntex."
 ---
 

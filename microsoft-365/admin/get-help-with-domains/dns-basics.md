@@ -2,8 +2,8 @@
 title: "DNS basics"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,8 +12,8 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet

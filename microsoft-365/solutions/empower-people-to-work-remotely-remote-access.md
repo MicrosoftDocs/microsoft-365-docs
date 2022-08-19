@@ -2,8 +2,8 @@
 title: "Step 2. Provide remote access to on-premises apps and services"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -52,7 +52,7 @@ With split tunneling, you can configure your VPN client to exclude specific type
 
 To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories). See [this list](../enterprise/urls-and-ip-address-ranges.md) of Optimize category endpoints.
 
-Here is the resulting traffic flow, in which most of the traffic to Microsoft 365 cloud apps bypass the VPN connection.
+Here is the resulting traffic flow, in which most of the traffic to Microsoft 365 cloud apps bypasses the VPN connection.
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png" alt-text="Network traffic from VPN clients with tunneling." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png":::
 

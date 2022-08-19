@@ -65,8 +65,8 @@ To configure secure collaboration, you use these Microsoft 365 capabilities and 
 |---|---|---|
 |Microsoft Defender for Office 365|Safe Attachments for SPO, OneDrive and Teams; Safe Documents; Safe Links for Teams|Microsoft 365 E1, E3 and E5|
 |SharePoint|Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings|Microsoft 365 E1, E3 and E5|
-|Microsoft Teams|Guest access, private teams, private channels|Microsoft 365 E1, E3 and E5|
-|Microsoft 365 Compliance|Sensitivity labels|Microsoft 365 E3 and E5|
+|Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E1, E3 and E5|
+|Microsoft Purview|Sensitivity labels|Microsoft 365 E3 and E5|
 
 ## Collaboration governance framework for Teams and Microsoft 365
 
@@ -114,6 +114,7 @@ These resources will help you get started with setting up your environment for c
 - [Collaborate on documents](collaborate-on-documents.md) for sharing individual files of folders.
 - [Collaborate in a site](collaborate-in-site.md) for collaborating with guests in a SharePoint site.
 - [Collaborate as a team](collaborate-as-team.md) for collaborating with guests in a team.
+- [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect) for collaborating with people outside the organization in a shared channel.
 
 Depending on the sensitivity of the information being shared, you can add safeguards to help prevent oversharing. These resources will help you set up the protections that you need for your organization:
 
@@ -121,7 +122,7 @@ Depending on the sensitivity of the information being shared, you can add safegu
 - [Limit accidental exposure to files when sharing with people outside your organization](share-limit-accidental-exposure.md)
 - [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
-If you have a major project with a partner organization, you can use Azure Entitlement Management to manage the guests from that organization in a team that you set up for the project. See [Create a B2B extranet with managed guests](b2b-extranet.md) for details.
+If you have a major project with a partner organization, you can use either [shared channels](/microsoft-365/solutions/collaborate-teams-direct-connect) or [Azure Entitlement Management](b2b-extranet.md) to manage the people outside your organization who you need to collaborate with.
 
 ## Training for administrators
 
@@ -149,7 +150,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 |Training:|Protect enterprise information with Microsoft 365|
 |---|---|
-|![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<p>1 hr - Learning Path - 5 Modules|
+|![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/modules/m365-security-info-overview/introduction/)
@@ -183,7 +184,7 @@ What IT architects need to know about groups in Microsoft 365
 
 |**Item**|**Description**|
 |---|---|
-|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Updated June 2019|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
+|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \|[Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Updated May 2022|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
 
 ### Microsoft Teams and related productivity services in Microsoft 365 for IT architects
 
@@ -204,6 +205,6 @@ When you're ready to deploy this solution, continue with these steps:
 
 [Microsoft 365 security documentation](../security/index.yml)
 
-[Microsoft 365 compliance documentation](../compliance/index.yml)
+[Microsoft Purview documentation](../compliance/index.yml)
 
 [Welcome to Microsoft Teams](/MicrosoftTeams/Teams-overview)
