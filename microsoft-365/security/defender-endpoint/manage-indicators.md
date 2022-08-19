@@ -43,7 +43,7 @@ The cloud detection engine of Defender for Endpoint regularly scans collected da
 
 ## Endpoint prevention engine
 
-The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender AV will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender AV will not detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary Antivirus configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender Antivirus will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender Antivirus will not detect nor block the file from being run.
 
 ## Automated investigation and remediation engine
 

@@ -46,7 +46,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-All the Microsoft 365 plans offer baseline protection and security with Defender Antivirus, but with Microsoft 365 Business Premium you also have threat protection, data protection, and device management features due to the inclusion of Microsoft Defender for Business.  These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers.
+All the Microsoft 365 plans offer baseline protection and security with Microsoft Defender Antivirus, but with Microsoft 365 Business Premium you also have threat protection, data protection, and device management features due to the inclusion of Microsoft Defender for Business.  These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers.
 
 ## Security features comparison
 

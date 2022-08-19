@@ -334,7 +334,7 @@
               href: sit-get-started-exact-data-match-based-sits-overview.md
             - name: Create EDM SIT new experience
               items: 
-              - name: Create EMD SIT workflow new experience
+              - name: Create EDM SIT workflow new experience
                 href: sit-create-edm-sit-unified-ux-workflow.md
               - name: Export source data
                 href: sit-get-started-exact-data-match-export-data.md 
@@ -356,7 +356,7 @@
                 href: sit-get-started-exact-data-match-create-schema.md
               - name: Hash and upload the sensitive information source table for EDM classic experience
                 href: sit-get-started-exact-data-match-hash-upload.md
-              - name: Create exact data match sensitive information type/rule packag
+              - name: Create exact data match sensitive information type/rule package
                 href: sit-get-started-exact-data-match-create-rule-package.md
               - name: Test an EDM sensitive information type
                 href: sit-get-started-exact-data-match-test.md

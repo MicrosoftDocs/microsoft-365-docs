@@ -7621,8 +7621,23 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/commerce/licenses/add-licenses-using-product-key.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "defender/threat-intelligence/index.md",
       "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial.md",
+      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
+      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
       "redirect_document_id": false
     }
   ]

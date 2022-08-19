@@ -115,10 +115,9 @@ A user visits a website:
   - **Unblock** - The user won't need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for another 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-  > [!div class="mx-imgBorder"]
-  > ![Shows a network protection phishing content warn notification](images/network-protection-phishing-warn-2.png)
+    :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
 
-  > [NOTE!]
+  > [!NOTE]
   > The images shown here for warn experience and block experience (below) both list **"blocked url"** as example placeholder text; in a functioning environment the actual url or domain will be listed.  
 
 #### Block experience
@@ -129,7 +128,7 @@ A user visits a website:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-   ![ Shows a network protection known phishing content blocked notification](images/network-protection-phishing-blocked.png)
+    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="images/network-protection-phishing-blocked.png":::
 
 ### Network protection: C2 detection and remediation
 
@@ -141,11 +140,11 @@ Support for Command and Control servers (C2) is a key part of this ransomware ev
 
 A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
-   ![Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
+:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
-Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft 365 Defender portal](https://security.microsoft.com), using the following configuration tool. 
+Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
 
-   ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
+:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
 
 ## Using network protection
 
@@ -173,8 +172,8 @@ DeviceEvents
 
 ```
 
- > [!div class="mx-imgBorder"]
- > ![Advanced hunting for auditing and identifying events](images/network-protection-advanced-hunting.png)
+
+:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events." lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
@@ -321,3 +320,5 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
+- [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
+- [Network protection for MacOS](network-protection-macos.md) | To learn more about Microsoft Network protection for MacOS
