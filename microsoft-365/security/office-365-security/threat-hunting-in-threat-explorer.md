@@ -53,6 +53,8 @@ With these tools, you can:
 - Investigate malicious email, and more
 
 For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
+> [!TIP]
+> Advanced hunting in Microsoft 365 Defender now supports an easy-to-use query builder for analysts who want to hunt through cloud app data and other threat data (if available) even if they do not know Kusto Query Language. To get started, read [Build queries using guided mode](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-builder).
 
 Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Microsoft Defender for Office 365. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
