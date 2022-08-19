@@ -48,7 +48,7 @@ Restrictions are typically applied by adding the restriction type to the file or
 
 ### Requirements
 
-This capability requires Windows Defender Antivirus:
+This capability requires Microsoft Defender Antivirus:
 
 - Platform: **4.18.2205.7** or later
 - Engine: **1.1.19300.2** or later
