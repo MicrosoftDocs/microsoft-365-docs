@@ -155,6 +155,8 @@ Network protection is enabled per device, which is typically done using your man
 
 You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
+For information about Network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for MacOS](network-protection-macos.md).
+
 ## Advanced hunting
 
 If you're using advanced hunting to identify audit events, you'll have up to 30 days history available from the console. See [Advanced hunting](advanced-hunting-overview.md).
