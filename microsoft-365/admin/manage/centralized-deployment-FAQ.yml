@@ -48,7 +48,12 @@ sections:
       - question: |
           How long does it take for add-ins to show up for all users?
         answer: |
-          It can take up to 24 hours for a new add-in deployment to show up for all users. It can take up to 72 hours for add-in updates, changes from turn on or turn off, or add-in removals to reflect for users.
+          It can take up to 24 hours for a new add-in deployment to show up for all users. It can take up to 72 hours for add-in updates, changes from turn on or turn off to reflect for users.
+          
+      - question: |
+          How long does it take for add-ins to get removed for all users?    
+        answer: |  
+            It can take up to 24 hours for add-in removal to reflect for all users.
 
       - question: |
           As an administrator, how do I manage the user access to add-ins for my organization?
