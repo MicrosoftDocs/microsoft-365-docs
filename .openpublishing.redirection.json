@@ -17,7 +17,7 @@
     },
     {
       "source_path": "microsoft-365/admin/manage/show-hide-new-features.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/whats-new-in-preview",
+      "redirect_url": "/admin/whats-new-in-preview",
       "redirect_document_id": false
     },
     {
