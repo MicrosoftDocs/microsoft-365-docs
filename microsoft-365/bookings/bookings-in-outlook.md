@@ -65,12 +65,12 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    "Anonymous:CalendarSharingFreeBusyReviewer"" should be one of the domains in the response.
+    "Anonymous:CalendarSharingFreeBusySimple"" should be one of the domains in the response.
 
    To enable anonymous sharing, use the following command.
 
    ```PowerShell
-     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
+     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
 
 ## Turn Bookings with me on or off
