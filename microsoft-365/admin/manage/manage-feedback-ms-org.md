@@ -35,17 +35,25 @@ The table below represents which apps and services are currently connected to th
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|Yes|Yes|Yes|Yes|
 |**Excel**|Yes|Yes|Yes|Yes|
+|**Forms**|Yes|Yes|Yes|Yes|
+|**Intune Company Portal (Android)**|Yes|Yes|Yes|Yes|
+|**Microsoft Stream (Android, iOS)**|Yes|Yes|Yes|Yes|
+|**Microsoft Whiteboard**|Yes|Yes|Yes|Yes|
 |**Office.com**|Coming soon|Coming soon|Coming soon|Coming soon|
 |**OneNote**|Yes|Yes|Yes|Yes|
 |**OneDrive**|[Some settings currently managed by other controls.](/onedrive/disable-contact-support-send-feedback)||||
-|**Outlook**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Outlook (Web, iOS)**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Outlook (Desktop, Android, Mac)**|Coming soon|Coming soon|Coming soon|Coming soon|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
 |**Project**|Coming soon|Coming soon|Coming soon|Coming soon|
 |**Publisher**|Yes|Yes|Yes|Yes|
 |**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**To Do**|Yes|Yes|Yes|Yes|
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
+|**Viva Goals**|Yes|Yes|Yes|Yes|
+|**Whiteboard**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
 
 [See here for some examples of in-product surveys and feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
