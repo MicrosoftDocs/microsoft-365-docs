@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: o365-administration
 ms.collection: 
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/18/2022
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365
@@ -41,11 +41,11 @@ If you haven't created device groups or profiles yet, the best way to get starte
 
 2. On the left navigation pane, choose **Devices** \> **Autopilot**.
 
-    ![In the admin center, choose devices and then Autopilot.](../media/Autopilot.png)
+    :::image type="content" source="../media/Autopilot.png" alt-text="In the Microsoft 365 admin center, choose devices and then Autopilot.":::
   
 3. On the **Autopilot** page, click or tap **Start guide**.
 
-    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    :::image type="content" source="../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png" alt-text="Click Start guide for step-by-step instructions for Autopilot":::
   
 4. On the **Upload .csv file with list of devices** page, browse to a location where you have the prepared .CSV file, then **Open** \> **Next**. The file must have three headers:
 
@@ -82,6 +82,6 @@ For more information, see [Device list CSV-file](../admin/misc/device-list.md). 
 
 ## Related content
 
-- [About Autopilot Profile settings](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
-- [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
-- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[About Autopilot Profile settings](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
+[Options for protecting your devices and app data](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md) (article)\
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

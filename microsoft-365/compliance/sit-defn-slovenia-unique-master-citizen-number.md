@@ -23,14 +23,6 @@ description: "Slovenia Unique Master Citizen Number sensitive information type e
 
 # Slovenia Unique Master Citizen Number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 13 digits without spaces or delimiters

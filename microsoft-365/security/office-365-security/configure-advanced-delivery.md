@@ -113,7 +113,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
 
-   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). These URLs are wrapped at the time of click, but they aren't blocked.
+   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list). These URLs are wrapped at the time of click, but they aren't blocked.
 
    To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -143,9 +143,9 @@ In addition to the two scenarios that the advanced delivery policy can help you 
 
 - **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we _**highly recommended**_ that these allowances are temporary.
 
-## Security & Compliance PowerShell procedures for SecOps mailboxes in the advanced delivery policy
+## PowerShell procedures for SecOps mailboxes in the advanced delivery policy
 
-In Security & Compliance PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
+In PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
 
 - **The SecOps override policy**: Controlled by the **\*-SecOpsOverridePolicy** cmdlets.
 - **The SecOps override rule**: Controlled by the **\*-SecOpsOverrideRule** cmdlets.
@@ -276,9 +276,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 For detailed syntax and parameter information, see [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## Security & Compliance PowerShell procedures for third-party phishing simulations in the advanced delivery policy
+## PowerShell procedures for third-party phishing simulations in the advanced delivery policy
 
-In Security & Compliance PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
+In PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
 
 - **The phishing simulation override policy**: Controlled by the **\*-PhishSimOverridePolicy** cmdlets.
 - **The phishing simulation override rule**: Controlled by the **\*-PhishSimOverrideRule** cmdlets.
@@ -339,13 +339,13 @@ For detailed syntax and parameter information, see [New-PhishSimOverrideRule](/p
 
 #### Step 3: (Optional) Use PowerShell to identify the phishing simulation URLs to allow
 
-Use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
-For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
+For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list)
 
 This example adds a URL allow entry for the specified third-party phishing simulation URL with no expiration.
 
