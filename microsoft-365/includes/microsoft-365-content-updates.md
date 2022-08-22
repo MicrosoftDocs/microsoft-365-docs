@@ -2,6 +2,176 @@
 
 
 
+## Week of August 15, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/15/2022 | [Manage billing across multiple tenants in the Microsoft 365 admin center](/microsoft-365/commerce/billing-and-payments/manage-multi-tenant-billing?view=o365-worldwide) | added |
+| 8/15/2022 | Payment Services Directive 2 and Strong Customer Authentication for commercial customers | removed |
+| 8/15/2022 | [Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview?view=o365-worldwide) | modified |
+| 8/15/2022 | [View and edit your security settings in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide) | modified |
+| 8/15/2022 | [Visit the Microsoft 365 Defender portal](/microsoft-365/security/defender-business/mdb-get-started?view=o365-worldwide) | modified |
+| 8/15/2022 | [Endpoint detection and response in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode?view=o365-worldwide) | modified |
+| 8/15/2022 | [Export assessment methods and properties per device](/microsoft-365/security/defender-endpoint/get-assessment-methods-properties?view=o365-worldwide) | modified |
+| 8/15/2022 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 8/15/2022 | [Collaborate with guests in a site](/microsoft-365/solutions/collaborate-in-site?view=o365-worldwide) | modified |
+| 8/15/2022 | [Compliance score calculation](/microsoft-365/compliance/compliance-score-calculation?view=o365-worldwide) | modified |
+| 8/15/2022 | [eDiscovery (Premium) limits](/microsoft-365/compliance/limits-ediscovery20?view=o365-worldwide) | modified |
+| 8/15/2022 | [Limits for Content search and eDiscovery (Standard) in the compliance center](/microsoft-365/compliance/limits-for-content-search?view=o365-worldwide) | modified |
+| 8/15/2022 | [Allow or block emails using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-email-spoof?view=o365-worldwide) | modified |
+| 8/15/2022 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365?view=o365-worldwide) | modified |
+| 8/16/2022 | [Use Power Automate connectors to build Bookings workflows](/microsoft-365/bookings/power-automate-integration?view=o365-worldwide) | added |
+| 8/16/2022 | [Share DLP alerts](/microsoft-365/compliance/dlp-share-alerts?view=o365-worldwide) | added |
+| 8/16/2022 | [Azure AD configuration for content encrypted by Microsoft Purview Information Protection](/microsoft-365/compliance/encryption-azure-ad-configuration?view=o365-worldwide) | added |
+| 8/16/2022 | [Create exact data match sensitive information type workflow classic experience](/microsoft-365/compliance/sit-create-edm-sit-classic-ux-workflow?view=o365-worldwide) | added |
+| 8/16/2022 | [Create EDM SIT sample file for the new experience](/microsoft-365/compliance/sit-create-edm-sit-unified-ux-sample-file?view=o365-worldwide) | added |
+| 8/16/2022 | [Create EDM SIT using the new experience](/microsoft-365/compliance/sit-create-edm-sit-unified-ux-schema-rule-package?view=o365-worldwide) | added |
+| 8/16/2022 | [Create exact data match sensitive information type workflow new experience](/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide) | added |
+| 8/16/2022 | [Automate document generation with SharePoint Syntex and Power Automate (preview)](/microsoft-365/contentunderstanding/automate-document-generation) | added |
+| 8/16/2022 | [Suspicious password-spray-related IP address activity alert](/microsoft-365/security/defender/alert-grading-password-spray?view=o365-worldwide) | added |
+| 8/16/2022 | [Enable auto-expanding archiving](/microsoft-365/compliance/enable-autoexpanding-archiving?view=o365-worldwide) | modified |
+| 8/16/2022 | [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide) | modified |
+| 8/16/2022 | [Get started with exact data match based sensitive information types](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide) | modified |
+| 8/16/2022 | [Create the schema for exact data match based sensitive information types](/microsoft-365/compliance/sit-get-started-exact-data-match-create-schema?view=o365-worldwide) | modified |
+| 8/16/2022 | [Export source data for exact data match based sensitive information type](/microsoft-365/compliance/sit-get-started-exact-data-match-export-data?view=o365-worldwide) | modified |
+| 8/16/2022 | [Hash and upload the sensitive information source table for exact data match sensitive information types](/microsoft-365/compliance/sit-get-started-exact-data-match-hash-upload?view=o365-worldwide) | modified |
+| 8/16/2022 | [Learn about exact data match based sensitive information types](/microsoft-365/compliance/sit-learn-about-exact-data-match-based-sits?view=o365-worldwide) | modified |
+| 8/16/2022 | [Philippines passport number entity definition](/microsoft-365/compliance/sit-defn-philippines-passport-number?view=o365-worldwide) | added |
+| 8/16/2022 | [Qatari ID card number](/microsoft-365/compliance/sit-defn-qatari-id-card-number?view=o365-worldwide) | added |
+| 8/16/2022 | [Secure Windows devices](/microsoft-365/business-premium/m365bp-secure-windows-devices?view=o365-worldwide) | modified |
+| 8/17/2022 | [Microsoft Purview solutions trial playbook](/microsoft-365/compliance/compliance-easy-trials-compliance-playbook?view=o365-worldwide) | modified |
+| 8/17/2022 | [Microsoft Defender Vulnerability Management frequently asked questions](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-faq?view=o365-worldwide) | modified |
+| 8/17/2022 | About the Microsoft Defender Vulnerability Management public preview trial | removed |
+| 8/17/2022 | Trial playbook - Microsoft Defender Vulnerability Management (public preview) | removed |
+| 8/17/2022 | [What's new in Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-worldwide) | modified |
+| 8/17/2022 | [The Microsoft Defender for Office 365 email entity page](/microsoft-365/security/office-365-security/mdo-email-entity-page?view=o365-worldwide) | modified |
+| 8/17/2022 | [Protect information subject to data privacy regulation](/microsoft-365/solutions/information-protection-deploy-protect-information?view=o365-worldwide) | modified |
+| 8/17/2022 | [Configure privacy settings in Microsoft Whiteboard](/microsoft-365/whiteboard/configure-privacy-settings?view=o365-worldwide) | modified |
+| 8/17/2022 | [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers](/microsoft-365/compliance/device-onboarding-offboarding-macos-intune-mde?view=o365-worldwide) | modified |
+| 8/17/2022 | [Use network protection to help prevent Linux connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection-linux?view=o365-worldwide) | added |
+| 8/17/2022 | [Use network protection to help prevent macOS connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection-macos?view=o365-worldwide) | added |
+| 8/17/2022 | [Use network protection to help prevent connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection?view=o365-worldwide) | modified |
+| 8/18/2022 | [Integrate Microsoft OneDrive LTI with Desire2Learn Brightspace](/microsoft-365/lti/onedrive-lti-brightspace?view=o365-worldwide) | added |
+| 8/18/2022 | Add licenses using a product key | removed |
+| 8/18/2022 | [Buy or remove licenses](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide) | modified |
+| 8/18/2022 | [Renew Microsoft 365 for business](/microsoft-365/commerce/subscriptions/renew-your-subscription?view=o365-worldwide) | modified |
+| 8/18/2022 | [Azure AD configuration for content encrypted by Microsoft Purview Information Protection](/microsoft-365/compliance/encryption-azure-ad-configuration?view=o365-worldwide) | modified |
+| 8/18/2022 | [Use Microsoft OneDrive LTI with Blackboard](/microsoft-365/lti/onedrive-lti-blackboard?view=o365-worldwide) | modified |
+| 8/18/2022 | [Protect against malware and other threats with Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-increase-protection?view=o365-worldwide) | modified |
+| 8/18/2022 | [Frontline team collaboration](/microsoft-365/frontline/flw-team-collaboration?view=o365-worldwide) | modified |
+| 8/18/2022 | [Investigate devices in the Defender for Endpoint Devices list](/microsoft-365/security/defender-endpoint/investigate-machines?view=o365-worldwide) | modified |
+| 8/18/2022 | [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports?view=o365-worldwide) | modified |
+| 8/18/2022 | [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus-when-migrating?view=o365-worldwide) | modified |
+| 8/19/2022 | [Frequently asked questions on tamper protection](/microsoft-365/security/defender-endpoint/faqs-tamper-protection?view=o365-worldwide) | added |
+| 8/19/2022 | [Manage tamper protection using tenant attach with Configuration Manager, version 2006](/microsoft-365/security/defender-endpoint/manage-tamper-protection-configuration-manager?view=o365-worldwide) | added |
+| 8/19/2022 | [Manage tamper protection on an individual device](/microsoft-365/security/defender-endpoint/manage-tamper-protection-individual-device?view=o365-worldwide) | added |
+| 8/19/2022 | [Manage tamper protection for your organization using Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-365-defender?view=o365-worldwide) | added |
+| 8/19/2022 | [Manage tamper protection for your organization using Microsoft Endpoint Manager](/microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-endpoint-manager?view=o365-worldwide) | added |
+| 8/19/2022 | [How to schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/schedule-antivirus-scan-in-mde?view=o365-worldwide) | added |
+| 8/19/2022 | [View the details and results of an automated investigation](/microsoft-365/security/defender-endpoint/autoir-investigation-results?view=o365-worldwide) | modified |
+| 8/19/2022 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-worldwide) | modified |
+| 8/19/2022 | [Protect security settings with tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-worldwide) | modified |
+| 8/19/2022 | [Details and results of an automated investigation](/microsoft-365/security/defender/m365d-autoir-results?view=o365-worldwide) | modified |
+| 8/19/2022 | [Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps?view=o365-worldwide) | modified |
+| 8/19/2022 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide) | modified |
+| 8/19/2022 | [Allow or block emails using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-email-spoof?view=o365-worldwide) | modified |
+| 8/19/2022 | [Allow or block files using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-files?view=o365-worldwide) | modified |
+| 8/19/2022 | [Allow or block URLs using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-urls?view=o365-worldwide) | modified |
+| 8/19/2022 | [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](/microsoft-365/security/office-365-security/configure-advanced-delivery?view=o365-worldwide) | modified |
+| 8/19/2022 | [Manage allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/manage-tenant-allow-block-list?view=o365-worldwide) | modified |
+| 8/19/2022 | Manage your allows and blocks in the Tenant Allow/Block List | removed |
+| 8/19/2022 | [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight](/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight?view=o365-worldwide) | modified |
+| 8/19/2022 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365?view=o365-worldwide) | modified |
+| 8/19/2022 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide) | modified |
+| 8/19/2022 | [Endpoint detection and response in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure and validate Microsoft Defender Antivirus network connections](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 8/20/2022 | [Troubleshooting and FAQ - Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-troubleshoot?view=o365-worldwide) | added |
+| 8/20/2022 | [Microsoft 365 admin center Project activity ](/microsoft-365/admin/activity-reports/project-activity?view=o365-worldwide) | added |
+| 8/20/2022 | [Automatically retain or delete content by using retention policies](/microsoft-365/compliance/create-retention-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft 365 Reports in the admin center - Viva Learning activity](/microsoft-365/admin/activity-reports/viva-learning-activity?view=o365-worldwide) | added |
+| 8/20/2022 | [Collect cloud attachments in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-cloud-attachments?view=o365-worldwide) | added |
+| 8/20/2022 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-worldwide) | modified |
+| 8/20/2022 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft 365 usage analytics data model](/microsoft-365/admin/usage-analytics/usage-analytics-data-model?view=o365-worldwide) | modified |
+| 8/20/2022 | [What's new in the Microsoft 365 admin center?](/microsoft-365/admin/whats-new-in-preview?view=o365-worldwide) | modified |
+| 8/20/2022 | [Message Encryption FAQ](/microsoft-365/compliance/ome-faq?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft Purview compliance documentation # < 60 chars](/microsoft-365/compliance/index?view=o365-worldwide) | modified |
+| 8/20/2022 | [Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft 365 Lighthouse Windows 365 (Cloud PCs) page overview](/microsoft-365/lighthouse/m365-lighthouse-win365-page-overview?view=o365-worldwide) | modified |
+| 8/20/2022 | [Office TLS Certificate Changes](/microsoft-365/compliance/encryption-office-365-tls-certificates-changes?view=o365-worldwide) | modified |
+| 8/20/2022 | [Implement attack surface reduction (ASR) rules deployment](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement?view=o365-worldwide) | modified |
+| 8/20/2022 | [Operationalize attack surface reduction (ASR) rules deployment](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize?view=o365-worldwide) | modified |
+| 8/20/2022 | [Plan ASR rules attack surface reduction deployment rules deployment](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-plan?view=o365-worldwide) | modified |
+| 8/20/2022 | [Test attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-test?view=o365-worldwide) | modified |
+| 8/20/2022 | [ASR rules deployment prerequisites](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment?view=o365-worldwide) | modified |
+| 8/20/2022 | [Examples of device control policies for Intune](/microsoft-365/security/defender-endpoint/mac-device-control-intune?view=o365-worldwide) | modified |
+| 8/20/2022 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-worldwide) | modified |
+| 8/20/2022 | [Use network protection to help prevent connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection?view=o365-worldwide) | modified |
+| 8/20/2022 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide) | modified |
+| 8/20/2022 | [Step 3. Identity for your Microsoft 365 for enterprise tenants](/microsoft-365/solutions/tenant-management-identity?view=o365-worldwide) | modified |
+| 8/20/2022 | [View and organize the Microsoft Defender for Endpoint Alerts queue](/microsoft-365/security/defender-endpoint/alerts-queue?view=o365-worldwide) | modified |
+| 8/20/2022 | [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi?view=o365-worldwide) | modified |
+| 8/20/2022 | [Get Microsoft Defender for Business](/microsoft-365/security/defender-business/get-defender-business?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure alert notifications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-email-notifications?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure vulnerability email notifications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft Defender Vulnerability Management public preview](/microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure Microsoft 365 support integration with AAD OAuth Token](/microsoft-365/admin/manage/servicenow-aad-oauth-token?view=o365-worldwide) | added |
+| 8/20/2022 | [Configure support integration with ServiceNow Basic Authentication](/microsoft-365/admin/manage/servicenow-basic-authentication?view=o365-worldwide) | added |
+| 8/20/2022 | [Microsoft 365 support integration with ServiceNow configuration overview](/microsoft-365/admin/manage/servicenow-overview?view=o365-worldwide) | added |
+| 8/20/2022 | [Testing the ServiceNow configuration](/microsoft-365/admin/manage/servicenow-testing-the-configuration?view=o365-worldwide) | added |
+| 8/20/2022 | [Troubleshooting Microsoft 365 support integration with ServiceNow](/microsoft-365/admin/manage/servicenow-troubleshooting?view=o365-worldwide) | added |
+| 8/20/2022 | [About the Microsoft Compliance Manager premium assessment trial](/microsoft-365/compliance/compliance-easy-trials-compliance-manager-assessments?view=o365-worldwide) | added |
+| 8/20/2022 | [Get started with Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft Compliance Manager templates list](/microsoft-365/compliance/compliance-manager-templates-list?view=o365-worldwide) | modified |
+| 8/20/2022 | [Working with assessment templates in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-templates?view=o365-worldwide) | modified |
+| 8/20/2022 | [What's new in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-whats-new?view=o365-worldwide) | modified |
+| 8/20/2022 | [Set up a connector to import Epic EHR data](/microsoft-365/compliance/import-epic-data?view=o365-worldwide) | added |
+| 8/20/2022 | [Set up a connector to import generic healthcare audit data](/microsoft-365/compliance/import-healthcare-data?view=o365-worldwide) | added |
+| 8/20/2022 | [Configure Microsoft Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide) | modified |
+| 8/20/2022 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-email-messages?view=o365-worldwide) | modified |
+| 8/20/2022 | [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments?view=o365-worldwide) | modified |
+| 8/20/2022 | [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about?view=o365-worldwide) | modified |
+| 8/20/2022 | [Common mistakes to avoid when defining exclusions](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 8/20/2022 | [Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 8/20/2022 | [Protect your organization's data with device control](/microsoft-365/security/defender-endpoint/device-control-report?view=o365-worldwide) | modified |
+| 8/20/2022 | [Request to change access level](/microsoft-365/test-base/accesslevel?view=o365-worldwide) | added |
+| 8/20/2022 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 8/20/2022 | [Manage auto-claim policies](/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-worldwide) | modified |
+| 8/20/2022 | [Search the audit log in the Microsoft 365 compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) | modified |
+| 8/20/2022 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-worldwide) | modified |
+| 8/20/2022 | [Get help and support for Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-get-help-and-support?view=o365-worldwide) | modified |
+| 8/20/2022 | [Use Advanced Audit to investigate compromised accounts](/microsoft-365/compliance/mailitemsaccessed-forensics-investigations?view=o365-worldwide) | modified |
+| 8/20/2022 | [Work with communications in Advanced eDiscovery](/microsoft-365/compliance/managing-custodian-communications?view=o365-worldwide) | modified |
+| 8/20/2022 | [Reports in Microsoft Defender for Business (preview)](/microsoft-365/security/defender-business/mdb-reports?view=o365-worldwide) | modified |
+| 8/20/2022 | [Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy](/microsoft-365/security/defender-endpoint/configure-endpoints-gp?view=o365-worldwide) | modified |
+| 8/20/2022 | [Admin review for reported messages](/microsoft-365/security/office-365-security/admin-review-reported-message?view=o365-worldwide) | modified |
+| 8/20/2022 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide) | modified |
+| 8/20/2022 | [How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-report-false-positives-negatives?view=o365-worldwide) | modified |
+| 8/20/2022 | [Review and manage remediation actions in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure global settings for Safe Links settings in Defender for Office 365](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure anti-phishing policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/configure-mdo-anti-phishing-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure outbound spam filtering](/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) | modified |
+| 8/20/2022 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [Email security with Threat Explorer in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/email-security-in-microsoft-defender?view=o365-worldwide) | modified |
+| 8/20/2022 | [Investigate malicious email that was delivered in Microsoft 365, Find and investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide) | modified |
+| 8/20/2022 | [Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-worldwide) | modified |
+| 8/20/2022 | [Permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center?view=o365-worldwide) | modified |
+| 8/20/2022 | [Responding to a Compromised Email Account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account?view=o365-worldwide) | modified |
+| 8/20/2022 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-safe-attachments-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-safe-links-policies?view=o365-worldwide) | modified |
+| 8/20/2022 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) | modified |
+| 8/20/2022 | [Use Azure Privileged Identity Management (PIM) in Microsoft Defender for Office 365 to limit admin access to cyber security tools.](/microsoft-365/security/office-365-security/use-privileged-identity-management-in-defender-for-office-365?view=o365-worldwide) | modified |
+| 8/20/2022 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide) | modified |
+| 8/20/2022 | [View Defender for Office 365 reports](/microsoft-365/security/office-365-security/view-reports-for-mdo?view=o365-worldwide) | modified |
+
+
 ## Week of August 08, 2022
 
 
@@ -441,139 +611,3 @@
 | 7/21/2022 | [Create notifications for exact data match activities](/microsoft-365/compliance/sit-edm-notifications-activities?view=o365-21vianet) | modified |
 | 7/22/2022 | [Apply encryption using sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-21vianet) | modified |
 | 7/22/2022 | [Onboard devices without Internet access to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboard-offline-machines?view=o365-21vianet) | modified |
-
-
-## Week of July 11, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/11/2022 | [Understand the proposal workflow](/microsoft-365/commerce/understand-proposal-workflow?view=o365-21vianet) | modified |
-| 7/11/2022 | [Investigate and remediate communication compliance alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate?view=o365-21vianet) | modified |
-| 7/11/2022 | [Overview of the eDiscovery (Premium) solution in Microsoft Purview](/microsoft-365/compliance/overview-ediscovery-20?view=o365-21vianet) | modified |
-| 7/11/2022 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
-| 7/11/2022 | Overview of Microsoft Defender Security Center | removed |
-| 7/11/2022 | [Trial playbook - Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-trial-playbook?view=o365-21vianet) | added |
-| 7/11/2022 | [Export incidents queue to CSV files](/microsoft-365/security/defender/export-incidents-queue?view=o365-21vianet) | added |
-| 7/11/2022 | [Microsoft Defender for Identity in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-mdi?view=o365-21vianet) | added |
-| 7/11/2022 | [Report spam, non-spam, phishing, and suspicious emails to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
-| 7/11/2022 | [Enable block at first sight to detect malware in seconds](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 7/11/2022 | [Evaluate Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/evaluate-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 7/11/2022 | [Overview of next-generation protection in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/next-generation-protection?view=o365-21vianet) | modified |
-| 7/11/2022 | [Onboard previous versions of Windows on Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboard-downlevel?view=o365-21vianet) | modified |
-| 7/11/2022 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
-| 7/11/2022 | [What's new in Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-21vianet) | modified |
-| 7/11/2022 | [Manage GDPR data subject requests in Microsoft Whiteboard](/microsoft-365/whiteboard/gdpr-requests?view=o365-21vianet) | modified |
-| 7/11/2022 | [Compare Microsoft Defender for Endpoint plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2?view=o365-21vianet) | modified |
-| 7/11/2022 | [Microsoft Defender Antivirus in Windows](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-21vianet) | modified |
-| 7/12/2022 | [Learn how to mitigate the Log4Shell vulnerability in Microsoft Defender for Endpoint - threat and vulnerability management](/microsoft-365/security/defender-vulnerability-management/tvm-manage-log4shell-guidance?view=o365-21vianet) | renamed |
-| 7/12/2022 | [Microsoft 365 feature descriptions](/microsoft-365/admin/m365-feature-descriptions?view=o365-21vianet) | modified |
-| 7/12/2022 | [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-21vianet) | modified |
-| 7/12/2022 | [Block potentially unwanted applications with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 7/12/2022 | [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-21vianet) | modified |
-| 7/12/2022 | [Understand and use attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-21vianet) | modified |
-| 7/12/2022 | [Microsoft 365 Health Dashboard](/microsoft-365/admin/manage/health-dashboard-overview?view=o365-21vianet) | added |
-| 7/12/2022 | Admin training video library # < 60 chars | removed |
-| 7/12/2022 | [What's new in Microsoft Purview risk and compliance solutions](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
-| 7/12/2022 | [Microsoft Threat Experts](/microsoft-365/security/defender-endpoint/microsoft-threat-experts?view=o365-21vianet) | modified |
-| 7/12/2022 | [Microsoft Threat Experts in Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-threat-experts?view=o365-21vianet) | modified |
-| 7/12/2022 | [Spoof intelligence insight](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence?view=o365-21vianet) | modified |
-| 7/13/2022 | [Get Microsoft Defender for Business servers](/microsoft-365/security/defender-business/get-defender-business-servers?view=o365-21vianet) | added |
-| 7/13/2022 | [Microsoft Defender for Business preview features](/microsoft-365/security/defender-business/mdb-preview?view=o365-21vianet) | added |
-| 7/13/2022 | [Onboard your organization's devices to Microsoft Defender for Business](/microsoft-365/business-premium/m365bp-onboard-devices-mdb?view=o365-21vianet) | modified |
-| 7/13/2022 | [Decryption in eDiscovery](/microsoft-365/compliance/ediscovery-decryption?view=o365-21vianet) | modified |
-| 7/13/2022 | [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/compare-mdb-m365-plans?view=o365-21vianet) | modified |
-| 7/13/2022 | [Get Microsoft Defender for Business](/microsoft-365/security/defender-business/get-defender-business?view=o365-21vianet) | modified |
-| 7/13/2022 | [View and edit your security settings in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-21vianet) | modified |
-| 7/13/2022 | [Device groups in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-create-edit-device-groups?view=o365-21vianet) | modified |
-| 7/13/2022 | [Microsoft Defender for Business frequently asked questions](/microsoft-365/security/defender-business/mdb-faq?view=o365-21vianet) | modified |
-| 7/13/2022 | [Firewall in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-firewall?view=o365-21vianet) | modified |
-| 7/13/2022 | [Visit the Microsoft 365 Defender portal](/microsoft-365/security/defender-business/mdb-get-started?view=o365-21vianet) | modified |
-| 7/13/2022 | [Manage devices in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-manage-devices?view=o365-21vianet) | modified |
-| 7/13/2022 | [Understand next-generation protection configuration settings in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-next-gen-configuration-settings?view=o365-21vianet) | modified |
-| 7/13/2022 | [Onboard devices to Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-onboard-devices?view=o365-21vianet) | modified |
-| 7/13/2022 | [What is Microsoft Defender for Business?](/microsoft-365/security/defender-business/mdb-overview?view=o365-21vianet) | modified |
-| 7/13/2022 | [Microsoft Defender for Business and Microsoft partner resources](/microsoft-365/security/defender-business/mdb-partners?view=o365-21vianet) | modified |
-| 7/13/2022 | [Reports in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-reports?view=o365-21vianet) | modified |
-| 7/13/2022 | [Requirements for Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-requirements?view=o365-21vianet) | modified |
-| 7/13/2022 | [Review remediation actions in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-review-remediation-actions?view=o365-21vianet) | modified |
-| 7/13/2022 | [Assign roles and permissions in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-roles-permissions?view=o365-21vianet) | modified |
-| 7/13/2022 | [Set up and configure Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-setup-configuration?view=o365-21vianet) | modified |
-| 7/13/2022 | [The simplified configuration process in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-simplified-configuration?view=o365-21vianet) | modified |
-| 7/13/2022 | [Microsoft Defender for Business troubleshooting](/microsoft-365/security/defender-business/mdb-troubleshooting?view=o365-21vianet) | modified |
-| 7/13/2022 | [Tutorials and simulations in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-tutorials?view=o365-21vianet) | modified |
-| 7/13/2022 | [Use setup wizard in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-use-wizard?view=o365-21vianet) | modified |
-| 7/13/2022 | [View or edit policies in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-view-edit-create-policies?view=o365-21vianet) | modified |
-| 7/13/2022 | [View and manage incidents in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-view-manage-incidents?view=o365-21vianet) | modified |
-| 7/13/2022 | [Microsoft Defender for Business trial playbook](/microsoft-365/security/defender-business/trial-playbook-defender-business?view=o365-21vianet) | modified |
-| 7/13/2022 | [Configure and manage Microsoft Threat Experts capabilities](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts?view=o365-21vianet) | modified |
-| 7/13/2022 | [Configure and manage Microsoft Threat Experts capabilities through Microsoft 365 Defender](/microsoft-365/security/defender/configure-microsoft-threat-experts?view=o365-21vianet) | modified |
-| 7/13/2022 | [Configure global settings for Safe Links settings in Defender for Office 365](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
-| 7/13/2022 | [Migrate to Microsoft Defender for Office 365 Phase 2: Setup](/microsoft-365/security/office-365-security/migrate-to-defender-for-office-365-setup?view=o365-21vianet) | modified |
-| 7/13/2022 | [Protect against threats in Microsoft Defender for Office 365, Anti-malware, Anti-Phishing, Anti-spam, Safe links, Safe attachments, Zero-hour auto purge (ZAP), MDO security configuration](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
-| 7/13/2022 | [Complete Safe Links overview for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links?view=o365-21vianet) | modified |
-| 7/13/2022 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-safe-links-policies?view=o365-21vianet) | modified |
-| 7/13/2022 | [Learn about communication compliance](/microsoft-365/compliance/communication-compliance?view=o365-21vianet) | modified |
-| 7/13/2022 | Secure Windows 10 computers | removed |
-| 7/13/2022 | [Paying for your subscription](/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?view=o365-21vianet) | modified |
-| 7/13/2022 | Microsoft 365 Security for Business Decision Makers (BDMs) | removed |
-| 7/13/2022 | [Understand and use attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-21vianet) | modified |
-| 7/13/2022 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-21vianet) | modified |
-| 7/14/2022 | [Microsoft Defender for Business frequently asked questions](/microsoft-365/security/defender-business/mdb-faq?view=o365-21vianet) | modified |
-| 7/14/2022 | [Compare Microsoft Defender for Endpoint plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2?view=o365-21vianet) | modified |
-| 7/14/2022 | [Enable the Report Message or the Report Phishing add-ins](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
-| 7/14/2022 | [Assess the impact of security configuration changes with Explorer](/microsoft-365/security/office-365-security/step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer?view=o365-21vianet) | added |
-| 7/14/2022 | [Deploy and configure the report message add-in](/microsoft-365/security/office-365-security/step-by-step-guides/deploy-and-configure-the-report-message-add-in?view=o365-21vianet) | added |
-| 7/14/2022 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-21vianet) | modified |
-| 7/14/2022 | [How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains](/microsoft-365/security/office-365-security/step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains?view=o365-21vianet) | renamed |
-| 7/15/2022 | [Enable pay-as-you-go for your subscription in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services?view=o365-21vianet) | added |
-| 7/15/2022 | [Block user sign-in in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-block-user-signin?view=o365-21vianet) | modified |
-| 7/15/2022 | [Manage self-service password reset in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-manage-sspr?view=o365-21vianet) | modified |
-| 7/15/2022 | [Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus](/microsoft-365/lighthouse/m365-lighthouse-mitigate-threats?view=o365-21vianet) | modified |
-| 7/15/2022 | [Reset a user password in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-reset-user-password?view=o365-21vianet) | modified |
-| 7/15/2022 | [View and manage risky users in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-view-manage-risky-users?view=o365-21vianet) | modified |
-| 7/15/2022 | [Set up and configure the Moodle plugin](/microsoft-365/lti/moodle-plugin-configuration?view=o365-21vianet) | modified |
-| 7/15/2022 | [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](/microsoft-365/security/defender-endpoint/android-intune?view=o365-21vianet) | modified |
-| 7/15/2022 | [Investigate data loss incidents with Microsoft 365 Defender](/microsoft-365/security/defender/investigate-dlp?view=o365-21vianet) | modified |
-| 7/15/2022 | [Virtual appointments with Microsoft Teams and the Bookings app](/microsoft-365/frontline/bookings-virtual-visits?view=o365-21vianet) | added |
-| 7/15/2022 | [Manage the join experience for Teams virtual appointments on browsers](/microsoft-365/frontline/browser-join?view=o365-21vianet) | added |
-| 7/15/2022 | [Deploy teams at scale for frontline workers in Microsoft Teams](/microsoft-365/frontline/deploy-teams-at-scale?view=o365-21vianet) | added |
-| 7/15/2022 | [Virtual appointments with Teams - Integration into Cerner EHR](/microsoft-365/frontline/ehr-admin-cerner?view=o365-21vianet) | added |
-| 7/15/2022 | [Virtual appointments with Teams - Integration into Epic EHR](/microsoft-365/frontline/ehr-admin-epic?view=o365-21vianet) | added |
-| 7/15/2022 | [Microsoft Teams EHR connector Virtual Appointments report](/microsoft-365/frontline/ehr-connector-report?view=o365-21vianet) | added |
-| 7/15/2022 | [Choose your scenarios for Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-choose-scenarios?view=o365-21vianet) | added |
-| 7/15/2022 | [Corporate communications with frontline workers](/microsoft-365/frontline/flw-corp-comms?view=o365-21vianet) | added |
-| 7/15/2022 | [Learn where to start with a frontline deployment](/microsoft-365/frontline/flw-deploy-overview?view=o365-21vianet) | added |
-| 7/15/2022 | [Manage mobile devices for frontline workers](/microsoft-365/frontline/flw-devices?view=o365-21vianet) | added |
-| 7/15/2022 | [Understand frontline worker user types and licensing](/microsoft-365/frontline/flw-licensing-options?view=o365-21vianet) | added |
-| 7/15/2022 | [Provide initial and ongoing training to help onboard your frontline workers](/microsoft-365/frontline/flw-onboarding-training?view=o365-21vianet) | added |
-| 7/15/2022 | [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](/microsoft-365/frontline/flw-onboarding-wizard?view=o365-21vianet) | added |
-| 7/15/2022 | [Get started with Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview?view=o365-21vianet) | added |
-| 7/15/2022 | [Start with a pilot deployment of Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-pilot?view=o365-21vianet) | added |
-| 7/15/2022 | [Set up Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-setup-microsoft-365?view=o365-21vianet) | added |
-| 7/15/2022 | [Frontline team collaboration](/microsoft-365/frontline/flw-team-collaboration?view=o365-21vianet) | added |
-| 7/15/2022 | [Manage the Frontline Trial in Teams](/microsoft-365/frontline/flw-trial?view=o365-21vianet) | added |
-| 7/15/2022 | [Engage your frontline employees and focus on wellbeing](/microsoft-365/frontline/flw-wellbeing-engagement?view=o365-21vianet) | added |
-| 7/15/2022 | [Managers - Get your team started with Microsoft 365 for frontline workers](/microsoft-365/frontline/get-up-and-running?view=o365-21vianet) | added |
-| 7/15/2022 | [Message delegation](/microsoft-365/frontline/hc-delegates?view=o365-21vianet) | added |
-| 7/15/2022 | [Manage shift-based access for frontline workers in Teams](/microsoft-365/frontline/manage-shift-based-access-flw?view=o365-21vianet) | added |
-| 7/15/2022 | [Secure Messaging for healthcare organizations using Microsoft Teams](/microsoft-365/frontline/messaging-policies-hc?view=o365-21vianet) | added |
-| 7/15/2022 | [Tailor Teams apps for your frontline workers](/microsoft-365/frontline/pin-teams-apps-based-on-license?view=o365-21vianet) | added |
-| 7/15/2022 | [Manage schedule owners for shift management](/microsoft-365/frontline/schedule-owner-for-shift-management?view=o365-21vianet) | added |
-| 7/15/2022 | [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](/microsoft-365/frontline/shifts-connector-blue-yonder-powershell-setup?view=o365-21vianet) | added |
-| 7/15/2022 | [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](/microsoft-365/frontline/shifts-connector-powershell-manage?view=o365-21vianet) | added |
-| 7/15/2022 | [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](/microsoft-365/frontline/shifts-connector-wizard?view=o365-21vianet) | added |
-| 7/15/2022 | [Shifts connectors](/microsoft-365/frontline/shifts-connectors?view=o365-21vianet) | added |
-| 7/15/2022 | [Shifts for frontline workers](/microsoft-365/frontline/shifts-for-teams-landing-page?view=o365-21vianet) | added |
-| 7/15/2022 | [Simplify business processes for frontline teams](/microsoft-365/frontline/simplify-business-processes?view=o365-21vianet) | added |
-| 7/15/2022 | [Changing from a Microsoft 365 E plan to a Microsoft F plan](/microsoft-365/frontline/switch-from-enterprise-to-frontline?view=o365-21vianet) | added |
-| 7/15/2022 | [Microsoft 365 for Financial Services](/microsoft-365/frontline/teams-for-financial-services?view=o365-21vianet) | added |
-| 7/15/2022 | [Microsoft 365 for Manufacturing](/microsoft-365/frontline/teams-for-manufacturing?view=o365-21vianet) | added |
-| 7/15/2022 | [Microsoft 365 for Retail](/microsoft-365/frontline/teams-for-retail-landing-page?view=o365-21vianet) | added |
-| 7/15/2022 | [Get started with Microsoft 365 for healthcare organizations](/microsoft-365/frontline/teams-in-hc?view=o365-21vianet) | added |
-| 7/15/2022 | [Help your clients and customers use virtual appointments](/microsoft-365/frontline/virtual-appointments-toolkit?view=o365-21vianet) | added |
-| 7/15/2022 | [Virtual appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments?view=o365-21vianet) | added |
-| 7/15/2022 | [Microsoft Teams Virtual Visits usage report](/microsoft-365/frontline/virtual-visits-usage-report?view=o365-21vianet) | added |
-| 7/15/2022 | [Set up and configure the Moodle LMS plugins](/microsoft-365/lti/moodle-plugin-configuration?view=o365-21vianet) | modified |
-| 7/15/2022 | [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi?view=o365-21vianet) | modified |
-| 7/15/2022 | [Onboard devices without Internet access to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboard-offline-machines?view=o365-21vianet) | modified |
