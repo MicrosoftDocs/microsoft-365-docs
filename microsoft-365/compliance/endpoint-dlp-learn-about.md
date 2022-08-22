@@ -40,7 +40,7 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS Catalina 10.15 and later | Auditable/restrictable|
 |---------|---------|---------|---------|---------|
 |upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an unallowed browser, the upload activity will be blocked and the user is redirected to use Microsoft Edge. Microsoft Edge will then either allow or block the upload or access based on the DLP policy configuration         |supported | supported|auditable and restrictable|
-|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.|supported|supported         | auditable and restrictable|
+|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. It also detects when a user copies and pastes content among files within the same app, process or item for Word, Excel, and PowerPoint.|supported|supported         | auditable and restrictable|
 |copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.|supported|supported         | auditable and restrictable|
 |copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive |supported|supported         |auditable and restrictable|
 |print a document    |Detects when a user attempts to print a protected item to a local or network printer.|supported|supported|auditable and restrictable         |
@@ -61,7 +61,7 @@ See, [Design a data loss prevention policy](dlp-policy-design.md) for more guida
 
 ## Monitored files
 
-Endpoint DLP supports monitoring of these file types. DLP audits the activities for these file types, even if there isn't a policy match. 
+Endpoint DLP supports monitoring of these file types through policy:
 
 - Word files
 - PowerPoint files
@@ -78,6 +78,13 @@ Endpoint DLP supports monitoring of these file types. DLP audits the activities 
 - .h files
 - .java files
  
+DLP audits the activities for these file types, even if there isn't a policy match: 
+
+- Word files
+- PowerPoint files
+- Excel files
+- PDF files
+
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
 > [!NOTE]
