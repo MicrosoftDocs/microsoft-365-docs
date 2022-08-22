@@ -21,15 +21,15 @@ Do you need insights on how your applications will perform with the latest Windo
 
 Do you want to run your validation tests against Windows Insider Program builds in our Azure environment? 
 
-**Feature update** validation on Test Base for M365 can help you achieve all these and more! 
+**Feature update** validation on Test Base for Microsoft 365 can help you achieve all these and more! 
 
-Check out the step-by-step outline below to find out how to access this new capability in Test Base for M365 service. 
+Check out the step-by-step outline below to find out how to access this new capability in Test Base for Microsoft 365 service. 
 
-To get started with Feature update validation in Test Base for M365, upload your applications (and related files) through the self-service onboarding portal. 
+To get started with Feature update validation in Test Base for Microsoft 365, upload your applications (and related files) through the self-service onboarding portal. 
 
 Highlighted below are the steps to take as you fill out the **Test Matrix**: 
 
-To set up for feature updates, you must specify the target product and it’s preview channel from "Insider Channel" dropdown list. 
+To set up for feature updates, you must specify the target product and its preview channel from "Insider Channel" dropdown list. 
 
 ![Feature update validation OS type.](Media/windowsfeatureupdatevalidation01-featureupdate.png)
 
@@ -39,7 +39,7 @@ You may also set your current OS in "OS baseline for Insight". We would provide 
 
 ![Feature update validation. Choosing the Insider beta channel.](Media/windowsfeatureupdatevalidation02-osbaseline.png) 
 
-To check more details on the Windows Insider Preview builds, please refer to [[Flight Hub - Windows Insider Program | Microsoft Docs](https://docs.microsoft.com/en-us/windows-insider/flight-hub/)].
+To check more details on the Windows Insider Preview builds, refer to [[Flight Hub - Windows Insider Program | Microsoft Docs](https://docs.microsoft.com/en-us/windows-insider/flight-hub/)].
 
 
 ## Next steps
