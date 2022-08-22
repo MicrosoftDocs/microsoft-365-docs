@@ -46,7 +46,6 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Deploy the onboarding package](#deploy-the-onboarding-package)
 1. [Enable system extension](#enable-system-extension)
-1. [Get the installation package](#get-the-installation-package)
 1. [Publish application](#publish-application)
 
 ### Create system configuration profiles
@@ -227,20 +226,6 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
 1. Choose **Next** to deploy the configuration.
-
-### Get the installation package
-
-1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
- 
-1. For **Select operating system to start onboarding process** choose **macOS**
- 
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
- 
-1. Choose **Download installation package**. This will give you the *wdav.pkg* file.
-
-> [!IMPORTANT]
-> Before you can deploy the *wdav.pkg.* package via Intune, it must be reformatted using the *Intune App Wrapping Tools for Mac* into the *wdav.pkg.intunemac* format.
- 
 
 ### Publish application
 
