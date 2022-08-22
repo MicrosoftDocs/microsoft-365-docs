@@ -74,7 +74,7 @@ For information on how to view the devices in Defender for IoT, see [Manage your
 After onboarding to a Defender for IoT plan, view detected data and security assessments in the following locations:
 
 - View device data in Defender for Endpoint or Defender for IoT
-- View [alerts](alerts-queue-endpoint-detection-response.md), [recommendations](../defender-vulnerability-management/tvm-security-recommendation.md), and [vulnerabilities](../defender-vulnerability-management/tvm-weaknesses.md) in the 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+- View [alerts](alerts-queue-endpoint-detection-response.md), [recommendations](../defender-vulnerability-management/tvm-security-recommendation.md), and [vulnerabilities](../defender-vulnerability-management/tvm-weaknesses.md) in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 ### Shared device inventory
 
