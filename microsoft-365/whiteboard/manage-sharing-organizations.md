@@ -65,7 +65,7 @@ When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will c
 
 |Scenario|Storage and ownership|Sharing settings|Sharing experience|
 |---|---|---|---|
-|Add the whiteboard to a channel or chat from a desktop or mobile device|Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard|Not applicable (only applies to meetings)|In-tenant users: Can initiate, view, and collaborate<br><br>External users: Not supported<br><br>Teams guests: Can view and collaborate<br><br>Shared device accounts: Not applicable|
+|Add the whiteboard to a channel or chat from a desktop or mobile device|Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard|Not applicable (only applies to meetings)|In-tenant users: Can initiate, view, and collaborate<br><br>External users: Not supported<br><br>Teams guests: Not supported<br><br>Shared device accounts: Not applicable|
 
 ## Create and share in Whiteboard native clients
 

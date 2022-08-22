@@ -17,12 +17,12 @@
     },
     {
       "source_path": "microsoft-365/admin/manage/show-hide-new-features.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/whats-new-in-preview",
+      "redirect_url": "/microsoft-365/admin/whats-new-in-preview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/security-guide.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/business-premium/m365bp-secure-users#download-the-digital-threats-guide",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-users#download-the-digital-threats-guide",
       "redirect_document_id": false
     },
     {
@@ -7551,6 +7551,11 @@
       "redirect_document_id": false
     },
     {
+    "source_path": "microsoft-365/security/office-365-security/tenant-allow-block-list.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+    "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/privileged-access-management-overview.md",
       "redirect_url": "/microsoft-365/compliance/privileged-access-management",
       "redirect_document_id": true
@@ -7621,8 +7626,23 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/commerce/licenses/add-licenses-using-product-key.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "defender/threat-intelligence/index.md",
       "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial.md",
+      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
+      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
       "redirect_document_id": false
     }
   ]
