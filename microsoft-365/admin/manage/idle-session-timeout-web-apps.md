@@ -77,7 +77,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 ## Trigger idle session timeout only on unmanaged devices
 
-By default, idle session timeout feature triggers on all device types if the other conditions are met. For this feature to trigger only on an unmanaged device, an eligible Azure AD Premium P1 or P2 subscription is required. You'll also need to add a Conditional Access policy in the Azure AD admin center.
+By default, the idle session timeout feature triggers on all device types if the other conditions are met. For this feature to trigger only on an unmanaged device, an eligible Azure AD Premium P1 or P2 subscription is required. You'll also need to add a Conditional Access policy in the Azure AD admin center.
 
 ## Idle session timeout on unmanaged devices  
 
