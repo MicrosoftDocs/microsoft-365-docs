@@ -174,11 +174,11 @@ Finally, select **Run query** to hunt for all successful network communications 
 
 To look for all high confidence phish and spam emails that were delivered to the inbox folder at the time of delivery, first select **ConfidenceLevel** under Email Events, select **equals** and choose **High** under both **Phish** and **Spam** from the suggested closed list which supports multi-selection:
 
-![Screenshot of guided mode query builder hunt high confidence phish or spam emails delivered to inbox, first condition](../../media/guided-hunting/hunt-spam-1.png)
+![Screenshot of guided mode query builder hunt high confidence phish or spam emails delivered to inbox, first condition](../../media/guided-hunting/hunt-phishing-1.png)
 
 Then, add another condition, this time specifying the folder or **DeliveryLocation, Inbox/folder**. 
 
-![Screenshot of guided mode query builder hunt high confidence phish or spam emails delivered to inbox, second condition](../../media/guided-hunting/hunt-spam-2.png)
+![Screenshot of guided mode query builder hunt high confidence phish or spam emails delivered to inbox, second condition](../../media/guided-hunting/hunt-phishing-2.png)
 
 
 
