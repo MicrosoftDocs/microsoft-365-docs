@@ -106,7 +106,7 @@ You need to specify the recipient conditions and exceptions that determine who t
 You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
 > [!IMPORTANT]
-> Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+> Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
 >
 > - The recipient is: romain@contoso.com
 > - The recipient is a member of: Executives
@@ -117,9 +117,16 @@ You can only use a condition or exception once, but the condition or exception c
 
 ## Safe Links settings for email messages
 
-Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten using the Microsoft standard URL prefix: `https://nam01.safelinks.protection.outlook.com`. After the link is rewritten, it's analyzed for potentially malicious content.
+Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten or _wrapped_ using the Microsoft standard URL prefix: `https://nam01.safelinks.protection.outlook.com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten even if the message is _manually_ forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten. However, in the case of _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient _unless_ that recipient is also protected by Safe Links, or the URL had already been rewritten in a previous communication. As long as Safe Links is turned on, URLs are still scanned prior to delivery, regardless of whether they were rewritten or not. Unwrapped URLs will also still be checked by a client-side API call to Safe Links at the time of click in Outlook for Desktop version 16.0.12513 or later.
+After Safe Links rewrites a URL, the URL remains rewritten even if the message is _manually_ forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten.
+
+In the case of _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient _unless_ one of the following statements is true:
+
+- The recipient is also protected by Safe Links.
+- The URL was already rewritten in a previous communication.
+
+As long as Safe Links protection is turned on, URLs are scanned prior to message delivery, regardless of whether the URLs are rewritten or not. In supported versions of Outlook (Outlook for Desktop version 16.0.12513 or later), unwrapped URLs are checked by a client-side API call to Safe Links at the time of click.
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
@@ -139,7 +146,7 @@ The settings in Safe Links policies that apply to email messages are described i
       - Selected (on): Messages that contain URLs are held until scanning is finished. Messages are delivered only after the URLs are confirmed to be safe. This is the recommended value.
       - Not selected (off): If URL scanning can't complete, deliver the message anyway.
 
-  - **Do not rewrite URLs, do checks via SafeLinks API only**: If this setting is selected (on), no URL wrapping takes place. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it. The recommend value is selected (on).
+  - **Do not rewrite URLs, do checks via SafeLinks API only**: If this setting is selected (on), no URL wrapping takes place. In supported versions of Outlook (Outlook for Desktop version 16.0.12513 or later), Safe Links is called exclusively via APIs at the time of URL click.
 
   For more information about the recommended values for Standard and Strict policy settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
@@ -263,7 +270,7 @@ For more information about the order of precedence and how multiple policies are
 ## "Block the following URLs" list for Safe Links
 
 > [!NOTE]
-> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
+> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
 
 The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
 
@@ -277,7 +284,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
 
 **Notes**:
 
-- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 - Limits for the **Block the following URLs** list:
   - The maximum number of entries is 500.
   - The maximum length of an entry is 128 characters.
@@ -301,7 +308,7 @@ Examples of the values that you can enter and their results are described in the
 ## "Do not rewrite the following URLs" lists in Safe Links policies
 
 > [!NOTE]
-> The purpose of the "Do not rewrite the following URLs" list is to skip the Safe Links wrapping of the specified URLs. Instead of using this list, you can now [create allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#create-allow-url-entries).
+> Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
 
 Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that are not rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 
@@ -313,7 +320,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md). However, note that URLs added there will not be excluded from Safe Links rewriting, as that must be done in a Safe Links policy.
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md). However, note that URLs added there will not be excluded from Safe Links rewriting, as that must be done in a Safe Links policy.
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 - If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.

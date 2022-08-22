@@ -123,7 +123,7 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
     ```
 
     If you get an error message, you're already set. Go to the next step.
-1. Download  and install the [latest version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams).
+1. Download  and install the [latest preview version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams). You must be running version 4.3.1 (preview) or a later preview version.  
 
 1. Run the following to connect to Teams.
 

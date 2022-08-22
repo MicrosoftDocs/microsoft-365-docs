@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC

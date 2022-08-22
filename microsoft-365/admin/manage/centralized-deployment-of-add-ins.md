@@ -126,7 +126,7 @@ Should your Microsoft 365 reports show anonymous user names instead of actual us
 
 ## User and group assignments
 
-The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, and security groups.
+The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, dynamic groups, and security groups.
 
 > [!NOTE]
 > Non-mail enabled security groups are not currently supported.
