@@ -40,13 +40,13 @@ description: "Protect your business email and data from cyberthreats, including 
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
 
-
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
-Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Some plans, such as Microsoft 365 Business Premium, include more advanced security capabilities (such as advanced protection for your email content and devices). If you're a small or medium-size business and you have a Microsoft 365 for business plan, you can use the guidance in this article to secure your business data. 
+All Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. If you're a small or medium-size business and you have a Microsoft 365 for business plan, you can use the guidance in this article to secure your business data. 
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
+
+> [!NOTE]
+> Microsoft 365 Business Premium includes advanced security capabilities (such as advanced protection for your devices, email content, and documents). For more details, see [Comparing Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans) (in this article).
+
 
 ## 1. Use multi-factor authentication
 
