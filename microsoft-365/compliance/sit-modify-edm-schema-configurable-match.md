@@ -117,6 +117,9 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     >
     > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
     >
+    > For example:
+    >`EdmUploadAgent.exe /ValidateData /DataFile  C:\data\testdelimiters.csv /Schema C:\EDM\patientrecords.xml`
+    >
     > For more information on all the EdmUploadAgent.exe supported parameters, run
     >
     > `EdmUploadAgent.exe /?`
