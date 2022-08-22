@@ -65,7 +65,7 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 
 > [!NOTE]
-> Prior to July 2018 all unlicensed sharedmailboxes were provisioned with 100Gb mailbox size. for more information, see [Correcting Shared Mailbox provisioning and sizing](https://techcommunity.microsoft.com/t5/exchange-team-blog/correcting-shared-mailbox-provisioning-and-sizing/ba-p/607991)
+> Prior to July 2018 all unlicensed shared mailboxes were provisioned with a size of 100 GB. For more information, see [Correcting Shared Mailbox provisioning and sizing](https://techcommunity.microsoft.com/t5/exchange-team-blog/correcting-shared-mailbox-provisioning-and-sizing/ba-p/607991).
 
 ## Related content
 
