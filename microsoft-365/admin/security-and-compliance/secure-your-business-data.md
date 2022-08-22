@@ -44,7 +44,7 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
 
 > [!NOTE]
-> Microsoft 365 Business Premium includes advanced security capabilities (such as advanced protection for your devices, email content, and documents). For more details, see [Comparing Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans) (in this article).
+> Microsoft 365 Business Premium includes advanced security capabilities (such as advanced protection for your devices, email content, and documents). See [Comparing Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans) (in this article).
 
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
