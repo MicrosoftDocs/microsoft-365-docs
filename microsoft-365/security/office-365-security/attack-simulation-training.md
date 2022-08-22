@@ -164,7 +164,7 @@ When you're finished on the **Select a payload and login page**, click **Next**.
 ## Configure OAuth Payload
 
 > [!NOTE]
-> This page is available only if you selected **OAuth Consent Grant** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page. Otherwise, you're taken to the **Target users** page.
+> This page is available only if you selected **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page. Otherwise, you're taken to the **Target users** page.
 
 On the **Configure OAuth payload** page, configure the following settings:
 
@@ -522,7 +522,8 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
-- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that comes up for the drive-bu URL technique attacks. To hide the overlay and go directly to the landing page, de-select this option.
+
+- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the [select a technique page](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL technique attacks. To hide the overlay and go directly to the landing page, don't select this option.
 
 When you're finished, click **Next**.
 
