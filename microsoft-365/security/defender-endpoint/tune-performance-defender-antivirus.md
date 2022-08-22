@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### Get-MpPerformanceReport
 
-The following section describes the Get-MpPerformanceReport PowerShell cmdlet. Analyzes and reports on Microsoft Defender Antivirus (MDAV) performance recording.
+The following section describes the Get-MpPerformanceReport PowerShell cmdlet. Analyzes and reports on Microsoft Defender Antivirus performance recording.
 
 #### Syntax: Get-MpPerformanceReport
 
