@@ -39,6 +39,8 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to protect docu
 
 When you apply this sensitivity label to a supported container, the label automatically applies the sensitivity category and configured protection settings to the site or group.
 
+Be aware that some label options can extend configuration settings to site owners, that are otherwise restricted to administrators. When these options are configured in a sensitivity label, a site owner can now set and change external sharing options and the authentication context for a site by applying or changing the sensitivity label for a team or site.
+
 Content in these containers however, do not inherit the labels for the sensitivity category or settings for files and emails, such as content markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Container labels don't support displaying [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) and display the original language only for the label name and description.
