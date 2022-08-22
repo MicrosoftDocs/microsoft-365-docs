@@ -32,7 +32,7 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
-# Top 10 ways to secure your business data - Best practices for small and medium-sized businesses
+# Top 10 ways to secure your data - Best practices for small and medium-sized businesses
 
 **Applies to**
 
