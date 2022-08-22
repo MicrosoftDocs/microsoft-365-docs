@@ -67,6 +67,8 @@ Your subscription includes [preset security policies](../../security/office-365-
 
 To learn more, see [Protect against malware and other cyberthreats](../../business-premium/m365bp-increase-protection.md).
 
+Microsoft 365 Business Premium includes [Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md), which provides advanced anti-phishing, Safe Attachments, Safe Links, and real-time detections.
+
 ## 4. Protect all devices
 
 Every device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. 
@@ -77,7 +79,7 @@ To learn more, see the following articles:
 - [Protect unmanaged Windows and Mac computers](../../business-premium/m365bp-protect-pcs-macs.md) 
 - [Set up managed devices](../../business-premium/m365bp-managed-devices-setup.md)
 
-> [!IMPORTANT]
+> [!NOTE]
 > [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices.
 
 ## 5. Train everyone on email best practices
