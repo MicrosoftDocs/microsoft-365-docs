@@ -42,84 +42,25 @@ description: "Protect your business email and data from cyberthreats, including 
 
 Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. If you're a small or medium-size business and you have a Microsoft 365 for business plan, you can use the guidance in this article to secure your business data. 
 
-:::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
 
 > [!NOTE]
 > Microsoft 365 Business Premium includes advanced security capabilities (such as advanced protection for your devices, email content, and documents). For more details, see [Comparing Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans) (in this article).
 
 
-## 1. Use multi-factor authentication
+:::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
 
-**[Multi-factor authentication](set-up-multi-factor-authentication.md)** (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. To set up MFA, you can use either security defaults (suitable for most businesses) or Conditional Access (for more stringent security requirements). 
-
-To learn more, see the following articles: 
-
-- [Security defaults and Conditional Access (MFA)](../../business-premium/m365bp-conditional-access.md)
-- [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md)
-
-## 2. Protect your admininstrator accounts 
-
-Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. To protect your admin accounts, see [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md). 
-
-## 3. Use preset security policies 
-
-Your subscription includes [preset security policies](../../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security. 
-
-To learn more, see [Protect against malware and other cyberthreats](../../business-premium/m365bp-increase-protection.md).
-
-Microsoft 365 Business Premium includes [Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md), which provides advanced anti-phishing, Safe Attachments, Safe Links, and real-time detections.
-
-## 4. Protect all devices
-
-Every device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. 
-
-To learn more, see the following articles: 
-
-- [Set up MFA on mobile devices](../../business-premium/m365bp-multifactor-authentication.md) 
-- [Protect unmanaged Windows and Mac computers](../../business-premium/m365bp-protect-pcs-macs.md) 
-- [Set up managed devices](../../business-premium/m365bp-managed-devices-setup.md)
-
-> [!NOTE]
-> [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices.
-
-## 5. Train everyone on email best practices
-
-Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. Train everyone to know what to watch for spam or junk mail, phishing attempts, spoofing, and malware in their email. 
-
-To learn more, see [Protect yourself against phishing and other attacks](../../business-premium/m365bp-avoid-phishing-and-attacks.md).
-
-## 6. Use Microsoft Teams for collaboration and sharing
-
-The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it. 
-
-To learn more, see the following articles: 
-- [Use Microsoft Teams for collaboration](../../business-premium/create-teams-for-collaboration.md) 
-- [Set up meetings with Microsoft Teams](../../business-premium/set-up-meetings.md) 
-- [Share files and videos in a safe environment](../../business-premium/share-files-and-videos.md) 
-
-## 7. Set sharing settings for SharePoint and OneDrive files and folders
-
-Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. 
-
-To learn more, see [Set sharing settings for SharePoint and OneDrive files and folders](../../business-premium/m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). 
-
-## 8. Use Microsoft 365 apps on devices
-
-Outlook and Microsoft 365 apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to files that are stored in SharePoint or OneDrive. 
-
-To learn more, see [Install Office apps on all devices](../../business-premium/m365bp-install-office-apps.md). 
-
-## 9. Manage calendar sharing for your business
-
-You can prevent people in your organization from sharing their calendars. You can also manage what level of detail they can share. For example, you can restrict the sharing to free/busy times only. 
-
-To learn more, see [Disable or manage calendar sharing](../../business-premium/m365bp-increase-protection.md#disable-or-manage-calendar-sharing).
-
-## 10. Maintain your environment
-
-After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. You'll need to perform certain tasks, such as adding or removing users, resetting passwords, and resetting devices to factory settings as needed. 
-
-To learn more, see [Maintain your environment](../../business-premium/m365bp-maintain-environment.md). 
+| Task | Description | Notes |
+|:---:|:---|:---|
+| **1 - Use multi-factor authentication** | [Multi-factor authentication](set-up-multi-factor-authentication.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. To set up MFA, you can use either security defaults (suitable for most businesses) or Conditional Access (for more stringent security requirements). To learn more, see the following articles: <br/>- [Security defaults and Conditional Access (MFA)](../../business-premium/m365bp-conditional-access.md)<br/>- [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) |  |
+| **2 - Protect your admininstrator accounts** | Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. To protect your admin accounts, see [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md). |  |
+| **3 - Use preset security policies** | Your subscription includes [preset security policies](../../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security. To learn more, see [Protect against malware and other cyberthreats](../../business-premium/m365bp-increase-protection.md). | Microsoft 365 Business Premium includes [Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md), which provides advanced anti-phishing, Safe Attachments, Safe Links, and real-time detections. |
+| **4 - Protect all devices** | Every device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. To learn more, see the following articles: <br/>- [Set up MFA on mobile devices](../../business-premium/m365bp-multifactor-authentication.md) <br/>- [Protect unmanaged Windows and Mac computers](../../business-premium/m365bp-protect-pcs-macs.md) <br/>- [Set up managed devices](../../business-premium/m365bp-managed-devices-setup.md) | [Microsoft 365 Business Premium](../../business-premium/index.md) or [Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) is required to manage and secure devices. |
+| **5 - Train everyone on email best practices** | Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. Train everyone to know what to watch for spam or junk mail, phishing attempts, spoofing, and malware in their email. <br/><br/>To learn more, see [Protect yourself against phishing and other attacks](../../business-premium/m365bp-avoid-phishing-and-attacks.md). | |
+| **6 - Use Microsoft Teams for collaboration and sharing** | The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it. To learn more, see the following articles: <br/>- [Use Microsoft Teams for collaboration](../../business-premium/create-teams-for-collaboration.md) <br/>- [Set up meetings with Microsoft Teams](../../business-premium/set-up-meetings.md) <br/>- [Share files and videos in a safe environment](../../business-premium/share-files-and-videos.md) |  |
+| **7 - Set sharing settings for SharePoint and OneDrive files and folders** | Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. To learn more, see [Set sharing settings for SharePoint and OneDrive files and folders](../../business-premium/m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). | |
+| **8 - Use Microsoft 365 apps on devices** | Outlook and Microsoft 365 apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to files that are stored in SharePoint or OneDrive. To learn more, see [Install Office apps on all devices](../../business-premium/m365bp-install-office-apps.md). |  |
+| **9 - Manage calendar sharing for your business** | You can prevent people in your organization from sharing their calendars. You can also manage what level of detail they can share. For example, you can restrict the sharing to free/busy times only. To learn more, see [Disable or manage calendar sharing](../../business-premium/m365bp-increase-protection.md#disable-or-manage-calendar-sharing). |  |
+| **10 - Maintain your environment** | After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. You'll need to perform certain tasks, such as adding or removing users, resetting passwords, and resetting devices to factory settings as needed. To learn more, see [Maintain your environment](../../business-premium/m365bp-maintain-environment.md). |  |
 
 ## Comparing Microsoft 365 for business plans
 
