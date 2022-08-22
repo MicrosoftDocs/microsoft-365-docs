@@ -76,8 +76,6 @@ After onboarding to a Defender for IoT plan, view detected data and security ass
 - View device data in Defender for Endpoint or Defender for IoT
 - View alerts, recommendations, and vulnerabilities in Defender for Endpoint
 
-For more information, see the [Defender for IoT pricing page](https://azure.microsoft.com/pricing/details/iot-defender/).
-
 ### Shared device inventory
 
 Defender for Endpoint customers can also set up the Enterprise IoT network sensor (currently in **Public Preview**) to gain more visibility into additional IoT segments of the corporate network that were not previously covered by Defender for Endpoint. Customers that have set up an Enterprise IoT network sensor will be able to see all discovered devices in the **Device inventory** in either Defender for Endpoint or Defender for IoT.
