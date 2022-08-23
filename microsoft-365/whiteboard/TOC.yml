@@ -16,8 +16,6 @@
           href: manage-data-organizations.md
         - name: Manage sharing
           href: manage-sharing-organizations.md
-        - name: Deploy on Windows devices
-          href: deploy-on-windows-organizations.md
 
     - name: Privacy and compliance
       items:

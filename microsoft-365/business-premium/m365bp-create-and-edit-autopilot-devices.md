@@ -9,23 +9,15 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: "Learn how to upload devices using Autopilot in Microsoft 365 Business Premium. You can assign a profile to a device or a group of devices."
 ---
 

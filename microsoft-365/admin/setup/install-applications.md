@@ -18,6 +18,7 @@ search.appverid:
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 ms.custom:
+- VSBFY23
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
