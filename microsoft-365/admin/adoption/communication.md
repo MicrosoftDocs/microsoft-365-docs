@@ -179,7 +179,7 @@ We also provide you with information that helps you gain visibility into how you
 
 For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
 
-![Trends over time.](../../media/trends-over-time.png)
+:::image type="content" source="../../media/trends-over-time.png" alt-text="Trends over time."lightbox="../../media/trends-over-time.png":::
 
 After you select an option, the charts in the report will update to show a trend over time rather than a snapshot of the past month.  
 
