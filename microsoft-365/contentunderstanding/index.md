@@ -108,7 +108,7 @@ The resources in this section help you learn how to choose, create, and configur
 
 ## PowerShell for SharePoint Syntex
 
-PowerShell lets you manage your SharePoint scenarios, such as exporting and importing models and publishing models to document libaries. 
+PowerShell lets you manage your SharePoint scenarios, such as exporting and importing models and publishing models to document libraries. 
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
@@ -131,6 +131,6 @@ Use REST APIs to create a document understanding model, apply or remove the mode
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Use REST APIs for document understanding models|[SharePoint Syntex document understanding model REST API](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|
-
+<br><br>
 > [!div class="nextstepaction"]
 > [Go to: Overview of SharePoint Syntex](syntex-overview.md)
