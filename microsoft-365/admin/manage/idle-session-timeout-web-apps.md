@@ -81,7 +81,7 @@ By default, the idle session timeout feature triggers on all device types if the
 
 ## Idle session timeout on unmanaged devices  
 
-For idle session timeout to get triggered on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
+For idle session timeout to get triggered only on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
 
 1. On the **Conditional Access | Policies** page of the Azure AD admin center, select **New policy** and enter a name for the policy.
 
