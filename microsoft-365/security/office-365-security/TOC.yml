@@ -402,7 +402,7 @@
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
         href: step-by-step-guides/step-by-step-guide-overview.md
-      - name: Configurations
+      - name: Configure
         items:
         - name: How to configure quarantine permissions and policies
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
