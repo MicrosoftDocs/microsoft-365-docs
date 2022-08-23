@@ -23,14 +23,6 @@ description: "Slovakia personal number sensitive information type entity definit
 
 # Slovakia personal number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 nine or 10 digits containing optional backslash

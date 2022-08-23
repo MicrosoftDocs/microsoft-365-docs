@@ -160,7 +160,7 @@ Daily tasks can include:
 Monthly tasks can include:
 
 - Reviewing [AIR settings](m365d-configure-auto-investigation-response.md)
-- Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Threat & Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Microsoft Defender Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Reporting to your IT security management chain
 
 Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).
