@@ -100,7 +100,7 @@ Your organization's score is updated daily and reflects user actions completed i
 
 The Adoption Score home page shows your organization's total score and score history and the primary insight for each category.
 
-:::image type="content" source="../../media/prodscore-landing.png" alt-text="Adoption Score page in Reports.":::
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Adoption Score page in Reports." lightbox="../../media/prodscore-landing.png":::
 
 **Your organization's score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
