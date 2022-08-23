@@ -144,7 +144,7 @@ The following table lists the triggering events and prerequisites for policies c
 | **Security policy violations by departing users** | Resignation or termination date indicators from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
 | **Security policy violations by priority users** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured <br><br> Priority user groups configured in insider risk settings |
 | **Security policy violations by disgruntled user** | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
-| **Forensic evidence (preview)** | Activity detected by policy or setting indicators OR all user activity (depends on your configuration) | Forensic evidence enabled in settines <br><br> Users explicitly approved for screen recording <br><br> Users devices onboarded to the compliance portal, forensic evidence agent installed on devices. |
+| **Forensic evidence (preview)** | Activity detected by policy or setting indicators OR all user activity (depends on your configuration) | Forensic evidence enabled in settings <br><br> Users explicitly approved for screen recording <br><br> Users devices onboarded to the compliance portal, forensic evidence agent installed on devices. |
 
 ## Prioritize content in policies
 
@@ -266,6 +266,7 @@ Use the following table to determine the maximum number of in-scope users suppor
 |Security policy violation by priority users|1,000|
 |Security policy violations by departing users|15,000|
 |Security policy violations by disgruntled users|7,500|
+|Forensic evidence|5 users for preview release|
 
 ## Create a new policy
 

@@ -87,4 +87,4 @@ Now that you've completed the initial configuration steps for forensic evidence,
 
 ## Next steps
 
-After you've configured your forensic evidence policy, it may take up to 48 hours for the first eligible screen recordings to be available for review. For more information about managing forensic evidence and reviewing screen recordings, see the Manage information risk management forensic evidence article.
+After you've configured your forensic evidence policy, it may take up to 48 hours for the first eligible screen recordings to be available for review. For more information about managing forensic evidence and reviewing screen recordings, see the [Manage information risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage) article.
