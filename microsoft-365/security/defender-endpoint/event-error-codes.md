@@ -142,27 +142,27 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |100|Microsoft Defender for Endpoint executable failed to start. Failure code: %1|The SenseCE executable has failed to start.|Reboot the device. If this error persists, contact Support.|
    |102|Microsoft Defender for Endpoint Network Detection and Response executable has started|The SenseNdr executable has started.|Normal operating notification; no action required.|
    |103|Microsoft Defender for Endpoint Network Detection and Response executable has ended|The SenseNdr executable has ended.|Normal operating notification; no action required.|
-   |104|Failed to queue asynchronous driver unload. Failure code: %1|Occurs during offboarding.|Normal operating notification; no action required.|
-   |105 |Failed to wait for driver unload| Occurs during offboarding|Normal operating notification; no action required.|
-   |106  |Microsoft Defender for Endpoint service failed to start. Failure code %1 ; Failed to load MsSense DLL. Module  | Occurs during startup   | Contact support. |
+   |104|Failed to queue asynchronous driver unload. Failure code: %1.|Occurs during offboarding.|Normal operating notification; no action required.|
+   |105 |Failed to wait for driver unload| Occurs during offboarding.|Normal operating notification; no action required.|
+   |106  |Microsoft Defender for Endpoint service failed to start. Failure code %1 ; Failed to load MsSense DLL. Module.  | Occurs during startup.   | Contact support. |
    |107  | Microsoft Defender for Endpoint service failed to start. Failure code %1 ; Issue with MsSense DLL Module.  | Occurs during startup.   | Contact support. |
    |108  |Update phase:%1, new platform version: %2, message: %3.|Occurs during update.|Normal operating notification; no action required.|
    |109  | Update phase:%1 new platform version: %2, failure message: %3, error: %4.  | Occurs during update.   |Contact support. |
    |110  |Failed to remove MDEContain WFP filters.   | Occurs during offboarding.   | Contact support.  |
    |307| Failed to update driver permissions Failure code: %1. |Occurs during onboarding.    |Contact support.   |
    |308 | Failed to ACL on Folder %1 Failure code: %2.  |Occurs during onboarding.    | Contact support.  |
-   |401  | Microsoft Defender for Endpoint service failed to generate key. Failure code: %1  | Failed to create crypto key |If machine is not reporting, contact support. Otherwise, no action required   |
-   |402 |Microsoft Defender for Endpointservice failed to persist authentication state. Failure code: %1| Failed to persist authentication state.   | If machine is not reporting, contact support. Otherwise, no action required.  |
-   |403|Registration of Microsoft Defender for Endpoint service completed.|Successful registration to authentication service|Normal operating notification; no action required.|
-   |404  |Microsoft Defender for Endpoint service successfully generated a key.  |Successful crypto key generation  |Normal operating notification; no action required.|
-   |405|Failed to communicate with authentication service. %1 request failed, hresult: %2,  HTTP error code: %3 . |Failed to send request to authentication service|Normal operating notification; no action required.|
-   |406|Request for %1 rejected by authentication service. Hresult: %2, error code: %3 .   | Request returned undesired response   |Normal operating notification; no action required. |
+   |401  | Microsoft Defender for Endpoint service failed to generate key. Failure code: %1.  | Failed to create crypto key.|If machine is not reporting, contact support. Otherwise, no action required.   |
+   |402 |Microsoft Defender for Endpointservice failed to persist authentication state. Failure code: %1.| Failed to persist authentication state.   | If machine is not reporting, contact support. Otherwise, no action required.  |
+   |403|Registration of Microsoft Defender for Endpoint service completed.|Successful registration to authentication service.|Normal operating notification; no action required.|
+   |404  |Microsoft Defender for Endpoint service successfully generated a key.  |Successful crypto key generation.  |Normal operating notification; no action required.|
+   |405|Failed to communicate with authentication service. %1 request failed, hresult: %2,  HTTP error code: %3. |Failed to send request to authentication service.|Normal operating notification; no action required.|
+   |406|Request for %1 rejected by authentication service. Hresult: %2, error code: %3.    | Request returned undesired response.  |Normal operating notification; no action required. |
    |407|Microsoft Defender for Endpoint service failed to sign message (authentication). Failure code: %1.  |Failed to sign request.    |Normal operating notification; no action required.   |
    |408|Microsoft Defender for Endpoint service failed to remove persist authentication state. State: %1, Failure code: %2.   |Failed to persist authentication state. |If machine is not reporting, contact support. Otherwise, no action required.|
    |409| Microsoft Defender for Endpoint service failed to open key. Failure code: %1.  |Failed to open crypto key.|If machine is not reporting, contact support. Otherwise, no action required.|
-   |410|Registration is required as part of re-onboarding of Microsoft Defender for Endpoint service.   |Occurs during reonboarding |Normal operating notification; no action required.|
-   |411|$(string.CyberUploadSuspendedMessage)|Cyber upload temporarily suspended|Normal operating notification; no action required.|
-   |412|$(string.CyberUploadResumedMessage)|Cyber upload successfully resumed|Normal operating notification; no action required.|
+   |410|Registration is required as part of re-onboarding of Microsoft Defender for Endpoint service.   |Occurs during reonboarding. |Normal operating notification; no action required.|
+   |411|$(string.CyberUploadSuspendedMessage)|Cyber upload temporarily suspended.|Normal operating notification; no action required.|
+   |412|$(string.CyberUploadResumedMessage)|Cyber upload successfully resumed.|Normal operating notification; no action required.|
    |1800| CSP: Get `Node&apos;s` Value. NodeId: (%1), TokenName: (%2).  | An operation of Get is about to start.   | Contact support. |
    |1801|CSP: Failed to Get `Node&apos;s` Value. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Get has failed.   |Contact support.|
    |1802| CSP: Get `Node&apos;s` Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).  | An operation of Get has succeeded.   |Contact support. |
@@ -184,26 +184,26 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1818|CSP: Set `Node&apos;s` Value started. NodeId: (%1), TokenName: (%2).   | An operation of Set is about to start.   |Normal operating notification; no action required.|
    |1819|CSP: Failed to Set `Node&apos;s` Value. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Set has failed.   |Contact support. |
    |1820|CSP: Set `Node&apos;s` Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Set has succeeded.   |Normal operating notification; no action required.  |
-   |1821|CSP: Set Telemetry Reporting Frequency started. New value: (%1).   |  ?  | ? |
-   |1822| CSP: Set Telemetry Reporting Frequency complete. Previous value: (%1), IsDefault: (%2), New value: (%3), Result: (%4).  |   ? | ? |
-   |1823|  CSP: Get Telemetry Reporting Frequency complete. Value: (%1), Registry Value: (%2), IsDefault: (%3). |   ? | ? |
-   |1824| CSP: Get Group Ids complete. Value: (%1), IsDefault: (%2).  |Got groupIds from registry   |Normal operating notification; no action required. |
-   |1825| CSP: Set Group Ids exceeded allowed limit. Allowed: (%1), Actual: (%2).  | Failed to set groupIds due to length   | Normal operating notification; no action required. |
-   |1826| CSP: Set Group Ids complete. Value: (%1), Result: (%2).  | Set groupIds   | Normal operating notification; no action required. |
-   |1827| CSP: Onboarding process. Service is running: (%1), Previous Onboarding Blob Hash: (%2), IsDefault: (%3), Onboarding State: (%4), Onboarding State IsDefault: (%5), New Onboarding Blob Hash: (%6)  | Trace values as part of onboarding.   | Normal operating notification; no action required. |
-   |1828| CSP: Onboarding process. Service is running: (%1), Previous Offboarding Blob Hash: (%2), IsDefault: (%3), Onboarding State: (%4), Onboarding State IsDefault: (%5), New Offboarding Blob Hash: (%6)  | Trace values as part of offboarding.   | Normal operating notification; no action required.  |
+   |1821|CSP: Set Telemetry Reporting Frequency started. New value: (%1).   | Start setting the value of TelemetryReportingFrequency.  | Normal operating notification; no action required.|
+   |1822| CSP: Set Telemetry Reporting Frequency complete. Previous value: (%1), IsDefault: (%2), New value: (%3), Result: (%4).  |  Finish setting the value of TelemetryReportingFrequency.| Normal operating notification; no action required. |
+   |1823|  CSP: Get Telemetry Reporting Frequency complete. Value: (%1), Registry Value: (%2), IsDefault: (%3). |  Gets the value of TelemetryReportingFrequency.| Normal operating notification; no action required. |
+   |1824| CSP: Get Group Ids complete. Value: (%1), IsDefault: (%2).  |Got groupIds from registry.   |Normal operating notification; no action required. |
+   |1825| CSP: Set Group Ids exceeded allowed limit. Allowed: (%1), Actual: (%2).  | Failed to set groupIds due to length.   | Normal operating notification; no action required. |
+   |1826| CSP: Set Group Ids complete. Value: (%1), Result: (%2).  | Set groupIds.   | Normal operating notification; no action required. |
+   |1827| CSP: Onboarding process. Service is running: (%1), Previous Onboarding Blob Hash: (%2), IsDefault: (%3), Onboarding State: (%4), Onboarding State IsDefault: (%5), New Onboarding Blob Hash: (%6).  | Trace values as part of onboarding.   | Normal operating notification; no action required. |
+   |1828| CSP: Onboarding process. Service is running: (%1), Previous Offboarding Blob Hash: (%2), IsDefault: (%3), Onboarding State: (%4), Onboarding State IsDefault: (%5), New Offboarding Blob Hash: (%6).  | Trace values as part of offboarding.   | Normal operating notification; no action required.  |
    |1829|CSP: Failed to Set Sample Sharing Value. Requested Value: (%1), Allowed Values between (%2) and (%3).   |Invalid value for SampleSharing operation.    |Contact support.  |
-   |1830| CSP: Failed to Set Telemetry Reporting Frequency Value. Requested Value: (%1)  | ?   | ? |
-   |1831|CSP: Get Sense is running. Service is configured as delay-start, and hasn&apos;t started yet.   |Get SenseIsRunning result.    |Normal operating notification; no action required.  |
-   |1832| CSP: Get Device Tagging Group complete. Value: (%1), IsDefault: (%2).  | ?   | ? |
-   |1833| CSP: Get Device Tagging Criticality value complete. In Registry: (%1), IsDefault: (%2), Conversion Succeeded: (%3), Result: (%4).  |  ?  | ? |
-   |1834| CSP: Get Device Tagging Identification Method value complete. In Registry: (%1), IsDefault: (%2), Conversion Succeeded: (%3), Result: (%4).  |  ?  | ? |
-   |1835| CSP: Set Device Tagging Group complete. Value: (%1), Result: (%2).  |  ?  |  ?|
-   |1836| CSP: Set Device Tagging Group exceeded allowed limit. Allowed: (%1), Actual: (%2).  | ?   |?  |
-   |1837| CSP: Set Device Tagging Criticality value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  | ?   |?  |
-   |1838|  CSP: Failed to Set Device Tagging Criticality Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  ?  | ? |
-   |1839| CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |  ?  | ? |
-   |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  ?  | ? |
+   |1830| CSP: Failed to Set Telemetry Reporting Frequency Value. Requested Value: (%1).  | Setting the value of TelemetryReportingFrequency failed.  | Contact support if problem persists.|
+   |1831|CSP: Get Sense is running. Service is configured as delay-start, and `hasn&apos;t` started yet.   |Get SenseIsRunning result.    |Normal operating notification; no action required.  |
+   |1832| CSP: Get Device Tagging Group complete. Value: (%1), IsDefault: (%2).  | Get DeviceTagging Group from registry completed.  | Normal operating notification; no action required. |
+   |1833| CSP: Get Device Tagging Criticality value complete. In Registry: (%1), IsDefault: (%2), Conversion Succeeded: (%3), Result: (%4).  | Get DeviceTagging Criticality from registry completed.  | Normal operating notification; no action required. |
+   |1834| CSP: Get Device Tagging Identification Method value complete. In Registry: (%1), IsDefault: (%2), Conversion Succeeded: (%3), Result: (%4).  |  Get DeviceTagging Id Method from registry completed. | Normal operating notification; no action required. |
+   |1835| CSP: Set Device Tagging Group complete. Value: (%1), Result: (%2).  | Set DeviceTagging Group in registry completed.  |  Normal operating notification; no action required.|
+   |1836| CSP: Set Device Tagging Group exceeded allowed limit. Allowed: (%1), Actual: (%2).  | Set DeviceTagging Group failed as maximum Length Limit exceeded.  |Contact support if problem persists. |
+   |1837| CSP: Set Device Tagging Criticality value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  | Set DeviceTagging Criticality in registry completed. |Normal operating notification; no action required. |
+   |1838|  CSP: Failed to Set Device Tagging Criticality Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Criticality failed as value was not within expected range. | Contact support if problem persists. |
+   |1839| CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |  Set DeviceTagging Id Method in registry completed. | Normal operating notification; no action required. |
+   |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Id Method failed as value was not within expected range. | Contact support if problem persists. |
    |
    
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
