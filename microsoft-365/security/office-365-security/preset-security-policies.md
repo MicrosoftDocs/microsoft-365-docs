@@ -56,6 +56,7 @@ A profile determines the level of protection. The following profiles are availab
   - **Groups**:
     - Members of the specified distribution groups or mail-enabled security groups.
     - The specified Microsoft 365 Groups.
+    [!NOTE] Dynamic Distribution Groups (DDG) are not supported.
   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
@@ -162,6 +163,9 @@ You might want to apply the **Standard** or **Strict** preset security policies 
    - **Specific recipients**:
      - **Users**
      - **Groups**
+     - Members of the specified distribution groups or mail-enabled security groups.
+     - The specified Microsoft 365 Groups.
+    [!NOTE] Dynamic Distribution Groups (DDG) are not supported.
      - **Domains**
 
      Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
@@ -244,6 +248,9 @@ Therefore, we typically don't recommend exceptions to the **Built-in protection*
 3. On the **Exclude from Built-in protection** flyout that appears, identify the internal recipients that are excluded from the built-in Safe Links and Safe Attachments protection:
    - **Users**
    - **Groups**
+     - Members of the specified distribution groups or mail-enabled security groups.
+     - The specified Microsoft 365 Groups.
+    [!NOTE] Dynamic Distribution Groups (DDG) are not supported.
    - **Domains**
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove exclusions from Built-in protection icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
