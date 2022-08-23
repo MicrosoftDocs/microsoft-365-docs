@@ -61,6 +61,12 @@ As a starting point, you may already have exclusions in place that you wish to m
 
 Keep in mind that _all_ **types** and **values** are case sensitive.
 
+> [!NOTE]  
+> 
+> Conditions inside {} MUST be true for the restriction to match. For example, if you specify 2 scan triggers this cannot be true, and the exclusion will not apply.
+> To specify 2 restrictions of the same type, create 2 separate exclusions.
+
+
 ### Examples
 
 The following string excludes "c:\documents\design.doc" only if it's a file and only in on-access scans:
