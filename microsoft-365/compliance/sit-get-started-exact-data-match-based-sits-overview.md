@@ -76,7 +76,7 @@ You can find out what region your tenant is hosting data-at-rest in by following
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-You must have one of the following licenes,
+You must have one of the following licenses:
 
 - Office 365 E5/A5/G5
 - Microsoft 365 E5/A5/G5
