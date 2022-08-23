@@ -74,7 +74,9 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
 ## Comparing Microsoft 365 for business plans
 
-Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. These plans also include antiphishing, antimalware, and antispam protection. With Microsoft 365 Business Premium, you get additional capabilities, such as device management, advanced threat protection, and information protection. The following table compares capabilities in Microsoft 365 for business plans. 
+Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. These plans also include antiphishing, antimalware, and antispam protection. With Microsoft 365 Business Premium, you get additional capabilities, such as device management, advanced threat protection, and information protection. 
+
+The following table compares capabilities in Microsoft 365 for business plans. 
 
 | Capability | [Microsoft 365 Business Basic](../setup/setup-business-basic.md) | [Microsoft 365 Business Standard](../setup/setup-business-standard.md) | [Microsoft 365 Business Premium](../../business-premium/index.md) |
 |:---|:--:|:--:|:--:|
