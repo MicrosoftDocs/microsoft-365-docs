@@ -3,7 +3,7 @@ title: Manage SharePoint Syntex by using PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise

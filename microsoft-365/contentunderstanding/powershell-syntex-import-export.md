@@ -3,7 +3,7 @@ title: Export and import Classify and extract by text pattern models with PowerS
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -85,7 +85,7 @@ The extract.json defines which models you want to export, allowing to specify mo
 }
 ```
 
-If you do not include the property "includeTrainingData", the default behavior is to include.
+If you don't include the property "includeTrainingData", the default behavior is to include.
 
 > [!NOTE]
 > Training data is required for a model to be editable when imported to a destination content center.

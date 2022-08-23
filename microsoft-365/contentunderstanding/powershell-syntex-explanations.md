@@ -3,7 +3,7 @@ title: Work with explanations for Classify and extract by text pattern models in
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,7 +12,7 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn about work with SharePoint Syntex document understanding model explanations in PowerShell."
+description: Learn about work with SharePoint Syntex model explanations in PowerShell.
 ---
 
 # Work with explanations for Classify and extract by text pattern models in PowerShell

@@ -1,9 +1,9 @@
 ---
-title: Publish document understanding models with PowerShell
+title: Publish custom models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,10 +12,12 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn how to publish a SharePoint Syntex document understanding models with PowerShell."
+description: Learn how to publish SharePoint Syntex custom models by using PowerShell.
 ---
 
-# Publish document understanding models with PowerShell
+# Publish custom models with PowerShell
+
+<sup>**Applies to:**  &ensp; &#10003; All custom models </sup>
 
 > [!IMPORTANT]
 > The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
