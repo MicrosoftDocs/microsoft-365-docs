@@ -40,7 +40,7 @@ description: "Protect your business email and data from cyberthreats, including 
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
 
-Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes additional capabilities, such as device management, advanced threat protection, and information protection. This article describes steps you can take to secure your business data. 
+Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes additional capabilities, such as device management, advanced threat protection, and information protection. This article describes steps you can take to secure your business data, and compares capabilities across Microsoft 365 for business plans.
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
 
