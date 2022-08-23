@@ -93,34 +93,46 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 | [Configure Microsoft Threat Experts (MTE) capabilities](configure-microsoft-threat-experts.md) | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed.      |
 
 
+
+
 ## Supported capabilities for Windows devices
 
-|Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |Windows Server 2016<sup>[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
-|---------|---------|---------|---------|---------|---------|
-|**Prevention**    |         |         |         |         |         |
-|Attack Surface Reduction rules     |    Y     |   Y      |    Y     |    Y     |    Y     |
-|Device Control     |     Y    |    N     |    N     |    N     |    N     |  
-|Firewall     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Network Protection     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Next-generation protection     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Tamper Protection     |        Y   |    Y     |     Y    |    Y    |    Y   |
-|Web Protection     |       Y   |    Y     |     Y    |    Y    |    Y   |
-|||||||
+|Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |Windows Server 2016<sup>[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|macOS|Linux| 
+|---------|---------|---------|---------|---------|---------|---------|---------|
+|**Prevention**    |         |         |         |         |         |         |         |
+|Attack Surface Reduction rules     | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|Controlled folder access     | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|Device Control     | ![Yes.](images/svg/check-yes.svg)        | ![No](images/svg/check-no.svg)         |  ![No](images/svg/check-no.svg)        |  ![No](images/svg/check-no.svg)        |  !![No](images/svg/check-no.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)        |  
+|Firewall      | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|Network Protection      | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)<sup>[[2](#fn1)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn1)]<sup></sup>        |
+|Next-generation protection       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
+|Tamper Protection        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)         |
+|Web Protection       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)<sup>[[2](#fn1)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn1)]<sup></sup>        |
+|||||||||
 |**Detection**     |         |         |         |||
-|Advanced Hunting     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Custom file indicators     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Custom network indicators     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|EDR Block & Passive Mode     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Sense detection sensor     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Endpoint & network device discovery     |      Y   |    N     |     N    |    N    |    N   |
+|Advanced Hunting        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
+|Custom file indicators         | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
+|Custom network indicators        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)<sup>[[2](#fn1)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn1)]<sup></sup>        |
+|EDR Block       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|Passive Mode          | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
+|Sense detection sensor          | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
+|Endpoint & network device discovery      | ![Yes.](images/svg/check-yes.svg)        | ![No](images/svg/check-no.svg)         |  ![No](images/svg/check-no.svg)        |  ![No](images/svg/check-no.svg)        |  ![No](images/svg/check-no.svg)        |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|Vulnerability management          | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
 |||||||
 |**Response**     |         |         |         |||
-|Automated Investigation & Response (AIR)    |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Device response capabilities: isolation, collect investigation package, run AV scan     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Live Response    |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Automated Investigation & Response (AIR)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|Device response capabilities: collect investigation package, run AV scan        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)<sup>[[2](#fn1)][[3](#fn1)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn1)][[3](#fn1)]<sup></sup>        |
+|Device isolation        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)<sup>[[2](#fn1)][[3](#fn1)]<sup></sup>       |  ![No](images/svg/check-no.svg)    |
+|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg) <sup>[[4](#fn1)] <sup></sup>      |  ![No](images/svg/check-no.svg) <sup>[[4](#fn1)] <sup></sup>    |
+|Live Response       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)<sup>[[2](#fn1)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn1)]<sup></sup>        |
+
 
 (<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
+(<a id="fn1">2</a>) Feature is currently in preview (Microsoft Defender for Endpoint preview features | Microsoft Docs) 
+
+(<a id="fn1">3</a>) Response capabilities using Live Response [2] 
+
+(<a id="fn1">4</a>) Collect file only, using Live Response [2]  
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
