@@ -28,31 +28,6 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 ## August 2022
 
-### Capability to set up Granular Delegated Admin Privileges (GDAP)
-
-You can now establish GDAP relationships with multiple reseller customers at once from within Microsoft 365 Lighthouse and assign their users to security groups with various roles and levels of permissions. To do this, use the GDAP Setup tool to create reusable templates based on tiers of support for your customers and for various groups of technicians. You'll see recommended roles for each tier of support during this process. Once created, these templates can then be reapplied as needed to new customers. This functionality allows you to quickly establish GDAP with your customers by using a least-privileged approach for users as a replacement for Delegated Admin Privileges (DAP).
-
-For more information on GDAP in Microsoft 365 Lighthouse, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
-
-For more information on GDAP across all services, see [Introduction to granular delegated admin privileges (GDAP) - Partner Center](/partner-center/gdap-introduction).
-
-### Fully automated setup of Microsoft Defender for Business
-
-We've added a fully automated step to the default baseline that helps you set up your customer tenants with Microsoft Defender for Business. This step automatically provisions your tenant for Microsoft Defender for Business and automatically onboards Intune-enrolled devices to Microsoft Defender for Business.
-
-### Manage Microsoft 365 Lighthouse with a new Azure AD role
-
-We've added a new Microsoft 365 Lighthouse Administrator built-in role to Azure Active Directory (Azure AD). Users in a partner tenant who have been assigned this role can manage all aspects of tenant tags, deactivate and reactivate delegated tenants, view audit logs for delegated tenant actions initiated from the Microsoft 365 service, create and manage service requests in the Microsoft 365 admin center, monitor service health data, and view Message Center posts. Previously, users in a partner tenant needed to be a Global Administrator to perform these tasks. The addition of the Microsoft 365 Lighthouse Administrator role strengthens cybersecurity for Managed Service Providers (MSPs) by helping them adhere to the principle of least privilege.
-
-> [!NOTE]
-> Users in the partner tenant who've been assigned the Microsoft 365 Lighthouse Administrator role can't manage delegated tenants in the Microsoft 365 Lighthouse service without also having Granular Delegated Admin Privileges (GDAP) for those tenants.
-
-For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
-
-### Capability to filter the Multifactor Authentication (MFA) list to show relevant user accounts
-
-The Multifactor Authentication page now supports filtering the user account list by account type (such as by Admin, Member, or Guest). You can also exclude other accounts from the list, like service accounts or emergency access accounts. To access this functionality, go to **Users** > **Multifactor authentication**, select a tenant from the list to open the tenant details pane, and then select the **Users not registered for MFA** tab. These filtering and exclusion capabilities help you focus on relevant user accounts. 
-
 ### View and manage inactive user accounts 
 
 Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** from the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months. 
