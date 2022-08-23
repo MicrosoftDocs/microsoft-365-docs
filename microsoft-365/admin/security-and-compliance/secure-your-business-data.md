@@ -54,7 +54,7 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
    - [Help users set up MFA on their devices](https://support.microsoft.com/office/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14)
    - [Protect unmanaged Windows and Mac computers](../../business-premium/m365bp-protect-pcs-macs.md) 
-   - [Set up managed devices](../../business-premium/m365bp-managed-devices-setup.md)
+   - [Set up managed devices](../../business-premium/m365bp-managed-devices-setup.md) (requires Microsoft 365 Business Premium or Microsoft Defender for Business)
 
 5. **Train everyone on email best practices**. Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. Train everyone to know what to watch for spam or junk mail, phishing attempts, spoofing, and malware in their email. See [Protect yourself against phishing and other attacks](../../business-premium/m365bp-avoid-phishing-and-attacks.md).
 
