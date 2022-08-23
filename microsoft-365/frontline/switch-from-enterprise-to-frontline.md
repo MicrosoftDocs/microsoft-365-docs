@@ -204,7 +204,7 @@ Identify and back up or prepare data that users want to keep. Follow the guidanc
 - Teams
 - OneDrive
 
-For more information, see [Back up data before switching plans](/microsoft-365/commerce/subscriptions/back-up-data-before-switching-plans).
+For more information, see [Back up data before switching plans](/microsoft-365/commerce/subscriptions/move-users-different-subscription).
 
 ## Switch users to a Microsoft 365 F plan
 

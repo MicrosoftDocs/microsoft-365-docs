@@ -23,14 +23,6 @@ description: "Austria identity card sensitive information type entity definition
 
 # Austria identity card
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 A 24-character combination of letters, digits, and special characters
