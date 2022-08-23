@@ -410,6 +410,12 @@
         href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
       - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
         href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+      - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
+        href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+      - name: How-to deploy and configure the report message add-in
+        href: step-by-step-guides/deploy-and-configure-the-report-message-add-in.md
+      - name: Ensuring you always have the optimal security controls with preset security policies
+        href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
       - name: Use
         items:
       - name: Stay informed of upcoming changes to Microsoft Defender for Office 365 using the message center
@@ -434,6 +440,8 @@
         href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
       - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
         href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+      - name: Assess the impact of security configuration changes with Explorer
+        href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
    - name: Reference
      items: 
      - name: Defender for Office 365 data retention 
