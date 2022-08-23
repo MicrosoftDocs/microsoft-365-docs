@@ -1,6 +1,6 @@
 ---
-title: Get started with insider risk management forensic evidence
-description: Get started with insider risk management forensic evidence in Microsoft Purview
+title: Manage insider risk management forensic evidence
+description: Manage insider risk management forensic evidence in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -120,13 +120,11 @@ The device health queue lists all the devices in configured for forensic evidenc
 
 - **Device name**: The name of the device, defined by the *ComputerName* attribute of the device.
 - **Device status**: The status of the forensic evidence agent on the device. Status values are as follows:
-
     - ***Healthy***: The agent on the device is working properly and screen recording features are fully supported.
     - ***Warning***: The agent on the device is...
     - ***Error***: The agent on the device is...
-
 - **Status details**:
 - **Last sync (UTC)**:
-- **User name**:
+- **User name**: 
 - **Windows OS version**:
 - **Purview Orchestrate version**:
