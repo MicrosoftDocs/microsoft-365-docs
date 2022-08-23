@@ -102,7 +102,7 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 |**Prevention**    |         |         |         |         |         |         |         |
 |Attack Surface Reduction rules     | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
 |Controlled folder access     | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
-|Device Control     | ![Yes.](images/svg/check-yes.svg)        | ![No](images/svg/check-no.svg)         |  ![No](images/svg/check-no.svg)        |  ![No](images/svg/check-no.svg)        |  !![No](images/svg/check-no.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)        |  
+|Device Control     | ![Yes.](images/svg/check-yes.svg)        | ![No](images/svg/check-no.svg)         |  ![No](images/svg/check-no.svg)        |  ![No](images/svg/check-no.svg)        |  ![No](images/svg/check-no.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)        |  
 |Firewall      | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
 |Network Protection      | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)<sup>[[2](#fn2)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)]<sup></sup>        |
 |Next-generation protection       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
@@ -129,7 +129,7 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 
 (<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
-(<a id="fn2">2</a>) Feature is currently in preview (Microsoft Defender for Endpoint preview features | Microsoft Docs) 
+(<a id="fn2">2</a>) Feature is currently in preview [Microsoft Defender for Endpoint preview features](preview.md) 
 
 (<a id="fn3">3</a>) Response capabilities using Live Response [2] 
 
