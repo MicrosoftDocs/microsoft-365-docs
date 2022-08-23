@@ -45,7 +45,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 ### Local script for Windows 10 and 11
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune, and this is the recommended method for Defender for Business customers.
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. If you're not currently using Intune, the local script method is the recommended onboarding method for Defender for Business customers.
 
 > [!TIP]
 > We recommend that you onboard up to 10 devices at a time when you use the local script method.
@@ -103,7 +103,7 @@ When you set up automatic enrollment, users add their work account to the device
 > [!TIP]
 > To learn more, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
 
-#### Ask users enroll their own Windows 10 and 11 devices
+#### Ask users enroll their Windows 10 and 11 devices
 
 1. Watch the following video to see how enrollment works:<br/><br/>
 
@@ -129,9 +129,9 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
 
 After the command runs, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
 
-## View a list of onboarded devices
+## View the list of onboarded devices
 
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). On the navigation pane, under **Endpoints**, choose **Device inventory**.
+To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, under **Assets**, choose **Devices**.
 
 ## Next steps
 
