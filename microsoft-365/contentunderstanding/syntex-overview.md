@@ -28,7 +28,7 @@ SharePoint Syntex is a content understanding, processing, and compliance service
 </br>
 
 
-With SharePoint Syntex, you can automate your content-based processes—capturing the data in your business documents and transforming that data into working knowledge for your organization.
+With SharePoint Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization.
 
 Rather than clicking and sorting through hundreds, or even thousands of files, SharePoint Syntex extracts, analyzes, and categorizes the data for you, streamlining the search and discovery process. This returns valuable time to you and your team. Not only can you dive deeper into your content to truly understand it, now you can also increase document insight and control.
 
@@ -92,6 +92,6 @@ For more information, see [Apply a retention label to a model in SharePoint Synt
 SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
 
 To spark ideas about how you can use SharePoint Syntex in your organization, see [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md).
-
+<br><br>
 > [!div class="nextstepaction"]
 > [Learn more about models in SharePoint Syntex](model-types-overview.md)
