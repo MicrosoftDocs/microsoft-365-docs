@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.date: 08/22/2022
+ms.date: 08/23/2022
 ms.collection:
 - Adm_O365
 - Adm_TOC
