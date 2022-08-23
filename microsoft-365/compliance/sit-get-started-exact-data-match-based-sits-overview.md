@@ -78,10 +78,10 @@ You must be a global admin, compliance administrator, or Exchange Online adminis
 
 You must have one of the following licenes,
 
-Office 365 E5/A5/G5
-Microsoft 365 E5/A5/G5
-Microsoft 365 E5/A5/F5/G5 Compliance and Microsoft 365 F5 Security & Compliance
-Microsoft 365 E5/A5/F5/G5 Information Protection and Governance
+- Office 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5
+- Microsoft 365 E5/A5/F5/G5 Compliance and Microsoft 365 F5 Security & Compliance
+- Microsoft 365 E5/A5/F5/G5 Information Protection and Governance
 
 ## Portal links for your subscription
 
