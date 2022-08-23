@@ -99,7 +99,7 @@ If you click **Filter**, you can filter both the chart and the details table by 
     - **Inline detonation**: Includes messages that are fully tested before delivery.
     - **Asynchronous detonation**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 In the details table below the chart, the following information is available:
 
@@ -164,7 +164,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
 
@@ -193,7 +193,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
 
