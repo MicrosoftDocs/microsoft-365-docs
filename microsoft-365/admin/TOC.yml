@@ -121,7 +121,7 @@
              href: manage/remove-licenses-from-users.md
            - name: Guest users
              href: add-users/about-guest-users.md
-           - name: Add guest users to a Microsoft 365 group
+           - name: Manage guest access in Microsoft 365 group
              href: create-groups/manage-guest-access-in-groups.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
@@ -161,6 +161,8 @@
              href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
+           - name: Microsoft 365 group mailbox size management
+             href: create-groups/group-mailbox-size-management.md 
            - name: Add or remove group members
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
@@ -318,8 +320,6 @@
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
-         - name: Show or hide new features
-           href: manage/show-hide-new-features.md
          - name: Power BI usage analytics
            items: 
            - name: About usage analytics
@@ -356,7 +356,7 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Best practices for securing your data
+        - name: Top 10 ways to secure your data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -364,6 +364,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Manage and monitor priority accounts
           href: setup/priority-accounts.md
+        - name: Increase threat protection for Microsoft 365 for business
+          href: security-and-compliance/increase-threat-protection.md
         - name: Turn on Idle session timeout
           href: manage/idle-session-timeout-web-apps.md
         - name: Enable Modern Authentication for Office 2013
@@ -373,7 +375,7 @@
     - name: Manage devices and app data
       items:
         - name: Device and app data protection methods 
-          href: devices/choose-device-security.md
+          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security

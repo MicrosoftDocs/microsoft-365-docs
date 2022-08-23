@@ -109,7 +109,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    > [!IMPORTANT]
-   > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
    > - The recipient is: romain@contoso.com
    > - The recipient is a member of: Executives
@@ -184,6 +184,13 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
         In the **Add trusted domains** flyout that appears, click in the **Domain** box, enter a value, and then press Enter or select the value that's displayed below the box. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
         When you're finished, click **Add**.
+
+     > [!NOTE]
+     > If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
+     >
+     > - `⁠noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
 
      Back on the **Manage custom domains for impersonation** flyout, you can remove entries from the **Sender** and **Domain** tabs by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
 
