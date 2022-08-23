@@ -40,7 +40,7 @@ description: "Protect your business email and data from cyberthreats, including 
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
 
-Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes additional capabilities, such as device management, advanced threat protection, and information protection. This article describes steps you can take to secure your business data, and [compares capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
+Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes more capabilities, such as device management, advanced threat protection, and information protection. This article describes steps you can take to secure your business data, and [compares capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
 
@@ -74,7 +74,7 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
 ## Comparing Microsoft 365 for business plans
 
-Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. These plans also include antiphishing, antimalware, and antispam protection. With Microsoft 365 Business Premium, you get additional capabilities, such as device management, advanced threat protection, and information protection. 
+Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. These plans also include antiphishing, antimalware, and antispam protection. With Microsoft 365 Business Premium, you get more capabilities, such as device management, advanced threat protection, and information protection. 
 
 The following table compares capabilities in Microsoft 365 for business plans. 
 
