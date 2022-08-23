@@ -106,19 +106,19 @@
        - name: Allow and block
          items:
          - name: Manage the Tenant Allow/Block List
-           href: tenant-allow-block-list.md
-         - name: Add blocks in the Tenant Allow/Block List
-           href: manage-tenant-blocks.md
-         - name: Add allows in the Tenant Allow/Block List
-           href: manage-tenant-allows.md
-         - name: Modify and remove entries in the Tenant Allow/Block List
-           href: modify-remove-entries-tenant-allow-block.md
-         - name: Allow or block email using the Tenant Allow/Block List
-           href: allow-block-email-spoof.md
-         - name: Allow or block URLs using the Tenant Allow/Block List
-           href: allow-block-urls.md
-         - name: Allow or block files using the Tenant Allow/Block List
-           href: allow-block-files.md
+           items:
+           - name: Manage the Tenant Allow/Block List
+             href: manage-tenant-allow-block-list.md
+           - name: Allow or block email using the Tenant Allow/Block List
+             href: allow-block-email-spoof.md
+           - name: Allow or block files using the Tenant Allow/Block List
+             href: allow-block-files.md
+           - name: Allow or block URLs using the Tenant Allow/Block List
+             href: allow-block-urls.md
+         - name: Create block sender lists
+           href: Create-block-sender-lists-in-office-365.md
+         - name: Create safe sender lists
+           href: Create-safe-sender-lists-in-office-365.md
        - name: Attack simulation training in Defender for Office 365
          items:
          - name: Get started using Attack simulation training
@@ -557,10 +557,6 @@
           href: configure-global-settings-for-safe-links.md
         - name: Configure outbound spam filtering
           href: configure-the-outbound-spam-policy.md
-        - name: Create block sender lists
-          href: Create-block-sender-lists-in-office-365.md
-        - name: Create safe sender lists
-          href: Create-safe-sender-lists-in-office-365.md
         - name: Email authentication
           href: email-validation-and-authentication.md
         - name: Install Application Guard for Office
