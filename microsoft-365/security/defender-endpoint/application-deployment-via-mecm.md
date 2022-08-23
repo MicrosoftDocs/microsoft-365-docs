@@ -61,7 +61,7 @@ Copy the unified solution package, onboarding script and migration script to the
 6. Give a name to your script deployment and select **Next**.
 
    :::image type="content" source="images/manual-deployment-information.png" alt-text="Screenshot specifying the script deployment information.":::
-7. On this step, copy the UNC path that your content is located. Example: `\\ServerName\h$\SOFTWARE_SOURCE\UAmigrate`.
+7. On this step, copy the UNC path that your content is located. Example: `\\ServerName\h$\SOFTWARE_SOURCE\path`.
 
    :::image type="content" source="images/deployment-type-wizard.png" alt-text="Screenshot that shows UNC path copy.":::
   
