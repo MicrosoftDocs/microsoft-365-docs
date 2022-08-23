@@ -44,7 +44,7 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
 
-1. **Use multi-factor authentication**. [Multi-factor authentication](multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. To set up MFA, you can use [security defaults or Conditional Access](../../business-premium/m365bp-conditional-access.md). 
+1. **Use multi-factor authentication**. [Multi-factor authentication](multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. See [security defaults and MFA](../../business-premium/m365bp-conditional-access.md). 
 
 2. **Protect your administrator accounts**. Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. See [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md). 
 
