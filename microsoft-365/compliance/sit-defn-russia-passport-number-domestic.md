@@ -23,14 +23,6 @@ description: "Russia passport number domestic sensitive information type entity 
 
 # Russia passport number domestic
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 10-digit number
