@@ -82,7 +82,9 @@ Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, Sh
 | **Advanced protection for email and documents** with advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>([Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md)) |  |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 | **Information protection** capabilities to discover, classify, protect, and govern sensitive information <br/>([Azure Information Protection](/azure/information-protection/what-is-information-protection))  | | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
-(<a id="fn1">1</a>)
+(<a id="fn1">1</a>) Microsoft Intune is included with certain Microsoft 365 plans. Basic Mobility and Security is part of the Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+
+
 
 (<a id="fn2">2</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops.
 
