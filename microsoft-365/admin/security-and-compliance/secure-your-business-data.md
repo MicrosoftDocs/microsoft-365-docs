@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.date: 08/23/2022
+ms.date: 08/24/2022
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -46,7 +46,7 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
 1. **Use multi-factor authentication**. [Multi-factor authentication](multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. See [security defaults and MFA](../../business-premium/m365bp-conditional-access.md). 
 
-2. **Protect your administrator accounts**. Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. See [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md). 
+2. **Protect your administrator accounts**. Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. See [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md). 
 
 3. **Use preset security policies**. Your subscription includes [preset security policies](../../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. See [Protect against malware and other cyberthreats](../../business-premium/m365bp-increase-protection.md).
 
