@@ -88,7 +88,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ### At service onboarding
 
-By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Window Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
+By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Microsoft Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
 
 ### At contract termination or expiration
 

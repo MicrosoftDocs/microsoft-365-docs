@@ -21,7 +21,7 @@ The SMS notifications will include the Teams meeting link for virtual booking ap
 
 ## Before you begin
 
-Attendees, customers or partners need a valid United States or Canada phone number before they can receive SMS notifications.
+Attendees, customers or partners need a valid United States, Canada or United Kingdom phone number before they can receive SMS notifications.
 
 ## Configure SMS notification in Microsoft Bookings
 

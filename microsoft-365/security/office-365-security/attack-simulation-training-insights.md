@@ -197,7 +197,7 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 - **In progress**
 - **All**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
@@ -237,9 +237,8 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 - **Malware attachment**
 - **Link in attachment**
 - **Link to malware**
-- **Drive-by URL**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by any of the column values. Wildcards aren't supported.
 

@@ -126,7 +126,7 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
 
-When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set.
+When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
 
 
@@ -147,7 +147,7 @@ Your custom detection rule can automatically take actions on devices, files, or 
 These actions are applied to devices in the `DeviceId` column of the query results:
 - **Isolate device**—uses Microsoft Defender for Endpoint to apply full network isolation, preventing the device from connecting to any application or service. [Learn more about Microsoft Defender for Endpoint machine isolation](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Collect investigation package**—collects device information in a ZIP file. [Learn more about the Microsoft Defender for Endpoint investigation package](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Run antivirus scan**—performs a full Windows Defender Antivirus scan on the device
+- **Run antivirus scan**—performs a full Microsoft Defender Antivirus scan on the device
 - **Initiate investigation**—initiates an [automated investigation](m365d-autoir.md) on the device
 - **Restrict app execution**—sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about app restrictions with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 

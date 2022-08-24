@@ -1,5 +1,5 @@
 ---
-title: Deployment phases
+title: Microsoft Defender for Endpoint deployment overview
 description: Learn how to deploy Microsoft Defender for Endpoint by preparing, setting up, and onboarding endpoints to that service
 keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring
 ms.prod: m365-security
@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Deployment phases
+# Microsoft Defender for Endpoint deployment overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

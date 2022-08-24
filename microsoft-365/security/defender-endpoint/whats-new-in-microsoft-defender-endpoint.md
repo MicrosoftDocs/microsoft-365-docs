@@ -55,27 +55,39 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## August 2022
+
+- [Device health status](investigate-machines.md#device-health-status)<br>The Device health status card shows a summarized health report for the specific device.
+
+- [Device health reporting (Preview)](/microsoft-365/security/defender-endpoint/machine-reports)<br> The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
+
+
+## July 2022
+- - [Add domain controller devices - Evaluation lab enhancement](evaluation-lab.md#add-a-domain-controller)<br>Now generally available - Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
+
+
+
 ## June 2022
 - [Defender for Servers Plan 2 now integrates with MDE unified solution](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>You can now start deploying the modern, unified solution for Windows Server 2012 R2 and 2016 to servers covered by Defender for Servers Plan 2 using a single button.
 
 ## May 2022
 - [Tamper protection for macOS (preview)](tamperprotection-macos.md)<br>Tamper protection helps prevent unauthorized removal of Microsoft Defender for Endpoint on macOS.
 
-- [Add domain controller devices - Evaluation lab enhancement (preview)](evaluation-lab.md#add-a-domain-controller-preview)<br>Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
+- [Add domain controller devices - Evaluation lab enhancement (preview)](evaluation-lab.md#add-a-domain-controller)<br>Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
 
 ## April 2022
 - [Updated onboarding and feature parity for Windows Server 2012 R2 and Windows Server 2016)](configure-server-endpoints.md)<br/> The new unified solution package is now generally available and makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with many new feature improvements.
-- Integration with Tunnel. Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app.This feature was earlier available only on Android. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+- Integration with Tunnel. Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. This feature was earlier available only on Android. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## January 2022
 
 - Evaluation lab enhancements: You can now add Windows 11 and Linux devices to the lab. 
 
-- Threat and vulnerability management for Android and iOS is now generally available. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+- Vulnerability management for Android and iOS is now generally available. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## December 2021
 
-- Threat and vulnerability management can help identify Log4j vulnerabilities in applications and components. [Learn more](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
+- Microsoft Defender Vulnerability Management can help identify Log4j vulnerabilities in applications and components. [Learn more](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 - Discover IoT devices (preview): [Device discovery](device-discovery.md) now has the ability to help you find unmanaged IoT devices connected to your corporate network. This gives you a single unified view of your IoT inventory alongside the rest of your IT devices (workstations, servers, and mobile).
 
@@ -113,9 +125,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 - [Delta export software vulnerabilities assessment](get-assessment-methods-properties.md#31-methods) API <br> An addition to the [Export assessments of vulnerabilities and secure configurations](get-assessment-methods-properties.md) API collection. <br> Unlike the full software vulnerabilities assessment (JSON response) - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed" or "how many new vulnerabilities were added to an organization."
 
-- [Export assessments of vulnerabilities and secure configurations](get-assessment-methods-properties.md) API <br> Adds a collection of APIs that pull threat and vulnerability management data on a per-device basis. There are different API calls to get different types of data: secure configuration assessment, software inventory assessment, and software vulnerabilities assessment. Each API call contains the requisite data for devices in your organization.
+- [Export assessments of vulnerabilities and secure configurations](get-assessment-methods-properties.md) API <br> Adds a collection of APIs that pull Defender Vulnerability Management data on a per-device basis. There are different API calls to get different types of data: secure configuration assessment, software inventory assessment, and software vulnerabilities assessment. Each API call contains the requisite data for devices in your organization.
 
-- [Remediation activity](get-remediation-methods-properties.md) API <br> Adds a collection of APIs with responses that contain threat and vulnerability management remediation activities that have been created in your tenant. Response information types include one remediation activity by ID, all remediation activities, and exposed devices of one remediation activity.
+- [Remediation activity](get-remediation-methods-properties.md) API <br> Adds a collection of APIs with responses that contain Defender Vulnerability Management remediation activities that have been created in your tenant. Response information types include one remediation activity by ID, all remediation activities, and exposed devices of one remediation activity.
 
 - [Device discovery](device-discovery.md) <br> Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.
 
@@ -126,13 +138,13 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 - [Mobile Application management support](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> This enhancement enables Microsoft Defender for Endpoint protect an organization's data within a managed application when Intune is being used to manage mobile applications. For more information about mobile application management, see [this documentation](/mem/intune/apps/mam-faq).
 
-- [Microsoft Tunnel VPN integration](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN capabilities is now integrated with Microsoft Defender for Endpoint app for Android. This unification enables organizations to offer a simplified end user experience with one security app – offering both mobile threat defense and the ability to access on-prem resources from their mobile device, while security and IT teams are able to maintain the same admin experiences they are familiar with.
+- [Microsoft Tunnel VPN integration](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN capabilities is now integrated with Microsoft Defender for Endpoint app for Android. This unification enables organizations to offer a simplified end user experience with one security app – offering both mobile threat defense and the ability to access on-premesis resources from their mobile device, while security and IT teams are able to maintain the same admin experiences they are familiar with.
 
 - [Jailbreak detection on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> Jailbreak detection capability in Microsoft Defender for Endpoint on iOS is now generally available. This adds to the phishing protection that already exists.  For more information, see [Setup Conditional Access Policy based on device risk signals](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
 ## March 2021
-- [Manage tamper protection using the Microsoft 365 Defender portal](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*.
+- [Manage tamper protection for your organization using Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*.
 
 
 ## January 2021

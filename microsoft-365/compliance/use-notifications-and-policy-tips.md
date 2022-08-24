@@ -26,8 +26,6 @@ description: Learn how to add a policy tip to a data loss prevention (DLP) polic
 
 # Send email notifications and show policy tips for DLP policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can use a Microsoft Purview data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
@@ -158,7 +156,7 @@ Here are some fine points to understand about using a policy tip to override a r
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
 
-- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FlasePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
+- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
 
 #### Availability of Override
 

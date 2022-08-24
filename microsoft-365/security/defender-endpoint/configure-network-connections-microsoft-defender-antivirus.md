@@ -34,10 +34,6 @@ To ensure Microsoft Defender Antivirus cloud-delivered protection works properly
 > [!IMPORTANT]
 > This article contains information about configuring network connections only for Microsoft Defender Antivirus. If you are using Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus), see [Configure device proxy and Internet connectivity settings for Defender for Endpoint](configure-proxy-internet.md).
 
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
 ## Allow connections to the Microsoft Defender Antivirus cloud service
 
 The Microsoft Defender Antivirus cloud service provides fast, and strong protection for your endpoints. It's optional to enable the cloud-delivered protection service. Microsoft Defender Antivirus cloud service is recommended, because it provides important protection against malware on your endpoints and network. For more information, see [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for enabling service with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or individual clients in the Windows Security app.
@@ -98,7 +94,7 @@ If you're using Microsoft Edge, you'll also see a notification message:
 
 A similar message occurs if you're using Internet Explorer:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender AV notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender Antivirus notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### View the fake malware detection in your Windows Security app
 

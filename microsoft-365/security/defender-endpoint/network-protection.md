@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 08/12/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -18,12 +19,9 @@ ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date:
 ---
 
 # Protect your network
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -32,7 +30,10 @@ ms.date:
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
+- macOS
+- Linux
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -47,17 +48,15 @@ Watch this video to learn how Network protection helps reduce the attack surface
 
 ## Requirements for network protection
 
-Network protection requires Windows 10 or 11 (Pro or Enterprise), or Windows Server version 1803 or later, and Microsoft Defender Antivirus real-time protection.
+Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server version 1803 or later, macOS version 11 or later, or Defender Supported Linux versions, and Microsoft Defender Antivirus real-time protection.
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10 version 1709 or later <br> Windows 11 <br> Windows Server 1803 or later | [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) <br> and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled (active)|
+| Windows 10 version 1709 or later <br/> Windows 11 <br/> Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active). |
 
 ## Why network protection is important
 
-Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer the network layer of blocking URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections.
-
-By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
+Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer the network layer of blocking URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections. By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
 
 - Block IP/URL addresses from your own threat intelligence ([indicators](indicator-ip-domain.md))
 - Block unsanctioned services from [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) (formerly known as Microsoft Cloud App Security)
@@ -116,10 +115,9 @@ A user visits a website:
   - **Unblock** - The user won't need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for another 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-  > [!div class="mx-imgBorder"]
-  > ![Shows a network protection phishing content warn notification](images/network-protection-phishing-warn-2.png)
+    :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
 
-  > [NOTE!]
+  > [!NOTE]
   > The images shown here for warn experience and block experience (below) both list **"blocked url"** as example placeholder text; in a functioning environment the actual url or domain will be listed.  
 
 #### Block experience
@@ -129,9 +127,8 @@ A user visits a website:
 - If the url has a bad reputation, a toast notification will present the user with the following options:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
-  
-  > [!div class="mx-imgBorder"]
-  > ![ Shows a network protection known phishing content blocked notification](images/network-protection-phishing-blocked.png)
+
+    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="images/network-protection-phishing-blocked.png":::
 
 ### Network protection: C2 detection and remediation
 
@@ -139,44 +136,26 @@ In its initial form, ransomware is a commodity threat, pre-programmed and focuse
 
 Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage.
 
-#### Detecting and remediating CobaltStrike (public preview)
-
-One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track _Tactics, Techniques, and Procedures_ (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors. These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim's computer to enable hands-on keyboard activity.
-
-CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators of compromise (IoC). Once captured, these indicators are shared throughout Microsoft's product stack for detection and protection purposes.
-
-Defender for Endpoint's command and control detection isn't limited to CobaltStrike. Defender for Endpoint can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
-
-Blocking command-and-control communication can severely impede a targeted attack, giving your security team time to find the initial entry vectors and close them down before another attempted attack.
-
-<!-- Hide {this intro with no subsequent list items}
-[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
--->
-
 ## SmartScreen Unblock
 
 A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
- > [!div class="mx-imgBorder"]
- > ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
+:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
 Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
 
-<!-- Hide {this intro with no subsequent list items}
-[Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
--->
-
- > [!div class="mx-imgBorder"]
- > ![Network protection SmartScreen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
+:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
 
 ## Using network protection
 
 Network protection is enabled per device, which is typically done using your management infrastructure. For supported methods, see [Turn on network protection](enable-network-protection.md).
 
 > [!NOTE]
-> Microsoft Defender Antivirus must be active to enable Network protection.
+> Microsoft Defender Antivirus must be active to enable network protection.
 
 You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
+
+For information about Network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for MacOS](network-protection-macos.md).
 
 ## Advanced hunting
 
@@ -191,27 +170,26 @@ The following example includes the blocked actions:
 ```kusto
 
 DeviceEvents
-
-- Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
- > [!div class="mx-imgBorder"]
- > ![Advanced hunting for auditing and identifying events](images/network-protection-advanced-hunting.png)
+
+:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events." lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
 
-Here's an another example:
+Here's another example:
 
 ```kusto
 
 DeviceEvents:
 
-- where ActionType contains "ExploitGuardNetworkProtection"
-- extend ParsedFields=parse_json(AdditionalFields)
-- project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
-- sort by Timestamp desc
+|where ActionType contains "ExploitGuardNetworkProtection"
+|extend ParsedFields=parse_json(AdditionalFields)
+|project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
+|sort by Timestamp desc
 
 ```
 The Response category tells you what caused the event, for example:
@@ -318,7 +296,7 @@ Due to the multi-user nature of Windows 10 Enterprise, keep the following points
 
 ### Alternative option for network protection
 
-For Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure, network protection for Microsoft Edge can be enabled using the following method:
+For Windows Server version 1803 or later and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure, network protection for Microsoft Edge can be enabled using the following method:
 
 1. Use [Turn on network protection](enable-network-protection.md) and follow the instructions to apply your policy.
 
@@ -344,3 +322,5 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
+- [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
+- [Network protection for MacOS](network-protection-macos.md) | To learn more about Microsoft Network protection for MacOS

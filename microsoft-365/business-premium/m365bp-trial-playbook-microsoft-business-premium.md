@@ -2,13 +2,14 @@
 title: "Microsoft Defender for Business Premium trial playbook"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.prod: m365-security
 search.appverid: 
 - MOE150
@@ -24,8 +25,8 @@ Welcome to the Microsoft Business Premium trial playbook. This playbook will hel
 
 When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up.
 
-> [!Tip]
-> When links in the playbook take you away from this location, simply return to this playbook to continue.
+> [!TIP]
+> Save this playbook to your browser favorites. When links in the playbook take you away from this location, simply return to this playbook to continue.
 
 First, [set up your trial](../business-premium/m365bp-setup.md)!
 
@@ -41,7 +42,7 @@ Microsoft 365 Business Premium includes [Preset security policies](/security/off
 
 When you try or buy Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the sign-up process.
 
-> [!Note]
+> [!NOTE]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. From the admin center menu, choose **Setup** to start the wizard.
@@ -58,6 +59,9 @@ When you try or buy Microsoft 365 Business Premium, you have the option of using
 5. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
 ## Onboard and protect devices
+
+> [!NOTE]
+> The ability to onboard endpoints running Windows Server or Linux Server is now in preview! See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 

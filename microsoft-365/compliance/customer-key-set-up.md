@@ -16,8 +16,6 @@ description: "Learn how to set up Customer Key."
 
 # Set up Customer Key
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 With Customer Key, you control your organization's encryption keys and then configure Microsoft 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys.
 
 Set up Azure before you can use Customer Key. This article describes the steps you need to follow to create and configure the required Azure resources and then provides the steps for setting up Customer Key. After you set up Azure, you determine which policy, and therefore, which keys, to assign to encrypt data across various Microsoft 365 workloads in your organization. For more information about Customer Key, or for a general overview, see [Service encryption with Microsoft Purview Customer Key](customer-key-overview.md).

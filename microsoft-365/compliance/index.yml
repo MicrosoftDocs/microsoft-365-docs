@@ -16,6 +16,7 @@ metadata:
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
   ms.date: 04/22/2022 #Required; mm/dd/yyyy format
   ms.localizationpriority: high
+  titleSuffix: Microsoft Purview (compliance)
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

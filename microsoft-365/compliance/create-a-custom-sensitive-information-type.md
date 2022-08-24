@@ -20,8 +20,6 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types in the Compliance center
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
 
 The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
@@ -181,6 +179,9 @@ For a scanned item to satisfy rule criteria, the number of unique instances of a
   - Any - Use `Any` when you want the unique instance count criteria to be satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
 
 For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
+
+> [!NOTE]
+> We support up to 100 exact data match (EDM) evaluations. Policies that use EDM SITs should not be written with a **min** or **max** instance count value greater than 100.
 
 > [!NOTE]
 > Microsoft 365 Information Protection supports double byte character set languages for:

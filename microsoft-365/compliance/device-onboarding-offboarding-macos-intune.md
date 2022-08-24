@@ -19,8 +19,6 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 
 # Onboard and offboard macOS devices into Microsoft Purview solutions using Intune
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
@@ -48,8 +46,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Deploy the onboarding package](#deploy-the-onboarding-package)
 1. [Enable system extension](#enable-system-extension)
-1. [Get the installation package](#get-the-installation-package)
-1. [Deploy the installation package](#deploy-the-microsoft-dlp-installation-package)
+1. [Publish application](#publish-application)
 
 ### Create system configuration profiles
 
@@ -230,23 +227,11 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. Choose **Next** to deploy the configuration.
 
-### Get the installation package
+### Publish application
 
-1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
- 
-1. For **Select operating system to start onboarding process** choose **macOS**
- 
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
- 
-1. Choose **Download installation package**. This will give you the *wdav.pkg* file.
+Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS
 
-> [!IMPORTANT]
-> Before you can deploy the *wdav.pkg.* package via Intune, it must be reformatted using the *Intune App Wrapping Tools for Mac* into the *wdav.pkg.intunemac* format.
- 
-
-### Deploy the Microsoft DLP installation package
-
-1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos) to convert the *wdav.pkg* file into the proper format and deploy it through Intune.
+1. Follow the procedures in [Intune-based deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-with-intune#publish-application) to deploy MDE to enrolled macOS devices.
 
 ## Offboard macOS devices using Intune
 

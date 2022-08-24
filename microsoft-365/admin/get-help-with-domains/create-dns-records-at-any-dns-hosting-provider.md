@@ -18,6 +18,7 @@ search.appverid:
 - MET150
 description: "Connect a domain at any DNS hosting provider to Microsoft 365 by verifying your domain and updating the DNS records in your registrar’s account."
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet

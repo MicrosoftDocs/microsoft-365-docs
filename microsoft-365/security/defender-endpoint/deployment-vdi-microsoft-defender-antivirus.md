@@ -28,9 +28,6 @@ ms.collection: m365-security-compliance
 
 In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-> [!NOTE]
-> The Defender for Endpoint demo site at `demo.wd.microsoft.com` is deprecated and will be removed in the future.
-
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
 - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
@@ -41,15 +38,13 @@ This guide describes how to configure your VMs for optimal protection and perfor
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
 
-You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
-
 For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 
 For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
 > Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
-> There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+> There are performance and feature improvements to the way in which Microsoft Defender Antivirus operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 ## Set up a dedicated VDI file share
 

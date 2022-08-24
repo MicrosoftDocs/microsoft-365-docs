@@ -14,8 +14,8 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
-- m365solution-scenario
 - m365solution-overview
+- zerotrust-solution
 ms.custom:
 - intro-overview
 description: Deploy your identity infrastructure for Microsoft 365.

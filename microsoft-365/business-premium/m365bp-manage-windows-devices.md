@@ -2,26 +2,17 @@
 title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
-- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -51,7 +42,7 @@ This video describes the steps for how to set this up for the most common scenar
 
 See [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md) for the steps.
 
-## Device actions
+## Possible device actions and statuses
   
 ![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
 

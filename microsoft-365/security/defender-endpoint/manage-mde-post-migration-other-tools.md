@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
-  - m365solution-scenario
+
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
@@ -31,7 +31,6 @@ ms.reviewer: chventou
 
 > [!NOTE]
 > We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
->
 > - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
 > - [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-mde-post-migration-intune.md)
 > - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)
@@ -81,6 +80,6 @@ You can also configure whether and what features end users can see in the Micros
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

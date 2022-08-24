@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-overview
   - m365solution-evalutatemtp
+  - zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
 ---

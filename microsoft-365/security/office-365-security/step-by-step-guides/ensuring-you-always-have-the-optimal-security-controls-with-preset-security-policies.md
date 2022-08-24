@@ -23,7 +23,7 @@ ms.technology: mdo
 
 Preset security policies allow you to select a security profile of either Standard or Strict, and have Microsoft manage and maintain security controls across Microsoft Defender for Office 365 for you.
 
-As new controls are added or if the best practice setting for a security control changes with the evolving threat landscape, Microsoft will automatically update security control settings for users assigned to a Standard or Strict preset security policy. By using Security Preset policies, you will always have Microsoft’s recommended, best practice configuration for your users.
+As new controls are added or if the best practice setting for a security control changes with the evolving threat landscape, Microsoft will automatically update security control settings for users assigned to a Standard or Strict preset security policy. By using Security Preset policies, you will always have Microsoft's recommended, best practice configuration for your users.
 
 ## What you will need
 - Microsoft Defender for Office 365 Plan 1 or higher (Included in E5)
@@ -45,7 +45,7 @@ Our Strict preset security policy has more aggressive limits and settings for se
 
 ## Enable Security Presets
 
-Once you’ve chosen between the Standard and Strict security preset policies for your users, it takes a few further steps to assign users to each preset.
+Once you've chosen between the Standard and Strict security preset policies for your users, it takes a few further steps to assign users to each preset.
 
 1. Identify the users, groups, or domains you would like to include in Standard and Strict security presets.
 1. Login to the Microsoft Security portal at https://security.microsoft.com.
@@ -66,7 +66,7 @@ Once you’ve chosen between the Standard and Strict security preset policies fo
 
 ## Next Steps
 
-Use config analyzer to determine if your users are configured per Microsoft’s best practices.
+Use config analyzer to determine if your users are configured per Microsoft's best practices.
 
 > [!TIP]
 > Configuration analyzer allows admins to find and fix security policies where the settings are below the Standard or Strict protection profile settings in preset security policies. Find out more about Configuration analyzer [here](../../office-365-security/configuration-analyzer-for-security-policies.md).
