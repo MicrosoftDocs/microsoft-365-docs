@@ -60,8 +60,7 @@ When you try or buy Microsoft 365 Business Premium, you have the option of using
 
 ## Onboard and protect devices
 
-> [!NOTE]
-> The ability to onboard endpoints running Windows Server or Linux Server is now in preview! See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
+Microsoft 365 Business Premium includes Defender for Business, a new security solution to protect devices. See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -71,11 +70,11 @@ When you try or buy Microsoft 365 Business Premium, you have the option of using
 
 4. [Review your security policies](../security/defender-business/mdb-configure-security-settings.md).
 
-## Use Office apps on devices
+## Use Microsoft 365 Apps on devices
 
-1. First, you'll need to [install Office](m365bp-install-office-apps.md).
+1. First, you'll need to [install Microsoft 365 Apps](m365bp-install-office-apps.md).
 
-2. Go to office.com and [sign in](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
+2. Go to [https://office.com](https://office.com) and sign in. (See [Getting Started at Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
 3. Create an Office document, such as a [Word document](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 
@@ -87,12 +86,13 @@ When you try or buy Microsoft 365 Business Premium, you have the option of using
 
 2. Take some time to [familiarize yourself with the portal](../security/defender-business/mdb-get-started.md).
 
-3. Now, [assess your security posture](../security/defender/microsoft-secure-score.md).
+3. Now, [assess your security posture](../security/defender/microsoft-secure-score.md), and see how you can improve your score.
 
-4. Familiarize yourself with [how to respond to a security incident](../security/defender-business/mdb-respond-mitigate-threats.md).
+4. Learn how to [respond to a security incident](../security/defender-business/mdb-respond-mitigate-threats.md).
 
 5. Lastly, [review remediation actions](../security/defender-business/mdb-review-remediation-actions.md).
 
 ## See also
 
 - [Microsoft 365 Business Premium &mdash; cybersecurity for small business](index.md)
+- [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
