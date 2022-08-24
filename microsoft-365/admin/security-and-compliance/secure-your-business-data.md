@@ -1,5 +1,5 @@
 ---
-title: Top 10 ways to secure your business data - Best practices for small and medium-sized businesses
+title: Top 10 ways to secure your data - Best practices for small and medium-sized businesses
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.date: 08/23/2022
+ms.date: 08/24/2022
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -28,8 +28,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
+description: "Learn the top 10 ways to protect your business, including ransomware, phishing, and malicious attachments."
 ---
 
 # Top 10 ways to secure your data - Best practices for small and medium-sized businesses
@@ -46,7 +45,7 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
 1. **Use multi-factor authentication**. [Multi-factor authentication](multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password. See [security defaults and MFA](../../business-premium/m365bp-conditional-access.md). 
 
-2. **Protect your administrator accounts**. Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. See [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md). 
+2. **Protect your administrator accounts**. Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. See [Protect your administrator accounts](../../business-premium/m365bp-protect-admin-accounts.md). 
 
 3. **Use preset security policies**. Your subscription includes [preset security policies](../../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. See [Protect against malware and other cyberthreats](../../business-premium/m365bp-increase-protection.md).
 
@@ -64,13 +63,13 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
    - [Set up meetings with Microsoft Teams](../../business-premium/set-up-meetings.md) 
    - [Share files and videos in a safe environment](../../business-premium/share-files-and-videos.md) 
 
-7. **Set sharing settings for SharePoint and OneDrive files and folders**. Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. See [Set sharing settings for SharePoint and OneDrive files and folders](../../business-premium/m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). 
+7. **Set sharing settings for SharePoint and OneDrive files and folders**. Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. Grant people only the access they need to do their jobs. See [Set sharing settings for SharePoint and OneDrive files and folders](../../business-premium/m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). 
 
-8. **Use Microsoft 365 apps on devices**. Outlook and Microsoft 365 apps (also referred to as Office apps) enable people to work productively and more securely across devices. Whether you're using the web or desktop version of an app, you can start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to files that are stored in SharePoint or OneDrive. See [Install Office apps on all devices](../../business-premium/m365bp-install-office-apps.md). 
+8. **Use Microsoft 365 Apps on devices**. Outlook and Microsoft 365 Apps (also referred to as Office apps) enable people to work productively and more securely across devices. Whether you're using the web or desktop version of an app, you can start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to files that are stored in SharePoint or OneDrive. See [Install Office apps on all devices](../../business-premium/m365bp-install-office-apps.md). 
 
 9. **Manage calendar sharing for your business**. You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only. See [Manage calendar sharing](../../business-premium/m365bp-increase-protection.md#manage-calendar-sharing). 
 
-10. **Maintain your environment**. After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. See [Maintain your environment](../../business-premium/m365bp-maintain-environment.md). 
+10. **Maintain your environment**. After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. You'll also want to make sure people have only the access they need to do their jobs. See [Maintain your environment](../../business-premium/m365bp-maintain-environment.md). 
 
 ## Comparing Microsoft 365 for business plans
 
@@ -86,12 +85,12 @@ The following table compares capabilities in Microsoft 365 for business plans.
 | **Antispam, antiphishing, and antimalware protection** for email <br/>[Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Mobile device management** and mobile app management <br/>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) | See note <sup>[[2](#fn2)]</sup> | See note <sup>[[2](#fn2)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>[Defender for Business](../../security/defender-business/mdb-overview.md) | See note <sup>[[3](#fn3)]</sup>  | See note <sup>[[3](#fn3)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Advanced protection for email and documents** with advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>([Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md)) | See note <sup>[[4](#fn4)]</sup> | See note <sup>[[4](#fn4)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
-| **Information protection** capabilities to discover, classify, protect, and govern sensitive information <br/>([Azure Information Protection](/azure/information-protection/what-is-information-protection))  | | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Advanced protection for email and documents** with advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>[Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md) | See note <sup>[[4](#fn4)]</sup> | See note <sup>[[4](#fn4)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+| **Information protection** capabilities to discover, classify, protect, and govern sensitive information <br/>[Azure Information Protection](/azure/information-protection/what-is-information-protection)  | | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
 (<a id="fn1">1</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops only.
 
-(<a id="fn2">2</a>) Microsoft Intune is included with certain Microsoft 365 plans. Basic Mobility and Security is part of the Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+(<a id="fn2">2</a>) Microsoft Intune is included with certain Microsoft 365 plans. Basic Mobility and Security capabilities are part of the Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
 
 (<a id="fn3">3</a>) Defender for Business is included in Microsoft 365 Business Premium. It can also be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 

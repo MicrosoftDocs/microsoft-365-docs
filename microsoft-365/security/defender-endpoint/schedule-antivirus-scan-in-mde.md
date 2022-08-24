@@ -58,7 +58,7 @@ Use the following steps to schedule scans:
     PATH=/sbin:/bin:/usr/sbin:/usr/bin
     RANDOM_DELAY=45
     # Anacron jobs will start between 8pm and 11pm.
-    START_HOURS_RANGE=2-023
+    START_HOURS_RANGE=20-23
     # delay will be 5 minutes + RANDOM_DELAY for cron.daily
     ```
 
@@ -134,11 +134,12 @@ Use the following steps to schedule scans:
 
     ```Press Esc```
 
-    ```Type: **wq!```
+    ```Type: wq!```
 
 1. Change the file permissions to allow the file to be executed.
 
     ```Chmod 755 mdavfullscan```
+
     ```ls -la```
 
     :::image type="content" source="images/chmod-755-mdavfullscan.png" alt-text="7.	Change file permissions":::
