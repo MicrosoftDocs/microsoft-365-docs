@@ -150,7 +150,7 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
 1. Run the following to check the status of the batch you submitted.
 
     ```powershell
-    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
     ```
 
 ## Related articles
