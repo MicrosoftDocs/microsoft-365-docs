@@ -7611,7 +7611,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365//admin/setup/secure-win-10-pcs.md",
+      "source_path": "microsoft-365/admin/setup/secure-win-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
@@ -7633,6 +7633,11 @@
     {
       "source_path": "defender/threat-intelligence/index.md",
       "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/archive-jive-data.md",
+      "redirect_url": "/microsoft-365/compliance/",
       "redirect_document_id": false
     }
   ]
