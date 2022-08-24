@@ -22,9 +22,9 @@ appliesto:
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) enables you to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). After you set up a connection, your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
+The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to set up a connection. After a connection is set up, you manage it by using [Shifts connector PowerShell cmdlets](#shifts-connector-cmdlets).
+You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to set up a connection. After a connection is set up, you manage it by using [Shifts connector PowerShell cmdlets](#shifts-connector-cmdlets).
 
 This article describes how to use PowerShell to do the following:
 
@@ -36,7 +36,7 @@ This article describes how to use PowerShell to do the following:
 - [Disable sync for a connection](#disable-sync-for-a-connection)
 
 > [!NOTE]
-> This article assumes that you've already set up a connection to Blue Yonder WFM, either by using the wizard or PowerShell.
+> This article assumes that you've already set up a connection to UKG Dimensions, either by using the wizard or PowerShell.
 
 ## Before you begin
 
@@ -389,7 +389,7 @@ For help with Shifts connector cmdlets, search for **CsTeamsShiftsConnection** i
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)
-- [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
+- [Use the Shifts connector wizard to connect Shifts to UKG Dimensions](shifts-connector-wizard-ukg.md)
+- [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md)
 - [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
