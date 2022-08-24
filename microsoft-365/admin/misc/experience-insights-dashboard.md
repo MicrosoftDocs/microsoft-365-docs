@@ -86,7 +86,7 @@ For the first time, you can now see what articles your users are consuming on Su
 
 ### View your organization's Adoption Score
 
-Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. For more information on Adoption Score, read, [Productivity Score](../adoption/adoption-score.md).
+Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. For more information on Adoption Score, read, [Adoption Score](../adoption/adoption-score.md).
 
 ### Take training for adoption specialists
 
