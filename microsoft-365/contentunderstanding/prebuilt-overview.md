@@ -18,9 +18,9 @@ description: Learn about trained models in SharePoint Syntex.
 
 # Overview of trained models overview in Microsoft SharePoint Syntex
 
-In addition to [document understanding models](document-understanding-overview.md) and [form processing models](form-processing-overview.md), SharePoint Syntex provides prebuilt trained models to automate the extraction of information.
+In addition to [custom models](model-types-overview.md#custom-models), SharePoint Syntex provides prebuilt *trained models* to automate the extraction of information.
 
-Trained models are prebuilt to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
+Trained models are preconfigured to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
 Trained models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific document types. You start by analyzing one of your files against the prebuilt model. You then select the detected fields that make sense for your purpose. If the model doesn't detect the fields that you need, you can analyze again by using a different file.
 
