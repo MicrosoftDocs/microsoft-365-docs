@@ -20,9 +20,16 @@ description: Learn how to use a trained invoices model in SharePoint Syntex.
 
 The trained *invoices model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
 
-## Use an invoices model
+To use an invoices model, follow these steps:
 
-Follow these steps to use a trained invoices model to classify documents in SharePoint Syntex.
+- Step 1: [Create an invoices model](#create-an-invoices-model)
+- Step 2: [Add an example file to analyze](#add-an-example-file-to-analyze)
+- Step 3: [Select extractors for your model](#select-extractors-for-your-model)
+- Step 4: [Apply the model](#apply-the-model)
+
+## Create an invoices model
+
+Follow these steps to create a trained invoices model.
 
 1. From the **Models** page, select **Create a model**.
 
@@ -38,7 +45,7 @@ Follow these steps to use a trained invoices model to classify documents in Shar
     > [!NOTE]
     > Sensitivity labels are not available for trained models at this time.
 
-## Add a file to analyze
+## Add an example file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
@@ -52,7 +59,7 @@ Follow these steps to use a trained invoices model to classify documents in Shar
 
     ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-add-file-from-training-library.png) 
 
-6. On the **Files to analyze the model** page, select **Next**.
+4. On the **Files to analyze the model** page, select **Next**.
 
 ## Select extractors for your model
 
@@ -85,7 +92,7 @@ The original value is what is actually in the document. The extracted value is w
 
 Continue to select additional extractors you want to you use. You can also add other files to analyze for this model configuration.
 
-## Rename an extractor
+### Rename an extractor
 
 You can rename an extractor either from the model home page or from the **Extractors** panel. You might consider renaming selected extractors because these names will be used as the column names when the model is applied to the library.
 
