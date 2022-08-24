@@ -23,28 +23,6 @@ appliesto:
 
 ## Overview
 
-### Original
-
-Your organization may have a lot of teams that you use to drive communication and collaboration among your frontline workforce, who are spread across different stores, locations, and roles. Currently, there isn't an easy solution to deploy, set up, and manage these teams and users at scale.
-
-We're building a solution to enable admins to deploy and manage teams at scale.
-
-Here's an overview of the capabilities available today for creating and managing large numbers of teams at a time and what we're planning for the near future.
-
-||Available today |Later in 2022  |
-|---------|---------|---------|
-|**Number of teams you can create per batch**|Up to 100 |Up to 500|
-|**Number of users you can add per team**|Up to 25|Up to 25|
-
-Deploying Teams at scale allows you to:
-
-- Create teams using pre-built templates or your own custom templates.
-- Add users to teams as owners or members.
-- Manage teams at scale by adding or removing users from existing teams.
-- Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
-
-### Updated
- 
 Does your organization use a large number of teams to drive communication and collaboration among your frontline workforce? This article is for you if you need to create and manage teams at scale.
 
 You can use PowerShell to deploy up to 500 teams and add up to 25 users per team at a time. You can also add and remove users from existing teams at scale. Use this solution to meet your organization's scale needs and significantly reduce deployment time.
@@ -56,7 +34,7 @@ Deploying Teams at scale enables you to:
 - Manage teams at scale by adding or removing users from existing teams.
 - Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
 
-This article guides you through how to deploy Teams at scale. You'll learn how to use PowerShell to provision a large number of teams, and then apply and assign policies to configure the experience in Teams for your frontline workforce.
+This article guides you through how to deploy Teams at scale. [You'll learn how to use PowerShell to provision a large number of teams, and then apply and assign policies to configure the experience in Teams for your frontline workforce.]
 
 ## Set up and deploy your teams
 
