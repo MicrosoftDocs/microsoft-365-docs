@@ -26,7 +26,7 @@ Follow these steps to use a trained invoices model to classify documents in Shar
 
 1. From the **Models** page, select **Create a model**.
 
-    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/create-a-model-from-models-page.png) 
+    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
 
 2. On the **Create a model** panel, in the **Name** field, type the name of the model.
 
