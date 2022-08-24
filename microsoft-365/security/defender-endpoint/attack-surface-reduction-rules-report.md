@@ -110,7 +110,7 @@ Provides two 'action' buttons:
 - View detections - opens the Attack surface reduction rules > main Detections tab
 - Add exclusions - Opens the Attack surface reduction rules > main Exclusions tab
 
-Clicking on the **ASR rules detections** link at the top of the card also opens the main [Attack surface reduction rules** \> **Detections** tab](#attack-surface-reduction-rules-\>-main-detections-tab).
+Clicking on the **ASR rules detections** link at the top of the card also opens the main [Attack surface reduction rules Detections tab](#attack-surface-reduction-rules-main-detections-tab).
 
 ### ASR rules configuration summary card
 
