@@ -1,5 +1,5 @@
 ---
-title: Overview of trained models overview in Microsoft SharePoint Syntex
+title: Overview of trained models in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about trained models in SharePoint Syntex.
 ---
 
-# Overview of trained models overview in Microsoft SharePoint Syntex
+# Overview of trained models in Microsoft SharePoint Syntex
 
 In addition to [custom models](model-types-overview.md#custom-models), SharePoint Syntex provides prebuilt *trained models* to automate the extraction of information.
 
