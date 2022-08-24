@@ -29,7 +29,7 @@ appliesto:
 
 Now that your organization has begun using Shifts to manage schedules, you'll need to make sure that your frontline workers understand how to track their time and attendance.
 
-Leverage your [corporate communications strategy](flw-corp-comms.md) to share Shifts training content with your team and make sure they have access to the resources they need:
+Use your [corporate communications strategy](flw-corp-comms.md) to share Shifts training content with your team and make sure they have access to the resources they need:
 
 1. Share the [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your team to help them understand the basics.
 2. Share [Videos for frontline managers](#shifts-videos-for-managers) with your managers to help them set up and manage schedules for their teams.
@@ -45,8 +45,8 @@ Copy a schedule with Shifts <br>
 [View Copy a schedule with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202298)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE54jxu]
 
-Re-use a weekly schedule from Excel with Shifts <br>
-[View Re-use a weekly schedule from Excel with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202611)
+Reuse a weekly schedule from Excel with Shifts <br>
+[View Reuse a weekly schedule from Excel with Shifts on YouTube](https://go.microsoft.com/fwlink/?linkid=2202611)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE546xQ]
 
 ## Shifts videos for users
