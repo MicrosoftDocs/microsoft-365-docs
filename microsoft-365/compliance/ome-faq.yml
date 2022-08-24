@@ -130,6 +130,7 @@ sections:
         answer: |
           You can attach any file type to a protected mail. Protection policies are applied only to a subset of the file formats mentioned in [File types supported by the Azure Information Protection client](/information-protection/rms-client/client-admin-guide-file-types). 
           Microsoft Purview Message Encryption only supports the following Office files extensions:
+          
           |Office file type|
           |docx|
           |docm|
@@ -189,7 +190,7 @@ sections:
       - question: |
           Does the encrypted message portal support preview of encrypted attachments in protected emails?
         answer: |
-          The encrypted message portal supports preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, Powerpoint, and PDF files.  
+          The encrypted message portal supports preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, PowerPoint, and PDF files.  
 
       - question: |
           Can I automatically encrypt messages by setting up policies?
@@ -282,7 +283,7 @@ sections:
       - question: |
           How long do I have access to the mail in the encrypted message portal?
         answer: |
-          You can login to the encrypted message portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
+          You can log in to the encrypted message portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
 
       - question: |
           What do I do if I don't receive the one-time pass code after I requested it?
