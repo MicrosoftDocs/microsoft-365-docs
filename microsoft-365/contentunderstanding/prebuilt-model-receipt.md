@@ -1,5 +1,5 @@
 ---
-title: Use a trained model to extract info from receipts in Microsoft SharePoint Syntex
+title: Use a trained model to extract information from receipts in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,7 +16,7 @@ description: Learn how to use a trained receipts model in SharePoint Syntex.
 
 ---
 
-# Use a trained model to extract info from receipts in Microsoft SharePoint Syntex
+# Use a trained model to extract information from receipts in Microsoft SharePoint Syntex
 
 The trained *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 

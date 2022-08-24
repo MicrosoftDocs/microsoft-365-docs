@@ -1,5 +1,5 @@
 ---
-title: Use a trained model to extract info from invoices or receipts in Microsoft SharePoint Syntex
+title: Use a trained model to extract information from invoices in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,7 +16,7 @@ description: Learn how to use a trained invoices model in SharePoint Syntex.
 
 ---
 
-# Use a trained model to extract info from invoices in Microsoft SharePoint Syntex
+# Use a trained model to extract information from invoices in Microsoft SharePoint Syntex
 
 The trained *invoices model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
 
