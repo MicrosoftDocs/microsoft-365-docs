@@ -91,14 +91,7 @@ Learn how to [help your employees track time and attendance with Shifts](shifts-
 
 Share this [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your users.
 
-#### Shifts videos
-
-- [Watch the Tags with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202712)
-- [Watch the Clocking in with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202613)
-- [Watch the Create a schedule with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202612)
-- [Watch the Re-use a schedule from Excel with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202611)
-- [Watch the Copy a schedule with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202298)
-- [Watch the Swap Shifts video](https://go.microsoft.com/fwlink/?linkid=2202711)
+[View videos and resources](shifts-toolkit.md) to share with your team to help them use features in Shifts.
 
 ### Keep in touch with Walkie Talkie
 
