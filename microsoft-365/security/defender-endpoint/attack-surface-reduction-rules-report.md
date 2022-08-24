@@ -259,7 +259,7 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 - **Add exclusion** which will open Microsoft Endpoint Manager (MEM) ASR policy page. For more information, see: [MEM](https://enable-attack-surface-reduction.md#mem) in "Enable ASR rules alternate configuration methods."
 - **Get exclusion paths** which will download file paths in a csv format
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary lightbox="images/attack-surface-reduction-rules-report-exclusion-flyout.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary lightbox="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png":::
 
 ## See also
 
