@@ -41,7 +41,7 @@ This article walks you through how to deploy Teams at scale.
 > [!NOTE]
 > Before you deploy your teams, make sure that all teams owners have a Teams license.
 
-Follow these steps to deploy a large number of teams at a time.
+Follow these steps to deploy up to 500 teams at a time.
 
 ### Step 1: Prepare your CSV files
 
