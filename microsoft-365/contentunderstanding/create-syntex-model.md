@@ -177,7 +177,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
 5. To complete the model:
 
-    - [Upload an example file](prebuilt-model-invoice.md#add-an-example-file-to-analyze).
+    - [Upload an example file](prebuilt-model-invoice.md#upload-an-example-file-to-analyze).
     - [Select extractors](prebuilt-model-invoice.md#select-extractors-for-your-model).
     - [Apply model to library](prebuilt-model-invoice.md#apply-the-model).
 
@@ -206,7 +206,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
 5. To complete the model:
 
-    - [Upload an example file](prebuilt-model-invoice.md#add-an-example-file-to-analyze).
+    - [Upload an example file](prebuilt-model-invoice.md#upload-an-example-file-to-analyze).
     - [Select extractors](prebuilt-model-invoice.md#select-extractors-for-your-model).
     - [Apply model to library](prebuilt-model-invoice.md#apply-the-model).
 
