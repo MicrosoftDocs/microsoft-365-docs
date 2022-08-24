@@ -133,4 +133,5 @@ Use REST APIs to create a document understanding model, apply or remove the mode
 |Use REST APIs for document understanding models|[SharePoint Syntex document understanding model REST API](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|
 <br><br>
 > [!div class="nextstepaction"]
-> [Go to: Overview of SharePoint Syntex](syntex-overview.md)
+> [Learn more about SharePoint Syntex](syntex-overview.md)
+<br>
