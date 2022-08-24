@@ -110,7 +110,7 @@ We also provide you with information that helps you gain visibility into how you
         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Office files in OneDrive within the last 28 days.</br>
         - Denominator: The number of people who have access to OneDrive or SharePoint and access office files within the last 28 days.
       - **SharePoint:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who are active on Office applications and create content on SharePoint as:</br>
-         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Office files (Microsoft Word, Excel, PowerPoint, or OneNote files) on SharePoint within the last 28 days. \
+         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Office files (Microsoft Word, Excel, PowerPoint, or OneNote files) on SharePoint within the last 28 days. 
          - Denominator: The number of people who have access to OneDrive or SharePoint and have accessed Office files within the last 28 days.
 
 4. **Link to resources:** Select this link to view help content.
