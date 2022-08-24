@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/24/2022
 ms.prod: m365-security
 search.appverid: 
 - MOE150
@@ -30,7 +30,7 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 
 First, [set up your trial](../business-premium/m365bp-setup.md)!
 
-After you've initiated the trial and completed the setup process, it may take up to two hours for changes to take effect.
+After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
 
 Microsoft 365 Business Premium includes [Preset security policies](/security/office-365-security/preset-security-policies.md) that you can use in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
