@@ -47,7 +47,7 @@ You must be a Microsoft 365 global admin to run the wizard.
 <a name="remove_schedules"> </a>
 
 > [!NOTE]
-> Complete this step if you're mapping instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
+> Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
 
 Use PowerShell to remove schedules from teams.
 
