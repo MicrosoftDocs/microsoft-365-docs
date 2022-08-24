@@ -26,7 +26,6 @@ description: "Learn how Microsoft Adoption Score reflects people and technology 
 # Microsoft Adoption Score 
 
 Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
-</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53oqt?autoplay=false]
 
@@ -155,7 +154,7 @@ This report helps organizations understand:
 
 ## We want to hear from you
 
-Share your thoughts about Adoption Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Adoption Score team at **adopscorefeedback@microsoft.com**.
+Share your thoughts about Adoption Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Adoption Score team at **adoptscorefeedback@microsoft.com**.
 
 ## Related content
 
