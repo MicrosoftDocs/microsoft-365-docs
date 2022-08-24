@@ -56,7 +56,7 @@ When you try or buy Microsoft 365 Business Premium, you have the option of using
 
 4. Follow the steps in the wizard to [create DNS records at any DNS hosting provider for Office 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
-5. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
+5. If your hosting provider is GoDaddy or another host enabled with domain connect, you'll be asked to sign in and let Microsoft authenticate on your behalf automatically.
 
 ## Onboard and protect devices
 
