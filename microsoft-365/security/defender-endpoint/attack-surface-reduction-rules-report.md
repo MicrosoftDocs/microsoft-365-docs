@@ -92,14 +92,14 @@ To navigate to the summary cards for the attack surface reduction rules report
 
 The summary report cards for ASR rules are shown in the following figure.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-summary.png" alt-text="Shows the Attack surface reduction (ASR) rules report summary cards" lightbox="images/image-file-name.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-summary.png" alt-text="Shows the Attack surface reduction (ASR) rules report summary cards" lightbox="images/attack-surface-reduction-rules-report-summary.png":::
 
 ## ASR rules report summary cards
 
 The ASR rules report summary is divided into two cards:
 
-- [**ASR rule detections** card](#asr-rules-detections-summary-card)
-- [**ASR rule configuration**](#asr-rule-configuration-summary-card)
+- [**ASR rule detections** summary card](#asr-rules-detections-summary-card)
+- [**ASR rule configuration** summary card](#asr-rules-configuration-summary-card)
 
 ### ASR rules detections summary card
 
@@ -110,7 +110,7 @@ Provides two 'action' buttons:
 - View detections - opens the Attack surface reduction rules > main Detections tab
 - Add exclusions - Opens the Attack surface reduction rules > main Exclusions tab
 
-Clicking on the **ASR rules detections** link at the top of the card also opens the main [Attack surface reduction rules** \> **Detections** tab](#attack-surface-reduction-rules-main-detections-tab).
+Clicking on the **ASR rules detections** link at the top of the card also opens the main [Attack surface reduction rules** \> **Detections** tab](#attack-surface-reduction-rules-\>-main-detections-tab).
 
 ### ASR rules configuration summary card
 
@@ -135,13 +135,13 @@ This card has two other navigation buttons:
 - **View configuration** - Opens the Attack surface reduction rules > main Configuration tab.
 - **Add exclusions** - Opens the Attack surface reduction rules > main Exclusions tab.
 
-Clicking on the **ASR rules configuration** link at the top of the card also opens the main [Attack surface reduction rules** \> **Configuration** tab](#attack-surface-reduction-rules-main-configuration-tab).
+Clicking on the **ASR rules configuration** link at the top of the card also opens the main [Attack surface reduction rules Configuration tab](#attack-surface-reduction-rules-main-configuration-tab).
 
-## Attack surface reduction rules \> main tabs
+## Attack surface reduction rules main tabs
 
 While the ASR rules report summary cards are useful for getting quick summary of your ASR rules status, the main tabs provide more in-depth, information with filtering and configuration capabilities.
 
-### Attack surface reduction rules \> main Detections tab
+### Attack surface reduction rules main Detections tab
 
 The Detections tab provides filtering and reporting capabilities:
 
@@ -149,7 +149,7 @@ The Detections tab provides filtering and reporting capabilities:
 
 Filtering provides a way for you to specify what results are returned:
 
-- **Basic rules**  enables you to limit results to the [three basic rules](#three-basic-rules). By default, this filter is set to **false**.
+- **Basic rules**  enables you to limit results to the [three basic ASR rules](#three-basic-asr-rules). By default, this filter is set to **false**.
 - **Date**  enables you to specify a date range for data results.
 - **Filters**
 
@@ -175,9 +175,9 @@ The bottom section of the report lists detected threats with the following field
 | User |  The machine account responsible for the call.  |
 | Publisher | The company that released the particular .exe or application |
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab" lightbox="images/image-file-name.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab" lightbox="images/attack-surface-reduction-rules-report-main-detections-tab.png":::
 
-### Attack surface reduction rules \> main Configuration tab
+### Attack surface reduction rules main Configuration tab
 
 Provides summary and per-device ASR rules configuration details.
 
@@ -215,7 +215,7 @@ The **Configuration** tab and _add rule_ flyout are shown in the following image
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Shows the Attack surface reduction (ASR) rules fly-out to add ASR rules to devices" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
-### Attack surface reduction rules \> main Add exclusions tab
+### Attack surface reduction rules main Add exclusions tab
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report add exclusions tab" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
 
