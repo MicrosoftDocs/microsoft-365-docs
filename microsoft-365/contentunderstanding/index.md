@@ -94,7 +94,7 @@ The resources in this section help you learn how to choose, create, and configur
 |Create and train models locally on a SharePoint site |[Create a model on a local SharePoint site](./create-local-model.md)|
 |Use trained models in other content centers |[Publish and discover document understanding models](./model-discovery.md)|
 |Automate content assembly using a modern template |[Create documents using content assembly](./content-assembly.md)|
-|Use SharePoint Syntex together with Power Automate to generate documents |[Automate document generation wit Power Automate](./automate-document-generation.md)|
+|Use SharePoint Syntex together with Power Automate to generate documents |[Automate document generation with Power Automate](./automate-document-generation.md)|
 |Perform metadata-based queries on document libraries|[Search for metadata in document libraries](./metadata-search.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|
 |Learn how to see data about your models|[Model usage analytics](./model-usage-analytics.md)|
@@ -136,4 +136,4 @@ Use REST APIs to create a document understanding model, apply or remove the mode
 <br><br>
 > [!div class="nextstepaction"]
 > [Learn more about SharePoint Syntex](syntex-overview.md)
-<br>
+<br><br>
