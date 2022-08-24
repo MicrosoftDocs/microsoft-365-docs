@@ -71,7 +71,7 @@ Types considered for this information include Word, Excel, PowerPoint, OneNote, 
 
     - Highlight (numerator/denominator) of the fraction is used to calculate the percentage expressed in each of the horizontal bars.
       - **Readers:**</br>
-          - Numerator: Number of people who access or download online files in OneDrive or SharePoint in the last 28 days</br>
+          - Numerator: Number of people who access or download online files in OneDrive or SharePoint in the last 28 days \
           - Denominator: Number of people who had access to OneDrive or SharePoint for at least 1 of the last 28 days</br>
       - **Creators:**</br>
         - Numerator: Number of people who create, modify, upload, sync, check in, copy, or move online files in OneDrive or SharePoint in the last 28 days</br>
