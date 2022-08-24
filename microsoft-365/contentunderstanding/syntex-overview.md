@@ -53,7 +53,7 @@ You build custom models to understand the layout of your files from example docu
 
 ### Trained models
 
-If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md). Trained models include:
+If you don't need to build a custom model, you can use a prebuilt [trained model](prebuilt-overview.md) one **add more description: to extract pre-defined entities from common business files**. Trained models include:
 
 - [Invoices](prebuilt-model-invoice.md)
 - [Receipts](prebuilt-model-receipt.md)
