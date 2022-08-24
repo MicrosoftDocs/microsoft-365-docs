@@ -50,6 +50,7 @@ On the **Select technique** page, select an available social engineering techniq
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
 - **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
+- **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -105,7 +106,7 @@ If you click **Filter**, the following filters are available:
 
 - **Controversial**: The available values are **Yes** or **No**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 If you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
@@ -116,12 +117,15 @@ To create your own payload, click ![Create a payload icon.](../../media/m365-cc-
 If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
 
 - The **Payload** tab contains an example and other details about the payload.
-- The **Login page** tab is described in the next section.
+- The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads and is described in the next section.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
 ### Login page
+
+> [!NOTE]
+> The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads.
 
 Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
 
@@ -156,6 +160,26 @@ Back on the **Select login page**, verify the new login page you created is sele
 Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
 
 When you're finished on the **Select a payload and login page**, click **Next**.
+
+## Configure OAuth Payload
+
+> [!NOTE]
+> This page is available only if you selected **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page. Otherwise, you're taken to the **Target users** page.
+
+On the **Configure OAuth payload** page, configure the following settings:
+
+- **App name**
+
+- **App logo**: Click **Browse** to select a .png, .jpeg, or .gif file to use. To remove a file after you've selected it, click **Remove**.
+
+- **Select app scope**: Choose one of the following values:
+  - **Read user calendars**
+  - **Read user contacts**
+  - **Read user mail**
+  - **Read all chat messages**
+  - **Read all files that user can access**
+  - **Read and write access to user mail**
+  - **Send mail as a user**
 
 ## Target users
 
@@ -299,19 +323,31 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
     If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
   - **Create your own landing page**: This value has the following associated options to configure:
-    - **Add payload indicators to email**: This setting is available to select only if both of the following conditions are true:
-      - You previously selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the [Select technique](#select-a-social-engineering-technique) page.
-      - After you add the **Dynamic tag** named **Insert email content** into the page content.
+    - **Add payload indicators to email**:This setting is available to select only if both of the following statements are true:
+      - You selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page.
+      - You've added the **Dynamic tag** named **Insert Payload content** in the landing page content on this page.
 
-    - Page content: Two tabs are available:
+    - Landing page content: Two tabs are available:
       - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
-          - **Insert name**
-          - **Insert sender name**
-          - **Insert sender email**
-          - **Insert email subject**
-          - **Insert email content**
-          - **Insert date**
+
+          |Tag name|Tag value|
+          |---|---|
+          |**Insert User name**|`${userName}`|
+          |**Insert First name**|`${firstName}`|
+          |**Insert Last name**|`${lastName}`|
+          |**Insert UPN**|`${upn}`|
+          |**Insert Email**|`${emailAddress}`|
+          |**Insert Department**|`${department}`|
+          |**Insert Manager**|`${manager}`|
+          |**Insert Mobile phone**|`${mobilePhone}`|
+          |**Insert City**|`${city}`|
+          |**Insert sender name**|`${FromName}`|
+          |**Insert sender email**|`${FromEmail}`|
+          |**Insert Payload subject**|`${EmailSubject}`|
+          |**Insert Payload content**|`${EmailContent}`|
+          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
+
         - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
     - **Code**: You can view and modify the HTML code directly.
 
@@ -486,7 +522,8 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
-- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that comes up for the drive-bu URL technique attacks. To hide the overlay and go directly to the landing page, de-select this option.
+
+- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the [select a technique page](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL technique attacks. To hide the overlay and go directly to the landing page, don't select this option.
 
 When you're finished, click **Next**.
 
