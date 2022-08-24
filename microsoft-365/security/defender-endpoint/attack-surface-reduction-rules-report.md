@@ -143,7 +143,7 @@ While the ASR rules report summary cards are useful for getting quick summary of
 
 - [Detections tab](#attack-surface-reduction-rules-main-detections-tab)
 - [Configuration tab](#attack-surface-reduction-rules-main-configuration-tab)
-- [Exclusions tab](#attack-surface-reduction-rules-main-exclusions-tab)
+- [Exclusions tab](#attack-surface-reduction-rules-add-exclusions-tab)
 
 ### Attack surface reduction rules main Detections tab
 
@@ -171,21 +171,21 @@ The bottom section of the report lists detected threats with the following field
 
 | Field name| Definition |
 |:---|:---|
-| Detected file | The file determined to contain a possible or known threat. |
-| Detected on | The date the threat was detected. |
-| Blocked\/Audited? | Whether the detecting rule was in Block or Audit mode.  |
+| Detected file | The file determined to contain a possible or known threat |
+| Detected on | The date the threat was detected |
+| Blocked\/Audited? | Whether the detecting rule was in Block or Audit mode  |
 | Rule | Which rule detected the threat |
-| Source app | The application that made the call to the offending "detected file." |
-| Device | The name of the device on which the Audit or Block event occurred. |
+| Source app | The application that made the call to the offending "detected file" |
+| Device | The name of the device on which the Audit or Block event occurred |
 | Device group | The Active Directory group to which the device belongs |
-| User |  The machine account responsible for the call.  |
+| User |  The machine account responsible for the call |
 | Publisher | The company that released the particular .exe or application |
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab" lightbox="images/attack-surface-reduction-rules-report-main-detections-tab.png":::
 
 ### Attack surface reduction rules main Configuration tab
 
-Provides summary and per-device ASR rules configuration details.
+The Attack surface reduction rules main Configuration tab provides summary and per-device ASR rules configuration details. There are three main aspects to the Configuration tab:
 
 **Basic rules** Provides a method to toggle results between **Basic rules** and **All Rules**. By default, **Basic rules** is selected.
 
@@ -196,7 +196,7 @@ Provides summary and per-device ASR rules configuration details.
 - Devices with rules in audit mode
 - Devices with rules in block mode
 
-The lower section of the Configuration tab provides a listing of the current state of your devices (on a per-device basis):
+**The lower, unnamed section** of the Configuration tab provides a listing of the current state of your devices (on a per-device basis):
 
 - Device (name)
 - Overall configuration (Whether any rules are on or all are off)
@@ -221,9 +221,27 @@ The **Configuration** tab and _add rule_ flyout are shown in the following image
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Shows the Attack surface reduction (ASR) rules fly-out to add ASR rules to devices" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
-### Attack surface reduction rules main Add exclusions tab
+### Attack surface reduction rules Add exclusions tab
+
+The **Add exclusions** tab presents a ranked list of detections by file name and provides a method to configure exclusions. By default, **Add exclusions** information is listed for three fields:
+
+- **File name** The name of the file that triggered the ASR rules event.
+- **Detections** The total number of detected events for named file. Individual devices can trigger multiple ASR rules events.
+- **Devices** The number of devices on which the detection occurred.
+
+You can exclude files and folders from being evaluated by most attack surface reduction rules. If an ASR rule determines a file or folder contains malicious behavior, it will not block an excluded file from running. Exclusions can potentially allow unsafe files to run and infect your devices.
+
+> [!IMPORTANT]
+> Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files are allowed to run, and no report or event will be recorded.
+> If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report add exclusions tab" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
+
+You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an .exe that is already running, that service will continue to trigger events until the service is stopped or stopped and restarted.
+
+ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+
+You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators. (See [Manage indicators](manage-indicators.md).
 
 ## See also
 
