@@ -98,6 +98,9 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 ### What happens to existing encryption when a label's applied
 
+> [!NOTE]
+> The option **Remove encryption if the file or email is encrypted** is supported only by the Azure Information Protection unified labeling client. You can achieve the same effect for emails by [configuring a mail flow rule](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption).
+
 If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if you didn't select **Encrypt files and emails**, the content remains unencrypted.
 
 However, the content might be already encrypted. For example, another user might have applied:
