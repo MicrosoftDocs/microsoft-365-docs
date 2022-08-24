@@ -79,7 +79,7 @@ Financial services organizations can also use the [Collaboration Manager for Loa
 > [!TIP]
 > Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
 
-[View videos and resources to share with your team to help them use collaboration apps and features in Teams](collab-features-apps-toolkit.md).
+[View videos and resources](collab-features-apps-toolkit.md) to share with your team to help them use collaboration apps and features in Teams.
 
 ### Create, manage, and share schedules with Shifts
 
