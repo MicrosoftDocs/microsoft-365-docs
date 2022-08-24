@@ -75,7 +75,7 @@ Types considered for this information include Word, Excel, PowerPoint, OneNote, 
           - Denominator: Number of people who had access to OneDrive or SharePoint for at least 1 of the last 28 days</br>
       - **Creators:**</br>
         - Numerator: Number of people who create, modify, upload, sync, check in, copy, or move online files in OneDrive or SharePoint in the last 28 days</br>
-        - Denominator: Number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days. </br>
+        - Denominator: Number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days. \
       - **Collaborators:**</br>
         - Numerator: Number of people who have collaborated on online files in OneDrive or SharePoint in the last 28 days</br>
         - Denominator: Number of people who have had access to for OneDrive or SharePoint for at least 1 of the last 28 days
