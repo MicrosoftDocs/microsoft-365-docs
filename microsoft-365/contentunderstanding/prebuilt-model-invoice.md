@@ -29,6 +29,12 @@ To use an invoices model, follow these steps:
 
 ## Create an invoices model
 
+Follow instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a trained invoices model.
+
+
+<!---
+## Create an invoices model
+
 Follow these steps to create a trained invoices model.
 
 1. From the **Models** page, select **Create a model**.
@@ -44,6 +50,7 @@ Follow these steps to create a trained invoices model.
 
     > [!NOTE]
     > Sensitivity labels are not available for trained models at this time.
+--->
 
 ## Add an example file to analyze
 
