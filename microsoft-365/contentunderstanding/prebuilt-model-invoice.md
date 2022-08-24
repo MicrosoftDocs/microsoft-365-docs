@@ -23,13 +23,13 @@ The trained *invoices model* analyzes and extracts key information from sales in
 To use an invoices model, follow these steps:
 
 - Step 1: [Create an invoices model](#create-an-invoices-model)
-- Step 2: [Add an example file to analyze](#add-an-example-file-to-analyze)
+- Step 2: [Upload an example file to analyze](#upload-an-example-file-to-analyze)
 - Step 3: [Select extractors for your model](#select-extractors-for-your-model)
 - Step 4: [Apply the model](#apply-the-model)
 
 ## Create an invoices model
 
-Follow instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a trained invoices model.
+Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a trained invoices model.
 
 
 <!---
@@ -52,7 +52,7 @@ Follow these steps to create a trained invoices model.
     > Sensitivity labels are not available for trained models at this time.
 --->
 
-## Add an example file to analyze
+## Upload an example file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
