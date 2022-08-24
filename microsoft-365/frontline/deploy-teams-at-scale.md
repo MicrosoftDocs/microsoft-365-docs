@@ -34,7 +34,7 @@ Deploying Teams at scale enables you to:
 - Manage teams at scale by adding or removing users from existing teams.
 - Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
 
-This article guides you through how to deploy Teams at scale. [You'll learn how to use PowerShell to provision a large number of teams, and then apply and assign policies to configure the experience in Teams for your frontline workforce.]
+This article walks you through how to deploy Teams at scale.
 
 ## Set up and deploy your teams
 
