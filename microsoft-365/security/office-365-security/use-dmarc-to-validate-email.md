@@ -233,6 +233,8 @@ Microsoft 365 is configured like this because some legitimate email may fail DMA
 
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
+- Admins create an Exchange mail flow rule (also known as a transport rule) for all users reject emails that fail your organizations DMARC Policy.
+
 For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 ## How Microsoft 365 utilizes Authenticated Received Chain (ARC)
