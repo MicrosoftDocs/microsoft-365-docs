@@ -24,7 +24,7 @@ SharePoint Syntex is a Microsoft 365 service that provides an end-to-end intelli
 
 - Use artificial intelligence (AI), machine learning, and advanced AI technologies to amplify human experiences.
 - Automate your document-based processes by using models to extract knowledge and information from structured, semi-structured, and unstructured documents.
-- Leverage that information to facilitate knowledge discovery and sharing, provide business process automation, and to ensure content compliance.
+- Use that information to facilitate knowledge discovery and sharing, provide business process automation, and to ensure content compliance.
 
 The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
 
@@ -88,11 +88,13 @@ The resources in this section help you learn how to choose, create, and configur
 |Learn more about how to classify and extract by text pattern|[Overview of classification and extraction by text pattern](./document-understanding-overview.md)|
 |Learn more about how to extract by layout|[Overview of extraction by layout](./form-processing-overview.md)|
 |Learn more about how to extract by text pattern and layout|[Overview of extraction by text pattern and layout](./extract-by-text-pattern-and-layout-overview.md)|
-|Learn how to work with models|[Create a content center](./create-a-content-center.md)<br><br>[Create a classifier](./create-a-classifier.md)<br><br>[Duplicate a model](./duplicate-a-model.md)<br><br>[Rename a model](./rename-a-model.md)<br><br>[Create an extractor](./create-an-extractor.md)<br><br>[Rename an extractor](./rename-an-extractor.md)<br><br>[Create a form processing model](./create-a-form-processing-model.md)<br><br>[Explanation types](./explanation-types-overview.md)<br><br>[Use explanation templates](./explanation-templates.md)<br><br>[Apply a document understanding model](./apply-a-model.md)<br><br>[Learn about document understanding models through the sample model](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|Learn how to work with models|[Create a content center](./create-a-content-center.md)<br><br>[Create a classifier](./create-a-classifier.md)<br><br>[Duplicate a model](./duplicate-a-model.md)<br><br>[Rename a model](./rename-a-model.md)<br><br>[Create an extractor](./create-an-extractor.md)<br><br>[Rename an extractor](./rename-an-extractor.md)<br><br>[Explanation types](./explanation-types-overview.md)<br><br>[Use explanation templates](./explanation-templates.md)<br><br>[Learn about models through the sample model](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
 |Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
 |Create and train models locally on a SharePoint site |[Create a model on a local SharePoint site](./create-local-model.md)|
 |Use trained models in other content centers |[Publish and discover document understanding models](./model-discovery.md)|
+|Automate content assembly using a modern template |[Create documents using content assembly](./content-assembly.md)|
+|Use SharePoint Syntex together with Power Automate to generate documents |[Automate document generation wit Power Automate](./automate-document-generation.md)|
 |Perform metadata-based queries on document libraries|[Search for metadata in document libraries](./metadata-search.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|
 |Learn how to see data about your models|[Model usage analytics](./model-usage-analytics.md)|
@@ -116,7 +118,7 @@ PowerShell lets you manage your SharePoint scenarios, such as exporting and impo
 
 ## Premium services
 
-A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment. The resources in this section give you more details about these features and how to use them.
+A SharePoint Syntex license gives your users premium content services that give you more functionality in your Microsoft 365 environment. The resources in this section give you more details about these features and how to use them.
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
