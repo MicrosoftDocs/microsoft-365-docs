@@ -1,169 +1,56 @@
----
-title: Work with document understanding model explanations in PowerShell
-ms.author: jaeccles
-author: jameseccles
-ms.reviewer: ssquires
-manager: serdars
-audience: admin
-ms.topic: article
-ms.prod: microsoft-365-enterprise
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
-search.appverid: MET150
-ms.localizationpriority: medium
-description: "Learn about work with SharePoint Syntex document understanding model explanations in PowerShell."
----
+# Work with Power Automate Actions in SharePoint Syntex
 
-# Work with document understanding model explanations in PowerShell
+This article discusses about the power automate actions available for Syntex and demonstrate the usage, triggers and values of Syntex actions and its outputs.
 
-> [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-Custom explanation templates are stored in a list within a content center. Because these explanations are stored as list items, PowerShell can be used to interact with them.
+## When a file is classified by Content Understanding model
 
-## List saved explanations
+The trigger , when a file is classified by content understanding model , helps us with the post processing of data or file. The output from this trigger can help us with the subsequent actions as it holds all the data that has been extracted from the syntex model and the other critical data like  ConfidenceScore and ClassificationDate.
 
-This example shows how to view all of the custom explanation templates that have been saved on a specific content center.
+### UseCase
+A user should be notified whenever a document is of different template.
 
-```PowerShell
-$contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
+#### Solution
 
-# Connect to content center
-Connect-PnPOnline -url $contentCenterURL
+1. A power automate associated with the trigger is created
+2. Validate the confidence score
+3. If the confidence score is low, less than 99 percentage , update an excel for the user to review
 
-# Load explanation templates list and items
-$explanationTemplatesList = Get-PnPList -Identity "/Explanations"
-$explanations = Get-PnPListItem -List $explanationTemplatesList -Fields "Id", "Title", "ExplanationName", "ExplanationType", "ExplanationDescription","ExplanationContent"
 
-# Extract explanation components
-$explanationValues = $explanations.fieldvalues 
-$explanationOutput = @()
+##### A power automate associated with the trigger is created
+![image](https://user-images.githubusercontent.com/9211327/186288875-976db707-0361-46d1-a001-86ef1982a4b5.png)
 
-foreach ($explanation in $explanationValues) {
-    $content = $explanation.ExplanationContent
-    $content = $content.replace('false','"false"')
-    $content = $content.replace('true','"true"')
-    $contentArray = $content | ConvertFrom-Json
+##### Validate Confidence Score
 
-    $output = New-Object -TypeName PSObject
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "Explanation Name" -Value $explanation.ExplanationName
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "Explanation Description" -Value $explanation.ExplanationDescription
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "Explanation Type" -Value $contentArray.kind
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "RegEx Pattern" -Value $contentArray.pattern
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "Phrase List" -Value $contentArray.ngrams
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "Case Sensitive" -Value $contentArray.caseSensitive
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "Ignore Digit Identity" -Value $contentArray.ignoreDigitIdentity
-    Add-Member -InputObject $output -MemberType NoteProperty -Name "Ignore Letter Identity" -Value $contentArray.ignoreLetterIdentity
+The confidence score can be very useful in scenarios like if a user uploads a document which was not trained and classified by the model or if the data has not been extracted by the extractors. For this example am taking the confidence score should be 99%
 
-    $explanationOutput += $output
-}
+![image](https://user-images.githubusercontent.com/9211327/186289298-dbc1c1e5-8b8d-47c0-829b-a0d271687d7e.png)
 
-$explanationOutput
-```
+###### Create Excel
 
-## Create a phrase list explanation
+As the excel connectors in the flow support , adding a row only to the table , I have created an excel in the below format
 
-This example shows how to create a custom phrase list explanation template.
+![image](https://user-images.githubusercontent.com/9211327/186299096-03b3ef40-3792-425c-aae1-1125f1c512ce.png)
 
-```PowerShell
-$contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
-$explanationName = "Phrase Explanation A"
-$explanationDescription = "This is my explanation"
-$phrases = "Phrase 1", "Phrase 2"
-$caseSensitive = $false
-$ignoreDigitIdentity= $false
-$ignoreLetterIdentity = $false
 
-# Connect to content center
-Connect-PnPOnline -url $contentCenterURL
 
-# Load explanation templates list
-$explanationTemplatesList = Get-PnPList -Identity "/Explanations"
+The following actions has been used to fetch the file properties of the classified file and update it in excel
 
-#Generate GUID for explanation
-$guid = New-Guid
+![image](https://user-images.githubusercontent.com/9211327/186290782-59004c14-d4c9-440b-b16b-74a5b2aee0f3.png)
 
-#Format phrase list
-$phrases = $phrases -join "`",`""
 
-#Convert booleans to lower case strings
-$caseSensitive = ($caseSensitive.ToString()).ToLower()
-$ignoreDigitIdentity= ($ignoreDigitIdentity.ToString()).ToLower()
-$ignoreLetterIdentity = ($ignoreLetterIdentity.ToString()).ToLower()
+#### Testing the solution
 
-# Build explanation content
-$explanationContent = "{`"id`":`"$guid`",`"kind`":`"dictionaryFeature`",`"name`":`"$explanationName`",`"active`":true,`"nGrams`":[`"$phrases`"],`"caseSensitive`":$caseSensitive,`"ignoreDigitIdentity`":$ignoreDigitIdentity,`"ignoreLetterIdentity`":$ignoreLetterIdentity}"
+I have uploaded a file to the library removed few of the details from existing file , so that a 
+Below is the screenshot of the confidence score
+![image](https://user-images.githubusercontent.com/9211327/186297006-68414197-ab12-45b3-93a1-8f502a31be58.png)
 
-# Create item in explanation list
-Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationName; "ExplanationName" = $explanationName; "ExplanationDescription" = $explanationDescription; "ExplanationContent" = $explanationContent}
-```
+###### Flow Output
+![image](https://user-images.githubusercontent.com/9211327/186296362-a9f06224-4426-416c-ba6a-e93bb6401db5.png)
 
-## Create a regular expression explanation
+###### Excel
+We can notice a new row ahs been added to the excel, with the data
 
-This example shows how to create a custom regular expression explanation template.
+![image](https://user-images.githubusercontent.com/9211327/186296679-2cc69b18-650c-46f0-acac-fcb6761bc8bd.png)
 
-```PowerShell
-$contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
-$explanationName = "RegEx Explanation A"
-$explanationDescription = "This is my explanation"
-$pattern = "\b(https?):\/\/\S+"
 
-# Connect to content center
-Connect-PnPOnline -url $contentCenterURL
-
-# Load explanation templates list
-$explanationTemplatesList = Get-PnPList -Identity "/Explanations"
-
-#Generate GUID for explanation
-$guid = New-Guid
-
-# Build explanation content
-$pattern = $pattern.Replace('\','\\')
-$explanationContent = "{`"id`":`"$guid`",`"kind`":`"regexFeature`",`"name`":`"$explanationName`",`"active`":true,`"pattern`":`"$pattern`"}"
-
-# Create item in explanation list
-Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationName; "ExplanationName" = $explanationName; "ExplanationDescription" = $explanationDescription; "ExplanationContent" = $explanationContent}
-```
-
-## Create a phrase list explanation based on a term set
-
-This example shows how to create a custom phrase list explanation template by taking the values from a term set. This includes the preferred term names and any synonyms.
-
-```PowerShell
-$contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
-$termSetName = "Terms"
-$termGroupName = "GroupA"
-$explanationName = "MMS Explanation A"
-$explanationDescription = "This is my explanation"
-$caseSensitive = $false
-$ignoreDigitIdentity= $false
-$ignoreLetterIdentity = $false
-
-# Connect to content center
-Connect-PnPOnline -url $contentCenterURL
-
-# Load explanation templates list
-$explanationTemplatesList = Get-PnPList -Identity "/Explanations"
-
-#Generate GUID for explanation
-$guid = New-Guid
-
-#Get term set, including preferred labels and synonyms
-$terms = Get-PnPTerm -TermGroup $termGroupName -TermSet $termSetName -Includes Labels
-$phrases = $terms.labels.value
-
-#Format phrase list
-$phrases = $phrases -join "`",`""
-
-#Convert booleans to lower case strings
-$caseSensitive = ($caseSensitive.ToString()).ToLower()
-$ignoreDigitIdentity= ($ignoreDigitIdentity.ToString()).ToLower()
-$ignoreLetterIdentity = ($ignoreLetterIdentity.ToString()).ToLower()
-
-# Build explanation content
-$explanationContent = "{`"id`":`"$guid`",`"kind`":`"dictionaryFeature`",`"name`":`"$explanationName`",`"active`":true,`"nGrams`":[`"$phrases`"],`"caseSensitive`":$caseSensitive,`"ignoreDigitIdentity`":$ignoreDigitIdentity,`"ignoreLetterIdentity`":$ignoreLetterIdentity}"
-
-# Create item in explanation list
-Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationName; "ExplanationName" = $explanationName; "ExplanationDescription" = $explanationDescription; "ExplanationContent" = $explanationContent}
-```
