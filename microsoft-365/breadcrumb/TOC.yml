@@ -9,7 +9,7 @@
     tocHref: /microsoft-365/contentunderstanding/
     topicHref: /microsoft-365/contentunderstanding/index
   - name: Microsoft Bookings
-    tocHref: /bookings/
+    tocHref: /microsoft-365/bookings/
     topicHref: /microsoft-365/bookings/
   - name: Microsoft 365 Business Premium
     tocHref: /microsoft-365/business-premium/index
@@ -18,9 +18,12 @@
     tocHref: /microsoft-365/Enterprise/index
     topicHref: /microsoft-365/Enterprise/index
   - name: Microsoft 365 for frontline workers
-    tocHref: /frontline/
+    tocHref: /microsoft-365/frontline/
     topicHref: /microsoft-365/frontline/
   - name: Microsoft 365 solutions
     tocHref: /microsoft-365/solutions/
     topicHref: /microsoft-365/solutions/
+  - name: Compliance
+    tocHref: /microsoft-365/compliance/
+    topicHref: /microsoft-365/compliance/
 
