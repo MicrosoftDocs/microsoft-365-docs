@@ -102,7 +102,7 @@ Use the following examples to help you create your CSV files. Here, we've named 
 
 ### Step 2: Deploy your teams
 
-Now that you've created your CSV files, you're ready to set up your environment and create your teams.
+Now that you've created your CSV files, you're ready to set up your environment and deploy your teams.
 
 You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment) cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the [Get-CsBatchTeamsDeployment](/powershell/module/teams/get-csbatchteamsdeployment) cmdlet to track the progress and status of each batch.
 
