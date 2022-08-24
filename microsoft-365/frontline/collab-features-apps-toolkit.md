@@ -73,4 +73,4 @@ See how Updates helps frontline workers create, submit and review all updates in
 
 ## Shifts
 
-[Learn how to help your employees use Shifts](shifts-toolkit.md)
+[Learn how to help your employees use Shifts.](shifts-toolkit.md)
