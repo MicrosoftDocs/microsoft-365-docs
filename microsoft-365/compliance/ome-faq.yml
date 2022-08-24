@@ -131,25 +131,25 @@ sections:
           You can attach any file type to a protected mail. Protection policies are applied only to a subset of the file formats mentioned in [File types supported by the Azure Information Protection client](/information-protection/rms-client/client-admin-guide-file-types). 
           Microsoft Purview Message Encryption only supports the following Office files extensions:
           
-          |Office file type|
-          |docx|
-          |docm|
-          |dotx|
-          |dotm|
-          |pptx|
-          |pptm|
-          |potx|
-          |potm|
-          |ppsx|
-          |ppsm|
-          |thmx|
-          |xlsx|
-          |xlsm|
-          |xlsb|
-          |xltx|
-          |xltm|
-          |xlam|
-          |xps|
+          - docx
+          - docm
+          - dotx
+          - dotm
+          - pptx
+          - pptm
+          - potx
+          - potm
+          - ppsx
+          - ppsm
+          - thmx
+          - xlsx
+          - xlsm
+          - xlsb
+          - xltx
+          - xltm
+          - xlam
+          - xps
+          
           
           Microsoft Purview Message Encryption does not support the 97-2003 versions of the following Office programs: Word (.doc), Excel (.xls), and PowerPoint (.ppt).
           
