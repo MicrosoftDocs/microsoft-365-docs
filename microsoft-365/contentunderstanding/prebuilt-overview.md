@@ -30,7 +30,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Available trained models
 
-Currently, there are two trained models available: invoices and receipts.
+Currently, there are two trained models available: [invoices](prebuilt-model-invoice.md) and [receipts](prebuilt-model-receipt.md).
 
 - The trained *invoices model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
 
