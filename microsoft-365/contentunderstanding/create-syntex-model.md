@@ -48,7 +48,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - [**Extract by text pattern and layout**](#extract-by-text-pattern-and-layout)
 
-2. When you select a custom model, on the next page you will find more information about the model. If you want to continue to create the model, select **Next**.
+2. When you select a custom model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
 ### Classify and extract by text pattern
 
@@ -150,7 +150,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - [**Invoices**](#invoices)
 
-2. When you select a trained model, on the next page you will find more information about the model. If you want to continue to create the model, select **Next**.
+2. When you select a trained model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
 ### Receipts
 
