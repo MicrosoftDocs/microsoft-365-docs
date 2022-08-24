@@ -20,30 +20,18 @@ description: Learn how to use a trained receipts model in SharePoint Syntex.
 
 The trained *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
+To use a receipts model, follow these steps:
+
+- Step 1: [Create a receipts model](#create-a-receipts-model)
+- Step 2: [Upload an example file to analyze](#upload-an-example-file-to-analyze)
+- Step 3: [Select extractors for your model](#select-extractors-for-your-model)
+- Step 4: [Apply the model](#apply-the-model)
+
 ## Create a receipts model
 
-Follow these steps to use a trained receipts model to classify documents in SharePoint Syntex.
+Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a trained receipts model.
 
-1. From the **Models** page, select **Create a model**.
-
-    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/prebuilt-create-model-button.png) 
-
-2. On the **Create a model** panel, in the **Name** field, type the name of the model.
-
-    ![Screenshot of the New document understanding model panel showing the model types available.](../media/content-understanding/prebuilt-create-panel.png) 
-
-3. In the **Model type** section, select **Receipt processing prebuilt**.
-
-   If you want to create a traditional, untrained document understanding model instead of a trained model, select **Classify and extract by text pattern**.
-
-4. If you want to change the content type or add a retention label, select **Advanced settings**.
-
-    > [!NOTE]
-    > Sensitivity labels are not available for trained models at this time.
-
-5. Select **Create**. The model will be saved in the **Models** library.
-
-## Add a file to analyze
+## Upload an example file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
@@ -57,7 +45,7 @@ Follow these steps to use a trained receipts model to classify documents in Shar
 
     ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-add-file-from-training-library.png) 
 
-6. On the **Files to analyze the model** page, select **Next**.
+4. On the **Files to analyze the model** page, select **Next**.
 
 ## Select extractors for your model
 
@@ -90,7 +78,7 @@ The original value is what is actually in the document. The extracted value is w
 
 Continue to select additional extractors you want to you use. You can also add other files to analyze for this model configuration.
 
-## Rename an extractor
+### Rename an extractor
 
 You can rename an extractor either from the model home page or from the **Extractors** panel. You might consider renaming selected extractors because these names will be used as the column names when the model is applied to the library.
 
