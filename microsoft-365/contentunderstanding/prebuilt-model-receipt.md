@@ -29,7 +29,7 @@ To use a receipts model, follow these steps:
 
 ## Create a receipts model
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a trained receipts model.
+Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a trained receipts model. Then continue with the following steps to complete your model.
 
 ## Upload an example file to analyze
 
