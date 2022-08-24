@@ -94,5 +94,5 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 ## See also
 
-- [Microsoft 365 Business Premium &mdash; cybersecurity for small business](index.md)
+- [Microsoft 365 Business Premium - cybersecurity for small business](index.md)
 - [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
