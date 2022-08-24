@@ -28,20 +28,15 @@ Follow these steps to use a trained invoices model to classify documents in Shar
 
     ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
 
-2. On the **Create a model** panel, in the **Name** field, type the name of the model.
 
-    ![Screenshot of the New document understanding model panel showing the model types available.](../media/content-understanding/prebuilt-create-panel.png) 
+2. On the **View options for classification and extraction** page, in the **Use a trained model** section, select **Invoices**.
 
-3. In the **Model type** section, select **Invoice processing prebuilt**.
+    ![Screenshot of the View options for classification and extraction page showing the custom models and trained models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
 
-   If you want to create a traditional, untrained document understanding model instead of a trained model, select **Classify and extract by text pattern**.
-
-4. If you want to change the content type or add a retention label, select **Advanced settings**.
+3. To continue, follow these [instructions to continue to create an invoices model](create-syntex-model.md#invoices).
 
     > [!NOTE]
     > Sensitivity labels are not available for trained models at this time.
-
-5. Select **Create**. The model will be saved in the **Models** library.
 
 ## Add a file to analyze
 
