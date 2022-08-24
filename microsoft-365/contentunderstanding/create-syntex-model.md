@@ -94,7 +94,10 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
 
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
+
+    > [!NOTE]
+    > Sensitivity labels are not available for **Extract by layout** models at this time.
 
 4. When you are ready to create the model, select **Create**.
 
@@ -122,7 +125,10 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
 
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
+
+    > [!NOTE]
+    > Sensitivity labels are not available for **Extract by text pattern and layout** models at this time.
 
 4. When you are ready to create the model, select **Create**.
 
@@ -164,13 +170,16 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
 
+    > [!NOTE]
+    > Sensitivity labels are not available for trained models at this time.
+
 4. When you are ready to create the model, select **Create**.
 
 5. To complete the model:
 
-    - [Upload an example file](create-a-classifier#add-your-example-files).
-    - [Select extractors](create-an-extractor.md).
-    - [Apply model to library](apply-a-model.md).
+    - [Upload an example file](prebuilt-model-invoice.md#add-an-example-file-to-analyze).
+    - [Select extractors](prebuilt-model-invoice.md#select-extractors-for-your-model).
+    - [Apply model to library](prebuilt-model-invoice.md#apply-the-model).
 
 ### Invoices
 
@@ -190,11 +199,14 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
 
+    > [!NOTE]
+    > Sensitivity labels are not available for trained models at this time.
+
 4. When you are ready to create the model, select **Create**.
 
 5. To complete the model:
 
-    - [Upload an example file](create-a-classifier#add-your-example-files).
-    - [Select extractors](create-an-extractor.md).
-    - [Apply model to library](apply-a-model.md).
+    - [Upload an example file](prebuilt-model-invoice.md#add-an-example-file-to-analyze).
+    - [Select extractors](prebuilt-model-invoice.md#select-extractors-for-your-model).
+    - [Apply model to library](prebuilt-model-invoice.md#apply-the-model).
 
