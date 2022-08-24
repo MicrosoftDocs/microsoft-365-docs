@@ -155,7 +155,7 @@ The wizard starts the process to set up the connection and map the instances to 
 
 Select **Done** to exit the wizard.
 
-You’re on your way but you’re not done yet! Be sure to check your email. You'll receive a confirmation that we received your request along with a [link](shifts-connector-powershell-manage.md#check-connection-setup-status) to how you can check setup status.
+You’re on your way but you’re not done yet! Be sure to check your email. You'll receive a confirmation that we received your request along with a [link](shifts-connector-ukg-powershell-manage.md#check-connection-setup-status) to how you can check setup status.
 
 > [!NOTE]
 > If an issue or error occurs in a connection after it's set up, you'll get notified in email. Follow the instructions in the email to troubleshoot the issue.
@@ -182,7 +182,7 @@ To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then t
 ## If you need to make changes to a connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Manage your Shifts connection to your workforce management system](shifts-connector-powershell-manage.md).
+After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md).
 
 ## Check the health of a connection
 
@@ -198,5 +198,5 @@ You can view information about your connection, such as health status and sync i
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Manage your Shifts connection to your workforce management system](shifts-connector-powershell-manage.md)
+- [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md)
 - [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

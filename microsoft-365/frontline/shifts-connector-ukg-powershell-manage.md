@@ -1,5 +1,5 @@
 ---
-title: Manage your Shifts connection to Blue Yonder Workforce Management using PowerShell
+title: Manage your Shifts connection to UKG Dimensions using PowerShell
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer:
@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management.
+description: Learn how to use PowerShell to manage your Shifts connection to UKG Dimensions.
 ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
@@ -18,7 +18,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Manage your Shifts connection to Blue Yonder Workforce Management using PowerShell
+# Manage your Shifts connection to UKG Dimensions using PowerShell
 
 ## Overview
 
