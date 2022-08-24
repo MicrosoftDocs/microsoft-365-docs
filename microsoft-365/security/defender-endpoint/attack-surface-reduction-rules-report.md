@@ -38,7 +38,7 @@ ms.date: 08/25/2022
 
 ## Attack surface reduction rules report overview
 
-Intro - The attack surface reduction (ASR) rules report provides information about the _attack surface reduction rules_ that are applied to devices in your organization. This report also provides information about:
+The attack surface reduction (ASR) rules report provides information about the _attack surface reduction rules_ that are applied to devices in your organization. This report also provides information about:
 
 - detected threats
 - blocked threats
@@ -139,7 +139,11 @@ Clicking on the **ASR rules configuration** link at the top of the card also ope
 
 ## Attack surface reduction rules main tabs
 
-While the ASR rules report summary cards are useful for getting quick summary of your ASR rules status, the main tabs provide more in-depth, information with filtering and configuration capabilities.
+While the ASR rules report summary cards are useful for getting quick summary of your ASR rules status, the main tabs provide more in-depth, information with filtering and configuration capabilities:
+
+- [Detections tab](#attack-surface-reduction-rules-main-detections-tab)
+- [Configuration tab](#attack-surface-reduction-rules-main-configuration-tab)
+- [Exclusions tab](#attack-surface-reduction-rules-main-exclusions-tab)
 
 ### Attack surface reduction rules main Detections tab
 
@@ -155,9 +159,11 @@ Filtering provides a way for you to specify what results are returned:
 
 #### Reporting
 
-- **Audit Detections**  Shows how many threat detections were captured by rules set in _Audit_ mode over the shown date range, with the capability to hover of specific location to gather specific date information.
-- **Blocked Detections** Shows how many threat detections were blocked by rules set in _Block_ mode over the shown date range, with the capability to hover of specific location to gather specific date information.
-- **Large, consolidated graph** Shows blocked and audited detections across the date range shown, with the capability to hover of specific location to gather specific date information.
+- **Audit Detections**  Shows how many threat detections were captured by rules set in _Audit_ mode.
+- **Blocked Detections** Shows how many threat detections were blocked by rules set in _Block_ mode.
+- **Large, consolidated graph** Shows blocked and audited detections.
+
+The graphs provide detection data over the displayed date range, with the capability to hover of specific location to gather specific date information.
 
 For more information about ASR rule audit and block modes, see [Attack surface reduction rule modes](attack-surface-reduction-rules-reference.md#asr-rule-modes).
 
