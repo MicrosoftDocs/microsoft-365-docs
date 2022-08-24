@@ -41,7 +41,7 @@ This topic describes how to onboard specific Windows servers to Microsoft Defend
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
-## License Requirement
+## License requirement
 
 In order to be eligible to purchase Microsoft Defender for Endpoint Server SKU, you must have already purchased a combined minimum of any of the following: Windows E5/A5, Microsoft 365 E5/A5, or Microsoft 365 E5 Security subscription licenses. For more information on licensing, see the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
 
