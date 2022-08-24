@@ -183,6 +183,19 @@ The bottom section of the report lists detected threats with the following field
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab" lightbox="images/attack-surface-reduction-rules-report-main-detections-tab.png":::
 
+##### Actionable flyout
+
+The “Detection” main page has a list of all detections (files/processes) in the last four weeks. Select on any of the detections to open a with drilldown capabilities:
+
+• The **Possible exclusion and impact** section provides impact of the selected file or process
+• You can select on **Go hunt** which opens the Advanced Hunting query page.
+• **Open file page** opens Microsoft Defender for Endpoint (MDE) detection
+• The **Add exclusion** button is linked with the add exclusion main page.
+
+For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
+
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
+
 ### Attack surface reduction rules main Configuration tab
 
 The Attack surface reduction rules main Configuration tab provides summary and per-device ASR rules configuration details. There are three main aspects to the Configuration tab:
@@ -229,19 +242,24 @@ The **Add exclusions** tab presents a ranked list of detections by file name and
 - **Detections** The total number of detected events for named file. Individual devices can trigger multiple ASR rules events.
 - **Devices** The number of devices on which the detection occurred.
 
-You can exclude files and folders from being evaluated by most attack surface reduction rules. If an ASR rule determines a file or folder contains malicious behavior, it will not block an excluded file from running. Exclusions can potentially allow unsafe files to run and infect your devices.
+>:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report add exclusions tab" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files are allowed to run, and no report or event will be recorded.
 > If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report add exclusions tab" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
+When you select a file, a **Summary & expected impact** fly out opens, presenting the following types of information:
 
-You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an .exe that is already running, that service will continue to trigger events until the service is stopped or stopped and restarted.
+- **Files selected**  The number of files you've selected for exclusion
+- **(_number of_) detections**  States the expected reduction in detections after adding the selected exclusion(s).  The reduction in detections is represented graphically for **Actual detections** and **Detections after exclusions**
+- **(_number of_) affected devices** States the expected reduction in devices that report detections for the selected exclusions.
 
-ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+The Add exclusion page has two buttons for actions that can be used on any detected files (after selection). You can:
 
-You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators. (See [Manage indicators](manage-indicators.md).
+- **Add exclusion** which will open Microsoft Endpoint Manager (MEM) ASR policy page. For more information, see: [MEM](https://enable-attack-surface-reduction.md#mem) in "Enable ASR rules alternate configuration methods."
+- **Get exclusion paths** which will download file paths in a csv format
+
+>:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary lightbox="images/attack-surface-reduction-rules-report-exclusion-flyout.png":::
 
 ## See also
 
