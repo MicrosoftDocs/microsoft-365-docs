@@ -356,7 +356,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 >
 > [For some example CSV file info click here](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
-Here is a minimal example CSV.
+The following is a minimal example CSV file:
 
 ```csv
 EmailAddress
