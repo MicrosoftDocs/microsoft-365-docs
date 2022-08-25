@@ -18,7 +18,7 @@ ms.date: 08/25/2022
 ms.reviewer: tewchen
 ---
 
-# Microsoft Defender for Endpoint Device Control Removable Storage Access Control
+# Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
