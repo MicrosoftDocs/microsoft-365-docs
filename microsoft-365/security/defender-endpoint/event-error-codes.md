@@ -161,8 +161,8 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |408|Microsoft Defender for Endpoint service failed to remove persist authentication state. State: %1, Failure code: %2.   |Failed to persist authentication state. |If machine is not reporting, contact support. Otherwise, no action required.|
    |409| Microsoft Defender for Endpoint service failed to open key. Failure code: %1.  |Failed to open crypto key.|If machine is not reporting, contact support. Otherwise, no action required.|
    |410|Registration is required as part of re-onboarding of Microsoft Defender for Endpoint service.   |Occurs during reonboarding. |Normal operating notification; no action required.|
-   |411|Cyber telemetry upload has been suspended for Windows Defender Advanced Threat Protection service due to invalid/expired token.|Cyber upload temporarily suspended.|Normal operating notification; no action required.|
-   |412|Cyber telemetry upload been resumed for Windows Defender Advanced Threat Protection service due to newly refreshed token.|Cyber upload successfully resumed.|Normal operating notification; no action required.|
+   |411|Cyber telemetry upload has been suspended for Microsoft Defender for Endpoint service due to invalid/expired token.|Cyber upload temporarily suspended.|Normal operating notification; no action required.|
+   |412|Cyber telemetry upload been resumed for Microsoft Defender for Endpoint service due to newly refreshed token.|Cyber upload successfully resumed.|Normal operating notification; no action required.|
    |1800| CSP: Get `Node&apos;s` Value. NodeId: (%1), TokenName: (%2).  | An operation of Get is about to start.   | Contact support. |
    |1801|CSP: Failed to Get `Node&apos;s` Value. NodeId: (%1), TokenName: (%2), Result: (%3).   | An operation of Get has failed.   |Contact support.|
    |1802| CSP: Get `Node&apos;s` Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).  | An operation of Get has succeeded.   |Contact support. |
@@ -206,8 +206,6 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Id Method failed as value was not within expected range. | Contact support if problem persists. |
    |
    
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
-
 ## See also
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
