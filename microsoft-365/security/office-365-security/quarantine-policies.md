@@ -54,7 +54,7 @@ The individual quarantine policy permissions that are contained in the preset pe
 
 <sup>\*</sup>The **Allow recipients to release a message from quarantine** permission is not honored in anti-malware policies or for the high confidence phishing verdict in anti-spam policies. Users cannot release their own malware or high confidence phishing messages from quarantine. At best, you can use the **Allow recipients to request a message to be released from quarantine** permission.
 
-The default quarantine policies, their associated permission groups, and whether quarantine notifications are enabled are described in the following table:
+The default quarantine policies, their associated permission groups, and whether quarantine notifications are enabled is described in the following table:
 
 |Default quarantine policy|Permission group used|Quarantine notifications enabled?|
 |---|:---:|:---:|
