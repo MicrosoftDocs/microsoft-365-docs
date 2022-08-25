@@ -42,7 +42,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-## August 2022
+## September 2022
 
 **Automatic redirection from Office 365 Security and Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security and Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
 - Redirection URLs:
