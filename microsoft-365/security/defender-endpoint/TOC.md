@@ -481,6 +481,7 @@
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ## Reference
+### [Supported Microsoft Defender for Endpoint capabilities per platform](supported-capabilities-per-platform.md)
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
