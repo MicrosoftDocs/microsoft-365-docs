@@ -24,14 +24,6 @@ description: "Cyprus identity card sensitive information type entity definition.
 
 # Cyprus identity card
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 10 digits without spaces and delimiters
