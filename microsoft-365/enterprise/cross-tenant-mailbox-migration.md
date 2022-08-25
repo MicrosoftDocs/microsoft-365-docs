@@ -554,8 +554,8 @@ This can be done before the migration is complete, but you should not assign a l
 
 ### Can I use Azure AD Connect to sync users to the new tenant if I am keeping the on-prem Active Directory?
 
-Yes. It is possible to have two instances of Azure AD Connect syncronize to different tenants.
-However there are some things you need to be aware of.
+Yes. It is possible to have two instances of Azure AD Connect synchronize to different tenants.
+However, there are some things you need to be aware of.
 
 - Preprovisioning the users accounts with the script provided in this articale should not be done. Instead a selective OU sync of the users in scrope for the migation can be performed to populate the target tenant - you will receive a warning about the UPN not matching during AAD Connect configuration.
 - Depending on your current state of Hybrid Exchange, you will need to verify that the on-prem directory objects have the required attributes populated correctly (i.e. msExchMailboxGUID, proxyAddresses etc.) before attempting to sync to another tenant, or you will run into issues with double mailboxes and migration failures.
