@@ -59,3 +59,5 @@ ms.technology: mde
 (<a id="fn4">4</a>) Collect file only, using Live Response [2]  
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
+
+For more information see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
