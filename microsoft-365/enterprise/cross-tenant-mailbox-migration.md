@@ -559,7 +559,7 @@ However, there are some things you need to be aware of.
 
 - Preprovisioning the user's accounts with the script provided in this article should not be done. Instead, a selective OU sync of the users in scope for the migration can be performed to populate the target tenant; you will receive a warning about the UPN not matching during Azure AD Connect configuration.
 - Depending on your current state of Hybrid Exchange, you need to verify that the on-prem directory objects have the required attributes (such as msExchMailboxGUID and proxyAddresses) populated correctly before attempting to sync to another tenant, or you will run into issues with double mailboxes and migration failures.
-- You will need to take some ekstra steps to manage UPN transitioning. Changing it on-prem once the migration has completed for a user, unless you are also moving the custom domain during a cut-over migration.
+- You need to take some extra steps to manage UPN transitioning, changing it on-prem once the migration has been completed for a user unless you are also moving the custom domain during a cut-over migration.
 
 ## Known issues
 
