@@ -44,7 +44,7 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
 1. [Create system configuration profiles](#create-system-configuration-profiles)
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
-1. [Deploy the onboarding package](#deploy-the-onboarding-package)
+1. [Deploy the mobileconfig and onboarding packages](#deploy-the-mobileconfig-and-onboarding-packages)
 1. [Publish application](#publish-application)
 <!--1. [Enable system extension](#enable-system-extension)-->
 
@@ -58,6 +58,17 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 Combined mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.|
 MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.
 
+### Get the device onboarding package
+
+1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+ 
+1. For **Select operating system to start onboarding process** choose **macOS**.
+ 
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
+ 
+1. Choose **Download onboarding package**. 
+
+1. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
 <!--|accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
@@ -76,7 +87,9 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 >
 >If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.-->
 
-2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
+### Deploy the mobileconfig and onboarding packages
+
+1. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
 
 1. Choose: **Create profile** 
 
@@ -97,7 +110,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. Review your settings and choose **Create** to deploy the configuration.
 
-1. Repeat steps 3-10 to create profiles for the:
+1. Repeat steps 2-9 to create profiles for the:
     1. **DeviceComplianceOnboarding.xml** file. Name it *Onboarding Package*
     1. **com.microsoft.wdav.mobileconfig** file. Name it *MDE Preferences*
  
@@ -105,17 +118,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. In the **Configuration profiles** page, choose the profile that you just created, for example *CombinedMobileConfig* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
-### Get the device onboarding package
 
-1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
- 
-1. For **Select operating system to start onboarding process** choose **macOS**.
- 
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
- 
-1. Choose **Download onboarding package**. 
-
-1. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
 
 <!--### Deploy the onboarding package
@@ -179,7 +182,7 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 > [!NOTE]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to six months.
 
-2. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
+1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
 1. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
 
