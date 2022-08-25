@@ -120,7 +120,7 @@ Security intelligence update version: 1.373.219.0 <br/>
 
 ### Known Issues
 
-No known issues
+- Customers deploying platform update 4.18.2207.5 might experience lagging network performance that could impact applications.
 
 <br/><br/>
 </details><details>

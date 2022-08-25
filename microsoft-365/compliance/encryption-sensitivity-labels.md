@@ -86,7 +86,7 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 4.  On the **Encryption** page, select one of the following options:
     
-    - **Remove encryption if the file is encrypted**: This option is supported by the Azure Information Protection unified labeling client only. When you select this option and use built-in labeling, the label might not display in apps, or display and not make any encryption changes.
+    - **Remove encryption if the file or email is encrypted**: This option is supported by the Azure Information Protection unified labeling client only. When you select this option and use built-in labeling, the label might not display in apps, or display and not make any encryption changes.
         
         For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section. It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions.
     
@@ -97,6 +97,9 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
         Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
 
 ### What happens to existing encryption when a label's applied
+
+> [!NOTE]
+> The option **Remove encryption if the file or email is encrypted** is supported only by the Azure Information Protection unified labeling client. You can achieve the same effect for emails by [configuring a mail flow rule](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption).
 
 If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if you didn't select **Encrypt files and emails**, the content remains unencrypted.
 
