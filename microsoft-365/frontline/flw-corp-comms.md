@@ -27,7 +27,7 @@ appliesto:
 
 Keep your frontline team connected with your broader organization by using Yammer and Viva Connections.
 
-Watch the following video to see and example of how you can help your frontline workers connect and collaborate in retail organizations:
+Watch the following video to see an example of how you can help your frontline workers connect and collaborate in retail organizations:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
 
