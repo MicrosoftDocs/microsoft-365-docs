@@ -1,7 +1,7 @@
 ---
 title: Manage access to Microsoft 365 Defender data in the Microsoft 365 Defender portal
 description: Learn how to manage permissions to data in Microsoft 365 Defender
-keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
+keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
