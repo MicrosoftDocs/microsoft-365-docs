@@ -130,25 +130,27 @@ sections:
         answer: |
           You can attach any file type to a protected mail. Protection policies are applied only to a subset of the file formats mentioned in [File types supported by the Azure Information Protection client](/information-protection/rms-client/client-admin-guide-file-types). 
           Microsoft Purview Message Encryption only supports the following Office files extensions:
-          |Office file type|
-          |docx|
-          |docm|
-          |dotx|
-          |dotm|
-          |pptx|
-          |pptm|
-          |potx|
-          |potm|
-          |ppsx|
-          |ppsm|
-          |thmx|
-          |xlsx|
-          |xlsm|
-          |xlsb|
-          |xltx|
-          |xltm|
-          |xlam|
-          |xps|
+          
+          - docx
+          - docm
+          - dotx
+          - dotm
+          - pptx
+          - pptm
+          - potx
+          - potm
+          - ppsx
+          - ppsm
+          - thmx
+          - xlsx
+          - xlsm
+          - xlsb
+          - xltx
+          - xltm
+          - xlam
+          - xps
+          
+          
           Microsoft Purview Message Encryption does not support the 97-2003 versions of the following Office programs: Word (.doc), Excel (.xls), and PowerPoint (.ppt).
           
           Protection is inherited from mail to unencrypted attachments only. If a file format is supported, such as a Word, Excel, or PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, say an attachment is protected by Do Not Forward. The original recipient downloads the file, creates a message to a new recipient, and attaches the file. When the new recipient receives the file, the recipient will not be able to open the protected file.
@@ -189,7 +191,7 @@ sections:
       - question: |
           Does the encrypted message portal support preview of encrypted attachments in protected emails?
         answer: |
-          The encrypted message portal supports preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, Powerpoint, and PDF files.  
+          The encrypted message portal supports preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, PowerPoint, and PDF files.  
 
       - question: |
           Can I automatically encrypt messages by setting up policies?
@@ -282,7 +284,7 @@ sections:
       - question: |
           How long do I have access to the mail in the encrypted message portal?
         answer: |
-          You can login to the encrypted message portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
+          You can log in to the encrypted message portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
 
       - question: |
           What do I do if I don't receive the one-time pass code after I requested it?
