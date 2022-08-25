@@ -350,7 +350,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 ```
 
 > [!NOTE]
-> The email address in the CSV file must be the one specified in the target tenant (e.g. userA@targettenant.onmicrosoft.com), not the source tenant.
+> The email address in the CSV file must be the one specified in the target tenant (for example, userA@targettenant.onmicrosoft.com), not the one in the source tenant.
 >
 > [For more information on the cmdlet click here](/powershell/module/exchange/new-migrationbatch)
 >
