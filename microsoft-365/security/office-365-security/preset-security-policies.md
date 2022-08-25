@@ -224,7 +224,7 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
    When you're finished, click **Next**.
 
-8. On the **Add trusted email addresses and domains to not flag as impersonation** page, enter the sender email addresses and domains that you want to excluded from impersonation protection. Messages from these senders will never be flagged as an impersonation attack, but the senders are still subject to scanning by other filters in EOP and Defender for Office 365.
+8. On the **Add trusted email addresses and domains to not flag as impersonation** page, enter the sender email addresses and domains that you want excluded from impersonation protection. Messages from these senders will never be flagged as an impersonation attack, but the senders are still subject to scanning by other filters in EOP and Defender for Office 365.
 
    Enter the email address or domain in the box, and then click **Add**. Repeat this step as many times as necessary.
 
