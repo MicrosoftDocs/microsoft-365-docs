@@ -33,7 +33,7 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
-- This supports macOS version Catalina 10.15 and higher.
+- This supports three most recent major releases of macOS.
 - Create the user groups that you are going to assign the configuration updates to.
 - Install the v95+ Edge browser on your macOS devices 
 
@@ -55,7 +55,7 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
 |file needed for |source |
 |---------|---------|
-Combined mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.|
+System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.|
 MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.
 
 ### Get the device onboarding package
@@ -100,7 +100,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. Choose **Create**
 
-1. Choose a name for the profile, like *CombinedMobileConfig* in this example. Choose **Next**.
+1. Choose a name for the profile, like *SystemMobileConfig* in this example. Choose **Next**.
 
 1. Choose the **mdatp-nokext.mobileconfig** file that you copied and saved in step 1 as the configuration profile file.
 
@@ -111,12 +111,12 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 1. Review your settings and choose **Create** to deploy the configuration.
 
 1. Repeat steps 2-9 to create profiles for the:
-    1. **DeviceComplianceOnboarding.xml** file. Name it *Onboarding Package*
-    1. **com.microsoft.wdav.mobileconfig** file. Name it *MDE Preferences*
+    1. **DeviceComplianceOnboarding.xml** file. Name it *Purview Device Onboarding Package*
+    1. **com.microsoft.wdav.mobileconfig** file. Name it *Endpoint Device Preferences*
  
 1. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-1. In the **Configuration profiles** page, choose the profile that you just created, for example *CombinedMobileConfig* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+1. In the **Configuration profiles** page, choose the profile that you just created, for example *SystemMobileConfig* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 
 
@@ -177,7 +177,7 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 
 1. Follow the procedures in [Intune-based deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-with-intune#publish-application) to deploy MDE to enrolled macOS devices.
 
-## Offboard macOS devices using Intune
+<!--## Offboard macOS devices using Intune PINGING PG FOR THIS PROCEDURE
 
 > [!NOTE]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to six months.
@@ -190,4 +190,4 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 
 1. Open **Properties** and **Assignments**
 
-1. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
+1. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.-->
