@@ -94,9 +94,9 @@ You'll choose from these role group options and solution actions when working wi
 |Access & view the Content Explorer|Yes|No|No|Yes|No|No|
 |Configure notice templates|Yes|No|Yes|Yes|No|No|
 |View & export audit logs|Yes|No|No|No|Yes|No|
-|Access & view forensic evidence recordings|Yes|No|No|Yes|No|No|
-|Create forensic evidence recording request|Yes|Yes|No|No|No|No|
-|Approve forensic evidence recording requests|Yes|No|No|No|No|Yes|
+|Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
+|Create forensic evidence capture request|Yes|Yes|No|No|No|No|
+|Approve forensic evidence capture requests|Yes|No|No|No|No|Yes|
 |View device health report|Yes|Yes|No|No|No|No|
 
 > [!IMPORTANT]
@@ -230,9 +230,9 @@ See the [Configure advanced features in Defender for Endpoint](/windows/security
 
 #### Configure forensic evidence (optional)
 
-Having visual context is crucial for security teams during forensic investigations to get better insights into risky user activities. With customizable event triggers and built-in user privacy protection controls, forensic evidence enables customizable screen recording across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
+Having visual context is crucial for security teams during forensic investigations to get better insights into risky user activities. With customizable event triggers and built-in user privacy protection controls, forensic evidence enables customizable screen capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
 
-See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance to configure screen recording for your organization. After you've configured the prerequisites for forensic evidence, return to these configuration steps.
+See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance to configure screen capturing for your organization. After you've configured the prerequisites for forensic evidence, return to these configuration steps.
 
 ## Step 5 (required): Configure insider risk settings
 
@@ -259,7 +259,7 @@ Before configuring a policy, define the following insider risk settings:
 8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview) article for step-by-step guidance.
 9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-physical-assets-preview) article for step-by-step guidance.
 10. On the **Microsoft Teams** page, enable Microsoft Teams integration with insider risk management to automatically create a team for case or user collaboration. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview) article for step-by-step guidance.
-11. On the **Forensic evidence (preview)** pages, enable and configure the settings for forensic evidence. You'll also need to explicitly request and approve users and groups eligible for screen recording in your organization. See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure#step-3-configure-settings) article for step-by-step settings guidance.
+11. On the **Forensic evidence (preview)** pages, enable and configure the settings for forensic evidence. You'll also need to explicitly request and approve users and groups eligible for screen capturing in your organization. See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure#step-3-configure-settings) article for step-by-step settings guidance.
 12. Select **Save** to enable these settings for your insider risk policies.
 
 ## Step 6 (required): Create an insider risk management policy
