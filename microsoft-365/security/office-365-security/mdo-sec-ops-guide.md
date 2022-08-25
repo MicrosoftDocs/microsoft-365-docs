@@ -37,6 +37,8 @@ A companion article to this guide provides an overview to [manage incidents and 
 
 The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
 
+For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
+
 ## Daily activities
 
 ### Monitor the Microsoft 365 Defender Incidents queue
