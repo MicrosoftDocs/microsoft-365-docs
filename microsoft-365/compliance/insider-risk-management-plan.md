@@ -52,7 +52,7 @@ Depending on how you wish to manage insider risk management policies and alerts,
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-||**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
 |---|---|---|---|---|---|---|
 |Configure policies and settings|Yes|Yes|No|No|No|No|
 |Access analytics insights|Yes|Yes|Yes|No|No|No|

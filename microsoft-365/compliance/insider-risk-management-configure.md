@@ -95,8 +95,8 @@ You'll choose from these role group options and solution actions when working wi
 |Configure notice templates|Yes|No|Yes|Yes|No|No|
 |View & export audit logs|Yes|No|No|No|Yes|No|
 |Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
-|Create forensic evidence capture request|Yes|Yes|No|No|No|No|
-|Approve forensic evidence capture requests|Yes|No|No|No|No|Yes|
+|Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
+|Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
 |View device health report|Yes|Yes|No|No|No|No|
 
 > [!IMPORTANT]
