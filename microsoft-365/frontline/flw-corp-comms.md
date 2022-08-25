@@ -27,6 +27,11 @@ appliesto:
 
 Keep your frontline team connected with your broader organization by using Yammer and Viva Connections.
 
+Watch the following video to see and example of how you can help your frontline workers connect and collaborate in retail organizations:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+
 ## Connect information from across the organization with Viva Connections
 
 Engage and inform workers with Viva Connections. Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. When employees use Viva Connections, they’re able to get important information faster, meaning that managers don’t have to spend valuable time relaying updates. Surface key information, personalized news, tasks, announcements, and other resources on the Viva Connections Dashboard. For example, a retailer could share new product and promotion announcements with their store associates, or a fundraising coordinator for a nonprofit could share quarterly goals with volunteers.
