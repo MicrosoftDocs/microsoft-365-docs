@@ -18,9 +18,9 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-## Supported Microsoft Defender for Endpoint capabilities per platform
+# Supported Microsoft Defender for Endpoint capabilities per platform
 
-|Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>, Windows Server 2016<sup>[[1](#fn1)]<sup></sup>, Windows Server 2019 & 2022, Windows Server 1803+|macOS|Linux| 
+|Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>, Windows Server 2016<sup>[[1](#fn1)]<sup></sup>, Windows Server 2019 & 2022, Windows Server 1803+ |macOS |Linux| 
 |---------|---------|---------|---------|---------|
 |**Prevention**    |         |         |         |         | 
 |Attack Surface Reduction rules     | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)     |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
@@ -32,11 +32,11 @@ ms.technology: mde
 |Tamper Protection        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)         |
 |Web Protection       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)     |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)]<sup></sup>        |
 ||||||
-|**Detection**     |         |         |         ||
+|**Detection**     |         |         |         |       |
 |Advanced Hunting        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg) |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
 |Custom file indicators         | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
 |Custom network indicators        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)]<sup></sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)]<sup></sup>        |
-|EDR Block       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)       |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|EDR Block       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
 |Passive Mode          | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
 |Sense detection sensor          | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)         |
 |Endpoint & network device discovery      | ![Yes.](images/svg/check-yes.svg)        | ![No](images/svg/check-no.svg)  |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
