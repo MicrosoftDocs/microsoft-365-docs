@@ -38,6 +38,14 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## July 2022
 
+### Compliance Manager
+
+- [Compliance Manager templates list](compliance-manager-templates-list.md) - added new premium template in the Asia-Pacific countries category for "Hong Kong - Code of Banking Practice and Payment Card".
+
+### Compliance offerings & service assurance
+
+- [SharePoint and OneDrive data resiliency in Microsoft 365](./assurance/assurance-sharepoint-onedrive-data-resiliency.md) - changes to blob storage resilience section)
+
 ### Data lifecycle management and records management
 
 - [Combined licensing section](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) with added details for scenarios.
@@ -45,6 +53,20 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Guidance how to [validate records that you've migrated to SharePoint or OneDrive](records-management.md#validating-migrated-records).
 - Updated Cohasset Assessment report for [SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d).
 - Removed preview disclaimers for retention policies for Teams shared channels now that this feature is rolling out in GA.
+
+### Data Loss Prevention
+
+- [DLP policy reference](dlp-policy-reference.md#blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business) - added new section on Blocking and notifications in SharePoint Online, and OneDrive for Business in response to customer escalations. Updated to support the public preview of sensitive services domains. Updated support for Power BI. Updated support for trainable classifiers.
+- [Configure endpoint DLP settings](dlp-configure-endpoint-settings.md#sensitive-service-domains-preview) - added new content in support of the public preview release of sensitive service domains public preview. Updated URL matching behavior.
+- [Using endpoint DLP](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) - new scenario content in support of the public preview release of sensitive services domains. Updated subscription information.
+
+### eDiscovery
+
+- [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md) - removed superseded information.
+
+### Sensitive information types
+
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) - We added 41 new SIT entity definitions in support of the 41 new credential scanning SITs. SIT entity definitions content was completely reworked from a single monolithic article into more easily referenceable and supportable individual articles. There are now 303 articles in total including the 42 new credential scanning SITs.
 
 ### Sensitivity labels
 
