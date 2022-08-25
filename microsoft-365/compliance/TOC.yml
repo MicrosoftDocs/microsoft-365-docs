@@ -1006,6 +1006,8 @@
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
+          - name: Sensitive information type limits
+            href: sit-limits.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
