@@ -21,7 +21,7 @@ search.appverid:
 description: "Details of the Communication - People experience Adoption Score."
 ---
 
-# Communication insights score– People experiences
+# Communication insights score – People experiences
 
 Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. The communication category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
@@ -179,7 +179,7 @@ We also provide you with information that helps you gain visibility into how you
 
 For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
 
-:::image type="content" source="../../media/trends-over-time.png" alt-text="Trends over time."lightbox="../../media/trends-over-time.png":::
+:::image type="content" source="../../media/trends-over-time.png" alt-text="Trends over time. "lightbox="../../media/trends-over-time.png":::
 
 After you select an option, the charts in the report will update to show a trend over time rather than a snapshot of the past month.  
 
