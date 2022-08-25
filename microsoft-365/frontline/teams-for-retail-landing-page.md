@@ -44,6 +44,16 @@ Microsoft 365 and Microsoft Teams offer several capabilities that can help retai
 > [!NOTE]
 > These scenarios are also part of the Microsoft Cloud for Retail. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Retail, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Retail](/industry/retail).
 
+Watch the following video to see how you can help your store associates connect and collaborate:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+
+Watch the following video to see how you can simplify business processes in retail environments:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
+
 ### In-store communication and collaboration
 
 Bring in-store associates and management together to collaborate and streamline operations with Teams and Teams apps.
@@ -51,8 +61,6 @@ Bring in-store associates and management together to collaborate and streamline 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
 **Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
@@ -85,8 +93,6 @@ You can use Teams apps, Power Apps, and Power BI to simplify business processes.
 **Key apps:** Shifts, Tasks, Lists, Approvals
 
 **Additional services:** Power Platform with Power Apps and Power BI
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
 
 More information: [Simplify business processes](simplify-business-processes.md)
 
