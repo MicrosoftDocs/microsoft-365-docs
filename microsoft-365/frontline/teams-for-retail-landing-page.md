@@ -52,6 +52,8 @@ Bring in-store associates and management together to collaborate and streamline 
 
 **Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
 ### Cross-store communication and collaboration
@@ -83,6 +85,8 @@ You can use Teams apps, Power Apps, and Power BI to simplify business processes.
 **Key apps:** Shifts, Tasks, Lists, Approvals
 
 **Additional services:** Power Platform with Power Apps and Power BI
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
 
 More information: [Simplify business processes](simplify-business-processes.md)
 

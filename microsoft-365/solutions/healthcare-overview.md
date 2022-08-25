@@ -35,7 +35,6 @@ Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modern
 |[Microsoft 365 for Healthcare](/frontline/teams-in-hc)    |  Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations. <br>- Virtual visits and Electronic Healthcare Record (EHR) integration<br>- Teams policy packages<br>- Secure messaging<br>- Teams templates<br>- Care coordination and collaboration      |
 |[Microsoft Cloud for Healthcare](/industry/healthcare/overview)  | Learn about Microsoft Cloud for Healthcare and how it brings together trusted capabilities to customers and partners that enhance patient engagement, empowers health team collaboration, and improves clinical and operational data insights to improve decision-making and operational efficiencies.     |
 | [Azure architecture and solutions for healthcare](/azure/architecture/industries/healthcare)| Learn how you can use Microsoft Azure services to digitize, modernize, and enhance your healthcare solution at Azure for healthcare|
-| | |
 
 ## Videos you can share with your team
 
