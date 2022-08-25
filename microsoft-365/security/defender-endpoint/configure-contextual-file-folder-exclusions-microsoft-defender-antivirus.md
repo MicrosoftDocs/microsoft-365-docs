@@ -9,7 +9,7 @@ ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -62,9 +62,7 @@ As a starting point, you may already have exclusions in place that you wish to m
 Keep in mind that _all_ **types** and **values** are case sensitive.
 
 > [!NOTE]  
-> 
-> Conditions inside {} MUST be true for the restriction to match. For example, if you specify 2 scan triggers this cannot be true, and the exclusion will not apply.
-> To specify 2 restrictions of the same type, create 2 separate exclusions.
+> Conditions inside `{}` MUST be true for the restriction to match. For example, if you specify two scan triggers this cannot be true, and the exclusion will not apply. To specify two restrictions of the same type, create two separate exclusions.
 
 
 ### Examples
