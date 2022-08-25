@@ -100,11 +100,9 @@ Use the following examples to help you create your CSV files. Here, we've named 
 |Sydney Mattos|sydneym@contoso.com|Contoso Store 9|AddMember|Member|
 |Violet Martinez|violetm@contoso.com|Contoso Store 10|AddMember|Member|
 
-### Step 2: Deploy your teams
+### Step 2: Set up your environment
 
-Now that you've created your CSV files, you're ready to set up your environment and deploy your teams.
-
-You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment) cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the [Get-CsBatchTeamsDeployment](/powershell/module/teams/get-csbatchteamsdeployment) cmdlet to track the progress and status of each batch.
+Follow these steps to install and connect to the latest preview version of the Teams PowerShell module.
 
 1. Install PowerShell version 7 or later. For step-by-step guidance, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 1. Run PowerShell in administrator mode.
@@ -133,6 +131,12 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
 
     Verify that ```New-CsBatchTeamsDeployment``` and ```Get-CsBatchTeamsDeployment``` are listed.
 
+### Step 3: Deploy your teams
+
+Now that you've created your CSV files and set up your environment, you're ready to deploy your teams.
+
+You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment) cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the [Get-CsBatchTeamsDeployment](/powershell/module/teams/get-csbatchteamsdeployment) cmdlet to track the progress and status of each batch.
+
 1. Run the following to deploy a batch of teams. In this command, you specify the path to your CSV files and the email addresses of up to five recipients to notify about this deployment.
 
     ```powershell
@@ -155,5 +159,7 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
 
 ## Related articles
 
+- [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment)
+- [Get-CsBatchTeamsDeployment](/powershell/module/teams/get-csbatchteamsdeployment)
 - [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
 - [Learn where to start with a frontline deployment](flw-deploy-overview.md)
