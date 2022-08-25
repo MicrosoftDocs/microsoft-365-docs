@@ -20,6 +20,18 @@ ms.technology: mde
 
 # Supported Microsoft Defender for Endpoint capabilities per platform
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+
+Learn how to [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
+
+The following table gives information about the supported Microsoft Defender for Endpoint capabilities per platform.
+
 |Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]</sup>, <br> 2016 <sup>[[1](#fn1)]</sup>, <br> 2019 & 2022, <br> 1803+ |macOS |Linux| 
 |---------|---------|---------|---------|---------|
 |**Prevention**    |         |         |         |         | 
@@ -60,4 +72,3 @@ ms.technology: mde
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
 
-For more information see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
