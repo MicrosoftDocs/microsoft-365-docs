@@ -40,7 +40,7 @@ Microsoft Purview provides three eDiscovery solutions: Content search, eDiscover
 
 |Content Search|eDiscovery (Standard)|eDiscovery (Premium)|
 |---------|---------|---------|
-|Search for content </br> Keyword queries and search conditions </br> Export search results </br> Role-based permissions   |  Search and export </br> Case management </br>Legal hold | Custodian management </br> Legal hold notifications </br> Advanced indexing </br> Review set filtering </br> Tagging </br> Analytics </br> Predictive coding models </br> And more...   |
+|Search for content </br> Keyword queries and search conditions </br> Export search results </br> Role-based permissions|Search and export </br> Case management </br>Legal hold|Custodian management </br> Legal hold notifications </br> Advanced indexing </br> Review set filtering </br> Tagging </br> Analytics </br> Predictive coding models </br> And more...|
 
 
 - **Content search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
