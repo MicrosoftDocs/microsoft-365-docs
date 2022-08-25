@@ -44,7 +44,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance offerings & service assurance
 
-- [SharePoint and OneDrive data resiliency in Microsoft 365](./assurance/assurance-sharepoint-onedrive-data-resiliency.md) - changes to blob storage resilience section)
+- [SharePoint and OneDrive data resiliency in Microsoft 365](assurance/assurance-sharepoint-onedrive-data-resiliency.md) - changes to blob storage resilience section.
 
 ### Data lifecycle management and records management
 
