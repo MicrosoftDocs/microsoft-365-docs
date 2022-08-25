@@ -165,9 +165,9 @@ You might want to apply the **Standard** or **Strict** preset security policies 
    - **All recipients**
    - **Specific recipients**:
      - **Users**
-  - **Groups**:
-    - Members of the specified distribution groups or mail-enabled security groups.
-    - The specified Microsoft 365 Groups.
+     - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
     
         > [!NOTE]
         > Dynamic distribution groups are not supported.
