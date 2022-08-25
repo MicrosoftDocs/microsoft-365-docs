@@ -92,6 +92,6 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 | [Configure Auto Investigation & Remediation (AIR) capabilities](configure-automated-investigations-remediation.md) | Microsoft Defender for Endpoint uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. |
 | [Configure Microsoft Threat Experts (MTE) capabilities](configure-microsoft-threat-experts.md) | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed.      |
 
-For more information, see [Supported Microsoft Defender for Endpoint capabilities per platform](supported-capabilities-per-platform.md)
+For more information, see [Supported Microsoft Defender for Endpoint capabilities per platform](supported-capabilities-per-platform.md).
 
 
