@@ -252,9 +252,9 @@ Therefore, we typically don't recommend exceptions to the **Built-in protection*
 
 3. On the **Exclude from Built-in protection** flyout that appears, identify the internal recipients that are excluded from the built-in Safe Links and Safe Attachments protection:
    - **Users**
-  - **Groups**:
-    - Members of the specified distribution groups or mail-enabled security groups.
-    - The specified Microsoft 365 Groups.
+     - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
     
         > [!NOTE]
         > Dynamic distribution groups are not supported.
