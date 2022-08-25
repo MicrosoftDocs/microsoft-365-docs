@@ -158,7 +158,7 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
 1. Run the following to check the status of the batch you submitted.
 
     ```powershell
-    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
     ```
 
 ## Send us feedback
