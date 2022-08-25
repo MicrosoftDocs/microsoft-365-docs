@@ -40,7 +40,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
-- [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 ## August 2022
 
