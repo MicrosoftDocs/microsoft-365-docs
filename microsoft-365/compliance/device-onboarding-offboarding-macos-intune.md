@@ -40,7 +40,7 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
-Onboarding a macOS device into Compliance solutions is a six phase process.
+Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
 1. [Create system configuration profiles](#create-system-configuration-profiles)
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
@@ -54,7 +54,6 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 |file needed for |source |
 |---------|---------|
-|Onboarding package    |Downloaded from the compliance portal **Onboarding package**, file name *\Intune\\**DeviceComplianceOnboarding.xml***. See, [Get the device onboarding package](#get-the-device-onboarding-package) in this article for the steps. |
 Combined mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.|
 MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.
 
@@ -113,7 +112,10 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
  
 1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
  
-1. Choose **Download onboarding package**. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
+1. Choose **Download onboarding package**. 
+
+1. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
+
 
 <!--### Deploy the onboarding package
 
