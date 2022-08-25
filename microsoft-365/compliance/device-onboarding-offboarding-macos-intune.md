@@ -45,8 +45,9 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 1. [Create system configuration profiles](#create-system-configuration-profiles)
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Deploy the onboarding package](#deploy-the-onboarding-package)
-1. [Enable system extension](#enable-system-extension)
 1. [Publish application](#publish-application)
+<!--1. [Enable system extension](#enable-system-extension)-->
+
 
 ### Create system configuration profiles
 
