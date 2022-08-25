@@ -115,7 +115,7 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 **Solution:**
 
 >[!IMPORTANT]
->This issue has been resolved. Please update to the latest app version to complete the onboarding process. If the issue persists, please send an **[in-app feedback](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-support-signin?view=o365-worldwide#send-in-app-feedback)**.
+>This issue has been resolved. Please update to the latest app version to complete the onboarding process. If the issue persists, please send an **[in-app feedback](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
 
 
 ## Send in-app feedback
