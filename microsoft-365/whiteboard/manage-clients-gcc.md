@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn which clients are currently supported for Whiteboard.
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

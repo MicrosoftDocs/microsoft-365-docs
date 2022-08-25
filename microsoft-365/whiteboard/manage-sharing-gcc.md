@@ -12,6 +12,8 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard in GCC environments.
+ROBOTS: NOINDEX, NOFOLLOW
+
 ---
 
 # Manage sharing for Microsoft Whiteboard in GCC environments
