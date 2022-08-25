@@ -24,7 +24,7 @@ appliesto:
 
 Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. There are several solution areas that can help you achieve these goals. Think of Microsoft 365's foundational security and device management capabilities as setting a secure baseline, above which you can build scenarios that enable, empower, and transform your frontline business. You can use the capabilities included with Microsoft 365 for frontline workers, from Microsoft Teams, to SharePoint, Viva Connections, Yammer, and the Power Platform, or add in solutions from our partners in the digital ecosystem to connect with existing systems or create custom solutions for your business.
 
-:::image type="content" source="./media/flw-maturity-model.png" alt-text="Digital maturity model for frontline, from enable to empower to transform.":::
+:::image type="content" source="media/flw-maturity-model.png" alt-text="Digital maturity model for frontline, from enable to empower to transform.":::
 
 Use these scenario overviews to start envisioning what your organization can do with Microsoft 365 for frontline workers, then follow the links to find out how to implement these scenarios.
 
