@@ -20,7 +20,7 @@ ms.technology: mde
 
 # Supported Microsoft Defender for Endpoint capabilities per platform
 
-|Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>, Windows Server 2016<sup>[[1](#fn1)]<sup></sup>, Windows Server 2019 & 2022, Windows Server 1803+ |macOS |Linux| 
+|Operating System  |Windows 10 & 11  |Windows Server 2012 R2 [[1](#fn1)], <br> 2016 [[1](#fn1)], <br> 2019 & 2022, <br> 1803+ |macOS |Linux| 
 |---------|---------|---------|---------|---------|
 |**Prevention**    |         |         |         |         | 
 |Attack Surface Reduction rules     | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)     |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
