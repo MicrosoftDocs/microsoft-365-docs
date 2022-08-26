@@ -26,6 +26,8 @@
      items:
      - name: Phase 1 - Email authentication
        items:
+       - name: Email authentication
+         href: email-validation-and-authentication.md
        - name: Step 1 - Set up SPF to help prevent spoofing
          href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
        - name: Step 2 - Use DKIM to validate outbound email
@@ -614,8 +616,6 @@
           href: mdo-sec-ops-manage-incidents-and-alerts.md
       - name: Office 365 security
         items:
-        - name: Email authentication
-          href: email-validation-and-authentication.md
         - name: Install Application Guard for Office
           href: install-app-guard.md
         - name: DELETE? Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
