@@ -41,12 +41,10 @@ The Microsoft 365 admin center provides the following features to support access
     - **Contacts** – Shift + A + C
     - **Groups** – Shift + A + G
 
-## Support
+## Support and feedback
 
 Microsoft provides an enterprise Disability Answer Desk as a support resource for organizations that have questions about the accessibility of Microsoft products and product conformance with accessibility standards. The support team can help resolve issues relating to assistive technology and functionality of products for users with disabilities, and find conformance documentation. For accessibility help, email the [enterprise Disability Answer Desk](mailto:eDAD@microsoft.com).
 
-## Feedback
-
 We welcome your feedback on the accessibility of the Microsoft 365 admin center. Use the **Give feedback** button inside the admin center to let us know about any accessibility barriers you encounter.
 
-This statement was created on <date>.
+This statement was created on 09/01/2022.
