@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus Device Health export device antivirus health reporting
-description: Presents methods to retrieve Microsoft Defender Antivirus (MDAV) device health details. 
+description: Presents methods to retrieve Microsoft Defender Antivirus device health details. 
 keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
 ms.prod: m365-security 
 ms.mktglfcycl: deploy 
@@ -83,9 +83,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
 | Application | Machine.Read.All | ‘Read all machine profiles’ |
-| Application | Machine.ReadWrite.All |  ‘Read and write all machine information’ |
 |Delegated (work or school account) | Machine.Read | ‘Read machine information’ |
-| Delegated (work or school account) | Machine.ReadWrite | ‘Read and write machine information’ |
 
 ### 1.3 URL (HTTP request)
 
@@ -226,7 +224,7 @@ One of the following permissions is required to call this API.
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
 | Application | Vulnerability.Read.All | 'Read "threat and vulnerability management" vulnerability information’  |
-| Delegated (work or school account) | Vulnerability.Read. | 'Read "threat and vulnerability management" vulnerability information’ |
+| Delegated (work or school account) | Vulnerability.Read | 'Read "threat and vulnerability management" vulnerability information’ |
 
 To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details](apis-intro.md).
 
