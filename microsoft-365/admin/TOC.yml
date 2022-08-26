@@ -271,21 +271,21 @@
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
-         - name: Microsoft Productivity Score - overview
-           href: productivity/productivity-score.md
+         - name: Microsoft Adoption Score - overview
+           href: adoption/adoption-score.md
            items:
             - name: Content collaboration
-              href: productivity/content-collaboration.md
+              href: adoption/content-collaboration.md
             - name: Communication 
-              href: productivity/communication.md
+              href: adoption/communication.md
             - name: Mobility
-              href: productivity/mobility.md
+              href: adoption/mobility.md
             - name: Teamwork
-              href: productivity/teamwork.md
+              href: adoption/teamwork.md
             - name: Meetings
-              href: productivity/meetings.md
+              href: adoption/meetings.md
             - name: Microsoft 365 Apps health
-              href: productivity/apps-health.md
+              href: adoption/apps-health.md
             - name: Endpoint Analytics
               href: /mem/analytics/productivity-score
          - name: Change your organization contact info
