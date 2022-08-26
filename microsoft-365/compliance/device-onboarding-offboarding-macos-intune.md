@@ -118,96 +118,23 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. In the **Configuration profiles** page, choose the profile that you just created, for example *SystemMobileConfig* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
-
-
-
-<!--### Deploy the onboarding package
-
-1. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
-
-1. Choose: **Create profile**. 
-
-1. Choose:
-    1. **Platform = macOS**
-    1. **Profile type = Templates**
-    1. **Template name = Custom**
-
-1. Choose **Create**
-
-1. Choose a name for the profile, like *OnboardingPackage* in this example. Choose **Next**.
-
-1. Choose the *DeviceComplianceOnboarding.xml* file as the configuration profile file.
-
-1. Choose **Next**
-
-1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
-
-1. Review your settings and choose **Create** to deploy the configuration.-->
-
-<!--### Enable system extension
-
-1. In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
-
-1. Choose:
-    1. **Platform = macOS**
-    1. **Profile type = Templates**
-    1. **Template name = Extensions**
-
-1. Choose **Create**
-
-1. In the **Basics** tab, give this new profile a name.
-
-1. In the **Configuration settings** tab expand **System Extensions**.
-
-1. Under **Bundle identifier** and **Team identifier**, set these values
-
-|Bundle identifier  |Team identifier  |
-|---------|---------|
-|**com.microsoft.wdav.epsext**|**UBF8T346G9**|
-|**com.microsoft.wdav.netext**|**UBF8T346G9**|
-
-
-1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
-
-1. Choose **Next** to deploy the configuration.-->
-
 ### Publish application
 
 Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS. This procedure applies to onboarding devices into Microsoft Purview solutions
 
 1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../security/defender-endpoint/images/mdatp-8-app-before.png" alt-text="The application's overview page" lightbox="images/mdatp-8-app-before.png":::
-
 1. Select By platform > macOS > Add.
-1. Choose **App type**=**macOS**, click **Select**.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../security/defender-endpoint/images/mdatp-9-app-type.png" alt-text="The specific application type" lightbox="images/mdatp-9-app-type.png":::
+1. Choose **App type**=**macOS**, click **Select**.
 
 1. Keep default values, click **Next**.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../security/defender-endpoint/images/mdatp-10-properties.png" alt-text="The application properties page" lightbox="images/mdatp-10-properties.png":::
-
 1. Add assignments, click **Next**.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../security/defender-endpoint/images/mdatp-11-assignments.png" alt-text="The Intune assignments information page" lightbox="images/mdatp-11-assignments.png":::
-
 1. Review and **Create**.
+
 1. You can visit **Apps** \> **By platform** \> **macOS** to see it on the list of all applications.
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../security/defender-endpoint/images/mdatp-12-applications.png" alt-text="The application lists page" lightbox="images/mdatp-12-applications.png":::
-
-<!--For more information, see [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).)
-
-   > [!CAUTION]
-   > You have to create all required configuration profiles and push them to all machines, as explained above.-->
-
-
 
 <!--## Offboard macOS devices using Intune PINGING PG FOR THIS PROCEDURE
 
