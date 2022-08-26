@@ -99,6 +99,10 @@ Document download view - When viewing the available documents, you can filter th
 
 This feature lets you save (or *pin*) documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated. For more information, see the [My Library](#my-library-1) section in this article.
 
+If a document is part of a series, you will be subscribed to the series and will receive notifications when there is an update to that series. You can view the individual documents and Series documents that you have subscribed to, in two sections as shown in the following graphic.
+
+:::image type="content" source="../media/stp-my-library.png" alt-text="My Library displays the documents you have subscribed to in two sections.":::
+
 ### All Documents
 
 This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
