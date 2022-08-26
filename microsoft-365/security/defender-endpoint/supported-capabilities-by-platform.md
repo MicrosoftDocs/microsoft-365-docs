@@ -1,5 +1,5 @@
 ---
-title: Supported Microsoft Defender for Endpoint capabilities per platform
+title: Supported Microsoft Defender for Endpoint capabilities by platform
 description: Get to know the Microsoft Defender for Endpoint capabilities supported for Windows 10 devices, servers, and non-Windows devices.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Supported Microsoft Defender for Endpoint capabilities per platform
+# Supported Microsoft Defender for Endpoint capabilities by platform
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.technology: mde
 
 Learn how to [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
 
-The following table gives information about the supported Microsoft Defender for Endpoint capabilities per platform.
+The following table gives information about the supported Microsoft Defender for Endpoint capabilities by platform.
 
 |Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]</sup>, <br> 2016 <sup>[[1](#fn1)]</sup>, <br> 2019 & 2022, <br> 1803+ |macOS |Linux| 
 |---------|---------|---------|---------|---------|

@@ -5,6 +5,7 @@
 ### [Trial playbook: Get the most out of your trial](defender-endpoint-trial-playbook.md)
 ### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
+### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-per-platform.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
@@ -481,7 +482,6 @@
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ## Reference
-### [Supported Microsoft Defender for Endpoint capabilities per platform](supported-capabilities-per-platform.md)
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
