@@ -32,7 +32,7 @@ Containment and investigation should occur as simultaneously as possible; howeve
 
 ### Step 1: Assess the scope of the incident
 
-Run through this list of questions and tasks to discover the extent of the attack. Microsoft 365 Defender can provide a consolidated view of all impacted or at-risk assets to aid in your incident response assessment. See [Incident response with Microsoft 365 Defender | Microsoft Docs](/incidents-overview.md). You can use the alerts and the evidence list in the incident to determine:
+Run through this list of questions and tasks to discover the extent of the attack. Microsoft 365 Defender can provide a consolidated view of all impacted or at-risk assets to aid in your incident response assessment. See [Incident response with Microsoft 365 Defender](incidents-overview.md). You can use the alerts and the evidence list in the incident to determine:
 
 * Which user accounts might be compromised?
   * Which accounts were used to deliver the payload?
