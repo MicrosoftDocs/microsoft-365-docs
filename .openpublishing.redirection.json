@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
+      "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+      "redirect_document_id": true	  
+    },	  
+    {
       "source_path": "microsoft-365/admin/misc/power-bi-in-your-organization.md",
       "redirect_url": "https://docs.microsoft.com/power-bi/enterprise/service-admin-org-subscription",
       "redirect_document_id": false
@@ -7709,6 +7714,6 @@
       "source_path": "microsoft-365/compliance/archive-jive-data.md",
       "redirect_url": "/microsoft-365/compliance/",
       "redirect_document_id": false
-    }
+    }    
     ]
   }
