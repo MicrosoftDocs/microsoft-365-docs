@@ -33,7 +33,7 @@ Knowing which method (or combinations of methods) to use and when to use them de
 
 | Item | Description |
 |:-----|:-----|
-|[![Contoso corporate communications scenario poster.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Updated January 2022   |This poster illustrates how Contoso keeps employees informed and engaged across popular communication scenarios. Contoso uses a variety of Microsoft 365 apps, including a new offering, Viva Connections.<br/><br/>**Related solution guides** <br/> <ul><li>[Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)|
+|[![Contoso corporate communications scenario poster.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.vsdx)  <br>Updated January 2022   |This poster illustrates how Contoso keeps employees informed and engaged across popular communication scenarios. Contoso uses a variety of Microsoft 365 apps, including a new offering, Viva Connections.<br/><br/>**Related solution guides** <br/> <ul><li>[Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)|
 
 ## Groups in Microsoft 365 for IT Architects
 This illustration includes information for IT architects about Microsoft 365 Groups. To learn about configuring and administering Microsoft 365 Groups and teams for collaboration in your organization, see [Set up secure collaboration with Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) and [What is collaboration governance?](/microsoft-365/solutions/collaboration-governance-overview).
@@ -112,11 +112,12 @@ eDiscovery (Premium) end-to-end workflow and data flow, including within Microso
 
 ## Microsoft Telephony Solutions
 
-Microsoft supports several options as you begin your journey to Teams in the Microsoft cloud. This poster helps you decide which Microsoft telephony solution (Phone System in the cloud or Enterprise Voice on-premises) is right for users in your organization, and how your organization can connect to the Public Switched Telephone Network (PSTN).
+This poster helps you decide which Microsoft telephony solution is right for users in your organization. It describes Phone System, Microsoft's technology for enabling call control and Private Branch Exchange (PBX) capabilities in Microsoft 365 with Microsoft Teams. The poster also describes options for connecting Phone System to the Public Switched Telephone Network (PSTN).  
+
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft Telephony Solutions poster.](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Updated March 2021 | For more information, see [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page).|
+|[![Microsoft Telephony Solutions poster.](../media/solutions-architecture-center/microsoft-voice-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Updated June 2022 | For more information, see [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page).|
 
 
 ## Set up your infrastructure for hybrid work

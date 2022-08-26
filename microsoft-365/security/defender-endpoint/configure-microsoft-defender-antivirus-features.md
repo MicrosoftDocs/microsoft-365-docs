@@ -12,7 +12,6 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 10/14/2021
 ms.reviewer:
 manager: dansimp
 ms.collection: M365-security-compliance
@@ -51,8 +50,6 @@ The following broad categories of features can be configured:
 
 > [!TIP]
 > Review [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md).
-
-> [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)

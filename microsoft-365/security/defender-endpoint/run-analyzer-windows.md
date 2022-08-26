@@ -23,6 +23,7 @@ ms.technology: m365d
 # Run the client analyzer on Windows
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the Windows machine you need to investigate.
@@ -89,11 +90,11 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
 - SystemInfoLogs \[Folder\]
   - AddRemovePrograms.csv
 
-    Description: List of x86 installed software on  x64 OS software collected from registry.
+    Description: List of x64 installed software on x64 OS collected from registry.
 
   - AddRemoveProgramsWOW64.csv
 
-    Description: List of x86 installed software on x64 OS software collected from registry.
+    Description: List of x86 installed software on x64 OS collected from registry.
 
     - CertValidate.log
 

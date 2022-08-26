@@ -25,8 +25,6 @@ ms.custom:
 
 # Search the audit log in the compliance portal
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
 ## Microsoft 365 services that support auditing
@@ -58,11 +56,13 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Retention policies and retention labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 | Sensitive information types|DlpSensitiveInformationType|
 | Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| Encrypted message portal|OMEPortal|
 | SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
 | Stream|MicrosoftStream|
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
+| SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audited activities](#audited-activities) section in this article.
 
@@ -403,7 +403,7 @@ Click one of the following links to go to a specific table.
         [Encrypted message portal activities](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        
+        [SystemSync activities](#systemsync-activities)
     :::column-end:::
     :::column:::
         
@@ -442,7 +442,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Recycled all minor versions of file|FileVersionsAllMinorsRecycled|User deletes all minor versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled all versions of file|FileVersionsAllRecycled|User deletes all versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled version of file|FileVersionRecycled|User deletes a version from the version history of a file. The deleted version is moved to the site's recycle bin.|
-|Renamed file|FileRenamed|User renames a document on a site.|
+|Renamed file|FileRenamed|User renames a document.|
 |Restored file|FileRestored|User restores a document from the recycle bin of a site.|
 |Uploaded file|FileUploaded|User uploads a document to a folder on a site.|
 |Viewed page|PageViewed|User views a page on a site. This doesn't include using a Web browser to view files located in a document library. Once a user views a page, the PageViewed event is not logged again for the same user for same page for the next five minutes.|
@@ -1100,6 +1100,18 @@ Each audit entry for a tracked message will contain the following fields:
 - OperationStatus - Indicates whether the indicated operation succeeded or failed.
 - AttachmentName - Name of the attachment.
 - OperationProperties - A list of optional properties, for example the number of OTP passcodes sent, or the email subject.
+
+### SystemSync activities
+
+The following table lists the activities for SystemSync that are logged in the Microsoft 365 audit log.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Data Share Created|DataShareCreated|When the data export is created by the user.|
+|Data Share Deleted|DataShareDeleted|When the data export is deleted by the user.|
+|Generate Copy Of Lake Data|GenerateCopyOfLakeData|When the copy of Lake Data is generated.|
+|Download Copy Of Lake Data|DownloadCopyOfLakeData|When the copy of Lake Data is downloaded.|
+
 
 ## Frequently asked questions
 

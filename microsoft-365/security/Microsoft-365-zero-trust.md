@@ -18,6 +18,7 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
+- zerotrust-solution
 ---
 
 # Microsoft 365 Zero Trust deployment plan

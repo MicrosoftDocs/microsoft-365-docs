@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
 ---
 
@@ -70,15 +70,15 @@ Empty
 
 ## Response
 
-If Indicator exist and deleted successfully - 204 OK without content.
+If Indicator exists and deleted successfully - 204 OK without content
 
-If Indicator with the specified id was not found - 404 Not Found.
+If Indicator with the specified id wasn't found - 404 Not Found
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995

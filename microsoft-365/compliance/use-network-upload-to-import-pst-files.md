@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 # Use network upload to import your organization's PST files to Microsoft 365
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -87,7 +87,7 @@ The first step is to download the AzCopy tool, which is the tool that you run in
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the compliance portal, click **Data lifecycle management** \> **Import**.
+2. In the left pane of the compliance portal, select **Data lifecycle management** \> **Microsoft 365** \> **Microsoft 365** \> **Import**.
 
     > [!NOTE]
     > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal. See the **Before you begin** section for more information. 
@@ -255,7 +255,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the compliance portal, click **Data lifecycle management > Import**.
+2. In the left pane of the compliance portal, select **Data lifecycle management** > **Microsoft 365** > Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
