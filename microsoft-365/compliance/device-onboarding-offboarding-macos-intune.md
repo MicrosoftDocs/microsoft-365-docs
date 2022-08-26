@@ -175,7 +175,39 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS. This procedure applies to onboarding devices into Microsoft Purview solutions
 
-1. Follow the procedures in [Intune-based deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-with-intune#publish-application) to deploy MDE to enrolled macOS devices.
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../security/defender-endpoint/images/mdatp-8-app-before.png" alt-text="The application's overview page" lightbox="images/mdatp-8-app-before.png":::
+
+1. Select By platform > macOS > Add.
+1. Choose **App type**=**macOS**, click **Select**.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../security/defender-endpoint/images/mdatp-9-app-type.png" alt-text="The specific application type" lightbox="images/mdatp-9-app-type.png":::
+
+1. Keep default values, click **Next**.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../security/defender-endpoint/images/mdatp-10-properties.png" alt-text="The application properties page" lightbox="images/mdatp-10-properties.png":::
+
+1. Add assignments, click **Next**.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../security/defender-endpoint/images/mdatp-11-assignments.png" alt-text="The Intune assignments information page" lightbox="images/mdatp-11-assignments.png":::
+
+1. Review and **Create**.
+1. You can visit **Apps** \> **By platform** \> **macOS** to see it on the list of all applications.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../security/defender-endpoint/images/mdatp-12-applications.png" alt-text="The application lists page" lightbox="images/mdatp-12-applications.png":::
+
+<!--For more information, see [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).)
+
+   > [!CAUTION]
+   > You have to create all required configuration profiles and push them to all machines, as explained above.-->
+
+
 
 <!--## Offboard macOS devices using Intune PINGING PG FOR THIS PROCEDURE
 
