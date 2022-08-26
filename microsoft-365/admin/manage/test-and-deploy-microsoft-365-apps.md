@@ -53,7 +53,7 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 
 
 > [!NOTE]
-> Is this a test deployment is a administrative tag to determine if the app is stll in testing Phase. It has no technical impact.
+> _Is this a test deployment_ is an administrative tag to determine if the app is still in testing phase. It has no technical impact.
 
 ## Find published apps for testing and full deployment
 
