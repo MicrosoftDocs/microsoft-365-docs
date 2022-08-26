@@ -38,7 +38,7 @@ Microsoft 365 uses a common virus detection engine for scanning files that users
 
 ## What happens if an infected file is uploaded to SharePoint Online?
 
-The Microsoft 365 virus detection engine scans files asynchronously (at some time after upload). If a file has not yet been scanned by the asynchronous virus detection process and a user tries to download it from the browser or from Teams, a scan on download is triggered by SharePoint before the download is allowed. **All file types are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. 
+The Microsoft 365 virus detection engine scans files asynchronously (at some time after upload). If a file has not yet been scanned by the asynchronous virus detection process, and a user tries to download the file from the browser or from Teams, a scan on download is triggered by SharePoint before the download is allowed. **All file types are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. 
 
 Here's what happens:
 
