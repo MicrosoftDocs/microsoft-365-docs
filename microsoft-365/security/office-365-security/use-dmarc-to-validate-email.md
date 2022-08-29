@@ -229,7 +229,7 @@ Microsoft 365 is configured like this because some legitimate email may fail DMA
 
 - Users add safe senders individually by using their email client.
 
-- Admins can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) or the [Tenant Allow/Block List](tenant-allow-block-list.md) to allow messages from the spoofed sender.
+- Admins can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) or the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to allow messages from the spoofed sender.
 
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
@@ -276,4 +276,4 @@ Want more information about DMARC? These resources can help.
 
 [**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
-[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)
+[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&preserve-view=true)
