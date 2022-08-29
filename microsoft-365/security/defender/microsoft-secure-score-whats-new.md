@@ -7,7 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
-ms.author: dansimp
+ms.service: microsoft-365-security
+ms.subservice: m365d
 author: dansimp
 manager: dansimp
 audience: ITPro
@@ -20,7 +21,6 @@ search.appverid:
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
-ms.technology: m365d
 ---
 
 # What's new in Microsoft Secure Score
