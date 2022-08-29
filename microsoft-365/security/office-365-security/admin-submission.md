@@ -119,7 +119,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, select the **Email attachments** tab.
 
-3. On the **Email attachments** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+3. On the **Email attachments** tab, click ![Icon of Submit to Microsoft for analysis.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
 4. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
 
@@ -161,7 +161,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 2. On the **Submissions** page, select the **URLs** tab.
 
-3. On the **URLs** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+3. On the **URLs** tab, click ![Submit to Microsoft for analysis add button.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
 4. In the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
 
@@ -436,7 +436,7 @@ Once a user submits a suspicious email to the custom mailbox, the user and admin
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
-On the **User reported messages** tab, select a message in the list, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Submit to Microsoft for analysis**, and then select one of the following values from the dropdown list:
+On the **User reported messages** tab, select a message in the list, click ![Submit to Microsoft for analysis add icon.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Submit to Microsoft for analysis**, and then select one of the following values from the dropdown list:
 
 - **Report clean**
 - **Report phishing**
