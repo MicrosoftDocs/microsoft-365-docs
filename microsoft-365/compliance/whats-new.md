@@ -57,8 +57,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data Loss Prevention
 
 - [DLP policy reference](dlp-policy-reference.md#blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business) - added new section on Blocking and notifications in SharePoint Online, and OneDrive for Business in response to customer escalations. Updated to support the public preview of sensitive services domains. Updated support for Power BI. Updated support for trainable classifiers.
-- [Configure endpoint DLP settings](dlp-configure-endpoint-settings.md#sensitive-service-domains-preview) - added new content in support of the public preview release of sensitive service domains public preview. Updated URL matching behavior.
-- [Using endpoint DLP](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) - new scenario content in support of the public preview release of sensitive services domains. Updated subscription information.
+- [Configure endpoint DLP settings](dlp-configure-endpoint-settings.md#sensitive-service-domains) - added new content in support of the public preview release of sensitive service domains public preview. Updated URL matching behavior.
+- [Using endpoint DLP](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) - new scenario content in support of the public preview release of sensitive services domains. Updated subscription information.
 
 ### eDiscovery
 
