@@ -28,7 +28,7 @@ description: Learn how to create a content center in Microsoft SharePoint Syntex
 </br>
 --->
 
-To create and manage models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
+To create and manage enterprise models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
 
    ![Select a doc library.](../media/content-understanding/content-center-page.png)
 
