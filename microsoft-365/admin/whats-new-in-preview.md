@@ -46,6 +46,38 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## July 2022
+
+### Multi-tenant billing relationships
+
+You can now create multi-tenant billing relationships with other tenants. A multi-tenant billing relationship lets you securely share your organization's billing account with other tenants, while maintaining control over your billing data.
+
+This feature is available to organizational account customers with a Microsoft Customer Agreement.
+
+For more information, see [Manage billing across multiple tenants in the Microsoft 365 admin center](https://docs.microsoft.com/en-us/microsoft-365/commerce/billing-and-payments/manage-multi-tenant-billing?view=o365-worldwide).
+
+### Microsoft 365 Experience Insights Dashboard
+
+The Experience insights dashboard shows you user experience metrics to give a fuller view of your organization’s usage in Microsoft 365. You can view data across product usage, in-product feedback, [Net Promoter Score™ (NPS) values](https://www.netpromoter.com/net-promoter-score/), and data on help content viewed across an organization. The information and data found on the dashboard can help to better understand your users and improve your user’s overall experience.
+
+:::image type="content" source="../media/experience-insights-dashboard2.png" alt-text="Screenshot: Product feedback dashboard on the NPS surveys insights tab":::
+
+You can get details on feature-specific usage and sentiment for select apps and services to help you understand how your organization is using Microsoft 365.
+
+:::image type="content" source="../media/experience-insights-teams-usage2.png" alt-text="Screenshot: Experience insights dashboard providing usage data for Microsoft Teams, such as percentage of product usage, active users (daily), and active users by feature (daily)":::
+
+With Experience insights, you can now view feedback and NPS survey responses submitted through Microsoft 365 apps and services by users in your organization.
+
+:::image type="content" source="../media/experience-insights-teams-feedback2.png" alt-text="Screenshot: Experience insights dashboard providing product feedback data for Microsoft Teams, such as in-product feedback volume and recent comments":::
+
+You can get help content data to see when users in your organization view help references on [support.microsoft.com](https://support.microsoft.com/) or our in-app help experiences. This helps to identify what articles are read frequently and what areas may need troubleshooting or training.
+
+:::image type="content" source="../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Net Promoter Score (NPS) survey data for Microsoft Teams providing information on survey response volume and recent comments":::
+
+Experience insights is available to Global admins, Global readers, and Reports reader roles.
+
+For more information, see the Microsoft Docs article: [Microsoft 365 Experience insights dashboard](https://docs.microsoft.com/en-us/microsoft-365/admin/misc/experience-insights-dashboard?view=o365-worldwide).
+
 ## May 2022
 
 ### Role based access controls (RBAC)
