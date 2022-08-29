@@ -80,7 +80,7 @@ The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP 
 
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/re55jxj]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE55JXJ]
 
 
 ## Policy Design Process
