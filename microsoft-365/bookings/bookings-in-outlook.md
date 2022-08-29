@@ -213,13 +213,13 @@ Bookings with me is in preview for all enterprise users worldwide. We're collect
 
 ### Who can access my public Bookings page?
 
-Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with.
+Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with. For more information, see [Select a meeting time in Bookings with me](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
 
 ### What is the difference between public and private meeting types?
 
 Meeting types can be public or private. Public meeting types are available to anyone that you share your Bookings page link with. Private meeting types are only available to people that you share the individual private meeting type with.  
 
-Private meeting types can also generate single use links. Single use links expire after their first booking.
+Private meeting types can also generate single use links. Single use links expire after their first booking. For more information, see [setup Bookings with me meeting types](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 
