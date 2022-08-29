@@ -3,7 +3,8 @@ title: Step 4. Evaluate Microsoft Defender for Endpoint overview, including revi
 description: Steps for the set up for a Microsoft 365 Defender trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,7 +22,6 @@ ms.collection:
   - m365solution-evalutatemtp
   - zerotrust-solution
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Step 4. Evaluate Microsoft Defender for Endpoint overview

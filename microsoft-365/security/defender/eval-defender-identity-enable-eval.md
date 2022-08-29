@@ -3,7 +3,8 @@ title: Enable the evaluation environment for Microsoft Defender for Identity
 description: Set up Microsoft Defender for Identity in Microsoft 365 Defender trial lab or pilot environment by installing & configuring the sensor, and discovering local admins on other computers.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,7 +22,6 @@ ms.collection:
   - m365solution-evalutatemtp
   - zerotrust-solution
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Enable the evaluation environment for Microsoft Defender for Identity
