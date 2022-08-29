@@ -34,7 +34,7 @@ ms.custom: api
 
 ## API description
 
-Adds or remove tag to a specific [Machine](machine.md).
+Adds or removes tag to a specific [Machine](machine.md).
 
 ## Limitations
 
