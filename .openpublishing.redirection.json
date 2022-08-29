@@ -7714,6 +7714,11 @@
       "source_path": "microsoft-365/compliance/archive-jive-data.md",
       "redirect_url": "compliance/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-ms-partner.md",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-business-premium#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium",
+      "redirect_document_id": false
     }
     ]
   }
