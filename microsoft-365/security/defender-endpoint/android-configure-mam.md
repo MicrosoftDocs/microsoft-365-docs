@@ -129,7 +129,11 @@ Select **Setting > Max allowed device threat level** in **Device Conditions** an
 
 6. Select **Continue** to log into the managed application. 
 
-### Configure privacy controls 
+## Configure privacy controls 
+>[!IMPORTANT]
+>Privacy controls on Microsoft Defender for Endpoint on MAM are in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>**If you want to try out this feature or provide feedback, please reach out to us at mdatpmobile@microsoft.com.**
+
 Admins can use the following steps to enable privacy and not collect the domain name, app details and network information as part of the alert report for corresponding threats.
 
 1. In Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
@@ -145,6 +149,9 @@ Admins can use the following steps to enable privacy and not collect the domain 
 6. Review and create the policy.
 
 ## Optional permissions 
+>[!IMPORTANT]
+>Optional Permissions on Microsoft Defender for Endpoint is in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>**If you want to try out this feature or provide feedback, please reach out to us at mdatpmobile@microsoft.com.**
 
 Microsoft Defender for Endpoint on Android enables Optional Permissions in the onboarding flow. Currently the permissions required by MDE are mandatory in the onboarding flow. With this feature, admin can deploy MDE on Android devices with MAM policies without enforcing the mandatory VPN and Accessibility Permissions during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. 
 
