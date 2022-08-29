@@ -66,19 +66,16 @@ The **Service Trust Portal** link displays the home page. It provides a quick wa
 
 Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following tiles.
 
-- **DoD** - Cloud computing security requirements for the US Department of Defense.
-- **FedRAMP** - US government program providing a standard approach to security, authorization, and monitoring.
-- **Financial Services** - Resources for the Financial Services Industry.
-- **GDPR** - How Microsoft helps support our customers on their GDPR compliance journeys.
-- **GRC Assessment** - Provides audit and assurance professionals with a common set of assessment procedures.
-- **HIPAA** - US Privacy requirements for personal health information held by covered entities.
-- **IRS 1075** - US government program providing guidance to protect the confidentiality of Federal Tax Information (FTI).
-- **ISO** - Compliance with specific information security and risk management requirements.
-- **ITAR** - US regulation that controls the manufacture, sale, and distribution of defense.
-- **NIST 800-171 (DFARS)** - US security requirements for protecting Controlled Unclassified Information in Non Federal Systems and Organizations.
-- **PCI DSS** - Validation of controls around cardholder data to reduce credit card fraud.
-- **SOC Reports** - SOC 1, 2, and 3 reports designed to build trust and confidence in Microsoft Services.
-- **Tenant Specific** – These documents are restricted by tenants.
+- **ISO/IEC** - International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC)
+- **SOC** - System and Organization Controls (SOC) 1, 2, and 3 Reports
+- **GDPR** - General Data Protection Regulation
+- **FedRAMP** - Federal Risk and Authorization Management Program
+- **PCI** - Payment Card Industry (PCI) Data Security Standards (DSS)
+- **CSA Star** - Cloud Security Alliance (CSA) Security, Trust and Assurance Registry (STAR)
+- **Australia IRAP** - Australia Information Security Registered Assesors Program (IRAP)
+- **Singapore MTCS** - Multi-Tier Cloud Security (MTCS) Singapore Standard
+- **Spain ENS** - Spain Esquema Nacional de Seguridad (ENS)
+- **Tenant Specific** – These documents are restricted by tenants
 
 Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the download page.  
 
@@ -95,13 +92,30 @@ Document download view - When viewing the available documents, you can filter th
 > [!NOTE]
 > Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
 
-### My Library
+### Reports, Whitepapers, and Artifacts
 
-This feature lets you save (or *pin*) documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated. For more information, see the [My Library](#my-library-1) section in this article.
+General documents relating to the following categories:
 
-If a document is part of a series, you will be subscribed to the series and will receive notifications when there is an update to that series. You can view the individual documents and Series documents that you have subscribed to, in two sections as shown in the following graphic.
+- **BCP and DR** - Business Continuity and Disaster Recovery
+- **Pen Test and Security Assessments** - Attestation of Penetration tests and security assessments conducted by third parties
+- **Privacy and Data Protection** - Privacy and Data Protection Resources
+- **FAQ and Whitepapers** - Whitepapers and answers to frequently asked questions
 
-:::image type="content" source="../media/stp-my-library.png" alt-text="My Library displays the documents you have subscribed to in two sections.":::
+### Industry and Regional Resources
+
+Documents the apply to the following industries and regions:
+
+- **Financial Services** - Resources elaborating regulatory compliance guidance for FSI (by country)
+- **Healthcare and Life Sciences** - Capabilities offered by Microsoft for Healthcare Industry
+- **Media and Entertainment** - Media and Entertainment Industry Resources
+- **United States Government** - Resources exclusively for US Government customers
+- **Regional Resources** - Documents describing compliance of Microsoft's online services with various regional policies and regulations
+
+### Resources for your Organization
+
+Documents applying to your organization (restricted by tenant).
+
+- **Resources for your Organization** - Documents based on your organization’s subscription and permissions
 
 ### All Documents
 
@@ -120,6 +134,8 @@ By default, the search returns document results. You can filter the results by u
 ## My Library
 
 Use the My Library feature to add documents and resources on the Service Trust Portal to your My Library page. This lets you access documents that are relevant to you in a single place.  To add a document to your My Library, click the **...** menu to the right of a document and then select **Save to library**. You can add multiple documents to your My Library by clicking the checkbox next to one or more documents, and then clicking **Save to library** at the top of the page.
+
+:::image type="content" source="../media/stp-my-library.png" alt-text="My Library displays the documents you have subscribed to in two sections.":::
 
 Additionally, the notifications feature lets you configure your My Library so that an email message is sent to you whenever Microsoft updates a document that you've added to your My Library. To set up notifications, go to your My Library and click **Notification Settings**. You can choose the frequency of notifications and specify an email address in your organization to send notifications to. Email notifications include links to the documents that have been updated and a brief description of the update.
 
