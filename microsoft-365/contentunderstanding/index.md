@@ -93,9 +93,6 @@ The resources in this section help you learn how to choose, create, and configur
 |Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
 |Create and train models locally on a SharePoint site |[Create a model on a local SharePoint site](./create-local-model.md)|
 |Use trained models in other content centers |[Publish and discover document understanding models](./model-discovery.md)|
-|Automate content assembly using a modern template |[Create documents using content assembly](./content-assembly.md)|
-|Use SharePoint Syntex together with Power Automate to generate documents |[Automate document generation with Power Automate](./automate-document-generation.md)|
-|Perform metadata-based queries on document libraries|[Search for metadata in document libraries](./metadata-search.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|
 |Learn how to see data about your models|[Model usage analytics](./model-usage-analytics.md)|
 |Learn how to use accessibility mode when training a model|[SharePoint Syntex accessibility mode](./accessibility-mode.md)|
@@ -108,6 +105,26 @@ The resources in this section help you learn how to choose, create, and configur
 |Use a trained model to extract information from invoices |[Use the invoices model](./prebuilt-model-invoice.md)|
 |Use a trained model to extract information from receipts |[Use the receipts model](./prebuilt-model-receipt.md)|
 
+## Content assembly
+
+Use SharePoint Syntex to automatically generate repetitive business documents, such as contracts, statements of work, service agreements, and correspondence. 
+
+| If you're looking for this information | Go to this resource |
+|:-----|:-----|
+|Automate content assembly using a modern template |[Create documents using content assembly](./content-assembly.md)|
+|Use SharePoint Syntex together with Power Automate to generate documents |[Automate document generation with Power Automate](./automate-document-generation.md)|
+
+## Managed metadata services
+
+A SharePoint Syntex license gives your users premium content services that give you more functionality in your Microsoft 365 environment. The resources in this section give you more details about these features and how to use them.
+
+| If you're looking for this information | Go to this resource |
+|:-----|:-----|
+|Perform metadata-based queries on document libraries|[Search for metadata in document libraries](./metadata-search.md)|
+|Learn about importing a data set using Simple Knowledge Organization System based format|[Import a term set using a SKOS-based format](./import-term-set-skos.md)<br><br>[SKOS format reference for SharePoint taxonomy](./skos-format-reference.md)<br><br>|
+|Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](./push-content-type-to-hub.md)|
+|Learn about the term store reports that are available to you|[Term store reports](./term-store-analytics.md)|
+
 ## PowerShell for SharePoint Syntex
 
 PowerShell lets you manage your SharePoint scenarios, such as exporting and importing models and publishing models to document libraries. 
@@ -116,16 +133,6 @@ PowerShell lets you manage your SharePoint scenarios, such as exporting and impo
 |:-----|:-----|
 |Use PowerShell to manage SharePoint Syntex|[Manage SharePoint Syntex with PowerShell](./powershell-syntex-intro.md)|
 
-## Premium services
-
-A SharePoint Syntex license gives your users premium content services that give you more functionality in your Microsoft 365 environment. The resources in this section give you more details about these features and how to use them.
-
-| If you're looking for this information | Go to this resource |
-|:-----|:-----|
-|Learn about importing a data set using Simple Knowledge Organization System based format|[Import a term set using a SKOS-based format](./import-term-set-skos.md)<br><br>[SKOS format reference for SharePoint taxonomy](./skos-format-reference.md)<br><br>|
-|Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](./push-content-type-to-hub.md)|
-|Learn about the term store reports that are available to you|[Term store reports](./term-store-analytics.md)|
-
 ## Extensibility
 
 Use REST APIs to create a document understanding model, apply or remove the model to one or more libraries, and obtain or update information about the model.
@@ -133,7 +140,8 @@ Use REST APIs to create a document understanding model, apply or remove the mode
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Use REST APIs for document understanding models|[SharePoint Syntex document understanding model REST API](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|
-<br><br>
+
+<br>
 > [!div class="nextstepaction"]
 > [Learn more about SharePoint Syntex](syntex-overview.md)
-<br><br>
+<br>
