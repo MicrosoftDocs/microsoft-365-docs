@@ -45,6 +45,8 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 Once your application is approved, you'll start receiving endpoint attack notifications whenever Threat Experts detect a threat to your environment.
 
 ## Subscribe to Microsoft Threat Experts - Experts on Demand
+> [!NOTE]
+> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](https://docs.microsoft.com/en-us/services-hub/)![image](https://user-images.githubusercontent.com/11750124/187275203-87c65c03-d5c5-4fd0-a045-f795f6976336.png)
 
 Contact your Microsoft representative to subscribe to Experts on Demand.  See [Configure Microsoft Threat Experts capabilities](./configure-microsoft-threat-experts.md) for full details.
 
