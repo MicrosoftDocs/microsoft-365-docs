@@ -56,6 +56,10 @@ A profile determines the level of protection. The following profiles are availab
   - **Groups**:
     - Members of the specified distribution groups or mail-enabled security groups.
     - The specified Microsoft 365 Groups.
+
+    > [!NOTE]
+    >  Dynamic distribution groups are not supported.
+    
   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
@@ -161,8 +165,13 @@ You might want to apply the **Standard** or **Strict** preset security policies 
    - **All recipients**
    - **Specific recipients**:
      - **Users**
-     - **Groups**
-     - **Domains**
+     - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
+
+       Dynamic distribution groups are not supported.
+
+   - **Domains**
 
      Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -215,7 +224,7 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
    When you're finished, click **Next**.
 
-8. On the **Add trusted email addresses and domains to not flag as impersonation** page, enter the sender email addresses and domains that you want to excluded from impersonation protection. Messages from these senders will never be flagged as an impersonation attack, but the senders are still subject to scanning by other filters in EOP and Defender for Office 365.
+8. On the **Add trusted email addresses and domains to not flag as impersonation** page, enter the sender email addresses and domains that you want excluded from impersonation protection. Messages from these senders will never be flagged as an impersonation attack, but the senders are still subject to scanning by other filters in EOP and Defender for Office 365.
 
    Enter the email address or domain in the box, and then click **Add**. Repeat this step as many times as necessary.
 
@@ -243,7 +252,12 @@ Therefore, we typically don't recommend exceptions to the **Built-in protection*
 
 3. On the **Exclude from Built-in protection** flyout that appears, identify the internal recipients that are excluded from the built-in Safe Links and Safe Attachments protection:
    - **Users**
-   - **Groups**
+   - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
+
+     Dynamic distribution groups are not supported.
+
    - **Domains**
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove exclusions from Built-in protection icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
@@ -542,7 +556,7 @@ Even if there are no recipient conditions or exceptions applied to a preset secu
   Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
   ```
 
-  This example configures exceptions from the Defender for Office 365 protections in the Strict preset security for the specified security operations (SecOps) mailboxes.
+  This example configures exceptions from the Defender for Office 365 protections in the Strict preset security policy for the specified security operations (SecOps) mailboxes.
 
   ```powershell
   Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"

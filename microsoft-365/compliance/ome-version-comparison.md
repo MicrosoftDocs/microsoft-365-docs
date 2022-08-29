@@ -100,7 +100,7 @@ Users can manually send mail that is encrypted with Microsoft Purview Message En
 
 ## Migrate from legacy OME to Microsoft Purview Message Encryption
 
-Even though both versions can coexist, we highly recommend that you edit your old mail flow rules that use the rule action **Apply the previous version of OME** to use Microsoft Purview Message Encryption. Update these rules to use the mail flow rule action **Apply Office 365 Message Encryption and rights protection**. For instructions, see [Define mail flow rules to encrypt email messages](define-mail-flow-rules-to-encrypt-email.md).
+Even though both versions can coexist, we highly recommend that you edit your old mail flow rules that use the rule action **Apply the previous version of OME** to use Microsoft Purview Message Encryption. Update these rules to use the mail flow rule action **Apply Office 365 Message Encryption and rights protection**, select "Encrypt" in the RMS template list. For instructions, see [Define mail flow rules to encrypt email messages](define-mail-flow-rules-to-encrypt-email.md).
 
 ## Get started with OME
 
