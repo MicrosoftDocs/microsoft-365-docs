@@ -18,10 +18,10 @@
               href: model-types-overview.md 
             - name: Requirements and limitations 
               href: requirements-and-limitations.md  
+            - name: Create a model
+              href: create-syntex-model.md
             - name: Local models 
               href: create-local-model.md 
-            - name: Create a model
-              href: create-syntex-model.md             
             - name: Manage your model
               items:
                 - name: Discover and apply a model
