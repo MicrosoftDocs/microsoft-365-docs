@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
+      "redirect_url": "defender/defender-experts-for-hunting",
+      "redirect_document_id": false  
+    },	  
+    {
       "source_path": "microsoft-365/admin/misc/power-bi-in-your-organization.md",
       "redirect_url": "https://docs.microsoft.com/power-bi/enterprise/service-admin-org-subscription",
       "redirect_document_id": false
@@ -17,12 +22,12 @@
     },
     {
       "source_path": "microsoft-365/admin/manage/show-hide-new-features.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/whats-new-in-preview",
+      "redirect_url": "/microsoft-365/admin/whats-new-in-preview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/security-guide.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/business-premium/m365bp-secure-users#download-the-digital-threats-guide",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-users#download-the-digital-threats-guide",
       "redirect_document_id": false
     },
     {
@@ -3427,7 +3432,7 @@
     },
     {
       "source_path": "microsoft-365/enterprise/microsoft-365-technology-control.md",
-      "redirect_url": "/compliance/assurance/assurance-technology-controls",
+      "redirect_url": "/compliance/assurance/assurance-microsoft-365-account-management",
       "redirect_document_id": false
     },
     {
@@ -4688,6 +4693,26 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-machinesecuritystates-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-cvekbmap-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-kbinfo-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-machinegroups-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
       "redirect_document_id": false
     },
     {
@@ -7611,7 +7636,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365//admin/setup/secure-win-10-pcs.md",
+      "source_path": "microsoft-365/admin/setup/secure-win-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
@@ -7644,6 +7669,56 @@
       "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
       "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/apps-health.md",
+      "redirect_url": "/microsoft-365/admin/adoption/apps-health",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/communication.md",
+      "redirect_url": "/microsoft-365/admin/adoption/communication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/content-collaboration.md",
+      "redirect_url": "/microsoft-365/admin/adoption/content-collaboration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/meetings.md",
+      "redirect_url": "/microsoft-365/admin/adoption/meetings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/mobility.md",
+      "redirect_url": "/microsoft-365/admin/adoption/mobility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/privacy.md",
+      "redirect_url": "/microsoft-365/admin/adoption/privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/productivity-score.md",
+      "redirect_url": "/microsoft-365/admin/adoption/adoption-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/teamwork.md",
+      "redirect_url": "/microsoft-365/admin/adoption/teamwork",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/archive-jive-data.md",
+      "redirect_url": "compliance/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-ms-partner.md",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-business-premium#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium",
+      "redirect_document_id": false
     }
-  ]
-}
+    ]
+  }
