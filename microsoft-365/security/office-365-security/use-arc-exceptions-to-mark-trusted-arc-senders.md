@@ -32,7 +32,7 @@ Email authentication mechanisms like [SPF](set-up-spf-in-office-365-to-help-prev
 
 ## Authenticated Received Chain (ARC) in Microsoft 365 Defender for Office
 
-Services that modify content during transport of the message before delivery to your organization, can invalidate the DKIM email signature and affect the authentication of the message. When these intermediary services, perform such actions, they can use ARC can be used to provide details of the original authentication before the modifications occurred, which your organization can then trust to help with authenticating the message.  
+Services that modify message content in transit before delivery to your organization can invalidate DKIM email signatures and affect authentication of the message. When these intermediary services perform such actions, they can use ARC to provide details of the original authentication before the modifications occurred. Your organization can then trust these details to help with authenticating the message.  
 
 **Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** Trusted ARC sealers allows Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
@@ -55,9 +55,9 @@ from being sent to *Junk* due to authentication failures.
 
 Trusted ARC sealers in Microsoft 365 Defender portal shows all the ARC sealers acknowledged by and added to your tenant.
 
-**To add a new Trusted ARC sealer in the admin portal:**
+**To add a new Trusted ARC sealer in the Microsoft 365 Defender portal:**
 
-1. Navigate to the [email authentication settings](https://security.microsoft.com/authentication?viewid=ARC) page.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Email Authentication Settings** in the **Rules** section \> **ARC** . To go directly to the ARC page, use [email authentication settings](https://security.microsoft.com/authentication?viewid=ARC).
 
 2. If this is the first time you've added a trusted ARC sealer, click the Add button.
 3. Add trusted ARC sealers in the textbox shown.

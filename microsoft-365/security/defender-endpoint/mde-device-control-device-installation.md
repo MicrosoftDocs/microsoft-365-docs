@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,7 +24,7 @@ ms.technology: mde
 
 
 > [!NOTE]
-> If you are manage removable storage, See [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
+> If you want to manage removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Microsoft Defender for Endpoint Device Control Device Installation enables you to do the following task:
 

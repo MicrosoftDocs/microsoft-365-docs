@@ -23,14 +23,6 @@ description: "Estonia Personal Identification Code sensitive information type en
 
 # Estonia personal identification code
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 11 digits without spaces and delimiters

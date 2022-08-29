@@ -11,6 +11,7 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -38,7 +39,7 @@ These instructions apply to the new unified solution and installer (MSI) package
 **If you are using Microsoft Defender for Cloud to perform deployment, you can automate installation and upgrade. See [Defender for Servers Plan 2 now integrates with MDE unified solution](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
 
 > [!NOTE]
-> Operating system upgrades with Microsoft Defender for Endpoint installed are not supported. Please offboard then uninstall before proceeding with an upgrade.
+> Operating system upgrades with Microsoft Defender for Endpoint installed are not supported. Please offboard and uninstall, upgrade the operating system, then proceed with installation.
 
 > [!NOTE]
 > Full Microsoft Endpoint Configuration Manager automation and integration to perform an automated upgrade will be available in a later release of MECM. From the 2107 release with the latest hotfix rollup, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in Microsoft Endpoint Configuration Manager to automate manual upgrade steps; methods for which are described below.
@@ -69,7 +70,7 @@ For instructions on how to migrate using Microsoft Endpoint Configuration Manage
 
 ## If you are running a non-Microsoft antivirus solution
 
-1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016) ensuring [prerequisites](configure-server-endpoints.md#prerequisites) have been met.
+1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016) ensuring [prerequisites](configure-server-endpoints.md#prerequisites) have been met. For more information on the prerequisites that have to be met, see [Prerequisites for Windows Server 2016](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Ensure third-party antivirus management no longer pushes antivirus agents to these machines.*
 3. Author your policies for the protection capabilities in Microsoft Defender for Endpoint and target those to the machine in the tool of your choice.*
 4. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
