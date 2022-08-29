@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
- ms.subservice: mdo
+ms.subservice: mdo
 ---
 
 # Use Microsoft Defender for Office 365 with SharePoint Online

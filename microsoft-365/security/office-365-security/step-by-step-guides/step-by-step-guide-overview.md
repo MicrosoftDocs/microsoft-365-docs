@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: overview
- ms.subservice: mdo
+ms.subservice: mdo
 ---
 
 # Welcome to the Microsoft Defender for Office 365 step-by-step guides
