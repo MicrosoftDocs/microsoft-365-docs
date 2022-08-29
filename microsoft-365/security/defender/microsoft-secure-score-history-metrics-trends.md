@@ -2,7 +2,8 @@
 title: Track your Microsoft Secure Score history and meet goals
 description: Gain insights into activity that has affected your Microsoft Secure Score. Discover trends and set goals.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,7 +21,6 @@ search.appverid:
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
-ms.technology: m365d
 ---
 
 # Track your Microsoft Secure Score history and meet goals

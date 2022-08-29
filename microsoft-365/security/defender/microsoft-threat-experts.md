@@ -5,7 +5,8 @@ description: Microsoft Threat Experts provides an extra layer of expertise to Mi
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
 search.product: Windows 10
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +16,6 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.technology: m365d
 ms.collection: 
 - M365-security-compliance
 - m365initiative-m365-defender
