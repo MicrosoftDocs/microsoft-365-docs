@@ -17,7 +17,7 @@ ms.subservice: m365d
 ms.custom: api
 ---
 
-# Add or Remove Machine Tags API
+# Add or remove machine tags API
 
 **Applies to:**
 
@@ -44,7 +44,7 @@ Adds or remove tag to a specific [Machine](machine.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md).
 
 Permission type|Permission|Permission display name
 :---|:---|:---
@@ -54,8 +54,8 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Manage security setting'. For more  (See [Create and manage roles](user-roles.md) for more information)
-> - User needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'Manage security setting'. For more (See [Create and manage roles](user-roles.md) for more information).
+> - The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information).
 
 ## HTTP request
 
@@ -83,9 +83,7 @@ Action|Enum|Add or Remove. Allowed values are: 'Add' or 'Remove'. **Required**.
 
 If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
 
-## Example
-
-### Request
+## Example Request
 
 Here is an example of a request that adds machine tag.
 
@@ -100,4 +98,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
+To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
