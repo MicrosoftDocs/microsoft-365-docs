@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/30/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -136,6 +136,14 @@ See the following for more information:
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+### Where can I find the scan results?
+
+To see the Microsoft Defender Offline scan results:
+
+1. Select **Start**, and then select **Settings**  > **Update & Security**  > **Windows Security**  > **Virus & threat protection**.
+
+2. On the **Virus & threat protection** screen, under **Current threats**, select **Scan options**, and then select **Protection history**.
 
 ## Related articles
 
