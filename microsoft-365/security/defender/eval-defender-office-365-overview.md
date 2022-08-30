@@ -3,7 +3,8 @@ title: Step 3. Evaluate Microsoft Defender for Office 365 overview
 description: Use this overview to learn the steps to set up an MDO pilot, including requirements, enabling or activating the eval, and setting up the pilot.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,7 +22,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Step 3. Enable and pilot Microsoft Defender for Office 365

@@ -3,7 +3,8 @@ title: Evaluate and pilot Microsoft 365 Defender, an XDR solution
 description: What is XDR security? How can you evaluate a Microsoft XDR in Microsoft 365 Defender? Use this blog series to plan your Microsoft 365 Defender trial lab or pilot environment to test and pilot a security solution designed to protect devices, identity, data, and applications. Start your XDR cyber security journey here and take that test to production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,7 +23,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Evaluate and pilot Microsoft 365 Defender

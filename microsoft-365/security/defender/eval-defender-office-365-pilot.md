@@ -3,7 +3,8 @@ title: Pilot Microsoft Defender for Office 365, use the evaluation in your produ
 description: Steps to pilot your Evaluation with groups of active and existing users in order to properly test the features of Microsoft Defender for Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -23,7 +24,6 @@ ms.collection:
   - highpri
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.technology: m365d
 ---
 
 # Pilot Microsoft Defender for Office 365
