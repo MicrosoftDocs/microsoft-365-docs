@@ -79,8 +79,12 @@ The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP 
 - *Example 2 Contoso needs to block all emails that contain a password protected file OR a zip document file extension ('zip' or '7z'), but do NOT block the email if the recipient is in the contoso.com domain OR the fabrikam.com domain, OR the sender is a member of the Contoso HR group.*
 
 
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE55JXJ]
+
+
+> [!IMPORTANT]
+> - The use of the NOT condition in a nested group replaces the **Exceptions** functionality.
+> - You need to create groups in order to use multiple operators as shown in the video.
 
 
 ## Policy Design Process
