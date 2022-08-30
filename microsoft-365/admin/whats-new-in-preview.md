@@ -54,7 +54,7 @@ You can now create multi-tenant billing relationships with other tenants. A mult
 
 This feature is available to organizational account customers with a Microsoft Customer Agreement.
 
-For more information, see [Manage billing across multiple tenants in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/manage-multi-tenant-billing).
+For more information, see [Manage billing across multiple tenants in the Microsoft 365 admin center](../commerce/billing-and-payments/manage-multi-tenant-billing.md).
 
 ### Microsoft 365 Experience Insights Dashboard
 
@@ -66,7 +66,7 @@ You can get details on feature-specific usage and sentiment for select apps and 
 
 :::image type="content" source="../media/experience-insights-teams-usage2.png" alt-text="Screenshot: Experience insights dashboard providing usage data for Microsoft Teams, such as percentage of product usage, active users (daily), and active users by feature (daily)":::
 
-With Experience insights, you can now view feedback and NPS survey responses submitted through Microsoft 365 apps and services by users in your organization.
+When users in your organization submit feedback and NPS survey responses through Microsoft 365 apps and services, you can now view this information through Experience insights.
 
 :::image type="content" source="../media/experience-insights-teams-feedback2.png" alt-text="Screenshot: Experience insights dashboard providing product feedback data for Microsoft Teams, such as in-product feedback volume and recent comments":::
 
@@ -76,7 +76,7 @@ You can get help content data to see when users in your organization view help r
 
 Experience insights is available to Global admins, Global readers, and Reports reader roles.
 
-For more information, see the Microsoft Docs article: [Microsoft 365 Experience insights dashboard](https://docs.microsoft.com/microsoft-365/admin/misc/experience-insights-dashboard).
+For more information, see the Microsoft Docs article: [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
 ## May 2022
 
