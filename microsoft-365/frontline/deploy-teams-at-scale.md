@@ -143,13 +143,13 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
     New-CsBatchTeamsDeployment -TeamsFilePath "Your CSV file path" -UsersFilePath "Your CSV file path" -UsersToNotify "Email addresses" 
     ```
 
-    For example:
+    The recipients will receive email notifications about deployment status. The email contains the orchestration ID for the batch you submitted and any errors that may have occurred.
+
+    Here'an example:
 
     ```powershell
     New-CsBatchTeamsDeployment -TeamsFilePath "C:\dscale\Teams.csv" -UsersFilePath "C:\dscale\Users.csv" -UsersToNotify "adminteams@contoso.com,adelev@contoso.com"
     ```
-
-    The recipients will receive email notifications about deployment status. The email contains the orchestration ID for the batch you submitted and any errors that may have occurred.
 
 1. Run the following to check the status of the batch you submitted.
 
