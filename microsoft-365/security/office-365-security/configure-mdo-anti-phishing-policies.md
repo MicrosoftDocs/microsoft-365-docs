@@ -15,8 +15,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365

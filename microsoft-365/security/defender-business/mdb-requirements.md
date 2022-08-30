@@ -17,6 +17,7 @@ ms.collection:
  - SMB
  - M365-security-compliance
  - m365solution-mdb-setup
+ - highpri
 ---
 
 # Microsoft Defender for Business requirements
