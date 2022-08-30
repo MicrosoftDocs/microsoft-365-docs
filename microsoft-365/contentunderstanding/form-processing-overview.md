@@ -23,7 +23,7 @@ Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/f
 
 You can use AI Builder document processing to create **Extract by layout** models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, such as forms and invoices.
 
-Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, SharePoint Syntex automates this process. 
+Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key-value pairs, and tables from your documents, SharePoint Syntex automates this process. 
 
 > [!NOTE]
 > For more ideas about how to use these models in your organization, see [Get started driving adoption](adoption-getstarted.md) and [Scenarios and use cases](adoption-scenarios.md).
