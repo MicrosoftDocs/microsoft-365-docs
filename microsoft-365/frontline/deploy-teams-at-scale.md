@@ -38,6 +38,8 @@ This article walks you through how to deploy Teams at scale.
 
 ## Set up and deploy your teams
 
+:::image type="content" source="media/deploy-teams-at-scale.png" alt-text="Overview of steps for how to deploy Teams at scale.":::
+
 > [!NOTE]
 > Before you deploy your teams, make sure that all teams owners have a Teams license.
 
