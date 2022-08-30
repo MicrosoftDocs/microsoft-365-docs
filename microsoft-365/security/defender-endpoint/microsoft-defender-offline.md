@@ -141,7 +141,7 @@ See the following for more information:
 
 To see the Microsoft Defender Offline scan results:
 
-Select **Start** , and then select **Settings**  > **Update & Security**  > **Windows Security**  > **Virus & threat protection** .
+1. Select **Start**, and then select **Settings**  > **Update & Security**  > **Windows Security**  > **Virus & threat protection**.
 
 On the **Virus & threat protection** screen, under **Current threats**, select **Scan** options, and then select **Protection history** .
 
