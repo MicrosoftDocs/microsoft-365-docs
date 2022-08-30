@@ -17,6 +17,8 @@ description: Learn how and why to rename an extractor in Microsoft SharePoint Sy
 
 # Rename an extractor in Microsoft SharePoint Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+
 At some point, you might need to rename an extractor if you want to refer to an extracted data field by a different name. For example, your organization decides to make changes to their contract documents, and refers to “customers” as “clients” in their documents. If you were extracting a “Customer” field in your model, you can choose to rename it to “Client.”
 
 When you sync your updated model to your SharePoint document library, you will see a new “Client” column in your document library view. Your view will retain the “Customer” column for past activity, but will update the new “Client” column for all new documents that are processed by your model. 
@@ -47,16 +49,7 @@ Follow these steps to rename an entity extractor.
 5. Select **Rename**.
 
 ## See also
+
 [Create an extractor](create-an-extractor.md)
 
-[Create a classifier](create-a-classifier.md)
 
-[Rename a model](rename-a-model.md)
-
-[Explanation types](explanation-types-overview.md)
-
-[Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
-
-[Document Understanding overview](document-understanding-overview.md)
-
-[Apply a model](apply-a-model.md) 
