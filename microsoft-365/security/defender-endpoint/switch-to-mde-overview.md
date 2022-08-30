@@ -15,9 +15,8 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
 - m365initiative-defender-endpoint
+- highpri
 ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
