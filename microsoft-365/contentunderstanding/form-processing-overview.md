@@ -17,7 +17,7 @@ description: Learn how to use AI Builder to create models in Microsoft SharePoin
 
 # Overview of extraction by layout in Microsoft SharePoint Syntex
 
-Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/overview) *document processing* (formerly known as form processing) to create models within SharePoint document libraries.
+Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) *document processing* (formerly known as form processing) to create models within SharePoint document libraries.
 
  ![AI Builder.](../media/content-understanding/ai-builder.png)
 
