@@ -27,8 +27,8 @@ For example, instead of manually adding all the variations for *date*, you can u
 
 The explanation library includes commonly used *phrase list* explanations, including:
 
-- Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").
-- Date (numeric): Calendar dates, all formats. Includes numbers (for example, 1-11-2020).
+- Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2022").
+- Date (numeric): Calendar dates, all formats. Includes numbers (for example, 1-11-2022).
 - Time: 12-hour and 24-hour formats.
 - Number: Positive and negative numbers up to two decimals.
 - Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, or 11.11%.
