@@ -72,6 +72,8 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
+  
+  For more information, see [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy)
 
 ## Turn Bookings with me on or off
 
