@@ -523,7 +523,11 @@
 ####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
-###### [Automated Investigation]()
+###### [Browser extensions]()
+####### [Export broswer extenstions assessment](get-assessment-browser-extensions.md)
+####### [Get browser extenstions permisson information](get-browser-extensions-permission-info.md)
+
+###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)
