@@ -69,6 +69,15 @@ Using the Microsoft 365 Defender Add-on for Splunk that supports:
 
 For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
 
+### Datadog
+
+Microsoft 365 Defender for Endpoint integration with Datadog supports:
+
+- Ingesting Microsoft Defender for Endpoint alerts and incidents
+- Dashboards that enable monitoring metrics across endpoints, threats and vulnerabilities, and software
+
+For more information on the integration, see [Datadog Marketplace](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support).
+
 ### Micro Focus ArcSight
 
 The new SmartConnector for Microsoft 365 Defender ingests incidents that contain alerts from all Microsoft 365 Defender products - including from Microsoft Defender for Endpoint - into ArcSight and maps these onto its Common Event Framework (CEF).

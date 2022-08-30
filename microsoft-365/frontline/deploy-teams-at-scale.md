@@ -123,7 +123,7 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
     ```
 
     If you get an error message, you're already set. Go to the next step.
-1. Download  and install the [latest version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams).
+1. Download  and install the [latest preview version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams). You must be running version 4.3.1 (preview) or a later preview version.  
 
 1. Run the following to connect to Teams.
 
@@ -139,7 +139,7 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
     Get-Command -Module MicrosoftTeams
     ```
 
-    Verify that ```New-CsBatchTeamsDeployment``` and ```Get-CsBatchTeamsDeployment``` are listed.
+    Verify that ```New-CsBatchTeamsDeployment``` and ```Get-CsBatchTeamsDeploymentStatus``` are listed.
 
 1. Run the following to deploy a batch of teams. In this command, you specify the path to your CSV files and the email addresses of up to five recipients to notify about this deployment.
 

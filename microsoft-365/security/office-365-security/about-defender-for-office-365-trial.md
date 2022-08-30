@@ -6,8 +6,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid:
 - MET150

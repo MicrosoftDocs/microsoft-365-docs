@@ -104,7 +104,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| workspaces | data-in-use | No|
+|Power BI| workspaces | data-in-use | No|
 
 If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
@@ -127,11 +127,14 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |Teams Chat and Channel messages | Yes| No| No|
 |Devices |Yes | Yes|  No|
 |Microsoft Defender for Cloud Apps | Yes| Yes| Yes|
-|On-Premises repositories| Yes| Yes| No|
-|PowerBI|Yes | Yes| No|
+|On-premises repositories| Yes| Yes| No|
+|Power BI|Yes | Yes| No|
 
 > [!NOTE]
-> DLP supports detecting sensitivity labels on emails and attachments See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP supports (in preview) using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, SharePoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
+
+> [!NOTE]
+> DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
 
@@ -148,7 +151,7 @@ Rules are the business logic of DLP policies. They consist of:
 - [**Conditions**](#conditions) that when matched, trigger the policy
 - [**Exceptions**](#exceptions) to the conditions
 - [**Actions**](#actions) to take when the policy is triggered
-- [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they are doing something that triggers a policy and help educate them on how your org wants sensitive information treated
+- [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
 - [**Incident Reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
 - [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
@@ -159,7 +162,7 @@ Rules are the business logic of DLP policies. They consist of:
 
 #### Hosted service workloads
 
-For the hosted service workloads, like Exchange Online, SharePoint Online and OneDrive for Business, each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
+For the hosted service workloads, like Exchange Online, SharePoint Online and OneDrive for Business, each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.
   
 ![Rules in priority order](../media/dlp-rules-in-priority-order.png)
 
@@ -167,7 +170,7 @@ When content is evaluated against rules, the rules are processed in priority ord
   
 - Rule 1: only notifies users
 - Rule 2: notifies users, restricts access, and allows user overrides
-- *Rule 3: notifies users, restricts access, and does not allow user overrides*
+- *Rule 3: notifies users, restricts access, and doesn't allow user overrides*
 - Rule 4: restricts access
 
 Rules 1, 2, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the most restrictive rule is applied.
@@ -182,20 +185,20 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since its the most restrictive.
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since it's the most restrictive.
 
-- Rule 1: only audits all activity 
+- Rule 1: only audits all activity
 - *Rule 2: blocks all activity*
 - Rule 3: blocks all activity with option for end user to override
 
-In the below example, Rule 1 takes precedence over the other matching rules since its the most restrictive.
+In the below example, Rule 1 takes precedence over the other matching rules since it's the most restrictive.
 
-- *Rule 1: blocks activity and does not allow user override*
+- *Rule 1: blocks activity and doesn't allow user override*
 - Rule 2: blocks activity and allows user overrides
 - Rule 3: only audits all activity
 - Rule 4: no enforcement
 
-All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
+All the other rules are evaluated but their actions aren't enforced. Audit logs will show the most restrictive rule applied on the file. If there's more than one rule that matches and they're equally restrictive, then policy and rule priority governs which rule would be applied on the file.
 
 ### Conditions
 
@@ -211,15 +214,16 @@ Conditions are inclusive and are where you define what you want the rule to look
 - [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [sensitivity labels](sensitivity-labels.md)
 - [retention labels](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+- [Trainable Classifiers](classifier-learn-about.md) (in preview) 
 
-depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to. 
+depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to.
 
-The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick. 
+The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick.
 
-SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
-> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 #### Condition context
 
@@ -303,7 +307,7 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - Content contains
-- (preview) The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
+- The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - File extension is
 - File type is
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -407,7 +411,7 @@ The actions that are available in a rule are dependent on the locations that hav
 #### Devices actions
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (preview) Audit or restricted activities when users acceses sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
+- Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - Audit or restrict activities on Windows devices
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
@@ -645,8 +649,8 @@ This table shows the DLP blocking and notification behavior for policies that ar
 |---------|---------|---------|---------|---------|
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |No actions are configured         |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |- **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** set to **On** </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**         |- Notifications will be sent only when a file is shared with an external user and an external user access the file.  |
 |- **Content is shared from Microsoft 365** </br>- **only with people inside my organization**        | No actions are configured         |-  **User notifications** set to **On**   </br>- **Notify users in Office 365 service with a policy tip** is selected  </br>- **Notify the user who sent, shared, or last modified the content** is selected    |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |- Notifications are sent when a file is uploaded |
-|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiveing email or accessing shared SharePoint, OndeDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it is uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
-|- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiveing email or accessing shared SharePoint, OndeDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it is uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
 
 

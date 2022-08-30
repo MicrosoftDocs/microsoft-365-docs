@@ -68,7 +68,7 @@ Contains general AuditD configuration and will display:
 
 - **Auditctl -l** output  
 
-    - Will show what rules are currently loaded into the kernel (which may be different that what exists on disk in “/etc/auditd/rules.d/mdatp.rules”). 
+    - Will show what rules are currently loaded into the kernel (which may be different that what exists on disk in "/etc/auditd/rules.d/mdatp.rules"). 
     
     - Will show which rules are related to Microsoft Defender for Endpoint. 
     
@@ -110,7 +110,7 @@ AuditD exclusion – support tool syntax help:
 
 Examples: 
 
-If “`/opt/app/bin/app`” writes to “`/opt/app/cfg/logs/1234.log`”, then you can use the support tool to exclude with various options: 
+If "`/opt/app/bin/app`" writes to "`/opt/app/cfg/logs/1234.log`", then you can use the support tool to exclude with various options: 
 
 `-e /opt/app/bin/app`
 

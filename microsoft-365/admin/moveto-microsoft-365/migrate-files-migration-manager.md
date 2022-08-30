@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: 'o365-worldwide'
