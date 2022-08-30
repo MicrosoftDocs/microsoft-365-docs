@@ -15,6 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-overview
+  - highpri
 ms.topic: article
 ms.technology: mde
 ---

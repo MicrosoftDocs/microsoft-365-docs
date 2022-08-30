@@ -14,6 +14,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
   - m365solution-ransomware
+  - highpri
 description: Microsoft 365 admins can learn how to recover from a ransomware attack.
 ms.technology: mdo
 ms.prod: m365-security
