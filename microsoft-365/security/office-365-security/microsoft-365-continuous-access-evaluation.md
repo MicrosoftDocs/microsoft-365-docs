@@ -4,7 +4,7 @@ description: Describes how conditional access evaluation for Microsoft 365 and A
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -17,7 +17,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-identitydevice
   - m365solution-scenario
-ms.technology: mdo
+ms.subservice: mdo
 ---
 # Continuous access evaluation for Microsoft 365
 

@@ -20,8 +20,8 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Threat investigation and response

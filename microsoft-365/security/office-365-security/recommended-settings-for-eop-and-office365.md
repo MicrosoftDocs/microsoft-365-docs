@@ -17,8 +17,8 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
