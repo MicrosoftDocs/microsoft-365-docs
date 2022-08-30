@@ -39,7 +39,7 @@ For example, if you need two blocks of entries per user SID to "Allow" / "Audit 
 
 1. The most common reason is there's no required [anti-malware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-2. Another reason could be that the XML file isn't correctly formatted. For example, not using the correct markdown formatting for the "&" character in the XML file or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files. This causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**), and then update.
+2. Another reason could be that the XML file isn't correctly formatted. For example, not using the correct markdown formatting for the "&" character in the XML file or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files causing the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**), and then update.
 
 3. If you're deploying and managing the policy by using Group Policy, make sure to combine all PolicyRule into one XML file within a parent node called PolicyRules. Also combine all Group into one XML file within a parent node called Groups. If you manage through Intune, keep one PolicyRule one XML file, and one Group one XML file.
 
@@ -49,7 +49,7 @@ If it still doesn't work, contact support, and share your support cab. To get th
 
 ## Why is there no configuration UX for some policy groups? 
 
-There are no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related .adml and .admx files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
+There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related .adml and .admx files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
 
 ## How do I confirm that the latest policy has been deployed to the target machine?
 
