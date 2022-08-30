@@ -14,8 +14,8 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
 description: Admins can learn how to allow or block emails and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Allow or block emails using the Tenant Allow/Block List
