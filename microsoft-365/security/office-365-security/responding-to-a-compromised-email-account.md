@@ -18,8 +18,8 @@ ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Responding to a Compromised Email Account
 
