@@ -43,6 +43,7 @@ Watch the Microsoft 365 Message Center for confirmation when moves for each of E
 |Germany  <br/> |May 1, 2023  <br/> |
 |Brazil  <br/> |June 1, 2023  <br/> |
 |Sweden  <br/> |June 1, 2024  <br/> |
+|Qatar  <br/> |March 1, 2025  <br/> |
 
 ## Exchange Online
 

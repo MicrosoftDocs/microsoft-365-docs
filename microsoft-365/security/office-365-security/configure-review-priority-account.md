@@ -15,8 +15,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Learn how to identify critical people in an organization and add the priority account tag to provide them with extra protection.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure and review Priority accounts in Microsoft Defender for Office 365

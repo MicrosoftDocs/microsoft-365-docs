@@ -14,8 +14,8 @@ ms.assetid:
 ms.collection:
   - M365-security-compliance
 description: Learn about Safe Documents in Microsoft 365 A5 or E5 Security.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Safe Documents in Microsoft 365 A5 or E5 Security
