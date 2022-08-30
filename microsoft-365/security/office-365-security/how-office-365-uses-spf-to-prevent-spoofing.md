@@ -18,8 +18,8 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: Learn how Microsoft 365 uses the Sender Policy Framework (SPF) TXT record in DNS to ensure that destination email systems trust messages sent from your custom domain.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing
