@@ -3,7 +3,7 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/13/2022
+ms.date: 08/30/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -5204,6 +5204,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva learning | European Union |
 | Yammer | European Union |
 | Forms | United States |
+
 *Every service that stores customer data at rest in Exchange Online, SharePoint Online or OneDrive for Business, or is deployed locally.
 </p></details>
 
