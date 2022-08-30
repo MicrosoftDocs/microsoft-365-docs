@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse provides visibility into all the users across your managed tenants that have been inactive for over six months. Inactive accounts may present security risks and tie up unused licenses. From the **Inactive users** page, you can track and clean up inactive accounts.
 
-Lighthouse uses sign-in activity to detect inactive user accounts . The **Inactive users** page shows up to 500 inactive accounts for each tenant.
+Lighthouse uses sign-in activity to detect inactive users accounts. The **Inactive users** page shows up to 500 inactive accounts for each tenant.
 
 ## Review inactive users
 
