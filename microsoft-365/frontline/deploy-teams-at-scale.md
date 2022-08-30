@@ -139,7 +139,7 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
     Get-Command -Module MicrosoftTeams
     ```
 
-    Verify that ```New-CsBatchTeamsDeployment``` and ```Get-CsBatchTeamsDeployment``` are listed.
+    Verify that ```New-CsBatchTeamsDeployment``` and ```Get-CsBatchTeamsDeploymentStatus``` are listed.
 
 1. Run the following to deploy a batch of teams. In this command, you specify the path to your CSV files and the email addresses of up to five recipients to notify about this deployment.
 
@@ -158,7 +158,7 @@ You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams t
 1. Run the following to check the status of the batch you submitted.
 
     ```powershell
-    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
 ## Send us feedback
