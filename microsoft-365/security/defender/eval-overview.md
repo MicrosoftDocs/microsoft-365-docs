@@ -20,6 +20,7 @@ ms.collection:
   - m365solution-overview
   - m365solution-evalutatemtp
   - zerotrust-solution
+  - highpri
 ms.topic: conceptual
 ms.technology: m365d
 ---

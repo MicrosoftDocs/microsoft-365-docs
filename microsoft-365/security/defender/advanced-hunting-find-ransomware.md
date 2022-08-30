@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
   - m365solution-ransomware
+  - highpri
 ms.topic: article
 ms.technology: m365d
 ---

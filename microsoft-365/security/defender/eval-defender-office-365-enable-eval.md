@@ -20,6 +20,7 @@ ms.collection:
   - m365solution-scenario
   - m365solution-evalutatemtp
   - zerotrust-solution
+  - highpri
 ms.topic: how-to
 ms.technology: m365d
 ---
