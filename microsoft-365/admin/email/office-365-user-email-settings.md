@@ -23,6 +23,12 @@ description: "This article gives you information on managing settings for your u
 
 As the admin of an organization, there are email settings you can manage on your users. This article gives you information on managing these settings.
 
+## Manage email settings
+
+1. Go to the admin center at <https://admin.microsoft.com>.
+2. Go to **Users** > **Active users** and select the user for whom you would like to manage email settings.
+3. In the new pane, select **Mail** to manage email settings.
+
 ## Summary of email settings
 
 This table explains the various email settings you can change for a user in Microsoft 365.
