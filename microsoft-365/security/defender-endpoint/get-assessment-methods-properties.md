@@ -167,7 +167,7 @@ SecurityUpdateAvailable|Boolean|Indicates whether a security update is available
 SoftwareName|String|Name of the software product.
 SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.
-VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability based on the CVSS score.
 
 ### 3.3 Properties (via files)
 
@@ -200,7 +200,7 @@ SoftwareName|String|Name of the software product.
 SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.
 Status|String|**New** (for a new vulnerability introduced on a device). **Fixed** (for a vulnerability that doesn't exist anymore on the device, which means it was remediated). **Updated** (for a vulnerability on a device that has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
-VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score.
 
 ## 4. Export non product code software inventory assessment
 
