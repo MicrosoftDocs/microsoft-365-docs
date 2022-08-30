@@ -129,13 +129,13 @@ Follow these steps to install and connect to the latest preview version of the T
     Get-Command -Module MicrosoftTeams
     ```
 
-    Verify that ```New-CsBatchTeamsDeployment``` and ```Get-CsBatchTeamsDeployment``` are listed.
+    Verify that ```New-CsBatchTeamsDeployment``` and ```Get-CsBatchTeamsDeploymentStatus``` are listed.
 
 ### Step 3: Deploy your teams
 
 Now that you've created your CSV files and set up your environment, you're ready to deploy your teams.
 
-You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment) cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the [Get-CsBatchTeamsDeployment](/powershell/module/teams/get-csbatchteamsdeployment) cmdlet to track the progress and status of each batch.
+You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment) cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/get-csbatchteamsdeploymentstatus) cmdlet to track the progress and status of each batch.
 
 1. Run the following to deploy a batch of teams. In this command, you specify the path to your CSV files and the email addresses of up to five recipients to notify about this deployment.
 
@@ -154,7 +154,7 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
 1. Run the following to check the status of the batch you submitted.
 
     ```powershell
-    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
 ## Related articles
