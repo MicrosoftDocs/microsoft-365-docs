@@ -47,9 +47,6 @@ You'll need to complete the following general steps to successfully onboard serv
 
 :::image type="content" source="images/server-onboarding.png" alt-text="Server Onboarding" lightbox="images/server-onboarding.png":::
 
-> [!NOTE]
-> Servers are on-boarded using GPs only.
-
 ### Windows Server 2012 R2 and Windows Server 2016
 - Download installation and onboarding packages.
 - Apply the installation package.
