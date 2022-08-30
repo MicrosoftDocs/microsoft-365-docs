@@ -3,7 +3,8 @@ title: Integrating Microsoft 365 Defender into your security operations
 description: The basics of integrating Microsoft 365 Defender into your security operations.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,7 +23,6 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Integrating Microsoft 365 Defender into your security operations
 

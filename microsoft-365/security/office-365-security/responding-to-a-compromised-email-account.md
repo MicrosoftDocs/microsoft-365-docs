@@ -11,6 +11,7 @@ ms.collection:
   - o365_security_incident_response
   - M365-security-compliance
   - m365solution-smb
+  - highpri
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
