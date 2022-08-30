@@ -2,7 +2,7 @@
 title: Understand the client analyzer HTML report
 description: Learn how to analyze the Microsoft Defender for Endpoint Client Analyzer HTML report
 keywords: client analyzer report, html report, client analyzer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
 ---
 
 # Understand the client analyzer HTML report
