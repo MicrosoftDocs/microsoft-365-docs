@@ -25,7 +25,7 @@ ms.reviewer: tewchen
 
 ## How do I generate GUID for Group ID/PolicyRule ID/Entry ID?
 
-You can generate the GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
+You can generate the GUID through online open source, or through PowerShell. For more information, see [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
 
 ![Screenshot of GUID in PowerShell.](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
@@ -47,9 +47,9 @@ If it still doesn't work, contact support, and share your support cab. To get th
 
 `"%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles`
 
-## There's no configuration UX for **Define device control policy groups** and **Define device control policy rules** on my Group Policy
+## Why is there no configuration UX for some policy groups? 
 
-We don't backport the Group Policy configuration UX, but you can still get the related .adml and .admx files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
+There are no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related .adml and .admx files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
 
 ## How do I confirm that the latest policy has been deployed to the target machine?
 
