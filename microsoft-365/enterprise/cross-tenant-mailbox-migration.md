@@ -4,7 +4,7 @@ description: How to move mailboxes between Microsoft 365 or Office 365 tenants.
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
