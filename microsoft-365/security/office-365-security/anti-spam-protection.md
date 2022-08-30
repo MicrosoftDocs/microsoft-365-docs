@@ -20,8 +20,8 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the anti-spam settings and filters that will help prevent spam in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Anti-spam protection in EOP

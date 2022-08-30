@@ -7661,16 +7661,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial.md",
-      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
-      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/productivity/apps-health.md",
       "redirect_url": "/microsoft-365/admin/adoption/apps-health",
       "redirect_document_id": true
@@ -7713,6 +7703,11 @@
     {
       "source_path": "microsoft-365/compliance/archive-jive-data.md",
       "redirect_url": "compliance/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-ms-partner.md",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-business-premium#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium",
       "redirect_document_id": false
     }
     ]
