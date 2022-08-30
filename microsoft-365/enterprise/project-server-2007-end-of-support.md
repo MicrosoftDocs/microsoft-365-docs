@@ -1,8 +1,8 @@
 ---
 title: Project Server 2007 end of support roadmap
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual

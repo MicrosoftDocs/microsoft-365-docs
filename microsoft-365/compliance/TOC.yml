@@ -1229,7 +1229,7 @@
           items: 
             - name: SharePoint and OneDrive
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
             - name: Yammer
               href: retention-policies-yammer.md
