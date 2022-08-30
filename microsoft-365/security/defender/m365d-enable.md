@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: 
     - M365-security-compliance
     - m365solution-getstarted
+    - highpri
 ms.topic: conceptual
 search.appverid: 
   - MOE150

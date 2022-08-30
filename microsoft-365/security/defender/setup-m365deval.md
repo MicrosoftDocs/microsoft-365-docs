@@ -17,6 +17,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - highpri
 ms.topic: article
 ms.technology: m365d
 ---
