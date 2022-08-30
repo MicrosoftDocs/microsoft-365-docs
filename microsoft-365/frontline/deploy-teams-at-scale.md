@@ -145,7 +145,7 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
 
     The recipients will receive email notifications about deployment status. The email contains the orchestration ID for the batch you submitted and any errors that may have occurred.
 
-    Here'an example:
+    For example:
 
     ```powershell
     New-CsBatchTeamsDeployment -TeamsFilePath "C:\dscale\Teams.csv" -UsersFilePath "C:\dscale\Users.csv" -UsersToNotify "adminteams@contoso.com,adelev@contoso.com"
