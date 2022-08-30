@@ -36,7 +36,9 @@ You use example files to train your model and define the information to be extra
 
 After you train and publish your model, your model creates a [Power Automate flow](/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
 
-A Microsoft 365 admin needs to [enable this type of model](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a **Extract by layout** model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
+You can only create an **Extract by layout** model in SharePoint document libraries for which it's enabled. If it has been enabled, you're able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need it enabled on your document library, contact your Microsoft 365 admin.
+
+![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## Requirements
 
