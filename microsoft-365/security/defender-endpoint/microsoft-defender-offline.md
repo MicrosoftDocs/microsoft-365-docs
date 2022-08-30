@@ -137,6 +137,14 @@ See the following for more information:
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
+### Where can I find scan results?
+
+To see the Microsoft Defender Offline scan results:
+
+Select **Start** , and then select **Settings**  > **Update & Security**  > **Windows Security**  > **Virus & threat protection** .
+
+On the **Virus & threat protection** screen, under **Current threats**, select **Scan** options, and then select **Protection history** .
+
 ## Related articles
 
 - [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
