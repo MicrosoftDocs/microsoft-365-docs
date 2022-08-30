@@ -19,6 +19,7 @@ ms.topic: article
 ms.collection:  
  - M365-security-compliance
  - m365solution-asr-rules
+ - highpri
 ms.date: 1/18/2022
 ---
 
