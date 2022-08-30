@@ -18,7 +18,6 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.subservice: mde
 ---
 
 # Create a custom gradual rollout process for Microsoft Defender updates
