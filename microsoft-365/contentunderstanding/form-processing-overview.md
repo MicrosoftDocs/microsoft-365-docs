@@ -12,23 +12,23 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use AI Build to create form processing models in Microsoft SharePoint Syntex.
+description: Learn how to use AI Builder to create models in Microsoft SharePoint Syntex.
 ---
 
 # Overview of extraction by layout in Microsoft SharePoint Syntex
 
- ![AI Builder.](../media/content-understanding/ai-builder.png)</br>
+Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/overview) *document processing* (formerly known as form processing) to create models within SharePoint document libraries.
 
-Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/overview) form processing to create models within SharePoint document libraries.
+ ![AI Builder.](../media/content-understanding/ai-builder.png)
 
-You can use AI Builder form processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, such as forms and invoices.
+You can use AI Builder document processing to create **Extract by layout** models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, such as forms and invoices.
 
-Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, form processing automates this process. 
+Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, SharePoint Syntex automates this process. 
 
 > [!NOTE]
-> See the [SharePoint Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about form processing scenario examples.
+> For more ideas about how to use these models in your organization, see [Get started driving adoption](adoption-getstarted.md) and [Scenarios and use cases](adoption-scenarios.md).
 
-For example, you can create a form processing model that identifies all purchase order documents that are uploaded to the document library. From each purchase order, you can then extract and display specific data that is important to you, such as *PO Number*, *Date*, or *Total Cost*.
+For example, you can create an **Extract by layout** model that identifies all purchase order documents that are uploaded to the document library. From each purchase order, you can then extract and display specific data that is important to you, such as *PO Number*, *Date*, or *Total Cost*.
 
 ![Doc library view.](../media/content-understanding/doc-lib-done.png)</br>  
 
@@ -36,7 +36,9 @@ You use example files to train your model and define the information to be extra
 
 After you train and publish your model, your model creates a [Power Automate flow](/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
 
-An Office 365 admin needs to [enable form processing](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
+A Microsoft 365 admin needs to [enable this type of model](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a **Extract by layout** model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
+
+## Requirements
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
 
