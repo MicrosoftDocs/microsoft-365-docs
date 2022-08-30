@@ -3,7 +3,8 @@ title: Review Microsoft Defender for Endpoint architecture requirements and key 
 description: The technical diagram for Microsoft Defender for Endpoint in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,7 +23,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Review Microsoft Defender for Endpoint architecture requirements and key concepts

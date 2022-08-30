@@ -3,7 +3,8 @@ title: Step 2. An Overview of Microsoft 365 Defender for Identity evaluation
 description: Use Microsoft 365 Defender for Identity in your Microsoft 365 Defender XDR solution. Steps for the evaluation of Microsoft 365 Defender for Identity including requirements, enabling or activating the eval, and set up of the pilot or test.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,7 +23,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Step 2. Evaluate Microsoft Defender for Identity overview
