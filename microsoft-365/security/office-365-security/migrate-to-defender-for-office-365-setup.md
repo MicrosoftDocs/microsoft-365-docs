@@ -15,6 +15,7 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
   - m365solution-mdo-migration
+  - highpri
 ms.custom: migrationguides
 description: "Take the steps to begin migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo

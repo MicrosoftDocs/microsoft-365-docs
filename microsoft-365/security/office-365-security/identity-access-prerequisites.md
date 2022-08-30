@@ -19,6 +19,7 @@ ms.collection:
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
+  - highpri
 ms.subservice: mdo
 ---
 

@@ -16,6 +16,7 @@ ms.collection:
   - m365solution-endpointprotect
   - m365solution-scenario
   - m365-initiative-defender-endpoint
+  - highpri
 ms.topic: article
 ms.technology: mde
 ---
