@@ -18,8 +18,8 @@ ms.collection:
   - m365solution-mdo-migration
 ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare

@@ -17,8 +17,8 @@ ms.collection:
   - m365solution-mdo-migration
 ms.custom:
 description: Learn the right way to migrate from third-party protection services or devices like Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort to Microsoft Defender for Office 365 protection.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate from a third-party protection service or device to Microsoft Defender for Office 365

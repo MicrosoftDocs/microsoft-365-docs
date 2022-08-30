@@ -4,7 +4,7 @@ description: Describes Microsoft recommendations and core concepts for deploying
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords: 
@@ -20,7 +20,7 @@ ms.collection:
   - m365solution-overview
   - m365solution-zero-trust
   - zerotrust-solution
-ms.technology: mdo
+ms.subservice: mdo
 ---
 # Zero Trust identity and device access configurations
 
