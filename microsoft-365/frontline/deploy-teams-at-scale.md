@@ -160,6 +160,6 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
 ## Related articles
 
 - [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment)
-- [Get-CsBatchTeamsDeployment](/powershell/module/teams/get-csbatchteamsdeployment)
+- [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/get-csbatchteamsdeploymentstatus)
 - [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
 - [Learn where to start with a frontline deployment](flw-deploy-overview.md)
