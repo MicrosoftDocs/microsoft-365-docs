@@ -73,7 +73,7 @@ Actions available on the device profile page include:
 * **Isolate device** - Isolates the device from your organization's network while keeping it connected to Microsoft Defender for Endpoint. You can choose to allow Outlook, Teams, and Skype for Business to run while the device is isolated, for communication purposes.
 * **Action center** - View the status of submitted actions. Only available if another action has already been selected.
 * **Restrict app execution** - Prevents applications that are not signed by Microsoft from running.
-* **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
+* **Run antivirus scan** - Updates Microsoft Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
 * **Collect investigation package** - Gathers information about the device. When the investigation is completed, you can download it.
 * **Initiate Live Response Session** - Loads a remote shell on the device for [in-depth security investigations](/microsoft-365/security/defender-endpoint/live-response).
 * **Initiate automated investigation** - Automatically [investigates and remediates threats](../office-365-security/office-365-air.md). Although you can manually trigger automated investigations to run from this page, [certain alert policies](../../compliance/alert-policies.md#default-alert-policies) trigger automatic investigations on their own.

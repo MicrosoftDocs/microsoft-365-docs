@@ -34,7 +34,7 @@ Investigation actions (and investigations) are accessible from several points in
 
 As automated investigations on *Email & collaboration* content results in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. The remediation actions suggested aren't carried out automatically. SecOps must navigate to each investigation to *approve* those suggested actions. In the *Action Center* all the pending actions are aggregated for quick approval.
 
-## What you’ll need
+## What you'll need
 
 - Microsoft Defender for Office 365 Plan 2 or higher (Included with E5)
 - Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)

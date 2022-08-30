@@ -24,7 +24,7 @@ description: "Admins can reactivate a subscription when it expires, is disabled,
 ms.date: 04/07/2021
 ---
 
-# Reactivate your subscription
+# Reactivate your Microsoft subscription
 
 You can reactivate your subscription in the admin center if: the subscription expired, was disabled by Microsoft, or if you canceled it in the middle of a subscription term.
   

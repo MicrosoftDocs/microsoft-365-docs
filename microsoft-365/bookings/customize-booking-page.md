@@ -17,6 +17,12 @@ The Booking Page is where you set up what your external facing booking page will
 
 To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so people can start booking appointments with you.
 
+## Watch: Customize and publish your booking page
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
+
+## Steps
+
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
 1. Choose your calendar.
@@ -49,7 +55,7 @@ Once you publish your booking page, customers will see your booking page where t
 
 :::image type="content" source="media/bookings-self-service-2.png" alt-text="Customer facing booking page.":::
 
-## Publish the booking page
+<!-- ## Publish the booking page
 
 Watch this video or follow the steps below to publish or unpublish your booking page.
 
@@ -63,7 +69,7 @@ Watch this video or follow the steps below to publish or unpublish your booking 
 
 1. Select **Save and publish**. You'll see a confirmation message.
 
-1. Select **Open published page** to see your page in a web browser.
+1. Select **Open published page** to see your page in a web browser. -->
 
 ## Unpublish the booking page
 

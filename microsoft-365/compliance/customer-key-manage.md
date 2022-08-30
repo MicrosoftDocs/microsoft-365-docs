@@ -16,8 +16,6 @@ description: "After you set up Customer Key, learn how to manage it by restoring
 
 # Manage Customer Key
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 After you've set up Customer Key, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
 ## Create a DEP for use with multiple workloads for all tenant users
@@ -38,9 +36,9 @@ To create a multi-workload DEP, follow these steps:
 
    - *PolicyName* is the name you want to use for the policy. Names can't contain spaces. For example, Contoso_Global.
 
-   - *KeyVaultURI1* is the URI for the first key in the policy. For example, <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
+   - *KeyVaultURI1* is the URI for the first key in the policy. For example, `https://contosoWestUSvault1.vault.azure.net/keys/Key_01`.
 
-   - *KeyVaultURI2* is the URI for the second key in the policy. For example, <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. Separate the two URIs by a comma and a space.
+   - *KeyVaultURI2* is the URI for the second key in the policy. For example, `https://contosoCentralUSvault1.vault.azure.net/keys/Key_02`. Separate the two URIs by a comma and a space.
 
    - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root policy for multiple workloads for all users in the tenant.".
 
@@ -90,9 +88,9 @@ To create a DEP to use with a mailbox, follow these steps:
 
    - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root key for mailboxes in USA and its territories".
 
-   - *KeyVaultURI1* is the URI for the first key in the policy. For example, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+   - *KeyVaultURI1* is the URI for the first key in the policy. For example, `https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01`.
 
-   - *KeyVaultURI2* is the URI for the second key in the policy. For example, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separate the two URIs by a comma and a space.
+   - *KeyVaultURI2* is the URI for the second key in the policy. For example, `https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02`. Separate the two URIs by a comma and a space.
 
    Example:
 
@@ -343,7 +341,14 @@ If you need to revert to Microsoft-managed keys, you can. When you offboard, you
 > [!IMPORTANT]
 > Offboarding is not the same as a data purge. A data purge permanently crypto-deletes your organization's data from Microsoft 365, offboarding does not. You can't perform a data purge for a multiple workload policy.
 
-If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to "offboard" from Customer Key. Ask the support team to file a service request against the Microsoft Purview Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions.
+**If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to file a support ticket using your Microsoft admin portal and provide the following details in your request:**
+
+1. Tenant FQDN
+2. Tenant contact for offboarding request
+3. Reason for offboarding
+4. Include a note in the service ticket that the request should be directed to the M365 Customer Key team and include the incident #
+
+You must still retain your Customer Key AKVs and encryption keys with proper permissions for data to be rewrapped using Microsoft managed keys. Please reach out to m365-ck@service.microsoft.com if you have any questions.
 
 If you do not want to encrypt individual mailboxes using mailbox level DEPs anymore, then you can unassign mailbox level DEPs from all your mailboxes.
 

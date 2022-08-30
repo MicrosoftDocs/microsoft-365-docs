@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 description: "Accept invite to join a Microsoft 365 for business organization"
 ---

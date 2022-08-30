@@ -16,6 +16,8 @@
       items:
       - name: Use Microsoft OneDrive LTI with Blackboard
         href: onedrive-lti-blackboard.md
+      - name: Use Microsoft Teams meetings with Blackboard Learn
+        href: teams-meetings-with-blackboard-learn.md
       - name: Use Microsoft Teams classes with Blackboard Learn Ultra 
         href: teams-classes-with-blackboard.md
     - name: Moodle integrations
@@ -30,3 +32,13 @@
         href: open-lms-plugin-configuration.md
       - name: Use Microsoft Teams classes and meetings with Open LMS
         href: open-lms-teams-classes-and-meetings.md
+    - name: Desire2Learn Brightspace integrations
+      items:
+      - name: Use Microsoft Teams classes and meetings with Brightspace
+        href: teams-classes-meetings-with-brightspace.md
+      - name: Use Microsoft OneDrive LTI with Brightspace
+        href: onedrive-lti-brightspace.md
+    - name: Schoology integrations
+      items:
+      - name: Use Microsoft Teams meetings with Schoology
+        href: teams-classes-and-meetings-with-schoology.md

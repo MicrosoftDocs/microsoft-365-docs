@@ -20,9 +20,11 @@ ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+## Applies to
 
-Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of a exact string, you can use *configurable match* to tell Microsoft Purview to ignore case and some delimiters.
+- Exact data match (EDM) sensitive information type (SIT) creation using PowerShell.
+
+Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of an exact string, you can use *configurable match* to tell Microsoft Purview to ignore case and some delimiters.
 
 > [!IMPORTANT]
 > Use this procedure to modify an existing EDM schema and data file.
@@ -117,7 +119,10 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     > [!TIP]
     > Optionally, you can run a validation against your csv file before uploading by running:
     >
-    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+    >
+    > For example:
+    >`EdmUploadAgent.exe /ValidateData /DataFile  C:\data\testdelimiters.csv /Schema C:\EDM\patientrecords.xml`
     >
     > For more information on all the EdmUploadAgent.exe supported parameters, run
     >

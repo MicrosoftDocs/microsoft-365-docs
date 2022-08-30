@@ -26,7 +26,7 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
@@ -35,7 +35,6 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 - Use troubleshooting mode to disable/change the tamper protection setting to perform:
 
   - Microsoft Defender Antivirus functional troubleshooting /application compatibility (false positive application blocks).
-
   - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
 - If a tampering event occurs (for example, the `MpPreference` snapshot is altered or deleted), troubleshooting mode will end and tamper protection will be enabled on the device.
@@ -43,7 +42,6 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
   - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
-
   - Local admins will be able to configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
 - Admins with "Manage Security settings" permissions will have access to turn on troubleshooting mode.
@@ -51,9 +49,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 - Microsoft Defender for Endpoint collects logs and investigation data throughout the troubleshooting process.
 
   - Snapshot of `MpPreference` will be taken before troubleshooting mode begins.
-
   - Second snapshot will be taken just before troubleshooting mode expires.
-
   - Operational logs from during troubleshooting mode will also be collected.
 
   - All the above logs and snapshots will be collected and will be available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them.
@@ -109,36 +105,37 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](/defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
-
+Search by deviceId or deviceName by commenting out the respective lines.  
 ```kusto
-let deviceName = "<device name>";   // update with device name
-let deviceId = "<device id>";   // update with device id
-search in (DeviceEvents)
-(DeviceName == deviceName
-) and ActionType == "AntivirusTroubleshootModeEvent"
+//let deviceName = "<deviceName>";   // update with device name
+let deviceId = "<deviceID>";   // update with device id
+DeviceEvents
+| where DeviceId == deviceId
+//| where DeviceName  == deviceName
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,
+| project Timestamp,DeviceId, DeviceName, _tsmodeproperties,
  _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,
  _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,
  _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource
 ```
 
-### Devices currently in troubleshooting mode
+### Devices currently in troubleshooting mode  
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| where Timestamp > ago(3h)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+| order by Timestamp desc
 ```
 
 ### Count of troubleshooting mode instances by device
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
@@ -149,8 +146,8 @@ ActionType == "AntivirusTroubleshootModeEvent"
 ### Total count
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range

@@ -23,8 +23,6 @@ description: "Trainable classifiers can recognize various types of content for l
 
 # Learn about trainable classifiers
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
 ## Manually
@@ -102,8 +100,6 @@ Microsoft 365 comes with multiple pre-trained classifiers:
   > Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
 
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
-
-- **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property.
 
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 

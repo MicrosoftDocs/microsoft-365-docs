@@ -2,40 +2,33 @@
 title: "Set app protection settings for Android or iOS devices"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: "Learn how to create, edit, or delete an app management policy, and protect work files on Android or iOS devices."
 ---
 
 # Set app protection settings for Android or iOS devices
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article applies to Microsoft 365 Business Premium.
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
-
 ## Watch: Secure Office apps on iOS
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197828).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 
@@ -43,63 +36,63 @@ You can set up a user access policy that requires mobile users to enter a PIN or
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-1. Under **Policies**, choose **Add policy**.
+2. Under **Policies**, choose **Add policy**.
 
-1. In the **Add policy** pane, enter a name under **Policy name**, and choose the policy type that you want under **Policy type**.
+3. In the **Add policy** pane, enter a name under **Policy name**, and choose the policy type that you want under **Policy type**.
 
-1. Turn on **Protect work files when devices are lost or stolen**, and then make sure the following three settings are turned on:
+4. Turn on **Protect work files when devices are lost or stolen**, and then make sure the following three settings are turned on:
  
     - **Force users to save all work files to OneDrive for Business**
   
     - **Encrypt work files**
 
-1. Turn on **Manage how users access Office files on Mobile devices** and ensure the settings are turned on or set for each item.
+5. Turn on **Manage how users access Office files on Mobile devices** and ensure the settings are turned on or set for each item.
 
-1. Under **Files in these apps will be protected**, select the Office apps you want to protect on mobile devices.
+6. Under **Files in these apps will be protected**, select the Office apps you want to protect on mobile devices.
 
-1. Under **Who will get these settings?**, all users are selected by default, but you can choose **Change** to select any security groups you've created.
+7. Under **Who will get these settings?**, all users are selected by default, but you can choose **Change** to select any security groups you've created.
 
-1. To finish creating the policy, choose **Add**.
+8. To finish creating the policy, choose **Add**.
 
-1. On the **Add policy** page, choose **Close**.
+9. On the **Add policy** page, choose **Close**.
 
-1. On the admin center home page, confirm that your new policy was added by choosing **Policies** and reviewing your policy on the **Policies** page.
+10. On the admin center home page, confirm that your new policy was added by choosing **Policies** and reviewing your policy on the **Policies** page.
 
 ## Create an app management policy
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-1. In the left nav, choose **Devices** \> **Policies** \> **Add**.
+2. In the left nav, choose **Devices** \> **Policies** \> **Add**.
   
-1. On the **Add policy** pane, enter a unique name for this policy.
+3. On the **Add policy** pane, enter a unique name for this policy.
 
-1. Under **Policy type**, choose **Application Management for Android** or **Application Management for iOS**, depending on which set of policies you want to create.
+4. Under **Policy type**, choose **Application Management for Android** or **Application Management for iOS**, depending on which set of policies you want to create.
 
-1. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices**. Configure the settings how you would like. **Manage how users access Office files on mobile devices** is **Off** by default, but we recommend that you turn it **On** and accept the default values. For more information, see [Available settings](#available-settings).
+5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices**. Configure the settings how you would like. **Manage how users access Office files on mobile devices** is **Off** by default, but we recommend that you turn it **On** and accept the default values. For more information, see [Available settings](#available-settings).
 
     You can always use the **Restore default settings** link to return to the default setting.
 
 :::image type="content" source="Media/m365bp-add-policy.png" alt-text="Create a policy with application management.":::
   
-1. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups that get these settings \> **Select**.
+6. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups that get these settings \> **Select**.
 
-1. Finally, choose **Done** to save the policy, and assign it to devices.
+7. Finally, choose **Done** to save the policy, and assign it to devices.
 
 ## Edit an app management policy
 
 1. On the **Policies** card, choose **Edit policy**.
 
-1. On the **Edit policy** pane, choose the policy you want to change.
+2. On the **Edit policy** pane, choose the policy you want to change.
 
-1. Choose **Edit** next to each setting to change the values in the policy. When you change a value, it's automatically saved in the policy.
+3. Choose **Edit** next to each setting to change the values in the policy. When you change a value, it's automatically saved in the policy.
 
-1. When you're finished, close the **Edit policy** pane.
+4. When you're finished, close the **Edit policy** pane.
 
 ## Delete an app management policy
 
 1. On the **Policies** page, choose a policy and then **Delete**.
 
-1. On the **Delete policy** pane, choose **Confirm** to delete the policy or policies you chose. 
+2. On the **Delete policy** pane, choose **Confirm** to delete the policy or policies you chose. 
 
 ## Available settings
 

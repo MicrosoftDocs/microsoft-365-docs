@@ -25,8 +25,6 @@ description: "Learn how to import and archive third-party data from social media
 
 # Learn about connectors for third-party data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft 365 lets administrators use data connectors to import and archive non-Microsoft, third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. One primary benefit of using data connectors to import and archive third-party data in Microsoft 365 is that you can apply various Microsoft Purview solutions to the data after it's been imported. This helps you ensure that your organization's non-Microsoft data is in compliance with the regulations and standards that affect your organization.
 
 Watch this interactive guide that demonstrates how to create data connectors to import and archive third-party data and examples of applying compliance solutions to data after it's imported to Microsoft 365.
@@ -45,7 +43,7 @@ The Microsoft Purview compliance portal provides native third-party data connect
 
 - [CellTrust](#celltrust-data-connectors)
 
-The third-party data listed in the next sections (except for HR data and physical badging data that is used for the Microsoft 365 Insider risk management solution) is imported into user mailboxes. The Microsoft Purview solutions that support third-party data are applied to the user mailbox where the data is stored.
+The third-party data listed in the next sections (except for HR data and physical badging data that is used for the Microsoft Purview Insider Risk Management solution) is imported into user mailboxes. The Microsoft Purview solutions that support third-party data are applied to the user mailbox where the data is stored.
 
 ### Microsoft data connectors
 

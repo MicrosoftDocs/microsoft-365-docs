@@ -19,7 +19,8 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-evalutatemtp
-  - ms.custom: admindeeplinkEXCHANGE
+  - zerotrust-solution
+ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
 ---

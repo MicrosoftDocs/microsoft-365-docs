@@ -39,17 +39,6 @@ Microsoft Defender for Endpoint includes next-generation protection to reinforce
 > Next-generation protection is included in both Microsoft Defender for Endpoint Plan 1 and Plan 2. [Learn more about Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md)
 > Next-generation protection is also included in Microsoft Defender for Business and Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
-## Try a demo!
-
-Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following protection features are working and explore them using demo scenarios:
-
-- Cloud-delivered protection
-- Block at first sight (BAFS) protection
-- Potentially unwanted applications (PUA) protection
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
 ## Configure next-generation protection services
 
 For information on how to configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).

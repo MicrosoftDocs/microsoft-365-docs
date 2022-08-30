@@ -15,7 +15,6 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: 
-- m365solution-scenario
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
@@ -55,7 +54,7 @@ You can set attack surface reduction rules for devices that are running any of t
 
 To use the entire feature-set of attack surface reduction rules, you need:
 
-- Windows Defender Antivirus as primary AV (real-time protection on)
+- Microsoft Defender Antivirus as primary AV (real-time protection on)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (some rules require that)
 - Windows 10 Enterprise E5 or E3 License
 

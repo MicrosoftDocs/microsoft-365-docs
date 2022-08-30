@@ -56,7 +56,7 @@ The following table outlines the roles and permissions required to access Threat
 
 | **One of the following roles are required for Microsoft 365 Defender**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
 |---------|---------|---------|---------|
-| Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>TVM mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
+| Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>Defender Vulnerability Management mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
 
 ## View the threat analytics dashboard
 
@@ -112,7 +112,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
   - Potentially unwanted application (PUA) protection
   - Real-time protection
 
-Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
+Mitigation information in this section incorporates data from [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
 :::image type="content" source="images/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="images/ta-mitigations.png":::
 
