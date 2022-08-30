@@ -247,7 +247,7 @@ When Microsoft Defender Antivirus is in passive mode, you can still [manage upda
 
 ### Disabled or uninstalled
 
-When disabled or uninstalled, Microsoft Defender Antivirus isn't used as the antivirus app. Files aren't scanned and threats aren't remediated. Disabling or uninstalling Microsoft Defender Antivirus isn't recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you're using a non-Microsoft antimalware/antivirus solution.
+When disabled or uninstalled, Microsoft Defender Antivirus isn't used as the antivirus app. Files aren't scanned and threats aren't remediated. Disabling or uninstalling Microsoft Defender Antivirus isn't recommended in general; if you're using a non-Microsoft antimalware/antivirus solution and the device is onboarded to Microsoft Defender for Endpoint, Microsoft Defender Antivirus **must** be in passive mode.
 
 In cases where Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires, is uninstalled, or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints.
 
