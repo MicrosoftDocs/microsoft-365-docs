@@ -4,7 +4,8 @@ ms.reviewer:
 description: If you're new to Microsoft 365 Defender and Defender Experts for Hunting, this is how you subscribe
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, defender experts notifications, endpoint attack notifications, Microsoft Defender Experts for hunting, threat hunting and analysis.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +18,6 @@ ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
 ---
 
 # Start using Microsoft Defender Experts for Hunting
@@ -49,7 +49,7 @@ The Defender Experts Notifications service includes:
 
 Refer to the following screenshot to see a sample Defender Experts Notification:
 
-![Secreenshot of a Defender Experts Notification in Microsoft 365 Defender. A Defender Expert Notification includes a title that describes the threat or activity observed, an executive summary, and list of recommendations.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
+![Screenshot of a Defender Experts Notification in Microsoft 365 Defender. A Defender Expert Notification includes a title that describes the threat or activity observed, an executive summary, and list of recommendations.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
 
 ### Where you'll find Defender Experts Notifications
 

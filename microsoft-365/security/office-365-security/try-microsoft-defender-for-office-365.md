@@ -94,7 +94,7 @@ The protection features of EOP and Defender for Office 365 are implemented using
 
 **Notes**:
 
-- Safe Links will detonate URLs during mail flow. To prevent specific URLs from being detonated, use Allow entries in the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Safe Links will detonate URLs during mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 - Safe Links doesn't wrap URL links in email message bodies.
 
 ## Evaluation vs. trial: an important distinction for licensing

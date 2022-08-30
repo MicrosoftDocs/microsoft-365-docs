@@ -24,7 +24,7 @@ Microsoft Defender Threat Intelligence (Defender TI) offers a robust and flexibl
 
 ## Open Defender TI’s Threat Intelligence Home Page
 
-1. Access the [Defender Threat Intelligence Portal](https://defender.microsoft.com/).
+1. Access the [Defender Threat Intelligence Portal](https://ti.defender.microsoft.com/).
 2. Complete Microsoft authentication to access portal.
 
 ## Performing threat intelligence searches and pivots

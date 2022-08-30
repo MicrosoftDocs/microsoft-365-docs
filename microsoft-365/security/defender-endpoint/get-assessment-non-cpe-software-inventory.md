@@ -64,8 +64,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|Software.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|Software.Read.All|\'Read Threat and Vulnerability Management software information\'
+Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management software information\'
 
 ### 1.3 URL
 
@@ -169,8 +169,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|Software.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|Software.Read.All|\'Read Threat and Vulnerability Management software information\'
+Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management software information\'
 
 ### 2.3 URL
 
@@ -232,6 +232,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNonCp
 - [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
 
 Other related
-
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

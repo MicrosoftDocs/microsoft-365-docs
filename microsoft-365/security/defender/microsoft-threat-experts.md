@@ -5,7 +5,8 @@ description: Microsoft Threat Experts provides an extra layer of expertise to Mi
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
 search.product: Windows 10
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -31,6 +32,9 @@ ms.collection:
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
+> [!NOTE]
+> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**.
+
 Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notification) is a managed threat hunting service. Once you apply and are accepted, you'll receive endpoint attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities.
 
 Microsoft Threat Experts – Experts on Demand lets you get expert advice about threats your organization is facing. You can reach out for help on threats your organization is facing. It's available as a subscription service.
@@ -45,6 +49,8 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 Once your application is approved, you'll start receiving endpoint attack notifications whenever Threat Experts detect a threat to your environment.
 
 ## Subscribe to Microsoft Threat Experts - Experts on Demand
+> [!NOTE]
+> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/)![image](https://user-images.githubusercontent.com/11750124/187275203-87c65c03-d5c5-4fd0-a045-f795f6976336.png)
 
 Contact your Microsoft representative to subscribe to Experts on Demand.  See [Configure Microsoft Threat Experts capabilities](./configure-microsoft-threat-experts.md) for full details.
 
@@ -65,13 +71,22 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 - Gain clarity into suspicious devices, alerts, or incidents and get next steps if faced with an advanced attacker
 - Determine risks and available protections related to threat actors, campaigns, or emerging attacker techniques
 
+> [!NOTE]
+> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**.
+
 The option to **Ask Defender Experts** is available in several places throughout the portal:
 
-- <i>**Device page actions menu**</i><BR>
-- <i>**Device inventory page flyout menu**</i><BR>
-- <i>**Alerts page flyout menu**</i><BR>
-- <i>**Incidents page actions menu**</i><BR>
-- <i>**Incidents inventory page**</i><BR>
+- ***Device page actions menu***
+
+![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft 365 Defender portal.](../../media/mte/device-page-actions-menu.png)
+
+- ***Alerts page actions menu***
+
+![Screenshot of the Ask Defender Experts menu option in the Alerts page action menu in the Microsoft 365 Defender portal.](../../media/mte/alerts-page-actions-menu.png)
+
+- ***File page actions menu***
+
+![Screenshot of the Ask Defender Experts menu option in the Incidents page action menu in the Microsoft 365 Defender portal.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > If you have Premier Support subscription mapped to your Microsoft Defender for Office 365 license, you can track the status of your Experts on Demand cases through Microsoft Services Hub.
