@@ -17,6 +17,8 @@ description: Learn more about how to use and save explanation templates in Micro
 
 # Use explanation templates in Microsoft SharePoint Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+
 While you can manually add various phrase list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
 
 For example, instead of manually adding all the variations for *date*, you can use the phrase list template for *date* because it already includes many phrase lists values:
