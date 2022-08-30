@@ -54,7 +54,7 @@ When you sign up for either a free trial, or a subscription, you must enable Azu
 
 The Service Trust Portal features and content are accessible from the main menu.
 
-![Service Trust Portal menu.](../media/STPMenus1.png)
+![Service Trust Portal - Service Trust Portal main menu.](../media/86b754e1-c63c-4514-89ac-d014bf334140-2.png)
 
 The following sections describe each item in the main menu.
 
@@ -62,7 +62,7 @@ The following sections describe each item in the main menu.
 
 The **Service Trust Portal** link displays the home page. It provides a quick way to get back to the home page.
 
-### Certifications, Standards, Regulations, and Industry Resources
+### Certifications, Regulations and Standards
 
 Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following tiles.
 
@@ -127,7 +127,7 @@ This section displays all available documents. Select the documents to save into
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
 
-![Service Trust Portal - Search on Documents with filter applied.](../media/86b754e1-c63c-4514-89ac-d014bf334140-2.png)
+:::image type="content" source="../media/stp-search.png" alt-text="Search for documents and filter results.":::
 
 By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, and regions. Click the document name link to download the document.
 
@@ -135,11 +135,11 @@ By default, the search returns document results. You can filter the results by u
 
 Use the My Library feature to add documents and resources on the Service Trust Portal to your My Library page. This lets you access documents that are relevant to you in a single place.  To add a document to your My Library, click the **...** menu to the right of a document and then select **Save to library**. You can add multiple documents to your My Library by clicking the checkbox next to one or more documents, and then clicking **Save to library** at the top of the page.
 
-:::image type="content" source="../media/stp-my-library.png" alt-text="My Library displays the documents you have subscribed to in two sections.":::
-
 Additionally, the notifications feature lets you configure your My Library so that an email message is sent to you whenever Microsoft updates a document that you've added to your My Library. To set up notifications, go to your My Library and click **Notification Settings**. You can choose the frequency of notifications and specify an email address in your organization to send notifications to. Email notifications include links to the documents that have been updated and a brief description of the update.
 
 If a document is part of a series, you will be subscribed to the series and will receive notifications when there is an update to that series. You can view the individual documents and Series documents that you have subscribed to, in 2 sections as shown below:
+
+:::image type="content" source="../media/stp-my-library.png" alt-text="My Library displays the documents you have subscribed to in two sections.":::
 
 ## Localization support
 
