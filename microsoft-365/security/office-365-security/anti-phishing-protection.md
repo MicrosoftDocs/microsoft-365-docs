@@ -20,8 +20,8 @@ ms.custom:
   - TopSMBIssues
   - seo-marvel-apr2020
 description: Admins can learn about the anti-phishing protection features in Exchange Online Protection (EOP) and Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Anti-phishing protection in Microsoft 365
