@@ -21,9 +21,9 @@ Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/f
 
  ![AI Builder.](../media/content-understanding/ai-builder.png)
 
-You can use AI Builder document processing to create **Extract by text pattern and layout** models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, such as forms and invoices.
+You can use AI Builder document processing to create **Extract by text pattern and layout** models that use machine learning technology to identify and extract key-value pairs and table data from unstructured and free-form documents documents, such as contracts and correspondence.
 
-Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, SharePoint Syntex automates this process. 
+Organizations often receive documents that have no structure in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key-value pairs, and tables from your documents, SharePoint Syntex automates this process. 
 
 > [!NOTE]
 > For more ideas about how to use these models in your organization, see [Get started driving adoption](adoption-getstarted.md) and [Scenarios and use cases](adoption-scenarios.md).
@@ -36,7 +36,9 @@ You use example files to train your model and define the information to be extra
 
 After you train and publish your model, your model creates a [Power Automate flow](/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
 
-A Microsoft 365 admin needs to [enable this type of model](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a **Extract by layout** model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
+You can only create an **Extract by text pattern and layout** model in SharePoint document libraries for which it's enabled. If it has been enabled, you're able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need it enabled on your document library, contact your Microsoft 365 admin.
+
+![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## Requirements
 
