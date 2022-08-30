@@ -18,8 +18,8 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: This article explains the changes being rolled out to the protection features in Azure Information Protection
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Protection features in Azure Information Protection rolling out to existing tenants
