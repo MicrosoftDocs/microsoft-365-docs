@@ -137,7 +137,7 @@ See the following for more information:
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
-### Where can I find scan results?
+### Where can I find the scan results?
 
 To see the Microsoft Defender Offline scan results:
 
