@@ -16,8 +16,8 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how identify a custom mailbox (also known as a user submissions mailbox) to collect spam and phishing messages that are reported by users. Other settings complete the reporting experience for users when they report messages.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # User reported message settings
