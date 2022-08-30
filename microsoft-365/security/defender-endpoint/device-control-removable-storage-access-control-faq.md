@@ -23,7 +23,7 @@ ms.reviewer: tewchen
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-## How do I generate GUID for Group Id/PolicyRule Id/Entry Id?
+## How do I generate GUID for Group ID/PolicyRule ID/Entry ID?
 
 You can generate the GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
 
@@ -31,25 +31,25 @@ You can generate the GUID through online open source, or through PowerShell - [H
 
 ## What are the removable storage media and policy limitations?
 
-Either from the Microsoft Endpoint Manager admin center (Intune) or through Microsoft Graph API, the backend call is done through OMA-URI (GET to read or PATCH to update) and therefore the limitation is the same as any OMA-URI custom configuration profile in Microsoft which is officially 350,000 characters for XML files.
+The backend call is done through OMA-URI (GET to read or PATCH to update) either from the Microsoft Endpoint Manager admin center (Intune), or through Microsoft Graph API. The limitation is the same as any OMA-URI custom configuration profile at Microsoft, which is officially 350,000 characters for XML files.
 
-For example, if you need two blocks of entries per user SID to "Allow"/"Audit allowed" specific users and two blocks of entries at the end to "Deny" all, you will be able to manage 2,276 users.
+For example, if you need two blocks of entries per user SID to "Allow" / "Audit allowed" specific users, and then two blocks of entries at the end to "Deny" all, you'll be able to manage 2,276 users.
 
 ## Why doesn't the policy work?
 
-1. The most common reason is there's no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
+1. The most common reason is there's no required [anti-malware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-2. Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
+2. Another reason could be that the XML file isn't correctly formatted. For example, not using the correct markdown formatting for the "&" character in the XML file or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files. This causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**), and then update.
 
-3. If you are deploying and managing the policy by using Group Policy, please make sure to combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
+3. If you're deploying and managing the policy by using Group Policy, make sure to combine all PolicyRule into one XML file within a parent node called PolicyRules. Also combine all Group into one XML file within a parent node called Groups. If you manage through Intune, keep one PolicyRule one XML file, and one Group one XML file.
 
-If it still doesn't work, you contact support, and share your support cab. To get that file, use Command Prompt as an administrator: 
+If it still doesn't work, contact support, and share your support cab. To get that file, use Command Prompt as an administrator: 
 
 `"%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles`
 
-## There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on my Group Policy
+## There's no configuration UX for **Define device control policy groups** and **Define device control policy rules** on my Group Policy
 
-We don't backport the Group Policy configuration UX, but you can still get the related adml and admx files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
+We don't backport the Group Policy configuration UX, but you can still get the related .adml and .admx files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
 
 ## How do I confirm that the latest policy has been deployed to the target machine?
 
@@ -57,12 +57,12 @@ You can run the PowerShell cmdlet `Get-MpComputerStatus` as an administrator. Th
 
 :::image type="icon" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" border="false":::
 
-## How can I know which machine is using out of date antimalware client version in the organization?
+## How can I know which machine is using out of date anti-malware client version in the organization?
 
-You can use following query to get antimalware client version on the Microsoft 365 security portal:
+You can use following query to get anti-malware client version on the Microsoft 365 security portal:
 
 ```kusto
-//check the antimalware client version
+//check the anti-malware client version
 DeviceFileEvents
 |where FileName == "MsMpEng.exe"
 |where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
