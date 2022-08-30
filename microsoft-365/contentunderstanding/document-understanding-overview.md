@@ -46,6 +46,8 @@ You can use example files to train and test your classifiers and extractors in y
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
+## Requirements
+
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
 
 <!---
