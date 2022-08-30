@@ -20,6 +20,7 @@ ms.collection:
   - m365solution-scenario
   - m365solution-pilotmtpproject
   - zerotrust-solution
+  - highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
