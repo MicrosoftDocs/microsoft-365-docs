@@ -19,8 +19,8 @@ description: "Learn about remediation actions following automated investigation 
 ms.date: 04/30/2021
 ms.custom: 
 - air
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Remediation actions in Microsoft Defender for Office 365

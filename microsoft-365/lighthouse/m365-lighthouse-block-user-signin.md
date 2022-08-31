@@ -25,7 +25,7 @@ You can block a user account if you think it's compromised. When you block a use
 
 ## Block sign-in for a user
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Search users**.
+1. In the left navigation pane in Lighthouse, select **Users** > **Account management** >**Search users**.
 
 2. On the **Search users** tab, enter a user's name in the search box.
 
@@ -41,7 +41,7 @@ You can block a user account if you think it's compromised. When you block a use
 
 1. In the left navigation pane in Lighthouse, select **Users** > **Risky users**.
 
-2. On the **Risky Users** tab, select the set of users you want to take action on.
+2. On the **Risky Users** page, select the set of users you want to take action on.
 
 3. Select **Block sign-in**.
 

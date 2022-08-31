@@ -2,7 +2,7 @@
 title:  Data collection for advanced troubleshooting on Windows
 description: Learn how to use the client analyzer to collect data for complex troubleshooting scenarios
 keywords: analzyer, collect data, troubleshooting mdeclientanalyzer, advanced troubleshooting
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: m365d
 ---
 
 # Data collection for advanced troubleshooting on Windows
