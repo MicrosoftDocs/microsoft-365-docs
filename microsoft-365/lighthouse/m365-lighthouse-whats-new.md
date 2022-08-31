@@ -38,18 +38,6 @@ We've added a Microsoft Edge policy deployment task to the default baseline. Thi
 
 For more information, see [Microsoft Edge security for your business](/deployedge/ms-edge-security-for-business).
 
-### Deployment status reporting 
-
-Microsoft 365 Lighthouse now provides a deployment status for each deployment plan to help you optimize and prioritize your deployment efforts accordingly.
-
-### Enhanced deployment insights for licensing
-
-Microsoft 365 Lighthouse now provides insights around which deployment tasks can't be completed for which users due to insufficient licensing. These insights help you adjust the licensing or the deployment plan accordingly to complete your deployment plan.
-
-### Enhanced baseline deployment with direct links to existing configurations
-
-We've enhanced the baseline deployment experience to make it faster and easier to ensure your customer tenants are healthy and secure. We've added links to detected customer tenant configurations, so you can easily find, review, and modify these tenant configurations in the applicable management portal.
-
 ## July 2022
 
 ### Enhanced baseline deployment
