@@ -25,7 +25,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you have determined which scenarios you want, use the table below to identify the required apps and services for each scenario that you want to implement.
 1. **[Set up your environment and core Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)**: Follow the Setup Guides in the Microsoft 365 admin center to set up Microsoft 365. Keep reading to learn how to access these guides.
 1. **[Set up Microsoft Teams](#step-3-set-up-microsoft-teams)**: Use either the onboarding wizard or the Deploy teams at scale process to configure the service and create your teams.
-1. **[Set up any other services needed for your scenario](#step-4-set-up-other-services)**: Follow the instructions in the sections below to setup these services.
+1. **[Set up any other services needed for your scenario](#step-4-set-up-other-services)**: Follow the instructions in the sections below to set up these services.
 1. **[Configure apps](#step-5-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
 1. **[Devices](#step-6-set-up-devices)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
 
