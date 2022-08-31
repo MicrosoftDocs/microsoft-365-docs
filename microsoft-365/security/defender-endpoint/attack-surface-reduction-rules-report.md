@@ -114,7 +114,7 @@ Clicking on the **ASR rules detections** link at the top of the card also opens 
 
 ### ASR rules configuration summary card
 
-**The top section** focuses on three recommended rules which protect against common attack techniques. This card shows current-state information about the computers in your organization that have the following [Three basic attack surface reduction \(ASR\) rules](#three-basic-asr-rules) set in **Block mode**, **Audit mode**, or **off** (not configured).The **Protect devices** button will show full configuration details for only the three rules; customers can quickly take action to enable these rules.
+**The top section** focuses on three recommended rules, which protect against common attack techniques. This card shows current-state information about the computers in your organization that have the following [Three basic attack surface reduction \(ASR\) rules](#three-basic-asr-rules) set in **Block mode**, **Audit mode**, or **off** (not configured).The **Protect devices** button will show full configuration details for only the three rules; customers can quickly take action to enable these rules.
 
 **The bottom section** surfaces six rules based on the number of unprotected devices per rule. The “View configuration” button surfaces all configuration details for all ASR rules. The “Add exclusion” button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Endpoint Manager (MEM).
 
@@ -174,7 +174,7 @@ Filtering provides a way for you to specify what results are returned:
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-filtering.png" alt-text="Shows the Attack surface reduction (ASR) rules report filtering feature" lightbox="images/attack-surface-reduction-rules-report-main-detections-filtering.png":::
 
-### Detections tab reporting
+### Attack surface reduction rules main detections tab
 
 - **Audit Detections**  Shows how many threat detections were captured by rules set in _Audit_ mode.
 - **Blocked Detections** Shows how many threat detections were blocked by rules set in _Block_ mode.
@@ -202,7 +202,7 @@ For more information about ASR rule audit and block modes, see [Attack surface r
 
 #### Actionable flyout
 
-The “Detection” main page has a list of all detections (files/processes) in the last thirty days. Select on any of the detections to open a with drill-down capabilities.
+The “Detection” main page has a list of all detections (files/processes) in the last 30 days. Select on any of the detections to open with drill-down capabilities.
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
 
