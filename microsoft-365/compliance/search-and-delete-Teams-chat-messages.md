@@ -22,9 +22,6 @@ description: "Use eDiscovery (Premium) and the Microsoft Graph Explorer to searc
 
 You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.
 
-> [!NOTE]
-> This article applies to Microsoft 365 Enterprise organizations. Support for the US Government cloud (including GCC, GCC High, and DoD) is coming soon.
-
 ## Before you search and purge chat messages
 
 - To create an eDiscovery (Premium) case and use collections to search for chat messages, you have to be a member of the **eDiscovery Manager** role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the **Search And Purge** role. This role is assigned to the Data Investigator and Organization Management role groups by default. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
@@ -97,6 +94,20 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 
 For information about using Graph Explorer, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
+> [!NOTE]
+> Because Microsoft Graph is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
+
+You can also purge chat message using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
+
+``
+Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
+``
+
+``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/b16b8eaf-bd69-4002-a436-215978b6464b/searches/194288b8-f8ff-4da4-ba38-0b515d569581/purgeData'
+``
+
+For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
+
 > [!IMPORTANT]
 > APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the Version selector.
 
@@ -155,6 +166,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 After you run the POST request to purge chat messages, these messages are removed from the Teams client and replaced with an automatically generated stating that an admin has removed the message. For an example of this message, see the [End-user experience](#end-user-experience) section in this article.
 
 Purged chat messages are moved to the SubstrateHolds folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+
+> [!NOTE]
+> Because Microsoft Graph is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
 
 ## Step 7: Reapply holds and retention policies to data sources
 
