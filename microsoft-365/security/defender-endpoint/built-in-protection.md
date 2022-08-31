@@ -34,7 +34,10 @@ Built-in protection is a set of default settings that are rolling out to help en
 
 ## What does the notification look like?
 
+Expect to receive two types of notifications:
 
+- A message center post indicating that built-in protection is coming soon; and 
+- A banner in the Microsoft 365 Defender portal
 
 ## Can I opt out?
 
@@ -42,7 +45,7 @@ You can opt out of built-in protection settings by specifying your settings. For
 
 > [!NOTE]
 > **We do not recommend turning tamper protection off**. Tamper protection provides you with better ransomware protection.
-> You must be a global administrator or security administrator to perform the following procedure:
+> You must be a global administrator or security administrator to perform the following procedure.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -58,11 +61,11 @@ Built-in protection is a set of default settings. You aren't required to keep th
 
 | Task | Description |
 |:---|:---|
-| Determine whether tamper protection is turned on | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. <br/>2. Go to **Settings** > **Endpoints** > **Advanced features** > **Tamper protection**.  |
-| Manage tamper protection tenant wide using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. <br/>2. Go to **Settings** > **Endpoints** > **Advanced features**. <br/>3. Set **Tamper protection** to **On** (*recommended*) or **Off**.<br/>4. Select **Save preferences**. <br/><br/>See [Manage tamper protection for your organization using Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md). |
-| Set tamper protection settings for some, but not all, devices | Set up endpoint security policies that are applied to specific devices. See the following articles: <br/>- [Manage tamper protection for your organization using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)<br/>- [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
-| Turn tamper protection on or off on an individual device | 1. On your Windows device, select **Start**, and start typing *Security*. <br/>2. In the search results, select **Windows Security**.<br/>3. Select **Virus & threat protection** > **Virus & threat protection settings**.<br/>4. Set **Tamper Protection** to **On** (*recommended*) or **Off**. <br/><br/>Note that if the device is onboarded to Defender for Endpoint, or the device is managed in the Microsoft Endpoint Manager admin center, those settings will override user settings on the individual device. <br/><br/>See [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md). |
-| Temporarily disable tamper protection on a device for troubleshooting purposes | See the following articles: <br/>- [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)<br/>- [Troubleshooting mode scenarios in Microsoft Defender for Endpoint](troubleshooting-mode-scenarios.md) |
+| Determine whether tamper protection is turned on | <ol><li>Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.</li><li>2. Go to **Settings** > **Endpoints** > **Advanced features** > **Tamper protection**. </li></ol> |
+| Manage tamper protection tenant wide using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | <ol><li>Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.</li><li>Go to **Settings** > **Endpoints** > **Advanced features**.</li><li>Set **Tamper protection** to **On** (*recommended*) or **Off**.</li><li>4. Select **Save preferences**.</li></ol>See [Manage tamper protection for your organization using Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md). |
+| Set tamper protection settings for some, but not all, devices | Set up endpoint security policies that are applied to specific devices. See the following articles: </ul><li>[Manage tamper protection for your organization using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)</li><li>[Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)</li></ul>|
+| Turn tamper protection on or off on an individual device | <ol><li>On your Windows device, select **Start**, and start typing *Security*. </li><li>In the search results, select **Windows Security**.</li><li>Select **Virus & threat protection** > **Virus & threat protection settings**.</li><li>Set **Tamper Protection** to **On** (*recommended*) or **Off**. </li></ol>Note that if the device is onboarded to Defender for Endpoint, or the device is managed in the Microsoft Endpoint Manager admin center, those settings will override user settings on the individual device. See [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md). |
+| Temporarily disable tamper protection on a device for troubleshooting purposes | See the following articles:<ul><li>[Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)</li><li>[Troubleshooting mode scenarios in Microsoft Defender for Endpoint](troubleshooting-mode-scenarios.md)</li></ul> |
 
 ## See also
 
