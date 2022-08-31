@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Business Premium trial playbook"
+title: "Microsoft 365 Business Premium trial playbook"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,7 +17,7 @@ search.appverid:
 description: "Make the most of your Microsoft 365 Business Premium trial. Try out some of the key productivity and security capabilities."
 ---
 
-# Trial playbook: Microsoft Business Premium
+# Trial playbook: Microsoft 365 Business Premium
 
 Welcome to the Microsoft Business Premium trial playbook. This playbook will help you make the most of your 30-day free trial by experiencing how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Using Microsoft recommendations, learn how you can set up your threat protection features, analyze detected threats, and respond to cyberattacks.
 
