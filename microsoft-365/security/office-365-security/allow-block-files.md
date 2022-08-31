@@ -83,10 +83,9 @@ For instructions, see [Report questionable email attachments to Microsoft](admin
 
 ### Use the Microsoft 365 Defender portal to create block entries for files in the Tenant Allow/Block List
 
-You create block entries for files directly in the Tenant Allow/Block List.
+You can create block entries for files directly in the Tenant Allow/Block List.
 
-> [!NOTE]
-> Email messages that contain these blocked files are blocked as *malware*.
+Email messages that contain these blocked files are blocked as *malware*.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -271,7 +270,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 3. On the **Files** tab, do one of the following steps:
 
    - Select the check box of the entry that you want to remove, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-   - Select the entry that you want to remove by click anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+   - Select the entry that you want to remove by clicking anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 4. In the warning dialog that appears, click **Delete**.
 
