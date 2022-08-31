@@ -27,9 +27,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is SharePoint Syntex?
+          - text: What is Syntex?
             url: syntex-overview.md
-          - text: AI models
+          - text: Syntex models
             url: model-types-overview.md
       - linkListType: learn
         links:
@@ -41,28 +41,42 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create a model
-            url: create-syntex-model
           - text: Licensing
             url: syntex-licensing.md
+          - text: Set up Syntex
+            url: set-up-content-understanding.md
+          - text: Create a content center
+            url: create-a-content-center.md
 
 # Card 3
-  - title: Build models
+  - title: Build Syntex models
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
+          - text: Custom models
+            url: model-types-overview.md#custom-models
+          - text: Compare custom models
+            url: difference-between-document-understanding-and-form-processing-model.md
+          - text: Prebuilt models
+            url: model-types-overview.md#trained-models
           - text: Create a model
             url: create-syntex-model.md
-          - text: Train a model
-            url: create-a-classifier.md
 
     # Card 4
-  - title: Manage models
+  - title: Manage Syntex models
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Apply a model
+          - text: Discover and apply a model
             url: apply-a-model.md
+          - text: Share an enterprise model
+            url: model-discovery.md
+          - text: Add a retention label
+            url: apply-a-retention-label-to-a-model.md
+          - text: Add a sensitivity label
+            url: apply-a-sensitivity-label-to-a-model.md
+          - text: Analyze model usage
+            url: model-usage-analytics.md
 
     # Card 5
   - title: Content assembly
@@ -71,7 +85,7 @@ landingContent:
         links:
           - text: Create documents
             url: content-assembly.md
-          - text: Create documents
+          - text: Use with Power Automate
             url: automate-document-generation.md
 
     # Card 6
@@ -85,6 +99,8 @@ landingContent:
             url: adoption-scenarios.md
           - text: Assessment tool
             url: adoption-assessment-tool.md
+          - text: Run a trial
+            url: trial-syntex.md
 
     # Card 7
   - title: Extensibility
@@ -95,3 +111,13 @@ landingContent:
             url: powershell-syntex-intro.md
           - text: Syntex Model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+
+    # Card 8
+  - title: Get support
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Tech Community blog
+            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
+          - text: FAQ
+            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
