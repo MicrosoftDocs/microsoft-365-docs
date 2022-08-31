@@ -166,7 +166,7 @@ Microsoft 365 Defender automatically investigates all the incidents' supported e
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
-### Approve or reject pending actions
+### Approve or reject remediation actions
 
 For incidents with a remediation status of **Pending approval**, you can approve or reject a remediation action while reviewing the incident. On selecting the **Evidence and Response** tab for an incident, a side pane will open with the relevant options to approve or reject the remediation action:
 
