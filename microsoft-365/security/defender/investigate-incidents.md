@@ -172,7 +172,7 @@ For incidents with a remediation status of **Pending approval**, you can approve
     - **Approve pending actions**
     - **Reject pending actions**
 
-:::image type="content" source="../../media/investigate-incidents/m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/m365-defender-approve-reject-action.png":::
+:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/m365-defender-approve-reject-action.png":::
 
 ## Graph (Preview)
 

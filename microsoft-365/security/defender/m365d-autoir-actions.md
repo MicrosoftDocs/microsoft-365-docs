@@ -51,7 +51,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
-2. In the navigation pane, choose **Action center**. 
+2. In the navigation pane, choose **Action center**.
 
 3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
