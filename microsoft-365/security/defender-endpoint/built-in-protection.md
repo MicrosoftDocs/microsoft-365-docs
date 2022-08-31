@@ -61,7 +61,7 @@ You can opt out of built-in protection by specifying your own security settings.
 
 ## Can I change built-in protection settings?
 
-Built-in protection is a set of default settings. You aren't required to keep these default settings in place. You can always change your settings to suit your business needs, as listed in the following table. 
+Built-in protection is a set of default settings. You aren't required to keep these default settings in place. You can always change your settings to suit your business needs. The following table lists tasks your security team might perform, along with links to learn more. 
 
 | Task | Description |
 |:---|:---|
