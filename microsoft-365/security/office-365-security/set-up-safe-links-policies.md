@@ -18,8 +18,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Set up Safe Links policies in Microsoft Defender for Office 365

@@ -15,8 +15,8 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ---
 
 # Microsoft Defender for Office 365 in Microsoft 365 Defender
