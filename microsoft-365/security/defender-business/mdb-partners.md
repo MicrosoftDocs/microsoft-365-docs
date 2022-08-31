@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Business and Microsoft partner resources
-description: Learn about resources, such as MSP PSA and RMM integration with Defender for Business.
+description: Learn about partner resources, such as MSP PSA and RMM integration with Defender for Business, and Microsoft 365 Lighthouse.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
