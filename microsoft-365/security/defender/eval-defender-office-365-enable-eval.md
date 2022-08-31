@@ -36,7 +36,6 @@ Use the following steps to enable the evaluation for Microsoft Defender for Offi
 
 :::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="The steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
 
-
 - [Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
 - [Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)
 - [Step 3: Audit accepted domains](#step-3-audit-accepted-domains)
