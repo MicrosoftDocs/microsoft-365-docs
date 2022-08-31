@@ -3,7 +3,8 @@ title: Manage access to Microsoft 365 Defender data in the Microsoft 365 Defende
 description: Learn how to manage permissions to data in Microsoft 365 Defender
 keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +20,6 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Manage access to Microsoft 365 Defender with Azure Active Directory global roles
