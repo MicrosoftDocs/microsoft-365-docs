@@ -168,9 +168,7 @@ Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, C
 
 ### Approve or reject pending actions
 
-For incidents with a remediation status of **Pending approval**, you can approve or reject a remediation action while reviewing the incident. On selecting the **Evidence and Response** tab for an incident, a side pane will open with the options:
-    - **Approve pending actions**
-    - **Reject pending actions**
+For incidents with a remediation status of **Pending approval**, you can approve or reject a remediation action while reviewing the incident. On selecting the **Evidence and Response** tab for an incident, a side pane will open with the relevant options to approve or reject the remediation action:
 
 :::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
 
