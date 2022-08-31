@@ -68,7 +68,7 @@ To access the Attack surface reduction rules report in the Microsoft 365 Securit
 |:---|:---|
 | View Data? | unsure? |
 
-To Assign these permissions:
+To assign these permissions:
 
 1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with Security administrator or Global administrator role assigned.
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Roles** (under **Permissions**).
