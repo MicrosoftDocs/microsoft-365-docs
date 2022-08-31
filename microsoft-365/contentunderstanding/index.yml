@@ -71,3 +71,27 @@ landingContent:
         links:
           - text: Create documents
             url: content-assembly.md
+          - text: Create documents
+            url: automate-document-generation.md
+
+    # Card 6
+  - title: Adoption
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Drive adoption
+            url: adoption-getstarted.md
+          - text: Scenarios and use cases
+            url: adoption-scenarios.md
+          - text: Assessment tool
+            url: adoption-assessment-tool.md
+
+    # Card 7
+  - title: Extensibility
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: PowerShell for Syntex
+            url: powershell-syntex-intro.md
+          - text: Syntex Model REST API
+            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
