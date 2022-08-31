@@ -93,6 +93,9 @@ Currently, AIR only supports the following OS versions:
 - Windows 10, version [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later
 - Windows 11
 
+> [!NOTE]
+> Automated investigation and response on Windows Server 2012 R2 and Windows Server 2016 requires [Unified Agent]/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) to be installed. 
+
 ## Next steps
 
 - [Learn more about automation levels](automation-levels.md)
