@@ -54,9 +54,14 @@ You can opt out of built-in protection settings. If you prefer to not have tampe
 
 ## Can I change built-in protection settings?
 
-Built-in protection is a set of default settings. You aren't required to keep these default settings in place. You can always change your settings to suit your business needs, including turning off built-in protection (although we don't recommend it). You can also exclude certain devices from receiving built-in protection settings. And, if you're managing your devices and security settings in the Microsoft Endpoint Manager admin center, those policies and settings will take precedence over settings that you configure on individual devices or in the Microsoft 365 Defender portal.
+Built-in protection is a set of default settings. You aren't required to keep these default settings in place. You can always change your settings to suit your business needs, as listed in the following table. 
 
-
+| To do this...| See these resources...|
+|:---|:---|
+| Determine whether tamper protection is turned on | |
+| Manage tamper protection tenant wide using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | [Manage tamper protection for your organization using Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) |
+| Set tamper protection settings for some, but not all, devices | [Manage tamper protection for your organization using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md) <p> [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
+| Temporarily disable tamper protection on a device for troubleshooting purposes | [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)<p>[Troubleshooting mode scenarios in Microsoft Defender for Endpoint](troubleshooting-mode-scenarios.md) |
 
 
 
