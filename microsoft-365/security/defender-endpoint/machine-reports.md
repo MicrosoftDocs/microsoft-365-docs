@@ -113,6 +113,10 @@ The Sensor health card displays information about the sensor state on devices. S
 
 Devices that are either experiencing impaired communications, or devices from which no sensor data is detected could expose your organization to risks, and warrant investigation. Likewise, devices that are inactive for extended periods of time could expose your organization to threats due to out-of-date software. Devices that are inactive for long periods of time also warrant investigation.
 
+> [!NOTE]
+>
+> In a small percentage of cases, the numbers and distributions reported when clicking on the horizontal Sensor health bar graph will be out of synch with the values shown in the **Device inventory** page. The disparity in values can occur because the Sensor Health Reports has a different refresh cadence than the Device Inventory page.
+
 ### Operating systems and platforms card
 
 This card shows the distribution of operating systems and platforms that exist within your organization.
@@ -140,9 +144,9 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 | _version_ cards: | _update_ cards{<a id="fn1">1</a>} |
 |:---|:---|
 | [Antivirus engine version card](#antivirus-engine-version-card) <br> [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card) <br> [Antivirus platform version card](#antivirus-platform-version-card) | [Antivirus engine updates card](#antivirus-engine-updates-card) <br> [Security intelligence updates card](#security-intelligence-updates-card) <br> [Antivirus platform updates card](#antivirus-platform-updates-card) |
-| The three update cards provide links to resources to learn more. | The three version cards provide flyout reports that provide additional information, and enable further exploration. |
+| The three version cards provide flyout reports that provide additional information, and enable further exploration. | The three up-to-date reporting cards provide links to resources to learn more. |
 
-<sup>{[1](#fn1)}</sup> For the three _updates_ cards, "**No data available**" indicates devices that aren't reporting update status. Devices that aren't reporting update status can be due to various reasons, such as:
+<sup>{[1](#fn1)}</sup> For the three _updates_ cards (also known as up-to-date reporting cards), "**No data available**" indicates devices that aren't reporting update status. Devices that aren't reporting update status can be due to various reasons, such as:
 
 - Computer is disconnected from the network
 - Computer is powered down or in a hibernation state
@@ -151,7 +155,16 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 - Cloud protection isn't enabled
 
 > [!NOTE]
-> Currently, "Up-to-date" reporting is only available for Windows devices.  Up-to-date reporting generates information about Windows devices with cloud protection enabled and engine version: 1.1.19300.2 and newer. Cross-platform devices, such as Mac and Linux, are listed under "no data available."
+> **Prerequisites:**
+>
+> Up-to-date reporting for Windows devices requires that cloud protection be enabled.
+>
+> Currently, "Up-to-date" reporting is only available for Windows devices.
+>
+> Cross-platform devices, such as Mac and Linux, are listed under "no data available."
+>
+> - **Minimum Engine version**: 1.1.19300.2 or newer
+> - **Minimum Defender platform version**: 4.18.2202.1 or newer
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -170,14 +183,43 @@ To add or remove specific types of information on the **Microsoft Defender Antiv
 
 >:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
+The following table contains a list terms that are new to Microsoft Defender Antivirus reporting.
+
+| Column name | Description |
+|:---|:---|
+| Security intel publish time  | Indicates Microsoft’s release date of the security intelligence update version on the device. Devices with a security intelligence publish time greater than 7 days are considered out of date in the reports. |
+| Last seen | Indicates date when device last had connection. |
+| Data refresh timestamp  | Indicates when client events were last received for reporting on AV mode, AV engine version,  AV platform version, AV security intelligence version, and scan information. |
+| Signature refresh time | Indicates when client events were last received for reporting on engine, platform, and signature up to date status. |
+
 Within the flyout: clicking on the name of the device will redirect you to the "Device page" for that device, where you can access detailed reports.
 
-You can use the **Export** button within the _Microsoft Defender Antivirus details_ flyout to export a report to an Excel spreadsheet. Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
+#### Export report
+
+There are two levels of reports that you can export:
+
+##### Top level export
+
+There are two different export csv functionalities through the portal:
+
+- **Top-level export** You can use the top level **Export** button  to gather an all-up Microsoft Defender Antivirus health report (500K limit).
+
+>:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+
+- **Fly-out level export**
+
+You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100K limit)/.
+
+Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
 
 For information on exporting using API, see the following articles:
 
 - [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
+
+> [!IMPORTANT]
+>
+>Currently, _JSON response api_ is released to general availability (GA); _Via files api_ is only available in public preview.
 
 ### Microsoft Defender Antivirus version and update cards functionality
 
@@ -246,12 +288,30 @@ For more information on the current versions and how to update the different Mic
 Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
 Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft anti-malware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
 
-#### Antivirus platform version card
+##### Antivirus platform version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
 For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-#### Antivirus engine updates card
+#### Up-to-date cards
+
+The up-to-date cards indicate when **Antivirus engine**, **Security intelligence**, and **Antivirus platform** versions are up-to-date. There are three possible states: _up-to-date_, _out-of-date_, and _no_data_available_.
+
+Definitions for _up-to-date_, _out-of-date_, and _no_data_available_ are provided for each card below.
+
+> [!NOTE]
+> **Prerequisites:**
+>
+> Up-to-date reporting for Windows devices requires that cloud protection be enabled.
+>
+> Currently, "Up-to-date" reporting is only available for Windows devices.
+>
+> Cross-platform devices, such as Mac and Linux, are listed under "no data available."
+>
+> - **Minimum Engine version**: 1.1.19300.2 or newer
+> - **Minimum Defender platform version**: 4.18.2202.1 or newer
+
+##### Antivirus engine updates card
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
 The general definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release (the Engine is _usually_ released monthly, via Windows Update (WU)).  There's a three-day grace period from the day when WU is released.
@@ -264,7 +324,7 @@ The general definition of ‘_Up to date_’ – the engine version on the devic
 | NOT communicated to Defender in last seven days and whose last status was "Up-to-date"  | No data available  |
 | NOT communicated to Defender in last seven days and whose last status was "Out-of-date"  | No data available |
 
-#### Security intelligence updates card
+##### Security intelligence updates card
 
 This card identifies devices that have security intelligence versions that are up to date versus out of date.
 The general definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
