@@ -87,7 +87,7 @@ For incidents with a remediation status of **Pending approval**, you can also ap
 6. Select an entity to open its flyout pane.
 7. Review the information, and then take one of the following steps:
    - Select **Approve pending action** to initiate a pending action.
-   - Select **Reject pending** to prevent a pending action from being taken.
+   - Select **Reject pending action** to prevent a pending action from being taken.
 
 :::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
 
