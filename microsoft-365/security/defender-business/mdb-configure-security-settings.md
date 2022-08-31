@@ -16,6 +16,7 @@ ms.collection:
  - SMB
  - M365-security-compliance
  - m365solution-mdb-setup
+ - highpri
 ---
 
 # View and edit security policies and settings in Microsoft Defender for Business
