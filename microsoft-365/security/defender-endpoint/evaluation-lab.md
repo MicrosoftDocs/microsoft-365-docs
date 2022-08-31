@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-evalutatemtp
+  - highpri
 ms.topic: article
 ms.technology: mde
 ---

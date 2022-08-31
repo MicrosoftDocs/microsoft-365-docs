@@ -1,8 +1,9 @@
 ---
 title: Microsoft security portals and admin centers
 description: Find the right Microsoft admin center or portal for managing various services related to Microsoft 365 security
-keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender Security Center, Microsoft Defender for Identity, Microsoft Defender for Office 365, WDSI, SCC, Intune, MDM, MEM, ASC, Defender for Cloud Apps, Azure AD, security & compliance center
-ms.prod: m365-security
+keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender Security Center, Microsoft Defender for Identity, Microsoft Defender for Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security , Azure AD, security & compliance center
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -15,7 +16,6 @@ ms.collection:
   - M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
 ---
 
 # Microsoft security portals and admin centers
