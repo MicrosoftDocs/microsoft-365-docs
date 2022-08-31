@@ -26,7 +26,7 @@ f1.keywords: NOCSH
 Built-in protection is a set of default settings that are rolling out to help ensure your devices are protected. These default settings are designed to protect devices from ransomware and other threats. Initially, built-in protection will include turning [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on for your tenant. 
 
 - When built-in protection becomes available, you'll be notified that your tenant is about to receive it. 
-- When built-in protection arrives, tamper protection will be turned on for your tenant, and will be applied to your organization's Windows devices. (You can opt out or change your built-in protection settings.)
+- When built-in protection arrives, tamper protection will be turned on for your tenant, and will be applied to your organization's Windows devices. (You can [opt out](#can-i-opt-out) or [change your built-in protection settings](#can-i-change-built-in-protection-settings).)
 - After built-in protection has arrived, whenever new devices are onboarded to Defender for Endpoint, built-in protection settings will be applied to any new devices running Windows.
 
 > [!NOTE]
@@ -35,9 +35,10 @@ Built-in protection is a set of default settings that are rolling out to help en
 ## What does the notification look like?
 
 
+
 ## Can I opt out?
 
-You can opt out of built-in protection settings. For example, if you prefer to not have tamper protection turned on automatically for your tenant, you can explicitly opt out.
+You can opt out of built-in protection settings. If you prefer to not have tamper protection turned on automatically for your tenant, you can explicitly opt out.
 
 > [!NOTE]
 > We do not recommend turning tamper protection off. Tamper protection provides you with better ransomware protection.
@@ -54,6 +55,8 @@ You can opt out of built-in protection settings. For example, if you prefer to n
 ## Can I change built-in protection settings?
 
 Built-in protection is a set of default settings. You aren't required to keep these default settings in place. You can always change your settings to suit your business needs, including turning off built-in protection (although we don't recommend it). You can also exclude certain devices from receiving built-in protection settings. And, if you're managing your devices and security settings in the Microsoft Endpoint Manager admin center, those policies and settings will take precedence over settings that you configure on individual devices or in the Microsoft 365 Defender portal.
+
+
 
 
 
