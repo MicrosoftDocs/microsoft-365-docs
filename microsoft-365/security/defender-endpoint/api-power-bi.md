@@ -26,7 +26,6 @@ ms.custom: api
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -39,17 +38,17 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 ## Connect Power BI to Advanced Hunting API
 
-- Open Microsoft Power BI.
+1. Open Microsoft Power BI.
 
-- Click **Get Data** \> **Blank Query**.
+1. Click **Get Data** \> **Blank Query**.
 
   :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="The Blank Query option under the Get Data menu item" lightbox="images/power-bi-create-blank-query.png":::
 
-- Click **Advanced Editor**.
+1. Click **Advanced Editor**.
 
   :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="The Advanced Editor menu item" lightbox="images/power-bi-open-advanced-editor.png":::
 
-- Copy the below and paste it in the editor:
+1. Copy the below and paste it in the editor:
 
 ```
     let
@@ -89,32 +88,32 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
     in Table
 ```
 
-- Click **Done**.
+1. Click **Done**.
 
-- Click **Edit Credentials**.
+1. Click **Edit Credentials**.
 
     :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="The Edit Credentials menu item" lightbox="images/power-bi-edit-credentials.png":::
     
 
-- Select **Organizational account** \> **Sign in**.
+1. Select **Organizational account** \> **Sign in**.
 
     :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="The Sign in option in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- Enter your credentials and wait to be signed in.
+1. Enter your credentials and wait to be signed in.
 
-- Click **Connect**.
+1. Click **Connect**.
 
     :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- Now the results of your query will appear as a table and you can start to build visualizations on top of it!
+Now the results of your query will appear as a table and you can start to build visualizations on top of it!
 
-- You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.
+You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.
 
 ## Connect Power BI to OData APIs
 
-- The only difference from the above example is the query inside the editor.
+The only difference from the previous example is the query inside the editor. Follow steps 1-3 above. 
 
-- Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:
+At step 4, instead of the code in that example, copy the code below and paste it in the editor to pull all **Machine Actions** from your organization:
 
 ```
     let
@@ -126,8 +125,8 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
         Source
 ```
 
-- You can do the same for **Alerts** and **Machines**.
-- You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md).
+You can do the same for **Alerts** and **Machines**.
+You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md).
 
 ## Power BI dashboard samples in GitHub
 
@@ -139,6 +138,6 @@ View the Microsoft Defender for Endpoint Power BI report samples. For more infor
 
 ## Related topics
 
-- [Defender for Endpoint APIs](apis-intro.md)
-- [Advanced Hunting API](run-advanced-query-api.md)
+- [Defender for Endpoint APIs](apis-intro.md) \
+- [Advanced Hunting API](run-advanced-query-api.md) \
 - [Using OData Queries](exposed-apis-odata-samples.md)
