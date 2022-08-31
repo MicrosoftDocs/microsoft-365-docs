@@ -143,6 +143,8 @@ To get ready for implementing SharePoint Syntex, you need to:
 
 ## See also
 
+[SharePoint Syntex adoption center](https://adoption.microsoft.com/en-us/sharepoint-syntex/adoption/)
+
 [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
 
 [Overview of model types in SharePoint Syntex](syntex-overview.md)
