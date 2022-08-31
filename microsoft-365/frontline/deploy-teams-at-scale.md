@@ -137,7 +137,7 @@ Follow these steps to install and connect to the latest version of the Teams Pow
 
 Now that you've created your CSV files and set up your environment, you're ready to deploy your teams.
 
-You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment) cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/get-csbatchteamsdeploymentstatus) cmdlet to track the progress and status of each batch.
+You use the ```New-CsBatchTeamsDeployment``` cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the ```Get-CsBatchTeamsDeploymentStatus``` cmdlet to track the progress and status of each batch.
 
 1. Run the following to deploy a batch of teams. In this command, you specify the path to your CSV files and the email addresses of up to five recipients to notify about this deployment.
 
@@ -161,7 +161,5 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchtea
 
 ## Related articles
 
-- [New-CsBatchTeamsDeployment](/powershell/module/teams/new-csbatchteamsdeployment)
-- [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/get-csbatchteamsdeploymentstatus)
 - [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
 - [Learn where to start with a frontline deployment](flw-deploy-overview.md)
