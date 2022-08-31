@@ -247,6 +247,8 @@
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
+### [Built-in protection helps guard against ransomware](built-in-protection.md)
+
 ### [Attack surface reduction]()
 #### [Attack surface reduction overview](overview-attack-surface-reduction.md)
 #### [Attack surface reduction (ASR) rules]()
@@ -302,7 +304,6 @@
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
-#### [Built-in protection helps guard against ransomware](built-in-protection.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 #### [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Why cloud protection should be on](why-cloud-protection-should-be-on-mdav.md)
