@@ -168,7 +168,7 @@ Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, C
 
 ### Approve or reject remediation actions
 
-For incidents with a remediation status of **Pending approval**, you can approve or reject a remediation action from within in the incident.
+For incidents with a remediation status of **Pending approval**, you can approve or reject a remediation action from within the incident.
 
 1. In the navigation pane, go to **Incidents & alerts** \> **Incidents**.
 2. Filter on **Pending action** for the Automated investigation state.

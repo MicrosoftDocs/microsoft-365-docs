@@ -71,10 +71,10 @@ Whether taken automatically or upon approval, an automated investigation can res
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
    - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md).
- 
+
 ### Approve or reject remediation actions
 
-For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within in the incident.
+For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within the incident.
 
 1. In the navigation pane, go to **Incidents & alerts** \> **Incidents**.
 2. Filter on **Pending action** for the Automated investigation state.
