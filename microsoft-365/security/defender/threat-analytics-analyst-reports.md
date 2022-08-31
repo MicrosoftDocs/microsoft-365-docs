@@ -5,7 +5,8 @@ description: Learn about the analyst report section of each threat analytics rep
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
