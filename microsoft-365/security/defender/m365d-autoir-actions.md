@@ -66,7 +66,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 > [!TIP]
 > You now have more options to review and approve/reject a remediation action.
 >
-> In addition to using the Action center, you can also approve or reject a remediation action while reviewing an incident. On the **Evidence and Response** tab, select an item that has the Remediation status value of Pending approval. A side pane opens, where you can approve or reject the remediation action, for more information, see [Approve or reject pending actions](./investigate-incidents.md#approve-or-reject-pending-actions)
+> In addition to using the Action center, you can also approve or reject a remediation action while reviewing an incident. For more information, see [Approve or reject pending actions](./investigate-incidents.md#approve-or-reject-pending-actions).
 
 ## Undo completed actions
 
