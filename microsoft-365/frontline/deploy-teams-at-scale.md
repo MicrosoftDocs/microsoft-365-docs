@@ -104,7 +104,7 @@ Use the following examples to help you create your CSV files. Here, we've named 
 
 ### Step 2: Set up your environment
 
-Follow these steps to install and connect to the latest preview version of the Teams PowerShell module.
+Follow these steps to install and connect to the latest version of the Teams PowerShell module.
 
 1. Install PowerShell version 7 or later. For step-by-step guidance, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 1. Run PowerShell in administrator mode.
@@ -115,7 +115,7 @@ Follow these steps to install and connect to the latest preview version of the T
     ```
 
     If you get an error message, you're already set. Go to the next step.
-1. Download  and install the [latest preview version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams). You must be running version 4.3.1 (preview) or a later preview version.  
+1. Download and install the [latest version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams). You must be running version 4.3.1 or a later version.  
 
 1. Run the following to connect to Teams.
 
