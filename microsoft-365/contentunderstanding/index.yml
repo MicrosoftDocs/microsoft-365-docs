@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft SharePoint Syntex documentation # < 60 chars
-summary: SharePoint Syntex is a Microsoft 365 service that provides an end-to-end intelligent document processing solution for your organization.
+summary: SharePoint Syntex is a Microsoft 365 service that uses advanced content artificial intelligence (AI) and machine learning to provide an end-to-end intelligent document processing solution for your organization.
 metadata:
   title: Microsoft SharePoint Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This page contains links to some important topics related to Microsoft SharePoint Syntex features. Start here to learn about compliance for SharePoint Syntex. # Required; article description that is displayed in search results. < 160 chars.
@@ -23,7 +23,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card 1
-  - title: About SharePoint Syntex
+  - title: About Syntex
     linkLists:
       - linkListType: overview
         links:
