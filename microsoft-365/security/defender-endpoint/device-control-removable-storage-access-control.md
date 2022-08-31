@@ -26,7 +26,7 @@ ms.reviewer: tewchen
 > [!NOTE]
 > The Group Policy management and Intune OMA-URI/Custom Policy management of this product are now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-## Device Control Removable Storage Access Control overview
+## Overview
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature enables you to audit, allow or prevent the read, write or execute access to removable storage with or without exclusion.
 
@@ -66,7 +66,7 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 > [!NOTE]
 > None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
 
-## Device Control Removable Storage Access Control scenarios
+## Scenarios
 
 To help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control, we have put together some common scenarios for you to follow.
 
@@ -106,7 +106,7 @@ To help you familiarize with Microsoft Defender for Endpoint Removable Storage A
 
     2. Policy 2: Audit Write and Execute access to others. An example of this use case is: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
+## View data in Microsoft Defender for Endpoint
 
 The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
