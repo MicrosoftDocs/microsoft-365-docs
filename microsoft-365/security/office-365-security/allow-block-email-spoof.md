@@ -279,7 +279,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 3. On **Domains & addresses** tab, do one of the following steps:
 
    - Select the check box of the entry that you want to remove, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-   - Select the entry that you want to remove by click anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+   - Select the entry that you want to remove by clicking anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 4. In the warning dialog that appears, click **Delete**.
 
