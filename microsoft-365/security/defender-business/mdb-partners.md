@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Business and Microsoft partner resources
-description: Learn about resources available for managed service providers and Microsoft Defender for Business.
+description: Learn about resources, such as MSP PSA and RMM integration with Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,7 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/03/2022
+ms.date: 08/31/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -35,7 +35,7 @@ Microsoft partners have access to resources, programs, and tools that empower pa
 
 Most managed service providers (MSPs) offer a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats.
 
-If you're a Microsoft MSP and you want to integrate Microsoft endpoint security capabilities with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software, you can use the [Defender for Endpoint APIs](../defender-endpoint/management-apis.md). Using the Defender for Endpoint APIs, with your RMM tools and PSA software, you can:
+**If you're a Microsoft MSP and you want to integrate Microsoft endpoint security capabilities with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software, you can use the [Defender for Endpoint APIs](../defender-endpoint/management-apis.md)**. Using the Defender for Endpoint APIs, with your RMM tools and PSA software, you can:
 
 - Get access to your customers' Microsoft 365 Defender portal to [address alerts and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
@@ -51,7 +51,7 @@ Use the following resources to learn more:
 
 ## Resources for Cloud Solution Providers
 
-Microsoft Cloud Solution Providers (CSPs) can go beyond reselling licenses and be more involved in customers' business. For example, CSPs can use Microsoft 365 Lighthouse to manage small and medium-sized business customers' security settings and capabilities. CSPs can also view and manage detected threats, including running antivirus scans on devices.
+Microsoft Cloud Solution Providers (CSPs) can go beyond reselling licenses and be more involved in customers' business. For example, CSPs can use Microsoft 365 Lighthouse to manage small and medium-sized business customers' security settings and capabilities. CSPs can also view and manage detected threats, and initiate antivirus scans on devices.
 
 | Resource | Description |
 |:---|:---|
