@@ -247,7 +247,7 @@
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
-### [Built-in protection helps guard against ransomware](built-in-protection.md)
+### [Built-in protection](built-in-protection.md)
 
 ### [Attack surface reduction]()
 #### [Attack surface reduction overview](overview-attack-surface-reduction.md)
