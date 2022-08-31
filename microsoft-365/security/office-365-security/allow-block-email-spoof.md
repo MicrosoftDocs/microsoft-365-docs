@@ -14,8 +14,8 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
 description: Admins can learn how to allow or block emails and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Allow or block emails using the Tenant Allow/Block List
@@ -85,7 +85,7 @@ For instructions, see [Report questionable email to Microsoft](admin-submission.
 You create block entries for domains and email addresses directly in the Tenant Allow/Block List.
 
 > [!NOTE]
-> Email messages from these blocked domains and email addresses are identified as *high confidence spam* (SCL = 9) and is moved to the Junk Email folder by default.
+> Email messages from these senders are marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](configure-your-spam-filter-policies.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
 >
 > Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 

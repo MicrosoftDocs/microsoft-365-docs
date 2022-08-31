@@ -11,8 +11,8 @@ ms.localizationpriority: medium
 ms.collection:
   - M365-security-compliance
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Report false positives and false negatives in Outlook
