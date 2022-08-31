@@ -181,7 +181,7 @@ The following example includes the blocked actions:
 ```kusto
 
 DeviceEvents
-|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
