@@ -5,7 +5,8 @@ description: Learn what steps you need to take to get started with Microsoft 365
 keywords: get started, microsoft 365 defender, turn on, onboard, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,9 +18,9 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365solution-getstarted
+  - highpri
 ms.custom: intro-get-started
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Get started with Microsoft 365 Defender
