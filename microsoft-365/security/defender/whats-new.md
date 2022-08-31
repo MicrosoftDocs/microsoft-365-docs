@@ -149,5 +149,5 @@ The security operations team can view all actions pending approval, and the stip
 
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md)
 
-  Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in the `AppFileEvents` table.
+  Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
 
