@@ -36,8 +36,6 @@ ms.date: 08/25/2022
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-## Attack surface reduction rules report overview
-
 The attack surface reduction (ASR) rules report provides information about the _attack surface reduction rules_ that are applied to devices in your organization. This report also provides information about:
 
 - detected threats
@@ -54,7 +52,7 @@ Additionally, this report provides an easy-to-use interface that enables you to:
 
 For more information about individual attack surface reduction rules, see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).
 
-### Prerequisites
+## Prerequisites
 
 - list
 - prerequisites
@@ -62,7 +60,7 @@ For more information about individual attack surface reduction rules, see [Attac
 > [!IMPORTANT]
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in Attack surface reduction rules reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
-### Report access permissions
+## Report access permissions
 
 To access the Attack surface reduction rules report in the Microsoft 365 Security dashboard, the following permissions are required:
 
@@ -166,11 +164,7 @@ While the ASR rules report summary cards are useful for getting quick summary of
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
-### Attack surface reduction rules main Detections tab
-
-The Detections tab provides filtering and reporting capabilities:
-
-#### Filtering
+### Filtering
 
 Filtering provides a way for you to specify what results are returned:
 
@@ -180,7 +174,7 @@ Filtering provides a way for you to specify what results are returned:
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-filtering.png" alt-text="Shows the Attack surface reduction (ASR) rules report filtering feature" lightbox="images/attack-surface-reduction-rules-report-main-detections-filtering.png":::
 
-#### Reporting
+### Detections tab reporting
 
 - **Audit Detections**  Shows how many threat detections were captured by rules set in _Audit_ mode.
 - **Blocked Detections** Shows how many threat detections were blocked by rules set in _Block_ mode.
@@ -206,18 +200,23 @@ The bottom section of the report lists detected threats - on a per-device basis 
 
 For more information about ASR rule audit and block modes, see [Attack surface reduction rule modes](attack-surface-reduction-rules-reference.md#asr-rule-modes).
 
-##### Actionable flyout
+#### Actionable flyout
 
-The “Detection” main page has a list of all detections (files/processes) in the last four weeks. Select on any of the detections to open a with drilldown capabilities:
-
-• The **Possible exclusion and impact** section provides impact of the selected file or process
-• You can select on **Go hunt** which opens the Advanced Hunting query page.
-• **Open file page** opens Microsoft Defender for Endpoint (MDE) detection
-• The **Add exclusion** button is linked with the add exclusion main page.
-
-For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
+The “Detection” main page has a list of all detections (files/processes) in the last thirty days. Select on any of the detections to open a with drill-down capabilities.
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
+
+The **Possible exclusion and impact** section provides impact of the selected file or process. You can:
+
+- Select **Go hunt** which opens the Advanced Hunting query page
+- **Open file page** opens Microsoft Defender for Endpoint (MDE) detection
+- The **Add exclusion** button is linked with the add exclusion main page.
+
+The following image illustrates how the Advanced Hunting query page opens from the link on the actionable flyout:
+
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png":::
+
+For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
 
 ### Attack surface reduction rules main Configuration tab
 
