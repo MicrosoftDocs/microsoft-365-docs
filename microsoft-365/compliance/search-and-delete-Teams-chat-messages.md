@@ -97,7 +97,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 > [!NOTE]
 > Because Microsoft Graph is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
 
-You can also purge chat message using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
+You can also purge chat messages using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
 
 ``
 Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
