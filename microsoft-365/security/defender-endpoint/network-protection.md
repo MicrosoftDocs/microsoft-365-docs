@@ -43,6 +43,17 @@ Network protection helps protect devices from Internet-based events. Network pro
 
 Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
 
+> [!NOTE]
+> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+>
+> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS))
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
+> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge)
+> - Full URL path blocks can be applied for unencrypted URLs
+>
+> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
+
 Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
