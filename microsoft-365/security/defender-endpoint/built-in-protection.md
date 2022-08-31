@@ -34,10 +34,14 @@ Built-in protection is a set of default settings that are rolling out to help en
 
 ## What does the notification look like?
 
-Expect to receive two types of notifications:
+You can expect to receive two types of notifications:
 
 - A message center post indicating that built-in protection is coming soon; and 
-- A banner in the Microsoft 365 Defender portal
+- A banner in the Microsoft 365 Defender portal that resembles the following image:
+
+   :::image type="content" source="media/bip-notification-m365defender.png" alt-text="Screenshot showing yellow banner highlighting built in protection in Microsoft 365 Defender portal.":::
+
+Your notification will tell you when built-in protection is coming and when tamper protection will be turned on (if it's not already configured) for your tenant.
 
 ## Can I opt out?
 
