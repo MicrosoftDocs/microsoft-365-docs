@@ -57,7 +57,7 @@ You can opt out of built-in protection by specifying your own security settings.
 
 3. Set **Tamper protection** to **On** (if it's not already on), and then select **Save preferences**. *Don't leave this page yet*.
 
-4. Set **Tamper protection** to **Off**, and then select **Safe preferences**.
+4. Set **Tamper protection** to **Off**, and then select **Save preferences**.
 
 ## Can I change built-in protection settings?
 
