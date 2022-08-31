@@ -94,20 +94,6 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 
 For information about using Graph Explorer, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
-> [!NOTE]
-> Because Microsoft Graph is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
-
-You can also purge chat messages using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
-
-``
-Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
-``
-
-``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/b16b8eaf-bd69-4002-a436-215978b6464b/searches/194288b8-f8ff-4da4-ba38-0b515d569581/purgeData'
-``
-
-For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
-
 > [!IMPORTANT]
 > APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the Version selector.
 
@@ -149,6 +135,9 @@ For more information on using PowerShell to purge chat messages, see [ediscovery
 
 3. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task to purge the chat messages.
 
+> [!TIP]
+> Instead of using the previous procedure to obtain the collection Id, you can open the case in the Microsoft Purview compliance portal on the Jobs tab by opening the job to see the collection ID.
+
 ### Purge the chat messages
 
 1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where caseId and collectionId are the Ids that you obtained in the previous procedures. Be sure to surround the Id values with parentheses and single quotation marks.
@@ -160,6 +149,20 @@ For more information on using PowerShell to purge chat messages, see [ediscovery
    ![Response for the purge request.](..\media\GraphResponseForPurge.png)
 
   For more information on purgeData, see [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
+
+> [!NOTE]
+> Because Microsoft Graph is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
+
+You can also purge chat messages using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
+
+``
+Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
+``
+
+``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/b16b8eaf-bd69-4002-a436-215978b6464b/searches/194288b8-f8ff-4da4-ba38-0b515d569581/purgeData'
+``
+
+For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
 
 ## Step 6: Verify chat messages are purged
 
