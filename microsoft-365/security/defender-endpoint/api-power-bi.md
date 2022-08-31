@@ -99,6 +99,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API, 
 9. Select **Connect**.
    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
+
 Now the results of your query will appear as a table and you can start to build visualizations on top of it!
 
 You can duplicate this table, rename it, and edit the Advanced Hunting query inside to get any data you would like.
