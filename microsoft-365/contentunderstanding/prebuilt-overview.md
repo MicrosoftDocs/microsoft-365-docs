@@ -64,6 +64,6 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 
 ## See also
 
-[Use a prebuilt model to extract info from invoices or receipts](prebuilt-overview.md)
+[Use a prebuilt model to extract information from invoices or receipts](prebuilt-models.md)
  
 
