@@ -18,8 +18,8 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: Learn as a guest sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as a guest.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Sending mail to Microsoft 365

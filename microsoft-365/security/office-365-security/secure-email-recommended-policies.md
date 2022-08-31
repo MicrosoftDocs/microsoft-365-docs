@@ -4,7 +4,7 @@ description: Describes the policies for Microsoft recommendations about how to a
 ms.author: dansimp
 author: dansimp
 manager: Laurawi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords: 
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - highpri
-ms.technology: mdo
+ms.subservice: mdo
 ---
 
 # Policy recommendations for securing email

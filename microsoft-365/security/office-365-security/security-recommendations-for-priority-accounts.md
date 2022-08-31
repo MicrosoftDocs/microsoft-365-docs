@@ -21,8 +21,8 @@ ms.collection:
   - highpri
 ms.custom:
 description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Security recommendations for priority accounts in Microsoft 365
