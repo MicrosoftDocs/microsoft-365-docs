@@ -1,0 +1,73 @@
+### YamlMime:Landing
+
+title: Microsoft SharePoint Syntex documentation # < 60 chars
+summary: SharePoint Syntex is a Microsoft 365 service that provides an end-to-end intelligent document processing solution for your organization.
+metadata:
+  title: Microsoft SharePoint Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft SharePoint Syntex features. Start here to learn about compliance for SharePoint Syntex. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: enabler-strategic, m365initiative-syntex
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/01/2022 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft SharePoint Syntex
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: About SharePoint Syntex
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is SharePoint Syntex?
+            url: syntex-overview.md
+          - text: AI models
+            url: model-types-overview.md
+      - linkListType: learn
+        links:
+          - text: Learn SharePoint Syntex
+            url: /learn/paths/syntex-get-started/
+
+# Card 2
+  - title: Get started
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create a model
+            url: create-syntex-model
+          - text: Licensing
+            url: syntex-licensing.md
+
+# Card 3
+  - title: Build models
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create a model
+            url: create-syntex-model.md
+          - text: Train a model
+            url: create-a-classifier.md
+
+    # Card 4
+  - title: Manage models
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Apply a model
+            url: apply-a-model.md
+
+    # Card 5
+  - title: Content assembly
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create documents
+            url: content-assembly.md
