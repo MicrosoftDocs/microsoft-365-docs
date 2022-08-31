@@ -46,11 +46,11 @@ Network protection extends the protection in [Web protection](web-protection-ove
 > [!NOTE]
 > For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
 >
-> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS))
-> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
-> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
-> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge)
-> - Full URL path blocks can be applied for unencrypted URLs
+> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
+> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+> - Full URL path blocks can be applied for unencrypted URLs.
 >
 > There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
