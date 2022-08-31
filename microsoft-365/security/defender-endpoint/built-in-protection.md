@@ -56,10 +56,10 @@ You can opt out of built-in protection settings. If you prefer to not have tampe
 
 Built-in protection is a set of default settings. You aren't required to keep these default settings in place. You can always change your settings to suit your business needs, as listed in the following table. 
 
-| To do this...| See these resources...|
+| Task | Description |
 |:---|:---|
-| Determine whether tamper protection is turned on | |
-| Manage tamper protection tenant wide using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | [Manage tamper protection for your organization using Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) |
+| Determine whether tamper protection is turned on | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. <br/><br/>2. Go to **Settings** > **Endpoints** > **Advanced features** > **Tamper protection**.  |
+| Manage tamper protection tenant wide using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. <br/><br/>2. Go to **Settings** > **Endpoints** > **Advanced features**. <br/><br/>3. Set **Tamper protection** to **On** (recommended) or **Off**.<br/><br/>4. Select **Save preferences**. <br/><br/>See [Manage tamper protection for your organization using Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md). |
 | Set tamper protection settings for some, but not all, devices | [Manage tamper protection for your organization using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md) <p> [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
 | Temporarily disable tamper protection on a device for troubleshooting purposes | [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)<p>[Troubleshooting mode scenarios in Microsoft Defender for Endpoint](troubleshooting-mode-scenarios.md) |
 
