@@ -136,7 +136,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 3. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task to purge the chat messages.
 
 > [!TIP]
-> Instead of using the previous procedure to obtain the collection Id, you can open the case in the Microsoft Purview compliance portal on the Jobs tab by opening the job to see the collection ID.
+> Instead of using the previous procedure to obtain the collection Id, you can open the case in the Microsoft Purview compliance portal. Open the case and navigate to the Jobs tab. Select the relevant collection and under Support information, find the job ID (the job ID displayed here is the same as the collection ID).
 
 ### Purge the chat messages
 
@@ -151,7 +151,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
   For more information on purgeData, see [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
 > [!NOTE]
-> Because Microsoft Graph is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
+> Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
 
 You can also purge chat messages using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
 
@@ -171,7 +171,7 @@ After you run the POST request to purge chat messages, these messages are remove
 Purged chat messages are moved to the SubstrateHolds folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
 
 > [!NOTE]
-> Because Microsoft Graph is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
+> Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
 
 ## Step 7: Reapply holds and retention policies to data sources
 
