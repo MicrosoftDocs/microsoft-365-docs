@@ -76,10 +76,9 @@ For instructions, see [Report questionable URLs to Microsoft](admin-submission.m
 
 ### Use the Microsoft 365 Defender portal to create block entries for URLs in the Tenant Allow/Block List
 
-You create block entries for URLs directly in the Tenant Allow/Block List.
+You can create block entries for URLs directly in the Tenant Allow/Block List.
 
-> [!NOTE]
-> Email messages that contain these blocked URLs are blocked as *high confidence phishing*.
+Email messages that contain these blocked URLs are blocked as *high confidence phishing*.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
