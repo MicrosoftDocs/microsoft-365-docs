@@ -45,7 +45,7 @@ Your notification will tell you when built-in protection is coming and when tamp
 
 ## Can I opt out?
 
-You can opt out of built-in protection settings by specifying your settings. For example, if you prefer to not have tamper protection turned on automatically for your tenant, you can explicitly opt out.
+You can opt out of built-in protection by specifying your own security settings. For example, if you prefer to not have tamper protection turned on automatically for your tenant, you can explicitly opt out.
 
 > [!NOTE]
 > **We do not recommend turning tamper protection off**. Tamper protection provides you with better ransomware protection.
