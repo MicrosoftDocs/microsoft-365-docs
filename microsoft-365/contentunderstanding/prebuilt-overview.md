@@ -82,5 +82,6 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 [Use a trained model to extract information from invoices](prebuilt-model-invoice.md)
 
 [Use a trained model to extract information from receipts](prebuilt-model-receipt.md)
+
  
 
