@@ -38,10 +38,10 @@ Built-in protection is a set of default settings that are rolling out to help en
 
 ## Can I opt out?
 
-You can opt out of built-in protection settings. If you prefer to not have tamper protection turned on automatically for your tenant, you can explicitly opt out.
+You can opt out of built-in protection settings by specifying your settings. For example, if you prefer to not have tamper protection turned on automatically for your tenant, you can explicitly opt out.
 
 > [!NOTE]
-> We do not recommend turning tamper protection off. Tamper protection provides you with better ransomware protection.
+> **We do not recommend turning tamper protection off**. Tamper protection provides you with better ransomware protection.
 > You must be a global administrator or security administrator to perform the following procedure:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
