@@ -121,7 +121,7 @@ The option to **Ask Defender Experts** is available in several places throughout
 - We recently saw a blog post about a threat that is targeting our industry. Can you help us understand what protection Microsoft 365 Defender provides against this threat actor?
 - We recently observed a phishing campaign conducted against our organization. Can you tell us if this was targeted specifically to our company or vertical?
 
-### Microsoft Defender Experts for Hunting' alert communications
+### Microsoft Defender Experts for Hunting alert communications
 
 - Can your incident response team help us address the Defender Experts Notification that we got?
 - We received this Defender Experts Notification from Microsoft Defender Experts for Hunting. We don't have our own incident response team. What can we do now, and how can we contain the incident?
