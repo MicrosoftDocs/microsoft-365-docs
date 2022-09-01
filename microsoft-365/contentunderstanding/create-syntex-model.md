@@ -36,6 +36,9 @@ Follow these steps to create a model in SharePoint Syntex.
 
     ![Screenshot of the View options for classification and extraction page showing the custom models and trained models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
 
+    > [!NOTE]
+    > All model options might not be available. These options are configured by your Microsoft 365 admin.
+
 ## Build a custom model
 
 1. In the **Build a custom model** section, view the types of custom models you can create. 
@@ -109,6 +112,9 @@ Follow these steps to create a model in SharePoint Syntex.
     - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
     - [Apply model to library](apply-a-model.md)
 
+> [!NOTE]
+    > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
+
 ### Extract by text pattern and layout
 
 1. On the **Extract by text pattern and layout** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
@@ -139,6 +145,9 @@ Follow these steps to create a model in SharePoint Syntex.
     - [Tag documents](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
     - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
     - [Apply model to library](apply-a-model.md) 
+
+> [!NOTE]
+    > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
 
 ## Use a trained model
 
