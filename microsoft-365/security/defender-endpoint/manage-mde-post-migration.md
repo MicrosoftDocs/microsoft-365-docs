@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint after initial setup or migration
 description: Now that you've made the switch to Microsoft Defender for Endpoint, your next step is to manage your threat protection features
 keywords: post-migration, manage, operations, maintenance, utilization, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
