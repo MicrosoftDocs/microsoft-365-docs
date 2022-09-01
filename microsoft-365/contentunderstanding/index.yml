@@ -59,6 +59,8 @@ landingContent:
             url: difference-between-document-understanding-and-form-processing-model.md
           - text: Prebuilt models
             url: model-types-overview.md#trained-models
+      - linkListType: how-to-guide
+        links:
           - text: Create a model
             url: create-syntex-model.md
 
@@ -91,12 +93,14 @@ landingContent:
     # Card 6
   - title: Adoption
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
           - text: Drive adoption
             url: adoption-getstarted.md
           - text: Scenarios and use cases
             url: adoption-scenarios.md
+      - linkListType: how-to-guide
+        links:
           - text: Assessment tool
             url: adoption-assessment-tool.md
           - text: Run a trial
@@ -115,7 +119,7 @@ landingContent:
     # Card 8
   - title: Get support
     linkLists:
-      - linkListType: reference
+      - linkListType: overview
         links:
           - text: Tech Community blog
             url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
