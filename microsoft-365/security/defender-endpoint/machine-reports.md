@@ -295,9 +295,28 @@ For more information on the current versions and how to update the different Mic
 
 #### Up-to-date cards
 
-The up-to-date cards indicate when **Antivirus engine**, **Security intelligence**, and **Antivirus platform** versions are up-to-date. There are three possible states: _up-to-date_, _out-of-date_, and _no_data_available_.
+The up-to-date cards show the up-to-date status for **Antivirus engine**, **Antivirus platform**, and **Security intelligence** update versions. There are three possible states: _Up to date_ (‘True’), _out of date_ (‘False’), and _no data available_ (‘Unknown’).
 
 Definitions for _up-to-date_, _out-of-date_, and _no_data_available_ are provided for each card below.
+
+Microsoft Defender Antivirus (MDAV) up-to-date reports makes determinations based on the following criteria:
+
+- The last time client events were received for up to date reports (“Signature Refresh time”)
+- Security Intelligence Publish Time (security intelligence VDMs are used to determine engine/platform versions )
+- And the last up-to-date status communicated from client
+
+For more information on these, see:
+
+- [Antivirus engine updates card](#antivirus-engine-updates-card)
+- [Security intelligence updates card](#security-intelligence-updates-card)
+- [Antivirus platform updates card](#antivirus-platform-updates-card)
+
+##### Up-to-date examples
+
+- **The engine/platform on the device is considered up-to-date** If the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days and the Engine or Platform version build time is within last 60 days
+- **The engine/platform on the device are considered out-of-date** If the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 but Engine or Platform version build time is older than 60 days
+- **The engine or platform status is considered unknown (no data available)** If the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days
+- **The security intelligence update is considered up-to date** If the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days
 
 > [!NOTE]
 > **Prerequisites:**
@@ -314,41 +333,59 @@ Definitions for _up-to-date_, _out-of-date_, and _no_data_available_ are provide
 ##### Antivirus engine updates card
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
-The general definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release (the Engine is _usually_ released monthly, via Windows Update (WU)).  There's a three-day grace period from the day when WU is released.
 
-| Microsoft considers devices with **Antivirus engine updates** that have:  |  to be:  |
-|:----|:----|
-| Communicated to Defender in last seven days with Signature Publish time within last seven days _and have_ Engine or Platform version build time _within_ last 60 days   | Up-to-date  |
-| Communicated to Defender in last seven days with Signature Publish time within last seven days but Engine or Platform version build time _older than_ 60 days | Out-of-date  |
-| Communicated to Defender in last seven days with Signature Publish time _greater than_  days  | No data available  |
-| NOT communicated to Defender in last seven days and whose last status was "Up-to-date"  | No data available  |
-| NOT communicated to Defender in last seven days and whose last status was "Out-of-date"  | No data available |
+**The general definition of ‘_Up to date_’** - the engine version on the device is the most recent engine release (the Engine is _usually_ released monthly, via Windows Update (WU)). There's a three-day grace period from the day when Windows Update (WU) is released.
+
+The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received, security intelligence publish time, and most recent status received from client.  
+
+| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Antivirus Engine Publish Time | Last Status received from Client | Reported Status: |
+|:----|:----|:----|:----|
+| > 7 days (old) | > 7 days (old) | N/A | Unknown |
+| < 7 days (new) | > 7 days (old) | N/A | Unknown |
+| > 7 days (old) | < 7 days (new) | Up to date | Unknown |
+| < 7 days (new) | < 7 days (new) | Up to date | Up to date |
+| < 7 days (new) | < 7 days (new) | Out of date | Out of date |
+| > 7 days (old) | < 7 days (new) | Out of date | Unknown |
+| < 7 days (new) | < 7 days (new) | Unknown | Unknown |
+
+For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
 ##### Security intelligence updates card
 
 This card identifies devices that have security intelligence versions that are up to date versus out of date.
-The general definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
 
-| Microsoft considers devices with **Security Intelligence updates** that have:  | to be:  |
-|:----|:----|
-|  A security intelligence version written in the past seven days | Up-to-date  |
-| Communicated to Defender in last seven days with Signature Publish time within last seven days | Up-to-date  |
-| Communicated to Defender in last seven days with Signature Publish time greater than last seven days | Out-of-date |
-| NOT communicated to Defender in last seven days and whose last status was "Up-to-date"  |  No data available  |
-| NOT communicated to Defender in last seven days and whose last status was Out-of-date  | Out-of-date |
+**The general definition of ‘Up to date’** – the security intelligence version on the device was written in the past 7 days.
+
+The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, security intelligence publish time, and last status received from client.
+
+| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last Status received from Client | Reported Status: |
+|:----|:----|:----|:----|
+| >7 days (old) | >7 days (old) | Up to date | Unknown |
+| <7 days (new) | >7 days (old) | Up to Date | Unknown |
+| <7 days (new) | <7 days (new) | Up to Date | Up to Date |
+| >7 days (old) | <7 days (new) | Up to date |  Unknown |
+| >7 days (old) | <7 days (new) | Out of date | Out of Date |
+| >7 days (old) | >7 days (old) | Out of date | Out of Date |
+| <7 days (new) | >7 days (old) | Out of Date | Out of Date |
+| <7 days (new) | <7 days (new) | Unknown | Unknown|
 
 #### Antivirus platform updates card
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
-The general definition of ‘_Up to date_’ – the platform version on the device is the most recent platform release (Platform is _usually_ released monthly, via Windows Update).  There's a three-day grace period from the day when WU is released.
 
-| Microsoft considers devices with **Antivirus platform updates** that have:  |  to be:  |
-|:----|:----|
-| Communicated to Defender in last seven days with Signature Publish time within last seven days _and have_ Engine or Platform version build time _within_ last 60 days   | Up-to-date  |
-| Communicated to Defender in last seven days with Signature Publish time within last seven days but Engine or Platform version build time _older than_ 60 days | Out-of-date  |
-| Communicated to Defender in last seven days with Signature Publish time _greater than_  days  | No data available  |
-| NOT communicated to Defender in last seven days and whose last status was "Up-to-date"  | No data available  |
-| NOT communicated to Defender in last seven days and whose last status was "Out-of-date"  | No data available |
+**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update). There's a three-day grace period from the day when WU is released.
+
+The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received, security intelligence publish time, and last status received from client.  
+
+| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Antivirus Platform Publish Time | Last Status received from Client | Reported Status: |
+|:----|:----|:----|:----|
+| > 7 days (old) | > 7 days (old) | N/A | Unknown |
+| < 7 days (new) | > 7 days (old) | N/A | Unknown |
+| > 7 days (old) | < 7 days (new) | Up to date | Unknown |
+| < 7 days (new) | < 7 days (new) | Up to date | Up to date |
+| < 7 days (new) | < 7 days (new) | Out of date | Out of date |
+| > 7 days (old) | < 7 days (new) | Out of date | Unknown |
+| < 7 days (new) | < 7 days (new) | Unknown | Unknown |
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
