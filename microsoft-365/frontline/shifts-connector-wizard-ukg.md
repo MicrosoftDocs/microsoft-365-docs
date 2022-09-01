@@ -194,6 +194,9 @@ To hide open shifts, swap requests, and time off requests in Shifts, use the Gra
 
 To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
+************
+**Original**
+
 ## If you need to make changes to a connection
 <a name="update_connection"> </a>
 
@@ -209,6 +212,29 @@ You can view information about your connection, such as health status and sync i
     Here, you'll see a list of all the connections you've set up by using the wizard or PowerShell, along with information about each one.
 
     :::image type="content" source="media/shifts-connector-wizard-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-wizard-ukg-manage.png":::
+
+************
+
+**Updated**
+
+## Manage your connection
+<a name="update_connection"> </a>
+
+After a connection is set up, you can manage it on the Manage Shifts connectors page of the Microsoft 365 admin center. Here, you can view information about each connection that you've set up, such as health status and sync intervals. You can also make changes to any of your connections, such a team mappings or sync settings, through the wizard.
+
+1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
+2. Select **Manage Shifts connectors**, and then choose **Manage**. Keep in mind that this option is available only if you've already set up a connection.
+
+    You'll see a list of all the connections you've set up by using the wizard or PowerShell, along with information about each one.
+
+    :::image type="content" source="media/shifts-connector-wizard-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-wizard-ukg-manage.png":::
+
+    To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
+
+> [!NOTE]
+> You can also use PowerShell to make changes to a connection. To learn more, see [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md).
+
+************
 
 ## Related articles
 
