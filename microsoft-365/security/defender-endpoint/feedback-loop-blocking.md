@@ -9,12 +9,12 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom: 
   - next-gen
   - edr
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ---
 

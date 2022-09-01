@@ -2,7 +2,7 @@
 title: Helpful Microsoft Defender for Endpoint resources
 description: Access helpful resources such as links to blogs and other resources related to  Microsoft Defender for Endpoint
 keywords: Microsoft 365 Defender, product brief, brief, capabilities, licensing
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Helpful Microsoft Defender for Endpoint resources
