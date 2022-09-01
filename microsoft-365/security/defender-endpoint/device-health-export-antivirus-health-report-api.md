@@ -8,7 +8,8 @@ ms.sitesec: library
 ms.pagetype: security 
 ms.author: v-jweston 
 author: jweston-1
-ms.localizationpriority: medium 
+ms.localizationpriority: medium
+ms.date: 09/01/2022 
 manager: dansimp 
 audience: ITPro 
 ms.collection: M365-security-compliance 
