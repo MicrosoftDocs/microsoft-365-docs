@@ -19,23 +19,24 @@ description: Learn how to apply a published a model to a SharePoint document lib
 
 *"Update apply a model article to show the new discovery experience (via ""classify & extract"" button OR from apply model action in model home page) + model recommendation & quick test. This article can include pieces from the ""publish & discover"" article"*
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
 
 </br>
+--->
 
-After publishing your custom model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
+After training your **Classify and extract by text pattern** model or after publishing your **Extract by layout** or **Extract by text pattern and layout** model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
 
 > [!NOTE]
-> You are only able to apply the model to document libraries that you have access to.
-
+> You can apply the model only to document libraries to which you have access.
 
 ## Apply your model to a document library
 
 To apply your model to a SharePoint document library:
 
-1. On model home page, on the **Apply model to libraries** tile, select **Apply model**. Or, in the **Where the model is applied** section, select **+Add library**.
+1. On model home page, on the **Apply model to libraries** tile, select **Apply model**. Or, in the **Where the model is applied** section, select **Add library**.
 
     ![Screenshot of Where the model is applied section with the Add library option highlighted.](../media/content-understanding/apply-to-library.png)
 
