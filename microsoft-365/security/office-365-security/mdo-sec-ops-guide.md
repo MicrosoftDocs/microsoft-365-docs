@@ -37,6 +37,8 @@ A companion article to this guide provides an overview to [manage incidents and 
 
 The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
 
+For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
+
 ## Daily activities
 
 ### Monitor the Microsoft 365 Defender Incidents queue
@@ -143,7 +145,7 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 |---|---|---|---|
 |Regular, proactive hunting for threats at: <ul><li><https://security.microsoft.com/threatexplorer></li><li><https://security.microsoft.com/v2/advanced-hunting></li></ul>.|Ad-hoc|Search for threats using [Threat Explorer](threat-explorer.md) and [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md).|Security Operations Team <br/><br/> Threat hunting team|
 |Share hunting queries.|Ad-hoc|Actively share frequently used, useful queries within the security team for faster manual threat hunting and remediation. <br/><br/> Use [Threat trackers](threat-trackers.md) and [shared queries in Advanced hunting](/microsoft-365/security/defender/advanced-hunting-shared-queries).|Security Operations Team <br/><br/> Threat hunting team|
-|Create custom detection rules at <https://security.microsoft.com/custom_detection>.|Ad-hoc|[Create custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting) to proactively monitor events, patterns, and threats based on Defender for Office 365 data in Advance Hunting. Detection rules contain advanced hunting queries that generate alerts based on the matching criteria.|Security Operations Team <br/><br/> Threat hunting team|
+|Create custom detection rules at <https://security.microsoft.com/custom_detection>.|Ad-hoc|[Create custom detection rules](../defender/custom-detections-overview.md) to proactively monitor events, patterns, and threats based on Defender for Office 365 data in Advance Hunting. Detection rules contain advanced hunting queries that generate alerts based on the matching criteria.|Security Operations Team <br/><br/> Threat hunting team|
 
 ### Review Defender for Office 365 policy configurations
 
