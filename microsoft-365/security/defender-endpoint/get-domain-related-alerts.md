@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
- ms.subservice: mde
+ms.subservice: mde
 ms.custom: api
 ---
 
