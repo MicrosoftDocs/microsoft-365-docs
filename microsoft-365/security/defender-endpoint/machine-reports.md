@@ -324,9 +324,12 @@ For more information about the aforementioned terms, refer back to the section: 
 
 ##### Up-to-date examples
 
-- **The engine/platform on the device is considered up-to-date** If the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days and the Engine or Platform version build time is within last 60 days
-- **The engine/platform on the device are considered out-of-date** If the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 but Engine or Platform version build time is older than 60 days
-- **The engine or platform status is considered unknown (no data available)** If the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days, or the security intelligence publish time is greater than 7 days.
+| The engine/platform on the device is considered: | If: |
+|:---|:---|
+| **up-to-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days and the Engine or Platform version build time is within last 60 days. |
+| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 but Engine or Platform version build time is older than 60 days. |
+| **unknown (no data available)** | the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days, or the security intelligence publish time is greater than 7 days. |
+
 - **The security intelligence update is considered up-to date** If the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days
 
 For more information on these, see:
@@ -345,10 +348,10 @@ The following table lays out the possible values for up to date reports for **An
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | Up to date/ Out of Date/ Unknown (whatever client reports) |
-| > 7 days (old) | > 7 days (old) | Unknown |
-| < 7 days (new) | > 7 days (old) | Unknown |
-| > 7 days (old) | < 7 days (new) | Unknown |
+| < 7 days (new) | < 7 days (new) | _Up to date/ Out of Date/ Unknown (whatever client reports)_ |
+| > 7 days (old) | > 7 days (old) | _Unknown_ |
+| < 7 days (new) | > 7 days (old) | _Unknown_ |
+| > 7 days (old) | < 7 days (new) | _Unknown_ |
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -362,10 +365,10 @@ The following table lays out the possible up to date report values for **Antivir
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | Up to date/ Out of Date/ Unknown (whatever client reports) |
-| > 7 days (old) | > 7 days (old) | Unknown |
-| < 7 days (new) | > 7 days (old) | Unknown |
-| > 7 days (old) | < 7 days (new) | Unknown |
+| < 7 days (new) | < 7 days (new) | _Up to date/ Out of Date/ Unknown (whatever client reports)_ |
+| > 7 days (old) | > 7 days (old) | _Unknown_ |
+| < 7 days (new) | > 7 days (old) | _Unknown_ |
+| > 7 days (old) | < 7 days (new) | _Unknown_ |
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
