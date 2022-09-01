@@ -48,7 +48,8 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 > [!IMPORTANT]
 >
 > Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
-> > **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
+>
+> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
 
 > [!IMPORTANT]
 >

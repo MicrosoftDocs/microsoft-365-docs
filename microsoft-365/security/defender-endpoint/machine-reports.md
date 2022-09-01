@@ -219,6 +219,7 @@ For information on exporting using API, see the following articles:
 > [!IMPORTANT]
 >
 > Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
+>
 > **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
 
 ### Microsoft Defender Antivirus version and update cards functionality
