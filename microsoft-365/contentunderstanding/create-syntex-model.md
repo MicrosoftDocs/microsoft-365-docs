@@ -112,7 +112,7 @@ Follow these steps to create a model in SharePoint Syntex.
     - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
     - [Apply model to library](apply-a-model.md)
 
-> [!NOTE]
+    > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
 
 ### Extract by text pattern and layout
@@ -146,7 +146,7 @@ Follow these steps to create a model in SharePoint Syntex.
     - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
     - [Apply model to library](apply-a-model.md) 
 
-> [!NOTE]
+    > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
 
 ## Use a trained model
