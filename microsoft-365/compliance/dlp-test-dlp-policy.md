@@ -90,7 +90,7 @@ For detailed syntax and parameter information, see [Test-DlpPolicies](/powershel
 
 ### Interpret the report
 
-The report is sent to the smtp address you passed the the Test-DlpPolicies PowerShell command. There are 16 fields
+The report is sent to the smtp address you passed the the Test-DlpPolicies PowerShell command. There are multiple fields, here are explanations of the most important ones.
 
 
 |Field name  |Means  |
