@@ -39,10 +39,12 @@ landingContent:
 # Card 2
   - title: Get started
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
           - text: Licensing
             url: syntex-licensing.md
+      - linkListType: how-to-guide
+        links:
           - text: Set up Syntex
             url: set-up-content-understanding.md
           - text: Create a content center
