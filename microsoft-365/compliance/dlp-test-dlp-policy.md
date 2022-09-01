@@ -19,77 +19,91 @@ description: "Learn how to use the Test-DlpPolicies cmdlet on items in SharePoin
 
 # Test your Data Loss Prevention policies
  
-Testing and tuning the behavior and impact of your Microsoft Purview Data Loss Prevention (DLP) policies is a necessary element of your DLP policy deployment. This article
+Testing and tuning the behavior and impact of your Microsoft Purview Data Loss Prevention (DLP) policies is a necessary element of your DLP policy deployment. This article introduces you to some of the basic methods you can use to test policies in your DLP environment.
 
 ## Test mode
 
 When you deploy a new policy, [you should run it in test mode](dlp-overview-plan-for-dlp.md#policy-deployment) and then use the [DLP reports](view-the-dlp-reports) and any [alerts](dlp-alerts-dashboard-learn) to assess the impact. Test mode allows you to see the impact of an individual policy on all the items that are in the policies scope. You use it to find out what items match a policy.
 
-## Test-DlpPolicies
+## Test-DlpPolicies (preview)
 
-**Test-DlpPolicies** is a cmdlet that allows you to see what policies match an individual item in SharePoint Online or OneDrive for Business. 
+**Test-DlpPolicies** is a cmdlet that allows you to see what Sharpoint Online and OneDrive for Business scoped DLP policies match/don't match an individual item in SharePoint Online or OneDrive for Business. 
 
-Figuring out what policies a given item in SharePoint Online or OneDrive for Business match
+### Before you begin
 
-What policies match this item?
-Are the policies I intended to match this item actually matches?
-What policies match this item and what actions are being taken by DLP?
+- You must be able to connect to [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
+- You must have a valid smtp address to send the report to. For example: **dlp_admin<!--no address-->@contoso.com**.
+- You must get the site ID where the item is located.
+- You must have the direct link path to the item.
 
-## Before you begin
+> [!IMPORTANT]
+>
+> - Test-DlpPolicies only works for items that are in SharePoint Online (SPO) or OneDrive for Business (ODB).
+>- It will only report results for policies that are scoped exclusively to SharePoint Online, OneDrive for Business, or SharePoint Online and OneDrive for Business.
+> - Test-DlpPolices works only with simple conditions. It doesn't work with complex, grouped, or nested conditions.
 
-ACCOUNT PRE-REQS
-CONNECTIVITY PRE-REQS
-DLP POLICY PRE-REQS
-ITEMS IN SPO OR ODB OR SPO AND ODB WITH A URL
+### Use Test-DlpPolices
+
+To see which DLP policies an item will match, follow these steps:
+
+#### Get the direct link path to the item
+
+1. Open the SharePoint or OneDrive folder in a browser
+
+1. Select the files ellipsis and select **details**
+
+1. In the details pane, scroll down and select **Path** (Copy direct link). Save it.
+
+For example:
+
+**http<!--nourl-->s://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx**
+
+#### Get the site ID
+
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
+
+1. Use the following syntax to get the site id and save it.
+
+```powershell
+$e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
+$siteID = e.Substring(8,36)
+```
+For example:
+
+`36ca70ab-6f38-7f3c-515f-a71e59ca6276`
+
+#### Run Test-DlpPolicies
+
+1. Run this syntax in the PowerShell window
+ 
+
+```powershell
+Test-DlpPolicies -workload <workload> -Fileurl <path/direct link> -SendReportTo <smtpaddress>
+```
+
+For example:
+
+`Test-DlpPolicies -workload <ODB> -Fileurl <https://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx> -SendReportTo <dlp_admin@contoso.com>`
+
+For detailed syntax and parameter information, see [Test-DlpPolicies](/powershell/module/exchange/test-dlppolicies).
 
 
+### Interpret the report
 
-## Upload your rule package
+The report is sent to the smtp address you passed the the Test-DlpPolicies PowerShell command. There are 16 fields
 
-To upload your rule package, do the following steps:
 
-1. Save it as an .xml file with Unicode encoding.
-
-2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
-
-3. Use the following syntax:
-
-   ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('PathToUnicodeXMLFile'))
-   ```
-
-   This example uploads the Unicode XML file named MyNewRulePack.xml from C:\My Documents.
-
-   ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\MyNewRulePack.xml'))
-   ```
-
-   For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
-
-   > [!NOTE]
-   > The maximum number of rule packages supported is 10, but each package can contain the definition of multiple sensitive information types.
-
-4. To verify that you've successfully created a new sensitive information type, do any of the following steps:
-
-   - Run the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet to verify the new rule package is listed:
-
-     ```powershell
-     Get-DlpSensitiveInformationTypeRulePackage
-     ```
-
-   - Run the [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to verify the sensitive information type is listed:
-
-     ```powershell
-     Get-DlpSensitiveInformationType
-     ```
-
-     For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
-
-   - Replace \<Name\> with the Name value of the sensitive information type (example: Employee ID) and run the [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet:
-
-     ```powershell
-     Get-DlpSensitiveInformationType -Identity "<Name>"
-     ```
-
-## Interpret the report
-
+|Field name  |Means  |
+|---------|---------|
+|Classification ID     |The sensitive information type (SIT) the item is categorized as.         |
+|Confidence     |The [confidence level](/sensitive-information-type-learn-about.md#more-on-confidence-levels) of the SIT.         |
+|Count     |The total number of times the SIT value was found in the item, this includes duplicates.          |
+|Unique Count     |The number SIT values found in the item with duplicates eliminated.         |
+|Policy Details     |The name and GUID of the policy that was evaluated.         |
+|Rules - Rule Details     |The DLP rule name and GUID.        |
+|Rules - Predicates - Name     |The condition defined in the DLP rule.         |
+|Rules - Predicates - IsMatch     | Whether the item matched the conditions.        |
+|Predicates - Past Actions    |Any actions, like notify user, block, block with override that have been taken on the item.         |
+|Predicates - Rule's Actions     |The action defined in the DLP rule.         |
+|Predicates - IsMatched     | Whether the item matched the rule.        |
+|IsMatched     |Whether the item matched the overall policy.         |
