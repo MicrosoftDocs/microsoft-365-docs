@@ -28,19 +28,23 @@ ms.custom: seo-marvel-mar2020
 
 # Message delegation
 
-A user can already explicitly set their status to Away or Do not Disturb, and provide custom text. The message delegation feature works as follows:
+Users in Microsoft Teams can set their status to Away or Do not Disturb, and include a custom text status message. A user who's going to be away can assign someone as a delegate who people can contact instead. The message delegation feature works as follows:
 
-1. A user @username mentions another user in part of a text status message, suggesting that while they are unavailable people who want to contact them instead contact the @username mentioned user.
-2. The person who has been assigned as a delegate is notified that they were nominated to be a delegate.
-3. Someone trying to contact the first user can then hover over the nominated delegate and easily message the delegate instead.  
+1. The user who's going to be away @mentions another user (the delegate) in their status message to let people know to contact the delegate instead while the user is away.
+2. The user who's been @mentioned gets notified that they've been nominated as a delegate.
+3. When someone opens a chat with the away user and sees their status message, they can hover over the delegate and easily message them instead.
 
-This is a user-initiated process in the client, and no Admin involvement is required to enable the feature. 
+Users can initiate the process themselves, and no admin involvement is required to enable the feature.
 
 ## Delegation use scenario in Healthcare
 
-*Usage example without setting delegates:*  Dr. Franco Piccio is on-call at the radiology department. He receives an urgent personal call and has to step away for the next couple of hours. He asks one of his peers in the radiology department, Dr. Lena Ehrle, to cover for him while he is gone. He informally hands over his pager to Dr. Ehrle, who is listening for urgent messages and pings on the pager and responds to them on behalf of Dr. Piccio in addition to her current responsibilities. Others on the team may not realize the informal delegation happened, and confusion ensues with a patient's care.
+**Usage example without setting delegates** <br>
+Dr. Franco Piccio is on call at the radiology department. He receives an urgent personal call and has to step away for the next couple of hours. He asks one of his peers in the radiology department, Dr. Lena Ehrle, to cover for him while he's gone. He informally hands over his pager to Dr. Ehrle, who listens for urgent messages and pings on the pager and responds to them on behalf of Dr. Piccio in addition to her current responsibilities. Others on the team may not realize the informal delegation happened. Confusion ensues with a patient's care.
 
-*Usage example with setting delegates:* Dr. Franco Piccio is on-call at the radiology department. He receives an urgent personal call and has to step away for the next couple of hours. He asks one of his peers in the radiology department, Dr. Lena Ehrle to cover for him while he is gone. He changes his custom status message to say something similar to "I am unavailable for the next few hours. Please contact @DrEhrle for any emergencies."  Others on the team realize the delegation happened as they're attempting to contact Dr. Piccio, so they now know to contact Dr. Ehrle in the meantime. Little to no confusion ensues with a patient's care.
+**Usage example with setting delegates** <br>
+Dr. Franco Piccio is on call at the radiology department. He receives an urgent personal call and has to step away for the next couple of hours. He asks one of his peers in the radiology department, Dr. Lena Ehrle to cover for him while he's gone. He changes his custom status message to say "I am unavailable for the next few hours. Please contact @DrEhrle for any emergencies."  Others on the team realize the delegation happened as they're attempting to contact Dr. Piccio, so they now know to contact Dr. Ehrle in the meantime. Little to no confusion ensues with a patient's care.
+
+<!-- daisy you stopped here -->
 
 ## Impact of co-existence modes on user status in the Teams client
 
