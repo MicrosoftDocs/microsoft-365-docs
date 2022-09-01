@@ -1213,6 +1213,8 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
+            - name: Test your DLP policies
+              href: dlp-test-dlp-policies.md
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
