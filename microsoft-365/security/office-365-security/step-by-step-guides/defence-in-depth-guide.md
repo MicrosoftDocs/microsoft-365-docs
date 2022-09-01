@@ -1,6 +1,6 @@
 ---
-title: Getting started with defence in-depth configuration for email security
-description: Step-by-step configuration guidance on how to get security value from Microsoft Defender for Office 365 when you have 3rd party email filtering.
+title: Getting started with defense in-depth configuration for email security
+description: Step-by-step configuration guidance on how to get security value from Microsoft Defender for Office 365 when you have third party email filtering.
 search.product: 
 search.appverid: 
 ms.prod: m365-security
@@ -19,9 +19,14 @@ ms.topic: how-to
 ms.technology: mdo
 ---
 
-# Getting the best security value from Microsoft Defender for Office 365 when you have thrid party email filtering
+# Getting the best security value from Microsoft Defender for Office 365 when you have third party email filtering
 
-If you’re licensed for Microsoft Defender for Office 365 and host your mailboxes in Office 365, but are also using a 3rd party for your email security, this guide is for you. This topic covers how to get the most out of your investment, broken down into easy to follow steps.
+This guide is for you if:
+
+- You’re licensed for Microsoft Defender for Office 365 and host your mailboxes in Office 365
+- You're also using a third party for your email security
+
+The information below will detail how to get the most out of your investment, broken down into easy to follow steps.
 
 ## What you will need
 -	Mailboxes hosted in Office 365
@@ -31,12 +36,11 @@ If you’re licensed for Microsoft Defender for Office 365 and host your mailbox
   -	Microsoft Defender for Office 365 Trial (available to all customers at aka.ms/tryMDO)
 -	Sufficient permissions to configure the features discussed below
 
-
 ## Step 1 – Understand the value you already have
 
 ### Protection features
 
--	Built-in protection offers a base level of unobtrusive protection. This includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
+-	Built-in protection offers a base level of unobtrusive protection, and includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
 
 **Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links.md)
 
@@ -44,11 +48,11 @@ If you’re licensed for Microsoft Defender for Office 365 and host your mailbox
 
 ### Detection, investigation, response and hunting features
 
--	When alerts fire in Microsoft Defender for Office 365, they are automatically correlated and combined into Incidents to help reduce the alert fatigue on security staff. Automated Investigation and Response (AIR) will trigger investigations to help remediate and contain threats.
+-	When alerts fire in Microsoft Defender for Office 365, they're automatically correlated, and combined into Incidents to help reduce the alert fatigue on security staff. Automated Investigation and Response (AIR) will trigger investigations to help remediate and contain threats.
 
 **Read more, watch an overview video and get started here :** [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview)
 
--	Threat Analytics is our in-product detailed threat intelligence solution from expert Microsoft security researchers, detailed reports designed to get you up to speed on the latest threat actors, attack techniques, how to protect your organization with Indicators of Compromise (IOC) and much more.
+-	Threat Analytics is our in-product detailed threat intelligence solution from expert Microsoft security researchers, detailed reports designed to get you up to speed on the latest threat groups, attack techniques, how to protect your organization with Indicators of Compromise (IOC) and much more.
 
 **Read more, watch an overview video and get started here :** [Threat analytics in Microsoft 365 Defender](../../defender/threat-analytics.md)
 
@@ -56,12 +60,11 @@ If you’re licensed for Microsoft Defender for Office 365 and host your mailbox
 
 **Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer.md)
 
-
 ## Step 2 – Enhance the value further with these simple steps
 
 ### Protection features
 
--	Consider enabling policies beyond the built-in Protection. Enabling time of click protection, or impersonation protection, for example, to add additional layers or fill gaps missing from your third party protection. Note that if you have a transport rule or connection filter that is overriding verdicts (known sometimes as SCL-1) you will need to address this before turning on additional protection features.
+-	Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL-1) you'll need to address this before turning on other protection features.
 
 **Read more here:** [Anti-phishing policies](../set-up-anti-phishing-policies.md)
 
@@ -85,8 +88,7 @@ If you’re licensed for Microsoft Defender for Office 365 and host your mailbox
 
 **Read more here:** [Deploy and configure the report message add-in to users](deploy-and-configure-the-report-message-add-in.md)
 
-
-### Detection, investigation, response and hunting features
+### Detection, investigation, response, and hunting features
 
 -	Advanced hunting can be used to proactively hunt for threats in your organization, using shared queries from the community to help you get started. You can also use custom detections to set up alerts when personalized criteria are met.
 
@@ -94,12 +96,11 @@ If you’re licensed for Microsoft Defender for Office 365 and host your mailbox
 
 ### Education features
 
-- Attack simulation training allows you to run realistic but benign cyber-attack scenarios in your organization. If you don't already have phishing simulation capabilities from your primary email security provider, Microsoft’s simulated attacks can help you identify and find vulnerable users, policies, and practices before a real attack impacts your organization. Post simulation we assign in product or custom training to educate users about the threats they missed, ultimately reducing your organisation's risk profile. With Attack simulation training we deliver messages directly into the inbox, so the user experience is rich. This also means no security changes such as overrides needed to get simulations delivered correctly.
+- Attack simulation training allows you to run realistic but benign cyber-attack scenarios in your organization. If you don't already have phishing simulation capabilities from your primary email security provider, Microsoft’s simulated attacks can help you identify and find vulnerable users, policies, and practices. This is important knowledge to have and correct *before* a real attack impacts your organization. Post simulation we assign in product or custom training to educate users about the threats they missed, ultimately reducing your organisation's risk profile. With Attack simulation training we deliver messages directly into the inbox, so the user experience is rich. This also means no security changes such as overrides needed to get simulations delivered correctly.
 
 **Get started here:** [Get started using Attack simulation](../attack-simulation-training-get-started.md)
 
 **Jump right into delivering a simulation here:** [How to setup automated attacks and training within Attack simulation training](how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md)
-
 
 ## Step 3 and beyond, becoming a dual use hero
 
@@ -114,7 +115,6 @@ If you’re licensed for Microsoft Defender for Office 365 and host your mailbox
 - The Migration guide contains lots of useful guidance on preparing and tuning your environment to ready it for a migration. But many of the steps are *also* applicable to a dual-use scenario. Simply ignore the MX switch guidance in the final steps. 
 
 **Read it here:** [Migrate from a third-party protection service to Microsoft Defender for Office 365 - Office 365 | Microsoft Docs](../migrate-to-defender-for-office-365.md)
-
 
 ## More information
 
