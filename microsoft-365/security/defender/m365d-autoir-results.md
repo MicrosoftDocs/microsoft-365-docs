@@ -3,8 +3,8 @@ title: Details and results of an automated investigation
 description: View the results and key findings of automated investigation in Microsoft 365 Defender
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

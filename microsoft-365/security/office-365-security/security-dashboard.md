@@ -17,8 +17,8 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Use the new Security Dashboard to review Office 365 Threat Protection Status, and view and act on security alerts.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Security dashboard in the Security & Compliance Center
