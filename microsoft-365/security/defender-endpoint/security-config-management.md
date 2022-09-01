@@ -69,7 +69,7 @@ Use the following steps to validate that your endpoints have successfully comple
 To offboard devices that have been onboarded via Security Management for Microsoft Defender for Endpoint, see [Offboard devices from the Microsoft Defender for Endpoint service](offboard-machines.md).
 
 >[!NOTE]
->Offboarding will [disable Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) if it is enabled.
+>Offboarding will [disable Tamper Protection](manage-tamper-protection-microsoft-365-defender.md) if it is enabled.
 
 ## Troubleshooting Security Management 
 To troubleshoot Security Management for Microsoft Defender for Endpoint enrollment issues, see [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](troubleshoot-security-config-mgt.md).

@@ -4,7 +4,7 @@ description: Configure the Microsoft Defender for Endpoint proxy and internet se
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
   - m365-security-compliance
   - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Configure device proxy and Internet connectivity settings
@@ -139,7 +139,6 @@ Use netsh to configure a system-wide static proxy.
 > [!NOTE]
 >
 > - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
-> - Laptops that are changing topology (for example: from office to home) will malfunction with netsh command. Use the registry-based static proxy configuration.
 
 1. Open an elevated command line:
    1. Go to **Start** and type **cmd**.
