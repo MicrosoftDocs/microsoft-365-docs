@@ -21,7 +21,7 @@ description: Learn how to access and use the Microsoft Service Trust Portal to h
 
 # Get started with Microsoft Service Trust Portal
 
-The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.
+The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
 
 ## Accessing the Service Trust Portal
 
@@ -75,22 +75,6 @@ Provides a wealth of security implementation and design information with the goa
 - **Australia IRAP** - Australia Information Security Registered Assesors Program (IRAP)
 - **Singapore MTCS** - Multi-Tier Cloud Security (MTCS) Singapore Standard
 - **Spain ENS** - Spain Esquema Nacional de Seguridad (ENS)
-- **Tenant Specific** – These documents are restricted by tenants
-
-Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the download page.  
-
-:::image type="content" source="../media/stp-series.png" alt-text="Document series are marked and can be viewed on the download page.":::
-
-Filter by date and cloud service - When viewing the available documents, you can filter the results by date range by selecting **Dates** and then selecting the range you want to use.
-
-:::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filter available documents by date range.":::
-
-Document download view - When viewing the available documents, you can filter the results by the applicable **Cloud Service**.
-
-:::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filter available documents by cloud service.":::
-
-> [!NOTE]
-> Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
 
 ### Reports, Whitepapers, and Artifacts
 
@@ -116,6 +100,21 @@ Documents the apply to the following industries and regions:
 Documents applying to your organization (restricted by tenant).
 
 - **Resources for your Organization** - Documents based on your organization’s subscription and permissions
+
+Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the download page.  
+
+:::image type="content" source="../media/stp-series.png" alt-text="Document series are marked and can be viewed on the download page.":::
+
+Filter by date and cloud service - When viewing the available documents, you can filter the results by date range by selecting **Dates** and then selecting the range you want to use.
+
+:::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filter available documents by date range.":::
+
+Document download view - When viewing the available documents, you can filter the results by the applicable **Cloud Service**.
+
+:::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filter available documents by cloud service.":::
+
+> [!NOTE]
+> Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
 
 ### All Documents
 
