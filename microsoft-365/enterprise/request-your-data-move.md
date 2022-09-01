@@ -41,7 +41,8 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 |Norway  | |Request period closed  |
 |Germany  | |Request period closed  |
 |Brazil  | |Request period closed  |
-|Sweden  |November 16, 2021  |May 31, 2022  |
+|Sweden  | |Request period closed  |
+|Qatar  |August 30, 2022  |February 28, 2023  |
 
 ## How to request a move
 

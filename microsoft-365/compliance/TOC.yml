@@ -98,8 +98,6 @@
          href: archive-eml-data.md
        - name: FX Connect
          href: archive-fxconnect-data.md
-       - name: Jive
-         href: archive-jive-data.md
        - name: MS SQL Database
          href: archive-mssqldatabaseimporter-data.md
        - name: Pivot
@@ -1008,6 +1006,8 @@
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
+          - name: Sensitive information type limits
+            href: sit-limits.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -1229,7 +1229,7 @@
           items: 
             - name: SharePoint and OneDrive
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
             - name: Yammer
               href: retention-policies-yammer.md

@@ -20,8 +20,8 @@ ms.custom:
   - seo-marvel-apr2020
   - intro-overview
 description: Microsoft Defender for Office 365 includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Microsoft Defender for Office 365
 

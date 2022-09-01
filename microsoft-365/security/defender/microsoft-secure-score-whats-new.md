@@ -2,11 +2,12 @@
 title: What's new in Microsoft Secure Score
 description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -20,7 +21,6 @@ search.appverid:
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
-ms.technology: m365d
 ---
 
 # What's new in Microsoft Secure Score
