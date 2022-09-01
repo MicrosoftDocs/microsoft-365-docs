@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 05/16/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365

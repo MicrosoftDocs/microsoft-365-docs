@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
