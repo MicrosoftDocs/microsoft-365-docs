@@ -146,13 +146,14 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 | [Antivirus engine version card](#antivirus-engine-version-card) <br> [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card) <br> [Antivirus platform version card](#antivirus-platform-version-card) | [Antivirus engine updates card](#antivirus-engine-updates-card) <br> [Security intelligence updates card](#security-intelligence-updates-card) <br> [Antivirus platform updates card](#antivirus-platform-updates-card) |
 | The three version cards provide flyout reports that provide additional information, and enable further exploration. | The three up-to-date reporting cards provide links to resources to learn more. |
 
-<sup>{[1](#fn1)}</sup> For the three _updates_ cards (also known as up-to-date reporting cards), "**No data available**" indicates devices that aren't reporting update status. Devices that aren't reporting update status can be due to various reasons, such as:
+<sup>{[1](#fn1)}</sup> For the three _updates_ cards (also known as up-to-date reporting cards), "**No data available**" (or "Unknown" value) indicates devices that aren't reporting update status. Devices that aren't reporting update status can be due to various reasons, such as:
 
 - Computer is disconnected from the network
 - Computer is powered down or in a hibernation state
 - Microsoft Defender Antivirus is disabled
 - Device is a non-Windows (Mac or Linux) device
 - Cloud protection isn't enabled
+- Device does not meet pre-requisites for Antivirus engine or platform version
 
 > [!NOTE]
 > **Prerequisites:**
@@ -206,9 +207,7 @@ There are two different export csv functionalities through the portal:
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
-- **Fly-out level export**
-
-You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100K limit)/.
+- **Flyout level export** You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100K limit).
 
 Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
 
@@ -219,7 +218,8 @@ For information on exporting using API, see the following articles:
 
 > [!IMPORTANT]
 >
->Currently, _JSON response api_ is released to general availability (GA); _Via files api_ is only available in public preview.
+> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
+> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
 
 ### Microsoft Defender Antivirus version and update cards functionality
 
@@ -305,11 +305,16 @@ Microsoft Defender Antivirus (MDAV) up-to-date reports makes determinations base
 - Security Intelligence Publish Time (security intelligence VDMs are used to determine engine/platform versions )
 - And the last up-to-date status communicated from client
 
-For more information on these, see:
+##### Up to date reporting prerequisites
 
-- [Antivirus engine updates card](#antivirus-engine-updates-card)
-- [Security intelligence updates card](#security-intelligence-updates-card)
-- [Antivirus platform updates card](#antivirus-platform-updates-card)
+Up to date reporting generates information for devices that meet the following criteria:
+
+- Engine version: 1.1.19300.2+
+- Platform version: 4.18.2202.1+
+- Cloud protection enabled
+- Windows OS*
+
+*Currently up to date reporting is only available for windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
 
 ##### Up-to-date examples
 
@@ -318,17 +323,11 @@ For more information on these, see:
 - **The engine or platform status is considered unknown (no data available)** If the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days
 - **The security intelligence update is considered up-to date** If the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days
 
-> [!NOTE]
-> **Prerequisites:**
->
-> Up-to-date reporting for Windows devices requires that cloud protection be enabled.
->
-> Currently, "Up-to-date" reporting is only available for Windows devices.
->
-> Cross-platform devices, such as Mac and Linux, are listed under "no data available."
->
-> - **Minimum Engine version**: 1.1.19300.2 or newer
-> - **Minimum Defender platform version**: 4.18.2202.1 or newer
+For more information on these, see:
+
+- [Antivirus engine updates card](#antivirus-engine-updates-card)
+- [Security intelligence updates card](#security-intelligence-updates-card)
+- [Antivirus platform updates card](#antivirus-platform-updates-card)
 
 ##### Antivirus engine updates card
 
@@ -350,25 +349,6 @@ The following table lays out the possible values for up to date reports for **An
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-##### Security intelligence updates card
-
-This card identifies devices that have security intelligence versions that are up to date versus out of date.
-
-**The general definition of ‘Up to date’** – the security intelligence version on the device was written in the past 7 days.
-
-The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, security intelligence publish time, and last status received from client.
-
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last Status received from Client | Reported Status: |
-|:----|:----|:----|:----|
-| >7 days (old) | >7 days (old) | Up to date | Unknown |
-| <7 days (new) | >7 days (old) | Up to Date | Unknown |
-| <7 days (new) | <7 days (new) | Up to Date | Up to Date |
-| >7 days (old) | <7 days (new) | Up to date |  Unknown |
-| >7 days (old) | <7 days (new) | Out of date | Out of Date |
-| >7 days (old) | >7 days (old) | Out of date | Out of Date |
-| <7 days (new) | >7 days (old) | Out of Date | Out of Date |
-| <7 days (new) | <7 days (new) | Unknown | Unknown|
-
 #### Antivirus platform updates card
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
@@ -389,10 +369,29 @@ The following table lays out the possible up to date report values for **Antivir
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
+##### Security intelligence updates card
+
+This card identifies devices that have security intelligence versions that are up to date versus out of date.
+
+**The general definition of ‘Up to date’** – the security intelligence version on the device was written in the past 7 days.
+
+The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, security intelligence publish time, and last status received from client.
+
+| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last Status received from Client | Reported Status: |
+|:----|:----|:----|:----|
+| >7 days (old) | >7 days (old) | Up to date | Unknown |
+| <7 days (new) | >7 days (old) | Up to Date | Unknown |
+| <7 days (new) | <7 days (new) | Up to Date | Up to Date |
+| >7 days (old) | <7 days (new) | Up to date |  Unknown |
+| >7 days (old) | <7 days (new) | Out of date | Out of Date |
+| >7 days (old) | >7 days (old) | Out of date | Out of Date |
+| <7 days (new) | >7 days (old) | Out of Date | Out of Date |
+| <7 days (new) | <7 days (new) | Unknown | Unknown|
+
 ## See also
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
-- [Device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
+- [Export device antivirus health report](device-health-api-methods-properties.md)
 - [Threat protection report](threat-protection-reports.md)
 
 > [!TIP]
@@ -405,4 +404,3 @@ For information about Manage Microsoft Defender Antivirus update versions, see: 
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
