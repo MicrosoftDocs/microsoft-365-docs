@@ -30,24 +30,20 @@ The following clients are currently supported in Whiteboard:
 - Standalone Whiteboard web application at [https://whiteboard.office365.us](https://whiteboard.office365.us)
 - Microsoft Teams meetings, chats, and channels using Teams desktop and web
 - Standalone Whiteboard application for mobile
+- Standalone Whiteboard applications for Windows 10
 
 ## Clients planned
 
 The following clients are planned for future releases of Whiteboard:
 
-- Standalone Whiteboard application for Windows 10 or later versions
-- Standalone Whiteboard application for Surface Hub (currently can be used in anonymous mode)
 - Whiteboard in the Office.com app launcher
-- Whiteboard in Teams meetings on Surface Hub and Teams meeting rooms
-- Whiteboard in 1:1 calls in Teams
+- Whiteboard in Teams meeting room
 
-> [!NOTE]
-> While users can install the Windows client, they won't be able to sign in until the client is updated.
 
 ## See also
 
-[Manage access to Whiteboard - GCC High](manage-whiteboard-access-gcc-high.md)
+[Manage access to Whiteboard - GCC](manage-whiteboard-access-gcc.md)
 
-[Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)
+[Manage data for Whiteboard - GCC](manage-data-gcc.md)
 
-[Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
+[Manage sharing for Whiteboard - GCC](manage-sharing-gcc.md)
