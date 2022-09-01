@@ -183,7 +183,7 @@ To add or remove specific types of information on the **Microsoft Defender Antiv
 
 >:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
-#### New Microsoft Defender Antivirus reporting terms
+#### New Microsoft Defender Antivirus filter definitions
 
 The following table contains a list terms that are new to Microsoft Defender Antivirus reporting.
 
@@ -306,7 +306,7 @@ Microsoft Defender Antivirus (MDAV) make up-to-date reports makes determinations
 - **For engine & platform updates**: the time client events were last received for up to date reports (“Signature Refresh time”) and Security Intelligence Publish Time (security intelligence VDMs are also used to determine engine & platform versions)
 - **For security intelligence updates**: the time client events were last received for up to date reports (“Signature Refresh time”), Security Intelligence Publish Time, and the last up-to-date status communicated from client
 
-For more information about the aforementioned terms, refer back to the section: [New Microsoft Defender Antivirus reporting terms](#new-microsoft-defender-antivirus-reporting-terms)
+For more information about the aforementioned terms, refer back to the section: [New Microsoft Defender Antivirus filter definitions](#new-microsoft-defender-antivirus-filter-definitions)
 
 > [!NOTE]
 >
@@ -343,7 +343,7 @@ This card identifies devices that have antivirus engine versions that are up to 
 
 The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received, and security intelligence publish time.  
 
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Reported Status: |
+| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
 | < 7 days (new) | < 7 days (new) | Up to date/ Out of Date/ Unknown (whatever client reports) |
 | > 7 days (old) | > 7 days (old) | Unknown |
@@ -360,7 +360,7 @@ This card identifies devices that have Antivirus platform versions that are up t
 
 The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received, and security intelligence publish time.
 
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Reported Status: |
+| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
 | < 7 days (new) | < 7 days (new) | Up to date/ Out of Date/ Unknown (whatever client reports) |
 | > 7 days (old) | > 7 days (old) | Unknown |
@@ -377,7 +377,7 @@ This card identifies devices that have security intelligence versions that are u
 
 The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, and security intelligence publish time.
 
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Reported Status: |
+| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
 | >7 days (old) | >7 days (old) | Up to date | _Unknown_ |
 | <7 days (new) | >7 days (old) | Up to Date | _Unknown_ |
