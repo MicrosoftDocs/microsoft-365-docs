@@ -1,5 +1,5 @@
 ---
-title: Discover models in Microsoft SharePoint Syntex
+title: Share an enterprise model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,15 +15,15 @@ ms.localizationpriority:  medium
 description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft SharePoint Syntex.
 ---
 
-# Publish and discover models in Microsoft SharePoint Syntex
+# Share an enterprise model in Microsoft SharePoint Syntex
 
-*Rework "publish & discover" article, using the publish pieces*
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
 
-You can make your trained models available for others to view and use directly from the SharePoint document library. 
+You can make your trained enterprise models available for others to view and use directly from a SharePoint document library. 
 
 You can also find and evaluate trained models in other content centers that were created by others in your organization. Select the model that is most useful for classifying your files or extracting specific information from them. 
 
-## Make your model discoverable to others
+## Share your model with others
 
 To make your trained model available for others to use:
 

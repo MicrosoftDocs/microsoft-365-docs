@@ -1,5 +1,5 @@
 ---
-title: Apply a model to a document library in Microsoft SharePoint Syntex
+title: Discover and apply a model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,9 +15,9 @@ ms.localizationpriority:  medium
 description: Learn how to apply a published a model to a SharePoint document library in Microsoft SharePoint Syntex.
 ---
 
-# Apply a model to a document library in Microsoft SharePoint Syntex
+# Discover and apply a model in Microsoft SharePoint Syntex
 
-*"Update apply a model article to show the new discovery experience (via ""classify & extract"" button OR from apply model action in model home page) + model recommendation & quick test. This article can include pieces from the ""publish & discover"" article"*
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
 
 <!---
 </br>
@@ -27,7 +27,9 @@ description: Learn how to apply a published a model to a SharePoint document lib
 </br>
 --->
 
-After training your **Classify and extract by text pattern** model or after publishing your **Extract by layout** or **Extract by text pattern and layout** model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
+After you train a **Classify and extract by text pattern** model or after you publish an  **Extract by layout** or **Extract by text pattern and layout** model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
+
+This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the content center. A local model is created and trained locally on your own SharePoint site.  
 
 > [!NOTE]
 > You can apply the model only to document libraries to which you have access.
