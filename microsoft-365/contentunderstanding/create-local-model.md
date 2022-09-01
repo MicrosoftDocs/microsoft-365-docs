@@ -30,6 +30,8 @@ When you activate local model creation, the following lists and libraries will b
 - Explanation templates list
 - Model usage list
 
+A model is automatically promoted to the current site only when the model first has been applied to any library in the site. This makes the model discoverable in the list of available site models and available for any other library in the site. Until the model is applied to a library in the site, it is unavailable. Similarly, when a model is removed from all the libraries in the site, it is also removed from the list of available site models. 
+
 This feature is available for all [model types](model-types-overview.md). 
 
 ## Create a model on a local site
