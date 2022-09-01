@@ -2,7 +2,7 @@
 title: Host firewall reporting in Microsoft Defender for Endpoint
 description: Host and view firewall reporting in Microsoft 365 Defender portal.
 keywords: windows defender, firewall
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,7 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ---
