@@ -3,7 +3,7 @@ title: Become a Microsoft Defender for Endpoint partner
 ms.reviewer:
 description: Learn the steps and requirements to integrate your solution with Microsoft Defender for Endpoint and be a partner
 keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.subservice: mde
 ---
 
 # Become a Microsoft Defender for Endpoint partner

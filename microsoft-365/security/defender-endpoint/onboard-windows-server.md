@@ -41,14 +41,15 @@ This topic describes how to onboard specific Windows servers to Microsoft Defend
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
+## License requirement
+
+In order to be eligible to purchase Microsoft Defender for Endpoint Server SKU, you must have already purchased a combined minimum of any of the following: Windows E5/A5, Microsoft 365 E5/A5, or Microsoft 365 E5 Security subscription licenses. For more information on licensing, see the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
+
 ## Windows Server onboarding overview
 
 You'll need to complete the following general steps to successfully onboard servers 2008 R2, 2012 R2, 2016, 2019, 2022.
 
 :::image type="content" source="images/server-onboarding.png" alt-text="Server Onboarding" lightbox="images/server-onboarding.png":::
-
-> [!NOTE]
-> Servers are on-boarded using GPs only.
 
 ### Windows Server 2012 R2 and Windows Server 2016
 - Download installation and onboarding packages.
@@ -58,9 +59,6 @@ You'll need to complete the following general steps to successfully onboard serv
 ### Windows Server Semi-Annual Enterprise Channel and Windows Server 2019
 - Download the onboarding package.
 - Follow the onboarding steps for the corresponding tool.
-
-> [!IMPORTANT]
-> In order to be eligible to purchase Microsoft Defender for Endpoint Server SKU, you must have already purchased a combined minimum of any of the following, Windows E5/A5, Microsoft 365 E5/A5 or Microsoft 365 E5 Security subscription licenses. For more information on licensing, see the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
 
 ## Offboard Windows servers
 
