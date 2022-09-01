@@ -39,7 +39,7 @@ ms.custom: api
 
 1. You can only run a query on data from the last 30 days.
 
-2. The results will include a maximum of 100,000 rows.
+2. The results will include a maximum of 10,000 rows.
 
 3. The number of executions is limited per tenant:
    - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
