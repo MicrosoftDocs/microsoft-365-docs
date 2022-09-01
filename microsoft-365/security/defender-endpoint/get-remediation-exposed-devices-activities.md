@@ -2,7 +2,7 @@
 title: List exposed devices of one remediation activity
 description: Returns information about exposed devices for the specified remediation task.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 
@@ -113,5 +113,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
 - [List all remediation activities](get-remediation-all-activities.md)
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

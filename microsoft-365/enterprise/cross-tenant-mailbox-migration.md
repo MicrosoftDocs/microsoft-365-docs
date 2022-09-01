@@ -221,6 +221,9 @@ Users migrating must be present in the target tenant and Exchange Online system 
 
 Ensure the following objects and attributes are set in the target organization.
 
+>[!TIP]
+>Microsoft is developing a feature to provide a secure automated method to set many of the attributes in the following section. This feature, named Cross-Tenant Identity Mapping, is currently looking for customers willing to participate in a small private preview. For more information about this pre-release feature and how it can simplify your cross-tenant migration processes, see the article **[Cross-Tenant Identity Mapping](cross-tenant-identity-mapping.md)**.
+
 1. For any mailbox moving from a source organization, you must provision a MailUser object in the Target organization:
 
    - The Target MailUser must have these attributes from the source mailbox or assigned with the new User object:
@@ -654,15 +657,24 @@ This can be done before the migration is complete, but you should not assign a l
       | Exchange Online Plan 1                           |
       | Exchange Online POP                              |
       | Exchange Online Protection                       |
+      | Graph Connectors Search with Index                |
       | Information Barriers                             |
       | Information Protection for Office 365 - Premium  |
       | Information Protection for Office 365 - Standard |
       | Insights by MyAnalytics                          |
+      | Microsoft Information Governance                 |
       | Microsoft Purview Audit (Premium)                  |
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
-      | Microsoft MyAnalytics (Full)                     |
+      | Microsoft Data Investigations                    |
+      | Microsoft MyAnalytics (Full)       
+      | Microsoft Communications Compliance               |
+      | Microsoft Communications DLP                     |
+      | Microsoft Customer Key                           |
+      | Microsoft 365 Advanced Auditing                  |
+      | Microsoft Records Management                     |
       | Office 365 eDiscovery (Premium)                   |
+      | Office 365 Advanced eDiscovery                   |
       | Microsoft Defender for Office 365 (Plan 1)       |
       | Microsoft Defender for Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |

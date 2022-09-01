@@ -4,7 +4,8 @@ description: Learn how to configure your Event Hubs
 keywords: event hub, configure, insights
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +19,6 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-MS.technology: mde
 ---
 
 # Configure your Event Hubs

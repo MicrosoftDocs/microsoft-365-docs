@@ -17,6 +17,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-identitydevice
   - m365solution-scenario
+  - highpri
 ms.technology: mdo
 ---
 # Continuous access evaluation for Microsoft 365

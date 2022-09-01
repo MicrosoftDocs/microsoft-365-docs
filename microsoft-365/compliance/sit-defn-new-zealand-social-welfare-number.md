@@ -23,14 +23,6 @@ description: "New Zealand social welfare number sensitive information type entit
 
 # New Zealand social welfare number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 nine digits

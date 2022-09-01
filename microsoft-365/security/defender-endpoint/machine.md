@@ -2,7 +2,7 @@
 title: Machine resource type
 description: Learn about the methods and properties of the Machine resource type in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, get, machines
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 
@@ -36,10 +36,6 @@ ms.custom: api
 
 ## Methods
 
-<br>
-
-****
-
 |Method|Return Type|Description|
 |---|---|---|
 |[List machines](get-machines.md)|[machine](machine.md) collection|List set of [machine](machine.md) entities in the org.|
@@ -55,13 +51,8 @@ ms.custom: api
 |[Get missing KBs](get-missing-kbs-machine.md)|KB collection|Get a list of missing KBs associated with the machine ID|
 |[Set device value](set-device-value.md)|[machine](machine.md) collection|Set the [value of a device](tvm-assign-device-value.md).|
 |[Update machine](update-machine-method.md)|[machine](machine.md) collection|Get the update status of a machine.|
-|
 
 ## Properties
-
-<br>
-
-****
 
 |Property|Type|Description|
 |---|---|---|
@@ -86,4 +77,3 @@ ms.custom: api
 |deviceValue|Nullable Enum|The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|
 |ipAddresses|IpAddress collection|Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).|
 |osArchitecture|String|Operating system architecture. Possible values are: "32-bit", "64-bit". Use this property instead of osProcessor.|
-|

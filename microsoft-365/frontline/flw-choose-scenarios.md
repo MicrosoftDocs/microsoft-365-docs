@@ -30,9 +30,14 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 ## Communications
 
-:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: 
+:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
+
+Watch the following video to see an example of how you can help your frontline workers connect and collaborate in retail organizations:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
@@ -43,7 +48,7 @@ Also see these resources to learn how Yammer can work for your frontline workers
 
 ## Wellbeing & engagement
 
-:::image type="icon" source="/office/media/icons/heart-teams.png"::: 
+:::image type="icon" source="/office/media/icons/heart-teams.png":::
 
 Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.
 
@@ -55,18 +60,18 @@ Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), P
 
 ## Training & onboarding
 
-:::image type="icon" source="/office/media/icons/files-teams.png"::: 
+:::image type="icon" source="/office/media/icons/files-teams.png":::
 
 Promote continual growth for your employees and encourage knowledge sharing and exchange.
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
 | [Onboard new employees](flw-onboarding-training.md) | Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Lists <br>Live meetings |
-| [Ongoing training](flw-onboarding-training.md#ongoing-training) | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections | |
+| [Ongoing training](flw-onboarding-training.md#ongoing-training) | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer| |
 
 ## Schedule management
 
-:::image type="icon" source="/office/media/icons/calendar-teams.png"::: 
+:::image type="icon" source="/office/media/icons/calendar-teams.png":::
 
 Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave.
 
@@ -76,9 +81,14 @@ Simplify and streamline schedule coordination with your frontline workforce. Gai
 
 ## Digitized processes
 
-:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png"::: 
+:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png":::
 
 Drive operational efficiency by digitizing paper-based processes and automating routine, repetitive steps.
+
+Watch the following video to see an example of how you can simplify business processes in retail environments:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
@@ -87,11 +97,26 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 
 ## Virtual appointments
 
-:::image type="icon" source="media/virtual-appointment-teams.png"::: 
+:::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
+Watch the following video to see an example of virtual appointments in healthcare organizations: 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
+
 More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
+
+## Help your team, clients, and customers
+
+Find resources to share with your team to help them get comfortable using Teams apps and features. Get customizable infographics and web content to help your clients and customers use virtual appointments with your organization.
+
+| Scenario | Description |
+| --- | --- |
+|[Help your clients and customers use virtual appointments](virtual-appointments-toolkit.md) |Customizable infographics and FAQ that you can add to your website to make it easy for your clients to use virtual appointments with your organization. |
+|[Help your frontline workers track time and attendance](shifts-toolkit.md) |Videos to help your frontline managers and employees learn about how to use Shifts in Microsoft Teams. |
+|[Help your frontline workers use collaboration apps and features](collab-features-apps-toolkit.md) |Videos to help your frontline team use Microsoft Teams apps and features. |
 
 ## More scenarios and solutions with the digital ecosystem
 
