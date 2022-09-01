@@ -56,7 +56,7 @@ In the event that a campaign has targeted your organization and you’d like to 
 1. Upon the flyout opening, select **Download threat report**.
 1. Open the threat report and it will provide more information surrounding the campaign. The information in the report includes: 
 - **Executive summary:** High-level summary of the type of campaign and the number of users targeted in your organization. 
-- **Analysis:** Timeline chart of when the campaign started, the count of messages targetting your organization, and the destination and verdicts of the messages. 
+- **Analysis:** Timeline chart of when the campaign started, the count of messages targeting your organization, and the destination and verdicts of the messages. 
 - **Attack origin:** Top sending IP addresses and domains with a count of messages that were delivered to inboxes in your organization. This allows you to investigate who is targeting your organization. 
 - **Email template and payload:** The subject line of the emails that were part of the campaign and URLs (and their frequency) present as part of the campaign.
 - **Recommendations:** Recommendations for next steps to remediate messages.
