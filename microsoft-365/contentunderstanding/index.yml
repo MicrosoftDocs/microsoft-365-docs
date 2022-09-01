@@ -107,6 +107,16 @@ landingContent:
             url: trial-syntex.md
 
     # Card 7
+  - title: Get support
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tech Community blog
+            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
+          - text: FAQ
+            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
+
+    # Card 8
   - title: Extensibility
     linkLists:
       - linkListType: reference
@@ -116,12 +126,3 @@ landingContent:
           - text: Syntex Model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
-    # Card 8
-  - title: Get support
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Tech Community blog
-            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
-          - text: FAQ
-            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
