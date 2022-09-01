@@ -2,7 +2,7 @@
 title: Get recommendation by Id
 description: Retrieves a security recommendation by its ID.
 keywords: apis, graph api, supported apis, get, security recommendation, security recommendation by ID, threat and vulnerability management, threat and vulnerability management api 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

@@ -18,6 +18,7 @@ ms.collection:
   - m365solution-migratetomdatp
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
+  - highpri
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho

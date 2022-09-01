@@ -31,10 +31,7 @@ Want to see how it works? Watch this short video on a typical incident response.
 
 To learn more about incident responses, see the following articles:
 
-1. [Review security recommendations](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
-
-2. [Review detected threats and take action](m365bp-review-threats-take-action.md).
-
-3. [Review remediation actions](m365bp-review-remediation-actions-devices.md).
-
-4. [Respond to a compromised email account](../security/office-365-security/responding-to-a-compromised-email-account.md).
+- [Review security recommendations](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
+- [Review detected threats and take action](m365bp-review-threats-take-action.md).
+- [Review remediation actions](m365bp-review-remediation-actions-devices.md).
+- [Respond to a compromised email account](../security/office-365-security/responding-to-a-compromised-email-account.md).
