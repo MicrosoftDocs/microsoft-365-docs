@@ -4,7 +4,7 @@ description: Learn how to access Microsoft Defender for Endpoint preview feature
 keywords: preview, preview experience, Microsoft Defender for Endpoint, features, updates
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Microsoft Defender for Endpoint preview features
