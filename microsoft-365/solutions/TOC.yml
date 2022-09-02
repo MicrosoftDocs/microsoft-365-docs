@@ -373,11 +373,11 @@
     - name: Microsoft 365 for frontline workers
       items: 
       - name: Overview
-        href: ../frontline/flw-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /microsoft-365/frontline/flw-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Step 1. Choose your scenarios
-        href: ../frontline/flw-choose-scenarios.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /microsoft-365/frontline/flw-choose-scenarios.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Step 2. Set up Microsoft 365 for frontline workers
-        href: ../frontline/flw-deploy-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /microsoft-365/frontline/flw-deploy-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Financial services
       items:
       - name: Overview
@@ -393,7 +393,7 @@
       - name: Overview
         href: healthcare-overview.md
       - name: Teams for Healthcare
-        href: /frontline/teams-in-hc
+        href: /microsoft-365/frontline/teams-in-hc
     - name: Education
       items: 
       - name: Teams for Education
@@ -409,7 +409,7 @@
       - name: Overview
         href: retail-overview.md
       - name: Teams for Retail
-        href: /frontline/teams-for-retail-landing-page
+        href: /microsoft-365/frontline/teams-for-retail-landing-page
 - name: Enterprise architecture design principles
   items: 
     - name: Overview
