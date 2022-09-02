@@ -2,7 +2,7 @@
 title: Defender for Endpoint onboarding Windows Client
 description: Onboard Windows Client.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Defender for Endpoint onboarding Windows Client

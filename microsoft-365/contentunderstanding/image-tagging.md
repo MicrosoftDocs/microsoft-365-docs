@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: admindeeplinkMAC
 search.appverid: 
 ms.collection: 

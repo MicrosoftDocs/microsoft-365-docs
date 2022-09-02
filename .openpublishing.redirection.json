@@ -7,8 +7,8 @@
     },
     {
       "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
-      "redirect_url": "defender/defender-experts-for-hunting",
-      "redirect_document_id": false  
+      "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+      "redirect_document_id": true  
     },	  
     {
       "source_path": "microsoft-365/admin/misc/power-bi-in-your-organization.md",
