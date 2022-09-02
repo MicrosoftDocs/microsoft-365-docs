@@ -16,8 +16,8 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
 ms.custom: 
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ROBOTS:
 ---
 

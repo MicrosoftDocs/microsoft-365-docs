@@ -6,8 +6,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.collection: 
@@ -32,6 +32,9 @@ description: Get help or contact support if you have any issues with Defender fo
 
 3. Select an item in the list of results. If you don't see the answer to your question, select **Contact Support** at the bottom of the flyout pane. For more information, see [Get support](../../admin/get-help-support.md)
 
+## Resources for partners
+
+If you're a Microsoft partner helping your customer with security capabilities in Defender for Business, see [Microsoft Defender for Business and Microsoft partner resources](mdb-partners.md).
 
 ## See also
 
