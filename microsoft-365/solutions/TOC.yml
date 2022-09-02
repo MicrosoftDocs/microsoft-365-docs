@@ -370,6 +370,14 @@
     
 - name: Industry-specific guidance
   items: 
+    - name: Microsoft 365 for frontline workers
+      items: 
+      - name: Overview
+        href: ../frontline/flw-overview.md
+      - name: Choose your scenarios
+        href: ../frontline/flw-choose-scenarios.md
+      - name: Learn where to start with a frontline deployment
+        href: ../frontline/flw-deploy-overview.md
     - name: Financial services
       items:
       - name: Overview
