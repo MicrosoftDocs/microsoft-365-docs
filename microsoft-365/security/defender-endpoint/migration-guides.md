@@ -6,7 +6,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
@@ -14,7 +14,7 @@ ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 07/01/2022
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Move to Microsoft Defender for Endpoint
