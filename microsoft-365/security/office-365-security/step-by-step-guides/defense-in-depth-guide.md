@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: ben.harris
+ms.author: benharris
 author: MSFTBen 
 ms.localizationpriority: medium
 manager: dansimp
