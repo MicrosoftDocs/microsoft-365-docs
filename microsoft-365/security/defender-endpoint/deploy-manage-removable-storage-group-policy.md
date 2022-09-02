@@ -30,7 +30,7 @@ The Removable Storage Access Control feature enables you to apply a policy by us
 
 ## Device Control Removable Storage Access Control policies
 
-You can use the following properties to create a removable storage group:
+You can use the following properties to create a removable storage group.
 
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
@@ -69,13 +69,13 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    You can enable Device control as follows:
 
-   - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Features** > **Device Control**
+   - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Features** > **Device Control**.
    - In the **Device Control** window, select **Enabled**.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Screenshot of Enabling RSAC using Group Policy " lightbox="images/enable-rsac-gp.png":::
 
 > [!NOTE]
-> If you don't see this group policy objects, you need to add group policy administrative template. you can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples.
+> If you don't see this group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples.
 
 2. Set Default Enforcement:
 
