@@ -13,7 +13,6 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: Admin
-ms.date: 07/19/2022
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
