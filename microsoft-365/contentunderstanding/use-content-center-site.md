@@ -42,7 +42,7 @@ The Content Center site can be provisioned from the [SharePoint look book servic
 
 3. Enter your email address (for a notification of when your site is ready to use), the site URL you want to use, and the title you want to use for your site. 
 
-    ![Screenshot of the Add to your tenant button on the Content Center site template provisioning page.](../media/content-understanding/content-center-email-and-url.png)
+    ![Screenshot of the information section of the Content Center site template provisioning page.](../media/content-understanding/content-center-email-and-url.png)
 
 4. Select **Provision**, and in a short time your site will be ready for you to use. You’ll get an email (sent to the email address you provided) indicating that your request to provision the Content Center site template is completed.
 
