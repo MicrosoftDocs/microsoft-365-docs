@@ -19,8 +19,8 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the outbound spam controls in Exchange Online Protection (EOP), and what to do if you need to send mass mailings.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Outbound spam protection in EOP
