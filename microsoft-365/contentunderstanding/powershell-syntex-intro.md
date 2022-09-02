@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
