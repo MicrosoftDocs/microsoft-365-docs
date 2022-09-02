@@ -2,7 +2,7 @@
 title: List Investigations API
 description: Use this API to create calls related to get Investigations collection
 keywords: apis, graph api, supported apis, Investigations collection
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

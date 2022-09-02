@@ -2,7 +2,7 @@
 title: DeviceAlertEvents table in the advanced hunting schema
 description: Learn about alert generation events in the DeviceAlertEvents table of the advanced hunting schema
 keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, microsoft defender for endpoint, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, DeviceAlertEvents, alert, severity, category
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # DeviceAlertEvents

@@ -26,8 +26,8 @@ search.appverid:
   - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Learn about Safe Links protection in Defender for Office 365 to protect an organization from phishing and other attacks that use malicious URLs. Discover Teams Safe Links, and see graphics of Safe Links messages.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Safe Links in Microsoft Defender for Office 365
