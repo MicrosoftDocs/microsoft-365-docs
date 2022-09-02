@@ -15,7 +15,6 @@ ms.collection:
 - M365-security-compliance                 
 search.appverid: MET150
 ms.reviewer: shlomiakirav
-ms.date: 07/19/2022
 description: Get help or contact support if you have any issues with Defender for Business.
 ---
 
