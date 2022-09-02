@@ -265,11 +265,13 @@ After you set up your evaluation or trial in audit mode or blocking mode, the **
 
      - To switch from **audit mode** (evaluation policies) to blocking mode (Standard preset security policy), click **Convert to standard protection**, and then click **Continue** in the dialog that appears to be taken to the **Apply standard protection** wizard on the **Preset security policies** page. The existing included and excluded recipients are copied over. For more information, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
-      <!---The next statement is untrue, despite what the dialog said. I checked in PowerShell and in the UI, and the evaluation policies still exist and are turned on---->
+       **Notes**:
 
-       After you turn on the Standard preset security policy, the existing evaluation policies are turned off.
-
-      <!---Also, the button doesn't change to turn off Standard protection and go back to eval policies; it's still called 'Convert to standard protection' and still behaves the same way. I guess you need to go to Preset security policies and turn off Standard?---->
+       - The policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on. To turn off the evaluation policies, use the **Turn off** button.
+       - There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
+         1. Turn off the Standard preset security policy on the **Preset security policies** page.
+         2. After clicking **Manage** on the **Microsoft Defender for Office 365 evaluation** page, verify the presence of the **Turn off** button, which indicates the evaluation policies are turned on. If you see the **Turn on** button, click it to turn on the evaluation policies.
+         3. Verify the users that the evaluation applies to.
 
      - To turn off the evaluation policies, click **Turn off**. To turn them back on, click **Turn on**.
 
@@ -277,11 +279,49 @@ After you set up your evaluation or trial in audit mode or blocking mode, the **
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
-In **audit mode** or **blocking mode**, the following reports are available:
+In **audit mode** or **blocking mode**, the following reports show detections by Defender for Office 365:
 
-- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) shows detections by Defender for Office 365 in the following views:
-  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+- The [Mailflow view for the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report):
+
+  - Messages detected as user impersonation or domain impersonation by anti-phishing policies appear in **Impersonation block**.
+  - Messages detected during file or URL detonation by Safe Attachments policies or Safe Links policies appear in **Detonation block**.
+
+- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report):
+
+  - [View data by Overview](view-email-security-reports.md#view-data-by-overview):
+
+    You can filter most views by the **Protected by** value **MDO** to see the effects of Defender for Office 365.
+
   - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+
+    - Messages detected by [campaigns](campaigns.md) appear in **Campaign**.
+    - Messages detected by Safe Attachments appear in **File detonation** and **File detonation reputation**.
+    - Messages detected by user impersonation protection in anti-phishing policies appear in **Impersonation domain**, **Impersonation user**, and **Mailbox intelligence impersonation**.
+    - Messages detected by Safe Links appear in **URL detonation** and **URL detonation reputation**.
+
+  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+
+    - Messages detected by [campaigns](campaigns.md) appear in **Campaign**.
+    - Messages detected by Safe Attachments appear in **File detonation** and **File detonation reputation**.
+    - Messages detected by Safe Links appear in **URL detonation** and **URL detonation reputation**.
+
+  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+
+    Messages detected by Safe Links appear in **URL malicious reputation**.
+
+  - [Chart breakdown by Policy type](view-email-security-reports.md#chart-breakdown-by-policy-type)
+
+    Messages detected by Safe Attachments appear in **Safe Attachments**
+
+  - [View data by Content \> Malware](view-email-security-reports.md#view-data-by-content--malware)
+
+    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) appear in **MDO detonation**.
+
+  - The [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
+
+    **Show data for Top malware recipients (MDO)** and **Show data for Top phish recipients (MDO)**.
+
+  - The [URL protection report](view-reports-for-mdo.md#url-protection-report)
 
 ### Reports for audit mode only
 
