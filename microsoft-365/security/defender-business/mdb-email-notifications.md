@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection: 
  - M365-security-compliance
  - m365solution-mdb-setup
+ - highpri
 ---
 
 # Set up email notifications

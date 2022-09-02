@@ -15,8 +15,7 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-migratetomdatp
-  - m365solution-mcafeemigrate
-  - m365solution-symantecmigrate
+  - highpri
 ms.topic: article
 ms.custom: 
 - migrationguides
