@@ -33,7 +33,7 @@ DLP examines email messages and files for sensitive information, like a credit c
 
 ## Permissions
 
-Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
+<!--MOVED TO dlp-create-deploy-policy.md Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
@@ -47,7 +47,7 @@ Use the **View-Only DLP Compliance Management** role to create role group with v
 
 For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-These permissions are required to create and apply a DLP policy not to enforce policies.
+These permissions are required to create and apply a DLP policy not to enforce policies.-->
 
 ### Roles and Role Groups in preview
 
