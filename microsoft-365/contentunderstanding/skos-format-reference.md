@@ -95,7 +95,7 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
 
 - sharepoint-taxonomy: termSetName
 
-In the case of the termSetName provided isn't unique within the [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group), SharePoint appends a number at the end of the name to maintain the uniqueness of termSetName(s).
+If the termSetName provided isn't unique within the [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group), SharePoint appends a number at the end of the name to maintain the uniqueness of termSetName(s).
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
