@@ -374,9 +374,9 @@
       items: 
       - name: Overview
         href: ../frontline/flw-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - name: Choose your scenarios
+      - name: Step 1. Choose your scenarios
         href: ../frontline/flw-choose-scenarios.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - name: Learn where to start with a frontline deployment
+      - name: Step 2. Set up Microsoft 365 for frontline workers
         href: ../frontline/flw-deploy-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Financial services
       items:
