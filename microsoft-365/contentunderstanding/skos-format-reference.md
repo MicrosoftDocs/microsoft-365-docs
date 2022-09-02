@@ -200,7 +200,7 @@ This means that TermA is the parent and  TermA is the child.
 
 **sharepoint-taxonomy:child**
 
-The object contains one or more child TermSet instances, and these can be accessed through the TermSets property. This class also provides methods for creating new child TermSet objects. Permissions for editing child Term and TermSet instances is specified on the group.
+The object contains one or more child TermSet instances, and these can be accessed through the TermSets property. This class also provides methods for creating new child TermSet objects. Permissions for editing child Term and TermSet instances are specified on the group.
 
 This hierarchically relates a [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) to another [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
