@@ -2,7 +2,7 @@
 title: Use role-based access control to grant fine-grained access to Microsoft 365 Defender portal
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Manage portal access using role-based access control
