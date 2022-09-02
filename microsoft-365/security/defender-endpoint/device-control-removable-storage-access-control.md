@@ -40,14 +40,16 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |Machine-based Support|Yes|
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature gives you the following capabilities:
+- Default Enforcement: Allows you to set default access (Deny or Allow) to removable media if there is no custom policy
+- Enable or Disable Removable Storage Access Control: If you set Disable, it will disable the Removable Storage Access Control policy on this machine
+- Custom Policy: Allows you to create removable media group and set policy to enforce each group
+- Capture file information: Allows you to create policy to capture file information when Write access happens
 
-|Capability|Deploy through Intune|Deploy through Group Policy|
-|---|---|---|
-|Removable Media Group Creation <br/> Allows you to create reusable removable media group| [Deploying Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md)| [Deploying Removable Storage Access Control by using Group Policy](deploy-manage-removable-storage-group-policy.md)|
-|Policy Creation <br/> Allows you to create policy to enforce each removable media group| [Deploying Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md)| [Deploying Removable Storage Access Control by using Group Policy](deploy-manage-removable-storage-group-policy.md)|
-|Default Enforcement <br/> Allows you to set default access (Deny or Allow) to removable media if there is no policy| [Deploying Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md) | [Deploying Removable Storage Access Control by using Group Policy](deploy-manage-removable-storage-group-policy.md)|
-|Enable or Disable Removable Storage Access Control <br/> If you set Disable, it will disable the Removable Storage Access Control policy on this machine| [Deploying Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md)| [Deploying Removable Storage Access Control by using Group Policy](deploy-manage-removable-storage-group-policy.md)|
-|Capture file information <br/> Allows you to create policy to capture file information when Write access happens|  | [Deploying Removable Storage Access Control by using Group Policy](deploy-manage-removable-storage-group-policy.md) |
+For specific guidance, see:
+|Topic|Description|
+|---|---|
+| [Deploying Removable Storage Access Control by using Group Policy](deploy-manage-removable-storage-group-policy.md) | Use Group Policy to deploy the policy.|
+| [Deploying Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md) | Use Intune to deploy the policy.|
 
 ### Prepare your endpoints
 
