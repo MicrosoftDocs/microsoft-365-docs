@@ -188,7 +188,7 @@ To add or remove specific types of information on the **Microsoft Defender Antiv
 
 #### New Microsoft Defender Antivirus filter definitions
 
-The following table contains a list terms that are new to Microsoft Defender Antivirus reporting.
+The following table contains a list of terms that are new to Microsoft Defender Antivirus reporting.
 
 | Column name | Description |
 |:---|:---|
@@ -304,7 +304,7 @@ The up-to-date cards show the up-to-date status for **Antivirus engine**, **
 
 Definitions for _up-to-date_, _out-of-date_, and _no_data_available_ are provided for each card below.
 
-Microsoft Defender Antivirus (MDAV) make up-to-date reports makes determinations based on the following criteria:
+Microsoft Defender Antivirus (MDAV) makes up-to-date reports and determinations based on the following criteria:
 
 - **For engine & platform updates**: the time client events were last received for up to date reports (“Signature Refresh time”) and Security Intelligence Publish Time (security intelligence VDMs are also used to determine engine & platform versions)
 - **For security intelligence updates**: the time client events were last received for up to date reports (“Signature Refresh time”), Security Intelligence Publish Time, and the last up-to-date status communicated from client
