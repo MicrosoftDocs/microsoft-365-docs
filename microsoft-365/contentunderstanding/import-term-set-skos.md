@@ -7,7 +7,6 @@ manager: serdars
 audience: admin
 ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.service: 
 ms.collection: enabler-strategic
 ms.custom: admindeeplinkSPO
 search.appverid: 
