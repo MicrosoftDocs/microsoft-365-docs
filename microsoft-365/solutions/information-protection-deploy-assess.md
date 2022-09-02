@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
