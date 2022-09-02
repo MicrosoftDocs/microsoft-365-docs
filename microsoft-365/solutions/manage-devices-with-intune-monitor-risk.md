@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 description: Learn how to connect Microsoft Intune to Defender for Endpoint and monitor device risk as a condition for access.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
