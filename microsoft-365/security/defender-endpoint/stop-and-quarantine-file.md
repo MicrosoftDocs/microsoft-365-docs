@@ -2,7 +2,7 @@
 title: Stop and quarantine file API
 description: Learn how to stop running a file on a device and delete the file in Microsoft Defender for Endpoint. See an example.
 keywords: apis, graph api, supported apis, stop and quarantine file
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

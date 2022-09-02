@@ -2,7 +2,7 @@
 title: Turn on network protection
 description: Enable network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager.
 keywords: Network protection, exploits, malicious website, ip, domain, domains, enable, turn on
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date:
 ---

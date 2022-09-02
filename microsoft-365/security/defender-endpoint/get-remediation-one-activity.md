@@ -2,7 +2,7 @@
 title: Get one remediation activity by ID
 description: Returns information for the specified remediation activity.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

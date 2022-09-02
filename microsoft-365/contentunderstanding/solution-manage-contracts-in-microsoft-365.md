@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - m365solution-managecontracts
 - m365solution-overview

@@ -2,7 +2,7 @@
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 keywords: Network protection, exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
@@ -143,6 +143,8 @@ A user visits a website:
 
 ### Network protection: C2 detection and remediation
 
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
 
 Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage.
@@ -181,7 +183,7 @@ The following example includes the blocked actions:
 ```kusto
 
 DeviceEvents
-|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 

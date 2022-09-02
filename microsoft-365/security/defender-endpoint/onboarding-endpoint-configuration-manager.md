@@ -2,7 +2,7 @@
 title: Onboarding using Microsoft Endpoint Configuration Manager
 description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Configuration Manager
 keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
   - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Onboarding using Microsoft Endpoint Configuration Manager

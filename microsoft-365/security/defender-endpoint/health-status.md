@@ -2,7 +2,7 @@
 title: Investigate agent health issues
 description: Learn about the values returned when running the mdatp health command
 keywords: mdatp health, command, health, status, command, onboarding status
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Investigate agent health issues
