@@ -137,7 +137,7 @@
           href: use-contracts-management-site.md 
         - name: Content Center site template
           href: use-content-center-site.md 
-    -name: PowerAutomate for Syntex
+    - name: PowerAutomate for Syntex
     items:
      - name: PowerAutomate Actions for Syntex
        href:  powerautomate-syntex-actions.md
