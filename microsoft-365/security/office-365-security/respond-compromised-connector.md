@@ -14,8 +14,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Learn how to recognize and respond to a compromised connector in Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Respond to a compromised connector

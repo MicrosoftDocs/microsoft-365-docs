@@ -271,21 +271,21 @@
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
-         - name: Microsoft Productivity Score - overview
-           href: productivity/productivity-score.md
+         - name: Microsoft Adoption Score - overview
+           href: adoption/adoption-score.md
            items:
             - name: Content collaboration
-              href: productivity/content-collaboration.md
+              href: adoption/content-collaboration.md
             - name: Communication 
-              href: productivity/communication.md
+              href: adoption/communication.md
             - name: Mobility
-              href: productivity/mobility.md
+              href: adoption/mobility.md
             - name: Teamwork
-              href: productivity/teamwork.md
+              href: adoption/teamwork.md
             - name: Meetings
-              href: productivity/meetings.md
+              href: adoption/meetings.md
             - name: Microsoft 365 Apps health
-              href: productivity/apps-health.md
+              href: adoption/apps-health.md
             - name: Endpoint Analytics
               href: /mem/analytics/productivity-score
          - name: Change your organization contact info
@@ -320,8 +320,6 @@
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
-         - name: Show or hide new features
-           href: manage/show-hide-new-features.md
          - name: Power BI usage analytics
            items: 
            - name: About usage analytics
@@ -358,7 +356,7 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Best practices for securing your data
+        - name: Top 10 ways to secure your data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -377,7 +375,7 @@
     - name: Manage devices and app data
       items:
         - name: Device and app data protection methods 
-          href: devices/choose-device-security.md
+          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security

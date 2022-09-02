@@ -23,14 +23,6 @@ description: "U.K. Unique Taxpayer Reference Number sensitive information type e
 
 # U.K. Unique Taxpayer Reference Number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 10 digits without spaces and delimiters

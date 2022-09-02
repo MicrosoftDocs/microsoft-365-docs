@@ -2,7 +2,7 @@
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: m365d
 ---
 
 # Run the client analyzer on macOS and Linux
@@ -30,7 +30,7 @@ ms.technology: m365d
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'AC086D65202D31EBCF9DC76F7CA29A5B8B355CD6F78D31BBF89289EB7AA2B67D'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'bf102a79626c88fe58b5be3034640835f96f54230292486716d72f515875966c'.
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 

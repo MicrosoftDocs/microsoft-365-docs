@@ -16,8 +16,8 @@ ms.collection:
   - M365-security-compliance
 description: Learn about how to define Safe Attachments policies to protect your organization from malicious files in email.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Set up Safe Attachments policies in Microsoft Defender for Office 365

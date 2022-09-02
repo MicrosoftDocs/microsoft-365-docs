@@ -44,7 +44,7 @@ The **Priority account protection** feature that's described in this topic is av
 The **Premium Mail Flow Monitoring** feature that's described in this topic is available only to organizations that meet the following requirements:
 
 - Your organization needs to have a license count of at least 5,000, from either one of, or a combination of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. For example, your organization can have 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5, for a total of 5,500 licenses from the qualifying products.
-- Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, One Drive for Business, SharePoint Online, Exchange Online and Office apps.
+- Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, OneDrive for Business, SharePoint Online, Exchange Online and Office apps.
 
 > [!NOTE]
 > You can monitor up to 250 priority accounts.

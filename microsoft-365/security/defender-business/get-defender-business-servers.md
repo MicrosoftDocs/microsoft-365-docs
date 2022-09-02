@@ -6,11 +6,13 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: how-to
-mms.date: 07/19/2022
-s.prod: m365-security
-ms.technology: mdb
+ms.topic: overview
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: none
+ms.date: 08/11/2022
+ms.reviewer: shlomiakirav
+f1.keywords: NOCSH 
 ms.collection: 
 - SMB
 - m365-security-compliance
@@ -19,6 +21,10 @@ f1.keywords: NOCSH
 ---
 
 # How to get Microsoft Defender for Business servers (preview)
+
+Microsoft Defender for Business servers (preview) enables you to onboard a device running Windows Server or Linux Server to Defender for Business or Microsoft 365 Business Premium. When the Microsoft Defender for Business servers license becomes generally available, you'll need one license for each server instance.
+
+Here's how to get Microsoft Defender for Business servers (preview):
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 

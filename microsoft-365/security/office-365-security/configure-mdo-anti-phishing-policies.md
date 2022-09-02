@@ -15,8 +15,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365
@@ -184,6 +184,13 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
         In the **Add trusted domains** flyout that appears, click in the **Domain** box, enter a value, and then press Enter or select the value that's displayed below the box. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
         When you're finished, click **Add**.
+
+     > [!NOTE]
+     > If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
+     >
+     > - `⁠noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
 
      Back on the **Manage custom domains for impersonation** flyout, you can remove entries from the **Sender** and **Domain** tabs by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
 

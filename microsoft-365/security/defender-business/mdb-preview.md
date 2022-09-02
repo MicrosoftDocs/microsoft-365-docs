@@ -5,6 +5,9 @@ keywords: preview, preview experience, Microsoft Defender for Business, features
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: mdb
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -12,7 +15,7 @@ manager: dansimp
 audience: Admin
 ms.date: 07/19/2022
 ms.collection:
-  - m365-security-compliance
+- m365-security-compliance
 ms.topic: conceptual
 ---
 

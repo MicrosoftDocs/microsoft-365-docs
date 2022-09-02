@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
  - M365-security-compliance
  - m365solution-mdb-setup
+ - highpri
 ---
 
 # Set up email notifications
@@ -27,8 +28,6 @@ You can set up email notifications for your security team. Then, as alerts are g
 1. [Learn about types of email notifications](#types-of-email-notifications).
 2. [View and edit email notification settings](#view-and-edit-email-notifications).
 3. [Proceed to your next steps](#next-steps).
-
-
 
 ## Types of email notifications
 

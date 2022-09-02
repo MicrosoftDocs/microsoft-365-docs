@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 ms.date: 07/19/2022
 f1.keywords: NOCSH 
@@ -17,6 +18,7 @@ ms.collection:
  - SMB
  - M365-security-compliance
  - m365solution-mdb-setup
+ - highpri
 ---
 
 # Assign roles and permissions in Microsoft Defender for Business

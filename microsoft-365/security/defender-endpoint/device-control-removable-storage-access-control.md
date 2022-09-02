@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
 description: A walk-through about Microsoft Defender for Endpoint
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.date: 08/08/2022
 ms.reviewer: tewchen
 ---

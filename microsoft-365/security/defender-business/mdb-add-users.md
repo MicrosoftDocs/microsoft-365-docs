@@ -7,10 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 07/19/2022
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/24/2022
 ms.collection: M365-security-compliance
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
@@ -39,7 +39,7 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
    If you don't have any licenses available, you can still add a user and buy additional licenses. For more information about adding users, see [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
-5. On the **Optional settings** page, you can expand **Profile info** and fill in details, such as the user's jo title, department, location, and so forth. Then choose **Next**.
+5. On the **Optional settings** page, you can expand **Profile info** and fill in details, such as the user's job title, department, location, and so forth. Then choose **Next**.
 
 6. On the **Review and finish** page, review the details, and then select **Finish adding** to add the user. If you need to make any changes, choose **Back** to go back to a previous page.
 

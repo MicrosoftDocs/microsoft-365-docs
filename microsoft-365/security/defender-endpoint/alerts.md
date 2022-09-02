@@ -2,7 +2,7 @@
 title: Get alerts API
 description: Learn about the methods and properties of the Alert resource type in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alerts, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 
@@ -32,10 +32,6 @@ ms.custom: api
 
 ## Methods
 
-<br>
-
-****
-
 |Method|Return Type|Description|
 |---|---|---|
 |[Get alert](get-alert-info-by-id.md)|[Alert](alerts.md)|Get a single [alert](alerts.md) object.|
@@ -48,13 +44,8 @@ ms.custom: api
 |[List related IPs](get-alert-related-ip-info.md)|IP collection|List IPs that are associated with the alert.|
 |[Get related machines](get-alert-related-machine-info.md)|[Machine](machine.md)|The [machine](machine.md) that is associated with the [alert](alerts.md).|
 |[Get related users](get-alert-related-user-info.md)|[User](user.md)|The [user](user.md) that is associated with the [alert](alerts.md).|
-|
 
 ## Properties
-
-<br>
-
-****
 
 |Property|Type|Description|
 |---|---|---|
@@ -87,7 +78,6 @@ ms.custom: api
 |detectorId|String|The ID of the detector that triggered the alert.|
 |comments|List of Alert comments|Alert Comment object contains: comment string, createdBy string, and createTime date time.|
 |Evidence|List of Alert evidence|Evidence related to the alert. See example below.|
-|
 
 >[!NOTE]
 >Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.

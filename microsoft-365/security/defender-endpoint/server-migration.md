@@ -4,18 +4,19 @@ description: Read this article to get an overview of how to migrate your servers
 keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 
@@ -27,8 +28,6 @@ ms.technology: mde
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 > [!NOTE]
 > Always ensure the operating system, and Microsoft Defender Antivirus on Windows Server 2016, are fully updated before proceeding with installation or upgrade. To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved after installation. In addition, to keep protection components updated, please reference [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
@@ -69,7 +68,7 @@ For instructions on how to migrate using Microsoft Endpoint Configuration Manage
 
 ## If you are running a non-Microsoft antivirus solution
 
-1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016) ensuring [prerequisites](configure-server-endpoints.md#prerequisites) have been met.
+1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016) ensuring [prerequisites](configure-server-endpoints.md#prerequisites) have been met. For more information on the prerequisites that have to be met, see [Prerequisites for Windows Server 2016](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Ensure third-party antivirus management no longer pushes antivirus agents to these machines.*
 3. Author your policies for the protection capabilities in Microsoft Defender for Endpoint and target those to the machine in the tool of your choice.*
 4. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).

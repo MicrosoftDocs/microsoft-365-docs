@@ -16,8 +16,8 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
 ms.custom: 
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ROBOTS:
 ---
 
@@ -82,7 +82,7 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 **Notes**:
 
-- Safe Links will detonate URLs in mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Safe Links will detonate URLs in mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 - Safe Links doesn't wrap URL links in email message bodies.
 - The evaluation policy settings are described in the [Evaluation policy settings](#evaluation-policy-settings) section later in this article.
 

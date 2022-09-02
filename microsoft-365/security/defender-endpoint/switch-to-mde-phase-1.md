@@ -2,8 +2,8 @@
 title: Switch to Microsoft Defender for Endpoint - Prepare
 description: Get ready to make the switch to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
 keywords: migration, Microsoft Defender for Endpoint, best practice
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,8 +15,7 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-migratetomdatp
-  - m365solution-mcafeemigrate
-  - m365solution-symantecmigrate
+  - highpri
 ms.topic: article
 ms.custom: 
 - migrationguides

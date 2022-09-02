@@ -2,7 +2,7 @@
 title: Update machine entity API
 description: Learn how to update machine tags by using this API. You can update the tags and devicevalue properties.
 keywords: apis, graph api, supported apis, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

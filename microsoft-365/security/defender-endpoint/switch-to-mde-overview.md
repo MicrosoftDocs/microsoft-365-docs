@@ -2,7 +2,7 @@
 title: Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
 description: Make the switch to Microsoft Defender for Endpoint, which includes Microsoft Defender Antivirus for your endpoint protection solution.
 keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
 - m365initiative-defender-endpoint
+- highpri
 ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
@@ -62,7 +61,7 @@ In this migration guide, we focus on [next-generation protection](microsoft-defe
 
 |Feature/Capability|Description|
 |---|---|
-|[Threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)|Threat & vulnerability management capabilities help identify, assess, and remediate weaknesses across your endpoints (such as devices).|
+|[Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)|Defender Vulnerability Management capabilities help identify, assess, and remediate weaknesses across your endpoints (such as devices).|
 |[Attack surface reduction](overview-attack-surface-reduction.md)|Attack surface reduction rules help protect your organization's devices and applications from cyberthreats and attacks.|
 |[Next-generation protection](microsoft-defender-antivirus-in-windows-10.md)|Next-generation protection includes Microsoft Defender Antivirus to help block threats and malware.|
 |[Endpoint detection and response](overview-endpoint-detection-response.md)|Endpoint detection and response capabilities detect, investigate, and respond to intrusion attempts and active breaches.|

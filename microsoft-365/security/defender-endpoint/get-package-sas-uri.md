@@ -2,7 +2,7 @@
 title: Get package SAS URI API
 description: Use this API to get a URI that allows downloading an investigation package.
 keywords: apis, graph api, supported apis, get package, sas, uri
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 
@@ -76,13 +76,13 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with object that holds the link to the package in the "value" parameter. This link is valid for a very short time and should be used immediately for downloading the package to a local storage. If the machine action for the collection exists but is not complete, this returns 404 Not Found.
+If successful, this method returns 200, Ok response code with object that holds the link to the package in the "value" parameter. This link is valid for a short time and should be used immediately for downloading the package to a local storage. If the machine action for the collection exists but isn't complete, this returns 404 Not Found.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
@@ -90,7 +90,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525c
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 Ok

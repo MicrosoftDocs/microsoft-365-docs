@@ -23,14 +23,6 @@ description: "Poland REGON number sensitive information type entity definition."
 
 # Poland REGON number
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
-
 ## Format
 
 9-digit or 14-digit number

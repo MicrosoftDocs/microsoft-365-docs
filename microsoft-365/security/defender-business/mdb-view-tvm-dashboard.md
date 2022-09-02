@@ -1,18 +1,17 @@
 ---
-title: View your Threat & Vulnerability Management dashboard in Microsoft Defender for Business
-description: Use your Threat & Vulnerability Management dashboard to see important items to address in Defender for Business.
+title: View your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business
+description: Use your Microsoft Defender Vulnerability Management dashboard to see important items to address in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: how-to
+ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/02/2022
 ms.reviewer: shlomiakirav
-ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -22,7 +21,7 @@ ms.custom: intro-get-started
 
 # Use your vulnerability management dashboard in Microsoft Defender for Business
 
-Defender for Business includes a vulnerability management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, that dashboard enables you to view information about exposed devices and see relevant security recommendations. You can use your threat & vulnerability management dashboard to:
+Defender for Business includes a vulnerability management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, that dashboard enables you to view information about exposed devices and see relevant security recommendations. You can use your Defender Vulnerability Management dashboard to:
 
 - View your exposure score, which is associated with devices in your company.
 - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions.
