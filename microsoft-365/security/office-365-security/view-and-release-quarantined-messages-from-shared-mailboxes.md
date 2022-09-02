@@ -15,8 +15,8 @@ ms.assetid:
 ms.collection: 
   - M365-security-compliance
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View and release quarantined messages from shared mailboxes
