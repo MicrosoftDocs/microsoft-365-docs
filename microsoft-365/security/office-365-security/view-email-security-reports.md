@@ -333,6 +333,9 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 ## Post-delivery activities report
 
+> [!NOTE]
+> This report is in the process of being rolled out. Worldwide availability is expected by the end of October 2022.
+
 The **Post-delivery activities** report shows information about email messages that removed from user mailboxes after delivery by zero-hour auto purge (ZAP). For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
 The report shows real-time information, with updated threat information.
