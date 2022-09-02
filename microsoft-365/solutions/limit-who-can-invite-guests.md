@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterpriseise
+ms.service: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration

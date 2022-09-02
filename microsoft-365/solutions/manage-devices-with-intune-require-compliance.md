@@ -42,8 +42,8 @@ Be sure to:
 - Coordinate the user groups you assigned to your compliance policies with the user groups assigned to the Conditional Access policy.
 - Test out your Conditional Access policies using the What If and Audit Mode capabilities before fully assigning the Conditional Access policy. This helps you understand the results of the policy.
 - Set a grace period in line with the confidentiality of the data and/or app being accessed. 
-- Make sure your compliance policies do not interfere with any regulatory or other compliance requirements. 
-- Understand the device check in intervals for compliance policies.
+- Make sure your compliance policies don't interfere with any regulatory or other compliance requirements. 
+- Understand the device check-in intervals for compliance policies.
 - Avoid conflicts between compliance policies and configuration profiles. Understand the outcomes if you choose to.
 
 To troubleshoot device profiles in Intune, including conflicts between policies, see [Common questions and answers with device policies and profiles in Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot).
