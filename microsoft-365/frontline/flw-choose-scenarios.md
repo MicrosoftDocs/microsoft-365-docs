@@ -28,6 +28,10 @@ Microsoft 365 for frontline workers can help you connect and engage your workfor
 
 Use these scenario overviews to start envisioning what your organization can do with Microsoft 365 for frontline workers, then follow the links to find out how to implement these scenarios.
 
+| Item | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline worker scenarios.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206713)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.|
+
 ## Communications
 
 :::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::

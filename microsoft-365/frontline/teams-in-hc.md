@@ -75,6 +75,12 @@ And take advantage of these features that help Microsoft Teams work for your hea
 | [Secure messaging](#secure-messaging) | Get quicker attention to urgent messages and have confidence that the message was received and read. | Users must have an appropriate license*.  |
 | [Teams templates](#teams-templates-for-healthcare-organizations) | Create teams that include a predefined template of settings, channels, and pre-installed apps for communication and collaboration within a ward, pod, or department, or between multiple wards, pods, and departments within a hospital. | Users must have an appropriate license*.  |
 
+Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
+
+| Item | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers: Healthcare scenarios.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.|
+
 ## Virtual appointments and Electronic Healthcare Record (EHR) integration
 
 Use the complete meetings platform in Teams to schedule, manage, and conduct virtual appointments with patients.
