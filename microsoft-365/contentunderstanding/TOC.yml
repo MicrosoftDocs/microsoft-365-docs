@@ -140,7 +140,7 @@
     -name: PowerAutomate for Syntex
     items:
      -name: PowerAutomate Actions for Syntex
-     href:  Powerapps-syntex-actions.md
+     href:  Powerautomate-syntex-actions.md
     - name: Extensibility
       href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
