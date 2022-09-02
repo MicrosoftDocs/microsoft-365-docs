@@ -154,7 +154,7 @@ Each Microsoft 365 organization can have up to five onmicrosoft.com domains.
 
 > [!NOTE]
 > You must be a Global admin or a Domain Name admin to add a domain.
-> Creating an additional .onmicrosoft domain and using it as your default will not do a rename for SharePoint Online. To make changes to your .onmicrosoft SharePoint domain you would need to use the [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 1,000 sites).
+> Creating an additional .onmicrosoft domain and using it as your default will not do a rename for SharePoint Online. To make changes to your .onmicrosoft SharePoint domain you would need to use the [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 10,000 sites).
 > If you're using Microsoft 365 mail services, removal of your initial .onmicrosoft domain is not supported.
 
 
