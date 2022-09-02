@@ -56,25 +56,25 @@ This feature is available to organizational account customers with a Microsoft C
 
 For more information, see [Manage billing across multiple tenants in the Microsoft 365 admin center](../commerce/billing-and-payments/manage-multi-tenant-billing.md).
 
-### Microsoft 365 Experience Insights Dashboard
+### Microsoft 365 Experience insights Dashboard
 
-The Experience insights dashboard shows you user experience metrics to give a fuller view of your organization’s usage in Microsoft 365. You can view data across product usage, in-product feedback, [Net Promoter Score™ (NPS) values](https://www.netpromoter.com/net-promoter-score/), and data on help content viewed across an organization. The information and data found on the dashboard can help to better understand your users and improve your user’s overall experience.
+The Experience insights (preview) dashboard shows you user experience metrics to give an at-a-glance view of your organization’s experience with Microsoft 365. You can view data across product usage, in-product feedback, [Net Promoter Score™ (NPS) values](https://www.netpromoter.com/net-promoter-score/), and data on help content viewed across your organization. The information and data found on the dashboard can help to better understand where users may be struggling and improve your user’s overall experience.
 
 :::image type="content" source="../media/experience-insights-dashboard2.png" alt-text="Screenshot: Experience insights dashboard home screen in the Microsoft 365 admin center":::
 
-You can get details on feature-specific usage and sentiment for select apps and services to help you understand how your organization is using Microsoft 365.
+You can click on an app or service to get more detailed usage and sentiment data to help you drill into potential areas for improvement of their experience with the app or service.
 
 :::image type="content" source="../media/experience-insights-teams-usage2.png" alt-text="Screenshot: Experience insights dashboard providing usage data for Microsoft Teams, such as percentage of product usage, active users (daily), and active users by feature (daily)":::
 
-When users in your organization submit feedback and NPS survey responses through Microsoft 365 apps and services, you can now view this information through Experience insights.
+When users in your organization submit feedback and NPS survey responses through Microsoft 365 apps and services, you can view this information through Experience insights.
 
 :::image type="content" source="../media/experience-insights-teams-feedback2.png" alt-text="Screenshot: Experience insights dashboard providing product feedback data for Microsoft Teams, such as in-product feedback volume and recent comments":::
 
-You can get help content data to see when users in your organization view help references on [support.microsoft.com](https://support.microsoft.com/) or our in-app help experiences. This helps to identify what articles are read frequently and what areas may need troubleshooting or training.
+For the first time, you can also see the help articles users in your organization are accessing on [support.microsoft.com](https://support.microsoft.com/) or our in-app help experiences. This helps to identify where users may be struggling and where more help may be needed.
 
 :::image type="content" source="../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Net Promoter Score (NPS) survey data for Microsoft Teams providing information on survey response volume and recent comments":::
 
-Experience insights is available to Global admins, Global readers, and Reports reader roles.
+Currently, Experience insights is starting to roll out to Public Preview starting with Targeted Release and is available to Global admins, Global readers, and Reports reader roles.
 
 For more information, see the Microsoft Docs article: [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
