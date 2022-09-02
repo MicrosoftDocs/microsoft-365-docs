@@ -200,7 +200,7 @@ To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then t
 ## If you need to make changes to a connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md).
+After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 ## Check the health of a connection
 
@@ -232,12 +232,12 @@ After a connection is set up, you can manage it on the Manage Shifts connectors 
     To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
 
 > [!NOTE]
-> You can also use PowerShell to make changes to a connection. To learn more, see [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md).
+> You can also use PowerShell to make changes to a connection. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 ************
 
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md)
+- [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md)
 - [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

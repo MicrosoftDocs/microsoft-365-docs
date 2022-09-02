@@ -195,7 +195,7 @@ To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then t
 ## If you need to make changes to a connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Manage your Shifts connection to Blue Yonder Workforce Management using PowerShell](shifts-connector-powershell-manage.md).
+After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
 ## Check the health of a connection
 
@@ -211,5 +211,5 @@ You can view information about your connection, such as health status and sync i
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Manage your Shifts connection to Blue Yonder Workforce Management using PowerShell](shifts-connector-powershell-manage.md)
+- [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
 - [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

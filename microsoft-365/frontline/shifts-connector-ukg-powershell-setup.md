@@ -94,7 +94,7 @@ The script does the following actions. You'll be prompted to enter setup and con
     To learn more, see [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). To see the list of supported sync options for each parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 
     > [!IMPORTANT]
-    > The script enables sync for all these options. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md).
+    > The script enables sync for all these options. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 1. Creates the connection.
 1. Maps UKG Dimensions instances to teams. Mappings are based on the UKG Dimensions instance IDs and TeamIds that you enter or new teams you create, depending on the script that you run. If a team has an existing schedule, the script removes schedule data for the date and time range that you specify.
@@ -103,7 +103,7 @@ A Success message on the screen indicates that your connection is successfully s
 
 ## If you need to make changes to a connection
 
-To make changes to a connection after it's set up, see [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md). For example, you can update sync settings, team mappings, and disable sync for a connection.
+To make changes to a connection after it's set up, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md). For example, you can update sync settings, team mappings, and disable sync for a connection.
 
 ## Scripts
 
@@ -413,7 +413,7 @@ For help with Shifts connector cmdlets, including the cmdlets used in the script
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Manage your Shifts connection to UKG Dimensions using PowerShell](shifts-connector-ukg-powershell-manage.md)
+- [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md)
 - [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
 - [Teams PowerShell cmdlet reference](/powershell/teams/intro)
