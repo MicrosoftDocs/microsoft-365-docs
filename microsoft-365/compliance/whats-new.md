@@ -38,10 +38,49 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## August 2022
 
+### Compliance Manager
+
+- [Update improvement actions and bring compliance data into Compliance Manager](compliance-manager-update-actions.md) - new functionality for updating multiple improvement actions at once, which also allows orgs to bring compliance work completed in other systems into Compliance Manager for tracking there.
+- [Working with improvement actions in Compliance Manager](compliance-manager-improvement-actions.md) - users can now include a link/URL as part of evidence for improvement action implementation or testing work.
+
+### Compliance offerings & service assurance
+
+- [Microsoft 365 change management](/compliance/assurance/assurance-microsoft-365-change-management) - new assurance topic that covers code and non-code changes to Microsoft services.
+- **Japan CS Gold Mark offering topic** - retired, certification not renewed.
+
 ### Data lifecycle management and records management
 
 - [Exchange (legacy)](data-lifecycle-management.md#exchange-legacy-features) configuration is moving from the Classic Exchange admin center (EAC) to the Microsoft Purview compliance portal, under **Data lifecycle management**. Existing data lifecycle management features are located under a new subnode, **Microsoft 365**.
 - For cloud attachments (currently rolling out in preview), automatic and temporary retention of deleted files in the Preservation Hold library to safeguard against the original file being deleted by users before the copy can be created and labeled. For more information, see [How retention works with cloud attachements](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+### Data Loss Prevention
+
+- [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md) - updated links for more accessible article names
+- [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md) - updated links for more accessible article names; updated guidance on supported file types; updated copy-to-other-app guidance
+- [Share data loss prevention alerts](dlp-share-alerts.md) (preview) - new
+- [Configure endpoint DLP settings](dlp-configure-endpoint-settings.md) - GA of Sensitive Service Domains
+- [Data loss prevention policy reference](dlp-policy-reference.md) - GA of Sensitive Service Domains
+- [Using endpoint data loss prevention](endpoint-dlp-using.md) - GA of Sensitive Service Domains
+
+### Microsoft Priva
+
+- [Microsoft Priva trial playbook](/privacy/priva/priva-trial-playbook) - refreshed and simplified guidance to align with recent documentation updates
+
+### Sensitive Information Types
+
+- [Create exact data match sensitive information type workflow classic experience](sit-create-edm-sit-classic-ux-workflow.md) - new
+- [Create the EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md) - new
+- [Create EDM SIT using the new experience](sit-create-edm-sit-unified-ux-schema-rule-package.md) - new
+- [Create exact data match sensitive information type workflow new experience](sit-create-edm-sit-unified-ux-workflow.md) - new
+- Added guidance for new and classic EDM SIT creation experience in the following topics:
+  - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md)
+  - [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md)
+  - [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md)
+  - [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md)
+  - [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
+  - [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md)
+  - [Learn about exact data match sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
+- [Sensitive information type limits](sit-limits.md) - new
 
 ### Sensitivity labels
 
