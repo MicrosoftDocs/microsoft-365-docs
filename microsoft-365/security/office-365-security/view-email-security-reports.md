@@ -339,7 +339,7 @@ The report shows real-time information, with updated threat information.
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **ZAP report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ZapReport>.
 
-:::image type="content" source="../../media/post-delivery-activities-widget.png" alt-text="The Mailflow status summary widget on the Email & collaboration reports page." lightbox="../../media/post-delivery-activities-widget.png":::
+:::image type="content" source="../../media/post-delivery-activities-widget.png" alt-text="The Post-delivery activities widget on the Email & collaboration reports page." lightbox="../../media/post-delivery-activities-widget.png":::
 
 On the **Post-delivery activities** page, the chart shows the following information for the specified date range:
 
