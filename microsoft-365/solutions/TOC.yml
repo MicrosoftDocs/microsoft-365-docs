@@ -373,11 +373,11 @@
     - name: Microsoft 365 for frontline workers
       items: 
       - name: Overview
-        href: ../frontline/flw-overview.md
+        href: ../frontline/flw-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Choose your scenarios
-        href: ../frontline/flw-choose-scenarios.md
+        href: ../frontline/flw-choose-scenarios.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Learn where to start with a frontline deployment
-        href: ../frontline/flw-deploy-overview.md
+        href: ../frontline/flw-deploy-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Financial services
       items:
       - name: Overview
