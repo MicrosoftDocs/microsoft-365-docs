@@ -60,7 +60,7 @@ Bring in-store associates and management together to collaborate and streamline 
 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
-**Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, Viva Connections, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
@@ -70,7 +70,7 @@ Staff members can communicate and collaboration across multiple stores in a regi
 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
-**Additional services:** Viva Connections, Yammer, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, Viva Connections, Yammer, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
