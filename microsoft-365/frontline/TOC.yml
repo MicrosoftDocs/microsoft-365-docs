@@ -21,7 +21,7 @@
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Deploy teams at scale
+      - name: Deploy Teams at scale
         href: deploy-teams-at-scale.md
       - name: Onboard your users with the onboarding wizard
         href: flw-onboarding-wizard.md

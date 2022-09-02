@@ -2,7 +2,7 @@
 title: List all recommendations
 description: Retrieves a list of all security recommendations affecting the organization.
 keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api, mdvm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

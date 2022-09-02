@@ -20,6 +20,7 @@ ms.collection:
   - m365solution-overview
   - m365solution-zero-trust
   - zerotrust-solution
+  - highpri
 ms.technology: mdo
 ---
 # Zero Trust identity and device access configurations
