@@ -63,7 +63,7 @@ You can use the following properties to create the access control policy:
 
 Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
-## Deploy Removable Storage Access Control by using group policy
+## Deploy using group policy
 
 1. Enable or Disable Removable Storage Access Control:
 

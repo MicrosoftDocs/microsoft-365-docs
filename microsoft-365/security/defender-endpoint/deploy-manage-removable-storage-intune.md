@@ -26,11 +26,9 @@ ms.reviewer: tewchen
 > [!NOTE]
 > The Group Policy management and Intune OMA-URI/Custom Policy management of this product are now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-## Use Intune OMA-URI
-
 The Removable Storage Access Control feature enables you to apply policy by using OMA-URI to either user or device, or both.
 
-### Licensing requirements
+## Licensing requirements
 
 Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
@@ -42,7 +40,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 - Custom role with Create/Edit/Update/Read/Delete/View Reports permissions turned on for Device Configuration profiles
 - Global administrator
 
-### Deploy Removable Storage Access Control by using Intune OMA-URI
+## Deploy using Intune OMA-URI
 
 To block a specific removable storage class but allow specific media, you can use 'IncludedIdList a group through PrimaryId and ExcludedIDList a group through DeviceId/HardwareId/etc.'
 
