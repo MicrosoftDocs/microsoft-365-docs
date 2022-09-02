@@ -139,8 +139,8 @@
           href: use-content-center-site.md 
     -name: PowerAutomate for Syntex
     items:
-     -name: PowerAutomate Actions for Syntex
-     href:  powerautomate-syntex-actions.md
+     - name: PowerAutomate Actions for Syntex
+       href:  powerautomate-syntex-actions.md
     - name: Extensibility
       href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
