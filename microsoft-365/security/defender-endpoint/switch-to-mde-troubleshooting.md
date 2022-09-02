@@ -2,7 +2,7 @@
 title: Troubleshooting issues when switching to Microsoft Defender for Endpoint
 description: Learn how to troubleshoot issues when you make the switch to Microsoft Defender for Endpoint.
 keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode, troubleshooting
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 05/20/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Troubleshooting issues when switching to Microsoft Defender for Endpoint

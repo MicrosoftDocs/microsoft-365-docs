@@ -5,9 +5,8 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.service: 
 ms.collection: enabler-strategic
 ms.custom: admindeeplinkSPO
 search.appverid: 
