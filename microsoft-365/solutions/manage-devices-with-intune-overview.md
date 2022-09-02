@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers.
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
