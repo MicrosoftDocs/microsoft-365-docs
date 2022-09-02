@@ -20,8 +20,8 @@ ms.collection:
 description: Learn how to use threat investigation and response capabilities to find and investigate malicious email.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Investigate malicious email that was delivered in Microsoft 365
