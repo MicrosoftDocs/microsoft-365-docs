@@ -23,8 +23,11 @@ ms.subservice: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -185,7 +188,7 @@ To add or remove specific types of information on the **Microsoft Defender Antiv
 
 #### New Microsoft Defender Antivirus filter definitions
 
-The following table contains a list terms that are new to Microsoft Defender Antivirus reporting.
+The following table contains a list of terms that are new to Microsoft Defender Antivirus reporting.
 
 | Column name | Description |
 |:---|:---|
@@ -301,7 +304,7 @@ The up-to-date cards show the up-to-date status for **Antivirus engine**, **
 
 Definitions for _up-to-date_, _out-of-date_, and _no_data_available_ are provided for each card below.
 
-Microsoft Defender Antivirus (MDAV) make up-to-date reports makes determinations based on the following criteria:
+Microsoft Defender Antivirus (MDAV) makes up-to-date reports and determinations based on the following criteria:
 
 - **For engine & platform updates**: the time client events were last received for up to date reports (“Signature Refresh time”) and Security Intelligence Publish Time (security intelligence VDMs are also used to determine engine & platform versions)
 - **For security intelligence updates**: the time client events were last received for up to date reports (“Signature Refresh time”), Security Intelligence Publish Time, and the last up-to-date status communicated from client
@@ -322,7 +325,9 @@ For more information about the aforementioned terms, refer back to the section: 
 >*Currently up to date reporting is only available for windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
 >
 
-##### Up-to-date examples
+##### Up-to-date definitions
+
+Following are up-to-date definitions for engine and platform:
 
 | The engine/platform on the device is considered: | If: |
 |:---|:---|
@@ -330,7 +335,11 @@ For more information about the aforementioned terms, refer back to the section: 
 | **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 but Engine or Platform version build time is older than 60 days. |
 | **unknown (no data available)** | the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days, or the security intelligence publish time is greater than 7 days. |
 
-**The security intelligence update is considered up-to date** If the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days
+Following are up-to-date definitions for security intelligence:
+
+| The security intelligence update is considered | If: |
+|:---|:---|
+|Up-to date | the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days. |
 
 For more information on these, see:
 
@@ -348,7 +357,7 @@ The following table lays out the possible values for up to date reports for **An
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | _Up to date/ Out of Date/ Unknown (whatever client reports)_ |
+| < 7 days (new) | < 7 days (new) | _Up to date <br/> Out of date <br/> Unknown (whatever client reports)_ |
 | > 7 days (old) | > 7 days (old) | _Unknown_ |
 | < 7 days (new) | > 7 days (old) | _Unknown_ |
 | > 7 days (old) | < 7 days (new) | _Unknown_ |
@@ -365,7 +374,7 @@ The following table lays out the possible up to date report values for **Antivir
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | _Up to date/ Out of Date/ Unknown (whatever client reports)_ |
+| < 7 days (new) | < 7 days (new) | _Up to date <br/> Out of date <br/> Unknown (whatever client reports)_ |
 | > 7 days (old) | > 7 days (old) | _Unknown_ |
 | < 7 days (new) | > 7 days (old) | _Unknown_ |
 | > 7 days (old) | < 7 days (new) | _Unknown_ |
@@ -380,16 +389,16 @@ This card identifies devices that have security intelligence versions that are u
 
 The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, and security intelligence publish time.
 
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
-|:----|:----|:----|
+| Event’s Last Refresh Time <br/> (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last status received from client | _Reported Status_: |
+|:----|:----|:----|:----|
 | >7 days (old) | >7 days (old) | Up to date | _Unknown_ |
-| <7 days (new) | >7 days (old) | Up to Date | _Unknown_ |
+| <7 days (new) | >7 days (old) | Up to date | _Unknown_ |
 | >7 days (old) | <7 days (new) | Up to date |  _Unknown_ |
 | <7 days (new) | <7 days (new) | Unknown | _Unknown_|
-| <7 days (new) | <7 days (new) | Up to Date | _Up to Date_ |
-| >7 days (old) | <7 days (new) | Out of date | _Out of Date_ |
-| >7 days (old) | >7 days (old) | Out of date | _Out of Date_ |
-| <7 days (new) | >7 days (old) | Out of Date | _Out of Date_ |
+| <7 days (new) | <7 days (new) | Up to date | _Up to date_ |
+| >7 days (old) | <7 days (new) | Out of date | _Out of date_ |
+| >7 days (old) | >7 days (old) | Out of date | _Out of date_ |
+| <7 days (new) | >7 days (old) | Out of date | _Out of date_ |
 
 ## See also
 
