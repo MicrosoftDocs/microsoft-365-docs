@@ -220,12 +220,12 @@ You can view information about your connection, such as health status and sync i
 ## Manage your connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you can manage it on the Manage Shifts connectors page of the Microsoft 365 admin center. From here, you can view information about each connection that you've set up, including health status and sync interval details. You can also access the wizard to make changes to any of your connections, such as sync settings and team mappings.
+After a connection is set up, you can manage it in the Microsoft 365 admin center. From the Manage Shifts connectors page, you can view information about each connection that you've set up, including health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings.
 
 1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
 2. Select **Manage Shifts connectors**, and then choose **Manage**. Keep in mind that this option is available only if you've set up at least one connection.
 
-    You'll see a list of all the connections you've set up by using the wizard or PowerShell, along with information about each one.
+    Here, you'll see a list of all the connections you've set up through the wizard or PowerShell, along with information about each one.
 
     :::image type="content" source="media/shifts-connector-wizard-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-wizard-ukg-manage.png":::
 
