@@ -4,7 +4,7 @@ description: This article describes the prerequisites you need to meet to use Ze
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords: 
@@ -20,7 +20,7 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - highpri
-ms.technology: mdo
+ms.subservice: mdo
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies

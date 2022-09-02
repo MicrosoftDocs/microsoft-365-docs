@@ -11,11 +11,11 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: none
 ms.date: 08/11/2022
-ms.reviewer: shlomiakirav
-f1.keywords: NOCSH 
 ms.collection: 
 - SMB
 - m365-security-compliance
+ms.reviewer: shlomiakirav
+f1.keywords: NOCSH 
 ---
 
 # How to get Microsoft Defender for Business servers (preview)
