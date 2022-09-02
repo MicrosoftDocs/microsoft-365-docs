@@ -118,31 +118,52 @@ For this scenario, you will need to create two groups - a group for any removabl
     2. Group 2: Approved USBs based on device properties. An example for this use case is:
     ![image](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
     
-    Combine those two groups into one XML file, here is the sample [Demo_Groups.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml) file.
+    Combine those two groups into one XML file, here is the sample [Demo_Groups.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml) file. Take the step 3 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
 
     > [!TIP]
     > Replace `&` with `&amp;` in the value.
 
 2. Create policy
 
-    1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Policy 1: Block Write and Execute access to any removable storage group but allow approved USBs. An example for this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188237490-d736ace1-4912-4788-9e94-3fc506692a41.png)
 
-    2. Policy 2: Audit Write and Execute access to allowed USBs. An example for this use case is: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** in the sample [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-### Scenario 2: Audit Write and Execute access to all but block specific unapproved USBs
+    2. Policy 2: Audit Write and Execute access for allowed USBs. An example for this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188237598-b28dd534-9ea4-4cdd-832b-afff50f9897b.png)
+    What does '54' mean in the policy? It's 18 + 36 = 54:
+       - Write access: disk level 2 + file system level 16 = 18.
+       - Execute: disk level 4 + file system level 32 = 36.
+
+    Combine those two policy rules into one XML file, here is the sample [Scenario 1 GPO Policy - Prevent Write and Execute access to all but allow specific approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml) file. Take the step 4 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
+
+### Scenario 2: Audit Write and Execute access to all but block specific unallowed USBs
+For this scenario, you will need to create two groups - a group for any removable storage and another group for unallowed USBs - and two policies - one policy to audit Write and Execute acess for any removable storage group and the other policy to deny the unallowed USBs group.
 
 1. Create groups
 
-    1. Group 1: Any removable storage and CD/DVD. An example for this use case is:
-    Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
+    ![image](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
 
-    2. Group 2: Unapproved USBs based on device properties, for example, Vendor ID / Product ID, Friendly Name - Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    2. Group 2: Unallowed USBs based on device properties. An example for this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
+    
+    Combine those two groups into one XML file, here is the sample [Demo_Groups.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml) file. Take the step 3 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
 
     > [!TIP]
     > Replace `&` with `&amp;` in the value.
 
 2. Create policy
 
-    1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example of this use case is: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** in the sample [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example of this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188239025-218a1985-b198-4f7e-b323-b4b6fb7e274e.png)
 
-    2. Policy 2: Audit Write and Execute access to others. An example of this use case is: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+
+    2. Policy 2: Audit Write and Execute access to others. An example of this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188239144-3e6a2781-6927-487a-aa01-498a0904ad98.png)
+    What does '54' mean in the policy? It's 18 + 36 = 54:
+       - Write access: disk level 2 + file system level 16 = 18.
+       - Execute: disk level 4 + file system level 32 = 36.
+
+    Combine those two policy rules into one XML file, here is the sample [Scenario 2 GPO Policy - Audit Write and Execute access to all but block specific unapproved USBs](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%202%20GPO%20Policy%20-%20Audit%20Write%20and%20Execute%20access%20to%20all%20but%20block%20specific%20unapproved%20USBs.xml) file. Take the step 4 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
+
