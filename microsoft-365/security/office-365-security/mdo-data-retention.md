@@ -8,8 +8,8 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid:
 ms.collection:

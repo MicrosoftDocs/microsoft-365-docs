@@ -33,7 +33,7 @@ Watch this video for a quick summary of creating a trainable classifier. You'll 
 
 </br>
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
 
 
 ## Prerequisites
