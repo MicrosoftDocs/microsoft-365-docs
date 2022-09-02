@@ -6,7 +6,7 @@ manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management

@@ -2,7 +2,7 @@
 title: Protect macOS security settings with tamper protection
 description: Use tamper protection to prevent malicious apps from changing important macOS security settings.
 keywords: macos, tamper protection, security settings, malware
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Protect macOS security settings with tamper protection
