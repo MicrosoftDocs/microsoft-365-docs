@@ -1,5 +1,5 @@
 ---
-title: Manage your Shifts connection to UKG Dimensions using PowerShell
+title: Use PowerShell to manage your Shifts connection to UKG Dimensions
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer:
@@ -18,7 +18,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Manage your Shifts connection to UKG Dimensions using PowerShell
+# Use PowerShell to manage your Shifts connection to UKG Dimensions
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
