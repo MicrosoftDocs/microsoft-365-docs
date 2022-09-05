@@ -53,7 +53,7 @@ After the LinkedIn Company page data is stored in a mailbox, you can apply Micro
 
 6. Select the company page that you want to archive items from, and then click **Next**.
 
-7. On the **Choose storage location** page, click in the box, select the email address of a Microsoft 365 mailbox that the LinkedIn items will be imported to, and then click **Next**. Items are imported to the inbox folder in this mailbox.
+7. On the **Choose storage location** page, click in the box, select the email address of a Microsoft 365 mailbox that the LinkedIn items will be imported to, and then click **Next**. Items are imported to the inbox folder in this mailbox. The Mailbox used must be licensed with  exchange online plan 1 or 2.
 
 8. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
 
