@@ -34,6 +34,8 @@ At the end of these steps, your domain will stay registered with the host that y
 
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
+If you have created users before and would like to change their domain, folow steps mentioned at [Change your email address to use your custom domain using the Microsoft 365 admin center](/admin/email/change-email-address?view=o365-worldwide#change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center)
+
 [Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for below.
 
 > [!TIP]
