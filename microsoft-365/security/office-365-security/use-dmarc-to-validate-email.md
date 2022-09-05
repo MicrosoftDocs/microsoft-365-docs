@@ -16,8 +16,8 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Use DMARC to validate email
