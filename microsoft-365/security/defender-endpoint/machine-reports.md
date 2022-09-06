@@ -11,12 +11,13 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
-ms.date: 09/01/2022 
+ms.date: 09/06/2022 
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+ms.reviewer: mkaminska
 ---
 
 # Device health and compliance report in Microsoft Defender for Endpoint
