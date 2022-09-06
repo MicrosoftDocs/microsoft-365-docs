@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/25/2022
+ms.date: 09/06/2022
 ms.reviewer: tewchen
 ---
 
@@ -135,13 +135,13 @@ For this scenario, you will need to create two groups - a group for any removabl
 1. Create groups
 
     1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
-    ![image](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+    ![Screenshot showing removable storage](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
     
     Here is the sample [Any Removable Storage and CD-DVD and WPD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
 
-    2. Group 2: Approved USBs based on device properties. An example for this use case is:
-    ![image](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
+    2. Group 2: Approved USBs based on device properties. An example for this use case is shown in the following screenshot:
+    ![Screenshot of approved USBs](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
     
     Here is the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
@@ -152,12 +152,12 @@ For this scenario, you will need to create two groups - a group for any removabl
 2. Create policy
 
     1. Policy 1: Block Write and Execute access to any removable storage group but allow approved USBs. An example for this use case is:
-    ![image](https://user-images.githubusercontent.com/81826151/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png)
+    ![Screenshot of policy 1](https://user-images.githubusercontent.com/81826151/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png)
     
     Here is the sample [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Block%20Write%20and%20Execute%20Access%20but%20allow%20approved%20USBs.xml) file. Take step 4 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
     2. Policy 2: Audit Write and Execute access for allowed USBs. An example for this use case is:
-    ![image](https://user-images.githubusercontent.com/81826151/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png)
+    ![Screenshot of policy 2](https://user-images.githubusercontent.com/81826151/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png)
     
     What does '54' mean in the policy? It's 18 + 36 = 54:
        - Write access: disk level 2 + file system level 16 = 18.
@@ -171,13 +171,13 @@ For this scenario, you will need to create two groups - a group for any removabl
 1. Create groups
 
     1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
-    ![image](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+    ![Screenshot of group 1](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
     
     Here is the sample [Any Removable Storage and CD-DVD and WPD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
 
     2. Group 2: Unapproved USBs based on device properties. An example for this use case is:
-    ![image](https://user-images.githubusercontent.com/81826151/188243875-0693ebcf-00c3-45bd-afd3-57a79df9dce6.png)
+    ![Screenshot of group 2](https://user-images.githubusercontent.com/81826151/188243875-0693ebcf-00c3-45bd-afd3-57a79df9dce6.png)
     
     Here is the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Unapproved%20USBs%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
@@ -187,12 +187,12 @@ For this scenario, you will need to create two groups - a group for any removabl
 2. Create policy
 
     1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example for this use case is:
-    ![image](https://user-images.githubusercontent.com/81826151/188244024-62355ded-353c-4d3a-ba61-4520d48f5a18.png)
+    ![Screenshot of policy for blocking unapproved USBs](https://user-images.githubusercontent.com/81826151/188244024-62355ded-353c-4d3a-ba61-4520d48f5a18.png)
     
     Here is the sample [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%202%20Audit%20Write%20and%20Execute%20access%20to%20all%20but%20block%20specific%20unapproved%20USBs.xml) file. Take step 4 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
     2. Policy 2: Audit Write and Execute access to others. An example for this use case is:
-    ![image](https://user-images.githubusercontent.com/81826151/188244203-36c869b6-9330-4e2a-854b-494c342bb77d.png)
+    ![Screenshot of audit write and execute access](https://user-images.githubusercontent.com/81826151/188244203-36c869b6-9330-4e2a-854b-494c342bb77d.png)
     
     What does '54' mean in the policy? It's 18 + 36 = 54:
        - Write access: disk level 2 + file system level 16 = 18.
