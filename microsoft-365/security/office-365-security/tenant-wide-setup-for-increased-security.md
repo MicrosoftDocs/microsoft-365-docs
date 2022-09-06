@@ -20,8 +20,8 @@ ms.custom:
   - seo-marvel-apr2020
   - admindeeplinkSPO
 description: This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure your Microsoft 365 tenant for increased security
