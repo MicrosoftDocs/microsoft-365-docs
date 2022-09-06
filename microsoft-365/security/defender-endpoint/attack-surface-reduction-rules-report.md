@@ -212,7 +212,7 @@ The **Possible exclusion and impact** section provides impact of the selected fi
 
 The following image illustrates how the Advanced Hunting query page opens from the link on the actionable flyout:
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png" alt-text="Shows the (ASR) rules report main detections tab flyout link opening Advanced Hunting" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png":::
 
 For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
 
