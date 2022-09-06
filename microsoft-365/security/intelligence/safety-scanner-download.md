@@ -31,7 +31,7 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 - The security intelligence update version of the Microsoft Safety Scanner matches the version described [in this web page](https://www.microsoft.com/wdsi/definitions).
 
-- Safety Scanner only scans when manually triggered. The Microsoft Safety Scanner expires 10 days after being downloaded. To rerun a scan with the latest anti-malware definitions, download and run the Microsoft Safety Scanner again. We recommend that you always download the latest version of this tool before each scan.
+- Microsoft Safety Scanner only scans when manually triggered. Safety Scanner expires 10 days after being downloaded. To rerun a scan with the latest anti-malware definitions, download and run Safety Scanner again. We recommend that you always download the latest version of this tool before each scan.
 
 - Safety Scanner is a portable executable and does not appear in the Windows Start menu or as an icon on the desktop. Note where you saved this download.
 
