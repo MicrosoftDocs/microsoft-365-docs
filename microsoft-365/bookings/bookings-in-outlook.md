@@ -65,7 +65,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    "Anonymous:<SharingPolicyAction>" must be one of the domains in the response. <SharingPolicyAction> value can be CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail, or  CalendarSharingFreeBusyReviewer (default).
+    "Anonymous:<SharingPolicyAction>" must be one of the domains in the response. <SharingPolicyAction> value can be CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail, or CalendarSharingFreeBusyReviewer (default).
 
    To enable anonymous sharing, use the following command.
 
