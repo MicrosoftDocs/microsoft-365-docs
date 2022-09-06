@@ -50,7 +50,7 @@ Watch the following video to see an example of how you can help your frontline w
 | [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie |
 | [Corporate communications](flw-corp-comms.md) | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Stream, and Yammer. Bring it all together with Viva Connections. | Microsoft Teams<br>Outlook<br>SharePoint<br>Yammer<br>Viva Connections | Meet |
 
-Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
+Also see these resources to learn how Yammer can work for your frontline workers: [Yammer Ten Communities](https://aka.ms/Yam10Communities) and [Yammer Lookbook](https://aka.ms/Yammer/Lookbook).
 
 ## Wellbeing & engagement
 
