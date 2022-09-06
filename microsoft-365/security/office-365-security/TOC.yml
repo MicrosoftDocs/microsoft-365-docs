@@ -60,6 +60,8 @@
          items:
          - name: Permissions in the Microsoft 365 Defender portal
            href: permissions-microsoft-365-security-center.md
+         - name: Permissions in the Security & Compliance Center
+           href: permissions-in-the-security-and-compliance-center.md
    - name: Migrate
      items:
        - name: Migrate from a third-party protection service or device to Defender for Office 365
@@ -84,6 +86,8 @@
            href: configure-anti-malware-policies.md
          - name: Virus detection in SharePoint Online
            href: virus-detection-in-spo.md
+         - name: Anti-malware protection FAQ
+           href: anti-malware-protection-faq-eop.yml
        - name: Anti-spam protection
          items:
          - name: Anti-spam protection
@@ -102,6 +106,8 @@
            href: backscatter-messages-and-eop.md
          - name: Configure junk email settings on Exchange Online mailboxes
            href: configure-junk-email-settings-on-exo-mailboxes.md
+         - name: Anti-spam protection FAQ
+           href: anti-spam-protection-faq.yml
          - name: Mail flow rules
            items:
            - name: Mail flow rules (transport rules)
@@ -160,6 +166,8 @@
              href: configure-mdo-anti-phishing-policies.md
          - name: Anti-spoofing protection
            href: anti-spoofing-protection.md
+         - name: Anti-spoofing protection FAQ
+           href: anti-spoofing-protection-faq.yml
          - name: How EOP validates the From address
            href: how-office-365-validates-the-from-address.md
        - name: Safe Attachments in Defender for Office 365
@@ -300,6 +308,8 @@
          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
        - name: Quarantine notifications
          href: use-spam-notifications-to-release-and-report-quarantined-messages.md
+       - name: Quarantine FAQ
+         href: quarantine-faq.yml
      - name: Use the delist portal to remove yourself from the blocked senders list
        href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
      - name: Office 365 Security Incident Response
@@ -322,16 +332,12 @@
        items:
          - name: Step 1 - View the admin audit log
            href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
-         - name: DELETE? Reports in EOP and Defender for Office 365
-           href: reporting-and-message-trace-in-exchange-online-protection.md
          - name: View email security reports
            href: view-email-security-reports.md
          - name: View Defender for Office 365 reports
            href: view-reports-for-mdo.md
          - name: Message trace
            href: message-trace-scc.md
-         - name: DELETE?View mail flow reports in the Security & Compliance Center
-           href: view-mail-flow-reports.md
      - name: Responding to a Compromised Email Account in Office 365
        href: responding-to-a-compromised-email-account.md
      - name: Phase 1 - Analyze and maintain
@@ -342,12 +348,12 @@
              href: report-junk-email-messages-to-microsoft.md
            - name: Admin review for reported messages
              href: admin-review-reported-message.md
-         - name: Manage quarantined messages and files
-           items:
-           - name: Manage quarantined messages and files as an admin
-             href: manage-quarantined-messages-and-files.md
-           - name: Find and release quarantined messages as a user
-             href: find-and-release-quarantined-messages-as-a-user.md
+           - name: Manage quarantined messages and files
+             items:
+             - name: Manage quarantined messages and files as an admin
+               href: manage-quarantined-messages-and-files.md
+             - name: Find and release quarantined messages as a user
+               href: find-and-release-quarantined-messages-as-a-user.md
          - name: Tune quarantine policies
            href: quarantine-policies.md
          - name: Tune anti-phishing protection
@@ -402,14 +408,6 @@
        href: eop-general-faq.yml
      - name: EOP queued, deferred, and bounced messages FAQ
        href: eop-queued-deferred-and-bounced-messages-faq.yml
-     - name: Anti-malware protection FAQ
-       href: anti-malware-protection-faq-eop.yml
-     - name: Anti-spam protection FAQ
-       href: anti-spam-protection-faq.yml
-     - name: Anti-spoofing protection FAQ
-       href: anti-spoofing-protection-faq.yml
-     - name: Quarantine FAQ
-       href: quarantine-faq.yml
    - name: Reference
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
@@ -516,31 +514,3 @@
           href: security-roadmap.md
       - name: DELETE?Smart reports and insights in the Security & Compliance Center
         href: reports-and-insights-in-security-and-compliance.md
-      - name: DELETE?Mail flow insights in the Security & Compliance Center
-        items:
-         - name: Mail flow insights in the Security & Compliance Center
-           href: mail-flow-insights-v2.md
-         - name: Auto-forwarded messages insight
-           href: mfi-auto-forwarded-messages-report.md
-         - name: Fix possible mail loop insight
-           href: mfi-mail-loop-insight.md
-         - name: Fix slow mail flow rules insight
-           href: mfi-slow-mail-flow-rules-insight.md
-         - name: Mail flow map
-           href: mfi-mail-flow-map-report.md
-         - name: New domains being forwarded email insight
-           href: mfi-new-domains-being-forwarded-email.md
-         - name: New users forwarding email insight
-           href: mfi-new-users-forwarding-email.md
-         - name: Non-accepted domain report
-           href: mfi-non-accepted-domain-report.md
-         - name: Non-delivery report
-           href: mfi-non-delivery-report.md
-         - name: Outbound and inbound mail flow insight
-           href: mfi-outbound-and-inbound-mail-flow.md
-         - name: Queues insight
-           href: mfi-queue-alerts-and-queues.md
-         - name: SMTP Auth clients insight and report
-           href: mfi-smtp-auth-clients-report.md
-         - name: Top domain mail flow status insight
-           href: mfi-domain-mail-flow-status-insight.md
