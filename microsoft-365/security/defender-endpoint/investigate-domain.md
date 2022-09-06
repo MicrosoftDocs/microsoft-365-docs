@@ -41,9 +41,9 @@ You can see information from the following sections in the URL and domain view:
 
 - Incidents related to this URL or domain 
 
-- Prevalence of the URL or domain in the organization. 
+- Prevalence of the URL or domain in the organization
 
-- Most recent observed devices with URL or domain.
+- Most recent observed devices with URL or domain
 
  ![The overview section of the new URL & domain page at a glance.](media/domain-url-im1.png)
 
