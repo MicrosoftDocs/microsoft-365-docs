@@ -62,8 +62,6 @@ Nurture a sense of belonging with your frontline employees by helping them engag
 | --- | --- | --- |--- |
 | [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. | Microsoft Teams <br>SharePoint <br> Microsoft Stream <br>Viva Connections <br> Yammer| Praise |
 
-<!-- Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), Praise, targeted communications (Viva Connections), video broadcasts with Stream or Teams.-->
-
 ## Training & onboarding
 
 :::image type="icon" source="/office/media/icons/files-teams.png":::
