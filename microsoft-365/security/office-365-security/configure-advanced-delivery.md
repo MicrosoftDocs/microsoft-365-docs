@@ -341,7 +341,7 @@ For detailed syntax and parameter information, see [New-PhishSimOverridePolicy](
 
 #### Step 2: Use PowerShell to create the phishing simulation override rule
 
-In [Security & Compliance PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/scc-powershell), use the following syntax:
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
