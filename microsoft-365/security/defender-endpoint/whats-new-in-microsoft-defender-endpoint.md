@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 08/25/2022
+ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -55,6 +55,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
+
+## September 2022
+
+- [Device health reporting is now generally available](machine-reports.md). <br/>The device health report provides high-level information about the health and security of your endpoints. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
 
 ## August 2022
 
