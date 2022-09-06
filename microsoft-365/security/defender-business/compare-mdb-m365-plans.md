@@ -12,11 +12,11 @@ ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/30/2022
 ms.reviewer: shlomiakirav
-f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
+f1.keywords: NOCSH
 ---
 
 # Compare security features in Microsoft 365 plans for small and medium-sized businesses

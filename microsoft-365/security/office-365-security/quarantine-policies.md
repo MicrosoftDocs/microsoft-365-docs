@@ -16,8 +16,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Quarantine policies

@@ -17,8 +17,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Microsoft Defender for Office 365 Security Operations Guide

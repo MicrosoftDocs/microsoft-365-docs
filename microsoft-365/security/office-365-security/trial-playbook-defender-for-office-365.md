@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial playbook."
-ms.technology: mdo
+ms.subservice: mdo
 ms.custom: trial-playbook
 ---
 
