@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -44,6 +44,7 @@ Lighthouse baseline configurations are designed to make sure all managed tenants
 | Configure Microsoft Defender Antivirus for Windows 10 and later | A device configuration profile for Windows devices with pre-configured Microsoft Defender Antivirus settings. For more information about this baseline, see [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure).|
 | Configure Microsoft Defender Firewall for Windows 10 and later | A firewall policy to help secure devices by preventing unwanted and unauthorized network traffic. For more information about this baseline, see [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configure a device compliance policy for Windows 10 and later | A Windows device policy with pre-configured settings to meet basic compliance requirements. For more information about this baseline, see [Conditional Access: Require compliant or hybrid Azure AD joined device](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
+| Configure Microsoft Edge  | A Microsoft Edge browser policy for Windows 10 or later with preconfigured settings to stay protected from phishing scams and malicious software. This policy also allows Microsoft Edge to safely save and monitor passwords and suggest strong passwords when needed. |
 
 ## Deployment Plans
 

@@ -5,7 +5,8 @@ description: The Defender Experts for Hunting service publishes monthly reports 
 keywords: analyst report, defender experts report, detections, defender expert notification, hunting, notifications, threat categories, hunting reports
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

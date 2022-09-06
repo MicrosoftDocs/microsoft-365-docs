@@ -2,7 +2,7 @@
 title: List all remediation activities
 description: Returns information about all remediation activities.
 keywords: apis, remediation, remediation api, get, remediation tasks, all remediation, 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 
@@ -149,5 +149,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [Get one remediation activity by ID](get-remediation-one-activity.md)
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
-- [Risk-based Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

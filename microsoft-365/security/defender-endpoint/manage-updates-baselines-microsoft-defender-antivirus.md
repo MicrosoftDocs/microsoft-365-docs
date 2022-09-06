@@ -2,12 +2,12 @@
 title: Manage Microsoft Defender Antivirus updates and apply baselines
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 09/06/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -15,7 +15,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -86,18 +86,16 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>July-2022 (Platform: 4.18.2205.TBD | Engine: 1.1.19500.2)</summary>
+<summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
 
-*This section contains pre-release information that is still in active development. Expect updates, including the final security update version number, to occur.*
-
-&ensp;Security intelligence update version: *coming soon*<br/>
-&ensp;Release date: **August 8, 2022**<br/>
-&ensp;Platform: *4.18.2205.TBD*<br/>
+&ensp;Security intelligence update version: **1.373.219.0**<br/>
+&ensp;Release date: **August 15, 2022**<br/>
+&ensp;Platform: **4.18.2207.5**<br/>
 &ensp;Engine: **1.1.19500.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19300.2<br/>
-Security intelligence update version: *coming soon*<br/>
+Security intelligence update version: 1.373.219.0 <br/>
 
 ### What's new
 
@@ -112,11 +110,17 @@ Security intelligence update version: *coming soon*<br/>
 - Improved trust validation 
 - Fixed engine crash issue on legacy operating platforms 
 - Performance Analyzer v3 updates: Added top path support, scan skip information, and OnDemand scan support. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md). 
+- Defender performance improvements during file copy operations
+- Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
+- Added fix for Defender WINEVT channels across update/restarts. (See [Windows Event Log](/windows/win32/api/_wes/) for more details about WINEVT.)
+- Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
+- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](troubleshoot-microsoft-defender-antivirus.md) 
+- Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
 
 
 ### Known Issues
 
-No known issues
+- Customers deploying platform update 4.18.2207.5 might experience lagging network performance that could impact applications.
 
 <br/><br/>
 </details><details>
@@ -781,6 +785,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220901.4</summary>
+
+&ensp;Package version: **20220901.4**<br/>
+&ensp;Platform version: **4.18.2205.7**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.373.1371.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220802.1</summary>
 
 &ensp;Package version: **20220802.1**<br/>

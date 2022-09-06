@@ -14,8 +14,8 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use the Fix slow mail flow rules insight in the Security & Compliance Center to identify and fix inefficient or broken mail flow rules (also known as transport rules) in their organization.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Fix slow mail flow rules insight in the Security & Compliance Center
