@@ -490,7 +490,7 @@ For detailed syntax and parameter information, see [Remove-PhishSimOverridePolic
 
 ### Use PowerShell to remove phishing simulation override rules
 
-In [Security & Compliance PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/scc-powershell), use the following syntax:
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>
