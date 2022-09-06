@@ -99,17 +99,17 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
 
-- **The recipient is**
-- **The recipient domain is**
-- **The recipient is a member of**
+- **Users**
+- **Groups**
+- **Domains**
 
 You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
 > [!IMPORTANT]
 > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
 >
-> - The recipient is: romain@contoso.com
-> - The recipient is a member of: Executives
+> - Users: romain@contoso.com
+> - Groups: Executives
 >
 > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
 >
