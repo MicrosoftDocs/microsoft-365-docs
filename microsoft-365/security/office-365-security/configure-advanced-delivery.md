@@ -393,7 +393,7 @@ For detailed syntax and parameter information, see [Get-PhishSimOverridePolicy](
 
 ### Use PowerShell to view phishing simulation override rules
 
-In [Security & Compliance PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell), this example returns detailed information about phishing simulation override rules.
+In [Security & Compliance PowerShell](/powershell/exchange/scc-powershell), this example returns detailed information about phishing simulation override rules.
 
 ```powershell
 Get-PhishSimOverrideRule
