@@ -54,9 +54,6 @@ For more information about individual attack surface reduction rules, see [Attac
 
 ## Prerequisites
 
-- list
-- prerequisites
-
 > [!IMPORTANT]
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in Attack surface reduction rules reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
@@ -64,9 +61,10 @@ For more information about individual attack surface reduction rules, see [Attac
 
 To access the Attack surface reduction rules report in the Microsoft 365 Security dashboard, the following permissions are required:
 
-| Permission name | Permission type |
-|:---|:---|
-| View Data? | unsure? |
+| Permission type | Permission | Permission display name |
+|:---|:---|:---|
+| Application | Machine.Read.All | ‘Read all machine profiles’ |
+|Delegated (work or school account) | Machine.Read | ‘Read machine information’ |
 
 To assign these permissions:
 
