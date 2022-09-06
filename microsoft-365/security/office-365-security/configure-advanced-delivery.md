@@ -423,7 +423,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ### Use PowerShell to modify the phishing simulation override policy
 
-In [Security & Compliance PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/scc-powershell), use the following syntax:
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
