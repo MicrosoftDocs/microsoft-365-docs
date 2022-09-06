@@ -59,7 +59,7 @@ A profile determines the level of protection. The following profiles are availab
 
     > [!NOTE]
     >  Dynamic distribution groups are not supported.
-    
+
   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
@@ -67,8 +67,8 @@ A profile determines the level of protection. The following profiles are availab
   > [!IMPORTANT]
   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The preset security policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
   >
-  > - The recipient is: romain@contoso.com
-  > - The recipient is a member of: Executives
+  > - Users: romain@contoso.com
+  > - Groups: Executives
   >
   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
   >
@@ -510,8 +510,8 @@ For detailed syntax and parameter information, see [Enable-EOPProtectionPolicyRu
 > [!IMPORTANT]
   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The preset security policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
   >
-  > - The recipient is: romain@contoso.com
-  > - The recipient is a member of: Executives
+  > - Users: romain@contoso.com
+  > - Groups: Executives
   >
   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
   >
