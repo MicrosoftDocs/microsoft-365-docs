@@ -167,7 +167,7 @@ It'll take a few minutes for these changes to take effect on the reports in the 
 
 ## What happens to usage data when a user account is deleted?
 
-Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. That user will still be included in the Activity chart totals for the periods she was active in, but will not appear in the User Details table.
+Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. Deleted users will still be included in the Activity chart totals for the periods they were active in, but will not appear in the User Details table.
 
 However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
 
