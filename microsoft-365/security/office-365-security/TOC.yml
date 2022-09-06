@@ -306,13 +306,13 @@
        href: office365-security-incident-response-overview.md
      - name: Phase 1 - Daily work with built-in tools
        items:
-         - name: Step 1 - Investigate malicious email
+         - name: Investigate malicious email
            href: investigate-malicious-email-that-was-delivered.md
-         - name: Step 2 - Campaign Views
+         - name: Campaign Views
            href: campaigns.md
-         - name: Step 3 - Threat Explorer views
+         - name: Threat Explorer views
            href: threat-explorer-views.md
-         - name: Step 4 - Insights
+         - name: Insights
            items:
            - name: Impersonation insight
              href: impersonation-insight.md
@@ -322,79 +322,77 @@
        items:
          - name: Step 1 - View the admin audit log
            href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
-         - name: XXXREMOVEXXX Step 2 - Reports in EOP and Defender for Office 365
+         - name: DELETE? Reports in EOP and Defender for Office 365
            href: reporting-and-message-trace-in-exchange-online-protection.md
-         - name: Step 3
-           items:
-           - name: View email security reports
-             href: view-email-security-reports.md
-           - name: View Defender for Office 365 reports
-             href: view-reports-for-mdo.md
-           - name: Message trace
-             href: message-trace-scc.md
-         - name: Step 4 - View mail flow reports in the Security & Compliance Center
+         - name: View email security reports
+           href: view-email-security-reports.md
+         - name: View Defender for Office 365 reports
+           href: view-reports-for-mdo.md
+         - name: Message trace
+           href: message-trace-scc.md
+         - name: DELETE?View mail flow reports in the Security & Compliance Center
            href: view-mail-flow-reports.md
      - name: Responding to a Compromised Email Account in Office 365
        href: responding-to-a-compromised-email-account.md
      - name: Phase 1 - Analyze and maintain
        items:
-         - name: Step 1 - Submissions and message review
+         - name: Submissions and message review
            items:
            - name: Report messages and files to Microsoft
              href: report-junk-email-messages-to-microsoft.md
            - name: Admin review for reported messages
              href: admin-review-reported-message.md
-         - name: Step 2 - Manage quarantined messages and files
+         - name: Manage quarantined messages and files
            items:
            - name: Manage quarantined messages and files as an admin
              href: manage-quarantined-messages-and-files.md
            - name: Find and release quarantined messages as a user
              href: find-and-release-quarantined-messages-as-a-user.md
-         - name: Step 3 - Tune quarantine policies
+         - name: Tune quarantine policies
            href: quarantine-policies.md
-         - name: Step 4 - Tune anti-phishing protection
+         - name: Tune anti-phishing protection
            href: tuning-anti-phishing.md
-         - name: Step 5 - Remove blocked users from the Restricted Users portal
+         - name: Remove blocked users from the Restricted Users portal
            href: removing-user-from-restricted-users-portal-after-spam.md
-         - name: Step 6 - Use the delist portal to remove yourself from the blocked senders list
+         - name: Use the delist portal to remove yourself from the blocked senders list
            href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
      - name: Phase 2 - Detect and respond
        items:
-         - name: Step 1 - Remediate malicious email
+         - name: Remediate malicious email
            href: remediate-malicious-email-delivered-office-365.md
-         - name: Step 2 - Recover from a ransomware attack
+         - name: Recover from a ransomware attack
            href: recover-from-ransomware.md
-         - name: Step 3 - Detect and Remediate Illicit Consent Grants in Office 365
+         - name: Detect and Remediate Illicit Consent Grants in Office 365
            href: detect-and-remediate-illicit-consent-grants.md
-         - name: Step 4 - Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
+         - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
            href: detect-and-remediate-outlook-rules-forms-attack.md
-         - name: Step 5 - Detect and address compromised user accounts quickly
+         - name: Detect and address compromised user accounts quickly
            href: address-compromised-users-quickly.md
      - name: Phase 3 - Automated Investigation and Response (AIR)
        items:
-         - name: Step 1 - AIR overview and permissions
+         - name: AIR overview and permissions
            items:
            - name: AIR overview
              href: office-365-air.md
            - name: How automated investigation and response works
              href: automated-investigation-response-office.md
-         - name: Step 2 - Configure AIR
+         - name: Configure AIR
            href: office-365-air.md
-         - name: Step 3 - Use AIR
+         - name: Use AIR
            href: office-365-air.md
-         - name: Step 4 - Manage false positives and false negatives in AIR
+         - name: Manage false positives and false negatives in AIR
            href: air-report-false-positives-negatives.md
-         - name: Step 5 - View details and results of an automated investigation
+         - name: View details and results of an automated investigation
            href: air-view-investigation-results.md
-         - name: Step 6 - Remediation in AIR
+         - name: Remediation in AIR
            items:
            - Name: Remediation actions
              href: air-remediation-actions.md
            - name: Review and approve (or reject) pending actions
              href: air-review-approve-pending-completed-actions.md
-         - name: Step 7 - Detect and address compromised user accounts in AIR
+         - name: Detect and address compromised user accounts in AIR
            href: address-compromised-users-quickly.md
-         - name: Step 8 - Integrate AIR with a custom solution or third-party solution
+         - name: Integrate AIR with a custom solution or third-party solution
            href: air-custom-reporting.md
    - name: FAQ
      items:
@@ -439,34 +437,6 @@
               href: troubleshooting-mail-sent-to-office-365.md
             - name: Add support for anonymous inbound email over IPv6
               href: support-for-anonymous-inbound-email-messages-over-ipv6.md
-     - name: Mail flow insights in the Security & Compliance Center
-       items:
-         - name: Mail flow insights in the Security & Compliance Center
-           href: mail-flow-insights-v2.md
-         - name: Auto-forwarded messages insight
-           href: mfi-auto-forwarded-messages-report.md
-         - name: Fix possible mail loop insight
-           href: mfi-mail-loop-insight.md
-         - name: Fix slow mail flow rules insight
-           href: mfi-slow-mail-flow-rules-insight.md
-         - name: Mail flow map
-           href: mfi-mail-flow-map-report.md
-         - name: New domains being forwarded email insight
-           href: mfi-new-domains-being-forwarded-email.md
-         - name: New users forwarding email insight
-           href: mfi-new-users-forwarding-email.md
-         - name: Non-accepted domain report
-           href: mfi-non-accepted-domain-report.md
-         - name: Non-delivery report
-           href: mfi-non-delivery-report.md
-         - name: Outbound and inbound mail flow insight
-           href: mfi-outbound-and-inbound-mail-flow.md
-         - name: Queues insight
-           href: mfi-queue-alerts-and-queues.md
-         - name: SMTP Auth clients insight and report
-           href: mfi-smtp-auth-clients-report.md
-         - name: Top domain mail flow status insight
-           href: mfi-domain-mail-flow-status-insight.md
      - name: Report messages and files to Microsoft
        items:
          - name: Admin submissions
@@ -594,5 +564,33 @@
           href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
         - name: DELETE? Security roadmap
           href: security-roadmap.md
-      - name: Smart reports and insights in the Security & Compliance Center
+      - name: DELETE?Smart reports and insights in the Security & Compliance Center
         href: reports-and-insights-in-security-and-compliance.md
+      - name: DELETE?Mail flow insights in the Security & Compliance Center
+        items:
+         - name: Mail flow insights in the Security & Compliance Center
+           href: mail-flow-insights-v2.md
+         - name: Auto-forwarded messages insight
+           href: mfi-auto-forwarded-messages-report.md
+         - name: Fix possible mail loop insight
+           href: mfi-mail-loop-insight.md
+         - name: Fix slow mail flow rules insight
+           href: mfi-slow-mail-flow-rules-insight.md
+         - name: Mail flow map
+           href: mfi-mail-flow-map-report.md
+         - name: New domains being forwarded email insight
+           href: mfi-new-domains-being-forwarded-email.md
+         - name: New users forwarding email insight
+           href: mfi-new-users-forwarding-email.md
+         - name: Non-accepted domain report
+           href: mfi-non-accepted-domain-report.md
+         - name: Non-delivery report
+           href: mfi-non-delivery-report.md
+         - name: Outbound and inbound mail flow insight
+           href: mfi-outbound-and-inbound-mail-flow.md
+         - name: Queues insight
+           href: mfi-queue-alerts-and-queues.md
+         - name: SMTP Auth clients insight and report
+           href: mfi-smtp-auth-clients-report.md
+         - name: Top domain mail flow status insight
+           href: mfi-domain-mail-flow-status-insight.md
