@@ -75,6 +75,8 @@ And take advantage of these features that help Microsoft Teams work for your hea
 | [Secure messaging](#secure-messaging) | Get quicker attention to urgent messages and have confidence that the message was received and read. | Users must have an appropriate license*.  |
 | [Teams templates](#teams-templates-for-healthcare-organizations) | Create teams that include a predefined template of settings, channels, and pre-installed apps for communication and collaboration within a ward, pod, or department, or between multiple wards, pods, and departments within a hospital. | Users must have an appropriate license*.  |
 
+### Download a poster with scenario overviews
+
 Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
 
 | Item | Description |

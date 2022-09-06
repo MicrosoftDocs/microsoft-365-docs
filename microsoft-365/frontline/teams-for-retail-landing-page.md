@@ -44,17 +44,19 @@ Microsoft 365 and Microsoft Teams offer several capabilities that can help retai
 > [!NOTE]
 > These scenarios are also part of the Microsoft Cloud for Retail. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Retail, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Retail](/industry/retail).
 
+### Download a poster with scenario overviews
+
 Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
 
 | Item | Description |
 |:-----|:-----|
 |[![Microsoft 365 for frontline workers: Retail scenarios.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.|
 
+### Video overviews
 
 Watch the following video to see how you can help your store associates connect and collaborate:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
-
 
 Watch the following video to see how you can simplify business processes in retail environments:
 

@@ -26,6 +26,8 @@ Microsoft 365 for frontline workers can help you connect and engage your workfor
 
 :::image type="content" source="media/flw-maturity-model.png" alt-text="Digital maturity model for frontline, from enable to empower to transform.":::
 
+## Download a poster with scenario overviews
+
 Use these scenario overviews to start envisioning what your organization can do with Microsoft 365 for frontline workers, then follow the links to find out how to implement these scenarios.
 
 | Item | Description |
