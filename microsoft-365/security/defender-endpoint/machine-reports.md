@@ -44,7 +44,7 @@ The Device health and compliance dashboard is structured in two tabs:
   - [Operating systems and platforms card](#operating-systems-and-platforms-card)
   - [Windows 10 versions card](#windows-10-versions-card)
 
-- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus:
+- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus (MDAV):
   - [Antivirus mode card](#antivirus-mode-card)
   - [Antivirus engine version card](#antivirus-engine-version-card)
   - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
@@ -167,7 +167,7 @@ Up to date reporting generates information for devices that meet the following c
 - Cloud protection enabled
 - Windows OS*
 
-*Currently up to date reporting is only available for windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
+*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under “No data available”/Unknown
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -222,7 +222,7 @@ For information on exporting using API, see the following articles:
 
 > [!IMPORTANT]
 >
-> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
+> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is only available in public preview.
 >
 > **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
 
@@ -302,12 +302,12 @@ For more information on the current versions and how to update the different Mic
 
 The up-to-date cards show the up-to-date status for **Antivirus engine**, **Antivirus platform**, and **Security intelligence** update versions. There are three possible states: _Up to date_ (‘True’), _out of date_ (‘False’), and _no data available_ (‘Unknown’).
 
-Definitions for _up-to-date_, _out-of-date_, and _no_data_available_ are provided for each card below.
+Definitions for  _Up to date_, out of date_, and _no data available_ are provided for each card below.
 
-Microsoft Defender Antivirus (MDAV) makes up-to-date reports and determinations based on the following criteria:
+The MDAV reports make up-to-date determinations and reports based on the following criteria:
 
-- **For engine & platform updates**: the time client events were last received for up to date reports (“Signature Refresh time”) and Security Intelligence Publish Time (security intelligence VDMs are also used to determine engine & platform versions)
-- **For security intelligence updates**: the time client events were last received for up to date reports (“Signature Refresh time”), Security Intelligence Publish Time, and the last up-to-date status communicated from client
+- **For engine & platform updates**: "Signature Refresh Time" (the time client events were last received for up to date reports) and "Security Intelligence Publish Time" (security intelligence VDMs are used to determine engine & platform versions)
+- **For security intelligence updates**: "Signature Refresh Time" (the time client events were last received for up to date reports), Security Intelligence Publish Time, and the last up-to-date status communicated from client
 
 For more information about the aforementioned terms, refer back to the section: [New Microsoft Defender Antivirus filter definitions](#new-microsoft-defender-antivirus-filter-definitions)
 
@@ -322,7 +322,7 @@ For more information about the aforementioned terms, refer back to the section: 
 > - Cloud protection enabled
 > - Windows OS*
 >
->*Currently up to date reporting is only available for windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
+>*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
 >
 
 ##### Up-to-date definitions
@@ -332,7 +332,7 @@ Following are up-to-date definitions for engine and platform:
 | The engine/platform on the device is considered: | If: |
 |:---|:---|
 | **up-to-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days and the Engine or Platform version build time is within last 60 days. |
-| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 but Engine or Platform version build time is older than 60 days. |
+| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days but Engine or Platform version build time is older than 60 days. |
 | **unknown (no data available)** | the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days, or the security intelligence publish time is greater than 7 days. |
 
 Following are up-to-date definitions for security intelligence:
@@ -351,9 +351,9 @@ For more information on these, see:
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
 
-**The general definition of ‘_Up to date_’** - the engine version on the device is the most recent engine release (the Engine is _usually_ released monthly, via Windows Update (WU)). There's a three-day grace period from the day when Windows Update (WU) is released.
+**The general definition of ‘_Up to date_’** - The engine version on the device is the most recent engine release. The engine is _usually_ released monthly, via Windows Update (WU)). There is a three-day grace period given from the day when Windows Update (WU) is released.
 
-The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received, and security intelligence publish time.  
+The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received and security intelligence publish time.  
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
@@ -368,9 +368,9 @@ For information about Manage Microsoft Defender Antivirus update versions, see:�
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
 
-**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update). There's a three-day grace period from the day when WU is released.
+**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release. Platform is usually released monthly, via Windows Update). There is a three-day grace period from the day when WU is released.
 
-The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received, and security intelligence publish time.
+The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received and security intelligence publish time.
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
@@ -387,7 +387,7 @@ This card identifies devices that have security intelligence versions that are u
 
 **The general definition of ‘Up to date’** – the security intelligence version on the device was written in the past 7 days.
 
-The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, and security intelligence publish time.
+The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, the security intelligence publish time, and the last status received from client.
 
 | Event’s Last Refresh Time <br/> (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last status received from client | _Reported Status_: |
 |:----|:----|:----|:----|
