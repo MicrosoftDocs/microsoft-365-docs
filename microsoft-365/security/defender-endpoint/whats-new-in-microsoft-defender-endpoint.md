@@ -58,7 +58,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 ## September 2022
 
-- [Device health reporting is now generally available](defender-endpoint/machine-reports.md). <br/>The device health report provides high-level information about the health and security of your endpoints. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
+- [Device health reporting is now generally available](machine-reports.md). <br/>The device health report provides high-level information about the health and security of your endpoints. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
 
 ## August 2022
 
