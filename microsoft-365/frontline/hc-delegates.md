@@ -44,11 +44,9 @@ Dr. Franco Piccio is on call at the radiology department. He receives an urgent 
 **Usage example with setting delegates** <br>
 Dr. Franco Piccio is on call at the radiology department. He receives an urgent personal call and has to step away for the next couple of hours. He asks one of his peers in the radiology department, Dr. Lena Ehrle to cover for him while he's gone. He changes his custom status message to say "I am unavailable for the next few hours. Please contact @DrEhrle for any emergencies."  Others on the team realize the delegation happened as they're attempting to contact Dr. Piccio, so they now know to contact Dr. Ehrle in the meantime. Little to no confusion ensues with a patient's care.
 
-<!-- daisy you stopped here -->
-
 ## Impact of co-existence modes on user status in the Teams client
 
-Admins should be aware that status notes and delegation mention behaviors will depend partly on a user's co-existence mode. This matrix shows the possibilities:
+Status notes and delegation mention behaviors depend partly on a user's co-existence mode. This matrix shows the possibilities:
 
 |Co-Existence Mode | Expected Behavior|
 |---|---|
@@ -61,14 +59,14 @@ A user can only set a note in Teams if their mode is TeamsOnly or Islands.
 
 ### Displaying notes set in Skype for Business
   
-There is no visual indication that a note was set from Skype for Business.
+There's no visual indication that a note was set from Skype for Business.
 
-Skype for Business doesn't enforce a character limit on status notes. Microsoft Teams will only display the first 280 characters of a note set from Skype for Business. An ellipse (...) at the end of a note indicates truncation.
+Skype for Business doesn't enforce a character limit on status notes. However, Microsoft Teams will only display the first 280 characters of a note set from Skype for Business. An ellipses (...) at the end of a note indicates that it's been truncated.
   
 Skype for Business doesn't support expiry times for notes.
 
-Migration of notes from Skype for Business to Teams is not supported when a user is upgraded to TeamsOnly mode.
+Migration of notes from Skype for Business to Teams isn't supported when a user is upgraded to TeamsOnly mode.
 
 ## Related topics
 
-[Coexistence with Skype for Business](/microsoftteams/coexistence-chat-calls-presence)
+[Learn more about Coexistence with Skype for Business](/microsoftteams/coexistence-chat-calls-presence).
