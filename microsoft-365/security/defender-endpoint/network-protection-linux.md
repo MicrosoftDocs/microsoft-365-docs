@@ -2,7 +2,7 @@
 title: Use network protection to help prevent Linux connections to bad sites
 description: Protect your network by preventing Linux users from accessing known malicious and suspicious network addresses
 keywords: Network protection, Linux exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
@@ -184,7 +184,7 @@ Also, make sure that in **Microsoft Defender** > **Settings** > **Endpoints** > 
    > [!NOTE]
    > If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
    > Pro tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
-4. [Integrate Microsoft Defender for Endpoint with Cloud App Security](/defender-cloud-apps/mde-integration.md) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
+4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
    > [!NOTE]
    > Discovery and other features are currently not supported on these platforms.
 

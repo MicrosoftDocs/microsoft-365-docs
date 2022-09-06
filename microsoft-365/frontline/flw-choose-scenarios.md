@@ -34,6 +34,11 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 Communications solutions connect your frontline workers and allow them to collaborate with each other, with others in the organization, and with your customers.
 
+Watch the following video to see an example of how you can help your frontline workers connect and collaborate in retail organizations:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
 | [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie |
@@ -50,8 +55,6 @@ Nurture a sense of belonging with your frontline employees by helping them engag
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
 | [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. | Microsoft Teams <br>SharePoint <br> Microsoft Stream <br>Viva Connections <br> Yammer| Praise |
-
-Cover: [Inline translation](/microsoftteams/inline-message-translation-teams), Praise, targeted communications (Viva Connections), video broadcasts with Stream or Teams.
 
 ## Training & onboarding
 
@@ -80,6 +83,11 @@ Simplify and streamline schedule coordination with your frontline workforce. Gai
 
 Drive operational efficiency by digitizing paper-based processes and automating routine, repetitive steps.
 
+Watch the following video to see an example of how you can simplify business processes in retail environments:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
+
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
 | [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
@@ -90,6 +98,11 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+
+Watch the following video to see an example of virtual appointments in healthcare organizations: 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
 
 More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
 

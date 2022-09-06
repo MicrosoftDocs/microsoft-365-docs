@@ -14,8 +14,8 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
 description: Admins can learn how to allow or block emails and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Allow or block emails using the Tenant Allow/Block List
@@ -82,18 +82,18 @@ For instructions, see [Report questionable email to Microsoft](admin-submission.
 
 #### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Tenant Allow/Block List
 
-You create block entries for domains and email addresses directly in the Tenant Allow/Block List.
+You can create block entries for domains and email addresses directly in the Tenant Allow/Block List.
+
+Email messages from these senders are marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](configure-your-spam-filter-policies.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
 
 > [!NOTE]
-> Email messages from these senders are marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](configure-your-spam-filter-policies.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
->
 > Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. On the **Tenant Allow/Block List** page, verify that the **Domains & addresses** tab is selected.
 
-3. **Domains & addresses** tab, click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
+3. On the **Domains & addresses** tab, click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
 
 4. In the **Block domains & addresses** flyout that appears, configure the following settings:
 
@@ -279,7 +279,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 3. On **Domains & addresses** tab, do one of the following steps:
 
    - Select the check box of the entry that you want to remove, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-   - Select the entry that you want to remove by click anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+   - Select the entry that you want to remove by clicking anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 4. In the warning dialog that appears, click **Delete**.
 
@@ -541,12 +541,12 @@ Adding a domain pair only allows or blocks the *combination* of the spoofed user
 For example, you add an allow entry for the following domain pair:
 
 - **Domain**: gmail.com
-- **Infrastructure**: tms.mx.com
+- **Sending infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
 
 > [!NOTE]
-> You can't use wildcards in the sending infrastructure.
+> You can specify wildcards in the sending infrastructure or in the spoofed user, but not in both at the same time. For example, `*, *` is not permitted.
 
 ## About impersonated domains or senders
 

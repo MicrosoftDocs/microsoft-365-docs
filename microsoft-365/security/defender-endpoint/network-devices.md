@@ -2,7 +2,7 @@
 title: Network device discovery and vulnerability management
 description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
 keywords: network devices, network devices vulnerability detection, operating systems of switches, routers, WLAN controllers, and firewalls
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
   - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 # Network device discovery and vulnerability management
 

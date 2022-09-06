@@ -3,7 +3,8 @@ title: Prioritize incidents in Microsoft 365 Defender
 description: Learn how to filter incidents from the incident queue in Microsoft 365 Defender
 keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response, triage
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,7 +23,6 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Prioritize incidents in Microsoft 365 Defender

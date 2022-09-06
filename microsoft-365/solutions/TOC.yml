@@ -372,6 +372,8 @@
   items: 
     - name: Financial services
       items:
+      - name: Overview
+        href: financial-services-overview.md
       - name: Security and compliance for financial services
         href: financial-services-secure-collaboration.md
     - name: Energy and utility services
@@ -383,7 +385,7 @@
       - name: Overview
         href: healthcare-overview.md
       - name: Teams for Healthcare
-        href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+        href: /frontline/teams-in-hc
     - name: Education
       items: 
       - name: Teams for Education
@@ -399,7 +401,7 @@
       - name: Overview
         href: retail-overview.md
       - name: Teams for Retail
-        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
+        href: /frontline/teams-for-retail-landing-page
 - name: Enterprise architecture design principles
   items: 
     - name: Overview
