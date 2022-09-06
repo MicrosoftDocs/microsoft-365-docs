@@ -329,7 +329,7 @@ Configuring a third-party phishing simulation in PowerShell is a multi-step proc
 
 #### Step 1: Use PowerShell to create the phishing simulation override policy
 
-In [Security & Compliance PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell), this example creates the phishing simulation override policy.
+In [Security & Compliance PowerShell](/powershell/exchange/scc-powershell), this example creates the phishing simulation override policy.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
