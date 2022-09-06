@@ -439,7 +439,7 @@ For detailed syntax and parameter information, see [Set-PhishSimOverridePolicy](
 
 ### Use PowerShell to modify phishing simulation override rules
 
-In [Security & Compliance PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/scc-powershell), use the following syntax:
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
