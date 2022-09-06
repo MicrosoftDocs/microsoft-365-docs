@@ -31,8 +31,9 @@ ms.custom: seo-marvel-mar2020
 Users in Microsoft Teams can set their status to Away or Do not Disturb, and include a custom text status message. A user who's going to be away can assign someone as a delegate who people can contact instead. The message delegation feature works as follows:
 
 1. The user who's going to be away @mentions another user (the delegate) in their status message to let people know to contact the delegate instead while the user is away.
-2. The user who's been @mentioned gets notified that they've been nominated as a delegate.
-3. When someone opens a chat with the away user and sees their status message, they can hover over the delegate and easily message them instead.
+    ![Screenshot of a status message with a user set as a delegate.](media/message-delegation.png)
+1. The user who's been @mentioned gets notified that they've been nominated as a delegate.
+1. When someone opens a chat with the away user and sees their status message, they can hover over the delegate and easily message them instead.
 
 Users can initiate the process themselves, and no admin involvement is required to enable the feature.
 
