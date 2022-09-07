@@ -4,7 +4,8 @@ description: How to redirect accounts and sessions from the Defender for Endpoin
 keywords: Microsoft 365 Defender, Getting started with Microsoft 365 Defender, security center redirection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +20,6 @@ ms.collection:
   - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: m365d
 ---
 # Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender
 

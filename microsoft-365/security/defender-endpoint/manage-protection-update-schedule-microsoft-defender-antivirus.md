@@ -2,7 +2,7 @@
 title: Schedule Microsoft Defender Antivirus protection updates
 description: Schedule the day, time, and interval for when protection updates should be downloaded
 keywords: updates, security baselines, schedule updates
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,7 +14,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ---
 
@@ -67,7 +67,7 @@ Enabling these settings will override that default.
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** \> **Windows Defender Antivirus** \> **Signature Updates** and configure the following settings:
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Updates** and configure the following settings:
 
     1. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
 

@@ -2,7 +2,8 @@
 title: Investigate alerts in Microsoft 365 Defender
 description: Investigate alerts seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,7 +21,6 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
 ---
 # Investigate alerts in Microsoft 365 Defender
 
@@ -144,7 +144,7 @@ The **Manage alert** pane allows you to view or specify:
      - **Not Set** (default).
      - **True positive** with a type of threat. Use this classification for alerts that accurately indicate a real threat. Specifying this threat type alerts your security team see threat patterns and act to defend your organization from them.
      - **Informational, expected activity** with a type of activity. Use this option for alerts that are technically accurate, but represent normal behavior or simulated threat activity. You generally want to ignore these alerts but expect them for similar activities in the future where the activities are triggered by actual attackers or malware. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
-     - **False positive** for types of alerts that were created even when there is no malicious activity or for a false alarm. Use the options in this category to classify alerts that are mistakenly identified as normal events or activities as malicious or suspicious. Unlike alerts for 'Informational, expected activity', which can also be useful for catching real threats, you generally don't want to see these alerts again. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
+     - **False positive** for types of alerts that were created even when there's no malicious activity or for a false alarm. Use the options in this category to classify alerts that are mistakenly identified as normal events or activities as malicious or suspicious. Unlike alerts for 'Informational, expected activity', which can also be useful for catching real threats, you generally don't want to see these alerts again. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
 - A comment on the alert.
 
 >[!NOTE]
@@ -195,6 +195,9 @@ To create a suppression rule for alerts:
     However, to apply the rule on any alert type that meets rule conditions select **Any alert type based on IOC conditions**.
  
     IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
+    
+    > [!NOTE]
+    > You can no longer suppress an alert triggered by 'custom detection' source. You can't create a suppression rule for this alert.
      
 3. In the **IOCs** section, select **Any IOC** to suppress the alert no matter what 'evidence' has caused the alert. 
 
@@ -212,9 +215,9 @@ To create a suppression rule for alerts:
 
     3. You can edit and/or delete properties of this 'evidence' as per your requirement (using wildcards, when supported).
 
-    4. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
+    4. Other than files and processes, AntiMalware Scan Interface (AMSI) script, Windows Management Instrumentation (WMI) event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Screenshot of other types of evidence." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-
+    
     5. To add another IOC, click **Add filter**. 
     > [!NOTE]
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
@@ -242,8 +245,11 @@ IOCs that were selected in the suppression conditions will be selected by defaul
     :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Screenshot of successful suppression rule creation. ":::
 
 8.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
+
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Screenshot of toggle for turning on/off the suppression rule creation feature.":::
+    > [!NOTE]
+    > Soon, only the new alert suppression experience will be available. You will not be able to go back to the previous experience.
 
 9.	**Edit existing rules:** <br> You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
     To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         

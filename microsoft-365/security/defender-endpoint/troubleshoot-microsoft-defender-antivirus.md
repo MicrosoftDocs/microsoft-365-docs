@@ -2,7 +2,7 @@
 title: Microsoft Defender Antivirus event IDs and error codes
 description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -10,10 +10,10 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/02/2022
+ms.date: 08/04/2022
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
 ---
 
@@ -2712,7 +2712,7 @@ Message:
 Description:
 </td>
 <td >
-If Tamper protection is enabled then, any attempt to change any of Defender's settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
+If Tamper protection is enabled then, any attempt to change any of Defender's settings is blocked. Event ID 5013 is generated and states which setting change was blocked.
 </td>
 </tr>
 <tr>
@@ -2787,8 +2787,7 @@ Description of the error. </dt>
 
 <a id="error-codes"></a>
 ## Microsoft Defender Antivirus client error codes
-If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-This section provides the following information about Microsoft Defender Antivirus client errors.
+If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
 - The error code
 - The possible reason for the error
 - Advice on what to do now

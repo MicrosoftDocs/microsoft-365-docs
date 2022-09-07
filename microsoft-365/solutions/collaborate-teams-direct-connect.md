@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
@@ -28,6 +28,9 @@ When you enable shared channels in Teams with another organization:
 - Team owners in your organization will be able to invite people from other organizations to participate in shared channels.
 - Your organization's custom (line of business) apps will be available in shared channels and external participants will be able to access them.
 - Your organization's apps list will be available in shared channels and external participants will be able to access them.
+
+> [!NOTE]
+> [Guest settings for Microsoft 365 Groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) must be enabled to use shared channels with external participants.
 
 ## Video demonstration
 

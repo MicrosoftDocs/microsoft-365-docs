@@ -4,7 +4,8 @@ ms.reviewer:
 description: This section outlines the key infrastructure requirements you must meet and important information on data access and compliance
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, defender experts notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +18,6 @@ ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -76,8 +76,8 @@ This service is currently delivered in English language only.
 
 If you haven't done so yet, you can complete the customer interest form for Defender Experts for Hunting:
 
-1. Complete the customer interest form. Anyone from your company can apply, but if you're accepted, you need to work with your Commercial Executive to transact the SKU.
-2. Enter your company email ID.
+1. Complete the [customer interest form](https://aka.ms/DEX4HuntingCustomerInterestForm). Anyone from your company can apply, but if you're accepted, you need to work with your Commercial Executive to transact the SKU.
+2. Enter your name, company name, and company email ID.
 3. Select **Submit**. Someone from our sales team will reach out within five business days.
 
 

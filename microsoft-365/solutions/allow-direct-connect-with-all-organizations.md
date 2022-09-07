@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
@@ -28,6 +28,9 @@ If your organization doesn't have a requirement to restrict collaboration with o
 
 > [!NOTE]
 > Changes to cross-tenant access settings may take two hours to take effect.
+
+> [!NOTE]
+> [Guest settings for Microsoft 365 Groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) must be enabled to use shared channels with external participants.
 
 ## Allow users to invite people in other organizations to participate in shared channels
 

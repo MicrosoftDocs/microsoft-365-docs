@@ -16,8 +16,8 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how identify a custom mailbox (also known as a user submissions mailbox) to collect spam and phishing messages that are reported by users. Other settings complete the reporting experience for users when they report messages.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # User reported message settings
@@ -44,7 +44,7 @@ Delivering user reported messages to a user submissions mailbox instead of direc
 
 ## Configuration requirements for the user submissions mailbox
 
-Before you get started, yu need to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the user submissions mailbox without being filtered as described in the following steps:
+Before you get started, you need to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the user submissions mailbox without being filtered as described in the following steps:
 
 - Identify the user submissions mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -107,7 +107,7 @@ When **Microsoft Outlook Report Message button** is **On** ![Toggle on.](../../m
 
 - **Send the reported messages to** section: Select one of the following options:
 
-  - **Microsoft**: The user reports go directly to Microsoft for analysis. Only the metadata such as sender, recipient, reported by, and the message details from the user reports are provided to the tenant admin via the Microsoft 365 Security Center.
+  - **Microsoft**: The user reports go directly to Microsoft for analysis. Only the metadata such as sender, recipient, reported by, and the message details from the user reports are provided to the tenant admin via the Microsoft 365 Defender portal.
 
   - **Microsoft and my organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox to use as the user submissions mailbox. Distribution groups are not allowed. User submissions go to Microsoft for analysis and to the user submissions mailbox for an admin or security operations team to analyze.
 
