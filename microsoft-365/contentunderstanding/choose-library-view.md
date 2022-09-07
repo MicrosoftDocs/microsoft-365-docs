@@ -19,7 +19,7 @@ description: Learn how to apply a default view and choose a view a SharePoint do
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-There are multiple ways to view how you see the information in a SharePoint document library. You can change the view in your document library to fit your needs or preferences.
+There are multiple ways to view how you see the information in a SharePoint document library. You can choose the default view or change the view in your document library to fit your needs or preferences.
 
 ## Choose the default view
 
