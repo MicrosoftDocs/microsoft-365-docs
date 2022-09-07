@@ -158,7 +158,7 @@ Microsoft 365 で使用するドメインサービスのこと。ウェブサイ
 
 ## ライセンス
 
-:::image type="content" source="../media/katanaglossary/013_licenses.png)" alt-text="Screenshot: ":::
+:::image type="content" source="../media/katanaglossary/013_licenses.png" alt-text="Screenshot: ":::
 
 組織でMicrosoft 365を購入した際、個々の従業員に割り当てられる利用権・アクセス権のこと。Microsoft 365を使用するためにはライセンスを利用者の人数分購入し各ユーザーに割り当てる必要がある。
 
