@@ -127,5 +127,8 @@ To rename an extractor from the **Extractors** panel:
 
 ## Change the view in a document library
 
-[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
+For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).
 
+<!---
+[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
+--->
