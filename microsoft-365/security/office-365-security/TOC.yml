@@ -408,7 +408,7 @@
        href: eop-general-faq.yml
      - name: EOP queued, deferred, and bounced messages FAQ
        href: eop-queued-deferred-and-bounced-messages-faq.yml
-   - name: Reference
+   - name: Step-by-step guides  
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
         href: step-by-step-guides/step-by-step-guide-overview.md
@@ -488,6 +488,24 @@
          href: ../defender-business/index.yml
        - name: Defender Vulnerability Management
          href: ../defender-vulnerability-management/index.yml
+
+   - name: Report messages and files to Microsoft
+     items:
+         - name: How do I report a suspicious email or file to Microsoft
+           href: report-junk-email-messages-to-microsoft.md
+         - name: Admin submissions
+           href: admin-submission.md
+         - name: Enable the Report Message and the Report Phishing add-ins
+           href: enable-the-report-message-add-in.md
+         - name: Report false positives and false negatives in Outlook
+           href: report-false-positives-and-false-negatives.md
+         - name: User reported message settings
+           href: user-submission.md
+         - name: Use mail flow rules to see what users are reporting to Microsoft
+           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+         - name: Submit malware and non-malware to Microsoft
+           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+
    - name: Parking lot items
      items:
       - name: Defender for Office 365 STUFF
