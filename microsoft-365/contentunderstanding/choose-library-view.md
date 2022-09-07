@@ -27,9 +27,9 @@ When you create an enterprise model, you have the option to choose the default v
 
 Because a model is associated to a content type, when you apply it to the library it will add the content type and update the default view with the labels you extracted showing as columns. However, you can select **Advanced settings** to optionally choose to retain the current library view or to use a new view with model information and file thumbnails. If you choose to keep the current library view, the new views with model information are still available under the library's view menu.
 
-    ![Screenshot of the Advanced settings showing the library views.](../media/content-understanding/library-view.png)
+   ![Screenshot of the Advanced settings showing the library views.](../media/content-understanding/library-view.png)
 
-## Change the view in a document library
+## Change the library view
 
 You can change the view in a document library depending on your preferences. To change the view on the library page, select the view dropdown menu to show the options, and then select the view you want to use.
 
