@@ -40,14 +40,10 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |Machine-based Support|Yes|
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature gives you the following capabilities:
-- Default Enforcement: Allows you to set default access (Deny or Allow) to removable media if there is no custom policy
-- Enable or Disable Removable Storage Access Control: If you set Disable, it will disable the Removable Storage Access Control policy on this machine
-- Custom Policy: Allows you to create removable media group and set policy to enforce each group
-- Capture file information: Allows you to create policy to capture file information when Write access happens
 
 ### Prepare your endpoints
 
-Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices that have antimalware client version **4.18.2103.3 or later**.
+Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices that have the anti-malware client version **4.18.2103.3 or later**.
 
 - **4.18.2104 or later**: Add `SerialNumberId`, `VID_PID`, filepath-based GPO support, and `ComputerSid`
 
@@ -61,7 +57,6 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 > [!NOTE]
 > None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
-
 
 ## Device Control Removable Storage Access Control properties
 
@@ -149,4 +144,3 @@ DeviceEvents
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
-
