@@ -71,12 +71,17 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 - Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they will be considered active and will not be signed out.  
 
 - Users won’t get signed out in these cases.
-    - If they get single sign-on (SSO) into the web app from the device joined account or selected **Stay signed in** at the time of sign-in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
-    - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Windows Accounts extension](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). For this feature to trigger on an unmanaged device, an eligible Azure AD Premium P1 or P2 subscription, and a specific Conditional Access policy, is required. See below for further details.
+    - If they get single sign-on (SSO) into the web app from the device joined account.
+    - If they selected **Stay signed in** at the time of sign-in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
+    - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Windows Accounts extension](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)).
+
+## Trigger idle session timeout only on unmanaged devices
+
+By default, the idle session timeout feature triggers on all device types if the other conditions are met. For this feature to trigger only on an unmanaged device, an eligible Azure AD Premium P1 or P2 subscription is required. You'll also need to add a Conditional Access policy in the Azure AD admin center.
 
 ## Idle session timeout on unmanaged devices  
 
-For idle session timeout to get triggered on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
+For idle session timeout to get triggered only on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
 
 1. On the **Conditional Access | Policies** page of the Azure AD admin center, select **New policy** and enter a name for the policy.
 

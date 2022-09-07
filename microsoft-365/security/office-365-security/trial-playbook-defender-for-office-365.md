@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial playbook."
-ms.technology: mdo
+ms.subservice: mdo
 ms.custom: trial-playbook
 ---
 
@@ -142,7 +142,7 @@ Respond efficiently using Automated investigation and response (AIR) to review, 
 
 Use Advanced hunting to write custom detection rules, proactively inspect events in your environment, and locate threat indicators. Explore raw data in your environment.
 
-- [Build custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
+- [Build custom detection rules](../defender/custom-detections-overview.md).
 - [Access shared queries](../defender/advanced-hunting-shared-queries.md) created by others.
 
 Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
