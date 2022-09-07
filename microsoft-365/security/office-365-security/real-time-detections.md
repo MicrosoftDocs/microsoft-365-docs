@@ -15,8 +15,8 @@ ms.collection:
 description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Explorer and Real-time detections

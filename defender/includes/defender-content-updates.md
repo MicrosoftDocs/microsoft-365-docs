@@ -2,6 +2,14 @@
 
 
 
+## Week of August 29, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/2/2022 | [Tutorial: Gathering vulnerability intelligence](/defender/threat-intelligence/gathering-vulnerability-intelligence) | modified |
+
+
 ## Week of August 08, 2022
 
 
@@ -31,11 +39,3 @@
 | 8/2/2022 | [What is Microsoft Defender Threat Intelligence (Defender TI)?](/defender/threat-intelligence/index) | modified |
 | 8/2/2022 | What is Microsoft Defender Threat Intelligence (Defender TI)? | removed |
 | 8/3/2022 | [Tutorial: Gathering vulnerability intelligence](/defender/threat-intelligence/gathering-vulnerability-intelligence) | added |
-
-
-## Week of July 18, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/18/2022 | [Defender Threat Intelligence](/defender/threat-intelligence/index) | added |
