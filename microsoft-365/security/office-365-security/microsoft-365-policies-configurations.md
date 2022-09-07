@@ -174,12 +174,6 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 - [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
 
-  Recommendations that apply to starting point security for your tenant.
-
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
-
-  Recommendations that include logging, data governance, admin access, and threat protection.
-
 ### Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise
 
 Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
