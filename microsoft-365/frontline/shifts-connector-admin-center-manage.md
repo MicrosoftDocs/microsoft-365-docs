@@ -20,8 +20,6 @@ appliesto:
 
 # Use the Microsoft 365 admin center to manage your Shifts connection to your workforce management system
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
 ## Overview
 
 [Shifts connectors](shifts-connectors.md) enable you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
@@ -31,7 +29,7 @@ This article applies to you if you've set up a connection using one of the follo
 |Connector|Connection setup|
 |---------|---------|
 |[Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)|Use the [Shifts connector wizard](shifts-connector-wizard.md) or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to connect Shifts to Blue Yonder Workforce Management.|
-|[Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md) to connect Shifts to UKG Dimensions.|
+|[Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) (preview)|Use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md) to connect Shifts to UKG Dimensions.|
 
 After a connection is set up, you can manage it in the Microsoft 365 admin center. The Manage Shifts connectors page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings.
 
