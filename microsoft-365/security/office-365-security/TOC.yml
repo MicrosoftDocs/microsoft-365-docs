@@ -14,6 +14,8 @@
          href: whats-new-in-defender-for-office-365.md
    - name: Get started
      items:
+     - name: Microsoft 365 Defender portal overview
+       href: ../defender/microsoft-365-defender.md
    - name: Evaluate
      items:
      - name: Try Defender for Office 365
@@ -66,14 +68,16 @@
      items:
        - name: Migrate from a third-party protection service or device to Defender for Office 365
          href: migrate-to-defender-for-office-365.md
-       - name: "Step 1: Prepare"
+       - name: Step 1 - Prepare
          href: migrate-to-defender-for-office-365-prepare.md
-       - name: "Step 2: Setup"
+       - name: Step 2 - Setup
          href: migrate-to-defender-for-office-365-setup.md
-       - name: "Step 3: Onboard"
+       - name: Step 3 - Onboard
          href: migrate-to-defender-for-office-365-onboard.md
    - name: Protect and Detect
      items:
+       - name: Defender for Office 365 Security Operations Guide
+         href: mdo-sec-ops-guide.md
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
        - name: Security recommendations for priority accounts
@@ -266,8 +270,14 @@
            href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
    - name: Investigate and Respond
      items:
-     - name: Detect and address compromised user accounts quickly
-       href: address-compromised-users-quickly.md
+     - name: Defender for Office 365 Security Incident Response
+       href: office365-security-incident-response-overview.md
+     - name: Manage incidents and alerts from Defender for Office 365 in Microsoft 365 Defender
+       href: mdo-sec-ops-manage-incidents-and-alerts.md
+     - name: How threat investigation and response works
+       href: office-365-ti.md
+     - name: Recover from a ransomware attack
+       href: recover-from-ransomware.md
      - name: Detect and Remediate Illicit Consent Grants in Office 365
        href: detect-and-remediate-illicit-consent-grants.md
      - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
@@ -292,10 +302,10 @@
            href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
      - name: Admin review for reported messages
        href: admin-review-reported-message.md
-     - name: Recover from a ransomware attack
-       href: recover-from-ransomware.md
      - name: Remediate malicious email
        href: remediate-malicious-email-delivered-office-365.md
+     - name: Detect and address compromised user accounts quickly
+       href: address-compromised-users-quickly.md
      - name: Responding to a Compromised Email Account in Office 365
        href: responding-to-a-compromised-email-account.md
      - name: Respond to a compromised connector
@@ -328,8 +338,6 @@
          href: quarantine-faq.yml
      - name: Use the delist portal to remove yourself from the blocked senders list
        href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-     - name: Office 365 Security Incident Response
-       href: office365-security-incident-response-overview.md
      - name: Phase 1 - Daily work with built-in tools
        items:
          - name: Investigate malicious email
@@ -338,15 +346,13 @@
            href: campaigns.md
          - name: Threat Explorer views
            href: threat-explorer-views.md
-         - name: Insights
-           items:
-           - name: Impersonation insight
-             href: impersonation-insight.md
-           - name: Spoof intelligence insight
-             href: learn-about-spoof-intelligence.md
+         - name: Impersonation insight
+           href: impersonation-insight.md
+         - name: Spoof intelligence insight
+           href: learn-about-spoof-intelligence.md
      - name: Phase 2 - Reports
        items:
-         - name: Step 1 - View the admin audit log
+         - name: View the admin audit log
            href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
          - name: View email security reports
            href: view-email-security-reports.md
@@ -416,6 +422,8 @@
            href: address-compromised-users-quickly.md
          - name: Integrate AIR with a custom solution or third-party solution
            href: air-custom-reporting.md
+         - name: Email analysis in investigations
+           href: email-analysis-investigations.md
    - name: Step-by-step guides  
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
@@ -482,6 +490,8 @@
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: Monitor for leaks of personal data
        href: monitor-for-leaks-of-personal-data.md
+     - name: Install Application Guard for Office
+       href: install-app-guard.md
      - name: FAQ
        items:
        - name: Delegated administration FAQ
@@ -504,30 +514,3 @@
          href: ../defender-business/index.yml
        - name: Defender Vulnerability Management
          href: ../defender-vulnerability-management/index.yml
-
-   - name: Parking lot items
-     items:
-      - name: Defender for Office 365 STUFF
-        items:
-        - name: Microsoft 365 Defender portal overview
-          href: ../defender/microsoft-365-defender.md
-        - name: Security Dashboard overview
-          href: security-dashboard.md
-        - name: How threat investigation and response works
-          href: office-365-ti.md
-        - name: Email analysis in investigations
-          href: email-analysis-investigations.md
-        - name: Defender for Office 365 Security Operations Guide
-          href: mdo-sec-ops-guide.md
-        - name: Manage incidents and alerts from Defender for Office 365 in Microsoft 365 Defender
-          href: mdo-sec-ops-manage-incidents-and-alerts.md
-      - name: Office 365 security
-        items:
-        - name: Install Application Guard for Office
-          href: install-app-guard.md
-        - name: DELETE? Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
-          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
-        - name: DELETE? Security roadmap
-          href: security-roadmap.md
-      - name: DELETE?Smart reports and insights in the Security & Compliance Center
-        href: reports-and-insights-in-security-and-compliance.md

@@ -1,5 +1,5 @@
 ---
-title: Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2
+title: Threat investigation & response capabilities in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -76,7 +75,6 @@ Use the Incidents list (this is also called Investigations) to see a list of in 
 
 To view the list of current incidents for your organization in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
 
-:::image type="content" source="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png" alt-text="The Review page in the Security & Compliance Center" lightbox="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png":::
 
 ### Attack simulation training
 
