@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/25/2022
+ms.date: 09/06/2022
 ms.reviewer: tewchen
 ---
 
@@ -30,7 +30,7 @@ The Removable Storage Access Control feature enables you to apply policy by usin
 
 ## Licensing requirements
 
-Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
 ### Permission
 
@@ -40,9 +40,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 - Custom role with Create/Edit/Update/Read/Delete/View Reports permissions turned on for Device Configuration profiles
 - Global administrator
 
-## Deploy using Intune OMA-URI
-
-To block a specific removable storage class but allow specific media, you can use 'IncludedIdList a group through PrimaryId and ExcludedIDList a group through DeviceId/HardwareId/etc.'
+## Deploy Removable Storage Access Control by using Intune OMA-URI
 
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > Custom**.
 
@@ -81,100 +79,127 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
    :::image type="content" source="images/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="images/default-deny.png":::
 
-3. Audit Default Deny:
 
-   You can create an Audit policy for Default Deny as follows:
+3. Create one XML file for each group:
 
-   - In the **Add Row** pane, enter:
-     - **Name** as **Audit Default Deny**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
-
-       :::image type="content" source="images/audit-default-deny-1.png" alt-text="Screenshot of creating Audit Default Deny policy." lightbox="images/audit-default-deny-1.png":::
-
-     - **Data Type** as **String (XML file)**
-     - **Custom XML** as **Audit Default Deny.xml** file.
-
-       XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
-
-       Use the following XML data to create your Audit policy for Default Deny:
-
-       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Screenshot of audit default deny xml file.":::
-
-4. ReadOnly - Group:
-
-   You can create a removable storage group with ReadOnly access as follows:
+   You can create a removable storage group for each group as follows:
 
    - In the **Add Row** pane, enter:
      - **Name** as **Any Removable Storage Group**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**[GroupId]**%7d/GroupData`
+     - **Data Type** as **String (XML file)**
+       - **Custom XML** as selected XML file
+
+         Here is one group example XML file for any removable storage and CDROM and Windows portable devices: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
 
        :::image type="content" source="images/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="images/any-removable-storage-group.png":::
 
-     - **Data Type** as **String (XML file)**
-       - **Custom XML** as **Any Removable Storage and CD-DVD and WPD Group.xml** file
+> [!NOTE]
+> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
-         XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
+4. Create one XML file for each access control or policy rule:
 
-         Use the following XML data to create 'Any Removable Storage and CD-DVD and WPD Group' with ReadOnly access:
-
-         :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Screenshot of read only group xml file":::
-
-5. ReadOnly - Policy:
-
-   You can create a ReadOnly policy and apply it to the ReadOnly removable storage group to allow read activity as follows:
+   You can create a policy and apply it to related removable storage group as follows:
 
    - In the **Add Row** pane, enter:
      - **Name** as **Allow Read Activity**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
-
-       :::image type="content" source="images/allow-read-activity.png" alt-text="Screenshot of Allow Read Activity policy" lightbox= "images/allow-read-activity.png":::
-
+     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**[PolicyRule Id]**%7d/RuleData`
      - **Data Type** as **String (XML file)**
      - **Custom XML** as **Allow Read.xml**  file
 
-       XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
+       Here is one group example XML file for Allow Read access for each removable storage: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
 
-       Use the following XML data to create ReadOnly policy and apply to the ReadOnly removable storage group:
+       :::image type="content" source="images/allow-read-activity.png" alt-text="Screenshot of Allow Read Activity policy" lightbox= "images/allow-read-activity.png":::
 
-       :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Screenshot of read only policy xml file":::
+> [!NOTE]
+> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
-6. Create a Group for Allowed Media: You can create your allowed media group as follows:
+5. Set location for a copy of the file (evidence):
+   
+   If you want to have a copy of the file (evidence) when Write access happens, set right **Options** in your removable storage access policy rule in the XML file, and then specify the location where system can save the copy.
+
    - In the **Add Row** pane, enter:
-     - **Name** as **Approved USBs Group**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+     - **Name** as **Evidence folder location**
+     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+     - **Data Type** as **String**
 
-       :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Screenshot of creating Approved USBs group" lightbox="images/create-group-allowed-medias.png":::
+       ::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="Set locaiton for file evidence":::
 
-     - **Data Type** as **String (XML file)**
-     - **Custom XML** as **Approved USBs Group.xml** file
+## Scenarios
 
-       XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
+To help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control, we have put together some common scenarios for you to follow.
 
-       Use the following XML data to create allowed media group:
+### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
+For this scenario, you will need to create two groups - a group for any removable storage and another group for approved USBs - and two policies - one policy to deny Write and Execute acess for any removable storage group and the other policy to audit the approved USBs group.
 
-       :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Screenshot of creating group for allowed medias xml file":::
+1. Create groups
 
-7. Create a policy to allow the approved USB Group: You can create a policy to allow the approved USB group as follows:
-   - In the **Add Row** pane, enter:
-     - **Name** as **Allow access and Audit file information**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+    1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
+    ![Screenshot showing removable storage](media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+    
+    Here is the sample [Any Removable Storage and CD-DVD and WPD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
-       :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Screenshot of Allow access and audit file information" lightbox= "images/allow-access-audit-file-information-1.png":::
 
-     - **Data Type** as **String (XML file)**
-     - **Custom XML** as **Allow full access and audit file.xml**  file
+    2. Group 2: Approved USBs based on device properties. An example for this use case is shown in the following screenshot:
+    ![Screenshot of approved USBs](media/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
+    
+    Here is the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
-       XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml>
+    > [!TIP]
+    > Replace `&` with `&amp;` in the value in the XML file.
+    
 
-       Use the following XML data to create policy to allow the approved USB group:
+2. Create policy
 
-       :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Screenshot of creating policy to allow the approved USB Group XML file":::
+    1. Policy 1: Block Write and Execute access to any removable storage group but allow approved USBs. An example for this use case is:
+    ![Screenshot of policy 1](media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png)
+    
+    Here is the sample [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Block%20Write%20and%20Execute%20Access%20but%20allow%20approved%20USBs.xml) file. Take step 4 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
-       What does '47' mean in the policy? It's 9 + 2 + 36 = 47:
+    2. Policy 2: Audit Write and Execute access for allowed USBs. An example for this use case is:
+    ![Screenshot of policy 2](media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png)
+    
+    What does '54' mean in the policy? It's 18 + 36 = 54:
+       - Write access: disk level 2 + file system level 16 = 18.
+       - Execute: disk level 4 + file system level 32 = 36.
+    
+    Here is the sample [Scenario 1 Audit Write and Execute access to aproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Audit%20Write%20and%20Execute%20access%20to%20aproved%20USBs.xml) file. Take step 4 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
 
-       - Read access: 1 + 8 = 9.
-       - Write access: disk level 2.
-       - Execute: 4 + 32 = 36.
+### Scenario 2: Audit Write and Execute access to all but block specific unapproved USBs
+For this scenario, you will need to create two groups - a group for any removable storage and another group for unallowed USBs - and two policies - one policy to audit Write and Execute acess for any removable storage group and the other policy to deny the unallowed USBs group.
+
+1. Create groups
+
+    1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
+    ![Screenshot of group 1](media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+    
+    Here is the sample [Any Removable Storage and CD-DVD and WPD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
+
+
+    2. Group 2: Unapproved USBs based on device properties. An example for this use case is:
+    ![Screenshot of group 2](media/188243875-0693ebcf-00c3-45bd-afd3-57a79df9dce6.png)
+    
+    Here is the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Unapproved%20USBs%20Group.xml) file. Take step 3 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
+
+    > [!TIP]
+    > Replace `&` with `&amp;` in the value in the XML file.
+
+2. Create policy
+
+    1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example for this use case is:
+    ![Screenshot of policy for blocking unapproved USBs](media/188244024-62355ded-353c-4d3a-ba61-4520d48f5a18.png)
+    
+    Here is the sample [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%202%20Audit%20Write%20and%20Execute%20access%20to%20all%20but%20block%20specific%20unapproved%20USBs.xml) file. Take step 4 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
+
+    2. Policy 2: Audit Write and Execute access to others. An example for this use case is:
+    ![Screenshot of audit write and execute access](media/188244203-36c869b6-9330-4e2a-854b-494c342bb77d.png)
+    
+    What does '54' mean in the policy? It's 18 + 36 = 54:
+       - Write access: disk level 2 + file system level 16 = 18.
+       - Execute: disk level 4 + file system level 32 = 36.
+    
+    Here is the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%202%20Audit%20Write%20and%20Execute%20access%20to%20others.xml) file. Take step 4 in above **Deploy Removable Storage Access Control by using Intune OMA-URI** section to deploy the configuration.
+
 
 ## Use Intune user interface
 
