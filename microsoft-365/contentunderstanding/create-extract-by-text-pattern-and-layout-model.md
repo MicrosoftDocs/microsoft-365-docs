@@ -18,16 +18,22 @@ description: Learn how to train an Extract by text pattern and layout model in S
 
 # Train an Extract by text pattern and layout model in Microsoft SharePoint Syntex
 
+Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create an **Extract by layout** model. Then use this article to train your model.
+
+To train an **Extract by layout** model, follow these steps:
+
+<!---
 SharePoint Syntex uses [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—to create an **Extract by text pattern and layout** model directly from a SharePoint document library. In AI Builder, both the **Extract by text pattern and layout** model and the **Extract by text pattern and layout** model are referred to as *document processing* models.
 
 Creating an **Extract by text pattern and layout** model involves the following steps:
+--->
 
- - [Step 1: Create an **Extract by text pattern and layout** model](#step-1-create-an-extract-by-text-pattern-and-layout-model)
- - [Step 2: Add and analyze documents](#step-2-add-and-analyze-documents)
- - [Step 3: Tag fields and tables](#step-3-tag-fields-and-tables)
- - [Step 4: Train and publish your model](#step-4-train-and-publish-your-model)
- - [Step 5: Use your model](#step-5-use-your-model)
+ - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
+ - [Step 2: Tag fields and tables](#step-2-tag-fields-and-tables)
+ - [Step 3: Train and publish your model](#step-3-train-and-publish-your-model)
+ - [Step 4: Use your model](#step-4-use-your-model)
 
+<!---
 ## Requirements
 
 You can only create an **Extract by text pattern and layout** model in SharePoint document libraries for which it's enabled. If document processing is enabled, you're able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need processing enabled on your document library, you must contact your SharePoint administrator.
@@ -79,8 +85,9 @@ The first step in creating a this model is to name the model, define the new con
    4. To apply a retention label to your files, in the **Retention label** section, select the retention label you want to use.
 
 5. Select **Create**.
+--->
 
-## Step 2: Add and analyze documents
+## Step 1: Add and analyze documents
 
 After you create your new model, your browser opens a new Power Apps AI Builder document processing model page. On this page, you can add and analyze your example documents. 
 
@@ -93,11 +100,11 @@ After you create your new model, your browser opens a new Power Apps AI Builder 
 
 3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
 
-## Step 3: Tag fields and tables
+## Step 2: Tag fields and tables
 
 You need to tag the documents to teach the model to understand the fields and table data you want to extract. For detailed steps, see [Tag documents](/ai-builder/create-form-processing-model#tag-documents).
 
-## Step 4: Train and publish your model
+## Step 3: Train and publish your model
 
 1. After you create and train your model, you're ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your document processing model](/ai-builder/form-processing-train). 
 
@@ -109,7 +116,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 4. Select the **Go to SharePoint** button to see the document library updated with your model.
 
-## Step 5: Use your model
+## Step 4: Use your model
 
 1. In the document library model view, notice that the fields you selected now display as columns.
 
