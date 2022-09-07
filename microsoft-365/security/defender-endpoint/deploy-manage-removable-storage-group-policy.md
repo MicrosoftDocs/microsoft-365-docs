@@ -35,39 +35,15 @@ You can use the following properties to create a removable storage group.
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
-### Removable storage group
-
-|Property Name|Description|Options|
-|---|---|---|
-|**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. All properties are case sensitive. |**PrimaryId**: The Primary ID includes `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`. <p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It's the `Device instance path` in the Device Manager. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: To transform `Device instance path` to Device ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: A string that identifies the device in the system, for example, `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It's `Hardware Ids` in the Device Manager. <br>**Note**: Hardware ID isn't unique; different devices might share the same value.<p>**FriendlyNameId**: It's a string attached to the device, for example, `Generic Flash Disk USB Device`. It's the `Friendly name` in the Device Manager. <p>**BusId**: For example, USB, SCSI <p>**SerialNumberId**: You can find SerialNumberId from `Device instance path` in the Device Manager, for example, `03003324080520232521` is SerialNumberId in USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID**: Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcard. To transform `Device instance path` to Vendor ID and Product ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers). For example: <br>`0751_55E0`: match this exact VID/PID pair<br>`_55E0`: match any media with PID=55E0 <br>`0751_`: match any media with VID=0751 <p> **Note**: See [How do I find the media property in the Device Manager?](device-control-removable-storage-access-control-faq.md#how-do-i-find-the-media-property-in-the-device-manager) to understand how to find the property in Device Manager.|
-|**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.|
-
-### Access Control policy
-
-You can use the following properties to create the access control policy:
-
-| Property Name | Description | Options |
-|---|---|---|
-| **PolicyRule Id** | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | |
-| **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| **ExcludedIDList** | The group(s) that the policy won't be applied to. | The Group ID/GUID must be used at this instance. |
-| **Entry Id** | One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| |
-| **Type** | Defines the action for the removable storage groups in IncludedIDList. <p>Enforcement: Allow or Deny <p>Audit: AuditAllowed or AuditDenied<p> | Allow<p>Deny <p>AuditAllowed: Defines notification and event when access is allowed <p>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.<p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
-| **Sid** | Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine. |  |
-| **ComputerSid** | Local computer Sid or computer Sid group or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry. |  |
-| **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system won't send event. <p>8: capture file information and have a copy of the file as evidence for Write access. <p>16: capture file information for Write access. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system won't show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
-|AccessMask|Defines the access. | **Disk level access**: <p>1: Read <p>2: Write <p>4: Execute <p>**File system level access**: <p>8: File system Read <p>16: File system Write <p>32: File system Execute <p><p>You can have multiple access by performing binary OR operation, for example, the AccessMask for Read and Write and Execute will be 7; the AccessMask for Read and Write will be 3.|
-
 ## Licensing requirements
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control through group policy, you must have Microsoft 365 E5.
 
 ## Deploy using group policy
 
 1. Enable or Disable Removable Storage Access Control:
 
-   You can enable Device control as follows:
+   You can enable or disable Device control as follows:
 
    - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Features** > **Device Control**.
    - In the **Device Control** window, select **Enabled**.
@@ -89,80 +65,105 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Screenshot of setting Default Enforcement = Deny using Group Policy" lightbox="images/set-default-enforcement-deny-gp.png":::
 
-3. Audit Default Deny:
 
-   Use the following XML data to create Audit policy for Default Deny:
+3. Create one XML file for removable storage group(s):
 
-   :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Screenshot of audit default deny xml data":::
-
-4. ReadOnly - Group:
-
-   Use the following XML data to create removable storage group with ReadOnly access:
-
-   :::image type="content" source="images/read-only-group-gp.png" alt-text="Screen shot of Read only removable storage group xml data":::
-
-5. ReadOnly - Policy:
-
-   Use the following XML data to create ReadOnly policy and apply to the ReadOnly removable storage group to allow read activity:
-
-    :::image type="content" source="images/read-only-policy-gp.png" alt-text="Screenshot of Read only policy xml data." lightbox="images/read-only-policy-gp.png":::
-
-6. Create a group for allowed Media:
-
-   Use the following XML data to create removable storage allowed media group:
-
-   :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="Screenshot of xml data for creating group for allowed medias" lightbox="images/create-group-allowed-medias-gp.png":::
-
-7. Create a policy to allow the approved USB Group:
-
-   Use the following XML data to create a policy to allow the approved USB group:
-
-   :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Screenshot of XML data to create policy to allow the approved USB Group using Group Policy" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
-
-   What does '47' mean in the policy? It's 9 + 2 + 36 = 47:
-
-   - Read access: 1+8 = 9.
-   - Write access: disk level 2.
-   - Execute: 4 + 32 = 36.
-
-8. Combine groups into one XML file:
-
-   You can combine device control policy groups into one XML file as follows:
+   Use the properties in [Removable storage group](tbd) to create a XML for Removable storage group(s), save the XML file to network share, and devlier the setting setting as follows:
 
    - Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define device control policy groups**.
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Screenshot of Define device control policy groups" lightbox="images/define-device-control-policy-grps-gp.png":::
 
-   - In the **Define device control policy groups** window, specify the file path containing the XML groups data.
+   - In the **Define device control policy groups** window, specify the network share file path containing the XML groups data.
 
-     XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml>
+> [!NOTE]
+> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
-     The following is the device control policy groups xml schema:
+4. Create one XML file for access policy rule(s):
 
-     :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="Screenshot of combine groups into one XML file":::
-
-9. Combine policies into one XML file:
-
-   You can combine device control policy rules into one XML file as follows:
+   Use the properties in [removable storage access policy rule(s)](tbd) to create a XML for each group's removable storage access policy rule, save the XML file to network share, and devlier the setting setting as follows:
 
    - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Device Control** > **Define device control policy rules**.
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Screenshot of define device control policy rules" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
-   - In the **Define device control policy rules** window, select **Enabled**, and enter the file path containing the XML rules data.
+   - In the **Define device control policy rules** window, select **Enabled**, and enter the network share file path containing the XML rules data.
 
-     XML file path: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml>
+> [!NOTE]
+> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
-     The following is the device control policy rules xml schema:
+5. Set location for a copy of the file (evidence):
 
-    :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="Screenshot of combine policies into one XML file":::
-
-10. Set location for a copy of the file (evidence):
-
-    If you want to have a copy of the file (evidence) when Write access happens, specify the location where system can save the copy.
+    If you want to have a copy of the file (evidence) when Write access happens, set right **Options** in your removable storage access policy rule in the XML file, and then specify the location where system can save the copy.
 
     - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Device Control** > **Define Device Control evidence data remote location**.
 
     - In the **Define Device Control evidence data remote location** pane, select **Enabled**, and then specify the local or network share folder path.
 
       :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Screenshot of Define Device Control evidence data remote location." lightbox="images/evidence-data-remote-location-gp.png":::
+      
+      
+## Scenarios
+
+To help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control, we have put together some common scenarios for you to follow. In following samples, we do not use 'Default Enforcement' because the 'Default Enforcement' will apply to both removable storage and printer.
+
+### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
+For this scenario, you will need to create two groups - a group for any removable storage and another group for approved USBs - and two policies - one policy to deny Write and Execute acess for any removable storage group and the other policy to audit the approved USBs group.
+
+1. Create groups
+
+    1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
+    ![image](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+
+    2. Group 2: Approved USBs based on device properties. An example for this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
+    
+    Combine those two groups into one XML file, here is the sample [Demo_Groups.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml) file. Take the step 3 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
+
+    > [!TIP]
+    > Replace `&` with `&amp;` in the value.
+
+2. Create policy
+
+    1. Policy 1: Block Write and Execute access to any removable storage group but allow approved USBs. An example for this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188237490-d736ace1-4912-4788-9e94-3fc506692a41.png)
+
+
+    2. Policy 2: Audit Write and Execute access for allowed USBs. An example for this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188237598-b28dd534-9ea4-4cdd-832b-afff50f9897b.png)
+    What does '54' mean in the policy? It's 18 + 36 = 54:
+       - Write access: disk level 2 + file system level 16 = 18.
+       - Execute: disk level 4 + file system level 32 = 36.
+
+    Combine those two policy rules into one XML file, here is the sample [Scenario 1 GPO Policy - Prevent Write and Execute access to all but allow specific approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml) file. Take the step 4 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
+
+### Scenario 2: Audit Write and Execute access to all but block specific unallowed USBs
+For this scenario, you will need to create two groups - a group for any removable storage and another group for unallowed USBs - and two policies - one policy to audit Write and Execute acess for any removable storage group and the other policy to deny the unallowed USBs group.
+
+1. Create groups
+
+    1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
+    ![image](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+
+    2. Group 2: Unallowed USBs based on device properties. An example for this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
+    
+    Combine those two groups into one XML file, here is the sample [Demo_Groups.xml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml) file. Take the step 3 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
+
+    > [!TIP]
+    > Replace `&` with `&amp;` in the value.
+
+2. Create policy
+
+    1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example of this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188239025-218a1985-b198-4f7e-b323-b4b6fb7e274e.png)
+
+
+    2. Policy 2: Audit Write and Execute access to others. An example of this use case is:
+    ![image](https://user-images.githubusercontent.com/81826151/188239144-3e6a2781-6927-487a-aa01-498a0904ad98.png)
+    What does '54' mean in the policy? It's 18 + 36 = 54:
+       - Write access: disk level 2 + file system level 16 = 18.
+       - Execute: disk level 4 + file system level 32 = 36.
+
+    Combine those two policy rules into one XML file, here is the sample [Scenario 2 GPO Policy - Audit Write and Execute access to all but block specific unapproved USBs](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%202%20GPO%20Policy%20-%20Audit%20Write%20and%20Execute%20access%20to%20all%20but%20block%20specific%20unapproved%20USBs.xml) file. Take the step 4 in above **Deploy Removable Storage Access Control by using group policy** section to deploy this configuration.
+
