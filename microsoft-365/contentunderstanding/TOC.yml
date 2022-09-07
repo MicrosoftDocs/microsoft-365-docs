@@ -28,6 +28,8 @@
                   href: apply-a-model.md
                 - name: Share an enterprise model 
                   href: model-discovery.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
                 - name: Apply a sensitivity label 
@@ -85,20 +87,16 @@
                 - name: Overview 
                   href: form-processing-overview.md
                 - name: Train your model
-                  items:
-                    - name: Train the model 
-                      href: create-a-form-processing-model.md
+                  href: create-a-form-processing-model.md
 
             - name: Extract by text pattern and layout
               items:
                 - name: Overview 
                   href: extract-by-text-pattern-and-layout-overview.md
                 - name: Train your model
-                  items:
-                    - name: Train the model 
-                      href: create-extract-by-text-pattern-and-layout-model.md
+                  href: create-extract-by-text-pattern-and-layout-model.md
 
-    - name: Trained models
+    - name: Prebuilt models
       items:
             - name: Overview 
               href: prebuilt-overview.md
