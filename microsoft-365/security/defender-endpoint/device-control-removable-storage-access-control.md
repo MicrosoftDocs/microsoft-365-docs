@@ -92,7 +92,8 @@ You can use the following properties to create the access control policy:
 |AccessMask|Defines the access. | **Disk level access**: <p>1: Read <p>2: Write <p>4: Execute <p>**File system level access**: <p>8: File system Read <p>16: File system Write <p>32: File system Execute <p><p>You can have multiple access by performing binary OR operation, for example, the AccessMask for Read and Write and Execute will be 7; the AccessMask for Read and Write will be 3.|
 
 For specific guidance, see:
-|Topic|Description|
+
+| Topic | Description |
 |---|---|
 | [Deploying Removable Storage Access Control by using Group Policy](deploy-manage-removable-storage-group-policy.md) | Use Group Policy to deploy the policy.|
 | [Deploying Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md) | Use Intune to deploy the policy.|
