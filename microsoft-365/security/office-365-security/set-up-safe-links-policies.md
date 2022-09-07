@@ -35,7 +35,7 @@ ms.service: microsoft-365-security
 
 Safe Links in [Microsoft Defender for Office 365](defender-for-office-365.md) provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links.md).
 
-Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in custom Safe Links  or Standard or Strict preset security policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 You can also use the procedures in this article to create Safe Links policies that apply to specific users, group, or domains.
 
@@ -116,8 +116,8 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
    > [!IMPORTANT]
    > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
-   > - The recipient is: romain@contoso.com
-   > - The recipient is a member of: Executives
+   > - Users: romain@contoso.com
+   > - Groups: Executives
    >
    > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
    >

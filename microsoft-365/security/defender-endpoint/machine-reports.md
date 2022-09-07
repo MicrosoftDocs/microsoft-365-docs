@@ -1,6 +1,6 @@
 ---
-title: Device health and compliance report in Microsoft Defender for Endpoint
-description: Use the device health and compliance report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
+title: Device health report in Microsoft Defender for Endpoint
+description: Use the device health report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -11,24 +11,28 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
-ms.date: 09/01/2022 
+ms.date: 09/06/2022 
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+ms.reviewer: mkaminska
 ---
 
 # Device health and compliance report in Microsoft Defender for Endpoint
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
+The Device Health report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
 
 > [!IMPORTANT]
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
@@ -41,7 +45,7 @@ The Device health and compliance dashboard is structured in two tabs:
   - [Operating systems and platforms card](#operating-systems-and-platforms-card)
   - [Windows 10 versions card](#windows-10-versions-card)
 
-- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus:
+- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus (MDAV):
   - [Antivirus mode card](#antivirus-mode-card)
   - [Antivirus engine version card](#antivirus-engine-version-card)
   - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
@@ -164,7 +168,7 @@ Up to date reporting generates information for devices that meet the following c
 - Cloud protection enabled
 - Windows OS*
 
-*Currently up to date reporting is only available for windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
+*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under “No data available”/Unknown
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -185,7 +189,7 @@ To add or remove specific types of information on the **Microsoft Defender Antiv
 
 #### New Microsoft Defender Antivirus filter definitions
 
-The following table contains a list terms that are new to Microsoft Defender Antivirus reporting.
+The following table contains a list of terms that are new to Microsoft Defender Antivirus reporting.
 
 | Column name | Description |
 |:---|:---|
@@ -219,7 +223,7 @@ For information on exporting using API, see the following articles:
 
 > [!IMPORTANT]
 >
-> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
+> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is only available in public preview.
 >
 > **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
 
@@ -299,12 +303,12 @@ For more information on the current versions and how to update the different Mic
 
 The up-to-date cards show the up-to-date status for **Antivirus engine**, **Antivirus platform**, and **Security intelligence** update versions. There are three possible states: _Up to date_ (‘True’), _out of date_ (‘False’), and _no data available_ (‘Unknown’).
 
-Definitions for _up-to-date_, _out-of-date_, and _no_data_available_ are provided for each card below.
+Definitions for  _Up to date_, out of date_, and _no data available_ are provided for each card below.
 
-Microsoft Defender Antivirus (MDAV) make up-to-date reports makes determinations based on the following criteria:
+The MDAV reports make up-to-date determinations and reports based on the following criteria:
 
-- **For engine & platform updates**: the time client events were last received for up to date reports (“Signature Refresh time”) and Security Intelligence Publish Time (security intelligence VDMs are also used to determine engine & platform versions)
-- **For security intelligence updates**: the time client events were last received for up to date reports (“Signature Refresh time”), Security Intelligence Publish Time, and the last up-to-date status communicated from client
+- **For engine & platform updates**: "Signature Refresh Time" (the time client events were last received for up to date reports) and "Security Intelligence Publish Time" (security intelligence VDMs are used to determine engine & platform versions)
+- **For security intelligence updates**: "Signature Refresh Time" (the time client events were last received for up to date reports), Security Intelligence Publish Time, and the last up-to-date status communicated from client
 
 For more information about the aforementioned terms, refer back to the section: [New Microsoft Defender Antivirus filter definitions](#new-microsoft-defender-antivirus-filter-definitions)
 
@@ -319,18 +323,24 @@ For more information about the aforementioned terms, refer back to the section: 
 > - Cloud protection enabled
 > - Windows OS*
 >
->*Currently up to date reporting is only available for windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
+>*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
 >
 
-##### Up-to-date examples
+##### Up-to-date definitions
+
+Following are up-to-date definitions for engine and platform:
 
 | The engine/platform on the device is considered: | If: |
 |:---|:---|
 | **up-to-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days and the Engine or Platform version build time is within last 60 days. |
-| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 but Engine or Platform version build time is older than 60 days. |
+| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days but Engine or Platform version build time is older than 60 days. |
 | **unknown (no data available)** | the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days, or the security intelligence publish time is greater than 7 days. |
 
-**The security intelligence update is considered up-to date** If the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days
+Following are up-to-date definitions for security intelligence:
+
+| The security intelligence update is considered | If: |
+|:---|:---|
+|Up-to date | the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days. |
 
 For more information on these, see:
 
@@ -342,13 +352,13 @@ For more information on these, see:
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
 
-**The general definition of ‘_Up to date_’** - the engine version on the device is the most recent engine release (the Engine is _usually_ released monthly, via Windows Update (WU)). There's a three-day grace period from the day when Windows Update (WU) is released.
+**The general definition of ‘_Up to date_’** - The engine version on the device is the most recent engine release. The engine is _usually_ released monthly, via Windows Update (WU)). There is a three-day grace period given from the day when Windows Update (WU) is released.
 
-The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received, and security intelligence publish time.  
+The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received and security intelligence publish time.  
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | _Up to date/ Out of Date/ Unknown (whatever client reports)_ |
+| < 7 days (new) | < 7 days (new) | _Up to date <br/> Out of date <br/> Unknown (whatever client reports)_ |
 | > 7 days (old) | > 7 days (old) | _Unknown_ |
 | < 7 days (new) | > 7 days (old) | _Unknown_ |
 | > 7 days (old) | < 7 days (new) | _Unknown_ |
@@ -359,13 +369,13 @@ For information about Manage Microsoft Defender Antivirus update versions, see:�
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
 
-**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update). There's a three-day grace period from the day when WU is released.
+**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release. Platform is usually released monthly, via Windows Update). There is a three-day grace period from the day when WU is released.
 
-The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received, and security intelligence publish time.
+The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received and security intelligence publish time.
 
 | Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | _Up to date/ Out of Date/ Unknown (whatever client reports)_ |
+| < 7 days (new) | < 7 days (new) | _Up to date <br/> Out of date <br/> Unknown (whatever client reports)_ |
 | > 7 days (old) | > 7 days (old) | _Unknown_ |
 | < 7 days (new) | > 7 days (old) | _Unknown_ |
 | > 7 days (old) | < 7 days (new) | _Unknown_ |
@@ -378,18 +388,18 @@ This card identifies devices that have security intelligence versions that are u
 
 **The general definition of ‘Up to date’** – the security intelligence version on the device was written in the past 7 days.
 
-The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, and security intelligence publish time.
+The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, the security intelligence publish time, and the last status received from client.
 
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
-|:----|:----|:----|
+| Event’s Last Refresh Time <br/> (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last status received from client | _Reported Status_: |
+|:----|:----|:----|:----|
 | >7 days (old) | >7 days (old) | Up to date | _Unknown_ |
-| <7 days (new) | >7 days (old) | Up to Date | _Unknown_ |
+| <7 days (new) | >7 days (old) | Up to date | _Unknown_ |
 | >7 days (old) | <7 days (new) | Up to date |  _Unknown_ |
 | <7 days (new) | <7 days (new) | Unknown | _Unknown_|
-| <7 days (new) | <7 days (new) | Up to Date | _Up to Date_ |
-| >7 days (old) | <7 days (new) | Out of date | _Out of Date_ |
-| >7 days (old) | >7 days (old) | Out of date | _Out of Date_ |
-| <7 days (new) | >7 days (old) | Out of Date | _Out of Date_ |
+| <7 days (new) | <7 days (new) | Up to date | _Up to date_ |
+| >7 days (old) | <7 days (new) | Out of date | _Out of date_ |
+| >7 days (old) | >7 days (old) | Out of date | _Out of date_ |
+| <7 days (new) | >7 days (old) | Out of date | _Out of date_ |
 
 ## See also
 

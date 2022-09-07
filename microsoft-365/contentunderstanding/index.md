@@ -9,7 +9,7 @@ ms.topic: landing-page
 ms.custom: 
 - intro-overview
 - intro-get-started
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic

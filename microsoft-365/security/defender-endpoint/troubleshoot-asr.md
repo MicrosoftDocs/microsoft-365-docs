@@ -3,7 +3,7 @@ title: Troubleshoot problems with attack surface reduction rules
 description: Resources and sample code to troubleshoot issues with attack surface reduction rules in Microsoft Defender for Endpoint.
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.date: 03/27/2019
 ms.reviewer:
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ---

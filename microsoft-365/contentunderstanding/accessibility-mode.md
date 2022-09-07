@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.localizationpriority:  medium
 description: Learn how to use accessibility features mode when training and working with models in SharePoint Syntex.

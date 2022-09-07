@@ -2,8 +2,8 @@
 title: Switch to Microsoft Defender for Endpoint - Onboard
 description: Make the switch to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
 keywords: migration, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

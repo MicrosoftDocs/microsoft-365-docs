@@ -1,7 +1,7 @@
 ---
 title: Identity and device access policies for allowing guest and external user B2B access - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the recommended Conditional Access and related policies for protecting access of guests and external users.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 ms.author: dansimp
 author: dansimp
@@ -20,7 +20,7 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - highpri
-ms.technology: mdo
+ms.subservice: mdo
 ---
 
 # Policies for allowing guest access and B2B external user access
