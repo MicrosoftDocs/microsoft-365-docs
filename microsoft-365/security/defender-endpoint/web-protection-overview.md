@@ -3,7 +3,7 @@ title: Web protection
 description: Learn about the web protection in Microsoft Defender for Endpoint and how it can protect your organization
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Web protection
@@ -28,9 +28,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
 
 ## About web protection
 
@@ -47,6 +45,17 @@ Web threat protection includes:
 - Comprehensive visibility into web threats affecting your organization.
 - Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the devices that access these URLs.
 - A full set of security features that track general access trends to malicious and unwanted websites.
+
+> [!NOTE]
+> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+>
+> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
+> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+> - Full URL path blocks can be applied for unencrypted URLs.
+>
+> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
 For more information, see [Web threat protection](web-threat-protection.md).
 

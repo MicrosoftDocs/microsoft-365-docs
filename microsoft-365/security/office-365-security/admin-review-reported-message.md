@@ -12,8 +12,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Learn how to review messages that are reported and give feedback to your users.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Admin review for reported messages

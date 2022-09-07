@@ -17,8 +17,8 @@ ms.collection:
   - M365-security-compliance
 description: Integrate your organization's SIEM server with Microsoft Defender for Office 365 and related threat events in the Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # SIEM integration with Microsoft Defender for Office 365

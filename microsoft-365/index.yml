@@ -8,7 +8,7 @@ brand: m365
 metadata:
   title: Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find the solutions, scenarios, and resources you need to get started with Microsoft 365, including Office, for your business or organization. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: o365-solutions #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-enterprise #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: m365-security-compliance
   ms.custom: intro-hub-or-landing
@@ -164,12 +164,12 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
       links:
+        - url: frontline/index.yml 
+          text: Microsoft 365 for frontline organizations
         - url: solutions/financial-services-secure-collaboration.md
           text: Security and compliance for financial services
         - url: solutions/energy-secure-collaboration.md
           text: Security and compliance for energy and utility services
-        - url: frontline/teams-in-hc.md
-          text: Teams for Healthcare organizations
         - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
           text: Teams for Education
         - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
@@ -247,7 +247,7 @@ additionalContent:
           links:
             - text: Plan, deploy, and manage
               url: /onedrive/onedrive
-            - text: More OneDrive >
+            - text: More >
               url: /onedrive              
         # Card
         - title: Outlook and Exchange
@@ -256,7 +256,7 @@ additionalContent:
               url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
             - text: Exchange Online
               url: /Exchange/exchange-online
-            - text: More Exchange > 
+            - text: More > 
               url: /Exchange
         # Card
         - title: Planner and Project
@@ -271,15 +271,15 @@ additionalContent:
         - title: Microsoft Viva
           links:
             - text: Microsoft Viva Topics
-              url: /microsoft-365/knowledge/
+              url: /viva/topics/
             - text: Microsoft Viva Insights
               url: /insights/viva-teams-app
             - text: Microsoft Viva Connections
-              url: /viva/connections/
+              url: /viva/connections/viva-connections-overview
             - text: Microsoft Viva Learning
-              url: /microsoft-365/learning/
-            - text: More Microsoft Viva >
-              url: /microsoft-365/viva/
+              url: /viva/learning/
+            - text: More >
+              url: /viva/
         # Card
         - title: More apps and services
           links:
