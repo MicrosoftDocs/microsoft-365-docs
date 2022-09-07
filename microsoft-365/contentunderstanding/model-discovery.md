@@ -17,7 +17,7 @@ description: Learn how to make trained models available to other users and how t
 
 # Share an enterprise model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 You can make your trained enterprise models available for others to view and use directly from a SharePoint document library. 
 
