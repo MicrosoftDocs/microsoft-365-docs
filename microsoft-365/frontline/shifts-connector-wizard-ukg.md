@@ -197,9 +197,9 @@ To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then t
 ## Manage your connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you can manage it in the Microsoft 365 admin center. The Manage Shifts connectors page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md).
+After a connection is set up, you can manage it in the Microsoft 365 admin center. The Manage Shifts connectors page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md).
 
-You can also use PowerShell to manage a connection. For example, you can update sync settings, team mappings, and disable sync. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
+You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 ## Related articles
 

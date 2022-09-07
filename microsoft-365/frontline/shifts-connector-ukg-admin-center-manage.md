@@ -31,7 +31,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
-This article assumes that you've already set up a connection to UKG Dimensions, either by using the wizard or PowerShell.
+This article assumes that you've already set up a connection, either by using the wizard or PowerShell.
 
 ## Manage your connection
 
