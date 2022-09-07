@@ -2,8 +2,8 @@
 title: Configure and validate Microsoft Defender Antivirus network connections
 description: Configure and test your connection to the Microsoft Defender Antivirus cloud protection service.
 keywords: antivirus, Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security

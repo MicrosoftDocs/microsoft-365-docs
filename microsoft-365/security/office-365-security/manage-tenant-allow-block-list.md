@@ -15,8 +15,8 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Manage your allows and blocks in the Tenant Allow/Block List
