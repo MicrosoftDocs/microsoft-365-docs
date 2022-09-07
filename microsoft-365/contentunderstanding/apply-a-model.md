@@ -17,7 +17,7 @@ description: Learn how to apply a published a model to a SharePoint document lib
 
 # Discover and apply a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 <!---
 </br>
@@ -27,7 +27,7 @@ description: Learn how to apply a published a model to a SharePoint document lib
 </br>
 --->
 
-After you train a **Classify and extract by text pattern** model or after you publish an  **Extract by layout** or **Extract by text pattern and layout** model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
+After you train a **Classify and extract by text pattern** model, publish an  **Extract by layout** or **Extract by text pattern and layout** model, or create a prebuilt model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
 
 This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the content center. A local model is created and trained locally on your own SharePoint site.  
 
@@ -36,7 +36,7 @@ This article applies to both *enterprise models* and *local models*. An enterpri
 
 ## Apply your model to a document library
 
-To apply your model to a SharePoint document library:
+You can apply a model for different places, including the model home page or from the list of available models. To apply your model to a SharePoint document library:
 
 1. On model home page, on the **Apply model to libraries** tile, select **Apply model**. Or, in the **Where the model is applied** section, select **Add library**.
 
@@ -57,7 +57,7 @@ To apply your model to a SharePoint document library:
 
     ![Screenshot of the Advanced settings showing the library views.](../media/content-understanding/library-view.png)
 
-    For more information, see [Change the view in a document library](#change-the-view-in-a-document-library) later in this article.
+    For more information, see [Choose the view in a document library](choose-library-view).
 
 5. Select **Add** to apply the model to the library.
 
