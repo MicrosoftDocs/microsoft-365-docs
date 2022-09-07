@@ -36,14 +36,12 @@ After a connection is set up, you can manage it in the Microsoft 365 admin cente
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md) or [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
-This article assumes that you've already set up a connection, either by using the wizard or PowerShell.
-
 ## Manage your connection
 
 1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
-2. Select **Manage Shifts connectors**, and then choose **Manage**. Keep in mind that this option is available only if you've set up at least one connection.
+2. Select **Manage Shifts connectors**, and then choose **Manage**. Keep in mind that this option is available only if you've set up at least one connection, either using the wizard or PowerShell.
 
-    Here, you'll see a list of all the connections you've set up through the wizard and PowerShell, along with information about each one.
+    Here, you'll see a list of all the connections you've set up through the wizard or PowerShell, along with information about each one.
 
     :::image type="content" source="media/shifts-connector-wizard-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-wizard-ukg-manage.png":::
 
