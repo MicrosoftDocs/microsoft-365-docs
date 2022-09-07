@@ -274,6 +274,22 @@
        href: detect-and-remediate-outlook-rules-forms-attack.md
      - name: Handle false positives/negatives
        href: air-report-false-positives-negatives.md
+     - name: Report messages and files to Microsoft
+       items:
+         - name: How do I report a suspicious email or file to Microsoft
+           href: report-junk-email-messages-to-microsoft.md
+         - name: Admin submissions
+           href: admin-submission.md
+         - name: Enable the Report Message and the Report Phishing add-ins
+           href: enable-the-report-message-add-in.md
+         - name: Report false positives and false negatives in Outlook
+           href: report-false-positives-and-false-negatives.md
+         - name: User reported message settings
+           href: user-submission.md
+         - name: Use mail flow rules to see what users are reporting to Microsoft
+           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+         - name: Submit malware and non-malware to Microsoft
+           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
      - name: Admin review for reported messages
        href: admin-review-reported-message.md
      - name: Recover from a ransomware attack
@@ -400,14 +416,6 @@
            href: address-compromised-users-quickly.md
          - name: Integrate AIR with a custom solution or third-party solution
            href: air-custom-reporting.md
-   - name: FAQ
-     items:
-     - name: Delegated administration FAQ
-       href: delegated-administration-faq.yml
-     - name: EOP general FAQ
-       href: eop-general-faq.yml
-     - name: EOP queued, deferred, and bounced messages FAQ
-       href: eop-queued-deferred-and-bounced-messages-faq.yml
    - name: Step-by-step guides  
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
@@ -464,7 +472,7 @@
        href: troubleshooting-mail-sent-to-office-365.md
      - name: Anti-spam message headers
        href: anti-spam-message-headers.md
-     - name: "Reference:Policies, practices, and guidelines"
+     - name: Policies, practices, and guidelines
        href: reference-policies-practices-and-guidelines.md
      - name: Sending mail to Office 365
        href: sending-mail-to-office-365.md
@@ -474,6 +482,14 @@
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: Monitor for leaks of personal data
        href: monitor-for-leaks-of-personal-data.md
+     - name: FAQ
+       items:
+       - name: Delegated administration FAQ
+         href: delegated-administration-faq.yml
+       - name: EOP general FAQ
+         href: eop-general-faq.yml
+       - name: EOP queued, deferred, and bounced messages FAQ
+         href: eop-queued-deferred-and-bounced-messages-faq.yml
    - name: Microsoft 365 Defender docs
      items:
        - name: Microsoft 365 Defender
@@ -488,23 +504,6 @@
          href: ../defender-business/index.yml
        - name: Defender Vulnerability Management
          href: ../defender-vulnerability-management/index.yml
-
-   - name: Report messages and files to Microsoft
-     items:
-         - name: How do I report a suspicious email or file to Microsoft
-           href: report-junk-email-messages-to-microsoft.md
-         - name: Admin submissions
-           href: admin-submission.md
-         - name: Enable the Report Message and the Report Phishing add-ins
-           href: enable-the-report-message-add-in.md
-         - name: Report false positives and false negatives in Outlook
-           href: report-false-positives-and-false-negatives.md
-         - name: User reported message settings
-           href: user-submission.md
-         - name: Use mail flow rules to see what users are reporting to Microsoft
-           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-         - name: Submit malware and non-malware to Microsoft
-           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
 
    - name: Parking lot items
      items:
