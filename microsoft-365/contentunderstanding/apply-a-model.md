@@ -27,9 +27,9 @@ description: Learn how to apply a published a model to a SharePoint document lib
 </br>
 --->
 
-After you train a **Classify and extract by text pattern** model, publish an  **Extract by layout** or **Extract by text pattern and layout** model, or create a prebuilt model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
+After you train a **Classify and extract by text pattern** model, train and publish an  **Extract by layout** or **Extract by text pattern and layout** model, or create a prebuilt model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
 
-This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the content center. A local model is created and trained locally on your own SharePoint site.  
+This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the content center. A [local model](create-local-model.md) is created and trained locally on your own SharePoint site.  
 
 > [!NOTE]
 > You can apply the model only to document libraries to which you have access.
@@ -57,7 +57,7 @@ You can apply a model for different places, including the model home page or fro
 
     ![Screenshot of the Advanced settings showing the library views.](../media/content-understanding/library-view.png)
 
-    For more information, see [Choose the view in a document library](choose-library-view).
+    For more information, see [Choose the view in a document library](choose-library-view.md).
 
 5. Select **Add** to apply the model to the library.
 
