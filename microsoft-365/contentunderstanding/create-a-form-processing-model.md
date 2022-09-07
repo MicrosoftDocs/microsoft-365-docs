@@ -1,5 +1,5 @@
 ---
-title: Build an Extract by layout model in Microsoft SharePoint Syntex
+title: Train an Extract by layout model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,10 +13,10 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to create an Extract by layout model in SharePoint Syntex.
+description: Learn how to train an Extract by layout model in SharePoint Syntex.
 ---
 
-# Build an Extract by layout model in Microsoft SharePoint Syntex
+# Train an Extract by layout model in Microsoft SharePoint Syntex
 
 <!---
 </br>

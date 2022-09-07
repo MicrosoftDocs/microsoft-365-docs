@@ -1,5 +1,5 @@
 ---
-title: Create an Extract by text pattern and layout model in Microsoft SharePoint Syntex
+title: Train an Extract by text pattern and layout model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,10 +13,10 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to create an Extract by text pattern and layout model in SharePoint Syntex.
+description: Learn how to train an Extract by text pattern and layout model in SharePoint Syntex.
 ---
 
-# Create an Extract by text pattern and layout model in Microsoft SharePoint Syntex
+# Train an Extract by text pattern and layout model in Microsoft SharePoint Syntex
 
 SharePoint Syntex uses [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—to create an **Extract by text pattern and layout** model directly from a SharePoint document library. In AI Builder, both the **Extract by text pattern and layout** model and the **Extract by text pattern and layout** model are referred to as *document processing* models.
 
