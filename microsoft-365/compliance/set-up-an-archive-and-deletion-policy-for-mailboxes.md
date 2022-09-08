@@ -64,7 +64,7 @@ You can follow some or all of the steps in this article to set up an archive and
 
 The first step is to ensure each user in your organization has an archive mailbox. A user's archive mailbox must be enabled so that a retention tag with a "Move to Archive" retention action can move the item after the retention age expires.
 
-For instructions to enable archive mailboxes, see [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md).
+For instructions to enable archive mailboxes, see [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > You can enable archive mailboxes any time during this process, just as long as they're enabled at some point before you complete the process. If an archive mailbox isn't enabled, no action is taken on any items that have an archive or deletion policy assigned to it.
