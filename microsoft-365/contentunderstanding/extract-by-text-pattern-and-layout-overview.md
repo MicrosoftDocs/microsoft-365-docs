@@ -42,5 +42,5 @@ You can only create an **Extract by text pattern and layout** model in SharePoin
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#extract-by-text-pattern-and-layout). 
 

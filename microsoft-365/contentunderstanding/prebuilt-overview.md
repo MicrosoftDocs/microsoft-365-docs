@@ -40,7 +40,7 @@ Additional prebuilt models will be available in future releases.
 
 ## Requirements
 
-See [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
 
 
 <!---

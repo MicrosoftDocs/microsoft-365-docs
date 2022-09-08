@@ -48,7 +48,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#classify-and-extract-by-text-pattern).
 
 <!---
 ## File limitations

@@ -42,7 +42,7 @@ You can only create an **Extract by layout** model in SharePoint document librar
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#extract-by-layout).
 
 <!---
 ## File limitations
