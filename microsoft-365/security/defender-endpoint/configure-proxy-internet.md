@@ -70,8 +70,7 @@ Configure a registry-based static proxy for Defender for Endpoint detection and 
 >
 > These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
 
-The static proxy is configurable through group policy (GP), both the settings under group policy values should be configured to the proxy server for using EDR. The group policy is available![image](https://user-images.githubusercontent.com/42802974/189094067-fd8d9139-10e0-45a1-a863-08d6e52aabae.png)
- in Administrative Templates.
+The static proxy is configurable through group policy (GP), both the settings under group policy values should be configured to the proxy server for using EDR. The group policy is available in Administrative Templates.
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
