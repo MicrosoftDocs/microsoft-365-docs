@@ -63,7 +63,7 @@ If you don't need to build a custom model, you can use a [prebuilt model](prebui
 | ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
 | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more](prebuilt-model-receipt.md) | 
 
-For more information about custom and rebuilt models, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
+For more information about custom and prebuilt models, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
 ## Content assembly
 
