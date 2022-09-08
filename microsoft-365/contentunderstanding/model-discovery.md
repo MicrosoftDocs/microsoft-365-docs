@@ -49,6 +49,7 @@ To make your trained model available for others to use:
 
 4. Select the sites where you want the model to be available for other users to apply, and then select **Save**.
 
+<!---
 ## Discover other trained models
 
 To find trained models that might be suitable for your content:
@@ -106,5 +107,5 @@ To remove an applied model from your document library:
 1. On the **Review models and apply new ones** page, on the **Applied** tab, see the models that have been applied to your library.
 
 2. On the model you want to remove, select **View model details**, and then select **Remove from library**.
-
+--->
 
