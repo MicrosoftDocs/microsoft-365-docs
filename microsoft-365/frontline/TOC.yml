@@ -87,7 +87,9 @@
           href: shifts-connector-wizard.md
         - name: Use PowerShell to set up a connection to Blue Yonder WFM
           href: shifts-connector-blue-yonder-powershell-setup.md
-        - name: Use PowerShell to manage your Shifts connection to Blue Yonder WFM
+        - name: Use the Microsoft 365 admin center to manage your connection to Blue Yonder WFM
+          href: shifts-connector-blue-yonder-admin-center-manage.md
+        - name: Use PowerShell to manage your connection to Blue Yonder WFM
           href: shifts-connector-powershell-manage.md
       - name: Connect Shifts to UKG Dimensions
         items:
@@ -95,7 +97,9 @@
           href: shifts-connector-wizard-ukg.md
         - name: Use PowerShell to set up a connection to UKG Dimensions
           href: shifts-connector-ukg-powershell-setup.md
-        - name: Use PowerShell to manage your Shifts connection to UKG Dimensions
+        - name: Use the Microsoft 365 admin center to manage your connection to UKG Dimensions
+          href: shifts-connector-ukg-admin-center-manage.md
+        - name: Use PowerShell to manage your connection to UKG Dimensions
           href: shifts-connector-ukg-powershell-manage.md
   - name: Digitized processes
     items: 

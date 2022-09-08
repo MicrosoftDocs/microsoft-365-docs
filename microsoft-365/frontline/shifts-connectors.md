@@ -94,7 +94,7 @@ For step-by-step guidance, see:
 
 After a connection is set up, you can update and change connection settings at any time, as needed. To learn more, see:
 
-- [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions]()
+- [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
 - [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
 
 As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
