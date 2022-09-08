@@ -19,9 +19,9 @@ You can set buffer time before appointments start, after appointments end, or bo
 
 ## Set buffer time defaults
 
-Buffer time defaults are set on the **Service details** page in Bookings. Like all service defaults set on this page, these defaults can be edited by you for a specific booking to meet specific customer needs.
+Buffer time defaults are set on the **Services** page in Bookings. Like all service defaults set on this page, these defaults can be edited by you for a specific booking to meet specific customer needs.
 
-The buffer time setting can be found on the **Service details** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
+The buffer time setting can be found on the **Add new service**/**Edit Service** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
 
    ![Image of Bookings with buffer time enabled.](../media/bookings-buffertime.png)
 
