@@ -46,6 +46,9 @@ Configuration to manage archive mailboxes is moving from the Microsoft 365 Purvi
 
 ### Use the new Exchange admin center to enable an archive mailbox
 
+[!NOTE]
+> When you enable the archive mailbox, items in the user's mailbox that are older than the archiving policy assigned to the mailbox will be moved to the new archive mailbox. The default archive policy that is part of the retention policy assigned to Exchange Online mailboxes moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
+
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
 2. In the list of mailboxes, select the user to enable their mailbox for archive.
