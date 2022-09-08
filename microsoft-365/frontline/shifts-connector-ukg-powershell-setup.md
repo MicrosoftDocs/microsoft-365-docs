@@ -107,7 +107,7 @@ You can use PowerShell or the Microsoft 365 admin center to manage and make chan
 
 To learn more, see:
 
-- [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
+- [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md)
 - [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md)
 
 ## Scripts

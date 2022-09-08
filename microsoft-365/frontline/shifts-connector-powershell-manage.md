@@ -26,6 +26,9 @@ The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#micr
 
 You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to set up a connection. After a connection is set up, you can manage it by using [Shifts connector PowerShell cmdlets](#shifts-connector-cmdlets).
 
+> [!NOTE]
+> You can also manage your connection in the Microsoft 365 admin center. For example, you can check the health status and access the wizard to change connection settings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+
 This article describes how to use PowerShell to do the following:
 
 - [Check connection setup status](#check-connection-setup-status)
@@ -36,9 +39,6 @@ This article describes how to use PowerShell to do the following:
 - [Disable sync for a connection](#disable-sync-for-a-connection)
 
 This article assumes that you've already set up a connection to Blue Yonder WFM, either by using the wizard or PowerShell.
-
-> [!NOTE]
-> You can also manage your connection in the Microsoft 365 admin center. For example, you can check the health status and access the wizard to change connection settings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
 
 ## Before you begin
 
