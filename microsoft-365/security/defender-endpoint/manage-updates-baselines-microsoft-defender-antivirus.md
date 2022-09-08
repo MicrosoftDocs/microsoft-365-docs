@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/15/2022
+ms.date: 09/06/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -785,6 +785,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220901.4</summary>
+
+&ensp;Package version: **20220901.4**<br/>
+&ensp;Platform version: **4.18.2205.7**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.373.1371.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220802.1</summary>
 
 &ensp;Package version: **20220802.1**<br/>

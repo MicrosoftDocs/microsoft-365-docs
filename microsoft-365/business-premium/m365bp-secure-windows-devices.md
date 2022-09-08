@@ -9,7 +9,8 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'O365E_BCSSetup4WindowsConfig'
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/16/2022
 ms.custom:
