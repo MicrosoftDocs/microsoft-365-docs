@@ -91,7 +91,7 @@ The static proxy is configurable through group policy (GP), both the settings un
 | Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> For example: ```10.0.0.6:8080``` (REG_SZ) |
 
 > [!NOTE]
-> If you are using 'TelemetryProxyServer' setting on devices that are **offline** and only Defender for Endpoint has access to cloud via configured proxy server, then it is recommended to implement the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
+> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, then it is recommended to add the additional registry setting `**PreferStaticProxyForHttpRequest**` with a value of `1`.<br>
 > Parent registry path location for `PreferStaticProxyForHttpRequest` is `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`<br>
 > To following command can be used to insert the registry value in the correct location:<br>
 > `reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f`
