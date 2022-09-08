@@ -195,12 +195,19 @@ To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then t
 ## Manage your connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you can manage it in the Microsoft 365 admin center. The Manage Shifts connectors page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+After a connection is set up, you can manage it in the Microsoft 365 admin center or by using PowerShell.
 
-You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+### Use the Microsoft 365 admin center
+
+The Connector Management page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings. 
+
+To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+
+### Use PowerShell
+
+You can use PowerShell to view an error report, change connection settings, disable sync, and more. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
 - [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
