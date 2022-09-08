@@ -101,8 +101,6 @@ A Success message on the screen indicates that your connection is successfully s
 
 ## If you need to make changes to a connection
 
-To make changes to a connection after it's set up, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md). For example, you can update sync settings, team mappings, and disable sync for a connection.
-
 You can use PowerShell or the Microsoft 365 admin center to manage and make changes to a connection after it's set up. For example, you can use PowerShell to update sync settings, team mappings, and disable sync for a connection. In the Microsoft 365 admin center, you can view information such as health status for all your connections and access the wizard to change connection settings.
 
 To learn more, see:
