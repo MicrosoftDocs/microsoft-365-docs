@@ -120,11 +120,13 @@ Frontline managers can:
 Frontline workers can:
 
 - See their own and their team's shifts and schedules in Shifts.
-- Request time off and view their team's open shifts in Shifts.
+- Request time off, view time off information, and view their team's open shifts in Shifts.
+- View and post timecard entries in Shifts.
+- Request open shifts and swap shifts in Shifts.
+- Set their availability in Shifts.
 
 The following actions are currently not supported:
 
-- Frontline workers set their availability in Shifts and view in UKG Dimensions.
 - Add, edit, delete, save, or publish shifts in Shifts.
 - Add, edit, delete, save, or publish time off in Shifts.
 - Add, edit, delete, save, or publish open shifts in Shifts.
