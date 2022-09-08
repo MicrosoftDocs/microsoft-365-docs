@@ -18,7 +18,7 @@ description: Learn how to create a content center in Microsoft SharePoint Syntex
 
 # Create a content center in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 <!---
 </br>
