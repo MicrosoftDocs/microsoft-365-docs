@@ -15,8 +15,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365
@@ -111,8 +111,8 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    > [!IMPORTANT]
    > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
-   > - The recipient is: romain@contoso.com
-   > - The recipient is a member of: Executives
+   > - Users: romain@contoso.com
+   > - Groups: Executives
    >
    > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
    >

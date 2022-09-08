@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 localization_priority: Normal
 ms.date: 07/19/2022
 search.appverid:

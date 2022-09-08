@@ -14,8 +14,8 @@ search.appverid:
 ms.collection:
   - M365-security-compliance
 description: Admins can learn how to allow or block URLs in the Tenant Allow/Block List in the Security portal.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Allow or block URLs using the Tenant Allow/Block List
@@ -76,10 +76,9 @@ For instructions, see [Report questionable URLs to Microsoft](admin-submission.m
 
 ### Use the Microsoft 365 Defender portal to create block entries for URLs in the Tenant Allow/Block List
 
-You create block entries for URLs directly in the Tenant Allow/Block List.
+You can create block entries for URLs directly in the Tenant Allow/Block List.
 
-> [!NOTE]
-> Email messages that contain these blocked URLs are blocked as *phishing*.
+Email messages that contain these blocked URLs are blocked as *high confidence phishing*.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -260,7 +259,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 3. On the **URLs** tab, do one of the following steps:
 
    - Select the check box of the entry that you want to remove, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-   - Select the entry that you want to remove by click anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+   - Select the entry that you want to remove by clicking anywhere in the row other than the check box. In the details flyout that appears, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 4. In the warning dialog that appears, click **Delete**.
 
@@ -366,7 +365,6 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `*.contoso.com`
 
 - **Block match**:
-  - contoso.com
   - xyz.abc.contoso.com
 
 - **Block not matched**:
