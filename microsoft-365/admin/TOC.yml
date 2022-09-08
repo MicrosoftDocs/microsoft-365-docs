@@ -352,7 +352,7 @@
              href: manage/servicenow-testing-the-configuration.md
            - name: Troubleshooting
              href: manage/servicenow-troubleshooting.md
-           - name: Enable Microsoft 365 support integration for ServiceNow
+           - name: Enable Virtual Agent
              href: manage/servicenow-support-integration.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
