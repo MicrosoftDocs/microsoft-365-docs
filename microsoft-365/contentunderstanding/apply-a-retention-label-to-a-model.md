@@ -17,7 +17,7 @@ description: Learn how to apply a retention label to a model in Microsoft ShareP
 
 # Apply a retention label to a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout &ensp;| &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout &ensp;| &ensp; &#10003; All prebuilt models</sup>
 
 <!---
 </br>
@@ -36,10 +36,10 @@ Retention labels let you apply retention settings to the documents that your mod
 
 You can apply a pre-existing retention label to your model through your model settings on your model's home page. 
 
-## Add a retention label to a Classify and extract by text pattern model or trained model
+## Add a retention label to a Classify and extract by text pattern model or prebuilt model
 
 > [!Important]
-> For retention labels to be available to apply to your **Classify and extract by text pattern** or trained models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
+> For retention labels to be available to apply to your **Classify and extract by text pattern** or prebuilt models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
 
 1. From the model home page, select **Model settings**.
 
@@ -56,7 +56,7 @@ After applying the retention label to your model, you're able to apply it to a:
  
 ### Apply the retention label to a document library to which the model is already applied
 
-If your **Classify and extract by text pattern** model or trained model has already been applied to a document library, you can do the following to sync your retention label update to apply it to the document library:
+If your **Classify and extract by text pattern** model or prebuilt model has already been applied to a document library, you can do the following to sync your retention label update to apply it to the document library:
 
 1. On your model home page, in the **Libraries with this model** section, select the document library to which you want to apply the retention label update.
 
