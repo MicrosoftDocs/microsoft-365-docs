@@ -73,6 +73,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF support](#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2208+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
+|[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: Rolling out to [Beta Channel](https://office.com/insider) |  Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review |
 
 ### Sensitivity label capabilities in Outlook
 
@@ -100,6 +101,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Under review | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2226+ | Rolling out: 4.2203+ | Under review |
+|[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
 
 **Footnotes:**
 
@@ -435,6 +437,53 @@ PDF scenarios not supported:
 For more information about this capability, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
 
 For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
+
+## Sensitivity bar
+
+Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions.
+
+For supported apps, sensitivity labels are now displayed in a sensitivity bar, displaying next to the file name on the top window bar.  For example:
+
+![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
+
+Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post, [Sensitivity label bar for Word, Excel, PowerPoint and Outlook for PC](https://techcommunity.com).
+
+As part of this high visibility, these labels also support colors. For more information, see the next section.
+
+### Label colors
+
+> [!IMPORTANT]
+> If your Office apps don't support this capability, they don't display the configured label colors.
+> 
+> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Word, Excel, and PowerPoint on Windows and macOS, but not Outlook or Office for the web. For more information, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+
+Newly created labels don't have a color by default. If your labels were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) or you configured label colors for the Azure Information Protection unified labeling client, these label colors are now displayed in apps that support them.
+
+Use the Microsoft Purview compliance portal to select one of 10 standard colors for sensitivity labels. This configuration is on the first page of the label configuration after the label name and description.
+
+You can't select colors for sublabels because they automatically inherit the label color from their parent label.
+
+If the label is configured for a different color from one of the 10 colors, you see a **Custom color** option selected and the standard color options aren't available:
+
+![Sensitivity label color configuration when the label has a custom color.](../media/label-custom-color-configuration.png)
+
+You can change the custom color to one of the standard colors by first removing the custom color selection, and then selecting one of the standard colors. But you can't use the compliance portal to configure a different custom color. Instead, use PowerShell, as described in the next section.
+
+#### Configuring custom colors by using PowerShell 
+
+You can use the [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) advanced setting **color** to set a color for a sensitivity label. This configuration supports colors that you can't configure in the Microsoft Purview compliance portal.
+
+To specify your choice of color, use a hex triplet code for the red, green, and blue (RGB) components of the color. For example, #40e0d0 is the RGB hex value for turquoise.
+
+For more information about these codes, see the [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) page from the MSDN web docs, and you find also find [RapidTables](https://www.rapidtables.com/web/color/RGB_Color.html) helpful. You'll find these codes in many applications that let you edit pictures. For example, Microsoft Paint lets you choose a custom color from a palette and the RGB values are automatically displayed, which you can then copy.
+
+Example PowerShell command, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**
+
+```PowerShell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{color="#40e0d0"}
+```
+
+For more information to help you specify PowerShell advanced settings for sensitivity labels, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## Auditing labeling activities
 
