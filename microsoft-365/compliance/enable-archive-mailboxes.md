@@ -40,13 +40,13 @@ Currently, you can use either the [Microsoft Purview compliance portal](microsof
 You must be assigned the Mail Recipients role in Exchange Online to enable or disable archive mailboxes. By default, this role is assigned to the Recipient Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. 
 
 
-## Enable an archive mailbox
+## How to enable an archive mailbox
 
 Configuration to manage archive mailboxes is moving from the Microsoft 365 Purview compliance portal to the new Exchange admin center.
 
 ### Use the new Exchange admin center to enable an archive mailbox
 
-[!NOTE]
+> [!NOTE]
 > When you enable the archive mailbox, items in the user's mailbox that are older than the archiving policy assigned to the mailbox will be moved to the new archive mailbox. The default archive policy that is part of the retention policy assigned to Exchange Online mailboxes moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
@@ -82,7 +82,7 @@ It might take a few moments to create the archive mailbox. When it's created, **
 
    It might take a few moments to create the archive mailbox. When it's created, **Enabled** is displayed in the **Archive mailbox** column for the selected user, although you might need to refresh the page to see the change of status.
 
-## Disable an archive mailbox
+## How to disable an archive mailbox
 
 Similarly to how you enable an archive mailbox, you can use the same configuration in the EAC or compliance portal to disable a user's archive mailbox. This time, turn **Mailbox archive** off in the EAC, or select the **Disable archive** option after you select the user in the compliance portal.
 
