@@ -103,7 +103,12 @@ A Success message on the screen indicates that your connection is successfully s
 
 ## If you need to make changes to a connection
 
-To make changes to a connection after it's set up, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md). For example, you can update sync settings, team mappings, and disable sync for a connection.
+You can use PowerShell or the Microsoft 365 admin center to manage and make changes to a connection after it's set up. For example, you can use PowerShell to update sync settings, team mappings, and disable sync for a connection. In the Microsoft 365 admin center, you can view information such as health status for all your connections and access the wizard to change connection settings.
+
+To learn more, see:
+
+- [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
+- [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md)
 
 ## Scripts
 
@@ -414,6 +419,7 @@ For help with Shifts connector cmdlets, including the cmdlets used in the script
 
 - [Shifts connectors](shifts-connectors.md)
 - [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md)
+- [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md)
 - [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
 - [Teams PowerShell cmdlet reference](/powershell/teams/intro)
