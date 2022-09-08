@@ -35,11 +35,13 @@ The following demonstration scenarios will help you learn about the capabilities
 
 ## Demonstrations
 
+The following table lists the available demonstrations alphabetically, with their associated protection area.
+
 | Demonstration name | Protection area | Description |
 |:---|:---|:---|
-| [App reputation demonstration](defender-endpoint-demonstration-app-reputation.md) | ? | Navigate to the app reputation page to see the demonstration scenarios using Microsoft Edge. |
+| [App reputation demonstration](defender-endpoint-demonstration-app-reputation.md) | ? | Navigate to the app reputation page to see the demonstration scenario using Microsoft Edge. |
 | [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md) | ? | Download sample files to trigger each ASR rule. |
-| [Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md) | NGP | With the BAFS feature in Microsoft Defender Antivirus, newly-discovered files will - if needed - be analyzed and blocked shortly thereafter on any computer. |
+| [Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md) | NGP | With the BAFS feature in Microsoft Defender Antivirus, newly discovered files are analyzed and - if needed - blocked. |
 | [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md) | ? |  Confirm that cloud-delivered protection is working properly on your computer. |
 | [Controlled folder access (CFA) demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md) | ASR | Download the CFA test tool. |
 | [Controlled folder access (CFA) demonstrations](defender-endpoint-demonstration-controlled-folder-access.md) | ASR | Download and execute a sample file to trigger CFA ransomware protection. |
@@ -50,8 +52,9 @@ The following demonstration scenarios will help you learn about the capabilities
 
 ## See also
 
-- [Attack surface protection \(ASR \)](overview-attack-surface-reduction.md)
-- [Next Generation Protection \(NGP\)](next-generation-protection.md)
-- [Endpoint detection and response \(EDR\)](overview-endpoint-detection-response.md)
+[Attack surface protection \(ASR\) overview](overview-attack-surface-reduction.md)
+[Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+[Next Generation Protection \(NGP\) overview](next-generation-protection.md)
+[Endpoint detection and response \(EDR\) overview](overview-endpoint-detection-response.md)
 
-- [Microsoft Defender for Endpoint security blog](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
+[Microsoft Defender for Endpoint security blog](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
