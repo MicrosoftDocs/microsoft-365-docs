@@ -365,7 +365,6 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `*.contoso.com`
 
 - **Block match**:
-  - contoso.com
   - xyz.abc.contoso.com
 
 - **Block not matched**:
