@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# SmartScreen URL reputation demonstrations
+# URL reputation demonstrations
 
 Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites based on URL reputation.
 Scenario requirements and setup
@@ -27,7 +27,7 @@ Scenario requirements and setup
 - Internet Explorer or Edge browser required
 - To turn ON/OFF go to Settings -> Update & Security -> Windows Security -> Open Windows Security -> App & browser control >
 
-## SmartScreen for Microsoft Edge URL scenario demos
+## SmartScreen for Microsoft Edge URL scenario demonstrations
 
 ### Is This Phishing?
 
