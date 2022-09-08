@@ -26,7 +26,7 @@ appliesto:
 
 The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection. After a connection is set up, you can manage it in the Microsoft 365 admin center. The Manage Shifts connectors page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings.
+You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection. After a connection is set up, you can manage it in the Microsoft 365 admin center. The Connector Management page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection or make changes to any of your existing connections. For example, you can update sync settings and team mappings.
 
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
@@ -41,6 +41,9 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
     :::image type="content" source="media/shifts-connector-wizard-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-wizard-ukg-manage.png":::
 
     To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
+
+    To create a new connection, select **Add connector** at the top of the page to start the wizard.
+
 
 ## Related articles
 
