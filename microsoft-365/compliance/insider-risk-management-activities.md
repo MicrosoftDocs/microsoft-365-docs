@@ -136,6 +136,7 @@ This tab opens the summary of risk factors for the user's alert activity. Risk f
 - **Priority content**: Displays activities associated with priority content.
 - **Unallowed domains**: Displays activities for events associated with unallowed domains.
 - **Health record access**: Displays activities for events associated with accessing health records.
+- **Risky browser usage**: Displays activities for events associated with browsing to potentially inappropriate websites.
 
 With these filters, you'll only see alerts with these risk factors, but the activity that generated an alert might not fall into any of these categories. For example, an alert containing sequence activities might have been generated simply because the user copied a file to a USB device.
 
@@ -197,6 +198,7 @@ Use the Activity scope and Risk insight filters to display and sort activities a
   - Sequence activities
   - Cumulative exfiltration activities
   - Health record access activities
+  - Risky browser usage
 
 ![Insider risk management activity explorer overview.](../media/insider-risk-activity-explorer.png)
 
