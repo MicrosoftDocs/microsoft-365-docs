@@ -35,8 +35,10 @@ This article describes how to use PowerShell to do the following:
 - [Unmap a team from one connection and map it to another connection](#unmap-a-team-from-one-connection-and-map-it-to-another-connection)
 - [Disable sync for a connection](#disable-sync-for-a-connection)
 
+This article assumes that you've already set up a connection to Blue Yonder WFM, either by using the wizard or PowerShell.
+
 > [!NOTE]
-> This article assumes that you've already set up a connection to Blue Yonder WFM, either by using the wizard or PowerShell.
+> You can also manage your connection in the Microsoft 365 admin center. For example, you can check the health status and access the wizard to change connection settings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
 
 ## Before you begin
 

@@ -36,7 +36,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Mic
 
     Here, you'll see a list of all the connections you've set up through the wizard or PowerShell, along with information about each one.
 
-    :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
+    :::image type="content" source="media/shifts-connector-blue-yonder-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-blue-yonder-manage.png":::
 
     To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
 
