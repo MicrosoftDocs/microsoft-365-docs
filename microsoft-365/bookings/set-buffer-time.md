@@ -23,7 +23,7 @@ Buffer time defaults are set on the **Services** page in Bookings. Like all serv
 
 The buffer time setting can be found on the **Add new service**/**Edit Service** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
 
-   ![Image of Bookings with buffer time enabled.](../media/bookings-buffertime.png)
+   ![Image of MS_Bookings_Service_BufferTime_Toggle_On.](../media//MS_Bookings_Service_BufferTime_Toggle_On.png)
 
 <!--## Buffer time and appointment timing
 
