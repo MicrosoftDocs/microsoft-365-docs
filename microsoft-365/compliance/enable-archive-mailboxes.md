@@ -42,7 +42,7 @@ You must be assigned the Mail Recipients role in Exchange Online to enable or di
 
 ## Enable an archive mailbox
 
-Configuration to manage archive mailboxes is moving from the Microsoft 365 Purview compliance center to the new Exchange admin center.
+Configuration to manage archive mailboxes is moving from the Microsoft 365 Purview compliance portal to the new Exchange admin center.
 
 ### Use the new Exchange admin center to enable an archive mailbox
 
