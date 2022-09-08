@@ -352,6 +352,8 @@
              href: manage/servicenow-testing-the-configuration.md
            - name: Troubleshooting
              href: manage/servicenow-troubleshooting.md
+           - name: Enable Virtual Agent
+             href: manage/servicenow-support-integration.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization
