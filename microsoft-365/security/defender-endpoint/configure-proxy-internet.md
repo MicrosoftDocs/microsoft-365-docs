@@ -70,7 +70,8 @@ Configure a registry-based static proxy for Defender for Endpoint detection and 
 >
 > These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
 
-The static proxy is configurable through group policy (GP), both the settings under group policy values should be configured to the proxy server for using EDR. The group policy is available in Administrative Templates.
+The static proxy is configurable through group policy (GP), both the settings under group policy values should be configured to the proxy server for using EDR. The group policy is available![image](https://user-images.githubusercontent.com/42802974/189094067-fd8d9139-10e0-45a1-a863-08d6e52aabae.png)
+ in Administrative Templates.
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
@@ -91,12 +92,12 @@ The static proxy is configurable through group policy (GP), both the settings un
 | Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> For example: ```10.0.0.6:8080``` (REG_SZ) |
 
   > [!NOTE]
-    > If you are using 'TelemetryProxyServer' setting on devices that are **offline** and only Defender for Endpoint has access to cloud via configured proxy server, then it is recommended to also implement the additional registry setting 'PreferStaticProxyForHttpRequest' with a value of '1'.
+    > If you are using 'TelemetryProxyServer' setting on devices that are **offline** and only Defender for Endpoint has access to cloud via configured proxy server, then it is recommended to implement the additional registry setting 'PreferStaticProxyForHttpRequest' with a value of '1'.<br>
     > Parent registry path location for 'PreferStaticProxyForHttpRequest' is 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection'
     > To following command can be used to insert the registry value in the correct location:
-    >     ```text
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f
-    ```
+    > ```
+    > reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f
+    > ```
 
 
 
