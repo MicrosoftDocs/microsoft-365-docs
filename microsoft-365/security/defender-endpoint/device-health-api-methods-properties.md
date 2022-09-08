@@ -2,19 +2,19 @@
 title: Microsoft Defender Antivirus export device antivirus health details API methods and properties
 description: "Learn how to export a list of Microsoft Defender Antivirus device health details." 
 keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
-ms.prod: m365-security 
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy 
 ms.sitesec: library 
 ms.pagetype: security 
 ms.author: v-jweston 
 author: jweston-1
 ms.localizationpriority: medium 
-ms.date: 08/08/2022
+ms.date: 09/01/2022
 manager: dansimp 
 audience: ITPro 
 ms.collection: M365-security-compliance 
 ms.topic: article 
-MS.technology: mde 
+ms.subservice: mde 
 ms.custom: api 
 --- 
 
@@ -44,6 +44,12 @@ Retrieves a list of Microsoft Defender Antivirus device health details. This API
   - Download all the files using the download URLs and process the data as you like.
 
 Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
+
+> [!IMPORTANT]
+>
+> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
+>
+> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
 
 > [!IMPORTANT]
 >
@@ -99,6 +105,9 @@ Method|Data type|Description
 | rbacGroupName | String | Name of device group that this machine belongs to | “SampleGroup” |
 
 ### 1.3 Export device antivirus health details API properties (via files)
+
+> [!IMPORTANT]
+> Information in this section relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 > [!NOTE]
 >

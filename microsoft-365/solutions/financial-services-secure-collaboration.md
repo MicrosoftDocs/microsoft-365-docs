@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.collection: 
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.

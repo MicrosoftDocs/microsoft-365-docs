@@ -2,7 +2,7 @@
 title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
 keywords: minimum requirements, licensing, comparison table
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Minimum requirements for Microsoft Defender for Endpoint

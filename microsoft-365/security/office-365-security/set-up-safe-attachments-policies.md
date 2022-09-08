@@ -16,8 +16,8 @@ ms.collection:
   - M365-security-compliance
 description: Learn about how to define Safe Attachments policies to protect your organization from malicious files in email.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Set up Safe Attachments policies in Microsoft Defender for Office 365
@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 Safe Attachments is a feature in [Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](safe-attachments.md).
 
-Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also use the procedures in this article to create Safe Attachments policies that apply to specific users, group, or domains.
+Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also use the procedures in this article to create Safe Attachments policies that apply to specific users, group, or domains.
 
 You can configure Safe Attachments policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Defender for Office 365 add-on subscriptions).
 
@@ -106,8 +106,8 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
    > [!IMPORTANT]
    > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
-   > - The recipient is: romain@contoso.com
-   > - The recipient is a member of: Executives
+   > - Users: romain@contoso.com
+   > - Groups: Executives
    >
    > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
    >
