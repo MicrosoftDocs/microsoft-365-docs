@@ -22,8 +22,8 @@ ms.custom:
   - seo-marvel-apr2020
   - seo-marvel-jun2020
 description: Learn about Microsoft Defender for Office 365 for files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Safe Attachments for SharePoint, OneDrive, and Microsoft Teams

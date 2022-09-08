@@ -15,8 +15,8 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - zerotrust-solution
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Recommended Microsoft Defender for Cloud Apps policies for SaaS apps

@@ -16,8 +16,8 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Create safe sender lists in EOP
