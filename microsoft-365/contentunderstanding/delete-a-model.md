@@ -17,7 +17,7 @@ description: Learn how to delete a model in Microsoft SharePoint Syntex.
 
 # Delete a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 At some point, you might want to delete a model. Before you delete the model, you must first remove the model from all of the SharePoint document libraries where it has been applied.
 
