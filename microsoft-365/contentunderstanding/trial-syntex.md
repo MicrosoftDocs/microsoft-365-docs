@@ -63,7 +63,7 @@ A test or demo tenant can be used as a “dry run” to walk through the activat
 
 To maximize the value of a trial on a production tenant, planning and business engagement are essential. You should engage one or more business areas to identify three to six use cases that could potentially be addressed by SharePoint Syntex. These use cases should:
 
-- Include scenarios that could be solved by using either a custom model or a trained model.
+- Include scenarios that could be solved by using either a custom model or a prebuilt model.
 
 - Have a clear understanding of the purpose for any extracted metadata; for example, view formatting or automation by using Power Automate. While SharePoint Syntex is focused on classifying documents and extracting metadata, the value to quantify is what this metadata enables.
 
