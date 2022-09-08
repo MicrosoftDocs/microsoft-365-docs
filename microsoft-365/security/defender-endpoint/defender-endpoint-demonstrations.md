@@ -48,7 +48,7 @@ The following table lists the available demonstrations alphabetically, with thei
 | [Exploit protection (EP) demonstrations](defender-endpoint-demonstration-exploit-protection.md) | ASR | Apply custom exploit protection settings. |
 | [Network protection demonstrations](defender-endpoint-demonstration-network-protection.md) | ASR | Navigate to a suspicious RUL to trigger network protection. |
 | [Potentially unwanted applications (PUA) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md) | EDR | Confirm that potentially unwanted applications (PUAs) are being blocked on your network by downloading a fake (safe) PUA file. |
-| [SmartScreen URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md) | ? | Navigate to the URL Reputation page to see the demonstration scenarios using Microsoft Edge. |
+| [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md) | ? | Navigate to the URL Reputation page to see the demonstration scenarios using Microsoft Edge. |
 
 ## See also
 
