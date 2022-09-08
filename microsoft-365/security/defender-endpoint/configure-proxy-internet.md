@@ -93,7 +93,7 @@ The static proxy is configurable through group policy (GP), both the settings un
 > [!NOTE]
 > If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, then it is recommended to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
 > Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
-> To following command can be used to insert the registry value in the correct location:<br>
+> The following command can be used to insert the registry value in the correct location:<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```
 
 
