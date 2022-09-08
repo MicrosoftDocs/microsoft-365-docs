@@ -1,5 +1,5 @@
 ---
-title: Use a trained model to extract information from receipts in Microsoft SharePoint Syntex
+title: Use a prebuilt model to extract information from receipts in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,26 +12,26 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a trained receipts model in SharePoint Syntex.
+description: Learn how to use a prebuilt receipts model in SharePoint Syntex.
 
 ---
 
-# Use a trained model to extract information from receipts in Microsoft SharePoint Syntex
+# Use a prebuilt model to extract information from receipts in Microsoft SharePoint Syntex
 
-The trained *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+The prebuilt *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
 To use a receipts model, follow these steps:
 
-- Step 1: [Create a receipts model](#create-a-receipts-model)
-- Step 2: [Upload an example file to analyze](#upload-an-example-file-to-analyze)
-- Step 3: [Select extractors for your model](#select-extractors-for-your-model)
-- Step 4: [Apply the model](#apply-the-model)
+- [Step 1: Create a receipts model](#step-1-create-a-receipts-model)
+- [Step 2: Upload an example file to analyze](#step-2-upload-an-example-file-to-analyze)
+- [Step 3: Select extractors for your model](#step-3-select-extractors-for-your-model)
+- [Step 4: Apply the model](#step-4-apply-the-model)
 
-## Create a receipts model
+## Step 1: Create a receipts model
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a trained receipts model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a prebuilt receipts model. Then continue with the following steps to complete your model.
 
-## Upload an example file to analyze
+## Step 2: Upload an example file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
@@ -47,7 +47,7 @@ Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-m
 
 4. On the **Files to analyze the model** page, select **Next**.
 
-## Select extractors for your model
+## Step 3: Select extractors for your model
 
 On the extractor details page, you'll see the document area on the right and the **Extractors** panel on the left. The **Extractors** panel shows the list of extractors that have been identified in the document.
 
@@ -98,7 +98,7 @@ To rename an extractor from the **Extractors** panel:
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
 
-## Apply the model
+## Step 4: Apply the model
 
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 

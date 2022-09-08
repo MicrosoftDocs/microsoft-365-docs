@@ -33,10 +33,10 @@ Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-m
 
 To train an **Extract by layout** model, follow these steps:
 
- - [Step 1: Add and analyze documents](create-a-form-processing-model.md#step-1-add-and-analyze-documents)
- - [Step 2: Tag fields and tables](create-a-form-processing-model.md#step-2-tag-fields-and-tables)
- - [Step 3: Train and publish your model](create-a-form-processing-model.md#step-3-train-and-publish-your-model)
- - [Step 4: Use your model](create-a-form-processing-model.md#step-4-use-your-model)
+ - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
+ - [Step 2: Tag fields and tables](#step-2-tag-fields-and-tables)
+ - [Step 3: Train and publish your model](#step-3-train-and-publish-your-model)
+ - [Step 4: Use your model](#step-4-use-your-model)
 
 <!---
 ## Create an Extract by layout model
