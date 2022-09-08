@@ -18,9 +18,9 @@ description: Learn how to train an Extract by text pattern and layout model in S
 
 # Train an Extract by text pattern and layout model in Microsoft SharePoint Syntex
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create an **Extract by layout** model. Then use this article to train your model.
+Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create an **Extract by text pattern and layout** model. Then use this article to train your model.
 
-To train an **Extract by layout** model, follow these steps:
+To train an **Extract by text pattern and layout** model, follow these steps:
 
 <!---
 SharePoint Syntex uses [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—to create an **Extract by text pattern and layout** model directly from a SharePoint document library. In AI Builder, both the **Extract by text pattern and layout** model and the **Extract by text pattern and layout** model are referred to as *document processing* models.
