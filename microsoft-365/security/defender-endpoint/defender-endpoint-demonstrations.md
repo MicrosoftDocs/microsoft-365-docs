@@ -28,7 +28,7 @@ The following demonstration scenarios will help you learn about the capabilities
 - Next Generation Protection (NGP)
 - Endpoint detection and response (EDR)
 
-> (!NOTE)
+> [!NOTE]
 > None of the sample files or _suspicious_ links provided in this collection are actually malicious; all links and demonstration files are harmless.
 >
 > We encourage you to read [Microsoft Defender Antivirus documentation](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=wd-av-demo-home-top), and to download the [Evaluation guide](/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus?ocid=wd-av-demo-home-top).
