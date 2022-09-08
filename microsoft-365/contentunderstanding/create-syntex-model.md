@@ -12,14 +12,14 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a model with SharePoint Syntex.
+description: Learn how to create a custom or prebuilt model with SharePoint Syntex.
 ---
 
 # Create a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-Whether you want to create a custom model or use a trained model, you start in the **Models** library. For information about the different model types, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
+Whether you want to create a custom model or use a prebuilt model, you start in the **Models** library. For information about the different model types, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
 ## Create a model
 
@@ -32,9 +32,9 @@ Follow these steps to create a model in SharePoint Syntex.
 2. On the **View options for classification and extraction** page, there are two sections:
 
     - [**Build a custom model**](#build-a-custom-model)
-    - [**Use a trained model**](#use-a-trained-model)
+    - [**Use a prebuilt model**](#use-a-prebuilt-model)
 
-    ![Screenshot of the View options for classification and extraction page showing the custom models and trained models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
+    ![Screenshot of the View options for classification and extraction page showing the custom models and prebuilt models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
 
     > [!NOTE]
     > All model options might not be available. These options are configured by your Microsoft 365 admin.
@@ -149,17 +149,17 @@ Follow these steps to create a model in SharePoint Syntex.
     > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
 
-## Use a trained model
+## Use a prebuilt model
 
-1. In the **Use a trained model** section, view the types of trained models you can use. Select the type of trained model you want to learn more about or to start using. 
+1. In the **Use a prebuilt model** section, view the types of prebuilt models you can use. Select the type of prebuilt model you want to learn more about or to start using. 
 
-    ![Screenshot of the Use a trained model section on the View options for classification and extraction page.](../media/content-understanding/use-a-trained-model-section.png) 
+    ![Screenshot of the Use a prebuilt model section on the View options for classification and extraction page.](../media/content-understanding/use-a-trained-model-section.png) 
 
     - [**Receipts**](#receipts)
 
     - [**Invoices**](#invoices)
 
-2. When you select a trained model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
+2. When you select a prebuilt model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
 ### Receipts
 
@@ -180,7 +180,7 @@ Follow these steps to create a model in SharePoint Syntex.
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
 
     > [!NOTE]
-    > Sensitivity labels are not available for trained models at this time.
+    > Sensitivity labels are not available for prebuilt models at this time.
 
 4. When you are ready to create the model, select **Create**.
 
@@ -209,7 +209,7 @@ Follow these steps to create a model in SharePoint Syntex.
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
 
     > [!NOTE]
-    > Sensitivity labels are not available for trained models at this time.
+    > Sensitivity labels are not available for prebuilt models at this time.
 
 4. When you are ready to create the model, select **Create**.
 
