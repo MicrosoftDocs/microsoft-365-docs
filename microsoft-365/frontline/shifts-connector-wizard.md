@@ -195,7 +195,7 @@ To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then t
 ## Manage your connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you can manage it in the Microsoft 365 admin center or by using PowerShell.
+After a connection is set up, you can manage and make changes to it in the Microsoft 365 admin center or by using PowerShell.
 
 ### Use the Microsoft 365 admin center
 
