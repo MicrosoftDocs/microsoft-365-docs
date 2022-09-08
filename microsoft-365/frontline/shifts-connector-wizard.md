@@ -192,21 +192,12 @@ To hide open shifts, swap requests, and time off requests in Shifts, use the Gra
 
 To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
-## If you need to make changes to a connection
+## Manage your connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+After a connection is set up, you can manage it in the Microsoft 365 admin center. The Manage Shifts connectors page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
 
-## Check the health of a connection
-
-You can view information about your connection, such as health status and sync intervals, in the Microsoft 365 admin center.
-
-1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
-2. Select **Manage Shifts connectors**, and then choose **Manage**. Keep in mind that this option is available only if you've already set up a connection.
-
-    Here, you'll see a list of all the connections you've set up by using the wizard or PowerShell, along with information about each one.
-
-    :::image type="content" source="media/shifts-connector-wizard-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-wizard-manage.png":::
+You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
 ## Related articles
 

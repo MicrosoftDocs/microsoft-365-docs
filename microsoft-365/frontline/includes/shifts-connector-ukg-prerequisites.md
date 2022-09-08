@@ -8,7 +8,6 @@ ms.service: microsoft-365-frontline
 ---
 Before you get started, make sure you have the following prerequisites:
 
-- UKG Dimensions version ???
 - Your UKG Dimensions service account name and password and service URLs:
 
   - Application program interface URL
