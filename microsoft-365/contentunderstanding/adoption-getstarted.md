@@ -37,7 +37,7 @@ With new AI services and capabilities, you can build content understanding and c
 
 For a more complete comparison of the custom capabilities, see [Compare custom models in SharePoint Syntex](difference-between-document-understanding-and-form-processing-model.md).
 
-If you don't need to build a custom model, you can use a [trained model](prebuilt-overview.md) that has already been trained for specific structured documents.
+If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents.
 
 ## Identify pilot business scenarios to optimize
 
