@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint surface reduction rules demonstrations
+title: Microsoft Defender for Endpoint attack surface reduction rules demonstrations
 description: See how attack surface reduction rules block a variety of known threat types.
 keywords: Microsoft Defender for Endpoint demonstration, attack surface reduction rules demonstration, ASR rules, demonstration
 search.product: eADQiWindows 10XVcnh
