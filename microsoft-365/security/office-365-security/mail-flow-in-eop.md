@@ -14,8 +14,8 @@ ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom: 
   - seo-marvel-apr2020
 description: Admin can learn about the options for configuring mail flow and routing in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
 ---
 

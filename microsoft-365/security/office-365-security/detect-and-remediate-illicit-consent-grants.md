@@ -17,8 +17,8 @@ search.appverid:
 description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Detect and Remediate Illicit Consent Grants
 

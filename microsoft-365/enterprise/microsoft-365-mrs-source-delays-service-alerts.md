@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appveyor:
 - MET150
