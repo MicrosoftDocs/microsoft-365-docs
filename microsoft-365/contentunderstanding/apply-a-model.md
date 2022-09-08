@@ -202,6 +202,4 @@ To remove an applied model from your document library:
 
 [Share an enterprise model](model-discovery.md)
 
-[Create an extractor](create-an-extractor.md)
-
 
