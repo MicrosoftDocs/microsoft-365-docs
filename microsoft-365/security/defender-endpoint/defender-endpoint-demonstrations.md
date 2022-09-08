@@ -40,7 +40,7 @@ The following table lists the available demonstrations alphabetically, with thei
 | Demonstration name | Protection area | Description |
 |:---|:---|:---|
 | [App reputation demonstration](defender-endpoint-demonstration-app-reputation.md) | ? | Navigate to the app reputation page to see the demonstration scenario using Microsoft Edge. |
-| [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md) | ? | Download sample files to trigger each ASR rule. |
+| [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md) | ASR | Download sample files to trigger each ASR rule. |
 | [Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md) | NGP | With the BAFS feature in Microsoft Defender Antivirus, newly discovered files are analyzed and - if needed - blocked. |
 | [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md) | ? |  Confirm that cloud-delivered protection is working properly on your computer. |
 | [Controlled folder access (CFA) demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md) | ASR | Download the CFA test tool. |
