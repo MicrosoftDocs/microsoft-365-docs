@@ -52,6 +52,6 @@ The following demonstration scenarios will help you learn about the capabilities
 
 - [Attack surface protection \(ASR \)](overview-attack-surface-reduction.md)
 - [Next Generation Protection \(NGP\)](next-generation-protection.md)
-- [Endpoint detection and response \(EDR\)](overview-endpoint-detection-response)
+- [Endpoint detection and response \(EDR\)](overview-endpoint-detection-response.md)
 
 - [Microsoft Defender for Endpoint security blog](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
