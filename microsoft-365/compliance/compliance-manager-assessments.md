@@ -174,7 +174,7 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 ## Grant user access to individual assessments
 
-When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (see more about [role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment.
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment.
 
 Granting access to individual assessments can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. Restricting access in this way helps protect the privacy of the organization's data and business operations.
 
