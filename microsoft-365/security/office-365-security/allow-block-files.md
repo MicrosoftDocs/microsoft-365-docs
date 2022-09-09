@@ -77,7 +77,7 @@ You have the following options to create block entries for files:
 
 ### Use the Microsoft 365 Defender portal to create block entries for files in the Submissions portal
 
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry for the file in the Tenant Allow/Block List.
+When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry on the **Files** tab in the Tenant Allow/Block List.
 
 For instructions, see [Report questionable email attachments to Microsoft](admin-submission.md#report-questionable-email-attachments-to-microsoft).
 

@@ -70,7 +70,7 @@ You have the following options to create block entries for URLs:
 
 ### Use the Microsoft 365 Defender portal to create block entries for URLs in the Submissions portal
 
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report URLs as **Should have been blocked (False negative)**, you can select **Block this URL** to add a block entry for the URL in the Tenant Allow/Block List.
+When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report URLs as **Should have been blocked (False negative)**, you can select **Block this URL** to add a block entry on the **URLs** tab in the Tenant Allow/Block List.
 
 For instructions, see [Report questionable URLs to Microsoft](admin-submission.md#report-questionable-urls-to-microsoft).
 
@@ -119,7 +119,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to create allow entries for URLs in the Submissions portal
 
-You can't create URL allow entries directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the URL as a false positive, which also adds an allow entry for the URL in the Tenant Allow/Block List.
+You can't create URL allow entries directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the URL as a false positive, which also adds an allow entry on the **URLs** tab in the Tenant Allow/Block List.
 
 For instructions, see [Report good URLs to Microsoft](admin-submission.md#report-good-urls-to-microsoft).
 
