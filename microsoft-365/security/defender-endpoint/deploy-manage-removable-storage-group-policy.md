@@ -136,6 +136,7 @@ For this scenario, you need to create two groups - one group for any removable s
     ![A screenshot of audit write and execute access](https://user-images.githubusercontent.com/81826151/188237598-b28dd534-9ea4-4cdd-832b-afff50f9897b.png)
 
     What does '54' mean in the policy? It's 18 + 36 = 54:
+
        - Write access: disk level 2 + file system level 16 = 18.
        - Execute: disk level 4 + file system level 32 = 36.
 
@@ -171,6 +172,7 @@ For this scenario, you need to create two groups - one group for any removable s
     ![A screenshot of audit write and execute access in group policy](https://user-images.githubusercontent.com/81826151/188239144-3e6a2781-6927-487a-aa01-498a0904ad98.png)
 
     What does '54' mean in the policy? It's 18 + 36 = 54:
+
        - Write access: disk level 2 + file system level 16 = 18.
        - Execute: disk level 4 + file system level 32 = 36.
 
