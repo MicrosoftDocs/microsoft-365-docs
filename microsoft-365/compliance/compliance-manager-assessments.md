@@ -172,6 +172,36 @@ The Microsoft actions tab appears for assessments based on templates that suppor
 
 Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
 
+## Grant user access to individual assessments
+
+When you assign users a role, they can view or edit data within all assessments (see more about [role types](compliance-manager-setup.md#role-types)). Assigning roles at the Microsoft Purview compliance portal level will allow users to see or manage data for all assessments.
+
+However, you can restrict access to only certain assessments by managing user roles from within an assessment.  Granting access to individual assessments can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. Restricting access to assessments only to those who work on them helps to protect the privacy of the organization's data and business operations.
+
+Access to assessments can be granted to users within your organization and to individuals outside of your organization who serve as auditors or other functions related to your organization's regulatory obligations.
+
+#### Steps for granting access
+
+Follow these steps to grant user access to an assessment:
+
+1. From your **Assessments** page, find the assessment you want to grant access to.
+1. Select the assessment to open its details page.
+1. In the upper-right corner, select **Manage user access**.
+1. A flyout pane appears showing the list of users in your organization  ASK HARDIK-- WILL EXTERNAL USERS IN THEIR ADD BE HERE?. Users who currently have access to the assessment will have a blue box with a check mark to the left of their name. The list has three tabs that correlate to each possible role: Readers, Assessors, and Contributors.
+1. Navigate to the tab indicating the role for which you want to add a user.
+1. Select **Add reader**, or **Add assessor** or **Add contributor**.
+1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar adn select the user from there. You can select multiple users at once.
+1. Select **Add**.
+    > [!NOTE]
+    > If you assign a role to someone who already has an existing role, the new role assignment you choose will override their existing role. In this case, you'll see a confirmation box asking you to confirm the change in role.
+1. The flyout pane will close and you'll arrive back at your assessment details page. A confirmation message at the top will confirm the new role assignment for that assessment.
+
+#### Steps for revoking access
+
+You can revoke user access to individual assessments. To do this, begin by following the same steps outlined above for adding users. When you see the user's name whose role you want to revoke listed in the **Manage user access** flyout pane, uncheck the box next to their names, then select **Save**. You'll see a confirmation box asking you to confirm removal of the user's access. Select **Remove** to confirm and proceed, or select **Cancel** to cancel and exit.
+
+ASK HARDIK IF THIS ALSO OVERRIDES ROLE ASSIGMENT.
+
 ## Accept updates to assessments
 
 When an update is available for an assessment, you'll see a notification and have the option to accept the update or defer it for a later time.
