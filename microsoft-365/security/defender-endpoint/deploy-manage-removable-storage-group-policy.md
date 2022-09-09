@@ -137,8 +137,8 @@ For this scenario, you need to create two groups - one group for any removable s
 
     What does '54' mean in the policy? It's 18 + 36 = 54:
 
-       - Write access: disk level 2 + file system level 16 = 18.
-       - Execute: disk level 4 + file system level 32 = 36.
+    - Write access: disk level 2 + file system level 16 = 18.
+    - Execute: disk level 4 + file system level 32 = 36.
 
     Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml). See step 4 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
 
@@ -173,8 +173,8 @@ For this scenario, you need to create two groups - one group for any removable s
 
     What does '54' mean in the policy? It's 18 + 36 = 54:
 
-       - Write access: disk level 2 + file system level 16 = 18.
-       - Execute: disk level 4 + file system level 32 = 36.
+    - Write access: disk level 2 + file system level 16 = 18.
+    - Execute: disk level 4 + file system level 32 = 36.
 
     Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%202%20GPO%20Policy%20-%20Audit%20Write%20and%20Execute%20access%20to%20all%20but%20block%20specific%20unapproved%20USBs.xml). See step 4 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
 

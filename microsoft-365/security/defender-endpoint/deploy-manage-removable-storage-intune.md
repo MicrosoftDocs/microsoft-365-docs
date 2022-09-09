@@ -163,8 +163,8 @@ For this scenario, you need to create two groups - one group for any removable s
 
     What does '54' mean in the policy? It's 18 + 36 = 54:
 
-       - Write access: disk level 2 + file system level 16 = 18.
-       - Execute: disk level 4 + file system level 32 = 36.
+    - Write access: disk level 2 + file system level 16 = 18.
+    - Execute: disk level 4 + file system level 32 = 36.
 
     Here is the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Audit%20Write%20and%20Execute%20access%20to%20aproved%20USBs.xml). See step 4 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
 
@@ -204,8 +204,8 @@ For this scenario, you need to create two groups - one group for any removable s
     
     What does '54' mean in the policy? It's 18 + 36 = 54:
 
-       - Write access: disk level 2 + file system level 16 = 18.
-       - Execute: disk level 4 + file system level 32 = 36.
+    - Write access: disk level 2 + file system level 16 = 18.
+    - Execute: disk level 4 + file system level 32 = 36.
     
     Here is the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%202%20Audit%20Write%20and%20Execute%20access%20to%20others.xml). See step 4 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
 
