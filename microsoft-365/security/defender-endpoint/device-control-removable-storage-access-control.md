@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 08/08/2022
+ms.date: 09/09/2022
 ms.reviewer: tewchen
 ---
 
@@ -51,7 +51,7 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 - **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add `AccountName` into [advanced hunting](device-control-removable-storage-access-control.md#view-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2205 or later**: Expand the default enforcement to **Printer**. If you set it to **Deny**, it will block Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer.
+- **4.18.2205 or later**: Expand the default enforcement to **Printer**. If you set it to **Deny**, it will block Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface" lightbox="images/powershell.png":::
 
@@ -61,11 +61,11 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 ## Device Control Removable Storage Access Control properties
 
 The Removable Storage Access Control include Removable storage group creation and access policy rule creation:
-   - Removable storage group allows you to create group, for example, authorized USB group or encrypted USB group.
-   - Access policy rule allows you to create policy to restrict each removable storage group, for example, only allow authorized user to Write access authorized USB group.
+
+   - Removable storage group allows you to create group. For example, authorized USB group or encrypted USB group.
+   - Access policy rule allows you to create policy to restrict each removable storage group. For example, only allow authorized user to Write access-authorized USB group.
 
 Here are the properties you can use when you create the group and policy XML files.
-
 
 ### Removable storage group
 

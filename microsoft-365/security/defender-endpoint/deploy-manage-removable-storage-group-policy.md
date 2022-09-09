@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/25/2022
+ms.date: 09/09/2022
 ms.reviewer: tewchen
 ---
 
@@ -111,13 +111,13 @@ For this scenario, you need to create two groups - one group for any removable s
 
 1. Create groups
 
-    1. Group 1: Any removable storage and CD/DVD and Windows portable devices. An example of a removable storage:
+    1. Group 1: Any removable storage, CD/DVD, and Windows portable devices.
 
-    ![An example of removable storage](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+    ![A screenshot of removable storage](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
 
-    2. Group 2: Approved USBs based on device properties. An example of this use case:
+    2. Group 2: Approved USBs based on device properties.
 
-    ![An example of approved USBs](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
+    ![A screenshot of approved USBs](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
     
     Combine these two groups into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml). See step 3 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
 
@@ -126,14 +126,14 @@ For this scenario, you need to create two groups - one group for any removable s
 
 2. Create policy
 
-    1. Policy 1: Block Write and Execute access to any removable storage group but allow approved USBs. An example of this use case:
+    1. Policy 1: Block Write and Execute access for any removable storage group but allow approved USBs.
 
-    ![An example of block write and execute access](https://user-images.githubusercontent.com/81826151/188237490-d736ace1-4912-4788-9e94-3fc506692a41.png)
+    ![A screenshot of block write and execute access](https://user-images.githubusercontent.com/81826151/188237490-d736ace1-4912-4788-9e94-3fc506692a41.png)
 
 
-    2. Policy 2: Audit Write and Execute access for allowed USBs. An example of this use case:
+    2. Policy 2: Audit Write and Execute access for allowed USBs.
 
-    ![An example of audit write and execute access](https://user-images.githubusercontent.com/81826151/188237598-b28dd534-9ea4-4cdd-832b-afff50f9897b.png)
+    ![A screenshot of audit write and execute access](https://user-images.githubusercontent.com/81826151/188237598-b28dd534-9ea4-4cdd-832b-afff50f9897b.png)
 
     What does '54' mean in the policy? It's 18 + 36 = 54:
        - Write access: disk level 2 + file system level 16 = 18.
@@ -141,19 +141,19 @@ For this scenario, you need to create two groups - one group for any removable s
 
     Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml). See step 4 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
 
-### Scenario 2: Audit Write and Execute access to all but block specific blocked USBs
+### Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
 
 For this scenario, you need to create two groups - one group for any removable storage and another group for blocked USBs. You also need to create two policies - one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
 
 1. Create groups
 
-    1. Group 1: Any removable storage and CD/DVD and windows portable devices. An example of a removable storage:
+    1. Group 1: Any removable storage, CD/DVD, and windows portable devices.
 
-    ![An example of removable storage in groups](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
+    ![A screenshot of removable storage in groups](https://user-images.githubusercontent.com/81826151/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png)
 
-    2. Group 2: Blocked USBs based on device properties. An example for this use case:
+    2. Group 2: Blocked USBs based on device properties.
 
-    ![An example of blocked USBs](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
+    ![A screenshot of blocked USBs](https://user-images.githubusercontent.com/81826151/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png)
     
     Combine these two groups into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml). See step 3 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
 
@@ -162,13 +162,13 @@ For this scenario, you need to create two groups - one group for any removable s
 
 2. Create policy
 
-    1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example of this use case:
+    1. Policy 1: Block Write and Execute access for all but block specific unapproved USBs.
 
-    ![An example of specific unapproved USBs](https://user-images.githubusercontent.com/81826151/188239025-218a1985-b198-4f7e-b323-b4b6fb7e274e.png)
+    ![A screenshot of specific unapproved USBs](https://user-images.githubusercontent.com/81826151/188239025-218a1985-b198-4f7e-b323-b4b6fb7e274e.png)
 
-    2. Policy 2: Audit Write and Execute access to others. An example of this use case:
+    2. Policy 2: Audit Write and Execute access for others. 
 
-    ![An example of audit write and execute access in group policy](https://user-images.githubusercontent.com/81826151/188239144-3e6a2781-6927-487a-aa01-498a0904ad98.png)
+    ![A screenshot of audit write and execute access in group policy](https://user-images.githubusercontent.com/81826151/188239144-3e6a2781-6927-487a-aa01-498a0904ad98.png)
 
     What does '54' mean in the policy? It's 18 + 36 = 54:
        - Write access: disk level 2 + file system level 16 = 18.
