@@ -107,3 +107,6 @@ To remove an applied model from your document library:
 2. On the model you want to remove, select **View model details**, and then select **Remove from library**.
 --->
 
+## See also
+
+[Discover other trained models](discover-other-trained-models.md)
