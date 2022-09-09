@@ -35,7 +35,7 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ## Watch: Act on a usage report in Microsoft 365
   
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
