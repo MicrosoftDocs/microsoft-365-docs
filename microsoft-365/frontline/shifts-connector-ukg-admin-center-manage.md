@@ -40,9 +40,11 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 
     :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
 
-    To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
+    - To view more details about a connection, double-click the connection name. You'll see health information, including warnings and errors (if any), and mappings details.
 
-    To create a new connection, select **Add connector** at the top of the page to start the wizard.
+    - To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
+
+    - To create a new connection, select **Add connector** at the top of the page to start the wizard.
 
 
 ## Related articles
