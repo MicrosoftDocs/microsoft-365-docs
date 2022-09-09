@@ -1,6 +1,6 @@
 ---
 title: Device health Sensor health & OS report
-description: Use the device health report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
+description: Use the device health report to track device health, OS platforms, and Windows 10 versions.
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
