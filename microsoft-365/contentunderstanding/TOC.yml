@@ -26,10 +26,12 @@
               items:
                 - name: Discover and apply a model
                   href: apply-a-model.md
-                - name: Share an enterprise model 
-                  href: model-discovery.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: Share an enterprise model 
+                  href: model-discovery.md
+                - name: Discover other trained models 
+                  href: discover-other-trained-models.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
                 - name: Apply a sensitivity label 
