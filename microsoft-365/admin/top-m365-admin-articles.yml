@@ -31,10 +31,10 @@ landingContent:
             url: add-users/about-admin-roles.md
           - text: Overview of the Microsoft 365 admin center
             url: admin-overview/admin-center-overview.md
+      - linkListType: how-to-guide
+        links:
           - text: Get support for Microsoft 365 for business
             url: get-help-support.md
-      - linkListType: how-to-guide
-        links:  
           - text: Microsoft 365 activity reports
             url: activity-reports/activity-reports.md
 
