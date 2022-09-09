@@ -38,14 +38,16 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 
     Here, you'll see a list of all the connections you've set up through the wizard or PowerShell, along with information about each one.
 
-    :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Manage Shifts connectors page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
+    :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
 
-    - To view more details about a connection, double-click the connection name. You'll see health information, including errors and warnings (if any), mappings details, and more.
+    - To view more details about a connection, double-click the connection name. On the details page, you'll see health information, including errors and warnings (if any), the list of mappings, and more.
 
     - To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
 
     - To create a new connection, select **Add connector** at the top of the page to start the wizard.
-
+  
+> [!NOTE]
+> You can also get to the Connector Management page directly when you select the **Connector Management** button on the last page of the wizard during connection setup.
 
 ## Related articles
 
