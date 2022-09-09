@@ -24,7 +24,7 @@
               href: create-local-model.md 
             - name: Manage your model
               items:
-                - name: Discover and apply a model
+                - name: Apply a model
                   href: apply-a-model.md
                 - name: Choose a library view 
                   href: choose-library-view.md
