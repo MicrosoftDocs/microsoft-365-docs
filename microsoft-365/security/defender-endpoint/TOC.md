@@ -375,7 +375,9 @@
 ##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics and performance for Microsoft Defender Antivirus
-##### [Device health and compliance reports](machine-reports.md)
+##### [Device health and compliance reports](device-health-reports.md)
+###### [Microsoft Defender Antivirus health](device-health-microsoft-defender-antivirus-health.md)
+###### [Sensor health and OS](device-health-sensor-health-os.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Collect diagnostic data of Microsoft Defender Antivirus](collect-diagnostic-data.md)
