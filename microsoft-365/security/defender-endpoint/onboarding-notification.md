@@ -3,7 +3,7 @@ title: Create an onboarding or offboarding notification rule
 description: Get a notification when a local onboarding or offboarding script is used.
 keywords: onboarding, offboarding, local, script, notification, rule
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Create a notification rule when a local onboarding or offboarding script is used

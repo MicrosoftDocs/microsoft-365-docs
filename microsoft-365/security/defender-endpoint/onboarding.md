@@ -2,7 +2,7 @@
 title: Onboard to the Microsoft Defender for Endpoint service
 description: Learn how to onboard endpoints to Microsoft Defender for Endpoint service
 keywords: microsoft defender for endpoint, onboard, deploy
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,8 +16,9 @@ ms.collection:
   - m365solution-endpointprotect
   - m365solution-scenario
   - m365-initiative-defender-endpoint
+  - highpri
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Onboard to the Microsoft Defender for Endpoint service

@@ -3,7 +3,8 @@ title: Other security and threat protection APIs
 description: View a list of APIs related to Microsoft security and threat protection products.
 keywords: api, security, threat protection, mde, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, cloud app security
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +20,6 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ms.custom: api
 ---
 

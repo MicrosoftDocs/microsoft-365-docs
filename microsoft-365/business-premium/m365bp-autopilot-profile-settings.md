@@ -9,7 +9,8 @@ f1.keywords:
 - 'ZTDProfileSettings'
 - 'O365E_ZTDProfileSettings'
 - 'BCS365_ZTDProfileSettings'
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: 

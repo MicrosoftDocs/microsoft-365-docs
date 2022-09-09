@@ -17,8 +17,8 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
 description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Threat Trackers - New and Noteworthy

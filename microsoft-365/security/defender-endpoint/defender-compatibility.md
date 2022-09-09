@@ -4,7 +4,7 @@ description: Learn about how Windows Defender works with Microsoft Defender for 
 keywords: windows defender compatibility, defender, Microsoft Defender for Endpoint, defender for endpoint, antivirus, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Antivirus solution compatibility with Microsoft Defender for Endpoint

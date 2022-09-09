@@ -42,6 +42,8 @@ Defender for Endpoint on Android enables admins to configure custom indicators t
 ## Configure web protection
 Defender for Endpoint on Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the Microsoft Endpoint Manager Admin center.
 
+[Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that anti-phishing and custom indicators (URL and IP addresses) are supported as part of web protection. Web content filtering is currently not supported on mobile platforms.
+
 > [!NOTE]
 > Defender for Endpoint on Android would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 > For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
@@ -122,7 +124,7 @@ Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
 These controls help the end user to configure the information shared to their organization.
 
-1. For **Android Enterprise work profile**, end user controls will not be visible. Admins controls these settings.
+1. For **Android Enterprise work profile**, end user controls will not be visible. Admins control these settings.
 2. For **Android Enterprise personal profile**, the control is displayed under **Settings> Privacy**.
 3. Users will see a toggle for Unsafe Site Info, malicious application, and network protection.
 
