@@ -35,7 +35,7 @@ To find trained models that might be suitable for your content:
    
    - On the **Available** tab, see the trained models that are available to be applied to your library.
 
-### Apply a trained model to your library
+## Apply a trained model to your library
 
 You can evaluate trained models against your content to help you find the most appropriate one. To select a model that you want to apply to your library:
 
@@ -45,7 +45,7 @@ You can evaluate trained models against your content to help you find the most a
 
 2. Choose the model that you think will get you the best results, select **View model details**, and then select **Apply to library**.
 
-### Get a recommendation for a trained model
+## Get a recommendation for a trained model
 
 If you're unsure which model is the best fit for your files, you can ask for a recommendation. Your recommendation could include up to 10 models.
 
@@ -71,7 +71,7 @@ If you're unsure which model is the best fit for your files, you can ask for a r
 
 7. If there are no recommended models based on the selected file, you can go back and select another file or select different models.
 
-### Remove an applied model
+## Remove an applied model
 
 To remove an applied model from your document library:
 
