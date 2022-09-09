@@ -302,7 +302,7 @@ To fully leverage the functionality of Insider Risk Management, we recommend set
 
 **Identify regulatory compliance policy violations**
 
-Microsoft Purview Communication Compliance helps organizations detect explicit regulatory compliance violations such as SEC or FINRA obligations, including inappropriate sharing of sensitive or confidential information. With built in workflows, the solution can help you investigate and remediate possible regulatory compliance violations. Built with privacy by design, this solution has usernames pseudonymized by default, role-based access controls are built-in, investigators must be explicitly added by an administrator to a policy, and audit logs are in place to help ensure user-level privacy.
+Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as  sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
 
 ### Step 1: Enable permissions for communication compliance
 

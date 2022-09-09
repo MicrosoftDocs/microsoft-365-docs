@@ -7576,6 +7576,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/about-defender-for-office-365-trial.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/try-microsoft-defender-for-office-365",
+      "redirect_document_id": false
+    },
+    {
     "source_path": "microsoft-365/security/office-365-security/tenant-allow-block-list.md",
     "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
     "redirect_document_id": false
