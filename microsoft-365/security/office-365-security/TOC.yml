@@ -36,9 +36,9 @@
          href: use-dmarc-to-validate-email.md
        - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
          href: use-arc-exceptions-to-mark-trusted-arc-senders.md
-     - name: Phase 2 - Choose your installation path that works for your environment
+     - name: Phase 2 - Choose your installation path
        items:
-       - name: Step 1 - Choice for admins with or without EOP
+       - name: Step 1 - installation path with or without EOP
          items:
          - name: Option 1 - Preset installation path (automated)
            items:
@@ -46,13 +46,13 @@
              href: configuration-analyzer-for-security-policies.md
            - name: Preset security policies
              href: preset-security-policies.md
-         - name: Option 2 - EOP customer MDO installation path (manual)
+         - name: Option 2 - EOP customer Defender for Office 365 installation path (manual)
            items:
            - name: Defender for Office 365
              href: defender-for-office-365.md
            - name: Protect against threats
              href: protect-against-threats.md
-         - name: Option 3 - Custom EOP and MDO environments P1 and P2 installation path (manual)
+         - name: Option 3 - Custom EOP and Defender for Office 365 P1 and P2 environments installation path (manual)
            items:
            - name: Exchange Online Protection overview
              href: exchange-online-protection-overview.md
@@ -274,7 +274,7 @@
        href: mdo-sec-ops-manage-incidents-and-alerts.md
      - name: How threat investigation and response works
        href: office-365-ti.md
-     - name: Phase 1 - Daily work with built-in tools
+     - name: Daily work with built-in tools
        items:
          - name: Investigate malicious email
            href: investigate-malicious-email-that-was-delivered.md
@@ -286,7 +286,7 @@
            href: impersonation-insight.md
          - name: Spoof intelligence insight
            href: learn-about-spoof-intelligence.md
-     - name: Phase 2 - Reports
+     - name: Reports
        items:
          - name: View the admin audit log
            href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
@@ -303,7 +303,21 @@
          - name: Submissions and message review
            items:
            - name: Report messages and files to Microsoft
-             href: report-junk-email-messages-to-microsoft.md
+             items:
+             - name: How do I report a suspicious email or file to Microsoft
+               href: report-junk-email-messages-to-microsoft.md
+             - name: Admin submissions
+               href: admin-submission.md
+             - name: Enable the Report Message and the Report Phishing add-ins
+               href: enable-the-report-message-add-in.md
+             - name: Report false positives and false negatives in Outlook
+               href: report-false-positives-and-false-negatives.md
+             - name: User reported message settings
+               href: user-submission.md
+             - name: Use mail flow rules to see what users are reporting to Microsoft
+               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+             - name: Submit malware and non-malware to Microsoft
+               href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
            - name: Admin review for reported messages
              href: admin-review-reported-message.md
            - name: Manage quarantined messages and files
@@ -320,8 +334,10 @@
            href: removing-user-from-restricted-users-portal-after-spam.md
          - name: Use the delist portal to remove yourself from the blocked senders list
            href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-     - name: Phase 2 - Detect and respond
+     - name: Detect and respond
        items:
+         - name: Responding to a Compromised Email Account in Office 365
+           href: responding-to-a-compromised-email-account.md
          - name: Remediate malicious email
            href: remediate-malicious-email-delivered-office-365.md
          - name: Recover from a ransomware attack
@@ -330,9 +346,7 @@
            href: detect-and-remediate-illicit-consent-grants.md
          - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
            href: detect-and-remediate-outlook-rules-forms-attack.md
-         - name: Detect and address compromised user accounts quickly
-           href: address-compromised-users-quickly.md
-     - name: Phase 3 - Automated Investigation and Response (AIR)
+     - name: Automated Investigation and Response (AIR)
        items:
          - name: AIR overview and permissions
            items:
@@ -344,6 +358,8 @@
            href: office-365-air.md
          - name: Use AIR
            href: office-365-air.md
+         - name: Review and approve (or reject) pending actions
+           href: air-review-approve-pending-completed-actions.md
          - name: Manage false positives and false negatives in AIR
            href: air-report-false-positives-negatives.md
          - name: View details and results of an automated investigation
@@ -368,26 +384,6 @@
        href: detect-and-remediate-illicit-consent-grants.md
      - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
        href: detect-and-remediate-outlook-rules-forms-attack.md
-     - name: Handle false positives/negatives
-       href: air-report-false-positives-negatives.md
-     - name: Report messages and files to Microsoft
-       items:
-         - name: How do I report a suspicious email or file to Microsoft
-           href: report-junk-email-messages-to-microsoft.md
-         - name: Admin submissions
-           href: admin-submission.md
-         - name: Enable the Report Message and the Report Phishing add-ins
-           href: enable-the-report-message-add-in.md
-         - name: Report false positives and false negatives in Outlook
-           href: report-false-positives-and-false-negatives.md
-         - name: User reported message settings
-           href: user-submission.md
-         - name: Use mail flow rules to see what users are reporting to Microsoft
-           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-         - name: Submit malware and non-malware to Microsoft
-           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-     - name: Admin review for reported messages
-       href: admin-review-reported-message.md
      - name: Remediate malicious email
        href: remediate-malicious-email-delivered-office-365.md
      - name: Detect and address compromised user accounts quickly
@@ -402,8 +398,6 @@
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: Remove blocked connectors
           href: remove-blocked-connectors.md
-     - name: Review and approve (or reject) pending actions
-       href: air-review-approve-pending-completed-actions.md
      - name: Tune anti-phishing protection
        href: tuning-anti-phishing.md
      - name: Quarantine
