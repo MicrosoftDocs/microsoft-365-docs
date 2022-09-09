@@ -85,4 +85,4 @@ For example, to show data about high-severity alerts only:
 
 ## Related topic
 
-- [Device health and compliance report](machine-reports.md)
+- [Device health and compliance report](device-health-reports.md)
