@@ -2377,47 +2377,47 @@
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-infrastructure.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-define-sec-infoprotect-levels.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-classification.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-increased-security-office-365.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-deploy-windows-information-protection.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-data-loss-prevention.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-email-encryption.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-privileged-access-management.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-exit-criteria.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
@@ -7706,14 +7706,19 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs-pr/microsoft-365/security/office-365-security/office365-security-incident-response-overview.md",
+      "source_path": "microsoft-365/security/office-365-security/office365-security-incident-response-overview.md",
       "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
-        "source_path": "microsoft-365-docs-pr/microsoft-365/security/office-365-security/security-roadmap.md",
+        "source_path": "microsoft-365/security/office-365-security/security-roadmap.md",
         "redirect_url": "/microsoft-365/security/office-365-security/overview",
         "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/office365-security-incident-response-overview.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-premium/m365bp-ms-partner.md",
