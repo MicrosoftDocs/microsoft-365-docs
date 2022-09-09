@@ -165,12 +165,12 @@ When you turn on this feature, you'll be able to incorporate data from Microsoft
 
 To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](/microsoft-365/security/office-365-security/office-365-ti).
 
-## Microsoft Threat Experts - Targeted Attack Notifications
+## Microsoft Defender Experts - Endpoint Attack Notifications
 
-Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you've applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
+Out of the two Microsoft Defender Expert components, Endpoint Attack Notification is in general availability. Experts on Demand capability is still in preview. You can only use Experts on Demand if you've applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Defender Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
 
 > [!NOTE]
-> The Microsoft Threat Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+> The Microsoft Defender Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
 ## Microsoft Defender for Cloud Apps
 
