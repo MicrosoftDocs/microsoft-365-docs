@@ -91,7 +91,7 @@ You can assign roles to users in order to grant access to specific assessments. 
 
 The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
 
-There are two ways of granting access to assessments to individual users:
+There are two ways of granting access to assessments to users:
 
 1. **From an assessment's details page**: Open an assessment and select the **Manage users access** command to select your users and assign them a role. See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
     > [!NOTE]
