@@ -93,13 +93,13 @@ The four roles listed in table above provide access to assessments: Compliance M
 
 There are two ways of granting access to assessments to individual users:
 
-1. **From an assessment's details page**: Open an assessment and select the **Manage users access** command to select your users and assign them a role. See [Grant user access to assessments](compliance-manager-assessments.md##grant-user-access-to-individual-assessments) for details.
+1. **From an assessment's details page**: Open an assessment and select the **Manage users access** command to select your users and assign them a role. See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
     > [!NOTE]
     > If you assign a role to someone to grant access to an assessment who already has an existing role, the new role assignment overrides their existing role.
-1. **Within the Compliance Manager settings**: Add users to one of the four roles listed above. See [Where to set permissions](#where-to-set-permissions) above for details.
+1. **Within the Compliance Manager settings**: Add users to one of the four roles listed above. See [Where to set permissions](#where-to-set-permissions) above for more detailed instructions.
 
     > [!NOTE]
-    > Assigning a user at this level grants them that level of access to **all** assessments by default. If you want to restrict access to specific assessments, assign the user via the assessment details page as described in point #1 above.
+    > Assigning a user at this level grants them that level of access to **all** assessments by default. If you want to restrict access to specific assessments, assign the user from the assessment details page as described in #1 above.
 
 ## Start a premium assessments trial
 

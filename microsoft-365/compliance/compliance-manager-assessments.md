@@ -174,11 +174,12 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 ## Grant user access to individual assessments
 
-When you assign users a role, they can view or edit data within all assessments (see more about [role types](compliance-manager-setup.md#role-types)). Assigning roles at the Microsoft Purview compliance portal level will allow users to see or manage data for all assessments.
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (see more about [role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment.
 
-However, you can restrict access to only certain assessments by managing user roles from within an assessment.  Granting access to individual assessments can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. Restricting access to assessments only to those who work on them helps to protect the privacy of the organization's data and business operations.
+Granting access to individual assessments can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. Restricting access to assessments only to those who work on them helps to protect the privacy of the organization's data and business operations.
 
-Access to assessments can be granted to users within your organization and to individuals outside of your organization who serve as auditors or other functions related to your organization's regulatory obligations.
+Access to assessments can be granted to individuals outside of your organization who serve as auditors or other functions related to your organization's regulatory obligations. You'll provide access to external indiviudal by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles]().
+Access to assessments can be granted to individuals outside of your organization who serve as auditors or other functions related to your organization's regulatory obligations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles]().
 
 #### Steps for granting access
 
