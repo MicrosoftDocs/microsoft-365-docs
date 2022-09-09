@@ -34,8 +34,11 @@ For an overview of Microsoft LTI, see [Integrating Microsoft products with your 
     1. Copy the **Deployment ID** assigned to your deployment of the app.
         1. This ID will be used in the **Microsoft LMS Gateway** configuration process.
 1. From the [**Organization Apps list**](https://app.schoology.com/apps/school_apps), locate the **Microsoft Teams Meetings** app and select the **Install/Remove** button.
+    1. To install the app for all users, choose the **All Users** checkbox.
+        1. Select only the roles that'll have access to Microsoft Teams in your organization, like teachers, students, or system administrators.
     1. To install the app for all courses, choose the **All Courses** checkbox.
         1. Don't check the **Course Admins Only** option to ensure the app is available to all members of the course.
+    1. To install the app for all groups, choose the **All Groups** checkbox.
 
 > [!NOTE]
 > If you choose not to install the app for all courses, then *Course Admins* must install the app for themselves by either:
