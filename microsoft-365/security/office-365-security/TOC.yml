@@ -110,33 +110,33 @@
            href: anti-spam-protection-faq.yml
          - name: Mail flow rules
            items:
-           - name: Mail flow rules (transport rules)
+           - name: Mail flow rules (transport rules) (Exchange)
              href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
-           - name: Mail flow rule conditions and exceptions
+           - name: Mail flow rule conditions and exceptions (Exchange)
              href: /exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions
-           - name: Mail flow rule actions
+           - name: Mail flow rule actions (Exchange)
              href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions
-           - name: Manage mail flow rules
+           - name: Manage mail flow rules (Exchange)
              href: /exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules
-           - name: Mail flow rule configuration best practices
+           - name: Mail flow rule configuration best practices (Exchange)
              href: /exchange/security-and-compliance/mail-flow-rules/configuration-best-practices
-           - name: Test mail flow rules
+           - name: Test mail flow rules (Exchange)
              href: /exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules
            - name: Mail flow rule procedures
              items:
-             - name: Mail flow rule procedures
+             - name: Mail flow rule procedures (Exchange)
                href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures
-             - name: Use rules for attachment blocking scenarios
+             - name: Use rules for attachment blocking scenarios (Exchange)
                href: /exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios
-             - name: Use rules to block messages with executable attachments
+             - name: Use rules to block messages with executable attachments (Exchange)
                href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
-             - name: Use rules to inspect message attachments
+             - name: Use rules to inspect message attachments (Exchange)
                href: /exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments
-             - name: Use rules to set the SCL
+             - name: Use rules to set the SCL (Exchange)
                href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
-             - name: Use mail flow rules to filter bulk mail
+             - name: Use mail flow rules to filter bulk mail (Exchange)
                href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
-             - name: Use mail flow rules to see what users are reporting to Microsoft
+             - name: Use mail flow rules to see what users are reporting to Microsoft (Exchange)
                href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
        - name: Connection filtering
          items:
@@ -282,7 +282,7 @@
            href: impersonation-insight.md
          - name: Spoof intelligence insight
            href: learn-about-spoof-intelligence.md
-         - name: View the admin audit log
+         - name: View the admin audit log (Exchange)
            href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
          - name: View email security reports
            href: view-email-security-reports.md
@@ -304,18 +304,10 @@
                href: report-false-positives-and-false-negatives.md
              - name: User reported message settings
                href: user-submission.md
-             - name: Use mail flow rules to see what users are reporting to Microsoft
-               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
              - name: Submit malware and non-malware to Microsoft
                href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
            - name: Admin review for reported messages
              href: admin-review-reported-message.md
-           - name: Manage quarantined messages and files
-             items:
-             - name: Manage quarantined messages and files as an admin
-               href: manage-quarantined-messages-and-files.md
-             - name: Find and release quarantined messages as a user
-               href: find-and-release-quarantined-messages-as-a-user.md
          - name: Use the delist portal to remove yourself from the blocked senders list
            href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
      - name: Respond and remediate
@@ -324,12 +316,6 @@
            href: responding-to-a-compromised-email-account.md
          - name: Remediate malicious email
            href: remediate-malicious-email-delivered-office-365.md
-         - name: Recover from a ransomware attack
-           href: recover-from-ransomware.md
-         - name: Detect and Remediate Illicit Consent Grants in Office 365
-           href: detect-and-remediate-illicit-consent-grants.md
-         - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
-           href: detect-and-remediate-outlook-rules-forms-attack.md
          - name: Automated Investigation and Response (AIR)
            items:
            - name: AIR overview and permissions
@@ -338,10 +324,6 @@
                href: office-365-air.md
              - name: How automated investigation and response works
                href: automated-investigation-response-office.md
-           - name: Configure AIR
-             href: office-365-air.md
-           - name: Use AIR
-             href: office-365-air.md
            - name: Review and approve (or reject) pending actions
              href: air-review-approve-pending-completed-actions.md
            - name: Manage false positives and false negatives in AIR
@@ -366,10 +348,6 @@
            href: detect-and-remediate-illicit-consent-grants.md
          - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
            href: detect-and-remediate-outlook-rules-forms-attack.md
-         - name: Remediate malicious email
-           href: remediate-malicious-email-delivered-office-365.md
-         - name: Responding to a Compromised Email Account in Office 365
-           href: responding-to-a-compromised-email-account.md
          - name: Respond to a compromised connector
            href: respond-compromised-connector.md
      - name: Tune and update
@@ -460,7 +438,7 @@
        href: sending-mail-to-office-365.md
      - name: Services for non-customers
        href: services-for-non-customers.md
-     - name: Configure EOP to deliver spam to Junk Email folders in hybrid
+     - name: Configure EOP to deliver spam to Junk Email folders in hybrid (Exchange)
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: Monitor for leaks of personal data
        href: monitor-for-leaks-of-personal-data.md
