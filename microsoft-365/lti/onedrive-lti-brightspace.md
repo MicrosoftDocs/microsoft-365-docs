@@ -22,10 +22,10 @@ The steps to add the OneDrive LTI app are:
 
 1. [Step 1: Add the new Microsoft OneDrive LTI app](#step-1-add-the-new-microsoft-onedrive-lti-app).
 1. [Step 2: Deploy the LTI app in users' Brightspace experience](#step-2-deploy-the-lti-app-in-users-brightspace-experience).
-1. [Step 3: Turn off the older OneDrive app](#step-3-turn-off-the-older-onedrive-app).
+1. [Step 3: Turn on the new OneDrive LTI app on the Quicklinks Activity Bar](#step-3-turn-on-the-new-onedrive-lti-app-on-the-quicklinks-activity-bar).
 1. [Step 4: Turn on the new OneDrive LTI app on the Quicklinks activity bar](#step-4-turn-on-the-new-onedrive-lti-app-on-the-quicklinks-activity-bar-optional) (optional).
 
-> [!IMPORTANT]
+> [!NOTE]
 > The person who performs this integration should be an administrator of Brightspace and an administrator of the Microsoft 365 tenant.
 >
 > The source documentation for LTI 1.3 settings is located in the [LTI Advantage - Administrator Guide](https://community.brightspace.com/s/article/LTI-Advantage-Administrator-Guide).
@@ -36,72 +36,103 @@ The steps to add the OneDrive LTI app are:
 
 1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
 1. Select the **Admin Consent** button and accept the permissions.
-    1. If this step isn't performed, the following step will give you an error, and you won't be able to take this step for an hour once you've gotten the error.
+    1. **Important:** If **Admin Consent** isn't accepted, the next step will give you an error, and you'll have to wait an hour before you can continue.
 1. Select the **Create new LTI Tenant** button.
 1. In the **LTI Consumer Platform** list, select **D2L Brightspace**.
-1. In the **D2L Brightspace Base URL** field, enter your Brightspace base URL, like `https://testschool.brightspace.com`.
+1. In the **D2L Brightspace Base URL** field, enter your Brightspace base URL, like `https://myschool.brightspace.com`.
 1. Select the **Next** button. The **Register LTI 1.3 App** page will load.
-    1. Keep this page open in its own tab when completing the next set of steps.
+    1. Keep this page open in its own tab when completing the next set of steps. The values required will be generated in the next steps.
 
-### Add Microsoft LTI registration details to Brightspace
+### Add Microsoft LTI app to Brightspace
 
-1. In a new tab, open your Brightspace admin site to register the new Microsoft LTI app.
-1. Navigate to **Admin** > **Manage Extensibility** and select **LTI Advantage**.
-1. Select **Register App**.
-1. Register your app as **standard**.
-1. Enter a name for the app, like `OneDrive LTI`.
-1. Enter the domain of the URL where you registered the LTI app, like `https://onedrivelti.microsoft.com`.
-1. Using the details given in the Microsoft LTI Registration Portal, copy and paste the **Redirect URL**, **OpenID Connect Login URL**, and **Keyset URL** into Brightspace.
-    1. Paste Microsoft's **Redirect URL** into Brightspace's **ToolOIDCLaunchRedirectUri** field.
-    1. Paste Microsoft's **OpenID Connect Login URL** into Brightspace's **OIDCLoginInitiationUri** field.
-    1. Paste Microsoft's **Keyset URL** in Brightspace's **ToolPublicJwksUri** field.
-1. Select the **Deep Linking** extension.
-1. Select **Register**.
-1. You'll be shown Brightspace registration details.
-    1. Keep this page open in its own tab when completing the next set of steps.
+1. In a new browser tab, sign into your Brightspace LMS with an *Administrator* or *Super Administrator* account for the organization(s) you want to add the OneDrive LTI app to.
+1. Select the gear icon at the top right to access **Admin Tools**.
+1. Under the **Organization Related** category, find **Manage Extensibility**.
+    1. The URL should look similar to this example: `https://<yourbrightspacedomain>/d2l/le/ltiadvantage/registrations/home`.
+1. Select the **LTI Advantage** tab at the top, and then select **Register a Tool**.
+1. Select the **Standard** radio button for the **Tool registration type**.
+1. Enter a name for the app, like `Microsoft OneDrive LTI App`.
+1. In the **Domain** field, enter `https://onedrivelti.microsoft.com`.
+1. Navigate to the browser tab with the Microsoft OneDrive LTI Registration Portal to copy the other required values:
+    1. Paste the `ToolOIDCLaunchRedirectUri` value into the **Redirect URLs** field.  
+        1. **Important:** You'll use this **Redirect URL** value in later steps.
+    1. Paste the ``OIDCLoginInitiationUri` value into the **OpenID Connect Login URL** field.
+    1. Paste the `ToolPublicJwksUri` value into the **Keyset URL** field.
+1. Under **Extensions**, Select the **Deep Linking** checkbox.
+1. Select the **Register** button at the bottom of the page.
 
-### Add Brightspace LTI registration details to the Microsoft LTI Registration Portal
+Brightspace app registration details will be displayed. Keep this page open in its own tab while completing the next set of steps.
 
-After the app is registered in Brightspace, copy values from Brightspace's registration portal into Microsoft's LTI registration portal.
+### Add Brightspace LTI Platform registration details to the Microsoft OneDrive LTI Registration Portal
 
-1. Navigate back your open tab of Microsoft's **Register LTI 1.3 App** page.
-1. Copy Brightspace registration details and paste them into Microsoft's LTI Registration Portal.
-    1. Paste Brightspace's **Issuer** into Microsoft's **LTI Issuer** field.
-    2. Paste Brightspace's **OpenID Connect Authentication Endpoint** into Microsoft's **LTI Authorize URL** field.
-    3. Paste Brightspace's **Brightspace Keyset URL** into Microsoft's **LTI Public Jwks URL** field.
-    4. Paste Brightspace's **Brightspace OAuth2 Access Token URL** into Microsoft's **LTI Access Token URL** field.
-    5. Paste Brightspace's **Client ID** into Microsoft's **LTI Client ID** field.
+After the app is registered in Brightspace, you'll copy values from Brightspace's registration portal into Microsoft's LTI Registration Portal.
+
+1. Navigate back your open browser tab of Microsoft's OneDrive LTI Registration Portal page.
+1. Copy the required Brightspace app registration details page and paste them into Microsoft's LTI Registration Portal.
+    1. Paste Brightspace's **Issuer** value into Microsoft's **LTI Issuer** field.
+    2. Paste Brightspace's **OpenID Connect Authentication Endpoint** value into Microsoft's **LTI Authorize URL** field.
+    3. Paste Brightspace's **Brightspace Keyset URL** value into Microsoft's **LTI Public Jwks URL** field.
+    4. Paste Brightspace's **Brightspace OAuth2 Access Token URL** value into Microsoft's **LTI Access Token URL** field.
+    5. Paste Brightspace's **Client ID** value into Microsoft's **LTI Client ID** field.
 1. Select the **Next** button.
 1. Select the **Save** button.
 1. A message saying *LTI consumer was created successfully.* will appear.
-1. Review your registration details by selecting the **View LTI Tenants** button on the home page.
+    1. Optional: You can review the registration details by selecting the **View LTI Tenants** button on the home page.
 
 ## Step 2: Deploy the LTI app in users' Brightspace experience
 
 After Microsoft OneDrive LTI and Brightspace are connected, you need to deploy the OneDrive LTI app in users' Brightspace experience.
 
-1. Sign into your Brightspace admin site.
-1. Select the LTI app that you created.
-1. Enter in a deployment a name.
-1. Select all security settings except **Classlist** and **Anonymous**.
-1. Don't set configuration settings.
+1. In the tab with your Brightspace admin experience, navigate to **Admin Tools** > **Manage Extensibility** > **LTI Advantage** to view the LTI Advantage apps list.
+1. Select the name of the LTI Advantage app you created in the previous step.
+1. Scroll to the bottom of the page and select the **View Deployments** link.
+    1. The URL should look similar to this example: `https://<yourbrightspacedomain>/d2l/le/ltiadvantage/deployments/home`
+1. Select **New Deployment**.
+1. Select the app by the name you entered when creating the Brightspace app registration, like `Microsoft OneDrive LTI App`.
+1. Enter a deployment name for this deployment, like `Microsoft OneDrive Deployment`.
+1. In the **Extensions** section, select **Deep Linking**.
+1. Select all the security settings checkboxes except for **Classlist** and **Anonymous**.
+1. Don't select any configuration settings, substitution parameters, or customer parameters.
+1. Select **Add Org Units** and choose the org units you want to use the new LTI app.  
+    1. You can select:
+        1. The **Root org** along with the **All descendants** option to include everyone.
+        1. Individual org units to include just those units.
+        1. **All descendant** units using the radio buttons in the **Options** column.
 1. Select **Create Deployment**.
-1. Choose the org units you want to use the new LTI app. You can select the root org to include everyone or select individual org units.
+    1. Your new deployment will display in the list. Leave this tab option and continue with the next steps.
 
-### Create links to the OneDrive LTI app in users' Brightspace experience
+### Create links to the OneDrive LTI app in Brightspace
 
-1. Sign into your Brightspace admin site.
-1. Select the Brightspace OneDrive LTI app you created. Deployment details will appear.
-1. Select **View Links**.
-1. Select **Create a link**.
-1. Enter in a name for the link.
+This step adds the OneDrive LTI app to menus in the Brightspace LMS where users select to insert OneDrive files.
+
+1. In the tab with your Brightspace admin experience, navigate to **Admin Tools** > **Manage Extensibility** > **LTI Advantage** to view the LTI Advantage apps list.
+1. Select the name of the LTI Advantage app you created.
+1. Scroll to the bottom of the page and select the **View Deployments** link.
+1. Select the name of the deployment you created in the previous step.
+1. Scroll to the bottom of the page and select **View Links**.
+
+#### Create a **Deep Linking Quicklink** for the app that will appear in the **Quicklinks** menu
+
+1. From the **View Links** page, select **New Link**.
+1. Enter a name for the link, like `Microsoft OneDrive`.
+    1. This name will be visible to users in their Brightspace experience.
 1. Paste the **Redirect URL** into the **URL** field.
+    1. This is the same **Redirect URL** used in previous steps, listed as the `ToolOIDCLaunchRedirectUri` in Microsoft's OneDrive LTI Registration Portal.
 1. Set the **Type** to **Deep Linking Quicklink**.
+1. Select **+Add Customer Parameter** and enter `launchType` for the **Name** field and `linkSelection` for the **Value** field.
 1. Select the **Save and Close** button.
 
-The OneDrive LTI app will now show up in **Add Existing Content** and **QuickLinks** in Brightspace. The link will show a generic *link* icon rather than a OneDrive *cloud* icon. Also, the title will reflect the name provided in the app's LTI link settings.
+#### Create a **Deep Linking Insert Stuff** link for the app that will appear in the **Insert Stuff** menu
 
-## Step 3: Turn off the older OneDrive app
+1. From the **View Links** page, select **New Link**.
+1. Enter in a name for the link, like `Microsoft OneDrive`.
+    1. This name will be visible to users in their Brightspace experience.
+1. Paste the **Redirect URL** into the **URL** field.
+    1. This is the same **Redirect URL** used in previous steps, listed as the `ToolOIDCLaunchRedirectUri` in Microsoft's OneDrive LTI Registration Portal.
+1. Set the **Type** to **Deep Linking Insert Stuff**.
+1. Select the **Save and Close** button.
+
+## Step 3: Turn on the new OneDrive LTI app on the Quicklinks Activity Bar
 
 The OneDrive LTI app is now available to users, but the older OneDrive app must now be turned off.
 
@@ -134,7 +165,7 @@ You'll need to repeat these steps for every org ID (or parent org ID) where you 
 
 ### Does the new OneDrive LTI FilePicker support personal accounts?
 
-Yes, personal accounts are allowed to open OneDrive to upload the files. There's a checkbox in the app in the OneDrive LTI registration portal to allow multiple accounts or not. If checked, personal accounts are allowed.
+Yes, personal accounts are allowed to open OneDrive to upload the files. There's a checkbox in the app in the OneDrive LTI Registration Portal to allow multiple accounts or not. If checked, personal accounts are allowed.
 
 ### Does the FilePicker support multiple languages?
 
