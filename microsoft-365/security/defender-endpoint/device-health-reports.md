@@ -45,7 +45,7 @@ The Device health and compliance dashboard is structured in two tabs:
   - [Operating systems and platforms card](device-health-sensor-health-os.md#operating-systems-and-platforms-card)
   - [Windows versions card](device-health-sensor-health-os.md#windows-versions-card)
 
-- The [**Microsoft Defender Antivirus health** tab](device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus (MDAV):
+- The [**Microsoft Defender Antivirus health** tab](device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus:
   - [Antivirus mode card](device-health-microsoft-defender-antivirus-health.md#antivirus-mode-card)
   - [Antivirus engine version card](device-health-microsoft-defender-antivirus-health.md#antivirus-engine-version-card)
   - [Antivirus security intelligence version card](device-health-microsoft-defender-antivirus-health.md#antivirus-security-intelligence-version-card)

@@ -39,7 +39,7 @@ The Device Health report provides information about the devices in your organiza
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 
-- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus (MDAV):
+- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
   - [Antivirus mode card](#antivirus-mode-card)
   - [Antivirus engine version card](#antivirus-engine-version-card)
   - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
