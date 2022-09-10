@@ -3,7 +3,8 @@ title: Address false positives or false negatives in Microsoft 365 Defender
 description: Was something missed or wrongly detected by AIR in Microsoft 365 Defender? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, remediation, false positive, false negative
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,7 +23,6 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
 ---
 
 # Address false positives or false negatives in Microsoft 365 Defender

@@ -258,6 +258,7 @@
 ###### [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+##### [Attack surface reduction rules report](attack-surface-reduction-rules-report.md)
 ##### [Troubleshoot attack surface reduction (ASR) rules](troubleshoot-asr-rules.md)
 ##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
@@ -523,7 +524,11 @@
 ####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
-###### [Automated Investigation]()
+###### [Browser extensions]()
+####### [Export broswer extenstions assessment](get-assessment-browser-extensions.md)
+####### [Get browser extenstions permisson information](get-browser-extensions-permission-info.md)
+
+###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)

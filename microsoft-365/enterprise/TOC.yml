@@ -172,6 +172,8 @@
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Cross-tenant mailbox migration
           href: cross-tenant-mailbox-migration.md
+        - name: Cross-tenant identity mapping
+          href: cross-tenant-identity-mapping.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-geo

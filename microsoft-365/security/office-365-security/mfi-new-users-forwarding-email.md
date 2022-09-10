@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: 
 description: Admins can learn how to use the New users forwarding email insight in the Security & Compliance Center to investigate when users in their organization are forwarding messages to new domains.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
 ---
 

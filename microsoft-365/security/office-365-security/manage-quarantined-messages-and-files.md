@@ -18,8 +18,8 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Manage quarantined messages and files as an admin in EOP
@@ -280,6 +280,9 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
 > The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 or Plan 2 subscribers.
 
 In organizations with Defender for Office 365, admins can manage files that were quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams. To enable protection for these files, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+
+> [!NOTE]
+> Files quarantined in SharePoint or OneDrive are removed fom quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.
 
 ### View quarantined files
 

@@ -2,7 +2,7 @@
 title: Manage how and where Microsoft Defender Antivirus receives updates
 description: Manage the fallback order for how Microsoft Defender Antivirus receives protection updates.
 keywords: updates, security baselines, protection, fallback order, ADL, MMPC, UNC, file path, share, wsus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ---
 

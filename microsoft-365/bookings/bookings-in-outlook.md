@@ -57,7 +57,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 
 1. Bookings with me and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings with me. The Bookings app must be enabled for users to have access to Bookings with me.
 
-   To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
+   To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
 
 2. Calendar FreeBusy Anonymous sharing must be enabled to use Bookings with me. This allows the Bookings page to have access to the free/busy information in your Outlook calendar. Use PowerShell to check the status.
 
@@ -65,13 +65,15 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    "Anonymous:CalendarSharingFreeBusyReviewer"" should be one of the domains in the response.
+    Anonymous:SharingPolicyAction must be one of the domains in the response. SharingPolicyAction value can be CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail, or CalendarSharingFreeBusyReviewer (default).
 
    To enable anonymous sharing, use the following command.
 
    ```PowerShell
-     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
+     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
+  
+  For more information, see [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## Turn Bookings with me on or off
 
@@ -94,7 +96,8 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns “EwsEnabled:" (empty is default), then enable and proceed to Step 2.
+    If the command returns “EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
+    Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
