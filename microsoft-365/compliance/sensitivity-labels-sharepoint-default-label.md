@@ -84,6 +84,8 @@ For an existing document library:
 
 If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
 
+The permissions required to set and change a default sensitivity label for a SharePoint library are inherited. As with the ability to change the library name, any SharePoint site member has this permission.
+
 > [!NOTE]
 > These new settings are gradually rolling out to tenants. If you don't see them, try again in a few days.
 
