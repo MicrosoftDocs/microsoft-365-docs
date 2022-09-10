@@ -74,9 +74,13 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
 The Microsoft Defender for Endpoint on iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. It can also provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
 
+Admin can use the following steps to configure supervised devices.
+
 ### Configure Supervised Mode via Intune
 
-Next, configure the supervised mode for Defender for Endpoint app through an App Configuration policy.
+Configure the supervised mode for Defender for Endpoint app through an App configuration policy and Device configuration profile.
+
+#### App configuration policy
 
    > [!NOTE]
    > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for ALL managed iOS devices as a best practice.
@@ -112,17 +116,23 @@ Next, configure the supervised mode for Defender for Endpoint app through an App
 
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
-1. Next you must deploy a custom profile on supervised iOS devices. This is for enhanced Anti-phishing capabilities. Follow the steps below:
+#### Device configuration profile
 
-    - Download the config profile from [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
-    - Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
+   > [!NOTE]
+   > For devices that run iOS/iPadOS (in Supervised Mode), there is  custom **.mobileconfig** profile, called the **ControlFilter** profile available. This profile enables Web Protection **without setting up the local loopback VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
+
+ Deploy a custom profile on supervised iOS devices. This is for enhanced Anti-phishing capabilities. Follow the steps below:
+
+1. Download the config profile from [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
+1. Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
+1. Select **Profile Type** -> **Templates** and **Template name** -> **Custom**
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center7.](images/ios-deploy-7.png)
-    
-    - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
-    - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
-    - On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
+
+1. Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
+1. In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
+1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 
 ## Auto-Onboarding of VPN profile (Simplified Onboarding)
@@ -132,7 +142,7 @@ For unsupervised devices, a VPN is used in order to provide the Web Protection f
 >[!NOTE]
 >For supervised devices, a VPN is not needed for Web Protection capability and requires admins to setup a configuration profile on supervised devices. To configure for supervised devices, follow the steps in the [Complete deployment for supervised devices](#complete-deployment-for-supervised-devices) section.
 
-Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. 
+Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding.
 
 This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 

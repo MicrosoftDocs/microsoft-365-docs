@@ -263,6 +263,50 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 > [!NOTE]
 > Defender for Endpoint on iOS supports creating custom indicators only for IP addresses and URLs/domains.
 
+## Configure vulnerability assessment of apps
+
+>[!Note]
+>Vulnerability Assessment of apps on Microsoft Defender for Endpoint for iOS is now in public preview. The following information relates to the prerelease of the product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. If you are interested to participate in the preview, please share your Tenant name and id with us on **mdatpmobile@microsoft.com**.
+
+Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices.
+
+Admin can use the following steps to configure the vulnerability assessment of apps.
+
+### On a Supervised Device
+
+1. Ensure the device is configured in the [Supervised mode](ios-install.md#complete-deployment-for-supervised-devices).
+1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** -> **Microsoft Defender for Endpoint** -> **Enable App sync for iOS/iPadOS devices**.
+
+     :::image type="content" source="images/tvm-appSyncToggle.png" alt-text="App sync toggle" lightbox="images/tvm-appSyncToggle.png":::
+
+### On an Unsupervised Device
+
+1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Endpoint Security** -> **Microsoft Defender for Endpoint** -> **Enable App sync for iOS/iPadOS devices**.
+
+   :::image type="content" source="images/tvm-appSyncToggle.png" alt-text="App sync toggle" lightbox="images/tvm-appSyncToggle.png":::
+
+1. To get the list of all the apps including un-managed apps, Enable the toggle **Send full application inventory data on personally owned iOS/iPad OS Devices**.
+
+    :::image type="content" source="images/tvm-fullAppData.png" alt-text="Full App Data" lightbox="images/tvm-fullAppData.png":::
+
+1. Use the following steps to configure the privacy setting.
+    - Go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+    - Give the policy a name, **Platform** > **iOS/iPadOS**.
+    - Select **Microsoft Defender for Endpoint** as the target app.
+    - In Settings page, select Use configuration designer and add **DefenderTVMPrivacyMode** as the key and value type as **String**
+        - To disable privacy and collect the list of apps installed, enter value as `False` and assign this policy to users. 
+        - By default, this value is set to `True` for unsupervised devices.
+        - For users with key set as `False`, MDE will send the list of apps installed on the device for vulnerability assessment.
+    - Click **Next** and assign this profile to targeted devices/users.
+    - Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+1. Once the config is applied, end-user will need to open the app to **Approve** the privacy setting.
+    - Privacy approval screen will come only for unsupervised devices.
+    - Only if end-user approves the privacy, the app information will be sent to the MDE console.
+
+        :::image type="content" source="images/tvm-Privacy.png" alt-text="TVM Privacy" lightbox="images/tvm-Privacy.png":::
+
+Once the client versions are deployed to target iOS devices, the processing will start.  Vulnerabilities found on those devices will start showing up in the TVM section of the security console. The processing might take few hours (max 24 hours) to complete. Especially for the entire list of apps to show up in the software inventory.
+
 ## Configure option to send in-app feedback
 
 Customers now have the option to configure the ability to send feedback data to Microsoft within the Defender for Endpoint app. Feedback data helps Microsoft improve  products and troubleshoot issues.
@@ -279,9 +323,9 @@ Use the following steps to configure the option to send feedback data to Microso
 1. Select **Microsoft Defender for Endpoint** as the target app.
 
 1. In Settings page, select **Use configuration designer** and add **DefenderSendFeedback** as the key and value type as **Boolean**.
-   
+
    - To remove the ability of end-users to provide feedback, set the value as `false` and assign this policy to users. By default, this value is set to `true`. For US Government customers, the default value is set to 'false'.
-   
+
    - For users with key set as `true`, there will be an option to send Feedback data to Microsoft within the app (Menu > Help & Feedback > Send Feedback to Microsoft)
 
 1. Click **Next** and assign this profile to targeted devices/users.
