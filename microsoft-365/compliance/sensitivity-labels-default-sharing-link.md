@@ -51,7 +51,7 @@ To apply the default sharing link type for sites, sensitivity labels must be ena
 
 To apply the default sharing link type for documents in SharePoint and OneDrive, sensitivity labels must be enabled for these services. If this capability isn't yet enabled for your tenant, see [How to enable sensitivity labels for SharePoint and OneDrive (opt-in)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
-In a PowerShell session, you must [connect to Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) to configure the settings for the default sharing link type.
+In a PowerShell session, you must [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) to configure the settings for the default sharing link type.
 
 > [!NOTE]
 > Although not required, it's easiest to first [create and configure sensitivity labels in the Microsoft Purview compliance portal](create-sensitivity-labels.md), and then modify these labels with the settings that configure the default sharing link type.
@@ -71,6 +71,8 @@ The configuration settings for the default sharing link type use the PowerShell 
 
 These two settings and values are the equivalent of the parameters *DefaultSharingScope* and *DefaultShareLinkPermission* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet.
 
+Another configuration for the default sharing link type is to use the **DefaultShareLinkToExistingAccess** advanced setting,  which is the equivalent of the parameter *DefaultLinkToExistingAccess* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet. Set this value to **True** to override the other two advanced settings and their values, or **False** to use those settings and values.
+
 PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
 - To set the default sharing link type to SpecificPeople:
@@ -83,6 +85,12 @@ PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8e
     
     ````powershell
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
+    ````
+
+- To set the default sharing link type to people with existing access:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkToExistingAccess="True"}
     ````
 
 For more help to specify PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
