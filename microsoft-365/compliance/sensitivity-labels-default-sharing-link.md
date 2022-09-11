@@ -71,7 +71,7 @@ The configuration settings for the default sharing link type use the PowerShell 
 
 These two settings and values are the equivalent of the parameters *DefaultSharingScope* and *DefaultShareLinkPermission* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet.
 
-Another configuration for the default sharing link type is to use the **DefaultShareLinkToExistingAccess** advanced setting, which is the equivalent of the parameter *DefaultLinkToExistingAccess* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet. When you set this value to **True**, it overrides the other two advanced settings and their values. Alternatively, set this value to **False** to use the settings and values for DefaultSharingScope and DefaultShareLinkPermission.
+Another configuration for the default sharing link type is to use the **DefaultShareLinkToExistingAccess** advanced setting, which is the equivalent of the parameter *DefaultLinkToExistingAccess* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet. When you set this value to **True**, it overrides the other two advanced settings and their values. Alternatively, set this value to **False** to use the settings and values for **DefaultSharingScope** and **DefaultShareLinkPermission**.
 
 PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
