@@ -61,17 +61,17 @@ In a PowerShell session, you must [connect to Security & Compliance PowerShell](
 The configuration settings for the default sharing link type use the PowerShell *AdvancedSettings* parameter with the [Set-Label](/powershell/module/exchange/set-label) and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance PowerShell](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope**: The available values are:
-    - **SpecificPeople**: Sets the default sharing link for the site to the "Specific people" link
-    - **Organization**: Sets the default sharing link for the site to the "organization" link or company shareable link
-    - **Anyone**: Sets the default sharing link for the site to an Anonymous Access or Anyone link
+    - **SpecificPeople**: Sets the default sharing link to specific people (only the people the user specifies)
+    - **Organization**: Sets the default sharing link for only people in your organization
+    - **Anyone**: Sets the default sharing link to anyone with the link, which is equivalent to anonymous access
 
 - **DefaultShareLinkPermission**:  The available values are:
-    - **View**: Sets the default link permission for the site to "view" permissions
-    - **Edit**: Sets the default link permission for the site to "edit" permissions
+    - **View**: Sets the default link permission to view permissions
+    - **Edit**: Sets the default link permission to edit permissions
 
 These two settings and values are the equivalent of the parameters *DefaultSharingScope* and *DefaultShareLinkPermission* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet.
 
-Another configuration for the default sharing link type is to use the **DefaultShareLinkToExistingAccess** advanced setting,  which is the equivalent of the parameter *DefaultLinkToExistingAccess* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet. Set this value to **True** to override the other two advanced settings and their values, or **False** to use those settings and values.
+Another configuration for the default sharing link type is to use the **DefaultShareLinkToExistingAccess** advanced setting, which is the equivalent of the parameter *DefaultLinkToExistingAccess* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet. When you set this value to **True**, it overrides the other two advanced settings and their values. Alternatively, set this value to **False** to use the settings and values for DefaultSharingScope and DefaultShareLinkPermission.
 
 PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
