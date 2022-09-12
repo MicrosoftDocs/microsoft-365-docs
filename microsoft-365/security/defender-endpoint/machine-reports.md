@@ -43,7 +43,7 @@ The Device health and compliance dashboard is structured in two tabs:
 - The [**Sensor health & OS** tab](#sensor-health--os-tab) provides general operating system information, divided into three cards that display the following device attributes:
   - [Sensor health card](#sensor-health-card)
   - [Operating systems and platforms card](#operating-systems-and-platforms-card)
-  - [Windows 10 versions card](#windows-10-versions-card)
+  - [Windows versions card](#windows-versions-card)
 
 - The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus (MDAV):
   - [Antivirus mode card](#antivirus-mode-card)
@@ -130,7 +130,7 @@ For example, Secure Boot (introduced in Windows 8) practically eliminated the th
 
 Ideally, the “Current state” graph shows that the number of operating systems is weighted in favor of more current OS over older versions. Otherwise, the trends graph indicates that new systems are being adopted and/or older systems are being updated or replaced.
 
-### Windows 10 versions card
+### Windows versions card
 
 The Windows 10 versions card shows the distribution of Windows devices and their versions in your organization.
 In the same way that an upgrade from Windows 8 to Windows 10 improves security in your organization, changing from early releases of Windows to more current versions improves your posture against possible threats.
@@ -305,7 +305,7 @@ The up-to-date cards show the up-to-date status for **Antivirus engine**, **
 
 Definitions for  _Up to date_, out of date_, and _no data available_ are provided for each card below.
 
-The MDAV reports make up-to-date determinations and reports based on the following criteria:
+Microsoft Defender Antivirus makes up-to-date reports and determinations based on the following criteria:
 
 - **For engine & platform updates**: "Signature Refresh Time" (the time client events were last received for up to date reports) and "Security Intelligence Publish Time" (security intelligence VDMs are used to determine engine & platform versions)
 - **For security intelligence updates**: "Signature Refresh Time" (the time client events were last received for up to date reports), Security Intelligence Publish Time, and the last up-to-date status communicated from client
