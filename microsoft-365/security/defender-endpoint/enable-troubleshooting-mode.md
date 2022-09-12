@@ -80,6 +80,16 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
   Windows Server 2022|>=20348.617|[KB5011558: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
   Windows Server 2019 (RS5)|>=17763.2746|[KB5011551: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011551)
 
+- Troubleshooting mode is also available for machines running the modern, unified solution for Windows Server 2012 R2 and Windows Server 2016. Make sure the following components are up to date:
+
+  - Sense version 10.8049.22439.1084 [KB5005292: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292) or later
+
+  - Defender Antivirus Platform: 4.18.2207.7 [KB4052623: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or later
+
+  - Defender Antivirus Engine: 1.1.19500.2 [KB2267602: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB2267602) or later
+
+  - During troubleshooting mode, use `Set-MPPreference -DisableTamperProtection $true` to temporarily disable tamper protection and make configuration changes.
+
 - For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
 
 - The device must be actively running Microsoft Defender Antivirus, version 4.18.2203 or later.
@@ -105,7 +115,9 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](/defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
-Search by deviceId or deviceName by commenting out the respective lines.  
+
+Search by deviceId or deviceName by commenting out the respective lines. 
+ 
 ```kusto
 //let deviceName = "<deviceName>";   // update with device name
 let deviceId = "<deviceID>";   // update with device id
