@@ -277,17 +277,17 @@ Admin can use the following steps to configure the vulnerability assessment of a
 1. Ensure the device is configured in the [Supervised mode](ios-install.md#complete-deployment-for-supervised-devices).
 1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** -> **Microsoft Defender for Endpoint** -> **Enable App sync for iOS/iPadOS devices**.
 
-     :::image type="content" source="images/tvm-appSyncToggle.png" alt-text="App sync toggle" lightbox="images/tvm-appSyncToggle.png":::
+     :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggleSup" lightbox="images/tvm-app-sync-toggle.png":::
 
 ### On an Unsupervised Device
 
 1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Endpoint Security** -> **Microsoft Defender for Endpoint** -> **Enable App sync for iOS/iPadOS devices**.
 
-   :::image type="content" source="images/tvm-appSyncToggle.png" alt-text="App sync toggle" lightbox="images/tvm-appSyncToggle.png":::
+   :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggle" lightbox="images/tvm-app-sync-toggle.png":::
 
 1. To get the list of all the apps including un-managed apps, Enable the toggle **Send full application inventory data on personally owned iOS/iPad OS Devices**.
 
-    :::image type="content" source="images/tvm-fullAppData.png" alt-text="Full App Data" lightbox="images/tvm-fullAppData.png":::
+    :::image type="content" source="images/tvm-full-app-data.png" alt-text="Full App Data" lightbox="images/tvm-full-app-data.png":::
 
 1. Use the following steps to configure the privacy setting.
     - Go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
@@ -303,7 +303,7 @@ Admin can use the following steps to configure the vulnerability assessment of a
     - Privacy approval screen will come only for unsupervised devices.
     - Only if end-user approves the privacy, the app information will be sent to the Defender for Endpoint console.
 
-        :::image type="content" source="images/tvm-Privacy.png" alt-text="TVM Privacy" lightbox="images/tvm-Privacy.png":::
+        :::image type="content" source="images/tvm-user-privacy.png" alt-text="TVM Privacy" lightbox="images/tvm-user-privacy.png":::
 
 Once the client versions are deployed to target iOS devices, the processing will start. Vulnerabilities found on those devices will start showing up in the Defender Vulnerability Management dashboard. The processing might take few hours (max 24 hours) to complete. Especially for the entire list of apps to show up in the software inventory.
 
