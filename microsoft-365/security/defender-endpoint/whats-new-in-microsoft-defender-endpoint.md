@@ -59,6 +59,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 ## September 2022
 
 - [Device health reporting is now generally available](machine-reports.md). <br/>The device health report provides high-level information about the health and security of your endpoints. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
+- Troubleshooting mode is now available for Windows Server 2012 R2 and 2016 machines running the modern, unified solution. Please ensure the following components are up to date:
+Sense version 10.8049.22439.1084 (KB5005292) or later
+Defender Antivirus - Platform: 4.18.2207.7 (KB4052623) or later 
+Defender Antivirus - Engine: 1.1.19500.2 (KB2267602) or later
+During troubleshooting mode, use Set-MPPreference -DisableTamperProtection $true to temporarily disable Tamper Protection and make configuration changes.
 
 ## August 2022
 
