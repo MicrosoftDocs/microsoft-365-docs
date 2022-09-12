@@ -202,7 +202,7 @@ Turning the above privacy controls on or off will not impact the device complian
 
 ## Optional Permissions
 
-Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by MDE are mandatory in the onboarding flow. With this feature, admin can deploy MDE on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
+Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by Defender for Endpoint are mandatory in the onboarding flow. With this feature, admin can deploy Defender for Endpoint on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
 
 ### Configure Optional Permission
 
@@ -227,7 +227,7 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
     - Later, User can enable the `Web Protection` from within the App. This will install the VPN configuration on the device.
 
 > [!NOTE]
->**Optional Permission** is different from **Disable Web Protection**. Optional VPN Permission only helps to skip the permission during onboarding but its available for the end user to later review and enable it. While **Disable Web Protection** allows users to onboard the MDE app without the Web Protection. It cannot be enabled later.
+>**Optional Permission** is different from **Disable Web Protection**. Optional VPN Permission only helps to skip the permission during onboarding but its available for the end user to later review and enable it. While **Disable Web Protection** allows users to onboard the Defender for Endpoint app without the Web Protection. It cannot be enabled later.
 
 ## Configure compliance policy against jailbroken devices
 
@@ -296,12 +296,12 @@ Admin can use the following steps to configure the vulnerability assessment of a
     - In Settings page, select Use configuration designer and add **DefenderTVMPrivacyMode** as the key and value type as **String**
         - To disable privacy and collect the list of apps installed, enter value as `False` and assign this policy to users. 
         - By default, this value is set to `True` for unsupervised devices.
-        - For users with key set as `False`, MDE will send the list of apps installed on the device for vulnerability assessment.
+        - For users with key set as `False`, Defender for Endpoint will send the list of apps installed on the device for vulnerability assessment.
     - Click **Next** and assign this profile to targeted devices/users.
     - Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 1. Once the config is applied, end-user will need to open the app to **Approve** the privacy setting.
     - Privacy approval screen will come only for unsupervised devices.
-    - Only if end-user approves the privacy, the app information will be sent to the MDE console.
+    - Only if end-user approves the privacy, the app information will be sent to the Defender for Endpoint console.
 
         :::image type="content" source="images/tvm-Privacy.png" alt-text="TVM Privacy" lightbox="images/tvm-Privacy.png":::
 
