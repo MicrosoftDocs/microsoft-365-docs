@@ -125,6 +125,24 @@ For overview information, see [Manage Microsoft 365 with PowerShell](../../enter
 ## Force a password change for all users in your business
 
 Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
+
+## Set strong passwords
+
+1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+2. Using PowerShell, you can turn off strong password requirements for all users with the following command:
+
+    ```powershell
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+
+3. You can turn **OFF** strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    ```
+
+> [!NOTE]
+> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
   
 ## I don't have a Microsoft 365 for business subscription
 
