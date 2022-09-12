@@ -59,7 +59,7 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > [!NOTE]
     > The selected user group should consist of Intune enrolled users.
 
-       > :::image type="content" source="images/ios-deploy-2.png" alt-text="The Add group tab in the Microsoft Endpoint Manager Admin Center" lightbox="images/ios-deploy-2.png":::
+   :::image type="content" source="images/ios-deploy-2.png" alt-text="The Add group tab in the Microsoft Endpoint Manager Admin Center" lightbox="images/ios-deploy-2.png":::
 
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**. In a few moments, the Defender for Endpoint app should be created successfully, and a notification should show up at the top-right corner of the page.
 
