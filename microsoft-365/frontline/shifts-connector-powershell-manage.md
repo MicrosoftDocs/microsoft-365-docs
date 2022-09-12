@@ -65,39 +65,11 @@ This article assumes that you've already set up a connection to Blue Yonder WFM,
 
 [!INCLUDE [shifts-connector-check-setup-status](includes/shifts-connector-check-setup-status.md)]
 
-To check the status of the connection you set up using the operation ID that you received in email:
-
-1. [Set up your environment](#set-up-your-environment) (if you haven't already).
-1. Run the following command. This command gives you the overall status of the team mappings for the connection.
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionOperation -OperationId <YourOperationId>
-    ```
-
-To learn more, see [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation).
-
 ## View an error report for a connection
 
 <a name="error_report"> </a>
 
 [!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]
-
-You can run a report that shows error details for a connection. The report lists team and user mappings that succeeded and failed. It also provides information about any issues related to the accounts associated with the connection.
-
-1. [Set up your environment](#set-up-your-environment) (if you haven't already).
-1. Get a list of error reports for a connection.
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionErrorReport -ConnectorInstanceId <ConnectorInstanceId>
-    ```
-
-1. To view a specific error report, run the following command:
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionErrorReport -ErrorReportId <ErrorReportId>
-    ```
-
-To learn more, see [Get-CsTeamsShiftsConnectionErrorReport](/powershell/module/teams/get-csteamsshiftsconnectionerrorreport).
 
 ## Resolve connection errors
 
@@ -155,27 +127,10 @@ ForEach ($mapping in $mappings){
 
 [!INCLUDE [shifts-connector-account-authorization-errors](includes/shifts-connector-account-authorization-errors.md)]
 
-Account authorization errors may occur if the WFM service account or Microsoft 365 system account credentials are incorrect or don't have the required permissions.
-
-To change your WFM service account or Microsoft 365 system account credentials for the connection, you can run the [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet or use the PowerShell script in the [Change connection settings](#change-connection-settings) section of this article.
-
 ## Change connection settings
 <a name="change_settings"> </a>
 
 [!INCLUDE [shifts-connector-change-connection-settings](includes/shifts-connector-change-connection-settings.md)]
-
-Use this script to change connection settings. Settings that you can change include your WFM service account and password, Microsoft 365 system account, team mappings, and sync settings.
-
-Sync settings include the sync frequency (in minutes) and the schedule data that's synced between your WFM system and Shifts. Schedule data is defined in the following parameters, which you can view by running [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
-
-- The **enabledConnectorScenarios** parameter defines data that's synced from your WFM system to Shifts. Options are `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
-- The **enabledWfiScenarios** parameter defines data that's synced from Shifts to your WFM system. Options are `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
-
-    > [!NOTE]
-    > If you choose not to sync open shifts, open shift requests, swap requests, or time off requests between Shifts and your WFM system, there's another step you need to do to hide the capability in Shifts. After you run this script, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
-
-> [!IMPORTANT]
-> For settings that you don't want to change, you'll need to re-enter the original settings when you're prompted by the script.
 
 [Set up your environment](#set-up-your-environment) (if you haven't already), and then run the following script.
 
@@ -280,46 +235,9 @@ Write-Host "Success"
 
 [!INCLUDE [shifts-connector-disable-shifts-requests](includes/shifts-connector-disable-shifts-requests.md)]
 
-> [!IMPORTANT]
-> Follow these steps only if you chose to disable open shifts, open shift requests, swap requests, or time off requests using the script in the [Change connection settings](#change-connection-settings) section earlier in this article or by using the [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet. Completing this step hides the capability in Shifts. Without this second step, users will still see the capability in Shifts, and will get an "unsupported operation" error message if they try to use it.
-
-To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a WFM instance:
-
-- Open shifts: ```openShiftsEnabled```
-- Swap requests:  ```swapShiftsRequestsEnabled```
-- Time off requests: ```timeOffRequestsEnabled```
-
-To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
-
 ## Unmap a team from one connection and map it to another connection
 
 [!INCLUDE [shifts-connector-unmap-a-team](includes/shifts-connector-unmap-a-team.md)]
-
-> [!NOTE]
-> The Microsoft 365 system account must be the same for both connections. If it isn't, you'll get a "This designated actor profile doesn't have team ownership privileges" error message.
-
-If you want to unmap a team from one connection and map it to another connection:
-
-1. [Set up your environment](#set-up-your-environment) (if you haven't already).
-1. View a list of all team mappings for a connection.
-
-    ```powershell
-    Get-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId>
-    ```
-
-1. Remove a team mapping from the connection.
-
-    ```powershell
-    Remove-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId>
-    ```
-
-1. Map the team to another connection.
-
-    ```powershell
-    New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId> -WfmTeamId <SiteId> -TimeZone <TimeZone>
-    ```
-
-To learn more, see [Get-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/get-csteamsshiftsconnectionteammap), [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap), and [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap).
 
 ## Disable sync for a connection
 
