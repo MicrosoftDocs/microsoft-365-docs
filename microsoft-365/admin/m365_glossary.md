@@ -18,4 +18,4 @@ description: "Learn how to view the Japanese Katakana glossary for the Microsoft
 
 # Microsoft 365 admin center Katakana glossary
 
-This is Japanese-specific article, and isn't available in your language. To view the Japanese article, see [Microsoft 365 admin center Katakana glossary](https://go.microsoft.com/fwlink/p/?linkid=2208404).
+This is a Japanese language-specific article, and isn't available in your language. To view the Japanese article, see [Microsoft 365 admin center Katakana glossary](https://go.microsoft.com/fwlink/p/?linkid=2208404).
