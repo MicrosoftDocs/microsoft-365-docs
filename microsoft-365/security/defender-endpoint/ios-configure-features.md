@@ -305,7 +305,7 @@ Admin can use the following steps to configure the vulnerability assessment of a
 
         :::image type="content" source="images/tvm-Privacy.png" alt-text="TVM Privacy" lightbox="images/tvm-Privacy.png":::
 
-Once the client versions are deployed to target iOS devices, the processing will start.  Vulnerabilities found on those devices will start showing up in the TVM section of the security console. The processing might take few hours (max 24 hours) to complete. Especially for the entire list of apps to show up in the software inventory.
+Once the client versions are deployed to target iOS devices, the processing will start. Vulnerabilities found on those devices will start showing up in the Defender Vulnerability Management dashboard. The processing might take few hours (max 24 hours) to complete. Especially for the entire list of apps to show up in the software inventory.
 
 ## Configure option to send in-app feedback
 
