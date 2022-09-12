@@ -301,6 +301,11 @@ Here are some examples:
 1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
 1. Finish configuring the rule and policy and apply it.
 
+## Scenario 7 Authorization groups
+
+
+
+
 
 ## See also
 

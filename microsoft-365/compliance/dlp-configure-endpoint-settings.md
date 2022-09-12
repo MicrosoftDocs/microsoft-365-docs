@@ -293,6 +293,18 @@ By default, when devices are onboarded, activity for Office, PDF, and CSV files 
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
+
+### Printer groups
+
+
+
+### Removable storage device groups
+
+### Network share groups
+
+### VPN settings
+
+
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
