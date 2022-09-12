@@ -303,7 +303,11 @@ Here are some examples:
 
 ## Scenario 7 Authorization groups
 
+scenario printer groups
 
+1. Select **Audit or restrict activities on devices**
+1. Then pick **File activities on all apps**
+1. Select **Apply restrictions to specific activity** 
 
 
 

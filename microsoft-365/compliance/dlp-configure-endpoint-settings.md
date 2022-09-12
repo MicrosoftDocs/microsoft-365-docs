@@ -293,9 +293,33 @@ By default, when devices are onboarded, activity for Office, PDF, and CSV files 
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
-
 ### Printer groups
 
+Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
+
+You can define printers by their:
+
+- Friendly printer name
+- USB product ID
+- USB vendor ID
+- IP range
+- Print to file
+- Universal printer
+- Corporate printer
+- Print to local
+
+The **Alias** is a name that only appears in the Purview console. So, continuing with the example, you would create a printer group with an alias of **Legal printers** and add individual printers by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
+
+All these values are connected by a logical AND, so the more parameters you define, the more restrictive the group membership is.
+
+You can assign these policy actions to the group in a DLP policy:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+The most common use case is to use printers groups as an allow list as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it is available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
 
 
 ### Removable storage device groups
