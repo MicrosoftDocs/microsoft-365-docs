@@ -32,7 +32,7 @@ This article gives you an overview of Shifts connectors and how they work.
 
 Connectors sync schedule data between your WFM system and Shifts, bringing your organization’s schedules into Teams. Shifts is where your frontline workers engage for their scheduling needs. Your WFM system is the system of record for business rules, compliance, and intelligence.
 
-Data flows via the connector both ways to ensure schedules are always up to date. Schedules in your WFM system are synced to Shifts. And, changes made to schedules in Shifts are synced back to your WFM system in real time. As the system of record, all business rules are enforced by your WFM system before data is saved to Shifts.
+Data flows via the connector both ways to ensure schedules are always up to date. Schedules in your WFM system are synced to Shifts. And, changes made to schedules in Shifts are synced back to your WFM system. As the system of record, all business rules are enforced by your WFM system before data is saved to Shifts.
 
 ## Managed Shifts connectors
 
