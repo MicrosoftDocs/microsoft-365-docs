@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 admin center Katakana glossary"
+title: "Microsoft 365 admin center katakana glossary"
 f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
@@ -9,13 +9,12 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- M365-subscription-management
 - Adm_O365
-ms.custom:
-search.appverid: MET150
-description: "Learn how to view the Japanese Katakana glossary for the Microsoft 365 admin center."
+ROBOTS: NOINDEX, NOFOLLOW 
+description: "Learn how to view the Japanese katakana glossary for the Microsoft 365 admin center."
+ms.date: 09/12/2022
 ---
 
-# Microsoft 365 admin center Katakana glossary
+# Microsoft 365 admin center katakana glossary
 
-This is a Japanese language-specific article, and isn't available in your language. To view the Japanese article, see [Microsoft 365 admin center Katakana glossary](https://go.microsoft.com/fwlink/p/?linkid=2208404).
+This is a Japanese language-specific article, and isn't available in your language. To view the Japanese article, see [Microsoft 365 admin center katakana glossary](https://go.microsoft.com/fwlink/p/?linkid=2208404).
