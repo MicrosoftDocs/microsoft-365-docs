@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md",
+      "redirect_url": "/microsoft-365/admin/toc.yml",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/add-users/strong-password.md",
       "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
       "redirect_document_id": false
