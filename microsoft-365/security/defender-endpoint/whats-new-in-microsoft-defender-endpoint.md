@@ -11,11 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/06/2022
+ms.date: 09/12/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+- m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 ---
