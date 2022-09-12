@@ -1,6 +1,6 @@
 ---
-title: Device health and compliance report in Microsoft Defender for Endpoint
-description: Use the device health and compliance report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
+title: Device health report in Microsoft Defender for Endpoint
+description: Use the device health report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -11,12 +11,13 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
-ms.date: 09/01/2022 
+ms.date: 09/06/2022 
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+ms.reviewer: mkaminska
 ---
 
 # Device health and compliance report in Microsoft Defender for Endpoint
@@ -31,7 +32,7 @@ ms.subservice: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
+The Device Health report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
 
 > [!IMPORTANT]
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
@@ -42,7 +43,7 @@ The Device health and compliance dashboard is structured in two tabs:
 - The [**Sensor health & OS** tab](#sensor-health--os-tab) provides general operating system information, divided into three cards that display the following device attributes:
   - [Sensor health card](#sensor-health-card)
   - [Operating systems and platforms card](#operating-systems-and-platforms-card)
-  - [Windows 10 versions card](#windows-10-versions-card)
+  - [Windows versions card](#windows-versions-card)
 
 - The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus (MDAV):
   - [Antivirus mode card](#antivirus-mode-card)
@@ -129,7 +130,7 @@ For example, Secure Boot (introduced in Windows 8) practically eliminated the th
 
 Ideally, the “Current state” graph shows that the number of operating systems is weighted in favor of more current OS over older versions. Otherwise, the trends graph indicates that new systems are being adopted and/or older systems are being updated or replaced.
 
-### Windows 10 versions card
+### Windows versions card
 
 The Windows 10 versions card shows the distribution of Windows devices and their versions in your organization.
 In the same way that an upgrade from Windows 8 to Windows 10 improves security in your organization, changing from early releases of Windows to more current versions improves your posture against possible threats.
@@ -304,7 +305,7 @@ The up-to-date cards show the up-to-date status for **Antivirus engine**, **
 
 Definitions for  _Up to date_, out of date_, and _no data available_ are provided for each card below.
 
-The MDAV reports make up-to-date determinations and reports based on the following criteria:
+Microsoft Defender Antivirus makes up-to-date reports and determinations based on the following criteria:
 
 - **For engine & platform updates**: "Signature Refresh Time" (the time client events were last received for up to date reports) and "Security Intelligence Publish Time" (security intelligence VDMs are used to determine engine & platform versions)
 - **For security intelligence updates**: "Signature Refresh Time" (the time client events were last received for up to date reports), Security Intelligence Publish Time, and the last up-to-date status communicated from client

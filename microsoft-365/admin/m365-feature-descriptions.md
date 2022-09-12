@@ -1,8 +1,8 @@
 ---
 title: "Microsoft 365 feature descriptions"
 ms.author: office365servicedesc
-author: pamelaar
-manager: gailw
+author: pebaum
+manager: scotv
 audience: ITPro
 ms.topic: reference
 f1_keywords:

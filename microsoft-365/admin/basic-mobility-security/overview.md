@@ -61,4 +61,3 @@ If you just need mobile app management (MAM), perhaps for people updating work p
 [Set up Basic Mobility and Security](set-up.md) (article)\
 [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md) (article)\
 [Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) (article)\
-[Get details about devices managed by Basic Mobility and Security](get-details-about-managed-devices.md) (article)
