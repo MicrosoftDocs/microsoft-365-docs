@@ -47,7 +47,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
     - To create a new connection, select **Add connector** at the top of the page to start the wizard.
   
 > [!NOTE]
-> You can also get to the Connector Management page directly when you select the **Connector Management** button on the last page of the wizard during connection setup.
+> You can also go directly to the Connector Management page when you select the **Connector Management** button on the last page of the wizard during connection setup.
 
 ## Related articles
 

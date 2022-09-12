@@ -46,6 +46,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Mic
   
 > [!NOTE]
 > You can also go directly to the Connector Management page when you select the **Connector Management** button on the last page of the wizard during connection setup.
+
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
