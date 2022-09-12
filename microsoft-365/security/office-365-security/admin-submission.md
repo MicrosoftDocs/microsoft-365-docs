@@ -286,7 +286,8 @@ After a few moments, an allow entry will appear on the **Files** tab on the **Te
 
    - **Select the submission type**: Verify the value **URL** is selected.
 
-   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears.
+   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. 
+
 
    - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
 
