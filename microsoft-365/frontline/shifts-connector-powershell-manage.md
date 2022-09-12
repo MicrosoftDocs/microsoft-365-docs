@@ -60,13 +60,11 @@ This article assumes that you've already set up a connection to Blue Yonder WFM,
     When you're prompted, sign in using your admin credentials. You're now set up to run the scripts in this article and Shifts connector cmdlets.
 
 ## Check connection setup status
-
 <a name="setup_status"> </a>
 
 [!INCLUDE [shifts-connector-check-setup-status](includes/shifts-connector-check-setup-status.md)]
 
 ## View an error report for a connection
-
 <a name="error_report"> </a>
 
 [!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]

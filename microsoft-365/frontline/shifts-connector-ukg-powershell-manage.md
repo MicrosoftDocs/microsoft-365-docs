@@ -62,8 +62,9 @@ This article assumes that you've already set up a connection to UKG Dimensions, 
     When you're prompted, sign in using your admin credentials. You're now set up to run the scripts in this article and Shifts connector cmdlets.
 
 ## Check connection setup status
-
 <a name="setup_status"> </a>
+
+[!INCLUDE [shifts-connector-check-setup-status](includes/shifts-connector-check-setup-status.md)]
 
 To check the status of the connection you set up using the operation ID that you received in email:
 
@@ -77,8 +78,9 @@ To check the status of the connection you set up using the operation ID that you
 To learn more, see [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation).
 
 ## View an error report for a connection
-
 <a name="error_report"> </a>
+
+[!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]
 
 You can run a report that shows error details for a connection. The report lists team and user mappings that succeeded and failed. It also provides information about any issues related to the accounts associated with the connection.
 
@@ -151,12 +153,16 @@ ForEach ($mapping in $mappings){
 
 ### Account authorization errors
 
+[!INCLUDE [shifts-connector-account-authorization-errors](includes/shifts-connector-account-authorization-errors.md)]
+
 Account authorization errors may occur if the WFM service account or Microsoft 365 system account credentials are incorrect or don't have the required permissions.
 
 To change your WFM service account or Microsoft 365 system account credentials for the connection, you can run the [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet or use the PowerShell script in the [Change connection settings](#change-connection-settings) section of this article.
 
 ## Change connection settings
 <a name="change_settings"> </a>
+
+[!INCLUDE [shifts-connector-change-connection-settings](includes/shifts-connector-change-connection-settings.md)]
 
 Use this script to change connection settings. Settings that you can change include your WFM service account and password, Microsoft 365 system account, team mappings, and sync settings.
 
@@ -272,6 +278,8 @@ Write-Host "Success"
 
 ## Disable open shifts, open shifts requests, swap requests, and time off requests
 
+[!INCLUDE [shifts-connector-disable-shifts-requests](includes/shifts-connector-disable-shifts-requests.md)]
+
 > [!IMPORTANT]
 > Follow these steps only if you chose to disable open shifts, open shift requests, swap requests, or time off requests using the script in the [Change connection settings](#change-connection-settings) section earlier in this article or by using the [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet. Completing this step hides the capability in Shifts. Without this second step, users will still see the capability in Shifts, and will get an "unsupported operation" error message if they try to use it.
 
@@ -284,6 +292,8 @@ To hide open shifts, swap requests, and time off requests in Shifts, use the Gra
 To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
 ## Unmap a team from one connection and map it to another connection
+
+[!INCLUDE [shifts-connector-unmap-a-team](includes/shifts-connector-unmap-a-team.md)]
 
 > [!NOTE]
 > The Microsoft 365 system account must be the same for both connections. If it isn't, you'll get a "This designated actor profile doesn't have team ownership privileges" error message.
