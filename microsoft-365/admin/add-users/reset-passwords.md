@@ -78,6 +78,16 @@ If you found this video helpful, check out the [complete training series for sma
 
 We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
 
+## Resend user password
+  
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+
+2. On the **Active users** page, select the user and then select **Reset password**.
+
+3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
+
+4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
+
 ## Reset my admin password
 
 Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:
