@@ -9,6 +9,7 @@ metadata:
   ms.service: o365-solutions #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: 
+  - highpri
   - m365-security-compliance
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
