@@ -85,7 +85,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed apps**.
     - Give the policy a name.
     - Under the Select Public Apps, choose Microsoft Defender for Endpoint as the target app.
-    - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**, .
+    - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
         - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
@@ -191,7 +191,7 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
 
 1. **End User Privacy Controls** These controls help the end user to configure the information shared to their organization.
     - For Supervised devices, End User controls will not be visible. Admin will decide and controls the settings.
-    - However, for Unsupervised devices, the control will be displayed under the **Settings-> Privacy**
+    - However, for Unsupervised devices, the control will be displayed under the **Settings > Privacy**
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
@@ -202,7 +202,7 @@ Turning the above privacy controls on or off will not impact the device complian
 
 ## Optional Permissions
 
-Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by Defender for Endpoint are mandatory in the onboarding flow. With this feature, admin can deploy Defender for Endpoint on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
+Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by Defender for Endpoint are mandatory in the onboarding flow. With this feature, admins can deploy Defender for Endpoint on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
 
 ### Configure Optional Permission
 
@@ -238,7 +238,7 @@ To protect corporate data from being accessed on jailbroken iOS devices, we reco
 
 Follow the steps below to create a compliance policy against jailbroken devices.
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Compliance policies** -> **Create Policy**. Select "iOS/iPadOS" as platform and click **Create**.
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Compliance policies** > **Create Policy**. Select "iOS/iPadOS" as platform and click **Create**.
 
    :::image type="content" source="images/ios-jb-policy.png" alt-text="The Create Policy tab" lightbox="images/ios-jb-policy.png":::
 
@@ -270,18 +270,18 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 
 Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices.
 
-Admin can use the following steps to configure the vulnerability assessment of apps.
+Admins can use the following steps to configure the vulnerability assessment of apps.
 
 ### On a Supervised Device
 
 1. Ensure the device is configured in the [Supervised mode](ios-install.md#complete-deployment-for-supervised-devices).
-1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** -> **Microsoft Defender for Endpoint** -> **Enable App sync for iOS/iPadOS devices**.
+1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** > **Enable App sync for iOS/iPadOS devices**.
 
      :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggleSup" lightbox="images/tvm-app-sync-toggle.png":::
 
 ### On an Unsupervised Device
 
-1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Endpoint Security** -> **Microsoft Defender for Endpoint** -> **Enable App sync for iOS/iPadOS devices**.
+1. To enable the feature in [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** > **Enable App sync for iOS/iPadOS devices**.
 
    :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggle" lightbox="images/tvm-app-sync-toggle.png":::
 
