@@ -21,7 +21,7 @@ description: In this article, learn how to manage folders and rules feature in M
 
 Users can organize groups emails effectively by creating folders and setting rules inside groups mailbox. Once the folders are created in groups mailbox, users can move and copy messages to different folders manually as well as using **Rules**.
 
-This capability is currently available only in Outlook Web Application and Outlook Mobile application.
+This capability is currently available only in Outlook Web Application.
 
 ## Enable Folders and Rules feature for Microsoft 365 Groups in Outlook
 
