@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -25,6 +25,18 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+
+## August 2022
+
+### View and manage inactive user accounts 
+
+Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** from the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months. 
+
+### Microsoft Edge policy deployment   
+
+We've added a Microsoft Edge policy deployment task to the default baseline. This deployment task allows you to secure your customer tenant's browsers with Edge security settings, which include built-in protection against phishing and malware. Microsoft Edge has been proven to be more secure than Google Chromium for small- and medium-sized businesses with devices running Windows 10 or later.
+
+For more information, see [Microsoft Edge security for your business](/deployedge/ms-edge-security-for-business).
 
 ## July 2022
 
@@ -44,7 +56,7 @@ Microsoft 365 Lighthouse now makes the deployment of baselines to all of your ma
 
 ### Support for Microsoft 365 E5 customers
 
-We've changed our onboarding requirements to allow you to onboard Microsoft 365 E5 customers to Microsoft 365 Lighthouse. The expanded list of licenses that Microsoft 365 Lighthouse supports for onboarding includes Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender for Business, and Windows 365 for Business. Customers who have at least one of any of these licenses, meet the requirements for delegated access permissions, and do not exceed the maximum number of licensed users can be managed in Microsoft 365 Lighthouse.  
+We've changed our onboarding requirements to allow you to onboard Microsoft 365 E5 customers to Microsoft 365 Lighthouse. The expanded list of licenses that Microsoft 365 Lighthouse supports for onboarding includes Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender for Business, and Windows 365 for Business. Customers who have at least one of any of these licenses, meet the requirements for delegated access permissions, and don't exceed the maximum number of licensed users can be managed in Microsoft 365 Lighthouse.  
 
 For a full list of requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
@@ -78,7 +90,7 @@ We've redesigned the user details pane to include more user information and more
 
 ### Delegated access type and roles on Tenants page
 
-We've updated the **Tenants** page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the **Tenants** page will make it easier for partner technicians to understand which types of delegated administrative permissions are available for each customer and which delegated roles have explicitly been granted to them.
+We've updated the **Tenants** page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the **Tenants** page will make it easier for MSP technicians to understand which types of delegated administrative permissions are available for each customer and which delegated roles have explicitly been granted to them.
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 

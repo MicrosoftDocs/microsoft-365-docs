@@ -4,7 +4,7 @@ description: How to move mailboxes between Microsoft 365 or Office 365 tenants.
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ ms.collection:
 
 # Cross-tenant mailbox migration (preview)
 
-Commonly, during mergers or divestitures, you need the ability to move your user's Exchange Online mailbox into a new tenant. Cross-tenant mailbox migration allows tenant administrators to use well-known interfaces like Exchange Online PowerShell and MRS to transition users to their new organization.
+Commonly, during mergers or divestitures, you need the ability to move your users' Exchange Online mailboxes into a new tenant. Cross-tenant mailbox migration allows tenant administrators to use well-known interfaces like Exchange Online PowerShell and MRS to transition users to their new organization.
 
 Administrators can use the **New-MigrationBatch** cmdlet, available through the _Move Mailboxes_ management role, to execute cross-tenant moves.
 
@@ -220,6 +220,9 @@ Users migrating must be present in the target tenant and Exchange Online system 
 ### Prerequisites for target user objects
 
 Ensure the following objects and attributes are set in the target organization.
+
+>[!TIP]
+>Microsoft is developing a feature to provide a secure automated method to set many of the attributes in the following section. This feature, named Cross-Tenant Identity Mapping, is currently looking for customers willing to participate in a small private preview. For more information about this pre-release feature and how it can simplify your cross-tenant migration processes, see the article **[Cross-Tenant Identity Mapping](cross-tenant-identity-mapping.md)**.
 
 1. For any mailbox moving from a source organization, you must provision a MailUser object in the Target organization:
 
@@ -422,9 +425,9 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-### How do we access Outlook on Day 1 after the use mailbox is moved?
+### How do we access Outlook on Day 1 after the user mailbox is moved?
 
-Since only one tenant can own a domain, the former primary SMTPAddress will not be associated to the user in the target tenant when the mailbox move completes; only those domains associated with the new tenant. Outlook uses the users new UPN to authenticate to the service and the Outlook profile expects to find the legacy primary SMTPAddress to match the mailbox in the target system. Since the legacy address is not in the target System the outlook profile will not connect to find the newly moved mailbox.
+Since only one tenant can own a domain, the former primary SMTPAddress will not be associated to the user in the target tenant when the mailbox move completes; only those domains associated with the new tenant. Outlook uses the user's new UPN to authenticate to the service and the Outlook profile expects to find the legacy primary SMTPAddress to match the mailbox in the target system. Since the legacy address is not in the target System the outlook profile will not connect to find the newly moved mailbox.
 
 For this initial deployment, users will need to rebuild their profile with their new UPN, primary SMTP address and resync OST content.
 

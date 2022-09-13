@@ -3,7 +3,8 @@ title: Pilot Microsoft Defender for Endpoint
 description: Learn how to run a pilot for Microsoft Defender for Endpoint(MDE), including verifying the pilot group and trying out capabilities.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,8 +21,8 @@ ms.collection:
   - m365solution-scenario
   - m365solution-evalutatemtp
   - zerotrust-solution
+  - highpri
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Pilot Microsoft Defender for Endpoint

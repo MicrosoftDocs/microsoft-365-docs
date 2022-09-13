@@ -9,17 +9,18 @@ metadata:
   title: Microsoft 365 admin center help # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Set up and manage Office 365 and Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: kwekua #Required; your GitHub user alias, with correct capitalization.
   ms.author: kwekua #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/07/2022
+  ms.date: 08/26/2022
   ms.localizationpriority: high
   ms.custom: 
   - VSBFY23
   - AdminSurgePortfolio
   - intro-hub-or-landing
-  ms.collection: Adm_TOC
+  ms.collection: 
+  - highpri
+  - Adm_TOC
 
 # highlightedContent section (optional)
 # Maximum of 8 items

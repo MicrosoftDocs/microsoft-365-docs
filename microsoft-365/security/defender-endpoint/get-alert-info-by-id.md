@@ -2,7 +2,7 @@
 title: Get alert information by ID API
 description: Learn how to use the Get alert information by ID API to retrieve a specific alert by its ID in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

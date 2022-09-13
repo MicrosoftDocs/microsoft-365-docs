@@ -3,7 +3,8 @@ title: Microsoft 365 Defender integration with Microsoft Sentinel
 description: Use Microsoft Sentinel as the SIEM for Microsoft 365 Defender incident and events.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,7 +21,6 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Microsoft 365 Defender integration with Microsoft Sentinel
 

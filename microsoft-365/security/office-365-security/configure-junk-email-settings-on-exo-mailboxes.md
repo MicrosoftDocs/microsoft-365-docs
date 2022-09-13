@@ -16,8 +16,8 @@ search.appverid:
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure junk email settings on Exchange Online mailboxes

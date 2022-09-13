@@ -2,7 +2,7 @@
 title: Microsoft Defender Security Center Security operations dashboard
 description: Use the dashboard to identify devices at risk, keep track of the status of the service, and see statistics and information about devices and alerts.
 keywords: dashboard, alerts, new, in progress, resolved, risk, devices at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Microsoft Defender Security Center Security operations dashboard

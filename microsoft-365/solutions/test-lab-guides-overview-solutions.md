@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
