@@ -235,7 +235,7 @@ There are three procedures.
 
 ## Scenario 5: Restrict unintentional sharing to unallowed cloud apps and services
 
-With Endpoint DLP and Microisoft Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
+With Endpoint DLP and Microsoft Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
 When you select **Devices** as a location in a properly configured DLP policy and use the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
@@ -303,11 +303,13 @@ Here are some examples:
 
 ## Scenario 7 Authorization groups
 
-Authorization groups are mostly used as allow lists that have policy actions assigned to them that are different than the global actions. In this scenario, we'll go through defining a printer group and then configuring different actions in a policy. These procedures are essentially the same for **Removeable storage device groups**, **Network share groups**, and **VPN settings**.
+These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
+
+Authorization groups are mostly used as allow lists. You assigned policy actions to the group that are different than the global actions. In this scenario, we'll go through defining a printer group and then configuring a policy with block actions for all print activities except for the printers in the group. These procedures are essentially the same for **Removeable storage device groups**, **Network share groups**, and **VPN settings**.
 
 In this scenario, we'll define a group of printers that the legal department uses for printing contracts. Printing contracts to any other printers is blocked.
 
-### Create printer groups
+### Create and use printer groups
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
 1. Select **Create printer group** and give the group a name.
@@ -325,6 +327,12 @@ In this scenario, we'll define a group of printers that the legal department use
 ### Configure policy printing actions
 
 1. Open the **Policies** tab.
+1. 
+1. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
+
+3. Choose **edit policy**.Create a new policy that is scoped only to **Devices**. For this example you can use any template.
+1. 
+1. 
 
 1. Select **Audit or restrict activities on devices**
 1. Then pick **File activities on all apps**

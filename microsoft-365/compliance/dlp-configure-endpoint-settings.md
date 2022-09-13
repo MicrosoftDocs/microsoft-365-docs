@@ -299,18 +299,19 @@ Use this setting to define groups of printers that you want to assign policy act
 
 You can define printers by these parameters:
 
-- Friendly printer name (the name of the printer as it appears in the **Add a device** picker)
-- USB product ID
-- USB vendor ID
-- IP range
-- Print to file
-- Universal printer
-- Corporate printer
-- Print to local
+1. Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
+1. USB product ID - Get the USB product ID value from the printer device property details in device manager.
+1. USB vendor ID - Get the USB vendor ID from the printer device property details in device manager.
+1. IP range
+1. Print to file 
+1. Universal printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started.md) for more information on universal printers
+1. Corporate printer - is a printer that's on a print server in your domain. It's path might look like  \\print-server\contoso.com\legal_printer_001
+
+1. Print to local
 
 Each printer group you create has an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a printer group with an alias of **Legal printers** and add individual printers by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
 
-All these values are connected by a logical AND, so the more parameters you define, the broader group membership is.
+You can multi-select the parameters and the printer group will include all printers that satisfy those parameters.
 
 You can assign these policy actions to the group in a DLP policy:
 
