@@ -205,7 +205,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 ### Create Bookings with me
 
 1. Open [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
-2. Select **Calendar**
+2. Select **Calendar**.
 3. Select the **Create bookings page** link that appears in your calendar to create Bookings with me.
 
 ## Frequently asked questions
