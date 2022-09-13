@@ -86,7 +86,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
   - Defender Antivirus - Platform: 4.18.2207.7 or later ([KB4052623: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
 
-  - Defender Antivirus - Engine: 1.1.19500.2 or later ([KB2267602: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB2267602))
+  - Defender Antivirus - Engine: 1.1.19500.2 or later ([KB2267602: Microsoft Update Catalog](https://www.microsoft.com/en-us/wdsi/defenderupdates))
 
 - For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
 
