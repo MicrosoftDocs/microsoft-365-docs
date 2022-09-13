@@ -7,12 +7,11 @@ ms.reviewer:
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to enable, disable, and manage access to Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 

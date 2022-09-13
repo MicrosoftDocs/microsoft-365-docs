@@ -258,6 +258,7 @@
 ###### [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+##### [Attack surface reduction rules report](attack-surface-reduction-rules-report.md)
 ##### [Troubleshoot attack surface reduction (ASR) rules](troubleshoot-asr-rules.md)
 ##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
@@ -416,7 +417,7 @@
 ##### [Investigate files](investigate-files.md)
 ##### [Investigate devices](investigate-machines.md)
 ##### [Investigate an IP address](investigate-ip.md)
-##### [Investigate a domain](investigate-domain.md)
+##### [Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
 

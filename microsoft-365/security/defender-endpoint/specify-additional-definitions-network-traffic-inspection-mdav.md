@@ -4,7 +4,7 @@ description: Specify additional definition sets for network traffic inspection f
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, network traffic inspection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.date: 05/07/2021
 ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ---
