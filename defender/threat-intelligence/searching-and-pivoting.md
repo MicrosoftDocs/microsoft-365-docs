@@ -224,11 +224,6 @@ For more information, see [Using projects](using-projects.md).
 
 ![Summary Tab Projects](media/summaryTabProjects.png)
 
-### Hashes
-
-Microsoft partners with several commercial and open-source repositories of malware data to pair it with queried infrastructure to populate the Hash data set. Malware repositories today include Proofpoint’s Emerging Threats, Hybrid Analysis, and VirusTotal. This data helps users understand actor capabilities, intent, and motives of an attacker while also aiding in connecting infrastructure together. Each result contains a unique hash. Our hash data includes the detection source, sample, and collection date.
-
-![Summary Tab Hashes](media/summaryTabHashes.png)
 
 ## Data tab
 
@@ -249,7 +244,6 @@ The following datasets are available in Defender TI:
 - Subdomains
 - Components
 - Host Pairs
-- Hashes
 - Cookies
 - Services
 - DNS
@@ -408,17 +402,6 @@ Our host pair data includes the following:
 
 ![Data Tab Host Pairs](media/dataTabHostPairs.png)
 
-### Hashes
-
-Microsoft partners with several commercial and open-source repositories of malware data to pair it with queried infrastructure to populate the Hash data set. Malware repositories today include Proofpoint’s Emerging Threats, Hybrid Analysis, and VirusTotal. This data helps users understand actor capabilities, intent, and motives of an attacker while also aiding in connecting infrastructure together. Each result contains a unique hash.
-
-Our hash data includes the following:
-
-1. **Source:** the source used to detect the hash.
-2. **Sample:** the unique identification code for the detected hash.
-3. **Collection Date:** the day that the hash sample was collected by the designated source.
-
-![Data Tab Hashes](media/dataTabHashes.png)
 
 ### Cookies
 
