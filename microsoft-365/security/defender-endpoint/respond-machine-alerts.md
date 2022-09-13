@@ -132,7 +132,7 @@ The package contains the following folders:
 ## Collect Support Logs
 
 When troubleshooting various client health issues, you may need to collect support logs. This action can be used to collect general purpose support logs from a specific device.
-This action will trigger the collection of [MDE Client Analyzer](microsoft-365/security/defender-endpoint/run-analyzer-windows.md) logs. The Client Analyzer will be delivered and run locally on the device and logs will be fetched and made available for downloaded in the same way as the ‘Collect Investigation Package’ action.
+This action will trigger the collection of MDE Client Analyzer logs. The Client Analyzer will be delivered and run locally on the device and logs will be fetched and made available for downloaded in the same way as the ‘Collect Investigation Package’ action.
 
 > [!NOTE]
 > The feature is currently supported on the following Operating Systems:
