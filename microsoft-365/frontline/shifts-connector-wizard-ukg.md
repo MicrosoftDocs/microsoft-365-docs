@@ -137,7 +137,7 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 
     |Column name  |Description  |
     |---------|---------|
-    |**UKG Dimensions Instance ID** |The UKG Dimensions WFM instance ID.|
+    |**UKG Dimensions Instance ID*** |The UKG Dimensions WFM instance ID.|
     |**UKG Dimensions Instance Name**|The UKG Dimensions WFM instance name.|
     |**Team ID*** |The team ID.|
     |**Team Name**|The team name.|
