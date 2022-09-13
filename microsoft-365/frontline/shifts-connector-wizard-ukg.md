@@ -197,7 +197,7 @@ To hide open shifts, swap requests, and time off requests in Shifts, use the Gra
 To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
 ## Manage your connection
-<a name="update_connection"> </a>
+<a name="manage"> </a>
 
 After a connection is set up, you can manage and make changes to it in the Microsoft 365 admin center or by using PowerShell.
 
