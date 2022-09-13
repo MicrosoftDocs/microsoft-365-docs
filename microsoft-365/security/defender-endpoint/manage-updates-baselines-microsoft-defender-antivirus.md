@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/08/2022
+ms.date: 09/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -85,7 +85,7 @@ All our updates contain
 <details> 
 <summary> August-2022 (Platform: 4.18.2207.7| Engine:  1.1.19600.3)</summary> 
   
-&ensp;Security intelligence update version:  **1.373.1647.0** <br/>
+&ensp;Security intelligence update version: **1.373.1647.0** <br/>
 &ensp;Released: **September 6th, 2022**<br/>
 &ensp;Platform: **4.18.2207.7**<br/>
 &ensp;Engine: **1.1.19600.3**<br/>
