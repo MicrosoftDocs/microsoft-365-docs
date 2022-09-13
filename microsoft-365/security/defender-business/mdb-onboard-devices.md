@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/29/2022
+ms.date: 09/13/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -347,7 +347,7 @@ You can use Microsoft Intune to onboard mobile devices, such as Android and iOS/
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 > [!NOTE]
-> Defender for Business standalone does not include a license for Intune, and these customers can’t onboard iOS and Android device. They can only onboard Windows and MacOS clients by using the Microsoft 365 Admin Center. Defender for Business customers need to purchase an appropriate Intune license to onboard and manage mobile devices.
+> Defender for Business standalone does not include a license for Intune, which is required to onboard iOS and Android devices. If you don't have Intune, you can onboard Windows and macOS client devices in the Microsoft 365 Defender portal. You can add Intune to your Defender for Business subscription to onboard mobile devices.
 
 ## View a list of onboarded devices
 
