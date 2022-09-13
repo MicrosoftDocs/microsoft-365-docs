@@ -3,7 +3,7 @@ title: Protect your c-suite with Priority account protection in Microsoft Defend
 description: The steps to protect your c-suite with priority account protection. Tagging an account as a Priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
 search.product: 
 search.appverid: 
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
+ms.technology: mdo
 ---
 # Protect your c-suite with priority account protection
 

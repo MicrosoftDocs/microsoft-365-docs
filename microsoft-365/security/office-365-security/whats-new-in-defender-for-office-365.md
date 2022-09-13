@@ -18,8 +18,8 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # What's new in Microsoft Defender for Office 365
