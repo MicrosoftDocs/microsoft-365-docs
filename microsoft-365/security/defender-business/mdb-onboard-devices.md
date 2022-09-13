@@ -46,7 +46,11 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 ### Local script for Windows 10 and 11
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune, and this is the recommended method for Defender for Business customers.
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device: 
+
+- It creates a trust with Azure Active Directory, if that trust doesn't already exist.
+- It enrolls the device in Microsoft Intune, if it isn't already enrolled and then onboards the device to Defender for Business. 
+- The local script method works even if you don't currently have Intune, and this is the recommended method for Defender for Business customers.
 
 > [!TIP]
 > We recommend that you onboard up to 10 devices at a time when you use the local script method.
@@ -154,7 +158,11 @@ Choose one of the following options to onboard Mac:
 
 ### Local script for Mac
 
-When you run the local script on a Mac, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the Mac in Microsoft Intune, if it isn't already enrolled; and then onboards the Mac to Defender for Business. We recommend that you onboard up to 10 devices at a time using this method.
+When you run the local script on a Mac: 
+
+- It creates a trust with Azure Active Directory, if that trust doesn't already exist.
+- It enrolls the Mac in Microsoft Intune, if it isn't already enrolled and then onboards the Mac to Defender for Business. 
+- We recommend that you onboard up to 10 devices at a time using this method.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
