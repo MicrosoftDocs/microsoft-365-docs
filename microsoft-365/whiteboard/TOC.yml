@@ -28,7 +28,7 @@
       items:
 
           - name: Whiteboard for government
-      items:
+            items:
             - name: Government Community Cloud (GCC)
               items:
                 - name: Manage access - GCC
