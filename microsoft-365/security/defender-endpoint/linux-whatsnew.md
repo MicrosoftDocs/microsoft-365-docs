@@ -31,6 +31,24 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+  <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
+
+&ensp;Released: **September 14, 2022**<br/>
+&ensp;Published: **September 14, 2022**<br/>
+&ensp;Build: **101.80.97**<br/>
+&ensp;Release version: **30.122072.18097.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue.
+</br>
+
+<br/><br/>
+</details>
+
+<details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
 
 &ensp;Released: **August 2, 2022**<br/>
