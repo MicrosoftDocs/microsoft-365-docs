@@ -297,9 +297,9 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
-You can define printers by their:
+You can define printers by these parameters:
 
-- Friendly printer name
+- Friendly printer name (the name of the printer as it appears in the **Add a device** picker)
 - USB product ID
 - USB vendor ID
 - IP range
@@ -308,9 +308,9 @@ You can define printers by their:
 - Corporate printer
 - Print to local
 
-The **Alias** is a name that only appears in the Purview console. So, continuing with the example, you would create a printer group with an alias of **Legal printers** and add individual printers by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
+Each printer group you create has an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a printer group with an alias of **Legal printers** and add individual printers by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
 
-All these values are connected by a logical AND, so the more parameters you define, the more restrictive the group membership is.
+All these values are connected by a logical AND, so the more parameters you define, the broader group membership is.
 
 You can assign these policy actions to the group in a DLP policy:
 

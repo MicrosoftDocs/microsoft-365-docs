@@ -303,7 +303,28 @@ Here are some examples:
 
 ## Scenario 7 Authorization groups
 
-scenario printer groups
+Authorization groups are mostly used as allow lists that have policy actions assigned to them that are different than the global actions. In this scenario, we'll go through defining a printer group and then configuring different actions in a policy. These procedures are essentially the same for **Removeable storage device groups**, **Network share groups**, and **VPN settings**.
+
+In this scenario, we'll define a group of printers that the legal department uses for printing contracts. Printing contracts to any other printers is blocked.
+
+### Create printer groups
+
+1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
+1. Select **Create printer group** and give the group a name.
+1. Select **Add printer**. You can define printers by:
+    1. Friendly printer name (the name of the printer as it appears in the **Add a device** picker)
+    1. USB product ID
+    1. USB vendor ID
+    1. IP range
+    1. Print to file
+    1. Universal printer
+    1. Corporate printer
+    1. Print to local
+1. Select **Close**.
+
+### Configure policy printing actions
+
+1. Open the **Policies** tab.
 
 1. Select **Audit or restrict activities on devices**
 1. Then pick **File activities on all apps**
