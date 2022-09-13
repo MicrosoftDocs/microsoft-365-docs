@@ -62,6 +62,7 @@ Summary of outcomes:
 ## Limitations
 
 - Doesn't apply to existing files at rest in SharePoint.
+- Restrctions are not applied when opening the file over the browser/web. Example if labels restricts users to view access opening the file on the web allows you to edit the document , copy the contents. But does ensure restriction when opening through desktop app or sharing with another user after downloading it.
 
 - Unless you've [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md), you'll see a delay in applying the default sensitivity label for a document library when users select the **File** \> **Save as** option.
 
