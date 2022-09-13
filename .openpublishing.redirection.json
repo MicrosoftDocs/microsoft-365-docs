@@ -47,12 +47,12 @@
     },	  
     {
       "source_path": "microsoft-365/admin/misc/power-bi-in-your-organization.md",
-      "redirect_url": "https://docs.microsoft.com/power-bi/enterprise/service-admin-org-subscription",
+      "redirect_url": "/power-bi/enterprise/service-admin-org-subscription",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/misc/set-up-outlook-to-read-email.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/setup/setup-outlook",
+      "redirect_url": "/microsoft-365/admin/setup/setup-outlook",
       "redirect_document_id": false
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "source_path": "microsoft-365/admin/devices/choose-device-security.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune",
+      "redirect_url": "/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune",
       "redirect_document_id": false
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "source_path": "microsoft-365/commerce/licenses/add-licenses-bought-through-vlsc.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses",
       "redirect_document_id": false
     },
     {
@@ -3462,7 +3462,7 @@
     },
     {
       "source_path": "microsoft-365/enterprise/microsoft-365-skype-data-deletion.md",
-      "redirect_url": "/compliance/",
+      "redirect_url": "/compliance",
       "redirect_document_id": false
     },
     {
