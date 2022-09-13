@@ -62,15 +62,14 @@ This article assumes that you've already set up a connection to UKG Dimensions, 
     When you're prompted, sign in using your admin credentials. You're now set up to run the scripts in this article and Shifts connector cmdlets.
 
 ## Check connection setup status
-<a name="setup_status"> </a>
 
 [!INCLUDE [shifts-connector-check-setup-status](includes/shifts-connector-check-setup-status.md)]
 
 ## View an error report for a connection
-<a name="error_report"> </a>
 
 [!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]
 
+<a name="resolve_errors"> </a>
 ## Resolve connection errors
 
 ### User mapping errors
@@ -128,7 +127,6 @@ ForEach ($mapping in $mappings){
 [!INCLUDE [shifts-connector-account-authorization-errors](includes/shifts-connector-account-authorization-errors.md)]
 
 ## Change connection settings
-<a name="change_settings"> </a>
 
 [!INCLUDE [shifts-connector-change-connection-settings](includes/shifts-connector-change-connection-settings.md)]
 
