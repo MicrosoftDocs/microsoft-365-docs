@@ -40,7 +40,7 @@ A prerequisite to managing Teams content in eDiscovery (Premium) is to understan
 
 Teams data is stored in Azure Cosmos DB. Teams compliance records captured by the substrate are in Exchange Online and are available for ediscovery. 
 
-The following table lists Teams content type and where each is stored for complaince purpose. The data stored in Exchange online is hidden from clients. eDiscovery never operates against the “real” Teams message data, which remains in Azure Cosmos DB.
+The following table lists Teams content type and where each is stored for complaince purpose. The data stored in Exchange online is hidden from clients. eDiscovery never operates against the real Teams message data, which remains in Azure Cosmos DB.
 
 |&nbsp;|Location of chat messages and posts|Location of files and attachments|
 |---|---|---|
