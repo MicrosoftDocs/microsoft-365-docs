@@ -42,7 +42,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
-- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Additionally, the issue is not present on newer Linux Kernels(5.1+)
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue.
 </br>
 
 <br/><br/>
