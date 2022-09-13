@@ -37,14 +37,14 @@ The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#m
 
 You must be a Microsoft 365 global admin to run the wizard.
 
-### Prerequisites
 <a name="prerequisites"> </a>
+### Prerequisites
 [!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
 
 - The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
 
-## Remove schedules from teams you want to map
 <a name="remove_schedules"> </a>
+## Remove schedules from teams you want to map
 
 > [!NOTE]
 > Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
@@ -72,16 +72,16 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 1. When you're ready, select **Get started**.
 1. On the Choose your connector page, choose **UKG Dimensions**, and then select **Next** to create a UKG Dimensions connection.
 
-### Enter connection details
 <a name="connection_details"> </a>
+### Enter connection details
 
 1. On the Connection details page, give your connection a unique name. It can't be longer than 128 characters or have any special characters.
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 1. Enter your UKG Dimensions service account name and password and service URLs.
 1. When you're done, select **Next** to test the connection with the settings you entered.
 
-### Choose sync settings
 <a name="sync"> </a>
+### Choose sync settings
 
 On the Sync settings page, you choose the information to sync from UKG Dimensions to Shifts, the sync frequency, and whether Shifts users can make changes to the data.
 
@@ -105,27 +105,28 @@ On the Sync settings page, you choose the information to sync from UKG Dimension
  
 1. When you're done choosing your settings, select **Create connection**.
 
-### Map UKG Dimensions instances to teams
 <a name="instances"> </a>
+### Map UKG Dimensions instances to teams
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each instance to a team in Teams. You can map up to 100 instances. There's two ways that you can do this:
 
 - [Manually map instances to teams](#manually-map-instances-to-teams)
 - [Prepare and upload a CSV file that defines your mappings](#use-a-csv-file-to-map-instances-to-teams)
 
+<a name="map_manual"> </a>
 #### Manually map instances to teams
 
 Select the instances that you want to map.
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-sites.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-sites.png":::
-<a name="map_manual"> </a>
+
 Then, map each instance to a team in Teams. You can map an instance to an existing team or you can create a new team.
 :::image type="content" source="media/shifts-connector-wizard-ukg-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-ukg-search-team.png":::
 
 [!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
-#### Use a CSV file to map instances to teams
 <a name="map_csv"> </a>
+#### Use a CSV file to map instances to teams
 
 1. Select **switch to bulk mode**.
 1. Select **download a template file** to download a mapping template that you can use to define your mappings.
@@ -196,8 +197,8 @@ To hide open shifts, swap requests, and time off requests in Shifts, use the Gra
 
 To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
-## Manage your connection
 <a name="manage"> </a>
+## Manage your connection
 
 After a connection is set up, you can manage and make changes to it in the Microsoft 365 admin center or by using PowerShell.
 
