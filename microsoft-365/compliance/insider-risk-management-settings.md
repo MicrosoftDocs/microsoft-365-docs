@@ -27,7 +27,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
-- [Priority user groups (preview)](#priority-user-groups-preview)
+- [Priority user groups](#priority-user-groups-preview)
 - [Priority physical assets (preview)](#priority-physical-assets-preview)
 - [Power Automate flows (preview)](#power-automate-flows-preview)
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
@@ -344,7 +344,7 @@ The following fields and values are exported for insider risk management alerts 
 - UserType
 - UserKey
 
-## Priority user groups (preview)
+## Priority user groups
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
 
