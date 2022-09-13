@@ -21,16 +21,14 @@ ms.collection:
 
 # Manage Microsoft Defender for Endpoint subscription settings across devices
 
-Up until recently, in cases of [mixed licenses](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios), the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. However, if you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you now have several options available to manage your subscription settings across devices. You can:
+If you're using multiple Microsoft endpoint security solutions, such as Defender for Endpoint Plan 1 and Plan 2, you potentially have a [mixed licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios). Up until now, in such cases, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. 
 
-- (Recommended) [Set your tenant to mixed mode](#set-your-tenant-to-mixed-mode-and-specify-device-tags), and use device tags to specify which devices will receive features and capabilities from each plan.
-- [Use the features and capabilities from one plan across all devices](#choose-to-use-one-plan-for-all-devices).
+Now, however, you have several options available to manage your subscription settings across devices. You can:
 
-This article describes how to manage your Defender for Endpoint subscription settings across devices. For more information about mixed license scenarios, see [Mixed licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios).
+- (Recommended) **[Set your tenant to mixed mode and use device tags](#set-your-tenant-to-mixed-mode-and-use-device-tags)** to specify which devices will receive features and capabilities from each plan; OR
+- **[Use the features and capabilities from one plan across all devices](#choose-to-use-one-plan-for-all-devices)**.
 
-## Set your tenant to mixed mode and specify device tags
-
-If you're using multiple Microsoft endpoint security solutions, such as Defender for Endpoint Plan 1 and Plan 2, you can choose to set your subscription state to either use features and capabilities from one plan across your users and devices. 
+## Set your tenant to mixed mode and use device tags
 
 1. Go to **Settings** > **Endpoints** > **Licenses**.
 
@@ -38,14 +36,13 @@ If you're using multiple Microsoft endpoint security solutions, such as Defender
 
 3. A **Subscription settings** flyout opens. Choose the option to use multiple plans and use device tagging for mixed licenses.
 
-4. To select an assignment option for devices, take one or more of the following steps:
+4. To select an assignment option for devices, follow these steps:
 
-   - Select an existing rule, such as a **Plan 1 devices rule**.
-   - Create a new device rule to tag devices.
-   - Tag devices (device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md)).
+   1. Either select an existing rule, such as a **Plan 1 devices rule**, or create a new device rule to tag devices.
+   2. Tag one set of devices, such as those that should receive Defender for Endpoint Plan 1 capabilities. Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
 
 > [!NOTE]
-> You only need to tag one set of devices, such as devices to receive features and capabilities from Defender for Endpoint Plan 1. It can take up to three hours for your changes to take effect.
+> It can take up to three hours for your changes to take effect.
 
 ## Choose to use one plan for all devices
 
