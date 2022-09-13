@@ -34,7 +34,7 @@ Start by getting familiar with the service and feature differences between the p
 Some key differences include:
 
 - F plans don’t include Office desktop apps or the Outlook desktop app.
-- F plans are limited to devices with integrated screens smaller than 10.1 inches on Office mobile apps.
+- F plans are limited to devices with integrated screens smaller than 10.9 inches on Office mobile apps.
 - F plans [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Walkie Talkie, Tasks, Shifts, and Approvals by default in Microsoft Teams.
 
 In this section, we've included more information about these key differences and highlighted some additional differences to pay attention to. Keep in mind that this isn’t a comprehensive list. To learn more:
