@@ -135,7 +135,7 @@ When a frontline manager or worker tries to do any of these actions in Shifts, t
 
 #### Example scenario
 
-Ravi, a manager, publishes a schedule in UKG Dimensions, which is synced to Shifts in Teams through the connector. Camille, a staff member, gets notified in Teams on her mobile device, and views her schedule and assigned shifts.
+Ravi, a manager, publishes a schedule in UKG Dimensions, which is synced to Shifts in Teams through the connector. Camille, a staff member, gets notified in Teams on her mobile device, and views her schedule and her team's schedule. Within the assigned shifts, Camille can also see detailed information, such as tasks, set by the manager.
 
 Camille needs to take some time off and requests a day off using Shifts. The request is sent to UKG Dimensions through the connector. UKG Dimensions ensures that the request is compliant with business rules and the request is created. Ravi sees and approves the request in UKG Dimensions, and the approval is synced to Teams. (Ravi can also see and approve the request in Shifts). Camille is notified in Teams that the request is approved and views her updated schedule.
 
