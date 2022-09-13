@@ -129,7 +129,19 @@ The package contains the following folders:
 |CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
 |
 
-## Run Microsoft Defender Antivirus scan on devices
+## Collect Support Logs
+
+When troubleshooting various client health issues, you may need to collect support logs. This action can be used to collect general purpose support logs from a specific device.
+This action will trigger the collection of [MDE Client Analyzer](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-analyzer-windows logs. The Client Analyzer will be delivered and run locally on the device and logs will be fetched and made available for downloaded in the same way as the [‘Collect Investigation Package’](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices) action.
+
+> [!NOTE]
+> The feature is currently supported on the following Operating Systems:
+> - Windows Server 2016 (with unified agent)
+> - Windows Server 2019 or later
+> - Windows 10 1809 (aka RS5) or later
+> - Windows 11 or later
+ 
+ ## Run Microsoft Defender Antivirus scan on devices
 
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised device.
 
