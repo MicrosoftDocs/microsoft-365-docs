@@ -176,7 +176,7 @@ For this scenario, you need to create two groups - one group for any removable s
 
     1. Group 1: Any removable storage, CD/DVD, and Windows portable devices.
 
-        :::image type="content" source="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png" alt-text="A screenshot of group 1" lightbox= "media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png":::
+        :::image type="content" source="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png" alt-text="A screenshot of group 1" lightbox="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png":::
     
     Here is the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml). See step 3 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
 
