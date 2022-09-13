@@ -6,7 +6,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual 
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: medium
 ms.date: 07/19/2022
 ms.collection:

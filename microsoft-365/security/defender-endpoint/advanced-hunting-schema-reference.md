@@ -2,7 +2,7 @@
 title: Advanced hunting schema reference
 description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on.
 keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, microsoft defender for endpoint, wdatp search, query, telemetry, schema reference, kusto, table, data
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Understand the advanced hunting schema in Microsoft Defender for Endpoint

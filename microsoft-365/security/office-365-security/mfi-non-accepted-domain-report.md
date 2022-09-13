@@ -13,8 +13,8 @@ ms.assetid:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use the Non-accepted domain report in the Mail flow dashboard in the Security & Compliance Center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Non-accepted domain report in the Security & Compliance Center

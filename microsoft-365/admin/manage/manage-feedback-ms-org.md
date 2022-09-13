@@ -25,7 +25,7 @@ description: "Manage feedback your users can send to Microsoft about Microsoft p
 
 # Manage Microsoft feedback for your organization
 
-As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product. Keeping the feedback experiences turned **On** allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users will soon be available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product. Keeping the feedback experiences turned **On** allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users is available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 To learn more about the types of feedback and how Microsoft uses user feedback, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 
@@ -35,17 +35,26 @@ The table below represents which apps and services are currently connected to th
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|Yes|Yes|Yes|Yes|
 |**Excel**|Yes|Yes|Yes|Yes|
-|**Office.com**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Forms**|Yes|Yes|Yes|Yes|
+|**Intune Company Portal (Android)**|Yes|Yes|Yes|Yes|
+|**Microsoft Stream (Android, iOS)**|Yes|Yes|Yes|Yes|
+|**Microsoft Whiteboard**|Yes|Yes|Yes|Yes|
+|**Office.com**|Yes|Yes|Yes|Yes|
 |**OneNote**|Yes|Yes|Yes|Yes|
 |**OneDrive**|[Some settings currently managed by other controls.](/onedrive/disable-contact-support-send-feedback)||||
-|**Outlook**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Outlook (Web, iOS)**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Outlook (Desktop, Android, Mac)**|Yes|Yes|Yes|Yes|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
-|**Project**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Project**|Yes|Yes|Yes|Yes|
 |**Publisher**|Yes|Yes|Yes|Yes|
 |**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**To Do**|Yes|Yes|Yes|Yes|
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
+|**Viva Goals**|Yes|Yes|Yes|Yes|
+|**Viva Insights**|Yes|Yes|Yes|Yes|
+|**Whiteboard**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
 
 [See here for some examples of in-product surveys and feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)

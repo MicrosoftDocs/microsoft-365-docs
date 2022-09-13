@@ -3,7 +3,7 @@ title: Plan your Microsoft Defender for Endpoint deployment
 description: Select the best Microsoft Defender for Endpoint deployment strategy for your environment
 keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
   - M365-security-compliance
   - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Plan your Microsoft Defender for Endpoint deployment

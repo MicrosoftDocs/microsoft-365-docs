@@ -2,7 +2,7 @@
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
 keywords: tune, performance, microsoft defender for endpoint, defender antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ ms.date: 08/13/2022
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Performance analyzer for Microsoft Defender Antivirus
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### Get-MpPerformanceReport
 
-The following section describes the Get-MpPerformanceReport PowerShell cmdlet. Analyzes and reports on Microsoft Defender Antivirus (MDAV) performance recording.
+The following section describes the Get-MpPerformanceReport PowerShell cmdlet. Analyzes and reports on Microsoft Defender Antivirus performance recording.
 
 #### Syntax: Get-MpPerformanceReport
 
