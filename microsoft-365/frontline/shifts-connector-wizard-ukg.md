@@ -106,7 +106,7 @@ On the Sync settings page, you choose the information to sync from UKG Dimension
 1. When you're done choosing your settings, select **Create connection**.
 
 ### Map UKG Dimensions instances to teams
-<a name="sites"> </a>
+<a name="instances"> </a>
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each instance to a team in Teams. You can map up to 100 instances. There's two ways that you can do this:
 
@@ -118,14 +118,14 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 Select the instances that you want to map.
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-sites.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-sites.png":::
-<a name="mapping"> </a>
-<a name="search_teams"> </a>
+<a name="map_manual"> </a>
 Then, map each instance to a team in Teams. You can map an instance to an existing team or you can create a new team.
 :::image type="content" source="media/shifts-connector-wizard-ukg-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-ukg-search-team.png":::
 
 [!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
 #### Use a CSV file to map instances to teams
+<a name="map_CSV"> </a>
 
 1. Select **switch to bulk mode**.
 1. Select **download a template file** to download a mapping template that you can use to define your mappings.
