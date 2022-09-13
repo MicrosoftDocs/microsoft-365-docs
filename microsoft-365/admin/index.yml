@@ -18,7 +18,9 @@ metadata:
   - VSBFY23
   - AdminSurgePortfolio
   - intro-hub-or-landing
-  ms.collection: Adm_TOC
+  ms.collection: 
+  - highpri
+  - Adm_TOC
 
 # highlightedContent section (optional)
 # Maximum of 8 items
