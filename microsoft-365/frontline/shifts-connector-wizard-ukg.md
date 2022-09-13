@@ -125,7 +125,7 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 [!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
 #### Use a CSV file to map instances to teams
-<a name="map_CSV"> </a>
+<a name="map_csv"> </a>
 
 1. Select **switch to bulk mode**.
 1. Select **download a template file** to download a mapping template that you can use to define your mappings.
