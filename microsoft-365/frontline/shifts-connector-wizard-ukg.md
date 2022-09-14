@@ -144,7 +144,7 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
     |**Time zone*** |The time zone in tz database format. For example, Europe/London.|
 
     > [!NOTE]
-    > You only need to fill out the required columns (UKG Dimensions Instance ID, Team ID, Time zone) to map instances to teams. Remember that you can map up to 100 instances.
+    > You only need to fill out the required columns (UKG Dimensions Instance ID, Team ID, Time zone) to map instances to teams.
 
     To help you create your mapping file, the template includes a list of all your UKG Dimensions instances, followed by a list of your teams (up to 1,000) and their corresponding team IDs.
 
