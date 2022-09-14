@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/08/2022
+ms.date: 09/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -82,33 +82,32 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
-<details> 
-<summary> August-2022 (Platform: 4.18.2207.7| Engine:  1.1.19600.3)</summary> 
-  
-&ensp;Security intelligence update version:  **1.373.1647.0** <br/>
-&ensp;Released: **September 6th, 2022**<br/>
+<details>
+<summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
+
+&ensp;Security intelligence update version: **1.373.1647.0**<br/>
+&ensp;Release date: **September 6, 2022**<br/>
 &ensp;Platform: **4.18.2207.7**<br/>
 &ensp;Engine: **1.1.19600.3**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
-  
+
 Engine version: 1.1.19600.3<br/>
-Security intelligence update version: 1.373.1647.0<br/>
-  
-### What's new 
+Security intelligence update version: 1.373.1647.0 <br/>
 
-- Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016 <br/>
-- Fixed remediation issue for custom detection <br/>
-- Fixed Race condition related to behavior monitoring <br/>
-- Resolved multiple deadlock scenarios in Defender dlls <br/>
-- Improved frequency of Windows toasts notification for ASR rules  
-  
-### Known Issues 
+### What's new
 
-No known issues   
+- Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016
+- Fixed remediation issue for custom detection
+- Fixed Race condition related to behavior monitoring
+- Resolved multiple deadlock scenarios in Defender dlls
+- Improved frequency of Windows toasts notification for ASR rules
 
-<br/> 
-</details> 
-<details>
+### Known Issues
+
+- None
+
+<br/><br/>
+</details><details>
 <summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
 
 &ensp;Security intelligence update version: **1.373.219.0**<br/>

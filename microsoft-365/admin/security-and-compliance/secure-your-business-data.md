@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.date: 08/24/2022
 ms.collection:
+- highpri
 - Adm_O365
 - Adm_TOC
 ms.custom:
