@@ -43,7 +43,7 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 | **[Microsoft 365 Business Premium](../../business-premium/index.md)** | **Defender for Business capabilities, together with productivity and additional security capabilities**<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office apps and services, and Microsoft Teams)</li><li>[Shared computer activation](/deployoffice/overview-shared-computer-activation) (for deploying Microsoft 365 Apps)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (upgrade from previous versions of Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (for setting up and configuring Windows devices)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (antiphishing, antispam, antimalware, and spoof intelligence for email)</li><li>[Microsoft Defender for Office 365 Plan 1](../office-365-security/overview.md) (advanced antiphishing, real-time detections, Safe Attachments, Safe Links)</li><li>[Auto-expanding archiving](../../compliance/autoexpanding-archiving.md) (for email)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (identity management)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (device onboarding and management)</li><li>[Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (protection for sensitive information)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (centrally managed, secure virtual machines in the cloud)</li></ul> |
 
   
-(<a id="fna">a</a>) Microsoft Intune is required to modify or customize attack surface reduction rules. Intune is included in Microsoft 365 Business Premium.
+(<a id="fna">a</a>) Microsoft Intune is required to modify or customize attack surface reduction rules. Intune can be added on to the standalone version of Defender for Business. Intune is included in Microsoft 365 Business Premium.
 
 (<a id="fnb">b</a>) Microsoft Intune is required to onboard iOS and Android devices. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
@@ -85,7 +85,8 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 
 (<a id="fn7">7</a>) The ability to view incidents across tenants using Defender for Endpoint is new!
 
-Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md).
+> [!TIP]
+> Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md).
 
 ## Next steps
 
