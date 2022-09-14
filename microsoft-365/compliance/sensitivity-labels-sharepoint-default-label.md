@@ -23,7 +23,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is gradually rolling out in preview and subject to change. It is also a premium feature with licensing details to be provided when the feature becomes generally available (GA).
+> This feature is in preview and subject to change. It is also a premium feature with licensing details to be provided when the feature becomes generally available (GA).
 > 
 > To read the preview announcement, see the [blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
@@ -83,9 +83,6 @@ For an existing document library:
     Although you see the setting mentions support for PDF files, this file type isn't currently supported for this scenario.
 
 If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
-
-> [!NOTE]
-> These new settings are gradually rolling out to tenants. If you don't see them, try again in a few days.
 
 ## Monitoring application of library default sensitivity labels
 
