@@ -67,7 +67,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 3. Create one XML file for removable storage group(s):
 
-   Use the properties in removable storage group to create a XML for Removable storage group(s), save the XML file to network share, and devlier the setting setting as follows:
+   Use the properties in removable storage group to create an XML file for the Removable storage group(s), save the XML file to network share, and define the setting as follows:
 
    - Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define device control policy groups**.
 
