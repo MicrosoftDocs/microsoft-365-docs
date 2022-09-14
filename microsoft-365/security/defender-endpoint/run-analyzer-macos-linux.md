@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.subservice: m365d
+search.appverid: met150
 ---
 
 # Run the client analyzer on macOS and Linux

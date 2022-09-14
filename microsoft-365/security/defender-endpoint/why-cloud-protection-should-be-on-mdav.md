@@ -18,6 +18,7 @@ ms.date: 10/22/2021
 ms.collection: 
 - m365-security-compliance
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Why cloud protection should be enabled for Microsoft Defender Antivirus

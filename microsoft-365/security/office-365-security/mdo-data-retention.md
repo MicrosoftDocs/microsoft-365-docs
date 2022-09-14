@@ -16,6 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom: 
 description: Microsoft Defender for Office 365 data retention informationThreat Explorer/ Real-Time detections 
+search.appverid: met150
 ---
 
 # Data retention information for Microsoft Defender for Office 365

@@ -1,6 +1,41 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/add-users/resend-user-password.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md",
+      "redirect_url": "/microsoft-365/admin/toc.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/strong-password.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/basic-mobility-security/troubleshoot.md",
+      "redirect_url": "/microsoft-365/admin/basic-mobility-security/frequently-asked-questions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view.md",
+      "redirect_url": "/microsoft-365/admin/add-users/add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/basic-mobility-security/get-details-about-managed-devices.md",
+      "redirect_url": "/microsoft-365/admin/basic-mobility-security/manage-device-access-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/what-is-help.md",
+      "redirect_url": "/microsoft-365/admin/get-help-support",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/psd2.md",
       "redirect_url": "https://support.microsoft.com/account-billing/payment-services-directive-2-and-strong-customer-authentication-3527fa95-9c6a-5f6f-d8e6-f27f33aba50e",
       "redirect_document_id": false
