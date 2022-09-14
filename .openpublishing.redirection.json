@@ -7799,6 +7799,11 @@
       "source_path": "microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices.md",
       "redirect_url": "//mem/autopilot/windows-autopilot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/create-and-edit-autopilot-profiles.md",
+      "redirect_url": "//mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
     }
     ]
   }
