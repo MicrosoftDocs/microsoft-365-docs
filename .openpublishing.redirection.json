@@ -7764,6 +7764,16 @@
       "source_path": "microsoft-365/business-premium/m365bp-manage-windows-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
     }
     ]
   }
