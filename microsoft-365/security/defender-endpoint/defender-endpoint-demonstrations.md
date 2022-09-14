@@ -39,16 +39,16 @@ The following table lists the available demonstrations alphabetically, with thei
 
 | # | Demonstration name | Protection area | Description |
 |:--|:---|:---|:---|
-| 1 | [App reputation demonstration](defender-endpoint-demonstration-app-reputation.md) | ? | Navigate to the app reputation page to see the demonstration scenario using Microsoft Edge. |
+| 1 | [App reputation demonstration](defender-endpoint-demonstration-app-reputation.md) | NGP | Navigate to the app reputation page to see the demonstration scenario using Microsoft Edge. |
 | 2 | [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md) | ASR | Download sample files to trigger each ASR rule. |
 | 3 | [Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md) | NGP | With the BAFS feature in Microsoft Defender Antivirus, newly discovered files are analyzed and - if needed - blocked. |
-| 4 | [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md) | ? |  Confirm that cloud-delivered protection is working properly on your computer. |
+| 4 | [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md) | NGP |  Confirm that cloud-delivered protection is working properly on your computer. |
 | 5 | [Controlled folder access (CFA) demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md) | ASR | Download the CFA test tool. |
 | 6 | [Controlled folder access (CFA) demonstrations](defender-endpoint-demonstration-controlled-folder-access.md) | ASR | Download and execute a sample file to trigger CFA ransomware protection. |
 | 7 | [Exploit protection (EP) demonstrations](defender-endpoint-demonstration-exploit-protection.md) | ASR | Apply custom exploit protection settings. |
-| 8 | [Network protection demonstrations](defender-endpoint-demonstration-network-protection.md) | ASR | Navigate to a suspicious RUL to trigger network protection. |
+| 8 | [Network protection demonstrations](defender-endpoint-demonstration-network-protection.md) | ASR | Navigate to a suspicious URL to trigger network protection. |
 | 9 | [Potentially unwanted applications (PUA) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md) | EDR | Confirm that potentially unwanted applications (PUAs) are being blocked on your network by downloading a fake (safe) PUA file. |
-| 10 | [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md) | ? | Navigate to the URL Reputation page to see the demonstration scenarios using Microsoft Edge. |
+| 10 | [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md) | NGP | Navigate to the URL Reputation page to see the demonstration scenarios using Microsoft Edge. |
 
 ## See also
 
