@@ -58,6 +58,8 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 > - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 > - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 
