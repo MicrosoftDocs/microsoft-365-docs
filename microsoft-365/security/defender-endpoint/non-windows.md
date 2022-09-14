@@ -17,6 +17,7 @@ ms.collection:
   - m365solution-evalutatemtp
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint for non-Windows platforms

@@ -16,6 +16,7 @@ ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
+search.appverid: met150
 ---
 
 # Use Group Policy settings to configure and manage Microsoft Defender Antivirus

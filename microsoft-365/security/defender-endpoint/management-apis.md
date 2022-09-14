@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Overview of management and APIs
