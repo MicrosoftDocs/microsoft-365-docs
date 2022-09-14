@@ -20,12 +20,12 @@ ms.collection:
 
 # View and edit device protection policies
 
-In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in Microsoft Defender's security center or the Admin center. To help simplify setup and configuration, there are pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
+In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in the Microsoft 365 Defender portal or in the Microsoft Endpoint Manager admin center. To help simplify setup and configuration, there are pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
 
 **This guidance describes how to**:
 
 - Get an overview of your default policies
-- Work with device policies in Defender security center, Admin center, and Intune.
+- Work with device policies in either the Microsoft 365 Defender portal or the Microsoft Endpoint Manager admin center (Intune).
 
 ## About the default device protection policies
 
@@ -43,7 +43,7 @@ The following details apply to working with your policies in the security center
 
 ### View existing device protection policies
 
-To view your existing device protection policies in the security center:
+To view your existing device protection policies in the Microsoft 365 Defender portal:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
