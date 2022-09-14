@@ -42,6 +42,6 @@ Only users who hold a Global Administrator or Compliance Manager Administration 
 7. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
 8. You’ll arrive at your new template’s details page, where you can [create your assessment](compliance-manager-assessments.md#create-assessments).
 
-## Grant user access to individual assessment templates
+## Grant user access to individual templates
 
-You can restrict user access to individual assessment templatess by managing user roles from within a template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
+You can restrict user access to individual assessment templates by managing user roles from within a template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.

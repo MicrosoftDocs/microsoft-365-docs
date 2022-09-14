@@ -184,9 +184,8 @@ External users who need access for auditing or other purposes can also be assign
 
 Follow the steps to grant user access to an assessment. Note that you can also assign user roles for individual assessment templates using the same process.
 
-1. From your **Assessments** page, find the assessment you want to grant access to.
+1. From your **Assessments** page, find the assessment you want to grant access to. Select it to open its details page.
     1. To assign a user to a template, go to your **Assessment templates** page, find the template you want to grant access to, and follow the same steps outlined below.
-1. Select the assessment to open its details page.
 1. In the upper-right corner, select **Manage user access**.
 1. A flyout pane appears showing the list of users in your organization  ASK HARDIK-- WILL EXTERNAL USERS IN THEIR ADD BE HERE?. Users who currently have access to the assessment will have a blue box with a check mark to the left of their name. The list has three tabs that correlate to each possible role: Readers, Assessors, and Contributors.
 1. Navigate to the tab indicating the role for which you want to add a user.

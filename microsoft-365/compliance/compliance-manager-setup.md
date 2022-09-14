@@ -78,6 +78,8 @@ Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscr
 
 The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/roles/permissions-reference) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
+A user can only hold one role at a time. Any change in a user's role will override their previous role.
+
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
@@ -94,12 +96,13 @@ The four roles listed in table above provide access to assessments: Compliance M
 You can grant users access to individual assessments from two places:
 
 1. **From an assessment's details page**: Open an assessment and select the **Manage users access** command to add users by role. 
-    > [!NOTE]
-    > If you assign a role to someone to grant access to an assessment who already has an existing role, the new role assignment overrides their existing role.
 
 1. **From an assessment template page**: Open a template and select the **Manage user access** command to add users by role.
 
 See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
+
+> [!NOTE]
+> If you assign a role to someone to grant access to an assessment who already has an existing role, the new role assignment overrides their existing role.
 
 ## Start a premium assessments trial
 
