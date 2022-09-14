@@ -174,17 +174,18 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 ## Grant user access to individual assessments
 
-When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment.
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)).
 
-Granting access to individual assessments can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. Restricting access in this way helps protect the privacy of the organization's data and business operations.
+You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
 
-Access to assessments can be granted to individuals outside of your organization who serve as auditors or other functions related to your organization's regulatory obligations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#more-about-azure-ad).
+External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#more-about-azure-ad).
 
 #### Steps for granting access
 
-Follow these steps to grant user access to an assessment:
+Follow the steps to grant user access to an assessment. Note that you can also assign user roles for individual assessment templates using the same process.
 
 1. From your **Assessments** page, find the assessment you want to grant access to.
+    1. To assign a user to a template, go to your **Assessment templates** page, find the template you want to grant access to, and follow the same steps outlined below.
 1. Select the assessment to open its details page.
 1. In the upper-right corner, select **Manage user access**.
 1. A flyout pane appears showing the list of users in your organization  ASK HARDIK-- WILL EXTERNAL USERS IN THEIR ADD BE HERE?. Users who currently have access to the assessment will have a blue box with a check mark to the left of their name. The list has three tabs that correlate to each possible role: Readers, Assessors, and Contributors.

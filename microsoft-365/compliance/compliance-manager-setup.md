@@ -87,19 +87,19 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 
 ### Role-based access to assessments
 
-You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant per-assessment access to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. See [More about Azure AD](#more-about-azure-ad) above for instructions.
+You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant per-assessment access to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#more-about-azure-ad).
 
 The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
 
-There are two ways of granting access to assessments to users:
+You can grant users access to individual assessments from two places:
 
-1. **From an assessment's details page**: Open an assessment and select the **Manage users access** command to select your users and assign them a role. See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
+1. **From an assessment's details page**: Open an assessment and select the **Manage users access** command to add users by role. 
     > [!NOTE]
     > If you assign a role to someone to grant access to an assessment who already has an existing role, the new role assignment overrides their existing role.
-1. **Within the Compliance Manager settings**: Add users to one of the four roles listed above. See [Where to set permissions](#where-to-set-permissions) above for more detailed instructions.
 
-    > [!NOTE]
-    > Assigning a user at this level grants them that level of access to **all** assessments by default. If you want to restrict access to specific assessments, assign the user from the assessment details page as described in #1 above.
+1. **From an assessment template page**: Open a template and select the **Manage user access** command to add users by role.
+
+See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
 
 ## Start a premium assessments trial
 
