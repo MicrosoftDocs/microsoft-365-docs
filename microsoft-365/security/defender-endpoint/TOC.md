@@ -17,7 +17,8 @@
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)
-### [Microsoft Defender for Endpoint demonstration scenarios](defender-endpoint-demonstrations.md)
+### [Microsoft defender for endpoint demonstrations]()
+#### [Microsoft Defender for Endpoint demonstration scenarios](defender-endpoint-demonstrations.md)
 #### [App reputation demonstrations](defender-endpoint-demonstration-app-reputation.md)
 #### [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md)
 #### [Block at First Sight \(BAFS\) demonstration)](defender-endpoint-demonstration-block-at-first-sight-bafs.md)
