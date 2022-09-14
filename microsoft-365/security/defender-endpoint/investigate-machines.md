@@ -195,7 +195,6 @@ The **Security assessments** card shows the overall exposure level, security rec
 
 :::image type="content" source="images/security-assessments.png" alt-text="The security assessments card" lightbox="images/security-assessments.png":::
 
-
 ### Device health status
 
 The **Device health status** card shows a summarized health report for the specific device. One of the following messages is displayed at the top of the card to indicate the overall status of the device (listed in order of highest to lowest priority):
@@ -224,8 +223,6 @@ Please note that a grey circle indicates that the data is unknown.
 To gain an in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
 
 :::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
-
-
 
 ## Related topics
 
