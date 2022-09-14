@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/13/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -351,7 +351,7 @@ After a device is enrolled in Intune, you can add it to a device group. [Learn m
 
 ## View a list of onboarded devices
 
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). On the navigation pane, under **Endpoints**, choose **Device inventory**.
+To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). On the navigation pane, go to **Assets** > **Devices**.
 
 ## Next steps
 
