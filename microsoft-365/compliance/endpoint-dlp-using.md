@@ -312,9 +312,9 @@ In this scenario, we'll define a group of printers that the legal department use
 ### Create and use printer groups
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
-1. Select **Create printer group** and give the group a name.
-1. Select **Add printer**. You can define printers by:
-    1. Friendly printer name (the name of the printer as it appears in the **Add a device** picker)
+1. Select **Create printer group** and give the group a name. In this scenarion, we'll use `Legal printers`.
+1. Select **Add printer** and provide a name. You can define printers by:
+    1. Friendly printer name 
     1. USB product ID
     1. USB vendor ID
     1. IP range
@@ -327,16 +327,27 @@ In this scenario, we'll define a group of printers that the legal department use
 ### Configure policy printing actions
 
 1. Open the **Policies** tab.
-1. 
-1. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
 
-3. Choose **edit policy**.Create a new policy that is scoped only to **Devices**. For this example you can use any template.
-1. 
-1. 
+1. Select **Create policy** and select the custom policy template.
+1. Scope the location to only **Devices**.
 
-1. Select **Audit or restrict activities on devices**
-1. Then pick **File activities on all apps**
-1. Select **Apply restrictions to specific activity** 
+1. Create a rule where:
+    1. **Content contains** = **Trainable classifiers**, **Legal Affairs**
+    1. **Actions** = **Audit or restrict activities on devices**
+    1. Then pick **File activities on all apps**
+    1. The select **Apply restrictions to specific activity**
+    1. Select **Print** = **Block**
+1. Select **Choose different print restrictions**
+1. Under **Printer group restrictions**, select **Add group** and select **Legal printers**.
+1. Set **Action** = **Allow**.
+    > [!TIP]
+    > The **Allow** action wil record  and audit event to the audit log, but not generate an alert or notification. 
+10. Save.
+11. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
+
+12. Review your settings and choose **Submit**.
+
+13. The new DLP policy will appear in the policy list.
 
 
 

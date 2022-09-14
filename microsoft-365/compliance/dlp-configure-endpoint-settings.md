@@ -300,12 +300,12 @@ Use this setting to define groups of printers that you want to assign policy act
 You can define printers by these parameters:
 
 1. Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
-1. USB product ID - Get the USB product ID value from the printer device property details in Device manager.
-1. USB vendor ID - Get the USB vendor ID from the printer device property details in Device manager.
+1. USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+1. USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 1. IP range
-1. Print to file 
+1. Print to file - For example Microsoft Print to PDF or Microsoft XPS Document Writer.
 1. Universal printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started.md) for more information on universal printers
-1. Corporate printer - is a printer that's on a print server in your domain. It's path might look like  \\print-server\contoso.com\legal_printer_001
+1. Corporate printer - is a print queue shared through on-premise Windows print server in your domain. It's path might look like  \\print-server\contoso.com\legal_printer_001
 1. Print to local
 
 You assign each printer in the group an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a printer group named **Legal printers** and add individual printers (with an alias) by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
@@ -321,8 +321,32 @@ You can assign these policy actions to the group in a DLP policy:
 
 The most common use case is to use printers groups as an allow list as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it is available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
 
-
 ### Removable storage device groups
+
+Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
+
+You can define removeable storage devices by these parameters:
+
+1. Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
+1. USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+1. USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+1. Serial number ID - Get the serial number ID value from the storage device property details in device manager.
+1. Device ID - Get the device ID value from the storage device property details in device manager.
+1. Instance path ID - Get the device ID value from the storage device property details in device manager.
+1. Hardware ID - Get the hardware ID value from the storage device property details in device manager.
+
+You assign each removable storage device in the group an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a removable storage device group named **Backup** and add individual devices  (with an alias) by their friendly name, like `backup_drive_001`, and `backup_drive_002`.
+
+You can multi-select the parameters and the printer group will include all devices that satisfy those parameters.
+
+You can assign these policy actions to the group in a DLP policy:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+The most common use case is to use removable storage devices groups as an allow list as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it is available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
 
 ### Network share groups
 
