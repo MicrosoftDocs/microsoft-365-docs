@@ -32,13 +32,16 @@ search.appverid:
 description: "Learn the top 10 ways to protect your business, including ransomware, phishing, and malicious attachments."
 ---
 
-# Top 10 ways to secure your data - Best practices for small and medium-sized businesses
+# Top 10 ways to secure your business - Best practices
 
 **Applies to**
 
 - Microsoft 365 Business Basic
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
+
+> [!NOTE]
+> This article is designed for small and medium-sized businesses with up to 300 users. If you're an enterprise organization, see [Deploy ransomware protection for your Microsoft 365 tenant](../../solutions/ransomware-protection-microsoft-365.md).
 
 Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes more capabilities, such as device management, advanced threat protection, and information protection. This article describes steps you can take to secure your business data, and [compares capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
 
