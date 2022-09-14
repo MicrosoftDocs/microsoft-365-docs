@@ -295,7 +295,6 @@
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
 
-
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
 ##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
@@ -375,7 +374,7 @@
 ##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics and performance for Microsoft Defender Antivirus
-##### [Device health and compliance reports](device-health-reports.md)
+##### [Device health reports](device-health-reports.md)
 ###### [Microsoft Defender Antivirus health](device-health-microsoft-defender-antivirus-health.md)
 ###### [Sensor health and OS](device-health-sensor-health-os.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 

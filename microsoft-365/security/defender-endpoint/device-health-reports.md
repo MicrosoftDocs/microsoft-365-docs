@@ -1,5 +1,5 @@
 ---
-title: Device health report in Microsoft Defender for Endpoint
+title: Device health reporting in Microsoft Defender for Endpoint
 description: Use the device health report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
 search.product: eADQiWindows 10XVcnh
@@ -20,7 +20,7 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-# Device health and compliance report in Microsoft Defender for Endpoint
+# Device health reports in Microsoft Defender for Endpoint
 
 **Applies to:**
 

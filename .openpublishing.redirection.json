@@ -4392,7 +4392,7 @@
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/machine-reports.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-reports.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-reports",
       "redirect_document_id": false
     },
     {
