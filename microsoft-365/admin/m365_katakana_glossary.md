@@ -4,16 +4,18 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tadaom
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ROBOTS: NOINDEX, NOFOLLOW 
 description: "Learn how to view the Japanese katakana glossary for the Microsoft 365 admin center."
-ms.date: 09/12/2022
+ms.date: 09/14/2022
 ---
+<!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
 
 # Microsoft 365 admin center katakana glossary
 
