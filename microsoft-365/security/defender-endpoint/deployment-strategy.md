@@ -17,6 +17,7 @@ ms.collection:
   - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Plan your Microsoft Defender for Endpoint deployment
