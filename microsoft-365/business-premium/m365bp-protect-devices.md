@@ -33,6 +33,7 @@ Your objectives are to:
 - [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md).
 - [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
 - [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
+- [Install Office applications](../admin/setup/install-applications.md) on devices that don't already have Office applications
 
 Once these objectives have been achieved, your overall mission to protect your organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. See your next steps!
 
