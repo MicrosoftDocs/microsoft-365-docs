@@ -80,13 +80,13 @@ Existing properties that aren't included in the request body will maintain their
 
 For best performance, you shouldn't include existing values that haven't change.
 
-Property|Type|Description
+Property|Type|Description|
 :---|:---|:---
-Status|String|Specifies the current status of the alert. The property values are: 'New', 'InProgress' and 'Resolved'.
-assignedTo|String|Owner of the alert
-Classification|String|Specifies the specification of the alert. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'.
-Determination|String|Specifies the determination of the alert. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
-Comment|String|Comment to be added to the alert.
+Status|String|Specifies the current status of the alert. The property values are: 'New', 'InProgress' and 'Resolved'.|
+assignedTo|String|Owner of the alert|
+Classification|String|Specifies the specification of the alert. The property values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.|
+Determination|String|Specifies the determination of the alert. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).|
+Comment|String|Comment to be added to the alert.|
 
 >[!NOTE]
 >Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.

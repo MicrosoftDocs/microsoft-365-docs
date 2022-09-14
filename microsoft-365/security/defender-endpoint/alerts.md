@@ -66,8 +66,8 @@ ms.custom: api
 |relatedUser|String|Details of user related to a specific alert.|
 |severity|Enum|Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.|
 |status|Enum|Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.|
-|classification|Nullable Enum|Specification of the alert. Possible values are: 'Unknown', 'FalsePositive', 'TruePositive'.|
-|determination|Nullable Enum|Specifies the determination of the alert. Possible values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
+|classification|Nullable Enum|Specification of the alert. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.|
+|determination|Nullable Enum|Specifies the determination of the alert. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).|
 |category|String|Category of the alert.|
 |detectionSource|String|Detection source.|
 |threatFamilyName|String|Threat family.|
