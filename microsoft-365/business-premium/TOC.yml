@@ -70,24 +70,12 @@
     items:
       - name: Overview
         href: m365bp-protect-devices.md
-      - name: Set up managed devices
-        href: m365bp-managed-devices-setup.md
+      - name: Upgrade to Windows 10 Pro (if needed)
+        href: m365bp-upgrade-windows-10-pro.md    
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
-      - name: Protect Windows devices
-        items: 
-          - name: Secure Windows devices
-            href: m365bp-secure-windows-devices.md
-          - name: Upgrade to Windows 10 Pro (if needed)
-            href: m365bp-upgrade-windows-10-pro.md
-          - name: Manage Windows devices
-            href: m365bp-manage-windows-devices.md
-          - name: Prepare for Office client deployment
-            href: m365bp-prepare-for-office-client-deployment.md
-          - name: Create app protection settings for Windows devices
-            href: m365bp-protection-settings-for-windows-10-devices.md
-          - name: Validate app settings on Windows devices
-            href: m365bp-validate-settings-on-windows-10-pcs.md
+      - name: Use Windows Autopilot to set up or reset devices
+        href: /mem/autopilot/windows-autopilot.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Review and edit device policies
     href: m365bp-view-edit-create-mdb-policies.md
   - name: Manage device groups
