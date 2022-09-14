@@ -72,7 +72,7 @@ Endpoint DLP supports monitoring of these file types through policy:
 - .txt files
 - .rtf files
 - .c files
-- .class files
+- .class files (Windows only)
 - .cpp files
 - .cs files
 - .h files
