@@ -16,6 +16,7 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 09/09/2022
 ms.reviewer: tewchen
+search.appverid: met150
 ---
 
 # Deploy and manage Removable Storage Access Control using group policy

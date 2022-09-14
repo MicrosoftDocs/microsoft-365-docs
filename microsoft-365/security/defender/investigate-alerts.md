@@ -21,7 +21,9 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
+search.appverid: met150
 ---
+
 # Investigate alerts in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
