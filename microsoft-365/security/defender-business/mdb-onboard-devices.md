@@ -154,7 +154,7 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 Choose one of the following options to onboard Mac:
 
 - [Local script for Mac](#local-script-for-mac) (*recommended*)
-- [Intune for Mac](#intune-for-mac)
+- [Intune for Mac](#intune-for-mac) (if you're already using Intune)
 
 ### Local script for Mac
 
