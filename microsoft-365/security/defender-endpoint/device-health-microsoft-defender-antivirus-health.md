@@ -20,7 +20,7 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-# Device health Microsoft Defender Antivirus health report
+# Device health, Microsoft Defender Antivirus health report
 
 **Applies to:**
 

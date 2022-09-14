@@ -20,7 +20,7 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-# Device health Sensor health & OS report
+# Device health, Sensor health & OS report
 
 **Applies to:**
 
