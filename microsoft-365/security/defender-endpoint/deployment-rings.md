@@ -17,6 +17,7 @@ ms.collection:
   - highpri
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint in rings

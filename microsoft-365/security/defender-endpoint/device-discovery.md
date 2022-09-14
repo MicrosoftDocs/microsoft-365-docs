@@ -20,6 +20,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: m365d
+search.appverid: met150
 ---
 
 # Device discovery overview
