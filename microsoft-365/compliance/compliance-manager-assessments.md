@@ -189,11 +189,9 @@ Follow the steps to grant user access to an assessment. Note that you can also a
 
 1. In the upper-right corner, select **Manage user access**.
 
-1. A flyout pane appears showing the list of users in your organization  ASK HARDIK-- WILL EXTERNAL USERS IN THEIR ADD BE HERE?. Users who currently have access to the assessment will have a blue box with a check mark to the left of their name. The list has three tabs that correlate to each possible role: Readers, Assessors, and Contributors.
+1. A **Manage user access** flyout pane appears. It has three tabs, one for each role of Readers, Assessors, and Contributors. Navigate to the tab for the role you want your user to hold for this assessment. *ASK HARDIK-- WILL EXTERNAL USERS IN THEIR ADD BE HERE?* Users who currently have access to the assessment will have a blue box with a check mark to the left of their name.
 
-1. Navigate to the tab indicating the role for which you want to add a user.
-
-1. Select **Add reader**, or **Add assessor** or **Add contributor**.
+1. Select the **+ Add** command for the role tab you're on: **Add reader**, or **Add assessor** or **Add contributor**.
 
 1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar adn select the user from there. You can select multiple users at once.
 
