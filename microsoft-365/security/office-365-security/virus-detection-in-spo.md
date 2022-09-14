@@ -19,8 +19,8 @@ ms.collection:
   - M365-security-compliance
 description: Learn about how SharePoint Online detects viruses in files that users upload and prevents users from downloading or syncing the files.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams

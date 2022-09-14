@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate alerts in Microsoft Defender for Endpoint

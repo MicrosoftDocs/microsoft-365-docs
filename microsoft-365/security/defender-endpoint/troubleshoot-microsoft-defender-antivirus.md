@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
