@@ -16,7 +16,7 @@ ms.custom:
 - 'configssc'
 - 'AppDefToBDC'
 - seo-marvel-apr2020
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
