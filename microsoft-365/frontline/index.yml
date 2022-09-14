@@ -41,7 +41,7 @@ productDirectory:
   items:
     # Card
     - title: Solutions to transform your business
-      imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-blue.svg
+      imageSrc: /office/media/icons/lightbulb-idea-capture-blue.svg
       links:
         - url: flw-team-collaboration.md
           text: Communication
@@ -57,7 +57,7 @@ productDirectory:
           text: Virtual appointments
     # Card
     - title: Solutions for your industry
-      imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
+      imageSrc: /office/media/icons/walkthrough-map-blue.svg
       links:
         - url: teams-in-hc.md
           text: Healthcare
@@ -69,7 +69,7 @@ productDirectory:
           text: Manufacturing
     # Card
     - title: Manage apps
-      imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
+      imageSrc: /office/media/icons/blocks-blue.svg
       links:
         - url: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Approvals
@@ -85,16 +85,16 @@ productDirectory:
           text: More >
     # Card
     - title: Set up and configure Microsoft 365 for frontline workers
-      imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
+      imageSrc: /office/media/icons/settings.svg
       summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance.
       url: flw-deploy-overview.md
     # Card
     - title: Adoption resources
-      imageSrc: https://docs.microsoft.com/office/media/icons/users-group.svg
+      imageSrc: /office/media/icons/users-group.svg
       summary: Go from inspiration to execution with these adoption resources.
       url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
     # Card
     - title: End user training
-      imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+      imageSrc: /office/media/icons/video-play.svg
       summary: Get your frontline workforce up and running quickly with these training videos.
       url: https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7#bkmk_flwscenarios
