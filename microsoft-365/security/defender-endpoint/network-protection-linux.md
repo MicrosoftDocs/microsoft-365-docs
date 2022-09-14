@@ -19,6 +19,7 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date:
+search.appverid: met150
 ---
 
 # Network protection for Linux

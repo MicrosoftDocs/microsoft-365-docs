@@ -15,6 +15,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Next-generation protection overview

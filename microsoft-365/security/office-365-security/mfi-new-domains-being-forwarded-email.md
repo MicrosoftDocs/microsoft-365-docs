@@ -13,6 +13,7 @@ description: Admins can learn how to use the New domains being forwarded email i
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # New domains being forwarded email insight in the Security & Compliance Center

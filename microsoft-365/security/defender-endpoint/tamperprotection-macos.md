@@ -15,6 +15,7 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Protect macOS security settings with tamper protection

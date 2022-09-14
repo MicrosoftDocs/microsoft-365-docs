@@ -16,6 +16,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.date: 08/08/2022
 ms.reviewer: tewchen
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control

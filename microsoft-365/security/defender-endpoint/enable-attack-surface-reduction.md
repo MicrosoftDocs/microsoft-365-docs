@@ -18,6 +18,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
+search.appverid: met150
 ---
 
 # Enable attack surface reduction rules
