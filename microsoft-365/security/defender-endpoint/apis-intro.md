@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Access the Microsoft Defender for Endpoint APIs

@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+search.appverid: met150
 ---
 
 # Use basic permissions to access the portal
