@@ -14,6 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
