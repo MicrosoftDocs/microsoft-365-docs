@@ -17,6 +17,7 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation

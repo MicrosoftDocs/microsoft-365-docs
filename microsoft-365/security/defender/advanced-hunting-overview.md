@@ -19,6 +19,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+search.appverid: met150
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft 365 Defender

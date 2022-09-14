@@ -15,6 +15,7 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Investigation resource type

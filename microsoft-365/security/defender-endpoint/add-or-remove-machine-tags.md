@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: m365d
 ms.custom: api
+search.appverid: met150
 ---
 
 # Add or remove machine tags API
