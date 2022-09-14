@@ -49,22 +49,22 @@ Managed Shifts connectors are connectors developed in collaboration with our par
 
 Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed.
 
-To learn more, see the following sections in this article.
-
-|Connector |More information  |
+|Connector |More information |
 |---------|---------|
-|[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector, which is hosted and managed by Microsoft, to integrate Shifts with Blue Yonder Workforce Management. Prerequisites: <ul><li>[Shifts connector wizard](shifts-connector-wizard.md#prerequisites)</li><li>[PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
-|[Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use this connector, which is hosted and managed by Microsoft, to integrate Shifts with UKG Dimensions. Prerequisites: <ul><li>[Shifts connector wizard](shifts-connector-wizard-ukg.md#prerequisites)</li><li>[PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
-|[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector, which is hosted and managed by Zebra, to integrate Shifts with Reflexis Workforce Scheduler. To learn more, go to https://connect.zebra.com/microsoft-connectors.|
+|[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector, which is hosted and managed by Microsoft, to integrate Shifts with Blue Yonder Workforce Management. Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites) in the Microsoft 365 admin center</li><li> Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
+|[Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use this connector, which is hosted and managed by Microsoft, to integrate Shifts with UKG Dimensions. Prerequisites for setting up a connection:<ul><li>Using the [Shifts connector wizard](shifts-connector-wizard-ukg.md#prerequisites)  in the Microsoft 376 admin center</li><li>Using [PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
+|[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector, which is hosted and managed by Zebra, to integrate Shifts with Reflexis Workforce Scheduler. To learn more, go to <https://connect.zebra.com/microsoft-connectors>.|
 
 ****
 **Option 2**
 
-Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed. To learn more, see the following sections of this article:
+Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed.
 
-- [Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)
-- [Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)
-- [Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)
+|Connector|Description|Requirements|
+|---------|---------|---------|
+|[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector, which is hosted and managed by Microsoft, to integrate Shifts with Blue Yonder Workforce Management.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites)  in the Microsoft 365 admin center</li><li>Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
+|[Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use this connector, which is hosted and managed by Microsoft, to integrate Shifts with UKG Dimensions. |Prerequisites: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard-ukg.md#prerequisites) in the Microsoft 365 admin center</li><li>Using [PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
+|[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector, which is hosted and managed by Zebra, to integrate Shifts with Reflexis Workforce Scheduler.|To learn more, go to <https://connect.zebra.com/microsoft-connectors>.|
 
 ****
 
