@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.reviewer: pandrew1
 search.appverid:

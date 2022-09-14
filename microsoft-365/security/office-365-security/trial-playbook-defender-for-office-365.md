@@ -51,7 +51,7 @@ Let's get started!
 
 #### Start your Microsoft Defender for Office 365 trial
 
-After you've initiated the trial and completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-blocking-mode), it may take up to 2 hours for changes to take effect.
+After you've initiated the trial and completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-blocking-mode), it may take up to 2 hours for changes to take effect.
 
 We've automatically configured [Preset security policies](preset-security-policies.md) in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
@@ -163,7 +163,7 @@ Equip your users with the right knowledge to identify threats and report suspici
 
 #### Start your Defender for Office 365 evaluation
 
-After you've completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-audit-mode), it may take up to 2 hours for changes to take effect. We've automatically configured Preset Evaluation policies in your environment.
+After you've completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-audit-mode), it may take up to 2 hours for changes to take effect. We've automatically configured Preset Evaluation policies in your environment.
 
 Evaluation policies ensure no action is taken on email that's detected by Defender for Office 365.
 
@@ -181,7 +181,7 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
-- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reporting-in-audit-mode) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
+- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
 - Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
 ### Step 2: Intermediate steps in auditing mode
