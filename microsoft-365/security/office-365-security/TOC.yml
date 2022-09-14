@@ -286,6 +286,8 @@
            href: campaigns.md
          - name: Threat Explorer
            items:
+           - name: Threat Explorer and real-time detections
+             href: threat-explorer.md
            - name: Threat hunting in Threat Explorer
              href: threat-hunting-in-threat-explorer.md
            - name: Email security with Threat Explorer
@@ -298,6 +300,8 @@
            href: impersonation-insight.md
          - name: Spoof intelligence insight
            href: learn-about-spoof-intelligence.md
+         - name: Spoof intelligence insight walkthrough
+           href: walkthrough-spoof-intelligence-insight.md
          - name: View the admin audit log (Exchange)
            href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
          - name: View email security reports
@@ -440,6 +444,12 @@
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: Monitor for leaks of personal data
        href: monitor-for-leaks-of-personal-data.md
+     - name: SIEM server integration
+       href: siem-server-integration.md
+     - name: SIEM threat intelligence integration
+       href: siem-integration-with-office-365-ti.md
+     - name: Support for DKIM-signed messages
+       href: support-for-validation-of-dkim-signed-messages.md
      - name: Install Application Guard for Office
        href: install-app-guard.md
      - name: FAQ
