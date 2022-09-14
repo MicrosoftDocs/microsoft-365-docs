@@ -5,13 +5,12 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
+ms.date: 09/14/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: 
