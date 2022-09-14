@@ -26,7 +26,7 @@ description: "An overview for how to set up and secure managed devices from secu
 
 :::image type="content" source="media/mission6.png" alt-text="Secure managed devices with Defender for Business.":::
 
-**Welcome to your final critical mission**! Here, you'll onboard and implement protection for all the managed devices in your organization. Microsoft Defender for Business capabilities now included in Microsoft 365 Business Premium can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. You can also make sure devices are ready for Office deployment. When you're done completing your objectives, you can rest assured, knowing you've done your part to protect your organization!
+**Welcome to your final critical mission**! Here, you'll onboard and implement protection for all the managed devices in your organization. Microsoft Defender for Business capabilities now included in Microsoft 365 Business Premium can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. When you're done completing your objectives, you can rest assured, knowing you've done your part to protect your organization!
 
 Your objectives are to:
 

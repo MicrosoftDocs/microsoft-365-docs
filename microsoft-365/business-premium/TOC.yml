@@ -134,18 +134,8 @@
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Compliance Manager
       href: m365bp-set-up-compliance.md
-    - name: Windows Autopilot
-      items:
-        - name: Add Autopilot devices and profile
-          href: m365bp-add-Autopilot-devices-and-profile.md
-        - name: Autopilot profile settings
-          href: m365bp-Autopilot-profile-settings.md
-        - name: Create and edit Autopilot profiles
-          href: m365bp-create-and-edit-Autopilot-devices.md
-    - name: App protection settings for Android and iOS
-      href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Validate app settings on Android and iOS
-      href: m365bp-validate-settings-on-android-or-ios.md
+    - name: Windows Autopilot scenarios and capabilities
+      href: /mem/autopilot/windows-autopilot-scenarios
 
       
 
