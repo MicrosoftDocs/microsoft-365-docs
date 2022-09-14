@@ -16,8 +16,8 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection: 
   - M365-security-compliance
 description: Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Outbound delivery pools

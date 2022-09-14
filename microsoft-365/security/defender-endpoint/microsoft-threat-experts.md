@@ -4,7 +4,7 @@ ms.reviewer:
 description: Microsoft Threat Experts provides an extra layer of expertise to Microsoft Defender for Endpoint.
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification, Ask Defender Experts
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,8 @@ ms.collection:
   - m365-security-compliance
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Threat Experts
