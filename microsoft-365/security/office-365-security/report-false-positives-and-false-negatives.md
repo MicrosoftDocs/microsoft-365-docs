@@ -13,6 +13,7 @@ ms.collection:
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Report false positives and false negatives in Outlook

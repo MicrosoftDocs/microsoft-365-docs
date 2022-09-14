@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get incident information API
@@ -76,13 +77,13 @@ Empty
 ## Response
 
 If successful, this method returns 200 OK, and the incident entity in the response body.
-If incident with the specified id was not found - 404 Not Found.
+If incident with the specified id wasn't found - 404 Not Found.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.security.microsoft.com/api/incidents/{id}
