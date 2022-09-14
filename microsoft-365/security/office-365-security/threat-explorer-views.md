@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: article
 
 ms.localizationpriority: medium
-search.appverid:
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365

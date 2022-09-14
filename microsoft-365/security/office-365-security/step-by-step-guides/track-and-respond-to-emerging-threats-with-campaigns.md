@@ -2,7 +2,6 @@
 title: Track and respond to emerging security threats with campaigns view in Microsoft Defender for Office 365
 description: Walkthrough of threat campaigns within Microsoft Defender for Office 365 to demonstrate how they can be used to investigate a coordinated email attack against your organization.
 search.product: 
-search.appverid: 
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
