@@ -7784,6 +7784,21 @@
       "source_path": "microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profiles.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-autopilot-profile-settings.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices.md",
+      "redirect_url": "//mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
     }
     ]
   }
