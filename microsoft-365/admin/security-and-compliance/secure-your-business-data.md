@@ -1,5 +1,5 @@
 ---
-title: Top 10 ways to secure your data - Best practices for small and medium-sized businesses
+title: Top 10 ways to secure your business
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -29,10 +29,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn the top 10 ways to protect your business, including ransomware, phishing, and malicious attachments."
+description: "Best practices to protect your business from ransomware, phishing, and malicious URLs or attachments."
 ---
 
-# Top 10 ways to secure your business - Best practices
+# Top 10 ways to secure your business - Best practices to follow
 
 **Applies to**
 
@@ -43,7 +43,7 @@ description: "Learn the top 10 ways to protect your business, including ransomwa
 > [!NOTE]
 > This article is designed for small and medium-sized businesses with up to 300 users. If you're an enterprise organization, see [Deploy ransomware protection for your Microsoft 365 tenant](../../solutions/ransomware-protection-microsoft-365.md).
 
-Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes more capabilities, such as device management, advanced threat protection, and information protection. This article describes steps you can take to secure your business data, and [compares capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
+Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes even more capabilities, such as device security, advanced threat protection, and information protection. This article describes how to secure your business, and [compares capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
 
@@ -62,7 +62,7 @@ Microsoft 365 for business plans include security capabilities, such as antiphis
 
 ## Comparing Microsoft 365 for business plans
 
-Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. These plans also include antiphishing, antimalware, and antispam protection. With Microsoft 365 Business Premium, you get more capabilities, such as device management, advanced threat protection, and information protection. 
+Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, SharePoint, and OneDrive for secure email, collaboration, and file storage. These plans also include baseline antiphishing, antimalware, and antispam protection. With Microsoft 365 Business Premium, you get more capabilities, such as device management, advanced threat protection, and information protection. 
 
 The following table compares capabilities in Microsoft 365 for business plans. 
 
@@ -79,9 +79,9 @@ The following table compares capabilities in Microsoft 365 for business plans.
 
 (<a id="fn1">1</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops only.
 
-(<a id="fn2">2</a>) Microsoft Intune is included with certain Microsoft 365 plans. Basic Mobility and Security capabilities are part of the Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+(<a id="fn2">2</a>) Microsoft Intune is included with certain Microsoft 365 plans, such as Microsoft 365 Business Premium. Basic Mobility and Security capabilities are included in Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
 
-(<a id="fn3">3</a>) Defender for Business is included in Microsoft 365 Business Premium. It can also be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
+(<a id="fn3">3</a>) Defender for Business is included in Microsoft 365 Business Premium. Defender for Business can also be added on to Microsoft 365 Business Basic or Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
 (<a id="fn4">4</a>) Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium. It can also be purchased as an add-on for Microsoft 365 Business Basic or Microsoft 365 Business Standard. See [Defender for Office 365 Plan 1 and Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
