@@ -158,7 +158,7 @@ crontab -l
 crontab -u username -l
 ```
 
-### To backup crontab entries
+### To back up crontab entries
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
@@ -208,6 +208,6 @@ crontab -u username -r
 +—————- minute (values: 0 - 59) (special characters: , \- \* /)  <br>
 | +————- hour (values: 0 - 23) (special characters: , \- \* /) <br>
 | | +———- day of month (values: 1 - 31) (special characters: , \- \* / L W C)  <br>
-| | | +——- month (values: 1 - 12) (special characters: , \- \* / )  <br>
+| | | +——- month (values: 1 - 12) (special characters: , \- \* /)  <br>
 | | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , \- \* / L W C) <br>
 | | | | |*****command to be executed
