@@ -17,6 +17,7 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Troubleshoot attack surface reduction rules
