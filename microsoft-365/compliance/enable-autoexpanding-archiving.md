@@ -36,6 +36,8 @@ You can use the Exchange Online auto-expanding archiving feature to enable addit
     - Auto-expanding archiving prevents you from recovering or restoring an [inactive mailbox](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). That means if you enable auto-expanding archiving for a mailbox and the mailbox is made inactive at a later date, you won't be able to [recover the inactive mailbox](recover-an-inactive-mailbox.md) (by converting it to an active mailbox) or [restore it](restore-an-inactive-mailbox.md) (by merging the contents to an existing mailbox). 
         
         If auto-expanding archiving is enabled on an inactive mailbox, the only way to recover data is by using the Content search tool in the Microsoft Purview compliance portal to export the data from the mailbox and import to another mailbox. For more information, see the [Inactive mailboxes and auto-expanding archives](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
+        
+    - Once auto-expanding archiving is enabled on a mailbox, [network upload of PST files](https://docs.microsoft.com/en-us/microsoft-365/compliance/use-network-upload-to-import-pst-files?view=o365-worldwide) may fail. This is due to the sharding of specific folders into auxiliary archives, which causes imports to a sharded location to generate an error.
 
 - You must be a global administrator in your organization or a member of the Organization Management role group in your Exchange Online organization to enable auto-expanding archiving. Alternately, you have to be a member of a role group that's assigned the Mail Recipients role to enable auto-expanding archiving for specific users.
 
