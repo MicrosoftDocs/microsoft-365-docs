@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
+search.appverid: met150
 ---
 
 # Set up steps for the Standard or Strict preset security policies in Microsoft Defender for Office 365

@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
+search.appverid: met150
 ---
 
 # Prioritize and manage Automated Investigations and Response (AIR)

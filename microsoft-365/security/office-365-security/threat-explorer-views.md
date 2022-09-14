@@ -18,6 +18,7 @@ description: Learn about how to use Threat Explorer and the real-time detections
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Views in Threat Explorer and real-time detections

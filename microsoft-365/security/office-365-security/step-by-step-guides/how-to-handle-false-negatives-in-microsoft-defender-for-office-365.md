@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
+search.appverid: met150
 ---
 
 # How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365

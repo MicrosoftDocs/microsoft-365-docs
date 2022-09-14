@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
+search.appverid: met150
 ---
 
 # Track and respond to emerging threats with campaigns in Microsoft Defender for Office 365

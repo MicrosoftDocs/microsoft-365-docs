@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: overview
 ms.technology: mdo
+search.appverid: met150
 ---
 
 # Welcome to the Microsoft Defender for Office 365 step-by-step guides
