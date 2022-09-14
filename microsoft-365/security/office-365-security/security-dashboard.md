@@ -96,7 +96,7 @@ Insights not only surface key issues you should review, they also include recomm
 
 :::image type="content" source="../../media/smartinsights.png" alt-text="The Smart insights" lightbox="../../media/smartinsights.png":::
 
-For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
+For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. 
 
 ## Threat investigation and response
 

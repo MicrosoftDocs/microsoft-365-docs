@@ -20,6 +20,8 @@
      items:
      - name: Try Defender for Office 365
        href: try-microsoft-defender-for-office-365.md
+     - name: About the Defender for Office 365 trial
+       href: about-defender-for-office-365-trial.md
      - name: Trial playbook for Defender for Office 365
        href: trial-playbook-defender-for-office-365.md
    - name: Deploy
@@ -430,6 +432,8 @@
      items:
      - name: Defender for Office 365 data retention
        href: mdo-data-retention.md
+     - name: Policies and protections
+       href: how-policies-and-protections-are-combined.md
      - name: Troubleshooting mail sent to Microsoft 365
        href: troubleshooting-mail-sent-to-office-365.md
      - name: Anti-spam message headers
@@ -448,6 +452,10 @@
        href: siem-server-integration.md
      - name: SIEM threat intelligence integration
        href: siem-integration-with-office-365-ti.md
+     - name: Privileged identity management in Defender for Office 365
+       href: use-privileged-identity-management-in-defender-for-office-365.md
+     - name: Anonymous inbound email messages over IPv6
+       href: support-for-anonymous-inbound-email-messages-over-ipv6.md
      - name: Support for DKIM-signed messages
        href: support-for-validation-of-dkim-signed-messages.md
      - name: Install Application Guard for Office
