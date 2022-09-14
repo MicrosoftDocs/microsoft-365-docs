@@ -3,7 +3,7 @@ title: (False Positives) How to handle legitimate emails getting blocked from de
 description: The steps to handle legitimate email getting blocked(False Positive) by Microsoft Defender for Office 365 in order to prevent lose of business. 
 search.product: 
 search.appverid: 
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
+ms.technology: mdo
 ---
 
 # How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365
