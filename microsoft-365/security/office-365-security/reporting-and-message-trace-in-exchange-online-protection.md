@@ -16,6 +16,7 @@ ms.custom:
 description: In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Reporting and message trace in EOP

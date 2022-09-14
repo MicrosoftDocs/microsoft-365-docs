@@ -5,6 +5,7 @@ author: dansimp
 ms.prod: m365-security
 ms.topic: include
 ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 > [!NOTE]

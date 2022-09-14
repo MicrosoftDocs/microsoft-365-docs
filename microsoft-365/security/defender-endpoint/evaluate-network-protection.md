@@ -16,6 +16,7 @@ ms.subservice: mde
 ms.collection: 
 - M365-security-compliance
 ms.date:
+search.appverid: met150
 ---
 
 # Evaluate network protection

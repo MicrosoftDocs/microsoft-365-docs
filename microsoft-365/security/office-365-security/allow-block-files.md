@@ -77,7 +77,7 @@ You have the following options to create block entries for files:
 
 ### Use the Microsoft 365 Defender portal to create block entries for files in the Submissions portal
 
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry for the file in the Tenant Allow/Block List.
+When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry on the **Files** tab in the Tenant Allow/Block List.
 
 For instructions, see [Report questionable email attachments to Microsoft](admin-submission.md#report-questionable-email-attachments-to-microsoft).
 
@@ -116,7 +116,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 New-TenantAllowBlockListItems -ListType <FileHash> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
-This example adds a block file entry for the specified files that never expires.
+This example adds a block entry for the specified files that never expires.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
@@ -126,45 +126,12 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to create allow entries for files in the Submissions portal
 
-You can't create allow entries for files directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the message as a false positive. For more information about admin submissions, see [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md).
+You can't create allow entries for files directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the message attachment as a false positive, which also adds an allow entry on the **Files** tab in the Tenant Allow/Block List.
 
-Reporting the file as a false positive on the **Submissions** page adds an allow entry for the file in the Tenant Allow/Block List.
+For instructions, see [Report good email attachments to Microsoft](admin-submission.md#report-good-email-attachments-to-microsoft).
 
 > [!IMPORTANT]
 > Because Microsoft manages allow entries for you, unneeded allow entries for files will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a file is still considered bad.
-
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
-
-2. On the **Submissions** page, select the **Email attachments** tab.
-
-3. On the **Email attachments** tab, click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
-
-4. On the **Submit to Microsoft for analysis** flyout that appears, enter the following information:
-
-   - **Select the submission type**: Verify the value **Email attachment** is selected.
-
-   - **File**: Click **Browse files** to find and select the file to submit.
-
-   - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
-
-     - **Allow this file**: Turn on this setting ![Toggle on.](../../media/scc-toggle-on.png).
-
-         - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **Specific date**: The maximum value is 30 days from today.
-
-         - **Allow entry note**: Enter optional information about why you're allowing this file.
-
-   When you're finished, click **Submit**, and then click **Done**.
-
-   :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Submit a false positive (good) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-allow.png":::
-
-5. After a few moments, the allow entry will appear on the **Files** tab on the **Tenant Allow/Block List** page.
-
-> [!NOTE]
-> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
 
 ## Use the Microsoft 365 Defender portal to view allow or block entries for files in the Tenant Allow/Block List
 
@@ -224,7 +191,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to modify allow or block entries for files in the Tenant Allow/Block List
 
-When you modify an allow or block file entry in the Tenant Allow/Block list, you can only modify the expiration date and notes.
+When you modify allow or block entries for files in the Tenant Allow/Block list, you can only modify the expiration date and notes.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
