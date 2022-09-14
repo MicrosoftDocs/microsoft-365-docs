@@ -77,13 +77,13 @@ Empty
 ## Response
 
 If successful and device exists - 200 OK with the [machine](machine.md) entity in the body.
-If machine with the specified ID was not found - 404 Not Found.
+If machine with the specified ID wasn't found - 404 Not Found.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
@@ -91,7 +91,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c29
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```http
 HTTP/1.1 200 OK
