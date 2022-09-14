@@ -14,6 +14,7 @@ description: Admins can learn about the insights and reports that are available 
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Mail flow insights in the Security & Compliance Center

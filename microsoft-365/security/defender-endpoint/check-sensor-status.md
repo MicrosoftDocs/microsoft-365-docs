@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
+search.appverid: met150
 ---
 
 # Check sensor health state at Microsoft Defender for Endpoint

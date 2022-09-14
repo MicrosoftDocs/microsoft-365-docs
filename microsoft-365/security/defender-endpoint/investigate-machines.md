@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate devices in the Microsoft Defender for Endpoint Devices list
@@ -197,18 +198,25 @@ The **Security assessments** card shows the overall exposure level, security rec
 
 ### Device health status
 
-The **Device health status** card shows a summarized health report for the specific device. One of the following status is displayed at the top of the card to indicate the overall status of the device:
+The **Device health status** card shows a summarized health report for the specific device. One of the following messages is displayed at the top of the card to indicate the overall status of the device (listed in order of highest to lowest priority):
 
-- Device is up to date
-- Platform is not up to date
-- Full scan failed
-- Quick scan failed
-- Engine is not up to date
-- Security intelligence is not up to date
 - Defender Antivirus not active
+- Security intelligence is not up to date
+- Engine is not up to date
+- Quick scan failed
+- Full scan failed
+- Platform is not up to date
+- Security intelligence update status is unknown
+- Engine update status is unknown
+- Quick scan status is unknown
+- Full scan status is unknown
+- Platform update status is unknown
+- Device is up to date
 - Status not available for macOS & Linux
 
 Other information in the card include: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode. 
+
+Please note that a grey circle indicates that the data is unknown. 
 
 >[!NOTE]
 >The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms. 

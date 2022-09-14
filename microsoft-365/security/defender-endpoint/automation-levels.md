@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
+search.appverid: met150
 ---
 
 # Automation levels in automated investigation and remediation capabilities
