@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint partner opportunities and scenarios

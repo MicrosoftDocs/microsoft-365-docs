@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC

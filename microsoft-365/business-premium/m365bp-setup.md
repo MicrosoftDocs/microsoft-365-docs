@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
-ms.date: 08/05/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -49,7 +49,7 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).
 
 > [!TIP]
-> - After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
 
 
 ## Work with a Microsoft partner

@@ -17,6 +17,7 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
+search.appverid: met150
 ---
 
 # Attack surface reduction rules reference

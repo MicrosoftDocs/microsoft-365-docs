@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
+search.appverid: met150
 ---
 
 # Overview of automated investigations

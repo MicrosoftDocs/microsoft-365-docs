@@ -15,6 +15,7 @@ ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 # Device Control Printer Protection
