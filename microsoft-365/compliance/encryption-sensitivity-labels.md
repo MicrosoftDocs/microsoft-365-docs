@@ -63,6 +63,10 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
     
     You might need to make some changes on your network devices such as firewalls. For details, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure) from the Azure Information Protection documentation.
 
+- Check your Azure AD configuration
+    
+    There are some Azure Active Directory (Azure AD) configurations that can prevent authorized access to encrypted content. For example, cross-tenant access settings and Conditional Access policies. For more information, see [Azure AD configuration for encrypted content](encryption-azure-ad-configuration.md).
+
 - Configure Exchange for Azure Information Protection
     
     Exchange doesn't have to be configured for Azure Information Protection before users can apply labels in Outlook to encrypt their emails. However, until Exchange is configured for Azure Information Protection, you don't get the full functionality of using Azure Rights Management protection with Exchange.
