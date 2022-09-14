@@ -75,7 +75,7 @@
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
       - name: Use Windows Autopilot to set up or reset devices
-        href: /mem/autopilot/windows-autopilot.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+        href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
       - name: Install Microsoft 365 Apps on devices
         href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Monitor onboarded devices
