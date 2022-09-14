@@ -17,7 +17,9 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: 
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
+search.appverid: met150
 ---
+
 # The Email entity page
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
