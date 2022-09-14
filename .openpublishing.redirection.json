@@ -7754,6 +7754,11 @@
       "source_path": "microsoft-365/business-premium/m365bp-managed-devices-setup.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-secure-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
     }
     ]
   }
