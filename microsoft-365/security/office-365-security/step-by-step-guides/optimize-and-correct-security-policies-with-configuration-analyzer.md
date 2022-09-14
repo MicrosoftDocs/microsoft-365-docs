@@ -16,7 +16,9 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
+search.appverid: met150
 ---
+
 # Optimize and correct security policies with configuration analyzer
 
 Configuration analyzer is a central location and single pane of glass for administering and viewing the email security policies you have configured in your tenant. You can perform a side-to-side comparison of your settings to our Standard and Strict recommended settings, apply recommendations and view historical changes that affected your posture.
