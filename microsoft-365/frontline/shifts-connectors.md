@@ -42,8 +42,8 @@ Managed Shifts connectors are connectors developed in collaboration with our par
 - [Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)
 - [Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)
 
-### Microsoft Teams Shifts connector for Blue Yonder
 <a name="blue_yonder"> </a>
+### Microsoft Teams Shifts connector for Blue Yonder
 
 The Teams Shifts connector for Blue Yonder is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) versions 2020.3, 2021.1, or 2021.2 to manage your schedules and keep them up to date.  
 
@@ -99,8 +99,8 @@ After a connection is set up, you can update and change connection settings at a
 
 As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
-### Microsoft Teams Shifts connector for UKG Dimensions
 <a name="ukg_dimensions"> </a>
+### Microsoft Teams Shifts connector for UKG Dimensions
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
