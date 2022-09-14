@@ -17,6 +17,7 @@ ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Specify additional definition sets for network traffic inspection
