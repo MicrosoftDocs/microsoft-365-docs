@@ -10,6 +10,7 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
