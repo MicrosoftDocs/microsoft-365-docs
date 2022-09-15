@@ -5,7 +5,7 @@
    - name: Overview
      items:
        - name: Overview of Office 365 security
-         href: overview.md
+         href: microsoft-defender-for-office-365-product-overview.md
        - name: Defender for Office 365
          href: defender-for-office-365.md
        - name: Step-by-step threat protection in Defender for Office 365

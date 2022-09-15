@@ -34,7 +34,7 @@ Microsoft Defender for Endpoint directly integrates with various Microsoft solut
 
 ### Microsoft Defender for Cloud
 
-Microsoft Defender for Endpoint provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
+Microsoft Defender for Cloud provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
 ### Microsoft Sentinel
 
