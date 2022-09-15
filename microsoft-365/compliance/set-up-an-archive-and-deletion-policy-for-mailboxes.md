@@ -40,12 +40,16 @@ The steps in this article set up an archiving and retention policy for a fictiti
 - Enable an archive mailbox for every user in the organization. This procedure gives users more mailbox storage, and is required so that a retention policy can automatically move items to the archive mailbox. A user can also manually move items to their archive mailbox for archival storage.
 
 - Create two custom retention tags to do the following actions:
+    
+    - Automatically move items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
+    
+    - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
 
-  - Automatically move items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
-
-  - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
-
-- Create a new retention policy and add the new custom retention tags to it. Additionally, you'll also add a built-in retention tags to the new retention policy. This includes a personal tag for archiving that users can assign to items in their mailbox. You'll also add a retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This action helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
+- Create a new retention policy and add the new custom retention tags to it. Additionally, you'll add two built-in retention tags that can't be achieved with a recommended Microsoft 365 retention label because they also move items to the archive mailbox:
+    
+    - A personal tag for archiving after 1 year that users can assign to items in their mailbox. Users can assign this tag when they want a shorter archive period than the default of 3 years old.
+    
+    - A retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This action helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
 
 You can follow some or all of the steps in this article to set up an archive and deletion policy for mailboxes in your own organization. We recommend that you test this process on a few mailboxes before implementing it on all mailboxes in your organization.
 
@@ -144,7 +148,6 @@ After you create the custom retention tags, the next step is to create a new ret
     - **Alpine House 3 Year Move to Archive** - the custom archive default policy tag created in step 2 of these instructions
     - **Alpine House Deleted Items 5 Years Delete and Allow Recovery** - the custom tag for the Deleted Items folder created in step 2 of these instructions
     - **Recoverable Items 14 days Move to Archive**
-    - **Junk Email**
     - **Personal 1 year move to archive**
     
     To add these retention tags, select them, and then select **Add**.
