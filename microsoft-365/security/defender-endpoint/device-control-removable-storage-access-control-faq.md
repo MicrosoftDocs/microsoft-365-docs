@@ -13,7 +13,6 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
 ms.date: 08/25/2022
 ms.reviewer: tewchen
 search.appverid: met150

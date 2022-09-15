@@ -10,7 +10,6 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
-ms.technology: m365d
 search.appverid: met150
 ---
 
