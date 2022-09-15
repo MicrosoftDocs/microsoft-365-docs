@@ -7,8 +7,9 @@ metadata:
   - NOCSH
   ms.author: deniseb
   ms.topic: how-to
-  ms.date: 07/19/2022
-  ms.service: microsoft-365-business
+  ms.service: microsoft-365-security
+  ms.subservice: other
+  ms.date: 09/15/2022
   ms.localizationpriority: medium
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business

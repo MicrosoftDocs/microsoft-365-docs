@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection

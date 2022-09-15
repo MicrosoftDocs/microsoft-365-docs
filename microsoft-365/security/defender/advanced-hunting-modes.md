@@ -19,6 +19,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+search.appverid: met150
 ---
 
 # Choose between guided and advanced modes to hunt in Microsoft 365 Defender

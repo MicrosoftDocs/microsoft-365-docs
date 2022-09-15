@@ -15,6 +15,7 @@ ms.custom:
 description: Admins can learn how to use the Fix possible mail loop insight in the Mail flow dashboard in the Security & Compliance Center to identify and fix mail loops in their organization.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Fix possible mail loop insight in the Security & Compliance Center

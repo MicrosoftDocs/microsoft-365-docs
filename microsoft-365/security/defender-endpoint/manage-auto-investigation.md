@@ -18,6 +18,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review remediation actions following an automated investigation

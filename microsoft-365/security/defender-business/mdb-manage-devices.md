@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -35,7 +35,7 @@ In Defender for Business, you can manage devices as follows:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Device inventory**.
+2. In the navigation pane, go to **Assets** > **Devices**.
 
 3. Select a device to open its flyout panel, where you can learn more about its status and take action. 
 
@@ -45,7 +45,7 @@ In Defender for Business, you can manage devices as follows:
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Screenshot of a selected device with details and actions available":::
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device inventory**. 
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**. 
 
 2. Select a device to open its flyout panel, and review the information that is displayed.
 
