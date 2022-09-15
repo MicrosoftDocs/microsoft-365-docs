@@ -126,6 +126,13 @@ Communication compliance policies scan and capture messages across several commu
 
 To learn more about messaging channel support in communication compliance policies, see [Detect channel signals with communication compliance](/microsoft-365/compliance/communication-compliance-channels).
 
+## Integration with insider risk management (preview)
+
+Communication compliance can provide disgruntlement signals detected in messages to insider risk management disgruntlement policies. Using a dedicated [Detect inappropriate text](/microsoft-365/compliance/communication-compliance-policies#policy-templates) policy in communication compliance, you can choose to add this policy to a [Data leaks by disgruntled employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) or [Security policy violations by disgruntled employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) policy in insider risk management. Disgruntlement detected in messages by the communication compliance policy act as a triggering event to bring users into scope for the insider risk management policies.
+
+To learn more about integration with insider risk management, see [Create and manage communication compliance policies](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview).
+To learn more about insider risk management, see [Learn about insider risk management](/microsoft-365/compliance/insider-risk-management).
+
 ## Get started with recommended actions (preview)
 
 Whether you're setting up communication compliance for the first time or getting started with creating new policies, the new [recommended actions](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) experience can help you get the most out of communication compliance capabilities. Recommended actions include setting up permissions, creating distribution groups, creating a policy, and more
