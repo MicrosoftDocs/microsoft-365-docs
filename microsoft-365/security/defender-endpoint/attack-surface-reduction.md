@@ -15,7 +15,6 @@ manager: dansimp
 ms.custom: 
 - asr
 - admindeeplinkDEFENDER
-ms.technology: mde
 ms.topic: article
 ms.collection: 
 - m365initiative-m365-defender
