@@ -193,6 +193,9 @@ conceptualContent:
   # Card
     - title: How do I...
       links:
+        - url: ../admin/security-and-compliance/secure-your-business-data.md
+          itemType: how-to-guide
+          text: See top 10 ways to secure my business
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
           text: Find a Microsoft partner to help my business
