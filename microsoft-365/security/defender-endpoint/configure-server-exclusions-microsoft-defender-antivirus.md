@@ -15,6 +15,7 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server

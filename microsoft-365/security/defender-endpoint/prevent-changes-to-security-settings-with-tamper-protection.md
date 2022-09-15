@@ -20,6 +20,7 @@ ms.subservice: mde
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Protect security settings with tamper protection

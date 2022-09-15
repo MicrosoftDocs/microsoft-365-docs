@@ -18,6 +18,7 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: m365d
+search.appverid: met150
 ---
 
 # Manage the gradual rollout process for Microsoft Defender updates

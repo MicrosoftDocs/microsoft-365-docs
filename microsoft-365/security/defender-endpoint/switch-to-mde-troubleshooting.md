@@ -19,6 +19,7 @@ ms.custom: migrationguides
 ms.date: 05/20/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshooting issues when switching to Microsoft Defender for Endpoint
