@@ -27,7 +27,7 @@ description: "How to create a custom messaging records management (MRM) archivin
 
 # Customize an archive and deletion policy for mailboxes in your organization
 
-To retain and delete emails, we recommend you use Microsoft 365 retention policies and retention labels rather than the older messaging records management (MRM) from Exchange Online. However, a valid reason to still use this older feature is to automatically move emails from a user's primary mailbox to their [archive mailbox](archive-mailboxes.md). You might also need to use MRM to apply administrator-defined retention and deletion settings to specific folders in the mailbox, rather than the entire mailbox. 
+To retain and delete emails, we recommend you use Microsoft 365 retention policies and retention labels rather than the older messaging records management (MRM) from Exchange Online. However, a valid reason to still use this older feature is to automatically move emails from a user's primary mailbox to their [archive mailbox](archive-mailboxes.md). You might also need to use MRM to apply retention and deletion settings to specific folders in the mailbox, rather than the entire mailbox.
 
 Use this article as an example deployment for these two valid reasons to use MRM retention policies and retention tags. For all other retention and deletion scenarios, use [Microsoft 365 retention policies and retention labels](retention.md).
 
