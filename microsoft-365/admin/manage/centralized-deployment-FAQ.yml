@@ -73,7 +73,7 @@ sections:
           Users can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.
            
           **Optional**
-          The add-in is deployed automatically to the assigned users, but they can choose to remove it
+          The add-in is deployed automatically to the assigned users, but they can choose to remove it.
           >[!NOTE]
           >Integrated Apps don't have option available, however, admin can still use legacy Add-in page to perform this - **Under Settings > Integrated Apps > Add-in
           >Screnshot need to be added here but unable to add          
