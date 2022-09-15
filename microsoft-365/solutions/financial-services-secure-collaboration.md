@@ -6,6 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection: 
+- highpri
 - M365-security-compliance
 ms.service: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
