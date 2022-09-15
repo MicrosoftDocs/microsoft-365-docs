@@ -526,8 +526,8 @@
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Browser extensions]()
-####### [Export broswer extenstions assessment](get-assessment-browser-extensions.md)
-####### [Get browser extenstions permisson information](get-browser-extensions-permission-info.md)
+####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
+####### [Get browser extensions permission information](get-browser-extensions-permission-info.md)
 
 ###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)
