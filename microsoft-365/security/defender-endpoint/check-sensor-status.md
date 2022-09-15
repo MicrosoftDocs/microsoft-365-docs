@@ -2,7 +2,7 @@
 title: Check the health state of the sensor at Microsoft Defender for Endpoint
 description: Check the sensor health on devices to identify which ones are misconfigured, inactive, or aren't reporting sensor data.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,6 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
 search.appverid: met150
 ---
 
