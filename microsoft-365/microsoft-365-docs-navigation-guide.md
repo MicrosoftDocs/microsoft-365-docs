@@ -3,7 +3,6 @@ title: Microsoft 365 docs navigation tips
 description: Tips and tricks for navigating the Microsoft 365 technical documentation - explains such things as the hub page, the table of contents, the header, as well as how to use the breadcrumbs and how to use the version filter. 
 ms.date: 08/12/2020
 ms.service: microsoft-365-enterprise
-ms.technology: release-landing
 ms.reviewer: "serdars"
 ms.custom: ""
 ms.topic: conceptual
