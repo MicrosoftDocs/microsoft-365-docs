@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review alerts in Microsoft Defender for Endpoint

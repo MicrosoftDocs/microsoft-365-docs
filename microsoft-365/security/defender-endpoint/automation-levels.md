@@ -2,8 +2,7 @@
 title: Automation levels in automated investigation and remediation
 description: Get an overview of automation levels and how they work in Microsoft Defender for Endpoint
 keywords: automated, investigation, level, Microsoft Defender for Endpoint
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
+search.appverid: met150
 ---
 
 # Automation levels in automated investigation and remediation capabilities
