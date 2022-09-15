@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -74,13 +74,6 @@ OCR processing works best on documents that meet the following requirements:
 - If scanned from paper documents, scans should be high-quality images.
 
 - Must use the Latin alphabet (English characters).
-
-> [!NOTE]
-> AI Builder doesn't currently support the following types of form processing input data:
->
-> - Check boxes or radio buttons
-> - Signatures
-> - Fillable PDFs
 
 ### Supported file types
 

@@ -18,8 +18,8 @@ ms.collection:
 ms.custom: TopSMBIssues
 ms.localizationpriority: high
 description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Email authentication in EOP

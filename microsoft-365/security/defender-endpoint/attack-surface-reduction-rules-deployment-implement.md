@@ -19,7 +19,9 @@ ms.topic: article
 ms.collection: 
  - M365-security-compliance
  - m365solution-asr-rules
+ - highpri
 ms.date: 1/18/2022
+search.appverid: met150
 ---
 
 # Enable attack surface reduction (ASR) rules

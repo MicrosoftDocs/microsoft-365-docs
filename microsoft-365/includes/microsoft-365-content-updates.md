@@ -2,6 +2,188 @@
 
 
 
+## Week of September 05, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/6/2022 | [About the Microsoft Purview Compliance Manager premium assessment trial](/microsoft-365/compliance/compliance-easy-trials-compliance-manager-assessments?view=o365-worldwide) | modified |
+| 9/6/2022 | [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports?view=o365-worldwide) | modified |
+| 9/6/2022 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 9/6/2022 | [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](/microsoft-365/security/office-365-security/configure-advanced-delivery?view=o365-worldwide) | modified |
+| 9/6/2022 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide) | modified |
+| 9/6/2022 | [Choose your scenarios for Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-choose-scenarios?view=o365-worldwide) | modified |
+| 9/6/2022 | [Start with a pilot deployment of Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-pilot?view=o365-worldwide) | modified |
+| 9/6/2022 | [Microsoft 365 for frontline workers - scenario posters](/microsoft-365/frontline/flw-scenario-posters?view=o365-worldwide) | added |
+| 9/6/2022 | [Frontline team collaboration](/microsoft-365/frontline/flw-team-collaboration?view=o365-worldwide) | modified |
+| 9/6/2022 | [Message delegation](/microsoft-365/frontline/hc-delegates?view=o365-worldwide) | modified |
+| 9/6/2022 | [Microsoft 365 for retail organizations](/microsoft-365/frontline/teams-for-retail-landing-page?view=o365-worldwide) | modified |
+| 9/6/2022 | [Get started with Microsoft 365 for healthcare organizations](/microsoft-365/frontline/teams-in-hc?view=o365-worldwide) | modified |
+| 9/6/2022 | [Attack surface reduction rules reporting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report?view=o365-worldwide) | added |
+| 9/6/2022 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide) | modified |
+| 9/6/2022 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection?view=o365-worldwide) | modified |
+| 9/6/2022 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide) | modified |
+| 9/6/2022 | [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments?view=o365-worldwide) | modified |
+| 9/6/2022 | [Complete Safe Links overview for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links?view=o365-worldwide) | modified |
+| 9/6/2022 | [Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations?view=o365-worldwide) | modified |
+| 9/8/2022 | [Bookings with me](/microsoft-365/bookings/bookings-in-outlook?view=o365-worldwide) | modified |
+| 9/8/2022 | [Attack surface reduction (ASR) rules reporting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report?view=o365-worldwide) | modified |
+| 9/8/2022 | [Enable Microsoft 365 support integration for ServiceNow Virtual Agent](/microsoft-365/admin/manage/servicenow-support-integration?view=o365-worldwide) | added |
+| 9/8/2022 | [Enable archive mailboxes for Microsoft 365](/microsoft-365/compliance/enable-archive-mailboxes?view=o365-worldwide) | modified |
+| 9/8/2022 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 9/9/2022 | [Microsoft 365 admin center activity reports](/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide) | modified |
+| 9/9/2022 | [Top 20 most-viewed admin help articles this month # < 60 chars](/microsoft-365/admin/top-m365-admin-articles?view=o365-worldwide) | modified |
+| 9/9/2022 | [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide) | modified |
+| 9/9/2022 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide) | modified |
+| 9/9/2022 | [Sign up for Microsoft 365 Business Basic](/microsoft-365/admin/setup/signup-business-basic?view=o365-worldwide) | added |
+| 9/9/2022 | [Set up Microsoft 365 Business Basic](/microsoft-365/admin/setup/setup-business-basic?view=o365-worldwide) | modified |
+| 9/9/2022 | [Accept an email invitation to a Microsoft 365 for business subscription (User)](/microsoft-365/admin/simplified-signup/user-invite-business-standard?view=o365-worldwide) | modified |
+| 9/9/2022 | [Accept an email invitation to a Microsoft 365 for business subscription organization using an Outlook, Yahoo, Gmail or other account (User)](/microsoft-365/admin/simplified-signup/user-invite-msa-nodomain-join?view=o365-worldwide) | modified |
+| 9/9/2022 | About the Microsoft Defender for Office 365 trial | removed |
+| 9/9/2022 | [Allow or block emails using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-email-spoof?view=o365-worldwide) | modified |
+| 9/9/2022 | [Allow or block files using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-files?view=o365-worldwide) | modified |
+| 9/9/2022 | [Allow or block URLs using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-urls?view=o365-worldwide) | modified |
+| 9/9/2022 | [Try and evaluate Defender for Office 365](/microsoft-365/security/office-365-security/try-microsoft-defender-for-office-365?view=o365-worldwide) | modified |
+
+
+## Week of August 29, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/29/2022 | [Insider risk management settings](/microsoft-365/compliance/insider-risk-management-settings?view=o365-worldwide) | modified |
+| 8/29/2022 | Work with a Microsoft partner | removed |
+| 8/29/2022 | [About the Microsoft Defender Vulnerability Management public preview trial](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial?view=o365-worldwide) | added |
+| 8/29/2022 | [Trial playbook - Microsoft Defender Vulnerability Management (public preview)](/microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management?view=o365-worldwide) | added |
+| 8/29/2022 | [Steps to set up a weekly digest email of message center changes for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/step-by-step-guides/stay-informed-with-message-center?view=o365-worldwide) | modified |
+| 8/29/2022 | [Add or Remove Machine Tags API](/microsoft-365/security/defender-endpoint/add-or-remove-machine-tags?view=o365-worldwide) | modified |
+| 8/29/2022 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide) | modified |
+| 8/29/2022 | [Steps to quickly set up the Standard or Strict preset security policies for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies?view=o365-worldwide) | modified |
+| 8/30/2022 | [Export browser extensions assessment](/microsoft-365/security/defender-endpoint/get-assessment-browser-extensions?view=o365-worldwide) | added |
+| 8/30/2022 | [Get browser extensions permission info](/microsoft-365/security/defender-endpoint/get-browser-extensions-permission-info?view=o365-worldwide) | added |
+| 8/30/2022 | [Overview of the Users page in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-users-page-overview?view=o365-worldwide) | modified |
+| 8/30/2022 | [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/compare-mdb-m365-plans?view=o365-worldwide) | modified |
+| 8/30/2022 | [Certificate assessment methods and properties per device](/microsoft-365/security/defender-endpoint/export-certificate-inventory-assessment?view=o365-worldwide) | modified |
+| 8/30/2022 | [Export software inventory assessment per device](/microsoft-365/security/defender-endpoint/get-assessment-software-inventory?view=o365-worldwide) | modified |
+| 8/30/2022 | [Manage inactive users in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-manage-inactive-users?view=o365-worldwide) | added |
+| 8/30/2022 | [What's the difference between junk email and bulk email?](/microsoft-365/security/office-365-security/what-s-the-difference-between-junk-email-and-bulk-email?view=o365-worldwide) | modified |
+| 8/30/2022 | [Microsoft 365 solutions for the financial services industry](/microsoft-365/solutions/financial-services-overview?view=o365-worldwide) | added |
+| 8/30/2022 | [Microsoft 365 for Retail](/microsoft-365/frontline/teams-for-retail-landing-page?view=o365-worldwide) | modified |
+| 8/30/2022 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-worldwide) | modified |
+| 8/30/2022 | [Track and respond to emerging security threats with campaigns view in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/step-by-step-guides/track%20and%20respond%20to%20emerging%20threats%20with%20campaigns?view=o365-worldwide) | added |
+| 8/30/2022 | [Microsoft Defender Offline in Windows](/microsoft-365/security/defender-endpoint/microsoft-defender-offline?view=o365-worldwide) | modified |
+| 8/30/2022 | [Step 4. Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture](/microsoft-365/security/defender/eval-defender-endpoint-overview?view=o365-worldwide) | modified |
+| 8/31/2022 | [Cross-Tenant Identity Mapping (preview)](/microsoft-365/enterprise/cross-tenant-identity-mapping?view=o365-worldwide) | added |
+| 8/31/2022 | [Manage sharing for Microsoft Whiteboard in GCC environments](/microsoft-365/whiteboard/manage-sharing-gcc?view=o365-worldwide) | modified |
+| 8/31/2022 | [Deploy Teams at scale for frontline workers](/microsoft-365/frontline/deploy-teams-at-scale?view=o365-worldwide) | modified |
+| 8/31/2022 | [Onboard Microsoft Defender for IoT with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/enable-microsoft-defender-for-iot-integration?view=o365-worldwide) | modified |
+| 8/31/2022 | [Use network protection to help prevent connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection?view=o365-worldwide) | modified |
+| 8/31/2022 | [Web protection](/microsoft-365/security/defender-endpoint/web-protection-overview?view=o365-worldwide) | modified |
+| 8/31/2022 | [Manage clients for Microsoft Whiteboard in GCC environments](/microsoft-365/whiteboard/manage-clients-gcc?view=o365-worldwide) | modified |
+| 8/31/2022 | [Manage data for Microsoft Whiteboard in GCC environments](/microsoft-365/whiteboard/manage-data-gcc?view=o365-worldwide) | modified |
+| 8/31/2022 | [Manage access to Microsoft Whiteboard for GCC environments](/microsoft-365/whiteboard/manage-whiteboard-access-gcc?view=o365-worldwide) | modified |
+| 8/31/2022 | [Search for and delete chat messages in Teams](/microsoft-365/compliance/search-and-delete-teams-chat-messages?view=o365-worldwide) | modified |
+| 8/31/2022 | [What's new in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-whats-new?view=o365-worldwide) | modified |
+| 8/31/2022 | [Microsoft Defender for Business and Microsoft partner resources](/microsoft-365/security/defender-business/mdb-partners?view=o365-worldwide) | modified |
+| 8/31/2022 | [Get alerts API](/microsoft-365/security/defender-endpoint/alerts?view=o365-worldwide) | modified |
+| 8/31/2022 | [Microsoft Defender for Endpoint APIs connection to Power BI](/microsoft-365/security/defender-endpoint/api-power-bi?view=o365-worldwide) | modified |
+| 8/31/2022 | [Machine resource type](/microsoft-365/security/defender-endpoint/machine?view=o365-worldwide) | modified |
+| 8/31/2022 | [Allow or block emails using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-email-spoof?view=o365-worldwide) | modified |
+| 8/31/2022 | [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide) | modified |
+| 9/1/2022 | [Microsoft Defender Antivirus export device antivirus health details API methods and properties](/microsoft-365/security/defender-endpoint/device-health-api-methods-properties?view=o365-worldwide) | modified |
+| 9/1/2022 | [Microsoft Defender Antivirus Device Health export device antivirus health reporting](/microsoft-365/security/defender-endpoint/device-health-export-antivirus-health-report-api?view=o365-worldwide) | modified |
+| 9/1/2022 | [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports?view=o365-worldwide) | modified |
+| 9/1/2022 | [Exchange 2013 end of support roadmap](/microsoft-365/enterprise/exchange-2013-end-of-support?view=o365-worldwide) | modified |
+| 9/1/2022 | [Defender for Endpoint onboarding Windows Server](/microsoft-365/security/defender-endpoint/onboard-windows-server?view=o365-worldwide) | modified |
+| 9/1/2022 | [Getting started with defense in-depth configuration for email security](/microsoft-365/security/office-365-security/step-by-step-guides/defense-in-depth-guide?view=o365-worldwide) | added |
+| 9/1/2022 | [Review architecture requirements and planning concepts for Microsoft Defender for Office 365](/microsoft-365/security/defender/eval-defender-office-365-architecture?view=o365-worldwide) | modified |
+| 9/1/2022 | [Enable the evaluation environment for Microsoft Defender for Office 365 in your production environment](/microsoft-365/security/defender/eval-defender-office-365-enable-eval?view=o365-worldwide) | modified |
+| 9/1/2022 | [Step 3. Evaluate Microsoft Defender for Office 365 overview](/microsoft-365/security/defender/eval-defender-office-365-overview?view=o365-worldwide) | modified |
+| 9/1/2022 | [Pilot Microsoft Defender for Office 365, use the evaluation in your production environment](/microsoft-365/security/defender/eval-defender-office-365-pilot?view=o365-worldwide) | modified |
+| 9/2/2022 | [SKOS format reference for SharePoint taxonomy](/microsoft-365/contentunderstanding/skos-format-reference) | modified |
+| 9/2/2022 | [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports?view=o365-worldwide) | modified |
+| 9/2/2022 | [Assess data privacy risks and identify sensitive items with Microsoft 365](/microsoft-365/solutions/information-protection-deploy-assess?view=o365-worldwide) | modified |
+| 9/2/2022 | [Networking up (to the cloud)—One architect's viewpoint](/microsoft-365/solutions/networking-design-principles?view=o365-worldwide) | modified |
+| 9/2/2022 | [User roles for starting Microsoft 365 trials](/microsoft-365/compliance/compliance-easy-trials-roles?view=o365-worldwide) | added |
+| 9/2/2022 | [What's new in Microsoft Purview risk and compliance solutions](/microsoft-365/compliance/whats-new?view=o365-worldwide) | modified |
+| 9/2/2022 | [Deploy, manage, and report on Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 9/2/2022 | [Deploy Microsoft Defender for Endpoint on Linux with Puppet](/microsoft-365/security/defender-endpoint/linux-install-with-puppet?view=o365-worldwide) | modified |
+| 9/2/2022 | [How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing?view=o365-worldwide) | modified |
+
+
+## Week of August 22, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/22/2022 | [Enable co-authoring for encrypted documents](/microsoft-365/compliance/sensitivity-labels-coauthoring?view=o365-worldwide) | modified |
+| 8/22/2022 | [Choose between guided and advanced modes for hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-modes?view=o365-worldwide) | added |
+| 8/22/2022 | [Supported data types and filters in guided mode for hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-builder-details?view=o365-worldwide) | added |
+| 8/22/2022 | [Work with query results in guided mode for hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-builder-results?view=o365-worldwide) | added |
+| 8/22/2022 | [Build queries using guided mode in Microsoft 365 Defender advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-builder?view=o365-worldwide) | added |
+| 8/22/2022 | [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide) | modified |
+| 8/22/2022 | [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org?view=o365-worldwide) | modified |
+| 8/22/2022 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide) | modified |
+| 8/22/2022 | [Payloads in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide) | modified |
+| 8/22/2022 | [Simulation automations for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-simulation-automations?view=o365-worldwide) | modified |
+| 8/22/2022 | [Simulate a phishing attack with Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) | modified |
+| 8/22/2022 | [View email security reports](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-worldwide) | modified |
+| 8/23/2022 | [About the Microsoft Defender Vulnerability Management public preview trial](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial?view=o365-worldwide) | added |
+| 8/23/2022 | [Trial playbook - Microsoft Defender Vulnerability Management (public preview)](/microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management?view=o365-worldwide) | added |
+| 8/23/2022 | [Top 10 ways to secure your business data - Best practices for small and medium-sized businesses](/microsoft-365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide) | modified |
+| 8/23/2022 | [Onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune](/microsoft-365/compliance/device-onboarding-offboarding-macos-intune?view=o365-worldwide) | modified |
+| 8/23/2022 | [Integrate Microsoft Teams classes and meetings with Moodle](/microsoft-365/lti/teams-classes-meetings-with-moodle?view=o365-worldwide) | modified |
+| 8/23/2022 | [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](/microsoft-365/security/office-365-security/configure-advanced-delivery?view=o365-worldwide) | modified |
+| 8/24/2022 | [Message encryption FAQ](/microsoft-365/compliance/ome-faq?view=o365-worldwide) | modified |
+| 8/24/2022 | [Office 365 Message Encryption](/microsoft-365/compliance/ome?view=o365-worldwide) | modified |
+| 8/24/2022 | [Help your frontline workers use collaboration apps and features](/microsoft-365/frontline/collab-features-apps-toolkit?view=o365-worldwide) | added |
+| 8/24/2022 | [Help your frontline workers track time and attendance](/microsoft-365/frontline/shifts-toolkit?view=o365-worldwide) | added |
+| 8/24/2022 | [Choose your scenarios for Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-choose-scenarios?view=o365-worldwide) | modified |
+| 8/24/2022 | [Frontline team collaboration](/microsoft-365/frontline/flw-team-collaboration?view=o365-worldwide) | modified |
+| 8/24/2022 | [What's new in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-whats-new?view=o365-worldwide) | modified |
+| 8/24/2022 | [Top 10 ways to secure your data - Best practices for small and medium-sized businesses](/microsoft-365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide) | modified |
+| 8/24/2022 | [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices?view=o365-worldwide) | modified |
+| 8/24/2022 | [Microsoft 365 Business Premium - Productivity and security](/microsoft-365/business-premium/m365bp-secure-users?view=o365-worldwide) | modified |
+| 8/24/2022 | [Security incident management](/microsoft-365/business-premium/m365bp-security-incident-management?view=o365-worldwide) | modified |
+| 8/24/2022 | [Microsoft Defender for Business Premium trial playbook](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium?view=o365-worldwide) | modified |
+| 8/24/2022 | Set up a connector to archive Jive data in Microsoft 365 | removed |
+| 8/24/2022 | Get CVE-KB map API | removed |
+| 8/24/2022 | Get KB collection API | removed |
+| 8/24/2022 | Get RBAC machine groups collection API | removed |
+| 8/24/2022 | Get machines security states collection API | removed |
+| 8/24/2022 | [Microsoft security portals and admin centers](/microsoft-365/security/defender/portals?view=o365-worldwide) | modified |
+| 8/24/2022 | [Sensitive information type limits](/microsoft-365/compliance/sit-limits?view=o365-worldwide) | added |
+| 8/24/2022 | [Create custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-worldwide) | modified |
+| 8/24/2022 | [What's new in Microsoft Purview risk and compliance solutions](/microsoft-365/compliance/whats-new?view=o365-worldwide) | modified |
+| 8/25/2022 | [Microsoft Adoption Score](/microsoft-365/admin/adoption/adoption-score?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Microsoft Adoption Score - Microsoft 365 apps health](/microsoft-365/admin/adoption/apps-health?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Microsoft Adoption Score - Communication](/microsoft-365/admin/adoption/communication?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Microsoft Adoption Score - Content collaboration](/microsoft-365/admin/adoption/content-collaboration?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Microsoft Adoption Score - Meetings](/microsoft-365/admin/adoption/meetings?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Microsoft Adoption Score - Mobility](/microsoft-365/admin/adoption/mobility?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Microsoft Adoption Score - Privacy](/microsoft-365/admin/adoption/privacy?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Microsoft Adoption Score - Teamwork](/microsoft-365/admin/adoption/teamwork?view=o365-worldwide) | renamed |
+| 8/25/2022 | [Troubleshoot issues on Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/android-support-signin?view=o365-worldwide) | modified |
+| 8/25/2022 | [What's new in Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/android-whatsnew?view=o365-worldwide) | modified |
+| 8/25/2022 | About the Microsoft Defender Vulnerability Management public preview trial | removed |
+| 8/25/2022 | Trial playbook - Microsoft Defender Vulnerability Management (public preview) | removed |
+| 8/25/2022 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide) | modified |
+| 8/25/2022 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide) | modified |
+| 8/25/2022 | [Manage clients for Microsoft Whiteboard in GCC environments](/microsoft-365/whiteboard/manage-clients-gcc?view=o365-worldwide) | added |
+| 8/25/2022 | [Manage data for Microsoft Whiteboard in GCC environments](/microsoft-365/whiteboard/manage-data-gcc?view=o365-worldwide) | added |
+| 8/25/2022 | [Manage sharing for Microsoft Whiteboard in GCC environments](/microsoft-365/whiteboard/manage-sharing-gcc?view=o365-worldwide) | added |
+| 8/25/2022 | [Manage access to Microsoft Whiteboard for GCC environments](/microsoft-365/whiteboard/manage-whiteboard-access-gcc?view=o365-worldwide) | added |
+| 8/25/2022 | [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi?view=o365-worldwide) | modified |
+| 8/25/2022 | [Review events and errors using Event Viewer](/microsoft-365/security/defender-endpoint/event-error-codes?view=o365-worldwide) | modified |
+| 8/25/2022 | [What's the difference between junk email and bulk email?](/microsoft-365/security/office-365-security/what-s-the-difference-between-junk-email-and-bulk-email?view=o365-worldwide) | modified |
+| 8/26/2022 | [Supported Microsoft Defender for Endpoint capabilities by platform](/microsoft-365/security/defender-endpoint/supported-capabilities-by-platform?view=o365-worldwide) | added |
+| 8/26/2022 | [Top 10 ways to secure your data - Best practices for small and medium-sized businesses](/microsoft-365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide) | modified |
+| 8/26/2022 | [Onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune](/microsoft-365/compliance/device-onboarding-offboarding-macos-intune?view=o365-worldwide) | modified |
+| 8/26/2022 | [Migrating servers from Microsoft Monitoring Agent to the unified solution](/microsoft-365/security/defender-endpoint/application-deployment-via-mecm?view=o365-worldwide) | modified |
+| 8/26/2022 | [Onboard devices and configure Microsoft Defender for Endpoint capabilities](/microsoft-365/security/defender-endpoint/onboard-configure?view=o365-worldwide) | modified |
+| 8/26/2022 | Microsoft Defender Experts for Hunting preview | removed |
+
+
 ## Week of August 15, 2022
 
 
@@ -267,347 +449,3 @@
 | 8/12/2022 | [Use drive shipping to import PST files](/microsoft-365/compliance/use-drive-shipping-to-import-pst-files-to-office-365?view=o365-worldwide) | modified |
 | 8/12/2022 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-worldwide) | modified |
 | 8/12/2022 | [Manage data for Microsoft Whiteboard](/microsoft-365/whiteboard/manage-data-organizations?view=o365-worldwide) | modified |
-
-
-## Week of August 01, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/1/2022 | [Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service](/microsoft-365/security/defender/before-you-begin-defender-experts?view=o365-21vianet) | added |
-| 8/1/2022 | [What is Microsoft Defender Experts for Hunting offering](/microsoft-365/security/defender/defender-experts-for-hunting?view=o365-21vianet) | added |
-| 8/1/2022 | [How to subscribe to Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-21vianet) | added |
-| 8/1/2022 | [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](/microsoft-365/security/defender/defender-experts-report?view=o365-21vianet) | modified |
-| 8/1/2022 | [How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains](/microsoft-365/security/office-365-security/step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains?view=o365-21vianet) | modified |
-| 8/1/2022 | [How to setup automated attacks and training within Attack simulation training](/microsoft-365/security/office-365-security/step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training?view=o365-21vianet) | modified |
-| 8/1/2022 | [Use Cost management in the Microsoft 365 admin center](/microsoft-365/commerce/use-cost-mgmt?view=o365-21vianet) | modified |
-| 8/1/2022 | [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-21vianet) | modified |
-| 8/1/2022 | [Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud](/microsoft-365/security/defender-endpoint/migrating-mde-server-to-cloud?view=o365-21vianet) | added |
-| 8/1/2022 | [What's new in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-whats-new?view=o365-21vianet) | modified |
-| 8/1/2022 | [Server migration scenarios for the new version of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration?view=o365-21vianet) | modified |
-| 8/1/2022 | [Glossary of security terms for Microsoft 365 security capabilities](/microsoft-365/business-premium/m365bp-glossary?view=o365-21vianet) | modified |
-| 8/1/2022 | [Paying for your subscription](/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?view=o365-21vianet) | modified |
-| 8/1/2022 | [Bulk import external contacts to Exchange Online](/microsoft-365/compliance/bulk-import-external-contacts?view=o365-21vianet) | modified |
-| 8/1/2022 | [Microsoft Defender for Endpoint Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-21vianet) | modified |
-| 8/1/2022 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-21vianet) | modified |
-| 8/1/2022 | [Submit files for analysis by Microsoft](/microsoft-365/security/intelligence/submission-guide?view=o365-21vianet) | modified |
-| 8/2/2022 | [View your Threat & Vulnerability Management dashboard in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-view-tvm-dashboard?view=o365-21vianet) | modified |
-| 8/2/2022 | [Configure Microsoft Defender for Endpoint risk signals using App Protection Policies (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam?view=o365-21vianet) | modified |
-| 8/2/2022 | [Configure Microsoft Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure?view=o365-21vianet) | modified |
-| 8/2/2022 | [Allow or block emails using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/allow-block-email-spoof?view=o365-21vianet) | modified |
-| 8/2/2022 | [Manage your allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
-| 8/3/2022 | [Microsoft 365 Group mailbox size management](/microsoft-365/admin/create-groups/group-mailbox-size-management?view=o365-21vianet) | added |
-| 8/3/2022 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-21vianet) | modified |
-| 8/3/2022 | [Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud](/microsoft-365/security/defender-endpoint/migrating-mde-server-to-cloud?view=o365-21vianet) | modified |
-| 8/3/2022 | [Configure local overrides for Microsoft Defender Antivirus settings](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 8/4/2022 | [Export non product code software inventory assessment per device](/microsoft-365/security/defender-endpoint/get-assessment-non-cpe-software-inventory?view=o365-worldwide) | added |
-| 8/4/2022 | [Export assessment methods and properties per device](/microsoft-365/security/defender-endpoint/get-assessment-methods-properties?view=o365-21vianet) | modified |
-| 8/4/2022 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 8/4/2022 | [Performance analyzer for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/tune-performance-defender-antivirus?view=o365-21vianet) | modified |
-| 8/4/2022 | [Paying for your subscription](/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?view=o365-21vianet) | modified |
-| 8/4/2022 | [Help your clients and customers use virtual appointments](/microsoft-365/frontline/virtual-appointments-toolkit?view=o365-21vianet) | modified |
-| 8/4/2022 | [Migrating servers from Microsoft Monitoring Agent to the unified solution](/microsoft-365/security/defender-endpoint/application-deployment-via-mecm?view=o365-21vianet) | modified |
-| 8/5/2022 | [Use Microsoft Teams meetings with Blackboard Learn](/microsoft-365/lti/teams-meetings-with-blackboard-learn?view=o365-worldwide) | added |
-| 8/5/2022 | [Guest users in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide) | modified |
-| 8/5/2022 | [Manage guest access in Microsoft 365 groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide) | modified |
-| 8/5/2022 | [Manage data for Microsoft Whiteboard](/microsoft-365/whiteboard/manage-data-organizations?view=o365-worldwide) | modified |
-| 8/5/2022 | [Manage sharing for Microsoft Whiteboard in GCC High environments](/microsoft-365/whiteboard/manage-sharing-gcc-high?view=o365-worldwide) | modified |
-| 8/5/2022 | [Manage sharing for Microsoft Whiteboard](/microsoft-365/whiteboard/manage-sharing-organizations?view=o365-worldwide) | modified |
-| 8/5/2022 | [Microsoft 365 Business Premium overview](/microsoft-365/business-premium/index?view=o365-worldwide) | modified |
-| 8/5/2022 | [Collaborate and share securely in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-collaborate-share-securely?view=o365-worldwide) | modified |
-| 8/5/2022 | [Set Up unmanaged devices overview](/microsoft-365/business-premium/m365bp-devices-overview?view=o365-worldwide) | modified |
-| 8/5/2022 | [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices?view=o365-worldwide) | modified |
-| 8/5/2022 | [Use email securely](/microsoft-365/business-premium/m365bp-protect-email-overview?view=o365-worldwide) | modified |
-| 8/5/2022 | [Increase security in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-security-overview?view=o365-worldwide) | modified |
-| 8/5/2022 | [Welcome to Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-setup-overview?view=o365-worldwide) | modified |
-| 8/5/2022 | [Set up Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-setup?view=o365-worldwide) | modified |
-| 8/5/2022 | [Deploy, manage, and report on Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus?view=o365-worldwide) | modified |
-| 8/5/2022 | [Configure and manage Microsoft Threat Experts capabilities through Microsoft 365 Defender](/microsoft-365/security/defender/configure-microsoft-threat-experts?view=o365-worldwide) | modified |
-
-
-## Week of July 25, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/25/2022 | [Microsoft 365 admin center mailbox usage reports](/microsoft-365/admin/activity-reports/mailbox-usage?view=o365-21vianet) | modified |
-| 7/25/2022 | [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2?view=o365-21vianet) | modified |
-| 7/25/2022 | Turn on protocol recognition for Microsoft Defender Antivirus | removed |
-| 7/26/2022 | [Configure Microsoft 365 user account properties with PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 7/26/2022 | [Configure and validate exclusions based on extension, name, or location](/microsoft-365/security/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 7/26/2022 | [Change a Windows 365 Business Cloud PC account type in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-change-cloud-pc-account-type?view=o365-21vianet) | added |
-| 7/26/2022 | [Test and deploy Microsoft 365 Apps by partners in the Integrated apps portal](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-21vianet) | modified |
-| 7/26/2022 | [Microsoft 365 Business Premium - Productivity and security](/microsoft-365/business-premium/m365bp-secure-users?view=o365-21vianet) | modified |
-| 7/27/2022 | [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-21vianet) | modified |
-| 7/27/2022 | [What's new in Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-whatsnew?view=o365-21vianet) | modified |
-| 7/27/2022 | [Microsoft Defender Offline in Windows](/microsoft-365/security/defender-endpoint/microsoft-defender-offline?view=o365-21vianet) | modified |
-| 7/27/2022 | [Go to the Action center to view and approve your automated investigation and remediation tasks](/microsoft-365/security/defender/m365d-action-center?view=o365-21vianet) | modified |
-| 7/27/2022 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir?view=o365-21vianet) | modified |
-| 7/27/2022 | [User-reported email settings for spam, phish, as malicious mail](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
-| 7/27/2022 | [Data Loss Prevention policy reference](/microsoft-365/compliance/dlp-policy-reference?view=o365-21vianet) | modified |
-| 7/27/2022 | [Compare device compliance policy settings in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-compare-compliance-policies?view=o365-21vianet) | modified |
-| 7/27/2022 | [Deploy Microsoft 365 Lighthouse baselines](/microsoft-365/lighthouse/m365-lighthouse-deploy-baselines?view=o365-21vianet) | modified |
-| 7/27/2022 | [Manage multifactor authentication in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-manage-mfa?view=o365-21vianet) | modified |
-| 7/27/2022 | [Manage your tenant list in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-manage-tenant-list?view=o365-21vianet) | modified |
-| 7/27/2022 | [Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus](/microsoft-365/lighthouse/m365-lighthouse-mitigate-threats?view=o365-21vianet) | modified |
-| 7/27/2022 | [Overview of Quarantined Messages in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-quarantine-messages-overview?view=o365-21vianet) | modified |
-| 7/27/2022 | [Overview of the Tenants page in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-tenants-page-overview?view=o365-21vianet) | modified |
-| 7/27/2022 | [What's new in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-whats-new?view=o365-21vianet) | modified |
-| 7/28/2022 | [Investigate alerts in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-alerts?view=o365-21vianet) | modified |
-| 7/28/2022 | [Detect and Remediate Illicit Consent Grants](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-21vianet) | modified |
-| 7/28/2022 | [Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/virus-detection-in-spo?view=o365-21vianet) | modified |
-| 7/28/2022 | [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label?view=o365-21vianet) | added |
-| 7/28/2022 | [Learn about Microsoft Purview Records Management](/microsoft-365/compliance/records-management?view=o365-21vianet) | modified |
-| 7/28/2022 | [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/compare-mdb-m365-plans?view=o365-21vianet) | modified |
-| 7/29/2022 | [Set up and configure the Moodle LMS plugins](/microsoft-365/lti/moodle-plugin-configuration?view=o365-21vianet) | modified |
-| 7/29/2022 | [Set up and configure the Moodle LMS plugins for Open LMS](/microsoft-365/lti/open-lms-plugin-configuration?view=o365-21vianet) | modified |
-| 7/29/2022 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-21vianet) | modified |
-| 7/29/2022 | [User-reported email settings for spam, phish, as malicious mail](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
-| 7/29/2022 | [Contextual file and folder exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 7/29/2022 | [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-21vianet) | modified |
-| 7/29/2022 | [Onboard devices and configure Microsoft Defender for Endpoint capabilities](/microsoft-365/security/defender-endpoint/onboard-configure?view=o365-21vianet) | modified |
-| 7/29/2022 | [Trial playbook - Microsoft Defender Vulnerability Management (public preview)](/microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management?view=o365-21vianet) | modified |
-| 7/29/2022 | [Investigate alerts in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-alerts?view=o365-21vianet) | modified |
-| 7/29/2022 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection?view=o365-21vianet) | modified |
-
-
-## Week of July 18, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/18/2022 | [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](/microsoft-365/security/defender/defender-experts-report?view=o365-21vianet) | added |
-| 7/18/2022 | [Configure privacy settings in Microsoft Whiteboard](/microsoft-365/whiteboard/configure-privacy-settings?view=o365-21vianet) | modified |
-| 7/18/2022 | [Microsoft Purview eDiscovery Graph connectors](/microsoft-365/compliance/ediscovery-graph-connector?view=o365-21vianet) | added |
-| 7/18/2022 | [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2?view=o365-21vianet) | modified |
-| 7/18/2022 | [Microsoft Threat Experts in Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-threat-experts?view=o365-21vianet) | modified |
-| 7/18/2022 | [Overview of the eDiscovery (Premium) solution in Microsoft Purview](/microsoft-365/compliance/overview-ediscovery-20?view=o365-21vianet) | modified |
-| 7/18/2022 | [What's new in Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-21vianet) | modified |
-| 7/19/2022 | [About the Microsoft Defender Vulnerability Management public preview trial](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial?view=o365-21vianet) | added |
-| 7/19/2022 | [Trial playbook - Microsoft Defender Vulnerability Management (public preview)](/microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management?view=o365-21vianet) | added |
-| 7/19/2022 | [Microsoft Defender Vulnerability Management public preview](/microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management?view=o365-21vianet) | modified |
-| 7/19/2022 | [Prerequisites & permissions for Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/tvm-prerequisites?view=o365-21vianet) | modified |
-| 7/19/2022 | [Configure privacy settings in Microsoft Whiteboard](/microsoft-365/whiteboard/configure-privacy-settings?view=o365-21vianet) | modified |
-| 7/19/2022 | [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/troubleshoot-auditd-performance-issues?view=o365-21vianet) | added |
-| 7/19/2022 | [Using Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-using?view=o365-21vianet) | modified |
-| 7/19/2022 | [User-reported email settings for spam, phish, as malicious mail](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
-| 7/19/2022 | [Use this step-by-step guide to add Autopilot devices and profile](/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile?view=o365-21vianet) | modified |
-| 7/19/2022 | [Set app protection settings for Android or iOS devices](/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios?view=o365-21vianet) | modified |
-| 7/19/2022 | [About Autopilot Profile settings](/microsoft-365/business-premium/m365bp-autopilot-profile-settings?view=o365-21vianet) | modified |
-| 7/19/2022 | [Security defaults and Conditional Access](/microsoft-365/business-premium/m365bp-conditional-access?view=o365-21vianet) | modified |
-| 7/19/2022 | [Create and edit Autopilot devices](/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices?view=o365-21vianet) | modified |
-| 7/19/2022 | [Device states](/microsoft-365/business-premium/m365bp-device-states?view=o365-21vianet) | modified |
-| 7/19/2022 | [Install Office apps on all devices in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-install-office-apps?view=o365-21vianet) | modified |
-| 7/19/2022 | [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business](/microsoft-365/business-premium/m365bp-manage-windows-devices?view=o365-21vianet) | modified |
-| 7/19/2022 | [How do protection features in Microsoft 365 Business Premium map to Intune settings](/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings?view=o365-21vianet) | modified |
-| 7/19/2022 | [Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-protect-pcs-macs?view=o365-21vianet) | modified |
-| 7/19/2022 | [Edit or set application protection settings for Windows devices](/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices?view=o365-21vianet) | modified |
-| 7/19/2022 | [Remove company data from devices](/microsoft-365/business-premium/m365bp-remove-company-data?view=o365-21vianet) | modified |
-| 7/19/2022 | [Reset Windows devices to their factory settings](/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings?view=o365-21vianet) | modified |
-| 7/19/2022 | [Secure Windows devices](/microsoft-365/business-premium/m365bp-secure-windows-devices?view=o365-21vianet) | modified |
-| 7/19/2022 | [A security operations guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-security-incident-quick-start?view=o365-21vianet) | modified |
-| 7/19/2022 | [Validate app protection settings on Android or iOS devices](/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios?view=o365-21vianet) | modified |
-| 7/20/2022 | [Microsoft Defender Vulnerability Management frequently asked questions](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-faq?view=o365-21vianet) | added |
-| 7/20/2022 | [Sign up for Microsoft 365 Business Premium](/microsoft-365/business-premium/get-microsoft-365-business-premium?view=o365-21vianet) | modified |
-| 7/20/2022 | [Set up Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-setup?view=o365-21vianet) | modified |
-| 7/20/2022 | [Labeling actions reported in Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer-available-events?view=o365-21vianet) | modified |
-| 7/20/2022 | [Get Microsoft Defender for Business](/microsoft-365/security/defender-business/get-defender-business?view=o365-21vianet) | modified |
-| 7/21/2022 | [Integrate Microsoft Teams classes and meetings LTI apps with Desire2Learn Brightspace LMS](/microsoft-365/lti/teams-classes-meetings-with-brightspace?view=o365-21vianet) | added |
-| 7/21/2022 | [An overview of Microsoft LTI apps](/microsoft-365/lti/index?view=o365-21vianet) | modified |
-| 7/21/2022 | [Integrate Microsoft Teams classes and meetings with Open LMS](/microsoft-365/lti/open-lms-teams-classes-and-meetings?view=o365-21vianet) | modified |
-| 7/21/2022 | [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-21vianet) | modified |
-| 7/21/2022 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-21vianet) | modified |
-| 7/21/2022 | [Set preferences for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-21vianet) | modified |
-| 7/21/2022 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-21vianet) | modified |
-| 7/21/2022 | [Microsoft Defender for Endpoint Device Control Device Installation](/microsoft-365/security/defender-endpoint/mde-device-control-device-installation?view=o365-21vianet) | modified |
-| 7/21/2022 | [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview?view=o365-21vianet) | modified |
-| 7/21/2022 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 7/21/2022 | [Complete Safe Links overview for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links?view=o365-21vianet) | modified |
-| 7/21/2022 | [Japan My Number - Personal entity definition](/microsoft-365/compliance/sit-defn-japan-my-number-personal?view=o365-21vianet) | added |
-| 7/21/2022 | [Japan passport number entity definition](/microsoft-365/compliance/sit-defn-japan-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Japan residence card number entity definition](/microsoft-365/compliance/sit-defn-japan-residence-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Japan resident registration number entity definition](/microsoft-365/compliance/sit-defn-japan-resident-registration-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Japan social insurance number (SIN) entity definition](/microsoft-365/compliance/sit-defn-japan-social-insurance-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Lab test terms entity definition](/microsoft-365/compliance/sit-defn-lab-test-terms?view=o365-21vianet) | added |
-| 7/21/2022 | [Latvia drivers license number terms entity definition](/microsoft-365/compliance/sit-defn-latvia-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Latvia passport number terms entity definition](/microsoft-365/compliance/sit-defn-latvia-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Latvia personal code entity definition](/microsoft-365/compliance/sit-defn-latvia-personal-code?view=o365-21vianet) | added |
-| 7/21/2022 | [Latvia physical addresses entity definition](/microsoft-365/compliance/sit-defn-latvia-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Liechtenstein physical addresses entity definition](/microsoft-365/compliance/sit-defn-liechtenstein-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Lifestyles that relate to medical conditions entity definition](/microsoft-365/compliance/sit-defn-lifestyles-relate-to-medical-conditions?view=o365-21vianet) | added |
-| 7/21/2022 | [Lithuania drivers license number entity definition](/microsoft-365/compliance/sit-defn-lithuania-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Lithuania passport number entity definition](/microsoft-365/compliance/sit-defn-lithuania-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Lithuania personal code entity definition](/microsoft-365/compliance/sit-defn-lithuania-personal-code?view=o365-21vianet) | added |
-| 7/21/2022 | [Lithuania physical addresses entity definition](/microsoft-365/compliance/sit-defn-lithuania-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Luxemburg drivers license number entity definition](/microsoft-365/compliance/sit-defn-luxemburg-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Luxemburg national identification number (natural persons) entity definition](/microsoft-365/compliance/sit-defn-luxemburg-national-identification-number-natural-persons?view=o365-21vianet) | added |
-| 7/21/2022 | [Luxemburg national identification number (non-natural persons) entity definition](/microsoft-365/compliance/sit-defn-luxemburg-national-identification-number-non-natural-persons?view=o365-21vianet) | added |
-| 7/21/2022 | [Luxemburg passport number entity definition](/microsoft-365/compliance/sit-defn-luxemburg-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Luxemburg physical addresses entity definition](/microsoft-365/compliance/sit-defn-luxemburg-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Malaysia identification card number entity definition](/microsoft-365/compliance/sit-defn-malaysia-identification-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Malta drivers license number entity definition](/microsoft-365/compliance/sit-defn-malta-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Malta identity card number entity definition](/microsoft-365/compliance/sit-defn-malta-identity-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Malta passport number entity definition](/microsoft-365/compliance/sit-defn-malta-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Malta physical addresses entity definition](/microsoft-365/compliance/sit-defn-malta-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Malta tax identification number entity definition](/microsoft-365/compliance/sit-defn-malta-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Medical specialities entity definition](/microsoft-365/compliance/sit-defn-medical-specialities?view=o365-21vianet) | added |
-| 7/21/2022 | [Medicare Beneficiary Identifier (MBI) card entity definition](/microsoft-365/compliance/sit-defn-medicare-beneficiary-identifier-card?view=o365-21vianet) | added |
-| 7/21/2022 | [Mexico Unique Population Registry Code (CURP) entity definition](/microsoft-365/compliance/sit-defn-mexico-unique-population-registry-code?view=o365-21vianet) | added |
-| 7/21/2022 | [Microsoft Bing maps key entity definition (preview)](/microsoft-365/compliance/sit-defn-microsoft-bing-maps-key?view=o365-21vianet) | added |
-| 7/21/2022 | [Netherlands citizens service (BSN) number entity definition](/microsoft-365/compliance/sit-defn-netherlands-citizens-service-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Netherlands drivers license number entity definition](/microsoft-365/compliance/sit-defn-netherlands-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Netherlands passport number entity definition](/microsoft-365/compliance/sit-defn-netherlands-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Netherlands physical addresses entity definition](/microsoft-365/compliance/sit-defn-netherlands-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Netherlands tax identification number entity definition](/microsoft-365/compliance/sit-defn-netherlands-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Netherlands value added tax number entity definition](/microsoft-365/compliance/sit-defn-netherlands-value-added-tax-number?view=o365-21vianet) | added |
-| 7/21/2022 | [New Zealand bank account number entity definition](/microsoft-365/compliance/sit-defn-new-zealand-bank-account-number?view=o365-21vianet) | added |
-| 7/21/2022 | [New Zealand drivers license number entity definition](/microsoft-365/compliance/sit-defn-new-zealand-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [New Zealand inland revenue number entity definition](/microsoft-365/compliance/sit-defn-new-zealand-inland-revenue-number?view=o365-21vianet) | added |
-| 7/21/2022 | [New Zealand ministry of health number entity definition](/microsoft-365/compliance/sit-defn-new-zealand-ministry-of-health-number?view=o365-21vianet) | added |
-| 7/21/2022 | [New Zealand physical addresses entity definition](/microsoft-365/compliance/sit-defn-new-zealand-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [New Zealand social welfare number entity definition](/microsoft-365/compliance/sit-defn-new-zealand-social-welfare-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Norway identification number entity definition](/microsoft-365/compliance/sit-defn-norway-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Norway physical addresses entity definition](/microsoft-365/compliance/sit-defn-norway-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Philippines unified multi-purpose identification number entity definition](/microsoft-365/compliance/sit-defn-philippines-unified-multi-purpose-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Poland drivers license number entity definition](/microsoft-365/compliance/sit-defn-poland-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Poland identity card entity definition](/microsoft-365/compliance/sit-defn-poland-identity-card?view=o365-21vianet) | added |
-| 7/21/2022 | [Poland national ID (PESEL) entity definition](/microsoft-365/compliance/sit-defn-poland-national-id?view=o365-21vianet) | added |
-| 7/21/2022 | [Poland passport number entity definition](/microsoft-365/compliance/sit-defn-poland-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Poland physical addresses entity definition](/microsoft-365/compliance/sit-defn-poland-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Poland REGON number entity definition](/microsoft-365/compliance/sit-defn-poland-regon-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Poland tax identification number entity definition](/microsoft-365/compliance/sit-defn-poland-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Portugal citizen card number entity definition](/microsoft-365/compliance/sit-defn-portugal-citizen-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Portugal drivers license number entity definition](/microsoft-365/compliance/sit-defn-portugal-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Portugal passport number entity definition](/microsoft-365/compliance/sit-defn-portugal-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Portugal physical addresses entity definition](/microsoft-365/compliance/sit-defn-portugal-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Portugal tax identification number entity definition](/microsoft-365/compliance/sit-defn-portugal-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Romania drivers license number entity definition](/microsoft-365/compliance/sit-defn-romania-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Romania passport number entity definition](/microsoft-365/compliance/sit-defn-romania-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Romania personal numeric code (CNP) entity definition](/microsoft-365/compliance/sit-defn-romania-personal-numeric-code?view=o365-21vianet) | added |
-| 7/21/2022 | [Romania physical addresses entity definition](/microsoft-365/compliance/sit-defn-romania-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Russia passport number domestic entity definition](/microsoft-365/compliance/sit-defn-russia-passport-number-domestic?view=o365-21vianet) | added |
-| 7/21/2022 | [Russia passport number international entity definition](/microsoft-365/compliance/sit-defn-russia-passport-number-international?view=o365-21vianet) | added |
-| 7/21/2022 | [Saudi Arabia National ID entity definition](/microsoft-365/compliance/sit-defn-saudi-arabia-national-id?view=o365-21vianet) | added |
-| 7/21/2022 | [Singapore national registration identity card (NRIC) number entity definition](/microsoft-365/compliance/sit-defn-singapore-national-registration-identity-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Slack access token entity definition (preview)](/microsoft-365/compliance/sit-defn-slack-access-token?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovakia drivers license number entity definition](/microsoft-365/compliance/sit-defn-slovakia-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovakia passport number entity definition](/microsoft-365/compliance/sit-defn-slovakia-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovakia personal number entity definition](/microsoft-365/compliance/sit-defn-slovakia-personal-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovakia physical addresses entity definition](/microsoft-365/compliance/sit-defn-slovakia-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovenia drivers license number entity definition](/microsoft-365/compliance/sit-defn-slovenia-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovenia passport number entity definition](/microsoft-365/compliance/sit-defn-slovenia-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovenia physical addresses entity definition](/microsoft-365/compliance/sit-defn-slovenia-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovenia tax identification number entity definition](/microsoft-365/compliance/sit-defn-slovenia-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Slovenia Unique Master Citizen Number entity definition](/microsoft-365/compliance/sit-defn-slovenia-unique-master-citizen-number?view=o365-21vianet) | added |
-| 7/21/2022 | [South Africa identification number entity definition](/microsoft-365/compliance/sit-defn-south-africa-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [South Korea resident registration number entity definition](/microsoft-365/compliance/sit-defn-south-korea-resident-registration-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Spain DNI entity definition](/microsoft-365/compliance/sit-defn-spain-dni?view=o365-21vianet) | added |
-| 7/21/2022 | [Spain drivers license number entity definition](/microsoft-365/compliance/sit-defn-spain-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Spain passport number entity definition](/microsoft-365/compliance/sit-defn-spain-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Spain physical addresses entity definition](/microsoft-365/compliance/sit-defn-spain-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Spain social security number (SSN) entity definition](/microsoft-365/compliance/sit-defn-spain-social-security-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Spain tax identification number entity definition](/microsoft-365/compliance/sit-defn-spain-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [SQL Server connection string entity definition](/microsoft-365/compliance/sit-defn-sql-server-connection-string?view=o365-21vianet) | added |
-| 7/21/2022 | [Surgical procedures entity definition](/microsoft-365/compliance/sit-defn-surgical-procedures?view=o365-21vianet) | added |
-| 7/21/2022 | [Sweden drivers license number entity definition](/microsoft-365/compliance/sit-defn-sweden-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Sweden national ID entity definition](/microsoft-365/compliance/sit-defn-sweden-national-id?view=o365-21vianet) | added |
-| 7/21/2022 | [Sweden passport number entity definition](/microsoft-365/compliance/sit-defn-sweden-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Sweden physical addresses entity definition](/microsoft-365/compliance/sit-defn-sweden-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Sweden tax identification number entity definition](/microsoft-365/compliance/sit-defn-sweden-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [SWIFT code entity definition](/microsoft-365/compliance/sit-defn-swift-code?view=o365-21vianet) | added |
-| 7/21/2022 | [Switzerland physical addresses entity definition](/microsoft-365/compliance/sit-defn-switzerland-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Switzerland SSN AHV number entity definition](/microsoft-365/compliance/sit-defn-switzerland-ssn-ahv-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Taiwan national identification number entity definition](/microsoft-365/compliance/sit-defn-taiwan-national-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Taiwan passport number entity definition](/microsoft-365/compliance/sit-defn-taiwan-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Taiwan-resident certificate (ARC/TARC) number entity definition](/microsoft-365/compliance/sit-defn-taiwan-resident-certificate-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Thai population identification code entity definition](/microsoft-365/compliance/sit-defn-thai-population-identification-code?view=o365-21vianet) | added |
-| 7/21/2022 | [Turkey national identification number entity definition](/microsoft-365/compliance/sit-defn-turkey-national-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Turkey physical addresses entity definition](/microsoft-365/compliance/sit-defn-turkey-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Types of medication entity definition](/microsoft-365/compliance/sit-defn-types-of-medication?view=o365-21vianet) | added |
-| 7/21/2022 | [U.K. drivers license number entity definition](/microsoft-365/compliance/sit-defn-uk-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.K. electoral roll number entity definition](/microsoft-365/compliance/sit-defn-uk-electoral-roll-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.K. national health service number entity definition](/microsoft-365/compliance/sit-defn-uk-national-health-service-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.K. national insurance number (NINO) entity definition](/microsoft-365/compliance/sit-defn-uk-national-insurance-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.K. physical addresses entity definition](/microsoft-365/compliance/sit-defn-uk-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [U.K. Unique Taxpayer Reference Number entity definition](/microsoft-365/compliance/sit-defn-uk-unique-taxpayer-reference-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Ukraine passport domestic entity definition](/microsoft-365/compliance/sit-defn-ukraine-passport-domestic?view=o365-21vianet) | added |
-| 7/21/2022 | [Ukraine passport international entity definition](/microsoft-365/compliance/sit-defn-ukraine-passport-international?view=o365-21vianet) | added |
-| 7/21/2022 | [U.S. bank account number entity definition](/microsoft-365/compliance/sit-defn-us-bank-account-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.S. drivers license number entity definition](/microsoft-365/compliance/sit-defn-us-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.S. individual taxpayer identification number (ITIN) entity definition](/microsoft-365/compliance/sit-defn-us-individual-taxpayer-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.S. physical addresses entity definition](/microsoft-365/compliance/sit-defn-us-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [U.S. social security number (SSN) entity definition](/microsoft-365/compliance/sit-defn-us-social-security-number?view=o365-21vianet) | added |
-| 7/21/2022 | [U.S./U.K. passport number entity definition](/microsoft-365/compliance/sit-defn-us-uk-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [User login credentials entity definition (preview)](/microsoft-365/compliance/sit-defn-user-login-credentials?view=o365-21vianet) | added |
-| 7/21/2022 | [X.509 certificate private key entity definition (preview)](/microsoft-365/compliance/sit-defn-x-509-certificate-private-key?view=o365-21vianet) | added |
-| 7/21/2022 | [EU Tax identification number entity definition](/microsoft-365/compliance/sit-defn-eu-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Finland drivers license number entity definition](/microsoft-365/compliance/sit-defn-finland-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Finland european health insurance number entity definition](/microsoft-365/compliance/sit-defn-finland-european-health-insurance-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Finland national ID entity definition](/microsoft-365/compliance/sit-defn-finland-national-id?view=o365-21vianet) | added |
-| 7/21/2022 | [Finland passport number entity definition](/microsoft-365/compliance/sit-defn-finland-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Finland physical addresses entity definition](/microsoft-365/compliance/sit-defn-finland-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [France drivers license number entity definition](/microsoft-365/compliance/sit-defn-france-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [France health insurance number entity definition](/microsoft-365/compliance/sit-defn-france-health-insurance-number?view=o365-21vianet) | added |
-| 7/21/2022 | [France national id card (CNI) entity definition](/microsoft-365/compliance/sit-defn-france-national-id-card?view=o365-21vianet) | added |
-| 7/21/2022 | [France passport number entity definition](/microsoft-365/compliance/sit-defn-france-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [France physical addresses entity definition](/microsoft-365/compliance/sit-defn-france-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [France social security number entity definition](/microsoft-365/compliance/sit-defn-france-social-security-number?view=o365-21vianet) | added |
-| 7/21/2022 | [France tax identification number entity definition](/microsoft-365/compliance/sit-defn-france-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [France value added tax number entity definition](/microsoft-365/compliance/sit-defn-france-value-added-tax-number?view=o365-21vianet) | added |
-| 7/21/2022 | [General password entity definition (preview)](/microsoft-365/compliance/sit-defn-general-password?view=o365-21vianet) | added |
-| 7/21/2022 | [General Symmetric key entity definition (preview)](/microsoft-365/compliance/sit-defn-general-symmetric-key?view=o365-21vianet) | added |
-| 7/21/2022 | [Generic medication names entity definition](/microsoft-365/compliance/sit-defn-generic-medication-names?view=o365-21vianet) | added |
-| 7/21/2022 | [Germany drivers license number entity definition](/microsoft-365/compliance/sit-defn-germany-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Germany identity card number entity definition](/microsoft-365/compliance/sit-defn-germany-identity-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Germany passport number entity definition](/microsoft-365/compliance/sit-defn-germany-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Germany physical addresses entity definition](/microsoft-365/compliance/sit-defn-germany-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Germany tax identification number entity definition](/microsoft-365/compliance/sit-defn-germany-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Germany value added tax number entity definition](/microsoft-365/compliance/sit-defn-germany-value-added-tax-number?view=o365-21vianet) | added |
-| 7/21/2022 | [GitHub personal access token entity definition (preview)](/microsoft-365/compliance/sit-defn-github-personal-access-token?view=o365-21vianet) | added |
-| 7/21/2022 | [Google API key entity definition (preview)](/microsoft-365/compliance/sit-defn-google-api-key?view=o365-21vianet) | added |
-| 7/21/2022 | [Greece drivers license number entity definition](/microsoft-365/compliance/sit-defn-greece-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Greece national ID card entity definition](/microsoft-365/compliance/sit-defn-greece-national-id-card?view=o365-21vianet) | added |
-| 7/21/2022 | [Greece passport number entity definition](/microsoft-365/compliance/sit-defn-greece-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Greece physical addresses entity definition](/microsoft-365/compliance/sit-defn-greece-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Greece Social Security Number (AMKA) entity definition](/microsoft-365/compliance/sit-defn-greece-social-security-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Greece tax identification number entity definition](/microsoft-365/compliance/sit-defn-greece-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Hong Kong identity card (HKID) number entity definition](/microsoft-365/compliance/sit-defn-hong-kong-identity-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Http authorization header entity definition (preview)](/microsoft-365/compliance/sit-defn-http-authorization-header?view=o365-21vianet) | added |
-| 7/21/2022 | [Hungary drivers license number entity definition](/microsoft-365/compliance/sit-defn-hungary-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Hungary passport number entity definition](/microsoft-365/compliance/sit-defn-hungary-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Hungary personal identification number entity definition](/microsoft-365/compliance/sit-defn-hungary-personal-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Hungary physical addresses entity definition](/microsoft-365/compliance/sit-defn-hungary-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Hungary social security number (TAJ) entity definition](/microsoft-365/compliance/sit-defn-hungary-social-security-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Hungary tax identification number entity definition](/microsoft-365/compliance/sit-defn-hungary-tax-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Hungary value added tax number entity definition](/microsoft-365/compliance/sit-defn-hungary-value-added-tax-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Iceland physical addresses entity definition](/microsoft-365/compliance/sit-defn-iceland-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Impairments Listed In The U.S. Disability Evaluation Under Social Security entity definition](/microsoft-365/compliance/sit-defn-impairments-us-disability-evaluation-under-social-security?view=o365-21vianet) | added |
-| 7/21/2022 | [India Drivers License Number entity definition](/microsoft-365/compliance/sit-defn-india-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [India GST Number entity definition](/microsoft-365/compliance/sit-defn-india-gst-number?view=o365-21vianet) | added |
-| 7/21/2022 | [India permanent account number (PAN) entity definition](/microsoft-365/compliance/sit-defn-india-permanent-account-number?view=o365-21vianet) | added |
-| 7/21/2022 | [India unique identification (Aadhaar) number entity definition](/microsoft-365/compliance/sit-defn-india-unique-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [India Voter Id Card entity definition](/microsoft-365/compliance/sit-defn-india-voter-id-card?view=o365-21vianet) | added |
-| 7/21/2022 | [Indonesia identity card (KTP) number entity definition](/microsoft-365/compliance/sit-defn-indonesia-identity-card-number?view=o365-21vianet) | added |
-| 7/21/2022 | [International banking account number (IBAN) entity definition](/microsoft-365/compliance/sit-defn-international-banking-account-number?view=o365-21vianet) | added |
-| 7/21/2022 | [International classification of diseases (ICD-10-CM) entity definition](/microsoft-365/compliance/sit-defn-international-classification-of-diseases-icd-10-cm?view=o365-21vianet) | added |
-| 7/21/2022 | [International classification of diseases (ICD-9-CM) entity definition](/microsoft-365/compliance/sit-defn-international-classification-of-diseases-icd-9-cm?view=o365-21vianet) | added |
-| 7/21/2022 | [IP address v4 entity definition](/microsoft-365/compliance/sit-defn-ip-address-v4?view=o365-21vianet) | added |
-| 7/21/2022 | [IP address v6 entity definition](/microsoft-365/compliance/sit-defn-ip-address-v6?view=o365-21vianet) | added |
-| 7/21/2022 | [IP address entity definition](/microsoft-365/compliance/sit-defn-ip-address?view=o365-21vianet) | added |
-| 7/21/2022 | [Ireland drivers license number entity definition](/microsoft-365/compliance/sit-defn-ireland-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Ireland passport number entity definition](/microsoft-365/compliance/sit-defn-ireland-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Ireland personal public service (PPS) number entity definition](/microsoft-365/compliance/sit-defn-ireland-personal-public-service-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Ireland physical addresses entity definition](/microsoft-365/compliance/sit-defn-ireland-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Israel bank account number entity definition](/microsoft-365/compliance/sit-defn-israel-bank-account-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Israel national identification number entity definition](/microsoft-365/compliance/sit-defn-israel-national-identification-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Italy drivers license number entity definition](/microsoft-365/compliance/sit-defn-italy-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Italy fiscal code entity definition](/microsoft-365/compliance/sit-defn-italy-fiscal-code?view=o365-21vianet) | added |
-| 7/21/2022 | [Italy passport number entity definition](/microsoft-365/compliance/sit-defn-italy-passport-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Italy physical addresses entity definition](/microsoft-365/compliance/sit-defn-italy-physical-addresses?view=o365-21vianet) | added |
-| 7/21/2022 | [Italy value added tax number entity definition](/microsoft-365/compliance/sit-defn-italy-value-added-tax-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Japan bank account number entity definition](/microsoft-365/compliance/sit-defn-japan-bank-account-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Japan drivers license number entity definition](/microsoft-365/compliance/sit-defn-japan-drivers-license-number?view=o365-21vianet) | added |
-| 7/21/2022 | [Japan My Number - Corporate entity definition](/microsoft-365/compliance/sit-defn-japan-my-number-corporate?view=o365-21vianet) | added |
-| 7/21/2022 | [Create notifications for exact data match activities](/microsoft-365/compliance/sit-edm-notifications-activities?view=o365-21vianet) | modified |
-| 7/22/2022 | [Apply encryption using sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-21vianet) | modified |
-| 7/22/2022 | [Onboard devices without Internet access to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboard-offline-machines?view=o365-21vianet) | modified |

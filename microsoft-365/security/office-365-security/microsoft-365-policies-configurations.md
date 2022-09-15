@@ -4,7 +4,7 @@ description: Describes Microsoft recommendations and core concepts for deploying
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords: 
@@ -20,8 +20,11 @@ ms.collection:
   - m365solution-overview
   - m365solution-zero-trust
   - zerotrust-solution
-ms.technology: mdo
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
+
 # Zero Trust identity and device access configurations
 
 Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization's technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
