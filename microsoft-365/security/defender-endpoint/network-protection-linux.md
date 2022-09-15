@@ -93,7 +93,7 @@ sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 
 ### Manually enable network protection
 
-1. Turn on the “networkProtection” feature, edit the “/etc/opt/microsoft/mdatp/wdacfg” and set **networkProtection** to **enabled**.  
+1. Turn on the “networkProtection” feature, edit the “/etc/opt/microsoft/mdatp/wdavcfg” and set **networkProtection** to **enabled**.  
 2. Restart the mdatp service by running the following command:
 
 ```bash
