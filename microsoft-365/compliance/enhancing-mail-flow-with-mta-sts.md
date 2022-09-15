@@ -217,7 +217,10 @@ These configuration flows are intended to provide only technical information abo
 
    :::image type="content" source="../media/extension-added-to-app-file.png" alt-text="The screenshot that shows the extension being added to the app file" lightbox="../media/extension-added-to-app-file.png":::
 
-5. In your Function App, go to **Functions > Create > HTTP Trigger**. Although this example describes the function development through the portal, you're free to use VS Code, or any other tool that you prefer.
+5. In your Function App, go to **Functions > Create** and configure the following parameters: 
+
+   > [!NOTE]
+   > Although this example describes the function development through the portal, you're free to use VS Code, or any other tool that you prefer.
 
     - **Development environment**: [As your choice, this example will use “Develop in Portal”]
     - **Select a template**: HTTP trigger
