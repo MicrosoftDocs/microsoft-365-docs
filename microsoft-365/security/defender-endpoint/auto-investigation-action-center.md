@@ -17,7 +17,6 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.technology: mde
 search.appverid: met150
 ---
 
