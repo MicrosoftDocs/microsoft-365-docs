@@ -2,8 +2,7 @@
 title: Microsoft 365 docs navigation tips 
 description: Tips and tricks for navigating the Microsoft 365 technical documentation - explains such things as the hub page, the table of contents, the header, as well as how to use the breadcrumbs and how to use the version filter. 
 ms.date: 08/12/2020
-ms.prod: sql
-ms.technology: release-landing
+ms.service: microsoft-365-enterprise
 ms.reviewer: "serdars"
 ms.custom: ""
 ms.topic: conceptual
@@ -25,7 +24,7 @@ You can always navigate back to this page by selecting **Microsoft 365** from th
 ![Microsoft 365 in header.](media/m365-header-cursor.png)
 
 ## TOC search 
-On docs.microsoft.com, you can search the content in the table of contents by using the filter search box at the top:
+On Microsoft Docs, you can search the content in the table of contents by using the filter search box at the top:
 
 ![Use filter box.](media/m365-filter-by-title.png)
 
@@ -56,7 +55,7 @@ If you find something wrong within an article, you can submit feedback to the SQ
 
 ## Contribute to Microsoft 365 documentation
 
-Did you know that you could edit the content on docs.microsoft.com yourself? If you do so, not only will our documentation improve, but you'll also be credited as a contributor to the page. To get started, see:
+Did you know that you could edit the content on Microsoft Docs yourself? If you do so, not only will our documentation improve, but you'll also be credited as a contributor to the page. To get started, see:
 
 - [Microsoft Docs contributor guide](/contribute/)
 

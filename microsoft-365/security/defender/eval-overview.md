@@ -3,7 +3,8 @@ title: Evaluate and pilot Microsoft 365 Defender, an XDR solution
 description: What is XDR security? How can you evaluate a Microsoft XDR in Microsoft 365 Defender? Use this blog series to plan your Microsoft 365 Defender trial lab or pilot environment to test and pilot a security solution designed to protect devices, identity, data, and applications. Start your XDR cyber security journey here and take that test to production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 06/25/2021
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 manager: dansimp 
 audience: ITPro
@@ -20,8 +21,8 @@ ms.collection:
   - m365solution-overview
   - m365solution-evalutatemtp
   - zerotrust-solution
+  - highpri
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Evaluate and pilot Microsoft 365 Defender
@@ -78,8 +79,8 @@ Microsoft 365 Defender is made up of these security technologies, operating in t
 |Component|Description|Reference material|
 |---|---|---|
 |Microsoft Defender for Identity|Microsoft Defender for Identity uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.|[What is Microsoft Defender for Identity?](/defender-for-identity/what-is)|
-|Exchange Online Protection|Exchange Online Protection is the native cloud-based SMTP relay and filtering service that helps protect your organization against spam and malware.|[Exchange Online Protection (EOP) overview - Office 365](../office-365-security/overview.md)|
-|Microsoft Defender for Office 365|Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.|[Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)|
+|Exchange Online Protection|Exchange Online Protection is the native cloud-based SMTP relay and filtering service that helps protect your organization against spam and malware.|[Exchange Online Protection (EOP) overview - Office 365](/microsoft-365/office-365-security/overview.md)|
+|Microsoft Defender for Office 365|Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.|[Microsoft Defender for Office 365 - Office 365](/microsoft-365/office-365-security/overview.md)|
 |Microsoft Defender for Endpoint|Microsoft Defender for Endpoint is a unified platform for device protection, post-breach detection, automated investigation, and recommended response.|[Microsoft Defender for Endpoint - Windows security](../defender-endpoint/microsoft-defender-endpoint.md)|
 |Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.|[What is Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)|
 |Azure AD Identity Protection|Azure AD Identity Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Azure AD to allow or prevent account access, depending on how Conditional Access policies are configured. Azure AD Identity Protection is licensed separately from Microsoft 365 Defender. It is included with Azure Active Directory Premium P2.|[What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)|

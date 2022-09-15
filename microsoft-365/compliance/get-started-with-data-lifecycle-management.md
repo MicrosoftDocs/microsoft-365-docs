@@ -36,7 +36,7 @@ Ready to start managing the lifecycle of your organization's data by retaining t
     
     If needed, [create and apply retention labels for your exceptions](create-retention-labels-information-governance.md).
 
-3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)
+3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md)
     
     If required to support archive mailboxes:
     
@@ -52,7 +52,7 @@ Ready to start managing the lifecycle of your organization's data by retaining t
 
 A number of different subscriptions support data lifecycle management capabilities.
 
-To see the options for licensing your users to benefit from Microsoft Purview features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For the features listed on this page, see the [Microsoft Purview Data Lifecycle Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) section and related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
+To see the options for licensing your users to benefit from Microsoft Purview features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For the features listed on this page, see the [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section for feature-level licensing requirements.
 
 ## Permissions
 
@@ -77,7 +77,7 @@ Use the following table to help you map your business requirements to the most c
 |I want to ...|Documentation|
 |----------------|---------------|
 |Efficiently retain or delete data for Microsoft 365 services: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Teams <br />- Yammer <br />- Skype for Business |[Create and configure retention policies](create-retention-policies.md)|
-|Provide users with additional mailbox storage |[Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)|
+|Provide users with additional mailbox storage |[Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md)|
 |Retain mailbox data after employees leave the organization |[Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
 |Upload mailbox data from PST files |[Use network upload to import PST files](use-network-upload-to-import-pst-files.md)|
 

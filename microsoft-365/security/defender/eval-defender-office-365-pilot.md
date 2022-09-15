@@ -1,13 +1,14 @@
 ---
-title: Pilot Microsoft Defender for Office 365, use the evaluation in your production environment 
+title: Pilot Microsoft Defender for Office 365, use the evaluation in your production environment
 description: Steps to pilot your Evaluation with groups of active and existing users in order to properly test the features of Microsoft Defender for Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
@@ -15,14 +16,14 @@ ms.date: 05/25/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-evalutatemtp
   - zerotrust-solution
+  - highpri
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.technology: m365d
 ---
 
 # Pilot Microsoft Defender for Office 365
@@ -34,7 +35,7 @@ This article is [Step 3 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to set up and configure the pilot for Microsoft Defender for Office 365.
 
-:::image type="content" source="../../media/defender/m365-defender-office-pilot.png" alt-text="The steps for creating the pilot in the Microsoft Defender for Office 365 portal" lightbox="../../media/defender/m365-defender-office-pilot.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-pilot.png" alt-text="The steps for creating the pilot in the Microsoft Defender for Office 365 portal." lightbox="../../media/defender/m365-defender-office-pilot.png":::
 
 - [Step 1: Create pilot groups](#step-1-create-pilot-groups)
 - [Step 2: Configure protection](#step-2-configure-protection)
@@ -51,19 +52,19 @@ Distribution groups can be created and defined directly in Exchange Online or sy
 1. Sign in to the Exchange Admin Center (EAC) at <https://admin.exchange.microsoft.com> using an account that has been granted Recipient Administrator role or been delegated group management permissions.
 2. Go to **Recipients** \> **Groups**.
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text=" The Groups menu item to be clicked" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text=" The Groups menu item to be clicked." lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
 
 3. On the **Groups** page, select ![Add a group icon.](../../media/m365-cc-sc-add-internal-icon.png) **Add a group**.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="The Add a group option to be clicked" lightbox="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="The Add a group option to be clicked." lightbox="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png":::
 
 4. For group type, select **Distribution**, and then click **Next**.
 
-   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text=" The Choose a group type section" lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
+   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text=" The Choose a group type section." lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
 
 5. Give the group a **Name** and and optional **Description**, and then click Next.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="The Set up the basics section" lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="The Set up the basics section." lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
 
 6. On the remaining pages, assign an owner, add members to the group, set the email address, join-depart restrictions, and other settings.
 
@@ -79,8 +80,12 @@ Some capabilities are *not yet* configured. You have the following options for c
 
   You can also build and assign custom protection policies as part of your evaluation. Before you start customizing policies, it's important to understand the precedence in which these protection policies are applied and enforced. Security operations will need to create and/or configure some policies, even if when the preset is applied.
 
+- **Assign preset security policies automatically**: [Preset security policies](../office-365-security/preset-security-policies.md) are provided as a method to quickly assign a uniform level of protection across all of the capabilities. You can choose from ***Standard*** or ***Strict***. A good approach is to start with preset security policies and then fine-tune the policies as you learn more about the capabilities and your own unique threat environment. The advantage here is that you protect groups of users as quickly as possible, with the ability to tweak protection afterward. (This method is recommended.)
+- **Configure baseline protection manually**: If you prefer to configure the environment yourself, you can quickly achieve a *baseline* of protection by following the guidance in [Protect against threats](../office-365-security/protect-against-threats.md). With this approach, you get to learn more about the settings that are configurable. And, you can fine-tune the policies later.
+- **Configure *custom* protection policies**: You can also build and assign custom protection policies as part of your evaluation. Before you start customizing policies, it's important to understand the precedence in which these protection policies are applied and enforced. Security ops will need to create some policies even if when the preset is applied, in specific in order to define security policies for Safe Links and Safe Attachments.
+
 > [!IMPORTANT]
-> You should first examine the values that make up our **Standard** and **Strict** settings to help you decide which method to use: [Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md). Default values, as seen before any configuration takes place are also listed. Keep a spreadsheet of where your custom build deviates from our recommended values.
+> **If you need to configure custom protection policies**, you should examine the values that make up the **Standard** and **Strict** security definitions here: [Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md). Default values, as seen before any configuration takes place are also listed. Keep a spreadsheet of where your custom build deviates.
 
 ### Assign preset security policies
 
@@ -109,7 +114,7 @@ The table below provides references and more guidance for configuring and assign
 |Anti-malware policies|Protect users from email malware including what actions to take and who to notify if malware is detected.|Yes|Yes|[Configure anti-malware policies in EOP](../office-365-security/configure-anti-malware-policies.md)|
 |Anti-spam policies|Protect users from email spam including what actions to take if spam is detected.|Yes|Yes|[Configure anti-spam policies in Defender for Office 365](../office-365-security/configure-your-spam-filter-policies.md)|
 |Anti-spoofing protection|Protect users from spoofing attempts using spoof intelligence and spoof intelligence insights.|Yes|Yes|[Configure spoof intelligence in Defender for Office 365](../office-365-security/learn-about-spoof-intelligence.md) <br><br> [Configure anti-phishing policies in EOP](../office-365-security/configure-anti-phishing-policies-eop.md)|
-|Impersonation protection|Protect users from phishing attacks and configure safety tips on suspicious messages|Yes, but some configuration required.|Yes, but some configuration required.|[Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](../office-365-security/set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <br><br>[Impersonation insight in Defender for Office 365](../office-365-security/impersonation-insight.md) <br><br> [Configure anti-phishing policies in Microsoft Defender for Office 365](../office-365-security/configure-mdo-anti-phishing-policies.md)|
+|Impersonation protection|Protect users from phishing attacks and configure safety tips on suspicious messages|Yes, but some configuration required.|Yes, but some configuration required.|[Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](../office-365-security/set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <br><br> [Impersonation insight in Defender for Office 365](../office-365-security/impersonation-insight.md) <br><br> [Configure anti-phishing policies in Microsoft Defender for Office 365](../office-365-security/configure-mdo-anti-phishing-policies.md)|
 |Safe Attachments policies|Protect users from malicious content in email attachments and files in SharePoint, OneDrive, and Teams.|Yes|Effectively, via Built-in protection|[Set up Safe Attachment policies in Defender for Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
 |Safe Links policies|Protect users from opening and sharing malicious links in email messages or supported Office apps.|Yes|Effectively, via Built-in protection|[Set up Safe Links policies in Defender for Office 365](../office-365-security/set-up-safe-links-policies.md)|
 

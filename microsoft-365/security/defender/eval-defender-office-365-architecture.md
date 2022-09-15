@@ -3,11 +3,12 @@ title: Review architecture requirements and planning concepts for Microsoft Defe
 description: The technical diagram for Microsoft Defender for Office 365 in Microsoft 365 Defender will help you understand identity at Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
@@ -15,13 +16,13 @@ ms.date: 07/01/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-evalutatemtp
   - zerotrust-solution
+  - highpri
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Review Microsoft Defender for Office 365 architecture requirements and key concepts
@@ -37,7 +38,7 @@ Before enabling Defender for Office 365, be sure you understand the architecture
 
 The following diagram illustrates baseline architecture for Microsoft Defender for Office, which can include a third-party SMTP gateway or on-premises integration. Hybrid coexistence scenarios (that is, production mailboxes are both on-premise and online) require more complex configurations and are not covered in this article or evaluation guidance.
 
-:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="The architecture for the Microsoft Defender for Office 365" lightbox="../../media/defender/m365-defender-office-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="The architecture for the Microsoft Defender for Office 365." lightbox="../../media/defender/m365-defender-office-architecture.png":::
 
 The following table describes this illustration.
 
@@ -59,9 +60,9 @@ The following table identified key concepts that are important to understand whe
 
 |Concept|Description|More information|
 |---|---|---|
-|Exchange Online Protection|Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware email. EOP is included in all Microsoft 365 licenses that include Exchange Online.|[Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)|
-|Anti-malware protection|Organizations with mailboxes in EXO are automatically protected against malware.|[Anti-malware protection in EOP](../office-365-security/anti-malware-protection.md)|
-|Anti-spam protection|Organizations with mailboxes in EXO are automatically protected against junk mail and spam.|[Anti-spam protection in EOP](../office-365-security/anti-spam-protection.md)|
+|Exchange Online Protection|Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware in email. EOP is included in all Microsoft 365 licenses that include Exchange Online.|[Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)|
+|Anti-malware protection|Organizations with mailboxes in Exchange Online are automatically protected against malware.|[Anti-malware protection in EOP](../office-365-security/anti-malware-protection.md)|
+|Anti-spam protection|Organizations with mailboxes in Exchange Online are automatically protected against junk mail and spam.|[Anti-spam protection in EOP](../office-365-security/anti-spam-protection.md)|
 |Anti-phishing protection|Defender for Office 365 offers more advanced anti-phishing protection related to spear phishing, whaling, ransomware, and other malicious activities.|[Extra anti-phishing protection in Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection.md)|
 |Anti-spoofing protection|EOP includes features to help protect your organization from spoofed (forged) senders.|[Anti-spoofing protection in EOP](../office-365-security/anti-spoofing-protection.md)|
 |Safe Attachments|Safe Attachments provides an extra layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they're delivered.|[Safe Attachments in Microsoft Defender for Office 365](../office-365-security/safe-attachments.md)|
@@ -94,4 +95,4 @@ Step 2 of 3: [Enable the evaluation environment Microsoft Defender for Office 36
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md) 
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
