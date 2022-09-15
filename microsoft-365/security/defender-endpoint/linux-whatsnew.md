@@ -45,7 +45,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue.
 
-- When upgrading from mdatp version 101.75.43, please run the following commands before attempting the upgrade to 101.80.97
+- When upgrading from mdatp version 101.75.43, run the following commands before attempting to upgrade to version 101.80.97
 
 ```
 sudo mdatp config real-time-protection --value=disabled
