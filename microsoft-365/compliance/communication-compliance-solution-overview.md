@@ -3,7 +3,7 @@ title: Communication compliance
 description: Learn how to configure communication compliance in Microsoft Purview.
 keywords: Microsoft 365, insider risk, compliance
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
