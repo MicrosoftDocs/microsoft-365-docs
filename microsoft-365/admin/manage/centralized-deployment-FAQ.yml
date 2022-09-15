@@ -74,9 +74,9 @@ sections:
            
           **Optional**
           The add-in is deployed automatically to the assigned users, but they can choose to remove it.
-         >[!NOTE]
-         >Integrated Apps don't have option available, however, admin can still use legacy Add-in page to perform this - **Under Settings > Integrated Apps > Add-in
-         > Screnshot need to be added here but unable to add          
+         [!NOTE]
+         Integrated Apps don't have option available, however, admin can still use legacy Add-in page to perform this - **Under Settings > Integrated Apps > Add-in
+         Screnshot need to be added here but unable to add          
               
       - question: |
           Can admins update Line-of-Business (LOB) add-ins? 
