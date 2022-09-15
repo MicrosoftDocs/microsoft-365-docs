@@ -8,6 +8,7 @@ metadata:
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: 
+  - highpri 
   - commerce # Optional; Remove if no collection is used.
   - Adm_TOC
   ms.custom: 

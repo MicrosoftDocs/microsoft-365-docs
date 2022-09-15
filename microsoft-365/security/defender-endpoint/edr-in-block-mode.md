@@ -18,6 +18,7 @@ ms.custom:
 ms.date: 08/19/2022
 ms.collection: m365-security-compliance
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Endpoint detection and response (EDR) in block mode

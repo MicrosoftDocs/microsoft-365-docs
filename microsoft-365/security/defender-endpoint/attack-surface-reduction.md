@@ -20,6 +20,7 @@ ms.topic: article
 ms.collection: 
 - m365initiative-m365-defender
 - M365-security-compliance
+search.appverid: met150
 ---
 
 # Attack surface reduction rules overview
