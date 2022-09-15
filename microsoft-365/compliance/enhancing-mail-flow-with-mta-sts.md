@@ -35,7 +35,7 @@ Once MTA-STS is set up for your domain, any messages sent from senders who suppo
 
 ## How To Adopt MTA-STS
 
-MTA-STS allows a domain to declare support for TLS and communicate the MX record and destination certificate to expect. It also indicates what a sending server should do if there's a problem. This communication is done through a combination of a DNS TXT record and a policy file that's published as an HTTPS webpage. The HTTPS-protected policy introduces another security protection that attackers must overcome.
+MTA-STS allows a domain to declare support for TLS and communicate the MX record and destination certificate to expect. It also indicates what a sending server must do if there's a problem. This communication is done through a combination of a DNS TXT record and a policy file that's published as an HTTPS webpage. The HTTPS-protected policy introduces another security protection that attackers must overcome.
 
 A domain's MTA-STS TXT record indicates MTA-STS support to a sender, after which the domain's HTTPS-based MTA-STS policy is retrieved by the sender. The following TXT record is an example that declares support for MTA-STS:
 
@@ -52,9 +52,9 @@ max_age: 604800
 
 Any customer whose MX records point directly to Exchange Online can specify in their own policy, with the same values that are shown above in the microsoft.com policy. The unique required information in the policy is the MX record that points to Exchange Online (`*`.mail.protection.outlook.com), and the same certificate is shared by all Exchange Online customers. It's possible to publish your policy in *test* mode to ensure it's valid before changing it to *enforce* mode. There are third-party validation tools out there that can check your configuration.
 
-These policies aren't something that Exchange Online can host on behalf of customers, so customers should configure their domain's STS policy using the services they prefer. Azure services can be easily used for policy hosting and there's a configuration walk-through later in this article. The policy needs to be protected by HTTPS with a certificate for the subdomain `mta-sts.<domain name>`.
+These policies aren't something that Exchange Online can host on behalf of customers, so customers must configure their domain's STS policy using the services they prefer. Azure services can be easily used for policy hosting and there's a configuration walk-through later in this article. The policy needs to be protected by HTTPS with a certificate for the subdomain `mta-sts.<domain name>`.
 
-Once the DNS TXT domain record is created and the policy file is available at the required HTTPS URL, the domain will be protected by MTA-STS. Details about MTA-STS are available in [RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461) as a new section.
+Once the DNS TXT record is created and the policy file is available at the required HTTPS URL, the domain will be protected by MTA-STS. Details about MTA-STS are available in [RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461).
 
 ### Configuring Inbound MTA-STS with Azure Services
 
@@ -82,19 +82,19 @@ These configuration flows are intended to provide only technical information abo
     - File 1: home\.well-known\mta-sts.txt
 
    > [!NOTE]
-   > This configuration allows only Exchange Online to receive messages on behalf of your domain. If you're using multiple email providers, you need to reference MX hosts for those other providers' domains as well. Wildcards or ‘*’ shouldn't be used as the MX prefix in all MTA-STS scenarios; the settings below are specific to Exchange Online only and should NOT be used as general guidance for configuring MTA-STS. 
+   > This configuration allows only Exchange Online to receive messages on behalf of your domain. If you're using multiple email providers, you need to reference MX hosts for those other providers' domains as well. Wildcards or ‘*’ must not be used as the MX prefix in all MTA-STS scenarios; the settings below are specific to Exchange Online only and must NOT be used as general guidance for configuring MTA-STS. 
 
     1. Input the following text into the mta-sts.txt file:
         ```powershell
            version: STSv1
            mode: testing
            mx: *.mail.protection.outlook.com
-           max_age: 86400
+           max_age: 604800
         ```
        > [!NOTE]
        > It's recommended that the policy mode be initially set as ‘testing’. Then, at the end of the configuration and after validating that the policy is working as expected, update the mta-sts.txt file such that the mode is ‘enforce’.
  
-       The file should only contain the content as shown in the following screenshot:
+       The file must only contain the content as shown in the following screenshot:
 
        :::image type="content" source="../media/contents-of-file1.png" alt-text="The screenshot that displays the contents of File1" lightbox="../media/contents-of-file1.png":::
 
@@ -118,7 +118,7 @@ These configuration flows are intended to provide only technical information abo
            </html>
        ```
            
-      The file should only contain the content as shown in the following screenshot:
+      The file must only contain the content as shown in the following screenshot:
    
       :::image type="content" source="../media/contents-of-file2.png" alt-text="The screenshot that displays the contents of File2" lightbox="../media/contents-of-file2.png":::
 
@@ -164,9 +164,9 @@ These configuration flows are intended to provide only technical information abo
 
        In Azure DevOps, during deployment, if you experience the error **No hosted parallelism has been purchased or granted**, either request through this [form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR63mUWPlq7NEsFZhkyH8jChUMlM3QzdDMFZOMkVBWU5BWFM3SDI2QlRBSC4u) or implement a configuration through **Organization Settings > Parallel jobs > Microsoft Hosted > Change > Paid Parallel jobs** such that “Paid parallel jobs” are allowed.
 
-7. Once the job finishes successfully, you can validate the deployment through the Azure portal by going to **Azure Static Web App > Environment > Browser**. You should see the index.html file's content.
+7. Once the job finishes successfully, you can validate the deployment through the Azure portal by going to **Azure Static Web App > Environment > Browser**. You must see the index.html file's content.
 
-8. Add your vanity domain in **Azure Static Web App > Custom domains > Add**. You'll be required to create a CNAME record through your DNS provider (for example, GoDaddy) to validate that the zone belongs to you. Once the validation is finished, Azure will issue a certificate and bind it to your Static Web App automatically.
+8. Add your vanity domain in **Azure Static Web App > Custom domains > Add**. You'll be required to create a **CNAME** record through your DNS provider (for example, GoDaddy) to validate that the zone belongs to you. Once the validation is finished, Azure will issue a certificate and bind it to your Static Web App automatically.
 
 9. Validate that your MTA-STS policy is published through: https://mta-sts.[your domain]/.well-known/mta-sts.txt.
 
@@ -197,7 +197,7 @@ These configuration flows are intended to provide only technical information abo
 
    :::image type="content" source="../media/new-azure-function-app.png" alt-text="The screenshot that shows the configurations of a new Azure Function app" lightbox="../media/new-azure-function-app.png":::
 
-2. Add your custom domain to the Function App. You'll be required to create a CNAME record to validate that the domain belongs to you.
+2. Add your custom domain to the Function App. You'll be required to create a **CNAME** record to validate that the domain belongs to you.
 
    :::image type="content" source="../media/custom-domain-to-add.png" alt-text="The screenshot that shows the custom domain to be added to the Function App" lightbox="../media/custom-domain-to-add.png":::
 
