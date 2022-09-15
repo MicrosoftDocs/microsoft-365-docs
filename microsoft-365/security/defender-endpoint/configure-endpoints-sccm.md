@@ -34,10 +34,10 @@ search.appverid: met150
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## Prerequisites
-- [MECM (SCCM) Endpoint Protection Site System Role](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
+- [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
 
-> [!Important]
-> The Endpoint Protection Site System Role is required so that AV and ASR policies will be properly deployed to the targeted endpoints.  Without this role the endpoints in the device collection will not receive the configured AV or ASR policies.
+> [!IMPORTANT]
+> The Endpoint Protection point site system role is required so that antivirus and attack surface reduction policies are properly deployed to the targeted endpoints.  Without this role, the endpoints in the device collection will not receive the configured antivirus and attack surface reduction policies.
 
 You can use Configuration Manager to onboard endpoints to the Microsoft Defender for Endpoint service. 
 
