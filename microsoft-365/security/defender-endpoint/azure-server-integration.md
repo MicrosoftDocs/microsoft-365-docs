@@ -5,6 +5,7 @@ keywords: integration, server, azure, 2012r2, 2016, 2019, server onboarding, dev
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

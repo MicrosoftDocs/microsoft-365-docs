@@ -5,6 +5,7 @@ keywords: test, scenario, attack, simulation, simulated, diy, Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
