@@ -10,7 +10,6 @@ metadata:
   description: Learn about the product documentation and resources available for Microsoft 365 for enterprise for IT pros, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
   services: service
   ms.service: microsoft-365-enterprise
-  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: 
   - M365-subscription-management
