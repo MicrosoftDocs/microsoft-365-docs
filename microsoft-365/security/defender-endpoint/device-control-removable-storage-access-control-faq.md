@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
 description: Answers frequently asked questions on MDE device control removable storage. 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,6 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
 ms.date: 08/25/2022
 ms.reviewer: tewchen
 search.appverid: met150
