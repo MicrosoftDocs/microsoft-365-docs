@@ -13,6 +13,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - Conditional access policy
 - Microsoft Intune
 - M365-security-compliance
