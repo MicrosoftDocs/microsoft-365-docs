@@ -31,7 +31,7 @@ To retain and delete emails, we recommend you use Microsoft 365 retention polici
 
 Use this article as an example deployment for these two valid reasons to use MRM retention policies and retention tags. For all other retention and deletion scenarios, use [Microsoft 365 retention policies and retention labels](retention.md).
 
-The configuration requires you to create an MRM retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the mailbox after they reach a specific age limit.
+The configuration requires you to create an MRM retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the Deleted items folder after they reach a specific age limit.
 
 The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Retention tags are linked to an MRM retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted.
   
