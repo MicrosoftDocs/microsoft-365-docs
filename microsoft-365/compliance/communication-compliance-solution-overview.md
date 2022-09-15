@@ -4,6 +4,7 @@ description: Learn how to configure communication compliance in Microsoft Purvie
 keywords: Microsoft 365, insider risk, compliance
 ms.localizationpriority: medium
 ms.topic: article
+ms.service: O365-seccomp
 f1.keywords:
 - NOCSH
 ms.author: robmazz

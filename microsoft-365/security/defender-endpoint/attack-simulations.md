@@ -6,6 +6,7 @@ search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: maccruz
 author: dansimp

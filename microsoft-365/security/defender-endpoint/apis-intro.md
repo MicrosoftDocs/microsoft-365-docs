@@ -5,6 +5,7 @@ description: Learn how you can use APIs to automate workflows and innovate based
 keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas

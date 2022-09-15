@@ -2,7 +2,7 @@
 title: Access the Microsoft 365 Defender MSSP customer portal
 description: Access the Microsoft 365 Defender MSSP customer portal
 keywords: managed security service provider, mssp, configure, integration
-ms.service: microsoft-365-security
+ms.service: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -5,6 +5,7 @@ keywords: automated, investigation, detection, Microsoft Defender for Endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium

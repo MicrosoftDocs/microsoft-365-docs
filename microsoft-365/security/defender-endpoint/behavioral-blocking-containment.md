@@ -16,7 +16,6 @@ ms.custom:
   - edr
   - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
-ms.technology: mde
 search.appverid: met150
 ---
 
