@@ -17,8 +17,8 @@ ms.collection:
   - M365-security-compliance
 description: Learn about the smart reports and insights, and how to use them to view and explore data and take quick actions.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Smart reports and insights in the Security & Compliance Center
@@ -52,6 +52,6 @@ The following table list the reports that are available in the **Dashboard**:
 
 ## Related topics
 
-[Microsoft 365 Defender portal](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md)
 
 [Protect against threats in Office 365](protect-against-threats.md)

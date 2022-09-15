@@ -24,8 +24,6 @@ description: Understand how to transition legacy files to Office 365 Message Enc
 
 # Legacy information for Office 365 Message Encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 If you haven't yet moved your organization to Microsoft Purview Message Encryption, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to Microsoft Purview Message Encryption as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). If you want to find out more about how the new message encryption first, see [Message encryption](ome.md). The rest of this article refers to OME behavior before the release of Microsoft Purview Message Encryption.
 
 With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.

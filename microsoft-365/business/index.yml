@@ -8,7 +8,8 @@ brand: m365
 metadata:
   title: Microsoft 365 Business Premium resources # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Documentation for setting up and working with Microsoft 365 Business Premium. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: business-premium
   ms.topic: hub-page # Required
   ms.collection: collection
   ms.custom: 
@@ -16,7 +17,7 @@ metadata:
   - intro-hub-or-landing
   author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
   ms.author: deniseb #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/12/2022
+  ms.date: 08/26/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -24,24 +25,24 @@ productDirectory:
   items:
     # Card
     - title: Watch
-      imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+      imageSrc: /office/media/icons/video-play.svg
       summary: Top five benefits of Microsoft 365 Business Premium.
       url: https://aka.ms/M365BPvideo
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+      imageSrc: /office/media/icons/get-started-blue.svg
       summary: Learn about new Defender for Business capabilities in Business Premium and Microsoft 365 Lighthouse.
       url: https://aka.ms/SMBsecurityFebBlog
     # Card
     - title: Get the free partner kit
-      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       summary: Practical guidance and go to market resources for partners for securing hybrid work.
       url: https://aka.ms/SMBSecurityKit
     # Card
     - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       summary: Learn how to drive upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
       url: https://aka.ms/M365MDBseries 
 # conceptualContent section (optional)
@@ -72,15 +73,15 @@ conceptualContent:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: Get Microsoft 365 Business Premium
-        - url: ../business-premium/get-microsoft-365-business-premium.md
+        - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
           text: 1. Complete the basic setup process
         - url: ../business-premium/m365bp-security-overview.md
           itemType: overview
-          text: 2. Bump up security
+          text: 2. Set up security capabilities
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: 3. Set up unmanaged (BYOD) devices
+          text: 3. Protect unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-protect-email-overview.md
           itemType: overview
           text: 4. Use email more securely
@@ -123,7 +124,7 @@ conceptualContent:
         - url: https://partner.microsoft.com
           itemType: overview
           text: Microsoft Partner Network 
-        - url: https://docs.microsoft.com/partner-center/overview
+        - url: /partner-center/overview
           itemType: overview
           text: Get started with Partner Center
 
@@ -192,6 +193,9 @@ conceptualContent:
   # Card
     - title: How do I...
       links:
+        - url: ../admin/security-and-compliance/secure-your-business-data.md
+          itemType: how-to-guide
+          text: See top 10 ways to secure my business
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
           text: Find a Microsoft partner to help my business
@@ -204,5 +208,3 @@ conceptualContent:
         - url: ../admin/get-help-support.md
           itemType: how-to-guide
           text: Contact support for Microsoft 365
-
-

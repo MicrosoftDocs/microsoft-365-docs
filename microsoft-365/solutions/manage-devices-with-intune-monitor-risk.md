@@ -11,13 +11,15 @@ manager: dougeby
 audience: ITPro
 description: Learn how to connect Microsoft Intune to Defender for Endpoint and monitor device risk as a condition for access.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - deploy security baselines
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
 ---
@@ -33,8 +35,8 @@ Deploying Microsoft Defender for Endpoint includes onboarding endpoints. If you 
 
 In this illustration:
 - Microsoft Defender for Endpoint greatly increases the sophistication of threat protection for devices. 
-- While Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes), Defender for Endpoint continuously monitors your devices for threats and can take automated action to remediate attacks. 
-- You can use Intune to onboard devices to Defender for Endpoint. When you do this, you are also enabling these devices to work with Microsoft Purview Endpoint data loss prevention (Endpoint DLP).
+- While Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes), Defender for Endpoint continuously monitors your devices for threats, and can take automated action to remediate attacks. 
+- You can use Intune to onboard devices to Defender for Endpoint. When you do this, you're also enabling these devices to work with Microsoft Purview Endpoint data loss prevention (Endpoint DLP).
 
 This article includes these steps:
 - Monitor device risk
@@ -58,7 +60,7 @@ The article, [Step 5. Deploy configuration profiles](manage-devices-with-intune-
 
 Ideally, devices onboarded to Defender for Endpoint are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Defender for Endpoint security baseline layered on top to optimally configure the Defender for Endpoint security controls.
 
-To benefit from the latest data on risks and threats and to minimize conflicts as baselines evolve, always apply the latest versions of the baselines across all products as soon as they are released. 
+To benefit from the latest data on risks and threats and to minimize conflicts as baselines evolve, always apply the latest versions of the baselines across all products as soon as they're released. 
 
 Using Defender for Endpoint, you can monitor compliance to these baselines. 
 

@@ -17,8 +17,8 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.date: 06/10/2021
 ---
 

@@ -22,8 +22,6 @@ description: "The Microsoft 365 Defender portal and Microsoft Purview compliance
 
 # How content is identified for data-governance recommendations
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> provide recommendations for data governance based on your org's current setup and lets you set things up in a couple clicks. Some of these recommendations detect specific content in your organization and then provide recommended steps for managing that content. For example, a recommendation might detect items that contain business-critical content (such as attorney-client privilege or NDA info), and then let you automatically apply a retention label to those items to ensure that they're classified and retained as needed.
 
 This topic lists the data-governance recommendations you might see and describes what content is detected to trigger each one.

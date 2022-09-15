@@ -1,24 +1,25 @@
 ---
 title: Deploy Microsoft Whiteboard on Windows 10 devices
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to deploy Microsoft Whiteboard on devices running Windows 10 or later versions.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
 # Deploy Microsoft Whiteboard on Windows 10 devices
 
 Whiteboard can be deployed on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager (formerly System Center Configuration Manager). Whiteboard isn't supported on Windows Server.
+
+In order to deploy Whiteboard, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
 
 - **Microsoft Intune using an online license mode** – This process allows you to specify groups of users who will receive access to the Whiteboard app.
 
@@ -63,7 +64,7 @@ Whiteboard can be deployed on devices that run Windows 10 or later using Microso
 
 ## See also
 
-[Enable and manage access to Whiteboard](enable-whiteboard-access-organizations.md)
+[Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Manage data for Whiteboard](manage-data-organizations.md)
 

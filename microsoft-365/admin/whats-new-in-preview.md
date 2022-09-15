@@ -33,7 +33,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -176,7 +176,7 @@ Learn more at [Microsoft product NPS feedback and insights for your organization
 
 ### Microsoft 365 admin center video training
 
-We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](admin-video-library.yml) page to learn how to set up and manage Microsoft 365 for your business.
+We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](https://go.microsoft.com/fwlink/?linkid=2197659) page to learn how to set up and manage Microsoft 365 for your business.
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
 

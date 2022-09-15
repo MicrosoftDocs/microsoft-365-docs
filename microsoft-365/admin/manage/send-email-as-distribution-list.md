@@ -11,7 +11,6 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
-
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
