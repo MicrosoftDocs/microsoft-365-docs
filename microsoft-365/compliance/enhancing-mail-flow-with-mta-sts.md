@@ -61,7 +61,7 @@ Once the DNS TXT domain record is created and the policy file is available at th
 > [!NOTE]
 > These configuration flows were developed to help Microsoft Exchange Online customers host their MTA-STS policy using Azure resources. This configuration flow assumes that you're an Exchange Online customer who is aware of how MTA-STS works and its requirements. For more information about the protocol beyond this topic, see [RFC8461](https://www.rfc-editor.org/rfc/rfc8461.html).
 
-There are two Azure resources that can be used to host the MTA-STS policy: [Azure Static Web App](https://azure.microsoft.com/en-us/services/app-service/static/) and [Azure Functions](/azure/azure-functions/functions-overview). Although this article describes how to deploy the policy using both the resources, the recommended method is "Azure Static Web App" as it’s designed for hosting static pages such as the STS policy, and Azure simplifies the configuration by providing a TLS certificate for the MTA-STS webpage out of the box, without requiring more configuration. If you aren't able to use Azure Static Web App, you can also host your policy as serverless code using Azure Functions. This approach isn't the preferred method because Azure Function is a feature designed for other scenarios and it doesn’t issue a TLS certificate automatically, unlike Azure Static Web Apps. So using Azure Functions for MTA-STS requires that you issue your own “mta-sts.[your domain]” certificate and bind it to the function.
+There are two Azure resources that can be used to host the MTA-STS policy: [Azure Static Web App](https://azure.microsoft.com/services/app-service/static/) and [Azure Functions](/azure/azure-functions/functions-overview). Although this article describes how to deploy the policy using both the resources, the recommended method is "Azure Static Web App" as it’s designed for hosting static pages such as the STS policy, and Azure simplifies the configuration by providing a TLS certificate for the MTA-STS webpage out of the box, without requiring more configuration. If you aren't able to use Azure Static Web App, you can also host your policy as serverless code using Azure Functions. This approach isn't the preferred method because Azure Function is a feature designed for other scenarios and it doesn’t issue a TLS certificate automatically, unlike Azure Static Web Apps. So using Azure Functions for MTA-STS requires that you issue your own “mta-sts.[your domain]” certificate and bind it to the function.
 
 Regardless of which approach you've taken, we encourage you to validate that your policy is properly configured and the response time is acceptable – timeout per RFC guidance is 60 seconds.
 
@@ -102,20 +102,22 @@ These configuration flows are intended to provide only technical information abo
     
     1. Create an *index.html* file and input the following code into it:
     
-       <!DOCTYPE html>
-       <html lang="en">
+       ```powershell
+           <!DOCTYPE html>
+           <html lang="en">
 
-       <head>
-       <meta charset="UTF-8">
-       <title>MTA-STS</title>
-       </head>
+           <head>
+           <meta charset="UTF-8">
+           <title>MTA-STS</title>
+           </head>
 
-       <body>
-       <h1>MTA-STS Static Website index</h1>
-       </body>
+           <body>
+           <h1>MTA-STS Static Website index</h1>
+           </body>
 
-       </html>
-
+           </html>
+       ```
+           
       The file should only contain the content as shown in the following screenshot:
    
       :::image type="content" source="../media/contents-of-file2.png" alt-text="The screenshot that displays the contents of File2":::

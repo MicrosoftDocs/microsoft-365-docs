@@ -7,7 +7,6 @@ ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - M365-modern-desktop
