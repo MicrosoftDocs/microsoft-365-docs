@@ -22,7 +22,13 @@ Content understanding in SharePoint Syntex starts with AI models. Models let you
 
 SharePoint Syntex uses [custom models](#custom-models) and [trained models](#trained-models). 
 
-[Diagram]
+<!---
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+
+</br>
+--->
 
 ## Custom models
 
