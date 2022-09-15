@@ -21,6 +21,7 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Policies for allowing guest access and B2B external user access
