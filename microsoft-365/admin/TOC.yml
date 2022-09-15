@@ -396,8 +396,6 @@
               href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
             - name: Manage device access settings
               href: basic-mobility-security/manage-device-access-settings.md
-            - name: Get details about managed devices
-              href: basic-mobility-security/get-details-about-managed-devices.md
             - name: Manage enrolled devices
               href: basic-mobility-security/manage-enrolled-devices.md
             - name: Enroll your mobile device
@@ -410,8 +408,6 @@
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Turn off Basic Mobility and Security
               href: basic-mobility-security/turn-off.md
-            - name: Troubleshoot
-              href: basic-mobility-security/troubleshoot.md
     - name: Switch from Google Workspace to M365
       items:
         - name: Overview

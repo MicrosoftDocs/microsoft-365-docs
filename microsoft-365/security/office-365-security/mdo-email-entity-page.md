@@ -11,13 +11,14 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: 
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
+search.appverid: met150
 ---
+
 # The Email entity page
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
@@ -98,7 +99,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 1. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
 1. *Screenshots* show the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
     - Container type files like .zip or .rar.
-    - If a URL opens into a link that directly downloads a file. However, you will see the downloaded file in the detonation chain.
+    - If a URL opens into a link that directly downloads a file. However, you'll see the downloaded file in the detonation chain.
 1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
     - Container files like .zip or .rar that are holding other files.
 
@@ -108,7 +109,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 *Tags*: These are tags applied to users. If the user is a recipient, admins will see a *recipient* tag. Likewise, if the user is a sender, a *sender* tag. This will appear in the left side of the email entities page (in the part that's described as *sticky* and, thus, anchored to the page).
 
-*Latest delivery location*: The latest delivery location is the location where an email landed after system actions like ZAP, or admin actions like Move to Deleted Items, finish. Latest delivery location is not intended to inform admins of the message's *current* location. For example, if a user deletes a message, or moves it to archive, the delivery location won't be updated. However, if a system action has taken place and updated the location (like a ZAP resulting in an email moving to quarantine) this would update the Latest delivery location to quarantine.
+*Latest delivery location*: The latest delivery location is the location where an email landed after system actions like ZAP, or admin actions like Move to Deleted Items, finish. Latest delivery location isn't intended to inform admins of the message's *current* location. For example, if a user deletes a message, or moves it to archive, the delivery location won't be updated. However, if a system action has taken place and updated the location (like a ZAP resulting in an email moving to quarantine) this would update the Latest delivery location to quarantine.
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
@@ -116,7 +117,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured transport rule or an email allowed due to an end-user setting for Safe Senders. 
 
-- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured transport rule, as well as a tenant configured policy setting (for example, from the Tenant Allow Block list), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email. 
+- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured transport rule, as well as a tenant configured policy setting (for example, from the Tenant Allow Block lists), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email. 
 
 - *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 
@@ -124,11 +125,11 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Client type*: Indicates the Client type from which the email was sent like REST.
 
-- *Forwarding*: For scenarios with autoforwaridng, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding. 
+- *Forwarding*: For scenarios with autoforwarding, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding.
 
 - *Distribution list*: Shows the distribution list, if the recipient received the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
 
-- *To, Cc*: Indicates the addresses which are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters. 
+- *To, Cc*: Indicates the addresses that are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters.
 
 - *Domain Name*: Is the sender domain name.
 
@@ -152,7 +153,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 - DomainKeys Identified Mail (**DKIM**):
   - Pass: Indicates the DKIM check for the message passed.
   - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
-  - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.
+  - None: Indicates that the message wasn't signed. This may or may not indicate that the domain has a DKIM record or the DKIM record doesn't evaluate to a result, only that this message was not signed.
 
 - Domain-based Message Authentication, Reporting, and Conformance (**DMARC**):
   - Pass: Indicates the DMARC check for the message passed.
@@ -163,9 +164,9 @@ Users will see enriched detonation details for known malicious attachments or UR
 *Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
 ## Actions into Email entity Page
 
-Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be trigged from Email entity page.  
+Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be triggered from the Email entity page.  
 
-You will be able to click on **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need. 
+You will be able to select **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need. 
 ![Take action from entity page.](../../media/Take-ActionWizard-Email-entity.png)
 
 In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You will be able to see and track these actions in the 
@@ -180,7 +181,7 @@ See [permissions](permissions-microsoft-365-security-center.md) required to take
  
 ### Email summary panel
 
-The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (e.g., detections), as well as context-specific information (e.g., for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
+The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (for example, detections), as well as context-specific information (for example, for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
 
 > [!div class="mx-imgBorder"]
 > ![Open the email entity link.](../../media/open-email-entity-mdo.png)
@@ -194,11 +195,11 @@ The email summary panel is divided into the following sections:
 
 - *Email details*: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
 
-- *URLs*: By default, you will see 3 URLs and their corresponding threats. You can always click **View all URLs** to expand and see all URLs and export them.  
+- *URLs*: By default, you will see 3 URLs and their corresponding threats. You can always select **View all URLs** to expand and see all URLs and export them.  
 
-- *Attachments*: By default, you will see 3 attachments. You can always click **View all attachments** to expand and see all attachments. 
+- *Attachments*: By default, you will see 3 attachments. You can always select **View all attachments** to expand and see all attachments. 
 
-In addition to the above sections, you will also see sections specific to few experiences which are integrated with the summary panel: 
+In addition to the above sections, you will also see sections specific to few experiences that are integrated with the summary panel: 
 
 - Submissions: 
 

@@ -13,6 +13,7 @@ ms.collection:
 ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Insights and reports for Attack simulation training in Defender for Office 365
