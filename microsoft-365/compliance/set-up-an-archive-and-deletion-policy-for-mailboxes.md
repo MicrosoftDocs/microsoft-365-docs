@@ -45,11 +45,9 @@ The steps in this article set up an archiving and retention policy for a fictiti
     
     - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
 
-- Create a new retention policy and add the new custom retention tags to it. Additionally, you'll add two built-in retention tags that can't be achieved with a recommended Microsoft 365 retention label because they also move items to the archive mailbox:
+- Create a new retention policy and add the new custom retention tags to it. Additionally, you'll add a built-in retention tag that can't be achieved with a recommended Microsoft 365 retention label because it also moves items to the archive mailbox:
     
     - A personal tag for archiving after 1 year that users can assign to items in their mailbox. Users can assign this tag when they want a shorter archive period than the default of 3 years.
-    
-    - A retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This action helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
 
 You can follow some or all of the steps in this article to set up an archive and deletion policy for mailboxes in your own organization. We recommend that you test this process on a few mailboxes before implementing it on all mailboxes in your organization.
 
@@ -143,12 +141,11 @@ After you create the custom retention tags, the next step is to create a new ret
     
     A list of the retention tags in your organization is displayed, which includes the custom tags that you created in Step 2.
 
-5. Add the 4 retention tags that are described in more detail in the [More information](#more-information) section:
+5. Add the 3 retention tags that are described in more detail in the [More information](#more-information) section:
     
     - **Alpine House 3 Year Move to Archive** - the custom archive default policy tag created in step 2 of these instructions
     - **Alpine House Deleted Items 5 Years Delete and Allow Recovery** - the custom tag for the Deleted Items folder created in step 2 of these instructions
-    - **Recoverable Items 14 days Move to Archive**
-    - **Personal 1 year move to archive**
+    - **Personal 1 year move to archive** - a built-in tag that's preconfigured
     
     To add these retention tags, select them, and then select **Add**.
 
@@ -250,10 +247,8 @@ You do this by using Exchange Online PowerShell to update your organization's de
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Year Move to Archive  <br/> |Moves items that are 1095 days (3 years) old to the archive mailbox.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (archive); this tag is automatically applied to the entire mailbox.  <br/> |
     |Alpine House Deleted Items 5 Years Delete and Allow Recovery  <br/> |Deletes items from the Deleted Items folder that are 5 years old. Users can recover these items for up 14 days after they're deleted.<sup>\*</sup> <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Retention Policy Tag (Deleted Items); this tag is automatically applied to items in the Deleted items folder.  <br/> |
-    |Recoverable Items 14 days Move to Archive  <br/> |Moves items that have been in the Recoverable Items folder for 14 days to the Recoverable Items folder in the archive mailbox.  <br/> |Built-in  <br/> |Retention Policy Tag (Recoverable Items); this tag is automatically applied to items in the Recoverable Items folder.  <br/> |
     |Personal 1 year move to archive  <br/> |Moves items to the archive mailbox after 1 year.  <br/> |Built-in  <br/> |Personal; this tag can be applied by users.   |
 
 
 ><sup>*</sup>Users can use the Recover Deleted Items tool in Outlook and Outlook on the web (formerly known as Outlook Web App) to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Exchange Online PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
-- Using the **Recoverable Items 14 days Move to Archive** retention tag helps free up storage space in the Recoverable Items folder in the user's primary mailbox. This is useful when a user's mailbox is placed on hold or has a retention policy applied that retains items. Both configurations prevent emails from being permanently deleted from the user's mailbox. Without moving items to the archive mailbox, it's possible the storage quota for the Recoverable Items folder in the primary mailbox will be reached. For more information about this scenario, see [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).
