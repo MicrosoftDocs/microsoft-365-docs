@@ -2,7 +2,7 @@
 title: Onboard devices and configure Microsoft Defender for Endpoint capabilities
 description: Onboard Windows 10 devices, servers, non-Windows devices and learn how to run a detection test.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,8 @@ ms.collection:
   - M365-security-compliance
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard devices and configure Microsoft Defender for Endpoint capabilities

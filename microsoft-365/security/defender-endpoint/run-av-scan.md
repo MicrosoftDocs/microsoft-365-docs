@@ -2,7 +2,7 @@
 title: Run antivirus scan API
 description: Use this API to create calls related to running an antivirus scan on a device.
 keywords: apis, graph api, supported apis, remove device from isolation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Run antivirus scan API

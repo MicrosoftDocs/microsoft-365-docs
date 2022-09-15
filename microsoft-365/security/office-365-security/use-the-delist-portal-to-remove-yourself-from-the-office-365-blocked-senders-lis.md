@@ -19,8 +19,8 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: In this article, you'll learn how to use the delist portal to remove yourself from the Microsoft 365 blocked senders list. This is the best response to address 5.7.511 Access denied errors.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors

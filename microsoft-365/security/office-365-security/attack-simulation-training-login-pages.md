@@ -12,6 +12,7 @@ ms.collection:
   - m365initiative-defender-office365
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Login pages in Attack simulation training

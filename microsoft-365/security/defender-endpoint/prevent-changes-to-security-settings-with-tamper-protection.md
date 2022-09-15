@@ -5,7 +5,7 @@ manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,10 +16,11 @@ ms.author: deniseb
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Protect security settings with tamper protection
