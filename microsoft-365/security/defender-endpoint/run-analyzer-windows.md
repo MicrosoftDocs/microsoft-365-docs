@@ -18,6 +18,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.subservice: m365d
+search.appverid: met150
 ---
 
 # Run the client analyzer on Windows

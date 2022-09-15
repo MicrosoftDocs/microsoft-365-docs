@@ -22,7 +22,9 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
+
 # Zero Trust identity and device access configurations
 
 Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization's technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.

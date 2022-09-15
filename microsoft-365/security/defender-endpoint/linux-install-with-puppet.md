@@ -16,6 +16,7 @@ ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Puppet
