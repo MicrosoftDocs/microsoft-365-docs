@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
