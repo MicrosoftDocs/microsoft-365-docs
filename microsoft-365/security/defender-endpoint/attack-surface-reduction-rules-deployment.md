@@ -14,7 +14,6 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
 ms.collection:  
  - M365-security-compliance
