@@ -2,6 +2,7 @@
 title: Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
 description: Answers frequently asked questions on MDE device control removable storage. 
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
