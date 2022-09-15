@@ -48,4 +48,3 @@ Related content
 
 [Microsoft Bookings](bookings-overview.md)\
 [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)\
-[Get the Microsoft Bookings app for iOS and Android](get-bookings-app.md)\

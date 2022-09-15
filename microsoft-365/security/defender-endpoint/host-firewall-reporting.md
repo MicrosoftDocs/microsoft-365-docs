@@ -15,6 +15,7 @@ manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 # Host firewall reporting in Microsoft Defender for Endpoint

@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ms.subservice: mde
 ms.custom: api 
+search.appverid: met150
 ---
 
 # Export device antivirus health report
@@ -290,4 +291,4 @@ Here's an example response:
 
 [Export device health methods and properties](device-health-api-methods-properties.md)
 
-[Device health and compliance reporting](machine-reports.md)
+[Device health and compliance reporting](device-health-reports.md)
