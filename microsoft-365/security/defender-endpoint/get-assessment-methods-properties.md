@@ -18,7 +18,7 @@ ms.custom: api
 search.appverid: met150
 ---
 
- Export assessment methods and properties per device
+# Export assessment methods and properties per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

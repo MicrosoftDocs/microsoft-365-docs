@@ -18,7 +18,7 @@ ms.custom: api
 search.appverid: met150
 ---
 
- Export certificate inventory per device
+# Export certificate inventory per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
