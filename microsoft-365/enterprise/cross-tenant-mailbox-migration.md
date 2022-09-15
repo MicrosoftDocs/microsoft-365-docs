@@ -382,7 +382,7 @@ The meetings will move, however the Teams meeting URL does not update when items
 
 ### Does the Teams chat folder content migrate cross-tenant?
 
-No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated Cross-Tenant with this feature, all email, including email held for litigation, is migrated. After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances (including mailboxes on litigation or retention hold), is the source mailbox available, discoverable, or accessible in the source tenant.
+No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated Cross-Tenant with this feature, all email, including email held for litigation, is migrated. After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances (including mailboxes on litigation or retention hold), is the source mailbox available, discoverable, or accessible in the source tenant. Currently we are investigating an issue where in some scenarios, Teams chat data is also held in the mailbox, but the Teams chat data is not migrated. If Teams chat data must be preserved, do not use this feature to migrate the mailbox.
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
