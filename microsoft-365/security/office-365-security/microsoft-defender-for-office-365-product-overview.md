@@ -3,7 +3,6 @@ title: Office 365 Security including Microsoft Defender for Office 365 and Excha
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: high
@@ -19,7 +18,7 @@ ms.service: microsoft-365-security
 adobe-target: true
 ---
 
-# Microsoft Defender for Office 365 security overview
+# Microsoft Defender for Office 365 security product overview
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

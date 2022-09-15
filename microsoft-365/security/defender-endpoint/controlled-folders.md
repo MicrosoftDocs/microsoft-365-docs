@@ -16,7 +16,6 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.date: 
 search.appverid: met150
 ---
 
