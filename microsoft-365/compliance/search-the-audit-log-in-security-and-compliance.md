@@ -191,7 +191,7 @@ Here's the process for searching the audit log in Microsoft 365.
 
 - Click **Clear** to clear the current search criteria. The date range returns to the default of the last seven days. You can also click **Clear all to show results for all activities** to cancel all selected activities.
 
-- If 50,000 results are found, you can probably assume that there are more than 50,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export all of the search results by selecting **Export results** \> **Download all results**.
+- If 50,000 results are found, you can probably assume that there are more than 50,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export all of the 50,000 search results by selecting **Export results** \> **Download all results**.
 
 ### Step 2: View the search results
 
