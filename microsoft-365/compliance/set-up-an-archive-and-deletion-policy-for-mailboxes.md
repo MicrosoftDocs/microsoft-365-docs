@@ -47,7 +47,7 @@ The steps in this article set up an archiving and retention policy for a fictiti
 
 - Create a new retention policy and add the new custom retention tags to it. Additionally, you'll add two built-in retention tags that can't be achieved with a recommended Microsoft 365 retention label because they also move items to the archive mailbox:
     
-    - A personal tag for archiving after 1 year that users can assign to items in their mailbox. Users can assign this tag when they want a shorter archive period than the default of 3 years old.
+    - A personal tag for archiving after 1 year that users can assign to items in their mailbox. Users can assign this tag when they want a shorter archive period than the default of 3 years.
     
     - A retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This action helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
 
@@ -143,7 +143,7 @@ After you create the custom retention tags, the next step is to create a new ret
     
     A list of the retention tags in your organization is displayed, which includes the custom tags that you created in Step 2.
 
-5. Add the 9 retention tags that are described in more detail in the [More information](#more-information) section:
+5. Add the 4 retention tags that are described in more detail in the [More information](#more-information) section:
     
     - **Alpine House 3 Year Move to Archive** - the custom archive default policy tag created in step 2 of these instructions
     - **Alpine House Deleted Items 5 Years Delete and Allow Recovery** - the custom tag for the Deleted Items folder created in step 2 of these instructions
