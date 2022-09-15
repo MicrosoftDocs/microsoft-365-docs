@@ -291,4 +291,4 @@ Here's an example response:
 
 [Export device health methods and properties](device-health-api-methods-properties.md)
 
-[Device health and compliance reporting](machine-reports.md)
+[Device health and compliance reporting](device-health-reports.md)

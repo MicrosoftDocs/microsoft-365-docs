@@ -11,6 +11,7 @@ ms.service: microsoft-365-enterprise
 
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:

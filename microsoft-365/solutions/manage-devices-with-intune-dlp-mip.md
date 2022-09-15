@@ -12,6 +12,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - endpoint dlp
 - data loss prevention
 - dlp policies 

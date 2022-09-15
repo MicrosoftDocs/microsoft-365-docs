@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario
