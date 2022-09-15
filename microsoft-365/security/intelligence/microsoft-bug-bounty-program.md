@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
 ms.technology: m365d
+search.appverid: met150
 ---
 
 # About the Microsoft Bug Bounty Program
