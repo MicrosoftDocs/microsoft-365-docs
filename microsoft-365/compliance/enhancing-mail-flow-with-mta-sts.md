@@ -136,7 +136,7 @@ These configuration flows are intended to provide only technical information abo
     - **Build Presets**: Angular
     - **App Location**: /home
    
-   :::image type="content" source="../media/new-app-with-details.png" alt-text="The screenshot that shows a newly created Azure Static Web App with its information" lightbox="../media/new-app-with-details.png":::
+    :::image type="content" source="../media/new-app-with-details.png" alt-text="The screenshot that shows a newly created Azure Static Web App with its information" lightbox="../media/new-app-with-details.png":::
 
 5. Once the Static Web App creation is done and the resource is provisioned, go to **Overview > Manage deployment token**; then copy the token as it will be used in the next step.
 
@@ -195,7 +195,7 @@ These configuration flows are intended to provide only technical information abo
     - **Operating System**: Windows
     - **Plan Type**: [As your choice]
 
-   :::image type="content" source="../media/new-azure-function-app.png" alt-text="The screenshot that shows the configurations of a new Azure Function app" lightbox="../media/new-azure-function-app.png":::
+    :::image type="content" source="../media/new-azure-function-app.png" alt-text="The screenshot that shows the configurations of a new Azure Function app" lightbox="../media/new-azure-function-app.png":::
 
 2. Add your custom domain to the Function App. You'll be required to create a **CNAME** record to validate that the domain belongs to you.
 
@@ -227,7 +227,7 @@ These configuration flows are intended to provide only technical information abo
     - **New Function**: [As your choice]
     - **Authorization level**: Anonymous
 
-   :::image type="content" source="../media/create-function-screen.png" alt-text="The screenshot that shows the Create function page" lightbox="../media/create-function-screen.png":::
+    :::image type="content" source="../media/create-function-screen.png" alt-text="The screenshot that shows the Create function page" lightbox="../media/create-function-screen.png":::
 
 6. Once the function is created, open **Code + Test** and develop in C# a simple async HTTP response that will be your MTA-STS policy. The following example indicates that Exchange Online is expected to receive emails:
 
@@ -241,7 +241,7 @@ These configuration flows are intended to provide only technical information abo
     - **Route Template**: .well-known/mta-sts.txt
     - **Selected HTTP methods**: GET
 
-   :::image type="content" source="../media/edit-trigger-screen.png" alt-text="The screenshot that shows the Edit trigger page" lightbox="../media/edit-trigger-screen.png":::
+    :::image type="content" source="../media/edit-trigger-screen.png" alt-text="The screenshot that shows the Edit trigger page" lightbox="../media/edit-trigger-screen.png":::
 
 8. Validate that your MTA-STS policy is published through: https://mta-sts.[your domain]/.well-known/mta-sts.txt.
 
