@@ -99,15 +99,10 @@ After you run the command in Step 2, the external contacts are created, but they
     
 2. Go to the desktop folder where you saved the CSV file in Step 1; for example, `C:\Users\Administrator\desktop`.
     
-3. Run the following two commands to add the other properties from the CSV file to the external contacts that you created in Step 2.
+3. Run the following command to add the other properties from the CSV file to the external contacts that you created in Step 2.
     
     ```powershell
-    $Contacts = Import-CSV .\ExternalContacts.csv
-  
-    ```
-
-    ```powershell
-    $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
+     Import-Csv .\ExternalContacts.csv|%{Set-Contact -Identity $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
     > [!NOTE]

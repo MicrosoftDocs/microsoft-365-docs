@@ -40,6 +40,8 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
 
+
+
 ## Categories of sensitive information types
 
 ### Built in sensitive information types

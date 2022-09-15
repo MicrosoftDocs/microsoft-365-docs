@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Canvas
-ms.author: heidip
-author: MicrosoftHeidi
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
 audience: admin
@@ -11,8 +11,7 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App for Canvas.
+description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the Microsoft OneDrive LTI for Canvas.
 ---
 
 # Integrate Microsoft OneDrive LTI with Canvas
@@ -26,7 +25,7 @@ Integrating Microsoft OneDrive LTI with Canvas is a two-step process. The first 
 ## Recommended browser settings
 
 - Cookies should be enabled for Microsoft OneDrive.
-- Popups should not be blocked for Microsoft OneDrive.
+- Popups shouldn't be blocked for Microsoft OneDrive.
 
 > [!NOTE]
 >
@@ -44,7 +43,7 @@ Integrating Microsoft OneDrive LTI with Canvas is a two-step process. The first 
    > [!CAUTION]
    > If this step isn't performed, the following step will give you an error, and you won't be able to take this step for an hour once you've gotten the error.
 
-3. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
+3. Select the **Create new LTI Tenant** button. On the LTI Registration page, select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
 
    > [!NOTE]
    > If your Canvas instance is, for example, `https://contoso.test.instructure.com`, then the complete URL should be entered.
@@ -98,15 +97,15 @@ A Canvas administrator can enable Microsoft OneDrive LTI for all courses. If Mic
 
 ## Collaboration Settings for Microsoft OneDrive LTI in Canvas Courses
 
-> [!NOTE]
-> For collaboration to work for educators and students, you shouldn't enable the collaboration setting. To make sure the setting isn't enabled, follow the steps below.
+For OneDrive Collaborations to work for educators and students, ensure the **External Collaborations Tools** setting is turned off. To turn off the **External Collaborations Tool** setting, follow the steps below.
 
-1. Sign in as an admin and go to the **Settings** section.
+1. Sign to Canvas as an admin and go to the **Settings** section.
 1. Go to **Feature Options** section, and then go to the **Course** section.
-1. Set the **External Collaborations Tool** feature to be not enabled.
+1. Set the **External Collaborations Tool** toggle to the off position.
 
-> [!NOTE]
-> Collaboration can be assigned to individual students and to groups of students. Assigning to individual students works by default. To be able to assign collaboration to group of students, follow these steps:
+Collaborations can be assigned to individual students and to groups of students in a course. Collaborations in Canvas Groups isn't currently supported.
 
-1. Login as admin and go to the **Developer Keys** section.
-1. Find the key with value 170000000000710 and set it to **On**.
+Assigning to individual students works by default. To assign collaboration to groups of students, follow these steps:
+
+1. Sign into Canvas as an admin and go to the **Developer Keys** section.
+1. Find the key with value `170000000000710` and set it to **On**.

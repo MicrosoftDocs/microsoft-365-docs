@@ -2,8 +2,8 @@
 title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they have been opened by a specific process.
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Configure exclusions for files opened by processes
@@ -101,7 +102,7 @@ The following are allowed as the \<cmdlet\>:
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
-For example, the following code snippet would cause Microsoft Defender AV scans to exclude any file that is opened by the specified process:
+For example, the following code snippet would cause Microsoft Defender Antivirus scans to exclude any file that is opened by the specified process:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"

@@ -1,18 +1,17 @@
 ---
 title: Manage access to Microsoft Whiteboard for your organization
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to set up Microsoft Whiteboard for your organization in the Microsoft 365 admin center.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -21,9 +20,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 >[!NOTE]
 > This article applies to Enterprise or Education organizations who use Whiteboard. For US Government GCC High environments, see [Manage access to Microsoft Whiteboard for GCC High environments](manage-whiteboard-access-gcc-high.md).
 
-Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Today, Whiteboard runs on Azure for Enterprise and Education customers. Whiteboard is transitioning to be run on top of OneDrive for Business. This transition will bring many new capabilities and allow you to create, share, discover, and manage whiteboards as easily as any Office document.
-
-Whiteboard is automatically enabled for applicable Microsoft 365 tenants. 
+Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Azure Active Directory admin center** > **Enterprise applications**.
 
 Whiteboard conforms to global standards including SOC 1, SOC 2, ISO 27001, HIPAA, and EU Model Clauses. 
 
@@ -32,9 +29,6 @@ The following admin settings are required for Whiteboard:
 - Whiteboard must be enabled globally in the Microsoft 365 admin center.
 
 - The <code>Set-SPOTenant -IsWBFluidEnabled</code> cmdlet must be enabled using [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-
->[!NOTE]
-> The roll out of OneDrive for Business storage is in progress. When you go to the Microsoft 365 admin center, the option to opt in or out of OneDrive for Business storage is disabled if your tenant already has been transitioned to OneDrive for Business.
 
 You can control access to Whiteboard in the following ways:
 

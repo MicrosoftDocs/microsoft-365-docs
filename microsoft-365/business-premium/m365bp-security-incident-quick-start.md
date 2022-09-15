@@ -7,23 +7,17 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management 
-- Adm_TOC
+ms.collection:
+- m365solution-smb
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "A set of suggestions for what to focus your efforts upon in the Defender portal when it comes to daily, weekly or monthly operations. "
 ---
 
@@ -225,7 +219,7 @@ Use the threat analytics dashboard to get an overview of the current threat land
 
 Microsoft 365 Business Premium includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device inventory**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.
 
    :::image type="content" source="./../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
 

@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 

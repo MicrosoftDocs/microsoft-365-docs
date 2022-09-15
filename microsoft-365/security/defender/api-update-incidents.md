@@ -3,7 +3,8 @@ title: Update incident API
 description: Learn how to update incidents using Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +20,6 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.technology: m365d
 ms.custom: api
 ---
 
@@ -82,6 +82,9 @@ classification|Enum|Specification of the incident. Possible values are: `Unknown
 determination|Enum|Specifies the determination of the incident. Possible values are: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
 tags|string List|List of Incident tags.
 comment|string|Comment to be added to the incident.
+
+>[!NOTE]
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 

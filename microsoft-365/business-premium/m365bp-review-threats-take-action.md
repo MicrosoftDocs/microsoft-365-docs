@@ -6,7 +6,9 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual 
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management 

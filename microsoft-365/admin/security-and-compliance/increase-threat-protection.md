@@ -10,10 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MiniMaven
 - MSB365
 - OKR_SMB_M365

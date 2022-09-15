@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about retention policies that apply to Microsoft Teams."
+description: "Learn about Microsoft 365 retention policies that apply to Microsoft Teams so you can manage automatic retention or deletion of Teams messages for your organization."
 ---
 
 # Learn about retention for Microsoft Teams
@@ -39,7 +39,7 @@ For other workloads, see:
 ## What's included for retention and deletion
 
 > [!NOTE]
-> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. Any shared channels inherit retention settings from the parent channel.
+> Retention policies support [shared channels](/MicrosoftTeams/shared-channels). Any shared channels inherit retention settings from the parent channel.
 
 Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 
@@ -97,7 +97,7 @@ For the two paths in the diagram:
 
 When the retention period expires and moves a message to the SubstrateHolds folder, a delete operation is communicated to the backend Azure chat service, that then relays the same operation to the Teams client app. Delays in this communication or caching can explain why, for a short period of time, users continue to see these messages in their Teams app.
 
-In this scenario where the Azure chat service receives a delete command because of a retention policy, the corresponding message in the Teams client app is deleted for all users in the conversation. Some of these users might be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
+In this scenario where the Azure chat service receives a delete command because of a retention policy, the corresponding message in the Teams client app is deleted for all users in the conversation. Sometimes, this [behavior might seem unexpected](/microsoftteams/troubleshoot/teams-im-presence/messages-unexpectedly-deleted-retention-policy) because some of these users can be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
 
 > [!IMPORTANT]
 > Messages visible in the Teams app are not an accurate reflection of whether they are retained or permanently deleted for compliance requirements.
@@ -185,17 +185,13 @@ When a Skype for Business chat comes into Teams, it becomes a message in a Teams
 
 However, if conversation history is turned on for Skype for Business and from the Skype for Business client side that history is being saved into a mailbox, that chat data isn't handled by a Teams retention policy. For this content, use a retention policy that's configured for Skype for Business.
 
-## Meetings and external users
+## Messages and external users
 
-Channel meeting messages are stored the same way as channel messages, so for this data, select the **Teams channel messages** location when you configure your retention policy.
+When external users are included in a meeting or chat that your organization hosts:
 
-Impromptu and scheduled meeting messages are stored in the same way as group chat messages, so for this data, select the **Teams chats** location when you configure your retention policy.
+- If an external user joins by using a guest account in your tenant, any Teams messages are stored in both your users' mailbox and a shadow mailbox that's granted to the guest account. However, retention policies aren't supported for shadow mailboxes, even though they can be reported as included in a retention policy for the entire location (sometimes known as an "organization-wide policy").
 
-When external users are included in a meeting that your organization hosts:
-
-- If an external user joins by using a guest account in your tenant, any messages from the meeting are stored in both your users' mailbox and a shadow mailbox that's granted to the guest account. However, retention policies aren't supported for shadow mailboxes, even though they can be reported as included in a retention policy for the entire location (sometimes known as an "organization-wide policy").
-
-- If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they're stored in that user's mailbox in another tenant. For the same meeting however, your retention policies can delete messages for your users.
+- If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they're stored in that user's mailbox in another tenant. For the same meeting or chat however, your retention policies can delete messages for your users.
 
 ## When a user leaves the organization 
 

@@ -7,16 +7,12 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- M365-subscription-management
-- Adm_O365
-
 ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
-- admindeeplinkMAC
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 

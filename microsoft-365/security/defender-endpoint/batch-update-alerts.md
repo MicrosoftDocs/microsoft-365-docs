@@ -2,7 +2,8 @@
 title: Batch Update alert entities API
 description: Learn how to update Microsoft Defender for Endpoint alerts in a batch by using this API. You can update the status, determination, classification, and assignedTo properties.
 keywords: apis, graph api, supported apis, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Batch update alerts
@@ -87,9 +88,12 @@ Property | Type | Description
 alertIds | List&lt;String&gt;| A list of the IDs of the alerts to be updated. **Required**
 status | String | Specifies the updated status of the specified alerts. The property values are: 'New', 'InProgress' and 'Resolved'.
 assignedTo | String | Owner of the specified alerts
-classification | String | Specifies the specification of the specified alerts. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
+classification | String | Specifies the specification of the specified alerts. The property values are: 'True positive', 'Informational, expected activity' and 'False positive'.
 determination | String | Specifies the determination of the specified alerts. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Comment to be added to the specified alerts.
+
+>[!NOTE]
+>Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 

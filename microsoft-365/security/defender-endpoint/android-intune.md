@@ -2,7 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, installation, deploy, uninstallation,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
@@ -150,7 +151,14 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
         - Choose **Work Profile only** as Profile Type.
         - Click **Select App**, choose **Microsoft Defender ATP**, select **OK** and then **Next**.
 
-        :::image type="content" source="images/android-create-app.png" alt-text=" The Associated app details pane" lightbox="images/android-create-app.png":::
+        :::image type="content" source="images/android-create-app.png" alt-text=" Screenshot of the Associated app details pane." lightbox="images/android-create-app.png":::
+     
+    1. Select **Permissions > Add**. From the list, select the available app permissions > **OK**.
+    2. Select an option for each permission to grant with this policy:
+
+       - **Prompt** -  Prompts the user to accept or deny.
+       - **Auto grant** - Automatically approves without notifying the user.
+       - **Auto deny** - Automatically denies without notifying the user. 
 
     1. In the **Settings** page, go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format. 
 
@@ -227,9 +235,9 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
 4. **Assignment**
 
-   In the **Assignments** page, select the user group to which this app config policy would be assigned to. Choose **Select groups** to include and selecting the applicable group and then select **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
+   In the **Assignments** page, select the user group to which this app config policy would be assigned. Choose **Select groups** to include and selecting the applicable group and then select **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
-   :::image type="content" source="images/4autosetupofvpn.png" alt-text="The devices configuration profile Assignment pane in the Device restrictions" lightbox="images/4autosetupofvpn.png":::
+   :::image type="content" source="images/4autosetupofvpn.png" alt-text="Screenshot of the devices configuration profile Assignment pane in the Device restrictions." lightbox="images/4autosetupofvpn.png":::
 
 5. In the **Review + Create** page that comes up next, review all the information and then select **Create**.
 The device configuration profile is now assigned to the selected user group.

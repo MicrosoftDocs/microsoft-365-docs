@@ -113,6 +113,21 @@ Containers include SharePoint document libraries, OneDrive accounts, and Exchang
 >
 > Because of the restrictions and irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
+## Validating migrated records
+
+If you're migrating records to SharePoint or OneDrive, you might need to validate these records haven't been altered and retain their immutability status. For example, you're using a migration solution and need to meet the chain of custody requirements for your records. Typical file properties and methods often used for this type of validation, such as file size or file hash, might not be sufficient because SharePoint automatically updates the metadata for a file when it's uploaded.
+
+Instead, to validate your migrated records, you can use the value of the `vti_writevalidationtoken` property, which is a base64-encoded XOR hash of the file before it is modified by SharePoint. Use the following steps:
+
+1. Generate the XOR hash of the original file by using the QuickXorHash algorithm. For more information, see the [QuickXorHash Algorithm code snippet](/onedrive/developer/code-snippets/quickxorhash).
+
+2. Base64-encode the XOR hash. For more information, see the [Base64Encode method documentation](/windows/win32/seccrypto/utilities-base64encode).
+
+3. After the file is migrated, retrieve the value of the `vti_writevalidationtoken` property from the uploaded file.
+
+4. Compare the value generated in step 2 with the value retrieved in step 3. These two values should match. If they do, you've validated that the record hasn't changed.
+
+
 ## Configuration guidance
 
 See [Get started with records management](get-started-with-records-management.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for records management scenarios.
