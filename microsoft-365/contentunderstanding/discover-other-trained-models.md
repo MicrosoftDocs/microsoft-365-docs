@@ -73,6 +73,9 @@ If you're unsure which model is the best fit for your files, you can ask for a r
 
 ## Remove an applied model
 
+> [!NOTE]
+> A model has to be removed from all SharePoint document libraries before it can be [deleted](delete-a-model.md) or [renamed](rename-a-model.md).
+
 To remove an applied model from your document library:
 
 1. On the **Review models and apply new ones** page, on the **Applied** tab, see the models that have been applied to your library.
