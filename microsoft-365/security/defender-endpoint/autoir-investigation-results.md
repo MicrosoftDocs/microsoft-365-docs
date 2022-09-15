@@ -4,7 +4,6 @@ description: During and after an automated investigation, you can view the resul
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
