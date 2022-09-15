@@ -17,6 +17,7 @@ ms.custom:
   - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
+search.appverid: met150
 ---
 
 # Behavioral blocking and containment

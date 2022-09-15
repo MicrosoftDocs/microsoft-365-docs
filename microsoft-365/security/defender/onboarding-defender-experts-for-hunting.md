@@ -18,6 +18,7 @@ ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
+search.appverid: met150
 ---
 
 # Start using Microsoft Defender Experts for Hunting

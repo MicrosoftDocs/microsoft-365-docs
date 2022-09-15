@@ -14,7 +14,9 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
+search.appverid: met150
 ---
+
 # Virus Information Alliance
 
 The Virus Information Alliance (VIA) is a public anti-malware collaboration program for security software providers, security service providers, anti-malware testing organizations, and other organizations involved in fighting cyber crime.

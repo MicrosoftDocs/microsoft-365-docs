@@ -99,7 +99,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
-|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Under review | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2226+ | Rolling out: 4.2203+ | Under review |
+|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2226+ | Rolling out: 4.2203+ | Under review |
 
 **Footnotes:**
 
@@ -189,7 +189,7 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 ## Encryption-based label matching for documents
 
-When a document has been encrypted with administrator-defined permissions, the encryption information includes information about a matching sensitivity label. As a result, when a user opens that document in an Office app, the matching label is displayed in the Office app and persists if the document is saved.
+When a document has been encrypted with administrator-defined permissions, the encryption policy is embedded in the document. This happens independently from labeling. For example, when an Office attachment inherits encryption from an email message, or a user has applied a protection template by using Information Rights Management (IRM) in their Office app. If a sensitivity label in the tenant matches that same encryption policy, Office apps will automatically assign that matching label to the document.
 
 In this scenario, the matching sensitivity label can label an unlabeled document, and replace an existing label that doesn't apply encryption. For example, the **General** label is replaced with **Confidential / All Employees**. Content markings from the matching label aren't automatically applied, unless the document was previously unlabeled and you're using the AIP Add-in.
 
@@ -207,7 +207,7 @@ However, you will also see this behavior with a labeling scenario for email atta
     
     As an auditing event that's displayed in Activity Explorer, this user applied the label, not the email sender.
 
-Encryption-based label matching works only within the tenant, for admin-defined permissions, and the matching sensitivity label must be published to the user who opens the document.
+Encryption-based label matching works only within the tenant, for admin-defined permissions, and the matching sensitivity label must be published to the user who opens the document. The matching label persists if the document is saved.
 
 ## Sensitivity label compatibility
 

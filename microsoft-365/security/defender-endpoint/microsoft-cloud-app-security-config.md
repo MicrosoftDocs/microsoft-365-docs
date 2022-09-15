@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure Microsoft Defender for Cloud Apps in Microsoft Defender for Endpoint
