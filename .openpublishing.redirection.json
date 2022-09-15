@@ -4426,6 +4426,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/machine-reports.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-reports",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/device-health-api.md ",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-api-methods-properties",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-query-language.md",
       "redirect_url": "/microsoft-365/security/defender/advanced-hunting-query-language",
       "redirect_document_id": false

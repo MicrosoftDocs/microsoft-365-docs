@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
 ---
 
