@@ -286,9 +286,8 @@ The templates listed below may be purchased by your organization.
 - Australia Privacy Act
 - Australia Public Record Act
 - Australian Energy Sector Cyber Security Framework (AESCSF)  
-- [Australian Information Security Registered Assessor Program (IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia)
-- Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official
-- Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Protected
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official](/compliance/regulatory/offering-ccsl-irap-australia)
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Protected](/compliance/regulatory/offering-ccsl-irap-australia)
 - [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
 - Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
