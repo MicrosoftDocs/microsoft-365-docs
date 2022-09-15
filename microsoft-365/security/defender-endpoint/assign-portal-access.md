@@ -16,7 +16,6 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
-ms.technology: mde
 ---
 
 # Assign user access to Microsoft Defender Security Center
