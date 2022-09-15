@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: microsoft-365-security
-ms.technology: m365d
 ms.localizationpriority: medium
 search.appverid:
 - MET150
