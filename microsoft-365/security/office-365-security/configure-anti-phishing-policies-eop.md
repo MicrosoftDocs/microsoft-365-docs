@@ -17,6 +17,7 @@ ms.custom:
 description: Admins can learn how to create, modify, and delete the anti-phishing policies that are available in Exchange Online Protection (EOP) organizations with or without Exchange Online mailboxes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Configure anti-phishing policies in EOP

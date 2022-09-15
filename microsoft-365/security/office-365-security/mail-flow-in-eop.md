@@ -17,6 +17,7 @@ description: Admin can learn about the options for configuring mail flow and rou
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Mail flow in EOP

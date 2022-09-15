@@ -22,6 +22,7 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+search.appverid: met150
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 2: Setup

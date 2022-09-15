@@ -17,6 +17,7 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint

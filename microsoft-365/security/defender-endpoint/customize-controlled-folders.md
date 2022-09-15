@@ -15,6 +15,7 @@ ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date:
+search.appverid: met150
 ---
 
 # Customize controlled folder access

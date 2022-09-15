@@ -59,10 +59,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 ## September 2022
 
 - [Device health reporting is now generally available](machine-reports.md). <br/>The device health report provides high-level information about the health and security of your endpoints. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
-- [Troubleshooting mode](enable-troubleshooting-mode.md) is now available for Windows Server 2012 R2 and 2016 machines running the modern, unified solution. During troubleshooting mode, use `Set-MPPreference -DisableTamperProtection $true` to temporarily disable tamper protection on your device and make your necessary configuration changes. Before you use troubleshooting mode, make sure all of the following components are up to date:
-   - Sense version 10.8049.22439.1084 (KB5005292) or later
-   - Microsoft Defender Antivirus - Platform: 4.18.2207.7 (KB4052623) or later 
-   - Microsoft Defender Antivirus - Engine: 1.1.19500.2 (KB2267602) or later
+- [Troubleshooting mode](enable-troubleshooting-mode.md) is now available for more Windows operating systems, including Windows Server 2012 R2 and above. Please refer to the article for more details about the required updates.
 
 ## August 2022
 
@@ -136,7 +133,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 ## August 2021
 
-- (Preview) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) is an endpoint protection solution that includes next-generation protection, attack surface reduction, centralized management and reporting, and APIs. Defender for Endpoint Plan 1 (preview) is a new offering for customers who want to try our endpoint protection capabilities, have Microsoft 365 E3, and do not yet have Microsoft 365 E5. 
+- (Preview) [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) is an endpoint protection solution that includes next-generation protection, attack surface reduction, centralized management and reporting, and APIs. Defender for Endpoint Plan 1 (preview) is a new offering for customers who want to try our endpoint protection capabilities, have Microsoft 365 E3, and do not yet have Microsoft 365 E5. 
 
    To learn more, see [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md). Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities will be known as Defender for Endpoint Plan 2. 
 - (Preview) [Web Content Filtering](web-content-filtering.md)<br>  Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.

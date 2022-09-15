@@ -22,6 +22,7 @@ ms.custom:
 ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+search.appverid: met150
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
