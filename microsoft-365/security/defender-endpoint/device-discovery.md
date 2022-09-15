@@ -19,7 +19,7 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
 ---
 

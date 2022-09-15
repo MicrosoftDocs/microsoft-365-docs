@@ -15,6 +15,7 @@ description: Configure mobile app protection with App Protection policies (APP) 
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
