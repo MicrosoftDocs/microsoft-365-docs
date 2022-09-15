@@ -4,12 +4,13 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
-ms.date: 09/14/2022
 ms.collection:
 - highpri
 - Adm_O365
