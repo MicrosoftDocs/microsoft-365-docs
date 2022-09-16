@@ -83,6 +83,9 @@ Title|String|Title of this remediation activity
 Type|String|Remediation type
 vendorId|String|Related vendor name
 
+> [!NOTE]
+> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
+
 ## See also
 
 - [Get one remediation activity by ID](get-remediation-one-activity.md)

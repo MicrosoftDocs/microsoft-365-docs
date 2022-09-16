@@ -90,6 +90,9 @@ Title|String|Title of this remediation activity|Microsoft Silverlight
 Type|String|Remediation type|Update
 vendorId|String|Related vendor name|Microsoft
 
+> [!NOTE]
+> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
+
 ## Example
 
 ### Request example

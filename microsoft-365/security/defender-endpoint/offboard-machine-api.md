@@ -62,6 +62,8 @@ Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 >
 > - The user needs to 'Global Admin' AD role
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.  
 
 ## HTTP request
 
