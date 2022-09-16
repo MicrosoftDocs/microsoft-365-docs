@@ -3,9 +3,9 @@ title: Migrating servers from Microsoft Monitoring Agent to the unified solution
 description: Learn how to migrate down-level servers from Microsoft Monitoring Agent to the new unified solution step-by-step from this article.
 keywords: migrate server, server, 2012r2, 2016, server migration onboard Microsoft Defender for Endpoint servers, MECM, Microsoft Monitoring Agent, MMA, downlevel server, unified solution, UA
 search.appverid: met150
-ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 author: alekyaj
 ms.author: macapara
