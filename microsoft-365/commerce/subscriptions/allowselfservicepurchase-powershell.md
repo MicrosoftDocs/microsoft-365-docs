@@ -150,7 +150,6 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
 ```
 
-
 ## Troubleshooting
 
 ### Problem
@@ -163,10 +162,10 @@ This may be due to an older version of Transport Layer Security (TLS). To connec
 
 ### Solution
 
-Upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to TLS1.2:
+Upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to allow TLS1.2:
 
 ```powershell
- [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+ [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 ```
 
 To learn more, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).

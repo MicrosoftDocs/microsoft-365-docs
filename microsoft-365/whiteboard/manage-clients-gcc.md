@@ -11,8 +11,7 @@ ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
-description: Learn which clients are currently supported for Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
+description: Learn which clients are currently supported for Whiteboard in GCC environments.
 
 ---
 
@@ -27,7 +26,7 @@ Whiteboard clients are currently being updated to support OneDrive for Business.
 
 The following clients are currently supported in Whiteboard:
 
-- Standalone Whiteboard web application at [https://whiteboard.office365.us](https://whiteboard.office365.us)
+- Standalone Whiteboard web application at [https://whiteboard.office.com](https://whiteboard.office.com)
 - Microsoft Teams meetings, chats, and channels using Teams desktop and web
 - Standalone Whiteboard application for mobile
 - Standalone Whiteboard applications for Windows 10

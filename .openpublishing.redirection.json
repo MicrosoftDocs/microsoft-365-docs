@@ -1,6 +1,41 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/add-users/resend-user-password.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md",
+      "redirect_url": "/microsoft-365/admin/toc.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/strong-password.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/basic-mobility-security/troubleshoot.md",
+      "redirect_url": "/microsoft-365/admin/basic-mobility-security/frequently-asked-questions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view.md",
+      "redirect_url": "/microsoft-365/admin/add-users/add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/basic-mobility-security/get-details-about-managed-devices.md",
+      "redirect_url": "/microsoft-365/admin/basic-mobility-security/manage-device-access-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/what-is-help.md",
+      "redirect_url": "/microsoft-365/admin/get-help-support",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/psd2.md",
       "redirect_url": "https://support.microsoft.com/account-billing/payment-services-directive-2-and-strong-customer-authentication-3527fa95-9c6a-5f6f-d8e6-f27f33aba50e",
       "redirect_document_id": false
@@ -502,8 +537,8 @@
     },
     {
       "source_path": "microsoft-365/business/add-autopilot-devices-and-profile.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
-      "redirect_document_id": true
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
@@ -1023,6 +1058,11 @@
     {
       "source_path": "microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/about-defender-for-office-365-trial.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/try-microsoft-defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -4391,6 +4431,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/machine-reports.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-reports",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/device-health-api.md ",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-api-methods-properties",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-query-language.md",
       "redirect_url": "/microsoft-365/security/defender/advanced-hunting-query-language",
       "redirect_document_id": false
@@ -6877,7 +6927,7 @@
     },
     {
     "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
+    "redirect_url": "/mem/autopilot/windows-autopilot",
     "redirect_document_id": false
     },
     {
@@ -7714,6 +7764,66 @@
       "source_path": "microsoft-365/bookings/get-bookings-app.md",
       "redirect_url": "microsoft-365/bookings/bookings-overview.md",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-managed-devices-setup.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-secure-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-manage-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-autopilot-profile-settings.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/create-and-edit-autopilot-profiles.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/overview.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
+      "redirect_document_id": true
     }
     ]
   }

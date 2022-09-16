@@ -100,7 +100,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
-|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Under review | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2226+ | Rolling out: 4.2203+ | Under review |
+|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Rolling out: 16.61+ <sup>\*</sup>                   | Rolling out: 4.2226+ | Rolling out: 4.2203+ | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
 
 **Footnotes:**
@@ -189,20 +189,27 @@ For a more consistent label experience with meaningful reporting, provide approp
 > [!NOTE]
 > If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
 
+## Encryption-based label matching for documents
 
-## Apply sensitivity labels to files, emails, and attachments
+When a document has been encrypted with administrator-defined permissions, the encryption policy is embedded in the document. This happens independently from labeling. For example, when an Office attachment inherits encryption from an email message, or a user has applied a protection template by using Information Rights Management (IRM) in their Office app. If a sensitivity label in the tenant matches that same encryption policy, Office apps will automatically assign that matching label to the document.
 
-Users can apply just one label at a time for each document or email.
+In this scenario, the matching sensitivity label can label an unlabeled document, and replace an existing label that doesn't apply encryption. For example, the **General** label is replaced with **Confidential / All Employees**. Content markings from the matching label aren't automatically applied, unless the document was previously unlabeled and you're using the AIP Add-in.
 
-When you label an email message that has attachments, the attachments inherit the label only if the label that you apply to the email message applies encryption and the attachment is an Office document isn't already encrypted. Because the inherited label applies encryption, the attachment becomes newly encrypted.
+This scenario helps to move older encryption solutions from protection templates to sensitivity labels that apply encryption.
 
-An attachment doesn't inherit the labels from the email message when the label applied to the email message doesn't apply encryption or the attachment is already encrypted.
+However, you will also see this behavior with a labeling scenario for email attachments when they are opened by the recipient. For example:
 
-Examples of label inheritance, where the label **Confidential** applies encryption and the label **General** doesn't apply encryption:
+1. A user creates an email and attaches an unencrypted Office document, and then applies a label to the email.
+    
+    The label applies encryption with permissions that are set by the administrator, rather than the Do Not Forward or Encrypt-Only options. For example, for the label configuration, the admin selects **Assign permissions now**, and specifies all employees have read access.
 
-- A user creates a new email message and applies the **Confidential** label to this message. They then add a Word document that isn't labeled or encrypted. As a result of inheritance, the document is newly labeled **Confidential** and now has encryption applied from that label.
+2. When the email is sent, the [attachment automatically inherits the encryption, but not the label](encryption-sensitivity-labels.md#email-attachments-for-encrypted-email-messages).
 
-- A user creates a new email message and applies the **Confidential** label to this message. They then add a Word document that is labeled **General** and this file isn't encrypted. As a result of inheritance, the document gets relabeled as **Confidential** and now has encryption applied from that label.
+3. When a recipient in the same tenant opens the encrypted document, a matching label for the admin-defined permissions is automatically displayed for the document, and persists if the document is saved.
+    
+    As an auditing event that's displayed in Activity Explorer, this user applied the label, not the email sender.
+
+Encryption-based label matching works only within the tenant, for admin-defined permissions, and the matching sensitivity label must be published to the user who opens the document. The matching label persists if the document is saved.
 
 ## Sensitivity label compatibility
 

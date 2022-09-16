@@ -8,7 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- highpri 
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
