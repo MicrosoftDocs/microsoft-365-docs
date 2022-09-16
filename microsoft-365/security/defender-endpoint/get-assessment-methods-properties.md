@@ -1,8 +1,8 @@
 ---
 title: Export assessment methods and properties per device
-description: Provides information about the APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
+description: Provides information about the APIs that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
- 
+
 # Export assessment methods and properties per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -80,7 +81,7 @@ deviceName|String|Fully qualified domain name (FQDN) of the device.
 isApplicable|Bool|Indicates whether the configuration or policy is applicable.
 isCompliant|Bool|Indicates whether the configuration or policy is properly configured.
 isExpectedUserImpact|Bool|Indicates whether the user gets affected if the configuration will be applied.
-osPlatform|String|Platform of the operating system running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management (MDVM) supported operating systems and platforms for details.
+osPlatform|String|Platform of the operating system running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../defender-vulnerability-management/tvm-supported-os.md) for details.
 osVersion|String|Specific version of the operating system running on the device.
 rbacGroupName|String|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|String|The role-based access control (RBAC) group ID.
@@ -115,7 +116,7 @@ DiskPaths|Array[string]|Disk evidence that the product is installed on the devic
 EndOfSupportDate|String|The date in which support for this software has or will end.
 EndOfSupportStatus|String|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
 NumberOfWeaknesses|Int|Number of weaknesses on this software on this device.
-OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management (MDVM) supported operating systems and platforms for details.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../defender-vulnerability-management/tvm-supported-os.md) for details.
 RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|String|The role-based access control (RBAC) group ID.
 RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.
@@ -156,7 +157,7 @@ ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExp
 FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.
 Id|String|Unique identifier for the record.
 LastSeenTimestamp|String|Last time the CVE was seen on the device.
-OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management (MDVM) supported operating systems and platforms for details.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../defender-vulnerability-management/tvm-supported-os.md) for details.
 RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|String|The role-based access control (RBAC) group ID.
 RecommendationReference|String|A reference to the recommendation ID related to this software.
@@ -167,7 +168,7 @@ SecurityUpdateAvailable|Boolean|Indicates whether a security update is available
 SoftwareName|String|Name of the software product.
 SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.
-VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability based on the CVSS score.
 
 ### 3.3 Properties (via files)
 
@@ -190,7 +191,7 @@ ExploitabilityLevel|String|The exploitability level of the vulnerability (NoExpl
 FirstSeenTimestamp|String|First time the CVE of the product was seen on the device.
 Id|String|Unique identifier for the record.  
 LastSeenTimestamp|String|Last time the CVE was seen on the device.
-OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management (MDVM) supported operating systems and platforms for details.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../defender-vulnerability-management/tvm-supported-os.md) for details.
 RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 RecommendationReference|String|A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.
@@ -200,7 +201,7 @@ SoftwareName|String|Name of the software product.
 SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.
 Status|String|**New** (for a new vulnerability introduced on a device). **Fixed** (for a vulnerability that doesn't exist anymore on the device, which means it was remediated). **Updated** (for a vulnerability on a device that has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
-VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score.
 
 ## 4. Export non product code software inventory assessment
 
@@ -243,5 +244,5 @@ GeneratedTime|String|The time that the export was generated.
 
 Other related
 
-- [Risk-based Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

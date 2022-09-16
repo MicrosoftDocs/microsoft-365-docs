@@ -1,5 +1,5 @@
 ---
-title: Integrate Microsoft OneDrive LTI with Blackboard
+title: Use Microsoft OneDrive LTI with Blackboard
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -7,15 +7,12 @@ ms.reviewer: amitman
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-f1.keywords:
-- CSH
-ms.collection: M365-modern-desktop
+ms.collection: m365initiative-edu
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability for Blackboard."
+description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability for Blackboard.
 ---
 
-# Integrate Microsoft OneDrive LTI with Blackboard
+# Use Microsoft OneDrive LTI with Blackboard
 
 Integrating Microsoft OneDrive LTI with Blackboard is a two-step process. The first step makes the Microsoft OneDrive LTI available within Blackboard courses, and the second step turns on Microsoft OneDrive for Blackboard.
 

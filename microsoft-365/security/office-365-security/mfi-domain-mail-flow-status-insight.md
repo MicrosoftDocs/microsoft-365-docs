@@ -13,8 +13,9 @@ ms.assetid:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use the Top domain mail flow status insight in the Mail flow dashboard in the Security & Compliance Center to troubleshoot mail flow issues related to their MX records.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Top domain mail flow status insight in the Security & Compliance Center
