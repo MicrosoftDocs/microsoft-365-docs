@@ -1,7 +1,7 @@
 ---
 title: About the Microsoft Bug Bounty Program
 description: If you are a security researcher, you can get a reward for reporting a vulnerability in a Microsoft product, service, or device.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp

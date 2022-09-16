@@ -1061,6 +1061,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/about-defender-for-office-365-trial.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/try-microsoft-defender-for-office-365",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/managed-desktop/service-description/daas.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/",
       "redirect_document_id": false
@@ -7814,6 +7819,11 @@
       "source_path": "microsoft-365/business-premium/create-and-edit-autopilot-profiles.md",
       "redirect_url": "/mem/autopilot/windows-autopilot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/overview.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
+      "redirect_document_id": true
     }
     ]
   }

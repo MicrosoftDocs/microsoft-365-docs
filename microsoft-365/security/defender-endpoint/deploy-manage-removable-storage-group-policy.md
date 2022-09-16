@@ -1,7 +1,8 @@
 ---
 title: Deploy and manage Removable Storage Access Control using group policy
 description: Use group policy to deploy and manage removable storage access control.
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

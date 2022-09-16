@@ -14,6 +14,7 @@ description: Enroll your endpoint devices in Microsoft Intune as part of your Ze
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-overview

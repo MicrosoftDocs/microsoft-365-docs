@@ -1,7 +1,8 @@
 ---
 title: Deploy and manage Removable Storage Access Control using Intune
 description: Use Intune OMA-URI and Intune user interface to deploy and manage removable storage access control. 
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
