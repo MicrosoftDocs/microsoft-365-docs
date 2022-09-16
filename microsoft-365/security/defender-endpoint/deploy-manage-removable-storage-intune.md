@@ -65,6 +65,8 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
    You can set the default access (Deny or Allow) for all Device Control features (`RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`).
 
+   To block a specific removable storage class but allow specific media, you can use ‘`IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId`/`HardwareId`/etc.’  For additional details, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
+
    For example, you can have either a **Deny** or an **Allow** policy for `RemovableMediaDevices`, but not for `CdRomDevices` or `WpdDevices`. You can set **Default Deny** through this policy, then Read/Write/Execute access to `CdRomDevices` or `WpdDevices` will be blocked. If you only want to manage storage, make sure to create an **Allow** policy for your printer; otherwise, this default enforcement will be applied to printers as well.
 
    - In the **Add Row** pane, specify the following settings:
