@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint on macOS
