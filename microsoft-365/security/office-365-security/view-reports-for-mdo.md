@@ -19,8 +19,8 @@ ms.collection:
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View Defender for Office 365 reports in the Microsoft 365 Defender portal
@@ -43,7 +43,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 ### Download reports
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
 :::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="The Email & collaboration reports page in the Microsoft 365 Defender portal" lightbox="../../media/email-collaboration-download-reports.png":::
 
@@ -99,7 +99,7 @@ If you click **Filter**, you can filter both the chart and the details table by 
     - **Inline detonation**: Includes messages that are fully tested before delivery.
     - **Asynchronous detonation**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 In the details table below the chart, the following information is available:
 
@@ -164,7 +164,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
 
@@ -193,7 +193,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
 
@@ -219,7 +219,7 @@ PowerShell reporting cmdlets:
 
 |Report|Topic|
 |---|---|
-|Top senders and recipients|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Top senders and recipients|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Top malware|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Mail traffic|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |Safe Links|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|

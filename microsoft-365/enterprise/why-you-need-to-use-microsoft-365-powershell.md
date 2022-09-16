@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -184,7 +184,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 ```
 
 > [!NOTE]
-> To run this command, you must install the [Skype for Business Online PowerShell Module](https://www.microsoft.com/download/details.aspx?id=39366).
+> To run this command, you must install the [Skype for Business Online PowerShell Module](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector).
 
 The interpretation of this PowerShell command is:
 

@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
-ms.technology: m365d
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -238,11 +237,11 @@ Get started with Defender for Cloud Apps now. Later you can set up more sophisti
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+- [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender-portal.md)
 - [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps
 
 Congratulations! You have quickly implemented some of the most important security protections and your organization is much more secure. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender for Endpoint), data classification and protection capabilities, and securing administrative accounts. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
 
-Also visit Microsoft's new Defender for Cloud on [docs.microsoft.com/security](/security).
+Also visit Microsoft's new Defender for Cloud in [Security documentation](/security).

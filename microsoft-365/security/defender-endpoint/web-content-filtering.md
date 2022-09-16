@@ -2,7 +2,7 @@
 title: Web content filtering
 description: Use web content filtering in Microsoft Defender for Endpoint to track and regulate access to websites based on their content categories.
 keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Web content filtering
@@ -57,6 +58,17 @@ Before trying out this feature, make sure you meet the requirements described in
 ## Data handling
 
 Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third parties, including our data providers.
+
+## Precedence for multiple active policies
+
+Applying multiple different web content filtering policies to the same device will result in the more restrictive policy applying for each category. Consider the following scenario:
+
+- **Policy 1**: blocks categories 1 and 2 and audits the rest
+- **Policy 2**: blocks categories 3 and 4 and audits the rest
+
+The result is that categories 1 - 4 are all blocked.  This is illustrated in the following image.
+
+:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Illustrates precedence of web content filtering policy block mode over audit mode":::
 
 ## Turn on web content filtering
 

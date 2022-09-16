@@ -11,11 +11,13 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: 
 - commerce_purchase
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -26,6 +28,8 @@ ms.date: 08/07/2020
 ---
 
 # Try or buy a Microsoft 365 for business subscription
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. Microsoft manages devices, protects against real-world threats, and provides your organization with the latest in business software. You can sign up for a free trial subscription for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business and try it out for 30 days.
 
@@ -55,7 +59,7 @@ Are you a new customer, and you don't already have an account with Microsoft? Us
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
 2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
 3. On the next page, follow the steps to set up your account.
-4. The sign up process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
+4. The sign-up process may take several minutes to complete. After it's complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 ## Buy a subscription from your free trial
 
@@ -66,7 +70,7 @@ If you want to buy your subscription before your trial is over, use these steps:
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Your products** page, find the subscription that you want to buy.
 3. In the **Licenses** section, select **Purchase subscription**.
-4. Choose either a monthly or annual commitment for your subscription, then select **Checkout**.
+4. Choose a billing frequency for your subscription, then select **Checkout**.
 5. On the next page, verify the subscription, and select **Checkout**.
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
 7. When you\'re finished, select **Accept agreement & place order**.
@@ -105,6 +109,8 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 If you already have a Microsoft 365 for business subscription, you can go through the Microsoft 365 admin center to buy a different subscription for your organization.
 
 ### Watch: Move users to a different subscription
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 

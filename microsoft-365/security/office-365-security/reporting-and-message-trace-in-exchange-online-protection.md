@@ -14,8 +14,9 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom: 
   - seo-marvel-apr2020
 description: In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Reporting and message trace in EOP

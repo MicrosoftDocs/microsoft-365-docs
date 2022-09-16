@@ -8,13 +8,15 @@ manager: laurawi
 ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
 

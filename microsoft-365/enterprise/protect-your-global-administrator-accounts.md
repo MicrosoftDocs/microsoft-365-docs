@@ -6,11 +6,14 @@ manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 search.appverid:
 - MET150
 - MOE150

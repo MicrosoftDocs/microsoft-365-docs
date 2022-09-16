@@ -18,8 +18,6 @@ description: "Learn how to preserve, collect, review, and export content from Mi
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Microsoft Purview eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
 There are six categories of Teams content that you can collect and process using eDiscovery (Premium):
@@ -38,7 +36,11 @@ There are six categories of Teams content that you can collect and process using
 
 ## Where Teams content is stored
 
-A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365. The following table lists Teams content type and where each is stored.
+A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365.
+
+Teams data is stored in Azure Cosmos DB. Teams compliance records captured by the substrate are in Exchange Online and are available for ediscovery. 
+
+The following table lists Teams content type and where each is stored for complaince purpose. The data stored in Exchange online is hidden from clients. eDiscovery never operates against the real Teams message data, which remains in Azure Cosmos DB.
 
 |&nbsp;|Location of chat messages and posts|Location of files and attachments|
 |---|---|---|

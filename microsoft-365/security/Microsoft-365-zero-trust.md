@@ -10,7 +10,6 @@ audience: Admin
 description: Learn how to deploy Microsoft 365 Zero Trust security into your environment to defend against threats and protect sensitive data.
 ms.topic: tutorial
 ms.prod: m365-security
-ms.technology: m365d
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,6 +17,7 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
+- zerotrust-solution
 ---
 
 # Microsoft 365 Zero Trust deployment plan

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -50,7 +50,7 @@ See these articles to configure different types of access reviews:
 
 ## Set up Azure AD entitlement management
 
-Wiht Azure AD entitlement management, you can manage the identity and access lifecycle at scale by automating access request workflows, access assignments, reviews, and expiration.
+With Azure AD entitlement management, you can manage the identity and access lifecycle at scale by automating access request workflows, access assignments, reviews, and expiration.
 
 Your employees need access to various groups, applications, and sites to perform their job. Managing this access can be challenging because requirements change, new applications are added, or users need additional access rights. When you collaborate with other organizations, you may not know who in the other organization needs access to your organization's resources, and outside users won't know what applications, groups, or sites your organization is using.
 

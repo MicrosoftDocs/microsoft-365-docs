@@ -25,7 +25,7 @@ description: Learn how to use the Import service in the Microsoft Purview compli
 
 # Learn about importing your organization's PST files
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).

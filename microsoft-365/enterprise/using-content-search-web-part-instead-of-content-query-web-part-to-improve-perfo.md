@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
@@ -67,6 +67,6 @@ Once you've added a Content Search Web Part, you can refine the search and retur
   
 ## Query building and testing tool
 
-For a tool to build and test complex queries, see the [Search Query Tool](https://sp2013searchtool.codeplex.com/) on Codeplex. 
+For a tool to build and test complex queries, see the [Search Query Tool](https://github.com/pnp/PnP-Tools/tree/master/Solutions/SharePoint.Search.QueryTool#download-the-tool).
   
 

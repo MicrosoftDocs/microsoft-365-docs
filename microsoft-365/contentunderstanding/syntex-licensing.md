@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
@@ -17,7 +17,7 @@ description: "Learn about licensing for SharePoint Syntex"
 
 # Licensing for SharePoint Syntex
 
-To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each SharePoint Syntex user must have a license. If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create, publish, or run document understanding or form processing models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted and site permissions will not be changed.
+To use SharePoint Syntex, each Syntex user must have a license for it. If you cancel your SharePoint Syntex licenses at a future date (or your trial expires), users will no longer be able to create, publish, or run document understanding or form processing models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted and site permissions will not be changed.
  
 > [!NOTE] 
 > SharePoint Syntex is an add-on license and requires users also to have a license for Microsoft 365.
@@ -30,7 +30,10 @@ The following tasks require a [SharePoint Syntex license](https://www.microsoft.
 - Creating a form processing model via the entry point in a library
 - Uploading content to a library where a document understanding or form processing model has been applied
 - Running a document understanding model on-demand
-- Use premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
+- Creating a modern template with content assembly
+- Generating a document from a modern template
+- Use of advanced metadata search
+- Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 
 Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.
  
@@ -47,8 +50,8 @@ If you plan to use a custom Power Platform environment, you must [allocate credi
 Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
   
 ## Additional term store features
- 
-A subscription to SharePoint Syntex features the following additional term store features:
+
+Having one or more SharePoint Syntex licenses in your organization enables the following additional term store features for SharePoint admins:
  
 - SKOS-based term set import
 - Pushing enterprise content types to a hub site, which also adds them to the associated sites and any newly created lists or libraries

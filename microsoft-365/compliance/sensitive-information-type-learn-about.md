@@ -20,8 +20,6 @@ description: "This article gives an overview of sensitive information types and 
 
 # Learn about sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft Purview provides three ways of identifying items so that they can be classified:
 
 - manually by users
@@ -41,6 +39,8 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+
 
 ## Categories of sensitive information types
 
