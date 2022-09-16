@@ -50,6 +50,25 @@ This article is updated frequently to let you know what's new in the latest rele
 </details>
 
 <details>
+   <summary>Aug-2022 (Build: 101.78.13, | Release version: 30.122072.17813.0)</summary>
+
+ &ensp;Released: **August 24, 2022**<br/>
+ &ensp;Published: **August 24, 2022**<br/>
+ &ensp;Build: **101.78.13**<br/>
+ &ensp;Release version: **30.122072.17813.0**<br/>
+ &ensp;Engine version: **1.1.19300.3**<br/>
+ &ensp;Signature version: **1.369.395.0**<br/>
+
+ **What's new**
+
+ - Rolled back due to reliability issues
+
+ </br>
+
+ <br/><br/>
+ </details>
+
+<details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
 
 &ensp;Released: **August 2, 2022**<br/>
