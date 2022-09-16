@@ -16,6 +16,7 @@ manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date:
+search.appverid: met150
 ---
 
 # Enable controlled folder access

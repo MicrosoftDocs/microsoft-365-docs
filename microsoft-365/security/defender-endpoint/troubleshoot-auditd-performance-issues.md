@@ -17,6 +17,7 @@ ms.collection:
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux 

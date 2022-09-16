@@ -15,6 +15,7 @@ description: Microsoft provides help for EOP in a variety of places and methods 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Help and support for EOP

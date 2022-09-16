@@ -6,7 +6,8 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.collection: 
+ms.collection:
+- highpri 
 - SPO_Content
 - M365-collaboration
 - m365solution-securecollab
