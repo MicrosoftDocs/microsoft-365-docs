@@ -16,6 +16,7 @@ ms.collection:
   - M365-security-compliance
 ms.topic: article
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with Group Policy Objects

@@ -14,7 +14,7 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.date:
+search.appverid: met150
 ---
 
 # Turn on network protection

@@ -15,6 +15,7 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List machines API
