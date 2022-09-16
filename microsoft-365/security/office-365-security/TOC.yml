@@ -6,14 +6,12 @@
      items:
        - name: Overview of Office 365 security
          href: microsoft-defender-for-office-365-product-overview.md
-       - name: Defender for Office 365
-         href: defender-for-office-365.md
-       - name: How threat protection works in Defender for Office 365
-         href: protection-stack-microsoft-defender-for-office365.md
        - name: What's new in Defender for Office 365
          href: whats-new-in-defender-for-office-365.md
    - name: Get started
      items:
+     - name: Defender for Office 365 
+       href: defender-for-office-365.md
      - name: How threat protection works in Defender for Office 365
        href: protection-stack-microsoft-defender-for-office365.md
      - name: Secure by default
