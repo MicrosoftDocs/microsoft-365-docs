@@ -74,6 +74,8 @@ sections:
            
           **Optional**
           The add-in is deployed automatically to the assigned users, but they can choose to remove it.
+          >[!NOTE]
+          >Integrated Apps don't have this option available, however, admins can still use the legacy Add-in page to perform this - **Under Settings > Integrated Apps > Add-in.
               
       - question: |
           Can admins update Line-of-Business (LOB) add-ins? 
