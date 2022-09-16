@@ -2,8 +2,8 @@
 title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
 keywords: antivirus, exception, exclusion, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,13 @@ ms.collection:
 - m365initiative-defender-endpoint
 - m365solution-overview
 - m365solution-fpfn
+- highpri
 ms.topic: how-to
-ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: 
 - FPFN
 - admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 # Address false positives/negatives in Microsoft Defender for Endpoint

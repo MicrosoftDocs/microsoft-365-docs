@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 05/17/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management

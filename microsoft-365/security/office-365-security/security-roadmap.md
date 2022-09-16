@@ -17,8 +17,8 @@ search.appverid:
   - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Microsoft 365 environment.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Security roadmap - Top priorities for the first 30 days, 90 days, and beyond

@@ -17,8 +17,8 @@ ms.collection:
   - m365initiative-defender-office365
 description: Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Anti-spam message headers in Microsoft 365

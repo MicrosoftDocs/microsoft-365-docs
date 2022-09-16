@@ -17,8 +17,8 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Microsoft Defender for Office 365 Security Operations Guide
@@ -36,6 +36,8 @@ The rest of this guide describes the required activities for SecOps personnel. T
 A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft 365 Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
 
 The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
+
+For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
 
 ## Daily activities
 
