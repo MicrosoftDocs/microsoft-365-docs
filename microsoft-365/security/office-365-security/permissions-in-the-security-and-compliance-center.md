@@ -18,8 +18,8 @@ search.appverid:
 description: Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Permissions in the Security & Compliance Center

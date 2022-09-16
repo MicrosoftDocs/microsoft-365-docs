@@ -15,6 +15,7 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate an IP address associated with a Microsoft Defender for Endpoint alert

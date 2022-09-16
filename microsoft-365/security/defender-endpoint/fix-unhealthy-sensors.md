@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/23/2020
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Fix unhealthy sensors in Microsoft Defender for Endpoint

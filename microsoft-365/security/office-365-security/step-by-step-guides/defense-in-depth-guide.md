@@ -2,21 +2,21 @@
 title: Getting started with defense in-depth configuration for email security
 description: Step-by-step configuration guidance on how to get security value from Microsoft Defender for Office 365 when you have third party email filtering.
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: MSFTBen
-author: MFSTBen
+ms.author: benharri
+author: MSFTBen 
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+search.appverid: met150
 ---
 
 # Getting the best security value from Microsoft Defender for Office 365 when you have third party email filtering
@@ -96,7 +96,7 @@ The information below will detail how to get the most out of your investment, br
 
 ### Education features
 
-- Attack simulation training allows you to run realistic but benign cyber-attack scenarios in your organization. If you don't already have phishing simulation capabilities from your primary email security provider, Microsoft’s simulated attacks can help you identify and find vulnerable users, policies, and practices. This is important knowledge to have and correct *before* a real attack impacts your organization. Post simulation we assign in product or custom training to educate users about the threats they missed, ultimately reducing your organisation's risk profile. With Attack simulation training we deliver messages directly into the inbox, so the user experience is rich. This also means no security changes such as overrides needed to get simulations delivered correctly.
+- Attack simulation training allows you to run realistic but benign cyber-attack scenarios in your organization. If you don't already have phishing simulation capabilities from your primary email security provider, Microsoft’s simulated attacks can help you identify and find vulnerable users, policies, and practices. This is important knowledge to have and correct *before* a real attack impacts your organization. Post simulation we assign in product or custom training to educate users about the threats they missed, ultimately reducing your organization's risk profile. With Attack simulation training we deliver messages directly into the inbox, so the user experience is rich. This also means no security changes such as overrides needed to get simulations delivered correctly.
 
 **Get started here:** [Get started using Attack simulation](../attack-simulation-training-get-started.md)
 
