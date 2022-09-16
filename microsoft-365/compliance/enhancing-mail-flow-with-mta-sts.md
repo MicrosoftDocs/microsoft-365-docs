@@ -71,11 +71,11 @@ These configuration flows are intended to provide only technical information abo
 
 1. Create an Azure DevOps organization or use an organization that already exists. In this example, an organization called “ContosoCorporation” will be used to host the MTA-STS policy.
 
-   :::image type="content" source="../media/projects-tab.png" alt-text="The screenshot that shows the projects tab" lightbox="../media/projects-tab.png":::
+   :::image type="content" source="../media/projects-tab.png" alt-text="The screenshot that shows the projects tab." lightbox="../media/projects-tab.png":::
 
 2. In **Repos > Files**, clone your repository in any IDE that you prefer. In this example, the repo will be cloned in Visual Studio.
 
-   :::image type="content" source="../media/clone-to-vs-code.png" alt-text="The screenshot that shows an example of cloning to visual studio code" lightbox="../media/clone-to-vs-code.png":::
+   :::image type="content" source="../media/clone-to-vs-code.png" alt-text="The screenshot that shows an example of cloning to visual studio code." lightbox="../media/clone-to-vs-code.png":::
 
 3. Once the repo is cloned, create the following folder path: `home\.well-known\`. Then, create the following files: 
 
@@ -96,7 +96,7 @@ These configuration flows are intended to provide only technical information abo
  
        The file must only contain the content as shown in the following screenshot:
 
-       :::image type="content" source="../media/contents-of-file1.png" alt-text="The screenshot that displays the contents of File1" lightbox="../media/contents-of-file1.png":::
+       :::image type="content" source="../media/contents-of-file1.png" alt-text="The screenshot that displays the contents of File1." lightbox="../media/contents-of-file1.png":::
 
     - File 2: home\index.html
     
@@ -120,7 +120,7 @@ These configuration flows are intended to provide only technical information abo
            
       The file must only contain the content as shown in the following screenshot:
    
-      :::image type="content" source="../media/contents-of-file2.png" alt-text="The screenshot that displays the contents of File2" lightbox="../media/contents-of-file2.png":::
+      :::image type="content" source="../media/contents-of-file2.png" alt-text="The screenshot that displays the contents of File2." lightbox="../media/contents-of-file2.png":::
 
       Once the folder path and files are created, don’t forget to commit the changes and push them into your main branch.
 
@@ -136,7 +136,7 @@ These configuration flows are intended to provide only technical information abo
     - **Build Presets**: Angular
     - **App Location**: /home
    
-    :::image type="content" source="../media/new-app-with-details.png" alt-text="The screenshot that shows a newly created Azure Static Web App with its information" lightbox="../media/new-app-with-details.png":::
+    :::image type="content" source="../media/new-app-with-details.png" alt-text="The screenshot that shows a newly created Azure Static Web App with its information." lightbox="../media/new-app-with-details.png":::
 
 5. Once the Static Web App creation is done and the resource is provisioned, go to **Overview > Manage deployment token**; then copy the token as it will be used in the next step.
 
@@ -195,15 +195,15 @@ These configuration flows are intended to provide only technical information abo
     - **Operating System**: Windows
     - **Plan Type**: [As your choice]
 
-    :::image type="content" source="../media/new-azure-function-app.png" alt-text="The screenshot that shows the configurations of a new Azure Function app" lightbox="../media/new-azure-function-app.png":::
+    :::image type="content" source="../media/new-azure-function-app.png" alt-text="The screenshot that shows the configurations of a new Azure Function app." lightbox="../media/new-azure-function-app.png":::
 
 2. Add your custom domain to the Function App. You'll be required to create a **CNAME** record to validate that the domain belongs to you.
 
-   :::image type="content" source="../media/custom-domain-to-add.png" alt-text="The screenshot that shows the custom domain to be added to the Function App" lightbox="../media/custom-domain-to-add.png":::
+   :::image type="content" source="../media/custom-domain-to-add.png" alt-text="The screenshot that shows the custom domain to be added to the Function App." lightbox="../media/custom-domain-to-add.png":::
 
 3. Bind your mta-sts.[your domain] to the Function App.
 
-   :::image type="content" source="../media/binding-to-function-app.png" alt-text="The screenshot that shows the process of binding the domain to the Function App" lightbox="../media/binding-to-function-app.png":::
+   :::image type="content" source="../media/binding-to-function-app.png" alt-text="The screenshot that shows the process of binding the domain to the Function App." lightbox="../media/binding-to-function-app.png":::
 
 4. In **App File**, add the following extension to the host.json of your Function App to eliminate the routePrefix. This addition is necessary to remove the /api from the function URL.
    
@@ -215,7 +215,7 @@ These configuration flows are intended to provide only technical information abo
     }
     ```
 
-   :::image type="content" source="../media/extension-added-to-app-file.png" alt-text="The screenshot that shows the extension being added to the app file" lightbox="../media/extension-added-to-app-file.png":::
+   :::image type="content" source="../media/extension-added-to-app-file.png" alt-text="The screenshot that shows the extension being added to the app file." lightbox="../media/extension-added-to-app-file.png":::
 
 5. In your Function App, go to **Functions > Create** and configure the following parameters: 
 
@@ -227,21 +227,21 @@ These configuration flows are intended to provide only technical information abo
     - **New Function**: [As your choice]
     - **Authorization level**: Anonymous
 
-    :::image type="content" source="../media/create-function-screen.png" alt-text="The screenshot that shows the Create function page" lightbox="../media/create-function-screen.png":::
+    :::image type="content" source="../media/create-function-screen.png" alt-text="The screenshot that shows the Create function page." lightbox="../media/create-function-screen.png":::
 
 6. Once the function is created, open **Code + Test** and develop in C# a simple async HTTP response that will be your MTA-STS policy. The following example indicates that Exchange Online is expected to receive emails:
 
    > [!NOTE]
    > It's recommended that the policy mode be initially set as ‘testing’. Then, at the end of the configuration and after validating that the policy is working as expected, update the mta-sts.txt file such that the mode is ‘enforce’.
 
-   :::image type="content" source="../media/mta-sts-policy.png" alt-text="The screenshot that shows the mta-sts policy that's developed" lightbox="../media/mta-sts-policy.png":::
+   :::image type="content" source="../media/mta-sts-policy.png" alt-text="The screenshot that shows the mta-sts policy that's developed." lightbox="../media/mta-sts-policy.png":::
 
 7. In **Integration > HTTP (req)**, edit the trigger to the following values:
 
     - **Route Template**: .well-known/mta-sts.txt
     - **Selected HTTP methods**: GET
 
-    :::image type="content" source="../media/edit-trigger-screen.png" alt-text="The screenshot that shows the Edit trigger page" lightbox="../media/edit-trigger-screen.png":::
+    :::image type="content" source="../media/edit-trigger-screen.png" alt-text="The screenshot that shows the Edit trigger page." lightbox="../media/edit-trigger-screen.png":::
 
 8. Validate that your MTA-STS policy is published through: https://mta-sts.[your domain]/.well-known/mta-sts.txt.
 
