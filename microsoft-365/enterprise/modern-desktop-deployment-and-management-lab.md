@@ -9,7 +9,7 @@ ms.reviewer: alainme
 ms.date: 05/11/2022
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365

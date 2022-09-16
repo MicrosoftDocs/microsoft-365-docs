@@ -1,7 +1,7 @@
 ---
-title: Device health report in Microsoft Defender for Endpoint
-description: Use the device health report to track device health, antivirus status and versions, OS platforms, and Windows 10 versions.
-keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
+title: Device health Microsoft Defender Antivirus health report
+description: Use the Microsoft Defender Antivirus report to track antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
+keywords: Microsoft Defender Antivirus report, engine version, intelligence version, and platform versions, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -20,7 +20,7 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-# Device health and compliance report in Microsoft Defender for Endpoint
+# Device health, Microsoft Defender Antivirus health report
 
 **Applies to:**
 
@@ -32,20 +32,14 @@ ms.reviewer: mkaminska
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-The Device Health report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
+The Device Health report provides information about the devices in your organization. The report includes trending information showing the antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
 
 > [!IMPORTANT]
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
-The Device health and compliance dashboard is structured in two tabs:
 
-- The [**Sensor health & OS** tab](#sensor-health--os-tab) provides general operating system information, divided into three cards that display the following device attributes:
-  - [Sensor health card](#sensor-health-card)
-  - [Operating systems and platforms card](#operating-systems-and-platforms-card)
-  - [Windows versions card](#windows-versions-card)
-
-- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus (MDAV):
+- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
   - [Antivirus mode card](#antivirus-mode-card)
   - [Antivirus engine version card](#antivirus-engine-version-card)
   - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
@@ -75,68 +69,6 @@ To Assign these permissions:
 
 For more information about user role management, see [Create and manage roles for role-based access control](user-roles.md).
 
-## Sensor health & OS tab
-
-Sensor health and OS cards report on general operating system health, which includes detection sensor health, up-to-date versus out-of-date operating systems, and Windows 10 versions.
-
->:::image type="content" source="images/device-health-sensor-health-os-tab.png" alt-text="Shows Sensor health and Operating system information." lightbox="images/device-health-sensor-health-os-tab.png":::
-
-Each of the three cards on the **Sensor health** tab has two reporting sections, _Current state_ and _device trends_, presented as graphs:
-
-### Current state graph
-
-In each card, the Current state (referred to in some documentation as _Device summary_) is the top, horizontal bar graph. Current state is a snapshot that shows information collected about devices in your organization, scoped to the current day. This graph represents the distribution of devices across your organization that report status or are detected to be in a specific state.
-
->:::image type="content" source="images/device-health-sensor-health-os-current-state-graph.png" alt-text="Shows the current state graph." lightbox="images/device-health-sensor-health-os-current-state-graph.png":::
-
-### Device trends graph
-
-The lower graph on each of the three cards isn't named, but is commonly known as _device trends_. The device trends graph depicts the collection of devices across your organization, throughout the time span indicated directly above the graph.
-By default, the device trends graph displays device information from the 30-day period, ending in the latest full day. To gain a better perspective about trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, open the filter and select a start day and end day.
-
->:::image type="content" source="images/device-health-sensor-health-os-device-trends-graph.png" alt-text="Shows the Device Health versions trends graph." lightbox="images/device-health-sensor-health-os-device-trends-graph.png":::
-
-### Filtering data
-
-Use the provided filters to include or exclude devices with certain attributes. You can select multiple filters to apply from the device attributes. When applied, filters apply to all three cards in the report.
-
-For example, to show data about Windows 10 devices with Active sensor health state:
-
-1. Under **Filters** > **Sensor health state** > **Active**.
-2. Then select **OS platforms** > **Windows 10**.
-3. Select **Apply**.
-
-### Sensor health card
-
-The Sensor health card displays information about the sensor state on devices. Sensor health provides an aggregate view of devices that are:
-
-- active
-- inactive
-- experiencing impaired communications
-- or where no sensor data is reported
-
-Devices that are either experiencing impaired communications, or devices from which no sensor data is detected could expose your organization to risks, and warrant investigation. Likewise, devices that are inactive for extended periods of time could expose your organization to threats due to out-of-date software. Devices that are inactive for long periods of time also warrant investigation.
-
-> [!NOTE]
->
-> In a small percentage of cases, the numbers and distributions reported when clicking on the horizontal Sensor health bar graph will be out of synch with the values shown in the **Device inventory** page. The disparity in values can occur because the Sensor Health Reports has a different refresh cadence than the Device Inventory page.
-
-### Operating systems and platforms card
-
-This card shows the distribution of operating systems and platforms that exist within your organization.
-_OS systems and platforms_ can give useful insights into whether devices in your organization are running current or outdated operating systems. When new operating systems are introduced, security enhancements are frequently included that improve your organization's posture against security threats.
-
-For example, Secure Boot (introduced in Windows 8) practically eliminated the threat from some of the most harmful types of malware. Improvements in Windows 10 provide PC manufacturers the option to prevent users from disabling Secure Boot. Preventing users from disabling Secure Boot removes almost any chance of malicious rootkits or other low-level malware from infecting the boot process.
-
-Ideally, the “Current state” graph shows that the number of operating systems is weighted in favor of more current OS over older versions. Otherwise, the trends graph indicates that new systems are being adopted and/or older systems are being updated or replaced.
-
-### Windows versions card
-
-The Windows 10 versions card shows the distribution of Windows devices and their versions in your organization.
-In the same way that an upgrade from Windows 8 to Windows 10 improves security in your organization, changing from early releases of Windows to more current versions improves your posture against possible threats.
-
-The Windows version trend graph can help you quickly determine whether your organization is keeping current by updating to the most recent, most secure versions of Windows 10.
-
 ## Microsoft Defender Antivirus health tab  
 
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
@@ -157,7 +89,7 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 - Microsoft Defender Antivirus is disabled
 - Device is a non-Windows (Mac or Linux) device
 - Cloud protection isn't enabled
-- Device does not meet pre-requisites for Antivirus engine or platform version
+- Device doesn't meet pre-requisites for Antivirus engine or platform version
 
 ### Prerequisites
 
@@ -193,9 +125,9 @@ The following table contains a list of terms that are new to Microsoft Defender 
 
 | Column name | Description |
 |:---|:---|
-| Security intel publish time  | Indicates Microsoft’s release date of the security intelligence update version on the device. Devices with a security intelligence publish time greater than 7 days are considered out of date in the reports. |
+| Security intelligence publish time  | Indicates Microsoft’s release date of the security intelligence update version on the device. Devices with a security intelligence publish time greater than seven days are considered out of date in the reports. |
 | Last seen | Indicates date when device last had connection. |
-| Data refresh timestamp  | Indicates when client events were last received for reporting on AV mode, AV engine version,  AV platform version, AV security intelligence version, and scan information. |
+| Data refresh timestamp  | Indicates when client events were last received for reporting on AV mode, AV engine version, AV platform version, AV security intelligence version, and scan information. |
 | Signature refresh time | Indicates when client events were last received for reporting on engine, platform, and signature up to date status. |
 
 Within the flyout: clicking on the name of the device will redirect you to the "Device page" for that device, where you can access detailed reports.
@@ -208,11 +140,11 @@ There are two levels of reports that you can export:
 
 There are two different export csv functionalities through the portal:
 
-- **Top-level export** You can use the top level **Export** button  to gather an all-up Microsoft Defender Antivirus health report (500K limit).
+- **Top-level export** You can use the top level **Export** button  to gather an all-up Microsoft Defender Antivirus health report (500 K limit).
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
-- **Flyout level export** You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100K limit).
+- **Flyout level export** You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100 K limit).
 
 Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
 
@@ -303,7 +235,7 @@ For more information on the current versions and how to update the different Mic
 
 The up-to-date cards show the up-to-date status for **Antivirus engine**, **Antivirus platform**, and **Security intelligence** update versions. There are three possible states: _Up to date_ (‘True’), _out of date_ (‘False’), and _no data available_ (‘Unknown’).
 
-Definitions for  _Up to date_, out of date_, and _no data available_ are provided for each card below.
+Definitions for  _Up to date_, _out of date_, and _no data available_ are provided for each card below.
 
 Microsoft Defender Antivirus makes up-to-date reports and determinations based on the following criteria:
 
@@ -332,17 +264,17 @@ Following are up-to-date definitions for engine and platform:
 
 | The engine/platform on the device is considered: | If: |
 |:---|:---|
-| **up-to-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days and the Engine or Platform version build time is within last 60 days. |
-| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last 7 days and has a security intelligence publish time within last 7 days but Engine or Platform version build time is older than 60 days. |
-| **unknown (no data available)** | the device has not communicated with the report event (‘Signature refresh time’) for more than 7 days, or the security intelligence publish time is greater than 7 days. |
+| **up-to-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last seven days and has a security intelligence publish time within last seven days and the Engine or Platform version build time is within last 60 days. |
+| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last seven days and has a security intelligence publish time within last seven days but Engine or Platform version build time is older than 60 days. |
+| **unknown (no data available)** | the device hasn't communicated with the report event (‘Signature refresh time’) for more than seven days, or the security intelligence publish time is greater than seven days. |
 
 Following are up-to-date definitions for security intelligence:
 
 | The security intelligence update is considered | If: |
 |:---|:---|
-|Up-to date | the security intelligence version on the device was written in the past 7 days and the device has communicated with the report event in past 7 days. |
+|Up-to date | the security intelligence version on the device was written in the past seven days and the device has communicated with the report event in past seven days. |
 
-For more information on these, see:
+For more information, see:
 
 - [Antivirus engine updates card](#antivirus-engine-updates-card)
 - [Security intelligence updates card](#security-intelligence-updates-card)
@@ -352,11 +284,11 @@ For more information on these, see:
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
 
-**The general definition of ‘_Up to date_’** - The engine version on the device is the most recent engine release. The engine is _usually_ released monthly, via Windows Update (WU)). There is a three-day grace period given from the day when Windows Update (WU) is released.
+**The general definition of ‘_Up to date_’** - The engine version on the device is the most recent engine release. The engine is _typically_ released monthly, via Windows Update (WU)). There's a three-day grace period given from the day when Windows Update (WU) is released.
 
 The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received and security intelligence publish time.  
 
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
+| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
 | < 7 days (new) | < 7 days (new) | _Up to date <br/> Out of date <br/> Unknown (whatever client reports)_ |
 | > 7 days (old) | > 7 days (old) | _Unknown_ |
@@ -369,11 +301,11 @@ For information about Manage Microsoft Defender Antivirus update versions, see:�
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
 
-**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release. Platform is usually released monthly, via Windows Update). There is a three-day grace period from the day when WU is released.
+**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release. Platform is typically released monthly, via Windows Update). There's a three-day grace period from the day when WU is released.
 
 The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received and security intelligence publish time.
 
-| Event’s Last Refresh Time (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
+| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
 | < 7 days (new) | < 7 days (new) | _Up to date <br/> Out of date <br/> Unknown (whatever client reports)_ |
 | > 7 days (old) | > 7 days (old) | _Unknown_ |
@@ -390,7 +322,7 @@ This card identifies devices that have security intelligence versions that are u
 
 The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, the security intelligence publish time, and the last status received from client.
 
-| Event’s Last Refresh Time <br/> (aka “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last status received from client | _Reported Status_: |
+| Event’s Last Refresh Time <br/> (Also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last status received from client | _Reported Status_: |
 |:----|:----|:----|:----|
 | >7 days (old) | >7 days (old) | Up to date | _Unknown_ |
 | <7 days (new) | >7 days (old) | Up to date | _Unknown_ |

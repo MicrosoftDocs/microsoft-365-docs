@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Configure and validate exclusions based on file extension and folder location

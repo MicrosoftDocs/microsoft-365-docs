@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Supported Microsoft Defender for Endpoint APIs

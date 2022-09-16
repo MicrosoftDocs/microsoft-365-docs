@@ -16,6 +16,7 @@ ms.collection:
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Minimum requirements for Microsoft Defender for Endpoint
@@ -38,7 +39,7 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 ## Licensing requirements
 
-The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see the overview of [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see the overview of [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
