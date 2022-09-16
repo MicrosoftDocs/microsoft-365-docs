@@ -33,7 +33,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
-3. Click **Save preferences**.
+3. Select **Save preferences**.
 
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 
@@ -64,7 +64,7 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software, which might be unexpected or unwanted.
 
-Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
+Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection isn't configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
 
 ## Restrict correlation to within scoped device groups
 
@@ -182,11 +182,11 @@ Enabling this setting forwards Defender for Endpoint signals to Microsoft Defend
 
 To receive contextual device integration in Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
 
-1. Log in to the [Microsoft Defender for Identity portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
+1. Sign in to the [Microsoft Defender for Identity portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
-2. Click **Create your instance**.
+2. Select **Create your instance**.
 
-3. Toggle the Integration setting to **On** and click **Save**.
+3. Toggle the Integration setting to **On** and select **Save**.
 
 After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
 
