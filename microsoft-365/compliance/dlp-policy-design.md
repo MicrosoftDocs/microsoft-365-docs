@@ -86,6 +86,9 @@ The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP 
 > - The use of the NOT condition in a nested group replaces the **Exceptions** functionality.
 > - You need to create groups in order to use multiple operators as shown in the video.
 
+#### Known limitation
+
+When a policy that uses complex conditions is scoped to Windows devices, you only get policy tips for rules that use the **Contain contains sensitive information** condition.
 
 ## Policy Design Process
 
