@@ -120,8 +120,6 @@ Document download view - When viewing the available documents, you can filter th
 
 This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
 
-:::image type="content" source="../media/stp-filter-by-service.png" alt-text="Filter available documents by cloud service.":::
-
 ### Search
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
