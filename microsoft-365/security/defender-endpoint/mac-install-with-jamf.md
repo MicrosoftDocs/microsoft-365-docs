@@ -15,6 +15,7 @@ ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploying Microsoft Defender for Endpoint on macOS with Jamf Pro

@@ -15,6 +15,7 @@ ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy updates for Microsoft Defender for Endpoint on macOS

@@ -22,6 +22,7 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Common Zero Trust identity and device access policies

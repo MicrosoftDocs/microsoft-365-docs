@@ -18,6 +18,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe

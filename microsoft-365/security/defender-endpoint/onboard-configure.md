@@ -16,6 +16,7 @@ ms.collection:
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard devices and configure Microsoft Defender for Endpoint capabilities

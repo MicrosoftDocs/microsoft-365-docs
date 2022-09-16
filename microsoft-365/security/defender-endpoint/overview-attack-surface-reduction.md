@@ -19,6 +19,7 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
+search.appverid: met150
 ---
 
 # Understand and use attack surface reduction capabilities

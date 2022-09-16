@@ -16,6 +16,7 @@ ms.collection:
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Defender for Endpoint onboarding Windows Server
@@ -23,6 +24,7 @@ ms.subservice: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- Windows Server 2008 R2
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server Semi-Annual Enterprise Channel

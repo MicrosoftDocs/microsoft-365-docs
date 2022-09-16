@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Alerts queue
