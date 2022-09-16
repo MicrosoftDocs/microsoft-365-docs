@@ -2,10 +2,9 @@
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
