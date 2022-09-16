@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Increase compliance to the Microsoft Defender for Endpoint security baseline

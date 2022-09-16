@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
 - M365-security-compliance
 ms.custom: 
 - Ent_Architecture
