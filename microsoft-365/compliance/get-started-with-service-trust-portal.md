@@ -120,8 +120,6 @@ Document download view - When viewing the available documents, you can filter th
 
 This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
 
-:::image type="content" source="../media/stp-filter-by-service.png" alt-text="Filter available documents by cloud service.":::
-
 ### Search
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
@@ -129,8 +127,6 @@ Click the magnifying glass in the upper right-hand corner of the Service Trust P
 :::image type="content" source="../media/stp-search.png" alt-text="Search for documents and filter results.":::
 
 By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, and regions. Click the document name link to download the document.
-=======
-By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
 
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.
