@@ -40,6 +40,8 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Mic
 
     - To view more details about a connection, click the connection name. On the details page, you'll see health information, including errors and warnings (if any), the list of mappings, and more.
 
+      :::image type="content" source="media/shifts-connector-blue-yonder-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-blue-yonder-manage-details.png":::
+
     - To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
 
     - To create a new connection, select **Add connector** at the top of the page to start the wizard.

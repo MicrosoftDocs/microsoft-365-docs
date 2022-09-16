@@ -41,7 +41,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
     :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
 
     - To view more details about a connection, click the connection name. On the details page, you'll see health information, including errors and warnings (if any), the list of mappings, and more.
-    
+
       :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 
     - To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
