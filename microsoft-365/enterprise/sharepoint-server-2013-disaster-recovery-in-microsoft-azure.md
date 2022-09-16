@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 04/17/2018
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150

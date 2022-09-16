@@ -11,11 +11,13 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - commerce_licensing
+- VSBFY23
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA

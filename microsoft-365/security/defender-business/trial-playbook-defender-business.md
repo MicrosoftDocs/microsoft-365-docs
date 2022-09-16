@@ -6,11 +6,12 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.prod: m365-security
-ms.technology: mdb
+ms.date: 09/02/2022
+ms.service: microsoft-365-security
+ms.subservice: mdb
 search.appverid: 
 - MOE150
 - MET150
@@ -22,7 +23,7 @@ ms.custom: trial-playbook
 
 **Welcome to the Defender for Business trial playbook!**
 
-This playbook is a simple guide to help you make the most of your 30-day free trial. Use the recommendations in this article from the Microsoft Defender team to learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and threat and vulnerability management.
+This playbook is a simple guide to help you make the most of your 30-day free trial. Use the recommendations in this article from the Microsoft Defender team to learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
 
 ## What is Defender for Business?
 
@@ -124,14 +125,14 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
 
 In the next 30 days, we recommend you try out your new security capabilities, as described in the following sections:
 
-- [Use your Threat & Vulnerability Management dashboard](#use-the-threat--vulnerability-management-dashboard) 
+- [Use your Microsoft Defender Vulnerability Management dashboard](#use-the-defender-vulnerability-management-dashboard) 
 - [View and respond to detected threats](#view-and-respond-to-detected-threats)
 - [Review security policies](#review-security-policies)
 - [Prepare for ongoing security management](#prepare-for-ongoing-security-management)
 
-### Use the Threat & Vulnerability Management dashboard
+### Use the Defender Vulnerability Management dashboard
 
-Defender for Business includes a Threat & Vulnerability Management dashboard that's designed to save your security team time and effort. [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
+Defender for Business includes a Defender Vulnerability Management dashboard that's designed to save your security team time and effort. [Use your Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
 
 - View your exposure score, which is associated with devices in your organization.
 - View your top security recommendations, such as address impaired communications with devices, turn on firewall protection, or update Microsoft Defender Antivirus definitions.

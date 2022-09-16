@@ -3,10 +3,10 @@ title: Test attack surface reduction (ASR) rules
 description: Provides guidance to test your attack surface reduction (ASR) rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -14,11 +14,13 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
 ms.collection: 
  - M365-security-compliance
+ - m365solution-asr-rules
+ - highpri
 ms.date: 1/18/2022
+search.appverid: met150
 ---
 
 # Test attack surface reduction (ASR) rules

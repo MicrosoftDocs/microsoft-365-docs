@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet

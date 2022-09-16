@@ -19,8 +19,8 @@ description: Learn how to integrate automated investigation and response with a 
 ms.date: 01/29/2021
 ms.custom: 
 - air
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Custom or third-party reporting solutions for Microsoft Defender for Office 365
