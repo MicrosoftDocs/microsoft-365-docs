@@ -65,7 +65,7 @@ You can use this wizard to help simplify the schema file creation process.
     1. **Enter custom delimiters and punctuation for this field**
 
    > [!IMPORTANT]
-   > At least one, but no more than five of your schema fields must be designated as searchable.
+   > At least one, but no more than ten of your schema fields must be designated as searchable.
 
 7. Choose **Save**. Your schema will now be listed and available for use.
 
