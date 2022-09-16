@@ -11,6 +11,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance

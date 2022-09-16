@@ -81,3 +81,5 @@ After modifying `mdatp.service`, save the file and restart the service so the ch
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
+> [!NOTE]
+> To remove any additions you might have made before uninstalling `mdatp`, delete the custom file from `/etc/systemd/system`.
