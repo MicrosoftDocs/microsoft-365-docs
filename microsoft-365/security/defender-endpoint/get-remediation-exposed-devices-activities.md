@@ -63,9 +63,6 @@ computerDnsName|String|Device name|PC-SRV2012R2Foo.UserNameVldNet.local
 osPlatform|String|Device operating system|WindowsServer2012R2
 rbacGroupName|String|Name of the device group this device is associated with|Servers
 
-> [!NOTE]
-> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
-
 ## Example
 
 ### Request example
