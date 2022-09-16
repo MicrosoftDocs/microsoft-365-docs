@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid: GEA150
-ms.collection: 
+ms.collection:
+- highpri  
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - TRN_M365B

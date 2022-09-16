@@ -20,8 +20,8 @@ description: See how automated investigation and response capabilities work in M
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # How automated investigation and response works in Microsoft Defender for Office 365

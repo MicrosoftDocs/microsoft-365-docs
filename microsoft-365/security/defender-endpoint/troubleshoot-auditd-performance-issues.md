@@ -3,7 +3,7 @@ title: Troubleshoot AuditD performance issues with Microsoft Defender for Endpoi
 ms.reviewer:
 description: Describes how to troubleshoot AuditD related performance issues that you might encounter with Microsoft Defender for Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, troubleshoot, AuditD, XMDEClientAnalyzer, installation, deploy, uninstallation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,8 @@ ms.collection:
   - m365-security-compliance
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux 
@@ -68,7 +69,7 @@ Contains general AuditD configuration and will display:
 
 - **Auditctl -l** output  
 
-    - Will show what rules are currently loaded into the kernel (which may be different that what exists on disk in “/etc/auditd/rules.d/mdatp.rules”). 
+    - Will show what rules are currently loaded into the kernel (which may be different that what exists on disk in "/etc/auditd/rules.d/mdatp.rules"). 
     
     - Will show which rules are related to Microsoft Defender for Endpoint. 
     
@@ -110,7 +111,7 @@ AuditD exclusion – support tool syntax help:
 
 Examples: 
 
-If “`/opt/app/bin/app`” writes to “`/opt/app/cfg/logs/1234.log`”, then you can use the support tool to exclude with various options: 
+If "`/opt/app/bin/app`" writes to "`/opt/app/cfg/logs/1234.log`", then you can use the support tool to exclude with various options: 
 
 `-e /opt/app/bin/app`
 

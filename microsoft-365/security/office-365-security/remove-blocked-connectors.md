@@ -14,8 +14,9 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Learn how to remove blocked connectors in Microsoft 365 Defender.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Remove blocked connectors from the Restricted entities portal

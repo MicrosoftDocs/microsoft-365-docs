@@ -121,7 +121,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview compliance portal and select **Alerts**.
 
-2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your on-premises DLP policies.
 
 ### Viewing DLP on-premises scanner in activity explorer and audit log
 
