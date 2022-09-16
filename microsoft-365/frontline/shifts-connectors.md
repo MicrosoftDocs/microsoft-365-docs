@@ -113,8 +113,7 @@ The Teams Shifts connector for UKG Dimensions is a first-party offering that's h
 Frontline managers can:
 
 - Publish shifts and schedules in UKG Dimensions and view them in Shifts.
-- Create, manage, and assign open shifts in UKG Dimensions and view them in Shifts.
-- Assign open shifts that were created in UKG Dimensions and view in Shifts.
+- Create, manage, and assign open shifts in UKG Dimensions and view them in both UKG Dimensions and Shifts.
 - Create, edit, and delete time off in UKG Dimensions and view in Shifts.
 - View and approve schedule requests from workers in both UKG Dimensions and Shifts.
 - Set and update worker availability in UKG Dimensions and view in Shifts.
