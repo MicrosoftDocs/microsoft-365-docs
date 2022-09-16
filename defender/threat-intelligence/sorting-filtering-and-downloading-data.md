@@ -3,6 +3,7 @@ title: 'Sorting, filtering, and downloading data using Microsoft Defender Threat
 description: 'Learn how to sort, filter and download data using Microsoft Defender Threat Intelligence (Defender TI).'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: how-to 
 ms.date: 08/02/2022
@@ -24,7 +25,6 @@ In this how-to article, you’ll learn how to sort and filter data for the follo
 - Trackers
 - Components
 - Host Pairs
-- Hashes
 - Cookies
 - Services
 - DNS
@@ -207,13 +207,6 @@ The following headers are exported as a result of downloading Host Pairs data:
 | **attributeCause**         | The cause of the relationship between the parent and child hostname |
 | **Tags**                   | Custom or system tags associated with the artifact |
 
-The following headers are exported as a result of downloading Hashes data:
-
-| &nbsp;             | &nbsp;                     |
-|--------------------|----------------------------|
-| **source**         | The source who observed the MD5 hash sample |
-| **sample**                  | The MD5 hash |
-| **collection date**         | The collection date captured by the source |
 
 The following headers are exported as a result of downloading Cookies data:
 
@@ -253,7 +246,7 @@ The following headers are exported as a result of downloading threat intelligenc
 
 | &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
-| **type**                | Type of indicator (e.g. ip, certificate, domain, hash_sha256) |
+| **type**                | Type of indicator (e.g. ip, certificate, domain, _sha256) |
 | **value**               | Value of the indicator (e.g. IP address, domain, hostname) |
 | **source**              | Source of indicator (RiskIQ or OSINT) |
 

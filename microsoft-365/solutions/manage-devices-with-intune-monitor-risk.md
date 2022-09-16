@@ -14,6 +14,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - deploy security baselines
 - m365solution-managedevices

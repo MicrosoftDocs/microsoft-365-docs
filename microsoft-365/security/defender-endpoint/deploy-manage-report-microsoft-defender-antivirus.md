@@ -17,6 +17,7 @@ manager: dansimp
 ms.subservice: mde
 ms.collection: 
 - M365-security-compliance
+search.appverid: met150
 ---
 
 # Deploy, manage, and report on Microsoft Defender Antivirus
