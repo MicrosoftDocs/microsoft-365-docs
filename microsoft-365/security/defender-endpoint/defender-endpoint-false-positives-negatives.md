@@ -19,7 +19,6 @@ ms.collection:
 - m365solution-fpfn
 - highpri
 ms.topic: how-to
-ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: 
 - FPFN

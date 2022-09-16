@@ -9,8 +9,7 @@ manager: dansimp
 audience: Admin
 description: Learn how to deploy Microsoft 365 Zero Trust security into your environment to defend against threats and protect sensitive data.
 ms.topic: tutorial
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
