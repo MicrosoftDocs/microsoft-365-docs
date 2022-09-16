@@ -129,8 +129,6 @@ Click the magnifying glass in the upper right-hand corner of the Service Trust P
 :::image type="content" source="../media/stp-search.png" alt-text="Search for documents and filter results.":::
 
 By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, and regions. Click the document name link to download the document.
-=======
-By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
 
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.
