@@ -5,7 +5,8 @@ ms.reviewer:
 manager: dansimp
 ms.author: chrisda
 author: chrisda
-ms.prod: w10
+ms.service: microsoft-365-security
+ms.subservice: mdo
 search.appverid: met150
 ---
 
