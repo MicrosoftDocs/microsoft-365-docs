@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint live response issues

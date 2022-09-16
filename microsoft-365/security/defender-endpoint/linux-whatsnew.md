@@ -15,6 +15,7 @@ ms.collection:
   - m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Linux
@@ -43,6 +44,13 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue.
+
+- When upgrading from mdatp version 101.75.43, run the following commands before attempting to upgrade to version 101.80.97
+
+```
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
 </br>
 
 <br/><br/>
