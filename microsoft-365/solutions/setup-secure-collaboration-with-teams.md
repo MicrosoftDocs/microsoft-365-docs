@@ -5,9 +5,10 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview

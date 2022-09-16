@@ -258,6 +258,7 @@
 ###### [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+##### [Attack surface reduction rules report](attack-surface-reduction-rules-report.md)
 ##### [Troubleshoot attack surface reduction (ASR) rules](troubleshoot-asr-rules.md)
 ##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
@@ -268,7 +269,11 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 #### [Device Control]()
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
-##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Removable Storage Access Control]()
+###### [Overview](device-control-removable-storage-access-control.md)
+###### [Deploy and manage using Intune](deploy-manage-removable-storage-intune.md)
+###### [Deploy and manage using group policy](deploy-manage-removable-storage-group-policy.md)
+###### [Frequently asked questions](device-control-removable-storage-access-control-faq.md)
 ##### [Device Installation](mde-device-control-device-installation.md)
 ##### [Device Control Printer Protection](printer-protection.md)
 ##### [Device Control Reports](device-control-report.md)
@@ -293,7 +298,6 @@
 ###### [Monitor web security](web-protection-monitoring.md)
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
-
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -374,7 +378,9 @@
 ##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics and performance for Microsoft Defender Antivirus
-##### [Device health and compliance reports](machine-reports.md)
+##### [Device health reports](device-health-reports.md)
+###### [Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md)
+###### [Sensor health and OS report](device-health-sensor-health-os.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Collect diagnostic data of Microsoft Defender Antivirus](collect-diagnostic-data.md)
@@ -400,7 +406,6 @@
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](overview-endpoint-detection-response.md)
-#### [Security operations dashboard](security-operations-dashboard.md)
 #### [Submit files](admin-submissions-mde.md)
 #### [Incidents queue]()
 ##### [View and organize the Incidents queue](view-incidents-queue.md)
@@ -416,7 +421,7 @@
 ##### [Investigate files](investigate-files.md)
 ##### [Investigate devices](investigate-machines.md)
 ##### [Investigate an IP address](investigate-ip.md)
-##### [Investigate a domain](investigate-domain.md)
+##### [Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
 
@@ -523,7 +528,11 @@
 ####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
-###### [Automated Investigation]()
+###### [Browser extensions]()
+####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
+####### [Get browser extensions permission information](get-browser-extensions-permission-info.md)
+
+###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)

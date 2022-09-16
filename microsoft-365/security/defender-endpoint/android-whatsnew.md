@@ -2,7 +2,7 @@
 title: What's new in Microsoft Defender for Endpoint on Android
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Android.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android

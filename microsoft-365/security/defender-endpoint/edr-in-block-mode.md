@@ -9,7 +9,7 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
@@ -17,7 +17,8 @@ ms.custom:
   - admindeeplinkDEFENDER
 ms.date: 08/19/2022
 ms.collection: m365-security-compliance
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Endpoint detection and response (EDR) in block mode

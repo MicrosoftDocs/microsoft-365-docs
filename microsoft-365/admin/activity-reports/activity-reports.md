@@ -2,8 +2,8 @@
 title: "Microsoft 365 admin center activity reports"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -33,9 +33,9 @@ You can easily see how people in your business are using Microsoft 365 services.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
 
-## Watch: Act on a usage report in Office 365
+## Watch: Act on a usage report in Microsoft 365
   
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
@@ -142,7 +142,7 @@ Your user list will look like this:
 
 If you want to unhide user-level information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
 
-Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+Reports provide information about your organization's usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 
 Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
 

@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario

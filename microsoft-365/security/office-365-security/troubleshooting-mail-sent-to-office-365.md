@@ -18,8 +18,8 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: This article provides troubleshooting information for issues with sending email to inboxes in Microsoft 365 & best practices for bulk mailing to Microsoft 365 customers.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Troubleshooting mail sent to Microsoft 365

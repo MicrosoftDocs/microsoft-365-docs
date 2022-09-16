@@ -2,7 +2,7 @@
 title: Offboard machine API
 description: Learn how to use an API to offboard a device from Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, collect investigation package
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Offboard machine API

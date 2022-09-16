@@ -2,7 +2,7 @@
 title: Configure advanced features in Microsoft Defender for Endpoint
 description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
 keywords: advanced features, settings, block file, automated investigation, auto resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -134,7 +135,6 @@ Keep tamper protection turned on to prevent unwanted changes to your security so
 
 Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
-- Security operations dashboard
 - Alert queue
 - Device details page
 
