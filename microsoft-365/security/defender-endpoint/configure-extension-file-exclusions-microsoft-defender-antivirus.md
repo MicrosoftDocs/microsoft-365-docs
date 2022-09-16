@@ -2,8 +2,8 @@
 title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -102,7 +103,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** \> **Windows Defender Antivirus** \> **Exclusions**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Exclusions**.
 
 4. Open the **Path Exclusions** setting for editing, and add your exclusions.
 

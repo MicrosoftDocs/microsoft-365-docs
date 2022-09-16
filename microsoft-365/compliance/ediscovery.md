@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 08/25/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -33,7 +33,13 @@ Electronic discovery, or eDiscovery, is the process of identifying and deliverin
 
 Microsoft Purview provides three eDiscovery solutions: Content search, eDiscovery (Standard), and eDiscovery (Premium).
 
+<!--
 ![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
+-->
+
+|Content Search|eDiscovery (Standard)|eDiscovery (Premium)|
+|---------|---------|---------|
+|Search for content </br> Keyword queries and search conditions </br> Export search results </br> Role-based permissions|Search and export </br> Case management </br>Legal hold|Custodian management </br> Legal hold notifications </br> Advanced indexing </br> Review set filtering </br> Tagging </br> Analytics </br> Predictive coding models </br> And more...|
 
 - **Content search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
 
@@ -138,8 +144,8 @@ The following sections show the minimum subscription requirements for Content se
 
 ### eDiscovery (Standard)
 
-- Exchange online Plan 2
-- Sharepoint online Plan 2
+- Exchange Online Plan 2
+- SharePoint Online Plan 2
 - Microsoft 365 E3 subscription
 - Microsoft 365 G3 subscription
 - Microsoft 365 Business Premium subscription

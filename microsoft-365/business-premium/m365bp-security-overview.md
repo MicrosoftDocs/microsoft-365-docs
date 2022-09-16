@@ -7,9 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -31,7 +32,7 @@ Stay vigilant - the safety and reliability of the system relies upon you.
 
 Your objectives are to:
 
-- [Turn on security defaults](m365bp-conditional-access.md) (MFA).
+- [Turn on security defaults (MFA)](m365bp-conditional-access.md).
 - [Protect your admin accounts](m365bp-protect-admin-accounts.md).
 - [Protect against malware and other threats](m365bp-increase-protection.md).
 

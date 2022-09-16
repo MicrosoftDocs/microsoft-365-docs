@@ -2,29 +2,27 @@
 title: Manage Microsoft Defender Antivirus updates and apply baselines
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/04/2022
+ms.date: 09/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
-
-> [!IMPORTANT]
-> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to at least this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. See [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -86,6 +84,69 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
+
+&ensp;Security intelligence update version: **1.373.1647.0**<br/>
+&ensp;Release date: **September 6, 2022**<br/>
+&ensp;Platform: **4.18.2207.7**<br/>
+&ensp;Engine: **1.1.19600.3**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19600.3<br/>
+Security intelligence update version: 1.373.1647.0 <br/>
+
+### What's new
+
+- Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016
+- Fixed remediation issue for custom detection
+- Fixed Race condition related to behavior monitoring
+- Resolved multiple deadlock scenarios in Defender dlls
+- Improved frequency of Windows toasts notification for ASR rules
+
+### Known Issues
+
+- None
+
+<br/><br/>
+</details><details>
+<summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
+
+&ensp;Security intelligence update version: **1.373.219.0**<br/>
+&ensp;Release date: **August 15, 2022**<br/>
+&ensp;Platform: **4.18.2207.5**<br/>
+&ensp;Engine: **1.1.19500.2**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19300.2<br/>
+Security intelligence update version: 1.373.219.0 <br/>
+
+### What's new
+
+- Performance improvement for [hybrid sleep](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) delay when Microsoft Defender Antivirus is active 
+- Fixed client detection behavior related to custom [certificate blocking indicators of compromise](indicator-certificates.md) 
+- Performance improvement for [AntiMalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) caching 
+- Improved detection and remediation for [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) related macros 
+- Improved processing of AMSI exclusions 
+- Fixed deadlock detection in Host Intrusion Prevention System (HIPS) rule processing. (For additional information about HIPS and Defender for Endpoint, see [Migrating from a third-party HIPS to ASR rules](migrating-asr-rules.md).) 
+- Fixed memory leak where `MsMpEng.exe` was consuming private bytes. (If high CPU usage is also an issue, see [High CPU usage due to Microsoft Defender Antivirus](troubleshooting-mode-scenarios.md)) 
+- Fixed deadlock with [behavior monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) 
+- Improved trust validation 
+- Fixed engine crash issue on legacy operating platforms 
+- Performance Analyzer v3 updates: Added top path support, scan skip information, and OnDemand scan support. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md). 
+- Defender performance improvements during file copy operations
+- Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
+- Added fix for Defender WINEVT channels across update/restarts. (See [Windows Event Log](/windows/win32/api/_wes/) for more details about WINEVT.)
+- Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
+- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](troubleshoot-microsoft-defender-antivirus.md) 
+- Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
+
+
+### Known Issues
+
+- Customers deploying platform update 4.18.2207.5 might experience lagging network performance that could impact applications.
+
+<br/><br/>
+</details><details>
 <summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
 
 &ensp;Security intelligence update version: **1.369.88.0**<br/>
@@ -112,7 +173,14 @@ Security intelligence update version: 1.369.88.0<br/>
 No known issues
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>March-2022 *UPDATE* (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
 
 *Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to at least this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it's recommended to reboot machines after applying update.*
@@ -121,7 +189,7 @@ No known issues
 &ensp;Released: **April 22, 2022**<br/>
 &ensp;Platform: **4.18.2203.5**<br/>
 &ensp;Engine: **1.1.19200.5**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19200.5 <br/>
 Security intelligence update version: 1.363.817.0<br/>
@@ -142,7 +210,7 @@ No known issues
 &ensp;Released: **April 7, 2022**<br/>
 &ensp;Platform: **4.18.2203.5**<br/>
 &ensp;Engine: **1.1.19100.5**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19100.5 <br/>
 Security intelligence update version: 1.361.1449.0<br/>
@@ -167,7 +235,7 @@ Security intelligence update version: 1.361.1449.0<br/>
 &ensp;Released: **March 14, 2022**<br/>
 &ensp;Platform: **4.18.2202.4**<br/>
 &ensp;Engine: **1.1.19000.8**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19000.8 <br/>
 Security intelligence update version: 1.361.14.0 <br/>
@@ -189,14 +257,7 @@ Security intelligence update version: 1.361.14.0 <br/>
 No known issues
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
 
 &ensp;Security intelligence update version: **1.357.8.0**<br/>
@@ -747,6 +808,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220901.4</summary>
+
+&ensp;Package version: **20220901.4**<br/>
+&ensp;Platform version: **4.18.2205.7**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.373.1371.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220802.1</summary>
 
 &ensp;Package version: **20220802.1**<br/>

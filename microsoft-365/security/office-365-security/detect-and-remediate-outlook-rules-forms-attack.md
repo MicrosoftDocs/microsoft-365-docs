@@ -17,8 +17,8 @@ search.appverid:
   - MET150
 description: Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 

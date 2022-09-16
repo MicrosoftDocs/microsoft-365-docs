@@ -67,7 +67,7 @@ A timer job periodically runs on the Preservation Hold library. For content that
 
 This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, [versioning](#how-retention-works-with-document-versions) must be turned on for the original site.
   
-Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete a folder if they first move or delete any files in the folder that are subject to retention.
+Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete an unlabeled folder if they first move or delete any files in the folder that are subject to retention.
 
 Users also see an error message if they try to delete a labeled item in any of the following circumstances. The item isn't copied to the Preservation Hold library but remains in the original location:
 
@@ -128,6 +128,8 @@ Because the retention label is not applied to the original file, the labeled fil
 ![How retention works for cloud attachments stored in SharePoint and OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
 
 The copy that's stored in the Preservation Hold library is typically created within an hour from the cloud attachment being shared.
+
+To safeguard against the original file being deleted by users before the copy can be created and labeled, files in locations included in the auto-labeling policy are automatically copied into the Preservation Hold library if they are deleted. These files have a temporary retention period of one day and then follow the standard cleanup process described on this page. When the original file has been deleted, the copy for retaining cloud attachments uses this version of the file. The automatic and temporary retention of deleted files in the Preservation Hold library is unique to auto-labeling policies for cloud attachments.
 
 ## How retention works with OneNote content
 
