@@ -18,13 +18,11 @@ search.appverid:
 description: This solution tells you what the most common cybersecurity attacks might look like in Microsoft 365 and how to respond to them
 ms.custom: 
   - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Security Incident Response
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

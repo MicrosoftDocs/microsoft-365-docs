@@ -1,5 +1,5 @@
 ---
-title: "Sign up for Microsoft Teams as part of a business subscription"
+title: "Sign up for a Microsoft Teams business subscription"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -10,8 +10,10 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 description: "Follow the steps in this article to sign up for Microsoft Teams as part of a business subscription."
 ---
@@ -32,11 +34,11 @@ When seeking to buy Microsoft Teams premium meeting and call functionality, you 
 
 See the table below for sign-up options and the services that will apply to your selection.
 
-||**Option 1 - Microsoft Teams Essentials** |**Option 2 - Microsoft 365 Business Basic** |
-|:-----|:-----|:-----|
-|Available apps and services  <br/> |Sign in with your existing email account (Hotmail, Gmail, Yahoo) using the new Business Standard signup process. Microsoft Teams with cloud storage in OneDrive. Free web versions of Word, Excel, PowerPoint on Office.com to edit files shared in Teams. <br/> **This set of apps is best for very small businesses who need to collaborate effectively over video meetings and chat**. |Microsoft Teams and OneDrive. Microsoft Exchange, SharePoint, Bookings, Planner and Lists. Premium Office web versions of Word, Excel, PowerPoint on Office.com. <br/> **Microsoft 365 Business Basic also lets you access a wide range of web-based services**: <br/> <br/> - New, branded business email accounts with Outlook, shared calendars within your business. <br/> - Bookings, appointment scheduling and Meeting recordings. <br/> - Shared document storage and SharePoint sites. <br/> - Microsoft Planner and Microsoft Lists. <br/> Microsoft 365 Business Basic offer additional services within Teams with Domain Account Sign-up: <br/> - Meeting recordings and anonymous call access in Microsoft Teams. <br/> - Easier document sharing within your business. <br/> - Support for the compliance needs for your industry. <br/> - Access and control over your employees’ use of services. <br/> - The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office. <br/> |
-|Required knowledge  <br/> |Let’s you get started without technical know-how required to run a domain.  <br/> |Requires you to buy a domain, or to own a domain. If you want to use an existing domain, you will need access credentials for the domain and you may need technical knowledge to prove ownership. <br/> |
-|Governing Agreement and data handling  <br/> |Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and **is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller** for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers ("you") to services using this option will not have access to content or data of another invited user ("invited users). <br/> For example, if you are working collaboratively with other invited users on a document stored in their account, they may choose to make those documents inaccessible to you. <br/> Separately, invited users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later. As such, you should evaluate data ownership and intellectual property rights considerations accordingly. <br/> |Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is **best for businesses that need Microsoft to act as a processor** for their data under our [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. **Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Domain Account sign up with Microsoft Business Business Basic**, and sign up under the Domain Account enterprise-level agreement. <br/> |
+|&nbsp;|**Option 1 - Microsoft Teams Essentials** |**Option 2 - Microsoft 365 Business Basic** |
+|---|---|---|
+|Available apps and services|Sign in with your existing email account (Hotmail, Gmail, Yahoo) using the new Business Standard signup process. Microsoft Teams with cloud storage in OneDrive. Free web versions of Word, Excel, PowerPoint on Office.com to edit files shared in Teams. <br/><br/> **This set of apps is best for very small businesses who need to collaborate effectively over video meetings and chat**. |Microsoft Teams and OneDrive. Microsoft Exchange, SharePoint, Bookings, Planner and Lists. Premium Office web versions of Word, Excel, PowerPoint on Office.com. <br/><br/> **Microsoft 365 Business Basic also lets you access a wide range of web-based services**: <ul><li>New, branded business email accounts with Outlook, shared calendars within your business.</li><li>Bookings, appointment scheduling and Meeting recordings.</li><li>Shared document storage and SharePoint sites.</li><li> Microsoft Planner and Microsoft Lists.</li></ul> <br/> Microsoft 365 Business Basic offer additional services within Teams with Domain Account Sign-up: <ul><li>Meeting recordings and anonymous call access in Microsoft Teams.</li><li>Easier document sharing within your business.</li><li>Support for the compliance needs for your industry.</li><li>Access and control over your employees' use of services.</li><li>The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office.</li></ul>|
+|Required knowledge|Let's you get started without technical know-how required to run a domain.|Requires you to buy a domain, or to own a domain. If you want to use an existing domain, you will need access credentials for the domain and you may need technical knowledge to prove ownership.|
+|Governing Agreement and data handling|Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and **is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller** for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers ("you") to services using this option will not have access to content or data of another invited user ("invited users). <br/><br/> For example, if you are working collaboratively with other invited users on a document stored in their account, they may choose to make those documents inaccessible to you. <br/><br> Separately, invited users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later. As such, you should evaluate data ownership and intellectual property rights considerations accordingly.|Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is **best for businesses that need Microsoft to act as a processor** for their data under our [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. **Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Domain Account sign up with Microsoft Business Business Basic**, and sign up under the Domain Account enterprise-level agreement.|
 
 ## Frequently asked questions
 
@@ -58,10 +60,8 @@ If you choose to use a domain you already own, you can use it for your email add
 
 ### How does recurring billing work?
 
-When Recurring billing is on, your subscription will continue to be billed each month (or year, depending on your billing plan) on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn Recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
+When Recurring billing is on, your subscription will continue to be billed each month (or year, depending on your billing plan) on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn Recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
 ### What do I do if I want to change my business name?
 
-
-Contact our small business support experts who can help you change your business name. Learn more at [Get support](../get-help-support.md).
-
+Contact our small business support experts who can help you change your business name. Learn more at [Get support](../get-help-support.md).

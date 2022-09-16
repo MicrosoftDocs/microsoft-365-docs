@@ -2,7 +2,7 @@
 title: Create and manage device tags
 description: Use device tags to group devices to capture context and enable dynamic list creation as part of an incident
 keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create and manage device tags
@@ -51,11 +52,12 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 2. Select **Manage tags** from the row of Response actions.
 
-    :::image type="content" alt-text="Image of manage tags button." source="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="images/manage-tags-option.png":::
+    
 
 3. Type to find or create tags
 
-    :::image type="content" alt-text="Image of adding tags on a device1." source="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="Adding tags on device1" lightbox="images/create-new-tag.png":::
 
 Tags are added to the device view and will also be reflected on the **Devices inventory** view. You can then use the **Tags** filter to see the relevant list of devices.
 
@@ -66,7 +68,7 @@ Tags are added to the device view and will also be reflected on the **Devices in
 
 You can also delete tags from this view.
 
-:::image type="content" alt-text="Image of adding tags on a device2." source="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="images/new-tag-label-display.png":::
 
 ## Add device tags by setting a registry key value
 

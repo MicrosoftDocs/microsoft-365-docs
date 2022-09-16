@@ -6,10 +6,12 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: 
 f1.keywords: NOCSH
+ms.collection: 
+- highpri
 ---
 
 # Microsoft 365 architecture templates and icons

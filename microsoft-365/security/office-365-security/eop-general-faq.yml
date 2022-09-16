@@ -8,19 +8,18 @@ metadata:
   manager: dansimp
   ms.date: 
   audience: ITPro
-  ms.topic: troubleshooting
+  ms.topic: faq
   
   ms.localizationpriority: medium
   ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
   ms.custom: 
     - seo-marvel-apr2020
   description: Get answers to the most common general questions about the Exchange Online Protection (EOP) cloud-hosted email filtering service.
-  ms.technology: mdo
-  ms.prod: m365-security
-    
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 title: EOP general FAQ
 summary: |
-  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
   
   **Applies to**
   -  [Exchange Online Protection standalone](exchange-online-protection-overview.md)

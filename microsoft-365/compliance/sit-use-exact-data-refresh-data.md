@@ -1,5 +1,5 @@
 ---
-title: "Refresh your exact data matchsensitive information source table file"
+title: "Refresh your exact data match sensitive information source table file"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -30,19 +30,19 @@ You can refresh your sensitive information database up to 5 times in every 24 ho
 
 2. Use the procedures in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) to upload your sensitive information table source file.
 
-2. You can use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) procedure. You can schedule tasks using several methods:
+3. You can use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) procedure. You can schedule tasks using several methods:
 
    |Method|What to do|
    |---|---|
-   |Windows PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
-   |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
-   |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
+   |PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
+   |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
+   |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
-### Example PowerShell script for Task Scheduler 
+## Example PowerShell script for Task Scheduler
 
 This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:
 
-#### Schedule hashing and upload in a combined step
+### Schedule hashing and upload in a combined step
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -77,7 +77,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### Schedule hashing and upload as separate steps
+### Schedule hashing and upload as separate steps
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)

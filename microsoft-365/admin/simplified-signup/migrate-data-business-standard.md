@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
 ---
 
-# Migrate data to my Microsoft 365 Business Standard subscription
+# Migrate data to my Microsoft 365 for business subscription
 
 Follow the steps in this article to move your OneDrive, Outlook and Teams data to your Microsoft 365 Business Standard subscription.
 
@@ -25,9 +27,9 @@ Follow the steps in this article to move your OneDrive, Outlook and Teams data t
 
 ## Move files to OneDrive for business
 
-This section describes how to move the files stored in your Microsoft 365 personal account to your Microsoft 365 business account. With both OneDrive accounts synced to your device, you can easily drag and drop the files between two OneDrive folders.
+This section describes how to move the files stored in your Microsoft 365 personal account to your Microsoft 365 business account. With both OneDrive accounts synced to your device, you can easily drag and drop the files between two OneDrive folders.
 
-1. Select the OneDrive white cloud icon in the Windows notification area and make sure your OneDrive personal account is synced to your device.
+1. Select the OneDrive white cloud icon in the Windows notification area and make sure your OneDrive personal account is synced to your device.
 
     :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Screenshot: Select white cloud icon in the Windows notification area":::
 
@@ -38,32 +40,32 @@ This section describes how to move the files stored in your Microsoft 365 person
 
     :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="Screenshot: Select Help & Settings to add an account":::
 
-3. In **Settings**, select **Account** > **Add an account**.
+3. In **Settings**, select **Account** > **Add an account**.
 
-4. When OneDrive Setup starts, enter your new business account, and then select **Sign in**.
+4. When OneDrive Setup starts, enter your new business account, and then select **Sign in**.
 
     :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="Screenshot: Enter your email address on the OneDrive set up page":::
 
     > [!NOTE]
-    > If you haven't set up OneDrive with your current Microsoft 365 personal account before, follow the steps above to set up your personal account on your device and sync your files before moving to the next steps.
+    > If you haven't set up OneDrive with your current Microsoft 365 personal account before, follow the steps above to set up your personal account on your device and sync your files before moving to the next steps.
 
 ### Drag and drop files in OneDrive
 
-With both your Microsoft 365 personal and business accounts synced to your device, you can now move your files from your personal OneDrive folder to your new business OneDrive folder.
+With both your Microsoft 365 personal and business accounts synced to your device, you can now move your files from your personal OneDrive folder to your new business OneDrive folder.
 
 1. In File Explorer, open your synced OneDrive folder that contains your files.
 
-2. Select and drag the files you want from your OneDrive personal folder to your new OneDrive business folder.
+2. Select and drag the files you want from your OneDrive personal folder to your new OneDrive business folder.
 
     :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="Screenshot: Drag and drop files to you new OneDrive for business folder":::
 
-### Notes about moving files from OneDrive personal to OneDrive for work
+### Notes about moving files from OneDrive personal to OneDrive for work
 
 - If you’re moving a large number of files, we recommend that you move files in batches of no more than 100 files each.
 
-- Files you move from OneDrive personal to OneDrive for work are recognized as new files, and as a result, these files don’t retain metadata details such as Modified and Modified By.
+- Files you move from OneDrive personal to OneDrive for work are recognized as new files, and as a result, these files don’t retain metadata details such as Modified and Modified By.
 
-- If you shared files in OneDrive before, you'll need to share these files again in your new OneDrive for work after you move them. Also, once you share these files, we recommend that you delete the original files from OneDrive. This way, people won’t be able to refer to out-of-date copies of files you’d shared with them earlier.
+- If you shared files in OneDrive before, you'll need to share these files again in your new OneDrive for work after you move them. Also, once you share these files, we recommend that you delete the original files from OneDrive. This way, people won’t be able to refer to out-of-date copies of files you’d shared with them earlier.
 
 ## Step: Set up Outlook for email
 

@@ -1,5 +1,5 @@
 ---
-title: "Manage custom sensitive information types in Compliance Center"
+title: "Manage custom sensitive information types in compliance center"
 f1.keywords:
 - NOCSH
 ms.author: chrfox

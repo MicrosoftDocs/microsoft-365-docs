@@ -7,7 +7,7 @@ ms.reviewer: lauris; jaeccles
 ms.date:
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -16,7 +16,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 ms.localizationpriority: medium
-description: Learn how to plan and run a trial pilot program for SharePoint Syntex in your organization.
+description: Learn how to plan, sign up, and run a trial pilot program for SharePoint Syntex in your organization.
 ---
 
 # Run a trial of Microsoft SharePoint Syntex
@@ -39,7 +39,7 @@ You can get the trial version from one of the following sources:
     2. Go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase Services**</a>.
     3. Scroll down to the **Add-Ons** section.
     4. On the SharePoint Syntex tile, select **Details**.
-    5. Select **Get free trial**.
+    5. Select **Start free trial**.
     6. To confirm the trial, follow the remaining wizard steps.
 
 You must be a Microsoft 365 global administrator or billing administrator to activate a trial.
@@ -61,13 +61,13 @@ To successfully plan a SharePoint Syntex trial, consider the following factors:
 
 A test or demo tenant can be used as a “dry run” to walk through the activation steps and administrative controls. But it's probably best to evaluate model building on a production tenant.
 
-To maximize the value of a trial on a production tenant, planning and business engagement are essential. You should engage one or more business areas to identify three-to-six use cases that could potentially be addressed by SharePoint Syntex. These use cases should:
+To maximize the value of a trial on a production tenant, planning and business engagement are essential. You should engage one or more business areas to identify three to six use cases that could potentially be addressed by SharePoint Syntex. These use cases should:
 
-- Include scenarios that could be solved by either the forms processing or document understanding model.
+- Include scenarios that could be solved by either the form processing or document understanding model.
 - Have a clear understanding of the purpose for any extracted metadata; for example, view formatting or automation by using Power Automate. While SharePoint Syntex is focused on classifying documents and extracting metadata, the value to quantify is what this metadata enables.
 - Be based on a defined set of data; for example, specific SharePoint sites or libraries. A common misconception of SharePoint Syntex is that general purpose models can be applied across all organization content. A more accurate view is that models are built to help solve specific business problems in targeted locations.
 
-All of these use cases might not be a good fit for SharePoint Syntex. The goal of a quality trial isn't to prove that SharePoint Syntex will fit all the scenarios. Instead, the trial should help you better understand the value of product.
+All of these use cases might not be a good fit for SharePoint Syntex. The goal of a quality trial isn't to prove that SharePoint Syntex will fit all the scenarios. Instead, the trial should help you better understand the value of the product.
 
 For each of the planned use cases, identify users who are subject matter experts in the related content or process. The creation of SharePoint Syntex models is focused on domain experts in the content, rather than on IT professionals or developer resources.
 
@@ -77,13 +77,13 @@ When you initiate a trial, you need to:
 
 - Assign licenses to the relevant users.
 - Perform [additional setup of SharePoint Syntex](set-up-content-understanding.md).
-  - You might want to [create additional content centers](create-a-content-center.md).
+  - You might want to [create more content centers](create-a-content-center.md).
 
 After the trial is activated, you can create models and process files. See [guidance for model creation](create-a-content-center.md).
 
 ## During a trial
 
-Trial periods are limited, so it's best to focus initially on whether SharePoint Syntex models can classify documents and extract metadata for the defined use cases. After the trial period is over, you can evaluate how the metadata can be exploited.
+Trial periods are limited, so it's best to focus initially on whether SharePoint Syntex models can classify documents and extract metadata for the defined use cases. After the trial period is over, you can evaluate how the metadata can be used.
 
 ## After a trial
 
@@ -91,9 +91,9 @@ Based on the outcome of the trial, you can decide whether to proceed to producti
 
 ### Proceed to production use
 
-To ensure continuity of service, you need to purchase the required number of licenses and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to fully utilize SharePoint Syntex.
+To ensure continuity of service, you need to purchase the required number of [licenses](syntex-licensing.md) and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to fully use SharePoint Syntex.
 
-You might have to estimate your projected use of forms processing and plan for the expected amount of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
+You might have to estimate your projected use of form processing and plan for the expected number of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
 
 ### Don't proceed to production use
 
@@ -102,9 +102,11 @@ If you don't purchase licenses following the trial:
 - You won't be able to create new models.
 - Libraries that were running models will no longer automatically classify files or extract models.
 - Any previously classified files or extracted metadata won't be affected.
-- Content centers and any document-understanding models won't be automatically deleted. These will remain available for use if you decide to purchase licenses in the future.
-- Forms-processing models will be stored in the Dataverse (previously named Common Data Service [CDS]) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
+- Content centers and any document understanding models won't be automatically deleted. These will remain available for use if you decide to purchase licenses in the future.
+- Form processing models will be stored in the Dataverse (previously named Common Data Service (CDS)) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
 
 ## See also
 
-[Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted.md)
+[Get started driving adoption of SharePoint Syntex](adoption-getstarted.md)
+
+[Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)

@@ -1,13 +1,13 @@
 ---
-title: "Microsoft SharePoint Syntex adoption: Get started"
-description: Learn how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
-ms.author: samanro
-author: samanro
+title: Get started driving adoption of Microsoft SharePoint Syntex
+description: Learn how to use and implement SharePoint Syntex in your organization to help you streamline your business processes.
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.date: 
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
@@ -16,13 +16,13 @@ search.appverid:
 ms.localizationpriority:  medium
 ---
 
-# Microsoft SharePoint Syntex adoption: Get started
+# Get started driving adoption of Microsoft SharePoint Syntex
 
 Think of the intelligent content services available in SharePoint Syntex as having three parts:
 
 - **Content understanding:** Create no-code AI models to classify and extract information from content to automatically apply metadata for knowledge discovery and reuse. Learn more about [content understanding](document-understanding-overview.md).
 - **Content processing:** Automate capture, ingestion, and categorization of content and streamline content-centric processes using Power Automate. Learn more about [content processing](form-processing-overview.md).
-- **Content compliance:** Control and manage content to improve security and governance with integration to Microsoft Information Protection.
+- **Content compliance:** Control and manage content to improve security and governance with integration to Microsoft Purview Information Protection.
 
 With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. There are two different ways of understanding your content. The model type you use is based on file format and use case.
 

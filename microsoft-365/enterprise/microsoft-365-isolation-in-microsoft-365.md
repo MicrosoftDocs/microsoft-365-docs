@@ -2,10 +2,10 @@
 title: "Isolation and Access Control in Microsoft 365"
 ms.author: robmazz
 author: robmazz
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150

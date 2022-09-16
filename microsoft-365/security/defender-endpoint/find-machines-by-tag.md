@@ -2,7 +2,7 @@
 title: Find devices by tag API
 description: Find all devices that contain specifc tag
 keywords: apis, supported apis, get, device, find, find device, by tag, tag
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Find devices by tag API

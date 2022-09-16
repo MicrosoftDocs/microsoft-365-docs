@@ -3,7 +3,7 @@
     - name: Overview
       href: move-from-google-workspace-overview.md
     - name: Sign up for Microsoft 365
-      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+      href: ../admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
     - name: Set up Microsoft 365 for Google migration
       href: set-up-microsoft-365-forgoogle.md
     - name: Set up security policies for Windows devices

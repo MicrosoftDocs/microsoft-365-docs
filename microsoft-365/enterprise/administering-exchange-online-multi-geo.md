@@ -6,7 +6,7 @@ author: chrisda
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
@@ -229,6 +229,9 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 6. If you need to migrate additional mailboxes to different satellite geo locations, repeat steps 2 through 4 for each specific location.
 
 ## Multi-geo reporting
+
+> [!NOTE]
+> The multi-geo reporting feature is currently in Preview, is not available in all organizations, and is subject to change.
 
 **Multi-Geo Usage Reports** in the Microsoft 365 admin center displays the user count by geo location. The report displays user distribution for the current month and provides historical data for the past 6 months.
 

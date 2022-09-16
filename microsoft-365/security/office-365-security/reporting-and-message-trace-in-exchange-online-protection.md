@@ -8,19 +8,20 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: overview
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom: 
   - seo-marvel-apr2020
 description: In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Reporting and message trace in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -67,16 +68,11 @@ Tracks specific changes made by admins to your organization. These reports can h
 
 The following table describes when EOP reporting and message trace data is available and for how long.
 
-<br>
-
-****
-
 |Report type|Data available for (look back period)|Latency|
 |---|---|---|
 |Mail protection summary reports|90 days|Message data aggregation is mostly complete within 24-48 hours. Some minor incremental aggregated changes may occur for up to 5 days.|
 |Mail protection detail reports|90 days|For detail data that's less than 7 days old, data should appear within 24 hours but may not be complete until 48 hours. Some minor incremental changes may occur for up to 5 days. <p> To view detail reports for messages that are greater than 7 days old, results may take up to a few hours.|
 |Message trace data|90 days|When you run a message trace for messages that are less than 7 days old, the messages should appear within 5-30 minutes.<p> When you run a message trace for messages that are greater than 7 days old, results may take up to a few hours.|
-|
 
 > [!NOTE]
 > Data availability and latency is the same whether requested via the admin center or remote PowerShell.

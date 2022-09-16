@@ -6,12 +6,12 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: "Learn about work with SharePoint Syntex document understanding model explanations in PowerShell."
 ---
 

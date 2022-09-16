@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -38,7 +38,7 @@ Creating a form processing model involves the following steps:
 
 You can only create a form processing model in SharePoint document libraries for which it's enabled. If form processing is enabled, you're able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need processing enabled on your document library, you must contact your SharePoint administrator.
 
- ![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
+![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## Step 1: Create a form processing model
 
@@ -109,11 +109,9 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 2. After the model is published, select **Use model**, and then select **Create flow**. This creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
 
-    ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow.png)
+    ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. When completed, you'll see the message: *Your flow was successfully created*.
-
-    ![Screenshot in AI Builder showing flow was successfully created.](../media/content-understanding/ai-builder-flow-created.png)
 
 4. Select the **Go to SharePoint** button to see the document library updated with your model.
 
@@ -150,6 +148,9 @@ Two flows are available to process a selected file or batch of files in a librar
     - Specify how you want the order sorted (ascending or descending order).
 
     ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
+    
+> [!NOTE]
+> The **Extract info from an image or PDF file with a form processing model** flow is automatically available for a library with a form processing model associated. The **Extract info from files with a form processing model** flow is a template that must be added to the library if required.
 
 ### Classification Date field
 
@@ -165,7 +166,7 @@ To run the flow:
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
-## See Also
+## See also
   
 [Power Automate documentation](/power-automate/)
 
