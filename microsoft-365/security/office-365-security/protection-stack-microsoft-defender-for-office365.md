@@ -14,7 +14,9 @@ description: Follow the path of an incoming message through the threat filtering
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
+
 # Step-by-step threat protection in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
