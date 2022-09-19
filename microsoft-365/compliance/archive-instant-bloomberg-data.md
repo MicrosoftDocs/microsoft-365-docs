@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Instant Bloomberg data"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
