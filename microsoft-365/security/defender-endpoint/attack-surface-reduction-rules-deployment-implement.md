@@ -5,7 +5,8 @@ keywords: Attack surface reduction rules deployment, ASR deployment, enable asr 
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -19,7 +20,7 @@ ms.collection:
  - M365-security-compliance
  - m365solution-asr-rules
  - highpri
-ms.date: 1/18/2022
+ms.date: 09/19/2022
 search.appverid: met150
 ---
 
