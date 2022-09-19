@@ -266,7 +266,7 @@ if($failedWfmUsers.Count -gt 0){
     write $failedWfmUsers
 }
 
-#Enable sheduling in the group
+#Enable scheduling in the group
 $RequestBody = @{
     Enabled = $true
     TimeZone = "America/Los_Angeles"
