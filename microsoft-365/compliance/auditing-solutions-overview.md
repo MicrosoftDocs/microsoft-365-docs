@@ -178,4 +178,4 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 ## Training
 
-Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft Purview provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft Purview provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft Purview](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).
