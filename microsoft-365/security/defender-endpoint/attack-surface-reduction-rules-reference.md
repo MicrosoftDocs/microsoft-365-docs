@@ -5,7 +5,8 @@ keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion p
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
