@@ -67,7 +67,8 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 - **Entity data**—populates tables with information about users and devices. This data comes from both relatively static data sources and dynamic sources, such as Active Directory entries and event logs. To provide fresh data, tables are updated with any new information every 15 minutes, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
 
 ## Time zone
-Time information in advanced hunting is in the UTC (Universal Time Coordinated) time zone.
+Advanced hunting results are in the [timezone](m365d-time-zone.md) set in Microsoft 365 Defender. 
+
 
 ## Related topics
 - [Choose between guided and advanced hunting modes](advanced-hunting-modes.md)
