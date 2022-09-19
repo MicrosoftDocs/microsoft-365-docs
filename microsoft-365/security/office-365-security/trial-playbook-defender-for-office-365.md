@@ -181,7 +181,7 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
-- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
+- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
 - Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
 ### Step 2: Intermediate steps in auditing mode
