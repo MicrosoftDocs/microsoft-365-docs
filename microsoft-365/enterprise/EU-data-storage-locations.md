@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Data locations for the European Union"
 ms.author: kvice
 author: kelleyvice-msft
@@ -113,5 +113,5 @@ To learn more, see [Frequently Asked Questions](https://blogs.microsoft.com/data
 - [Trusted data protection](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) provides an overview of how Microsoft protects your data when you use Microsoft Online Services and Professional Services. It's also suggested that you consult the [Microsoft Online Services Terms (OST) and Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/product-licensing/products) that govern your use of these services.
 - [Office 365 Data Subject Requests for the GDPR](/compliance/regulatory/gdpr-dsr-Office365) helps you find and act on personal data or personal information to respond to DSRs using Microsoft 365 products, services, and administrative tools.
 - [Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) helps you determine whether your organization needs to draft a DPIA, provides "how to" guidance, includes a customizable DPIA template document, and provides a DPIA Service Elements Matrix for many Microsoft 365 services.
-- [Learn how modules](/learn/paths/audit-safeguard-customer-data/) are designed for people in audit, compliance, risk, and legal roles who seek an overall understanding provide an in-depth review of how Microsoft 365's fundamental security and privacy practices to safeguard customer data.
+- [Learn how modules](/training/paths/audit-safeguard-customer-data/) are designed for people in audit, compliance, risk, and legal roles who seek an overall understanding provide an in-depth review of how Microsoft 365's fundamental security and privacy practices to safeguard customer data.
 - [Microsoft Compliance Offerings](/compliance/regulatory/offering-home) shows how Microsoft 365 services help your organization meet regulatory compliance standards.

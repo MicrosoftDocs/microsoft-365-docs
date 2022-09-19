@@ -22,6 +22,7 @@ ms.custom:
 ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+search.appverid: met150
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
@@ -165,6 +166,5 @@ To learn more, see [Device inventory](machines-view-overview.md).
 
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
-- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).
