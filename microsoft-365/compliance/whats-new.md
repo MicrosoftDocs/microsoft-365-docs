@@ -2,8 +2,8 @@
 title: What's new in Microsoft Purview risk and compliance solutions
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
