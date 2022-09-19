@@ -3,7 +3,7 @@ title: "Common usage scenarios for sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
-author: v-tophillips
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to

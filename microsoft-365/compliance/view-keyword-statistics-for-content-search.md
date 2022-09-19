@@ -2,8 +2,8 @@
 title: "View statistics for eDiscovery search results"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/10/2022
 audience: Admin

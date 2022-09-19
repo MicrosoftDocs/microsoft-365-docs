@@ -2,8 +2,8 @@
 title: "How to identify the hold on an Exchange Online mailbox"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: ITPro

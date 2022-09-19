@@ -2,8 +2,8 @@
 title: "Create and manage eDiscovery (Premium) cases in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
