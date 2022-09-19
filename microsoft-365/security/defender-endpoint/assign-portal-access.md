@@ -7,6 +7,7 @@ search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
@@ -15,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/28/2018
 ---
 
 # Assign user access to Microsoft Defender Security Center

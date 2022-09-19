@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -19,7 +20,7 @@ ms.collection:
  - M365-security-compliance
  - m365solution-asr-rules
  - highpri
-ms.date: 1/18/2022
+ms.date: 09/18/2022
 search.appverid: met150
 ---
 

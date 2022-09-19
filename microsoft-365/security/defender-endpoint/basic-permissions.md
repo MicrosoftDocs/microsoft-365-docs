@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium

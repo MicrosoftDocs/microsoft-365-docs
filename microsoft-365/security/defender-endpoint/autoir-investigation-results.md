@@ -11,6 +11,7 @@ f1.keywords:
 author: dansimp
 ms.author: dansimp
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
