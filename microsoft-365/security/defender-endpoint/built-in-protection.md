@@ -7,9 +7,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 08/31/2022
-ms.prod: m365-security
-ms.technology: mde
+ms.date: 09/19/2022
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
