@@ -48,7 +48,6 @@ The response capabilities give you the power to promptly remediate threats by ac
 
 ## Related topics
 
-- [Security operations dashboard](security-operations-dashboard.md)
 - [Incidents queue](view-incidents-queue.md)
 - [Alerts queue](alerts-queue.md)
 - [Devices list](machines-view-overview.md)

@@ -68,7 +68,7 @@ ID | Category | ER | Addresses | Ports
 67 | Default<BR>Optional<BR>**Notes:** Security and Compliance Center eDiscovery export | No | `*.blob.core.windows.net` | **TCP:** 443
 68 | Default<BR>Optional<BR>**Notes:** Portal and shared: 3rd party office integration. (including CDNs) | No | `firstpartyapps.oaspapps.com, prod.firstpartyapps.oaspapps.com.akadns.net, telemetryservice.firstpartyapps.oaspapps.com, wus-firstpartyapps.oaspapps.com` | **TCP:** 443
 69 | Default<BR>Required | No | `*.aria.microsoft.com, *.events.data.microsoft.com` | **TCP:** 443
-70 | Default<BR>Required | No | `*.o365weve.com, amp.azure.net, appsforoffice.microsoft.com, assets.onestore.ms, auth.gfx.ms, c1.microsoft.com, dgps.support.microsoft.com, docs.microsoft.com, msdn.microsoft.com, platform.linkedin.com, prod.msocdn.com, shellprod.msocdn.com, support.microsoft.com, technet.microsoft.com` | **TCP:** 443
+70 | Default<BR>Required | No | `*.o365weve.com, amp.azure.net, appsforoffice.microsoft.com, assets.onestore.ms, auth.gfx.ms, c1.microsoft.com, dgps.support.microsoft.com, learn.microsoft.com, msdn.microsoft.com, platform.linkedin.com, prod.msocdn.com, shellprod.msocdn.com, support.microsoft.com, technet.microsoft.com` | **TCP:** 443
 71 | Default<BR>Required | No | `*.office365.com` | **TCP:** 443, 80
 72 | Default<BR>Optional<BR>**Notes:** Azure Rights Management (RMS) with Office 2010 clients | No | `*.cloudapp.net` | **TCP:** 443
 73 | Default<BR>Required | No | `*.aadrm.com, *.azurerms.com, *.informationprotection.azure.com, ecn.dev.virtualearth.net, informationprotection.hosting.portal.azure.net` | **TCP:** 443
