@@ -2,8 +2,8 @@
 title: "Decision based on the results in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin

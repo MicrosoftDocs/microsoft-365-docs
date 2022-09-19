@@ -2,8 +2,8 @@
 title: "Disable reports when you export Content Search results"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 12/30/2016
 audience: Admin
