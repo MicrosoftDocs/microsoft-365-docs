@@ -3,6 +3,7 @@ title: 'Microsoft Defender Threat Intelligence (Defender TI) Data Sets'
 description: 'In this overview article, learn about Microsoft Defender Threat Intelligence (Defender TI)’s data sets feature.'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
