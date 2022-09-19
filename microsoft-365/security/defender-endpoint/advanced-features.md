@@ -135,7 +135,6 @@ Keep tamper protection turned on to prevent unwanted changes to your security so
 
 Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
-- Security operations dashboard
 - Alert queue
 - Device details page
 
