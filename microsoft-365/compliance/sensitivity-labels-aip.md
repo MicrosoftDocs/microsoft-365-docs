@@ -73,7 +73,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
-- Visibility of labels on the status bar (will be replaced with the sensitivity bar on the window title)
+- Visibility of labels on the status bar (Will be replaced with the sensitivity bar on the window title.)
 - Support for account switching
 - Users can't disable labeling
 
