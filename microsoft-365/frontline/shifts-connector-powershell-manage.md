@@ -133,14 +133,14 @@ ForEach ($mapping in $mappings){
 [Set up your environment](#set-up-your-environment) (if you haven't already), and then run the following script.
 
 ```powershell
-#Update connector instance and mapping script
-Write-Host "Update connector instance and mapping"
+#Update Connector instance and mapping script
+Write-Host "Update Connector instance and mapping"
 Start-Sleep 1
 
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -157,7 +157,7 @@ $blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
 
 #List connection instances available
 Write-Host "Listing connection instances available"
-$InstanceList = Get-CsTeamsShiftsConnectionInstance
+$InstanceList = Get-CsTeamsShiftsConnectionInstance | where {$_.ConnectorId -match $BlueYonderId}
 write $InstanceList
 
 #Prompt for the WFM username and password
@@ -166,7 +166,6 @@ $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
 #Get the instance ID
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
 $InstanceId = Read-Host -Prompt 'Input the instance ID that you want to update'
 $Instance = Get-CsTeamsShiftsConnectionInstance -ConnectorInstanceId $InstanceId
 $Etag = $Instance.etag
@@ -206,8 +205,33 @@ if ($decision -eq 1) {
     break
 }
 }
-$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance -ConnectorId $BlueYonderId -ConnectorInstanceId $InstanceId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -DesignatedActorId $teamsUserId -EnabledConnectorScenario $updatedConnectorScenario -EnabledWfiScenario $updatedWfiScenario -Name $UpdatedInstanceName -SyncFrequencyInMin $syncFreq -IfMatch $Etag -ConnectorAdminEmail $AdminEmailList
-
+$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance `
+    -ConnectorInstanceId $InstanceId `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $updatedConnectorScenario `
+    -EnabledWfiScenario $updatedWfiScenario `
+    -Name $UpdatedInstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -Property @{
+        AdminApiUrl = $adminApiUrl
+        SiteManagerUrl = $siteManagerUrl
+        EssApiUrl = $essApiUrl
+        RetailWebApiUrl = $retailWebApiUrl
+        CookieAuthUrl = $cookieAuthUrl
+        FederatedAuthUrl = $federatedAuthUrl
+        LoginUserName = $WfmUserName
+        LoginPwd = $plainPwd
+    }) `
+    -IfMatch $Etag
+if ($UpdatedInstance.Id -ne $null) {
+    Write-Host "Success"
+}
+else {
+    throw "Update instance failed"
+}
 #Get a list of the mappings
 Write-Host "Listing mappings"
 $TeamMaps = Get-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId
@@ -246,17 +270,20 @@ Use this script to disable sync for a connection. Keep in mind this script doesn
 ```powershell
 #Disable sync script
 Write-Host "Disable sync"
+Start-Sleep 1
+
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
 
 #List connection instances available
+$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
 Write-Host "Listing connection instances"
-$InstanceList = Get-CsTeamsShiftsConnectionInstance
+$InstanceList = Get-CsTeamsShiftsConnectionInstance | where {$_.ConnectorId -match $BlueYonderId}
 write $InstanceList
 
 #Get an instance
@@ -286,7 +313,27 @@ $WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
-$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance -ConnectorId $BlueYonderId -ConnectorInstanceId $InstanceId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -DesignatedActorId $DesignatedActorId -EnabledConnectorScenario @() -EnabledWfiScenario @() -Name $UpdatedInstanceName -SyncFrequencyInMin 60 -IfMatch $Etag -ConnectorAdminEmail $ConnectorAdminEmail
+$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance `
+    -ConnectorInstanceId $InstanceId `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $ConnectorAdminEmail `
+    -DesignatedActorId $DesignatedActorId `
+    -EnabledConnectorScenario @() `
+    -EnabledWfiScenario @() `
+    -Name $UpdatedInstanceName `
+    -SyncFrequencyInMin 10 `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        }) `
+    -IfMatch $Etag
 
 if ($UpdatedInstance.Id -ne $null) {
     Write-Host "Success"
