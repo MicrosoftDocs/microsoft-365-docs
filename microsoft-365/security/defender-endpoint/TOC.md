@@ -408,7 +408,6 @@
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](overview-endpoint-detection-response.md)
-#### [Security operations dashboard](security-operations-dashboard.md)
 #### [Submit files](admin-submissions-mde.md)
 #### [Incidents queue]()
 ##### [View and organize the Incidents queue](view-incidents-queue.md)
