@@ -30,9 +30,9 @@ highlightedContent:
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
     # Card
-    - title: Build your skills with Microsoft Learn
+    - title: Build your skills with Microsoft Learn training
       itemType: learn
-      url: /learn/m365/
+      url: /training/m365/
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
       url: business-video/index.yml

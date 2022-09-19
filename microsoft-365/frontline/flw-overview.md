@@ -86,8 +86,8 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Introduction to security in Microsoft 365](/learn/modules/security-in-m365/) |Enterprise, F1, F3 |
-|[Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/) |Enterprise, F1, F3 |
+|[Introduction to security in Microsoft 365](/training/modules/security-in-m365/) |Enterprise, F1, F3 |
+|[Introduction to compliance tools in Microsoft 365](/training/modules/compliance-in-m365/) |Enterprise, F1, F3 |
 |[Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks) |Enterprise, available as an add-on for F3 |
 
 ### Simplify deployment and management at scale
