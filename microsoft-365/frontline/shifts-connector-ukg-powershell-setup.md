@@ -115,16 +115,16 @@ To learn more, see:
 ### Set up a connection and create new teams to map
 
 ```powershell
-#Map WFM instances to teams script
+#Map WFM sites to teams script
 Write-Host "Map WFM sites to teams"
 Start-Sleep 1
 
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+	Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
-    throw
+	throw
 }
 
 #Connect to MS Graph
@@ -132,37 +132,51 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 #List connector types available (comment out if not implemented for preview)
 Write-Host "Listing connector types available"
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
+$UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
 write $connectors
-$blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
-$enabledConnectorScenario = $blueYonder.SupportedScenario
-$wfiSupportedScenario = $blueYonder.wfiSupportedScenario
+$Ukg = $connectors | where {$_.Id -match $UkgId}
+$enabledConnectorScenario = $Ukg.SupportedScenario
+$wfiSupportedScenario = $Ukg.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
+$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
 #Test connection settings
 Write-Host "Testing connection settings"
 $InstanceName = Read-Host -Prompt 'Input connection instance name'
-$adminApiUrl = Read-Host -Prompt 'Input admin api url'
-$cookieAuthUrl = Read-Host -Prompt 'Input cookie authorization url'
-$essApiUrl = Read-Host -Prompt 'Input ess api url'
-$federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
-$retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
-$siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
+$apiUrl = Read-Host -Prompt 'Input connector api url'
+$ssoUrl = Read-Host -Prompt 'Input connector sso url'
+$clientId = Read-Host -Prompt 'Input connector client id'
+$AppKey = Read-Host -Prompt 'Input your app key' -AsSecureString
+$plainKey =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($AppKey))
+$ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
+$plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
+
+$testResult = Test-CsTeamsShiftsConnectionValidate `
+	-Name $InstanceName `
+	-ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+        -Property @{
+            apiUrl = $apiUrl
+			ssoUrl = $ssoUrl
+			appKey = $plainKey
+			clientId = $clientId
+			clientSecret = $plainSecret
+			LoginUserName = $WfmUserName
+			LoginPwd = $plainPwd
+        })
 if ($testResult.Code -ne $NULL) {
-    write $testResult
-    throw "Validation failed, conflict found"
+	write $testResult
+	throw "Validation failed, conflict found"
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create a connection instance (includes WFM site team ids)
+#Create an instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Enter your Microsoft 365's user name"
+$designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
 $designator = Get-MgUser -UserId $designatorName
 $teamsUserId = $designator.Id
@@ -181,24 +195,41 @@ if ($decision -eq 1) {
     break
 }
 }
-$InstanceResponse = New-CsTeamsShiftsConnectionInstance -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -DesignatedActorId $teamsUserId -EnabledConnectorScenario $enabledConnectorScenario -EnabledWfiScenario $wfiSupportedScenario -SyncFrequencyInMin $syncFreq -ConnectorAdminEmail $AdminEmailList
+$InstanceResponse = New-CsTeamsShiftsConnectionInstance `
+	-ConnectorId $UkgId `
+	-ConnectorAdminEmail $AdminEmailList `
+	-DesignatedActorId $teamsUserId `
+	-EnabledConnectorScenario $enabledConnectorScenario `
+	-EnabledWfiScenario $wfiSupportedScenario `
+	-Name $InstanceName `
+	-SyncFrequencyInMin $syncFreq `
+	-ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+		-Property @{
+			apiUrl = $apiUrl
+			ssoUrl = $ssoUrl
+			appKey = $plainKey
+			clientId = $clientId
+			clientSecret = $plainSecret
+			LoginUserName = $WfmUserName
+			LoginPwd = $plainPwd
+		})
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
-    Write-Host "Success"
+	Write-Host "Suceess"
 } else {
-    throw "Connector instance creation failed"
+	throw "Connector instance creation failed"
 }
 
-#Retrieve the list of WFM instances
+#Retrieve the list of sites
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
-if ($WfmTeamIds -ne $NULL && $WfmTeamIds.Count -gt 0){
-    [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
+	[System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
-    throw "The WfmTeamId list is null or empty"
+	throw "The WfmTeamId list is null or empty"
 }
 
 #Retrieve the list of WFM users and their roles
@@ -217,25 +248,25 @@ $Team = New-Team -DisplayName $teamsTeamName -Visibility "Public" -Owner $teamsU
 Write-Host "Success"
 $TeamsTeamId=$Team.GroupId
 
-#Add users to the Team for Shifts
+#add users to the Team for Shifts
 Write-Host "Adding users to Teams team"
 $currentUser = Read-Host -Prompt "Input the current user's user name or ID"
 Add-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 $failedWfmUsers=@()
 foreach ($user in $WFMUsers) {
-    try {
-    $userEmail = $user.Name + "@" +$domain
-    Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
-    } catch {
-        $failedWfmUsers+=$user
-    }
+	try {
+	$userEmail = $user.Name + "@" +$domain
+	Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
+	} catch {
+		$failedWfmUsers+=$user
+	}
 }
 if($failedWfmUsers.Count -gt 0){
-    Write-Host "There are WFM users not existed in Teams tenant:"
-    write $failedWfmUsers
+	Write-Host "There are WFM users not existed in Teams tenant:"
+	write $failedWfmUsers
 }
 
-#Enable scheduling in the group
+#Enable sheduling in the group
 $RequestBody = @{
     Enabled = $true
     TimeZone = "America/Los_Angeles"
@@ -243,7 +274,7 @@ $RequestBody = @{
 $teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
 $Schedule = Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
 
-#Create a mapping of the new team to the WFM instance
+#Create a mapping of the new team to the site
 Write-Host "Create a mapping of the new team to the site"
 $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
 $teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
@@ -258,8 +289,6 @@ if ($decision -eq 1) {
     break
 }
 }
-
-#The Teams admin was set as an owner directly when creating a new team, removing it from owners
 Remove-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 Disconnect-MgGraph
 ```
@@ -274,9 +303,9 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+	Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
-    throw
+	throw
 }
 
 #Connect to MS Graph
@@ -284,41 +313,55 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 #List connector types available (comment out if not implemented for preview)
 Write-Host "Listing connector types available"
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
+$UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
 write $connectors
-$blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
-$enabledConnectorScenario = $blueYonder.SupportedScenario
-$wfiSupportedScenario = $blueYonder.wfiSupportedScenario
+$ukg = $connectors | where {$_.Id -match $UkgId}
+$enabledConnectorScenario = $ukg.SupportedScenario
+$wfiSupportedScenario = $ukg.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
+$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
 #Test connection settings
 Write-Host "Testing connection settings"
 $InstanceName = Read-Host -Prompt 'Input connection instance name'
-$adminApiUrl = Read-Host -Prompt 'Input admin api url'
-$cookieAuthUrl = Read-Host -Prompt 'Input cookie authorization url'
-$essApiUrl = Read-Host -Prompt 'Input ess api url'
-$federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
-$retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
-$siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
+$apiUrl = Read-Host -Prompt 'Input connector api url'
+$ssoUrl = Read-Host -Prompt 'Input connector sso url'
+$clientId = Read-Host -Prompt 'Input connector client id'
+$AppKey = Read-Host -Prompt 'Input your app key' -AsSecureString
+$plainKey =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($AppKey))
+$ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
+$plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
+
+$testResult = Test-CsTeamsShiftsConnectionValidate `
+	-Name $InstanceName `
+	-ConnectorId $UkgId `
+	-ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+		-Property @{
+			apiUrl = $apiUrl
+			ssoUrl = $ssoUrl
+			appKey = $plainKey
+			clientId = $clientId
+			clientSecret = $plainSecret
+			LoginUserName = $WfmUserName
+			LoginPwd = $plainPwd
+		})
 if ($testResult.Code -ne $NULL) {
-    write $testResult
-    throw "Validation failed, conflict found"
+	write $testResult
+	throw "Validation failed, conflict found"
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create a connection instance (includes WFM site team ids)
+#Create an instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Enter your Microsoft 365 user name"
+$designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
 $designator = Get-MgUser -UserId $designatorName
 $teamsUserId = $designator.Id
-$syncFreq = Read-Host -Prompt "Input sync frequency in minutes. Value should be equal to or more than 10."
+$syncFreq = Read-Host -Prompt "Input sync frequency. Value should be equal to or more than 10."
 
 #Read admin email list
 [psobject[]]$AdminEmailList = @()
@@ -333,25 +376,42 @@ if ($decision -eq 1) {
     break
 }
 }
-$InstanceResponse = New-CsTeamsShiftsConnectionInstance -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -DesignatedActorId $teamsUserId -EnabledConnectorScenario $enabledConnectorScenario -EnabledWfiScenario $wfiSupportedScenario -SyncFrequencyInMin $syncFreq -ConnectorAdminEmail AdminEmailList
 
+$InstanceResponse = New-CsTeamsShiftsConnectionInstance `
+	-ConnectorId $UkgId `
+	-ConnectorAdminEmail $AdminEmailList `
+	-DesignatedActorId $teamsUserId `
+	-EnabledConnectorScenario $enabledConnectorScenario `
+	-EnabledWfiScenario $wfiSupportedScenario `
+	-Name $InstanceName `
+	-SyncFrequencyInMin $syncFreq `
+	-ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+		-Property @{
+			apiUrl = $apiUrl
+			ssoUrl = $ssoUrl
+			appKey = $plainKey
+			clientId = $clientId
+			clientSecret = $plainSecret
+			LoginUserName = $WfmUserName
+			LoginPwd = $plainPwd
+		})
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
-    Write-Host "Success"
+	Write-Host "Success"
 } else {
-    throw "Connector instance creation failed"
+	throw "Connector instance creation failed"
 }
 
-#Retrieve the list of WFM instances
+#Retrieve the list of sites
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
-if ($WfmTeamIds -ne $NULL && $WfmTeamIds.Count -gt 0){
-    [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
+	[System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
-    throw "The WfmTeamId list is null or empty"
+	throw "The WfmTeamId list is null or empty"
 }
 
 #Retrieve the list of WFM users and their roles
@@ -374,12 +434,11 @@ $Delimiters = ",", ".", ":", ";", " ", "`t"
 $entityType = $entityTypeString -Split {$Delimiters -contains $_}
 $entityType = $entityType.Trim()
 $entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
-Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $$teamsUserId
+Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $teamsUserId
 
-#Create a mapping of the new team to the WFM instance
+#Create a mapping of the new team to the site
 Write-Host "Create a mapping of the existing team to the site"
-$TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
-$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
+$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone "America/Los_Angeles" -WfmTeamId $WfmTeamId
 Write-Host "Success"
 
 
