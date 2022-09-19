@@ -4,7 +4,7 @@ description: Attack surface reduction rules can help prevent exploits from using
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro

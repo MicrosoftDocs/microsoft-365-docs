@@ -5,7 +5,7 @@ keywords: Attack surface reduction rules deployment, ASR deployment, enable asr 
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro

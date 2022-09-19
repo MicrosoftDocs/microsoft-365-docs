@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1

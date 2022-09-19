@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 08/22/2022
