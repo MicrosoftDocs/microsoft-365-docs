@@ -70,7 +70,7 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 ## Time zone
 ### Queries
 Advanced hunting data uses the UTC (Universal Time Coordinated) timezone. 
-![Screenshot of custom time range](../../media/custom-time-range.png)
+![Screenshot of custom time range.](../../media/custom-time-range.png)
 
 Queries should be created in UTC.
 
