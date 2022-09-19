@@ -6,6 +6,7 @@ keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, micro
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
