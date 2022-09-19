@@ -84,7 +84,7 @@ Use the following table to understand when to use form processing and when to us
 
 ## See also
 
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
 
 [Document understanding overview](document-understanding-overview.md)
 
