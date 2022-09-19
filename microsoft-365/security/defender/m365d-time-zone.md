@@ -35,8 +35,9 @@ search.appverid:
 Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 Defender portal:
 - Incidents
 - Automated investigation and remediation, including the action center
+- Advanced hunting results
 
 To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.
 
 > [!NOTE]
-> Advanced hunting keeps the date and time information of query results in UTC regardless of the time zone setting. 
+> The custom time range filter in advanced hunting remains in UTC regardless of the time zone setting. 
