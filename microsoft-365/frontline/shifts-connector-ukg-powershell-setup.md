@@ -122,9 +122,9 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-	Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
-	throw
+    throw
 }
 
 #Connect to MS Graph
@@ -156,21 +156,21 @@ $ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
 $plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
 
 $testResult = Test-CsTeamsShiftsConnectionValidate `
-	-Name $InstanceName `
-	-ConnectorId $UkgId `
+    -Name $InstanceName `
+    -ConnectorId $UkgId `
     -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
             apiUrl = $apiUrl
-			ssoUrl = $ssoUrl
-			appKey = $plainKey
-			clientId = $clientId
-			clientSecret = $plainSecret
-			LoginUserName = $WfmUserName
-			LoginPwd = $plainPwd
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
         })
 if ($testResult.Code -ne $NULL) {
-	write $testResult
-	throw "Validation failed, conflict found"
+    write $testResult
+    throw "Validation failed, conflict found"
 }
 Write-Host "Test complete, no conflicts found"
 
@@ -196,29 +196,29 @@ if ($decision -eq 1) {
 }
 }
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-	-ConnectorId $UkgId `
-	-ConnectorAdminEmail $AdminEmailList `
-	-DesignatedActorId $teamsUserId `
-	-EnabledConnectorScenario $enabledConnectorScenario `
-	-EnabledWfiScenario $wfiSupportedScenario `
-	-Name $InstanceName `
-	-SyncFrequencyInMin $syncFreq `
-	-ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
-		-Property @{
-			apiUrl = $apiUrl
-			ssoUrl = $ssoUrl
-			appKey = $plainKey
-			clientId = $clientId
-			clientSecret = $plainSecret
-			LoginUserName = $WfmUserName
-			LoginPwd = $plainPwd
-		})
+    -ConnectorId $UkgId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $enabledConnectorScenario `
+    -EnabledWfiScenario $wfiSupportedScenario `
+    -Name $InstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+        -Property @{
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
-	Write-Host "Suceess"
+    Write-Host "Success"
 } else {
-	throw "Connector instance creation failed"
+    throw "Connector instance creation failed"
 }
 
 #Retrieve the list of instances
@@ -226,10 +226,10 @@ Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
 if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
-	[System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+    [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
-	throw "The WfmTeamId list is null or empty"
+    throw "The WfmTeamId list is null or empty"
 }
 
 #Retrieve the list of WFM users and their roles
@@ -254,16 +254,16 @@ $currentUser = Read-Host -Prompt "Input the current user's user name or ID"
 Add-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 $failedWfmUsers=@()
 foreach ($user in $WFMUsers) {
-	try {
-	$userEmail = $user.Name + "@" +$domain
-	Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
-	} catch {
-		$failedWfmUsers+=$user
-	}
+    try {
+    $userEmail = $user.Name + "@" +$domain
+    Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
+    } catch {
+        $failedWfmUsers+=$user
+    }
 }
 if($failedWfmUsers.Count -gt 0){
-	Write-Host "There are WFM users not existed in Teams tenant:"
-	write $failedWfmUsers
+    Write-Host "There are WFM users not existed in Teams tenant:"
+    write $failedWfmUsers
 }
 
 #Enable sheduling in the group
@@ -303,9 +303,9 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-	Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
-	throw
+    throw
 }
 
 #Connect to MS Graph
@@ -337,21 +337,21 @@ $ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
 $plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
 
 $testResult = Test-CsTeamsShiftsConnectionValidate `
-	-Name $InstanceName `
-	-ConnectorId $UkgId `
-	-ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
-		-Property @{
-			apiUrl = $apiUrl
-			ssoUrl = $ssoUrl
-			appKey = $plainKey
-			clientId = $clientId
-			clientSecret = $plainSecret
-			LoginUserName = $WfmUserName
-			LoginPwd = $plainPwd
-		})
+    -Name $InstanceName `
+    -ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+        -Property @{
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 if ($testResult.Code -ne $NULL) {
-	write $testResult
-	throw "Validation failed, conflict found"
+    write $testResult
+    throw "Validation failed, conflict found"
 }
 Write-Host "Test complete, no conflicts found"
 
@@ -378,29 +378,29 @@ if ($decision -eq 1) {
 }
 
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-	-ConnectorId $UkgId `
-	-ConnectorAdminEmail $AdminEmailList `
-	-DesignatedActorId $teamsUserId `
-	-EnabledConnectorScenario $enabledConnectorScenario `
-	-EnabledWfiScenario $wfiSupportedScenario `
-	-Name $InstanceName `
-	-SyncFrequencyInMin $syncFreq `
-	-ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
-		-Property @{
-			apiUrl = $apiUrl
-			ssoUrl = $ssoUrl
-			appKey = $plainKey
-			clientId = $clientId
-			clientSecret = $plainSecret
-			LoginUserName = $WfmUserName
-			LoginPwd = $plainPwd
-		})
+    -ConnectorId $UkgId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $enabledConnectorScenario `
+    -EnabledWfiScenario $wfiSupportedScenario `
+    -Name $InstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+        -Property @{
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
-	Write-Host "Success"
+    Write-Host "Success"
 } else {
-	throw "Connector instance creation failed"
+    throw "Connector instance creation failed"
 }
 
 #Retrieve the list of sites
@@ -408,10 +408,10 @@ Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
 if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
-	[System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+    [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
-	throw "The WfmTeamId list is null or empty"
+    throw "The WfmTeamId list is null or empty"
 }
 
 #Retrieve the list of WFM users and their roles
