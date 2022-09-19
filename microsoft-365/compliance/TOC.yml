@@ -1028,6 +1028,8 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
+        - name: Increase classifier accuracy
+          href: data-classification-increase-accuracy.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
