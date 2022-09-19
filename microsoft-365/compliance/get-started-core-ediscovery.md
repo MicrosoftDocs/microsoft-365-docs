@@ -42,7 +42,8 @@ Licensing for eDiscovery (Standard) requires the appropriate organization subscr
 
    OR
    
-  - Microsoft 365 Business Premium (Exchange only)
+  - Microsoft 365 Business Premium (Exchange only) license
+  
 
    OR
 
