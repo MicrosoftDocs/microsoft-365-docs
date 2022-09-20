@@ -50,7 +50,6 @@ This deployment collection provides information about the following aspects of M
 
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
-> [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules, test MDE ASR rules, Enable MDE ASR rules, maintain ASR rules." lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
