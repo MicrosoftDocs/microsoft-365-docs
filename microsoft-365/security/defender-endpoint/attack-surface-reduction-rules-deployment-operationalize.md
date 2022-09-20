@@ -25,7 +25,7 @@ search.appverid: met150
 
 # Operationalize attack surface reduction (ASR) rules
 
-After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities. Activities include 
+After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities. Activities include: 
 
 ## Managing ASR rules false positives
 
