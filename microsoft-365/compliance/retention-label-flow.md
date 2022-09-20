@@ -71,6 +71,8 @@ When the retention period expires, your configured flow runs.
 
 ## Limitations for this scenario
 
+- Not currently supported for [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo).
+
 - You must create a new retention label to run a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
 - By default, the account that creates the Power Automate flow must be the same account that creates the retention label. If you share the flow in Power Automate, the people you share it with can also select the flow when they create a retention label.
@@ -108,7 +110,9 @@ A retention label can be configured for only one Power Automate flow, but the sa
 
 ## When the flow is triggered
 
-Just as it can take up to 7 days to automatically apply a retention label or display it so you can apply it, so you should allow up to 7 days after the expiration period expires before the Power Automate flow is triggered. The initiation of the flow can then take a few hours. For the Microsoft 365 compliance actions of delete and relabel, then allow a further 7 days for these actions to complete.
+Just as it can take up to 7 days to automatically apply a retention label or display it so you can apply it, so you should allow up to 7 days after the expiration period expires before the Power Automate flow is triggered. The initiation of the flow can then take a few hours. 
+
+For the Microsoft 365 compliance actions of delete and relabel, then allow up to 7 days for these actions to complete. Specific for Exchange and the Microsoft 365 compliance actions of delete, allow up to 14 days.
 
 Both the flow itself and the Microsoft 365 compliance actions in the flow are queued so that if there are any network or service delays, the flow and actions are automatically retried.
 
