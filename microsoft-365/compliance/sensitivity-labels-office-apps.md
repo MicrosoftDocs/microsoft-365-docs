@@ -449,7 +449,7 @@ For end user documentation, see [Create protected PDFs from Office files](https:
 
 Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions.
 
-For supported apps, sensitivity labels are now displayed in a sensitivity bar, displaying next to the file name on the top window bar.  For example:
+For the supported apps, sensitivity labels are now displayed in a sensitivity bar, next to the file name on the top window bar. For example:
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
 
