@@ -2,8 +2,8 @@
 title: "Limits for Content search and eDiscovery (Standard) in the compliance center"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article

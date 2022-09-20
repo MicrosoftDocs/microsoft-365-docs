@@ -2,8 +2,8 @@
 title: "Acknowledge a hold notification"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin

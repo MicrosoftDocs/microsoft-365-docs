@@ -2,8 +2,8 @@
 title: "Manage custodians in an eDiscovery (Premium) case"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin

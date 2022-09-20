@@ -2,8 +2,8 @@
 title: "Overview of the eDiscovery (Premium) solution in Microsoft Purview"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/08/2022
 audience: Admin
