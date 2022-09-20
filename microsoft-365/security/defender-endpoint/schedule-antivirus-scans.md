@@ -86,7 +86,7 @@ As a performance optimization, Microsoft Defender Antivirus will skip running sc
 
 By default, if a qualified quick scan was run within the last seven days, a new quick scan won't be initiated. A quick scan is considered qualified if it occurs after the last [Security Intelligence Update](manage-updates-baselines-microsoft-defender-antivirus.md) was installed, Real-Time Protection was not disabled during that period, and if the machine was rebooted.  
 
-This optimization also doesn't apply to the following conditions: 
+This optimization doesn't apply to the following conditions: 
 
 - If Microsoft Defender for Endpoint is [Managed](configuration-management-reference-microsoft-defender-antivirus.md)  
 
@@ -100,8 +100,6 @@ This optimization also doesn't apply to the following conditions:
 
 This optimization applies to machines running Windows 10 Anniversary Update (version 1607) and all subsequent Windows releases, as well as Windows Server 2016 (version 1607) and subsequent Windows Server releases, but doesn't apply to Core Server installations.  
 
-Learn more about [scheduled scans.](schedule-antivirus-scans.md). 
- 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
