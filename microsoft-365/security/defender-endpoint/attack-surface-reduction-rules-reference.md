@@ -1,7 +1,7 @@
 ---
 title: Attack surface reduction rules reference
 description: Lists details about Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules on a per-rule basis.
-keywords: Microsoft Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
+keywords: Microsoft Attack surface reduction rules, Microsoft Defender for Endpoint ASR rules, ASR rules list, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
