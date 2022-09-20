@@ -129,11 +129,8 @@ Select **Setting > Max allowed device threat level** in **Device Conditions** an
 
 6. Select **Continue** to log into the managed application. 
 
-## Configure Web protection
-
-
-## Configure privacy controls 
-Defender for Endpoint on Android allows IT Administrators to configure web protection. Web protection is available within the [Microsoft Endpoint Manager Admin center](endpoint.microsoft.com).
+## Configure Web protection 
+Defender for Endpoint on Android allows IT Administrators to configure web protection. Web protection is available within the [Microsoft Endpoint Manager Admin center](https://endpoint.microsoft.com).
 
 Web protection helps to secure devices against web threats and protect users from phishing attacks. Note that anti-phishing and custom indicators (URL and IP addresses) are supported as part of web protection. Web content filtering is currently not supported on mobile platforms.
 
