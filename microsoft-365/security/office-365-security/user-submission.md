@@ -15,7 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.custom:
-description: Admins can learn how identify a custom mailbox (also known as a user submissions mailbox) to collect spam and phishing messages that are reported by users. Other settings complete the reporting experience for users when they report messages.
+description: Admins can learn how to identify a custom mailbox (also known as a user submissions mailbox) to collect spam and phishing messages that are reported by users. Other settings complete the reporting experience for users when they report messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
@@ -149,14 +149,14 @@ When **Microsoft Outlook Report Message button** is **On** ![Toggle on.](../../m
 
   - **Specify Office 365 email address to use as sender**: Select this setting and enter the email address in the box that appears.
   
-  - **Customize notifications**: Click this link to customize the email notification that's sent after an admin reviews and marks a reported messages.
+  - **Customize notifications**: Click this link to customize the email notification that's sent after an admin reviews and marks a reported message.
 
     On the **Customize confirmation message** flyout that appears, configure the following settings:
 
     - **Phishing**, **Junk** and **No threats found** tabs: In the **Review result text** on some, none, or all of the tabs, enter the custom text to use.
     - **Footer** tab: The following options are available:
       - **Footer text**: Enter the custom message footer text to use.
-      - **Display company logo**: Before select this option, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
+      - **Display company logo**: Before you select this option, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
 
   When you're finished on the **Customize confirmation message** flyout, click **Confirm**.
 
