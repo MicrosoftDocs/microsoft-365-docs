@@ -2,8 +2,8 @@
 title: "Get started with eDiscovery (Standard) cases in Microsoft Purview"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -39,6 +39,11 @@ Licensing for eDiscovery (Standard) requires the appropriate organization subscr
    OR
    
   - A Microsoft 365 E3 or Office 365 E3 license or higher
+
+   OR
+   
+  - Microsoft 365 Business Premium (Exchange only) license
+  
 
    OR
 

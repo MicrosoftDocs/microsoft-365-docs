@@ -9,7 +9,7 @@ manager: dansimp
 audience: Admin
 description: Learn how to deploy Microsoft 365 Zero Trust security into your environment to defend against threats and protect sensitive data.
 ms.topic: tutorial
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -47,7 +47,7 @@ In the illustration:
 For more information about Zero Trust, see Microsoft's [_**Zero Trust Guidance Center**_](/security/zero-trust).
 
 <!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
 

@@ -5,7 +5,8 @@ keywords: action, center, autoir, automated, investigation, response, remediatio
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium

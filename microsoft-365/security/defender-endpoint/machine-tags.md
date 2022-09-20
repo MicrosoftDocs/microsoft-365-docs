@@ -43,7 +43,6 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 1. Select the device that you want to manage tags on. You can select or search for a device from any of the following views:
 
-   - **Security operations dashboard** - Select the device name from the Top devices with active alerts section.
    - **Alerts queue** - Select the device name beside the device icon from the alerts queue.
    - **Devices inventory** - Select the device name from the list of devices.
    - **Search box** - Select Device from the drop-down menu and enter the device name.

@@ -2,8 +2,8 @@
 title: "Clone a Content Search"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 4/26/2017
 audience: Admin
@@ -34,7 +34,7 @@ Why clone Content Searches?
 
 ## Script information
 
-- You need to install the Exchange Online V2 module. For instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+- You need to install the Exchange Online PowerShell module. For instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 - You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the script described in this topic.
 
