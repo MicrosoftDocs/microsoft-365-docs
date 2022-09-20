@@ -83,6 +83,7 @@ Built-in protection is a set of default settings. You aren't required to keep th
 
 ## See also
 
+- [Tech Community blog: Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478)
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 - [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security)
 - [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure)
