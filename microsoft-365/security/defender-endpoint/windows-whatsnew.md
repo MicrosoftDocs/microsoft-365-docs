@@ -37,24 +37,24 @@ ms.subservice: mde
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
-|Windows 11 21H2 (Cobalt) (Windows 11 SV 21H2)     | [KB 5016691](https://support.microsoft.com/en-us/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)        | 10.8210.22000.918        |
+|Windows 11 21H2 (Cobalt)<br> (Windows 11 SV 21H2)     | [KB 5016691](https://support.microsoft.com/en-us/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)        | 10.8210.22000.918        |
 |Server 2022 (Iron)     | [KB 5016693](https://support.microsoft.com/en-us/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)        |10.8210.20348.946         |
-|Windows 10 20H2/21H1/21H2 Windows Server 20H2  (Vibranium)     | [KB 5016688](https://support.microsoft.com/en-us/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)       | 10.8210.19041.1949        |
+|Windows 10 20H2/21H1/21H2<br> Windows Server 20H2  (Vibranium)     | [KB 5016688](https://support.microsoft.com/en-us/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)       | 10.8210.19041.1949        |
 |Windows Server 2019 (RS5)   |[KB 5016690](https://support.microsoft.com/en-us/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)       |10.8210.17763.3346         |
 
 **What's new**
 
-- Enhance DLP with ability to protect Password Protected and Encrypted files and not label files.
-- Enhance DLP with support for context data in audit telemetry (short evidence).
-- Extended MDE client authentication support for VDI devices.
-- Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks.
-- Update to the Contain feature that will enable more devices to perform the Contain action and block discovered devices when these are contained.
-- Expanded Troubleshoot mode to several desktop and server versions . Pls check here for the complete list of supported OSes. For more details pls check here : Get started with troubleshooting mode in Microsoft Defender for Endpoint
-- Enhanced security of MDE customer from advanced attacks.
-- Enhanced investigation and detection experience.
-- Incident Response for DART.
-- Enhanced Live Response support: session creation latency improvements when using proxies , undo Remediation manual command, support OneDrive share in FindFile action, isolation improvements and stability
-- Enhanced MDE Attach support: ability to sync the device on demand instead of waiting for specific cadence, security hardening against attacks.
+- Enhanced DLP with ability to protect password protected and encrypted files and not label files
+- Enhanced DLP with support for context data in audit telemetry (short evidence)
+- Extended MDE client authentication support for VDI devices
+- Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks
+- Contain feature updated giving ability to more devices to perform the Contain action and block discovered devices when these are contained
+- Expanded the Troubleshoot mode to several desktop and server versions. For a complete list of supported OS versions and more information, refer: [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
+- Enhanced security for MDE customers from advanced attacks
+- Enhanced investigation and detection experience
+- Incident Response for DART
+- Enhanced Live Response support provided: improved session creation latency when using proxies, undo Remediation manual command, supported OneDrive share in FindFile action, improved isolation and stability
+- Enhanced MDE Attach support provided: ability to sync the device on demand instead of waiting for specific cadence, security hardening against attacks
 
 <br/>
 </details>

@@ -7,6 +7,7 @@
 ### [Minimum requirements](minimum-requirements.md)
 ### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
+### [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -51,7 +52,6 @@
 
 ## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
-### [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
 ### [Onboarding Windows Client](onboard-windows-client.md)
 #### [Onboard Windows Client using Intune](configure-endpoints-mdm.md)
 #### [Onboard Windows Client using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
