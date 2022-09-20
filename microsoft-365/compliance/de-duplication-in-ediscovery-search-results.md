@@ -2,8 +2,8 @@
 title: "De-duplication in eDiscovery search results"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
