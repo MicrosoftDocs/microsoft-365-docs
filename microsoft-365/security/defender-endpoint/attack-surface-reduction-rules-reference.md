@@ -77,7 +77,7 @@ The following table lists the supported operating systems for rules that are cur
 
 (<a id="fn1">3</a>) Version and build number apply only to Windows&nbsp;10.
 
-## Supported configuration management systems
+## ASR rules supported configuration management systems
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
