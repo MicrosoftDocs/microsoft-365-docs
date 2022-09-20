@@ -239,6 +239,12 @@
                   href: m365-dr-workload-purview.md
                 - name: Other Services
                   href: m365-dr-workload-other.md
+            - name: Legacy Move Program
+              href: m365-dr-legacy-move-program.md
+            - name: Data Maps Page 
+              href: o365-data-locations.md
+            - name: EU Page 
+              href: eu-data-storage-locations.md 
     - name: Move to a new Microsoft 365 datacenter geo
       href: moving-data-to-new-datacenter-geos.md
       items: 
