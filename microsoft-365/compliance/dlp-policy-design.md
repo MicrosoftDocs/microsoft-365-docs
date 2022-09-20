@@ -80,7 +80,6 @@ The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP 
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE55JXJ]
-sdf
 
 > [!IMPORTANT]
 > - The use of the NOT condition in a nested group replaces the **Exceptions** functionality.
