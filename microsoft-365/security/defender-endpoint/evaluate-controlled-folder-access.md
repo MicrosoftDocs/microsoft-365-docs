@@ -14,7 +14,6 @@ ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.date:
 search.appverid: met150
 ---
 

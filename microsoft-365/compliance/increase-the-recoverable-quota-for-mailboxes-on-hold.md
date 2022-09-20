@@ -2,8 +2,8 @@
 title: "Increase the Recoverable Items quota for mailboxes on hold"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin

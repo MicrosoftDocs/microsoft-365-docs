@@ -2,8 +2,8 @@
 title: "Preserve Bcc and expanded distribution group recipients for eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro

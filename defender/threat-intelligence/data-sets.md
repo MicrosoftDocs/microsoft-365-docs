@@ -3,6 +3,7 @@ title: 'Microsoft Defender Threat Intelligence (Defender TI) Data Sets'
 description: 'In this overview article, learn about Microsoft Defender Threat Intelligence (Defender TI)’s data sets feature.'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
@@ -224,7 +225,7 @@ When a user expands on a SHA1 hash, the user will be able to see details about t
 
 ## Subdomains
 
-A subdomain is an internet domain, which is part of a primary domain. Subdomains are also referred to as "hosts". As an example,`docs.microsoft.com` is a subdomain of `microsoft.com`. For every subdomain, there could be a new set of IP addresses to which the domain resolves to and this can be a great data source for finding related infrastructure.
+A subdomain is an internet domain, which is part of a primary domain. Subdomains are also referred to as "hosts". As an example,`learn.microsoft.com` is a subdomain of `microsoft.com`. For every subdomain, there could be a new set of IP addresses to which the domain resolves to and this can be a great data source for finding related infrastructure.
 
 Our subdomain data includes the following:
 

@@ -2,8 +2,8 @@
 title: "Use a script to add users to a hold in a eDiscovery (Standard) case"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin

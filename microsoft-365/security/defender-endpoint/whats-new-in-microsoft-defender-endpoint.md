@@ -40,7 +40,7 @@ For more information on preview features, see [Preview features](preview.md).
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 >
 > ```https
-> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> https://learn.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 For more information on what's new with other Microsoft Defender security products, see:
@@ -59,6 +59,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 ## September 2022
 
 - [Device health reporting is now generally available](device-health-reports.md). <br/>The device health report provides information about the health and security of your endpoints. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
+
+- [Troubleshooting mode](enable-troubleshooting-mode.md) is now available for more Windows operating systems, including Windows Server 2012 R2 and above. See the article for more information about the required updates.
 
 ## August 2022
 
