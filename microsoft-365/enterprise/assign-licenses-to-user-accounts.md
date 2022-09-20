@@ -56,7 +56,7 @@ Make sure you have enough licenses for all the group members. If you run out of 
 >You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
 >
 
-For more informaion, see [group-based licensing in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+For more information, see [group-based licensing in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Next steps
 
