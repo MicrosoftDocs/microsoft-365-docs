@@ -2,8 +2,8 @@
 title: "Predictive coding in eDiscovery (Premium) - Quick start"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
