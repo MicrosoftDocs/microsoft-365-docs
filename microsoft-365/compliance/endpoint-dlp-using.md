@@ -305,7 +305,7 @@ Here are some examples:
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
-Authorization groups are mostly used as allow lists. You assigned policy actions to the group that are different than the global actions. In this scenario, we'll go through defining a printer group and then configuring a policy with block actions for all print activities except for the printers in the group. These procedures are essentially the same for **Removeable storage device groups**, **Network share groups**, and **VPN settings**.
+Authorization groups are mostly used as allow lists. You assigned policy actions to the group that are different than the global policy actions. In this scenario, we'll go through defining a printer group and then configuring a policy with block actions for all print activities except for the printers in the group. These procedures are essentially the same for **Removeable storage device groups**, **Network share groups**, and **VPN settings**.
 
 In this scenario, we'll define a group of printers that the legal department uses for printing contracts. Printing contracts to any other printers is blocked.
 

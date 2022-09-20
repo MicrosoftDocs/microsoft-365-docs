@@ -350,7 +350,60 @@ The most common use case is to use removable storage devices groups as an allow 
 
 ### Network share groups
 
+Use this setting to define groups of network share paths that you want to assign policy actions to that are different from the global network share path actions. For example, say you want your DLP policy to block when users attempt to save or copy protected files to network shares except the network shares in this group.
+
+You include network share paths by defining the prefix that they all start with. For example:
+
+- '\\Library' will match:
+    -  \Library folder and all its sub-folders.
+
+- You can use Wildcards, for example '\\Users\*\Desktop' will match:
+    - '\\USers\user1\Desktop'
+    - '\\USers\user1\user2\Desktop'
+    - '\\Users\*\Desktop'
+
+- You can use Environmental variables, for example:
+    - EDWIN CHAN TO PROVIDE EXAMPLE
+
+You can assign these policy actions to the group in a DLP policy:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+The most common use case is to use network share group as an allow list as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a printer group here, it is available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
+
 ### VPN settings
+
+When you list a VPN in **VPN Settings** you can assign these policy actions to the networks listed:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+These actions can be applied individually or collectively to these user activities:
+
+- Copy to clipboard
+- Copy to a USB removable device
+- Copy to a network share
+- Print
+- Copy or move using unallowed Bluetooth app
+- Copy or move using RDP
+
+used in conjunction with **Corporate network** designation in a policy
+ 
+
+You can define printers by these parameters:
+
+1. **Server address**  Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
+1. **Network address** 
+1. 
+1. 
+1. 
+1. USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+
 
 
 ## See also
