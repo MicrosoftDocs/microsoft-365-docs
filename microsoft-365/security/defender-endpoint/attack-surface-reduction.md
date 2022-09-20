@@ -46,7 +46,7 @@ Attack surface reduction rules target certain software behaviors, such as:
 
 Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain software-based risky behaviors and help keep your organization safe.
 
-For a sequential, end-to-end process of how manage ASR rules, see:
+For a sequential, end-to-end process of how to manage ASR rules, see:
 
 - [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 - [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
