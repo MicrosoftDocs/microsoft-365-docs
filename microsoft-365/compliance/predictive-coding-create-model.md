@@ -2,8 +2,8 @@
 title: "Create a predictive coding model in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
