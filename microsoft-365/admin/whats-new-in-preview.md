@@ -46,6 +46,27 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## August 2022
+
+### Date filter in the Net Promoter Score (NPS) survey insights dashboard
+
+Based on your feedback, we are introducing a new function in the NPS survey insights dashboard that allows Admins like you to filter the Net Promoter Score (NPS) data and insights per date, so that you can access details based on your date range preference.
+
+With this change, you will be able to look at the NPS survey insights based on the following date ranges:
+
+- Past 30 days
+- Past 90 days
+- Past 180 days
+
+To access, go to **Health** > **Product feedback** > **NPS survey insights tab**.
+
+:::image type="content" source="../media/nps-date-filter.png" alt-text="Screenshot: Date filter in the NPS survey insights dashboard":::
+
+Learn more about [NPS survey insights](/manage/manage-feedback-product-insights).
+
+For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
+
+
 ## July 2022
 
 ### Multi-tenant billing relationships
