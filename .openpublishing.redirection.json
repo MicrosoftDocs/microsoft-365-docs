@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/email/email-collaboration.md",
+      "redirect_url": "/microsoft-365/admin/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/add-users/resend-user-password.md",
       "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
       "redirect_document_id": false
