@@ -3,11 +3,11 @@ title: Attack surface reduction (ASR) rules deployment overview
 description: Provides overview and prerequisite guidance about deploying attack surface reduction (ASR) rules.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -20,7 +20,7 @@ ms.collection:
  - M365-security-compliance
  - m365solution-asr-rules
  - highpri
-ms.date: 1/18/2022
+ms.date: 09/18/2022
 search.appverid: met150
 ---
 
