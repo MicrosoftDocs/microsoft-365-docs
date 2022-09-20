@@ -51,6 +51,7 @@
 
 ## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
+### [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
 ### [Onboarding Windows Client](onboard-windows-client.md)
 #### [Onboard Windows Client using Intune](configure-endpoints-mdm.md)
 #### [Onboard Windows Client using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
