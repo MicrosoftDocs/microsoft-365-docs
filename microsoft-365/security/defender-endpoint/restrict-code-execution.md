@@ -2,7 +2,7 @@
 title: Restrict app execution API
 description: Use this API to create calls related to restricting an application from executing.
 keywords: apis, graph api, supported apis, collect investigation package
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Restrict app execution API

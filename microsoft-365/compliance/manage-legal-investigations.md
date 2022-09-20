@@ -2,8 +2,8 @@
 title: "Manage legal investigations in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: conceptual

@@ -4,7 +4,7 @@ description: Describes how conditional access evaluation for Microsoft 365 and A
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -17,8 +17,11 @@ ms.collection:
   - M365-security-compliance
   - m365solution-identitydevice
   - m365solution-scenario
-ms.technology: mdo
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
+
 # Continuous access evaluation for Microsoft 365
 
 Modern cloud services that use OAuth 2.0 for authentication traditionally rely on access token expiration to revoke a user account's access. In practice, this means even if an administrator revokes a user account's access, the user will still have access until the access token expires, which for Microsoft 365 by default, used to be up to an hour after the initial revocation event took place.

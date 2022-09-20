@@ -2,8 +2,8 @@
 title: "Use the admin log for data connectors to view status about importing data"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin

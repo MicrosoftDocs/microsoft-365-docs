@@ -2,8 +2,8 @@
 title: "Collect cloud attachments in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 06/03/2022

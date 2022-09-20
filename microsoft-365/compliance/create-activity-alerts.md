@@ -2,8 +2,8 @@
 title: "Create activity alerts"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 11/7/2017
 audience: Admin
