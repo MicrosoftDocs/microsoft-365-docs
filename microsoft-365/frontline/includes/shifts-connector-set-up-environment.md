@@ -29,7 +29,7 @@ ms.service: microsoft-365-frontline
     Import-Module MicrosoftTeams 
     ```
 
-    Verify that it's at least version 4.1.0 and contains the Shifts connector cmdlets.
+    Verify that it's at least version 4.7.0 and contains the Shifts connector cmdlets.
 
     ```powershell
     Get-Command -Module MicrosoftTeams -Name *teamsshiftsconnection* 
