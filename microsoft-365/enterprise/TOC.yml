@@ -176,16 +176,17 @@
           href: cross-tenant-identity-mapping.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
-    - name: Multi-geo
+    - name: Data Residency
+      href: m365-dr-overview.md
+      items: 
+        - name: Product Terms Data Residency
+          href: m365-dr-product-terms-dr.md
+        - name: Advanced Data Residency
+          href: advanced-data-residency
+    - name: Multi-geo Data Residency
       items: 
         - name: Microsoft 365 Multi-Geo
           href: microsoft-365-multi-geo.md
-        - name: Teams multi-geo
-          href: multi-geo-capabilities-in-teams-in-microsoft-365.md
-        - name: OneDrive and SharePoint multi-geo
-          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
-        - name: Exchange Multi-Geo
-          href: multi-geo-capabilities-in-exchange-online.md
         - name: Plan
           items: 
             - name: Plan for multi-geo
@@ -206,12 +207,6 @@
           items: 
             - name: Administering a multi-geo environment
               href: administering-a-multi-geo-environment.md
-            - name: Manage SharePoint quotas
-              href: sharepoint-multi-geo-storage-quota.md
-            - name: Move a OneDrive site
-              href: move-onedrive-between-geo-locations.md
-            - name: Move a SharePoint site
-              href: move-sharepoint-between-geo-locations.md
             - name: Add or remove a geo administrator
               href: add-a-sharepoint-geo-admin.md
             - name: Restrict content to a geo location
@@ -222,10 +217,28 @@
               href: multi-geo-add-group-with-pdl.md
             - name: Delete a geo location
               href: delete-a-geo-location.md
-            - name: Enabling SharePoint Multi-Geo in your satellite geo location
-              href: enabling-SP-multigeo-satellite-geolocation.md
-            - name: Administering Exchange Multi-Geo
-              href: administering-exchange-online-multi-geo.md
+            - name: Data Residency FAQ
+              href: m365-dr-faq.md
+    - name: Workload Data Residency Capabilities
+      items:
+        - name: Exchange Online
+          href: m365-dr-workload-exo.md
+        - name: SharePoint Online and OneDrive for Business
+          href: m365-dr-workload-spo.md
+        - name: Microsoft Teams
+          href: m365-dr-workload-teams.md
+        - name: Microsoft Defender for Office P1
+          href: m365-dr-workload-mdo-p1.md
+        - name: Office for the Web
+          href: m365-dr-workload-office-for-web.md
+        - name: Viva Connections
+          href: m365-dr-workload-viva-connections.md
+        - name: Viva Topics
+          href: m365-dr-workload-viva-topics.md
+        - name: Microsoft Purview
+          href: m365-dr-workload-purview.md
+        - name: Other Services
+          href: m365-dr-workload-other.md
     - name: Move to a new Microsoft 365 datacenter geo
       href: moving-data-to-new-datacenter-geos.md
       items: 
