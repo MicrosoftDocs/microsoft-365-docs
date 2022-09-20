@@ -28,8 +28,8 @@ Your organization requires access to critical audit log event data to gain insig
 The Audit New Search (preview) builds upon the existing search functionalities and includes the following key improvements:
 
 - Search jobs initiated via the compliance portal UI no longer require the web browser window to remain open in order to complete. These jobs will continue to run even after the browser window is closed.
-- Completed search jobs are now stored, giving customers the ability to reference historical audit searches. These search jobs are presented in the UI, listing the search name, search job status, progress %, Number of results, Creation Time, and Searched by.
-- Each admin Audit account user can have a maximum of 10 search jobs in progress at a time.
+- Completed search jobs are now stored for 30 days, giving customers the ability to reference historical audit searches. These search jobs are presented in the UI, listing the search name, search job status, progress %, Number of results, Creation Time, and Searched by.
+- Each admin Audit account user can have a maximum of 10 concurrent search jobs in progress at a time with a maximum of one unfiltered search job.
 
 ## Information to get started
 
