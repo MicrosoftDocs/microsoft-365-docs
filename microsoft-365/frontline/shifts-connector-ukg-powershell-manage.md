@@ -69,7 +69,6 @@ This article assumes that you've already set up a connection to UKG Dimensions, 
 
 [!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]
 
-<a name="resolve_errors"> </a>
 ## Resolve connection errors
 
 ### User mapping errors
