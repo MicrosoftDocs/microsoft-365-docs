@@ -87,7 +87,7 @@ The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP 
 
 
 > [!IMPORTANT]
-> When an action in Office desktop client apps, (Word, Outlook, Excel, and PowerPoint) matches a policy that uses complex conditions, the user will only see policy tips for rules that use the *Content contains sensitive information* condition."
+> When an action in Office desktop client apps, (Word, Outlook, Excel, and PowerPoint) matches a policy that uses complex conditions, the user will only see policy tips for rules that use the **Content contains sensitive information** condition.
 
 
 ## Policy Design Process
