@@ -453,7 +453,7 @@ For supported apps, sensitivity labels are now displayed in a sensitivity bar, d
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
 
-Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support).
+Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [Sensitivity label bar for Word, Excel, PowerPoint and Outlook for PC](https://insider.office.com/blog/sensitivity-bar-for-word-excel-powerpoint-and-outlook-for-pc).
 
 As part of this high visibility, these labels also support colors. For more information, see the next section.
 
