@@ -103,7 +103,7 @@ The Attack Surface reduction rules pane provides an overview of detected events 
 >There are some variations in ASR rules reports. Microsoft is in the process of updating the behavior of the ASR rules reports to provide a consistent experience.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-01b.png" alt-text="The Attack surface reduction rules page" lightbox="images/asr-defender365-01b.png"::: 
+> :::image type="content" source="images/asr-defender365-01b.png" alt-text="The Attack surface reduction rules page" lightbox="images/asr-defender365-01b.png":::
 
 Click **View detections** to open the **Detections** tab.
 
