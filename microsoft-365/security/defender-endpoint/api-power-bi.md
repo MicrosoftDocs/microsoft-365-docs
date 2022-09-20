@@ -33,9 +33,11 @@ search.appverid: met150
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## Before you begin
 
+> [!NOTE]
+>**Before you begin**:
 You first need to [create an app](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro?view=o365-worldwide).
+
 
 In this section you will learn to create a Power BI report on top of Defender for Endpoint APIs.
 
