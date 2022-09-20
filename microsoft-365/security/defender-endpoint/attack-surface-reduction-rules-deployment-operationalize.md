@@ -39,7 +39,6 @@ Consistent, regular review of reports is an essential aspect of maintaining your
 
 One of the most powerful features of [Microsoft 365 Defender](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
-> [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft 365 Defender portal. Microsoft Defender for Endpoint (MDE) ASR rules, ASR rules advanced hunting, asr rules reports, asr rules false positives," lightbox="images/asr-defender365-advanced-hunting2.png":::
 
 Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured (raw) data that Microsoft Defender ATP Endpoint Detection and Response (EDR) collects from all your machines. Through advanced hunting, you can proactively inspect events in order to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
