@@ -2,8 +2,8 @@
 title: Use Content Search for a list of users on the mailbox & OneDrive for Business site
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
