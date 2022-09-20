@@ -64,7 +64,7 @@ The image and the table below lists the changes in navigation between Microsoft 
 | Activity log | Cloud apps -> Activity log |
 | Files | Cloud apps -> Files |
 | Users and accounts | Assets -> Identities |
-| Security configuration | remaining in Defender for Cloud Apps portal |
+| Security configuration | available in [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) |
 | Identity security posture | [Microsoft Defender for Identity's identity security posture assessments](/defender-for-identity/isp-overview) |
 | OAuth apps | Cloud apps -> OAuth apps |
 | Connected apps | Settings -> Cloud apps -> Connected apps |
