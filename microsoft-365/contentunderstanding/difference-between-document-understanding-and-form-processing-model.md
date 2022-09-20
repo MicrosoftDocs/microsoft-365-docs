@@ -35,8 +35,6 @@ Use the following table to see differences in custom models to help identify the
 
 ## See also
 
-[Requirements and limitations of models in SharePoint Syntex](./requirements-and-limitations.md)
-
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
 
 
