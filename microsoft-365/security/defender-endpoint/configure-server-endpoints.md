@@ -11,7 +11,7 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 09/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -163,7 +163,7 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 #### Prerequisites for Windows Server 2012 R2
 
-If you've fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/en-us/topic/windows-8-1-and-windows-server-2012-r2-update-history-47d81dd2-6804-b6ae-4112-20089467c7a6) package, there are **no** other prerequisites and the below requirements will already be filled.
+If you've fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/windows-8-1-and-windows-server-2012-r2-update-history-47d81dd2-6804-b6ae-4112-20089467c7a6) package, there are **no** other prerequisites and the below requirements will already be filled.
 
 The installer package will check if the following components have already been installed via an update:
 
