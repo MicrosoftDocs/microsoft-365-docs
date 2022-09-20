@@ -133,22 +133,22 @@ Select **Setting > Max allowed device threat level** in **Device Conditions** an
 
 
 ## Configure privacy controls 
-Defender for Endpoint on Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the [Microsoft Endpoint Manager Admin center](endpoint.microsoft.com).
+Defender for Endpoint on Android allows IT Administrators to configure web protection. Web protection is available within the [Microsoft Endpoint Manager Admin center](endpoint.microsoft.com).
 
 Web protection helps to secure devices against web threats and protect users from phishing attacks. Note that anti-phishing and custom indicators (URL and IP addresses) are supported as part of web protection. Web content filtering is currently not supported on mobile platforms.
 
-1. In Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+1. In the Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
 
 2. Give the policy a **name**.
 
-3. Under the Select Public Apps, choose **Microsoft Defender for Endpoint** as the target app.
+3. Under **Select Public Apps**, choose **Microsoft Defender for Endpoint** as the target app.
 
-4. In Settings page, under the General Configuration Settings add the following keys and set their value as required.
+4. In the **Settings** page, under the **General Configuration Settings**, add the following keys and set their value as required.
     - **antiphishing** 
     - **vpn** 
     
-   To disable web protection, enter 0 for configuration values antiphishing and vpn.
-   To disable only the use of VPN by web protection, enter these configuration values:
+   To disable web protection, enter 0 for the antiphishing and VPN values.
+   To disable only the use of VPN by web protection, enter these values:
     - 0 for vpn
     - 1 for antiphishing
     
