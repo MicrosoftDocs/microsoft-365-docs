@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -30,7 +30,7 @@ f1.keywords: NOCSH
 
 ## What is built-in protection, and how does it work?
 
-Built-in protection is a set of default settings that are rolling out to help ensure your devices are protected. These default settings are designed to protect devices from ransomware and other threats. Initially, built-in protection will include turning [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on for your tenant, with other default settings coming soon. 
+Built-in protection is a set of default settings that are rolling out to help ensure your devices are protected. These default settings are designed to protect devices from ransomware and other threats. Initially, built-in protection will include turning [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on for your tenant, with other default settings coming soon. For more information, see the Tech Community blog post, [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478).
 
 | Phase | What happens |
 |:---|:---|
@@ -83,6 +83,7 @@ Built-in protection is a set of default settings. You aren't required to keep th
 
 ## See also
 
+- [Tech Community blog: Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478)
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 - [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security)
 - [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure)
