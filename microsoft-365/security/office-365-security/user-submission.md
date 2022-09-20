@@ -200,7 +200,7 @@ To specify the reason why the original attached messages were reported, messages
   -  3. X-Ms-Exchange-Organization-Network-Message-Id
   -  4. X-Ms-Exchange-Crosstenant-Id
 
-> [!INFO]
+> [!NOTE]
 > TenantId in X-Ms-Exchange-Crosstenant-Id should be the same as the tenant.
 > X-Microsoft-Antispam-Message-Info should be a valid xmi.
 
