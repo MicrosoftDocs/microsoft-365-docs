@@ -38,9 +38,9 @@ What the SCL means and the default actions that are taken on messages are descri
 |-1|The message skipped spam filtering. For example, the message is from a safe sender, was sent to a safe recipient, or is from an email source server on the IP Allow List. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).|Deliver the message to the recipients' inbox.|
 |0, 1|Spam filtering determined the message was not spam.|Deliver the message to the recipients' inbox.|
 |5, 6|Spam filtering marked the message as **Spam**|Deliver the message to the recipients' Junk Email folder.|
-|9|Spam filtering marked the message as **High confidence spam**|Deliver the message to the recipients' Junk Email folder.|
+|8, 9|Spam filtering marked the message as **High confidence spam**|Deliver the message to the recipients' Junk Email folder.|
 
-You'll notice that SCL 2, 3, 4, 7, and 8 aren't used by spam filtering.
+You'll notice that SCL 2, 3, 4, and 7 aren't used by spam filtering.
 
 You can use mail flow rules (also known as transport rules) to stamp the SCL on messages. If you use a mail flow rule to set the SCL, the values 5 or 6 trigger the spam filtering action for **Spam**, and the values 7, 8, or 9 trigger the spam filtering action for **High confidence spam**. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
