@@ -51,7 +51,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - [Exchange (legacy)](data-lifecycle-management.md#exchange-legacy-features) configuration is moving from the Classic Exchange admin center (EAC) to the Microsoft Purview compliance portal, under **Data lifecycle management**. Existing data lifecycle management features are located under a new subnode, **Microsoft 365**.
-- For cloud attachments (currently rolling out in preview), automatic and temporary retention of deleted files in the Preservation Hold library to safeguard against the original file being deleted by users before the copy can be created and labeled. For more information, see [How retention works with cloud attachements](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+- For cloud attachments (currently rolling out in preview), automatic and temporary retention of deleted files in the Preservation Hold library to safeguard against the original file being deleted by users before the copy can be created and labeled. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
 ### Data Loss Prevention
 
@@ -84,7 +84,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- Generally available (GA) and no longer need to opt-in: Mobile devices (iOS and Android, with minimal versions) support [co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
+- Generally available (GA) and no longer need to opt in: Mobile devices (iOS and Android, with minimal versions) support [co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
 - GA with Current Channel 2208+ for Word, Excel, PowerPoint on Windows: [Support for PDF](sensitivity-labels-office-apps.md#pdf-support). Support for Outlook to block print to PDF when required, is rolling out to Beta Channel.
 - Rolling out to GA with Current Channel 2208+ for Windows, and 16.63+ for macOS: Default label for existing documents.
 - In preview: Trainable classifiers for [auto-labeling policies](apply-sensitivity-label-automatically.md).
@@ -346,7 +346,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
 - Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
-- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
+- [Per-tenant limits for content disposition](retention-limits.md#maximum-numbers-for-disposition).
 
 ### Data Loss Prevention
 
@@ -355,11 +355,11 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) - new for public preview of restricted app groups.
 - [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
 - [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
-- 
+
 ### Information protection
 
 - [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
-- 
+
 ### Insider risk management
 
 - [Get started with insider risk management](insider-risk-management-configure.md) - added new tasks for the Recommended actions guidance.
