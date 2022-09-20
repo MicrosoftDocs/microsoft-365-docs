@@ -453,7 +453,7 @@ For the supported apps, sensitivity labels are now displayed in a sensitivity ba
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
 
-Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support).
+Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [New sensitivity bar in Office for Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
 As part of this high visibility, these labels also support colors. For more information, see the next section.
 
@@ -514,7 +514,3 @@ You can also create custom reports with your choice of security information and 
     - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
 - [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
-
-
-
-
