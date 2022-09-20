@@ -2,8 +2,8 @@
 title: "Investigating partially indexed items in eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 06/14/2022
 audience: Admin
