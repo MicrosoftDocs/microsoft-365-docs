@@ -2,8 +2,8 @@
 title: "Set up Audit (Premium) in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
