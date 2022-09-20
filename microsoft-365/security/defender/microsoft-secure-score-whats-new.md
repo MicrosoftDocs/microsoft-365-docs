@@ -35,7 +35,7 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 ## September 2022
 
-New Microsoft Defender for Office 365 recommendations for anti-phishing policies are now available as Secure Score improvement action:
+New Microsoft Defender for Office 365 recommendations for anti-phishing policies are now available as Secure Score improvement actions:
 
 - Set the phishing email level threshold at 2 or higher
 - Enable impersonated user protection
