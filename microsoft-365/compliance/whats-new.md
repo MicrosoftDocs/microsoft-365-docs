@@ -346,7 +346,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
 - Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
-- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
+- [Per-tenant limits for content disposition](retention-limits.md#maximum-numbers-for-disposition).
 
 ### Data Loss Prevention
 
