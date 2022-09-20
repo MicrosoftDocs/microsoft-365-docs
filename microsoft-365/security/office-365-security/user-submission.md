@@ -194,7 +194,7 @@ To correctly identify the original attached messages, messages sent to the custo
 To specify the reason why the original attached messages were reported, messages sent to the user submissions mailbox must meet the following criteria:
 
 - The original message attachment is unmodified.
-- The reported message should contains below required headers
+- The reported message should contain the following required headers:
   -  1.X-Microsoft-Antispam-Message-Info
   -  2. Message-Id
   -  3. X-Ms-Exchange-Organization-Network-Message-Id
