@@ -32,7 +32,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages form external senders (does not apply to intra-org messages) and at the time of user clicks.
 
-The Tenant Allow/Block list is available in the the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+The Tenant Allow/Block list is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 For entry creation and configuration instructions, see the following topics:
 
@@ -80,11 +80,11 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
   - If the message was blocked by [spoof intelligence](learn-about-spoof-intelligence.md), an allow entry for the sender is created and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
 
-  - If the message was blocked by by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365, an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+  - If the message was blocked by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365, an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
   - If the message was blocked for other reasons, an allow entry for the sender is created and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
 
-  - If the message was not blocked, and allow entry for the sender is not created, so it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
+  - If the message was not blocked, and allow entry for the sender is not created, it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
 By default, allow entries for **domains and email addresses**, **files** and **URLs** expire after 30 days, which is also the maximum. Allow entries for **spoofed senders** never expire.
 
