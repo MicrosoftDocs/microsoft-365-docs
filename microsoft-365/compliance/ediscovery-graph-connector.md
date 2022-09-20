@@ -2,8 +2,8 @@
 title: "Microsoft Purview eDiscovery Graph connectors"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
