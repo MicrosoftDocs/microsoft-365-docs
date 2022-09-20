@@ -125,9 +125,6 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **File**: Click **Browse files** to find and select the file to submit.
 
-     > [!NOTE]
-     > File submissions are not available in clouds that do not allow for data to leave the environment. **Browse files** is greyed out.
-
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
      - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
@@ -163,9 +160,6 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
    - **Select the submission type**: Verify the value **URL** is selected.
 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears.
-
-     > [!NOTE]
-     > URL submissions are not available in clouds that do not allow for data to leave the environment. **URL** is greyed out.
 
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
