@@ -1,5 +1,6 @@
 ---
 title: "Set up a connector to archive Instant Bloomberg data"
+description: "Learn how administrators can set up and use a data connector to import and archive data from the Instant Bloomberg chat tool into Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,8 +14,10 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-ms.custom: seo-marvel-apr2020
-description: "Learn how administrators can set up and use a data connector to import and archive data from the Instant Bloomberg chat tool into Microsoft 365."
+ms.collection:
+- tier1
+- M365-security-compliance
+- dataconnectors
 ---
 
 # Set up a connector to archive Instant Bloomberg data

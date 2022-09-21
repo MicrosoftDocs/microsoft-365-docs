@@ -1,5 +1,6 @@
 ---
 title: "Archive data from the CellTrust SL2 platform to Microsoft 365"
+description: "Learn how to set up and use a CellTrust SL2 data connector to import and archive mobile communications data."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,8 +11,10 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a CellTrust SL2 data connector to import and archive mobile communications data."
+ms.collection:
+- tier1
+- M365-security-compliance
+- dataconnectors
 ---
 
 # Archive data from CellTrust SL2 to Microsoft 365

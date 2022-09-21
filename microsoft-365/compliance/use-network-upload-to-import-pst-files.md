@@ -1,5 +1,6 @@
 ---
 title: "Use network upload to import PST files"
+description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,15 +10,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
+- import
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
-description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Microsoft 365."
 ms.custom: seo-marvel-apr2020
 ---
 

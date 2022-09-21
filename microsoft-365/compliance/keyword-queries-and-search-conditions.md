@@ -1,5 +1,6 @@
 ---
 title: "Keyword queries and search conditions for eDiscovery"
+description: "Learn about email and document properties that you can search by using the eDiscovery search tools in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,16 +13,14 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
+- tier1
 - M365-security-compliance
-- SPO_Content
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about email and document properties that you can search by using the eDiscovery search tools in Microsoft 365."
 ---
 
 # Keyword queries and search conditions for eDiscovery
