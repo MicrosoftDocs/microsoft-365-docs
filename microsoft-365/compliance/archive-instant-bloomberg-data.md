@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.collection:
 - tier1
 - M365-security-compliance
-- dataconnectors
+- data-connectors
 ---
 
 # Set up a connector to archive Instant Bloomberg data

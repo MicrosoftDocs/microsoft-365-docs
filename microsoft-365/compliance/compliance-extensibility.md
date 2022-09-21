@@ -15,7 +15,7 @@ ms.collection:
 ms.collection:
 - tier1
 - M365-security-compliance
-- dataconnectors
+- data-connectors
 search.appverid: 
 - MOE150
 - MET150 

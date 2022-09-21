@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
 - tier1
 - M365-security-compliance
-- dataconnectors
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
