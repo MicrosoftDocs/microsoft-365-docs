@@ -15,7 +15,6 @@ ms.collection:
 - tier1 
 - SPO_Content
 - m365solution-mip
-- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150

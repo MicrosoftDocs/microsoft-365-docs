@@ -15,7 +15,6 @@ search.appverid:
 - MET150
 ms.collection:
 - m365solution-mip
-- m365initiative-compliance
 - tier1
 recommendations: false
 description: "Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels."
