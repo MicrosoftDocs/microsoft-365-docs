@@ -1,25 +1,25 @@
 ---
 title: "Microsoft Purview extensibility"
+description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
+- data-connectors
 search.appverid: 
 - MOE150
-- MET150
-ms.assetid: 
+- MET150 
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 ---
 
 # Microsoft Purview and Microsoft Priva extensibility
