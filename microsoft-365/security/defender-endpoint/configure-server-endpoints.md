@@ -49,6 +49,11 @@ You'll need to complete the following general steps to successfully onboard serv
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
+
+>[!NOTE]
+>Windows Server Hyper-V is not supported.
+
+
 ## Integration with Microsoft Defender for Servers
 
 Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Servers. You can onboard servers automatically, have servers monitored by Microsoft Defender for Cloud appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer.
@@ -129,7 +134,7 @@ Alternatively, use the instructions provided at [Workaround for a known issue wi
 - Operating system upgrades aren't supported. Offboard then uninstall before upgrading.
 - Automatic exclusions for **server roles** aren't supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 - On machines that have been upgraded from the previous, MMA-based solution and the EDR sensor is a (preview) version older than 10.8047.22439.1056, uninstalling and reverting back to the MMA-based solution may lead to crashes. If you are on such a preview version, update using KB5005292.
-- To deploy and onboard the new solution using Microsoft Endpoint Manager, this process currently requires creating a package. For more information on how to deploy programs and scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). MECM 2107 with the hotfix rollup or later is required to support policy configuration management using the Endpoint Protection node.
+- To deploy and onboard the new solution using Microsoft Endpoint Manager, this process currently requires creating a package. For more information on how to deploy programs and scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). MECM 2107 with the hotfix rollup or later is required to support policy configuration management using the Endpoint Protection node. Migrating servers from Microsoft Monitoring Agent to the unified solution requires Microsoft Endpoint Configuration Manager older than 2207. For more information, see [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md).
 
 ## Workaround for a known issue with TelemetryProxyServer on disconnected machines
 

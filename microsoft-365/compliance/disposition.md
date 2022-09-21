@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
+- tier1
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
