@@ -13,6 +13,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: seo-marvel-apr2020
 description: "In this article, you will learn about how service encryption works with Microsoft Purview Customer Key."
 ---

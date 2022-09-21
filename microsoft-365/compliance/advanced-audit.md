@@ -14,6 +14,7 @@ ms.collection:
 - SPO_Content
 - m365solution-audit
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MOE150
 - MET150
