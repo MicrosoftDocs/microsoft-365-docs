@@ -422,7 +422,7 @@ Get-VpnConnection
 ```
 3. Running this cmdlet returns multiple fields and values.
 1. Find the **ServerAddress** field and record that value. You will use this when you create a VPN entry in the VPN list.
-1. Find the **DnsSuffix** field and record that value. The **DnsSuffix** field maps to the **Network address** field when yopu create a VPN entry in the VPN list.
+1. Find the **Name** field and record that value. The **Name** field maps to the **Network address** field when you create a VPN entry in the VPN list.
 
 #### Add a VPN
 
