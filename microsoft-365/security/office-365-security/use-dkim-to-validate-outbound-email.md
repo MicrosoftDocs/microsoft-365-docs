@@ -291,7 +291,7 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 > - Both the sender and the recipient email address use the same domain.
 > - Both the sender and the recipient email address use different domains that are controlled by the same organization.
 >
-> In both cases, the header will look like something like this:
+> In both cases, the header will look similar to this:
 > ```console
 >   Authentication-Results: dkim=none (message not signed) header.d=none;
 >     dmarc=none action=none header.from=<sender_domain>;
