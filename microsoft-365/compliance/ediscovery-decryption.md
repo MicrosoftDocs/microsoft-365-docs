@@ -1,5 +1,6 @@
 ---
 title: "Decryption in eDiscovery"
+description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted documents attached to email messages and stored in SharePoint Online and OneDrive for Business."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,13 +10,15 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted documents attached to email messages and stored in SharePoint Online and OneDrive for Business."
 ---
 
 # Decryption in Microsoft 365 eDiscovery tools
