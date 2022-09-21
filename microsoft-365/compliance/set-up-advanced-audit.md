@@ -12,7 +12,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
--tier1
+- tier1
 - M365-security-compliance
 - m365solution-audit
 - m365solution-scenario
