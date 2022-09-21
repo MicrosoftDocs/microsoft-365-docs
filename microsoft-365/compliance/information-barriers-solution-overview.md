@@ -16,6 +16,7 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
 ---
 
 # Information barriers

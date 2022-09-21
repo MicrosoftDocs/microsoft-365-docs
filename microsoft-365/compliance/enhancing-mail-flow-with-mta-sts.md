@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: Learn how to enhance mail flow with MTA-STS.
 ---
 

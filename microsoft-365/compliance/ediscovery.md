@@ -14,6 +14,7 @@ ms.collection:
 - m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
+- highpri
 ms.localizationpriority: medium
 search.appverid:
 - SPO160

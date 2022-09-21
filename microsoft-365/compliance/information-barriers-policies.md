@@ -12,6 +12,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH

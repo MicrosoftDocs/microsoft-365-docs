@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-aed
 - m365initiative-compliance
 - m365solution-overview
+- highpri
 search.appverid:
 - MOE150
 - MET150
