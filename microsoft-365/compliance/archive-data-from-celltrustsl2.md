@@ -55,7 +55,7 @@ The first step is to create a data connector in the compliance portal.
 
 2. On the **Overview** tab, click **Filter** and select **By CellTrust**, and then apply the filter.
 
-   ![Configure filter to display CellTrust connectors.](../media/data-connectorsFilter.png)
+   ![Configure filter to display CellTrust connectors.](../media/dataconnectorsFilter.png)
 
 3. Click **CellTrust SL2 (preview)**.
 
