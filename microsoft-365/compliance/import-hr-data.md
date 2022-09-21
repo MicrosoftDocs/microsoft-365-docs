@@ -1,5 +1,6 @@
 ---
 title: "Set up a connector to import HR data"
+description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,9 +13,11 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
 # Set up a connector to import HR data

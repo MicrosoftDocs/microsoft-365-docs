@@ -2,8 +2,8 @@
 title: "Microsoft Purview solutions trial playbook"
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
