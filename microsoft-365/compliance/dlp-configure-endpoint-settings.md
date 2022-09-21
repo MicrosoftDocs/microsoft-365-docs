@@ -395,6 +395,8 @@ These actions can be applied individually or collectively to these user activiti
 used in conjunction with **Corporate network** designation in a policy
  
 
+
+When configuring a DLP policy to restrict activity on devices, you can control what happens to each activity performed when users are within any of the VPNs listed.
 You can define printers by these parameters:
 
 1. **Server address**  Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
