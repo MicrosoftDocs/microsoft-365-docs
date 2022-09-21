@@ -19,6 +19,7 @@ ms.collection:
   - highpri
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard to the Microsoft Defender for Endpoint service

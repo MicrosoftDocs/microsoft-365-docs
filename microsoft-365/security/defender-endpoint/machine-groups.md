@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create and manage device groups
@@ -73,7 +74,7 @@ As part of the process of creating a device group, you'll:
 
 ## Manage device groups
 
-You can promote or demote the rank of a device group so that it's given higher or lower priority during matching. When a device is matched to more than one group, it's added only to the highest ranked group. You can also edit and delete groups.
+You can promote or demote the rank of a device group so that it's given higher or lower priority during matching. A device group with a rank of 1 is the highest ranked group. When a device is matched to more than one group, it's added only to the highest ranked group. You can also edit and delete groups.
 
 > [!WARNING]
 > Deleting a device group may affect email notification rules. If a device group is configured under an email notification rule, it will be removed from that rule. If the device group is the only group configured for an email notification, that email notification rule will be deleted along with the device group.

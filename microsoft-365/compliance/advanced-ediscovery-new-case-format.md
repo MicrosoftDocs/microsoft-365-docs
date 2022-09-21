@@ -2,8 +2,8 @@
 title: "New case format in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: ninachen
 manager: laurawi
 ms.date: 

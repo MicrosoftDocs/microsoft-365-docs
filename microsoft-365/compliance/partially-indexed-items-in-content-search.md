@@ -2,8 +2,8 @@
 title: "Partially indexed items in Content Search"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/13/2022
 audience: Admin
