@@ -24,13 +24,13 @@ appliesto:
 
 This article lists known issues for the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions).
 
-## You can map an instance to more than one team using PowerShell or Microsoft Graph
+**You can map an instance to more than one team using PowerShell or Microsoft Graph**
 
 A UKG Dimensions instance should only be mapped to one team at any given time.
 
 However, when you use PowerShell or Microsoft Graph set up a connection, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
 
-## A user can’t perform actions in Shifts in the Teams web app after signing in with a different account
+**A user can’t perform actions in Shifts in the Teams web app after signing in with a different account**
 
 This issue can occur if a user who has multiple accounts in Teams switches accounts in the Teams web app in the same browser.
 
