@@ -13,6 +13,7 @@ ms.collection:
   - m365-frontline
   - m365solution-overview
   - m365solution-frontline
+  - highpri
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams

@@ -14,6 +14,7 @@ ms.collection:
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 search.appverid:
 - MET150
 - MOE150

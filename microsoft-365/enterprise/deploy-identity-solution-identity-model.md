@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 f1.keywords:
 - CSH
 ms.custom:

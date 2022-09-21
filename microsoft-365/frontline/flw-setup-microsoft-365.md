@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
   - m365solution-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
