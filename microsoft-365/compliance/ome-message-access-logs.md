@@ -24,7 +24,7 @@ Access logs are available for encrypted messages through the encrypted message p
 
 ## Enabling message access audit logs in PowerShell
 
-Access log can be enabled using [Exchange Online PowerShell V2 module](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps). The *-EnablePortalTrackingLogs* parameter of Set-IrmConfiguration specifies whether to enable the audit logs of accessing the encrypted message portal. Valid values are:
+Access log can be enabled using [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). The *EnablePortalTrackingLogs* parameter of the **[Set-IrmConfiguration](/powershell/module/exchange/set-irmconfiguration)** cmdlet specifies whether to enable the audit logs of accessing the encrypted message portal. Valid values are:
 
 - $true: Turn on audit feature.
 - $false: Turn off audit feature
