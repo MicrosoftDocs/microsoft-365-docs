@@ -32,11 +32,11 @@ ms.subservice: mde
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 <details>
-  <summary>Aug-2022 (Build: 101.78.13  | Release version: 10.8210.*)</summary>
-
+  <summary>Aug-2022 (Release version: 10.8210.*)</summary>
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
+|Windows Server 2012 R2, 2016 |KB5005292|10.8210.22621.1011|
 |Windows 11 21H2 (Cobalt)<br> (Windows 11 SV 21H2)     | [KB 5016691](https://support.microsoft.com/en-us/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)        | 10.8210.22000.918        |
 |Server 2022 (Iron)     | [KB 5016693](https://support.microsoft.com/en-us/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)        |10.8210.20348.946         |
 |Windows 10 20H2/21H1/21H2<br> Windows Server 20H2  (Vibranium)     | [KB 5016688](https://support.microsoft.com/en-us/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)       | 10.8210.19041.1949        |
@@ -44,6 +44,7 @@ ms.subservice: mde
 
 **What's new**
 
+- Added a fix to resolve a missing intermediate certificate issue with the use of “TelemetryProxyServer” on Windows Server 2012 R2 running the unified agent
 - Enhanced DLP with ability to protect password protected and encrypted files and not label files
 - Enhanced DLP with support for context data in audit telemetry (short evidence)
 - Extended MDE client authentication support for VDI devices
