@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- tier1
 - SPO_Content
 ms.localizationpriority: high
 search.appverid:
