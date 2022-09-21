@@ -41,6 +41,11 @@ Licensing for eDiscovery (Standard) requires the appropriate organization subscr
   - A Microsoft 365 E3 or Office 365 E3 license or higher
 
    OR
+   
+  - Microsoft 365 Business Premium (Exchange only) license
+  
+
+   OR
 
   - Office 365 E1 license with an Exchange Online Plan 2 or Exchange Online Archiving add-on license
 
