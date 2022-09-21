@@ -1,5 +1,6 @@
 ---
 title: "Audit new search"
+description: "The Audit New Search validates the performance improvements, completeness, and consistency of results."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,15 +11,15 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
+- tier1
 - M365-security-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "The Audit New Search validates the performance improvements, completeness, and consistency of results."
 ---
 
 # Audit New Search (preview)

@@ -1,5 +1,6 @@
 ---
 title: "Detailed properties in the audit log"
+description: This article provides descriptions of additional properties included when you export results for an Office 365 audit log record.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,15 +10,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
+- audit
 search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: This article provides descriptions of additional properties included when you export results for an Office 365 audit log record.
 ms.custom: seo-marvel-apr2020
 ---
 

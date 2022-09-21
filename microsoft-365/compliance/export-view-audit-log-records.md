@@ -1,5 +1,6 @@
 ---
 title: "Export, configure, and view audit log records"
+description: "In this article, you will learn how to export, configure, and view Microsoft 365 audit log records."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,15 +10,14 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
+- audit
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn how to export, configure, and view Microsoft 365 audit log records."
 ---
 
 # Export, configure, and view audit log records
