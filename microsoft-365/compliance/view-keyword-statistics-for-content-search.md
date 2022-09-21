@@ -1,5 +1,6 @@
 ---
 title: "View statistics for eDiscovery search results"
+description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a eDiscovery (Standard) case in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,8 +15,11 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a eDiscovery (Standard) case in the Microsoft Purview compliance portal."
 ms.custom: seo-marvel-apr2020
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ---
 
 # View statistics for eDiscovery search results

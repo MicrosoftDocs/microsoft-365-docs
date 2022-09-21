@@ -1,12 +1,12 @@
 ---
 title: Test Relevance analysis in eDiscovery (Premium)
+description: "Learn how to use the Test tab after Batch calculation in eDiscovery (Premium) to test, compare, and validate the overall quality of processing."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 titleSuffix: Office 365
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,9 +14,11 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to use the Test tab after Batch calculation in eDiscovery (Premium) to test, compare, and validate the overall quality of processing."
 ---
 
 # Test Relevance analysis in eDiscovery (Premium)
