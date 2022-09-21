@@ -376,7 +376,7 @@ The most common use case is to use network share group as an allow list as in th
 
 ### VPN settings
 
-When you list a VPN in **VPN Settings** you can assign these policy actions to the networks listed:
+When you list a VPN in **VPN Settings** you can assign these policy actions to them:
 
 - Allow (audit with no user notifications or alerts)
 - Audit only (you can add notifications and alerts)
@@ -396,15 +396,13 @@ used in conjunction with **Corporate network** designation in a policy
  
 
 
-When configuring a DLP policy to restrict activity on devices, you can control what happens to each activity performed when users are within any of the VPNs listed.
-You can define printers by these parameters:
+When configuring a DLP policy to restrict activity on devices, you can control what happens to each activity performed when users are connected to your organization within any of the VPNs listed.
 
-1. **Server address**  Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
-1. **Network address** 
+You define VPN by these parameters **Server address** or **Network address**. 
+
+#### 
 1. 
 1. 
-1. 
-1. USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 
 
 
