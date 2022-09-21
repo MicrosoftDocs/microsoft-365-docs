@@ -64,6 +64,8 @@ Data moves are a back-end service operation with minimal impact to end-users. Fe
 
 Data moves to the new datacenter geo are completed at no additional cost to the customer.
 
+During the migration process, Microsoft temporarily copies your address book data into Microsoft global resources where it is encrypted and only used to support business continuity and disaster recovery operations (BCDR).  After Microsoft has completed the mailbox data moves, Microsoft deletes that temporary data from the global resources.  Microsoft continues to invest in global and regional resources on a regular basis.  In calendar year 2023, Microsoft plans to utilize regional resources for BCDR purposes during the migration process.
+
 ## Related topics
 
 [How to request your data move](request-your-data-move.md)
