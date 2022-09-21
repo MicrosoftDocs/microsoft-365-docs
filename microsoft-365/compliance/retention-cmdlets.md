@@ -14,7 +14,6 @@ ms.collection:
 - M365-security-compliance
 - tier1
 - SPO_Content
-- m365initiative-compliance
 description: Identify the PowerShell cmdlets for Microsoft 365 retention that support configuration at-scale, automation, or might be needed for advanced configuration scenarios.
 ---
 
