@@ -60,7 +60,7 @@ With this change, you will be able to look at the NPS survey insights based on t
 
 To access, go to **Health** > **Product feedback** > **NPS survey insights tab**.
 
-:::image type="content" source="../media/nps-date-filter.png" alt-text="Screenshot: Date filter in the NPS survey insights dashboard":::
+:::image type="content" source="../media/nps-date-filter.png" alt-text="Screenshot: Date filter in the NPS survey insights dashboard" lightbox="../media/nps-date-filter.png":::
 
 Learn more about [NPS survey insights](/admin/manage/manage-feedback-product-insights).
 
