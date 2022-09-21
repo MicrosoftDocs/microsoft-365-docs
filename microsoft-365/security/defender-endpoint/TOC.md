@@ -247,6 +247,8 @@
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
+### [Built-in protection](built-in-protection.md)
+
 ### [Attack surface reduction]()
 #### [Attack surface reduction overview](overview-attack-surface-reduction.md)
 #### [Attack surface reduction (ASR) rules]()
@@ -298,7 +300,6 @@
 ###### [Monitor web security](web-protection-monitoring.md)
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
-
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -379,7 +380,9 @@
 ##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics and performance for Microsoft Defender Antivirus
-##### [Device health and compliance reports](machine-reports.md)
+##### [Device health reports](device-health-reports.md)
+###### [Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md)
+###### [Sensor health and OS report](device-health-sensor-health-os.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Collect diagnostic data of Microsoft Defender Antivirus](collect-diagnostic-data.md)
@@ -405,7 +408,6 @@
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](overview-endpoint-detection-response.md)
-#### [Security operations dashboard](security-operations-dashboard.md)
 #### [Submit files](admin-submissions-mde.md)
 #### [Incidents queue]()
 ##### [View and organize the Incidents queue](view-incidents-queue.md)
@@ -529,8 +531,8 @@
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Browser extensions]()
-####### [Export browser extentions assessment](get-assessment-browser-extensions.md)
-####### [Get browser extentions permission information](get-browser-extensions-permission-info.md)
+####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
+####### [Get browser extensions permission information](get-browser-extensions-permission-info.md)
 
 ###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)

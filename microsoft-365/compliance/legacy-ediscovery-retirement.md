@@ -1,9 +1,10 @@
 ---
 title: "Legacy eDiscovery tools retired"
+description: "In-Place eDiscovery and In-Place Hold (and the corresponding PowerShell cmdlets) in Exchange Online will be retired in the first half of 2020. The Search-Mailbox cmdlet and Microsoft Purview eDiscovery (Premium) v1.0 are also being retired within the same time period."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -11,9 +12,11 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
-description: "In-Place eDiscovery and In-Place Hold (and the corresponding PowerShell cmdlets) in Exchange Online will be retired in the first half of 2020. The Search-Mailbox cmdlet and Microsoft Purview eDiscovery (Premium) v1.0 are also being retired within the same time period."
 ---
 
 # Retirement of legacy eDiscovery tools

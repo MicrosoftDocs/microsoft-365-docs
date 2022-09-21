@@ -1,9 +1,10 @@
 ---
 title: "Export a Content search report"
+description: "Instead of exporting the actual results of a Content search in the Microsoft Purview compliance portal, you can export a search results report. The report contains a summary of the search results and a document with detailed information about each item that would be exported."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -11,16 +12,15 @@ f1_keywords:
 - 'ms.o365.cc.CustomizeExportReport'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
+- content-search
 search.appverid:
 - MOE150
 - MED150
 - MBS150
 - MET150
-ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: "Instead of exporting the actual results of a Content search in the Microsoft Purview compliance portal, you can export a search results report. The report contains a summary of the search results and a document with detailed information about each item that would be exported."
 ms.custom: seo-marvel-apr2020
 ---
 

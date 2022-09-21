@@ -8,10 +8,10 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 09/14/2022
 search.appverid: 
 - MOE150
 - MET150

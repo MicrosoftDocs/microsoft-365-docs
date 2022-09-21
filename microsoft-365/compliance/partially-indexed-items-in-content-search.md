@@ -1,9 +1,10 @@
 ---
 title: "Partially indexed items in Content Search"
+description: "Learn about unindexed items in Exchange and SharePoint that you can include in an eDiscovery search that you run in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/13/2022
 audience: Admin
@@ -12,15 +13,14 @@ f1_keywords:
 - 'ms.o365.cc.UnindexedItemsLearnMore'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
+- ediscovery
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: "Learn about unindexed items in Exchange and SharePoint that you can include in an eDiscovery search that you run in the Microsoft Purview compliance portal."
 ---
 
 # Partially indexed items in eDiscovery

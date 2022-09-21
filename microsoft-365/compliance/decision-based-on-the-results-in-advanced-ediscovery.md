@@ -1,9 +1,10 @@
 ---
 title: "Decision based on the results in eDiscovery (Premium)"
+description: "Learn how the Decide tab in eDiscovery (Premium) provides data that can help you determine the correct size of the review set of case files."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -13,10 +14,12 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: "Learn how the Decide tab in eDiscovery (Premium) provides data that can help you determine the correct size of the review set of case files."
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ---
 
 # Decisions based on Relevance results in eDiscovery (Premium)

@@ -1,21 +1,23 @@
 ---
 title: "Manage custodian communications templates in the Communications library in eDiscovery (Premium)"
+description: "You can add custodian communications templates (such as a template for hold notification) in eDiscovery (Premium) so they can be used in any case in your organization."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "You can add custodian communications templates (such as a template for hold notification) in eDiscovery (Premium) so they can be used in any case in your organization."
 ---
 
 # Manage custodian communications templates in eDiscovery (Premium)
