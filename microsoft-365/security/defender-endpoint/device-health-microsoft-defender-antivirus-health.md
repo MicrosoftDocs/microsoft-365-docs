@@ -275,7 +275,7 @@ Following are up-to-date definitions for security intelligence:
 
 | The security intelligence update is considered | If: |
 |:---|:---|
-|Up-to date | the security intelligence version on the device was written in the past seven days and the device has communicated with the report event in past seven days. |
+|**Up-to date** | the security intelligence version on the device was written in the past seven days and the device has communicated with the report event in past seven days. |
 
 For more information, see:
 
@@ -291,10 +291,10 @@ This card identifies devices that have antivirus engine versions that are up to 
 
 The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received (_signature refresh time_). If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days), then the status is automatically marked as ‘Unknown’ / ‘No Data Available’.
 
-| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
-|:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
-| > 7 days (old) | < 7 days (new) | _Unknown_ |
+| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | _Reported Status_: |
+|:----|:----|
+| < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
+| > 7 days (old) | _Unknown_ |
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -306,11 +306,10 @@ This card identifies devices that have Antivirus platform versions that are up t
 
 The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received (signature refresh time). If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days) then the status is automatically marked as ‘Unknown’/ ‘No Data Available’.
 
-| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
-|:----|:----|:----|
-|:----|:----|:----|
-| < 7 days (new) | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
-| > 7 days (old) | < 7 days (new) | _Unknown_ |
+| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | _Reported Status_: |
+|:----|:----|
+| < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
+| > 7 days (old) | _Unknown_ |
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -322,16 +321,12 @@ This card identifies devices that have security intelligence versions that are u
 
 The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, and the security intelligence publish time. If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days), then the status is automatically marked as ‘Unknown/ No Data Available’. Otherwise, the determination is made based on whether the security intelligence publish time is within seven days.
 
-| Event’s Last Refresh Time <br/> (Also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | Last status received from client | _Reported Status_: |
-|:----|:----|:----|:----|
-| >7 days (old) | >7 days (old) | Up to date | _Unknown_ |
-| <7 days (new) | >7 days (old) | Up to date | _Unknown_ |
-| >7 days (old) | <7 days (new) | Up to date |  _Unknown_ |
-| <7 days (new) | <7 days (new) | Unknown | _Unknown_|
-| <7 days (new) | <7 days (new) | Up to date | _Up to date_ |
-| >7 days (old) | <7 days (new) | Out of date | _Out of date_ |
-| >7 days (old) | >7 days (old) | Out of date | _Out of date_ |
-| <7 days (new) | >7 days (old) | Out of date | _Out of date_ |
+| Event’s Last Refresh Time <br/> (Also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
+|:----|:----|:----|
+| >7 days (old) | >7 days (old) | _Unknown_ |
+| <7 days (new) | >7 days (old) | _Out of date_ |
+| >7 days (old) | <7 days (new) |  _Unknown_ |
+| <7 days (new) | <7 days (new) | Up to date |
 
 ## See also
 
