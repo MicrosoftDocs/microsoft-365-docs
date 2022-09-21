@@ -13,7 +13,6 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
 ms.collection:
 - tier1
 - M365-security-compliance

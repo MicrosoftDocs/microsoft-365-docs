@@ -1,6 +1,6 @@
 ---
 title: "Isolation and Access Control in Microsoft 365"
-ms.author: kelleyvice-msft
+ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro

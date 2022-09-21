@@ -2,7 +2,7 @@
 title: "Privileged access management for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: kelleyvice-msft
+ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
