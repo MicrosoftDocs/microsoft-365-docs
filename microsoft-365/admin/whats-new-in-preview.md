@@ -62,7 +62,7 @@ To access, go to **Health** > **Product feedback** > **NPS survey insights tab**
 
 :::image type="content" source="../media/nps-date-filter.png" alt-text="Screenshot: Date filter in the NPS survey insights dashboard" lightbox="../media/nps-date-filter.png":::
 
-Learn more about [NPS survey insights](microsoft-365/admin/manage/manage-feedback-product-insights.md).
+Learn more about [NPS survey insights](admin/manage/manage-feedback-product-insights.md).
 
 For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
 
