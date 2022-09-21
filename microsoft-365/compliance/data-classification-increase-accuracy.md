@@ -68,7 +68,7 @@ This example shows you how to use the **Contextual Summary** tab to give feedbac
 1. Open the **Microsoft Purview compliance portal** > **Data classification** > **Content explorer** page.
 1. Type the name of the SIT or trainable classifier that you want to check matches for in **Filter on labels, info types, or categories**.
 1. Select the SIT.
-1. Select the location. Make sure that there's a non-zero value in the **File** column.
+1. Select the location. Only Sharepoint, OneDrive are supported locations here. Make sure that there's a non-zero value in the **File** column.
 1. Open the folder and select a document.
 1. Select the link in the **Sensitive info type** column for an item to see which SITs the item matched and the [confidence level](/microsoft-365/compliance/sensitive-information-type-learn-about.md#more-on-confidence-levels).
 1. Select **Close**
