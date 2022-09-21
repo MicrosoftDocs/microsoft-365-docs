@@ -238,7 +238,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
 1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
     - Configuration Key: `issupervised`
     - Value type: String
-    - Configuration Value: `issupervised`
+    - Configuration Value: `{{issupervised}}`
 
     > :::image type="content" source="images/ios-deploy-6.png" alt-text="The page from which to choose the format for the settings of the policy configuration" lightbox="images/ios-deploy-6.png":::
 
