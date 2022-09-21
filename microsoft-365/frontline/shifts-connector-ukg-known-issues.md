@@ -30,11 +30,11 @@ A UKG Dimensions instance should only be mapped to one team at any given time.
 
 However, when you use PowerShell or Microsoft Graph set up a connection, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
 
-## A user can’t perform actions in Shifts in the Teams web app after signing in with a different account
+## A user can’t perform some actions in Shifts in the Teams web app after signing in with a different account
 
-This issue can occur if a user who has multiple accounts in Teams switches accounts in the Teams web app in the same browser.
+This issue can occur if a user who has multiple accounts in Teams performs actions in Shifts that require single sign-on (SSO) in UKG Dimensions and that user switches accounts in the Teams web app in the same browser.
 
-For example, a user signs in to Teams, performs an action in Shifts that requires single sign-on (SSO) to UKG Dimensions, such as approve a time off request, and then signs out. The user then signs in to Teams using a different account and tries to perform an action in Shifts that requires SSO in UKG Dimensions.
+For example, a user signs in to Teams, approves a time off request, and then signs out. The user then signs in to Teams using a different account and tries to perform another action in Shifts that requires SSO in UKG Dimensions.
 
 In this scenario, a caching issue occurs in which the user is signed in to Teams and Shifts on one account and signed in to UKG Dimensions on the other account.
 
