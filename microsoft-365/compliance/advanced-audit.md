@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview Audit (Premium)"
+description: "Microsoft Purview Audit (Premium) provides new auditing capabilities to help your organization with forensic and compliance investigations."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
+- tier1
 - M365-security-compliance
-- SPO_Content
 - m365solution-audit
-- m365initiative-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
-description: "Microsoft Purview Audit (Premium) provides new auditing capabilities to help your organization with forensic and compliance investigations."
 ---
 
 # Microsoft Purview Audit (Premium)
