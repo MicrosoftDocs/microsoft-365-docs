@@ -50,6 +50,8 @@ You can extend the Teams DLP policy to cover SharePoint Online and OneDrive for 
 Office 365 and Microsoft 365 E3 include DLP protection for SharePoint Online, OneDrive, and Exchange Online. This also includes files that are shared through Teams because Teams uses SharePoint Online and OneDrive to share files.
 
 Support for DLP protection in Teams Chat requires E5.
+    
+If you are a Microsoft 365 E3/A3/G3 tenant and your organization is currently using DLP protection in Teams, the support for the same will end by March 2023 as Teams DLP is available to organizations with a Microsoft 365 E5/A5/G5 subscription. Post March 2023, for any active DLP policies that includes Teams, the policy will not be deleted/removed but the protection for Teams will be deactivated. If the policy includes protection for other workloads like SharePoint Online, OneDrive for Business, and Exchange Online in addition to Teams, the protection will continue to be active for all other workloads except Teams. You will not be able to create any new Teams DLP policy after March 2023. To continue your use of Teams DLP, we recommend you get a Microsoft 365 E5/A5/G5 subscription. You can contact your Business Administrator for assistance.
 
 To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
