@@ -284,7 +284,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 Always download the latest installer package before performing a new installation. After installation, ensure to regularly update using component updates described in the section [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016). The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
 
-- An operating system update can introduce an installation issue on machines with slower disks due to a timeout with service installation. Installation fails with the message "Could not find c:\program files\windows defender\mpasdesc.dll, - 310 WinDefend". Use the latest installation package, and the latest [install.ps1](https://github.com/microsoft/mdefordownlevelserver) script to assist in clearing the failed installation if required.
+- An operating system update can introduce an installation issue on machines with slower disks due to a timeout with service installation. Installation fails with the message "Could not find c:\program files\windows defender\mpasdesc.dll, - 310 WinDefend". Use the latest installation package, and the latest [install.ps1](https://github.com/microsoft/mdefordownlevelserver) script to help clear the failed installation if necessary.
 - Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They're equivalent to those requirements for Windows Server 2019.
 - We've identified an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used **and** the certificate revocation list (CRL) URLs aren't reachable from the SYSTEM account context. The immediate mitigation is to either use an alternative proxy option ("system-wide") that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
 Alternatively, use the instructions provided at [Workaround for a known issue with TelemetryProxyServer on disconnected machines](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) to install a certificate as a workaround.
@@ -393,7 +393,7 @@ For other Windows server versions, you have two options to offboard Windows serv
 > [!NOTE]
 > These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
-## Related topics
+## Related articles
 
 - [Onboard previous versions of Windows](onboard-downlevel.md)
 - [Onboard Windows 10 devices](configure-endpoints.md)
