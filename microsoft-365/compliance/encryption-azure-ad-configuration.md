@@ -109,11 +109,11 @@ When a user with a Microsoft account opens an encrypted document in this way, it
 However, the automatic guest account is not created immediately in this scenario, because of replication latency. If you specify personal email addresses as part of your encryption settings, we recommend that you create corresponding guest accounts in Azure Active Directory. Then let these users know that they must use this account to open an encrypted document from your organization.
 
 > [!TIP]
-> Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts (for specific users) or when you use [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (for any authenticated user) is a more reliable method to support secure collaboration with external users.
+> Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts (for specific users) or when you use [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (for any authenticated user) is a more reliable method to support secure collaboration with external users. 
 
 ## Next steps
 
-For configurations you might need to make for network infrastructure services, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure).
+For addition configurations you might need to make, see [Restrict access to a tenant](/azure/active-directory/manage-apps/tenant-restrictions). Specific to network infrastructure configuration for the Azure Information Protection service, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure).
 
 If you use [sensitivity labels](sensitivity-labels.md) to encrypt documents and emails, you might be interested in [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) to understand which label settings apply across tenants. For configuration guidance for the label encryption settings, see [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md).
 
