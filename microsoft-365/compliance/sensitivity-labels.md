@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-- tier1 
+- tier1
+- highpri
 - SPO_Content
 - m365solution-mip
 search.appverid: 
