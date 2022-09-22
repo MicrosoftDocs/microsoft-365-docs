@@ -71,10 +71,12 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Discover and apply a model
+          - text: Apply a model
             url: apply-a-model.md
           - text: Share an enterprise model
             url: model-discovery.md
+          - text: Discover other trained models
+            url: discover-other-trained-models.md
           - text: Add a retention label
             url: apply-a-retention-label-to-a-model.md
           - text: Add a sensitivity label
