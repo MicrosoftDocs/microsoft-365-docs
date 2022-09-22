@@ -38,7 +38,7 @@ To work around this issue, keep the time zone setting as is.
 
 ## Nothing happens when users select the "Start a break" and "End break" buttons in Shifts to start or end a break
 
-The start and end break capability of the time clock feature isn't supported in integrations with UKG Dimensions. Users won't be able to clock out or clock in to a break, even though the buttons are displayed in Shifts.
+The start and end break capability of the time clock feature isn't supported in an integration with UKG Dimensions. Users won't be able to clock out or clock in to a break, even though the buttons are displayed in Shifts.
 
 ## A user can’t perform some actions in Shifts in the Teams web app after signing in with a different account
 
