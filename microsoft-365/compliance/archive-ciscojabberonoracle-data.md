@@ -1,5 +1,6 @@
 ---
 title: "Set up a connector to archive Cisco Jabber on Oracle data in Microsoft 365"
+description: "Learn how to set up and use a connector in the Microsoft Purview compliance portal to import and archive data from Cisco Jabber on Oracle to Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,8 +11,10 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a connector in the Microsoft Purview compliance portal to import and archive data from Cisco Jabber on Oracle to Microsoft 365."
+ms.collection:
+- tier1
+- M365-security-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Cisco Jabber on Oracle data

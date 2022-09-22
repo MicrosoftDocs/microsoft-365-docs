@@ -1,5 +1,6 @@
 ---
 title: "Create activity alerts"
+description: Add and manage activity alerts in the Microsoft Purview compliance portal so that Microsoft 365 will send you email notifications when users perform specific activities.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,9 +17,10 @@ search.appverid:
 - MED150
 - BCS160
 - MET150
-ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ms.collection:
+- tier1
+- M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: Add and manage activity alerts in the Microsoft Purview compliance portal so that Microsoft 365 will send you email notifications when users perform specific activities
 ---
 
 # Create activity alerts
