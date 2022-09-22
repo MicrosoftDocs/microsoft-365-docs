@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -59,7 +61,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Manually apply, change, or remove label](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Multi-language support](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | Under review |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to new documents                                         | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to existing documents | Rolling out to Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: Under review  <br /><br> Semi-Annual Enterprise Channel: Under review | Rolling out to 16.63+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to existing documents | Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2207+  <br /><br> Semi-Annual Enterprise Channel: Under review | 16.63+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+  <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -73,7 +75,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF support](#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2208+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
-|[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: Rolling out to [Beta Channel](https://office.com/insider) |  Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review |
+|[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 ### Sensitivity label capabilities in Outlook
 
@@ -449,11 +451,11 @@ For end user documentation, see [Create protected PDFs from Office files](https:
 
 Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions.
 
-For supported apps, sensitivity labels are now displayed in a sensitivity bar, displaying next to the file name on the top window bar.  For example:
+For the supported apps, sensitivity labels are now displayed in a sensitivity bar, next to the file name on the top window bar. For example:
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
 
-Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support).
+Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [New sensitivity bar in Office for Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
 As part of this high visibility, these labels also support colors. For more information, see the next section.
 
@@ -462,7 +464,7 @@ As part of this high visibility, these labels also support colors. For more info
 > [!IMPORTANT]
 > If your labeling apps don't support this capability, they don't display the configured label colors.
 > 
-> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Word, Excel, and PowerPoint on Windows and macOS, but not Outlook or Office for the web. For more information, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Word, Excel, and PowerPoint on Windows, but not yet for Outlook, macOS, or Office for the web. For more information, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
 
 Newly created labels don't have a color by default. If your labels were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) or you configured label colors for the Azure Information Protection unified labeling client, these label colors are now displayed in apps that support them.
 
@@ -514,7 +516,3 @@ You can also create custom reports with your choice of security information and 
     - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
 - [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
-
-
-
-

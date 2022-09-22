@@ -1,7 +1,7 @@
 ---
 title: "Isolation and Access Control in Microsoft 365"
-ms.author: robmazz
-author: robmazz
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article

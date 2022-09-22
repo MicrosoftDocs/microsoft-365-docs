@@ -188,8 +188,8 @@ The following configuration settings are recommended:
   - `%TEMP%*.VHDX`
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
-  - `\\stroageaccount.file.core.windows.net\share**.VHD`
-  -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
+  - `\\storageaccount.file.core.windows.net\share**.VHD`
+  -  `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### Real-time Protection
 

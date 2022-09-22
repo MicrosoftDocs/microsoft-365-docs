@@ -1,5 +1,6 @@
 ---
 title: "Use Audit (Premium) to investigate compromised accounts"
+description: "Use the MailItemsAccessed mailbox auditing action to perform forensic investigations of compromised user accounts."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
+- tier1
 - M365-security-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-description: "Use the MailItemsAccessed mailbox auditing action to perform forensic investigations of compromised user accounts."
 ---
 
 # Use Microsoft Purview Audit (Premium) to investigate compromised accounts

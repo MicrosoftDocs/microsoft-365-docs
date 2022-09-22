@@ -105,7 +105,7 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
