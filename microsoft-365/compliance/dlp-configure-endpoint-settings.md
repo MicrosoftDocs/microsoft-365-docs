@@ -454,6 +454,8 @@ Get-VpnConnection
 > [!IMPORTANT]
 > When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** are all connections to your organization resources that are not through a VPN. The VPN list includes the connection to your organizations resources through those VPNs.
 
+See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
+
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)

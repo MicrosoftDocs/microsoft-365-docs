@@ -349,13 +349,13 @@ In this scenario, we'll define a group of printers that the legal department use
 
 13. The new DLP policy will appear in the policy list.
 
-## Scenario 8 Configure policy actions based on VPN
+## Scenario 8 Network exceptions
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
 In this scenario, we'll define a list of VPNs that hybrid workers use for accessing organization resources.
 
-### Create and use a Network exceptions
+### Create and use a Network exception
 
 Network exceptions enables you to configure Allow, Audit only, Block with override, and Block actions to the file activities based on the network that users are accessing the file from. You can select from the [VPN settings](dlp-configure-endpoint-settings.md#vpn-settings) list you defined and **Corporate network** option. The actions can be applied individually or collectively to these user activities:
 
