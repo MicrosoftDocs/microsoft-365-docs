@@ -97,8 +97,8 @@ Depending on the server that you're onboarding, the unified solution installs Mi
 
 If you've previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
->[!IMPORTANT]
->Before proceeding with onboarding, check the section [Known issues and limitations in the new, unified solution package for Windows Server 2012 R2 and 2016](#Known-issues-and-limitations-in-the-new,-unified-solution-package-for-Windows-Server-2012-R2-and-2016)
+> [!IMPORTANT]
+> Before proceeding with onboarding, see the section [Known issues and limitations in the new, unified solution package for Windows Server 2012 R2 and 2016](#known-issues-and-limitations-in-the-new-unified-solution-package-for-windows-server-2012-r2-and-2016).
 
 ### Prerequisites
 
