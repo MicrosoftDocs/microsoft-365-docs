@@ -158,4 +158,4 @@ If you're seeing high amounts of false positives, use these recommendations to f
 
 - Include more dictionary-based SITs as conditions to narrow down the matches to those that talk about the relevant articles. For example, a rule for matching patient diagnostics may be enhanced by requiring the presence of words like diagnostic, diagnosis, condition, symptom, and patient.
 
-- For a named entity SITs, like **All Full Names**, it’s best to set a higher instance count threshold, like 10 or 50. If both the person names and the SSNs are detected together, it’s more likely that the SSNs are truly SSNs, and we reduce the risk that the policy doesn’t trigger because not enough SSNs are detected.
+- For named entity SITs, like **All Full Names**, it’s best to set a higher instance count threshold, like 10 or 50. If both the person names and the SSNs are detected together, it’s more likely that the SSNs are truly SSNs, and we reduce the risk that the policy doesn’t trigger because not enough SSNs are detected.
