@@ -52,7 +52,7 @@ All our updates contain
 - Added a fix to resolve a missing intermediate certificate issue with the use of “TelemetryProxyServer” on Windows Server 2012 R2 running the unified agent
 - Enhanced DLP with ability to protect password protected and encrypted files and not label files
 - Enhanced DLP with support for context data in audit telemetry (short evidence)
-- Extended MDE client authentication support for VDI devices
+- Extended Microsoft Defender for Endpoint client authentication support for VDI devices
 - Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks
 - Contain feature updated giving ability to more devices to perform the Contain action and block discovered devices when these are contained
 - Expanded the troubleshooting mode to several desktop and server versions. For a complete list of supported OS versions and more information, refer: [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
