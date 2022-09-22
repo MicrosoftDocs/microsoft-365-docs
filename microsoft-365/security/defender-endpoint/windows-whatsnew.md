@@ -41,7 +41,7 @@ All our updates contain
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
-|Windows Server 2012 R2, 2016 |[KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1011|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1011|
 |Windows 11 21H2 (Cobalt)<br> (Windows 11 SV 21H2)     | [KB 5016691](https://support.microsoft.com/en-us/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)        | 10.8210.22000.918        |
 |Server 2022 (Iron)     | [KB 5016693](https://support.microsoft.com/en-us/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)        |10.8210.20348.946         |
 |Windows 10 20H2/21H1/21H2<br> Windows Server 20H2  (Vibranium)     | [KB 5016688](https://support.microsoft.com/en-us/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)       | 10.8210.19041.1949        |
@@ -50,14 +50,14 @@ All our updates contain
 **What's new**
 
 - Added a fix to resolve a missing intermediate certificate issue with the use of “TelemetryProxyServer” on Windows Server 2012 R2 running the unified agent
-- Enhanced DLP with ability to protect password protected and encrypted files and not label files
-- Enhanced DLP with support for context data in audit telemetry (short evidence)
-- Extended Microsoft Defender for Endpoint client authentication support for VDI devices
+- Enhanced Endpoint DLP with ability to protect password protected and encrypted files and not label files
+- Enhanced Endpoint DLP with support for context data in audit telemetry (short evidence)
+- Improved Microsoft Defender for Endpoint client authentication support for VDI devices
 - Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks
-- Contain feature updated giving ability to more devices to perform the Contain action and block discovered devices when these are contained
-- Expanded the troubleshooting mode to several desktop and server versions. For a complete list of supported OS versions and more information, refer: [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
-- Enhanced Live Response support provided: improved session creation latency when using proxies, undo Remediation manual command, supported OneDrive share in FindFile action, improved isolation and stability
-- Enhanced the [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management) feature by providing: ability to sync the device on demand instead of waiting for specific cadence, security hardening against attacks
+- The Contain feature now supports more desktop and server versions to perform the Contain action and block discovered devices when these are contained
+- Expanded the troubleshooting mode feature to additional desktop and server versions. For a complete list of supported OS versions and more information about prerequisites, see [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
+- Live Response improvements include reduced session creation latency when using proxies, an undo Remediation manual command, support for OneDrive share in FindFile action, and improved isolation and stability
+- [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management) now provides the ability to sync the device configuration on demand instead of waiting for a specific cadence
 
 <br/>
 </details>
