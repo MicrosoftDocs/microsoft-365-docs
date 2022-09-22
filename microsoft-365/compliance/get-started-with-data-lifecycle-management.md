@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - tier1
+- highpri
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
