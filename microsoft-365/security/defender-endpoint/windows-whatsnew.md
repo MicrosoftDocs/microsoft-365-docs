@@ -31,12 +31,17 @@ ms.subservice: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
+All our updates contain
+- Performance improvements
+- Serviceability improvements
+- Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
+
 <details>
   <summary>Aug-2022 (Release version: 10.8210.*)</summary>
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
-|Windows Server 2012 R2, 2016 |KB5005292|10.8210.22621.1011|
+|Windows Server 2012 R2, 2016 |[KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1011|
 |Windows 11 21H2 (Cobalt)<br> (Windows 11 SV 21H2)     | [KB 5016691](https://support.microsoft.com/en-us/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)        | 10.8210.22000.918        |
 |Server 2022 (Iron)     | [KB 5016693](https://support.microsoft.com/en-us/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)        |10.8210.20348.946         |
 |Windows 10 20H2/21H1/21H2<br> Windows Server 20H2  (Vibranium)     | [KB 5016688](https://support.microsoft.com/en-us/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)       | 10.8210.19041.1949        |
@@ -50,12 +55,9 @@ ms.subservice: mde
 - Extended MDE client authentication support for VDI devices
 - Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks
 - Contain feature updated giving ability to more devices to perform the Contain action and block discovered devices when these are contained
-- Expanded the Troubleshoot mode to several desktop and server versions. For a complete list of supported OS versions and more information, refer: [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
-- Enhanced security for MDE customers from advanced attacks
-- Enhanced investigation and detection experience
-- Incident Response for DART
+- Expanded the 'troubleshooting mode' to several desktop and server versions. For a complete list of supported OS versions and more information, refer: [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
 - Enhanced Live Response support provided: improved session creation latency when using proxies, undo Remediation manual command, supported OneDrive share in FindFile action, improved isolation and stability
-- Enhanced MDE Attach support provided: ability to sync the device on demand instead of waiting for specific cadence, security hardening against attacks
+- Enhanced the [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management)feature by providing: ability to sync the device on demand instead of waiting for specific cadence, security hardening against attacks
 
 <br/>
 </details>
