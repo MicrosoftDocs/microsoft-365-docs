@@ -284,6 +284,8 @@ Here are some examples:
 |*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
 
 
+
+
 ### Configure Sensitive service domains
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
@@ -294,10 +296,11 @@ Here are some examples:
 1. Select **Save**.
 1. Select **Policies**.
 1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
-1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
-1. In the action select **Add or remove Sensitive site groups**.
+1. Create a rule that uses the **The user accessed a sensitive site from Edge**, and the action **Audit or restrict activities on devices**.
+1. In **Service domain and browser activities** select **Upload to a restricted cloud service domain or access from an unallowed browser** and set the action to **Audit only**. This sets the overall action for all the site groups.
 1. Select the **Sensitive site groups** you want.
 1. Select **Add**.
+1. OPTIONAL: If you want to create an exception (usually an allowlist) to the overall action for one or more site groups, select **Configure sensitive service domain exceptions**, add the site group you want the exception for, configure the desired action and **Save** the configuration.
 1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
 1. Finish configuring the rule and policy and apply it.
 
