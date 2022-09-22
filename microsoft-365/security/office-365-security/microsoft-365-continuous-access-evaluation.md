@@ -77,11 +77,13 @@ The following Microsoft 365 services currently support continuous access evaluat
 |---|---|---|---|
 |**Critical events:**||||
 |User revocation|Supported|Supported|Supported|
-|User risk|Supported|Not supported|Not supported|
+|User risk|Supported|Not supported|Supported|
 |**Conditional Access policy evaluation:**||||
-|IP address location policy|Supported|Supported\*|Supported|
+|IP address location policy|Supported|Supported\*|Supported\**|
 
 \* SharePoint Office web browser access supports instant IP policy enforcement by enabling strict mode. Without strict mode, access token lifetime is one hour.
+
+\** Calls, meetings, and chat in Teams do not conform to IP-based Conditional Access policies yet.
 
 For more information about how to set up a Conditional Access policy, see [this article](/azure/active-directory/conditional-access/overview).
 
