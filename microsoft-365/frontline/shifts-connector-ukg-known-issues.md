@@ -30,6 +30,12 @@ A UKG Dimensions instance should only be mapped to one team at any given time.
 
 However, when you use PowerShell or Microsoft Graph to set up a connection, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
 
+## Frontline managers can select a time zone for a schedule in Shifts that's different from the time zone that's set in UKG Dimensions
+
+## Nothing happens when users tap the Start or Stop button in Shifts to start or end a break
+
+The start and end break capability of the time clock feature isn't supported in integrations with UKG Dimensions. Users can't clock out or clock in to a break, even though the buttons are displayed in Shifts.
+
 ## A user can’t perform some actions in Shifts in the Teams web app after signing in with a different account
 
 This issue can occur if a user who has multiple accounts in Teams performs actions in Shifts that require single sign-on (SSO) in UKG Dimensions and that user switches accounts in the Teams web app in the same browser.
