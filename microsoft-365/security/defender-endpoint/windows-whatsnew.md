@@ -57,7 +57,7 @@ All our updates contain
 - Contain feature updated giving ability to more devices to perform the Contain action and block discovered devices when these are contained
 - Expanded the 'troubleshooting mode' to several desktop and server versions. For a complete list of supported OS versions and more information, refer: [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
 - Enhanced Live Response support provided: improved session creation latency when using proxies, undo Remediation manual command, supported OneDrive share in FindFile action, improved isolation and stability
-- Enhanced the [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management)feature by providing: ability to sync the device on demand instead of waiting for specific cadence, security hardening against attacks
+- Enhanced the [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management) feature by providing: ability to sync the device on demand instead of waiting for specific cadence, security hardening against attacks
 
 <br/>
 </details>
