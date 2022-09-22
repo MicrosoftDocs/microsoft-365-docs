@@ -32,9 +32,9 @@ However, when you use PowerShell or Microsoft Graph to set up a connection, itâ€
 
 ## Frontline managers can select a time zone for a schedule in Shifts that's different from the time zone that's set in UKG Dimensions
 
-The time zone setting for schedules in Shifts are synced from UKG Dimensions. Changing the time zone to one that's different from what's configured in UKG Dimensions can result in syncing issues and unexpected behavior.
+The time zone setting of schedules in Shifts is synced from UKG Dimensions. However, it's possible for frontline managers to change the time zone of a schedule in Shifts to one that's different from what's configured in UKG Dimensions. Doing so can result in syncing issues and unexpected behavior.
 
-To work around this issue, don't change the time zone setting for schedules in Shifts.
+To work around this issue, keep the time zone setting as is.
 
 ## Nothing happens when users select the "Start a break" and "End break" buttons in Shifts to start or end a break
 
