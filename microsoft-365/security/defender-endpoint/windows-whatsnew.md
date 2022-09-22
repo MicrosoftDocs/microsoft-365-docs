@@ -31,7 +31,7 @@ ms.subservice: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-All our updates contain
+All updates contain:
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
@@ -49,15 +49,15 @@ All our updates contain
 
 **What's new**
 
-- Added a fix to resolve a missing intermediate certificate issue with the use of “TelemetryProxyServer” on Windows Server 2012 R2 running the unified agent
-- Enhanced Endpoint DLP with ability to protect password protected and encrypted files and not label files
-- Enhanced Endpoint DLP with support for context data in audit telemetry (short evidence)
-- Improved Microsoft Defender for Endpoint client authentication support for VDI devices
-- Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks
-- The Contain feature now supports more desktop and server versions to perform the Contain action and block discovered devices when these are contained
-- Expanded the troubleshooting mode feature to additional desktop and server versions. For a complete list of supported OS versions and more information about prerequisites, see [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md)
-- Live Response improvements include reduced session creation latency when using proxies, an undo Remediation manual command, support for OneDrive share in FindFile action, and improved isolation and stability
-- [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management) now provides the ability to sync the device configuration on demand instead of waiting for a specific cadence
+- Added a fix to resolve a missing intermediate certificate issue with the use of “TelemetryProxyServer” on Windows Server 2012 R2 running the unified agent.
+- Enhanced Endpoint DLP with ability to protect password protected and encrypted files and not label files.
+- Enhanced Endpoint DLP with support for context data in audit telemetry (short evidence).
+- Improved Microsoft Defender for Endpoint client authentication support for VDI devices.
+- Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks.
+- The Contain feature now supports more desktop and server versions to perform the Contain action and block discovered devices when these are contained.
+- Expanded the troubleshooting mode feature to additional desktop and server versions. For a complete list of supported OS versions and more information about prerequisites, see [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md).
+- Live Response improvements include reduced session creation latency when using proxies, an undo Remediation manual command, support for OneDrive share in FindFile action, and improved isolation and stability.
+- [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management) now provides the ability to sync the device configuration on demand instead of waiting for a specific cadence.
 
 <br/>
 </details>
