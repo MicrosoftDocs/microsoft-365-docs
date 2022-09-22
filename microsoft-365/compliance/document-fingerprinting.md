@@ -47,7 +47,7 @@ The patent template contains the blank fields "Patent title," "Inventors," and "
 For example, you might want to set up a DLP policy that prevents regular employees from sending outgoing messages containing patents. DLP will use the patent fingerprint to detect patents and block those emails. Alternatively, you might want to let your legal department to be able to send patents to other organizations because it has a business need for doing so. You can allow specific departments to send sensitive information by creating exceptions for those departments in your DLP policy, or you can allow them to override a policy tip with a business justification.
 
 > [!IMPORTANT]
-> Currently embedded documents text is not considered for fingerprint creation and hence for best experience please do provide flat template files.
+> Currently embedded documents text is not considered for fingerprint creation, therefore, for the best experience you should provide flat template files.
 
 ### Supported file types
 
