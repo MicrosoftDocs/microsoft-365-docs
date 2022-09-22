@@ -387,7 +387,7 @@ You include network share paths by defining the prefix that they all start with.
     - '\\Users\*\Desktop'
 
 - You can use Environmental variables, for example:
-    - EDWIN CHAN TO PROVIDE EXAMPLE
+    - %AppData%\app123
 
 You can assign these policy actions to the group in a DLP policy:
 
