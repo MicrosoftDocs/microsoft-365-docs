@@ -181,8 +181,8 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
+|Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Reports: Device health|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
-|Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 |Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 > [!NOTE]
@@ -190,10 +190,6 @@ These are the known gaps:
 
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
-
-<br />
-
-****
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
