@@ -39,7 +39,7 @@ ms.subservice: mde
 
 Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
-This topic describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
+This article describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](/windows/device-security/windows-security-baselines).
 
@@ -85,7 +85,7 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 
 The previous implementation (before April of 2022) of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA).
 
-The new unified solution package makes it easier to onboard servers by removing dependencies and installation steps. It also provides a much expanded feature set. For more information please refer to [Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
+The new unified solution package makes it easier to onboard servers by removing dependencies and installation steps. It also provides a much expanded feature set. For more information, please refer to [Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
 Depending on the server that you're onboarding, the unified solution installs Microsoft Defender Antivirus and/or the EDR sensor. The following table indicates what component is installed and what is built in by default.
 
@@ -104,7 +104,7 @@ If you've previously onboarded your servers using MMA, follow the guidance provi
 
 #### Prerequisites for Windows Server 2012 R2
 
-If you've fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/windows-8-1-and-windows-server-2012-r2-update-history-47d81dd2-6804-b6ae-4112-20089467c7a6) package, there are **no** other prerequisites and the below requirements will already be filled. This is the recommended path.
+If you've fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/windows-8-1-and-windows-server-2012-r2-update-history-47d81dd2-6804-b6ae-4112-20089467c7a6) package, there are **no other prerequisites, and the following requirements will already be filled. This is the recommended path.
 
 The installer package will check if the following components have already been installed via an update to assess if minimum requirements have been met for a successful installation:
 
@@ -112,7 +112,8 @@ The installer package will check if the following components have already been i
 - [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 - [Security Update for Windows Server 2012 R2 (KB3045999)](https://support.microsoft.com/en-us/topic/ms15-038-description-of-the-security-update-for-windows-april-14-2015-99265f07-6926-d6d2-5203-3b32b214a9c3)
 
-> [!NOTE] After installation, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
+> [!NOTE]
+> After installation, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 
 #### Prerequisites for Windows Server 2016
 
@@ -146,7 +147,7 @@ You'll need to download both the **installation** and **onboarding** packages fr
 
 > [!NOTE]
 > The installation package is updated monthly. Be sure to download the latest package before usage.
-> To update after installation, you do not have to run the installer package again. If you do, the installer will ask you to offboard first as that is a requirement for uninstallation. See [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#Update-packages-for-Microsoft-Defender-for-Endpoint-on-Windows-Server-2012-R2-and-2016)
+> To update after installation, you do not have to run the installer package again. If you do, the installer will ask you to offboard first as that is a requirement for uninstallation. See [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016).
 
 > [!div class="mx-imgBorder"]
 > ![Image of onboarding dashboard](images/install-agent-onboard.png)
@@ -163,7 +164,7 @@ The **onboarding package** contains the following files:
 - `OptionalParamsPolicy` - contains the setting that enables sample collection
 - `WindowsDefenderATPOnboardingScript.cmd` - contains the onboarding script
 
-Use the following steps to download the packages:
+Follow these steps to download the packages:
 
 1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
 
@@ -229,15 +230,15 @@ This script can be used in various scenarios, including those scenarios describe
 
 ##### Apply the Microsoft Defender for Endpoint installation and onboarding packages using Group policy
 
-1. Create a group policy: <br> Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click **Group Policy Objects** you want to configure and click **New**. Enter the name of the new GPO in the dialogue box that is displayed and click **OK**.
+1. Create a group policy: <br> Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click **Group Policy Objects** you want to configure and select **New**. Enter the name of the new GPO in the dialogue box that is displayed and select **OK**.
 
-2. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+2. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and select **Edit**.
 
 3. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
 
 4. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate Task (At least Windows 7)**.
 
-5. In the **Task** window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM and then click **Check Names** then **OK**. NT AUTHORITY\SYSTEM appears as the user account the task will run as.
+5. In the **Task** window that opens, go to the **General** tab. Under **Security options** select **Change User or Group** and type SYSTEM and then select **Check Names** then **OK**. NT AUTHORITY\SYSTEM appears as the user account the task will run as.
 
 6. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
@@ -259,7 +260,7 @@ This script can be used in various scenarios, including those scenarios describe
 
 9. Select **OK** and close any open GPMC windows.
 
-10. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
+10. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Select **OK**.
 
 For more configuration settings, see [Configure sample collection settings](configure-endpoints-gp.md#configure-sample-collection-settings) and [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
@@ -281,9 +282,9 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 #### Known issues and limitations in the new, unified solution package for Windows Server 2012 R2 and 2016
 
-Always download the latest installer package before performing a new installation. After installation, ensure to regularly update using [component updates](#Update-packages-for-Microsoft-Defender-for-Endpoint-on-Windows-Server-2012-R2-and-2016). The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
+Always download the latest installer package before performing a new installation. After installation, ensure to regularly update using component updates described in the section [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016). The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
 
-- An operating system update can introduce an installation issue on machines with slower disks due to a timeout with service installation. Installation fails with the message "Could not find c:\program files\windows defender\mpasdesc.dll, - 310 WinDefend". Please use the latest installation package, as well as the latest [install.ps1](https://github.com/microsoft/mdefordownlevelserver) script to assist in clearing the failed installation if required.
+- An operating system update can introduce an installation issue on machines with slower disks due to a timeout with service installation. Installation fails with the message "Could not find c:\program files\windows defender\mpasdesc.dll, - 310 WinDefend". Use the latest installation package, and the latest [install.ps1](https://github.com/microsoft/mdefordownlevelserver) script to assist in clearing the failed installation if required.
 - Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They're equivalent to those requirements for Windows Server 2019.
 - We've identified an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used **and** the certificate revocation list (CRL) URLs aren't reachable from the SYSTEM account context. The immediate mitigation is to either use an alternative proxy option ("system-wide") that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
 Alternatively, use the instructions provided at [Workaround for a known issue with TelemetryProxyServer on disconnected machines](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) to install a certificate as a workaround.
