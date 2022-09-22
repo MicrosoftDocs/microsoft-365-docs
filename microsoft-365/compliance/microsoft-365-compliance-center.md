@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview compliance portal"
+description: Learn about the Microsoft Purview compliance portal, including what it contains, how to get it, and your next steps.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,8 +10,9 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Learn about the Microsoft Purview compliance portal, including what it contains, how to get it, and your next steps.
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
 ms.custom: 
 - admindeeplinkCOMPLIANCE
 - intro-overview
