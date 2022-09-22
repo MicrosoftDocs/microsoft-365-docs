@@ -1,5 +1,6 @@
 ---
 title: "Collect cloud attachments in eDiscovery (Premium)"
+description: "Use collections in Microsoft Purview eDiscovery (Premium) to collect cloud attachments for review in an investigation or case." 
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,11 +12,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Use collections in Microsoft Purview eDiscovery (Premium) to collect cloud attachments for review in an investigation or case." 
 ---
 
 # Collect cloud attachments in Microsoft Purview eDiscovery (Premium)

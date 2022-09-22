@@ -1,11 +1,11 @@
 ---
 title: "Check your search query for errors"
+description: "Learn how to detect errors and typos in your keyword query for eDiscovery searches before running the search."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,7 +15,10 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: "Learn how to detect errors and typos in your keyword query for eDiscovery searches before running the search."
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ---
 
 # Check your search query for errors
