@@ -94,7 +94,7 @@ Many sites do not require security trimming, as the navigation structure is ofte
 
 ### How to implement managed navigation and the results
 
-There are several articles on Microsoft Docs about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+There are several articles on Microsoft Learn about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 In order to implement managed navigation, you set up terms with URLs corresponding to the navigation structure of the site. Managed navigation can even be manually curated to replace structural navigation in many cases. For example:
 
