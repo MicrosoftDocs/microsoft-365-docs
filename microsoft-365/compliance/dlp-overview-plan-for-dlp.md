@@ -10,7 +10,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- tier1
+- highpri 
 - M365-security-compliance
 search.appverid: 
 - MET150
