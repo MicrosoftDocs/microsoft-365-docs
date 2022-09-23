@@ -45,7 +45,7 @@ Method|Return Type|Description
 [List exposure score by device group](get-machine-group-exposure-score.md)|[Score](score.md)|List scores by device group.
 
 > [!NOTE]
-> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.  
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## Properties
 

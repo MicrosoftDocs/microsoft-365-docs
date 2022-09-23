@@ -51,7 +51,7 @@ Defender for Endpoint RBAC is designed to support your tier- or role-based model
 - **Control who can see information on specific device group or groups**
   - [Create device groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
     > [!NOTE]
-    > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.  
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 

@@ -40,7 +40,7 @@ Depending on
 remediation actions can occur automatically or only upon approval by your organization's security operations team.
 
 > [!NOTE]
-> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.  
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 Here are a few examples:
 
