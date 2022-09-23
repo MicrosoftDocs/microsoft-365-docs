@@ -218,7 +218,7 @@
                   href: multi-geo-add-group-with-pdl.md
                 - name: Delete a geo location
                   href: delete-a-geo-location.md
-                - name: Data Residency FAQ
+                - name: Multi-geo FAQ
                   href: m365-dr-faq.md
         - name: Workload Data Residency Capabilities
           items:
