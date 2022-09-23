@@ -30,6 +30,7 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 ## PowerShell commands
 
 - Set-MpPreference -EnableControlledFolderAccess Enabled
+### State
 - Enabled = Block mode (1)
 - AuditMode = Audit Mode (2)
 - Disabled = Off (0)
@@ -42,24 +43,24 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 
 ### Setup
 
-Download and run this setup script. Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
+Download and run this [setup script](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
 Downloaded CFA tool will be in the c:/demo/CFATestFiles folder.
 
 You can perform these manual steps instead:
 
 1. Turn on CFA using powershell command: Set-MpPreference -EnableControlledFolderAccess Enabled
-2. Download the CFA test tool
+2. Download the [CFA test tool](https://demo.wd.microsoft.com/Content/CFAtool.exe)
 3. Execute PowerShell commands above
 
 ### Scenario 1: Use the CFA test tool to simulate an untrusted process writing to a protected folder
 
 1. Launch CFA test tool
 2. Select the desired folder and create file
-3. You can find more information here
+3. You can find more information [here](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access)
 
 ## Clean-up
 
-Download and run this [cleanup script]. You can perform these manual steps instead:
+Download and run this [cleanup script](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip). You can perform these manual steps instead:
 
 - Set-MpPreference -EnableControlledFolderAccess Disabled
 
