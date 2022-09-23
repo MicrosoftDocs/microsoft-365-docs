@@ -4,7 +4,7 @@ description: Shows how Network protection prevents employees from using any appl
 keywords: network protection, protect against phishing scams, protect against exploits, protect against malicious content, demonstration 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Network protection demonstrations
