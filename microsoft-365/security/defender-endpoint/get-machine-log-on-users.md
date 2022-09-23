@@ -55,6 +55,8 @@ Delegated (work or school account) | User.Read.All | 'Read user profiles'
 >
 > - The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md).
 > - Response will include users only if the device is visible to the user, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 

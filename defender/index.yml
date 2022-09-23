@@ -28,7 +28,7 @@ highlightedContent:
     # Card
     - title: Learn modules for Azure security 
       itemType: learn
-      url: /learn/browse/?products=azure&subjects=security     
+      url: /training/browse/?products=azure&subjects=security     
     # Card
     - title: Microsoft 365 security documentation
       itemType: overview
@@ -36,7 +36,7 @@ highlightedContent:
     # Card
     - title: Learn modules for Microsoft 365 Defender
       itemType: learn
-      url: /learn/m365/defender
+      url: /training/m365/defender
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

@@ -1,20 +1,22 @@
 ---
 title: "Add non-custodial data sources to an eDiscovery (Premium) case"
+description: "You can add non-custodial data sources to an eDiscovery (Premium) case and place a hold on the data source. Non-custodial data sources are reindexed, so any content that was marked as partially indexed is reprocessed to make it fully and quickly searchable." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-description: "You can add non-custodial data sources to an eDiscovery (Premium) case and place a hold on the data source. Non-custodial data sources are reindexed, so any content that was marked as partially indexed is reprocessed to make it fully and quickly searchable." 
 ---
 
 # Add non-custodial data sources to an eDiscovery (Premium) case
