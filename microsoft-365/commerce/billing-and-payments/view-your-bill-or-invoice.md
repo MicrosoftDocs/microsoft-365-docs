@@ -45,7 +45,7 @@ You must be a Global or Billing admin to do the steps described in this article.
   
 ## Watch: View, download, or print your bill
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197915).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2209539).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 
