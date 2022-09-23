@@ -26,20 +26,20 @@ To use SharePoint Syntex, each Syntex user must have a license for it. If you ca
  
 The following tasks require a [SharePoint Syntex license](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) for the user performing them:
  
-- Applying a **Classify and extract by text pattern** model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
-- Creating an **Extract by layout** model or an **Extract by text pattern and layout** model via the entry point in a library
-- Uploading content to a library where a custom model has been applied
-- Running a **Classify and extract by text pattern** model on-demand
-- Creating a modern template with content assembly
-- Generating a document from a modern template
+- Apply an unstructured document processing model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
+- Create a structured document processing model or a freeform document processing model via the entry point in a library
+- Upload content to a library where a custom model has been applied
+- Run an unstructured document processing model on-demand
+- Create a modern template with content assembly
+- Generate a document from a modern template
 - Use of advanced metadata search
-- Use premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
+- Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
  
 ## Cost of training and running models
  
-The cost of training and running **Classify and extract by text pattern** models is included in the cost of a SharePoint Syntex license. However, the **Extract by layout** and **Extract by text pattern and layout** models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
+The cost of training and running unstructured document processing models is included in the cost of a SharePoint Syntex license. However, the structured document processing and freeform document processing models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
 
 For each SharePoint Syntex license, you are allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active SharePoint Syntex license. (Unused credits don't roll over from month to month.) 
 
@@ -56,7 +56,6 @@ Having one or more SharePoint Syntex licenses in your organization enables the f
 - SKOS-based term set import
 - Pushing enterprise content types to a hub site, which also adds them to the associated sites and any newly created lists or libraries
 - Term store reports providing insights into published term sets and their use across your tenant
-
 
 ## See also
 
