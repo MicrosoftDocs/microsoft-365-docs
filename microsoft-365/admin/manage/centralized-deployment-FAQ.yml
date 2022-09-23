@@ -67,14 +67,19 @@ sections:
       - question: |
           Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins? 
         answer: |
-          Yes. Centralized Deployment provides admins the flexibility to choose one of two deployment methods for Outlook add-ins during add-in deployment:
+          Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:
                    
+          **Fixed**
+          The add-in will be automatically deployed to the assigned users and they will not be able to remove it from their ribbon.
+          
           **Available**
           Users can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.
            
           **Optional**
           The add-in is deployed automatically to the assigned users, but they can choose to remove it.
-              
+          >[!NOTE]
+          >Integrated Apps don't have this option available; however, admins can still use the legacy Add-in page to perform this under **Settings** > **Integrated Apps**, and then selecting the **Add-in** link.
+          :::image type="content" source="../../media/addin-links.png" alt-text="Adoption Score page in Reports." lightbox="../../media/addin-links.png":::  
       - question: |
           Can admins update Line-of-Business (LOB) add-ins? 
         answer: |

@@ -3,6 +3,7 @@ title: Getting started with defense in-depth configuration for email security
 description: Step-by-step configuration guidance on how to get security value from Microsoft Defender for Office 365 when you have third party email filtering.
 search.product: 
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
 ---
 

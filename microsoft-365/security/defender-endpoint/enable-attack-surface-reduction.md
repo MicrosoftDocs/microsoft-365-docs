@@ -277,6 +277,9 @@ Example:
 
 6. After the policy is created, select **Close**.
 
+> [!WARNING]
+> There is a known issue with the applicability of Attack Surface Reduction on Server OS versions which is marked as compliant without any actual enforcement. Currently, there is no ETA for when this will be fixed.
+
 ### Group Policy
 
 > [!WARNING]

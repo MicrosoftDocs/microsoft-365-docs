@@ -1,20 +1,22 @@
 ---
 title: "Import custodians to an eDiscovery (Premium) case"
+description: "Use the bulk-import tool to quickly add multiple custodians and their associated data sources to a case in Microsoft Purview eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150 
-description: "Use the bulk-import tool to quickly add multiple custodians and their associated data sources to a case in Microsoft Purview eDiscovery (Premium)."
 ---
 
 # Import custodians to an eDiscovery (Premium) case
