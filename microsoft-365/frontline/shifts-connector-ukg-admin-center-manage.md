@@ -40,7 +40,9 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 
     :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
 
-    - To view more details about a connection, click the connection name. On the details page, you'll see health information, including mapping and account authorization errors and warnings (if any), the list of mappings, and more.
+    - To view more details about a connection, click the connection name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings, and more.
+
+     For a complete list of errors and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
 
       :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 
@@ -50,6 +52,19 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
   
 > [!NOTE]
 > You can also go directly to the Connector Management page when you select the **Connector Management** button on the last page of the wizard during connection setup.
+
+## List of error messages
+
+Here's the list of error messages that you may encounter and information to help you resolve them.
+
+|Error type |Error details |Resolution  |
+|---------|---------|---------|
+|Unable to authenticate workforce management system.|The workforce management system account credentials you've provided are invalid or this account doesn't have the required permissions.|Update your WFM service account credentials. To do this, do one of the following:<ul><li>On the Connector Management page of the Microsoft 365 admin center, click **Edit** next to the connection name to go to the Shifts connector wizard.</li><li>Use the Set-CsTeamsShiftsConnectionInstance or the Update-CsTeamsShiftConnectionInstance cmdlet.</li></ul>|
+|Unable to authenticate Graph. |Authentication failed. Ensure that you've entered valid credentials for the designated actor and have the required permissions.|Make sure that your Microsoft 365 system account (also known as designated actor) is added as a team owner or update your Microsoft 365 system account in the connection settings.|
+|Some users have failed to map correctly|Mapping failed for some users: <X> succeeded, <X> failed AAD user(s) and <X> failed workforce management system user(s).|Use the Get-CsTeamsShiftsConnectionSyncResult cmdlet to find the user for whom the mapping failed. Make sure that the users in the mapped team match the users in the WFM instance.|
+|Unable to map a team or teams in this batch. |This designated actor profile doesn't have team ownership privileges. |Make sure your Microsoft 365 system account (also known as designated actor) is added as a team owner. <br>If you’ve changed your Microsoft 365 system account, add that account as a team owner and update the connection settings to use that account.|
+|    |This team is already mapped to an existing connector instance. |Either unmap the team from the existing connection by using the Remove-CsTeamsShiftsConnectionTeamMap cmdlet or create a new connection to remap the team.|
+
 
 ## Related articles
 
