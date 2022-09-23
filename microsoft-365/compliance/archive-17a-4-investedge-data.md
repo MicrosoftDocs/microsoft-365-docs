@@ -1,17 +1,20 @@
 ---
 title: "Set up a connector to archive InvestEdge data in Microsoft 365"
+description: "Learn how to set up and use a 17a-4 InvestEdge DataParser connector to import and archive InvestEdge data in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a 17a-4 InvestEdge DataParser connector to import and archive InvestEdge data in Microsoft 365."
+ms.collection:
+- tier1
+- M365-security-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive InvestEdge data
