@@ -22,7 +22,9 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
+
 # Zero Trust identity and device access configurations
 
 Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization's technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
@@ -82,7 +84,7 @@ Watch this video for a quick overview of identity and device access configuratio
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which includes Azure AD (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which include Azure AD (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
 
 ### Customer environment
 
@@ -173,12 +175,6 @@ This guidance shows you how to create recommended policies to enforce the use of
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange, SharePoint, and OneDrive. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
 - [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
-
-  Recommendations that apply to starting point security for your tenant.
-
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
-
-  Recommendations that include logging, data governance, admin access, and threat protection.
 
 ### Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise
 

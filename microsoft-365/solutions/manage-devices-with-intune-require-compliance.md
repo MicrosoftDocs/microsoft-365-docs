@@ -10,9 +10,10 @@ manager: dougeby
 audience: ITPro
 description: Create a conditional access policy in Azure AD to require compliant devices, keeping corporate data secure when users work from any device in any location.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - Conditional access policy
 - Microsoft Intune
 - M365-security-compliance

@@ -3,6 +3,7 @@ title: 'Microsoft Defender Threat Intelligence (Defender TI) Data Sets'
 description: 'In this overview article, learn about Microsoft Defender Threat Intelligence (Defender TI)’s data sets feature.'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
@@ -15,7 +16,7 @@ Microsoft centralizes numerous data sets into a single platform, Microsoft Defen
 
 Microsoft collects, analyzes, and indexes internet data to assist users in detecting and responding to threats, prioritizing incidents, and proactively identifying adversaries’ infrastructure associated with actor groups targeting their organization. Microsoft collects internet data via its’ PDNS sensor network, global proxy network of virtual users, port scans, and leverages third-party sources for malware and added Domain Name System (DNS) data.
 
-This internet data is categorized into two distinct groups: traditional and advanced. Traditional data sets include Resolutions, Whois, SSL Certificates, Subdomains, Hashes, DNS, Reverse DNS, and Services. Advanced data sets include Trackers, Components, Host Pairs, and Cookies. Trackers, Components, Host Pairs, and Cookies data sets are collected from observing the Document Object Model (DOM) of web pages crawled. Additionally, Components and Trackers are also observed from detection rules that are triggered based on the banner responses from port scans or SSL Certificate details.
+This internet data is categorized into two distinct groups: traditional and advanced. Traditional data sets include Resolutions, Whois, SSL Certificates, Subdomains, DNS, Reverse DNS, and Services. Advanced data sets include Trackers, Components, Host Pairs, and Cookies. Trackers, Components, Host Pairs, and Cookies data sets are collected from observing the Document Object Model (DOM) of web pages crawled. Additionally, Components and Trackers are also observed from detection rules that are triggered based on the banner responses from port scans or SSL Certificate details.
 
 ![Data Sets Edge Screenshot](media/dataSetsEdgeScreenshot.png)
 
@@ -224,7 +225,7 @@ When a user expands on a SHA1 hash, the user will be able to see details about t
 
 ## Subdomains
 
-A subdomain is an internet domain, which is part of a primary domain. Subdomains are also referred to as "hosts". As an example, "docs.microsoft.com" is a subdomain of "microsoft.com". For every subdomain, there could be a new set of IP addresses to which the domain resolves to and this can be a great data source for finding related infrastructure.
+A subdomain is an internet domain, which is part of a primary domain. Subdomains are also referred to as "hosts". As an example,`learn.microsoft.com` is a subdomain of `microsoft.com`. For every subdomain, there could be a new set of IP addresses to which the domain resolves to and this can be a great data source for finding related infrastructure.
 
 Our subdomain data includes the following:
 
@@ -375,37 +376,6 @@ Our host pair data includes the following:
 - Where are users being redirected from/to?
 
 - What type of redirection is taking place?
-
-## Hashes
-
-Microsoft partners with Proofpoint to surface MD5 [malware](/microsoft-365/security/intelligence/malware-naming) hashes associated with the domain, host, or IP address a user search. Users are encouraged to purchase an Emerging Threats license by Proofpoint if they wish to analyze MD5 hash details. This data helps users understand actor capabilities, intent, and motives of an attacker while also aiding in connecting infrastructure together. Each result contains a unique hash.
-
-Our hash data includes the following:
-
-- **Source:** the source used to detect the hash.
-- **Sample:** the unique identification code for the detected hash.
-- **Collection Date:** the day that the hash sample was collected by the designated source.
-
-![Data Tab Hashes](media/dataTabHashes.png)
-
-**Questions this data set may help answer:**
-
-- Does the domain connect to malware
-
-    ![Data Sets Hashes](media/dataSetsHashes.png)
-
-- Does this IP address have malware associated with it?
-    ![Data Sets IP Hashes](media/dataSetsIPHashes.png)
-
-- Are the hashes collected associated with malware?
-
-- How recently was this suspicious activity observed?
-
-- Which vendors/ sources have observed malicious binaries?
-
-- Has the IP or domain queried served as a command-and-control server for malware?
-
-- Can evaluating the file associated with the hash for a given query lead me to other indicators for threat hunting purposes?
 
 ## Cookies
 

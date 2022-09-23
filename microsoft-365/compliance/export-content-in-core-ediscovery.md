@@ -1,23 +1,23 @@
 ---
 title: "Export and download content from a eDiscovery (Standard) case"
+description: "Describes how to export and download content from a eDiscovery (Standard) case in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
-- SPO_Content
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
-description: "Describes how to export and download content from a eDiscovery (Standard) case in Microsoft 365."
 ---
 
 # Export content from a eDiscovery (Standard) case

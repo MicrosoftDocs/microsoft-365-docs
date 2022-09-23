@@ -7,9 +7,10 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework

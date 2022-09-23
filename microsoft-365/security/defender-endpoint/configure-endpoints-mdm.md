@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard Windows devices to Defender for Endpoint using Intune 

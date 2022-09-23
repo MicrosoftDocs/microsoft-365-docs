@@ -2,16 +2,15 @@
 title: "Privileged access management for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
+ms.collection:
+- tier3
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Use this Test Lab Guide to enable privileged access management your Microsoft 365 for enterprise test environment.

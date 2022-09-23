@@ -13,7 +13,9 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: m365-security-compliance
+ms.collection: 
+- tier1
+- m365-security-compliance
 ---
 
 # Microsoft Purview risk and compliance solutions

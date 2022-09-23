@@ -8,9 +8,10 @@ manager: laurawi
 ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -120,7 +121,7 @@ These training modules from Microsoft Learn can help you learn about how capabil
 |![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-security-info-overview/introduction/)
+> [Start >](/training/modules/m365-security-info-overview/introduction/)
 
 #### Identity and access
 
@@ -129,4 +130,4 @@ These training modules from Microsoft Learn can help you learn about how capabil
 |![Identity and access training icon.](../media/protect-identity-and-access-with-microsoft-365.svg)|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>2 hr 52 min - Learning Path - 6 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-identity-overview/introduction/)
+> [Start >](/training/modules/m365-identity-overview/introduction/)
