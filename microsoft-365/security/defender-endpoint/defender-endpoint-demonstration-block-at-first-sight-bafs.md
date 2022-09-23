@@ -22,7 +22,7 @@ ms.technology: mde
 
 Block at First Sight, is a feature of Microsoft Defender Antivirus cloud-delivered protection that provides a way to detect and block new malware within seconds. You can test that it is working as expected by downloading a fake malware file.
 
-Scenario requirements and setup
+## Scenario requirements and setup
 
 - Windows 10 Anniversary update (1607) or later
 - Cloud protection enabled
