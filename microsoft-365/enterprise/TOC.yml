@@ -177,8 +177,9 @@
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Data Residency
-      href: m365-dr-overview.md
       items: 
+        - Name: Overview and definitions
+          href: m365-dr-overview.md
         - name: Product Terms Data Residency
           href: m365-dr-product-terms-dr.md
         - name: Advanced Data Residency
