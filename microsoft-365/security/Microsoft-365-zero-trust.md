@@ -18,6 +18,7 @@ ms.collection:
 - m365solution-overview
 - M365-security-compliance
 - zerotrust-solution
+- highpri
 ---
 
 # Microsoft 365 Zero Trust deployment plan
