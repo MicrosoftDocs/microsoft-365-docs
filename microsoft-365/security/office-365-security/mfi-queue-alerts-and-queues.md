@@ -1,6 +1,6 @@
 ---
 title: Queues insight in the Mail flow dashboard
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -11,14 +11,15 @@ ms.custom:
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Queues insight in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -39,7 +40,6 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
 - An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).
 
   :::image type="content" source="../../media/mfi-queued-messages-alert.png" alt-text="The Recent alerts in the Alerts dashboard in the Security & Compliance Center" lightbox="../../media/mfi-queued-messages-alert.png":::
-
 
 - Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**. To configure the notification settings for this alert, see the next section.
 

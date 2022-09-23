@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -120,7 +121,7 @@ To set site-level sharing settings
 
 ## Invite users
 
-Guest sharing settings are now configured, so you can start adding internal users and guests to your site. Site access is controlled through the associated Microsoft 365 Group, so we'll be adding users there.
+Guest sharing settings are now configured, so you can start adding internal users and guests to your site. Site access is controlled through the associated Microsoft 365 group, so we'll be adding users there.
 
 To invite internal users to a group
 
@@ -129,15 +130,7 @@ To invite internal users to a group
 3. Select **Add members**.
 4. Type the names or email addresses of the users that you want to invite to the site, and then select **Save**.
 
-Guests can't be added from the site. You need to add them using Outlook on the web. Therefore, as a prerequisite to add and invite guests to a group, click the URL of the site in the **URL**  column to navigate to the site-specific page. From this page, click the **App launcher** icon and select **Outlook**. This is the screen from which you can invite guests into a group, for which procedure is described below.
-
-To invite guests to a group
-1. Under **Groups**, click the group to which you want to invite guests.
-2. Open the group contact card, click **Members** link in the upper right (the link which denotes the member count).
-3. click **Add members**.
-4. Type the email addresses of the guests that you want to invite, and then click **Add**.
-5. Click **Close**.
-Note that you need to click **Close** only if you are not the owner of the group and as a result, you are not allowed to add the guest into the group. In such cases, the request to add the guest into the group is transferred to the group owner for approval.
+Guests can't be added to the Microsoft 365 group from the site. For information about how to add guest to a group, see [Adding guests to Microsoft 365 Groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6).
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: Views in Threat Explorer and real-time detections
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: msfttracyp
@@ -10,24 +10,23 @@ audience: ITPro
 ms.topic: article
 
 ms.localizationpriority: medium
-search.appverid: 
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Views in Threat Explorer and real-time detections
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 
 :::image type="content" source="../../media/explorer.png" alt-text="The Threat Explorer page" lightbox="../../media/explorer.png":::
 

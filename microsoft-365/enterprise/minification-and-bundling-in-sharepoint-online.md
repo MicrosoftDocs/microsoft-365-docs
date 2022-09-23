@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
@@ -36,10 +36,10 @@ For JavaScript and CSS files, you can also use an approach called minification, 
 You can use third-party software such as Web Essentials to bundle CSS and JavaScript files.
   
 > [!IMPORTANT]
-> Web Essentials is a third-party, open-source, community-based project. The software is an extension to Visual Studio 2012 and Visual Studio 2013 and is not supported by Microsoft. To download Web Essentials, visit the website at [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629).
+> Web Essentials is a third-party, open-source, community-based project. The software is an extension to Visual Studio 2012 and Visual Studio 2013 and is not supported by Microsoft. To download Web Essentials, visit the website at [Web Essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012).
   
 Web Essentials offers two forms of bundling:
-  
+ 
 - .bundle: for CSS and JavaScript files
 - .sprite: for images (only available in Visual Studio 2013)
 

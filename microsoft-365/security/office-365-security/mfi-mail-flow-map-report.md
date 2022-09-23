@@ -13,13 +13,14 @@ ms.assetid:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use the Mail flow map in the Mail flow dashboard in the Security & Compliance Center to visualize and track how mail flows to and from their organization over connectors and without using connectors.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Mail flow map in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

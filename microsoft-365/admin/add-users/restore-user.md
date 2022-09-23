@@ -26,7 +26,7 @@ ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: "Within 30 days after deleting a user account, you can restore the account and all data, and the user can sign in with the same account."
 ---
 
-# Restore a user
+# Restore a user in the Microsoft 365 admin center
    
 When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../../business-video/get-help-support.md).
   

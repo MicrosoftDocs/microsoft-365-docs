@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager templates list"
+title: "Microsoft Purview Compliance Manager templates list"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
+description: "Microsoft Purview Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
 ---
 
 # Compliance Manager templates list
@@ -24,11 +24,11 @@ description: "Microsoft Compliance Manager provides templates for building asses
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depend on your licensing agreement. [Review details](compliance-manager-templates.md#template-availability-and-licensing).
+> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## Overview
 
-[Microsoft Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+[Microsoft Purview Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
 Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its templates when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -133,7 +133,7 @@ The templates listed below may be purchased by your organization.
 - Privacy of Consumer Financial and Health Information Regulation, NAIC MDL-672, Q2 2017  
 - Revisions to the principles for the sound management of operational risk (Basel III Ops Risks)  
 - Standardized Information Gathering (SIG) Questionnaire  
-- [Trusted Information Security Assessment Exchange](/compliance/regulatory/offering-tisax-germany)
+- [Trusted Information Security Assessment Exchange (TISAX) 5.1](/compliance/regulatory/offering-tisax-germany)
 
 ### US Government
 
@@ -246,7 +246,7 @@ The templates listed below may be purchased by your organization.
 - New York - 23 NYCRR Part 500  
 - New York City Administrative Code - Security Breach Notification  
 - New York General Business Law - Data Security Breach Notification and Data Security Protections  
-- New York Privacy Act - DRAFT  
+- New York Privacy Act  
 - North Carolina - Identity Theft Protection Act  
 - North Dakota Chapter 51-30 Notice of Security Breach for Personal Information  
 - Ohio - Security Breach Notification  
@@ -281,16 +281,19 @@ The templates listed below may be purchased by your organization.
 - Australia - ASD Essential 8 Maturity Level 3
 - Australia - National Archives Act
 - Australia - Public Records Office Victoria Recordkeeping Standards  
-- Australia - Spam Act 2003  
+- Australia - Spam Act 2003
 - Australia Privacy (Credit Reporting) Code  
-- Australia Privacy Act  
+- Australia Privacy Act
+- Australia Public Record Act
 - Australian Energy Sector Cyber Security Framework (AESCSF)  
-- [Australian Information Security Registered Assessor Program (IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia)  
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official](/compliance/regulatory/offering-ccsl-irap-australia)
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Protected](/compliance/regulatory/offering-ccsl-irap-australia)
 - [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
 - Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - China - Personal Information Security Specification  
-- Cybersecurity Law of the People's Republic of China  
+- Cybersecurity Law of the People's Republic of China
+- Hong Kong - Code of Banking Practice and Payment Card
 - Hong Kong - Personal Data (Privacy) Ordinance  
 - India Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules
 - India - Information Technology Act  
@@ -390,6 +393,7 @@ The templates listed below may be purchased by your organization.
 - Nigeria Data Protection Regulation  
 - Oman - Electronic Transactions Law  
 - Qatar Cloud Security Policy
+- Qatar National Information Assurance (NIA)
 - Romania - Data Protection Law 190/2018  
 - Russia - Federal Law 149-FZ On Information, Information Technology and Information Security
 - [Russian Federation Federal Law Regarding Personal Data](/compliance/regulatory/offering-russia-data-localization)  
@@ -400,11 +404,12 @@ The templates listed below may be purchased by your organization.
 - Slovakia Act on the Protection of Personal Data  
 - Spain - Nation Security Framework  
 - Switzerland - Federal Act on Data Protection (FADP)  
-- Turkey - KVKK Protection of Personal Data 6698  
+- Turkey - KVKK Protection of Personal Data 6698
 - UAE - Federal Decree Law on Combating Cyber Crimes  
 - UAE - Federal Law Concerning Electronic Transactions and Commerce
 - UAE - Federal Law No 2 of 2019 On the Use of the Information and Communication Technology (ICT) in Health Fields  
-- UAE - NESA Information Assurance Standards  
+- UAE - NESA Information Assurance Standards
+- UAE Data Privacy Law
 - UAE Regulatory Policy TRA - Internet of Things  
 - UAE's Federal Decree Law Regulating the Telecommunications Sector  
 - Uganda - The Data Protection and Privacy Act  

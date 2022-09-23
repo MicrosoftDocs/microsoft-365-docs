@@ -6,7 +6,7 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -47,7 +47,8 @@ Follow these steps to duplicate a document understanding model.
 
 5. Select **Duplicate**.
 
-## See Also
+## See also
+
 [Create a classifier](create-a-classifier.md)
 
 [Rename a model](rename-a-model.md)

@@ -8,11 +8,12 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: 
+ms.collection:
+- highpri 
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: "Summary: How Contoso used a team with security isolation for a top-secret project to develop a new suite of products and services."

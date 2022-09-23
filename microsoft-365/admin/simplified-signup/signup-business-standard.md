@@ -1,5 +1,5 @@
 ---
-title: "Sign up for a Microsoft 365 Business Standard"
+title: "Sign up for Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
+- VSBFY23
 description: "Purchase Microsoft 365 Business Standard and set up your organization."
 ---
 
