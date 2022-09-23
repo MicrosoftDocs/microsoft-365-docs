@@ -55,7 +55,6 @@ Response actions run along the top of a specific device page and include:
 
  You can find device pages from any of the following views:
 
-- **Security operations dashboard** - Select a device name from the Devices at risk card.
 - **Alerts queue** - Select the device name beside the device icon from the alerts queue.
 - **Devices list** - Select the heading of the device name from the devices list.
 - **Search box** - Select Device from the drop-down menu and enter the device name.
