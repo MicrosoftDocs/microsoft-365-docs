@@ -30,9 +30,10 @@ Network Protection helps reduce the attack surface of your devices from Internet
 ## PowerShell command
 
 Set-MpPreference -EnableNetworkProtection Enabled
-Enabled = Block mode (1)
-AuditMode = Audit Mode (2)
-Disabled = Off (0)
+### States
+- Enabled = Block mode (1)
+- AuditMode = Audit Mode (2)
+- Disabled = Off (0)
 
 ## Verify configuration
 
@@ -41,8 +42,7 @@ Get-MpPreference
 ## Scenario
 
 1. Turn on Network Protection using powershell command: Set-MpPreference -EnableNetworkProtection Enabled
-2. Using the browser of your choice (not Edge*), navigate to the Network Protection website test
-   *Edge has other security measures in place to protect from this vulnerability(smartscreen)
+2. Using the browser of your choice (not Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/) (Edge has other security measures in place to protect from this vulnerability(smartscreen))
 
 ## Expected results
 
