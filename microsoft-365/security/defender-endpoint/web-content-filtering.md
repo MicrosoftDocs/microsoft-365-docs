@@ -37,7 +37,7 @@ Web content filtering is part of the [Web protection](web-protection-overview.md
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
 > [!NOTE]
-> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see the [prerequisites](#prerequisites) section.
 

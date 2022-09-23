@@ -66,7 +66,7 @@ Delegated (work or school account)|Machine.RestrictExecution|'Restrict code exec
 > - The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 >
-> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 

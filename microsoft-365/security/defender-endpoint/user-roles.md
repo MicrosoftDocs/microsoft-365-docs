@@ -55,7 +55,7 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 > After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.
 
 > [!NOTE]
-> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ### Permission options
 
