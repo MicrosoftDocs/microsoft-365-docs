@@ -59,7 +59,7 @@
       items:
             - name: Compare custom models 
               href: difference-between-document-understanding-and-form-processing-model.md  
-            - name: Classify and extract by text pattern
+            - name: Unstructured document processing
               items:
                 - name: Overview
                   href: document-understanding-overview.md
@@ -84,19 +84,19 @@
                 - name: Duplicate a model
                   href: duplicate-a-model.md
  
-            - name: Extract by layout
+            - name: Structured document processing
               items:
                 - name: Overview 
                   href: form-processing-overview.md
                 - name: Train your model
                   href: create-a-form-processing-model.md
 
-            - name: Extract by text pattern and layout
+            - name: Freeform document processing
               items:
                 - name: Overview 
-                  href: extract-by-text-pattern-and-layout-overview.md
+                  href: freeform-document-processing-overview.md
                 - name: Train your model
-                  href: create-extract-by-text-pattern-and-layout-model.md
+                  href: create-freeform-document-processing-model.md
 
     - name: Prebuilt models
       items:
