@@ -4,7 +4,7 @@ description: Demonstration to show how the Potentially Unwanted Applications (PU
 keywords: Microsoft Defender for Endpoint, potentially unwanted applications, (PUA), harmful application protection, demonstration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Potentially unwanted applications (PUA) demonstration
@@ -25,8 +25,9 @@ The Potentially Unwanted Applications (PUA) protection feature in Microsoft Defe
 ## Scenario requirements and setup
 
 - Windows 10
-- Enable PUA protection. See the Detect and block Potentially Unwanted Applications topic for more information.
-- You can also download and use the PowerShell script to enable this setting and others.
+
+- Enable PUA protection. See the [Detect and block Potentially Unwanted Applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) article for more information.
+- You can also [download and use the PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others.
 
 ## Scenario
 
@@ -36,6 +37,6 @@ The Potentially Unwanted Applications (PUA) protection feature in Microsoft Defe
 
 ## See also
 
-[Detect and block Potentially Unwanted Applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus?ocid=wd-av-demo-pua-bottom)
+[Detect and block Potentially Unwanted Applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)

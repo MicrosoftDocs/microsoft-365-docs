@@ -4,7 +4,7 @@ description: See how Cloud-delivered protection can automatically detect and del
 keywords: Microsoft Defender for Endpoint, Microsoft Defender ATP, virus protection, virus detection, virus deletion, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Cloud-delivered protection demonstration
@@ -31,7 +31,7 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 ### Scenario
 
-1. [Click here]NeedLink to download the test file. Important: The test file is not malicious, it is just a harmless file simulating a virus
+1. [Click here](https://microsoft-my.sharepoint-df.com/:u:/p/alexkautz/ESSB16ruEZRIpA04A2_PpLwBBEjTh6dkC0knUCtg470Vqg) to download the test file. Important: The test file is not malicious, it is just a harmless file simulating a virus
 
 2. If you see file blocked by Microsoft Defender SmartScreen, click on "View downloads" button.
 

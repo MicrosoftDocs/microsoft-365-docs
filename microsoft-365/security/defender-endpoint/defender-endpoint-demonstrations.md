@@ -4,7 +4,7 @@ description: Lists Microsoft Defender for Endpoint demonstration scenarios that 
 keywords: demonstration, Microsoft Defender for Endpoint demonstration, anti-Malware demonstration, Cloud-delivered protection, Block at First Sight (BAFS), Potentially unwanted applications (PUA)s, Microsoft security intelligence VDI, VDI security, Attack Surface Reduction (ASR) rules demonstration, Controlled folder access demonstration, Exploit Protection, Network Protection, Microsoft Defender SmartScreen, edge SmartScreen, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Microsoft Defender for Endpoint - demonstration scenarios

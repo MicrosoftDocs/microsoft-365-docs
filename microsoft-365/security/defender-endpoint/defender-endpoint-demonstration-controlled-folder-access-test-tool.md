@@ -29,7 +29,6 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 
 ## PowerShell commands
 
-- Set-MpPreference -EnableControlledFolderAccess Enabled
 - Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 
 States
@@ -43,6 +42,7 @@ States
 
 ## Test file
 [CFA ransomware test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
+
 ## Scenario
 
 ### Setup

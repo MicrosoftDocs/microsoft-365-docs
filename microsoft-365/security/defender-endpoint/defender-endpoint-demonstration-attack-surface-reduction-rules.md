@@ -4,7 +4,7 @@ description: See how attack surface reduction rules block a variety of known thr
 keywords: Microsoft Defender for Endpoint demonstration, attack surface reduction rules demonstration, ASR rules, demonstration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Attack surface reduction rules demonstrations
@@ -32,7 +32,7 @@ Attack Surface Reduction (ASR) is comprised of a number of rules, each of which 
 - Windows 10 1803 build (1803 rules)
 - Microsoft Defender AV
 - Microsoft Office (required for Office rules and sample)
-- Download ASR Powershell scripts (LINK???)
+- [Download ASR Powershell scripts](https://demo.wd.microsoft.com/Content/WindowsDefender_ASR_scripts.zip)
 
 ## PowerShell commands
 
@@ -49,6 +49,8 @@ Attack Surface Reduction (ASR) is comprised of a number of rules, each of which 
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC07BFC25 -AttackSurfaceReductionRules_Actions Enabled
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 - AttackSurfaceReductionRules_Actions AuditMode
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C - AttackSurfaceReductionRules_Actions AuditMode
+
+### States
 - Enabled = Block mode (1)
 - AuditMode = Audit Mode (2)
 - Disabled = Off (0)
@@ -61,17 +63,17 @@ Attack Surface Reduction (ASR) is comprised of a number of rules, each of which 
 
 Note - some test files have multiple exploits embedded and will trigger multiple rules
 
-| Rule name | Rule GUID |  |
+| Rule name | Rule GUID | Windows version |
 |:---|:---|:---|
 | Block executable content from email client and webmail | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 | 1709 |
-| Block Office applications from creating child processes | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | 1709 |
-| Block Office applications from creating executable content | 3B576869-A4EC-4529-8536-B80A7769E899 | 1709 |
+| [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/TestFile_OfficeChildProcess_D4F940AB-401B-4EFC-AADC-AD5F3C50688A.docm) | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | 1709 |
+| [Block Office applications from creating executable content](https://demo.wd.microsoft.com/Content/TestFile_Block_Office_applications_from_creating_executable_content_3B576869-A4EC-4529-8536-B80A7769E899.docm) | 3B576869-A4EC-4529-8536-B80A7769E899 | 1709 |
 | Block Office applications from injecting into other processes | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84 | 1709 |
-| Impede JavaScript and VBScript to launch executables | D3E037E1-3EB8-44C8-A917-57927947596D | 1709 |
+| [Impede JavaScript and VBScript to launch executables](https://demo.wd.microsoft.com/Content/TestFile_Impede_JavaScript_and_VBScript_to_launch_executables_D3E037E1-3EB8-44C8-A917-57927947596D.js) | D3E037E1-3EB8-44C8-A917-57927947596D | 1709 |
 | Block execution of potentially obfuscated scripts | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC | 1709 |
-| Block Win32 imports from Macro code in Office | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | 1709 |
-| Block Process Creations originating from PSExec & WMI commands | D1E49AAC-8F56-4280-B9BA-993A6D77406C | 1803 |
-| Block Execution of untrusted or unsigned executables inside removable USB media | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 | 1803 |
+| [Block Win32 imports from Macro code in Office](https://demo.wd.microsoft.com/Content/Block_Win32_imports_from_Macro_code_in_Office_92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B.docm) | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | 1709 |
+|[{Block Process Creations originating from PSExec & WMI commands](https://demo.wd.microsoft.com/Content/TestFile_PsexecAndWMICreateProcess_D1E49AAC-8F56-4280-B9BA-993A6D77406C.vbs) | D1E49AAC-8F56-4280-B9BA-993A6D77406C | 1803 |
+| [Block Execution of untrusted or unsigned executables inside removable USB media](https://demo.wd.microsoft.com/Content/UNSIGNED_ransomware_test_exe.exe) | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 | 1803 |
 | Aggressive Ransomware Prevention | C1DB55AB-C21A-4637-BB3F-A12568109D35 | 1803 |
 | Block executable files from running unless they meet a prevalence, age, or trusted list criteria | 01443614-CD74-433A-B99E-2ECDC07BFC25 | 1803 |
 | Block Adobe Reader from creating child processes | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c | 1803 |
@@ -80,12 +82,12 @@ Note - some test files have multiple exploits embedded and will trigger multiple
 
 ### Setup
 
-Download and run this setup script. Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
+Download and run this [setup script](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip). Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
 
 You can perform these manual steps instead:
 
 1. Create a folder under c: named demo, "c:\demo"
-2. Save this clean file into c:\demo (we need something to encrypt)
+2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo (we need something to encrypt)
 3. Enable all rules using the powershell commands above.
 
 ### Scenario 1: ASR blocks a test file with multiple vulnerabilities
@@ -102,7 +104,7 @@ You should immediately see an "Action blocked" notification.
 1. Configure the rule you want to test using the powershell command from above.
 2. Example: Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled
 3. Download and open the test file/document for the rule you want to test linked above, enable editing and content if prompted
-4. Example: Block Office applications from creating child processes D4F940AB-401B-4EFC-AADC-AD5F3C50688A
+4. Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 #### Scenario 2 expected results
 
@@ -112,8 +114,7 @@ You should immediately see an "Action blocked" notification.
 
 1. Configure the rule for USB protection (B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4).
 2. Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 -AttackSurfaceReductionRules_Actions Enabled
-3. Download the file and put it on a USB stick and execute it
-4. Block Execution of untrusted or unsigned executables inside removable USB media
+3. Download the file and put it on a USB stick and execute it [Block Execution of untrusted or unsigned executables inside removable USB media](https://demo.wd.microsoft.com/Content/UNSIGNED_ransomware_test_exe.exe)
 
 #### Scenario 3 expected results
 
@@ -131,7 +132,7 @@ You should immediately see an "Action blocked" notification.
 
 ## Clean-up
 
-Download and run this clean-up script. LINK LINK
+Download and run this [clean-up script](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip)
 
 Alternately, you can perform these manual steps:
 
@@ -148,7 +149,7 @@ Alternately, you can perform these manual steps:
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC07BFC25 -AttackSurfaceReductionRules_Actions Disabled
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 -AttackSurfaceReductionRules_Actions Disabled
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions Disabled
-- Cleanup c:\demo encryption run the encrypt/decrypt file
+- Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
 
