@@ -43,6 +43,9 @@ For more information on preview features, see [Preview features](preview.md).
 > https://learn.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
+For more information on what's new with Microsoft Defender for Endpoint on Windows, see:
+[What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
+
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
