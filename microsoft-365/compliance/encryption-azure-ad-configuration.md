@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- tier1
 description: How to configure Azure AD cross-tenant access settings and Conditional Access policies for content encrypted by Microsoft Purview Information Protection.
 ---
 
@@ -111,7 +113,7 @@ However, the automatic guest account is not created immediately in this scenario
 
 ## Next steps
 
-For configurations you might need to make for network infrastructure services, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure).
+For addition configurations you might need to make, see [Restrict access to a tenant](/azure/active-directory/manage-apps/tenant-restrictions). Specific to network infrastructure configuration for the Azure Information Protection service, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure).
 
 If you use [sensitivity labels](sensitivity-labels.md) to encrypt documents and emails, you might be interested in [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) to understand which label settings apply across tenants. For configuration guidance for the label encryption settings, see [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md).
 
