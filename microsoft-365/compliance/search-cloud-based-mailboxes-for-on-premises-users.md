@@ -1,22 +1,24 @@
 ---
 title: "Search for Teams chat data for on-premises users"
+description: "Admins can use eDiscovery tools in Microsoft 365 to search for and export Teams chat data for on-premises users in an Exchange hybrid deployment."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MST160
 - MET150
-ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: "Admins can use eDiscovery tools in Microsoft 365 to search for and export Teams chat data for on-premises users in an Exchange hybrid deployment."
 ms.custom: seo-marvel-apr2020
 ---
 

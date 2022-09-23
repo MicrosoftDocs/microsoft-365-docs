@@ -7,9 +7,11 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-solutions
+
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance

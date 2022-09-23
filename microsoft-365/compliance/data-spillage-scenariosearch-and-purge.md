@@ -1,19 +1,21 @@
 ---
 title: "eDiscovery solution series Data spillage scenario - Search and purge"
+description: "Use eDiscovery and search tools to manage and respond to a data spillage incident in your organization."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid:
 - MET150
-ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
-description: "Use eDiscovery and search tools to manage and respond to a data spillage incident in your organization."
 ---
 
 # eDiscovery solution series: Data spillage scenario - Search and purge

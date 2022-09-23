@@ -1,24 +1,24 @@
 ---
 title: "Estimated and actual eDiscovery search results"
+description: "Understand why estimated and actual search results may vary in searches run with eDiscovery tools in Office 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
+- ediscovery
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
-description: "Understand why estimated and actual search results may vary in searches run with eDiscovery tools in Office 365."
 ---
 
 # Differences between estimated and actual eDiscovery search results

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 11/23/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
@@ -52,7 +52,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
   - [Teams PowerShell Module](/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)
   - [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
 
 - PowerShell must be configured to run signed scripts for Exchange Online, Defender for Office 365, and Microsoft Purview compliance. Run the following command in an elevated PowerShell session (a PowerShell session that you **Run as administrator**).

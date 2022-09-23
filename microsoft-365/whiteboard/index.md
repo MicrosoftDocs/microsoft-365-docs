@@ -7,7 +7,7 @@ ms.reviewer:
 audience: admin
 ms.topic: landing-page
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
@@ -48,6 +48,17 @@ The resources in this section help the admin in your organization to set up and 
 
 ### For government
 
+#### GCC
+
+| If you're looking for this information | Go to this resource |
+|:-----|:-----|
+|Learn how to set up and manage access to Whiteboard for US Government GCC environments|[Manage access to Whiteboard - GCC](manage-whiteboard-access-gcc.md)|
+|Find where your Whiteboard content and data are stored in Azure and OneDrive for Business in US Government GCC environments  |[Manage data for Whiteboard - GCC](manage-data-gcc.md)  |
+|Learn about the sharing experience in Teams and how to share links to specific users in US Government GCC environments  |[Manage sharing for Whiteboard - GCC](manage-sharing-gcc.md)  |
+|Learn which clients are currently supported for Whiteboard in US Government GCC environments  |[Manage clients for Whiteboard - GCC](manage-clients-gcc.md)       |
+
+#### GCC High
+
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Learn how to set up and manage access to Whiteboard for US Government GCC High environments|[Manage access to Whiteboard - GCC High](manage-whiteboard-access-gcc-high.md)|
@@ -60,6 +71,3 @@ The resources in this section help the admin in your organization to set up and 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Find PowerShell cmdlet help references to manage Microsoft Whiteboard|[PowerShell for Whiteboard](/powershell/module/whiteboard/)|
-
-
-

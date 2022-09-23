@@ -20,6 +20,7 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-overview
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -74,6 +75,14 @@ And take advantage of these features that help Microsoft Teams work for your hea
 | [Teams policy packages](#teams-policy-packages)| Ensure that clinical workers, information workers, and patient room devices have the appropriate access to Teams functionality.| Users must have an appropriate license*. |
 | [Secure messaging](#secure-messaging) | Get quicker attention to urgent messages and have confidence that the message was received and read. | Users must have an appropriate license*.  |
 | [Teams templates](#teams-templates-for-healthcare-organizations) | Create teams that include a predefined template of settings, channels, and pre-installed apps for communication and collaboration within a ward, pod, or department, or between multiple wards, pods, and departments within a hospital. | Users must have an appropriate license*.  |
+
+### Download a poster with scenario overviews
+
+Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
+
+| Item | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers: Healthcare scenarios.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.|
 
 ## Virtual appointments and Electronic Healthcare Record (EHR) integration
 
@@ -130,6 +139,12 @@ In addition, your team can use apps in Teams to:
 - Track and monitor tasks with the Tasks app
 - Streamline approvals with the Approvals app
 - Create, manage, and share schedules with the Shifts app
+
+### Coordinate over email with Exchange Online
+
+Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) to help your frontline managers and workers coordinate with care team members in other locations or schedule meetings to discuss care plans. Users must have an F3 license to have an email mailbox.
+
+You can also set up shared mailboxes to allow for incoming mail from customers (such as for customer service or scheduling requests) and have a group of workers who monitor and send email from a public email alias like info@contoso.com. For more information about shared mailboxes, see [About shared mailboxes](../admin/email/about-shared-mailboxes.md) and [Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
 ### Share lists and track information with the Lists app
 
