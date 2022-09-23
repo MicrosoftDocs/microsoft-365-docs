@@ -9,8 +9,9 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 09/23/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: 
@@ -62,6 +63,11 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Disabling automatic actions on detected threats
 - Suppressing notifications in the Windows Security app
 - Disabling scanning of archives and network files
+
+> [!IMPORTANT]
+> Built-in protection (preview) includes turning tamper protection on by default. To learn more about built-in protection, see:
+> - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
+> - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
 ### How it works
 
