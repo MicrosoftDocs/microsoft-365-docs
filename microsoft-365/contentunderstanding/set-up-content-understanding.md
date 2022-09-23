@@ -14,7 +14,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
-description: "Set up SharePoint Syntex"
+description: Set up SharePoint Syntex.
 ---
 
 # Set up Microsoft SharePoint Syntex
@@ -23,14 +23,14 @@ Admins can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" t
 
 Consider the following before you start:
 
-- In which SharePoint sites will you enable form processing? All of them, some, or select sites?
+- In which SharePoint sites will you enable document processing? All of them, some, or select sites?
 - What will you name your default content center?
 
 You can change your settings after initial setup in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites
+- The SharePoint sites in which you want to enable document processing - all of them, some, or selected sites
 - The name and admins for your content center
 
 ## Requirements 
@@ -44,7 +44,7 @@ As an admin, you can also make changes to your selected settings anytime after s
 
 If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps.
 
-You also need to [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to the custom environment before you can create form processing models. 
+You also need to [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to the custom environment before you can create document processing models. 
 
 When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. See [Assign a security role to a user](/power-platform/admin/assign-security-roles) for more information.
 
@@ -58,7 +58,7 @@ To use SharePoint Syntex, your organization must have a subscription to SharePoi
 - SharePoint Syntex - SPO type
 - Common Data Service for SharePoint Syntex
 
-To use form processing, you also need AI Builder credits. For each licensed user of SharePoint Syntex, an allocation of AI Builder credits is provided each month.
+To use structured document processing or freeform document processing models, you also need AI Builder credits. For each licensed user of SharePoint Syntex, an allocation of AI Builder credits is provided each month.
 
 For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing](syntex-licensing.md)
 
@@ -73,7 +73,7 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
     > [!div class="mx-imgBorder"]
     > ![Begin setup.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create document processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
       - **Libraries in all SharePoint sites** to make it available to all SharePoint libraries in your organization.</br>
@@ -84,9 +84,9 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
    > ![Configure form processing site options.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply document understanding models to a library. 
+   > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply unstructured document processing models to a library. 
     
-    If you have multiple Power Platform environments configured, you can choose which one you want to use with for form processing. (This option will not appear if you only have one environment.)
+    If you have multiple Power Platform environments configured, you can choose which one you want to use with for document processing. (This option will not appear if you only have one environment.)
 
     ![Configure form processing Power Platform options.](../media/content-understanding/setup-power-platform-env.png)
 
@@ -96,7 +96,7 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
 
     Click **Next**.
 
-5. On the **Create Content Center** page, you can create a SharePoint content center site where your users can create and manage document understanding models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
+5. On the **Create Content Center** page, you can create a SharePoint content center site where your users can create and manage unstructured document processing models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
 
     1. For **Site name**, type the name you want to give your content center site.
     
@@ -134,7 +134,7 @@ To assign licenses:
 
 ## See also
 
-[Overview of the form processing model](/ai-builder/form-processing-model-overview)
+[Overview of the document processing model in AI Builder](/ai-builder/form-processing-model-overview)
 
 [Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
 
