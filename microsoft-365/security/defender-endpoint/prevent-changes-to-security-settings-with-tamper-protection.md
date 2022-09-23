@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 09/23/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: 
