@@ -44,7 +44,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 
       :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 
-         For a complete list of errors and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
+         For a complete list of error messages and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
 
     - To make changes to a connection, choose **Edit** next to the connection. You'll be taken to the wizard, where you can update the settings that you want.
 
