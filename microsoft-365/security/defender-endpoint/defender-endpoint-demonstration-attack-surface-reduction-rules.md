@@ -63,7 +63,7 @@ Attack Surface Reduction (ASR) is comprised of a number of rules, each of which 
 
 Note - some test files have multiple exploits embedded and will trigger multiple rules
 
-| Rule name | Rule GUID |  |
+| Rule name | Rule GUID | Windows version |
 |:---|:---|:---|
 | Block executable content from email client and webmail | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 | 1709 |
 | [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/TestFile_OfficeChildProcess_D4F940AB-401B-4EFC-AADC-AD5F3C50688A.docm) | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | 1709 |
