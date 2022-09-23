@@ -10,7 +10,7 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: 
 - autoir
-ms.technology: mdo
+ms.subservice: mdo
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)

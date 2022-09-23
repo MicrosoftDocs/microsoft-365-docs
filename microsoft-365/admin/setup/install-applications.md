@@ -6,10 +6,11 @@ ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
-ms.topic: landing-page
+ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -18,6 +19,7 @@ search.appverid:
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 ms.custom:
+- VSBFY23
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
@@ -27,6 +29,8 @@ description: "Now that you've set up Microsoft 365, learn how to install individ
 ---
 
 # Install Office applications
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 Now that you've set up Microsoft 365, you can install individual Office applications on your Mac, PC, or mobile devices.
   

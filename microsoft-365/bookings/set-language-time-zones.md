@@ -1,5 +1,5 @@
 ---
-title: "Set language and time zones in Microsoft Bookings"
+title: "Set Bookings language and time zones"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -12,9 +12,6 @@ description: "Change your language and time zone settings in Microsoft Bookings.
 ---
 
 # Set language and time zones in Microsoft Bookings
-
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 If you are using Microsoft Bookings and bookings are created at the wrong time, then your time zone settings might need to be changed. Likewise, if some bookings are in the wrong language, you might need to change your language settings.
 

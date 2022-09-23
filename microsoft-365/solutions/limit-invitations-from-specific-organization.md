@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-securecollab
@@ -23,7 +24,7 @@ description: Learn how to limit which of your users can be invited as a guest or
 If you collaborate with another organization and want to limit who can be invited to that organization as a guest or a shared channel member in Teams, you can specify who can be invited in the cross-tenant access settings in Azure Active Directory.
 
 > [!NOTE]
-> Changes to cross-tenant access settings may take two hours to take effect.
+> Changes to cross-tenant access settings may take six hours to take effect.
 
 ## Create a security group
 

@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -17,11 +17,11 @@ description: Learn how to use the Region parameter to configure eDiscovery for u
 
 # Microsoft 365 Multi-Geo eDiscovery configuration
 
-[Advanced eDiscovery capabilities](../compliance/overview-ediscovery-20.md) allow a multi-geo eDiscovery administrator to search all of the geos without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the central location of the multi-geo tenant. The same happens with applying a hold on a custodian, however, the Hold statistics inside the hold won't appear without the "Region" security filter. Hold statistics showing 0 does not mean the hold failed as long as hold status is showing On (successful).
+[eDiscovery (Premium) capabilities](../compliance/overview-ediscovery-20.md) allow a multi-geo eDiscovery administrator to search all of the geos without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the central location of the multi-geo tenant.
 
-Without advanced eDiscovery capabilities, an eDiscovery manager or administrator of a multi-geo tenant will be able to conduct eDiscovery only in the central location of that tenant. To support the ability to conduct eDiscovery for satellite locations, a new compliance security filter parameter named "Region" is available via PowerShell. This parameter can be used by tenants whose central location is in North America, Europe, or Asia Pacific. Advanced eDiscovery is recommended for tenants whose central location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across satellite geo locations. 
+Without eDiscovery (Premium) capabilities, an eDiscovery manager or administrator of a multi-geo tenant will be able to conduct eDiscovery only in the central location of that tenant. To support the ability to conduct eDiscovery for satellite locations, a new compliance security filter parameter named "Region" is available via PowerShell. This parameter can be used by tenants whose central location is in North America, Europe, or Asia Pacific. eDiscovery (Premium) is recommended for tenants whose central location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across satellite geo locations.
 
-The Microsoft 365 global administrator must assign eDiscovery Manager permissions to allow others to perform eDiscovery and assign a "Region" parameter in their applicable Compliance Security Filter to specify the region for conducting eDiscovery as satellite location, otherwise, no eDiscovery will be carried out for the satellite location. Only one "Region" security filter per user is supported, so all the regions need to be inside the same security filter.
+The Microsoft 365 global administrator must assign eDiscovery Manager permissions to allow others to perform eDiscovery and assign a "Region" parameter in their applicable Compliance Security Filter to specify the region for conducting eDiscovery as satellite location, otherwise, no eDiscovery will be carried out for the satellite location. Only one "Region" security filter per user is supported.
 
 When the eDiscovery Manager or Administrator role is set for a particular satellite location, the eDiscovery Manager or Administrator will only be able to perform eDiscovery search actions against the SharePoint sites and OneDrive sites located in that satellite location. If an eDiscovery Manager or Administrator attempts to search SharePoint or OneDrive sites outside the specified satellite location, no results will be returned. Also, when the eDiscovery Manager or Administrator for a satellite location triggers an export, data is exported to the Azure instance of that region. This helps organizations stay in compliance by not allowing content to be exported across controlled borders.
 
@@ -32,7 +32,7 @@ When the eDiscovery Manager or Administrator role is set for a particular satell
 
 To set the Compliance Security Filter for a Region:
 
-1. [Connect to Microsoft 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Microsoft 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Use the following syntax:
 

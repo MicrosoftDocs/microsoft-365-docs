@@ -6,22 +6,28 @@
     href: overview.md 
 - name: Quickstarts
   items:  
-    - name: Create Test Base Account
-      href: createAccount.md
+    - name: Creating a Test Base Account
+      href: createaccount.md
+    - name: Test your application on Test Base
+      items:
+      - name: Overview
+        href: testoverview.md
+      - name: Creating and Testing Binary Files on Test Base
+        href: testapplication.md
+      - name: Test your Intune app on Test Base
+        href: testintuneapplication.md
+      - name: Uploading a pre-built zip package
+        href: uploadapplication.md
     - name: Build a Package
       href: buildpackage.md
-    - name: Uploading a Package
-      href: uploadApplication.md
-    - name: Upload Binaries & Dependencies
-      href: binaries.md
-    - name: Set Test Tasks
-      href: testtask.md
-    - name: Set Test Options
-      href: testoptions.md
-    - name: Review
-      href: review.md
+    - name: Clone an existing package
+      href: clonepackage.md
     - name: Package guideline
       href: contentguideline.md
+    - name: Understand your usage cost
+      href: usagecost.md
+    - name: Run your test on-demand
+      href: ondemandrun.md
     - name: Application/Test rules
       href: rules.md
 - name: How-to guides
@@ -36,6 +42,8 @@
     href: memory.md
   - name: CPU Regression Analysis
     href: cpu.md 
+  - name: Request to change access level
+    href: accesslevel.md
   - name: SDK & API
     href: sdkapi.md
 - name: Reference

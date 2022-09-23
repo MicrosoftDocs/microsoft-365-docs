@@ -7,16 +7,17 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
-description: Use controlled folder access, MIP, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
+description: Use controlled folder access, Microsoft Purview Information Protection, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
 ---
 
 # Step 5. Protect information
@@ -83,9 +84,9 @@ To protect your sensitive information in case a ransomware attacker obtains acce
 
 - Use [controlled folder access](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) to make it more difficult for unauthorized applications to modify the data in controlled folders.
 
-- Use [Microsoft Information Protection](/microsoft-365/compliance/information-protection) and sensitivity labels and apply them to sensitive information. Sensitivity labels can be configured for additional encryption and permissions with defined user accounts and allowed actions. A file labeled with this type of sensitivity label that is exfiltrated from your tenant will only be useable to a user account defined in the label.
+- Use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) and sensitivity labels and apply them to sensitive information. Sensitivity labels can be configured for additional encryption and permissions with defined user accounts and allowed actions. A file labeled with this type of sensitivity label that is exfiltrated from your tenant will only be useable to a user account defined in the label.
 
-- Use Microsoft 365 [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) to detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information based on sensitivity labels, both internally and externally.
+- Use Microsoft Purview [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) to detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information based on sensitivity labels, both internally and externally.
 
 - Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to block downloads of sensitive information such as files. You can also use [Defender for Cloud Apps anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity) to detect a high rate of file uploads or file deletion activities.
 

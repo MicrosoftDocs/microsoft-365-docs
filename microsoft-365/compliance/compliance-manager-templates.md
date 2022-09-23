@@ -1,5 +1,5 @@
 ---
-title: "Working with assessment templates in Microsoft Compliance Manager"
+title: "Learn about assessment templates in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to use and manage templates for building assessments in Microsoft Compliance Manager. Create and modify templates using a formatted Excel file."
+description: "Understand how to use and manage templates for building assessments in Microsoft Purview Compliance Manager. Create and modify templates using a formatted Excel file."
 ---
 
 # Learn about assessment templates in Compliance Manager
@@ -25,17 +25,20 @@ description: "Understand how to use and manage templates for building assessment
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## Templates overview
 
-A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
 
 ## Template versions: Microsoft and universal
 
-We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
+Compliance Manger can be used to assess different types of products. All templates, except the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template, come in two versions:
 
-Compliance Manger can be used to assess different types of products. All templates apart from the baseline come in at least one version that applies to a pre-defined product, such as Microsoft 365, and a universal version that can be tailored to suit other products. Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
+1. A version that applies to a pre-defined product, such as Microsoft 365, and
+2. A universal version that can be tailored to suit other products.
+
+Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
 
 Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
 
@@ -73,7 +76,7 @@ GCC High and DOD accounts must purchase template licenses through [volume licens
 
 To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
-If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
+If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
 If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
 
@@ -130,4 +133,4 @@ You can export an Excel file that contains all of a template's data. You'll need
 
 To export your template, go to your template details page and select the **Export to Excel** button.
 
-Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won't include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).
+Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won’t include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).

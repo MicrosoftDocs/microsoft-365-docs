@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: 
@@ -40,7 +40,7 @@ BCS, Secure Store, and Apps all have separate instances in each satellite locati
 
 ## Compliance admin center
 
-There is one central compliance center for a multi-geo tenant: [Microsoft 365 Compliance admin center](https://compliance.microsoft.com/).
+There is one central compliance center for a multi-geo tenant: [Microsoft Purview admin center](https://compliance.microsoft.com/).
 
 ## eDiscovery
 
@@ -56,7 +56,7 @@ You can set your IP DLP policies for OneDrive for Business, SharePoint, and Exch
 
 The DLP policies are automatically synchronized based on their applicability to each geo location.
 
-Implementing Information Protection and Data Loss prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
+Implementing Information Protection and Microsoft Purview Data Loss Prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
 
 ## Microsoft Power Apps
 

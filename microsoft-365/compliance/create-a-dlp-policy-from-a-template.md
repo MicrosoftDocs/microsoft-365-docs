@@ -24,7 +24,7 @@ description: In this article, you'll learn about how to create DLP policies usin
 
 # Create a DLP policy from a template
 
-The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft 365 Compliance center. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
+The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft Purview compliance portal. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
 
 Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. See; [Policy templates](dlp-policy-reference.md#policy-templates) for a complete list. 
 
@@ -38,7 +38,7 @@ Members of your compliance team who will create DLP policies need permissions to
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
-2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
+2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
 
 3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
     
@@ -46,7 +46,7 @@ Members of your compliance team who will create DLP policies need permissions to
 
 Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
-For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
   
 These permissions are required to create and apply a DLP policy not to enforce policies.
 
@@ -54,14 +54,14 @@ These permissions are required to create and apply a DLP policy not to enforce p
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection
 - Information Protection Admins
@@ -71,12 +71,10 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 ### Create the DLP policy from a template
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
-2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
+2. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 
-    ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-          
 3. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
 
 4. Name the policy \> **Next**.
@@ -200,7 +198,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 

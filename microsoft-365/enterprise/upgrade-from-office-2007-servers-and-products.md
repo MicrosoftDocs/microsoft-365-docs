@@ -2,11 +2,11 @@
 title: "Resources to help you upgrade from Office 2007 servers and clients"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/01/2018
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:

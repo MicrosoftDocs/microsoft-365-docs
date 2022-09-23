@@ -1,7 +1,7 @@
 ---
 title: Investigate insider risk management activities
-description: Learn about investigating insider risk management activities in Microsoft 365
-keywords: Microsoft 365, insider risk, risk management, compliance
+description: Learn about investigating insider risk management activities in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -100,7 +102,7 @@ It may help save triage time for analysts and investigators to immediately dismi
 
 To dismiss an insider risk alert, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert (or alerts) with a *Needs review* status that you want to dismiss.
 3. On the Alerts command bar, select **Dismiss alerts**.
 4. On the **Dismiss alerts** detail pane, you can review the user and policy details associated with the selected alerts.
@@ -110,7 +112,7 @@ To dismiss an insider risk alert, complete the following steps:
 
 To triage an insider risk alert, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.
 3. On the **Alert detail** page, you can review information about the alert. You can confirm the alert and create a new case, confirm the alert and add to an existing case, or dismiss the alert. This page also includes the current status for the alert and the alert risk severity level, listed as High, Medium, or Low. The severity level may increase or decrease over time if the alert isn't triaged.
 
@@ -136,6 +138,7 @@ This tab opens the summary of risk factors for the user's alert activity. Risk f
 - **Priority content**: Displays activities associated with priority content.
 - **Unallowed domains**: Displays activities for events associated with unallowed domains.
 - **Health record access**: Displays activities for events associated with accessing health records.
+- **Risky browser usage**: Displays activities for events associated with browsing to potentially inappropriate websites.
 
 With these filters, you'll only see alerts with these risk factors, but the activity that generated an alert might not fall into any of these categories. For example, an alert containing sequence activities might have been generated simply because the user copied a file to a USB device.
 
@@ -163,7 +166,7 @@ The **User activity** chart is one of the most powerful tools for internal risk 
     - **Risk category**: Filter activities by the following risk categories: *Activities with risk scores > 15 (unless in a sequence)* and *Sequence activities*.
     - **Activity Type**: Filter activities by the following types: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation*, and *Security*.
     - **Sort by**: List the timeline activities by *Date occurred* or *Risk score*.
-4. **Risk sequence (preview)**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
+4. **Risk sequence**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
 
     - **Name** of the sequence.
     - **Date** or **Date range** of the sequence.
@@ -197,12 +200,13 @@ Use the Activity scope and Risk insight filters to display and sort activities a
   - Sequence activities
   - Cumulative exfiltration activities
   - Health record access activities
+  - Risky browser usage
 
 ![Insider risk management activity explorer overview.](../media/insider-risk-activity-explorer.png)
 
 To use the **Activity explorer**, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.
 3. On the **Alerts detail pane**, select **Open expanded view**.
 4. On the page for the selected alert, select the **Activity explorer** tab.
@@ -220,7 +224,7 @@ When selecting an activity's events from the activity timeline, the number of ac
 
 As alert is reviewed and triaged, you can create a new case to further investigate the risk activity. To create a case for an alert, follow these steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to confirm and create a new case for.
 3. On the **Alerts details pane**, select **Actions** > **Confirm alerts & create case**.
 4. On the **Confirm alert and create insider risk case** dialog, enter a name for the case, select users to add as contributors, and add comments as applicable. Comments are automatically added to the case as a case note.

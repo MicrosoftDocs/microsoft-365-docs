@@ -25,9 +25,9 @@ Taking the time to design a policy before you implement it will get you to the d
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-If you are new to Microsoft 365 DLP, it's helpful to work through these articles before you start designing a policy:
+If you are new to Microsoft Purview DLP, it's helpful to work through these articles before you start designing a policy:
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - this article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - this article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
   - [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
   - [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)

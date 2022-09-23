@@ -2,7 +2,7 @@
 title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate entities on devices using live response
@@ -160,7 +161,7 @@ The following commands are available for user roles that are granted the ability
 | connections  | Shows all the active connections.  | Y  | N  | N  |
 | dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
 | drivers  | Shows all drivers installed on the device.  | Y  | N  | N  |
-| fg `<command ID>`  | Place the specified job in the foreground in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID  | Y  | Y  | Y  |
+| fg `<command ID>`  | Place the specified job in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID  | Y  | Y  | Y  |
 | fileinfo  | Get information about a file.  | Y  | Y  | Y  |
 | findfile  | Locates files by a given name on the device.  | Y  | Y  | Y  |
 | getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
@@ -341,7 +342,7 @@ Select the **Command log** tab to see the commands used on the device during a s
 - A device can only be in one session at a time.
 - The following file size limits apply:
   - `getfile` limit: 3 GB
-  - `fileinfo` limit: 10 GB
+  - `fileinfo` limit: 30 GB
   - `library` limit: 250 MB
 
 ## Related article

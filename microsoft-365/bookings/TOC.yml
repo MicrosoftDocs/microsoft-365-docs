@@ -27,15 +27,15 @@
       href: add-questions.md
     - name: Set buffer time
       href: set-buffer-time.md
+    - name: Manage group attendees in Bookings
+      href: manage-attendees-bookings.md
     - name: Metrics and activity tracking
       href: metrics-and-activity-tracking.md
     - name: Set language and time zone
       href: set-language-time-zones.md
-  - name: Get the Bookings app
-    href: get-bookings-app.md
   - name: Manage the Bookings app in Microsoft Teams
     href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
-  - name: Virtual visits with Microsoft Teams and the Bookings app
+  - name: Virtual visits with Microsoft Teams
     href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
   - name: Comparison chart - web app versus Teams app
     href: comparison-chart.md
@@ -45,5 +45,9 @@
     href: turn-bookings-on-or-off.md
   - name: Reporting information for Microsoft Bookings
     href: reporting-info.md
+  - name: Use Power Automate connectors
+    href: power-automate-integration.md
   - name: Microsoft Bookings frequently asked questions (FAQ)
     href: bookings-faq.yml
+  - name: Bookings with me
+    href: bookings-in-outlook.md
