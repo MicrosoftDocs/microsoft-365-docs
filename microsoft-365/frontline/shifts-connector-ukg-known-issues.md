@@ -26,7 +26,7 @@ This article lists known issues for the [Microsoft Teams Shifts connector for UK
 
 ## You can map an instance to more than one team using PowerShell or Microsoft Graph
 
-A UKG Dimensions instance should only be mapped to one team at any given time.
+A UKG Dimensions instance should only be mapped to one team at any given time in a connection.
 
 However, when you use PowerShell or Microsoft Graph to set up a connection, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
 
