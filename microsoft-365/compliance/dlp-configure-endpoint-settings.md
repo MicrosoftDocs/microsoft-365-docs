@@ -74,6 +74,9 @@ These Windows versions support advanced classification scanning and protection:
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
+> [!TIP]
+> Advanced classification must be enabled to see contextual text for DLP rule matched events in Activity explorer.
+
 ### File path exclusions
 
 Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
