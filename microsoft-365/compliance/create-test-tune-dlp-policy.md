@@ -11,7 +11,8 @@ f1_keywords:
 - 'ms.o365.cc.NewPolicyFromTemplate'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- tier1 
 - M365-security-compliance
 search.appverid: 
 - MET150
