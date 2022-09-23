@@ -1,6 +1,6 @@
 ---
 title: Overview and Definitions
-description: 
+description: Data Residency feature Overview and Definitions
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 09/23/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -23,6 +23,7 @@ ms.collection:
 To provide clarity to the descriptions below on data residency functionality and behavior, it is necessary to have clear terms and definitions in order to better understand the capabilities that Microsoft provides in this area.
 
 *Table 1: Definitions and Terms*
+
 | **Term** | **Definition** |
 |:-----|:-----|
 |Regional Geography  <br/> |Regional Geography 1 – EMEA, Regional Geography – Asia Pacific, Regional Geography - Americas  <br/> |
@@ -89,6 +90,7 @@ There are three methods for ensuring that the tenant data location for a particu
 3) Advanced Data Residency subscription will guarantee data residency for an expanded set of M365 services in any Local Geography or Expanded Local Geography.  For more information see ***Section 3: MUST PROVIDE PAGE LINK***
 
 *Table 2: Available Data Residency by Workload*
+
 ||**Service Name**|**Product Terms**|**Multi-Geo**|**ADR**|
 |:-----|:-----|:-----|:-----|:-----|
 |Exchange Online <br/> |X1  <br/> |X2  <br/> |X3  <br/> |
@@ -99,6 +101,5 @@ There are three methods for ensuring that the tenant data location for a particu
 | Viva Connections <br/> |-  <br/> |-  <br/> |X2  <br/> |
 | Viva Topics <br/> |-  <br/> |-  <br/> |X2  <br/> |
 | Microsoft Purview <br/> |-  <br/> |-  <br/> |X2  <br/> |
+
 NOTE: see ***Section 5 Workload Data Residency Capabilities PAGE LINK*** for more details
-
-
