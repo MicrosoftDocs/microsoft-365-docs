@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center Viva Learning activity reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article

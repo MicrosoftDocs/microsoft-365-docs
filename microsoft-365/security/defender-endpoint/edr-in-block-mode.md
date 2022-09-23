@@ -71,6 +71,9 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Defen
 > [!TIP]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+
 ### Security Portal
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.

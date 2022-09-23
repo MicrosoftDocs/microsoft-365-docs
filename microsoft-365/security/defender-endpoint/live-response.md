@@ -90,6 +90,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 - **Ensure that the device has an Automation Remediation level assigned to it**.
 
   You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+  > [!NOTE]
+  > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
 
   You'll receive the following error:
 
