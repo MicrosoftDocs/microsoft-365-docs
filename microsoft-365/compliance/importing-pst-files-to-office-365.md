@@ -1,5 +1,6 @@
 ---
 title: "Learn about importing organization PST files"
+description: Learn how to use the Import service in the Microsoft Purview compliance portal to bulk-import email data (PST files) to user mailboxes.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,14 +14,13 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
+- tier1
 - M365-security-compliance
+- import
 search.appverid: MET150
-ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: Learn how to use the Import service in the Microsoft Purview compliance portal to bulk-import email data (PST files) to user mailboxes.
 ---
 
 # Learn about importing your organization's PST files
