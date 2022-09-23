@@ -15,11 +15,11 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Refresh your sensitive information source table file.
+description: Refresh your sensitive information source table file. You can refresh your sensitive information database up to 5 times in every 24 hour period.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Refresh your exact data match sensitive information source table file 
+# Refresh your exact data match sensitive information source table file
 
 You can refresh your sensitive information database up to 5 times in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
 

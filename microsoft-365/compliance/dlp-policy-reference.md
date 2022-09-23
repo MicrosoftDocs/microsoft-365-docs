@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/02/2022
+ms.date: 09/23/2022
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 recommendations: false
-description: "DLP policy component and configuration reference"
+description: "DLP policy component and configuration reference. This article provides a detailed anatomy of a DLP policy."
 ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy reference

@@ -15,7 +15,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Create the sample file to use in the new experience.
+description: Create the sample file to use in the new experience. Includes links to the procedures for each phase using the classic experience.
 ms.custom: seo-marvel-apr2020
 ---
 
