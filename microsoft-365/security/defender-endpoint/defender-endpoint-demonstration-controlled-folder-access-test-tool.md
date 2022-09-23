@@ -32,6 +32,7 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 - Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 
 States
+
 - Enabled = Block mode (1)
 - AuditMode = Audit Mode (2)
 - Disabled = Off (0)
@@ -82,6 +83,6 @@ Download and run this [cleanup script](https://demo.wd.microsoft.com/Content/ASR
 
 [Controlled folder access demonstration](defender-endpoint-demonstration-controlled-folder-access.md)
 
-[Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
+[Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
