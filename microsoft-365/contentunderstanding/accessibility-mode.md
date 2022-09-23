@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.localizationpriority:  medium
 description: Learn how to use accessibility features mode when training and working with models in SharePoint Syntex.
@@ -54,7 +54,7 @@ As you navigate through the sample documents and label string values, Narrator w
 
 After a string is labeled or a label has been removed in the viewer, Narrator audio will warn you to save your changes before you exit.
 
-## See Also
+## See also
 
 [Create an extractor](create-an-extractor.md)
 

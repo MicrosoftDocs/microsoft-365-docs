@@ -1,5 +1,5 @@
 ---
-title: "Build and manage assessments in Microsoft Compliance Manager"
+title: "Build and manage assessments in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Build assessments in Microsoft Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
+description: "Build assessments in Microsoft Purview Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
 ---
 
 # Build and manage assessments in Compliance Manager
@@ -30,7 +30,7 @@ Compliance Manager helps you create assessments that evaluate your compliance wi
 All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## Data Protection Baseline default assessment
 
@@ -72,11 +72,11 @@ You can create a group while creating a new assessment. Groups can't be created 
 
 ## Understand templates before creating assessments
 
-Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization's available templates may include one or more templates that were included as part of your licensing agreement, along with any additional premium templates that you have purchased.
+Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization starts out with at least one and possibly more **included** templates available to use, depending on your licensing agreement. Your organization may also purchase additional **premium** templates.
 
-Each template, whether included or premium, exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
+Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
 
-To learn more about templates, see [Working with assessment templates](compliance-manager-templates.md).
+Get more details more about templates at [Learn about assessment templates in Compliance Manager](compliance-manager-templates.md).
 
 ## Create assessments
 
@@ -207,7 +207,7 @@ After selecting **Review update** from the assessment details page, a flyout pan
 - An overview explaining the update
 - Specific details about the changes, including the impact to your compliance score, the amount of progress toward completion of the assessment, and the specific number of changes to improvement actions and controls.
 
-Selecting the **Updated template** link will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** link downloads a file of the existing template without the changes.
+Selecting the **Updated template** command will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** command downloads a file of the existing template without the updates.
 
 To accept the update and make the changes to your assessment, select **Accept update**. Accepted changes are permanent.
 

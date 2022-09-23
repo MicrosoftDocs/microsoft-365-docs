@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.localizationpriority:  medium
 ROBOTS: 
@@ -39,7 +39,7 @@ Document understanding models use Optical Character Recognition (OCR) technology
 ## Steps to create and train your model
 
 > [!NOTE]
-> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
+> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
 
 ### Create a Contract model
 
@@ -144,7 +144,7 @@ You can create an explanation that provides a hint about the entity format itsel
 - October 14, 2019
 - Monday, October 14, 2019
 
-To help identify the *Contract Start Date*, you can create a pattern explanation.
+To help identify the *Contract Start Date*, you can create an explanation.
 
 1. In the **Explanations** section, select **New** and then **Blank**.
 
@@ -152,7 +152,7 @@ To help identify the *Contract Start Date*, you can create a pattern explanation
 
     a. In the **Name** field, type the name of the explanation (such as *Date*).
 
-    b. In the **Explanation type** field, select **Pattern list**.
+    b. In the **Explanation type** field, select **Phrase list**.
 
     c. In the **Value** field, provide the date variation as they appear in the sample files. For example, if you have date formats that appear as 0/00/0000, you enter any variations that appear in your documents, such as:
 

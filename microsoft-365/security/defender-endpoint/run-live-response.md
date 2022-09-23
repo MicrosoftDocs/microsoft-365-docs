@@ -3,7 +3,7 @@ title: Run live response commands on a device
 description: Learn how to run a sequence of live response commands on a device.
 keywords: apis, graph api, supported apis, upload to library
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

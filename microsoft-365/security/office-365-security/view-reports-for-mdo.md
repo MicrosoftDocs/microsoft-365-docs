@@ -1,31 +1,31 @@
 ---
 title: View Defender for Office 365 reports
-f1.keywords: 
+f1.keywords:
   - CSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View Defender for Office 365 reports in the Microsoft 365 Defender portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -39,11 +39,11 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
-1. Choose the report you want to view, and then select **View details**.  
+1. Choose the report you want to view, and then select **View details**.
 
 ### Download reports
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
 :::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="The Email & collaboration reports page in the Microsoft 365 Defender portal" lightbox="../../media/email-collaboration-download-reports.png":::
 
@@ -73,7 +73,6 @@ To view the report, open the Microsoft 365 Defender portal at <https://security.
 
 On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, use <https://security.microsoft.com/mailLatencyReport>.
 
-
 :::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="The Mail latency report widget on the Email & collaboration reports page" lightbox="../../media/mail-latency-report-widget.png":::
 
 On the **Mail latency report** page, the following tabs are available on the **Mail latency report** page:
@@ -100,7 +99,7 @@ If you click **Filter**, you can filter both the chart and the details table by 
     - **Inline detonation**: Includes messages that are fully tested before delivery.
     - **Asynchronous detonation**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 In the details table below the chart, the following information is available:
 
@@ -165,7 +164,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
 
@@ -194,7 +193,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
 
@@ -220,7 +219,7 @@ PowerShell reporting cmdlets:
 
 |Report|Topic|
 |---|---|
-|Top senders and recipients|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Top senders and recipients|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Top malware|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Mail traffic|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |Safe Links|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
@@ -243,10 +242,5 @@ For more information, see [Permissions in the Microsoft 365 Defender portal](per
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).
+If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection.md) and [anti-malware protection](anti-malware-protection.md).
 
-## Related topics
-
-[Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
-
-[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)

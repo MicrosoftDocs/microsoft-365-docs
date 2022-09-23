@@ -6,7 +6,7 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -46,7 +46,7 @@ Follow these steps to rename an entity extractor.
 
 5. Select **Rename**.
 
-## See Also
+## See also
 [Create an extractor](create-an-extractor.md)
 
 [Create a classifier](create-a-classifier.md)

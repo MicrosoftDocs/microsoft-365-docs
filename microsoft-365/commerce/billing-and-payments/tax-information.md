@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,7 +23,7 @@ description: "Find out how much tax you will be charged for your Microsoft 365 f
 ms.date: 03/17/2021
 ---
 
-# Tax information
+# Microsoft 365 tax information
 
 When you buy Microsoft 365 products and services, the taxes that you pay are determined by one of two things: your business address, or your shipping address, if it's different. If your organization is in the United States, you must provide a Federal Employer Identification Number (FEIN).
 

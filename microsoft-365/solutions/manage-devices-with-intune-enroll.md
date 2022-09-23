@@ -10,12 +10,14 @@ manager: dougeby
 audience: ITPro
 description: Use Intune and Autopilot to enroll devices into management to ensure the apps running on them are compliant and to prevent corporate data leaks.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
 ---
@@ -31,6 +33,12 @@ The device enrollment process establishes a relationship between the user, the d
 This article recommends methods for enrolling devices to Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Steps for managing devices](../media/devices/intune-mdm-steps-1.png#lightbox)
+
+Use the guidance in this article together with this illustrated version of enrollment options for each platform. 
+
+[![A visual representation of Intune enrollment options by platform](../media/devices/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) | [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Updated June 2022
+
+
 
 ## Windows enrollment
 There are several options for enrolling Windows 10 and Windows 11 devices. The most common methods include these two:

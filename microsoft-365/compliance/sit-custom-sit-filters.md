@@ -1,5 +1,5 @@
 ---
-title: "Custom Sensitive Information Type Filters Reference"
+title: "Custom sensitive information type filters reference"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -334,7 +334,7 @@ The filters will be applied on **all** the instances classified by any of the pa
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 

@@ -48,7 +48,7 @@ When you roll either of the Azure Key Vault keys associated with a DEP used with
 
 To instruct Customer Key to use the new key to encrypt multiple workloads, complete these steps:
 
-1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-M365DataAtRestEncryptionPolicy cmdlet.
   
@@ -98,10 +98,10 @@ SharePoint Online only allows you to roll one key at a time. If you want to roll
 
 ## Related articles
 
-- [Service encryption with Customer Key for Office 365](customer-key-overview.md)
+- [Service encryption with Customer Key](customer-key-overview.md)
 
-- [Set up Customer Key for Office 365](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
-- [Manage Customer Key for Office 365](customer-key-manage.md)
+- [Manage Customer Key](customer-key-manage.md)
 
 - [Learn about the availability key](customer-key-availability-key-understand.md)

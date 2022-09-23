@@ -2,8 +2,8 @@
 title: "Microsoft 365 admin center SharePoint site usage reports"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -59,7 +59,7 @@ Select **Choose columns** to add or remove columns from the report.
 
 :::image type="content" alt-text="SharePoint site usage report - choose columns." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 
 The **SharePoint site usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
@@ -71,7 +71,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Site owner principal name  |The email address of the owner of the site. |
 |Last activity date (UTC)  | The date of the last time file activity was detected or a page was viewed on the site.  |
 |Site sensitivity label ID  | The sensitivity label on the site.  |
-|External sharing  | The external sharable settings on the site.  |
+|External sharing  | The value of the external sharing setting for the site. This value does not reflect changes to the effective setting made by site sensitivity labels. If you use sensitivity labels, use the [data access governance reports](/sharepoint/data-access-governance-reports) to get the correct values.|
 |Unmanaged device policy  | The site access policy for unmanaged devices.  |
 |Geo location  | The Geo location of the site.  |
 |Files  |The number of files on the site. |
