@@ -25,6 +25,7 @@ The Potentially Unwanted Applications (PUA) protection feature in Microsoft Defe
 ## Scenario requirements and setup
 
 - Windows 10
+
 - Enable PUA protection. See the [Detect and block Potentially Unwanted Applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) article for more information.
 - You can also [download and use the PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others.
 

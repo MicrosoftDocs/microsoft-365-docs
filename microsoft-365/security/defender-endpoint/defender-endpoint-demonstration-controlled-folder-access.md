@@ -38,6 +38,7 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 ## Verify configuration
 
 Get-MpPreference
+
 ## Test file
 [CFA ransomware test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 

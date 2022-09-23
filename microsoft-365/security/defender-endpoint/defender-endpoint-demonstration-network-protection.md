@@ -30,6 +30,7 @@ Network Protection helps reduce the attack surface of your devices from Internet
 ## PowerShell command
 
 Set-MpPreference -EnableNetworkProtection Enabled
+
 ### States
 - Enabled = Block mode (1)
 - AuditMode = Audit Mode (2)
