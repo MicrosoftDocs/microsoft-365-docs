@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri

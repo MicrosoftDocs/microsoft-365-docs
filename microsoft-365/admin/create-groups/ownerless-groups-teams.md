@@ -64,4 +64,6 @@ Notifications are sent weekly starting within 24 hours of policy creation. Recip
 
 Up to two group members per group can accept the invitation to become an owner. If no group members accept, an administrator will have to [assign a group owner](/admin/create-groups/add-or-remove-members-from-groups).
 
+## Related topics
 
+[Ownerless group FAQ](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)
