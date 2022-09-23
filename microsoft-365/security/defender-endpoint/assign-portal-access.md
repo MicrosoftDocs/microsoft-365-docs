@@ -44,7 +44,7 @@ Defender for Endpoint supports two ways to manage permissions:
 > - Users that have read-only access (Security Readers) will lose access to the portal until they are assigned a role. Note that only Azure AD user groups can be assigned a role under RBAC.
 > - After switching to RBAC, you will not be able to switch back to using basic permissions management.
 >
->  Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+>  Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Related topics
 

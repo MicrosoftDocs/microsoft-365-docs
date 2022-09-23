@@ -74,7 +74,7 @@ This configuration can be used for scenarios where local SOC operations would li
 > [!NOTE]
 > - Changing this setting impacts future alert correlations only.
 >
-> - Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Enable EDR in block mode
 

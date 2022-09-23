@@ -72,7 +72,7 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Defen
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 
 > [!NOTE]
-> Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ### Security Portal
 

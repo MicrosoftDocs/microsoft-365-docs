@@ -63,7 +63,7 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
 9. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Learn more: [Assign device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
    
     >[!Note]
-    > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 1. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 

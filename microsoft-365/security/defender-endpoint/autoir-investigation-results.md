@@ -78,7 +78,7 @@ In the Investigation details view, you can see information on the **Investigatio
 > [!NOTE]
 > - The specific tabs you see in an investigation details page depends on what your subscription includes. For example, if your subscription does not include Microsoft Defender for Office 365 Plan 2, you won't see a **Mailboxes** tab.
 >
-> - Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 |Tab|Description|
 |---|---|

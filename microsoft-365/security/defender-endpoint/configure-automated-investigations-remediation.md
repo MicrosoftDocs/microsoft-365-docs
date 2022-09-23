@@ -35,7 +35,7 @@ To configure automated investigation and remediation:
 2. [Set up device groups](#set-up-device-groups).
 
 > [!NOTE]
-> - Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Turn on automated investigation and remediation
 

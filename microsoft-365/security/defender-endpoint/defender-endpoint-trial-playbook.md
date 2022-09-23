@@ -81,7 +81,7 @@ Defender for Endpoint supports two ways to manage permissions:
 - Role-based access control (RBAC): Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information, see [Manage portal access using role-based access control](rbac.md).
 
     > [!NOTE]
-    > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2.
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Step 3: Visit the Microsoft 365 Defender portal
 
