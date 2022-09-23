@@ -4,7 +4,7 @@ description: Shows how Network protection prevents employees from using any appl
 keywords: network protection, protect against phishing scams, protect against exploits, protect against malicious content, demonstration 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Network protection demonstrations
@@ -30,9 +30,11 @@ Network Protection helps reduce the attack surface of your devices from Internet
 ## PowerShell command
 
 Set-MpPreference -EnableNetworkProtection Enabled
-Enabled = Block mode (1)
-AuditMode = Audit Mode (2)
-Disabled = Off (0)
+
+### States
+- Enabled = Block mode (1)
+- AuditMode = Audit Mode (2)
+- Disabled = Off (0)
 
 ## Verify configuration
 
@@ -41,8 +43,7 @@ Get-MpPreference
 ## Scenario
 
 1. Turn on Network Protection using powershell command: Set-MpPreference -EnableNetworkProtection Enabled
-2. Using the browser of your choice (not Edge*), navigate to the Network Protection website test
-   *Edge has other security measures in place to protect from this vulnerability(smartscreen)
+2. Using the browser of your choice (not Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/) (Edge has other security measures in place to protect from this vulnerability(smartscreen))
 
 ## Expected results
 

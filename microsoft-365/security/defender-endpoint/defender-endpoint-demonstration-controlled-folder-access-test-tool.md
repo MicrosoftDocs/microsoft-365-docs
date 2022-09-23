@@ -29,8 +29,10 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 
 ## PowerShell commands
 
-- Set-MpPreference -EnableControlledFolderAccess Enabled
-### State
+- Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+
+States
+
 - Enabled = Block mode (1)
 - AuditMode = Audit Mode (2)
 - Disabled = Off (0)
@@ -39,30 +41,43 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 
 - Get-MpPreference
 
+## Test file
+[CFA ransomware test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
+
 ## Scenario
 
 ### Setup
 
 Download and run this [setup script](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
-Downloaded CFA tool will be in the c:/demo/CFATestFiles folder.
 
 You can perform these manual steps instead:
+Create a folder under c: named demo, "c:\demo"
+Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo (we need something to encrypt)
+Execute PowerShell commands above
 
-1. Turn on CFA using powershell command: Set-MpPreference -EnableControlledFolderAccess Enabled
-2. Download the [CFA test tool](https://demo.wd.microsoft.com/Content/CFAtool.exe)
-3. Execute PowerShell commands above
+## Scenario 1: CFA blocks ransomware test file
+Turn on CFA using powershell command: Set-MpPreference -EnableControlledFolderAccess Enabled
+Add the demo folder to protected folders list using PowerShell command: Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+Download the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
+Execute the ransomware test file *this is not ransomware, it simple tries to encrypt c:\demo
 
-### Scenario 1: Use the CFA test tool to simulate an untrusted process writing to a protected folder
+Expected results
+5 seconds after executing the ransomware test file you should see a notification CFA blocked it
 
-1. Launch CFA test tool
-2. Select the desired folder and create file
-3. You can find more information [here](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access)
+## Scenario 2: What would happen without CFA
+Turn off CFA using this powershell command: Set-MpPreference -EnableControlledFolderAccess Disabled
+Execute the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
+
+Expected results
+The files in c:\demo will be encrypted and you should get a warning message
+Execute the ransomware test file again to decrypt the files
 
 ## Clean-up
 
 Download and run this [cleanup script](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip). You can perform these manual steps instead:
 
 - Set-MpPreference -EnableControlledFolderAccess Disabled
+- Cleanup c:\demo encryption run the encrypt/decrypt file
 
 ## See also
 
