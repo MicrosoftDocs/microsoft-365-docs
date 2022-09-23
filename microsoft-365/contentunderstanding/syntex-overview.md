@@ -18,7 +18,7 @@ description: Learn about the capabilities and features in SharePoint Syntex.
 
 # Overview of Microsoft SharePoint Syntex
 
-SharePoint Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries.
+SharePoint Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries.
 
 <!---
 </br>
@@ -42,21 +42,21 @@ In SharePoint Syntex, you can build [custom models](model-types-overview.md) or 
 
 You build custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
 
-- [Classify and extract by text pattern](document-understanding-overview.md)
-- [Extract by layout](form-processing-overview.md)
-- [Extract by text pattern and layout](extract-by-text-pattern-and-layout-overview.md)
+- [Unstructured document processing](document-understanding-overview.md)
+- [Structured document processing](form-processing-overview.md)
+- [Freeform document processing](freeform-document-processing-overview.md)
 
-| Classify and extract by text pattern  | Extract by layout<br><br>  | Extract by text pattern and layout  |
+| Unstructured document processing  | Structured document processing  | Extract by text pattern and layout  |
 | ------------- | ------------- | ------------- |
-|  ![Icon for Classify and extract by text pattern model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for Extract by layout model.](../media/content-understanding/custom-extract-by-layout.png) | ![Icon for Extract by text pattern and layout model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |
+|  ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png) | ![Icon for rreeform document processing model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |
 | Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more](document-understanding-overview.md) | Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more](form-processing-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more](extract-by-text-pattern-and-layout-overview.md) |
 
 ### Prebuilt models
 
-If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md). This model is pretrained to extract predefined entities from common business files. Prebuilt models include:
+If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md). This type of model is pretrained to extract predefined entities from common business files. Prebuilt models include:
 
-- [Invoices](prebuilt-model-invoice.md)
-- [Receipts](prebuilt-model-receipt.md)
+- [Invoice processing](prebuilt-model-invoice.md)
+- [Receipt processing](prebuilt-model-receipt.md)
 
 | Invoices  | Receipts  | 
 | ------------- | ------------- |
@@ -77,7 +77,7 @@ For more information, see [Create documents using content assembly in SharePoint
 
 The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
-This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 For more information, see [Search for metadata in document libraries in SharePoint Syntex](metadata-search.md).
 
