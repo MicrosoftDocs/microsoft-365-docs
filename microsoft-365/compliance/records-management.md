@@ -1,5 +1,5 @@
 ---
-title: "Learn about records management for Microsoft 365 data"
+title: "Records management for documents and emails in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
