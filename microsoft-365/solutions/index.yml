@@ -6,7 +6,7 @@ summary: This solution and architecture center brings together the technical gui
 metadata:
   title: Microsoft 365 solution and architecture center # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This help center will enable you to learn about IT training and how to design the solution and architecture that is right for your organization. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: microsoft-365-enterprise
+  ms.service: o365-solutions
  #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: 

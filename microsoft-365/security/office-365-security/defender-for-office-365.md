@@ -1,6 +1,5 @@
 ---
 title: Microsoft Defender for Office 365
-  - CSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

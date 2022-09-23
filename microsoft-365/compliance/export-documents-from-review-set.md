@@ -1,21 +1,23 @@
 ---
 title: "Export documents from a review set"
+description: "Learn how to select and export content from an eDiscovery (Premium) review set for presentations or external reviews."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to select and export content from an eDiscovery (Premium) review set for presentations or external reviews."
 ms.custom: seo-marvel-mar2020
 ---
 
