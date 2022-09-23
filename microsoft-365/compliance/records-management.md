@@ -26,7 +26,7 @@ description: Learn how Microsoft Purview Records Management supports high-value 
 
 # Learn about records management
 
->*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 A records management system, also known as records and information management, is a solution for organizations to manage regulatory, legal, and business-critical records. Records management for Microsoft Purview helps you achieve your organization's legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 
