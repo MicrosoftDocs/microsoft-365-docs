@@ -15,7 +15,9 @@ search.appverid:
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: This landing page provides links and planning information for security and compliance in Office 365.
-ms.collection: M365-security-compliance 
+ms.collection: 
+- tier3
+- 0365-security-compliance 
 ms.custom: seo-marvel-apr2020
 ---
 
