@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
+- tier1
 - M365-security-compliance
 search.appverid: 
 - MOE150
