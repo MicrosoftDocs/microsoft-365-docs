@@ -39,6 +39,9 @@ Depending on
 
 remediation actions can occur automatically or only upon approval by your organization's security operations team.
 
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
+
 Here are a few examples:
 
 - **Example 1**: Fabrikam's device groups are set to **Full - remediate threats automatically** (the recommended setting). In this case, remediation actions are taken automatically for artifacts that are considered to be malicious following an automated investigation (see [Review completed actions](#review-completed-actions)).
