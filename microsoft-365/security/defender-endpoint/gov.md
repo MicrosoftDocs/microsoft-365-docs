@@ -185,7 +185,6 @@ These are the known gaps:
 |Reports: Device health|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 |Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
-\
 **Footnote**
 <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
 
