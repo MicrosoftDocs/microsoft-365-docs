@@ -8,8 +8,8 @@ f1.keywords:
   - NOCSH
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
