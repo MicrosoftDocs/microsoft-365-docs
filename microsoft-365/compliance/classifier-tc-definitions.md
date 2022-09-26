@@ -32,7 +32,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Bank Statement (preview)**: Detects items that contain a financial transaction of a bank account including account information, deposits, withdrawals, account balance, interest accrued and bank charges within a given period. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files.
 
-- **Budget (preview)**: Detects  budget documents, budget forecasts and current budget statements including income and expenses of an organization. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Budget (preview)**: Detects budget documents, budget forecasts and current budget statements including income and expenses of an organization. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
 
 - **Business Plan (preview)**: Detects components of a business plan including business opportunity, plan of achieving the outcomes, market study and competitor analysis. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
 
@@ -56,13 +56,13 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Harassment**: Detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
-- **Health/Medical forms (preview)**: Detect and classify various forms and files that are used for systematic documentation of a patient's admission details, medical history, patient information and prior authorization request and are typically used in medical/health services. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
+- **Health/Medical forms (preview)**: Detects various forms and files that are used for systematic documentation of a patient's admission details, medical history, patient information and prior authorization request and are typically used in medical/health services. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
 
 - **Healthcare**: Detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims, etc. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
 
 - **HR**: Detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning, and termination. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
 
-- **Invoice (preview)**: Detects invoices containing an itemized summary of the purchase,  the total balance owed, current payment due, and various payment methods. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Invoice (preview)**: Detects invoices containing an itemized summary of the purchase, the total balance owed, current payment due, and various payment methods. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
 
 - **IP**: Detects content in Intellectual Property related categories such as trade secrets and similar confidential information. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
 
@@ -70,11 +70,11 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Legal affairs**: Detects content in legal affairs-related categories such as litigation, legal process, legal obligation, legal terminology, law, and legislation. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
-- **License Agreement (preview)**: Detects license agreements,  contains terms and conditions for use and compensation for the licensor. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files.
+- **License Agreement (preview)**: Detects license agreements, contains terms and conditions for use and compensation for the licensor. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files.
 
 - **Loan Agreements and offer letters (preview)**: Detects loan agreements, offer letters and terms and conditions contained within the document. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
-- **Merger and Acquisition Files (preview)**: This classifier detects documents including Letter of intent, Term sheets and related files. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
+- **Merger and Acquisition Files (preview)**: This classifier detects documents including letter of intent, term sheets and related files. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
 - **Manufacturing batch records (preview)**: This classifier detects manufacturing batch documents that include details around the entire manufacturing process and the history of a product batch. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
@@ -95,7 +95,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Resume**: This classifier detects resume. A resume is a document that a job applicant provides an employer, which has a detailed statement of the candidate's prior work experience, education, and accomplishments. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .txt files.
 
-- **Sales and revenue (preview)**: This classifier detects Sales Reports, Revenue/ Income Statement and Sales/ Demand forecasting reports for organizations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
+- **Sales and revenue (preview)**: This classifier detects sales reports, revenue/income statement and sales/demand forecasting reports for organizations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
 
 
 - **Software Product Development Files (preview)**: This classifier detects files used in software development including product requirements document, product testing and planning, files including test cases, and test reports. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
@@ -110,8 +110,6 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Tax**: Detects tax related content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
-
-
 
 These classifiers appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
