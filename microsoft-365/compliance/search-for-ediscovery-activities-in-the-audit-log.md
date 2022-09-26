@@ -1,21 +1,23 @@
 ---
 title: "Search for eDiscovery activities in the audit log"
+description: Learn what events are logged when users assigned eDiscovery permissions perform Content search, eDiscovery (Standard), and eDiscovery (Premium) tasks in the Microsoft Purview compliance portal.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Learn what events are logged when users assigned eDiscovery permissions perform Content search, eDiscovery (Standard), and eDiscovery (Premium) tasks in the Microsoft Purview compliance portal.
 ms.custom: seo-marvel-apr2020
 ---
 

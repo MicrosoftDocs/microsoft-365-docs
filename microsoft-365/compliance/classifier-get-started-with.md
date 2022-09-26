@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: null
 ms.collection: 
+- tier1
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance

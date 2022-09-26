@@ -20,6 +20,7 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-overview
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

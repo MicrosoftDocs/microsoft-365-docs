@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
@@ -59,7 +59,7 @@ User chats are retained indefinitely even if a user account is deleted. If you d
 
 - [Retention policies in Microsoft Teams](/microsoftteams/retention-policies)
 
-A single retention policy can be set to apply to Teams chat and Teams channel messages. 
+A single retention policy can be set to apply to Teams chat and Teams channel messages (including shared channel messages). Teams private channel messages must be contained in their own retention policy.
 
 Additional resources:
 
@@ -121,6 +121,8 @@ With Microsoft 365 Multi-Geo, you can provision and store data at rest in the ge
 - [Plan for Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## Related topics
+
+[Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 [Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
