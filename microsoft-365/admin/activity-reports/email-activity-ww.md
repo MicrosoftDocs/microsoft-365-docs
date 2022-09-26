@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center email activity reports"
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
