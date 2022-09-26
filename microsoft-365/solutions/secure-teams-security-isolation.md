@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
 - highpri

@@ -20,7 +20,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 04/01/2022
+ms.date: 09/22/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -59,9 +59,6 @@ search.appverid: met150
 > If something goes wrong while onboarding, see [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md). That article describes how to resolve onboarding issues and common errors on endpoints.
 
 ### Onboarding methods
-
-> [!IMPORTANT]
-> If you are using Microsoft Defender for Cloud, see [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
 
 Deployment methods vary, depending on operating system and preferred methods. The following table lists resources to help you onboard to Defender for Endpoint:
 

@@ -13,6 +13,7 @@ ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection:
 - m365solution-smb
+- highpri
 ms.custom:
 - MiniMaven
 search.appverid:
