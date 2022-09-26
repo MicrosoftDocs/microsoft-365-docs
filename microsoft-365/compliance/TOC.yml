@@ -1016,6 +1016,8 @@
           href: classifier-get-started-with.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
+        - name: Trainable classifier definitions
+          href: classifier-tc-definitions.md
     - name: Data classification
       items: 
         - name: Learn about data classification
