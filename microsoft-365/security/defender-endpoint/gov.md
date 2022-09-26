@@ -179,7 +179,7 @@ These are the known gaps:
 
 ****
 
-|Feature name|GCC|GCC High|DoD|
+| Feature name | GCC | GCC High | DoD |
 |---|:---:|:---:|:---:|
 |Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Reports: Device health|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
