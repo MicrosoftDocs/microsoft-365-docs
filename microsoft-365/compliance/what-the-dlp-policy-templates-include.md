@@ -12,6 +12,7 @@ f1_keywords:
 - 'ms.o365.cc.DLPNewPolicyFromTemplate'
 ms.service: O365-seccomp
 ms.collection: 
+- tier1
 - M365-security-compliance
 ms.localizationpriority: medium
 search.appverid: 
