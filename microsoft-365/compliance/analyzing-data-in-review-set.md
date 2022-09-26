@@ -1,22 +1,22 @@
 ---
 title: "Analyze data in a review set in eDiscovery (Premium)"
+description: Learn about the tools available to organize document sets when analyzing an Microsoft Purview eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn about the tools available to organize document sets when analyzing an Microsoft Purview eDiscovery (Premium) case.
 ms.custom: seo-marvel-mar2020
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Use a script to add users to a hold in a eDiscovery (Standard) case"
+description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,18 +11,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
-- SPO_Content
+- tier1
+- M365-security-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
 - MBS150
 - MET150
-ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Microsoft Purview compliance portal."
 ---
 
 # Use a script to add users to a hold in a eDiscovery (Standard) case

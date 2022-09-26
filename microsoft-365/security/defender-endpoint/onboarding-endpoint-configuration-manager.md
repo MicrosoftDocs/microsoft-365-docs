@@ -15,6 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
+  - highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde

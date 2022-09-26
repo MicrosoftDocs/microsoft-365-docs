@@ -11,6 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -55,7 +56,9 @@ Summary of outcomes:
 
 ## Requirements
 
-- You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- You've [created and published](create-sensitivity-labels.md) sensitivity labels, and they're published to the users who will select a default sensitivity label for a SharePoint document library.
+
+- You've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md). To check this status, you can run `Get-SPOTenant -EnableAIPIntegration` from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to confirm the value is set to true.
 
 - [SharePoint Information Rights Management (IRM) is not enabled for the library](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). This older technology isn't compatible with using a default sensitivity label for a SharePoint document library. If a library is enabled for IRM, you won't be able to select a default sensitivity label.
 

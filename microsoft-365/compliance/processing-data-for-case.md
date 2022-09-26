@@ -1,5 +1,6 @@
 ---
 title: "Work with processing errors in eDiscovery (Premium)"
+description: "Overview about processing various forms of data in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,15 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 ms.custom:
 - seo-marvel-apr2020
-description: "Overview about processing various forms of data in eDiscovery (Premium)."
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ---
 
 # Work with processing errors in eDiscovery (Premium)

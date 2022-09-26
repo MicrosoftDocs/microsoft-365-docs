@@ -1,5 +1,6 @@
 ---
 title: "Deploy a connector to archive Twitter data"
+description: "Administrators can set up a native connector to import and archive Twitter data to Microsoft 365. After this data is imported to Microsoft 365, you can use compliance features such as legal hold, content search, and retention policies to manage the governance of your organization's Twitter data."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,10 +13,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Administrators can set up a native connector to import and archive Twitter data to Microsoft 365. After this data is imported to Microsoft 365, you can use compliance features such as legal hold, content search, and retention policies to manage the governance of your organization's Twitter data."
 ---
 
 # Deploy a connector to archive Twitter data
