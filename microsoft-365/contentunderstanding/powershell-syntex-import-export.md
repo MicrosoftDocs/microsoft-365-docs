@@ -17,7 +17,7 @@ description: Learn about how to export and import models with PowerShell in Shar
 
 # Export and import Classify and extract by text pattern models with PowerShell
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 > [!IMPORTANT]
 > The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
@@ -26,7 +26,7 @@ SharePoint Syntex models can be exported as PnP templates, enabling reuse across
 
 ## Export all models in a content center
 
-To export all **Classify and extract by text pattern** models in a content center into a single PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
+To export all unstructured document processing models in a content center into a single PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -36,7 +36,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## Export specific models
 
-To export specific **Classify and extract by text pattern** models from a content center into a PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
+To export specific unstructured document processing models from a content center into a PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -92,7 +92,7 @@ If you don't include the property "includeTrainingData", the default behavior is
 
 ## Import models to a content center
 
-**Classify and extract by text pattern** models that have been exported to PnP templates can be imported to a content center on any tenant. If the export included training data, then the model will be editable once imported.
+Unstructured document processing models that have been exported to PnP templates can be imported to a content center on any tenant. If the export included training data, then the model will be editable once imported.
 
 To import a model, use the following commands:
 
