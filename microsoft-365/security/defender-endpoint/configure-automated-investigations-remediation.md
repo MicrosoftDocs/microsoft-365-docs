@@ -34,6 +34,9 @@ To configure automated investigation and remediation:
 1. [Turn on the features](#turn-on-automated-investigation-and-remediation); and
 2. [Set up device groups](#set-up-device-groups).
 
+> [!NOTE]
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+
 ## Turn on automated investigation and remediation
 
 1. As a global administrator or security administrator, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
