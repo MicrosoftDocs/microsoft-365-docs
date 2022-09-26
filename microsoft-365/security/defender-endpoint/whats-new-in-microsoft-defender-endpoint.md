@@ -53,8 +53,9 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-For more information on Microsoft Defender for Endpoint on other operating systems:
+For more information on Microsoft Defender for Endpoint on specific operating systems:
 
+- [What's new in Defender for Endpoint on Windows](windows-whatsnew.md)
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
