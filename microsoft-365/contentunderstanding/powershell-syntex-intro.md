@@ -26,7 +26,7 @@ Select from the following scenarios to learn how to use PowerShell to manage Sha
 
 - [**Export and import models**](powershell-syntex-import-export.md)
 
-    Start here if you want to learn how to export a **Classify and extract by text pattern** model from a content center, and import to another content center or tenant.
+    Start here if you want to learn how to export an unstructured document processing model from a content center, and import to another content center or tenant.
 
 - [**Publishing**](powershell-syntex-publishing.md)
 
@@ -38,4 +38,4 @@ Select from the following scenarios to learn how to use PowerShell to manage Sha
 
 - [**Explanations**](powershell-syntex-explanations.md)
 
-    Start here if want to learn how to create a custom explanation template for a **Classify and extract by text pattern** model using PowerShell.
+    Start here if want to learn how to create a custom explanation template for an unstructured document processing model using PowerShell.
