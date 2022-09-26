@@ -9,6 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection:
+- M365-security-compliance
+- tier1
 ms.localizationpriority: high
 description: Learn about the default labels and policies for Microsoft Purview Information Protection to classify and protect sensitive content.
 ---
