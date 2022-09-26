@@ -116,6 +116,7 @@ Android|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.sv
 iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> 
 
 **Footnotes**
+
 <sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 
 <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
@@ -187,6 +188,7 @@ These are the known gaps:
 |Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 
 **Footnote**
+
 <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
 
 
