@@ -1,5 +1,5 @@
 ---
-title: Message delegation
+title: Use a Teams status message to assign a delegate
 author: samanro
 ms.author: samanro
 manager: pamgreen
@@ -26,7 +26,7 @@ description: Learn how a user with Away status or Do Not Disturb status can expl
 ms.custom: seo-marvel-mar2020
 ---
 
-# Message delegation
+# Use a Teams status message to assign a delegate
 
 Users in Microsoft Teams can set their status to Away or Do not Disturb, and include a custom text status message. A user who's going to be away can assign someone as a delegate who people can contact instead. The message delegation feature works as follows:
 
