@@ -95,7 +95,7 @@ Based on the outcome of the trial, you can decide whether to proceed to producti
 
 To ensure continuity of service, you need to purchase the required number of [licenses](syntex-licensing.md) and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to fully use SharePoint Syntex.
 
-You might have to estimate your projected use of **Extract by layout** or **Extract by text pattern and layout** models, and plan for the expected number of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
+You might have to estimate your projected use of Sstructured document processing or freeform document processing models, and plan for the expected number of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
 
 ### Don't proceed to production use
 
@@ -109,7 +109,7 @@ If you don't purchase licenses following the trial:
 
 - Content centers and any models in them won't be automatically deleted. These will remain available for use if you decide to purchase licenses in the future.
 
-- **Extract by layout** or **Extract by text pattern and layout** models will be stored in the Dataverse (formerly named Common Data Service (CDS)) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
+- Structured document processing or freeform document processing models will be stored in the Dataverse (formerly named Common Data Service (CDS)) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
 
 ## See also
 
