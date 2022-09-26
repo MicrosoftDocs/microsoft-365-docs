@@ -1,5 +1,5 @@
 ---
-title: Work with explanations for Classify and extract by text pattern models in PowerShell
+title: Work with explanations for unstructured document processing models in PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 description: Learn about work with SharePoint Syntex model explanations in PowerShell.
 ---
 
-# Work with explanations for Classify and extract by text pattern models in PowerShell
+# Work with explanations for unstructured document processing models in PowerShell
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 > [!IMPORTANT]
 > The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
