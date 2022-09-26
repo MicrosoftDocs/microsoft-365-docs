@@ -1,5 +1,6 @@
 ---
 title: "Investigating partially indexed items in eDiscovery"
+description: "Learn how to manage partially indexed items (also called unindexed items) from Exchange, SharePoint, and OneDrive for Business within your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,15 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to manage partially indexed items (also called unindexed items) from Exchange, SharePoint, and OneDrive for Business within your organization."
 ---
 
 # Investigating partially indexed items in eDiscovery

@@ -70,14 +70,14 @@ lastUpdateTime | DateTimeOffset | The date and time (in UTC) the Incident was la
 assignedTo | string | Owner of the Incident.
 severity | Enum | Severity of the Incident. Possible values are: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```, and ```High```.
 status | Enum | Specifies the current status of the incident. Possible values are: ```Active```, ```InProgress```, ```Resolved```, and ```Redirected```.
-classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
-determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
-tags | string List | List of Incident tags.
+classification | Enum | Specification of the incident. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
+determination | Enum | Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
+tags | string list | List of Incident tags.
 comments | List of incident comments | Incident Comment object contains: comment string, createdBy string, and createTime date time.
-alerts | Alert List | List of related alerts. See examples at [List incidents](api-list-incidents.md) API documentation.
+alerts | alert list | List of related alerts. See examples at [List incidents](api-list-incidents.md) API documentation.
 
 >[!NOTE]
->Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+>Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Related articles
 
