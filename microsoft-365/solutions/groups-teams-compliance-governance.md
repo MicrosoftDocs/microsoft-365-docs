@@ -59,7 +59,7 @@ User chats are retained indefinitely even if a user account is deleted. If you d
 
 - [Retention policies in Microsoft Teams](/microsoftteams/retention-policies)
 
-A single retention policy can be set to apply to Teams chat and Teams channel messages. 
+A single retention policy can be set to apply to Teams chat and Teams channel messages (including shared channel messages). Teams private channel messages must be contained in their own retention policy.
 
 Additional resources:
 
