@@ -21,7 +21,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Microsoft Defender Experts
+# Endpoint Attack Notifications
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
