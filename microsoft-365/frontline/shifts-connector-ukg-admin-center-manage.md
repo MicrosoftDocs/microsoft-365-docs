@@ -42,7 +42,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 
     - To create a new connection, select **Add connector** at the top of the page to start the wizard.
 
-    - To view more details about a connection, click the connection name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more.
+    - To view more details about a connection, click the connection name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more. You can also choose **Edit** to update connection settings in the wizard.
 
       :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 

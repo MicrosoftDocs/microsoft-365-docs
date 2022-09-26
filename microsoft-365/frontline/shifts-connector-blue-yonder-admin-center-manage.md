@@ -39,7 +39,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Mic
     :::image type="content" source="media/shifts-connector-blue-yonder-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-blue-yonder-manage.png":::
 
     - To create a new connection, select **Add connector** at the top of the page to start the wizard.
-    - To view more details about a connection, click the connection name. On the details page, you'll see health information, including mapping and account authorization errors and warnings (if any), the list of mappings (if any), and more.
+    - To view more details about a connection, click the connection name. On the details page, you'll see health information, including mapping and account authorization errors and warnings (if any), the list of mappings (if any), and more. You can also choose **Edit** to update connection settings in the wizard.
 
       :::image type="content" source="media/shifts-connector-blue-yonder-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-blue-yonder-manage-details.png":::
 
