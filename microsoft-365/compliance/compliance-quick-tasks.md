@@ -10,8 +10,8 @@ ms.service: O365-seccomp
 f1.keywords:
 - NOCSH
 ms.collection:
+- tier1
 - m365-security-compliance
-- m365initiative-compliance
 ms.custom: 
 - admindeeplinkDEFENDER
 - intro-get-started
