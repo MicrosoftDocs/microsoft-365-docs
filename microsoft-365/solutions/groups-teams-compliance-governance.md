@@ -36,7 +36,7 @@ The following table provides a quick reference for the compliance controls avail
 ||Encrypt sensitive content|[Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)|
 |Information protection|||
 ||Prevent the loss of sensitive information|[Learn about Microsoft Purview Data Loss Prevention](../compliance/dlp-learn-about-dlp.md)|
-||Protect sensitive information in chat.|[Microsoft Purview Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Protect sensitive information in chat.|[Microsoft Purview Data Loss Prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Define your organization's sensitive information|[Custom sensitive information types](../compliance/sensitive-information-type-learn-about.md)|
 |User segmentation|||
 ||Restrict communication between user segments|[Information barriers](../compliance/information-barriers.md)|
