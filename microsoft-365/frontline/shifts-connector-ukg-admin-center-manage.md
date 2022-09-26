@@ -36,7 +36,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
 2. Select **Manage Shifts connectors**, and then choose **Manage**. Keep in mind that this option is available only if you've set up at least one connection, either using the wizard or PowerShell.
 
-    Here, you'll see a list of all the connections you've set up through the wizard or PowerShell, along with information about each one. You can also access the wizard to create a new connection.
+    Here, you'll see a list of all the connections you've set up through the wizard or PowerShell, along with information about each one. 
 
     :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
 
