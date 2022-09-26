@@ -104,7 +104,7 @@ If you have sensitive information that is unique to your organization, such as p
 
 ## User segmentation
 
-With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization. Information barriers lets you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
+With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization. Information barriers let you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
 
 - [Information barriers](../compliance/information-barriers.md)
 
