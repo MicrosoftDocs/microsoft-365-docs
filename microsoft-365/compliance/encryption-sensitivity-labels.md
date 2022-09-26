@@ -342,7 +342,7 @@ For built-in labeling, and for the Azure Information Protection unified labeling
 
 #### Support for organization-wide custom permissions
 
-Now rolling out in preview for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+Now in preview for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
 
 ![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
 
