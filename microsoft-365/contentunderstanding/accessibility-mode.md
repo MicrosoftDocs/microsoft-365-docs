@@ -1,17 +1,21 @@
 ---
-title: Accessibility mode in SharePoint Syntex
+title: Accessibility mode in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn how to use accessibility features mode when training and working with models in SharePoint Syntex.
 ---
 
-# Accessibility mode in SharePoint Syntex
+# Accessibility mode in Microsoft SharePoint Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
 

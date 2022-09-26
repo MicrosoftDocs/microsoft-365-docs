@@ -7,7 +7,9 @@ audience: admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 search.appverid:
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: high
 description: 'SKOS format reference for SharePoint taxonomy'
 ---
