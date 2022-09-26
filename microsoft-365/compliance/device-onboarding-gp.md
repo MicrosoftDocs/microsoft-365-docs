@@ -11,7 +11,8 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- tier1 
 - M365-security-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
