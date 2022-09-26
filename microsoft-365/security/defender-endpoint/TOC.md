@@ -485,10 +485,9 @@
 ### [Next generation protection]()
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
-## Endpoint Attack Notifications
-### [Endpoint Attack Notifications](endpoint-attack-notifications.md)
+## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
 
-#### [Experts on Demand](experts-on-demand.md)
+### [Experts on Demand](experts-on-demand.md)
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
