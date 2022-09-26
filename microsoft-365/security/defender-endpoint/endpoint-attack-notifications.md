@@ -1,8 +1,8 @@
 ---
 title: Endpoint Attack Notifications
 ms.reviewer:
-description: Microsoft Threat Experts provides an extra layer of expertise to Microsoft Defender for Endpoint.
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification, Ask Defender Experts
+description: Endpoint Attack Notifications provides proactive hunting for the most important threats to your network.
+keywords: Endpoint Attack Notification, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Ask Defender Experts, experts on demand
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -66,7 +66,3 @@ Endpoint Attack Notifications can be identified by:
 
 ## Create an email notification rule
 You can create rules to send email notifications for notification recipients. See ![Configure alert notifications](../../security/defender-endpoint/configure-email-notifications.md) to create, edit, delete, or troubleshoot email notification, for details.
-
-## To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to:
-
-- [Microsoft Defender Experts for Hunting overview](../../security/defender/defender-experts-for-hunting.md)
