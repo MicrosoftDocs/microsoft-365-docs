@@ -26,7 +26,7 @@ Think of the intelligent content services available in SharePoint Syntex as havi
 
 With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. For  custom model types, there are three different ways of understanding your content. The custom model type you use is based on file format and use case.
 
-| Classify and extract by text pattern | Extract by layout | Extract by text pattern and layout |
+| Unstructured document processing | Structured document processing | Freeform document processing |
 | ------- | ------- | ------- |
 | Created in the content center, part of SharePoint Syntex. | Created from document library. | Created from document library. |
 | Model created in native interface. | Model created in AI builder. | Model created in AI builder. |
@@ -71,15 +71,15 @@ Determine who in your organization will build and manage the models. The followi
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
 | AAD role| AAD role | AAD role | Champions |
-| Configure **Extract by layout** and **Extract by text pattern and layout** models | Configure Dataverse environment | Gather use cases | Gather business use cases |
+| Configure structured document processing and freeform document processing models | Configure Dataverse environment | Gather use cases | Gather business use cases |
 | Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
 
 Knowledge manager, business process owner, and content model owner create sample models and champion adoption in the organization. Others who might be involved the compliance admin and taxonomy managers.
 
 Where will they build and apply the models? Are there existing processes or repositories that could be enhanced?
 
-- **Classify and extract by text pattern**: You can create multiple content centers for different business areas.
-- **Extract by layout** or **Extract by text pattern and layout**: Decide which sites will get this action.
+- Unstructured document processing: You can create multiple content centers for different business areas.
+- Structured document processing or freeform document processing: Decide which sites will get this action.
 
 ## Strategic positioning
 
