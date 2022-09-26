@@ -3,12 +3,15 @@ title: Accessibility mode in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 search.appverid: 
-ms.collection: m365initiative-syntex
-- ms.localizationpriority:  medium
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+ms.localizationpriority:  medium
 description: Learn how to use accessibility features mode when training and working with models in SharePoint Syntex.
 ---
 
