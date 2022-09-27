@@ -12,7 +12,9 @@ f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
+- tier1
+- highpri 
 - M365-security-compliance
 - SPO_Content
 search.appverid: 

@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - tier1
+- highpri
 - SPO_Content
 description: Learn how Microsoft Purview Data Lifecycle Management helps you keep what you need and delete what you don't.
 ---

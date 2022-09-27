@@ -16,6 +16,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-insiderrisk
 - m365solution-overview
+- highpri
 ---
 
 # Microsoft Purview insider risk solutions

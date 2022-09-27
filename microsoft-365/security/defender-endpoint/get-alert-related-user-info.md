@@ -57,6 +57,8 @@ Delegated (work or school account)|User.Read.All|'Read user profiles'
 >
 > - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 

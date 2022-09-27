@@ -13,7 +13,7 @@ ms.collection:
 - M365-security-compliance
 - tier1
 ms.localizationpriority: medium
-description: "Information workers in your organization handle many kinds of sensitive information during a typical day. Document Fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting and how to create one by using PowerShell."
+description: "Document Fingerprinting makes it easier for you to protect information by identifying standard forms that are used by your organization. This topic describes the concepts behind Document Fingerprinting and how to create one by using PowerShell."
 ---
 
 # Document Fingerprinting
