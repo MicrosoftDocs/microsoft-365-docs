@@ -1,5 +1,5 @@
 ---
-title: "Increase security in Microsoft 365 Business Premium"
+title: "Increase your security with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,6 +16,7 @@ ms.collection:
 - m365solution-smb
 - highpri
 - m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
