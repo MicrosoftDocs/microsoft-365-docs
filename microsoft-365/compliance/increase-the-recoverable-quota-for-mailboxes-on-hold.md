@@ -1,5 +1,6 @@
 ---
 title: "Increase the Recoverable Items quota for mailboxes on hold"
+description: "Enable the archive mailbox and turn on auto-expanding archiving to increase the size of the Recoverable Items folder for a mailbox in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,13 +10,14 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: "Enable the archive mailbox and turn on auto-expanding archiving to increase the size of the Recoverable Items folder for a mailbox in Microsoft 365."
 ---
 
 # Increase the Recoverable Items quota for mailboxes on hold

@@ -133,6 +133,6 @@ To update existing rules to use Microsoft Purview Message Encryption:
 3. For each rule, in **Do the following**:
     - Select **Modify the message security**.
     - Select **Apply Office 365 Message Encryption and rights protection**.
-    - Select an RMS template from the list.
+    - Select **Encrypt** from the RMS template list.
     - Select **Save**.
     - Select **OK**.

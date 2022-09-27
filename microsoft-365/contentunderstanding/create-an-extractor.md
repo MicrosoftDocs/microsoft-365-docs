@@ -1,5 +1,5 @@
 ---
-title: Create an extractor Microsoft SharePoint Syntex
+title: Create an extractor in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen

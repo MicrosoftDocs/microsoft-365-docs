@@ -1,5 +1,6 @@
 ---
 title: "Manage holds in eDiscovery (Premium)"
+description: Learn how to place holds on custodians and their data sources to preserve relevant content for your eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,13 +12,12 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
+- tier1
 - M365-security-compliance
-- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Learn how to place holds on custodians and their data sources to preserve relevant content for your eDiscovery (Premium) case.
 ms.custom: 
 - seo-marvel-mar2020
 - admindeeplinkMAC

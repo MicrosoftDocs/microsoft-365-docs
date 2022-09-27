@@ -28,6 +28,9 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
+
 In an enterprise scenario, security operation teams are typically assigned a set of devices. These devices are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
 In Microsoft Defender for Endpoint, you can create device groups and use them to:

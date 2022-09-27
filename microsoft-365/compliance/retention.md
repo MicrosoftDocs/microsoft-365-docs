@@ -12,8 +12,9 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
+- tier1
+- highpri
 - SPO_Content
-- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150

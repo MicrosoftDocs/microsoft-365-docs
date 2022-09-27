@@ -15,6 +15,7 @@ ms.collection:
 - M365-Campaigns
 - m365solution-overview
 - m365solution-smb
+- highpri
 ms.custom:
 - MiniMaven
 - intro-overview

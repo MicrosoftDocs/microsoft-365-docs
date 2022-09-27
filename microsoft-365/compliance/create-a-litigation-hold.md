@@ -1,5 +1,6 @@
 ---
 title: "Create a Litigation hold"
+description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,11 +13,14 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
 ms.custom: 
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ---
 
 # Create a Litigation hold

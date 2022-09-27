@@ -1,5 +1,6 @@
 ---
 title: "Export Content search results"
+description: "Export the search results from a Content search in the Microsoft Purview compliance portal to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +12,14 @@ f1_keywords:
 - 'ms.o365.cc.CustomizeExport'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
-- SPO_Content
+- content-search
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: "Export the search results from a Content search in the Microsoft Purview compliance portal to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 ms.custom: seo-marvel-apr2020
 ---
 
