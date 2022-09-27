@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - remotework
 - tier2
 ms.custom: admindeeplinkDEFENDER
