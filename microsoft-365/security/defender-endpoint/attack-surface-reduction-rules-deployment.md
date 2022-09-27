@@ -17,7 +17,7 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:  
- - M365-security-compliance
+ - m365-security
  - m365solution-asr-rules
  - highpri
 ms.date: 09/18/2022

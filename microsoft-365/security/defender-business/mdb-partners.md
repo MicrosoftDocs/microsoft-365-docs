@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Business and Microsoft partner resources
-description: Learn about partner resources, such as MSP PSA and RMM integration with Defender for Business, and Microsoft 365 Lighthouse.
+description: Microsoft partners like managed service providers and cloud service providers can integrate remote monitoring and management (RMM) tools and professional service automation (PSA) software with Defender for Business and Microsoft 365 Lighthouse.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,25 +10,25 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/31/2022
+ms.date: 09/26/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 ---
 
 # Microsoft Defender for Business and Microsoft partner resources
 
-Microsoft partners have access to resources, programs, and tools that empower partners to enable customers to succeed. This article provides an overview of resources that are available for Microsoft partners who serve customers using [Defender for Business](mdb-overview.md) or [Microsoft 365 Business Premium](../../business-premium/index.md).
+Microsoft provides resources, programs, and tools that empower Microsoft partners to enable their customers to succeed. This article provides an overview of resources that are available for Microsoft partners who serve customers using [Defender for Business](mdb-overview.md) or [Microsoft 365 Business Premium](../../business-premium/index.md).
 
 ## Resources for Microsoft managed service providers to build cybersecurity capabilities
 
-Most managed service providers (MSPs) offer a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats.
+Most managed service providers (MSPs) offer a sophisticated stack of capabilities. For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities. Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats. MSPs can help!
 
-**If you're a Microsoft MSP and you want to integrate Microsoft endpoint security capabilities with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software, you can use the [Defender for Endpoint APIs](../defender-endpoint/management-apis.md)**. Using the Defender for Endpoint APIs, with your RMM tools and PSA software, you can:
+**If you're a Microsoft MSP, you can integrate Microsoft endpoint security capabilities with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software by using the [Defender for Endpoint APIs](../defender-endpoint/management-apis.md)**. By using the Defender for Endpoint APIs together with your RMM tools and PSA software, you can:
 
-- Get access to your customers' Microsoft 365 Defender portal to [address alerts and incidents](mdb-respond-mitigate-threats.md).
+- Get access to your customers' Microsoft 365 Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
 - Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.
 - Orchestrate [remediation actions](mdb-review-remediation-actions.md), such as approving actions following automated investigations, or taking manual response actions on a device.
@@ -42,7 +42,7 @@ Use the following resources to learn more:
 
 ## Resources for Cloud Solution Providers
 
-Microsoft Cloud Solution Providers (CSPs) can go beyond reselling licenses and be more involved in customers' business. For example, CSPs can use Microsoft 365 Lighthouse to manage small and medium-sized business customers' security settings and capabilities. CSPs can also view and manage detected threats, and initiate antivirus scans on devices.
+Microsoft Cloud Solution Providers (CSPs) go beyond reselling licenses. These partners tend to be more involved in their customers' businesses, such as by helping to manage security settings and capabilities. CSPs can use Microsoft 365 Lighthouse to manage their customers' security settings and capabilities. CSPs can also view and manage detected threats, and initiate antivirus scans on devices.
 
 | Resource | Description |
 |:---|:---|

@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:

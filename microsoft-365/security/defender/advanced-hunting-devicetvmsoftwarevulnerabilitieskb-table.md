@@ -1,5 +1,5 @@
 ---
-title: DeviceTvmSoftwareVulnerabilitiesKB  table in the advanced hunting schema
+title: DeviceTvmSoftwareVulnerabilitiesKB table in the advanced hunting schema
 description: Learn about the software vulnerabilities tracked by Microsoft Defender Vulnerability Management in the DeviceTvmSoftwareVulnerabilitiesKB table of the advanced hunting schema.
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, CVSS, DeviceTvmSoftwareVulnerabilitiesKB
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,9 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ---
 

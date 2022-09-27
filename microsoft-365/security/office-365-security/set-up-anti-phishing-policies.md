@@ -12,7 +12,7 @@ ms.date:
 ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the anti-phishing policies that are available in Exchange Online Protection (EOP) and Microsoft Defender for Office 365.

@@ -15,7 +15,7 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 ---
 
 # Microsoft 365 Lighthouse and Microsoft Defender for Business

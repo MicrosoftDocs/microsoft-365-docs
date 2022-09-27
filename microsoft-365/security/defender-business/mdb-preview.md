@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: Admin
 ms.collection:
-- m365-security-compliance
+- m365-security
 ms.topic: conceptual
 ---
 

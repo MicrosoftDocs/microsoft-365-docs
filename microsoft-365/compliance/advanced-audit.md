@@ -14,6 +14,8 @@ ms.collection:
 - tier1
 - M365-security-compliance
 - m365solution-audit
+- m365initiative-compliance
+- highpri
 - audit
 search.appverid:
 - MOE150

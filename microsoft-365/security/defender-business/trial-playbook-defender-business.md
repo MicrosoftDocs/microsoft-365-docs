@@ -7,7 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: high
 ms.date: 09/02/2022
 ms.service: microsoft-365-security

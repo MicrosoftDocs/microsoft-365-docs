@@ -14,7 +14,7 @@ ms.reviewer: shlomiakirav
 ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
- - M365-security-compliance
+ - m365-security
  - m365solution-mdb-setup
  - highpri
 ---
