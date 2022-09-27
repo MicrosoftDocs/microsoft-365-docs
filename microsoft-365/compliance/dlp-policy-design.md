@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to design a data loss prevention (DLP) policy"

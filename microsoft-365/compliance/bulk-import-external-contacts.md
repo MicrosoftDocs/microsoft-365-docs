@@ -18,7 +18,7 @@ ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - import
 ---
 

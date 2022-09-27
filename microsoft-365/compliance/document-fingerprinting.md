@@ -10,7 +10,7 @@ ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 ms.localizationpriority: medium
 description: "Document Fingerprinting makes it easier for you to protect information by identifying standard forms that are used by your organization. This topic describes the concepts behind Document Fingerprinting and how to create one by using PowerShell."

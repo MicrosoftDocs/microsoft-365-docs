@@ -15,7 +15,7 @@ ms.localizationpriority: high
 ms.collection:
 - tier1
 - highpri 
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
