@@ -16,6 +16,7 @@ ms.collection:
 - m365solution-smb
 - highpri
 - m365-security
+- tier1
 ms.custom:
 - MiniMaven
 - MSB365
