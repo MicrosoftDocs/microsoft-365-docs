@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP).

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
   - Strat_O365_IP
-  - M365-security-compliance
+  - m365-security
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
