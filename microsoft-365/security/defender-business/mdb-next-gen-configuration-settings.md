@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-security
+- tier1
 ---
 
 # Understand next-generation configuration settings in Microsoft Defender for Business
