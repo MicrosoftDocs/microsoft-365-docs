@@ -9,7 +9,9 @@ audience: ITPro
 ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- tier1
 ms.localizationpriority: medium
 description: "Information workers in your organization handle many kinds of sensitive information during a typical day. Document Fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting and how to create one by using PowerShell."
 ---
@@ -47,7 +49,7 @@ The patent template contains the blank fields "Patent title," "Inventors," and "
 For example, you might want to set up a DLP policy that prevents regular employees from sending outgoing messages containing patents. DLP will use the patent fingerprint to detect patents and block those emails. Alternatively, you might want to let your legal department to be able to send patents to other organizations because it has a business need for doing so. You can allow specific departments to send sensitive information by creating exceptions for those departments in your DLP policy, or you can allow them to override a policy tip with a business justification.
 
 > [!IMPORTANT]
-> Currently embedded documents text is not considered for fingerprint creation, therefore, for the best experience you should provide flat template files.
+> Text in embedded documents is not considered for fingerprint creation. You should provide sample template files that don't contain embedded documents.
 
 ### Supported file types
 
