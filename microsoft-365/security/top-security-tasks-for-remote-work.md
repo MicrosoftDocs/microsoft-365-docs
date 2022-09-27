@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - remotework
+- tier2
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ---
