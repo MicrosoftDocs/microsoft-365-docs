@@ -9,6 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
+- tier2
 - M365-security-compliance
 ms.localizationpriority: null
 f1.keywords:

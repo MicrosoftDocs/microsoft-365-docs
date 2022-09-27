@@ -1,5 +1,6 @@
 ---
 title: "Use the KQL editor to build search queries"
+description: "You can use the KQL editor to configure eDiscovery search queries in Content search, eDiscovery (Standard), and eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,11 +12,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "You can use the KQL editor to configure eDiscovery search queries in Content search, eDiscovery (Standard), and eDiscovery (Premium)." 
 ---
 
 # Use the KQL editor to build search queries

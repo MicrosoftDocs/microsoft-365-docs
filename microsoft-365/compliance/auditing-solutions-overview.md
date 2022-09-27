@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview auditing solutions"
+description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
+- tier1
 - m365-security-compliance
 - m365solution-audit
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- audit
 search.appverid:
 - MOE150
 - MET150
-description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 ms.custom: seo-marvel-apr2020
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "View custodian audit activity"
+description: Use the eDiscovery (Premium) Custodian Management tool to easily access and search the activity for custodians within your case.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,12 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Use the eDiscovery (Premium) Custodian Management tool to easily access and search the activity for custodians within your case.
 ms.custom: 
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE

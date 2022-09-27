@@ -11,10 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
+- tier1
 - M365-security-compliance
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
+- audit
 ms.custom: admindeeplinkEXCHANGE
 search.appverid: 
 - MOE150

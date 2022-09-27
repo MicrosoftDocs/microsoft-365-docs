@@ -15,6 +15,8 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
+- tier1
 ---
 
 # Learn about and configure insider risk management browser signal detection

@@ -15,7 +15,9 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- tier3
 ms.topic: article
 ---
 # AADSpnSignInEventsBeta

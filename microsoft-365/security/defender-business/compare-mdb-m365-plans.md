@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/15/2022
+ms.date: 09/26/2022
 ms.reviewer: shlomiakirav
 ms.collection: 
 - SMB
@@ -34,8 +34,11 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 
 ## Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
-> [!NOTE]
-> This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> [!IMPORTANT]
+> This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see the following resources:
+> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> - [Microsoft 365 Education](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
+
 
 | Plan | Description |
 |:---|:---|
@@ -88,7 +91,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 (<a id="fn8">8</a>) The ability to view incidents across tenants using Defender for Endpoint is new!
 
 > [!TIP]
-> Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md).
+> Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md) and [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Next steps
 

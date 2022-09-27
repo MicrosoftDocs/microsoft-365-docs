@@ -16,7 +16,9 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- tier3
+- m365-security-compliance
 ms.topic: article
 ---
 

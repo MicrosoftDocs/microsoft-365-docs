@@ -1,6 +1,31 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/misc/sign-up-for-online-services.md",
+      "redirect_url": "/microsoft-365/admin/misc/remove-a-domain-from-another-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/move-a-domain.md",
+      "redirect_url": "/microsoft-365/admin/misc/remove-a-domain-from-another-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/get-help-with-domains/domain-connect.md",
+      "redirect_url": "/microsoft-365/admin/setup/add-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/o365-setup-wizard-and-setup-page.md",
+      "redirect_url": "/microsoft-365/admin/setup/setup-business-standard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/sign-up-with-a-personal-email-address.md",
+      "redirect_url": "/microsoft-365/admin/simplified-signup/signup-business-standard",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/email/email-collaboration.md",
       "redirect_url": "/microsoft-365/admin/index",
       "redirect_document_id": false

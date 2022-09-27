@@ -1,5 +1,6 @@
 ---
 title: "Configure permissions filtering for eDiscovery"
+description: "Use search permissions filtering to let eDiscovery managers search only a subset of mailboxes and sites in your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,14 +12,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
+- tier1
 - M365-security-compliance
-- SPO_Content
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
-description: "Use search permissions filtering to let eDiscovery managers search only a subset of mailboxes and sites in your organization."
 ms.custom: seo-marvel-apr2020
 ---
 

@@ -16,6 +16,7 @@ ms.collection:
 - m365solution-m365-identity
 - m365solution-overview
 - zerotrust-solution
+- highpri
 ms.custom:
 - intro-overview
 description: Deploy your identity infrastructure for Microsoft 365.

@@ -9,7 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- tier2
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150

@@ -15,6 +15,7 @@ ms.collection:
   - m365-frontline
   - m365solution-retail
   - m365solution-overview
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

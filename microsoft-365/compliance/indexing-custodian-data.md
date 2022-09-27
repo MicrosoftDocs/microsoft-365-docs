@@ -1,5 +1,6 @@
 ---
 title: "Advanced indexing of custodian data"
+description: "When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,12 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
 ---
 
 # Advanced indexing of custodian data
