@@ -15,6 +15,7 @@ search.appverid:
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection: 
+- tier1
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020

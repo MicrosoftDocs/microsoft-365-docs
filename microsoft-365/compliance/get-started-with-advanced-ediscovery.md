@@ -1,5 +1,6 @@
 ---
 title: "Set up eDiscovery (Premium) in Microsoft Purview"
+description: "This article describes how to set up eDiscovery (Premium) so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the eDiscovery (Premium) tool is ready to use."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +12,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
+- tier1
 - M365-security-compliance
 - m365solution-aed
-- m365initiative-compliance
 - m365solution-scenario
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to set up eDiscovery (Premium) so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the eDiscovery (Premium) tool is ready to use."
 ---
 
 # Set up Microsoft Purview eDiscovery (Premium)

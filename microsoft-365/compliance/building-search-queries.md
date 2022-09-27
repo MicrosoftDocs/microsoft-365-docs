@@ -1,21 +1,23 @@
 ---
 title: Build search queries in eDiscovery (Premium)
+description: "Use keywords and conditions to narrow the scope of the search when searching for data using eDiscovery (Premium) in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: "Use keywords and conditions to narrow the scope of the search when searching for data using eDiscovery (Premium) in Microsoft 365."
 ---
 
 # Build search queries for collections in eDiscovery (Premium)

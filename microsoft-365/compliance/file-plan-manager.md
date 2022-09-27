@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150

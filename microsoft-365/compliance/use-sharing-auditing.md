@@ -1,5 +1,6 @@
 ---
 title: "Use sharing auditing in the audit log"
+description: Admin can learn how to use sharing auditing in the Microsoft 365 audit log to identify resources shared with users outside of their organization.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -15,11 +16,10 @@ search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.collection: 
+ms.collection:
+- tier1
 - M365-security-compliance
-- SPO_Content
-ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: Admin can learn how to use sharing auditing in the Microsoft 365 audit log to identify resources shared with users outside of their organization.
+- audit
 ms.custom: seo-marvel-apr2020
 ---
 
