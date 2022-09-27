@@ -18,6 +18,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: "Compare Microsoft 365 encryption options including Microsoft Purview Message Encryption, S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
 ---
 

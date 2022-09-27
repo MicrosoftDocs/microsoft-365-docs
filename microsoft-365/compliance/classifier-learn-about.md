@@ -16,6 +16,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150

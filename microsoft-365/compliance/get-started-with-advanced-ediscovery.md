@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-aed
 - m365solution-scenario
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
