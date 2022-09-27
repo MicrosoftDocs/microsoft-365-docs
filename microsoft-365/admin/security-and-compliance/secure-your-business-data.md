@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365-security
+- tier1
 ms.custom:
 - VSBFY23
 - MSStore_Link
@@ -34,7 +35,7 @@ search.appverid:
 description: "Best practices to protect your business from ransomware, phishing, and malicious URLs or attachments."
 ---
 
-# Top 10 ways to secure your business - Best practices to follow
+# Top 10 ways to secure your data - Best practices for small and medium sized businesses
 
 **Applies to**
 
