@@ -100,4 +100,3 @@ This means that, for instance, if on a specific day you ran two queries, one use
 - [Advanced hunting best practices](advanced-hunting-best-practices.md)
 - [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
-- [Custom detections overview](custom-detections-overview.md)
