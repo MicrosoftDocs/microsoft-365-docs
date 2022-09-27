@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 # Refresh your exact data match sensitive information source table file 
 
-You can refresh your sensitive information database up to 5 times in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
+You can refresh your sensitive information database up to 5 times in every 24 hour period. You'll have to rehash and upload your sensitive information source table. Refreshing overwrites the existing sensitive information source table with the new one.
 
 1. Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv, .tsv format or pipe (|) delimited format. Keep the same file name and location you used when you previously hashed and uploaded the file. See, [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) for details on exporting your sensitive data and getting it into the correct format.
 

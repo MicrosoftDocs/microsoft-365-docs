@@ -6,7 +6,7 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
