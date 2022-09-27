@@ -346,7 +346,7 @@
                href: advanced-hunting-take-action.md
              - name: Link query results to an incident
                href: advanced-hunting-link-to-incident.md
-             - name: Quotas and usage parameters
+             - name: Find resource-heavy queries
                href: advanced-hunting-limits.md
              - name: Extend data coverage
                href: advanced-hunting-extend-data.md                                                    
