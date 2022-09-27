@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Learn how to use the data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
