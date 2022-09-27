@@ -15,7 +15,7 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: 
-- M365-security-compliance
+- m365-security
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
