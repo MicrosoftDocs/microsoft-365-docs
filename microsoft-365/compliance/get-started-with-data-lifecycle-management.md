@@ -12,8 +12,9 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
+- tier1
+- highpri
 - SPO_Content
-- m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -36,7 +37,7 @@ Ready to start managing the lifecycle of your organization's data by retaining t
     
     If needed, [create and apply retention labels for your exceptions](create-retention-labels-information-governance.md).
 
-3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)
+3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md)
     
     If required to support archive mailboxes:
     
@@ -77,7 +78,7 @@ Use the following table to help you map your business requirements to the most c
 |I want to ...|Documentation|
 |----------------|---------------|
 |Efficiently retain or delete data for Microsoft 365 services: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Teams <br />- Yammer <br />- Skype for Business |[Create and configure retention policies](create-retention-policies.md)|
-|Provide users with additional mailbox storage |[Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)|
+|Provide users with additional mailbox storage |[Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md)|
 |Retain mailbox data after employees leave the organization |[Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
 |Upload mailbox data from PST files |[Use network upload to import PST files](use-network-upload-to-import-pst-files.md)|
 

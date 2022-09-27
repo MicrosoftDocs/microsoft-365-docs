@@ -14,6 +14,7 @@ description: Admins can learn how to use the Queues widget in the Mail flow dash
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Queues insight in the Security & Compliance Center

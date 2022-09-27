@@ -7,12 +7,14 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/24/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
 ms.custom:
 - MiniMaven
 search.appverid:

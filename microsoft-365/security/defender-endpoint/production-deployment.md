@@ -19,6 +19,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Set up Microsoft Defender for Endpoint deployment

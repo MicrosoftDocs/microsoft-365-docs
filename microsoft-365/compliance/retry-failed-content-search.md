@@ -1,20 +1,22 @@
 ---
 title: "Retry a Content Search to resolve a content location error"
+description: During an investigation, you can use the Retry button to resolve Content Searches that have content location errors.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- tier1
+- M365-security-compliance
+- content-search
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: During an investigation, you can use the Retry button to resolve Content Searches that have content location errors.
 ms.custom: seo-marvel-apr2020
 ---
 

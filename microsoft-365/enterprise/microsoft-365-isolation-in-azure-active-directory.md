@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Isolation and Access Control in Azure Active Directory"
-ms.author: robmazz
-author: robmazz
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article

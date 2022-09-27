@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Incidents queue

@@ -1,5 +1,5 @@
 ---
-title: "Create a SharePoint communications site in Teams for Microsoft 365 Business Premium"
+title: "Create a SharePoint communications site in Teams with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,7 +7,9 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
@@ -23,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn why and how to create a SharePoint communications site for your campaign or business with Microsoft 365 Business Premium, and protect the team from cyberattacks and incursions from malware and other threats due to improper file sharing."
+description: "Create a SharePoint communications site for your campaign or business and protect your team from cyberattacks and incursions from malware and other threats due to improper file sharing."
 ---
 
 # Create a communications site
@@ -46,7 +48,7 @@ Include the following elements in a Communications site:
 
 ![Diagram of a SharePoint Communications page with space for common elements that a campaign would need.](../media/m365-democracy-comms-site.png)
 
-## Infographic: Create a Communications Site infographic
+## Infographic: Create a Communications site infographic
 
 The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
@@ -56,7 +58,7 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 ## Set it up
 
-1. Sign in to https://Office.com.
+1. Sign in to [https://Office.com](https://Office.com).
 
 2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint isn't visible.
 

@@ -17,6 +17,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Email security with Threat Explorer in Microsoft Defender for Office 365

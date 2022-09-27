@@ -1,21 +1,23 @@
 ---
 title: "Troubleshoot AzCopy in eDiscovery (Premium)"
+description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in eDiscovery (Premium).
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in eDiscovery (Premium).
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio

@@ -13,6 +13,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -133,7 +134,7 @@ The templates listed below may be purchased by your organization.
 - Privacy of Consumer Financial and Health Information Regulation, NAIC MDL-672, Q2 2017  
 - Revisions to the principles for the sound management of operational risk (Basel III Ops Risks)  
 - Standardized Information Gathering (SIG) Questionnaire  
-- [Trusted Information Security Assessment Exchange](/compliance/regulatory/offering-tisax-germany)
+- [Trusted Information Security Assessment Exchange (TISAX) 5.1](/compliance/regulatory/offering-tisax-germany)
 
 ### US Government
 
@@ -246,7 +247,7 @@ The templates listed below may be purchased by your organization.
 - New York - 23 NYCRR Part 500  
 - New York City Administrative Code - Security Breach Notification  
 - New York General Business Law - Data Security Breach Notification and Data Security Protections  
-- New York Privacy Act - DRAFT  
+- New York Privacy Act  
 - North Carolina - Identity Theft Protection Act  
 - North Dakota Chapter 51-30 Notice of Security Breach for Personal Information  
 - Ohio - Security Breach Notification  
@@ -281,11 +282,13 @@ The templates listed below may be purchased by your organization.
 - Australia - ASD Essential 8 Maturity Level 3
 - Australia - National Archives Act
 - Australia - Public Records Office Victoria Recordkeeping Standards  
-- Australia - Spam Act 2003  
+- Australia - Spam Act 2003
 - Australia Privacy (Credit Reporting) Code  
-- Australia Privacy Act  
+- Australia Privacy Act
+- Australia Public Record Act
 - Australian Energy Sector Cyber Security Framework (AESCSF)  
-- [Australian Information Security Registered Assessor Program (IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia)  
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official](/compliance/regulatory/offering-ccsl-irap-australia)
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Protected](/compliance/regulatory/offering-ccsl-irap-australia)
 - [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
 - Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  

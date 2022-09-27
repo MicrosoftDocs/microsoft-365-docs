@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud

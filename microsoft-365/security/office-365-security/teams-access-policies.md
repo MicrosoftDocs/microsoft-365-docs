@@ -20,7 +20,9 @@ ms.collection:
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
+  - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Policy recommendations for securing Teams chats, groups, and files

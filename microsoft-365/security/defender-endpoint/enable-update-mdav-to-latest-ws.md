@@ -18,6 +18,7 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Enable and update Defender Antivirus to the latest version on Windows Server

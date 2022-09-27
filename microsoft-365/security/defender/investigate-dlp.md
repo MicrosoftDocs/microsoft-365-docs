@@ -16,7 +16,9 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: 
   - MOE150
+  - met150
 ---
+
 # Investigate data loss incidents with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

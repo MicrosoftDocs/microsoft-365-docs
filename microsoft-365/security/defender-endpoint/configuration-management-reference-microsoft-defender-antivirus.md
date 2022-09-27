@@ -16,6 +16,7 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender Antivirus in your business

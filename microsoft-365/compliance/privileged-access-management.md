@@ -14,10 +14,12 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
+- highpri
+- tier3
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: 
  - Ent_Solutions
  - seo-marvel-apr2020

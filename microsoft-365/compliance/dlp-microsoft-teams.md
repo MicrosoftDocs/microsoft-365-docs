@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
+- tier1
 - M365-security-compliance
 search.appverid: 
 - MET150
@@ -26,7 +27,12 @@ If your organization has Microsoft Purview Data Loss Prevention (DLP), you can d
     > [!NOTE]
     > DLP for Microsoft Teams blocks sensitive content when shared with Microsoft Teams users who have:<br/>- [guest access](/MicrosoftTeams/guest-access) in teams and channels; or<br/>- [external access](/MicrosoftTeams/manage-external-access) in meetings and chat sessions. <p>DLP for external chat sessions will only work if both the sender and the receiver are in Teams Only mode and using [Microsoft Teams native federation](/microsoftteams/manage-external-access). DLP for Teams does not block messages in [interop](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) with Skype for Business or non-native federated chat sessions.
 
-- **Example 2: Protecting sensitive information in documents**. Suppose that someone attempts to share a document with guests in a Microsoft Teams channel or chat, and the document contains sensitive information. If you have a DLP policy defined to prevent this, the document won't open for those users. Your DLP policy must include SharePoint and OneDrive in order for protection to be in place. This is an example of DLP for SharePoint that shows up in Microsoft Teams, and therefore requires that users are licensed for Office 365 DLP (included in Office 365 E3), but does not require users to be licensed for Office 365 Advanced Compliance.)
+- **Example 2: Protecting sensitive information in documents**. Suppose that someone attempts to share a document with guests in a Microsoft Teams channel or chat, and the document contains sensitive information. If you have a DLP policy defined to prevent this, the document won't open for those users. Your DLP policy must include SharePoint and OneDrive in order for protection to be in place. This is an example of DLP for SharePoint that shows up in Microsoft Teams, and therefore requires that users are licensed for Office 365 DLP (included in Office 365 E3), but does not require users to be licensed for Office 365 Advanced Compliance. 
+   
+You can extend the Teams DLP policy to cover SharePoint Online and OneDrive for Business by selecting **Automatic file protection** from the banner in **DLP** > **Policies**. This will enable DLP protection for all the files shared in Teams chats and channels with the same rules that apply to Teams messages. Once enabled, the extension will apply to all existing as well as future Teams DLP policies, so you don't have to create separate policies for SharePoint and OneDrive for file protection. 
+
+> [!NOTE]
+> Only those Teams policies that have rules with conditions or exceptions of **content contains** or **content is shared from Microsoft 365** can be extended for automatic file protection. If the condition or exception configuration has **Sender is**, **sender domain is**, **recipient is**, and **recipient domain is** present, the extension action will fail because these conditions don’t apply to SharePoint and OneDrive.
 
 - **Example 3: Protecting communications in Teams Shared Channels**. For shared channels, the host Teams team DLP policy are applied. For example let’s say there's a shared channel owned by TeamA of Contoso. TeamA has a DLP policy P1. There are 3 ways to share a channel:
     - **Share with member**: You invite user1 from Contoso to join the shared channel without making him a member of TeamA. Everyone in this shared channel, including user1, will be covered by P1.

@@ -232,16 +232,6 @@ Look for the key EnableUnsafeClientMailRules. If it is there and is set to 1, th
 
 Customers with on-premises Exchange installations should consider blocking older versions of Outlook that do not have patches available. Details on this process can be found in the article [Configure Outlook client blocking](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate effect and are low-impact to your users.
-
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-
-- Beyond 90 days. These enhancements build in your first 90 days work.
-
 ## See also:
 
 - [Malicious Outlook Rules](https://silentbreaksecurity.com/malicious-outlook-rules/) by SilentBreak Security Post about Rules Vector provides a detailed review of how the Outlook Rules.

@@ -15,6 +15,7 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Cloud protection and sample submission at Microsoft Defender Antivirus

@@ -18,6 +18,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review remediation actions following an automated investigation
@@ -37,6 +38,9 @@ Depending on
 - how your organization's [device groups](/microsoft-365/security/defender-endpoint/machine-groups) are configured,
 
 remediation actions can occur automatically or only upon approval by your organization's security operations team.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 Here are a few examples:
 

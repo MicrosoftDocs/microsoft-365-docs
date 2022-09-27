@@ -16,6 +16,7 @@ ms.reviewer:
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop

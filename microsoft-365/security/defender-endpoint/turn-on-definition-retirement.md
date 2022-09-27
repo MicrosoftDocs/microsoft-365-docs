@@ -17,6 +17,7 @@ ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
 ms.collection: m365-security-compliance
+search.appverid: met150
 ---
 
 # Turn on definition retirement

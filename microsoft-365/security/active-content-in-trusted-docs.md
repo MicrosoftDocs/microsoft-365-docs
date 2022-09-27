@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
 search.appverid:

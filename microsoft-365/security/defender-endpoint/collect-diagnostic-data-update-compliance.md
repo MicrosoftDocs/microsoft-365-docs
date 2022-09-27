@@ -17,6 +17,7 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment

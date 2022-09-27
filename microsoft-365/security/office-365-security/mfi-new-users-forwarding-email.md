@@ -13,6 +13,7 @@ description: Admins can learn how to use the New users forwarding email insight 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # New users forwarding email insight in the Security & Compliance Center

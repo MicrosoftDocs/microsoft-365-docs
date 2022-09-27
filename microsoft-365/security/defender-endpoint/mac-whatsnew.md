@@ -15,6 +15,7 @@ ms.collection:
   - m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Mac

@@ -626,11 +626,7 @@ For detailed syntax and parameter information, see [Remove-QuarantinePolicy](/po
 
 ## System alerts for quarantine release requests
 
-By default, the default alert policy named **User requested to release a quarantined message** automatically generates an informational alert and sends notification messages to members of the following role groups whenever a user requests the release of a quarantined message:
-
-- Quarantine Administrator
-- Security Administrator
-- Organization Management (global administrator)
+By default, the default alert policy named **User requested to release a quarantined message** automatically generates an informational alert and sends notification to Organization Management (global administrator) whenever a user requests the release of a quarantined message:
 
 Admins can customize the email notification recipients or create a custom alert policy for more options.
 

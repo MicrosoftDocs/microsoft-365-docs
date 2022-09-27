@@ -27,7 +27,7 @@ Lists the new features and functionality in Microsoft 365 Defender.
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+https://learn.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 For more information on what's new with other Microsoft Defender security products, see:
@@ -150,4 +150,3 @@ The security operations team can view all actions pending approval, and the stip
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md)
 
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
-

@@ -18,6 +18,7 @@ ms.collection:
   - highpri
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint deployment overview

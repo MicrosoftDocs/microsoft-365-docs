@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Understand the advanced hunting schema in Microsoft Defender for Endpoint

@@ -17,8 +17,10 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
+  - tier2
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+search.appverid: met150
 ---
 
 # Choose between guided and advanced modes to hunt in Microsoft 365 Defender

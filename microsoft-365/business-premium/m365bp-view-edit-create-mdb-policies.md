@@ -7,7 +7,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
@@ -18,12 +20,12 @@ ms.collection:
 
 # View and edit device protection policies
 
-In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in Microsoft Defender's security center or the Admin center. To help simplify setup and configuration, there are pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
+In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in the Microsoft 365 Defender portal or in the Microsoft Endpoint Manager admin center. To help simplify setup and configuration, there are pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
 
 **This guidance describes how to**:
 
 - Get an overview of your default policies
-- Work with device policies in Defender security center, Admin center, and Intune.
+- Work with device policies in either the Microsoft 365 Defender portal or the Microsoft Endpoint Manager admin center (Intune).
 
 ## About the default device protection policies
 
@@ -33,15 +35,15 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices.
 
-These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft Defender security center as well as how to work with policies in the Admin center and Intune.
+These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft 365 Defender portal or in the Microsoft Endpoint Manager admin center.
 
-## Working with device polices in the Microsoft Defender security center
+## Working with device polices in the Microsoft 365 Defender portal
 
 The following details apply to working with your policies in the security center.
 
 ### View existing device protection policies
 
-To view your existing device protection policies in the security center:
+To view your existing device protection policies in the Microsoft 365 Defender portal:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -124,33 +126,7 @@ To create a new device protection policy:
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Create policy**.
 
-## Using device policies in the Admin center
-
-The following information describes viewing and managing policies in the Microsoft Business Premium Admin center.
-
-### Working with device policies
-
-To work with policies in the Admin center:
-
-1.  Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-
-1. On the left nav, choose **Devices** \> **Policies**.
-
-    On this page, you can create, edit, change target group, or delete a policy.
-
-    ![Screenshot of the Policies page.](../media/devicepolicies.png)
-  
-### View and manage devices
-
-To view and manage policies:
-
-1. On the left nav, choose **Devices** \> **Manage**.
-
-    On this page, you can select one or more devices and remove company data. For Windows 10 devices for which you have set device protections settings, you can also choose to reset the device to factory settings.
-  
-   ![Manage devices page.](../media/devicesmanage.png)
-
-## Working with device policies in Intune
+## Working with device policies in the Microsoft Endpoint Manager admin center
 
 Use the following information to create and manage device policies in Intune, done through Endpoint security in the Microsoft Endpoint Manager admin center.
 

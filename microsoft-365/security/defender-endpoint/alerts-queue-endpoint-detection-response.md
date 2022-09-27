@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Alerts queue in Microsoft 365 Defender

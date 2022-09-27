@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Ensure your devices are configured properly

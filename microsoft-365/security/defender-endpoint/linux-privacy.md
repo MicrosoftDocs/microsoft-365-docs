@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Privacy for Microsoft Defender for Endpoint on Linux
@@ -173,7 +174,7 @@ Diagnostic logs are collected only with the consent of the user as part of the f
 
 - All files under */var/log/microsoft/mdatp*
 - Subset of files under */etc/opt/microsoft/mdatp* that are created and used by Defender for Endpoint on Linux
-- Product installation and uninstallation logs under */var/log/microsoft_mdatp_\*.log*
+- Product installation and uninstallation logs under /var/log/microsoft/mdatp/*.log
 
 ### Optional diagnostic data
 

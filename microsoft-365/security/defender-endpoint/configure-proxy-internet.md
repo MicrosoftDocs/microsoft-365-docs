@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: 
   - m365-security-compliance
   - m365-initiative-defender-endpoint
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ---
 
@@ -89,6 +89,15 @@ The static proxy is configurable through group policy (GP), both the settings un
 |:---|:---|:---|:---|
 | Configure authenticated proxy usage for the connected user experience and the telemetry service | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
 | Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> For example: ```10.0.0.6:8080``` (REG_SZ) |
+
+> [!NOTE]
+> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is recommended to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
+> Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
+> The following command can be used to insert the registry value in the correct location:<br>
+> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
+> The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later (on Windows Server 2012R2/2016 with the unified agent)
+
+
 
 ## Configure a static proxy for Microsoft Defender Antivirus
 

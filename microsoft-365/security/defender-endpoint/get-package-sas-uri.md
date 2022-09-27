@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get package SAS URI API
@@ -57,6 +58,8 @@ Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 >
 > - The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2. 
 
 ## HTTP request
 

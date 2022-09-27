@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: 
   - MOE150
+  - MET150
 ---
 
 # Investigate incidents in Microsoft 365 Defender

@@ -3,6 +3,7 @@ title: 'Tutorial: Gathering Threat Intelligence and Infrastructure Chaining usin
 description: 'In this tutorial, learn how to gather threat intelligence and infrastructure chain together indicators of compromise in Microsoft Defender Threat Intelligence (Defender TI). This article will cover a historical investigation of the MyPillow Magecart breach.'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: tutorial
 ms.date: 08/02/2022

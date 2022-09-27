@@ -16,6 +16,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard Windows devices using Configuration Manager
@@ -113,7 +114,7 @@ Configure all available rules to Audit.
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
-For deploying AV and ASR policies through Microsoft System Center Configuration Manager (SCCM) follow the steps:
+For deploying Antivirus (AV) and Attack Surface Reduction (ASR) policies through Microsoft Endpoint Configuration Manager (SCCM) follow the steps:
 
 - Enable Endpoint Protection and configure custom client settings.
 - Install the Endpoint Protection client from a command prompt.

@@ -9,6 +9,7 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Defender for Identity notifications in Microsoft 365 Defender

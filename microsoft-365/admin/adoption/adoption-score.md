@@ -2,8 +2,8 @@
 title: "Microsoft Adoption Score"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article

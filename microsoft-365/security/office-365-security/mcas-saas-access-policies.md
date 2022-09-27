@@ -17,6 +17,7 @@ ms.collection:
 - zerotrust-solution
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Recommended Microsoft Defender for Cloud Apps policies for SaaS apps

@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get user-related machines API
@@ -56,6 +57,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >
 > - The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md)
 > - Response will include only devices that the user can access, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2. 
 
 ## HTTP request
 

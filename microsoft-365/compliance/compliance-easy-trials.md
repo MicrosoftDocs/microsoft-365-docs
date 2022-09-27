@@ -2,8 +2,8 @@
 title: "About the Microsoft Purview solutions trial"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
@@ -42,7 +42,7 @@ Users must hold one of the following admin roles in order to sign up for or end 
 - Global Administrator
 - Compliance Data Administrator
 
-Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
+Get more details about [roles for starting Microsoft 365 trials](compliance-easy-trials-roles.md).
 
 ## How to sign up for the trial
 

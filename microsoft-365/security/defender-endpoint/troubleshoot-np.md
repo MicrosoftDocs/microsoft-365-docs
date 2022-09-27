@@ -15,6 +15,7 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Troubleshoot network protection

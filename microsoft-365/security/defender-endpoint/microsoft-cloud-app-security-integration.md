@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Cloud Apps in Defender for Endpoint overview

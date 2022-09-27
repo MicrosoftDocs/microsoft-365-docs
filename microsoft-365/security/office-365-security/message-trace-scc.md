@@ -15,6 +15,7 @@ ms.custom:
 description: Admins can use the message trace link in the Microsoft 365 Defender portal to find out what happened to messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Message trace in the Microsoft 365 Defender portal

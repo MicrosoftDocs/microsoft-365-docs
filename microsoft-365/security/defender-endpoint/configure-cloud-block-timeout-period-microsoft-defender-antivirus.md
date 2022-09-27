@@ -16,6 +16,7 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Configure the cloud block timeout period

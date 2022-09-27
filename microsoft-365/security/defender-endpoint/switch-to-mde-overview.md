@@ -22,6 +22,7 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint

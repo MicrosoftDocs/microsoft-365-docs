@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Find device information by internal IP API

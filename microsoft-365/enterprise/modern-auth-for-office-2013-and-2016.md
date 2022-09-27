@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH

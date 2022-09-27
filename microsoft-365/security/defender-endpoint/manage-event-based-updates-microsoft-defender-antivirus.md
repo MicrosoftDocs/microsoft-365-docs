@@ -16,6 +16,7 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
+search.appverid: met150
 ---
 
 # Manage event-based forced updates

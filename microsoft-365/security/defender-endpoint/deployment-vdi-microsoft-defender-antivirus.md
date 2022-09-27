@@ -14,6 +14,7 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
+search.appverid: met150
 ---
 
 # Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment

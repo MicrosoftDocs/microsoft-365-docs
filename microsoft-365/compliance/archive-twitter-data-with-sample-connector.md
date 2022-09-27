@@ -1,9 +1,10 @@
 ---
 title: "Set up a connector to archive Twitter data"
+description: "Learn how administrators can set up and use a native connector to import Twitter data into Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -12,9 +13,11 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: "Learn how administrators can set up and use a native connector to import Twitter data into Microsoft 365."
 ---
 
 # Set up a Microsoft connector to archive Twitter data (preview)

@@ -124,8 +124,8 @@ The CDNs in use by Office 365 are always subject to change and in many cases the
 
 |CDN  |Company  |Usage  |Link  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Microsoft Azure         |Generic assets in public origins, SharePoint user content in private origins         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Azure CDN     |Microsoft         |Custom code, SharePoint Framework solutions         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Office 365 CDN     |Microsoft Azure         |Generic assets in public origins, SharePoint user content in private origins         |[Microsoft Azure CDN](/azure/frontdoor/)         |
+|Azure CDN     |Microsoft         |Custom code, SharePoint Framework solutions         |[Microsoft Azure CDN](/azure/frontdoor/)         |
 |Microsoft Ajax CDN (read only)     |Microsoft         |Common libraries for Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
 ## What performance gains does a CDN provide?

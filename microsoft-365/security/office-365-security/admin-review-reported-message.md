@@ -14,6 +14,7 @@ ms.custom:
 description: Learn how to review messages that are reported and give feedback to your users.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Admin review for reported messages

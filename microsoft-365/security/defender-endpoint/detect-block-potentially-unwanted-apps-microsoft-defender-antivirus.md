@@ -15,6 +15,7 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: m365-security-compliance
+search.appverid: met150
 ---
 
 # Detect and block potentially unwanted applications

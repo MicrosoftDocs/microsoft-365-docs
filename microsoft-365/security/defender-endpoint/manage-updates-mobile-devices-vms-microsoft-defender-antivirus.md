@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Manage updates for mobile devices and virtual machines (VMs)

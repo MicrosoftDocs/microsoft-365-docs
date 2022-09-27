@@ -3,10 +3,10 @@ title: "Moving core data to new Microsoft 365 datacenter geos"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 09/23/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -63,6 +63,8 @@ The complexity, precision and scale at which we need to perform data moves withi
 Data moves are a back-end service operation with minimal impact to end-users. Features that can be impacted are listed on the [During and after your data move](during-and-after-your-data-move.md) page. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
 
 Data moves to the new datacenter geo are completed at no additional cost to the customer.
+
+During the migration process, Microsoft temporarily copies your address book data into Microsoft global resources where it is encrypted and only used to support business continuity and disaster recovery operations (BCDR). After Microsoft has completed the mailbox data moves, Microsoft deletes that temporary data from the global resources. Microsoft continues to invest in global and regional resources on a regular basis. In calendar year 2023, Microsoft plans to utilize regional resources for BCDR purposes during the migration process.
 
 ## Related topics
 

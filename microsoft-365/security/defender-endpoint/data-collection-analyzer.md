@@ -15,7 +15,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Data collection for advanced troubleshooting on Windows

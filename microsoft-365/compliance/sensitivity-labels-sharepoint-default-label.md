@@ -11,6 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -23,7 +24,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is gradually rolling out in preview and subject to change. It is also a premium feature with licensing details to be provided when the feature becomes generally available (GA).
+> This feature is in preview and subject to change. It is also a premium feature with licensing details to be provided when the feature becomes generally available (GA).
 > 
 > To read the preview announcement, see the [blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
@@ -55,7 +56,9 @@ Summary of outcomes:
 
 ## Requirements
 
-- You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- You've [created and published](create-sensitivity-labels.md) sensitivity labels, and they're published to the users who will select a default sensitivity label for a SharePoint document library.
+
+- You've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md). To check this status, you can run `Get-SPOTenant -EnableAIPIntegration` from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to confirm the value is set to true.
 
 - [SharePoint Information Rights Management (IRM) is not enabled for the library](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). This older technology isn't compatible with using a default sensitivity label for a SharePoint document library. If a library is enabled for IRM, you won't be able to select a default sensitivity label.
 
@@ -84,8 +87,7 @@ For an existing document library:
 
 If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
 
-> [!NOTE]
-> These new settings are gradually rolling out to tenants. If you don't see them, try again in a few days.
+The permissions required to set and change a default sensitivity label for a SharePoint library are inherited. As with the ability to change the library name and description, any SharePoint site member has this permission.
 
 ## Monitoring application of library default sensitivity labels
 

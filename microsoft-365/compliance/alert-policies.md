@@ -2,15 +2,15 @@
 title: "Microsoft 365 alert policies"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - M365-security-compliance
 search.appverid:
 - MET150
@@ -229,7 +229,7 @@ You can use the following filters to view a subset of all the alerts on the **Al
 - **Severity**: Show alerts that are assigned a specific severity.
 - **Category**: Show alerts from one or more alert categories.
 - **Tags**:Show alerts from one or more user tags. Tags are reflected based on tagged mailboxes or users that appear in the alerts. See [User tags in Defender for Office 365](../security/office-365-security/user-tags.md) to learn more.
-- **Source**: Use this filter to show alerts triggered by alert policies in the Microsoft Purview portal or alerts triggered by Microsoft Defender for Cloud Apps policies, or both. For more information about Defender for Cloud App Security alerts, see the [View Defender for Cloud Apps alerts](#view-defender-for-cloud-apps-alerts) section in this article.
+- **Source**: Use this filter to show alerts triggered by alert policies in the Microsoft Purview portal or alerts triggered by Microsoft Defender for Cloud Apps policies, or both. For more information about Defender for Cloud Apps alerts, see the [View Defender for Cloud Apps alerts](#view-defender-for-cloud-apps-alerts) section in this article.
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in Public Preview, and might be substantially modified before it's generally available. Microsoft makes no warranties, express or implied, with respect to the information provided about it.
@@ -331,7 +331,7 @@ Here are some tasks you can perform to manage alerts.
 
 ## View Defender for Cloud Apps alerts
 
-Alerts that are triggered by Defender for Cloud Apps Security policies are now displayed on the **Alerts** page in the Microsoft Purview portal. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Defender for Cloud Apps Security. This means you can view all alerts in the Microsoft Purview portal. Defender for Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
+Alerts that are triggered by Defender for Cloud Apps policies are now displayed on the **Alerts** page in the Microsoft Purview portal. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Defender for Cloud Apps. This means you can view all alerts in the Microsoft Purview portal. Defender for Cloud Apps is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
 Organizations that have Microsoft Defender for Cloud Apps as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Defender for Cloud Apps alerts that are related to Microsoft 365 apps and services in the compliance portal or the Microsoft 365 Defender portal.
 

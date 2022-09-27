@@ -61,7 +61,7 @@ Both users and admins can work with quarantined messages:
   |Messages quarantined by anti-malware policies (malware messages).|30 days|No||
   |Messages quarantined by Safe Attachments policies in Defender for Office 365 (malware messages).|30 days|No||
   |Messages quarantined by mail flow rules: the action is **Deliver the message to the hosted quarantine** (_Quarantine_).|30 days|No||
-  |Files quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams (malware files).|30 days|No||
+  |Files quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams (malware files).|30 days|No|Files quarantined in SharePoint or OneDrive are removed fom quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.|
 
   When a message expires from quarantine, you can't recover it.
 

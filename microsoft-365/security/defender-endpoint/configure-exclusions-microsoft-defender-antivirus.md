@@ -15,6 +15,7 @@ ms.subservice: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
+search.appverid: met150
 ---
 
 # Configure and validate exclusions for Microsoft Defender Antivirus scans

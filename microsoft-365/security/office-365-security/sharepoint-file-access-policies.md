@@ -21,6 +21,7 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Policy recommendations for securing SharePoint sites and files

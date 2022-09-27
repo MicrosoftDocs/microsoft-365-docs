@@ -18,6 +18,7 @@ ms.collection:
   - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure and manage Microsoft Threat Experts capabilities

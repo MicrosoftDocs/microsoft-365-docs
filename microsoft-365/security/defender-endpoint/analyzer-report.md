@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Understand the client analyzer HTML report

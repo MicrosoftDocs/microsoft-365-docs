@@ -16,6 +16,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard Windows devices using Group Policy 

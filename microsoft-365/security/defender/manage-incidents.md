@@ -21,6 +21,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
+  - MET150
 ---
 
 # Manage incidents in Microsoft 365 Defender

@@ -1,22 +1,24 @@
 ---
 title: "Manage legal investigations in Microsoft 365"
+description: "Use eDiscovery cases in the Microsoft Purview compliance portal to manage your organization's legal investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: "Use eDiscovery cases in the Microsoft Purview compliance portal to manage your organization's legal investigation."
 ---
 
 # Manage legal investigations in Microsoft 365

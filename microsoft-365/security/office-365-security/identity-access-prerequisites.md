@@ -21,6 +21,7 @@ ms.collection:
   - zerotrust-solution
   - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies

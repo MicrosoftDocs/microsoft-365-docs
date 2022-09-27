@@ -15,6 +15,7 @@ ms.collection:
   - m365-security-compliance
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate connection events that occur behind forward proxies

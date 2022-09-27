@@ -13,6 +13,7 @@ description: Admins can learn about the Auto-forwarded messages report in the Ma
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
+search.appverid: met150
 ---
 
 # Auto-forwarded messages insight in the Security & Compliance Center
