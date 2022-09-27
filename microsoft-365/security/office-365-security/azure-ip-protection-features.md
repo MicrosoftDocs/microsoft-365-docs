@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: This article explains the changes being rolled out to the protection features in Azure Information Protection
