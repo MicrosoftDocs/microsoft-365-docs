@@ -12,7 +12,7 @@ ms.collection:
   - Strat_O365_Enterprise
   - Ent_O365
   - GDPR
-  - M365-security-compliance
+  - m365-security
 
 ms.localizationpriority: high
 search.appverid:
