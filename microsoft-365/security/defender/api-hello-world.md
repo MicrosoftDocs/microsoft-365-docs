@@ -135,7 +135,7 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 # This URL contains the type of query and the time filter we created above.
 # Note that `$filter` does not refer to a local variable in our script --
 # it's actually an OData operator and part of the API's syntax.
-$url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
+$url = "https://api.security.microsoft.com/api/incidents`?`$filter=lastUpdateTime+ge+$dateTime"
 
 # Set the webrequest headers
 $headers = @{
