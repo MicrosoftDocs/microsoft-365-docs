@@ -15,7 +15,7 @@ ms.reviewer: shlomiakirav
 ms.collection: 
 - SMB
 - m365-initiative-defender-business
-- m365-security-compliance
+- m365-security
 f1.keywords: NOCSH
 ---
 

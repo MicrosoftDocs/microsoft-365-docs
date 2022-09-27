@@ -7,7 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022

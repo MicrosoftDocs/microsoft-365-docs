@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ms.reviewer: shlomi, efratka
 f1.keywords: NOCSH  
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ---
 

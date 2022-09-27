@@ -13,7 +13,7 @@ ms.date: 09/08/2021
 ms.localizationpriority: medium
 ms.collection:
   - Strat_O365_IP
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020

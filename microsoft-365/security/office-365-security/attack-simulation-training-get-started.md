@@ -14,7 +14,7 @@ search.appverid:
   - MOE150
 ms.assetid:
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
 ms.custom: 
   - seo-marvel-apr2020

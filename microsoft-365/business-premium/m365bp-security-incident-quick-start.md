@@ -14,6 +14,7 @@ ms.localizationpriority: high
 ms.collection:
 - m365solution-smb
 - highpri
+- m365-security
 ms.custom:
 - MiniMaven
 search.appverid:

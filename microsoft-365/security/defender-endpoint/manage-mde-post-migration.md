@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 
 ms.topic: conceptual
 ms.date: 07/01/2022
