@@ -17,7 +17,7 @@ metadata:
   ms.collection: 
   - SMB
   - m365-security
-
+  - tier1
 title: Microsoft Defender for Business troubleshooting
 summary: |
   Use this article as a guide to resolve issues you might encounter in Defender for Business. 
