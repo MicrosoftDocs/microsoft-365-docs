@@ -19,6 +19,7 @@ ms.collection:
   - m365solution-scenario
   - m365solution-evalutatemtp
   - highpri
+  - tier1
 ms.topic: article
 ---
 
