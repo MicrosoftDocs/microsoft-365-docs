@@ -1,5 +1,6 @@
 ---
 title: "Predictive coding in eDiscovery (Premium) - Quick start"
+description: "Learn how to get started using the predictive coding module in eDiscovery (Premium). This article walks you through the end-to-end process of using predictive coding to identify content in a review set that's most relevant to your investigation."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to get started using the predictive coding module in eDiscovery (Premium). This article walks you through the end-to-end process of using predictive coding to identify content in a review set that's most relevant to your investigation."
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ---
 
 # Quick start: Predictive coding in eDiscovery (Premium) (preview)

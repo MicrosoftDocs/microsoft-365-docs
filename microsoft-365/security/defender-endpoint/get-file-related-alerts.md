@@ -58,6 +58,8 @@ Delegated (work or school account)|Alert.ReadWrite|'Read and write alerts'
 >
 > - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 > - Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 

@@ -1,5 +1,6 @@
 ---
 title: "Create a legal hold notice"
+description: Use the Communications tool in an eDiscovery (Premium) case to send, collect, and track legal hold notifications.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,13 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-
-description: Use the Communications tool in an eDiscovery (Premium) case to send, collect, and track legal hold notifications.
 ms.custom: seo-marvel-mar2020
 ---
 

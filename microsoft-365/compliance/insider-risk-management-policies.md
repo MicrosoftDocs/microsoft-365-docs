@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Set up smart tags in eDiscovery (Premium)"
+description: "Smart tags let you apply the machine learning capabilities when reviewing content in an eDiscovery (Premium) case. Use smart tag groups to display the results of machine learning detection models, such as the attorney-client privilege model."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,13 +11,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "Smart tags let you apply the machine learning capabilities when reviewing content in an eDiscovery (Premium) case. Use smart tag groups to display the results of machine learning detection models, such as the attorney-client privilege model."
 ---
 
 # Set up smart tags in eDiscovery (Premium)

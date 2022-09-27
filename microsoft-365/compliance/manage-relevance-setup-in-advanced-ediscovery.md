@@ -1,5 +1,6 @@
 ---
 title: "Manage Relevance setup in eDiscovery (Premium)"
+description: "Read the recommendations for setting up Relevance training in eDiscovery (Premium) to score files by their relevance and generate analytical results."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,9 +14,11 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Read the recommendations for setting up Relevance training in eDiscovery (Premium) to score files by their relevance and generate analytical results."
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 ---
 
 # Manage Relevance setup in eDiscovery (Premium) (classic)

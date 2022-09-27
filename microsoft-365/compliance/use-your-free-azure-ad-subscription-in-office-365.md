@@ -2,8 +2,8 @@
 title: "Use your free Azure Active Directory subscription"
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 ms.date:
 audience: Admin

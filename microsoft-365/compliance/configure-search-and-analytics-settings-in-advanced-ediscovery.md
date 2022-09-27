@@ -1,22 +1,23 @@
 ---
 title: Configure search and analytics settings - eDiscovery (Premium)
+description: "Configure Microsoft Purview eDiscovery (Premium) settings that apply to all review set in a case. This includes settings for analytics and Optical character recognition."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 ms.custom: seo-marvel-mar2020
-description: "Configure Microsoft Purview eDiscovery (Premium) settings that apply to all review set in a case. This includes settings for analytics and Optical character recognition."
 ---
 
 # Configure search and analytics settings in eDiscovery (Premium)
