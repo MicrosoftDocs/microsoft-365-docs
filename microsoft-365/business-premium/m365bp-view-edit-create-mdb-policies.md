@@ -15,7 +15,7 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 ---
 
 # View and edit device protection policies
