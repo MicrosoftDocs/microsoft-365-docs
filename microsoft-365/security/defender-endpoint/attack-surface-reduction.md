@@ -19,7 +19,7 @@ ms.custom:
 ms.topic: article
 ms.collection: 
 - m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
 search.appverid: met150
 ---
 
