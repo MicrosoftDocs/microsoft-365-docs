@@ -16,6 +16,7 @@ ms.collection:
   - m365-security
   - Strat_O365_IP
   - m365initiative-defender-office365
+  - EngageScoreSep2022
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020

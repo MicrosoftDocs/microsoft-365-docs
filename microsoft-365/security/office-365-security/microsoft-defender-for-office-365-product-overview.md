@@ -12,6 +12,7 @@ search.appverid:
 ms.collection: 
   - m365-security
   - m365initiative-defender-office365
+  - EngageScoreSep2022
 description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties.
 ms.subservice: mdo
 ms.service: microsoft-365-security
