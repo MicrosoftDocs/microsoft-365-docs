@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-security
+- tier1
 ---
 
 # Tutorials and simulations in Microsoft Defender for Business
