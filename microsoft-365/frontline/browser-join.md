@@ -21,7 +21,6 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - highpri
 ms.reviewer: hafarmer
 description: Learn about the join experience for Teams virtual appointments on browsers. 
 appliesto: 
