@@ -2,8 +2,8 @@
 title: "Microsoft Purview solutions trial playbook"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
@@ -294,7 +294,7 @@ Each recommended action guides you through the required activities for the recom
 
 Note that the recommended steps in the playbook (above) may also be included in the Recommended actions shown in the portal.
 
-Set up recommendations are also available on the Microsoft docs page, via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
+Setup recommendations are also available on Microsoft Learn via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
 
 To fully leverage the functionality of Insider Risk Management, we recommend setting up policies for your organization to better identify potential risky actions that may lead to a security incident, leveraging templates for Data leaks or Data theft.  
 

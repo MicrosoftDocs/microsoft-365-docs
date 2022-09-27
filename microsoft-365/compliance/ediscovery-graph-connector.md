@@ -1,25 +1,27 @@
 ---
 title: "Microsoft Purview eDiscovery Graph connectors"
+description: "Microsoft 365 customers can perform eDiscovery searches on content ingested for enterprise search."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: 
+ms.collection:
+- tier1 
 - m365-security-compliance
 - m365solution-ediscovery
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: "Microsoft 365 customers can perform eDiscovery searches on content ingested for enterprise search."
 ---
 
 # Use Graph connectors with eDiscovery (Premium)

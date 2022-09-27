@@ -18,6 +18,7 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365solution-m365dsecops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150

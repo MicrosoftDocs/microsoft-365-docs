@@ -16,8 +16,9 @@ search.appverid:
 ms.collection: 
 - m365solution-overview
 - m365solution-mip
-- m365initiative-compliance
+- tier1
 - zerotrust-solution
+- highpri
 description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 

@@ -12,6 +12,8 @@ ms.collection:
 - m365solution-overview
 - m365solution-mig
 - m365initiative-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150

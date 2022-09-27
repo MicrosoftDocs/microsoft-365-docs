@@ -2,15 +2,15 @@
 title: "Microsoft 365 alert policies"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - M365-security-compliance
 search.appverid:
 - MET150

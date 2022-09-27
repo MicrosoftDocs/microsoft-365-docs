@@ -109,12 +109,3 @@ For more information, see [Permissions in the Security & Compliance Center](perm
 > [!NOTE]
 > Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Related topics
-
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
-[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)
-
-[View email security reports in the Security & Compliance Center](view-email-security-reports.md)
-
-[View reports for Microsoft Defender for Office 365](view-reports-for-mdo.md)

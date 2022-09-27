@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.date: 07/09/2021
+ms.date: 09/22/2022
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,6 +22,7 @@ ms.collection:
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.topic: conceptual
 ---
 
@@ -76,13 +77,13 @@ Watch this video for a quick overview of the onboarding process and learn about 
 
 The following table lists the available tools based on the endpoint that you need to onboard.
 
-Endpoint | Tool options
-:---|:---
-**Windows** | [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md),  [Group Policy](../defender-endpoint/configure-endpoints-gp.md),  [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md),  [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md),  [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md),  [Integration with Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
-**macOS** | [Local scripts](../defender-endpoint/mac-install-manually.md),  [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md),  [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md),  [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md)
-**Linux Server** | [Local script](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
-**iOS** | [App-based](../defender-endpoint/ios-install.md)
-**Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)
+| Endpoint | Tool options |
+|:---|:---|
+| **Windows** |- [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md)<br/>- [Group Policy](../defender-endpoint/configure-endpoints-gp.md)<br/>- [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md)<br/>- [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)<br/>- [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md) |
+| **macOS** | - [Local scripts](../defender-endpoint/mac-install-manually.md)<br/>- [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)<br/>- [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)<br/>- [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md) |
+| **Linux Server** | - [Local script](../defender-endpoint/linux-install-manually.md)<br/>- [Puppet](../defender-endpoint/linux-install-with-puppet.md)<br/>- [Ansible](../defender-endpoint/linux-install-with-ansible.md) |
+| **iOS** | [App-based](../defender-endpoint/ios-install.md) |
+| **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md) |
 
 
 

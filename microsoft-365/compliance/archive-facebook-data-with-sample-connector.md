@@ -1,9 +1,10 @@
 ---
 title: "Set up a connector to archive Facebook data"
+description: "Learn how to set up & use a connector in the Microsoft Purview compliance portal to import & archive data from Facebook Business pages to Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
@@ -12,9 +13,11 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: "Learn how to set up & use a connector in the Microsoft Purview compliance portal to import & archive data from Facebook Business pages to Microsoft 365."
 ---
 
 # Set up a connector to archive Facebook data (preview)

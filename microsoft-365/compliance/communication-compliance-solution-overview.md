@@ -12,10 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- M365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
 ---
 
 # Communication compliance

@@ -18,9 +18,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
   - m365solution-ransomware
   - highpri
+  - tier1
 ms.topic: article
 ---
 

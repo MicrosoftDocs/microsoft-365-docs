@@ -1,23 +1,23 @@
 ---
 title: "Get started with eDiscovery (Standard) cases in Microsoft Purview"
+description: "Describes how to get started using eDiscovery (Standard) in Microsoft Purview. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export content that's relevant to your investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
-- SPO_Content
+- ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Describes how to get started using eDiscovery (Standard) in Microsoft Purview. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export content that's relevant to your investigation."
 ---
 
 # Get started with eDiscovery (Standard) in Microsoft Purview
@@ -39,6 +39,11 @@ Licensing for eDiscovery (Standard) requires the appropriate organization subscr
    OR
    
   - A Microsoft 365 E3 or Office 365 E3 license or higher
+
+   OR
+   
+  - Microsoft 365 Business Premium (Exchange only) license
+  
 
    OR
 

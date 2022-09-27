@@ -1,22 +1,23 @@
 ---
 title: "Manage hold notifications"
+description: "Use the communications workflow in eDiscovery (Premium) to track the status of your legal hold notifications and if necessary update and resend them."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: "Use the communications workflow in eDiscovery (Premium) to track the status of your legal hold notifications and if necessary update and resend them."
 ---
 
 # Manage hold notifications

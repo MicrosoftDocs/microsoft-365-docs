@@ -3,7 +3,7 @@ title: "Optimize custom extensions in SharePoint Online modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/11/2020
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

@@ -1,22 +1,23 @@
 ---
 title: "Review conversations in eDiscovery (Premium)"
+description: "Learn about the conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
+ms.custom: seo-marvel-mar2020
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-description: "Learn about the conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
-ms.custom: seo-marvel-mar2020
 ---
 
 # Conversation threading in eDiscovery (Premium)

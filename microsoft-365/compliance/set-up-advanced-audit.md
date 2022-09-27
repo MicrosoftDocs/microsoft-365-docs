@@ -1,9 +1,10 @@
 ---
 title: "Set up Audit (Premium) in Microsoft 365"
+description: "This article describes how to set up Audit (Premium) so you can perform forensic investigations when user accounts are compromised or to investigation other security-related incidents."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -11,15 +12,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
+- tier1
 - M365-security-compliance
 - m365solution-audit
-- m365initiative-compliance
 - m365solution-scenario
+- highpri
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to set up Audit (Premium) so you can perform forensic investigations when user accounts are compromised or to investigation other security-related incidents."
 ---
 
 # Set up Microsoft Purview Audit (Premium)

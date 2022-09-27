@@ -1,9 +1,10 @@
 ---
 title: "Collection statistics and reports"
+description: "Learn how to access and use statistics and reports for draft collections and collections that have been committed to a review set in Microsoft Purview eDiscovery (Premium)." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 04/08/2022
@@ -11,11 +12,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- M365-security-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to access and use statistics and reports for draft collections and collections that have been committed to a review set in Microsoft Purview eDiscovery (Premium)." 
 ---
 
 # Collection statistics and reports in Microsoft Purview eDiscovery (Premium)

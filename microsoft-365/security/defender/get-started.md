@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-getstarted
   - highpri
+  - tier1
 ms.custom: intro-get-started
 ms.topic: conceptual
 ---

@@ -8,12 +8,13 @@ f1.keywords:
   - NOCSH
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
+  - tier2
 ms.topic: article
 search.appverid: 
   - MOE150
@@ -32,6 +33,27 @@ To make Microsoft Secure Score a better representative of your security posture,
 The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+
+## September 2022
+
+New Microsoft Defender for Office 365 recommendations for anti-phishing policies are now available as Secure Score improvement actions:
+
+- Set the phishing email level threshold at 2 or higher
+- Enable impersonated user protection
+- Enable impersonated domain protection
+- Ensure that mailbox intelligence is enabled
+- Ensure that intelligence for impersonation protection is enabled
+- Quarantine messages that are detected from impersonated users
+- Quarantine messages that are detected from impersonated domains
+- Move messages that are detected as impersonated users by mailbox intelligence
+- Enable the ‘show first contact safety tip’ option
+- Enable the user impersonation safety tip
+- Enable the domain impersonation safety tip
+- Enable the user impersonation unusual characters safety tip
+
+A New SharePoint Online recommendation is now available as a Secure Score improvement action:
+
+- Sign out inactive users in SharePoint Online
 
 ## August 2022
 

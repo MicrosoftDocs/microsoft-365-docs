@@ -22,6 +22,7 @@ ms.collection:
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.topic: how-to
 ---
 # Step 1. Create the Microsoft 365 Defender Evaluation Environment for greater cyber security

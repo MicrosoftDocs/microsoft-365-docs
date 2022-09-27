@@ -12,10 +12,11 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
+- tier3
 - m365-security-compliance
 - m365solution-insiderrisk
-- m365initiative-compliance
 - m365solution-scenario
+- highpri
 ---
 
 # Privileged access management

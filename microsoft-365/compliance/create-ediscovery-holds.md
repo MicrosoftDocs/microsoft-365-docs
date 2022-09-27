@@ -1,23 +1,23 @@
 ---
 title: "Create eDiscovery holds in a eDiscovery (Standard) case"
+description: "You can create a hold that's associated with a eDiscovery (Standard) case in Microsoft 365 to preserve content relevant to an investigation or legal case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
+ms.collection:
+- tier1
 - M365-security-compliance
-- SPO_Content
+- ediscovery
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
-description: "You can create a hold that's associated with a eDiscovery (Standard) case in Microsoft 365 to preserve content relevant to an investigation or legal case."
 ---
 
 # Create an eDiscovery hold

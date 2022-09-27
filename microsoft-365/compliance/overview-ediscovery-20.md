@@ -1,9 +1,10 @@
 ---
 title: "Overview of the eDiscovery (Premium) solution in Microsoft Purview"
+description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/08/2022
 audience: Admin
@@ -11,14 +12,15 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier1
 - m365-security-compliance
 - m365solution-aed
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 ms.custom: seo-marvel-apr2020
 ---
 

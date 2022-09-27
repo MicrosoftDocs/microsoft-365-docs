@@ -84,7 +84,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **Select a reason for submitting to Microsoft**: Verify **Should not have been blocked (False positive)** is selected.
 
-     - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgement.
+     - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgment.
 
      - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
@@ -125,12 +125,9 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **File**: Click **Browse files** to find and select the file to submit.
 
-     > [!NOTE]
-     > File submissions are not available in clouds that do not allow for data to leave the environment. **Browse files** is greyed out.
-
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
-     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
      - **Block this file**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
@@ -164,12 +161,9 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears.
 
-     > [!NOTE]
-     > URL submissions are not available in clouds that do not allow for data to leave the environment. **URL** is greyed out.
-
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
-     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgement.
+     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
      - **Block this URL**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
@@ -356,7 +350,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Submitted by**
      - **Reason for submitting**: The values **Not junk**, **Phish**, **Malware**, and **Spam**.
      - **Status**: The values **Pending** and **Completed**.
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
@@ -405,13 +399,13 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Submitted by**
      - **Reason for submitting**
      - **Status**
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
 
      When you're finished, click **Apply**.
 
      :::image type="content" source="../../media/admin-submission-file-filters.png" alt-text="Filter options for email attachment admin submissions.":::
 
-   - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the drop down list:
+   - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the drop-down list:
      - **None**
      - **Reason**
      - **Status**
@@ -454,7 +448,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Submitted by**
      - **Reason for submitting**
      - **Status**
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
@@ -519,7 +513,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Reported from**: The values **Microsoft add-in** or **Third party add-in**.
      - **Phish simulation**: The values **Yes** or **No**.
      - **Converted to admin submission**: The values **Yes** or **No**.
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 

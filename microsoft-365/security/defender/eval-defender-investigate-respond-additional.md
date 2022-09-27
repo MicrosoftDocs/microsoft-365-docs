@@ -23,6 +23,7 @@ ms.collection:
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ---

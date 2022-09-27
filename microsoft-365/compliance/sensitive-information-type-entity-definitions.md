@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier2
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
