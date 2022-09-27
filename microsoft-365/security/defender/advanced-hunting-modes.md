@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
+  - tier2
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150

@@ -18,7 +18,7 @@ audience: ITPro
 ms.topic: article
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+- tier1
 ---
 
 # Microsoft Threat Experts in Microsoft 365 overview

@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
+  - tier2
 ms.topic: article
 search.appverid: 
   - MOE150

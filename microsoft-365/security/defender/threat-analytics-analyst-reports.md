@@ -18,7 +18,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security-compliance
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---

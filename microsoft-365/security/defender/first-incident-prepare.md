@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-firstincident
   - highpri
+  - tier1
 ms.topic: conceptual
 search.appverid:
   - MOE150

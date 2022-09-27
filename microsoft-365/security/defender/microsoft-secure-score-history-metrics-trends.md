@@ -14,13 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
+  - tier2
 ms.topic: article
 search.appverid: 
   - MOE150
   - MET150
-ms.custom: 
-  - seo-marvel-apr2020
-  - seo-marvel-jun2020
 ---
 
 # Track your Microsoft Secure Score history and meet goals

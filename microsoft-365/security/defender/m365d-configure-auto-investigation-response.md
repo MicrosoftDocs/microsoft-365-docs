@@ -12,7 +12,7 @@ ms.subservice: m365d
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- tier2
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
