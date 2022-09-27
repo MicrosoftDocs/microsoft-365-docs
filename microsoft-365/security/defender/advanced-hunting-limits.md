@@ -1,5 +1,5 @@
 ---
-title: Advanced hunting quotas and usage parameters in Microsoft 365 Defender
+title: Use the advanced hunting query resource report
 description: Understand various quotas and usage parameters (service limits) that keep the advanced hunting service responsive
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results, quota, parameters, allocation
 search.product: eADQiWindows 10XVcnh
@@ -22,13 +22,15 @@ ms.collection:
 ms.topic: article
 ---
 
-# Advanced hunting quotas and usage parameters
+# Use the advanced hunting query resource report
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 - Microsoft 365 Defender
+
+## Understand advanced hunting quotas and usage parameters
 
 To keep the service performant and responsive, advanced hunting sets various quotas and usage parameters (also known as "service limits"). These quotas and parameters apply separately to queries run manually and to queries run using [custom detection rules](custom-detection-rules.md). Customers who run multiple queries regularly should be mindful of these limits and [apply optimization best practices](advanced-hunting-best-practices.md) to minimize disruptions.
 
@@ -43,6 +45,55 @@ Refer to the following table to understand existing quotas and usage parameters.
 
 >[!NOTE] 
 >A separate set of quotas and parameters apply to advanced hunting queries performed through the API. [Read about advanced hunting APIs](./api-advanced-hunting.md)
+
+## View query resources report to find inefficient queries
+
+The query resources report shows your organization's consumption of CPU resources for hunting based on queries that ran in the last 30 days using any of the hunting interfaces.
+This report is useful in identifying the most resource-intensive queries and understanding how to prevent throttling due to excessive use.
+
+### Access the query resources report
+
+The report can be accessed in two ways:
+- In the advanced hunting page, select **Query resources report**:
+
+:::image type="content" source="../../media/ah-query-resources/View-query-resources report.png" alt-text="view the query resources report button in the AH portal" lightbox="../../media/ah-query-resources/View-query-resources report.png":::
+- Within the **Reports** page, find the new report entry in the **General** section
+
+:::image type="content" source="../../media/ah-query-resources/Reports-general-query-resources.png" alt-text="view the query resources report in the Reports section" lightbox="../../media/ah-query-resources/Reports-general-query-resources.png":::
+
+All users can access the reports, however, only administrators (AAD global admin and AAD security admin) can see queries done by all users in all interfaces. Any other user can only see:
+- Queries they ran via the portal
+- Public API queries they ran themselves and not through the application
+- Custom detections they created
+
+### Query resource report contents
+By default, the report table displays queries from the last day, and is sorted by Resource usage, to help you easily identify which queries consumed the highest amount of CPU resources. 
+
+The query resources report contains all queries that ran, including detailed resource information per query:
+- Time – when the query was run
+- Interface – whether the query ran in the portal, in custom detections, or via API query
+- User/App – the user or app that ran the query 
+- Resource usage – an indicator of the amount of CPU resources a query consumed (can be Low, Medium, or High, where High means the query used a large amount of CPU resources and should be improved to be more efficient)
+- State – whether the query was completed, failed, or was cancelled
+- Query time – how long it took to run the query 
+
+:::image type="content" source="../../media/ah-query-resources/Excessive-usage-sample.png" alt-text="view inefficient queries" lightbox="../../media/ah-query-resources/Excessive-usage-sample.png":::
+
+### Find resource-heavy queries
+Queries with high resource usage or a long query time can probably be optimized to prevent throttling via this interface. 
+
+The graph displays resource usage over time per interface. You can easily identify excessive usage and click the spikes in the graph to filter the table accordingly. Once you select an entry in the graph, the table is filtered to that specific date. 
+
+You can identify the queries that used the most resources on that day and take action to improve them – by [applying query best practices](advanced-hunting-best-practices.md) or educating the user who ran the query or created the rule to take query efficiency and resources into consideration. For guided mode, the user needs to [switch to advanced mode](advanced-hunting-query-builder-details.md#switch-to-advanced-mode-after-building-a-query) to edit the query.
+
+ 
+The graph supports two modes: 
+- Average use per day –  the average use of resources per day
+- Highest use per day – the highest actual use of resources per day
+
+:::image type="content" source="../../media/ah-query-resources/resource-usage-over-time.png" alt-text="Two view modes for query resources report" lightbox="../../media/ah-query-resources/resource-usage-over-time.png":::
+
+This means that, for instance, if on a specific day you ran two queries, one used 50% of your resources and one used 100%, the average daily use value will show 75%, while the top daily use will show 100%.
 
 ## Related topics
 
