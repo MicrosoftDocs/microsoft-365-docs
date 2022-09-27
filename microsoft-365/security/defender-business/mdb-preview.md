@@ -15,6 +15,7 @@ manager: dansimp
 audience: Admin
 ms.collection:
 - m365-security
+- tier1
 ms.topic: conceptual
 ---
 
