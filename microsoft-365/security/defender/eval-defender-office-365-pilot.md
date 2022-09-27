@@ -22,6 +22,7 @@ ms.collection:
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ---
