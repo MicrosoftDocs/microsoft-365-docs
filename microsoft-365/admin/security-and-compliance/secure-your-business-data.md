@@ -32,7 +32,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Best practices to protect your business from ransomware, phishing, and malicious URLs or attachments."
+description: "Best practices to protect your small or medium sized business from ransomware, phishing, and malicious URLs or attachments."
 ---
 
 # Top 10 ways to secure your data - Best practices for small and medium sized businesses
