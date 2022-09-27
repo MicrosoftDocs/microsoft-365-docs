@@ -16,6 +16,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-aed
 - m365solution-overview
+- highpri
 - ediscovery
 search.appverid:
 - MOE150

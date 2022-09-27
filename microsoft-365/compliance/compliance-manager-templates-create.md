@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150

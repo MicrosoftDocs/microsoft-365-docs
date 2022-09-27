@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Configure device proxy and internet connection settings for Information Protection"
