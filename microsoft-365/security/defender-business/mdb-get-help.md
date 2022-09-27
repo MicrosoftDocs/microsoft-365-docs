@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.collection: 
 - SMB
-- M365-security-compliance                 
+- m365-security                 
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Get help or contact support if you have any issues with Defender for Business.
