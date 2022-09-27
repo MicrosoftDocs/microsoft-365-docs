@@ -16,6 +16,8 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Get help or contact support if you have any issues with Defender for Business.
+ms.collection: 
+- tier1
 ---
 
 # Get help and support for Microsoft Defender for Business

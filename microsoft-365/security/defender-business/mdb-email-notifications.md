@@ -17,6 +17,7 @@ ms.collection:
  - m365-security
  - m365solution-mdb-setup
  - highpri
+ - tier1
 ---
 
 # Set up email notifications
