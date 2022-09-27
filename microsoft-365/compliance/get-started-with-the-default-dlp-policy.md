@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to use the report to refine your organization's default data loss prevention (DLP) policy.

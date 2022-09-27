@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 ms.localizationpriority: high
 search.appverid: 
