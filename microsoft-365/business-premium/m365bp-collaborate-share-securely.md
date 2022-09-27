@@ -15,6 +15,7 @@ ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
+- m365-security
 ms.custom:
 - MiniMaven
 - MSB365
