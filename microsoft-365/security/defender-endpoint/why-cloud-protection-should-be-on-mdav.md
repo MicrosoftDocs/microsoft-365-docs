@@ -16,7 +16,7 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 10/22/2021
 ms.collection: 
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 search.appverid: met150
 ---
