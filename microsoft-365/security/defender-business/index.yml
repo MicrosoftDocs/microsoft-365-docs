@@ -13,6 +13,7 @@ metadata:
   - SMB
   - m365-security
   - m365-initiative-defender-business
+  - tier1
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
