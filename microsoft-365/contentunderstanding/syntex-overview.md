@@ -87,7 +87,7 @@ For more information about custom and prebuilt models, see [Overview of model ty
 
 :::row:::
    :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)    
+      ![Image of generic search icon.](../media/content-understanding/document-assembly-image.png) 
    :::column-end:::
    :::column span="3":::
       With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
