@@ -17,7 +17,7 @@ Before you get started, make sure you have the following prerequisites:
   - Single Sign On URL
 
   If you don't have this information, contact UKG Dimensions support.
-- Federated single sign-on (SSO) authentication is enabled in your UKG Dimensions environment. </br>Azure Active Directory (Azure AD) is the supported identity provider for SSO. To enable SSO, set up integration between Azure AD and UKG Dimensions. For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). 
+- Federated single sign-on (SSO) authentication is enabled in your UKG Dimensions environment. </br>Azure Active Directory (Azure AD) is the supported identity provider for SSO. To enable SSO, set up integration between Azure AD and UKG Dimensions. For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). If you need help or more information about setting up SSO, contact UKG Dimensions support.
 
     After the integration is set up, configure users as federated accounts on their profile page in UKG Dimensions.
 - At least one team is set up in Teams.
