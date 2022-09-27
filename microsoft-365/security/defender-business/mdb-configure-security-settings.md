@@ -18,6 +18,7 @@ ms.collection:
  - m365-security
  - m365solution-mdb-setup
  - highpri
+ - tier1
 ---
 
 # View and edit security policies and settings in Microsoft Defender for Business

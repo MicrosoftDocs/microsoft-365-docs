@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-security
+- tier1
 ---
 
 # Firewall in Microsoft Defender for Business
