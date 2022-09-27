@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-audit
 - m365solution-overview
+- highpri
 - audit
 search.appverid:
 - MOE150
