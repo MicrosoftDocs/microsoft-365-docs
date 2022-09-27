@@ -13,7 +13,7 @@ search.appverid:
   - MET150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.subservice: mdo
 ms.service: microsoft-365-security
