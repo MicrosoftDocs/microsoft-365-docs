@@ -17,6 +17,7 @@ ms.collection:
 - SMB
 - m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # The simplified configuration process in Microsoft Defender for Business

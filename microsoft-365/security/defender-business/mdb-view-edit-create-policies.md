@@ -17,6 +17,7 @@ ms.collection:
 - SMB
 - m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # View or edit policies in Microsoft Defender for Business
