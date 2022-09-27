@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Business trial playbook"
+title: "Microsoft Defender for Business trial guide"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,7 +7,9 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 ms.localizationpriority: high
 ms.date: 09/02/2022
 ms.service: microsoft-365-security
@@ -15,11 +17,11 @@ ms.subservice: mdb
 search.appverid: 
 - MOE150
 - MET150
-description: "Make the most of your Defender for Business trial with this playbook. Get set up quickly and get started using your new security capabilities."
+description: "Make the most of your Defender for Business trial with this guide. Get set up quickly and get started using your new security capabilities."
 ms.custom: trial-playbook
 ---
 
-# Trial playbook: Microsoft Defender for Business
+# Trial guide: Microsoft Defender for Business
 
 **Welcome to the Defender for Business trial playbook!**
 
