@@ -15,6 +15,7 @@ ms.collection:
 - highpri
 - Adm_O365
 - Adm_TOC
+- m365-security
 ms.custom:
 - VSBFY23
 - MSStore_Link
