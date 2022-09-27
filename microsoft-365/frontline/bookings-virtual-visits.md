@@ -21,6 +21,7 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
+  - highpri
 ms.reviewer: 
 description: Learn how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 appliesto: 

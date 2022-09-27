@@ -21,6 +21,7 @@ ms.collection:
   - m365solution-overview
   - m365-frontline
   - highpri
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

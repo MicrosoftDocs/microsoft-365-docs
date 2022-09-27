@@ -12,6 +12,7 @@ ms.service: microsoft-365-frontline
 ms.collection:
   - M365-collaboration
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
   - highpri
