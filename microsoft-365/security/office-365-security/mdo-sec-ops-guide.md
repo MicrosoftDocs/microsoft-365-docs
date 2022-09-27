@@ -14,7 +14,7 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.subservice: mdo
