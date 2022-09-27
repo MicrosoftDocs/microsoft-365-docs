@@ -23,9 +23,9 @@ ms.custom: trial-playbook
 
 # Trial guide: Microsoft Defender for Business
 
-**Welcome to the Defender for Business trial playbook!**
+**Welcome to the Defender for Business trial guide!**
 
-This playbook is a simple guide to help you make the most of your 30-day free trial. Use the recommendations in this article from the Microsoft Defender team to learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
+This guide is designed to help you make the most of your 30-day free trial. Use the recommendations in this article from the Microsoft Defender team to learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
 
 ## What is Defender for Business?
 
