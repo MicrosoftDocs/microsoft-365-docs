@@ -21,6 +21,7 @@ ms.collection:
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.topic: conceptual
 ---
 
