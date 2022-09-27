@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Microsoft Defender for Office 365.
 ms.subservice: mdo
