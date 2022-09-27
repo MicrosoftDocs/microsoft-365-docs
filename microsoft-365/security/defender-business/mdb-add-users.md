@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/24/2022
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ---

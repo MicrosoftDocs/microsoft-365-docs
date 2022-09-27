@@ -15,7 +15,7 @@ ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 ---
 
 # Manage your custom rules for firewall policies in Microsoft Defender for Business
