@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 
