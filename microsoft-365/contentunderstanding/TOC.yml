@@ -83,13 +83,6 @@
                       href: rename-an-extractor.md
                 - name: Duplicate a model
                   href: duplicate-a-model.md
- 
-            - name: Structured document processing
-              items:
-                - name: Overview 
-                  href: form-processing-overview.md
-                - name: Train your model
-                  href: create-a-form-processing-model.md
 
             - name: Freeform document processing
               items:
@@ -97,6 +90,13 @@
                   href: freeform-document-processing-overview.md
                 - name: Train your model
                   href: create-freeform-document-processing-model.md
+
+            - name: Structured document processing
+              items:
+                - name: Overview 
+                  href: form-processing-overview.md
+                - name: Train your model
+                  href: create-a-form-processing-model.md
 
     - name: Prebuilt models
       items:
