@@ -16,7 +16,7 @@ ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 search.appverid: met150
 ---
