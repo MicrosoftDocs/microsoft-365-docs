@@ -24,7 +24,7 @@ SharePoint Syntex is a content understanding, processing, and compliance service
    :::column span="":::      
       With SharePoint Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization.
 
-      Rather than clicking and sorting through hundreds, or even thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
+      Rather than clicking and sorting through hundreds or thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
    :::column-end:::
    :::column span="":::
       ![Image of computers running Syntex.](../media/content-understanding/syntex-devices-image.png)
@@ -33,11 +33,10 @@ SharePoint Syntex is a content understanding, processing, and compliance service
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
-
--------------------------------
+<!---
 
 SharePoint Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries.
-
+--->
 <!---
 </br>
 
@@ -45,10 +44,11 @@ SharePoint Syntex is a content understanding, processing, and compliance service
 
 </br>
 --->
-
+<!---
 With SharePoint Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization.
 
 Rather than clicking and sorting through hundreds, or even thousands of files, SharePoint Syntex extracts, analyzes, and categorizes the data for you, streamlining the search and discovery process. Not only can you dive deeper into your content to truly understand it,  you can turn the information into meaningful insights that your organization can use to make informed business decisions.
+--->
 
 ## Models
 
@@ -85,6 +85,15 @@ For more information about custom and prebuilt models, see [Overview of model ty
 
 ## Content assembly
 
+:::row:::
+   :::column span="":::
+      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)    
+   :::column-end:::
+   :::column span="2":::
+      With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
+   :::column-end:::
+:::row-end:::
+
 With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
 
 This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
@@ -95,25 +104,27 @@ For more information, see [Create documents using content assembly in SharePoint
 
 :::row:::
    :::column span="2":::
-      The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
-
-      This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+      The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
    :::column-end:::
    :::column span="":::
       ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
    :::column-end:::
 :::row-end:::
 
+This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+
 For more information, see [Search for metadata in document libraries in SharePoint Syntex](metadata-search.md).
 
+<!---
 
----------------
 
 The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 For more information, see [Search for metadata in document libraries in SharePoint Syntex](metadata-search.md).
+
+--->
 
 ## Content compliance
 
