@@ -8,6 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio

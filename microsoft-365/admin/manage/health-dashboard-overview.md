@@ -7,6 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.collection: scotvorg
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb

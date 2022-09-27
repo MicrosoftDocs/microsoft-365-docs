@@ -12,6 +12,7 @@ ms.service: o365-administration
 ms.localizationpriority: null
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 

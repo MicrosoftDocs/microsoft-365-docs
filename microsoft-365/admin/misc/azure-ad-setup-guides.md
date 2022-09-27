@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
 description: "Learn about setup guides for Azure Active Directory."
 ---
 

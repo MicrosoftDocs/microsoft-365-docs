@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Adm_O365
 - M365-subscription-management 
 ms.custom:

@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
+ms.collection: scotvorg
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: "Learn about the information available for Microsoft 365 feature descriptions."
 ---

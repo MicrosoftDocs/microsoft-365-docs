@@ -9,7 +9,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC

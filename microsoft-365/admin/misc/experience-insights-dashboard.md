@@ -7,7 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
-
+ms.collection: 
+- scotvorg
 description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
 

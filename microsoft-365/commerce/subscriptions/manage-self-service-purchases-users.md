@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration 
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 ms.custom: 
 - commerce_ssp
 - AdminSurgePortfolio

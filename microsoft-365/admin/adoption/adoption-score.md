@@ -11,6 +11,7 @@ ms.service: o365-administration
 ms.localizationpriority: high
 monikerRange: 'o365-worldwide'
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC

@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkMAC
+ms.collection:
+- scotvorg
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to transition from Microsoft Cloud Germany Exchange Online to the global Exchange Online service"
 ---

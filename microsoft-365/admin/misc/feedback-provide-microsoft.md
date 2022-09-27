@@ -9,6 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: "Learn about the different ways you can provide feedback to Microsoft about Microsoft products and services."
 ---
 

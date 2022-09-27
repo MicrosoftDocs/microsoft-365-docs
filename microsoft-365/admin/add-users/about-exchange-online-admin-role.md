@@ -10,9 +10,9 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkEXCHANGE

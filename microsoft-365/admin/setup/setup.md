@@ -10,6 +10,7 @@ ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365

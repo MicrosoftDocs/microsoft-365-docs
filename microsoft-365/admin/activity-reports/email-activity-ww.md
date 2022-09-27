@@ -1,13 +1,14 @@
 ---
 title: "Microsoft 365 admin center email activity reports"
-ms.author: camillepack
-author: camillepack
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC

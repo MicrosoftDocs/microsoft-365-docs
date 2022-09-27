@@ -12,6 +12,7 @@ ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- scotvorg
 - highpri  
 - M365-subscription-management
 - Adm_O365

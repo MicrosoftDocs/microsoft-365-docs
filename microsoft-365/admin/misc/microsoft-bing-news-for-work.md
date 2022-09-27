@@ -9,6 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: "A daily roundup of news, trends, and stories related to your company, work, or industry delivered fresh to your inbox."

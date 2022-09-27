@@ -13,6 +13,7 @@ f1_keywords:
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - M365-identity-device-management
 ms.custom:

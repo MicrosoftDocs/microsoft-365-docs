@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.collection: 
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio

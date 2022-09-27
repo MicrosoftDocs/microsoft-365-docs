@@ -10,13 +10,14 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
-  - Adm_TOC
+- scotvorg
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
 search.appverid:
-  - MET150
-  - MOE150
-  - FRP150
+- MET150
+- MOE150
+- FRP150
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio

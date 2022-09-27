@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri 
 - M365-subscription-management
 - M365-identity-device-management

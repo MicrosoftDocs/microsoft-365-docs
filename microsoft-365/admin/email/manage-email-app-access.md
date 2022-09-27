@@ -9,7 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - Adm_O365
 - Adm_NonTOC
 ms.custom: 

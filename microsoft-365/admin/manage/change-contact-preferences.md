@@ -10,6 +10,8 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
+ms.collection: 
+- scotvorg
 search.appverid:
 - BCS160
 - MET150

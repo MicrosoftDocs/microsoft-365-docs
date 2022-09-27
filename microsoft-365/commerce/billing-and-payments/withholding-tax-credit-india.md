@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: null
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 search.appverid: MET150

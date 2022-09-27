@@ -9,6 +9,7 @@ audience: Admin
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 search.appverid:

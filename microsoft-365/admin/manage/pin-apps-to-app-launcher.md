@@ -7,7 +7,8 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.collection: 
+ms.collection:
+- scotvorg 
 - Adm_O365
 - M365-subscription-management
 - Adm_TOC

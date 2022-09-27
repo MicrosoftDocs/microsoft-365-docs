@@ -7,7 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
-
+ms.collection: 
+- scotvorg
 description: "Get a report of the Microsoft 365 help articles people in your organization are reading."
 ---
 

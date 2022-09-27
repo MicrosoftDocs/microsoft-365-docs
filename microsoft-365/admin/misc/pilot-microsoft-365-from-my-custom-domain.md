@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom:
