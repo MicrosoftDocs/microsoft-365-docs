@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-ediscovery
 - m365solution-overview
+- highpri
 - ediscovery
 ms.localizationpriority: medium
 search.appverid:

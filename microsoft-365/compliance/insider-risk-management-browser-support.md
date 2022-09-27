@@ -11,6 +11,11 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
+ms.collection: 
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ms.collection:
 - tier1
 - M365-security-compliance
