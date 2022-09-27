@@ -16,6 +16,8 @@ ms.collection:
 - tier1
 - M365-security-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ---
 
 # Learn about insider risk management

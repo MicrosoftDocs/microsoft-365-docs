@@ -19,6 +19,7 @@ ms.collection:
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom:
