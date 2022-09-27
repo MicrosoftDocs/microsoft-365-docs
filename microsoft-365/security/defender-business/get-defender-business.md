@@ -15,7 +15,7 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- m365-security-compliance
+- m365-security
 ---
 
 # Get Microsoft Defender for Business
