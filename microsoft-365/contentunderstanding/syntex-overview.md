@@ -24,7 +24,7 @@ SharePoint Syntex is a content understanding, processing, and compliance service
    :::column span="":::      
       With SharePoint Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization.
 
-      Rather than clicking and sorting through hundreds, or even thousands of files, Syntex extracts, analyzes, and categorizes the data for you, streamlining the search and discovery process.
+      Rather than clicking and sorting through hundreds, or even thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
    :::column-end:::
    :::column span="":::
       ![Image of computers running Syntex.](../media/content-understanding/syntex-devices-image.png)
@@ -104,6 +104,10 @@ For more information, see [Create documents using content assembly in SharePoint
    :::column-end:::
 :::row-end:::
 
+For more information, see [Search for metadata in document libraries in SharePoint Syntex](metadata-search.md).
+
+
+---------------
 
 The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
