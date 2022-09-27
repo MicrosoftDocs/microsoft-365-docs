@@ -16,7 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-security
-- m365-security
+- tier1
 ---
 
 # View and edit device protection policies
