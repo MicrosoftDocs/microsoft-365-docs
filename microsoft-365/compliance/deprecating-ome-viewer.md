@@ -1,5 +1,5 @@
 ---
-title: "Deprecating Message Encryption Viewer App"
+title: "Deprecating OME Viewer app"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: The Office 365 Message Encryption (OME) Viewer app was removed from Android and Apple stores in 2018.
@@ -37,20 +37,18 @@ With this change, users will no longer be able to download the Office 365 Messag
   
 ## Why this change was made
 
-The new version of OME no longer requires a mobile app to read protected email messages and attachments. Customers using the new OME capabilities can view the protected message in Outlook mobile and non-customers can view protected messages in a browser.
+The new version of OME no longer requires a mobile app to read protected email messages and attachments. Customers using Microsoft Purview Message Encryption can view the protected message in Outlook mobile and non-customers can view protected messages in a browser.
   
-Requiring users to download a mobile app is another hurdle for customers to view protected messages. The new Office 365 Message Encryption capabilities provide a better mobile experience.
+Requiring users to download a mobile app is another hurdle for customers to view protected messages. Microsoft Purview Message Encryption provides a better mobile experience.
   
 ## Can I still use the previous version of Office 365 Message Encryption
 
-The previous version of Office 365 Message Encryption will not be deprecated at this time, however, we have made significant enhancements to the new version of Office 365 Message Encryption, which make it easier to encrypt and rights protect sensitive data to anyone and on any device - including the ability for users to read protected messages directly in Outlook (desktop, mobile, and web). 
+The previous version of Office 365 Message Encryption will not be deprecated at this time, however, we have made significant enhancements to Microsoft Purview Message Encryption, which make it easier to encrypt and rights protect sensitive data to anyone and on any device - including the ability for users to read protected messages directly in Outlook (desktop, mobile, and web).
   
 ## What do I need to do to prepare for this change
 
 If your organization currently sends encrypted attachments to recipients that require the OME Viewer app, you should update your documentation and training resources.
   
-We recommend updating existing Exchange mail flow rules to use the current version of OME so that your organization can take advantage of the new and improved capabilities. Once you have set up the new OME capabilities, recipients won't need the OME Viewer app to read encrypted messages on mobile devices.
+We recommend updating existing Exchange mail flow rules to use Microsoft Purview Message Encryption so that your organization can take advantage of the new and improved capabilities. Once you have set up Microsoft Purview Message Encryption, recipients won't need the OME Viewer app to read encrypted messages on mobile devices.
   
-Microsoft recommends that you make a plan to move to the new OME capabilities as soon as it is reasonable for your organization. For instructions, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md). If you want to find out more about how the new capabilities work first, see [Office 365 Message Encryption](ome.md).
-  
-
+Microsoft recommends that you make a plan to move to Microsoft Purview Message Encryption as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). If you want to find out more about how message encryption works first, see [Message Encryption](ome.md).

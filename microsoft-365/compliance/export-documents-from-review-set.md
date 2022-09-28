@@ -1,31 +1,33 @@
 ---
 title: "Export documents from a review set"
+description: "Learn how to select and export content from an eDiscovery (Premium) review set for presentations or external reviews."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to select and export content from an Advanced eDiscovery review set for presentations or external reviews."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Export documents from a review set in Advanced eDiscovery
+# Export documents from a review set in eDiscovery (Premium)
 
-Export allows users to customize the content that is included in the download package when you export document from a review set in Advanced eDiscovery.
+Export allows users to customize the content that is included in the download package when you export document from a review set in eDiscovery (Premium).
 
 To export documents from a review set:
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
+1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then select the review set that you want to export.
 
 2. In the review set, click **Action** > **Export**.
 
@@ -40,7 +42,7 @@ To export documents from a review set:
 
 ## Export options
 
-Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs are not allowed when exporting to the PST format.
+Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs aren't allowed when exporting to the PST format.
 
 - **Export name**: Name of the export job. This will be used to name the ZIP files that will be downloaded.
 
@@ -82,15 +84,22 @@ If you select this export option, the exported content is organized in the follo
 
 - Summary.csv: Includes a summary of the content exported from the review set
 
-- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
+- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition. The root folder contains the following:
   
   - Export_load_file_x of z.csv: The metadata file.
   
   - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
   
-  - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files cannot be included with this option. If an attachment is selected in the review set, the parent email will be exported with the attachment attached.
+  - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files can’t be included with this option. If an attachment is selected in the review set, the parent email message will be exported with the attachment attached.
   
-  - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files cannot be included with this option.
+    The Exchange folder may also contain a subfolder named mailboxname_loosefiles.zip, which contains the following items:
+
+    - Information Rights Management (IRM) protected messages that have been decoded.
+    - Error-remediated messages.
+    - Modern attachments or links referenced in messages.
+    - Encrypted items (which aren't included in the PST files in the Exchange folder).
+  
+  - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files can’t be included with this option.
 
 ### Condensed directory structure
 
@@ -110,4 +119,4 @@ If you select this export option, the exported content is organized in the follo
 
 ### Condensed directory structure exported to your Azure Storage Account
 
-This option uses the same general structure as the *Condensed directory structure*, however the contents is not zipped and the data is saved to your Azure Storage account. This option is generally used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
+This option uses the same general structure as the *Condensed directory structure*, however the contents aren't zipped and the data is saved to your Azure Storage account. This option is generally used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).

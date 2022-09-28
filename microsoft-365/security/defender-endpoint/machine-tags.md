@@ -2,7 +2,7 @@
 title: Create and manage device tags
 description: Use device tags to group devices to capture context and enable dynamic list creation as part of an incident
 keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create and manage device tags
@@ -26,7 +27,10 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in **Devices list** view, or to group devices. For more information on device grouping, see [Create and manage device groups](machine-groups.md).
+Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in the **Device inventory** view, or to group devices. For more information on device grouping, see [Create and manage device groups](machine-groups.md).
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 You can add tags on devices using the following ways:
 
@@ -42,22 +46,22 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 1. Select the device that you want to manage tags on. You can select or search for a device from any of the following views:
 
-   - **Security operations dashboard** - Select the device name from the Top devices with active alerts section.
    - **Alerts queue** - Select the device name beside the device icon from the alerts queue.
-   - **Devices list** - Select the device name from the list of devices.
+   - **Devices inventory** - Select the device name from the list of devices.
    - **Search box** - Select Device from the drop-down menu and enter the device name.
 
      You can also get to the alert page through the file and IP views.
 
-2. Select **Manage Tags** from the row of Response actions.
+2. Select **Manage tags** from the row of Response actions.
 
-    :::image type="content" alt-text="Image of manage tags button." source="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="images/manage-tags-option.png":::
+    
 
 3. Type to find or create tags
 
-    :::image type="content" alt-text="Image of adding tags on a device1." source="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="Adding tags on device1" lightbox="images/create-new-tag.png":::
 
-Tags are added to the device view and will also be reflected on the **Devices list** view. You can then use the **Tags** filter to see the relevant list of devices.
+Tags are added to the device view and will also be reflected on the **Devices inventory** view. You can then use the **Tags** filter to see the relevant list of devices.
 
 > [!NOTE]
 > Filtering might not work on tag names that contain parenthesis.
@@ -66,7 +70,7 @@ Tags are added to the device view and will also be reflected on the **Devices li
 
 You can also delete tags from this view.
 
-:::image type="content" alt-text="Image of adding tags on a device2." source="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="images/new-tag-label-display.png":::
 
 ## Add device tags by setting a registry key value
 

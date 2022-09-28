@@ -2,7 +2,7 @@
 title: Investigate an IP address associated with an alert
 description: Use the investigation options to examine possible communication between devices and external IP addresses.
 keywords: investigate, investigation, IP address, alert, Microsoft Defender for Endpoint, external IP
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,12 +11,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.collection: m365-security
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate an IP address associated with a Microsoft Defender for Endpoint alert
@@ -77,7 +76,7 @@ Details about the IP address are displayed, including: registration details (if 
 
 Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all devices in the organization observed communicating with the IP address, the file associated with the communication and the last date observed.
 
-Clicking any of the device names will take you to that device's view, where you can continue investigate reported alerts, behaviors, and events.
+Clicking any of the device names will take you to that device's view, where you can continue to investigate reported alerts, behaviors, and events.
 
 ## Related topics
 

@@ -1,39 +1,39 @@
 ---
-title: "Search for content in a core eDiscovery case"
+title: "Search for content in a eDiscovery (Standard) case"
+description: "Search for content that may be relevant to a eDiscovery (Standard) case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Search for content that may be relevant to a Core eDiscovery case."
 ---
 
-# Search for content in a Core eDiscovery case
+# Search for content in a eDiscovery (Standard) case
 
-After a Core eDiscovery case is created and people of interest in the case are placed on hold, you can create and run one or more searches for content relevant to the case. Searches associated with a Core eDiscovery case aren't listed on the **Content search** page in the Microsoft 365 compliance center. These searches are listed on the **Searches** page of the Core eDiscover case the searches are associated with. This also means that searches associated with a case can only be accessed by case members.
+After a Microsoft Purview eDiscovery (Standard) case is created and people of interest in the case are placed on hold, you can create and run one or more searches for content relevant to the case. Searches associated with a eDiscovery (Standard) case aren't listed on the **Content search** page in the Microsoft Purview compliance portal. These searches are listed on the **Searches** page of the eDiscovery (Standard) case the searches are associated with. This also means that searches associated with a case can only be accessed by case members.
 
-To create a Core eDiscovery search:
+To create a eDiscovery (Standard) search:
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions and is a member of the case.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Core**.
+2. In the left navigation pane of the compliance portal, click **Show all**, and then click **eDiscovery > Core**.
 
-3. On the **Core eDiscovery** page, select the case that you want to create an associated search, and then click **Open case**.
+3. On the **eDiscovery (Standard)** page, select the case that you want to create an associated search, and then click **Open case**.
 
 4. On the **Home** page for the case, click the **Searches** tab, and then click **New search**.
 
-   ![Click New search to create a  Core eDiscovery search search.](../media/CoreeDiscoverySearch1.png)
+   ![Click New search to create a  eDiscovery (Standard) search search.](../media/CoreeDiscoverySearch1.png)
 
 5. In the **New search** wizard, type a name for the search, and an optional description that helps identify the search. The name of the search must be unique in your organization.
 

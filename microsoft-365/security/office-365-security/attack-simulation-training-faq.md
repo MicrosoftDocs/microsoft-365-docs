@@ -13,15 +13,20 @@ search.appverid:
   - MET150
   - MOE150
 ms.assetid:
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Attack simulation training deployment considerations and FAQ
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, de-weaponized phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
 
@@ -35,7 +40,7 @@ While the whole simulation creation and scheduling experience has been designed 
 
 A URL reputation service might identify one or more of the URLs that are used by Attack simulation training as unsafe. Google Safe Browsing in Google Chrome blocks some of the simulated phishing URLs with a **Deceptive site ahead** message. While we work with many URL reputation vendors to always allow our simulation URLs, we don't always have full coverage.
 
-![Deceptive site ahead warning in Google Chrome.](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="The Deceptive site ahead warning in Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 Note that this issue does not affect Microsoft Edge.
 
@@ -92,11 +97,11 @@ Every simulation campaign has a lifecycle. When first created, the simulation is
 
 While a simulation is in the **Scheduled** state, the simulation reports will be mostly empty. During this stage, the simulation engine is resolving the target user email addresses, expanding distribution groups, removing guest users from the list, etc.:
 
-![Simulation details showing the simulation in the Scheduled state.](../../media/attack-sim-training-faq-scheduled-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Simulation details showing the simulation in the Scheduled state" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
 Once the simulation enters the **In progress** stage, you will notice information starting to trickle into the reporting:
 
-![Simulation details showing the simulation in the In progress state.](../../media/attack-sim-training-faq-in-progress-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Simulation details showing the simulation in the In progress state" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
 It can take up to 30 minutes for the individual simulation reports to update after the transition to the **In progress** state. The report data continues to build until the simulation reaches the **Completed** state. Reporting updates occur at the following intervals:
 
@@ -124,6 +129,12 @@ If messages that users reported as phishing aren't captured in Attack simulation
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
 - not\_junk@office365.microsoft.com
+
+### Users are assigned training after they report a simulated message
+
+If users are assigned training after they report a phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **user submission policy**. When configuring a **custom mailbox**, this mailbox needs to be excluded from Safe Links and Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
+
+If your organization has a **custom mailbox** configured and has not set up the required exclusions, these messages may be detonated, causing training assignments.
 
 ## Other frequently asked questions
 
@@ -162,7 +173,7 @@ Note that the configuration change might take up to 30 minutes to synchronize ac
 
 A: Yes you can! On the very last **Review Simulation** page in the wizard to create a new simulation, there's an option to **Send a test**. This option will send a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
 
-![Send a test button on the Review simulation page.](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="The Send a test button on the Review simulation page" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### Q: Can I target users that belong to a different tenant as part of the same simulation campaign?
 
@@ -179,3 +190,8 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
 So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
+
+
+### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
+
+A: No. Any information entered at the credential harvest login page is discarded silently. Only the 'click' is recorded to capture the compromise event. Microsoft does not collect, log or store any details that users enter at this step.

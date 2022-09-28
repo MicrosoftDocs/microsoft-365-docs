@@ -6,11 +6,12 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
-ms.custom: admindeeplinkMAC
+ms.custom: 
+- admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
 description: "Set up SharePoint Syntex"
@@ -39,17 +40,25 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-If you plan to use a custom Power Platform environment, you must [install the *AI Builder for Project Cortex* app in this environment](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) and [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to it before you can create form processing models.
+### Custom Power Platform environments
+
+If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps.
+
+You also need to [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to the custom environment before you can create form processing models. 
+
+When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. See [Assign a security role to a user](/power-platform/admin/assign-security-roles) for more information.
+
+Users creating models in a [content center site](/microsoft-365/contentunderstanding/create-a-content-center) must be site members. Users creating models locally outside the content center must be site owners of those sites.
 
 ### Licensing
 
-To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have the following licenses assigned:
+To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have a licenses assigned. SharePoint Syntex licenses include the following apps, which must all be assigned:
 
 - SharePoint Syntex
 - SharePoint Syntex - SPO type
 - Common Data Service for SharePoint Syntex
 
-To use form processing, you also need AI Builder credits. If you have 300 or more licensed users, an allocation of AI Builder credits is provided each month.
+To use form processing, you also need AI Builder credits. For each licensed user of SharePoint Syntex, an allocation of AI Builder credits is provided each month.
 
 For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing](syntex-licensing.md)
 
@@ -87,7 +96,7 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
 
     Click **Next**.
 
-5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
+5. On the **Create Content Center** page, you can create a SharePoint content center site where your users can create and manage document understanding models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
 
     1. For **Site name**, type the name you want to give your content center site.
     

@@ -3,7 +3,7 @@ title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -29,17 +29,16 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-
 This article describes how to deploy Microsoft Defender for Endpoint on Linux manually. A successful deployment requires the completion of all of the following tasks:
 
-  - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
-  - [Configure the Linux software repository](#configure-the-linux-software-repository)
-    - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
-    - [SLES and variants](#sles-and-variants)
-    - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
-  - [Application installation](#application-installation)
-  - [Download the onboarding package](#download-the-onboarding-package)
-  - [Client configuration](#client-configuration)
+- [Prerequisites and system requirements](#prerequisites-and-system-requirements)
+- [Configure the Linux software repository](#configure-the-linux-software-repository)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [SLES and variants](#sles-and-variants)
+  - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
+- [Application installation](#application-installation)
+- [Download the onboarding package](#download-the-onboarding-package)
+- [Client configuration](#client-configuration)
 
 ## Prerequisites and system requirements
 
@@ -72,20 +71,16 @@ In order to preview new features and provide early feedback, it is recommended t
 
     Use the following table to help guide you in locating the package:
 
-    <br>
-
-    ****
-
     |Distro & version|Package|
     |---|---|
-    |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
     |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
-    In the following commands, replace *[version]* and *[channel]* with the information you've identified:
+    <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
+    In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
@@ -197,10 +192,10 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+	curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
     ```
 
-- Install the https driver if it's not already present:
+- Install the HTTPS driver if not already installed:
 
     ```bash
     sudo apt-get install apt-transport-https
@@ -299,7 +294,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux.png)
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft 365 Defender portal" lightbox="images/portal-onboarding-linux.png":::
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 
@@ -336,7 +331,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
     > [!NOTE]
     > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
-    
+
     If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
     ```bash
@@ -344,11 +339,11 @@ Download the onboarding package from Microsoft 365 Defender portal.
     ```
 
     For the rest of distros and versions, you will need to use `python`.
-    
+
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-    
+
 3. Verify that the device is now associated with your organization and reports a valid organization identifier:
 
     ```bash
@@ -377,9 +372,9 @@ Download the onboarding package from Microsoft 365 Defender portal.
         ```bash
         mdatp health --field real_time_protection_enabled
         ```
-        
+
       If it is not enabled, execute the following command:
-      
+
        ```bash
         mdatp config real-time-protection --value enabled
         ```
@@ -412,7 +407,7 @@ Alternatively, you can use an automated [installer bash script](https://github.c
 The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps.
 
 ```bash
-❯ ./mde_installer.sh --help
+> ./mde_installer.sh --help
 usage: basename ./mde_installer.sh [OPTIONS]
 Options:
 -c|--channel      specify the channel from which you want to install. Default: insiders-fast

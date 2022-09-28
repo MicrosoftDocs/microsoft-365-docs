@@ -1,33 +1,34 @@
 ---
-title: "Create, report on, and delete multiple Content Searches"
+title: "Create, report on, and delete Content Searches"
+description: "Learn how to automate Content Search tasks like creating searches and running reports using Security & Compliance PowerShell."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: "Learn how to automate Content Search tasks like creating searches and running reports using Security & Compliance Center PowerShell."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Create, report on, and delete multiple Content Searches
 
- Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, Security & Compliance Center PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
+ Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, Security & Compliance PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
 
 ## Before you create a Content Search
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the scripts that are described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the scripts that are described in this topic.
 
 - To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls).
 
@@ -70,9 +71,9 @@ The comma separated value (CSV) file that you create in this step contains a row
 
 3. Save the Excel file as a CSV file to a folder on your local computer. The script that you create in Step 3 will use the information in this CSV file to create the searches.
 
-## Step 2: Connect to Security & Compliance Center PowerShell
+## Step 2: Connect to Security & Compliance PowerShell
 
-The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+The next step is to connect to Security & Compliance PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 3: Run the script to create and start the searches
 

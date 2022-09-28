@@ -2,7 +2,7 @@
 title: Investigate Microsoft Defender for Endpoint alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, devices, device, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,11 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
   - m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate alerts in Microsoft Defender for Endpoint
@@ -47,7 +48,7 @@ Expand entities to view details at a glance. Selecting an entity will switch the
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
-![An example of an alert story with an alert in focus and some expanded cards.](images/alert-story-tree.png)
+:::image type="content" source="images/alert-story-tree.png" alt-text="an alert story with an alert in focus and some expanded cards" lightbox="images/alert-story-tree.png":::
 
 ## Take action from the details pane
 
@@ -57,17 +58,17 @@ Once you're done investigating, go back to the alert you started with, mark the 
 
 If you classify it as a true alert, you can also select a determination, as shown in the image below.
 
-![A snippet of the details pane with a resolved alert and the determination drop-down expanded.](images/alert-details-resolved-true.png)
+:::image type="content" source="images/alert-details-resolved-true.png" alt-text="The details pane with a resolved alert and the determination drop-down expanded" lightbox="images/alert-details-resolved-true.png":::
 
 If you are experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
 
-![actions and classification in the details pane with the suppression rule highlighted.](images/alert-false-suppression-rule.png)
+:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="The actions and classification in the details pane with the suppression rule highlighted" lightbox="images/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.
 
-
 ## Related topics
+
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
 - [Investigate a file associated with a Defender for Endpoint alert](investigate-files.md)
@@ -75,5 +76,3 @@ If you are experiencing a false alert with a line-of-business application, creat
 - [Investigate an IP address associated with a Defender for Endpoint alert](investigate-ip.md)
 - [Investigate a domain associated with a Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Defender for Endpoint](investigate-user.md)
-
-

@@ -4,10 +4,10 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
@@ -38,7 +38,7 @@ To plan for your tenant implementation:
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)
-- [Understand tenant isolation](/compliance/assurance/microsoft-365-isolation-controls)
+- [Understand tenant isolation](/compliance/assurance/assurance-microsoft-365-isolation-controls#tenant-isolation)
 
 ### Deploy
 
@@ -63,7 +63,7 @@ For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
 ## Manage multiple Microsoft 365 tenants 
 
-Although having a single tenant for your oganization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and aquisitions, you want administrative isolation, or you have a decentralized IT.
+Although having a single tenant for your organization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and acquisitions, you want administrative isolation, or you have a decentralized IT.
 
 If you have multiple Microsoft 365 tenants, see these articles for more information about:
 

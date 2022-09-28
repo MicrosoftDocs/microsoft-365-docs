@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to delete a former employee's user account."
+description: "After you've saved and accessed all of a former employee's user data, you can delete the former employee's account in the Microsoft 365 admin center."
 ---
 
 # Step 7 - Delete a former employee's user account
@@ -38,7 +38,7 @@ After you've saved and accessed all the former employee's user data, you can del
 2. Select the name of the employee that you want to delete.
 3. Under the user's name, select **Delete user**. Choose the options you want for this user, and then select **Delete user**. If you've already given another user access to this user's email and OneDrive, you don't have to do it again here.
 
-When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
+When you delete a user, the account becomes inactive for approximately 30 days. You've until then to restore the account before it's permanently deleted.
 
 ## Watch: Delete a former employee's user account
 
@@ -65,8 +65,8 @@ Here's information about how to get an employee out of email (Exchange).
 |What you can do|How you do it|
 |:-----|:-----|
 |Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
-|Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, (in the Exchange admin center or using PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, (in the Exchange admin center or using PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, in the Exchange admin center or using PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, in the Exchange admin center or using PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 The above operations can be done in three places:

@@ -2,7 +2,7 @@
 title: Grant access to managed security service provider (MSSP)
 description: Take the necessary steps to configure MSSP integration with the Microsoft Defender for Endpoint
 keywords: managed security service provider, mssp, configure, integration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Grant managed security service provider (MSSP) access (preview)
@@ -52,7 +53,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     To enable RBAC in the customer Microsoft 365 Defender portal, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
 
-    ![Image of MSSP access.](images/mssp-access.png)
+    :::image type="content" source="images/mssp-access.png" alt-text="MSSP access" lightbox="images/mssp-access.png":::
 
     Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via "Assigned user groups".
 
@@ -82,7 +83,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, we will call it **MSSP Accesses**.
 
-    ![Image of new catalog.](images/goverance-catalog.png)
+    :::image type="content" source="images/goverance-catalog.png" alt-text="The new catalog page" lightbox="images/goverance-catalog.png":::
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -98,7 +99,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
     - Access auto expires after 365 days
 
     > [!div class="mx-imgBorder"]
-    > ![Image of new access package.](images/new-access-package.png)
+    > :::image type="content" source="images/new-access-package.png" alt-text="The New access package page" lightbox="images/new-access-package.png":::
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -107,7 +108,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of access properties.](images/access-properties.png)
+    > :::image type="content" source="images/access-properties.png" alt-text="The Properties page" lightbox="images/access-properties.png":::
 
     The link is located on the overview page of each access package.
 

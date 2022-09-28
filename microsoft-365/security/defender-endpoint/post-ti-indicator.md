@@ -2,7 +2,7 @@
 title: Submit or Update Indicator API
 description: Learn how to use the Submit or Update Indicator API to submit or update a new Indicator entity in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, submit, ti, indicator, update
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Submit or Update Indicator API
@@ -83,6 +84,7 @@ expirationTime|DateTimeOffset|The expiration time of the indicator. **Optional**
 severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium", and "High". **Optional**
 recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
+educateUrl|String|Custom notification/support URL. Supported for Block and Warn action types for URL indicators. **Optional**
 generateAlert|Enum|**True** if alert generation is required, **False** if this indicator should not generate an alert.
 ## Response
 

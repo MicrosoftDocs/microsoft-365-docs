@@ -2,7 +2,7 @@
 title: Enable controlled folder access
 keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,9 +13,10 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.subservice: mde
+ms.collection: m365-security
 ms.date:
+search.appverid: met150
 ---
 
 # Enable controlled folder access
@@ -26,6 +27,10 @@ ms.date:
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -47,7 +52,7 @@ Group Policy settings that disable local administrator list merging will overrid
 - Microsoft Defender Antivirus **Configure local administrator merge behavior for lists**
 - System Center Endpoint Protection **Allow users to add exclusions and overrides**
 
-For more information about disabling local list merging, see [Prevent or allow users to locally modify Microsoft Defender AV policy settings](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
+For more information about disabling local list merging, see [Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
 ## Windows Security app
 
@@ -125,7 +130,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/wi
    - **Block disk modification only** - Attempts by untrusted apps to write to disk sectors will be logged in Windows Event log. These logs can be found in **Applications and Services Logs** \> Microsoft \> Windows \> Windows Defender \> Operational \> ID 1123.
    - **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Attempts to modify or delete files in protected folders won't be recorded.
 
-      ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down.](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="The group policy option Enabled and Audit Mode selected" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
 > To fully enable controlled folder access, you must set the Group Policy option to **Enabled** and select **Block** in the options drop-down menu.

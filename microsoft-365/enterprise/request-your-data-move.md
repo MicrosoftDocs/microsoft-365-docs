@@ -1,12 +1,12 @@
 ---
 title: "How to request your data move"
-ms.author: andyber
-author: andybergen
-manager: laurawi
-ms.date: 12/10/2019
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 > [!NOTE]
 > The information on this page only applies to customers who had existing Microsoft 365 tenants before the new datacenters in their datacenter geo opened. Migration eligibility also depends on the specific service provisioning date.  The tenant creation date may not always be the single date that matters.
   
-Eligible Microsoft 365 customers may request migration for their entire organization’s core customer data at rest.  The program supports requests for each country in the time period described in the table and from customers with an eligible signup country associated with their Microsoft 365 tenant.
+Eligible Microsoft 365 customers may request migration for their entire organization's core customer data at rest.  The program supports requests for each country in the time period described in the table and from customers with an eligible signup country associated with their Microsoft 365 tenant.
   
 ## When can I request a move?
 
@@ -41,7 +41,8 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 |Norway  | |Request period closed  |
 |Germany  | |Request period closed  |
 |Brazil  | |Request period closed  |
-|Sweden  |November 16, 2021  |May 31, 2022  |
+|Sweden  | |Request period closed  |
+|Qatar  |August 30, 2022  |February 28, 2023  |
 
 ## How to request a move
 
@@ -70,7 +71,7 @@ As of January 2020, customers in eligible Office 365 countries can opt-in for mi
 
 [Moving core data to new Office 365 datacenter geos](moving-data-to-new-datacenter-geos.md)
 
-[Data move general FAQ](data-move-faq.yml)
+[Data move general FAQ](data-move-faq.md)
 
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

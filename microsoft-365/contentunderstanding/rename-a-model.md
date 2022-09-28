@@ -6,13 +6,13 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to rename a model in Microsoft SharePoint Syntex.
+description: Learn how and why to rename a document understanding model in Microsoft SharePoint Syntex.
 ---
 
 # Rename a model in Microsoft SharePoint Syntex
@@ -48,7 +48,7 @@ Follow these steps to rename a document understanding model.
 
 5. Select **Rename**.
 
-## See Also
+## See also
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)

@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -27,7 +29,7 @@ description: "A list of labeling activities that are available in Activity explo
 This event is generated each time an unlabeled document is labeled or an email is sent with a sensitivity label.
 
 - It is captured at the time of save in Office native applications and web applications.
-- It is captured at the time of occurrence in Azure Information protection add-ins.
+- It is captured at the time of occurrence for the Azure Information Protection (AIP) unified labeling client.
 - Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter.
 
 |Source  |Reported in Activity explorer | Note  |
@@ -37,7 +39,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |SharePoint online, OneDrive|Yes | |
 |Exchange        |Yes         | |
 |Azure Information Protection (AIP) unified client and AIP unified scanner |Yes |The AIP *new label* action is mapped to *label applied* in Activity explorer   |
-|Microsoft information protection (MIP) SDK         |Yes|The AIP *new label* action is mapped to *label applied* in Activity explorer|
+|Microsoft Information Protection (MIP) SDK         |Yes|The AIP *new label* action is mapped to *label applied* in Activity explorer|
 |Rights Management Service (RMS)         |Not applicable         | |
 |Power BI desktop and web        | No| Accessible in the Microsoft 365 audit logs         |
 |Microsoft Defender for Cloud Apps         |No|         |
@@ -46,10 +48,10 @@ This event is generated each time an unlabeled document is labeled or an email i
 
 This event is generated each time a sensitivity label is updated on the document or email.
 
-- For the AIP Unified client, Unified Scanner and MIP SDK sources, the AIP *upgrade label* and *downgrade label* action maps to Activity explorer *label changed*
+- For the AIP unified client, AIP unified scanner and MIP SDK sources, the AIP *upgrade label* and *downgrade label* action maps to Activity explorer *label changed*
 
 - It is captured at the point of save in Office native applications and web applications.
-- It is captured at the time of occurrence in Azure Information protection unified client add-ins and scanner enforcements
+- It is captured at the time of occurrence for the AIP unified labeling client and scanner enforcements
 - Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter. The *justification* text is also captured except for SharePoint Online and OneDrive.
 - Sensitivity labeling done in Office native apps on Outlook collects the last action that was generated before file save/email send actions. For example, if the user changes label on an email multiple times before sending, the last label found on the email when it is sent is captured in the audit log and then reported in Activity explorer.
 
@@ -71,8 +73,8 @@ This event is generated each time a sensitivity label is updated on the document
 This event is generated each time a sensitivity label is removed from a file or document.
 
 - This event is captured at the time of save in Office native applications and web applications.
-- It is captured at the time of occurrence in Azure Information protection add-ins.
-- Sensitivity labeling, with Office native MIP label, on Outlook collects the last labeling event that was generated before file save/email send actions.
+- It is captured at the time of occurrence for the Azure Information Protection (AIP) unified labeling client.
+- Sensitivity labeling, with Office built-in labels, on Outlook collects the last labeling event that was generated before file save/email send actions.
 
 |Source  |Reported in Activity explorer | Note  |
 |---------|---------|---------|
@@ -106,7 +108,7 @@ This event is generated each time a sensitivity labeled or protected document is
 
 ## Files discovered
 
-This event is generated each time files are discovered when AIP Scanner is used for scanning sensitive data in various locations and finds files.
+This event is generated each time files are discovered when the AIP scanner is used for scanning sensitive data in various locations and finds files.
 
 |Source  |Reported in Activity explorer | Note  |
 |---------|---------|---------|

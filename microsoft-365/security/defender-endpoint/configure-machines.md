@@ -2,7 +2,7 @@
 title: Ensure your devices are configured properly
 description: Properly configure devices to boost overall resilience against threats and enhance your capability to detect and respond to attacks.
 keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Ensure your devices are configured properly
@@ -36,7 +37,7 @@ With properly configured devices, you can boost overall resilience against threa
 
 Click **Configuration management** from the navigation menu to open the Device configuration management page.
 
-![Security configuration management page.](images/secconmgmt_main.png)
+:::image type="content" source="images/secconmgmt_main.png" alt-text="The Security configuration management page" lightbox="images/secconmgmt_main.png":::
 
 *Device configuration management page*
 
@@ -72,7 +73,7 @@ If you have been assigned other roles, ensure you have the necessary permissions
 - Read permissions to device compliance policies
 - Read permissions to the organization
 
-![Required permissions on intune.](images/secconmgmt_intune_permissions.png)
+:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="The required permissions on intune" lightbox="images/secconmgmt_intune_permissions.png":::
 
 *Device configuration permissions on Intune*
 

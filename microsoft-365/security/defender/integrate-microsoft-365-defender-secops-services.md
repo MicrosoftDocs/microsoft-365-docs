@@ -3,25 +3,26 @@ title: Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog
 description: The basics of integrating Microsoft 365 Defender into your security operations catalog of services.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-m365dsecops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 
@@ -67,7 +68,7 @@ To integrate the capabilities of Microsoft 365 Defender, you will need to refine
 
 - [What is Microsoft Defender for Endpoint?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)
-- [What is Defender for Office 365?](/office-365-security/defender-for-office-365)
+- [What is Defender for Office 365?](/microsoft-365/security/defender/microsoft-365-defender)
 - [What is Microsoft Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)
 
 ## Next step

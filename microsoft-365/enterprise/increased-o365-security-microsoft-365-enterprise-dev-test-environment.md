@@ -4,17 +4,18 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 ms.custom: 
 - Ent_TLGs
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
+- admindeeplinkSPO
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to enable additional Microsoft 365 security settings your Microsoft 365 for enterprise test environment.
 ---
@@ -54,8 +55,8 @@ Apps that do not support modern authentication cannot have [identity and device 
   - If you are using the simulated enterprise Microsoft 365 test environment, use the [Azure portal](https://portal.azure.com) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.
  
 2. On the new **Microsoft 365 admin center** tab, under **Admin centers** in the left navigation pane, click **SharePoint**.
-3. On the new **SharePoint admin center** tab, click **Policies > Access control**.
-4. Click **Apps that don't support modern authentication**, select **Block access**, and then click **Save**.
+3. On the new **SharePoint admin center** tab, select **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Access control**</a>.
+4. Select **Apps that don't support modern authentication**, select **Block access**, and then select **Save**.
 
 
 ### Enable Defender for Office 365 for SharePoint, OneDrive for Business, and Microsoft Teams

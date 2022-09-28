@@ -1,8 +1,8 @@
-﻿---
+---
 title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate entities on devices using live response
@@ -23,7 +24,6 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -56,25 +56,22 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
-  
+  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84
+
    > [!NOTE]
    > Currently only Intel-based macOS systems are supported.
-    
 
-  - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
-    
+  - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13
+
   - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
-  
+
   - **Windows Server 2016** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-    
-  - **Windows Server 2022**
 
-       
+  - **Windows Server 2022**
 
 - **Enable live response from the advanced settings page**.
 
@@ -82,6 +79,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   > [!NOTE]
   > Only users with manage security or global admin roles can edit these settings.
+  >
+  > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
@@ -91,15 +90,17 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 - **Ensure that the device has an Automation Remediation level assigned to it**.
 
   You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+  > [!NOTE]
+  > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
 
   You'll receive the following error:
 
-  ![Image of error message.](images/live-response-error.png)
+  :::image type="content" source="images/live-response-error.png" alt-text="The error message" lightbox="images/live-response-error.png":::
 
 - **Enable live response unsigned script execution** (optional).
 
   >[!IMPORTANT]
-  >Signature verification only applies for PowerShell scripts. 
+  >Signature verification only applies for PowerShell scripts.
 
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
@@ -154,9 +155,6 @@ Depending on the role that's been granted to you, you can run basic or advanced 
 
 The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
-<br>
-
-****
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | cd  | Changes the current directory.  | Y  | Y  | Y  |
@@ -165,7 +163,7 @@ The following commands are available for user roles that are granted the ability
 | connections  | Shows all the active connections.  | Y  | N  | N  |
 | dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
 | drivers  | Shows all drivers installed on the device.  | Y  | N  | N  |
-| fg `<command ID>`  | Place the specified job in the foreground in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID  | Y  | Y  | Y  |
+| fg `<command ID>`  | Place the specified job in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID  | Y  | Y  | Y  |
 | fileinfo  | Get information about a file.  | Y  | Y  | Y  |
 | findfile  | Locates files by a given name on the device.  | Y  | Y  | Y  |
 | getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
@@ -184,10 +182,6 @@ The following commands are available for user roles that are granted the ability
 
 The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
-<br>
-
-****
-
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | analyze  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
@@ -197,10 +191,9 @@ The following commands are available for user roles that are granted the ability
 | run  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
 | library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
 | putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
-| remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
+| remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
 | scan | Runs an antivirus scan to help identify and remediate malware. | N | Y | Y |
 | undo  | Restores an entity that was remediated.  | Y  | Y  | Y  |
-
 
 ## Use live response commands
 
@@ -216,7 +209,7 @@ For scenarios when you'd like get a file from a device you're investigating, you
 > The following file size limits apply:
 >
 > - `getfile` limit: 3 GB
-> - `fileinfo` limit: 10 GB
+> - `fileinfo` limit: 30 GB
 > - `library` limit: 250 MB
 
 ### Download a file in the background
@@ -272,7 +265,7 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 ## Run a script
 
-Before you can run a PowerShell/Bash scripts, you must first upload it to the library.
+Before you can run a PowerShell/Bash script, you must first upload it to the library.
 
 After uploading the script to the library, use the `run` command to run the script.
 
@@ -346,11 +339,12 @@ Select the **Command log** tab to see the commands used on the device during a s
 
 - Live response sessions are limited to 25 live response sessions at a time.
 - Live response session inactive timeout value is 30 minutes.
+- Individual live response commands have a time limit of 10 minutes, with the exception of `getfile`, `findfile`, and `run`, which have a limit of 30 minutes.
 - A user can initiate up to 10 concurrent sessions.
 - A device can only be in one session at a time.
 - The following file size limits apply:
   - `getfile` limit: 3 GB
-  - `fileinfo` limit: 10 GB
+  - `fileinfo` limit: 30 GB
   - `library` limit: 250 MB
 
 ## Related article

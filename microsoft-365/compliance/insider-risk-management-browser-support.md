@@ -1,7 +1,7 @@
 ---
 title: Learn about and configure insider risk management browser signal detection
-description: Learn about insider risk management browser signal detection in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
+description: Learn about insider risk management browser signal detection in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -12,9 +12,11 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: 
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
+- tier1
 ---
 
 # Learn about and configure insider risk management browser signal detection
@@ -25,6 +27,7 @@ Web browsers are often used by users to access both sensitive and non-sensitive 
 - Files printed to local or network devices
 - Files transferred or copied to a network share
 - Files copied to USB devices
+- Browsing risky websites
 
 Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
 
@@ -36,6 +39,7 @@ The following table summarizes detected activities and extension support for eac
 | Files printed to local or network devices      | Native             | Extension         |
 | Files transferred or copied to a network share | Extension          | Extension         |
 | Files copied to USB devices                    | Extension          | Extension         |
+| Browsing risky websites                        | Extension          | Extension         |
 
 ## Common requirements
 
@@ -43,22 +47,26 @@ Before installing the Microsoft Edge add-on or Google Chrome extension, customer
 
 - Latest Windows 10 x64 build is recommended, minimum Windows 10 x64 build 1809 for signal detection support. Browser signal detection isn't currently supported on non-Windows devices.
 - Current [Microsoft 365 subscription](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) with insider risk management support.
-- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft 365 Compliance portal.
+- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft Purview compliance portal.
 
 For specific browser configuration requirements, see the Microsoft Edge and Google Chrome sections later in this article.
+
+## Additional requirements
+
+If you're using policies based on the *Risky browser usage* template, at least one *Browsing indicator* must be selected in **Insider risk management** > **Settings** > **Policy indicators**.
 
 ## Configure browser signal detection for Microsoft Edge
 
 ### Microsoft Edge browser requirements
 
 - Meet the common requirements
-- Microsoft Edge x64, 91.0.864.41 version or higher
-- *Microsoft Compliance Extension* add-on version 1.0.0.44 or higher
+- Latest Microsoft Edge x64, version (91.0.864.41 or higher)
+- Latest *Microsoft Compliance Extension* add-on (1.0.0.44 or higher)
 - Edge.exe is not configured as an unallowed browser
 
 ### Option 1: Basic setup (recommended for testing with Edge)
 
-Use this option to configure single machine selfhost for each device in your organization when testing browser signal detection.
+Use this option to configure a single machine selfhost for each device in your organization when testing browser signal detection.
 
 For the basic setup option, complete the following steps:
 
@@ -99,7 +107,7 @@ Devices must be manageable using Group Policies and all [Microsoft Edge Administ
 Complete the following steps to add the extension:
 
 1. In the **Group Policy Management Editor**, navigate to your Organizational Unit (OU).
-2. Expand the following path **Computer/User configuration** \> **Policies** \> **Administrative templates** \> **Classic administrative templates** \> **Microsoft Edge** \> **Extensions**. This path may vary depending on the configuration for your organization.
+2. Expand the following path **Computer/User configuration** \> **Policies** \> **Administrative templates** \> **Classic administrative templates** \> **Microsoft Edge** \> **Extensions**. This path may vary depending on the configuration of your organization.
 3. Select **Configure which extensions are installed silently.**
 4. Right-click and select **Edit**.
 5. Check the **Enabled** radio button.
@@ -115,7 +123,7 @@ Insider risk management browser signal detection support for Google Chrome is en
 
 - Meet common requirements
 - Latest version of Google Chrome x64
-- *Microsoft Compliance Extension* version 2.0.0.183 or higher
+- Latest *Microsoft Compliance Extension* version (2.0.0.183 or higher)
 - Chrome.exe is not configured as an unallowed browser
 
 ### Option 1: Basic setup (recommended for testing with Chrome)
@@ -178,7 +186,7 @@ Before adding the Microsoft DLP Chrome extension to the list of force installed 
 
     - OMA-URI: *./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist*
     - Data type: *String*
-    - Value: *\<enabled/\>\<data id=”ExtensionInstallForcelistDesc” value=”1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/\>*
+    - Value: *\<enabled/\>\<data id="ExtensionInstallForcelistDesc" value="1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/\>*
 
 9. Select **Create**.
 

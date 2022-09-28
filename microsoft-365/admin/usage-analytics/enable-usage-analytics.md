@@ -100,7 +100,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
+It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
 
 ## Related content
 

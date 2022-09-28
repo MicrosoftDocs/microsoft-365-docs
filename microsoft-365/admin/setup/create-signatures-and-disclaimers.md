@@ -10,10 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-may2020
@@ -31,10 +33,14 @@ description: "Manage email signatures, including legal disclaimers or disclosure
 
 # Create organization-wide signatures and disclaimers
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
  You can manage email signatures by adding an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
 ## Watch: Create a company-wide email signature
   
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198031).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.

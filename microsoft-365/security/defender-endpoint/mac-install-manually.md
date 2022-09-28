@@ -2,7 +2,7 @@
 title: Manual deployment for Microsoft Defender for Endpoint on macOS
 description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint on macOS
@@ -49,7 +50,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-macos.png)
+   :::image type="content" source="images/portal-onboarding-macos.png" alt-text="The options to download the installation and onboarding packages" lightbox="images/portal-onboarding-macos.png":::
 
 5. From a command prompt, verify that you have the two files.
 
@@ -59,20 +60,20 @@ To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot1.](images/mdatp-28-appinstall.png)
+   :::image type="content" source="images/mdatp-28-appinstall.png" alt-text="The installation of the application" lightbox="images/mdatp-28-appinstall.png":::
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-    ![App install screenshot2.](images/mdatp-29-appinstalllogin.png)
+   :::image type="content" source="images/mdatp-29-appinstalllogin.png" alt-text="The application installation" lightbox="images/mdatp-29-appinstalllogin.png":::
 
    > [!IMPORTANT]
    > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-   ![App install screenshot3.](images/mdatp-30-systemextension.png)
+     :::image type="content" source="images/mdatp-30-systemextension.png" alt-text="The application's installation" lightbox="images/mdatp-30-systemextension.png":::
 
 3. Select **Open Security Preferences** or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
-    ![Security and privacy window screenshot.](images/mdatp-31-securityprivacysettings.png)
+   :::image type="content" source="images/mdatp-31-securityprivacysettings.png" alt-text="The Security and privacy window" lightbox="images/mdatp-31-securityprivacysettings.png":::
 
    The installation proceeds.
 
@@ -88,31 +89,31 @@ To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot4.](images/monterey-install-1.png)
+   :::image type="content" source="images/monterey-install-1.png" alt-text="The installation process for the application" lightbox="images/monterey-install-1.png":::
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
 3. At the end of the installation process, you'll be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
-    ![System extension approval.](images/monterey-install-2.png)
+   :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval" lightbox="images/monterey-install-2.png":::
 
 4. From the **Security & Privacy** window, select **Allow**.
 
-    ![System extension security preferences1.](images/monterey-install-3.png)
+   :::image type="content" source="images/monterey-install-3.png" alt-text="The system extension security preferences1" lightbox="images/monterey-install-3.png":::
 
 5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
 6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft 365 Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
-    ![System extension security preferences2.](images/monterey-install-4.png)
+   :::image type="content" source="images/monterey-install-4.png" alt-text="The system extension security preferences2" lightbox="images/monterey-install-4.png":::
 
 7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
-    ![Full disk access.](images/monterey-install-5.png)
+   :::image type="content" source="images/monterey-install-5.png" alt-text="The full disk access" lightbox="images/monterey-install-5.png":::
 
 ## Client configuration
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint on macOS.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.sh to the device where you deploy Microsoft Defender for Endpoint on macOS.
 
     The client device isn't associated with org_id. Note that the *org_id* attribute is blank.
 
@@ -120,10 +121,10 @@ To complete this process, you must have admin privileges on the device.
     mdatp health --field org_id
     ```
 
-2. Run the Python script to install the configuration file:
+2. Run the Bash script to install the configuration file:
 
     ```bash
-    /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
+    Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. Verify that the device is now associated with your organization and reports a valid org ID:
@@ -135,7 +136,7 @@ To complete this process, you must have admin privileges on the device.
     After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Defender icon in status bar screenshot.](images/mdatp-icon-bar.png)
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The Microsoft Defender icon in status bar" lightbox="images/mdatp-icon-bar.png":::
 
 ## How to Allow Full Disk Access
 
@@ -212,7 +213,7 @@ To complete this process, you must have admin privileges on the device.
 
 12. Go to the Alert Queue.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Example of a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     Look at the alert details and the device timeline, and perform the regular investigation steps.
 

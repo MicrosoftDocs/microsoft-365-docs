@@ -18,7 +18,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage your mobile devices."
+description: "Basic Mobility and Security helps you secure and manage mobile devices with policies that control access to organization Microsoft 365 email and documents."
 ---
 
 # Capabilities of Basic Mobility and Security
@@ -27,25 +27,37 @@ Basic Mobility and Security can help you secure and manage mobile devices like i
 
 ## Supported operating systems
 
-Follow the Microsoft Intune operating systems guide for supported operating systems for devices using Basic Mobility and Security. For more info, see [Intune supported operating systems](/mem/intune/fundamentals/supported-devices-browsers).
+Follow the Microsoft Intune operating systems guide for the minimum supported operating systems for devices by Basic Mobility and Security. For more info, see [Intune supported operating systems](/mem/intune/fundamentals/supported-devices-browsers).
+
+You can use Basic Mobility and Security to secure and manage the following devices.
+
+- iOS
+- Android (including Samsung Knox)<sup>1</sup>
+- Windows<sup>2, 3</sup>
+
+<sup>1</sup>After June 2020, Android versions later than 9 can't manage password settings except on Samsung Knox devices.
+
+<sup>2</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
+
+<sup>3</sup>Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
 
 > [!NOTE]
 > Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.
 
-If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you might want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](manage-device-access-settings.md).
+If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you may want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](manage-device-access-settings.md).
 
 ## Access control for Microsoft 365 email and documents
 
 The supported apps for the different types of mobile devices in the following table prompt users to enroll in Basic Mobility and Security where there is a new mobile device management policy that applies to a user’s device and the user hasn’t previously enrolled the device. If a user’s device doesn’t comply with a policy, depending on how you set the policy up, a user might be blocked from accessing Microsoft 365 resources in these apps, or they might have access but Microsoft 365 reports a policy violation.
 
-|**Product**|**iOS 10.0 or later**|**Android 5.0 or later**|
-|:-----|:-----|:-----|
-|**Exchange** Exchange ActiveSync includes built-in email and third-party apps, like TouchDown, that use Exchange ActiveSync Version 14.1 or later. |Mail |Email |
-|**Office** and **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Office Mobile |
+|Product|iOS|Android|
+|---|---|---|
+|**Exchange** Exchange ActiveSync includes built-in email and third-party apps, like TouchDown, that use Exchange ActiveSync Version 14.1 or later.|Mail|Email|
+|**Office** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Office Mobile|
 
 > [!NOTE]
 >
-> - Support for iOS 10.0 and later versions includes iPhone and iPad devices.
+> - Support for iOS 10.0 and later versions includes iPhone and iPad devices.
 > - Management of BlackBerry OS devices isn’t supported by Basic Security and Mobility. Use BlackBerry Business Cloud Services (BBCS) from BlackBerry to manage BlackBerry OS devices. Blackberry devices running Android OS are supported as standard Android devices
 > - Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Office Online, or email in Outlook Web App.
 
@@ -54,11 +66,11 @@ The following diagram shows what happens when a user with a new device signs in 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Basic Mobility and Security access control.":::
 
 > [!NOTE]
-> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard will override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device will be ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard will override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device will be ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## Policy settings for mobile devices
 
-If you create a policy to block access with certain settings turned on, users are blocked from accessing Microsoft 365 resources when using a supported app that is listed in [Access control for Microsoft 365 email and documents](capabilities.md).
+If you create a policy to block access with certain settings turned on, users are blocked from accessing Microsoft 365 resources when using a supported app that is listed in [Access control for Microsoft 365 email and documents](capabilities.md).
 
 The settings that can block users from accessing Microsoft 365 resources are in these sections:
 
@@ -78,95 +90,99 @@ The following sections list the policy settings you can use to help secure and m
 
 ## Security settings
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Require a password|Yes|Yes|Yes|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Require a password|Yes|No|No|
 |Prevent simple password|Yes|No|No|
 |Require an alphanumeric password|Yes|No|No|
-|Minimum password length |Yes|Yes|Yes|
-|Number of sign-in failures before device is wiped |Yes|Yes|Yes|
-|Minutes of inactivity before device is locked |Yes|Yes|Yes|
-|Password expiration (days) |Yes|Yes|Yes|
-|Remember password history and prevent reuse |Yes|Yes|Yes|
+|Minimum password length|Yes|Yes|Yes|
+|Number of sign-in failures before device is wiped|Yes|Yes|Yes|
+|Minutes of inactivity before device is locked|Yes|Yes|Yes|
+|Password expiration (days)|Yes|Yes|Yes|
+|Remember password history and prevent reuse|Yes|Yes|Yes|
 
 ## Encryption settings
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Require data encryption on devices<sup>1</sup> |No|Yes|Yes|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Require data encryption on devices<sup>1</sup>|No|Yes|Yes|
 
 <sup>1</sup>With Samsung Knox, you can also require encryption on storage cards.
 
 ## Jail broken setting
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Device cannot be jail broken or rooted |Yes|Yes|Yes|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Device cannot be jail broken or rooted|Yes|Yes|Yes|
 
 ## Managed email profile option
 
 The following option can block users from accessing their Microsoft 365 email if they’re using a manually created email profile. Users on iOS devices must delete their manually created email profile before they can access their email. After they delete the profile, a new profile is automatically created on the device. For instructions on how end users can get compliant, see [An existing email account was found](/intune-user-help/existing-company-email-account-found).
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Email profile is managed |Yes|No|No|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Email profile is managed|Yes|No|No|
 
 ## Cloud settings
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Require encrypted backup |Yes|No|No|
-|Block cloud backup |Yes|No|No|
-|Block document synchronization |Yes|No|No|
-|Block photo synchronization  |Yes|No|No|
-|Allow Google backup  |N/A|No|Yes|
-|Allow Google account auto sync  |N/A|No|Yes|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Require encrypted backup|Yes|No|No|
+|Block cloud backup<sup>1</sup>|Yes|No|No|
+|Block document synchronization<sup>1</sup>|Yes|No|No|
+|Block photo synchronization|Yes|No|No|
+|Allow Google backup|N/A|No|Yes|
+|Allow Google account auto sync|N/A|No|Yes|
+
+<sup>1</sup>To function, these settings require supervised iOS devices. 
 
 ## System settings
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Block screen capture |Yes|No|Yes|
-|Block sending diagnostic data from device |Yes|No|Yes|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Block screen capture|Yes|No|Yes|
+|Block sending diagnostic data from device|Yes|No|Yes|
 
 ## Application settings
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Block video conferences on device |Yes|No|No|
-|Block access to application store |Yes|No|Yes|
-|Require password when accessing application store |No|Yes|Yes|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Block video conferences on device<sup>1</sup>|Yes|No|No|
+|Block access to application store<sup>1</sup>|Yes|No|Yes|
+|Require password when accessing application store|No|Yes|Yes|
+
+<sup>1</sup>To function, these settings require supervised iOS devices. 
 
 ## Device capabilities settings
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
-|:-----|:-----|:-----|:-----|
-|Block connection with removable storage |Yes|Yes|No|
-|Block Bluetooth connection |Yes|Yes|No|
+|Setting name|iOS|Android|Samsung Knox|
+|---|---|---|---|
+|Block connection with removable storage|No|No|Yes|
+|Block Bluetooth connection|No|No|Yes|
 
 ## Additional settings
 
-You can set the following additional policy settings by using Security & Compliance Center PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+You can set the following additional policy settings by using Security & Compliance PowerShell cmdlets. For more information, see [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
-|**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|
-|:-----|:-----|:-----|
+|Setting name|iOS|Android|
+|---|---|---|
 |CameraEnabled|Yes|Yes|
 |RegionRatings|Yes|No|
 |MoviesRatings|Yes|No|
-|TVShowsRating |Yes|No|
-|AppsRatings |Yes|No|
-|AllowVoiceDialing |Yes|No|
-|AllowVoiceAssistant |Yes|No|
-|AllowAssistantWhileLocked  |Yes|No|
-|AllowPassbookWhileLocked |Yes|No|
-|MaxPasswordGracePeriod |Yes|No|
-|PasswordQuality |No|Yes|
-|SystemSecurityTLS  |Yes|No|
-|WLANEnabled  |No|No|
+|TVShowsRating|Yes|No|
+|AppsRatings|Yes|No|
+|AllowVoiceDialing|Yes|No|
+|AllowVoiceAssistant|Yes|No|
+|AllowAssistantWhileLocked|Yes|No|
+|AllowPassbookWhileLocked|Yes|No|
+|MaxPasswordGracePeriod|Yes|No|
+|PasswordQuality|No|Yes|
+|SystemSecurityTLS|Yes|No|
+|WLANEnabled|No|No|
 
 ## Settings supported by Windows
 
-You can manage Windows 10 devices by enrolling them as mobile devices. After an applicable policy is deployed, users with Windows 10 devices will be required to enroll in Basic Mobility and Security the first time they use the built-in email app to access their Microsoft 365 email (requires Azure AD premium subscription).
+You can manage Windows 10 devices by enrolling them as mobile devices. After an applicable policy is deployed, users with Windows 10 devices will be required to enroll in Basic Mobility and Security the first time they use the built-in email app to access their Microsoft 365 email (requires Azure AD premium subscription).
 
 The following settings are supported for Windows 10 devices that are enrolled as mobile devices. These setting won’t block users from accessing Microsoft 365 resources.
 
@@ -213,9 +229,9 @@ You can set these additional policy settings by using PowerShell cmdlets:
 
 ## Remotely wipe a mobile device
 
-If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your Microsoft 365 organization resources by doing a wipe from Security & Compliance center > **Data loss prevention** > **Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
+If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your Microsoft 365 organization resources by doing a wipe from **Microsoft Purview compliance portal** > **Data loss prevention** > **Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
 
-For more information, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
+For more information, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
 ## Related content
 

@@ -3,7 +3,8 @@ title: Cancel machine action API
 description: Learn how to cancel an already launched machine action
 keywords: apis, graph api,
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,11 +15,8 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security
 ms.topic: article
-MS.technology: mde
 ms.custom: api
 ---
 
@@ -27,8 +25,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint)
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -40,7 +38,7 @@ ms.custom: api
 
 ## API description
 
-Cancel an already launched machine action that are not yet in final state (completed, canceled, failed).
+Cancel an already launched machine action that is not yet in final state (completed, canceled, failed).
 
 ## Limitations
 

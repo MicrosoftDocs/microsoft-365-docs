@@ -1,5 +1,5 @@
 ---
-title: "Get Access to Microsoft Bookings"
+title: "Get access to Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -13,17 +13,19 @@ description: "Learn how to get access to the Bookings feature in Microsoft 365."
 
 # Get access to Microsoft Bookings
 
-This topic describes how get access to Bookings for the first time. It also tells you how to turn on or off Bookings in your organization. It also explains how you can assign licenses to your users so they can access and use Bookings.
+This topic describes how to get access to Bookings for the first time. It also tells you how to turn on or off Bookings in your organization. It also explains how you can assign licenses to your users so they can access and use Bookings.
 
 ## Access Bookings for the first time
 
-If your IT administrator has granted you access to Bookings, you can access the app via Office online.
+If your IT administrator has granted you [access to Bookings](/microsoft-365/bookings/turn-bookings-on-or-off), you can access the app via Office online.
 
 The first time you use [Bookings](https://outlook.office.com/bookings/onboarding) you'll create a calendar and set up your business.
 
-1. Select **Get it now** and choose, **Add a booking calendar**. If this isn't your first time on this page, you can select another booking calendar or do a search for another booking calendar.
+1. Select **Get started**, enter your business name and business type, and then select **Create calendar**.
 
-2. Enter your business name and business type and select **Continue**.
+1. If this isn't your first time on this page, you can select another booking calendar or do a search for another booking calendar.
+
+1. Enter your business name and business type and select **Continue**.
 
 You're now ready to set up Bookings for your organization. You can get to the Bookings page with this [link](https://outlook.office.com/bookings/onboarding), from the app launcher or from office.com. Use the following topics to continue setting up your Bookings features.
 

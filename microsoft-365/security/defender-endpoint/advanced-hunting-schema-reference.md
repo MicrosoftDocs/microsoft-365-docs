@@ -2,7 +2,7 @@
 title: Advanced hunting schema reference
 description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on.
 keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, microsoft defender for endpoint, wdatp search, query, telemetry, schema reference, kusto, table, data
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.date: 01/14/2020
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Understand the advanced hunting schema in Microsoft Defender for Endpoint
@@ -36,14 +37,14 @@ While constructing queries, use the built-in schema reference to quickly get the
 
 - **Tables description**: Type of data contained in the table and the source of that data.
 - **Columns**: All the columns in the table.
-- **Action types**: Possible values in the `ActionType` column representing the event types supported by the table. This is provided only for tables that contain event information.
+- **Action types**: Possible values in the `ActionType` column representing the event types supported by the table. These values are provided only for tables that contain event information.
 - **Sample query**: Example queries that feature how the table can be utilized.
 
 ### Access the schema reference
 
 To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.
 
-![Image showing how to access in-portal schema reference.](images/ah-reference.png)
+:::image type="content" source="images/ah-reference.png" alt-text="The Advanced hunting page" lightbox="images/ah-reference.png":::
 
 ## Learn the schema tables
 
@@ -71,12 +72,12 @@ Table and column names are also listed within the Microsoft 365 Defender portal,
 |**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|Inventory of software installed on devices, including their version information and end-of-support status|
 |**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|Software vulnerabilities found on devices and the list of available security updates that address each vulnerability|
 |**[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)**|Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available|
-|**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|Threat & Vulnerability Management assessment events, indicating the status of various security configurations on devices|
-|**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|Knowledge base of various security configurations used by Threat & Vulnerability Management to assess devices; includes mappings to various standards and benchmarks|
+|**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|Microsoft Defender Vulnerability Management assessment events, indicating the status of various security configurations on devices|
+|**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|Knowledge base of various security configurations used by Defender Vulnerability Management to assess devices; includes mappings to various standards and benchmarks|
 |
 
 > [!TIP]
-> Use [advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Use [advanced hunting at Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
 Learn more about how to move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 

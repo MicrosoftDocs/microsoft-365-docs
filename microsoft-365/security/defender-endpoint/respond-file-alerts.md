@@ -2,7 +2,7 @@
 title: Take response actions on a file in Microsoft Defender for Endpoint
 description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Take response actions on a file
@@ -22,6 +23,8 @@ ms.technology: mde
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -44,17 +47,12 @@ You can also submit files for deep analysis, to run the file in a secure cloud s
 
 Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
 
-<br>
-
-****
-
 |Permission|PE files|Non-PE files|
 |---|:---:|:---:|
 |View data|X|X|
 |Alerts investigation|&#x2611;|X|
 |Live response basic|X|X|
 |Live response advanced|&#x2611;|&#x2611;|
-|
 
 For more information on roles, see [Create and manage roles for role-based access control](user-roles.md).
 
@@ -88,15 +86,15 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
-   ![Image of stop and quarantine file action.](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="The stop and quarantine file action" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. Specify a reason, then select **Confirm**.
 
-   ![Image of stop and quarantine file modal window.](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="The stop and quarantine file page" lightbox="images/atp-stop-quarantine.png":::
 
    The Action center shows the submission information:
 
-   ![Image of stop and quarantine file action center.](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="The stop and quarantine file action center" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **Submission time** - Shows when the action was submitted.
    - **Success** - Shows the number of devices where the file has been stopped and quarantined.
@@ -105,11 +103,11 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
-#### Notification on device user
+#### Notification on device userf
 
 When the file is being removed from a device, the following notification is shown:
 
-![Image of notification on device user.](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="The notification a on device user" lightbox="images/atp-notification-file.png":::
 
 In the device timeline, a new event is added for each device where a file was stopped and quarantined.
 
@@ -145,11 +143,11 @@ Selecting **Download file** from the response actions allows you to download a l
 
 By default, you should be able to download files that are in quarantine.
 
-![Image of download file action.](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
 
 ### Download quarantined files
 
-Files that have been quarantined by Microsoft Defender Antivirus or your security team will be saved in a compliant way according to your [sample submission configurations](enable-cloud-protection-microsoft-defender-antivirus.md). Your security team can download the files directly from the file’s detail page via the "Download file" button. **This preview feature is turned 'On' by default**.
+Files that have been quarantined by Microsoft Defender Antivirus or your security team will be saved in a compliant way according to your [sample submission configurations](enable-cloud-protection-microsoft-defender-antivirus.md). Your security team can download the files directly from the file's detail page via the "Download file" button. **This feature is turned 'On' by default**.
 
 The location depends on your organization's geo settings (either EU, UK, or US). A quarantined file will only be collected once per organization. Learn more about Microsoft's data protection from the Service Trust Portal at https://aka.ms/STP.
 
@@ -227,7 +225,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, such as submission date/time, submitting user, and if the action succeeded or failed.
 
-![Image of action center with information.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
 
 ## Deep analysis
 
@@ -251,10 +249,10 @@ Use the deep analysis feature to investigate the details of any file, usually du
 > [!NOTE]
 > Only files from Windows 10 and Windows 11 can be automatically collected.
 
-You can also submit a sample through the [Microsoft Security Center Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11), and wait for **Submit for deep analysis** button to become available.
+You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11), and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
+> Due to backend processing flows in the Microsoft 365 Defender Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
 ### Submit files for deep analysis
 
@@ -266,7 +264,7 @@ You can also submit a sample through the [Microsoft Security Center Portal](http
 
 2. In the **Deep analysis** tab of the file view, select **Submit**.
 
-   ![You can only submit PE files in the file details section.](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="The submit PE files button" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > Only PE files are supported, including _.exe_ and _.dll_ files.
@@ -290,7 +288,7 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Select the **Deep analysis** tab. If there are any previous reports, the report summary will appear in this tab.
 
-    ![The deep analysis report shows detailed information across a number of categories.](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="images/analysis-results-nothing500.png":::
 
 #### Troubleshoot deep analysis
 
@@ -315,7 +313,7 @@ If you come across a problem when trying to submit a file, try each of the follo
 
 5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
 
-6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
+6. If these steps do not resolve the issue, contact support.
 
 ## Related topics
 

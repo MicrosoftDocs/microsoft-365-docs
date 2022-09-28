@@ -1,22 +1,23 @@
 ---
 title: "Use the communications editor"
+description: Use the Communications Editor to change text and merge field variables when formatting your content.
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Use the Communications Editor to change text and merge field variables when formatting your content.
 ms.custom: seo-marvel-mar2020
 ---
 

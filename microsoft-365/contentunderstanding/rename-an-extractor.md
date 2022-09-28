@@ -6,7 +6,7 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -32,21 +32,21 @@ Follow these steps to rename an entity extractor.
 
 2. On the **Models** page, in the **Name** column, select the model for which you want to rename an extractor.
 
-3. Under **Entity extractors**, select the name of the extractor you want to rename, and then select **Rename**.</br>
+3. Under **Entity extractors**, select the name of the extractor you want to rename, and then select **Rename**.
 
-    ![Screenshot of the Entity extractors section showing a selected extractor with the Rename option highlighted.](../media/content-understanding/entity-extractor-rename.png) </br>
+    ![Screenshot of the Entity extractors section showing a selected extractor with the Rename option highlighted.](../media/content-understanding/entity-extractor-rename.png) 
 
 4. On the **Rename entity extractor** panel:
 
-   a. Under **New name**, enter the new name of the extractor.</br>
+   a. Under **New name**, enter the new name of the extractor.
 
-    ![Screenshot showing the Entity extractor panel.](../media/content-understanding/rename-entity-extractor-panel.png) </br>
+    ![Screenshot showing the Entity extractor panel.](../media/content-understanding/rename-entity-extractor-panel.png) 
 
    b. (Optional) Under **Advanced settings**, select whether you want to associate an existing site column.
 
 5. Select **Rename**.
 
-## See Also
+## See also
 [Create an extractor](create-an-extractor.md)
 
 [Create a classifier](create-a-classifier.md)

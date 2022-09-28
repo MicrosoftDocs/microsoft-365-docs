@@ -2,23 +2,24 @@
 title: "Connect your domain to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
-
 - Adm_O365_Setup
 search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn to verify your domain and create DNS records with Microsoft 365."
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 ---
 

@@ -2,8 +2,8 @@
 title: Manage partner relationships
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -14,15 +14,15 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
 ms.date: 02/04/2022
 ---
 
-# Manage partner relationships
+# Manage Microsoft-certified solution provider partner relationships
 
 You can work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 
@@ -40,7 +40,7 @@ There are several ways that a partner can work with you. Based on your stated bu
 
 | Partner type | Description |
 | ------ | ------------------- |
-| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) lets partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. |
+| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. |
 | Reseller | Partners who sell Microsoft products to your organization or school. |
 | Delegated administrator | Partners who manage products and services for your organization or school. In Azure Active Directory (AD), the partner is a Global Administrator for your tenant. This role lets them manage services like creating user accounts, assigning and managing licenses, and password resets. |
 | Reseller & delegated administrator | Partners who sell and manage Microsoft products and services to your organization or school. |
@@ -93,3 +93,5 @@ You can remove admin roles from a partner at any time. Removing the admin roles 
 3. Select the row that contains the name of the partner.
 4. On the partner page, select **Remove roles**.
 5. In the **Remove roles?** dialog box, select **Yes**.
+
+If you do not see the **Remove roles** option, contact the [Partner Center](https://partner.microsoft.com/support).

@@ -1,5 +1,7 @@
 - name: Microsoft 365 Lighthouse
-  items: 
+  items:
+    - name: What's new in Microsoft 365 Lighthouse
+      href: m365-lighthouse-whats-new.md
     - name: Overview of Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
     - name: Requirements for Microsoft 365 Lighthouse
@@ -12,6 +14,8 @@
   items: 
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md
+    - name: Overview of permissions
+      href: m365-lighthouse-overview-of-permissions.md
     - name: Review audit logs
       href: m365-lighthouse-review-audit-logs.md
 - name: Protect customers with baselines
@@ -22,43 +26,63 @@
       href: m365-lighthouse-deploy-baselines.md
 - name: Manage tenants
   items: 
-    - name: Tenants page overview
+    - name: Overview of the Tenants page
       href: m365-lighthouse-tenants-page-overview.md
+    - name: View your Azure AD roles across tenants
+      href: m365-lighthouse-view-your-roles.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
     - name: View tenant service health
       href: m365-lighthouse-view-service-health.md
 - name: Manage users within tenants
-  items: 
-    - name: Users page overview
+  items:
+    - name: Overview of the Users page
       href: m365-lighthouse-users-page-overview.md
     - name: Block user sign-in
       href: m365-lighthouse-block-user-signin.md
+    - name: Manage inactive users
+      href: m365-lighthouse-manage-inactive-users.md
     - name: Manage multifactor authentication
       href: m365-lighthouse-manage-mfa.md
     - name: Manage self-service password reset
       href: m365-lighthouse-manage-sspr.md
-    - name: Reset user password
+    - name: Reset a user password
       href: m365-lighthouse-reset-user-password.md
     - name: Search for users
       href: m365-lighthouse-search-for-users.md
+    - name: View and manage risky users
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: Manage devices
   items: 
-    - name: Device compliance page overview
+    - name: Overview of the Device compliance page
       href: m365-lighthouse-device-compliance-page-overview.md
     - name: Compare device compliance policy settings
       href: m365-lighthouse-compare-compliance-policies.md
-    - name: Windows 365 (Cloud PCs) page overview
+    - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
+    - name: Reprovision a Windows 365 Cloud PC
+      href: m365-lighthouse-reprovision-cloudpc.md
+    - name: Change a Windows 365 Cloud PC account type
+      href: m365-lighthouse-change-cloud-pc-account-type.md
+    - name: View an enterprise Cloud PC failed network connection
+      href: m365-lighthouse-view-failed-network-connections.md
 - name: Manage threats
   items:
-    - name: Threat management page overview
+    - name: Overview of the Threat management page
       href: m365-lighthouse-threat-management-page-overview.md
     - name: Mitigate threats with Microsoft Defender Antivirus
       href: m365-lighthouse-mitigate-threats.md
+    - name: Overview of the Device security page
+      href: m365-lighthouse-device-security-overview.md
+    - name: Overview of quarantined messages
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: Get help and support
   items: 
     - name: Get help and support
       href: m365-lighthouse-get-help-and-support.md
+    - name: Known issues
+      href: m365-lighthouse-known-issues.md
+    - name: Troubleshoot error messages and problems
+      href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml

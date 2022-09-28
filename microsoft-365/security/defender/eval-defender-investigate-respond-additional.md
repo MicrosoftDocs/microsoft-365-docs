@@ -4,25 +4,28 @@ description: Try incident response capabilities in Microsoft 365 Defender to pri
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Try Microsoft 365 Defender incident response capabilities in a pilot environment
@@ -46,7 +49,8 @@ Once you have performed an [incident response for a simulated attack](eval-defen
 
 You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents & alerts section in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
 
 The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
 
@@ -58,7 +62,7 @@ To examine the list of incidents and prioritize their importance for assignment 
 
 From the default incident queue, select **Filters** to see a **Filters** pane, from which you can specify a specific set of incidents. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="The Filters pane of the Incidents & alerts section in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 For more information, see [Prioritize incidents](incident-queue.md).
 
@@ -66,7 +70,7 @@ For more information, see [Prioritize incidents](incident-queue.md).
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Example of the Manage incident pane of an incident.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="The Manage incident pane of the Incidents & alerts section in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 You can display this pane from the **Manage incident** link on the:
 
@@ -107,11 +111,12 @@ Depending on how automated investigation and response capabilities are configure
 
 Here's an example.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The Unified Action center in the Microsoft 365 Defender portal" lightbox="../../media/m3d-action-center-unified.png":::
 
 From the Action center, you can select pending actions and then approve or reject them in the flyout pane. Here's an example.
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Approve or reject an action.":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="The pane displaying the options to approve or reject an action in the Microsoft 365 Defender portal" lightbox="../../media/air-actioncenter-itemselected.png":::
+
 
 Approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner.
 
@@ -149,7 +154,7 @@ There's a single internal mailbox and device required for this simulation. You'l
 
     b. Join the test device to the test domain.
 
-    c. [Turn on Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Turn on Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Microsoft Defender Antivirus, see [this troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Onboard to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -182,7 +187,7 @@ There's a single internal mailbox and device required for this simulation. You'l
       > [!NOTE]
       > See the next step for filtering options to limit data return.
 
-      ![Example of the advanced hunting query results.](../../media/advanced-hunting-incident-response-try-1.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="The Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
         > Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.
@@ -196,7 +201,7 @@ There's a single internal mailbox and device required for this simulation. You'l
 
    1. Click the resulting rows from the query so you can inspect the record.
 
-      ![Example of the inspect record side panel which opens up when an advanced hunting result is selected.](../../media/advanced-hunting-incident-response-try-2.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="The Inspect record section of the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
 4. Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this simulation, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add "| where **AttachmentCount > 0** and **EmailDirection** == **"Inbound""**
 
@@ -254,40 +259,41 @@ Custom detections will run the query according to the frequency you set, and the
 
 1. On the query page, remove lines 7 and 8 that were added in step 7 of the Go hunting instructions and click **Create detection rule**.
 
-   ![Example of where you can click create detection rule in the the advanced hunting page.](../../media/advanced-hunting-incident-response-try-3.png)
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="The Query editing section of the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
    > If you click **Create detection rule** and you have syntax errors in your query, your detection rule won't be saved. Double-check your query to ensure there's no errors.
 
 2. Fill in the required fields with the  information that will allow the security team to understand the alert, why it was generated, and what actions you expect them to take.
 
-   ![Example of the create detection rule page where you can define the alert details.](../../media/mtp/fig23.png)
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="The Alert details page in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig23.png":::
 
    Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert
 
 3. Select what entities are impacted in this alert. In this case, select **Device** and **Mailbox**.
 
-   ![Example of the create detection rule page where you can choose the parameters of the impacted entities.](../../media/mtp/fig24.png)
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="The Impacted entities details page in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig24.png":::
 
 4. Determine what actions should take place if the alert is triggered. In this case, run an antivirus scan, though other actions could be taken.
 
-   ![Example of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats.](../../media/mtp/fig25.png)
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="The Actions page in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig25.png":::
 
 5. Select the scope for the alert rule. Since this query involves devices, the device groups are relevant in this custom detection according to Microsoft Defender for Endpoint context. When creating a custom detection that does not include devices as impacted entities, scope does not apply.
 
-   ![Example of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you'll see.](../../media/mtp/fig26.png)
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="The Scope page in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig26.png":::
+
 
    For this pilot, you might want to limit this rule to a subset of testing devices in your production environment.
 
 6. Select **Create**. Then, select **Custom detection rules** from the navigation panel.
 
-   ![Example of Custom detection rules option in the menu.](../../media/mtp/fig27a.png)
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="The Custom detection rules rules option in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig27a.png":::
 
-   ![Example of the detection rules page which displays the rule and execution details.](../../media/mtp/fig27b.png)
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="The page displaying the detection rules and execution details in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig27b.png":::
 
    From this page, you can select the detection rule, which will open a details page.
 
-   ![Example of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on.](../../media/mtp/fig28.png)
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="The page displaying details of the triggered alerts in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig28.png":::
 
 
 ### Expert training on advanced hunting

@@ -6,15 +6,17 @@ summary: This solution and architecture center brings together the technical gui
 metadata:
   title: Microsoft 365 solution and architecture center # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This help center will enable you to learn about IT training and how to design the solution and architecture that is right for your organization. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: o365-solutions #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: o365-solutions
+ #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: 
+  - highpri
   - m365-security-compliance
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   manager: bcarter
   audience: ITPro
-  ms.date: 10/19/2021 #Required; mm/dd/yyyy format.
+  ms.date: 03/23/2022
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -106,7 +108,7 @@ landingContent:
             url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Auditing solutions
             url: ../compliance/auditing-solutions-overview.md
-          - text: Microsoft 365 Advanced eDiscovery
+          - text: eDiscovery (Premium)
             url: ../compliance/overview-ediscovery-20.md
       - linkListType: reference
         links:
@@ -138,12 +140,12 @@ landingContent:
             url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
           - text: Evaluate Microsoft 365 Defender
             url: ../security/defender-endpoint/deployment-phases.md
-          - text: Address false positives/negatives in Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
       - linkListType: how-to-guide
         links:
           - text: Switch from a non-Microsoft endpoint protection solution to Microsoft Defender for Endpoint
             url: ../security/defender-endpoint/switch-to-mde-overview.md
+          - text: Address false positives/negatives in Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
 
   # Card
   - title: Workload resources
@@ -166,8 +168,12 @@ landingContent:
             url: financial-services-secure-collaboration.md
           - text: Security and compliance for energy and utility services
             url: energy-secure-collaboration.md
-          - text: Teams for Healthcare
-            url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft 365 for frontline workers
+            url: ../frontline/flw-overview.md??bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft 365 for Healthcare
+            url: ../frontline/teams-in-hc.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft 365 for Retail
+            url: ../frontline/teams-for-retail-landing-page.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Teams for Education
             url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Teams for Government

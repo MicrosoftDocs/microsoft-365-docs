@@ -19,9 +19,15 @@ ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: "This article gives you information on managing settings for your users."
 ---
 
-# User email settings
+# User email settings in Microsoft 365
 
 As the admin of an organization, there are email settings you can manage on your users. This article gives you information on managing these settings.
+
+## Manage email settings
+
+1. Go to the admin center at <https://admin.microsoft.com>.
+2. Go to **Users** > **Active users** and select the user for whom you would like to manage email settings.
+3. In the new pane, select **Mail** to manage email settings.
 
 ## Summary of email settings
 

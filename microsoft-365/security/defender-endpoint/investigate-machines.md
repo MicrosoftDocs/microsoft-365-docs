@@ -2,7 +2,7 @@
 title: Investigate devices in the Defender for Endpoint Devices list
 description: Investigate affected devices by reviewing alerts, network connection information, adding device tags and groups, and checking the service health.
 keywords: devices, tags, groups, endpoint, alerts queue, alerts, device name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service health
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,11 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate devices in the Microsoft Defender for Endpoint Devices list
@@ -38,7 +37,6 @@ You can click on affected devices whenever you see them in the portal to open a 
 
 - [Devices list](investigate-machines.md)
 - [Alerts queue](alerts-queue.md)
-- [Security operations dashboard](security-operations-dashboard.md)
 - Any individual alert
 - Any individual file details view
 - Any IP address or domain details view
@@ -48,9 +46,10 @@ When you investigate a specific device, you'll see:
 - Device details
 - Response actions
 - Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
-- Cards (active alerts, logged on users, security assessment)
+- Cards (active alerts, logged on users, security assessment, device health status) 
+ 
 
-![Image of device view.](images/specific-device.png)
+:::image type="content" source="images/specific-device.png" alt-text="The device view" lightbox="images/specific-device.png":::
 
 > [!NOTE]
 > Due to product constrains, the device profile does not consider all cyber evidence when determining the 'Last Seen' timeframe (as seen on the device page as well).
@@ -88,13 +87,13 @@ The tabs provide relevant security and threat prevention information related to 
 
 The **Overview** tab displays the [cards](#cards) for active alerts, logged on users, and security assessment.
 
-![Image of overview tab on the device page.](images/overview-device.png)
+:::image type="content" source="images/overview-device.png" alt-text="The Overview tab on the device page" lightbox="images/overview-device.png":::
 
 ### Alerts
 
 The **Alerts** tab provides a list of alerts that are associated with the device. This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts.
 
-![Image of alerts related to the device.](images/alerts-device.png)
+:::image type="content" source="images/alerts-device.png" alt-text="The tab of the alerts related to the device" lightbox="images/alerts-device.png":::
 
 When the circle icon to the left of an alert is selected, a fly-out appears. From this panel you can manage the alert and view more details such as incident number and related devices. Multiple alerts can be selected at a time.
 
@@ -115,7 +114,7 @@ The timeline also enables you to selectively drill down into events that occurre
 > - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
 > - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
-![Image of device timeline with events.](images/timeline-device.png)
+:::image type="content" source="images/timeline-device.png" alt-text="The device timeline with events" lightbox="images/timeline-device.png":::
 
 Some of the functionality includes:
 
@@ -143,30 +142,30 @@ Select an event to view relevant details about that event. A panel displays to s
 
 To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query will return the selected event and the list of other events that occurred around the same time on the same endpoint.
 
-![Image of the event details panel.](images/event-details.png)
+:::image type="content" source="images/event-details.png" alt-text="The event details panel" lightbox="images/event-details.png":::
 
 ### Security recommendations
 
-**Security recommendations** are generated from Microsoft Defender for Endpoint's [Threat & Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
+**Security recommendations** are generated from Microsoft Defender for Endpoint's [Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
 
-![Image of security recommendations tab.](images/security-recommendations-device.png)
+:::image type="content" source="images/security-recommendations-device.png" alt-text="The Security recommendations tab" lightbox="images/security-recommendations-device.png":::
 
 ### Software inventory
 
 The **Software inventory** tab lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution. See [Software inventory](tvm-software-inventory.md) for details
 
-![Image of software inventory tab.](images/software-inventory-device.png)
+:::image type="content" source="images/software-inventory-device.png" alt-text="The Software inventory tab" lightbox="images/software-inventory-device.png":::
 
 ### Discovered vulnerabilities
 
 The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities will show a description and details.
 
-![Image of discovered vulnerabilities tab.](images/discovered-vulnerabilities-device.png)
+:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### Missing KBs
 The **Missing KBs** tab lists the missing security updates for the device.
 
-![Image of missing kbs tab.](images/missing-kbs-device.png)
+:::image type="content" source="images/missing-kbs-device.png" alt-text="The Missing KBs tab" lightbox="images/missing-kbs-device.png":::
 
 ## Cards
 
@@ -174,7 +173,7 @@ The **Missing KBs** tab lists the missing security updates for the device.
 
 The **Azure Advanced Threat Protection** card will display a high-level overview of alerts related to the device and their risk level, if you have enabled the Microsoft Defender for Identity feature, and there are any active alerts. More information is available in the "Alerts" drill down.
 
-![Image of active alerts card.](images/risk-level-small.png)
+:::image type="content" source="images/risk-level-small.png" alt-text="The active alerts card" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
 > You'll need to enable the integration on both Microsoft Defender for Identity and Defender for Endpoint to use this feature. In Defender for Endpoint, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
@@ -183,7 +182,7 @@ The **Azure Advanced Threat Protection** card will display a high-level overview
 
 The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
-![Image of user details pane.](images/logged-on-users.png)
+:::image type="content" source="images/logged-on-users.png" alt-text="The user details pane" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively.
@@ -193,7 +192,36 @@ The **Logged on users** card shows how many users have logged on in the past 30 
 
 The **Security assessments** card shows the overall exposure level, security recommendations, installed software, and discovered vulnerabilities. A device's exposure level is determined by the cumulative impact of its pending security recommendations.
 
-![Image of security assessments card.](images/security-assessments.png)
+:::image type="content" source="images/security-assessments.png" alt-text="The security assessments card" lightbox="images/security-assessments.png":::
+
+### Device health status
+
+The **Device health status** card shows a summarized health report for the specific device. One of the following messages is displayed at the top of the card to indicate the overall status of the device (listed in order of highest to lowest priority):
+
+- Defender Antivirus not active
+- Security intelligence is not up to date
+- Engine is not up to date
+- Quick scan failed
+- Full scan failed
+- Platform is not up to date
+- Security intelligence update status is unknown
+- Engine update status is unknown
+- Quick scan status is unknown
+- Full scan status is unknown
+- Platform update status is unknown
+- Device is up to date
+- Status not available for macOS & Linux
+
+Other information in the card include: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode. 
+
+Please note that a grey circle indicates that the data is unknown. 
+
+> [!NOTE]
+> The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms. 
+
+To gain an in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
+
+:::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
 
 ## Related topics
 

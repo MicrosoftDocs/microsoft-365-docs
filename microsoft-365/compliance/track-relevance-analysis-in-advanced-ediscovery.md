@@ -1,9 +1,10 @@
 ---
-title: "Track Relevance analysis in Advanced eDiscovery"
+title: "Track Relevance analysis in eDiscovery (Premium)"
+description: "Learn how to view and interpret the Relevance training status and results for case issues in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 
@@ -14,14 +15,16 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to view and interpret the Relevance training status and results for case issues in Advanced eDiscovery."
 ---
 
-# Track Relevance analysis in Advanced eDiscovery
+# Track Relevance analysis in eDiscovery (Premium)
   
-In Advanced eDiscovery, the Relevance Track tab displays the calculated validity of the Relevance training performed in the Tag tab and indicates the next step to take in the iterative training process in Relevance. 
+In Microsoft Purview eDiscovery (Premium), the Relevance Track tab displays the calculated validity of the Relevance training performed in the Tag tab and indicates the next step to take in the iterative training process in Relevance. 
   
 ## Tracking Relevance training status
 
@@ -54,7 +57,7 @@ In Advanced eDiscovery, the Relevance Track tab displays the calculated validity
 
 ### Reaching stable training levels
 
-After the assessment files have attained a stable level of training, Advanced eDiscovery is ready for Batch calculation.
+After the assessment files have attained a stable level of training, eDiscovery (Premium) is ready for Batch calculation.
   
 > [!NOTE]
 > Usually, after three stable training samples, the next step is "Batch calculation". There may be exceptions, for example, when there were changes to the tagging of files from earlier samples or when seed files were added. 
@@ -74,7 +77,7 @@ If you want to import new files after Batch calculation, the administrator can a
   
 ### Assessing tagging consistency
 
-If there are inconsistencies in file tagging, it can affect the analysis. The Advanced eDiscovery tagging consistency process can be used when results are not optimal or consistency is in doubt. A list of possible inconsistently tagged files is returned, and they can be reviewed and retagged, as necessary.
+If there are inconsistencies in file tagging, it can affect the analysis. The eDiscovery (Premium) tagging consistency process can be used when results are not optimal or consistency is in doubt. A list of possible inconsistently tagged files is returned, and they can be reviewed and retagged, as necessary.
   
 > [!NOTE]
 > After seven or more training rounds following assessment, tagging consistency can be viewed in **Relevance** \> **Track** \> **Issue** \> **Detailed results** \> **Training progress**. This review is done for one issue at a time.
@@ -103,11 +106,11 @@ In the **Relevance \> Track** tab, expand an issue's row, and next to **Detailed
   
 ### Keywords
 
-A keyword is a unique string, word, phrase, or sequence of words in a file identified by Advanced eDiscovery as a significant indicator of whether a file is relevant. The "Include" columns list keyword and weights in files tagged as Relevant, and the "Exclude" columns lists keywords and weights in files tagged as Not relevant.
+A keyword is a unique string, word, phrase, or sequence of words in a file identified by eDiscovery (Premium) as a significant indicator of whether a file is relevant. The "Include" columns list keyword and weights in files tagged as Relevant, and the "Exclude" columns lists keywords and weights in files tagged as Not relevant.
   
-Advanced eDiscovery assigns negative or positive keyword weight values. The higher the weight, the higher the likelihood that a file in which the keyword appears is assigned a higher Relevance score during Batch calculation.
+eDiscovery (Premium) assigns negative or positive keyword weight values. The higher the weight, the higher the likelihood that a file in which the keyword appears is assigned a higher Relevance score during Batch calculation.
   
-The Advanced eDiscovery list of keywords can be used to supplement a list built by an expert or as an indirect sanity check at any point in the file review process.
+The eDiscovery (Premium) list of keywords can be used to supplement a list built by an expert or as an indirect sanity check at any point in the file review process.
   
 ### Training progress
 
@@ -123,7 +126,7 @@ The **Training Progress** pane includes a training progress graph and quality in
 
 - **Warning**: Many files may be tagged inconsistently. (Red light displayed)
 
-**Training progress graph**: Shows the degree of Relevance training stability after many Relevance training cycles in comparison to the F-measure value. As we move from the left to the right across the graph, the confidence interval narrows and is used, along with the F-measure, by Advanced eDiscovery Relevance to determine stability when the Relevance training results are optimized.
+**Training progress graph**: Shows the degree of Relevance training stability after many Relevance training cycles in comparison to the F-measure value. As we move from the left to the right across the graph, the confidence interval narrows and is used, along with the F-measure, by eDiscovery (Premium) Relevance to determine stability when the Relevance training results are optimized.
   
 > [!NOTE]
 > Relevance uses F2, an F-measure metric where Recall receives twice as much weight as Precision. For cases with high richness (over 25%), Relevance uses F1 (1:1 ratio). The F-measure ratio can be configured in **Relevance setup** \> **Advanced settings**.
@@ -147,7 +150,7 @@ The **Batch calculation results** pane includes the number of files that were sc
   
 ### Training statistics
 
-The **Training statistics** pane displays statistics and graphs based on results from Advanced eDiscovery Relevance training. 
+The **Training statistics** pane displays statistics and graphs based on results from eDiscovery (Premium) Relevance training. 
   
 ![Relevance Track training statistics.](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   

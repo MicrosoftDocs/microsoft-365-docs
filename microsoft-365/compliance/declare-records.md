@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -36,7 +37,7 @@ You can then either publish those labels in a retention label policy so that use
 
 By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard. To display this option, you must first run a PowerShell command:
 
-1. [Connect to the Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connect to the Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Run the following cmdlet:
 
@@ -50,20 +51,25 @@ If you change your mind about seeing this option in the retention label wizard, 
 
 ## Configuring retention labels to declare records
 
-When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record. If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
+When you create a retention label from the **Records Management** solution in the Microsoft Purview compliance portal, you have the option to mark items as a record. If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
 
 For example:
 
-![Configure a retention label to mark content as a record or regulatory.](../media/recordversioning6.png)
+![Configure a retention label to mark content as a record or regulatory.](../media/declare-records.png)
 
 Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.
 
 For full instructions:
 
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)
 
+## Tenant setting for editing record properties
+
+If you'll use retention labels to declare items as records (rather than regulatory records) in SharePoint and OneDrive, consider whether you need to change the default tenant setting that allows users to edit the properties for a [locked record](record-versioning.md) when files are larger than 0 bytes.
+
+To change this default, go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
 
 ## Applying the configured retention label to content
 
@@ -90,4 +96,4 @@ For more information about searching for these events, see [Search the audit log
 
 ## Next steps
 
-For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios).
+Understand how you can use [record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).

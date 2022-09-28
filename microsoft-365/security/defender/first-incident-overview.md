@@ -3,25 +3,27 @@ title: Responding to your first incident
 description: The basics of responding to your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, self-study, ramp up, ramp-up, onboard, incident responder
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - m365solution-firstincident
+  - highpri
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Responding to your first incident
 
@@ -46,7 +48,7 @@ Incidents in Microsoft 365 Defender are the logical starting points for analysis
 
 ## Next step
 
-[![Prepare your organization and Microsoft 365 tenant.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="The Remediate option in Respond to your first incident page" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 Make sure your organization and Microsoft 365 tenant is [prepared for incident handling](first-incident-prepare.md).
 
@@ -58,7 +60,7 @@ Incident response guidance for Microsoft 365 Defender:
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
 
-Additional examples of first incident responses:
+More examples of first incident responses:
 
 - [Phishing email](first-incident-path-phishing.md)
 - [Identity-base attack](first-incident-path-identity.md)

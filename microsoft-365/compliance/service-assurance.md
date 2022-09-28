@@ -2,8 +2,8 @@
 title: "Service assurance in the Security & Compliance Center"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin

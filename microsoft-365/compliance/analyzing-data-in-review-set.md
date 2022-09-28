@@ -1,28 +1,28 @@
 ---
-title: "Analyze data in a review set in Advanced eDiscovery"
+title: "Analyze data in a review set in eDiscovery (Premium)"
+description: Learn about the tools available to organize document sets when analyzing an Microsoft Purview eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn about the tools available to organize document sets when analyzing an Advanced eDiscovery case.
 ms.custom: seo-marvel-mar2020
 ---
 
-# Analyze data in a review set in Advanced eDiscovery
+# Analyze data in a review set in eDiscovery (Premium)
 
-When the number of collected documents is large, it can be difficult to review them all. Advanced eDiscovery provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner. To learn more about these capabilities, see:
+When the number of collected documents is large, it can be difficult to review them all. Microsoft Purview eDiscovery (Premium) provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner. To learn more about these capabilities, see:
 
 - [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md)
 
@@ -68,10 +68,10 @@ The following list describes the result of the filter query in terms of what con
 
 - **Teams conversations**. All Teams (and Yammer) conversations in the review set are displayed.
 
-For more information about inclusive types and document uniqueness, see [Email threading in Advanced eDiscovery](email-threading-in-advanced-ediscovery.md).
+For more information about inclusive types and document uniqueness, see [Email threading in eDiscovery (Premium)](email-threading-in-advanced-ediscovery.md).
 
 > [!NOTE]
-> During the public preview of [the new case format](advanced-ediscovery-new-case-format.md) in Advanced eDiscovery, the **For Review** filter query did not return Teams or Yammer conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Yammer conversations are included.
+> During the public preview of [the new case format](advanced-ediscovery-new-case-format.md) in eDiscovery (Premium), the **For Review** filter query did not return Teams or Yammer conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Yammer conversations are included.
 
 ## Analytics report
 

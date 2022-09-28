@@ -27,27 +27,27 @@ To effectively turn off Basic Mobility and Security, you remove groups of people
 These options remove Basic Mobility and Security enforcement for devices in your organization. Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up.
 
 > [!IMPORTANT]
-> Be aware of the impact on users' devices when you remove user security groups from policies or remove the policies themselves. For example, email profiles and cached emails might be removed, depending on the device. For more info, see  [What happens when you delete a policy or remove a user from the policy?](../../admin/basic-mobility-security/create-device-security-policies.md)
+> Be aware of the impact on users' devices when you remove user security groups from policies or remove the policies themselves. For example, email profiles and cached emails might be removed, depending on the device. For more info, see [What happens when you delete a policy or remove a user from the policy?](../../admin/basic-mobility-security/create-device-security-policies.md)
 
 ## Remove user security groups from Basic Mobility and Security device policies
 
-1. In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. In your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. Select a device policy, and select **Edit policy**.
 
-3. On the  **Deployment**  page, select **Remove**.
+3. On the **Deployment** page, select **Remove**.
 
-4. Under  **Groups**, select a security group.
+4. Under **Groups**, select a security group.
 
-5. Select  **Remove**, and select **Save**.
+5. Select **Remove**, and select **Save**.
 
 ## Remove Basic Mobility and Security device policies
 
-1. In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. In your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
-2. Select a device policy, and then select  **Delete policy**.
+2. Select a device policy, and then select **Delete policy**.
 
-3. In the Warning dialog box, select **Yes**.
+3. In the Warning dialog box, select **Yes**.
 
 > [!NOTE]
-> For more steps to unblock devices if your organization devices are still in a blocked state,  see the blog post [Removing Access Control from Mobile Device Management for Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).
+> For more steps to unblock devices if your organization devices are still in a blocked state, see the blog post [Removing Access Control from Mobile Device Management for Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).

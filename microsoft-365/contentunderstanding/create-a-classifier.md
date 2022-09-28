@@ -6,11 +6,12 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
 description: Learn how to create a classifier in Microsoft SharePoint Syntex.
 ---
@@ -56,7 +57,7 @@ The first step to create your model is to give it a name:
 
 When you create a model, you are also creating a new site content type. A content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the [Content types gallery](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). For this example, when you create the model, you are creating a new *Contract Renewal* content type.
 
-Select **Advanced settings** if you want to map this model to an existing enterprise content type in the SharePoint Content types gallery to use its schema. Enterprise content types are stored in the Content Type Hub in the SharePoint admin center and are syndicated to all sites in the tenant. Note that while you can use an existing content type to leverage its schema to help with identification and classification, you still need to train your model to extract information from files it identifies.</br>
+Select **Advanced settings** if you want to map this model to an existing enterprise content type in the SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">Content type gallery</a> to use its schema. Enterprise content types are stored in the Content Type Hub in the SharePoint admin center and are syndicated to all sites in the tenant. Note that while you can use an existing content type to leverage its schema to help with identification and classification, you still need to train your model to extract information from files it identifies.</br>
 
 ![Advanced settings.](../media/content-understanding/advanced-settings.png)
 
@@ -140,7 +141,8 @@ If you received a match on your labeled sample files, you can now  test your mod
 
     ![Test of unlabeled files.](../media/content-understanding/test-on-files.png) 
 
-## See Also
+## See also
+
 [Create an extractor](create-an-extractor.md)
 
 [Document Understanding overview](document-understanding-overview.md)
