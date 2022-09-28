@@ -17,9 +17,9 @@ description: Learn more about phrase list, regular expression, and proximity exp
 
 # Explanation types in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-Explanations are used to help to define the information you want to label and extract in your **Classify and extract by text pattern** models in SharePoint Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
+Explanations are used to help to define the information you want to label and extract in your unstructured document processing models in SharePoint Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
 
 ![Screenshot of the Create an explanation panel showing the three explanation types.](../media/content-understanding/explanation-types.png)
 
