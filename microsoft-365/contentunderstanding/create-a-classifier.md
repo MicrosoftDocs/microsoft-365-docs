@@ -18,7 +18,7 @@ description: Learn how to create a classifier in Microsoft SharePoint Syntex.
 
 # Create a classifier in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 </br>
 
