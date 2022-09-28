@@ -15,7 +15,7 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

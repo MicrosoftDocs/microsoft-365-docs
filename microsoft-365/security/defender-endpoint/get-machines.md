@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150

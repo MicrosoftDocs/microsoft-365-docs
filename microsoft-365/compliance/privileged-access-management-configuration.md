@@ -15,8 +15,10 @@ search.appverid:
 - MET150
 ms.collection:
 - tier3
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ms.custom:
  - Ent_Solutions
  - seo-marvel-apr2020

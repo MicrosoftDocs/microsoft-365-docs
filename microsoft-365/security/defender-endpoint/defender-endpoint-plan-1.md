@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
 ---

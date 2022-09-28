@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150

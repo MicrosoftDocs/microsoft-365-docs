@@ -15,9 +15,10 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
  - SMB
- - M365-security-compliance
+ - m365-security
  - m365solution-mdb-setup
  - highpri
+ - tier1
 ---
 
 # View and edit security policies and settings in Microsoft Defender for Business

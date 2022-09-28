@@ -14,7 +14,7 @@ ms.date: 09/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 ms.topic: reference
 ms.subservice: mde
 ---

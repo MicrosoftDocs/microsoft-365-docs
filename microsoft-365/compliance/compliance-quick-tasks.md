@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - tier1
-- m365-security-compliance
+- purview-compliance
 ms.custom: 
 - admindeeplinkDEFENDER
 - intro-get-started

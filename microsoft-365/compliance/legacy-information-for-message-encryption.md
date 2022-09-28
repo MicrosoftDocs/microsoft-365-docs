@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC

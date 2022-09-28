@@ -14,7 +14,7 @@ manager: dansimp
 ms.subservice: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

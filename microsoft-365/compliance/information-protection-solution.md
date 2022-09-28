@@ -18,6 +18,7 @@ ms.collection:
 - m365solution-mip
 - tier1
 - zerotrust-solution
+- highpri
 description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 

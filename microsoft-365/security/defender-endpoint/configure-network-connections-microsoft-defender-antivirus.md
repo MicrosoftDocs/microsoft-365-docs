@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

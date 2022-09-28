@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde

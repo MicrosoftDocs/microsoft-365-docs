@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams

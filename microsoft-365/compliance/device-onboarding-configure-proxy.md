@@ -14,9 +14,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Configure device proxy and internet connection settings for Information Protection"
