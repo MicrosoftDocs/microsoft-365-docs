@@ -29,6 +29,7 @@ ms.subservice: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 All updates contain:
@@ -59,6 +60,8 @@ All updates contain:
 - Live Response improvements include reduced session creation latency when using proxies, an undo Remediation manual command, support for OneDrive share in FindFile action, and improved isolation and stability.
 - [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management) now provides the ability to sync the device configuration on demand instead of waiting for a specific cadence.
 
+ >[!NOTE] Update package KB5005292 is on a gradual rollout schedule through Windows Update. Towards the end of this schedule the package will be published completely including to the update catalog for manual download. For the current release, this will be in the second half of October. If you wish to test the package earlier, you can use [gradual rollout controls for platform updates](/microsoft-365/security/defender-endpoint/configure-updates) to select the Preview channel.
+  
 <br/>
 </details>
 
