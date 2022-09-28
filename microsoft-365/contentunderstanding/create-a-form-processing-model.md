@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to train a structured document processing model in SharePoint Syntex.
 ---
 
-# Train a structured document processing in Microsoft SharePoint Syntex
+# Train a structured document processing model in Microsoft SharePoint Syntex
 
 <!---
 </br>
