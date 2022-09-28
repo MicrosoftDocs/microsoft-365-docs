@@ -24,9 +24,6 @@ search.appverid:
 
 # Microsoft Purview Audit (Premium)
 
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
-
 The [Audit functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft Purview provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft Purview compliance portal and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
 
 > [!NOTE]
