@@ -103,7 +103,7 @@ For more information, see [Create documents using content assembly in SharePoint
 ## Advanced metadata search
 
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
    :::column-end:::
    :::column span="":::
