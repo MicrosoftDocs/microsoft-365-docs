@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-security
+- tier1
 ---
 
 # Microsoft 365 Lighthouse and Microsoft Defender for Business

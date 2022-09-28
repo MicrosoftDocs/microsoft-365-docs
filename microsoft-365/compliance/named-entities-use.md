@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
 ---
 

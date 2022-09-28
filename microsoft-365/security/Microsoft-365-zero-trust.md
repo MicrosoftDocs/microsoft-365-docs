@@ -19,6 +19,7 @@ ms.collection:
 - m365-security
 - zerotrust-solution
 - highpri
+- tier1
 ---
 
 # Microsoft 365 Zero Trust deployment plan

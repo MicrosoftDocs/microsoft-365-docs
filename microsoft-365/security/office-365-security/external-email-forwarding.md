@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 08/18/2022
 audience: ITPro
 ms.topic: overview
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid:
 ms.custom:

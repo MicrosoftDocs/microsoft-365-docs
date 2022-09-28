@@ -10,7 +10,8 @@ ms.topic: tutorial
 ms.localizationpriority: medium
 ms.service: microsoft-365-security
 ms.collection:
-- m365-security
+- M365-security-compliance
+- tier3
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW

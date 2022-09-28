@@ -14,6 +14,7 @@ ms.date: 08/11/2022
 ms.collection: 
 - SMB
 - m365-security
+- tier1
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ---
