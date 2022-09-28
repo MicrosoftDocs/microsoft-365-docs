@@ -25,11 +25,11 @@ Small and medium-sized businesses recognize security as a key component to their
 
 If you're a Microsoft partner, and you're working with customers who have or need [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you.
 
-- [Learn how you can integrate Microsoft endpoint security capabilities with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-capabilities-with-your-rmm-tools-and-psa-software).
+- [Learn how you can integrate Microsoft endpoint security with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software).
 - [See how you can use Microsoft 365 Lighthouse to secure and manage your customers' devices and data](#use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data).
 - [Learn more about Defender for Business and Microsoft 365 Business Premium](#learn-more-about-defender-for-business-and-microsoft-365-business-premium).
 
-## Integrate Microsoft endpoint security capabilities with your RMM tools and PSA software
+## Integrate Microsoft endpoint security with your RMM tools and PSA software
 
 If you're a Microsoft Managed Service Provider (MSP), you can integrate Microsoft endpoint security with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software so that you can: 
 
