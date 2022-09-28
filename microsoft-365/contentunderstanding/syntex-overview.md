@@ -87,7 +87,7 @@ For more information about custom and prebuilt models, see [Overview of model ty
 
 :::row:::
    :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/document-assembly-image.png) 
+      ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png) 
    :::column-end:::
    :::column span="3":::
       With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
@@ -130,7 +130,7 @@ For more information, see [Search for metadata in document libraries in SharePoi
 
 :::row:::
    :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/compliance-image.png) 
+      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png) 
    :::column-end:::
    :::column span="3":::
       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
@@ -147,7 +147,14 @@ For more information, see [Apply a retention label to a model in SharePoint Synt
 
 ## Scenarios and use cases
 
-SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
+:::row:::
+   :::column span="3":::
+      SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.    
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png)
+   :::column-end:::
+:::row-end:::
 
 To spark ideas about how you can use SharePoint Syntex in your organization, see [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md).
 <br><br>
