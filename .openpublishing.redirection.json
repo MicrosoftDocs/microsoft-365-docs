@@ -7889,6 +7889,11 @@
       "source_path": "microsoft-365/security/office-365-security/overview.md",
       "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mssp-list.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/professional-services",
+      "redirect_document_id": true
     }
     ]
   }
