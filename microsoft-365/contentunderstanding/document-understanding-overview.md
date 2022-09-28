@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the **Classify and extract by text pattern** model in Microsoft SharePoint Syntex.
+description: Learn about the unstructured document processing model in Microsoft SharePoint Syntex.
 ---
 
-# Overview of classification and extraction by text pattern in Microsoft SharePoint Syntex
+# Overview of unstructured document processing in Microsoft SharePoint Syntex
 
 <!---
 </br>
@@ -26,17 +26,17 @@ description: Learn about the **Classify and extract by text pattern** model in M
 </br>
 --->
 
-The **Classify and extract by text pattern** model is a custom model that uses artificial intelligence (AI) to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+The unstructured document processing model is a custom model that uses artificial intelligence (AI) to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
 > For more information about how to use SharePoint Syntex and scenario examples, see [Get started driving adoption of SharePoint Syntex](./adoption-getstarted.md) and [Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md).
 
-**Classify and extract by text pattern** models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
+Unstructured document processing models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
 > [!NOTE]
 > Read-only or sealed content types can't be updated, so they can't be used in a model.
 
-Add [classifiers](create-a-classifier.md) and [extractors](create-an-extractor.md) to your **Classify and extract by text pattern** models to do the following actions:
+Add [classifiers](create-a-classifier.md) and [extractors](create-an-extractor.md) to your unstructured document processing models to do the following actions:
 
 - Classifiers are used to identify and classify documents that are uploaded to the document library. For example, a classifier can be "trained" to identify all *contract renewal* documents that are uploaded to the library. The contract renewal content type is defined by you when you create your classifier.
 
