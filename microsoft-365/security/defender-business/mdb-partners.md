@@ -49,9 +49,9 @@ Integration can be done by using the [Defender for Endpoint APIs](../defender-en
 
 If you're a Microsoft Cloud Solution Provider (CSP) or MSP, you can use Microsoft 365 Lighthouse to help your customers manage their security settings and capabilities, and protect their data and devices. You can use Microsoft 365 Lighthouse to:
 
-- Manage customers' security settings and capabilities. 
-- View and manage detected threats.
-- Initiate antivirus scans on devices.
+- Manage your customers' security settings and capabilities. 
+- View and manage detected threats across your customers' tenants.
+- Initiate antivirus scans on customers' devices to keep them up to date and protected.
 
 | Resource | Description |
 |:---|:---|
