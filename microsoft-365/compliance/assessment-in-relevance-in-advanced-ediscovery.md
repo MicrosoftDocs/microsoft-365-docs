@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ---
 

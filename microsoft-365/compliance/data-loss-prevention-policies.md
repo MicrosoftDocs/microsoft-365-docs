@@ -15,10 +15,11 @@ ms.service: O365-seccomp
 ms.localizationpriority:  null
 ms.collection:
 - tier3
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom:

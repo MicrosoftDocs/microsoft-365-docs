@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020

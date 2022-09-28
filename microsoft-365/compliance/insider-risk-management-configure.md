@@ -14,8 +14,10 @@ audience: itpro
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 

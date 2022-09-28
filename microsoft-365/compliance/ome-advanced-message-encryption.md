@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 05/12/2022
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Advanced Message Encryption helps organizations meet their compliance obligations by enabling admins to do even more with protected messages."

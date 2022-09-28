@@ -12,9 +12,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- m365-security-compliance
+- purview-compliance
 - m365solution-audit
 - m365solution-overview
+- highpri
 - audit
 search.appverid:
 - MOE150

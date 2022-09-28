@@ -13,7 +13,7 @@ search.appverid:
   - MET150
   - MOE150
 ms.assetid:
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.

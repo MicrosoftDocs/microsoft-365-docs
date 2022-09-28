@@ -13,9 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-aed
 - m365solution-scenario
+- highpri
 - ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
