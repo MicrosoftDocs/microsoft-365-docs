@@ -1,5 +1,5 @@
 ---
-title: Technological Partners in Microsoft Defender for Endpoint
+title: Technological Partners of Microsoft Defender for Endpoint
 ms.reviewer:
 description: See the list of supported technological partners to enhance detection, investigation, and threat intelligence capabilities of the platform.
 keywords: partners, technological partner, applications, third-party, SIEM, threat intelligence, sentinel, 
@@ -18,7 +18,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Technological Partners in Microsoft Defender for Endpoint
+# Technological Partners of Microsoft Defender for Endpoint
 
 **Applies to:**
 
@@ -97,7 +97,7 @@ The following are the solution’s categories:
 | [Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=2201969) | Vectra | Vectra applies AI & security research to detect and respond to cyber-attacks in real time. |
 | [Blue Hexagon for Network](https://go.microsoft.com/fwlink/?linkid=2201780)| Blue Hexagon | Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection.|
 | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2201880)| CyberMDX | Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Microsoft Defender for Endpoint environment. |
-| [HYAS Protect](http://hyas%20protect/) | HYAS | HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect MDE endpoints from cyberattacks. |
+| [HYAS Protect](https://www.hyas.com/hyas-protect) | HYAS | HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect MDE endpoints from cyberattacks. |
 | [Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043) <br>| Better Mobile Security Inc.| Solution for Threat, Phishing and Privacy Protection and Simulation. |
 | [Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201965) | Skybox security| Global security posture management leader with solutions for vulnerability management and network security policy management. <br> |
 | [Open NDR](https://go.microsoft.com/fwlink/?linkid=2201964)| Corelight| Augment device inventory in Microsoft 365 Defender with network evidence for complete visibility. <br> |
