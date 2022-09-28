@@ -91,12 +91,12 @@ For more information about custom and prebuilt models, see [Overview of model ty
    :::column-end:::
    :::column span="3":::
       With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
+
+      This process lets you automatically generate standard repetitive
    :::column-end:::
 :::row-end:::
 
-With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
-
-This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
+ business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
 
 For more information, see [Create documents using content assembly in SharePoint Syntex](content-assembly.md).
 
