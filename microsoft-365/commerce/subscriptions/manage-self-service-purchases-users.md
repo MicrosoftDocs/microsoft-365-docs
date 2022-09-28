@@ -62,7 +62,7 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ### To assign licenses
 
-:: moniker range="o365-worldwide"
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 
@@ -82,7 +82,7 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ### To unassign licenses
 
-:: moniker range="o365-worldwide"
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 
