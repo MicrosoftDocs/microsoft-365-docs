@@ -16,9 +16,9 @@ manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
-ms.collection:
+ms.collection: 
 - m365-security
-- m365initiative-defender-endpoint
+- tier2
 ms.custom: FPFN
 ---
 
