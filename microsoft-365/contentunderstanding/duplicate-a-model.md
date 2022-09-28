@@ -17,9 +17,9 @@ description: Learn how and why to duplicate a model in Microsoft SharePoint Synt
 
 # Duplicate a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-Duplicating a **Classify and extract by text pattern** model can save you time and effort if you need to create a new model, and know that an existing model is very similar to what you need.
+Duplicating an unstructured document processing model can save you time and effort if you need to create a new model, and know that an existing model is very similar to what you need.
 
 For example, an existing model named “Contracts” classifies the same files you need to work with. Your new model will extract some of the existing data, but will need to be updated to extract some additional data. Instead of creating and training a new model from scratch, you can use the duplicate model feature to make a copy of the Contracts model, which will also copy all associated training items, such as example files and entity extractors.
 
@@ -27,7 +27,7 @@ When you duplicate the model, after you rename it (for example, to “Contract R
 
 ## Duplicate a model
 
-Follow these steps to duplicate a **Classify and extract by text pattern** model.
+Follow these steps to duplicate an unstructured document processingmodel.
 
 1. From the content center, select **Models** to see your models list.
 
