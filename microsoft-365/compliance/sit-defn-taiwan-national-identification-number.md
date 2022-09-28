@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier2
-- M365-security-compliance
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
