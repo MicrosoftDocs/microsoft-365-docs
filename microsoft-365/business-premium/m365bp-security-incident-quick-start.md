@@ -13,6 +13,9 @@ ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection:
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:

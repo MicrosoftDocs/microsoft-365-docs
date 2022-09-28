@@ -15,7 +15,7 @@ ms.custom:
   - next-gen
   - edr
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

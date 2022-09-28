@@ -11,8 +11,9 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
+- highpri
 - SPO_Content
 description: Learn how Microsoft Purview Data Lifecycle Management helps you keep what you need and delete what you don't.
 ---

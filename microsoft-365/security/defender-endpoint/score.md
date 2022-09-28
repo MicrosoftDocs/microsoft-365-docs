@@ -6,12 +6,12 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
@@ -43,6 +43,9 @@ Method|Return Type|Description
 [Get exposure score](get-exposure-score.md)|[Score](score.md)|Get the organizational exposure score.
 [Get device secure score](get-device-secure-score.md)|[Score](score.md)|Get the organizational device secure score.
 [List exposure score by device group](get-machine-group-exposure-score.md)|[Score](score.md)|List scores by device group.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## Properties
 

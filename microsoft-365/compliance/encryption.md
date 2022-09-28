@@ -15,10 +15,11 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: "With Office 365, your content is encrypted at rest and in transit with the strongest encryption, protocols, and technologies available. Get an overview of encryption in Office 365."
 ---
 

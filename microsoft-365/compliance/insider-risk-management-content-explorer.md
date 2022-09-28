@@ -13,7 +13,7 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ---
 
 # Insider risk management Content explorer

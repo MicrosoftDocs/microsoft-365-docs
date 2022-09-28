@@ -14,7 +14,9 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 recommendations: false
 description: "DLP policy component and configuration reference"

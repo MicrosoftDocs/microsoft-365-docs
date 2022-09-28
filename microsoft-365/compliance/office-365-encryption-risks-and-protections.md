@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020

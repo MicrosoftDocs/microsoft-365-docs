@@ -11,7 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
@@ -35,11 +35,11 @@ Using role-based access control (RBAC), you can create roles and groups within y
 
 Large geo-distributed security operations teams typically adopt a tier-based model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
-Tier|Description|
-:---|:---|
-Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
-Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.|
-Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.|
+|Tier |Description  |
+|---------|---------|
+|Tier 1    | **Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.        |
+|Tier 2    | **Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.        |
+|Tier 3     |**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.         |
 
 > [!NOTE]
 > For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft 365 Defender.  
@@ -50,6 +50,8 @@ Defender for Endpoint RBAC is designed to support your tier- or role-based model
   - Create custom roles and control what Defender for Endpoint capabilities they can access with granularity.
 - **Control who can see information on specific device group or groups**
   - [Create device groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
+    > [!NOTE]
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 

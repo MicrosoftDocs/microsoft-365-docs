@@ -12,6 +12,7 @@ description: Learn how to set up a 90-day Teams for frontline workers trial for 
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

@@ -11,7 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
@@ -34,7 +34,8 @@ You can configure Defender for Endpoint to send email notifications to specified
 If you're using [Defender for Business](../defender-business/mdb-overview.md), you can set up email notifications for specific users (not roles or groups).
 
 > [!NOTE]
-> Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
+> - Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts triggered after they're added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).
 

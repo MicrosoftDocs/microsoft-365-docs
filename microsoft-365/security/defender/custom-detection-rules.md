@@ -17,8 +17,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
+  - tier2
 ms.topic: article
 ---
 
@@ -122,9 +123,9 @@ With the query in the query editor, select **Create detection rule** and specify
 When you save a new rule, it runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
 
 - **Every 24 hours**—runs every 24 hours, checking data from the past 30 days
-- **Every 12 hours**—runs every 12 hours, checking data from the past 24 hours
-- **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
-- **Every hour**—runs hourly, checking data from the past 2 hours
+- **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
+- **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
+- **Every hour**—runs hourly, checking data from the past 4 hours
 
 When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 

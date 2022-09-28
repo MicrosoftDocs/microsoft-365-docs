@@ -129,6 +129,13 @@ Here are some ways to detect if your application may be impacted:
    The root of the certificate chain is not a trusted root authority.
    ```
 
+- If you use a Session Border Controller, Microsoft has prepared a testing endpoint that can be used to verify that SBC appliances trust certificates issued from the new Root CA. This endpoint should be used only for SIP OPTIONS ping messages and not for voice traffic.
+   ```
+   Global FQDN: sip.mspki.pstnhub.microsoft.com 
+   Port: 5061
+   ```
+   If this does not operate normally, please contact your device manufacturer to determine if updates are available to support the new Root CA. 
+
 ## When can I retire the old CA information?
 
 The current Root CA, Intermediate CA, and leaf certificates will not be revoked. The existing CA Common Names and/or thumbprints will be required through at least October 2023 based on the lifetime of existing certificates.

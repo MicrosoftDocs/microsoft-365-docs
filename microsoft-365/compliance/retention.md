@@ -11,8 +11,9 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
+- highpri
 - SPO_Content
 search.appverid:
 - MOE150
@@ -261,6 +262,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
+|Run a Power Automate flow at the end of the retention period | No | Yes|
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when you use disposition review or item is marked a record|
 |Audit admin activities| Yes | Yes|

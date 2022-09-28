@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -28,6 +28,9 @@ search.appverid: met150
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 Set up the device groups similar to Group policy  organizational unite (OUs), Microsoft Endpoint Configuration Manager's device collection, and Intune's device groups.
 

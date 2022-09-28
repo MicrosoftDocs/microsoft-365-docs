@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - audit
 ms.custom: seo-marvel-apr2020
 ---

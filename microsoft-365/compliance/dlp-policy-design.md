@@ -11,7 +11,9 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to design a data loss prevention (DLP) policy"
@@ -69,6 +71,26 @@ This example doesn't cover all the configuration points of a DLP policy, it woul
 
 > [!IMPORTANT]
 > Keep in mind that the location(s) you pick impact whether you can use sensitive information types, sensitivity labels and retention labels as well as the actions that are available. See, [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference).
+
+### Complex rule design (preview)
+
+The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP policy. The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. Here's a video that shows how you'd map two complex policy intent statements to policies in the rule builder.
+
+- *Example 1 We need to block emails to all recipients that contain credit card numbers, OR that have the 'highly confidential' sensitivity label applied, but do NOT block the email if it is sent from someone on the finance team to adele.vance@contoso.com*
+
+- *Example 2 Contoso needs to block all emails that contain a password protected file OR a zip document file extension ('zip' or '7z'), but do NOT block the email if the recipient is in the contoso.com domain OR the fabrikam.com domain, OR the sender is a member of the Contoso HR group.*
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE55JXJ]
+
+> [!IMPORTANT]
+> - The use of the NOT condition in a nested group replaces the **Exceptions** functionality.
+> - You need to create groups in order to use multiple operators as shown in the video.
+
+
+> [!IMPORTANT]
+> When an action in Office desktop client apps, (Word, Outlook, Excel, and PowerPoint) matches a policy that uses complex conditions, the user will only see policy tips for rules that use the **Content contains sensitive information** condition.
+
 
 ## Policy Design Process
 

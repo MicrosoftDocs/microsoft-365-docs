@@ -12,7 +12,10 @@ ms.service: O365-seccomp
 ms.collection:
 - highpri 
 - tier2
-- M365-security-compliance
+- purview-compliance
+- m365solution-mip
+- m365initiative-compliance
+- highpri
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
