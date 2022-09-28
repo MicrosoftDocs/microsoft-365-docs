@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Learn how to integrate automated investigation and response with a custom or third-party reporting solution.
 ms.date: 01/29/2021

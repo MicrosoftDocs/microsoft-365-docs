@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 description: Learn about encryption available in Azure, such as Azure Disk Encryption
 ms.custom: seo-marvel-apr2020

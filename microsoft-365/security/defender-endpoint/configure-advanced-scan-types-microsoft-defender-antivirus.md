@@ -14,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.date: 12/03/2021
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: how-to
 search.appverid: met150
 ---

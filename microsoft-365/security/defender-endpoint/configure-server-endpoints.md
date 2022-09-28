@@ -15,7 +15,7 @@ ms.date: 09/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde

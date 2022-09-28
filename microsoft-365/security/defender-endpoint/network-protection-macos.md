@@ -17,7 +17,7 @@ ms.subservice: mde
 ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
 ms.date:
 search.appverid: met150
 ---

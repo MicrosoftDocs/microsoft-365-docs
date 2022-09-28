@@ -13,6 +13,7 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-manufacturing
   - m365-frontline
+  - highpri
   - m365solution-manufacturing
   - m365solution-overview
   - highpri

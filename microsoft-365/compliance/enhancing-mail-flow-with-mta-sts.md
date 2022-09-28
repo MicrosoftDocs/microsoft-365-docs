@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high 
 ms.assetid: 
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri
