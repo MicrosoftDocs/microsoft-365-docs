@@ -128,9 +128,22 @@ For more information, see [Search for metadata in document libraries in SharePoi
 
 ## Content compliance
 
+:::row:::
+   :::column span="":::
+      ![Image of generic search icon.](../media/content-understanding/compliance-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+   :::column-end:::
+:::row-end:::
+
+For more information, see [Apply a retention label to a model in SharePoint Syntex](apply-a-retention-label-to-a-model.md) and [Apply a sensitivity label to a model in Microsoft SharePoint Syntex](apply-a-sensitivity-label-to-a-model.md).
+
+<!---
 Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. SharePoint Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
 
 For more information, see [Apply a retention label to a model in SharePoint Syntex](apply-a-retention-label-to-a-model.md) and [Apply a sensitivity label to a model in Microsoft SharePoint Syntex](apply-a-sensitivity-label-to-a-model.md).
+--->
 
 ## Scenarios and use cases
 
