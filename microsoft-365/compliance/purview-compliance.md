@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - tier1
-- m365-security-compliance
+- purview-compliance
 ---
 
 # Microsoft Purview risk and compliance solutions

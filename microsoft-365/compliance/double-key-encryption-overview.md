@@ -12,7 +12,7 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 
 ---
 

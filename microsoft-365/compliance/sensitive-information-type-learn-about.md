@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
 ---
 

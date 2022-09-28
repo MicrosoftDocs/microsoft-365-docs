@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 07/21/2022
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - audit
 search.appverid:
 - MET150

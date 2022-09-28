@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 description: Learn how to create a sensitive information type policy for your organization using Office 365 Message Encryption.
 ms.custom: 
