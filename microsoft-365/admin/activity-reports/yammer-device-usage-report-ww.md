@@ -60,5 +60,5 @@ The **Yammer device usage** report can be viewed for trends over the last 7 days
 |Android phone  <br/> |Indicates if the user has used Yammer on an Android phone. <br/>|
 |iphone <br/> | Indicates if the user has used Yammer on an iPhone.  <br/> |
 |ipad  <br/> |Indicates if the user has used Yammer on an iPad. <br/>|
-|other  <br/> |Indicates if the user has used Yammer on another device, not listed previously. <br/>|
+|other  <br/> |Indicates if the user has used Yammer on another client, not listed previously. This includes Yammer Embed, SharePoint Web Part, Viva Engage, and select Outlook emails.  <br/>|
 |||
