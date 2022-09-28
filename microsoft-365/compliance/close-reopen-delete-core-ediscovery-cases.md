@@ -1,5 +1,6 @@
 ---
 title: "Close, reopen, and delete eDiscovery (Standard) cases"
+description: "This article describes how to manage eDiscovery (Standard) cases. This includes closing a case, reopening a closed case, and deleting a case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,14 +10,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to manage eDiscovery (Standard) cases. This includes closing a case, reopening a closed case, and deleting a case."
 ---
 
 # Close, reopen, and delete a eDiscovery (Standard) case

@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
 ms.custom:
 ms.subservice: mdo

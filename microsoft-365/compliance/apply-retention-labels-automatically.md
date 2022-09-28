@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -263,6 +264,9 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 ```
 
 #### Auto-apply labels to content by using trainable classifiers
+
+> [!IMPORTANT]
+> Currently, trainable classifiers for auto-labeling can't be used with [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention). Use a static scope instead.
 
 When you choose the option for a trainable classifier, you can select one or more of the pre-trained or custom trainable classifiers:
 

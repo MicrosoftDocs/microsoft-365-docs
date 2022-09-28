@@ -1,5 +1,6 @@
 ---
 title: Themes in eDiscovery (Premium)
+description: "Use Themes in eDiscovery (Premium) to organize review sets by finding the dominant theme in each document."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,12 +11,13 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Use Themes in eDiscovery (Premium) to organize review sets by finding the dominant theme in each document."
 ms.custom: seo-marvel-mar2020
 ---
 

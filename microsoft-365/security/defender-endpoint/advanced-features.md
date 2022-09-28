@@ -11,7 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
@@ -72,7 +72,9 @@ Turn on this feature so that potentially unwanted applications (PUA) are remedia
 This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross-device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
 
 > [!NOTE]
-> Changing this setting impacts future alert correlations only.
+> - Changing this setting impacts future alert correlations only.
+>
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Enable EDR in block mode
 

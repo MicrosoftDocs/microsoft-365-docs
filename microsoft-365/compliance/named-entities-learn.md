@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: "Learn how named entities help you detect sensitive items containing names of people, physical addresses, and medical terms via data loss prevention policies"
 ---
 

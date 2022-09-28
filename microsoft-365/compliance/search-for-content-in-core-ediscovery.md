@@ -1,5 +1,6 @@
 ---
 title: "Search for content in a eDiscovery (Standard) case"
+description: "Search for content that may be relevant to a eDiscovery (Standard) case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,14 +10,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Search for content that may be relevant to a eDiscovery (Standard) case."
 ---
 
 # Search for content in a eDiscovery (Standard) case

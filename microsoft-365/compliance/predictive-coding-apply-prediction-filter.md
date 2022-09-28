@@ -1,5 +1,6 @@
 ---
 title: "Apply the prediction score filter to a review set"
+description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Apply a prediction score filter to a review set (preview)

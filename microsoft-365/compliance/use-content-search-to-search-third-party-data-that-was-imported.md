@@ -1,5 +1,6 @@
 ---
 title: "Use Content Search to search third-party imported data"
+description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,13 +10,14 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
 ms.custom: seo-marvel-apr2020
 ---
 

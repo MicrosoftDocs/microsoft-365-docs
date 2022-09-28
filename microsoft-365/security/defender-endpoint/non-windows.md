@@ -13,8 +13,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-evalutatemtp
+  - highpri
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150

@@ -1,5 +1,6 @@
 ---
 title: "Search the audit log in the Microsoft Purview compliance portal"
+description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkMAC

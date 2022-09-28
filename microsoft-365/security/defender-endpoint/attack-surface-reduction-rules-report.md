@@ -15,7 +15,7 @@ ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.date: 08/25/2022
 search.appverid: met150
 ---
@@ -283,5 +283,10 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 
 ## See also
 
-- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)

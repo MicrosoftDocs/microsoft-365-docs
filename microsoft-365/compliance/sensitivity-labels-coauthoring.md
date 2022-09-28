@@ -10,7 +10,8 @@ ms.service: O365-seccomp
 ms.date: 
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 description: "Turn on a setting that enables co-authoring and AutoSave in desktop apps for labeled and encrypted documents in SharePoint and OneDrive."
 ---

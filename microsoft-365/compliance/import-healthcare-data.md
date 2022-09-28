@@ -1,5 +1,6 @@
 ---
 title: "Set up a connector to import generic healthcare audit data"
+description: "Administrators can set up a data connector to import electronic healthcare records (EHR) data from their healthcare system to Microsoft 365. This lets you use EHR data in insider risk management policies to help you detect unauthorized access activity to patient data by your employees."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Administrators can set up a data connector to import electronic healthcare records (EHR) data from their healthcare system to Microsoft 365. This lets you use EHR data in insider risk management policies to help you detect unauthorized access activity to patient data by your employees."
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to import healthcare EHR audit data (preview)

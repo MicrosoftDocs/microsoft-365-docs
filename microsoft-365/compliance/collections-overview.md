@@ -1,5 +1,6 @@
 ---
 title: "Overview of collections in eDiscovery (Premium)"
+description: "Use collections in eDiscovery (Premium) to search for and collect content that's relative to your case or investigation." 
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,11 +12,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Use collections in eDiscovery (Premium) to search for and collect content that's relative to your case or investigation." 
+
 ---
 
 # Learn about collections in eDiscovery (Premium)

@@ -1,5 +1,6 @@
 ---
 title: "Use drive shipping to import PST files"
+description: Admin can learn how to bulk-import PST files to Microsoft 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,15 +11,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- import
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
-description: Admin can learn how to bulk-import PST files to Microsoft 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
 ---
 
 # Use drive shipping to import your organization's PST files

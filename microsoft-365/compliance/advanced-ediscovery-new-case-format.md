@@ -1,21 +1,23 @@
 ---
 title: "New case format in eDiscovery (Premium)"
+description: "Use the new case format in eDiscovery (Premium) so you can add more items to review sets and take advantage of other increased limits and new functionality."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 ms.reviewer: ninachen
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-description: "Use the new case format in eDiscovery (Premium) so you can add more items to review sets and take advantage of other increased limits and new functionality." 
 ---
 
 # Use the new case format in eDiscovery (Premium)

@@ -1,5 +1,6 @@
 ---
 title: "Predictive coding module for eDiscovery (Premium) (preview)"
+description: "The new predictive coding module in eDiscovery (Premium) uses machine learning to analyze items in a review set to predictive which the items that are relevant to your case or investigation."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "The new predictive coding module in eDiscovery (Premium) uses machine learning to analyze items in a review set to predictive which the items that are relevant to your case or investigation."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Learn about predictive coding in eDiscovery (Premium) (preview)

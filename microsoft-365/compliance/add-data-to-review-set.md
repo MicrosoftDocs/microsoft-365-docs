@@ -1,5 +1,6 @@
 ---
 title: "Add search results to a review set"
+description: Learn how to add search results or samples of those search results to an eDiscovery (Premium) case review set
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,15 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to add search results or samples of those search results to an eDiscovery (Premium) case review set.
 ---
 
 # Add search results to a review set

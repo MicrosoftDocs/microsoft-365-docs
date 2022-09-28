@@ -1,5 +1,6 @@
 ---
 title: "Migrate legacy eDiscovery searches and holds to the Microsoft Purview compliance portal"
+description: learn about migrating legacy eDiscovery searches and holds to the compliance portal.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,10 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
-description:
 ---
 
 # Migrate legacy eDiscovery searches and holds to the compliance portal

@@ -1,5 +1,6 @@
 ---
 title: "Feature reference for Content search"
+description: "This article contains reference information about the Content search eDiscovery tool in the Microsoft Purview compliance portal to help you learn the many details about Content search."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,9 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
@@ -20,7 +21,6 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: "This article contains reference information about the Content search eDiscovery tool in the Microsoft Purview compliance portal to help you learn the many details about Content search."
 ---
 
 # Feature reference for Content search

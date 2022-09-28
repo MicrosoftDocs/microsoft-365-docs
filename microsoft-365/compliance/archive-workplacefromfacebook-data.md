@@ -1,5 +1,6 @@
 ---
 title: "Set up a connector to archive Workplace from Facebook data in Microsoft 365"
+description: "Admins can set up a connector to import and archive data from Workplace from Facebook, which is archived on Veritas's Merge1 site, into Microsoft 365. Setting up a connector requires that you work with Veritas This connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,8 +11,10 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Admins can set up a connector to import and archive data from Workplace from Facebook, which is archived on Veritas's Merge1 site, into Microsoft 365. Setting up a connector requires that you work with Veritas This connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Workplace from Facebook data

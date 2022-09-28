@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -32,8 +33,8 @@ This article shows you how to hash and upload your sensitive information source 
 
 In this phase you:
 
-1. set up a custom security group and user account
-2. set up the EDM Upload Agent tool
+1. Set up a custom security group and user account.
+2. Set up the EDM Upload Agent tool.
 3. Use the EDM Upload Agent tool to hash, with a salt value, the sensitive information source table, and upload it.
 
 The hashing and uploading can be done using one computer or you can separate the hashing step from the upload step for greater security.

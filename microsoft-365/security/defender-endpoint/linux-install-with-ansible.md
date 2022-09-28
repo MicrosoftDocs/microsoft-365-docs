@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -47,7 +47,7 @@ In addition, for Ansible deployment, you need to be familiar with Ansible admini
 - SSH must be configured for an administrator account between the control node and all managed nodes (devices that will have Defender for Endpoint installed on them), and it is recommended to be configured with public key authentication.
 - The following software must be installed on all managed nodes:
   - curl
-  - python-apt
+  - python-apt (if you are deploying on distributions using apt as a package manager)
 
 - All managed nodes must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
 

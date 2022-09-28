@@ -1,5 +1,6 @@
 ---
 title: "Use data connectors to import and archive third-party data in Microsoft 365"
+description: "Learn how to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +12,15 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- m365initiative-compliance
+- tier1
+- purview-compliance
+- data-connectors
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
+
 ---
 
 # Learn about connectors for third-party data

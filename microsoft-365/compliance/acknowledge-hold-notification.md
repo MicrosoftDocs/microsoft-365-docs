@@ -1,5 +1,6 @@
 ---
 title: "Acknowledge a hold notification"
+description: Learn how to use eDiscovery (Premium) to send and follow up on legal hold notifications through email, as well as monitor obligation status.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
 ms.custom: 
 - seo-marvel-apr2020
-description: Learn how to use eDiscovery (Premium) to send and follow up on legal hold notifications through email, as well as monitor obligation status.
 ---
 
 # Acknowledge a hold notification

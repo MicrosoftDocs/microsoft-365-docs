@@ -1,5 +1,6 @@
 ---
 title: "Get started with the Microsoft Service Trust Portal"
+description: Learn how to access and use the Microsoft Service Trust Portal to help with security, privacy, and compliance practices.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,13 +11,13 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
-mscollection: M365-security-compliance
+mscollection:
+- tier3
+- purview-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Learn how to access and use the Microsoft Service Trust Portal to help with security, privacy, and compliance practices.
 ---
 
 # Get started with Microsoft Service Trust Portal

@@ -1,21 +1,22 @@
 ---
 title: "Tag documents in a review set"
+description: "Tagging documents in a review set helps remove unnecessary content and identify relevant content in an eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Tagging documents in a review set helps remove unnecessary content and identify relevant content in an eDiscovery (Premium) case."
 ms.custom: seo-marvel-mar2020
 ---
 

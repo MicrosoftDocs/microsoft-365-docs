@@ -1,5 +1,6 @@
 ---
 title: "Search the audit log to troubleshoot common scenarios"
+description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,16 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MET150
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
 ---
 
 # Search the audit log to investigate common support issues

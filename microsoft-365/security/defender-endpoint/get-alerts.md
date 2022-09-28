@@ -11,7 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
@@ -68,6 +68,8 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >
 > - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 > - The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 

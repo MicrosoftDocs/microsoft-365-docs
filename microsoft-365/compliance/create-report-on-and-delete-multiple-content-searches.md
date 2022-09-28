@@ -1,5 +1,6 @@
 ---
 title: "Create, report on, and delete Content Searches"
+description: "Learn how to automate Content Search tasks like creating searches and running reports using Security & Compliance PowerShell."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,14 +11,14 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: "Learn how to automate Content Search tasks like creating searches and running reports using Security & Compliance PowerShell."
 ms.custom: seo-marvel-apr2020
 ---
 

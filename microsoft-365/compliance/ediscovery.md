@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview eDiscovery solutions"
+description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,16 +11,18 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-ediscovery
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
+
 ---
 
 # Microsoft Purview eDiscovery solutions

@@ -1,5 +1,6 @@
 ---
 title: View documents in a review set in eDiscovery (Premium)
+description: "Choose how you view content in eDiscovery (Premium), such as text, annotate, converted, or native view."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,11 +10,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: "Choose how you view content in eDiscovery (Premium), such as text, annotate, converted, or native view."
 ms.custom: seo-marvel-mar2020
 ---
 

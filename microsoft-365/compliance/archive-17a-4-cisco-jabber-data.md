@@ -1,17 +1,19 @@
 ---
 title: "Set up a connector to archive Cisco Jabber data in Microsoft 365"
+description: "Learn how to set up and use a 17a-4 Cisco Jabber DataParser connector to import and archive Cisco Jabber data in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a 17a-4 Cisco Jabber DataParser connector to import and archive Cisco Jabber data in Microsoft 365."
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Cisco Jabber data

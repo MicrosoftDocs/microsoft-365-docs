@@ -1,5 +1,6 @@
 ---
 title: "Create a predictive coding model in eDiscovery (Premium)"
+description: "Learn how to create a predictive coding model in eDiscovery (Premium). This is the first step in using the machine learning capabilities in eDiscovery (Premium) to help you identify relevant and non-relevant content in a review set."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to create a predictive coding model in eDiscovery (Premium). This is the first step in using the machine learning capabilities in eDiscovery (Premium) to help you identify relevant and non-relevant content in a review set."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Create a predictive coding model (preview)

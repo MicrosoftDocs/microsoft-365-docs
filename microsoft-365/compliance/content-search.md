@@ -1,5 +1,6 @@
 ---
 title: "Create and run a Content search in the Microsoft Purview compliance portal"
+description: "Use the Content search eDiscovery tool in the compliance center to search for content in different Microsoft 365 services."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,10 +10,10 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
@@ -20,7 +21,6 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Use the Content search eDiscovery tool in the compliance center to search for content in different Microsoft 365 services."
 ---
 
 # Create a content search

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 ---
@@ -79,6 +79,8 @@ Web content filtering includes:
 
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away.
 - You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+    > [!NOTE]
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 - You can access web reports in the same central location, with visibility over actual blocks and web usage.
 
 For more information, see [Web content filtering](web-content-filtering.md).

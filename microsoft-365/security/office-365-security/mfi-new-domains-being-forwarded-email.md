@@ -12,7 +12,7 @@ ms.assetid:
 description: Admins can learn how to use the New domains being forwarded email insight in the Mail flow dashboard in the Security & Compliance Center to investigate when their users are forwarding messages to external domains that have never been forwarded to.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

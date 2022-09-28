@@ -1,5 +1,6 @@
 ---
 title: "Teams workflow in eDiscovery (Premium)"
+description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams

@@ -16,8 +16,8 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ---
 
 # Configure and manage Microsoft Threat Experts capabilities through Microsoft 365 Defender

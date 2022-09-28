@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 search.appverid:
 - MET150 
 description: Learn about onboarding macOS devices into Compliance solutions

@@ -1,5 +1,6 @@
 ---
 title: "Assign eDiscovery permissions in the Microsoft Purview compliance portal"
+description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,14 +10,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview compliance portal."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
