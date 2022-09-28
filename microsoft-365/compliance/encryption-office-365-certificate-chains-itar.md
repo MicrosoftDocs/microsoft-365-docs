@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 description: "View a complete list of DOD and GCC High root certificates and certificate authorities (CAs) in Microsoft 365."
 ---

@@ -16,7 +16,7 @@ manager: dansimp
 ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

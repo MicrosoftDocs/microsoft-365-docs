@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp 
 audience: ITPro 
-ms.collection: M365-security-compliance 
+ms.collection:
+ - m365-security
+ - EngageScoreSep2022
 ms.topic: article 
 ms.subservice: mde 
 ms.custom: api 

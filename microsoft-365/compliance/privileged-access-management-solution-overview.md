@@ -13,9 +13,10 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - tier3
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365solution-scenario
+- highpri
 ---
 
 # Privileged access management

@@ -13,7 +13,7 @@ search.appverid:
   - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
 ms.subservice: mdo

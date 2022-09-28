@@ -10,7 +10,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdo
   ms.topic: landing-page # Required 
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.

@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: How do I report a suspicious email or file to Microsoft? Report messages, URLs, email attachments and files to Microsoft for analysis. Learn to report spam email and phishing emails.
 ms.subservice: mdo
 ms.service: microsoft-365-security

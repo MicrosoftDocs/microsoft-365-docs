@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "Learn how SMTP DNS-based Authentication of Named Entities (DANE) works to secure email communications between mail servers."
 ---
 

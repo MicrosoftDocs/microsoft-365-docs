@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
 ms.subservice: mdo
 ms.service: microsoft-365-security

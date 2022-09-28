@@ -12,9 +12,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - tier1
-- m365-security-compliance
+- purview-compliance
 - m365solution-ediscovery
 - m365solution-overview
+- highpri
 - ediscovery
 ms.localizationpriority: medium
 search.appverid:

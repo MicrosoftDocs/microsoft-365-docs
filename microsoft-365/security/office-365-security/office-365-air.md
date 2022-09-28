@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom:

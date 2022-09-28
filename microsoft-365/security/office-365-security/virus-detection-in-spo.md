@@ -16,7 +16,7 @@ search.appverid:
   - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn about how SharePoint Online detects viruses in files that users upload and prevents users from downloading or syncing the files.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo

@@ -12,7 +12,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier2
 description: "Learn about archive mailboxes to provide extra mailbox storage."
 ---

@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.localizationpriority: medium
 ms.collection: 
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
