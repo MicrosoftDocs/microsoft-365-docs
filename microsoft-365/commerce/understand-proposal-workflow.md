@@ -8,7 +8,7 @@ manager: scotv
 ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg

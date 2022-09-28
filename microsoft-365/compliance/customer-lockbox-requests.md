@@ -7,7 +7,7 @@ author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 

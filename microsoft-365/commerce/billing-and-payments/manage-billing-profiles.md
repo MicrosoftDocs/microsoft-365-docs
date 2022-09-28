@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: article
 f1.keywords:
 - 'MACBillingBillsPaymentsBillingProfiles'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg

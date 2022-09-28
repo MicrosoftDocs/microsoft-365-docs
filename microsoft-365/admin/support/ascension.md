@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection:
 - scotvorg 
 - Adm_Support

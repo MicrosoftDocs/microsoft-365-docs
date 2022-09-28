@@ -10,7 +10,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'O365E_understand_devices'
 - 'BCS365_understand_devices'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg

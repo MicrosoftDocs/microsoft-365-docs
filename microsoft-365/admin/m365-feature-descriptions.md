@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'microsoft-365-and-office-365-general-information'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
