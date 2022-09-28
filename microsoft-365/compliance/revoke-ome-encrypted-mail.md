@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 05/02/2022
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "As an administrator and as a message sender, you can revoke certain emails that were encrypted with Microsoft Purview Advanced Message Encryption."

@@ -12,7 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: 
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri

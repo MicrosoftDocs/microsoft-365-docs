@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - import
 search.appverid: MET150
 ms.custom:
