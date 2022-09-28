@@ -21,7 +21,13 @@ ms.collection:
 
 # Resources for Microsoft partners working with Microsoft Defender for Business and Microsoft 365 Business Premium
 
-Microsoft provides resources, programs, and tools that empower Microsoft partners to enable their customers to succeed. If you're a Microsoft partner working with customers who have [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you.
+Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats. Microsoft partners can help!
+
+If you're a Microsoft partner and you're working with customers who have or need [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you.
+
+- [Learn how you can integrate Microsoft endpoint security capabilities with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-capabilities-with-your-rmm-tools-and-psa-software)
+- [See how you can use Microsoft 365 Lighthouse to secure and manage your customers' devices and data](#use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data)
+- [Learn more about Defender for Business and Microsoft 365 Business Premium](#learn-more-about-defender-for-business-and-microsoft-365-business-premium)
 
 ## Integrate Microsoft endpoint security capabilities with your RMM tools and PSA software
 
